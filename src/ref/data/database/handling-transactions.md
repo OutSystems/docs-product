@@ -1,0 +1,39 @@
+---
+tags: support-Database
+---
+
+# Handling Transactions
+
+While processing a web request, OutSystems begins a database transaction on its first access to the database. The transaction is committed before OutSystems sends the response to the user.
+
+If an exception is left uncaught, the transaction is rolled back. This means that changes made to the database within the transaction are all reverted, this way ensuring that your data remains consistent.
+
+## Ending Transactions Explicitly
+
+You can manage transactions explicitly through the CommitTransaction and AbortTransaction actions:
+
+* **CommitTransaction**: Issues a database COMMIT statement that makes effective all changes done on the database since the beginning of the current transaction. It also ends the current transaction and starts a new one. After a CommitTransaction, the action flow continues.
+
+* **AbortTransaction**: Issues a ROLLBACK statement that undoes all changes performed on the database since the beginning of the current transaction. It also ends the current transaction and starts a new one. After an AbortTransaction, the action flow continues. 
+
+## Isolation Levels
+
+The following table shows the isolation level OutSystem uses in the different databases:
+
+DB2  |  MySQL  |  Oracle  |  SQL Server  
+---|---|---|---  
+Read Committed  |  Read Uncommitted  |  Read Committed  | Read Uncommitted  
+  
+When using a MySQL or SQL Server database, you are working at **Read Uncommitted** isolation level. You have multiple transactions per web request: one for writes, one for each read.
+
+When using a DB2 or Oracle database, you are working at **Read Committed** isolation level. All queries, inserts, updates, etc. happen in the same database transaction. The data is stored to the database only when the transaction is committed.  
+This means that you are not able to read data that was not yet committed in a transaction. Because of this, before you call a Process instance or a method of a consumed Web Service, you need to commit the database transaction, to see up-to-date data in the process or method.
+
+## Important Remarks
+
+There are some aspects concerning transactions that you should pay attention
+to, namely:
+
+* The transactions are always sequential, they cannot be nested.
+* After committing or rolling back a transaction, all database locks eventually being held are released.
+* When integrating with external systems, transaction handling might need some extra care. 

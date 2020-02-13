@@ -1,0 +1,1182 @@
+# Developing an Application
+- develop/intro.md:
+  - getting-started/create-web.md
+  - getting-started/create-mobile.md
+
+# Download a file through browser
+- develop/data/download-file-browser.md:
+  - ref/logic/implementing-logic/download.md
+
+# Caching
+- develop/data/caching.md:
+  - develop/reuse-and-refactor/strong-weak-dependencies.md
+  - external:
+    - "Cache Invalidation in OutSystems 11": 
+        https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Cache_Invalidation_in_OutSystems_11
+
+# Validate Form Inputs
+- develop/ui/forms/form-validate.md:
+  - ref/lang/auto/Class.Mobile Module.final.md
+
+# Table
+- develop/ui/table/intro.md:
+    # Table pagination and sorting
+    - develop/ui/table/pagination-sorting.md
+
+# Share a Client Variable between apps
+- develop/data/share-client-var-between-app.md:
+  - ref/lang/auto/Class.Client Variable.final.md
+  - ref/lang/auto/Class.Session Variable.final.md
+
+# Libraries
+- develop/reuse-and-refactor/libraries.md:
+    - develop/reuse-and-refactor/convert-to-library.md
+
+# Troubleshoot Service Actions using logs
+- develop/troubleshoot/troubleshoot-service.md:
+  - develop/troubleshoot/debug/debug-producer-modules.md#service-actions
+
+# Maintain UI in dedicated modules
+- develop/ui/reuse/dedicated-ui-modules.md:
+    - develop/ui/reuse/block-create-reuse.md
+
+# ------- Web Interfaces -------
+
+#   Adding Data and Logic
+#     Screen Action
+- ref/lang/auto/Class.Screen Action.final.md:
+    # Actions in Web Applications
+    - develop/logic/action-web.md#screen-actions
+    # Web Screen
+    - ref/lang/auto/Class.Web Screen.final.md
+    # Web Block
+    - ref/lang/auto/Class.Web Block.final.md
+
+#  Designing Screens
+#    Button Widget
+- ref/lang/auto/Class.Button Widget.final.md:
+    # Link Widget
+    - ref/lang/auto/Class.Link Widget.final.md
+    # Navigate to Another Screen
+    - develop/ui/navigation/navigate-to-detail-screen.md
+    # Screen Action
+    - ref/lang/auto/Class.Screen Action.final.md
+    # External Site
+    - ref/lang/auto/Class.External Site.final.md
+    # Go To Destination
+    - ref/lang/auto/Class.Go To Destination.final.md
+    # Web Screen
+    - ref/lang/auto/Class.Web Screen.final.md        
+    
+# Cell Widget            
+- ref/lang/auto/Class.Cell Widget.final.md:
+    # Header Row Widget
+    - ref/lang/auto/Class.Header Row Widget.final.md
+    # Row Widget
+    - ref/lang/auto/Class.Row Widget.final.md
+
+# Check Box Widget
+- ref/lang/auto/Class.Check Box Widget.final.md:
+    # Switch or Toggle a Boolean Value
+    - develop/ui/inputs/switch-checkbox.md
+    # Radio Button Widget
+    - ref/lang/auto/Class.Radio Button Widget.final.md
+
+# Combo Box Widget
+- ref/lang/auto/Class.Combo Box Widget.final.md:
+    # Choose One Value from a List
+    - develop/ui/inputs/dropdown-combo.md
+
+# Editable Table Widget
+- ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md:
+    # Table Records Widget
+    - ref/lang/auto/Class.Table Records Widget.final.md
+    # Aggregate
+    - ref/lang/auto/Class.Aggregate.final.md
+    # SQL
+    - ref/lang/auto/Class.SQL.final.md
+
+# Edit Record Widget
+- ref/lang/auto/Class.Edit Record Widget.final.md:
+    # Show Record Widget
+    - ref/lang/auto/Class.Show Record Widget.final.md
+    # List
+    - ref/data/data-types/list.md
+
+# Expression Widget
+- ref/lang/auto/Class.Expression Widget.final.md:
+    # Built-in Functions
+    - ref/lang/auto/builtinfunctions.final.md
+    # Expressions
+    - ref/logic/expressions/intro.md
+
+# Form Widget
+- ref/lang/auto/ServiceStudio.Plugin.Widgets.Form.final.md:
+    # Use a Form to Enter Data
+    - develop/ui/forms/form-use.md
+    # Button Widget
+    - ref/lang/auto/Class.Button Widget.final.md
+    # Check Box Widget
+    - ref/lang/auto/Class.Check Box Widget.final.md
+    # Combo Box Widget
+    - ref/lang/auto/Class.Combo Box Widget.final.md
+    # Input Password Widget
+    - ref/lang/auto/Class.Input Password Widget.final.md
+    # Input Widget
+    - ref/lang/auto/Class.Input Widget.final.md
+    # Label Widget
+    - ref/lang/auto/ServiceStudio.Plugin.Widgets.Label.final.md
+    # Link Widget
+    - ref/lang/auto/Class.Link Widget.final.md
+    # List Box Widget
+    - ref/lang/auto/Class.List Box Widget.final.md
+    # Radio Button Widget
+    - ref/lang/auto/Class.Radio Button Widget.final.md
+    # Upload Widget
+    - ref/lang/auto/Class.Upload Widget.final.md
+
+# Header Row Widget
+- ref/lang/auto/Class.Header Row Widget.final.md:
+    # Editable Table Widget
+    - ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md
+    # Row Widget
+    - ref/lang/auto/Class.Row Widget.final.md
+    # Table Records Widget
+    - ref/lang/auto/Class.Table Records Widget.final.md
+    # Table Widget
+    - ref/lang/auto/Class.Table Widget.final.md
+      
+# Image Widget
+- ref/lang/auto/Class.Image Widget.final.md:
+    # Display an Image
+    - develop/ui/image/display-image.md
+    # Use Resources
+    - develop/data/resources.md
+    # Image
+    - ref/lang/auto/Class.Image.final.md
+    # Localized Image
+    - ref/lang/auto/Class.Localized Image.final.md
+      
+# Input Password Widget
+- ref/lang/auto/Class.Input Password Widget.final.md:
+    # Input Widget
+    - ref/lang/auto/Class.Input Widget.final.md
+    
+# Label Widget
+- ref/lang/auto/ServiceStudio.Plugin.Widgets.Label.final.md:
+    # Button Widget
+    - ref/lang/auto/Class.Button Widget.final.md
+    # Check Box Widget
+    - ref/lang/auto/Class.Check Box Widget.final.md
+    # Combo Box Widget
+    - ref/lang/auto/Class.Combo Box Widget.final.md
+    # Input Password Widget
+    - ref/lang/auto/Class.Input Password Widget.final.md
+    # Input Widget
+    - ref/lang/auto/Class.Input Widget.final.md
+    # List Box Widget
+    - ref/lang/auto/Class.List Box Widget.final.md
+    # Radio Button Widget
+    - ref/lang/auto/Class.Radio Button Widget.final.md
+    # Upload Widget
+    - ref/lang/auto/Class.Upload Widget.final.md
+      
+# Link Widget
+- ref/lang/auto/Class.Link Widget.final.md:
+    # Navigate to Another Screen
+    - develop/ui/navigation/navigate-to-detail-screen.md
+    # Screen Action
+    - ref/lang/auto/Class.Screen Action.final.md
+    # External Site
+    - ref/lang/auto/Class.External Site.final.md
+    # Go To Destination
+    - ref/lang/auto/Class.Go To Destination.final.md
+    # Web Screen
+    - ref/lang/auto/Class.Web Screen.final.md
+      
+# List Records Widget
+- ref/lang/auto/Class.List Records Widget.final.md:
+    # Table Records Widget
+    - ref/lang/auto/Class.Table Records Widget.final.md
+    # List
+    - ref/data/data-types/list.md
+
+# Placeholder Widget
+- ref/lang/auto/Class.Placeholder Widget.final.md:
+    # Design the Layout of Screens
+    - develop/ui/look-feel/design-screens-layout.md
+    # Placeholders
+    - develop/ui/look-feel/themes.md#placeholders
+    # Web Block
+    - ref/lang/auto/Class.Web Block.final.md
+
+# Radio Button Widget
+- ref/lang/auto/Class.Radio Button Widget.final.md:
+    # Pick Only One Option in a Group of Choices
+    - develop/ui/inputs/button-group.md
+      
+# Row Widget
+- ref/lang/auto/Class.Row Widget.final.md:
+    # Editable Table Widget
+    - ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md
+    # Edit Record Widget
+    - ref/lang/auto/Class.Edit Record Widget.final.md
+    # Show Record Widget
+    - ref/lang/auto/Class.Show Record Widget.final.md
+    # Table Records Widget
+    - ref/lang/auto/Class.Table Records Widget.final.md
+    # Table Widget
+    - ref/lang/auto/Class.Table Widget.final.md
+      
+# Show Record Widget
+- ref/lang/auto/Class.Show Record Widget.final.md:
+    # Aggregate
+    - ref/lang/auto/Class.Aggregate.final.md
+    # SQL
+    - ref/lang/auto/Class.SQL.final.md
+      
+# Table Records Widget
+- ref/lang/auto/Class.Table Records Widget.final.md:
+    # Fetch and Display Data from the Database
+    - develop/data/query/fetch-display.md
+    # List
+    - ref/data/data-types/list.md
+      
+# Upload Widget
+- ref/lang/auto/Class.Upload Widget.final.md:
+    # Upload Files
+    - develop/ui/inputs/upload.md
+      
+# Web Block Widget
+- ref/lang/auto/Class.Web Block Widget.final.md:
+    # Web Block
+    - ref/lang/auto/Class.Web Block.final.md 
+  
+# Designing the Layout
+#   Image
+- ref/lang/auto/Class.Image.final.md:
+    #Localized Image
+    - ref/lang/auto/Class.Localized Image.final.md
+    
+# Localized Image
+- ref/lang/auto/Class.Localized Image.final.md:
+    # Multilingual Web Applications
+    - develop/ui/multilingual/multilingual-web.md
+    
+# Theme
+- ref/lang/auto/Class.Theme.final.md:
+    # Themes
+    - develop/ui/look-feel/themes.md
+    
+# UI Flow
+- ref/lang/auto/Class.UI Flow.final.md:
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    
+# Navigating in the Application
+#   Comment
+- ref/lang/auto/Class.Comment.final.md:
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    
+# Email
+- ref/lang/auto/Class.Email.final.md:
+    # Send an Email From a Web Application
+    - develop/logic/emails.md
+    # Configure OutSystems to Send Emails
+    - extensibility-and-integration/configure-send-emails.md
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    # Send Email
+    - ref/lang/auto/Class.Send Email.final.md
+    # Email
+    - ref/lang/auto/builtinfunction.Email.final.md
+  
+#Entry
+- ref/lang/auto/Class.Entry.final.md:
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    # External Site
+    - ref/lang/auto/Class.External Site.final.md
+    # Go To Destination
+    - ref/lang/auto/Class.Go To Destination.final.md
+    # Web Screen
+    - ref/lang/auto/Class.Web Screen.final.md
+    
+# External Site
+- ref/lang/auto/Class.External Site.final.md:
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    
+# Go To Destination
+- ref/lang/auto/Class.Go To Destination.final.md:
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    # External Site
+    - ref/lang/auto/Class.External Site.final.md
+    # Web Screen
+    - ref/lang/auto/Class.Web Screen.final.md
+    
+#Web Block
+- ref/lang/auto/Class.Web Block.final.md:
+    # Blocks in Themes
+    - develop/ui/look-feel/themes.md#blocks
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    # Reuse UI
+    - develop/ui/reuse/intro.md
+    - develop/ui/reuse/block-create-reuse.md
+    
+# Web Screen
+- ref/lang/auto/Class.Web Screen.final.md:
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    # Navigate to Another Screen
+    - develop/ui/navigation/navigate-to-detail-screen.md
+    
+# ------- Mobile Interfaces -------
+
+# Adding Data and Logic
+# Aggregate
+- ref/lang/auto/Class.Aggregate.final.md:
+    # Fetch and Display Data from the Database
+    - develop/data/query/fetch-display.md
+    
+# Client Action
+- ref/lang/auto/Class.Client Action.final.md:
+    # Client Actions
+    - develop/logic/action-mobile.md#client-actions
+    
+# Data Action
+- ref/lang/auto/Class.Data Action.final.md:
+    # Data Actions
+    - develop/logic/action-mobile.md#data-actions
+    # Aggregate
+    - ref/lang/auto/Class.Aggregate.final.md
+    # SQL
+    - ref/lang/auto/Class.SQL.final.md
+    
+# Script
+- ref/lang/auto/Class.Script.final.md:
+    # Use JavaScript Code from an External Library
+    - extensibility-and-integration/javascript/mobile/use-external-lib.md
+
+# Designing Screens
+#   Block Widget
+- ref/lang/auto/Class.Block Widget.final.md:
+    # Block
+    - ref/lang/auto/Class.Block.final.md     
+    
+# Button            
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md:
+    # Link
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md
+    # Client Action
+    - ref/lang/auto/Class.Client Action.final.md
+    # Screen
+    - ref/lang/auto/Class.Screen.final.md
+    # External Site
+    - ref/lang/auto/Class.External Site.final.md
+
+# ButtonGroup
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md:
+    # Pick Only One Option in a Group of Choices
+    - develop/ui/inputs/button-group.md
+    # Button            
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md
+    # Switch
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
+
+# ButtonGroupItem
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroupItem.final.md:
+    # ButtonGroup
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md
+
+# Checkbox
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md:
+    # Switch
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
+    
+# Container
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Container.final.md:
+    # AdvancedHtml
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.AdvancedHtml.final.md
+
+# Dropdown
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md:
+    # Choose One Value from a List
+    - develop/ui/inputs/dropdown-combo.md
+
+# Expression
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md:
+    # Built-in Functions
+    - ref/lang/auto/builtinfunctions.final.md
+    # Expressions
+    - ref/logic/expressions/intro.md
+
+# Form
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Form.final.md:
+    # Use a Form to Enter Data
+    - develop/ui/forms/form-use.md
+    # Validate Form Inputs
+    - develop/ui/forms/form-validate.md
+    # Button            
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md
+    # ButtonGroup
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md
+    # Checkbox
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md
+    # Dropdown
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md
+    # Input
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md
+    # Label
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Label.final.md
+    # Link
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md
+    # Switch
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
+    # TextArea
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md
+    # Text
+    - ref/lang/auto/Class.Text Widget.final.md
+    # Upload
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md
+
+# Icon
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Icon.final.md:
+    # Use Icons
+    - develop/ui/image/use-icons.md
+      
+# Image
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Image.final.md:
+    # Display an Image
+    - develop/ui/image/display-image.md
+    # Use Resources
+    - develop/data/resources.md
+    # Image
+    - ref/lang/auto/Class.Image.final.md
+    # Localized Image
+    - ref/lang/auto/Class.Localized Image.final.md
+        
+# Label
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Label.final.md:
+    # Checkbox
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md
+    # Dropdown
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md
+    # Input
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md
+    # Switch
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
+    # TextArea
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md
+    # Upload
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md
+      
+# Link
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md:
+    # Navigate to Another Screen
+    - develop/ui/navigation/navigate-to-detail-screen.md
+    # Client Action
+    - ref/lang/auto/Class.Client Action.final.md
+    # Screen
+    - ref/lang/auto/Class.Screen.final.md
+    # External Site
+    - ref/lang/auto/Class.External Site.final.md
+      
+# List
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md:
+    # Fetch and Display Data from the Database
+    - develop/data/query/fetch-display.md
+      
+# List Item Action
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ListItemAction.final.md:
+    # List Item
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ListItem.final.md
+      
+# List Item
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ListItem.final.md:
+    # List
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md
+
+# Placeholder
+- ref/lang/auto/Class.Placeholder Widget.final.md:
+    # Block
+    - ref/lang/auto/Class.Block.final.md
+
+# Popover Menu
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popover.final.md:
+    # Dropdown
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md
+      
+#Popup
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popup.final.md:
+    # Create and Use a Popup
+    - develop/ui/inputs/popup.md
+    # Popover Menu
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popover.final.md
+      
+# Switch
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md:
+    # Switch or Toggle a Boolean Value
+    - develop/ui/inputs/switch-checkbox.md
+      
+# TextArea
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md:
+    # Text
+    - ref/lang/auto/Class.Text Widget.final.md
+
+# Table Widget
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TableRecords.final.md:
+    # Table - intro
+    - develop/ui/table/intro.md
+    # Table pagination and sorting
+    - develop/ui/table/pagination-sorting.md
+      
+# Upload
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md:
+    # Upload Files
+    - develop/ui/inputs/upload.md
+    
+# Mobile Theme
+- ref/lang/auto/Class.Mobile Theme.final.md:
+    # Themes
+    - develop/ui/look-feel/themes.md
+    
+# Navigating in the Application
+#   Block
+- ref/lang/auto/Class.Block.final.md:
+    # Event
+    - ref/lang/auto/Class.Event.final.md
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    # Reuse UI
+    - develop/ui/reuse/intro.md
+    - develop/ui/reuse/block-create-reuse.md
+    # Blocks in Themes
+    - develop/ui/look-feel/themes.md#blocks
+    # Lifecycle Events
+    - one-way: develop/logic/screen-block-lifecycle-events.md
+
+# Client Variable
+- ref/lang/auto/Class.Client Variable.final.md:
+    # Session Variables
+    - ref/lang/auto/Class.Session Variable.final.md
+
+# Session Variable
+- ref/lang/auto/Class.Session Variable.final.md:
+    # Sessions in Web Applications
+    - develop/data/session.md
+
+# Event
+- ref/lang/auto/Class.Event.final.md:
+    # Screen and Block Lifecycle Events
+    - develop/logic/screen-block-lifecycle-events.md
+    - develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md
+    
+# Screen
+- ref/lang/auto/Class.Screen.final.md:
+    # UI Flow
+    - develop/ui/navigation/ui-flow.md
+    # Navigate to Another Screen
+    - develop/ui/navigation/navigate-to-detail-screen.md
+    # Lifecycle Events
+    - one-way: develop/logic/screen-block-lifecycle-events.md
+
+# -------- Logic ---------
+# Built-in Functions
+- ref/lang/auto/builtinfunctions.final.md:
+    # Expressions
+    - ref/logic/expressions/intro.md
+
+#   Data Conversion
+- ref/lang/auto/builtinfunction.Data Conversion.final.md:
+    # Available Data Types
+    - ref/data/data-types/available-data-types.md#explicit-conversion-functions
+    # Expressions
+    - ref/logic/expressions/intro.md
+
+#   Date and Time
+- ref/lang/auto/builtinfunction.Date and Time.final.md:
+    # Available Data Types
+    - ref/data/data-types/available-data-types.md
+    # Expressions
+    - ref/logic/expressions/intro.md
+
+#   Email
+- ref/lang/auto/builtinfunction.Email.final.md:
+    #Send an Email From a Web Application
+    - develop/logic/emails.md
+
+#   Math
+- ref/lang/auto/builtinfunction.Math.final.md:
+    # Available Data Types
+    - ref/data/data-types/available-data-types.md
+
+#   Numeric
+- ref/lang/auto/builtinfunction.Numeric.final.md:
+    # Available Data Types
+    - ref/data/data-types/available-data-types.md
+
+#   Roles
+- ref/lang/auto/builtinfunction.Roles.final.md:
+    #Validate End-User Permissions in the Application
+    - develop/security/user-roles/validate-permissions.md
+    #Create and User Roles-Use the Role in your Application’s Logic-Role Functions 
+    - develop/security/user-roles/create-a-custom-role.md#use-the-role-in-your applications-logic
+
+# Expressions
+- ref/logic/expressions/intro.md:
+    #Create a Calculated Attribute in an Aggregate
+    - develop/data/query/calculated-attribute-create.md
+    # Available Data Types
+    - ref/data/data-types/available-data-types.md
+
+#   Operands
+- ref/logic/expressions/operands.md:
+    # Available Data Types
+    - ref/data/data-types/available-data-types.md
+
+#     Client Action
+-  ref/lang/auto/Class.Client Action.final.md:
+    - ref/lang/auto/Class.Run Client Action.final.md
+
+#     Server Action
+-  ref/lang/auto/Class.Server Action.final.md:
+    - develop/logic/action-mobile.md#server-actions
+    - develop/logic/action-web.md#server-actions
+    - ref/lang/auto/Class.Run Server Action.final.md
+    - develop/reuse-and-refactor/encapsulate-logic.md
+
+#     Role
+-  ref/lang/auto/Class.Role.final.md:
+    - develop/security/user-roles/intro.md
+
+#     User Exception
+-  ref/lang/auto/Class.User Exception.final.md:
+    - develop/logic/exceptions/intro.md#user-exception
+
+#     Role Exception
+-  ref/lang/auto/Class.Role Exception.final.md:
+    - develop/logic/exceptions/intro.md#security-exception
+
+#     Aggregate
+-  ref/lang/auto/Class.Aggregate.final.md:
+    - develop/data/query/filter-results.md
+    - develop/data/query/sort-aggregate.md
+    - develop/data/query/group-calculate.md
+    - develop/data/query/aggregate-column-single-value.md
+    - develop/data/query/calculated-attribute-create.md
+    - develop/data/query/distinct.md
+
+#     JavaScript
+-  ref/lang/auto/Class.JavaScript.final.md:
+    - extensibility-and-integration/javascript/mobile/intro.md
+
+#     JSON Deserialize
+-  ref/lang/auto/Class.JSON Deserialize.final.md:
+    - ref/lang/auto/Class.JSON Serialize.final.md
+
+#     Destination
+-  ref/lang/auto/Class.Destination.final.md:
+    - ref/lang/auto/Class.Go To Destination.final.md
+
+#     If
+-  ref/lang/auto/Class.If.final.md:
+    -  ref/lang/auto/Class.Switch.final.md
+
+#     For Each
+-  ref/lang/auto/Class.For Each.final.md:
+    - develop/logic/list-iterate.md
+
+#     Exception Handler
+-  ref/lang/auto/Class.Exception Handler.final.md:
+    - develop/logic/exceptions/intro.md
+    - ref/lang/auto/Class.User Exception.final.md
+    - ref/lang/auto/Class.Role Exception.final.md
+
+#     Raise Exception
+-  ref/lang/auto/Class.Raise Exception.final.md:
+    - develop/logic/exceptions/intro.md
+    - ref/lang/auto/Class.User Exception.final.md
+    - ref/lang/auto/Class.Role Exception.final.md
+
+#     Trigger Event
+-  ref/lang/auto/Class.Trigger Event.final.md:
+    - develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md
+
+#     SQL
+-  ref/lang/auto/Class.SQL.final.md:
+    - develop/data/query/sql.md
+
+#     Excel To Record List
+-  ref/lang/auto/Class.Excel To Record List.final.md:
+    - ref/lang/auto/Class.Record List To Excel.final.md
+
+#     Ajax Refresh
+-  ref/lang/auto/Class.Ajax Refresh.final.md:
+    - develop/logic/screen-partial-refresh.md
+
+#     Attach File
+-  ref/lang/auto/Class.Attach File.final.md:
+    - develop/logic/emails.md
+    - ref/lang/auto/Class.Email.final.md
+
+#     Send Email
+-  ref/lang/auto/Class.Send Email.final.md:
+    - develop/logic/emails.md
+
+# Configuration Tool
+
+- ref/configuration-tool/tabs/platform-oracle.md:
+    - external:
+        - "Configuring linguistic sorting in an OutSystems environment using an Oracle database":
+            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Configuring_linguistic_sorting_in_an_OutSystems_environment_using_an_Oracle_database
+
+- ref/configuration-tool/tabs/log-oracle.md:
+    - external:
+        - "Configuring linguistic sorting in an OutSystems environment using an Oracle database":
+            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Configuring_linguistic_sorting_in_an_OutSystems_environment_using_an_Oracle_database
+
+# --- Extensibility and Integration ---
+
+- extensibility-and-integration/mobile-plugins/using-cordova-plugins.md:
+    - external:
+        - "How to Create a Cordova Plugin from Scratch":
+            https://www.outsystems.com/blog/posts/how-to-create-a-cordova-plugin-from-scratch/
+
+- extensibility-and-integration/soap/consume/advanced-extensibility.md:
+    - ref/apis/soap-extensibility-api.md
+    - external:
+        - "Forge Component: SOAP Extensibility Samples":
+            https://www.outsystems.com/forge/component-overview/5322/soap-extensibility-samples
+
+- extensibility-and-integration/rest/consume-rest-apis/handling-rest-errors.md:
+    - develop/logic/exceptions/intro.md
+    - develop/logic/exceptions/handling-mechanism.md
+    - external:
+        - "Demo: Handling HTTP status codes when consuming a REST web service":
+            https://www.outsystems.com/learn/lesson/1888/handling-http-status-codes-when-consuming-a-rest-web-service/
+    - external:
+        - "LinkedIn Article: Handling HTTP status codes when consuming a REST in OutSystems":
+            https://www.linkedin.com/pulse/handling-http-status-codes-when-consuming-rest-rui-barbosa/
+
+- extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md:
+    - external:
+        - "Forge Component: How to Add Custom Authentication to a REST API":
+            https://www.outsystems.com/forge/component-overview/927/how-to-add-custom-authentication-to-a-rest-api
+
+# --- Managing the Applications Lifecycle > Containers ---
+
+- managing-the-applications-lifecycle/containers/intro.md:
+    - managing-the-applications-lifecycle/deploy-applications/zones/intro.md
+
+- managing-the-applications-lifecycle/containers/guide-ecs.md:
+    - one-way: managing-the-applications-lifecycle/containers/intro.md
+    - one-way: managing-the-applications-lifecycle/deploy-applications/zones/intro.md
+    - external:
+        - "Development FAQ: How to automate Docker container deployment with Jenkins": 
+            https://success.outsystems.com/Documentation/Development_FAQs/How_to_automate_Docker_container_deployment_with_Jenkins
+        - "Development FAQ: How to automate container deployment by using LifeTime API v2 and Jenkins": 
+            https://success.outsystems.com/Documentation/Development_FAQs/How_to_automate_container_deployment_by_using_LifeTime_API_v2_and_Jenkins
+
+# --- Developing an Application ---
+
+#     Use Data/Data Modeling/Entity Relationships
+
+-  develop/data/modeling/relationship/delete-rules.md:
+    - one-way: ref/lang/auto/Class.Entity Attribute.final.md
+
+#     Security
+-  develop/security/restrict-access-to-an-internal-network.md:
+    - managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md
+
+# Override the Default Mobile Extensibility Configurations
+- managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md:
+    - deliver-mobile/customize-mobile-app/intro.md
+
+# Use Events to Propagate Changes From a Block to the Parent
+- develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md:
+    - develop/ui/inputs/popup.md
+
+
+# UI Web Patterns
+
+- develop/ui/patterns/web/content/accordion/accordion.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/alert/alert.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/balloon/balloon.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/blankslate.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/bullets.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/card.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/cardbackground.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/cardsectioned.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/carousel.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/chatmessage.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/lightboximage.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/modal.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/panel.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/section.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/tag.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/content/tooltip.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/animatedlabel.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/buttongroup.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/datepicker.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/dropdown.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/dropdownselect.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/fileupload/fileupload.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/floatingactions.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/inputwithicon.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/rangeslider.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/rangesliderinterval.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/search.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx    
+- develop/ui/patterns/web/controls/search-balloon.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/timepicker.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/togglebutton.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/controls/video.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+        - "How to Add Video to Your Applications": 
+            https://success.outsystems.com/Documentation/Development_FAQs/How_to_Add_Video_to_Your_Applications
+- develop/ui/patterns/web/layout/layout-login.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/layout/layout-loginsplit.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/layout/layout-popup.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/layout/layout-sidemenu.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/layout/layout-topmenu.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/layout/loginform.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/navigation/breadcrumbs.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/navigation/sectionindex.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/navigation/sidebar.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/navigation/tabs/tabs.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/navigation/timeline.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/navigation/wizard.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/numbers/badge.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/numbers/counter.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/numbers/iconbadge.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/numbers/progressbar.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/numbers/progresscircle.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/numbers/userinitials.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/responsive/displayondevice.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/responsive/loadonvisible.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/responsive/moveondevice.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/responsive/responsivetable.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/structure/aligncenter.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/structure/columns.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/structure/gallery.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/utilities/animate.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/utilities/charactercount.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/utilities/fieldset.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/utilities/flipcontent.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/utilities/iframe.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+        - "How to Add Video to Your Applications": 
+            https://success.outsystems.com/Documentation/Development_FAQs/How_to_Add_Video_to_Your_Applications            
+- develop/ui/patterns/web/utilities/separator.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/utilities/stackedicon.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/intro.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+- develop/ui/patterns/web/navigation/navigationbar.md:            
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+           https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+
+# Link to Training
+
+- extensibility-and-integration/connect-external-db.md:
+    - external:
+        - "Demo - Integrating with a SQL Server Database":
+            https://www.outsystems.com/learn/lesson/1847/demo-integrating-with-external-databases/
+    - external:
+        - "Demo - Integrating with a Oracle Server Database":
+            https://www.outsystems.com/learn/lesson/1879/demo-integrating-with-an-oracle-database/
+    - external:
+        - "Demo - Integrating with a MySQL Server Database":
+            https://www.outsystems.com/learn/lesson/1880/demo-integrating-with-a-mysql-database/
+
+
+- extensibility-and-integration/rest/intro.md:
+    - external:
+        - "Course - Integrating with Web Services":
+            https://www.outsystems.com/learn/courses/116/integrating-with-web-services/
+
+- extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md:            
+    - external:
+        - "Exercise - Retrieving Data from a REST API (GET)":
+            https://www.outsystems.com/learn/lesson/1850/retrieving-data-from-a-rest-api-get/
+    - external:
+        - "Exercise - Writing Data to a REST API (POST and PUT)":
+            https://www.outsystems.com/learn/lesson/1848/writing-data-to-a-rest-api-post-and-put/
+    - external:
+        - "Exercise - Deleting Data from a REST API (DELETE)":
+            https://www.outsystems.com/learn/lesson/1849/deleting-data-from-a-rest-api-delete/
+
+- extensibility-and-integration/rest/expose-rest-apis/expose-a-rest-api.md:            
+    - external:
+        - "Exercise - Exposing Application Data using REST (GET)":
+            https://www.outsystems.com/learn/lesson/1853/exposing-application-data-using-rest-get/
+    - external:
+        - "Exercise - Creating Application Data using REST (POST)":
+            https://www.outsystems.com/learn/lesson/1851/creating-application-data-using-rest-post/
+    - external:
+        - "Exercise - Updating Application Data using REST (PUT)":
+            https://www.outsystems.com/learn/lesson/1852/updating-application-data-using-rest-put/
+    - external:
+        - "Exercise - Deleting Application Data using REST (DELETE)":
+            https://www.outsystems.com/learn/lesson/1854/deleting-application-data-using-rest-delete/
+
+- ref/lang/auto/Class.JSON Serialize.final.md:
+    - external:
+        - "Demo - Handling JSON data":
+            https://www.outsystems.com/learn/lesson/1881/handling-json-data/
+
+- ref/lang/auto/Class.JSON Deserialize.final.md:   
+    - external:
+        - "Demo - Handling JSON data":
+            https://www.outsystems.com/learn/lesson/1881/handling-json-data/
+
+- develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md:
+    - external:
+        - "Training video - Block Events":
+            https://www.outsystems.com/learn/lesson/1902/block-events/?LearningPathId=18
+
+- develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md:
+    - external:
+        - "Training video - Block Events":
+            https://www.outsystems.com/learn/lesson/1902/block-events/?LearningPathId=18
+
+# Links to Forge
+
+- develop/reuse-and-refactor/services.md:
+    - external:
+        - "Directory sample app": 
+            https://www.outsystems.com/forge/component-overview/614/directory
+        - "Sales sample app": 
+            https://www.outsystems.com/forge/component-overview/582/sales
+        - "Cases sample app":
+            https://www.outsystems.com/forge/component-overview/584/cases
+
+# Links to Dev Advocacy Videos
+
+- ref/apis/charts/chart-json.md:
+    - external:
+        - "Demo - Chart Tips #1 - Zoomable Line graphs, Colored regions and Arc charts":
+            https://www.youtube.com/watch?v=SImlviB39gs
+        - "Demo - How to customize line graphs in OutSystems":    
+            https://www.youtube.com/watch?v=uzNnX7oqhNY
+        - "Demo - Customizing your charts using Highcharts API, HTML and JavaScript":
+            https://www.youtube.com/watch?v=rhovQg7hTyQ
+
+# Design UI
+
+- develop/ui/intro.md:
+    - external:
+        - "How to Build a Front-End Architecture in OutSystems":
+            https://success.outsystems.com/Documentation/Development_FAQs/How_to_Build_a_Front-End_Architecture_in_OutSystems
+        - "Front-End Architecture Best Practices":
+            https://success.outsystems.com/Documentation/Best_Practices/Front-End_Architecture_Best_Practices
+
+# --- Managing the Applications Lifecycle > Manage IT Users ---
+
+- managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md:
+    - managing-the-applications-lifecycle/manage-it-teams/create-an-it-role.md
+    - managing-the-applications-lifecycle/manage-it-teams/setup-team-permissions.md
+    - managing-the-applications-lifecycle/manage-it-teams/grant-it-roles-for-a-specific-application.md
+    - managing-the-applications-lifecycle/manage-it-teams/control-app-creation.md
+    - managing-the-applications-lifecycle/manage-it-teams/allow-managers-to-handle-permissions-of-it-teams.md
+    - managing-the-applications-lifecycle/manage-it-teams/allow-external-db-integration.md
+            
+# Monitor and Troubleshoot
+
+- managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md:
+    - external:
+        - "Anatomy of an OutSystems error stack":
+            https://www.outsystems.com/forums/discussion/7856/anatomy-of-an-outsystems-error-stack/
+            

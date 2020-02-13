@@ -1,0 +1,14 @@
+build:
+    title: OutSystems 11 Documentation
+    input-folder: src
+    output-folder: build
+    related-title: See Also   
+publish:
+    url: https://success.outsystems.com/
+    root_path: Documentation/11
+    toc_url: https://success.outsystems.com/
+    toc_root_path: Documentation/11
+reference:
+    assemble-folder: 
+        - src/ref/lang/auto
+        - src/ref/apis/auto

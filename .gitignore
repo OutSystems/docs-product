@@ -1,0 +1,5 @@
+build/
+**/.vscode/
+**/*.final.md
+.vs/*
+config.yml

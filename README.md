@@ -2,7 +2,7 @@
 
 This repository holds the source files of the [OutSystems product documentation](https://success.outsystems.com/Documentation). 
 
-Check [how you can contribute](.github/CONTRIBUTING.md).
+Check [how you can contribute](CONTRIBUTING.md).
 
 ## Writing
 

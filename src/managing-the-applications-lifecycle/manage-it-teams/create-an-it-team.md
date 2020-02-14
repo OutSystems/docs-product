@@ -80,7 +80,7 @@ To add an application to a team, do the following:
 
 1. Find the team you want from the list of teams and click the Name of the team to go to the details page.
 
-1. Click the **Add Application** link.
+1. Click the **Add Applications** link.
 
 1. Choose the applications that users in this team will have access to. Notice that you will see only the applications that are not part of a team yet, as one application can only be part of a single team.  
 

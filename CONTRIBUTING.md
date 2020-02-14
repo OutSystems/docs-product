@@ -14,9 +14,9 @@ After you create the pull request, we'll review the content. We may also add som
 
 You can roughly classify the documentation in one of the three groups of content:
 
-* :blue_book: conceptual (intros and docs about how things work - [example](../src/managing-the-applications-lifecycle/containers/intro.md))
-* :hammer: procedural (mostly numbered lists on how to do something - [example](../src/develop/ui/screen-templates-create/intro.md))
-* :information_source: referential (usually tables listing extra details - [example](../src/ref/apis/outsystems-api-requestinfo-api.md))
+* :blue_book: conceptual (intros and docs about how things work - [example](src/managing-the-applications-lifecycle/containers/intro.md))
+* :hammer: procedural (mostly numbered lists on how to do something - [example](src/develop/ui/screen-templates-create/intro.md))
+* :information_source: referential (usually tables listing extra details - [example](src/ref/apis/outsystems-api-requestinfo-api.md))
 
 It's generally more straightforward to create and edit **procedural** and **referential** content. 
 

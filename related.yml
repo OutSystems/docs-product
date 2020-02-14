@@ -17,6 +17,7 @@
 # Validate Form Inputs
 - develop/ui/forms/form-validate.md:
   - ref/lang/auto/Class.Mobile Module.final.md
+  - develop/logic/actions.md
 
 # Table
 - develop/ui/table/intro.md:
@@ -345,12 +346,12 @@
 # Client Action
 - ref/lang/auto/Class.Client Action.final.md:
     # Client Actions
-    - develop/logic/action-mobile.md#client-actions
+    - develop/logic/actions.md#client-actions
     
 # Data Action
 - ref/lang/auto/Class.Data Action.final.md:
     # Data Actions
-    - develop/logic/action-mobile.md#data-actions
+    - develop/logic/actions.md#data-actions
     # Aggregate
     - ref/lang/auto/Class.Aggregate.final.md
     # SQL
@@ -644,7 +645,7 @@
 
 #     Server Action
 -  ref/lang/auto/Class.Server Action.final.md:
-    - develop/logic/action-mobile.md#server-actions
+    - develop/logic/actions.md#server-actions
     - develop/logic/action-web.md#server-actions
     - ref/lang/auto/Class.Run Server Action.final.md
     - develop/reuse-and-refactor/encapsulate-logic.md

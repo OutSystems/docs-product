@@ -12,4 +12,6 @@ You can restrict internal network access to the following elements:
 * Exposed SOAP Web Services
 * Exposed REST APIs
 
-To restrict these elements to internal network access set its **Internal Access Only** property to `Yes`.
+To restrict these elements to internal network access, set its **Internal Access Only** property to `Yes`.
+
+![restrict internal network](images/internal-network-set-ss.png)

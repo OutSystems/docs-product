@@ -161,6 +161,12 @@ You can use [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) 
 }
 ```
 
+## Plugins in PWA {#plugins}
+
+During the early access, you can try out [Camera Plugin](https://www.outsystems.com/forge/component-overview/1390/camera-plugin), as an officially supported plugin in your PWA.
+
+There are more plugins coming soon, and you can contribute with your own on the Forge.
+
 ## Debugging
 
 The Debugger is currently not available for PWAs. We advise you to use the debugging capabilities of your browser to troubleshoot any runtime issues with your PWA.

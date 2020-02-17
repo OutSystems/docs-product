@@ -215,25 +215,26 @@ These requirements apply, even when installing the development tools on a virtua
 
 Running an OutSystems app on a browser continues to be supported for 6 months after the end-of-support date announced by OutSystems for that browser.
 
-### Desktop Browsers (Web applications)
+### Reactive Web Apps
 
-* Internet Explorer 11 (Traditional Web only)
 * Edge (latest stable version)
 * Firefox (latest stable version)
 * Google Chrome (latest stable version)
 * Safari (latest stable version)
 
-### Mobile Device Browsers (Web applications)
+### Progressive Web Apps (Early Access feature)
 
-* iOS 7 or higher
-* Android 4.1 or higher
-* Windows Phone 8 or higher
+<div class="info" markdown="1">
 
-Note: Only the default browsers of the operating systems listed above are supported.
+Learn more about this Early Access feature by checking out the [Progressive Web Apps documentation page](../deliver-mobile/distribute-pwa/intro.md).
 
-### Mobile Apps
+</div>
 
-The minimum requirements depend on the [Mobile Apps Build Service (MABS) version](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) used to generate your mobile apps.
+* Google Chrome (latest stable version)
+
+### Mobile App packages
+
+The minimum requirements depend on the [Mobile Apps Build Service (MABS) version](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) used to generate your Mobile Apps.
 
 Note: Only official Android and iOS ROMs are supported.
 
@@ -241,6 +242,22 @@ Note: Only official Android and iOS ROMs are supported.
 
 * iOS 8 or later
 * Android 4.4 or later
+
+### Traditional Web Apps
+
+**Desktop Browsers**
+
+* Internet Explorer 11 (latest stable version)
+* Edge (latest stable version)
+* Firefox (latest stable version)
+* Google Chrome (latest stable version)
+* Safari (latest stable version)
+
+**Mobile Device Browsers**
+
+* Default browser for iOS 7 or higher
+* Default browser for Android 4.1 or higher
+* Default browser for Windows Phone 8 or higher
 
 ## Containers considerations
 

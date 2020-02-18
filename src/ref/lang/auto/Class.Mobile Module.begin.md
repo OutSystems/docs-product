@@ -1,3 +1,10 @@
+
+<div class="info">
+
+Applies to Mobile and Reactive Web Apps.
+
+</div>
+
 An OutSystems App consists of one or more Modules joined by an Application Template. Click the module name (1) in any of the main Service Studio tabs (**Process**, **Interface**, **Logic**, or **Data**) to see the module properties pane (2).
 
 ![Module properties](images/servicestudio-module-properties.png?width=800)

@@ -954,7 +954,6 @@
         # Workspace
         - href: ref/workspace/intro.md
         - topics:
-            - href: ref/lang/auto/Class.Module.final.md
             - href: ref/lang/auto/Class.Mobile Module.final.md
             - href: ref/lang/auto/Class.Reference.final.md
 
@@ -1048,6 +1047,8 @@
             - topics:
                 - href: ref/lang/auto/Class.On Begin Web Request.final.md
                 - href: ref/lang/auto/Class.On Session Start.final.md
+        
+            - href: ref/lang/auto/Class.Module.final.md
 
     # Configuration Tool
     - href: ref/configuration-tool/intro.md

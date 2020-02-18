@@ -47,7 +47,7 @@ Here is how you can activate and open the network inspection screen on the iOS d
 
 <div class="info" markdown="1">
 
-You only need to grant the notification permission and enable the network debugging once. After that, you can use the 3-finger gesture to show the toolbar.
+You only need to grant the notification permission and enable the network debugging once. After that, you can use the three-finger gesture to show the toolbar.
 
 </div>
 
@@ -63,4 +63,5 @@ The target OS for the network inspection screen is iOS. The feature is available
 
 * On Android the app needs the overlay permission to show the network toolbar. Turn on the option **Allow display over other apps**. 
 * Resources that are loaded by the WebView are not visible on the Android screen. We recommend using Chrome to view all requests.
+* A device may already be using the three-finger gesture for a built-in action. Check the gesture settings on the device and try turning off the gesture before using the network inspector.
  

@@ -1,4 +1,5 @@
 ---
+summary: Customize the URL of your exposed REST API methods according to your needs.
 tags: 
 ---
 
@@ -16,8 +17,8 @@ to the following one:
 For that, do the following:
 
 1. In the **Logic** tab, open the **Integrations** folder. 
-2. Expand the REST API and select the method you want to change to display its properties. 
-3. Set the "URL Path" property of the REST API method to the new custom URL.  
+1. Expand the REST API and select the method you want to change to display its properties. 
+1. Set the "URL Path" property of the REST API method to the new custom URL.  
     Example: `/Contacts/{Id}`. 
 
 The URL property will change accordingly.

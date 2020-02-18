@@ -13,7 +13,7 @@ Do the following:
 
 1. In Service Studio, make sure that your REST API methods and their parameters have their "Description" property filled in. You can use [Markdown](http://daringfireball.net/projects/markdown/syntax) in the description to format the text. 
 
-2. Publish the module. 
+1. Publish the module. 
 
 The documentation is made available under the base URL of the REST API. To open it do the following:
 

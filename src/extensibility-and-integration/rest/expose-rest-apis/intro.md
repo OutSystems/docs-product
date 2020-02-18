@@ -1,4 +1,5 @@
 ---
+summary: Exposing REST APIs in your OutSystems applications.
 tags: support-application_development; support-Integrations_Extensions
 ---
 

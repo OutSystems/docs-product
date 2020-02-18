@@ -1,4 +1,5 @@
 ---
+summary: How to send a specific HTTP Status Code in the response of an exposed REST API method.
 tags: 
 ---
 

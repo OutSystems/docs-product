@@ -9,8 +9,8 @@ If you want to expose methods to allow other systems to retrieve or manipulate i
 ## Create the REST API Service
 
 1. In the **Logic** tab, open the **Integrations** folder. 
-2. Right-click REST and select **Expose REST API...** 
-3. Set the name of your REST API. Example: `PhoneBook` 
+1. Right-click REST and select **Expose REST API...** 
+1. Set the name of your REST API. Example: `PhoneBook` 
 
 ## Create the REST API Method
 

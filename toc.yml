@@ -839,8 +839,8 @@
                     - href: ref/lang/auto/Class.Role.final.md
                     - href: ref/lang/auto/Class.User Exception.final.md
                     - href: ref/lang/auto/Class.Role Exception.final.md
-                # Mobile Logic Tools
-                - href: ref/logic/implementing-logic/mobile-logic-tools/intro.md 
+                # Logic Tools
+                - href: ref/logic/implementing-logic/logic-tools/intro.md 
                 - topics:
                     - href: ref/lang/auto/Class.Aggregate.final.md
                     - href: ref/lang/auto/Class.Assign.final.md
@@ -862,26 +862,18 @@
                     - href: ref/lang/auto/Class.End.final.md
                     - href: ref/lang/auto/Class.Start.final.md
 
-        # Reactive Interfaces
-        - href: ref/reactive-interfaces/intro.md
-        - topics:
-            # Designing Screens
-            - href: ref/reactive-interfaces/designing-screens.md
-            - topics:
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TableRecords.final.md
-
-        # Mobile Interfaces
-        - href: ref/mobile-interfaces/intro.md
+        # Interfaces
+        - href: ref/interfaces/intro.md
         - topics:
             # Adding Data and Logic
-            - href: ref/mobile-interfaces/adding-data-and-logic.md
+            - href: ref/interfaces/adding-data-and-logic.md
             - topics:
                 - href: ref/lang/auto/Class.Aggregate.final.md
                 - href: ref/lang/auto/Class.Client Action.final.md
                 - href: ref/lang/auto/Class.Data Action.final.md
                 - href: ref/lang/auto/Class.Script.final.md
             # Designing Screens
-            - href: ref/mobile-interfaces/designing-screens.md
+            - href: ref/interfaces/designing-screens.md
             - topics:
                 - href: ref/lang/auto/Class.Block Widget.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md
@@ -906,18 +898,19 @@
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popover.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popup.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
+                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TableRecords.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md
                 - href: ref/lang/auto/Class.Text Widget.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md
             # Designing the Layout
-            - href: ref/mobile-interfaces/designing-the-layout.md
+            - href: ref/interfaces/designing-the-layout.md
             - topics:
                 - href: ref/lang/auto/Class.Image.final.md
                 - href: ref/lang/auto/Class.Localized Image.final.md
                 - href: ref/lang/auto/Class.Mobile Theme.final.md
                 - href: ref/lang/auto/Class.UI Flow.final.md
             # Navigating in the Application
-            - href: ref/mobile-interfaces/navigating-in-the-application.md
+            - href: ref/interfaces/navigating-in-the-application.md
             - topics:
                 - href: ref/lang/auto/Class.Block.final.md
                 - href: ref/lang/auto/Class.Comment.final.md

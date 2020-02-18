@@ -1,13 +1,11 @@
 ---
 summary: Store the variable values and share them across apps.
-tags: 
+tags: support-application_development;
 ---
 
 # Share a Client Variable between apps
 
 This document shows how you can create two apps and share a Client Variable between them. We're using a Block to share the value, but you can do the same with a public Client Action. The instructions apply to Reactive and Mobile App.
-
-For an idea on how to use Local Storage to keep values when navigating between Screens in Mobile Apps, check the FAQ [How to maintain the state of a mobile screen](<https://success.outsystems.com/Documentation/Development_FAQs/How_to_maintain_the_state_of_a_mobile_screen>).
 
 ## Create the first app and a Client Variable
 

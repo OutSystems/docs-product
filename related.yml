@@ -28,6 +28,9 @@
 - develop/data/share-client-var-between-app.md:
   - ref/lang/auto/Class.Client Variable.final.md
   - ref/lang/auto/Class.Session Variable.final.md
+  - external:
+    - "How to maintain the state of a mobile screen": 
+        https://success.outsystems.com/Documentation/Development_FAQs/How_to_maintain_the_state_of_a_mobile_screen
 
 # Libraries
 - develop/reuse-and-refactor/libraries.md:

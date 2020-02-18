@@ -1,6 +1,6 @@
 ---
 summary: Learn how to inspect the HTTP requests for mobile apps built for iOS.
-tags: support-application_development; support-Application_Troubleshooting; support-Mobile_Apps
+tags: support-application_development; support-Application_Troubleshooting; support-Mobile_Apps; runtime-mobile;
 ---
 
 # Inspect the HTTP requests in Mobile Apps for iOS

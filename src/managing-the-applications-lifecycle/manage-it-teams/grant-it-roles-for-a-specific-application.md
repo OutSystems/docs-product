@@ -12,14 +12,14 @@ In this example we want to allow a business user to **monitor** the applications
 
 To do this, configure the business user:
 
-1. [Create a new role](create-an-it-role.md#create-a-new-role) called Business Monitoring that has the permission level **Monitor and Reference Applications**. This permission level allows users to monitor applications without granting access to opening the modules of those applications.  
+1. [Create a new role](create-an-it-role.md#create-a-new-role) called Business Monitoring that has the permission level **Monitor and Add Dependencies**. This permission level allows users to monitor applications without granting access to opening the modules of those applications.  
 
-    ![](images/grant-role-for-app-new-role-lt.png?width=450)
+    ![](images/grant-role-for-app-new-role-lt.png)
 
 1. Go to the user detail screen of the business user and [assign the role](create-an-it-role.md#assign-a-role-to-a-user-for-a-specific-application) Business Monitoring to the applications Mobile Banking and Fleet Management.  
 
-    ![](images/grant-role-for-app-assign-role-lt.png?width=400)
+    ![](images/grant-role-for-app-assign-role-lt.png)
 
-Checking the [permissions of the business user](find-out-the-permissions-of-it-users.md#permissions-of-a-specific-IT-user), you can see that the user has **Monitor and Reference** permission over Fleet Management and Mobile Banking applications, but no access over any other application in the environment.
+Checking the [permissions of the business user](find-out-the-permissions-of-it-users.md#permissions-of-a-specific-IT-user), you can see that the user has **Monitor and Add Dependencies** permission over Fleet Management and Mobile Banking applications, but no access over any other application in the environment.
 
-![](images/grant-role-for-app-check-permission-lt.png?width=700)
+![](images/grant-role-for-app-check-permission-lt.png)

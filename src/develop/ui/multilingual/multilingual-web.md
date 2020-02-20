@@ -5,9 +5,9 @@ tags: runtime-traditionalweb; support-application_development
 
 # Multilingual Web Applications
 
-Besides the language that your module was designed in (the default language) you may add other languages for which your module is translated and executed. Each language is specified by its **Locale** which is defined by the **primary language** or the **primary language and the region**, as some languages vary from region to region.
+Besides the language that your Module was designed in (the default language) you may add other languages for which your Module is translated and executed. Each language is specified by its **Locale** which is defined by the **primary language** or the **primary language and the region**, as some languages vary from region to region.
 
-You can translate the following elements of your module:
+You can translate the following elements of your Module:
 
 * Text in the screens
 * Screens Title
@@ -20,7 +20,7 @@ You can translate the following elements of your module:
 * Images
 * Static Entities (make sure the `Use Translations` advanced property is enabled)
 
-From the translation process view, the elements that you can translate will be considered translatable **Resources**.
+From the translation process view, these elements will be considered **translatable resources**. You can select how each translatable resource in your Module is handled - whether it should effectively be translated (text or images that should be different in different languages) or not (for instance, a brand name that is the same across different languages) - using the [Translations Behavior Editor](./translations-editor.md). 
 
 ## Add Other Languages
 
@@ -42,7 +42,7 @@ If an element has no translation defined for the language region while executing
 
 ## Resources Translation Process
 
-The translation of your module is made using files containing the translatable **resources**. OutSystems exports the translatable resources to these files, which are sent to the translator, and then, after being translated, imported back to your module.
+The translation of your Module is made using files containing the **translatable resources**. OutSystems exports the translatable resources to these files, which are sent to the translator, and then, after being translated, imported back to your Module.
 
 ### Export the Resources for Translation
 
@@ -64,13 +64,13 @@ To export your translatable resources follow these steps:
 
     * **.resX (.NET resource format)**
 
-        OutSystems exports all translatable resources to .resX files, one file **for each language locale** in your module and one more file for the module default language. The translatable resources information is organized in a XML way consisting basically in pairs of `<name, value>`, although a comment is also added:
+        OutSystems exports all translatable resources to .resX files, one file **for each language locale** in your Module and one more file for the Module default language. The translatable resources information is organized in a XML way consisting basically in pairs of `<name, value>`, although a comment is also added:
 
         **Name**: The name (key) of the translatable resource. It is unique within the eSpace and it does not change. New translatable resources get a different name.
         
         **Value**: This is the field where you should put the translated text replacing the existing one.
         
-        **Comment**: The location of the translatable resource in the module.
+        **Comment**: The location of the translatable resource in the Module.
 
         Note: Depending on the .NET Framework you are using, the translatable resource files can have more attributes than these; these extra attributes are ignored by Service Studio.
 
@@ -87,10 +87,10 @@ To export your translatable resources follow these steps:
     Notice that no file name is asked and this is because Service Studio uses fixed names for its language translatable resource files, as follows:
 
     Excel Files
-    :   The name of the Excel file obeys to the following rule: `<eSpace name> + 'Language' + '.' + <Excel extension>`. For example, if your module name is 'Recruitment' the language translatable resources file name is 'RecruitmentLanguage.xls'.
+    :   The name of the Excel file obeys to the following rule: `<eSpace name> + 'Language' + '.' + <Excel extension>`. For example, if your Module name is 'Recruitment' the language translatable resources file name is 'RecruitmentLanguage.xls'.
 
     .resX Files
-    :   The name of the .resX files obey to the following rule: `<eSpace name> + 'Language' + '.' + <Language locale> + '.resX'`. For example, if your module name is 'Recruitment' and has the following language locales: 'French (France)' (fr-FR) and 'French (Canada)' (fr-CA). Three files are generated: 'RecruitmentLanguage.fr-FR.resX', 'RecruitmentLanguage.fr-CA.resX, and 'RecruitmentLanguage.resX' (for the default language).
+    :   The name of the .resX files obey to the following rule: `<eSpace name> + 'Language' + '.' + <Language locale> + '.resX'`. For example, if your Module name is 'Recruitment' and has the following language locales: 'French (France)' (fr-FR) and 'French (Canada)' (fr-CA). Three files are generated: 'RecruitmentLanguage.fr-FR.resX', 'RecruitmentLanguage.fr-CA.resX, and 'RecruitmentLanguage.resX' (for the default language).
 
 ### Export the Images for Translation
 
@@ -100,7 +100,7 @@ Name your translated images using the convention: `<image name> + '.' + <languag
 
 ### Import the Translations of the Resources
 
-To import the translations of your translatable resources back to the module follow these steps: 
+To import the translations of your translatable resources back to the Module follow these steps: 
 
 1. Open the Module menu, point to **Import** and select **Language Resources**. 
 

@@ -24,6 +24,13 @@
     # Table pagination and sorting
     - develop/ui/table/pagination-sorting.md
 
+# Table pagination and sorting
+- develop/ui/table/pagination-sorting.md:
+    - external:
+        - "How to add sorting to a Table fed by a SQL query":
+            https://success.outsystems.com/Documentation/How-to_Guides/How_to_use_dynamic_sorting_in_a_Table_fed_by_a_SQL_query
+
+
 # Share a Client Variable between apps
 - develop/data/share-client-var-between-app.md:
   - ref/lang/auto/Class.Client Variable.final.md

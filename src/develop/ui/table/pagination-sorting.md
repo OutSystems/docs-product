@@ -7,13 +7,6 @@ tags: runtime-reactiveweb;
 
 Pagination and sorting are the features you get automatically if you create a table by dragging an Entity to the Screen. However, you may choose to implement pagination and sorting manually. Here are the instructions to help you with that.
 
-<div class="info" markdown="1">
-
-In these instructions we use data from an Aggregate. If you use "Fetch from Other Sources" to get the data, you should implement your own logic.
-
-</div>
-
-
 ## Create pagination
 
 Follow these steps to add pagination to your table. You should already have an Aggregate and a Table Widget added to your Screen.

@@ -10,7 +10,7 @@ In this example we want to:
 
 * Allow developers in Team Baking and Team Intranet to see and **work only on the applications of their respective teams**.
 
-* Allow a senior developer of Team Banking to both **reference and debug the core applications Customers and Services**, but without granting permissions to make changes to those applications. These applications are managed by another team, the Team Core Applications.
+* Allow a senior developer of Team Banking to both **debug and add dependencies to the core applications Customers and Services**, but without granting permissions to make changes to those applications. These applications are managed by another team, the Team Core Applications.
 
 ![](images/team-permissions-teams-diag.png?width=700)
 
@@ -44,11 +44,11 @@ You will get something like this:
 
 Checking the [permissions of the users](find-out-the-permissions-of-it-users.md#permissions-of-a-specific-IT-user), you can see that they have **Change and Deploy** permission over the applications of their team, but no access over any other application in the environment.
 
-![](images/team-permissions-check-user-lt.png?width=700)
+![](images/team-permissions-check-user-lt.png?width=800)
 
-Now, let’s configure a senior developer in the Team Banking to **reference** and **debug** the applications of Team Core Applications:
+Now, let’s configure a senior developer in the Team Banking to **debug** and **add dependencies** to the applications of Team Core Applications:
 
-1. [Create a new role](create-an-it-role.md#create-a-new-role) called Senior Developer that has the permission level **Open and Debug Applications**. To reference the applications, the permission level **Monitor and Reference Applications** would be enough, but as the senior developer also needs to debug the applications, we must grant the above permission level, which also allows users to open and debug modules in applications.  
+1. [Create a new role](create-an-it-role.md#create-a-new-role) called Senior Developer that has the permission level **Open and Debug Applications**. To add dependencies to the applications, the permission level **Monitor and Add Dependencies** would be enough, but as the senior developer also needs to debug the applications, we must grant the above permission level, which also allows users to open and debug modules in applications.  
 
     ![](images/team-permissions-senior-role-lt.png?width=450)
 
@@ -60,6 +60,6 @@ Now, let’s configure a senior developer in the Team Banking to **reference** a
 
     ![](images/team-permissions-add-senior-user-lt.png?width=800)
 
-The senior developer of Team Banking can now reference and debug the core applications Customers and Services from other applications, but has no permissions to make changes to Customers and Services applications.
+The senior developer of Team Banking can now debug and add dependencies to the core applications Customers and Services from other applications, but has no permissions to make changes to Customers and Services applications.
 
-![](images/team-permissions-check-senior-user-lt.png?width=700)
+![](images/team-permissions-check-senior-user-lt.png?width=800)

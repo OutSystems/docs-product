@@ -26,7 +26,7 @@ Message
 :   `The '<web block>' is not a valid theme Menu.`
 
 Cause
-:   To set a web block as Menu layout of a theme, that web block needs to comply with several requirements.
+:   To set a web block as Menu layout of a theme, that web block needs to comply with the requirements outlined in the [themes documentation]( https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Themes#blocks).
 
 Recommendation
-:   Edit the web block and design it to comply with the requirements of a Menu Layout or choose another web block. Refer to the existing themes to check the necessary input parameters and entities that should be used in a Menu web block.
+:   Edit the web block and design it to comply with the requirements of a Menu Layout or choose another web block. Refer to the existing themes to check the necessary input parameters and entities that should be used in a Menu web block. 

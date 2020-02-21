@@ -21,7 +21,7 @@ Drag the FileUpload widget and set a label for it. After the widget is configure
 
 ## Demo
 
-<iframe src="https://drive.google.com/file/d/1rkJmu_1uqdVtF4CdobtCRoYx5FbxvceB/preview" width="750" height="500"></iframe>
+<iframe width="750" height="500" src="https://www.youtube.com/embed/l0YPl_3ya9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Input Parameters
 

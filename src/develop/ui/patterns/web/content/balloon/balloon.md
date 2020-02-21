@@ -21,8 +21,7 @@ Add the content inside the Balloon placeholders. Then configure the WidgetId tha
 
 ## Demo
 
-<iframe src="https://drive.google.com/file/d/1YktcHmp9x0wxnFfwwswKynCGDED7XKzj/preview" width="750" height="500"></iframe>
-
+<iframe width="750" height="500" src="https://www.youtube.com/embed/FYTapAjZPj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Input parameters
 

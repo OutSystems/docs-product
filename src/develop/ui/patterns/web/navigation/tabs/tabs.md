@@ -23,7 +23,7 @@ Fill in the placeholders Header and Content with the Blocks TabsHeaderItem and T
 
 ## Demo
 
-<iframe src="https://drive.google.com/file/d/1sHVMu6-emPwBnds755F4YItpQjErFrx7/preview" width="750" height="500"></iframe>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/97uPVx-Q1lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Input parameters
 

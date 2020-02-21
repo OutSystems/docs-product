@@ -25,7 +25,7 @@ Add the Accordion block to your screen. Then add Accordion Items inside the bloc
 
 ## Demo
 
-<iframe width="750" height="500" src="https://www.youtube.com/embed/FWTZ2tLVlfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="750" height="500" src="https://www.youtube.com/embed/FWTZ2tLVlfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
 ## Input Parameters
 

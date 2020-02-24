@@ -335,7 +335,7 @@
         - href: develop/security/end-user-manage/intro.md
         - topics:
             - href: develop/security/end-user-manage/accessing-users.md
-            - href: develop/security/end-user-manage/internal-vs-external.md
+            - href: develop/security/end-user-manage/classify-internal-users.md
             - href: develop/security/end-user-manage/add-delete-users.md
             - href: develop/security/end-user-manage/end-user-roles.md
             - href: develop/security/end-user-manage/groups.md

@@ -5,9 +5,13 @@ tags: runtime-traditionalweb; support-application_development
 
 # Translations Behavior Editor
 
-The **Translations Behavior Editor** allows you to set how translatable resources of your application behave regarding translations and also set translated texts.
+The **Translations Behavior Editor** allows you to set which [translatable resources](multilingual-web.md) of your application are actually meant to be translated and also to translate individual resources.
 
-This editor is launched by right-clicking on the **Multilingual Locales** folder (or on any of the languages inside it) and choosing **Edit Translations...**.
+To open this editor do the following:
+
+1. In Service Studio, go to the **Data tab**.
+
+1. Right-click the **Multilingual Locales** folder (or any of the languages inside it) and click **Edit Translations...**
 
 ![](images/translations-editor-1.jpg)
 
@@ -37,7 +41,7 @@ The **Translations Behavior editor** window is divided into the four areas prese
 
 ## Translatable Resource List
 
-This is the central area of the window where your module's translatable resources are displayed and where you select the translatable resources that you want to set the translation behavior.
+This is the central area of the window where your Module's translatable resources are displayed. This is where you set the translation behavior for each translatable resource, and also where you can edit the translation for individual resources.
 
 Each translatable resource has the following information:  
 

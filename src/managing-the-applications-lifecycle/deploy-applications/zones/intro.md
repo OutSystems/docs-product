@@ -75,16 +75,16 @@ The "Back-end Service" is discovered by the "Front-end App" through the deployme
 
 ## Example Use Cases
 
-In following examples we have an environment with multiple servers, one targeted at internal users ("Internal Server") and one (or more) targeted at public users ("Public-facing Servers").
+In following examples we have an environment with multiple servers, one targeted at internal end-users ("Internal Server") and one (or more) targeted at public end-users ("Public-facing Servers").
 
 ### Explicitly Segmented Servers
 
 Consider a scenario with two servers configured in the environment, in which the default deployment zone only includes the Internal Server: 
 
-* One server on a DMZ network, serving _public only_ web applications to be accessed by external users connected to the Internet;
-* One internal server, serving _internal only_ web applications to be accessed by internal users.
+* One server on a DMZ network, serving _public only_ web applications to be accessed by external end-users connected to the Internet;
+* One internal server, serving _internal only_ web applications to be accessed by internal end-users.
 
-You wish to deploy some web applications that are only available to internal users and some other web application that are exclusively available to external users. By default, a web application is deployed to the default deployment zone; however, this would make it available only in the internal server in the Intranet network.
+You wish to deploy some web applications that are only available to internal end-users and some other web application that are exclusively available to external end-users. By default, a web application is deployed to the default deployment zone; however, this would make it available only in the internal server in the Intranet network.
 
 To change the configuration of a web application so that it is only deployed to the public-facing server, do the following:
 
@@ -101,10 +101,10 @@ If at a later stage you add a new module to the web application, it will be depl
 
 Consider a scenario with two servers configured in the environment, in which both are part of the default deployment zone: 
 
-* One server on a DMZ network, to be accessed by external users connected to the Internet
-* One internal server, to be accessed by internal users
+* One server on a DMZ network, to be accessed by external end-users connected to the Internet
+* One internal server, to be accessed by internal end-users
 
-You wish to deploy a web application and make it available to internal users only. By default, your web application is deployed to the default deployment zone; however, this would make it available in all servers, both the internal and the public-facing one in the DMZ network.
+You wish to deploy a web application and make it available to internal end-users only. By default, your web application is deployed to the default deployment zone; however, this would make it available in all servers, both the internal and the public-facing one in the DMZ network.
 
 To change the configuration of the web application so that it is only deployed to the internal server, do the following:
 
@@ -113,7 +113,7 @@ To change the configuration of the web application so that it is only deployed t
 
 ![](<images/example-internal-application.png>)
 
-After these steps, the application you just configured will only be deployed to the internal server, and it will be removed from any other servers belonging to the previously configured deployment zone. Internal users will access the application through the internal server address. 
+After these steps, the application you just configured will only be deployed to the internal server, and it will be removed from any other servers belonging to the previously configured deployment zone. Internal end-users will access the application through the internal server address. 
 
 If at a later stage you add a new module to the web application, it will be deployed to the same deployment zone ("Intranet"), as long as all the application modules are still associated with this deployment zone.
 

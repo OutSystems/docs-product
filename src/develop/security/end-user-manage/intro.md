@@ -40,7 +40,7 @@ Internal Users
 External Users
 :   Any Named Users who are not considered Internal Users.
 
-You can classify all Registered Users whose email address contains a specific domain (e.g., `mycompany.com`) as Internal Users, while all other Registered Users are considered External Users. Check [Classify Users as Internal Users](internal-vs-external.md) for more information on configuring these domains.
+You can classify all Registered Users whose email address contains a specific domain (e.g., `mycompany.com`) as Internal Users, while all other Registered Users are considered External Users. Check [Classify Users as Internal Users](classify-internal-users.md) for more information on configuring these domains.
 
 By default, Registered Users are considered **Internal Users**.
 

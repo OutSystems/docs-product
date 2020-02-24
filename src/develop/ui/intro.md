@@ -5,7 +5,7 @@ tags: support-Front_end_Development-overview;OutSystems_UI; OutSystems_Style_Gui
 
 # Design UI
 
-The OutSystems UI defines the way to build the structure of the user interfaces of your OutSystems applications.
+OutSystems UI defines the way to build the structure of the user interfaces of your OutSystems applications.
 
 The following figure represents the OutSystems UI Architecture:
 
@@ -24,7 +24,7 @@ For example, you can use the OutSystems UI Web Base and Email stylesheets, and [
 
 ## The Built-in Screen Templates
 
-Created and maintained by OutSystems, the built-in screen templates are ready to use for developing your applications. You can choose from a different set of [Web Screen Templates](https://www.outsystems.com/outsystems-ui/screens/web) and [Mobile Screen Templates](https://www.outsystems.com/outsystems-ui/screens/mobile).
+Created and maintained by OutSystems, the built-in screen templates are ready to use for developing your applications. You can choose from a different set of [Web Screen Templates](https://www.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=2) and [Mobile Screen Templates](https://www.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=1).
 
 
 ![OutSystems UI Built-in Templates](images/outsystems-ui-built-in-templates.png?width=800)
@@ -48,3 +48,7 @@ Your applications can have all the necessary modules and contain all the CSS. Al
 
 
 ![OutSystems UI Applications](images/outsystems-ui-applications.png?width=800)
+
+## How It Works
+
+You can see how OutSystems UI works and browse the Screen Templates and UI Pattern catalog on the [OutSystems UI website](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/HowItWorks), or learn more about the different components in the sections below.

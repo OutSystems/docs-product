@@ -120,4 +120,4 @@ To proceed with the registration of another environment, click the **Register an
 The default language of LifeTime is English, but you have the possibility to change it to Japanese, or Portuguese (Brazil). To do so, go to the Service Center console of the environment where LifeTime is installed (`https://<your_lifetime_server>/ServiceCenter`), and set up the following Site Properties in the LifeTimeCore module:
 
 * **EnableLocale**: Set it to true to activate the translations.
-* **Locale**: Choose either **ja** or **pt-BR**. If this site property is left empty, LifeTime screens are displayed according to the end-user browser preferences.
+* **Locale**: Choose either **ja** or **pt-BR**. If this site property is left empty, LifeTime screens are displayed according to the end user browser preferences.

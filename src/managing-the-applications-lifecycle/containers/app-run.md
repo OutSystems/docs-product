@@ -177,4 +177,4 @@ There are two stages in the publishing operation that involve **creating a resul
 
 Having these two stages allows you to separate the deployment preparation from the actual deployment, on which any needed database changes will occur. This is important because these database changes might leave the currently running application (from a previous deployment in the same environment) in an inconsistent state.
 
-By reducing the time between applying the database changes and having your container-bound application readily available to end-users you will minimize the impact of the deployment process on applications that were already available in the environment you are deploying to.
+By reducing the time between applying the database changes and having your container-bound application readily available to end users you will minimize the impact of the deployment process on applications that were already available in the environment you are deploying to.

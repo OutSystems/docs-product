@@ -48,7 +48,7 @@ Message
 :   `You should use an attribute from ‘<table | list records name>’ current record for the <input widget> ‘<input name>’ variable`
 
 Cause
-:   You have an input widget (Input, Input Password, Select, etc), inside a Table Records or List Records widget, that handles a variable that is not bound to the List runtime property of the list with records being displayed. In this situation, the attribute associated with this variable will have the same value in all the records and this value corresponds to the last value provided by the end-user.
+:   You have an input widget (Input, Input Password, Select, etc), inside a Table Records or List Records widget, that handles a variable that is not bound to the List runtime property of the list with records being displayed. In this situation, the attribute associated with this variable will have the same value in all the records and this value corresponds to the last value provided by the end user.
 
 Recommendation
 :   If you want to update a set of records correctly, in a Table Records widget or a List Records widget, the Variable property of the input widget should be obtained through the List runtime property. For example: `TableRecords1.List.Current.Customer.Name`
@@ -70,7 +70,7 @@ Message
 :   `'Special Variable' will always be empty because 'Special List' is not specified`
 
 Cause
-:   You have a Combo Box widget that is not populated with generic values but the Special Variable property is set. This property is only necessary to gather the end-user input when generic values are displayed, i.e. the Special List property is set.
+:   You have a Combo Box widget that is not populated with generic values but the Special Variable property is set. This property is only necessary to gather the end user input when generic values are displayed, i.e. the Special List property is set.
 
 Recommendation
 :   Edit this Combo Box widget and delete the variable associated with the Special Variable property because this variable is ignored by Service Studio.

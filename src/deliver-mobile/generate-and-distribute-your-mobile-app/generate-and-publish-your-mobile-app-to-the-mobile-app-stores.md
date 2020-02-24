@@ -1,11 +1,11 @@
 ---
-summary: Generate a mobile app package for your mobile app to publish in the App Store and Google Play stores. Distribute your mobile app directly to your company's end-users, if you enrolled in the Apple Enterprise Developer Program.
+summary: Generate a mobile app package for your mobile app to publish in the App Store and Google Play stores. Distribute your mobile app directly to your company's end users, if you enrolled in the Apple Enterprise Developer Program.
 tags: runtime-mobile; support-mobile; publish-application; google-play-store; android-app; apple-app-store; ios-app
 ---
 
 # Generate and Publish Your Mobile App to the Mobile App Stores
 
-At some point your mobile app is ready for production and so, to be used by end-users. One of the ways you can distribute your production-ready mobile app is by providing it in the mobile stores for the general public.
+At some point your mobile app is ready for production and so, to be used by end users. One of the ways you can distribute your production-ready mobile app is by providing it in the mobile stores for the general public.
 
 In OutSystems, you can generate a mobile application package for your mobile app to be published in the App Store and Google Play stores.
 

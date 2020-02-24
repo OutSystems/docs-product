@@ -7,7 +7,7 @@ summary: Wizard splits complex tasks and process into steps.
 
 Split complex tasks and process into steps.
 
-Use the Wizard to present numbered steps or conditions that the end-user needs to complete or reach a goal. Use it to split large tasks into more manageable steps. Wizards usually include explicit button navigation to move a step forward or backward. 
+Use the Wizard to present numbered steps or conditions that the end user needs to complete or reach a goal. Use it to split large tasks into more manageable steps. Wizards usually include explicit button navigation to move a step forward or backward. 
 
 **How to use**
 

@@ -27,5 +27,5 @@ To display a database image in Traditional Web:
 1. Select an existing image resource or import a new image as an image default. This image is used as a placeholder during design time and as default during runtime. 
 1. Select the image and change its property Type to `Database`.
 1. Set the Attribute property to an entity attribute of type `Binary Data` that stores the image in the database. 
-1. Set the Filename property to the name of the file when the end-user saves the image.
+1. Set the Filename property to the name of the file when the end user saves the image.
 1. Set the Entity Identifier property to the identifier of the specific entity record that contains the image to display. 

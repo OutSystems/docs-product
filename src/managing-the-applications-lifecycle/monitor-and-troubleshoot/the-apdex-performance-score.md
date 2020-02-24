@@ -19,7 +19,7 @@ If there is no data about an application, OutSystems displays a hyphen (-).
 
 ## How an APDEX Score is Calculated
 
-Each time the end-user navigates to a page in your application, OutSystems checks how long the page took to load. If the page loads in:
+Each time the end user navigates to a page in your application, OutSystems checks how long the page took to load. If the page loads in:
 
 * More than 8 seconds: it provides a poor user experience, because it's **slow**
 * 2–8 seconds: it provides a fair user experience, because it's **fairly slow**

@@ -5,7 +5,7 @@ tags: runtime-mobile
 
 # Read/Write Data with Conflict Detection
 
-This data synchronization pattern is recommended for advanced scenarios where multiple end-users will change the same data while the apps are offline, as follows:
+This data synchronization pattern is recommended for advanced scenarios where multiple end users will change the same data while the apps are offline, as follows:
 
 * The server database holds the master data that can change over time.
 * The local storage database holds a subset of the master data and can be modified.
@@ -30,7 +30,7 @@ The following is an overview of the Read/Write Data With Conflict Detection patt
 
 1. ![](images/icon-client.png) Updates last sync timestamp in local storage.
 
-1. ![](images/icon-client.png) Reports pending conflicts to the end-user if applicable.
+1. ![](images/icon-client.png) Reports pending conflicts to the end user if applicable.
 
 You need to implement a mechanism, either automatic or manual, to resolve the detected conflicts. For example, you can present the client and server versions of the records side by side and allow the end user to select which version to maintain.
 

@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Tooltip dynamically displays simple informative content on end-user interaction.
+summary: Tooltip dynamically displays simple informative content on end user interaction.
 ---
 
 # Tooltip
 
-Dynamically displays simple informative content on end-user interaction.
+Dynamically displays simple informative content on end user interaction.
 
-Use the Tooltip to show informative text when end-users hover over, focus on or tap an element. Tooltips can identify or describe an element with simple text, not supporting complex text or operations.
+Use the Tooltip to show informative text when end users hover over, focus on or tap an element. Tooltips can identify or describe an element with simple text, not supporting complex text or operations.
 
 **How to use**
 

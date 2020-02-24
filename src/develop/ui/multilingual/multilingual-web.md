@@ -139,7 +139,7 @@ To add an image for a specific language, do the following:
 
 You may change the language in which the application is running using the [SetCurrentLocale System Action](<../../../ref/apis/auto/system-actions.final.md#SetCurrentLocale>).
 
-As an example, use this System Action to allow the end-user to change the operating language of your application:
+As an example, use this System Action to allow the end user to change the operating language of your application:
 
 ![](images/multilingual-web-2.png)
 
@@ -157,10 +157,10 @@ Each flag has a link that, when pressed, invokes a screen action that changes th
 
 ![](images/multilingual-web-5.png)
 
-## Display the Current Language to End-User
+## Display the Current Language to End User
 
 You can obtain your application current language locale using the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction.Environment.final.md#GetCurrentLocale>).
 
-As an example, you may display to the end-user a flag and the locale code (in [RFC 1766](<https://tools.ietf.org/html/rfc1766>) format) of the language which the application is operating:
+As an example, you may display to the end user a flag and the locale code (in [RFC 1766](<https://tools.ietf.org/html/rfc1766>) format) of the language which the application is operating:
 
 ![](images/multilingual-web-6.png)

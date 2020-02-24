@@ -7,7 +7,7 @@ summary: RangeSliderInterval selects a single value or a range between two value
 
 Select a single value or a range between two values.
 
-Offer this UI control to let end-users select a value or range from a fixed set of options.
+Offer this UI control to let end users select a value or range from a fixed set of options.
 
 **How to use**
 

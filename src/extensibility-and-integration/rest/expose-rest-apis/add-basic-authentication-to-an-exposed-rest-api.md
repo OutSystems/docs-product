@@ -22,4 +22,4 @@ As a result, OutSystems creates the "OnAuthentication" action in your REST API t
 
 ![](images/ss-rest-onauthentication-basic-flow.png)
 
-All methods in the REST API will now require Basic Authentication. User credentials are managed in your end-user management application (by default, the [Users application](../../../develop/security/end-user-manage/accessing-users.md)).
+All methods in the REST API will now require Basic Authentication. User credentials are managed in your end user management application (by default, the [Users application](../../../develop/security/end-user-manage/accessing-users.md)).

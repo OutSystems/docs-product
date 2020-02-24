@@ -1,11 +1,11 @@
 ---
-summary: Allow end-users to check the details of a record by navigating to another screen.
+summary: Allow end users to check the details of a record by navigating to another screen.
 tags: support-application_development; support-Mobile_Apps; support-webapps
 ---
 
 # Navigate to a Detail Screen
 
-You can allow end-users to check the details of a given record by navigating to a different screen while providing the item identifier as an input parameter.
+You can allow end users to check the details of a given record by navigating to a different screen while providing the item identifier as an input parameter.
 
 ## In Reactive Web and Mobile
 

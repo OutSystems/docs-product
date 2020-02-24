@@ -18,7 +18,7 @@ To create an  index  for an entity:
 
 ## Example
 
-In the GoOutWeb application, an application to find and review interesting places, we want to ensure that an end-user cannot give more than one review to a place in the same day.
+In the GoOutWeb application, an application to find and review interesting places, we want to ensure that an end user cannot give more than one review to a place in the same day.
 
 To create a unique index in the  Review  entity to ensure this restriction:
 
@@ -34,4 +34,4 @@ To create a unique index in the  Review  entity to ensure this restriction:
 
 5. Publish the module. While publishing, OutSystems creates the index in the database. 
 
-From now on, when an end-user tries to save the second review for the same place in the same day, OutSystems raises a database exception.
+From now on, when an end user tries to save the second review for the same place in the same day, OutSystems raises a database exception.

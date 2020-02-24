@@ -47,6 +47,6 @@ To use the new extension in an application we proceeded as follows:
 
 1. In Service Studio, we picked the CalculateMortgage action from the Manage Dependencies window, adding it as a dependency to the application.
 
-1. Called the extension action in the application logic, after validating the end-user input:
+1. Called the extension action in the application logic, after validating the end user input:
 
     ![](<images/example-extension-use.png>)

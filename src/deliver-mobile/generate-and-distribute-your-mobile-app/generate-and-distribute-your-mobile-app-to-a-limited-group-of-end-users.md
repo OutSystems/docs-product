@@ -1,13 +1,13 @@
 ---
-summary: Generate a production mobile app package for your mobile app to distribute to a group of selected end-users.
+summary: Generate a production mobile app package for your mobile app to distribute to a group of selected end users.
 tags: runtime-mobile; support-mobile
 ---
 
-# Generate and Distribute Your Mobile App to a Limited Group of End-Users
+# Generate and Distribute Your Mobile App to a Limited Group of End Users
 
-At some point you will decide that your mobile app is ready for production and so, ready to be used by end-users. One way of starting the distribution of your production-ready mobile app is by making it available first to a limited group of end-users.
+At some point you will decide that your mobile app is ready for production and so, ready to be used by end users. One way of starting the distribution of your production-ready mobile app is by making it available first to a limited group of end users.
 
-In OutSystems, you can generate a mobile application package for your mobile app to be installed by the selected end-users.
+In OutSystems, you can generate a mobile application package for your mobile app to be installed by the selected end users.
 
 ## For iOS
 
@@ -20,7 +20,7 @@ In OutSystems, you can generate a mobile application package for your mobile app
 — `In-House and Ad Hoc` certificate for the Apple Developer Enterprise Program  
 If you don’t have one, learn [how you can create a certificate](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-certificate>).
 
-* To allow launching your app in the devices of the end-users group, you must setup the `Ad Hoc` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-provisioning-profile>).
+* To allow launching your app in the devices of the end users group, you must setup the `Ad Hoc` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-provisioning-profile>).
 
 For more information on registering devices on your Apple Developer account, check the [Apple Developer website](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW10>). For more information on the different provisioning profiles check the Medium blog post "[Cruising through the Complexities of Signing Native Mobile Apps](https://medium.com/outsystems-engineering/cruising-through-the-complexities-of-signing-native-mobile-apps-cc123eb2814b)" by OutSystems.
 
@@ -54,11 +54,11 @@ To use Service Center, do the following:
 
 After the app is generated, click the download icon near the version information to download the iOS app package (IPA).
 
-### Distribute the App to the Group of End-Users
+### Distribute the App to the Group of End Users
 
-There are several ways to distribute your iOS mobile app to a selected group of end-users, such as:
+There are several ways to distribute your iOS mobile app to a selected group of end users, such as:
 
-* Send the end-users the Service Studio generated QR code, the installation link or the mobile app package (IPA) itself. Have in mind that only selected devices specified for the provisioning profile will be able install and launch the app. If a given user’s device is not authorized to install the app, the user will get a "Unable to Download App" alert message. For more information on registering devices associated with a given provisioning profile, check the [Apple Developer website](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW10>).
+* Send the end users the Service Studio generated QR code, the installation link or the mobile app package (IPA) itself. Have in mind that only selected devices specified for the provisioning profile will be able install and launch the app. If a given user’s device is not authorized to install the app, the user will get a "Unable to Download App" alert message. For more information on registering devices associated with a given provisioning profile, check the [Apple Developer website](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW10>).
 
 * Use the TestFlight Beta Testing program available in [iTunes Connect](<https://itunesconnect.apple.com>). After you upload your mobile app package to TestFlight in iTunes Connect, you will be able to invite internal and external testers. If you invite external testers, your app will temporarily be held for Beta App Review. For more information on using TestFlight, check the [TestFlight help topic](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingYourAppUsingTestFlight/DistributingYourAppUsingTestFlight.html>) in the Apple Developer website. 
 
@@ -67,7 +67,7 @@ There are several ways to distribute your iOS mobile app to a selected group of 
 
 ### Before You Start
 
-If you decide to create a closed beta program for distributing the mobile app to a limited group of end-users, each participating end-user must have a Google Account.
+If you decide to create a closed beta program for distributing the mobile app to a limited group of end users, each participating end user must have a Google Account.
 
 ### Generate the Android App Package (APK)
 
@@ -99,11 +99,11 @@ To use Service Center, do the following:
 
 After the app is generated, click the download icon near the version information to download the Android package (APK).
 
-### Distribute the App to the Group of End-Users
+### Distribute the App to the Group of End Users
 
-There are several ways to distribute your Android mobile app to a selected group of end-users, such as:
+There are several ways to distribute your Android mobile app to a selected group of end users, such as:
 
-* Send the end-users the Service Studio generated QR code, the installation link or the mobile app package (APK) itself.
+* Send the end users the Service Studio generated QR code, the installation link or the mobile app package (APK) itself.
 
-* Set up a closed beta testing program in the Play Store. This allows you to distribute the app to a limited group of end-users. You will need to set up a closed beta testing program in your [Google Play Developer Console](<https://play.google.com/apps/publish/>), specify (or import) the email addresses of the end-users that will have access to your beta testing program, share the opt-in URL with them, upload your app package (APK) and publish your app.  
-    Note that the Play Store's closed beta functionality cannot ensure that only the devices of authorized end-users are able to install and run your beta mobile app. While iOS enforces this through a list of authorized device IDs, in Android there are no such limits. Check the [Google Play Developer Console documentation](<https://support.google.com/googleplay/android-developer/answer/3131213?hl=en#runtest>) for more information on running beta testing programs for Android mobile apps.
+* Set up a closed beta testing program in the Play Store. This allows you to distribute the app to a limited group of end users. You will need to set up a closed beta testing program in your [Google Play Developer Console](<https://play.google.com/apps/publish/>), specify (or import) the email addresses of the end users that will have access to your beta testing program, share the opt-in URL with them, upload your app package (APK) and publish your app.  
+    Note that the Play Store's closed beta functionality cannot ensure that only the devices of authorized end users are able to install and run your beta mobile app. While iOS enforces this through a list of authorized device IDs, in Android there are no such limits. Check the [Google Play Developer Console documentation](<https://support.google.com/googleplay/android-developer/answer/3131213?hl=en#runtest>) for more information on running beta testing programs for Android mobile apps.

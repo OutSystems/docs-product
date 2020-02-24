@@ -7,7 +7,7 @@ summary: Timeline indicates related events in chronological order.
 
 Indicates related events in chronological order.
 
-Use the Timeline to show related events in chronological order such as an end-user’s upcoming, current and past activities.
+Use the Timeline to show related events in chronological order such as an end user’s upcoming, current and past activities.
 
 **How to use**
 

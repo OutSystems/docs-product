@@ -7,7 +7,7 @@ tags:
 
 The Processes API allows you to get information from the OutSystems data model to customize and extend the design of your Processes. With this API your can, for example, do the following:
 
-* **Build Your Taskbox**: Build your custom Taskbox to display the tasks to end-users. 
+* **Build Your Taskbox**: Build your custom Taskbox to display the tasks to end users. 
 
 * **Extend the Data Model**: Extend the OutSystems data model to better adapt Processes to your needs. 
 

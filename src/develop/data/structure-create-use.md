@@ -40,7 +40,7 @@ Since the data type that we will need to assign to the output parameter will onl
 
 ## Example Using a Structure
 
-In the application GoOutWeb, a Web application to find and review places of interest, we are developing a REST API method to expose basic information about a registered end-user of the application. The  information we are returning is the Id, the name, and the profile picture of an end-user.
+In the application GoOutWeb, a Web application to find and review places of interest, we are developing a REST API method to expose basic information about a registered end user of the application. The  information we are returning is the Id, the name, and the profile picture of an end user.
 
 Since we are going to reuse the user information in another action of the application, we will create a Structure to hold this information thus allowing us to reuse the data type:
 

@@ -1,19 +1,19 @@
 ---
-summary: How to configure OKTA end-user authentication for your applications.
+summary: How to configure OKTA end user authentication for your applications.
 tags: runtime-traditionalweb
 ---
 
 # Configure OKTA Authentication
 
-OutSystems allows you to use OKTA for authenticating the end-users of your OutSystems applications. This authentication method is configured in a way that is quite similar to the [SAML 2.0](configure-saml.md) one.
+OutSystems allows you to use OKTA for authenticating the end users of your OutSystems applications. This authentication method is configured in a way that is quite similar to the [SAML 2.0](configure-saml.md) one.
 
 <div class="info" markdown="1">
 
-The [limitations of the current SAML 2.0 implementation](configure-saml.md#current-limitations) also apply to the OKTA authentication method. Be sure to check them when using OKTA end-user authentication.
+The [limitations of the current SAML 2.0 implementation](configure-saml.md#current-limitations) also apply to the OKTA authentication method. Be sure to check them when using OKTA end user authentication.
 
 </div>
 
-To set up OKTA authentication for end-users do the following:
+To set up OKTA authentication for end users do the following:
 
 1. Sign in to the OKTA administration page and make sure that you're using the "Classic UI" view.
     Select Applications > "Applications" to open the **Applications** screen, and then click **Add Application**.
@@ -107,7 +107,7 @@ To set up OKTA authentication for end-users do the following:
 
 ## Troubleshooting OKTA authentication issues
 
-Since the OKTA end-user authentication method is very similar to the SAML 2.0 one, you can troubleshoot them in the same way:
+Since the OKTA end user authentication method is very similar to the SAML 2.0 one, you can troubleshoot them in the same way:
 
-* Check the [SAML Message Logs page](configure-saml.md#logs) for detailed information on OKTA messages exchanged for end-user authentication.
-* Use the same method for [accessing the Users application when you're locked out](configure-saml.md#locked-access) due to incorrect configuration settings in end-user authentication.
+* Check the [SAML Message Logs page](configure-saml.md#logs) for detailed information on OKTA messages exchanged for end user authentication.
+* Use the same method for [accessing the Users application when you're locked out](configure-saml.md#locked-access) due to incorrect configuration settings in end user authentication.

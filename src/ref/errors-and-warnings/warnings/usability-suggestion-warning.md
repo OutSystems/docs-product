@@ -32,4 +32,4 @@ Cause
 :   You have an Editable Table widget to gather data on a Screen or Block and neither the Save nor the Delete events have a screen action.
 
 Recommendation
-:   To send end-user inputs back to the server add a new Screen Action to the screen or block that implements the logic of the Save or Delete events. Associate the screen action with the corresponding event on the Editable Table widget.
+:   To send end user inputs back to the server add a new Screen Action to the screen or block that implements the logic of the Save or Delete events. Associate the screen action with the corresponding event on the Editable Table widget.

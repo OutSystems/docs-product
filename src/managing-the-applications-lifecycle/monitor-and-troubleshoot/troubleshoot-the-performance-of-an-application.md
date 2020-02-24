@@ -19,7 +19,7 @@ This allows you to analyze the performance of your apps from end to end.
 
 ## Example - Troubleshoot the Field Services App
 
-During the last couple of days, we received emails complaining about the performance of the Field Services app. End-users are complaining about getting timeout messages when loading the Dashboard screen.
+During the last couple of days, we received emails complaining about the performance of the Field Services app. End users are complaining about getting timeout messages when loading the Dashboard screen.
 
 [Analytics is enabled](<enable-analytics-for-an-environment.md>) for all applications in Production, so we can find out what's going on. In the infrastructure management console, navigate to the **Analytics** tab. 
 

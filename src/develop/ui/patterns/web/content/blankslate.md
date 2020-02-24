@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: BlankSlate informs end-users when they start using the application, complete a task or when there is no data available for display.
+summary: BlankSlate informs end users when they start using the application, complete a task or when there is no data available for display.
 ---
 
 # BlankSlate
 
-Content on the screen to show end-users that there is no data available for display.
+Content on the screen to show end users that there is no data available for display.
 
-Use BlankSlate to inform end-users when they start using the application, complete a task or when there is no data available for display.
+Use BlankSlate to inform end users when they start using the application, complete a task or when there is no data available for display.
 
 **How to use**
 

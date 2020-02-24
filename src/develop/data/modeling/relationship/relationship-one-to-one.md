@@ -18,9 +18,9 @@ To create a one-to-one relationship to an existing entity:
 
 ## Example
 
-The GoOutWeb application allows to rate and review places like restaurants and hotels. The application saves some end-users information like the email, the phone number or Twitter account.
+The GoOutWeb application allows to rate and review places like restaurants and hotels. The application saves some end users information like the email, the phone number or Twitter account.
 
-Since we are using the `User` system entity to store the end-users it is not possible to add attributes to it. We have to create an additional entity to store more information about the user. To do so, follow these steps:
+Since we are using the `User` system entity to store the end users it is not possible to add attributes to it. We have to create an additional entity to store more information about the user. To do so, follow these steps:
 
 1. In the Data tab, open the GoOutWebDataModel entity diagram.
 

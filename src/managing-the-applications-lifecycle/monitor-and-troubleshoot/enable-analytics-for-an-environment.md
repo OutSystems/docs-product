@@ -5,11 +5,11 @@ tags: support-Integrations_Extensions; support-monitoring; support-monitoring-ov
 
 # Enable Analytics for an Environment
 
-OutSystems collects analytics about the end-user experience of all applications running in the Production environment. However, you can turn on monitoring in other environments too. This article describes how.
+OutSystems collects analytics about the end user experience of all applications running in the Production environment. However, you can turn on monitoring in other environments too. This article describes how.
 
 ## Example
 
-You want to detect performance issues of the FieldServices application, before deploying it to Production. For this, you want the key users of the application to test it in the Quality Assurance environment. To monitor the end-user experience, you want to enable analytics in QA.
+You want to detect performance issues of the FieldServices application, before deploying it to Production. For this, you want the key users of the application to test it in the Quality Assurance environment. To monitor the end user experience, you want to enable analytics in QA.
 
 To do so, follow these steps:
 

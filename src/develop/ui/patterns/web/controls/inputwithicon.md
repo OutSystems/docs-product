@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: InputWithIcon allows the end-user to input data with the help of a hint.
+summary: InputWithIcon allows the end user to input data with the help of a hint.
 ---
 
 # InputWithIcon 
 
-Allow the end-user to input data with the help of a hint.
+Allow the end user to input data with the help of a hint.
 
-Use the Input with Icon to include an icon and a placeholder text that supports the user when entering data. They assist end-user comprehension by providing an example of the type of input required.  
+Use the Input with Icon to include an icon and a placeholder text that supports the user when entering data. They assist end user comprehension by providing an example of the type of input required.  
 
 **How to use**
 

@@ -1,5 +1,5 @@
 ---
-summary: How to configure Azure AD end-user authentication for your applications.
+summary: How to configure Azure AD end user authentication for your applications.
 tags: runtime-traditionalweb
 ---
 
@@ -17,11 +17,11 @@ To set up SAML for Azure AD, you need Platform Server Release Jul.2019 CP2 or la
 
 <div class="info" markdown="1">
 
-The [limitations of the current SAML 2.0 implementation](configure-saml.md#current-limitations) also apply to the Azure AD authentication method. Be sure to check them when using Azure AD end-user authentication.
+The [limitations of the current SAML 2.0 implementation](configure-saml.md#current-limitations) also apply to the Azure AD authentication method. Be sure to check them when using Azure AD end user authentication.
 
 </div>
 
-To set up Azure AD authentication for end-users do the following:
+To set up Azure AD authentication for end users do the following:
 
 1. Sign in to the [Azure Active Directory portal](https://aad.portal.azure.com/) and create your own application. 
 
@@ -79,8 +79,8 @@ To set up Azure AD authentication for end-users do the following:
 
 ## Troubleshooting Azure AD authentication issues
 
-Since the Azure AD end-user authentication method is very similar to the SAML 2.0 one, you can troubleshoot them in the same way:
+Since the Azure AD end user authentication method is very similar to the SAML 2.0 one, you can troubleshoot them in the same way:
 
-* Check the [SAML Message Logs page](configure-saml.md#logs) for detailed information on Azure AD messages exchanged for end-user authentication.
+* Check the [SAML Message Logs page](configure-saml.md#logs) for detailed information on Azure AD messages exchanged for end user authentication.
 
-* Use the same method for [accessing the Users application when you're locked out](configure-saml.md#locked-access) due to incorrect configuration settings in end-user authentication.
+* Use the same method for [accessing the Users application when you're locked out](configure-saml.md#locked-access) due to incorrect configuration settings in end user authentication.

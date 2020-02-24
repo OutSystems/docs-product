@@ -4,7 +4,7 @@ Message
 :   `Enclose the input parameters with a ReplaceURLDomain() function from HttpRequestHandler to avoid open redirect vulnerabilities.`
 
 Cause
-:   The input parameter mentioned in the warning has a value that comes from the end-user input and that is susceptible to contain a malicious URL.
+:   The input parameter mentioned in the warning has a value that comes from the end user input and that is susceptible to contain a malicious URL.
 
 Recommendation
 :   Do one of the following:

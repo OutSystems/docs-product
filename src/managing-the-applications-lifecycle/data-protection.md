@@ -63,7 +63,7 @@ This information may be present in all General log tables (**oslog\_General\_0**
 
 ## Users
 
-**Users** is the application used by default to manage end-users. It contains the same information related with users already referred to in the [Service Center and LifeTime section](#service-center-and-lifetime), namely:
+**Users** is the application used by default to manage end users. It contains the same information related with users already referred to in the [Service Center and LifeTime section](#service-center-and-lifetime), namely:
 
 * Name (e.g. Joel Grant)
 * Username (e.g. Firwass)
@@ -111,7 +111,7 @@ Apart from the user feedback itself, the tool also stores some more metadata in 
 
 ## Examples of personal data obfuscation/removal
 
-There are certain scenarios, outside of production environments, where collected personal data (like the name of an end-user) is irrelevant and as such should be masked or removed. For example, you may want to use a clone of a real production database for troubleshooting purposes or you may want to use real production data in pre-production environments to perform testing of new features.
+There are certain scenarios, outside of production environments, where collected personal data (like the name of an end user) is irrelevant and as such should be masked or removed. For example, you may want to use a clone of a real production database for troubleshooting purposes or you may want to use real production data in pre-production environments to perform testing of new features.
 
 The following examples show how to replace or remove personal data collected by OutSystems systems applications in such situations:
 
@@ -134,7 +134,7 @@ Note: `admin` is an internal platform user that cannot be updated, otherwise the
 
 <div class="warning" markdown="1">
 
-Do not use this SQL snippet in your Production environment. All the end-users usernames and emails will be modified and the end-users will not be able to login without your assistance.
+Do not use this SQL snippet in your Production environment. All the end users usernames and emails will be modified and the end users will not be able to login without your assistance.
 
 </div>
 

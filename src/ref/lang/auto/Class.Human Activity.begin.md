@@ -1,14 +1,14 @@
-When designing the process flow of your process, you can add work to be carried out by the end-user. This behavior is implemented through the **Human Activity** process activity, which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
+When designing the process flow of your process, you can add work to be carried out by the end user. This behavior is implemented through the **Human Activity** process activity, which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
 
-The Human Activity allows you to specify and assign a work to be carried out by the end-users in your application. Once the process flow execution reaches a Human Activity the end-user or end-users are informed (in their [Taskbox](<../../../develop/processes/intro.md#using-the-taskbox>)) of the work that has to be carried out. Then, one of them executes the activity and signals that it has been done in the Taskbox, and the Human Activity execution finishes and the process flow execution continues to the next process activity in the flow path.
+The Human Activity allows you to specify and assign a work to be carried out by the end users in your application. Once the process flow execution reaches a Human Activity the end user or end users are informed (in their [Taskbox](<../../../develop/processes/intro.md#using-the-taskbox>)) of the work that has to be carried out. Then, one of them executes the activity and signals that it has been done in the Taskbox, and the Human Activity execution finishes and the process flow execution continues to the next process activity in the flow path.
 
 A Human Activity can have input parameters, output parameters and [callback actions](<../../../develop/processes/actions-callback/actions-activities-callback.md>).
 
 Human Activity is not available in Service Modules because this activity requires user interface.
 
-## Assigning a Human Activity to the End-Users
+## Assigning a Human Activity to the End Users
 
-If no configuration is done, the Human Activity is assigned to all end-users, that is, it is displayed in the [Taskbox](<../../../develop/processes/intro.md#using-the-taskbox>) of each end-user until it is executed by one of them. However, to force the assignment of a Human Activity to a specific end-user, simply set the `User` property to the desired end-user. For advanced cases, you may set an expression that returns the user that handles the activity, using the expression editor.
+If no configuration is done, the Human Activity is assigned to all end users, that is, it is displayed in the [Taskbox](<../../../develop/processes/intro.md#using-the-taskbox>) of each end user until it is executed by one of them. However, to force the assignment of a Human Activity to a specific end user, simply set the `User` property to the desired end user. For advanced cases, you may set an expression that returns the user that handles the activity, using the expression editor.
 
 ## End the Activity on Entity Events
 
@@ -20,7 +20,7 @@ For example, if the human activity is designed for a user to carry on an intervi
 
 ## Adding Security
 
-You may add security to your Human Activities to be sure that only authorized end-users can execute the activity, which is especially useful for critical or high responsibility activities. For this, simply check the roles allowed to execute the Human Activity.
+You may add security to your Human Activities to be sure that only authorized end users can execute the activity, which is especially useful for critical or high responsibility activities. For this, simply check the roles allowed to execute the Human Activity.
 
 ## Using Human Activity References
 

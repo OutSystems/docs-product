@@ -80,11 +80,11 @@ This is the reference table for the JSON keys you can use to customize the error
 <tbody>
 <tr>
 <td>clientRuntime.errorPage.messages.defaultMessage</td>
-<td>The message that is displayed to the end-user when a generic error occurs.</td>
+<td>The message that is displayed to the end user when a generic error occurs.</td>
 </tr>
 <tr>
 <td>clientRuntime.errorPage.messages.screenNotFound</td>
-<td>The message displayed when the end-user navigates to a screen that does not exist.</td>
+<td>The message displayed when the end user navigates to a screen that does not exist.</td>
 </tr>
 <tr>
 <td>clientRuntime.errorPage.messages.noDefaultScreen</td>

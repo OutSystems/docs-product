@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: RangeSlider gives the end-users an option to select a value within a configured range by dragging a slider. 
+summary: RangeSlider gives the end users an option to select a value within a configured range by dragging a slider. 
 ---
 
 # RangeSlider
 
 Set a value by dragging a handle within a configured range.
 
-Offer the UI control for letting end-users select a value from a fixed set of options.
+Offer the UI control for letting end users select a value from a fixed set of options.
 
 **How to use**
 

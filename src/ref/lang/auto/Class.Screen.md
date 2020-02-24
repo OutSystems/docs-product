@@ -5,7 +5,7 @@ helpids: 4011, 0
 
 # Screen
 
-User interface with which end-users interact.  
+User interface with which end users interact.  
 
 ## Properties
 

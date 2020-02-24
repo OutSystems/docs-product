@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Alert gets the end-user's attention and highlights important information, errors or warnings on the screen.
+summary: Alert gets the end user's attention and highlights important information, errors or warnings on the screen.
 ---
 
 # Alert
 
 Highlight important information, errors or warnings.
 
-Use an Alert when you need to get the end-user's attention and provide important information on the screen.
+Use an Alert when you need to get the end user's attention and provide important information on the screen.
 
 **How to use**
 

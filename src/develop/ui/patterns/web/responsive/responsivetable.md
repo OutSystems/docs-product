@@ -7,7 +7,7 @@ summary: ResponsiveTable displays information in a logical and organized way tha
 
 Display information in a logical and organized way.
 
-Use Table Records to display information in a logical and organized way that is easy to scan and read. It should allow interaction, such as sorting, so that end-users can customize their view of the information.
+Use Table Records to display information in a logical and organized way that is easy to scan and read. It should allow interaction, such as sorting, so that end users can customize their view of the information.
 
 **How to use**
 

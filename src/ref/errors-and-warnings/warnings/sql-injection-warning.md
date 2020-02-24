@@ -6,12 +6,12 @@ Message
 Cause
 :   OutSystems uses [prepared statements](<https://en.wikipedia.org/wiki/Prepared_statement>) by default to execute the SQL queries that you define in [SQL elements](<../../../develop/data/query/sql.md>). These prepared statements contain SQL parameters or placeholders, for which you define values before executing the SQL statement. These parameters can only store a value of a given type and not arbitrary SQL fragments.
 
-    If you enable the Expand Inline property for a Query Parameter, its value will no longer be handled as a SQL parameter value. Instead, the Query Parameter value will be included in the SQL statement without first being evaluated and turned into a literal by the SQL engine. This means that you are able to use the Query Parameter to dynamically insert SQL fragments in the full SQL statement, but it also means that your end-users may be able exploit this fact if you do not take the necessary precautions.
+    If you enable the Expand Inline property for a Query Parameter, its value will no longer be handled as a SQL parameter value. Instead, the Query Parameter value will be included in the SQL statement without first being evaluated and turned into a literal by the SQL engine. This means that you are able to use the Query Parameter to dynamically insert SQL fragments in the full SQL statement, but it also means that your end users may be able exploit this fact if you do not take the necessary precautions.
     
     Learn more on how the use of prepared statements can prevent SQL injection attacks in OWASP's [SQL Injection Prevention Cheat Sheet](<https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet>). 
 
 When is it safe to hide the warning?
-:   You should **only** hide the warning when you have ensured that no values entered by end-users are being added to your SQL statement. 
+:   You should **only** hide the warning when you have ensured that no values entered by end users are being added to your SQL statement. 
 
 ## Recommendation: Avoid using Expand Inline
 
@@ -44,4 +44,4 @@ Use EncodeSql to encode string literals
     
 
 Do not perform manual string encoding using the Replace
-:   String literals should **only** be encoded using the EncodeSql function. Doing it manually through the Replace function is prone to errors and can introduce bugs in your application that can later be exploited by end-users of your application.
+:   String literals should **only** be encoded using the EncodeSql function. Doing it manually through the Replace function is prone to errors and can introduce bugs in your application that can later be exploited by end users of your application.

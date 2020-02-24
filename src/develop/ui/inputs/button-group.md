@@ -1,11 +1,11 @@
 ---
-summary: Allow end-users to select a single option from a group of choices using Button Groups in Reactive Web Apps and Mobile Apps or Radio Buttons in Traditional Web Apps.
+summary: Allow end users to select a single option from a group of choices using Button Groups in Reactive Web Apps and Mobile Apps or Radio Buttons in Traditional Web Apps.
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
 ---
 
 # Pick Only One Option in a Group of Choices
 
-You can allow end-users to select a single option from a group of choices using **Button Groups** in mobile apps or **Radio Buttons** in web applications.
+You can allow end users to select a single option from a group of choices using **Button Groups** in mobile apps or **Radio Buttons** in web applications.
 
 ## In Reactive Web and Mobile
 

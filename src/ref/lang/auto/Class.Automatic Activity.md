@@ -5,7 +5,7 @@ helpids: 0
 
 # Automatic Activity
 
-Executes an action flow to do work without the intervention of the end-user.  
+Executes an action flow to do work without the intervention of the end user.  
 
 ## Properties
 

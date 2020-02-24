@@ -7,7 +7,7 @@ summary: TimePicker selects a single time from a list.
 
 Selects a single time from a list.
 
-Use the Time Picker to enable end-users to select a single time from a dropdown.
+Use the Time Picker to enable end users to select a single time from a dropdown.
 
 **How to use**
 

@@ -24,7 +24,7 @@ It's a quicker way, but with access to less information about the entity.
 
 It's useful to create an entity and bootstrap data for it.
 
-In mobile applications, you can create entities to store information in the device's local storage. This typically happens when end-users need to take the data offline.
+In mobile applications, you can create entities to store information in the device's local storage. This typically happens when end users need to take the data offline.
 
 
 ## Example

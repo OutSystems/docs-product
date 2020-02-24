@@ -34,7 +34,7 @@ To update list items in Traditional Web:
 
 ## In Traditional Web
 
-In the GoOutWeb application, used to find, review and rate places, we have a screen that lists reviews that were reported as inappropriate. We want to allow the end-user to check each review in the list and either confirm the report or mark the review as safe. When the end-user marks a review as safe, we want to remove the corresponding review from the list without re-rendering the whole list.
+In the GoOutWeb application, used to find, review and rate places, we have a screen that lists reviews that were reported as inappropriate. We want to allow the end user to check each review in the list and either confirm the report or mark the review as safe. When the end user marks a review as safe, we want to remove the corresponding review from the list without re-rendering the whole list.
 
 1. Open the screen ReportedReview that displays the list with the reviews reported as inappropriate.
 

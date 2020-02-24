@@ -7,7 +7,7 @@ summary: LoadOnVisible improves both the actual and perceived speed of your appl
 
 Uses the viewport position for lazy loading content.
 
-Use Load on Visible to improve both the actual and perceived speed of your application. Usually response time should be as fast as possible, but sometimes the system reacts so quickly that the end-user cannot keep up with the feedback. 
+Use Load on Visible to improve both the actual and perceived speed of your application. Usually response time should be as fast as possible, but sometimes the system reacts so quickly that the end user cannot keep up with the feedback. 
 
 **How to use**
 

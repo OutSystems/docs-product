@@ -1,5 +1,5 @@
 ---
-summary: Generate a mobile app package for your mobile app to publish in the Apple App Store.  Distribute your mobile app directly to your company's end-users, if you enrolled in the Apple Enterprise Developer Program.
+summary: Generate a mobile app package for your mobile app to publish in the Apple App Store.  Distribute your mobile app directly to your company's end users, if you enrolled in the Apple Enterprise Developer Program.
 tags: runtime-mobile; support-mobile; publish-application; apple-app-store; ios-app
 ---
 
@@ -47,7 +47,7 @@ If you don’t have one, learn [how you can create a certificate](https://develo
 — `In-House` provisioning profile for the Apple Developer Enterprise Program  
 A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn how you can [create a provisioning profile](https://help.apple.com/xcode/mac/current/#/devaafd622d2). For more information on the different provisioning profiles, check the Medium blog post "[Cruising through the Complexities of Signing Native Mobile Apps](<https://medium.com/outsystems-engineering/cruising-through-the-complexities-of-signing-native-mobile-apps-cc123eb2814b>)" by OutSystems.
 
-You can generate a release version of your app (without debug information) using an In-House provisioning profile, but you have to handle the app distribution on your own, outside the App Store to your company's end-users by sending the installation link or the app package (IPA) itself, or by using an internal enterprise store or an MDM (Mobile Device Management) solution.
+You can generate a release version of your app (without debug information) using an In-House provisioning profile, but you have to handle the app distribution on your own, outside the App Store to your company's end users by sending the installation link or the app package (IPA) itself, or by using an internal enterprise store or an MDM (Mobile Device Management) solution.
 
 If the application requires users to sign in, you must [provide Apple with a test or demo account](https://help.apple.com/app-store-connect/#/devbef8ace74) to make sure that the review team can immediately sign in and use your application without the need to sign up for an account. You must also understand how the certificates work. You can find information about how to enroll as an Apple developer, create a certificate, and create a provisioning profile here. Read it carefully to make sure you have everything in place.
 

@@ -51,12 +51,12 @@ OutSystems can raise Database Exceptions whenever you are interacting with the d
 Security Exceptions can be raised by OutSystems whenever you have authentication or other security mechanisms in your application module. Security Exceptions include:
 
 Invalid Login
-:   The login provided by the end-user is not correct. This exception is raised by the Login and LoginPassword System actions.
+:   The login provided by the end user is not correct. This exception is raised by the Login and LoginPassword System actions.
 
 Not Registered
-:   The end-user is not registered and cannot access the current screen without registration. When you create new custom Roles in your module, OutSystems creates specific Role Exceptions under Not Registered Exception:
+:   The end user is not registered and cannot access the current screen without registration. When you create new custom Roles in your module, OutSystems creates specific Role Exceptions under Not Registered Exception:
 
-    * Not &lt;Role&gt; &#8211; the end-user is accessing a screen without an authorized Role. 
+    * Not &lt;Role&gt; &#8211; the end user is accessing a screen without an authorized Role. 
 
 OutSystems allows you to raise in your logic the Not Registered Exception or any of the existing Role Exceptions.
 

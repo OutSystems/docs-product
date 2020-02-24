@@ -211,7 +211,7 @@ Minimum speed of 1 Mbps for both downloading and uploading.
 
 These requirements apply, even when installing the development tools on a virtual machine.
 
-## End-user requirements
+## End User Requirements
 
 Running an OutSystems app on a browser continues to be supported for 6 months after the end-of-support date announced by OutSystems for that browser.
 

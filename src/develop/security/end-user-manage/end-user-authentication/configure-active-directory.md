@@ -1,5 +1,5 @@
 ---
-summary: How to configure Active Directory end-user authentication for your applications.
+summary: How to configure Active Directory end user authentication for your applications.
 ---
 
 # Configure Active Directory Authentication
@@ -10,7 +10,7 @@ Only available in OutSystems on-premises installations.
 
 </div>
 
-The Active Directory authentication method for authenticating end-users requires the front-end server to be part of the Active Directory domain.
+The Active Directory authentication method for authenticating end users requires the front-end server to be part of the Active Directory domain.
 
 To use Active Directory domain authentication:
 

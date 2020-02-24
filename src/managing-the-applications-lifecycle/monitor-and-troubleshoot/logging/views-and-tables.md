@@ -17,7 +17,7 @@ Also available: [The log tables and views in OutSystems 10](https://success.outs
 
 ## The types of the platform logs in the database
 
-Log information reflects the lifecycle of accesses to applications by end-users or external systems. Because of that, there are two log types.
+Log information reflects the lifecycle of accesses to applications by end users or external systems. Because of that, there are two log types.
 
 ### Top-level logs
 
@@ -41,7 +41,7 @@ The following logs are considered "drill":
 * Integration (of sub-type: consumed)
 * Extension
 
-Note that in complex application architectures an "end-user request" may translate into more than one "top-level" object. For example, a web application Screen may call a local REST service in the platform. In that case, it is not possible to use `request_key` to map the request all the way through because the mapping stops at the integration call.  
+Note that in complex application architectures an "end user request" may translate into more than one "top-level" object. For example, a web application Screen may call a local REST service in the platform. In that case, it is not possible to use `request_key` to map the request all the way through because the mapping stops at the integration call.  
 
 Also, note that logs of type Error can occur associated with other drill logs, as indicated in the details of the model. So it is possible to interpret an error in a top-level object (for example, Mobile Request) because of an error in a drill object (for example, an Integration call).
 

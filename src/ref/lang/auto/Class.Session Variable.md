@@ -5,7 +5,7 @@ helpids: 15001
 
 # Session Variable
 
-Holds data that is persisted during the session and can be used to save information during the end-user interaction. Only available in web apps.  
+Holds data that is persisted during the session and can be used to save information during the end user interaction. Only available in web apps.  
 
 ## Properties
 

@@ -13,7 +13,7 @@ The business rules can be designed for the following available activity callback
 
 * **On Ready**: this action is executed before a **Conditional Start**, **Human Activity**, or **Wait** activity instance begins its work.
 
-* **On Open**: this action is executed when the end-user tries to open a task in the [Taskbox](../intro.md#using-the-taskbox), that is, when a **Human Activity** instance is being opened.
+* **On Open**: this action is executed when the end user tries to open a task in the [Taskbox](../intro.md#using-the-taskbox), that is, when a **Human Activity** instance is being opened.
 
 * **On Start**: this action is executed when a **Conditional Start** activity instance is about to **start executing its outgoing flow**.
 

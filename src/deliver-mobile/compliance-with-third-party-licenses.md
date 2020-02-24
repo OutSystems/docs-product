@@ -5,7 +5,7 @@ tags: runtime-mobile
 
 # Compliance with Third Party Licenses
 
-OutSystems apps use several great third party components, whose licenses require publishing a copy of the license itself and/or copyright notices. Your apps must have the copies of these licenses available to the end-users to be compliant with those requirements.
+OutSystems apps use several great third party components, whose licenses require publishing a copy of the license itself and/or copyright notices. Your apps must have the copies of these licenses available to the end users to be compliant with those requirements.
 
 If you are using other custom plug-ins or components in your app, you must also check their licenses to verify if they have the same requirements and ensure that your mobile apps are compliant with them.
 
@@ -29,7 +29,7 @@ Then, you will be able to use the block **Licenses** in your app:
   
     ![](images/image03.png)  
 
-Make the screen available in your app, so the end-users can access the licensing information.
+Make the screen available in your app, so the end users can access the licensing information.
 
 
 ## Include the Third Party Licenses Used by Plug-ins or Components
@@ -54,7 +54,7 @@ You can add the licensing information of an OutSystems plug-in by doing the foll
 
 For other plug-ins or components that don’t provide a block with the licensing information, you can adopt a usage similar to OutSystems plug-ins:
 
-1. In the plug-in or component you are using, create your own block with the text of the licenses that need to be available to the end-user. 
+1. In the plug-in or component you are using, create your own block with the text of the licenses that need to be available to the end user. 
 1. In your app, go to the screen you created to display the licensing information.
 1. Within the **Licenses\Licenses** block of the **MobilePatterns** module, locate the placeholder **CustomLicenses**. 
 1. Drag and drop your block to the placeholder **CustomLicenses**. 

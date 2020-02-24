@@ -5,7 +5,7 @@ tags: runtime-mobile
 
 # Read-Only Data Optimized
 
-This data synchronization pattern is recommended for mobile apps where end-users only need to read data while the apps are offline and there are large amounts of data, as follows:
+This data synchronization pattern is recommended for mobile apps where end users only need to read data while the apps are offline and there are large amounts of data, as follows:
 
 * The server database holds the master data which can change over time.
 * Synchronization is optimized to transfer only data that needs to be updated in the local storage of the device.

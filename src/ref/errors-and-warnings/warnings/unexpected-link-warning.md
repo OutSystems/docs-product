@@ -4,7 +4,7 @@ Message
 :   `'Validation' should be set to '(none)' in links with 'Method' set to 'Navigate'`
 
 Cause
-:   You have a Link widget with the Method property set to 'Navigate' and the Validation property set to either 'Client & Server' or 'Server'. To validate the end-user typed values, you have to submit them.
+:   You have a Link widget with the Method property set to 'Navigate' and the Validation property set to either 'Client & Server' or 'Server'. To validate the end user typed values, you have to submit them.
 
 Recommendation
 :   Edit your Link and set the Validation property to '(none)' or change the Method property to 'Submit'.

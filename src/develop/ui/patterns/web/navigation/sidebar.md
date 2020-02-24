@@ -7,7 +7,7 @@ summary: Sidebar shows additional content on the side of the screen.
 
 Shows additional content on the side of the screen.
 
-Use the Sidebar to place additional information in the margin of the main content. The additional information supports the end-user's understanding of the main content. 
+Use the Sidebar to place additional information in the margin of the main content. The additional information supports the end user's understanding of the main content. 
 
 **How to use**
 

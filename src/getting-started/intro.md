@@ -39,7 +39,7 @@ In more [advanced development setups](../managing-the-applications-lifecycle/int
 
 ## Hardware support
 
-Service Studio IDE runs on any computer that satisfies [system requirements](https://success.outsystems.com/Support/Enterprise_Customers/Installation/OutSystems_Platform_system_requirements#Development_tools). The mobile apps you create in OutSystems can run on a range of iOS and Android devices. Your end-users can open web applications in any modern browser.
+Service Studio IDE runs on any computer that satisfies [system requirements](https://success.outsystems.com/Support/Enterprise_Customers/Installation/OutSystems_Platform_system_requirements#Development_tools). The mobile apps you create in OutSystems can run on a range of iOS and Android devices. Your end users can open web applications in any modern browser.
 
 ## Extensions and plug-ins
 

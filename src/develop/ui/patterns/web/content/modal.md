@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Modal is a box with content that interrupts the end-user and demands an action.
+summary: Modal is a box with content that interrupts the end user and demands an action.
 ---
 
 # Modal
 
 A box with content that is displayed as an overlay on top of the screen.
 
-Use the Modal to interrupt the end-user and demand an action. It is implemented to direct an end-user’s attention to important information. Ideal for when the end-user is requested to enter information critical to continuing the current process.
+Use the Modal to interrupt the end user and demand an action. It is implemented to direct an end user’s attention to important information. Ideal for when the end user is requested to enter information critical to continuing the current process.
 
  ![](<images/modal-image-1.png>)
 

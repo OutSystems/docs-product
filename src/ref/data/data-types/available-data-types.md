@@ -34,7 +34,7 @@ Here is an example for a server that is in GMT+01 (Paris) and a mobile device in
  
 1. The value is converted by the server to UTC `#2007-12-18 16:00:00#` and sent to the mobile device.
 2. When you store the value in the mobile app, the value is handled as UTC and saved as `#2007-12-18 16:00:00#`.
-3. When you display the value in the UI, the end-users see `#2007-12-18 11:00:00#`.
+3. When you display the value in the UI, the end users see `#2007-12-18 11:00:00#`.
  
 If you do not need this scenario in your logic, use data types Date and Time separately to deal with the respective values.
 

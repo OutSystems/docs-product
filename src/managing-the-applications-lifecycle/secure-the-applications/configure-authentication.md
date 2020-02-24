@@ -5,7 +5,7 @@ tags: runtime-mobileandreactiveweb; support-Security-overview
 
 # Configure App Authentication
 
-When the end-user logs in, the server sends two authentication cookies to the app. These cookies allow the end-user to be authenticated in subsequent server requests.
+When the end user logs in, the server sends two authentication cookies to the app. These cookies allow the end user to be authenticated in subsequent server requests.
 
 The server handles the authentication cookies according to the type of authentication.
 
@@ -13,7 +13,7 @@ The server handles the authentication cookies according to the type of authentic
 
 There are two types of authentication:
 
-* **Session authentication** – The authentication cookies are destroyed when the end-user closes the app.
+* **Session authentication** – The authentication cookies are destroyed when the end user closes the app.
 * **Persistent authentication** – The authentication cookies persist across multiple application starts.
 
 The developer specifies the authentication type in the `RememberLogin` parameter when calling the action `User_Login` to login the users.

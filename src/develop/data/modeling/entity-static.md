@@ -15,7 +15,7 @@ Label
 :   Holds a value that can be displayed in an application.
 
 Order
-:   Defines the order by which the records are displayed to the end-user.
+:   Defines the order by which the records are displayed to the end user.
 
 Is_Active
 :   The boolean Is_Active attribute defines if a record is available during runtime. For example, the records with Is_Active set to false will be ignored when the Static Entity is used in scaffolding.

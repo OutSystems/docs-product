@@ -5,7 +5,7 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 
 # Choose One Value from a List
 
-Let the end-users choose a value from a list of values by implementing a **Dropdown Widget** ( Reactive Web and Mobile) or a **Combo Box Widget** (in Traditional Web).
+Let the end users choose a value from a list of values by implementing a **Dropdown Widget** ( Reactive Web and Mobile) or a **Combo Box Widget** (in Traditional Web).
 
 ## In Reactive Web and Mobile
 

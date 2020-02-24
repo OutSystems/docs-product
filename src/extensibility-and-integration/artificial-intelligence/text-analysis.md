@@ -86,9 +86,9 @@ The Spell Check feature has a Block and a Server Action.
 
 ![](images/text-analysis-image12.png)
 
-The **SpellCheck** Block has server-side logic to analyze text and retrieve suggestions for the detected errors. It also has client-side logic that highlights and enables end-users to choose what they want to do with the error. 
+The **SpellCheck** Block has server-side logic to analyze text and retrieve suggestions for the detected errors. It also has client-side logic that highlights and enables end users to choose what they want to do with the error. 
 
-The end-user can either select a suggestion or ignore the given suggestions. In case of a repeated error, if the end-user ignores the suggestion, the word will no longer be highlighted.
+The end user can either select a suggestion or ignore the given suggestions. In case of a repeated error, if the end user ignores the suggestion, the word will no longer be highlighted.
 
 ![](images/text-analysis-gif1.gif)
 

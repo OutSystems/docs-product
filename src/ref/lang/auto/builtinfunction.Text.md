@@ -21,19 +21,19 @@
 </tr>
 <tr>
 <td><a href="#EncodeHtml">EncodeHtml</a>(&#8203;Text)</td>
-<td>Replaces special characters in a string so that you can use it in HTML literals. Use this function when using un-escaped expressions that contain content provided by end-users.<br/><br/>Warning: Since this function only encodes strings that will be used in HTML literals, it does not protect you from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as JavaScript code, only to encode HTML literals.</td>
+<td>Replaces special characters in a string so that you can use it in HTML literals. Use this function when using un-escaped expressions that contain content provided by end users.<br/><br/>Warning: Since this function only encodes strings that will be used in HTML literals, it does not protect you from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as JavaScript code, only to encode HTML literals.</td>
 </tr>
 <tr>
 <td><a href="#EncodeJavaScript">EncodeJavaScript</a>(&#8203;Text)</td>
-<td>Replaces special characters in a string so that you can use it in JavaScript literals. Use this function when using un-escaped expressions that contain content provided by end-users.<br/><br/>Warning: Since this function only encodes strings that will be used in JavaScript literals, it does not protect you from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as JavaScript code, only to encode JavaScript literals.</td>
+<td>Replaces special characters in a string so that you can use it in JavaScript literals. Use this function when using un-escaped expressions that contain content provided by end users.<br/><br/>Warning: Since this function only encodes strings that will be used in JavaScript literals, it does not protect you from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as JavaScript code, only to encode JavaScript literals.</td>
 </tr>
 <tr>
 <td><a href="#EncodeSql">EncodeSql</a>(&#8203;Text)</td>
-<td>Replaces special characters in a string literal so that you can use it in a SQL statement. Use this function when the Expand Inline property of a Query Parameter is enabled to escape content provided by end-users.<br/><br/>Warning: Since this function only encodes string literals, it does not protect you from SQL injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as part of the SQL statement. Check the OutSystems Best Practices documentation for more information on building dynamic SQL statements the right way.</td>
+<td>Replaces special characters in a string literal so that you can use it in a SQL statement. Use this function when the Expand Inline property of a Query Parameter is enabled to escape content provided by end users.<br/><br/>Warning: Since this function only encodes string literals, it does not protect you from SQL injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as part of the SQL statement. Check the OutSystems Best Practices documentation for more information on building dynamic SQL statements the right way.</td>
 </tr>
 <tr>
 <td><a href="#EncodeUrl">EncodeUrl</a>(&#8203;Text)</td>
-<td>Replaces all non-alphanumeric characters in a string, i.e. characters outside of the [0-9a-zA-Z] range, so that you can safely use it in URL parameter values. Use this function to build URLs in your application that may contain content provided by end-users, e.g. when dynamically building URLs to an external site.</td>
+<td>Replaces all non-alphanumeric characters in a string, i.e. characters outside of the [0-9a-zA-Z] range, so that you can safely use it in URL parameter values. Use this function to build URLs in your application that may contain content provided by end users, e.g. when dynamically building URLs to an external site.</td>
 </tr>
 <tr>
 <td><a href="#Index">Index</a>(&#8203;Text, Text, Integer, Boolean, Boolean)</td>
@@ -139,7 +139,7 @@ Concat("", "") = ""
 
 ## EncodeHtml { #EncodeHtml }
 
-Replaces special characters in a string so that you can use it in HTML literals. Use this function when using un-escaped expressions that contain content provided by end-users.  
+Replaces special characters in a string so that you can use it in HTML literals. Use this function when using un-escaped expressions that contain content provided by end users.  
   
 Warning: Since this function only encodes strings that will be used in HTML literals, it does not protect you from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as JavaScript code, only to encode HTML literals.  
 
@@ -174,7 +174,7 @@ Value = "<dl><dt>" + EncodeHtml(ArticleTitle) + "</dt><dd>" + EncodeHtml(Article
 
 ## EncodeJavaScript { #EncodeJavaScript }
 
-Replaces special characters in a string so that you can use it in JavaScript literals. Use this function when using un-escaped expressions that contain content provided by end-users.  
+Replaces special characters in a string so that you can use it in JavaScript literals. Use this function when using un-escaped expressions that contain content provided by end users.  
   
 Warning: Since this function only encodes strings that will be used in JavaScript literals, it does not protect you from cross-site scripting (XSS) or JavaScript injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as JavaScript code, only to encode JavaScript literals.  
 
@@ -208,7 +208,7 @@ Script = "ChangeContainerContent('" + ModalTitle.Id + "', '" + EncodeJavaScript(
 
 ## EncodeSql { #EncodeSql }
 
-Replaces special characters in a string literal so that you can use it in a SQL statement. Use this function when the Expand Inline property of a Query Parameter is enabled to escape content provided by end-users.  
+Replaces special characters in a string literal so that you can use it in a SQL statement. Use this function when the Expand Inline property of a Query Parameter is enabled to escape content provided by end users.  
   
 Warning: Since this function only encodes string literals, it does not protect you from SQL injection vulnerabilities on its own. <b>Do not</b> use this function to encode text that might get executed as part of the SQL statement. Check the OutSystems Best Practices documentation for more information on building dynamic SQL statements the right way.  
 
@@ -243,7 +243,7 @@ extraFilters = If(lastnameFilter <> "", "AND [Users].{Lastname} like '%" + Encod
 
 ## EncodeUrl { #EncodeUrl }
 
-Replaces all non-alphanumeric characters in a string, i.e. characters outside of the [0-9a-zA-Z] range, so that you can safely use it in URL parameter values. Use this function to build URLs in your application that may contain content provided by end-users, e.g. when dynamically building URLs to an external site.  
+Replaces all non-alphanumeric characters in a string, i.e. characters outside of the [0-9a-zA-Z] range, so that you can safely use it in URL parameter values. Use this function to build URLs in your application that may contain content provided by end users, e.g. when dynamically building URLs to an external site.  
 
 Available in:  
 

@@ -6,7 +6,7 @@ The `Invalid Link` error is issued in the following situations:
   
     You have a Link widget with the Method property set to Navigate but the Destination property is set with an action. It should be a Screen because you are just navigating between Screens.
 
-    Edit the Link widget and change one of the following properties (depending on whether you want to submit the end-user data or not): 
+    Edit the Link widget and change one of the following properties (depending on whether you want to submit the end user data or not): 
     
     * Set the Method property to Submit or Ajax.
     * Set the Destination property to a Screen or a Screen reference.

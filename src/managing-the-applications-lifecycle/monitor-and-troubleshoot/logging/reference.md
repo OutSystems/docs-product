@@ -239,7 +239,7 @@ Session_Requests | Number of requests to user session. | Int |
 Access_Mode | Type of web request access (AJAX, SCREEN). | Text |
 Request_Key | Key of the request that originated the log. Correlation field of the several log types to a single request. | GUID |
 Action_Name | Name of the action being called | Text |
-Client_IP | IP of the end-user as identified by the platform. This the client IP, if there is a X-FORWARD it appears with the first (Client) and last IP (last proxy IP). | Text |
+Client_IP | IP of the end user as identified by the platform. This the client IP, if there is a X-FORWARD it appears with the first (Client) and last IP (last proxy IP). | Text |
 Espace_Name | The name of the eSpace. | Text |
 Application_Name | The name of the app. | Text |
 Application_Key | Unique identifier for the application. | Text |

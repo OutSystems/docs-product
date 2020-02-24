@@ -8,7 +8,7 @@ tags: support-Security-overview
 <div class="info" markdown="1">
 
 This section applies only to the authentication of **IT users**, like Developers and IT Administrators.  
-The authentication of **end-users**, i.e. the users of your OutSystems applications, is [configured in the Users application](../../develop/security/end-user-manage/end-user-authentication/intro.md).  
+The authentication of **end users**, i.e. the users of your OutSystems applications, is [configured in the Users application](../../develop/security/end-user-manage/end-user-authentication/intro.md).  
 
 </div>
 

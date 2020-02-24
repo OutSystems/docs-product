@@ -11,7 +11,7 @@ A typical OutSystems infrastructure comprises the following environments:
 
 * **Development**: The environment where applications are initially developed and tested
 * **Quality**: The environment where testers and business users experiment applications to perform quality assurance
-* **Production**: The environment that hosts the application version end-users interact with
+* **Production**: The environment that hosts the application version end users interact with
 
 You can manage your OutSystems infrastructure in the **INFRASTRUCTURE** tab of LifeTime console (`https://<your_lifetime_server>/lifetime`).
 

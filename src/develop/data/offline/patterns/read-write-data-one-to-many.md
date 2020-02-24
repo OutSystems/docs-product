@@ -1,11 +1,11 @@
 ---
-summary: This data synchronization pattern is recommended for mobile apps with entities that follow a one-to-many relationship and where it is not likely for multiple end-users to change the same data while the apps are offline.
+summary: This data synchronization pattern is recommended for mobile apps with entities that follow a one-to-many relationship and where it is not likely for multiple end users to change the same data while the apps are offline.
 tags: runtime-mobile
 ---
 
 # Read/Write Data One-to-Many
 
-This data synchronization pattern is recommended for mobile apps with entities that follow a one-to-many relationship and where it is not likely for multiple end-users to change the same data while the apps are offline, as follows:
+This data synchronization pattern is recommended for mobile apps with entities that follow a one-to-many relationship and where it is not likely for multiple end users to change the same data while the apps are offline, as follows:
 
 * The server database holds the master data that can change over time.
 * The local storage database holds a subset of the master data and can be modified.

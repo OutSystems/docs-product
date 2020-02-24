@@ -16,23 +16,23 @@ The `Invalid Combo Box Widget` error is issued in the following situations:
 
 * `'Variable' cannot be set if 'Source Entity/Struct' is not set`
   
-    Either you have a Combo Box widget to display generic values (i.e.: not using a Source Entity or Source Structure) with the Variable property is set. Or you have set the variable that gathers the end-user input but no Source Entity or Source Structure is defined.
+    Either you have a Combo Box widget to display generic values (i.e.: not using a Source Entity or Source Structure) with the Variable property is set. Or you have set the variable that gathers the end user input but no Source Entity or Source Structure is defined.
 
     Edit this Combo Box widget and do one of the following operations: 
     
-    * If you are using a special list for generic values, you have to use the Special Variable property to gather end-user input and, therefore, unset the Variable property. 
+    * If you are using a special list for generic values, you have to use the Special Variable property to gather end user input and, therefore, unset the Variable property. 
 
     * If you want to use Entities or Structures, set the Variable property accordingly with, the Identifier of the Entity or the Source Identifier Attribute property.
 
 * `'Variable' must be set with a variable of <Entity> Identifier data type in <Combo Box> widget`
   
-    The list of records used to populate a Combo Box widget is composed of Entities and, in this situation, the variable that gathers end-user input must be in accordance with the Identifier of the Entity.
+    The list of records used to populate a Combo Box widget is composed of Entities and, in this situation, the variable that gathers end user input must be in accordance with the Identifier of the Entity.
 
     Edit this Combo Box widget and set the Variable property to a variable whose data type is compatible with the data type of the Identifier of the Entity.
 
 * `'Variable' must be set with a variable of <type> compatible data type in <Combo Box> widget`
   
-    The list of records used to populate a Combo Box widget is composed of Structures and, in this situation, the variable that gathers end-user input must be in accordance with the Identifier attribute of the Structure.
+    The list of records used to populate a Combo Box widget is composed of Structures and, in this situation, the variable that gathers end user input must be in accordance with the Identifier attribute of the Structure.
 
     Edit this Combo Box widget and set the Variable property with a variable whose data type is compatible with the data type of the Source Identifier Attribute property.
 

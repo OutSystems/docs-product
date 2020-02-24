@@ -7,7 +7,7 @@ tags: runtime-mobile; support-Front_end_Development-featured
 
 By default, mobile applications have a custom splash screen displaying the main color defined in the app creation wizard. This splash screen is displayed after the Operating System loads your app (black screen) and after the WebView finishes loading the content (white screen). 
 
-It is possible to change the look of your app even before it is fully loaded by customizing the native splash screen. This way you make sure that the end-user has a fluid experience from the moment they open your app by replacing the black to white screen transition with an image of your choice.
+It is possible to change the look of your app even before it is fully loaded by customizing the native splash screen. This way you make sure that the end user has a fluid experience from the moment they open your app by replacing the black to white screen transition with an image of your choice.
 
 ## Before you start
 
@@ -397,6 +397,6 @@ See the descriptions of the [available splash screen preferences](https://github
 
 <div class="info" markdown="1">
 
-Do not forget that you must [publish and generate a new mobile application package](<../generate-and-distribute-your-mobile-app/intro.md>) and distribute it in order to make the splash screen preferences visible to the end-users.
+Do not forget that you must [publish and generate a new mobile application package](<../generate-and-distribute-your-mobile-app/intro.md>) and distribute it in order to make the splash screen preferences visible to the end users.
 
 </div>

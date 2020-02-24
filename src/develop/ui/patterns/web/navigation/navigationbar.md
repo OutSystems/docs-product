@@ -7,7 +7,7 @@ summary:
 
 Organize the content and enable quick navigation through an application with vertically stacked links. These stacked links can be displayed with different hierarchy levels. The NavigationBar pattern uses the Navigation Bar Item and Navigation Bar SubItem to create the necessary structure.
 
-Use it when the end-user needs to navigate through an application's main sections while maintaining the ability to browse to another subsection quickly. 
+Use it when the end user needs to navigate through an application's main sections while maintaining the ability to browse to another subsection quickly. 
 
 **How to use**
 

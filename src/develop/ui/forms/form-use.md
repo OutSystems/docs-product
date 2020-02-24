@@ -5,7 +5,7 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 
 # Use a Form to Group Input Widgets
 
-You can use a Form widget to allow end-users to enter data and store it in database records.
+You can use a Form widget to allow end users to enter data and store it in database records.
 
 ## In Reactive Web and Mobile
 

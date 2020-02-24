@@ -143,7 +143,7 @@ Use the ChatbotAdvanced Block to create customized chatbots for your business ne
     * **ConversationId** with the previously created local variable DLConversation
     * **DirectLineSecret** with the same value used in the Block
     * **From** with the previously created local variable ChannelAccount 
-    * **TextMessage** with the message the end-user sends to the bot
+    * **TextMessage** with the message the end user sends to the bot
 
     ![](images/chatbot-web-image16.png?width=400)
 

@@ -20,7 +20,7 @@ If you want to ensure that the new entity has unique records (like an `Author` c
 
 ## Example
 
-You have a mobile application called GoOut, where end-users can find and review places like restaurants, hotels, etc. An end-user can review many places and a place can have reviews from many end-users, i.e. a many-to-many relationship. We will call these two entities `Review` and `Place`. Besides the two foreign keys, a review has also other attributes: classification, comments, and submission date.
+You have a mobile application called GoOut, where end users can find and review places like restaurants, hotels, etc. An end user can review many places and a place can have reviews from many end users, i.e. a many-to-many relationship. We will call these two entities `Review` and `Place`. Besides the two foreign keys, a review has also other attributes: classification, comments, and submission date.
 
 Let's create the `Review` entity:
 

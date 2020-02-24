@@ -39,7 +39,7 @@ OutSystems covers the full application lifecycle, from development to deployment
 
 * **Quality Environment:** The environment where testers and business users experiment applications to perform quality assurance. This environment usually has few scalability and redundancy requirements.
 
-* **Production Environment:** The environment that hosts the application version end-users are interacting with. Usually, this environment is only accessible by the operations team.
+* **Production Environment:** The environment that hosts the application version end users are interacting with. Usually, this environment is only accessible by the operations team.
 
 * **Management Environment:** The environment that hosts LifeTime application, which is the infrastructure management console. Given its requirements, LifeTime application must run in a **dedicated** environment. **Installing LifeTime in an existing environment is not a supported scenario.** Learn how to [size an environment for the infrastructure management console](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Size_an_environment_to_run_the_infrastructure_management_console).
 

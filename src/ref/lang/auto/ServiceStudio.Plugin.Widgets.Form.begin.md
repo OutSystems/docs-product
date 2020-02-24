@@ -9,4 +9,4 @@ The layout of this widget is flexible, allowing you to organize the widgets insi
 All enabled inputs inside the form will have the following behaviors:
 
 * When the mouse hovers over the input, an icon appears inside the input indicating that the value is editable.
-* After changing a value in one input, an undo action becomes available allowing the end-user to revert the value to the original one.
+* After changing a value in one input, an undo action becomes available allowing the end user to revert the value to the original one.

@@ -5,23 +5,23 @@ tags: support-Application_Lifecycle; support-Integrations_Extensions; support-mo
 
 # How Application Performance Is Measured
 
-OutSystems collects metrics of how applications are performing to allow you to monitor and troubleshoot runtime issues. The Outsystems Platform uses [LifeTime Analytics](troubleshoot-the-performance-of-an-application.md) to measure the end-user experience based on industry-standard indicators and identify bottlenecks at different levels: client (eg. operating systems), network (eg. network types) and server (eg. business logic elements). This article describes what is collected and how.
+OutSystems collects metrics of how applications are performing to allow you to monitor and troubleshoot runtime issues. The Outsystems Platform uses [LifeTime Analytics](troubleshoot-the-performance-of-an-application.md) to measure the end user experience based on industry-standard indicators and identify bottlenecks at different levels: client (eg. operating systems), network (eg. network types) and server (eg. business logic elements). This article describes what is collected and how.
 
 ## What Happens when Using an Application?
 
-When end-users are using an application, their actions send requests to a server. The server then processes the requests and sends back responses with the result. During this cycle, the Platform collects metrics to enable you to troubleshoot performance issues, for example.
+When end users are using an application, their actions send requests to a server. The server then processes the requests and sends back responses with the result. During this cycle, the Platform collects metrics to enable you to troubleshoot performance issues, for example.
 
 The following picture shows the request-response cycle and the points where the Platform collects metrics.
 
 ![](images/how-application-performance-is-measured.jpg)
 
-1. The client sends a request to the server, a request triggered by an end-user action in the application.
+1. The client sends a request to the server, a request triggered by an end user action in the application.
 1. The request arrives to the server.
 1. The server starts sending the response, after executing the logic to process the request.
 1. The client starts receiving the response.
 1. The server finishes sending the response.
 1. The client receives the last byte of the response.
-1. The client finishes the rendering of response to the end-user.
+1. The client finishes the rendering of response to the end user.
 
 ## Client Metrics
 

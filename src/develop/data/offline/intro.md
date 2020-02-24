@@ -31,7 +31,7 @@ The following are the recommended steps for implementing your offline data sync 
 
 ![Sync implementation steps](images/sync-implementation-steps.png)
 
-Before you start the sync implementation, analyze the business needs and define who the end-users are. Define the conditions under which the app should work. This will help in creating the connectivity and data capacity requirements that your apps should meet.
+Before you start the sync implementation, analyze the business needs and define who the end users are. Define the conditions under which the app should work. This will help in creating the connectivity and data capacity requirements that your apps should meet.
 
 Also, decide who modifies the records and how. The sync implementation will be influenced by the number of users accessing a database record simultaneously and whether the editing of records is possible in the mobile app. In cases when the server holds the main data and the clients download the updates, you may want to implement the [Read-Only Data Optimized](<patterns/read-only-data-optimized.md>) sync pattern. However, in cases where many clients access and modify data, you will need a more complex sync pattern similar to the [Read/Write Data with Conflict Detection](<patterns/read-write-data-with-conflict-detection.md>).
 
@@ -57,18 +57,18 @@ We provide you with a collection of [sample data sync patterns](<patterns/intro.
 
 #### Sync configuration
 
-Once you have your actions for receiving, sending, processing data and resolving conflicts, embed them into the sync framework. Then, define the network detection and the app behavior. If the end-users can start the sync manually, make sure the sync is started as an asynchronous call by using the action TriggerOfflineDataSync.
+Once you have your actions for receiving, sending, processing data and resolving conflicts, embed them into the sync framework. Then, define the network detection and the app behavior. If the end users can start the sync manually, make sure the sync is started as an asynchronous call by using the action TriggerOfflineDataSync.
 
 ### 3. Create a robust user-experience
 
 ![](images/sync-implementation-steps-3.png)
 
-At this point you should have most of your sync logic in place. The next step is to create a user experience around the sync. The user interface and app behavior should provide a robust experience for the end-users. The end-users should be aware of the network status, if the data they are working with is up to date, and they should also be aware of the sync outcomes. The initial sync should be well thought out. It should be obvious how to resolve conflicts.
+At this point you should have most of your sync logic in place. The next step is to create a user experience around the sync. The user interface and app behavior should provide a robust experience for the end users. The end users should be aware of the network status, if the data they are working with is up to date, and they should also be aware of the sync outcomes. The initial sync should be well thought out. It should be obvious how to resolve conflicts.
 
 ### 4. Test your sync implementation
 
 ![](images/sync-implementation-steps-4.png)
 
-Test your sync implementation against defined business goals, the use cases and also user experience. The browser simulator works well for basic debugging, but you should install your app on several devices and test how the sync and app perform in realistic scenarios. Keep in mind that your app is using the internal database and that it needs to be able to update even in poor connectivity. Another important sync test is a usability test to verify that the end-users will have a responsive app that is intuitive to use.
+Test your sync implementation against defined business goals, the use cases and also user experience. The browser simulator works well for basic debugging, but you should install your app on several devices and test how the sync and app perform in realistic scenarios. Keep in mind that your app is using the internal database and that it needs to be able to update even in poor connectivity. Another important sync test is a usability test to verify that the end users will have a responsive app that is intuitive to use.
 
-Finally, check the items in the [Offline Sync Checklist](<sync-checklist.md>) to help ensure your application meets all expectations regarding performance and end-user experience.
+Finally, check the items in the [Offline Sync Checklist](<sync-checklist.md>) to help ensure your application meets all expectations regarding performance and end user experience.

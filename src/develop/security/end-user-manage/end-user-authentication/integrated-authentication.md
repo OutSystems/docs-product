@@ -5,9 +5,9 @@ tags: support-Mobile_Apps; support-webapps
 
 # Integrated Authentication
 
-OutSystems natively supports Integrated Windows Authentication so you can use a centralized management of the end-users and have automatic authentication in your applications. Integrated authentication allows the end-users to access applications using their domain credentials.
+OutSystems natively supports Integrated Windows Authentication so you can use a centralized management of the end users and have automatic authentication in your applications. Integrated authentication allows the end users to access applications using their domain credentials.
 
-When the end-user tries to access a web screen that requires authentication, the application server returns an HTTP 401 status, signaling that the end-user is trying to access a resource that requires authentication. The browser then sends the credentials the end-user used to authenticate in the Windows operating system, or if unable to do so, prompts the end-user to provide the credentials. From then on, the browser automatically sends the credentials when they are required, without the end-user having to insert the domain credentials again.
+When the end user tries to access a web screen that requires authentication, the application server returns an HTTP 401 status, signaling that the end user is trying to access a resource that requires authentication. The browser then sends the credentials the end user used to authenticate in the Windows operating system, or if unable to do so, prompts the end user to provide the credentials. From then on, the browser automatically sends the credentials when they are required, without the end user having to insert the domain credentials again.
 
 
 ## Elements that Support Integrated Authentication
@@ -17,7 +17,7 @@ You can [enable integrated authentication for all applications](configure-active
 The elements that support Integrated Authentication are the following.
 
 Web Screens
-:   The end-users accessing it will have to be authenticated by Integrated Authentication.
+:   The end users accessing it will have to be authenticated by Integrated Authentication.
 
 Web Flows
 :   All screens that don't have set the `Integrated Authentication` property inherit its value form the web flow.
@@ -39,4 +39,4 @@ OutSystems has built-in actions and functions that use Integrated Windows Authen
 
 ## Remarks
 
-To use integrated authentication, both the client and front-end server must be in the same domain and must have an Active Directory that stores information about the end-users and their credentials.
+To use integrated authentication, both the client and front-end server must be in the same domain and must have an Active Directory that stores information about the end users and their credentials.

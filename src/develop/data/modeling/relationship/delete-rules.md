@@ -37,17 +37,17 @@ When designing your Entities model, you must identify the correct Delete Rule fo
 
 ## "Protect" Example
 
-The `Protect` value is commonly used when the end-user is able to delete the Entity data directly from the application’s screens.
+The `Protect` value is commonly used when the end user is able to delete the Entity data directly from the application’s screens.
 
 Consider the following business scenario:
 
-* There is an application screen where the end-users can delete **Customers**.
+* There is an application screen where the end users can delete **Customers**.
 
 * A **Customer** can have one or more **Orders**, and an **Order** belongs to one and only one **Customer**.
 
 * A **Customer** cannot be deleted while there are associated Orders.
 
-Setting the **Delete Rule** property of the reference attribute **CustomerId** to `Protect` assures that the end-user won’t delete a Customer that still has associated Orders.
+Setting the **Delete Rule** property of the reference attribute **CustomerId** to `Protect` assures that the end user won’t delete a Customer that still has associated Orders.
 
 ![](images/delete-rules-3.png?width=500)
 
@@ -97,7 +97,7 @@ Setting the **Delete Rule** property of the reference attribute **OrderId** to `
 
 ### Constraints
 
-* Depending on the number of related records, this option can lead to poor performance. For every delete operation, the related Entities will be checked for related records, causing the delete statement to take longer. Therefore, this option is not recommended when you have a complex Entity model and performance is a concern (for example, the end-user is able to delete the Entity data directly from the application’s screens).
+* Depending on the number of related records, this option can lead to poor performance. For every delete operation, the related Entities will be checked for related records, causing the delete statement to take longer. Therefore, this option is not recommended when you have a complex Entity model and performance is a concern (for example, the end user is able to delete the Entity data directly from the application’s screens).
 
 ## "Ignore" Example
 

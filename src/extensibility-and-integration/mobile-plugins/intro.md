@@ -13,7 +13,7 @@ You can find [ready-to-use plugins in Forge](<https://www.outsystems.com/forge/#
 
 [Install the plugin](<../../getting-started/component.md>) in the environment as any other component. Use the client actions of the plugin module to call the native capabilities of the device within your application. The plugin must support the mobile platforms (iOS, Android) for which you are creating an app or the app generation will fail.
 
-Each time you add, remove, or modify the plugin in an app, OutSystems [rebuilds the native shell](<../../deliver-mobile/mobile-app-update-scenarios.md#Situations_When_the_User_Must_Install_a_New_Build>) which you then have to distribute to the end-users for installation.
+Each time you add, remove, or modify the plugin in an app, OutSystems [rebuilds the native shell](<../../deliver-mobile/mobile-app-update-scenarios.md#Situations_When_the_User_Must_Install_a_New_Build>) which you then have to distribute to the end users for installation.
 
 You must [include the plugin license](<../../deliver-mobile/compliance-with-third-party-licenses.md#Include_the_Third_Party_Licenses_Used_by_Plug-ins_or_Components>) in your app to respect the license agreements of that plugin. Usually, these license agreements are placed in the About page of the app that uses them.
 

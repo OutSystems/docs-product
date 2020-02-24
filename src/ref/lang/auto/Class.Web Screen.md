@@ -5,7 +5,7 @@ helpids: 4011
 
 # Web Screen
 
-User interface that end-users interact with.  
+User interface that end users interact with.  
 
 ## Properties
 

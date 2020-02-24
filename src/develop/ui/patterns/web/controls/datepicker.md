@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: DatePicker allows the end-user to select a single or a range of dates using a calendar.
+summary: DatePicker allows the end user to select a single or a range of dates using a calendar.
 ---
 
 # DatePicker 
 
 Select a single date or a range of dates.
 
-Use the DatePicker to allow the end-user to select a single or a range of dates using a calendar.
+Use the DatePicker to allow the end user to select a single or a range of dates using a calendar.
 
 **How to use**
 

@@ -44,7 +44,7 @@ API Name | Available As | Description
 ---|---|---
 [Emails API](emails-api.md) | Referenced system module | Allows you to access data about your Emails.
 
-## End-User Management
+## End User Management
 
 API Name | Available As | Description
 ---|---|---
@@ -94,7 +94,7 @@ API Name | Available As | Description
 API Name | Available As | Description
 ---|---|---
 [PlatformPasswordUtils API](auto/platformpasswordutils-api.final.md) | Referenced extension | Provides you actions for validating and securely storing passwords in the database, compliant with established cryptographic practices.
-[Sanitization API](auto/sanitization-api.final.md) | Referenced extension | Provides methods to avoid code injection in HTML, JavaScript and SQL snippets that need to include untrusted content, i.e., content gathered from end-users.
+[Sanitization API](auto/sanitization-api.final.md) | Referenced extension | Provides methods to avoid code injection in HTML, JavaScript and SQL snippets that need to include untrusted content, i.e., content gathered from end users.
 
 ## Text
 

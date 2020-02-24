@@ -1,10 +1,10 @@
 ---
-summary: How to configure LDAP end-user authentication for your applications (both LDAP with Active Directory and standard LDAP).
+summary: How to configure LDAP end user authentication for your applications (both LDAP with Active Directory and standard LDAP).
 ---
 
 # Configure LDAP Authentication
 
-There are two ways of configuring LDAP (Lightweight Directory Access Protocol) for authenticating end-users of your OutSystems applications:
+There are two ways of configuring LDAP (Lightweight Directory Access Protocol) for authenticating end users of your OutSystems applications:
 
 Use LDAP protocol to connect to Active Directory (AD)
 :   Used when you have an Active Directory infrastructure that you want to connect to, but the OutSystems front-end servers cannot be part of the Active Directory domain (e.g. in cloud infrastructures). Use this option for a simplified configuration process. Note that the front-end servers must be able to access the Active Directory domain controller.
@@ -14,7 +14,7 @@ Use standard LDAP
 
 ## Configure LDAP Authentication with Active Directory
 
-To configure the OutSystems end-user authentication for LDAP with Active Directory do the following:
+To configure the OutSystems end user authentication for LDAP with Active Directory do the following:
 
 1. In the [Users application](<../accessing-users.md>), click "Configure Authentication" in the sidebar.
 
@@ -34,7 +34,7 @@ To configure the OutSystems end-user authentication for LDAP with Active Directo
 
     ![](images/users-auth-ldap-ad.png) 
 
-1. Optionally, in the **Default Domain** field, enter the domain where end-users are going to be authenticated.
+1. Optionally, in the **Default Domain** field, enter the domain where end users are going to be authenticated.
 
 1. Test your configurations by entering your credentials in the respective fields for testing:
 
@@ -48,7 +48,7 @@ In this case the domain controller address (which we will use as our server addr
 
 ![](images/adsi-domaincontroller.png)
 
-If we wanted to authenticate end-users configured under the `CN=Users` LDAP node we would use the following Base Distinguished Name in the LDAP URL field:
+If we wanted to authenticate end users configured under the `CN=Users` LDAP node we would use the following Base Distinguished Name in the LDAP URL field:
 
 `CN=Users,DC=domain,DC=outsystems,DC=com`
 
@@ -59,7 +59,7 @@ Note that Distinguished Names are read from right (root) to left (leaf). The fin
 
 ## Configure Standard LDAP Authentication
 
-To configure OutSystems end-user authentication with standard LDAP (i.e. LDAP not associated with Active Directory) do the following:
+To configure OutSystems end user authentication with standard LDAP (i.e. LDAP not associated with Active Directory) do the following:
 
 1. Choose `LDAP` in the **Authentication** drop-down list.
 
@@ -92,7 +92,7 @@ To configure OutSystems end-user authentication with standard LDAP (i.e. LDAP no
 
 ### Using a computer which is part of the Active Directory
 
-If you are using a computer that **is part of the Active Directory domain** you wish to use for authenticating end-users, you can use tools available out-of-the-box in Windows to find the necessary information (domain name, Base Distinguished Name and domain controller address) to build the **LDAP URL** field value.
+If you are using a computer that **is part of the Active Directory domain** you wish to use for authenticating end users, you can use tools available out-of-the-box in Windows to find the necessary information (domain name, Base Distinguished Name and domain controller address) to build the **LDAP URL** field value.
 
 1. **Obtain your current domain name.**
 
@@ -145,4 +145,4 @@ If you are using a computer that **is part of the Active Directory domain** you 
 
 ### Using a computer outside of the Active Directory
 
-If you are using a computer that **is not part of the Active Directory domain** you want to use for end-user authentication, ask your network administrator for the correct LDAP server address and Base Distinguished Name.
+If you are using a computer that **is not part of the Active Directory domain** you want to use for end user authentication, ask your network administrator for the correct LDAP server address and Base Distinguished Name.

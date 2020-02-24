@@ -9,10 +9,10 @@ Server Action | Description | Is Function?
 [AbortTransaction](<#AbortTransaction>) | Issues a database ROLLBACK command that undoes all changes performed on the database since the last commit. | 
 [ActivityClose](<#ActivityClose>) | Explicitly closes a Human Activity or a Wait Activity ending the execution.%%The the id of the next Human Activity in sequence is returned, if determined. | 
 [ActivityGetUrl](<#ActivityGetUrl>) | Returns the URL of the web screen where an activity will be carried out, once opened. | Yes
-[ActivityOpen](<#ActivityOpen>) | Explicitly forces a Human Activity instance to be opened in an end-user's Taskbox. | 
-[ActivityReset](<#ActivityReset>) | Releases the Human Activity leaving it to be opened and carried out by another end-user. | 
+[ActivityOpen](<#ActivityOpen>) | Explicitly forces a Human Activity instance to be opened in an end user's Taskbox. | 
+[ActivityReset](<#ActivityReset>) | Releases the Human Activity leaving it to be opened and carried out by another end user. | 
 [ActivitySchedule](<#ActivitySchedule>) | Schedules a date for the Human Activity to be available in the Taskbox. | 
-[ActivitySetGroup](<#ActivitySetGroup>) | Limit a Human Activity visibility and handling to end-users who belong to a specific group. | 
+[ActivitySetGroup](<#ActivitySetGroup>) | Limit a Human Activity visibility and handling to end users who belong to a specific group. | 
 [ActivitySkip](<#ActivitySkip>) | Explicitly skips the execution of a Human Activity or a Wait Activity.%%The the id of the next Human Activity in sequence is returned, if determined. | 
 [ActivityStart](<#ActivityStart>) | Explicitly starts the execution of a ConditionalStart Activity. | 
 [ClientCertificateGetDetails](<#ClientCertificateGetDetails>) | Gets the relevant information for the current request client certificate from the .NET framework. | 
@@ -106,7 +106,7 @@ HandlingUrl
 
 ### ActivityOpen { #ActivityOpen }
 
-Explicitly forces a Human Activity instance to be opened in an end-user's Taskbox.
+Explicitly forces a Human Activity instance to be opened in an end user's Taskbox.
 
 *Inputs*
 
@@ -122,7 +122,7 @@ HandlingUrl
 
 ### ActivityReset { #ActivityReset }
 
-Releases the Human Activity leaving it to be opened and carried out by another end-user.
+Releases the Human Activity leaving it to be opened and carried out by another end user.
 
 *Inputs*
 
@@ -150,7 +150,7 @@ StartDate
 
 ### ActivitySetGroup { #ActivitySetGroup }
 
-Limit a Human Activity visibility and handling to end-users who belong to a specific group.
+Limit a Human Activity visibility and handling to end users who belong to a specific group.
 
 *Inputs*
 

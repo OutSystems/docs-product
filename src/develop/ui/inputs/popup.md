@@ -5,7 +5,7 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 
 # Create and Use a Popup
 
-You can use a popup to provide information to the end-users or ask for their input. This results in a better experience for end-users because they are kept in context while entering the input.
+You can use a popup to provide information to the end users or ask for their input. This results in a better experience for end users because they are kept in context while entering the input.
 
 ## In Reactive Web and Mobile
 

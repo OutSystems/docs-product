@@ -1,9 +1,9 @@
 ---
-summary: Learn how to enable end-users to upload files using your application.
+summary: Learn how to enable end users to upload files using your application.
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
 ---
 
-# Enable End-Users to Upload Files
+# Enable End Users to Upload Files
 
 Use the Upload widget to add files — such as photos — to your application.
 

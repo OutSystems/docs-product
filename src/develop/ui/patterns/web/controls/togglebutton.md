@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ToggleButton prompts end-users to choose between two states.
+summary: ToggleButton prompts end users to choose between two states.
 ---
 
 # ToggleButton
 
-Prompts end-users to choose between two states.
+Prompts end users to choose between two states.
 
-Use the Toggle Button and prompt end-users to choose between two incompatible states, selecting a preference. There is always a default value as toggles are digital on/off switches. 
+Use the Toggle Button and prompt end users to choose between two incompatible states, selecting a preference. There is always a default value as toggles are digital on/off switches. 
 
 **How to use**
 

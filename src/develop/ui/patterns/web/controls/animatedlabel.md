@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: AnimatedLabel allows end-users to keep context by focusing on the input.
+summary: AnimatedLabel allows end users to keep context by focusing on the input.
 ---
 
 # AnimatedLabel
 
 An input label that animates when there is user input.
 
-Use AnimatedLabel inputs to allow end-users to keep context by focusing on the input.
+Use AnimatedLabel inputs to allow end users to keep context by focusing on the input.
 
 **How to use**
 

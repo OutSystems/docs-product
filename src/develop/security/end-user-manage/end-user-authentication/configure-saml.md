@@ -1,5 +1,5 @@
 ---
-summary: How to configure SAML 2.0 end-user authentication for your applications.
+summary: How to configure SAML 2.0 end user authentication for your applications.
 tags: runtime-traditionalweb
 ---
 
@@ -26,7 +26,7 @@ If you have some logic that must run at each login, or if your IdP has some part
 
 ## Using SAML in your OutSystems applications
 
-To configure SAML 2.0 end-user authentication you need to take the following steps:
+To configure SAML 2.0 end user authentication you need to take the following steps:
 
 1. Configure SAML 2.0 authentication in the Users application.
 1. Change the Logout flow of your OutSystems applications (only required when using Single Logout).

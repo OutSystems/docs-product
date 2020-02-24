@@ -5,7 +5,7 @@ helpids: 30206
 
 # Client Variable
 
-Holds data that is persisted client-side and can be used to save information during the end-user interaction.  
+Holds data that is persisted client-side and can be used to save information during the end user interaction.  
 
 ## Properties
 

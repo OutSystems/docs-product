@@ -1,16 +1,16 @@
 ---
-summary: The Session tab allows you to configure the database used by OutSystems to store the end-user persistent sessions.
+summary: The Session tab allows you to configure the database used by OutSystems to store the end user persistent sessions.
 ---
 
 # Session Tab
 
-The **Session tab** allows you to configure the database used by OutSystems to store the end-user persistent sessions.
+The **Session tab** allows you to configure the database used by OutSystems to store the end user persistent sessions.
 
 ## Database Section (for SQL Server / Azure SQL)
 
 Configuration | Description | Default value  
 ---|---|---  
-Server | The hostname or IP address to the database server to store the end-user persistent sessions. | `localhost`  
+Server | The hostname or IP address to the database server to store the end user persistent sessions. | `localhost`  
 Database | Name of the catalog/schema created in the database; it contains the session tables. | `osSession`  
   
 ## Database Section (for Oracle)

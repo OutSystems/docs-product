@@ -10,7 +10,7 @@ What follows is a checklist for implementing sync in mobile devices with OutSyst
 
 ## Performance
 
-Follow these items to validate that your mobile app does not suffer from performance and usability issues that degrade the end-user experience.
+Follow these items to validate that your mobile app does not suffer from performance and usability issues that degrade the end user experience.
 
 Are the local entities designed as a lightweight version of the server entities? Have the entity relationships been denormalized?
 :   Mobile devices do not have the network resources or computing power of a server, and can efficiently handle only a small amount of data. Make sure that the local entities contain only the attributes that your offline business logic requires. Do not add all the attributes of the server entities. Additionally, update only those records that are relevant to the current user of the mobile application.
@@ -39,7 +39,7 @@ Did you consider an app design that avoids conflicts during sync?
 :   Sometimes the app can be improved so that conflicts between the local and server data never happen. Consider whether conflicts are essential to the use case. For example, maybe the last-write-wins is a pattern that suits most of the needs or editing can be locked while the device is offline.
 
 If the business logic needs to deal with data conflicts, does the UX support the conflict management?
-:   If data conflicts are part of your business case you should ensure that the user data is never lost because of a poor UX. The end-users should be clear about the consequences of the actions they choose and be informed of the sync status.
+:   If data conflicts are part of your business case you should ensure that the user data is never lost because of a poor UX. The end users should be clear about the consequences of the actions they choose and be informed of the sync status.
 
 Do all synced local entities have their own action in OfflineDataSync folder?
 :   Instead of placing all your logic for synced local entities in the default OfflineDataSync action, you should create individual actions in the same folder to sync each local entity. This helps to keep the sync logic organized and enables running syncs in a granular, controlled way.
@@ -48,12 +48,12 @@ Does the app clear the pending sync requests when needed?
 :   The syncs started by TriggerOfflineDataSync wait in a queue until they run. There are some instances where a sync must run with a higher priority or you no longer need the currently queued syncs to run. To do this, call TriggerOfflineDataSync with the input DiscardPendingSyncUnits set to True to clear the sync queue.
 
 
-## End-User Experience
+## End User Experience
 
-Follow these items to validate that you provide a solid end-user experience, in line with best practices.
+Follow these items to validate that you provide a solid end user experience, in line with best practices.
 
 Is automatic sync configured?
 :   You may want to set up automatic data syncs for specific conditions in the client action OfflineDataSyncConfiguration, such as when the user logs in or when the app comes back online.
 
-Does the app provide feedback to the end-users about the sync status?
-:   The end-users should know about the status of the data sync. Use the Screen events to react to changes in the network and sync status and update the UI to provide visual feedback about what is happening. For example, display messages like "Syncing...", "Sync failed...", "You’re offline". You can also use the LayoutBlank block to display an error message and an option to retry.
+Does the app provide feedback to the end users about the sync status?
+:   The end users should know about the status of the data sync. Use the Screen events to react to changes in the network and sync status and update the UI to provide visual feedback about what is happening. For example, display messages like "Syncing...", "Sync failed...", "You’re offline". You can also use the LayoutBlank block to display an error message and an option to retry.

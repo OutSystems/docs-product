@@ -45,7 +45,7 @@ Development
 
 Production
 
-:   Environments whose main purpose is to make applications available to your end-users. In Production environments, reliability is a top priority so 1-Click Publish process optimizations are disabled; as a consequence, publishing an application in a Production environment can take longer than publishing the same application in a Development environment.
+:   Environments whose main purpose is to make applications available to your end users. In Production environments, reliability is a top priority so 1-Click Publish process optimizations are disabled; as a consequence, publishing an application in a Production environment can take longer than publishing the same application in a Development environment.
 
 Non-Production
 

@@ -4,11 +4,11 @@ summary: Allow users to access your applications over HTTPS by enabling SSL in y
 
 # Use HTTPS by Enabling SSL
 
-HTTPS allows you to establish a secure communication channel between the end-user and your OutSystems environment. This way:
+HTTPS allows you to establish a secure communication channel between the end user and your OutSystems environment. This way:
 
 * The data exchanged cannot be read by an unauthorized third-party, since it's encrypted.
 * The data exchanged cannot be tampered with, since the message integrity is checked.
-* Man-in-the-middle attacks are prevented: when the end-user accesses the application using HTTPS, the application server is required to present a certificate, that the end-user's browser checks to see if that is a trusted application server, or some other application server that cannot be trusted.
+* Man-in-the-middle attacks are prevented: when the end user accesses the application using HTTPS, the application server is required to present a certificate, that the end user's browser checks to see if that is a trusted application server, or some other application server that cannot be trusted.
 
 To use HTTPS in your application you must configure and activate SSL (Secure Socket Layers) in the environments of your infrastructure. When SSL is active, the development environments and monitoring consoles will also use a secure connection to the environment.
 

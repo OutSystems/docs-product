@@ -1,11 +1,11 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Dropdown allows end-users to make a choice from several options.
+summary: Dropdown allows end users to make a choice from several options.
 ---
 
 # Dropdown
 
-Allow end-users to make a choice from several options.
+Allow end users to make a choice from several options.
 
 Use the Dropdown to offer a choice of more than four options. For a very large number of options, consider using the Dropdown Select to avoid loss of context.
 

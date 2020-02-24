@@ -1,5 +1,5 @@
 ---
-summary: It is possible to update certain parts of the screen without reloading the whole screen, thus improving the end-user experience.
+summary: It is possible to update certain parts of the screen without reloading the whole screen, thus improving the end user experience.
 tags: support-Front_end_Development; support-webapps-featured; runtime-traditionalweb
 ---
 
@@ -11,7 +11,7 @@ Are you developing a Reactive Web App? Keep in mind that Ajax Refresh does not e
 
 </div>
 
-Refreshing only certain parts of a screen without having to re-render the whole screen improves the end-user experience by creating dynamic interfaces and supporting faster user interactions.
+Refreshing only certain parts of a screen without having to re-render the whole screen improves the end user experience by creating dynamic interfaces and supporting faster user interactions.
 
 For web applications, you can use Ajax to perform asynchronous requests to the web server that fetch only the necessary data to dynamically refresh the screen, without needing to refresh the whole page.
 

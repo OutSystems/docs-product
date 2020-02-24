@@ -66,7 +66,7 @@ If you want a **single cached value** instance in memory and serve all requests 
 
 You can consider caching the contents of:
 
-* Elements with an execution time that negatively impacts the end-user experience 
+* Elements with an execution time that negatively impacts the end user experience 
 * Elements that overload the system resources (database, CPU, memory...) 
 * Elements that fetch data from databases or external systems
 * Elements for which the returned results rarely change or change in a controlled way for the same input parameters 

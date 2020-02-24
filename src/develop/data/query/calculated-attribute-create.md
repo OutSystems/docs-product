@@ -14,7 +14,7 @@ There are situations when the data fetched from the database isn't enough and yo
 
 ## Example
 
-In the GoOutWeb, a web application to check interesting places, we have a screen to list places. In this screen, we want to allow the end-user to filter the listed places by category selecting an available category from a Combo Box. Additionally, in each entry of the Combo Box we want to display the number of places that have that specific category along to the category name.
+In the GoOutWeb, a web application to check interesting places, we have a screen to list places. In this screen, we want to allow the end user to filter the listed places by category selecting an available category from a Combo Box. Additionally, in each entry of the Combo Box we want to display the number of places that have that specific category along to the category name.
 
 ![Create a Calculated Attribute in an Aggregate](images/calculated-attribute-create-1.png)
 

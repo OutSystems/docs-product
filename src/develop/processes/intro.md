@@ -7,7 +7,7 @@ tags: bpt; support-webapps-featured
 
 OutSystems allows you to design and manage your business processes and integrate them into your applications. A business process is simply called a **Process** in OutSystems and is understood as the way that a particular task is carried out in your organization, such as handling invoices, processing orders, or handling complaints. Processes are also known as BPT (Business Process Technology).
 
-A process is usually designed while thinking about an entity's life cycle, that is, it is designed as a flow of activities to be carried out at each stage of the entity's life cycle such as a task for the end-user to execute in your application, or wait for some condition to advance to the next activity, or even execute some task without the need for end-user intervention.
+A process is usually designed while thinking about an entity's life cycle, that is, it is designed as a flow of activities to be carried out at each stage of the entity's life cycle such as a task for the end user to execute in your application, or wait for some condition to advance to the next activity, or even execute some task without the need for end user intervention.
 
 To implement your process flow, use the Process Flow Editor which has a set of process tools for you to design the process flow of activities that have to be executed during the entity's life cycle.
 
@@ -25,13 +25,13 @@ Example: in an application that manages invoices, this allows you to automatical
 
 While designing your application action flows, you may explicitly interact with your processes through process extended actions and System actions.
 
-This allows you, for example, to explicitly launch a process execution or explicitly open a task to be executed by an end-user.
+This allows you, for example, to explicitly launch a process execution or explicitly open a task to be executed by an end user.
 
-While designing your process you may schedule tasks to be done in your application by end-users and allow them to take actions on the task they are doing. These tasks and actions are available to the end-users in the Taskbox.
+While designing your process you may schedule tasks to be done in your application by end users and allow them to take actions on the task they are doing. These tasks and actions are available to the end users in the Taskbox.
 
 ### Using the Taskbox
 
-The Taskbox is automatically available in your application once you are executing processes, and if you have the User module as the user provider. It lists the end-users' tasks, both the ones that are being executed and the ones waiting to be executed. It also displays the task instructions and the actions that the end-user can take on the task.
+The Taskbox is automatically available in your application once you are executing processes, and if you have the User module as the user provider. It lists the end users' tasks, both the ones that are being executed and the ones waiting to be executed. It also displays the task instructions and the actions that the end user can take on the task.
 
 ![](images/process-taskbox-highlighted.jpg)
 
@@ -39,7 +39,7 @@ The Taskbox is automatically available in your application once you are executin
 
 ![](images/process-taskbox-opened.jpg) ![](images/process-taskbox-instructions.jpg)
 
-When the end-user clicks on a listed task, it is opened and the task instructions are displayed in the Taskbox. Simultaneously, the application navigates automatically to the appropriate Web Screen and displays the appropriate data needed for the end-user to accomplish the task.
+When the end user clicks on a listed task, it is opened and the task instructions are displayed in the Taskbox. Simultaneously, the application navigates automatically to the appropriate Web Screen and displays the appropriate data needed for the end user to accomplish the task.
 
 ### Using the Processes API
 

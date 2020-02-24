@@ -21,7 +21,7 @@ As an example, consider an Action B raising a User Exception named MyUserExcepti
 
 ![](images/handling-mechanism.png)
 
-You should have, at least, one Exception Handler in your application flow to inform and allow the end-user to continue to navigate.
+You should have, at least, one Exception Handler in your application flow to inform and allow the end user to continue to navigate.
 
 ## Handling Exceptions Raised by Integrations
 

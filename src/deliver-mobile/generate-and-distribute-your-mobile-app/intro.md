@@ -1,11 +1,11 @@
 ---
-summary: You can generate the mobile app package for your mobile app and distribute it for tests purposes or, when you have completed work on your app, generate a production-ready version of your app to distribute to a selected group of end-users or to publish in mobile app stores.
+summary: You can generate the mobile app package for your mobile app and distribute it for tests purposes or, when you have completed work on your app, generate a production-ready version of your app to distribute to a selected group of end users or to publish in mobile app stores.
 tags: runtime-mobile
 ---
 
 # Generate and Distribute Your Mobile App
 
-Before generating your mobile app for the first time, you will have to configure specific iOS and/or Android settings. Check the [topics listed at the end of this page](#Articles_in_this_Section) for details about different scenarios, such as development tests, distributing your app to a limited group of end-users or publishing your app in Mobile App Stores.
+Before generating your mobile app for the first time, you will have to configure specific iOS and/or Android settings. Check the [topics listed at the end of this page](#Articles_in_this_Section) for details about different scenarios, such as development tests, distributing your app to a limited group of end users or publishing your app in Mobile App Stores.
 
 The following sections show how to configure and generate iOS and Android application packages of your mobile apps in Service Studio or in Service Center.
 

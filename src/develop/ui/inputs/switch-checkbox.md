@@ -5,7 +5,7 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 
 # Switch or Toggle a Boolean Value
 
-To gather end-user input for a boolean value in a form, OutSystems provides two types of widgets:
+To gather end user input for a boolean value in a form, OutSystems provides two types of widgets:
 
 * ![](../../../shared/icons-tools/checkbox-widget.png) Check Box
 * ![](../../../shared/icons-tools/switch-widget.png) Switch (for Reactive Web and Mobile only)
@@ -21,9 +21,9 @@ You can also find in the Forge, other widgets developed by the OutSystems commun
 
 ## Using Switch in Reactive Web and Mobile
 
-In the GoOut mobile app, to find, review, and rate places, end-users can receive two kinds of notifications by email. One to inform that a friend did something in a place, either checked in or wrote a new review. The other is to alert end-users that someone reported one of their reviews as having some problem.
+In the GoOut mobile app, to find, review, and rate places, end users can receive two kinds of notifications by email. One to inform that a friend did something in a place, either checked in or wrote a new review. The other is to alert end users that someone reported one of their reviews as having some problem.
 
-What we want to do is allow end-users to configure which notifications they want to receive.
+What we want to do is allow end users to configure which notifications they want to receive.
 
 There's already a Profile screen in the GoOut application with a form to enter data:
 
@@ -38,7 +38,7 @@ There's already a Profile screen in the GoOut application with a form to enter d
 
 ## Using a Checkbox in Traditional Web
 
-In the GoOutWeb app, the Traditional Web version of the GoOut app, we want to also allow end-users to configure their notifications. 
+In the GoOutWeb app, the Traditional Web version of the GoOut app, we want to also allow end users to configure their notifications. 
 
 There's already a Profile screen in the GoOutWeb application with a form to enter data:
 

@@ -7,7 +7,7 @@ summary: Search allows the user to find pieces of content without the use of nav
 
 Allow the user to find pieces of content without the use of navigation.
 
-Use the Search so that end-users can easily find pieces of content by entering queries. Unlike navigation, knowledge of the content's location isn't required. 
+Use the Search so that end users can easily find pieces of content by entering queries. Unlike navigation, knowledge of the content's location isn't required. 
 
 **How to use**
 

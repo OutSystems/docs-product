@@ -5,7 +5,7 @@ helpids: 0
 
 # Human Activity
 
-Activity to be executed by an end-user.
+Activity to be executed by an end user.
 
 ## Properties
 
@@ -97,7 +97,7 @@ Activity to be executed by an end-user.
 </tr>
 <tr>
 <td title="Due Date">Due Date</td>
-<td>Optional date to inform the end-user when is the due date of the activity. Can be an expression.</td>
+<td>Optional date to inform the end user when is the due date of the activity. Can be an expression.</td>
 <td></td>
 <td></td>
 <td></td>
@@ -147,7 +147,7 @@ Activity to be executed by an end-user.
 <tbody>
 <tr>
 <td>ClosedBy</td>
-<td>Identifier of the end-user that closed the process activity instance.</td>
+<td>Identifier of the end user that closed the process activity instance.</td>
 <td>Yes</td>
 <td></td>
 <td></td>

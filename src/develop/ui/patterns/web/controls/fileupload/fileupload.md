@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: FileUpload allows the end-user to transfer a file or add content to the application.
+summary: FileUpload allows the end user to transfer a file or add content to the application.
 ---
 
 # FileUpload
 
-Allows the end-user to transfer a file or add content to the application.
+Allows the end user to transfer a file or add content to the application.
 
-Use the FileUpload to allow the end-user to transfer a file or add content. Although it is commonly a form element, it can also be a stand-alone element.
+Use the FileUpload to allow the end user to transfer a file or add content. Although it is commonly a form element, it can also be a stand-alone element.
 
 **How to use**
 

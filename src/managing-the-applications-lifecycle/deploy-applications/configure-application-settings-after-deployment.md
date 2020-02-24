@@ -1,5 +1,5 @@
 ---
-summary: Check how you can define application settings while deploying an application module to an environment, with no downtime to your end-users.
+summary: Check how you can define application settings while deploying an application module to an environment, with no downtime to your end users.
 ---
 
 # Configure Application Settings After Deployment
@@ -15,7 +15,7 @@ When deploying an application module to an environment, OutSystems allows you to
 * Values of module parameters
 * And more
 
-These configurations are made in the environment management console. They don't need republishing your app, and have no downtime to your end-users.
+These configurations are made in the environment management console. They don't need republishing your app, and have no downtime to your end users.
 
 ## Example - Configure the Executive Dashboard App
 

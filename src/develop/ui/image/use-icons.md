@@ -1,11 +1,11 @@
 ---
-summary: Learn how to display an icon to help end-users identify functionality or information on the screens.
+summary: Learn how to display an icon to help end users identify functionality or information on the screens.
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
 ---
 
 # Use Icons
 
-Icons are small pictograms or symbols to help end-users identify functionality or information on screens. OutSystems provides a built-in collection of icons that can be used on the interface of applications.
+Icons are small pictograms or symbols to help end users identify functionality or information on screens. OutSystems provides a built-in collection of icons that can be used on the interface of applications.
 
 ## In Reactive Web and Mobile
 

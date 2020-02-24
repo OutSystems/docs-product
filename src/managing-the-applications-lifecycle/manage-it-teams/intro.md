@@ -8,7 +8,7 @@ tags: support-Security; support-Application_Lifecycle
 <div class="info" markdown="1">
 
 This section applies to **IT users** like OutSystems developers and Administrators.  
-To learn more about managing the **end-users** of your OutSystems applications, check [End-User Management](../../develop/security/end-user-manage/intro.md).
+To learn more about managing the **end users** of your OutSystems applications, check [End User Management](../../develop/security/end-user-manage/intro.md).
 
 </div>
 

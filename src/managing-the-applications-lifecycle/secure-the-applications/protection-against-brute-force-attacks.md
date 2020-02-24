@@ -36,7 +36,7 @@ The error message changes to: "Too many failed login attempts. Please try again 
 
 **Protecting Application Users and IT Users**
 
-The protection against brute force attacks for **application users** (i.e. end-users of your applications) described in this topic is available for all applications configured with Users as their User Provider or when using a custom User Provider cloned from Users.  
+The protection against brute force attacks for **application users** (i.e. end users of your applications) described in this topic is available for all applications configured with Users as their User Provider or when using a custom User Provider cloned from Users.  
 Check the [Configure Brute Force Protection for Application Users](<#configure-brute-force-protection>) section to learn how to configure this protection for application users.
 
 The same brute force attack protection is available by default for **IT users** when logging in to Service Center and LifeTime. Check the [Configure Brute Force Protection for IT Users](#configure-brute-force-protection-it-users) section to learn how to configure this protection for IT users.

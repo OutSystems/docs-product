@@ -382,9 +382,11 @@
     - topics:
         - href: develop/merge/concepts.md
         - href: develop/merge/merge-example.md
+    # Develop for testing
+    - href: develop/develop-test.md
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
-
+    
 # Delivering Mobile Apps
 - href: deliver-mobile/intro.md
 - topics:
@@ -625,6 +627,8 @@
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/views-and-tables.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/query-log-data.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md
+
+    - href: managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
     - href: managing-the-applications-lifecycle/data-protection.md
 
     # Containers

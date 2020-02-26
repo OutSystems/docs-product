@@ -17,7 +17,7 @@ tags: support-Application_Lifecycle
 
 The following sections contain specific information on using Pivotal Cloud Foundry (PCF) hosting technology and detailed instructions on publishing an application to PCF.
 
- ## SSL Offloading
+## SSL Offloading
 
 Make sure you have followed the instructions in [End-to-end SSL and SSL Offloading](<https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Using_OutSystems_in_Reverse_Proxy_Scenarios/03_OutSystems_configurations_in_reverse_proxy_scenarios#C_-_End-to-end_SSL_and_SSL_Offloading>). You **do not** need to follow the step instructing you to add a new record to the `OSSYS_PARAMETER` database, since the platform already does this step for you when deploying to containers.  
 If these instructions are not followed before publishing the application, you will need to republish the application and push it again to PCF.

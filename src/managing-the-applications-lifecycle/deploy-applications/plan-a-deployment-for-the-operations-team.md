@@ -5,7 +5,7 @@ tags: support-Application_Lifecycle-featured
 
 # Plan a Deployment for the Operations Team
 
-This topic describes how to collaboratively create a deployment plan, that can later be executed to deploy your applications.
+This topic describes how to collaboratively create a deployment plan, that can later be executed to deploy your applications. As such, you can control who is able to execute a deployment without losing the need of collaboration between Development and Operations teams. Particular important for use cases where you want to control who can move new releases to production after approval. To understand more how you can restrict access to execute the deploy check [How to Manage IT Users permissions](<https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_IT_Users>).
 
 In this example the eCommerce and Customer Portal apps are developed by two different teams. The teams have finished the last developments, and the apps are ready to be tested in Quality Assurance.
 

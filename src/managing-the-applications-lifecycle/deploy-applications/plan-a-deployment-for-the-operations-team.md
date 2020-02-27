@@ -15,7 +15,7 @@ Each team leader adds their application to the deployment plan, but only the ope
 
 After reaching a stable new version, the eCommerce team leader prepares the deployment plan for the eCommerce application.
 
-On the deployment summary screen, fill-in the deployment notes, and choose **Save Plan &amp; Notes**. Notice that even though team leaders have no permissions to deploy to Quality assurance, they can still create deployment plans.
+On the deployment summary screen, fill-in the deployment notes, and choose **Save Plan &amp; Notes**. Notice that even though team leaders have no permissions to deploy to Quality Assurance, they can still create deployment plans.
 
 ![](images/plan-a-deployment-for-the-operations-team-1.png)
 

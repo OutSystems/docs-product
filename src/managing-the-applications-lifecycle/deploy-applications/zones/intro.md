@@ -63,7 +63,9 @@ Deployment zones can be configured to perform one of two different kinds of depl
 
 ## Communication Between Applications in Different Deployment Zones
 
-Sometimes applications need to communicate with other applications outside of their deployment zone. To achieve this they use the deployment zone address of the second application.  
+Sometimes applications need to communicate with other applications outside of their deployment zone. To achieve this they use the deployment zone address of the second application. 
+
+This is required for features like [services](<../../../develop/reuse-and-refactor/services.md>), [processes](<../../../develop/processes/intro.md>), [timers](<../../../develop/timers/intro.md>), [emails](<../../../develop/logic/emails.md>) and for management operations performed by Service Center.
 
 ###  Example 
 
@@ -138,8 +140,4 @@ Take the following limitations into account when deploying **modules** to differ
 
 * System Components are deployed to the default deployment zone. Use the internal network configuration to limit the access to Service Center and LifeTime (available in Service Center in Administration > Security > Network Security).
 
-* Timers and Emails of a module are only available in the servers of the deployment zone where the module was deployed to.
-
-* It's not possible to call BPT-related system actions (ActivityClose, ActivityGetUrl, etc.) for activities that belong to modules in a different deployment zone.
-
-* Images, CSS files and module resource files belonging to a given module should not be accessed from another module unless they are being deployed to the exact same servers.
+* Timers and Emails of a module are only available in the servers of the deployment zone where the module was deployed to.	* Processes, Timers and Emails require that there is at least one server in the zone of the module configured to execute them.

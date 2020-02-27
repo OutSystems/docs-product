@@ -81,23 +81,11 @@ In Reactive Web and Mobile apps, this feature is not available for Aggregates in
 
 ### How to Convert an Aggregate to a SQL Element
 
-To convert an existing Aggregate to a SQL element, do the following:
+To convert an existing Aggregate to a SQL element make sure the Aggregate doesn't include any of the [limitations listed above](#limitations)
 
-1. In your action flow, double-click the Aggregate you want to convert.
-
-1. In the Aggregate window, double-click the `Executed SQL` property to open the Executed SQL window.  
-
-    ![](images/sql-1.png)
-
-1. Click the **CONVERT AGGREGATE TO SQL** button. This button is only enabled if your Aggregate doesn't include any of the [limitations listed above](#limitations).
-
-    ![](images/sql-2.png)
-
-1. Click the button **PROCEED**.
+![](images/convert-to-sql.gif)
 
 Your action flow now includes a SQL element based on the original Aggregate.
-
-![](images/sql-3.png)
 
 The original Aggregate is kept in the flow editor for your manual deletion after validating the new SQL element.
 

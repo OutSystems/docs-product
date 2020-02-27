@@ -140,4 +140,4 @@ Take the following limitations into account when deploying **modules** to differ
 
 * System Components are deployed to the default deployment zone. Use the internal network configuration to limit the access to Service Center and LifeTime (available in Service Center in Administration > Security > Network Security).
 
-* Timers and Emails of a module are only available in the servers of the deployment zone where the module was deployed to.	* Processes, Timers and Emails require that there is at least one server in the zone of the module configured to execute them.
+* Processes, Timers and Emails require that there is at least one server in the zone of the module configured to execute them.

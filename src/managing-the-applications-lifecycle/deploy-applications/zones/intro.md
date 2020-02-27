@@ -65,7 +65,7 @@ Deployment zones can be configured to perform one of two different kinds of depl
 
 Sometimes applications need to communicate with other applications outside of their deployment zone. To achieve this they use the deployment zone address of the second application. 
 
-This is required for features like [services](<../../../develop/reuse-and-refactor/services.md>), [processes](<../../../develop/processes/intro.md>), [timers](<../../../develop/timers/intro.md>), [emails](<../../../develop/logic/emails.md>) and for management operations performed by Service Center.
+This is required for features like [Services](<../../../develop/reuse-and-refactor/services.md>), [Processes](<../../../develop/processes/intro.md>), [Timers](<../../../develop/timers/intro.md>), [Emails](<../../../develop/logic/emails.md>), and for management operations performed by Service Center.
 
 ###  Example 
 

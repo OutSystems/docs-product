@@ -5,7 +5,7 @@ tags: support-Mobile_Apps; support-webapps
 
 # Integrated Authentication
 
-OutSystems natively supports Integrated Windows Authentication so you can use a centralized management of the end users and have automatic authentication in your applications. Integrated authentication allows the end users to access applications using their domain credentials.
+OutSystems natively supports Integrated Windows Authentication (NTLM or Kerberos) so you can use a centralized management of the end users and have automatic authentication in your applications. Integrated authentication allows the end users to access applications using their domain credentials.
 
 When the end user tries to access a web screen that requires authentication, the application server returns an HTTP 401 status, signaling that the end user is trying to access a resource that requires authentication. The browser then sends the credentials the end user used to authenticate in the Windows operating system, or if unable to do so, prompts the end user to provide the credentials. From then on, the browser automatically sends the credentials when they are required, without the end user having to insert the domain credentials again.
 

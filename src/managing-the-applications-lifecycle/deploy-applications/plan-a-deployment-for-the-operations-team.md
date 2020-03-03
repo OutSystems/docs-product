@@ -5,7 +5,7 @@ tags: support-Application_Lifecycle-featured
 
 # Plan a Deployment for the Operations Team
 
-In organizations following enterprise-grade security policies, you typically need to control who can deploy new releases to quality or production after approval. OutSystems enables your development and operation teams to collaborate in this process.
+In organizations following enterprise-grade security policies, you typically need to control who can deploy new releases to Quality Assurance or Production after approval. OutSystems enables your development and operation teams to collaborate in this process.
 
 This topic describes how the development team can collaboratively create a deployment plan to be later executed by the operations team to deploy the applications.
 

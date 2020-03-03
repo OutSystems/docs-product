@@ -4,9 +4,9 @@ summary: Learn how Screen Templates work.
 
 # How Screen Templates work
 
-OutSystems Screen Templates provide several benefits. They abstract the UI patterns and ensure the consistency of look and feel, enabling you to speed up the work of developers who create Screens in mobile and web apps.
+OutSystems Screen Templates provide several benefits. Screen Templates abstract the UI patterns and ensure the consistency of look and feel, enabling you to speed up the work of developers who create Screens in apps.
 
-It is important that you, as a Screen Template creator, understand how Screen Templates work. The flexibility of Service Studio as an IDE requires of you knowledge of some key concepts, to deliver Screen Templates which developers can use to create Screens of solid UX characteristics and performance.
+It is important that you, as a Screen Template creator, understand how Screen Templates work. The flexibility of Service Studio as an IDE requires of you knowledge of the key concepts, to deliver Screen Templates which developers can use to create Screens of solid UX characteristics and performance.
 
 ## Screen Template structure
 
@@ -26,7 +26,7 @@ How the Screen elements are instantiated depends on where they are in the Screen
 
 The Screen Template Theme must be referenced in the hierarchy of the target module Theme. If that is not the case, the developers see a Theme compatibility warning because there are no guarantees that the Theme in the target module contains the CSS classes needed for the UI Patterns of the Screen.
 
-The Theme of the target module is determined by the Theme defined in the Application Template which can implement different UI frameworks. This means, for example, that the Traditional Web Applications based on the Silk UI Framework Application Templates are incompatible with the Screen Templates created for OutSystems UI Framework.
+The Theme of the target module is determined by the Theme defined in the App Template. App Template can implement different UI frameworks. This means, for example, that the Traditional Web Apps based on the Silk UI App Templates are incompatible with the Screen Templates created for OutSystems UI.
 
 ## Screen instantiation
 
@@ -39,11 +39,11 @@ When a developer confirms the creation of a Screen based on a Screen Template, S
 
 Here is a simplified overview of the Screen Template instantiation:
 
-  1. Developers are developing an application and decide to insert the About page.
-  2. They open a **New Screen** dialog, select "About Company" Screen Template and confirm the selection. In the background, Service Studio changes the structure of this Screen to match the application structure.
-  3. A new About Screen is available for the developers in the application.
+  1. Developers are developing an app and decide to insert the About page.
+  2. They open a **New Screen** dialog, select "About Company" Screen Template and confirm the selection. In the background, Service Studio changes the structure of this Screen to match the app structure.
+  3. A new About Screen is available for the developers in the app.
 
-![](images/template-instantiation.png)
+![Overview of Screen instantiation](images/template-instantiation.png)
 
 ## The Replace Data feature
 
@@ -54,16 +54,16 @@ Screen Templates come with the feature that enables the developers to replace th
  * Table
  * List
 
-If you want other UI containers to support the Data Replacement, add the `servicestudio-showRecord` Property and set it to **True** in the **Extended Properties** pane. Keep in mind that the Replace Data accelerators do not work with the mixed data sources. For example, local Entity in a Mobile development cannot replace the sample data in Screen Template that originates from the server.
+If you want other UI containers to support the Data Replacement, add the `servicestudio-showRecord` Property and set it to **True** in the **Extended Properties** pane.
 
-The Replace Data algorithm works with data sources in the Screen Template, and this data can originate from OutSystems Sample Data modules or your own data modules. This dictates the level of logic you can implement to edit the data in Screens. In general, knowing the data model in the target module enables you to create business logic that can support some advanced features.    
+The Replace Data algorithm works with data sources in the Screen Template, and this data can originate from OutSystems Sample Data modules or your data modules. This dictates the level of logic you can implement to edit the data in Screens. In general, knowing the data model in the target module enables you to create business logic that can support some advanced features.    
 
 ## Sample Data
 
-The built-in Screen Templates use the [Sample Data](<sample-data.md>) that you can manage and reuse in your development. You can also use your own data in Screen Templates, as long as it's public in the environment.
+The built-in Screen Templates use the [Sample Data](<sample-data.md>) that you can manage and reuse in your development. You can also use your data in Screen Templates, as long as it's public in the environment.
 
 ## Screen Templates availability in the environment
 
 The Screen Templates you create are available to all developers logged into the environment. For all the developers who have Service Studio open when you add a Screen Template, that Screen Template is available to them after they refresh the Screen Templates list. They can do it by clicking the refresh message in the **New Screen**.
 
-![](images/refresh-list.png)
+![Screen Templates window](images/refresh-list.png)

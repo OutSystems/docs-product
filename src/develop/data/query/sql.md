@@ -23,7 +23,7 @@ Output Structure is mandatory. You need to define the structure (data types of t
 To reference an entity in your SQL query write it between curly brackets (e.g. `{User}`) and to reference an entity attribute write it between square brackets (e.g. `[PhoneNumber]`).
 
 
-## Write Your Own SQL Query
+## Write your own SQL query
 
 Do the following:
 
@@ -31,16 +31,26 @@ Do the following:
 1. If necessary, define the query parameters.
 1. Write the SQL query.
 1. Define the output structure used for the output of the SQL node.
+
+    <div class="info" markdown="1">
+
+    The Output Structure/Entity must match the results of your SQL statement, in the same order and with matching data types.
+    If your SQL statement does not return any results you must still define an Output Entity/Structure.
+
+    </div>
+    
 1. Use the output list of the SQL node to access the result of the SQL query.
 
-## Test Your SQL Query
-You can test your work by clicking the `TEST` button located at the bottom of the SQL editor. In order to test it successfully make sure that:
-1. If you have `Query Parameters` you should first assign a test value in the Test Inputs tab.
+## Test your SQL query
 
-    _If no values are assigned, the query will be tested with empty values._
-    
-1. There is one or more output entities/structures that will match the attributes on the `SELECT` statement.
-1. Click **TEST**.
+Test your SQL query by clicking the **TEST** button in the SQL editor. 
+
+<div class="info" markdown="1">
+
+If your SQL query uses a Query Parameters, set a Test Value for the parameter in the **Test Inputs** tab. 
+If you don't set a test value, the query is tested with the empty value for the data type.
+
+</div>
 
 ![Test Your SQL Query](images/test-sql.gif)
 
@@ -90,16 +100,21 @@ The option to convert an Aggregate to a SQL element will only be available if yo
 
 In Reactive Web and Mobile apps, this feature is not available for Aggregates in Client Actions or Screens.
 
-### How to Convert an Aggregate to a SQL Element
+### How to convert an Aggregate to a SQL element
 
 To convert an existing Aggregate to a SQL element follow these steps:	
 
 1. In your action flow, double-click the Aggregate you want to convert.	
-1. In the Aggregate window, double-click the `Executed SQL` property to open the Executed SQL window.  	
-1. Click **CONVERT AGGREGATE TO SQL**. 
-<div class="info" markdown="1">
-The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed above](#limitations).
-</div>	
+1. In the Aggregate windown, click **Filters**.
+1. In the Property pane, double-click **Executed SQL**.  	
+1. Click **CONVERT AGGREGATE TO SQL**.
+
+    <div class="info" markdown="1">
+    
+    The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed above]     (#limitations).
+    
+    </div>
+    
 1. Click **PROCEED**.
 
 ![Convert an Aggregate to SQL](images/convert-to-sql.gif)

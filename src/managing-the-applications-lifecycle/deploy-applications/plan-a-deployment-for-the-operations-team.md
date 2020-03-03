@@ -5,11 +5,15 @@ tags: support-Application_Lifecycle-featured
 
 # Plan a Deployment for the Operations Team
 
-This topic describes how to collaboratively create a deployment plan, that can later be executed to deploy your applications.
+In organizations following enterprise-grade security policies, you typically need to control who can deploy new releases to quality or production after approval. OutSystems enables your development and operation teams to collaborate in this process.
+
+This topic describes how the development team can collaboratively create a deployment plan to be later executed by the operations team to deploy the applications.
 
 In this example the eCommerce and Customer Portal apps are developed by two different teams. The teams have finished the last developments, and the apps are ready to be tested in Quality Assurance.
 
 Each team leader adds their application to the deployment plan, but only the operations team has permissions to deploy applications to Quality Assurance.
+
+To learn how to set up the permissions in your teams to comply with your deployment process, check [Understand the Permission Model for IT Users](../manage-it-teams/about-permission-levels.md).
 
 ## Create a Deployment Plan
 

@@ -16,7 +16,7 @@ In this example we want to understand who has access to the application Mobile B
 
 1. Click the **Permissions** link.  
 
-    ![](images/lt-find-out-the-permissions-of-it-users-1.png?width=950)
+    ![](images/users-permissions-app-lt.png?width=950)
 
 On this page, we can see:
 
@@ -32,7 +32,7 @@ In this example we want to understand the permissions that a specific user has, 
 
 1. In the **USERS** screen, find the user and click the Name of the user to go to the details page.  
 
-    ![](images/lt-find-out-the-permissions-of-it-users-2.png?width=950)
+    ![](images/users-permissions-user-lt.png?width=950)
 
 On this page, we can see that:
 

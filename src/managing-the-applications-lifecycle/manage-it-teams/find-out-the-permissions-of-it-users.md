@@ -16,7 +16,7 @@ In this example we want to understand who has access to the application Mobile B
 
 1. Click the **Permissions** link.  
 
-    ![](images/users-permissions-app-lt.png?width=950)
+    ![](images/users-permissions-app-lt.png)
 
 On this page, we can see:
 
@@ -32,12 +32,12 @@ In this example we want to understand the permissions that a specific user has, 
 
 1. In the **USERS** screen, find the user and click the Name of the user to go to the details page.  
 
-    ![](images/users-permissions-user-lt.png?width=950)
+    ![](images/users-permissions-user-lt.png)
 
 On this page, we can see that:
 
 * The **default role** of the user grants him access to the Development environment, but no access to any application. Also, it grants No Access to Quality and Production environments.
 
-* The user has Architect **role in the team** Intranet, which grants him Change and Deploy permission in the Development environment over the applications that the team manages, Directory and Fleet Management. Over the same applications, the user has Monitor and Reference permission in the Quality environment and No Access in the Production environment.
+* The user has Architect **role in the team** Intranet, which grants him Change and Deploy permission in the Development environment over the applications that the team manages, Directory and Fleet Management. Over the same applications, the user has Monitor and Add Dependencies permission in the Quality environment and No Access in the Production environment.
 
-* The user has been given **specific access** to Mobile Banking application with role Business Monitoring, which grants the user Monitor and Reference permission over this application in the Development and Quality environments, but No Access to the application in the Production environment.
+* The user has been given **specific access** to Mobile Banking application with role Business Monitoring, which grants the user Monitor and Add Dependencies permission over this application in the Development and Quality environments, but No Access to the application in the Production environment.

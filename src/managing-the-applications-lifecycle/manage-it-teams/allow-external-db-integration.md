@@ -12,11 +12,11 @@ To do this:
 
 1. [Create a new role](create-an-it-role.md#create-a-new-role) that has the permission level **Change and Deploy Applications**.  
 
-    ![](images/external-db-integration-new-role-lt.png?width=450)
+    ![](images/external-db-integration-new-role-lt.png?width=500)
 
 1. [Set the developer's default role](create-an-it-role.md#set-the-user-default-role) to the new role.  
 
-    ![](images/external-db-integration-set-default-role-lt.png?width=450)
+    ![](images/external-db-integration-set-default-role-lt.png?width=500)
 
 1. Go to the environment's Service Center console (`http://<your_environment>/ServiceCenter`) and select **Administration » Database Connections**.
 

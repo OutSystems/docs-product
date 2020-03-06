@@ -22,14 +22,13 @@ Output parameters
 Output Structure
 :   Output Structure is mandatory. You need to define the structure (data types of the columns) that your query returns. You can use any combination of Entities, Structures or both, but the attribute order/data type must match your Select. Output Structure is needed even if your SQL statement does not return any results. 
 
-    * Example 1: When selecting all attributes of the Employee Entity (`Id`, `Name`, `Email`, `PhoneNumber`), 
+    * Example 1: When selecting all attributes of the Employee Entity (with `Id`, `Name`, `Email`, and `PhoneNumber` attributes), 
     specify the Employee Entity as the Output Structure. This enforces that List output parameter of the SQL 
     query returns Employee List data type.
     
-    * Example 2: When selecting only the `Name` and `Email` of the Employee Entity, create a Structure 
-    (e.g. EmployeeInfo) to hold the attributes you need and use it as the Output Structure. Be sure to put the 
-    SELECT attribute order to match the data type and order of the EmployeeInfo Structure attributes. This 
-    enforces that List output parameter of the SQL query returns EmployeeInfo List data type.   
+    * Example 2: When selecting only the `Name` and `Email` of the same Employee Entity, create a Structure 
+    (named EmployeeInfo) to hold the attributes you need and use it as the Output Structure. The data type and order of the attributes in the SELECT statement must match the data type and order of the atributes of the EmployeeInfo Structure. This 
+    enforces that List output parameter of the SQL query returns EmployeeInfo List data type. 
 
 To reference an entity in your SQL query write it between curly brackets (e.g. `{User}`) and to reference an entity attribute write it between square brackets (e.g. `[PhoneNumber]`).
 

@@ -14,6 +14,12 @@
     - "Cache Invalidation in OutSystems 11": 
         https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Cache_Invalidation_in_OutSystems_11
 
+# Actions in Reactive Web and Mobile Apps
+- develop/logic/actions.md:
+    - external:
+            - "A course about Logic in Training":
+                https://www.outsystems.com/learn/courses/125/logic/
+
 # Validate Form Inputs
 - develop/ui/forms/form-validate.md:
   - ref/lang/auto/Class.Mobile Module.final.md
@@ -659,6 +665,10 @@
     - develop/logic/action-web.md#server-actions
     - ref/lang/auto/Class.Run Server Action.final.md
     - develop/reuse-and-refactor/encapsulate-logic.md
+    - external:
+        - "A course about Logic in Training":
+            https://www.outsystems.com/learn/courses/125/logic/
+
 
 #     Role
 -  ref/lang/auto/Class.Role.final.md:

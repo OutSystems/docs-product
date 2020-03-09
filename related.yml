@@ -1,7 +1,8 @@
 # Developing an Application
 - develop/intro.md:
-  - getting-started/create-web.md
+  - getting-started/create-reactive-web.md
   - getting-started/create-mobile.md
+  - getting-started/create-web.md
 
 # Download a file through browser
 - develop/data/download-file-browser.md:
@@ -1148,10 +1149,11 @@
         - "Training video - Block Events":
             https://www.outsystems.com/learn/lesson/1902/block-events/?LearningPathId=18
 
-- develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md:
+- develop/ui/reuse/block-communicate.md:
     - external:
         - "Training video - Block Events":
             https://www.outsystems.com/learn/lesson/1902/block-events/?LearningPathId=18
+
 
 # Links to Forge
 

@@ -5,7 +5,7 @@ tags: support-application_development; support-Integrations_Extensions
 
 # REST API Authentication
 
-To invoke the REST methods of [LifeTime Deployment API](<../auto/lifetime-deployment-api-v2.final.md>) you will need a special type of account, called a **service account**.
+To invoke the REST methods of [LifeTime API](<../auto/lifetime-deployment-api-v2.final.md>) you will need a special type of account, called a **service account**.
 
 A service account is a special account created in LifeTime used in machine-to-machine interactions with OutSystems. Service accounts follow the same permission model of regular user accounts, using roles and teams to define access privileges.
 

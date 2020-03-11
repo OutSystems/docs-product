@@ -54,7 +54,7 @@ API Name | Available As | Description
 
 API Name | Available As | Description
 ---|---|---
-[LifeTime Deployment API](auto/lifetime-deployment-api-v2.final.md) | REST API | Allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure.  
+[LifeTime API](auto/lifetime-deployment-api-v2.final.md) | REST API | Allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure.  
 [LifeTime Services API](auto/lifetime-services-api.final.md) | SOAP web services | Provides you functionality to manage the infrastructure made available by OutSystems.
 [LifeTime SDK](auto/lifetime-sdk.final.md) | Referenced module | API for extending the LifeTime functionality including developing your own plug-ins.
 

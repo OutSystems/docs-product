@@ -237,7 +237,6 @@ tags: support-application_development; support-Application_Lifecycle; support-de
         }
 
         .json-property-type {
-            font-style: italic;
             font-weight: 100
         }
 
@@ -570,7 +569,7 @@ https
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
 <tr>
-<th>Operation</th>
+<th>Endpoint</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -607,7 +606,7 @@ https
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
 <tr>
-<th>Operation</th>
+<th>Endpoint</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -656,7 +655,7 @@ https
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
 <tr>
-<th>Operation</th>
+<th>Endpoint</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -697,7 +696,7 @@ https
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
 <tr>
-<th>Operation</th>
+<th>Endpoint</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -726,7 +725,7 @@ https
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
 <tr>
-<th>Operation</th>
+<th>Endpoint</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -763,7 +762,7 @@ https
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
 <tr>
-<th>Operation</th>
+<th>Endpoint</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -812,7 +811,7 @@ https
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
 <tr>
-<th>Operation</th>
+<th>Endpoint</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -847,7 +846,7 @@ https
 </tr>
 </tbody>
 </table>
-<h2>Paths</h2>
+<h2>Endpoints</h2>
 <span id="path--applications-"></span>
 <div id="operation--applications--get" class="swagger--panel-operation-get panel">
 <div class="panel-heading">
@@ -7512,7 +7511,7 @@ UserKey
 </section>
 </div>
 </div>
-<h2>Schema definitions</h2>
+<h2>Structures</h2>
 <div id="definition-Application" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/Application"></a>Application:
@@ -9158,6 +9157,7 @@ UserKey
 </h3>
 </div>
 <div class="panel-body">
+
 <section class="json-schema-description">
 <p>Definition of Environment Permissions</p>
 </section>

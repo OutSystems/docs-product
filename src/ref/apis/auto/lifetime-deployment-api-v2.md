@@ -54,7 +54,7 @@ tags: support-application_development; support-Application_Lifecycle; support-de
             font-weight: bold;
             color: #555;
             text-transform: uppercase;
-            content: "Items";
+            content: "List of";
             padding-bottom: .5em;
             display: block
         }
@@ -535,11 +535,6 @@ tags: support-application_development; support-Application_Lifecycle; support-de
             font-size: smaller;
             content: "(HTTP Basic Authentication)"
         }
-
-        span.sw-default-value-header {
-            font-weight: bold
-        }
-
         .sw-info {
             font-weight: bold
         }
@@ -549,20 +544,25 @@ tags: support-application_development; support-Application_Lifecycle; support-de
             font-weight: normal;
             font-size: 1.1em
         }
+                .sw-responses p {
+            margin-bottom: 0px !important;
+        }
+        .sw-responses dd {
+            margin-bottom: 10px !important;
+        }
 </pre>
 
 # LifeTime REST API
 
-<p class="sw-info">
-Base URL: <span class="sw-info-basePath">/lifetimeapi/rest/v2</span>,
-Version: <span class="sw-info-version">v2</span>
-</p>
-<p><p>The Deployment API allows you to manage applications, modules, environments, deployments, users, team and roles of your OutSystems infrastructure.</p>
-</p>
-<div id="sw-schemes" class="sw-default-value">
-<span class="sw-default-value-header">Schemes:</span>
-https
-</div>
+Base URL
+:    `/lifetimeapi/rest/v2`
+
+Version
+:    v2
+
+Scheme
+:   https
+
 <h2 id="swagger--summary-tags">Summary</h2>
 <h3 id="tag--applications" class="swagger-summary-tag">/applications</h3>
 <p class="sw-tag-external-doc"></p>
@@ -912,12 +912,12 @@ IncludeEnvStatus
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>A list of Application records including AppStatusInEnv sub-lists, if requested.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -937,12 +937,12 @@ IncludeEnvStatus
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No applications available in the infrastructure.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -950,12 +950,12 @@ IncludeEnvStatus
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve applications because IncludeModules was requested but IncludeEnvStatus was not, or invalid request when listing all applications.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -967,12 +967,12 @@ IncludeEnvStatus
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to list the applications.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1062,12 +1062,12 @@ IncludeEnvStatus
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>An Application record including an AppStatusInEnv sub-list, if requested.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1079,12 +1079,12 @@ IncludeEnvStatus
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve applications because IncludeModules and IncludeEnvStatus parameters were incorrect.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1096,12 +1096,12 @@ IncludeEnvStatus
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed listing all applications because user has insufficient permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1113,12 +1113,12 @@ IncludeEnvStatus
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed getting running applications because one of the environments was not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1130,12 +1130,12 @@ IncludeEnvStatus
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the application.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1225,12 +1225,12 @@ MaximumVersionsToReturn
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>A list of ApplicationVersion records.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1250,12 +1250,12 @@ MaximumVersionsToReturn
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Invalid request due to invalid max versions to return (less than 0).</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1267,12 +1267,12 @@ MaximumVersionsToReturn
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the application with key <code>&lt;ApplicationKey&gt;</code>. The user does not have the required permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1284,12 +1284,12 @@ MaximumVersionsToReturn
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the application with key <code>&lt;ApplicationKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1301,12 +1301,12 @@ MaximumVersionsToReturn
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to list the application versions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1381,12 +1381,12 @@ VersionKey
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Application version successfully deleted.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -1394,12 +1394,12 @@ VersionKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Service Account doesn&#39;t have permissions to delete the specified application version.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1411,12 +1411,12 @@ VersionKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Application or application version not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1428,12 +1428,12 @@ VersionKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to delete application version <code>&lt;VersionKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1524,12 +1524,12 @@ VersionKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>An ApplicationVersion record.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1541,12 +1541,12 @@ VersionKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the application with key <code>&lt;ApplicationKey&gt;</code>. The user does not have the required permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1558,12 +1558,12 @@ VersionKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the application with key <code>&lt;ApplicationKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1575,12 +1575,12 @@ VersionKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the application version.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1657,12 +1657,12 @@ VersionKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>The link for the application binary file.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1699,12 +1699,12 @@ Expires</td>
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No binary available for given keys.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -1712,12 +1712,12 @@ Expires</td>
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>The request is invalid for the given keys (Application:<code>&lt;ApplicationKey&gt;</code>; ApplicationVersionKey <code>&lt;ApplicationVersionKey&gt;</code>).</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1729,12 +1729,12 @@ Expires</td>
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User doesn’t have permissions for the given keys (Application:<code>&lt;ApplicationKey&gt;</code>; ApplicationVersionKey <code>&lt;ApplicationVersionKey&gt;</code>).</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1746,12 +1746,12 @@ Expires</td>
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the application with key <code>&lt;ApplicationKey&gt;</code> or the application version with key <code>&lt;ApplicationVersionKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1763,12 +1763,12 @@ Expires</td>
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to download the oap of the application version.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1857,12 +1857,12 @@ TargetEnvironmentKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployments list successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1882,12 +1882,12 @@ TargetEnvironmentKey
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>There are no deployments created between <code>&lt;MinDate&gt;</code> and <code>&lt;MaxDate&gt;</code> for environment key <code>&lt;TargetEnvironmentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -1895,12 +1895,12 @@ TargetEnvironmentKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Invalid request for list of deployments created between <code>&lt;MinDate&gt;</code> and <code>&lt;MaxDate&gt;</code> for environment key <code>&lt;TargetEnvironmentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1912,12 +1912,12 @@ TargetEnvironmentKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User doesn&#39;t have access to any environment.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1929,12 +1929,12 @@ TargetEnvironmentKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to list the deployments.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -1960,7 +1960,7 @@ Go to
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 
 </p>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>A Deployment record.</p>
 </p>
@@ -1981,12 +1981,12 @@ Go to
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment successfully created.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2000,12 +2000,12 @@ Go to
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Invalid request.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2017,12 +2017,12 @@ Go to
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Invalid user permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2034,12 +2034,12 @@ Go to
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Source or target environment not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2051,12 +2051,12 @@ Go to
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to create deployment from environment <code>&lt;SourceEnvironmentKey&gt;</code> to environment <code>&lt;TargetEnvironmentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2116,12 +2116,12 @@ DeploymentKey
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment successfully deleted.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -2129,12 +2129,12 @@ DeploymentKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment with key <code>&lt;DeploymentKey&gt;</code> cannot be deleted</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2146,12 +2146,12 @@ DeploymentKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Service Account doesn&#39;t have permissions to the deployment with key <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2163,12 +2163,12 @@ DeploymentKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment with key <code>&lt;DeploymentKey&gt;</code> not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2180,12 +2180,12 @@ DeploymentKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to delete deployment <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2246,12 +2246,12 @@ DeploymentKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment details successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2263,12 +2263,12 @@ DeploymentKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User doesn&#39;t have permissions to the deployment with key <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2280,12 +2280,12 @@ DeploymentKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment with key <code>&lt;DeploymentKey&gt;</code> not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2297,12 +2297,12 @@ DeploymentKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to access the details of deployment with key <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2328,7 +2328,7 @@ Go to
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 
 </p>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The deployment information to update.</p>
 </p>
@@ -2379,12 +2379,12 @@ DeploymentKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment successfully updated.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2396,12 +2396,12 @@ DeploymentKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Invalid request.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2413,12 +2413,12 @@ DeploymentKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Invalid user permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2430,12 +2430,12 @@ DeploymentKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment plan not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2447,12 +2447,12 @@ DeploymentKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to update deployment with key <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2514,12 +2514,12 @@ DeploymentKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment status successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2531,12 +2531,12 @@ DeploymentKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User doesn&#39;t have permissions to the deployment with key <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2548,12 +2548,12 @@ DeploymentKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment with key <code>&lt;DeploymentKey&gt;</code> not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2565,12 +2565,12 @@ DeploymentKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the status of the deployment with key <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2659,12 +2659,12 @@ RedeployOutdated
 202 Accepted
 </dt>
 <dd class="sw-response-202">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Command <code>&lt;Command&gt;</code> executed successfully for deployment <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -2672,12 +2672,12 @@ RedeployOutdated
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Command <code>&lt;Command&gt;</code> can&#39;t be executed for deployment <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2689,12 +2689,12 @@ RedeployOutdated
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Service Account doesn&#39;t have permissions to the deployment with key <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2706,12 +2706,12 @@ RedeployOutdated
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment with key <code>&lt;DeploymentKey&gt;</code> not found, or command not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2723,12 +2723,12 @@ RedeployOutdated
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to execute command <code>&lt;Command&gt;</code> for deployment with key <code>&lt;DeploymentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2760,12 +2760,12 @@ Go to
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Environments list successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2785,12 +2785,12 @@ Go to
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No environments found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -2798,12 +2798,12 @@ Go to
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to list the environments.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2865,12 +2865,12 @@ EnvironmentKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Environment details successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2882,12 +2882,12 @@ EnvironmentKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the environment with key: <code>&lt;EnvironmentKey&gt;</code>. The user does not have the required permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2899,12 +2899,12 @@ EnvironmentKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the environment with key: <code>&lt;EnvironmentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -2916,12 +2916,12 @@ EnvironmentKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to access the details of environment.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3011,12 +3011,12 @@ IncludeEnvStatus
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Applications list for the given environment successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3036,12 +3036,12 @@ IncludeEnvStatus
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No applications found in environment with key <code>&lt;EnvironmentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -3049,12 +3049,12 @@ IncludeEnvStatus
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve applications published in environment because IncludeModules and IncludeEnvStatus parameters were incorrect, or Invalid request when getting running applications for environment with key <code>&lt;EnvironmentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3066,12 +3066,12 @@ IncludeEnvStatus
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the running applications for environment with key <code>&lt;EnvironmentKey&gt;</code> because user has insufficient permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3083,12 +3083,12 @@ IncludeEnvStatus
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve running applications for environment with key <code>&lt;EnvironmentKey&gt;</code> because it was not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3112,7 +3112,7 @@ Go to
 <p>Creates a new application in the environment.</p>
 </section>
 <section class="sw-request-body">
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>A structure holding the name, description and other attributes of the new application.</p>
 </p>
@@ -3163,12 +3163,12 @@ EnvironmentKey
 201 Created
 </dt>
 <dd class="sw-response-201">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>The key of the newly created application.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3180,12 +3180,12 @@ EnvironmentKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to create application due to invalid application name, runtime kind, template, color or team.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3197,12 +3197,12 @@ EnvironmentKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to create an application because user has insufficient permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3214,12 +3214,12 @@ EnvironmentKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to create an application for environment with key <code>&lt;EnvironmentKey&gt;</code> because it was not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3231,12 +3231,12 @@ EnvironmentKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to create application due to an internal error.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3341,12 +3341,12 @@ IncludeModules
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Application information successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3358,12 +3358,12 @@ IncludeModules
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Request asked for Modules but not for Status.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3375,12 +3375,12 @@ IncludeModules
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User doesn’t have permissions for the given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3392,12 +3392,12 @@ IncludeModules
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the environment with key <code>&lt;EnvironmentKey&gt;</code> or the application with key <code>&lt;ApplicationKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3409,12 +3409,12 @@ IncludeModules
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to access the running version of an application.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3505,12 +3505,12 @@ Type
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Binary file download link successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3547,12 +3547,12 @@ Expires</td>
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No binary available for given type and keys.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3564,12 +3564,12 @@ Expires</td>
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>The required type <code>&lt;Type&gt;</code> is invalid for given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3581,12 +3581,12 @@ Expires</td>
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User doesn’t have permissions for the given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3598,12 +3598,12 @@ Expires</td>
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the environment with key <code>&lt;EnvironmentKey&gt;</code> or the application with key <code>&lt;ApplicationKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3615,12 +3615,12 @@ Expires</td>
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to download <code>&lt;Type&gt;</code> of an application.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3647,7 +3647,7 @@ Go to
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 
 </p>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>A structure holding the new version name for the application and for its native applications, if applicable.</p>
 </p>
@@ -3713,12 +3713,12 @@ ApplicationKey
 201 Created
 </dt>
 <dd class="sw-response-201">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Application version successfully created.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3730,12 +3730,12 @@ ApplicationKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Invalid request.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3747,12 +3747,12 @@ ApplicationKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Invalid user permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3764,12 +3764,12 @@ ApplicationKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Environment or application not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3781,12 +3781,12 @@ ApplicationKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to tag an application, or Failed to create a new version for application <code>&lt;ApplicationName&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3848,12 +3848,12 @@ EnvironmentKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Deployment zone information successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3873,12 +3873,12 @@ EnvironmentKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to access the deployment zones of environment.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3890,12 +3890,12 @@ EnvironmentKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the deployment zones of environment <code>&lt;EnvironmentName&gt;</code> (key: <code>&lt;EnvironmentKey&gt;</code>). Error: The user does not have the required permissions, or Feature not Licensed.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3907,12 +3907,12 @@ EnvironmentKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the deployment zones of environment with key: <code>&lt;EnvironmentKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3924,12 +3924,12 @@ EnvironmentKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to access the deployment zones of environment.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -3991,12 +3991,12 @@ EnvironmentKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>A list of Templates.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4016,12 +4016,12 @@ EnvironmentKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Environment doesn&#39;t support list templates.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4033,12 +4033,12 @@ EnvironmentKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User doesn&#39;t have permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4050,12 +4050,12 @@ EnvironmentKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Environment not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4067,12 +4067,12 @@ EnvironmentKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4133,12 +4133,12 @@ IncludeEnvStatus
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Modules list successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4158,12 +4158,12 @@ IncludeEnvStatus
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No modules found in the infrastructure.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -4171,12 +4171,12 @@ IncludeEnvStatus
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to list modules.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4252,12 +4252,12 @@ IncludeEnvStatus
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Module details successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4269,12 +4269,12 @@ IncludeEnvStatus
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the module with key: <code>&lt;ModuleKey&gt;</code>. The user does not have the required permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4286,12 +4286,12 @@ IncludeEnvStatus
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the module with key: <code>&lt;ModuleKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4303,12 +4303,12 @@ IncludeEnvStatus
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the module with key <code>&lt;ModuleKey&gt;</code></p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4384,12 +4384,12 @@ MaximumVersionsToReturn
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>List of module versions successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4409,12 +4409,12 @@ MaximumVersionsToReturn
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Invalid request due to invalid max versions to return (less than 0).</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4426,12 +4426,12 @@ MaximumVersionsToReturn
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the module with key: <code>&lt;ModuleKey&gt;</code>. The user does not have the required permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4443,12 +4443,12 @@ MaximumVersionsToReturn
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the module with key: <code>&lt;ModuleKey&gt;</code>.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4460,12 +4460,12 @@ MaximumVersionsToReturn
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to list module versions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4542,12 +4542,12 @@ ModuleVersionKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Module version details successfully retrieved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4559,12 +4559,12 @@ ModuleVersionKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the module with key: <code>&lt;ModuleKey&gt;</code>. The user does not have the required permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4576,12 +4576,12 @@ ModuleVersionKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to retrieve the module with key: <code>&lt;ModuleKey&gt;</code>, or Failed to retrieve the module version with key: <code>&lt;ModuleKey&gt;</code></p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4593,12 +4593,12 @@ ModuleVersionKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to access the details of a module version.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4659,12 +4659,12 @@ IncludeEnvPermissions
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>List of Roles</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4676,12 +4676,12 @@ IncludeEnvPermissions
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User has no permissions to retrieve roles list.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4693,12 +4693,12 @@ IncludeEnvPermissions
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4724,7 +4724,7 @@ Go to
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 
 </p>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The role to be created.</p>
 </p>
@@ -4745,12 +4745,12 @@ Go to
 201 Created
 </dt>
 <dd class="sw-response-201">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Role created with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4764,12 +4764,12 @@ Go to
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to create role because invalid role name, role is protected, wrong combination of infrastructure and manage teams flags or not defined/wrong permissions for all environments.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4781,12 +4781,12 @@ Go to
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to create a new role.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4798,12 +4798,12 @@ Go to
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4835,12 +4835,12 @@ Go to
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>List of permission levels.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4852,12 +4852,12 @@ Go to
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to manage users and roles.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4869,12 +4869,12 @@ Go to
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4948,12 +4948,12 @@ UsersNewRoleKey
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Role deleted with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -4961,12 +4961,12 @@ UsersNewRoleKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Role can&#39;t be deleted because it is reserved.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4978,12 +4978,12 @@ UsersNewRoleKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to delete the role.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -4995,12 +4995,12 @@ UsersNewRoleKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Role not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5012,12 +5012,12 @@ UsersNewRoleKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5092,12 +5092,12 @@ IncludeEnvPermissions
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Record of Role</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5109,12 +5109,12 @@ IncludeEnvPermissions
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User doesn&#39;t have permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5126,12 +5126,12 @@ IncludeEnvPermissions
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Role not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5143,12 +5143,12 @@ IncludeEnvPermissions
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5174,7 +5174,7 @@ Go to
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 
 </p>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The role to be update.</p>
 </p>
@@ -5225,12 +5225,12 @@ RoleKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Role updated with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5244,12 +5244,12 @@ RoleKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to update role because invalid role name, role is protected, wrong combination of infrastructure and manage teams flags or not defined/wrong permissions for all environments.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5261,12 +5261,12 @@ RoleKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to update the role.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5278,12 +5278,12 @@ RoleKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Role not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5295,12 +5295,12 @@ RoleKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5375,12 +5375,12 @@ IncludeApplications
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>List of Teams</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5400,12 +5400,12 @@ IncludeApplications
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No teams defined</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -5413,12 +5413,12 @@ IncludeApplications
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User has no permissions to retrieve teams list.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5430,12 +5430,12 @@ IncludeApplications
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5459,7 +5459,7 @@ Go to
 <p>Creates a team with the specified details. The operation only creates the team. Users and Applications should be associated using specific endpoints.</p>
 </section>
 <section class="sw-request-body">
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The team to be created.</p>
 </p>
@@ -5478,12 +5478,12 @@ Go to
 201 Created
 </dt>
 <dd class="sw-response-201">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team created with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5495,12 +5495,12 @@ Go to
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to create team due to invalid team name.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5512,12 +5512,12 @@ Go to
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to create a new team.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5529,12 +5529,12 @@ Go to
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5594,12 +5594,12 @@ TeamKey
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team deleted with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -5607,12 +5607,12 @@ TeamKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to delete a team.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5624,12 +5624,12 @@ TeamKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5641,12 +5641,12 @@ TeamKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5733,12 +5733,12 @@ IncludeApplications
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Record of Team</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5750,12 +5750,12 @@ IncludeApplications
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User don&#39;t have permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5767,12 +5767,12 @@ IncludeApplications
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5784,12 +5784,12 @@ IncludeApplications
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5813,7 +5813,7 @@ Go to
 <p>Updates a team with the specified details. The operation only affects the Team details. Users and Applications should be associated or dissociated using specific endpoints.</p>
 </section>
 <section class="sw-request-body">
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The team to be updated.</p>
 </p>
@@ -5862,12 +5862,12 @@ TeamKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team updated with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5879,12 +5879,12 @@ TeamKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to update team due to invalid team name.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5896,12 +5896,12 @@ TeamKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to update the team.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5913,12 +5913,12 @@ TeamKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5930,12 +5930,12 @@ TeamKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -5960,7 +5960,7 @@ Go to
 <p>Adds the specified application to a given team.</p>
 </section>
 <section class="sw-request-body">
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The application information to be added.</p>
 </p>
@@ -6009,12 +6009,12 @@ TeamKey
 201 Created
 </dt>
 <dd class="sw-response-201">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Application added with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -6022,12 +6022,12 @@ TeamKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to add application to team because application doesn&#39;t exist.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6039,12 +6039,12 @@ TeamKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to update the team.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6056,12 +6056,12 @@ TeamKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6073,12 +6073,12 @@ TeamKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6153,12 +6153,12 @@ ApplicationKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Application removed with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -6166,12 +6166,12 @@ ApplicationKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to remove application to team because application doesn&#39;t exist.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6183,12 +6183,12 @@ ApplicationKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to update the team.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6200,12 +6200,12 @@ ApplicationKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team or application not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6217,12 +6217,12 @@ ApplicationKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6247,7 +6247,7 @@ Go to
 <p>Adds a user to a team with a specified role.</p>
 </section>
 <section class="sw-request-body">
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The user and role information to be added.</p>
 </p>
@@ -6296,12 +6296,12 @@ TeamKey
 201 Created
 </dt>
 <dd class="sw-response-201">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User added with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -6309,12 +6309,12 @@ TeamKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to add user to team because user doesn&#39;t exist or role doesn&#39;t exist.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6326,12 +6326,12 @@ TeamKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to update the team.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6343,12 +6343,12 @@ TeamKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6360,12 +6360,12 @@ TeamKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6440,12 +6440,12 @@ UserKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User removed with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -6453,12 +6453,12 @@ UserKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to remove user from team because user doesn&#39;t exist or role doesn&#39;t exist.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6470,12 +6470,12 @@ UserKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to update the team.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6487,12 +6487,12 @@ UserKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Team or user not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6504,12 +6504,12 @@ UserKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6598,12 +6598,12 @@ IncludeApplicationRoles
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>List of Users</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6623,12 +6623,12 @@ IncludeApplicationRoles
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No Users defined</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -6636,12 +6636,12 @@ IncludeApplicationRoles
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User has no permissions to retrieve users list.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6653,12 +6653,12 @@ IncludeApplicationRoles
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6682,7 +6682,7 @@ Go to
 <p>Creates a user with the specified details. The operation only creates the user. Teams and Applications should be associated using specific endpoints.</p>
 </section>
 <section class="sw-request-body">
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The user to be created.</p>
 </p>
@@ -6701,12 +6701,12 @@ Go to
 201 Created
 </dt>
 <dd class="sw-response-201">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User created with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6720,12 +6720,12 @@ Go to
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to create user due to invalid username, name or role.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6737,12 +6737,12 @@ Go to
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to create a new user.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6754,12 +6754,12 @@ Go to
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6849,12 +6849,12 @@ includeApplicationRoles
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Record of User</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6866,12 +6866,12 @@ includeApplicationRoles
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User doesn&#39;t have permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6883,12 +6883,12 @@ includeApplicationRoles
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6900,12 +6900,12 @@ includeApplicationRoles
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -6931,7 +6931,7 @@ Go to
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 
 </p>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The user to be updated.</p>
 </p>
@@ -6982,12 +6982,12 @@ UserKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User updated with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7001,12 +7001,12 @@ UserKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to update user due to invalid username, name or role.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7018,12 +7018,12 @@ UserKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to update the user.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7035,12 +7035,12 @@ UserKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7052,12 +7052,12 @@ UserKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7084,7 +7084,7 @@ Go to
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 
 </p>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The key of the application and Role to grant permissions.</p>
 </p>
@@ -7135,12 +7135,12 @@ UserKey
 201 Created
 </dt>
 <dd class="sw-response-201">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Permissions granted with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -7148,12 +7148,12 @@ UserKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to add application to user because application or role are invalid.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7165,12 +7165,12 @@ UserKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to change User permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7182,12 +7182,12 @@ UserKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7199,12 +7199,12 @@ UserKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7285,12 +7285,12 @@ ApplicationKey
 204 No Content
 </dt>
 <dd class="sw-response-204">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Permissions revoked with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -7298,12 +7298,12 @@ ApplicationKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to change User permissions.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7315,12 +7315,12 @@ ApplicationKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User or permission not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7332,12 +7332,12 @@ ApplicationKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7364,7 +7364,7 @@ Go to
 <section class="sw-request-body">
 <p><span class="label label-default">application/json</span> 
 </p>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6">
 <p><p>The new password value.</p>
 </p>
@@ -7415,12 +7415,12 @@ UserKey
 200 OK
 </dt>
 <dd class="sw-response-200">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User password updated with success.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 </div>
 </div>                </dd>
@@ -7428,12 +7428,12 @@ UserKey
 400 Bad Request
 </dt>
 <dd class="sw-response-400">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to change password because password is invalid.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7445,12 +7445,12 @@ UserKey
 403 Forbidden
 </dt>
 <dd class="sw-response-403">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>No permissions to update the user password.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7462,12 +7462,12 @@ UserKey
 404 Not Found
 </dt>
 <dd class="sw-response-404">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>User not found.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7479,12 +7479,12 @@ UserKey
 405 Method Not Allowed
 </dt>
 <dd class="sw-response-405">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Failed to change password because external authentication provider is in use.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -7496,12 +7496,12 @@ UserKey
 500 Internal Server Error
 </dt>
 <dd class="sw-response-500">
-<div class="row">
+<div class="rowr">
 <div class="col-md-12">
 <p>Internal error raised.</p>
 </div>
 </div>
-<div class="row">
+<div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
@@ -9148,7 +9148,7 @@ UserKey
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-EnvironmentPermission" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/EnvironmentPermission"></a>EnvironmentPermission:
@@ -9159,7 +9159,6 @@ UserKey
 </h3>
 </div>
 <div class="panel-body">
-
 <section class="json-schema-description">
 <p>Definition of Environment Permissions</p>
 </section>
@@ -9228,7 +9227,7 @@ UserKey
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-Exception" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/Exception"></a>Exception:
@@ -9272,7 +9271,7 @@ UserKey
 </dl>
 </section>
 </div>
-</div>        
+</div>
 <div id="definition-MobileAppStatusInEnv" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/MobileAppStatusInEnv"></a>MobileAppStatusInEnv:
@@ -10224,7 +10223,7 @@ UserKey
 <span class="json-property-range" title="Value limits"></span>
 </dt>
 <dd>
-<p>readonly</p>
+<p><span class="json-property-read-only">readonly</span></p>
 <div class="json-inner-schema">
 </div>
 </dd>
@@ -10280,7 +10279,7 @@ UserKey
 <span class="json-property-range" title="Value limits"></span>
 </dt>
 <dd>
-<p>readonly</p>
+<p><span class="json-property-read-only">readonly</span></p>
 <div class="json-inner-schema">
 </div>
 </dd>

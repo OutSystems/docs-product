@@ -576,27 +576,28 @@ https
 <tbody>
 <tr>
 <td><a href="#operation--applications--get">GET /applications/</a></td>
-<td></td>
+<td>Returns a list of applications that exist in the infrastructure.</td>
 </tr>
 <tr>
 <td><a href="#operation--applications--ApplicationKey---get">GET /applications/{ApplicationKey}/</a></td>
-<td></td>
+<td>Returns the details of a given application.
+</td>
 </tr>
 <tr>
 <td><a href="#operation--applications--ApplicationKey--versions--get">GET /applications/{ApplicationKey}/versions/</a></td>
-<td></td>
+<td>Returns a list of versions of a given application.</td>
 </tr>
 <tr>
 <td><a href="#operation--applications--ApplicationKey--versions--VersionKey---delete">DELETE /applications/{ApplicationKey}/versions/{VersionKey}/</a></td>
-<td></td>
+<td>Discards an application version, if possible. Running versions, or versions used in Deployments cannot be deleted.</td>
 </tr>
 <tr>
 <td><a href="#operation--applications--ApplicationKey--versions--VersionKey---get">GET /applications/{ApplicationKey}/versions/{VersionKey}/</a></td>
-<td></td>
+<td>Returns the details of a given version of the specified application.</td>
 </tr>
 <tr>
 <td><a href="#operation--applications--ApplicationKey--versions--VersionKey--content--get">GET /applications/{ApplicationKey}/versions/{VersionKey}/content/</a></td>
-<td></td>
+<td>Returns a link where the binary file for a given application version can be downloaded. The link will expire in 60 minutes.</td>
 </tr>
 </tbody>
 </table>
@@ -613,39 +614,39 @@ https
 <tbody>
 <tr>
 <td><a href="#operation--environments--get">GET /environments/</a></td>
-<td></td>
+<td>Lists all the environments in the infrastructure.</td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey---get">GET /environments/{EnvironmentKey}/</a></td>
-<td></td>
+<td>Returns the details of a given environment.</td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--get">GET /environments/{EnvironmentKey}/applications/</a></td>
-<td></td>
+<td>Returns information about the running versions of all applications in a given environment.</td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--post">POST /environments/{EnvironmentKey}/applications/</a></td>
-<td></td>
+<td>Creates a new application in the environment.</td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--ApplicationKey---get">GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/</a></td>
-<td></td>
+<td>Returns information about the running version of the specified application in a given environment.</td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--ApplicationKey--content--get">GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/content/</a></td>
-<td></td>
+<td>Returns a link where the binary file for a given application can be downloaded. The link will expire in 60 minutes.</td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--ApplicationKey--versions--post">POST /environments/{EnvironmentKey}/applications/{ApplicationKey}/versions/</a></td>
-<td></td>
+<td>Creates a new version of the application based on the current running application.</td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--deploymentzones--get">GET /environments/{EnvironmentKey}/deploymentzones/</a></td>
-<td></td>
+<td>Returns information about the deployment zones available in a given environment.</td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--templates--get">GET /environments/{EnvironmentKey}/templates/</a></td>
-<td></td>
+<td>Returns information about the templates available in a given environment.</td>
 </tr>
 </tbody>
 </table>
@@ -662,31 +663,31 @@ https
 <tbody>
 <tr>
 <td><a href="#operation--deployments--post">POST /deployments/</a></td>
-<td></td>
+<td>Creates a deployment to a target environment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.</td>
 </tr>
 <tr>
 <td><a href="#operation--deployments--get">GET /deployments/</a></td>
-<td></td>
+<td>Returns a list of deployments ordered by creation date, from newest to oldest.</td>
 </tr>
 <tr>
 <td><a href="#operation--deployments--DeploymentKey---delete">DELETE /deployments/{DeploymentKey}/</a></td>
-<td></td>
+<td>Discards a deployment, if possible. Only deployments whose state is “saved” can be deleted.</td>
 </tr>
 <tr>
 <td><a href="#operation--deployments--DeploymentKey---put">PUT /deployments/{DeploymentKey}/</a></td>
-<td></td>
+<td>Updates a given deployment. An optional list of applications to include in the deployment can be specified. The input is a subset of deployment object.</td>
 </tr>
 <tr>
 <td><a href="#operation--deployments--DeploymentKey---get">GET /deployments/{DeploymentKey}/</a></td>
-<td></td>
+<td>Returns the details of a given deployment. The returned information contains the included applications and the possible conflicts that can arise from the deployment of the current applications.</td>
 </tr>
 <tr>
 <td><a href="#operation--deployments--DeploymentKey---Command---post">POST /deployments/{DeploymentKey}/{Command}/</a></td>
-<td></td>
+<td>Executes the given command in a specified deployment. The allowed commands are “start”, “continue” and “abort”.</td>
 </tr>
 <tr>
 <td><a href="#operation--deployments--DeploymentKey--status--get">GET /deployments/{DeploymentKey}/status/</a></td>
-<td></td>
+<td>Returns the details of a given deployment execution, including the deployment status and messages.</td>
 </tr>
 </tbody>
 </table>
@@ -703,19 +704,20 @@ https
 <tbody>
 <tr>
 <td><a href="#operation--modules--get">GET /modules/</a></td>
-<td></td>
+<td>Returns a list of modules that exist in the infrastructure.
+</td>
 </tr>
 <tr>
 <td><a href="#operation--modules--ModuleKey---get">GET /modules/{ModuleKey}/</a></td>
-<td></td>
+<td>Returns the details of a given module.</td>
 </tr>
 <tr>
 <td><a href="#operation--modules--ModuleKey--versions--get">GET /modules/{ModuleKey}/versions/</a></td>
-<td></td>
+<td>Returns a list of versions of a given module.</td>
 </tr>
 <tr>
 <td><a href="#operation--modules--ModuleKey--versions--ModuleVersionKey---get">GET /modules/{ModuleKey}/versions/{ModuleVersionKey}/</a></td>
-<td></td>
+<td>Returns the details of a given module version.</td>
 </tr>
 </tbody>
 </table>
@@ -732,27 +734,27 @@ https
 <tbody>
 <tr>
 <td><a href="#operation--roles--get">GET /roles/</a></td>
-<td></td>
+<td>Lists all the roles.</td>
 </tr>
 <tr>
 <td><a href="#operation--roles--post">POST /roles/</a></td>
-<td></td>
+<td>Creates a role with the specified permissions.</td>
 </tr>
 <tr>
 <td><a href="#operation--roles--RoleKey---get">GET /roles/{RoleKey}/</a></td>
-<td></td>
+<td>Returns the details of a given role.</td>
 </tr>
 <tr>
 <td><a href="#operation--roles--RoleKey---put">PUT /roles/{RoleKey}/</a></td>
-<td></td>
+<td>Updates a role with the specified permissions.</td>
 </tr>
 <tr>
 <td><a href="#operation--roles--RoleKey---delete">DELETE /roles/{RoleKey}/</a></td>
-<td></td>
+<td>Deletes a role.</td>
 </tr>
 <tr>
 <td><a href="#operation--roles-permissionlevels--get">GET /roles/permissionlevels/</a></td>
-<td></td>
+<td>Gets available permission levels.</td>
 </tr>
 </tbody>
 </table>
@@ -769,15 +771,15 @@ https
 <tbody>
 <tr>
 <td><a href="#operation--teams--get">GET /teams/</a></td>
-<td></td>
+<td>Lists all the teams.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--post">POST /teams/</a></td>
-<td></td>
+<td>Creates a team with the specified details. The operation only creates the team. Users and Applications should be associated using specific endpoints.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey---get">GET /teams/{TeamKey}/</a></td>
-<td></td>
+<td>Returns the details of a given team.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey---put">PUT /teams/{TeamKey}/</a></td>
@@ -785,23 +787,23 @@ https
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey---delete">DELETE /teams/{TeamKey}/</a></td>
-<td></td>
+<td>Removes application from the given team.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey--applications--post">POST /teams/{TeamKey}/applications/</a></td>
-<td></td>
+<td>Adds the specified application to a given team.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey--applications--ApplicationKey--delete">DELETE /teams/{TeamKey}/applications/{ApplicationKey}</a></td>
-<td></td>
+<td>Removes application from the given team.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey--users--post">POST /teams/{TeamKey}/users/</a></td>
-<td></td>
+<td>Adds a user to a team with a specified role.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey--users--UserKey---delete">DELETE /teams/{TeamKey}/users/{UserKey}/</a></td>
-<td></td>
+<td>Removes a user from the given team</td>
 </tr>
 </tbody>
 </table>
@@ -818,31 +820,31 @@ https
 <tbody>
 <tr>
 <td><a href="#operation--users--get">GET /users/</a></td>
-<td></td>
+<td>Lists all the users. By default shows only active users.</td>
 </tr>
 <tr>
 <td><a href="#operation--users--post">POST /users/</a></td>
-<td></td>
+<td>Creates a user with the specified details. The operation only creates the user. Teams and Applications should be associated using specific endpoints.</td>
 </tr>
 <tr>
 <td><a href="#operation--users--UserKey---get">GET /users/{UserKey}/</a></td>
-<td></td>
+<td>Returns the details of a given user.</td>
 </tr>
 <tr>
 <td><a href="#operation--users--UserKey---put">PUT /users/{UserKey}/</a></td>
-<td></td>
+<td>Updates a user with the specified details. The operation only updates the user details. Teams and Applications should be associated using specific endpoints.</td>
 </tr>
 <tr>
 <td><a href="#operation--users--UserKey--setpassword--post">POST /users/{UserKey}/setpassword/</a></td>
-<td></td>
+<td>Allows to change a password of a given user.</td>
 </tr>
 <tr>
 <td><a href="#operation--users--UserKey--applications--post">POST /users/{UserKey}/applications/</a></td>
-<td></td>
+<td>Grants a given role to the given application to the user.</td>
 </tr>
 <tr>
 <td><a href="#operation--users--UserKey--applications--ApplicationKey---delete">DELETE /users/{UserKey}/applications/{ApplicationKey}/</a></td>
-<td></td>
+<td>Revokes user's role in application permission.</td>
 </tr>
 </tbody>
 </table>

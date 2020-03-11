@@ -42,7 +42,7 @@ To do this, we are going to use an Excel file that already contains the followin
 * Birth date
 * Email
 
-In the `ContactPortal` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel...**, and select the sample file `Contacts.xlsx` (available [here](@api/deki/files/23662/Contacts.xlsx)).
+In the `ContactPortal` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel...**, and select the sample file `Contacts.xlsx` (available [here](resources/Contacts.xlsx)).
 
 ![Create a Database Table from an Excel File](images/create-web-03.png?width=900)
 

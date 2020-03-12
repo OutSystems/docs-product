@@ -7476,7 +7476,7 @@ UserKey
 <p>When was the Application Version created.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -7873,7 +7873,7 @@ UserKey
 <p>Date and time when the deployment plan was created.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -7906,7 +7906,7 @@ UserKey
 <p>The date and time when the deployment plan was saved.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -7939,7 +7939,7 @@ UserKey
 <p>The date and time when the deployment started.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -7972,7 +7972,7 @@ UserKey
 <p>The date and time when the deployment was aborted.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -8080,7 +8080,7 @@ UserKey
 <p>Date and time when the deployment plan was created.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -8113,7 +8113,7 @@ UserKey
 <p>The date and time when the deployment plan was saved.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -8146,7 +8146,7 @@ UserKey
 <p>The date and time when the deployment started.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -8179,7 +8179,7 @@ UserKey
 <p>The date and time when the deployment was aborted.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -8247,7 +8247,7 @@ UserKey
 <p>Date and time when the message was logged.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -8449,7 +8449,7 @@ UserKey
 <p>The expiration date and time of the returned link.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>
@@ -9104,7 +9104,7 @@ UserKey
 <p>Date and time of the module version creation.</p>
 <div class="json-inner-schema">
 <section class="json-schema-example">
-<pre><code class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</code></pre>
+<span class="language-json">&quot;2014-12-31T23:59:59.938Z&quot;</span>
 </section>
 </div>
 </dd>

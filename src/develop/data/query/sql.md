@@ -33,7 +33,7 @@ Output Structure
 To reference an entity in your SQL query write it between curly brackets (e.g. `{User}`) and to reference an entity attribute write it between square brackets (e.g. `[PhoneNumber]`).
 
 
-## Write your own SQL query
+## Write Your Own SQL Query
 
 Do the following:
 
@@ -41,28 +41,7 @@ Do the following:
 1. If necessary, define the query parameters.
 1. Write the SQL query.
 1. Define the output structure used for the output of the SQL node.
-
-    <div class="info" markdown="1">
-
-    The Output Structure/Entity must match the results of your SQL statement, in the same order and with matching data types.
-    If your SQL statement does not return any results you must still define an Output Entity/Structure.
-
-    </div>
-    
 1. Use the output list of the SQL node to access the result of the SQL query.
-
-## Test your SQL query
-
-Test your SQL query by clicking the **TEST** button in the SQL editor. 
-
-<div class="info" markdown="1">
-
-If your SQL query uses a Query Parameters, set a Test Value for the parameter in the **Test Inputs** tab. 
-If you don't set a test value, the query is tested with the empty value for the data type.
-
-</div>
-
-![Test Your SQL Query](images/test-sql.gif)
 
 ## Notes and guidelines
 
@@ -110,24 +89,20 @@ The option to convert an Aggregate to a SQL element will only be available if yo
 
 In Reactive Web and Mobile apps, this feature is not available for Aggregates in Client Actions or Screens.
 
-### How to convert an Aggregate to a SQL element
+### How to Convert an Aggregate to a SQL Element
 
 To convert an existing Aggregate to a SQL element follow these steps:	
 
 1. In your action flow, double-click the Aggregate you want to convert.	
-1. In the Aggregate window, click **Filters**.
-1. In the Property pane, double-click **Executed SQL**.  	
-1. Click **CONVERT AGGREGATE TO SQL**.
-
-    <div class="info" markdown="1">
-    
-    The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed above]     (#limitations).
-    
-    </div>
-    
+1. In the Aggregate window, double-click the `Executed SQL` property to open the Executed SQL window.  	
+1. Click **CONVERT AGGREGATE TO SQL**. 
+<div class="info" markdown="1">
+The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed above](#limitations).
+</div>	
 1. Click **PROCEED**.
 
 ![Convert an Aggregate to SQL](images/convert-to-sql.gif)
 
 Your action flow now includes a SQL element based on the original Aggregate. 
 The original Aggregate is kept in the action flow but it is disabled. After validating the query results of the new SQL element you can delete the disabled Aggregate.
+

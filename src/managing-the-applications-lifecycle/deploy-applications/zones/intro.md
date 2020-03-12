@@ -63,11 +63,13 @@ Deployment zones can be configured to perform one of two different kinds of depl
 
 ## Communication Between Applications in Different Deployment Zones
 
-Sometimes applications need to communicate with other applications outside of their deployment zone. To achieve this they use the deployment zone address of the second application.  
+Sometimes applications need to communicate with other applications outside of their deployment zone. To achieve this they use the deployment zone address of the second application. 
+
+This is required for features like [Services](<../../../develop/reuse-and-refactor/services.md>), [Processes](<../../../develop/processes/intro.md>), [Timers](<../../../develop/timers/intro.md>), [Emails](<../../../develop/logic/emails.md>), and for management operations performed by Service Center.
 
 ###  Example 
 
-In the following scenario, we have an application named "Front-end App" exposing the web interface for Internet users. This application reuses existing logic in the form of [services](<../../../develop/reuse-and-refactor/services.md>) for its back-end. The "Back-end Service" was deployed in the "Internal Apps" deployment zone while the "Front-end App" was deployed to the "Public" deployment zone. This allows the "Back-end Service" to be isolated from the Internet users while also allowing its functionality to be accessed via the "Front-end App".
+In the following scenario, we have an application named "Front-end App" exposing the web interface for Internet users. This application reuses existing logic in the form of [Services](<../../../develop/reuse-and-refactor/services.md>) for its back-end. The "Back-end Service" was deployed in the "Internal Apps" deployment zone while the "Front-end App" was deployed to the "Public" deployment zone. This allows the "Back-end Service" to be isolated from the Internet users while also allowing its functionality to be accessed via the "Front-end App".
 
 The "Back-end Service" is discovered by the "Front-end App" through the deployment zone address of the "Back-end Service". This address might vary according to your network architecture and is defined by you in the "[Deployment Zone Address](<reference.md>)" parameter when creating the deployment zone.
 
@@ -138,8 +140,4 @@ Take the following limitations into account when deploying **modules** to differ
 
 * System Components are deployed to the default deployment zone. Use the internal network configuration to limit the access to Service Center and LifeTime (available in Service Center in Administration > Security > Network Security).
 
-* Timers and Emails of a module are only available in the servers of the deployment zone where the module was deployed to.
-
-* It's not possible to call BPT-related system actions (ActivityClose, ActivityGetUrl, etc.) for activities that belong to modules in a different deployment zone.
-
-* Images, CSS files and module resource files belonging to a given module should not be accessed from another module unless they are being deployed to the exact same servers.
+* Processes, Timers and Emails require that there is at least one server in the zone of the module configured to execute them.

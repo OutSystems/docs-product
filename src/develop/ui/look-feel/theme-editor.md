@@ -5,13 +5,13 @@ tags: support-application_development; support-Front_end_Development
 
 # Customize the look of your app with Theme Editor
 
-If your app uses a default OutSystems UI Themes, you can use Theme Editor to customize the overall style of your app and preview your customized theme without leaving Service Studio.
+If your app uses a OutSystems UI Theme as a Base Theme, you can use Theme Editor to customize the overall style of your app and preview your customized app without leaving Service Studio.
 
 To open Theme Editor, open a Screen and click the **Theme Editor...** icon in the workspace toolbar.
 
 ![Open Theme Editor](images/theme-editor-01-ss.png?width=1000)
 
-### Customize default colors of Screens and UI elements
+## Customize default colors of Screens and UI elements
 
 Select one of the 18 default color palettes or use a custom palette based on the main colors from an image, like the logo of your company.
 
@@ -34,7 +34,7 @@ Background
 Header
 :   Change the background color of the Header.
 
-### Customize default font
+## Customize default font
 
 Select one of the six font types and change the base size of your font.
 
@@ -47,7 +47,7 @@ Font Size
 :   Change the base size of the font used in your app.
 
 
-### Customize structure and shape
+## Customize structure and shape
 
 <div class="info" markdown="1">
 Only available in **Reactive Web** and **Traditional Web** modules.
@@ -69,7 +69,7 @@ Border
 Shadow
 :   Toggle a shadow effect to the border of UI elements.
 
-### Customize the Login Screen background
+## Customize the Login Screen background
 
 Change the background of the Login screen to a solid color, to a color with a gradient or to an image. Check your style changes by opening the **Login** screen, inside the **Common** UI flow. In Mobile apps it also changes the background of the Splash screen.
 
@@ -84,7 +84,7 @@ Background color gradient
 Background image
 :   Select an image to use as the background of the Login Screen. If the background image has transparent areas
 
-### Choose between a single style or native styles
+## Choose between a single style or native styles
 
 <div class="info" markdown="1">
 Only available in **Mobile** modules.
@@ -100,7 +100,7 @@ OutSystems UI look and feel
 Native look and feel
 :   Use a different style for Android and iOS devices adapted to the general look of each OS.
 
-### Resetting your Theme Editor customization
+## Resetting your Theme Editor customization
 
 To delete all the style changes created using Theme Editor, press **Reset Theme Editor**.
 

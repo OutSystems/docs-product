@@ -361,7 +361,7 @@ IncludeEnvStatus
 <dd class="sw-response-200">
 <div class="rowr">
 <div class="col-md-12">
-<p>A list of Application records including AppStatusInEnv sub-lists, if requested.</p>
+<p>Applications list successfully retrieved.</p>
 </div>
 </div>
 <div class="rowr">
@@ -674,7 +674,7 @@ MaximumVersionsToReturn
 <dd class="sw-response-200">
 <div class="rowr">
 <div class="col-md-12">
-<p>A list of ApplicationVersion records.</p>
+<p>Application versions list successfully retrieved.</p>
 </div>
 </div>
 <div class="rowr">
@@ -2217,7 +2217,7 @@ Go to
 <div  class="panel panel-definition">
 <div class="panel-body">
 <section class="json-schema-description">
-<p>Environments list successfully retrieved.</p>
+<p>A list of Environment records.</p>
 </section>
 <section class="json-schema-array-items">
 <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/Environment">Environment</a>
@@ -2468,7 +2468,7 @@ IncludeEnvStatus
 <div  class="panel panel-definition">
 <div class="panel-body">
 <section class="json-schema-description">
-<p>Applications list for the given environment successfully retrieved.</p>
+<p>A list of Application records.</p>
 </section>
 <section class="json-schema-array-items">
 <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/Application">Application</a>
@@ -3305,7 +3305,7 @@ EnvironmentKey
 <div  class="panel panel-definition">
 <div class="panel-body">
 <section class="json-schema-description">
-<p>Deployment zone information successfully retrieved.</p>
+<p>A list of DeploymentZone records.</p>
 </section>
 <section class="json-schema-array-items">
 <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/DeploymentZone_v2">DeploymentZone_v2</a>
@@ -3440,7 +3440,7 @@ EnvironmentKey
 <dd class="sw-response-200">
 <div class="rowr">
 <div class="col-md-12">
-<p>A list of Templates.</p>
+<p>Templates list successfully retrieved.</p>
 </div>
 </div>
 <div class="rowr">
@@ -3448,7 +3448,7 @@ EnvironmentKey
 <div  class="panel panel-definition">
 <div class="panel-body">
 <section class="json-schema-description">
-<p>A list of Templates.</p>
+<p>A list of Template records.</p>
 </section>
 <section class="json-schema-array-items">
 <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/Template">Template</a>
@@ -3590,7 +3590,7 @@ IncludeEnvStatus
 <div  class="panel panel-definition">
 <div class="panel-body">
 <section class="json-schema-description">
-<p>Modules list successfully retrieved.</p>
+<p>A list of Module records.</p>
 </section>
 <section class="json-schema-array-items">
 <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/Module">Module</a>
@@ -3841,7 +3841,7 @@ MaximumVersionsToReturn
 <div  class="panel panel-definition">
 <div class="panel-body">
 <section class="json-schema-description">
-<p>List of module versions successfully retrieved.</p>
+<p>A list of ModuleVersion records.</p>
 </section>
 <section class="json-schema-array-items">
 <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/ModuleVersion_v2">ModuleVersion_v2</a>
@@ -4824,7 +4824,7 @@ IncludeApplications
 <dd class="sw-response-200">
 <div class="rowr">
 <div class="col-md-12">
-<p>List of Teams</p>
+<p>List of teams successfully retrieved.</p>
 </div>
 </div>
 <div class="rowr">
@@ -6047,7 +6047,7 @@ IncludeApplicationRoles
 <dd class="sw-response-200">
 <div class="rowr">
 <div class="col-md-12">
-<p>List of Users</p>
+<p>List of users successfully retrieved.</p>
 </div>
 </div>
 <div class="rowr">

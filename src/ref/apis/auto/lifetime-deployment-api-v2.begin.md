@@ -1,5 +1,5 @@
 ---
-summary: Allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure. Version 2 of the API adds support for deployment zones, users, teams and roles.
+summary: Allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure. Version 2 of the API adds support for deployment zones, users, teams, and roles.
 tags: support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
 ---
 
@@ -559,7 +559,7 @@ tags: support-application_development; support-Application_Lifecycle; support-de
 </pre>
 
 
-The LifeTime API allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure. Version 2 of the API adds support for deployment zones, users, teams and roles.
+The LifeTime API allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure. Version 2 of the API adds support for deployment zones, users, teams, and roles.
 
 Follow the guidelines presented in [REST API Authentication](<../lifetime-deployment/rest-api-authentication.md>) to authenticate your API requests.
 

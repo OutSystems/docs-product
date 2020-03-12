@@ -5,9 +5,9 @@ summary: Learn how to embed a native video player in your app.
 
 # Video
 
-The Video UI pattern allows you to embed a native video player into your application.
+Embeds a native video player.
 
-Use Video as a powerful tool to engage users. But always remember to show all the essential information as text in the application.
+Use Video as a powerful tool to engage users. However, remember to always show all essential information as text in the application.
 
 <div class="info" markdown="1">
  

@@ -8,9 +8,9 @@ Action | Description
 ---|---
 [Application_AddExclusionRule](<#Application_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified application.
 [Application_RemoveExclusionRule](<#Application_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified application.
-[Espace_AddExclusionRule](<#Espace_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified module.
-[Espace_RemoveExclusionRule](<#Espace_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified module.
-[Script_CreateOrUpdate](<#Script_CreateOrUpdate>) | Creates or updates a javascript. The script is inserted in the HTML of all Web Screens of all modules.%%If the script name already exists, the script is updated, otherwise a new script is created.
+[Espace_AddExclusionRule](<#Espace_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified eSpace.
+[Espace_RemoveExclusionRule](<#Espace_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified application.
+[Script_CreateOrUpdate](<#Script_CreateOrUpdate>) | Creates or updates a javascript. The script is inserted in the HTML of all Web Screens of all eSpace modules.%%If the script name already exists, the script is updated, otherwise a new script is created.
 [Script_Delete](<#Script_Delete>) | Deletes a script: the script is no longer included in Web Screens.
 [Script_Get](<#Script_Get>) | Returns the information of a script.
 [Script_List](<#Script_List>) | Returns a list of scripts to be included in Web Screens.
@@ -20,7 +20,7 @@ Action | Description
 Structure | Description
 ---|---
 [ExcludedApplications](<#Structure_ExcludedApplications>) | Represents an exclusion rule for a specific application. Exclusion rules specify applications in which scripts are not to be inserted.
-[ExcludedEspaces](<#Structure_ExcludedEspaces>) | Represents an exclusion rule for a specific module. Exclusion rules specify modules in which scripts are not to be inserted.
+[ExcludedEspaces](<#Structure_ExcludedEspaces>) | Represents an exclusion rule for a specific eSpace. Exclusion rules specify eSpaces in which scripts are not to be inserted.
 [JavaScript](<#Structure_JavaScript>) | Represents a script to be included in the HTML of Web Screens.
 
 ## Actions
@@ -56,7 +56,7 @@ ApplicationKey
 
 ### Espace_AddExclusionRule { #Espace_AddExclusionRule }
 
-Creates exclusion rules for a script. The specified script is not included in the specified module.
+Creates exclusion rules for a script. The specified script is not included in the specified eSpace.
 
 *Inputs*
 
@@ -67,11 +67,11 @@ ScriptName
 
 EspaceKey
 :   Type: Text. Mandatory.  
-    The unique key of the module.
+    The eSpace unique key.
 
 ### Espace_RemoveExclusionRule { #Espace_RemoveExclusionRule }
 
-Removes a script exclusion rule. The specified script is to be included in the specified module.
+Removes a script exclusion rule. The specified script is to be included in the specified application.
 
 *Inputs*
 
@@ -81,11 +81,11 @@ ScriptName
 
 EspaceKey
 :   Type: Text. Mandatory.  
-    The unique key of the module.
+    The eSpace unique key.
 
 ### Script_CreateOrUpdate { #Script_CreateOrUpdate }
 
-Creates or updates a javascript. The script is inserted in the HTML of all Web Screens of all modules.  
+Creates or updates a javascript. The script is inserted in the HTML of all Web Screens of all eSpace modules.  
 If the script name already exists, the script is updated, otherwise a new script is created.
 
 *Inputs*
@@ -192,17 +192,17 @@ ApplicationName
 
 ### ExcludedEspaces { #Structure_ExcludedEspaces }
 
-Represents an exclusion rule for a specific module. Exclusion rules specify modules in which scripts are not to be inserted.
+Represents an exclusion rule for a specific eSpace. Exclusion rules specify eSpaces in which scripts are not to be inserted.
 
 *Attributes*
 
 EspaceKey
 :   Type: Text (50). Mandatory.  
-    The unique key of the module.
+    The unique key of the eSpace.
 
 EspaceName
 :   Type: Text (50). Mandatory.  
-    The name of the module.
+    The name of the eSpace.
 
 ### JavaScript { #Structure_JavaScript }
 
@@ -240,4 +240,6 @@ ExcludedApplications
 
 ExcludedEspaces
 :   Type: RecordList of [ExcludedEspaces](<#Structure_ExcludedEspaces>). Mandatory.  
-    The script is not inserted in the Web Screens of these modules.
+    The script is not inserted in the Web Screens of these eSpaces.
+
+

@@ -1,59 +1,44 @@
 ---
 tags: runtime-traditionalweb; 
-summary: SearchBalloon lets the users search a list while showing results.
+summary: SearchBalloon enables the users to search the content while showing results, without forcing them to lose the context of the UI.
 ---
 
 # SearchBalloon
 
-Search Balloon Widget lets the users search the content while the results update in the results list. Use the Search Balloon to guide users by, for example, showing recommendations based on what they enter in the Search field.
+Enables the users to search the content while showing results in a Balloon.
+
+Use the Search Balloon to guide users by, for example, suggesting recommended queries when they create or edit queries in the Search field. 
 
 **How to use**
 
-Follow these steps to create a result list that automatically updates when users enter a search query.
+Drag an Input Widget inside the placeholder. The widget is used as the search input while the Answer Placeholder has the container in which the answers show up.
 
-Before you start:
+1. Drag the Search balloon into preview.
 
-* Reference [Sample Data](../../../screen-templates-create/sample-data.md) in your app.
-* Create a new blank Screen and add a Preparation Action to it (right-click a Web Screen and select **Add Preparation**). Drag Sample_Employee Entity (from Sample Data) to the Preparation flow.
-
-Then:
-
-1. Drag Search Balloon Widget from the widget toolbox to your Screen.
-
-1. Go to Search Balloon Widget > select the Input Widget  > locate the Input properties > click the **Variable** field and select **New Local Variable** from the list. Name the variable SearchText.
+1. Set the variable to the search input.
     
-    ![Search Balloon variable](images/search-balloon-variable-ss.png?width=700)
-   
-1. Go to Search Balloon Widget > select the ListRecords1 Widget > locate ListRecords1 properties > click the **Source Record List** field and select "GetEmployees.List" from the list. Still in the properties, enter `1` in the **Start Index** field.
+    ![](images/search-balloon-image-1.png)
 
-1. Go to Search Balloon Widget > select the Input Widget > locate the Input properties > click **Destination** field and select **New Screen Action** from the list. The OnChange Action opens. In the OnChange Action flow:
-   
-    * Drag a **Refresh Data** node and select "GetEmployees" in the **Select Data Source** window.
+1. Set the record that you want to use that holds the results of the search. If the list is long, set the Line Count to a smaller number (like 5).
+
+1. Set a name, for example "Filtered Users".
     
-    * Drag an **Ajax Refresh** to the flow, navigate by expanding to **ListRecords1**, select **ListRecords1** and click **OK**.   
+    ![](images/search-balloon-image-3.png)
 
-1. Go to the Preparation Action > double-click the GetEmployees Aggregate > click **Filters** > click **Add Filter** > enter this text in the **Filter Condition** field:
-`Sample_Employee.FirstName like "%" + SearchText + "%" or Sample_Employee.LastName like "%" + SearchText + "%" or SearchText = ""`. Click **Done**.
+1. Set an **onChange** action in the search input.
 
-    This forces the Aggregate to return all records that have SearchText in the first or last name.
-
-    ![The logic flow that refreshes data and widget](images/search-balloon-refresh-data-flow-ss.png?width=400)
+1. Drag a Refresh Data and set your data source as the record that you're using.
     
+    ![](images/search-balloon-image-4.png)
 
-1. Go back to the Screen and select Search Balloon Widget.
+1. Drag an Ajax Refresh and set the Widget as the name that you gave the record on step 3.
     
-    * Delete the "Put your results here" placeholder text and drag an Expression Widget to the list.
+    ![](images/search-balloon-image-5.png)
 
-    * Double-click the Expression Widget and enter `ListRecords1.List.Current.Sample_Employee.FirstName + " " + ListRecords1.List.Current.Sample_Employee.LastName` as the Expression Value. Click **Done**.
-    
-    Now the filtered list shows employees' first and last names.
+1. Go to the aggregate and double click. Go to the filters and add this filter:
+`User.Name like "%" + SearchValue + "%" or User.Username like "%" + SearchValue + "%" or SearchValue = ""` 
 
-    ![Expression Widget in Search Balloon](images/search-balloon-expression-ss.png?width=700)
-
-1. Publish your app and try entering a name in the search field.
-   
-   ![Search Balloon demo in a browser](images/search-balloon-demo-browser.png?width=500)
-
+1. Publish.
 
 ## Input parameters
 
@@ -64,7 +49,7 @@ Then:
 
 ## Layout and classes
 
-![](images/search-balloon-image-2.png?width=800)
+![](images/search-balloon-image-2.png)
 
 ## Events
 
@@ -89,5 +74,5 @@ Here are some more advanced use-cases of the widget.
 2. On the AdvancedFormat parameter add the following line:
 `{ showOnInit: true }`.
 
-![](images/search-balloon-gif-1.gif?width=800))
-![](images/search-balloon-gif-2.gif?width=800))
+![](images/search-balloon-gif-1.gif)
+![](images/search-balloon-gif-2.gif)

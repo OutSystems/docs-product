@@ -4,8 +4,8 @@ tags: support-application_development; support-Application_Lifecycle; support-de
 ---
 
 <pre class="script-css">
-/* HIDE H3, H4 AND H5 FROM TOC */
-#mt-toc-container li li li {
+/* HIDE H2, H3, H4 AND H5 FROM TOC */
+#mt-toc-container li li {
     display:none;
 }
 /* Styles for API doc */

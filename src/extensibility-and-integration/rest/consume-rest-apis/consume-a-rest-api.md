@@ -14,7 +14,7 @@ In Service Studio you can:
 * Consume a single REST API method.
 
 
-## Consume all methods of a REST API
+## Consume all methods of a REST API { #all-methods }
 
 You can consume all methods of a REST API if that API is compliant with the [Swagger specification](https://swagger.io/specification/) – REST APIs exposed by OutSystems are compliant with this specification.  
 
@@ -43,7 +43,7 @@ When importing the REST API, Service Studio does the following:
 
 ![](images/ss-rest-consume-created-structures.png)
 
-## Consume a single method of a REST API
+## Consume a single method of a REST API { #single-method }
 
 In OutSystems you can consume a **single method** of a REST API, based on example content for the request and/or response. You may need to specify input parameters in the URL and/or a body for manipulation methods like `POST` or `PUT`.
 
@@ -108,7 +108,7 @@ When importing the REST API method, Service Studio does the following:
 ![](images/ss-rest-consume-created-structures.png)
 
 
-## Use a REST API Method in your Application
+## Use a REST API Method in your Application { #use }
 
 OutSystems translates the methods exposed by a REST API into **OutSystems actions**, with the same semantics as any action created by you in Service Studio.
 

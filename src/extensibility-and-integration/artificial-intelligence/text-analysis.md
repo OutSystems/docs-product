@@ -112,6 +112,25 @@ The Speech to Text feature accepts audio files and outputs a transcription of th
 
 The output parameter of the **SpeechToText** Server Action is a transcription of the conversion result that has the highest confidence score.
 
+## Entity detection
+
+Drag and drop the **EntitiesHighlight** Block to your Screen and enter the two mandatory input parameters:
+
+* **Text** – The text in which you want to detect key phrases
+* **LanguageCode** – A two-letter code representing the language that follows the ISO 639-1 standard of language codes
+
+![Entity detection in Block](images/text-analysis-entity-detection-block.png)
+
+The detected segments show as underlined text. The color of the underline corresponds to the type of entity extracted from the text. Hover over the entity to reveal its type.
+
+![Underlined detected entities](images/text-analysis-entity-highlight.png)
+
+To use the Server Action, drag the GetEntitiesInText action to your flow and enter the input parameters.
+
+![Entity detection in Server Action](images/text-analysis-entity-detection-action.png)
+
+The GetEntitiesInText action analyzes the text using the Text Analytics API Entities action from the Azure Cognitive Services Connector.
+
 ## Exception handling
 
 The possible exceptions that can happen in the actions of the UI Blocks are handled directly by showing a Feedback Message when an exception occurs. You need to handle any exceptions raised inside the Server Actions within the component.

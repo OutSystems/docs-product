@@ -7,18 +7,28 @@ tags: support-Database
 
 The ![SQL](../../../shared/icons-tools/advanced-query.png) SQL element allows you to execute, test, and review custom SQL queries in your applications. The element provides flexibility in data manipulation, but we recommend using Aggregates when applicable. Aggregates are highly optimized and easier to maintain.
 
-SQL queries can access data that is sent through the input parameters only, and other logic can access only what the SQL query returns through the Output Structure.
+SQL queries can access data that is sent through the input parameters only, and other logic can access only what the SQL query returns through its Outputs.
 
 Input parameters
 :   Providing input parameters allows you to use dynamic data in the SQL query. Input parameters are optional. To reference an input parameter in your SQL statement use a `@` prefix, e.g. `@CustomInputParameter`.
 
-Output parameter
+Output parameters
 :   SQL in OutSystems queries always have two output parameters, even when the query executed does not return a result:
 
     * **List**: The list with the result returned by the query. The list is empty if there are no results.
+    
     * **Count**: The number of records returned by the query without considering the SQL Max Records property.
 
-Output Structure is mandatory. You need to define the structure (data types of the columns) that your query returns. For example, if you perform a query over the Employee Entity that selects the attributes `Id`, `Name`, `Email`, `PhoneNumber`, specify the Output Structure with the same attributes in the same order and with matching data types. This enforces that List output parameter of the SQL query returns Employee List data type. Output Structure is needed even if your SQL statement does not return any results.
+Output Structure
+:   Output Structure is mandatory. You need to define the structure (data types of the columns) that your query returns. You can use any combination of Entities, Structures or both, but the attribute order/data type must match your Select. Output Structure is needed even if your SQL statement does not return any results. 
+
+    * Example 1: When selecting all attributes of the Employee Entity (with `Id`, `Name`, `Email`, and `PhoneNumber` attributes), 
+    specify the Employee Entity as the Output Structure. This enforces that List output parameter of the SQL 
+    query returns Employee List data type.
+    
+    * Example 2: When selecting only the `Name` and `Email` of the same Employee Entity, create a Structure 
+    (named EmployeeInfo) to hold the attributes you need and use it as the Output Structure. The data type and order of the attributes in the SELECT statement must match the data type and order of the atributes of the EmployeeInfo Structure. This 
+    enforces that List output parameter of the SQL query returns EmployeeInfo List data type. 
 
 To reference an entity in your SQL query write it between curly brackets (e.g. `{User}`) and to reference an entity attribute write it between square brackets (e.g. `[PhoneNumber]`).
 
@@ -105,7 +115,7 @@ In Reactive Web and Mobile apps, this feature is not available for Aggregates in
 To convert an existing Aggregate to a SQL element follow these steps:	
 
 1. In your action flow, double-click the Aggregate you want to convert.	
-1. In the Aggregate windown, click **Filters**.
+1. In the Aggregate window, click **Filters**.
 1. In the Property pane, double-click **Executed SQL**.  	
 1. Click **CONVERT AGGREGATE TO SQL**.
 

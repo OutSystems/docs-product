@@ -43,6 +43,17 @@ Do the following:
 1. Define the output structure used for the output of the SQL node.
 1. Use the output list of the SQL node to access the result of the SQL query.
 
+## Test Your SQL Query
+You can test your work by clicking the `TEST` button located at the bottom of the SQL editor. In order to test it successfully make sure that:
+1. If you have `Query Parameters` you should first assign a test value in the Test Inputs tab.
+
+    _If no values are assigned, the query will be tested with empty values._
+    
+1. There is one or more output entities/structures that will match the attributes on the `SELECT` statement.
+1. Click **TEST**.
+
+![Test Your SQL Query](images/test-sql.gif)
+
 ## Notes and guidelines
 
 Consider the following when using the SQL element:

@@ -1,4 +1,4 @@
-# LifeTime Deployment API v1
+# LifeTime API v1
 
 ## Summary
 

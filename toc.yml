@@ -1337,12 +1337,12 @@
             - href: ref/apis/javascript/modules/security.md
             - href: ref/apis/javascript/classes/validation.md
             - href: ref/apis/javascript/classes/view.md
-        # LifeTime Deployment API v2
+        # LifeTime API v2
         - href: ref/apis/auto/lifetime-deployment-api-v2.final.md
         - topics: 
             - href: ref/apis/lifetime-deployment/rest-api-authentication.md
             - href: ref/apis/lifetime-deployment/api-use-cases.md
-        # LifeTime Deployment API v1
+        # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md
         - href: ref/apis/auto/lifetime-sdk.final.md
         - href: ref/apis/auto/lifetime-services-api.final.md

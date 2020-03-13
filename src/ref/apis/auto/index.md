@@ -19,5 +19,5 @@ The following APIs are implemented in OutSystems (OML/XIF) and their reference i
 * [PlatformPasswordUtils API](<platformpasswordutils-api.md>)
 * [Sanitization API](<sanitization-api.md>)
 * [Text API](<text-api.md>)
-* [LifeTime Deployment API v1](<lifetime-deployment-api-v1.md>)
-* [LifeTime Deployment API v2](<lifetime-deployment-api-v2.md>)
+* [LifeTime API v1](<lifetime-deployment-api-v1.md>)
+* [LifeTime API v2](<lifetime-deployment-api-v2.md>)

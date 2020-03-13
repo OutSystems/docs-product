@@ -1,8 +1,8 @@
 ---
-summary: Check how to perform common tasks using the LifeTime Deployment API.
+summary: Check how to perform common tasks using the LifeTime API.
 ---
 
-# LifeTime Deployment API Examples
+# LifeTime API Examples
 
 We provide real-world scenarios of using several API calls to perform common tasks like:
 

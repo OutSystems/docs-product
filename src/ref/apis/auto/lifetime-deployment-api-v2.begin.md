@@ -568,3 +568,5 @@ Follow the guidelines presented in [REST API Authentication](<../lifetime-deploy
 Check [LifeTime API Examples](<../lifetime-deployment/api-use-cases.md>) to learn how to perform common tasks using the LifeTime API.
 
 </div>
+
+You can find the Swagger file for LifeTime API v2 in the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), inside the detail page of each LifeTime Management Console version.

@@ -1,6 +1,6 @@
 ---
 summary: Provides functionality to allow you to integrate with your external databases.
-tags: support-application_development; support-Database; support-Integrations_Extensions
+tags: article-page; support-application_development; support-Database; support-Integrations_Extensions
 ---
 
 # RuntimePublic.Db API

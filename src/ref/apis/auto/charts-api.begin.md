@@ -1,6 +1,6 @@
 ---
 summary: Component with widgets for plotting charts in web apps.
-tags: support-application_development; support-Front_end_Development
+tags: article-page; support-application_development; support-Front_end_Development
 ---
 
 The OutSystems API for plotting charts.

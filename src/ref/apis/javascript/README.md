@@ -1,5 +1,5 @@
 ---
-tags: runtime-mobileandreactiveweb
+tags: article-page; runtime-mobileandreactiveweb
 ---
 
 # JavaScript API

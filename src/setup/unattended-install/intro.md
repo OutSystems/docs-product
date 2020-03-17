@@ -1,6 +1,6 @@
 ---
 summary: Learn the unattended or automated processes of installing or updating OutSystems Platform Server, and adding a new front-end server.
-tags: support-Installation_Configuration; support-Installation_Configuration-overview
+tags: article-page; support-Installation_Configuration; support-Installation_Configuration-overview
 ---
 
 # Unattended Installation and Upgrade

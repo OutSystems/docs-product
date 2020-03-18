@@ -7,13 +7,19 @@ tags: runtime-traditionalweb; support-application_development; support-Front_end
 
 A JavaScript API that allows you to prefetch static resources (css, js, png, gif. jpg, jpeg, woff) for a list of modules. This way, when the page needs a resource, it can be already in the browser's cache.
 
+<div class="info" markdown="1">
+
+We **don't recommend** using the outsystems.api.preloader API. It's a legacy feature superseded by the functionalities available in Mobile App and Reactive Web App.
+
+</div>
+
 The following files are prefetched:
 
 * CSS styles and JavaScript code added to Web Blocks, Screens, and Themes
 * Image files used in the application module
 * Module resources with their 'Deploy Action' property set to 'Deploy to Target Directory', and that have the following file formats: 
     * css 
-    * js 
+    * js    
     * gif, png, jpg, jpeg 
     * woff 
 * If your module has a dependency to other modules: 

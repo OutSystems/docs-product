@@ -27,6 +27,7 @@ To redirect all emails to a list of test users, check the **Redirect Emails to T
 ![](images/configure-outsystems-to-send-emails-2.png)
 
 In this example, all emails sent from this environment are redirected to an internal mailing list, instead of their original address.
+Note that all emails are redirected, including emails addressed using the CC and BCC fields.
 
 
 ## Configure the Environment Hostname

@@ -66,6 +66,6 @@ OutSystems uses a high-level grid system. If you specify the number of columns i
 
 Use the `@import` CSS at-rule in Style Sheet Editor to import style rules from other locations. Put it as the first line in your sheet.
 
-## Preporcessors
+## Preprocessors
 
-OutSystems development tools do not support use of CSS preprocessors (such as Sass ot LESS) in apps.
+OutSystems development tools do not support the use of CSS preprocessors (such as Sass or LESS) in apps.

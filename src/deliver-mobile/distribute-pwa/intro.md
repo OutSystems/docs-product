@@ -163,7 +163,10 @@ You can use [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) 
 
 ## Plugins in PWA {#plugins}
 
-During the early access, you can try out [Camera Plugin](https://www.outsystems.com/forge/component-overview/1390/camera-plugin), as an officially supported plugin in your PWA.
+During the early access, you can try out the following officially supported plugins in your PWAs:
+
+* [Camera Plugin](https://www.outsystems.com/forge/component-overview/1390/camera-plugin), from version 6.0
+* [Location Plugin](https://www.outsystems.com/forge/component-versions/1395), from version 5.1
 
 There are more plugins coming soon, and you can contribute with your own on the Forge.
 

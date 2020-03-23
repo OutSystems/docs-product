@@ -70,7 +70,7 @@ Considering the architectural philosophy behind Libraries, some concepts must be
 
 <div class="info" markdown="1">
 
-When using Libraries, it is not possible to deploy [existing resources](..\data\resources.md) to Target Directory.
+When using Libraries, it is not possible to deploy [existing resources](../data/resources.md) to Target Directory.
 
 </div>
 

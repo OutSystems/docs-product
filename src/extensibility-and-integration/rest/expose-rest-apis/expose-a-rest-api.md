@@ -40,6 +40,6 @@ Default Endpoint | Description
   
 The default endpoints are based in the HTTP Method (`GET`, `POST`, `PUT`, `DELETE`) and the name of the REST API Methods, but you can [customize the endpoints](<customize-rest-urls.md>) according to your needs.
 
-You can test your REST API Method using several available tools, such as [curl](https://curl.haxx.se/) or [Postman](https://www.getpostman.com), or building an OutSystems application for that effect.
+You can test your REST API Method using several available tools, such as [curl](https://curl.haxx.se/) or [Postman](https://www.postman.com), or building an OutSystems application for that effect.
 
 For manipulation methods where the input parameter is a Record (such as `POST` or `PUT`), you will have to add the "Content-Type" header to the request, with the value `application/json`.

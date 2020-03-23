@@ -19,6 +19,11 @@ If you have an advanced integration scenario requiring .NET code to customize re
 
 In the [OutSystems Forge](https://www.outsystems.com/forge/) you can find several components providing an interface to third-party services using REST integration, such as the [Box Connector](https://www.outsystems.com/forge/component/586/box-connector/) or the [JIRA Connector](https://www.outsystems.com/forge/component/936/jira-connector/), where you can see in detail how the REST requests and responses are customized.
 
+<div class="info" markdown="1">
+
+Using this simple customization method you can add HTTP headers and/or change their values, but you cannot remove existing headers. To remove HTTP headers you must use the OutSystems REST Extensibility API. Check [Advanced Customizations](advanced-customizations.md) for more information.
+
+</div>
 
 ## Customize the request
 

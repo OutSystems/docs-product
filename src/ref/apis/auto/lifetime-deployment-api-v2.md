@@ -230,15 +230,15 @@ Scheme
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey---put">PUT /teams/{TeamKey}/</a></td>
-<td></td>
+<td>Updates a team with the specified details. The operation only affects the Team details. Users and Applications should be associated or dissociated using specific endpoints.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey---delete">DELETE /teams/{TeamKey}/</a></td>
-<td>Removes application from the given team.</td>
+<td>Deletes a team.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey--applications--post">POST /teams/{TeamKey}/applications/</a></td>
-<td>Adds the specified application to a given team.</td>
+<td>Adds the specified application to a given team. The operation adds an existing application to the team. To create a new application, use <a href="#operation--environments--EnvironmentKey--applications--post">POST /environments/{EnvironmentKey}/applications/</a>.</td>
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey--applications--ApplicationKey--delete">DELETE /teams/{TeamKey}/applications/{ApplicationKey}</a></td>
@@ -250,7 +250,7 @@ Scheme
 </tr>
 <tr>
 <td><a href="#operation--teams--TeamKey--users--UserKey---delete">DELETE /teams/{TeamKey}/users/{UserKey}/</a></td>
-<td>Removes a user from the given team</td>
+<td>Removes a user from the given team.</td>
 </tr>
 </tbody>
 </table>
@@ -5404,7 +5404,7 @@ Go to
 </div>
 <div class="panel-body">
 <section class="sw-operation-description">
-<p>Adds the specified application to a given team.</p>
+<p>Adds the specified application to a given team. The operation adds an existing application to the team. To create a new application, use <a href="#operation--environments--EnvironmentKey--applications--post">POST /environments/{EnvironmentKey}/applications/</a></p>
 </section>
 <section class="sw-request-body">
 <div class="rowr">

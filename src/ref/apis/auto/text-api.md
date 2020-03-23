@@ -2,6 +2,9 @@
 
 For Platform Version 9.0.99.11. Provides actions to manipulate character strings such as joining, splitting, search and replace using regular expressions, and custom formatting of DateTime expressions.
 
+
+To use this text API as a reference - click on manage dependencies and select Text extension in Service Studio.
+
 ## Summary
 
 Action | Description

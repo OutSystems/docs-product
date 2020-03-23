@@ -1134,6 +1134,68 @@
         - "Exercise - Deleting Application Data using REST (DELETE)":
             https://www.outsystems.com/learn/lesson/1854/deleting-application-data-using-rest-delete/
 
+# Consumed REST
+
+- ref/lang/auto/ServiceStudio.Plugin.REST.RestClient.final.md:
+    - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
+
+- ref/lang/auto/ServiceStudio.Plugin.REST.RestAction.final.md:
+    - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
+
+- ref/lang/auto/ServiceStudio.Plugin.REST.RestActionInput.final.md:
+    - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
+
+- ref/lang/auto/ServiceStudio.Plugin.REST.RestActionOutput.final.md:
+    - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
+
+- ref/lang/auto/ServiceStudio.Plugin.REST.RestStructure.final.md:
+    - extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
+    - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
+
+- ref/lang/auto/ServiceStudio.Plugin.REST.RestStructureAttribute.final.md:
+    - extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
+    - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
+
+- ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlow.final.md:
+    - one-way: extensibility-and-integration/rest/consume-rest-apis/simple-customizations.md
+    - one-way: extensibility-and-integration/rest/consume-rest-apis/advanced-customizations.md
+    - ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlowInput.final.md
+    - ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlowOutput.final.md
+    - ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackStructure.final.md
+    - ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackStructureAttribute.final.md
+
+# Exposed REST
+
+- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestService.final.md:
+    - one-way: extensibility-and-integration/rest/expose-rest-apis/expose-a-rest-api.md
+
+- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAction.final.md:
+    - one-way: extensibility-and-integration/rest/expose-rest-apis/expose-a-rest-api.md
+
+- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceActionInput.final.md:
+    - one-way: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAction.final.md
+
+- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceActionOutput.final.md:
+    - one-way: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAction.final.md
+
+- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlow.final.md:
+    - one-way: extensibility-and-integration/rest/expose-rest-apis/preprocess-rest-api-requests.md
+    - one-way: extensibility-and-integration/rest/expose-rest-apis/customize-rest-api-responses.md
+    - ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowInput.final.md
+    - ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowOutput.final.md
+    - ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackStructure.final.md
+    - ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackStructureAttribute.final.md
+
+- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlow.final.md:
+    - one-way: extensibility-and-integration/rest/expose-rest-apis/add-basic-authentication-to-an-exposed-rest-api.md
+    - one-way: extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md
+
+- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlowInput.final.md:
+    - one-way: extensibility-and-integration/rest/expose-rest-apis/add-basic-authentication-to-an-exposed-rest-api.md
+    - one-way: extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md
+
+# JSON
+
 - ref/lang/auto/Class.JSON Serialize.final.md:
     - external:
         - "Demo - Handling JSON data":

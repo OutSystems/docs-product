@@ -23,6 +23,7 @@ To distribute your app as a PWA, you need to meet the following requirements:
 * Platform Server 11.7.0.3110 or later
 * LifeTime Oct.2019 CP1 or later
 * Enabled the [early access feature](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Early_access_to_OutSystems_features) in LifeTime
+* Application Server requires a valid SSL certificate to allow HTTPS communication 
 
 </div>
 

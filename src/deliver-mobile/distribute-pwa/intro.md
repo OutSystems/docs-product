@@ -1,5 +1,5 @@
 ---
-summary: Develop a Progressive Web App (PWA) by creating a Mobile App and toggling the feature on. Try it out in Android and iOS.
+summary: Develop a Progressive Web App (PWA) by creating a Mobile App and toggling on the option to distribute the app as PWA. Try your app in Android and iOS.
 tags: support-application_development; runtime-mobile;
 ---
 
@@ -183,3 +183,7 @@ Here are some notes that can help you in troubleshooting the PWA feature.
 Note that you need to republish your apps after the Platform Server upgrade for the new features to work correctly, as instructed in the Platform Server upgrade list. If you haven't done it already, republish the apps in the factory and then turn on the toggle **Distribute as PWA**.
 
 There is a potential workaround for the PWA toggle button to work without the republishing step, which is to republish the current module once and then try turning on the toggle **Distribute as PWA**. However, keep in mind that republishing the apps after the upgrade is a mandatory step, and skipping it can cause unintended effects.
+
+### There are runtime errors
+
+Try deleting the local data of the app. Locate the settings in the browser, and delete the data for the domain from which the app was installed. In Chrome go to **Settings** > **Site Settings** > **Cookies and site data** > **See all cookies and site data**, search for the domain and clear the data.

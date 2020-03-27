@@ -12,7 +12,7 @@ When you enable users to send feedback for your applications, the submitted feed
 
     ![](images/app-feedback-handle-3.png?width=800)
 
-1. Login with an end-user with Administrator or FeedbackManager permissions.
+1. Sign in with the credentials of an end user account that has Administrator or FeedbackManager permissions.
 
 1. In the Feedback section, you find the feedback submitted for each application:
 

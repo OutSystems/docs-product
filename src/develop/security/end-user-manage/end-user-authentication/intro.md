@@ -15,7 +15,7 @@ The authentication of **IT users**, like Developers and IT Administrators, is [c
 When you start developing a new module it has the built-in logic for end user authentication. OutSystems comes with six distinct authentication method: Internal, Active Directory, LDAP (Lightweight Directory Access Protocol), SAML 2.0 (Security Assertion Markup Language), Azure AD (Azure Active Directory) and OKTA.
 
 Internal
-:   The default authentication method. The end user information is stored in the OutSystems database. The credentials are not stored, but a cryptographic hash function is computed using the credentials and only its result is stored. When the end user attempts to logs in, the hash function is computed again and its result is compared with what is in the database.
+:   The default authentication method. The end user information is stored in the OutSystems database. The credentials are not stored, but a cryptographic hash function is computed using the credentials and only its result is stored. When the end user attempts to log in, the hash function is computed again and its result is compared with what is in the database.
 
 Active Directory
 :   Uses your Active Directory to authenticate the end users. Available only in on-premises installations.  

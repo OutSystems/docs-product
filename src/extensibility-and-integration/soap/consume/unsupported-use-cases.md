@@ -42,7 +42,7 @@ The current list of unsupported features/use cases is the following:
 * [Attribute Groups](<#attribute-groups>)
 * [SOAP Action names with special characters](#special-characters)
 * [Repeated SOAP structure attribute names](#repeated-attribute-names)
-
+* [Attributes in the same SOAP structure named "&lt;attrib&gt;" and "&lt;attrib&gt;Field"](#attributes-field)
 
 <div class="info" markdown="1">
 
@@ -364,3 +364,23 @@ Consider the following example, where the `AccountInformationType` type contains
 #### Use Case Workaround
 
 If you only need to send or receive one of the elements with the repeated name, edit the type definition in a local copy of the WSDL and delete the other occurrences.
+
+
+## Attributes in the same SOAP structure named "&lt;attrib&gt;" and "&lt;attrib&gt;Field" { #attributes-field }
+
+It's not currently possible to have two attributes in the same SOAP structure that have the same name except for a "Field" suffix (case sensitive).
+
+Consider the following example, where the `ExampleType` type contains two attributes, one named `order` and another named `orderField`.
+
+```xml
+<xsd:complexType name="ExampleType">
+    <xsd:sequence>
+        <xsd:element name="order" type="xsd:string"/>
+        <xsd:element name="orderField" type="xsd:string"/>
+    </xsd:sequence>
+</xsd:complexType>
+```
+
+### Use Case Workaround
+
+Edit the type definition in a local copy of the WSDL and change the name of the `<attrib>Field` attribute.

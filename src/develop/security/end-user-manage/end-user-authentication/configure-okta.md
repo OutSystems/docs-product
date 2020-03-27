@@ -89,6 +89,8 @@ To set up OKTA authentication for end users do the following:
 
     ![](images/okta-upload-file-users.jpg)
 
+1. Make sure you assign your new OKTA application to a user or a group to be able to proceed. You can do this operation in the OKTA portal. Check [OKTA's documentation](https://help.okta.com/en/prod/Content/Topics/Directory/eu-assign-apps.htm) for more information.
+
 1. Test your new authentication settings by logging in the Users application again.  
     Logout of the Users application if you're logged in.
 

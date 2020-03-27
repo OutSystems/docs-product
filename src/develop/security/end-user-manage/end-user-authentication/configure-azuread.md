@@ -58,6 +58,8 @@ To set up Azure AD authentication for end users do the following:
 
     ![](images/azuread-upload-federation-metadata.png)
 
+1. Make sure you assign a user or a group to the Azure application you created to be able to proceed. You can do this operation in the Azure portal. Check [Microsoft's documentation](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/assign-user-or-group-access-portal#assign-users-or-groups-to-an-app-via-the-azure-portal) for more information.
+
 1. In the Azure Active Directory portal, click **Test** in step 5 to test your configuration. 
 
     ![](images/azuread-test.png)

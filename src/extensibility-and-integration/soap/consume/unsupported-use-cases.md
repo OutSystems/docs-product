@@ -4,25 +4,6 @@ summary: Check the list of currently unsupported use cases when consuming SOAP 1
 
 # Unsupported SOAP Use Cases
 
-## Types of Unsupported Use Cases
-
-Service Studio detects not only SOAP features that currently cannot be consumed in OutSystems, but also **where** the limitations are occurring, when this information can be determined.
-
-Unsupported features/use cases fall into one of the following scenarios:
-
-Feature/Use case unsupported due to outdated Platform Server version in the current environment
-:   The Platform Server version of the environment that Service Studio is connected to does not support the feature/use case. Web service methods using the feature/use case **will not be imported**. The user will receive a message to contact the Administrator asking for an upgrade to the Platform Server version.
-
-Feature/Use case not fully supported in the whole infrastructure because at least one of its environments is outdated
-:   Web service methods using the feature/use case **will still be imported**. The user will receive a message to contact the Administrator asking for a factory upgrade, or else errors might occur when deploying to outdated environments.  
-    _Note:_ This unsupported use case is only identified when the infrastructure is using LifeTime.
-
-Feature/Use case currently unsupported
-:   The feature/use case is currently unsupported (in the current version of Service Studio). Web service methods using the unsupported feature/use case **will not be imported**.  
-_Tip:_ Remember to check the latest Service Studio releases to see if the feature is already supported.
-
-## Unsupported Use Cases
-
 While importing a SOAP Web Service in Service Studio, you will get immediate feedback on any currently unsupported feature/use case identified by the development environment. 
 
 In this case, you will not be able to import the Web Service straight away in Service Studio. However, in some cases you can perform small changes in the WSDL describing the service so that the identified limitations no longer apply, and you can effectively consume the Web Service in OutSystems. 
@@ -42,7 +23,7 @@ The current list of unsupported features/use cases is the following:
 * [Attribute Groups](<#attribute-groups>)
 * [SOAP Action names with special characters](#special-characters)
 * [Repeated SOAP structure attribute names](#repeated-attribute-names)
-
+* [Attributes in the same SOAP structure named "&lt;attrib&gt;" and "&lt;attrib&gt;Field"](#attributes-field)
 
 <div class="info" markdown="1">
 
@@ -54,7 +35,7 @@ Be sure to visit this page regularly for an updated list of the current limitati
 In the following sections we provide general instructions to perform the necessary WSDL changes for working around some of the currently unsupported features/use cases.
 
 
-### Multidimensional Arrays
+## Multidimensional Arrays
 
 Although SOAP arrays are generally supported, the particular case of Multidimensional Arrays is not currently supported in OutSystems.
 
@@ -90,12 +71,12 @@ Examples:
 </xsd:complexType>
 ```
 
-#### Use Case Workaround
+### Use Case Workaround
 
 Currently there is no generic workaround available to overcome this unsupported use case.
 
 
-### Abstract Types Without Implementation
+## Abstract Types Without Implementation
 
 A definition present in a WSDL or included schema might be marked as abstract. This means that, to actually use it, you must use a derived (non-abstract) type. When there is no non-abstract type derived from it, the type cannot actually be used in practice. 
 
@@ -112,7 +93,7 @@ In the following example `AbstractContract` is declared as abstract. If it's use
 </xsd:complexType>
 ```
 
-#### Use Case Workaround
+### Use Case Workaround
 
 There are two possible workarounds, according to your specific scenario:
 
@@ -121,7 +102,7 @@ There are two possible workarounds, according to your specific scenario:
 * If you **will not be using it** and it is marked as optional (e.g. with `minOccurs="0"`) whenever it is used, you can remove the usage of that type and the type itself from the service definition.
 
 
-### Recursion
+## Recursion
 
 Recursive data types are structures that reference themselves. Inside them there is a reference to another element of its own type.
 
@@ -141,7 +122,7 @@ Check the following recursion example:
 </xsd:complexType>
 ```
 
-#### Use Case Workaround
+### Use Case Workaround
 
 Follow these generic guidelines to adapt the WSDL so that the unsupported use case is no longer identified by the platform:
 
@@ -153,7 +134,7 @@ Following the  example above, if you needed to handle two levels of recursion yo
     1. Remove the `Contacts` element from `Person2` definition.
 
 
-### List Attribute in a Single List Attribute
+## List Attribute in a Single List Attribute
 
 This use case is identified when there is a `complexType` with a single element with `maxOccurs` > 1 and that type is used as an element inside another type with `maxOccurs` > 1. 
 
@@ -175,7 +156,7 @@ Example:
 ```
 In this example, the `Integration_ID` element in `Organization` is not supported, because it has `External_Integration_ID` type — composed of a single element with `maxOccurs` > 1 — and is itself a list.
 
-#### Use Case Workaround
+### Use Case Workaround
 
 Add a dummy optional element (i.e. with `minOccurs="0"`) in the type containing the single list element.
 
@@ -186,7 +167,7 @@ Following the previous example, you would add the following element inside the `
 ```
 
 
-### Wildcards - Any Inside Choices
+## Wildcards - Any Inside Choices
 
 The `xsd:any` construct can be used to specify that an arbitrary element (optionally from certain namespaces) can be present in a type.  
 Although this feature is generally supported in the platform, there is a specific situation that is not supported yet, when the `xsd:any` element is inside a Choice definition. In this case, the structure will not be imported.
@@ -205,7 +186,7 @@ Example:
 </xsd:element>
 ```
 
-#### Use Case Workaround
+### Use Case Workaround
 
 Currently there is no generic workaround available to overcome this unsupported use case.
 
@@ -213,7 +194,7 @@ Although it's possible to modify the WSDL by moving the `xsd:any` element outsid
 Additionally, this change should only be made for types included in requests.
 
 
-### Wildcards - Any Attribute
+## Wildcards - Any Attribute
 
 The `xsd:anyAttribute` construct can be used to specify that an arbitrary attribute, optionally from certain namespaces, can be present in a type.
 
@@ -229,13 +210,13 @@ Example:
 </xsd:complexType>
 ```
 
-#### Use Case Workaround
+### Use Case Workaround
 
 If the type that contains `xsd:anyAttribute` is being sent in a request and you know what attribute you will need to send, you can replace `anyAttribute` with it.  
 Otherwise, there is no generic workaround available to overcome the unsupported use case.
 
 
-### Any types - AnyType
+## Any types - AnyType
 
 Every element present in a SOAP service definition has a type. In some special cases that type might be `xsd:anyType`. This is a special type: it's the most generic possible type and all other types derive from it. Having it in a element means that the element can have any possible type.
 
@@ -252,12 +233,12 @@ Example:
 </xsd:complexType>
 ```
 
-#### Use Case Workaround
+### Use Case Workaround
 
 Currently there is no generic workaround available to overcome this unsupported use case.
 
 
-### Any types - AnySimpleType and AnyAtomicType
+## Any types - AnySimpleType and AnyAtomicType
 
 The `xsd:anySimpleType` and `xsd:anyAtomicType` types represent all simple (i.e. not composed) types. They can be used in a declaration as a placeholder; values of a specific type will be provided at runtime.
 
@@ -277,12 +258,12 @@ _Notes:_
 — The `xsd:anyAtomicType` type does not include types defined as unions (`xsd:union`) or lists (`xsd:list`) of other types.  
 — `AnySimpleType` and `AnyAtomicType` types are mapped as strings by WCF.
 
-#### Use Case Workaround
+### Use Case Workaround
 
 Since all possible values of the above types can be represented as strings, a possible workaround is to change the element type to the built-in string type.
 
 
-### Attribute Groups
+## Attribute Groups
 
 The `attributeGroup` element is used to group a set of attribute declarations so that they can be incorporated as a group in complex type definitions.
 
@@ -305,11 +286,11 @@ Example:
 </xsd:attributeGroup>
 ```
 
-#### Use Case Workaround
+### Use Case Workaround
 
 Since an attribute group is just a container of attributes that can be referenced in complex types, a possible solution is to put all the attributes from the attribute group directly in the complex types that use it.
 
-### SOAP Action names with special characters { #special-characters }
+## SOAP Action names with special characters { #special-characters }
 
 It's not currently possible to create Actions from some operations defined in a WSDL that contain special characters like "-". 
 
@@ -336,13 +317,13 @@ In the example below, the `GetExtrasAndAdd-Ons` operation is not supported and w
 </wsdl:binding>
 ```
 
-#### Use Case Workaround
+### Use Case Workaround
 
 None, for the operations whose name contains special characters.  
 To import other operations from a WSDL, save the WSDL locally and edit it to remove any operations that cause this issue.
 
 
-### Repeated SOAP structure attribute names { #repeated-attribute-names }
+## Repeated SOAP structure attribute names { #repeated-attribute-names }
 
 A SOAP structure can have more than one element with the same name in non-consecutive positions (lists), although this is a rare case.
 
@@ -361,6 +342,26 @@ Consider the following example, where the `AccountInformationType` type contains
 </xsd:complexType>
 ```
 
-#### Use Case Workaround
+### Use Case Workaround
 
 If you only need to send or receive one of the elements with the repeated name, edit the type definition in a local copy of the WSDL and delete the other occurrences.
+
+
+## Attributes in the same SOAP structure named "&lt;attrib&gt;" and "&lt;attrib&gt;Field" { #attributes-field }
+
+It's not currently possible to have two attributes in the same SOAP structure that have the same name except for a "Field" suffix (case sensitive).
+
+Consider the following example, where the `ExampleType` type contains two attributes, one named `order` and another named `orderField`.
+
+```xml
+<xsd:complexType name="ExampleType">
+    <xsd:sequence>
+        <xsd:element name="order" type="xsd:string"/>
+        <xsd:element name="orderField" type="xsd:string"/>
+    </xsd:sequence>
+</xsd:complexType>
+```
+
+### Use Case Workaround
+
+Edit the type definition in a local copy of the WSDL and change the name of the `<attrib>Field` attribute.

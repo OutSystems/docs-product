@@ -37,7 +37,7 @@ The environment **Purpose** should only be changed when an environment is being 
 
 In case you need to change the environment **Purpose**, the new configuration [is applied to all modules automatically](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Applying_Configurations_in_Service_Center).
 
-This runtime setting must be set to one of the following values:
+This setting must be set to one of the following values:
 
 Development
 
@@ -55,11 +55,7 @@ Management (LifeTime)
 
 :   This is where LifeTime, the infrastructure management console, lives. An environment with this purpose requires stability, and that’s why they also behave similarly to environments with Production purpose, with no optimizations being done.
 
-The environment's license affects the **Purpose** you can configure for the environment in the following way:
-
-* If an environment has a Development or Non-Production license, you can set the Purpose as Development or Non-Production.
-
-* Production and Management licenses support all Purposes.
+The **Purpose** you can configure for the environment is subject to the environment's license.
 
 #### Feature availability for different Purposes
 

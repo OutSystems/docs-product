@@ -5,15 +5,15 @@ tags: runtime-traditionalweb
 
 # Configure Azure AD Authentication
 
-The configuration of the Azure AD authentication method is quite similar to the [SAML 2.0](configure-saml.md) one, but in this case the "Claims" settings are already filled in with Azure AD default values.
-
-Additionally, the configuration settings for Azure AD authentication can be filled in by uploading/downloading files with metadata, which helps avoid human errors. 
-
 <div class="info" markdown="1">
 
 To set up SAML for Azure AD, you need Platform Server Release Jul.2019 CP2 or later.
 
 </div>
+
+The configuration of the Azure AD authentication method is quite similar to the [SAML 2.0](configure-saml.md) one, but in this case the "Claims" settings are already filled in with Azure AD default values.
+
+Additionally, the configuration settings for Azure AD authentication can be filled in by uploading/downloading files with metadata, which helps avoid human errors. 
 
 <div class="info" markdown="1">
 
@@ -76,7 +76,7 @@ To set up Azure AD authentication for end users do the following:
 
     If the authentication is unsuccessful, double-check your configuration settings.
 
-1. Follow the instructions provided for the SAML 2.0 authentication method to [change the Logout flow of your OutSystems applications](configure-saml.md#change-logout-flow).
+1. Follow the instructions provided for the SAML 2.0 authentication method to [check the authentication flows of your OutSystems applications](configure-saml.md#change-auth-flows).
 
 
 ## Troubleshooting Azure AD authentication issues

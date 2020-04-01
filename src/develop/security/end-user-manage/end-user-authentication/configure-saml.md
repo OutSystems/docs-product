@@ -30,8 +30,7 @@ If you have some logic that must run at each login, or if your IdP has some part
 To configure SAML 2.0 end user authentication you need to take the following steps:
 
 1. Configure SAML 2.0 authentication in the Users application.
-1. Change the Logout flow of your OutSystems applications (only required when using Single Logout).
-
+1. Check if your application authentication flows (login/logout) already support SAML 2.0. If not, you must change these flows according to the instructions we provide.
 
 ### 1. Configure SAML 2.0 authentication in the Users application { #configure-users }
 
@@ -47,51 +46,14 @@ Do the following:
     Similarly, you can import a Federation metadata XML file containing the IdP Server Settings in the Users application if your IdP has the option to export this metadata file.
 
 
-### 2. Change the Logout flow of your OutSystems applications { #change-logout-flow }
+### 2. Check the authentication flows of your OutSystems applications { #change-auth-flows }
 
-<div class="info" markdown="1">
+Depending on the version of OutSystems UI Web (for Traditional Web Apps) or OutSystems UI Reactive Templates (for Reactive Web Apps) that was installed in your development environment when you created your application, you may need to update the login/logout flows of your app so that they are compatible with SAML 2.0 authentication.
 
-This change is only required if you're using an [OutSystems UI Web](https://www.outsystems.com/forge/component-overview/4143/outsystems-ui-web) version older than version 1.7.7.
+For more information, check the following topics according to your application type:
 
-</div>
-
-If your Identity Provider (IdP) supports Single Logout operations started by the Service Provider (SP) and you wish to support this functionality, while still using an older version of OutSystems UI Web, you will need to change the Logout flow of your OutSystems applications. The procedure outlined below is optional and applicable to this Single Logout scenario.
-
-By default, the Logout flow will invalidate the session in the OutSystems application server. However, in an IdP SSO scenario most of the times the logout must also be performed on the IdP Server, even though the logout operation may start on the Service Provider side (i.e. in an OutSystems application). This is done by redirecting the user to a specific URL in the IdP Server. In this case, you will need to update each OutSystems application using Users as its user provider to perform this redirect when logging out a user.
-
-Do the following:
-
-1. In the Users application, configure the **IdP server Single Logout URL** field in the Configure Authentication page with the specific logout URL provided by your IdP Server.
-
-1. In Service Studio, open the home module of your OutSystems application and open the **Logout** screen action of the **LoginInfo** web block, available at UI Flows > Common > LoginInfo.  
-In the next steps you will edit the flow to perform the redirect if the logout URL was specified in the SAML 2.0 configuration settings.
-
-1. Get the IdP's logout URL using the **User_GetUnifiedLogoutUrl** server action (available in the Users module) and redirect the user to that URL, if it's not empty.
-
-1. If the logout URL is empty, log out the user, terminating the session, by calling the **User_Logout** server action.
-
-1. After the server action call, redirect the user to the IdP's login URL. Get this URL by calling the **User_GetUnifiedLoginUrl** server action, and then redirect the user to that URL, if it's not empty.  
-
-1. If the IdP's login URL is empty, navigate the user to the **Common\Login** screen.
-
-Check the following sample flow for a possible implementation of all the steps above:
-
-![](images/saml-logout-flow.png)
-
-If your **LoginInfo** web block contains a "Login" link pointing to the **Logout** screen action, you must also do the following:
-
-1. Create a new screen action in the LoginInfo web block named **Login** and edit the flow of the new action.
-
-1. Get the IdP's login URL using the **User_GetUnifiedLoginUrl** server action (available in the Users module) and redirect the user to that URL, if it's not empty.  
-
-1. If the login URL is empty, navigate the user to the **Common\Login** screen.
-
-1. Point the "Login" link to the new **Login** screen action.
-
-Check the following sample flow for a possible implementation of all the steps above:
-
-![](images/saml-login-flow.png)
-
+* For **Traditional Web Apps** check [Updating the logout flow of your Traditional Web App to support SAML 2.0](https://success.outsystems.com/Documentation/Unlisted/Knowledge_Team/Enterprise_Customers/Upgrading/Updating_the_logout_flow_of_your_Traditional_Web_App_to_support_SAML_2.0). 
+* For **Reactive Web Apps** check [Updating the login/logout flows of your Reactive Web App to support SAML 2.0](https://success.outsystems.com/Documentation/Unlisted/Knowledge_Team/Enterprise_Customers/Upgrading/Updating_the_login%2F%2Flogout_flows_of_your_Reactive_Web_App_to_support_SAML_2.0).
 
 ## Mapping Identity Provider Server Groups to OutSystems Groups
 

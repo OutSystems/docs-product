@@ -17,9 +17,10 @@ The general authentication workflow is the following:
 
 The current SAML 2.0 implementation in OutSystems has some limitations that are outlined below. Since the OutSystems platform is being continuously improved, be sure to check this page regularly for an updated list of limitations.
 
-* The SAML 2.0 support provided by the Users module is currently only applicable to Traditional Web applications. To use SAML 2.0 in Mobile or Reactive apps you can use Forge components that address those use cases, like [IdP Connector](https://www.outsystems.com/forge/component-overview/599/idp), [IdP Mobile](https://www.outsystems.com/forge/component-overview/2044/idp-mobile) and [IdP React](https://www.outsystems.com/forge/component-overview/7090/idpreact).  
+* The SAML 2.0 support provided by the Users module is only applicable to **Traditional Web Apps** and **Reactive Web Apps**. To use SAML 2.0 in Mobile apps you can use Forge components that address those use cases, like [IdP Connector](https://www.outsystems.com/forge/component-overview/599/idp) and [IdP Mobile](https://www.outsystems.com/forge/component-overview/2044/idp-mobile).  
     _Note:_ The Forge components mentioned above are not supported by OutSystems and are maintained by the Forge community.
-* To implement single logout you must change the logout flow in your OutSystems applications according to the instructions provided in this page.
+* To implement single logout you may need to change the authentication flows of your OutSystems application. Check below for details.
+
 * Though the Users application is multi-tenant, multi-tenancy is not supported when using SAML 2.0, Azure AD or OKTA authentication methods.
 
 If you have some logic that must run at each login, or if your IdP has some particular configuration not supported by the Users application, consider cloning the Users module of the Users application and extend it to fulfill your specific requirements.

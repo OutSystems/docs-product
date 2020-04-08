@@ -32,7 +32,7 @@ To configure SAML 2.0 end user authentication you need to take the following ste
 1. Configure SAML 2.0 authentication in the Users application.
 1. Check if your application authentication flows (login/logout) already support SAML 2.0. If not, you must change these flows according to the instructions we provide.
 
-### 1. Configure SAML 2.0 authentication in the Users application { #configure-users }
+### Configure SAML 2.0 authentication in the Users application { #configure-users }
 
 Make sure you gather all the required information from your Identity Provider beforehand to be able to configure SAML 2.0 authentication in the Users application.
 
@@ -46,7 +46,7 @@ Do the following:
     Similarly, you can import a Federation metadata XML file containing the IdP Server Settings in the Users application if your IdP has the option to export this metadata file.
 
 
-### 2. Check the authentication flows of your OutSystems applications { #change-auth-flows }
+### Check the authentication flows of your OutSystems applications { #change-auth-flows }
 
 Depending on the version of OutSystems UI Web (for Traditional Web Apps) or OutSystems UI Reactive Templates (for Reactive Web Apps) that was installed in your development environment when you created your application, you may need to update the login/logout flows of your app so that they are compatible with SAML 2.0 authentication.
 
@@ -54,6 +54,7 @@ For more information, check the following topics according to your application t
 
 * For **Reactive Web Apps** check [Updating the login/logout flows of your Reactive Web App to support SAML 2.0](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Updating_the_login%2F%2Flogout_flows_of_your_Reactive_Web_App_to_support_SAML_2.0).
 * For **Traditional Web Apps** check [Updating the logout flow of your Traditional Web App to support SAML 2.0](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Updating_the_logout_flow_of_your_Traditional_Web_App_to_support_SAML_2.0). 
+
 
 ## Mapping Identity Provider Server Groups to OutSystems Groups
 

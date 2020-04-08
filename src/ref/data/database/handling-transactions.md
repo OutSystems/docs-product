@@ -18,7 +18,7 @@ You can manage transactions explicitly through the CommitTransaction and AbortTr
 
 ## Isolation Levels
 
-The following table shows the isolation level OutSystem uses in the different databases:
+The following table shows the isolation level OutSystems uses in the different databases:
 
 DB2  |  MySQL  |  Oracle  |  SQL Server  
 ---|---|---|---  

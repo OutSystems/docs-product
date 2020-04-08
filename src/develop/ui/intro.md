@@ -31,7 +31,7 @@ Created and maintained by OutSystems, the built-in screen templates are ready to
 
 ## The Custom Application Templates
 
-The application templates you use to build your applications. Refer to the OutSystem documentation to learn [how to create a Custom Application Template](reuse/create-a-custom-application-template.md).
+The application templates you use to build your applications. Refer to the OutSystems documentation to learn [how to create a Custom Application Template](reuse/create-a-custom-application-template.md).
 
 
 ![OutSystems UI Custom Templates](images/outsystems-ui-custom-templates.png?width=800)

@@ -534,6 +534,19 @@
     - develop/ui/inputs/popup.md
     # Popover Menu
     - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popover.final.md
+
+# Radio Group
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioGroup.final.md:
+    # Create and Use a Popup
+    - develop/ui/inputs/button-group.md
+    # Radio Button
+    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioButton.final.md
+
+# Radio Button
+- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioButton.final.md:
+    # Create and Use a Popup
+    - develop/ui/inputs/button-group.md
+
       
 # Switch
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md:

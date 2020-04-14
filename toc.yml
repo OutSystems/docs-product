@@ -901,6 +901,8 @@
                 - href: ref/lang/auto/Class.Placeholder Widget.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popover.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popup.final.md
+                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioButton.final.md
+                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioGroup.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TableRecords.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md

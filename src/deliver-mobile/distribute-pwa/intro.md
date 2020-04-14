@@ -45,8 +45,6 @@ Create a Mobile App and turn on the toggle **Distribute as PWA** in the app deta
 
 You don't have to republish your app after changing the value of the **Distribute as PWA**. This change is applied in real-time.
 
-If you stage your app to another environment during the early access, for example to a production server, you need to connect to the environment with Service Studio and activate the PWA for that environment.
-
 ## Try out your progressive web app
 
 Here is how you can run your PWA. Go to app details and click **Distribute** tab:
@@ -160,6 +158,8 @@ You can use [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) 
    }
 }
 ```
+
+You should be able to use the JSON for both PWA and plugins.
 
 ## Plugins in PWA {#plugins}
 

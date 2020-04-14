@@ -57,6 +57,12 @@ Within a defined period of time the server uses the information stored in the co
 
 ## Configure App Authentication Settings
 
+<div class="info" markdown="1">
+
+The setting **Single sign-on between app types** is available in Platform Server 11.8 and later.
+
+</div>
+
 OutSystems authentication mechanism is configurable per environment to meet different security requirements.
 
 You can configure general authentication settings and also specific settings for persistent and session authentication.
@@ -64,6 +70,8 @@ You can configure general authentication settings and also specific settings for
 The following setting applies to both persistent and session authentication:
 
 * **Cache Time In Minutes** – Number of minutes the authentication information sent by the device is considered valid by the server without the need to fetch it from the database. After this time, the server validates the authentication tokens against the information stored in the database and supplies new authentication tokens. If set to 0, the authentication cache mechanism is disabled.
+
+* **Single Sign-On Between App Types** - When activated, this option lets users navigate between Traditional, Reactive Web Apps, and Mobile Apps distributed as Progressive Web Apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they are signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you need to have HTTPS enabled in the environment.
 
 The following settings are used for persistent authentication:
 
@@ -83,8 +91,8 @@ To configure the authentication settings for apps in your OutSystems environment
 
 3. Select the **Applications Authentication** area:
 
-    ![Applications Authentication settings in Service Studio](images/configure-mobile-authentication.png?width=600) 
+    ![Applications Authentication settings in Service Studio](images/configure-app-authentication-sc.png?width=600) 
 
 In this page you can also generate new keys for authenticating and encrypting cookie values. This will force all the users of your apps to login again in the next server request. To generate new keys, press the Generate button in Authentication and Encryption Keys area:
 
-![The Generate button for new Authentication and Encryption Keys](images/configure-mobile-authentication-generate-keys.png)
+![The Generate button for new Authentication and Encryption Keys](images/configure-app-authentication-generate-keys-sc.png)

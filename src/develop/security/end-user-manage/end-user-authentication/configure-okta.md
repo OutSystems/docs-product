@@ -104,7 +104,7 @@ To set up OKTA authentication for end users do the following:
 
     If the authentication is unsuccessful, double-check your configuration settings.
 
-**Note:** If you're using an older version of OutSystems UI you will need to change the logout flow of your OutSystems applications, as described for the SAML 2.0 authentication method. Check [Change the Logout flow of your OutSystems applications](configure-saml.md#change-logout-flow) for more information.
+**Note:** If you're using an older version of OutSystems UI you must change the logout flow of your OutSystems applications, as described for the SAML 2.0 authentication method in [Check the authentication flows of your OutSystems applications](configure-saml.md#change-auth-flows).
 
 
 ## Troubleshooting OKTA authentication issues

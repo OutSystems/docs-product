@@ -1,5 +1,5 @@
 ---
-summary: Allow end users to select a single option from a group of choices using Button Groups in Reactive Web Apps and Mobile Apps or Radio Buttons in Traditional Web Apps.
+summary: Let users select a single option from a group of choices, with the Radio Group widget.
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
 ---
 

@@ -59,7 +59,7 @@ Within a defined period of time the server uses the information stored in the co
 
 <div class="info" markdown="1">
 
-The setting **Single sign-on between app types** is available in Platform Server 11.8 and later.
+The setting **Single sign-on between app types** (SSO) is available in Platform Server 11.8 and later.
 
 </div>
 

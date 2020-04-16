@@ -73,15 +73,9 @@ Follow these steps to install and run your PWA on an iOS device.
 
 <div class="info" markdown="1">
 
-Due to a bug in iOS, the PWA is not working in the iOS versions 13.0 to 13.2. Use iOS 13.3 or later instead.
+Due to a bug in iOS, PWAs are not working in the iOS versions 13.0 to 13.2. Use iOS 13.3 or later instead.
 
 </div>
-
-If you're running iOS 13 and later, running your PWA on iOS requires enabling the Web SQL settings. Go to **Settings** > **Safari** > **Advanced** > **Experimental Features** > and make sure **Disable Web SQL** is off.
-
-![WebSQL Settings in Safari iOS](images/pwa-ios-websql-settings.png?width=300)
-
-Now you can visit the URL and install your app.
 
 1. Visit the app URL in Safari.
 2. Tap the Share button. The share menu opens.
@@ -127,6 +121,12 @@ The manifest is generated automatically, and you don't have to use it unless you
 
 ### Overriding the manifest settings {#override-pwa-manifest}
 
+<div class="warning" markdown="1">
+
+We identified an issue that prevents LifeTime to override PWA Extensibility Configurations. We're working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
+
+</div>
+
 <div class="info" markdown="1">
 
 Keep in mind that the LifeTime PWA manifest overrides the manifest in Service Studio.
@@ -135,8 +135,8 @@ Keep in mind that the LifeTime PWA manifest overrides the manifest in Service St
 
 Using the manifest overrides the values you set in Service Studio. You have to use the manifest in the `PWAManifest` section of the JSON of the **Extensibility Configurations** field. You can edit the manifest in two places:
 
-* In Service Studio, where the manifest overrides any settings you have in UI **in all environments**. Edit the JSON manifest in **Extensibility Configurations** field of the module properties.
-* In LifeTime, where the manifest overrides any settings you have in UI **in the current environment only**. You can find the **Extensibility Configurations** field in the **Applications** tab, under the **Advanced** section.
+* In Service Studio, where the manifest overrides any settings you have in UI **in all environments**. Edit the JSON manifest in the **Extensibility Configurations** field of the module properties.
+* In LifeTime, where the manifest overrides any settings you have in UI **in the current environment only**. You can find the **Extensibility Configurations** field in **Applications** > **(app name)** > **Settings** > **Advanced** > **Extensibility Configurations**
 
 ### Manifest resources and sample JSON
 
@@ -186,4 +186,24 @@ There is a potential workaround for the PWA toggle button to work without the re
 
 ### There are runtime errors
 
-Try deleting the local data of the app. Locate the settings in the browser, and delete the data for the domain from which the app was installed. In Chrome go to **Settings** > **Site Settings** > **Cookies and site data** > **See all cookies and site data**, search for the domain and clear the data.
+Try deleting the local data of the app. Locate the settings in the browser, and clear the data for the domain from which the app was installed. In Chrome go to **Settings** > **Site Settings** > **Cookies and site data** > **See all cookies and site data**, search for the domain and clear the data.
+
+### Extensibility Configurations override is not working when applied in LifeTime
+
+There's an issue with applying Extensibility Configurations from LifeTime to override the manifest. The team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
+
+### PWA doesn't install in iOS
+
+If you're using Platform Server 11.7 or earlier **and** iOS 13 and later, you should either:
+
+* Upgrade to Platform Server 11.8 or later
+* Disable Web SQL. Go to **Settings** > **Safari** > **Advanced** > **Experimental Features** > and make sure **Disable Web SQL** is off.
+    
+    ![WebSQL Settings in Safari iOS](images/pwa-ios-websql-settings.png?width=250)
+
+
+### PWA doesn't work in iOS
+
+One of the reasons why your PWA is not working in iOS might be because of an iOS bug that prevents PWAs from running correctly in the iOS versions 13.0 to 13.2. 
+
+To fix this issue, use iOS 13.3 or later instead.

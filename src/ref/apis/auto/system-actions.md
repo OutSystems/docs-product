@@ -737,7 +737,7 @@ Creates a new tenant and associates it with the provisioning site.
 
 eSpaceName
 :   Type: mandatory, Text.  
-    eSpaceName of the UserProvider that binds the Tenant to that specified UserProvider.
+    Name of the [User Provider module](../../../develop/security/end-user-manage/end-user-authentication/single-sign-on.md) that will provide the users and sessions to the new tenant. The new tenant will become a User Subscriber to the specified module.
 
 TenantName
 :   Type: mandatory, Text.  

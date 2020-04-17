@@ -18,7 +18,7 @@ You can customize the patterns by writing additional CSS that changes their look
 
 By creating additional [CSS](../look-feel/css.md) on a new module, it is possible to override the look of most patterns, so this is the simplest way of customizing them.
 
-Changing the structure of a pattern by, for instance, adding a couple of tabs, requires the pattern to be copied to a new eSpace and then adding the correct placeholders. The same rule applies to code changes. A copied pattern will not be upgraded with Silk UI versions that have code fixes.
+Changing the structure of a pattern by, for instance, adding a couple of tabs, requires the pattern to be copied to a new eSpace and then adding the correct placeholders. The same rule applies to code changes. A copied pattern will not be upgraded with OutSystems UI versions that have code fixes.
 
 **Note:** From OutSystems 10 onward, it's not possible to directly change modules that are part of the UI framework. If you need to change a specific pattern, copy it and make the necessary changes in your cloned version.
 

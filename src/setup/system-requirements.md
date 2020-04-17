@@ -76,7 +76,7 @@ For more information on how to enable this service check Amazon's [EC2Config ser
 
 ## Amazon RDS considerations 
 
-OutSystems supports Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, and Oracle 18c on Amazon RDS. The database instance class must fulfill the following requirements:
+OutSystems supports Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
 
 * 1 vCPU (virtual central processing unit) or higher
 * 1 ECU (EC2 Compute Unit) or higher
@@ -85,7 +85,8 @@ OutSystems supports Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle
 
 Example of a DB instance class fulfilling these requirements: "db.t2.medium".
 
-Oracle 18c on Amazon RDS is supported since Platform Server 11 – Release Oct.2019 CP2.
+Oracle 18c on Amazon RDS is supported since Platform Server 11 – Release Oct.2019 CP2.  
+Oracle 19c on Amazon RDS is supported since Platform Server 11 – Release Oct.2019 CP3.
 
 Check [Amazon's DB Instance Class](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html) topic for more information on the available DB instance classes. Be sure to also check [Amazon RDS System Requirements](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) to learn about Amazon RDS limitations.
 

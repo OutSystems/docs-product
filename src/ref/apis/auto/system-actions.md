@@ -731,7 +731,7 @@ Locale
 
 ### TenantCreate { #TenantCreate }
 
-Creates a new tenant and associates it with a [User Provider module](../../../develop/security/end-user-manage/end-user-authentication/single-sign-on.md) .
+Creates a new tenant and associates it with a [User Provider module](../../../develop/security/end-user-manage/end-user-authentication/single-sign-on.md).
 
 *Inputs*
 

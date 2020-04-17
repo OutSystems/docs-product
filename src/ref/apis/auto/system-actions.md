@@ -737,7 +737,7 @@ Creates a new tenant and associates it with the provisioning site.
 
 eSpaceName
 :   Type: mandatory, Text.  
-    
+    eSpaceName of the UserProvider that binds the Tenant to that specified UserProvider.
 
 TenantName
 :   Type: mandatory, Text.  

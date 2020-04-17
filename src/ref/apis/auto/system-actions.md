@@ -731,23 +731,23 @@ Locale
 
 ### TenantCreate { #TenantCreate }
 
-Creates a new tenant and associates it with the provisioning site.
+Creates a new tenant and associates it with a [User Provider module](../../../develop/security/end-user-manage/end-user-authentication/single-sign-on.md) .
 
 *Inputs*
 
 eSpaceName
 :   Type: mandatory, Text.  
-    Name of the [User Provider module](../../../develop/security/end-user-manage/end-user-authentication/single-sign-on.md) that will provide the users and sessions to the new tenant. The new tenant will become a User Subscriber to the specified module.
+    Name of the User Provider module for the new tenant. The new tenant will become a User Subscriber to the specified module.
 
 TenantName
 :   Type: mandatory, Text.  
-    
+    Name of the new tenant to be created.
 
 *Outputs*
 
 TenantId
 :   Type: Tenant Identifier.  
-    
+    Identifier of the new tenant which was created.
 
 ### TenantInvalidateCache { #TenantInvalidateCache }
 

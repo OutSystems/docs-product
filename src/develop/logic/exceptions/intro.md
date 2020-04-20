@@ -74,7 +74,7 @@ The raise of Abort Activity Change Exceptions is used in Process Activity callba
 
 ## Exception Message
 
-When an exception is raised by OutSystems, the ExceptionMessage property of the Exception Handler element will be automatically filled-in with a description of the problem. When you raise an exception in your logic, such as a User Exception, you define the Exception Message in the property of the Raise Exception element.
+When an exception is raised by OutSystems, the ExceptionMessage property of the Exception Handler element will be automatically filled-in with a description of the problem. When you raise an exception in your logic, such as a User Exception, you need to define the Exception Message in the property of the Raise Exception element.
 
 ## Exception Logs
 

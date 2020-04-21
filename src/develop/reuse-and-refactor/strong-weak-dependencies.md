@@ -44,7 +44,7 @@ In runtime, the consumer module only needs to know the **signature** of the elem
 Reusing the following elements, will make the consumer’s dependency to the producer a **weak** dependency:
 
 * Screens
-* Service Actions
+* Screen Actions
 * Database Entities
 * Local Storage Entities
 * Static Entities

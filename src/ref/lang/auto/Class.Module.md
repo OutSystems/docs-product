@@ -227,7 +227,7 @@ helpids: 1011
 <td>Set to Yes to use cookies to exchange the session identifier through the Web Browser cookies. If set to No, the session identifier is sent back and forth in the URL.</td>
 <td>Yes</td>
 <td>Yes</td>
-<td></td>
+<td>This feature is deprecated.</td>
 </tr>
 <tr>
 <td title="Is Multi-tenant">Is Multi-tenant</td>

@@ -19,7 +19,7 @@ The session is created on the server and can be shared by several modules if you
 Sessions are automatically managed by OutSystems and depend on the channel used for the user interaction, as described below.
 
 Web Session
-:   The session starts during the first request the end user establishes with the server. By default, OutSystems stores cookies in the end user browser to keep track of the session. It is possible to change this to make the session information to be sent using the URL. The session ends explicitly when the end user logs-out, or automatically due to a time-out caused by the user not making requests to the server for a certain amount of time.
+:   The session starts during the first request the end user establishes with the server. The session ends explicitly when the end user logs-out, or automatically due to a time-out caused by the user not making requests to the server for a certain amount of time.
 
 Web Services Session
 :   The session is created when the Web Service is invoked and lasts only for this request, which means that there is no persistency of the session between requests.

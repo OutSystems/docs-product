@@ -27,7 +27,7 @@ The Configuration Tool command line returns non-zero values when an error occurs
 ConfigurationTool.com {/SetupInstall <platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password> [/SetPlatformServerAdminPassword <platform_server_admin_password>] | /UpgradeInstall [<admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>]} [/RebuildSession <session_db_admin_username> <session_db_admin_password>] [/SCInstall] [/CreateUpdateCacheInvalidationService]
     | /GenerateTemplates
     | /ClearInternalNetwork
-    | /UploadLicense <license_file> <service_center_user> <service_center_password>
+    | /UploadLicense <license_file> <platform_server_admin_user> <platform_server_admin_password>
     | /RegenerateSettingsKey
     | /GetSerial
     | /GetDeploymentZones
@@ -68,7 +68,7 @@ ConfigurationTool.com {/SetupInstall <platform_db_admin_username> <platform_db_a
 
 :   Resets the internal network settings so that internal applications become accessible from any origin.
 
-`/UploadLicense <license_file> <service_center_user> <service_center_password>`
+`/UploadLicense <license_file> <platform_server_admin_user > <platform_server_admin_password >`
 
 :   Uploads the license file and checks if the license is valid.
 

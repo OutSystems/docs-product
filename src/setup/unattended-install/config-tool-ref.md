@@ -55,7 +55,7 @@ ConfigurationTool.com
 
     For Oracle databases, you do not need to provide the admin usernames and passwords.
     
-    If a platform server password is provided, sets the password for the Platform Server Admin user.
+    If you provide the optional `/SetPlatformServerAdminPassword` parameter with a password, sets the password for the Platform Server `admin` user.
 
 `/UpgradeInstall [<integrated_auth_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>]`
 

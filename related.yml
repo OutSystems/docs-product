@@ -1005,6 +1005,8 @@
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+         - "OutSystems UI Pattern": 
+             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7
 - develop/ui/patterns/web/numbers/counter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

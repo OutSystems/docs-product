@@ -870,7 +870,7 @@
 - develop/ui/patterns/web/content/lightboximage.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightboxImage.aspx
 - develop/ui/patterns/web/content/modal.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

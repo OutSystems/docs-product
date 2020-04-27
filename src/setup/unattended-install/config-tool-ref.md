@@ -51,7 +51,6 @@ ConfigurationTool.com
 
 :   Creates or upgrades the OutSystems platform and logging database model using the `server.hsconf` configuration file.
 
-    Creates or upgrades the OutSystems platform and logging database model using the server.hsconf configuration file.
     For SQL Server of Azure SQL databases, you must provide the credentials needed to create or upgrade the platform database. Furthermore, if you specify separate platform and logging databases in `server.hsconf`, you also need to provide the credentials needed to create or upgrade the logging database.
 
     For Oracle databases, you do not need to provide the admin usernames and passwords.
@@ -64,7 +63,7 @@ ConfigurationTool.com
 
     The admin password is optional and is only used for integrated authentication purposes where the password isn’t stored in the server configuration file.
     
-    If a platform server password is provided, sets the password for the Platform Server Admin user.
+    If you provide the optional `/SetPlatformServerAdminPassword` parameter with a password, sets the password for the Platform Server `admin` user.
 
 `/RebuildSession <session_db_admin_username> <session_db_admin_password>`
 
@@ -76,11 +75,11 @@ ConfigurationTool.com
 
 `/UpgradeSystemComponents`
 
-: Forces the System Components installation or upgrade to run after applying the configuration settings.
+:   Forces the System Components installation or upgrade to run after applying the configuration settings.
 
 `/UpgradePublishedApplications`
 
-: Forces the published applications upgrade to run after applying the configuration settings.
+:   Forces the published applications upgrade to run after applying the configuration settings.
 
 `/GenerateTemplates`
 
@@ -90,12 +89,12 @@ ConfigurationTool.com
 
 :   Resets the internal network settings so that internal applications become accessible from any origin.
 
-`/UploadLicense <license_file> <platform_server_admin_user > <platform_server_admin_password >`
+`/UploadLicense <license_file> <platform_server_admin_user> <platform_server_admin_password>`
 
 :   Uploads the license file and checks if the license is valid.
 
-    Valid Service Center admin user credentials must be provided in order to execute this operation.
-    Service Center application must be up and running.
+    You must provide valid Service Center admin user credentials to execute this operation.  
+    The Service Center application must be running.
 
 `/RegenerateSettingsKey`
 
@@ -138,7 +137,7 @@ ConfigurationTool.com
 
 `/UpgradeEnvironment`
 
-:   Executes the installation of Service Center, System Components and upgrading published applications. Skips any of these steps if previously executed.
+:   Installs Service Center and System Components, and upgrades published applications. Skips any of these steps if they were previously executed.
 
 ## Example
 

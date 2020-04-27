@@ -5,89 +5,48 @@ summary: Animate adds default animations to emphasize elements as they appear on
 
 # Animate
 
-Create animations on elements inside the placeholder.
+You can use the Animate UI Pattern to create animations within your app. This UI pattern allows you to emphasize elements as they appear on screen which enhances the overall usability of the app. 
 
-Use Animate to add default animations to emphasize elements as they appear on the screen. Animations should resemble familiar real-life movements, helping the user understand the interface.  
+![](<images/animate-image-10.png>)
 
-**How to use**
+**How to use the Animate UI Pattern**
 
-Drag the content inside the placeholder and configure the animation type of the Block. You can also define the start time and duration of the animation.
+1. In Service Studio, in the Toolbox, search for `Animate`. 
 
-1. Drag the Animate pattern into the preview.
+    The Animate widget is displayed.
 
-1. Set the content you need on the placeholder.
+    ![](<images/animate-image-11.png>)
+
+1. From the Toolbox, drag the Animate widget into the Main Content area of your application's screen.
 
     ![](<images/animate-image-1.png>)
 
-1. Set the Input Parameters to extend the default values.
+1. Add the content you want to animate to Animate widget. 
+
+    In this example, we add an image by dragging the Image widget into Animate widget and selecting an image from the sample OutSystems UI images.
+
+    ![](<images/animate-image-12.png>)
+
+1. Select the Animate widget, and on the **Properties** tab, set the relevant properties, for example, where you want the animation to enter and leave the screen and at what speed. 
 
     ![](<images/animate-image-2.png>)
 
-## Input Parameters
+After following these steps and publishing the module, you can test the pattern in your app.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| EnterAnimation | Set the enter animation.| EnterAnimation Identifier | _False_ | Entities.EnterAnimation.EnterFade |
-| LeaveAnimation | Set the leave animation.| LeaveAnimation Identifier | _False_ | Entities.LeaveAnimation.LeaveFade |
-| Speed | Time necessary for the animation reach the end. | Speed Identifier | _False_ | None |
-| Delay | Time to wait before animation starts, in miliseconds | Integer | _False_ | 0 |
-| ExtendedClass  |  Add custom style classes to this Block. | Text | _False_ | None |
+## Properties
 
-## Layout and Classes
-
-![](<images/animate-image-3.png>)
-
-## CSS Selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
-| .animate-wrapper | .is--visible |  When the animation will enter in the screen  |
-| .animate-wrapper | .is--hidden |  When the animation will leave in the screen |
-| .animate | .enter-bottom |  When the animation will enter in the screen from bottom |
-| .animate | .enter-fade |  When the animation will enter in the screen with fade |
-| .animate | .enter-left |  When the animation will enter in the screen from left |
-| .animate | .enter-right |  When the animation will enter in the screen from right |
-| .animate | .enter-scale |  When the animation will enter in the screen with scale |
-| .animate | .enter-top |  When the animation will enter in the screen from top |
-| .animate | .leave-bottom |  When the animation will leave the screen from bottom |
-| .animate | .leave-fade |  When the animation will leave the screen with fade |
-| .animate | .leave-left |  When the animation will leave the screen from left |
-| .animate | .leave-right |  When the animation will leave the screen from right |
-| .animate | .leave-scale |  When the animation will leave the screen with scale |
-| .animate | .leave-top |  When the animation will leave the screen from top |
-| .animate | .animate-slow | The animation will reach the end in 1500ms |
-| .animate | .animate-fast | The animation will reach the end in 500ms |
+| **Property** |  **Description** |
+|---|---|
+| EnterAnimation (EnterAnimation Identifier): Optional | Set how the animation enters the screen. <p><ul><li>EnterBottom</li> <li>EnterFade (default)</li><li>EnterLeft</li><li>EnterRight</li><li>EnterScale</li><li>EnterTop</li> <p>Examples <ul><li>_Entities.EnterAnimation.EnterLeft_ - Enters from the left of the screen</li><li>_Entities.EnterAnimation.EnterTop_ - Enters from the top of the screen</li></ul></p>| 
+| LeaveAnimation (LeaveAnimation Identifier): Optional | Set how the animation leaves the screen. The predefined options available are:<p><ul><li>LeaveBottom</li> <li>LeaveFade (default)</li><li>LeaveLeft</li><li>LeaveRight</li><li>LeaveScale</li><li>LeaveTop</li><p>Examples <ul><li>_Entities.LeaveAnimation.LeaveBottom_ - Leaves from the bottom of the screen</li><li>_Entities.LeaveAnimation.LeaveRight_ - Leaves from the right of the screen</li></ul></p>|
+| Speed (Speed Identifier): Optional | Animation duration. Fast, normal, and slow are the predefined speeds available for the animation.| 
+| Delay (Integer): Optional | Time to wait before animation starts (in milliseconds). The default value is 0. | 
+| ExtendedClass (Text): Optional  |   Add custom style classes to the Animate UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Animate UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Breadcrumbs UI styles being applied.</li></ul></p> | 
 
 
-## Advanced Use Case
+<!---  Added to yml file
 
-### Use the ToggleAnimate Server Action
+## See also
 
-It is possible to hide elements in the screen using an Animation.
-
-1. Set a name to the Animate pattern.
-
-1. Set the method of the On Click function to Submit and in the Destination property, create a new Action.
-
-    ![](<images/animate-image-4.png>)
-
-1. In the Action created, drag the ToggleAnimate Action and set the Widget ID.
-
-    ![](<images/animate-image-5.png>)
-
-1. Publish and test.
-
-    ![](<images/animate-image-6.gif?width=600>)
-
-### Use Animations On Scroll
-
-It is possible to load and animate the elements when they are not visible in the screen.
-
-1. Drag the LoadOnVisible Pattern. Add the Animate Pattern with the desired content inside LoadOnVisible.
-
-    ![](<images/animate-image-7.png>)
-
-1. Publish and test.
-
-    ![](<images/animate-image-8.gif?width=600>)
-
+* OutSystems UI Live Style Guide: [Animate](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Animate.aspx)
+* OutSystems UI Pattern Page: [Animate](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=5)

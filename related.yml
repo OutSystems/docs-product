@@ -1064,7 +1064,9 @@
 - develop/ui/patterns/web/utilities/animate.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            ttps://outsystemsui.outsystems.com/WebStyleGuidePreview/Animate.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=5
 - develop/ui/patterns/web/utilities/charactercount.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

@@ -3,47 +3,33 @@ tags: runtime-mobileandreactiveweb;
 summary: 
 ---
 
-# Gallery Pattern
+# Gallery 
 
-The Gallery pattern
-displays content (such as cards) in a specific set of columns, configurable
-per device type and orientation. Use this pattern to display a List of
-elements side by side, with a different number of items per row on different
-devices.
+You can use the Gallery UI Pattern to display content (such as cards) in a specific set of columns, configurable per device type and orientation. 
 
-Here's a preview in Service Studio:
+![](<images/gallery-image-7.png>)
 
-![](images/Gallery_preview.png)
 
-## How to Use the Gallery Pattern
+## How to use the Gallery UI Pattern
 
-1\. Drag a list or static content.
+1. In Service Studio, in the Toolbox, search for `Gallery`. 
 
-2\. Set the number of items in Input Parameters.
+    The Gallery widget is displayed.
 
-### Using Animations Inside the Gallery
+    ![](<images/gallery-image-8.png>)
 
-1\. Use the **Animate** block as the first element inside the list.
+1. From the Toolbox, drag the Gallery widget onto your application’s screen.
 
-![](images/Gallery_animate.png)
 
-2\. Place your content inside the b block.
+1.  Drag a list or static content into the Content placeholder.
 
-![](images/Gallery_ellipsis.png)
+1. On the **Properties** tab, set the number of items.
 
-3\. Define the **Animate** block with your desired type of animation, and set
-the delay with current row number from the list.
+After following these steps and publishing the module, you can test the pattern in your app.
 
-![](images/Gallery_interaction.png)
+## Properties
 
-**Note**: If you are using a List inside a Gallery, you need to disable
-virtualization.
-
-![](images/Gallery_list.png)
-
-## Input Parameters
-
-**Input Name** |  **Description** |  **Default Value**  
+**Property** |  **Description** |  **Default Value**  
 ---|---|---  
 ![](images/input.png) ColumnsInPhonePortrait  |  Number of columns in a Portrait phone.  |  1  
 ![](images/input.png) ColumnsInPhoneLandscape  |  Number of columns in a Landscape phone.  |  2  
@@ -51,12 +37,15 @@ virtualization.
 ![](images/input.png) ColumnsInTabletLandscape  |  Number of columns in a Landscape tablet.  |  4  
 ![](images/input.png) UseGutter  |  If set, add a gutter to all the columns except the first.  |  _True_  
   
-## Layout and Classes
 
-![](images/Gallery_Layout.png)
 
 ## Samples
 
 The following sample uses the Gallery pattern:
 
 ![](images/Gallery-Sample-1.PNG)
+
+## See also
+
+* OutSystems UI Live Style Guide: [Gallery](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx)
+

@@ -3,36 +3,38 @@ tags: runtime-mobileandreactiveweb;
 summary: 
 ---
 
-# Tabs Pattern
+# Tabs
 
-Set of Tabs with placeholders for Title and Content, used to display large sets of information which can be split into different areas, while always remaining a click away. Use this pattern to display large sets of information split into different areas.
+You can use the Tabs UI Pattern to display large sets of information, which can be split into different areas, while always remaining a click away. 
 
-Here's the preview in Service Studio:
+![](images/tabs-gif1.gif?width=650)
 
-![](images/Tabs_preview_studio.png)
+## How to use the Tabs UI Pattern
 
-## How to Use the Tabs Pattern
+1. In Service Studio, in the Toolbox, search for `Tabs`. 
 
-1\. Drag the Tabs pattern into your screen.
+    The Tabs widget is displayed.
+    
+    ![](images/tabs-image4.png)
+    
+3. From the Toolbox, drag the Tabs block onto your application's screen. 
 
-![](images/Tabs_pattern.png)
+    ![](images/Tabs_pattern.png)
 
-2\. Place your content inside the Placeholders.
+4. Add your content to the Content placeholders.
 
-a. The placeholders Tabs1, Tabs2, Tabs3, Tabs4 and Tabs5 represent the header tabs.
+     * The **Tab 1** - **Tab 5** placeholders represent the header tabs.
 
-![](images/Tabs_placeholders.png)
+     * The **Tab Content 1** - **Tab Content 5** placeholders represent the content of each tab.   
 
-b. The other placeholders represent the content of each tab.  
-c. If you only need 2 or 3 tabs and you want to hide the others, you don’t need to do anything. This pattern hides the placeholders without content.
 
-3\. Set the **StartingTab** parameter to display the Tabs when rendering (see **Input Parameters**).
+5. On the **Properties** tab, set the **StartingTab** property to display the tabs when rendering.
 
-4\. Publish your app.
+After following these steps and publishing the module, you can test the pattern in your app.
 
-### Add Styles to Tabs and Content
+### Add styles to tabs and content
 
-This is an example of CSS code to change the style of selected items in Tabs:
+The following CSS code is an example of how to change the style of selected items in the tabs:
 
     
     
@@ -55,39 +57,22 @@ This is an example of CSS code to change the style of selected items in Tabs:
         font-stretch: condensed;
     }
 
-### Hide Tabs without Content
+### Hide tabs with no content
 
-All Silk patterns hide _divs_ without content in the placeholder. If you only need 2 or 3 tabs and you want to hide the others, you don’t need to do anything.
+All Silk patterns hide _divs_ with no content. If you only need 2 or 3 tabs, and you want to hide the others, you don’t need to do anything.
 
-## Input Parameters
+## Properties
 
-**Input Name** |  **Description** |  **Default Value**  
+**Property** |  **Description** |  **Default Value**  
 ---|---|---  
 ![](images/input.png) StartingTab  |  Index of the currently active tab.  |  0  
   
-## Events
-
-**Event Name** |  **Description** |  **Mandatory**  
----|---|---  
-![](images/Event.png) OnTabChange  |  Triggered when switching tabs.  |  _False_  
   
-### Layout and Classes
+## Device and pattern compatibility
 
-![](images/Tabs_layout.png)
+* Incompatibility with RTL on Android devices with 4.4.2 OS version.
 
-## CSS Selectors
-
-**Element** |  **CSS Class** |  **Description**  
----|---|---  
-![](images/css_selector.png) Tabs Wrapper  |  .tabs  |  Container that wraps all Tabs elements.  
-![](images/css_selector.png) Active tab header  |  .tabs-header-tab-active  |  Represents the header of the active element.  
-![](images/css_selector.png) Open tab content  |  .tabs-content-tab-open  |  The dot that represents the content of the open item.  
-  
-## Device and Patterns Compatibility
-
-Incompatibility with RTL on Android devices with 4.4.2 OS version.
-
-Avoid using Tabs inside patterns with swipe events, like Stacked Cards or Carousel.
+* Avoid using the Tabs Pattern inside patterns with swipe events, such as the Stacked Cards or Carousel Patterns.
 
 ## Samples
 
@@ -96,3 +81,8 @@ The following samples use the Tabs pattern:
 ![](images/Tabs-sample-1.PNG)
 
 ![](images/Tabs-sample-2.PNG)
+
+## See also
+
+* OutSystems UI Live Style Guide: [Tabs](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx)
+* OutSystems UI Pattern Page: [Tabs](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73)

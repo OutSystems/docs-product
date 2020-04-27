@@ -5,38 +5,54 @@ summary: Gallery enables the users to sequentially browse the content when there
 
 # Gallery
 
-Display groups of content as scannable collections.
+You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end. 
 
-Use the Gallery to enable the users to sequentially browse information, with a notion of beginning and end. It's helpful when there is a large number of cards you need to group into one or more scannable collections. 
+![](<images/gallery-image-7.png>)
 
-**How to use**
+**How to use the Gallery UI Pattern**
 
-Use static data or a List widget inside this block to display items in a gallery pattern.
+The Gallery UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../../develop/logic/action-web.md). 
 
-1. Drag a list or static content.
+1. In Service Studio, in the Toolbox, search for `Gallery`. 
+
+    The Gallery widget is displayed.
+
+    ![](<images/gallery-image-8.png>)
+
+1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
+
+    ![](<images/gallery-image-9.png>)
+
+1. Drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.md>) or static content into the Gallery widget.
     
     ![](<images/gallery-image-1.png>)
 
-1. Set the number of items in Input Parameters.
+1. On the **Properties** tab, you can set the number of items to display on each row for different device types.
     
-    ![](<images/gallery-image-2.png>)
+    ![](<images/gallery-image-6.png>)
 
-## Input parameters
+After following these steps and publishing the module, you can test the pattern in your app.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ItemsDesktop |  Number of Items per line on Desktop. | Integer | False | 5 |
-| ItemsTablet |  Number of Items per line on Tablet. | Integer | False | 3 |
-| ItemsPhone |  Number of Items per line on Phone. | Integer | False | 1 |
-| ExtendedClass  |  Adds custom style classes to the Tabs Block. |  Text | False | none |
+## Properties
 
-## Layout and classes
+| **Property** |  **Description** |
+|---|---|
+| ItemsDesktop (Integer): Optional |  Number of Items per line on a desktop. | 
+| ItemsTablet (Integer): Optional |  Number of Items per line on a tablet. | 
+| ItemsPhone (Integer): Optional|  Number of Items per line on a phone. |
+| ExtendedClass (Text): Optional | Add custom style classes to the Badge UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Gallery UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Gallery UI styles being applied.</li></ul></p> |  
 
-![](<images/gallery-image-3.png>)
 
-## Notes
+## Additional notes
 
-Line Separator from ListRecords should be None.
+Line Separator for ListRecords should be **None**.
 
 ![](<images/gallery-image-4.png>)
+
+<!---## See also
+
+## See also
+
+* OutSystems UI Live Style Guide: [Gallery](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx)
+* OutSystems UI Pattern Page: [Gallery](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41)
 

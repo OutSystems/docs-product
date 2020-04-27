@@ -1110,7 +1110,9 @@
 - develop/ui/patterns/web/utilities/flipcontent.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FlipContent.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=37
 - develop/ui/patterns/web/utilities/iframe.md:
     - ref/ui-patterns/web/iframe.md
     - external:

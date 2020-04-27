@@ -1000,7 +1000,9 @@
 - develop/ui/patterns/web/navigation/wizard.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Wizard.aspx        
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=82
 - develop/ui/patterns/web/numbers/badge.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

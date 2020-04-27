@@ -1030,7 +1030,7 @@
 - develop/ui/patterns/web/responsive/loadonvisible.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LoadOnVisible.aspx
 - develop/ui/patterns/web/responsive/moveondevice.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

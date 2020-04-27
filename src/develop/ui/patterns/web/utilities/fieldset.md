@@ -5,70 +5,41 @@ summary: Fieldset labels groups of related interface elements and fields.
 
 # Fieldset
 
-Group thematically related elements such as controls and labels.
+You can use the Fieldset UI Pattern to group and label related information, such as a users personal details, improving the overall look and layout of your application.
 
-Use the Fieldset to label groups of related interface elements and fields. This improves the layout and helps users understand the information.  
+![](<images/fieldset-image-1.png>)
 
-**How to use**
+**How to use the Fieldset UI Pattern**
 
-Set the label of the Fieldset and then drag Input widgets to the content placeholder.
+1. In Service Studio, in the Toolbox, search for `Fieldset`. 
 
-1. Drag the Fieldset pattern into the preview.
+    The Fieldset widget is displayed.
 
-1. Set the Title parameter.
+   ![](<images/fieldset-image-6.png>)
 
-1. Set the content you need on the placeholder.
+1. From the Toolbox, drag the Fieldset widget into the Main Content area of your application's screen.
 
-1. Publish and test.
+   ![](<images/fieldset-image-7.png>)
 
-    ![](<images/fieldset-image-1.png>)
+1. On the **Properties** tab, set the Title property. 
 
-## Input Parameters
+    In the following example, we set the Title to ``Basic Information``.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Title  |  The title that will be the legend of the Fieldset. | Text | True | none |
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
+    ![](<images/fieldset-image-5.png>)
 
-## Layout and Classes
+1.  Add the relevant content to the placeholder, for example, textboxes and labels. 
 
-![](<images/fieldset-image-2.png>)
+    ![](<images/fieldset-image-8.png>)
 
-## Advanced Use Case
 
-### Change the style of Fieldset
+After following these steps and publishing the module, you can test the pattern in your app.
+    
+## Properties
 
-Use custom CSS to change the style of Fieldset. The following examples are only two ways of doing it. To use these in your application, copy the CSS code from below and add it to your theme.
+| **Properties** |  **Description** | 
+|---|---|
+| Title (Text): Mandatory   |  The Fieldset title.  <p>Examples <ul><li>_"Basic Information"_ - the title is set to Basic Information</li></ul></p> | 
+| ExtendedClass (Text): Optional  | Add custom style classes to the Fieldset UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the _myclass style_ to the Fieldset UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Fieldset UI styles being applied.</li></ul></p> |
 
-Example 1
-
-```css
-.fieldset {
-  position: relative;
-}
-
-.fieldset-legend {
-  background: var(--color-background-body);
-  padding: 0 var(--space-xs);
-  position: absolute;
-  right: var(--space-m);
-  top: -15px;
-}
-```
-![](<images/fieldset-image-3.png>)
-
-Example 2
-
-```css
-.fieldset {
-  border: 0;
-  padding: var(--space-m) 0;
-}
-
-.fieldset-legend {
-  border-bottom: 1px solid var(--color-neutral-5);
-  padding-bottom: var(--space-s);
-  width: 100%;
-}
-```
-![](<images/fieldset-image-4.png>)
+<!--- ## See also
+* OutSystems UI Live Style Guide: [Fieldset](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Fieldset.aspx)

@@ -1083,7 +1083,9 @@
 - develop/ui/patterns/web/structure/columns.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx
 - develop/ui/patterns/web/structure/gallery.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

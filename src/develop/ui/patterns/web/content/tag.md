@@ -23,6 +23,8 @@ Drag the pattern to the screen and add the text in the placeholder.
 
     ![](<images/tag-image-2.png>)
 
+After following these steps and publishing the module, you can test the pattern in your app.
+
 ## Input Parameters
 
 | **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |

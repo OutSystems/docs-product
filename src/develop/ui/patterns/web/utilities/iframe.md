@@ -4,46 +4,41 @@ summary: Iframe displays information from other apps on the screen in small prev
 ---
 
 # Iframe
+ 
+ You can use the Iframe UI Pattern to display information from other apps, on your screen, in bite-size previews. For more information about Iframes, see [HTML Iframes](https://www.w3schools.com/html/html_iframe.asp).
 
-Display additional information in one view.
+![](<images/iframe-image-8.png>)
 
-Use Iframe to display information from other apps on the screen in small previews. 
+**How to use the Iframe UI Pattern**
 
-**How to use**
+1. In Service Studio, in the Toolbox, search for `Iframe`. 
 
-1. Drag the Iframe pattern into the preview.
+    The Iframe widget is displayed.
+    
+    ![](<images/iframe-image-6.png>)
+      
+1. From the Toolbox, drag the Iframe widget into the Main Content area of your application's screen.
 
-    ![](<images/iframe-image-1.png>)
+    ![](<images/iframe-image-7.png>)
 
-1. Set the mandatory values.
+1. On the **Properties** tab, set the relevant properties, for example, the source URL, its title, as well as its width and height. In this example, we use the Wikipedia Website.
 
-    ![](<images/iframe-image-2.png>)
+    Note: The target destination must have the necessary security permissions that allow you to embed their website in your app.
 
-1. Publish and test.
+    ![](<images/iframe-image-5.png>)
 
-## Input Parameters
+After following these steps and publishing the module, you can test the pattern in your app.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| SourceURL  | The target URL to load on the Iframe. | Text | Yes | none |
-| Title  | Title for the iframe element. | Text | No | none |
-| Height  | Iframe height, default is 100%. | Text | No | 100% |
-| Width  | Iframe width, default is 100%. | Text | No | 100% |
+
+
+## Properties
+
+| **Property** |  **Description** |
+|---|---|
+| SourceURL (Text): Mandatory | The target URL that loads on the Iframe.<p>Examples<ul><li>_"https://www.wikipedia.com"_ - Displays the Wikipedia website in your app as a bite-size preview</ul></p> | 
+| Title (Text): Optional | Iframe title.<p>Examples<ul><li>_"Wikipedia Website"_ - Displays _Wikipedia Website_ as the Iframe title</li></ul></p>|
+| Height (Text): Optional  | Iframe height (default is 100%). <p>Examples<ul><li>_"100%"_ - The iframe height is 100% </li><li>_200_ - The iframe is 200 pixels high </li></ul></p>|
+| Width (Text): Optional | Iframe width (default is 100%). <p>Examples<ul><li> _"100%"_ - The iframe width is 100%</li><li>_200_ - The iframe is 200 pixels wide </li></li></ul></p>|
   
-## Layout and Classes
-
-![](<images/iframe-image-3.png>)
-
-## Advanced Use Case
-
-### Change the Iframe width according to the device
-
-This can be very useful if you are using a fixed width.
-
-1. Set the Width to `If(IsDesktop(), "500px", "100%")`.
-
-1. Publish and test.
-
-    ![](<images/iframe-image-4.png>)
-
-You can change the condition of the width used. This code makes the width 500px on desktop, but on mobile, it is still full-width as the fixed width would probably overflow the screen.
+<!--- ## See also
+* OutSystems UI Live Style Guide: [Iframe](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Iframe.aspx)

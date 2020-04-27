@@ -45,6 +45,12 @@ Create a Mobile App and turn on the toggle **Distribute as PWA** in the app deta
 
 You don't have to republish your app after changing the value of the **Distribute as PWA**. This change is applied in real-time.
 
+<div class="warning" markdown="1">
+
+When you develop a progressive web app, keep in mind that mobile best practices apply, particularly about [designing a lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage).
+
+</div>
+
 ## Try out your progressive web app
 
 Here is how you can run your PWA. Go to app details and click **Distribute** tab:
@@ -135,8 +141,8 @@ Keep in mind that the LifeTime PWA manifest overrides the manifest in Service St
 
 Using the manifest overrides the values you set in Service Studio. You have to use the manifest in the `PWAManifest` section of the JSON of the **Extensibility Configurations** field. You can edit the manifest in two places:
 
-* In Service Studio, where the manifest overrides any settings you have in UI **in all environments**. Edit the JSON manifest in the **Extensibility Configurations** field of the module properties.
-* In LifeTime, where the manifest overrides any settings you have in UI **in the current environment only**. You can find the **Extensibility Configurations** field in **Applications** > **(app name)** > **Settings** > **Advanced** > **Extensibility Configurations**
+* In Service Studio, where the manifest overrides all UI settings **in all environments**. Edit the JSON manifest in the **Extensibility Configurations** field of the module properties.
+* In LifeTime, where the manifest overrides all UI settings **in the current environment only**. Find the **Extensibility Configurations** field in **Applications** > **(app name)** > **Settings** > **Advanced** > **Extensibility Configurations**
 
 ### Manifest resources and sample JSON
 
@@ -207,3 +213,7 @@ If you're using Platform Server 11.7 or earlier **and** iOS 13 and later, you sh
 One of the reasons why your PWA is not working in iOS might be because of an iOS bug that prevents PWAs from running correctly in the iOS versions 13.0 to 13.2. 
 
 To fix this issue, use iOS 13.3 or later instead.
+
+### PWA is slow and queries take too long to execute
+
+If your PWA performs poorly and queries take too long to execute, your local storage model might be too complex or the amount of data that the app needs to handle is too high. See [Design a lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage) for recommendations.

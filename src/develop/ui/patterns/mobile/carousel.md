@@ -7,8 +7,6 @@ summary:
 
 You can use the Carousel UI Pattern to display multiple items in a horizontal slide. This pattern is ideal for creating horizontal slides in smaller screens. You can also use this pattern for dynamic content, by placing a List directly inside the placeholder. 
 
-![](images/carousel_image-1.png)
-
 ## How to use the Carousel UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Carousel`.

@@ -5,32 +5,43 @@ summary: Alert gets the end user's attention and highlights important informatio
 
 # Alert
 
-Highlight important information, errors or warnings.
+You can use the Alert UI Pattern to highlight important information, errors, or warnings.
 
-Use an Alert when you need to get the end user's attention and provide important information on the screen.
+![](<images/alert-image-1.png>)
 
-**How to use**
+**How to use the Alert UI Pattern**
 
-Add the message to the placeholder and set the alert type in the properties of the block.
+1. In Service Studio, in the Toolbox, search for `Alert`.
 
-1. Drag Alert pattern into the preview.
-1. Set the mandatory Alert value.
-1. Set the Input Parameters to extend the default values.
-1. Type the message you want to display.
-1. Publish and test.
+    The Alert widget is displayed.
 
-    ![](<images/alert-image-1.png>)
+    ![](<images/alert-image-7.png>)
+
+1. From the Toolbox, drag the Alert widget into the Main Content area of your application's screen.
+
+    ![](<images/alert-image-8.png>)
+
+1. Select the Text placeholder, and enter the Alert message you want to display.
+    
+    ![](<images/alert-image-11.png>)
+
+1. On the **Property** tab, set the mandatory **AlertType** property. In this example, the alert type is set to error.
+    
+    ![](<images/alert-image-9.png>)
+
+1. After following these steps, 
+
 
 ## Demo
 
 <iframe width="750" height="500" src="https://www.youtube.com/embed/gknfwE7WX4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
-## Input Parameters
+## Properties
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| AlertType  | Select type of alert. | Alert Identifier | True | none |
-| ShowCloseButton  | Set the space around the Separator line. | Boolean | False | False |
+| **Property** |  **Description** | 
+|---|---|
+| AlertType (Alert Identifer): Mandatory  | Select type of alert. | 
+| ShowCloseButton (Boolean): Optional  | Enable the Close button on the Alert block. 
 | ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
 
 ## Layout and Classes

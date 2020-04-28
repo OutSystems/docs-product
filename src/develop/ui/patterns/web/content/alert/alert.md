@@ -41,8 +41,8 @@ You can use the Alert UI Pattern to highlight important information, errors, or 
 | **Property** |  **Description** | 
 |---|---|
 | AlertType (Alert Identifer): Mandatory  | Select the type of alert. the predefined options are: <p><ul><li>Error</li><li>Info</li><li>Success</li><li>Warning</li><p>Examples<ul><li>_Entities.Alert.Warning_ - Displays a yellow warning message.</li><li>_Entities.Alert.Info_ - Displays a blue information message.</li></p> | 
-| ShowCloseButton (Boolean): Optional  | Enable a Close button for the Alert. <p>Examples<ul><li>_True_ A close button is enabled.</li><li>_False_ - There is no Close button. This is the default value.</li></p> 
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
+| ShowCloseButton (Boolean): Optional  | Enable a Close button for the Alert. <p>Examples<ul><li>_True_ A close button is enabled.</li><li>_False_ - No Close button. This is the default value.</li></p> |
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Alert UI Pattern. You define your custom style classes in your application using CSS. <p>Examples <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Alert UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ sytles to the Alert UI styles being applied.  |
 
 ## Layout and Classes
 

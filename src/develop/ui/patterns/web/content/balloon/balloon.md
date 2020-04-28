@@ -5,61 +5,36 @@ summary: Balloon shows a content overlay to users, without forcing them to lose 
 
 # Balloon
 
-Displays an additional overlay of content.
+You can use the Balloon UI Pattern to display tooltip text in a pop-up on the UI. The Balloon UI Patterns is useful when you need to display additional information realted to a small on-screen element. 
 
-Use the Balloon when you need to display content that you need occasionally on a small area, without losing the context in the UI.
+![](<images/balloon-image-5.png>)
 
-**How to use**
+**How to use the Balloon UI Pattern**
 
-Add the content inside the Balloon placeholders. Then configure the WidgetId that triggers the Balloon. You may also choose the Position, and the type of Trigger.
 
-1. Drag the balloon into the preview.
-1. Set content into the title, content and footer placeholders.
+1. In Service Studio, in the Toolbox, search for `Balloon`.
 
-    ![](<images/balloon-image-1.png>)
+    The Balloon widget is displayed.
+
+    ![](<images/balloon-image-3.png>)
+ 
+1. From the Toolbox, drag the Balloon widget into the Main Content area of your application's screen.
+
+    ![](<images/balloon-image-4.png>)
+
+1. Add the relevant content to the Balloon placeholders.
 
 
 ## Demo
 
 <iframe width="750" height="500" src="https://www.youtube.com/embed/FYTapAjZPj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
-## Input parameters
+## Properties
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| WidgetId | Element name that triggers the element to be visible. | Text | True | none |
-| Position |  Sets the position around the widget element. | PositionBase Identifier | False | Entities.PositionBase.Bottom |
-| Trigger |  Sets the type of trigger for the content. Manual requires the tooltip to be triggered programmatically. | Trigger Identifier | False | Entities.Trigger.Hover |
-| ExtendedClass  |  Adds custom style classes to the Tabs Block. |  Text | False | none |
-| AdvancedFormat  |  Enables you to use more options than what is provided in the input parameters. Example: `{ arrow: false,   showOnInit: true }` For more information visit: https://atomiks.github.io/tippyjs/ |  Text | False | none |
-
-## Layout and classes
-
-![](<images/balloon-image-2.png>)
-
-## Events
-
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnHide | Event triggered once the balloon is hidden.  |  False  |
-| OnShow | Event triggered once the balloon is shown.  |  False  |
-
-## Advanced
-
-Here are some more advanced use-cases of the widget.
-
-### Show Balloon on init
-
-1. Drag Balloon to the preview.
-1. Set the AdvancedFormat parameter to `{ showOnInit: true }`.
-
-### Change the animation
-
-1. Drag Balloon to the preview.
-1. Set the AdvancedFormat parameter to `{ animation: 'perspective' }`.
-
-    ![](<images/balloon-gif-1.gif>)
-
-Changed animation:
-
-![](<images/balloon-gif-2.gif>)
+| **Property** |  **Description** | 
+|---|---|
+| WidgetId (Text): Mandatory | Id that triggers the element so it is visible. <p>Example</p>|
+| Position (PositionBase Identifier): Optional |  Sets the position of where the Balloon content is displayed in relation to the widget. The predefined options are: <p><ul><li>Bottom</li><li>Left</li><li>Right</li><li>Top</li></ul></p> <p>Examples<ul><li>_Entities.PositionBase.Bottom_ - The content displays below the element. This is the default value.</li><li>_Entities.PositionBase.Right_ - The content displays to the right of the element.</li></ul></p>|
+| Trigger (Trigger Identifier): Optional |  Sets the action that triggers the content to display. The predefined options are: <p><ul><li>Click</li><li>Hover</li><li>Manual</li></ul></p> <p>Examples<ul><li>_Entities.Trigger.Click_ - Content displays when the user clicks the element.</li><li>_Entities.Trigger.Manual_ - Requires that the tooltip is triggered programmatically. </li><li>_Entities.Trigger.Hover_ - Content displays when the user hovers over the element. </li></ul></p> | 
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Alert UI Pattern. You define your custom style classes in your application using CSS. <p>Examples <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Alert UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ sytles to the Alert UI styles being applied.  |
+| AdvancedFormat (Text): Optional  |  Enables you to use more options than what is provided in the input parameters. <p>Example: `{ arrow: false,   showOnInit: true }` </p> <p>For more information visit: https://atomiks.github.io/tippyjs/ </p>

@@ -71,3 +71,4 @@ After following these steps and publishing the module, you can test the pattern 
 ## See also
 * OutSystems UI Live Style Guide: [Icon Badge](https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx)
 * OutSystems UI Pattern Page: [Icon Badge](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43)
+-->

@@ -148,16 +148,16 @@ After following all of the steps in each of the sections, you can publish the mo
 
 | **Property** |  **Description** | 
 |---|---|
-| Orientation (Orientation Identifier): Optional  | Set the wizard orientation. By default the Wizard displays horizontally. <p> Examples <ul><li>_Entities.Orientation.Horizontal_ - The wizard displays horizontally </li></ul> <ul><li>_Entities.Orientation.Vertical_ - The wizard displays vertically</ul></li></p>|
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the _myclass_ style to the Wizard UI styles being applied<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied</li></ul></p> |
+| Orientation (Orientation Identifier): Optional  | Set the wizard orientation. By default the Wizard displays horizontally. <p> Examples <ul><li>_Entities.Orientation.Horizontal_ - The wizard displays horizontally </li><li>_Entities.Orientation.Vertical_ - The wizard displays vertically</li></ul></p>|
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the _myclass_ style to the Wizard UI styles being applied</li><li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied</li></ul></p> |
 
 ### Wizard Item
 
 | **Property** |  **Description** | 
 |---|---|
-| Step (Step Identifier): Mandatory | Set the status of the Wizard Item relative to the current step of the Wizard. You can customize an expression to set the status of the Wizard Item or you can use the predefined values Active, Next, and Past. <p>Examples <ul><li>_Extended.Step.Active_ - Sets the Wizard Item to active, that is, the current step the user is on<li>_Extended.Step.Next_ - Sets the Wizard Item to incomplete, that is, a step that is yet to be completed by the user</li><li>_Extended.Step.Past_ - Sets the step to inactive, that is, a step that has already been completed by the user</li></ul></p>| 
+| Step (Step Identifier): Mandatory | Set the status of the Wizard Item relative to the current step of the Wizard. You can customize an expression to set the status of the Wizard Item or you can use the predefined values Active, Next, and Past. <p>Examples <ul><li>_Extended.Step.Active_ - Sets the Wizard Item to active, that is, the current step the user is on</li><li>_Extended.Step.Next_ - Sets the Wizard Item to incomplete, that is, a step that is yet to be completed by the user</li><li>_Extended.Step.Past_ - Sets the step to inactive, that is, a step that has already been completed by the user</li></ul></p>| 
 | UseTopLabel (Boolean): Optional  | If True, label is placed above the icon. If False, label is placed below the icon. The text describing the step is either placed above or below the step icon. | 
-| ExtendedClass (Text): Optional | Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Wizard UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied</li></ul></p> | 
+| ExtendedClass (Text): Optional | Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Wizard UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied</li></ul></p> | 
   
 
 <!--- Added to yml file
@@ -166,4 +166,4 @@ After following all of the steps in each of the sections, you can publish the mo
 
 * OutSystems UI Live Style Guide: [Wizard](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Wizard.aspx)
 * OutSystems UI Pattern Page: [Wizard](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=82)
-
+--> 

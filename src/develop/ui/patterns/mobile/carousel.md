@@ -46,7 +46,7 @@ After following these steps and publishing the module, you can test the pattern 
 | **Property** |  **Description** |
 |---|---|
 |Navigation(Boolean): Optional | Enable or disable arrow buttons to navigate left and right. <p>Examples<ul><li>_Blank_ - No navigation arrows are displayed.</li><li>_True_ - Navigation arrows are displayed.</li><li>_False_ - No navigation arrows are displayed. This is the default value.</li></ul></p> |
-|Dots(Boolean): Optional | Enable or disable navigational dots that represent items on the Carousel.<p>Examples<ul><li>_Blank_ - Navigational dots are displayed. This is the default value.<li>_True_ - Navigational dots are displayed.</li><li>_False_ - No navigational dots are displayed.</li> |
+|Dots(Boolean): Optional | Enable or disable navigational dots that represent items on the Carousel.<p>Examples<ul><li>_Blank_ - Navigational dots are displayed. This is the default value.</li><li>_True_ - Navigational dots are displayed.</li><li>_False_ - No navigational dots are displayed.</li></ul></p> |
 |Margin(Integer): Optional  |  Set the distance between each Carousel item. <p>Examples<ul><li>_Blank_ - No distance between each Carousel item. this is the default</li><li>_2_ - A distance of 2 pixels between each Carousel item.</li></ul></p>  | 
 |Padding(Integer): Optional |  Set the distance between the screen edges and the visible items on the screen. <p>Examples<ul><li>_Blank_ - No distance between the screen edges and the on screen item. This is the default value.</li><li>_5_ - A distance of 5 pixels between the screen edges and the on screen item.</li></ul></p> |
 |AutoPlay(Autoplay Identifier): Optional | Enable or disable the autoplay functionality which displays the items in the Carousel automatically. You can also set the autoplay velocity.The predefined autoplay values are: <p><ul><li>Disabled</li><li>Fast</li><li>Normal</li><li>Slow</li></ul></p><p>Examples<ul><li>_Blank_ - Autoplay is disabled.</li><li>_Entities.Autoplay.Fast_ - Images are displayed automatically at a fast speed.</li><li>_Entities.Autoplay.Disabled_ - Autoplay is disabled.</li></ul></p> |  
@@ -74,3 +74,4 @@ See how the [Product Dashboard sample](https://silkui.outsystems.com/Samples_Mob
 ## See also
 * OutSystems UI Live Style Guide: [Carousel](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx)
 * OutSystems UI Pattern Page: [Carousel](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17)
+-->

@@ -21,7 +21,7 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
    
     ![](<images/lightboximage-image-13.png>)
 
-1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.md>) into the Light Box Image widget.This is a thumbnail image. 
+1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget. This is a thumbnail image. 
 
     The **Select Image** pop-up is displayed.
 
@@ -57,3 +57,4 @@ After following these steps and publishing the module, you can test the pattern 
 <!--- ## See also
 * OutSystems UI Live Style Guide: [Lightbox Image](https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightboxImage.aspx)
 * OutSystems UI Pattern Page: [Lightbox Image](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46)
+-->

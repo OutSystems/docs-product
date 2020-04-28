@@ -35,7 +35,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/badge-image-13.png>)
 
-    This creates an [aggregate](../../../../../ref/lang/auto/Class.Aggregate.md) that retrieves all of the users on your platform.
+    This creates an [aggregate](../../../../../ref/lang/auto/Class.Aggregate.final.md) that retrieves all of the users on your platform.
        
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
 
@@ -82,5 +82,5 @@ If the number on Badge Pattern is greater than 99, it is displayed as 99+.
 
 * OutSystems UI Live Style Guide: [Badge](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Badge.aspx)
 * OutSystems UI Pattern Page: [Badge](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7)
-
+-->
  

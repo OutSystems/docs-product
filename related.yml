@@ -1007,7 +1007,7 @@
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
-         - "OutSystems UI Pattern": 
+        - "OutSystems UI Pattern": 
              https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7
 - develop/ui/patterns/web/numbers/counter.md:
     - external:
@@ -1066,7 +1066,7 @@
 - develop/ui/patterns/web/utilities/animate.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            ttps://outsystemsui.outsystems.com/WebStyleGuidePreview/Animate.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Animate.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=5
 - develop/ui/patterns/web/utilities/charactercount.md:
@@ -1084,7 +1084,7 @@
 - develop/ui/patterns/web/utilities/iframe.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            (https://outsystemsui.outsystems.com/WebStyleGuidePreview/Iframe.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Iframe.aspx
         - "How to Add Video to Your Applications": 
             https://success.outsystems.com/Documentation/Development_FAQs/How_to_Add_Video_to_Your_Applications            
 - develop/ui/patterns/web/utilities/separator.md:

@@ -68,7 +68,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 | **Property** |  **Description** |
 |---|---|
-| Orientation (Orientation Identifier): Optional  | Set the counter orientation. By default the counter is displayed horizontally. <p> Examples <ul><li>_Entities.Orientation.Horizontal_ - The counter displays horizontally </li></ul> <ul><li>_Entities.Orientation.Vertical_ - The counter displays vertically</ul></li></p> |
+| Orientation (Orientation Identifier): Optional  | Set the counter orientation. By default the counter is displayed horizontally. <p> Examples <ul><li>_Entities.Orientation.Horizontal_ - The counter displays horizontally </li><li>_Entities.Orientation.Vertical_ - The counter displays vertically</li></ul></p> |
 | Height (Text): Optional  | Set the counter height. By default the counter height is 100 (pixel units). | 
 | ExtendedClass (Text): Optional  |  Add custom style classes to the Counter UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Counter UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Counter UI styles being applied.</li></ul></p> | 
 
@@ -77,3 +77,4 @@ After following these steps and publishing the module, you can test the pattern 
 
 * OutSystems UI Live Style Guide: [Counter](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Counter.aspx)
 * OutSystems UI Pattern Page: [Counter](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=30)
+-->

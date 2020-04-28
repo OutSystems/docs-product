@@ -56,3 +56,4 @@ After following these steps and publishing the module, you can test the pattern 
 <!---  Added to yml file
 ## See also
 * OutSystems UI Live Style Guide: [Move on Device](https://outsystemsui.outsystems.com/WebStyleGuidePreview/MoveOnDevice.aspx)
+-->

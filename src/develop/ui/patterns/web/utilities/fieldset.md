@@ -43,3 +43,4 @@ After following these steps and publishing the module, you can test the pattern 
 
 <!--- ## See also
 * OutSystems UI Live Style Guide: [Fieldset](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Fieldset.aspx)
+-->

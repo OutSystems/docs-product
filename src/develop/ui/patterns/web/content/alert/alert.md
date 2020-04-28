@@ -29,7 +29,7 @@ You can use the Alert UI Pattern to highlight important information, errors, or 
     
     ![](<images/alert-image-9.png>)
 
-1. After following these steps, 
+1. After following these steps and publishing the module, you can test the pattern in your app. 
 
 
 ## Demo
@@ -40,8 +40,8 @@ You can use the Alert UI Pattern to highlight important information, errors, or 
 
 | **Property** |  **Description** | 
 |---|---|
-| AlertType (Alert Identifer): Mandatory  | Select type of alert. | 
-| ShowCloseButton (Boolean): Optional  | Enable the Close button on the Alert block. 
+| AlertType (Alert Identifer): Mandatory  | Select the type of alert. the predefined options are: <p><ul><li>Error</li><li>Info</li><li>Success</li><li>Warning</li><p>Examples<ul><li>_Entities.Alert.Warning_ - Displays a yellow warning message.</li><li>_Entities.Alert.Info_ - Displays a blue information message.</li></p> | 
+| ShowCloseButton (Boolean): Optional  | Enable a Close button for the Alert. <p>Examples<ul><li>_True_ A close button is enabled.</li><li>_False_ - There is no Close button. This is the default value.</li></p> 
 | ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
 
 ## Layout and Classes

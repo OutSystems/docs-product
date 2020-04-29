@@ -42,16 +42,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 | **Property** |  **Description** |
 |---|---|
-| ExtendedClass (Text): Optional  | Add custom style classes to the Breadcrumbs UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Breadcrumbs UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Breadcrumbs UI styles being applied.</li></ul></p> | 
+| ExtendedClass (Text): Optional  | Add custom style classes to the Breadcrumbs UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Breadcrumbs UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Breadcrumbs UI styles being applied.</li></ul></p> | 
 
 ### Breadcrumb Item
 
 | **Property** |  **Description** |
 |---|---|
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Breadcrumb Item UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Breadcrumb Item UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Breadcrumb Item UI styles being applied.</li></ul></p> |
-
-<!---  Added to yml file
-## See also
-
-* OutSystems UI Live Style Guide: [Breadcrumbs](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Breadcrumbs.aspx)
-* OutSystems UI Pattern Page: [Breadcrumbs](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10)
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Breadcrumb Item UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Breadcrumb Item UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Breadcrumb Item UI styles being applied.</li></ul></p> |

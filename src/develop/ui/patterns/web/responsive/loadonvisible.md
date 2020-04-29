@@ -5,7 +5,7 @@ summary: LoadOnVisible improves both the actual and perceived speed of your appl
 
 # Load on Visible 
 
-You can use the Load on Visible UI Pattern to enhance the speed of your application as well as improve  user experience. Using this UI pattern,  information is loaded onto the page only when it is visible. For example, instead of loading all text and images onto a page at once, they only appear when the user scrolls down the page and the information/image becomes visible.
+You can use the Load on Visible UI Pattern to enhance the speed of your application as well as improve user experience. Using this UI pattern,  information is loaded onto the page only when it is visible to the user. For example, instead of loading all text and images onto a page at once, they only appear when the user scrolls down the page and the information/image becomes visible.
 
 **How to use the Load on Visible UI Pattern**
 
@@ -19,12 +19,9 @@ You can use the Load on Visible UI Pattern to enhance the speed of your applicat
 
     ![](<images/loadonvisible-image-4.png>)
 
-1. Add the relevant content to the placeholders, for example, images.
+1. Add the relevant content to the placeholders. In this example, we added images.
 
- ![](<images/loadonvisible-image-5.png>)
+    ![](<images/loadonvisible-image-5.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
-<!---  Added to yml file
-## See Also
-* OutSystems UI Live Style Guide: [Load on Visible](https://outsystemsui.outsystems.com/WebStyleGuidePreview/LoadOnVisible.aspx)

@@ -828,7 +828,9 @@
 - develop/ui/patterns/web/content/accordion/accordion.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Accordion.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=1
 - develop/ui/patterns/web/content/alert/alert.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -914,7 +916,9 @@
 - develop/ui/patterns/web/controls/fileupload/fileupload.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FileUpload.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=79
 - develop/ui/patterns/web/controls/floatingactions.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

@@ -5,9 +5,9 @@ summary: FileUpload allows the end user to transfer a file or add content to the
 
 # File Upload
 
-You can use the File Upload UI Pattern to allow a user to transfer a file or add content to the application.
+You can use the File Upload UI Pattern to allow users upload files to the app.
 
-The File Upload pattern is commonly used in a form, but it can also be a stand-alone element.
+The File Upload pattern is commonly used in a form, but it can also be used as a stand-alone element.
 
 ![](<images/fileupload-image-1.png>)
 
@@ -18,14 +18,13 @@ The File Upload pattern is commonly used in a form, but it can also be a stand-a
 
     The File Upload widget is displayed.
 
-
+    ![](<images/fileupload-image-3.png>)
  
 1. From the Toolbox, drag the File Upload widget into the Main Content area of your application's screen.
 
+    ![](<images/fileupload-image-4.png>)
 
-1. Drag File Upload pattern into the preview.
-
-1. Change the content in Empty Message.
+1. After following these steps and publishing the module, you can test the pattern in your app. 
 
 
 

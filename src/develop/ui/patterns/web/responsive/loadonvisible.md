@@ -19,7 +19,9 @@ You can use the Load on Visible UI Pattern to enhance the speed of your applicat
 
     ![](<images/loadonvisible-image-4.png>)
 
-1. Add the relevant content to the placeholders. In this example, we added images.
+1. Add the required content to widget. 
+
+    In this example, we add images by dragging the Image widget into the Loan on Visible widget and selecting an image from the sample OutSystems UI images.
 
     ![](<images/loadonvisible-image-5.png>)
 

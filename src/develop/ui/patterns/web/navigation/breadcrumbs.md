@@ -21,12 +21,13 @@ The following example demonstrates how you can create a breadcrumb trail with fo
 
 1. From the Toolbox, drag the Breadcrumbs widget into the Main Content area of your application's screen.
 
-      ![](<images/breadcrumbs-image-9.png>)
+    ![](<images/breadcrumbs-image-9.png>)
 
-     By default, the Breadcrumbs widget contains three Breadcrumb Item widgets. Each Breadcrumb Item represents a location in the breadcrumb trail. You can add or delete Breadcrumb Items as required.
+    By default, the Breadcrumbs widget contains three Breadcrumb Item widgets. Each Breadcrumb Item represents a location in the breadcrumb trail. You can add or delete Breadcrumb Items as required.
 
 1. From the Toolbox, drag another Breadcrumbs Item into your Breadcrumbs Pattern. 
-        ![](<images/breadcrumbs-image-10.png>)
+
+    ![](<images/breadcrumbs-image-10.png>)
         
 1. In the Title placeholder, enter the breadcrumb title (in this example, More Details) and drag an Icon widget into the Icon placeholder.    
     

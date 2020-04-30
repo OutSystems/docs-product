@@ -232,17 +232,13 @@ Learn more about this Early Access feature by checking out the [Progressive Web 
 </div>
 
 * Google Chrome (latest stable version)
+* Safari (latest stable version)
 
 ### Mobile App packages
 
 The minimum requirements depend on the [Mobile Apps Build Service (MABS) version](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) used to generate your Mobile Apps.
 
 Note: Only official Android and iOS ROMs are supported.
-
-### OutSystems Now
-
-* iOS 8 or later
-* Android 4.4 or later
 
 ### Traditional Web Apps
 

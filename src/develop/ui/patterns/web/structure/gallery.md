@@ -23,7 +23,13 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
     ![](<images/gallery-image-9.png>)
 
-1. Drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.md>) or static content into the Gallery widget.
+1. Add the required content to the Gallery widget. 
+
+    In this example, we add images by dragging the Image widget into the Gallery widget and selecting an image from the OutSystems UI images. You can add as many as required.
+
+    ![](<images/gallery-image-10.png>)
+  
+    To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content. 
     
     ![](<images/gallery-image-1.png>)
 

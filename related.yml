@@ -1062,7 +1062,9 @@
 - develop/ui/patterns/web/structure/gallery.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41 
 - develop/ui/patterns/web/utilities/animate.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1103,13 +1105,18 @@
     - external:
         - "OutSystems UI Web Live Style Guide": 
            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
-
 - develop/ui/patterns/mobile/carousel.md:            
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
+           https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
         - "OutSystems UI Pattern": 
            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
+- develop/ui/patterns/mobile/gallery.md:            
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+          https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx
+        - "OutSystems UI Pattern": 
+          https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41           
 # Link to Training
 
 - extensibility-and-integration/connect-external-db.md:

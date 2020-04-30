@@ -7,9 +7,6 @@ summary:
 
 You can use the Gallery UI Pattern to display content (such as cards) in a specific set of columns, configurable per device type and orientation. 
 
-![](<images/gallery-image-7.png>)
-
-
 ## How to use the Gallery UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Gallery`. 
@@ -29,13 +26,13 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-**Property** |  **Description** |  **Default Value**  
----|---|---  
-![](images/input.png) ColumnsInPhonePortrait  |  Number of columns in a Portrait phone.  |  1  
-![](images/input.png) ColumnsInPhoneLandscape  |  Number of columns in a Landscape phone.  |  2  
-![](images/input.png) ColumnsInTabletPortrait  |  Number of columns in a portrait tablet.  |  3  
-![](images/input.png) ColumnsInTabletLandscape  |  Number of columns in a Landscape tablet.  |  4  
-![](images/input.png) UseGutter  |  If set, add a gutter to all the columns except the first.  |  _True_  
+| **Property** |  **Description** |
+|---|---|
+| ItemInPhone  |  Number of columns in a Portrait phone.  |  1  
+| ItemInTablet  |  Number of columns in a Landscape phone.  |  2  
+| ColumnsInTabletPortrait  |  Number of columns in a portrait tablet.  |  3  
+| ColumnsInTabletLandscape  |  Number of columns in a Landscape tablet.  |  4  
+| UseGutter  |  If set, add a gutter to all the columns except the first.  |  _True_  
   
 
 

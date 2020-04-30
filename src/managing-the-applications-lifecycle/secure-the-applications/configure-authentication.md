@@ -32,7 +32,7 @@ Cookie `nr2<User Provider Name>`:
 
 * Provides information to the application code about the user identifier via the built-in function GetUserId()
 * Contains information needed to avoid CSRF attacks
-* Not set as `HttpOnly` (can be accessed through JavaScript)
+* Not set as `HttpOnly` (can be accessed through JavaScript) - notice that setting this as `HttpOnly` can lead to an unsupported scenario
 
 ### Verifying Authentication Cookies
 

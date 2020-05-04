@@ -1,6 +1,6 @@
 ---
-tags:
 summary: 
+tags: runtime-mobileandreactiveweb
 ---
 
 # Carousel UI Pattern Reference

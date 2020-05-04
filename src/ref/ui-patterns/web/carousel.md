@@ -1,6 +1,6 @@
 ---
-tags:
 summary: 
+tags: runtime-traditionalweb
 ---
 
 # Carousel UI Pattern Reference

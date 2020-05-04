@@ -1,6 +1,6 @@
 ---
-tags:
 summary: 
+tags: runtime-traditionalweb
 ---
 
 # Badge UI Pattern Reference

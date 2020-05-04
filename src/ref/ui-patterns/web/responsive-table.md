@@ -1,6 +1,6 @@
 ---
-tags:
 summary: 
+tags: runtime-traditionalweb
 ---
 
 # Responsive Table UI Pattern Reference

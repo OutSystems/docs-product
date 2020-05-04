@@ -40,10 +40,3 @@ After following these steps and publishing the module, you can test the pattern 
 | **Property** |  **Description** |
 |---|---|
 | ResponsiveBehavior (ResponsiveTableRecords Identifier): Mandatory | Define how the table behaves when the user interacts with it. The predefined values are:<p><ul><li>ExpandableRows</li><li>ScrollableRows (default)</li></ul></p> <p>Examples <ul><li>_Entities.RepsonsiveTableRecords.ScrollableRows_ - The table header stays fixed and the user can scroll through the rows in the table. </li><li>_Entities.RepsonsiveTableRecords.ExpandableRows_ - The table header stays fixed and the user can expand each row to view any extra information. </li></ul></p> | 
-  
-
-<!---  Added to yml file
-
-## See also
-* OutSystems UI Live Style Guide: [Responsive Table](https://outsystemsui.outsystems.com/WebStyleGuidePreview/ResponsiveTableRecords.aspx)
--->

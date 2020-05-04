@@ -40,7 +40,3 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 | Title (Text): Mandatory   |  The Fieldset title.  <p>Examples <ul><li>_"Basic Information"_ - the title is set to Basic Information</li></ul></p> | 
 | ExtendedClass (Text): Optional  | Add custom style classes to the Fieldset UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass style_ to the Fieldset UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Fieldset UI styles being applied.</li></ul></p> |
-
-<!--- ## See also
-* OutSystems UI Live Style Guide: [Fieldset](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Fieldset.aspx)
--->

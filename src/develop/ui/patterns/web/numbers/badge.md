@@ -75,12 +75,3 @@ After following these steps and publishing the module, you can test the pattern 
 If the number on Badge Pattern is greater than 99, it is displayed as 99+.
 
 ![](<images/badge-image-6.png>)
-
-<!---  Added to yml file
-
-## See also
-
-* OutSystems UI Live Style Guide: [Badge](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Badge.aspx)
-* OutSystems UI Pattern Page: [Badge](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7)
--->
- 

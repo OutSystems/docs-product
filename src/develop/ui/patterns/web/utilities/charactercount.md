@@ -61,6 +61,3 @@ After following these steps and publishing the module, you can test the pattern 
 | InputWidgetId (Text): Mandatory | The Input widget name that counts the characters. <p> Examples <ul><li>_MyInput.Id_ - Counts the characters in the MyInput input widget.</li></ul> </p>|
 | Limit (Integer): Mandatory  | Character count limit. This value should be the same as the maximum length of the Input widget. <p> Examples <ul><li>180 - Sets the maximum number of characters a user can enter into the Input widget to 180</li></ul> </p>|
 | IsDescending (Boolean): Optional  | Defines whether the count is ascending or descending. <p> Examples <ul><li>_False_ - The count goes from 0 to the value set for the **Limit** property</li><li>_True_ - The count goes from the value set in the **Limit** property to 0. This is the default setting.</li></ul></p> |
-
-<!---## See also
-* OutSystems UI Live Style Guide: [Character Count](https://outsystemsui.outsystems.com/WebStyleGuidePreview/CharacterCount.aspx) -->

@@ -52,9 +52,3 @@ After following these steps and publishing the module, you can test the pattern 
 | ImageURL (Text): Optional | URL for the image you want to show in full screen mode. If empty, a zoomed version of the thumbnail is displayed. Use this if you want to load a lower quality image as a thumbnail and display a higher quality version in full screen mode.   |
 | ImageZoom (Decimal): Optional  |  Defines the size of the image that opens in full screen mode (based on the thumbnail size).<p>To avoid rendering problems, try to use images with the same ratio.<p>Examples</p><ul><li>_2_ - A thumbnail with 100x100, and zoom 2 opens with 200x200.</li><li> _0.5_ - A thumbnail with 500x500, and zoom 0.5 opens with 250x250.</li></ul></p> |
 | ExtendedClass (Text): Optional |  Add custom style classes to the Lightbox Image UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Lightbox Image UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Lightbox Image UI styles being applied.</li></ul></p> |
-
-
-<!--- ## See also
-* OutSystems UI Live Style Guide: [Lightbox Image](https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightboxImage.aspx)
-* OutSystems UI Pattern Page: [Lightbox Image](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46)
--->

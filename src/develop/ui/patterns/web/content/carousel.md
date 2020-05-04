@@ -61,10 +61,3 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 |ItemsPhone(Integer): Optional  | Number of Carousel items visible at the same time on a phone.<p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_4_ - 4 items are displayed.</li></ul></p> |
 | ExtendedClass (Text): Optional |  Add custom style classes to the Carousel UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Carousel UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Carousel UI styles being applied.</li></ul></p> |
 | AdvancedFormat(Text):Optional  |  Enables you to use more options than what is provided in the properties. For more information, visit: https://github.com/ganlanyuan/tiny-slider. <p>Example `{ axis: 'vertical' }`</p> |
-
-<!--Added to yml file
-
-## See also
-* OutSystems UI Live Style Guide: [Carousel](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx)
-* OutSystems UI Pattern Page: [Carousel](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17)
--->

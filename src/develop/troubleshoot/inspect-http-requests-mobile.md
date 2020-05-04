@@ -56,7 +56,7 @@ You only need to grant the notification permission and enable the network debugg
 * The requests are only added to the list after the **Network Debugging** option is enabled. If you see an empty list or only a few requests, restart the app and open the network requests screen again.
 * Enabling the feature is only valid for that app in that particular device. A fresh install of the app requires that you set the permissions again and turn on the network debugging.
 * Dismissing the notification prompt can affect the behavior of the app if it uses notifications for other purposes.
-* The network inspector feature is automatically activated when building apps for development (iOS) or debug (Android).
+* The network inspector feature is available in the following types of native builds: the development build for iOS and the debug build for Android.
 
 ## The network inspection on Android
 

@@ -6,7 +6,7 @@ tags: support-application_development; support-Application_Troubleshooting; supp
 # Inspect the HTTP requests in Mobile Apps for iOS
 
 
-Use the network inspector to see the network activity of your app. The user interface of the network inspector consists of a toolbar and a button that opens the screen with the network traffic details.
+Use the network inspector to see the network activity of your app. The user interface of the network inspector consists of a toolbar and a button that opens the screen with the network traffic details. 
 
 ![Network inspector settings](images/network-inspector-toolbar.png?width=400)
 
@@ -54,9 +54,9 @@ You only need to grant the notification permission and enable the network debugg
 ## Notes
 
 * The requests are only added to the list after the **Network Debugging** option is enabled. If you see an empty list or only a few requests, restart the app and open the network requests screen again.
-* This feature will be automatically enabled when building applications for Development (iOS) or Debug (Android).
 * Enabling the feature is only valid for that app in that particular device. A fresh install of the app requires that you set the permissions again and turn on the network debugging.
 * Dismissing the notification prompt can affect the behavior of the app if it uses notifications for other purposes.
+* The network inspector feature is automatically activated when building apps for development (iOS) or debug (Android).
 
 ## The network inspection on Android
 

@@ -25,7 +25,7 @@ summary:
 
 1. Drag the ResponsiveTable Pattern into the page.
 
-1.  Set the ResponsiveBehaviour parameter to `If(IsPhone(), Entities.ResponsiveTableRecords.ExpandableRows, Entities.ResponsiveTableRecords.ScrollabeRows)`. 
+1. Set the ResponsiveBehaviour parameter to `If(IsPhone(), Entities.ResponsiveTableRecords.ExpandableRows, Entities.ResponsiveTableRecords.ScrollabeRows)`. 
 
     We use the server action IsPhone as the condition to set the property for phone devices. You can also use the IsTablet action, or invert the False & True statements as required.
 
@@ -44,7 +44,7 @@ To implement this, you can use either method described below.
 }
 ```
 
-2. Use CSS variables like `var(--color-yourcolor)`.
+1. Use CSS variables like `var(--color-yourcolor)`.
 
 ```css
 .tablet.portrait .expandable-row .TableRecords tbody tr td:first-child:after, 
@@ -52,9 +52,3 @@ To implement this, you can use either method described below.
     color: var(--color-yourcolor);
 }
 ```
-
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Responsive Table](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Responsive/ResponsiveTable)
-

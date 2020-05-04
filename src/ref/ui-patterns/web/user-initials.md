@@ -59,10 +59,3 @@ summary:
 1. Publish and test.
 
     ![](<images/userinitials-image-8.png?width=750>)
-
-
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [User Initials](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Numbers/UserInitials)
-

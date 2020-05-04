@@ -47,7 +47,3 @@ you can use custom CSS to change the style of the Fieldset Pattern. The followin
 }
 ```
 ![](<images/fieldset-image-4.png>)
-
-
-## See also
-* OutSystems UI Pattern Documentation: [Fieldset](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Utilities/Fieldset)

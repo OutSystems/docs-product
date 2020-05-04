@@ -52,7 +52,3 @@ It is possible to change the style of the dots on a Carousel with the custom CSS
 Line Separator from ListRecords should be None.
 
 ![](<images/carousel-image-8.png>)
-
-## See also
-* OutSystems UI Pattern Documentation: [Carousel](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Traditional_Web_Patterns/Content/Carousel)
-

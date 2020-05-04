@@ -62,10 +62,3 @@ It is possible to load and animate the elements when they are not visible in the
 1. Publish and test.
 
     ![](<images/animate-image-8.gif?width=600>)
-
-
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Animate](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Utilities/Animate)
-

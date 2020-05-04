@@ -92,7 +92,7 @@ Use this example to create a three steps Wizard with continue and back buttons.
 }
 ```
 
-2. Or using CSS variables: `var(--color-yourcolor)`.
+1. Or using CSS variables: `var(--color-yourcolor)`.
 
 
 ```css
@@ -115,8 +115,3 @@ Use this example to create a three steps Wizard with continue and back buttons.
 ```
 
 ![](images/wizard-image-9.png?width=750)
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Wizard](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Navigation/Wizard)
-

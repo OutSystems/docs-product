@@ -40,7 +40,3 @@ summary:
 1. Publish and test.
     
     ![](<images/counter-image-5.png>)
-
-
-  ## See also
- * OutSystems UI Pattern Documentation: [Counter](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Numbers/Counter)

@@ -1104,7 +1104,9 @@
 - develop/ui/patterns/web/navigation/navigationbar.md:            
     - external:
         - "OutSystems UI Web Live Style Guide": 
-           https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+           https://outsystemsui.outsystems.com/WebStyleGuidePreview/NavigationBar.aspx
+
+# UI Mobile Patterns
 - develop/ui/patterns/mobile/carousel.md:            
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1117,8 +1119,17 @@
           https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx
         - "OutSystems UI Pattern": 
           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41           
+- develop/ui/patterns/mobile/tabs.md:            
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+          https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
+        - "OutSystems UI Pattern": 
+          https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73           
+- develop/ui/patterns/mobile/masterdetail.md:            
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+          https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51
 # Link to Training
-
 - extensibility-and-integration/connect-external-db.md:
     - external:
         - "Demo - Integrating with a SQL Server Database":

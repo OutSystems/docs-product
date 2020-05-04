@@ -15,20 +15,21 @@ You can use the Tabs UI Pattern to display large sets of information, which can 
 
     The Tabs widget is displayed.
     
-    ![](images/tabs-image4.png)
+    ![](images/tabs-image-4.png)
     
-3. From the Toolbox, drag the Tabs block onto your application's screen. 
+1. From the Toolbox, drag the Tabs widget into the Main Content area of your application's screen.
 
-    ![](images/Tabs_pattern.png)
+    ![](images/tabs-image-3.png)
+    
+    By default, the Tabs widget contains 3 Header Items (tab titles) and 3 Content Items (tab content). You can add or delete as many as required.
 
-4. Add your content to the Content placeholders.
+1. Add the relevant content to the Header Item and Content Item placeholders. In this example we add some text by typing directly into each of the placeholders.
+    
+      ![](images/tabs-image-5.png)
 
-     * The **Tab 1** - **Tab 5** placeholders represent the header tabs.
+1. On the **Properties** tab, you can customize the Tabs look and feel by setting any of the optional properties, for example, which tab is displayed as the active tab when the page is rendered and whether the tabs are displayed vertically or horizontally.  
 
-     * The **Tab Content 1** - **Tab Content 5** placeholders represent the content of each tab.   
-
-
-5. On the **Properties** tab, set the **StartingTab** property to display the tabs when rendering.
+    ![](images/tabs-image-6.png)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -63,14 +64,17 @@ All Silk patterns hide _divs_ with no content. If you only need 2 or 3 tabs, and
 
 ## Properties
 
-**Property** |  **Description** |  **Default Value**  
----|---|---  
-![](images/input.png) StartingTab  |  Index of the currently active tab.  |  0  
-  
+|**Property** |  **Description** | 
+|---|---|
+|StartingTab (Integer): Optional  | Set the index of the currently active tab. The index begins at 0.<p>Examples<ul><li>_Blank_ - The 1st tab is the active tab. This is the default.</li><li>_1_ - The 2nd tab is the active tab.</li></ul></p>|    
+|IsJustified (Boolean): Optional  | If True, the Tabs are evenly distributed in the space available. If set to False, the Tabs are left aligned. This is the default value.|  
+|IsVertical (Boolean): Optional  | If True, the Tabs are displayed vertically. If set to False, the Tabs are displayed horizontally. This is the default value.|  
+|IsRight (Boolean): Optional  | If True, the Tabs are displayed to the right of the Tab content. If set to False, the Tabs are displayed to the left of the Tab content. This is the default value. **Note**: This setting is only applicable if the IsVertical property is set to True.|  
+| ExtendedClass (Text): Optional | Add custom style classes to the Tabs UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are Tabs UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Tabs UI styles being applied.</li></ul></p> | 
   
 ## Device and pattern compatibility
 
-* Incompatibility with RTL on Android devices with 4.4.2 OS version.
+* Incompatible with RTL on Android devices with 4.4.2 OS version.
 
 * Avoid using the Tabs Pattern inside patterns with swipe events, such as the Stacked Cards or Carousel Patterns.
 
@@ -82,7 +86,3 @@ The following samples use the Tabs pattern:
 
 ![](images/Tabs-sample-2.PNG)
 
-## See also
-
-* OutSystems UI Live Style Guide: [Tabs](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx)
-* OutSystems UI Pattern Page: [Tabs](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73)

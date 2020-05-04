@@ -78,9 +78,9 @@ You can have your phone in landscape to work the same way as a tablet:
 
 ## Properties
 
-**Property** |  **Description** |  **Default Value**  
----|---|---  
-![](images/input.png) ItemList  |  These are the items for the list on the left side of the MasterDetail.  |  N/A  
+**Property** |  **Description** |   
+|---|---|
+|ItemList  |  These are the items for the list on the left side of the MasterDetail.  |  N/A  
   
  
   
@@ -93,8 +93,3 @@ This pattern should be used alone inside the screen content because it will adap
 You can use the Master Detail pattern as a sample:
 
 ![](images/MasterDetail-Sample-1.PNG)
-
-
-## See also
-
-* OutSystems UI Pattern Page: [Master Detail](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51)

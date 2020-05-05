@@ -69,7 +69,7 @@ Activity to be executed by an end user.
 <td>Screen where the user will complete the Human Activity work after opening this activity in the Taskbox.</td>
 <td></td>
 <td></td>
-<td></td>
+<td>Available in Reactive Web and Traditional apps.</td>
 </tr>
 <tr>
 <td title="Original Name">Original Name</td>

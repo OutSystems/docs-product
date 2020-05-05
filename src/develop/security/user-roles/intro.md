@@ -46,3 +46,19 @@ Traditional Web Apps.
 When end user authentication and authorization is performed using an external system, non-persistent Roles should be used. This makes it easier to map permissions defined in an external system, such as Active Directory, to OutSystems Roles. Using non-persistent Roles ensures that changes to end user permissions made in the external system are reflected in OutSystems.
 
 </div>
+
+## User Roles in the OutSystems metamodel
+Roles that are created in the OutSystems platform are stored in one entity of the OutSystems metamodel - **Role** Entity
+As a developer, you can check the Roles of a User from two different places:
+* **User_Role**
+Metamodel table where User Role association is stored. This table stores only Roles that are directly added to a specific user through the Users application.
+
+* **User_Effective_Role** 
+Metamodel view that contains user-specific roles, either assigned directly to a user or indirectly through User Groups.
+
+Both User_Role and User_Effective_Role can be consumed in your applications:
+1. Open Manage Dependencies popup
+2. Select (System) in the Producers list
+3. Select both database elements in Entities folder
+
+![Roles_Metamodel](images/Roles_metamodel.PNG)

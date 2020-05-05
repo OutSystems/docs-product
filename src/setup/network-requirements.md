@@ -40,10 +40,10 @@ The table below details the ports that need to be accessible in each server of a
 |------|-----------|----|--------|-----|
 |SysOps|Server|22/3389|TCP|Access the server through SSH or Remote Desktop|
 |End Users|Front-End|80|TCP|Applications HTTP access|
-|End Users|Front-End|443|TCP|Applications HTTPS access (always required for Reactive, PWA and mobile apps)|
+|End Users|Front-End|443|TCP|Applications HTTPS access (always required for Mobile and Reactive Web apps)|
 |Development Tools|Front-End|80|TCP|Deploy applications to the environment|
 |Development Tools|Front-End|443|TCP|Deploy applications to the environment|
-|Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
+|Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
 |Front-End|Controller|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
 |Front-End|SQL Server / Oracle|1433 / 1521|TCP|Database connection|

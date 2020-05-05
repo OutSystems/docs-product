@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: runtime-traditionalweb
+tags: runtime-traditionalweb; 
+summary: Advance use cases for the Badge UI Pattern
 ---
 
 # Badge UI Pattern Reference

@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: runtime-traditionalweb
+tags: runtime-traditionalweb; 
+summary: Advanced Use Cases for the Character Count UI Pattern
 ---
 
 # Character Count UI Pattern Reference

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: IconBadge displays numerical information as notification.
+summary: Icon Badge displays numerical information as notification.
 ---
 
 # Icon Badge

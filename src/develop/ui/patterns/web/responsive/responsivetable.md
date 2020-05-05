@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ResponsiveTable displays information in a logical and organized way that is easy to scan and read.
+summary: Responsive Table displays information in a logical and organized way that is easy to scan and read.
 ---
 
 # Responsive Table

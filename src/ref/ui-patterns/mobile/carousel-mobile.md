@@ -1,11 +1,12 @@
 ---
-summary: 
+
 tags: runtime-mobileandreactiveweb
+summary: Advanced use cases for the Carousel UI Pattern 
 ---
 
 # Carousel UI Pattern Reference
 
-### Customizing the dots
+## Customizing the dots
 
 You can use CSS to customize the look and feel of the dots.
 
@@ -52,7 +53,7 @@ You can use CSS to customize the look and feel of the dots.
 
 ![](images/Carousel_before_after_2.png)
 
-### Using the Carousel Pattern inside the Columns Pattern
+## Using the Carousel Pattern inside the Columns Pattern
 
 To use the Carousel Pattern inside any Columns Pattern , you must fix the columns’ overflow, by adding the following style to the CSS:
    
@@ -62,7 +63,7 @@ To use the Carousel Pattern inside any Columns Pattern , you must fix the column
     }
     
 
-### Getting the current position of a Carousel Item
+## Getting the current position of a Carousel Item
 
   1. Create an **Integer** local variable (for example, Position) on the screen. 
   1. In the **OnItemChange** event of the block, create a new client action for the handler (CarouselCurrentPosition).   
@@ -73,14 +74,14 @@ indicates the current position in the Carousel.
 
     ![](images/Carousel_current_position.png)
 
-### Creating an onboarding screen using the Carousel Pattern
+## Creating an onboarding screen using the Carousel Pattern
 
 A typical onboarding screen has a Carousel that takes the full height of the
 screen, slides for a couple of items and then displays a button to start using
 the app on the last slide. Follow the steps below to create your own
 onboarding screen using the Carousel.
 
-#### Creating a carousel that occupies the screen height
+### Creating a carousel that occupies the screen height
 
 1. Start with a new Screen using a Blank Layout (Common\LayoutBlank).
 
@@ -94,7 +95,7 @@ onboarding screen using the Carousel.
 
     ![image.png](images/image.png) 
 
-#### Displaying a Button when Viewing the Last Carousel Item
+### Displaying a Button when Viewing the Last Carousel Item
 
 1. Create a **boolean** local variable on the screen called **ShowButton**.
 
@@ -121,7 +122,7 @@ b. Add a button into the Content placeholder.
   
 1. Publish your app.
 
-### Creating a carousel with navigation buttons
+## Creating a carousel with navigation buttons
 
 This pattern includes [public actions](../../../develop\ui\patterns\mobile\public-actions.md) that you can use without having to use the Carousel's own
 navigation (Next, Previous or GoTo). In this use case, we will only use
@@ -137,7 +138,7 @@ action.
 
     ![](images/Carousel__on_click.png)
 
-### Creating a ListRemove in Carousel
+## Creating a ListRemove in Carousel
 
 This pattern includes the **UpdateCarousel** [public actions](../../../develop\ui\patterns\mobile\public-actions.md) to update all variables and positions in the Pattern:
 

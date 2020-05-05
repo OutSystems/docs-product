@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: LightBoxImage displays an image thumbnail that is clicked to open a fullscreen image.
+summary: Light Box Image displays an image thumbnail that is clicked to open a fullscreen image.
 ---
 
 # Light Box Image

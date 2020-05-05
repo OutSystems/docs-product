@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary: Displays multiple items in a horizontal slide.
 ---
 
 # Carousel

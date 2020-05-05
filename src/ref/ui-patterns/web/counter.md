@@ -1,6 +1,8 @@
 ---
-summary: 
-tags: runtime-traditionalweb
+
+
+tags: runtime-traditionalweb; 
+summary: Advanced Use Cases for the Counter UI Pattern
 ---
 
 # Counter UI Pattern Reference

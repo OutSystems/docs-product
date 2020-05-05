@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: UserInitials display user information in a circular badge.
+summary: User Initials display user information in a circular badge.
 ---
 
 # User Initials

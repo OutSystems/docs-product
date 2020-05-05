@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: CharacterCount displays the number of characters left to be entered in a target input field.
+summary: Character Count displays the number of characters left to be entered in a target input field.
 ---
 
 # Character Count

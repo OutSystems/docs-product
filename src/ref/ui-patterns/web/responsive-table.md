@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: runtime-traditionalweb
+tags: runtime-traditionalweb;
+summary: Advanced Use Cases for the Responsive Table UI Pattern
 ---
 
 # Responsive Table UI Pattern Reference

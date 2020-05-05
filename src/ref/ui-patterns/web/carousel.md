@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced Use Cases for the Carousel UI Pattern
+summary: Advanced Use Cases for the Carousel UI Pattern.
 ---
 
 # Carousel UI Pattern Reference

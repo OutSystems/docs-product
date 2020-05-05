@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Animate UI Pattern
+summary: Advanced use cases for the Animate UI Pattern.
 ---
 
 # Animate UI Pattern Reference

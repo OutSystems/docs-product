@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced Use Cases for the User Initials UI Pattern
+summary: Advanced Use Cases for the User Initials UI Pattern.
 ---
 
 # User Initials UI Pattern Reference

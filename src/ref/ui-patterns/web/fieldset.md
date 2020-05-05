@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced Use Cases for the Fieldset UI Pattern
+summary: Advanced Use Cases for the Fieldset UI Pattern.
 ---
 
 # Fieldset UI Pattern Reference

@@ -1,7 +1,6 @@
 ---
-
-tags: runtime-mobileandreactiveweb
-summary: Advanced use cases for the Carousel UI Pattern 
+tags: runtime-mobileandreactiveweb;
+summary: Advanced use cases for the Carousel UI Pattern. 
 ---
 
 # Carousel UI Pattern Reference
@@ -155,7 +154,7 @@ actions.
 
 **Event Name** |  **Description** |  **Mandatory**  
 ---|---|---  
-![](images/Event.png) OnItemChange  |  Returns the active item's current position.  |  False  
+ OnItemChange  |  Returns the active item's current position.  |  False  
   
 ## Layout and Classes
 
@@ -165,6 +164,6 @@ actions.
 
 **Element** |  **CSS Class** |  **Description**  
 ---|---|---  
-![](images/css_selector.png) Carousel Wrapper  |  .carousel  |  Container that wraps all Carousel elements.  
-![](images/css_selector.png) Navigation Dots  |  .carousel-dot  |  All dots that represent the number of Carousel items.  
-![](images/css_selector.png) Selected Navigation Dot  |  .carousel-dot.active  |  The dot that represents the currently active item.  
+Carousel Wrapper  |  .carousel  |  Container that wraps all Carousel elements.  
+ Navigation Dots  |  .carousel-dot  |  All dots that represent the number of Carousel items.  
+ Selected Navigation Dot  |  .carousel-dot.active  |  The dot that represents the currently active item.  

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced Use Cases for the Light Box Image UI Pattern
+summary: Advanced Use Cases for the Light Box Image UI Pattern.
 ---
 
 # Light Box Image UI Pattern Reference

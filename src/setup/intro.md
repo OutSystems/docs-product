@@ -164,16 +164,19 @@ Do the following:
 
 1. Create a folder named `bin` at the same folder level as the Platform Server installation package.
 
-1. Download and place the required Microsoft installers in the `bin` folder. The filenames of the installation binaries **must match** the following:  
+1. Download and place the required Microsoft installers in the `bin` folder.
 
-    `NDP472-KB4054530-x86-x64-AllOS-ENU.exe` = Microsoft .NET Framework 4.7.2  
-    [Download the Offline Installer for the Runtime](https://go.microsoft.com/fwlink/?LinkID=863265) from Microsoft
+    1. Microsoft .NET Framework 4.7.2 - [Download the Offline Installer for the Runtime](https://go.microsoft.com/fwlink/?LinkID=863265)        from Microsoft 
     
-    `DotNetCore_WindowsHosting.exe` = .NET Core 2.1 Runtime & Hosting Bundle for Windows  
-    [Download the .NET Core 2.1 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-2.1.12-windows-hosting-bundle-installer) from Microsoft
+    1. Rename the Microsot .Net Framework Installer to `DotNet.exe`
     
-    `BuildTools_Full.exe` = Build Tools 2015  
-    [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft
+    1. .NET Core 2.1 Runtime & Hosting Bundle for Windows [Download the .NET Core 2.1 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-2.1.12-windows-hosting-bundle-installer) from Microsoft
+    
+    1. Rename the .Net Core Installer to `DotNetCore_WindowsHosting.exe`
+    
+    1. Build Tools 2015 [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft
+    
+    1. Rename the Build Tools Installer to `BuildTools_Full.exe`
 
 1. Run the Platform Server installer package as usual. The binaries you downloaded from Microsoft will be detected by the installation package.
 

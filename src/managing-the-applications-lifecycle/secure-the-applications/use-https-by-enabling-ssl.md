@@ -14,7 +14,7 @@ To use HTTPS in your application you must configure and activate SSL (Secure Soc
 
 After configuring SSL in your infrastructure, you can define that [some parts](<../../develop/security/secure-http-requests.md>) or your [entire application/environment](<enforce-https-security.md>) must be served over HTTPS.
 
-Note that all requests made to the back-end of a mobile app (the server part of the OutSystems generated code for your mobile app), Progressive Web App (PWA) or a Rective Web app are **always** made over HTTPS.
+Note that all requests made to the back-end of a Mobile or Reactive Web app (the server part of the OutSystems generated code for your app) are **always** made over HTTPS.
 
 ## Enabling SSL in your OutSystems Infrastructure
 

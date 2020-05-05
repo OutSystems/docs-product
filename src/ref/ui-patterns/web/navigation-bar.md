@@ -1,9 +1,9 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced Use Cases for the Navigation Bar UI Pattern
 ---
 
-# Navigatiob Bar UI Pattern Reference
+# Navigation Bar UI Pattern Reference
 
 ## Layout and classes
 

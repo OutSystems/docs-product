@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-mobileandreactiveweb;  
+summary: Advanced Use Cases for the Gallery UI Pattern
 ---
 
 # Gallery UI Pattern Reference
@@ -13,15 +13,14 @@ summary:
 
 ### Using Animations Inside the Gallery
 
-1\. Use the **Animate** block as the first element inside the list.
+1. Use the **Animate** block as the first element inside the list.
 
 ![](images/Gallery_animate.png)
 
-2\. Place your content inside the b block.
+1.  Place your content inside the b block.
 
 ![](images/Gallery_ellipsis.png)
-
-3\. Define the **Animate** block with your desired type of animation, and set
+1. Define the **Animate** block with your desired type of animation, and set
 the delay with current row number from the list.
 
 ![](images/Gallery_interaction.png)
@@ -31,8 +30,4 @@ virtualization.
 
 ![](images/Gallery_list.png)
 
-
- ## See Also
-
-* OutSystems UI Pattern Documentation: [Gallery](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_Patterns/Gallery_Pattern)
 

@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced Use Cases for the Gallery UI Pattern
 ---
 
 # Gallery UI Pattern Reference

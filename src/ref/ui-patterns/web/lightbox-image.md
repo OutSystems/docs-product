@@ -40,15 +40,6 @@ To add rounded corners to images inside LightBoxImage, add the following custom 
   border-radius: var(--border-radius-soft);
 }
 ```
-<<<<<<< HEAD
-=======
 ![](<images/lightboximage-image-6.png>)
 
     
- ## See Also
-
-* OutSystems UI Pattern Documentation: [Lightbox Image ](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Content/LightBoxImage)
-
->>>>>>> Updated as per Pedro Sousa's comments
-
-![](<images/lightboximage-image-6.png>)

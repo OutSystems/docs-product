@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced Use Cases for the Sidebar UI PAttern
+summary: Advanced Use Cases for the Sidebar UI Pattern.
 ---
 
 # Sidebar UI Pattern Reference

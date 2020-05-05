@@ -1,11 +1,11 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary: Displays large sets of information, which can be split into different areas, while always remaining a click away. 
 ---
 
 # Tabs
 
-You can use the Tabs UI Pattern to display large sets of information, which can be split into different areas, while always remaining a click away. 
+You can use the Tabs UI Pattern to divide content into meaningful sections. Each section is viewable at one time. You use this pattern when you want the user to be able to between sections within the same context, not to navigate to different areas. 
 
 ![](images/tabs-gif1.gif?width=650)
 

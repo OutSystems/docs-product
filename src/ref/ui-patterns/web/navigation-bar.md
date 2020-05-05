@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced Use Cases for the Navigation Bar UI Pattern
+summary: Advanced Use Cases for the Navigation Bar UI Pattern.
 ---
 
 # Navigation Bar UI Pattern Reference
@@ -79,10 +79,3 @@ summary: Advanced Use Cases for the Navigation Bar UI Pattern
     color: var(--color-yourcolor);
 }
 ```
-
-
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Navigation Bar](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Navigation/NavigationBar)
-

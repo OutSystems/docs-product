@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced Use Cases for the Tabs UI Pattern
+summary: Advanced Use Cases for the Tabs UI Pattern.
 ---
 
 # Tabs UI Pattern Reference

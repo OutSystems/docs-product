@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced Use Cases for the Gallery UI Pattern
+summary: Advanced Use Cases for the Gallery UI Pattern.
 ---
 
 # Gallery UI Pattern Reference

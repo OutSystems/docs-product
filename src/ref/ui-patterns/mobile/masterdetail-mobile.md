@@ -1,9 +1,42 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced Use Cases dor the Master Detail UI Pattern
+summary: Advanced Use Cases dor the Master Detail UI Pattern.
 ---
 
 # Master Detail UI Pattern Reference
+
+## Phone landscape with the same behavior as a tablet
+
+You can have your phone in landscape to work the same way as a tablet:
+
+    
+    
+    .phone.landscape .split-left {
+         width: **x; /* This is width value for the left side */**
+    }
+    
+    
+    
+    .phone.landscape .split-right {
+         -webkit-transform: translateX(0) translateZ(0);
+          transform: translateX(0) translateZ(0);
+        width: **x; /* This is the width value for the right side */**
+         left: auto;
+        right: 0;
+        border-left: 1px solid #d3d3d3;
+    }
+    
+    
+    .phone.landscape .detail-open .split-right-close {
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    
+    .phone.landscape .detail-open .app-menu-icon {
+        opacity: 1;
+        pointer-events: auto;
+    }
 
 ## Events
 

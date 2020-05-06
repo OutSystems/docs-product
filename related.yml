@@ -908,7 +908,9 @@
 - develop/ui/patterns/web/controls/dropdown.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Dropdown.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=33
 - develop/ui/patterns/web/controls/dropdownselect.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

@@ -5,51 +5,30 @@ summary: Dropdown allows end users to make a choice from several options.
 
 # Dropdown
 
-Allow end users to make a choice from several options.
-
-Use the Dropdown to offer a choice of more than four options. For a very large number of options, consider using the Dropdown Select to avoid loss of context.
-
-**How to use**
-
-Fill in the label of the Dropdown and add the required links in the DropdownList placeholder.
-
-1. Drag the Dropdown pattern into the preview.
-
-    ![](<images/dropdown-image-1.png?width=500>)
-
-1. Set your content in the placeholders.
-1. Publish and test.
-
-## Input Parameters
-
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
-  
-## Layout and Classes
-
-![](<images/dropdown-image-2.png>)
-
-## CSS Selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
-| .dropdown |  .is--hidden |  Defines if the dropdown list is closed  |
-| .dropdown |  .is--visible |  Defines if the dropdown list is open  |
-
-## Advanced Use Case
-
-### Use with ListRecords to make a list of links
-
-1. Drag the Dropdown Pattern into the page.
-
-1. In the DropdownList placeholder, drag a ListRecords widget.
-1. Set the Line Separator property of the ListRecords widget to None.
-1. In the ListRecords widget, drag a link and connect it to the required destination.
-1. Inside the List, use expressions to display the content.
-1. In the Prompt placeholder, set the text you want to define as the prompt.
-1. Publish and test.
+You can use the Dropdown UI Pattern to allow users make a choice from several options. Use the Dropdown UI Pattern to offer a choice of more than **four** options. For a very large number of options, consider using the Dropdown Select UI Pattern to avoid loss of context.
 
 ![](<images/dropdown-image-3.png>)
 
-![](<images/dropdown-gif-1.gif>)
+**How to use the Dropdown UI Pattern**
+
+1. In Service Studio, in the Toolbox, search for `Dropdown`.
+
+    The Dropdown widget is displayed.
+
+    ![](<images/dropdown-image-1.png>)
+ 
+1. From the Toolbox, drag the Dropdown widget into the Main Content area of your application's screen.
+
+    ![](<images/dropdown-image-2.png>)
+
+1. Enter the Dropdown name in the **Prompt** placeholder and the Dropdown values in the **Dropdown List** placeholder.
+
+    ![](<images/dropdown-image-4.png>)
+
+1. After following these steps and publishing the module, you can test the pattern in your app. 
+
+## Properties
+
+ **Property** | **Description** | 
+|---|---|
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Dropdown UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Dropdown UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown UI styles being applied.</li></ul></p>  |

@@ -1,5 +1,9 @@
 ---
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Accordion UI Pattern
 ---
+
+# Accordion UI Pattern Reference
 
 ## Layout and Classes
 

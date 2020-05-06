@@ -43,14 +43,14 @@ You can use the Accordion UI Pattern to allow users expand and hide content when
 | **Property** |  **Description** |  
 |---|---|
 | MultipleItems (Boolean): Optional |  If set to True, multiple Accordion Items can be open at the same time. If set to False, only one Accordion Item can be open at a time. This is the default value. | 
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Accordion UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Accordion UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Accordion UI styles being applied.  |
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Accordion UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Accordion UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Accordion UI styles being applied.</li></ul></p>  |
 
 ### Accordion Item
 | **Property** |  **Description** | 
 |---|---|
 | IsOpen (Boolean): Optional  |  If set to True, when rendering, the Accordion Item is open. If set to False, the Accordion Item is closed. This is the default value.|  
 | IsDisable (Boolean): Optional  |  If set to True, the Accordion Item cannot be clicked. If set to False, the Accordion Item is clickable. This is the default value. 
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Accordion Item UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Accordion Item UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Accordion Item UI styles being applied.  |
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Accordion Item UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Accordion Item UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Accordion Item UI styles being applied. </li></ul></p>|
 
 
 

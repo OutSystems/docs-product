@@ -1116,6 +1116,7 @@
         - "OutSystems UI Web Live Style Guide": 
            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 
+# UI Mobile Patterns
 - develop/ui/patterns/mobile/carousel.md:
     - ref/ui-patterns/mobile/carousel-mobile.md
     - external:

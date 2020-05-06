@@ -1,15 +1,31 @@
 ---
-tags:
-summary: 
+tags: runtime-mobileandreactiveweb; 
+summary: Advanced use cases for the Range Slider UI Pattern
 ---
 
 # Range Slider UI Pattern Reference
+
+## Changing the color of the bar
+
+![](images/range_slider_color_bar_1.png)
+
+![](images/range_slider__change_color.png)
+
+![](images/range_slider_color_bar_2.png)
+
+## Changing the size of the handles
+
+![](images/range_slider_handle_size_1.png)
+
+![](images/range_slider_change_size_of_handles.png)
+
+![](images/range_slider_handle_size_2.png)
 
 ## Events
 
 **Event Name** |  **Description** |  **Mandatory**  
 ---|---|---  
-![](images/Event.png) OnChange  |  Action to execute after selecting a new value on the slider. Returns the new Value.  |  True  
+OnChange  |  Action to execute after selecting a new value on the slider. Returns the new Value.  |  True  
   
 ## Layout and classes
 
@@ -19,10 +35,7 @@ summary:
 
 **Element** |  **CSS Class** |  **Description**  
 ---|---|---  
-![](images/css_selector.png) noUi-handle  |  .noUi-active  |  Class added when handle is clicked.  
+noUi-handle  |  .noUi-active  |  Class added when handle is clicked.  
   
 
- ## See also
-
-* OutSystems UI Pattern Documentation: [Range Slider](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_Patterns/RangeSlider_Pattern)
 

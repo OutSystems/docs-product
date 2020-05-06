@@ -28,7 +28,7 @@ Force HTTPS for exposed integrations in Web Applications
 
 * Make sure you access your environment (management consoles, web applications and integration endpoints) using the hostname that matches the SSL certificate's Common Name (CN) or Subject Alternative Name (SAN) when using HTTPS. If you use a different hostname or just an IP address you will have errors and security warnings.
 
-* All HTTP requests in Progressive Web Apps (PWA), Mobile and Reactive Web Applications are served via HTTPS regardless of the settings above.
+* All HTTP requests in Mobile Apps (distributed as the native builds or PWA) and Reactive Web Apps are served via HTTPS regardless of the settings above.
 
 ## Configure Secure Connections for an Environment
 

@@ -1,10 +1,9 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced Use Cases for the Light Box Image UI Pattern.
+summary: Advanced use cases for the Light Box Image UI Pattern.
 ---
 
 # Light Box Image UI Pattern Reference
-
 
 ## Layout and classes
 
@@ -37,9 +36,9 @@ To add rounded corners to images inside LightBoxImage, add the following custom 
 ```css
 .lightbox-content-thumbnail img,
 .pswp__item img {
-  border-radius: var(--border-radius-soft);
+    border-radius: var(--border-radius-soft);
 }
 ```
-![](<images/lightboximage-image-6.png>)
 
+![](<images/lightboximage-image-6.png>)
     

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced Use Cases for the Carousel UI Pattern.
+summary: Advanced use cases for the Carousel UI Pattern.
 ---
 
 # Carousel UI Pattern Reference
@@ -17,7 +17,7 @@ Here are some more advanced use-cases of the widget.
 
 To place the arrows outside the carousel, change the input parameters Padding and Margin. To have this behavior both parameters must be of the same value. Padding creates a space around the carousel viewport and the margin pushes the elements apart, so they are hidden inside the carousel.
 
-![](<images/carousel-image-4.png>)
+![](<images/carousel-image-4.png>)  
 ![](<images/carousel-image-5.png>)
 
 ### Customizing the dots style

@@ -11,74 +11,71 @@ You can use CSS to customize the look and feel of the dots.
 
 **Example 1:**
   
+```css
+.carousel .carousel-dots-container .carousel-dot.active {
+    opacity: 1;
+    width: 16px;
+    height: 2px;
+    margin-top: 2px;
+    transition: opacity 275ms ease-out;
+}
     
-    .carousel .carousel-dots-container .carousel-dot.active {
-         opacity: 1;
-        width: 16px;
-        height: 2px;
-        margin-top: 2px;
-        transition: opacity 275ms ease-out;
-    }
-    
-    
-    .carousel .carousel-dots-container .carousel-dot {
-        border-radius: 0;
-        height: 1px;
-        margin: 3px 3px;
-        width: 8px;
-        transition: opacity 275ms ease-out;
-    }
+.carousel .carousel-dots-container .carousel-dot {
+    border-radius: 0;
+    height: 1px;
+    margin: 3px 3px;
+    width: 8px;
+    transition: opacity 275ms ease-out;
+}
+```
 
 ![](images/Carousel_before_after_1.png)
 
 **Example 2:**
    
-    
-    .carousel-dots-container .carousel-dot {
-         background: #fff;
-        border: 0px solid #fff;
-        height: 4px;
-        margin: 3px;
-        opacity: .5;
-        width: 4px;
-    }
-    
-    
-    .carousel-dots-container .carousel-dot.active {
-        background: transparent;
-        border: 1px solid #fff;
-        opacity: 1;
-    }
+```css
+.carousel-dots-container .carousel-dot {
+    background: #fff;
+    border: 0px solid #fff;
+    height: 4px;
+    margin: 3px;
+    opacity: .5;
+    width: 4px;
+}
+
+.carousel-dots-container .carousel-dot.active {
+    background: transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+```
 
 ![](images/Carousel_before_after_2.png)
 
 ## Using the Carousel Pattern inside the Columns Pattern
 
-To use the Carousel Pattern inside any Columns Pattern , you must fix the columns’ overflow, by adding the following style to the CSS:
+To use the Carousel Pattern inside any Columns Pattern, you must fix the columns' overflow, by adding the following style to the CSS:
    
-    
-    .col {
-        overflow: hidden;
-    }
-    
+```css
+.col {
+    overflow: hidden;
+}
+```
 
 ## Getting the current position of a Carousel Item
 
-  1. Create an **Integer** local variable (for example, Position) on the screen. 
-  1. In the **OnItemChange** event of the block, create a new client action for the handler (CarouselCurrentPosition).   
-    a. The action receives a variable **Index** , which is the event that
-indicates the current position in the Carousel.
+1. Create an **Integer** local variable (for example, Position) on the screen. 
 
-  1. Drag an **Assign** node and set the Position (your local variable) to Index. 
+1. In the **OnItemChange** event of the block, create a new client action for the handler (CarouselCurrentPosition).   
+    a. The action receives a variable **Index**, which is the event that indicates the current position in the Carousel.
+
+1. Drag an **Assign** node and set the Position (your local variable) to Index. 
 
     ![](images/Carousel_current_position.png)
 
 ## Creating an onboarding screen using the Carousel Pattern
 
-A typical onboarding screen has a Carousel that takes the full height of the
-screen, slides for a couple of items and then displays a button to start using
-the app on the last slide. Follow the steps below to create your own
-onboarding screen using the Carousel.
+A typical onboarding screen has a Carousel that takes the full height of the screen, slides for a couple of items and then displays a button to start using the app on the last slide. Follow the steps below to create your own onboarding screen using the Carousel.
 
 ### Creating a carousel that occupies the screen height
 

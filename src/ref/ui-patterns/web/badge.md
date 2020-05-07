@@ -18,6 +18,6 @@ summary: Advanced use cases for the Badge UI Pattern.
 
 1. On the **Properties** tab, set the **Color** to transparent (`Entities.Color.Transparent`).
 
-2. In the ExtendedClass property, set the text color and the border size of the badge. 
+1. In the ExtendedClass property, set the text color and the border size of the badge. 
 
     ![](<images/badge-image-4.png>)

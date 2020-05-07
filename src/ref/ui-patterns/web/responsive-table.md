@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced Use Cases for the Responsive Table UI Pattern.
+summary: Advanced use cases for the Responsive Table UI Pattern.
 ---
 
 # Responsive Table UI Pattern Reference
@@ -9,7 +9,6 @@ summary: Advanced Use Cases for the Responsive Table UI Pattern.
 
 ![](<images/responsivetable-image-4.png>)
 
-
 ## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
@@ -17,7 +16,6 @@ summary: Advanced Use Cases for the Responsive Table UI Pattern.
 | .table-records-responsive |  .table-records-responsive.scrollable-row|  When the ResponsiveBehavior parameter is set to scrollable  |
 | .table-records-responsive |  .table-records-responsive.expandable-row|  When the ResponsiveBehavior parameter is set to expandable  |
 | table tbody tr |  .TableRecords_ExpandedRow |  When using the expandable-row option, identifies when the the row is expanded  |
-
 
 ## Advanced use case
 

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced Use Cases for the User Initials UI Pattern.
+summary: Advanced use cases for the User Initials UI Pattern.
 ---
 
 # User Initials UI Pattern Reference
@@ -24,8 +24,6 @@ summary: Advanced Use Cases for the User Initials UI Pattern.
 1. Change the pattern values.
 
 1. Publish and test.
-
-    
 
 ### Use the User Initials Pattern with IF conditions
 

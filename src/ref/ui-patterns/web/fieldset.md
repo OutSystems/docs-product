@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced Use Cases for the Fieldset UI Pattern.
+summary: Advanced use cases for the Fieldset UI Pattern.
 ---
 
 # Fieldset UI Pattern Reference
@@ -19,31 +19,33 @@ you can use custom CSS to change the style of the Fieldset Pattern. The followin
 
 ```css
 .fieldset {
-  position: relative;
+    position: relative;
 }
 
 .fieldset-legend {
-  background: var(--color-background-body);
-  padding: 0 var(--space-xs);
-  position: absolute;
-  right: var(--space-m);
-  top: -15px;
+    background: var(--color-background-body);
+    padding: 0 var(--space-xs);
+    position: absolute;
+    right: var(--space-m);
+    top: -15px;
 }
 ```
+
 ![](<images/fieldset-image-3.png>)
 
 **Example 2**
 
 ```css
 .fieldset {
-  border: 0;
-  padding: var(--space-m) 0;
+    border: 0;
+    padding: var(--space-m) 0;
 }
 
 .fieldset-legend {
-  border-bottom: 1px solid var(--color-neutral-5);
-  padding-bottom: var(--space-s);
-  width: 100%;
+    border-bottom: 1px solid var(--color-neutral-5);
+    padding-bottom: var(--space-s);
+    width: 100%;
 }
 ```
+
 ![](<images/fieldset-image-4.png>)

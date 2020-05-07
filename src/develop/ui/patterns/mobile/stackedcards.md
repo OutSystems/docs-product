@@ -45,9 +45,9 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-**Property** |  **Description** |  **Default Value**  
+**Property** |  **Description** |  
 ---|---|---  
-StackedOptions |  Change stacked cards view from bottom, top or none.  |  View from bottom  
+StackedOptions (StackedCardsPosition Identifier): Optional |  Change stacked cards view from bottom, top, or none.  <p>Examples <ul><li>_Entities.StackedCardsPosition.Bottom_ - The stacked cards  | 
 Rotate |  Activate the elements’ rotation for each move on stacked cards.  |  True 
 Items |  Number of visible elements when the stacked options are bottom or top.  |  5  
 ElementsMargin |  Define the distance of each element when the stacked options are bottom or top.  |  5  

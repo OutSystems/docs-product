@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced Uses Cases for the Icon Badge UI Pattern.
+summary: Advanced use cases for the Icon Badge UI Pattern.
 ---
 
 # Icon Badge UI Pattern Reference

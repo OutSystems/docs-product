@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Progress Circle UI Pattern
 ---
 
 # Progress Circle UI Pattern Reference

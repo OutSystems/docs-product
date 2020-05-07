@@ -17,7 +17,7 @@ You can use the Range Slider UI Pattern to allow users select a single value bet
 
     ![](images/rangeslider-widget.png)
 
-1. From the Toolbox, drag the Range Slider widget onto your application's screen.
+1. From the Toolbox, drag the Range Slider widget into the Main Content area of your application's screen.
 
     ![](images/rangeslider-image-1.png)
 

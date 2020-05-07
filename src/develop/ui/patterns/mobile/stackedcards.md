@@ -1,11 +1,11 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary: Adds swipeable cards that can be dragged in multiple directions triggering events, such as deny, approve, and archive.
 ---
 
 # Stacked Cards
 
-You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged in multiple directions triggering events, such as deny, approve, and archive. Ideal when you want to individually scan multiple cards.
+You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged in multiple directions triggering events, such as deny, approve, and archive. This pattern is ideal when you want to individually scan multiple cards.
 
    ![](images/stackedcards-preview.png)
 
@@ -17,106 +17,41 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
     ![](images/stackedcards-icon.png)
 
-1. From the Toolbox, drag the Swipe Events widget onto your application's screen.
+1. From the Toolbox, drag the Swipe Events widget into the Main Content area of your application's screen.
 
-    ![](images/Stacked_drag_pattern.png)
+    ![](images/stackedcards-image-1.png)
 
-1. Add your content to the Content placeholder.
+    By default, the Stacked Cards widget contains a Content placeholder with a list, as well as an Overlay Top, Overlay Right and Overlay Right placeholders. 
+
+1. Add content to the **Content** placeholder.
+
+    In this example, we delete the list and add images by dragging the Image widget into the COntent placeholder. You can also add a list of images.
 
     ![](images/Stacked_interaction.png)
 
-1. All available options have default parameters, but you can change them.
+1. From the Element Tree, select the Image widget, and on the **Properties** tab, from the Image drop-down, select or import the image you want in the Stacked Cards pattern.
 
-    ![](images/Stacked_default_parameters.png)
+    Note: In this example, the image property is set to **Local** image. You can also add [External and Binary Data](../../../../develop/ui/image/display-image.md) images.
 
-1. To use the overlays ( **UseOverlays** is _True_ by default), place content inside the respective placeholders ( **OverlayTop** , **OverlayRight** , **OverlayLeft**).
+1. Repeat step 4 for each of the images.
+
+1. Add content to the Overlay placeholders (optional). In this example, we add an icon to each of the placeholders. 
 
     ![](images/Stacked_overlay.png)
 
-    a. If the option " **Use Overlays** " is set to _True_ and you don’t place content in the placeholders, they will not be displayed.  
-    b. If the option “ **Use Overlays** ” is set _False_ and you add content to the placeholders, they will not be displayed.
-
 After following these steps and publishing the module, you can test the pattern in your app.
 
-### Adding styles to elements
 
-This example shows you how to add styles to elements in the Pattern:
-
-    
-    
-    .stackedcards-bottom, .stackedcards-top, .stackedcards-none {
-         border-bottom: 1px solid #ebebeb; // Add a border-bottom to all elements
-        background-color: #000; // Set a background-color to all elements
-    }
-    
-
-### Setting the full height of elements
-
-To set the full height of your elements in the Pattern, so that they fill the entire screen, use this CSS code:
-
-    
-    
-    .stackedcards-container,
-    .stackedcards {
-        height: 100vh;
-        -servicestudio-height: auto;
-    }
-    
-
-### Defining specific heights for all Elements
-
-The height of the first element defines the height of each element in the Pattern. To set a specific height, use the following CSS code:
-
-    
-    
-    .stackedcards-container {
-        height: 500px; // set your height
-    }
-    
-
-### Applying different background colors to overlays
-
-The overlays are enabled by default and have default colors in the Pattern. If you don’t want to use them, set “ **UseOverlays** ” to _False_ .
-
-1. If the option " **UseOverlays** " is set to _True_ and you don’t place content in the placeholders, they will not be displayed.
-
-1. If you change the option “ **UseOverlays** ” to _False_ and add content to the placeholders, they will not be displayed.
-
-    ![](images/Stacked_background.png)
-
-You can set other colors either by adding a container to **OverlayTop** , **OverlayRight** or **OverlayLeft** , and set your class. Or by using the following CSS code:
-
-    
-    
-    .stackedcards-overlay.top {
-         background-color: #2980b9; //set your background-color
-    }
-    .stackedcards-overlay.right {
-        background-color: #27ae60; //set your background-color
-    }
-    .stackedcards-overlay.left {
-        background-color: #c0392b; //set your background-color
-    }
-    
-
-### Creating a button to execute swipes
-
-Create each action and drag the [public actions](<public-actions.md>) (SwipeLeft, SwipeRight, or SwipeTop). In the Stacked Cards block, associate the handler to swipe events.  
-![](images/Stacked_swipe.png)
-
-### Creating a ListRemove button
-
-Create an “OnListRemove” action and drag the ListRemoveNode and the UpdateStackedCards in the [public actions](<public-actions.md>) of the block.
 
 ## Properties
 
 **Property** |  **Description** |  **Default Value**  
 ---|---|---  
-![](images/input.png) StackedOptions  |  Change stacked cards view from bottom, top or none.  |  View from bottom  
-![](images/input.png) Rotate  |  Activate the elements’ rotation for each move on stacked cards.  |  True 
-![](images/input.png) Items  |  Number of visible elements when the stacked options are bottom or top.  |  5  
-![](images/input.png) ElementsMargin  |  Define the distance of each element when the stacked options are bottom or top.  |  5  
-![](images/input.png) UseOverlays  |  Enable or disable the overlays for swipe elements.  |  True
+StackedOptions |  Change stacked cards view from bottom, top or none.  |  View from bottom  
+Rotate |  Activate the elements’ rotation for each move on stacked cards.  |  True 
+Items |  Number of visible elements when the stacked options are bottom or top.  |  5  
+ElementsMargin |  Define the distance of each element when the stacked options are bottom or top.  |  5  
+UseOverlays | Enable or disable the overlays for swipe elements.  |  True
   
 ## Compatibility with other patterns
 

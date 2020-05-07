@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Breadcrumbs UI Pattern
 ---
 
 # Breadcrumbs UI Pattern Reference

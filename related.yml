@@ -1095,7 +1095,10 @@
            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 
 # UI Mobile Patterns
-
+- develop/ui/patterns/web/utilities/stackedcards.md:
+    - external:
+       - "OutSystems UI Pattern":  
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
 # Link to Training
 
 - extensibility-and-integration/connect-external-db.md:

@@ -27,13 +27,13 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
      ![](images/carousel-image-2.png) 
 
-1. On the Element tree, select the Image widget, and on the **Properties** tab, from the Image drop-down, select or import the image you want in the Carousel. 
+1. From the Element Tree, select the Image widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Carousel. 
 
     Note: In this example, the image property Type is set to **Local** image. You can also add [External and Binary Data](../../../../develop/ui/image/display-image.md) images.   
 
     ![](images/carousel-image-3.png)   
 
-    Repeat step 4 for each of the images in the Carousel. 
+1. Repeat step 4 for each of the images in the Carousel. 
 
 1. From the Element tree, select the Carousel widget, and on the **Properties** tab, set the relevant (optional) properties, for example, navigation arrows and dots.
 

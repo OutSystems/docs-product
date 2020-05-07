@@ -956,7 +956,9 @@
 - develop/ui/patterns/web/controls/video.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Video.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=81
         - "How to Add Video to Your Applications": 
             https://success.outsystems.com/Documentation/Development_FAQs/How_to_Add_Video_to_Your_Applications
 - develop/ui/patterns/web/layout/layout-login.md:

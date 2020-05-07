@@ -47,11 +47,11 @@ After following these steps and publishing the module, you can test the pattern 
 
 **Property** |  **Description** |  
 ---|---|---  
-StackedOptions (StackedCardsPosition Identifier): Optional |  Change stacked cards view from bottom, top, or none.  <p>Examples <ul><li>_Entities.StackedCardsPosition.Bottom_ - The stacked cards  | 
-Rotate |  Activate the elements’ rotation for each move on stacked cards.  |  True 
-Items |  Number of visible elements when the stacked options are bottom or top.  |  5  
-ElementsMargin |  Define the distance of each element when the stacked options are bottom or top.  |  5  
-UseOverlays | Enable or disable the overlays for swipe elements.  |  True
+StackedOptions (StackedCardsPosition Identifier): Optional |  Change stacked cards view from bottom, top, or none.  <p>Examples <ul><li>_Entities.StackedCardsPosition.Bottom_ - The stacked cards are positioned on the bottom. This is the default. </li><li>_Entities.StackedCardsPosition.Top_ - The stacked cards are positioned on top. </li></ul></p> | 
+Rotate (Boolean): Optional| If True, the rotation for each move on the stacked cards is activated. This is the default. If False, each move is not activated.  |  
+Items (Integer): Optional |  Number of visible elements when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p>  | 
+ElementsMargin |  Define the distance between each element when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p> | 
+UseOverlays (Boolean): Optional | If True, overlays for swipe elements are enabled. This is the default. If False, the overlays are disabled.
   
 ## Compatibility with other patterns
 
@@ -64,7 +64,3 @@ The following samples use the Stacked Cards pattern:
 ![](images/StackedCards-Sample-1.PNG)
 
 ![](images/StackedCards-Sample-2.PNG)
-
-## See also
-
-* OutSystems UI Pattern Page: [Stacked Cards](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68)

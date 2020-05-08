@@ -26,8 +26,7 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
 1. From the Toolbox, drag the Video widget into the Main Content area of your application's screen.
 
     ![](<images/video-image-11.png>)
-
-    
+ 
 1. on the **Properties** tab, set the **SourceFile** property to the source video file you want to embed in your app. 
 
     * If using an external source file, insert the file URL.

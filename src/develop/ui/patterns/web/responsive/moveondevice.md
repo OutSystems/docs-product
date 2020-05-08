@@ -1,30 +1,52 @@
 ---
 tags: runtime-traditionalweb; 
-summary: MoveOnDevice defines where information is displayed thereby improving the display on different devices.
+summary: Move on Device defines where information is displayed thereby improving the display on different devices.
 ---
 
-# MoveOnDevice 
+# Move on Device
 
-Defines the target container for several elements in different devices without duplicating them.
+You can use the Move on Device UI Pattern to define the placement of information depending on the device.
 
-Use Move on Device to define where information is displayed thereby improving the display on different devices.
+![](<images/moveondevice-image-3.png>)
 
-**How to use**
+**How to use the Move on Device UI Pattern**  
 
-1. Drag the MoveOnDevice pattern into the preview.
+1. In Service Studio, in the Toolbox, search for `Container`. 
 
-    ![](<images/moveondevice-image-1.png>)
+    The Container widget is displayed.
+    
+    ![](<images/moveondevice-image-6.png>)
 
-1. Set the required content in the placeholder.
-1. Set the Ids of the target containers you want to move the content to.
+1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen.
+    
+    ![](<images/moveondevice-image-7.png>)
+
+1. On the **Properties** tab, enter the container name.
+
+    ![](<images/moveondevice-image-9.png>)
+
+1. Repeat steps 2 and 3 for as many containers as you need in your app. 
+
+1. From the Toolbox, drag the Move on Device widget into the Main Content area of your application's screen.
+
+    ![](<images/moveondevice-image-5.png>)
+
+1. Add the required content to the Move on Device widget. 
+
+    In this example, we add an image by dragging the Image widget into the Move on Device widget and selecting an image from the sample OutSystems UI images.
+
+    ![](<images/moveondevice-image-8.png>)
+
+1. To define where the image appears depending on the device, select the Move on Device widget, and on the **Properties** tab, set the PhoneWidgetId and TabletWidgetId properties.
 
     ![](<images/moveondevice-image-2.png>)
 
-1. Publish and test.
 
-## Input Parameters
+After following these steps and publishing the module, you can test the pattern in your app.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| PhoneWidgetId | Target container that will receive this block on phones. | Text | No | none |
-| TabletWidgetId | Target container that will receive this block on tablets. | Text | No | none |
+## Properties
+
+| **Properties** |  **Description** |
+|---|---|
+| PhoneWidgetId (Text): Optional  | Target container that displays this widget on phones. <p>Examples <ul><li>_Container1.Id_ - The content appears in this container when viewed on a phone</li></ul></p>|
+| TabletWidgetId (Text): Optional | Target container that displays this widget on tablets.<p>Examples  <ul><li>_Container2.Id_ - The content appears in this container when viewed on a tablet</li></ul></p>||

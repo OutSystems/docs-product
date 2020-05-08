@@ -908,6 +908,10 @@
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md
                 - href: ref/lang/auto/Class.Text Widget.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md
+            # Patterns
+            - href: ref/interfaces/ui-patterns.md
+            - topics:
+                - href: ref/ui-patterns/mobile/carousel-mobile.md
             # Designing the Layout
             - href: ref/interfaces/designing-the-layout.md
             - topics:
@@ -1004,6 +1008,21 @@
                     - href: ref/lang/auto/Class.Text Widget.final.md
                     - href: ref/lang/auto/Class.Upload Widget.final.md
                     - href: ref/lang/auto/Class.Web Block Widget.final.md
+                # Patterns
+                - href: ref/traditional-web/web-interfaces/ui-patterns.md
+                - topics:
+                    - href: ref/ui-patterns/web/animate.md
+                    - href: ref/ui-patterns/web/badge.md
+                    - href: ref/ui-patterns/web/carousel.md
+                    - href: ref/ui-patterns/web/character-count.md
+                    - href: ref/ui-patterns/web/counter.md
+                    - href: ref/ui-patterns/web/fieldset.md
+                    - href: ref/ui-patterns/web/icon-badge.md
+                    - href: ref/ui-patterns/web/iframe.md
+                    - href: ref/ui-patterns/web/lightbox-image.md
+                    - href: ref/ui-patterns/web/responsive-table.md
+                    - href: ref/ui-patterns/web/user-initials.md
+                    - href: ref/ui-patterns/web/wizard.md
                 # Designing the Layout
                 - href: ref/traditional-web/web-interfaces/designing-the-layout/intro.md
                 - topics:

@@ -5,88 +5,59 @@ summary: Carousel shows a subset of items in a cyclic view.
 
 # Carousel
 
-A dynamic widget that enables you to highlight pieces of content in a single space and a cyclic view.
-
-The Carousel makes it possible to show more than one piece of content, while optimizing screen space by displaying only a subset of images on a cyclic view. The navigational controls on a carousel suggest additional content that is not visible, which encourages the user to continue exploring.
+You can use the Carousel UI Pattern to display multiple items in a horizontal slide. This pattern is ideal for creating horizontal slides in smaller screens. You can also use this pattern for dynamic content, by placing a List directly inside the placeholder. 
 
 
-**How to use**
+**How to use the Carousel UI Pattern**
 
-Elements inside the placeholder are split in different items. For dynamic content, use a List directly inside the placeholder and the list items will be Carousel Items by default.
 
-1. Drag the Carousel pattern into your page.
+1. In Service Studio, in the Toolbox, search for `Carousel`.
+  
+     The Carousel widget is displayed.
 
-1. Place your content into the Items placeholder. To use a Carousel with items from a database, drag a ListRecords into Items placeholder and create your custom content.
+    ![](images/carousel-widget.png)
     
-    ![](<images/carousel-image-1.png>)
+1. To From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen. 
+   
+   ![](images/carousel-image-9.png)
+
+1. Place the content you want to appear in the Carousel into the Items placeholder. (In this example we use images.) 
+
+1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget.This is a thumbnail image. 
+
+    The **Select Image** pop-up is displayed.
+
+1. Select or import the image you want to display. In this example, we use the sample OutSystems UI images.
+
+    ![](<images/carousel-image-10.png>)
+
+    Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../develop/ui/image/display-image.md).
     
+    To use a Carousel with items from a database, drag a [ListRecords widget](<../../../../../ref/lang/auto/Class.List Records Widget.final.md>) into Items placeholder and create your custom content.
+
     ![](<images/carousel-image-2.png>)
 
-1. Publish and test.
+1. Repeat steps 4 and 5 for each of the Carousel items. 
+    
+1. From the Element tree, select the Carousel widget, and on the **Properties** tab, set the relevant (optional) properties, for example, navigation arrows and the number of items to display on different devices.
 
-## Input parameters
+    ![](images/carousel-image-11.png)  
+    
+1. After following these steps and publishing the module, you can test the pattern in your app.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Margin  |  Distance between each Carousel item. |  Integer | False | 16 |
-| Padding  |  Distance between the screen edges and the visible items on the screen. |  Integer | False | 0 |
-| Pagination  |  If true, sets the dots representing all items, which can be tapped to navigate directly to a given item. |  Boolean | False | True |
-| Navigation  |  If true, shows arrows to navigate left and right. |  Boolean | False | True |
-| Autoplay  |  If true, it enables the autoplay. |  Boolean | False | False |
-| Rewind  |  Applies a Rewind effect when the Carousel reaches the end and Loop is enabled. The default behavior is to show the first item without rewinding through the remaining. |  Boolean | False | False |
-| Loop  |  If true, it enables continuous slide of the Carousel even after it reaches the end. |  Boolean | False | False |
-| InitialPosition  |  Sets the first element to show. |  Integer | False | 0 |
-| ItemsDesktop  |  Number of items to be displayed at the same time while on desktop. |  DeviceConfig | False | 1 |
-| ItemsTablet  |  Number of items to be displayed at the same time while on tablet. |  DeviceConfig | False | 1 |
-| ItemsPhone  |  Number of items to be displayed at the same time while on phone. |  DeviceConfig | False | 1 |
-| ExtendedClass  |  Adds custom style classes to this Block. |  Text | False | none |
-| AdvancedFormat  |  Enables you to use more options than what is provided in the input parameters. For more information visit: https://github.com/ganlanyuan/tiny-slider. Example: `{ axis: 'vertical' }` |  Text | False | none |
+## Properties
 
-## Layout and classes
-
-![](<images/carousel-image-3.png?width=600>)
-
-## Advanced
-
-Here are some more advanced use-cases of the widget.
-
-### Put arrows outside of Carousel
-
-To place the arrows outside the carousel, change the input parameters Padding and Margin. To have this behavior both parameters must be of the same value. Padding creates a space around the carousel viewport and the margin pushes the elements apart, so they are hidden inside the carousel.
-
-![](<images/carousel-image-4.png>)
-![](<images/carousel-image-5.png>)
-
-### Customizing the dots style
-
-It is possible to change the style of the dots on a Carousel with the custom CSS. Here are two examples of how to do it. To use in your application, copy the CSS and put it in your theme.
-
-#### Example 1
-
-```css
-.carousel .tns-nav > [aria-controls] {
-    width: 16px;
-    height: 2px;
-    border-radius: 0;
-}
-```
-
-![](<images/carousel-image-6.png>)
-
-#### Example 2
-
-```css
-.carousel .tns-nav > [aria-controls] {
-    width: 12px;
-    height: 6px;
-    border-radius: 4px;
-}
-```
-
-![](<images/carousel-image-7.png>)
-
-## Notes
-
-Line Separator from ListRecords should be None.
-
-![](<images/carousel-image-8.png>)
+| **Property** |  **Description** |
+|---|---|
+|Margin(Integer): Optional  |  Set the distance between each Carousel item. Default value is 0.<p>Examples<ul><li>_Blank_ - A distance of 16 pixels between each Carousel item.</li><li>_32_ - A distance of 32 pixels between each Carousel item.</li></ul></p>  |
+|Padding(Integer): Optional |  Set the distance between the screen edges and the visible items on the screen. <p>Examples<ul><li>_Blank_ - No distance between the screen edges and the on screen item. This is the default value.</li><li>_5_ - A distance of 5 pixels between the screen edges and the on screen item.</li></ul></p> |
+| Pagination(Boolean): Optional  | Enable or disable navigational dots that represent items on the Carousel.<p>Examples<ul><li>_Blank_ - Navigational dots are displayed. This is the default value.</li><li>_True_ - Navigational dots are displayed.</li><li>_False_ - No navigational dots are displayed.</li></ul></p> |
+| Autoplay(Boolean): Optional  | If set to True, the autoplay functionality which displays the items in the Carousel automatically is enabled. If set to False, the autoplay functionality is disabled. This is the default value.| 
+| Rewind(Boolean): Optional  | If True, a rewind effect is applied when the Carousel reaches the end and the Loop property is enabled. The default behavior is to show the first item without rewinding through the remaining. | 
+| Loop(Boolean): Optional  | If set to True, once the last item in the Carousel is reached, it loops around to the first item and begins displaying the all of the items again. If set to False, the slide of the Carousel items ends when the last item is reached. This is the default value.|
+| InitialPosition(Integer): Optional  |  Set which element you want to show first in the Carousel. <p>Examples <ul><li>_Blank_ - The first element in the Carousel is displayed. This is the default value.</li><li>_3_ - The 4th element in the Carousel is displayed. </li></ul></p>|
+|ItemsDesktop(Integer): Optional  |  Number of Carousel items visible at the same time on a desktop.<p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_4_ - 4 items are displayed.</li></ul></p> |  
+|ItemsTablet(Integer): Optional  | Number of Carousel items visible at the same time on a tablet.<p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_4_ - 4 items are displayed.</li></ul></p>| 
+|ItemsPhone(Integer): Optional  | Number of Carousel items visible at the same time on a phone.<p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_4_ - 4 items are displayed.</li></ul></p> |
+| ExtendedClass (Text): Optional |  Add custom style classes to the Carousel UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Carousel UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Carousel UI styles being applied.</li></ul></p> |
+| AdvancedFormat(Text):Optional  |  Enables you to use more options than what is provided in the properties. For more information, visit: https://github.com/ganlanyuan/tiny-slider. <p>Example `{ axis: 'vertical' }`</p> |

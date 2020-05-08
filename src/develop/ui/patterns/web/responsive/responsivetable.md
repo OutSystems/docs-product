@@ -1,81 +1,42 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ResponsiveTable displays information in a logical and organized way that is easy to scan and read.
+summary: Responsive Table displays information in a logical and organized way that is easy to scan and read.
 ---
 
-# ResponsiveTable
+# Responsive Table
 
-Display information in a logical and organized way.
+You can use the Responsive Table UI Pattern to display information in a logical and organized way. The Responsive Table UI pattern allows interaction, such as sorting, so that users can customize how they view information.
 
-Use Table Records to display information in a logical and organized way that is easy to scan and read. It should allow interaction, such as sorting, so that end users can customize their view of the information.
+**How to use the Responsive Table UI Pattern**  
 
-**How to use**
+The Responsive Table UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../../develop/logic/action-web.md). 
 
-1. Drag ResponsiveTable pattern into the preview.
+The following example demonstrates how you can display the registered users on your platform.
 
-    ![](<images/responsivetable-image-1.png?width=500>)
+1. In Service Studio, in the Toolbox, search for `Responsive Table`. 
 
-1. Drag the Table Widget you want to change to the Content placholder.
+    The Responsive Table widget is displayed.
 
-    ![](<images/responsivetable-image-2.png>)
+    ![](<images/responsivetable-image-8.png>)
 
-1. Set the mandatory values.
+1. From the Toolbox, drag the Responsive Table widget into the Main Content area of your application's screen.
 
-    ![](<images/responsivetable-image-3.png>)
+    ![](<images/responsivetable-image-1.png>)
 
-1. Publish and test.
+1. Select the **Data** tab, and from the Entities tree, navigate to the **User** entity and drag it into the Responsive Table placeholder.
+    
+   ![](<images/responsivetable-image-10.png>)
+      
+1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
 
+1. On the **Properties** tab, set the **ResponseBehavior** property. In this example, the property is set so the table header stays fixed and the user can scroll through the rows.
 
-## Input Parameters
+    ![](<images/responsivetable-image-6.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ResponsiveBehavior  |  TableRecords responsive behavior. | ResponsiveTableRecords Identifier | Yes | none |
-  
-## Layout and Classes
+After following these steps and publishing the module, you can test the pattern in your app.
 
-![](<images/responsivetable-image-4.png>)
+## Properties
 
-
-## CSS Selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
-| .table-records-responsive |  .table-records-responsive.scrollable-row|  When the ResponsiveBehavior parameter is set to scrollable  |
-| .table-records-responsive |  .table-records-responsive.expandable-row|  When the ResponsiveBehavior parameter is set to expandable  |
-| table tbody tr |  .TableRecords_ExpandedRow |  When using the expandable-row option, identifies when the the row is expanded  |
-
-
-## Advanced Use Case
-
-### Change Responsive Behavior parameter according to device
-
-1. Drag the ResponsiveTable Pattern into the page.
-
-1.  Set the ResponsiveBehaviour parameter to `If(IsPhone(), Entities.ResponsiveTableRecords.ExpandableRows, Entities.ResponsiveTableRecords.ScrollabeRows)`. 
-
-    We use the server action IsPhone as the condition to set the property for phone devices. You can also use the IsTablet action, or invert the False & True statements as required.
-
-1. Publish and test.
-
-### Change expandable-row's arrow color
-
-To implement this, you can use either method described below.
-
-1. Write the following CSS in the CSS editor and change `yourcolor` accordingly.
-
-```css
-.tablet.portrait .expandable-row .TableRecords tbody tr td:first-child:after, 
-.phone .expandable-row .TableRecords tbody tr td:first-child:after {
-    color: yourcolor;
-}
-```
-
-2. Use CSS variables like `var(--color-yourcolor)`.
-
-```css
-.tablet.portrait .expandable-row .TableRecords tbody tr td:first-child:after, 
-.phone .expandable-row .TableRecords tbody tr td:first-child:after {
-    color: var(--color-yourcolor);
-}
-```
+| **Property** |  **Description** |
+|---|---|
+| ResponsiveBehavior (ResponsiveTableRecords Identifier): Mandatory | Define how the table behaves when the user interacts with it. The predefined values are:<p><ul><li>ExpandableRows</li><li>ScrollableRows (default)</li></ul></p> <p>Examples <ul><li>_Entities.RepsonsiveTableRecords.ScrollableRows_ - The table header stays fixed and the user can scroll through the rows in the table. </li><li>_Entities.RepsonsiveTableRecords.ExpandableRows_ - The table header stays fixed and the user can expand each row to view any extra information. </li></ul></p> | 

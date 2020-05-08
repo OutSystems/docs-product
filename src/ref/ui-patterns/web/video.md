@@ -1,9 +1,9 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the File Upload UI Pattern
+summary: Advanced use cases for the Video UI Pattern
 ---
 
-# Video Upload UI Pattern Reference
+# Video UI Pattern Reference
 
 ## Layout and Classes
 

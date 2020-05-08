@@ -3,7 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Light Box Image UI Pattern.
 ---
 
-# Light Box Image UI Pattern Reference
+# Light Box Image Reference
 
 ## Layout and classes
 
@@ -31,7 +31,7 @@ It is possible to change the opacity of Light Box Image overlay when it is open 
 
 ### Add rounded corners to images inside Light Box Image Pattern
 
-To add rounded corners to images inside LightBoxImage, add the following custom css to the theme.
+To add rounded corners to images inside Light Box Image, add the following custom css to the theme.
 
 ```css
 .lightbox-content-thumbnail img,

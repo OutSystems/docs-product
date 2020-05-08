@@ -3,7 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Iframe UI Pattern.
 ---
 
-# Iframe UI Pattern Reference
+# Iframe Reference
 
 ## Layout and classes
 

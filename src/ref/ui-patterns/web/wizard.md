@@ -3,7 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Wizard UI Pattern.
 ---
 
-# Wizard UI Pattern Reference
+# Wizard Reference
 
 ## Layout and classes
 

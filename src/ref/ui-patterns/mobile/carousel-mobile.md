@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced use cases for the Carousel UI Pattern. 
 ---
 
-# Carousel UI Pattern Reference
+# Carousel Reference
 
 ## Customizing the dots
 

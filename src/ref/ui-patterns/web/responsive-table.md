@@ -3,7 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Responsive Table UI Pattern.
 ---
 
-# Responsive Table UI Pattern Reference
+# Responsive Table Reference
 
 ## Layout and classes
 
@@ -33,7 +33,7 @@ summary: Advanced use cases for the Responsive Table UI Pattern.
 
 To implement this, you can use either method described below.
 
-1. Write the following CSS in the CSS editor and change `yourcolor` accordingly.
+* Write the following CSS in the CSS editor and change `yourcolor` accordingly.
 
 ```css
 .tablet.portrait .expandable-row .TableRecords tbody tr td:first-child:after, 
@@ -42,7 +42,7 @@ To implement this, you can use either method described below.
 }
 ```
 
-1. Use CSS variables like `var(--color-yourcolor)`.
+* Use CSS variables like `var(--color-yourcolor)`.
 
 ```css
 .tablet.portrait .expandable-row .TableRecords tbody tr td:first-child:after, 

@@ -3,7 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Badge UI Pattern.
 ---
 
-# Badge UI Pattern Reference
+# Badge Reference
 
 
 ## Layout and classes

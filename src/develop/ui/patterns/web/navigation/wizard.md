@@ -9,9 +9,10 @@ You can use the Wizard UI Pattern to split large complex tasks and processes int
 
 ![](<images/wizard-image-24.png>)
 
-## **How to use the Wizard UI Pattern**
-#### Example use case 
+**How to use the Wizard UI Pattern**
+
 The following example demonstrates how you can create a four step Wizard with navigation buttons. The example is made up of the following steps:
+
 * Creating a wizard 
 * Adding content to the wizard
 * Creating the wizard navigation
@@ -131,7 +132,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. On the **Properties** tab, in the **Condition** property, enter the following:
 
-   `CurrentStep < 4`
+    `CurrentStep < 4`
 
     ![](images/wizard-image-17.png)
 

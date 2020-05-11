@@ -58,6 +58,10 @@
 - develop/ui/reuse/dedicated-ui-modules.md:
     - develop/ui/reuse/block-create-reuse.md
 
+# Send an Email From a Web Application
+- develop/logic/emails.md:
+    - /extensibility-and-integration/configure-send-emails.md
+
 # ------- Web Interfaces -------
 
 #   Adding Data and Logic

@@ -5,7 +5,7 @@ tags:
 
 # Set up and use the OutSystems.AI Chatbot component in your OutSystems applications
 
-Chatbots can be the first line of communication and provide support to your users, while increasing efficiency and customer satisfaction. Use the [OutSystems.AI Chatbot Reactive component](https://www.outsystems.com/forge/component-overview/5886/chatbot-web) to create a chatbot in your apps. 
+Chatbots can be the first line of communication and provide support to your users, while increasing efficiency and customer satisfaction. Use the [OutSystems.AI Chatbot Reactive component](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive) to create a chatbot in your apps. 
 
 The chatbot consists of:
 

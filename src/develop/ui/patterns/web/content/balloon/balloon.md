@@ -5,12 +5,12 @@ summary: Balloon shows a content overlay to users, without forcing them to lose 
 
 # Balloon
 
-You can use the Balloon UI Pattern to display tooltip text in a pop-up on the UI. The Balloon UI Patterns is useful when you need to display additional information realted to a small on-screen element. 
+You can use the Balloon UI Pattern to display content in a pop-up on the UI. The Balloon UI Patterns is useful when you need to display additional information realted to a small on-screen element. 
 
 ![](<images/balloon-image-6.png>)
 
 **How to use the Balloon UI Pattern**
-In this example, we add a Ballon widget to a screen that has 3 labels and 3 input boxes with their associated local variables already created.   
+In this example, we use the Balloon as a tootip on a screen with a form.
 
 1. In Service Studio, in the Toolbox, search for `Balloon`.
 
@@ -26,11 +26,15 @@ In this example, we add a Ballon widget to a screen that has 3 labels and 3 inpu
 
     ![](<images/balloon-image-8.png>)
 
+    **Note**: The **WidgetId** comes from the element **Name** you are binding the balloon with.
+
 1. In the Content placeholder, enter the the content you want to display. In this example we add text.
 
     ![](<images/balloon-image-9.png>)
 
-1. You can change the look and feel of the Balloon widget by setting the (optional) properties, for example, the position of the content on screen and what action triggers the d=content to display
+1. Repeat steps 2-4 for each of the elements that require a Balloon pop-up.
+
+1. You can change the look and feel of the Balloon widget by setting the (optional) properties, for example, the position of the content on screen and what action triggers the content to display
 
     ![](<images/balloon-image-10.png>)
 

@@ -10,6 +10,7 @@ You can use the Balloon UI Pattern to display content in a pop-up on the UI. The
 ![](<images/balloon-image-6.png>)
 
 **How to use the Balloon UI Pattern**
+
 In this example, we use the Balloon as a tootip on a screen with a form.
 
 1. In Service Studio, in the Toolbox, search for `Balloon`.

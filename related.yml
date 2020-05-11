@@ -900,7 +900,9 @@
 - develop/ui/patterns/web/controls/buttongroup.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ButtonGroup.aspx
+         - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=12
 - develop/ui/patterns/web/controls/datepicker.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -948,7 +950,7 @@
 - develop/ui/patterns/web/controls/timepicker.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/TimePicker.aspx
 - develop/ui/patterns/web/controls/togglebutton.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

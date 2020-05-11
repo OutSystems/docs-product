@@ -1,5 +1,5 @@
 ---
-tags: runtime-traditionalweb; 
+tags: runtime-mobileandreactiveweb;   
 summary: Learn how to embed a native video player in your app.
 ---
 
@@ -17,7 +17,19 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
 
 **How to use the Video UI Pattern**
 
-1. In Service Studio, in the Toolbox, search for `Video`.
+<p><li>If using an external source file, insert the file URL.</li>
+<li>If using a local file, include the video in a module as a resource and use the runtime path:</li>
+<li>[new] If using binary data:</li></p>
+
+1. Add a OnInitialize screen event
+1. Add a JS Node to the client action 
+1. Add an input parameter to the JS Node that will receive the binary data
+1. Add an output parameter that will have the DataObjectURL
+1. In the JS Node content you should add:
+
+    ``$parameters.DataObjectURL = "data:video/mp4;base64," + $parameters.BinaryData;``
+
+<!--1. In Service Studio, in the Toolbox, search for `Video`.
 
     The Video widget is displayed.
 
@@ -40,23 +52,18 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
             ![](images/video-image-add-resource.png)
         
         1. Browse and select the video file you want to add and click **Open**.
-        1. On the **Resource** properties tab, from the **Deploy Action** drop-down, select **Deploy to Target Directory**.
-
-             ![](<images/video-image-12.png>)
-
         1. On the **Interface** tab, from the **Widget Tree**, select the Video pattern.
-       
-        1. In the **SourceFile** property, enter the runtime path of the video file.
+        1. On the **Properties** tab, select the **SourceFile** dropdown and select **Expression Editor**.
+        1. In the Expression Editor, navigate to and select the file you added to the **Resources** folder, and click **Done**.
 
-           ![](<images/video-image-13.png>)
+            ![](<images/video-image-12.png>)
     
-            **Tip**: You can copy the runtime path from the Resource Runtime Path property tab.
+            The file is added to the SourceFile property.
+              ![](<images/video-image-13.png>)
 
-            ![](<images/video-image-14.png>)
+1. On the **Properties** tab, you can also define (optional) properties, such as the height and width of the video and the audio settings.
 
-
-
-1. On the Video **Properties** tab, you can also define (optional) properties, such as the height and width of the video and the audio settings.
+      ![](<images/video-image-14.png>)
 
 1. After following these steps and publishing the module, you can test the pattern in your app. 
        
@@ -79,6 +86,6 @@ Autoplay parameter only works if Muted is set to True.
 
 ## Device Compatibility
 
-In case of mobile, the controls will always be enabled.
+In case of mobile, the controls will always be enabled. -->
 
 

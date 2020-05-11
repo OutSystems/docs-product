@@ -35,7 +35,7 @@ In this example, we use the Balloon as a tootip on a screen with a form.
 
 1. Repeat steps 2-4 for each of the elements that require a Balloon pop-up.
 
-1. You can change the look and feel of the Balloon widget by setting the (optional) properties, for example, the position of the content on screen and what action triggers the content to display
+1. On the **Properties** tab, you can change the look and feel of the Balloon widget by setting the (optional) properties, for example, the position of the content on screen and what action triggers the content to display.
 
     ![](<images/balloon-image-10.png>)
 

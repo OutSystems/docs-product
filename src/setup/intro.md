@@ -168,7 +168,8 @@ Do the following:
 
     * **Microsoft .NET Framework 4.7.2**  
     1\. [Download the Offline Installer for the Runtime](https://go.microsoft.com/fwlink/?LinkID=863265) from Microsoft.  
-    2\. Rename the Microsot .NET Framework Installer to `DotNet.exe`.
+    2\. Rename the Microsot .NET Framework Installer to `DotNet.exe`.  
+    _Note:_ If you're installing a Platform Server version earlier than 11.9, rename the installer to `NDP472-KB4054530-x86-x64-AllOS-ENU.exe` instead.
     
     * **.NET Core 2.1 Runtime & Hosting Bundle for Windows**  
     1\. [Download the .NET Core 2.1 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-2.1.12-windows-hosting-bundle-installer) from Microsoft.  

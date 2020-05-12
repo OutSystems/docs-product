@@ -429,17 +429,17 @@
         - href: extensibility-and-integration/artificial-intelligence/luis-connector.md
         - href: extensibility-and-integration/artificial-intelligence/ml-connector.md
         - href: extensibility-and-integration/artificial-intelligence/text-analysis.md
-    - href: extensibility-and-integration/artificial-intelligence/chatbot/intro.md
-    - topics:
-        - href: extensibility-and-integration/artificial-intelligence/chatbot/architecture.md
-        - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-faq-chatbot.md
-        - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-advanced-chatbot.md
-        - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-custom-ui.md
-        - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-outsystems-add-chatbot.md
-        - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-outsystems-webhook.md
-        - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-kb.md
-        - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-services.md
-        - href: extensibility-and-integration/artificial-intelligence/chatbot/reference.md
+        - href: extensibility-and-integration/artificial-intelligence/chatbot/intro.md
+        - topics:
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/architecture.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-faq-chatbot.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-advanced-chatbot.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-custom-ui.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-outsystems-add-chatbot.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-outsystems-webhook.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-kb.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-services.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/reference.md
 
     - href: extensibility-and-integration/mobile-plugins/intro.md
     - topics:

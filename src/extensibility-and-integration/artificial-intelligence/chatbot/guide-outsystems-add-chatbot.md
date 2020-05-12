@@ -1,5 +1,5 @@
 ---
-summary: How to add the UI chatbot component to an app. This is a quick solution that covers many uses cases.
+summary: How to add the UI chatbot component to an app. This is a quick solution that covers many use cases.
 tags:
 ---
 

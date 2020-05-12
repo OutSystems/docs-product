@@ -1,5 +1,5 @@
 ---
-summary: Let your users to interact with your app thought a chat interface. This is an introduction to creating a chatbot with the OutSystems chatbot component and Microsoft Azure.
+summary: Let your users interact with your app through a chat interface. This is an introduction to creating a chatbot with the OutSystems chatbot component and Microsoft Azure.
 tags:
 ---
 

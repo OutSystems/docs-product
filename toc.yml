@@ -440,6 +440,8 @@
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-kb.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-services.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/reference.md
+        - href: extensibility-and-integration/artificial-intelligence/azure-reference.md
+
 
     - href: extensibility-and-integration/mobile-plugins/intro.md
     - topics:

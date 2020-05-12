@@ -5,55 +5,7 @@ tags: runtime-mobileandreactiveweb; support-Security-overview
 
 # Configure App Authentication
 
-When the end user logs in, the server sends two authentication cookies to the app. These cookies allow the end user to be authenticated in subsequent server requests.
-
-The server handles the authentication cookies according to the type of authentication.
-
-## Authentication Types
-
-There are two types of authentication:
-
-* **Session authentication** – The authentication cookies are destroyed when the end user closes the app.
-* **Persistent authentication** – The authentication cookies persist across multiple application starts.
-
-The developer specifies the authentication type in the `RememberLogin` parameter when calling the action `User_Login` to login the users.
-
-## Authentication Cookies
-
-This section describes the two cookies used in the authentication mechanism of an OutSystems app.
-
-Cookie `nr1<User Provider Name>`:
-
-* The server uses this cookie to enforce session expiration as needed
-* Contains information needed to ensure session authenticity
-* Set as `HttpOnly` (can't be accessed through JavaScript)
-
-Cookie `nr2<User Provider Name>`:
-
-* Provides information to the application code about the user identifier via the built-in function GetUserId()
-* Contains information needed to avoid CSRF attacks
-* Not set as `HttpOnly` (can be accessed through JavaScript)
-
-### Verifying Authentication Cookies
-
-When executing a server call, the app sends the authentication cookies to the server, with a CSRF token in the X-CSRF-Token request header.
-
-The server validates the request by checking the following conditions:
-
-1. The request includes the X-CSRF-Token header.
-2. The request contains the two authentication cookies.
-3. Cookies information is authentic and was not forged.
-4. Login expiration period has not been reached.
-
-If all conditions apply, the server authenticates the request as coming from the user identified in the cookies, otherwise the server processes the request as if it was coming from an anonymous user.
-
-![Authentication flow](images/authentication-1.png)
-
-### Authentication Cache
-
-The authentication mechanism for apps includes caching capabilities to avoid the overhead of validating and updating authentication information in the database upon each request.
-
-Within a defined period of time the server uses the information stored in the cookies to authenticate the requests of an authenticated session, instead of retrieving the authentication information from the database.
+The document is about configuring app authentication in the environment. There's also information about the authentication mechanism, including the explanation about cookies.
 
 ## Configure App Authentication Settings
 
@@ -96,3 +48,49 @@ To configure the authentication settings for apps in your OutSystems environment
 In this page you can also generate new keys for authenticating and encrypting cookie values. This will force all the users of your apps to login again in the next server request. To generate new keys, press the Generate button in Authentication and Encryption Keys area:
 
 ![The Generate button for new Authentication and Encryption Keys](images/configure-app-authentication-generate-keys-sc.png)
+
+## Authentication Types
+
+The server handles the authentication cookies according to the type of authentication. There are two types of authentication:
+
+* **Session authentication** – The authentication cookies are destroyed when the end user closes the app.
+* **Persistent authentication** – The authentication cookies persist across multiple application starts.
+
+The developer specifies the authentication type in the `RememberLogin` parameter when calling the action `User_Login` to login the users.
+
+## Authentication Cookies
+
+When the end user logs in, the server sends two authentication cookies to the app. These cookies let the end user to be authenticated in the subsequent server requests. This section describes the two cookies used in the authentication mechanism of an OutSystems app.
+
+Cookie `nr1<User Provider Name>`:
+
+* The server uses this cookie to enforce session expiration as needed
+* Contains information needed to ensure session authenticity
+* Set as `HttpOnly` (can't be accessed through JavaScript)
+
+Cookie `nr2<User Provider Name>`:
+
+* Provides information to the application code about the user identifier via the built-in function GetUserId()
+* Contains information needed to avoid CSRF attacks
+* Not set as `HttpOnly` (can be accessed through JavaScript)
+
+### Verifying Authentication Cookies
+
+When executing a server call, the app sends the authentication cookies to the server, with a CSRF token in the X-CSRF-Token request header.
+
+The server validates the request by checking the following conditions:
+
+1. The request includes the X-CSRF-Token header.
+2. The request contains the two authentication cookies.
+3. Cookies information is authentic and was not forged.
+4. Login expiration period has not been reached.
+
+If all conditions apply, the server authenticates the request as coming from the user identified in the cookies, otherwise the server processes the request as if it was coming from an anonymous user.
+
+![Authentication flow](images/authentication-1.png)
+
+### Authentication Cache
+
+The authentication mechanism for apps includes caching capabilities to avoid the overhead of validating and updating authentication information in the database upon each request.
+
+Within a defined period of time the server uses the information stored in the cookies to authenticate the requests of an authenticated session, instead of retrieving the authentication information from the database.

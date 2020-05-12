@@ -13,6 +13,12 @@ All created applications have single sign-on capabilities by default, because th
 
 In a Single Sign-On scenario, check out your unified modules in Service Center: edit a module and select the **Single Sign-On** tab to see the User Provider module and User Subscriber modules.
 
+<div class="info" markdown="1">
+
+For single sign-on to work, you also need to activate it in the security settings of your environment. See [Configure app authentication settings](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md) and the instructions about SSO.
+
+</div>
+
 ## Sharing Users
 
 The User Provider module contains an entity that stores the end user information. This entity is set with the `Public` property to `Yes` so that it can be reused by User Subscriber modules.

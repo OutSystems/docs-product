@@ -60,7 +60,7 @@
 
 # Send an Email From a Web Application
 - develop/logic/emails.md:
-    - /extensibility-and-integration/configure-send-emails.md
+    - extensibility-and-integration/configure-send-emails.md
 
 # ------- Web Interfaces -------
 

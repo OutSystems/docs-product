@@ -47,7 +47,7 @@ ConfigurationTool.com
 
 ## Parameters
 
-`/SetupInstall [<platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>] [/SetPlatformServerAdminPassword platform_server_admin_password]`
+`/SetupInstall [<platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>]`
 
 :   Creates or upgrades the OutSystems platform and logging database model using the `server.hsconf` configuration file.
 
@@ -61,7 +61,7 @@ ConfigurationTool.com
 
 :   Upgrades the OutSystems platform and logging database models, without validating if the database exists or if the permissions are correct.
 
-    The admin password is optional and is only used for integrated authentication purposes where the password isn’t stored in the server configuration file.
+    The admin password is optional and is only used for integrated authentication purposes where the password isn't stored in the server configuration file.
     
     If you provide the optional `/SetPlatformServerAdminPassword` parameter with a password, sets the password for the Platform Server `admin` user.
 
@@ -107,7 +107,7 @@ ConfigurationTool.com
 `/SetPlatformServerAdminPassword <platform_server_admin_password>`
 
 :   Defines the password for the Platform Server Admin user, if the user is active.  
-    Note: This command does not work when using Integrated Authentication.
+    Note: This command doesn't work when using Integrated Authentication.
     
 `/GetDeploymentZones`
 

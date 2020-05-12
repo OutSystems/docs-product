@@ -25,7 +25,9 @@ You can use the Button Group UI Pattern to display radio button choices to the u
 
     ![](<images/buttongroup-image-3.png>)
 
-1. Change the text in the label of the ButtonGroupItems.
+1. Repeat step 3 for each of the **radio-button** elements.
+
+1. Change the **Label** text for each of the Button Group Items.
 
 ## Properties
 

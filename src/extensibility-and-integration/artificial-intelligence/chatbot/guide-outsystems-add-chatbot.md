@@ -11,7 +11,7 @@ This is a step-by-step guide to add the chatbot UI block to an OutSystems app. T
 
 <div class="info" markdown="1">
 
-You need to install the [OutSystems.AI Chatbot](https://www.outsystems.com/forge/component-overview/5886/) component to follow the guide. 
+You need to install the [OutSystems.AI Chatbot](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive) component to follow the guide. 
 
 </div>
 

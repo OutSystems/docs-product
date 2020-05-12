@@ -174,7 +174,7 @@ Follow these steps to test your knowledge base.
 
 If you're not happy with how your knowledge base performs, you can edit it. Click **EDIT** to add, edit or remove the question-answer pairs. Make sure you click **Save and train** after you edit your knowledge base.  
 
-## publish your knowledge base and create a chatbot service { #publish-kb }
+## Publish your knowledge base and create a chatbot service { #publish-kb }
 
 Once you're satisfied with how the knowledge base performs, publish it to make it available for the chatbot. The publishing is the step that pushes the knowledge base to production.
 

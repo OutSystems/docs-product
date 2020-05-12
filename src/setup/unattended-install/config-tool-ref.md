@@ -25,7 +25,7 @@ The Configuration Tool command line returns non-zero values when an error occurs
 
 ```
 ConfigurationTool.com 
-    | /SetupInstall <platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password> [/SetPlatformServerAdminPassword <platform_server_admin_password>] 
+    | /SetupInstall [<platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>] 
     | /UpgradeInstall [<integrated_auth_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>] 
     | /RebuildSession <session_db_admin_username> <session_db_admin_password> 
     | /SCInstall 
@@ -47,7 +47,7 @@ ConfigurationTool.com
 
 ## Parameters
 
-`/SetupInstall [<platform_db_admin_username>] [<platform_db_admin_password>] [<logging_db_admin_username>] [<logging_db_admin_password>] [/SetPlatformServerAdminPassword platform_server_admin_password]`
+`/SetupInstall [<platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>] [/SetPlatformServerAdminPassword platform_server_admin_password]`
 
 :   Creates or upgrades the OutSystems platform and logging database model using the `server.hsconf` configuration file.
 

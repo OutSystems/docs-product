@@ -10,11 +10,12 @@ The chatbot webhook module is part of the OutSystems.AI Chatbot component. Use t
 * Create logic that handles responses from several Azure services and combines them with the elements exposed in the OutSystems app.
 * Add richer UI in responses, such as cards with links and images.
 
-To create advanced logic for the bot responses, you need to:
+These are the steps to create advanced logic for the bot responses:
 
-1. Create an app based on the Chatbot Webhook app template.
-2. Configure the webhook module to access the Azure App Service and Configure the Azure App Service to send responses to the webhook module.
-3. Create logic for the chatbot in the webhook.
+1. Create a bot service running in Azure. See [Create a bot service in Azure](guide-azure-services.md#create-bot-service) for instructions.  
+2. Create an app based on the Chatbot Webhook app template.
+3. Configure the webhook module to access the Azure App Service and configure the Azure App Service to send responses to the webhook module.
+4. Create logic for the chatbot in the webhook.
 
 <div class="info" markdown="1">
 

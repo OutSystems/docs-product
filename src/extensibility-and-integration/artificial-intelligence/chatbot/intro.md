@@ -16,13 +16,13 @@ To create a chatbot from the Chatbot component, you need:
 
 </div>
 
-You chatbot consists of the user interface and logic that generates replies to the user. If you want to quickly add a chatbot to your app, a chatbot that can answer questions based on the information from the knowledge base, check [Getting started: How to create an FAQ chatbot](get-started-faq-chatbot.md) for instructions.
+Your chatbot consists of the user interface and logic that generates replies to the user. If you want to quickly add a chatbot to your app, a chatbot that can answer questions based on the information from the knowledge base, check [Getting started: How to create an FAQ chatbot](get-started-faq-chatbot.md) for instructions.
 
 For more development options and advanced computational features, such as natural language processing, we recommend using the resources provided by the AI provided. OutSystems uses Microsoft Azure as the AI provider. Use the [chatbot webhook module](guide-outsystems-webhook.md) to connect to Azure and design advanced responses, for example to send a file or create a card with buttons or suggested actions.
 
 <div class="info" markdown="1">
 
-See the chatbot demo app. Install it in your environment, check out the logic and reuse it you your chatbots.
+There's a chatbot demo app in Forge. Install the demo in your environment, check out the logic, and reuse it your chatbots. Go to [OutSystems.AI Chatbot Reactive](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive), click **Download**, and then **Download component + demo**. 
 
 </div>
 

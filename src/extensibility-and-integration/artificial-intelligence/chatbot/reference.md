@@ -7,6 +7,12 @@ tags:
 
 This is a reference document that provides more information about components and settings.
 
+## The chatbot demo app
+
+The chatbot demo app is available in Forge. Go to the [OutSystems.AI Chatbot Reactive](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive), click **Download** and then **Download component + demo**. 
+
+![Forge page to download the chatbot demo](images/chatbot-demo-download-forge.png?width=650)
+
 ## Block settings { #chatbot-settings }
 
 These are the settings available in the properties of the Blocks that come with the chatbot component from Forge.

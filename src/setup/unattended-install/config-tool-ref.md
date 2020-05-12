@@ -184,7 +184,7 @@ Modify the Address and/or Enable HTTPS settings of the "Global" deployment zone:
 
 ```
 ConfigurationTool.com
-    /ModifyDeploymentZone "Global" <zone_address> [<enable_https>]
+    /ModifyDeploymentZone "Global" <deployment_zone_address> [<enable_https>]
 ```
 
 Disable Server.API and Server.Identity:

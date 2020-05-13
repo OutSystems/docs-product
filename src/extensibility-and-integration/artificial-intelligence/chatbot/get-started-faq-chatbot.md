@@ -20,7 +20,7 @@ To create a chatbot with the OutSystems.AI Chatbot component, you need:
 
 To accelerate the development of your chatbot, we created the OutSystems.AI Chatbot component that works with Microsoft Azure. Here is an overview of what you should do to create a FAQ chatbot:
 
-![FAQ chatbot creation overview](images/faq-chatbot-overview-dia.png?width=800)
+![FAQ chatbot creation overview](images/faq-chatbot-overview-dia.png)
 
 1. Prepare your questions and answers. You first need to put your questions and answers in a spreadsheet. See: [Prepare data for knowledge base](guide-azure-kb.md#prepare-data-kb)
 2. Create a knowledge base and test it. Once you have your questions and answers, you submit them to QnA Maker. QnA Maker uses natural language processing to expand possible questions and answers, which means more conversational variety for your users. See how to [create a knowledge base](guide-azure-kb.md#create-kb).

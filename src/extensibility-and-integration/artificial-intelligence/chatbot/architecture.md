@@ -43,9 +43,15 @@ In a typical chatbot conversation there are:
 * Question messages, the messages that the users write in the chatbot user interface.
 * Answer messages, the replies from the chatbot app to the user.
 
+Here is an overview of the communication flow:
+
 ![communication sequence diagram](images/azure-chatbot-communication-dia.png?width=700)
 
-Here is an overview of the communication flow:
+<div class="info" markdown="1">
+
+This sequence shows an advanced chatbot logic, where OutSystems developers have a flexibility to decide how the app responds to the user messages. However, for a simple FAQ chatbot, you can use only the UI part of the chatbot component and let Azure services handle the knowledge base responses.
+
+</div>
 
 1. User writes a question in the chatbot.
 2. The question message goes, via a REST API, to Azure Bot Framework.
@@ -55,12 +61,6 @@ Here is an overview of the communication flow:
 In this example, the developers use the Azure QnA Maker Service to get responses from the Azure knowledge base. This is also a REST API service. Synchronously, the Azure QnA Maker service replies back to OutSystems the answer message via the same REST API response.
 
 Back in the OutSystems app, the answer message from the Azure service is processed and can be sent as a reply to the user. The answer message goes to Azure Bot Framework and from there it's sent back to the chatbot UI via the Azure Websocket service, a persistent, bidirectional channel between the client and the server.
-
-<div class="info" markdown="1">
-
-This sequence shows an advanced chatbot logic, where OutSystems developers have a flexibility to decide how the app responds to the user messages. However, for a simple FAQ chatbot, you can use only the UI part of the chatbot component and let Azure services handle the knowledge base responses.
-
-</div>
 
 ## Azure resources
 

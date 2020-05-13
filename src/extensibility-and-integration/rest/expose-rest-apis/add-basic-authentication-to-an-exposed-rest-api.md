@@ -5,6 +5,10 @@ tags:
 
 # Add Basic Authentication to an Exposed REST API
 
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
+
 ## Basic Authentication
 
 Basic authentication is a simple authentication scheme built into the HTTP protocol. The client sends HTTP requests with the "Authorization" header containing the word "Basic", a space character, and a "username:password" string encoded in Base64.

@@ -5,6 +5,10 @@ tags: support-Security-overview
 
 # Apply Content Security Policy
 
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
+
 To protect against a growing number of attacks on the Web, use the Content Security Policy (CSP) against code injection attacks in applications developed with OutSystems. CSP provides a standard way of declaring approved origins of content that browsers are allowed to load.
 
 CSP is configured using directives that are sent to browsers in [specific HTTP headers](<https://en.wikipedia.org/wiki/Content_Security_Policy#Status>). This way, when browsers run pages of your applications, they know from which location and/or which type of resources to load.

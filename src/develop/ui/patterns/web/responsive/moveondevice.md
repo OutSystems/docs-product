@@ -5,6 +5,8 @@ summary: Move on Device defines where information is displayed thereby improving
 
 # Move on Device
 
+> We've been working on this article. Let us know what you think. Vote now.
+
 You can use the Move on Device UI Pattern to define the placement of information depending on the device.
 
 ![](<images/moveondevice-image-3.png>)

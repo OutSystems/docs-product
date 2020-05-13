@@ -5,6 +5,8 @@ summary: User Initials display user information in a circular badge.
 
 # User Initials
 
+> We've been working on this article. Let us know what you think. Vote now.
+
 You can use the User Initials UI Pattern to display a user’s initials or their image in a circular badge. 
 
 ![](<images/userinitials-image-4.png>)

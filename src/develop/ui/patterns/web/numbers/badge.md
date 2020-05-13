@@ -5,6 +5,8 @@ summary: Badge display numerical information as notification.
 
 # Badge
 
+> We've been working on this article. Let us know what you think. Vote now.
+
 You can use the Badge UI Pattern to display numerical information as a notification. For example, the Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
 ![](<images/badge-image-7.png>)

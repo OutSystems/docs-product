@@ -5,6 +5,8 @@ summary: Carousel shows a subset of items in a cyclic view.
 
 # Carousel
 
+> We've been working on this article. Let us know what you think. Vote now.
+
 You can use the Carousel UI Pattern to display multiple items in a horizontal slide. This pattern is ideal for creating horizontal slides in smaller screens. You can also use this pattern for dynamic content, by placing a List directly inside the placeholder. 
 
 

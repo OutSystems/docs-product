@@ -5,6 +5,8 @@ summary: Character Count displays the number of characters left to be entered in
 
 # Character Count
 
+> We've been working on this article. Let us know what you think. Vote now.
+
 You can use the Character Count UI Pattern to display the number of characters a user has entered or has remaining for an onscreen text area. 
 
  ![](<images/charactercount-image-5.png>)

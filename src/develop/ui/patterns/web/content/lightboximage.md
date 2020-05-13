@@ -5,6 +5,8 @@ summary: Light Box Image displays an image thumbnail that is clicked to open a f
 
 # Light Box Image
 
+> We've been working on this article. Let us know what you think. Vote now.
+
 You can use the Lightbox Image UI Pattern to open smaller thumbnail images in full screen mode. This UI pattern is often used when creating an image gallery, allowing you to navigate through each of the images and view them in more detail.  
 
 ![](<images/lightboxweb-image-11.png>)

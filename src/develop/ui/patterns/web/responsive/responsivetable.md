@@ -5,6 +5,8 @@ summary: Responsive Table displays information in a logical and organized way th
 
 # Responsive Table
 
+> We've been working on this article. Let us know what you think. Vote now.
+
 You can use the Responsive Table UI Pattern to display information in a logical and organized way. The Responsive Table UI pattern allows interaction, such as sorting, so that users can customize how they view information.
 
 **How to use the Responsive Table UI Pattern**  

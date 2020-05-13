@@ -5,7 +5,9 @@ summary: Counter shows the total number of occurrences of several values regardi
 
 # Counter
 
-> We've been working on this article. Let us know what you think. Vote now.
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
 
 You can use the Counter UI Pattern to display numerical information as a notification. For example, the Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
  

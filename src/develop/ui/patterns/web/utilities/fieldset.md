@@ -5,7 +5,9 @@ summary: Fieldset labels groups of related interface elements and fields.
 
 # Fieldset
 
-> We've been working on this article. Let us know what you think. Vote now.
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
 
 You can use the Fieldset UI Pattern to group and label related information, such as a users personal details, improving the overall look and layout of your application.
 

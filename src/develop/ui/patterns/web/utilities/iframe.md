@@ -5,8 +5,10 @@ summary: Iframe displays information from other apps on the screen in small prev
 
 # Iframe
  
- > We've been working on this article. Let us know what you think. Vote now.
- 
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
+
  You can use the Iframe UI Pattern to display information from other apps, on your screen, in bite-size previews. For more information about Iframes, see [HTML Iframes](https://www.w3schools.com/html/html_iframe.asp).
 
 ![](<images/iframe-image-8.png>)

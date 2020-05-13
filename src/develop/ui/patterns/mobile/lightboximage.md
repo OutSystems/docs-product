@@ -26,8 +26,9 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
      ![](images/lightboxmob-image-3.png)
 
      Note: In this example, the image property is set to **Local Image**. You can also choose [External URL or Binary Data](../../../../develop/ui/image/display-image.md).
+1. Repeat step 3 for each of the images.
 
-1.  From the Widget Tree, select the Lightbox Image widget, and on the **Properties** tab, set the relevant properties.
+1.  From the Widget Tree, select the Lightbox Image widget, and on the **Properties** tab, set the relevant (optional) properties.
 
 
 
@@ -35,11 +36,11 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
 
 **Property** |  **Description** |  
 ---|---| 
- Title  |  Title of the image that will be displayed.  | 
- Group  |  Images in the same group will be displayed in a gallery.  |  
- ImageURL  |  URL for an image that can be a replacement for the "Image Placeholder" image.  |  
- ImageZoom  |  The zoom value is used to define the size of the image that will open in full screen based on the thumbnail size. %%Note: try to use images with the same ratio to avoid rendering problems:  %%- thumbnail with 100x100 and zoom 2 will open with 200x200  %%- thumbnail with 500x500 and zoom 0.5 will open with 250x250  |  
-  
+ Title (Text): Optional |  Image title that is displayed when previewing the image in full screen mode. <p>  Examples<ul><li>_"Image 1"_ - Displays _Image 1_ as the image title.</li></ul></p> | 
+ Group (Text): Optional  | Name of the group of images. Similar to the concept of a picture album, images in the same group are displayed in a gallery. You can navigate through pictures with the same group name when viewing them in full screen mode. <p>Examples<ul> <li>_Gallery 1_ - Adds this image to the _Gallery 1_ group. </li></ul></p> |  
+ ImageURL (Text): Optional  |  URL for the image you want to show in full screen mode. If empty, a zoomed version of the thumbnail is displayed. Use this if you want to load a lower quality image as a thumbnail and display a higher quality version in full screen mode. |  
+ ImageZoom (Decimal): Optional |  Defines the size of the image that opens in full screen mode (based on the thumbnail size). <p> To avoid rendering problems, try to use images with the same ratio.</p> <p> Examples </p><ul><li>_2_ - A thumbnail with 100x100, and zoom 2 opens with 200x200.</li><li>_0.5_ - A thumbnail with 500x500, and zoom 0.5 opens with 250x250.</li></ul> |  
+ ExtendedClass (Text): Optional | Add custom style classes to the Lightbox Image UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.<p>Examples <ul><li>_Blank_ - No custom styles are added (default value). </li><li>_"myclass"_ - Adds the _myclass_ style to the Lightbox Image UI styles being applied. </li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Lightbox Image UI styles being applied.</li></ul></p>
 
 ## Compatibility with other patterns
 

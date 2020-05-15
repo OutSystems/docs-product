@@ -92,7 +92,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. On the **Properties** tab, in the **Condition** property, enter the following:
 
-   `CurrentStep = 1`
+    `CurrentStep = 1`
            
     ![](images/wizard-image-19.png)
 

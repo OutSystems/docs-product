@@ -78,6 +78,7 @@ The following example demonstrates how you can create a four step Wizard with na
     ![](images/wizard-image-16.png)
 
     This logic has the following meaning:
+    
     * If the user is on step 1, the step will show as the active step in the wizard.
     * If the user is on a step greater than step 1, step 1 will show as a step that is in the past (completed).
     * If the user is on a step less than 1, the step will show as an upcoming (next) step.

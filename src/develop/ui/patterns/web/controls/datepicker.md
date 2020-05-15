@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: DatePicker allows the end user to select a single or a range of dates using a calendar.
+summary: Date Picker allows the end user to select a single or a range of dates using a calendar.
 ---
 
 # Date Picker 
@@ -11,9 +11,7 @@ You can use the Date Picker UI Pattern to allow the user to select a single or a
 
 **How to use the Date Picker UI Pattern**
 
-Drag an input and the DatePicker to the screen and set up the parameters. Only the InputWidgetId parameter is mandatory and must reference an input widget that will show the date picked on the page.
-
-For advanced options, you can check the official documentation of the [Pikaday library](https://github.com/dbushell/Pikaday).
+<!-- Drag an input and the DatePicker to the screen and set up the parameters. Only the InputWidgetId parameter is mandatory and must reference an input widget that will show the date picked on the page. -->
 
 1. In Service Studio, from the Toolbox, drag an Input widget into the Main Content area of your application's screen.
 
@@ -43,17 +41,20 @@ For advanced options, you can check the official documentation of the [Pikaday l
 
 1. Publish and test.
 
+
+For advanced options, you can check the official documentation of the [Pikaday library](https://github.com/dbushell/Pikaday).
+
 ## Properties
 
 | **Property** |  **Description** |  
 |---|---|
-| InputWidgetId (Text): Mandatory  | Input element Id that triggers the element so it is visible. <p>Examples<ul><li></li><li></li></ul></p> |
-| ButtonWidgetId (Text): Optional  |  Element name (example: button) that  triggers the element so it is visible. <p>Examples<ul><li></li><li></li></ul></p>|
-| DisabledDates (Date List):Optional  |  List of dates for the disabled days. <p>Examples<ul><li></li><li></li></ul></p> | 
-| MinDate (Date): Optional | Dates from this date onwards are enabled and  dates before this date are disabled. <p>Examples<ul><li></li><li></li></ul></p> |
-| MaxDate (Date): Optional| Dates before this date are enabled and dates after this date are disabled. <p>Examples<ul><li></li><li></li></ul></p> | 
-| InitialDate (Date Time): Optional| If set, the calendar will initially display the set date, otherwise it will display the current Date (default). <p>Examples<ul><li></li><li></li></ul></p>| 
-| DateFormat (Text): Optional | Defaults to the date format defined in the server configuration. The default is the server date format. <p>Examples<ul><li></li><li></li></ul></p>| 
+| InputWidgetId (Text): Mandatory  | Input element Id that triggers the element so it is visible.  |
+| ButtonWidgetId (Text): Optional  |  Element name (example: button) that  triggers the element so it is visible. |
+| DisabledDates (Date List):Optional  |  List of dates for the disabled days.  | 
+| MinDate (Date): Optional | Dates from this date onwards are enabled and  dates before this date are disabled. |
+| MaxDate (Date): Optional| Dates before this date are enabled and dates after this date are disabled.  | 
+| InitialDate (Date Time): Optional| If set, the calendar will initially display the set date, otherwise it will display the current Date (default).| 
+| DateFormat (Text): Optional | Defaults to the date format defined in the server configuration. The default is the server date format. | 
 | SelectInterval (Boolean): Optional  |  Allows the selection between two dates. If set to True, the Block Event "On Select" has the values for both parameters.  |
 | AdvancedFormat (DatePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters. |
  

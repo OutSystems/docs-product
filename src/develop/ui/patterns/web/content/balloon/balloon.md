@@ -5,7 +5,7 @@ summary: Balloon shows a content overlay to users, without forcing them to lose 
 
 # Balloon
 
-You can use the Balloon UI Pattern to display content in a pop-up on the UI. The Balloon UI Patterns is useful when you need to display additional information realted to a small on-screen element. 
+You can use the Balloon UI Pattern to display content in a pop-up on the UI. The Balloon UI Pattern is useful when you need to display additional information realted to a small on-screen element. 
 
 ![](<images/balloon-image-6.png>)
 
@@ -52,5 +52,5 @@ In this example, we use the Balloon as a tootip on a screen with a form.
 | WidgetId (Text): Mandatory | Id that triggers the element so it is visible. <p>Example</p>|
 | Position (PositionBase Identifier): Optional |  Sets the position of where the Balloon content is displayed in relation to the widget. The predefined options are: <p><ul><li>Bottom</li><li>Left</li><li>Right</li><li>Top</li></ul></p> <p>Examples<ul><li>_Entities.PositionBase.Bottom_ - The content displays below the element. This is the default value.</li><li>_Entities.PositionBase.Right_ - The content displays to the right of the element.</li></ul></p>|
 | Trigger (Trigger Identifier): Optional |  Sets the action that triggers the content to display. The predefined options are: <p><ul><li>Click</li><li>Hover</li><li>Manual</li></ul></p> <p>Examples<ul><li>_Entities.Trigger.Click_ - Content displays when the user clicks the element.</li><li>_Entities.Trigger.Manual_ - Requires that the tooltip is triggered programmatically. </li><li>_Entities.Trigger.Hover_ - Content displays when the user hovers over the element. </li></ul></p> | 
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Balloon UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Balloon UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Balloon UI styles being applied. </li></ul></p> |
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Balloon UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Balloon UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Balloon UI styles being applied. </li></ul></p> |
 | AdvancedFormat (Text): Optional  |  Enables you to use more options than what is provided in the input parameters. <p>Example: `{ arrow: false,   showOnInit: true }` </p> <p>For more information visit: https://atomiks.github.io/tippyjs/ </p>

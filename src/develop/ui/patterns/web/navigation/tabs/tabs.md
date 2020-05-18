@@ -48,7 +48,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Orientation (Orientation Identifier): Optional  |  If Vertical, the tabs are displayed vertically. If Horizontal, the tabs are displayed horizontally. This is the default.| 
 | IsJustified (Boolean): Optional  | If True, the Tabs are are evenly distributed in the space available. If False, the Tabs are left aligned. This is the default.|
 | IsRight (Boolean): Optional  | If True, the Tabs are displayed to the right of the Tab content. If False, the Tabs are displayed to the left of the Tab content. This is the default. **Note**: This setting is only applicable if the **Orientation** property is set to **Vertical**. | 
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Tabs UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples<ul><li>_Blank_ - No custom styles are applied. </li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Tabs UI styles being applied.</li></li></ul></p>| 
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Tabs UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Tabs UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Tabs UI styles being applied.</li></ul></p>| 
 
 ### Tabs Header Item
 

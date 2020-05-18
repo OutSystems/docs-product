@@ -5,85 +5,63 @@ summary: Tabs separate content into flat structure sections.
 
 # Tabs
 
-Use this pattern to display large sets of information which can be split into different areas, while always a click away. The headers can have other widgets, like counters, badges or icons.
+You can use the Tabs UI Pattern to display large sets of information, which can be split into different areas, while always remaining a click away. 
 
 ![](images/tabs-gif1.gif?width=650)
 
-Use the Tabs pattern when you need to separate content into sections with a flat structure. However, avoid using it in large forms.
 
-**How to use**
+**How to use the Tabs UI Pattern**
 
-Fill in the placeholders Header and Content with the Blocks TabsHeaderItem and TabsContentItem, respectively. Use any number of these as you need. In the parameters, specify the initial active tab, along with the Tabs orientation and justification. 
 
-1. Drag Tabs pattern into the preview.
+1. In Service Studio, in the Toolbox, search for `Tabs`. 
+
+    The Tabs widget is displayed.
+    
+    ![](images/tabs-image4.png)
+    
+
+1. From the Toolbox, drag the Tabs widget onto your application's screen. 
 
     ![](images/tabs-image1.png?width=750)
+  
+1. Add the necessary number of Tabs Header Item blocks to the Header placeholder and Tabs Content Item blocks to the Content placeholders.
 
-1. Set your content and publish.
+1. On the **Properties** tab, set the relevant properties.
 
+After following these steps and publishing the module, you can test the pattern in your app.
+
+  
 ## Demo
 
 <iframe width="750" height="500" src="https://www.youtube.com/embed/97uPVx-Q1lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
-## Input parameters
+## Properties
 
 ### Tabs
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ActiveTab  |  Set the Active Tab |  Text | False | none |
-| Orientation  |  If Vertical, header is displayed side by side to the content; if Horizontal, header is displayed above content. |  Orientation Identifier | False | Entities.Orientation.Horizontal |
-| IsJustified  |  The Tabs Header items are evenly distributed in the line, the first item is on the start and last item on the end. |  Boolean | False | 1 |
-| IsRight  |  Aligns the Tabs Header items to right. Only active if the Orientation parameter is set to Vertical. |  Boolean | False | False |
-| ExtendedClass  |  Adds custom style classes to the Tabs Block. |  Text | False | none |
+| **Property** |  **Description** |  **Usage** | 
+|---|---|---|
+| ActiveTab (Text): Optional  |  Set the active tab. | 
+| Orientation (Orientation Identifier): Optional  |  If Vertical, header is displayed beside the content. If Horizontal, header is displayed above the content. | 
+| IsJustified (Boolean): Optional  |  The Tabs Header items are evenly distributed. |
+| IsRight (Boolean): Optional  |  Aligns the Tabs Header items to the right. Only active if the Orientation parameter is set to Vertical. | 
+| ExtendedClass (Text): Optional  |  Adds custom style classes to the block. | 
 
-### TabsHeaderItem
+### Tabs Header Item
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| DataTab  |  Sets the name to connect to the TabsContentItem. Should be the same as the paired HeaderItem and unique |  Text | True | none |
+| **Property** |  **Description** |  **Usage** | 
+|---|---|---|
+| DataTab (Text): Mandatory  |  Sets the name to connect to the Tabs Content Item. Should be the same as the paired Header Item and unique. |  
 
-### TabsContentItem
+### Tabs Content Item
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| DataTab  |  Value that connects with the TabsHeaderItem. Should be the same as the paired ContentItem and unique. |  Text | True | none |
+| **Property** |  **Description** |  **Usage** | 
+|---|---|---|
+| DataTab (Text): Mandatory  |  Value that connects with the Tabs Header Item. Should be the same as the paired Content Item and unique. | 
 
-## Layout and classes
 
-![](images/tabs-image2.png?width=750)
 
-## CSS selectors
+## See also
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
-| Active Header |  .tabs-header-item.active |  It's active header (represented as the one with a colored underline)  |
-| Active Tab  |  .tabs-content-item.active  |   It's active content  |
-  
-
-## Advanced
-
-Here are some more advanced use-cases of the widget.
-
-### Change the active header style
-
-Write the following CSS in the CSS editor and change the `yourcolor` value:
-
-`.tabs-header-item.active {
-    border-bottom: var( --border-size-m) solid yourcolor;
-}`
-
-Or using CSS variables: `var(--color-yourcolor)`
-example:
-
-`.tabs-header-item.active {
-background: border-bottom: var( --border-size-m) solid var(--color-red)
-}`
-
-### Add a background color to the tabs
-
-1. Enclose the tabs with a container.
-2. Add the classes `background-blue-lighter text-neutral-0`, this adds a light blue background and force the text to be white.
-3. Publish the application.
-
-![](images/tabs-image3.png?width=750)
+* OutSystems UI Live Style Guide: [Tabs](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx)
+* OutSystems UI Pattern Page: [Tabs](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73)

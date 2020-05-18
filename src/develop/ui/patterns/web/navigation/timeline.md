@@ -5,59 +5,55 @@ summary: Timeline indicates related events in chronological order.
 
 # Timeline
 
-Indicates related events in chronological order.
+You can use the Timeline UI Pattern to show related events in a chronological order, such as a user’s upcoming, current, and past activities.
 
-Use the Timeline to show related events in chronological order such as an end user’s upcoming, current and past activities.
+![](<images/timeline-image-6.png>)
 
-**How to use**
 
-1. Drag the Timeline pattern into the preview.
+**How to use the Timeline UI Pattern**
+
+
+1. In Service Studio, in the Toolbox, search for `Timeline`. 
+
+    The Timeline widget is displayed.
+
+    ![](<images/timeline-image-7.png>)
+
+
+1. From the Toolbox, drag the Timeline widget onto your application’s screen.
 
     ![](images/timeline-image-2.png?width=500)
 
-1. Set the content in the placeholders. By default, the pattern comes with a circular icon in the Icon placeholder. To change it, drag an icon widget to this placeholder.
+
+1. Set the required content in the Icon, Date, and Content placeholders. 
+
+    By default, the Icon placeholder displays a circular icon. To change it, drag an icon widget to this placeholder.
 
     ![](<images/timeline-image-3.png>)
 
-1. Drag as many TimelineItems as required.
+1. Continue adding as many Timeline Items as required.
 
-## Input Parameters
+After following these steps and publishing the module, you can test the pattern in your app.
+
+## Properties
 
 **Timeline**
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
+| **Property** |  **Description** |  **Usage** | 
+|---|---|---|
+| ExtendedClass (Text): Optional  |  Add custom style classes to the block. | 
+
 
 **Timeline Item**
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Color  |  Background color of the icon. |  Color Identifier | False | Entities.Color.Primary |
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
+| **Property** |  **Description** |  **Usage** | 
+|---|---|---|
+| Color (Color Identifier): Optional  |  Icon background color. |  
+| ExtendedClass (Text): Optional |  Add custom style classes to the block. |  
 
-## Layout and Classes
 
-![](images/timeline-image-1.png?width=750)
+## See also
 
-## Advanced Use Case
+* OutSystems UI Live Style Guide: [Timeline](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Timeline.aspx)
 
-### Use Timeline with ListRecords
-
-1. Drag the Timeline Pattern into the preview.
-1. In the Content placeholder, drag a ListRecords widget.
-1. In the ListRecords widget, drag a TimelineItem.
-1. In the TimelineItem, use expressions to display the database content you need.
-1. To disable the vertical line on the last TimelineItem, write the following CSS code in the application Theme:
-
-    ```css
-    .ListRecords .timeline-item:last-of-type .timeline-item-separator {
-        display: none;
-    }
-    ```
-1. In the ListRecords Widget, set Line Separator to None to avoid additional margin between elements.
-
-1. Publish and test.
-
-    ![](<images/timeline-image-4.png>)
 

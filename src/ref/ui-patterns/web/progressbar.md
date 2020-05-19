@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Progress Bar UI Pattern.
 ---
 
 # Progress Bar UI Pattern Reference
@@ -57,7 +57,5 @@ To remove the background, use this CSS snippet.
 ```
 ![](<images/progressbar-image-7.png>)
 
- ## See also
 
-* OutSystems UI Pattern Documentation: [Progress Bar](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Numbers/ProgressBar)
 

@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the TImeline UI Pattern.
 ---
 
 # Timeline UI Pattern Reference
@@ -28,9 +28,3 @@ summary:
 1. Publish and test.
 
     ![](<images/timeline-image-4.png>)
-
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Timeline](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Navigation/Timeline)
-

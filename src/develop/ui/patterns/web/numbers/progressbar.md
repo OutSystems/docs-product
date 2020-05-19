@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ProgressBar displays the progress of a task by incrementing values in a bar.
+summary: Progress Bar displays the progress of a task by incrementing values in a bar.
 ---
 
 # Progress Bar
@@ -19,28 +19,29 @@ You can use the Progress Bar to display percentage values by incrementing values
 
 1. From the Toolbox, drag the Progress Bar widget onto your application's screen.
 
-1. Use a variable to set the percentage value to display.
-1. On the **Properties** tab, set the  shape, size, orientation and color of the progress bar.
+    ![](<images/progressbar-image-10.png>)
 
-1. Set the content in the placeholders. 
+    By default, the Progress Bar widget contains a Title and Value placeholder. 
 
-    ![](<images/progressbar-image-1.png>)
+      ![](<images/progressbar-image-1.png>)
+
+1. Add the required content to the Title and Value placeholders. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.md) or [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>) to set the percentage value to display.
+
+1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, size, and orientation of the Progress Bar.
+
+    ![](<images/progressbar-image-11.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 
 ## Properties
 
-| **Property** |  **Description** |  **Usage** |
-|---|---|---|
-| Percentage (Integer): Optional  |  Percentage to display, you can use functions or local variables. | 
-| Color (Color Identifier): Optional  |  Set the background color. |  
-| Shape (Shape Identifier): Optional  |  Set the shape. | 
-| Size(ProgressBarSize Identifier): Optional  |  Set the size. |  
-| IsInline (Boolean): Optional  |  Set the orientation of the value placeholder. When True, the value placeholder is placed at the end of the line and the label placeholder is hidden. When False, value and label of the placeholder is placed over the line. |
-| ExtendedClass (Text): Optional  |  Add custom style classes to the block. |  
+| **Property** |  **Description** |  
+|---|---|
+| Percentage (Integer): Optional  |  Percentage to display. You can use functions or local variables. | 
+| Color (Color Identifier): Optional  | Progress bar color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - The progress bar color  is the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The progress bar color is red.</li></ul></p>  
+| Shape (Shape Identifier): Optional  |  Set the Progress Bar shape. The predefined options are: <li>Rounded</li><li> Soft Rounded </li> <li>Sharp</li><p>Examples</p><ul><li>_Blank_ - The Progress Bar has a rounded shape (Entities.Shape.Rounded). This is the default. </li><li>_Entities.Shape.Sharp_ - The Progress Bar has a sharp shape.</li></ul>| 
+| Size (ProgressBarSize Identifier): Optional  |  Set the Progress Bar size. The predefined options are: <li>Extra Small</li><li>Small</li> <li>Base (default)</li>|  
+| IsInline (Boolean): Optional  | If True, the value placeholder is placed at the end of the line and the label placeholder is hidden. If False, the value and label of the placeholder are placed over the line. This is the default.|
+| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Progress Bar UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Progress Bar UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Progress Bar UI styles being applied.</li></ul></p> |
 
 
-
-## See also
-* OutSystems UI Live Style Guide: [Progress Bar](https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressBar.aspx)
-* OutSystems UI Pattern Page: [Progress Bar](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=57)

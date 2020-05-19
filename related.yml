@@ -1019,7 +1019,9 @@
 - develop/ui/patterns/web/navigation/timeline.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Timeline.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=76
 - develop/ui/patterns/web/navigation/wizard.md:
     - ref/ui-patterns/web/wizard.md
     - external:
@@ -1051,7 +1053,9 @@
 - develop/ui/patterns/web/numbers/progressbar.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressBar.aspx 
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=57 
 - develop/ui/patterns/web/numbers/progresscircle.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1083,7 +1087,9 @@
 - develop/ui/patterns/web/structure/aligncenter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+           https://outsystemsui.outsystems.com/WebStyleGuidePreview/AlignCenter.aspx 
+        - "OutSystems UI Pattern": 
+           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=4
 - develop/ui/patterns/web/structure/columns.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

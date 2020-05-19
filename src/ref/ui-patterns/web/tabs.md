@@ -1,12 +1,11 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Tabs UI Pattern.
 ---
 
 # Tabs UI Pattern Reference
 
 ## Layout and classes
-
 
 ![](images/tabs-image2.png?width=750)
 
@@ -17,7 +16,6 @@ summary:
 | Active Header |  .tabs-header-item.active |  It's active header (represented as the one with a colored underline)  |
 | Active Tab  |  .tabs-content-item.active  |  It's active content  |
   
-
 ## Advanced
 
 Here are some more advanced use-cases of the widget.
@@ -47,8 +45,3 @@ background: border-bottom: var( --border-size-m) solid var(--color-red)
 1. Publish the application.
 
 ![](images/tabs-image3.png?width=750)
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Tabs](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Navigation/Tabs)
-

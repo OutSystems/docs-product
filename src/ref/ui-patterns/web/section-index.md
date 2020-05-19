@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Section Index UI Pattern.
 ---
 
 # Section Index UI Pattern Reference
@@ -40,8 +40,4 @@ For RTL compatibility, make sure to also add the following code:
         border-right-color: yourcolor;
         color: yourcolor;
     }
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Section Index](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Navigation/SectionIndex)
 

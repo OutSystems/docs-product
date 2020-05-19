@@ -52,8 +52,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 ### Tabs Header Item
 
-| **Property** |  **Description** |  **Usage** | 
-|---|---|---|
+| **Property** |  **Description** | 
+|---|---|
 | DataTab (Text): Mandatory  |  Sets the name to connect to the Tabs Content Item. Should be the same as the paired Header Item and unique. |  
 
 ### Tabs Content Item

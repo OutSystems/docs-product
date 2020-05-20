@@ -54,9 +54,9 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-**Property** |  **Description** |  **Default Value**  
----|---|---  
-![](images/input.png) |  MinValue  |  Slider's minimum value.  |  none  
+**Property** |  **Description** |  
+---|---|
+|  MinValue  |  Slider's minimum value.  |
 ![](images/input.png) |  MaxValue  |  Slider's maximum value.  |  none  
 ![](images/input.png) |  InitialIntervalStart  |  Value selected by default. Must be between min and max values.  |  none  
 ![](images/input.png) |  InitialIntervalEnd  |  Default value for the interval's end. Must be between min and max values.  |  none  

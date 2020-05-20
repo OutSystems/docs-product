@@ -1143,7 +1143,16 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
         - "OutSystems UI Pattern": 
            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
-           
+- develop/ui/patterns/mobile/touchevents.md:
+    - ref/ui-patterns/mobile/touchevents.md
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=78
+- develop/ui/patterns/mobile/swipeevents.md:
+    - ref/ui-patterns/mobile/swipeevents.md
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=70
 # Link to Training
 
 - extensibility-and-integration/connect-external-db.md:

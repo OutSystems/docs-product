@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced uses cases for the Columns UI Pattern.
 ---
 
 # Columns UI Pattern Reference
@@ -42,6 +42,3 @@ summary:
 | .columns | .phone-break-none | When Columns will not break in phone |
 
 
-
-## See also
-* OutSystems UI Pattern Documentation: [Columns](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Structure/Columns)

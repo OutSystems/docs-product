@@ -35,12 +35,23 @@ After following these steps and publishing the module, you can test the pattern 
 
 | **Property** |  **Description** |
 |---|---|
-| GutterSize (GutterSize Identifier): Optional | Set the gutter size. The default Gutter size is large.<p>Examples <ul><li>_Blank_ - A large white space between each column (default value)</li><li>_Entities.GutterSize.Gutter_None_ - No white space between each of the columns<li>_Entities.GutterSize.Gutter_XS_ - An extra small white space between each of the columns</li></ul></p> | 
-| TabletBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on tablets. The predefined options for the tablet behavior are: <p><ul><li>All</li><li>First</li><li>Last</li><li>Middle</li><li>None (default)</li></ul></p><p>Examples <ul><li>_Blank_ -  </li><li>_Entities.BreakColumns.All_ - </li><li>_Entities.BreakColumns.Last_ - </li></ul></p>|
-| PhoneBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on phones. The predefined options for the phone behavior are: <p><ul><li>All (default)</li><li>First</li><li>Last</li><li>Middle</li><li>None</li></ul></p><p>Examples <ul><li>_Blank_ -  </li><li>_Entities.BreakColumns.First_ - </li><li>_Entities.BreakColumns.Middle_ - </li></ul></p>|
-| ExtendedClass (Text): Optional  |Add custom style classes to the Columns UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Columns UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Columns UI styles being applied.</li></ul></p> |
+| GutterSize (GutterSize Identifier): Optional | Set the gutter size. The default Gutter size is large.<p>Examples <ul><li>_Blank_ - A large white space between each column (default value).</li><li>_Entities.GutterSize.Gutter_None_ - No white space between each of the columns<li>_Entities.GutterSize.Gutter_XS_ - An extra small white space between each of the columns</li></ul></p> | 
+| TabletBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on tablets. The predefined options for the tablet behavior are: <p><ul><li>All</li><li>First</li><li>Last</li><li>Middle</li><li>None (default).</li></ul></p><p>See below for an example of how each setting displays.</p>|
+| PhoneBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on phones. The predefined options for the phone behavior are: <p><ul><li>All (default).</li><li>First</li><li>Last</li><li>Middle</li><li>None</li></ul></p><p>See below for an example of how each setting displays.</p>|
+| ExtendedClass (Text): Optional  |Add custom style classes to the Columns UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - Adds the _myclass_ style to the Columns UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Columns UI styles being applied.</li></ul></p> |
 
+**Entities.BreakColumns.None**
 
-<!---## See also
-* OutSystems UI Live Style Guide: [Columns](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx)
-* OutSystems UI Pattern Page: [Columns](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=21) 
+![](images/Column_break_none.png)  
+
+**Entities.BreakColumns.Middle**
+
+![](images/Column_break_middle.png)
+
+**Entities.BreakColumns.Last**
+
+![](images/Column_break_last.png)
+
+**Entities.BreakColumns.First**
+
+![](images/Column_break_first.png)

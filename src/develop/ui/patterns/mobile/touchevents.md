@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary: The Touch Events UI Pattern enables touch events on a specific widget.
 ---
 
 # Touch Events 
@@ -37,10 +37,10 @@ You can use the Touch Events UI pattern to hide a header during a scroll action.
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
-Element | Code
----|---  
-![](images/JS_hide.png) |  var header = document.querySelector(".hearder");%%header.classList.add("hide");%%header.classList.add("header-on-scroll");  
-![](images/JS_show.png) |  var header = document.querySelector(".header");%%header.classList.remove("hide");%%header.classList.remove("header-on-scroll");  
+| Element | Code |
+|---|---| 
+|![](images/JS_hide.png) |  var header = document.querySelector(".hearder");%%header.classList.add("hide");%%header.classList.add("header-on-scroll");  |
+|![](images/JS_show.png) |  var header = document.querySelector(".header");%%header.classList.remove("hide");%%header.classList.remove("header-on-scroll"); | 
   
 **Result**:
 
@@ -48,9 +48,9 @@ Element | Code
 
 ## Properties
 
-**Property** |  **Description** |  **Default Value**  
----|---|---  
-![](images/input.png) WidgetId  |  This is the element that responds to the touch you configure.  |  none  
+|**Property** |  **Description** |
+|---|---| 
+| WidgetId  |  This is the element that responds to the touch you configure.  | 
 
 ## Compatibility with other patterns
 
@@ -58,10 +58,6 @@ There might be conflicts with any pattern with touch events used together with t
 
 ## Samples
 
-The following sample uses the TouchEvents pattern:
+The following sample uses the Touch Events pattern:
 
 ![](images/TouchEvents-Sample-1.PNG)
-
-## See also
-
-* OutSystems UI Pattern Page: [Touch Events](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=78)

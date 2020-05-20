@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced uses cases for the Stacked Icon UI Pattern. 
 ---
 
 # Stacked Icon UI Pattern Reference

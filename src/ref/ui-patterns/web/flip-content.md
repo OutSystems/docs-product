@@ -1,6 +1,6 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Flip Content UI Pattern.
 ---
 
 # Flip Content UI Pattern Reference

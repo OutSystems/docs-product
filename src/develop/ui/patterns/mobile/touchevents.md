@@ -42,7 +42,7 @@ After following these steps and publishing the module, you can test the pattern 
 |![](images/JS_hide.png) |  var header = document.querySelector(".hearder");%%header.classList.add("hide");%%header.classList.add("header-on-scroll");  |
 |![](images/JS_show.png) |  var header = document.querySelector(".header");%%header.classList.remove("hide");%%header.classList.remove("header-on-scroll"); | 
   
-**Result**:
+**Result**
 
 ![](images/TouchEvents_EndResult.gif)
 
@@ -50,11 +50,11 @@ After following these steps and publishing the module, you can test the pattern 
 
 |**Property** |  **Description** |
 |---|---| 
-| WidgetId  |  This is the element that responds to the touch you configure.  | 
+| WidgetId  |  This is the element that responds to the touch you configure.| 
 
 ## Compatibility with other patterns
 
-There might be conflicts with any pattern with touch events used together with this pattern (unless the code is altered to expect this behavior).
+There might be conflicts with any pattern with touch events (unless the code is altered to expect this behavior).
 
 ## Samples
 

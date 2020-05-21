@@ -38,12 +38,12 @@ After following these steps and publishing the module, you can test the pattern 
   
 ## Compatibility with other patterns
 
-There might be conflicts with any pattern with touch events (unless the code is altered to support the behavior). For example, using the sidebar ID  instead of a container in the previous example.
+There might be conflicts with any pattern with touch events (unless the code is altered to support the behavior). For example, using the sidebar ID instead of a container in the previous example.
 
   * Horizontal Scroll 
   * [Carousel](<carousel.md>)
-  * [TouchEvents](<touchevents.md>)
-  * [StackedCards](<stackedcards.md>)
+  * [Touch Events](<touchevents.md>)
+  * [Stacked Cards](<stackedcards.md>)
   * Notification 
   * Sidebar 
 

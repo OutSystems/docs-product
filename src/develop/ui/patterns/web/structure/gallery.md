@@ -25,13 +25,15 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
 1. Add the required content to the Gallery widget. 
 
-    In this example, we add images by dragging the Image widget into the Gallery widget and selecting an image from the OutSystems UI images. You can add as many as required.
+    By default, the Gallery widget expects a list.
+
+    ![](<images/gallery-image-1.png>)
+
+     To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content. 
+
+    In this example, we delete the list and add images by dragging the Image widget into the Gallery widget and selecting an image from the OutSystems UI images. You can add as many as required.
 
     ![](<images/gallery-image-10.png>)
-  
-    To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content. 
-    
-    ![](<images/gallery-image-1.png>)
 
 1. On the **Properties** tab, you can set the number of items to display on each row for different device types.
     

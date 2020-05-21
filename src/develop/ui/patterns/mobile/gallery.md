@@ -19,20 +19,25 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     ![](<images/gallerymob-image-9.png>)
 
-    By default, the Gallery widget contains a list.
+    By default, the Gallery widget expects a list. To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content.
 
 1. Add the required content to the Gallery widget. 
+
+   By default, the Gallery widget expects a list. 
+
+    ![](<images/gallerymob-image-13.png>)
+
+    To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content.
 
     In this example, we delete the list and add images to the Gallery widget. 
 
    ![](<images/gallerymob-image-10.png>)
-
-1. On the Element tree, select the Image widget, and on the **Properties** tab, from the Image drop-down, select or import the image you want in the Gallery.
+ 
+1. On the Element tree, select the Image widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Gallery.
 
     Note: In this example, the image property Type is set to **Local** image. You can also add External and Binary Data images. 
 
    ![](<images/gallerymob-image-11.png>)
-
   
 1. On the **Properties** tab, set the relevant (optional) properties, for example, the number of items you want to display on each device and the space between each item (GutterSize).
 

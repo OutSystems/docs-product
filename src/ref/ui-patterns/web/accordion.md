@@ -10,6 +10,7 @@ summary: Advanced use cases for the Accordion UI Pattern.
 ![](<images/accordion-image-3.png>)
 
 ## CSS Selectors
+
 | **Element** |  **CSS Class** |  **Description**  |
 | --- | --- | --- |
 | .accordion-item | .accordion-item.is--open |  When AccordionItem is Open  |
@@ -43,6 +44,7 @@ It is possible to change the arrow position on AccordionItems by using custom CS
     padding-left: var(--space-base);
 }
 ```
+
 ![](<images/accordion-image-5.png>)
 
 ### Add margin between each Accordion Item
@@ -63,6 +65,7 @@ You need to use custom CSS to add a margin between each Accordion Item. To do th
     margin-bottom: var(--space-base);
 }
 ```
+
 ![](<images/accordion-image-6.png>)
 
 ## Notes
@@ -70,6 +73,3 @@ You need to use custom CSS to add a margin between each Accordion Item. To do th
 Line Separator from ListRecords should be None.
 
 ![](<images/accordion-image-7.png>)
-
-
-

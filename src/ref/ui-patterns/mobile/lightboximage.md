@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced use cases for the Lightbox Image UI Pattern
+summary: Advanced use cases for the Lightbox Image UI Pattern.
 ---
 
 # Lightbox Image Reference

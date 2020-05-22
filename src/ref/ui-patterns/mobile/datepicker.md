@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced use cases for the Date Picker UI Pattern
+summary: Advanced use cases for the Date Picker UI Pattern.
 ---
 
 # Date Picker Reference

@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: 
 ---
 
-# Gallery Pattern
+# Gallery
 
 The Gallery pattern
 displays content (such as cards) in a specific set of columns, configurable

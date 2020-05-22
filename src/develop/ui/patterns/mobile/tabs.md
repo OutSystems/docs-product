@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: 
 ---
 
-# Tabs Pattern
+# Tabs
 
 Set of Tabs with placeholders for Title and Content, used to display large sets of information which can be split into different areas, while always remaining a click away. Use this pattern to display large sets of information split into different areas.
 

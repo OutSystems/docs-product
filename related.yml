@@ -901,7 +901,7 @@
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/ButtonGroup.aspx
-         - "OutSystems UI Pattern":
+        - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=12
 - develop/ui/patterns/web/controls/datepicker.md:
     - external:

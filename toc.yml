@@ -906,6 +906,12 @@
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md
                 - href: ref/lang/auto/Class.Text Widget.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md
+            # Patterns
+            - href: ref/interfaces/ui-patterns.md
+            - topics:
+                - href: ref/ui-patterns/mobile/datepicker.md
+                - href: ref/ui-patterns/mobile/lightboximage.md
+                - href: ref/ui-patterns/mobile/columns.md
             # Designing the Layout
             - href: ref/interfaces/designing-the-layout.md
             - topics:
@@ -1002,6 +1008,19 @@
                     - href: ref/lang/auto/Class.Text Widget.final.md
                     - href: ref/lang/auto/Class.Upload Widget.final.md
                     - href: ref/lang/auto/Class.Web Block Widget.final.md
+                # Patterns
+                - href: ref/traditional-web/web-interfaces/ui-patterns.md
+                - topics:
+                    - href: ref/ui-patterns/web/accordion.md
+                    - href: ref/ui-patterns/web/alert.md
+                    - href: ref/ui-patterns/web/balloon.md
+                    - href: ref/ui-patterns/web/buttongroup.md
+                    - href: ref/ui-patterns/web/datepicker.md
+                    - href: ref/ui-patterns/web/dropdown.md
+                    - href: ref/ui-patterns/web/fileupload.md
+                    - href: ref/ui-patterns/web/loginform.md
+                    - href: ref/ui-patterns/web/timepicker.md
+                    - href: ref/ui-patterns/web/video.md
                 # Designing the Layout
                 - href: ref/traditional-web/web-interfaces/designing-the-layout/intro.md
                 - topics:

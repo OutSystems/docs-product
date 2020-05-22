@@ -25,7 +25,7 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
 1. Add the required content to the Columns widget, for example, [counters](../../../../develop/ui/patterns/web/numbers/counter.md).
 
-1. On the **Properties** tab, you can customize the Column's look and feel by setting any of the (optional) properties, for example, the size of the space between each of the columns (GutterSIze), and in what order the columns display on different devices. 
+1. On the **Properties** tab, you can customize the Column's look and feel by setting any of the (optional) properties, for example, the size of the space between each of the columns (GutterSize), and in what order the columns display on different devices. 
 
      ![](images/columnsmob-image-2.png)
 

@@ -31,6 +31,7 @@ summary: Advanced use cases for the Time Picker UI Pattern.
     ![](<images/timepicker-image-1.png>)
 
 1. Set a variable of type Time to the input.
+
 1. Set the StartTime Parameter to a variable Time.
 
     ![](<images/timepicker-image-3.png>)
@@ -66,6 +67,7 @@ summary: Advanced use cases for the Time Picker UI Pattern.
     ![](<images/timepicker-image-1.png>)
 
 1. Set a variable of type Time to the input.
+
 1. Click the plus before the AdvancedFormat parameter.
 
     ![](<images/timepicker-image-9.png>)
@@ -101,8 +103,3 @@ summary: Advanced use cases for the Time Picker UI Pattern.
 1. Publish and test.
 
     ![](<images/timepicker-image-13.png>)
-
-
-
-
-

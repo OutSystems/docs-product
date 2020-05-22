@@ -85,13 +85,13 @@ DateTimeToDate(Events.DateTime) = Date
 | MaxDate (Date Time): Optional  |  Days after this date will be disabled.  |   
 | InitialDate (Date Time): Optional |  The initially selected day for the Date Picker. If not set, it will be the current day by default.  | 
 | ShowWeekNumbers (Boolean): Optional  | If True, the week number is displayed on the left side of the Date Picker. If False, the week number is not dispalyed. This is the default. |  
-| FirstWeekDay (Integer): Optional  |  Defines which weekday is displayed first.<p><ul><li>0: Sunday</li> <li>1: Monday (default)</li><li>2: Tuesday</li> <li>3: Wednesday</li><li>4: Thursday</li><li>5: Friday</li><li>6: Saturday</li> | 
+| FirstWeekDay (Integer): Optional  |  Defines which weekday is displayed first.<p><ul><li>0: Sunday</li> <li>1: Monday (default)</li><li>2: Tuesday</li> <li>3: Wednesday</li><li>4: Thursday</li><li>5: Friday</li><li>6: Saturday</li></ul></p> | 
 | ShowTime (Boolean): Optional  | If True, a time picker is displayed below the Date Picker. If False, there is no time picker displayed. This is the default. |   
 | Show24HourFormat (boolean) | If True, the time picker is displayed in a 24-hour format. This is the default. If False, the time picker is displayed in a 12-hour format. |  
 | DisabledDaysList (Date Time List): Optional  |  Receives a List of DateTime records that will be disabled on the DatePicker. If this parameter is not set, all days between the MinDate and MaxDate are enabled. No default value.  |  
-| DisabledWeekDays (Text): Optional  |  String containing disabled weekdays.<p><ul><li>0: Sunday </li><li>1: Monday </li><li>2: Tuesday </li><li>3: Wednesday </li><li>4: Thursday</li><li> 5: Friday </li><li>6: Saturday </li><p>Example </p><ul><li>_Blank_ - All weekdays are active. </li><li>_"0,5"_ - Sunday and Friday are disabled.</li></ul> | 
+| DisabledWeekDays (Text): Optional  |  String containing disabled weekdays.<p><ul><li>0: Sunday </li><li>1: Monday </li><li>2: Tuesday </li><li>3: Wednesday </li><li>4: Thursday</li><li> 5: Friday </li><li>6: Saturday </li></ul></p><p>Example<ul><li>_Blank_ - All weekdays are active. </li><li>_"0,5"_ - Sunday and Friday are disabled.</li></ul></p> | 
 | SelectInterval (Boolean): Optional |  Allows the selection between two dates. If True, the Block Event "On Select" has the values for both parameters.  |   
 | StartEmpty (Boolean): Optional |  Defines whether the input for the Date Picker starts as empty.   | 
-| DateFormat (Text): Optional| Defaults to the date format defined in the server configuration. The default is the server date format. <p>Examples</p><ul><li>DD/MM/YYYY - 15/05/2020 </li> <li>MM/DD/YYYY - 05/15/2020</li><li>DD MMM YYYY - 15 May 2020</li></ul> |
+| DateFormat (Text): Optional| Defaults to the date format defined in the server configuration. The default is the server date format. <p>Examples<ul><li>DD/MM/YYYY - 15/05/2020 </li> <li>MM/DD/YYYY - 05/15/2020</li><li>DD MMM YYYY - 15 May 2020</li></ul></p> |
 |ShowTodayButton (Boolean): Optional | If True, the Today button is displayed. If False, the Today Button is not displayed. This is the default. |
 |AdvancedFormat (Text): Optional | Allows fors more options beyond what is provided through the inputs. |

@@ -1159,6 +1159,11 @@
 # UI Mobile Patterns
 - develop/ui/patterns/mobile/carousel.md:
     - ref/ui-patterns/mobile/carousel-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
 - develop/ui/patterns/mobile/lightboximage.md:
     - ref/ui-patterns/mobile/lightboximage.md
     - external:
@@ -1176,9 +1181,6 @@
     - ref/ui-patterns/mobile/columns.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
-        - "OutSystems UI Pattern": 
-           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=21

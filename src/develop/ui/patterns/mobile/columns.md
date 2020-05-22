@@ -19,15 +19,17 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
     ![](images/columnsmob-image-1.png)
 
-1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. The following example uses the Columns 3 widget.
+1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. The following example uses the Columns 2 widget.
 
       ![](images/columnsmob-image-3.png)
 
-1. Add the required content to the Columns widget, for example, [counters](../../../../develop/ui/patterns/web/numbers/counter.md).
+1. Add the required content to the Columns widget. In this example we add an image and text.
+
+    ![](images/columnsmob-image-4.png)
 
 1. On the **Properties** tab, you can customize the Column's look and feel by setting any of the (optional) properties, for example, the size of the space between each of the columns (GutterSize), and in what order the columns display on different devices. 
 
-     ![](images/columnsmob-image-2.png)
+     ![](images/columnsmob-image-4.png)
 
 1. After following these steps, and publishing the module, you can test the pattern in your app. 
 

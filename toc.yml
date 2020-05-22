@@ -925,9 +925,10 @@
             - href: ref/interfaces/ui-patterns.md
             - topics:
                 - href: ref/ui-patterns/mobile/carousel-mobile.md
+                - href: ref/ui-patterns/mobile/columns.md
                 - href: ref/ui-patterns/mobile/datepicker.md
                 - href: ref/ui-patterns/mobile/lightboximage.md
-                - href: ref/ui-patterns/mobile/columns.md
+                - href: ref/ui-patterns/mobile/splitscreen.md                
             # Designing the Layout
             - href: ref/interfaces/designing-the-layout.md
             - topics:

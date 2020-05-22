@@ -55,6 +55,7 @@
   * ![](../images/ServiceStudio.Framework/Images/If.ico?width=16) [If Widget](<Class.If%20Widget.md>) `4`
   * ![](../images/ServiceStudio.Framework/Images/Image.ico?width=16) [Image](<Class.Image.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/Image.ico?width=16) [Image Widget](<Class.Image%20Widget.md>) `2`
+  * ![](../images/empty.png?width=16) [InitialMetadata](<Class.InitialMetadata.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter](<Class.Input%20Parameter.md>) `11`
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (Deprecated SOAP)](<Class.Input%20Parameter%20(Deprecated%20SOAP).md>) `11`
   * ![](../images/ServiceStudio.Framework/Images/InputPassword.ico?width=16) [Input Password Widget](<Class.Input%20Password%20Widget.md>) `2`
@@ -155,35 +156,34 @@
 
 ### Plugins
 
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/AdvancedHtml.ico"/> [HTML Element](<ServiceStudio.Plugin.NRWidgets.AdvancedHtml.md>) `NRWidgets.AdvancedHtml`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Button.ico"/> [Button](<ServiceStudio.Plugin.NRWidgets.Button.md>) `NRWidgets.Button`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/ButtonGroup.ico"/> [Button Group](<ServiceStudio.Plugin.NRWidgets.ButtonGroup.md>) `NRWidgets.ButtonGroup`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/RadioButton.ico"/> [Radio Button](<ServiceStudio.Plugin.NRWidgets.RadioButton.md>) `NRWidgets.RadioButton`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/ButtonGroupItem.ico"/> [Button Group Item](<ServiceStudio.Plugin.NRWidgets.ButtonGroupItem.md>) `NRWidgets.ButtonGroupItem`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/CellHeader.ico"/> [Header Cell](<ServiceStudio.Plugin.NRWidgets.HeaderCell.md>) `NRWidgets.HeaderCell`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Popup.ico"/> [Popup](<ServiceStudio.Plugin.NRWidgets.Popup.md>) `NRWidgets.Popup`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Cell.ico"/> [Row Cell](<ServiceStudio.Plugin.NRWidgets.RowCell.md>) `NRWidgets.RowCell`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/TableRecords.ico"/> [Table](<ServiceStudio.Plugin.NRWidgets.TableRecords.md>) `NRWidgets.TableRecords`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/ListItem.ico"/> [List Item](<ServiceStudio.Plugin.NRWidgets.ListItem.md>) `NRWidgets.ListItem`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/ListSwipeLeft.ico"/> [List Action](<ServiceStudio.Plugin.NRWidgets.ListItemAction.md>) `NRWidgets.ListItemAction`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Icon.ico"/> [Icon](<ServiceStudio.Plugin.NRWidgets.Icon.md>) `NRWidgets.Icon`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Upload.ico"/> [Upload](<ServiceStudio.Plugin.NRWidgets.Upload.md>) `NRWidgets.Upload`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Popover.ico"/> [Popover Menu](<ServiceStudio.Plugin.NRWidgets.Popover.md>) `NRWidgets.Popover`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Checkbox.ico"/> [Checkbox](<ServiceStudio.Plugin.NRWidgets.Checkbox.md>) `NRWidgets.Checkbox`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Switch.ico"/> [Switch](<ServiceStudio.Plugin.NRWidgets.Switch.md>) `NRWidgets.Switch`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Dropdown.ico"/> [Dropdown](<ServiceStudio.Plugin.NRWidgets.Dropdown.md>) `NRWidgets.Dropdown`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/List.ico"/> [List](<ServiceStudio.Plugin.NRWidgets.List.md>) `NRWidgets.List`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Container.ico"/> [Container](<ServiceStudio.Plugin.NRWidgets.Container.md>) `NRWidgets.Container`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Dropdown.ico"/> [Dropdown](<ServiceStudio.Plugin.NRWidgets.Dropdown.md>) `NRWidgets.Dropdown`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Expression.ico"/> [Expression](<ServiceStudio.Plugin.NRWidgets.Expression.md>) `NRWidgets.Expression`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Form.ico"/> [Form](<ServiceStudio.Plugin.NRWidgets.Form.md>) `NRWidgets.Form`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/CellHeader.ico"/> [Header Cell](<ServiceStudio.Plugin.NRWidgets.HeaderCell.md>) `NRWidgets.HeaderCell`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Icon.ico"/> [Icon](<ServiceStudio.Plugin.NRWidgets.Icon.md>) `NRWidgets.Icon`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Image.ico"/> [Image](<ServiceStudio.Plugin.NRWidgets.Image.md>) `NRWidgets.Image`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Link.ico"/> [Link](<ServiceStudio.Plugin.NRWidgets.Link.md>) `NRWidgets.Link`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/TextArea.ico"/> [Text Area](<ServiceStudio.Plugin.NRWidgets.TextArea.md>) `NRWidgets.TextArea`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Input.ico"/> [Input](<ServiceStudio.Plugin.NRWidgets.Input.md>) `NRWidgets.Input`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/AdvancedHtml.ico"/> [HTML Element](<ServiceStudio.Plugin.NRWidgets.AdvancedHtml.md>) `NRWidgets.AdvancedHtml`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Label.ico"/> [Label](<ServiceStudio.Plugin.NRWidgets.Label.md>) `NRWidgets.Label`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Link.ico"/> [Link](<ServiceStudio.Plugin.NRWidgets.Link.md>) `NRWidgets.Link`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/List.ico"/> [List](<ServiceStudio.Plugin.NRWidgets.List.md>) `NRWidgets.List`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/ListItem.ico"/> [List Item](<ServiceStudio.Plugin.NRWidgets.ListItem.md>) `NRWidgets.ListItem`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/ListSwipeLeft.ico"/> [List Action](<ServiceStudio.Plugin.NRWidgets.ListItemAction.md>) `NRWidgets.ListItemAction`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Popover.ico"/> [Popover Menu](<ServiceStudio.Plugin.NRWidgets.Popover.md>) `NRWidgets.Popover`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Popup.ico"/> [Popup](<ServiceStudio.Plugin.NRWidgets.Popup.md>) `NRWidgets.Popup`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/RadioButton.ico"/> [Radio Button](<ServiceStudio.Plugin.NRWidgets.RadioButton.md>) `NRWidgets.RadioButton`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/RadioGroup.ico"/> [Radio Group](<ServiceStudio.Plugin.NRWidgets.RadioGroup.md>) `NRWidgets.RadioGroup`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Cell.ico"/> [Row Cell](<ServiceStudio.Plugin.NRWidgets.RowCell.md>) `NRWidgets.RowCell`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Switch.ico"/> [Switch](<ServiceStudio.Plugin.NRWidgets.Switch.md>) `NRWidgets.Switch`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/TableRecords.ico"/> [Table](<ServiceStudio.Plugin.NRWidgets.TableRecords.md>) `NRWidgets.TableRecords`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/TextArea.ico"/> [Text Area](<ServiceStudio.Plugin.NRWidgets.TextArea.md>) `NRWidgets.TextArea`
+  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Upload.ico"/> [Upload](<ServiceStudio.Plugin.NRWidgets.Upload.md>) `NRWidgets.Upload`
   * <img width="16" height="16" src="../images/Plugins/REST/rest-consume.ico"/> [REST API](<ServiceStudio.Plugin.REST.RestClient.md>) `REST.RestClient`
-  * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [Static Entity](<ServiceStudio.Plugin.REST.RestStaticEntity.md>) `REST.RestStaticEntity`
-  * ![](../images/ServiceStudio.Framework/Images/EntityAttribute.ico?width=16) [Attribute](<ServiceStudio.Plugin.REST.RestStaticEntityAttribute.md>) `REST.RestStaticEntityAttribute`
   * ![](../images/ServiceStudio.Framework/Images/Action.ico?width=16) [REST API Method](<ServiceStudio.Plugin.REST.RestAction.md>) `REST.RestAction`
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (REST API Method)](<ServiceStudio.Plugin.REST.RestActionInput.md>) `REST.RestActionInput`
   * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter (REST API Method)](<ServiceStudio.Plugin.REST.RestActionOutput.md>) `REST.RestActionOutput`
@@ -192,6 +192,8 @@
   * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter (REST API Callback)](<ServiceStudio.Plugin.REST.RestCallbackActionFlowOutput.md>) `REST.RestCallbackActionFlowOutput`
   * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure (REST API Callback)](<ServiceStudio.Plugin.REST.RestCallbackStructure.md>) `REST.RestCallbackStructure`
   * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute (REST API Callback)](<ServiceStudio.Plugin.REST.RestCallbackStructureAttribute.md>) `REST.RestCallbackStructureAttribute`
+  * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [Static Entity](<ServiceStudio.Plugin.REST.RestStaticEntity.md>) `REST.RestStaticEntity`
+  * ![](../images/ServiceStudio.Framework/Images/EntityAttribute.ico?width=16) [Attribute](<ServiceStudio.Plugin.REST.RestStaticEntityAttribute.md>) `REST.RestStaticEntityAttribute`
   * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure (REST API Method)](<ServiceStudio.Plugin.REST.RestStructure.md>) `REST.RestStructure`
   * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute (REST API Method)](<ServiceStudio.Plugin.REST.RestStructureAttribute.md>) `REST.RestStructureAttribute`
   * <img width="16" height="16" src="../images/Plugins/RESTService/rest-expose.ico"/> [REST API](<ServiceStudio.Plugin.RESTService.RestService.md>) `RESTService.RestService`
@@ -213,21 +215,30 @@
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (SAP Callback)](<ServiceStudio.Plugin.SAP.SapCallbackActionFlowInput.md>) `SAP.SapCallbackActionFlowInput`
   * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure (SAP Remote Function)](<ServiceStudio.Plugin.SAP.SapStructure.md>) `SAP.SapStructure`
   * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute (SAP Remote Function)](<ServiceStudio.Plugin.SAP.SapStructureAttribute.md>) `SAP.SapStructureAttribute`
-  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (SAP Password)](<ServiceStudio.Plugin.SAP.SapDynamicPasswordInput.md>) `SAP.SapDynamicPasswordInput`
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (SAP Username)](<ServiceStudio.Plugin.SAP.SapDynamicLoginInput.md>) `SAP.SapDynamicLoginInput`
-  * <img width="16" height="16" src="../images/Plugins/SOAP/SOAPConsume.ico"/> [SOAP 1.2 Web Service (Consumed)](<ServiceStudio.Plugin.SOAP.SOAPClient.md>) `SOAP.SOAPClient`
-  * ![](../images/ServiceStudio.Framework/Images/Action.ico?width=16) [Web Service Method (Consumed SOAP 1.2)](<ServiceStudio.Plugin.SOAP.SOAPAction.md>) `SOAP.SOAPAction`
-  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (Consumed SOAP 1.2 Method)](<ServiceStudio.Plugin.SOAP.SOAPActionInput.md>) `SOAP.SOAPActionInput`
-  * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter (Consumed SOAP 1.2 Method)](<ServiceStudio.Plugin.SOAP.SOAPActionOutput.md>) `SOAP.SOAPActionOutput`
-  * <img width="16" height="16" src="../images/Plugins/SOAP/Callback.ico"/> [SOAP 1.2 Callback (Consumed SOAP 1.2)](<ServiceStudio.Plugin.SOAP.SOAPCallbackActionFlow.md>) `SOAP.SOAPCallbackActionFlow`
-  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Password Input Parameter (Consumed SOAP 1.2)](<ServiceStudio.Plugin.SOAP.SOAPDynamicPasswordInput.md>) `SOAP.SOAPDynamicPasswordInput`
-  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Username Input Parameter (Consumed SOAP 1.2)](<ServiceStudio.Plugin.SOAP.SOAPDynamicUsernameInput.md>) `SOAP.SOAPDynamicUsernameInput`
-  * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [Static Entity (Consumed SOAP 1.2)](<ServiceStudio.Plugin.SOAP.SOAPStaticEntity.md>) `SOAP.SOAPStaticEntity`
-  * ![](../images/ServiceStudio.Framework/Images/EntityAttribute.ico?width=16) [Static Entity Attribute (Consumed SOAP 1.2)](<ServiceStudio.Plugin.SOAP.SOAPStaticEntityAttribute.md>) `SOAP.SOAPStaticEntityAttribute`
-  * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure (Consumed SOAP 1.2)](<ServiceStudio.Plugin.SOAP.SOAPStructure.md>) `SOAP.SOAPStructure`
-  * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute (Consumed SOAP 1.2)](<ServiceStudio.Plugin.SOAP.SOAPStructureAttribute.md>) `SOAP.SOAPStructureAttribute`
+  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (SAP Password)](<ServiceStudio.Plugin.SAP.SapDynamicPasswordInput.md>) `SAP.SapDynamicPasswordInput`
+  * <img width="16" height="16" src="../images/Plugins/SOAP/SOAPConsume.ico"/> [SOAP Web Service (Consumed)](<ServiceStudio.Plugin.SOAP.SOAPClient.md>) `SOAP.SOAPClient`
+  * ![](../images/ServiceStudio.Framework/Images/Action.ico?width=16) [Web Service Method (Consumed)](<ServiceStudio.Plugin.SOAP.SOAPAction.md>) `SOAP.SOAPAction`
+  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (Consumed SOAP Method)](<ServiceStudio.Plugin.SOAP.SOAPActionInput.md>) `SOAP.SOAPActionInput`
+  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter](<ServiceStudio.Plugin.SOAP.SOAPActionInputPolymorphic.md>) `SOAP.SOAPActionInputPolymorphic`
+  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter](<ServiceStudio.Plugin.SOAP.SOAPActionInputWildcard.md>) `SOAP.SOAPActionInputWildcard`
+  * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter (Consumed SOAP Method)](<ServiceStudio.Plugin.SOAP.SOAPActionOutput.md>) `SOAP.SOAPActionOutput`
+  * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter](<ServiceStudio.Plugin.SOAP.SOAPActionOutputPolymorphic.md>) `SOAP.SOAPActionOutputPolymorphic`
+  * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter](<ServiceStudio.Plugin.SOAP.SOAPActionOutputWildcard.md>) `SOAP.SOAPActionOutputWildcard`
+  * <img width="16" height="16" src="../images/Plugins/SOAP/Callback.ico"/> [SOAP Callback (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPCallbackActionFlow.md>) `SOAP.SOAPCallbackActionFlow`
+  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Password Input Parameter (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPDynamicPasswordInput.md>) `SOAP.SOAPDynamicPasswordInput`
+  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Username Input Parameter (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPDynamicUsernameInput.md>) `SOAP.SOAPDynamicUsernameInput`
+  * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [Static Entity (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPStaticEntity.md>) `SOAP.SOAPStaticEntity`
+  * ![](../images/ServiceStudio.Framework/Images/EntityAttribute.ico?width=16) [Static Entity Attribute (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPStaticEntityAttribute.md>) `SOAP.SOAPStaticEntityAttribute`
+  * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [Entity](<ServiceStudio.Plugin.SOAP.SOAPStaticEntityPolymorphic.md>) `SOAP.SOAPStaticEntityPolymorphic`
+  * ![](../images/ServiceStudio.Framework/Images/EntityAttribute.ico?width=16) [Entity Attribute](<ServiceStudio.Plugin.SOAP.SOAPStaticEntityAttributePolymorphic.md>) `SOAP.SOAPStaticEntityAttributePolymorphic`
+  * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPStructure.md>) `SOAP.SOAPStructure`
+  * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPStructureAttribute.md>) `SOAP.SOAPStructureAttribute`
+  * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure](<ServiceStudio.Plugin.SOAP.SOAPStructurePolymorphic.md>) `SOAP.SOAPStructurePolymorphic`
+  * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute](<ServiceStudio.Plugin.SOAP.SOAPStructureAttributePolymorphic.md>) `SOAP.SOAPStructureAttributePolymorphic`
+  * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute](<ServiceStudio.Plugin.SOAP.SOAPStructureAttributeWildcard.md>) `SOAP.SOAPStructureAttributeWildcard`
+  * <img width="16" height="16" src="../images/Plugins/Widgets/EditableTable.ico"/> [Editable Table Widget](<ServiceStudio.Plugin.Widgets.EditableTable.md>) `Widgets.EditableTable`
   * <img width="16" height="16" src="../images/Plugins/Widgets/EditableTableCell.ico"/> [Cell Widget](<ServiceStudio.Plugin.Widgets.EditableTableCell.md>) `Widgets.EditableTableCell`
   * <img width="16" height="16" src="../images/Plugins/Widgets/Form.ico"/> [Form Widget](<ServiceStudio.Plugin.Widgets.Form.md>) `Widgets.Form`
-  * <img width="16" height="16" src="../images/Plugins/Widgets/EditableTable.ico"/> [Editable Table Widget](<ServiceStudio.Plugin.Widgets.EditableTable.md>) `Widgets.EditableTable`
   * <img width="16" height="16" src="../images/Plugins/Widgets/Label.ico"/> [Label Widget](<ServiceStudio.Plugin.Widgets.Label.md>) `Widgets.Label`
 

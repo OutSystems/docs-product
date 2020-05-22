@@ -4,6 +4,7 @@ summary: Advanced use cases for the Date Picker UI Pattern
 ---
 
 # Date Picker UI Pattern Reference
+
 ## Layout and Classes
 
 ![](<images/datepicker-image-3.png?width=600>)

@@ -73,6 +73,29 @@ If the deployment is **aborted**, a "Retry Plan" link appears in the deployment 
 [Check here](../../deliver-mobile/mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build) all the situations that require the user to install a new application package.
 
 
+## Deploying to a different target environment { #change-target-environment }
+
+If you have several [pipelines](https://www.outsystems.com/evaluation-guide/outsystems-cloud-architecture/#2) in your OutSystems infrastructure you may need to choose a specific target environment, belonging to a different pipeline, when deploying applications.
+
+To change the target environment of a deployment do the following:
+
+1. Click the **Deploy...** button on the right of the source environment name.  
+
+    For example, if we want to deploy an app from **Development** to **Quality P2**, the source environment is **Development**.
+
+    ![](images/deploy-dev-quality-p1-lt.png)
+
+1. Press **Cancel** when asked to choose one or more applications to deploy. You will select the desired target environment first.
+
+1. Open the target environment dropdown by clicking its name (**Quality P1** in our example).
+
+    ![](images/deploy-choose-target-environment-lt.png)
+
+1. Select the desired target environment in the pop-up menu. In our example, we selected **Change environment to Quality P2**.
+
+1. Proceed as described in the previous section by adding apps to the deployment plan, validating the plan, and starting the deployment.
+
+
 ## Refresh Applications in the Deployment Plan { #refresh }
 
 After creating a deployment plan and adding applications to it, OutSystems notifies you if there are any relevant changes in the source or target environments related to the applications included in the plan.

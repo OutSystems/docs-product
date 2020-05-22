@@ -1,5 +1,5 @@
 ---
-summary: Develop a Progressive Web App (PWA) by creating a Mobile App and toggling the feature on. Try it out in Android and iOS.
+summary: Develop a Progressive Web App (PWA) by creating a Mobile App and toggling on the option to distribute the app as PWA. Try your app in Android and iOS.
 tags: support-application_development; runtime-mobile;
 ---
 
@@ -45,7 +45,11 @@ Create a Mobile App and turn on the toggle **Distribute as PWA** in the app deta
 
 You don't have to republish your app after changing the value of the **Distribute as PWA**. This change is applied in real-time.
 
-If you stage your app to another environment during the early access, for example to a production server, you need to connect to the environment with Service Studio and activate the PWA for that environment.
+<div class="warning" markdown="1">
+
+When you develop a progressive web app, keep in mind that mobile best practices apply, particularly about [designing a lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage).
+
+</div>
 
 ## Try out your progressive web app
 
@@ -75,15 +79,9 @@ Follow these steps to install and run your PWA on an iOS device.
 
 <div class="info" markdown="1">
 
-Due to a bug in iOS, the PWA is not working in the iOS versions 13.0 to 13.2. Use iOS 13.3 or later instead.
+Due to a bug in iOS, PWAs are not working in the iOS versions 13.0 to 13.2. Use iOS 13.3 or later instead.
 
 </div>
-
-If you're running iOS 13 and later, running your PWA on iOS requires enabling the Web SQL settings. Go to **Settings** > **Safari** > **Advanced** > **Experimental Features** > and make sure **Disable Web SQL** is off.
-
-![WebSQL Settings in Safari iOS](images/pwa-ios-websql-settings.png?width=300)
-
-Now you can visit the URL and install your app.
 
 1. Visit the app URL in Safari.
 2. Tap the Share button. The share menu opens.
@@ -129,6 +127,12 @@ The manifest is generated automatically, and you don't have to use it unless you
 
 ### Overriding the manifest settings {#override-pwa-manifest}
 
+<div class="warning" markdown="1">
+
+We identified an issue that prevents LifeTime to override PWA Extensibility Configurations. We're working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
+
+</div>
+
 <div class="info" markdown="1">
 
 Keep in mind that the LifeTime PWA manifest overrides the manifest in Service Studio.
@@ -137,8 +141,8 @@ Keep in mind that the LifeTime PWA manifest overrides the manifest in Service St
 
 Using the manifest overrides the values you set in Service Studio. You have to use the manifest in the `PWAManifest` section of the JSON of the **Extensibility Configurations** field. You can edit the manifest in two places:
 
-* In Service Studio, where the manifest overrides any settings you have in UI **in all environments**. Edit the JSON manifest in **Extensibility Configurations** field of the module properties.
-* In LifeTime, where the manifest overrides any settings you have in UI **in the current environment only**. You can find the **Extensibility Configurations** field in the **Applications** tab, under the **Advanced** section.
+* In Service Studio, where the manifest overrides all UI settings **in all environments**. Edit the JSON manifest in the **Extensibility Configurations** field of the module properties.
+* In LifeTime, where the manifest overrides all UI settings **in the current environment only**. Find the **Extensibility Configurations** field in **Applications** > **(app name)** > **Settings** > **Advanced** > **Extensibility Configurations**
 
 ### Manifest resources and sample JSON
 
@@ -160,6 +164,8 @@ You can use [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) 
    }
 }
 ```
+
+You should be able to use the JSON for both PWA and plugins.
 
 ## Plugins in PWA {#plugins}
 
@@ -183,3 +189,31 @@ Here are some notes that can help you in troubleshooting the PWA feature.
 Note that you need to republish your apps after the Platform Server upgrade for the new features to work correctly, as instructed in the Platform Server upgrade list. If you haven't done it already, republish the apps in the factory and then turn on the toggle **Distribute as PWA**.
 
 There is a potential workaround for the PWA toggle button to work without the republishing step, which is to republish the current module once and then try turning on the toggle **Distribute as PWA**. However, keep in mind that republishing the apps after the upgrade is a mandatory step, and skipping it can cause unintended effects.
+
+### There are runtime errors
+
+Try deleting the local data of the app. Locate the settings in the browser, and clear the data for the domain from which the app was installed. In Chrome go to **Settings** > **Site Settings** > **Cookies and site data** > **See all cookies and site data**, search for the domain and clear the data.
+
+### Extensibility Configurations override is not working when applied in LifeTime
+
+There's an issue with applying Extensibility Configurations from LifeTime to override the manifest. The team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
+
+### PWA doesn't install in iOS
+
+If you're using Platform Server 11.7 or earlier **and** iOS 13 and later, you should either:
+
+* Upgrade to Platform Server 11.8 or later
+* Disable Web SQL. Go to **Settings** > **Safari** > **Advanced** > **Experimental Features** > and make sure **Disable Web SQL** is off.
+    
+    ![WebSQL Settings in Safari iOS](images/pwa-ios-websql-settings.png?width=250)
+
+
+### PWA doesn't work in iOS
+
+One of the reasons why your PWA is not working in iOS might be because of an iOS bug that prevents PWAs from running correctly in the iOS versions 13.0 to 13.2. 
+
+To fix this issue, use iOS 13.3 or later instead.
+
+### PWA is slow and queries take too long to execute
+
+If your PWA performs poorly and queries take too long to execute, your local storage model might be too complex or the amount of data that the app needs to handle is too high. See [Design a lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage) for recommendations.

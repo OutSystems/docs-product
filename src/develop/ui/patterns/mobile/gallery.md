@@ -19,7 +19,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     ![](<images/gallerymob-image-9.png>)
 
-    By default, the Gallery widget expects a list. To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content.
+    
 
 1. Add the required content to the Gallery widget. 
 

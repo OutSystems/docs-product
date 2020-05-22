@@ -15,17 +15,19 @@ You can use the Navigation Bar UI Pattern to organize content and enable the use
 
     The Navigation Bar widget is displayed.
 
-      ![](images/navigationbar-image-6.png)
+    ![](images/navigationbar-image-6.png)
 
 1. From the Toolbox, drag the Navigation Bar widget into the Main Content area of your application's screen.
 
-      ![](images/navigationbar-image-1.png)
+    ![](images/navigationbar-image-1.png)
 
     By default, the Navigation Bar widget contains a Navigation Bar Item widget and a Navigation Bar SubItem widget. You can add or delete as many of these widgets as required.
 
-1. Add the required content to the Navigation Bar Item and Navigation Bar SubItem placeholders. In this example we add some text by typing directly into each of the placeholders.
+1. Add the required content to the Navigation Bar Item and Navigation Bar SubItem placeholders. 
 
-    ![](images/navigationbar-image-8.png)
+    In this example we add the Titles `Phones`, `Audio`, and `Accessories` to the Navigation Bar Item Title placeholders.
+
+    ![](images/navigationbar-image-12.png)
 
 1. On the **Properties** tab, you can customize the Navigation Bar's look and feel by setting any of the optional properties.
 

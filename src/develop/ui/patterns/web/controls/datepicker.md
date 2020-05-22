@@ -59,12 +59,12 @@ For advanced options, you can check the official documentation of the [Pikaday l
 | AdvancedFormat (DatePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters. |
  
 
-### Date Picker Advanced Format information
+### Date Picker advanced format information
 
 | **Property** |  **Description** | 
 |---|---|
-| EventsList | A list of events (type Date Time) | Date Time List | False | none |
-| AdvancedFormatJSON | A string with options such as: `{ disableWeekends: true,  BeginEmpty: true }`. For more advanced options, read the official documentation: https://github.com/dbushell/Pikaday | Date Time List | False | none |
+| EventsList (DateTime List): Optional | A list of events (type Date Time) |
+| AdvancedFormatJSON (DateTime List): Optional | A string with options such as: `{ disableWeekends: true,  BeginEmpty: true }`. For more advanced options, read the official documentation: https://github.com/dbushell/Pikaday  |
 
 
 ![](<images/datepicker-gif-1.gif>)

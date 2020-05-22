@@ -25,11 +25,15 @@ You can use the Navigation Bar UI Pattern to organize content and enable the use
 
 1. Add the required content to the Navigation Bar Item and Navigation Bar SubItem placeholders. 
 
-    In this example we add the Titles `Phones`, `Audio`, and `Accessories` to the Navigation Bar Item Title placeholders.
+    In this example we add `Phones`, `Audio`, and `Accessories` to the Navigation Bar Item **Title** placeholders.
 
-    ![](images/navigationbar-image-12.png)
+    ![](images/navigationbar-image-12.png)   
 
-1. On the **Properties** tab, you can customize the Navigation Bar's look and feel by setting any of the optional properties.
+    We also add links to the Navigation Bar SubItem **Content** placeholders. For each of the links, on the **Properties** tab, we add a link name and title, as well as the link destination.
+    
+    ![](images/navigationbar-image-9.png)   
+
+1. On the **Properties** tab, you can alsocustomize the Navigation Bar's look and feel by setting any of the optional properties.
 
     ![](images/navigationbar-image-3.png)
 

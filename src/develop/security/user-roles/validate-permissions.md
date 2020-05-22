@@ -11,9 +11,12 @@ To restrict end user access to the screens of the application, select the end us
 
 ![Roles](images/Roles1.png)
 
-To validate the permissions of end users to screen elements or actions of the application, use the CheckRole built-in function to determine if the end user has the necessary roles. 
+To validate the permissions of end users to screen elements or actions of an app, use the CheckRole built-in function to determine if the end user has the necessary roles.
 
-At the screen preparation add the CheckRole action
+## In Traditional Web
+
+In the screen Preparation add the **CheckRole** action.
+
 ![Roles_prep](images/Roles_prep.png)
 
 You can use these functions to:
@@ -26,6 +29,6 @@ You can use these functions to:
 
 ![Roles_screen1](images/Roles_screen1.png)
 
-Alternatively, you can use CheckRole as a function directly in if elements. In case you need to check the same permission several times, it is recommended to call the CheckRoles built-in function in screen preparation.
+Alternatively, you can use CheckRole as a function directly in if elements. In case you need to check the same permission several times, call the CheckRoles built-in function in screen preparation.
 
 ![Roles_screen3](images/Roles_screen3.png)

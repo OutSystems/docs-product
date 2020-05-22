@@ -1,9 +1,9 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Time Picker UI Pattern
+summary: Advanced use cases for the Time Picker UI Pattern.
 ---
 
-# Time Picker UI Pattern Reference
+# Time Picker Reference
 
 ## Layout and Classes
 

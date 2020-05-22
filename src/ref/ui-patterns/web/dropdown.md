@@ -3,7 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Dropdown UI Pattern.
 ---
 
-# Dropdown UI Pattern Reference
+# Dropdown Reference
 
 ## Layout and Classes
 

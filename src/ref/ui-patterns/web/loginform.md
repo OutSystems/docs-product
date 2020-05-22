@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Login Form UI Pattern
+summary: Advanced use cases for the Login Form UI Pattern.
 ---
 
 # Login Form Reference

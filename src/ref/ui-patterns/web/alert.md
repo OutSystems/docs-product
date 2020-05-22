@@ -1,9 +1,9 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Alert UI Pattern
+summary: Advanced use cases for the Alert UI Pattern.
 ---
 
-# Alert UI Pattern Reference
+# Alert Reference
 
 ## Layout and Classes
 

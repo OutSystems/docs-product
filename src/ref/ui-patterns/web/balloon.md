@@ -1,9 +1,9 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Balloon UI Pattern
+summary: Advanced use cases for the Balloon UI Pattern.
 ---
 
-# Balloon UI Pattern Reference
+# Balloon Reference
 
 ## Layout and classes
 

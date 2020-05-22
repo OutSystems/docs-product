@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Advanced use cases for the Split Screen UI Pattern
+summary: Advanced use cases for the Split Screen UI Pattern.
 ---
 
 # Split Screen Reference

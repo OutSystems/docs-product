@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Video UI Pattern
+summary: Advanced use cases for the Video UI Pattern.
 ---
 
 # Video Reference

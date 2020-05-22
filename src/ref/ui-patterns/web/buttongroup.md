@@ -1,9 +1,9 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Button Group UI Pattern
+summary: Advanced use cases for the Button Group UI Pattern.
 ---
 
-# Advanced use cases for the Button Group UI Pattern Reference
+# Button Group Reference
 
 ## Layout and Classes
 

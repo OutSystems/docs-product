@@ -1,9 +1,9 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Date Picker UI Pattern
+summary: Advanced use cases for the Date Picker UI Pattern.
 ---
 
-# Date Picker UI Pattern Reference
+# Date Picker Reference
 
 ## Layout and Classes
 

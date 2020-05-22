@@ -24,15 +24,15 @@ This section describes the two cookies used in the authentication mechanism of a
 
 Cookie `nr1<User Provider Name>`:
 
-* The server uses this cookie to enforce session expiration as needed
-* Contains information needed to ensure session authenticity
-* Set as `HttpOnly` (can't be accessed through JavaScript)
+* The server uses the cookie to enforce session expiration as needed.
+* Contains information needed to ensure session authenticity.
+* Its **HttpOnly** flag is set to **true** and the cookie can't be accessed through JavaScript.
 
 Cookie `nr2<User Provider Name>`:
 
-* Provides information to the application code about the user identifier via the built-in function GetUserId()
-* Contains information needed to avoid CSRF attacks
-* Not set as `HttpOnly` (can be accessed through JavaScript) - notice that setting this as `HttpOnly` can lead to an unsupported scenario
+* Provides information to the application code about the user identifier via the built-in function **GetUserId**.
+* Contains information needed to avoid CSRF attacks.
+* Its **HttpOnly** flag is set to **false** and the cookie can be accessed through JavaScript. **Don't change the HttpOnly flag of the nr2 cookie to true, as that can cause unexpected behavior of the apps**. 
 
 ### Verifying Authentication Cookies
 

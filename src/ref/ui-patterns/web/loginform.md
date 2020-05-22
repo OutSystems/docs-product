@@ -7,7 +7,9 @@ summary: Advanced use cases for the Login Form UI Pattern.
 
 ## Layout and Classes
 
-![](<images/loginform-image-1.png>) ![](<images/loginform-image-2.png>)
+![](<images/loginform-image-1.png>)
+
+![](<images/loginform-image-2.png>)
 
 ### Login
 

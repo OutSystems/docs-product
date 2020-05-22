@@ -3,7 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Video UI Pattern
 ---
 
-# Video UI Pattern Reference
+# Video Reference
 
 ## Layout and Classes
 
@@ -38,6 +38,3 @@ summary: Advanced use cases for the Video UI Pattern
 1. Publish and test.
 
     ![](<images/video-gif-1.gif>)
-
-
-

@@ -40,7 +40,7 @@ summary: Advanced use cases for the Date Picker UI Pattern
 1. Add `{ BeginEmpty: true }` in the AdvancedFormatJSON. 
 
 
-![](<images/datepicker-image-11.png>)
+    ![](<images/datepicker-image-11.png>)
 
 ### Have a flat datepicker
 
@@ -54,7 +54,7 @@ summary: Advanced use cases for the Date Picker UI Pattern
 
 1. To use events to pick the chosen date, use OnSelect instead of OnClose.
 
-![](<images/datepicker-image-10.png>)
+    ![](<images/datepicker-image-10.png>)
 
 ### Add Events
 

@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Splits the screen vertically in two independent panels.
 ---
 
-# Split Screen Pattern
+# Split Screen
 
 In a tablet, the Split Screen pattern splits the screen vertically in two independent panels. The width of the left panel can be configured in a percentage of the screen. The Pattern adapts gracefully to a phone layout by showing only one panel at a time.
 

@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced use cases for the Lightbox Image UI Pattern
 ---
 
-# Lightbox Image UI Pattern Reference
+# Lightbox Image Reference
 
 ## Adding a Filter to an Open Image
 

@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced use cases for the Columns UI Pattern
 ---
 
-# Columns UI Pattern Reference
+# Columns Reference
 
 ## Layout and Classes
 

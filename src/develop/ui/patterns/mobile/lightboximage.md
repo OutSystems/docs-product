@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Displays an image thumbnail that can be clicked to open a fullscreen image.
 ---
 
-# Lightbox Image Pattern
+# Lightbox Image
 
 You can use the Lightbox Image UI Pattern to open smaller thumbnail images in full screen mode. This UI pattern is often used when creating an image gallery, allowing you to navigate through each of the images and view them in more detail.
 

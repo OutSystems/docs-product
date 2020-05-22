@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Date Picker allows the end user to select a single or a range of dates using a calendar.
 ---
 
-# Date Picker Pattern
+# Date Picker
 
 You can use the Date Picker UI Pattern to allow the user to select a single or a range of dates using a calendar.
 

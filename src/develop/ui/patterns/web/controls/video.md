@@ -27,7 +27,7 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
 
     ![](<images/video-image-11.png>)
  
-1. on the **Properties** tab, set the **SourceFile** property to the source video file you want to embed in your app. 
+1. On the **Properties** tab, set the **SourceFile** property to the source video file you want to embed in your app. 
 
     * If using an external source file, insert the file URL.
 
@@ -48,13 +48,11 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
        
         1. In the **SourceFile** property, enter the runtime path of the video file.
 
-           ![](<images/video-image-13.png>)
+            ![](<images/video-image-13.png>)
     
             **Tip**: You can copy the runtime path from the Resource Runtime Path property tab.
 
             ![](<images/video-image-14.png>)
-
-
 
 1. On the Video **Properties** tab, you can also define (optional) properties, such as the height and width of the video and the audio settings.
 
@@ -62,16 +60,16 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
        
 ## Properties
 
-| **Property** |  **Description** | 
+| **Property** | **Description** | 
 |---|---|
-| SourceFile (Text): Mandatory  |  The video file URL or the runtime path of the resource video file. |
-| Width (Text): Optional |  Width (in pixel or percentage) of the video. <p>Examples<ul><li>_Blank_ - The video is 100% wide. This is the default value. </li><li>_150_ - The video is 150px wide.</li></ul></p> | 
-| Height (Text): Optional  | Height (in pixel or percentage) of the video. <p>Examples<ul><li>_Blank_ - The video is 100% high. This is the default value. </li><li>_150_ - The video is 150px high.</li></ul></p> |  
+| SourceFile (Text): Mandatory | The video file URL or the runtime path of the resource video file. |
+| Width (Text): Optional | Width (in pixel or percentage) of the video.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - The video is 100% wide. This is the default value.</li><li>_150_ - The video is 150px wide.</li></ul> | 
+| Height (Text): Optional | Height (in pixel or percentage) of the video.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - The video is 100% high. This is the default value.</li><li>_150_ - The video is 150px high.</li></ul> |  
 | Autoplay (Boolean): Optional | If True, the video starts playing as soon as the page is rendered. If False, the video doesn't play until the Play video control is clicked. This is the default.  | 
-| Loop (Boolean): Optional  | If True, the video restarts playing as soon as it ends. If False, it does not reply. This is the default.   | 
+| Loop (Boolean): Optional | If True, the video restarts playing as soon as it ends. If False, it does not reply. This is the default. | 
 | Muted (Boolean): Optional | If True, the audio of the video is disabled. If False, the audio is enabled. This is the default. | 
-| Controls (Boolean): Optional  | If False, the video controls are disabled. If True, the video controls are enabled. This is the default. **Note** In the case of mobile apps, the controls are always enabled. |  
-| ExtendedClass  | Add custom style classes to the Video UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Video UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Video UI styles being applied.</li></ul></p> |
+| Controls (Boolean): Optional | If False, the video controls are disabled. If True, the video controls are enabled. This is the default.<br/>**Note** In the case of mobile apps, the controls are always enabled. |  
+| ExtendedClass | Add custom style classes to the Video UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Video UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Video UI styles being applied.</li></ul> |
 
 ## Notes
 
@@ -80,5 +78,3 @@ Autoplay parameter only works if Muted is set to True.
 ## Device Compatibility
 
 In case of mobile, the controls will always be enabled.
-
-

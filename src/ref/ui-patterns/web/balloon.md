@@ -28,6 +28,7 @@ Here are some more advanced use-cases of the widget.
 ### Change the animation
 
 1. Drag Balloon to the preview.
+
 1. Set the AdvancedFormat parameter to `{ animation: 'perspective' }`.
 
     ![](<images/balloon-gif-1.gif>)
@@ -35,5 +36,3 @@ Here are some more advanced use-cases of the widget.
 Changed animation:
 
 ![](<images/balloon-gif-2.gif>)
-
-

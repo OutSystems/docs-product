@@ -64,7 +64,7 @@ For advanced options, you can check the official documentation of the [Pikaday l
 | **Property** |  **Description** | 
 |---|---|
 | EventsList (DateTime List): Optional | A list of events (type Date Time) |
-| AdvancedFormatJSON (DateTime List): Optional | A string with options such as: `{ disableWeekends: true,  BeginEmpty: true }`. For more advanced options, read the official documentation: https://github.com/dbushell/Pikaday  |
+| AdvancedFormatJSON (DateTime List): Optional | A string with options such as: `{ disableWeekends: true,  BeginEmpty: true }`. For more advanced options, read the official documentation: <https://github.com/dbushell/Pikaday> |
 
 
 ![](<images/datepicker-gif-1.gif>)

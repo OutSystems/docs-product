@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Dropdown UI Pattern
+summary: Advanced use cases for the Dropdown UI Pattern.
 ---
 
 # Dropdown UI Pattern Reference
@@ -21,7 +21,6 @@ summary: Advanced use cases for the Dropdown UI Pattern
 ### Use with ListRecords to make a list of links
 
 1. Drag the Dropdown Pattern into the page.
-
 1. In the DropdownList placeholder, drag a ListRecords widget.
 1. Set the Line Separator property of the ListRecords widget to None.
 1. In the ListRecords widget, drag a link and connect it to the required destination.

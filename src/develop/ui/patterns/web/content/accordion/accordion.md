@@ -5,107 +5,54 @@ summary: Accordion expands vertically-stacked content by clicking on the header.
 
 # Accordion
 
-Expand content that is vertically stacked by clicking on the header.
+You can use the Accordion UI Pattern to allow users expand and hide content when clicked.
 
-Use an Accordion when you need to organize information by displaying part of the content first and then expanding it to see more.
+ ![](<images/accordion-image-2.png>)
 
-**How to use**
+**How to use the Accordion UI Pattern**
 
-Add the Accordion block to your screen. Then add Accordion Items inside the block to create content.
+1. In Service Studio, in the Toolbox, search for `Accordion`.
 
-1. Drag the Accordion into the preview.
-1. Drag as many Accordion Items as you need.
-1. Set the content you need in the placeholders. 
+    The Accordion widget is displayed.
 
-    ![](<images/accordion-image-1.png>)
+     ![](<images/accordion-image-4.png>)
 
-1. Publish and test.
+1. From the Toolbox, drag the Accordion widget into the Main Content area of your application's screen.
 
-    ![](<images/accordion-image-2.png>)
+    ![](<images/accordion-image-5.png>)
+
+    Note: By default, the Accordion widget contains 3 Accordion Item widgets. You can add or delete Accordion Items as required.
+
+      ![](<images/accordion-image-1.png>)
+
+1. Add the relevant content to the Accordion Item placeholders, for example, FAQs. 
+  
+    ![](<images/accordion-image-3.png>)
+
+1. After following these steps and publishing the module, you can test the pattern in your app. 
+
+
 
 ## Demo
 
 <iframe width="750" height="500" src="https://www.youtube.com/embed/FWTZ2tLVlfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
-## Input Parameters
+## Properties
 
 ### Accordion
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| MultipleItems  |  Allows multiple Accordion Items to be opened having the effect of Section Expandables. |  Boolean | False | False |
-| ExtendedClass  |  Add custom style classes to this block. |  Text | False | none |
+
+| **Property** |  **Description** |  
+|---|---|
+| MultipleItems (Boolean): Optional |  If set to True, multiple Accordion Items can be open at the same time. If set to False, only one Accordion Item can be open at any time. This is the default value. | 
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Accordion UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Accordion UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Accordion UI styles being applied.</li></ul> |
 
 ### Accordion Item
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| IsOpen  |  If true, when rendering the Accordion Item is open. |  Boolean | False | False |
-| IsDisable  |  Doesn't allow the Accordion Item to be clickable. |  Boolean | False | False |
-| ExtendedClass  |  Add custom style classes to this block. |  Text | False | none |
 
-## Layout and Classes
+| **Property** |  **Description** | 
+|---|---|
+| IsOpen (Boolean): Optional  |  If set to True, when rendering, the Accordion Item is open. If set to False, the Accordion Item is closed. This is the default value.|  
+| IsDisable (Boolean): Optional  |  If set to True, the Accordion Item cannot be clicked. If set to False, the Accordion Item is clickable. This is the default value. 
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Accordion Item UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Accordion Item UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Accordion Item UI styles being applied. </li></ul> |
 
-![](<images/accordion-image-3.png>)
-
-## CSS Selectors
-| **Element** |  **CSS Class** |  **Description**  |
-| --- | --- | --- |
-| .accordion-item | .accordion-item.is--open |  When AccordionItem is Open  |
-| .accordion-item | accordion-item-content.is--expanded |  When AccordionItem is Open  |
-| .accordion-item | .accordion-item.is--closed |  When AccordionItem is Closed  |
-| .accordion-item | accordion-item-content.is--collapsed |  When AccordionItem is Closed  |
-| .accordion-item | .accordion-item.is--disabled |  When IsDisabled parameter is True  |
-
-## Advanced Use Case
-
-### Use Accordion with ListRecords
-
-1. Drag the Accordion Pattern into preview.
-1. In the Content placeholder, drag a ListRecords widget.
-1. In the ListRecords widget, drag an AccordionItem Pattern.
-1. Inside the AccordionItem Pattern, use expressions to display the database content you need.
-1. Publish and test.
-
-    ![](<images/accordion-image-4.png>)
-
-### Change arrow position to left
-
-It is possible to change the arrow position on AccordionItems by using custom CSS. To do this in your application, you need to copy the CSS and put it in your theme.
-
-```css
-.accordion-item .accordion-item-header {
-    flex-direction: row-reverse;
-}
-
-.accordion-item .accordion-item-title {
-    padding-left: var(--space-base);
-}
-```
-![](<images/accordion-image-5.png>)
-
-### Add margin between each Accordion Item
-
-You need to use custom CSS to add a margin between each Accordion Item. To do this in your application, you need to copy the CSS and put it in your theme.
-
-```css
-.accordion {
-    background-color: transparent;
-}
-
-.accordion-item {
-    background-color: var(--color-neutral-0);
-    border-bottom-width: var(--border-size-s);
-}
-
-.accordion-item:not(:last-child) {
-    margin-bottom: var(--space-base);
-}
-```
-![](<images/accordion-image-6.png>)
-
-## Notes
-
-Line Separator from ListRecords should be None.
-
-![](<images/accordion-image-7.png>)
 
 

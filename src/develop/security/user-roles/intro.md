@@ -48,6 +48,7 @@ When end user authentication and authorization is performed using an external sy
 </div>
 
 ## User Roles in the OutSystems metamodel
+
 Roles that are created in the OutSystems platform are stored in one entity of the OutSystems metamodel - **Role** Entity
 As a developer, you can check the Roles of a User from two different places:
 * **User_Role**

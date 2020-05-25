@@ -49,12 +49,12 @@ When end user authentication and authorization is performed using an external sy
 
 ## User Roles in the OutSystems metamodel
 
-Roles that are created in the OutSystems platform are stored in the **Role** Entity.
-As a developer, you can check the Roles of a User in two different Entities:
+Roles that are created in the OutSystems platform are stored in the **Role** entity.
+As a developer, you can check the Roles of a User in two different entities:
 
-* The **User_Role** entity is a metamodel table that stores the User and Role association. This entitiy stores only Roles that are directly added to a specific user through the Users application.
+* The **User_Role** entity is a metamodel table that stores the user and Role association. This entitiy stores only Roles that are directly added to a specific user through the Users application.
 
-* The **User_Effective_Role** entity is a metamodel view that contains user-specific roles. This entity includes Roles assigned directly to a User and Roles assigned to a Group to which the user belongs.
+* The **User_Effective_Role** entity is a metamodel view that contains user-specific roles. This entity includes Roles assigned directly to a user and Roles assigned to a Group to which the user belongs.
 
 Before using User_Role and User_Effective_Role in your app, add them as dependencies by following these steps:
 

@@ -3,7 +3,7 @@ summary: Learn how to create multilingual applications with OutSystems.
 tags: support-application_development; runtime-traditionalweb;
 ---
 
-# Multilingual UI
+# Translating the app UI
 
 The UI of an application is designed for a particular language. This is called the default language, and it is in this language that the application is executed by default. You may have your application translated and executed in other languages, making it a multilingual application with a multilingual UI.
 

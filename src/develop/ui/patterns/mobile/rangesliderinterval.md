@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: 
 ---
 
-# RangeSliderInterval Pattern
+# Range Slider Interval
 
 The RangeSliderInterval pattern enables you to set an interval by dragging two handles. You can control an interval value with simple and interactive user input.
 

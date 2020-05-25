@@ -1,96 +1,98 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary: Date Picker allows the end user to select a single or a range of dates using a calendar.
 ---
 
-# DatePicker Pattern
+# Date Picker
 
-The DatePicker pattern provides you with a date and time picker with a flat UI to display inline on the screen. It can receive lists of dates with events and it enables you have a selection within a range of days. The DatePicker was created using the [Pikaday.js
-library](https://github.com/dbushell/Pikaday/blob/master/README.md "https://github.com/dbushell/Pikaday/blob/master/README.md") .
+You can use the Date Picker UI Pattern to allow the user to select a single or a range of dates using a calendar.
 
-You can use this pattern to display a list of elements side by side, with a different number of items per row on different devices.
+![](images/datepicker-image-13.png)
 
-## How to Use the DatePicker Pattern
+<!-- The Date Picker pattern provides you with a date and time picker with a flat UI to display inline on the screen. It can receive lists of dates with events and it enables you have a selection within a range of days. The Date Picker was created using the [Pikaday.js
+library](https://github.com/dbushell/Pikaday/blob/master/README.md "https://github.com/dbushell/Pikaday/blob/master/README.md").
 
-Use static data or a **List** widget inside this block to display items in a gallery pattern.
+You can use this pattern to display a list of elements side by side, with a different number of items per row on different devices.-->
 
-![](images/datepicker.png?width=600)  
+## How to Use the Date Picker UI Pattern
 
-1\. Upon dragging the DatePicker to the page, you'll be prompted to create an
-event.
+<!--Use static data or a **List** widget inside this block to display items in a gallery pattern.-->
 
-![](images/datepicker_create_an_event.png?width=500)
+1. In Service Studio, in the Toolbox, search for `Date Picker`.
 
-2\. To have access to the picked date, you need to create an assign to the
+    The Date Picker Image widget is displayed.
+
+    ![](<images/datepicker-image-2.png>)
+
+1. From the Toolbox, drag the Date Picker widget into the Main Content area of your application's screen.
+
+    ![](<images/datepicker-image-1.png>)
+    
+    On the **Properties** tab, you are prompted to create an event.
+    
+    ![](<images/datepicker-image-3.png>)
+      
+1. To have access to the picked date, you need to create an assign to the
 **startDate** (if SelectInterval is False ).
 
-3\. Set the default value of the variable **PickedDate** as CurrDateTime().
+    ![](images/datepicker_create_an_event.png?width=500)
 
-![](images/datepicker_start.png)
+1. Set the default value of the variable **PickedDate** as CurrDateTime().
 
-**Result**:
+    ![](images/datepicker_start.png)
+
+**Result**
 
 ![](images/datepicker_BasicExample.gif)
 
 ### Listing Events of a Selected Day
 
-1\. Set the area where you want to put the list of events.
+1. Set the area where you want to put the list of events.
 
-![](images/add_new_date.png)
+    ![](images/add_new_date.png)
 
-2\. Create an entity with a **DateTime** attribute.
+1. Create an entity with a **DateTime** attribute.
 
-3\. Set the entity in your **EventList** parameter on eventList, using the
+1. Set the entity in your **EventList** parameter on eventList, using the
 right attribute to map.
 
-![](images/interaction_datepicker.png)  
+    ![](images/interaction_datepicker.png)  
 
-4\. Add the list to the page.
+1. Add the list to the page.
 
-![](images/date_time.png)  
+    ![](images/date_time.png)  
 
-5\. Create a Local Variable.
+1. Create a Local Variable.
 
-![](images/date_local_variable.png)  
+    ![](images/date_local_variable.png)  
 
-6\. Get another Aggregate for the Events and set a filter on the aggregate:  
+1. Get another Aggregate for the Events and set a filter on the aggregate:  
 DateTimeToDate(Events.DateTime) = Date
 
-![](images/datepicker_filter.png)
+    ![](images/datepicker_filter.png)
 
-**Result**:
+**Result**
 
 ![](images/datepicker_Profit.gif) 
 
-## Input Parameters
+## Properties
 
-| **Input Name** |  **Description** |  **Default Value** |
-|---|---|---|
-| ![](images/input.png)  EventList  |  Receives a List of DateTime records that are used to highlight days as event days. |  none |
-| ![](images/input.png) MinDate  |  Days before this date will be disabled. |  none  |
-| ![](images/input.png) MaxDate  |  Days after this date will be disabled.  | none |  
-| ![](images/input.png) InitialDate  |  The initially selected day for the DatePicker. If not set, it will be the current day by default.  |  Current Date | 
-| ![](images/input.png) ShowWeekNumbers  |  Displays the week number on the left side of the DatePicker.  |  True  |
-| ![](images/input.png) FirstWeekDay  |  Defines which weekday should be displayed first. %%  0: Sunday %% 1: Monday %% 2: Tuesday %% 3: Wednesday %% 4: Thursday %% 5: Friday %% 6: Saturday | 1 |
-| ![](images/input.png) ShowTime  |  Displays a time picker below the DatePicker.  |  False |  
-| ![](images/input.png) Show24HourFormat  |  Changes the time picker to a 24-hour format.  |  True  |
-| ![](images/input.png) DisabledDaysList  |  Receives a List of DateTime records that will be disabled on the DatePicker. If this parameter is not set, all days between the MinDate and MaxDate are enabled. No default value.  |  none |  
-| ![](images/input.png) DisabledWeekDays  |  String containing disabled weekdays. If the string is empty, all weekdays are active. Example with Sunday and Friday disabled: "0,5,6". %% 0: Sunday %% 1: Monday %% 2: Tuesday %% 3: Wednesday %% 4: Thursday %% 5: Friday %% 6: Saturday  |  none  |
-|![](images/input.png) SelectInterval  |  Allows the selection between two dates. If set to True, the Block Event "On Select" has the values for both parameters.  |  False |  
-  
-## Events
-
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| ![](images/Event.png) OnSelect | Action to execute after selecting a DatePicker day. If SelectInterval is enabled, both parameters return values. If not, only the StartDate has a value.  |  True  |
-  
-## Layout and Classes
-
-![](images/datepicker_layout_classes.png?width=700)
-
-## CSS Selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
-| ![](images/css_selector.png) td |  .is-selected  |  Clicked day.  
-| ![](images/css_selector.png) td  |  .is-startrange  |  If SelectInterval is True , this class will be the start range value.  |
+| **Properties** | **Description** |
+|---|---|
+| InputWidgetId (Text): Mandatory  | Input element Id that triggers the element so it is visible.  |
+| ButtonWidgetId (Text): Optional  |  Element name (example: button) that  triggers the element so it is visible. | 
+| EventList (Date Time List): Optional  |  Receives a List of DateTime records that are used to highlight days as event days. |  
+| MinDate (Date Time): Optional  |  Days before this date will be disabled. |  
+| MaxDate (Date Time): Optional  |  Days after this date will be disabled.  |   
+| InitialDate (Date Time): Optional |  The initially selected day for the Date Picker. If not set, it will be the current day by default.  | 
+| ShowWeekNumbers (Boolean): Optional  | If True, the week number is displayed on the left side of the Date Picker. If False, the week number is not dispalyed. This is the default. |  
+| FirstWeekDay (Integer): Optional  |  Defines which weekday is displayed first.<br/><ul><li>0: Sunday</li> <li>1: Monday (default)</li><li>2: Tuesday</li> <li>3: Wednesday</li><li>4: Thursday</li><li>5: Friday</li><li>6: Saturday</li></ul> | 
+| ShowTime (Boolean): Optional  | If True, a time picker is displayed below the Date Picker. If False, there is no time picker displayed. This is the default. |   
+| Show24HourFormat (boolean) | If True, the time picker is displayed in a 24-hour format. This is the default. If False, the time picker is displayed in a 12-hour format. |  
+| DisabledDaysList (Date Time List): Optional  |  Receives a List of DateTime records that will be disabled on the DatePicker. If this parameter is not set, all days between the MinDate and MaxDate are enabled. No default value.  |  
+| DisabledWeekDays (Text): Optional  |  String containing disabled weekdays.<br/><ul><li>0: Sunday </li><li>1: Monday </li><li>2: Tuesday </li><li>3: Wednesday </li><li>4: Thursday</li><li> 5: Friday </li><li>6: Saturday </li></ul>Example<br/><br/><ul><li>_Blank_ - All weekdays are active. </li><li>_"0,5"_ - Sunday and Friday are disabled.</li></ul> | 
+| SelectInterval (Boolean): Optional |  Allows the selection between two dates. If True, the Block Event "On Select" has the values for both parameters.  |   
+| StartEmpty (Boolean): Optional |  Defines whether the input for the Date Picker starts as empty.   | 
+| DateFormat (Text): Optional| Defaults to the date format defined in the server configuration. The default is the server date format.<br/><br/>Examples<br/><br/><ul><li>DD/MM/YYYY - 15/05/2020 </li> <li>MM/DD/YYYY - 05/15/2020</li><li>DD MMM YYYY - 15 May 2020</li></ul> |
+|ShowTodayButton (Boolean): Optional | If True, the Today button is displayed. If False, the Today Button is not displayed. This is the default. |
+|AdvancedFormat (Text): Optional | Allows fors more options beyond what is provided through the inputs. |

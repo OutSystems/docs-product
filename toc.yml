@@ -75,8 +75,8 @@
 
         # Screens
         - href: develop/ui/screens/intro.md
-        # Accessibility (change to .md)
-        - placeholder: Accessibility
+        # Accessibility
+        - href: develop/ui/accessibility/intro.md
         # How to use Screen Templates
         - href: develop/ui/screen-templates-use/intro.md
         - topics:

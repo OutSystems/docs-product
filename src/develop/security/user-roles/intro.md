@@ -48,17 +48,22 @@ When end user authentication and authorization is performed using an external sy
 </div>
 
 ## User Roles in the OutSystems metamodel
-Roles that are created in the OutSystems platform are stored in one entity of the OutSystems metamodel - **Role** Entity
-As a developer, you can check the Roles of a User from two different places:
-* **User_Role**
-Metamodel table where User Role association is stored. This table stores only Roles that are directly added to a specific user through the Users application.
 
-* **User_Effective_Role** 
-Metamodel view that contains user-specific roles, either assigned directly to a user or indirectly through User Groups.
+Roles that are created in the OutSystems platform are stored in the **Role** Entity.
+As a developer, you can check the Roles of a User in two different Entities:
 
-Both User_Role and User_Effective_Role can be consumed in your applications:
-1. Open Manage Dependencies popup
-2. Select (System) in the Producers list
-3. Select both database elements in Entities folder
+* The **User_Role** entity is a metamodel table that stores the User and Role association. This entitiy stores only Roles that are directly added to a specific user through the Users application.
+
+* The **User_Effective_Role** entity is a metamodel view that contains user-specific roles. This entity includes Roles assigned directly to a User and Roles assigned to a Group to which the user belongs.
+
+Before using User_Role and User_Effective_Role in your app, add them as dependencies by following these steps:
+
+1. Open **Manage Dependencies**.
+2. In the producers list, select **(System)**.
+3. In the public elements list, select **User_Role** and **User_Effective_Role**. 
 
 ![Roles_Metamodel](images/Roles_metamodel.PNG)
+
+<div class="info" markdown="1">
+If you can't see **User_Role** and **User_Effective_Role** entities in **(System)**, make sure to select **Show all** in the filter dropdown of the public elements list.
+</div>

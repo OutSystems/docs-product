@@ -37,7 +37,7 @@ This example shows you how to center align a user's name and initials.
 
     ![](<images/aligncenter-image-13.png>)
 
-1. After following these steps and publishing the module, you can test the pattern in your app. It should look something like the following:
+After following these steps and publishing the module, you can test the pattern in your app. It should look something like the following:
    
 ![](<images/aligncenter-image-3.png>)
 

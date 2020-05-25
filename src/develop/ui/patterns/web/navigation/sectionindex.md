@@ -19,7 +19,7 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
     ![](<images/sectionindex-image-7.png>)
 
-    A link is automatically created to every section you have on the screen. The name of the link is based on the text you entered in the **Title** placeholder of each section. In the following example, the links are set to the In-Ear Audio Black, In-Ear Audio Sport Grey etc. sections that we added earlier.
+    A link is automatically created to every section you have on the screen. The name of the link is based on the text you entered in the **Title** placeholder of each section. In the following example, the links are set to the In-Ear Audio Black, In-Ear Audio Sport Grey etc., sections that we added earlier.
 
     ![](<images/sectionindex-image-2.png>)
    

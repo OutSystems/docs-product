@@ -10,6 +10,7 @@ In this case, you will not be able to import the Web Service straight away in Se
 
 The current list of unsupported features/use cases is the following:
 
+* [RPC services with same name property in messages' parts](<#rpc_message_part>)
 * [Multidimensional arrays](<#multidimensional-arrays>)
 * [Abstract types without implementation](#abstract-types-without-implementation)
 * [Recursion](<#recursion>)
@@ -34,6 +35,22 @@ Be sure to visit this page regularly for an updated list of the current limitati
 
 In the following sections we provide general instructions to perform the necessary WSDL changes for working around some of the currently unsupported features/use cases.
 
+## RPC services with same name property in messages' parts
+
+Due to WCF limitations, we do not support RPC web services that use the following pattern in their messages definition: parts using the same name property but with distinct types.
+
+Example:
+
+```xml
+<message name="loginIn">
+    <part name="request" type="tns:LoginReq"/>
+</message>
+<message name="logoutIn">
+    <part name="request" type="tns:LogoutReq"/>
+</message>
+```
+
+Messages loginIn and logoutIn define a part named "request" with distinct types tns:LoginReq and tns:LogoutReq, respectively. This is not supported and there is no workaround.
 
 ## Multidimensional Arrays
 

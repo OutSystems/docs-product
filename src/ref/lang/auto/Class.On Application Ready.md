@@ -5,7 +5,7 @@ helpids: 0
 
 # On Application Ready
 
-Action to be executed when the application is loading (in the home module only). Can be used to to setup the application (e.g. initialize mobile plugins).  
+Action executed when the application is loading (in the home module only). Can be used to set up the application (for example, initialize mobile plugins).  
 
 ## Properties
 
@@ -29,4 +29,3 @@ Action to be executed when the application is loading (in the home module only).
 </tr>
 </tbody>
 </table>
-

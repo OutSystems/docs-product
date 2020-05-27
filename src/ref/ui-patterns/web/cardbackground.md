@@ -1,0 +1,56 @@
+---
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Card Background UI Pattern.
+---
+
+# Card Background Reference
+
+## Layout and classes
+
+![](<images/cardbackground-image-2.png>)
+
+## CSS selectors
+
+| **Element** |  **CSS Class** |  **Description**  |
+| ---|---|---
+| .card-background-content | .bottom-center | Vertically aligns the content to Bottom and Horizontally align it to Center. |
+| .card-background-content | .bottom-left |  Vertically aligns the content to Bottom and Horizontally align it to Left. |
+| .card-background-content | .bottom-right |  Vertically aligns the content to Bottom and Horizontally align it to Right. |
+| .card-background-content | .center |  Vertically aligns the content to Center and Horizontally align it to Center. |
+| .card-background-content | .center-left |  Vertically aligns the content to Center and Horizontally align it to Left. |
+| .card-background-content | .center-right |  Vertically aligns the content to Center and Horizontally align it to Right. |
+| .card-background-content | .top-center | Vertically aligns the content to Top and Horizontally align it to Center. |
+| .card-background-content | .top-left |  Vertically aligns the content to Top and Horizontally align it to Left. |
+| .card-background-content | .top-right |  Vertically aligns the content to Top and Horizontally align it to Right. |
+
+## Advanced use case
+
+### Add a new style to the Counter pattern
+
+1. Drag the Counter pattern into the preview.
+
+1. Set the Input Parameters to the following values:
+    - Color: `Entities.Color.Neutral10`
+    - Position: `Entities.PositionExtended.BottomCenter`
+    - Height: `400`
+    - ExtendedClass: `shadow-xl`
+
+    ![](<images/cardbackground-image-3.png>)
+
+1. Add a text widget into the Content placeholder and set the Style Classes property to `heading4 text-neutral-0`.
+
+    ![](<images/cardbackground-image-4.png>)
+
+1. Drag an image to the BackgroundImage placeholder.
+
+    ![](<images/cardbackground-image-5.png>)
+
+1. Publish and test.
+
+    ![](<images/cardbackground-image-6.png>)
+
+## Notes
+
+The object-fit property is not supported in Internet Explorer.
+
+

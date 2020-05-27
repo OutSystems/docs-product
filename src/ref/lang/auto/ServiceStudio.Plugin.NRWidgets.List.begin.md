@@ -2,7 +2,7 @@
 tags: runtime-mobileandreactiveweb;
 ---
 
-Use List this widget to display a simple list, for example a list of Expressions, or to display more complex items by adding a [List Item widget](ServiceStudio.Plugin.NRWidgets.ListItem.final.md). List requires a source to populate the item.
+Use the List widget to display a simple list, for example a list of Expressions, or to display more complex items by adding a [List Item widget](ServiceStudio.Plugin.NRWidgets.ListItem.final.md). List requires a source to populate the item.
 
 ## Virtualization
 

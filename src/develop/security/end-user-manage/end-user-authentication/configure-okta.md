@@ -1,6 +1,6 @@
 ---
 summary: How to configure OKTA end user authentication for your applications.
-tags: runtime-traditionalweb
+tags: runtime-traditionalwebandreactiveweb
 ---
 
 # Configure OKTA Authentication

@@ -1,6 +1,6 @@
 ---
 summary: How to configure SAML 2.0 end user authentication for your applications.
-tags: runtime-traditionalweb
+tags: runtime-traditionalwebandreactiveweb
 ---
 
 # Configure SAML 2.0 Authentication

@@ -23,7 +23,7 @@ You can use the Tabs UI Pattern to divide content into meaningful sections. Each
     
     By default, the Tabs widget contains 3 Header Items (tab titles) and 3 Content Items (tab content). You can add or delete as many as required.
 
-1. Add the relevant content to the Header Item and Content Item placeholders. In this example we add some text by typing directly into each of the placeholders.
+1. Add the relevant content to the Header Item and Content Item placeholders, for example, forms, images, link, and text. In this example we add some text by typing directly into each of the placeholders. You can add 
     
       ![](images/tabs-image-5.png)
 

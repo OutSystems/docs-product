@@ -19,8 +19,6 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     ![](<images/gallerymob-image-9.png>)
 
-    
-
 1. Add the required content to the Gallery widget. 
 
    By default, the Gallery widget expects a list. 
@@ -29,7 +27,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content.
 
-    In this example, we delete the list and add images to the Gallery widget. 
+    In this example, we delete the list and add local images to the Gallery widget. 
 
    ![](<images/gallerymob-image-10.png>)
  
@@ -39,11 +37,27 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
    ![](<images/gallerymob-image-11.png>)
   
-1. On the **Properties** tab, set the relevant (optional) properties, for example, the number of items you want to display on each device and the space between each item (GutterSize).
+1. On the **Properties** tab, set the relevant (optional) properties, for example, the number of items you want to display on each device (see below for examples) and the space between each item (GutterSize).
 
     ![](<images/gallerymob-image-12.png>)
     
 After following these steps and publishing the module, you can test the pattern in your app.
+
+**4 items per row**
+
+   ![](<images/gallery-image-11.png>)
+
+**3 items per row**
+    
+   ![](<images/gallery-image-12.png>)
+
+**2 items per row**
+
+   ![](<images/gallery-image-13.png>)
+
+**1 item per row**
+
+   ![](<images/gallery-image-14.png>)
 
 ## Properties
 

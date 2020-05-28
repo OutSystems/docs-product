@@ -11,7 +11,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
 **How to use the Gallery UI Pattern**
 
-The Gallery UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../../develop/logic/action-web.md). 
+The Gallery UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display on screen. You do this by using an [Action](../../../../../develop/logic/action-web.md). In this use case, we use local resources.
 
 1. In Service Studio, in the Toolbox, search for `Gallery`. 
 
@@ -35,11 +35,27 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
     ![](<images/gallery-image-10.png>)
 
-1. On the **Properties** tab, you can set the number of items to display on each row for different device types.
+1. On the **Properties** tab, you can set the number of items to display on each row for different device types (see below for examples).
     
     ![](<images/gallery-image-6.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
+
+**4 items per row**
+
+   ![](<images/gallery-image-11.png>)
+
+**3 items per row**
+    
+   ![](<images/gallery-image-12.png>)
+
+**2 items per row**
+
+   ![](<images/gallery-image-13.png>)
+
+**1 item per row**
+
+   ![](<images/gallery-image-14.png>)
 
 ## Properties
 

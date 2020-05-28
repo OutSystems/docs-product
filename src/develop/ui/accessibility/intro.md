@@ -7,15 +7,15 @@ tags: accessibility; accessible-apps; accessible-applications; reactive-web-acce
 
 <div class="info" markdown="1">
  
-The instructions in this document are focused on the Accessibility features for the **Reactive Web Apps**.
+The instructions in this document focus on the Accessibility features for the **Reactive Web Apps**.
  
 </div>
 
-Having accessible apps, apps that all people can use, is important for ethical, practical, and often legal reasons. You can build WCAG conformant apps thanks to the user interface (UI) features OutSystems created with accessibility in mind. You can also customize the UI and the app logic to accommodate the criteria you want to achieve.
+Having accessible apps, apps that all people can use, is important for ethical, practical, and often legal reasons. You can build apps conformant with the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21) (WCAG) thanks to the user interface (UI) features OutSystems created with accessibility in mind. You can also customize the UI and the app logic to accommodate the criteria you want to achieve.
 
 A general recommendation is to start thinking about accessibility **early in the development phase**, test often, identify the issues, and fix the issues or provide workarounds. In this document, you can find some techniques for meeting your accessibility level.
 
-Here are some guidelines:
+Take into consideration the following guidelines:
 
 1. Ensure that your app meets the basic accessibility requirements. See the section [Basic accessibility settings](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Basic_accessibility_settings).
 
@@ -29,11 +29,11 @@ Here are some guidelines:
 
 ## **Prerequisites**
 
-The prerequisites for following the instructions and recommendations in this document are as follows:
+Before you proceed with developing accessible apps according to the instructions and recommendations in this document, ensure you have installed:
 
 * OutSystems UI version 2.5.0 or later
 
-* Service Studio, latest version
+* Service Studio, the latest version
 
 <div class="info" markdown="1">
  
@@ -54,7 +54,7 @@ To enable the built-in accessibility features in Service Studio, perform the fol
 1. Select the **EnableAccessibilityFeatures** input parameter.
 1. On the parameter properties, set the **Default Value** to **True**.
 
-    ![Set the Enable Accessibility Features parameter value to true](images/enabling-accessibility-features-ss.png?width=374px)
+    ![Set the Enable Accessibility Features parameter value to true](images/enabling-accessibility-features-ss.png)
 
     By setting the **EnableAccessibilityFeatures** set to true, you activate the following features for all screens using the layout:
 
@@ -88,7 +88,7 @@ o set the page language, perform the following steps:
 1. Select **SetLang** action in the logic.
 1. On the Properties tab, enter an [ISO language code](https://tools.ietf.org/html/bcp47) (for example, "en-EN") in the **Lang** field.
 
-    ![Setting the Language on the OnReady action](images/set-page-language-ss.png?width=550)
+    ![Setting the Language on the OnReady action](images/set-page-language-ss.png)
 
 1. The procedure is complete.
 
@@ -108,7 +108,7 @@ To set an alternative text to an image, execute the following steps:
 1. Enter the description. When an image is for decorative purposes, set **alt=""**.
 1. The procedure is complete.
 
-    ![Adding text alterntives to images](images/image-text-alternatives-ss.png?width=430)
+    ![Adding text alterntives to images](images/image-text-alternatives-ss.png)
 
 ### **Text headings**
 
@@ -137,11 +137,11 @@ Improve the text readability by letting the users increase the text spacing. To 
 1. In your app screen, select the component that triggers the increased text spacing. For example, a button.
 
 1. To create a new client action, in the **Events** section of the **Properties** tab, go to the **OnClick** event and select **(new client action)**.
-![Creating a new client action](images/new-client-action-ss.png?width=430)
+![Creating a new client action](images/new-client-action-ss.png)
 
 1. Set the action name as **TextSpacing**, for example.
 
-    ![Setting the text spacing client action](images/text-spacing-client-action-ss.png?width=550)
+    ![Setting the text spacing client action](images/text-spacing-client-action-ss.png)
 
     The new client action flow is displayed.
 
@@ -156,7 +156,13 @@ Improve the text readability by letting the users increase the text spacing. To 
 
 ### **Form labels**
 
-You should always associate labels with the forms fields they refer to. Select the **Label** widget in the preview (1), go to **Properties**, and in the **Input Widget** list select the widget to associate the label (2). To see a demo of a form, create a screen based on a **Detail** Screen Template.
+You should always associate labels with the forms fields they refer to.
+
+To associate labels to forms, perform the following steps:
+1. Select the **Label** widget in the preview (1).
+1. In the label **Properties**, click on **Input Widget**.
+1. In the drop-down menu, select the widget to associate the label (2) to.
+1. To see a demo of a form, create a screen based on a **Detail** Screen Template.
 
 ![Associating labels to forms fields](images/form-labels-ss.png)
 
@@ -170,15 +176,24 @@ To get the visual focus on the page, turn on the built-in accessibility features
 
 ### **Element in focus**
 
-You can explicitly set the focus to an element by using the **SetFocus** action in **Logic** > **OutSystemsUI** > **Accessibility**. For example, use it if you want to set the focus back to a trigger button, after closing the sidebar.
+You can explicitly set the focus to an element, improving its visibility. To set the focus, perform the following steps:
 
-![Setting the focus to an element](images/element-in-focus-ss.png?width=470)
+1. Go to the **Logic** tab, and click on **OutSystemsUI**.
+1. Expand the **Accessibility** folder.
+1. Use the **SetFocus** action to enable the focus. For example, if you want to set the focus back to a trigger button, after closing the sidebar.
+
+![Setting the focus to an element](images/element-in-focus-ss.png)
 
 ### **Main content**
 
-You can change the default main container. Go to **UI Flows** > **Layouts** > expand the layout you're using. Double-click **SkipToContentOnClick** action. Select the **SkipToContent** node in the flow and edit the **TargetId** in the action properties.
+To change the default main container, perform the following steps:
 
-![Setting the Skip To Content target id](images/skip-to-content-target-id-ss.png?width=550)
+1. In the **Interface** tab, go to **UI Flows** > **Layouts**.
+1. Expand the layout you're using.
+1. Double-click the **SkipToContentOnClick** action.
+1. Select the **SkipToContent** node in the flow and edit the **TargetId** in the action properties.
+
+![Setting the Skip To Content target id](images/skip-to-content-target-id-ss.png)
 
 <div class="info" markdown="1">
  
@@ -186,7 +201,9 @@ You must enter the name in the widget properties before you can use that widget 
  
 </div>
 
-The default content Container is **MainContentWrapper** under **UI Flows** > **Layouts** > the layout you use in your app. The action **SkipToContent** is in **Logic** > **OutSystemsUI** > **Accessibility**.
+The default content Container is the **MainContentWrapper**. To find it, go to **UI Flows** > **Layouts**, and click on the layout you use in your app.
+
+To find the  **SkipToContent** action, go to **Logic** > **OutSystemsUI** > **Accessibility**.
 
 ## **Accessible Rich Internet Applications roles and attributes**
 
@@ -202,11 +219,11 @@ When developing OutSystems apps, add ARIA roles, states, and properties by editi
 
 This ARIA property doesn't change when the app runs. To add the ARIA roles or attributes, select the widget, go to the **Properties** tab, and add the role or attribute in the **Attributes** section.
 
-![Setting aria as a static property](images/set-aria-as-a-static-property-ss.png?width=380)
+![Setting aria as a static property](images/set-aria-as-a-static-property-ss.png)
 
 Similarly, you can set an ARIA role.
 
-![Setting an aria role](images/set-aria-role-ss.png?width=350)
+![Setting an aria role](images/set-aria-role-ss.png)
 
 ### **Set ARIA dynamically**
 
@@ -214,7 +231,7 @@ This ARIA property changes when the app runs, depending on a condition. To set a
 
 If the form is invalid, because one of the required fields is missing or a value is not correct for a field, the form is marked with **aria-invalid="true"**. This is a signal to the screen readers to alert the users.
 
-![Setting the aria property dynamically](images/set-aria-dynamically-ss.png?width=350)
+![Setting the aria property dynamically](images/set-aria-dynamically-ss.png)
 
 ### **The built-in ARIA actions**
 
@@ -222,21 +239,25 @@ These are the built-in actions that support setting ARIA attributes. Use them to
 
 #### Hide elements with SetAriaHidden
 
-The **SetAriaHidden** action is in **Logic** > **OutSystemsUI** > **Accessibility.** Use it to hide an element and all content inside it from the assistive technology tools. It's equivalent to setting **aria-hidden="true"** explicitly for an element.
+Use the **SetAriaHidden** action to hide an element and all content inside it from the assistive technology tools. It's equivalent to setting **aria-hidden="true"** explicitly for an element.
+
+To find the **SetAriaHidden** action, go to the **Logic** tab > **OutSystemsUI** > **Accessibility.** 
 
 #### Change the role of the Alert pattern
 
-Use **SetAccessibilityRole** in **Logic** > **OutSystemsUI** > **Accessibility** to change the ARIA role of the Alert pattern. See the [Alert pattern](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Alert_pattern) section in this document for more information.
+To change the ARIA role of the Alert pattern, use the **SetAccessibilityRole** action. 
+To find the **SetAccessibilityRole** action, go to the **Logic** tab > **OutSystemsUI** > **Accessibility** 
+For more information, see the [Alert pattern](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Alert_pattern) section in this document.
 
 <div class="info" markdown="1">
  
-**SetAccessibilityRole** is designed to work with the Alert pattern. Alternatively, you can test using SetAccessibilityRole for a child element of widgets.
+The **SetAccessibilityRole** actions is designed to work with the Alert pattern. Alternatively, you can test using SetAccessibilityRole for a child element of widgets.
  
 </div>
 
-### **Some examples of ARIA**
+### **Examples of ARIA**
 
-The following are some examples of how you can use ARIA to extend the functionality of the OutSystems UI.
+This section shows some examples of how you can use ARIA to extend the functionality of the OutSystems UI.
 
 #### Status message
 
@@ -256,7 +277,7 @@ To enable the status message, proceed with the following steps:
 
 The following figure shows an example of a status message:
 
-![Setting a status message](images/status-message-ss.png?width=430)
+![Setting a status message](images/status-message-ss.png)
 
 #### Creating readable labels
 
@@ -280,7 +301,7 @@ To create a label, proceed with the following steps:
 
 The following figure shows an example of a readable label on a **Delete** button. In this example, when the user selects this button, the screen reader says "Delete product".
 
-![Creating readable labels](images/creating-readable-labels-ss.png?width=750)
+![Creating readable labels](images/creating-readable-labels-ss.png)
 
 #### Hiding text in buttons or links
 
@@ -310,23 +331,29 @@ The following steps describe how to add an **aria-label** to describe the purpos
 
 3. Enter the descriptive text you want screen readers to say.
 
-    ![Adding detailed descriptions to short labels](images/adding-detailed-descriptions-short-labels-ss.png?width=430)
+    ![Adding detailed descriptions to short labels](images/adding-detailed-descriptions-short-labels-ss.png)
 
 4. The procedure is complete.
 
 ## **Testing and fixing accessibility issues**
 
-It's important that you test for accessibility issues and fix them early in development. The following is a quick example of using the WAVE accessibility evaluation tool, identifying issues, and addressing them in Service Studio. WAVE shows issues as visual markers on the page, which lets you focus on the low-code approach of the app development. You can also audit your apps with Lighthouse, which is integrated in Chrome DevTools.
+It's important that you test for accessibility issues and fix them early in development. This sections shows a quick example of using the WAVE accessibility evaluation tool, identifying issues, and addressing them in Service Studio. WAVE shows issues as visual markers on the page, which lets you focus on the low-code approach of the app development. You can also audit your apps with Lighthouse, which is integrated in Chrome DevTools.
 
 ### **Build a page**
 
 In Service Studio create a screen, publish the app, and open it in your browser. Here is an example of a simple screen with a title and an image.
 
-![A sample page](images/a-sample-page-ss.png?width=435)
+![A sample page](images/a-sample-page-ss.png)
 
 ### **Test for accessibility**
 
-After you load the page and check it with the WAVE extension (1), the issues show on top of the page elements. Click an error marker (2) to open a pop-up box with the notes. In this example, a page title is missing. Click the reference link (3) to see which success criteria the issue affects. It's the "2.4.2 Page Titled" rule, which is the Level A success criteria (4).
+To test your page for accessibility, perform the following steps:
+
+1. Load the page.
+1. Click on the WAVE extension (1) to start testing.
+    The existing issues show on top of the page elements.
+1. Click an error marker (2) to open a pop-up box with the notes. In this example, a page title is missing.
+1. Click the reference link (3) to see which success criteria the issue affects. In this example it's the "2.4.2 Page Titled" rule, which is the Level A success criteria (4).
 
 ![Testing the accessibility](images/test-for-accessibility.png)
 
@@ -341,7 +368,7 @@ The accessibility analysis shows page structural elements and ARIA annotation. T
 
 ### **Fix the accessibility issues**
 
-You can fix all the issues from this example by following the instructions in the section **Basic accessibility settings**. After some quick edits, the page now has a title, the language definition, and the image has an alt text. If you check the page again, the report shows zero errors.
+To fix all the issues from this example, follow the instructions in the [Basic accessibility settings](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Basic_accessibility_settings) section. After some quick edits, the page now has a title, the language definition, and the image has an alt text. If you check the page again, the report shows zero errors.
 
 ![Fixing the accessibility issues](images/fixing-accessibility-issues.png)
 
@@ -373,7 +400,7 @@ The Alert pattern further supports changing the ARIA role with the **SetAccessib
 
 When toggling the visibility of the Alert, you must update the **aria-hidden** attribute to guarantee the alert complies with the Accessibility guidelines. You can do this by using the **SetAriaHidden** client action.
 
-![Setting the role of the Alert pattern](images/set-role-alert-pattern-ss.png?width=480)
+![Setting the role of the Alert pattern](images/set-role-alert-pattern-ss.png)
 
 ### **MasterDetail pattern**
 
@@ -405,7 +432,7 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
 1. Create an **aria-label** attribute, and add a descriptive text about the action after the aggregate, for example, **YourAggregate + " list item, click to open the detail".** You should also add an **onkeypress** event to  ensure keyboard navigation on the list item.
 
-    ![Master detail aria label aggregate](images/master-detail-aria-label-aggregate-ss.png?width=370)
+    ![Master detail aria label aggregate](images/master-detail-aria-label-aggregate-ss.png)
 
 1. On the **ListItemOnClick** action, add the **MasterDetailSetContentFocus** action, that is needed for accessibility compliance, as it allows to change the focus between the detail and the next **listitem**, with parameters mapped from the **ListItemOnClick**:
 
@@ -413,7 +440,7 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
     2. **TriggerItem** (text) - Id of the item that was clicked.
 
-    ![Setting the Master detail set content focus action](images/master-detail-setcontentfocus-ss.png?width=520)
+    ![Setting the Master detail set content focus action](images/master-detail-setcontentfocus-ss.png)
 
 6. The procedure is complete.
 
@@ -421,7 +448,7 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
 OutSystems recommends that you create a sample screen from the **Master Detail** Screen Template and check the accessibility settings in a working example.
 
-![Master detail axample](images/master-detail-example-ss.png?width=680)
+![Master detail axample](images/master-detail-example-ss.png)
 
 ## **Accessibility in Traditional Web Apps**
 
@@ -445,7 +472,7 @@ A section with links to additional information.
 
 ### **Evaluation tools**
 
-You can evaluate the accessibility of your content using the following tools.
+To evaluate the accessibility of your content, you can use the following tools:
 
 * [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 
@@ -461,7 +488,7 @@ You can evaluate the accessibility of your content using the following tools.
 
 ### **Screen readers**
 
-You can test if your application is completely readable using these test screen readers.
+To test if your application is completely readable, you can use the following test screen readers:
 
 * [ChromeVox](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=pt-PT) for Google Chrome
 

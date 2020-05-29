@@ -11,7 +11,7 @@ You can use the Navigation Bar UI Pattern to organize content and enable the use
 
 **How to use the Navigation Bar UI Pattern**
 
-The following use case adds the Navigation Bar UI Pattern to **one** screen. If you want the Navigation Bar to appear on multiple screens in your app, we recommend adding the pattern to a web block. For more information, see [Create and Reuse Screen Blocks](../../../../../develop/ui/reuse/block-create-reuse.md). 
+The following use case adds the Navigation Bar UI Pattern to **one** screen. If you want the Navigation Bar to appear on multiple screens in your app, we recommend adding the pattern to a web block. For more information, see [Create and Reuse Screen Blocks](../../../reuse/block-create-reuse.md). 
 
 1. In Service Studio, in the Toolbox, search for `Navigation Bar`. 
 

@@ -45,25 +45,37 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
 1. To set all of the names in the list to a link, select and right-click the expression in the list, and select **Link to -> New Client Action**.  
 
-1. Double-click the new client action and enter a name. In this example, we call it ClickSelectedUser.
+    ![](images/masterdetail-image-6.png)
 
-1. From the Toolbox, add the **Assign** logic, and from the  **Value** drop-down, select the current user Id. 
+1. Double-click the new client action and enter a name. In this example, we call it **ClickSelectedUser**.
+
+    ![](images/masterdetail-image-7.png)
+
+1. From the Toolbox, add the **Assign** logic to the client action, and from the  **Value** drop-down, select the Expression Editor. Navigate and select the current user Id and click **Done**.
+
+    ![](images/masterdetail-image-8.png)
 
 1. To store this user Id, create a local variable by right-clicking on your screen and selecting **Create Local Variable**. Enter a name for the variable. In this example, we call it **SelectedUserId**.
 
-1. From the Toolbox, add the **Refresh** logic, and select the relevant aggregate (in this case GetUserDetails). This executes the aggregate using the selected user. 
+    ![](images/masterdetail-image-9.png)
 
-1. Select the Assign logic, and from the Variable drop-down, select the local variable you just created.
+1. From the Toolbox, add the **Refresh Data** logic to the client action, select the relevant aggregate (in this example GetUserDetails), and click **OK**. This executes the aggregate using the currently selected user. 
 
-1. To display the selected user's details on the right side of the screen, and create a new aggregate by right-clicking on your screen and selecting **Fetch Data from Database**. 
+    ![](images/masterdetail-image-10.png)
+
+1. Select the **Assign** logic, and from the **Variable** drop-down, select the local variable you created in step 11 (in this example, SelectedUserId).
+
+1. To display the selected user's details on the right side of the screen, create a new aggregate by right-clicking on your screen and selecting **Fetch Data from Database**. 
 
 1. To add a database entity, click on the screen, select the relevant entity, and click **OK**. In this example, we use the User entity.
 
-1. Enter a name for the aggregate. In this example, we call it GetUserDetails. 
+1. Enter a name for the aggregate. In this example, we call it **GetUserDetails**. 
 
-1. Click Filters, then Add Filter.
+    ![](images/masterdetail-image-11.png)
 
-1. From the Filter Condidion editor, enter the following:
+1. On the Main screen, click **Filters**, then click **Add Filter**.
+
+1. From the Filter Condidion editor, enter the following condition and click **Done**.
 
     `User.Id = SelectedUserId`
 
@@ -71,8 +83,9 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
 1. Double-click on your screen. In the RightContent placeholder, create an expression for the user details you want to appear for the selected user by dragging the Expression widget into the placeholder, navigating and double-clicking the relevant entity attribute from the aggregate you just created, and clicking **Done**. Repeat this step for each of the entities you want to display.
 
-In this example, we create an expression for the user's email.
+    In this example, we create an expression for the user's email.
 
+   ![](images/masterdetail-image-12.png)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

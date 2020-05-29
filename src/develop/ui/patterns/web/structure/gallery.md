@@ -29,7 +29,7 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
     ![](<images/gallery-1-ss.png>)
 
-     To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content. 
+     To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.final.md>) into the Gallery widget and create your custom content. 
 
     In this example, we delete the list and add images by dragging the Image widget into the Gallery widget and selecting an image from the OutSystems UI images. You can add as many as required.
 
@@ -66,7 +66,7 @@ The following are examples of how the items are display depending on how many yo
 | ItemsDesktop (Integer): Optional |  Number of Items displayed per line on a desktop. | 
 | ItemsTablet (Integer): Optional |  Number of Items displayed per line on a tablet. | 
 | ItemsPhone (Integer): Optional|  Number of Items displayed per line on a phone. |
-| ExtendedClass (Text): Optional | Add custom style classes to the Badge UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the myclass style to the Gallery UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Gallery UI styles being applied.</li></ul></p> |  
+| ExtendedClass (Text): Optional | Add custom style classes to the Badge UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the myclass style to the Gallery UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Gallery UI styles being applied.</li></ul></p> |  
 
 
 ## Additional notes

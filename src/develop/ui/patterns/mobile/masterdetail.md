@@ -95,7 +95,7 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 | LeftPercentage (Decimal): Optional | Set the LeftContent width using a percentage. Default value is 50%. |
 | OpenedOnPhone (Boolean): Optional |  Variable to hold if the detail is opened on a phone. Default value is False.|
-| Height | Set the height of the widget (in pixels or %). By default, it is the height of the window, minus the title and header.|
+| Height (Text): Optional | Set the height of the widget (in pixels or %). By default, it is the height of the window, minus the title and header.|
  
 ## Compatibility with other patterns
 

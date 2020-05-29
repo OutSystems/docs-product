@@ -1,9 +1,9 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb;
+summary: Advanced use cases for the User Initials UI Pattern.
 ---
 
-# User Initials UI Pattern Reference
+# User Initials Reference
 
 ## Layout and classes
 
@@ -24,8 +24,6 @@ summary:
 1. Change the pattern values.
 
 1. Publish and test.
-
-    
 
 ### Use the User Initials Pattern with IF conditions
 
@@ -59,10 +57,3 @@ summary:
 1. Publish and test.
 
     ![](<images/userinitials-image-8.png?width=750>)
-
-
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [User Initials](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Numbers/UserInitials)
-

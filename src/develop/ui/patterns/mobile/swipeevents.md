@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: 
 ---
 
-# SwipeEvents Pattern
+# Swipe Events
 
 The SwipeEvents pattern enables swiping on a specific widget.
 

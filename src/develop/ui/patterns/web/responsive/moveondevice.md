@@ -1,9 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: MoveOnDevice defines where information is displayed thereby improving the display on different devices.
+summary: Move on Device defines where information is displayed thereby improving the display on different devices.
 ---
 
 # Move on Device
+
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
 
 You can use the Move on Device UI Pattern to define the placement of information depending on the device.
 
@@ -50,9 +54,3 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 | PhoneWidgetId (Text): Optional  | Target container that displays this widget on phones. <p>Examples <ul><li>_Container1.Id_ - The content appears in this container when viewed on a phone</li></ul></p>|
 | TabletWidgetId (Text): Optional | Target container that displays this widget on tablets.<p>Examples  <ul><li>_Container2.Id_ - The content appears in this container when viewed on a tablet</li></ul></p>||
-
-
-
-<!---  Added to yml file
-## See also
-* OutSystems UI Live Style Guide: [Move on Device](https://outsystemsui.outsystems.com/WebStyleGuidePreview/MoveOnDevice.aspx)

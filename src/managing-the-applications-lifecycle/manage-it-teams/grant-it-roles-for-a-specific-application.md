@@ -8,7 +8,7 @@ In enterprise scenarios, there is often the need to grant more granular permissi
 
 In this example we want to allow a business user to **monitor** the applications Mobile Banking and Fleet Management in LifeTime Analytics, but **without granting permissions to open** the modules in those applications.
 
-![](images/grant-role-for-app-teams-diag.png?width=500)
+![](images/grant-role-for-app-teams-diag.png?width=800)
 
 To do this, configure the business user:
 

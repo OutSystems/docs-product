@@ -5,6 +5,10 @@ tags: support-Database
 
 # SQL Queries
 
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
+
 The ![SQL](../../../shared/icons-tools/advanced-query.png) SQL element allows you to execute, test, and review custom SQL queries in your applications. The element provides flexibility in data manipulation, but we recommend using Aggregates when applicable. Aggregates are highly optimized and easier to maintain.
 
 SQL queries can access data that is sent through the input parameters only, and other logic can access only what the SQL query returns through its Outputs.

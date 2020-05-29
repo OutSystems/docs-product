@@ -7,15 +7,15 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 
 Use the Upload widget to add files — such as photos — to your application.
 
-## In mobile
+## In Reactive Web and Mobile
 
-To upload a file in a mobile app:
+To upload a file in Reactive Web and Mobile apps:
 
-1. Drag the Upload widget from the Widgets toolbar to the screen.
+1. Drag the **Upload** widget from the Widgets toolbar to the screen.
 
 1. On the screen, create a local variable of Binary Data type to hold the file content. 
 
-1. Set the File Content property of the Upload widget to the local variable.
+1. Set the **File Content** property of the Upload widget to the local variable.
 
     ![](images/upload-mobile.png?width=750)
 
@@ -24,9 +24,9 @@ To upload a file in a mobile app:
     * Change the Server Action to accept the variable in the File Content property as an input parameter and save it. 
     * In the Client Action, add the variable as an argument to the Server Action.
 
-## In web
+## In Traditional Web
 
-To upload a file in a web application:
+To upload a file in a Traditional Web app:
 
 1. Drag the Upload widget from the Widgets toolbar to your screen. 
 

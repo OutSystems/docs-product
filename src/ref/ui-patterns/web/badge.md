@@ -1,9 +1,9 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Badge UI Pattern.
 ---
 
-# Badge UI Pattern Reference
+# Badge Reference
 
 
 ## Layout and classes
@@ -18,13 +18,6 @@ summary:
 
 1. On the **Properties** tab, set the **Color** to transparent (`Entities.Color.Transparent`).
 
-2. In the ExtendedClass property, set the text color and the border size of the badge. 
+1. In the ExtendedClass property, set the text color and the border size of the badge. 
 
     ![](<images/badge-image-4.png>)
-
-    
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Badge](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Numbers/Badge)
-

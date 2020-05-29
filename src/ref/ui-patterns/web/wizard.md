@@ -1,9 +1,9 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb;
+summary: Advanced use cases for the Wizard UI Pattern.
 ---
 
-# Wizard UI Pattern Reference
+# Wizard Reference
 
 ## Layout and classes
 
@@ -50,7 +50,7 @@ Use this example to create a three steps Wizard with continue and back buttons.
 
 1. Create a mandatory boolean Input Parameter on this action named IsNext.
 
-1. Drag an Assign and set WizardStepIndex, to  `If(IsNext, WizardStepIndex + 1, WizardStepIndex - 1)`.
+1. Drag an Assign and set WizardStepIndex, to `If(IsNext, WizardStepIndex + 1, WizardStepIndex - 1)`.
 
     ![](images/wizard-image-5.png)
 
@@ -62,20 +62,22 @@ Use this example to create a three steps Wizard with continue and back buttons.
     
     ![](images/wizard-image-6.png)
 
-1. In each WizardItem, add this If condition:  `If(WizardStepIndex = 1, Entities.Step.Active, If(WizardStepIndex = 0, Entities.Step.Next, Entities.Step.Past))` to the Step parameter.
+1. In each WizardItem, add this If condition: `If(WizardStepIndex = 1, Entities.Step.Active, If(WizardStepIndex = 0, Entities.Step.Next, Entities.Step.Past))` to the Step parameter.
 
 1. Wrap the content containers in Ifs and set the condition to the respective step.
 
-    ![](images/wizard-image-7.png?width=750)
+    ![](images/wizard-image-7.png?width=750)  
     ![](images/wizard-image-8.png?width=750)
 
 ### Custom style for active step
 
-1. Write the following CSS in the CSS editor and change the `yourcolor`.
+To implement this, you can use either method described below.
+
+* Write the following CSS in the CSS editor and change the `yourcolor`.
 
 ```css
 .wizard-item.active .wizard-item-icon {
-    border: 2px solid #fff
+    border: 2px solid #fff;
     background-color: yourcolor;
     color: #fff;
 }
@@ -92,7 +94,7 @@ Use this example to create a three steps Wizard with continue and back buttons.
 }
 ```
 
-2. Or using CSS variables: `var(--color-yourcolor)`.
+* Use CSS variables like `var(--color-yourcolor)`.
 
 
 ```css
@@ -115,8 +117,3 @@ Use this example to create a three steps Wizard with continue and back buttons.
 ```
 
 ![](images/wizard-image-9.png?width=750)
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Wizard](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Navigation/Wizard)
-

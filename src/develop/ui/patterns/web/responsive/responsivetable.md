@@ -1,9 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ResponsiveTable displays information in a logical and organized way that is easy to scan and read.
+summary: Responsive Table displays information in a logical and organized way that is easy to scan and read.
 ---
 
 # Responsive Table
+
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
 
 You can use the Responsive Table UI Pattern to display information in a logical and organized way. The Responsive Table UI pattern allows interaction, such as sorting, so that users can customize how they view information.
 
@@ -39,10 +43,4 @@ After following these steps and publishing the module, you can test the pattern 
 
 | **Property** |  **Description** |
 |---|---|
-| ResponsiveBehavior (ResponsiveTableRecords Identifier): Mandatory | Define how the table behaves when the user interacts with it. The predefined values are:<p><ul><li>ExpandableRows</li><li>ScrollableRows (default)</li> <p>Examples <ul><li>_Entities.RepsonsiveTableRecords.ScrollableRows_ - The table header stays fixed and the user can scroll through the rows in the table. </li><li>_Entities.RepsonsiveTableRecords.ExpandableRows_ - The table header stays fixed and the user can expand each row to view any extra information. </li>| 
-  
-
-<!---  Added to yml file
-
-## See also
-* OutSystems UI Live Style Guide: [Responsive Table](https://outsystemsui.outsystems.com/WebStyleGuidePreview/ResponsiveTableRecords.aspx)
+| ResponsiveBehavior (ResponsiveTableRecords Identifier): Mandatory | Define how the table behaves when the user interacts with it. The predefined values are:<p><ul><li>ExpandableRows</li><li>ScrollableRows (default)</li></ul></p> <p>Examples <ul><li>_Entities.RepsonsiveTableRecords.ScrollableRows_ - The table header stays fixed and the user can scroll through the rows in the table. </li><li>_Entities.RepsonsiveTableRecords.ExpandableRows_ - The table header stays fixed and the user can expand each row to view any extra information. </li></ul></p> | 

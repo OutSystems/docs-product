@@ -31,13 +31,24 @@ While designing your process you may schedule tasks to be done in your applicati
 
 ### Using the Taskbox
 
-The Taskbox is automatically available in your application once you are executing processes, and if you have the User module as the user provider. It lists the end users' tasks, both the ones that are being executed and the ones waiting to be executed. It also displays the task instructions and the actions that the end user can take on the task.
+The Taskbox is automatically available in your application once you are executing processes, and if you have the User module as the user provider. It lists new and ongoing tasks of users. It also displays the instructions and the actions for users to assign themselves the tasks.
+
+#### In Reactive Web Apps
+
+Use Sample Reactive Taskbox component from Forge to implement the Taskbox in Reactive Apps. Check instructions in document [Using Taskbox in Reactive Web Apps](https://success.outsystems.com/Documentation/How-to_Guides/Processes/Using_Taskbox_in_Reactive_Web_Apps).
+
+![Taskbox preview with task count](images/browser-process-task-list.png?width=450)
+
+![Taskbox preview with a task opened](images/browser-process-task-opened.png?width=450)
+
+
+#### In Traditional Web Apps
+
+In Traditional Web Apps, the UI of the Taskbox is available by default.
 
 ![](images/process-taskbox-highlighted.jpg)
 
-![](images/process-taskbox-mouseover.jpg)
-
-![](images/process-taskbox-opened.jpg) ![](images/process-taskbox-instructions.jpg)
+![](images/process-taskbox-opened.jpg)
 
 When the end user clicks on a listed task, it is opened and the task instructions are displayed in the Taskbox. Simultaneously, the application navigates automatically to the appropriate Web Screen and displays the appropriate data needed for the end user to accomplish the task.
 

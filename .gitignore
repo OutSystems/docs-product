@@ -1,4 +1,5 @@
 build/
+styles/
 **/.vscode/
 **/*.final.md
 .vs/*

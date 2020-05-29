@@ -5,6 +5,10 @@ tags:
 
 # Customize REST URLs
 
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
+
 OutSystems allows you to customize the URL of your REST API methods according to your needs.  
 For example, you could customize this URL:
 
@@ -18,8 +22,11 @@ For that, do the following:
 
 1. In the **Logic** tab, open the **Integrations** folder. 
 1. Expand the REST API and select the method you want to change to display its properties. 
-1. Set the "URL Path" property of the REST API method to the new custom URL.  
-    Example: `/Contacts/{Id}`. 
+1. Set the "URL Path" property of the REST API method to the new custom URL.
+
+    Example: `/Contacts/{Id}`
+
+    Note: Any input parameters included in the URL must be set as mandatory.
 
 The URL property will change accordingly.
 

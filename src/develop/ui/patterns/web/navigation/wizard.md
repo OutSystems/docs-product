@@ -5,13 +5,18 @@ summary: Wizard splits complex tasks and process into steps.
 
 # Wizard 
 
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
+
 You can use the Wizard UI Pattern to split large complex tasks and processes into smaller manageable steps. A wizard presents a series of steps or conditions that the user needs to complete in order to accomplish a goal. Additionally, wizards usually include explicit button navigation to move a step forward or backward. Some wizard examples include software installation wizards and sign-up screens.
 
 ![](<images/wizard-image-24.png>)
 
-## **How to use the Wizard UI Pattern**
-#### Example use case 
+**How to use the Wizard UI Pattern**
+
 The following example demonstrates how you can create a four step Wizard with navigation buttons. The example is made up of the following steps:
+
 * Creating a wizard 
 * Adding content to the wizard
 * Creating the wizard navigation
@@ -73,6 +78,7 @@ The following example demonstrates how you can create a four step Wizard with na
     ![](images/wizard-image-16.png)
 
     This logic has the following meaning:
+
     * If the user is on step 1, the step will show as the active step in the wizard.
     * If the user is on a step greater than step 1, step 1 will show as a step that is in the past (completed).
     * If the user is on a step less than 1, the step will show as an upcoming (next) step.
@@ -87,7 +93,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. On the **Properties** tab, in the **Condition** property, enter the following:
 
-   `CurrentStep = 1`
+    `CurrentStep = 1`
            
     ![](images/wizard-image-19.png)
 
@@ -118,11 +124,11 @@ The following example demonstrates how you can create a four step Wizard with na
 
     ![](images/wizard-image-22.png)
 
-1. From the Toolbox, drag the Assign block onto your screen and set the **Variable** property to ``CurrentStep`` and the **Value** property to ``CurrentStep + 1``. This ensures that user inputs are passed from step to step.
+1. From the Toolbox, drag the Assign block onto your screen and set the **Variable** property to `CurrentStep` and the **Value** property to `CurrentStep + 1`. This ensures that user inputs are passed from step to step.
 
     ![](images/wizard-image-21.png)
 
-1. Repeat steps 4 and 5 for the **Previous** button, setting the **Variable** property to ``CurrentStep`` and the **Value** property to ``CurrentStep - 1``.
+1. Repeat steps 4 and 5 for the **Previous** button, setting the **Variable** property to `CurrentStep` and the **Value** property to `CurrentStep - 1`.
 
 
 1. To display the **Next** button when applicable, select the **Next** button, right-click, and select **Enclose in If**.
@@ -131,7 +137,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. On the **Properties** tab, in the **Condition** property, enter the following:
 
-   `CurrentStep < 4`
+    `CurrentStep < 4`
 
     ![](images/wizard-image-17.png)
 
@@ -148,22 +154,13 @@ After following all of the steps in each of the sections, you can publish the mo
 
 | **Property** |  **Description** | 
 |---|---|
-| Orientation (Orientation Identifier): Optional  | Set the wizard orientation. By default the Wizard displays horizontally. <p> Examples <ul><li>_Entities.Orientation.Horizontal_ - The wizard displays horizontally </li></ul> <ul><li>_Entities.Orientation.Vertical_ - The wizard displays vertically</ul></li></p>|
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the _myclass_ style to the Wizard UI styles being applied<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied</li></ul></p> |
+| Orientation (Orientation Identifier): Optional  | <p>Set the wizard orientation. By default the Wizard displays horizontally.</p><p> Examples <ul><li>_Entities.Orientation.Horizontal_ - The wizard displays horizontally </li><li>_Entities.Orientation.Vertical_ - The wizard displays vertically</li></ul></p>|
+| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the _myclass_ style to the Wizard UI styles being applied</li><li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied</li></ul></p> |
 
 ### Wizard Item
 
 | **Property** |  **Description** | 
 |---|---|
-| Step (Step Identifier): Mandatory | Set the status of the Wizard Item relative to the current step of the Wizard. You can customize an expression to set the status of the Wizard Item or you can use the predefined values Active, Next, and Past. <p>Examples <ul><li>_Extended.Step.Active_ - Sets the Wizard Item to active, that is, the current step the user is on<li>_Extended.Step.Next_ - Sets the Wizard Item to incomplete, that is, a step that is yet to be completed by the user</li><li>_Extended.Step.Past_ - Sets the step to inactive, that is, a step that has already been completed by the user</li></ul></p>| 
+| Step (Step Identifier): Mandatory | <p>Set the status of the Wizard Item relative to the current step of the Wizard. You can customize an expression to set the status of the Wizard Item or you can use the predefined values Active, Next, and Past. </p><p>Examples <ul><li>_Extended.Step.Active_ - Sets the Wizard Item to active, that is, the current step the user is on</li><li>_Extended.Step.Next_ - Sets the Wizard Item to incomplete, that is, a step that is yet to be completed by the user</li><li>_Extended.Step.Past_ - Sets the step to inactive, that is, a step that has already been completed by the user</li></ul></p>| 
 | UseTopLabel (Boolean): Optional  | If True, label is placed above the icon. If False, label is placed below the icon. The text describing the step is either placed above or below the step icon. | 
-| ExtendedClass (Text): Optional | Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Wizard UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied</li></ul></p> | 
-  
-
-<!--- Added to yml file
-
-## See also
-
-* OutSystems UI Live Style Guide: [Wizard](https://outsystemsui.outsystems.com/WebStyleGuidePreview/Wizard.aspx)
-* OutSystems UI Pattern Page: [Wizard](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=82)
-
+| ExtendedClass (Text): Optional | <p>Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Wizard UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied</li></ul></p> | 

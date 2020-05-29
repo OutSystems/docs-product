@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: 
 ---
 
-# TouchEvents Pattern
+# Touch Events
 
 The TouchEvents pattern enables touch events on a specific widget.
 

@@ -1,9 +1,10 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb;
+summary: Advanced use cases for the Carousel UI Pattern.
 ---
 
-# Carousel UI Pattern Reference
+# Carousel Reference
+
 ## Layout and classes
 
 ![](<images/carousel-image-3.png?width=600>)
@@ -16,7 +17,7 @@ Here are some more advanced use-cases of the widget.
 
 To place the arrows outside the carousel, change the input parameters Padding and Margin. To have this behavior both parameters must be of the same value. Padding creates a space around the carousel viewport and the margin pushes the elements apart, so they are hidden inside the carousel.
 
-![](<images/carousel-image-4.png>)
+![](<images/carousel-image-4.png>)  
 ![](<images/carousel-image-5.png>)
 
 ### Customizing the dots style
@@ -52,7 +53,3 @@ It is possible to change the style of the dots on a Carousel with the custom CSS
 Line Separator from ListRecords should be None.
 
 ![](<images/carousel-image-8.png>)
-
-## See also
-* OutSystems UI Pattern Documentation: [Carousel](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Traditional_Web_Patterns/Content/Carousel)
-

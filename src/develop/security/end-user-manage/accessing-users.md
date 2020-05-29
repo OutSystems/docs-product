@@ -5,6 +5,10 @@ tags: support-Mobile_Apps; support-webapps
 
 # Access the Users application
 
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
+
 The **Users** application of a specific OutSystems environment is available at `https://<environment_address>/Users`.
 
 You need an account with administrator privileges to log in the Users application. This account **is not** the same you use to connect to Service Center, LifeTime or Service Studio, as those are IT users, although you can create accounts with the same credentials for both purposes.

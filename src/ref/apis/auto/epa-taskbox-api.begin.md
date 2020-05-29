@@ -1,5 +1,5 @@
 ---
-summary: The Embedded Process Automation (EPA) automatically displays in the user's web browser all pending activities in a floating taskbox. The Embedded Process Automation (EPA) automatically displays in the user's web browser all pending activities in a floating taskbox.
+summary: The Embedded Process Automation (EPA) automatically displays in the user's web browser all pending activities in a floating taskbox.
 tags: runtime-traditionalweb
 ---
 

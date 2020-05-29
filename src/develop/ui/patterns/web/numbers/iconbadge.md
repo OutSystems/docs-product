@@ -1,9 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: IconBadge displays numerical information as notification.
+summary: Icon Badge displays numerical information as notification.
 ---
 
 # Icon Badge
+
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
 
 You can use the Icon Badge UI Pattern to display numerical information as a notification. For example, the Icon Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
@@ -65,9 +69,4 @@ After following these steps and publishing the module, you can test the pattern 
 | Number (Integer): Optional  | Number that appears inside the Icon Badge. Set this to a Data source that contains the value that the Icon Badge will display. Common use cases include displaying a value contained in a Variable or the result of an Aggregate (for instance, querying a 'Messages' table for the current user to return the count of new messages). <p>Examples <ul><li>_Blank_ - displays the icon only with no number (default value)</li><li>_22_ - displays the number 22</li><li>_VariableName_ - displays the value that the variable ''VariableName'' holds at that time </li><li>_ExampleAggregate.Count_ - displays the number of records returned by the ''ExampleAggregate'' aggregate execution</li></ul></p>| 
 | Color (Color Identifier): Optional  | Set the badge color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the icon badge. <p>Examples <ul><li>_Blank_ - displays the icon badge in the color you chose when creating the app (default value)</li><li>_Entities.Color.Red_ - displays a red icon badge</li></ul></p> | 
 | IsLight (Boolean): Optional  | Specify the icon badge's background color. <p>Examples <ul><li>_Blank_ - A darker hue of the color is applied to the icon badge and a lighter color to the text (default value)</li><li>_True_ - A brighter hue of the color is applied to the icon badge and a darker color to the text.</li><li>_False_ - A darker hue of the color is applied to the icon badge and a lighter color to the text</li></ul></p> |
-| ExtendedClass (Text):Optional  |  Add custom style classes to the Counter UI Pattern. You define your custom style classes in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the _myclass_ style to the Icon Badge UI styles being applied<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Icon Badge UI styles being applied</li></ul></p> |
-
-<!--- 
-## See also
-* OutSystems UI Live Style Guide: [Icon Badge](https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx)
-* OutSystems UI Pattern Page: [Icon Badge](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43)
+| ExtendedClass (Text):Optional  |  Add custom style classes to the Icon Badge UI Pattern.You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Icon Badge UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Icon Badge UI styles being applied.</li></ul></p> |

@@ -1,10 +1,9 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Light Box Image UI Pattern.
 ---
 
-# Lightbox Image UI Pattern Reference
-
+# Light Box Image Reference
 
 ## Layout and classes
 
@@ -14,9 +13,9 @@ summary:
 
 ## Advanced use case
 
-### Change the Lightbox Image overlay
+### Change the Light Box Image overlay
 
-It is possible to change the opacity of LightBoxImage overlay when it is open by adding custom CSS. To implement this in your application, copy the CSS code below and add it to the theme.
+It is possible to change the opacity of Light Box Image overlay when it is open by adding custom CSS. To implement this in your application, copy the CSS code below and add it to the theme.
 
 ```css
 .pswp__bg {
@@ -32,24 +31,14 @@ It is possible to change the opacity of LightBoxImage overlay when it is open by
 
 ### Add rounded corners to images inside Light Box Image Pattern
 
-To add rounded corners to images inside LightBoxImage, add the following custom css to the theme.
+To add rounded corners to images inside Light Box Image, add the following custom css to the theme.
 
 ```css
 .lightbox-content-thumbnail img,
 .pswp__item img {
-  border-radius: var(--border-radius-soft);
+    border-radius: var(--border-radius-soft);
 }
 ```
+
 ![](<images/lightboximage-image-6.png>)
-
-
-   
     
-
-
-
- ## See Also
-
-* OutSystems UI Pattern Documentation: [Lightbox Image ](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Content/LightBoxImage)
-
-

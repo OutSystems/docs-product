@@ -1,9 +1,9 @@
 ---
-tags:
-summary: 
+tags: runtime-traditionalweb; 
+summary: Advanced use cases for the Iframe UI Pattern.
 ---
 
-# Iframe UI Pattern Reference
+# Iframe Reference
 
 ## Layout and classes
 
@@ -22,7 +22,3 @@ This can be very useful if you are using a fixed width.
     ![](<images/iframe-image-4.png>)
 
 You can change the condition of the width used. This code makes the width 500px on desktop, but on mobile, it is still full-width as the fixed width would probably overflow the screen.
-
-
-  ## See also
- * OutSystems UI Pattern Documentation: [Iframe ](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Utilities/Iframe)

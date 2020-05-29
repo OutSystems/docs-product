@@ -133,7 +133,7 @@ You will probably start having a small service that is used by a single applicat
 
 Using **Server Actions** to expose Customer functionality simplifies the logic of the Order Management application, since the logic runs in a single process with the same request and transaction. However, changes in the Customer service may require the deploy of the Order Management application too.
 
-As long as these modules have the **same release cycle**, keeping these modules strongly-coupled will not have negative impacts in the deployment phase, while having positive impact in the development speed.
+As long as these modules have the **same release cycle**, keeping these modules tightly-coupled will not have negative impacts in the deployment phase, while having positive impact in the development speed.
 
 #### Several applications with similar release cycle
 
@@ -141,7 +141,7 @@ Then your system evolves and you have more applications using your service, for 
 
 ![](images/services-5.png?width=350)
 
-Keeping the modules strongly-coupled, using **Server Actions** to expose Customer functionality, will now require that Order Management and Shipping applications are both deployed together with Customer service whenever this module changes, increasing the deployment effort. On the other hand, the logic of Order Management and Shipping applications is still simple to develop and maintain. 
+Keeping the modules tightly-coupled, using **Server Actions** to expose Customer functionality, will now require that Order Management and Shipping applications are both deployed together with Customer service whenever this module changes, increasing the deployment effort. On the other hand, the logic of Order Management and Shipping applications is still simple to develop and maintain. 
 
 Since both applications belong to Sales department and have **similar release cycles**, the deployment effort is still acceptable. This way, you can still take the advantage of a faster development.
 

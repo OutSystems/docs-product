@@ -1,9 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: LightBoxImage displays an image thumbnail that is clicked to open a fullscreen image.
+summary: Light Box Image displays an image thumbnail that is clicked to open a fullscreen image.
 ---
 
 # Light Box Image
+
+<div class="info" markdown="1">
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+</div>
 
 You can use the Lightbox Image UI Pattern to open smaller thumbnail images in full screen mode. This UI pattern is often used when creating an image gallery, allowing you to navigate through each of the images and view them in more detail.  
 
@@ -21,7 +25,7 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
    
     ![](<images/lightboximage-image-13.png>)
 
-1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.md>) into the Light Box Image widget.This is a thumbnail image. 
+1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget. This is a thumbnail image. 
 
     The **Select Image** pop-up is displayed.
 
@@ -51,9 +55,4 @@ After following these steps and publishing the module, you can test the pattern 
 | Group (Text): Optional | Name of the group of images. Similar to the concept of a picture album. You can navigate through pictures with the same group name when viewing them in full screen mode.<p>Examples<ul><li>_Gallery 1_ - Adds this image to the _Gallery 1_ group</li></ul></p> |
 | ImageURL (Text): Optional | URL for the image you want to show in full screen mode. If empty, a zoomed version of the thumbnail is displayed. Use this if you want to load a lower quality image as a thumbnail and display a higher quality version in full screen mode.   |
 | ImageZoom (Decimal): Optional  |  Defines the size of the image that opens in full screen mode (based on the thumbnail size).<p>To avoid rendering problems, try to use images with the same ratio.<p>Examples</p><ul><li>_2_ - A thumbnail with 100x100, and zoom 2 opens with 200x200.</li><li> _0.5_ - A thumbnail with 500x500, and zoom 0.5 opens with 250x250.</li></ul></p> |
-| ExtendedClass (Text): Optional |  Add custom style classes to the Lightbox Image UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the myclass style to the Lightbox Image UI styles being applied.<li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Lightbox Image UI styles being applied.</li></ul></p> |
-
-
-<!--- ## See also
-* OutSystems UI Live Style Guide: [Lightbox Image](https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightboxImage.aspx)
-* OutSystems UI Pattern Page: [Lightbox Image](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46)
+| ExtendedClass (Text): Optional |  Add custom style classes to the Lightbox Image UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Lightbox Image UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Lightbox Image UI styles being applied.</li></ul></p> |

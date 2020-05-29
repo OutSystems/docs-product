@@ -1195,21 +1195,21 @@
     - ref/ui-patterns/mobile/gallery-mobile.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-          https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx
         - "OutSystems UI Pattern": 
-          https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41           
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41           
 - develop/ui/patterns/mobile/tabs.md:
     - ref/ui-patterns/mobile/tabs-mobile.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-          https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
         - "OutSystems UI Pattern": 
-          https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73           
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73           
 - develop/ui/patterns/mobile/masterdetail.md:
     - ref/ui-patterns/mobile/masterdetail-mobile.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-          https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51
 # Link to Training
 - extensibility-and-integration/connect-external-db.md:
     - external:

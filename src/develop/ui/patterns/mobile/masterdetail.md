@@ -23,55 +23,56 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
      By default, the Master Detail widget contains a right placeholder and left placeholder which expects a list.
 
- 1.  Select the **Data** tab, and from the **Entities** folder, drag the entity you want to display as the master list into the LeftContent placeholder. In this example, we use the Employee entity.
- 
-     You can also add list items by dragging the List widget into the placeholder and setting the source properties. 
+1. From the Toolbox, drag the List widget into the LeftContent placeholder.
 
-     ![](images/masterdetail-image-2.png)
+    ![](images/masterdetail-image-2.png)
 
-     **Note**: By dragging the Employee entity into the list placeholder, the **GetEmployees** aggregate is automatically created.
+1. To create an aggregate, right-click your screen, and select **Fetch Data From Database**.
 
-     ![](images/masterdetail-image-3.png)
+1. To add a database entity, click on the screen, select the relevant entity, and click **OK**. In this example, we use the User entity.
 
- 1. To store the selected user's details, from the  **Interface** tab, right-click your screen, and select **Add Local Variable**. 
- 
+    ![](images/masterdetail-image-3.png)
+
+1. Double-click your screen, and select the List widget. On the **Properties** tab, from the **Source** drop-down, select the aggregate you just created. In this example, GetUsers.List.
+
     ![](images/masterdetail-image-4.png)
-  
- 1. On the **Properties** tab, enter a variable name and data type. 
+
+1. From the Toolbox, drag an Expression widget into the List, and from the Expression Value editor, navigate and select the current users name and click **Done**.
 
     ![](images/masterdetail-image-5.png)
 
-1. To set all of the names in the list to a link, select and right-click the the user's name in the first list item, and select **Link to -> New Client Action**.  
+    This displays all of the users names on the right side of the screen.
 
-   ![](images/masterdetail-image-17.png)
+1. To set all of the names in the list to a link, select and right-click the expression in the list, and select **Link to -> New Client Action**.  
 
-1. Double-click the new client action and enter a name.
+1. Double-click the new client action and enter a name. In this example, we call it ClickSelectedUser.
 
-    ![](images/masterdetail-image-7.png)
+1. From the Toolbox, add the **Assign** logic, and from the  **Value** drop-down, select the current user Id. 
 
-1. From the Toolbox, add the **Assign** logic, and set the **Variable** property to the local variable you created earlier (in this case SelectedUserId). 
+1. To store this user Id, create a local variable by right-clicking on your screen and selecting **Create Local Variable**. Enter a name for the variable. In this example, we call it **SelectedUserId**.
 
-   ![](images/masterdetail-image-8.png)
+1. From the Toolbox, add the **Refresh** logic, and select the relevant aggregate (in this case GetUserDetails). This executes the aggregate using the selected user. 
 
-1. From the **Value** drop-down, select Expression Editor, navigate and select the current employee Id, and click **Done**.
+1. Select the Assign logic, and from the Variable drop-down, select the local variable you just created.
 
-    ![](images/masterdetail-image-9.png)
+1. To display the selected user's details on the right side of the screen, and create a new aggregate by right-clicking on your screen and selecting **Fetch Data from Database**. 
 
-1. From the Toolbox, add the **Refresh** logic, and select the relevant aggregate (in this case GetEmployees).  
+1. To add a database entity, click on the screen, select the relevant entity, and click **OK**. In this example, we use the User entity.
 
-   ![](images/masterdetail-image-12.png)
+1. Enter a name for the aggregate. In this example, we call it GetUserDetails. 
 
-1. To display the details of the selected user, create a new aggregate by right-clicking on your screen and selecting **Fetch Data from Database**. Enter a name for the aggregate. 
+1. Click Filters, then Add Filter.
 
-    ![](images/masterdetail-image-14.png)
+1. From the Filter Condidion editor, enter the following:
 
-1. To add a database entity, click on the main screen area, and select the relevant source (in this case Employee), and click **OK**.
+    `User.Id = SelectedUserId`
 
-    ![](images/masterdetail-image-15.png)
+    This filters all the results in the User entity to the currently selected user.
 
-1. Double-click on your screen. In the RightContent placeholder, create an expression for the user details you want to appear for the selected user. In the example below, we create an expression for the user's job position. To do this, drag the Expression widget into the placeholder, navigate and double-click the relevant entity attribute, and click **Done**. Repeat this step for each of the entities you want to display.
+1. Double-click on your screen. In the RightContent placeholder, create an expression for the user details you want to appear for the selected user by dragging the Expression widget into the placeholder, navigating and double-clicking the relevant entity attribute from the aggregate you just created, and clicking **Done**. Repeat this step for each of the entities you want to display.
 
-   ![](images/masterdetail-image-16.png)
+In this example, we create an expression for the user's email.
+
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

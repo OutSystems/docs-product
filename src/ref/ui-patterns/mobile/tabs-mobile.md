@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced Use Cases for the Tabs UI Pattern.
 ---
 
-# Tabs UI Pattern Reference
+# Tabs Reference
 
 ## Events
 
@@ -13,7 +13,7 @@ OnTabChange  |  Triggered when switching tabs.  |  _False_
 
 ## Layout and Classes
 
-![](images/Tabs_layout.png)
+![](images/tabs-7-diag.png)
 
 ## CSS Selectors
 

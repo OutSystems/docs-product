@@ -7,7 +7,7 @@ summary: Gallery enables the users to sequentially browse the content when there
 
 You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end. 
 
-![](<images/gallery-image-7.png>)
+![](<images/gallery-7-ss.png>)
 
 **How to use the Gallery UI Pattern**
 
@@ -17,45 +17,47 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
     The Gallery widget is displayed.
 
-    ![](<images/gallery-image-8.png>)
+    ![](<images/gallery-8-ss.png>)
 
 1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
 
-    ![](<images/gallery-image-9.png>)
+    ![](<images/gallery-9-ss.png>)
 
 1. Add the required content to the Gallery widget. 
 
     By default, the Gallery widget expects a list.
 
-    ![](<images/gallery-image-1.png>)
+    ![](<images/gallery-1-ss.png>)
 
      To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content. 
 
     In this example, we delete the list and add images by dragging the Image widget into the Gallery widget and selecting an image from the OutSystems UI images. You can add as many as required.
 
-    ![](<images/gallery-image-10.png>)
+    ![](<images/gallery-10-ss.png>)
 
 1. On the **Properties** tab, you can set the number of items to display on each row for different device types (see below for examples).
     
-    ![](<images/gallery-image-6.png>)
+    ![](<images/gallery-6-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
+The following are examples of how the items are display depending on how many you specify for each row.
+
 **4 items per row**
 
-   ![](<images/gallery-image-11.png>)
+   ![](<images/gallery-11-ss.png>)
 
 **3 items per row**
     
-   ![](<images/gallery-image-12.png>)
+   ![](<images/gallery-12-ss.png>)
 
 **2 items per row**
 
-   ![](<images/gallery-image-13.png>)
+   ![](<images/gallery-13-ss.png>)
 
 **1 item per row**
 
-   ![](<images/gallery-image-14.png>)
+   ![](<images/gallery-14-ss.png>)
 
 ## Properties
 
@@ -71,5 +73,4 @@ After following these steps and publishing the module, you can test the pattern 
 
 Line Separator for ListRecords should be **None**.
 
-![](<images/gallery-image-4.png>)
-
+   ![](<images/gallery-2-ss.png>)

@@ -3,12 +3,12 @@ tags: runtime-traditionalweb;
 summary: Advanced Use Cases for the Navigation Bar UI Pattern.
 ---
 
-# Navigation Bar UI Pattern Reference
+# Navigation Bar Reference
 
 ## Layout and classes
 
 
-![](images/navigationbar-image-4.png)
+![](images/navigationbar-4-diag.png)
 
 ## CSS selectors
 
@@ -41,7 +41,7 @@ summary: Advanced Use Cases for the Navigation Bar UI Pattern.
 
 1. Publish and test.
 
-    ![](images/navigationbar-image-5.png)
+    ![](images/navigationbar-5-ss.png)
 
 
 ### Change the active color on the NavigationBarItem

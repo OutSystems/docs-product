@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: 
+summary: Organizes content and enables the user to navigate their way around your app using hyperlinks.
 ---
 
 # Navigation Bar
 
 You can use the Navigation Bar UI Pattern to organize content and enable the user to navigate their way around your app using hyperlinks. You use this pattern when the user needs to navigate through an application's main sections while maintaining the ability to browse to another subsection. 
 
-![](images/navigationbar-image-7.png)
+![](images/navigationbar-7-ss.png)
 
 **How to use the Navigation Bar UI Pattern**
 
@@ -17,11 +17,11 @@ The following use case adds the Navigation Bar UI Pattern to **one** screen. If 
 
     The Navigation Bar widget is displayed.
 
-    ![](images/navigationbar-image-6.png)
+    ![](images/navigationbar-6-ss.png)
 
 1. From the Toolbox, drag the Navigation Bar widget into the Main Content area of your application's screen.
 
-    ![](images/navigationbar-image-1.png)
+    ![](images/navigationbar-1-ss.png)
 
     By default, the Navigation Bar widget contains a Navigation Bar Item widget and a Navigation Bar SubItem widget. You can add or delete as many of these widgets as required.
 
@@ -29,15 +29,15 @@ The following use case adds the Navigation Bar UI Pattern to **one** screen. If 
 
     In this example we add `Phones`, `Audio`, and `Accessories` to the Navigation Bar Item **Title** placeholders.
 
-    ![](images/navigationbar-image-12.png)   
+    ![](images/navigationbar-12-ss.png)   
 
     We also add links to the Navigation Bar SubItem **Content** placeholders. For each of the links, on the **Properties** tab, we add a link name and title, as well as the link destination.
     
-    ![](images/navigationbar-image-9.png)   
+    ![](images/navigationbar-9-ss.png)   
 
 1. On the **Properties** tab, you can alsocustomize the Navigation Bar's look and feel by setting any of the optional properties.
 
-    ![](images/navigationbar-image-3.png)
+    ![](images/navigationbar-3-ss.png)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

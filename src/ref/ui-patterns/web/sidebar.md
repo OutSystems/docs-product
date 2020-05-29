@@ -3,11 +3,11 @@ tags: runtime-traditionalweb;
 summary: Advanced Use Cases for the Sidebar UI Pattern.
 ---
 
-# Sidebar UI Pattern Reference
+# Sidebar Reference
 
 ## Layout and classes
 
-![](<images/sidebar-image-3.png>)
+![](<images/sidebar-3-diag.png>)
 
 ## CSS selectors
 

@@ -15,21 +15,21 @@ You can use the Tabs UI Pattern to divide content into meaningful sections. Each
 
     The Tabs widget is displayed.
     
-    ![](images/tabs-image-4.png)
+    ![](images/tabs-4-ss.png)
     
 1. From the Toolbox, drag the Tabs widget into the Main Content area of your application's screen.
 
-    ![](images/tabs-image-3.png)
+    ![](images/tabs-3-ss.png)
     
     By default, the Tabs widget contains 3 Header Items (tab titles) and 3 Content Items (tab content). You can add or delete as many as required.
 
 1. Add the relevant content to the Header Item and Content Item placeholders, for example, forms, images, link, and text. In this example we add some text by typing directly into each of the placeholders. You can add 
     
-      ![](images/tabs-image-5.png)
+      ![](images/tabs-5-ss.png)
 
 1. On the **Properties** tab, you can customize the Tabs look and feel by setting any of the optional properties, for example, which tab is displayed as the active tab when the page is rendered and whether the tabs are displayed vertically or horizontally.  
 
-    ![](images/tabs-image-6.png)
+    ![](images/tabs-6-ss.png)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -77,12 +77,3 @@ All Silk patterns hide _divs_ with no content. If you only need 2 or 3 tabs, and
 * Incompatible with RTL on Android devices with 4.4.2 OS version.
 
 * Avoid using the Tabs Pattern inside patterns with swipe events, such as the Stacked Cards or Carousel Patterns.
-
-## Samples
-
-The following samples use the Tabs pattern:
-
-![](images/Tabs-sample-1.PNG)
-
-![](images/Tabs-sample-2.PNG)
-

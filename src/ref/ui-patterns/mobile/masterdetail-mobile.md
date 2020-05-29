@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced Use Cases dor the Master Detail UI Pattern.
 ---
 
-# Master Detail UI Pattern Reference
+# Master Detail Reference
 
 ## Phone landscape with the same behavior as a tablet
 
@@ -47,7 +47,7 @@ ItemSelected  |  Triggered when an item of the list (or left side of the MasterD
   
 ## Layout and classes
 
-![](images/MasterDetail_layout.png)
+![](images/masterdetail-1-diag.png)
 
 ## CSS selectors
 

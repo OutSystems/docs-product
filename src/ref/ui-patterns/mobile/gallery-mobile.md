@@ -3,11 +3,11 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced Use Cases for the Gallery UI Pattern.
 ---
 
-# Gallery UI Pattern Reference
+# Gallery Reference
 
 ## Layout and classes
 
-![](images/Gallery_Layout.png)
+![](images/gallerymob-5-diag.png)
 
 ## Advanced use case
 
@@ -15,19 +15,19 @@ summary: Advanced Use Cases for the Gallery UI Pattern.
 
 1. Use the **Animate** block as the first element inside the list.
 
-    ![](images/Gallery_animate.png)
+    ![](images/gallerymob-1-ss.png)
 
-1.  Place your content inside the b block.
+1.  Place your content inside the block.
 
-    ![](images/Gallery_ellipsis.png)
+    ![](images/gallerymob-2-ss.png)
 
 1. Define the **Animate** block with your desired type of animation, and set
 the delay with current row number from the list.
 
-    ![](images/Gallery_interaction.png)
+    ![](images/gallerymob-3-ss.png)
 
     **Note**: If you are using a List inside a Gallery, you need to disable virtualization.
 
-    ![](images/Gallery_list.png)
+    ![](images/gallerymob-4-ss.png)
 
 

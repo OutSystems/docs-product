@@ -7,7 +7,7 @@ summary: Sidebar shows additional content on the side of the screen.
 
 You can use the Sidebar UI Pattern to display additional information in the margin of the main content. The additional information supports the user's understanding of the main content.
 
-![](<images/sidebar-image-4.png>)
+![](<images/sidebar-4.png>)
 
 **How to use the Sidebar UI Pattern**
 
@@ -19,31 +19,31 @@ To trigger the sidebar, call a new screen action through a button with Ajax subm
 
     The Sidebar widget is displayed.
 
-    ![](<images/sidebar-image-5.png>)
+    ![](<images/sidebar-5-ss.png>)
 
 1. From the Toolbox, drag the Sidebar widget into the Main Content area of your application's screen.
 
-    ![](<images/sidebar-image-6.png>)
+    ![](<images/sidebar-6-ss.png>)
 
 1. On the **Properties** tab, in the **Name** field, enter a name for the Sidebar widget. In this example, we call it **MySidebar**.
 
-    ![](<images/sidebar-image-name.png>)
+    ![](<images/sidebar-9-ss.png>)
 
 1. Add your content to the Header and Content placeholders, for example, forms, images, text etc. In this example we add some text. 
    
-    ![](<images/sidebar-image-content.png>)
+    ![](<images/sidebar-8-ss.png>)
 
 1. From the Toolbox, drag the Button widget just below the Sidebar widget and on the **Properties** tab, in the **Label** field, enter the text you want to appear on the button (in this example, we enter **Open**) and from the **Method** drop-down, select **Ajax Submit**.
 
-    ![](<images/sidebar-image-button-ajax.png>)
+    ![](<images/sidebar-7-ss.png>)
 
 1. To create a screen action for the button, double-click the button, select the **Logic** tab, and from the **Server Actions** folder, navigate to and drag the ToggleSidebar action onto the screen action.
 
-    ![](<images/sidebar-image-toggle.png>)
+    ![](<images/sidebar-10-ss.png>)
 
 1. On the **Properties** tab, from the **WidgetId** drop-down, select the Id for the widget. In this example, **MySidebar.Id**.
 
-    ![](<images/sidebar-toggle-properties.png>)
+    ![](<images/sidebar-11-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

@@ -156,13 +156,7 @@ Improve the text readability by letting the users increase the text spacing. To 
 
 ### **Form labels**
 
-You should always associate labels with the forms fields they refer to.
-
-To associate labels to forms, perform the following steps:
-1. Select the **Label** widget in the preview (1).
-1. In the label **Properties**, click on **Input Widget**.
-1. In the drop-down menu, select the widget to associate the label (2) to.
-1. To see a demo of a form, create a screen based on a **Detail** Screen Template.
+You should always associate labels with the forms fields they refer to. Select the **Label** widget in the preview (1), go to **Properties**, and in the **Input Widget** list select the widget to associate the label (2). To see a demo of a form, create a screen based on a **Detail** Screen Template.
 
 ![Associating labels to forms fields](images/form-labels-ss.png)
 
@@ -176,11 +170,7 @@ To get the visual focus on the page, turn on the built-in accessibility features
 
 ### **Element in focus**
 
-You can explicitly set the focus to an element, improving its visibility. To set the focus, perform the following steps:
-
-1. Go to the **Logic** tab, and click on **OutSystemsUI**.
-1. Expand the **Accessibility** folder.
-1. Use the **SetFocus** action to enable the focus. For example, if you want to set the focus back to a trigger button, after closing the sidebar.
+You can explicitly set the focus to an element by using the **SetFocus** action in **Logic** > **OutSystemsUI** > **Accessibility**. For example, use it if you want to set the focus back to a trigger button, after closing the sidebar.
 
 ![Setting the focus to an element](images/element-in-focus-ss.png)
 
@@ -313,9 +303,9 @@ The following steps describe how to hide text in links:
 
 2. Select the portion of the link text you want to hide, for example, "product" in “View product in store”
 
-3. [Add a CSS class](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS)) that makes that part of the link invisible
+3. [Add a CSS class](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS)) that makes that part of the link invisible.
 
-    ![Hiding text in buttons or links](images/hiding-text-in-buttons-or-links-ss.png)
+    ![Hiding text in buttons or links](images/hiding-text-in-buttons-or-links-ss.png?width=350)
 
 4. The procedure is complete.
 
@@ -400,7 +390,7 @@ The Alert pattern further supports changing the ARIA role with the **SetAccessib
 
 When toggling the visibility of the Alert, you must update the **aria-hidden** attribute to guarantee the alert complies with the Accessibility guidelines. You can do this by using the **SetAriaHidden** client action.
 
-![Setting the role of the Alert pattern](images/set-role-alert-pattern-ss.png)
+![Setting the role of the Alert pattern](images/set-role-alert-pattern-ss.png?width=350)
 
 ### **MasterDetail pattern**
 

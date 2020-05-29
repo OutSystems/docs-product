@@ -23,7 +23,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
      By default, the Master Detail widget contains a right placeholder and left placeholder which expects a list.
 
-1. To populate the list, create an aggregate, by right-clicking your screen name, and selecting **Fetch Data From Database**.
+1. To populate the list, create an aggregate, by right-clicking your screen name, and selecting **Fetch Data from Database**.
 
     ![](images/masterdetail-image-13.png)
 
@@ -33,7 +33,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
     A name for the aggregate is added automatically. In this example the aggregate name is **GetUsers**.
 
-1. On the **Interface** tab, double-click your screen, and select the List widget. On the **Properties** tab, from the **Source** drop-down, select the aggregate you just created. In this example, **GetUsers.List**.
+1. On the **Interface** tab, double-click your screen name, and in the LeftContent placeholder, select the List widget. On the **Properties** tab, from the **Source** drop-down, select the aggregate you just created. In this example, **GetUsers.List**.
 
     ![](images/masterdetail-image-4.png)
 
@@ -43,7 +43,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
     This displays all of the users names on the left side of the screen.
 
-1. So that each of the items in the list can be selected by the user to display more details, create a user action by selecting and right-clicking the expression in the List, and selecting **Link to -> New Client Action**.  
+1. So that each of the items in the list can be selected by the user, create a user action by selecting and right-clicking the expression in the List, and selecting **Link to -> New Client Action**.  
 
     ![](images/masterdetail-image-6.png)
 

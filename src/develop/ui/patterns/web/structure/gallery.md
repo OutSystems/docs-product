@@ -11,7 +11,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
 **How to use the Gallery UI Pattern**
 
-The Gallery UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display on screen. You do this by using an [Action](../../../../../develop/logic/action-web.md). In this use case, we use local resources.
+The Gallery UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../data/intro.md) that contains the information you want to display on screen. You do this by using an [Action](../../../../logic/action-web.md). In this use case, we use local resources.
 
 1. In Service Studio, in the Toolbox, search for `Gallery`. 
 

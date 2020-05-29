@@ -1028,9 +1028,12 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 - develop/ui/patterns/web/navigation/sidebar.md:
+    - ref/ui-patterns/web/sidebar.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Sidebar.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=67
 - develop/ui/patterns/web/navigation/tabs/tabs.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1108,9 +1111,12 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 - develop/ui/patterns/web/structure/gallery.md:
+    - ref/ui-patterns/web/gallery.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41 
 - develop/ui/patterns/web/utilities/animate.md:
     - ref/ui-patterns/web/animate.md
     - external:
@@ -1151,10 +1157,11 @@
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
-- develop/ui/patterns/web/navigation/navigationbar.md:            
+- develop/ui/patterns/web/navigation/navigationbar.md:
+    - ref/ui-patterns/web/navigation-bar.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-           https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+           https://outsystemsui.outsystems.com/WebStyleGuidePreview/NavigationBar.aspx
 
 # UI Mobile Patterns
 - develop/ui/patterns/mobile/carousel.md:
@@ -1184,6 +1191,25 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=21
+- develop/ui/patterns/mobile/gallery.md:
+    - ref/ui-patterns/mobile/gallery-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41           
+- develop/ui/patterns/mobile/tabs.md:
+    - ref/ui-patterns/mobile/tabs-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73           
+- develop/ui/patterns/mobile/masterdetail.md:
+    - ref/ui-patterns/mobile/masterdetail-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51
 # Link to Training
 - extensibility-and-integration/connect-external-db.md:
     - external:

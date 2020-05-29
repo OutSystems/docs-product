@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Displays content (such as cards) in a specific set of columns, configurable per device type and orientation. 
 ---
 
-# Gallery 
+# Gallery
 
 You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end. 
 

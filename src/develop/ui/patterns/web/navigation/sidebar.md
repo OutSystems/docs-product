@@ -25,7 +25,7 @@ To trigger the sidebar, call a new screen action through a button with Ajax subm
 
     ![](<images/sidebar-image-6.png>)
 
-1. On the **Properties** tab, in the Name field, enter a name for the Sidebar widget. In this example, we call it **MySidebar**.
+1. On the **Properties** tab, in the **Name** field, enter a name for the Sidebar widget. In this example, we call it **MySidebar**.
 
     ![](<images/sidebar-image-name.png>)
 
@@ -51,6 +51,6 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | **Property** |  **Description** | 
-|---|---|---|
+|---|---|
 | HasOverlay(Boolean): Optional  | If set to True, an overlay is displayed behind the Sidebar. If set to False, there is no overlay. This is the default value. |
 | ExtendedClass (Text): Optional | Add custom style classes to the Sidebar UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Sidebar UI styles being applied. </li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Sidebar UI styles being applied.</li></ul></p> | 

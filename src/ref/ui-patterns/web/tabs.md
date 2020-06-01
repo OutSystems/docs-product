@@ -3,11 +3,11 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Tabs UI Pattern.
 ---
 
-# Tabs UI Pattern Reference
+# Tabs Reference
 
 ## Layout and classes
 
-![](images/tabs-image2.png?width=750)
+![](images/tabs-5-diag.png?width=750)
 
 ## CSS selectors
 
@@ -44,4 +44,4 @@ background: border-bottom: var( --border-size-m) solid var(--color-red)
 1. Add the classes `background-blue-lighter text-neutral-0`, this adds a light blue background and force the text to be white.
 1. Publish the application.
 
-![](images/tabs-image3.png?width=750)
+   ![](images/tabs-6.png?width=750)

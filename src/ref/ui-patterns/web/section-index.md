@@ -3,11 +3,11 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Section Index UI Pattern.
 ---
 
-# Section Index UI Pattern Reference
+# Section Index Reference
 
 ## Layout and classes
 
-![](<images/sectionindex-image-4.png>)
+![](<images/sectionindex-4-diag.png>)
 
 ## CSS selectors
 

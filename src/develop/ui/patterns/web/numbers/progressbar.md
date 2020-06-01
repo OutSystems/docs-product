@@ -7,7 +7,7 @@ summary: Progress Bar displays the progress of a task by incrementing values in 
 
 You can use the Progress Bar to display percentage values by incrementing values in a bar, and to show the current progress of a task flow. You can also show progress in a Progress Circle or a Progress Circle Fraction. When using the Progress Bar UI Pattern, be consistent, for example, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. 
 
-![](<images/progressbar-image-8.png>)
+![](<images/progressbar-1.png>)
 
 **How to use the Progress Bar UI Pattern**
 
@@ -15,21 +15,21 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     The Progress Bar widget is displayed.
 
-    ![](<images/progressbar-image-9.png>)
+    ![](<images/progressbar-2-ss.png>)
 
 1. From the Toolbox, drag the Progress Bar widget onto your application's screen.
 
-    ![](<images/progressbar-image-10.png>)
+    ![](<images/progressbar-3-ss.png>)
 
     By default, the Progress Bar widget contains a Title and Value placeholder. 
 
-      ![](<images/progressbar-image-1.png>)
+    ![](<images/progressbar-4-ss.png>)
 
 1. Add the required content to the Title and Value placeholders. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.md) or [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>) to set the percentage value to display.
 
 1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, size, and orientation of the Progress Bar.
 
-    ![](<images/progressbar-image-11.png>)
+    ![](<images/progressbar-5-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

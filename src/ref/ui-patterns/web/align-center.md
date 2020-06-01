@@ -3,11 +3,11 @@ tags: runtime-traditionalweb;
 summary: Advanced uses cases for the Align Center UI Pattern.
 ---
 
-# Align Center UI Pattern Reference
+# Align Center Reference
 
 ## Layout and classes
 
-![](<images/aligncenter-image-4.png>)
+![](<images/aligncenter-8-diag.png>)
 
 ## CSS Selectors
 
@@ -24,9 +24,9 @@ summary: Advanced uses cases for the Align Center UI Pattern.
 
 1. Set the Orientation parameter to Vertical.
 
-    ![](<images/aligncenter-image-5.png>)
+    ![](<images/aligncenter-9-ss.png>)
 
-1. Drag an image into the AlignCenter placeholder and add the `border-radius-circle` class.
+1. Drag an image into the Align Center placeholder and add the `border-radius-circle` class.
 
 1. Drag a container into AlignCenter placeholder and set the horizontal alignment to Center.
 
@@ -34,14 +34,14 @@ summary: Advanced uses cases for the Align Center UI Pattern.
 
 1. Add another Text widget with the text "Marketing Communications Manager" and enclose it in a container.
     
-    ![](<images/aligncenter-image-6.png>)
+    ![](<images/aligncenter-10-ss.png>)
 
 1. Drag a container into the AlignCenter placeholder and add a Text widget.
 
 1. Type the text "02 Jan" and have its Style Class set to `font-size-xs text-neutral-6`.
 
-    ![](<images/aligncenter-image-7.png>)
+    ![](<images/aligncenter-11-ss.png>)
 
 1. Publish and test.
 
-    ![](<images/aligncenter-image-8.png>)
+    ![](<images/aligncenter-12.png>)

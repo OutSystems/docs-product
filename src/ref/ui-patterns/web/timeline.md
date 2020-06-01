@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the TImeline UI Pattern.
+summary: Advanced use cases for the Timeline UI Pattern.
 ---
 
-# Timeline UI Pattern Reference
+# Timeline Reference
 
 ## Layout and classes
 
-![](images/timeline-image-1.png?width=750)
+![](images/timeline-5-diag.png?width=750)
 
 ## Advanced Use Case
 
@@ -27,4 +27,4 @@ summary: Advanced use cases for the TImeline UI Pattern.
 
 1. Publish and test.
 
-    ![](<images/timeline-image-4.png>)
+    ![](<images/timeline-6.png>)

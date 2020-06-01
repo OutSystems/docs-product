@@ -7,7 +7,7 @@ summary: Tabs separate content into flat structure sections.
 
 You can use the Tabs UI Pattern to display large sets of information, which can be split into different areas, while always remaining a click away. 
 
-![](images/tabs-gif1.gif?width=650)
+![](images/tabs-1.gif?width=650)
 
 
 **How to use the Tabs UI Pattern**
@@ -16,20 +16,20 @@ You can use the Tabs UI Pattern to display large sets of information, which can 
 
     The Tabs widget is displayed.
     
-    ![](images/tabs-image4.png)
+    ![](images/tabs-2-ss.png)
     
 
 1. From the Toolbox, drag the Tabs widget onto your application's screen. 
 
-     ![](images/tabs-image-1.png)
+     ![](images/tabs-3-ss.png)
 
      By default, the Tabs widget contains 3 Header Items (tab titles) and 3 Content Items (tab content). You can add or delete as many as required.
   
-1. Add the relevant content to each of the Header Item and Content Item placeholders. 
+1. Add the relevant content to each of the Header Item and Content Item placeholders. In this example, we add text. You can add forms, images, labels, etc.
 
 1. On the **Properties** tab, you can customize the Tabs look and feel by setting any of the optional properties, for example, which tab is displayed as the active tab when the page loads and whether the tabs are displayed vertically or horizontally.
 
-    ![](images/tabs-image-5.png)
+    ![](images/tabs-4-ss.png)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -7,7 +7,7 @@ summary: Timeline indicates related events in chronological order.
 
 You can use the Timeline UI Pattern to show related events in a chronological order, such as a user’s upcoming, current, and past activities.
 
-![](<images/timeline-image-6.png>)
+![](<images/timeline-1.png>)
 
 
 **How to use the Timeline UI Pattern**
@@ -16,17 +16,17 @@ You can use the Timeline UI Pattern to show related events in a chronological or
 
     The Timeline widget is displayed.
 
-    ![](<images/timeline-image-7.png>)
+    ![](<images/timeline-2-ss.png>)
 
 1. From the Toolbox, drag the Timeline widget onto your application’s screen.
 
-    ![](<images/timeline-image-2.png>)
+    ![](<images/timeline-3-ss.png>)
 
     By default, the Timeline widget contains a Timeline Item widget which contains an Icon, Date, and Content placeholder. You can add as many Timeline Items as required.
 
-1. Set the required content in the Icon, Date, and Content placeholders. 
+1. Set the required content in the Icon, Date, and Content placeholders. In this example we add some text.
 
-    ![](<images/timeline-image-8.png>)
+    ![](<images/timeline-4-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

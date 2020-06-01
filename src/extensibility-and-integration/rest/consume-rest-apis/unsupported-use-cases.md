@@ -12,7 +12,6 @@ In some cases, you can do some small changes to the specification file so that t
 
 The current list of unsupported use cases is the following:
 
-* [Input Parameter specified outside the body](#input-outside-body)
 * ["Enums" or array of "enums" with a type other than Integer or Text](#enum-types)
 * [Input Parameter specified by reference](#input-by-reference)
 * [Output Parameter specified in header](#output-in-header)
@@ -20,93 +19,6 @@ The current list of unsupported use cases is the following:
 In general, OutSystems supports "enums" in consumed REST services when they're defined inside a "schema" field or referenced using "$ref"; otherwise, they're not currently supported in OutSystems.
 
 In the following sections you can find instructions on adjusting the Swagger specification file to work around some currently unsupported use cases.
-
-## Input Parameter specified outside the body { #input-outside-body }
-
-The type of an input parameter is defined based on the "type" field in the Swagger specification. Besides the body, these parameters can appear in the following locations:
-
-* Path
-* Query
-* Header
-* Form URL Encoded
-
-In all these uses cases except for the body, the Static Entity isn't created, since it's defined inline and not inside of a "schema" field or referenced using a "$ref" field.
-
-Examples:
-
-```javascript
-"parameters": [
-    {
-        "name": "RegionId",
-        "in": "path",
-        "type": "integer",
-        "format": "int32",
-        "enum": [
-            56411,
-            23221,
-            11222,
-            45596
-        ],
-        "required": true
-    }
-]
-```
-
-```javascript
-"parameters": [
-    {
-        "name": "RegionId",
-        "in": "query",
-        "type": "integer",
-        "format": "int64",
-        "enum": [
-            56411,
-            23221,
-            11222,
-            45596
-        ],
-        "required": false
-    }
-]
-```
-
-```javascript
-"parameters": [
-    {
-        "name": "RegionId",
-        "in": "header",
-        "type": "string",
-        "enum": [
-            "Weddell Sea",
-            "Riiser-Larsen Ice Shelf",
-            "Coats Land"
-        ],
-        "required": false
-    }
-]
-```
-
-```javascript
-"parameters": [
-    {
-        "name": "RegionId",
-        "in": "formData",
-        "type": "integer",
-        "format": "int32",
-        "enum": [
-            56411,
-            23221,
-            11222,
-            45596
-        ],
-        "required": false
-    }
-]
-```
-
-### Use case workaround
-
-Currently there is no generic workaround available to overcome this unsupported use case.
 
 ## Enums or array of enums with a type other than Integer or Text { #enum-types }
 

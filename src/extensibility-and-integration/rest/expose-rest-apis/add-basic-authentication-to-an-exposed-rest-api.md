@@ -6,7 +6,9 @@ tags:
 # Add Basic Authentication to an Exposed REST API
 
 <div class="info" markdown="1">
+
 We’ve been working on this article. Please let us know how useful this new version is by voting.
+
 </div>
 
 ## Basic Authentication

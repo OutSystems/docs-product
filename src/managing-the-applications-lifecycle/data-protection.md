@@ -145,6 +145,7 @@ The following SQL snippet deletes all log-in attempt logs from the **LoginAttemp
 ```sql
 DELETE FROM OSSYS_LOGIN_ATTEMPT;
 ```
+
 <div class="warning" markdown="1">
 
 Do not use this SQL snippet in your Production environment.  

@@ -6,7 +6,9 @@ summary: Wizard splits complex tasks and process into steps.
 # Wizard 
 
 <div class="info" markdown="1">
+
 We’ve been working on this article. Please let us know how useful this new version is by voting.
+
 </div>
 
 You can use the Wizard UI Pattern to split large complex tasks and processes into smaller manageable steps. A wizard presents a series of steps or conditions that the user needs to complete in order to accomplish a goal. Additionally, wizards usually include explicit button navigation to move a step forward or backward. Some wizard examples include software installation wizards and sign-up screens.

@@ -6,7 +6,9 @@ tags: support-Mobile_Apps; support-webapps
 # Access the Users application
 
 <div class="info" markdown="1">
+
 We’ve been working on this article. Please let us know how useful this new version is by voting.
+
 </div>
 
 The **Users** application of a specific OutSystems environment is available at `https://<environment_address>/Users`.

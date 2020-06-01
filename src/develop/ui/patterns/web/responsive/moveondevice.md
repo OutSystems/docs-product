@@ -6,7 +6,9 @@ summary: Move on Device defines where information is displayed thereby improving
 # Move on Device
 
 <div class="info" markdown="1">
+
 We’ve been working on this article. Please let us know how useful this new version is by voting.
+
 </div>
 
 You can use the Move on Device UI Pattern to define the placement of information depending on the device.

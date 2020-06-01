@@ -6,7 +6,9 @@ summary: Character Count displays the number of characters left to be entered in
 # Character Count
 
 <div class="info" markdown="1">
+
 We’ve been working on this article. Please let us know how useful this new version is by voting.
+
 </div>
 
 You can use the Character Count UI Pattern to display the number of characters a user has entered or has remaining for an onscreen text area. 

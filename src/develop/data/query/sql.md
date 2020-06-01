@@ -6,7 +6,9 @@ tags: support-Database
 # SQL Queries
 
 <div class="info" markdown="1">
+
 We’ve been working on this article. Please let us know how useful this new version is by voting.
+
 </div>
 
 The ![SQL](../../../shared/icons-tools/advanced-query.png) SQL element allows you to execute, test, and review custom SQL queries in your applications. The element provides flexibility in data manipulation, but we recommend using Aggregates when applicable. Aggregates are highly optimized and easier to maintain.
@@ -106,14 +108,20 @@ In Reactive Web and Mobile apps, this feature is not available for Aggregates in
 
 ### How to Convert an Aggregate to a SQL Element
 
-To convert an existing Aggregate to a SQL element follow these steps:	
+To convert an existing Aggregate to a SQL element follow these steps:
 
-1. In your action flow, double-click the Aggregate you want to convert.	
-1. In the Aggregate window, double-click the `Executed SQL` property to open the Executed SQL window.  	
-1. Click **CONVERT AGGREGATE TO SQL**. 
-<div class="info" markdown="1">
-The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed above](#limitations).
-</div>	
+1. In your action flow, double-click the Aggregate you want to convert.
+
+1. In the Aggregate window, double-click the `Executed SQL` property to open the Executed SQL window.
+
+1. Click **CONVERT AGGREGATE TO SQL**.
+
+    <div class="info" markdown="1">
+
+    The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed above](#limitations).
+
+    </div>
+
 1. Click **PROCEED**.
 
 ![Convert an Aggregate to SQL](images/convert-to-sql.gif)

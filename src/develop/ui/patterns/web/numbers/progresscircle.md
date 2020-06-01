@@ -25,7 +25,7 @@ You can use the Progress Circle UI Pattern to show the current progress of an op
 
     ![](<images/progresscircle-1-ss.png>)
 
-1. Set the required content in the placeholder.
+1. Add the required content to the placeholder. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.md) of [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>).
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

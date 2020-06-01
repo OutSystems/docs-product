@@ -4,17 +4,18 @@ summary: Use cases currently unsupported when consuming REST services using "enu
 
 # Unsupported REST Enum Use Cases
 
-Service Studio can import "enum" (enumerate) elements when consuming REST services. These elements are represented as Static Entities in Service Studio and each value of the "enum" corresponds to a Static Entity Record.
+Service Studio can import "enum" (enumerate) elements when consuming REST services. Service Studio represents these elements as Static Entities and each value of the "enum" corresponds to a Static Entity Record.
 
-While importing a REST API in Service Studio, some parameters/properties might be associated with the Text data type instead of the "enum" defined in the Swagger specification file describing the REST API.
+Importing a REST API in Service Studio can create parameters/properties with Text data type instead of the "enum" defined in the Swagger specification file describing the REST API.
 
-In some cases, you can do some small changes to the specification file so that the identified limitations no longer apply, and you can effectively consume the REST API in OutSystems.
+Sometimes you can do some small changes to the specification file so that the identified limitations no longer apply, and you can effectively consume the REST API in OutSystems.
 
 The current list of unsupported use cases is the following:
 
 * ["Enums" or array of "enums" with a type other than Integer or Text](#enum-types)
 * [Input Parameter specified by reference](#input-by-reference)
 * [Output Parameter specified in header](#output-in-header)
+* [Variable type using the oneOf keyword](#oneof)
 
 In general, OutSystems supports "enums" in consumed REST services when they're defined inside a "schema" field or referenced using "$ref"; otherwise, they're not currently supported in OutSystems.
 
@@ -22,9 +23,9 @@ In the following sections you can find instructions on adjusting the Swagger spe
 
 ## Enums or array of enums with a type other than Integer or Text { #enum-types }
 
-OutSystems defines the type of an input parameter, output parameter or structure attribute based on the type defined in the "schema" field or referenced using a "$ref" field. The Static Entity will be created and referenced correctly as the parameter type.
+OutSystems defines the type of an input parameter, output parameter or structure attribute based on the type defined in the "schema" field or referenced using a "$ref" field. The platform creates a Static Entity and references it correctly as the parameter type.
 
-However, since the type (or the array element type) can't be defined as an identifier in the OutSystems platform, Service Studio shows you an error in this situation. The only types allowed for identifiers are Integer, Long Integer and Text.
+In OutSystems, identifiers can't have a complex type (or array element type) as data type. You can only define their data type as Integer, Long Integer, or Text. Service Studio shows you an error when there's an enum (or array of enums) in the API specification with a type other than the supported ones.
 
 Examples:
 
@@ -214,3 +215,17 @@ Examples:
 ### Use case workaround
 
 Currently there is no generic workaround to overcome this unsupported use case.
+
+## Variable type using the oneOf keyword { #oneof }
+
+Having elements of a specification whose definition allows for more than one type using the `oneOf` keyword is currently not supported. In this case, OutSystems determines a specific type for the element according to the following rules:
+
+* If the `oneOf` definition has only one Object (complex type) entry, OutSystems selects that Object for the type.
+* If there are multiple or no Objects, OutSystems searches for a `string` entry. If it finds one or more entries, OutSystems uses the first found `string` entry for the type.
+* If none of the above rules applies, OutSystems uses the first entry of the `oneOf` definition for the type.
+
+The type is automatically set according to the rules above. However, you can change the type later, after importing the REST service.
+
+### Use case workaround
+
+Besides customizing the type defined automatically by the platform when importing the service, there is no generic workaround to overcome this unsupported use case.

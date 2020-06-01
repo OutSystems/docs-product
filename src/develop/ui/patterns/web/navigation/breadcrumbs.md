@@ -7,7 +7,7 @@ summary: Breadcrumbs present the location of the user within the hierarchy of ap
 
 You can use the Breadcrumbs UI Pattern as a navigational aid that helps users keep track of their location within the app.
 
-  ![](<images/breadcrumbs-image-2.png>)
+  ![](<images/breadcrumbs-2-ss.png>)
 
 **How to use the Breadcrumbs UI Pattern**
 
@@ -17,21 +17,23 @@ The following example demonstrates how you can create a breadcrumb trail with fo
   
      The Breadcrumbs widget is displayed.
 
-    ![](<images/breadcrumbs-image-8.png>)
+    ![](<images/breadcrumbs-8-ss.png>)
 
 1. From the Toolbox, drag the Breadcrumbs widget into the Main Content area of your application's screen.
 
-    ![](<images/breadcrumbs-image-9.png>)
+    ![](<images/breadcrumbs-9-ss.png>)
 
-    By default, the Breadcrumbs widget contains three Breadcrumb Item widgets. Each Breadcrumb Item represents a location in the breadcrumb trail. You can add or delete Breadcrumb Items as required.
+    By default, the Breadcrumbs widget contains three Breadcrumb Item widgets. Each Breadcrumb Item represents a location in the breadcrumb trail. You can add or delete Breadcrumb Items as required. In this example, we add another Breadcrumb Item.
+
+      ![](<images/breadcrumbs-1-ss.png>)
 
 1. From the Toolbox, drag another Breadcrumbs Item into your Breadcrumbs Pattern. 
 
-    ![](<images/breadcrumbs-image-10.png>)
+    ![](<images/breadcrumbs-10-ss.png>)
         
 1. In the Title placeholder, enter the breadcrumb title (in this example, More Details) and drag an Icon widget into the Icon placeholder.    
     
-    ![](<images/breadcrumbs-image-11.png>)
+    ![](<images/breadcrumbs-11-ss.png>)
     
 1. So that the new Breadcrumb Item widget icon matches the others, select the Icon widget, and on the **Properties** tab, set the **Name** property to ``Entities.IconName.angle_right``.
 

@@ -3,14 +3,14 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Breadcrumbs UI Pattern
 ---
 
-# Breadcrumbs UI Pattern Reference
+# Breadcrumbs Reference
 
 
 ## Layout and classes
 
-![](<images/breadcrumbs-image-3.png>)
+![](<images/breadcrumbs-3-diag.png>)
 
-## Advanced use Case
+## Advanced use case
 
 ### Use breadcrumbs with ListRecords
 
@@ -24,15 +24,10 @@ summary: Advanced use cases for the Breadcrumbs UI Pattern
 
 1. Publish and test.
 
-    ![](<images/breadcrumbs-image-4.png>)
+    ![](<images/breadcrumbs-4-ss.png>)
 
 ## Additional notes
 
 The Line Separator property of the ListRecords widget should be set to **None**.
 
-![](<images/breadcrumbs-image-5.png>)
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Breadcrumbs](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Navigation/Breadcrumbs)
-
+![](<images/breadcrumbs-5-ss.png>)

@@ -7,37 +7,37 @@ summary: Allows the user select a single value between two range values.
 
 You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track, increases or decreases the value.  
 
-![](images/rangeslider-preview.png)
+![](images/rangeslider-1.png)
 
 ## How to use the Range Slider UI Pattern
 
-1. In Service Studio, in the Toolbox, search for  `Range Slider`. 
+1. In Service Studio, in the Toolbox, search for `Range Slider`. 
 
     The Range Slider widget is displayed.
 
-    ![](images/rangeslider-widget.png)
+    ![](images/rangeslider-2-ss.png)
 
 1. From the Toolbox, drag the Range Slider widget into the Main Content area of your application's screen.
 
-    ![](images/rangeslider-image-1.png)
+    ![](images/rangeslider-3-ss.png)
 
 1. Bind your variable to the **InitialValue** input and use the **OnChange** event to add your logic to handle value changes.
 
-    ![](images/range_slider.png)
+    ![](images/rangeslider-5-ss.png)
 
 1. After setting the **MinValue** , **MaxValue** and the **InitialValue** , you must create the **OnChange** event.
 
-    ![](images/range_slider_on_change.png)
+    ![](images/rangeslider-4-ss.png)
 
 1. Create an integer value and assign it.
 
-    ![](images/range_slder_integer.png)
+    ![](images/rangeslider-6-ss.png)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 
-**Result**:
+**Result**
 
-![](images/Rangeslider_BasicEndResult.gif)
+![](images/rangeslider-7.gif)
 
 
 
@@ -55,16 +55,4 @@ After following these steps and publishing the module, you can test the pattern 
  IsDisabled (Boolean): Optional | If True, the slider is disabled. If False, the slider is enabled. This is the default value. | 
  IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. | 
  VerticalHeight (Integer): Optional | If IsVertical is True, use this property to set the height (in px) of the slider. <p>Examples <ul><li>_Blank_ - The slider is 100px high. This is the default value. </li><li>_250_ - The slider is 250px high.</li></ul></p> | 
- AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: https://kimmobrunfeldt.github.io/progressbar.js/. Example: `{ easing: 'bounce' }` | 
-  
-  
-## Samples
-
-This sample uses the Range Slider Pattern:
-
-![](images/RangeSlider-Sample-1.PNG)
-
-## See also
-
-* OutSystems UI Live Style Guide: [Range Slider](https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSlider.aspx)
-* OutSystems UI Pattern Page: [Range Slider](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=60)
+ AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: https://kimmobrunfeldt.github.io/progressbar.js/. Example: `{ easing: 'bounce' }` |

@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced use cases for the Stacked Cards UI Pattern
 ---
 
-# Stacked Cards UI Pattern Reference
+# Stacked Cards Reference
 
 ## Adding styles to elements
 
@@ -30,7 +30,7 @@ To set the full height of your elements in the Pattern, so that they fill the en
     }
     
 
-## Defining specific heights for all Elements
+## Defining specific heights for all elements
 
 The height of the first element defines the height of each element in the Pattern. To set a specific height, use the following CSS code:
 
@@ -49,7 +49,7 @@ The overlays are enabled by default and have default colors in the Pattern. If y
 
 1. If you change the option “ **UseOverlays** ” to _False_ and add content to the placeholders, they will not be displayed.
 
-    ![](images/Stacked_background.png)
+    ![](images/stackedcards-6-ss.png)
 
 You can set other colors either by adding a container to **OverlayTop** , **OverlayRight** or **OverlayLeft** , and set your class. Or by using the following CSS code:
 
@@ -69,7 +69,7 @@ You can set other colors either by adding a container to **OverlayTop** , **Over
 ## Creating a button to execute swipes
 
 Create each action and drag the [public actions](<public-actions.md>) (SwipeLeft, SwipeRight, or SwipeTop). In the Stacked Cards block, associate the handler to swipe events.  
-![](images/Stacked_swipe.png)
+![](images/stackedcards-7.png)
 
 ## Creating a ListRemove button
 
@@ -86,7 +86,7 @@ OnTopSwipe  |  Triggered when swiping top.  |  False
   
 ## Layout
 
-![](images/Stacked_layout.png)
+![](images/stackedcards-8-diag.png)
 
 ## CSS Selectors
 

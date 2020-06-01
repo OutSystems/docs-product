@@ -7,7 +7,7 @@ summary: Adds swipeable cards that can be dragged in multiple directions trigger
 
 You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged in multiple directions triggering events, such as deny, approve, and archive. This pattern is ideal when you want to individually scan multiple cards.
 
-   ![](images/stackedcards-preview.png)
+   ![](images/stackedcards-1.png)
 
 ## How to use the Stacked Cards Pattern
 
@@ -15,11 +15,11 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
     The Stacked Cards widget is displayed.
 
-    ![](images/stackedcards-icon.png)
+    ![](images/stackedcards-2-ss.png)
 
 1. From the Toolbox, drag the Swipe Events widget into the Main Content area of your application's screen.
 
-    ![](images/stackedcards-image-1.png)
+    ![](images/stackedcards-3-ss.png)
 
     By default, the Stacked Cards widget contains a Content placeholder with a list, as well as an Overlay Top, Overlay Right and Overlay Right placeholders. 
 
@@ -27,7 +27,7 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
     In this example, we delete the list and add images by dragging the Image widget into the COntent placeholder. You can also add a list of images.
 
-    ![](images/Stacked_interaction.png)
+    ![](images/stackedcards-4-ss.png)
 
 1. From the Element Tree, select the Image widget, and on the **Properties** tab, from the Image drop-down, select or import the image you want in the Stacked Cards pattern.
 
@@ -37,7 +37,7 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
 1. Add content to the Overlay placeholders (optional). In this example, we add an icon to each of the placeholders. 
 
-    ![](images/Stacked_overlay.png)
+    ![](images/stackedcards-5-ss.png)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -56,11 +56,3 @@ UseOverlays (Boolean): Optional | If True, overlays for swipe elements are enabl
 ## Compatibility with other patterns
 
 Avoid using the Stacked Cards Pattern inside patterns with swipe events / touch events, like [Tabs](<tabs.md>) or [Carousel](<carousel.md>).
-
-## Samples
-
-The following samples use the Stacked Cards pattern:
-
-![](images/StackedCards-Sample-1.PNG)
-
-![](images/StackedCards-Sample-2.PNG)

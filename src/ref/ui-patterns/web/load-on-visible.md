@@ -3,9 +3,9 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Load on Visible UI Pattern
 ---
 
-# Load on Visible UI Pattern Reference
+# Load on Visible Reference
 
 ## Layout and classes
 
-![](<images/loadonvisible-image-2.png>)
+![](<images/loadonvisible-2-diag.png>)
 

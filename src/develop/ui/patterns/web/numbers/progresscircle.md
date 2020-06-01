@@ -7,26 +7,23 @@ summary: Displays the current progress of a task using circular or semi-circular
 
 You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge. <!-- You can also show progress in a Progress Bar or Progress Circle Fraction display type.  When using the Progress Circle Pattern, you must be consistent, for example, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. -->
 
- ![](<images/progresscircle-image-2.png>)
-
+ ![](<images/progresscircle-2-ss.png>)
 
 **How to use the Progress Circle UI Pattern**
-
 
 1. In Service Studio, in the Toolbox, search for `Progress Circle`. 
 
     The Progress Circle widget is displayed.
 
-    ![](<images/progresscircle-image-8.png>)
+    ![](<images/progresscircle-8-ss.png>)
   
-
 1. From the Toolbox, drag the Breadcrumbs widget into the Main Content area of your application's screen.
     
-    ![](<images/progresscircle-image-9.png>)
+    ![](<images/progresscircle-9-ss.png>)
 
 1. On the **Properties** tab, define the progress value.
 
-    ![](<images/progresscircle-image-1.png>)
+    ![](<images/progresscircle-1-ss.png>)
 
 1. Set the required content in the placeholder.
 

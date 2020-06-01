@@ -1095,10 +1095,22 @@
            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 
 # UI Mobile Patterns
-- develop/ui/patterns/web/utilities/stackedcards.md:
+- develop/ui/patterns/mobile/stackedcards.md:
     - external:
        - "OutSystems UI Pattern":  
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
+- develop/ui/patterns/mobile/rangeslider.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSlider.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=60
+- develop/ui/patterns/mobile/rangesliderinterval.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSliderInterval.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=61
 # Link to Training
 
 - extensibility-and-integration/connect-external-db.md:

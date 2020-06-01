@@ -3,11 +3,11 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Flip Content UI Pattern.
 ---
 
-# Flip Content UI Pattern Reference
+# Flip Content Reference
 
 ## Layout and classes
 
-![](<images/flipcontent-image-2.png?width=600>)
+![](<images/flipcontent-6-diag.png?width=600>)
 
 ## CSS selectors
 
@@ -29,7 +29,7 @@ It is possible to interact with other patterns or trigger actions with FlipConte
 
 1. Set the content in the front and back placeholders.
 
-    ![](<images/flipcontent-image-3.png>)
+    ![](<images/flipcontent-7-ss.png>)
 
 1. Drag a container into the preview and set the Name to AlertEvent.
 
@@ -37,21 +37,21 @@ It is possible to interact with other patterns or trigger actions with FlipConte
 
 1. Set the content in the True and False branches (for instance, the Alert pattern).
 
-    ![](<images/flipcontent-image-4.png>)
+    ![](<images/flipcontent-8-ss.png>)
 
 1. Select the FlipContent pattern and in the Events section, create a new screen action to hold the event.
 
-    ![](<images/flipcontent-image-5.png>)
+    ![](<images/flipcontent-9-ss.png>)
 
 1. Drag the Assign tool in the screen action to assign the Flipped local variable to the isFlipped event variable.
 
 1. Drag the Ajax Refresh node into the screen action and set AlertEvent as the parameter to update the container on the screen. Remove the animation effect.
 
-    ![](<images/flipcontent-image-6.png>)
+    ![](<images/flipcontent-10-ss.png>)
 
 1. Publish and test.
 
-    ![](<images/flipcontent-image-7.gif>)
+    ![](<images/flipcontent-11.gif>)
 
 ### Use the Toggle server action on Flip Content Pattern
 
@@ -65,26 +65,22 @@ It is possible to use a button or containers to interact with FlipContent by usi
 
 1. Set the content in the front and back placeholders.
 
-    ![](<images/flipcontent-image-3.png>)
+    ![](<images/flipcontent-7-ss.png>)
 
 1. Drag a button into the preview.
 
 1. Set the method to Ajax Submit and create a new screen action.
 
-    ![](<images/flipcontent-image-8.png>)
+    ![](<images/flipcontent-12-ss.png>)
 
 1. In the screen action, go to Logic tab and drag the ToggleFlipContent server action into the screen action.
 
-    ![](<images/flipcontent-image-5.png>)
+    ![](<images/flipcontent-9-ss.png>)
 
 1. Set the WidgetId in ToggleFlipContent.
 
-    ![](<images/flipcontent-image-9.png>)
+    ![](<images/flipcontent-13-ss.png>)
 
 1. Publish and test.
 
     ![](<images/flipcontent-image-10.gif>)
-
-## See also
-* OutSystems UI Pattern Documentation: [Flip Content](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Utilities/FlipContent)
-

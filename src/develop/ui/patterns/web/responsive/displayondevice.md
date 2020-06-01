@@ -7,7 +7,7 @@ summary: DisplayOnDevice improves the way information is displayed on different 
 
 You can use the Display on Device UI pattern to select what elements are displayed on which device types. With this pattern you can improve the way information is displayed on different devices - computers, tablets, and phones - by specifically specifying which elements show on each of them. 
 
-  ![](<images/displayondevice-image-4.png>)
+  ![](<images/displayondevice-1.png>)
 
 **How to use the Display on Device UI Pattern**
 
@@ -15,23 +15,21 @@ You can use the Display on Device UI pattern to select what elements are display
 
     The Display on Device widget is displayed.
 
-    ![](<images/displayondevice-image-5.png>)
+    ![](<images/displayondevice-2-ss.png>)
   
 1. From the Toolbox, drag the Display on Device widget into the Main Content area of your application's screen.
 
-    ![](<images/displayondevice-image-6.png>)
+    ![](<images/displayondevice-3-ss.png>)
     
 1. Add the required content to the placeholders inside the Display on Device widget. 
 
     In this example, we add images by dragging the Image widget into the Display on Device widget and selecting an image from the sample OutSystems UI images. 
 
-    ![](<images/displayondevice-image.png>)
+    ![](<images/displayondevice-4-ss.png>)
 
-1. On the **Properties** tab, from the **Behavior** drop-down list, choose the device types you want to display this widget on.
+1. On the **Properties** tab, from the **Behavior** drop-down list, choose the device types you want to display this widget on.  These images are displayed on the device types you specify, and not shown for any other devices.
 
-    These images are displayed on the device types you specify, and not shown for any other devices.
-
-    ![](<images/displayondevice-image-2.png>)
+    ![](<images/displayondevice-5-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

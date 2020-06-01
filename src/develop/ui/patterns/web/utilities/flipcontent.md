@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: FlipContent prioritizes information display, keeping the interface uncluttered.
+summary: Flip Content prioritizes information display, keeping the interface uncluttered.
 ---
 
 # Flip Content
 
  You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information. 
 
-   ![](<images/flipcontent-image-1.gif?width=500>)
+   ![](<images/flipcontent-1.gif?width=500>)
 
 **How to use the Flip content UI Pattern**
 
@@ -15,21 +15,21 @@ summary: FlipContent prioritizes information display, keeping the interface uncl
 
     The Flip Content widget is displayed.
     
-      ![](<images/flipcontent-image-13.png>)
+      ![](<images/flipcontent-2-ss.png>)
       
 1. From the Toolbox, drag the Flip Content widget into the Main Content area of your application's screen.
 
-    ![](<images/flipcontent-image-14.png>)
+    ![](<images/flipcontent-3-ss.png>)
 
 1. Add the required content for the front and back placeholders inside the Flip Content widget. 
 
     In this example, we add images by dragging the Image widget into the front and back placeholders in the Flip Content widget and selecting an image from the sample OutSystems UI images.
 
-    ![](<images/flipcontent-image-15.png>)
+    ![](<images/flipcontent-4-ss.png>)
 
 1. On the **Properties** tab, from the **Trigger** drop-down, you can customize when the Flip Content widget is triggered, for example, when it is clicked.  
 
-    ![](<images/flipcontent-image-11.png>)
+    ![](<images/flipcontent-5-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -892,6 +892,8 @@
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+         - "OutSystems UI Pattern": 
+           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=19
 - develop/ui/patterns/web/content/lightboximage.md:
     - ref/ui-patterns/web/lightbox-image.md
     - external:

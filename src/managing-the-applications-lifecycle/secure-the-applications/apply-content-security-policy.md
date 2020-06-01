@@ -39,10 +39,10 @@ To configure the CSP in all environments use LifeTime, the management console of
 To configure CSP for an application in LifeTime:
 
 1. In LifeTime, select the **Applications** section, and then the application.
-2. Select the **Security Settings** option.
-3. In the drop list, select the environment to which the settings will apply.
-4. Enable CSP.
-5. Configure directives, with one value per line.
+1. Select the **Security Settings** option.
+1. In the drop list, select the environment to which the settings will apply.
+1. Enable CSP.
+1. Configure directives, with one value per line.
 
 ## Configure CSP in Service Center
 
@@ -53,8 +53,8 @@ If you don’t have LifeTime installed, configure CSP in each environment using
 To configure CSP for all apps in an environment, in Service Center:
 
 1. In the **Administration** section, select the **Security** option.
-2. Enable CSP.
-3. Configure directives, with one value per line.
+1. Enable CSP.
+1. Configure directives, with one value per line.
 
 ### For an app
 
@@ -70,7 +70,7 @@ To configure CSP for an application in Service Center:
 Once you set CSP, monitor the blocked resources using the management console of the environment (Service Center):
 
 1. Go to the **Monitoring** section and select the **Errors** option.
-2. Set the eSpace filter to CSPReport to only see the resources blocked by CSP.
+1. Set the eSpace filter to CSPReport to only see the resources blocked by CSP.
 
 When configuring CSP take into account the following risks of misconfiguration:
 

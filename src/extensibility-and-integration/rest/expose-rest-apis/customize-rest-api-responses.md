@@ -15,15 +15,15 @@ OutSystems allows you to customize the information sent in responses when exposi
 
 For that, do the following:
 
-1. In the **Logic** tab, open the **Integrations** folder. 
+1. In the **Logic** tab, open the **Integrations** folder.
 
-1. In the exposed REST API, set the property On Response to `New OnResponse`. 
+1. In the exposed REST API, set the property On Response to `New OnResponse`.
 
     ![REST API in Service Studio](images/ss-rest-expose-onresponse.png)
 
-1. Open the "OnResponse" callback action that is now available under the REST API.
+1. Open the "OnResponse" callback action that's now available under the REST API.
 
-1. Design the logic to customize the information of the response. 
+1. Design the logic to customize the information of the response.
 
     ![Input and output parameters of OnResponse callback](images/ss-rest-expose-onresponse-tree.png)
 
@@ -31,4 +31,4 @@ For that, do the following:
 
     Make sure to set the "CustomizedResponse" output to the request after your preprocessing.
 
-Once defined and configured in the REST API, the "OnResponse" callback will be executed for **all methods** exposed by the REST API.
+Once defined and configured in the REST API, OutSystems executes the "OnResponse" callback for **all methods** exposed by the REST API.

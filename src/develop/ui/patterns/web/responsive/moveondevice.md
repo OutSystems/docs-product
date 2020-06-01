@@ -15,16 +15,16 @@ You can use the Move on Device UI Pattern to define the placement of information
 
 ![](<images/moveondevice-image-3.png>)
 
-**How to use the Move on Device UI Pattern**  
+**How to use the Move on Device UI Pattern**
 
-1. In Service Studio, in the Toolbox, search for `Container`. 
+1. In Service Studio, in the Toolbox, search for `Container`.
 
     The Container widget is displayed.
-    
+
     ![](<images/moveondevice-image-6.png>)
 
 1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen.
-    
+
     ![](<images/moveondevice-image-7.png>)
 
 1. On the **Properties** tab, enter the container name.
@@ -37,7 +37,7 @@ You can use the Move on Device UI Pattern to define the placement of information
 
     ![](<images/moveondevice-image-5.png>)
 
-1. Add the required content to the Move on Device widget. 
+1. Add the required content to the Move on Device widget.
 
     In this example, we add an image by dragging the Image widget into the Move on Device widget and selecting an image from the sample OutSystems UI images.
 
@@ -47,12 +47,11 @@ You can use the Move on Device UI Pattern to define the placement of information
 
     ![](<images/moveondevice-image-2.png>)
 
-
 After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
-| **Properties** |  **Description** |
+| Properties |  Description |
 |---|---|
 | PhoneWidgetId (Text): Optional  | Target container that displays this widget on phones. <p>Examples <ul><li>_Container1.Id_ - The content appears in this container when viewed on a phone</li></ul></p>|
 | TabletWidgetId (Text): Optional | Target container that displays this widget on tablets.<p>Examples  <ul><li>_Container2.Id_ - The content appears in this container when viewed on a tablet</li></ul></p>||

@@ -17,17 +17,17 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
 
 **How to use the Light Box Image UI Pattern**
 
-1. In Service Studio, in the Toolbox, search for `Light Box Image`. 
+1. In Service Studio, in the Toolbox, search for `Light Box Image`.
 
     The Light Box Image widget is displayed.
 
-    ![](<images/lightboximage-image-12.png>)    
+    ![](<images/lightboximage-image-12.png>)
 
 1. From the Toolbox, drag the Light Box Image widget into the Main Content area of your application's screen.
-   
+
     ![](<images/lightboximage-image-13.png>)
 
-1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget. This is a thumbnail image. 
+1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget. This is a thumbnail image.
 
     The **Select Image** pop-up is displayed.
 
@@ -38,20 +38,20 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
     Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../develop/ui/image/display-image.md).
 
 1. From the Widget tree, select the Light Box Image widget.
-    
+
     ![](<images/lightboximage-image-14.png>)
 
-1. On the **Properties** tab, set the relevant Light Box Image properties, for example, the title of the image that is displayed,the group the image belongs to, and the size that the image will display in full screen mode.
+1. On the **Properties** tab, set the relevant Light Box Image properties, for example, the title of the image that is displayed, the group the image belongs to, and the size that the image will display in full screen mode.
 
      ![](<images/lightboximage-image-10.png>)
 
-1. Repeat steps 2-6 for each of the images you want in your Light Box Pattern. 
+1. Repeat steps 2-6 for each of the images you want in your Light Box Pattern.
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
-| **Property** |  **Description** |
+| Property | Description |
 |---|---|
 | Title (Text): Optional  |Image title that is displayed when previewing the image in ful screen mode. <p>Examples<ul><li>_"Image 1"_ - Displays *Image 1* as the image title. </li></ul></p>|
 | Group (Text): Optional | Name of the group of images. Similar to the concept of a picture album. You can navigate through pictures with the same group name when viewing them in full screen mode.<p>Examples<ul><li>_Gallery 1_ - Adds this image to the _Gallery 1_ group</li></ul></p> |

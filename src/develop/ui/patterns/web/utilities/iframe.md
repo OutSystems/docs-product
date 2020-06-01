@@ -4,7 +4,7 @@ summary: Iframe displays information from other apps on the screen in small prev
 ---
 
 # Iframe
- 
+
 <div class="info" markdown="1">
 
 We’ve been working on this article. Please let us know how useful this new version is by voting.
@@ -17,12 +17,12 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 **How to use the Iframe UI Pattern**
 
-1. In Service Studio, in the Toolbox, search for `Iframe`. 
+1. In Service Studio, in the Toolbox, search for `Iframe`.
 
     The Iframe widget is displayed.
-    
+
     ![](<images/iframe-image-6.png>)
-      
+
 1. From the Toolbox, drag the Iframe widget into the Main Content area of your application's screen.
 
     ![](<images/iframe-image-7.png>)
@@ -35,11 +35,9 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
-
-
 ## Properties
 
-| **Property** |  **Description** |
+| Property | Description |
 |---|---|
 | SourceURL (Text): Mandatory | The target URL that loads on the Iframe.<p>Examples<ul><li>_"https://www.wikipedia.com"_ - Displays the Wikipedia website in your app as a bite-size preview</li></ul></p> | 
 | Title (Text): Optional | Iframe title.<p>Examples<ul><li>_"Wikipedia Website"_ - Displays _Wikipedia Website_ as the Iframe title</li></ul></p>|

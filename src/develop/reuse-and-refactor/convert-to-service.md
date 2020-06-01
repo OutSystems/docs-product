@@ -17,15 +17,10 @@ If there are other developers working on the module you are converting, make sur
 Service modules help enforce stricter segmentation of modules and to encapsulate core business services, by not allowing the following elements:
 
 * Interface elements and properties, for example UI flows, Web Screens, Blocks and Images.
-
 * Module properties for interface, for example JavaScript and Global Event Handler.
-
 * Email elements, for example Emails and Send Email in Processes.
-
 * Session Variables.
-
 * Client side logic and Local Storage Entities.
-
 * Human Activities in Processes.
 
 Before converting a Web or Mobile module to a Service module, remove these elements from the module and make sure that there are no TrueChange errors.

@@ -13,7 +13,7 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 The **Users** application of a specific OutSystems environment is available at `https://<environment_address>/Users`.
 
-You need an account with administrator privileges to log in the Users application. This account **is not** the same you use to connect to Service Center, LifeTime or Service Studio, as those are IT users, although you can create accounts with the same credentials for both purposes.
+You need an account with administrator privileges to log in the Users application. This account is **not** the same you use to connect to Service Center, LifeTime or Service Studio, as those are IT users, although you can create accounts with the same credentials for both purposes.
 
 Before accessing the Users application for the first time, you must [configure the Administrator user](#configure-users-administrator).
 
@@ -27,7 +27,7 @@ To configure the Administrator user, do the following:
 
 1. Log in to Service Center using the administrator credentials (`http://<environment_address>/ServiceCenter`).
 
-1. Go to **Factory -> Modules**.
+1. Go to **Factory** > **Modules**.
 
 1. Search for **Users** and click the module name to open the details page.
 

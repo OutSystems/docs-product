@@ -26,7 +26,7 @@ Output parameters
     * **Count**: The number of records returned by the query without considering the SQL Max Records property.
 
 Output Structure
-:   Output Structure is mandatory. You need to define the structure (data types of the columns) that your query returns. You can use any combination of Entities, Structures or both, but the attribute order/data type must match your Select. Output Structure is needed even if your SQL statement does not return any results. 
+:   Output Structure is mandatory. You need to define the structure (data types of the columns) that your query returns. You can use any combination of Entities, Structures or both, but the attribute order/data type must match your Select. Output Structure is needed even if your SQL statement does not return any results.
 
     * Example 1: When selecting all attributes of the Employee Entity (with `Id`, `Name`, `Email`, and `PhoneNumber` attributes), 
     specify the Employee Entity as the Output Structure. This enforces that List output parameter of the SQL 
@@ -37,7 +37,6 @@ Output Structure
     enforces that List output parameter of the SQL query returns EmployeeInfo List data type. 
 
 To reference an entity in your SQL query write it between curly brackets (e.g. `{User}`) and to reference an entity attribute write it between square brackets (e.g. `[PhoneNumber]`).
-
 
 ## Write Your Own SQL Query
 
@@ -50,12 +49,15 @@ Do the following:
 1. Use the output list of the SQL node to access the result of the SQL query.
 
 ## Test Your SQL Query
+
 You can test your work by clicking the `TEST` button located at the bottom of the SQL editor. In order to test it successfully make sure that:
+
 1. If you have `Query Parameters` you should first assign a test value in the Test Inputs tab.
 
     _If no values are assigned, the query will be tested with empty values._
-    
+
 1. There is one or more output entities/structures that will match the attributes on the `SELECT` statement.
+
 1. Click **TEST**.
 
 ![Test Your SQL Query](images/test-sql.gif)
@@ -126,6 +128,5 @@ To convert an existing Aggregate to a SQL element follow these steps:
 
 ![Convert an Aggregate to SQL](images/convert-to-sql.gif)
 
-Your action flow now includes a SQL element based on the original Aggregate. 
+Your action flow now includes a SQL element based on the original Aggregate.
 The original Aggregate is kept in the action flow but it is disabled. After validating the query results of the new SQL element you can delete the disabled Aggregate.
-

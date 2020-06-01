@@ -49,7 +49,7 @@ Center, do the following:
 
 ### Customizing the Mobile App Domain Name
 
-<div class="info">
+<div class="info" markdown="1">
 
 This feature is only available in OutSystems on-premises installations.
 

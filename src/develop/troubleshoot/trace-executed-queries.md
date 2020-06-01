@@ -4,7 +4,7 @@ summary: Adding information about the query origin to executed SQL queries allow
 
 # Trace Executed Queries Back to Your OutSystems Applications
 
-<div class="info">
+<div class="info" markdown="1">
 
 This feature is only available in OutSystems on-premises installations.
 

@@ -21,11 +21,12 @@ You can use the Progress Circle UI Pattern to show the current progress of an op
     
     ![](<images/progresscircle-9-ss.png>)
 
-1. On the **Properties** tab, define the progress value.
+    
+1. On the **Properties** tab, define the progress value using the **Progress** property. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.md) of [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>).
 
     ![](<images/progresscircle-1-ss.png>)
 
-1. Add the required content to the placeholder. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.md) of [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>).
+1. On the **Properties** tab, you can also change the Progress Circle's look and feel by setting the (optional) properties, for example, the color and animation settings. 
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

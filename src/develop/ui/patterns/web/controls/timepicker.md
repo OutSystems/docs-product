@@ -1,128 +1,49 @@
 ---
 tags: runtime-traditionalweb; 
-summary: TimePicker selects a single time from a list.
+summary: Time Picker selects a single time from a drop-down list.
 ---
 
-# TimePicker 
+# Time Picker 
 
-Selects a single time from a list.
+You can use the Time Picker UI Pattern to select a single time from a drop-down list.
 
-Use the Time Picker to enable end users to select a single time from a dropdown.
+  ![](<images/timepicker-gif-1.gif>)
 
-**How to use**
 
-1. Drag the TimePicker pattern into the preview.
+**How to use the Time Picker UI Pattern**
 
-    ![](<images/timepicker-image-1.png>)
+1. In Service Studio, in the Toolbox, search for `Time Picker`.
 
-1. Set a variable of type Time to the input.
+    The Time Picker widget is displayed.
 
-1. Publish and test.
+    ![](<images/timepicker-image-14.png>)
 
-    ![](<images/timepicker-gif-1.gif>)
+1. From the Toolbox, drag the Time Picker widget into the Main Content area of your application's screen.
 
-## Input Parameters
+    ![](<images/timepicker-image-15.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| StartTime  |  The time that the dropdown options will scroll to in order to have it as the first item. Make sure that the time is according to the interval that you set to begin with. Default is NewTime(0,0,0) -> 12:00am. Example: If you set the interval as 30, but the Start Time as 10:05:00. Then while it will be the time that it'll appear on the input, the drop down won't scroll down to the hour since it doesn't match the interval. | Time | No | NewTime(0,0,0) |
-| Interval  |  Interval of time (in minutes) between options. Example: If 30, then the options will appear as: 08:00:00, 08:30:00, 09:00:00... | Integer | No | 30 |
-| Is24hFormat |  If true, then time format will be 24 hour. If false, then 12 hour. | Boolean | No | True |
-| AdvancedFormat | Allows for more options than the ones given in the input parameters. Inputs: TimePickerAdvancedFormat:  DisabledTimes (Time List), MinTime (Time), MaxTime (Time), StartEmpty (Boolean) | TimePickerAdvancedFormat | No | none |
+1. By default, the Time Picker widget contains an Input widget. It is mandatory to create a new local variable for this Input widget.
+
+   ![](<images/timepicker-image-16.png>)
+
+1. Set the variable **Data Type** to **Time**.
+
+    ![](<images/timepicker-image-17.png>)
+
+    
+1. On the **Properties** tab, you can change the look and feel of the Time Picker widget by setting the (optional) properties.
+
+    ![](<images/timepicker-image-18.png>)
+
+1. After following these steps and publishing the module, you can test the pattern in your app. 
+
+
+## Properties
+
+| **Property** |  **Description** |  
+|---|---|
+| StartTime (Time): Optional  |  The first time option that appears in the drop-down. Make sure that the time is set according to the **Interval** property (if set). <!--Default is NewTime(0,0,0) -> 12:00am. Example: If you set the interval as 30, but the Start Time as 10:05:00. Then while it will be the time that it'll appear on the input, the drop down won't scroll down to the hour since it doesn't match the interval. --><br/><br/>Examples<br/><br/><ul><li>_Blank_ - 12:00am is displayed as the first option in the drop-down. This is the default. </li><li>_15:00_ - 15:00 is displayed as the first option in the drop-down.</li></ul> | 
+| Interval (Integer): Optional  |  Interval of time (in minutes) between the drop-down options.<br/><br/>Example<ul><li>_Blank_ - The interval between each option is set to 30 minutes. This is the default.</li><li>_60_ - The interval between each option is set to 60 minutes.</li></ul> |
+| Is24hFormat (Boolean): Optional|  If True, the time format is 24 hour. This is the default. If False, the time format is 12 hour. |
+| AdvancedFormat (TimePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters.<br/><br/>**Inputs**<br/><br/>TimePickerAdvancedFormat<br/><br/><ul><li> DisabledTimes (Time List)</li><li> MinTime (Time)</li> <li>MaxTime (Time)</li> <li>StartEmpty (Boolean)</li></ul> |
   
-## Layout and Classes
-
-![](<images/timepicker-image-2.png>)
-
-## Events
-
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnSelect | Event will be triggered when a time is selected returning it.  |  False  |
-
-## CSS Selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
-| .time-option | .time-option-selected |  When the time option is selected  |
-| .time-option | .time-picker .dropdown-content-list .time-option[disabled="disabled"] |  When the time option is disabled  |
-
-## Advanced Use Case
-
-### Use the OnSelect event
-
-1. Drag the TimePicker pattern into the preview.
-
-    ![](<images/timepicker-image-1.png>)
-
-1. Set a variable of type Time to the input.
-1. Set the StartTime Parameter to a variable Time.
-
-    ![](<images/timepicker-image-3.png>)
-
-1. In the preparation, set the Time variable to the start time you want for the picker. 
-
-    ![](<images/timepicker-image-4.png>)
-
-1. Set the OnSelect Event to TimePatternOnSelect.
-
-    ![](<images/timepicker-image-5.png>)
-
-1. In the TimePatternOnSelect action, assign  TimeSelected to the Time variable. 
-
-    ![](<images/timepicker-image-6.png>)
-
-1. Set a Feedback_Message action and show the Timein the message.
-
-1. Create a container Timepicker_Container around the TimePicker. 
-
-    ![](<images/timepicker-image-7.png>)
-
-1. In the action TimePatternOnSelect, add an Ajax refresh for the Timepicker_Container.
-
-    ![](<images/timepicker-image-8.png>)
-
-![](<images/timepicker-gif-2.gif>)
-
-### Disable specific times
-
-1. Drag the TimePicker pattern into the preview.
-
-    ![](<images/timepicker-image-1.png>)
-
-1. Set a variable of type Time to the input.
-1. Click the plus before the AdvancedFormat parameter.
-
-    ![](<images/timepicker-image-9.png>)
-
-1. Click the plus before the DisabledTimes parameter.
-
-    ![](<images/timepicker-image-10.png>)
-
-1. Add the times NewTime(4,0,0) and NewTime(7,0,0).
-
-    ![](<images/timepicker-image-11.png>)
-
-1. Publish and test.
-
-    ![](<images/timepicker-gif-3.gif>)
-
-### Start Input as Empty
-
-1. Drag the TimePicker pattern into the preview.
-
-    ![](<images/timepicker-image-1.png>)
-
-1. Set a variable of type time to the input.
-
-1. Click the plus before the AdvancedFormat parameter.
-
-    ![](<images/timepicker-image-9.png>)
-
-1. Set the StartEmpty parameter to True.
-
-    ![](<images/timepicker-image-12.png>)
-
-1. Publish and test.
-
-    ![](<images/timepicker-image-13.png>)

@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: 
 ---
 
-# Stacked  Cards Pattern
+# Stacked Cards
 
 The Stacked Cards pattern includes multiple items. For dynamic content, use a List directly inside the Content placeholder. The content displayed when swiping left, right and top is dynamic and must be set by the user. Use this pattern to create a message board or to display multiple images.
 

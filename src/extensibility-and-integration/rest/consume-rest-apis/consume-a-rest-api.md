@@ -32,6 +32,12 @@ Do the following:
 
     ![](images/ss-rest-consume-dialog.png)
 
+1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Finish**.
+
+    ![](images/ss-rest-consume-multiples-server-endpoint-dialog.png)
+
+    _Note:_ You can't change the server endpoint after importing the REST API.
+
 When importing the REST API, Service Studio does the following:
 
 * Creates the REST API 

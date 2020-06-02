@@ -1,119 +1,31 @@
 ---
-summary: Check the list of currently unsupported use cases when consuming REST services using "enums" and how to overcome some of these situations.
+summary: Use cases currently unsupported when consuming REST services using "enums" and how to overcome some of these situations.
 ---
 
 # Unsupported REST Enum Use Cases
 
-Service Studio can import "enum" (enumerate) elements when consuming REST services. These elements are represented as Static Entities in Service Studio and each value of the "enum" is represented as a Static Entity Record.
+Service Studio can import "enum" (enumerate) elements when consuming REST services. Service Studio represents these elements as Static Entities and each value of the "enum" corresponds to a Static Entity Record.
 
-While importing a REST API in Service Studio, some parameters/properties might be associated with the Text data type instead of the "enum" that is defined in the Swagger specification file describing the REST API.
+Importing a REST API in Service Studio can create parameters/properties with Text data type instead of the "enum" defined in the Swagger specification file describing the REST API.
 
-In some cases, you can do some small changes to the specification file so that the identified limitations no longer apply, and you can effectively consume the REST API in OutSystems.
+Sometimes you can do some small changes to the specification file so that the identified limitations no longer apply, and you can effectively consume the REST API in OutSystems.
 
 The current list of unsupported use cases is the following:
 
-* [Input Parameter specified outside the body](#input-outside-body)
 * ["Enums" or array of "enums" with a type other than Integer or Text](#enum-types)
 * [Input Parameter specified by reference](#input-by-reference)
 * [Output Parameter specified in header](#output-in-header)
- 
-In general, "enums" are supported when they are defined inside a "schema" field or referenced using "$ref"; otherwise they are not currently supported in OutSystems.
+* [Variable type using the oneOf keyword](#oneof)
 
-In the following sections we provide general instructions to perform the necessary changes in the Swagger specification file for working around some of the currently unsupported use cases.
+In general, OutSystems supports "enums" in consumed REST services when they're defined inside a "schema" field or referenced using "$ref"; otherwise, they're not currently supported in OutSystems.
 
-## Input Parameter specified outside the body { #input-outside-body }
-
-The type of an input parameter is defined based on the "type" field in the Swagger specification. Besides the body, these parameters can be included in:
-
-* Path
-* Query
-* Header
-* Form URL Encoded
-
-In all these uses cases except for the body, the Static Entity will not be created, because it's defined inline and not inside of a "schema" field or referenced using a "$ref" field.
-
-Examples:
-
-```javascript
-"parameters": [
-    {
-        "name": "RegionId",
-        "in": "path",
-        "type": "integer",
-        "format": "int32",
-        "enum": [
-            56411,
-            23221,
-            11222,
-            45596
-        ],
-        "required": true
-    }
-]
-```
-
-```javascript
-"parameters": [
-    {
-        "name": "RegionId",
-        "in": "query",
-        "type": "integer",
-        "format": "int64",
-        "enum": [
-            56411,
-            23221,
-            11222,
-            45596
-        ],
-        "required": false
-    }
-]
-```
-
-```javascript
-"parameters": [
-    {
-        "name": "RegionId",
-        "in": "header",
-        "type": "string",
-        "enum": [
-            "Weddell Sea",
-            "Riiser-Larsen Ice Shelf",
-            "Coats Land"
-        ],
-        "required": false
-    }
-]
-```
-
-```javascript
-"parameters": [
-    {
-        "name": "RegionId",
-        "in": "formData",
-        "type": "integer",
-        "format": "int32",
-        "enum": [
-            56411,
-            23221,
-            11222,
-            45596
-        ],
-        "required": false
-    }
-]
-```
-
-### Use Case Workaround
-
-Currently there is no generic workaround available to overcome this unsupported use case.
-
+In the following sections you can find instructions on adjusting the Swagger specification file to work around some currently unsupported use cases.
 
 ## Enums or array of enums with a type other than Integer or Text { #enum-types }
 
-The type of an input parameter, output parameter or structure attribute is based on the type defined in the "schema" field or referenced using a "$ref" field. The Static Entity will be created and referenced correctly as the parameter type. 
+OutSystems defines the type of an input parameter, output parameter or structure attribute based on the type defined in the "schema" field or referenced using a "$ref" field. The platform creates a Static Entity and references it correctly as the parameter type.
 
-However, since the type (or the array element type) cannot be defined as an identifier in the OutSystems platform (the only types allowed for identifiers are Integer, Long Integer and Text), Service Studio will show an error stating that.
+In OutSystems, identifiers can't have a complex type (or array element type) as data type. You can only define their data type as Integer, Long Integer, or Text. Service Studio shows you an error when there's an enum (or array of enums) in the API specification with a type other than the supported ones.
 
 Examples:
 
@@ -159,7 +71,6 @@ Examples:
 }
 ```
 
-
 ```javascript
 "responses": {
     "200": {
@@ -186,11 +97,10 @@ Examples:
 }
 ```
 
+### Use case workaround
 
-### Use Case Workaround
-
-Try changing the type of the "enum" to Text since this is the type that accepts all the other allowed types. Note that you may need to explicitly convert these values back to their original type, since they are interpreted by the OutSystems platform as Text.  
-On the other hand, the consuming REST API will be expecting them as integers or numbers (in input parameters); in this case you may need to [customize the request using an "OnBeforeRequest" callback](simple-customizations.md). Additionally, take into account any default values when defining the logic that customizes the request/response.
+Change the type of the "enum" to Text since this is the type that accepts all the other allowed types. Note that you may need to explicitly convert these values back to their original type, since the OutSystems platform interprets them as Text.  
+On the other hand, the consuming REST API expects these input parameters to contain integers or numbers. You need to [customize the request using an "OnBeforeRequest" callback](simple-customizations.md). Additionally, consider any default values when defining the logic that customizes the request/response.
 
 ## Input Parameter specified by reference { #input-by-reference }
 
@@ -204,7 +114,7 @@ Examples:
         "$ref": "#/parameters/RegionId"
     }
 ]
- 
+
 "parameters": {
     "RegionId": {
         "name": "RegionId",
@@ -246,13 +156,13 @@ Examples:
 }
 ```
 
-### Use Case Workaround
+### Use case workaround
 
 Define the parameter in place instead of referencing it.
- 
+
 ## Output Parameter specified in header { #output-in-header }
 
-Output parameters defined in a "headers" section are created with the type defined in the "type" field and the Static Entity will not be created. 
+Output parameters defined in a "headers" section are created with the type defined in the "type" field and the Static Entity will not be created.
 
 Examples:
 
@@ -302,6 +212,20 @@ Examples:
 }
 ```
 
-### Use Case Workaround
+### Use case workaround
 
-Currently there is no generic workaround available to overcome this unsupported use case.
+Currently there is no generic workaround to overcome this unsupported use case.
+
+## Variable type using the oneOf keyword { #oneof }
+
+Having elements of a specification whose definition allows for more than one type using the `oneOf` keyword is currently not supported. In this case, OutSystems determines a specific type for the element according to the following rules:
+
+* If the `oneOf` definition has only one Object (complex type) entry, OutSystems selects that Object for the type.
+* If there are multiple or no Objects, OutSystems searches for a `string` entry. If it finds one or more entries, OutSystems uses the first found `string` entry for the type.
+* If none of the above rules applies, OutSystems uses the first entry of the `oneOf` definition for the type.
+
+The type is automatically set according to the rules above. However, you can change the type later, after importing the REST service.
+
+### Use case workaround
+
+Besides customizing the type defined automatically by the platform when importing the service, there is no generic workaround to overcome this unsupported use case.

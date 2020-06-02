@@ -7,7 +7,7 @@ summary: Advanced uses cases for the Stacked Icon UI Pattern.
 
 ## Layout and classes
 
-![](<images/stackedicon-image-3.png>)
+![](<images/stackedicon-3-diag.png>)
 
 ## CSS Selectors
 
@@ -27,28 +27,22 @@ summary: Advanced uses cases for the Stacked Icon UI Pattern.
 
 1. Set the parameters for the Tooltip behavior.
 
-    ![](<images/stackedicon-image-4.png>)
+    ![](<images/stackedicon-4-ss.png>)
 
 1. In the Widget placeholder, drag a StackedIcon Pattern.
 
 1. Set the parameters for the SatckedIcon Pattern.
 
-    ![](<images/stackedicon-image-5.png>)
+    ![](<images/stackedicon-5-ss.png>)
 
 1. In the Content placeholder, from the Tooltip Pattern, set the desired label for the icon.
 
-    ![](<images/stackedicon-image-6.png>)
+    ![](<images/stackedicon-6-ss.png>)
 
 1. Publish and test.
 
-    ![](<images/stackedicon-gif-1.gif>)
+    ![](<images/stackedicon-1.gif>)
 
 ## Notes
 
 The InvertSize parameter changes the sizes of the back and front icons with each other. This means toggling the `.fa-stack-1x` and `.fa-stack-2x` CSS classes.
-
-
- ## See also
-
-* OutSystems UI Pattern Documentation: [Stacked Icon](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Utilities/StackedIcon)
-

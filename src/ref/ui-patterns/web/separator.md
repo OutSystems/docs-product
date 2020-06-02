@@ -3,11 +3,11 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Separator UI Pattern.
 ---
 
-# Separator UI Pattern Reference
+# Separator Reference
 
 ## Layout and classes
 
-![](<images/separator-image-2.png>)
+![](<images/separator-2-diag.png>)
 
 ## CSS selectors
 
@@ -35,5 +35,5 @@ summary: Advanced use cases for the Separator UI Pattern.
 
 1. Publish and test.
 
-    ![](<images/separator-image-3.png>)
+    ![](<images/separator-3.png>)
 

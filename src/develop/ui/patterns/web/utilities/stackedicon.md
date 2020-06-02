@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: StackedIcon expands the icon set and creates new graphical representation of concepts.
+summary: Stacked Icon expands the icon set and creates new graphical representation of concepts.
 ---
 
 # Stacked Icon
 
 You can use the Stacked Icon Pattern to stack two icons on top of each other.  
 
-![](<images/stackedicon-image-8.png>)
+![](<images/stackedicon-8.png>)
 
 **How to use the Stacked Icon UI Pattern**
 
@@ -15,16 +15,15 @@ You can use the Stacked Icon Pattern to stack two icons on top of each other.
 
     The Stacked Icon widget is displayed.
 
-   ![](<images/stackedicon-image-9.png>)
+   ![](<images/stackedicon-9-ss.png>)
 
 1. From the Toolbox, drag the Stacked Icon widget into the Main Content area of your application's screen.
 
-    ![](<images/stackedicon-image-10.png>)
+    ![](<images/stackedicon-10-ss.png>)
 
 1. On the **Properties** tab, set any of the optional properties for the icons, for example, the front and back icons as well as the size and color of the icon. 
 
-    ![](<images/stackedicon-image-7.png>)
-
+    ![](<images/stackedicon-7-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

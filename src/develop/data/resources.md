@@ -14,13 +14,14 @@ You can import Resources to your module in the Resources folder of the Data tab:
 Any Resource you add to your module is saved in the module's OML file. When you publish the module, the Resources are deployed depending on the value set in their Deploy Action property:
 
 * **Do Nothing**: The resource is not deployed.
-* **Deploy to Target Directory**: The resource is deployed to the sub-directory set in the Target Directory property, which is created under the deploy directory of the module.
-    <div class="info" markdown="1">
-    Deploying to Target Directory is not applicable if you are using Library Modules
-    </div>
+
+* **Deploy to Target Directory**: The resource is deployed to the sub-directory set in the Target Directory property, which is created under the deploy directory of the module.  
+    **Note:** Deploying to Target Directory is not applicable if you are using Library Modules.
 
 <div class="info" markdown="1">
+
 Adding big resource files to your module may slow down the publish operation.
+
 </div>
 
 In the table below there are some example of how you can use the Resources path and filename in the design of your module:

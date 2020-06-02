@@ -4,7 +4,7 @@ summary: Check how to configure an application or a module or in Service Center 
 
 # Configure an Application or Module to Use a Deployment Zone
 
-<div class="info">
+<div class="info" markdown="1">
 
 Only available in OutSystems on-premises installations.
 

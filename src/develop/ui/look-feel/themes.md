@@ -296,8 +296,7 @@ Here is an example of blocks for a web theme and their placeholders:
 
 ![](images/theme-layout.png)
 
-
-# Creating a theme from a base theme
+## Creating a theme from a base theme
 
 When you create a new app it already contains a copy of the CSS which you can edit. You can create new, additional, themes manually.
 
@@ -305,4 +304,4 @@ When you create a new app it already contains a copy of the CSS which you can ed
 1. Enter the name of your new theme.
 1. Optionally, change the **Base Theme**. If you do not see the theme you want in the list, add a reference to it.
 1. With your theme selected in the Properties Pane, click on **Style Sheet**.
-1. Enter your styles in the first tab of the CSS editor. You cannot edit the the original theme, but you can create new styles with the same class names and override the original styles.
+1. Enter your styles in the first tab of the CSS editor. You cannot edit the original theme, but you can create new styles with the same class names and override the original styles.

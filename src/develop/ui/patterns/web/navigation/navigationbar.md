@@ -1,130 +1,72 @@
 ---
 tags: runtime-traditionalweb; 
-summary: 
+summary: Organizes content and enables the user to navigate their way around your app using hyperlinks.
 ---
 
-# NavigationBar
+# Navigation Bar
 
-Organize the content and enable quick navigation through an application with vertically stacked links. These stacked links can be displayed with different hierarchy levels. The NavigationBar pattern uses the Navigation Bar Item and Navigation Bar SubItem to create the necessary structure.
+You can use the Navigation Bar UI Pattern to organize content and enable the user to navigate their way around your app using hyperlinks. You use this pattern when the user needs to navigate through an application's main sections while maintaining the ability to browse to another subsection. 
 
-Use it when the end user needs to navigate through an application's main sections while maintaining the ability to browse to another subsection quickly. 
+![](images/navigationbar-7-ss.png)
 
-**How to use**
+**How to use the Navigation Bar UI Pattern**
 
-1. Drag the NavigationBar pattern into the preview.
+The following use case adds the Navigation Bar UI Pattern to **one** screen. If you want the Navigation Bar to appear on multiple screens in your app, we recommend adding the pattern to a web block. For more information, see [Create and Reuse Screen Blocks](../../../reuse/block-create-reuse.md). 
 
-    ![](images/navigationbar-image-1.png?width=500)
+1. In Service Studio, in the Toolbox, search for `Navigation Bar`. 
 
-1. Drag as many NavigationBarItems as required.
+    The Navigation Bar widget is displayed.
 
-1. In the NavigationBarItems, drag as many NavigationBarSubItems as you need.
+    ![](images/navigationbar-6-ss.png)
 
-    ![](images/navigationbar-image-2.png)
+1. From the Toolbox, drag the Navigation Bar widget into the Main Content area of your application's screen.
 
-1. Use the optional Input Parameters to set the default values.
+    ![](images/navigationbar-1-ss.png)
 
-    ![](images/navigationbar-image-3.png)
+    By default, the Navigation Bar widget contains a Navigation Bar Item widget and a Navigation Bar SubItem widget. You can add or delete as many of these widgets as required.
 
-1. Publish and test.
+1. Add the required content to the Navigation Bar Item and Navigation Bar SubItem placeholders. 
 
+    In this example we add `Phones`, `Audio`, and `Accessories` to the Navigation Bar Item **Title** placeholders.
 
+    ![](images/navigationbar-12-ss.png)   
 
-## Input Parameters
-#### NavigationBar
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| IsFixed  |  If Fixed is true, NavigationBar will allways be in the same position within the screen. If set to false, it scrolls with the page content. |  Boolean | False | True |
-| TopPosition  |  Set the top position when the NavigationBar is fixed. Just insert the number, the pixels unit will be added automatically. |  Integer | False | none |
-| MultipleItems  |  Allows multiple NavigationBarItems to be opened having the effect of Accordion. |  Boolean | False | True |
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | none |
+    We also add links to the Navigation Bar SubItem **Content** placeholders. For each of the links, on the **Properties** tab, we add a link name and title, as well as the link destination.
+    
+    ![](images/navigationbar-9-ss.png)   
 
-#### NavigationBarItem
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| IsActive  |  Set IsActive to true, to define as the selected element. |  Boolean | False | False |
-| IsOpen  |  If true, when rendering the NavigationBarItem is open. |  Boolean | False | False |
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | none |
+1. On the **Properties** tab, you can alsocustomize the Navigation Bar's look and feel by setting any of the optional properties.
 
-#### NavigationBarSubItem
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| IsActive  |  Set IsActive to true, to define as the selected element. |  Boolean | False | False |
-  
-## Layout and Classes
+    ![](images/navigationbar-3-ss.png)
 
-![](images/navigationbar-image-4.png)
+After following these steps and publishing the module, you can test the pattern in your app.
 
-## CSS Selectors
+## Properties
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
-| .navigation-bar |  .is--sticky|  Defines if the navigationBar position is fixed or not  |
-| .navigation-bar-item | .is--active |  Defines if the current navigationBarItem is active  |
-| .navigation-bar-item | .is--open |  Defines if the current navigationBarItem is open  |
-| .navigation-bar-item | .is--closed |  Defines if the current navigationBarItem is closed  |
-| .navigation-bar-item-content | .is--active |  Defines if the current navigationBarSubItem is active  |
-| .navigation-bar-item-content | .is--open |  Defines if the current navigationBarSubItem is open  |
-| .navigation-bar-item-content | .is--closed |  Defines if the current navigationBarSubItem is closed  |
-| .navigation-bar-item-content | .is--expanded |  Defines if the current navigationBarSubItem is expanded  |
-| .navigation-bar-item-content | .is--collapsed |  Defines if the current navigationBarSubItem is collapsed  |
+### Navigation Bar
 
+| **Property** |  **Description** |  
+|---|---|
+| IsFixed (Boolean): Optional |  If True, the navigation bar is always in the same position on the screen. This is the defult value. If False, the navigation bar scrolls with the page content. |  
+| TopPosition (Integer): Optional  |  Set the top position when the navigation bar is fixed. |  
+| MultipleItems (Boolean): Optional | If True, multiple Navigation Bar Items can be opened at the same time. This is the default value. If False, only one Navigation Bar Item can be opened at a time. | 
+| ExtendedClass (Text): Optional | Add custom style classes to the Navigation Bar UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Navigation Bar UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Navigation Bar UI styles being applied.</li></ul></p> | 
 
-## Advanced Use Case
+### Navigation Bar Item
 
-### Use NavigationBar with ListRecords
+| **Property** |  **Description** | 
+|---|---|
+| IsActive (Boolean): Optional | If True, when the page is rendered, the Item is selected. If False, the Item is not selected. This is the default value. | 
+| IsOpen (Boolean): Optional  |  If True, when the page is rendered, the Navigation Bar Item is open. If False, the Navigation Bar Item is not open. This is the default.| 
+| ExtendedClass (Text): Optional | Add custom style classes to the Navigation Bar Item UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the _myclass_ style to the Navigation Bar Item UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Navigation Bar Item UI styles being applied.</li></ul></p> | 
 
-1. Drag the NavigationBar into the preview.
+### Navigation Bar Sub Item
 
-1. In the Content placeholder, drag a ListRecords widget.
+| **Property** |  **Description** |  
+|---|---|
+| IsActive (Boolean): Optional  |  If True, when the page is rendered, the Sub Item is selected. If False, the Sub Item is not selected. | 
 
-1. Set the Line Separator from ListRecords to None.
-
-1. In the ListRecords widget, drag a NavigationBarItem.
-
-1. In the NavigationBarItem, use expressions to display the required database content in the placeholders. Optionally, you can drag a NavigationBarSubItem to the Content Placeholder and set the expression there.
-
-1. Publish and test.
-
-![](images/navigationbar-image-5.png)
-
-
-### Change active color on NavigationBarItem
-
-* Write the following CSS in the CSS editor and change the `yourcolor` and `yourelement`.
-
-```css
-`.navigation-bar-item.is--active yourelement {
-    color: yourcolor;
-}`
-```
-
-* Or use CSS variables: `var(--color-yourcolor)`.
-
-```css
-`.navigation-bar-item.is--active yourelement {
-    color: var(--color-yourcolor);
-}`
-```
-
-### Change active color on NavigationBarSubItem
-
-* Write the following CSS in the CSS editor and change the `yourcolor` and `yourelement`.
-
-```css
-`.navigation-bar-item-subitem.is--active yourelement {
-    color: yourcolor;
-}`
-```
-
-* Or use CSS variables: `var(--color-yourcolor)`.
-
-```css
-`.navigation-bar-item-subitem.is--active yourelement {
-    color: var(--color-yourcolor);
-}`
-```
-
-## Device Compatibility
+## Device compatibility
 
 In Internet Explorer, `position: fixed` is used instead of `position: sticky` as the latter is not supported.
 

@@ -35,7 +35,7 @@ These are some of the settings from Azure that you need for implementing a chatb
 |----------|:-------------:|------|
 | DirectLineSecret |  Web App Bot | **Azure home page** > **your chatbot** > **Channels** > **Direct Line** > click **Edit**. You can use any of the keys in **Default Site** > **Secret keys**. |
 | Messaging endpoint |  Web App Bot | **Azure home page** > **your chatbot** > **Settings** > **Messaging endpoint**. |
-| MicrosoftClientId |  Web App Bot | **Azure Azure home page** > **your chatbot** > **Configuration** > **Application Settings** > **MicrosoftAppId**. <br/><br/> If you download the source code from Azure, this value is available from the **settings.json** file. |
+| MicrosoftClientId |  Web App Bot | **Azure home page** > **your chatbot** > **Configuration** > **Application Settings** > **MicrosoftAppId**. <br/><br/> If you download the source code from Azure, this value is available from the **settings.json** file. |
 | MicrosoftClientSecret |  Web App Bot | **Azure home page** > **your chatbot** > **Configuration** > **Application Settings** > **MicrosoftAppPassword**. <br/><br/> If you download the source code from Azure, this value is available from the **settings.json** file.|
 
 ## Data structures in OutSystems Bot Framework Connector
@@ -44,7 +44,7 @@ The Bot Framework Connector has several data structures that correspond to the d
 
 For general information about available features for the structures, see [Azure Bot Framework REST API reference](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0).
 
-For more information about the cards structure, see these pages in in Microsoft Dev Center:
+For more information about the cards structure, see these pages in Microsoft Dev Center:
 
 * [Cards reference](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/cards-reference). Contains more information about cards. Note that not all cards are available in OutSystems.
 * [Card actions](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/cards-actions) lists actions you can use with the cards.

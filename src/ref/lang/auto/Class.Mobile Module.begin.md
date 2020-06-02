@@ -1,5 +1,5 @@
 
-<div class="info">
+<div class="info" markdown="1">
 
 Applies to Mobile and Reactive Web Apps.
 

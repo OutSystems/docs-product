@@ -75,7 +75,13 @@
 
         # Screens
         - href: develop/ui/screens/intro.md
-        
+        # Accessibility
+        - href: develop/ui/accessibility/intro.md
+        - topics:
+            - href: develop/ui/accessibility/aria-roles-and-attributes.md
+            - href: develop/ui/accessibility/testing-fixing-accessibility-issues.md
+            - href: develop/ui/accessibility/ui-patterns-accessibility-reference.md
+
         # How to use Screen Templates
         - href: develop/ui/screen-templates-use/intro.md
         - topics:
@@ -925,6 +931,13 @@
             - href: ref/interfaces/ui-patterns.md
             - topics:
                 - href: ref/ui-patterns/mobile/carousel-mobile.md
+                - href: ref/ui-patterns/mobile/columns.md
+                - href: ref/ui-patterns/mobile/datepicker.md
+                - href: ref/ui-patterns/mobile/gallery-mobile.md
+                - href: ref/ui-patterns/mobile/lightboximage.md
+                - href: ref/ui-patterns/mobile/masterdetail-mobile.md
+                - href: ref/ui-patterns/mobile/splitscreen.md
+                - href: ref/ui-patterns/mobile/tabs-mobile.md
             # Designing the Layout
             - href: ref/interfaces/designing-the-layout.md
             - topics:
@@ -1024,17 +1037,30 @@
                 # Patterns
                 - href: ref/traditional-web/web-interfaces/ui-patterns.md
                 - topics:
+                    - href: ref/ui-patterns/web/accordion.md
+                    - href: ref/ui-patterns/web/alert.md
                     - href: ref/ui-patterns/web/animate.md
                     - href: ref/ui-patterns/web/badge.md
+                    - href: ref/ui-patterns/web/balloon.md
+                    - href: ref/ui-patterns/web/buttongroup.md
                     - href: ref/ui-patterns/web/carousel.md
                     - href: ref/ui-patterns/web/character-count.md
                     - href: ref/ui-patterns/web/counter.md
+                    - href: ref/ui-patterns/web/datepicker.md
+                    - href: ref/ui-patterns/web/dropdown.md
                     - href: ref/ui-patterns/web/fieldset.md
+                    - href: ref/ui-patterns/web/fileupload.md
+                    - href: ref/ui-patterns/web/gallery.md
                     - href: ref/ui-patterns/web/icon-badge.md
                     - href: ref/ui-patterns/web/iframe.md
                     - href: ref/ui-patterns/web/lightbox-image.md
+                    - href: ref/ui-patterns/web/loginform.md
+                    - href: ref/ui-patterns/web/navigation-bar.md
                     - href: ref/ui-patterns/web/responsive-table.md
+                    - href: ref/ui-patterns/web/sidebar.md
+                    - href: ref/ui-patterns/web/timepicker.md
                     - href: ref/ui-patterns/web/user-initials.md
+                    - href: ref/ui-patterns/web/video.md
                     - href: ref/ui-patterns/web/wizard.md
                 # Designing the Layout
                 - href: ref/traditional-web/web-interfaces/designing-the-layout/intro.md

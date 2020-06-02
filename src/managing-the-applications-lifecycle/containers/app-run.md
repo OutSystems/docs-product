@@ -24,7 +24,7 @@ These steps are explained in greater detail in the following sections.
 
 ## Create and Configure a Containers Deployment Zone
 
-To deploy an application to containers, you will need a [deployment zone](<../deploy-applications/zones/intro.md>) configured with a container-based hosting technology (`Docker Containers`, `Amazon ECS`, `Azure Container Service` or `Pivotal Cloud Foundry`). 
+To deploy an application to containers, you will need a [deployment zone](<../deploy-applications/zones/intro.md>) configured with a container-based hosting technology (`Docker Containers`, `Amazon ECS`, `Azure Container Service` or `Pivotal Cloud Foundry`).
 
 You can create a new deployment zone for this purpose or change the hosting technology of an existing deployment zone, as long as there are no modules/applications associated with it. Since the minimum requirement is having one deployment zone for containers, you can perform the steps below only once to create this deployment zone and configure it in all the applications that you wish to deploy to containers.
 
@@ -39,14 +39,13 @@ To configure a new deployment zone for containers, do the following:
 
 After creating a deployment zone for containers, you will need to configure your application to use that deployment zone.
 
-
 ## Sharing Data with a Container
 
 ### Configurations Folder
 
-Using a separate configurations folder allows you to change the settings of OutSystems applications without having to build a new application bundle. Though application configuration settings are not bundled with the application, when the application is deployed they must be available or else the application will not run properly. 
+Using a separate configurations folder allows you to change the settings of OutSystems applications without having to build a new application bundle. Though application configuration settings are not bundled with the application, when the application is deployed they must be available or else the application will not run properly.
 
-When deploying an application to a deployment zone configured with a container-based hosting technology, the platform will write the `App.config` application configuration file to the "Output Config Files to" folder set in the the deployment zone configuration. You will need to copy the `App.config` file to the correct configs folder for the application to be correctly deployed.
+When deploying an application to a deployment zone configured with a container-based hosting technology, the platform will write the `App.config` application configuration file to the "Output Config Files to" folder set in the deployment zone configuration. You will need to copy the `App.config` file to the correct configs folder for the application to be correctly deployed.
 
 **Note:** The exact folder location depends on the hosting technology; for more details check the specific documentation for the desired hosting technology.
 
@@ -85,7 +84,7 @@ The "publish to a container" operation is divided in six stages further detailed
 :   The platform compiles the application, generates its binaries and creates the application bundle. The bundle (a ZIP file) is provided in the configured path for further action from the operator, either a human or an automated deployment tool.
 
 2\. Build container image/push application (Operator)
-:   The operator extracts the contents of the bundle and builds the container image or pushes the application to the container infrastructure, depending on the hosting technology being used. 
+:   The operator extracts the contents of the bundle and builds the container image or pushes the application to the container infrastructure, depending on the hosting technology being used.
 
 3\. Create result file for deployment preparation step (Operator)
 :   The operator creates a result file for the "Preparing Deploy" step with the expected filename in the configured "Result" folder, informing the platform that the application deployment to a container can proceed. This file may be empty in case of a successful deployment, or may have JSON content with the errors that occurred.
@@ -128,7 +127,6 @@ This file must then be placed in the ["Result" folder](<../deploy-applications/z
 Example:  
 `\\twoflower\luggage\results\07897a77-3f58-4e5b-b926-a48605c0b6d0_dab321f9-72e8-44e8-ae5c-2c8212314cf6.configsdone`
 
-
 ## Undeploy an Application in Containers
 
 <div class="info" markdown="1">
@@ -155,7 +153,6 @@ Example:
 `\\twoflower\luggage\results\07897a77-3f58-4e5b-b926-a48605c0b6d0_dab321f9-72e8-44e8-ae5c-2c8212314cf6.undeploydone`
 
 After the result file is processed by the platform, the operator can terminate the container and remove any configurations related to the application in the Reverse Proxy and Load Balancer.
-
 
 <div class="info" markdown="1">
 

@@ -8,7 +8,7 @@ Depending on the type of element exposed by a producer module, OutSystems will g
 
 ## Strong Dependencies
 
-When a consumer module has a **strong dependency** to a producer, the producer logic is executed just as if it is defined in the consumer module. They run in the same request, share the same transaction, session variables, site properties, etc.
+When a consumer module has a **strong dependency** to a producer, those modules are tightly-coupled. The producer logic is executed just as if it is defined in the consumer module: they run in the same request, share the same transaction, session variables, site properties, etc.
 
 ![](images/strong-weak-dependencies-1.png?width=400)
  
@@ -31,7 +31,7 @@ If the consumer is reusing more than one element exposed by the same producer mo
 
 ## Weak Dependencies
 
-When a consumer module has a **weak dependency** to a producer, depending on the type of the producer’s element reused by the consumer, one of the following happens:
+When a consumer module has a **weak dependency** to a producer, those modules are loosely-coupled. Depending on the type of the producer’s element reused by the consumer, one of the following happens:
 
 * Elements having associated **logic**, such as actions or screens, run in the context of the producer’s request. Changes in the producer implementation take immediate effect in the consumer.
 

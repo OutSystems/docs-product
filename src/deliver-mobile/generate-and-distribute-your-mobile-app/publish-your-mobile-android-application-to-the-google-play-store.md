@@ -92,7 +92,7 @@ You have to provide the following information:
     * the default language;
 
 * To release the application:
-    * choose whether to rollout to Beta testing or Production;
+    * choose whether to roll out to Beta testing or Production;
     * calculate the content rating by answering a few questions;
     * define the pricing;
     * define the countries and regions where it’s going to be available;

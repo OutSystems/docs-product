@@ -22,31 +22,29 @@ To define a Record:
 1. Change the data type of the variable to Record.
 1. On the pop-up window, add attributes to the record and define the data types of the attributes.
 
-
-## Example Using a Record
+## Example using a Record
 
 In the application GoOutWeb, a Web app to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating.
 
 Since the data type that we will need to assign to the output parameter will only be used here, we will use a Record:
 
 1. Expose a REST API, name it Place and create the method GetPlace.
-1. Add an input parameter with the Place Id for which to return information. 
-1. In the action flow, add an aggregate with the the Place and Review entities and filter using the Place Id input parameter.
+1. Add an input parameter with the Place Id for which to return information.
+1. In the action flow, add an aggregate with the Place and Review entities and filter using the Place Id input parameter.
 1. Add an output parameter called PlaceInformation.
 1. Select the suggested data type `GetPlacesWithReviews Record Type` to set the data type of the output parameter to the records returned by the aggregate.
 1. Back to the GetPlace action flow, to assign the values to the output variable, add an Assign flow element to the action and assign the first element returned from the aggregate to it. Since they are the of the same data type, there is no need to map the attributes between the two.
-1. Publish and test. 
+1. Publish and test.
 
-
-## Example Using a Structure
+## Example using a Structure
 
 In the application GoOutWeb, a Web application to find and review places of interest, we are developing a REST API method to expose basic information about a registered end user of the application. The  information we are returning is the Id, the name, and the profile picture of an end user.
 
 Since we are going to reuse the user information in another action of the application, we will create a Structure to hold this information thus allowing us to reuse the data type:
 
-1. On the Data layer, right-click the folder Structures and add a new structure  named `UserInfo`. 
+1. On the Data layer, right-click the folder Structures and add a new structure named `UserInfo`.
 
-1. Add the following attributes to the new structure: 
+1. Add the following attributes to the new structure:
 
     * `Id` of type User Identifier
     * `Name` of type Text

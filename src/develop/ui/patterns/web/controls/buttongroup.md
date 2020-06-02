@@ -1,56 +1,37 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ButtonGroup displays available choices to the user.
+summary: Button Group displays available choices to the user.
 ---
 
-# ButtonGroup
+# Button Group
 
-Represent a choice of available options that are displayed.
+You can use the Button Group UI Pattern to display radio button choices to the user. This pattern is ideal when you have between two to four options. To show a larger number of options, consider using a the Dropdown UI Pattern.
 
-Use the ButtonGroup to display all available choices to the user simultaneously. It is ideal when you have between two to four options. To show a larger number of options, consider using a Dropdown.
+**How to use the Button Group UI Pattern**
 
-**How to use**
+1. In Service Studio, in the Toolbox, search for `Button Group`.
 
-Add ButtonGroup items to the content placeholder.
-
-1. Drag the ButtonGroup pattern into the preview.
-
-1. By default, the pattern comes with three ButtonGroupItems.
+    The Button Group widget is displayed.
 
     ![](<images/buttongroup-image-1.png>)
 
-1. Drag as many ButtonGroupItems as you need.
+1. From the Toolbox, drag the Button Group widget into the Main Content area of your application's screen.
 
-1. Set a Variable and a Value.
+     ![](<images/buttongroup-image-2.png>)
 
-    ![](<images/buttongroup-image-2.png>)
+    By default, the pattern contains 3 Button Group Items. You can add or delete as many Button Group Items as required.
 
-1. Change the text in the label of the ButtonGroupItems.
+1. From the Widget Tree, select the **radio-button** element, and on the **Properties** tab, set the **Variable** and **Value** properties.
 
-## Input Parameters
+    ![](<images/buttongroup-image-3.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| IsJustified  |  The Items are evenly distributed in the space available. | Boolean | False | False |
+1. Repeat step 3 for each of the **radio-button** elements.
 
-## Layout and Classes
+1. Change the **Label** text for each of the Button Group Items.
 
-![](<images/buttongroup-image-3.png>)
+## Properties
 
-## Advanced Use Case
+| **Property** |  **Description** | 
+|---|---|
+| IsJustified (Boolean): Optional  | If True, the Button Group items are evenly distributed in the space available. If False, the Button Group items are left aligned. This is the default. |
 
-### Use ButtonGroup with ListRecords
-
-1. Drag the ButtonGroup Pattern into the preview.
-
-1. In the Content placeholder, drag a ListRecords widget.
-
-1. In the ListRecords widget, drag a ButtonGroupItem.
-
-1. In the ButtonGroupItem, use expressions with the class btn to display the content.
-
-    ![](<images/buttongroup-image-4.png>)
-
-1. In the ListRecords Widget, set the Line Separator to None in order to avoid additional margin between elements.
-
-1. Publish and test.

@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: The Touch Events UI Pattern enables touch events on a specific widget.
 ---
 
-# Touch Events 
+# Touch Events
 
 You can use the Touch Events UI Pattern to enable touch events on a specific widget.
 

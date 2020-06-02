@@ -15,12 +15,12 @@ Progressive web apps (PWA) provide native-like experiences without having to dis
 
 <div class="info" markdown="1">
 
-## Prerequisites
+**Prerequisites**
 
 To distribute your app as a PWA, you need to meet the following requirements:
 
-* Service Studio 11.6.21.8208 or later
-* Platform Server 11.7.0.3110 or later
+* Service Studio 11.6 or later
+* Platform Server 11.7 or later
 * LifeTime Oct.2019 CP1 or later
 * Enabled the [early access feature](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Early_access_to_OutSystems_features) in LifeTime
 

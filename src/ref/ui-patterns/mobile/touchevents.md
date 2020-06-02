@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced use cases for the Touch Events UI Pattern.
 ---
 
-# Touch Events UI Pattern Reference
+# Touch Events Reference
  
 ## Events
 

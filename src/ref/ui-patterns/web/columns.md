@@ -3,11 +3,11 @@ tags: runtime-traditionalweb;
 summary: Advanced uses cases for the Columns UI Pattern.
 ---
 
-# Columns UI Pattern Reference
+# Columns Reference
 
 ## Layout and classes
 
-![](<images/columns-image-3.png>)
+![](<images/columns-3-diag.png>)
 
 ## CSS selectors
 

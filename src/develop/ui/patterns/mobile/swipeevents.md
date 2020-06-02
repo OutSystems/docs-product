@@ -15,19 +15,19 @@ The following example shows how you can use the Swipe Events UI pattern to open 
 
     The Swipe Events widget is displayed.
 
-    ![](images/swipeevents-icon.png)
+    ![](images/swipeevents-1-ss.png)
 
 1. From the Toolbox, drag the Swipe Events widget onto your application's screen.
 
-     ![](images/swipeevents-image-1.png)
+     ![](images/swipeevents-2-ss.png)
 
 1. On the **Properties** tab, create a local variable called **isOpen**. This is used in the sidebar.
 
-    ![](images/swipe_events_create.png)
+    ![](images/swipeevents-3-ss.png)
 
 After following these steps and publishing the module, you can test the pattern in your app. The result should look something like the following:
 
-![](images/SwipeEvents_EndResult.gif)
+![](images/swipeevents-4.gif)
 
 ## Properties
 

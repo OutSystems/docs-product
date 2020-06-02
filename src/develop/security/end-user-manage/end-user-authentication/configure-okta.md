@@ -1,11 +1,11 @@
 ---
 summary: How to configure OKTA end user authentication for your applications.
-tags: runtime-traditionalweb
+tags: runtime-traditionalwebandreactiveweb
 ---
 
 # Configure OKTA Authentication
 
-OutSystems allows you to use OKTA for authenticating the end users of your OutSystems applications. This authentication method is configured in a way that is quite similar to the [SAML 2.0](configure-saml.md) one.
+OutSystems allows you to use OKTA for authenticating the end users of your OutSystems applications. This authentication method is configured in a way that's quite similar to the [SAML 2.0](configure-saml.md) one.
 
 <div class="info" markdown="1">
 
@@ -45,7 +45,7 @@ To set up OKTA authentication for end users do the following:
     ![](images/okta-config-3-users.jpg)
 
 1. Download the keystore certificate by clicking **(Keystore certificate)**.  
-    This file will be used later when doing the configurations in the OKTA portal (step 9).
+    This file is used later when doing the configurations in the OKTA portal (step 9).
 
     ![](images/okta-config-4-users.jpg)
 
@@ -68,12 +68,12 @@ To set up OKTA authentication for end users do the following:
 
     Fill in the **Name** and **Value** fields of the four rows according to the following suggested values:
 
-    Name = `given` (i.e. the value previously entered in Users) / Value = `user.firstName`  
+    Name = `given` (the value previously entered in Users) / Value = `user.firstName`  
     Name = `surname` /  Value = `user.lastName`  
     Name = `email` /  Value = `user.email`  
     Name = `username` /  Value = `user.login`
 
-	After creating and filling in the fields, click **Next**. 
+    After creating and filling in the fields, click **Next**.
 
     ![](images/okta-config-8-okta.jpg)
 
@@ -89,21 +89,22 @@ To set up OKTA authentication for end users do the following:
 
     ![](images/okta-upload-file-users.jpg)
 
+1. Make sure you assign your new OKTA application to a user or a group to be able to proceed. You can do this operation in the OKTA portal. Check [OKTA's documentation](https://help.okta.com/en/prod/Content/Topics/Directory/eu-assign-apps.htm) for more information.
+
 1. Test your new authentication settings by logging in the Users application again.  
     Logout of the Users application if you're logged in.
 
-1. The Users application will redirect you to an OKTA login page. Enter your OKTA user credentials.
+1. The Users application redirects you to an OKTA login page. Enter your OKTA user credentials.
 
-    If the authentication is successful, you will be redirected to the Users application. 
+    If the authentication is successful, the browser redirects you to the Users application.
 
-    You may get an "Invalid Permissions" message if the OKTA user is logging in for the first time, since the user is provisioned in OutSystems at this point and it still doesn't have any associated roles. You will need to configure the user roles after the user's first login.
+    You may get an "Invalid Permissions" message if the OKTA user is logging in for the first time, since the user is provisioned in OutSystems at this point and it still doesn't have any associated roles. You need to configure the user roles after the user's first login.
 
     ![](images/okta-invalid-permissions-users.png)
 
     If the authentication is unsuccessful, double-check your configuration settings.
 
-**Note:** If you're using an older version of OutSystems UI you will need to change the logout flow of your OutSystems applications, as described for the SAML 2.0 authentication method. Check [Change the Logout flow of your OutSystems applications](configure-saml.md#change-logout-flow) for more information.
-
+**Note:** If you're using an older version of OutSystems UI you must change the logout flow of your OutSystems applications, as described for the SAML 2.0 authentication method in [Check the authentication flows of your OutSystems applications](configure-saml.md#change-auth-flows).
 
 ## Troubleshooting OKTA authentication issues
 

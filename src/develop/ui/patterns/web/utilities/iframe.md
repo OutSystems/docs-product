@@ -5,45 +5,41 @@ summary: Iframe displays information from other apps on the screen in small prev
 
 # Iframe
 
-Display additional information in one view.
+<div class="info" markdown="1">
 
-Use Iframe to display information from other apps on the screen in small previews. 
+We’ve been working on this article. Please let us know how useful this new version is by voting.
 
-**How to use**
+</div>
 
-1. Drag the Iframe pattern into the preview.
+ You can use the Iframe UI Pattern to display information from other apps, on your screen, in bite-size previews. For more information about Iframes, see [HTML Iframes](https://www.w3schools.com/html/html_iframe.asp).
 
-    ![](<images/iframe-image-1.png>)
+![](<images/iframe-image-8.png>)
 
-1. Set the mandatory values.
+**How to use the Iframe UI Pattern**
 
-    ![](<images/iframe-image-2.png>)
+1. In Service Studio, in the Toolbox, search for `Iframe`.
 
-1. Publish and test.
+    The Iframe widget is displayed.
 
-## Input Parameters
+    ![](<images/iframe-image-6.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| SourceURL  | The target URL to load on the Iframe. | Text | Yes | none |
-| Title  | Title for the iframe element. | Text | No | none |
-| Height  | Iframe height, default is 100%. | Text | No | 100% |
-| Width  | Iframe width, default is 100%. | Text | No | 100% |
-  
-## Layout and Classes
+1. From the Toolbox, drag the Iframe widget into the Main Content area of your application's screen.
 
-![](<images/iframe-image-3.png>)
+    ![](<images/iframe-image-7.png>)
 
-## Advanced Use Case
+1. On the **Properties** tab, set the relevant properties, for example, the source URL, its title, as well as its width and height. In this example, we use the Wikipedia Website.
 
-### Change the Iframe width according to the device
+    Note: The target destination must have the necessary security permissions that allow you to embed their website in your app.
 
-This can be very useful if you are using a fixed width.
+    ![](<images/iframe-image-5.png>)
 
-1. Set the Width to `If(IsDesktop(), "500px", "100%")`.
+After following these steps and publishing the module, you can test the pattern in your app.
 
-1. Publish and test.
+## Properties
 
-    ![](<images/iframe-image-4.png>)
-
-You can change the condition of the width used. This code makes the width 500px on desktop, but on mobile, it is still full-width as the fixed width would probably overflow the screen.
+| Property | Description |
+|---|---|
+| SourceURL (Text): Mandatory | The target URL that loads on the Iframe.<p>Examples<ul><li>_"https://www.wikipedia.com"_ - Displays the Wikipedia website in your app as a bite-size preview</li></ul></p> | 
+| Title (Text): Optional | Iframe title.<p>Examples<ul><li>_"Wikipedia Website"_ - Displays _Wikipedia Website_ as the Iframe title</li></ul></p>|
+| Height (Text): Optional  | Iframe height (default is 100%). <p>Examples<ul><li>_"100%"_ - The iframe height is 100% </li><li>_200_ - The iframe is 200 pixels high </li></ul></p>|
+| Width (Text): Optional | Iframe width (default is 100%). <p>Examples<ul><li> _"100%"_ - The iframe width is 100%</li><li>_200_ - The iframe is 200 pixels wide </li></ul></p>|

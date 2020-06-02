@@ -17,6 +17,12 @@ In your **LifeTime** console (`https://<lifetime_env>/lifetime`), navigate to th
 
 This allows you to analyze the performance of your apps from end to end.
 
+<div class="info" markdown="1">
+
+LifeTime Analytics applies only to Traditional Web applications. For Mobile and Reactive apps, OutSystems enables you to integrate with industry-leading monitoring platforms. Check some of the components available in [OutSystems Forge](https://www.outsystems.com/forge/), such as [New Relic RUM](https://www.outsystems.com/forge/component-overview/6848/new-relic-rum) or [Elastic RUM](https://www.outsystems.com/forge/component-overview/7341/elastic-rum).
+
+</div>
+
 ## Example - Troubleshoot the Field Services App
 
 During the last couple of days, we received emails complaining about the performance of the Field Services app. End users are complaining about getting timeout messages when loading the Dashboard screen.

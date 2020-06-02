@@ -46,12 +46,7 @@ Font
 Font Size
 :   Change the base size of the font used in your app.
 
-
 ## Customize structure and shape
-
-<div class="info" markdown="1">
-Only available in **Reactive Web** and **Traditional Web** modules.
-</div>
 
 Change the general structure of your Screens and UI elements by selecting spacing, header sizes, border shape and the style of border shadow.
 
@@ -83,22 +78,6 @@ Background color gradient
 
 Background image
 :   Select an image to use as the background of the Login Screen. If the background image has transparent areas
-
-## Choose between a single style or native styles
-
-<div class="info" markdown="1">
-Only available in **Mobile** modules.
-</div>
-
-Change how your mobile app looks on different mobile devices or keep a consistent style across.
-
-![Native styles](images/theme-editor-07-ss.png?width=450)
-
-OutSystems UI look and feel
-:   Use a single style for all mobile devices, regardless of the OS.
-
-Native look and feel
-:   Use a different style for Android and iOS devices adapted to the general look of each OS.
 
 ## Resetting your Theme Editor customization
 

@@ -4,7 +4,7 @@ summary: Reference information on deployment zone parameters.
 
 # Deployment Zones Reference
 
-<div class="info">
+<div class="info" markdown="1">
 
 Only available in OutSystems on-premises installations.
 

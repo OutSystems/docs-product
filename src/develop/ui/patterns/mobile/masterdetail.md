@@ -1,101 +1,105 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary: Displays a master list and the details for the currently selected item.
 ---
 
-# MasterDetail Pattern
+# Master Detail
 
-The MasterDetail pattern is similar to the SplitScreen pattern, but it receives an item list for the left panel. You can use this pattern in tablet apps, to display the detail of a list of items.
+You can use the Master Detail Pattern to display a master list of items and their related details, for example, a list of employees and their corresponding details. 
 
-Here's the preview in Service Studio:
+![](images/masterdetail-2.png)
 
-![](images/Pasted_image_at_2017_05_10_04_53_PM.png)
+## How to use the Master Detail UI Pattern
 
-## How to Use the MasterDetail Pattern
+1. In Service Studio, in the Toolbox, search for `Master Detail`. 
 
-Start by binding a List to the **ItemList** parameter and leverage the Block events to change the content placeholder.
-
-1\. Create a local boolean variable and set it on **OpenedOnPhone**.
-
-![](images/MasterDetail_list_open.png)
-
-2\. To open the detail of the clicked element, use a link for an action, set your local variable to _True_ , and add logic to open the correct detail.
-
-![](images/MasterDetail_assignments.png)
-
-3\. To close the detail, create an action and set your local variable to _False_ , and use this action in the **DetailClose** event. Add necessary logic.
-
-![](images/MasterDetail_close_detail.png)
-
-![](images/MasterDetail_list_open_false.png)
-
-### Phone Landscape with the Same Behavior as Tablet
-
-You can have your phone in landscape to work the same way as a tablet:
-
+    The Master Detail widget is displayed.
     
-    
-    .phone.landscape .split-left {
-         width: **x; /* This is width value for the left side */**
-    }
-    
-    
-    
-    .phone.landscape .split-right {
-         -webkit-transform: translateX(0) translateZ(0);
-          transform: translateX(0) translateZ(0);
-        width: **x; /* This is the width value for the right side */**
-         left: auto;
-        right: 0;
-        border-left: 1px solid #d3d3d3;
-    }
-    
-    
-    .phone.landscape .detail-open .split-right-close {
-        opacity: 0;
-        pointer-events: none;
-    }
-    
-    
-    .phone.landscape .detail-open .app-menu-icon {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    
-    
+    ![](images/masterdetail-5-ss.png)
 
-## Input Parameters
+1. From the Toolbox, drag the Master Detail widget into the Main Content area of your application's screen.
 
-**Input Name** |  **Description** |  **Default Value**  
----|---|---  
-![](images/input.png) ItemList  |  These are the items for the list on the left side of the MasterDetail.  |  N/A  
-  
-## Events
+     ![](images/masterdetail-1-ss.png)
 
-**Event Name** |  **Description** |  **Mandatory**  
----|---|---  
-![](images/Event.png) DetailClose  |  Triggered when the detail (or right side of the MasterDetail) is closed.  |  _False_  
-![](images/Event.png) ItemSelected  |  Triggered when an item of the list (or left side of the MasterDetail) is selected.  |  _False_  
-  
-## Layout and Classes
+     By default, the Master Detail widget contains a right placeholder and left placeholder which expects a list.
 
-![](images/MasterDetail_layout.png)
+1. To populate the list, create an aggregate, by right-clicking your screen name, and selecting **Fetch Data from Database**.
 
-## CSS Selectors
+    ![](images/masterdetail-13-ss.png)
 
-**Element** |  **CSS Class** |  **Description**  
----|---|---  
-![](images/css_selector.png) MasterDetail Wrapper  |  .split-screen-wrapper  |  Container that wraps elements in the left and right containers.  
-![](images/css_selector.png) Left Content  |  .split-left  |  Add content to the left side.  
-![](images/css_selector.png) Right Content  |  .split-right  |  Add content to the right side. In phone view, this Element is off-canvas.  
-![](images/css_selector.png) Close Right Content  |  .split-right-close  |  
-  
-## Compatibility with Other Patterns
+1. To add a database entity, click on the screen, select the relevant entity, and click **OK**. In this example, we use the **User** entity.
 
-This pattern should be used alone inside the screen content because it will adapt to the height of the parent. Additionally, you should avoid using the MasterDetail pattern inside patterns with swipe events, like [Tabs](<tabs.md>).
+    ![](images/masterdetail-3-ss.png)
 
-## Samples
+    A name for the aggregate is added automatically. In this example the aggregate name is **GetUsers**.
 
-You can use the MasterDetail pattern as a sample:
+1. On the **Interface** tab, double-click your screen name, and in the LeftContent placeholder, select the List widget. On the **Properties** tab, from the **Source** drop-down, select the aggregate you just created. In this example, **GetUsers.List**.
 
-![](images/MasterDetail-Sample-1.PNG)
+    ![](images/masterdetail-4-ss.png)
+
+1. On the **Interface** tab, navigate to the attribute you want to display on the left side of the screen, and drag it into the List. In this example, we use the **Name** attribute.
+
+    ![](images/masterdetail-14-ss.png)
+
+    This displays all of the users names on the left side of the screen.
+
+1. So that each of the items in the list can be selected by the user, create a user action by selecting and right-clicking the expression in the List, and selecting **Link to -> New Client Action**.  
+
+    ![](images/masterdetail-6-ss.png)
+
+1. Double-click the new client action and enter a name. In this example, we call it **ClickSelectedUser**.
+
+    ![](images/masterdetail-7-ss.png)
+
+1. From the Toolbox, add the **Assign** logic to the client action, and from the  **Value** drop-down, select the Expression Editor. Navigate to and double-click the current user Id and click **Done**.
+
+    ![](images/masterdetail-8-ss.png)
+
+1. To store this user Id, create a local variable by right-clicking on your screen name and selecting **Add Local Variable**. Enter a name for the variable. In this example, we call it **SelectedUserId**.
+
+    ![](images/masterdetail-9-ss.png)
+
+1. Select the **Assign** logic, and from the **Variable** drop-down, select the local variable you created (in this example, **SelectedUserId**).
+
+    **Note**:  You have now created all of the information that displays on the **left** side of the Master Detail widget. In the following steps, we will create the infomation to display on the **right** side of the Master Detail widget.
+
+1. To display the selected user's details on the right side of the screen, create a new aggregate by right-clicking on your screen name and selecting **Fetch Data from Database**. 
+
+1. Enter a name for the aggregate. In this example, we call it **GetUserDetails**. 
+
+    ![](images/masterdetail-11-ss.png)
+
+1. To add a database entity, click on the screen, select the relevant entity, and click **OK**. In this example, we use the **User** entity.
+
+1. On the **GetUserDetails** screen, click **Filters**, then click **Add Filter**.
+
+1. From the Filter Condidion editor, enter the following condition and click **Done**.
+
+    `User.Id = SelectedUserId`
+
+    This filters all the results in the **User** entity to the currently selected user.
+
+1. Double-click your client action name (in this example, **ClickSelectedUser**), and drag the GetUserDetails aggregate onto the client action. This executes the aggregate using the currently selected user. 
+
+   ![](images/masterdetail-10-ss.png)
+
+
+1. Double-click your screen name, and from the **GetUserDetails** aggregate, drag the attributes you want to dislay into the RightContent placeholder. In this example, we use the Username and Email attributes.
+
+   ![](images/masterdetail-12-ss.png)
+
+After following these steps and publishing the module, you can test the pattern in your app. 
+
+## Properties
+
+**Property** |  **Description** |   
+|---|---|
+| LeftPercentage (Decimal): Optional | Set the LeftContent width using a percentage. Default value is 50%. |
+| OpenedOnPhone (Boolean): Optional |  Variable to hold if the detail is opened on a phone. Default value is False.|
+| Height (Text): Optional | Set the height of the widget (in pixels or %). By default, it is the height of the window, minus the title and header.|
+ 
+## Compatibility with other patterns
+
+This pattern should be used alone inside the screen content because it will adapt to the height of the parent. Additionally, you should avoid using the Master Detail pattern inside patterns with swipe events, such as [Tabs](<tabs.md>).
+
+

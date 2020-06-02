@@ -5,7 +5,7 @@ tags: support-Application_Lifecycle; support-Application_Troubleshooting; suppor
 
 # Selective Deployment Using Deployment Zones 
 
-<div class="info">
+<div class="info" markdown="1">
 
 Only available in OutSystems on-premises installations.
 

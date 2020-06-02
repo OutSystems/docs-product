@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: The list of mobile patterns for fast mobile UI development.
 ---
 
-# Using Mobile Patterns
+# Using Mobile and Reactive Patterns
 
 Components and UI patterns specially designed to address common application use cases in mobile development.
 

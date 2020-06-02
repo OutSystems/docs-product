@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: the Range Slider Interval UI Pattern allows users select a single value between two range values.
 ---
 
-# Range Slider Interval 
+# Range Slider Interval
 
 You can use the Range Slider Interval Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content by predetermined intervals and within a chosen range. Moving the slider along the track, increases or decreases the value. 
 

@@ -54,7 +54,7 @@ IDbCommand GetDriverCommand() | Returns the native command object used by the st
 Name | Description  
 ---|---  
 string CommandText | Gets or sets the SQL statements to execute.  
-int CommandTimeout | Gets or sets the command execution timeout.  
+int CommandTimeout | Gets or sets the command execution timeout (in seconds).  
   
 ### CommittableTransaction
 

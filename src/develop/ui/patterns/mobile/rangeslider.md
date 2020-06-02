@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Allows the user select a single value between two range values.
 ---
 
-# Range Slider 
+# Range Slider
 
 You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track, increases or decreases the value.  
 

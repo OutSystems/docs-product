@@ -35,17 +35,17 @@ You can instrument your OutSystems applications for more advanced monitoring usi
 
 Also, OutSystems exposes the collected data and shares monitoring points that enable you to:
 
-* Create your own OutSystems applications to extend the built-in monitoring capabilities. Check some examples developed by the OutSystems community, available at [OutSystems Forge](https://www.outsystems.com/forge/) (e.g., [Infrastructure Monitor](https://www.outsystems.com/forge/component-overview/1178/infrastructure-monitor), [MonitorProbe](https://www.outsystems.com/forge/component-overview/4559/monitorprobe)).
-
 * Use the [PerformanceMonitoring API](../../ref/apis/performancemonitoring-api.md) to integrate with custom or third-party monitoring tools that you may already be using.
 
-* Use your custom-built APIs or just reuse existing Forge components such as [New Relic RUM](https://www.outsystems.com/forge/component-overview/6848/new-relic-rum-for-react) and [Dynatrace RUM](https://www.outsystems.com/forge/component-overview/6850/dynatrace-rum-for-react).
+* Use your custom-built APIs.
+
+* Create your own OutSystems applications to extend the built-in monitoring capabilities, or reuse the existing components developed by the OutSystems community, available at [OutSystems Forge](https://www.outsystems.com/forge/), such as [MonitorProbe](https://www.outsystems.com/forge/component-overview/4559/monitorprobe), [New Relic RUM](https://www.outsystems.com/forge/component-overview/6848/new-relic-rum-for-react) or [Dynatrace RUM](https://www.outsystems.com/forge/component-overview/6850/dynatrace-rum-for-react).
 
 ## Monitoring Responsibilities
 
 The scope of your monitoring responsibility depends on the [setup of your OutSystems infrastructure](../../setup/possible-setups.md) - **cloud** or **on-premises**.
 
-OutSystem Cloud
+OutSystems Cloud
 :   OutSystems guarantees the monitoring of the infrastructure layer components (servers and networking) and the platform main services in the middleware layer (web servers, deployment controllers, database). The customer is responsible for monitoring application usage (errors and performance), external integrations, end user experience, and business outcomes.
 
 ![Monitoring scope](images/intro-cloud-scope-diag.png?width=600)

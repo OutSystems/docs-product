@@ -112,6 +112,37 @@ The Speech to Text feature accepts audio files and outputs a transcription of th
 
 The output parameter of the **SpeechToText** Server Action is a transcription of the conversion result that has the highest confidence score.
 
+## Translation
+
+Use **GetTextTranslation** and **GetAlternativeTranslations** Server Actions from OutSystems.AI Language Analysis to translate text and words.
+
+### Translate text
+
+Use **GetTextTranslation** Server Action to translate text. The Action has the following input parameters:
+
+* **Text** - The source text that you want to translate.
+* **FromLanguageCode** - ISO 639-1 code of the source language.
+* **ToLanguageCode** - ISO 639-1 code of the target language.
+
+The output parameters are:
+
+* **TranslatedText** - Translation of the source text.
+* **LanguageCode** - ISO 639-1 code of the source language.
+* **Confidence** - The percentage of confidence in the identified language. If you don't supply **FromLanguageCode**, the component identifies the language automatically.  
+
+### Translate words
+
+Use the **GetAlternativeTranslations** Server Action to translate words. The Action has the following input parameters:
+
+* **Text** - The source word for translation.
+* **FromLanguageCode** - ISO 639-1 code of the source language.
+* **ToLanguageCode** - ISO 639-1 code of the target language.
+
+The output parameter is:
+
+* **AlternativeTranslations** - A list with parts of speech, back-translation, and alternative translations for the target language. It also contains some idiomatic phrases.
+
+
 ## Entity detection
 
 Drag and drop the **EntitiesHighlight** Block to your Screen and enter the two mandatory input parameters:

@@ -37,11 +37,14 @@
         - "How to add sorting to a Table fed by a SQL query":
             https://success.outsystems.com/Documentation/How-to_Guides/How_to_use_dynamic_sorting_in_a_Table_fed_by_a_SQL_query
 
+# Pass data between Screens with Input Parameters
+- develop/ui/navigation/pass-information-between-screens.md:
+    - develop/data/share-client-var-between-app.md
+    - develop/ui/reuse/block-communicate.md
 
 # Share a Client Variable between apps
 - develop/data/share-client-var-between-app.md:
   - ref/lang/auto/Class.Client Variable.final.md
-  - ref/lang/auto/Class.Session Variable.final.md
   - external:
     - "How to maintain the state of a mobile screen": 
         https://success.outsystems.com/Documentation/Development_FAQs/How_to_maintain_the_state_of_a_mobile_screen

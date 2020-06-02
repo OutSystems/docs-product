@@ -7,7 +7,7 @@ tags: support-Mobile_Apps; support-webapps
 
 <div class="info" markdown="1">
 
-This section applies only to the authentication of **end users**, i.e. the users of your OutSystems applications.  
+This section applies only to the authentication of **end users** — the users of your OutSystems applications.  
 The authentication of **IT users**, like Developers and IT Administrators, is [configured in LifeTime](../../../../managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md).
 
 </div>
@@ -43,7 +43,7 @@ OKTA
 
 * When using Active Directory or LDAP authentication, the Users module will try to authenticate the user locally first, if it exists in the OutSystems database and if it has a password defined. This first authentication attempt is not done when using SAML 2.0, Azure AD or OKTA authentication methods.
 
-## Configure the Authentication of End Users
+## Configure the authentication of end users
 
 To configure how end users are authenticated do the following:
 
@@ -55,7 +55,7 @@ To configure how end users are authenticated do the following:
 
 1. If you chose **Active Directory**, **LDAP**, **SAML 2.0**, **Azure AD** or **OKTA** in the previous step, you will need to fill in other configuration fields specific to the authentication method you selected in step 2. Check the other topics in this section for more information on configuring these authentication methods.
 
-## Authentication Flow
+## Authentication flow
 
 When the end user uses the application for the first time and the accessed screen allows only authenticated end users to see it, a security exception is raised. OutSystems will do the following: 
 
@@ -69,7 +69,7 @@ When the end user uses the application for the first time and the accessed scree
 
     1. The credentials are validated against the OutSystems database.
 
-    1. The platform checks if the authentication is configured to use Active Directory or LDAP authentication and does does one of the following:
+    1. The platform checks if the authentication is configured to use Active Directory or LDAP authentication and does one of the following:
 
         A) If the platform is configured to authenticate using Active Directory, the credentials are validated against the configured domain server.
 
@@ -77,7 +77,7 @@ When the end user uses the application for the first time and the accessed scree
 
 1. If after this process the end user could not be authenticated, then an "Invalid Login" message is displayed to the end user.
 
-## User Data Synchronization
+## User data synchronization
 
 When end user authentication is done using Active Directory, LDAP, SAML 2.0, Azure AD or OKTA, the user data in the OutSystems database is updated, in one or more occasions, with the most recent data from the external authentication system. The updated attributes for each user are the following:
 

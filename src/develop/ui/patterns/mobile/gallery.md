@@ -1,62 +1,70 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary: Displays content (such as cards) in a specific set of columns, configurable per device type and orientation. 
 ---
 
 # Gallery
 
-The Gallery pattern
-displays content (such as cards) in a specific set of columns, configurable
-per device type and orientation. Use this pattern to display a List of
-elements side by side, with a different number of items per row on different
-devices.
+You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end. 
 
-Here's a preview in Service Studio:
+## How to use the Gallery UI Pattern
 
-![](images/Gallery_preview.png)
+1. In Service Studio, in the Toolbox, search for `Gallery`. 
 
-## How to Use the Gallery Pattern
+    The Gallery widget is displayed.
 
-1\. Drag a list or static content.
+    ![](<images/gallerymob-8-ss.png>)
 
-2\. Set the number of items in Input Parameters.
+1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
 
-### Using Animations Inside the Gallery
+    ![](<images/gallerymob-9-ss.png>)
 
-1\. Use the **Animate** block as the first element inside the list.
+1. Add the required content to the Gallery widget. 
 
-![](images/Gallery_animate.png)
+   By default, the Gallery widget expects a list. 
 
-2\. Place your content inside the b block.
+    ![](<images/gallerymob-13-ss.png>)
 
-![](images/Gallery_ellipsis.png)
+    To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content.
 
-3\. Define the **Animate** block with your desired type of animation, and set
-the delay with current row number from the list.
+    In this example, we delete the list and add local images to the Gallery widget. 
 
-![](images/Gallery_interaction.png)
+   ![](<images/gallerymob-10-ss.png>)
+ 
+1. On the Element tree, select the Image widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Gallery.
 
-**Note**: If you are using a List inside a Gallery, you need to disable
-virtualization.
+    Note: In this example, the image property Type is set to **Local** image. You can also add External and Binary Data images. 
 
-![](images/Gallery_list.png)
-
-## Input Parameters
-
-**Input Name** |  **Description** |  **Default Value**  
----|---|---  
-![](images/input.png) ColumnsInPhonePortrait  |  Number of columns in a Portrait phone.  |  1  
-![](images/input.png) ColumnsInPhoneLandscape  |  Number of columns in a Landscape phone.  |  2  
-![](images/input.png) ColumnsInTabletPortrait  |  Number of columns in a portrait tablet.  |  3  
-![](images/input.png) ColumnsInTabletLandscape  |  Number of columns in a Landscape tablet.  |  4  
-![](images/input.png) UseGutter  |  If set, add a gutter to all the columns except the first.  |  _True_  
+   ![](<images/gallerymob-11-ss.png>)
   
-## Layout and Classes
+1. On the **Properties** tab, set the relevant (optional) properties, for example, the number of items you want to display on each device (see below for examples) and the space between each item (GutterSize).
 
-![](images/Gallery_Layout.png)
+    ![](<images/gallerymob-12-ss.png>)
+    
+After following these steps and publishing the module, you can test the pattern in your app.
 
-## Samples
+**4 items per row**
 
-The following sample uses the Gallery pattern:
+   ![](<images/gallerymob-14-ss.png>)
 
-![](images/Gallery-Sample-1.PNG)
+**3 items per row**
+    
+   ![](<images/gallerymob-15-ss.png>)
+
+**2 items per row**
+
+   ![](<images/gallerymob-16-ss.png>)
+
+**1 item per row**
+
+   ![](<images/gallerymob-17-ss.png>)
+
+## Properties
+
+| **Property** |  **Description** |
+|---|---|
+| ItemInPhone (Integer): Optional |  Number of items displayed on a phone. <p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_2_ - 2 items are displayed.</li></ul></p> |
+| ItemsInTablet (Integer):  |  Number of items displayed on a tablet. <p>Examples<ul><li>_Blank_ - 3 items are displayed. This is the default value.</li><li>_2_ - 1 item is displayed.</li></ul></p>  |    
+| ItemsInDesktop (Integer):  |  Number of items displayed on a desktop. <p>Examples<ul><li>_Blank_ - 4 items are displayed. This is the default value.</li><li>_3_ - 3 items are displayed.</li></ul></p>|    
+| GutterSize (Space Identifier): Optional  | Defines the space between the items. The predefined sizes are:<p><ul><li>None</li><li>Extra Small</li><li>Small</li><li>Base</li><li>Medium</li><li>Large</li><li>Extra Large</li><li>Extra Extra Large</li></ul></p><p>Examples<ul><li>_Blank_ - A space of 16px between each item. This is the default value (_Entities.Space.Base_). </li><li>_Entities.Space.Large_ - A space of 32px between each item.</li></ul></p>|
+  

@@ -15,7 +15,7 @@ Progressive web apps (PWA) provide native-like experiences without having to dis
 
 <div class="info" markdown="1">
 
-## Prerequisites
+**Prerequisites**
 
 To distribute your app as a PWA, you need to meet the following requirements:
 

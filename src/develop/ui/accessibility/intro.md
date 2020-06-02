@@ -19,11 +19,11 @@ Take into consideration the following guidelines:
 
 1. Ensure that your app meets the basic accessibility requirements. See the section [Basic accessibility settings](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Basic_accessibility_settings).
 
-2. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. See the section [Testing and fixing accessibility issues](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Testing_and_fixing_accessibility_issues).
+2. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. See the section [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
 
-3. Keep an eye on complex interactions and dynamic content. Fix the critical issues immediately. You may need to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. See the section [ARIA roles and attributes](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Accessible_Rich_Internet_Applications_roles_and_attributes).
+3. Keep an eye on complex interactions and dynamic content. Fix the critical issues immediately. You may need to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. See the section [ARIA roles and attributes](aria-roles-and-attributes.md).
 
-4. See [UI Patterns accessibility reference](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#UI_Patterns_accessibility_reference) for special notes about patterns you may be using in a page.
+4. See [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md) for special notes about patterns you may be using in a page.
 
  
 
@@ -43,7 +43,7 @@ OutSystems UI is often updated to support more accessibility features. For more 
 
 ## **Basic accessibility settings**
 
-You can achieve some of the basic accessibility settings by activating the built-in accessibility features, and for some, you need development or content work.
+OutSystems allows you to turn on the basic accessibility settings, such as contrast ratio, focus, and skip to content, by activating the built-in accessibility features in Service Studio. Other accessibility settings need development or content work.
 
 ## **Enabling the built-in accessibility features**
 
@@ -94,13 +94,13 @@ o set the page language, perform the following steps:
 
 <div class="info" markdown="1">
  
-The language of the log-in page is not defined. Navigate to **UI FLows** > **Common** > **Login** to supply the language identifier by using the **SetLang** action.
+The language of the log-in page isn't defined. Navigate to **UI Flows** > **Common** > **Login** to supply the language identifier by using the **SetLang** action.
  
 </div>
 
 ### **Image text alternatives**
 
-Image text alternatives, also known as alt text or alternative text, is a string of text that describes what is in the image.
+Image text alternatives, also known as alt text or alternative text, is a string of text that describes what's in the image.
 To set an alternative text to an image, execute the following steps:
 
 1. Select your image, and go to the  **Properties** tab.
@@ -128,7 +128,7 @@ To set the text headings, perform the following steps:
 
 ### **Text color contrast**
 
-By default, the correct text contrast ratio is provided on the OutSystems UI. The built-in accessibility features, once turned on, improve the contrast. If you edit the colors in your app, make sure the contrast is still valid.
+By default, the OutSystems UI provides the correct text contrast ratio. The built-in accessibility features, once turned on, improve the contrast. If you edit the colors in your app, make sure the contrast is still valid.
 
 ### **Text spacing**
 
@@ -201,7 +201,7 @@ Accessible Rich Internet Applications (ARIA) is a set of accessibility standards
 
 Use ARIA when you need to handle dynamic content or complex page structures. For example, you may have several sections on a page, and setting a **role=main** tells the screen readers where the main content is. If you have a block that takes some time to load, inform the screen readers by setting **aria-busy=true**. A button that opens a popup window can warn users by **aria-haspopup=true**.
 
-Adding ARIA attributes and roles requires familiarity with the concepts of ARIA and how ARIA works with HTML. An important thing to keep in mind is that **you should not use ARIA to override the meaning that the HTML tags and the pages produced by the OutSystems UI provide by default**. Inspect the pages before deciding to add an ARIA role or attribute. OutSystems UI adds some ARIA attributes by default, for example in actions that handle menu visibility.
+Adding ARIA attributes and roles requires familiarity with the concepts of ARIA and how ARIA works with HTML. An important thing to keep in mind is that **you shouldn't use ARIA to override the meaning that the HTML tags and the pages produced by the OutSystems UI provide by default**. Inspect the pages before deciding to add an ARIA role or attribute. OutSystems UI adds some ARIA attributes by default, for example in actions that handle menu visibility.
 
 When developing OutSystems apps, add ARIA roles, states, and properties by editing the **Attribute** property of the widgets. There are also some actions that handle specific ARIA properties, such as **SetAriaHidden** or **SetAccessibilityRole**.
 
@@ -219,7 +219,7 @@ Similarly, you can set an ARIA role.
 
 This ARIA property changes when the app runs, depending on a condition. To set an ARIA role or attribute dynamically, use the **If** keyword in the expression of the **Attribute** field. For example, the value of **aria-invalid** in the expression **aria-invalid=If(Form1.Valid, "false", "true")** changes depending on whether the **Form1.Valid** is true or false.
 
-If the form is invalid, because one of the required fields is missing or a value is not correct for a field, the form is marked with **aria-invalid="true"**. This is a signal to the screen readers to alert the users.
+If the form is invalid, because one of the required fields is missing or a value isn't correct for a field, the form is marked with **aria-invalid="true"**. This is a signal to the screen readers to alert the users.
 
 ![Setting the aria property dynamically](images/set-aria-dynamically-ss.png)
 
@@ -327,7 +327,7 @@ The following steps describe how to add an **aria-label** to describe the purpos
 
 ## **Testing and fixing accessibility issues**
 
-It's important that you test for accessibility issues and fix them early in development. This sections shows a quick example of using the WAVE accessibility evaluation tool, identifying issues, and addressing them in Service Studio. WAVE shows issues as visual markers on the page, which lets you focus on the low-code approach of the app development. You can also audit your apps with Lighthouse, which is integrated in Chrome DevTools.
+It's important that you test for accessibility issues and fix them early in development. This sections shows a quick example of using the WAVE accessibility evaluation tool, identifying issues, and addressing them in Service Studio. WAVE shows issues as visual markers on the page, which lets you focus on the low-code approach of the app development. You can also audit your apps with Lighthouse, integrated in the Chrome DevTools.
 
 ### **Build a page**
 
@@ -382,7 +382,7 @@ The Alert pattern further supports changing the ARIA role with the **SetAccessib
 
 1. Select the Alert pattern, and on the **Properties** tab, in the **Name** field, enter **myAlert**. This is now the element identifier.
 
-2. Open the logic flow that is relevant to the Alert showing on the screen.
+2. Open the logic flow that's relevant to the Alert showing on the screen.
 
 3. Locate **Logic** > **OutSystemsUI** > **Accessibility** > **SetAccessibilityRole.** Drag the **SetAccessibilityRole** action to the flow.
 
@@ -398,7 +398,7 @@ The **Master Detail** UI pattern splits the screen vertically into two panels. C
 
 #### Configure the correct keyboard interaction
 
-The Master Detail UI Pattern requires you to be careful with how the tab key behaves on the page. You should set **tabindex="0"** to the list section of the pattern, so the focus is not lost somewhere else on the page. When the item in the list does not have text (you're using images), or the text is not descriptive (you're using short text), use **aria-label** to provide more information to screen readers.
+The Master Detail UI Pattern requires you to be careful with how the tab key behaves on the page. You should set **tabindex="0"** to the list section of the pattern, so the focus isn't lost somewhere else on the page. When the item in the list doesn't have text (you're using images), or the text isn't descriptive (you're using short text), use **aria-label** to provide more information to screen readers.
 
 #### Configure the correct switch of the focus
 
@@ -424,11 +424,11 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
     ![Master detail aria label aggregate](images/master-detail-aria-label-aggregate-ss.png)
 
-1. On the **ListItemOnClick** action, add the **MasterDetailSetContentFocus** action, that is needed for accessibility compliance, as it allows to change the focus between the detail and the next **listitem**, with parameters mapped from the **ListItemOnClick**:
+1. On the **ListItemOnClick** action, add the **MasterDetailSetContentFocus** action. You need this for accessibility compliance, as it allows to change the focus between the detail and the next **listitem**, with parameters mapped from the **ListItemOnClick**:
 
     1. **ContentID** (text) - Id of the content to focus on.
 
-    2. **TriggerItem** (text) - Id of the item that was clicked.
+    2. **TriggerItem** (text) - Id of the clicked item.
 
     ![Setting the Master detail set content focus action](images/master-detail-setcontentfocus-ss.png)
 

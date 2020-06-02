@@ -1370,6 +1370,14 @@
         - "Front-End Architecture Best Practices":
             https://success.outsystems.com/Documentation/Best_Practices/Front-End_Architecture_Best_Practices
 
+# --- Accessibility ---
+
+- develop/ui/accessibility/intro.md:
+    - develop/ui/accessibility/aria-roles-and-attributes.md
+    - develop/ui/accessibility/testing-fixing-accessibility-issues.md
+    - develop/ui/accessibility/ui-patterns-accessibility-reference.md
+
+
 # --- Managing the Applications Lifecycle > Manage IT Users ---
 
 - managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md:

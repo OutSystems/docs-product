@@ -1,15 +1,9 @@
 ---
 summary: Learn about Accessible Rich Internet Applications (ARIA) roles and attributes.
-tags: accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
+tags: accessibility; runtime-reactiveweb; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
 ---
 
 # Accessible Rich Internet Applications roles and attributes
-
-<div class="info" markdown="1">
- 
-The instructions in this document focus on the Accessibility features for the **Reactive Web Apps**.
- 
-</div>
 
 Accessible Rich Internet Applications (ARIA) is a set of accessibility standards. ARIA defines elements to use on top of HTML and OutSystems UI to provide additional information to assistive technology tools. ARIA doesn't change how the page looks. There are ARIA roles, states, and properties. ARIA states and properties are also known as ARIA attributes.
 

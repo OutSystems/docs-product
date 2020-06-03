@@ -1,15 +1,9 @@
 ---
 summary: Learn how to configure accessibility settings specific to some OutSystems UI patterns.
-tags: accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria; ui-patterns-accessibility-settings
+tags: accessibility; runtime-reactiveweb; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria; ui-patterns-accessibility-settings
 ---
 
 # UI Patterns accessibility reference
-
-<div class="info" markdown="1">
- 
-The instructions in this document focus on the Accessibility features for the **Reactive Web Apps**.
- 
-</div>
 
 The OutSystems UI is designed with the WCAG 2.1 in mind. However, the UI patterns can introduce complex UI interactions in the app. These interactions may not be obvious to the users of assistive technologies. Refer to this section for more information about accessibility related to the UI patterns you may be using.
 

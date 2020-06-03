@@ -1,15 +1,9 @@
 ---
 summary: Learn how to make your OutSystems Reactive Web applications accessible to everyone.
-tags: article-page; accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
+tags: article-page; runtime-reactiveweb; accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
 ---
 
 # Accessibility
-
-<div class="info" markdown="1">
- 
-The instructions in this document focus on the Accessibility features for the **Reactive Web Apps**.
- 
-</div>
 
 Having accessible apps, apps that all people can use, is important for ethical, practical, and often legal reasons. You can build apps conformant with the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21) (WCAG) thanks to the user interface (UI) features OutSystems created with accessibility in mind. You can also customize the UI and the app logic to accommodate the criteria you want to achieve.
 

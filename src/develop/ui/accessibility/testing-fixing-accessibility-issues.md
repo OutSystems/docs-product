@@ -1,15 +1,9 @@
 ---
 summary: Learn how to test and fix accessibility issues on your OutSystems Reactive Web applications.
-tags: accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria; testing-fixing-accessibility-issues
+tags: accessibility; runtime-reactiveweb; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria; testing-fixing-accessibility-issues
 ---
 
 # Testing and fixing accessibility issues
-
-<div class="info" markdown="1">
- 
-The instructions in this document focus on the Accessibility features for the **Reactive Web Apps**.
- 
-</div>
 
 During the development of an accessible application, OutSystems recommends you to test for accessibility issues and fix them early. This sections shows a quick example of using the [WAVE accessibility evaluation tool](https://wave.webaim.org/), identifying issues, and addressing them in Service Studio. WAVE shows issues as visual markers on the page, which lets you focus on the low-code approach of the app development. You can also audit your apps with Lighthouse, integrated in the Chrome DevTools.
 

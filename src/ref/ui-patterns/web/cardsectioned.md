@@ -7,7 +7,7 @@ summary: Advanced use cases for the Card Sectioned UI Pattern.
 
 ## Layout and classes
 
-![](<images/cardsectioned-image-2.png>)
+![](<images/cardsectioned-2-diag.png>)
 
 ## CSS selectors
 
@@ -30,11 +30,11 @@ summary: Advanced use cases for the Card Sectioned UI Pattern.
 
 **Desktop & Tablet**
 
-![](<images/cardsectioned-image-3.png>)
+![](<images/cardsectioned-3.png>)
 
 **Phone**
 
-![](<images/cardsectioned-image-4.png>)
+![](<images/cardsectioned-4.png>)
 
 ## Notes
-The parameter IsRight only works if the paramater Orientation is not Vertical.
+The parameter IsRight only works if the parameter Orientation is not Vertical.

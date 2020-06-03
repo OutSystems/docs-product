@@ -7,7 +7,7 @@ summary: Card Background groups short pieces of information and highlights them 
 
 You can use the Card Background UI Pattern to group small pieces of information and highlight them on the screen using a background image. The information is grouped into a small block that is easily noticeable on-screen. 
 
-![](<images/cardbackground-image-1.png>)
+![](<images/cardbackground-1.png>)
 
 
 **How to use the Card Background UI Pattern**
@@ -16,21 +16,21 @@ You can use the Card Background UI Pattern to group small pieces of information 
 
     The Card Background widget is displayed.
 
-    ![](<images/cardbackground-image-3.png>)
+    ![](<images/cardbackground-2-ss.png>)
     
 1. From the Toolbox, drag the Card Background widget into the Main Content area of your application's screen.
 
-    ![](<images/cardbackground-image-4.png>)
+    ![](<images/cardbackground-3-ss.png>)
 
     By default, the Card Background widget contains a Content placeholder with some text and a Background Image placeholder with an image. 
 
 1. Add your content to the placeholder. In this example we change the image. To do this, from the Widget Tree, select the Image, and on the **Properties** tab, from the **Image** drop-down, select the image you want to display. 
 
-    ![](<images/cardbackground-image-5.png>)
+    ![](<images/cardbackground-4-ss.png>)
 
 1. On the **Properties** tab, you can change the look and feel of the Card Background widget, by setting the (optional) properties, for example, the background color that overlays the image, the content's position and a minimum height for the card.
 
-    ![](<images/cardbackground-image-6.png>)
+    ![](<images/cardbackground-5-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

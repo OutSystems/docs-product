@@ -9,7 +9,7 @@ Groups information in a small block organized with different sections for title,
 
 Use the Card Sectioned pattern to group short pieces of information and highlight them on the screen.
 
-![](<images/cardsection-image-3.png>)
+![](<images/cardsection-3.png>)
 
 **How to use the Card Sectioned UI Pattern**
 
@@ -17,21 +17,21 @@ Use the Card Sectioned pattern to group short pieces of information and highligh
 
     The Card Sectioned widget is displayed.
 
-    ![](<images/cardsection-image-1.png>)
+    ![](<images/cardsection-1-ss.png>)
     
 1. From the Toolbox, drag the Card Sectioned widget into the Main Content area of your application's screen.
 
-    ![](<images/cardsection-image-2.png>)
+    ![](<images/cardsection-2-ss.png>)
 
     By default, the Card Sectioned widget contains an Image, Title, Content, and Footer placeholder.
 
 1. Add your content to the placeholders. In this example we add an image, a title, some text, and a link. 
 
-    ![](<images/cardsection-image-4.png>)
+    ![](<images/cardsection-4-ss.png>)
     
 1. On the **Properties** tab, you can change the look and feel of the Card Sectioned widget, for example, the orientation, direction and padding properties.
 
-    ![](<images/cardsection-image-5.png>)
+    ![](<images/cardsection-5-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

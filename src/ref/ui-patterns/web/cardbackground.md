@@ -7,7 +7,7 @@ summary: Advanced use cases for the Card Background UI Pattern.
 
 ## Layout and classes
 
-![](<images/cardbackground-image-2.png>)
+![](<images/cardbackground-6-diag.png>)
 
 ## CSS selectors
 
@@ -35,19 +35,19 @@ summary: Advanced use cases for the Card Background UI Pattern.
     - Height: `400`
     - ExtendedClass: `shadow-xl`
 
-    ![](<images/cardbackground-image-3.png>)
+    ![](<images/cardbackground-7-ss.png>)
 
 1. Add a text widget into the Content placeholder and set the Style Classes property to `heading4 text-neutral-0`.
 
-    ![](<images/cardbackground-image-4.png>)
+    ![](<images/cardbackground-8-ss.png>)
 
 1. Drag an image to the BackgroundImage placeholder.
 
-    ![](<images/cardbackground-image-5.png>)
+    ![](<images/cardbackground-9-ss.png>)
 
 1. Publish and test.
 
-    ![](<images/cardbackground-image-6.png>)
+    ![](<images/cardbackground-image-10-ss.png>)
 
 ## Notes
 

@@ -1373,15 +1373,12 @@
 # --- Accessibility ---
 
 - develop/ui/accessibility/intro.md:
-    - develop/ui/accessibility/aria-roles-and-attributes.md
-    - develop/ui/accessibility/testing-fixing-accessibility-issues.md
-    - develop/ui/accessibility/ui-patterns-accessibility-reference.md
-    - develop/ui/accessibility/additional-accessibility-resources.md
     - external:
         - "Accessibility in Traditional Web Applications": 
             https://success.outsystems.com/Support/Enterprise_Customers/Accessibility/Accessibility_in_OutSystems_Web_Applications
 
 - develop/ui/accessibility/aria-roles-and-attributes.md:
+    - one-way: develop/ui/accessibility/intro.md
     - develop/ui/accessibility/testing-fixing-accessibility-issues.md
     - develop/ui/accessibility/ui-patterns-accessibility-reference.md
     - develop/ui/accessibility/additional-accessibility-resources.md
@@ -1390,6 +1387,7 @@
             https://success.outsystems.com/Support/Enterprise_Customers/Accessibility/Accessibility_in_OutSystems_Web_Applications
 
 - develop/ui/accessibility/testing-fixing-accessibility-issues.md:
+    - one-way: develop/ui/accessibility/intro.md
     - develop/ui/accessibility/ui-patterns-accessibility-reference.md
     - develop/ui/accessibility/additional-accessibility-resources.md
     - external:
@@ -1397,12 +1395,14 @@
             https://success.outsystems.com/Support/Enterprise_Customers/Accessibility/Accessibility_in_OutSystems_Web_Applications
 
 - develop/ui/accessibility/ui-patterns-accessibility-reference.md:
+    - one-way: develop/ui/accessibility/intro.md
     - develop/ui/accessibility/additional-accessibility-resources.md
     - external:
         - "Accessibility in Traditional Web Applications": 
             https://success.outsystems.com/Support/Enterprise_Customers/Accessibility/Accessibility_in_OutSystems_Web_Applications
 
 - develop/ui/accessibility/additional-accessibility-resources.md:
+    - one-way: develop/ui/accessibility/intro.md
     - external:
         - "Accessibility in Traditional Web Applications": 
             https://success.outsystems.com/Support/Enterprise_Customers/Accessibility/Accessibility_in_OutSystems_Web_Applications

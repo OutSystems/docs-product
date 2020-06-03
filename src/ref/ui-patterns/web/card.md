@@ -7,7 +7,7 @@ summary: Advanced use cases for the Card UI Pattern.
 
 ## Layout and classes
 
-![](<images/card-image-2.png>)
+![](<images/card-2-diag.png>)
 
 ## Advanced use case
 
@@ -16,7 +16,7 @@ summary: Advanced use cases for the Card UI Pattern.
 1. Write the following classes in the ExtendedClass property of the card.
     `background-yourcolor text-neutral-0 border-size-none `
 
-    ![](<images/card-image-3.png>)
+    ![](<images/card-3-ss.png>)
     
     The class `text-neutral-0` is to set the text-color to white, in contrast with the new background. The `border-size-none` class is to remove the border.
     
@@ -24,8 +24,8 @@ summary: Advanced use cases for the Card UI Pattern.
 
     **Before**
 
-    ![](<images/card-image-4.png>)
+    ![](<images/card-4.png>)
 
     **After**
 
-    ![](<images/card-image-5.png>)
+    ![](<images/card-5.png>)

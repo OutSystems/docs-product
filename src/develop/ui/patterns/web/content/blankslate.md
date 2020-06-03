@@ -6,7 +6,7 @@ summary: Blank Slate informs end users when they start using the application, co
 # Blank Slate
 You can use the Blank State UI Pattern to inform end users when they start using the application, complete a task, or when there is no data available for display.
 
-![](<images/blankslate-image-1.png>)
+![](<images/blankslate-1.png>)
 
 **How to use the Blank Slate UI Pattern**
 
@@ -14,17 +14,17 @@ You can use the Blank State UI Pattern to inform end users when they start using
 
     The Blank Slate widget is displayed.
 
-    ![](<images/blankslate-image-2.png>)
+    ![](<images/blankslate-2-ss.png>)
 
 1. From the Toolbox, drag the Blank Slate widget into the Main Content area of your application's screen.
 
-    ![](<images/blankslate-image-3.png>)
+    ![](<images/blankslate-3-ss.png>)
 
     By default, the Blank Slate widget contains an icon and some text. You can change these if required.
 
 1. Add your content to the placeholder. In this example we change the icon. To do this, from the Widget Tree, select the Icon, and on the **Properties** tab, from the **Name** drop-down, select the icon you want to display. 
 
-    ![](<images/blankslate-image-4.png>)
+    ![](<images/blankslate-4-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

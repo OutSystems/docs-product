@@ -7,7 +7,7 @@ summary: Advanced use cases for the Bullets UI Pattern.
 
 ## Layout and classes
 
-![](<images/bullets-image-2.png>)
+![](<images/bullets-2-diag.png>)
 
 ## Advanced use case
 
@@ -20,4 +20,4 @@ summary: Advanced use cases for the Bullets UI Pattern.
 1. Inside the BulletItem pattern, use expressions to display the content.
 1. Publish and test.
 
-    ![](<images/bullets-image-3.png>)
+    ![](<images/bullets-3-ss.png>)

@@ -7,7 +7,7 @@ summary: Advanced use cases for the Blank Slate UI Pattern.
 
 ## Layout and classes
 
-![](<images/blankslate-image-2.png>)
+![](<images/blankslate-2-diag.png>)
 
 ## CSS Selectors
 
@@ -29,9 +29,9 @@ summary: Advanced use cases for the Blank Slate UI Pattern.
 
 1. Drag the If Widget and enter the Empty runtime property in the condition.
 
-    ![](<images/blankslate-image-3.png>)
+    ![](<images/blankslate-3-ss.png>)
 
 1. Inside the True branch of the condition, use the BlankSlate Pattern.
 1. Inside the False branch of the condition, use your list.
 
-    ![](<images/blankslate-image-4.png>)
+    ![](<images/blankslate-4-ss.png>)

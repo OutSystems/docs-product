@@ -7,7 +7,7 @@ summary: Card groups small pieces of information and highlights them on the scre
 
 You can use the Cards UI Pattern to group small pieces of information and highlight them on the screen. The information is grouped into a small block that is easily noticeable on-screen.
 
-   ![](<images/card-image-6.png>)
+   ![](<images/card-1.png>)
 
 **How to use the Card UI Pattern**
 
@@ -15,15 +15,15 @@ You can use the Cards UI Pattern to group small pieces of information and highli
 
     The Card widget is displayed.
 
-    ![](<images/card-image-7.png>)
+    ![](<images/card-2-ss.png>)
 
 1. From the Toolbox, drag the Card widget into the Main Content area of your application's screen.
 
-    ![](<images/card-image-1.png>)
+    ![](<images/card-3-ss.png>)
 
 1. Add your content to the placeholder. In this example we add some text.
 
-    ![](<images/card-image-8.png>)
+    ![](<images/card-4-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

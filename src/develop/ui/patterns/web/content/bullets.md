@@ -13,11 +13,11 @@ You can use the Bullets UI Pattern to organize topics into separate bullet point
 
     The Bullets widget is displayed.
 
-    ![](<images/bullets-image-1.png>)
+    ![](<images/bullets-1-ss.png>)
 
 1. From the Toolbox, drag the Bullets widget into the Main Content area of your application's screen.
 
-    ![](<images/bullets-image-2.png>)
+    ![](<images/bullets-2-ss.png>)
 
     By default, the Bullets widget contains 3 Bullet Items. You can add or delete Bullet Items as required. To create sub-bullets, you can drag the Bullets widget into the Bullet Item placeholder.
 
@@ -25,7 +25,7 @@ You can use the Bullets UI Pattern to organize topics into separate bullet point
 
     **Note**: If you leave any placeholder blank, it will not be displayed when the page is rendered.
 
-    ![](<images/bullets-image-5.png>)
+    ![](<images/bullets-5-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

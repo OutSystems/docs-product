@@ -890,13 +890,13 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
         - "OutSystems UI Pattern": 
-           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
 - develop/ui/patterns/web/content/chatmessage.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ChatMessage.aspx
          - "OutSystems UI Pattern": 
-           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=19
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=19
 - develop/ui/patterns/web/content/lightboximage.md:
     - ref/ui-patterns/web/lightbox-image.md
     - external:
@@ -905,23 +905,29 @@
 - develop/ui/patterns/web/content/modal.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+           https://outsystemsui.outsystems.com/WebStyleGuidePreview/Modal.aspx
 - develop/ui/patterns/web/content/panel.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Panel.aspx
 - develop/ui/patterns/web/content/section.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Section.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=63
 - develop/ui/patterns/web/content/tag.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tag.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=74
 - develop/ui/patterns/web/content/tooltip.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tooltip.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=77
 - develop/ui/patterns/web/controls/animatedlabel.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

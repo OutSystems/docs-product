@@ -9,45 +9,33 @@ Groups information in a small block, organized in different sections for title, 
 
 Use a panel to group short pieces of information and highlight them on the screen with a specific structure. 
 
-**How to use**
+![](<images/panel-1.png>)
 
-Add content in the placeholders.
+**How to use the Panel UI Pattern**
 
-1. Drag the Panel pattern into the preview.
-
-    ![](<images/panel-image-1.png?width=500>)
-
-1. Set the content in the placeholders.
-
-1. Publish and test.
-
-
-## Input Parameters
-
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | none |
+1. In Service Studio, in the Toolbox, search for `Panel`.
   
-## Layout and Classes
+     The Panel widget is displayed.
 
-![](<images/panel-image-2.png>)
+    ![](<images/panel-2-ss.png>)
 
-## Advanced Use Case
+1. To From the Toolbox, drag the Panel widget into the Main Content area of your application's screen. 
 
-### Add box-shadow on Panel
+   ![](<images/panel-3-ss.png>)
 
-1. Set the ExtendedClass parameter to `shadow-l`.
-    
-    ![](<images/panel-image-3.png>)
+    By default, the Panel widget contains Title, Actions, Content, and Footer placeholders.
 
-1. Publish and test.
+1. Add your content to the placeholders. In this example, we add a title, text, and a button.
 
 
+    ![](<images/panel-4-ss.png>)
 
-Before:
+After following these steps and publishing the module, you can test the pattern in your app.
 
-![](<images/panel-image-4.png>)
+## Properties
 
-After:
+| **Properties** |  **Description** |  
+|---|---|
+| ExtendedClass (Text): Optional |  Add custom style classes to the Panel UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Panel UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Panel UI styles being applied.</li></ul></p> |
 
-![](<images/panel-image-5.png>)
+  

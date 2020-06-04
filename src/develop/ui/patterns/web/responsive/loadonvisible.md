@@ -5,11 +5,11 @@ summary: LoadOnVisible improves both the actual and perceived speed of your appl
 
 # Load on Visible 
 
-You can use the Load on Visible UI Pattern to enhance the speed of your application as well as improve user experience. Using this UI pattern,  information is loaded onto the page only when it is visible to the user. For example, instead of loading all text and images onto a page at once, they only appear when the user scrolls down the page and the information/image becomes visible.
+You can use the Load on Visible UI Pattern to enhance the speed of your application as well as improve user experience. Using this UI pattern, information is loaded onto the page only when it is visible to the user. For example, instead of loading all text and images onto a page at once, they only appear when the user scrolls down the page and the information/image becomes visible.
 
 **How to use the Load on Visible UI Pattern**
 
-1. In Service Studio, in the Toolbox, search for `Display on Visible`. 
+1. In Service Studio, in the Toolbox, search for `Load on Visible`. 
 
     The Load on Visible widget is displayed.
 

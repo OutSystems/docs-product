@@ -11,7 +11,7 @@ You can use the Breadcrumbs UI Pattern as a navigational aid that helps users ke
 
 **How to use the Breadcrumbs UI Pattern**
 
-The following example demonstrates how you can create a breadcrumb trail with four breadcrumb items. 
+The following use case adds the Breadcrumbs UI Pattern to one screen. If you want Breadcrumbs to appear on multiple screens in your app, we recommend adding the pattern to a **web block**. For more information, see [Create and Reuse Screen Blocks](../../../reuse/block-create-reuse.md). 
 
 1. In Service Studio, in the Toolbox, search for `Breadcrumbs`.
   
@@ -31,11 +31,15 @@ The following example demonstrates how you can create a breadcrumb trail with fo
 
     ![](<images/breadcrumbs-10-ss.png>)
         
-1. In the Title placeholder, enter the breadcrumb title (in this example, More Details) and drag an Icon widget into the Icon placeholder.    
+1. In the Title placeholder, enter the breadcrumb title (in this example, **More Details**) and drag an Icon widget into the Icon placeholder.    
     
     ![](<images/breadcrumbs-11-ss.png>)
+
+1. So that each of the Breadcrumb Items are navigational, we add links. To do this, select the text inside the Breadcrumb Item placeholder, right-click, select **Link to** and select the link destination. In this example, we want the **More Details** Breadcrumb Item to link to an existing page called **More Details**. Repeat this process for each of the Breadcrumb Items. 
+
+    ![](<images/breadcrumbs-3-ss.png>)
     
-1. So that the new Breadcrumb Item widget icon matches the others, select the Icon widget, and on the **Properties** tab, set the **Name** property to ``Entities.IconName.angle_right``.
+1. So that the new **More Details** Breadcrumb Item icon matches the others, select the Icon widget, and on the **Properties** tab, set the **Name** property to ``Entities.IconName.angle_right``.
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -31,6 +31,8 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 
     ![](<images/tooltip-5-ss.png>)
 
+After following these steps and publishing the module, you can test the pattern in your app.
+
 ## Properties
 
 | **Properties** |  **Description** |  
@@ -39,5 +41,5 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 | IsVisible (Boolean): Optional | If True, the tooltip is visible when the page is first loaded (without the need for the initial trigger). If False, the tooltip is not visible. This is the default. |
 | Position ( PositionBase Identifier): Optional | Set the tooltip's position. The predefined options are:<ul><li>Bottom</li><li>Left</li><li>Right</li><li>Top</li></ul><p>Examples <ul><li>_Blank_ - The tooltip is displayed on top of the element. (_Entities.PositionBase.Top_). This is the default.</li><li>_Entities.PositionBase.Right_ - The tooltip is displayed to the right of the element.</li></ul></p>| 
 | ExtendedClass (Text): Optional |  Add custom style classes to the Tooltip UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Tooltip UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Tooltip UI styles being applied.</li></ul></p> |
-| AdvancedFormat (Text): Optional | Allows for more options beyond what is provided through the input parameters. Example: `{ arrow: false }`. For more information, visit https://atomiks.github.io/tippyjs/ | 
+| AdvancedFormat (Text): Optional | Allows for more options beyond what is provided through the input parameters. Example: `{ arrow: false }`. For more information, visit https://atomiks.github.io/tippyjs/. | 
 

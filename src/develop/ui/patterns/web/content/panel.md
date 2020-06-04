@@ -5,7 +5,7 @@ summary: Panel groups short pieces of information in small blocks and highlights
 
 # Panel
 
-Groups information in a small block, organized in different sections for title, actions, content and a small footer that is easily noticeable.
+You can use the Panel UI Pattern to group information in a small block, organized in different sections for title, actions, content, and a small footer that is easily noticeable.
 
 Use a panel to group short pieces of information and highlight them on the screen with a specific structure. 
 
@@ -26,7 +26,6 @@ Use a panel to group short pieces of information and highlight them on the scree
     By default, the Panel widget contains Title, Actions, Content, and Footer placeholders.
 
 1. Add your content to the placeholders. In this example, we add a title, text, and a button.
-
 
     ![](<images/panel-4-ss.png>)
 

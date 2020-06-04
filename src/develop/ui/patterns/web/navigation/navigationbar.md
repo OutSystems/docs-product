@@ -35,7 +35,7 @@ The following use case adds the Navigation Bar UI Pattern to **one** screen. If 
     
     ![](images/navigationbar-9-ss.png)   
 
-1. On the **Properties** tab, you can alsocustomize the Navigation Bar's look and feel by setting any of the optional properties.
+1. On the **Properties** tab, you can also customize the Navigation Bar's look and feel by setting any of the optional properties.
 
     ![](images/navigationbar-3-ss.png)
 

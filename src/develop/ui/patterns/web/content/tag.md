@@ -19,7 +19,6 @@ You can use the Tag UI Pattern to style small texts in a colored tag format. Use
 
     ![](<images/tag-2-ss.png>)
 
-
 1. Add your content to the placeholders. In this we add some text.
 
     ![](<images/tag-3-ss.png>)

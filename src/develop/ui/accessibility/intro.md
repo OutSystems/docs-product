@@ -11,7 +11,7 @@ A general recommendation is to start thinking about accessibility **early in the
 
 Take into consideration the following guidelines:
 
-1. Ensure that your app meets the basic accessibility requirements. See the section [Basic accessibility settings](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Basic_accessibility_settings).
+1. Ensure that your app meets the basic accessibility requirements. See the section [Enabling the built-in accessibility features](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Enabling_the_built-in_accessibility_features).
 
 2. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. See the section [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
 

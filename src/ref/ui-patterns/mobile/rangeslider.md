@@ -17,7 +17,7 @@ summary: Advanced use cases for the Range Slider UI Pattern
 
 ![](images/rangeslider-11.png)
 
-![](images/rangeslider12.png)
+![](images/rangeslider-12.png)
 
 ![](images/rangeslider-13.png)
 

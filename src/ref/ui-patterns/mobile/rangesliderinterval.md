@@ -22,3 +22,21 @@ summary: Advanced use cases for the Range Slider Interval UI Pattern
 |  noUi-handle  |  .noui-active  |  Class added when you click the handle.  
 
 
+### Changing the color of the bar
+
+![](images/rangesliderinterval-6.png)
+
+![](images/rangesliderinterval-8.png)
+
+![](images/rangesliderinterval-9.png)
+
+### Changing the size of the handles
+
+![](images/rangesliderinterval-10.png)
+
+![](images/rangesliderinterval-11.png)
+
+![](images/rangesliderinterval-12.png)
+
+
+

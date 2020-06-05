@@ -21,23 +21,41 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
     ![](images/stackedcards-3-ss.png)
 
-    By default, the Stacked Cards widget contains a Content placeholder with a list, as well as an Overlay Top, Overlay Right and Overlay Right placeholders. 
+    By default, the Stacked Cards widget contains a List, Overlay Top, Overlay Right, and Overlay Right placeholders. 
 
-1. Add content to the **Content** placeholder.
-
-    In this example, we delete the list and add images by dragging the Image widget into the COntent placeholder. You can also add a list of images.
+1. Add content to the List placeholder. In this example, from the **Data** tab, we drag a list of Employees into the List placeholder.
 
     ![](images/stackedcards-4-ss.png)
 
-1. From the Element Tree, select the Image widget, and on the **Properties** tab, from the Image drop-down, select or import the image you want in the Stacked Cards pattern.
+    The **GetEmployees** aggregate is automatically created.
 
-    Note: In this example, the image property is set to **Local** image. You can also add [External and Binary Data](../../../../develop/ui/image/display-image.md) images.
+      ![](images/stackedcards-5-ss.png)
 
-1. Repeat step 4 for each of the images.
+1. From the Toolbox, drag the Icon widget into the OverlayTop placeholder, and from the Pick an Icon editor, choose an icon. Click **Ok**.
 
-1. Add content to the Overlay placeholders (optional). In this example, we add an icon to each of the placeholders. 
+      ![](images/stackedcards-6-ss.png)
 
-    ![](images/stackedcards-5-ss.png)
+1. Repeat step 4 for the OverlayRight and OverlayLeft placeholders. 
+
+      ![](images/stackedcards-7-ss.png)
+
+1. To create a swipe action for the OverlayLeft placeholder, select the pattern, and from the OnLeftSwipe **Handler** drop-down, select **New Client Action**.
+
+    ![](images/stackedcards-8-ss.png)
+
+1. From the Toolbox, drag a **Run Server Action** onto the client action, and from the **Select Action** editor, navigate to the action you want the swipe left action to perform. In this example, we use the **DeleteEmployee** action. 
+
+    ![](images/stackedcards-9-ss.png)
+
+1. From the **Id** drop-down, select the action Id. In this example, the Id is the currently selected employee. This means, that when the user swipes left, the currently selected user is deleted form the list of employees.  
+
+   ![](images/stackedcards-10-ss.png)
+
+1. Repeat step 7 for the OverlayTop (swipe up) and OverLayRight (swipe right) placeholders.
+
+1. From the **Properties** tab, you can change the Range Slider's look and feel by setting the (optional) properties.
+
+   ![](images/stackedcards-11-ss.png)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

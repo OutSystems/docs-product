@@ -1023,9 +1023,12 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 - develop/ui/patterns/web/navigation/breadcrumbs.md:
+    - ref/ui-patterns/web/breadcrumbs.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Breadcrumbs.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10
 - develop/ui/patterns/web/navigation/sectionindex.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1078,9 +1081,12 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 - develop/ui/patterns/web/numbers/progresscircle.md:
+    - ref/ui-patterns/web/progresscircle.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=58
 - develop/ui/patterns/web/numbers/userinitials.md:
     - ref/ui-patterns/web/user-initials.md
     - external:
@@ -1093,9 +1099,10 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 - develop/ui/patterns/web/responsive/loadonvisible.md:
+    - ref/ui-patterns/web/load-on-visible.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LoadOnVisible.aspx
 - develop/ui/patterns/web/responsive/moveondevice.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1213,6 +1220,25 @@
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51
+- develop/ui/patterns/mobile/stackedcards.md:
+    - ref/ui-patterns/mobile/stackedcards.md
+    - external:
+       - "OutSystems UI Pattern":  
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
+- develop/ui/patterns/mobile/rangeslider.md:
+    - ref/ui-patterns/mobile/rangeslider.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSlider.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=60
+- develop/ui/patterns/mobile/rangesliderinterval.md:
+    - ref/ui-patterns/mobile/rangesliderinterval.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSliderInterval.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=61
 # Link to Training
 - extensibility-and-integration/connect-external-db.md:
     - external:

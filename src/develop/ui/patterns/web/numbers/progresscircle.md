@@ -1,88 +1,44 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ProgressCircle shows the current progress of a task using circular or semi-circular progress indicators.
+summary: Displays the current progress of a task using circular or semi-circular progress indicators.
 ---
 
-# ProgressCircle
+# Progress Circle
 
-Easy to create circular or semi-circular progress indicators.
+You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge. <!-- You can also show progress in a Progress Bar or Progress Circle Fraction display type.  When using the Progress Circle Pattern, you must be consistent, for example, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. -->
 
-**When to use**
+ ![](<images/progresscircle-2-ss.png>)
 
-Use the Progress Circle to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge. You can also show progress in a Progress Bar or Progress Circle Fraction display type. Be consistent when using a pattern to show progress of a task, for instance, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. 
+**How to use the Progress Circle UI Pattern**
 
-**How to use**
+1. In Service Studio, in the Toolbox, search for `Progress Circle`. 
 
-Create your custom content and put it inside the content placeholder.
+    The Progress Circle widget is displayed.
 
-1. Drag the ProgressCircle pattern into the preview.
-
-1. Define the progress value.
-
-    ![](<images/progresscircle-image-1.png>)
-
-1. Set the required content in the placeholder.
-
-1. Publish and test.
-
-    ![](<images/progresscircle-image-2.png>)
-
-## Input Parameters
-
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Progress  |  Percentage to display, you can use functions or local variables. |  Integer | True | none |
-| ProgressColor  |  The color of the stroke on progress circle. |  Color Identifier | False | Entities.Color.Primary |
-| TrailColor  |  The color of the empty part of the progress circle. |  Color Identifier | False | Entities.Color.Neutral5 |
-| CircleThickness  |  The thickness of the circle that marks the progress. |  Integer | False | 4 |
-| AnimateInitialProgress  |  Animate the progress circle from zero to progress value. |  Boolean | False | True |
-| IsSemiCircle  |  Change the type of progress bar from circle to semi circle. |  Boolean | False | False |
-| AdvancedFormat  |  Allow for more options beyond what it's provided through the input parameters. For more information visit: https://kimmobrunfeldt.github.io/progressbar.js/. Example: `{ easing: 'bounce' }` |  Text | False | none |
-
-## Layout and Classes
-
-![](<images/progresscircle-image-3.png?width=650>)
-
-## CSS Selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| --- | --- | --- |
-| .progress-circle | .progress-circle .progress-circle-content |  When IsSemiCircle parameter is False  |
-| .progress-circle | .progress-circle .progress-semi-circle-content |  When IsSemiCircle parameter is True  |
-
-## Advanced Use Case
-
-### Change color of progress circle based on value
-
-1. In your screen, create a local variable "Progress" of type Integer.
-
-1. Drag the ProgressCircle pattern into the preview.
-
-1. Set the Value of the ProgressCircle's Progress parameter.
-
-1. To change the color of the ProgressCircle based on values, create a condition and set limits. 
-
-    In this example, 3 colors represent diferent states of progress. Set the value of the ProgressColor parameter to `If(Progress <= 50, Entities.Color.Red, If( Progress > 50 and Progress < 75,  Entities.Color.Yellow ,  Entities.Color.Green))`.
+    ![](<images/progresscircle-8-ss.png>)
+  
+1. From the Toolbox, drag the Breadcrumbs widget into the Main Content area of your application's screen.
     
-    ![](<images/progresscircle-image-4.png>)
+    ![](<images/progresscircle-9-ss.png>)
 
-1. Publish and test.
+    
+1. On the **Properties** tab, define the progress value using the **Progress** property. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.final.md) of [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>).
 
-    ![](<images/progresscircle-image-5.gif>)
+    ![](<images/progresscircle-1-ss.png>)
 
-### Remove the round corners of ProgressCircle
+1. On the **Properties** tab, you can also change the Progress Circle's look and feel by setting the (optional) properties, for example, the color and animation settings. 
 
-To remove the round corners, use this CSS snippet.
+After following these steps and publishing the module, you can test the pattern in your app.
 
-```css
-.progress-circle svg {
-    stroke-linecap: square;
-}
-```
-![](<images/progresscircle-image-6.png>)
 
-### Change the trail thickness of ProgressCircle
+## Properties
 
-To change the trail thickness, set the AdvancedFormat property to `{trailWidth: 1}`.
-
-![](<images/progresscircle-image-7.png>)
+| **Property** |  **Description** |  
+|---|---|
+| Progress (Integer): Mandatory  |  Percentage to display. You can use functions or local variables.  |
+| ProgressColor (Color Identifier): Optional  |  The color of the stroke on progress circle. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available. <p>Examples <ul><li>_Blank_ - The stroke color displays in the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The stroke color is red.</li></ul></p> |  
+| TrailColor (Color Identifier): Optional  |  The color of the empty part of the progress circle. <p>Examples <ul><li>_Blank_ - The empty part of the circle is a light gray (Entities.Color.Neutral5). This is the default value.</li><li>_Entities.Color.Blue_ - The empty part of the progress circle is blue.</li></ul></p>| 
+| CircleThickness (Integer): Optional  |  The thickness of the circle that marks the progress. <p>Examples <ul><li>_Blank_ - The circle thickness is 4px. This is the default value.</li><li>_8_ - The circle thickness is 8px.</li></ul></p> |  
+| AnimateInitialProgress (Boolean): Optional  | If set to True, the progress from zero to the progress value is animated. This is the default value. If set to False, the progress is not animated.|  
+| IsSemiCircle (Boolean): Optional  | If set to True, the Progress Circle is changed from circle to semi circle. If set to False, it remains a circle. This is the default value.|  
+| AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: https://kimmobrunfeldt.github.io/progressbar.js/. Example: `{ easing: 'bounce' }` |  

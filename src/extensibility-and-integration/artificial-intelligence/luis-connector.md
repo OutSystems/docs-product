@@ -1,97 +1,157 @@
 ---
-summary: Obtain predictions about intent of a given text in your app with the Azure LUIS Connector. 
+summary: Build apps that can understand what your users write. Create smart conversational features with LUIS, for your use cases, and connect to the app through OutSystems LUIS connector.
 tags: 
 ---
 
-# Use the Azure LUIS Connector in your OutSystems applications
+# Use the Azure LUIS Connector in OutSystems apps
 
-Use the [Azure LUIS connector](https://www.outsystems.com/forge/component-overview/5737/azure-luis-connector) to provide your apps with capabilities for extracting information from text. The connector communicates with [Microsoft Language Understanding Intelligent Services (LUIS)](<https://docs.microsoft.com/en-us/azure/cognitive-services/luis/what-is-luis>), described by Microsoft as "a cloud-based API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information."
+LUIS is a Microsoft Azure service that lets your apps "understand" users by extracting information from text in a smart way. Use it in textual interfaces, like a chatbot, to create interactions based on everyday language.
 
-## Prerequisites
+For example, a LUIS app with domain knowledge of calendar can understand the following sentence from a chatbot conversation: "Book a meeting with Jeff from 2 PM to 3 PM". LUIS identifies that the purpose of the sentence is to add a meeting in the calendar, with Jeff, from 2 to 3 PM. In the LUIS jargon, the top-scoring **intent** is `CreateCalendarEntry`, and the related **entities** are `StartTime = 2 pm`, `EndTime = 3 pm`, and `personName = jeff`. As a developer, you can now run logic that adds a meeting in the user's calendar, as your user asked.
 
-1. Create a LUIS account and [a LUIS application](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/get-started-portal-build-app#create-app). 
-1. [Create a Cognitive Service or Language Understanding resource](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account#create-and-subscribe-to-an-azure-cognitive-services-resource) in Azure Portal.
-1. [Associate the above resource](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/get-started-portal-deploy-app#assign-the-resource-key-to-the-luis-app-in-the-luis-portal) to your LUIS application.
-1. [Train and publish](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/get-started-portal-deploy-app#train-and-publish-the-app) your LUIS application.
+Create your knowledge domain in the LUIS app, with intents and entities tailored to your use case and business. You can also just experiment, as LUIS has several prebuilt domains that you can explore. Then, let the actions in your OutSystems apps handle the intents LUIS recognizes in the interactions with your users.  
 
 
-## List of APIs present in the Azure LUIS Connector
+<div class="info" markdown="1">
 
-The Azure LUIS Connector provides Server Actions for two different APIs:
+The phrase "LUIS app" in this document refers to the LUIS app you create in the Language Understanding (LUIS) portal, which is a part of Microsoft Azure. The term "connector" refers to the OutSystems app that connects to the LUIS app through the LUIS API.
 
-* **LUIS Endpoint API** – Obtains predictions regarding the intent of a given text
-* **LUIS Programmatic API** – Manages the LUIS applications and models programmatically
+</div>
 
-![](images/luis-connector-image1.png)
 
-### LUIS Endpoint API
+## Before you start
 
-To use the LUIS Endpoint API, do the following:
+Before you can use the functionalities of the LUIS app in your OutSystems app, you need to set up your Azure resources and create a LUIS app.
 
-1. Go to your LUIS account and check the region from the resource you have associated with the application. If the region is "westus" you can test and start using the Endpoint API without any further configurations. If the region is different from "westus," go to step 2.
+### Create and deploy a LUIS app 
 
-1. [Go to Service Center](<https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Overview/How_to_access_your_OutSystems_Platform#What_is_Service_Center.3F>) and in the Applications tab under Factory, select Azure LUIS Connector.
+Check [Quickstart: Create a new app in the LUIS portal](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/get-started-portal-build-app) and after that [Quickstart: Deploy an app in the LUIS portal](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/get-started-portal-deploy-app). To continue with the instructions with the setup in OutSystems, make sure you have **a working and deployed LUIS app in Azure**.
 
-1. Select the module **AzureLUISConnector** and go to the Integrations tab.
+<div class="info" markdown="1">
 
-1. In the Integrations tab, click on **LUISEndpointAPI**.
+If you're new to LUIS see [a quickstart with a prebuilt domain](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-get-started-create-app). This tutorial guides you through the LUIS basics, from creating a new app, to selecting a domain, and editing what the app can recognize.  
 
-    ![](images/luis-connector-image7.png?width=800)
+</div>
 
-1. In the LUIS Portal, copy the Endpoint from the associated resource and obtain the Base URL from it. For example, for an Endpoint like `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/XXXXXXXX?verbose=true&timezoneOffset=-360&subscription-key=XXXXXXXX&q=`, the Base URL is `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps`.
+### Install and reference the LUIS connector
 
-    ![](images/luis-connector-image2.png?width=600)
+Here is how you can install the connector and reference it in your app.
 
-1. Put the Base URL in the **Effective URL** textbox and click Apply.
+1. Install the [Azure LUIS connector](https://www.outsystems.com/forge/component-overview/5737/azure-luis-connector) from Forge.
+2. In Service Studio, press **Crtl+Q** and find the **AzureLUISConnector** in the **Manage Dependencies** window. Select all public elements and click **Apply**. 
 
-    ![](images/luis-connector-image8.png?width=500)
+    ![LUIS connector structure](images/luis-reference-elements-ss.png?width=600)
 
-You can test the Endpoint API as follows:
+3. Use the server actions in **Logic** > **Server Actions** > **AzureLUISConnector** > **LUISEndpointAPI** to build your logic.
 
-1. Use the Server Action **GetPredictions_Wrapper** in a logic flow.
+## Get the LUIS apps settings 
 
-1. From the Application Information page under the Manage tab of the LUIS Portal, copy the Application ID and add it in the **ApplicationId** input parameter of **GetPredictions_Wrapper**.
+Follow these instructions to get the settings from the LUIS app that you need to configure the OutSystems LUIS connector. 
 
-    ![](images/luis-connector-image10.png?width=600)
+1. Go to **your LUIS app** > **Manage** > **Settings**. Copy the value of the **App ID**. 
 
-1. From the Keys and Endpoints page under the Manage tab of the LUIS Portal, copy the Resource Key and add it in the **EndpointKey** input parameter of **GetPredictions_Wrapper**. Don’t use the key from the Starter_Key resource. The key from the Starter_Key resource is the same as the Authoring Key.
+    ![LUIS settings tab](images/luis-settings.png?width=600)
 
-    ![](images/luis-connector-image3.png?width=600)
+1. Still in **your LUIS app**, go to **Manage** > **Azure Resources** > **Prediction Resources**. Note that you may have more than one service in the **Prediction Resources** tab. Copy the setting from the service you want to use in your OutSystems app. Copy the following values:
 
-1. Add any text in the **QueryToPredict** input parameter.
+    * **Primary Key**
+    * **Endpoint URL**
 
-1. Publish and test to confirm if the Server Action returns a prediction object.
 
-You can now use all the Server Actions found in the folder LUISEndpointAPI. The descriptions of each input and output parameter provide more information about their usage.
+1. If you want to use LUIS Programmatic API, you also need to copy the following values from **your LUIS app**, go to **Manage** > **Azure Resources** > **Authoring Resource**:
 
-You can also find more information on the [LUIS Endpoint API in the official Azure API documentation.](<https://westus.dev.cognitive.microsoft.com/docs/services/5819c76f40a6350ce09de1ac/operations/5819c77140a63516d81aee78>).
+    * **Primary Key**
+    * **Location**
 
-### LUIS Programmatic API
+## Configure the LUIS connector
 
-To use the LUIS Programmatic API, do the following:
+To use the LUIS connector in your app, you need to configure the connector in Service Center and enter the values you got from the Azure LUIS app.
 
-1. After installing the connector in your environment, go to your LUIS account and copy the **Authoring Key**.
+1. Go to **Service Center** > **Factory** > **Modules**. Enter **AzureLUISConnector** in the **Name** field and press **Filter**.
 
-    ![](images/luis-connector-image6.png?width=600)
+    ![Module search in Service Center](images/luis-module-search-sc.png?width=600)
 
-1. [Go to Service Center](<https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Overview/How_to_access_your_OutSystems_Platform#What_is_Service_Center.3F>) and in the Applications tab under Factory, select Azure LUIS Connector.
+1. Click **AzureLUISConnector** in the results list to open the module settings. Go to the **Integrations** tab and locate the **Consumed REST APIs** section.
+    
+    ![Consumed REST settings in Service Center](images/luis-consumed-rest-sc.png?width=600)
 
-1. Select the module **AzureLUISConnector** and go to the Site Properties tab.
+1. In the **Consumed REST APIs** section click the **LUISEndpointAPI** link. A screen to edit the endpoint opens.
 
-    ![](images/luis-connector-image9.png?width=800)
+1. In the **Effective URL** field, enter the following value: `(Endpoint URL)/luis/v2.0/apps`. **Endpoint URL** is the LUIS App value you obtained earlier. For example, if your **Endpoint URL** is `https://example.cognitiveservices.azure.com/`, the value you enter in **Effective URL** is `https://example.cognitiveservices.azure.com/luis/v2.0/apps`. Click **Apply** and then confirm by clicking **OK**.
 
-1. In the Site Properties tab, click **AuthoringKey**. Edit the **AuthoringKey** value and paste the key you’ve copied from the LUIS portal.
+    ![LUIS endpoint configuration](images/luis-effective-url-sc.png?width=500)
 
-After configuring the connector, test the Programmatic API as follows:
+    <div class="info" markdown="1">
 
-1. Use the Server Action **GetApplicationDomainsList** in a logic flow.
-1. Enter your **AuthoringRegionId**. The value of the **AuthoringRegionId** must match the Authoring Region of your LUIS account.
-1. Publish and test to confirm that the Server Action returns a list of domains available on LUIS.
+    The LUIS connector supports the API v2.0 of the LUIS app.
 
-You can now use all the Server Actions found in the folder **LUISProgrammaticAPI**. The descriptions of each input and output parameter provide more information about their usage.
+    </div>
 
-**Note**: When using the connector in your applications, the input parameter **AuthoringRegionId** of the Server Actions in this API must match the Authoring Region of your LUIS account. You can find this region in your LUIS account settings. Choose one of the 3 options provided by the static entity **AuthoringRegion** (also available in the connector).
+1. If you want to use LUIS authoring (programmatic) API, go to the **Site Properties** of the AzureLUISConnector module. Edit **AuthoringKey** value and enter the **Primary Key** you got from the **Authoring Resource** tab.
 
-![](images/luis-connector-image5.png) ![](images/luis-connector-image4.png)
+    ![LUIS authoring key configuration](images/luis-authoring-key-sc.png?width=500)
 
-You can find more information in the [official Azure API documentation on LUIS Programmatic API](<https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f>).
+1. You can now test the connection with the LUIS service in Service Studio. 
+
+## Test the LUIS connector
+
+This section shows examples of how to ensure your connector and LUIS app work as intended.
+
+### Test LUIS predictions API 
+
+Here is how you can test the LUIS API configuration by creating a sample flow in Service Studio.
+
+1. In Service Studio, navigate to **Logic** > **Server Actions** > **AzureLUISConnector** > **LUISEndpointAPI** and drag **GetPredictions_Wrapper** action in a logic flow. 
+
+1. In the **GetPredictions_Wrapper** properties:
+
+    * In the **EndpointKey** field, enter the **Primary Key** you got from the **Prediction Resources** tab in the LUIS app.
+    * In the **ApplicationId** field, enter **Application ID** you got from the **Settings** page in the LUIS app.
+    * In the **QueryToPredict** field, enter a text you are sending to the LUIS app.
+    * In the **Staging** select True if you published your LUIS app to the staging slot. Select False if you published your app to a production slot.
+
+    ![LUIS server action in a flow](images/luis-logic-test-example-ss.png?width=400)
+
+    <div class="info" markdown="1">
+
+    Staging and Production are the LUIS app publishing slots. Select the slot when you click the **Publish** button in the LUIS app in Azure.
+
+    </div>
+
+1. Publish and test to confirm that the server action returns a prediction object.
+
+Once you complete the configuration, you can use all actions from **LUISEndpointAPI**. See the descriptions of input and output parameters for more information.
+
+### Test LUIS Programmatic API
+
+After configuring the connector for authoring, test the Programmatic (authoring) API. 
+
+1. In Service Studio, navigate to **Logic** > **Server Actions** > **AzureLUISConnector** > **LUISProgrammaticAPI_Apps** and drag **GetApplicationInfo** action in a logic flow. 
+
+1. In the **GetApplicationInfo** properties:
+
+    * In the **AuthoringRegionID** list, select the region matching the **Location** value you got from the **Authoring Resource** tab in the LUIS app.
+    * In the **ApplicationId** field, enter the **Application ID** you got from the **Settings** page in the LUIS app.
+
+1. Publish and test to verify that the server action returns an expected value. In this example, it should return the name of the app. 
+
+## About the LUIS APIs
+
+<div class="info" markdown="1">
+
+The LUIS connector supports the API v2.0 of the LUIS app.
+
+</div>
+
+
+The OutSystems LUIS connector provides server actions for two different APIs:
+
+* **LUIS Endpoint API** – Obtains predictions regarding the intent of a given text.
+* **LUIS Programmatic API** – Also known as authoring API. Manages the LUIS applications and models programmatically.
+
+Check out the following resources for more information about the LUIS APIs and how they correspond to the actions in the OutSystems connector.
+
+* [LUIS Endpoint API v2.0](<https://westus.dev.cognitive.microsoft.com/docs/services/5819c76f40a6350ce09de1ac/operations/5819c77140a63516d81aee78>)
+* [LUIS Programmatic APIs v2.0](<https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f>)
+
+To find more about LUIS check out [Microsoft Language Understanding Intelligent Services (LUIS)](<https://docs.microsoft.com/en-us/azure/cognitive-services/luis/what-is-luis>).

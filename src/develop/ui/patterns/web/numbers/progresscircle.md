@@ -22,7 +22,7 @@ You can use the Progress Circle UI Pattern to show the current progress of an op
     ![](<images/progresscircle-9-ss.png>)
 
     
-1. On the **Properties** tab, define the progress value using the **Progress** property. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.md) of [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>).
+1. On the **Properties** tab, define the progress value using the **Progress** property. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.final.md) of [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>).
 
     ![](<images/progresscircle-1-ss.png>)
 

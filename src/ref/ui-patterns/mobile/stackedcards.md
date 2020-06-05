@@ -68,12 +68,12 @@ You can set other colors either by adding a container to **OverlayTop** , **Over
 
 ## Creating a button to execute swipes
 
-Create each action and drag the [public actions](<public-actions.md>) (SwipeLeft, SwipeRight, or SwipeTop). In the Stacked Cards block, associate the handler to swipe events.  
+Create each action and drag the [public actions](../../../develop/ui/patterns/mobile/public-actions.md) (SwipeLeft, SwipeRight, or SwipeTop). In the Stacked Cards block, associate the handler to swipe events.  
 ![](images/stackedcards-7.png)
 
 ## Creating a ListRemove button
 
-Create an “OnListRemove” action and drag the ListRemoveNode and the UpdateStackedCards in the [public actions](<public-actions.md>) of the block.
+Create an “OnListRemove” action and drag the ListRemoveNode and the UpdateStackedCards in the [public actions](../../../develop/ui/patterns/mobile/public-actions.md) of the block.
 
 ## Events
 

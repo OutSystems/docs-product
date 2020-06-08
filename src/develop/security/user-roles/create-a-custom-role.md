@@ -13,11 +13,11 @@ To create a custom Role, do the following:
 1. Right-click the **Roles** folder and select the **Add Role** option. 
 1. Set the Name of your Role and the remaining information. 
 
-![Roles_example](images/roles_example.PNG)
+![Roles_example](images/roles_example.png)
 
 Once a new Role is created, you can assign it to end users through the **Users** application or you can create logic in your application to manage the access.
 
-![Grant_Revoke_Role](images/grant_revoke_role.PNG)
+![Grant_Revoke_Role](images/grant_revoke_role.png)
 
 ## Use the Role in your Application's Logic
 

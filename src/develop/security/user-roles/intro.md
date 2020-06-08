@@ -62,7 +62,7 @@ Before using User_Role and User_Effective_Role in your app, add them as dependen
 2. In the producers list, select **(System)**.
 3. In the public elements list, select **User_Role** and **User_Effective_Role**. 
 
-![Entities with Role information in OutSystems](images/Roles_metamodel.PNG)
+![Entities with Role information in OutSystems](images/Roles_metamodel.png)
 
 <div class="info" markdown="1">
 If you can't see **User_Role** and **User_Effective_Role** entities in **(System)**, make sure to select **Show all** in the filter dropdown of the public elements list.

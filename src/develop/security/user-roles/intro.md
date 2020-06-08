@@ -35,7 +35,7 @@ and Revoke&lt;Role name&gt;Role actions) can be persistent across multiple sessi
 or only be active for a single session. This setting can only be changed for
 Traditional Web Apps.
 
-![Roles-persitency.png](images/Roles-persitency.png)
+![Role persistency](images/Roles-persitency.png)
 
 * **Persistent:** The runtime granting or revoking of Roles is stored in the database and is kept in between login sessions. Set the `Is Persistent` property of the Role to `Yes`. 
 
@@ -52,7 +52,7 @@ When end user authentication and authorization is performed using an external sy
 Roles that are created in the OutSystems platform are stored in the **Role** entity.
 As a developer, you can check the Roles of a User in two different entities:
 
-* The **User_Role** entity is a metamodel table that stores the user and Role association. This entitiy stores only Roles that are directly added to a specific user through the Users application.
+* The **User_Role** entity is a metamodel table that stores the user and Role association. This entity only stores Roles that are directly added to a specific user through the Users application.
 
 * The **User_Effective_Role** entity is a metamodel view that contains user-specific roles. This entity includes Roles assigned directly to a user and Roles assigned to a Group to which the user belongs.
 
@@ -62,7 +62,7 @@ Before using User_Role and User_Effective_Role in your app, add them as dependen
 2. In the producers list, select **(System)**.
 3. In the public elements list, select **User_Role** and **User_Effective_Role**. 
 
-![Roles_Metamodel](images/Roles_metamodel.PNG)
+![Entities with Role information in OutSystems](images/Roles_metamodel.PNG)
 
 <div class="info" markdown="1">
 If you can't see **User_Role** and **User_Effective_Role** entities in **(System)**, make sure to select **Show all** in the filter dropdown of the public elements list.

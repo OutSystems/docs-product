@@ -29,8 +29,8 @@ Name | Description
 ## Using the API
 
 * [Call a stored procedure](<call-a-stored-procedure.md>)
-* [Insert data in the application Database](<insert-data-in-the-application-database.md>)
-* [Query Data from an External Database](<query-data-from-an-external-database.md>)
+* [Insert data in the application database](<insert-data-in-the-application-database.md>)
+* [Query data from an external database](<query-data-from-an-external-database.md>)
 
 ## API reference
 

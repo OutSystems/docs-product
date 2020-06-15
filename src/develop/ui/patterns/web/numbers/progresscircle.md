@@ -11,22 +11,67 @@ You can use the Progress Circle UI Pattern to show the current progress of an op
 
 **How to use the Progress Circle UI Pattern**
 
+In this example, we display the percentage of shipped orders from an existing Customer Order Database.
+
 1. In Service Studio, in the Toolbox, search for `Progress Circle`. 
 
     The Progress Circle widget is displayed.
 
     ![](<images/progresscircle-8-ss.png>)
   
-1. From the Toolbox, drag the Breadcrumbs widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the Progress Circle widget into the Main Content area of your application's screen.
     
     ![](<images/progresscircle-9-ss.png>)
 
     
+<<<<<<< HEAD
 1. On the **Properties** tab, define the progress value using the **Progress** property. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.final.md) of [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>).
+=======
+1. Right-click your screen name and select **Add Preparation**.
 
-    ![](<images/progresscircle-1-ss.png>)
+1. From the Toolbox, drag an Aggregate onto the screen preparation, and enter a name for the aggregate. In this example, we call the aggregate **GetTotalOrders**.
+
+    ![](<images/progresscircle-10-ss.png>)
+
+1. To add a database entity, double-click the aggregate you just created and click on the aggregate screen.
+
+1. From the **Select Source** pop-up, choose the source entity and click **OK**. In this example, we select the **Order** database.
+
+    ![](<images/progresscircle-11-ss.png>)
+
+1. Return to the screen preparation, and add another aggregate (See step 4). In this example we call the second aggregate **GetShippedOrders**
+
+    ![](<images/progresscircle-12-ss.png>)
+
+1. To add the relevant database entity, repeat steps 5 and 6.
+
+1. On the aggregate screen, click **Filters**, then **Add Filter**.
+>>>>>>> Updates to Progress Circle UI Pattern
+
+1. In the **Filter Condition** pop-up, add the relevant logic for the filter and click **DONE**. In this example, to get all of the shipped orders, we add the following logic:
+
+    ``Order.Status = Entities.OrderStatus.Shipped``
+
+    ![](<images/progresscircle-14-ss.png>)
+
+1. Double-click your screen name, and on the **Properties** tab, from the **Progress** drop-down, select **Expression Editor**.
+Enter the logic for the progress circle and click **DONE**.  This displays the percentage value as the stroke on the Progress Circle.
+
+    In this example, to show the percentage of shipped orders, we add the following:
+
+   ``GetShippedOrders.Count / GetTotalOrders.Count * 100``
+
+    ![](<images/progresscircle-16-ss.png>)
+
+1. From the Toolbox, drag an Expression widget into the Progress Circle's **Content** placeholder, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
+
+1. In the Expression Editor, enter the same logic as in step 12 (``GetShippedOrders.Count / GetTotalOrders.Count * 100``) and click **DONE**. This displays the percentage value inside the Progress Circle.
+
+    ![](<images/progresscircle-15-ss.png>)
 
 1. On the **Properties** tab, you can also change the Progress Circle's look and feel by setting the (optional) properties, for example, the color and animation settings. 
+
+    ![](<images/progresscircle-17-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

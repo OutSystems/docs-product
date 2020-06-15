@@ -1,11 +1,11 @@
 ---
-summary: Use the RuntimePublic API to query data from an external database.
+summary: Use the RuntimePublic.Db API to query data from an external database.
 tags: 
 ---
 
 # Query data from an external database
 
-Use the RuntimePublic API to query data from an external database following this pattern:
+Use the RuntimePublic.Db API to query data from an external database following this pattern:
 
 1. Retrieve a `DatabaseProvider` from the `DatabaseAccess` instance.
 1. Use the provider to create a transaction.

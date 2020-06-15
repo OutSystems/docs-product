@@ -24,9 +24,6 @@ In this example, we display the percentage of shipped orders from an existing Cu
     ![](<images/progresscircle-9-ss.png>)
 
     
-<<<<<<< HEAD
-1. On the **Properties** tab, define the progress value using the **Progress** property. You can use a [function](../../../../../ref/lang/auto/builtinfunctions.final.md) of [local variable](<../../../../../ref/lang/auto/Class.Local Variable.final.md>).
-=======
 1. Right-click your screen name and select **Add Preparation**.
 
 1. From the Toolbox, drag an Aggregate onto the screen preparation, and enter a name for the aggregate. In this example, we call the aggregate **GetTotalOrders**.
@@ -46,7 +43,6 @@ In this example, we display the percentage of shipped orders from an existing Cu
 1. To add the relevant database entity, repeat steps 5 and 6.
 
 1. On the aggregate screen, click **Filters**, then **Add Filter**.
->>>>>>> Updates to Progress Circle UI Pattern
 
 1. In the **Filter Condition** pop-up, add the relevant logic for the filter and click **DONE**. In this example, to get all of the shipped orders, we add the following logic:
 
@@ -85,5 +81,5 @@ After following these steps and publishing the module, you can test the pattern 
 | TrailColor (Color Identifier): Optional  |  The color of the empty part of the progress circle. <p>Examples <ul><li>_Blank_ - The empty part of the circle is a light gray (Entities.Color.Neutral5). This is the default value.</li><li>_Entities.Color.Blue_ - The empty part of the progress circle is blue.</li></ul></p>| 
 | CircleThickness (Integer): Optional  |  The thickness of the circle that marks the progress. <p>Examples <ul><li>_Blank_ - The circle thickness is 4px. This is the default value.</li><li>_8_ - The circle thickness is 8px.</li></ul></p> |  
 | AnimateInitialProgress (Boolean): Optional  | If set to True, the progress from zero to the progress value is animated. This is the default value. If set to False, the progress is not animated.|  
-| IsSemiCircle (Boolean): Optional  | If set to True, the Progress Circle is changed from circle to semi circle. If set to False, it remains a circle. This is the default value.|  
+| IsSemiCircle (Boolean): Optional  | If True, the Progress Circle is changed from a circle to semi circle. If False, it remains a circle. This is the default value.|  
 | AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: https://kimmobrunfeldt.github.io/progressbar.js/. Example: `{ easing: 'bounce' }` |  

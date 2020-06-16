@@ -55,7 +55,7 @@ Enter the logic for the progress circle and click **DONE**.  This displays the p
 
     In this example, to show the percentage of shipped orders, we add the following:
 
-   ``GetShippedOrders.Count / GetTotalOrders.Count * 100``
+    ``GetShippedOrders.Count / GetTotalOrders.Count * 100``
 
     ![](<images/progresscircle-16-ss.png>)
 
@@ -82,4 +82,4 @@ After following these steps and publishing the module, you can test the pattern 
 | CircleThickness (Integer): Optional  |  The thickness of the circle that marks the progress. <p>Examples <ul><li>_Blank_ - The circle thickness is 4px. This is the default value.</li><li>_8_ - The circle thickness is 8px.</li></ul></p> |  
 | AnimateInitialProgress (Boolean): Optional  | If set to True, the progress from zero to the progress value is animated. This is the default value. If set to False, the progress is not animated.|  
 | IsSemiCircle (Boolean): Optional  | If True, the Progress Circle is changed from a circle to semi circle. If False, it remains a circle. This is the default value.|  
-| AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: https://kimmobrunfeldt.github.io/progressbar.js/. Example: `{ easing: 'bounce' }` |  
+| AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: <https://kimmobrunfeldt.github.io/progressbar.js/>. Example: `{ easing: 'bounce' }` |  

@@ -61,7 +61,7 @@ Enter the logic for the progress circle and click **DONE**.  This displays the p
 
 1. From the Toolbox, drag an Expression widget into the Progress Circle's **Content** placeholder, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the same logic as in step 12 (``GetShippedOrders.Count / GetTotalOrders.Count * 100``) and click **DONE**. This displays the percentage value inside the Progress Circle.
+1. In the Expression Editor, enter the same logic as in step 11 (``GetShippedOrders.Count / GetTotalOrders.Count * 100``), and click **DONE**. This displays the percentage value inside the Progress Circle.
 
     ![](<images/progresscircle-15-ss.png>)
 

@@ -25,7 +25,7 @@ This example shows you how to center align a user's name and initials.
    
 1. From the Toolbox, drag the User Initials pattern into the Align Center placeholder.
 
-1. On the **Properties** tab, in the Name property, enter a name, for example **Scott Ritchie**.
+1. On the **Properties** tab, in the Name property, enter a name. In this example, we enter **Scott Ritchie**.
 
     ![](<images/aligncenter-4-ss.png>)
 
@@ -45,7 +45,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 | **Property** |  **Description** |  
 |---|---|
-| Orientation (Orientation Identifier): Optional | Set the content orientation. | 
+| Orientation (Orientation Identifier): Optional | Set the content orientation, either horizontal or vertical. | 
 | ExtendedClass (Text): Optional  | <p>Add custom style classes to the Align Center UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Align Center UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Align Center UI styles being applied.</li></ul></p> |
 
 

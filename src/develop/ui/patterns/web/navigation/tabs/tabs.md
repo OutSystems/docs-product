@@ -17,9 +17,8 @@ You can use the Tabs UI Pattern to display large sets of information, which can 
     The Tabs widget is displayed.
     
     ![](images/tabs-2-ss.png)
-    
 
-1. From the Toolbox, drag the Tabs widget onto your application's screen. 
+1. From the Toolbox, drag the Tabs widget into the Main Content area of your application's screen.
 
      ![](images/tabs-3-ss.png)
 

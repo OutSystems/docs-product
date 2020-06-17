@@ -29,17 +29,25 @@ This example shows you how to center align a user's name and initials.
 
     ![](<images/aligncenter-4-ss.png>)
 
-1. Drag the Text widget into the Align Center placeholder and enter  ``Scott Ritchie``.
+1. Add the relevant content to the Align Center widget. In this example we add some text (Scott Richie) and an image. 
 
     ![](<images/aligncenter-5-ss.png>)
 
-1. On the Align Center **Properties** tab, you can set the content's orientation.
+1. On the Align Center **Properties** tab, you can set the content's orientation (either vertical or horizontal).
 
     ![](<images/aligncenter-6-ss.png>)
 
-After following these steps and publishing the module, you can test the pattern in your app. It should look something like the following:
-   
+After following these steps and publishing the module, you can test the pattern in your app. 
+
+
+**Without Align Center UI Pattern** 
+
 ![](<images/aligncenter-7-ss.png>)
+
+**With Align Center UI Pattern**
+
+![](<images/aligncenter-8-ss.png>)
+
 
 ## Properties
 

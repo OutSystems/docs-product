@@ -62,7 +62,7 @@ Enter the logic for the Progress Bar and click **DONE**.  This displays the perc
 
     ![](<images/progressbar-14-ss.png>)
 
-1. From the Toolbox, drag an Expression widget into theinto the Main Content area of your application's screen, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
+1. From the Toolbox, drag an Expression widget into the **Value** placeholder, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
 
 1. In the Expression Editor, enter the same logic as in step 11 (``GetShippedOrders.Count / GetTotalOrders.Count * 100``), and click **DONE**. This displays the percentage value on the Progress Bar.
 

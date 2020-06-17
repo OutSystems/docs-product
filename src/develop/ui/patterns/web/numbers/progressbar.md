@@ -68,6 +68,11 @@ Enter the logic for the Progress Bar and click **DONE**.  This displays the perc
 
     ![](<images/progressbar-15-ss.png>)
 
+1. Add the text you want to appear as the Progress Bar title to the **Title** placeholder. In this example, we add "Total % of shipped Orders". 
+
+    ![](<images/progressbar-16-ss.png>)
+
+
 1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, size, and orientation of the Progress Bar.
 
     ![](<images/progressbar-5-ss.png>)

@@ -19,7 +19,7 @@ This example shows you how to center align a user's name and initials.
 
     ![](<images/aligncenter-2-ss.png>)
 
-1. From the Toolbox, drag the Align Center widget onto your application’s screen.
+1. From the Toolbox, drag the Align Center widget into the Main Content area of your application's screen.
     
     ![](<images/aligncenter-3-ss.png>)
    

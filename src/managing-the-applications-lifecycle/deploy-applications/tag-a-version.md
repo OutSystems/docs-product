@@ -40,7 +40,7 @@ To tag the mobile app, do the following:
 
 1. Click the **TAG VERSION** button for the Development environment.
 
-1. Set the Version to **0.2** and type a description. In the Mobile Versions section, there's also a plus ('+') sign for the Android platform, meaning that the [changes in the app](../../deliver-mobile/mobile-app-update-scenarios.md) require the tagging and generation of a new mobile package. Set also the mobile version for the native platform. Make sure the mobile version [is higher than the previous version](#mobile-package-version).
+1. Set the Version to **0.2** and type a description. In the Mobile Versions section, there's also a plus ('+') sign for the Android platform, meaning that the [changes in the app](../../deliver-mobile/mobile-app-update-scenarios.md) require the tagging and generation of a new mobile package. Set also the mobile version for the native platform. Make sure the mobile version [is higher than any previous version](#mobile-package-version).
     
     ![](images/tag-a-version-3.png)
 
@@ -48,11 +48,13 @@ To tag the mobile app, do the following:
     
     ![](images/tag-a-version-4.png)
 
-The mobile app is now tagged. Make sure you [generate a new package](../../deliver-mobile/generate-and-distribute-your-mobile-app/intro.md) before it's [deployed](<deploy-an-application.md>) to Quality.
+The mobile app is now tagged and can be [deployed](<deploy-an-application.md>) to Quality at any time.
+
+If you need to install and test the tagged application version in a mobile device still in the Development environment, you can [generate a new mobile package](../../deliver-mobile/generate-and-distribute-your-mobile-app/intro.md) before proceeding with the deploy to Quality. Otherwise, OutSystems generates a new mobile package during the deployment process.
 
 #### Mobile package versions { #mobile-package-version }
 
-In [update scenarios](<../../deliver-mobile/mobile-app-update-scenarios.md>) that require the generation of a new mobile package, you need to set the new mobile version for the package during the tagging operation in LifeTime. This **new mobile version** must be **higher** than the previous version.
+In [update scenarios](<../../deliver-mobile/mobile-app-update-scenarios.md>) that require the generation of a new mobile package, you need to set the new mobile version for the package during the tagging operation in LifeTime. This **new mobile version** must be **higher than any previous version**.
 
 LifeTime applies this restriction to the mobile version to comply with the same restriction in public app stores, where you can't publish a new version of your mobile app using a version number lower than the current one. As LifeTime can't validate which versions were already published in the app stores, the tagging operation restricts lower mobile versions.
 

@@ -1030,6 +1030,7 @@
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10
 - develop/ui/patterns/web/navigation/sectionindex.md:
+    - ref/ui-patterns/web/section-index.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/SectionIndex.aspx
@@ -1043,12 +1044,14 @@
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=67
 - develop/ui/patterns/web/navigation/tabs/tabs.md:
+    - ref/ui-patterns/web/tabs.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=65
 - develop/ui/patterns/web/navigation/timeline.md:
+    - ref/ui-patterns/web/timeline.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Timeline.aspx
@@ -1083,6 +1086,7 @@
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
 - develop/ui/patterns/web/numbers/progressbar.md:
+    - ref/ui-patterns/web/progressbar.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressBar.aspx 
@@ -1121,6 +1125,7 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/ResponsiveTableRecords.aspx
 - develop/ui/patterns/web/structure/aligncenter.md:
+    - ref/ui-patterns/web/aligncenter.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
            https://outsystemsui.outsystems.com/WebStyleGuidePreview/AlignCenter.aspx 

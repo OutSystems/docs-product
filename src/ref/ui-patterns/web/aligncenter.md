@@ -33,7 +33,7 @@ summary: Advanced uses cases for the Align Center UI Pattern.
 1. In the container, add a Text widget with the text "Scott Ritchie" and have its Style Class set to `heading-4`.
 
 1. Add another Text widget with the text "Marketing Communications Manager" and enclose it in a container.
-    
+
     ![](<images/aligncenter-10-ss.png>)
 
 1. Drag a container into the AlignCenter placeholder and add a Text widget.

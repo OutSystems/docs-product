@@ -23,6 +23,7 @@ Here are some more advanced use-cases of the widget.
 ### Change the active header style
 
 Write the following CSS in the CSS editor and change the `yourcolor` value:
+
 ```css
 .tabs-header-item.active {
     border-bottom: var( --border-size-m) solid yourcolor;
@@ -30,11 +31,12 @@ Write the following CSS in the CSS editor and change the `yourcolor` value:
 ```
 
 Or using CSS variables: `var(--color-yourcolor)`
-example:
+
+Example:
 
 ```css
 .tabs-header-item.active {
-background: border-bottom: var( --border-size-m) solid var(--color-red)
+    background: border-bottom: var( --border-size-m) solid var(--color-red)
 }
 ```
 
@@ -44,4 +46,4 @@ background: border-bottom: var( --border-size-m) solid var(--color-red)
 1. Add the classes `background-blue-lighter text-neutral-0`, this adds a light blue background and force the text to be white.
 1. Publish the application.
 
-   ![](images/tabs-6.png?width=750)
+![](images/tabs-6.png?width=750)

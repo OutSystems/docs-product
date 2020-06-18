@@ -14,9 +14,9 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
     ![](<images/sectionindex-5-ss.png>)
 
 1. Add as many sections as you require and add the relevant content. In this example we add text and images.
-        
+
     ![](<images/sectionindex-1-ss.png>)
-   
+
 1. From the Toolbox, drag the Section Index widget into the Main Content area of your application's screen.
 
     ![](<images/sectionindex-2-ss.png>)
@@ -24,12 +24,12 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
     A link is automatically created to every section you have on the screen. The name of the link is based on the text you entered in the **Title** placeholder of each section. In the following example, the links are set to the In-Ear Audio Black, In-Ear Audio Sport Grey etc., sections that we added earlier.
 
     ![](<images/sectionindex-3-ss.png>)
-   
+
 After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
-| **Property** |  **Description** | 
+| **Property** |  **Description** |
 |---|---|
 | IsSmooth (Boolean): Optional  |  If True, the navigation to the destination is animated. If False, the navigation is instant. This is the default. |
 | IsFixed (Text): Optional  | If True, the Section Index Pattern is always in the same position on the screen. This is the default. If False, the Section Index Pattern scrolls with the page content. |
@@ -38,7 +38,7 @@ After following these steps and publishing the module, you can test the pattern 
   
 ## Additional notes
 
-Remember to use the **Title** placeholder in the Section Index pattern as this defines the text for each Section Index link. 
+Remember to use the **Title** placeholder in the Section Index pattern as this defines the text for each Section Index link.
 
 ## Device compatibility
 

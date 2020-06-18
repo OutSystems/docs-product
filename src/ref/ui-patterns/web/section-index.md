@@ -23,21 +23,20 @@ summary: Advanced use cases for the Section Index UI Pattern.
 1. Write the following CSS in the CSS editor and change the `yourcolor`.
 
         a.section-index-item.is--active {
-        border-left-color: yourcolor;
-        color: yourcolor;
-    }
+            border-left-color: yourcolor;
+            color: yourcolor;
+        }
 
 1. Or using CSS variables: `var(--color-yourcolor)`.
 
         a.section-index-item.is--active {
-        border-left-color: var(--color-yourcolor);
-        color: var(--color-yourcolor);
-    }
+            border-left-color: var(--color-yourcolor);
+            color: var(--color-yourcolor);
+        }
 
 For RTL compatibility, make sure to also add the following code:
 
-        .is-rtl a.section-index-item.is--active {
+    .is-rtl a.section-index-item.is--active {
         border-right-color: yourcolor;
         color: yourcolor;
     }
-

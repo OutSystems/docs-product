@@ -13,7 +13,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
 In this example, we display the percentage of shipped orders from an existing Customer Order Database.
 
-1. In Service Studio, in the Toolbox, search for `Progress Bar`. 
+1. In Service Studio, in the Toolbox, search for `Progress Bar`.
 
     The Progress Bar widget is displayed.
 
@@ -23,7 +23,7 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
     ![](<images/progressbar-3-ss.png>)
 
-    By default, the Progress Bar widget contains a Title and Value placeholder. 
+    By default, the Progress Bar widget contains a Title and Value placeholder.
 
     ![](<images/progressbar-4-ss.png>)
 
@@ -49,7 +49,7 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
 1. In the **Filter Condition** pop-up, add the relevant logic for the filter and click **DONE**. In this example, to get all of the shipped orders, we add the following logic:
 
-    ``Order.Status = Entities.OrderStatus.Shipped``
+    `Order.Status = Entities.OrderStatus.Shipped`
 
     ![](<images/progressbar-13-ss.png>)
 
@@ -58,26 +58,25 @@ Enter the logic for the Progress Bar and click **DONE**.  This displays the perc
 
     In this example, to show the percentage of shipped orders, we add the following:
 
-   ``GetShippedOrders.Count / GetTotalOrders.Count * 100``
+   `GetShippedOrders.Count / GetTotalOrders.Count * 100`
 
     ![](<images/progressbar-14-ss.png>)
 
 1. From the Toolbox, drag an Expression widget into the **Value** placeholder, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the same logic as in step 11 (``GetShippedOrders.Count / GetTotalOrders.Count * 100``), and click **DONE**. This displays the percentage value on the Progress Bar.
+1. In the Expression Editor, enter the same logic as in step 11 (`GetShippedOrders.Count / GetTotalOrders.Count * 100`), and click **DONE**. This displays the percentage value on the Progress Bar.
 
     ![](<images/progressbar-15-ss.png>)
 
-1. Add the text you want to appear as the Progress Bar title to the **Title** placeholder. In this example, we add "Total % of shipped Orders". 
+1. Add the text you want to appear as the Progress Bar title to the **Title** placeholder. In this example, we add "Total % of shipped Orders".
 
     ![](<images/progressbar-16-ss.png>)
-
 
 1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, size, and orientation of the Progress Bar.
 
     ![](<images/progressbar-5-ss.png>)
 
-After following these steps and publishing the module, you can test the pattern in your app. 
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
@@ -89,5 +88,3 @@ After following these steps and publishing the module, you can test the pattern 
 | Size (ProgressBarSize Identifier): Optional  |  Set the Progress Bar size. The predefined options are: <li>Extra Small</li><li>Small</li> <li>Base (default)</li>|  
 | IsInline (Boolean): Optional  | If True, the value placeholder is placed at the end of the line and the label placeholder is hidden. If False, the value and label of the placeholder are placed over the line. This is the default.|
 | ExtendedClass (Text): Optional  | <p>Add custom style classes to the Progress Bar UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Progress Bar UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Progress Bar UI styles being applied.</li></ul></p> |
-
-

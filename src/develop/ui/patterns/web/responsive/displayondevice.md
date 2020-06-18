@@ -5,7 +5,7 @@ summary: DisplayOnDevice improves the way information is displayed on different 
 
 # Display on Device 
 
-You can use the Display on Device UI pattern to select what elements are displayed on which device types. With this pattern you can improve the way information is displayed on different devices - computers, tablets, and phones - by specifically specifying which elements show on each of them. 
+You can use the Display on Device UI pattern to select what elements are displayed on which device types. With this pattern you can improve the way information is displayed on different devices - computers, tablets, and phones - by specifically specifying which elements display on each of them. 
 
   ![](<images/displayondevice-1.png>)
 
@@ -27,7 +27,7 @@ You can use the Display on Device UI pattern to select what elements are display
 
     ![](<images/displayondevice-4-ss.png>)
 
-1. On the **Properties** tab, from the **Behavior** drop-down list, choose the device types you want to display this widget on.  These images are displayed on the device types you specify, and not shown for any other devices.
+1. On the **Properties** tab, from the **Behavior** drop-down list, choose the device types you want to display this widget on. These images are displayed on the device types you specify, and not shown for any other devices.
 
     ![](<images/displayondevice-5-ss.png>)
 
@@ -37,5 +37,5 @@ After following these steps and publishing the module, you can test the pattern 
 
 | **Property** |  **Description** |
 |---|---|
-| Behavior (DeviceResponsive Identifier): Mandatory | Select the device types upon which the content is displayed. The following are the predefined options available: <p><ul><li>DesktopOnly</li><li>DesktopAndTablet</li><li>TabletOnly</li><li>TabletAndPhone</li><li>PhoneOnly</li><li>AllDevices</li><p>Examples<ul><li>Entities.DeviceResponsive.DesktopOnly - Content is only displayed on Desktop browsers only</li><li>Entities.DeviceResponsive.TabletAndPhone - Content is displayed on Tablet and Phone browsers only</li></ul></p>|
+| Behavior (DeviceResponsive Identifier): Mandatory | Select the device types upon which the content is displayed. The following are the predefined options available: <p><ul><li>DesktopOnly</li><li>DesktopAndTablet</li><li>TabletOnly</li><li>TabletAndPhone</li><li>PhoneOnly</li><li>AllDevices</li><p>Examples<ul><li>_Entities.DeviceResponsive.DesktopOnly_ - Content is displayed on Desktop browsers only</li><li>_Entities.DeviceResponsive.TabletAndPhone_ - Content is displayed on Tablet and Phone browsers only</li></ul></p>|
 

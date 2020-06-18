@@ -1,50 +1,60 @@
 ---
 tags: runtime-traditionalweb; 
-summary: AlignCenter places content horizontally or vertically within a container.
+summary: Align Center places content horizontally or vertically within a container.
 ---
 
 # Align Center
 
 You can use Align Center UI Pattern to center content horizontally or vertically on the screen. 
 
-![](<images/aligncenter-image-10.png>)
+![](<images/aligncenter-1.png>)
 
 **How to use the Align Center UI Pattern**
+
+This example shows you how to center align a user's name and initials.
 
 1. In Service Studio, in the Toolbox, search for `Align Center`. 
 
     The Align Center widget is displayed.
 
-    ![](<images/aligncenter-image-11.png>)
+    ![](<images/aligncenter-2-ss.png>)
 
-1. From the Toolbox, drag the Align Center widget onto your application’s screen.
+1. From the Toolbox, drag the Align Center widget into the Main Content area of your application's screen.
+    
+    ![](<images/aligncenter-3-ss.png>)
    
-1. From the Toolbox, drag the User Initials widget into the Align Center placeholder.
+1. From the Toolbox, drag the User Initials pattern into the Align Center placeholder.
 
-1. On the **Properties** tab, in the Name property, enter a name, for example **Scott Ritchie**.
+1. On the **Properties** tab, in the Name property, enter a name. In this example, we enter **Scott Ritchie**.
 
-    ![](<images/aligncenter-image-1.png>)
+    ![](<images/aligncenter-4-ss.png>)
 
-1. Drag the Text widget into the Align Center placeholder and enter  **Scott Ritchie**.
+1. Add the relevant content to the Align Center widget. In this example we add some text (Scott Richie) and an image. 
 
-    ![](<images/aligncenter-image-2.png>)
+    ![](<images/aligncenter-5-ss.png>)
+
+1. On the Align Center **Properties** tab, you can set the content's orientation (either vertical or horizontal).
+
+    ![](<images/aligncenter-6-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app. 
 
 
-After following these steps and publishing the module, you can test the pattern in your app. It should look something like the following:
+**Without Align Center UI Pattern** 
 
-   
-![](<images/aligncenter-image-3.png>)
+![](<images/aligncenter-7-ss.png>)
+
+**With Align Center UI Pattern**
+
+![](<images/aligncenter-8-ss.png>)
+
 
 ## Properties
 
-| **Property** |  **Description** |  **Usage** | 
-|---|---|---|
-| Orientation (Orientation Identifier): False  |  Set the orientation of the content inside. | 
-| ExtendedClass (Text): Optional  |  Add custom style classes to the block. |
+| **Property** |  **Description** |  
+|---|---|
+| Orientation (Orientation Identifier): Optional | Set the content orientation, either horizontal or vertical. | 
+| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Align Center UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Align Center UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Align Center UI styles being applied.</li></ul></p> |
 
 
-## See Also
-
-* OutSystems UI Live Style Guide: [Align Center](https://outsystemsui.outsystems.com/WebStyleGuidePreview/AlignCenter.aspx)
-* OutSystems UI Pattern Page: [Align Center](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=4)
 

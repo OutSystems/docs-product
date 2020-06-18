@@ -1043,6 +1043,7 @@
                 - topics:
                     - href: ref/ui-patterns/web/accordion.md
                     - href: ref/ui-patterns/web/alert.md
+                    - href: ref/ui-patterns/web/aligncenter.md
                     - href: ref/ui-patterns/web/animate.md
                     - href: ref/ui-patterns/web/badge.md
                     - href: ref/ui-patterns/web/balloon.md
@@ -1062,9 +1063,13 @@
                     - href: ref/ui-patterns/web/load-on-visible.md
                     - href: ref/ui-patterns/web/loginform.md
                     - href: ref/ui-patterns/web/navigation-bar.md
+                    - href: ref/ui-patterns/web/progressbar.md
                     - href: ref/ui-patterns/web/progresscircle.md                
                     - href: ref/ui-patterns/web/responsive-table.md
+                    - href: ref/ui-patterns/web/section-index.md
                     - href: ref/ui-patterns/web/sidebar.md
+                    - href: ref/ui-patterns/web/tabs.md
+                    - href: ref/ui-patterns/web/timeline.md
                     - href: ref/ui-patterns/web/timepicker.md
                     - href: ref/ui-patterns/web/user-initials.md
                     - href: ref/ui-patterns/web/video.md

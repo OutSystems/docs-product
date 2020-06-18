@@ -1056,6 +1056,7 @@
                     - href: ref/ui-patterns/web/dropdown.md
                     - href: ref/ui-patterns/web/fieldset.md
                     - href: ref/ui-patterns/web/fileupload.md
+                    - href: ref/ui-patterns/web/flip-content.md
                     - href: ref/ui-patterns/web/gallery.md
                     - href: ref/ui-patterns/web/icon-badge.md
                     - href: ref/ui-patterns/web/iframe.md
@@ -1067,7 +1068,9 @@
                     - href: ref/ui-patterns/web/progresscircle.md                
                     - href: ref/ui-patterns/web/responsive-table.md
                     - href: ref/ui-patterns/web/section-index.md
+                    - href: ref/ui-patterns/web/separator.md
                     - href: ref/ui-patterns/web/sidebar.md
+                    - href: ref/ui-patterns/web/stackedicon.md
                     - href: ref/ui-patterns/web/tabs.md
                     - href: ref/ui-patterns/web/timeline.md
                     - href: ref/ui-patterns/web/timepicker.md

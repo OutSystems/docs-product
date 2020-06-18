@@ -7,9 +7,11 @@ summary: Stacked Icon expands the icon set and creates new graphical representat
 
 You can use the Stacked Icon Pattern to stack two icons on top of each other.  
 
-![](<images/stackedicon-8.png>)
+![](<images/stackedicon-8-ss.png>)
 
 **How to use the Stacked Icon UI Pattern**
+
+In this example, we create a **NO PHOTOGRAPHY** icon by stacking a ban icon on top of a camera icon.
 
 1. In Service Studio, in the Toolbox, search for `Stacked Icon`. 
 
@@ -21,7 +23,7 @@ You can use the Stacked Icon Pattern to stack two icons on top of each other.
 
     ![](<images/stackedicon-10-ss.png>)
 
-1. On the **Properties** tab, set any of the optional properties for the icons, for example, the front and back icons as well as the size and color of the icon. 
+1. On the **Properties** tab, select the relevant icons. In this example, we select a ban icon for the front icon, and a camera icon for the back icon. We also set the front and back icon colors and size. 
 
     ![](<images/stackedicon-7-ss.png>)
 

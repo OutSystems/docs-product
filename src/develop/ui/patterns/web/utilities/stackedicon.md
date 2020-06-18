@@ -5,7 +5,8 @@ summary: Stacked Icon expands the icon set and creates new graphical representat
 
 # Stacked Icon
 
-You can use the Stacked Icon Pattern to stack two icons on top of each other.  
+You can use the Stacked Icon UI Pattern to stack one icon on top of another, thus creating a new icon with it's own distinctive meaning.
+
 
 ![](<images/stackedicon-8-ss.png>)
 

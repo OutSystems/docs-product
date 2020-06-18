@@ -167,6 +167,13 @@ You can use [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) 
 
 You should be able to use the JSON for both PWA and plugins.
 
+### Prompt to install PWA in iOS
+
+An efficient way to tell your users to install the PWA version of the app is to use a prompt. For the iOS devices, try out the community-contributed plugin [Prompt to Install PWA](https://www.outsystems.com/forge/component-overview/8216/prompt-to-install-pwa), or develop a custom solution. Android (Chrome) offers a native experience for the install prompt, so you don't need a plugin.
+
+![A prompt to install PWA in iOS](images/prompt-pwa-install.png?width=300)
+
+
 ## Plugins in PWA {#plugins}
 
 During the early access, you can try out the following officially supported plugins in your PWAs:

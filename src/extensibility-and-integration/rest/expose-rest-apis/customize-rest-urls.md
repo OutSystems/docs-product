@@ -7,18 +7,18 @@ tags:
 
 <div class="info" markdown="1">
 
-We’ve been working on this article. Please let us know how useful this new version is by voting.
+We've been working on this article. Please let us know how useful this new version is by voting.
 
 </div>
 
 OutSystems allows you to customize the URL of your REST API methods according to your needs.  
 For example, you could customize this URL:
 
-`GET https://<server>/MyAPI/rest/PhoneBook/GetContact?Id={Id}`  
+`GET https://<server>/PhoneAPI/rest/v1/GetContact?Id={Id}`  
 
 to the following one:
 
-`GET https://<server>/MyAPI/rest/PhoneBook/Contacts/{Id}`
+`GET https://<server>/PhoneAPI/rest/v1/Contacts/{Id}`
 
 For that, do the following:
 
@@ -36,13 +36,15 @@ The following sections show some examples of how to customize your endpoints.
 
 ## Endpoints for collections example
 
-Use the same name for methods related to a resource. OutSystems knows which method to execute through the HTTP verb (e.g. `GET`, `POST`):
+Use the same name for methods related to a resource. OutSystems knows which method to execute through the HTTP verb (for example, `GET` or `POST`):
 
 Default Endpoint | URL Path | Customized Endpoint
 ---|---|---
-`GET https://<server>/MyAPI/rest/PhoneBook/GetContacts` | `/Contacts` | `GET https://<server>/MyAPI/rest/PhoneBook/Contacts`
-`POST https://<server>/MyAPI/rest/PhoneBook/CreateContact` | `/Contacts`  | `POST https://<server>/MyAPI/rest/PhoneBook/Contacts`
+`GET /PhoneAPI/rest/v1/GetContacts` | `/Contacts` | `GET /PhoneAPI/rest/v1/Contacts`
+`POST /PhoneAPI/rest/v1/CreateContact` | `/Contacts`  | `POST /PhoneAPI/rest/v1/Contacts`
   
+_Note:_ Endpoints displayed without protocol and server information for brevity.
+
 ## Endpoints for a resource example
 
 When handling a specific resource, start the "URL Path" property value with the collection name and then add one of the following, depending on the HTTP verb:
@@ -52,9 +54,9 @@ When handling a specific resource, start the "URL Path" property value with the 
 
 Default Endpoint | URL Path | Customized Endpoint
 ---|---|---
-`GET https://<server>/MyAPI/rest/PhoneBook/GetContact` | `/Contacts/{Id}`  | `GET https://<server>/MyAPI/rest/PhoneBook/Contacts/{Id}`
-`DELETE https://<server>/MyAPI/rest/PhoneBook/DeleteContact` | `/Contacts/{Id}` | `DELETE https://<server>/MyAPI/rest/PhoneBook/Contacts/{Id}`
-`PUT https://<server>/MyAPI/rest/PhoneBook/UpdateContact` | `/Contacts` | `PUT https://<server>/MyAPI/rest/PhoneBook/Contacts`
+`GET /PhoneAPI/rest/v1/GetContact` | `/Contacts/{Id}`  | `GET /PhoneAPI/rest/v1/Contacts/{Id}`
+`DELETE /PhoneAPI/rest/v1/DeleteContact` | `/Contacts/{Id}` | `DELETE /PhoneAPI/restv1/Contacts/{Id}`
+`PUT /PhoneAPI/rest/v1/UpdateContact` | `/Contacts` | `PUT /PhoneAPI/rest/v1/Contacts`
 
 ## Endpoints for sub-collections example
 
@@ -62,4 +64,4 @@ With master-detail relationships, handle details as a collection under the maste
 
 Default Endpoint  |  URL Path  |  Customized Endpoint  
 ---|---|---  
-`GET https://<server>/MyAPI/rest/PhoneBook/GetContactAddresses` | `/Contacts/{Id}/Addresses` | `GET https://<server>/MyAPI/rest/PhoneBook/Contacts/{Id}/Addresses`
+`GET /PhoneAPI/rest/v1/GetContactAddresses` | `/Contacts/{Id}/Addresses` | `GET /PhoneAPI/rest/v1/Contacts/{Id}/Addresses`

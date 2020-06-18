@@ -9,7 +9,7 @@ summary: Advanced uses cases for the Stacked Icon UI Pattern.
 
 ![](<images/stackedicon-3-diag.png>)
 
-## CSS Selectors
+## CSS selectors
 
 | **Element** |  **CSS Class** |  **Description**  |
 | ---|---|---
@@ -41,7 +41,7 @@ summary: Advanced uses cases for the Stacked Icon UI Pattern.
 
 1. Publish and test.
 
-    ![](<images/stackedicon-1.gif>)
+![](<images/stackedicon-1.gif>)
 
 ## Notes
 

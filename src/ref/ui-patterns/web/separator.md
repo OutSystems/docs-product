@@ -24,16 +24,14 @@ summary: Advanced use cases for the Separator UI Pattern.
 
 1. Create a class called "separator-height".
 
-    ```css
-    .separator-height {
-        height: 100px;
-    }
-    ```
+        .separator-height {
+            height: 100px;
+        }
+
 1. Drag the Separator pattern into the container.
 
 1. Set the IsVertical parameter to True.
 
 1. Publish and test.
 
-    ![](<images/separator-3.png>)
-
+![](<images/separator-3.png>)

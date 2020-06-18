@@ -13,9 +13,9 @@ Using the [OutSystems Now app](<https://now.outsystems.com>), you can test it on
 
 To test a mobile app on your device using OutSystems Now:
 
-1. Install the OutSystems Now app on your mobile device (available for iOS and Android). Skip this step if you have it already installed. 
-1. Open the application that you want to test in Service Studio. 
-1. In the application overview, open the Native Platforms tab. There you will find a Test option and a QR Code that will allow you to test your app using OutSystems Now. 
-1. Open OutSystems Now app and scan the QR Code. 
+1. Install the OutSystems Now app on your mobile device (available for iOS and Android). Skip this step if you have it already installed.
+1. Open the application that you want to test in Service Studio.
+1. In the application overview, open the **Native Platforms** tab. There you can find a **Test** option and a QR Code that allows you to test your app using OutSystems Now.
+1. Open OutSystems Now app and scan the QR Code.
 
-While developing and publishing the app, the changes are automatically synced without the need of having to reopen the app.You can also check the [supported plugins provided by OutSystems Now](<../extensibility-and-integration/mobile-plugins/intro.md#Supported_Plugins>).
+While developing and publishing the app, the changes are automatically synced without the need of having to reopen the app. You can also check the [supported plugins provided by OutSystems Now](<../extensibility-and-integration/mobile-plugins/intro.md#Supported_Plugins>).

@@ -21,7 +21,7 @@ You can use the Separator UI Pattern to separate content clearly and ease visual
 
     ![](<images/separator-7-ss.png>)
 
-1. On the **Properties** tab, set the relevant (optional) properties, for example, the colour and the amount of space separating the content.
+1. On the **Properties** tab, set the relevant (optional) properties, for example, the color and the amount of space separating the content.
 
     ![](<images/separator-8-ss.png>)
 

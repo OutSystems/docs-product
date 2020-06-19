@@ -1,90 +1,90 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ProgressBar displays the progress of a task by incrementing values in a bar.
+summary: Progress Bar displays the progress of a task by incrementing values in a bar.
 ---
 
-# ProgressBar
+# Progress Bar
 
-Display progress of a task by incrementing values in a bar.
+You can use the Progress Bar to display percentage values by incrementing values in a bar, and to show the current progress of a task flow. <!--You can also show progress in a Progress Circle or a Progress Circle Fraction. When using the Progress Bar UI Pattern, be consistent, for example, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. -->
 
-Use the Progress Bar to show the current progress of a task flow. You can also show progress in a Progress Circle or a Progress Circle Fraction. Be consistent when using a pattern to show progress of a task, for instance, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. 
+![](<images/progressbar-1-ss.png>)
 
-**How to use**
+**How to use the Progress Bar UI Pattern**
 
-Configure the variable that defines the percentage. You can also change the shape, size, orientation and color of the ProgressBar.
+In this example, we display the percentage of shipped orders from an existing Customer Order Database.
 
-1. Drag the ProgressBar pattern into the preview.
+1. In Service Studio, in the Toolbox, search for `Progress Bar`.
 
-1. Use a variable to set the percentage value to display.
+    The Progress Bar widget is displayed.
 
-1. Set the content in the placeholders. 
+    ![](<images/progressbar-2-ss.png>)
 
-    ![](<images/progressbar-image-1.png>)
+1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen.
 
-1. Publish and test.
+    ![](<images/progressbar-3-ss.png>)
 
-    ![](<images/progressbar-image-2.png>)
+    By default, the Progress Bar widget contains a Title and Value placeholder.
 
-## Input Parameters
+    ![](<images/progressbar-4-ss.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Percentage  |  Percentage to display, you can use functions or local variables. |  Integer | False | 50 |
-| Color  |  Set the background color. |  Color Identifier | False | Entities.Color.Primary |
-| Shape  |  Set the shape. |  Shape Identifier | False | Entities.Shape.Rounded |
-| Size  |  Set the size. |  ProgressBarSize Identifier | False | Entities.ProgressBarSize.Base |
-| IsInline  |  Set the orientation of the value placeholder. When true, the value placeholder will be placed at the end of the line and the label placeholder is hidden.When False, value and label of the placeholder will be placed over the line. |  Boolean | False | False |
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
+1. Right-click your screen name and select **Add Preparation**.
 
+1. From the Toolbox, drag an Aggregate onto the screen preparation, and enter a name for the aggregate. In this example, we call the aggregate **GetTotalOrders**.
 
-## Layout and Classes
+    ![](<images/progressbar-10-ss.png>)
 
-![](<images/progressbar-image-3.png?width=650>)
+1. To add a database entity, double-click the aggregate you just created and click on the aggregate screen.
 
-## CSS Selectors
+1. From the **Select Source** pop-up, choose the source entity and click **OK**. In this example, we select the **Order** database.
 
-| **Element** |  **CSS Class** |  **Description**  |
-| --- | --- | --- |
-| .progress-container | .progress-container.flex-direction-column |  When IsInline parameter is False  |
-| .progress-container | .progress-container.flex-direction-row |  When IsInline parameter is False  |
+    ![](<images/progressbar-11-ss.png>)
 
-## Advanced Use Case
+1. Return to the screen preparation, and add another aggregate (See step 4). In this example we call the second aggregate **GetShippedOrders**.
 
-### Change color of progress bar based on value
+    ![](<images/progressbar-12-ss.png>)
 
-1. Create a local Integer variable "Value".
+1. To add the relevant database entity, repeat steps 5 and 6.
 
-1. Drag the ProgressBar pattern into the preview.
+1. On the aggregate screen, click **Filters**, then **Add Filter**.
 
-1. Set the Value of the ProgressBar's Percentage parameter.
+1. In the **Filter Condition** pop-up, add the relevant logic for the filter and click **DONE**. In this example, to get all of the shipped orders, we add the following logic:
 
-1. To change the color of your ProgressBar based on values, create a condition and set limits to use color. In this example, 3 colors represent diferent states of progress. Set the Color parameter to `If(Value <= 50, Entities.Color.Red, If( Value > 50 and Value < 75,  Entities.Color.Yellow ,  Entities.Color.Green))`.
-    
-    ![](<images/progressbar-image-4.png>)
+    `Order.Status = Entities.OrderStatus.Shipped`
 
-1. Publish and test.
+    ![](<images/progressbar-13-ss.png>)
 
-    ![](<images/progressbar-image-5.gif>)
+1. Double-click your screen name, and on the **Properties** tab, from the **Percentage** drop-down, select **Expression Editor**.
+Enter the logic for the Progress Bar and click **DONE**.  This displays the percentage value as the stroke on the Progress Bar.
 
-### Change the style of Progress bar
+    In this example, to show the percentage of shipped orders, we add the following:
 
-It is possible to change the style of Progress bar by using custom CSS. To implement this in your application, copy the CSS and add it to the theme.
+   `GetShippedOrders.Count / GetTotalOrders.Count * 100`
 
-```css
-.progress {
-    padding: var(--space-s);`
-    border: var(--space-xs) solid var(--color-primary);`
-}
-```
-![](<images/progressbar-image-6.png>)
+    ![](<images/progressbar-14-ss.png>)
 
-### Remove background of Progress Bar
+1. From the Toolbox, drag an Expression widget into the **Value** placeholder, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
 
-To remove the background, use this CSS snippet.
+1. In the Expression Editor, enter the same logic as in step 11 (`GetShippedOrders.Count / GetTotalOrders.Count * 100`), and click **DONE**. This displays the percentage value on the Progress Bar.
 
-```css
-.progress {
-    background-color: transparent;
-}
-```
-![](<images/progressbar-image-7.png>)
+    ![](<images/progressbar-15-ss.png>)
+
+1. Add the text you want to appear as the Progress Bar title to the **Title** placeholder. In this example, we add "Total % of shipped Orders".
+
+    ![](<images/progressbar-16-ss.png>)
+
+1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, size, and orientation of the Progress Bar.
+
+    ![](<images/progressbar-5-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app.
+
+## Properties
+
+| **Property** |  **Description** |  
+|---|---|
+| Percentage (Integer): Optional  |  Percentage to display. You can use functions or local variables. | 
+| Color (Color Identifier): Optional  | Progress bar color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - The progress bar color  is the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The progress bar color is red.</li></ul></p>  
+| Shape (Shape Identifier): Optional  |  Set the Progress Bar shape. The predefined options are: <li>Rounded</li><li> Soft Rounded </li> <li>Sharp</li><p>Examples</p><ul><li>_Blank_ - The Progress Bar has a rounded shape (Entities.Shape.Rounded). This is the default. </li><li>_Entities.Shape.Sharp_ - The Progress Bar has a sharp shape.</li></ul>| 
+| Size (ProgressBarSize Identifier): Optional  |  Set the Progress Bar size. The predefined options are: <li>Extra Small</li><li>Small</li> <li>Base (default)</li>|  
+| IsInline (Boolean): Optional  | If True, the value placeholder is placed at the end of the line and the label placeholder is hidden. If False, the value and label of the placeholder are placed over the line. This is the default.|
+| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Progress Bar UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Progress Bar UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Progress Bar UI styles being applied.</li></ul></p> |

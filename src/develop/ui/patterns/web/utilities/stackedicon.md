@@ -1,76 +1,42 @@
 ---
 tags: runtime-traditionalweb; 
-summary: StackedIcon expands the icon set and creates new graphical representation of concepts.
+summary: Stacked Icon expands the icon set and creates new graphical representation of concepts.
 ---
 
-# StackedIcon
+# Stacked Icon
 
-Use this pattern to be able to stack two RichWidget Icons on top of each other.
+You can use the Stacked Icon UI Pattern to stack one icon on top of another, thus creating a new icon with its own distinctive meaning.
 
-Use the Stacked Icons to expand the icon set and create new graphical representation of concepts.
+![](<images/stackedicon-8-ss.png>)
 
-**How to use**
+**How to use the Stacked Icon UI Pattern**
 
-Select StackedIcons to be displayed and choose their colors, relative position and swap their sizes.
+In this example, we create a **NO PHOTOGRAPHY** icon by stacking a ban icon on top of a camera icon.
 
-1. Drag StackedIcon pattern into the preview.
+1. In Service Studio, in the Toolbox, search for `Stacked Icon`.
 
-    ![](<images/stackedicon-image-1.png>)
+    The Stacked Icon widget is displayed.
 
-1. Set the Input Parameters to extend the default values.
+    ![](<images/stackedicon-9-ss.png>)
 
-1. Publish and test.
+1. From the Toolbox, drag the Stacked Icon widget into the Main Content area of your application's screen.
 
-## Input Parameters
+    ![](<images/stackedicon-10-ss.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| IconFront | The icon to display in front of the other.| IconName Identifier | False | Entities.IconName.camera |
-| IconBack | The icon to display behind the other.| IconName Identifier| False | Entities.IconName.ban |
-| IconFrontColor | Front icon color. | Color Identifier | False | Entities.Color.Neutral10 |
-| IconBackColor | Back Icon color. | Color Identifier | False | Entities.Color.Neutral10 |
-| IconSize | Set the size. | IconSize Identifier | False | none |
-| InvertSize | Set to True to swap the icon sizes. | Boolean | False | none |
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | None |
+1. On the **Properties** tab, select the relevant icons. In this example, we select a ban icon for the front icon, and a camera icon for the back icon. We also set the front and back icon colors and size.
 
-## Layout and Classes
+    ![](<images/stackedicon-7-ss.png>)
 
-![](<images/stackedicon-image-3.png>)
+After following these steps and publishing the module, you can test the pattern in your app.
 
-## CSS Selectors
+## Properties
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
-| .stacked-icon  | .fa-2x |  Change the icon size, to 2em  |
-| .stacked-icon  | .fa-3x |  Change the icon size, to 3em  |
-| .stacked-icon  | .fa-4x |  Change the icon size, to 4em  |
-| .stacked-icon  | .fa-5x |  Change the icon size, to 5em  |
-| .stacked-icon  | .fa-lg |  Change the icon size, to 1.33333333em  |
-
-## Advanced Use Case
-
-### Use StackedIcon with a Tooltip
-
-1. Drag a Tooltip Pattern into the page.
-
-1. Set the parameters for the Tooltip behavior.
-
-    ![](<images/stackedicon-image-4.png>)
-
-1. In the Widget placeholder, drag a StackedIcon Pattern.
-
-1. Set the parameters for the SatckedIcon Pattern.
-
-    ![](<images/stackedicon-image-5.png>)
-
-1. In the Content placeholder, from the Tooltip Pattern, set the desired label for the icon.
-
-    ![](<images/stackedicon-image-6.png>)
-
-1. Publish and test.
-
-    ![](<images/stackedicon-gif-1.gif>)
-
-## Notes
-
-The InvertSize parameter changes the sizes of the back and front icons, with each other. This means, toggling the `.fa-stack-1x` and `.fa-stack-2x` CSS classes.
+| **Property** |  **Description** |
+|---|---|
+| IconFront (IconName Identifier): Optional| The icon that displays in front of the other icon. Some of the predefined values include:<p><ul><li>Android</li><li>Bell</li><li>Camera</li><li>Desktop</li><li>Envelope</li></ul></p><p>Examples <ul><li>_Blank_ - Displays a camera icon (default value).</li><li>_Entities.IconName.instagram_ - Displays the Instagram icon.</li></ul></p> |
+| IconBack (IconName Identifier): Optional | The icon that displays behind the icon. Some of the predefined values include:<p><ul><li>Circle</li><li>Square</li><li>Heart</li></ul></p><p>Examples <ul><li>_Blank_ - Displays a ban icon.</li><li>_Entities.IconName.birthday_cake_ - Displays a birthday cake icon.</li></ul></p> |
+| IconFrontColor (Color Identifier): Optional | Front icon color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - Displays a black (Neutral10) icon (default value).</li><li>_Entities.Color.Red_ - Displays a red icon.</li></ul></p> |
+| IconBackColor (Color Identifier): Optional | Back Icon color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - Displays a black (Neutral10) icon (default value).</li><li>_Entities.Color.Green_ - Displays a green icon.</li></ul></p> |
+| IconSize (IconSize Identifier): Optional| Sets the icon size. The predefined values are:<p><ul><li>Size_2x</li><li>Size_3x</li><li>Size_4x</li><li>Size_5x</li><li>Percent_33</li></ul></p><p>Examples <ul><li>_Entities.IconSize.Size_2x_ - Increases the font to two times larger relative to the icon container.</li><li>_Entities.IconSize.Size_Percent_33_ - Increases the font to 33% larger relative to the icon container.</li></ul></p> |
+| InvertSize (Boolean): Optional | If True, the icon sizes are swapped. If False, they are not swapped. |
+| ExtendedClass (Text): Optional | Add custom style classes to the Separator UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Stacked Icon UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Stacked Icon UI styles being applied.</li></ul></p> |

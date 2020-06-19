@@ -11,7 +11,19 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
 **How to use the Section Index UI Pattern**
 
-1. In Service Studio, from the Toolbox, search for and drag the Section widget into the Main Content area of your application's screen. Add as many sections as you require for your app.
+1. In Service Studio, in the Toolbox, search for `Section Index`.
+
+    The Section Index widget is displayed.
+
+    ![](<images/sectionindex-8-ss.png>)
+
+1. From the Toolbox, drag the Section Index widget into the Main Content area of your application's screen.
+
+    In this example, we drag the Section Index widget into a column. 
+
+    ![](<images/sectionindex-2-ss.png>)
+
+1. In the Toolbox, search for and drag the Section widget into the Main Content area of your application's screen. Add as many sections as you require for your app.
 
     In this example, we drag 4 Section widgets into a column. Each section widget contains Title, Actions, and Content placeholders. 
 
@@ -23,12 +35,6 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
         
     ![](<images/sectionindex-1-ss.png>)
    
-1. From the Toolbox, drag the Section Index widget into the Main Content area of your application's screen. 
-
-    In this example, we drag the Section Index widget into a column. 
-
-    ![](<images/sectionindex-2-ss.png>)
-
     A link is automatically created to every section you have on the screen. The name of the link is based on the text you entered in the **Title** placeholder of each section. In the following example, the links are set to the employee names we entered in step 2.
 
     ![](<images/sectionindex-3-ss.png>)

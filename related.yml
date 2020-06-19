@@ -1109,7 +1109,9 @@
 - develop/ui/patterns/web/responsive/displayondevice.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/DisplayOnDevice.aspx
+        - "OutSystems UI Pattern": 
+           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=32
 - develop/ui/patterns/web/responsive/loadonvisible.md:
     - ref/ui-patterns/web/load-on-visible.md
     - external:
@@ -1160,9 +1162,12 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Fieldset.aspx
 - develop/ui/patterns/web/utilities/flipcontent.md:
+    - ref/ui-patterns/web/flip-content.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FlipContent.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=37
 - develop/ui/patterns/web/utilities/iframe.md:
     - ref/ui-patterns/web/iframe.md
     - external:
@@ -1171,13 +1176,17 @@
         - "How to Add Video to Your Applications": 
             https://success.outsystems.com/Documentation/Development_FAQs/How_to_Add_Video_to_Your_Applications            
 - develop/ui/patterns/web/utilities/separator.md:
+    - ref/ui-patterns/web/separator.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Separator.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=66
 - develop/ui/patterns/web/utilities/stackedicon.md:
+    - ref/ui-patterns/web/stackedicon.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/StackedIcon.aspx
 - develop/ui/patterns/web/intro.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1186,7 +1195,7 @@
     - ref/ui-patterns/web/navigation-bar.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-           https://outsystemsui.outsystems.com/WebStyleGuidePreview/NavigationBar.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/NavigationBar.aspx
 
 # UI Mobile Patterns
 - develop/ui/patterns/mobile/carousel.md:

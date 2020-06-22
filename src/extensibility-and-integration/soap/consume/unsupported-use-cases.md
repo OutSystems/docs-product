@@ -10,7 +10,6 @@ In this case, you will not be able to import the Web Service straight away in Se
 
 The current list of unsupported features/use cases is the following:
 
-* [RPC services with same name property in messages' parts](<#rpc_message_part>)
 * [Multidimensional arrays](<#multidimensional-arrays>)
 * [Abstract types without implementation](#abstract-types-without-implementation)
 * [Recursion](<#recursion>)
@@ -25,6 +24,7 @@ The current list of unsupported features/use cases is the following:
 * [SOAP Action names with special characters](#special-characters)
 * [Repeated SOAP structure attribute names](#repeated-attribute-names)
 * [Attributes in the same SOAP structure named "&lt;attrib&gt;" and "&lt;attrib&gt;Field"](#attributes-field)
+* [RPC-style Web Services with the same 'name' property in message 'part' elements](#rpc-message-part)
 
 <div class="info" markdown="1">
 
@@ -35,22 +35,6 @@ Be sure to visit this page regularly for an updated list of the current limitati
 
 In the following sections we provide general instructions to perform the necessary WSDL changes for working around some of the currently unsupported features/use cases.
 
-## RPC services with same name property in messages' parts
-
-Due to WCF limitations, we do not support RPC web services that use the following pattern in their messages definition: parts using the same name property but with distinct types.
-
-Example:
-
-```xml
-<message name="loginIn">
-    <part name="request" type="tns:LoginReq"/>
-</message>
-<message name="logoutIn">
-    <part name="request" type="tns:LogoutReq"/>
-</message>
-```
-
-Messages loginIn and logoutIn define a part named "request" with distinct types tns:LoginReq and tns:LogoutReq, respectively. This is not supported and there is no workaround.
 
 ## Multidimensional Arrays
 
@@ -382,3 +366,27 @@ Consider the following example, where the `ExampleType` type contains two attrib
 ### Use Case Workaround
 
 Edit the type definition in a local copy of the WSDL and change the name of the `<attrib>Field` attribute.
+
+
+## RPC-style Web Services with the same 'name' property in message 'part' elements { #rpc-message-part }
+
+RPC-style Web Services are services where the WSDL representation of messages exchanged for an operation contains parameters as if it were a remote procedure call (RPC). 
+
+Due to Windows Communication Foundation (WCF) limitations, we don't support RPC-style Web Services that use the following pattern in their `message` definitions: parts with the same `name` property, but with distinct types.
+
+Example:
+
+```xml
+<message name="loginIn">
+    <part name="request" type="tns:LoginReq"/>
+</message>
+<message name="logoutIn">
+    <part name="request" type="tns:LogoutReq"/>
+</message>
+```
+
+In the example above, the `loginIn` and `logoutIn` messages both define a part named `request` with distinct types: `tns:LoginReq` and `tns:LogoutReq`, respectively.
+
+### Use Case Workaround
+
+Currently there is no generic workaround available to overcome this unsupported use case.

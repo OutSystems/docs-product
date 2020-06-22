@@ -22,7 +22,7 @@ summary: Advanced use cases for the Card Sectioned UI Pattern.
 
 ### Change orientation according to device
 
-1. Drag the CardSectioned Pattern into the preview.
+1. Drag the Card Sectioned Pattern into the preview.
 
 1. Set the Orientation parameter to `If(IsPhone(),Entities.Orientation.Vertical, Entities.Orientation.Horizontal)`. Use the server action IsPhone as the condition to set the orientation for a phone. You can also use the IsTablet action or invert the False & True statements, according to your needs. This way, the CardSectioned pattern will be horizontal on Desktop and Tablet. On the Phone, it will be vertical.
 
@@ -37,4 +37,4 @@ summary: Advanced use cases for the Card Sectioned UI Pattern.
 ![](<images/cardsectioned-4.png>)
 
 ## Notes
-The parameter IsRight only works if the parameter Orientation is not Vertical.
+The parameter IsRight only works if the parameter Orientation is Not Vertical.

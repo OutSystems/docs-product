@@ -31,7 +31,7 @@ summary: Advanced use cases for the Blank Slate UI Pattern.
 
     ![](<images/blankslate-3-ss.png>)
 
-1. Inside the True branch of the condition, use the BlankSlate Pattern.
+1. Inside the True branch of the condition, use the Blank Slate Pattern.
 1. Inside the False branch of the condition, use your list.
 
     ![](<images/blankslate-4-ss.png>)

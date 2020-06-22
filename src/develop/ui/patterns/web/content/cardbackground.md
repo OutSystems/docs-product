@@ -7,7 +7,7 @@ summary: Card Background groups short pieces of information and highlights them 
 
 You can use the Card Background UI Pattern to group small pieces of information and highlight them on the screen using a background image. The information is grouped into a small block that is easily noticeable on-screen. 
 
-![](<images/cardbackground-1.png>)
+![](<images/cardbackground-1-ss.png>)
 
 
 **How to use the Card Background UI Pattern**

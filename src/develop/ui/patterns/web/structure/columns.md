@@ -17,7 +17,7 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
     ![](<images/columns-2-ss.png>)
 
-1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. In this example, we drag the Columns 3 widget onto the screen.
+1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. In this example, we drag the Columns 2 widget onto the screen.
 
     ![](<images/columns-3-ss.png>)
 
@@ -39,6 +39,8 @@ After following these steps and publishing the module, you can test the pattern 
 | TabletBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on tablets. The predefined options for the tablet behavior are: <p><ul><li>All</li><li>First</li><li>Last</li><li>Middle</li><li>None (default).</li></ul></p><p>See below for an example of how each setting displays.</p>|
 | PhoneBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on phones. The predefined options for the phone behavior are: <p><ul><li>All (default).</li><li>First</li><li>Last</li><li>Middle</li><li>None</li></ul></p><p>See below for an example of how each setting displays.</p>|
 | ExtendedClass (Text): Optional  |Add custom style classes to the Columns UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - Adds the _myclass_ style to the Columns UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Columns UI styles being applied.</li></ul></p> |
+
+The following are examples of how the columns are displayed on each of the devices, depending on which property you select.
 
 **Entities.BreakColumns.None**
 

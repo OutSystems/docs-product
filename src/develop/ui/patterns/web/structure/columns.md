@@ -17,11 +17,11 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
     ![](<images/columns-2-ss.png>)
 
-1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. The following example uses the Columns 3 widget.
+1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. In this example, we drag the Columns 3 widget onto the screen.
 
     ![](<images/columns-3-ss.png>)
 
-1. Add the required content to the Column widget, for example, images, forms, text, or  [counters](../../../../../develop/ui/patterns/web/numbers/counter.md). 
+1. Add the required content to the Column widget, for example, images, forms, text. In this example, we add some images and text. 
 
     ![](<images/columns-4-ss.png>)
 

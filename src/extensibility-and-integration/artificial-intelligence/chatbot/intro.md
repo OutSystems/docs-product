@@ -18,11 +18,11 @@ To create a chatbot from the Chatbot component, you need:
 
 Your chatbot consists of the user interface and logic that generates replies to the user. If you want to quickly add a chatbot to your app, a chatbot that can answer questions based on the information from the knowledge base, check [Getting started: How to create an FAQ chatbot](get-started-faq-chatbot.md) for instructions.
 
-For more development options and advanced computational features, such as natural language processing, we recommend using the resources provided by the AI provided. OutSystems uses Microsoft Azure as the AI provider. Use the [chatbot webhook module](guide-outsystems-webhook.md) to connect to Azure and design advanced responses, for example to send a file or create a card with buttons or suggested actions.
+For more options and advanced computational features, such as natural language processing or intent detection, use an AI provided. OutSystems uses Microsoft Azure as the AI provider. Use the [chatbot webhook module](guide-outsystems-webhook.md) to connect to Azure and design advanced responses, for example to send a file or create a card with buttons or suggested actions.
 
 <div class="info" markdown="1">
 
-There's a chatbot demo app in Forge. Install the demo in your environment, check out the logic, and reuse it your chatbots. Go to [OutSystems.AI Chatbot Reactive](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive), click **Download**, and then **Download component + demo**. 
+There's a chatbot demo app in Forge. Install the demo in your environment, check out the logic, and reuse it in your chatbots. Go to [OutSystems.AI Chatbot Reactive](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive), click **Download**, and then **Download component + demo**. 
 
 </div>
 
@@ -35,4 +35,4 @@ Here is an overview of some use cases to get you started. The time to develop an
 | Shows cards with thumbnails, buttons, and files for download. | See [Create advanced logic and reply with cards](get-started-advanced-chatbot.md). | Moderate
 | Has a fully custom interface. | See [Create custom chatbot UI](get-started-custom-ui.md) | Moderate
 
-Making a working chatbot in only part of the work towards creating a useful chatbot solution. You also need knowledge about designing interactive user experiences. We recommend reading [Principles of bot design](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0) and [Writing for bots](https://docs.microsoft.com/en-us/style-guide/chatbots-virtual-agents/writing-bots) by Microsoft.
+Making a working chatbot is only part of the work towards creating a useful chatbot solution. You also need knowledge about designing interactive user experiences. Check out [Principles of bot design](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0) and [Writing for bots](https://docs.microsoft.com/en-us/style-guide/chatbots-virtual-agents/writing-bots) by Microsoft.

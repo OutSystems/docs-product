@@ -434,6 +434,7 @@
     - href: extensibility-and-integration/artificial-intelligence/intro.md
     - topics:
         - href: extensibility-and-integration/artificial-intelligence/luis-connector.md
+        - href: extensibility-and-integration/artificial-intelligence/qna-connector.md
         - href: extensibility-and-integration/artificial-intelligence/ml-connector.md
         - href: extensibility-and-integration/artificial-intelligence/text-analysis.md
         - href: extensibility-and-integration/artificial-intelligence/chatbot/intro.md

@@ -102,13 +102,13 @@ Test the connection between the OutSystems connector and Azure by requesting inf
 
 3. In the properties of the **GetKnowledgebaseDetails** server action, enter the knowledge base ID in the **KbId** field.
 
-    ![A sample flow to text the connector](images/qna-test-connector-action-properties-ss.png)
+    ![A sample flow to text the connector](images/qna-test-connector-action-properties-ss.png?width=500)
 
     Notice that the output parameter of the server action is **KnowledgebaseDetails**, of the data type **KnowledgebaseDTO**. In this example, JSONSerialize converts the response to show it as text.
 
 4. Run the sample logic. If the connector is working correctly, you should receive the information about the selected knowledge base. In this example, the user interface shows the information, but you can use the debugger to quickly inspect the returned values.
     
-    ![Returned KB info from Azure](images/qna-get-info-browser-preview.png?width=600)
+    ![Returned KB info from Azure](images/qna-get-info-browser-preview.png?width=400)
 
 ### Request a reply message from the knowledge base
 
@@ -130,11 +130,11 @@ Here is how you can test getting replies with the QnA Maker connector.
 
 1. Store the value the knowledge base sends back in a variable. The reply message is the textual value of **GenerateAnswer.Answer.Answers.Current.Answer**.
 
-    ![A sample logic to get a reply from Azure QnA Maker service](images/qna-logic-sample-ss.png?width=600)
+    ![A sample logic to get a reply from Azure QnA Maker service](images/qna-logic-sample-ss.png?width=500)
    
 1. Run the action. If the connector is working correctly, you should receive the closest match for the question. You can also create a user interface to display the knowledge base reply, or use the debugger to quickly inspect the returned values.
     
-    ![A sample reply](images/qna-reply-browser.png?width=600)
+    ![A sample reply](images/qna-reply-browser.png?width=400)
 
 ## Reference
 

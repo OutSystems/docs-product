@@ -4,7 +4,7 @@ summary: In the Controller tab you define how front-end servers and the deployme
 
 # Controller Tab
 
-In the **Controller tab** you define how front-end servers and the deployment controller server communicate.
+In the **Controller** tab you define how front-end servers and the deployment controller server communicate.
 
 Configuration | Description  | Default value
 --------------|--------------|---------------

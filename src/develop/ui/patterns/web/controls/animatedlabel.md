@@ -7,6 +7,8 @@ summary: The Animated Label animates a label when there is user input.
 
 You can use the Animated Label UI Pattern to animate a label when there is a user input.
 
+ ![](<images/animatedlabel-10-ss.png>)
+
 **How to use the Animated Label UI Pattern**
 
 1. In Service Studio, in the Toolbox, search for `Animated Label`.

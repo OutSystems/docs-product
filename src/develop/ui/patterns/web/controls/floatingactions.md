@@ -1,105 +1,40 @@
 ---
 tags: runtime-traditionalweb; 
-summary: FloatingActions display an action that floats in the bottom right corner of the screen.
+summary: Floating Actions displays an action that floats in the bottom right corner of the screen.
 ---
 
-# FloatingActions 
+# Floating Actions 
 
-Display an action that floats in the bottom right corner of the screen, providing access to a set of additional actions.
+You can use the Floating Actions UI Pattern to display an action that floats in the bottom right corner of the screen, providing access to a set of additional actions.
 
-Use the Floating Action to show the primary action on a screen. Choose actions such as create, share, explore and so on. Avoid actions such as delete, archive or an alert. Exclude limited actions such as cut-and-paste text or actions that should be in a toolbar.
+Use the Floating Action UI Pattern to show the primary action on a screen. Choose actions such as create, share, explore and so on. Avoid actions such as delete, archive or an alert. Exclude limited actions such as cut-and-paste text or actions that should be in a toolbar.
 
-**How to use**
+**How to use the Floating Actions UI Pattern**
 
-1. Drag FloatingAction pattern into the preview.
+1. In Service Studio, in the Toolbox, search for `Floating Actions`.
 
-    ![](<images/floatingactions-image-1.png>)
+    The Floating Actions widget is displayed.
 
-1. Set the content in the placeholders.
+    ![](<images/floatingactions-1-ss.png>)
 
-1. Publish and test.
+1. From the Toolbox, drag the Floating Actions widget into the Main Content area of your application's screen.
+
+    ![](<images/floatingactions-3-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app. 
 
 
-## Input Parameters
+## Properties
 
-### FloatingActions
+### Floating Actions
+| **Property** |  **Description** |
+|---|---|
+| Trigger (Trigger Identifier): Optional  | Set the type of trigger for the button. the predefined values are: <p><li> Click </li> <li>Hover</li><li>Manual</li></p><p>Examples</p><li>_Entities.Trigger.Click_ - Clicking the button triggers the button. This is the default.</li><li>_Entities.Trigger.Hover_ -Hovering over the button triggers the button.</li></p>|
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Floating Actions UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Floating Actions UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Floating Actions UI styles being applied.</li></ul> |
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Trigger  | Set the type of trigger for the Button. | Trigger Identifier | No | Entities.Trigger.Click |
-| ExtendedClass  | Add custom style classes to this Block. | Text | No | none |
+### Floating Actions Item
 
-### FloatingActionsItem
-
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  | Add custom style classes to this Block. | Text | No | none |
+| **Property** |  **Description** |  
+|---|---|
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Floating Actions Item UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Floating Actions Item UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Floating Actions Item UI styles being applied.</li></ul> 
   
-## Layout and Classes
-
-![](<images/floatingactions-image-2.png>)
-
-## Events
-
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnToggle | Event fired after the floating actions are toggled |  False  |
-
-## CSS Selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---|
-| .floating-actions |  .is--open|  Set when the Floating Actions Pattern is open  |
-
-
-## Advanced Use Case
-
-### Change FloatingActions position
-
-1. Write the following CSS code in the CSS editor.
-
-    ```css
-    .floating-actions {
-        -webkit-box-align: start;
-           -ms-flex-align: start;
-              align-items: flex-start;
-        left: 0;
-        right: auto;
-    }
-    
-    .floating-actions-items {
-        -webkit-box-align: start;
-           -ms-flex-align: start;
-              align-items: flex-start;
-        padding-left: var(--space-s);
-    }
-    
-    .floating-actions-item {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-           -ms-flex-direction: row-reverse;
-               flex-direction: row-reverse;
-    }
-    
-    .floating-actions-item-button {
-        margin-left: 0;
-        margin-right: var(--space-base); 
-    }
-    ```
-1. Publish and test.
-
-    ![](<images/floatingactions-gif-1.gif>)
-
-### Use FloatingActions with ListRecords
-
-1. Drag the FloatingActions Pattern into the preview.
-
-1. In the Items placeholder, drag a ListRecords widget.
-
-1. Set the Line Separator property of the ListRecords to None.
-
-1. In the ListRecords, drag a FloatingActionsItem.
-
-1. In the FloatingActionsItem, use expressions to display the required content.
-
-1. Publish and test.

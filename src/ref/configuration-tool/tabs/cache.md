@@ -16,7 +16,7 @@ Host | Hostname or IP address of the Cache Invalidation Service.<br/>_Note:_ To 
 Port | Port used by applications and OutSystems services to communicate with the cache invalidation service. | `5672`
 Virtual Host | Name of RabbitMQ virtual host.<br/>Virtual hosts allow you to reuse the service to other purposes having a separation from OutSystems logic. | `/outsystems`
 Username | User of the cache invalidation service used by the OutSystems platform. | `admin`
-Password | Password of the user of the cache invalidation service used by the platform.<br/>_Note:_ Currently this password can't contain special characters (for example, `?`, `&`, `^`, `"`, `'`, `*`). |
+Password | Password of the user of the cache invalidation service used by the platform.<br/>_Note:_ Currently this password can't contain special characters (for example, `?`, `&`, `^`, `"`, `'`, `*`, `(`, `)`). |
 Enable TLS | When checked, enables the usage of secure connections between applications and the cache invalidation service | Unchecked
 
 ## Create/Upgrade Service button

@@ -15,4 +15,4 @@ To set a different HTTP Status Code in the Response, do the following:
 1. Use the [SetStatusCode](<../../../ref/apis/auto/httprequesthandler-api.final.md#SetStatusCode>) action in your REST API Method or callback flow right before the end node. 
 1. Set its "StatusCode" property to the desired status code. 
 
-![](images/ss-rest-change-http-code.png?width=800)
+![](images/ss-rest-change-http-code.png)

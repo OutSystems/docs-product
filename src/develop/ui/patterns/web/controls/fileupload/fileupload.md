@@ -3,41 +3,40 @@ tags: runtime-traditionalweb;
 summary: FileUpload allows the end user to transfer a file or add content to the application.
 ---
 
-# FileUpload
+# File Upload
 
-Allows the end user to transfer a file or add content to the application.
+You can use the File Upload UI Pattern to allow users upload files to the app.
 
-Use the FileUpload to allow the end user to transfer a file or add content. Although it is commonly a form element, it can also be a stand-alone element.
+The File Upload pattern is commonly used in a form, but it can also be used as a stand-alone element.
 
-**How to use**
+![](<images/fileupload-image-1.png>)
 
-Drag the FileUpload widget and set a label for it. After the widget is configured, create a button to save the file.
+**How to use the File Upload Pattern**
 
-1. Drag FileUpload pattern into the preview.
 
-1. Change the content in Empty Message.
+1. In Service Studio, in the Toolbox, search for `File Upload`.
 
-    ![](<images/fileupload-image-1.png>)
+    The File Upload widget is displayed.
+
+    ![](<images/fileupload-image-3.png>)
+ 
+1. From the Toolbox, drag the File Upload widget into the Main Content area of your application's screen.
+
+    ![](<images/fileupload-image-4.png>)
+
+1. After following these steps and publishing the module, you can test the pattern in your app. 
+
+
 
 ## Demo
 
 <iframe width="750" height="500" src="https://www.youtube.com/embed/l0YPl_3ya9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
-## Input Parameters
+## Properties
 
-| Input Name |  Description |  Type | Mandatory | Default Value |
-|---|---|---|---|---|
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | None |
-
-## Layout and Classes
-
-![](<images/fileupload-image-1.png>)
-
-## CSS Selectors
-
-| Element |  CSS Class |  Description  |
-| ---|---|---
-| .file-upload | .active |  When the icon to delete is visible |
+| **Property** | **Description** |  
+|---|---|
+| ExtendedClass (Text): Optional  |  Add custom style classes to the File Upload UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the File Upload UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the File Upload UI styles being applied. </li></ul> |
 
 
 

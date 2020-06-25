@@ -1,76 +1,84 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary: Allows the user select a single value between two range values.
 ---
 
-# RangeSlider Pattern
+# Range Slider
 
-The RangeSlider pattern allows you to set a value by dragging a handle within a configured range. It is used to control a variable value with simple and interactive user input.
+You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track, increases or decreases the value.  
 
-## How to Use the RangeSlider Pattern
+![](images/rangeslider-1.png)
 
-Bind your variable to the **InitialValue** input and use the **OnChange** event to add your logic to handle value changes.
+## How to use the Range Slider UI Pattern
 
-![](images/range_slider.png)
+In this example, we create a Range Slider that allows the user select the number of months it will take them to pay back a loan.
 
-1\. After setting the **MinValue** , **MaxValue** and the **InitialValue** , you'll need to create the **OnChange** event.
+1. In Service Studio, in the Toolbox, search for `Range Slider`. 
 
-![](images/range_slider_on_change.png)
+    The Range Slider widget is displayed.
 
-2\. Create an integer value and assign it.
+    ![](images/rangeslider-2-ss.png)
 
-![](images/range_slder_integer.png)
+1. From the Toolbox, drag the Range Slider widget into the Main Content area of your application's screen.
 
-**Result**:
+    ![](images/rangeslider-3-ss.png)
 
-![](images/Rangeslider_BasicEndResult.gif)
+1. On the **Properties** tab, enter the the minimum, maximum, and  initial values. In this example, we add static values.
 
-### Changing the Color of the Bar
+    ![](images/rangeslider-5-ss.png)
 
-![](images/range_slider_color_bar_1.png)
+1. To create an **OnChange** event, on the **Properties** tab, from the **Handler** drop-down, select **New Client Action**. 
 
-![](images/range_slider__change_color.png)
+    ![](images/rangeslider-4-ss.png)
 
-![](images/range_slider_color_bar_2.png)
+    By deafult, the **Value** input parameter is created.  
+    
+    ![](images/rangeslider-6-ss.png)
 
-### Changing the Size of the Handles
 
-![](images/range_slider_handle_size_1.png)
+1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen, and add your content to the Container placeholder. In this example we add some text and an expression.
 
-![](images/range_slider_change_size_of_handles.png)
+    ![](images/rangeslider-7-ss.png)
 
-![](images/range_slider_handle_size_2.png)
+1. To create a variable for the expression, right-click your screen name, select **Add Local Variable**, and on the **Properties** tab, enter a name and data type (in this example, we use Decimal).
 
-## Input Parameters
+    ![](images/rangeslider-8-ss.png)
 
-**Input Name** |  **Description** |  **Default Value**  
+1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
+
+    ![](images/rangeslider-9-ss.png)
+
+1. So that the **Value** paramenter reads the range slider selection, double-click your client action, and from the Toolbox, add the **Assign** action to the client action.
+
+    ![](images/rangeslider-10-ss.png)
+
+1. Set the Assign **Variable** to the local variable you created, and the Assign **Value** to the automatically generated input parameter (Value).
+
+    ![](images/rangeslider-11-ss.png)
+
+1. From the **Properties** tab, you can change the Range Slider's look and feel by setting the (optional) properties.
+
+    ![](images/rangeslider-14-ss.png)
+
+After following these steps and publishing the module, you can test the pattern in your app. 
+
+**Result**
+
+![](images/rangeslider-12-ss.png)
+
+
+## Properties
+
+**Property** |  **Description** |
 ---|---|---  
-![](images/input.png) MinValue  |  Slider's minimum value.  |  none  
-![](images/input.png) MaxValue  |  Slider's maximum value.  |  none  
-![](images/input.png) InitialValue  |  Value selected by default. Must be between min and max values.  |  none  
-![](images/input.png) Step  |  Slider moves in increments of Step. If Step is 10, the slider will go from 0 to 10, to 20, to 30, etc.  |  1  
-![](images/input.png) ShowPips  |  Show pips below the slider.  |  True  
-![](images/input.png) PipsStep  |  Range interval after which a Pip is drawn (when ShowPips is enabled). If not specified, the component will try to guess what step fits your data.  |  -1  
-![](images/input.png) ChangeEventDuringSlide  |  Triggers Change events while the slider is being dragged. If set to _False_ , the Change events will only be triggered when the user releases the slider. **Tip**: If you're refreshing a query based on the value of the slider, you probably want to set this to _False_ .  |  True  
-  
-## Events
-
-**Event Name** |  **Description** |  **Mandatory**  
----|---|---  
-![](images/Event.png) OnChange  |  Action to execute after selecting a new value on the slider. Returns the new Value.  |  _True_  
-  
-## Layout and Classes
-
-![](images/range_slider_layout_and_classes.png)
-
-## CSS Selectors
-
-**Element** |  **CSS Class** |  **Description**  
----|---|---  
-![](images/css_selector.png) noUi-handle  |  .noUi-active  |  Class added when handle is clicked.  
-  
-## Samples
-
-This sample uses the RangeSlider pattern:
-
-![](images/RangeSlider-Sample-1.PNG)
+ MinValue (Decimal): Mandatory  |  Slider's minimum value. <p>Examples <ul><li>_1_ - The slider's minimum value is 1.</li> </ul></p> |  
+ MaxValue (Decimal): Mandatory  |  Slider's maximum value. <p>Examples <ul><li>_100_ - The slider's maximum value is 100.</li></ul></p>   | 
+ InitialValue (Decimal): Mandatory  |  Value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>_10_ - Slider's default value when the page is rendered is 10.</li></ul></p> |
+ Step (Decimal): Optional  | The slider moves in increments of steps.<p>Examples <ul><li>_Blank_ - The slider increases in steps of 1. This is the default value. </li><li>_10_ - The slider increases in steps of 10.</li></ul></p>  |   
+ ShowPips (Boolean): Optional  | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. | 
+ PipsStep (Integer): Optional  |  Range interval after which a Pip is drawn (when ShowPips is enabled). If not specified, the component will try to guess what step fits your data.  |
+ ChangeEventDuringSlide (Boolean): Optional  | If True, a change event is triggered while the slider is being dragged. This is the default value. If False, the change events are only triggered when the user releases the slider. **Tip**: If you're refreshing a query based on the value of the slider, you probably want to set this to False.  | 
+ IsDisabled (Boolean): Optional | If True, the slider is disabled. If False, the slider is enabled. This is the default value. | 
+ IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. | 
+ VerticalHeight (Integer): Optional | If IsVertical is True, use this property to set the height (in px) of the slider. <p>Examples <ul><li>_Blank_ - The slider is 100px high. This is the default value. </li><li>_250_ - The slider is 250px high.</li></ul></p> | 
+ AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: https://kimmobrunfeldt.github.io/progressbar.js/. Example: `{ easing: 'bounce' }` |

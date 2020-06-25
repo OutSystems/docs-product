@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: The list of mobile patterns for fast mobile UI development.
 ---
 
-# Using Mobile Patterns
+# Using Mobile and Reactive Patterns
 
 Components and UI patterns specially designed to address common application use cases in mobile development.
 
@@ -11,16 +11,16 @@ Components and UI patterns specially designed to address common application use 
 
 OutSystems UI Mobile Framework offers you different patterns that you can drag and drop to the screen for a great mobile experience.
 
-* [DatePicker](<datepicker.md>)
+* [Date Picker](<datepicker.md>)
 * [Carousel](<carousel.md>)
 * [Columns](<columns.md>)
 * [Gallery](<gallery.md>)
-* [LightBoxImage](<lightboximage.md>)
-* [MasterDetail](<masterdetail.md>)
-* [RangeSliderInterval](<rangesliderinterval.md>)
-* [RangeSlider](<rangeslider.md>)
-* [SplitScreen](<splitscreen.md>)
+* [Lightbox Image](<lightboximage.md>)
+* [Master Detail](<masterdetail.md>)
+* [Range Slider Interval](<rangesliderinterval.md>)
+* [Range Slider](<rangeslider.md>)
+* [Split Screen](<splitscreen.md>)
 * [Stacked Cards](<stackedcards.md>)
 * [Swipe Events](<swipeevents.md>)
 * [Tabs](<tabs.md>)
-* [TouchEvents](<touchevents.md>)
+* [Touch Events](<touchevents.md>)

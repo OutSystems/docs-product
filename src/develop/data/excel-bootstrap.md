@@ -32,3 +32,9 @@ To bootstrap data from an Excel file to an existing entity:
 1. Publish to bootstrap the data. 
 
 When you publish the module, it executes the action to bootstrap the data. If the entity already has data, the action with the bootstrap logic is **not** executed.
+
+## Demo/Sample
+
+Check this demo on how to bootstrap your data from an Excel file, and [download the Sample](resources/BootstrapFromExcel.oml) and the [sample data](resources/SampleData.xls) used in it.
+
+<iframe width="750" height="500" src="https://www.youtube.com/embed/-8o-d_xrxbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>

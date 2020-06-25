@@ -5,6 +5,12 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 
 # Pass Data Between Blocks
 
+<div class="info" markdown="1">
+
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+
+</div>
+
 In a screen or block with child blocks, it can happen that an event in a child block requires updating another block. For example, a block containing a date picker that, when changed, requires updating a chart plotted by another block. 
 
 For example, suppose there is a screen that is the parent of two blocks:
@@ -20,7 +26,7 @@ The following is an overview of the communication between blocks:
 
 1. On the **Source** block, create and trigger an Event to notify the Parent screen or block and pass the necessary data;
 1. On the **Parent** screen or block, handle the event triggered by the Source block and update the input parameters of the Target block;
-1. Finally, in Reactive Web and Mobile apps, execute logic in the OnParametersChanged event handler on the **Target** block, if necessary. In Traditional Web apps, explicitly refresh the **Target** block. 
+1. Finally, in Reactive Web and Mobile apps, execute logic in the OnParametersChanged event handler on the **Target** block, if necessary. In Traditional Web apps, explicitly refresh the **Target** block.
 
 Follow the steps below to implement this communication mechanism.
 
@@ -53,7 +59,6 @@ In **Reactive Web** and **Mobile** apps, if the **Target** block needs to execut
 1. In the newly created Client Action, implement the logic to refresh the queries or deal with the new values of the input parameters.
 
     ![](images/block-communicate-5.png)
-
 
 In **Traditional Web** apps, if the **Target** block needs to execute logic in response to the updated input parameter values:
 

@@ -775,6 +775,19 @@ CookieDomain
 :   Type: Text.  
     Cookie domain. Defaults to the current domain.
 
+CookieHttpOnly
+:   Type: Boolean.  
+    Cookie HttpOnly attribute. Defaults to False. When set to True, the cookie value is not available in JavaScript code. Normally used in security-sensitive cookies.
+
+CookieSecure
+:   Type: Boolean.  
+    Cookie Secure attribute. Defaults to what is defined in the security settings for the current environment.  
+    It's not possible to lower the security specified at the environment level.
+
+CookieSameSite
+:   Type: Text.  
+    Cookie SameSite attribute. Possible values: &quot;&quot;, &quot;None&quot;, &quot;Lax&quot;, and &quot;Strict&quot;. Defaults to what is defined in the security settings for the current environment.
+
 ### SetLastModified { #SetLastModified }
 
 Sets the Last Modified Date HTTP header of the current response.

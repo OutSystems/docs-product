@@ -3,7 +3,7 @@ tags: runtime-traditionalweb;
 summary: The list of web patterns for web UI development.
 ---
 
-# Using Web Patterns
+# Using Traditional Web Patterns
 
 Components and UI patterns specially designed to address common application use cases in web development.
 

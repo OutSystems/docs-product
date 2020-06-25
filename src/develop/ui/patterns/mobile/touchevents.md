@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: 
 ---
 
-# TouchEvents Pattern
+# Touch Events
 
 The TouchEvents pattern enables touch events on a specific widget.
 
@@ -37,7 +37,7 @@ You can use the pattern to hide a header during a scroll action.
 
 Element | Code
 ---|---  
-![](images/JS_hide.png) |  var header = document.querySelector(".hearder");%%header.classList.add("hide");%%header.classList.add("header-on-scroll");  
+![](images/JS_hide.png) |  var header = document.querySelector(".header");%%header.classList.add("hide");%%header.classList.add("header-on-scroll");  
 ![](images/JS_show.png) |  var header = document.querySelector(".header");%%header.classList.remove("hide");%%header.classList.remove("header-on-scroll");  
   
 Result:

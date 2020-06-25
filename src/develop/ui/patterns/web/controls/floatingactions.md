@@ -29,7 +29,7 @@ After following these steps and publishing the module, you can test the pattern 
 ### Floating Actions
 | **Property** |  **Description** |
 |---|---|
-| Trigger (Trigger Identifier): Optional  | Set the type of trigger for the button. the predefined values are: <p><li> Click </li> <li>Hover</li><li>Manual</li></p><p>Examples</p><li>_Entities.Trigger.Click_ - Clicking the button triggers the button. This is the default.</li><li>_Entities.Trigger.Hover_ -Hovering over the button triggers the button.</li></p>|
+| Trigger (Trigger Identifier): Optional  | Set the type of trigger for the button. the predefined values are: <p><li> Click </li> <li>Hover</li><li>Manual</li></p><p>Examples</p><li>_Entities.Trigger.Click_ - Clicking the button triggers the button. This is the default.</li><li>_Entities.Trigger.Hover_ - Hovering over the button triggers the button.</li></p>|
 | ExtendedClass (Text): Optional  |  Add custom style classes to the Floating Actions UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Floating Actions UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Floating Actions UI styles being applied.</li></ul> |
 
 ### Floating Actions Item

@@ -35,7 +35,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 | **Property** |  **Description** |
 |---|---|
-| GutterSize (GutterSize Identifier): Optional | Set the gutter size. The default Gutter size is large.<p>Examples <ul><li>_Blank_ - A large white space between each column (default value).</li><li>_Entities.GutterSize.Gutter_None_ - No white space between each of the columns<li>_Entities.GutterSize.Gutter_XS_ - An extra small white space between each of the columns</li></ul></p> | 
+| GutterSize (GutterSize Identifier): Optional | Set the gutter size. The default Gutter size is large.<p>Examples <ul><li>_Blank_ - A large white space between each column (default value).</li><li>_Entities.GutterSize.Gutter_None_ - No white space between each of the columns</li><li>_Entities.GutterSize.Gutter_XS_ - An extra small white space between each of the columns</li></ul></p> |
 | TabletBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on tablets. The predefined options for the tablet behavior are: <p><ul><li>All</li><li>First</li><li>Last</li><li>Middle</li><li>None (default).</li></ul></p><p>See below for an example of how each setting displays.</p>|
 | PhoneBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on phones. The predefined options for the phone behavior are: <p><ul><li>All (default).</li><li>First</li><li>Last</li><li>Middle</li><li>None</li></ul></p><p>See below for an example of how each setting displays.</p>|
 | ExtendedClass (Text): Optional  |Add custom style classes to the Columns UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - Adds the _myclass_ style to the Columns UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Columns UI styles being applied.</li></ul></p> |
@@ -44,7 +44,7 @@ The following are examples of how the columns are displayed on each of the devic
 
 **Entities.BreakColumns.None**
 
-![](images/Column_break_none.png)  
+![](images/Column_break_none.png)
 
 **Entities.BreakColumns.Middle**
 

@@ -5,18 +5,18 @@ When consuming a SOAP web service you can use your own .NET code to change the c
 The general workflow for implementing an advanced extensibility scenario is the following:
 
 1\. Set up an OutSystems extension
-:   Create a new extension in Integration Studio and define the actions you need. 
+:   Create a new extension in Integration Studio and define the actions you need.
 
 2\. Implement the .NET code
 :   Open Visual Studio .NET for editing the extension source code by clicking 'Edit Source Code .NET'.  
     Edit the project properties setting the project target framework to '.NET Framework 4.6.1'.  
     Add any necessary assembly references.  
-    Still in Visual Studio, implement the logic of the actions using the functionality you need from the [SOAP Extensibility API](<../../../ref/apis/soap-extensibility-api.md>). When you are done, close Visual Studio.  
+    Still in Visual Studio, implement the logic of the actions using the functionality you need from the [SOAP Extensibility API](<../../../ref/apis/soap-extensibility-api.md>). When you finish, close Visual Studio.  
     In Integration Studio, publish the extension.
 
 3\. Use the extension
 :   In Service Studio, add a dependency to the actions you need from the extension.  
-    Select your SOAP Web Service element in the element tree and create a new SOAP callback in the OnBeforeRequest property (it will be named "OnBeforeRequestAdvanced").  
+    Select your SOAP Web Service element in the element tree and create a new SOAP callback in the OnBeforeRequest property (the callback's name is "OnBeforeRequestAdvanced").  
 
     ![](<images/ss-soap-properties-beforerequest.png>)    
 
@@ -26,8 +26,7 @@ The general workflow for implementing an advanced extensibility scenario is the 
 
     ![](<images/ss-flow-add-callback.png>)
 
-
-## Example SOAP Extensibility Use Cases { #example-use-cases }
+## Example SOAP extensibility use cases { #example-use-cases }
 
 OutSystems provides guidelines on how to implement common use cases of SOAP advanced extensibility. Check the sub-topics of this page for more information.
 

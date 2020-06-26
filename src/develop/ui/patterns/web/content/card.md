@@ -5,50 +5,30 @@ summary: Card groups small pieces of information and highlights them on the scre
 
 # Card
 
-Groups information in a small block that is easily noticeable in the screen.
+You can use the Cards UI Pattern to group small pieces of information and highlight them on the screen. The information is grouped into a small block that is easily noticeable on-screen.
 
-Use Cards to group small pieces of information and highlight them on the screen. 
+![](<images/card-1.png>)
 
-**How to use**
+**How to use the Card UI Pattern**
 
-Drag the pattern to the screen and edit the content to match your requirements.
+1. In Service Studio, in the Toolbox, search for `Card`.
 
-1. Drag the Card pattern into the preview.
+    The Card widget is displayed.
 
-    ![](<images/card-image-1.png>)
+    ![](<images/card-2-ss.png>)
 
-1. Set the content you need in the placeholder.
-1. Publish and test.
+1. From the Toolbox, drag the Card widget into the Main Content area of your application's screen.
 
+    ![](<images/card-3-ss.png>)
 
-## Input Parameters
+1. Add your content to the placeholder. In this example we add some text.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Add custom style classes to this Block. | Text | _False_ | none |
-  
-## Layout and Classes
+    ![](<images/card-4-ss.png>)
 
-![](<images/card-image-2.png>)
+After following these steps and publishing the module, you can test the pattern in your app. 
 
-## Advanced Use Case
+## Properties
 
-### Change background-color
-
-1. Write the following classes in the ExtendedClass property of the card.
-    `background-yourcolor text-neutral-0 border-size-none `
-
-    ![](<images/card-image-3.png>)
-    
-    The class `text-neutral-0` is to set the text-color to white, in contrast with the new background. The `border-size-none` class is to remove the border.
-    
-1. Publish and test.
-
-Before:
-
-![](<images/card-image-4.png>)
-
-After:
-
-![](<images/card-image-5.png>)
-
+| **Property** |  **Description** |
+|---|---|
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Card UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Card UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Card UI styles being applied. </li></ul> |

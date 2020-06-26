@@ -1134,6 +1134,7 @@
         - "OutSystems UI Pattern": 
            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=4
 - develop/ui/patterns/web/structure/columns.md:
+    - ref/ui-patterns/web/columns.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx

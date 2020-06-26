@@ -1,13 +1,13 @@
 ---
 tags: runtime-traditionalweb; 
-summary: SearchBalloon lets the users search a list while showing results.
+summary: Search Balloon lets the users search a list while showing the results simultaneously.
 ---
 
-# SearchBalloon
+# Search Balloon
 
 Search Balloon Widget lets the users search the content while the results update in the results list. Use the Search Balloon to guide users by, for example, showing recommendations based on what they enter in the Search field.
 
-**How to use**
+**How to use the Search Balloon UI Pattern**
 
 Follow these steps to create a result list that automatically updates when users enter a search query.
 
@@ -55,39 +55,10 @@ Then:
    ![Search Balloon demo in a browser](images/search-balloon-demo-browser.png?width=500)
 
 
-## Input parameters
+## Properties
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Adds custom style classes to the Tabs Block. |  Text | False | none |
-| AdvancedFormat  |  Enables you to use more options than what is provided in the input parameters. Example: `{ arrow: false,   showOnInit: true }`. For more information visit: https://atomiks.github.io/tippyjs/ |  Text | False | none |
+| **Property** |  **Description** | 
+|---|---|
+|ExtendedClass (Text): Optional | Add custom style classes to the Search Balloon UI Pattern. You define your [custom style classes](../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value). </li><li>_"myclass"_ - Adds the _myclass_ style to the Search Balloon UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Search Balloon UI styles being applied.</li></ul> | 
+|AdvancedFormat (Text): Optional| Allows you to use more options than what is provided in the input parameters. <p>Example <li> `{ arrow: false,   showOnInit: true }`</li></p> For more information, see https://atomiks.github.io/tippyjs/. | 
 
-## Layout and classes
-
-![](images/search-balloon-image-2.png?width=800)
-
-## Events
-
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnHide | Event triggered once the balloon is hidden.  |  False  |
-| OnShow | Event triggered once the balloon is shown.  |  False  |
-
-## Advanced
-
-Here are some more advanced use-cases of the widget.
-
-### Show results on init
-
-1. Drag Search Balloon to the preview.
-2. On the AdvancedFormat parameter add the following line:
-`{ showOnInit: true }`.
-
-### Change animation of results
-
-1. Drag Search Balloon to the preview.
-2. On the AdvancedFormat parameter add the following line:
-`{ showOnInit: true }`.
-
-![](images/search-balloon-gif-1.gif?width=800))
-![](images/search-balloon-gif-2.gif?width=800))

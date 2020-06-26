@@ -1065,8 +1065,11 @@
                     - href: ref/ui-patterns/web/loginform.md
                     - href: ref/ui-patterns/web/navigation-bar.md
                     - href: ref/ui-patterns/web/progressbar.md
-                    - href: ref/ui-patterns/web/progresscircle.md                
+                    - href: ref/ui-patterns/web/progresscircle.md 
+                    - href: ref/ui-patterns/web/rangeslider.md
+                    - href: ref/ui-patterns/web/rangesliderinterval.md                
                     - href: ref/ui-patterns/web/responsive-table.md
+                    - href: ref/ui-patterns/web/searchballoon.md
                     - href: ref/ui-patterns/web/section-index.md
                     - href: ref/ui-patterns/web/separator.md
                     - href: ref/ui-patterns/web/sidebar.md

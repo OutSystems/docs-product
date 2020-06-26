@@ -7,11 +7,11 @@ summary: Columns split content into multiple columns with responsive capabilitie
 
 You can use the Columns UI Pattern to split content into separate columns, improving the way information is displayed on screen.
 
- ![](<images/columns-1.png>)
+![](<images/columns-1.png>)
 
 **How to use the Columns UI Pattern**
 
-1. In Service Studio, in the Toolbox, search for `Columns`. 
+1. In Service Studio, in the Toolbox, search for `Columns`.
 
     The various Column widgets are displayed.
 
@@ -21,7 +21,7 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
     ![](<images/columns-3-ss.png>)
 
-1. Add the required content to the Column widget, for example, images, forms, text. In this example, we add some images and text. 
+1. Add the required content to the Column widget, for example, images, forms, text. In this example, we add some images and text.
 
     ![](<images/columns-4-ss.png>)
 

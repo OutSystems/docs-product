@@ -45,7 +45,7 @@ The following example shows how you can use the Swipe Events UI pattern to incre
 
     ![](images/swipeevents-8-ss.png)
 
-1. Drag an Assign onto the client action, and enter the relevant assignments. In this example, so that the number decreases by 1, we set the Variable to **Number**, and enter ``Number - 1`` for the **Value**.
+1. Assign the relevant logic you want the swipe left action to perform. In this example, we want the number to decrease by 1 every time the user swipes left. To do this, we drag an Assign onto the client action, set the **Variable** to **Number**, and enter ``Number - 1`` for the **Value**.
 
     ![](images/swipeevents-9-ss.png)
 

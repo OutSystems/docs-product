@@ -47,7 +47,7 @@ summary: Advanced use cases for the Card Background UI Pattern.
 
 1. Publish and test.
 
-    ![](<images/cardbackground-image-10-ss.png>)
+    ![](<images/cardbackground-10-ss.png>)
 
 ## Notes
 

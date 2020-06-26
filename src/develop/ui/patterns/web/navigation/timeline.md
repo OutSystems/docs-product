@@ -5,59 +5,41 @@ summary: Timeline indicates related events in chronological order.
 
 # Timeline
 
-Indicates related events in chronological order.
+You can use the Timeline UI Pattern to show related events in a chronological order, such as a user’s upcoming, current, and past activities.
 
-Use the Timeline to show related events in chronological order such as an end user’s upcoming, current and past activities.
+![](<images/timeline-1.png>)
 
-**How to use**
+**How to use the Timeline UI Pattern**
 
-1. Drag the Timeline pattern into the preview.
+1. In Service Studio, in the Toolbox, search for `Timeline`.
 
-    ![](images/timeline-image-2.png?width=500)
+    The Timeline widget is displayed.
 
-1. Set the content in the placeholders. By default, the pattern comes with a circular icon in the Icon placeholder. To change it, drag an icon widget to this placeholder.
+    ![](<images/timeline-2-ss.png>)
 
-    ![](<images/timeline-image-3.png>)
+1. From the Toolbox, drag the Timeline widget onto your application’s screen.
 
-1. Drag as many TimelineItems as required.
+    ![](<images/timeline-3-ss.png>)
 
-## Input Parameters
+    By default, the Timeline widget contains a Timeline Item widget which contains an Icon, Date, and Content placeholder. You can add as many Timeline Items as required.
+
+1. Set the required content in the Icon, Date, and Content placeholders. In this example we add some text.
+
+    ![](<images/timeline-4-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app.
+
+## Properties
 
 **Timeline**
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
+| **Property** |  **Description** |
+|---|---|
+| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Timeline UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Timeline UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Timeline UI styles being applied.</li></ul></p> |
 
 **Timeline Item**
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Color  |  Background color of the icon. |  Color Identifier | False | Entities.Color.Primary |
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | False | none |
-
-## Layout and Classes
-
-![](images/timeline-image-1.png?width=750)
-
-## Advanced Use Case
-
-### Use Timeline with ListRecords
-
-1. Drag the Timeline Pattern into the preview.
-1. In the Content placeholder, drag a ListRecords widget.
-1. In the ListRecords widget, drag a TimelineItem.
-1. In the TimelineItem, use expressions to display the database content you need.
-1. To disable the vertical line on the last TimelineItem, write the following CSS code in the application Theme:
-
-    ```css
-    .ListRecords .timeline-item:last-of-type .timeline-item-separator {
-        display: none;
-    }
-    ```
-1. In the ListRecords Widget, set Line Separator to None to avoid additional margin between elements.
-
-1. Publish and test.
-
-    ![](<images/timeline-image-4.png>)
-
+| **Property** |  **Description** |
+|---|---|
+| Color (Color Identifier): Optional  | Icon background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - The icon background color is the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The icon background color is red.</li></ul></p> |
+| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Timeline Item UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Timeline Item UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Timeline Item UI styles being applied.</li></ul></p> |

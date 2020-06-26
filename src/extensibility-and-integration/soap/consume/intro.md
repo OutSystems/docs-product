@@ -9,8 +9,8 @@ OutSystems provides support for consuming SOAP Web Services with WSDL 1.1 and SO
 
 <div class="info" markdown="1">
 
-**Note:** The SOAP implementation available in previous versions, supporting up to SOAP 1.1, is now **deprecated**. This implementation is only used in modules that were upgraded to OutSystems 11; any new consumed SOAP web services in OutSystems 11 will use the new implementation.
+**Note:** The SOAP implementation available in previous versions, supporting up to SOAP 1.1, is now **deprecated**. This implementation is only used in modules upgraded to OutSystems 11; any new consumed SOAP web services in OutSystems 11 use the new implementation.
 
-For documentation on this previous SOAP implementation check [Consume a SOAP Web Service](<https://success.outsystems.com/Documentation/10/Extensibility_and_Integration/SOAP/Consume_a_SOAP_Web_Service>) topic in OutSystems 10 documentation. 
+For documentation on this previous SOAP implementation check [Consume a SOAP Web Service](<https://success.outsystems.com/Documentation/10/Extensibility_and_Integration/SOAP/Consume_a_SOAP_Web_Service>) topic in OutSystems 10 documentation.
 
 </div>

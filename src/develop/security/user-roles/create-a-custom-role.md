@@ -9,11 +9,15 @@ You can restrict or allow end users access to specific screens and operations of
 
 To create a custom Role, do the following:
 
-1. Go to the **Logic** tab. 
-1. Right-click the **Roles** folder and select the **Add Role** option. 
-1. Set the Name of your Role and the remaining information. 
+1. Go to the **Logic** tab.
+1. Right-click the **Roles** folder and select the **Add Role** option.
+1. Set the Name of your Role and the remaining information.
 
-Once a new Role is created, you can assign it to end users through the **Users** application or you can create logic in your application to manage the access.
+![Roles example](images/role-example-ss.png)
+
+Once you create a new Role, you can assign it to end users through the **Users** application or you can create logic in your application to manage the access.
+
+![Grant/revoke role logic](images/roles-grant-revoke-flows-ss.png)
 
 ## Use the Role in your Application's Logic
 
@@ -41,7 +45,7 @@ Role Actions are available in the **Logic** tab, within the **Roles** folder, un
 
 To check end user Roles in your expressions, OutSystems provides the following built-in function:
 
-* `Check<role_name>Role` 
+* `Check<role_name>Role`
 
 This function is available in the Scope Tree of the Expression Editor, under the **Roles** folder. It's only applicable to **active users**.
 

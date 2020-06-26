@@ -5,85 +5,57 @@ summary: Tabs separate content into flat structure sections.
 
 # Tabs
 
-Use this pattern to display large sets of information which can be split into different areas, while always a click away. The headers can have other widgets, like counters, badges or icons.
+You can use the Tabs UI Pattern to display large sets of information, which can be split into different areas, while always remaining a click away.
 
-![](images/tabs-gif1.gif?width=650)
+![](images/tabs-1.gif?width=650)
 
-Use the Tabs pattern when you need to separate content into sections with a flat structure. However, avoid using it in large forms.
+**How to use the Tabs UI Pattern**
 
-**How to use**
+1. In Service Studio, in the Toolbox, search for `Tabs`.
 
-Fill in the placeholders Header and Content with the Blocks TabsHeaderItem and TabsContentItem, respectively. Use any number of these as you need. In the parameters, specify the initial active tab, along with the Tabs orientation and justification. 
+    The Tabs widget is displayed.
 
-1. Drag Tabs pattern into the preview.
+    ![](images/tabs-2-ss.png)
 
-    ![](images/tabs-image1.png?width=750)
+1. From the Toolbox, drag the Tabs widget into the Main Content area of your application's screen.
 
-1. Set your content and publish.
+    ![](images/tabs-3-ss.png)
+
+    By default, the Tabs widget contains 3 Header Items (tab titles) and 3 Content Items (tab content). You can add or delete as many as required.
+  
+1. Add the relevant content to each of the Header Item and Content Item placeholders. In this example, we add text. You can add forms, images, labels, etc.
+
+1. On the **Properties** tab, you can customize the Tabs look and feel by setting any of the optional properties, for example, which tab is displayed as the active tab when the page loads and whether the tabs are displayed vertically or horizontally.
+
+    ![](images/tabs-4-ss.png)
+
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Demo
 
-<iframe width="750" height="500" src="https://www.youtube.com/embed/97uPVx-Q1lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="750" height="500" src="https://www.youtube.com/embed/97uPVx-Q1lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen">
+</iframe>
 
-## Input parameters
+## Properties
 
 ### Tabs
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ActiveTab  |  Set the Active Tab |  Text | False | none |
-| Orientation  |  If Vertical, header is displayed side by side to the content; if Horizontal, header is displayed above content. |  Orientation Identifier | False | Entities.Orientation.Horizontal |
-| IsJustified  |  The Tabs Header items are evenly distributed in the line, the first item is on the start and last item on the end. |  Boolean | False | 1 |
-| IsRight  |  Aligns the Tabs Header items to right. Only active if the Orientation parameter is set to Vertical. |  Boolean | False | False |
-| ExtendedClass  |  Adds custom style classes to the Tabs Block. |  Text | False | none |
+| **Property** |  **Description** |
+|---|---|
+| ActiveTab (Text): Optional  |  Defines which tab is active when the page loads. <p>Examples</p><ul><li>_Blank_ - The first tab is the active tab.</li><li>_"tab-two"_ - The second tab is the active tab. </li></ul> | 
+| Orientation (Orientation Identifier): Optional  |  If Vertical, the tabs are displayed vertically. If Horizontal, the tabs are displayed horizontally. This is the default.|
+| IsJustified (Boolean): Optional  | If True, the Tabs are evenly distributed in the space available. If False, the Tabs are left aligned. This is the default.|
+| IsRight (Boolean): Optional  | If True, the Tabs are displayed to the right of the Tab content. If False, the Tabs are displayed to the left of the Tab content. This is the default. **Note**: This setting is only applicable if the **Orientation** property is set to **Vertical**. |
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Tabs UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Tabs UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Tabs UI styles being applied.</li></ul></p> |
 
-### TabsHeaderItem
+### Tabs Header Item
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| DataTab  |  Sets the name to connect to the TabsContentItem. Should be the same as the paired HeaderItem and unique |  Text | True | none |
+| **Property** |  **Description** |
+|---|---|
+| DataTab (Text): Mandatory  |  Sets the name to connect to the Tabs Content Item. Should be the same as the paired Header Item and unique. |  
 
-### TabsContentItem
+### Tabs Content Item
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| DataTab  |  Value that connects with the TabsHeaderItem. Should be the same as the paired ContentItem and unique. |  Text | True | none |
-
-## Layout and classes
-
-![](images/tabs-image2.png?width=750)
-
-## CSS selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
-| Active Header |  .tabs-header-item.active |  It's active header (represented as the one with a colored underline)  |
-| Active Tab  |  .tabs-content-item.active  |   It's active content  |
-  
-
-## Advanced
-
-Here are some more advanced use-cases of the widget.
-
-### Change the active header style
-
-Write the following CSS in the CSS editor and change the `yourcolor` value:
-
-`.tabs-header-item.active {
-    border-bottom: var( --border-size-m) solid yourcolor;
-}`
-
-Or using CSS variables: `var(--color-yourcolor)`
-example:
-
-`.tabs-header-item.active {
-background: border-bottom: var( --border-size-m) solid var(--color-red)
-}`
-
-### Add a background color to the tabs
-
-1. Enclose the tabs with a container.
-2. Add the classes `background-blue-lighter text-neutral-0`, this adds a light blue background and force the text to be white.
-3. Publish the application.
-
-![](images/tabs-image3.png?width=750)
+| **Property** |  **Description** |  
+|---|---|
+| DataTab (Text): Mandatory  |  Value that connects with the Tabs Header Item. Should be the same as the paired Content Item and unique. |

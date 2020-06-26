@@ -4,19 +4,19 @@ summary: Platform tab showing specific configuration settings for the SQL Server
 
 # Platform Tab in SQL Server / Azure SQL
 
-In the Database tab, once you set the 'Database Provider' property to 'SQL Server / Azure SQL', the following configurations become available.
+In the **Database** tab, once you set the **Database Provider** property to `SQL Server / Azure SQL`, the following configurations become available.
 
-## Database Section
+## Database section
 
 This section contains general configurations for the SQL Server / Azure SQL database.
 
 Configuration | Description | Default value  
 --------------|-------------|---------------  
 Server | The hostname or IP address to the database server. | `localhost`
-Database | The database catalog to be used by OutSystems. | `outsystems`  
-Authentication | Authentication protocol to be used. | `Database Authentication`  
+Database | The database catalog used by OutSystems. | `outsystems`  
+Authentication | Authentication protocol to use. | `Database Authentication`  
 
-For advanced settings, click on the Advanced Settings link.
+For advanced settings, click on the **Advanced Settings** link.
 
 <table markdown="1">
 <thead>
@@ -60,28 +60,28 @@ For advanced settings, click on the Advanced Settings link.
 </tbody>
 </table>
   
-## Administrator Section
+## Administrator section
 
-The 'Administrator' section allows you to configure the database user that manages the platform. This user owns the OutSystems metamodel tables, views, and indexes.
+The Administrator section allows you to configure the database user that manages the platform. This user owns the OutSystems metamodel tables, views, and indexes.
 
 Configuration | Description | Default value  
 --------------|-------------|--------------  
-User | Name of the user that is the owner of OutSystems metamodel tables. | `OSADMIN`  
-Password | Password for the user. |   
+User | Name of the user that's the owner of OutSystems metamodel tables. | `OSADMIN`  
+Password | Password for the user. |
   
-## Runtime Section
+## Runtime section
 
-The 'Runtime' section allows you to configure the database user used by the applications at runtime. This user owns the tables created by developers in the development environment.
+The Runtime section allows you to configure the database user used by the applications at runtime. This user owns the tables created by developers in the development environment.
 
 Configuration | Description | Default value  
 --------------|-------------|--------------  
-User | Name of the user that is the owner of tables created in the development environment. | `OSRUNTIME`
-Password | Password for the user. | 
+User | Name of the user that's the owner of tables created in the development environment. | `OSRUNTIME`
+Password | Password for the user. |
 
-## Create/Upgrade Database Button
+## Create/Upgrade Database button
 
-To create all the database objects (tables, indexes, views, etc) the platform requires, click 'Create/Upgrade Database'.
+To create all the database objects (tables, indexes, views, etc) the platform requires, click **Create/Upgrade Database**.
 
-This button creates all necessary database objects (tables, indexes, views, stored procedures, etc) to run the OutSystems Platform Server version you are installing.
+This button creates all necessary database objects (tables, indexes, views, stored procedures, etc) to run the Platform Server version you're installing.
 
-To install or upgrade OutSystems, you should follow the installation checklist.
+To install or upgrade OutSystems, follow the installation checklist.

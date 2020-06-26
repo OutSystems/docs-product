@@ -20,4 +20,4 @@ summary: Advanced use cases for the Bullets UI Pattern.
 1. Inside the Bullet Item pattern, use expressions to display the content.
 1. Publish and test.
 
-    ![](<images/bullets-3-ss.png>)
+![](<images/bullets-3-ss.png>)

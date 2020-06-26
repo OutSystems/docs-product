@@ -1134,9 +1134,10 @@
         - "OutSystems UI Pattern": 
            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=4
 - develop/ui/patterns/web/structure/columns.md:
+    - ref/ui-patterns/web/columns.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx
 - develop/ui/patterns/web/structure/gallery.md:
     - ref/ui-patterns/web/gallery.md
     - external:
@@ -1263,6 +1264,16 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSliderInterval.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=61
+- develop/ui/patterns/mobile/touchevents.md:
+    - ref/ui-patterns/mobile/touchevents.md
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=78
+- develop/ui/patterns/mobile/swipeevents.md:
+    - ref/ui-patterns/mobile/swipeevents.md
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=70
 # Link to Training
 - extensibility-and-integration/connect-external-db.md:
     - external:

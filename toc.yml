@@ -942,7 +942,9 @@
                 - href: ref/ui-patterns/mobile/rangesliderinterval.md
                 - href: ref/ui-patterns/mobile/splitscreen.md
                 - href: ref/ui-patterns/mobile/stackedcards.md
+                - href: ref/ui-patterns/mobile/swipeevents.md
                 - href: ref/ui-patterns/mobile/tabs-mobile.md
+                - href: ref/ui-patterns/mobile/touchevents.md
             # Designing the Layout
             - href: ref/interfaces/designing-the-layout.md
             - topics:
@@ -1052,6 +1054,7 @@
                     - href: ref/ui-patterns/web/buttongroup.md
                     - href: ref/ui-patterns/web/carousel.md
                     - href: ref/ui-patterns/web/character-count.md
+                    - href: ref/ui-patterns/web/columns.md
                     - href: ref/ui-patterns/web/counter.md
                     - href: ref/ui-patterns/web/datepicker.md
                     - href: ref/ui-patterns/web/dropdown.md

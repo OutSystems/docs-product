@@ -60,4 +60,4 @@ There might be conflicts with any pattern with touch events (unless the code is 
 
 The following sample uses the Touch Events pattern:
 
-![](images/TouchEvents-Sample-1.PNG)
+![](images/TouchEvents-Sample-1.png)

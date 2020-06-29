@@ -4,10 +4,7 @@ summary: Search allows the user to find pieces of content without the use of nav
 ---
 
 # Search 
-
-Allow the user to find pieces of content without the use of navigation.
-
-Use the Search so that end users can easily find pieces of content by entering queries. Unlike navigation, knowledge of the content's location isn't required. 
+You can use the Search UI Pattern to provide users with a search field.
 
 **How to use the Search UI Pattern**
 
@@ -21,11 +18,19 @@ Use the Search so that end users can easily find pieces of content by entering q
 
     ![](<images/search-2-ss.png>)
 
-1. Set a Local Variable for the input of type Text.
+    By default, the Search widget contains Icon, Input, and Actions placeholders.
 
-    ![](<images/search-image-2.png>)
+1. Create a local variable by right-clicking on your screen name and selecting **Add Local Variable**. 
 
-1. Publish and test.
+    ![](<images/search-3-ss.png>)
+
+    
+1. Enter a name for the variable. In this example, we enter ``SearchText``.
+
+   ![](images/search-4-ss.png)
+
+    
+After following these steps and publishing the module, you can test the pattern in your app. 
 
 
 ## Properties

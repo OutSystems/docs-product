@@ -1,19 +1,19 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ToggleButton prompts end users to choose between two states.
+summary: The Toggle Button UI Pattern prompts end users to choose between two states.
 ---
 
-# ToggleButton
+# Toggle Button
 
 Prompts end users to choose between two states.
 
 Use the Toggle Button and prompt end users to choose between two incompatible states, selecting a preference. There is always a default value as toggles are digital on/off switches. 
 
-**How to use**
+**How to use the Toggle Button UI Pattern**
 
 After placing the Block on your Web Screen, drag a checkbox inside the placeholder and the pattern will automatically use it.
 
-1. Drag the ToggleButton pattern into the preview.
+1. Drag the Toggle Button pattern into the preview.
 
 1. Set a variable of type Boolean to the checkbox.
 

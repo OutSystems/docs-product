@@ -15,47 +15,24 @@ After placing the Block on your Web Screen, drag a checkbox inside the placehold
 
 1. Drag the Toggle Button pattern into the preview.
 
+    ![](<images/togglebutton-6-ss.png>)
+
+1. Drag the widget onto the scren.
+
+    ![](<images/togglebutton-7-ss.png>)
+
 1. Set a variable of type Boolean to the checkbox.
 
-    ![](<images/togglebutton-image-1.png>)
+    ![](<images/togglebutton-1-ss.png>)
 
 1. Publish and test.
 
-    ![](<images/togglebutton-image-2.png>)
+    ![](<images/togglebutton-2-ss.png>)
 
-## Input Parameters
+## Properties
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | None |
-
-## Layout and Classes
-
-![](<images/togglebutton-image-3.png>)
-
-## CSS Selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
-| .toggle-button | .toggle-button-checked | Is the Class Selector to style the Toggle Button when the Boolean Variable is true |
-| .toggle-button | .toggle-button-disabled | Is the Class Selector to style the Toggle Button when is disabled |
-| .toggle-button | .toggle-button:after | Is the Pseudo Element Selector to style the circle of Toggle Button |
+| **Property** |  **Description** |
+|---|---|
+|ExtendedClass (Text): Optional | Add custom style classes to the Toggle Button UI Pattern. You define your [custom style classes](../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value). </li><li>_"myclass"_ - Adds the _myclass_ style to the Toggle Button UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Toggle Button UI styles being applied.</li></ul> |
 
 
-## Advanced Use Case
-
-### Disable the ToggleButton Pattern
-
-1. Drag the ToggleButton pattern into the preview.
-
-1. Set a variable of type boolean to the checkbox.
-
-    ![](<images/togglebutton-image-1.png>)
-
-1. In the Checkbox, set the parameter Enabled to False.
-
-    ![](<images/togglebutton-image-4.png>)
-
-1. Publish and test.
-
-    ![](<images/togglebutton-image-5.png>)

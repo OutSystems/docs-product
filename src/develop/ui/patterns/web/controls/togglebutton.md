@@ -5,29 +5,35 @@ summary: The Toggle Button UI Pattern prompts end users to choose between two st
 
 # Toggle Button
 
-Prompts end users to choose between two states.
+You can use the Toggle Button UI Pattern to provide users with a stand-alone control that allows them to choose between two states, for example, a Yes/No value.
 
-Use the Toggle Button and prompt end users to choose between two incompatible states, selecting a preference. There is always a default value as toggles are digital on/off switches. 
+![](<images/togglebutton-2-ss.png>)
 
 **How to use the Toggle Button UI Pattern**
 
-After placing the Block on your Web Screen, drag a checkbox inside the placeholder and the pattern will automatically use it.
+1. In Service Studio, in the Toolbox, search for `Toggle Button`. 
 
-1. Drag the Toggle Button pattern into the preview.
+    The Toggle Button widget is displayed.
 
     ![](<images/togglebutton-6-ss.png>)
 
-1. Drag the widget onto the scren.
+1. From the Toolbox, drag the Toggle Button widget into the Main Content area of your application's screen.
 
     ![](<images/togglebutton-7-ss.png>)
 
-1. Set a variable of type Boolean to the checkbox.
+1. Right-click your screen name and select **Add Local Variable**. 
 
-    ![](<images/togglebutton-1-ss.png>)
+    ![](<images/togglebutton-8-ss.png>)
 
-1. Publish and test.
+1. Enter a name and select a data type. In this example, we enter the name ``ToggleValue`` and set the data type to **Boolean**.
 
-    ![](<images/togglebutton-2-ss.png>)
+    ![](<images/togglebutton-9-ss.png>)
+
+1. Select the Checkbox widget, and on the **Properties** tab, select the local variable you created. 
+
+    ![](<images/togglebutton-10-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app. 
 
 ## Properties
 

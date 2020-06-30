@@ -996,9 +996,10 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/TimePicker.aspx
 - develop/ui/patterns/web/controls/togglebutton.md:
+    - ref/ui-patterns/web/togglebutton.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ToggleButton.aspx
 - develop/ui/patterns/web/controls/video.md:
     - ref/ui-patterns/web/video.md
     - external:

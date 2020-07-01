@@ -1,152 +1,76 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary: Adds swipeable cards that can be dragged in multiple directions triggering events, such as deny, approve, and archive.
 ---
 
-# Stacked  Cards Pattern
+# Stacked Cards
 
-The Stacked Cards pattern includes multiple items. For dynamic content, use a List directly inside the Content placeholder. The content displayed when swiping left, right and top is dynamic and must be set by the user. Use this pattern to create a message board or to display multiple images.
+You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged in multiple directions triggering events, such as deny, approve, and archive. This pattern is ideal when you want to individually scan multiple cards.
 
-Use this pattern when you want to display your elements dynamically in phone or tablet apps. It’s fully compatible with all templates and screens.
+   ![](images/stackedcards-1.png)
 
-Here's the preview in Service Studio:
+## How to use the Stacked Cards Pattern
 
-![](images/Stacked_Cards_preview.png)
+1. In Service Studio, in the Toolbox, search for  `Stacked Cards`. 
 
-## How to Use the Stacked Cards Pattern
+    The Stacked Cards widget is displayed.
 
-1\. Drag the Stacked Cards pattern into your screen.
+    ![](images/stackedcards-2-ss.png)
 
-![](images/Stacked_drag_pattern.png)
+1. From the Toolbox, drag the Swipe Events widget into the Main Content area of your application's screen.
 
-2\. Put your content into the Content placeholder.
+    ![](images/stackedcards-3-ss.png)
 
-![](images/Stacked_interaction.png)
+    By default, the Stacked Cards widget contains a List, Overlay Top, Overlay Right, and Overlay Right placeholders. 
 
-3\. All available options have default parameters, but you can change them.
+1. Add content to the List placeholder. In this example, from the **Data** tab, we drag a list of Employees into the List placeholder.
 
-![](images/Stacked_default_parameters.png)
+    ![](images/stackedcards-4-ss.png)
 
-4.To use the overlays ( **UseOverlays** is _True_ by default), place content inside the respective placeholders ( **OverlayTop** , **OverlayRight** , **OverlayLeft**).
+    The **GetEmployees** aggregate is automatically created.
 
-![](images/Stacked_overlay.png)
+      ![](images/stackedcards-5-ss.png)
 
-a. If the option " **Use Overlays** " is set to _True_ and you don’t place content in the placeholders, they will not be displayed.  
-b. If you change the option “ **Use Overlays** ” to _False_ and add content to the placeholders, they will not be displayed.
+1. From the Toolbox, drag the Icon widget into the OverlayTop placeholder, and from the Pick an Icon editor, choose an icon. Click **Ok**.
 
-5\. Publish your mobile app.
+      ![](images/stackedcards-6-ss.png)
 
-### Adding Styles to Elements
+1. Repeat step 4 for the OverlayRight and OverlayLeft placeholders. 
 
-This example shows you how to add styles to elements in the Pattern:
+      ![](images/stackedcards-7-ss.png)
 
-    
-    
-    .stackedcards-bottom, .stackedcards-top, .stackedcards-none {
-         border-bottom: 1px solid #ebebeb; // Add a border-bottom to all elements
-        background-color: #000; // Set a background-color to all elements
-    }
-    
+1. To create a swipe action for the OverlayLeft placeholder, select the pattern, and from the OnLeftSwipe **Handler** drop-down, select **New Client Action**.
 
-### Setting the Full Height of Elements
+    ![](images/stackedcards-8-ss.png)
 
-To set the full height of your elements in the Pattern so they fill the entire screen, use this CSS code:
+1. From the Toolbox, drag a **Run Server Action** onto the client action, and from the **Select Action** editor, navigate to the action you want the swipe left action to perform. In this example, we use the **DeleteEmployee** action. 
 
-    
-    
-    .stackedcards-container,
-    .stackedcards {
-        height: 100vh;
-        -servicestudio-height: auto;
-    }
-    
+    ![](images/stackedcards-9-ss.png)
 
-### Defining Specific Heights for All Elements
+1. From the **Id** drop-down, select the action Id. In this example, the Id is the currently selected employee. This means, that when the user swipes left, the currently selected user is deleted form the list of employees.  
 
-The height of the first element defines the height of each element in the Pattern. To set a specific height, use this CSS code:
+   ![](images/stackedcards-10-ss.png)
 
-    
-    
-    .stackedcards-container {
-        height: 500px; // set your height
-    }
-    
+1. Repeat step 7 for the OverlayTop (swipe up) and OverLayRight (swipe right) placeholders.
 
-### Applying Different Background Colors to Overlays
+1. From the **Properties** tab, you can change the Range Slider's look and feel by setting the (optional) properties.
 
-The overlays are enabled by default and have default colors in the Pattern. If you don’t want to use them, set “ **UseOverlays** ” to _False_ .
+   ![](images/stackedcards-11-ss.png)
 
-1\. If the option " **UseOverlays** " is set to _True_ and you don’t place content in the placeholders, they will not be displayed.
+After following these steps and publishing the module, you can test the pattern in your app.
 
-2\. If you change the option “ **UseOverlays** ” to _False_ and add content to the placeholders, they will not be displayed.
 
-![](images/Stacked_background.png)
 
-You can set other colors either by adding a container to **OverlayTop** , **OverlayRight** or **OverlayLeft** , and set your class. Or by using the following CSS code:
+## Properties
 
-    
-    
-    .stackedcards-overlay.top {
-         background-color: #2980b9; //set your background-color
-    }
-    .stackedcards-overlay.right {
-        background-color: #27ae60; //set your background-color
-    }
-    .stackedcards-overlay.left {
-        background-color: #c0392b; //set your background-color
-    }
-    
-
-### Creating a Button to Execute Swipes
-
-Create each action and drag the [public actions](<public-actions.md>) (SwipeLeft, SwipeRight or SwipeTop). In the Stacked Cards block, associate the handler to swipe events.  
-![](images/Stacked_swipe.png)
-
-### Creating a ListRemove Button
-
-Create an “OnListRemove” action and drag the ListRemoveNode and the UpdateStackedCards in the [public actions](<public-actions.md>) of the block.
-
-## Input Parameters
-
-**Input Parameters** |  **Description** |  **Default Value**  
+**Property** |  **Description** |  
 ---|---|---  
-![](images/input.png) StackedOptions  |  Change stacked cards view from bottom, top or none.  |  View from bottom  
-![](images/input.png) Rotate  |  Activate the elements’ rotation for each move on stacked cards.  |  _True_  
-![](images/input.png) Items  |  Number of visible elements when the stacked options are bottom or top.  |  5  
-![](images/input.png) ElementsMargin  |  Define the distance of each element when the stacked options are bottom or top.  |  5  
-![](images/input.png) UseOverlays  |  Enable or disable the overlays for swipe elements.  |  _True_  
+StackedOptions (StackedCardsPosition Identifier): Optional |  Change stacked cards view from bottom, top, or none.  <p>Examples <ul><li>_Entities.StackedCardsPosition.Bottom_ - The stacked cards are positioned on the bottom. This is the default. </li><li>_Entities.StackedCardsPosition.Top_ - The stacked cards are positioned on top. </li></ul></p> | 
+Rotate (Boolean): Optional| If True, the rotation for each move on the stacked cards is activated. This is the default. If False, each move is not activated.  |  
+Items (Integer): Optional |  Number of visible elements when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p>  | 
+ElementsMargin |  Define the distance between each element when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p> | 
+UseOverlays (Boolean): Optional | If True, overlays for swipe elements are enabled. This is the default. If False, the overlays are disabled.
   
-## Events
-
-**Event Name** |  **Description** |  **Mandatory**  
----|---|---  
-![](images/Event.png) OnItemChange  |  Return the active card's position.  |  _False_  
-![](images/Event.png) OnLeftSwipe  |  Triggered when swiping left.  |  _False_  
-![](images/Event.png) OnRightSwipe  |  Triggered when swiping right.  |  _False_  
-![](images/Event.png) OnTopSwipe  |  Triggered when swiping top.  |  _False_  
-  
-## Layout
-
-![](images/Stacked_layout.png)
-
-## CSS Selectors
-
-**Element** |  **CSS Class** |  **Description**  
----|---|---  
-![](images/css_selector.png) Stacked Cards Wrapper  |  .stackedcards  |  Container that wraps all Stacked cards elements.  
-![](images/css_selector.png) Selected Active Element  |  .stackedcards-active  |  Represents the currently active element.  
-![](images/css_selector.png) Overlay Top  |  .stackedcards-overlay top  |  Represents the overlay top with the content placed.  
-![](images/css_selector.png) Overlay Right  |  .stackedcards-overlay right  |  Represents the overlay right with the content placed.  
-![](images/css_selector.png) Overlay Left  |  .stackedcards-overlay left  |  Represents the overlay left with the content placed.  
-  
-## Compatibility with Other Patterns
+## Compatibility with other patterns
 
 Avoid using the Stacked Cards Pattern inside patterns with swipe events / touch events, like [Tabs](<tabs.md>) or [Carousel](<carousel.md>).
-
-## Samples
-
-The following samples use the Stacked Cards pattern:
-
-![](images/StackedCards-Sample-1.PNG)
-
-![](images/StackedCards-Sample-2.PNG)

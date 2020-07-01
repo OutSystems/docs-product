@@ -1,58 +1,37 @@
 ---
 tags: runtime-traditionalweb; 
-summary: BlankSlate informs end users when they start using the application, complete a task or when there is no data available for display.
+summary: Blank Slate informs end users when they start using the application, complete a task or when there is no data available for display.
 ---
 
-# BlankSlate
+# Blank Slate
 
-Content on the screen to show end users that there is no data available for display.
+You can use the Blank State UI Pattern to inform end users, for example, to complete a task or when there is no data available for display etc.
 
-Use BlankSlate to inform end users when they start using the application, complete a task or when there is no data available for display.
+![](<images/blankslate-1-ss.png>)
 
-**How to use**
+**How to use the Blank Slate UI Pattern**
 
-Drag the pattern to the screen and edit the content as per your requirements.
+1. In Service Studio, in the Toolbox, search for `Blank Slate`.
 
-1. Drag the BlankSlate pattern into the preview.
-1. Set the content you need in the placeholder.
-1. Publish and test.
+    The Blank Slate widget is displayed.
 
-![](<images/blankslate-image-1.png>)
+    ![](<images/blankslate-2-ss.png>)
 
-## Input Parameters
+1. From the Toolbox, drag the Blank Slate widget into the Main Content area of your application's screen.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Position | Set the position around the widget element. | PositionExtended Identifier | False | Entities.PositionExtended.Center |
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | none |
+    ![](<images/blankslate-3-ss.png>)
 
-## Layout and Classes
+    By default, the Blank Slate widget contains icon and text placeholders. 
 
-![](<images/blankslate-image-2.png>)
+1. Add your content to the placeholders. In this example we change the icon to a camera icon by selecting Icon placeholder, and on the **Properties** tab, from the **Name** drop-down, selecting the camera icon. We also enter new text in the Text placeholder. 
 
-## CSS Selectors
+    ![](<images/blankslate-4-ss.png>)
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
-| .blank-slate | .bottom-center | Vertically aligns the content to Bottom and Horizontally align it to Center. |
-| .blank-slate | .bottom-left |  Vertically aligns the content to Bottom and Horizontally align it to Left. |
-| .blank-slate | .bottom-right |  Vertically aligns the content to Bottom and Horizontally align it to Right. |
-| .blank-slate | .center |  Vertically aligns the content to Center and Horizontally align it to Center. |
-| .blank-slate | .center-left |  Vertically aligns the content to Center and Horizontally align it to Left. |
-| .blank-slate | .center-right |  Vertically aligns the content to Center and Horizontally align it to Right. |
-| .blank-slate | .top-center | Vertically aligns the content to Top and Horizontally align it to Center. |
-| .blank-slate | .top-left |  Vertically aligns the content to Top and Horizontally align it to Left. |
-| .blank-slate | .top-right |  Vertically aligns the content to Top and Horizontally align it to Right. |
+After following these steps and publishing the module, you can test the pattern in your app. 
 
-## Advanced Use Case
+## Properties
 
-### Show the BlankSlate Pattern when the list is empty
-
-1. Drag the If Widget and enter the Empty runtime property in the condition.
-
-    ![](<images/blankslate-image-3.png>)
-
-1. Inside the True branch of the condition, use the BlankSlate Pattern.
-1. Inside the False branch of the condition, use your list.
-
-    ![](<images/blankslate-image-4.png>)
+| **Property** |  **Description** |
+|---|---|
+| Position (PositionExtended Identifier): Optional| Sets the widget position. <p>Examples</p><ul><li>_Blank_ - The widget displays in the center of the screen. This is the default.</li><li>_Entities.PositionExtended.BottomRight_ - The widget displays on the bottom right of the screen. </li></ul> |  
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Blank Slate UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Blank Slate UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Blank Slate UI styles being applied. </li></ul> |

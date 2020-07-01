@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><a href="#EmailAddressesConcatenate">EmailAddressesConcatenate</a>(&#8203;Text, Text)</td>
-<td>Returns the concatenation of email addresses, or list of email addresses, into a a new list of email addresses separated by a comma (','). The resulting list may then be used in the Send Email element (action flows) or in the Send Email activity (process flows).</td>
+<td>Returns the concatenation of email addresses, or list of email addresses, into a new list of email addresses separated by a comma (','). The resulting list may then be used in the Send Email element (action flows) or in the Send Email activity (process flows).</td>
 </tr>
 <tr>
 <td><a href="#EmailAddressValidate">EmailAddressValidate</a>(&#8203;Text)</td>
@@ -61,7 +61,7 @@ EmailAddressCreate("Mary Jones", "mary.jones​@​company.com") = "Mary Jones" 
 
 ## EmailAddressesConcatenate { #EmailAddressesConcatenate }
 
-Returns the concatenation of email addresses, or list of email addresses, into a a new list of email addresses separated by a comma (','). The resulting list may then be used in the Send Email element (action flows) or in the Send Email activity (process flows).  
+Returns the concatenation of email addresses, or list of email addresses, into a new list of email addresses separated by a comma (','). The resulting list may then be used in the Send Email element (action flows) or in the Send Email activity (process flows).  
 
 Available in:  
 

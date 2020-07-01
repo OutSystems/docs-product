@@ -30,7 +30,7 @@ Follow these instructions to create a QnA Maker service which you need for the F
 
     </div>
 
-    * **Name**. Name and custom domain for the service. 
+    * **Name**. Name and custom domain for the service.
     * **Subscription**. The Azure subscription you want to use for the bot.
     * **Pricing tier**. The pricing tier for the service.
     * **Resource group**. The resource group to which you want to add the bot.
@@ -39,13 +39,11 @@ Follow these instructions to create a QnA Maker service which you need for the F
     * **App name**. The name of your bot service that is part of the URL to reach the service.
     * **Website location**. The location where you deploy the service.
   
-    <br/>
     Optional settings:
 
     * **App insights**. If you want to track your app performance and collect telemetry information, activate this option.
   
     ![Azure portal search](images/azure-qna-maker-service-new.png?width=500)
-
 
 4. Click **Create**. After validation and deployment, you are redirected to the Azure home page.
 
@@ -56,7 +54,6 @@ Follow these instructions to create a QnA Maker service which you need for the F
     * If you haven't created a knowledge base: [create a new knowledge base](guide-azure-kb.md#create-kb)
     * If you already have a knowledge base: [publish the knowledge base and create a chatbot service](guide-azure-kb.md#publish-kb)
 
-    <br/>
     For an overview see [Getting started: How to create an FAQ chatbot](get-started-faq-chatbot.md).
 
     </div>
@@ -66,7 +63,7 @@ Follow these instructions to create a QnA Maker service which you need for the F
 Follow these steps to add a direct line channel and allow the OutSystems chatbot component to communicate with the Azure chatbot back end.
 
 1. Log into the Azure portal at [portal.azure.com](https://portal.azure.com).
-   
+
 2. Locate your bot name in **Recent resources** or search the bot in the search bar, then click the bot name. The settings page opens.
 
     ![Web bot in Azure home](images/azure-web-app-bot-dashboard.png?width=500)
@@ -136,7 +133,7 @@ Follow these steps to create a bot service in Azure. This bot monitors for new m
     
 4. Enter the information for your bot and click **Create**. Here is what you need to provide:
 
-    * **Bot handle**. Unique identifier for the bot. 
+    * **Bot handle**. Unique identifier for the bot.
     * **Subscription**. The Azure subscription you want to use for the bot.
     * **Resource group**. The resource group to which you want to add the bot.
     * **Location**. The location of the datacenter from which the bot service runs.
@@ -145,7 +142,7 @@ Follow these steps to create a bot service in Azure. This bot monitors for new m
     * **App service plan / location**. This is a set of the compute resources which the bot uses.   
     * **Microsoft App ID and password**. Verify the selected option is **Autocreate App Id and password**.
 
-    <br/>![New Web App Bot](images/azure-web-app-bot-service-create.png?width=250)
+    ![New Web App Bot](images/azure-web-app-bot-service-create.png?width=250)
 
     <div class="info" markdown="1">
 
@@ -163,4 +160,4 @@ Here are troubleshooting tips that can help you resolve issues in Azure.
 
 While creating a resource in Azure you get the following error: "Azure (resource name) resource provider is not registered, please click to search (resource handle) and register it first".
 
-Check if the combination of settings in **Subscription** and **Resource group** can be used together. You may be trying to create a resource in in a group that doesn't belong to the subscription (or vice versa).
+Check if the combination of settings in **Subscription** and **Resource group** can be used together. You may be trying to create a resource in a group that doesn't belong to the subscription (or vice versa).

@@ -12,8 +12,12 @@ This allows your application to consume a SOAP Web Service with different config
 
 To configure the runtime settings of a SOAP Web Service you are consuming, do the following:
 
-* Go to the Service Center management console of your OutSystems environment;
-* Go to Factory section and open your application;
-* Open the module where you are consuming the SOAP Web Service;
-* Select the Integrations tab and click on the consumed SOAP Web Service name to edit it;
-* Set the Effective URL and/or effective authentication credentials (username and password) for the current environment and click "Apply".
+1. Go to the Service Center management console of your OutSystems environment.
+
+1. Go to **Factory** and open your application.
+
+1. Open the module where you are consuming the SOAP Web Service.
+
+1. Select the **Integrations** tab and click on the consumed SOAP Web Service name to edit it.
+
+1. Set the **Effective URL** and/or effective authentication credentials (username and password) for the current environment and click **Apply**.

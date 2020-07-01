@@ -4,7 +4,7 @@ summary: Learn how to create a new zone in Service Center.
 
 # Create a New Deployment Zone
 
-<div class="info">
+<div class="info" markdown="1">
 
 Only available in OutSystems on-premises installations.
 

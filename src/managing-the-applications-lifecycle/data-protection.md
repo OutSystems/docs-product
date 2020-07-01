@@ -25,12 +25,12 @@ In order to manage IT Users, both Service Center and LifeTime store the followin
 
 ### Protection against brute force attacks
 
-Service Center and LifeTime have a system that protects against brute force attacks that systematically try to guess user passwords. 
+Service Center and LifeTime have a system that protects against brute force attacks that systematically try to guess user passwords.
 
 This system offers protection against two levels of attacks, user-level attacks and IP-level attacks (more details [here](secure-the-applications/protection-against-brute-force-attacks.md)); and needs to store some personal user data in order to be functional. The personal information stored in **LoginAttempt** system entity (physical table name: **OSSYS\_LOGIN\_ATTEMPT**) is:
 
-* Username (e.g. Firwass)
-* IP Address (e.g. 69.89.31.226)
+* Username (for example, Firwass)
+* IP Address (for example, 69.89.31.226)
 
 ### LifeTime audit events
 
@@ -38,7 +38,7 @@ LifeTime has an audit system that logs every operation performed by IT users in 
 
 These logs may contain some personal information such as the name or username of the users and also client IPs. The information is stored in **AuditEvent** entity [**OSLTM\_AUDITEVENT**], in Message and ClientIP attributes.
 
-For performance reasons, Lifetime deletes the audit logs older than one year. By default, this deleting process runs daily at 7:30 AM (database time).
+For performance reasons, LifeTime deletes the audit logs older than one year. By default, this deleting process runs daily at 7:30 AM (database time).
 
 ### LifeTime Analytics
 
@@ -51,7 +51,7 @@ This contact list is stored in the platform database in **PerformanceReportConfi
 OutSystems provides a feature to send emails from a web application. This mechanism requires some metadata that may contain personal information related with users.
 Users data is necessary to send the emails (email address), and may be present in the email content itself.
 
-All of this data is present in System entities: **Sent\_Email** (physical table name: **OSSYS\_EMAIL**) and **Email\_Content** (physical table name: **OSSYS\_EMAIL\_CONTENT**).
+All this data is present in System entities: **Sent\_Email** (physical table name: **OSSYS\_EMAIL**) and **Email\_Content** (physical table name: **OSSYS\_EMAIL\_CONTENT**).
 
 ### Logs
 
@@ -65,17 +65,17 @@ This information may be present in all General log tables (**oslog\_General\_0**
 
 **Users** is the application used by default to manage end users. It contains the same information related with users already referred to in the [Service Center and LifeTime section](#service-center-and-lifetime), namely:
 
-* Name (e.g. Joel Grant)
-* Username (e.g. Firwass)
-* Mobile Phone (e.g. 414-382-6132)
-* Email (e.g. JoelGrant@rhyta.com)
+* Name (for example, Joel Grant)
+* Username (for example, Firwass)
+* Mobile Phone (for example, 414-382-6132)
+* Email (for example, JoelGrant@rhyta.com)
 
 The entity where this information is stored is the same entity used by Service Center and LifeTime (**User** system entity), but uses a different tenant identifier.
 
 Also, **Users** uses the previously described brute force attack protection system. This system stores some personal user information:
 
-* Username (e.g. Firwass)
-* IP Address (e.g. 69.89.31.226)
+* Username (for example, Firwass)
+* IP Address (for example, 69.89.31.226)
 
 **Users** uses a different entity to store this information, the **LoginAttempt** entity of the **Users** module (physical table name: **OSUSR\_&lt;PREFIX&gt;\_LOGINATTEMPT**).
 
@@ -84,11 +84,11 @@ Note: If you created a new user provider by cloning **Users** the same mechanism
 ## App Feedback
 
 **App Feedback** is a system application for gathering user feedback by allowing users to share written and oral feedback while using your mobile and/or web applications. 
-Furthermore, when feedback is submitted the tool captures a screenshot of what is being displayed on the user's screen at that moment. 
+Furthermore, when feedback is submitted the tool captures a screenshot of what is being displayed on the user's screen at that moment.
 Therefore, the tool may capture sensitive information depending on the type of application.
 
-For instance, if a user is using a directory type application and submits feedback for the contacts list screen, the tool collects all the contacts that are listed at that moment as a screenshot or HTML code. 
-As a result some personal information may be stored in the **App Feedback** database.
+For instance, if a user is using a directory type application and submits feedback for the contacts list screen, the tool collects all the contacts that are listed at that moment as a screenshot or HTML code. As a result some personal information may be stored in the **App Feedback** database.
+
 This data may be stored in the following Attributes of the following entities of the **ECT\_Provider** module:
 
 * **Feedback** entity
@@ -145,6 +145,7 @@ The following SQL snippet deletes all log-in attempt logs from the **LoginAttemp
 ```sql
 DELETE FROM OSSYS_LOGIN_ATTEMPT;
 ```
+
 <div class="warning" markdown="1">
 
 Do not use this SQL snippet in your Production environment.  

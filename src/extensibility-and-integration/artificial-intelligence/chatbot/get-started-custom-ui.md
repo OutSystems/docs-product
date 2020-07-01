@@ -9,7 +9,7 @@ The OutSystems.AI Chatbot component comes with ChatbotAdvanced block that lets y
 
 The ChatbotAdvanced integrates data structures and actions from the OutSystems.AI Chatbot component, but you need to create local variables, actions, and logic to handle the UI interactions and requests to Azure. Here is an example:
 
-![Advanced UI overview](images/chatbot-advanced-ui-ss.png?width=600>)
+![Advanced UI overview](<images/chatbot-advanced-ui-ss.png?width=600>)
 
 The data structures of the variables **DLConversation**, **ChannelAccount**, and **MessageList** (1), with the data types names the same, come from the component. You need the variables (1) to configure the communication with Azure and keep track of the conversation. The **MessageReceived** and **MessageSent** local variables (2) are the textual variables bound to the user interface (5, 6), and when they update, the interface updates as well. **ChatbotAdvancedInitialize** and **ChatbotAdvancedMessageReceived** (3) are actions that handle the configuration of the Azure connection and the replies from the Azure Bot Service. The **ChatbotAdvancedMessageReceived** action has the **Message** input parameter. When the Azure bot service replies with a message, you can show the message or store it in **MessageList**. Finally, you need an action to send the message to Azure bot service. In this example, the **SendMessageToAzure** action (4) sends the value of **MessageSent** to the Azure bot service by using **SendMessage** action from the component. You trigger the **SendMessageToAzure** action when you click the button (7) in the user interface.
 

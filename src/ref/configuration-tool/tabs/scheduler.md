@@ -4,7 +4,7 @@ summary: The Scheduler tab allows you to configure the OutSystems Scheduler Serv
 
 # Scheduler Tab
 
-The **Scheduler tab** allows you to configure the OutSystems Scheduler Service.
+The **Scheduler** tab allows you to configure the OutSystems Scheduler Service.
 
 Configuration | Description | Default value  
 ---|---|---  

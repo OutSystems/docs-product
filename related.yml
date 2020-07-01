@@ -1020,9 +1020,10 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 - develop/ui/patterns/web/layout/layout-popup.md:
+    - ref/ui-patterns/web/layout-popup.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LayoutPopup.aspx
 - develop/ui/patterns/web/layout/layout-sidemenu.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1032,9 +1033,7 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 - develop/ui/patterns/web/layout/loginform.md:
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+    - ref/ui-patterns/web/loginform.md
 - develop/ui/patterns/web/navigation/breadcrumbs.md:
     - ref/ui-patterns/web/breadcrumbs.md
     - external:

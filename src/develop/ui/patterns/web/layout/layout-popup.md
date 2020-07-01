@@ -3,68 +3,22 @@ tags: runtime-traditionalweb;
 summary: LayoutPopup is the layout used to display additional off-canvas information.
 ---
 
-# LayoutPopup
+# Layout Popup
 
-The Layout for the [RichWidgets Popup Editor](../../../inputs/popup.md).
+The Layout Popup is a pre-existing web block useful for displaying additional off-canvas information. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app. 
 
-Useful to display additional off-canvas information.
+![](<images/layoutpopup-1-ss.png?width=800>)
 
-**How to use**
+For more information about creating and using a popup, see [RichWidgets Popup Editor](../../../inputs/popup.md).
 
-1. In the Popup screen, select the object tree and set the layout to LayoutPopup.
+## Properties
 
-1. Add your content inside the layout. 
+| **Property** |  **Description** | 
+|---|---|
+| DeviceConfiguration (DeviceConfig): Optional  |  Configuration that changes the default values that apply when the application is viewed on a phone, tablet, or desktop. | 
+| AccessibilityConfiguration (AccessibilityConfiguration): Optional | Configuration that changes the default values for the options that reset tab index values and the options that add a visible outline to focused elements.|
 
-1. Use this screen as destination for the [RichWidgets Popup Editor](../../../inputs/popup.md).
 
-## Input Parameters
-
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| DeviceConfiguration  |  Configuration to change the default values that set when the application will be seen as phone, tablet or desktop |  DeviceConfig | False | none |
-
-## Layout and Classes
-
-![](<images/layout-popup-image-1.png>)
-
-### MainContent
-
-Drag your content to this placeholder.
-
-## Advanced Use Case
-
-### Customize your responsive breakpoints
-
-1. Go to the Common Flow.
-1. Double-click the Layout to open the widget tree. 
-1. Go to the LayoutPopup properties.
-1. Toggle the DeviceConfiguration 'plus icon'.
-1. Set the custom breakpoints (in pixels). In the example below, the phone breaks are set to happen only when the Device width is at 200px.
-1. Publish and test.
-
-![](<images/layout-popup-image-2.png>)
-
-## Notes
-
-In Internet Explorer 10 and 11, we added some specific behaviors to account for the flicker caused by the slow loading time of polyfill CSS Variables. If there are any JavaScript errors, this will cause the screen to appear white.
-
-You can override the following code to avoid this behavior.
-
-```css
-.ie10,
-.ie11 {
-   display: none;
-}
-
-.ie10.ponyfill-ready,
-.ie11.ponyfill-ready {
-   display: block;
-}
-```
-
-## Compatibility with other Patterns
-
-[RichWidgets Popup Editor](../../../inputs/popup.md)
 
 
 

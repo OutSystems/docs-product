@@ -7,9 +7,9 @@ summary: Advanced use cases for the Login Form web block.
 
 ## Layout and classes
 
-![](<images/loginform-image-1.png>)
+![](<images/loginform-1-diag.png>)
 
-![](<images/loginform-image-2.png>)
+![](<images/loginform-2-ss.png>)
 
 ### Login
 
@@ -31,7 +31,7 @@ Drag login related content to this placeholder.
 
 1. Publish and test.
 
-    ![](<images/loginform-image-4.png>)
+    ![](<images/loginform-4-ss.png>)
 
 ## Compatibility with other patterns
 

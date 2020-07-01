@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Layout Login Split UI Pattern.
+summary: Advanced use cases for the Layout Login Split web block.
 ---
 
 # Layout Login Split Reference

@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Layout Side Menu UI Pattern.
+summary: Advanced use cases for the Layout Side Menu web block.
 ---
 
 # Layout Side Menu Reference

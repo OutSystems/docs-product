@@ -5,17 +5,14 @@ summary: Layout Login Split is a custom page layout for the login screen that di
 
 # Layout Login Split
 
-A custom page layout for the login screen that divides the page into 2 columns. 
+The Layout Login Split is a pre-existing web block for a login screen that divides the page into 2 columns. The web block is located in  **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app. 
 
-**How to use the Layout Login Split UI Pattern**
-
-1. In the Login screen, select the object tree and use LayoutLoginSplit instead of the current Layout. 
-
-1. OutSystems UI Layout Login already has the LoginForm by default. Add input widgets to the correct placeholders as required.
+![](<images/layoutloginsplit-1-ss.png?width=800>)
 
 ## Properties
 
 | **Property** |  **Description** |
 |---|---|
-| DeviceConfiguration (DeviceConfig): Optional  |  Configuration to change the default values that set when the application will be seen as phone, tablet, or desktop. | 
+| DeviceConfiguration (DeviceConfig): Optional  |  Configuration that changes the default values that apply when the application is viewed on a phone, tablet, or desktop. | 
+| AccessibilityConfiguration (AccessibilityConfiguration): Optional | Configuration that changes the default values for the options that reset tab index values and the options that add a visible outline to focused elements.|
 

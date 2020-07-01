@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Layout Top Menu UI Pattern.
+summary: Advanced use cases for the Layout Top Menu web block.
 ---
 
 # Layout Top Menu Reference

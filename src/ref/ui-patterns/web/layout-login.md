@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb;
-summary: Advanced use cases for the Layout Login UI Pattern.
+summary: Advanced use cases for the Layout Login web block.
 ---
 
 # Layout Login Reference

@@ -1,11 +1,11 @@
 ---
 tags: runtime-traditionalweb; 
-summary: Advanced use cases for the Login Form UI Pattern.
+summary: Advanced use cases for the Login Form web block.
 ---
 
 # Login Form Reference
 
-## Layout and Classes
+## Layout and classes
 
 ![](<images/loginform-image-1.png>)
 
@@ -15,7 +15,7 @@ summary: Advanced use cases for the Login Form UI Pattern.
 
 Drag login related content to this placeholder.
 
-## Advanced Use Case
+## Advanced use case
 
 ### Add a Sign In button
 
@@ -33,6 +33,6 @@ Drag login related content to this placeholder.
 
     ![](<images/loginform-image-4.png>)
 
-## Compatibility with other Patterns
+## Compatibility with other patterns
 
 [Layouts](../../../develop/ui/patterns/web/layout/layout-login.md)

@@ -21,23 +21,32 @@ You can use the Dropdown Select UI Pattern to implement a search functionality o
 
     ![](<images/dropdownselect-5-ss.png>)
 
-1. Place Combo Box or List Box in the main editor. This is your main widget.
+1. From the Toolbox, drag the Combo Box widget into the Main Content area of your application's screen, and on the Properties tab, enter a name for the widget. In this example, we enter `ListofEmployees`.
 
-1. Make sure you enter a value in the Name property of the main widget. 
+    ![](<images/dropdownselect-9-ss.png?width=800>)
 
-1. Drag DropdownSelect pattern into the preview next to your main widget.
-  
-1. Set the mandatory value `WidgetId` in the properties pane that corresponds to the main widget.
+1. Right-click your screen name, select **Add Local Variable**, and enter a name for the new variable. In this example, we enter `SelectedRecord`.
 
-1. Adjust the widget width by adjusting the width of the outer container.
+    ![](<images/dropdownselect-8-ss.png?width=800>)
 
+1. Select the Combo Box widget, and on the **Properties** tab, enter the values for the **Variable** and **Source Entity** properties. In this example, we select **SelectedRecord** for the **Variable** property and drag the **Employees** entity into the Combo Box widget. This automatically becomes the **Source Entity** property value. 
+
+   ![](<images/dropdownselect-11-ss.png?width=800>)
+
+1. Select the Dropdown Select widget, and on the **Properties** tab, from the WidgetId drop-down, select the Combo Box widget Id. In this example, we select **ListofEmployees.Id**.
+
+    ![](<images/dropdownselect-12-ss.png?>)
+
+1. You can change the Dropdown Select's look and feel by setting the (Optional) properties on the Properties tab.
+
+    ![](<images/dropdownselect-13-ss.png?>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 
 How this pattern behaves depends on the way it is bound.
 
-* If you bind it to a Combo Box widget, DropdownSelect works as a selectable Dropdown.
-* If you bind it to a List Box, DropdownSelect works as a multi-select with removable tags.
+* If you bind it to a Combo Box widget, Dropdown Select works as a selectable dropdown.
+* If you bind it to a List Box, Dropdown Select works as a multi-select dropdown with removable tags.
 
 ## Properties
 

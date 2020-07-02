@@ -29,29 +29,35 @@ If there are no results when you search for OutSystemsSampleDataDB, that could m
 
 ## Managing OutSystems Sample Data
 
-Sample data is managed in the Sample Data Back-Office at `http://<yourserver>/OutSystemsSampleData/` where you can:
+OutSystemsSampleDataDB provides a collection of public APIs that allows:
 
-* View the sample data
-* Import your sample data
+* Export original data and Import your sample data
 * Reset the sample data
 
 ### View the Sample Data
 
-To view the sample data, access the Sample Data Back-Office and click the **Backoffice** tab.
+Sample Data entities are public, so it is possible to create a custom back-office.
 
 ### Import your Sample Data
 
 Follow these steps to import your own data for use in Screen Templates.
 
-1. Access the Sample Data Back-Office.
-2. In the **Data Management** section, click **Download Data**.
-3. Populate the source files in the OriginalData.zip with your own data.
-4. In the **Data Management** section, click **Choose File** and select your edited zip file.
-5. Click **Upload**.
+Assuming the required APIs are being referenced in a back-office application:
+1. Use the **DownloadOriginalData** action to save the original source files.
+2. Populate the source files in the OriginalData.zip with your own data.
+4. Use the **Import** action to upload the updated file and replace the current data.
 
 ### Reset the Sample Data
 
-To reset the sample data access the Sample Data Back-Office and in the **Data Management** section click **Reset Data**.
+To reset the sample data:
+* Access `http://<yourserver>/ServiceCenter/`
+* Go to the Factory - Modules tab
+* Search for OutSystemsSampleDataDB
+* Go to the **Timers** tab in the module details
+* Select the **Reset_SampleData** timer and click Run Now
+
+**Note:** If any application extends the provided entities, the Foreign Key constraint won't let the timer run successfully.
+To overcome this, the deletion of such references (records) must be ensured.
 
 ## Custom data model and records
 

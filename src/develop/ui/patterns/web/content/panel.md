@@ -25,7 +25,7 @@ Use a panel to group short pieces of information and highlight them on the scree
 
     By default, the Panel widget contains Title, Actions, Content, and Footer placeholders.
 
-1. Add your content to the placeholders. In this example, we add a title, text, and a button.
+1. Add your content to the placeholders. In this example, we add a title to the Title placeholder, text to the Content placeholder, and a button to the Actions placeholder.
 
     ![](<images/panel-4-ss.png>)
 

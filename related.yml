@@ -905,6 +905,7 @@
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
 - develop/ui/patterns/web/content/chatmessage.md:
+    - ref/ui-patterns/web/chatmessage.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/ChatMessage.aspx
@@ -916,26 +917,31 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightboxImage.aspx
 - develop/ui/patterns/web/content/modal.md:
+    - ref/ui-patterns/web/modal.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Modal.aspx
 - develop/ui/patterns/web/content/panel.md:
+    - ref/ui-patterns/web/panel.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Panel.aspx
 - develop/ui/patterns/web/content/section.md:
+    - ref/ui-patterns/web/section.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Section.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=63
 - develop/ui/patterns/web/content/tag.md:
+    - ref/ui-patterns/web/tag.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tag.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=74
 - develop/ui/patterns/web/content/tooltip.md:
+    - ref/ui-patterns/web/tooltip.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tooltip.aspx

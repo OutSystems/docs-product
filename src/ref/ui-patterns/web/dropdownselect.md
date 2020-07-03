@@ -21,36 +21,43 @@ summary: Advanced use cases for the Dropdown Select UI Pattern.
 
 Write the following CSS in the CSS editor and change the `yourcolor` variable:
 
-`.choices__inner {
+```css
+.choices__inner {
     border: var(--border-size-s) solid yourcolor;
-}`
+}
+```
 
 Or using the CSS variable `var(--color-yourcolor)` example:
 
-`.choices__inner {
+```css
+.choices__inner {
     border: var(--border-size-s) solid var(--color-yourcolor);
-}`
+}
+```
 
 ### Change removable tags color
 
 Write the following CSS in the CSS editor and change the `yourcolor` variable:
 
-`.choices__list--multiple .choices__item.choices__item--selectable {
+```css
+.choices__list--multiple .choices__item.choices__item--selectable {
     background: yourcolor;
-}`
+}
+```
 
 Or using the CSS variable `var(--color-yourcolor)` example:
 
-`.choices__list--multiple .choices__item.choices__item--selectable {
+```css
+.choices__list--multiple .choices__item.choices__item--selectable {
     background: var(--color-yourcolor);
-}`
+}
+```
 
 ## Browser previews
 
 With Combo Box:
 
 ![](<images/dropdownselect-4-ss.gif?width=600>)
-
 
 With List Box:
 
@@ -59,4 +66,3 @@ With List Box:
 ## Notes
 
 The SearchEnabled parameter doesn't work with ListBox.
-

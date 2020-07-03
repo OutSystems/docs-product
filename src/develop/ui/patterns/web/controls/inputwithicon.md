@@ -3,7 +3,7 @@ tags: runtime-traditionalweb;
 summary: Input with Icon allows the end user to input data with the help of a hint.
 ---
 
-# Input with Icon 
+# Input with Icon
 
 You can use the Input with Icon UI Pattern to allow the end user input data with the help of a hint in the form of an icon.
 
@@ -23,7 +23,7 @@ The Input with Icon UI Pattern includes an icon and placeholder text that suppor
 
     ![](<images/inputwithicon-2-ss.png>)
 
-1. Select the Input widget, and on the **Properties** tab, from the **Variable** drop-down, select **New Local Variable**. 
+1. Select the Input widget, and on the **Properties** tab, from the **Variable** drop-down, select **New Local Variable**.
 
     ![](<images/inputwithicon-3-ss.png>)
 
@@ -43,15 +43,11 @@ The Input with Icon UI Pattern includes an icon and placeholder text that suppor
 
     ![](<images/inputwithicon-7-ss.png>)
 
-After following these steps and publishing the module, you can test the pattern in your app. 
-
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
 | Property |  Description |  
 |---|---|
-| AlignIconRight (Boolean): Optional  |  If True, the icon is displayed on the right of the input box. If False, the icon is displayed on the left of the input box. This is the default. | 
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Input with Icon UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Input with Icon UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Input with Icon UI styles being applied.</li></ul> |
-
-
-
+| AlignIconRight (Boolean): Optional  |  If True, the icon is displayed on the right of the input box. If False, the icon is displayed on the left of the input box. This is the default. |
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Input with Icon UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Input with Icon UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Input with Icon UI styles being applied.</li></ul> |

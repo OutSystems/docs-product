@@ -21,41 +21,39 @@ summary: Advanced use cases for the Floating Actions UI Pattern.
 | ---|---|---|
 | .floating-actions |  .is--open|  Set when the Floating Actions Pattern is open  |
 
-
 ## Advanced Use Case
 
 ### Change Floating Actions position
 
 1. Write the following CSS code in the CSS editor.
 
-    ```css
-    .floating-actions {
-        -webkit-box-align: start;
-           -ms-flex-align: start;
-              align-items: flex-start;
-        left: 0;
-        right: auto;
-    }
-    
-    .floating-actions-items {
-        -webkit-box-align: start;
-           -ms-flex-align: start;
-              align-items: flex-start;
-        padding-left: var(--space-s);
-    }
-    
-    .floating-actions-item {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-           -ms-flex-direction: row-reverse;
-               flex-direction: row-reverse;
-    }
-    
-    .floating-actions-item-button {
-        margin-left: 0;
-        margin-right: var(--space-base); 
-    }
-    ```
+        .floating-actions {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+            left: 0;
+            right: auto;
+        }
+        
+        .floating-actions-items {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+            padding-left: var(--space-s);
+        }
+        
+        .floating-actions-item {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        }
+        
+        .floating-actions-item-button {
+            margin-left: 0;
+            margin-right: var(--space-base); 
+        }
+
 1. Publish and test.
 
     ![](<images/floatingactions-4-ss.gif>)
@@ -73,4 +71,3 @@ summary: Advanced use cases for the Floating Actions UI Pattern.
 1. In the Floating Actions Item, use expressions to display the required content.
 
 1. Publish and test.
-

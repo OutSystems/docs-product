@@ -15,25 +15,22 @@ summary: Advanced use cases for the Animated Label UI Pattern.
 | ---|---|---
 | .animated-label | .animated-label-inline |  When IsInline Input Parameter is true |
 
-
 ## Advanced use case
 
-### Change the position of the label when it is active 
+### Change the position of the label when it is active
 
 1. Write the following CSS code in the CSS editor.
 
-    ```css
-    .animated-label.active .animated-label-text {
-        top: 50px;
-    }
-    ```
+        .animated-label.active .animated-label-text {
+            top: 50px;
+        }
+
 1. Publish and test.
 
-Before 
+**Before** 
 
 ![](<images/animatedlabel-5-ss.png>)
 
-After 
+**After** 
 
 ![](<images/animatedlabel-6-ss.png>)
-

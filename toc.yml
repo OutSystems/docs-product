@@ -1058,6 +1058,7 @@
                     - href: ref/ui-patterns/web/cardbackground.md
                     - href: ref/ui-patterns/web/cardsectioned.md
                     - href: ref/ui-patterns/web/carousel.md
+                    - href: ref/ui-patterns/web/chatmessage.md
                     - href: ref/ui-patterns/web/character-count.md
                     - href: ref/ui-patterns/web/columns.md
                     - href: ref/ui-patterns/web/counter.md
@@ -1072,17 +1073,22 @@
                     - href: ref/ui-patterns/web/lightbox-image.md
                     - href: ref/ui-patterns/web/load-on-visible.md
                     - href: ref/ui-patterns/web/loginform.md
+                    - href: ref/ui-patterns/web/modal.md
                     - href: ref/ui-patterns/web/navigation-bar.md
+                    - href: ref/ui-patterns/web/panel.md
                     - href: ref/ui-patterns/web/progressbar.md
                     - href: ref/ui-patterns/web/progresscircle.md                
                     - href: ref/ui-patterns/web/responsive-table.md
+                    - href: ref/ui-patterns/web/section.md
                     - href: ref/ui-patterns/web/section-index.md
                     - href: ref/ui-patterns/web/separator.md
                     - href: ref/ui-patterns/web/sidebar.md
                     - href: ref/ui-patterns/web/stackedicon.md
                     - href: ref/ui-patterns/web/tabs.md
+                    - href: ref/ui-patterns/web/tag.md
                     - href: ref/ui-patterns/web/timeline.md
                     - href: ref/ui-patterns/web/timepicker.md
+                    - href: ref/ui-patterns/web/tooltip.md
                     - href: ref/ui-patterns/web/user-initials.md
                     - href: ref/ui-patterns/web/video.md
                     - href: ref/ui-patterns/web/wizard.md

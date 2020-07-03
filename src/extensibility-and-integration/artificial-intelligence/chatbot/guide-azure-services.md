@@ -39,7 +39,6 @@ Follow these instructions to create a QnA Maker service which you need for the F
     * **App name**. The name of your bot service that is part of the URL to reach the service.
     * **Website location**. The location where you deploy the service.
   
-    <br/>
     Optional settings:
 
     * **App insights**. If you want to track your app performance and collect telemetry information, activate this option.
@@ -55,7 +54,6 @@ Follow these instructions to create a QnA Maker service which you need for the F
     * If you haven't created a knowledge base: [create a new knowledge base](guide-azure-kb.md#create-kb)
     * If you already have a knowledge base: [publish the knowledge base and create a chatbot service](guide-azure-kb.md#publish-kb)
 
-    <br/>
     For an overview see [Getting started: How to create an FAQ chatbot](get-started-faq-chatbot.md).
 
     </div>
@@ -144,7 +142,7 @@ Follow these steps to create a bot service in Azure. This bot monitors for new m
     * **App service plan / location**. This is a set of the compute resources which the bot uses.   
     * **Microsoft App ID and password**. Verify the selected option is **Autocreate App Id and password**.
 
-    <br/>![New Web App Bot](images/azure-web-app-bot-service-create.png?width=250)
+    ![New Web App Bot](images/azure-web-app-bot-service-create.png?width=250)
 
     <div class="info" markdown="1">
 

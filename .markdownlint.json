@@ -32,7 +32,6 @@
     },
     "required-headings": false,
     "proper-names": false,
-    "no-alt-text": false,
     "code-block-style": false,
     "code-fence-style": {
         "style": "backtick"

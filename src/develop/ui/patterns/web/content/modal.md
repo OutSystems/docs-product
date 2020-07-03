@@ -7,11 +7,11 @@ summary: Modal is a box with content that interrupts the end user and demands an
 
 You can use the Modal UI Pattern to interrupt the end user and demand an action. It is implemented to direct an end user’s attention to important information. Ideal for when the end user is requested to enter information critical to continuing the current process.
 
- ![](<images/modal-1.png>)
+ ![](<images/modal-1.png?width=800>)
 
 **How to use the Modal UI Pattern**
 
-After placing a Modal on the screen, open it by calling a new screen action using a button with its method set to Ajax submit and use the Toggle Modal action (found in the Logic Tab). Use the pattern parameters to define if it has an Overlay, its Position in the page and the Enter/Leave animations. Note that you need to enter a value in the Name field of the widgets to be able to select their IDs.
+For the purposes of this example, our app already contains a form where the user can enter their queries, and once they send their message, a confirmation message appears by using the Modal widget. 
 
 1. In Service Studio, in the Toolbox, search for `Modal`.
   
@@ -19,43 +19,46 @@ After placing a Modal on the screen, open it by calling a new screen action usin
 
     ![](<images/modal-5-ss.png>)
 
-1. To From the Toolbox, drag the Modal widget into the Main Content area of your application's screen. 
+1. To From the Toolbox, drag the Modal widget into the Main Content area of your application's screen, and on the **Properties** tab, enter a name for the widget. In this example we enter ``Confirmation``. 
 
-   ![](<images/modal-6-ss.png>)
+   ![](<images/modal-6-ss.png?width=800>)
 
     By default, the Modal widget contains Title, Icon, Content, and Footer placeholders.
 
-1. Add your content to the placeholders.
-1. Use a Button Widget or a Link with Ajax Submit to open the Modal Pattern.
-1. In the Destination property, create a new screen action to trigger the modal.
+1. Add your content to the placeholders. In this example we add text to the Title placeholder, text to the Content placeholder, and 2 buttons (Yes and No) to the Footer placeholder. 
 
-    ![](<images/modal-2-ss.png>)
+   ![](<images/modal-7-ss.png?width=800>)
 
-1. Inside the action created, use the action ToggleModal and set the WidgetID.
+1. In this example, to open the Modal widget, we need to set the **Method** and **Destination** properties for the **Yes** button. To do this, select the **Yes** button, and on the **Properties** tab, from the **Method** drop-down, select **Ajax Submit** and from the **Destination** select **New Screen Action**
 
-    ![](<images/modal-3-ss.png>)
+   ![](<images/modal-8-ss.png?width=800>)
 
-1. On the **Properties** tab, change the Modal's look and feel by setting the (optional) properties.
+1. Enter a name for the screen action. In this example, we enter ``ConfirmSend``.
 
-    ![](<images/modal-4-ss.png>)
-   
-When adding Modal to your app, set the correct TriggerButtonId to ensure accessibility support, as this ensures proper focus and accessibility support.
+   ![](<images/modal-11-ss.png?>)
+
+1. Select the **Logic** tab, navigate to **OutSystemsUIWeb > Modal** and drag the **ToggleModal** onto the screen action.
+
+   ![](<images/modal-9-ss.png?width=800>)
+
+1. On the **properties** tab, from the **WidgetId** drop-down, select the Id of the Modal widget. In this example, we select **Confirmation.Id**.
+
+    ![](<images/modal-10-ss.png>)
+
+1. In this example, to close the Modal, we need to set the **Method** and **Destination** properties for the **No** button. To do this, double-click your screen name, select the **No** button, and on the **Properties** tab, from the **Method** drop-down, select **Ajax Submit** and from the **Destination** select the screen action you previously created. In this case **ConfirmSend**.
+
+    ![](<images/modal-12-ss.png?>)
+
+1. On the **Properties** tab, you can change the Modal's look and feel by setting the (optional) properties.
+
+    ![](<images/modal-4-ss.png?>)  
 
 After following these steps and publishing the module, you can test the pattern in your app.
-    
-**How to close the Modal**
 
-Users can close the modal widget by pressing the ESC key. If you want to give users an option to close the modal with the button or a link:
+The result of this example looks something like the following:
 
-1. Add a button or a link into the Modal widget.
-1. Go to the link/button properties and in the **On Click** section:
-    
-    * In the **Method** list select **Ajax Submit**.
-    * In the **Destination** list select the same action you created to open the modal dialog.
-    
-    The **ToggleModal** action in the existing action closes the modal if it's opened, and opens the modal if it's closed.
- 
- 1. Publish the app and verify the modal closes correctly.
+![](<images/modal-13-ss.png?width=800>)    
+
 
 ## Properties
 

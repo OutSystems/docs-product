@@ -11,21 +11,42 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
 
 **How to use the Chat Message UI Pattern**
 
+For the purposes of this example, our app already contains a form where the user can enter their queries, and once they send their message, it will appear as a conversational post by using the Chat Message widget. 
+
 1. In Service Studio, in the Toolbox, search for `Chat Message`.
   
      The Chat Message widget is displayed.
 
     ![](<images/chatmessage-1-ss.png>)
 
-1. To From the Toolbox, drag the Chat Message widget into the Main Content area of your application's screen. 
+1. To From the Toolbox, drag the Chat Message widget into the Main Content area of your application's screen.
 
     ![](<images/chatmessage-2-ss.png>)
 
     By default, the Chat Message widget contains Image, Name, Content, and Actions placeholders.
 
-1. Add your content to the placeholders.
+1. Add the relevant content to the placeholders. 
+
+    * In this example, so that the name the user enters in the form is displayed, we convert the Name placeholder to an expression and enter the relevant logic. To do this, we right-click the Name placeholder, select **Convert to Expression**, and in the **Expression Value** pop-up, navigate to the Name attribute, and click **Done**.
+
+        ![](<images/chatmessage-4-ss.png>)
+
+        ![](<images/chatmessage-5-ss.png>)
+
+    * So that the message the user enters in the form is displayed, we convert the Content placeholder to an expression and enter the relevant logic. To do this, we repeat the previous step, but this time, navigate to the Message attribute.
+
+        ![](<images/chatmessage-8-ss.png>)
+
+1. You can customize the Chat Message's look and feel by setting the (optional) properties on the **Properties** tab.
+
+    ![](<images/chatmessage-9-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
+
+The result of this example looks something like the following:
+
+![](<images/chatmessage-6-ss.png?width=800>)
+
 
 
 ## Properties

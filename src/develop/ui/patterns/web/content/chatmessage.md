@@ -11,7 +11,7 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
 
 **How to use the Chat Message UI Pattern**
 
-For the purposes of this example, our app already contains a form where the user can enter their queries, and once they send their message, it will appear as a conversational post by using the Chat Message widget. 
+For the purposes of this example, our app already contains a [form](../../../../../develop/ui/forms/form-use.md) where the user can enter their queries, and once they send their message, it will appear as a conversational post by using the Chat Message widget. 
 
 1. In Service Studio, in the Toolbox, search for `Chat Message`.
   

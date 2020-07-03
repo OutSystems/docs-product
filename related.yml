@@ -948,9 +948,12 @@
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=77
 - develop/ui/patterns/web/controls/animatedlabel.md:
+    - ref/ui-patterns/web/animatedlabel.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/AnimatedLabel.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=6
 - develop/ui/patterns/web/controls/buttongroup.md:
     - ref/ui-patterns/web/buttongroup.md
     - external:
@@ -973,9 +976,10 @@
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=33
 - develop/ui/patterns/web/controls/dropdownselect.md:
+    - ref/ui-patterns/web/dropdownselect.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/DropdownSelect.aspx
 - develop/ui/patterns/web/controls/fileupload/fileupload.md:
     - ref/ui-patterns/web/fileupload.md
     - external:
@@ -984,13 +988,19 @@
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=79
 - develop/ui/patterns/web/controls/floatingactions.md:
+    - ref/ui-patterns/web/floatingactions.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FloatingActions.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=38
 - develop/ui/patterns/web/controls/inputwithicon.md:
+    - ref/ui-patterns/web/inputwithicon.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/InputWithIcon.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=45
 - develop/ui/patterns/web/controls/rangeslider.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

@@ -1048,6 +1048,7 @@
                     - href: ref/ui-patterns/web/alert.md
                     - href: ref/ui-patterns/web/aligncenter.md
                     - href: ref/ui-patterns/web/animate.md
+                    - href: ref/ui-patterns/web/animatedlabel.md
                     - href: ref/ui-patterns/web/badge.md
                     - href: ref/ui-patterns/web/balloon.md
                     - href: ref/ui-patterns/web/blankslate.md
@@ -1064,12 +1065,15 @@
                     - href: ref/ui-patterns/web/counter.md
                     - href: ref/ui-patterns/web/datepicker.md
                     - href: ref/ui-patterns/web/dropdown.md
+                    - href: ref/ui-patterns/web/dropdownselect.md
                     - href: ref/ui-patterns/web/fieldset.md
                     - href: ref/ui-patterns/web/fileupload.md
                     - href: ref/ui-patterns/web/flip-content.md
+                    - href: ref/ui-patterns/web/floatingactions.md
                     - href: ref/ui-patterns/web/gallery.md
                     - href: ref/ui-patterns/web/icon-badge.md
                     - href: ref/ui-patterns/web/iframe.md
+                    - href: ref/ui-patterns/web/inputwithicon.md
                     - href: ref/ui-patterns/web/lightbox-image.md
                     - href: ref/ui-patterns/web/load-on-visible.md
                     - href: ref/ui-patterns/web/loginform.md

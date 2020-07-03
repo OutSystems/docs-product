@@ -23,4 +23,4 @@ summary: Advanced use cases for the Tooltip UI Pattern.
 1. Drag a Tooltip to the preview.
 1. Set the AdvancedFormat parameter to `{ animation: 'perspective' }`.
 
-    ![](<images/tooltip-1.gif>) 
+    ![](<images/tooltip-1.gif>)

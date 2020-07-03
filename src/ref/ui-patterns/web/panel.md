@@ -14,12 +14,10 @@ summary: Advanced use cases for the Panel UI Pattern.
 ### Add box-shadow on Panel
 
 1. Set the ExtendedClass parameter to `shadow-l`.
-    
+
     ![](<images/panel-3-ss.png>)
 
 1. Publish and test.
-
-
 
 **Before**
 

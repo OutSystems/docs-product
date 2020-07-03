@@ -16,10 +16,10 @@ summary: Advanced use cases for the Section UI Pattern.
 Write the following CSS in the CSS editor.
 
  ```css
-    .section-header {
-        border-bottom: none;
-        padding-bottom: var(--space-none);
-    }
+.section-header {
+    border-bottom: none;
+    padding-bottom: var(--space-none);
+}
 ```
 
 **Before**
@@ -33,5 +33,3 @@ Write the following CSS in the CSS editor.
 ## Compatibility with other patterns
 
 Works with Section-Index Pattern on the same screen to create navigable anchors.
-
-

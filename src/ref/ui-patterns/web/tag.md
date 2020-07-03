@@ -14,6 +14,7 @@ summary: Advanced use cases for the Tag UI Pattern.
 ### Use only border in Tag Pattern
 
 1. Set the Color parameter to Transparent.
+
 1. In the ExtendedClass property, set the text color.
 
     ![](<images/tag-4-ss.png>)

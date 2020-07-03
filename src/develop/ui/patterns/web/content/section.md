@@ -7,17 +7,17 @@ summary: Section separates content into groups, easing visual organization.
 
 You can use the Section UI Pattern to organize on-screen content into different sections. This pattern can also be used with the Section Index UI Pattern to create anchors for each section.
 
-![](<images/section-5-ss.png>) 
+![](<images/section-5-ss.png>)
 
 **How to use the Section UI Pattern**
 
 1. In Service Studio, in the Toolbox, search for `Section`.
   
-     The Section widget is displayed.
+    The Section widget is displayed.
 
     ![](<images/section-1-ss.png>) 
 
-1. To From the Toolbox, drag the Section widget into the Main Content area of your application's screen. 
+1. To From the Toolbox, drag the Section widget into the Main Content area of your application's screen.
 
     ![](<images/section-2-ss.png?width=800>)
 

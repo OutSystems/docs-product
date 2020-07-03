@@ -5,7 +5,9 @@ summary: The Dropdown Select UI Pattern allows a search functionality or multipl
 
 # Dropdown Select 
 
-You can use the Dropdown Select UI Pattern to implement a search functionality or multiple selection in lists. You can use the Dropdown Select UI Pattern when you need an enhanced combo box or list box in forms, as it offers a richer user experience than the list.
+The Dropdown Select is a pattern that you can apply to other patterns to implement a search functionality or multiple selection in lists. You can use the Dropdown Select UI Pattern when you need an enhanced combo box or list box in forms, as it offers a richer user experience than the list.
+
+
 
 ![](<images/dropdownselect-6-ss.png>)
 
@@ -33,7 +35,7 @@ You can use the Dropdown Select UI Pattern to implement a search functionality o
 
    ![](<images/dropdownselect-11-ss.png?width=800>)
 
-1. Select the Dropdown Select widget, and on the **Properties** tab, from the WidgetId drop-down, select the Combo Box widget Id. In this example, we select **ListofEmployees.Id**.
+1. Select the Dropdown Select widget, and on the **Properties** tab, from the **WidgetId** drop-down, select the Combo Box widget Id. In this example, we select **ListofEmployees.Id**.
 
     ![](<images/dropdownselect-12-ss.png?>)
 

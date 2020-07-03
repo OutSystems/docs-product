@@ -231,8 +231,8 @@ Learn more about this Early Access feature by checking out the [Progressive Web 
 
 </div>
 
-* Google Chrome (latest stable version)
-* Safari (latest stable version)
+* Default browser for latest stable version of Android
+* Default browser for latest stable version of iOS
 
 ### Mobile App packages
 

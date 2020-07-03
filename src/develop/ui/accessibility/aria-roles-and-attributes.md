@@ -1,6 +1,6 @@
 ---
-summary: Learn how to make your OutSystems Reactive Web applications accessible to everyone.
-tags: accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
+summary: Learn about Accessible Rich Internet Applications (ARIA) roles and attributes and how to add these in your applications.
+tags: accessibility; runtime-reactiveweb; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
 ---
 
 # Accessible Rich Internet Applications roles and attributes
@@ -13,7 +13,7 @@ Adding ARIA attributes and roles requires familiarity with the concepts of ARIA 
 
 When developing OutSystems apps, add ARIA roles, states, and properties by editing the **Attribute** property of the widgets. There are also some actions that handle specific ARIA properties, such as **SetAriaHidden** or **SetAccessibilityRole**.
 
-## **Set ARIA as a static property**
+## Set ARIA as a static property
 
 This ARIA property doesn't change when the app runs. To add the ARIA roles or attributes, select the widget, go to the **Properties** tab, and add the role or attribute in the **Attributes** section.
 
@@ -23,7 +23,7 @@ Similarly, you can set an ARIA role.
 
 ![Setting an aria role](images/set-aria-role-ss.png)
 
-## **Set ARIA dynamically**
+## Set ARIA dynamically
 
 This ARIA property changes when the app runs, depending on a condition. To set an ARIA role or attribute dynamically, use the **If** keyword in the expression of the **Attribute** field. For example, the value of **aria-invalid** in the expression **aria-invalid=If(Form1.Valid, "false", "true")** changes depending on whether the **Form1.Valid** is true or false.
 
@@ -31,7 +31,7 @@ If the form is invalid, because one of the required fields is missing or a value
 
 ![Setting the aria property dynamically](images/set-aria-dynamically-ss.png)
 
-## **The built-in ARIA actions**
+## The built-in ARIA actions
 
 These are the built-in actions that support setting ARIA attributes. Use them to set the ARIA properties in your logic flows.
 
@@ -53,7 +53,7 @@ The **SetAccessibilityRole** actions is designed to work with the Alert pattern.
  
 </div>
 
-## **Examples of ARIA**
+## Examples of ARIA
 
 This section shows some examples of how you can use ARIA to extend the functionality of the OutSystems UI.
 
@@ -133,39 +133,3 @@ The following steps describe how to add an **aria-label** to describe the purpos
 
 4. The procedure is complete.
 
-# **Testing and fixing accessibility issues**
-
-It's important that you test for accessibility issues and fix them early in development. This sections shows a quick example of using the WAVE accessibility evaluation tool, identifying issues, and addressing them in Service Studio. WAVE shows issues as visual markers on the page, which lets you focus on the low-code approach of the app development. You can also audit your apps with Lighthouse, integrated in the Chrome DevTools.
-
-## **Build a page**
-
-In Service Studio create a screen, publish the app, and open it in your browser. Here is an example of a simple screen with a title and an image.
-
-![A sample page](images/a-sample-page-ss.png)
-
-## **Test for accessibility**
-
-To test your page for accessibility, perform the following steps:
-
-1. Load the page.
-1. Click on the WAVE extension (1) to start testing.
-    The existing issues show on top of the page elements.
-1. Click an error marker (2) to open a pop-up box with the notes. In this example, a page title is missing.
-1. Click the reference link (3) to see which success criteria the issue affects. In this example it's the "2.4.2 Page Titled" rule, which is the Level A success criteria (4).
-
-![Testing the accessibility](images/test-for-accessibility.png)
-
-There are other issues with this page. There is no heading, and the image is missing the alternative text.
-
-<div class="info" markdown="1">
- 
-The accessibility analysis shows page structural elements and ARIA annotation. These elements and annotations come from the OutSystems UI by default.
- 
-</div>
-
-
-## **Fix the accessibility issues**
-
-To fix all the issues from this example, follow the instructions in the [Basic accessibility settings](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Basic_accessibility_settings) section. After some quick edits, the page now has a title, the language definition, and the image has an alt text. If you check the page again, the report shows zero errors.
-
-![Fixing the accessibility issues](images/fixing-accessibility-issues.png)

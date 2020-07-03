@@ -47,7 +47,7 @@ In the following example, we define three zones:
 * The "B2E" deployment zone has one associated server: Server 2
 * The "Public" deployment zone has one associated server: Server 3
 
-![](<images/intro-diagram-front-ends.png>)
+![](<images/intro-front-ends-diag.png>)
 
 Then, we configure three modules associating them with a given deployment zone:
 
@@ -57,7 +57,7 @@ Then, we configure three modules associating them with a given deployment zone:
 
 The modules will be deployed to the three servers according to the following diagram:
 
-![](<images/intro-diagram-modules.png>)
+![](<images/intro-modules-diag.png>)
 
 Deployment zones can be configured to perform one of two different kinds of deployments: deploying to a regular Internet Information Services (IIS) web server &#8212; a hosted technology named "Classic Virtual Machines" &#8212;, or deploying to a [container-based infrastructure](<../../containers/app-run.md>), supporting different hosting technologies.
 
@@ -73,7 +73,7 @@ In the following scenario, we have an application named "Front-end App" exposing
 
 The "Back-end Service" is discovered by the "Front-end App" through the deployment zone address of the "Back-end Service". This address might vary according to your network architecture and is defined by you in the "[Deployment Zone Address](<reference.md>)" parameter when creating the deployment zone.
 
-![](<images/interdeploymentzonecommunication-singleinstances.png>)
+![](<images/intro-ex-interzonecommunication-single-diag.png>)
 
 ## Example Use Cases
 
@@ -93,7 +93,7 @@ To change the configuration of a web application so that it is only deployed to 
 * Create a new deployment zone (e.g. "Public") containing only the public-facing server;
 * Configure the web application to use the new deployment zone.
 
-![](<images/example-segmented-server.png>)
+![](<images/intro-ex-segmented-server-diag.png>)
 
 After these steps, the application you just configured will only be deployed to the public-facing server, and it will be removed from any other servers belonging to the previously configured deployment zone. Internet users will access the application through the public server address. 
 
@@ -113,7 +113,7 @@ To change the configuration of the web application so that it is only deployed t
 1. Create a new deployment zone (e.g. "Intranet") containing only the internal server.
 1. Configure the web application to use the new deployment zone.
 
-![](<images/example-internal-application.png>)
+![](<images/intro-ex-internal-app-diag.png>)
 
 After these steps, the application you just configured will only be deployed to the internal server, and it will be removed from any other servers belonging to the previously configured deployment zone. Internal end users will access the application through the internal server address. 
 
@@ -130,7 +130,7 @@ To correctly deploy a web application to these two public-facing servers and do 
 1. Configure the web application to use the new deployment zone.
 1. Set up a load balancer that will route the requests to the application module URLs in one of the public-facing servers that you configured in the deployment zone.
 
-![](<images/example-load-distribution.png>)
+![](<images/intro-ex-load-distribution-diag.png>)
 
 After doing these configurations, the web application will be deployed in the two public-facing servers. Users will access the modules using the address of the load balancer, which will hand over the requests to the configured servers in the "Public" deployment zone.
 

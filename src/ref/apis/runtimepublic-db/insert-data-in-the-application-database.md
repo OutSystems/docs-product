@@ -1,26 +1,25 @@
 ---
-summary: Use the RuntimePublic API to insert data in the application database.
+summary: Use the RuntimePublic.Db API to insert data in the application database.
 tags: 
 ---
 
-# Insert Data in the Application Database
+# Insert data in the application database
 
-Use the RuntimePublic API to insert data in the application database following this pattern:
+Use the [RuntimePublic.Db API](<intro.md>) to insert data in the application database following this pattern:
 
 1. Retrieve a `DatabaseProvider` from the `DatabaseAccess` instance.
 1. Use the provider to create a transaction.
 1. Use the transaction to create a `Command`.
 1. Use the `Command` to create command parameters.
 1. Execute the `Command`.
-1. Retrieve the `Command` results. 
+1. Retrieve the `Command` results.
 
 ## Example
 
-In this example, we add a record to the USEDITEM table that is in the application database.
+The following example shows how you can add a record to the `USEDITEM` table that's in the application database.
 
-### C# Code Sample
+### C# code sample
 
-    
 ```csharp
 using OutSystems.RuntimePublic.Db;
 
@@ -44,10 +43,10 @@ using (RequestTransaction requestTransaction = dbaProvider.GetRequestTransaction
             // their respective values. Each engine has its own parameter prefix so you can
             // use this function to make your SQL database agnostic
             sqlHelper.PrefixParam("desc"), sqlHelper.PrefixParam("age")))) {
-                
+
         cmd.CreateParameter(sqlHelper.PrefixParam("desc"), DbType.String, "Car");
         cmd.CreateParameter(sqlHelper.PrefixParam("age"), DbType.Int32, 3);
         cmd.ExecuteNonQuery();
     }
 }
-```    
+```

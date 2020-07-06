@@ -1,24 +1,24 @@
 ---
-summary: Protect your apps against tampering. OutSystems App Shield works by repackaging the build into a more secure version of it that can detect attempts of modification. 
+summary: Protect your apps against tampering. OutSystems AppShield works by repackaging the build into a more secure version of it that can detect attempts of modification. 
 tags: support-application_development; runtime-mobile;
 ---
 
-# OutSystems App Shield for native mobile apps
+# OutSystems AppShield for native mobile apps
 
-OutSystems App Shield is a feature that lets you harden the protection of your Android and iOS apps. OutSystems App Shield works by repackaging the builds from Mobile Apps Build Service (MABS) and adding features against tampering.
+OutSystems AppShield is a feature that lets you harden the protection of your Android and iOS apps. OutSystems AppShield works by repackaging the builds from Mobile Apps Build Service (MABS) and adding features against tampering.
 
 <div class="info" markdown="1">
 
-To use OutSystems App Shield, you need to have a license. If you haven't got it already, contact the sales team.
+To use OutSystems AppShield, you need to have a license. If you haven't got it already, contact the sales team.
 
 </div>
 
 ## Prerequisites
 
-To protect your apps with OutSystems App Shield, you need to meet the following requirements.
+To protect your apps with OutSystems AppShield, you need to meet the following requirements.
 
-* You installed the OutSystems App Shield plugin in your environment.
-* You have a license for OutSystems App Shield.
+* You installed the OutSystems AppShield plugin in your environment.
+* You have a license for OutSystems AppShield.
 * You're using MABS 6.1 and later.
 
 Additionally:
@@ -28,7 +28,7 @@ Additionally:
 
 ## Supported features
 
-These are the features you can use with the current release of the App Shield plugin.
+These are the features you can use with the current release of the AppShield plugin.
 
 ### Android
 
@@ -54,16 +54,16 @@ Protection available for the iOS builds.
 * Debugger protection
 * Screenshot protection
 
-## How to use OutSystems App Shield
+## How to use OutSystems AppShield
 
-To create a mobile app build with OutSystems App Shield to hardened security, do the following:
+To create a mobile app build with OutSystems AppShield to hardened security, do the following:
 
-1. Install the OutSystems App Shield component.
-2. Add OutSystems App Shield dependencies to your app. Press **Ctrl+Q** to open the **Manage Dependencies** window. Enter `OutSystemsAppShieldPlugin` in the producer search field and then select all the elements in the right pane. Click **Apply** to add the references to your app and close the window.
+1. Install the OutSystems AppShield component.
+2. Add OutSystems AppShield dependencies to your app. Press **Ctrl+Q** to open the **Manage Dependencies** window. Enter `OutSystemsAppShieldPlugin` in the producer search field and then select all the elements in the right pane. Click **Apply** to add the references to your app and close the window.
 
     ![Manage dependencies](images/reference-appshield-ss.png?width=600)
 
-3. Optionally, configure OutSystems App Shield by editing Extensibility Settings in the module properties.
+3. Optionally, configure OutSystemsApp Shield by editing Extensibility Settings in the module properties.
 4. Publish the app.
 5. Create native mobile builds of the app.
 
@@ -115,7 +115,7 @@ In the current version, only the code of the core native shell and supported plu
 
 ## Reference
 
-These are the values on the OutSystems App Shield configuration JSON.
+These are the values on the OutSystems AppShield configuration JSON.
 
 | Value                        | Type       | OS           | Description                                                            |
 | ---------------------------- | ---------- | ------------ | ---------------------------------------------------------------------- |
@@ -128,15 +128,15 @@ These are the values on the OutSystems App Shield configuration JSON.
 
 ## Limitations
 
-OutSystems App Shield has the following limitations. 
+OutSystems AppShield has the following limitations. 
 
-* On iOS, the plugin doesn't block user-initiated screenshots, but only to notify the app that a screenshot was taken. OutSystems currently doesn't support this event. However, App Shield blocks taking screenshots of iOS App Switcher.
+* On iOS, the plugin doesn't block user-initiated screenshots, but only to notify the app that a screenshot was taken. OutSystems currently doesn't support this event. However, AppShield blocks taking screenshots of iOS App Switcher.
 * Only the supported OutSystems mobile plugins are obfuscated.
 * Native Android Service Center logs are obfuscated. You need to use an external tool to deobfuscate the logs.
 * JavaScript files obfuscation isn't supported. OutSystems provides guidance to obfuscate JavaScript.
 * Native iOS bitcode obfuscation isn't supported.
 * You need to contact Support to get the mapping files.
-* After MABS creates a build, with the App Shield plugin active, and signs the build, you can't sign that build again manually because the app would recognize that as signs of tampering.  
+* After MABS creates a build, with the AppShield plugin active, and signs the build, you can't sign that build again manually because the app would recognize that as signs of tampering.  
 
 ## How to retrace Android obfuscated logs
 
@@ -166,11 +166,11 @@ These are the prerequisites to deobfuscate the logs.
 
     ![Proguard UI](images/proguard-log.png?width=600) 
 
-## Known limitations
+### Known limitations
 
 The lines that for parsing can't have the timestamp, which is what logcat tools usually produce. Instead, the lines must start with the **at** keyword.
 
-## More information
+### More information
 
 For more information see:
 
@@ -180,8 +180,8 @@ For more information see:
 
 ## Troubleshooting
 
-Here are fixes you can try if you notice issues when using OutSystems App Shield.  
+Here are fixes you can try if you notice issues when using OutSystems AppShield.  
 
 ### The app build fails
 
-Make sure you have a license for OutSystems App Shield. Without the license, the MABS rejects the build.
+Make sure you have a license for OutSystems AppShield. Without the license, the MABS rejects the build.

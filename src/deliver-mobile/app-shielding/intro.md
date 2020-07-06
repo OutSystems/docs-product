@@ -9,7 +9,7 @@ OutSystems App Shield is a feature that lets you harden the protection of your A
 
 <div class="info" markdown="1">
 
-To use OutSystems App Shield, you need to have a license. If you haven't got it already, contact our sales team.
+To use OutSystems App Shield, you need to have a license. If you haven't got it already, contact the sales team.
 
 </div>
 
@@ -61,7 +61,7 @@ To create a mobile app build with OutSystems App Shield to hardened security, do
 1. Install the OutSystems App Shield component.
 2. Add OutSystems App Shield dependencies to your app. Press **Ctrl+Q** to open the **Manage Dependencies** window. Enter `OutSystemsAppShieldPlugin` in the producer search field and then select all the elements in the right pane. Click **Apply** to add the references to your app and close the window.
 
-    ![Manage dependencies](images/reference-appshield-ss.png?width=400)
+    ![Manage dependencies](images/reference-appshield-ss.png?width=600)
 
 3. Optionally, configure OutSystems App Shield by editing Extensibility Settings in the module properties.
 4. Publish the app.
@@ -142,7 +142,7 @@ OutSystems App Shield has the following limitations.
 
 The purpose of the obfuscation is to make the app harder to reverse-engineer. During the obfuscation process, the platform creates a mapping with the old and new names of methods and classes.
 
-When an app is obfuscated, an error stack trace might look like this:
+In an obfuscated app, an error stack trace might look like this:
 
 ![Obfuscation example](images/obfuscated.png?width=600)
 

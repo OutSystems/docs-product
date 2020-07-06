@@ -426,6 +426,10 @@
     - topics:
         - href: deliver-mobile/mobile-apps-build-service/android-support-library-versions.md
     - href: deliver-mobile/distribute-pwa/intro.md
+    #
+    # NOTE: Please keep this topic unlisted in table of content.
+    # - href: deliver-mobile/app-shielding/intro.md
+    #
     - href: deliver-mobile/compliance-with-third-party-licenses.md
 
 # Extensibility and Integration

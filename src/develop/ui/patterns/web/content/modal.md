@@ -35,7 +35,7 @@ For the purposes of this example, our app already contains a form where the user
 
 1. Enter a name for the screen action. In this example, we enter `ConfirmSend`.
 
-    ![](<images/modal-11-ss.png?>)
+    ![](<images/modal-11-ss.png>)
 
 1. Select the **Logic** tab, navigate to **OutSystemsUIWeb > Modal** and drag the **ToggleModal** onto the screen action.
 
@@ -47,11 +47,11 @@ For the purposes of this example, our app already contains a form where the user
 
 1. In this example, to close the Modal, we need to set the **Method** and **Destination** properties for the **No** button. To do this, double-click your screen name, select the **No** button, and on the **Properties** tab, from the **Method** drop-down, select **Ajax Submit** and from the **Destination** select the screen action you previously created. In this case **ConfirmSend**.
 
-    ![](<images/modal-12-ss.png?>)
+    ![](<images/modal-12-ss.png>)
 
 1. On the **Properties** tab, you can change the Modal's look and feel by setting the (optional) properties.
 
-    ![](<images/modal-4-ss.png?>)
+    ![](<images/modal-4-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

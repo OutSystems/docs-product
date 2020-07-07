@@ -1,11 +1,11 @@
 ---
 tags: runtime-mobileandreactiveweb
-summary: Displays feedback messages to the user. Used to display personalized feedback messages, specifying options like custom style and auto-close behavior.
+summary: Displays personalized feedback messages to the user.
 ---
 
 # FeedbackMessage
 
-Displays feedback messages to the user. Used to display personalized feedback messages, specifying options like custom style and auto-close behavior.
+Displays personalized feedback messages to the user.
 
 ## Summary
 
@@ -25,7 +25,7 @@ Closes the FeedbackMessage that is currently open.
 <tr>
 <td>[showFeedbackMessage](feedbackmessage.md#showfeedbackmessage)</td>
 <td>
-Shows a FeedbackMessage with the specified message, style, auto-closing behavior and HTML encoding options.
+Shows a FeedbackMessage with a specified message. You can enable HTML encoding, add CSS classes, and set the behavior on click.
 </td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ Returns: void
 
 **showFeedbackMessage(message: string, messageType: FeedbackMessageType, [encodeHTML: boolean = true], [extraCssClasses: string], [closeOnClick: boolean = true], [onClick: function]): void**
 
-Shows a FeedbackMessage with the specified message, style, auto-closing behavior and HTML encoding options.
+Shows a FeedbackMessage with a specified message. You can enable HTML encoding, add CSS classes, and set the behavior on click.
 
 Example:
 

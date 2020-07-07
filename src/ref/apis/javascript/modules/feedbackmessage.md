@@ -25,7 +25,7 @@ Closes the FeedbackMessage that is currently open.
 <tr>
 <td>[showFeedbackMessage](feedbackmessage.md#showfeedbackmessage)</td>
 <td>
-Shows a FeedbackMessage with the specified message, style, and HTML encoding options.
+Shows a FeedbackMessage with a specified message. You can enable HTML encoding, add CSS classes, and set the behavior on click.
 </td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ Returns: void
 
 **showFeedbackMessage(message: string, messageType: FeedbackMessageType, [encodeHTML: boolean = true], [extraCssClasses: string], [closeOnClick: boolean = true], [onClick: function]): void**
 
-Shows a FeedbackMessage with the specified message, style, and HTML encoding options.
+Shows a FeedbackMessage with a specified message. You can enable HTML encoding, add CSS classes, and set the behavior on click.
 
 Example:
 

@@ -25,8 +25,8 @@ For more sophisticated functions of a chatbot, for example, ability to understan
 
 The OutSystems.AI Chatbot component consists of the user interface Blocks, a webhook module, and sample logic. When you install the component, you can:
 
-* Use the Chatbot Block to create a **user interface** for the chatbot. This is a drag and drop out-of-box solution that should fit most use cases.
-* Create a module that handles the chatbot **response logic**. The module comes with Chatbot Webhook template app that is part of the OutSystems.AI Chatbot component. Use it to combine responses from Azure services and access your OutSystems resources. You need this module if you want to use UI elements like thumbnail cards or send file links.  
+* Use the Chatbot Block to create a **user interface** for the chatbot. This is a drag-and-drop solution that should fit most use cases.
+* Create a module that handles the chatbot **response logic**. The module comes with Chatbot Webhook template app that's part of the OutSystems.AI Chatbot component. Use it to combine responses from Azure services and access your OutSystems resources. You need this module if you want to use UI elements like thumbnail cards or send file links.  
 * Create your user interface while using existing data structures and logic. This is useful when you want a full control over the user **interface design**.
 
 The component is available as:

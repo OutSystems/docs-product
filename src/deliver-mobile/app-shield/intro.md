@@ -5,7 +5,7 @@ tags: support-application_development; runtime-mobile;
 
 # OutSystems AppShield for native mobile apps
 
-OutSystems AppShield is a feature that lets you harden the protection of your Android and iOS apps. OutSystems AppShield works by repackaging the builds from Mobile Apps Build Service (MABS) and adding features against tampering.
+OutSystems AppShield is a feature that lets you harden the protection of your native Android and iOS apps. OutSystems AppShield works by repackaging the builds from Mobile Apps Build Service (MABS) and adding features against tampering.
 
 <div class="info" markdown="1">
 
@@ -15,16 +15,16 @@ To use OutSystems AppShield, you need to have a license. If you haven't got it a
 
 ## Prerequisites
 
-To protect your apps with OutSystems AppShield, you need to meet the following requirements.
+To protect your apps with AppShield, you need to meet the following requirements.
 
-* You installed the OutSystems AppShield plugin in your environment.
-* You have a license for OutSystems AppShield.
+* You installed the AppShield plugin in your environment. You can [download the plugin from this link](https://drive.google.com/drive/folders/1bkb7LIV-LVVePniK-Zvb4gkfRYC7SE8E) after you have access to it.
+* You have a license for AppShield.
 * You're using MABS 6.1 and later.
 
 Additionally:
 
 * You need to rebuild and redistribute the mobile apps that you want to protect.
-* Be aware that the app file size increases after hardening the security. 
+* Account for the app file size increases after hardening the security, and additional time for MABS to create the build.  
 
 ## Supported features
 
@@ -56,20 +56,30 @@ Protection available for the iOS builds.
 
 ## How to use OutSystems AppShield
 
-To create a mobile app build with OutSystems AppShield to hardened security, do the following:
+To create a mobile app build with AppShield to hardened security, do the following:
 
-1. Install the OutSystems AppShield component.
-2. Add OutSystems AppShield dependencies to your app. Press **Ctrl+Q** to open the **Manage Dependencies** window. Enter `OutSystemsAppShieldPlugin` in the producer search field and then select all the elements in the right pane. Click **Apply** to add the references to your app and close the window.
+1. Install the AppShield component.
+2. Add AppShield dependencies to your app. Press **Ctrl+Q** to open the **Manage Dependencies** window. Enter `OutSystemsAppShieldPlugin` in the producer search field and then select all the elements in the right pane. Click **Apply** to add the references to your app and close the window.
 
     ![Manage dependencies](images/reference-appshield-ss.png?width=600)
 
-3. Optionally, configure OutSystemsApp Shield by editing Extensibility Settings in the module properties.
 4. Publish the app.
 5. Create native mobile builds of the app.
 
 ### Configuration
 
-Here is an example of the JSON for Extensibility Configurations. You can use different sets of settings for iOS and Android.
+AppShield is enabled by default when you install it. You may want to disable it in one or more environments for **testing purposes**.
+
+* To disable AppShield functionalities in one or more environments, edit the Extensibility Configuration settings **in LifeTime** for the environment. Disabling the plugin in the development environment, for example, lets you run the app in emulators or a debugging mode.
+* To disable AppShield functionalities globally, edit the Extensibility Configuration settings **in Service Studio**. LifeTime copies configuration from Service Studio to environments during deployment. 
+
+<div class="info" markdown="1">
+
+When working with AppShield JSON for Extensibility Configuration, keep in mind that specific settings override global settings.
+
+</div>
+
+Here is an example of the JSON for Extensibility Configurations. You can use different sections for iOS and Android.
 
 ```
 {
@@ -108,35 +118,45 @@ Here is an example of the JSON for Extensibility Configurations. You can use dif
 }
 ```
 
+### Configuration reference
+
+These are the values available in the AppShield configuration JSON.
+
+| Value                        | Type       | OS           | Description                                                            |
+| ---------------------------- | ---------- | ------------ | ---------------------------------------------------------------------- |
+| DisableAppShielding          | boolean    | iOS, Android | Activates or deactivates App Shield.                                |
+| AllowScreenshot              | boolean    | iOS, Android | If set to true, allows users to take screenshots of the app.           |
+| AllowJailbrokenRootedDevices | boolean    | iOS          | If set to true, allows users to run the app on the jailbroken devices. |
+| global                       | JSON value | iOS, Android | Settings in this section apply to both Android and iOS builds.         |
+| android                      | JSON value | Android      | The key denoting values that apply to the Android devices.             |
+| ios                          | JSON value | iOS          | The key denoting values that apply to the iOS devices.                 |
+
+
 ## Obfuscation
 
 In the current version, only the code of the core native shell and supported plugins are obfuscated. A crash from the core OutSystems components generates an obfuscated stack trace.
 
-
-## Reference
-
-These are the values on the OutSystems AppShield configuration JSON.
-
-| Value                        | Type       | OS           | Description                                                            |
-| ---------------------------- | ---------- | ------------ | ---------------------------------------------------------------------- |
-| android                      | JSON value | Android      | The key denoting values that apply to the Android devices.             |
-| AllowScreenshot              | boolean    | iOS, Android | If set to true, allows users to take screenshots of the app.           |
-| AllowJailbrokenRootedDevices | boolean    | iOS          | If set to true, allows users to run the app on the jailbroken devices. |
-| DisableAppShielding          | boolean    | iOS, Android | Activates or deactivates OutSystems App Shield.                                |
-| global                       | JSON value | iOS, Android | Settings in this section apply to both Android and iOS builds.         |
-| ios                          | JSON value | iOS          | The key denoting values that apply to the iOS devices.                 |
-
 ## Limitations
 
-OutSystems AppShield has the following limitations. 
+AppShield has the following limitations. 
 
-* On iOS, the plugin doesn't block user-initiated screenshots, but only to notify the app that a screenshot was taken. OutSystems currently doesn't support this event. However, AppShield blocks taking screenshots of iOS App Switcher.
-* Only the supported OutSystems mobile plugins are obfuscated.
-* Native Android Service Center logs are obfuscated. You need to use an external tool to deobfuscate the logs.
+### General
+
+Non-specific limitations.
+
+* On iOS the plugin doesn't block user-initiated screenshots, it only notifies the app that a screenshot was taken. OutSystems currently doesn't support this event. However, AppShield blocks taking screenshots of the iOS App Switcher.
+* After MABS creates a build, with the AppShield plugin active, and signs the build, you can't sign that build again manually because the app would recognize that as signs of tampering.
+
+### Obfuscation
+
+The limitations that are specific to the obfuscation.
+
+* The plugin obfuscates only the supported OutSystems mobile plugins.
+* The plugin obfuscates native Android logs in Service Center. You need to use an external tool to deobfuscate the logs.
 * JavaScript files obfuscation isn't supported. OutSystems provides guidance to obfuscate JavaScript.
 * Native iOS bitcode obfuscation isn't supported.
 * You need to contact Support to get the mapping files.
-* After MABS creates a build, with the AppShield plugin active, and signs the build, you can't sign that build again manually because the app would recognize that as signs of tampering.  
+
 
 ## How to retrace Android obfuscated logs
 
@@ -172,16 +192,8 @@ The lines that for parsing can't have the timestamp, which is what logcat tools 
 
 ### More information
 
-For more information see:
+For more information, see:
 
 * [Write and View Logs with Logcat](https://developer.android.com/studio/debug/am-logcat#format)
 * [ReTrace](https://www.guardsquare.com/en/products/proguard/manual/retrace)
 * [ProGuard](https://www.guardsquare.com/en/products/proguard)
-
-## Troubleshooting
-
-Here are fixes you can try if you notice issues when using OutSystems AppShield.  
-
-### The app build fails
-
-Make sure you have a license for OutSystems AppShield. Without the license, the MABS rejects the build.

@@ -154,6 +154,12 @@ Non-specific limitations.
 
 The limitations that are specific to the obfuscation.
 
+<div class="info" markdown="1">
+
+We know how important obfuscation of JavaScript is to our customers. Our development team is working hard on delivering JavaScript obfuscation in one of the upcoming versions of AppShield.
+
+</div>
+
 * The plugin obfuscates only the supported OutSystems mobile plugins.
 * The plugin obfuscates native Android logs in Service Center. You need to use an external tool to deobfuscate the logs.
 * JavaScript files obfuscation isn't supported. OutSystems provides guidance to obfuscate JavaScript.

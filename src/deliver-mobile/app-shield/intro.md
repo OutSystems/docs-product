@@ -5,7 +5,7 @@ tags: support-application_development; runtime-mobile;
 
 # OutSystems AppShield for native mobile apps
 
-OutSystems AppShield is a feature that lets you harden the protection of your native Android and iOS apps. OutSystems AppShield works by repackaging the builds from Mobile Apps Build Service (MABS) and adding features against tampering.
+OutSystems AppShield is a feature that lets you harden the protection of your native Android and iOS apps. OutSystems AppShield is fully integrated with Mobile Apps Build Service (MABS) builds and adds protection at runtime and at rest.
 
 <div class="info" markdown="1">
 
@@ -68,14 +68,17 @@ To create a mobile app build with AppShield to hardened security, do the followi
 
 ### Configuration
 
-AppShield is enabled by default when you install it. You may want to disable it in one or more environments for **testing purposes**.
+AppShield and its features are enabled by default when you install it. You may want to disable it in one or more environments for **testing purposes**.
 
-* To disable AppShield functionalities in one or more environments, edit the Extensibility Configuration settings **in LifeTime** for the environment. Disabling the plugin in the development environment, for example, lets you run the app in emulators or a debugging mode.
+* To disable AppShield functionalities in one or more environments, edit the Extensibility Configuration settings **in LifeTime** for the environment. Disabling the plugin in the development environment, for example, lets you run the app in emulators or debug the app.
 * To disable AppShield functionalities globally, edit the Extensibility Configuration settings **in Service Studio**. LifeTime copies configuration from Service Studio to environments during deployment. 
 
 <div class="info" markdown="1">
 
-When working with AppShield JSON for Extensibility Configuration, keep in mind that specific settings override global settings.
+When working with AppShield JSON for Extensibility Configuration, keep in mind:
+
+* Specific settings in Extensibility Configuration override global Extensibility Configuration settings.
+* Extensibility Configuration settings in LifeTime override the Extensibility Configuration in Service Studio.
 
 </div>
 
@@ -134,7 +137,7 @@ These are the values available in the AppShield configuration JSON.
 
 ## Obfuscation
 
-In the current version, only the code of the core native shell and supported plugins are obfuscated. A crash from the core OutSystems components generates an obfuscated stack trace.
+In the current version, native code from the shell and supported plugins are obfuscated. A crash from the core OutSystems components generates an obfuscated stack trace.
 
 ## Limitations
 

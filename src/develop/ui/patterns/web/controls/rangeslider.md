@@ -7,10 +7,6 @@ summary: Range Slider gives the end users an option to select a value within a c
 
 You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track, increases or decreases the value.  
 
-Set a value by dragging a handle within a configured range.
-
-Offer the UI control for letting end users select a value from a fixed set of options.
-
 **How to use the Range Slider UI Pattern**
 
 In this example, we create a Range Slider that allows the user select the number of months it will take them to pay back a loan.

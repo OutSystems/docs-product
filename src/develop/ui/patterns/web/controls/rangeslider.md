@@ -35,28 +35,31 @@ In this example, we create a Range Slider that allows the user select the number
 
     By default, the **SelectedValue** input parameter is created.  
     
-    ![](images/rangeslider-6-ss.png)
+    ![](images/rangeslider-6-ss.png?width=800)
 
-1. So that the **SelectedValue** paramenter reads the range slider selection, from the Toolbox, add the **Assign** action to the client action.
-
-    ![](images/rangeslider-10-ss.png)
-
-1. Set the Assign **Variable** to the local variable you created, and the Assign **Value** to the automatically generated input parameter (Value).
-
-    ![](images/rangeslider-11-ss.png)
-
-1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen, and add your content to the Container placeholder. In this example, we add some text and an expression.
-
-    ![](images/rangeslider-7-ss.png)
-
-1. To create a variable for the expression, right-click your screen name, select **Add Local Variable**, and on the **Properties** tab, enter a name and data type (in this example, we use Decimal).
+1. To store the current slider value, create a local variable by right-clicking on your screen name, selecting **Add Local Variable**, and on the **Properties** tab, enter a name and data type (in this example, we use Decimal).
 
     ![](images/rangeslider-8-ss.png)
 
+1. So that the **SelectedValue** parameter reads the range slider selection, from the Toolbox, add the **Assign** action to the screen action.
+
+    ![](images/rangeslider-10-ss.png)
+
+1. Set the Assign **Variable** to the local variable you created, and the Assign **Value** to the automatically generated input parameter (SelectedValue).
+
+    ![](images/rangeslider-11-ss.png)
+
+1. To display the range slider value, from the Toolbox, drag the Container widget into the Main Content area of your application's screen, enter a name for the Container and add your content to the Container placeholder. In this example, we enter ``DisplayValue`` for the name and add some text and an expression to the Container.
+
+    ![](images/rangeslider-7-ss.png)
+
+1. From the Toolbox, add the **Ajax Refresh** action to the screen action and in the **Select Widget** pop-up, navigate to and select the Container widget name (in this example, DisplayValue), and click **OK**.
+
+    ![](images/rangeslider-12-ss.png?width=800)
+
 1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
 
-    ![](images/rangeslider-9-ss.png)
-
+    ![](images/rangeslider-9-ss.png?width=800)
 
 1. From the **Properties** tab, you can change the Range Slider's look and feel by setting the (optional) properties.
 
@@ -66,7 +69,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 **Result**
 
-![](images/rangeslider-12-ss.png)
+![](images/rangeslider-13-ss.png?width=800)
 
 
 ## Properties

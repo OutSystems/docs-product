@@ -11,6 +11,8 @@ You can use the Toggle Button UI Pattern to provide users with a stand-alone con
 
 **How to use the Toggle Button UI Pattern**
 
+In this example, we create a toggle button to activate a widget that can is activated only when a condition is met.
+
 1. In Service Studio, in the Toolbox, search for `Toggle Button`. 
 
     The Toggle Button widget is displayed.
@@ -25,13 +27,25 @@ You can use the Toggle Button UI Pattern to provide users with a stand-alone con
 
     ![](<images/togglebutton-8-ss.png>)
 
-1. Enter a name and select a data type. In this example, we enter the name ``ToggleValue`` and set the data type to **Boolean**.
+1. Enter a name and select a data type. In this example, we enter the name ``IsToggled``, set the data type to **Boolean** and the default value to **False**.
 
     ![](<images/togglebutton-9-ss.png>)
 
-1. Select the Checkbox widget, and on the **Properties** tab, select the local variable you created. 
+1. In this example, we add some text and a button. We enter a name for the button (SubmitButton), and set the **Enabled** property to the local variable we created earlier (IsToggled). 
 
-    ![](<images/togglebutton-10-ss.png>)
+    ![](images/togglebutton-11-ss.png?width=800) 
+
+1. Select the Checkbox widget, and on the **Properties** tab, from the **Variable** drop-down, select the local variable you just created (in this example, **IsToggled**). 
+
+    ![](images/togglebutton-10-ss.png?width=800) 
+
+1. From the OnChange **Destination** drop-down, select **New Screen Action**.
+
+    ![](images/togglebutton-12-ss.png?width=800) 
+
+1. From the Toolbox, add the **Ajax Refresh** to the screen action, and in the **Select Widget** pop-up, navigate to and select the Submit button name (in this example, SubmitButton), and click **OK**.
+
+    ![](images/togglebutton-13-ss.png?width=800) 
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

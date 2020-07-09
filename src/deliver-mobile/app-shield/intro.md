@@ -1,5 +1,5 @@
 ---
-summary: Protect your apps against tampering. OutSystems AppShield works by repackaging the build into a more secure version of it that can detect attempts of modification. 
+summary: Protect your mobile apps against tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse.
 tags: support-application_development; runtime-mobile;
 ---
 

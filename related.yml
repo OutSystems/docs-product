@@ -1047,25 +1047,23 @@
         - "How to Add Video to Your Applications": 
             https://success.outsystems.com/Documentation/How-to_Guides/Front-End/How_to_Add_Video_to_Your_Applications
 - develop/ui/patterns/web/layout/layout-login.md:
+    - ref/ui-patterns/web/layout-login.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LayoutLogin.aspx
 - develop/ui/patterns/web/layout/layout-loginsplit.md:
+    - ref/ui-patterns/web/layout-loginsplit.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LayoutLoginSplit.aspx  
 - develop/ui/patterns/web/layout/layout-popup.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
 - develop/ui/patterns/web/layout/layout-sidemenu.md:
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+    - ref/ui-patterns/web/layout-sidemenu.md
 - develop/ui/patterns/web/layout/layout-topmenu.md:
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+    - ref/ui-patterns/web/layout-topmenu.md
 - develop/ui/patterns/web/layout/loginform.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

@@ -65,3 +65,20 @@ With master-detail relationships, handle details as a collection under the maste
 Default Endpoint  |  URL Path  |  Customized Endpoint  
 ---|---|---  
 `GET /PhoneAPI/rest/v1/GetContactAddresses` | `/Contacts/{Id}/Addresses` | `GET /PhoneAPI/rest/v1/Contacts/{Id}/Addresses`
+
+## Final remarks
+
+* You can't use the reserved characters "?" and "=" in custom REST URLs of exposed REST API methods.  
+    These characters belong in the query string part of URLs (the part of the URL that starts with a "?" character), and the platform manages the query string part of URLs in exposed REST URL methods.
+
+* When calling an exposed REST API method you must provide any input parameters with the "Receive In" property set to "URL" that aren't included in the custom URL as part of the query string.
+
+    For example, as a follow-up to the examples presented in the previous section, consider an exposed REST API method "GetContactAddress" with two input parameters, "Id" and "AddressId".
+
+    You can set the custom URL of this method to `/Contacts/{Id}/Addresses/{AddressId}`. In this case, all input parameters defined as received in the URL are present in the "URL Path" value. To call this method with `Id=5` (the contact ID) and `AddressId=10` you would use the following URL:
+
+    `GET /PhoneAPI/rest/v1/Contacts/5/Addresses/10`
+
+    You could also set the custom URL to `/Contacts/{Id}/Addresses`, without including the "AddressId" input parameter in the custom URL. In this case, to call the method including a value for the "AddressId" you would include this parameter at the end of the URL as part of the query string:
+
+    `GET /PhoneAPI/rest/v1/Contacts/5/Addresses?AddressId=10`

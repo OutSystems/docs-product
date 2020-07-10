@@ -5,71 +5,66 @@ summary: Modal is a box with content that interrupts the end user and demands an
 
 # Modal
 
-A box with content that is displayed as an overlay on top of the screen.
+You can use the Modal UI Pattern to interrupt the end user and demand an action. It is implemented to direct an end user’s attention to important information. Ideal for when the end user is requested to enter information critical to continuing the current process.
 
-Use the Modal to interrupt the end user and demand an action. It is implemented to direct an end user’s attention to important information. Ideal for when the end user is requested to enter information critical to continuing the current process.
+![](<images/modal-1.png?width=800>)
 
- ![](<images/modal-image-1.png>)
+**How to use the Modal UI Pattern**
 
-**How to use**
+For the purposes of this example, our app already contains a form where the user can enter their queries, and once they send their message, a confirmation message appears by using the Modal widget.
 
-After placing a Modal on the screen, open it by calling a new screen action using a button with its method set to Ajax submit and use the Toggle Modal action (found in the Logic Tab). Use the pattern parameters to define if it has an Overlay, its Position in the page and the Enter/Leave animations. Note that you need to enter a value in the Name field of the widgets to be able to select their IDs.
+1. In Service Studio, in the Toolbox, search for `Modal`.
+  
+    The Modal widget is displayed.
 
-1. Drag the Modal pattern into the preview.
-1. Set the content in the placeholders.
-1. Use a Button Widget or a Link with Ajax Submit to open the Modal Pattern.
-1. In the Destination property, create a new screen action to trigger the modal.
+    ![](<images/modal-5-ss.png>)
 
-    ![](<images/modal-image-2.png>)
+1. To From the Toolbox, drag the Modal widget into the Main Content area of your application's screen, and on the **Properties** tab, enter a name for the widget. In this example we enter `Confirmation`.
 
-1. Inside the action created, use the action ToggleModal and set the WidgetID.
+    ![](<images/modal-6-ss.png?width=800>)
 
-    ![](<images/modal-image-3.png>)
+    By default, the Modal widget contains Title, Icon, Content, and Footer placeholders.
 
-1. Set the Input Parameters to change the default values.
+1. Add your content to the placeholders. In this example we add text to the Title placeholder, text to the Content placeholder, and 2 buttons (Yes and No) to the Footer placeholder.
 
-    ![](<images/modal-image-4.png>)
-   
-When adding Modal to your app, set the correct TriggerButtonId to ensure accessibility support, as this ensures proper focus and accessibility support.
-    
-**How to close Modal**
+    ![](<images/modal-7-ss.png?width=800>)
 
-Users can close the modal widget by pressing the ESC key. If you want to give users an option to close the modal with the button or a link:
+1. In this example, to open the Modal widget, we need to set the **Method** and **Destination** properties for the **Yes** button. To do this, select the **Yes** button, and on the **Properties** tab, from the **Method** drop-down, select **Ajax Submit** and from the **Destination** select **New Screen Action**.
 
-1. Add a button or a link into the Modal widget.
-1. Go to the link/button properties and in the **On Click** section:
-    
-    * In the **Method** list select **Ajax Submit**.
-    * In the **Destination** list select the same action you created to open the modal dialog.
-    
-    The **ToggleModal** action in the existing action closes the modal if it's opened, and opens the modal if it's closed.
- 
- 1. Publish the app and verify the modal closes correctly.
+    ![](<images/modal-8-ss.png?width=800>)
 
-## Input Parameters
+1. Enter a name for the screen action. In this example, we enter `ConfirmSend`.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Position | Set the position of the Modal on the screen. | PositionExtended Identifier | False | Entities.PositionExtended.Center |
-| HasOverlay | When true, an overlay is enabled behind the modal. | Boolean | False | True |
-| EnterAnimation | Set the enter animation. | EnterAnimation Identifier | False | Entities.EnterAnimation.EnterScale |
-| LeaveAnimation | Set the leave animation. | LeaveAnimation Identifier | False | Entities.LeaveAnimation.LeaveScale |
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | False | None |
+    ![](<images/modal-11-ss.png>)
 
+1. Select the **Logic** tab, navigate to **OutSystemsUIWeb > Modal** and drag the **ToggleModal** onto the screen action.
 
-## Layout and Classes
+    ![](<images/modal-9-ss.png?width=800>)
 
-![](<images/modal-image-5.png>)
+1. On the **properties** tab, from the **WidgetId** drop-down, select the Id of the Modal widget. In this example, we select **Confirmation.Id**.
 
-## Advanced Use Case
+    ![](<images/modal-10-ss.png>)
 
-### Change the animation speed
+1. In this example, to close the Modal, we need to set the **Method** and **Destination** properties for the **No** button. To do this, double-click your screen name, select the **No** button, and on the **Properties** tab, from the **Method** drop-down, select **Ajax Submit** and from the **Destination** select the screen action you previously created. In this case **ConfirmSend**.
 
-It is possible to change the animation speed of Modal by using custom CSS. To implement this in your application, copy the CSS to the theme.
+    ![](<images/modal-12-ss.png>)
 
-```css
-.modal .animate {
-    -webkit-animation-duration: 500ms;
-            animation-duration: 500ms;
-}
-```
+1. On the **Properties** tab, you can change the Modal's look and feel by setting the (optional) properties.
+
+    ![](<images/modal-4-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app.
+
+The result of this example looks something like the following:
+
+![](<images/modal-13-ss.png?width=800>)
+
+## Properties
+
+| **Property** |  **Description** |  
+|---|---|
+| Position (PositionExtended Identifier): Optional| Set the position of the Modal on the screen. <p>Examples</p><ul><li>_Blank_ - The modal is positioned in the center of the screen (_Entities.PositionExtended.Center_). This is the default.</li><li>_Entities.PositionExtended.TopLeft_ - The modal is positioned top-left of the screen.</li></ul>|
+| HasOverlay (Boolean): Optional | If True, an overlay is enabled behind the modal. This is the default. If False, there is no overlay. |
+| EnterAnimation (EnterAnimation Identifier): Optional | Define from where the animation enters the screen. <p>Examples</p><ul><li>_Blank_ - The animation goes from a small size to its rendered size (_Entities.EnterAnimation.EnterScale_). This is the default.</li><li>_Entities.EnterAnimation.EnterBottom_ - The animation enters from the bottom of the screen.</li></ul> |  
+| LeaveAnimation (LeaveAnimation Identifier ): Optional | Define from where the animation leaves the screen. <p>Examples</p><ul><li>_Blank_ - The animation goes from its rendered size to a small size.(_Entities.LeaveAnimation.EnterScale_). This is the default.</li><li>_Entities.LeaveAnimation.EnterBottom_ - The animation leaves from the bottom of the screen.</li></ul>|
+| ExtendedClass (Text): Optional |  Add custom style classes to the Modal UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Modal UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Modal UI styles being applied.</li></ul></p> |

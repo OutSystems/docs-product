@@ -60,7 +60,7 @@ An Entity represents a table in a database.
 <td>Set to Yes to expose the entity while protecting its data records from being written in a consumer module.</td>
 <td>Yes</td>
 <td>No</td>
-<td></td>
+<td>Note: Consumer modules can update data records using SQL even when this property is set to Yes.</td>
 </tr>
 <tr>
 <td title="Identifier Attribute">Identifier Attribute</td>

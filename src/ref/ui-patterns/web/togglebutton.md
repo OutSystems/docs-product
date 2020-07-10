@@ -17,7 +17,6 @@ summary: Advanced use cases for the Toggle Button UI Pattern.
 | .toggle-button | .toggle-button-disabled | Is the Class Selector to style the Toggle Button when is disabled |
 | .toggle-button | .toggle-button:after | Is the Pseudo Element Selector to style the circle of Toggle Button |
 
-
 ## Advanced use case
 
 ### Disable the Toggle Button pattern

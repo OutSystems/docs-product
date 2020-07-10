@@ -16,7 +16,9 @@ summary: Advanced use cases for the Search UI Pattern.
 For this example, refer to the [FourColumns Screen Template](https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/FourColumnGallery.aspx).
 
 1. Go to the Search Pattern presented in Column2 inside the Filters_Wrapper container.
+
 1. Drag a container inside the Actions placeholder.
+
 1. Drag a Icon Widget inside that container and choose `Entities.IconName.times` for the Name parameter. This is the X icon.
 
     ![](<images/search-4-ss.png>)
@@ -25,8 +27,10 @@ For this example, refer to the [FourColumns Screen Template](https://outsystemsu
 
     ![](<images/search-5-ss.png>)
 
-1. Add an OnClick event and set the handler to the RefreshTable action. 
-1. Set the parameters ResetFilters and ResetPagination to True. 
+1. Add an OnClick event and set the handler to the RefreshTable action.
+
+1. Set the parameters ResetFilters and ResetPagination to True.
+
 1. In the Category property, set the ProductCategory Local Variable. This way you reset the search input as well as the screen to the default state.
 
     ![](<images/search-6-ss.png>)
@@ -34,5 +38,3 @@ For this example, refer to the [FourColumns Screen Template](https://outsystemsu
 1. Publish and test.
 
     ![](<images/search-7-ss.gif>)
-
-

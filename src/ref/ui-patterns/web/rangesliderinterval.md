@@ -34,17 +34,20 @@ summary: Advanced use cases for the Range Slider Interval UI Pattern.
 
 Write the following CSS in the CSS editor and change the `yourcolor` to your color:
 
-`.range-slider .noUi-connect {
-background: yourcolor;
-}`
+```css
+.range-slider .noUi-connect {
+    background: yourcolor;
+}
+```
 
-Or using the CSS variables:
+Or using the CSS variables: `var(--color-yourcolor)`  
+Example:  
 
-`var(--color-yourcolor)`
-example:
-`.range-slider .noUi-connect {
-background: var(--color-red);
-}`
+```css
+.range-slider .noUi-connect {
+    background: var(--color-red);
+}
+```
 
 ### Removing the || of the handlers
 
@@ -54,4 +57,4 @@ background: var(--color-red);
 
 1. Publish the application.
 
-    ![](images/rangesliderinterval-5-ss.png)
+![](images/rangesliderinterval-5-ss.png)

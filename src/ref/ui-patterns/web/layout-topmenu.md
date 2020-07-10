@@ -8,7 +8,7 @@ summary: Advanced use cases for the Layout Top Menu web block.
 ## Layout and classes
 
 ![](<images/layout-tm-1-diag.png>)
- 
+
 ## Responsive behavior
 
 This layout comes with a default responsive behavior. On tablets it remains the same as on desktop. But on phones it breaks the content vertically, making the placeholders Title and Actions full-width.
@@ -30,13 +30,13 @@ Here are some more advanced use-cases of the widget.
 ### Customize your responsive breakpoints
 
 1. Go to the Common Flow.
-1. Double-click on your Layout to open the widget tree. 
+1. Double-click on your Layout to open the widget tree.
 1. Go to the LayoutTopMenu parameters.
 1. Toggle the DeviceConfiguration 'plus icon'.
 1. Set your custom breakpoints (in pixels). On the example below the phone breaks is set to happen only when the Device with is at 200px.
 1. Publish and test.
 
-    ![](<images/layout-tm-5-ss.png>)
+![](<images/layout-tm-5-ss.png>)
 
 ### Customize your content max-width
 
@@ -44,7 +44,7 @@ Here are some more advanced use-cases of the widget.
 1. In the Grid section, set your custom width (default value is 1280px) in the Max. Width parameter.
 1. Publish and test.
 
-    ![](<images/layout-tm-6-ss.png>)
+![](<images/layout-tm-6-ss.png>)
 
 ## Device compatibility
 
@@ -57,8 +57,7 @@ In Internet Explorer 10 and 11, we added some specific behaviors to account for 
 To override this behavior, add the following code snippet to your CSS theme:
 
 ```css
-.ie10,
-.ie11 {
-   display: block;
+.ie10, .ie11 {
+    display: block;
 }
 ```

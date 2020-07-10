@@ -23,11 +23,11 @@ Drag an image, GIF or video to this placeholder.
 
 1. In the Interface tab, go to the Login screen.
 1. Drag a container to the BackgroundImage placeholder.
-1. Set the Style Classes of that container to `full-height background-your-color`. 
+1. Set the Style Classes of that container to `full-height background-your-color`.
 1. Publish and test.
 
-    ![](<images/layoutlogin-2-ss.png?width=750>)
+![](<images/layoutlogin-2-ss.png?width=750>)
 
 ## Compatibility with other patterns
 
-[LoginForm](loginform.md)
+[Login Form](loginform.md)

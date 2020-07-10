@@ -426,6 +426,10 @@
     - topics:
         - href: deliver-mobile/mobile-apps-build-service/android-support-library-versions.md
     - href: deliver-mobile/distribute-pwa/intro.md
+    #
+    # NOTE: Please keep this topic unlisted in table of content.
+    # - href: deliver-mobile/app-shield/intro.md
+    #
     - href: deliver-mobile/compliance-with-third-party-licenses.md
 
 # Extensibility and Integration
@@ -434,6 +438,7 @@
     - href: extensibility-and-integration/artificial-intelligence/intro.md
     - topics:
         - href: extensibility-and-integration/artificial-intelligence/luis-connector.md
+        - href: extensibility-and-integration/artificial-intelligence/qna-connector.md
         - href: extensibility-and-integration/artificial-intelligence/ml-connector.md
         - href: extensibility-and-integration/artificial-intelligence/text-analysis.md
         - href: extensibility-and-integration/artificial-intelligence/chatbot/intro.md
@@ -442,6 +447,7 @@
             - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-faq-chatbot.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-advanced-chatbot.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-custom-ui.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-outsystems-cards.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-outsystems-add-chatbot.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-outsystems-webhook.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-kb.md
@@ -941,7 +947,9 @@
                 - href: ref/ui-patterns/mobile/rangesliderinterval.md
                 - href: ref/ui-patterns/mobile/splitscreen.md
                 - href: ref/ui-patterns/mobile/stackedcards.md
+                - href: ref/ui-patterns/mobile/swipeevents.md
                 - href: ref/ui-patterns/mobile/tabs-mobile.md
+                - href: ref/ui-patterns/mobile/touchevents.md
             # Designing the Layout
             - href: ref/interfaces/designing-the-layout.md
             - topics:
@@ -1045,40 +1053,56 @@
                     - href: ref/ui-patterns/web/alert.md
                     - href: ref/ui-patterns/web/aligncenter.md
                     - href: ref/ui-patterns/web/animate.md
+                    - href: ref/ui-patterns/web/animatedlabel.md
                     - href: ref/ui-patterns/web/badge.md
                     - href: ref/ui-patterns/web/balloon.md
+                    - href: ref/ui-patterns/web/blankslate.md
                     - href: ref/ui-patterns/web/breadcrumbs.md
+                    - href: ref/ui-patterns/web/bullets.md
                     - href: ref/ui-patterns/web/buttongroup.md
+                    - href: ref/ui-patterns/web/card.md
+                    - href: ref/ui-patterns/web/cardbackground.md
+                    - href: ref/ui-patterns/web/cardsectioned.md
                     - href: ref/ui-patterns/web/carousel.md
+                    - href: ref/ui-patterns/web/chatmessage.md
                     - href: ref/ui-patterns/web/character-count.md
+                    - href: ref/ui-patterns/web/columns.md
                     - href: ref/ui-patterns/web/counter.md
                     - href: ref/ui-patterns/web/datepicker.md
                     - href: ref/ui-patterns/web/dropdown.md
+                    - href: ref/ui-patterns/web/dropdownselect.md
                     - href: ref/ui-patterns/web/fieldset.md
                     - href: ref/ui-patterns/web/fileupload.md
                     - href: ref/ui-patterns/web/flip-content.md
+                    - href: ref/ui-patterns/web/floatingactions.md
                     - href: ref/ui-patterns/web/gallery.md
                     - href: ref/ui-patterns/web/icon-badge.md
                     - href: ref/ui-patterns/web/iframe.md
+                    - href: ref/ui-patterns/web/inputwithicon.md
                     - href: ref/ui-patterns/web/lightbox-image.md
                     - href: ref/ui-patterns/web/load-on-visible.md
                     - href: ref/ui-patterns/web/loginform.md
+                    - href: ref/ui-patterns/web/modal.md
                     - href: ref/ui-patterns/web/navigation-bar.md
+                    - href: ref/ui-patterns/web/panel.md
                     - href: ref/ui-patterns/web/progressbar.md
-                    - href: ref/ui-patterns/web/progresscircle.md 
+                    - href: ref/ui-patterns/web/progresscircle.md
                     - href: ref/ui-patterns/web/rangeslider.md
-                    - href: ref/ui-patterns/web/rangesliderinterval.md                
+                    - href: ref/ui-patterns/web/rangesliderinterval.md
                     - href: ref/ui-patterns/web/responsive-table.md
                     - href: ref/ui-patterns/web/search.md
                     - href: ref/ui-patterns/web/searchballoon.md
+                    - href: ref/ui-patterns/web/section.md
                     - href: ref/ui-patterns/web/section-index.md
                     - href: ref/ui-patterns/web/separator.md
                     - href: ref/ui-patterns/web/sidebar.md
                     - href: ref/ui-patterns/web/stackedicon.md
                     - href: ref/ui-patterns/web/tabs.md
+                    - href: ref/ui-patterns/web/tag.md
                     - href: ref/ui-patterns/web/timeline.md
                     - href: ref/ui-patterns/web/timepicker.md
                     - href: ref/ui-patterns/web/togglebutton.md
+                    - href: ref/ui-patterns/web/tooltip.md
                     - href: ref/ui-patterns/web/user-initials.md
                     - href: ref/ui-patterns/web/video.md
                     - href: ref/ui-patterns/web/wizard.md

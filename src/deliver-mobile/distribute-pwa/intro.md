@@ -5,7 +5,7 @@ tags: support-application_development; runtime-mobile;
 
 <div class="info" markdown="1">
 
-This document is a work in progress and we invite you to share your feedback in the [forum topic dedicated to the PWA feature](https://www.outsystems.com/forums/discussion/56090/progressive-web-apps-early-access-now-open-to-everyone/).
+This document is a work in progress. Please share your feedback in the [forum topic dedicated to the PWA feature](https://www.outsystems.com/forums/discussion/56090/progressive-web-apps-early-access-now-open-to-everyone/).
 
 </div>
 
@@ -17,12 +17,13 @@ Progressive web apps (PWA) provide native-like experiences without having to dis
 
 **Prerequisites**
 
-To distribute your app as a PWA, you need to meet the following requirements:
+To distribute your app as a PWA, you need:
 
 * Service Studio 11.6 or later
 * Platform Server 11.7 or later
 * LifeTime Oct.2019 CP1 or later
-* Enabled the [early access feature](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Early_access_to_OutSystems_features) in LifeTime
+* A valid SSL certificate to allow HTTPS communication 
+* Enable the [early access feature](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Early_access_to_OutSystems_features) in LifeTime
 
 </div>
 
@@ -43,7 +44,7 @@ Create a Mobile App and turn on the toggle **Distribute as PWA** in the app deta
    
     ![The PWA toggle to activate progressive web app distribution](images/pwa-toggle.png?width=600)
 
-You don't have to republish your app after changing the value of the **Distribute as PWA**. This change is applied in real-time.
+You don't have to republish your app after changing the value of the **Distribute as PWA**, as this change is effective immediately.
 
 <div class="warning" markdown="1">
 
@@ -79,7 +80,7 @@ Follow these steps to install and run your PWA on an iOS device.
 
 <div class="info" markdown="1">
 
-Due to a bug in iOS, PWAs are not working in the iOS versions 13.0 to 13.2. Use iOS 13.3 or later instead.
+Due to a bug in iOS, PWAs aren't working in the iOS versions 13.0 to 13.2. Use iOS 13.3 or later instead.
 
 </div>
 
@@ -114,7 +115,7 @@ You can edit your app name, description, color, and logo through the UI of Servi
   
 ### The manifest values editable in Service Studio
 
-The manifest is generated automatically, and you don't have to use it unless you want to override some values. You can edit the following manifest options from the Service Studio UI.
+Service Studio generates the manifest automatically, and you can modify the manifest only if you want to override some values. You can edit the following manifest options from the Service Studio UI.
 
 | Service Studio property | Manifest key  |
 | ----------------------- | ------------- |
@@ -129,7 +130,7 @@ The manifest is generated automatically, and you don't have to use it unless you
 
 <div class="warning" markdown="1">
 
-We identified an issue that prevents LifeTime to override PWA Extensibility Configurations. We're working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
+OutSystems identified an issue that prevents LifeTime from overriding the PWA Extensibility Configurations. The development team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
 
 </div>
 
@@ -185,7 +186,9 @@ There are more plugins coming soon, and you can contribute with your own on the 
 
 ## Debugging
 
-The Debugger is currently not available for PWAs. We advise you to use the debugging capabilities of your browser to troubleshoot any runtime issues with your PWA.
+To debug a PWA, emulate the app in Google Chrome. Go to the **Debugger** tab, and then in the **Debug Setup** select **Emulate using Chrome**.
+
+![Activating the PWA debugger](images/pwa-debug.png?width=750)
 
 ## Troubleshooting
 
@@ -197,11 +200,19 @@ Note that you need to republish your apps after the Platform Server upgrade for 
 
 There is a potential workaround for the PWA toggle button to work without the republishing step, which is to republish the current module once and then try turning on the toggle **Distribute as PWA**. However, keep in mind that republishing the apps after the upgrade is a mandatory step, and skipping it can cause unintended effects.
 
+### I'm getting an invalid home URL for PWA
+
+If the PWA can't load because you're getting the URL that matches the URL of the environment, for example ` https://example.com/`, check if your set a home module for your app.
+
+Open the app details screen. If the **Test in browser button** is deactivated, the app doesn't have a module defined. Click the curly arrow icon on the right side of the module name to set that module as the home module.
+
+![Set a home module](images/set-home-module.png?width=600)
+
 ### There are runtime errors
 
-Try deleting the local data of the app. Locate the settings in the browser, and clear the data for the domain from which the app was installed. In Chrome go to **Settings** > **Site Settings** > **Cookies and site data** > **See all cookies and site data**, search for the domain and clear the data.
+Try deleting the local data of the app. Locate the settings in the browser, and clear the data for the app installation domain. In Chrome, go to **Settings** > **Site Settings** > **Cookies and site data** > **See all cookies and site data**, search for the domain and clear the data.
 
-### Extensibility Configurations override is not working when applied in LifeTime
+### Extensibility Configurations override isn't working when applied in LifeTime
 
 There's an issue with applying Extensibility Configurations from LifeTime to override the manifest. The team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
 
@@ -217,10 +228,25 @@ If you're using Platform Server 11.7 or earlier **and** iOS 13 and later, you sh
 
 ### PWA doesn't work in iOS
 
-One of the reasons why your PWA is not working in iOS might be because of an iOS bug that prevents PWAs from running correctly in the iOS versions 13.0 to 13.2. 
+One of the reasons why your PWA isn't working in iOS might be because of an iOS bug that prevents PWAs from running correctly in the iOS versions 13.0 to 13.2. 
 
 To fix this issue, use iOS 13.3 or later instead.
 
 ### PWA is slow and queries take too long to execute
 
 If your PWA performs poorly and queries take too long to execute, your local storage model might be too complex or the amount of data that the app needs to handle is too high. See [Design a lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage) for recommendations.
+
+### I get "not connected to the environment" error when I enable the PWA
+
+You're getting the following error in Service Studio when you try to enable the PWA: "There was an error connecting to your development environment. Confirm your connection and retry".
+
+Here are some suggestions to fix the issue:
+
+* Connect to Service Studio by entering your environment URL that begins with "https". For example, instead of connecting to `http://myenvironment.example.com`, connect to `https://myenvironment.example.com`. After that, retry enabling the PWA. You can change the environment you're signed in by clicking the URL in the lower right corner of Service Studio.
+* Check if you have a valid and properly configured SSL certificate. When you distribute a Mobile App, by a native build or as a PWA, you need the certificate for secure communication with the server. For more information see notes in [Enforce HTTPS Security](../../managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md).
+
+### The PWA debugging doesn't start
+
+The window **Waiting for application** stays open and nothing happens when you start the debugging of your PWA.
+
+To fix this issue, set the debugger to **Emulate using Chrome** before you click **Start debugging**. Note that the options **Android device** and **iOS device** of the debugger work only when you distribute your app as a native build, and can't work with an app you distribute as PWA.  

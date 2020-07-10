@@ -19,7 +19,7 @@ These are the steps to create advanced logic for the bot responses:
 
 <div class="info" markdown="1">
 
-This guide is created for the [Reactive Web App version of the component](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive). The version for Traditional Web app is similar, with more focus on the server-side logic.
+This guide is for the [Reactive Web App version of the component](https://www.outsystems.com/forge/component-overview/7315/outsystems-ai-chatbot-reactive). The version for Traditional Web app is similar, with more focus on the server-side logic.
 
 </div>
 

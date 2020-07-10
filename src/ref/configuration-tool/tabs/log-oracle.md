@@ -4,22 +4,21 @@ summary: Log tab showing specific settings for the 'Oracle' database provider.
 
 # Log Tab in Oracle
 
-The following configurations are available in the Log tab when the 'Database Provider' property is set to 'Oracle'.
+The following configurations are available in the **Log** tab when the **Database Provider** property is set to `Oracle`.
 
-## Database Section
+## Database section
 
 This area contains general configurations for the Oracle database.
 
 Configuration | Description | Default value  
 --------------|-------------|--------------  
 Naming Method | The method to connect to the Oracle database server. | `Service Name`
-Host | The hostname or IP address to the database server.%%This option is only available when the 'Naming Method' is set to 'Service Name'. | `localhost`
-Port | The port on which the database service listens.%%This option is only available when the 'Naming Method' is set to 'Service Name'. | `1521`
-Service Name | The Oracle database service name.%%This option is only available when the 'Naming Method' is set to 'Service Name'. |
-TNS Name | An address name defined in the tnsnames.ora configuration file.%%This option is only available when the 'Naming Method' is set to 'TNS Name'. |
+Host | The hostname or IP address to the database server.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `localhost`
+Port | The port on which the database service listens.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `1521`
+Service Name | The Oracle database service name.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. |
+TNS Name | An address name defined in the tnsnames.ora configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. |
 
-
-For advanced settings, click the Advanced Settings link.
+For advanced settings, click the **Advanced Settings** link.
 
 <table markdown="1">
 <thead>
@@ -68,27 +67,27 @@ BINARY_CI – Collation-sensitive SQL operations use a binary sort that is case-
 
 OutSystems supports Unicode for Oracle databases. To start developing with support for Unicode you just need to ensure that your Oracle database is set to use `AL32UTF8` as the database character set.
 
-## Administrator Section
+## Administrator section
 
-The 'Administrator' section allows you to configure the database user that manages the logging database. This user owns the log tables, views, and indexes.
+The Administrator section allows you to configure the database user that manages the logging database. This user owns the log tables, views, and indexes.
 
 Configuration | Description | Default value  
 --------------|-------------|--------------  
-User | Name of the user that is the owner of log tables and associated objects. | `OSADMIN_LOG`  
+User | Name of the user that's the owner of log tables and associated objects. | `OSADMIN_LOG`  
 Password | Password for the user. |  
-Tablespace | Table space where the system tables are stored. | `OSSYS_LOG`
-Index Tablespace | Table space where all indexes of the platform are stored. | `OSIDX_LOG`
+Tablespace | Table space holding system tables. | `OSSYS_LOG`
+Index Tablespace | Table space holding all indexes of the platform. | `OSIDX_LOG`
   
-## Runtime Section
+## Runtime section
 
 In this section you specify the login for the user that owns user tables in the logging database.
 
 Configuration | Description | Default value  
 --------------|-------------|--------------  
-User | Name of the user that is the owner of user tables created in the logging database. | `OSRUNTIME_LOG`
+User | Name of the user that's the owner of user tables created in the logging database. | `OSRUNTIME_LOG`
 Password | Password for the specified user. |
-Tablespace | Table space where user tables created in the logging database are stored. | `OSUSR_LOG`
+Tablespace | Table space holding user tables created in the logging database. | `OSUSR_LOG`
 
-## Create/Upgrade Database Button
+## Create/Upgrade Database button
 
-To create all the database objects (tables, indexes, views, etc) required for logging purposes, click 'Create/Upgrade Database'.
+To create all the database objects (tables, indexes, views, etc) required for logging purposes, click **Create/Upgrade Database**.

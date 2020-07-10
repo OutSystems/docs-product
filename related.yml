@@ -1002,30 +1002,41 @@
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=45
 - develop/ui/patterns/web/controls/rangeslider.md:
+    - ref/ui-patterns/web/rangeslider.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSlider.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=60
 - develop/ui/patterns/web/controls/rangesliderinterval.md:
+    - ref/ui-patterns/web/rangesliderinterval.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSliderInterval.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=61
 - develop/ui/patterns/web/controls/search.md:
+    - ref/ui-patterns/web/search.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx    
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Search.aspx 
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=62   
 - develop/ui/patterns/web/controls/search-balloon.md:
+    - ref/ui-patterns/web/search-balloon.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/SearchBalloon.aspx
 - develop/ui/patterns/web/controls/timepicker.md:
     - ref/ui-patterns/web/timepicker.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/TimePicker.aspx
 - develop/ui/patterns/web/controls/togglebutton.md:
+    - ref/ui-patterns/web/togglebutton.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ToggleButton.aspx
 - develop/ui/patterns/web/controls/video.md:
     - ref/ui-patterns/web/video.md
     - external:

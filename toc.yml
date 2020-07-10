@@ -1086,8 +1086,12 @@
                     - href: ref/ui-patterns/web/navigation-bar.md
                     - href: ref/ui-patterns/web/panel.md
                     - href: ref/ui-patterns/web/progressbar.md
-                    - href: ref/ui-patterns/web/progresscircle.md                
+                    - href: ref/ui-patterns/web/progresscircle.md
+                    - href: ref/ui-patterns/web/rangeslider.md
+                    - href: ref/ui-patterns/web/rangesliderinterval.md
                     - href: ref/ui-patterns/web/responsive-table.md
+                    - href: ref/ui-patterns/web/search.md
+                    - href: ref/ui-patterns/web/search-balloon.md
                     - href: ref/ui-patterns/web/section.md
                     - href: ref/ui-patterns/web/section-index.md
                     - href: ref/ui-patterns/web/separator.md
@@ -1097,6 +1101,7 @@
                     - href: ref/ui-patterns/web/tag.md
                     - href: ref/ui-patterns/web/timeline.md
                     - href: ref/ui-patterns/web/timepicker.md
+                    - href: ref/ui-patterns/web/togglebutton.md
                     - href: ref/ui-patterns/web/tooltip.md
                     - href: ref/ui-patterns/web/user-initials.md
                     - href: ref/ui-patterns/web/video.md

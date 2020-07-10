@@ -3,84 +3,73 @@ tags: runtime-traditionalweb;
 summary: RangeSliderInterval selects a single value or a range between two values.
 ---
 
-# RangeSliderInterval
+# Range Slider Interval
 
-Select a single value or a range between two values.
+You can use the Range Slider Interval Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content by predetermined intervals and within a chosen range. Moving the slider along the track, increases or decreases the value. 
 
-Offer this UI control to let end users select a value or range from a fixed set of options.
+## How to use the Range Slider Interval UI Pattern
 
-**How to use**
+In this example, we create a Range Slider Interval that allows the user select a price range between 1-50.
 
-Place the range slider pattern on your screen. On the pattern properties, select the minimum and maximum range values.
+1. In Service Studio, in the Toolbox, search for `Range Slider Interval`.
 
-1. Drag RangeSliderInterval pattern into the preview.
+    The Range Slider Interval widget is displayed.
 
-    ![](images/RangeSliderInterval-1.png)
+    ![](images/rangesliderinterval-2-ss.png)
 
-1. Enter the mandatory values in the properties pane.
+1. From the Toolbox, drag the Range Slider Interval widget into the Main Content area of your application's screen, and on the **Properties** tab, enter the **MinValue**, **MaxValue**, **InitialIntervalStart**, and **InitialIntervalEnd** values. In this example, we add static values.
 
-    ![](images/RangeSliderInterval-2.png)
+    ![](images/rangesliderinterval-3-ss.png?width=800)
 
+1. To create an **OnChange** event, on the **Properties** tab, from the **Handler** drop-down, select **New Screen Action**.
 
-## Input parameters
+    ![](images/rangesliderinterval-5-ss.png?width=800)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| MinValue  |  Sets lowest possible value. |  Integer | True | none |
-| MaxValue  |  Sets highest possible value. |  Integer | True | none |
-| InitialValue  |  Value selected by default. Must be between min and max values. |  Integer | False | 1 |
-| Step  |  The increment value for each step. For instance, a step of 5 would make the slider jump across 0-5-10-15-20 and so on. The default value is 1. |  Integer | True | none |
-| ShowPips  |  If true, displays the range values near the slider. The default value is true. |  Boolean | False | True |
-| PipsStepsNumber  | Sets the number of Pip Steps. Only applied if ShowPips is true. |  Integer | False | 0 |
-| AdvancedFormat  | Enables you to use more options than what is provided in the input parameters. To find more options that can be used, go to [noUiSlider library](https://refreshless.com/nouislider/ "noUiSlider library"). Example: `{ pips: { density: 1 } }` |  Text | False | "{}" |
+    By default, the **SelectedMinValue** and **SelectedMaxValue** input parameter are created.  
 
-## Events
+    ![](images/rangesliderinterval-1-ss.png)
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnChange | Event triggered once a handler is dragged and the values change.  |  True  |
+1. To create a variable for each of the expressions, right-click your screen name, select **Add Local Variable**, and on the **Properties** tab, enter a name and data type. In this example we create the **LowerPrice** and **HighestPrice** variables with the **Currency** data type.
 
-**Return Values**
+    ![](images/rangesliderinterval-8-ss.png) 
 
-* SelectedMinValue: Integer
-* SelectedMaxValue: Integer
-  
-## Layout and classes
+1. So that the parameters read the range slider selections, double-click your screen action, from the Toolbox, add the **Assign** action to the screen action, and set the variable and value assignments for the Assign action. 
 
-![](images/RangeSliderInterval-3.png)
+    ![](images/rangesliderinterval-7-ss.png?width=800) 
 
-## CSS selectors
+1. To display your selection, go back to your screen, and from the Toolbox, drag the Container widget into the Main Content area of your application's screen, enter a name and add your content to the Container placeholder. In this example, we enter ``DisplayValue`` for the name and add some text and an expression for each of the input parameters.
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---  
-| Lesser handle |  .noUi-handle-lower |  It's the lesser handle, used to customize (use also the :before and :after).  |
-| Upper Handle  |  .noUi-handle-upper  |  It's the upper handle, used to customize (use also the :before and :after). |
-| Interval  |  .noUi-connect  |  Used to change the color of the interval.  |
-  
-## Advanced Use Case
+    ![](images/rangesliderinterval-6-ss.png?width=800)
 
-### Change the interval color
+1. Go back to the screen action, and from the Toolbox, add the **Ajax Refresh** action to the screen action, and in the **Select Widget** pop-up, navigate to and select the Container widget name (in this example, DisplayValue), and click **OK**.
 
-Write the following CSS in the CSS editor and change the `yourcolor` to your color:
+    ![](images/rangesliderinterval-12-ss.png?width=800)
 
-`.range-slider .noUi-connect {
-background: yourcolor;
-}`
+1. To bind the **SelectedMinValue** variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
 
-Or using the CSS variables:
+    ![](images/rangesliderinterval-9-ss.png)
 
-`var(--color-yourcolor)`
-example:
-`.range-slider .noUi-connect {
-background: var(--color-red);
-}`
+1. Repeat step 8 for the **SelectedMaxValue** input parameter.
 
-### Removing the || of the handlers
+1. From the **Properties** tab, you can change the Range Slider's look and feel by setting the (optional) properties.
 
-1. Create a class `.range-slider .noUi-handle:before, .range-slider .noUi-handle:after`.
+    ![](images/rangesliderinterval-13-ss.png)
 
-1. Set the content to `height: 0px`.
+After following these steps and publishing the module, you can test the pattern in your app. 
 
-1. Publish the application.
+## Properties
 
-    ![](images/RangeSliderInterval-5.png)
+| **Property** |  **Description** |  
+|---|---|
+|MinValue (Decimal): Mandatory  |  Slider's minimum value. <p>Examples <ul><li>_0_ - The slider's minimum value is 0.</li><li>_12_ - The slider's minimum value is 12</li> </ul></p> |
+|MaxValue (Decimal): Mandatory  |  Slider's maximum value. <p>Examples <ul><li>_100_ - The slider's maximum value is 100.</li></ul></p> |
+|InitialIntervalStart  |  Start value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>_10_ - Slider's default start value when the page is rendered is 10.</li></ul></p> 
+|InitialIntervalEnd  |  End value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>_10_ - Slider's default end value when the page is rendered is 10.</li></ul></p> 
+|Step (Decimal): Optional  | The slider moves in increments of steps.<p>Examples <ul><li>_Blank_ - The slider increases in steps of 1. This is the default value. </li><li>_10_ - The slider increases in steps of 10.</li></ul></p>
+|ShowPips (Boolean): Optional  | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. |
+|PipsStepNumber (Integer): Optional  | Sets the number of Pip steps. This property is only applicable if the ShowPips property is set to True. |
+|IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. |
+|VerticalHeight (Integer): Optional | If IsVertical is True, use this property to set the height (in px) of the slider. <p>Examples <ul><li>_Blank_ - The slider is 100px high. This is the default value. </li><li>_250_ - The slider is 250px high.</li></ul></p> |
+|IsDisabled (Boolean): Optional | If True, the slider is disabled. If False, the slider is enabled. This is the default value. |
+|ExtendedClass (Text): Optional | Add custom style classes to the Range Slider Interval UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value). </li><li>_"myclass"_ - Adds the _myclass_ style to the Range Slider Interval UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Range Slider Interval UI styles being applied.</li></ul> |  
+|AdvancedFormat (Text): Optional | Allows you to use more options than what is provided in the input parameters. For more information, see [noUiSlider library](https://refreshless.com/nouislider/). <p> Example <ul><li> `{ pips: { density: 1 } }` </li></ul></p> |

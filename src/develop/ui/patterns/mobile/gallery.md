@@ -21,7 +21,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
 1. Add the required content to the Gallery widget. 
 
-   By default, the Gallery widget expects a list. 
+    By default, the Gallery widget expects a list. 
 
     ![](<images/gallerymob-13-ss.png>)
 

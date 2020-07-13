@@ -73,7 +73,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
 1. On the **GetUserDetails** screen, click **Filters**, then click **Add Filter**.
 
-1. From the Filter Condidion editor, enter the following condition and click **Done**.
+1. From the Filter Condition editor, enter the following condition and click **Done**.
 
     `User.Id = SelectedUserId`
 
@@ -83,8 +83,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
    ![](images/masterdetail-10-ss.png)
 
-
-1. Double-click your screen name, and from the **GetUserDetails** aggregate, drag the attributes you want to dislay into the RightContent placeholder. In this example, we use the Username and Email attributes.
+1. Double-click your screen name, and from the **GetUserDetails** aggregate, drag the attributes you want to display into the RightContent placeholder. In this example, we use the Username and Email attributes.
 
    ![](images/masterdetail-12-ss.png)
 

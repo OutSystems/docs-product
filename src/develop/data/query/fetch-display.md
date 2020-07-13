@@ -39,7 +39,7 @@ In the following steps we will fetch Places from the database of a web app calle
 1. Add the Preparation action to the Places screen, and open it.
 1. Drag the aggregate from the toolbar to the Preparation action. Then double-click on the aggregate to open it.
 1. Drag the Place entity from the Data tab to the aggregate.
-1. On the screen, add a Table Records widget from the toolbar. 
+1. On the screen, add a Table Records widget from the toolbar.
 1. Set the widget's  Source Record List property to `GetPlaces.List`. This binds the data to the widget.
 1. Drag the Place entity from the Data tab to the Table Records widget on the screen.
 1. Publish the application.

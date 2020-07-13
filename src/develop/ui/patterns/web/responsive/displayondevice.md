@@ -3,29 +3,38 @@ tags: runtime-traditionalweb;
 summary: DisplayOnDevice improves the way information is displayed on different devices.
 ---
 
-# DisplayOnDevice 
+# Display on Device
 
-Use to select if an element should be loaded in a specific device.
+You can use the Display on Device UI pattern to select what elements are displayed on which device types. With this pattern you can improve the way information is displayed on different devices - computers, tablets, and phones - by specifically specifying which elements display on each of them.
 
-Use DisplayOnDevice to improve the way information is displayed on different devices. Choose the elements you don't want to show on mobile devices and avoid loading excess data.
+![](<images/displayondevice-1.png>)
 
-**How to use**
+**How to use the Display on Device UI Pattern**
 
-1. Drag the DisplayOnDevice pattern into the preview.
+1. In Service Studio, in the Toolbox, search for `Display on Device`.
 
-    ![](<images/displayondevice-image-1.png>)
+    The Display on Device widget is displayed.
 
-1. Set the content you need in the placeholders.
+    ![](<images/displayondevice-2-ss.png>)
+  
+1. From the Toolbox, drag the Display on Device widget into the Main Content area of your application's screen.
 
-1. Choose the Behavior from the dropdown list.
+    ![](<images/displayondevice-3-ss.png>)
 
-    ![](<images/displayondevice-image-2.png>)
+1. Add the required content to the placeholders inside the Display on Device widget.
 
-1. Publish and test.
+    In this example, we add images by dragging the Image widget into the Display on Device widget and selecting an image from the sample OutSystems UI images.
 
-## Input Parameters
+    ![](<images/displayondevice-4-ss.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Behavior | Use to select if an element should be loaded in a specific device. Especially helpful to avoid too much data being loaded in mobile devices. Set up the content of the pattern and then change the devices where it will be displayed. | DeviceResponsive Identifier | Yes | none |
+1. On the **Properties** tab, from the **Behavior** drop-down list, choose the device types you want to display this widget on. These images are displayed on the device types you specify, and not shown for any other devices.
 
+    ![](<images/displayondevice-5-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app.
+
+## Properties
+
+| **Property** |  **Description** |
+|---|---|
+| Behavior (DeviceResponsive Identifier): Mandatory | Select the device types upon which the content is displayed. The following are the predefined options available: <p><ul><li>DesktopOnly</li><li>DesktopAndTablet</li><li>TabletOnly</li><li>TabletAndPhone</li><li>PhoneOnly</li><li>AllDevices</li></ul></p><p>Examples<ul><li>_Entities.DeviceResponsive.DesktopOnly_ - Content is displayed on Desktop browsers only</li><li>_Entities.DeviceResponsive.TabletAndPhone_ - Content is displayed on Tablet and Phone browsers only</li></ul></p> |

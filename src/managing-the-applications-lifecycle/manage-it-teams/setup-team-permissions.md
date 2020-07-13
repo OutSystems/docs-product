@@ -12,7 +12,7 @@ In this example we want to:
 
 * Allow a senior developer of Team Banking to both **debug and add dependencies to the core applications Customers and Services**, but without granting permissions to make changes to those applications. These applications are managed by another team, the Team Core Applications.
 
-![](images/team-permissions-teams-diag.png?width=700)
+![](images/team-permissions-teams-diag.png?width=900)
 
 To follow the principle of security by default, we will set the IT users with a default role that grants them as little base permissions over applications as possible, and we will define all permissions necessary to perform their work through a team.
 

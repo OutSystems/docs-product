@@ -1,45 +1,17 @@
 ---
 tags: runtime-traditionalweb; 
-summary: LayoutLogin is a custom page layout for the login screen.
+summary: Layout Login is a custom page layout for the login screen.
 ---
 
-# LayoutLogin
+# Layout Login
 
-A custom page layout for the login screen.
+The Layout Login is a pre-existing web block for a login screen. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app.
 
-**How to use**
+![](<images/layoutlogin-1-ss.png?width=800>)
 
-OutSystems UI already has LayoutLogin and LoginForm by default. Add input widgets to the correct placeholders as required.
+## Properties
 
-## Input Parameters
-
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| DeviceConfiguration  |  Configuration to change the default values that set when the application will be seen as phone, tablet or desktop |  DeviceConfig | False | none |
-
-## Layout and Classes
-
-![](<images/layoutlogin-image-1.png>)
-
-### Login
-
-Drag login related content to this placeholder.
-
-### BackgroundImage
-
-Drag an image, GIF or video to this placeholder.
-
-## Advanced Use Case
-
-### Change background-color
-
-1. In the Interface tab, go to the Login screen.
-1. Drag a container to the BackgroundImage placeholder.
-1. Set the Style Classes of that container to `full-height background-your-color`. 
-1. Publish and test.
-
-![](<images/layoutlogin-image-2.png?width=750>)
-
-## Compatibility with other Patterns
-
-[LoginForm](loginform.md)
+| **Property** |  **Description** |
+|---|---|
+| DeviceConfiguration (DeviceConfig): Optional  |  Configuration that changes the default values that apply when the application is viewed on a phone, tablet, or desktop. |
+| AccessibilityConfiguration (AccessibilityConfiguration): Optional | Configuration that changes the default values for the options that reset tab index values and the options that add a visible outline to focused elements. |

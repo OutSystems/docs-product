@@ -17,15 +17,10 @@ If there are other developers working on the module you are converting, make sur
 Service modules help enforce stricter segmentation of modules and to encapsulate core business services, by not allowing the following elements:
 
 * Interface elements and properties, for example UI flows, Web Screens, Blocks and Images.
-
 * Module properties for interface, for example JavaScript and Global Event Handler.
-
 * Email elements, for example Emails and Send Email in Processes.
-
 * Session Variables.
-
 * Client side logic and Local Storage Entities.
-
 * Human Activities in Processes.
 
 Before converting a Web or Mobile module to a Service module, remove these elements from the module and make sure that there are no TrueChange errors.
@@ -35,8 +30,10 @@ To convert a Web or Mobile module to a Service module follow these steps:
 1. In the target module, open the **Module** menu and select **Convert to Service**.
 
     <div class="info" markdown="1">
-        If your module has elements that are not allowed in a Service module, the conversion stops and the unallowed elements are listed in an error message. Remove the listed elements from your module and repeat step 1.<br/>
-        If your module has TrueChange errors, the conversion is stopped and an error message is shown. Fix the errors and repeat step 1.
+
+    If your module has elements that are not allowed in a Service module, the conversion stops and the unallowed elements are listed in an error message. Remove the listed elements from your module and repeat step 1.<br/>
+    If your module has TrueChange errors, the conversion is stopped and an error message is shown. Fix the errors and repeat step 1.
+
     </div>
 
 1. On the **Convert to Service Module** confirmation window, click **Yes**.
@@ -62,7 +59,9 @@ Service applications can only contain Service modules and Extension modules.
 As such, before converting an application to a Service application you need to remove Web modules and Mobile modules or convert them to Service modules.
 
 <div class="info" markdown="1">
+
 The conversion to a Service application is irreversible, you will not be able to convert the application back to a Web or Mobile application.
+
 </div>
 
 To convert an application to a Service application, open the application, click **Convert to Service** and click **Yes** in the confirmation window.

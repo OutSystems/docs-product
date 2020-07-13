@@ -5,25 +5,29 @@ summary: Carousel shows a subset of items in a cyclic view.
 
 # Carousel
 
-You can use the Carousel UI Pattern to display multiple items in a horizontal slide. This pattern is ideal for creating horizontal slides in smaller screens. You can also use this pattern for dynamic content, by placing a List directly inside the placeholder. 
+<div class="info" markdown="1">
 
+We’ve been working on this article. Please let us know how useful this new version is by voting.
+
+</div>
+
+You can use the Carousel UI Pattern to display multiple items in a horizontal slide. This pattern is ideal for creating horizontal slides in smaller screens. You can also use this pattern for dynamic content, by placing a List directly inside the placeholder.
 
 **How to use the Carousel UI Pattern**
-
 
 1. In Service Studio, in the Toolbox, search for `Carousel`.
   
      The Carousel widget is displayed.
 
     ![](images/carousel-widget.png)
-    
+
 1. To From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen. 
-   
+
    ![](images/carousel-image-9.png)
 
 1. Place the content you want to appear in the Carousel into the Items placeholder. (In this example we use images.) 
 
-1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget.This is a thumbnail image. 
+1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget. This is a thumbnail image. 
 
     The **Select Image** pop-up is displayed.
 
@@ -32,22 +36,22 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
     ![](<images/carousel-image-10.png>)
 
     Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../develop/ui/image/display-image.md).
-    
+
     To use a Carousel with items from a database, drag a [ListRecords widget](<../../../../../ref/lang/auto/Class.List Records Widget.final.md>) into Items placeholder and create your custom content.
 
     ![](<images/carousel-image-2.png>)
 
-1. Repeat steps 4 and 5 for each of the Carousel items. 
-    
+1. Repeat steps 4 and 5 for each of the Carousel items.
+
 1. From the Element tree, select the Carousel widget, and on the **Properties** tab, set the relevant (optional) properties, for example, navigation arrows and the number of items to display on different devices.
 
     ![](images/carousel-image-11.png)  
-    
+
 1. After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
-| **Property** |  **Description** |
+| Property | Description |
 |---|---|
 |Margin(Integer): Optional  |  Set the distance between each Carousel item. Default value is 0.<p>Examples<ul><li>_Blank_ - A distance of 16 pixels between each Carousel item.</li><li>_32_ - A distance of 32 pixels between each Carousel item.</li></ul></p>  |
 |Padding(Integer): Optional |  Set the distance between the screen edges and the visible items on the screen. <p>Examples<ul><li>_Blank_ - No distance between the screen edges and the on screen item. This is the default value.</li><li>_5_ - A distance of 5 pixels between the screen edges and the on screen item.</li></ul></p> |
@@ -60,4 +64,4 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 |ItemsTablet(Integer): Optional  | Number of Carousel items visible at the same time on a tablet.<p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_4_ - 4 items are displayed.</li></ul></p>| 
 |ItemsPhone(Integer): Optional  | Number of Carousel items visible at the same time on a phone.<p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_4_ - 4 items are displayed.</li></ul></p> |
 | ExtendedClass (Text): Optional |  Add custom style classes to the Carousel UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Carousel UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Carousel UI styles being applied.</li></ul></p> |
-| AdvancedFormat(Text):Optional  |  Enables you to use more options than what is provided in the properties. For more information, visit: https://github.com/ganlanyuan/tiny-slider. <p>Example `{ axis: 'vertical' }`</p> |
+| AdvancedFormat(Text):Optional  |  Enables you to use more options than what is provided in the properties. For more information, visit: <https://github.com/ganlanyuan/tiny-slider>. <p>Example `{ axis: 'vertical' }`</p> |

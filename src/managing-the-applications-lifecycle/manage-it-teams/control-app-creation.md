@@ -12,7 +12,7 @@ In this example we want to:
 
 * Allow architects to **create applications** for their teams.
 
-![](images/control-app-creation-team-diag.png?width=250)
+![](images/control-app-creation-team-diag.png?width=600)
 
 To do this, configure the junior developers:
 

@@ -32,3 +32,5 @@ To revoke a role from an end user:
 ![](images/end-user-roles-gif2.gif?width=500)
 
 Another way to grant or revoke a role from a user is in the user details page, where you can view the list of all the roles granted to the user.
+
+![](images/roles-grant-from-user-usr.gif?width=500)

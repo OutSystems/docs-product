@@ -30,7 +30,7 @@ For each server of an OutSystems environment, `localhost`:
 
 <div class="info" markdown="1">
 
-It is possible to configure some of the ports used. Check the [Configuration Tool documentation](../ref/configuration-tool/intro.md) to learn more.
+It's possible to configure some of the ports used. Check the [Configuration Tool documentation](../ref/configuration-tool/intro.md) to learn more.
 
 </div>
 
@@ -40,10 +40,10 @@ The table below details the ports that need to be accessible in each server of a
 |------|-----------|----|--------|-----|
 |SysOps|Server|22/3389|TCP|Access the server through SSH or Remote Desktop|
 |End Users|Front-End|80|TCP|Applications HTTP access|
-|End Users|Front-End|443|TCP|Applications HTTPS access (always required for mobile apps)|
+|End Users|Front-End|443|TCP|Applications HTTPS access (always required for Mobile and Reactive Web apps)|
 |Development Tools|Front-End|80|TCP|Deploy applications to the environment|
 |Development Tools|Front-End|443|TCP|Deploy applications to the environment|
-|Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
+|Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
 |Front-End|Controller|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
 |Front-End|SQL Server / Oracle|1433 / 1521|TCP|Database connection|
@@ -62,7 +62,7 @@ The following table lists the ports that should be open to correctly **monitor**
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
 |Controller|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
 
-In case you are using a hybrid infrastructure where some part is in OutSystems PaaS and another is managed by yourself, it is possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
+In case you are using a hybrid infrastructure where some part is in OutSystems PaaS and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
 
 ### Containers considerations
 
@@ -86,9 +86,11 @@ As an example, if you are using Amazon RDS as your database server and running t
 
 ## Network infrastructure requirements
 
+### LifeTime
+
 To use LifeTime to manage your application lifecycle, you need to have bidirectional communication between the front-end of the LifeTime environment, and all other servers (front-ends and deployment controllers) of your OutSystems Infrastructure. 
 
-In case HTTPS is not supported, LifeTime communicates with the environments it manages by HTTP.
+In case HTTPS isn't supported, LifeTime communicates with the environments it manages by HTTP.
 
 Applications must be deployed as follows:
 
@@ -98,3 +100,11 @@ Applications must be deployed as follows:
 |LifeTime Front-End|Environment Front-End|443|TCP|
 |Environment Front-End|LifeTime Front-End|80|TCP|
 |Environment Front-End|LifeTime Front-End|443|TCP|
+
+### Architecture Dashboard
+
+To use [Architecture Dashboard](https://architecture.outsystems.com), the Architecture Dashboard LifeTime plugin must be able to communicate with the Architecture Dashboard SaaS. Ensure that the following port is open:
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| Architecture Dashboard LifeTime plugin. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work).

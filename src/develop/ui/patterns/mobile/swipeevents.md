@@ -1,56 +1,60 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: 
+summary:  Swipe Events UI Pattern enables swiping on a specific widget.
 ---
 
-# SwipeEvents Pattern
+# Swipe Events
 
-The SwipeEvents pattern enables swiping on a specific widget.
+You can use the Swipe Events UI Pattern to enable swiping on a specific widget.
 
-![](images/swipe_events.png)
+## How to use the Swipe Events UI Pattern
 
-## How to Use the SwipeEvents Pattern
+The following example shows how you can use the Swipe Events UI pattern to increase (swipe right) and decrease (swipe left) a number.
 
-You can use the SwipeEvents pattern to open a sidebar.
+1. In Service Studio, in the Toolbox, search for  `Swipe Events`.
 
-![](images/swipe_area.png)
+    The Swipe Events widget is displayed.
 
-Create a local variable, called isOpen to be used in the sidebar.
+    ![](images/swipeevents-1-ss.png)
 
-![](images/swipe_events_create.png)
+1. From the Toolbox, drag the Swipe Events widget into the Main Content area of your application's screen.
 
-Result:
+    ![](images/swipeevents-2-ss.png)
 
-![](images/SwipeEvents_EndResult.gif)
+1. Add a local variable by right-clicking on your screen name and selecting **Add Local Variable**.
 
-## Input Parameters
+    ![](images/swipeevents-3-ss.png)
 
-**Input Name** |  **Description** |  **Default Value**  
----|---|---  
-![](images/input.png) |  WidgetId  |  Element that will be swipeable.  |  none  
-  
-## Events
+1. Enter a name, a data type, and a default value for the new variable. In this example, we enter `Number`, `Integer`, and `0` repsectively.
 
-**Event Name** |  **Description** |  **Mandatory**  
----|---|---  
-![](images/Event.png) SwipeDown  |  The event is triggered after a swipe down.  |  _False_  
-![](images/Event.png) SwipeLeft  |  The event is triggered after a swipe left.  |  _False_  
-![](images/Event.png) SwipeRight  |  The event is triggered after a swipe right.  |  _False_  
-![](images/Event.png) SwipeUp  |  The event is triggered after a swipe up.  |  _False_  
-  
-## Compatibility with other Patterns
+    ![](images/swipeevents-4-ss.png)
 
-There might be conflicts with any pattern with touch events (unless the code is altered to support the behavior). For example: using the id of a sidebar instead of a container in the previous example.
+1. Drag the new variable into the Main Content area of your application's screen.
 
-  * HorizontalScroll 
-  * [Carousel](<carousel.md>)
-  * [TouchEvents](<touchevents.md>)
-  * [StackedCards](<stackedcards.md>)
-  * Notification 
-  * Sidebar 
+    ![](images/swipeevents-5-ss.png)
 
-## Samples
+1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen and on the **Properties** tab, enter a name. In this example we enter `SwipeContainer`. We also add the text `Swipe left or right` inside the Container widget.
 
-The following sample uses the SwipeEvents pattern:
+    ![](images/swipeevents-6-ss.png)
 
-![](images/SwipeEvents-Sample-1.PNG)
+1. From the **Widget Tree**, select the Swipe Events widget, and on the **Properties** tab, from the **WidgetId** drop-down, select the Id of the container you just created. In this example, we select **SwipeContainer.Id**.
+
+    ![](images/swipeevents-7-ss.png)
+
+1. To set the action for when the user swipes left, remaining on the **Properties** tab, from the **SwipeLeft Handler** drop-down, select **New Client Action**.
+
+    ![](images/swipeevents-8-ss.png)
+
+1. Assign the relevant logic you want the swipe left action to perform. In this example, we want the number to decrease by 1 every time the user swipes left. To do this, we drag an Assign onto the client action, set the **Variable** to **Number**, and enter ``Number - 1`` for the **Value**.
+
+    ![](images/swipeevents-9-ss.png)
+
+1. Repeat steps 8 and 9 for the **SwipeRightHandler** and so that the number increases when the user swipes right, enter `Number + 1`.
+
+After following these steps and publishing the module, you can test the pattern in your app.
+
+## Properties
+
+**Property** |  **Description** |
+|---|---| 
+| WidgetId (Text): Mandatory |  Element that's swipeable.  |

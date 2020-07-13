@@ -2,7 +2,7 @@
 tags: runtime-mobileandreactiveweb
 ---
 
-Action to be executed when the application is loading (in the home module only). Can be used to to setup the application (e.g. initialize mobile plugins).  
+Action executed when the application is loading (in the home module only). Can be used to set up the application (for example, initialize mobile plugins).
 
 To add this action to a Mobile or Reactive Web App do the following:
 

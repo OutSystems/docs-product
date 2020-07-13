@@ -5,56 +5,36 @@ summary: Section separates content into groups, easing visual organization.
 
 # Section
 
-Organizes the screen into different sections with accessibility. Can also be used with a Section Index to easily create anchors for each section.
+You can use the Section UI Pattern to organize on-screen content into different sections. This pattern can also be used with the Section Index UI Pattern to create anchors for each section.
 
-Use the Section to separate content into groups, easing visual organization.
+![](<images/section-5-ss.png>)
 
-**How to use**
+**How to use the Section UI Pattern**
 
-Drag the Section to the screen and then add the title and content to the placeholders.
-
-1. Drag Section pattern into the preview.
-
-    ![](<images/section-image-1.png>)
-
-1. Set the content you need in the placeholders.
-
-1. Publish and test.
-
-
-## Input Parameters
-
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | none |
+1. In Service Studio, in the Toolbox, search for `Section`.
   
-## Layout and Classes
+    The Section widget is displayed.
 
-![](<images/section-image-2.png>)
+    ![](<images/section-1-ss.png>) 
 
-## Advanced Use Case
+1. To From the Toolbox, drag the Section widget into the Main Content area of your application's screen.
 
-### Remove line below Title
+    ![](<images/section-2-ss.png?width=800>)
 
-Write the following CSS in the CSS editor.
+    By default, the Section widget contains Title, Actions, and Content placeholders.
 
- ```css
-    .section-header {
-        border-bottom: none;
-        padding-bottom: var(--space-none);
-    }
-```
+1. Add your content to the placeholders. In this example, we add a title to the Title placeholder, text to the Content placeholder, and a button to the Actions placeholder.
 
-Before:
+    ![](<images/section-3-ss.png?width=800>)
 
-![](<images/section-image-3.png>)
+1. Add the desired action to the content you have added to the Actions placeholder. In this example, the button we added redirects the user to a new page.
 
-After:
+    ![](<images/section-6-ss.png?width=800>)
 
-![](<images/section-image-4.png>)
+After following these steps and publishing the module, you can test the pattern in your app.
 
-## Compatibility with other Patterns
+## Properties
 
-Works with Section-Index Pattern on the same screen to create navigable anchors.
-
-
+| **Property** |  **Description** |
+|---|---|
+| ExtendedClass (Text): Optional |  Add custom style classes to the Section UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Section UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Section UI styles being applied.</li></ul></p> |

@@ -622,26 +622,37 @@ Position
 
 ### ListSort { #ListSort }
 
-Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly.
+Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. You can sort different kinds of lists, like lists of basic types (for example, Text List, Integer List), Lists of Entity records, Lists of Structures, and Record Lists.
 
 **Examples**
 
 ```
 ListSort(UserList, Name)
 
-Sorts UserList (list of User records) by the Name attribute.
+Sorts UserList, a list of User records, by the Name attribute.
 ```
 ```
 ListSort(TextList, Value, False)
 
-Sorts TextList (a list of text values) by Value in descending order. 
+Sorts TextList, a list of text values, by Value in descending order. 
 Value is the runtime property that represents the current Text value being sorted.
 ``` 
 ```
 ListSort(OfficeEmployeesList, Employee.Name + " " + Office.Name)
 
-Sorts OfficeEmployeesList (a list of Employee and Office records) by the employee name and office name. If employees work in multiple offices then this sorted list will have the employee records in the different offices displayed consecutively in ascending order of both their own names and the names of the offices.
+Sorts OfficeEmployeesList by the employee name and office name. The data type of OfficeEmployeesList is "Company, Employee Record List", that is, a list of Records where each Record has an Employee and an Office Entity record as attributes. If there are employees with the same name working in different offices, the sorted result will have the Records for the employees with the same name in consecutive order, listed by ascending order of their office names.
+
+Records in OfficeEmployeesList:
+[ {Employee.Name = "Adam"}, {Office.Name = 'North Office'} ]
+[ {Employee.Name = "Jane"}, {Office.Name = 'Central Office'} ]
+[ {Employee.Name = "Adam"}, {Office.Name = 'Central Office'} ]
+
+Order of OfficeEmployeesList Records after calling ListSort(OfficeEmployeesList, Employee.Name + " " + Office.Name):
+[ {Employee.Name = "Adam"}, {Office.Name = 'Central Office'} ]
+[ {Employee.Name = "Adam"}, {Office.Name = 'North Office'} ]
+[ {Employee.Name = "Jane"}, {Office.Name = 'Central Office'} ]
 ```
+
 *Inputs*
 
 List
@@ -731,23 +742,23 @@ Locale
 
 ### TenantCreate { #TenantCreate }
 
-Creates a new tenant and associates it with the provisioning site.
+Creates a new tenant and associates it with a [User Provider module](../../../develop/security/end-user-manage/end-user-authentication/single-sign-on.md).
 
 *Inputs*
 
 eSpaceName
 :   Type: mandatory, Text.  
-    
+    Name of the User Provider module for the new tenant. The new tenant will become a User Subscriber to the specified module.
 
 TenantName
 :   Type: mandatory, Text.  
-    
+    Name of the new tenant to be created.
 
 *Outputs*
 
 TenantId
 :   Type: Tenant Identifier.  
-    
+    Identifier of the new tenant which was created.
 
 ### TenantInvalidateCache { #TenantInvalidateCache }
 
@@ -967,7 +978,7 @@ Position
 
 ### ListSort { #Client_ListSort }
 
-Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly.
+Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. You can sort different kinds of lists, like lists of basic types (for example, Text List, Integer List), Lists of Entity records, Lists of Structures, and Record Lists.
 
 **Examples**
 
@@ -985,7 +996,17 @@ Value is the runtime property that represents the current Text value being sorte
 ```
 ListSort(OfficeEmployeesList, Employee.Name + " " + Office.Name)
 
-Sorts OfficeEmployeesList (a list of Employee and Office records) by the employee name and office name. If employees work in multiple offices then this sorted list will have the employee records in the different offices displayed consecutively in ascending order of both their own names and the names of the offices.
+Sorts OfficeEmployeesList by the employee name and office name. The data type of OfficeEmployeesList is "Company, Employee Record List", that is, a list of Records where each Record has an Employee and an Office Entity record as attributes. If there are employees with the same name working in different offices, the sorted result will have the Records for the employees with the same name in consecutive order, listed by ascending order of their office names.
+
+Records in OfficeEmployeesList:
+[ {Employee.Name = "Adam"}, {Office.Name = 'North Office'} ]
+[ {Employee.Name = "Jane"}, {Office.Name = 'Central Office'} ]
+[ {Employee.Name = "Adam"}, {Office.Name = 'Central Office'} ]
+
+Order of OfficeEmployeesList Records after calling ListSort(OfficeEmployeesList, Employee.Name + " " + Office.Name):
+[ {Employee.Name = "Adam"}, {Office.Name = 'Central Office'} ]
+[ {Employee.Name = "Adam"}, {Office.Name = 'North Office'} ]
+[ {Employee.Name = "Jane"}, {Office.Name = 'Central Office'} ]
 ```
 *Inputs*
 

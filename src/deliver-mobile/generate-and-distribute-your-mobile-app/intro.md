@@ -5,7 +5,7 @@ tags: runtime-mobile
 
 # Generate and Distribute Your Mobile App
 
-Before generating your mobile app for the first time, you will have to configure specific iOS and/or Android settings. Check the [topics listed at the end of this page](#Articles_in_this_Section) for details about different scenarios, such as development tests, distributing your app to a limited group of end users or publishing your app in Mobile App Stores.
+Before generating your mobile app for the first time, you have to configure specific iOS and/or Android settings. Check the [topics listed at the end of this page](#Articles_in_this_Section) for details about different scenarios, such as development tests, distributing your app to a limited group of end users or publishing your app in Mobile App Stores.
 
 The following sections show how to configure and generate iOS and Android application packages of your mobile apps in Service Studio or in Service Center.
 
@@ -43,19 +43,21 @@ Center, do the following:
 1. At the end of the configuration settings page, select the MABS version you wish to use for generating the mobile app package for the mobile platform you're configuring (iOS or Android) in the current environment.  
     For more information check [Choosing the MABS Version to Build Your Mobile Packages](<#choosing-the-mabs-version-to-build-your-mobile-packages>).
 
-1. Click **Save and Generate** and wait a few moments while your mobile app is being generated.
+1. Click **Save and Generate** and wait a few moments while OutSystems generates your mobile app package.
 
     ![](images/sc-native-platforms-tab.png)
 
+Now that the application is configured, the next time you need to generate a new mobile app package, just click the **Generate** button.
+
 ### Customizing the Mobile App Domain Name
 
-<div class="info">
+<div class="info" markdown="1">
 
 This feature is only available in OutSystems on-premises installations.
 
 </div>
 
-In some cases, you might need to change the domain name associated with your mobile app, like when you have internal security policies dictating that different mobile apps should have different associated domain names and SSL certificates.
+For some cases, you might need to change the domain name associated with your mobile app, like when you have internal security policies dictating that different mobile apps should have different associated domain names and SSL certificates.
 
 You can customize the domain name for each mobile app in Service Center. By default, OutSystems uses the hostname set for the environment in Administration > Environment Configuration.
 
@@ -69,15 +71,15 @@ To define a different domain name for your mobile app, do the following:
 
 1. Enter the new domain name for the mobile app and click **Apply**.
 
-You will need to regenerate the mobile app for the changes to take effect.
+You need to regenerate the mobile app for the changes to take effect.
 
 ### Customizing the Mobile App Version Code
 
-The mobile app version code is an internal number associated to the generation of the mobile app package. This number is used by the app store to determine whether one version is more recent than another. See more detailed information in [Android](https://developer.android.com/studio/publish/versioning) and [iOS](https://help.apple.com/app-store-connect/#/dev82a6a9d79) documentation.
+The mobile app version code is an internal number associated to the generation of the mobile app package. App stores use this number to determine whether one version is more recent than another. See more detailed information in [Android](https://developer.android.com/studio/publish/versioning) and [iOS](https://help.apple.com/app-store-connect/#/dev82a6a9d79) documentation.
 
 By default, OutSystems **increments the version code by one** every time the mobile app package is generated.
 
-In some cases, you might need to change the default mobile app version code. For example, if you are migrating an existing mobile app from other technology to OutSystems, the current version code of your app in the app store will be higher than the first OutSystems app version code. In this case, you can the set version code of your OutSystems mobile app to a different value.
+For some cases, you might need to change the default mobile app version code. For example, if you are migrating an existing mobile app from other technology to OutSystems, the current version code of your app in the app store is higher than the first OutSystems app version code. In this case, you can the set version code of your OutSystems mobile app to a different value.
 
 To set a different version code for your mobile app, do the following:
 
@@ -87,13 +89,13 @@ To set a different version code for your mobile app, do the following:
 
 1. Enter the new code for the mobile app and click **Apply**.
 
-The next time you generate a new application package, the version code will be incremented by one.
+The next time you generate a new application package, the version code increments by one.
 
 ### Choosing the MABS Version to Build Your Mobile Packages { #choosing-the-mabs-version-to-build-your-mobile-packages }
 
 The [Mobile Apps Build Service (MABS)](<../mobile-apps-build-service/intro.md>) is a **cloud service** used by OutSystems to generate the mobile packages of your mobile apps developed in OutSystems for iOS and Android. 
 
-Though MABS is being continuously improved and OutSystems regularly makes available new versions of this cloud service, you might not want to use the latest version, since different MABS versions support different mobile stacks and therefore different ranges of devices and mobile platform versions.
+MABS is continuously improved and OutSystems regularly makes available new versions of this cloud service. However, you might not want to use the latest version, since different MABS versions support different mobile stacks and therefore different ranges of devices and mobile platform versions.
 
 You can select the MABS version used to generate the mobile packages **by mobile app** and **by mobile platform** (iOS and Android), for a given environment. This selection is done in Service Center at the application level.
 
@@ -109,7 +111,7 @@ To choose a MABS version do the following:
 
     _Note:_ The MABS version selection is only available for applications whose native platform settings are already configured.
 
-1. Click **Save and Generate** and wait a few moments while your mobile app is being generated.
+1. Click **Save and Generate** and wait a few moments while OutSystems generates your mobile app package.
 
 When choosing a MABS version you have the following options available:
 
@@ -117,10 +119,9 @@ When choosing a MABS version you have the following options available:
 
 * **Specific version _(select from list)_**: Generate mobile app packages (in the current environment) with the MABS version selected from the list.
 
-Regardless of whether you selected the option of using the latest MABS version or using a specific MABS version for the app package generation when you generate and tag a mobile app version, the OutSystems platform will record the MABS version used to generate the mobile package. 
+Whether you selected the option of using the latest MABS version or using a specific MABS version for the app package generation, when you generate and tag a mobile app version, OutSystems records the MABS version used to generate the mobile package.
 
 **To fully understand the impacts of this setting, be sure to check [Understanding MABS Versions](<../mobile-apps-build-service/intro.md#understanding-mabs-versions>).**
-
 
 ## Download Mobile App Build Logs
 
@@ -135,9 +136,8 @@ To obtain a mobile app build log:
 
 ![](<images/sc-download-build-logs.png>)
 
-
 ## Updating Your Mobile App Package
 
-In most occasions, the users of your mobile app will not have to update it manually after installing it in their devices, since OutSystems will automatically push the updates to their devices when you publish a new mobile app version.
+In most occasions, the users of your mobile app don't have to update it manually after installing it in their devices, since OutSystems automatically pushes the updates to their devices when you publish a new mobile app version.
 
-However, in some situations, the users will have to install a new mobile app package. For more information check [Mobile App Update Scenarios](<../mobile-app-update-scenarios.md>).
+However, in some specific situations, the users must install a new mobile app package. For more information check [Mobile App Update Scenarios](<../mobile-app-update-scenarios.md>).

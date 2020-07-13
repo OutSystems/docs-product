@@ -316,7 +316,7 @@ EC | Number of errors | The number of errors that occured during the request.
 
 #### Request Event Details for ConsumedIntegrationExecuted Event
 
-This event occurs when the OutSystem Platform detects a [slow consumed integration](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
+This event occurs when the platform detects a [slow consumed integration](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 Property | Meaning | Description  
 ---|---|---  
@@ -341,7 +341,7 @@ EC | Number of errors | The number of errors that occured during the request.
   
 #### Request Event Details for ExtensionExecuted Event
 
-This event occurs when the OutSystem Platform detects a [slow extension action](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
+This event occurs when the platform detects a [slow extension action](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 Property | Meaning | Description  
 ---|---|---  

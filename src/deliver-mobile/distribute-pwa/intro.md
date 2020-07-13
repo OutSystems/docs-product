@@ -200,6 +200,14 @@ Note that you need to republish your apps after the Platform Server upgrade for 
 
 There is a potential workaround for the PWA toggle button to work without the republishing step, which is to republish the current module once and then try turning on the toggle **Distribute as PWA**. However, keep in mind that republishing the apps after the upgrade is a mandatory step, and skipping it can cause unintended effects.
 
+### I'm getting an invalid home URL for PWA
+
+If the PWA can't load because you're getting the URL that matches the URL of the environment, for example ` https://example.com/`, check if your set a home module for your app.
+
+Open the app details screen. If the **Test in browser button** is deactivated, the app doesn't have a module defined. Click the curly arrow icon on the right side of the module name to set that module as the home module.
+
+![Set a home module](images/set-home-module.png?width=600)
+
 ### There are runtime errors
 
 Try deleting the local data of the app. Locate the settings in the browser, and clear the data for the app installation domain. In Chrome, go to **Settings** > **Site Settings** > **Cookies and site data** > **See all cookies and site data**, search for the domain and clear the data.

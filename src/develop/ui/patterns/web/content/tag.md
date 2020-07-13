@@ -5,51 +5,36 @@ summary: Tag styles small texts in a colored tag format.
 
 # Tag
 
-Style small texts in a colored tag format.
+You can use the Tag UI Pattern to style small texts in a colored tag format. Use the Tags UI Pattern to display statuses, labels, or categories thus providing great user experience.
 
-Use Tags to display status, labels or categories thus providing great user experience. 
+**How to use the Tag UI Pattern**
 
-**How to use**
+1. In Service Studio, in the Toolbox, search for `Tag`.
+  
+    The Tag widget is displayed.
 
-Drag the pattern to the screen and add the text in the placeholder.
+    ![](<images/tag-1-ss.png>)
 
-1. Drag the Tag pattern into the preview.
+1. To From the Toolbox, drag the Section widget into the Main Content area of your application's screen.
 
-1. Drag your text to this placeholder.
+    ![](<images/tag-2-ss.png>)
 
-    ![](<images/tag-image-1.png?width=500>)
+1. Add your content to the placeholders. In this we add some text.
 
-1. Set the Input Parameters to extend the default values.
+    ![](<images/tag-3-ss.png>)
 
-    ![](<images/tag-image-2.png>)
+1. On the properties tab, you can change the Tag's look and feel by setting the (optional) properties, for example, size and color.
 
-## Input Parameters
+    ![](<images/tag-4-ss.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Color | Set the backgound color. | Color Identifier | _False_ | Entities.Color.Primary |
-| Shape | Set the shape. | Shape Identifier | _False_ | Entities.Shape.Rounded |
-| Size | Set the size. | Size Identifier | _False_ | None |
-| IsLight | Use the lightest color version for the background and the darker color  version for the text. | Boolean | _False_ | False |
-| ExtendedClass  |  Add custom style classes to this Block. |  Text | _False_ | None |
+After following these steps and publishing the module, you can test the pattern in your app.
 
-## Layout and Classes
+## Properties
 
-![](<images/tag-image-3.png>)
-
-## Advanced Use Case
-
-### Use only border in Tag Pattern
-
-1. Set the Color parameter to Transparent.
-1. In the ExtendedClass property, set the text color.
-
-    ![](<images/tag-image-4.png>)
-
-1. Set the border size.
-
-    ![](<images/tag-image-5.png>)
-
-1. Publish and test.
-
-    ![](<images/tag-image-6.png>)
+| **Property** |  **Description** |  
+|---|---|
+| Color (Color Identifier): Optional  | Set the Tag's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available. <p>Examples <ul><li>_Blank_ - Displays the badge in the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The Tag's background is red.</li></ul></p> |
+| Shape (Shape Identifier): Optional| Set the Tag's shape. Rounded, soft rounded, and sharp are the predefined shapes available. <p>Examples <ul><li>_Blank_ - Displays a rounded shaped Tag (default value).</li><li>_Entities.Shape.Sharp_ - Displays a square shaped Tag.</li></ul></p> |
+| Size (Size Identifier): Optional  | Set the Tag's size. Small and medium are the predefined sizes available. <p>Examples <ul><li>_Entities.Size.Medium_ - Displays a medium-sized badge.</li><li>_Entities.Size.Small_ - Displays a small sized Tag.</li></ul></p> |
+| IsLight (Boolean): Optional  | Specify the Tag's background color. <p>Examples <ul><li>_Blank_ - A darker hue of the color is applied to the Tag and a lighter color to the text (default value).</li><li>_True_ - A brighter hue of the color is applied to the Tag and a darker color to the text.</li><li>_False_ - A darker hue of the color is applied to the Tag and a lighter color to the text.</li></ul></p> |
+| ExtendedClass (Text): Optional |  Add custom style classes to the Tag UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Tag UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Tag UI styles being applied.</li></ul></p> |

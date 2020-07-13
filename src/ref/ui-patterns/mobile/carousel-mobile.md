@@ -120,7 +120,7 @@ b. Add a button into the Content placeholder.
 
 ## Creating a carousel with navigation buttons
 
-This pattern includes [public actions](../../../develop\ui\patterns\mobile\public-actions.md) that you can use without having to use the Carousel's own
+This pattern includes [public actions](../../../develop/ui/patterns/mobile/public-actions.md) that you can use without having to use the Carousel's own
 navigation (Next, Previous or GoTo). In this use case, we will only use
 buttons to navigate in the Carousel:
 
@@ -136,7 +136,7 @@ action.
 
 ## Creating a ListRemove in Carousel
 
-This pattern includes the **UpdateCarousel** [public actions](../../../develop\ui\patterns\mobile\public-actions.md) to update all variables and positions in the Pattern:
+This pattern includes the **UpdateCarousel** [public actions](../../../develop/ui/patterns/mobile/public-actions.md) to update all variables and positions in the Pattern:
 
 1. Create an action and drag the **ListRemove** and **CarouselUpdate**
 actions.

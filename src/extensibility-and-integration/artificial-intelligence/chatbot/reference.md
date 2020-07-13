@@ -49,7 +49,7 @@ For more information about the cards structure, see these pages in Microsoft Dev
 * [Cards reference](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/cards-reference). Contains more information about cards. Note that not all cards are available in OutSystems.
 * [Card actions](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/cards-actions) lists actions you can use with the cards.
 
-## Availability in OutSystems apps
+## Versions
 
 The chatbot component, with the UI blocks and the webhook module, is available in two versions. Which version you need to use depends on the type of app you already have. We recommend Reactive Web App and the compatible version of the component for all new and existing Reactive Web projects. 
 
@@ -64,5 +64,5 @@ Note the following differences in the version of the component for Traditional W
 
 * The name of the app template is Azure Bot Webhook.
 * The name of the component is **ChabotWeb**.
-* The properties **BotImageURL** and **UserImageURL** are not available in the Web Block.
+* The properties **BotImageURL** and **UserImageURL** aren't available in the Web Block.
 * When adding action to send a message, add the Server Action **SendMessage** from the Chatbot Web component.

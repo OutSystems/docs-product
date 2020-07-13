@@ -1,6 +1,6 @@
 ---
 summary: Handle and raise exceptions in OutSystems applications.
-tags: support-Application_Troubleshooting; support-webapps
+tags: article-page; support-Application_Troubleshooting; support-webapps
 ---
 
 # Handle Exceptions

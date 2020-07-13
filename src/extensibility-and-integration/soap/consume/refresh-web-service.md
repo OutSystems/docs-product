@@ -5,7 +5,7 @@ tags: support-Integrations_Extensions
 
 # Refresh a SOAP Web Service
 
-If there are changes in the services being consumed from a SOAP Web Service or if you want to modify the list of consumed methods, refresh the service in Service Studio.
+If there are changes in the services consumed from a SOAP Web Service or if you want to modify the list of consumed methods, refresh the service in Service Studio.
 
 Do the following:
 
@@ -15,10 +15,10 @@ Do the following:
 
     ![](images/soap-refresh-menu.png)
 
-    The Refresh operation asks you to confirm the location (URL or local file path) of the WSDL for the service before proceeding, since it might have changed, and then re-reads the WSDL, showing you the list of available methods and allowing you to remove/add any consumed methods.
+    The Refresh operation asks you to confirm the location (URL or local file path) of the WSDL for the service before proceeding, since it might have changed. Service Studio then re-reads the WSDL, showing you the list of available methods and allows you to remove/add any consumed methods.
 
 1. Change the list of consumed methods by checking or unchecking them, and press **Finish** to apply your changes.
 
     ![](images/soap-refresh-methods.png)
 
-    Consumed methods no longer present in the service definition are shown as "(outdated)", and new methods are shown as "(new)".
+    Service Studio shows consumed methods no longer present in the service definition as "(outdated)" and new methods as "(new)".

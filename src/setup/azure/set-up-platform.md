@@ -94,7 +94,7 @@ To apply your OutSystems license to the **development** environment, do the foll
 
     ![License Download](images/setup-image8.png)
 
-1. Once you have the license file (*.lic), go back to the Licensing tab of the Service Center management console of your environment and select **Upload New License** to upload the license file.
+1. Once you have the license file (`*.lic`), go back to the Licensing tab of the Service Center management console of your environment and select **Upload New License** to upload the license file.
 
     ![Upload license](images/setup-image3.png?width=700)
 

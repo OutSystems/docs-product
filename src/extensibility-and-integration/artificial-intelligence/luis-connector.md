@@ -48,7 +48,7 @@ Here is how you can install the connector and reference it in your app.
 
 Follow these instructions to get the settings from the LUIS app that you need to configure the OutSystems LUIS connector. 
 
-1. Go to **your LUIS app** > **Manage** > **Settings**. Copy the value of the **App ID**. 
+1. Go to **your LUIS app** in Azure > **Manage** > **Settings**. Copy the value of the **App ID**. 
 
     ![LUIS settings tab](images/luis-settings.png?width=600)
 
@@ -65,7 +65,7 @@ Follow these instructions to get the settings from the LUIS app that you need to
 
 ## Configure the LUIS connector
 
-To use the LUIS connector in your app, you need to configure the connector in Service Center and enter the values you got from the Azure LUIS app.
+To use the LUIS connector in your app, you need to configure the connector in Service Center.
 
 1. Go to **Service Center** > **Factory** > **Modules**. Enter **AzureLUISConnector** in the **Name** field and press **Filter**.
 
@@ -142,7 +142,6 @@ After configuring the connector for authoring, test the Programmatic (authoring)
 The LUIS connector supports the API v2.0 of the LUIS app.
 
 </div>
-
 
 The OutSystems LUIS connector provides server actions for two different APIs:
 

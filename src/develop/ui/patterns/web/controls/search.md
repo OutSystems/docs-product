@@ -3,57 +3,36 @@ tags: runtime-traditionalweb;
 summary: Search allows the user to find pieces of content without the use of navigation.
 ---
 
-# Search 
+# Search
 
-Allow the user to find pieces of content without the use of navigation.
+You can use the Search UI Pattern to provide users with a search field.
 
-Use the Search so that end users can easily find pieces of content by entering queries. Unlike navigation, knowledge of the content's location isn't required. 
+**How to use the Search UI Pattern**
 
-**How to use**
+1. In Service Studio, in the Toolbox, search for `Search`.
 
-1. Drag Search pattern into the preview.
+    The Search widget is displayed.
 
-    ![](<images/search-image-1.png>)
+    ![](<images/search-1-ss.png>)
 
-1. Set a Local Variable for the input of type Text.
+1. From the Toolbox, drag the Search widget into the Main Content area of your application's screen.
 
-    ![](<images/search-image-2.png>)
+    ![](<images/search-2-ss.png>)
 
-1. Publish and test.
+    By default, the Search widget contains Icon, Input, and Actions placeholders.
 
+1. Create a local variable by right-clicking on your screen name and selecting **Add Local Variable**.
 
-## Input Parameters
+    ![](<images/search-3-ss.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  | Add custom style classes to this Block. | Text | No | none |
-  
-## Layout and Classes
+1. Enter a name for the variable. In this example, we enter ``SearchText``.
 
-![](<images/search-image-3.png>)
+   ![](images/search-4-ss.png)
 
-## Advanced Use Case
+After following these steps and publishing the module, you can test the pattern in your app.
 
-### Make a reset search button
+## Properties
 
-For this example, refer to the [FourColumns Screen Template](https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/FourColumnGallery.aspx).
-
-1. Go to the Search Pattern presented in Column2 inside the Filters_Wrapper container.
-1. Drag a container inside the Actions placeholder.
-1. Drag a Icon Widget inside that container and choose `Entities.IconName.times` for the Name parameter. This is the X icon.
-
-    ![](<images/search-image-4.png>)
-
-1. In the container, set the Display parameter to `If(SearchKeyword <> "", True, False)`. This uses the already existing SearchKeyword Local Variable and only displays the container if the search input has text.
-
-    ![](<images/search-image-5.png>)
-
-1. Add an OnClick event and set the handler to the RefreshTable action. 
-1. Set the parameters ResetFilters and ResetPagination to True. 
-1. In the Category property, set the ProductCategory Local Variable. This way you reset the search input as well as the screen to the default state.
-
-    ![](<images/search-image-6.png>)
-
-1. Publish and test.
-
-    ![](<images/search-gif-1.gif>)
+| **Properties** |  **Description** |  
+|---|---|
+|ExtendedClass (Text): Optional | Add custom style classes to the Search UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value). </li><li>_"myclass"_ - Adds the _myclass_ style to the Search UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Search UI styles being applied.</li></ul> |  

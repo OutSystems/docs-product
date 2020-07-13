@@ -1,93 +1,90 @@
 ---
 tags: runtime-traditionalweb; 
-summary: SearchBalloon lets the users search a list while showing results.
+summary: Search Balloon lets the users search a list while showing the results simultaneously.
 ---
 
-# SearchBalloon
+# Search Balloon
 
-Search Balloon Widget lets the users search the content while the results update in the results list. Use the Search Balloon to guide users by, for example, showing recommendations based on what they enter in the Search field.
+You can use the Search Balloon UI Pattern to provide users with a search field and while the user searches for content, the results are simultaneously updated in a results list.
 
-**How to use**
+![](images/search-balloon-demo-browser.png?width=500)
 
-Follow these steps to create a result list that automatically updates when users enter a search query.
+**How to use the Search Balloon UI Pattern**
 
-Before you start:
+In this use case, we create a search balloon for a list of employees.
 
-* Reference [Sample Data](../../../screen-templates-create/sample-data.md) in your app.
-* Create a new blank Screen and add a Preparation Action to it (right-click a Web Screen and select **Add Preparation**). Drag Sample_Employee Entity (from Sample Data) to the Preparation flow.
+1. In Service Studio, in the Toolbox, search for `Search Balloon`.
 
-Then:
+    The Search Balloon widget is displayed.
 
-1. Drag Search Balloon Widget from the widget toolbox to your Screen.
+    ![](images/searchballoon-1-ss.png)
 
-1. Go to Search Balloon Widget > select the Input Widget  > locate the Input properties > click the **Variable** field and select **New Local Variable** from the list. Name the variable SearchText.
-    
-    ![Search Balloon variable](images/search-balloon-variable-ss.png?width=700)
-   
-1. Go to Search Balloon Widget > select the ListRecords1 Widget > locate ListRecords1 properties > click the **Source Record List** field and select "GetEmployees.List" from the list. Still in the properties, enter `1` in the **Start Index** field.
+1. From the Toolbox, drag the Search Balloon widget into the Main Content area of your application's screen.
 
-1. Go to Search Balloon Widget > select the Input Widget > locate the Input properties > click **Destination** field and select **New Screen Action** from the list. The OnChange Action opens. In the OnChange Action flow:
-   
-    * Drag a **Refresh Data** node and select "GetEmployees" in the **Select Data Source** window.
-    
-    * Drag an **Ajax Refresh** to the flow, navigate by expanding to **ListRecords1**, select **ListRecords1** and click **OK**.   
+    ![](images/searchballoon-2-ss.png?width=800)
 
-1. Go to the Preparation Action > double-click the GetEmployees Aggregate > click **Filters** > click **Add Filter** > enter this text in the **Filter Condition** field:
-`Sample_Employee.FirstName like "%" + SearchText + "%" or Sample_Employee.LastName like "%" + SearchText + "%" or SearchText = ""`. Click **Done**.
+    By default, the Search Balloon widget contains Icon, Input, Actions, and Answers placeholders.
 
-    This forces the Aggregate to return all records that have SearchText in the first or last name.
+1. Select the Input widget, and on the **Properties** tab, from the **Variable** drop-down, select **New Local Variable**.
 
-    ![The logic flow that refreshes data and widget](images/search-balloon-refresh-data-flow-ss.png?width=400)
-    
+    ![](images/searchballoon-3-ss.png)
 
-1. Go back to the Screen and select Search Balloon Widget.
-    
-    * Delete the "Put your results here" placeholder text and drag an Expression Widget to the list.
+1. Enter a name for the variable. In this example, we enter `SearchText`.
 
-    * Double-click the Expression Widget and enter `ListRecords1.List.Current.Sample_Employee.FirstName + " " + ListRecords1.List.Current.Sample_Employee.LastName` as the Expression Value. Click **Done**.
-    
-    Now the filtered list shows employees' first and last names.
+    ![](images/searchballoon-4-ss.png)
 
-    ![Expression Widget in Search Balloon](images/search-balloon-expression-ss.png?width=700)
+1. Add a preparation action by right-clicking your screen name, and selecting **Add Preparation**.
 
-1. Publish your app and try entering a name in the search field.
-   
-   ![Search Balloon demo in a browser](images/search-balloon-demo-browser.png?width=500)
+    ![](images/searchballoon-5-ss.png)
 
+1. Drag the relevant data to the preparation flow. In this example, we drag an **Employee** entity to the preparation flow.
 
-## Input parameters
+    ![](images/searchballoon-6-ss.png)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Adds custom style classes to the Tabs Block. |  Text | False | none |
-| AdvancedFormat  |  Enables you to use more options than what is provided in the input parameters. Example: `{ arrow: false,   showOnInit: true }`. For more information visit: https://atomiks.github.io/tippyjs/ |  Text | False | none |
+1. Select the **ListRecords1** widget, and on the **Properties** tab, from the **Source Record List**  drop-down, select the relevant source list. In this example, we select **GetEmployees.List**. Additionally, we enter `1` in the **Start Index** field.
 
-## Layout and classes
+    ![](images/searchballoon-8-ss.png)
 
-![](images/search-balloon-image-2.png?width=800)
+1. Select the **Input** widget, and on the **Properties** tab, from the **Destination** drop-down, select **New Screen Action**.
 
-## Events
+    ![](images/searchballoon-9-ss.png)
 
-| **Event Name** |  **Description** |  **Mandatory**  |
-| ---|---|--- |  
-| OnHide | Event triggered once the balloon is hidden.  |  False  |
-| OnShow | Event triggered once the balloon is shown.  |  False  |
+1. Drag a **Refresh Data** node to the OnChange action flow, and in the **Select Data Source** window, select **GetEmployees** and then click **OK**.
 
-## Advanced
+    ![](images/searchballoon-10-ss.png)
 
-Here are some more advanced use-cases of the widget.
+1. Drag an **Ajax Refresh** node to the OnChange action flow, and in the **Select Widget** window, navigate and select the relevant widget. In this example, we select **ListRecords1** and click **OK**.
 
-### Show results on init
+    ![](images/searchballoon-11-ss.png?width=800)
 
-1. Drag Search Balloon to the preview.
-2. On the AdvancedFormat parameter add the following line:
-`{ showOnInit: true }`.
+1. Double-click the Preparation action and then double-click the **GetEmployees** aggregate.
 
-### Change animation of results
+1. Click **Filters**, then click **Add Filter** and in the **Filter Condition** field, enter the relevant logic and click **Done**. In this example, we enter the following condition:
 
-1. Drag Search Balloon to the preview.
-2. On the AdvancedFormat parameter add the following line:
-`{ showOnInit: true }`.
+     `Employee.FirstName like "%" + SearchText + "%" or Employee.LastName like "%" + SearchText + "%" or SearchText = ""`.
 
-![](images/search-balloon-gif-1.gif?width=800))
-![](images/search-balloon-gif-2.gif?width=800))
+    This forces the aggregate to return all records that have **SearchText** in the employee's name.
+
+    ![](images/searchballoon-12-ss.png)
+
+1. Double-click your screen name, select the Search Balloon Widget, right-click the Text placeholder, and select **Delete**.
+
+    ![](images/searchballoon-13-ss.png)
+
+1. Drag an Expression Widget to the list and enter the relevant expression value, and click **Done**. In this example, we enter the following:
+
+    `ListRecords1.List.Current.Employee.Name + " "`
+
+    This filters the list to show the employees' name.
+
+    ![](images/searchballoon-14-ss.png)
+
+After following these steps and publishing the module, you can test the pattern in your app.
+
+## Properties
+
+| **Property** |  **Description** |
+|---|---|
+|ExtendedClass (Text): Optional | Add custom style classes to the Search Balloon UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value). </li><li>_"myclass"_ - Adds the _myclass_ style to the Search Balloon UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Search Balloon UI styles being applied.</li></ul> |
+|AdvancedFormat (Text): Optional| Allows you to use more options than what is provided in the input parameters. <p>Example <ul><li> `{ arrow: false,   showOnInit: true }`</li></ul></p> For more information, see <https://atomiks.github.io/tippyjs/>. |
+

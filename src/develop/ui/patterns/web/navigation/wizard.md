@@ -83,9 +83,9 @@ The following example demonstrates how you can create a four step Wizard with na
 
     This logic has the following meaning:
 
-    * If the user is on step 1, the step will show as the active step in the wizard.
-    * If the user is on a step greater than step 1, step 1 will show as a step that is in the past (completed).
-    * If the user is on a step less than 1, the step will show as an upcoming (next) step.
+    * If the user is on step 1, the step is displayed as the active step in the wizard.
+    * If the user is on a step greater than step 1, step 1 is displayed as a step that is in the past (completed).
+    * If the user is on a step less than 1, the step is displayed as an upcoming (next) step.
 
 1. Repeat steps 8 and 9 for all of the Wizard Items. Replace the number 1 in the expression with 2, 3, and 4 respectively.
 
@@ -101,7 +101,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
     ![](images/wizard-image-19.png)
 
-    You have now created a condition that controls what is displayed on screen when the step is active.
+    You have now created a condition that controls what's displayed on screen when the step is active.
 
 1. Repeat steps 1 and 2 for all of the Wizard Items. Replace the **Condition** property with 2, 3, and 4 respectively.
 

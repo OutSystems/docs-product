@@ -61,7 +61,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
 1. Select the **Assign** logic, and from the **Variable** drop-down, select the local variable you created (in this example, **SelectedUserId**).
 
-    **Note**:  You have now created all of the information that displays on the **left** side of the Master Detail widget. In the following steps, we will create the infomation to display on the **right** side of the Master Detail widget.
+    **Note**:  You have now created all of the information that displays on the **left** side of the Master Detail widget. In the following steps, we will create the information to display on the **right** side of the Master Detail widget.
 
 1. To display the selected user's details on the right side of the screen, create a new aggregate by right-clicking on your screen name and selecting **Fetch Data from Database**. 
 
@@ -83,8 +83,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
    ![](images/masterdetail-10-ss.png)
 
-
-1. Double-click your screen name, and from the **GetUserDetails** aggregate, drag the attributes you want to dislay into the RightContent placeholder. In this example, we use the Username and Email attributes.
+1. Double-click your screen name, and from the **GetUserDetails** aggregate, drag the attributes you want to display into the RightContent placeholder. In this example, we use the Username and Email attributes.
 
    ![](images/masterdetail-12-ss.png)
 

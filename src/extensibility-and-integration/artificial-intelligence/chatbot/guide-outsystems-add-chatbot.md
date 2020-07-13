@@ -6,8 +6,7 @@ tags:
 # Add a chatbot UI block to your app
 
 This is a step-by-step guide to add the chatbot UI block to an OutSystems app. To have a functional chatbot, you also need a logic to handle the responses. [Create an FAQ chatbot for your app](get-started-faq-chatbot.md) provides detailed instructions for an FAQ bot. If you're implementing advanced use cases, check 
-[Create advanced logic and reply with cards](get-started-advanced-chatbot.md).
-
+[Create advanced logic for more AI functionalities](get-started-advanced-chatbot.md).
 
 <div class="info" markdown="1">
 

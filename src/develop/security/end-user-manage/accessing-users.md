@@ -21,7 +21,7 @@ Before accessing the Users application for the first time, you must [configure t
 
 ## Configure Users administrator
 
-Configuring the Administrator user for Users application sets the password and also grants the Administrator user with all the available Roles.
+Configuring the Administrator user for Users application sets the password and also grants the Administrator user ("admin") with all the available Roles.
 
 To configure the Administrator user, do the following:
 
@@ -40,3 +40,5 @@ To configure the Administrator user, do the following:
 1. Set the password for the Administrator user.
 
 1. Click **Apply**.
+
+The Administrator user ("admin") for Users application is now configured.

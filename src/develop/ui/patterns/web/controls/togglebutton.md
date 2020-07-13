@@ -1,61 +1,56 @@
 ---
 tags: runtime-traditionalweb; 
-summary: ToggleButton prompts end users to choose between two states.
+summary: The Toggle Button UI Pattern prompts end users to choose between two states.
 ---
 
-# ToggleButton
+# Toggle Button
 
-Prompts end users to choose between two states.
+You can use the Toggle Button UI Pattern to provide users with a stand-alone control that allows them to choose between two states, for example, a Yes/No value.
 
-Use the Toggle Button and prompt end users to choose between two incompatible states, selecting a preference. There is always a default value as toggles are digital on/off switches. 
+![](<images/togglebutton-2-ss.png>)
 
-**How to use**
+**How to use the Toggle Button UI Pattern**
 
-After placing the Block on your Web Screen, drag a checkbox inside the placeholder and the pattern will automatically use it.
+In this example, we create a toggle button to activate a widget that can is activated only when a condition is met.
 
-1. Drag the ToggleButton pattern into the preview.
+1. In Service Studio, in the Toolbox, search for `Toggle Button`.
 
-1. Set a variable of type Boolean to the checkbox.
+    The Toggle Button widget is displayed.
 
-    ![](<images/togglebutton-image-1.png>)
+    ![](<images/togglebutton-6-ss.png>)
 
-1. Publish and test.
+1. From the Toolbox, drag the Toggle Button widget into the Main Content area of your application's screen.
 
-    ![](<images/togglebutton-image-2.png>)
+    ![](<images/togglebutton-7-ss.png>)
 
-## Input Parameters
+1. Right-click your screen name and select **Add Local Variable**.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | None |
+    ![](<images/togglebutton-8-ss.png>)
 
-## Layout and Classes
+1. Enter a name and select a data type. In this example, we enter the name `IsToggled`, set the data type to **Boolean** and the default value to **False**.
 
-![](<images/togglebutton-image-3.png>)
+    ![](<images/togglebutton-9-ss.png>)
 
-## CSS Selectors
+1. In this example, we add some text and a button. We enter a name for the [button](<../../../../../ref/lang/auto/Class.Button Widget.final.md>) (SubmitButton), and set the **Enabled** property to the local variable we created earlier (IsToggled).
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
-| .toggle-button | .toggle-button-checked | Is the Class Selector to style the Toggle Button when the Boolean Variable is true |
-| .toggle-button | .toggle-button-disabled | Is the Class Selector to style the Toggle Button when is disabled |
-| .toggle-button | .toggle-button:after | Is the Pseudo Element Selector to style the circle of Toggle Button |
+    ![](images/togglebutton-11-ss.png?width=800)
 
+1. Select the Checkbox widget, and on the **Properties** tab, from the **Variable** drop-down, select the local variable you just created (in this example, **IsToggled**).
 
-## Advanced Use Case
+    ![](images/togglebutton-10-ss.png?width=800) 
 
-### Disable the ToggleButton Pattern
+1. From the OnChange **Destination** drop-down, select **New Screen Action**.
 
-1. Drag the ToggleButton pattern into the preview.
+    ![](images/togglebutton-12-ss.png?width=800) 
 
-1. Set a variable of type boolean to the checkbox.
+1. From the Toolbox, add the **Ajax Refresh** to the screen action, and in the **Select Widget** pop-up, navigate to and select the Submit button name (in this example, SubmitButton), and click **OK**.
 
-    ![](<images/togglebutton-image-1.png>)
+    ![](images/togglebutton-13-ss.png?width=800) 
 
-1. In the Checkbox, set the parameter Enabled to False.
+After following these steps and publishing the module, you can test the pattern in your app.
 
-    ![](<images/togglebutton-image-4.png>)
+## Properties
 
-1. Publish and test.
-
-    ![](<images/togglebutton-image-5.png>)
+| **Property** |  **Description** |
+|---|---|
+|ExtendedClass (Text): Optional | Add custom style classes to the Toggle Button UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value). </li><li>_"myclass"_ - Adds the _myclass_ style to the Toggle Button UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Toggle Button UI styles being applied.</li></ul> |

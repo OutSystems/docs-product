@@ -1,78 +1,60 @@
 ---
 tags: runtime-traditionalweb; 
-summary: AlignCenter places content horizontally or vertically within a container.
+summary: Align Center places content horizontally or vertically within a container.
 ---
 
-# AlignCenter
+# Align Center
 
-Place content to horizontally or vertically align to the center of the container.
+You can use Align Center UI Pattern to center content horizontally or vertically on the screen. 
 
-Use AlignCenter to center content horizontally or vertically within a container and to align many elements with different heights or widths.  
+![](<images/aligncenter-1.png>)
 
-**How to use**
+**How to use the Align Center UI Pattern**
 
-Add two or more elements inside the placeholder and they will be centered according to the selected orientation.
+This example shows you how to center align a user's name and initials.
 
-1. Drag AlignCenter pattern into the preview.
+1. In Service Studio, in the Toolbox, search for `Align Center`. 
 
-1. Drag the UserInitials pattern into AlignCenter placeholder.
+    The Align Center widget is displayed.
 
-1. In the Name input parameter, type "Scott Ritchie" (for instance).
+    ![](<images/aligncenter-2-ss.png>)
 
-    ![](<images/aligncenter-image-1.png>)
-
-1. Drag the Text widget into AlignCenter placeholder and type "Scott Ritchie".
-
-    ![](<images/aligncenter-image-2.png>)
-
-1. Publish and test.
-
-![](<images/aligncenter-image-3.png>)
-
-## Input Parameters
-
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Orientation  |  Set the orientation of the content inside. | Orientation Identifier | False | Entities.Orientation.Horizontal |
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | none |
-
-## Layout and Classes
-
-![](<images/aligncenter-image-4.png>)
-
-## CSS Selectors
-
-| **Element** |  **CSS Class** |  **Description**  |
-| --- | --- | --- |
-| .center-align | .center-align.flex-direction-row | When Orientation parameter is Horizontal |
-| .center-align | .center-align.flex-direction-column | When Orientation parameter is Vertical |
-
-## Advanced Use Case
-
-### Set vertical align with custom content
-
-1. Drag the AlignCenter pattern into the preview.
-
-1. Set the Orientation parameter to Vertical.
-
-    ![](<images/aligncenter-image-5.png>)
-
-1. Drag an image into the AlignCenter placeholder and add the `border-radius-circle` class.
-
-1. Drag a container into AlignCenter placeholder and set the horizontal alignment to Center.
-
-1. In the container, add a Text widget with the text "Scott Ritchie" and have its Style Class set to `heading-4`.
-
-1. Add another Text widget with the text "Marketing Communications Manager" and enclose it in a container.
+1. From the Toolbox, drag the Align Center widget into the Main Content area of your application's screen.
     
-    ![](<images/aligncenter-image-6.png>)
+    ![](<images/aligncenter-3-ss.png>)
+   
+1. From the Toolbox, drag the User Initials pattern into the Align Center placeholder.
 
-1. Drag a container into the AlignCenter placeholder and add a Text widget.
+1. On the **Properties** tab, in the Name property, enter a name. In this example, we enter **Scott Ritchie**.
 
-1. Type the text "02 Jan" and have its Style Class set to `font-size-xs text-neutral-6`.
+    ![](<images/aligncenter-4-ss.png>)
 
-    ![](<images/aligncenter-image-7.png>)
+1. Add the relevant content to the Align Center widget. In this example we add some text (Scott Richie) and an image. 
 
-1. Publish and test.
+    ![](<images/aligncenter-5-ss.png>)
 
-    ![](<images/aligncenter-image-8.png>)
+1. On the Align Center **Properties** tab, you can set the content's orientation (either vertical or horizontal).
+
+    ![](<images/aligncenter-6-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app. 
+
+
+**Without Align Center UI Pattern** 
+
+![](<images/aligncenter-7-ss.png>)
+
+**With Align Center UI Pattern**
+
+![](<images/aligncenter-8-ss.png>)
+
+
+## Properties
+
+| **Property** |  **Description** |  
+|---|---|
+| Orientation (Orientation Identifier): Optional | Set the content orientation, either horizontal or vertical. | 
+| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Align Center UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Align Center UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Align Center UI styles being applied.</li></ul></p> |
+
+
+

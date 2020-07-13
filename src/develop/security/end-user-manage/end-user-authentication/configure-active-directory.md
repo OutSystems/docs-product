@@ -4,7 +4,7 @@ summary: How to configure Active Directory end user authentication for your appl
 
 # Configure Active Directory Authentication
 
-<div class="info">
+<div class="info" markdown="1">
 
 Only available in OutSystems on-premises installations.
 

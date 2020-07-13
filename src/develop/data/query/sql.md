@@ -6,7 +6,9 @@ tags: support-Database
 # SQL Queries
 
 <div class="info" markdown="1">
-We’ve been working on this article. Please let us know how useful this new version is by voting.
+
+We've been working on this article. Please let us know how useful this new version is by voting.
+
 </div>
 
 The ![SQL](../../../shared/icons-tools/advanced-query.png) SQL element allows you to execute, test, and review custom SQL queries in your applications. The element provides flexibility in data manipulation, but we recommend using Aggregates when applicable. Aggregates are highly optimized and easier to maintain.
@@ -17,14 +19,14 @@ Input parameters
 :   Providing input parameters allows you to use dynamic data in the SQL query. Input parameters are optional. To reference an input parameter in your SQL statement use a `@` prefix, e.g. `@CustomInputParameter`.
 
 Output parameters
-:   SQL in OutSystems queries always have two output parameters, even when the query executed does not return a result:
+:   SQL in OutSystems queries always have two output parameters, even when the query executed doesn't return a result:
 
     * **List**: The list with the result returned by the query. The list is empty if there are no results.
     
     * **Count**: The number of records returned by the query without considering the SQL Max Records property.
 
 Output Structure
-:   Output Structure is mandatory. You need to define the structure (data types of the columns) that your query returns. You can use any combination of Entities, Structures or both, but the attribute order/data type must match your Select. Output Structure is needed even if your SQL statement does not return any results. 
+:   Output Structure is mandatory. You need to define the structure (data types of the columns) that your query returns. You can use any combination of Entities, Structures or both, but the attribute order/data type must match your Select. Output Structure is needed even if your SQL statement doesn't return any results.
 
     * Example 1: When selecting all attributes of the Employee Entity (with `Id`, `Name`, `Email`, and `PhoneNumber` attributes), 
     specify the Employee Entity as the Output Structure. This enforces that List output parameter of the SQL 
@@ -36,8 +38,7 @@ Output Structure
 
 To reference an entity in your SQL query write it between curly brackets (e.g. `{User}`) and to reference an entity attribute write it between square brackets (e.g. `[PhoneNumber]`).
 
-
-## Write Your Own SQL Query
+## Write your own SQL query
 
 Do the following:
 
@@ -47,13 +48,16 @@ Do the following:
 1. Define the output structure used for the output of the SQL node.
 1. Use the output list of the SQL node to access the result of the SQL query.
 
-## Test Your SQL Query
-You can test your work by clicking the `TEST` button located at the bottom of the SQL editor. In order to test it successfully make sure that:
+## Test your SQL query
+
+You can test your work by clicking the `TEST` button located at the bottom of the SQL editor. To test it successfully make sure that:
+
 1. If you have `Query Parameters` you should first assign a test value in the Test Inputs tab.
 
-    _If no values are assigned, the query will be tested with empty values._
-    
+    Note: If no values are assigned, the query will be tested with empty values.
+
 1. There is one or more output entities/structures that will match the attributes on the `SELECT` statement.
+
 1. Click **TEST**.
 
 ![Test Your SQL Query](images/test-sql.gif)
@@ -102,22 +106,27 @@ The option to convert an Aggregate to a SQL element will only be available if yo
 * Group By attributes
 * Dynamic Sorts
 
-In Reactive Web and Mobile apps, this feature is not available for Aggregates in Client Actions or Screens.
+In Reactive Web and Mobile apps, this feature isn't available for Aggregates in Client Actions or Screens.
 
-### How to Convert an Aggregate to a SQL Element
+### How to convert an Aggregate to a SQL element
 
-To convert an existing Aggregate to a SQL element follow these steps:	
+To convert an existing Aggregate to a SQL element follow these steps:
 
-1. In your action flow, double-click the Aggregate you want to convert.	
-1. In the Aggregate window, double-click the `Executed SQL` property to open the Executed SQL window.  	
-1. Click **CONVERT AGGREGATE TO SQL**. 
-<div class="info" markdown="1">
-The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed above](#limitations).
-</div>	
+1. In your action flow, double-click the Aggregate you want to convert.
+
+1. In the Aggregate window, double-click the `Executed SQL` property to open the Executed SQL window.
+
+1. Click **CONVERT AGGREGATE TO SQL**.
+
+    <div class="info" markdown="1">
+
+    The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed above](#limitations).
+
+    </div>
+
 1. Click **PROCEED**.
 
 ![Convert an Aggregate to SQL](images/convert-to-sql.gif)
 
-Your action flow now includes a SQL element based on the original Aggregate. 
+Your action flow now includes a SQL element based on the original Aggregate.
 The original Aggregate is kept in the action flow but it is disabled. After validating the query results of the new SQL element you can delete the disabled Aggregate.
-

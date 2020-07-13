@@ -1,67 +1,49 @@
 ---
 tags: runtime-traditionalweb; 
-summary: AnimatedLabel allows end users to keep context by focusing on the input.
+summary: The Animated Label animates a label when there is user input.
 ---
 
-# AnimatedLabel
+# Animated Label
 
-An input label that animates when there is user input.
+You can use the Animated Label UI Pattern to animate a label when there is a user input.
 
-Use AnimatedLabel inputs to allow end users to keep context by focusing on the input.
+ ![](<images/animatedlabel-10-ss.png>)
 
-**How to use**
+**How to use the Animated Label UI Pattern**
 
-Drag the pattern to the screen and configure the input and label text. You may use the IsInline parameter to define if it should use the default input style.
+1. In Service Studio, in the Toolbox, search for `Animated Label`.
 
-1. Drag AnimatedLabel pattern into the preview.
+    The Animated Label widget is displayed.
 
-1. Set the Variable property of the Input widget.
-    
-    ![](<images/animatedlabel-image-1.png>)
+    ![](<images/animatedlabel-7-ss.png>)
 
-1. Change the text in Label Placeholder.
-    
-    ![](<images/animatedlabel-image-2.png>)
-    
-1. Publish and test.
-    
-    ![](<images/animatedlabel-image-3.png>)
+1. From the Toolbox, drag the Animated Label widget into the Main Content area of your application's screen.
 
-## Input Parameters
+    ![](<images/animatedlabel-8-ss.png>)
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| IsInline  |  If set as false, the input style in the block as default (white background). | Boolean | False | True |
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | None |
+    By default, the Animated Label widget contains Label and Input placeholders.
 
-## Layout and Classes
-    
-![](<images/animatedlabel-image-4.png>)
+1. Enter the relevant text in the Label placeholder. In this example, we enter `Name`.
 
-## CSS Selectors
+    ![](<images/animatedlabel-9-ss.png>)
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
-| .animated-label | .animated-label-inline |  When IsInline Input Parameter is true |
+1. Create a new local variable for the Input widget by selecting the Input widget and on the **Properties** tab, and from the **Variable** drop-down, and select **New Local Variable**.
 
+    ![](<images/animatedlabel-1-ss.png>)
 
-## Advanced Use Case
+1. Enter a name for the new local variable. In this example, we enter `UserInput`.
 
-### Change the position of the label when it is active 
+    ![](<images/animatedlabel-2-ss.png>)
 
-1. Write the following CSS code in the CSS editor.
+1. On the **Properties** tab, you can change the look and feel of the Animated Label by setting the (optional) properties.
 
-    ```css
-    .animated-label.active .animated-label-text {
-        top: 50px;
-    }
-    ```
-1. Publish and test.
+    ![](<images/animatedlabel-3-ss.png>)
 
-Before 
+After following these steps and publishing the module, you can test the pattern in your app.
 
-![](<images/animatedlabel-image-5.png>)
+## Properties
 
-After 
-
-![](<images/animatedlabel-image-6.png>)
+| **Property** |  **Description** |  
+|---|---|
+| IsInline (Boolean): Optional |  If False, the Animated Input is displayed in a white input box. If True, there is no white input box. This is the default. |
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Animated Label UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Animated Label UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Animated Label UI styles being applied.</li></ul> |

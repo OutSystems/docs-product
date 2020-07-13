@@ -6,12 +6,14 @@ tags: support-Mobile_Apps; support-webapps
 # Access the Users application
 
 <div class="info" markdown="1">
+
 We’ve been working on this article. Please let us know how useful this new version is by voting.
+
 </div>
 
 The **Users** application of a specific OutSystems environment is available at `https://<environment_address>/Users`.
 
-You need an account with administrator privileges to log in the Users application. This account **is not** the same you use to connect to Service Center, LifeTime or Service Studio, as those are IT users, although you can create accounts with the same credentials for both purposes.
+You need an account with administrator privileges to log in the Users application. This account is **not** the same you use to connect to Service Center, LifeTime or Service Studio, as those are IT users, although you can create accounts with the same credentials for both purposes.
 
 Before accessing the Users application for the first time, you must [configure the Administrator user](#configure-users-administrator).
 
@@ -19,13 +21,13 @@ Before accessing the Users application for the first time, you must [configure t
 
 ## Configure Users administrator
 
-Configuring the Administrator user for Users application sets the password and also grants the Administrator user with all the available Roles.
+Configuring the Administrator user for Users application sets the password and also grants the Administrator user ("admin") with all the available Roles.
 
 To configure the Administrator user, do the following:
 
 1. Log in to Service Center using the administrator credentials (`http://<environment_address>/ServiceCenter`).
 
-1. Go to **Factory -> Modules**.
+1. Go to **Factory** > **Modules**.
 
 1. Search for **Users** and click the module name to open the details page.
 
@@ -38,3 +40,5 @@ To configure the Administrator user, do the following:
 1. Set the password for the Administrator user.
 
 1. Click **Apply**.
+
+The Administrator user ("admin") for Users application is now configured.

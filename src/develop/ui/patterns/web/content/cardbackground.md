@@ -1,81 +1,43 @@
 ---
 tags: runtime-traditionalweb; 
-summary: CardBackground groups short pieces of information and highlights them on the screen while providing additional relavance by using a background image.
+summary: Card Background groups short pieces of information and highlights them on the screen while providing additional relevance by using a background image.
 ---
 
-# CardBackground
+# Card Background
 
-Similar to a Card but allows you to define a background image that blends in with the content.
+You can use the Card Background UI Pattern to group small pieces of information and highlight them on the screen using a background image. The information is grouped into a small block that is easily noticeable on-screen. 
 
-Use a Card Background to group short pieces of information and highlight them on the screen while providing additional relavance by using a background image.
+![](<images/cardbackground-1-ss.png>)
 
-**How to use**
+**How to use the Card Background UI Pattern**
 
-Add content to the placeholder and set the background image. Alternatively, in the parameters, you can define a background color that overlays the image, the content's position and a minimum height for the card.
+1. In Service Studio, in the Toolbox, search for `Card Background`.
 
-1. Drag the CardBackground pattern into the preview.
+    The Card Background widget is displayed.
 
-1. Set the Input Parameters to extend the default values.
+    ![](<images/cardbackground-2-ss.png>)
 
-1. Publish and test.
+1. From the Toolbox, drag the Card Background widget into the Main Content area of your application's screen.
 
-    ![](<images/cardbackground-image-1.png>)
+    ![](<images/cardbackground-3-ss.png>)
 
-## Input Parameters
+    By default, the Card Background widget contains a Content placeholder with some text and a Background Image placeholder with an image.
 
-| **Input Name** |  **Description** |  **Type** | **Mandatory** | **Default Value** |
-|---|---|---|---|---|
-| Color  | Set the backgound color. | Color Identifier | False | Entities.Color.Transparent |
-| Position  | Set the position around the widget element. | PositionExtended Identifier | False | none |
-| Height  | Set the height of the Card, in pixels. Content will be vertically aligned by default. | Integer | False | 300 |
-| ExtendedClass  |  Add custom style classes to this Block. | Text | False | none |
+1. Add your content to the placeholder. In this example we change the image. To do this, from the Widget Tree, select the Image, and on the **Properties** tab, from the **Image** drop-down, select the image you want to display.
 
-## Layout and Classes
+    ![](<images/cardbackground-4-ss.png>)
 
-![](<images/cardbackground-image-2.png>)
+1. On the **Properties** tab, you can change the look and feel of the Card Background widget, by setting the (optional) properties, for example, the background color that overlays the image, the content's position and a minimum height for the card.
 
-## CSS Selectors
+    ![](<images/cardbackground-5-ss.png>)
 
-| **Element** |  **CSS Class** |  **Description**  |
-| ---|---|---
-| .card-background-content | .bottom-center | Vertically aligns the content to Bottom and Horizontally align it to Center. |
-| .card-background-content | .bottom-left |  Vertically aligns the content to Bottom and Horizontally align it to Left. |
-| .card-background-content | .bottom-right |  Vertically aligns the content to Bottom and Horizontally align it to Right. |
-| .card-background-content | .center |  Vertically aligns the content to Center and Horizontally align it to Center. |
-| .card-background-content | .center-left |  Vertically aligns the content to Center and Horizontally align it to Left. |
-| .card-background-contente | .center-right |  Vertically aligns the content to Center and Horizontally align it to Right. |
-| .card-background-content | .top-center | Vertically aligns the content to Top and Horizontally align it to Center. |
-| .card-background-content | .top-left |  Vertically aligns the content to Top and Horizontally align it to Left. |
-| .card-background-content | .top-right |  Vertically aligns the content to Top and Horizontally align it to Right. |
+After following these steps and publishing the module, you can test the pattern in your app.
 
-## Advanced Use Case
+## Properties
 
-### Add a new style to the Counter pattern
-
-1. Drag the Counter pattern into the preview.
-
-1. Set the Input Parameters to the following values:
-    - Color: `Entities.Color.Neutral10`
-    - Position: `Entities.PositionExtended.BottomCenter`
-    - Height: `400`
-    - ExtendedClass: `shadow-xl`
-
-    ![](<images/cardbackground-image-3.png>)
-
-1. Add a text widget into the Content placeholder and set the Style Classes property to `heading4 text-neutral-0`.
-
-    ![](<images/cardbackground-image-4.png>)
-
-1. Drag an image to the BackgroundImage placeholder.
-
-    ![](<images/cardbackground-image-5.png>)
-
-1. Publish and test.
-
-    ![](<images/cardbackground-image-6.png>)
-
-## Notes
-
-The object-fit property is not supported in Internet Explorer.
-
-
+|**Property** | **Description** |
+|---|---|
+| Color (Color Identifier): Optional  | Set the background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - No background color is applied. This is the default (Entities.Color.Transparent).</li><li>_Entities.Color.Red_ - Applies a red background color to the card.</li></ul></p> |
+| Position (PositionExtended Identifier): Optional| Sets the widget position. <p>Examples</p><ul><li>_Entities.PositionExtended.BottomRight_ - The widget displays on the bottom right of the screen. </li><li>_Entities.PositionExtended.Center_ - The widget displays in the center of the screen. </li></ul> |  
+| Height (Integer): Optional | Set the height of the Card (in pixels). By default, the content is vertically aligned. <p>Examples</p><ul><li>_Blank_ - The Card height is 300 pixels. </li><li>_500_ - The Card height is 500 pixels. </li></ul>|
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Card Background UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Card Background UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Card Background UI styles being applied. </li></ul> |

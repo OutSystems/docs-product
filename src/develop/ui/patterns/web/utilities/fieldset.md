@@ -33,7 +33,7 @@ You can use the Fieldset UI Pattern to group and label related information, such
 
     ![](<images/fieldset-image-5.png>)
 
-1. Add the relevant content to the placeholder, for example, textboxes and labels.
+1. Add the relevant content to the placeholder, for example, text boxes and labels.
 
     ![](<images/fieldset-image-8.png>)
 

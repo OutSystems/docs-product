@@ -7,7 +7,7 @@ summary: Displays large sets of information, which can be split into different a
 
 You can use the Tabs UI Pattern to divide content into meaningful sections. Each section is viewable at one time. You use this pattern when you want the user to be able to between sections within the same context, not to navigate to different areas.
 
-![](images/tabs-gif1.gif?width=650)
+![](images/tabs-gif1.gif?width=600)
 
 ## How to use the Tabs UI Pattern
 

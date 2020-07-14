@@ -5,23 +5,23 @@ summary: Displays a master list and the details for the currently selected item.
 
 # Master Detail
 
-You can use the Master Detail Pattern to display a master list of items and their related details, for example, a list of employees and their corresponding details. 
+You can use the Master Detail Pattern to display a master list of items and their related details, for example, a list of employees and their corresponding details.
 
 ![](images/masterdetail-2.png)
 
 ## How to use the Master Detail UI Pattern
 
-1. In Service Studio, in the Toolbox, search for `Master Detail`. 
+1. In Service Studio, in the Toolbox, search for `Master Detail`.
 
     The Master Detail widget is displayed.
-    
+
     ![](images/masterdetail-5-ss.png)
 
 1. From the Toolbox, drag the Master Detail widget into the Main Content area of your application's screen.
 
-     ![](images/masterdetail-1-ss.png)
+    ![](images/masterdetail-1-ss.png)
 
-     By default, the Master Detail widget contains a right placeholder and left placeholder which expects a list.
+    By default, the Master Detail widget contains a right placeholder and left placeholder which expects a list.
 
 1. To populate the list, create an aggregate, by right-clicking your screen name, and selecting **Fetch Data from Database**.
 
@@ -61,11 +61,11 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
 1. Select the **Assign** logic, and from the **Variable** drop-down, select the local variable you created (in this example, **SelectedUserId**).
 
-    **Note**:  You have now created all of the information that displays on the **left** side of the Master Detail widget. In the following steps, we will create the information to display on the **right** side of the Master Detail widget.
+    **Note**: You have now created all of the information that displays on the **left** side of the Master Detail widget. In the following steps, we will create the information to display on the **right** side of the Master Detail widget.
 
-1. To display the selected user's details on the right side of the screen, create a new aggregate by right-clicking on your screen name and selecting **Fetch Data from Database**. 
+1. To display the selected user's details on the right side of the screen, create a new aggregate by right-clicking on your screen name and selecting **Fetch Data from Database**.
 
-1. Enter a name for the aggregate. In this example, we call it **GetUserDetails**. 
+1. Enter a name for the aggregate. In this example, we call it **GetUserDetails**.
 
     ![](images/masterdetail-11-ss.png)
 
@@ -73,32 +73,30 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
 1. On the **GetUserDetails** screen, click **Filters**, then click **Add Filter**.
 
-1. From the Filter Condidion editor, enter the following condition and click **Done**.
+1. From the Filter Condition editor, enter the following condition and click **Done**.
 
     `User.Id = SelectedUserId`
 
     This filters all the results in the **User** entity to the currently selected user.
 
-1. Double-click your client action name (in this example, **ClickSelectedUser**), and drag the GetUserDetails aggregate onto the client action. This executes the aggregate using the currently selected user. 
+1. Double-click your client action name (in this example, **ClickSelectedUser**), and drag the GetUserDetails aggregate onto the client action. This executes the aggregate using the currently selected user.
 
-   ![](images/masterdetail-10-ss.png)
+    ![](images/masterdetail-10-ss.png)
 
 1. Double-click your screen name, and from the **GetUserDetails** aggregate, drag the attributes you want to display into the RightContent placeholder. In this example, we use the Username and Email attributes.
 
-   ![](images/masterdetail-12-ss.png)
+    ![](images/masterdetail-12-ss.png)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 
 ## Properties
 
-**Property** |  **Description** |   
+| Property | Description |
 |---|---|
 | LeftPercentage (Decimal): Optional | Set the LeftContent width using a percentage. Default value is 50%. |
-| OpenedOnPhone (Boolean): Optional |  Variable to hold if the detail is opened on a phone. Default value is False.|
-| Height (Text): Optional | Set the height of the widget (in pixels or %). By default, it is the height of the window, minus the title and header.|
- 
+| OpenedOnPhone (Boolean): Optional |  Variable to hold if the detail is opened on a phone. Default value is False. |
+| Height (Text): Optional | Set the height of the widget (in pixels or %). By default, it is the height of the window, minus the title and header. |
+
 ## Compatibility with other patterns
 
 This pattern should be used alone inside the screen content because it will adapt to the height of the parent. Additionally, you should avoid using the Master Detail pattern inside patterns with swipe events, such as [Tabs](<tabs.md>).
-
-

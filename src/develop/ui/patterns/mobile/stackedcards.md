@@ -29,15 +29,15 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
     The **GetEmployees** aggregate is automatically created.
 
-      ![](images/stackedcards-5-ss.png)
+    ![](images/stackedcards-5-ss.png)
 
 1. From the Toolbox, drag the Icon widget into the OverlayTop placeholder, and from the Pick an Icon editor, choose an icon. Click **Ok**.
 
-      ![](images/stackedcards-6-ss.png)
+    ![](images/stackedcards-6-ss.png)
 
 1. Repeat step 4 for the OverlayRight and OverlayLeft placeholders. 
 
-      ![](images/stackedcards-7-ss.png)
+    ![](images/stackedcards-7-ss.png)
 
 1. To create a swipe action for the OverlayLeft placeholder, select the pattern, and from the OnLeftSwipe **Handler** drop-down, select **New Client Action**.
 
@@ -59,17 +59,15 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
-
-
 ## Properties
 
-**Property** |  **Description** |  
----|---|---  
-StackedOptions (StackedCardsPosition Identifier): Optional |  Change stacked cards view from bottom, top, or none.  <p>Examples <ul><li>_Entities.StackedCardsPosition.Bottom_ - The stacked cards are positioned on the bottom. This is the default. </li><li>_Entities.StackedCardsPosition.Top_ - The stacked cards are positioned on top. </li></ul></p> | 
-Rotate (Boolean): Optional| If True, the rotation for each move on the stacked cards is activated. This is the default. If False, each move is not activated.  |  
-Items (Integer): Optional |  Number of visible elements when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p>  | 
-ElementsMargin |  Define the distance between each element when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p> | 
-UseOverlays (Boolean): Optional | If True, overlays for swipe elements are enabled. This is the default. If False, the overlays are disabled.
+|**Property** |  **Description** |  
+|---|---|
+|StackedOptions (StackedCardsPosition Identifier): Optional |  Change stacked cards view from bottom, top, or none.  <p>Examples <ul><li>_Entities.StackedCardsPosition.Bottom_ - The stacked cards are positioned on the bottom. This is the default. </li><li>_Entities.StackedCardsPosition.Top_ - The stacked cards are positioned on top. </li></ul></p> | 
+|Rotate (Boolean): Optional | If True, the rotation for each move on the stacked cards is activated. This is the default. If False, each move is not activated.  |  
+|Items (Integer): Optional |  Number of visible elements when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p>  | 
+|ElementsMargin |  Define the distance between each element when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p> | 
+|UseOverlays (Boolean): Optional | If True, overlays for swipe elements are enabled. This is the default. If False, the overlays are disabled.|
   
 ## Compatibility with other patterns
 

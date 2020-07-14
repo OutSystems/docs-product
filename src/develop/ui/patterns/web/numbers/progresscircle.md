@@ -55,7 +55,7 @@ Enter the logic for the progress circle and click **DONE**.  This displays the p
 
     In this example, to show the percentage of shipped orders, we add the following:
 
-    ``GetShippedOrders.Count / GetTotalOrders.Count * 100``
+   ``GetShippedOrders.Count / GetTotalOrders.Count * 100``
 
     ![](<images/progresscircle-16-ss.png>)
 

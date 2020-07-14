@@ -23,7 +23,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     ![](images/rangeslider-3-ss.png)
 
-1. On the **Properties** tab, enter the the minimum, maximum, and  initial values. In this example, we add static values.
+1. On the **Properties** tab, enter the minimum, maximum, and  initial values. In this example, we add static values.
 
     ![](images/rangeslider-5-ss.png)
 
@@ -31,10 +31,9 @@ In this example, we create a Range Slider that allows the user select the number
 
     ![](images/rangeslider-4-ss.png)
 
-    By deafult, the **Value** input parameter is created.  
+    By default, the **Value** input parameter is created.  
     
     ![](images/rangeslider-6-ss.png)
-
 
 1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen, and add your content to the Container placeholder. In this example we add some text and an expression.
 
@@ -66,7 +65,6 @@ After following these steps and publishing the module, you can test the pattern 
 
 ![](images/rangeslider-12-ss.png)
 
-
 ## Properties
 
 |**Property** |  **Description** |
@@ -76,9 +74,9 @@ After following these steps and publishing the module, you can test the pattern 
 |InitialValue (Decimal): Mandatory  |  Value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>_10_ - Slider's default value when the page is rendered is 10.</li></ul></p> |
 |Step (Decimal): Optional  | The slider moves in increments of steps.<p>Examples <ul><li>_Blank_ - The slider increases in steps of 1. This is the default value. </li><li>_10_ - The slider increases in steps of 10.</li></ul></p>  |   
 |ShowPips (Boolean): Optional  | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. | 
-|PipsStep (Integer): Optional  |  Range interval after which a Pip is drawn (when ShowPips is enabled). If not specified, the component will try to guess what step fits your data.  |
+|PipsStep (Integer): Optional  |  Range interval after which a Pip is drawn (when ShowPips is enabled). If not specified, the component tries to guess what step fits your data.  |
 |ChangeEventDuringSlide (Boolean): Optional  | If True, a change event is triggered while the slider is being dragged. This is the default value. If False, the change events are only triggered when the user releases the slider. **Tip**: If you're refreshing a query based on the value of the slider, you probably want to set this to False.  | 
 |IsDisabled (Boolean): Optional | If True, the slider is disabled. If False, the slider is enabled. This is the default value. | 
 |IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. | 
 |VerticalHeight (Integer): Optional | If IsVertical is True, use this property to set the height (in px) of the slider. <p>Examples <ul><li>_Blank_ - The slider is 100px high. This is the default value. </li><li>_250_ - The slider is 250px high.</li></ul></p> | 
-|AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: https://kimmobrunfeldt.github.io/progressbar.js/. Example: `{ easing: 'bounce' }` |
+|AdvancedFormat (Text): Optional  |  Allow for more options beyond what's provided through the input parameters. For more information, visit: https://kimmobrunfeldt.github.io/progressbar.js/. Example: `{ easing: 'bounce' }` |

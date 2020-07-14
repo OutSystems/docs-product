@@ -5,11 +5,11 @@ summary: Displays content (such as cards) in a specific set of columns, configur
 
 # Gallery
 
-You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end. 
+You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end.
 
 ## How to use the Gallery UI Pattern
 
-1. In Service Studio, in the Toolbox, search for `Gallery`. 
+1. In Service Studio, in the Toolbox, search for `Gallery`.
 
     The Gallery widget is displayed.
 
@@ -19,28 +19,28 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     ![](<images/gallerymob-9-ss.png>)
 
-1. Add the required content to the Gallery widget. 
+1. Add the required content to the Gallery widget.
 
-    By default, the Gallery widget expects a list. 
+    By default, the Gallery widget expects a list.
 
     ![](<images/gallerymob-13-ss.png>)
 
-    To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../ref/lang/auto/Class.List Records Widget.md>) into the Gallery widget and create your custom content.
+    To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../ref/lang/auto/Class.List Records Widget.final.md>) into the Gallery widget and create your custom content.
 
-    In this example, we delete the list and add local images to the Gallery widget. 
+    In this example, we delete the list and add local images to the Gallery widget.
 
     ![](<images/gallerymob-10-ss.png>)
- 
+
 1. On the Element tree, select the Image widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Gallery.
 
-    Note: In this example, the image property Type is set to **Local** image. You can also add External and Binary Data images. 
+    Note: In this example, the image property Type is set to **Local** image. You can also add External and Binary Data images.
 
     ![](<images/gallerymob-11-ss.png>)
   
 1. On the **Properties** tab, set the relevant (optional) properties, for example, the number of items you want to display on each device (see below for examples) and the space between each item (GutterSize).
 
     ![](<images/gallerymob-12-ss.png>)
-    
+
 After following these steps and publishing the module, you can test the pattern in your app.
 
 **4 items per row**

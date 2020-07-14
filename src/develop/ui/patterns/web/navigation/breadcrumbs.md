@@ -7,7 +7,7 @@ summary: Breadcrumbs present the location of the user within the hierarchy of ap
 
 You can use the Breadcrumbs UI Pattern as a navigational aid that helps users keep track of their location within the app.
 
-  ![](<images/breadcrumbs-2-ss.png>)
+![](<images/breadcrumbs-2-ss.png>)
 
 **How to use the Breadcrumbs UI Pattern**
 
@@ -15,7 +15,7 @@ The following use case adds the Breadcrumbs UI Pattern to one screen. If you wan
 
 1. In Service Studio, in the Toolbox, search for `Breadcrumbs`.
   
-     The Breadcrumbs widget is displayed.
+    The Breadcrumbs widget is displayed.
 
     ![](<images/breadcrumbs-8-ss.png>)
 
@@ -25,7 +25,7 @@ The following use case adds the Breadcrumbs UI Pattern to one screen. If you wan
 
     By default, the Breadcrumbs widget contains three Breadcrumb Item widgets. Each Breadcrumb Item represents a location in the breadcrumb trail. You can add or delete Breadcrumb Items as required. In this example, we add another Breadcrumb Item.
 
-      ![](<images/breadcrumbs-1-ss.png>)
+    ![](<images/breadcrumbs-1-ss.png>)
 
 1. From the Toolbox, drag another Breadcrumbs Item into your Breadcrumbs Pattern. 
 

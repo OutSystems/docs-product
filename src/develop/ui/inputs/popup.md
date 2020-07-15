@@ -23,6 +23,10 @@ To create and use a popup in Reactive Web and Mobile apps:
 
 ![](images/popup-mobile.png?width=750)
 
+For a video tutorial, view the following link:
+
+[Create and Use a Popup in a Reactive Web App](https://www.youtube.com/watch?v=RrMARHvJBXU)
+
 ## In Traditional Web
 
 To create and use a popup in Traditional Web apps:
@@ -44,3 +48,7 @@ To create and use a popup in Traditional Web apps:
 1. Choose **(New Screen Action)** in the OnNotify Destination property of the Popup_Editor and leave the flow of the action empty.
 
 1. Implement the popup content. 
+
+For a video tutorial, view the following link:
+
+[Create and Use a Popup in a Traditional Web App](https://www.youtube.com/watch?v=ShOCxc3g91M)

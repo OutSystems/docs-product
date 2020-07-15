@@ -1,6 +1,6 @@
 ---
 summary: Learn how users can send feedback to your web application. 
-tags: runtime-traditionalweb
+tags: runtime-traditionalwebandreactiveweb
 ---
 
 # Send Feedback in Web Applications

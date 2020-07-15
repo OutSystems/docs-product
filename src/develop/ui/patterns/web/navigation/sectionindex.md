@@ -27,19 +27,19 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
     In this example, we drag 4 Section widgets [into a column](../../../../../develop/ui/patterns/web/structure/columns.md). Each section widget contains Title, Actions, and Content placeholders. 
 
-   ![](<images/sectionindex-5-ss.png>)
+    ![](<images/sectionindex-5-ss.png>)
 
 1. Add the relevant content to Section widget's **Title** and **Content** placeholders.
 
-    In this example, we add employee names to the **Title** placeholders, and Card Sectioned widgets with some text and images to the **Content** placeholder. 
-        
+    In this example, we add employee names to the **Title** placeholders, and Card Sectioned widgets with some text and images to the **Content** placeholder.
+
     ![](<images/sectionindex-1-ss.png>)
-   
+
     A link is automatically created to every section you have on the screen. The name of the link is based on the text you entered in the **Title** placeholder of each section. In the following example, the links are set to the employee names we entered in step 2.
 
     ![](<images/sectionindex-3-ss.png>)
 
-1. On the **Properties** tab, you can customize the Section Index's look and feel by setting any of the optional properties. 
+1. On the **Properties** tab, you can customize the Section Index's look and feel by setting any of the optional properties.
 
     ![](<images/sectionindex-6-ss.png>)
 

@@ -9,7 +9,7 @@ OutSystems applications can set the access to specific elements (Web UI Flows, e
 
 <div class="info" markdown="1">
 
-Procedure applicable only to on-premises installations. For OutSystems PaaS subscriptions, contact OutSystems Technical Support.
+This procedure applies only to **on-premises installations**. For OutSystems Cloud installations, contact [OutSystems Technical Support](https://www.outsystems.com/SupportPortal/CaseOpen/).
 
 </div>
 

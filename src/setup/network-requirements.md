@@ -62,7 +62,7 @@ The following table lists the ports that should be open to correctly **monitor**
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
 |Controller|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
 
-In case you are using a hybrid infrastructure where some part is in OutSystems PaaS and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
+In case you are using a hybrid infrastructure where some part is in OutSystems Cloud and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
 
 ### Containers considerations
 

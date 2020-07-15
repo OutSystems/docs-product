@@ -83,7 +83,7 @@ After following these steps and publishing the module, you can test the pattern 
 | **Property** |  **Description** |  
 |---|---|
 | Percentage (Integer): Optional  |  Percentage to display. You can use functions or local variables. | 
-| Color (Color Identifier): Optional  | Progress bar color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - The progress bar color  is the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The progress bar color is red.</li></ul></p>  
+| Color (Color Identifier): Optional  | Progress bar color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - The progress bar color  is the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The progress bar color is red.</li></ul></p>  |
 | Shape (Shape Identifier): Optional  |  Set the Progress Bar shape. The predefined options are: <li>Rounded</li><li> Soft Rounded </li> <li>Sharp</li><p>Examples</p><ul><li>_Blank_ - The Progress Bar has a rounded shape (Entities.Shape.Rounded). This is the default. </li><li>_Entities.Shape.Sharp_ - The Progress Bar has a sharp shape.</li></ul>| 
 | Size (ProgressBarSize Identifier): Optional  |  Set the Progress Bar size. The predefined options are: <li>Extra Small</li><li>Small</li> <li>Base (default)</li>|  
 | IsInline (Boolean): Optional  | If True, the value placeholder is placed at the end of the line and the label placeholder is hidden. If False, the value and label of the placeholder are placed over the line. This is the default.|

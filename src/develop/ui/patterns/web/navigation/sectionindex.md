@@ -7,23 +7,41 @@ summary: Section Index organizes the content of a screen, enabling quick navigat
 
 You can use the Section Index UI Pattern to organize the content of a screen, enabling quick navigation within the page.
 
+![](<images/sectionindex-7-ss.png>)
+
 **How to use the Section Index UI Pattern**
 
-1. In Service Studio, from the Toolbox, search for and drag the Section widget into the Main Content area of your application's screen.
+1. In Service Studio, in the Toolbox, search for `Section Index`.
 
-    ![](<images/sectionindex-5-ss.png>)
+    The Section Index widget is displayed.
 
-1. Add as many sections as you require and add the relevant content. In this example we add text and images.
-
-    ![](<images/sectionindex-1-ss.png>)
+    ![](<images/sectionindex-8-ss.png>)
 
 1. From the Toolbox, drag the Section Index widget into the Main Content area of your application's screen.
 
+    In this example, we drag the Section Index widget into a column. 
+
     ![](<images/sectionindex-2-ss.png>)
 
-    A link is automatically created to every section you have on the screen. The name of the link is based on the text you entered in the **Title** placeholder of each section. In the following example, the links are set to the In-Ear Audio Black, In-Ear Audio Sport Grey etc., sections that we added earlier.
+1. In the Toolbox, search for and drag the Section widget into the Main Content area of your application's screen. Add as many sections as you require for your app.
+
+    In this example, we drag 4 Section widgets [into a column](../../../../../develop/ui/patterns/web/structure/columns.md). Each section widget contains Title, Actions, and Content placeholders. 
+
+    ![](<images/sectionindex-5-ss.png>)
+
+1. Add the relevant content to Section widget's **Title** and **Content** placeholders.
+
+    In this example, we add employee names to the **Title** placeholders, and Card Sectioned widgets with some text and images to the **Content** placeholder.
+
+    ![](<images/sectionindex-1-ss.png>)
+
+    A link is automatically created to every section you have on the screen. The name of the link is based on the text you entered in the **Title** placeholder of each section. In the following example, the links are set to the employee names we entered in step 2.
 
     ![](<images/sectionindex-3-ss.png>)
+
+1. On the **Properties** tab, you can customize the Section Index's look and feel by setting any of the optional properties.
+
+    ![](<images/sectionindex-6-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

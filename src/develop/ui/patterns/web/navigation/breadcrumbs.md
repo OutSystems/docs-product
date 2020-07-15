@@ -15,7 +15,7 @@ The following use case adds the Breadcrumbs UI Pattern to one screen. If you wan
 
 1. In Service Studio, in the Toolbox, search for `Breadcrumbs`.
   
-     The Breadcrumbs widget is displayed.
+    The Breadcrumbs widget is displayed.
 
     ![](<images/breadcrumbs-8-ss.png>)
 
@@ -25,7 +25,7 @@ The following use case adds the Breadcrumbs UI Pattern to one screen. If you wan
 
     By default, the Breadcrumbs widget contains three Breadcrumb Item widgets. Each Breadcrumb Item represents a location in the breadcrumb trail. You can add or delete Breadcrumb Items as required. In this example, we add another Breadcrumb Item.
 
-      ![](<images/breadcrumbs-1-ss.png>)
+    ![](<images/breadcrumbs-1-ss.png>)
 
 1. From the Toolbox, drag another Breadcrumbs Item into your Breadcrumbs Pattern. 
 
@@ -35,7 +35,7 @@ The following use case adds the Breadcrumbs UI Pattern to one screen. If you wan
     
     ![](<images/breadcrumbs-11-ss.png>)
 
-1. So that each of the Breadcrumb Items are navigational, we add links. To do this, select the text inside the Breadcrumb Item placeholder, right-click, select **Link to** and select the link destination. In this example, we want the **More Details** Breadcrumb Item to link to an existing page called **More Details**. Repeat this process for each of the Breadcrumb Items. 
+1. So that each of the Breadcrumb Items are navigational, we add links. To do this, select and right-click the text inside the Breadcrumb Item placeholder, select **Link to**, and select the relevant link destination. In this example, we link the **More Details** Breadcrumb Item to an existing page called **More Details**. Repeat this process for each of the Breadcrumb Items. 
 
     ![](<images/breadcrumbs-3-ss.png>)
     

@@ -7,7 +7,6 @@ summary: the Range Slider Interval UI Pattern allows users select a single value
 
 You can use the Range Slider Interval Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content by predetermined intervals and within a chosen range. Moving the slider along the track, increases or decreases the value. 
 
-
 ## How to use the Range Slider Interval UI Pattern
 
 In this example, we create a Range Slider Interval that allows the user select a price range between 1-50.
@@ -48,7 +47,6 @@ In this example, we create a Range Slider Interval that allows the user select a
 
     ![](images/rangesliderinterval-11-ss.png) 
 
-
 1. Set the variable and value assignments for the Assign action.
 
     ![](images/rangesliderinterval-12-ss.png) 
@@ -58,7 +56,6 @@ In this example, we create a Range Slider Interval that allows the user select a
     ![](images/rangesliderinterval-13-ss.png) 
 
 After following these steps and publishing the module, you can test the pattern in your app. 
-
 
 ## Properties
 

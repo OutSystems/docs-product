@@ -25,7 +25,7 @@ In this example, we create a Range Slider Interval that allows the user select a
 
     ![](images/rangesliderinterval-5-ss.png)
 
-    By default, the **InitialIntervalStart** and **InitialIntervalEnd** input paramters are created.
+    By default, the **InitialIntervalStart** and **InitialIntervalEnd** input parameters are created.
 
     ![](images/rangesliderinterval-4-ss.png)
 
@@ -43,7 +43,7 @@ In this example, we create a Range Slider Interval that allows the user select a
 
 1. Repeat step 6 for the **IntervalEnd** input parameter.
 
-1. So that the paramenter read the range slider selections, double-click your client action, and from the Toolbox, add the **Assign** action to the client action.
+1. So that the parameter read the range slider selections, double-click your client action, and from the Toolbox, add the **Assign** action to the client action.
 
     ![](images/rangesliderinterval-11-ss.png)
 

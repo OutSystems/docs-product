@@ -20,7 +20,7 @@ Note that all requests made to the back-end of a Mobile or Reactive Web app (the
 
 You can enable SSL in your infrastructure in one of the following ways, depending on your infrastructure type:
 
-SSL in OutSystems PaaS
+SSL in OutSystems Cloud
 :   Your cloud environment is automatically rolled out with a valid SSL certificate for the `outsystemsenterprise.com` domain.  
     However, you can customize both the hostname of your environment and its SSL domain certificate by following the steps outlined in [Enable a Custom SSL Domain in OutSystems PaaS](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/Enable_Custom_SSL_Domain_In_OutSystems_PaaS>).
 

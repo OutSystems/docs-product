@@ -49,7 +49,7 @@ To activate the 2-stage deployment, do the following:
 
 1. Click **Save**. The 2-stage deployment is now active for Production.
 
-**In OutSystems PaaS**: the 2-stage deployment is managed in Service Center, the management console of the environment. Go to the 'Administration' tab, choose 'Environment Configuration', and check the 'Enable 2-Stage Deploy' option.
+**In OutSystems Cloud**: the 2-stage deployment is managed in Service Center, the management console of the environment. Go to the 'Administration' tab, choose 'Environment Configuration', and check the 'Enable 2-Stage Deploy' option.
 
 ### Do the First Stage of the Deployment
 

@@ -13,8 +13,6 @@ You can use the Sidebar UI Pattern to display additional information in the marg
 
 In this example, we create a button that opens and closes the Sidebar widget.
 
-To trigger the sidebar, call a new screen action through a button with Ajax submit and use the ToggleSidebar action (found in the Logic Tab) to open/close it. Use the parameters to define if it has Overlay in the page.
-
 1. In Service Studio, in the Toolbox, search for `Sidebar`. 
 
     The Sidebar widget is displayed.
@@ -46,7 +44,6 @@ To trigger the sidebar, call a new screen action through a button with Ajax subm
     ![](<images/sidebar-11-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
-
 
 ## Properties
 

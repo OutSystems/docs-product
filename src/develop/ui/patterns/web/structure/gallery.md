@@ -45,19 +45,19 @@ The following are examples of how the items are display depending on how many yo
 
 **4 items per row**
 
-   ![](<images/gallery-11-ss.png>)
+![](<images/gallery-11-ss.png>)
 
 **3 items per row**
     
-   ![](<images/gallery-12-ss.png>)
+![](<images/gallery-12-ss.png>)
 
 **2 items per row**
 
-   ![](<images/gallery-13-ss.png>)
+![](<images/gallery-13-ss.png>)
 
 **1 item per row**
 
-   ![](<images/gallery-14-ss.png>)
+![](<images/gallery-14-ss.png>)
 
 ## Properties
 

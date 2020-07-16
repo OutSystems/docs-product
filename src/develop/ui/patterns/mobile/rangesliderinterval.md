@@ -68,7 +68,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Step (Decimal): Optional  | The slider moves in increments of steps.<p>Examples <ul><li>_Blank_ - The slider increases in steps of 1. This is the default value. </li><li>_10_ - The slider increases in steps of 10.</li></ul></p>|
 | ShowPips (Boolean): Optional  | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. |
 | PipsStep (Integer): Optional  |  Range interval after which a Pip is drawn (when ShowPips is enabled). If not specified, the component will try to guess what step fits your data. |
-| ChangeEventDuringSlide  (Boolean): Optional |  Trigger change events whiis only triggered when the user releases the slider.  **Tip**: If you're refreshing a query based on the value of the slider, we recommend you set this property to False. |
+| ChangeEventDuringSlide (Boolean): Optional |  Trigger Change events while the slider is being dragged. If set to False, the Change events will only be triggered when the user releases the slider. **Tip**: If you're refreshing a query based on the value of the slider, we recommend you set this property to False. |
 |IsDisabled (Boolean): Optional | If True, the slider is disabled. If False, the slider is enabled. This is the default value. |
 |IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. |
 |VerticalHeight (Integer): Optional | If IsVertical is True, use this property to set the height (in px) of the slider. <p>Examples <ul><li>_Blank_ - The slider is 100px high. This is the default value. </li><li>_250_ - The slider is 250px high.</li></ul></p> |

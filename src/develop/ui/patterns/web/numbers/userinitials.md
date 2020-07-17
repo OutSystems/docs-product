@@ -55,7 +55,7 @@ The following example demonstrates how you can display the initials of the regis
 
     ![](<images/userinitials-image-15.png>)
 
-   The **Name** property is now set to display the Name property of the Aggregate you added to the Preparation action, which gets the names of the registered users on your platform and displays them in the badge.
+    The **Name** property is now set to display the Name property of the Aggregate you added to the Preparation action, which gets the names of the registered users on your platform and displays them in the badge.
 
 1. On the **Properties** tab, you can also customize the badge's look and feel by setting any of the optional properties, for example, the color, shape, and size. The following example displays a blue, medium-sized, circle badge.  
 

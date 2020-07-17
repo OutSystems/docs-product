@@ -47,7 +47,7 @@ You can have your infrastructure on the cloud or on-premises. [Learn more about 
 
 ### Licensing
 
-If you're using OutSystems PaaS, you don't need to worry about installing or licensing your infrastructure. Once you receive your OutSystems PaaS it is ready for you to develop your apps.
+If you're using OutSystems Cloud, you don't need to worry about installing or licensing your infrastructure. Once you receive your OutSystems Cloud, it is ready for you to develop your apps.
 
 If you're installing OutSystems on-premises, be sure you have a valid activation code, or license files. Without them you won't be able to deploy applications to your environments. So be sure to [check how OutSystems licensing works.](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Overview/01_How_OutSystems_Platform_licensing_works)
 

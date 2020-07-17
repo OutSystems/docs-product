@@ -1075,7 +1075,7 @@
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10
 - develop/ui/patterns/web/navigation/sectionindex.md:
-    - ref/ui-patterns/web/section-index.md
+    - ref/ui-patterns/web/sectionindex.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/SectionIndex.aspx
@@ -1318,6 +1318,7 @@
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
 - develop/ui/patterns/mobile/interaction/datepicker.md:
+    - ref/ui-patterns/mobile/datepicker.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/DatePicker.aspx

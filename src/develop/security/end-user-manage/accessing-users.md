@@ -23,9 +23,9 @@ Before accessing the Users application for the first time, you must [configure t
 
 Configuring the Administrator user for Users application sets the password and also grants the Administrator user ("admin") with all the available Roles.
 
-To configure the Administrator user, do the following:
+To configure the Administrator user for Users application, do the following:
 
-1. Log in to Service Center using the administrator credentials (`http://<environment_address>/ServiceCenter`).
+1. Log in to Service Center (`http://<environment_address>/ServiceCenter`). Make sure you have the [required permissions](#permissions) to perform the operation.
 
 1. Go to **Factory** > **Modules**.
 
@@ -42,3 +42,16 @@ To configure the Administrator user, do the following:
 1. Click **Apply**.
 
 The Administrator user ("admin") for Users application is now configured.
+
+### Required permissions { #permissions }
+
+To perform this operation you need to have [Change and Deploy Applications permission](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md#env-permission-levels) over Users application, which means one of the following:
+
+* You are assigned to a Role with **Change and Deploy Applications** or higher permission level as default role.
+
+* You are assigned to a Role with **Change and Deploy Applications** or higher permission level for Users application.
+
+For environments that aren't managed by LifeTime, the user accessing Service Center requires one of the following:
+
+* The role assigned to the user has Full Control over Users module.
+* The user has Full Control directly over Users module.

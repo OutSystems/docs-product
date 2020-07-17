@@ -15,11 +15,11 @@ You can use the Tag UI Pattern to style small texts in a colored tag format. Use
 
     ![](<images/tag-1-ss.png>)
 
-1. To From the Toolbox, drag the Section widget into the Main Content area of your application's screen.
+1. To From the Toolbox, drag the Tag widget into the Main Content area of your application's screen.
 
     ![](<images/tag-2-ss.png>)
 
-1. Add your content to the placeholders. In this we add some text.
+1. Add your content to the placeholders. In this example, we add some text.
 
     ![](<images/tag-3-ss.png>)
 

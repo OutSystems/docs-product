@@ -31,7 +31,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     By default, the **SelectedValue** input parameter is created.  
 
-    ![](images/rangeslider-6-ss.png?width=800)
+    ![](images/rangeslider-6-ss.png)
 
 1. To store the current slider value, create a local variable by right-clicking on your screen name, selecting **Add Local Variable**, and on the **Properties** tab, enter a name and data type (in this example, we use Decimal).
 

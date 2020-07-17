@@ -24,13 +24,12 @@ You can use the Time Picker UI Pattern to select a single time from a drop-down 
 
 1. By default, the Time Picker widget contains an Input widget. It is mandatory to create a new local variable for this Input widget.
 
-   ![](<images/timepicker-image-16.png>)
+    ![](<images/timepicker-image-16.png>)
 
 1. Set the variable **Data Type** to **Time**.
 
     ![](<images/timepicker-image-17.png>)
 
-    
 1. On the **Properties** tab, you can change the look and feel of the Time Picker widget by setting the (optional) properties.
 
     ![](<images/timepicker-image-18.png>)

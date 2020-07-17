@@ -1,5 +1,6 @@
 ---
 summary: If your existing mobile applications were based on a version of Silk UI Mobile previous to 1.3.0, learn how to update them to display the App Feedback instructions screen.
+tags: runtime-mobile
 ---
 
 # Update Your Mobile App to Display App Feedback Instructions

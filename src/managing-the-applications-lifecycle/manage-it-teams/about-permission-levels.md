@@ -18,7 +18,7 @@ OutSystems has two built-in roles that allow you to implement a simple security 
 
 * **Administrator** - Has full control over all environments and applications. Allows deploying applications to all environments of the infrastructure and manage IT users, security, and environments. You can’t change the permissions of the Administrator role.
 
-If these two built-in roles are not enough to set up your security policies, you can [create additional roles](create-an-it-role.md#create-a-new-role) to define a more granular policy.
+If these two built-in roles aren't enough to set up your security policies, you can [create additional roles](create-an-it-role.md#create-a-new-role) to define a more granular policy.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ The set of permissions that an IT user has over the environments and the applica
 
 ### Default role
 
-While [creating an IT user](create-an-it-user.md) it is mandatory to define the **Default Role** for the user. This role defines the **base permissions** that the user will have over the environments and all applications on the environments.
+While [creating an IT user](create-an-it-user.md), it's mandatory to define the **Default Role** for the user. This role defines the **base permissions** that the user has over the environments and all applications on the environments.
 
 To follow the principle of security by default, the default role of users should grant them as little base permissions over applications as possible, so that all permissions necessary for the users to perform their work can be defined explicitly either through teams or directly for specific applications.
 
@@ -57,7 +57,7 @@ To follow the principle of security by default, the default role of users should
 
 ### Role assigned to users for a team
 
-While [adding an IT user to a team](create-an-it-team.md#add-it-users-to-the-team) it is mandatory to define the role that will be applied to the user when dealing with **the applications that belong to that team**.
+While [adding an IT user to a team](create-an-it-team.md#add-it-users-to-the-team), it's mandatory to define the role that will be applied to the user when dealing with **the applications that belong to that team**.
 
 The role assigned to users for teams **overrides the default role** of the users, and is typically used to explicitly grant extra permissions that apply only to the applications that belong to the team.
 
@@ -67,7 +67,7 @@ This allows granting permissions for all applications that the team manages, wit
 
 ### Role assigned to users for a specific application
 
-It is also possible to [assign a role directly to one user for a specific application](create-an-it-role.md#assign-a-role-to-a-user-for-a-specific-application). This provides flexibility for more exceptional situations where it may be useful to either **grant or revoke the permissions of users for particular applications** without using teams.
+It's also possible to [assign a role directly to one user for a specific application](create-an-it-role.md#assign-a-role-to-a-user-for-a-specific-application). This provides flexibility for more exceptional situations where it may be useful to either **grant or revoke the permissions of users for particular applications** without using teams.
 
 Roles assigned directly to a user on specific applications **override the default role** of the user and also **any role assigned through teams**.
 
@@ -77,7 +77,7 @@ Roles assigned directly to a user on specific applications **override the defaul
 
 This section describes which operations are available to a user when a specific permission is granted to that user through a role. Those operations depend on how the role is assigned to the user.
 
-### Permission levels for an environment
+### Permission levels for an environment { #env-permission-levels }
 
 Except for the lowest one, "No Access", each permission level is cumulative with the permissions of the levels below.
 

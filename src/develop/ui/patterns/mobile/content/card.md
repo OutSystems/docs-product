@@ -25,13 +25,13 @@ You can use the Cards UI Pattern to group small pieces of information and highli
 
     ![](<images/card-4-ss.png>)
 
-1. On the **Properties** tab, you can customize the Card's look and feel by setting any of the (optional) properties. 
+1. On the **Properties** tab, you can customize the Card's look and feel by setting any of the (optional) properties.
 
-After following these steps and publishing the module, you can test the pattern in your app. 
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
-| **Property** |  **Description** |
+| Property | Description |
 |---|---|
-| UsePadding (Boolean): Optional  |  If set to True, padding is applied to the content area. This is the default value. If set to False, the content area has no padding.| 
+| UsePadding (Boolean): Optional  |  If set to True, padding is applied to the content area. This is the default value. If set to False, the content area has no padding. |
 | ExtendedClass (Text): Optional  |  Add custom style classes to the Card UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Card UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Card UI styles being applied. </li></ul> |

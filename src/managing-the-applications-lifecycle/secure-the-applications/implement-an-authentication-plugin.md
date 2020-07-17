@@ -188,7 +188,7 @@ Name | Possible Values | Description
 'UserPassword.Supported' | 'True' or 'False' | Indicates if the plugin supports user credentials validation (i.e. it implements the [User_AuthenticateWithCredentials](<#user_authenticatewithcredentials>) method).
 'IntegratedAuthentication.Supported' | 'True' or 'False' | Indicates if the plugin supports authentication through a username (i.e. if it implements the [User_AuthenticateWithUsername](<#user_authenticatewithusername>) method).
 'ConfigurationAPI.Supported' | 'True' or 'False' | Indicates if the plugin supports the configuration API methods ([Plugin_GetAllConfigurations](<#plugin_getallconfigurations>) and [Plugin_SetConfigurations](<#plugin_setconfigurations>)).
-'Cloud.Supported' | 'True' or 'False' | Indicates if the plugin is supported in OutSystems PaaS.
+'Cloud.Supported' | 'True' or 'False' | Indicates if the plugin is supported in OutSystems Cloud.
 
 ### PluginAPIConfigurationParameter  
 

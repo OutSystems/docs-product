@@ -17,7 +17,7 @@ To configure the HTTP security level for these elements, set its **HTTP Security
 
 * `None`
 * `SSL/TLS`: The HTTPS protocol is used in the requests and client certificates can be accepted but are not required.
-* `SSL/TLS with client certificates`: The HTTPS protocol is used in requests and client certificates are required. This option is not applicable to REST APIs and is not supported for OutSystems PaaS. 
+* `SSL/TLS with client certificates`: The HTTPS protocol is used in requests and client certificates are required. This option is not applicable to REST APIs and is not supported for OutSystems Cloud. 
 
 If you access an application using an explicit secure request (starting with `https://`), OutSystems will maintain the secure protocol while navigating over non-secure elements.
 

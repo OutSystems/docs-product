@@ -23,7 +23,7 @@ You can use the Blank State UI Pattern to inform end users, for example, to comp
 
     By default, the Blank Slate widget contains icon and text placeholders. 
 
-1. Add your content to the placeholders. In this example we change the icon to a camera icon by selecting Icon placeholder, and on the **Properties** tab, from the **Name** drop-down, selecting the camera icon. We also enter new text in the Text placeholder. 
+1. Add your content to the placeholders. In this example we change the icon to a calendar icon by selecting the Icon placeholder, and on the **Properties** tab, from the **Name** drop-down, selecting the calendar icon. We also enter new text in the Text placeholder. 
 
     ![](<images/blankslate-4-ss.png>)
 

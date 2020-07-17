@@ -1243,7 +1243,6 @@
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/NavigationBar.aspx
-
 # UI Mobile Patterns
 - develop/ui/patterns/mobile/adaptive/columns.md:
     - ref/ui-patterns/mobile/columns.md
@@ -1344,19 +1343,19 @@
     - external:
        - "OutSystems UI Pattern":  
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
+- develop/ui/patterns/mobile/navigation/breadcrumbs.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Breadcrumbs.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10 
 - develop/ui/patterns/mobile/navigation/tabs.md:
     - ref/ui-patterns/mobile/tabs-mobile.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
         - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73           
-- develop/ui/patterns/mobile/navigation/breadcrumbs.md:
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Breadcrumbs.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10           
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73                  
 - develop/ui/patterns/mobile/numbers/badge.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

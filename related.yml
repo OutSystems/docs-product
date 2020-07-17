@@ -1346,7 +1346,6 @@
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=61
 - develop/ui/patterns/mobile/interaction/sidebar.md:
-    - ref/ui-patterns/mobile/sidebar.md
     - external:
        - "OutSystems UI Pattern":  
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=67

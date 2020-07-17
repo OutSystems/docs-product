@@ -7,7 +7,7 @@ summary: Blank Slate informs end users when they start using the application, co
 
 You can use the Blank State UI Pattern to inform end users, for example, to complete a task or when there is no data available for display etc.
 
-![](<images/blankslate-5-ss.png?width=800>)
+![](<images/blankslate-5-ss.png>)
 
 **How to use the Blank Slate UI Pattern**
 

@@ -54,9 +54,6 @@ Emulate the mobile app using the Google Chrome browser in your PC
 :   Use the Chrome browser in your PC to debug your mobile app if you don't need to execute native plugins, since they will not be available. This option is very convenient to test the logic of the app. However, to check the performance or experience of the mobile app, we recommend you to test it on a real device.
     Also consider this scenario if all the native plugins in the mobile app have action wrappers defined that return mock data when the plugin is not available. For more information, check the Best Practices topic on [creating wrapper actions for native plugins](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Define_Fallbacks_for_Your_Native_Plugins>).
 
-Use OutSystems Now (Android only)
-:   Debug your mobile app in a device without installing it by using OutSystems Now. Connect the device to the computer, choose Android as the debugger target and start the debugger. This is a good way to test the experience of the app on a real device. Note however that only [supported plugins](<../../../extensibility-and-integration/mobile-plugins/intro.md#Supported_Plugins>) are available in OutSystems Now.
-
 Install the Mobile App on a Device
 :   Test the mobile app directly on a device as your users would run it. It is the best place to test the performance and experience of your app. You can do it in an iOS or Android device. Simply generate the native app package for your app in Service Studio using the `Debug` (Android) or `Development` (iOS) build type, install it in the device and follow the steps below according to your mobile device platform.
 

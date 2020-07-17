@@ -1,6 +1,6 @@
 ---
 summary: Learn how to make your OutSystems Reactive Web applications accessible to everyone.
-tags: article-page; runtime-reactiveweb; accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
+tags: article-page; runtime-mobileandreactiveweb; accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
 ---
 
 # Accessibility

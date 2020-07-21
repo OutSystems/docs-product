@@ -314,7 +314,7 @@ ON | Object Name | The name of the slow query.
 NE | Number of Executions | The total number of calls for a given slow query.  
 OEK | Object’s eSpace Key | The key of the application module where the slow query was called.  
 OEN | Object’s eSpace Name | The name of the application module where the slow query was called.  
-EC | Number of errors | The number of errors that occured during the request.
+EC | Number of errors | The number of errors that occurred during the request.
 
 #### Request event details for ConsumedIntegrationExecuted event { #consumedintegrationexecuted-details }
 
@@ -339,7 +339,7 @@ AN | Action Name | The name of the action that was handling the request. Actions
 AK | Action Key | The key of the action that was handling the request.  
 IT | Integration Type | The integration type. Current supported integration types: SOAP, REST and SAP.  
 IE | Integration Endpoint | The integration's endpoint URL.  
-EC | Number of errors | The number of errors that occured during the request.
+EC | Number of errors | The number of errors that occurred during the request.
 
 #### Request event details for ExtensionExecuted event { #extensionexecuted-details }
 

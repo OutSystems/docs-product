@@ -71,14 +71,14 @@ ResultsTruncated
     This can occur due to the limit set either in the 'NumberOfResults' parameter, or in the 'MaxResponseSize' site property of the PerformanceProbe module of your environment. Default limit: 15000.  
     To retrieve the next set of results, you can send a new GET request. Set its StartInstant parameter to the Instant of the most recent RequestEvent you got on the previous request.
 
-#### Example Request
+#### Example request
 
 ```
 curl --user mike.fitt:123456 
 "http://outsystemscloud.com/PerformanceProbe/rest/PerformanceMonitoringAPI/RequestEvents/?StartInstant=2015-09-28T12:45:00.000Z&EndInstant=2015-09-28T12:47:00.025Z"
 ```
 
-#### Example Result
+#### Example result
 
 ```javascript
 {
@@ -164,7 +164,7 @@ RequestEvent
 :   Type: RequestEvent, mandatory, to be sent in the request body (JSON).  
     The event of a request in an application to be logged.
 
-#### Example Request
+#### Example request
 
 ```
 curl -X POST -H "Content-Type: application/json" 

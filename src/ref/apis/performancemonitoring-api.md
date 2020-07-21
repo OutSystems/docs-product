@@ -237,7 +237,7 @@ This event occurs whenever the user’s browser finishes processing a request (i
 Property | Meaning | Description  
 ---|---|---  
 AK | Action Key | The key of the action that was handling the request on the server.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
 EK | Environment Key | The unique key identifying the environment the user was accessing.  
 EN | Environment Name | The name of the environment the user was accessing.  
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
@@ -245,13 +245,13 @@ EPN | EndPoint Name | The name of the web screen that was handling the request.
 TK | Tenant Key | A unique key identifying the tenant.  
 TN | Tenant Name | The name of the tenant.  
 FN | Front-end Name | The name of the front-end server that handled the request.  
-VK | Visitor Key | Unique identifier key for the visitor that performed the request. %%A visitor is a combination of a device and a browser. The key is created at the first time the visitor accesses the website’s domain using a given device and browser. The same key is used until the browser cookies are cleared.  
-ViK | Visit Key | Unique identifier of the visit associated with the current request. %%A visit is defined as a series of page requests from the same visitor. A visit is considered finished when no requests have been recorded for 30 minutes.  
+VK | Visitor Key | Unique identifier key for the visitor that performed the request.<br/>A visitor is a combination of a device and a browser. The key is created at the first time the visitor accesses the website’s domain using a given device and browser. The same key is used until the browser cookies are cleared.  
+ViK | Visit Key | Unique identifier of the visit associated with the current request.<br/>A visit is defined as a series of page requests from the same visitor. A visit is considered finished when no requests have been recorded for 30 minutes.  
 SK | Session Key | Unique identifier of the session associated with the request.  
 UK | User Key | Unique user identifier associated with the user, if logged in during the request.  
 SR | Screen Resolution | The browser window screen resolution. Formatted as "&lt;width&gt;x&lt;height&gt;". Example: "1024x768".  
 UA | User Agent | The user agent string as provided by the browser.  
-D | Duration | The time, in milliseconds, that passed from the moment the user made the request (e.g. by clicking on a link) until the browser finished processing the response. %%Note: This attribute is related only to the HTTP request itself. If the HTML contains references to other resources (e.g. images, fonts), the time it took to download and process those resources is not included.  
+D | Duration | The time, in milliseconds, that passed from the moment the user made the request (for example, by clicking on a link) until the browser finished processing the response.<br/>Note: This attribute is related only to the HTTP request itself. If the HTML contains references to other resources (for example, images or fonts), the time it took to download and process those resources is not included.  
 LT | Load Time | The time, in milliseconds, that the browser took to process the response. The load time includes for example the page rendering and the JavaScript execution.  
 TTFB | Time To First Byte | The time, in milliseconds, that passed from the moment the user made the request (e.g. user clicked on a link), until the browser received the first byte of the response from the platform server.  
 TTLB | Time To Last Byte | The time, in milliseconds, that passed from the moment the user made the request (e.g. user clicked on a link), until the browser received the last byte of the response from the platform server.  
@@ -277,9 +277,9 @@ EN | Environment Name | The name of the environment the user was accessing.
 FN | Front-end Name | The name of the front-end server that handled the request.  
 EPN | EndPoint Name | The name of the web screen that was handling the request.  
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
 AK | Action Key | The key of the action that was handling the request.  
-D | Duration | The total time, in milliseconds, the server spent serving the request. %%Note: If the application server (e.g. IIS) queued the request due to server load, the time spent waiting in the queue is not included in this metric.  
+D | Duration | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, the time spent waiting in the queue is not included in this metric.  
 TQT | Total Query Time | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries).  
 TQE | Total Query Executions | The total number of executed queries (Aggregates and Advanced Queries).  
 TET | Total Extension Time | The total time spent, in milliseconds, calling actions provided by extensions.  
@@ -290,8 +290,8 @@ IP | Client IP | The client's public IP address, collected from the [X-FORWARDED
 SAT | Session Acquisition Time | The time spent, in milliseconds, retrieving the session from the database.  
 SS | Session Size | The session size, in bytes  
 VSS | View State Size | The view state, in bytes.  
-UID | User Id | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity. %%If the request was made by an anonymous user, the User Id is not included in the event attributes.
-EC | Number of errors | The number of errors that occured during the request.
+UID | User Id | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the User Id is not included in the event attributes.
+EC | Number of errors | The number of errors that occurred during the request.
 
 #### Request event details for QueryExecuted event { #queryexecuted-details }
 
@@ -302,7 +302,7 @@ Property | Meaning | Description
 TK | Tenant Key | A unique key identifying the tenant.  
 TN | Tenant Name | The name of the tenant.  
 AK | Action Key | The key of the action that was handling the request.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
 EK | Environment Key | The unique key identifying the environment the user was accessing.  
 EN | Environment Name | The name of the environment the user was accessing.  
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
@@ -335,7 +335,7 @@ NE | Number of Executions | The total number of calls for a given slow integrati
 D | Duration | The total duration of all the slow integration executions.  
 EPN | EndPoint Name | The name of the web screen that was handling the request.  
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
 AK | Action Key | The key of the action that was handling the request.  
 IT | Integration Type | The integration type. Current supported integration types: SOAP, REST and SAP.  
 IE | Integration Endpoint | The integration's endpoint URL.  
@@ -361,8 +361,8 @@ D | Duration | The total duration of all the slow extension executions.
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
 EPN | EndPoint Name | The name of the web screen that was handling the request.  
 AK | Action Key | The key of the action that was handling the request.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then ActionName is "(PageRender)".  
-EC | Number of errors | The number of errors that occured during the request.
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen does not have a Preparation action, or if a cached version was served, then ActionName is "(PageRender)".  
+EC | Number of errors | The number of errors that occurred during the request.
 
 #### Request event details for ScreenServer event { #screenserver-details }
 
@@ -383,9 +383,9 @@ This event occurs whenever the server finishes handling a request. This is ident
 | FN       | Front-end Name                        | The name of the front-end server that handled the request.   |
 | EPN      | EndPoint Name                         | The name of the web screen that was handling the request.    |
 | EPK      | EndPoint Key                          | The key of the web screen that was handling the request.     |
-| AN       | Action Name                           | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
+| AN       | Action Name                           | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
 | AK       | Action Key                            | The key of the action that was handling the request.         |
-| D        | Duration                              | The total time, in milliseconds, the server spent serving the request. %%Note: If the application server (e.g. IIS) queued the request due to server load, the time spent waiting in the queue is not included in this metric. |
+| D        | Duration                              | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, this metric doesn't include the time spent waiting in the queue. |
 | TQT      | Total Query Time                      | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). |
 | TQE      | Total Query Executions                | The total number of executed queries (Aggregates and Advanced Queries). |
 | TET      | Total Extension Time                  | The total time spent, in milliseconds, calling actions provided by extensions. |
@@ -395,8 +395,8 @@ This event occurs whenever the server finishes handling a request. This is ident
 | TSAT     | Total Consumed Service Action Time    | The total time spent, in milliseconds, calling service actions. |
 | TSAE     | Total Consumed Service Action Calls   | The total number of calls of service actions.                |
 | IP       | Client IP                             | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875). |
-| UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity. %%If the request was made by an anonymous user, the User Id is not included in the event attributes. |
-| EC       | Number of errors                      | The number of errors that occured during the request.        |
+| UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user,  the event attributes don't include the User Id. |
+| EC       | Number of errors                      | The number of errors that occurred during the request.        |
 
 #### Request event details for TimerExecuted event { #timerexecuted-details }
 
@@ -411,9 +411,9 @@ This event occurs whenever the server finishes handling a timer. The event's pro
 | FN       | Front-end Name                        | The name of the front-end server that handled the request.   |
 | EPN      | EndPoint Name                         | The name of the web screen that was handling the request.    |
 | EPK      | EndPoint Key                          | The key of the web screen that was handling the request.     |
-| AN       | Action Name                           | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
+| AN       | Action Name                           | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
 | AK       | Action Key                            | The key of the action that was handling the request.         |
-| D        | Duration                              | The total time, in milliseconds, the server spent serving the request. %%Note: If the application server (e.g. IIS) queued the request due to server load, the time spent waiting in the queue is not included in this metric. |
+| D        | Duration                              | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, this metric doesn't include the time spent waiting in the queue. |
 | TQT      | Total Query Time                      | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). |
 | TQE      | Total Query Executions                | The total number of executed queries (Aggregates and Advanced Queries). |
 | TET      | Total Extension Time                  | The total time spent, in milliseconds, calling actions provided by extensions. |
@@ -422,6 +422,6 @@ This event occurs whenever the server finishes handling a timer. The event's pro
 | TCIE     | Total Consumed Integration Executions | The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP). |
 | TSAT     | Total Consumed Service Action Time    | The total time spent, in milliseconds, calling service actions. |
 | TSAE     | Total Consumed Service Action Calls   | The total number of calls of service actions.                |
-| IP       | Client IP                             | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875). For TimerExecuted, this will reflect the IP address of the Scheduler Service that triggered the timer. |
-| UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity. %%If the request was made by an anonymous user, the User Id is not included in the event attributes. |
-| EC       | Number of errors                      | The number of errors that occured during the request.        |
+| IP       | Client IP                             | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875). For TimerExecuted, this reflects the IP address of the Scheduler Service that triggered the timer. |
+| UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the User Id is not included in the event attributes. |
+| EC       | Number of errors                      | The number of errors that occurred during the request.        |

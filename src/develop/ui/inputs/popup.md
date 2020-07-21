@@ -23,9 +23,11 @@ To create and use a popup in Reactive Web and Mobile apps:
 
 ![](images/popup-mobile.png?width=750)
 
-For a video tutorial, view the following link:
+### Video tutorial
 
-[Create and Use a Popup in a Reactive Web App](https://www.youtube.com/watch?v=RrMARHvJBXU)
+Here is a video tutorial about using Popup in Reactive Web and Mobile.
+
+<iframe width="750" height="500" src="https://www.youtube.com/watch?v=RrMARHvJBXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
 ## In Traditional Web
 
@@ -49,6 +51,8 @@ To create and use a popup in Traditional Web apps:
 
 1. Implement the popup content. 
 
-For a video tutorial, view the following link:
+### Video tutorial
 
-[Create and Use a Popup in a Traditional Web App](https://www.youtube.com/watch?v=ShOCxc3g91M)
+Here is a video tutorial about using Popup in Traditional Web.
+
+<iframe width="750" height="500" src="https://www.youtube.com/watch?v=ShOCxc3g91M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>

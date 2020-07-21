@@ -325,7 +325,7 @@ Property | Meaning | Description
 TK | Tenant Key | A unique key identifying the tenant.  
 TN | Tenant Name | The name of the tenant.  
 EK | Environment Key | The unique key identifying the environment the user was accessing.  
-EN | Environment Name | The name of the environment the user was accessing. 
+EN | Environment Name | The name of the environment the user was accessing.
 FN | Front-end Name | The name of the front-end server that handled the request.  
 ON | Object Name | The name of the slow integration method.  
 OK | Object Key | The key that identifies the slow integration method.  

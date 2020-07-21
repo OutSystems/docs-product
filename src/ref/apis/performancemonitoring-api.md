@@ -218,17 +218,19 @@ http://outsystemscloud.com/PerformanceProbe/rest/PerformanceMonitoringAPI/Reques
 <tr>
 <td>Request Event Details</td>
 <td>A JSON object with the details about the event. Each built-in request event has its own details:<br/>
-&#8226; [WebScreenClientExecuted](#request-event-details-for-webscreenclientexecuted-event)<br/>
-&#8226; [WebScreenServerExecuted](#request-event-details-for-webscreenserverexecuted-event)<br/>
-&#8226; [QueryExecuted](#request-event-details-for-queryexecuted-event)<br/>
-&#8226; [ConsumedIntegrationExecuted](#request-event-details-for-consumedintegrationexecuted-event)<br/>
-&#8226; [ExtensionExecuted](#request-event-details-for-extensionexecuted-event)
+&#8226; [WebScreenClientExecuted](#webscreenclientexecuted-details)<br/>
+&#8226; [WebScreenServerExecuted](#webscreenserverexecuted-details)<br/>
+&#8226; [QueryExecuted](#queryexecuted-details)<br/>
+&#8226; [ConsumedIntegrationExecuted](#consumedintegrationexecuted-details)<br/>
+&#8226; [ExtensionExecuted](#extensionexecuted-details)<br/>
+&#8226; [ScreenServer](#screenserver-details)<br/>
+&#8226; [TimerExecuted](#timerexecuted-details)
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Request Event Details for WebScreenClientExecuted Event
+#### Request event details for WebScreenClientExecuted event { #webscreenclientexecuted-details }
 
 This event occurs whenever the user’s browser finishes processing a request (initial page load, any form submission, or any AJAX request). The event's properties are the following:
 
@@ -262,7 +264,7 @@ CN | Carrier Name | The name of the communications service provider of the devic
 CCC | Client Country Code | The ISO-Alpha2 country code associated with the device's carrier. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
 CNT | Carrier Network Type | The active network type provided by the device's carrier, such as 3G or GPRS. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
 
-#### Request Event Details for WebScreenServerExecuted Event
+#### Request event details for WebScreenServerExecuted event { #webscreenserverexecuted-details }
 
 This event occurs whenever the server finishes handling a request. The event's properties are the following:
 
@@ -291,7 +293,7 @@ VSS | View State Size | The view state, in bytes.
 UID | User Id | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity. %%If the request was made by an anonymous user, the User Id is not included in the event attributes.
 EC | Number of errors | The number of errors that occured during the request.
 
-#### Request Event Details for QueryExecuted Event
+#### Request event details for QueryExecuted event { #queryexecuted-details }
 
 This event occurs when OutSystems Platform detects a [slow query](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
@@ -314,7 +316,7 @@ OEK | Object’s eSpace Key | The key of the application module where the slow q
 OEN | Object’s eSpace Name | The name of the application module where the slow query was called.  
 EC | Number of errors | The number of errors that occured during the request.
 
-#### Request Event Details for ConsumedIntegrationExecuted Event
+#### Request event details for ConsumedIntegrationExecuted event { #consumedintegrationexecuted-details }
 
 This event occurs when the platform detects a [slow consumed integration](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
@@ -339,7 +341,7 @@ IT | Integration Type | The integration type. Current supported integration type
 IE | Integration Endpoint | The integration's endpoint URL.  
 EC | Number of errors | The number of errors that occured during the request.
 
-#### Request Event Details for ExtensionExecuted Event
+#### Request event details for ExtensionExecuted event { #extensionexecuted-details }
 
 This event occurs when the platform detects a [slow extension action](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
@@ -362,7 +364,13 @@ AK | Action Key | The key of the action that was handling the request.
 AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then ActionName is "(PageRender)".  
 EC | Number of errors | The number of errors that occured during the request.
 
-#### Request Event Details for ScreenServer Event (Mobile/Reactive only)
+#### Request event details for ScreenServer event { #screenserver-details }
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps.
+
+</div>
 
 This event occurs whenever the server finishes handling a request. This is identical to WebScreenServerExecuted without its client counterpart. The event's properties are the following:
 
@@ -390,7 +398,7 @@ This event occurs whenever the server finishes handling a request. This is ident
 | UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity. %%If the request was made by an anonymous user, the User Id is not included in the event attributes. |
 | EC       | Number of errors                      | The number of errors that occured during the request.        |
 
-#### Request Event Details for TimerExecuted Event
+#### Request event details for TimerExecuted event { #timerexecuted-details }
 
 This event occurs whenever the server finishes handling a timer. The event's properties are the following:
 

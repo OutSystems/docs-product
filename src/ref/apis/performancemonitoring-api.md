@@ -40,22 +40,22 @@ To use it in an application, make sure that [monitoring is turned on](../../mana
 #### Input
 
 EventNames
-:   Type: string, optional, to be sent in the URL.  
+:   Type: string, optional, sent in the URL.  
     List of events to filter on. Separate event names with a comma.  
     Example: "WebScreenClientExecuted,WebScreenServerExecuted".
 
 StartInstant
-:   Type: date time, mandatory, to be sent in the URL.  
+:   Type: date time, mandatory, sent in the URL.  
     The start date and time of the time interval you want to filter on. Format: ISO 8601.  
     Example: "2012-04-23T18:25:43.511Z".
 
 EndInstant
-:   Type: date time, mandatory, to be sent in the URL.  
+:   Type: date time, mandatory, sent in the URL.  
     The end date and time of the time period you want to filter on. Format: ISO 8601.  
     Example: "2012-04-23T18:25:43.511Z".
 
 NumberOfResults
-:   Type: int32, optional, to be sent in the URL.  
+:   Type: int32, optional, sent in the URL.  
     The maximum number of events to return. Note that the actual upper limit never exceeds the default limit (15000).  
     This limit is set in the 'MaxResponseSize' site property of the PerformanceProbe module of your environment.
 
@@ -161,7 +161,7 @@ To use this method in an application, make sure that [monitoring is turned on](.
 #### Input
 
 RequestEvent
-:   Type: RequestEvent, mandatory, to be sent in the request body (JSON).  
+:   Type: RequestEvent, mandatory, sent in the request body (JSON).  
     The event of a request in an application to be logged.
 
 #### Example request
@@ -295,7 +295,7 @@ EC | Number of errors | The number of errors that occured during the request.
 
 #### Request event details for QueryExecuted event { #queryexecuted-details }
 
-This event occurs when OutSystems Platform detects a [slow query](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
+This event occurs when the platform detects a [slow query](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 Property | Meaning | Description  
 ---|---|---  

@@ -14,14 +14,14 @@ The server only stores data for the last two days. Learn [how application perfor
 
 ## Summary
 
-Methods | Description 
+Methods | Description
 ---|---  
-[GET RequestEvents](#get-requestevents) | Returns a list of request events, filtered by the event names and time interval you specify in the parameters.  
-[POST RequestEvents](#post-requestevents) | Logs a request event. Based on that data you can analyze the user experience of your applications.  
+[GET RequestEvents](#get-requestevents) | Returns a list of request events, filtered by the event names and time interval you specify in the parameters.
+[POST RequestEvents](#post-requestevents) | Logs a request event. Based on that data you can analyze the user experience of your applications.
 
 Resources | Description
 ---|---  
-[RequestEvent](#requestevent) | Represents an event of a web request, sent to an OutSystems application.  
+[RequestEvent](#requestevent) | Represents an event of a web request, sent to an OutSystems application.
 
 ## Methods
 

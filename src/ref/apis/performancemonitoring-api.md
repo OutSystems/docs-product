@@ -1,5 +1,5 @@
 ---
-summary: API to access logged request events by OutSystems Platform with valuable data for your analytics. You can use it to analyze the user experience of your applications.
+summary: API to access logged request events by the OutSystems platform with valuable data for your analytics. You can use it to analyze the user experience of your applications.
 tags: support-devOps; support-monitoring
 ---
 
@@ -31,7 +31,7 @@ Returns a list of request events, filtered by event names and time interval you 
 
 This method requires basic authentication. You need to provide the credentials of a LifeTime user. It returns request events only for those applications to which the user has 'Reuse & Monitor' permission in the environment. Learn more about how to [configure security for an infrastructure](../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
 
-To use it in an application, make sure that [monitoring is turned on](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment, and for the application module. Otherwise the API responds with a status code of '200 - OK', but doesn't retrieve any events.
+To use it in an application, make sure that [monitoring is turned on](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment and also for the application module. Otherwise, the API responds with a status code of '200 - OK' but doesn't retrieve any events.
 
 #### URL
 

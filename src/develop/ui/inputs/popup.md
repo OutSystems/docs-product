@@ -9,30 +9,30 @@ Use a popup to show information to users or ask them to enter information. Corre
 
 ## In Reactive Web and Mobile
 
-To create and use a popup in Reactive Web and Mobile apps:
+To create and use a popup in Reactive Web and Mobile Apps:
 
-1. Drag the Popup widget to the screen. 
+1. Drag the **Popup** widget to the screen. 
 
-1. Add a variable of Boolean type to the screen to control the popup visibility (you can use it to show or hide the popup). 
+1. Add a variable of boolean type to the screen. 
 
-1. Set the Show Popup property with the variable. This toggles the popup according to the variable value. 
+1. Set the **Show Popup** property with the variable. This toggles the popup according to the variable value. 
 
-1. Implement a Client Action in the screen to display the popup by assigning `True` to the variable. 
+1. Add a Client Action to the screen to display the popup by assigning `True` to the variable. 
 
 1. Add your content to the popup.
 
-![Popup preview in a mobile app](images/popup-mobile.png?width=750)
+![Popup preview in a mobile app](images/popup-mobile.png?width=600)
 
-### Video tutorial
 
-Here is a video tutorial about using Popup in Reactive Web and Mobile.
+<div class="info" markdown="1">
 
-<iframe width="750" height="500" src="https://www.youtube.com/embed/RrMARHvJBXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+Here is a [video tutorial about using Popup in Reactive Web and Mobile App](https://www.youtube.com/watch?v=RrMARHvJBXU).
 
+</div>
 
 ## In Traditional Web
 
-To create and use a popup in Traditional Web apps:
+To create and use a popup in Traditional Web Apps:
 
 1. Name the link that opens the popup.
 
@@ -40,7 +40,7 @@ To create and use a popup in Traditional Web apps:
 
 1. Create a new screen for the popup. In the widget tree, set the **Source Web Block** of the layout of the screen to `Layouts\LayoutPopup`. 
 
-    ![Web Block source properties](images/popup-web-2.png?width=500)
+    ![Web Block source properties](images/popup-web-2.png?width=300)
 
 1. In the previous screen, set the link’s Destination to the popup screen.
 
@@ -48,14 +48,15 @@ To create and use a popup in Traditional Web apps:
 
 1. Set the **LinkOrButtonWidget** property of the **Popup_Editor** to the Id runtime property of the link. 
 
-    ![Popup preview in a Traditional app](images/popup-web-1.png?width=750)
+    ![Popup preview in a Traditional app](images/popup-web-1.png?width=600)
 
 1. Choose **(New Screen Action)** in the **OnNotify Destination** property of the **Popup_Editor** and leave the flow of the action empty.
 
 1. Add your content to the popup.
 
-### Video tutorial
 
-Here is a video tutorial about using Popup in Traditional Web.
+<div class="info" markdown="1">
 
-<iframe width="750" height="500" src="https://www.youtube.com/watch?v=ShOCxc3g91M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+Here is a [video tutorial about using Popup in Traditional Web App](https://www.youtube.com/watch?v=ShOCxc3g91M).
+
+</div>

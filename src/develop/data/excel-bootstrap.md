@@ -12,17 +12,17 @@ You can import data from Excel files to load data to your application server ent
 1. Open the Excel file, check that the Excel sheet has the name of the Entity and the column headers have the names of the entity attributes. 
 1. Close the file. The bootstrap cannot read the Excel file if it is open. 
 
-If your spreadsheet has blank cells and you're getting import errors, check [this Development FAQ](https://success.outsystems.com/Documentation/Development_FAQs/How_to_bootstrap_numeric_data_from_Excel_with_blank_cells) on how to proceed.
+If your spreadsheet has blank cells and you're getting import errors, check [this How-to Guide](https://success.outsystems.com/Documentation/Development_FAQs/How_to_bootstrap_numeric_data_from_Excel_with_blank_cells) on how to proceed.
 
 ## Bootstrap the data
 
 To bootstrap data from an Excel file to an existing entity:
 
-1. In the Service Studio, go to the Data tab, right-click on the entity and in the Advanced menu, choose 'Create Action to Bootstrap data from an Excel...'. 
+1. In Service Studio, go to the Data tab, right-click on the entity and in the Advanced menu, choose 'Create Action to Bootstrap data from an Excel...'. 
 
 1. Select the Excel file, check the mappings to see if they are correct and click on Proceed. 
     
-    The Service Studio will automatically create:
+    Service Studio automatically creates:
 
     * An action with the bootstrap logic named "Bootstrap&lt;entityname&gt;" in the Server Actions folder in the Logic tab
     * A structure with the content of the Excel file named "Excel_&lt;filename&gt;" in the Structures folder in the Data tab

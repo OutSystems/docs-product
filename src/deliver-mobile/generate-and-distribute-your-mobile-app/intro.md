@@ -11,6 +11,12 @@ The following sections show how to configure and generate iOS and Android applic
 
 For additional information about generating and distributing iOS and Android application packages, see [More Information on Generating and Distributing Mobile Apps](more-information-on-generating-and-distributing-mobile-apps.md).
 
+<div class="info" markdown="1">
+
+See [Distribute as a progressive web app (PWA)](../distribute-pwa/intro.md) for information about the PWA options.
+
+</div>
+
 ## Configure and Generate a Mobile App Package in Service Studio
 
 To configure or generate your mobile app package (iOS or Android) in Service Studio, do the following:

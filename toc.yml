@@ -146,20 +146,31 @@
         - topics:
             - href: develop/ui/patterns/mobile/intro.md
             - topics:
-                - href: develop/ui/patterns/mobile/carousel.md
-                - href: develop/ui/patterns/mobile/columns.md
-                - href: develop/ui/patterns/mobile/datepicker.md
-                - href: develop/ui/patterns/mobile/gallery.md
-                - href: develop/ui/patterns/mobile/lightboximage.md
-                - href: develop/ui/patterns/mobile/masterdetail.md
+                - href: develop/ui/patterns/mobile/adaptive/columns.md
+                - href: develop/ui/patterns/mobile/adaptive/gallery.md
+                - href: develop/ui/patterns/mobile/adaptive/masterdetail.md
+                - href: develop/ui/patterns/mobile/content/accordion.md
+                - href: develop/ui/patterns/mobile/content/alert.md
+                - href: develop/ui/patterns/mobile/content/blankslate.md
+                - href: develop/ui/patterns/mobile/content/card.md
+                - href: develop/ui/patterns/mobile/content/cardbackground.md
+                - href: develop/ui/patterns/mobile/content/cardsectioned.md
+                - href: develop/ui/patterns/mobile/content/section.md
+                - href: develop/ui/patterns/mobile/content/tag.md
+                - href: develop/ui/patterns/mobile/interaction/carousel.md
+                - href: develop/ui/patterns/mobile/interaction/datepicker.md
+                - href: develop/ui/patterns/mobile/interaction/lightboximage.md
+                - href: develop/ui/patterns/mobile/interaction/rangeslider.md
+                - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
+                - href: develop/ui/patterns/mobile/interaction/sidebar.md
+                - href: develop/ui/patterns/mobile/interaction/stackedcards.md
+                - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
+                - href: develop/ui/patterns/mobile/navigation/tabs.md
+                - href: develop/ui/patterns/mobile/numbers/badge.md
+                - href: develop/ui/patterns/mobile/utilities/swipeevents.md
+                - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md
-                - href: develop/ui/patterns/mobile/rangesliderinterval.md
-                - href: develop/ui/patterns/mobile/rangeslider.md
-                - href: develop/ui/patterns/mobile/splitscreen.md
-                - href: develop/ui/patterns/mobile/stackedcards.md
-                - href: develop/ui/patterns/mobile/swipeevents.md
-                - href: develop/ui/patterns/mobile/tabs.md
-                - href: develop/ui/patterns/mobile/touchevents.md
+                - href: develop/ui/patterns/mobile/splitscreen.md            
             - href: develop/ui/patterns/web/intro.md
             - topics:
                 - href: develop/ui/patterns/web/content/intro.md
@@ -421,6 +432,7 @@
         - href: deliver-mobile/generate-and-distribute-your-mobile-app/more-information-on-generating-and-distributing-mobile-apps.md
         - href: deliver-mobile/generate-and-distribute-your-mobile-app/configuration-native-platforms.md
     - href: deliver-mobile/mobile-app-update-scenarios.md
+    - href: deliver-mobile/manage-distribution-options/intro.md
     - href: deliver-mobile/mobile-apps-build-service/intro.md
     - topics:
         - href: deliver-mobile/mobile-apps-build-service/android-support-library-versions.md

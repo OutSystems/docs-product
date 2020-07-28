@@ -838,13 +838,28 @@
 - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md:
     - deliver-mobile/customize-mobile-app/intro.md
 
+# Distribute as a progressive web app (PWA)
+- deliver-mobile/distribute-pwa/intro.md:
+    - deliver-mobile/generate-and-distribute-your-mobile-app/intro.md
+    - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
+    - external:
+        - "The forum topic for PWA during early access":
+            https://www.outsystems.com/forums/discussion/56090/progressive-web-apps-early-access-now-open-to-everyone/
+
 # Use Events to Propagate Changes From a Block to the Parent
 - develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md:
     - develop/ui/inputs/popup.md
 
-
+# Early Access - Configure mobile apps updates distribution
+- deliver-mobile/manage-distribution-options/intro.md:
+    - managing-the-applications-lifecycle/deploy-applications/deploy-an-application.md
+    - managing-the-applications-lifecycle/deploy-applications/tag-a-version.md
+    - deliver-mobile/mobile-app-update-scenarios.md
+    - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
+    - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
+    - deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
+    - setup/possible-setups.md
 # UI Web Patterns
-
 - develop/ui/patterns/web/content/accordion/accordion.md:
     - ref/ui-patterns/web/accordion.md
     - external:
@@ -1243,80 +1258,143 @@
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/NavigationBar.aspx
-
 # UI Mobile Patterns
-- develop/ui/patterns/mobile/carousel.md:
-    - ref/ui-patterns/mobile/carousel-mobile.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
-- develop/ui/patterns/mobile/lightboximage.md:
-    - ref/ui-patterns/mobile/lightboximage.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightBoxImage.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46
-- develop/ui/patterns/mobile/datepicker.md:
-    - ref/ui-patterns/mobile/datepicker.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/DatePicker.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=31
-- develop/ui/patterns/mobile/columns.md:
+- develop/ui/patterns/mobile/adaptive/columns.md:
     - ref/ui-patterns/mobile/columns.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=21
-- develop/ui/patterns/mobile/gallery.md:
+- develop/ui/patterns/mobile/adaptive/gallery.md:
     - ref/ui-patterns/mobile/gallery-mobile.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx
         - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41           
-- develop/ui/patterns/mobile/tabs.md:
-    - ref/ui-patterns/mobile/tabs-mobile.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73           
-- develop/ui/patterns/mobile/masterdetail.md:
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41 
+- develop/ui/patterns/mobile/adaptive/masterdetail.md:
     - ref/ui-patterns/mobile/masterdetail-mobile.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51
-- develop/ui/patterns/mobile/stackedcards.md:
-    - ref/ui-patterns/mobile/stackedcards.md
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51   
+- develop/ui/patterns/mobile/content/accordion.md:
     - external:
-       - "OutSystems UI Pattern":  
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
-- develop/ui/patterns/mobile/rangeslider.md:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Accordion.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=1 
+- develop/ui/patterns/mobile/content/alert.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Alert.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=3 
+- develop/ui/patterns/mobile/content/blankslate.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/BlankSlate.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=8
+- develop/ui/patterns/mobile/content/card.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Card.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=13
+- develop/ui/patterns/mobile/content/cardbackground.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/CardBackground.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=14
+- develop/ui/patterns/mobile/content/cardsectioned.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/CardSectioned.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=16
+- develop/ui/patterns/mobile/content/section.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Section.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=63
+- develop/ui/patterns/mobile/content/tag.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tag.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=74
+- develop/ui/patterns/mobile/interaction/carousel.md:
+    - ref/ui-patterns/mobile/carousel-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
+- develop/ui/patterns/mobile/interaction/datepicker.md:
+    - ref/ui-patterns/mobile/datepicker.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/DatePicker.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=31       
+- develop/ui/patterns/mobile/interaction/lightboximage.md:
+    - ref/ui-patterns/mobile/lightboximage.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightBoxImage.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46
+- develop/ui/patterns/mobile/interaction/rangeslider.md:
     - ref/ui-patterns/mobile/rangeslider.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSlider.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=60
-- develop/ui/patterns/mobile/rangesliderinterval.md:
+- develop/ui/patterns/mobile/interaction/rangesliderinterval.md:
     - ref/ui-patterns/mobile/rangesliderinterval.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSliderInterval.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=61
-- develop/ui/patterns/mobile/touchevents.md:
+- develop/ui/patterns/mobile/interaction/sidebar.md:
+    - external:
+       - "OutSystems UI Pattern":  
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=67
+- develop/ui/patterns/mobile/interaction/stackedcards.md:
+    - ref/ui-patterns/mobile/stackedcards.md
+    - external:
+       - "OutSystems UI Pattern":  
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
+- develop/ui/patterns/mobile/navigation/breadcrumbs.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Breadcrumbs.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10 
+- develop/ui/patterns/mobile/navigation/tabs.md:
+    - ref/ui-patterns/mobile/tabs-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73                  
+- develop/ui/patterns/mobile/numbers/badge.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Badge.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7
+- develop/ui/patterns/mobile/utilities/touchevents.md:
     - ref/ui-patterns/mobile/touchevents.md
     - external:
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=78
-- develop/ui/patterns/mobile/swipeevents.md:
+- develop/ui/patterns/mobile/utilities/swipeevents.md:
     - ref/ui-patterns/mobile/swipeevents.md
     - external:
         - "OutSystems UI Pattern": 

@@ -35,7 +35,6 @@ The process for installing or upgrading OutSystems Platform Server in unattended
 1. Publish System Components
 1. Upload license file (requires manual intervention)
 1. Publish LifeTime
-1. Publish OutSystems Now
 1. Only for upgrades and updates: republish the entire factory
 
 The following sections present detailed instructions on how to install, upgrade, and add front-end servers in unattended mode.
@@ -43,8 +42,6 @@ The following sections present detailed instructions on how to install, upgrade,
 ## Before You Start
 
 * Download the [Installation Checklist](http://www.outsystems.com/goto/checklist-11) from OutSystems website.
-
-* To publish OutSystems Now you will need to [download OutSystems Now](https://www.outsystems.com/forge/component/580/outsystems-now/) from Forge.
 
 * The default paths used in the procedures below are the following:
 
@@ -161,14 +158,6 @@ Manually obtain a valid OutSystems platform license from [www.outsystems.com/lic
 <outsystems_common_path>\OSPTool.com /Publish "<platform_path>\LifeTime.osp" <hostname> <username> <password>
 ```
 
-### 10. Publish OutSystems Now
-
-Requires [downloading OutSystems Now](https://www.outsystems.com/forge/component/580/outsystems-now/) from Forge.
-
-```
-<outsystems_common_path>\OSPTool.com /Publish "<OutSystemsNow-version.oap>" <hostname> <username> <password>
-```
-
 ## Upgrade
 
 ### 1. Install the OutSystems platform prerequisites
@@ -250,15 +239,7 @@ Manually obtain a valid OutSystems platform license from [www.outsystems.com/lic
 <outsystems_common_path>\OSPTool.com /Publish "<platform_path>\LifeTime.osp" <hostname> <username> <password>
 ```
 
-### 9. Publish OutSystems Now
-
-Requires [downloading OutSystems Now](https://www.outsystems.com/forge/component/580/outsystems-now/) from Forge.
-
-```
-<outsystems_common_path>\OSPTool.com /Publish "<OutSystemsNow-version.oap>" <hostname> <username> <password>
-```
-
-### 10. Republish the entire factory
+### 9. Republish the entire factory
 
 ```
 <outsystems_common_path>\OSPTool.com /PublishFactory <hostname> <username> <password>

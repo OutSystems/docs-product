@@ -5,13 +5,13 @@ tags: runtime-mobile; support-mobile; support-Mobile_Apps
 
 # Generate and Distribute Your Mobile App for Development Tests
 
-While you are developing a mobile app, there will be times when you have completed some work that you want to test on the device and share it with other so they can also test it.
+While you are developing a mobile app, there are times when you have completed some work that you want to test on the device and share it with other so they can also test it.
 
 In OutSystems, you can build and generate a mobile application package for your mobile app for test purposes and install it on the device. You can then share the package with other users following iOS/Android distribution process.
 
 <div class="info" markdown="1">
 
-You can also test your mobile app on a device using the OutSystems Now app, without having to generate the native application package and install it. You'll be able to execute and preview the plugins supported by OutSystems on your mobile device. OutSystems Now is a mobile app that loads your app in a container and provides a seamless integration between your app and the mobile functionalities. Check how you can [preview your mobile app in the device using OutSystems Now](<../preview-your-mobile-app-in-the-device-using-outsystems-now.md>).
+You can also [distribute your app as a Progressive Web App (PWA)](#).
 
 </div>
 

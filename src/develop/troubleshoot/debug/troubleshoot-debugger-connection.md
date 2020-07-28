@@ -13,19 +13,19 @@ Use Service Studio 11.5.44.2557 or later to debug the mobile apps if you generat
 
 When trying to debug a mobile application using Google Chrome or a real device some issues can arise, like a firewall blocking local ports or a device not being discovered by Service Studio.
 
-Below you can find a list of the most common problems that you may find when you are starting a mobile app debug session, as well as suggestions for fixing them.
+Below you can find a list of the most common problems that you may find when you are starting a mobile app debug session, and suggestions for fixing them.
 
 ## Issues Related With Unavailable Local Ports
 
 The mobile app debugger feature of Service Studio requires one or two available local ports according to the debugging target:
 
 When debugging on an Android device or in Google Chrome
-:   One available port in the development machine starting at port 9222. If this port is unavailable, port 9223 will be checked and so on.
+:   One available port in the development machine starting at port 9222. If this port is unavailable, Service Studio checks port 9223, and so on.
 
 When debugging on an iOS device
-:   Two available local ports in the development machine starting at port 9221. If this port is unavailable, port 9222 will be checked and so on.
+:   Two available local ports in the development machine starting at port 9221. If this port is unavailable, Service Studio checks port 9222, and so on.
 
-If no available ports are found because they are in use or they are blocked (e.g. by a firewall), you will not be able to debug your mobile app in Service Studio.
+If there are no available ports because they're in use or they're blocked (for example, by a firewall), you can't debug your mobile app in Service Studio.
 
 ## Issues While Connecting an Android Device
 
@@ -39,7 +39,7 @@ Check the following sections for more information on how to solve these issues:
 
 ### USB/Android Debugging not enabled in device { #usbandroid-debugging-not-enabled-in-device }
 
-For the device to be detected by Service Studio, you should start by having the USB debugging (or Android Debugging) option enabled. 
+For the device to be detected by Service Studio, you should start by having the USB debugging (or Android Debugging) option enabled.
 
 1. Navigate to the **Developer options** section inside the **Settings** and enable the **USB debugging** option.
 
@@ -61,7 +61,7 @@ After ensuring that the USB debugging option is enabled, you should check if the
 
     ![](<images/device-unrecognized.png>)
 
-To help Windows correctly detect the device, follow [this guide](<https://developer.android.com/studio/run/oem-usb.html>) to install the drivers provided by the manufacturer. 
+To help Windows correctly detect the device, follow [this guide](<https://developer.android.com/studio/run/oem-usb.html>) to install the drivers provided by the manufacturer.
 
 If after following the guide mentioned above Windows still fails to recognize the device properly, try using the drivers provided by Google by taking these steps:
 
@@ -116,7 +116,7 @@ First of all, check if you have any notification referring to the USB mode, like
 
 ![](<images/device-usb-mode-3.png>)
 
-If you find these options, try to switch between them (`MTP`, `PTP` and `Camera` modes), disconnecting and reconnecting the device to the PC and retrying the device discovery in Service Studio.
+If you find these options, try to switch between them (`MTP`, `PTP` and `Camera` modes), disconnecting and reconnecting the device to the PC, and retrying the device discovery in Service Studio.
 
 
 ### USB Debugging was not allowed in device { #usb-debugging-was-not-allowed-in-device }
@@ -179,21 +179,19 @@ Check [Apple Support](<https://support.apple.com/en-us/HT202778>) for more infor
 
 ### More than one iOS device is connected to your PC { #more-than-one-ios-device-is-connected-to-your-pc }
 
-Only one device from each platform (Android/iOS) can be connected to the PC for the device discovery process to run successfully. 
+You can only connect one device from each platform (Android/iOS) to the PC for the device discovery process to run successfully.
 
 Ensure that you only have one iOS device connected to your PC.
 
 
 ## Issues During App Detection by Service Studio
 
-When starting a new debug session using a device, and after the device has been correctly detected, Service Studio will start to actively look for the mobile app that you are debugging.
+When starting a new debug session using a device, and after the device has been correctly detected, Service Studio starts to actively look for the mobile app that you are debugging.
 
-If you find issues during the app detection step (e.g. the detection is taking too long), make sure that the mobile app was generated with the `Debug` Build Type for Android and `Development` Build Type for iOS.
+If you find issues during the app detection step (for example, the detection is taking too long), make sure you generated the mobile app with the `Debug` Build Type for Android and `Development` Build Type for iOS.
 
 If your app is still not detected, try performing each of the following steps in your device and check if any of them solves your problem:
 
 * Close all other running OutSystems mobile apps.
-* Close the "OutSystems Now" mobile app.
 * Close any browser app that could be running.
 * Close all running apps.
-

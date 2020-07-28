@@ -19,39 +19,39 @@ You can also [distribute your app as a Progressive Web App (PWA)](../distribute-
 
 ### Before You Start
 
-* To test your app, you must have a certificate of type `iOS App Development` generated and configured in your Apple Developer account. If you don’t have one, learn [how you can create a certificate](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-certificate>). 
+* To test your app, you must have a certificate of type `iOS App Development` generated and configured in your Apple Developer account. If you don't have one, learn [how you can create a certificate](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-certificate>).
 
 * To allow launching your app in the devices of the end users group, you must setup the `iOS App Development` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-provisioning-profile>).  
 For more information on registering devices on your Apple Developer account,check the [Apple Developer website](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW10>).
 
-* To get the certificate and provisioning profile to generate the iOS app for your mobile app, you must have an Apple Developer account. If you don't, create a new [Apple Developer Account](https://developer.apple.com/programs/ "https://developer.apple.com/programs/"). 
+* To get the certificate and provisioning profile to generate the iOS app for your mobile app, you must have an Apple Developer account. If you don't, create a new [Apple Developer Account](https://developer.apple.com/programs/ "https://developer.apple.com/programs/").
 
 ### Generate the iOS App Package (IPA)
 
-You can configure, generate and download an iOS mobile app package of your app for development tests in Service Studio or in Service Center.
+You can configure, generate, and download an iOS mobile app package of your app for development tests in Service Studio or in Service Center.
 
 To use Service Studio, do the following:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab. 
-1. Click on the **Configure iOS App** button or the iOS cog icon button if you've already generated a previous iOS app. 
-1. In the  **Build type** dropdown, select the `Development` option. 
-1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). You have to register the same app identifier in your Apple Developer Account. 
-1. Provide a certificate and a provisioning profile both of type `iOS App Development`. 
-1. Click **Generate App**. 
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab.
+1. Click on the **Configure iOS App** button or the iOS cog icon button if you've already generated a previous iOS app.
+1. In the  **Build type** dropdown, select the `Development` option.
+1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`). You have to register the same app identifier in your Apple Developer Account.
+1. Provide a certificate and a provisioning profile both of type `iOS App Development`.
+1. Click **Generate App**.
 
 When the app generation completes, scan the QR code or copy the created installation link using your device to install the generated iOS app.
 
 To use Service Center, do the following:
 
-1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`). 
-1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list. 
-1. Select the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the **Configure** link for the iOS entry. 
-1. In the **Build type** dropdown, select the `Development` option. 
-1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, e.g. `com.domain.appname` ). 
-1. Provide a certificate of type `iOS App Development` and its password. The certificate should have a .p12 file extension. 
-1. Provide an `iOS App Development` provisioning profile that matches the certificate you provided. The provisioning profile should have a .mobileprovision extension. 
-1. Click **Save** to save your settings. 
-1. Click **Generate** and wait a few moments while the app is being generated. 
+1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
+1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list.
+1. Select the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the **Configure** link for the iOS entry.
+1. In the **Build type** dropdown, select the `Development` option.
+1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname` ).
+1. Provide a certificate of type `iOS App Development` and its password. The certificate should have a `.p12` file extension.
+1. Provide an `iOS App Development` provisioning profile that matches the certificate you provided. The provisioning profile should have a `.mobileprovision` extension.
+1. Click **Save** to save your settings.
+1. Click **Generate** and wait a few moments while the app is being generated.
 
 After the app is generated, click the download icon near the version information to download the iOS app package (IPA).
 
@@ -73,34 +73,34 @@ Have in mind that only selected devices specified for the provisioning profile c
 
 ### Generate the Android App Package (APK)
 
-You can configure, generate and download an Android mobile app package of your app for development tests in Service Studio or in Service Center.
+You can configure, generate, and download an Android mobile app package of your app for development tests in Service Studio or in Service Center.
 
 To use Service Studio, do the following:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab. 
-1. Click on the **Configure Android App** button or the Android cog icon button if you've already generated a previous Android app. 
-1. In the “Build type” dropdown, select the `Debug` option. 
-1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). 
-1. _(Optional step)_ If you want to use a custom keystore to sign the debug version of your app: 
-    1. Expand the **>Configure Keystore** section in the **Native Platforms** tab. 
-    2. Select the keystore and introduce the passwords. 
-    3. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
-1. Click **Generate App**. 
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab.
+1. Click on the **Configure Android App** button or the Android cog icon button if you've already generated a previous Android app.
+1. In the "Build type" dropdown, select the `Debug` option.
+1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`).
+1. _(Optional step)_ If you want to use a custom keystore to sign the debug version of your app:
+    1. Expand the **>Configure Keystore** section in the **Native Platforms** tab.
+    1. Select the keystore and introduce the passwords.
+    1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
+1. Click **Generate App**.
 
 When the app generation completes, scan the QR code or copy the created installation link using your device to download the Android package (APK) and install it.
 
 To use Service Center, do the following:
 
-1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`). 
-1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list. 
-1. Select the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the  Configure  link for the Android entry. 
-1. In the **Build type** dropdown, select the `Debug` option. 
-1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, e.g.`com.domain.appname`). 
-1. _(Optional step)_ If you want to use a custom keystore to sign the debug version of your app: 
-    1. Select the keystore and introduce the passwords. 
-    1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore. 
-1. Click **Save** to save your settings. 
-1. Click **Generate** and wait a few moments while the app is being generated. 
+1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
+1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list.
+1. Select the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the  Configure  link for the Android entry.
+1. In the **Build type** dropdown, select the `Debug` option.
+1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`).
+1. _(Optional step)_ If you want to use a custom keystore to sign the debug version of your app:
+    1. Select the keystore and introduce the passwords.
+    1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
+1. Click **Save** to save your settings.
+1. Click **Generate** and wait a few moments while the app is being generated.
 
 After the app is generated, click the download icon near the version information to download the Android app package (APK).
 
@@ -108,7 +108,7 @@ After the app is generated, click the download icon near the version information
 
 To share your app with others, send them the QR code generated by Service Studio, the installation link or the app package (APK) itself.
 
-<div class="info" markdown="1"> 
+<div class="info" markdown="1">
 
 In case your device blocks the installation of the app since it was obtained from an unknown source, go to the device settings and allow the installation from unknown sources to fix it.
 

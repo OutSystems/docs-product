@@ -11,7 +11,7 @@ In OutSystems, you can build and generate a mobile application package for your 
 
 <div class="info" markdown="1">
 
-You can also [distribute your app as a Progressive Web App (PWA)](#).
+You can also [distribute your app as a Progressive Web App (PWA)](../distribute-pwa/intro.md).
 
 </div>
 

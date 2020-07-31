@@ -34,6 +34,6 @@ Error Messages Language | Allows you to set the NLS_LANGUAGE setting when connec
 
 Configuration | Description | Default value
 ---|---|---
-User | Name of the user that's the owner of OutSystems session tables. | `OSRUNTIME` / `OSSTATE` (for Oracle)
+User | Name of the user that's the owner of OutSystems session tables. | `OSSTATE`
 Password | Password for the specified user. |  
 Tablespace | Table space holding the session tables.<br/>This field is only available for the Oracle database provider. | `OSSTATE`

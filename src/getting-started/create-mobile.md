@@ -136,4 +136,4 @@ When the application is deployed, click the **![Open in Browser](../shared/icons
 
 ![Test Your Mobile App](images/create-mobile-18.png)
 
-To test the application on your mobile device see [Preview Your Mobile App in the Device Using OutSystems Now](../deliver-mobile/preview-your-mobile-app-in-the-device-using-outsystems-now.md).
+To try out the app on your mobile device see [Distribute as a progressive web app (PWA)](../deliver-mobile/distribute-pwa/intro.md).

@@ -1,5 +1,3 @@
-## Pull request info
-
 # Fetch and Display Data from the Database
 
 One of the most common operations in a data-driven application is fetching data from the database, for example, to display it on the screen. In OutSystems, Aggregates provide this functionality.
@@ -73,6 +71,3 @@ In the following steps we will fetch Places from the database of a web app calle
 1. Publish the application.
 
 ![Fetch and Display Data](images/fetch-display-web.gif)
-
-* Expected release date:
-* Comments (optional):

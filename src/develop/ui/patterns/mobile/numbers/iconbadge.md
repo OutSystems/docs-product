@@ -25,7 +25,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/iconbadge-3-ss.png>)
 
-    By default, the Icon Badge contains an Icon placeholder with an pre existing icon.
+    By default, the Icon Badge contains an Icon placeholder with a pre existing icon.
 
 1. To create an aggregate (in this example to retrieve all the users on the platform), right-click the screen name and select **Fetch Data from Database**.
 
@@ -39,7 +39,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/iconbadge-6-ss.png>)
 
-1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
+1. To reopen your screen, select the **Interface** tab, and double-click on your screen name.
 
 1. Select the Icon Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**, and in the Expression Editor enter the following expression and click **Done**. 
 
@@ -51,7 +51,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. On the **Properties** tab, you can customize the Icon Badge's look and feel by setting any of the optional properties, for example, the color. 
 
-    ![](<images/iconbadge-image-10.png>)
+    ![](<images/iconbadge-8-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

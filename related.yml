@@ -1314,6 +1314,12 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/CardSectioned.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=16
+- develop/ui/patterns/mobile/content/flipcontent.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FlipContent.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=37
 - develop/ui/patterns/mobile/content/section.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1326,6 +1332,22 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tag.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=74
+- develop/ui/patterns/mobile/content/tooltip.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tooltip.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=77
+- develop/ui/patterns/mobile/content/useravatar.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=80
+- develop/ui/patterns/mobile/interaction/animate.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Animate.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=5
 - develop/ui/patterns/mobile/interaction/carousel.md:
     - ref/ui-patterns/mobile/carousel-mobile.md
     - external:
@@ -1386,9 +1408,27 @@
 - develop/ui/patterns/mobile/numbers/badge.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Badge.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/AlignCenter.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7
+- develop/ui/patterns/mobile/numbers/counter.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Counter.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=30
+- develop/ui/patterns/mobile/numbers/iconbadge.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
+- develop/ui/patterns/mobile/utilities/aligncenter.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/AlignCenter.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=4
 - develop/ui/patterns/mobile/utilities/touchevents.md:
     - ref/ui-patterns/mobile/touchevents.md
     - external:

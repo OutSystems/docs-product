@@ -155,8 +155,12 @@
                 - href: develop/ui/patterns/mobile/content/card.md
                 - href: develop/ui/patterns/mobile/content/cardbackground.md
                 - href: develop/ui/patterns/mobile/content/cardsectioned.md
+                - href: develop/ui/patterns/mobile/content/flipcontent.md
                 - href: develop/ui/patterns/mobile/content/section.md
                 - href: develop/ui/patterns/mobile/content/tag.md
+                - href: develop/ui/patterns/mobile/content/tooltip.md
+                - href: develop/ui/patterns/mobile/content/useravatar.md
+                - href: develop/ui/patterns/mobile/interaction/animate.md
                 - href: develop/ui/patterns/mobile/interaction/carousel.md
                 - href: develop/ui/patterns/mobile/interaction/datepicker.md
                 - href: develop/ui/patterns/mobile/interaction/lightboximage.md
@@ -167,6 +171,9 @@
                 - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
                 - href: develop/ui/patterns/mobile/navigation/tabs.md
                 - href: develop/ui/patterns/mobile/numbers/badge.md
+                - href: develop/ui/patterns/mobile/numbers/counter.md
+                - href: develop/ui/patterns/mobile/numbers/iconbadge.md
+                - href: develop/ui/patterns/mobile/utilities/aligncenter.md
                 - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                 - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md

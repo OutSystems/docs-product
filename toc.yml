@@ -417,7 +417,6 @@
         - href: deliver-mobile/customize-mobile-app/customize-errors-screen.md
         - href: deliver-mobile/customize-mobile-app/configure-accessible-domains.md
         - href: deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
-    - href: deliver-mobile/preview-your-mobile-app-in-the-device-using-outsystems-now.md
     - href: deliver-mobile/generate-and-distribute-your-mobile-app/intro.md
     - topics:
         - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
@@ -433,6 +432,7 @@
         - href: deliver-mobile/generate-and-distribute-your-mobile-app/more-information-on-generating-and-distributing-mobile-apps.md
         - href: deliver-mobile/generate-and-distribute-your-mobile-app/configuration-native-platforms.md
     - href: deliver-mobile/mobile-app-update-scenarios.md
+    - href: deliver-mobile/manage-distribution-options/intro.md
     - href: deliver-mobile/mobile-apps-build-service/intro.md
     - topics:
         - href: deliver-mobile/mobile-apps-build-service/android-support-library-versions.md

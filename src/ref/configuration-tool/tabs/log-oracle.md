@@ -16,7 +16,7 @@ Naming Method | The method to connect to the Oracle database server. | `Service 
 Host | The hostname or IP address to the database server.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `localhost`
 Port | The port on which the database service listens.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `1521`
 Service Name | The Oracle database service name.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. |
-TNS Name | An address name defined in the tnsnames.ora configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. |
+TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. |
 
 For advanced settings, click the **Advanced Settings** link.
 

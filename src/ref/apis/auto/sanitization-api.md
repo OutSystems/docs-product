@@ -30,6 +30,21 @@ Output
 :   Type: Text.  
     A string containing comma-separated integer values to be used in a SQL &quot;IN&quot; clause.
 
+Examples:
+
+```
+// ListA and ListB are local variables with data type IntegerLiteral List
+
+ListA[0].Value = 2
+ListA[1].Value = 7
+BuildSafe_InClauseIntegerList(ListA) = "2,7"
+
+// ListB is empty
+BuildSafe_InClauseIntegerList(ListB) = "0"
+```
+
+For more information, check [Building Dynamic SQL Statements the Right Way](https://success.outsystems.com/Documentation/Best_Practices/Development/Building_Dynamic_SQL_Statements_the_Right_Way).
+
 ### BuildSafe_InClauseTextList { #BuildSafe_InClauseTextList }
 
 Returns a comma-delimited text value with the encoded version of all the text values provided as input. The returned value can be safely used in a SQL &quot;IN&quot; clause.
@@ -45,6 +60,21 @@ ValueList
 Output
 :   Type: Text.  
     A string containing a set of encoded text values separated by commas to be used in a SQL &quot;IN&quot; clause.
+
+Examples:
+
+```
+// ListA and ListB are local variables with data type TextLiteral List
+
+ListA[0].Value = "John Doe"
+ListA[1].Value = "Mary O'Hara"
+BuildSafe_InClauseTextList(ListA) = "'John Doe','Mary O''Hara'"
+
+// ListB is empty
+BuildSafe_InClauseTextList(ListB) = "''"
+```
+
+For more information, check [Building Dynamic SQL Statements the Right Way](https://success.outsystems.com/Documentation/Best_Practices/Development/Building_Dynamic_SQL_Statements_the_Right_Way).
 
 ### SanitizeHtml { #SanitizeHtml }
 

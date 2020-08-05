@@ -164,16 +164,20 @@ Do the following:
 
 1. Create a folder named `bin` at the same folder level as the Platform Server installation package.
 
-1. Download and place the required Microsoft installers in the `bin` folder. The filenames of the installation binaries **must match** the following:  
+1. Download and place the required Microsoft installers in the `bin` folder.
 
-    `NDP472-KB4054530-x86-x64-AllOS-ENU.exe` = Microsoft .NET Framework 4.7.2  
-    [Download the Offline Installer for the Runtime](https://go.microsoft.com/fwlink/?LinkID=863265) from Microsoft
+    * **Microsoft .NET Framework 4.7.2**  
+    1\. [Download the Offline Installer for the Runtime](https://go.microsoft.com/fwlink/?LinkID=863265) from Microsoft.  
+    2\. Rename the Microsot .NET Framework Installer to `DotNet.exe`.  
+    _Note:_ If you're installing a Platform Server version earlier than 11.9, rename the installer to `NDP472-KB4054530-x86-x64-AllOS-ENU.exe` instead.
     
-    `DotNetCore_WindowsHosting.exe` = .NET Core 2.1 Runtime & Hosting Bundle for Windows  
-    [Download the .NET Core 2.1 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-2.1.12-windows-hosting-bundle-installer) from Microsoft
+    * **.NET Core 2.1 Runtime & Hosting Bundle for Windows**  
+    1\. [Download the .NET Core 2.1 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-2.1.12-windows-hosting-bundle-installer) from Microsoft.  
+    2\. Rename the .NET Core Installer to `DotNetCore_WindowsHosting.exe`.
     
-    `BuildTools_Full.exe` = Build Tools 2015  
-    [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft
+    * **Build Tools 2015**  
+    1\. [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft.  
+    2\. Rename the Build Tools Installer to `BuildTools_Full.exe`.
 
 1. Run the Platform Server installer package as usual. The binaries you downloaded from Microsoft will be detected by the installation package.
 

@@ -19,11 +19,11 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
   
      The Carousel widget is displayed.
 
-    ![](images/carousel-widget.png)
+    ![](images/carousel-3-ss.png)
 
 1. To From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen. 
 
-   ![](images/carousel-image-9.png)
+   ![](images/carousel-9-ss.png)
 
 1. Place the content you want to appear in the Carousel into the Items placeholder. (In this example we use images.) 
 
@@ -33,19 +33,19 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
 1. Select or import the image you want to display. In this example, we use the sample OutSystems UI images.
 
-    ![](<images/carousel-image-10.png>)
+    ![](<images/carousel-10-ss.png>)
 
     Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../develop/ui/image/display-image.md).
 
     To use a Carousel with items from a database, drag a [ListRecords widget](<../../../../../ref/lang/auto/Class.List Records Widget.final.md>) into Items placeholder and create your custom content.
 
-    ![](<images/carousel-image-2.png>)
+    ![](<images/carousel-2-ss.png>)
 
 1. Repeat steps 4 and 5 for each of the Carousel items.
 
 1. From the Element tree, select the Carousel widget, and on the **Properties** tab, set the relevant (optional) properties, for example, navigation arrows and the number of items to display on different devices.
 
-    ![](images/carousel-image-11.png)  
+    ![](images/carousel-11-ss.png)  
 
 1. After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -7,7 +7,7 @@ summary: Advanced use cases for the Wizard UI Pattern.
 
 ## Layout and classes
 
-![](images/wizard-image-3.png?width=750)
+![](images/wizard-3-diag.png?width=750)
 
 ## CSS selectors
 
@@ -46,13 +46,13 @@ Use this example to create a three steps Wizard with continue and back buttons.
 
 1. Create a new Screen Action named WizardNavigation.
 
-    ![](images/wizard-image-4.png)
+    ![](images/wizard-4-ss.png)
 
 1. Create a mandatory boolean Input Parameter on this action named IsNext.
 
 1. Drag an Assign and set WizardStepIndex, to `If(IsNext, WizardStepIndex + 1, WizardStepIndex - 1)`.
 
-    ![](images/wizard-image-5.png)
+    ![](images/wizard-5-ss.png)
 
 1. Drag an AjaxRefresh to refresh your content container on the screen.
 
@@ -60,14 +60,14 @@ Use this example to create a three steps Wizard with continue and back buttons.
 
 1. Do the same for the Back button, but set the parameter to False.
     
-    ![](images/wizard-image-6.png)
+    ![](images/wizard-6-ss.png)
 
 1. In each WizardItem, add this If condition: `If(WizardStepIndex = 1, Entities.Step.Active, If(WizardStepIndex = 0, Entities.Step.Next, Entities.Step.Past))` to the Step parameter.
 
 1. Wrap the content containers in Ifs and set the condition to the respective step.
 
-    ![](images/wizard-image-7.png?width=750)  
-    ![](images/wizard-image-8.png?width=750)
+    ![](images/wizard-7-ss.png?width=750)  
+    ![](images/wizard-8-ss.png?width=750)
 
 ### Custom style for active step
 
@@ -75,45 +75,45 @@ To implement this, you can use either method described below.
 
 * Write the following CSS in the CSS editor and change the `yourcolor`.
 
-```css
-.wizard-item.active .wizard-item-icon {
-    border: 2px solid #fff;
-    background-color: yourcolor;
-    color: #fff;
-}
+    ```css
+    .wizard-item.active .wizard-item-icon {
+        border: 2px solid #fff;
+        background-color: yourcolor;
+        color: #fff;
+    }
 
-.wizard-item.active .wizard-item-icon::after {
-    background-color: transparent;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0 0 0 1px yourcolor;
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-```
+    .wizard-item.active .wizard-item-icon::after {
+        background-color: transparent;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 0 0 0 1px yourcolor;
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    ```
 
 * Use CSS variables like `var(--color-yourcolor)`.
 
 
-```css
-.wizard-item.active .wizard-item-icon {
-    border: 2px solid var(--color-neutral-0);
-    background-color: var(--color-yourcolor);
-    color: var(--color-neutral-0);
-}
+    ```css
+    .wizard-item.active .wizard-item-icon {
+        border: 2px solid var(--color-neutral-0);
+        background-color: var(--color-yourcolor);
+        color: var(--color-neutral-0);
+    }
 
-.wizard-item.active .wizard-item-icon::after {
-    background-color: transparent;
-    border-radius: 50%;
-    border: 2px solid var(--color-neutral-0);
-    box-shadow: 0 0 0 1px var(--color-yourcolor);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-```
+    .wizard-item.active .wizard-item-icon::after {
+        background-color: transparent;
+        border-radius: 50%;
+        border: 2px solid var(--color-neutral-0);
+        box-shadow: 0 0 0 1px var(--color-yourcolor);
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    ```
 
-![](images/wizard-image-9.png?width=750)
+    ![](images/wizard-9-ss.png?width=750)

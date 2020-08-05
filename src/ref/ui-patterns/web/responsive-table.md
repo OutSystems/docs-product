@@ -7,7 +7,7 @@ summary: Advanced use cases for the Responsive Table UI Pattern.
 
 ## Layout and classes
 
-![](<images/responsivetable-image-4.png>)
+![](<images/responsivetable-4-diag.png>)
 
 ## CSS selectors
 

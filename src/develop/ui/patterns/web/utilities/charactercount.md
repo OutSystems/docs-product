@@ -13,7 +13,7 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 You can use the Character Count UI Pattern to display the number of characters a user has entered or has remaining for an onscreen text area. 
 
-![](<images/charactercount-image-5.png>)
+![](<images/charactercount-5-ss.png>)
 
 **How to use the Character Count UI Pattern**
 
@@ -21,20 +21,20 @@ You can use the Character Count UI Pattern to display the number of characters a
 
     The Input widget is displayed.
 
-    ![](<images/charactercount-image-6.png>)
+    ![](<images/charactercount-6-ss.png>)
 
 1. From the Toolbox, drag the Input widget onto your application’s screen.
 
 1. On the **Properties** tab, enter a name for the Input widget, for example, CharacterCount.
 
-    ![](<images/charactercount-image-3.png>)
+    ![](<images/charactercount-3-ss.png>)
 
 1. From the **Main Flow** menu, right-click **CharacterCount**, and choose **Add Local Variable**.
  
 
 1. Set the variable's **Data Type** to **Text**.
 
-    ![](<images/charactercount-image-4.png>) -->
+    ![](<images/charactercount-4-ss.png>) -->
 
 **Prerequisites:** You have created an [Input widget](<../../../../../ref/lang/auto/Class.Input Widget.final.md>) called MyInput and created a Local Variable called MyInputVariable with its Data Type set to Text.
 
@@ -42,19 +42,19 @@ You can use the Character Count UI Pattern to display the number of characters a
 
     The Character Count widget is displayed.
 
-    ![](<images/charactercount-image-7.png>)
+    ![](<images/charactercount-7-ss.png>)
 
 1. From the Toolbox, drag the Character Count widget into the Main Content area of your application's screen.
 
-    ![](<images/charactercount-image-8.png>)
+    ![](<images/charactercount-8-ss.png>)
 
 1. On the **Properties** tab, from the **InputWidgetId** drop-down, select the Input widget Id you have already created (MyInput).
 
-    ![](<images/charactercount-image-9.png>)
+    ![](<images/charactercount-9-ss.png>)
 
 1. In the **Limit** property, enter the maximum number of characters allowed, for example, 180, and set the **IsDescending** property to True.
 
-    ![](<images/charactercount-image-10.png>)
+    ![](<images/charactercount-10-ss.png>)
 
     By setting the **Limit** property to 180, the user can enter up to 180 characters, and by setting the **IsDescending** property to True, the character count will go from 180 to 0.
 

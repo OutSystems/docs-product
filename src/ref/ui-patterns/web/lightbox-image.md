@@ -7,9 +7,9 @@ summary: Advanced use cases for the Light Box Image UI Pattern.
 
 ## Layout and classes
 
-![](<images/lightboximage-image-3.png>) 
+![](<images/lightboximage-3-diag.png>) 
 
-![](<images/lightboximage-image-4.png>)
+![](<images/lightboximage-4-diag.png>)
 
 ## Advanced use case
 
@@ -27,7 +27,7 @@ It is possible to change the opacity of Light Box Image overlay when it is open 
 }
 ```
 
-![](<images/lightboximage-image-5.png>)
+![](<images/lightboximage-5-ss.png>)
 
 ### Add rounded corners to images inside Light Box Image Pattern
 
@@ -40,5 +40,5 @@ To add rounded corners to images inside Light Box Image, add the following custo
 }
 ```
 
-![](<images/lightboximage-image-6.png>)
+![](<images/lightboximage-6-ss.png>)
     

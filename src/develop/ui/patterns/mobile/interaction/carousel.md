@@ -13,11 +13,11 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
   
      The Carousel widget is displayed.
 
-    ![](images/carousel-widget.png)
+    ![](images/carousel-5-ss.png)
   
 1. From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen. 
 
-    ![](images/carousel-image-widget.png)
+    ![](images/carousel-6-ss.png)
 
     By default, the Carousel widget contains a Carousel Items placeholder, a list list-group placeholder, and an Image widget.
 
@@ -25,19 +25,19 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
     In this example, we delete the list list-group and add 3 more Image widgets. You can also add a list of images. 
 
-     ![](images/carousel-image-2.png) 
+     ![](images/carousel-2-ss.png) 
 
 1. From the Element Tree, select the Image widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Carousel. 
 
     Note: In this example, the image property Type is set to **Local** image. You can also add [External and Binary Data](../../../image/display-image.md) images.   
 
-    ![](images/carousel-image-3.png)   
+    ![](images/carousel-3-ss.png)   
 
 1. Repeat step 4 for each of the images in the Carousel. 
 
 1. From the Element tree, select the Carousel widget, and on the **Properties** tab, set the relevant (optional) properties, for example, navigation arrows and dots.
 
-    ![](images/carousel-image-4.png)  
+    ![](images/carousel-4-ss.png)  
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -67,4 +67,4 @@ Avoid using the Carousel inside patterns with swipe events, such as the Tabs and
 
 See how the [Product Dashboard sample](https://silkui.outsystems.com/Samples_Mobile.aspx#Mobile_Content-Samples_ProductDashboard) uses the Carousel pattern:
 
-![](images/Sample_Product_Dashboard.png)
+![](images/carousel-7-ss.png)

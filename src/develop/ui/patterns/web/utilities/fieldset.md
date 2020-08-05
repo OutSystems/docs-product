@@ -13,7 +13,7 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 You can use the Fieldset UI Pattern to group and label related information, such as a users personal details, improving the overall look and layout of your application.
 
-![](<images/fieldset-image-1.png>)
+![](<images/fieldset-1-ss.png>)
 
 **How to use the Fieldset UI Pattern**
 
@@ -21,21 +21,21 @@ You can use the Fieldset UI Pattern to group and label related information, such
 
     The Fieldset widget is displayed.
 
-   ![](<images/fieldset-image-6.png>)
+   ![](<images/fieldset-6-ss.png>)
 
 1. From the Toolbox, drag the Fieldset widget into the Main Content area of your application's screen.
 
-   ![](<images/fieldset-image-7.png>)
+   ![](<images/fieldset-7-ss.png>)
 
 1. On the **Properties** tab, set the Title property.
 
     In the following example, we set the Title to `Basic Information`.
 
-    ![](<images/fieldset-image-5.png>)
+    ![](<images/fieldset-5-ss.png>)
 
 1. Add the relevant content to the placeholder, for example, text boxes and labels.
 
-    ![](<images/fieldset-image-8.png>)
+    ![](<images/fieldset-8-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -7,4 +7,4 @@ summary: Advanced use cases for the Character Count UI Pattern.
 
 ## Layout and classes
 
-![](<images/charactercount-image-2.png>)
+![](<images/charactercount-2-diag.png>)

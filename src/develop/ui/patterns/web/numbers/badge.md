@@ -13,7 +13,7 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 You can use the Badge UI Pattern to display numerical information as a notification. For example, the Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
-![](<images/badge-image-7.png>)
+![](<images/badge-7-ss.png>)
 
 **How to use the Badge UI Pattern**
 
@@ -25,21 +25,21 @@ The following example demonstrates how you can display the number of registered 
 
     The Badge widget is displayed.
 
-    ![](<images/badge-image-10.png>)
+    ![](<images/badge-10-ss.png>)
 
 1. From the Toolbox, drag the Badge widget into the Main Content area of your application's screen.
 
-    ![](<images/badge-image-11.png>)
+    ![](<images/badge-11-ss.png>)
 
 1. From the Element tree, create a Preparation action by right-clicking on your screen, and from the drop-down, select **Add Preparation**.
 
     This Preparation action executes logic that fetches the data before the screen is displayed.
 
-    ![](<images/badge-image-12.png>)
+    ![](<images/badge-12-ss.png>)
 
 1. Select the **Data** tab, and from the Entities tree, navigate to the **User** entity and drag it onto the Preparation action.
 
-    ![](<images/badge-image-13.png>)
+    ![](<images/badge-13-ss.png>)
 
     This creates an [aggregate](../../../../../ref/lang/auto/Class.Aggregate.final.md) that retrieves all of the users on your platform.
 
@@ -53,13 +53,13 @@ The following example demonstrates how you can display the number of registered 
 
     Note: You can also add the expression by navigating through the Expression Editor's **Scope** tree and double-clicking on the **Count** output parameter. However, because the expected Badge [data type](../../../../../ref/data/data-types/available-data-types.md) (Integer) is different to the Count data type (Long Integer), to ensure the expression is correct, you must add `LongIntegerToInteger` to the `Get.Users.Count` expression.
 
-   ![](<images/badge-image-14.png>)
+   ![](<images/badge-14-ss.png>)
 
    The **Number** property is now set to display the Count property of the Aggregate you added to the Preparation action, which gets the number of users on your platform and displays them in your Badge.
 
 1. On the **Properties** tab, you can also customize the Badge's look and feel by setting any of the optional properties, for example, the color, shape, and size. The following example displays a blue, small sized, circle badge.  
 
-    ![](<images/badge-image-15.png>)
+    ![](<images/badge-15-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -78,4 +78,4 @@ After following these steps and publishing the module, you can test the pattern 
 
 If the number on Badge Pattern is greater than 99, it is displayed as 99+.
 
-![](<images/badge-image-6.png>)
+![](<images/badge-6-ss.png>)

@@ -7,7 +7,7 @@ summary: Advanced use cases for the User Initials UI Pattern.
 
 ## Layout and classes
 
-![](<images/userinitials-image-2.png>)
+![](<images/userinitials-2-diag.png>)
 
 ## Advanced use case
 
@@ -19,7 +19,7 @@ summary: Advanced use cases for the User Initials UI Pattern.
 
 1. In the UserInititals, set the name parameter to the value of the name field from the database.
 
-    ![](<images/userinitials-image-3.png>)
+    ![](<images/userinitials-3-ss.png>)
 
 1. Change the pattern values.
 
@@ -29,12 +29,12 @@ summary: Advanced use cases for the User Initials UI Pattern.
 
 1. Create a custom class called "table-image-size".
 
-```css
-.table-image-size {
-    height: 100px;
-    width: 100px;
-}
-```
+    ```css
+    .table-image-size {
+        height: 100px;
+        width: 100px;
+    }
+    ```
 
 1. Drag the Users Entity into the preview.
 
@@ -42,18 +42,18 @@ summary: Advanced use cases for the User Initials UI Pattern.
 
 1. Drag an IF condition tool into the container and set the condition to `UserTable.List.Current.User.Is_Active`.
 
-    ![](<images/userinitials-image-5.png>)
+    ![](<images/userinitials-5-ss.png>)
 
 1. In the True branch, drag the UserInitials pattern and set the name parameter to the value of the name field from the database.
 
 1. To adapt the UserInitials to the size of container, set the ExtendedClass parameter to `full-width full-height`.
 
-    ![](<images/userinitials-image-6.png>)
+    ![](<images/userinitials-6-ss.png>)
 
 1. In the False branch, drag an image and set the Style Classes to  `border-radius-circle`.
 
-    ![](<images/userinitials-image-7.png>)
+    ![](<images/userinitials-7-ss.png>)
 
 1. Publish and test.
 
-    ![](<images/userinitials-image-8.png?width=750>)
+    ![](<images/userinitials-8-ss.png?width=750>)

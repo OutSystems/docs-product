@@ -1,8 +1,4 @@
 ## Pull request info
----
-summary: Fetching data from the database using Aggregates.
-tags: support-application_development; support-Database; support-webapps
----
 
 # Fetch and Display Data from the Database
 

@@ -54,7 +54,6 @@ Follow these steps to import your own data for use in Screen Templates.
 To reset the sample data:
 
 1. Access `http://<yourserver>/ServiceCenter/`
-
 1. Go to the **Factory** > **Modules** tab.
 1. Search for **OutSystemsSampleDataDB**.
 1. Go to the **Timers** tab in the module details.

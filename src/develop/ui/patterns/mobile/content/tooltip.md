@@ -37,7 +37,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Properties** |  **Description** |  
+| Properties | Description |
 |---|---|
 | Position ( Position Identifier): Mandatory | Set the tooltip's position. The predefined options are:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul><p>Examples <ul><li>_Entities.Position.Right_ - The tooltip is displayed to the right of the element.</li><li>_Entities.Position.Bottom_ - The tooltip is displayed underneath the element.</li></ul></p> |
 | IsVisible (Boolean): Optional | If True, the tooltip is visible when the page is first loaded (without the need for the initial trigger). If False, the tooltip is not visible. This is the default. |

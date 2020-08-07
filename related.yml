@@ -1266,6 +1266,12 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=21
+develop/ui/patterns/mobile/adaptive/displayondevice.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/DisplayOnDevice.aspx
+        - "OutSystems UI Pattern": 
+           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=32
 - develop/ui/patterns/mobile/adaptive/gallery.md:
     - ref/ui-patterns/mobile/gallery-mobile.md
     - external:
@@ -1348,6 +1354,12 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Animate.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=5
+- develop/ui/patterns/mobile/interaction/animatedlabel.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/AnimatedLabel.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=6
 - develop/ui/patterns/mobile/interaction/carousel.md:
     - ref/ui-patterns/mobile/carousel-mobile.md
     - external:
@@ -1361,7 +1373,13 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/DatePicker.aspx
         - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=31       
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=31      
+- develop/ui/patterns/mobile/interaction/inputwithicon.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/InputWithIcon.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=45 
 - develop/ui/patterns/mobile/interaction/lightboximage.md:
     - ref/ui-patterns/mobile/lightboximage.md
     - external:
@@ -1408,7 +1426,7 @@
 - develop/ui/patterns/mobile/numbers/badge.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/AlignCenter.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Badge.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7
 - develop/ui/patterns/mobile/numbers/counter.md:
@@ -1429,16 +1447,30 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/AlignCenter.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=4
-- develop/ui/patterns/mobile/utilities/touchevents.md:
-    - ref/ui-patterns/mobile/touchevents.md
+- develop/ui/patterns/mobile/utilities/buttonloading.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide":
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ButtonLoading.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=117
+- develop/ui/patterns/mobile/utilities/centercontent.md:
     - external:
         - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=78
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=18
+- develop/ui/patterns/mobile/utilities/margincontainer.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=50
 - develop/ui/patterns/mobile/utilities/swipeevents.md:
     - ref/ui-patterns/mobile/swipeevents.md
     - external:
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=70
+- develop/ui/patterns/mobile/utilities/touchevents.md:
+    - ref/ui-patterns/mobile/touchevents.md
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=78
 # Link to Training
 - extensibility-and-integration/connect-external-db.md:
     - external:

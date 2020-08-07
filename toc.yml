@@ -147,6 +147,7 @@
             - href: develop/ui/patterns/mobile/intro.md
             - topics:
                 - href: develop/ui/patterns/mobile/adaptive/columns.md
+                - href: develop/ui/patterns/mobile/adaptive/displayondevice.md
                 - href: develop/ui/patterns/mobile/adaptive/gallery.md
                 - href: develop/ui/patterns/mobile/adaptive/masterdetail.md
                 - href: develop/ui/patterns/mobile/content/accordion.md
@@ -161,8 +162,10 @@
                 - href: develop/ui/patterns/mobile/content/tooltip.md
                 - href: develop/ui/patterns/mobile/content/useravatar.md
                 - href: develop/ui/patterns/mobile/interaction/animate.md
+                - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
                 - href: develop/ui/patterns/mobile/interaction/carousel.md
                 - href: develop/ui/patterns/mobile/interaction/datepicker.md
+                - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
                 - href: develop/ui/patterns/mobile/interaction/lightboximage.md
                 - href: develop/ui/patterns/mobile/interaction/rangeslider.md
                 - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
@@ -174,6 +177,9 @@
                 - href: develop/ui/patterns/mobile/numbers/counter.md
                 - href: develop/ui/patterns/mobile/numbers/iconbadge.md
                 - href: develop/ui/patterns/mobile/utilities/aligncenter.md
+                - href: develop/ui/patterns/mobile/utilities/buttonloading.md
+                - href: develop/ui/patterns/mobile/utilities/centercontent.md
+                - href: develop/ui/patterns/mobile/utilities/margincontainer.md
                 - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                 - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md

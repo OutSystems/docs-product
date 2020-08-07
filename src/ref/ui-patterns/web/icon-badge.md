@@ -7,4 +7,4 @@ summary: Advanced use cases for the Icon Badge UI Pattern.
 
 ## Layout and classes
 
-![](<images/iconbadge-image-2.png?width=650>)
+![](<images/iconbadge-2-diag.png?width=650>)

@@ -23,21 +23,21 @@ The following example demonstrates how you can display the registered users on y
 
     The Responsive Table widget is displayed.
 
-    ![](<images/responsivetable-image-8.png>)
+    ![](<images/responsivetable-8-ss.png>)
 
 1. From the Toolbox, drag the Responsive Table widget into the Main Content area of your application's screen.
 
-    ![](<images/responsivetable-image-1.png>)
+    ![](<images/responsivetable-1-ss.png>)
 
 1. Select the **Data** tab, and from the Entities tree, navigate to the **User** entity and drag it into the Responsive Table placeholder.
 
-    ![](<images/responsivetable-image-10.png>)
+    ![](<images/responsivetable-10-ss.png>)
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
 
 1. On the **Properties** tab, set the **ResponseBehavior** property. In this example, the property is set so the table header stays fixed and the user can scroll through the rows.
 
-    ![](<images/responsivetable-image-6.png>)
+    ![](<images/responsivetable-6-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

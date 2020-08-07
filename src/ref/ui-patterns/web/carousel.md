@@ -7,7 +7,7 @@ summary: Advanced use cases for the Carousel UI Pattern.
 
 ## Layout and classes
 
-![](<images/carousel-image-3.png?width=600>)
+![](<images/carousel-3-diag.png?width=600>)
 
 ## Advanced
 
@@ -17,8 +17,8 @@ Here are some more advanced use-cases of the widget.
 
 To place the arrows outside the carousel, change the input parameters Padding and Margin. To have this behavior both parameters must be of the same value. Padding creates a space around the carousel viewport and the margin pushes the elements apart, so they are hidden inside the carousel.
 
-![](<images/carousel-image-4.png>)  
-![](<images/carousel-image-5.png>)
+![](<images/carousel-4-ss.png>)  
+![](<images/carousel-5-ss.png>)
 
 ### Customizing the dots style
 
@@ -34,7 +34,7 @@ It is possible to change the style of the dots on a Carousel with the custom CSS
 }
 ```
 
-![](<images/carousel-image-6.png>)
+![](<images/carousel-6-ss.png>)
 
 #### Example 2
 
@@ -46,10 +46,10 @@ It is possible to change the style of the dots on a Carousel with the custom CSS
 }
 ```
 
-![](<images/carousel-image-7.png>)
+![](<images/carousel-7-ss.png>)
 
 ## Notes
 
 Line Separator from ListRecords should be None.
 
-![](<images/carousel-image-8.png>)
+![](<images/carousel-8-ss.png>)

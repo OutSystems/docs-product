@@ -13,7 +13,7 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 You can use the User Initials UI Pattern to display a user’s initials or their image in a circular badge. 
 
-![](<images/userinitials-image-4.png>)
+![](<images/userinitials-4-ss.png>)
 
 **How to use the User Initials UI Pattern**
 
@@ -25,21 +25,21 @@ The following example demonstrates how you can display the initials of the regis
 
     The User Initials widget is displayed.
 
-    ![](<images/userinitials-image-11.png>)
+    ![](<images/userinitials-11-ss.png>)
 
 1. From the Toolbox, drag the User Initials widget into the Main Content area of your application's screen.
 
-     ![](<images/userinitials-image-12.png>)
+     ![](<images/userinitials-12-ss.png>)
 
 1. From the Element tree, create a Preparation action by right-clicking on your screen, and from the drop-down, select **Add Preparation**.
 
     This Preparation action executes logic that fetches the data before the screen is displayed.
 
-     ![](<images/userinitials-image-13.png>)
+     ![](<images/userinitials-13-ss.png>)
 
 1. Select the **Data** tab, and from the Entities tree, navigate to the **User** entity and drag it onto the Preparation action.
 
-    ![](<images/userinitials-image-14.png>)
+    ![](<images/userinitials-14-ss.png>)
 
     This creates an [aggregate](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Queries/Aggregate) that retrieves all the users on your platform.
 
@@ -53,13 +53,13 @@ The following example demonstrates how you can display the initials of the regis
 
     Note: You can also add the expression by navigating through the Expression Editor's **Scope** tree and double-clicking on the **Name** output parameter.
 
-    ![](<images/userinitials-image-15.png>)
+    ![](<images/userinitials-15-ss.png>)
 
     The **Name** property is now set to display the Name property of the Aggregate you added to the Preparation action, which gets the names of the registered users on your platform and displays them in the badge.
 
 1. On the **Properties** tab, you can also customize the badge's look and feel by setting any of the optional properties, for example, the color, shape, and size. The following example displays a blue, medium-sized, circle badge.  
 
-    ![](<images/userinitials-image-10.png>)  
+    ![](<images/userinitials-10-ss.png>)  
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -4,7 +4,7 @@ summary: Screen Templates contain sample data, which you can manage in a back-of
 
 # Sample data
 
-Sample Data consists of example records from domains related to several industries. It is used in screens created from Screen Templates.
+Sample Data consists of example records from domains related to several industries. Screen Templates use it to create instances of Screens.
 
 ## Referencing sample data in apps
 
@@ -22,42 +22,45 @@ Sample data is useful when you need to create a prototype, proof of concept, or 
 
 <div class="info" markdown="1">
 
-If there are no results when you search for OutSystemsSampleDataDB, that could mean that [OutSystems Sample Data](https://www.outsystems.com/forge/component-overview/4145/outsystems-sample-data) component, usually installed with Platform Server, is not present in the environment. Try installing the component manually.
+If there are no results when you search for OutSystemsSampleDataDB, that could mean that the [OutSystems Sample Data](https://www.outsystems.com/forge/component-overview/4145/outsystems-sample-data) component, usually installed with Platform Server, isn't present in the environment. Try installing the component manually.
 
 </div>
 
-
 ## Managing OutSystems Sample Data
 
-OutSystemsSampleDataDB provides a collection of public APIs that allows:
+OutSystemsSampleDataDB provides a collection of public APIs that lets you:
 
 * Export original data and Import your sample data
 * Reset the sample data
 
 ### View the Sample Data
 
-Sample Data entities are public, so it is possible to create a custom back-office.
+Sample Data entities are public, so you can create a custom back-office.
 
 ### Import your Sample Data
 
 Follow these steps to import your own data for use in Screen Templates.
 
-Assuming the required APIs are being referenced in a back-office application:
-1. Use the **DownloadOriginalData** action to save the original source files.
-2. Populate the source files in the OriginalData.zip with your own data.
-4. Use the **Import** action to upload the updated file and replace the current data.
+1. Reference **OutSystemsSampleDataDB**.
+   
+1. Use **DownloadOriginalData** from **Logic** > **Server Actions** > **OutSystemsSampleDataDB** > **Export** action to save the original source files in a zip archive.
+
+1. Edit the source files in the zip archive with your own data.
+
+1. Use the **Import** action to upload the updated file and replace the current data.
 
 ### Reset the Sample Data
 
 To reset the sample data:
-* Access `http://<yourserver>/ServiceCenter/`
-* Go to the Factory - Modules tab
-* Search for OutSystemsSampleDataDB
-* Go to the **Timers** tab in the module details
-* Select the **Reset_SampleData** timer and click Run Now
 
-**Note:** If any application extends the provided entities, the Foreign Key constraint won't let the timer run successfully.
-To overcome this, the deletion of such references (records) must be ensured.
+1. Access `http://<yourserver>/ServiceCenter/`
+
+1. Go to the **Factory** > **Modules** tab.
+1. Search for **OutSystemsSampleDataDB**.
+1. Go to the **Timers** tab in the module details.
+1. Select the **Reset_SampleData** timer and click **Run Now**.
+
+If any app extends the provided entities, the Foreign Key constraint won't let the timer run successfully. To overcome this, delete such references (records) first.
 
 ## Custom data model and records
 

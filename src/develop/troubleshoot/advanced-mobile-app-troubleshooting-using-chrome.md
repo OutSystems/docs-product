@@ -11,6 +11,12 @@ You can troubleshoot issues in your mobile app using [Google Chrome's Developer 
 
 There are a few tips that can streamline your troubleshooting process while using Chrome Developer Tools. Check the  [Troubleshooting tips](#tips) section for more information.
 
+<div class="warning" markdown="1">
+
+Parts of this document are out of date. The documentation team is working on an update. Thank you for your understanding.
+
+</div>
+
 ## Troubleshoot using Chrome
 
 You can troubleshoot mobile app issues in your Chrome desktop browser if you're not using native plugins or if all native plugins have fallbacks in place that allow your mobile app to work properly outside a real mobile device.

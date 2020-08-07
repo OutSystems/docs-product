@@ -29,7 +29,7 @@ You can use CSS to customize the look and feel of the dots.
 }
 ```
 
-![](images/Carousel_before_after_1.png)
+![](images/carousel-1-ss.png)
 
 **Example 2:**
    
@@ -50,7 +50,7 @@ You can use CSS to customize the look and feel of the dots.
 }
 ```
 
-![](images/Carousel_before_after_2.png)
+![](images/carousel-2-ss.png)
 
 ## Using the Carousel Pattern inside the Columns Pattern
 
@@ -71,7 +71,7 @@ To use the Carousel Pattern inside any Columns Pattern, you must fix the columns
 
 1. Drag an **Assign** node and set the Position (your local variable) to Index. 
 
-    ![](images/Carousel_current_position.png)
+    ![](images/carousel-3-ss.png)
 
 ## Creating an onboarding screen using the Carousel Pattern
 
@@ -89,7 +89,7 @@ A typical onboarding screen has a Carousel that takes the full height of the scr
 
     Here's what it would look like:
 
-    ![image.png](images/image.png) 
+    ![image.png](images/carousel-4-ss.png) 
 
 ### Displaying a Button when Viewing the Last Carousel Item
 
@@ -101,7 +101,7 @@ handler of the Carousel.
 1. In this action, we will verify if the current position is equal to the
 total number of elements in the OnBoarding’s Carousel.
 
-    ![](images/Carousel_onboarding.png)
+    ![](images/carousel-5-ss.png)
 
 1. The logic is: if **“Index = 2”** the local variable is assigned to _True_
 , otherwise it is assigned to _False_ .
@@ -132,7 +132,7 @@ action.
 
 1. See the image below with all possible actions.
 
-    ![](images/Carousel__on_click.png)
+    ![](images/carousel-6-ss.png)
 
 ## Creating a ListRemove in Carousel
 
@@ -145,7 +145,7 @@ actions.
 
 1. See the example in the image below.
 
-    ![](images/Carousel_list_remove.png)
+    ![](images/carousel-7-ss.png)
 
 ## Events
 
@@ -155,7 +155,7 @@ actions.
   
 ## Layout and Classes
 
-![](images/Carousel_ayout.png)
+![](images/carousel-8-diag.png)
 
 ## CSS Selectors
 

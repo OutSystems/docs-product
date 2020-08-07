@@ -7,7 +7,7 @@ summary: Advanced use cases for the Animate UI Pattern.
 
 ## Layout and classes
 
-![](<images/animate-image-3.png>)
+![](<images/animate-3-diag.png>)
 
 ## CSS selectors
 
@@ -41,15 +41,15 @@ It is possible to hide elements in the screen using an Animation.
 
 1. Set the method of the On Click function to Submit and in the Destination property, create a new Action.
 
-    ![](<images/animate-image-4.png>)
+    ![](<images/animate-4-ss.png>)
 
 1. In the Action created, drag the ToggleAnimate Action and set the Widget ID.
 
-    ![](<images/animate-image-5.png>)
+    ![](<images/animate-5-ss.png>)
 
 1. Publish and test.
 
-    ![](<images/animate-image-6.gif?width=600>)
+    ![](<images/animate-6-ss.gif?width=600>)
 
 ### Use animations on scroll
 
@@ -57,8 +57,8 @@ It is possible to load and animate the elements when they are not visible in the
 
 1. Drag the LoadOnVisible Pattern. Add the Animate Pattern with the desired content inside LoadOnVisible.
 
-    ![](<images/animate-image-7.png>)
+    ![](<images/animate-7-ss.png>)
 
 1. Publish and test.
 
-    ![](<images/animate-image-8.gif?width=600>)
+    ![](<images/animate-8-ss.gif?width=600>)

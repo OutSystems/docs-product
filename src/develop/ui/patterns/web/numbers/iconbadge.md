@@ -13,7 +13,7 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 You can use the Icon Badge UI Pattern to display numerical information as a notification. For example, the Icon Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
-![](<images/iconbadge-image-1.png>)
+![](<images/iconbadge-1-ss.png>)
 
 **How to use the Icon Badge UI Pattern**
 
@@ -25,21 +25,21 @@ The following example demonstrates how you can display the number of registered 
 
     The Icon Badge widget is displayed.
 
-    ![](<images/iconbadge-image-5.png>)
+    ![](<images/iconbadge-5-ss.png>)
 
 1. From the Toolbox, drag the Icon Badge widget into the Main Content area of your application's screen.
 
-    ![](<images/iconbadge-image-6.png>)
+    ![](<images/iconbadge-6-ss.png>)
 
 1. From the Element tree, create a Preparation action by right-clicking on your screen, and from the drop-down, select **Add Preparation**.
 
     This Preparation action executes logic that fetches the data before the screen is displayed.
 
-    ![](<images/iconbadge-image-7.png>)
+    ![](<images/iconbadge-7-ss.png>)
 
 1. Select the **Data** tab, and from the Entities tree, navigate to the **User** entity and drag it onto the Preparation action.
 
-    ![](<images/iconbadge-image-8.png>)
+    ![](<images/iconbadge-8-ss.png>)
 
     This creates an [aggregate](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Queries/Aggregate) that retrieves all the users on your platform.
 
@@ -53,13 +53,13 @@ The following example demonstrates how you can display the number of registered 
 
     Note: You can also add the expression by navigating through the Expression Editor's **Scope** tree and double-clicking on the **Count** output parameter. However, because the expected Badge [data type](../../../../../ref/data/data-types/available-data-types.md) (Integer) is different to the Count data type (Long Integer), to ensure the expression is correct, you must add `LongIntegerToInteger` to the `Get.Users.Count` expression.
 
-    ![](<images/iconbadge-image-9.png>)
+    ![](<images/iconbadge-9-ss.png>)
 
     The **Number** property is now set to display the Count property of the Aggregate you added to the Preparation action, which gets the number of users on your platform and displays them in your icon badge.
 
 1. On the **Properties** tab, you can also customize the Icon Badge's look and feel by setting any of the optional properties, for example, the color. The following example displays a blue icon badge.  
 
-    ![](<images/iconbadge-image-10.png>)
+    ![](<images/iconbadge-10-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

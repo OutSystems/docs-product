@@ -26,7 +26,7 @@ Is Default for new eSpaces
 Deployment Zone Address
 :   Address for all applications living in the deployment zone. When applications in other deployment zones need to refer applications living in this deployment zone and do not want to use the environment URL, they will use this address. 
 
-    This address may vary according to your network architecture. For example with only one front-end server, the "Deployment Zone Address" can be the machine's hostname. However, with multiple front-ends, the "Deployment Zone Address" should be the Fully Qualified Domain Name (FQDN) of the device responsible for the communication between these front-end servers, e.g. a load balancer.
+    This address may vary according to your network architecture. For example with only one front-end server, the "Deployment Zone Address" can be the machine's hostname. However, with multiple front-ends, the "Deployment Zone Address" should be the Fully Qualified Domain Name (FQDN) of the device responsible for the communication between these front-end servers, for example, a load balancer.
 
     This parameter value might also vary according to the "Hosting Technology" of the deployment zone. On container-based hosting technologies, the "Deployment Zone Address" can be the Fully Qualified Domain Name (FQDN) of your orchestrator, in cooperation with your container engine's ingress feature or some 3rd-party tool that knows how to forward requests to the appropriate containers.
 

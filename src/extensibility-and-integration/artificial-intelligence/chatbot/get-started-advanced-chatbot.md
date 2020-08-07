@@ -19,7 +19,7 @@ After you create a new webhook module, it contains a logic for an echo chatbot. 
 
 Open your webhook module and go to **Logic** > **Server Actions** > **Utilities** > **GetMessageResponse**. Examine the logic in this Server Action.
 
-![Sample response](images/webhook-echo-response-ss.png?width=600)
+![Sample response](images/webhook-echo-response-ss.png?width=500)
 
 ## Reply with an answer from a knowledge base
 
@@ -35,6 +35,10 @@ Note that you don't need the QnA Maker connector for a chatbot that only works a
 
 ## Detect what users want to do
 
-The chatbot webhook module is also a place where you can detect, bu using AI, what users want to do, and then act upon that. You first detect the intents and entities with Azure services, and then call your corresponding OutSystems logic. For example, in a sentence "Send me the report at 9 AM.", the intent is `SendReport` and entities `Recipient = CurrentUser` and `Time = 9AM`.
+The chatbot webhook module is also a place where you can detect what users want to do, and then act upon that. You first detect the intents and entities with Azure services, and then call your corresponding OutSystems logic. For example, in a sentence "Send me the report at 9 AM.", the intent is `SendReport` and entities `Recipient = CurrentUser` and `Time = 9AM`.
 
 You can detect intents with the LUIS service. For more information check [Use the Azure LUIS Connector in OutSystems apps](../luis-connector.md).
+
+## Analyze and process user input
+
+A handy feature of [AI Language Analysis](../text-analysis.md) is detecting the sentiment in user messages, registering the tone of the message to tell if a user is happy, neutral, or not so happy. AI Language Analysis can also translate, detect language, and spellcheck, amongst other things.

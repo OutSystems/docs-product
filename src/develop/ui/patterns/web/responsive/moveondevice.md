@@ -13,7 +13,7 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 You can use the Move on Device UI Pattern to define the placement of information depending on the device.
 
-![](<images/moveondevice-image-3.png>)
+![](<images/moveondevice-3-ss.png>)
 
 **How to use the Move on Device UI Pattern**
 
@@ -21,31 +21,31 @@ You can use the Move on Device UI Pattern to define the placement of information
 
     The Container widget is displayed.
 
-    ![](<images/moveondevice-image-6.png>)
+    ![](<images/moveondevice-6-ss.png>)
 
 1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen.
 
-    ![](<images/moveondevice-image-7.png>)
+    ![](<images/moveondevice-7-ss.png>)
 
 1. On the **Properties** tab, enter the container name.
 
-    ![](<images/moveondevice-image-9.png>)
+    ![](<images/moveondevice-9-ss.png>)
 
 1. Repeat steps 2 and 3 for as many containers as you need in your app. 
 
 1. From the Toolbox, drag the Move on Device widget into the Main Content area of your application's screen.
 
-    ![](<images/moveondevice-image-5.png>)
+    ![](<images/moveondevice-5-ss.png>)
 
 1. Add the required content to the Move on Device widget.
 
     In this example, we add an image by dragging the Image widget into the Move on Device widget and selecting an image from the sample OutSystems UI images.
 
-    ![](<images/moveondevice-image-8.png>)
+    ![](<images/moveondevice-8-ss.png>)
 
 1. To define where the image appears depending on the device, select the Move on Device widget, and on the **Properties** tab, set the PhoneWidgetId and TabletWidgetId properties.
 
-    ![](<images/moveondevice-image-2.png>)
+    ![](<images/moveondevice-2-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -13,11 +13,11 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
   
      The Carousel widget is displayed.
 
-    ![](images/carousel-widget.png)
+    ![](images/carousel-5-ss.png)
   
 1. From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen. 
 
-    ![](images/carousel-image-widget.png)
+    ![](images/carousel-6-ss.png)
 
     By default, the Carousel widget contains a Carousel Items placeholder, a list list-group placeholder, and an Image widget.
 
@@ -25,19 +25,19 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
     In this example, we delete the list list-group and add 3 more Image widgets. You can also add a list of images. 
 
-     ![](images/carousel-image-2.png) 
+     ![](images/carousel-2-ss.png) 
 
 1. From the Element Tree, select the Image widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Carousel. 
 
     Note: In this example, the image property Type is set to **Local** image. You can also add [External and Binary Data](../../../image/display-image.md) images.   
 
-    ![](images/carousel-image-3.png)   
+    ![](images/carousel-3-ss.png)   
 
 1. Repeat step 4 for each of the images in the Carousel. 
 
 1. From the Element tree, select the Carousel widget, and on the **Properties** tab, set the relevant (optional) properties, for example, navigation arrows and dots.
 
-    ![](images/carousel-image-4.png)  
+    ![](images/carousel-4-ss.png)  
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -49,7 +49,7 @@ After following these steps and publishing the module, you can test the pattern 
 |Dots(Boolean): Optional | Enable or disable navigational dots that represent items on the Carousel.<p>Examples<ul><li>_Blank_ - Navigational dots are displayed. This is the default value.</li><li>_True_ - Navigational dots are displayed.</li><li>_False_ - No navigational dots are displayed.</li></ul></p> |
 |Margin(Integer): Optional  |  Set the distance between each Carousel item. <p>Examples<ul><li>_Blank_ - No distance between each Carousel item. this is the default</li><li>_2_ - A distance of 2 pixels between each Carousel item.</li></ul></p>  | 
 |Padding(Integer): Optional |  Set the distance between the screen edges and the visible items on the screen. <p>Examples<ul><li>_Blank_ - No distance between the screen edges and the on screen item. This is the default value.</li><li>_5_ - A distance of 5 pixels between the screen edges and the on screen item.</li></ul></p> |
-|AutoPlay(Autoplay Identifier): Optional | Enable or disable the autoplay functionality which displays the items in the Carousel automatically. You can also set the autoplay velocity.The predefined autoplay values are: <p><ul><li>Disabled</li><li>Fast</li><li>Normal</li><li>Slow</li></ul></p><p>Examples<ul><li>_Blank_ - Autoplay is disabled.</li><li>_Entities.Autoplay.Fast_ - Images are displayed automatically at a fast speed.</li><li>_Entities.Autoplay.Disabled_ - Autoplay is disabled.</li></ul></p> |  
+|AutoPlay(Autoplay Identifier): Optional | Enable or disable the autoplay functionality which displays the items in the Carousel automatically. You can also set the autoplay velocity. The predefined autoplay values are: <p><ul><li>Disabled</li><li>Fast (2 seconds)</li><li>Normal (5 seconds)</li><li>Slow (8 seconds)</li></ul></p><p>Examples<ul><li>_Blank_ - Autoplay is disabled.</li><li>_Entities.Autoplay.Fast_ - Items are displayed with a time wait of 2 seconds between each item.</li><li>_Entities.Autoplay.Slow_ - Items are displayed with a time wait of 8 seconds between each item.</li></ul></p> |  
 |Scale(Boolean): Optional | Use this setting for the active Carousel items. If set to True, when navigating through the images, the size of the active item begins to decrease and the size of the next element that becomes the active item increases. The default value is False.  | 
 |Loop(Boolean): Optional  | If set to True, once the last item in the Carousel is reached, it loops around to the first item and begins displaying the all of the items again. If set to False, the slide of the Carousel items ends when the last item is reached. This is the default value.| 
 |Center(Boolean): Optional  | If set to True, the active item in the Carousel is displayed centered horizontally. If set to False, the active item is not centered horizontally. This is the default value.  |
@@ -67,4 +67,4 @@ Avoid using the Carousel inside patterns with swipe events, such as the Tabs and
 
 See how the [Product Dashboard sample](https://silkui.outsystems.com/Samples_Mobile.aspx#Mobile_Content-Samples_ProductDashboard) uses the Carousel pattern:
 
-![](images/Sample_Product_Dashboard.png)
+![](images/carousel-7-ss.png)

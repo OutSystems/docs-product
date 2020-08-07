@@ -4,7 +4,7 @@ summary: Screen Templates contain sample data, which you can manage in a back-of
 
 # Sample data
 
-Sample Data consists of example records from domains related to several industries. It is used in screens created from Screen Templates.
+Sample Data consists of example records from domains related to several industries. Screen Templates use it to create instances of Screens.
 
 ## Referencing sample data in apps
 
@@ -12,46 +12,56 @@ Sample data is useful when you need to create a prototype, proof of concept, or 
 
 1. Click the manage dependencies icon in the Service Studio toolbar, or press CTRL+Q. **Manage Dependencies** dialog opens.
 
-    ![Manage dependencies icon](images/manage-dependencies.png?width=400)
+    ![Manage dependencies icon](images/manage-dependencies-ss.png?width=500)
 
 2. Enter OutSystemsSampleDataDB to search the available producer modules. Select **OutSystemsSampleDataDB** in the results, and in the right pane select all **Entities** of the module.
 
-    ![Manage dependencies adding module](images/manage-dependencies-sample-data-module.png?width=400)
+    ![Manage dependencies adding module](images/manage-dependencies-sample-data-module-ss.png?width=600)
 
 3. Click **Apply** to confirm and close. The Entities are now available in the **Data** tab of Service Studio.
 
 <div class="info" markdown="1">
 
-If there are no results when you search for OutSystemsSampleDataDB, that could mean that [OutSystems Sample Data](https://www.outsystems.com/forge/component-overview/4145/outsystems-sample-data) component, usually installed with Platform Server, is not present in the environment. Try installing the component manually.
+If there are no results when you search for OutSystemsSampleDataDB, that could mean that the [OutSystems Sample Data](https://www.outsystems.com/forge/component-overview/4145/outsystems-sample-data) component, usually installed with Platform Server, isn't present in the environment. Try installing the component manually.
 
 </div>
 
-
 ## Managing OutSystems Sample Data
 
-Sample data is managed in the Sample Data Back-Office at `http://<yourserver>/OutSystemsSampleData/` where you can:
+The OutSystemsSampleDataDB module, that comes with the OutSystems UI component, provides a collection of public APIs that lets you:
 
-* View the sample data
-* Import your sample data
+* Export original data and Import your sample data
 * Reset the sample data
 
 ### View the Sample Data
 
-To view the sample data, access the Sample Data Back-Office and click the **Backoffice** tab.
+Sample Data entities are public, so you can create a custom back-office.
 
 ### Import your Sample Data
 
 Follow these steps to import your own data for use in Screen Templates.
 
-1. Access the Sample Data Back-Office.
-2. In the **Data Management** section, click **Download Data**.
-3. Populate the source files in the OriginalData.zip with your own data.
-4. In the **Data Management** section, click **Choose File** and select your edited zip file.
-5. Click **Upload**.
+1. Reference **OutSystemsSampleDataDB**.
+   
+1. Use the **DownloadOriginalData** Server Action from **Logic** > **Server Actions** > **OutSystemsSampleDataDB** > **Export** to save the original source files in a zip archive. You need to create a logic to download a file, by adding a **Download** element at the end of the flow.  
+
+    ![A flow to export sample data](images/sample-data-export-ss.png?width=400)
+
+1. Edit the source files in the zip archive with your own data.
+
+1. Use the **Import** Server Action from **Logic** > **Server Actions** > **OutSystemsSampleDataDB** > **Import** to upload the updated file and replace the current data. You need to create logic for the import, similar to the one you created for export.
 
 ### Reset the Sample Data
 
-To reset the sample data access the Sample Data Back-Office and in the **Data Management** section click **Reset Data**.
+To reset the sample data:
+
+1. Access `http://<yourserver>/ServiceCenter/`
+1. Go to the **Factory** > **Modules** tab.
+1. Search for **OutSystemsSampleDataDB**.
+1. Go to the **Timers** tab in the module details.
+1. Select the **Reset_SampleData** timer and click **Run Now**.
+
+If any app extends the provided entities, the Foreign Key constraint won't let the timer run successfully. To overcome this, delete such references (records) first.
 
 ## Custom data model and records
 

@@ -13,7 +13,7 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 You can use the Lightbox Image UI Pattern to open smaller thumbnail images in full screen mode. This UI pattern is often used when creating an image gallery, allowing you to navigate through each of the images and view them in more detail.  
 
-![](<images/lightboxweb-image-11.png>)
+![](<images/lightboximage-15-ss.png>)
 
 **How to use the Light Box Image UI Pattern**
 
@@ -21,11 +21,11 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
 
     The Light Box Image widget is displayed.
 
-    ![](<images/lightboximage-image-12.png>)
+    ![](<images/lightboximage-12-ss.png>)
 
 1. From the Toolbox, drag the Light Box Image widget into the Main Content area of your application's screen.
 
-    ![](<images/lightboximage-image-13.png>)
+    ![](<images/lightboximage-13-ss.png>)
 
 1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget. This is a thumbnail image.
 
@@ -33,17 +33,17 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
 
 1. Select or import the image you want to display. In this example, we use the sample OutSystems UI images.
 
-    ![](<images/lightboximage-image-9.png>)
+    ![](<images/lightboximage-9-ss.png>)
 
     Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../develop/ui/image/display-image.md).
 
 1. From the Widget tree, select the Light Box Image widget.
 
-    ![](<images/lightboximage-image-14.png>)
+    ![](<images/lightboximage-14-ss.png>)
 
 1. On the **Properties** tab, set the relevant Light Box Image properties, for example, the title of the image that is displayed, the group the image belongs to, and the size that the image will display in full screen mode.
 
-     ![](<images/lightboximage-image-10.png>)
+     ![](<images/lightboximage-10-ss.png>)
 
 1. Repeat steps 2-6 for each of the images you want in your Light Box Pattern.
 

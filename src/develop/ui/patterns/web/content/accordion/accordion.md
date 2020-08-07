@@ -15,7 +15,7 @@ You can use the Accordion UI Pattern to allow users expand and hide content when
 
     The Accordion widget is displayed.
 
-     ![](<images/accordion-image-4.png>)
+    ![](<images/accordion-image-4.png>)
 
 1. From the Toolbox, drag the Accordion widget into the Main Content area of your application's screen.
 
@@ -23,15 +23,13 @@ You can use the Accordion UI Pattern to allow users expand and hide content when
 
     Note: By default, the Accordion widget contains 3 Accordion Item widgets. You can add or delete Accordion Items as required.
 
-      ![](<images/accordion-image-1.png>)
+    ![](<images/accordion-image-1.png>)
 
 1. Add the relevant content to the Accordion Item placeholders, for example, FAQs. 
   
     ![](<images/accordion-image-3.png>)
 
 1. After following these steps and publishing the module, you can test the pattern in your app. 
-
-
 
 ## Demo
 

@@ -1,8 +1,13 @@
+---
+summary: The 1-Click Publish executes, in a single step, all the operations necessary to publish an extension in an OutSystems environment.
+tags: tool-integrationstudio, tool-servicecenter
+---
+
 # 1-Click Publish the Extension
 
-The 1-Click Publish executes, in a single step, all the operations necessary to publish an extension in a Platform Server.
+The 1-Click Publish executes, in a single step, all the operations necessary to publish an extension in an OutSystems environment.
 
-## 1-Click Publish Operations
+## 1-Click Publish operations
 
 The 1-Click Publish involves the following operations:
 
@@ -24,22 +29,38 @@ Upload
 Publish
 :   Publishes the extension in the Platform Server you are connected to. This operation makes the extension available in this Platform Server.
 
-## 1-Click Publishing
+## Perform the 1-Click Publish
 
-To execute the 1-Click Publish follow the steps below:
-  
-1. In the File menu or Toolbar, select 1-Click Publish ![](images/1-click-publish-icon.gif).
+To execute the 1-Click Publish do the following:
 
-    This operation requires that you be connect to the server where the extension will be deployed and hosted. If you are not yet connected, Integration Studio automatically prompts you to select a server, after which it establishes the connection. See how to [Select Server window](<../../../ref/integration-studio/menu/file/server-select-window.md>).
+1. Click **1-Click Publish** in the toolbar, or select **File** > **1-Click Publish**.
+
+    This operation requires that you connect to the server where you wish to deploy the extension. If you're not yet connected, Integration Studio automatically prompts you to select a server, after which it establishes the connection. See how to [Select Server window](<../../../ref/integration-studio/menu/file/server-select-window.md>).
 
 1. Check the [1-Click Publish Window](<../../../ref/integration-studio/menu/file/extension-1-cp-window.md>) to see how the process is going.
 
-## 1-Click Publish Access Rights
+## 1-Click Publish access rights
 
-To publish a new extension you must be granted the "Change & Deploy Applications" permission.
+To publish a new extension you must have the "Change & Deploy Applications" permission.
 
 <div class="info" markdown="1">
 
-If you don't have LifeTime installed in your infrastructure, User Management is done in Service Center. In this case, to publish a new extension you must be granted the "Allow Extensions" permission. The "Allow Foreign Entities" permission is also required if your extension exports entities.
+If you don't have LifeTime installed in your infrastructure, User Management is done in Service Center. In this case, to publish a new extension you must have the "Allow Extensions" permission. Additionally, if your extension exports entities, you must also have the "Allow Foreign Entities" permission.
 
 </div>
+
+## 1-Click Publish in Service Center
+
+It's also possible to use Service Center to publish your extension in an OutSystems environment.
+
+To execute the 1-Click Publish in Service Center, do the following:
+
+1. Make sure you have your extension saved locally in a XIF file. To save an extension file in Integration Studio, select **File** > **Save**.
+
+1. Open the Service Center management console of the environment where you want to publish your extension and navigate to **Factory** > **Extensions**.
+
+1. Click **Upload & Publish an Extension**, under the "Extensions" heading.
+
+    ![Upload and Publish Extension in Service Center](images/upload-publish-extension-sc.png)
+
+1. Choose your XIF file (or drag the XIF file and drop it in this upload area) and click **1-Click Publish**.

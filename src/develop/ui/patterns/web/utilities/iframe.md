@@ -4,16 +4,16 @@ summary: Iframe displays information from other apps on the screen in small prev
 ---
 
 # Iframe
-
+ 
 <div class="info" markdown="1">
 
 We’ve been working on this article. Please let us know how useful this new version is by voting.
 
 </div>
 
- You can use the Iframe UI Pattern to display information from other apps, on your screen, in bite-size previews. For more information about Iframes, see [HTML Iframes](https://www.w3schools.com/html/html_iframe.asp).
+You can use the Iframe UI Pattern to display information from other apps, on your screen, in bite-size previews. For more information about Iframes, see [HTML Iframes](https://www.w3schools.com/html/html_iframe.asp).
 
-![](<images/iframe-image-8.png>)
+![](<images/iframe-8.png>)
 
 **How to use the Iframe UI Pattern**
 
@@ -21,17 +21,17 @@ We’ve been working on this article. Please let us know how useful this new ver
 
     The Iframe widget is displayed.
 
-    ![](<images/iframe-image-6.png>)
+    ![](<images/iframe-6-ss.png>)
 
 1. From the Toolbox, drag the Iframe widget into the Main Content area of your application's screen.
 
-    ![](<images/iframe-image-7.png>)
+    ![](<images/iframe-7-ss.png>)
 
 1. On the **Properties** tab, set the relevant properties, for example, the source URL, its title, as well as its width and height. In this example, we use the Wikipedia Website.
 
     Note: The target destination must have the necessary security permissions that allow you to embed their website in your app.
 
-    ![](<images/iframe-image-5.png>)
+    ![](<images/iframe-5-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

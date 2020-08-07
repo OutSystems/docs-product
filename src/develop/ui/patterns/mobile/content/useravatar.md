@@ -1,11 +1,11 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: User Avatar display user information in a circular badge.
+summary: User Avatar displays user information in a circular badge.
 ---
 
 # User Avatar
 
-You can use the User Avatar UI Pattern to display a user’s initials or their image in a circular badge. 
+You can use the User Avatar UI Pattern to display a user's initials or their image in a circular badge.
 
 ![](<images/useravatar-4-ss.png>)
 
@@ -53,7 +53,7 @@ The following example demonstrates how you can display the initials of the regis
 
 1. On the **Properties** tab, you can also customize User Avatar's look and feel by setting any of the optional properties, for example, the color, shape, and size. The following example displays a blue, medium-sized, circle badge.  
 
-    ![](<images/useravatar-8-ss.png>)  
+    ![](<images/useravatar-8-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

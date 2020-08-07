@@ -21,11 +21,11 @@ You can use the Fieldset UI Pattern to group and label related information, such
 
     The Fieldset widget is displayed.
 
-   ![](<images/fieldset-6-ss.png>)
+    ![](<images/fieldset-6-ss.png>)
 
 1. From the Toolbox, drag the Fieldset widget into the Main Content area of your application's screen.
 
-   ![](<images/fieldset-7-ss.png>)
+    ![](<images/fieldset-7-ss.png>)
 
 1. On the **Properties** tab, set the Title property.
 

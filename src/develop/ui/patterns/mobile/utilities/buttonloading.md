@@ -19,10 +19,6 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
 
 1. From the Toolbox, drag the Margin Button Loading widget into the Main Content area of your application's screen.
     
-    ![](<images/buttonloading-2-ss.png>)
- 
-
-
 After following these steps and publishing the module, you can test the pattern in your app. 
 
 

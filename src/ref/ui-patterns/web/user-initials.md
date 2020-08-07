@@ -29,12 +29,10 @@ summary: Advanced use cases for the User Initials UI Pattern.
 
 1. Create a custom class called "table-image-size".
 
-    ```css
-    .table-image-size {
-        height: 100px;
-        width: 100px;
-    }
-    ```
+        .table-image-size {
+            height: 100px;
+            width: 100px;
+        }
 
 1. Drag the Users Entity into the preview.
 

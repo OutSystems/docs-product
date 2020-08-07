@@ -12,11 +12,11 @@ Sample data is useful when you need to create a prototype, proof of concept, or 
 
 1. Click the manage dependencies icon in the Service Studio toolbar, or press CTRL+Q. **Manage Dependencies** dialog opens.
 
-    ![Manage dependencies icon](images/manage-dependencies.png?width=400)
+    ![Manage dependencies icon](images/manage-dependencies-ss.png?width=500)
 
 2. Enter OutSystemsSampleDataDB to search the available producer modules. Select **OutSystemsSampleDataDB** in the results, and in the right pane select all **Entities** of the module.
 
-    ![Manage dependencies adding module](images/manage-dependencies-sample-data-module.png?width=400)
+    ![Manage dependencies adding module](images/manage-dependencies-sample-data-module-ss.png?width=600)
 
 3. Click **Apply** to confirm and close. The Entities are now available in the **Data** tab of Service Studio.
 
@@ -28,7 +28,7 @@ If there are no results when you search for OutSystemsSampleDataDB, that could m
 
 ## Managing OutSystems Sample Data
 
-OutSystemsSampleDataDB provides a collection of public APIs that lets you:
+The OutSystemsSampleDataDB module, that comes with the OutSystems UI component, provides a collection of public APIs that lets you:
 
 * Export original data and Import your sample data
 * Reset the sample data
@@ -43,11 +43,13 @@ Follow these steps to import your own data for use in Screen Templates.
 
 1. Reference **OutSystemsSampleDataDB**.
    
-1. Use **DownloadOriginalData** from **Logic** > **Server Actions** > **OutSystemsSampleDataDB** > **Export** action to save the original source files in a zip archive.
+1. Use the **DownloadOriginalData** Server Action from **Logic** > **Server Actions** > **OutSystemsSampleDataDB** > **Export** to save the original source files in a zip archive. You need to create a logic to download a file, by adding a **Download** element at the end of the flow.  
+
+    ![A flow to export sample data](images/sample-data-export-ss.png?width=400)
 
 1. Edit the source files in the zip archive with your own data.
 
-1. Use the **Import** action to upload the updated file and replace the current data.
+1. Use the **Import** Server Action from **Logic** > **Server Actions** > **OutSystemsSampleDataDB** > **Import** to upload the updated file and replace the current data. You need to create logic for the import, similar to the one you created for export.
 
 ### Reset the Sample Data
 

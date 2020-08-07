@@ -75,45 +75,40 @@ To implement this, you can use either method described below.
 
 * Write the following CSS in the CSS editor and change the `yourcolor`.
 
-    ```css
-    .wizard-item.active .wizard-item-icon {
-        border: 2px solid #fff;
-        background-color: yourcolor;
-        color: #fff;
-    }
+        .wizard-item.active .wizard-item-icon {
+            border: 2px solid #fff;
+            background-color: yourcolor;
+            color: #fff;
+        }
 
-    .wizard-item.active .wizard-item-icon::after {
-        background-color: transparent;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        box-shadow: 0 0 0 1px yourcolor;
-        content: '';
-        height: 100%;
-        position: absolute;
-        width: 100%;
-    }
-    ```
+        .wizard-item.active .wizard-item-icon::after {
+            background-color: transparent;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 1px yourcolor;
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
 
 * Use CSS variables like `var(--color-yourcolor)`.
 
+        .wizard-item.active .wizard-item-icon {
+            border: 2px solid var(--color-neutral-0);
+            background-color: var(--color-yourcolor);
+            color: var(--color-neutral-0);
+        }
 
-    ```css
-    .wizard-item.active .wizard-item-icon {
-        border: 2px solid var(--color-neutral-0);
-        background-color: var(--color-yourcolor);
-        color: var(--color-neutral-0);
-    }
-
-    .wizard-item.active .wizard-item-icon::after {
-        background-color: transparent;
-        border-radius: 50%;
-        border: 2px solid var(--color-neutral-0);
-        box-shadow: 0 0 0 1px var(--color-yourcolor);
-        content: '';
-        height: 100%;
-        position: absolute;
-        width: 100%;
-    }
-    ```
+        .wizard-item.active .wizard-item-icon::after {
+            background-color: transparent;
+            border-radius: 50%;
+            border: 2px solid var(--color-neutral-0);
+            box-shadow: 0 0 0 1px var(--color-yourcolor);
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
 
     ![](images/wizard-9-ss.png?width=750)

@@ -12,4 +12,4 @@ The `Concurrent Publishing` error is issued in the following situation:
 
     Wait a few moments and try the operation again.
     
-    If the issue still persists after a while, you can [restart the OutSystems Services](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Restart_Services_on_OutSystems_PaaS) on LifeTime in order to reset a service that got stuck during the last publish.
+If the issue still persists after a while, try [restarting the OutSystems Services](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Restart_Services_on_OutSystems_PaaS) in LifeTime. This resets the service that got stuck during a publishing step.

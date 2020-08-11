@@ -179,7 +179,7 @@ No installation is needed.</p>
 <td data-th="Web" style="border:none;background:#fff;text-align:center;">
 <p> </p>
 <p>![](images/mobile-vs-web-distribution-web.png?width=264)</p>
-<p>Share the app link of the app with users.</p>
+<p>Share the app link with users.</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;background:#fff;text-align:center;vertical-align:middle;"><strong>Distribution</strong></td>

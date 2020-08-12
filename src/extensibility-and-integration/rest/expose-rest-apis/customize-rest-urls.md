@@ -82,3 +82,5 @@ Default Endpoint  |  URL Path  |  Customized Endpoint
     You could also set the custom URL to `/Contacts/{Id}/Addresses`, without including the "AddressId" input parameter in the custom URL. In this case, to call the method including a value for the "AddressId" you would include this parameter at the end of the URL as part of the query string:
 
     `GET /PhoneAPI/rest/v1/Contacts/5/Addresses?AddressId=10`
+    
+* Due to a limitation in .NET stack, the last part of the URL (i.e. the part after the last '/' character) cannot contain a '.' character, otherwise method calls will not work.

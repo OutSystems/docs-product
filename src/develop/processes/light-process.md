@@ -45,6 +45,11 @@ To enable light process execution for your module, do the following:
 
     ![](images/light-process-3.png)
 
+<div class="info" markdown="1">
+
+Even though a process is enabled for light process execution, only a trigger by a database event will allow the execution as a light process. The manually launch of the process  will result in the execution as a regular process.
+
+</div>
 
 <div class="info" markdown="1">
 

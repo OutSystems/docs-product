@@ -4,6 +4,7 @@ summary: Use watches to examine module elements while debugging threads in your 
 
 # Watches
 
+For the option "Add To Debug Watches" to become available, first execute the module in Debug mode. After that, right click on the element of the module or in other module and the option will be available in the Watch tab.
 Watches allow you to examine module elements in Service Studio while debugging your module. These elements are always displayed in the Watches Tab, regardless of being in or out of scope of the element being debugged. This behavior contrasts with the rest of the [scope tabs](<debugger-ui-reference.md#scope-tabs-area>), where the displayed content depends on the current scope.
 
 Using watches you can inspect:

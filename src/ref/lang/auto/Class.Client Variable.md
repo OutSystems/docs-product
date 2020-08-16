@@ -7,6 +7,17 @@ helpids: 30206
 
 Holds data that is persisted client-side and can be used to save information during the end user interaction.  
 
+Create a Client Variables in Data tab
+
+Client Variables shall be bound to a widget to allow changing its value, for example, an input widget (set the input Variable as Client.MovieSearchKeyword, for example)
+
+When the input value is changed by the user, its value is stored in the browser's cache with the name of the Client Variable (Client.MovieSearchKeyword, for example)
+
+Later, if the user didn't close the session, when the user comes back to the page/session, the Client Variable is restored.
+
+If the Client Variable is used in an aggregate filter, lets say an aggregate called GetMovies that fetches Movies from an Entity Movie, the filter 
+Movie.Title like "%" +Client.MovieSearchKeyword+ "%" will search only the Titles accordingly to the query shown and retrieved from the browser's cache. 
+
 ## Properties
 
 <table markdown="1">

@@ -157,6 +157,8 @@
                 - href: develop/ui/patterns/mobile/content/cardbackground.md
                 - href: develop/ui/patterns/mobile/content/cardsectioned.md
                 - href: develop/ui/patterns/mobile/content/flipcontent.md
+                - href: develop/ui/patterns/mobile/content/floatingcontent.md
+                - href: develop/ui/patterns/mobile/content/listitemcontent.md
                 - href: develop/ui/patterns/mobile/content/section.md
                 - href: develop/ui/patterns/mobile/content/tag.md
                 - href: develop/ui/patterns/mobile/content/tooltip.md
@@ -165,14 +167,25 @@
                 - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
                 - href: develop/ui/patterns/mobile/interaction/carousel.md
                 - href: develop/ui/patterns/mobile/interaction/datepicker.md
+                - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
+                - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
+                - href: develop/ui/patterns/mobile/interaction/floatingactions.md
+                - href: develop/ui/patterns/mobile/interaction/horizontalscroll.md
                 - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
                 - href: develop/ui/patterns/mobile/interaction/lightboximage.md
+                - href: develop/ui/patterns/mobile/interaction/notification.md
                 - href: develop/ui/patterns/mobile/interaction/rangeslider.md
                 - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
+                - href: develop/ui/patterns/mobile/interaction/search.md
                 - href: develop/ui/patterns/mobile/interaction/sidebar.md
                 - href: develop/ui/patterns/mobile/interaction/stackedcards.md
+                - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
                 - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
+                - href: develop/ui/patterns/mobile/navigation/pagination.md
+                - href: develop/ui/patterns/mobile/navigation/sectionindex.md
+                - href: develop/ui/patterns/mobile/navigation/submenu.md
                 - href: develop/ui/patterns/mobile/navigation/tabs.md
+                - href: develop/ui/patterns/mobile/navigation/timelineitem.md
                 - href: develop/ui/patterns/mobile/numbers/badge.md
                 - href: develop/ui/patterns/mobile/numbers/counter.md
                 - href: develop/ui/patterns/mobile/numbers/iconbadge.md

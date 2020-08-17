@@ -121,7 +121,7 @@ Ensure that usernames and passwords are stored with the correct casing.
 
 ### 6. Run Configuration Tool and install Service Center
 
-For SQL Server and Azure SQL:
+For SQL Server and Azure SQL Database:
 
 ```
 <platform_path>\ConfigurationTool.com /SetupInstall <platform_db_admin_username> <platform_db_admin_password> [<logging_db_admin_username> <logging_db_admin_password>]
@@ -294,7 +294,7 @@ Copy the following files from the **controller** machine to the **front-end** ma
 
 ### 3. Run Configuration Tool
 
-For SQL Server and Azure SQL:
+For SQL Server and Azure SQL Database:
 
 ```
 <platform_path>\ConfigurationTool.com /SetupInstall <platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>

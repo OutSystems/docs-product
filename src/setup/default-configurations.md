@@ -62,9 +62,9 @@ The SQL Server database must comply with the following requirements:
 
 * The collation of the database catalog must be Case Insensitive and should also be Accent Insensitive.
 
-### Azure SQL
+### Azure SQL Database
 
-The Azure SQL database and catalog must comply with the following collation requirements:
+The Azure SQL Database catalog and database must comply with the following collation requirements:
 
 * The database instance must be Case Insensitive.
 

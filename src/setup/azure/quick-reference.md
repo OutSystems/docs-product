@@ -41,7 +41,7 @@ Check the [official Azure documentation](<https://docs.microsoft.com/en-us/azure
 
 For security reasons, the deployed virtual machines have remote desktop access disabled. Check how to [enable remote desktop access for a virtual machine](additional-configurations.md#enable-remote-desktop-for-a-virtual-machine "OutSystems on Microsoft Azure - Additional Configurations").
 
-### Azure SQL Servers and Databases
+### Azure SQL Database servers and databases
 
 OutSystems on Microsoft Azure solution template uses Azure SQL Database service. Each environment contains one **SQL server** and three **SQL databases** \- the Platform/Applications database, the Logging database, and the Sessions database.
 

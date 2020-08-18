@@ -1266,7 +1266,7 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=21
-develop/ui/patterns/mobile/adaptive/displayondevice.md:
+- develop/ui/patterns/mobile/adaptive/displayondevice.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/DisplayOnDevice.aspx

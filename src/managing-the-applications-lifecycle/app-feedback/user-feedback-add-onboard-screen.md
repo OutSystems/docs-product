@@ -3,7 +3,7 @@ summary: If your existing mobile applications were based on a version of Silk UI
 tags: runtime-mobile
 ---
 
-# Update Your Mobile App to Display App Feedback Instructions
+# Update your mobile app to show the App Feedback instructions
 
 If you are using the latest version of [Silk UI Framework](https://success.outsystems.com/Documentation/SILK_UI_Framework), your newly created mobile apps based on Silk UI Mobile templates will include a Block in the HomeScreen containing the instructions to access App Feedback. If App Feedback is enabled for the app, the users accessing the app for the first time will see this screen:  
 

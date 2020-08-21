@@ -65,6 +65,11 @@
 - develop/logic/emails.md:
     - extensibility-and-integration/configure-send-emails.md
 
+# Styles Editor
+- develop/ui/look-feel/styles-editor.md:
+    - develop/ui/look-feel/css.md
+    - develop/ui/look-feel/themes.md
+
 # ------- Web Interfaces -------
 
 #   Adding Data and Logic

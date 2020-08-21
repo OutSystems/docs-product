@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Submenu is used to create a menu contained within another menu.
 ---
 
-# Section Index
+# Submenu
 
 You can use the Submenu UI Pattern to create a menu that is contained within another menu.
 

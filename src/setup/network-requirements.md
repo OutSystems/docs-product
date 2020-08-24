@@ -44,7 +44,7 @@ The table below details the ports that need to be accessible in each server of a
 |Development Tools|Front-End|80|TCP|Deploy applications to the environment|
 |Development Tools|Front-End|443|TCP|Deploy applications to the environment|
 |Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
-|Front-End|Controller|5672|TCP|Cache Invalidation Service connection|
+|Front-End|Controller (by default)<br/>— Depends on where the Cache Invalidation Service/RabbitMQ is installed.|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
 |Front-End|SQL Server / Oracle|1433 / 1521|TCP|Database connection|
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service connection|

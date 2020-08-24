@@ -1326,6 +1326,14 @@ develop/ui/patterns/mobile/adaptive/displayondevice.md:
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/FlipContent.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=37
+- develop/ui/patterns/mobile/content/floatingcontent.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=39
+- develop/ui/patterns/mobile/content/listitemcontent.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=49
 - develop/ui/patterns/mobile/content/section.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1373,7 +1381,25 @@ develop/ui/patterns/mobile/adaptive/displayondevice.md:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/DatePicker.aspx
         - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=31      
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=31
+- develop/ui/patterns/mobile/interaction/dropdownsearch.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=34
+- develop/ui/patterns/mobile/interaction/dropdowntags.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=35  
+- develop/ui/patterns/mobile/interaction/floatingactions.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FloatingActions.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=38 
+- develop/ui/patterns/mobile/interaction/horizontalscroll.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=42      
 - develop/ui/patterns/mobile/interaction/inputwithicon.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1387,6 +1413,10 @@ develop/ui/patterns/mobile/adaptive/displayondevice.md:
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightBoxImage.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46
+- develop/ui/patterns/mobile/interaction/notification.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=53
 - develop/ui/patterns/mobile/interaction/rangeslider.md:
     - ref/ui-patterns/mobile/rangeslider.md
     - external:
@@ -1401,6 +1431,10 @@ develop/ui/patterns/mobile/adaptive/displayondevice.md:
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSliderInterval.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=61
+- develop/ui/patterns/mobile/interaction/search.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=62
 - develop/ui/patterns/mobile/interaction/sidebar.md:
     - external:
        - "OutSystems UI Pattern":  
@@ -1410,19 +1444,41 @@ develop/ui/patterns/mobile/adaptive/displayondevice.md:
     - external:
        - "OutSystems UI Pattern":  
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
+- develop/ui/patterns/mobile/navigation/bottombaritem.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=9 
 - develop/ui/patterns/mobile/navigation/breadcrumbs.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Breadcrumbs.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10 
+- develop/ui/patterns/mobile/navigation/pagination.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=54 
+- develop/ui/patterns/mobile/navigation/sectionindex.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/SectionIndex.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=65 
+- develop/ui/patterns/mobile/navigation/submenu.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=69
 - develop/ui/patterns/mobile/navigation/tabs.md:
     - ref/ui-patterns/mobile/tabs-mobile.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
         - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73                  
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73 
+- develop/ui/patterns/mobile/navigation/timelineitem.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=76                 
 - develop/ui/patterns/mobile/numbers/badge.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1441,6 +1497,16 @@ develop/ui/patterns/mobile/adaptive/displayondevice.md:
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
+- develop/ui/patterns/mobile/numbers/progresscircle.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=58
+- develop/ui/patterns/mobile/numbers/progresscirclefraction.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=59
 - develop/ui/patterns/mobile/utilities/aligncenter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

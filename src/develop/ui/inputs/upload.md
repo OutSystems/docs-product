@@ -5,17 +5,31 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 
 # Enable End Users to Upload Files
 
-Use the Upload widget to add files — such as photos — to your application.
+Use the Upload widget to add files, such as photos to your application.
 
-## In Reactive Web and Mobile
+## Reactive Web and Mobile
 
 To upload a file in Reactive Web and Mobile apps:
 
-1. Drag the **Upload** widget from the Widgets toolbar to the screen.
+1. In Service Studio, in the Toolbox, search for `Upload`.
 
-1. On the screen, create a local variable of Binary Data type to hold the file content. 
+    The Upload widget is displayed. 
 
-1. Set the **File Content** property of the Upload widget to the local variable.
+    ![Upload widget](images/upload-1-ss.png)
+
+1. Drag the Upload widget into the Main Content area of your screen. 
+    
+    ![Drag widget onto screen](images/upload-2-ss.png)
+
+    By default, the Upload widget contains an icon and text placeholder.
+
+1. To hold the file content, create a local variable by right-clicking on your screen name and selecting **Add Local Variable**. Enter a name for the variable and set the data type to binary data.
+
+    ![Add local variable](images/upload-3-ss.png)
+
+1. Select the Upload widget, and on the **Properties** tab, set the **File Content** property to the local variable you just created.
+
+    ![Set File Content variable](images/upload-4-ss.png)
 
     ![](images/upload-mobile.png?width=750)
 
@@ -24,13 +38,19 @@ To upload a file in Reactive Web and Mobile apps:
     * Change the Server Action to accept the variable in the File Content property as an input parameter and save it. 
     * In the Client Action, add the variable as an argument to the Server Action.
 
-## In Traditional Web
+## Traditional Web
 
 To upload a file in a Traditional Web app:
 
-1. Drag the Upload widget from the Widgets toolbar to your screen. 
+1. In Service Studio, in the Toolbox, search for `Upload`.
 
-    ![](images/upload-web.png?width=750)
+    The Upload widget is displayed. 
+
+    ![Upload widget](images/uploadweb-1-ss.png)
+
+1. Drag the Upload widget into the Main Content area of your screen. 
+    
+    ![Drag widget onto screen](images/uploadweb-2-ss.png)
 
 1. Add a Button to the screen that executes a Screen Action to save the file and make sure its Method property is set to Submit.
 

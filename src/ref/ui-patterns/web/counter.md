@@ -7,7 +7,7 @@ summary: Advanced use cases for the Counter UI Pattern.
 
 ## Layout and classes
 
-![](<images/counter-image-2.png>)
+![](<images/counter-2-diag.png>)
 
 ## CSS selectors
 
@@ -23,7 +23,7 @@ summary: Advanced use cases for the Counter UI Pattern.
 
 1. Set the Orientation to `Vertical`, Height to `200` and ExtendedClass property to `background-blue shadow-xl`.
 
-    ![](<images/counter-image-3.png>)
+    ![](<images/counter-3-ss.png>)
 
 1. Drag a container into Counter placeholder and type '26'.
 
@@ -35,8 +35,8 @@ summary: Advanced use cases for the Counter UI Pattern.
 
 1. Drag an Icon Widget into the container and set the Name property to `Entities.IconName.check` and Size to `Entities.IconSize.Size_3x`.
     
-    ![](<images/counter-image-4.png>)
+    ![](<images/counter-4-ss.png>)
 
 1. Publish and test.
     
-    ![](<images/counter-image-5.png>)
+    ![](<images/counter-5-ss.png>)

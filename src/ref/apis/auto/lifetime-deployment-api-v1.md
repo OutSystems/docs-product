@@ -48,12 +48,12 @@ Returns a list of applications that exist in the infrastructure.
 
 IncludeModules
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the modules are also returned. The default value is false.
 
 IncludeEnvStatus
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the application status per environment is also returned. The default value is false.
 
 *Outputs*
@@ -93,12 +93,12 @@ ApplicationKey
 
 IncludeModules
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the modules details are also retrieved. The default value is false.
 
 IncludeEnvStatus
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the application status per environment is also returned. The default value is false.
 
 *Outputs*
@@ -139,7 +139,7 @@ ApplicationKey
 
 MaximumVersionsToReturn
 :   Type: optional, Integer.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     The maximum number of versions to return. The default value is 5.
 
 *Outputs*
@@ -220,12 +220,12 @@ Returns a list of deployments ordered by creation date, from newest to oldest.
 
 MinDate
 :   Type: optional, Date.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     The minimum creation date of the deployments to return. The default value is 1 week before the current date.
 
 MaxDate
 :   Type: optional, Date.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     The maximum creation date of the deployments to return. The default value is the current date.
 
 *Outputs*
@@ -604,12 +604,12 @@ EnvironmentKey
 
 IncludeModules
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the modules details are also retrieved. The default value is false.
 
 IncludeEnvStatus
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the applications’ status information in the environment is included in the result. The default value is false.
 
 *Outputs*
@@ -659,12 +659,12 @@ ApplicationKey
 
 IncludeEnvStatus
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the applications’ status information in the environment is included in the result. The default value is false.
 
 IncludeModules
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the modules details are also retrieved. The default value is false.
 
 *Outputs*
@@ -710,7 +710,7 @@ ApplicationKey
 
 Type
 :   Type: optional, Text.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     The type of binary file to return, when applicable. [oap | apk | ipa]
 
 *Outputs*
@@ -824,7 +824,7 @@ Returns a list of modules that exist in the infrastructure.
 
 IncludeEnvStatus
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the module status per environment is also returned. The default value is false.
 
 *Outputs*
@@ -860,7 +860,7 @@ ModuleKey
 
 IncludeEnvStatus
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     When set to true, the module status per environment is also returned. The default value is false.
 
 *Outputs*
@@ -898,17 +898,17 @@ ModuleKey
 
 IncludePublicElements
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     Boolean to indicate if public elements should be returned. Default is false.
 
 IncludeConsumedElements
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     Boolean to indicate if consumed elements should be returned. Default is false.
 
 MaximumVersionsToReturn
 :   Type: optional, Integer.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     Maximum number of versions to return. Default is 5.
 
 *Outputs*
@@ -954,12 +954,12 @@ ModuleVersionKey
 
 IncludePublicElements
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     Boolean to indicate if public elements should be returned. Default is false.
 
 IncludeConsumedElements
 :   Type: optional, Boolean.  
-    Located in: URL.  
+    Located in: URL (query parameter).  
     Boolean to indicate if consumed elements should be returned. Default is false.
 
 *Outputs*

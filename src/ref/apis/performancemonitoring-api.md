@@ -284,6 +284,8 @@ TET | Total Extension Time | The total time spent, in milliseconds, calling acti
 TEE | Total Extension Executions | The total number of calls to actions provided by extensions.  
 TCIT | Total Consumed Integration Time | The total time spent, in milliseconds, calling actions provided by consumed integrations (SOAP, REST, SAP).  
 TCIE | Total Consumed Integration Executions | The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP).  
+TSAT | Total Consumed Service Action Time | The total time spent, in milliseconds, calling service actions.
+TSAE | Total Consumed Service Action Calls | The total number of calls of service actions.
 IP | Client IP | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875).  
 SAT | Session Acquisition Time | The time spent, in milliseconds, retrieving the session from the database.  
 SS | Session Size | The session size, in bytes  

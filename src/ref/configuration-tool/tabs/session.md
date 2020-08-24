@@ -6,7 +6,7 @@ summary: The Session tab allows you to configure the database used by OutSystems
 
 The **Session** tab allows you to configure the database used by OutSystems to store the end user persistent sessions.
 
-## Database Section (for SQL Server / Azure SQL)
+## Database Section (for SQL Server / Azure SQL Database)
 
 Configuration | Description | Default value  
 ---|---|---  
@@ -21,7 +21,7 @@ Naming Method | The method to connect to the Oracle database server. | `Service 
 Host | The hostname or IP address to the database server.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `localhost`  
 Port | The port on which the database service listens.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. | `1521`  
 Service Name | The Oracle database service name.<br/>This option is only available when the 'Naming Method' is set to 'Service Name'. |
-TNS Name | An address name defined in the **tnsnames.ora** configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. |
+TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/>This option is only available when the 'Naming Method' is set to 'TNS Name'. |
 
 For advanced settings, click on the **Advanced Settings** link.
 
@@ -34,6 +34,6 @@ Error Messages Language | Allows you to set the NLS_LANGUAGE setting when connec
 
 Configuration | Description | Default value
 ---|---|---
-User | Name of the user that's the owner of OutSystems session tables. | `OSRUNTIME` / `OSSTATE` (for Oracle)
+User | Name of the user that's the owner of OutSystems session tables. | `OSSTATE`
 Password | Password for the specified user. |  
 Tablespace | Table space holding the session tables.<br/>This field is only available for the Oracle database provider. | `OSSTATE`

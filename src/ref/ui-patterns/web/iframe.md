@@ -7,7 +7,7 @@ summary: Advanced use cases for the Iframe UI Pattern.
 
 ## Layout and classes
 
-![](<images/iframe-image-3.png>)
+![](<images/iframe-3-diag.png>)
 
 ## Advanced use case
 
@@ -19,6 +19,6 @@ This can be very useful if you are using a fixed width.
 
 1. Publish and test.
 
-    ![](<images/iframe-image-4.png>)
+    ![](<images/iframe-4-ss.png>)
 
 You can change the condition of the width used. This code makes the width 500px on desktop, but on mobile, it is still full-width as the fixed width would probably overflow the screen.

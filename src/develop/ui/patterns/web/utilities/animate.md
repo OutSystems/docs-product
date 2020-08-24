@@ -13,7 +13,7 @@ We’ve been working on this article. Please let us know how useful this new ver
 
 You can use the Animate UI Pattern to create animations within your app. This UI pattern allows you to emphasize elements as they appear on screen which enhances the overall usability of the app.
 
-![](<images/animate-image-10.png>)
+![](<images/animate-10-ss.png>)
 
 **How to use the Animate UI Pattern**
 
@@ -21,21 +21,21 @@ You can use the Animate UI Pattern to create animations within your app. This UI
 
     The Animate widget is displayed.
 
-    ![](<images/animate-image-11.png>)
+    ![](<images/animate-11-ss.png>)
 
 1. From the Toolbox, drag the Animate widget into the Main Content area of your application's screen.
 
-    ![](<images/animate-image-1.png>)
+    ![](<images/animate-1-ss.png>)
 
 1. Add the content you want to animate to Animate widget.
 
     In this example, we add an image by dragging the Image widget into Animate widget and selecting an image from the sample OutSystems UI images.
 
-    ![](<images/animate-image-12.png>)
+    ![](<images/animate-12-ss.png>)
 
 1. Select the Animate widget, and on the **Properties** tab, set the relevant properties, for example, where you want the animation to enter and leave the screen and at what speed.
 
-    ![](<images/animate-image-2.png>)
+    ![](<images/animate-2-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

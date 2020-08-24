@@ -7,7 +7,7 @@ summary: Advanced use cases for the Fieldset UI Pattern.
 
 ## Layout and classes
 
-![](<images/fieldset-image-2.png>)
+![](<images/fieldset-2-diag.png>)
 
 ## Advanced use case
 
@@ -31,7 +31,7 @@ you can use custom CSS to change the style of the Fieldset Pattern. The followin
 }
 ```
 
-![](<images/fieldset-image-3.png>)
+![](<images/fieldset-3-ss.png>)
 
 **Example 2**
 
@@ -48,4 +48,4 @@ you can use custom CSS to change the style of the Fieldset Pattern. The followin
 }
 ```
 
-![](<images/fieldset-image-4.png>)
+![](<images/fieldset-4-ss.png>)

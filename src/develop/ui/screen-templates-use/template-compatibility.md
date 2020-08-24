@@ -1,5 +1,5 @@
 ---
-summary: Yo need a Screen Template compatible with you Theme to display the final page properly.
+summary: You need a Screen Template compatible with your Theme to display the final page properly.
 ---
 
 # Theme compatibility in Screen Templates

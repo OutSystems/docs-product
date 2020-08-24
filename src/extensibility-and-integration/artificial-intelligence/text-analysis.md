@@ -1,122 +1,154 @@
 ---
-summary: Use this component to perform multiple operations involving text analysis, such as Key Phrase Detection, Sentiment Analysis or Language Detection.
+summary: OutSystems.AI Language Analysis component can detect key phrases, calculate sentiment analysis, translate text to another language, transcribe from audio, and spellcheck a text.
 tags:
 ---
 
-# Use the OutSystems.AI Language Analysis component in your OutSystems applications
+# Use the AI Language Analysis component in your OutSystems apps
 
-Use the OutSystems.AI Language Analysis component to carry out different text analysis operations such as key phrase detection, sentiment analysis and, so on.
+Use the OutSystems.AI Language Analysis component to detect key phrases, calculate sentiment analysis, translate, transcribe from audio, spell check a text.
 
-This component has Blocks and Server Actions independent of each other. You can use the default UI present within the Block for the available features. Alternatively, you can use the Server Actions in your logic with your specific UI.
-
-OutSystems.AI Language Analysis exists in two versions:
-
-* [OutSystems.AI Language Analysis for Reactive Web App](https://www.outsystems.com/forge/component-overview/7316/outsystems-ai-language-analysis-reactive)
-* [OutSystems.AI Language Analysis for Traditional Web App](https://www.outsystems.com/forge/component-overview/5877/text-analysis)
+OutSystems.AI Language Analysis consists of Blocks and Server Actions that are independent of each other. You can use the default UI form the Blocks, or create a custom UI with the Server Actions.
 
 ## Prerequisites
 
-1. Create a Microsoft Azure account.
+These are the requirements you need to meet to use the Language Analysis component.
 
-2. [Create resources](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account#create-a-new-azure-cognitive-services-resource) for the **Text Analytics** service, the **Bing Spell Check** and the **Speech to Text**, and be sure to group them all under the same **Resource Group** – either an existing one or a new one – when creating each resource under the respective field.
+* You have a Microsoft Azure account.
+  
+* You created the Azure resources for the following services in the same **Resource Group**:
 
-3. Download the **OutSystems.AI Language Analysis** and its dependencies from the Forge and publish them to your Environment.
+    * **Text Analytics**
+    * **Bing Spell Check**
+    * **Speech to Text**
+    
+    See [Create resources](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account#create-a-new-azure-cognitive-services-resource) by Microsoft for guidance.
 
-4. In **Service Center**, go to the component dependencies and click on **AzureCognitiveServicesConnector** to access its **Site Properties** tab and fill in the subscription key for **OcpApimSubscriptionKey_TextAnalyticsAPI**, **OcpApimSubscriptionKey_SpellCheckAPI** and **OcpApimSubscriptionKey_SpeechAPI** that you can find in the Keys tab at Azure Portal for each respective resource created in step 2. You can use any of the two keys presented in that tab for each resource.
+* You installed [OutSystems.AI Language Analysis for Reactive Web App](https://www.outsystems.com/forge/component-overview/7316/outsystems-ai-language-analysis-reactive) in your environment.
 
-5. Still in the **AzureCognitiveServicesConnector** properties in **Service Center**, switch to the Integrations tab and for **TextAnalyticsAPI**, **SpellCheckAPI** and **SpeechAPI** fill in the respective **Effective URL** field with the **Endpoint** information that you can find on the Overview tab of Azure Portal for each resource that you've created in step 2. Before saving, delete the version number of the pasted Endpoint (for instance, /v2.1).
+* You configured the component, as instructed in [Configure the Language Analysis](#configure-the-language-analysis-component)
 
-## Key phrase detection
+## Get the settings from Azure
 
-Drag and drop the **KeyPhrasesHighlight** Block to your screen and fill the two mandatory input parameters:
+To configure your component you need settings from Azure for each component. Here are the instructions.
 
-* Text – The text to be analyzed for detecting key phrases.
-* Language – A two letter code representing the language that follows the ISO 639-1 standard of [language codes](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support#language-list-and-status).
+1. Open each of the services in Azure and go to **Keys and Endpoint**.
+1. Copy a key value. You can use any of the keys, **KEY** 1 or **KEY2**.
+1. Take note of the **ENDPOINT**.
+1. Take note of the **LOCATION**.
+
+![Settings in Azure](images/text-analysis-azure-settings.png?width=600)
+
+## Configure the Language Analysis component
+
+Configure the module in Service Center with the settings from your Azure resources.
+
+1. Go to Service Studio > **Factory** > **Modules**.
+
+1. In the Name field enter **AzureCognitiveServicesConnector** and click **Filter**. The connector name shows in the results.
+
+1. Click **AzureCognitiveServicesConnector** in the results to open the module configuration screen.
+
+1. Go to the **Site Properties** tab. Click the properties that begin with **OcpApimSubscription** to open the settings, then paste the Azure key value for the corresponding service in the **Effective Value**. For example, if you're setting up the component to use Text Analytics API, then edit **OcpApimSubscriptionKey_TextAnalyticsAPI**.
+
+    ![Service Center settings for the language analysis](images/text-analysis-settings-sc.png?width=600)
+
+1. Skip this step if you're using **westus** location in Azure. If you're using another Azure location, you need to edit the URL of the API.
+
+    * Continue by clicking the **Integrations** tab. Scroll to the **Consumed REST APIs** section and click the property name corresponding to the Azure service to enter a new **Effective URL** value. 
+    
+    * In the **Effective URL** fields of **TextAnalyticsAPI**, **SpellCheckAPI**, and **SpeechAPI**, enter the respective values of **ENDPOINT** from Azure. Before saving, delete the version number of the **ENDPOINT** value, for example `/v2.1`.
+
+## Language Analysis features
+
+Here is what you can do with the Language Analysis component.
+
+### Key phrase detection
+
+Drag the **KeyPhrasesHighlight** Block to your screen and enter the two mandatory input parameters:
+
+* **Text** – The text in which to detect key phrases.
+* **Language** – A two-letter code representing the language that follows the ISO 639-1 standard of [language codes](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support#language-list-and-status).
 
 ![block for highlighting key phrases](images/text-analysis-key-phrases.png) 
 
-The results of the detection will be shown by changing the style of the detected key phrases to bold with a yellow background color. The **GetKeyPhrasesInText** action analyzes the text using the Text Analytics API KeyPhrases action from the Azure Cognitive Services Connector.
+The **GetKeyPhrasesInText** action analyzes the text using the Text Analytics API KeyPhrases action from the Azure Cognitive Services Connector. The results of the detection show bold with a yellow background color. 
 
 ![Sample text with key phrases highlighted](images/text-analysis-key-phrases-example.png)
 
-To use the Server Action, drag the **GetKeyPhrasesInText** action to your flow and fill the input parameters.
+To use the Server Action, drag the **GetKeyPhrasesInText** action to your flow and enter the input parameters.
 
 ![Action to send text for key phrases parsing](images/text-analysis-key-phrases-input.png)
 
-## Sentiment analysis
+### Sentiment analysis
 
-1. Drag and drop the **SentimentDetection** Block to your screen. The Block has three placeholders and the action that performs the sentiment detection (DetectSentimentInText Server Action).
+Drag the **SentimentDetection** Block to your screen. The Block has three placeholders and the action that performs the sentiment detection (DetectSentimentInText Server Action).
 
-    ![A block to detect sentiment](images/text-analysis-sentiment-detection.png) 
+![A block to detect sentiment](images/text-analysis-sentiment-detection.png) 
 
-2. Customize these placeholders (using icons, images and so on) to show the result of the sentiment detection of a text.
-
-Each placeholder is related to an interval of a scale that ranges from 0% to 100% where:
+Then, customize these placeholders to show the result of the sentiment detection of a text depending on the score. The placeholders match an interval of a scale that ranges from 0% to 100% where:
 
 * **Negative**: 0% – 39% 
 * **Neutral**: 40% – 69% 
 * **Positive**: 70% – 100%
 
-The percentage shows the score of the detected sentiment and is an indicator of how the sentiment of the text is positioned in each scale interval. By default, the following emojis are indicators of the text sentiment.
+The percentage is the indicator of the sentiment of the text in each scale interval. By default, the following emojis are indicators of the text sentiment.
 
 ![Default emojis for sentiment rating](images/text-analysis-sentiment-detection-smileys.png)
 
-The **DetectSentimentInText** Server Action requires the same input parameters as the Block. It will then return a decimal value representing the score for the sentiment detected in the text. You can change the intervals of the scale according to your use case.
+The **DetectSentimentInText** Server Action requires the same input parameters as the Block. It returns a decimal value representing the sentiment score. You can change the intervals of the scale according to your use case.
 
 ![Action with params for sentiment detection](images/text-analysis-sentiment-in-text.png)
 
-## Language detection
+### Language detection
 
 The **GetLanguageFromText** Server Action receives an input parameter, Text, and retrieves the language code detected in the text. The returned code is the [two letter code that follows the ISO 639-1 standard](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support#language-list-and-status).
 
 ![Block for language detection, with parameters](images/text-analysis-detect-language-text.png)
 
-## Spell Check
+### Spellcheck
 
 <div class="info" markdown="1">
 
-Spellchecking is currently not available in Reactive App. We're working on it!
+Spellchecking UI block is currently not available in Reactive App. The team is working on it!
 
 </div>
 
-The Spell Check feature has a Block and a Server Action.
+The spell-check feature has a Block and a Server Action.
 
 1. Drag the **SpellCheck** Block to a screen in the application. 
 2. In the **TextArea** placeholder, drag an Input widget and bind it to a variable. 
 
-![](images/text-analysis-image12.png)
+![Spellcheck block](images/text-analysis-image12.png)
 
 The **SpellCheck** Block has server-side logic to analyze text and retrieve suggestions for the detected errors. It also has client-side logic that highlights and enables end users to choose what they want to do with the error. 
 
-The end user can either select a suggestion or ignore the given suggestions. In case of a repeated error, if the end user ignores the suggestion, the word will no longer be highlighted.
+The user can either select a suggestion or ignore it. Once ignored, the suggestion no longer shows.
 
-![](images/text-analysis-gif1.gif)
+![Spellcheck in action](images/text-analysis-gif1.gif)
 
-Additionally, you can use the **RunSpellChecker** Server Action on its own without using the Block. Drag the Server Action to the logic flow and fill in the required input parameters. You can add additional logic to the flow after receiving the output structure.
+Additionally, you can use the just **RunSpellChecker** Server Action, without the Block. Drag the Server Action to the logic flow and enter the input parameters. Aan add additional logic to the flow after receiving the output structure.
 
-![](images/text-analysis-image8.png)
+### Speech to text conversion
 
-## Speech to Text conversion
+The speech to text feature accepts audio files and outputs a transcription. The feature uses the **SpeechToText** Server Action that receives the following input parameters:
 
-The Speech to Text feature accepts audio files and outputs a transcription of the input. The feature has a **SpeechToText** Server Action that receives the following input parameters:
+* **Audio File** - the input file for transcription. It can either be a URL or a binary file. The content within the file must be short utterances The duration of the entire audio file has to be less than 15 seconds with only 10 seconds of actual, recorded audio content.
 
-* **Audio File** - the file that is to be transcribed. It can either be a URL or a binary file. The content within the file must be short utterances (that is, the duration of the entire audio file has to be less than 15 seconds with only 10 seconds of actual, recorded audio content).
-
-* **Audio Format** - the format of the file being sent. This input parameter is mandatory for binary files. The supported audio formats are WAV and OGG.
+* **Audio Format** - the format of the input audio file. Mandatory for binary files. The supported audio formats are WAV and OGG. For more information abut the formats see [Speech-to-text REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text#audio-formats) by Microsoft.
 
 * **Language Code** - the language that the audio file is in. You can check the [list of supported language codes](https://docs.microsoft.com/en-US/azure/cognitive-services/speech-service/language-support#speech-to-text).
 
-* **Profanity** - the condition specifying how to handle profanity in the results. Accepted values are either **masked**, which replaces profanity with asterisks, **removed**, which removes all profanity from the result, or **raw**, which includes the profanity in the result. The default setting is masked.
+* **Profanity** - the condition specifying how to handle profanity in the results. Accepted values are **masked** (default), which replaces profanity with asterisks, **removed**, which removes all profanity from the result, or **raw**, which includes the profanity in the result.
 
 ![Server Action for converting speech to text](images/text-analysis-speech-to-text.png)
 
 The output parameter of the **SpeechToText** Server Action is a transcription of the conversion result that has the highest confidence score.
 
-## Translation
+### Translation
 
 Use **GetTextTranslation** and **GetAlternativeTranslations** Server Actions from OutSystems.AI Language Analysis to translate text and words.
 
-### Translate text
+#### Translate text
 
 Use **GetTextTranslation** Server Action to translate text. The Action has the following input parameters:
 
@@ -130,7 +162,7 @@ The output parameters are:
 * **LanguageCode** - ISO 639-1 code of the source language.
 * **Confidence** - The percentage of confidence in the identified language. If you don't supply **FromLanguageCode**, the component identifies the language automatically.  
 
-### Translate words
+#### Translate words
 
 Use the **GetAlternativeTranslations** Server Action to translate words. The Action has the following input parameters:
 
@@ -142,10 +174,9 @@ The output parameter is:
 
 * **AlternativeTranslations** - A list with parts of speech, back-translation, and alternative translations for the target language. It also contains some idiomatic phrases.
 
+### Entity detection
 
-## Entity detection
-
-Drag and drop the **EntitiesHighlight** Block to your Screen and enter the two mandatory input parameters:
+Drop the **EntitiesHighlight** Block to your Screen and enter the two mandatory input parameters:
 
 * **Text** – The text in which you want to detect key phrases
 * **LanguageCode** – A two-letter code representing the language that follows the ISO 639-1 standard of language codes
@@ -164,4 +195,25 @@ The GetEntitiesInText action analyzes the text using the Text Analytics API Enti
 
 ## Exception handling
 
-The possible exceptions that can happen in the actions of the UI Blocks are handled directly by showing a Feedback Message when an exception occurs. You need to handle any exceptions raised inside the Server Actions within the component.
+Exceptions in the actions of the UI Blocks result in a feedback message. You need to handle any exceptions raised inside the Server Actions within the component.
+
+## Reference
+
+To find the Language Analysis Blocks and Actions in Service Studio, look for:
+
+* Actions: **Logic\Server Actions\LanguageAnalysisReactive**
+* Blocks: **Interface\UI Flows\LanguageAnalysisReactive**
+
+This is the overview of what you can do with the component, as well and the Azure APIs they're based on. 
+
+| Feature | Action | Block | Azure API type |
+| ---- | ---- | --- | ---- | 
+| Key phrases detection | GetKeyPhrasesInText | TextAnalysis\KeyPhrasesHighlight | Text Analytics | 
+| Sentiment detection | DetectSentimentInText | TextAnalysis\SentimentDetection | Text Analytics |
+| Entities detection | EntitiesHighlight |  TextAnalysis\GetEntitiesInText | Text Analytics |
+| Spellchecking | RunSpellChecker | NA | Bing Spell Check |
+| Translation | GetTextTranslation | NA | Translator | 
+
+## Language Analysis for Traditional Web App
+
+[OutSystems.AI Language Analysis for Traditional Web App](https://www.outsystems.com/forge/component-overview/5877/text-analysis) is available from Forge,.

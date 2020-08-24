@@ -69,9 +69,9 @@ To generate your mobile app in the Service Studio, perform the following steps:
 
 1. In the **Build type** dropdown, select one of the following options:
 
-    * **Ad-Hoc** (for testing apps on registered devices only)
+    * **Ad-Hoc** (for organizations to develop and deploy proprietary, internal-use apps to their employees)
     * **App Store** (for Apple Developer Program)
-    * **Development** (for organizations to develop and deploy      proprietary, internal-use apps to their employees)
+    * **Development** (for testing apps on registered devices only)
     * **In-House** (for Apple Developer Enterprise Program)
 
 1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. com.domain.appname).

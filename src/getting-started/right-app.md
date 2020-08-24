@@ -3,26 +3,23 @@ summary: Learn what is the right app for your project. Know the difference betwe
 tags: support-application_development; support-devOps; support-Infrastuture_Architecture; support-Mobile_Apps; support-webapps; support-Mobile_Apps-overview; support-webapps-overview
 ---
 
-# Choose the Right App for Your Project
+# Choose the right app for your project
 
-When creating a new app in OutSystems and according to your project's requirements, you need to select the type of application you want to develop. For each development scenario, different tools and features are available.
+You can create several types of apps in OutSystems. Here's an overview to help you choose a new app in the **New Application** window:
 
-![](images/right-app-1.png?width=600)
+* To create an app that users run mostly in a desktop browser, select **Reactive Web App**.
+* To create an app and submit it to the Apple App Store or Google Play, as a mobile app for users to download, select **Phone App** or **Tablet App**.
+* To create a lightweight app and share it as a progressive web app (PWA) from your website and let users put the app icon on their mobile home screens, select **Phone App** or **Tablet App**.
 
-## What is a Reactive Web App?
+![A new app window in Service Studio](images/new-app-window-ss.gif?width=600)
 
-<div class="info" markdown="1">
+## What's a Reactive Web App?
 
-Check our blog post <a href="https://www.outsystems.com/forums/discussion/52761/reactive-web-the-next-generation-of-web-apps/">The Next Generation of Web Apps</a> to read more about Reactive Web Apps!
+In OutSystems, a Reactive Web App is an app with a responsive interface that runs in the browser. The user experience is excellent across many types of devices and screen sizes. You develop with the OutSystems visual language and interact with the device hardware by extending the app logic with HTML5 and JavaScript.
 
-</div>
+Reactive Web App helps you unify development experience. Develop with a single language, and create and promote components that work across apps.
 
-
-In OutSystems, a Reactive Web App is an application with a responsive interface that runs in the browser, displaying a user experience adapted to all kinds of devices and screen sizes. It is developed using the OutSystems visual language. You can interact with the device's features and capabilities by extending the application code using HTML5 and JavaScript. You need only a browser to run it. This type of app is mostly used for displaying a high volume of data, like dashboards and tables, and it's crucial when targeting web desktops and responsive apps.
-
-Reactive Web App is based on new Reactive Modules that helps unify development experience. Use Reactive Web App to develop with a single language, and to create and promote components that work across apps.
-
-This means that with a Reactive Web App application:
+When you develop a Reactive Web App:
 
 * You have one development paradigm for web and mobile.
 * You can build apps using the client-side runtime and create responsive UX.
@@ -30,52 +27,67 @@ This means that with a Reactive Web App application:
 
 If you haven't developed OutSystems apps that focus on the client-side development paradigm, you can check the explanation about [Screen and Block lifecycle Events](<../develop/logic/screen-block-lifecycle-events.md>) and these notes about [best practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>).
 
-![](images/mobile-vs-web-what-is-web.png)
+![Reactive Web App](images/reactive-web-app-diag.png?width=500)
 
-## What is a Mobile App?
-
-In OutSystems, a Mobile App is a native app shell, developed using Apache Cordova, that wraps a web app developed using the OutSystems visual language. The app has user experience that is mobile-optimized and can access the device's capabilities and features using plugins. It can work offline and have data-caching features thanks to access to the device's local storage. The developed code is cross-platform, this means that you only have to develop one project and the application works on all the supported mobile platforms (iOS and Android). You can generate application packages and distribute them in the stores or you can distribute them to a set of users.
-
-![](images/mobile-vs-web.png)
+![Reactive Web App characteristics](images/reactive-web-app-characteristics-diag.png?width=500)
 
 
+<div class="info" markdown="1">
 
-## Comparison Between Reactive Web App and Mobile App  
+Check the blog post <a href="https://www.outsystems.com/forums/discussion/52761/reactive-web-the-next-generation-of-web-apps/">The Next Generation of Web Apps</a> to read more about Reactive Web Apps.
 
-<table border="1" cellpadding="1" cellspacing="1" markdown="1" class="mt-responsive-table" style="border:none;">
+</div>
+
+## What's a Mobile App?
+
+In OutSystems, a Mobile App is an app that compiles to a native mobile Android/iOS app. The app uses Apache Cordova and wraps a web app that you develop with the OutSystems visual language. The user experience focuses on mobile and the app logic can access the device hardware, such as sensors, by using plugins. The app works offline because it caches data in the local storage. You can develop for iOS and Android at the same time, as the underlying code is cross-platform. The default app templates of this type are **Phone App** and **Tablet App**.
+
+There are two ways you can distribute a Mobile App, as:
+
+* **Native app package**. A dedicated OutSystems cloud service generates native mobile builds for you, to distribute your app in the app stores or internally to a group of users.
+
+* **Progressive web app (PWA)**. PWAs are lightweight apps that have a look and feel of native mobile apps. They're quick to distribute and install directly from your website, as they don't depend on the app stores.
+
+![Mobile apps](images/mobile-vs-web-diag.png?width=600)
+
+## Comparison Between Reactive Web App and Mobile App
+
+Here is a table with a comparison of features between Reactive Web App and Mobile App. In a default OutSystems installation, you can create a Reactive Web App by selecting **Reactive Web App** in the **New Application** window. For Mobile App choose **Phone App** or **Tablet App**.
+
+<table cellpadding="1" cellspacing="1" markdown="1" class="mt-responsive-table" style="border:none;">
 <thead>
 <tr>
 <th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;">
-<p><span class="mt-font-size-20"><strong>Reactive Web</strong></span></p>
-<p>![](images/mobile-vs-web-web.png?width=126)</p>
+<p><strong>Reactive Web App</strong></p>
+<p>![](images/mobile-vs-web-web-diag.png?width=60)</p>
 </th>
-<th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;"><span class="mt-font-size-20"><strong>vs</strong></span></th>
-<th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:1px solid #E7ECED;text-align:center;">
-<p><span class="mt-font-size-20"><strong>Mobile</strong></span></p>
-<p>![](images/mobile-vs-web-mobile.png?width=126)</p>
+<th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;"><strong>vs</strong></th>
+<th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:2px solid #E7ECED;text-align:center;">
+<p><strong>Mobile App</strong></p>
+<p>![](images/mobile-vs-web-mobile-diag.png?width=30)</p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="mt-bgcolor-ffffff" data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;">
+<td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;background:#fff;">
 <p> </p>
-<p>![](images/mobile-vs-web-code-reusability-web.png?width=150)</p>
-<p>One codebase for all devices and screen sizes.</p>
+<p>![](images/mobile-vs-web-code-reusability-web-diag.png?width=50)</p>
+<p>Common logic for all devices and screen sizes.</p>
 <p> </p>
 </td>
-<td class="mt-bgcolor-ffffff" data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;"><strong>Code Reusability</strong></td>
-<td class="mt-bgcolor-ffffff" data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;">
+<td  data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;background:#fff;"><strong>Code Reusability</strong></td>
+<td  data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;background:#fff;">
 <p> </p>
-<p>![](images/mobile-vs-web-code-reusability-mobile.png?width=132)</p>
-<p>One codebase for all supported mobile platforms.</p>
+<p>![](images/mobile-vs-web-code-reusability-mobile-diag.png?width=50)</p>
+<p>Common logic for all supported native mobile platforms, and supported browsers for PWAs.</p>
 <p> </p>
 </td>
 </tr>
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-runs-in-web.png?width=239)</p>
+<p>![](images/mobile-vs-web-runs-in-web-diag.png?width=50)</p>
 <p>A browser.<br />
 No installation is needed.</p>
 <p> </p>
@@ -83,100 +95,100 @@ No installation is needed.</p>
 <td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;"><strong>Runs in</strong></td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-runs-in-mobile.png?width=116)</p>
-<p>Mobile devices. Needs to be installed and is not supported in the browser.</p>
+<p>![](images/mobile-vs-web-runs-in-mobile-diag.png?width=50)</p>
+<p>Native mobile apps run in Android and iOS devices. PWAs run in any device with a supported browser.</p>
 <p> </p>
 </td>
 </tr>
 <tr>
-<td class="mt-bgcolor-ffffff" data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;">
+<td  data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;background:#fff;">
 <p> </p>
-<p>![](images/mobile-vs-web-user-experience-web.png?width=240)</p>
+<p>![](images/mobile-vs-web-user-experience-web-diag.png?width=50)</p>
 <p>Responsive layout for all screen sizes and types.</p>
 <p> </p>
 </td>
-<td class="mt-bgcolor-ffffff" data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;"><strong>User Experience</strong></td>
-<td class="mt-bgcolor-ffffff" data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;">
+<td  data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;background:#fff;"><strong>User Experience</strong></td>
+<td  data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;background:#fff;">
 <p> </p>
-<p>![](images/mobile-vs-web-user-experience-mobile.gif)</p>
-<p>Dedicated mobile UI patterns and experiences, such as animations and screen transitions.</p>
+<p>![](images/mobile-vs-web-user-experience-mobile-diag.png?width=50)</p>
+<p>Dedicated mobile UI patterns and experiences.</p>
 <p> </p>
 </td>
 </tr>
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-performance-web.png?width=232)</p>
-<p>Performance optimized for the client side. App logic can run on the device and the data exchange with the server is reduced.</p>
+<p>![](images/mobile-vs-web-performance-web-diag.png?width=120)</p>
+<p>Performance designed for the client side, with smart mechanisms to optimize the data transfer.</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;"><strong>Performance</strong></td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-performance-mobile.png?width=164)</p>
-<p>Performance optimized for the client side. App logic can run on the device and the data exchange with the server is reduced.</p>
+<p>![](images/mobile-vs-web-performance-mobile-diag.png?width=120)</p>
+<p>Performance designed for the client side, with smart mechanisms to optimize the data transfer.</p>
 <p> </p>
 </td>
 </tr>
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-access-device-web.png?width=187)</p>
+<p>![](images/mobile-vs-web-access-device-web-diag.png?width=50)</p>
 <p>HTML5 supported device capabilities.</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;">
-<p><strong>Access to Device <span style="line-height:inherit;">Capabilities</span></strong></p>
+<strong>Access to device hardware</strong>
 </td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-access-device-mobile.png?width=172)</p>
-<p>Access to full range of device capabilities (using Cordova plugins).</p>
+<p>![](images/mobile-vs-web-access-device-mobile-diag.png?width=50)</p>
+<p>Native mobile apps access a range of device capabilities through Cordova plugins. PWAs use dedicated plugins, which by design can access only hardware that the browser running the PWA is allowed to access.</p>
 <p> </p>
 </td>
 </tr>
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-offline-web.png?width=240)</p>
-<p>No offline capabilities*</p>
+<p>![](images/mobile-vs-web-offline-web-diag.png?width=50)</p>
+<p>No offline capabilities.*</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;"><strong>Offline capabilities</strong></td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-offline-mobile.png?width=180)</p>
-<p>Using local storage for storing offline data. Client logic running on the device.</p>
+<p>![](images/mobile-vs-web-offline-mobile-diag.png?width=50)</p>
+<p>For storing offline data, native mobile apps use local storage and PWAs use browser storage.</p>
 <p> </p>
 </td>
 </tr>
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-deployments-web.png?width=240)</p>
-<p>Automatic update on browser page refresh.</p>
+<p>![](images/mobile-vs-web-deployments-web-diag.png?width=50)</p>
+<p>Updates are automatic when users refresh the browser page.</p>
 <p> </p>
 </td>
-<td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;"><strong>Deployments/Updates</strong></td>
+<td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;"><strong>Deployment and updates</strong></td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-deployments-mobile.png?width=143)</p>
-<p>Most updates are made automatically on screen change. New installation required only when changing the native shell.</p>
+<p>![](images/mobile-vs-web-deployments-mobile-diag.png?width=50)</p>
+<p>Native mobile apps can update automatically, and users need to install a new version only when you change the native shell. PWAs update automatically when the app detects a new version.</p>
 <p> </p>
 </td>
 </tr>
 <tr>
 <td data-th="Web" style="border:none;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-distribution-web.png?width=264)</p>
-<p>Share the app’s link with users.</p>
+<p>![](images/mobile-vs-web-distribution-web-diag.png?width=40)</p>
+<p>Share the app link with users.</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;background:#fff;text-align:center;vertical-align:middle;"><strong>Distribution</strong></td>
 <td data-th="Mobile" style="border:none;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-distribution-mobile.png?width=265)</p>
-<p>In-House or via Mobile app stores.</p>
+<p>![](images/mobile-vs-web-distribution-mobile-diag.png?width=45) ![](images/mobile-vs-web-distribution-web-diag.png?width=30)</p>
+<p>You can distribute native mobile apps in-house or through the app stores. Users can run a PWA directly from your website, and add the app icon to the device home screen. </p>
 <p> </p>
 </td>
 </tr>
@@ -185,10 +197,10 @@ No installation is needed.</p>
 
 (*) Currently not available.
 
-## What is Traditional Web?
+## What's a Traditional Web App?
 
-Traditional Web is an earlier type of OutSystems app that is focused on the server-side development. You may know this app under names such as Top Menu or Lisbon.
+Traditional Web App is an earlier type of OutSystems app with a focus on server-side development. You may know this app as app templates **Top Menu** or **Lisbon**.
 
-## What is a Service?
+## What's a Service?
 
-As your application grows, you can use [Services](../develop/reuse-and-refactor/services.md) to abstract specific core concepts and expose functionality to other applications, following a service-oriented architecture.
+As your app grows, you can use [Services](../develop/reuse-and-refactor/services.md) to abstract specific core concepts and expose functionality to other applications, following a service-oriented architecture.

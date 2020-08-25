@@ -36,9 +36,9 @@ To upload a file in Reactive Web and Mobile apps:
     ![Set File Content and File Name variables](images/upload-4-ss.png)
 
 **Note:** To save the uploaded file, you can use a Client Action to call a Server Action to send the file to the server. To do this:
-
-* Change the Server Action to accept the variable in the File Content property as an input parameter and save it. 
- * In the Client Action, add the variable as an argument to the Server Action.
+* Create a Button or Link, and inside the associated Client Action, call the Server Action. 
+* The Server Action should have an input parameter to accept the contents of the BinaryDataVar variable. 
+ * Inside the Server Action, create the logic to process or store the uploaded file.
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -56,11 +56,11 @@ To upload a file in a Traditional Web app:
     
     ![Drag widget onto screen](images/uploadweb-2-ss.png)
 
-**Note:** You can add a Button to the screen that executes and saves the file in the Screen Action. Use the Runtime Properties of the Upload widget:
+**Note:** You can add a Button to the screen that executes and saves the file in a Screen Action. Inside the Screen Action flow, use the Runtime Properties of the Upload widget:
 
 * `Upload.Content`: The file content 
 * `Upload.Filename`: The file name 
 * `Upload.Type`: The file type 
 
-<!-- 1. In the screen you want to upload the file, create a link to navigate to the newly created screen containing the Upload widget. Alternatively, you can put the screen with the Upload widget inside a [popup](popup.md). -->
+
 After following these steps and publishing the module, you can test the pattern in your app.

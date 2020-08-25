@@ -57,9 +57,3 @@ ExtendedClass (Text): Optional | Add custom style classes to the Columns UI Patt
 **Entities.ColumnBreak.BreakFirst**
 
 ![](images/Column_break_first.png)
-
-## Samples
-
-See how the [Account Dashboard sample](https://silkui.outsystems.com/Samples_Mobile.aspx#Mobile_Details-Samples_AccountDashboard) uses the Columns UI Pattern.
-
-![](images/Sample_Account_Dashboard.png)

@@ -101,7 +101,10 @@
         - href: develop/ui/table/intro.md
         - topics:
             - href: develop/ui/table/pagination-sorting.md
-    
+
+        # Table Records
+        - href: develop/ui/tablerecords/tablerecords.md
+  
         # Inputs
         - href: develop/ui/inputs/intro.md
         - topics:

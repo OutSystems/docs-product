@@ -18,13 +18,13 @@ Drag your content to this placeholder.
 ### Customize your responsive breakpoints
 
 1. Go to the Common Flow.
-1. Double-click the Layout to open the widget tree. 
+1. Double-click the Layout to open the widget tree.
 1. Go to the LayoutPopup properties.
 1. Toggle the DeviceConfiguration 'plus icon'.
 1. Set the custom breakpoints (in pixels). In the example below, the phone breaks are set to happen only when the Device width is at 200px.
 1. Publish and test.
 
-    ![](<images/layout-popup-2-ss.png>)
+![](<images/layout-popup-2-ss.png>)
 
 ## Notes
 
@@ -35,12 +35,12 @@ You can override the following code to avoid this behavior.
 ```css
 .ie10,
 .ie11 {
-   display: none;
+    display: none;
 }
 
 .ie10.ponyfill-ready,
 .ie11.ponyfill-ready {
-   display: block;
+    display: block;
 }
 ```
 

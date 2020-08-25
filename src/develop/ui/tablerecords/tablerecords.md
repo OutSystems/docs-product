@@ -58,10 +58,4 @@ After following these steps and publishing the module, you can test the widget i
 
     ![Add new column](<images/tablerecords-10-ss.png>)
 
-**TWO** For more information about the Table Records widget and its properties, see [Table Records Widget](<../../ref/lang/auto/Class.Table Records Widget.final.md>).
-
-**THREE** For more information about the Table Records widget and its properties, see [Table Records Widget](<../../../ref/lang/auto/Class.Table Records Widget.final.md>).
-
-**FOUR** For more information about the Table Records widget and its properties, see [Table Records Widget](<../../../../ref/lang/auto/Class.Table Records Widget.final.md>).
-
-**FIVE** For more information about the Table Records widget and its properties, see [Table Records Widget](<../../../../ref/lang/auto/Class.Table Records Widget.final.md>).
+For more information about the Table Records widget and its properties, see [Table Records Widget](<../../../ref/lang/auto/Class.Table Records Widget.final.md>).

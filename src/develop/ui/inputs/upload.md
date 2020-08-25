@@ -23,20 +23,23 @@ To upload a file in Reactive Web and Mobile apps:
 
     By default, the Upload widget contains an icon and text placeholder.
 
-1. To hold the file content, create a local variable by right-clicking on your screen name and selecting **Add Local Variable**. Enter a name for the variable and set the data type to binary data.
+1. To hold the file content, create a local variable by right-clicking on your screen name and selecting **Add Local Variable**. Enter a name for the variable and set the data type to binary data. 
 
     ![Add local variable](images/upload-3-ss.png)
 
-1. Select the Upload widget, and on the **Properties** tab, set the **File Content** property to the local variable you just created.
+1. Repeat step 3 to hold the file name, but in this case, select Text as the data type.
 
-    ![Set File Content variable](images/upload-4-ss.png)
+    ![Add local variable](images/upload-5-ss.png)
 
-    ![](images/upload-mobile.png?width=750)
+1. Select the Upload widget, and on the **Properties** tab, set the **File Content** property to the local variable you just created to hold the file content and the **File Property** property to the local variable you created to hold the file name.
 
-1. Use a Client Action to call a Server Action to send the file to the server:
+    ![Set File Content and File Name variables](images/upload-4-ss.png)
+
+<!--1. Use a Client Action to call a Server Action to send the file to the server:
 
     * Change the Server Action to accept the variable in the File Content property as an input parameter and save it. 
-    * In the Client Action, add the variable as an argument to the Server Action.
+    * In the Client Action, add the variable as an argument to the Server Action. -->
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Traditional Web
 

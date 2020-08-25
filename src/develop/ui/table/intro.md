@@ -5,13 +5,13 @@ tags: runtime-reactiveweb;
 
 # Creating and editing tables
 
-Use the Table Widget to create a table in your Screens, when you want to show data in cells distributed in rows and columns. This widget is available in Reactive Web Apps.
+You can use the Table Widget to create a table on your app screens, when you want to show data in cells distributed in rows and columns. This widget is available in Reactive Web Apps.
 
 ![Table Widget](<images/table-in-toolbar-ss.png>)
 
 ## Table Toolbar
 
-When you select a table created with Table Widget, you can us the Table toolbar in the main editor to move, add, or delete the columns.
+When you select a table created with Table Widget, you can use the Table toolbar in the main editor to move, add, or delete the columns.
 
 ![Table Widget](<images/table-edit-commands-ss.png>)
 

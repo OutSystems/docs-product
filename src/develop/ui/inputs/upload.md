@@ -55,6 +55,8 @@ To upload a file in a Traditional Web app:
     
     ![Drag widget onto screen](images/uploadweb-2-ss.png)
 
+After following these steps and publishing the module, you can test the pattern in your app.
+
 <!-- 1. Add a Button to the screen that executes a Screen Action to save the file and make sure its Method property is set to Submit.
 
 1. To save the file in the Screen Action, use the Runtime Properties of the Upload widget:

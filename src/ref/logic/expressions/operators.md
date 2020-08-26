@@ -1,14 +1,16 @@
 ---
+summary: OutSystems operators reference.
 tags: 
 ---
 
 # Operators
 
-In OutSystems you can use the operators presented below.
+
+This is the reference of the operators you can use in an OutSystems [expression](intro.md).
 
 ## Numeric
 
-\+, -, *, /
+The numeric operators are **\+**, **-**, *****, and **/**.
 
 ### Unary minus
 
@@ -132,7 +134,7 @@ The following are the data types allowed for equality operators:
 
 (c) Identifiers of different entities can be compared but a warning is issued.
 
-***Equality between Different Types:**
+***Equality between different types:**
 
 Type of Operand 1 | Type of Operand 2 | Result  
 ---|---|---  
@@ -167,7 +169,7 @@ LIKE | Text | Integer | Decimal | Boolean | DateTime | Date | Time
 
 (a) The non-text side is cast to `Text` and then compared.
 
-## Indexer Declaration
+## Indexer declaration
 
 This operator is used to access a specific element of a list. In OutSystems, index (position) starts with zero; to access the first record, you have to type the expression as follows:
 
@@ -185,7 +187,7 @@ You can use an expression inside the indexer operator as long as it returns an i
 
 `MyRecordList[EmployeeOfMonth()].Employee.Name` — where `EmployeeOfMonth` is a User Function that returns an integer value.
 
-## Precedence of Operators
+## Precedence of operators
 
 The next table presents the precedence of the operators, highest precedence first:
 

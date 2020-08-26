@@ -8,6 +8,13 @@
 - develop/data/download-file-browser.md:
   - ref/logic/implementing-logic/download.md
 
+# Expression editor
+- develop/logic/expression-editor.md:
+  - ref/logic/expressions/intro.md
+  - ref/logic/expressions/operators.md
+  - ref/logic/expressions/operands.md
+  - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md
+
 # Caching
 - develop/data/caching.md:
   - develop/reuse-and-refactor/strong-weak-dependencies.md
@@ -671,15 +678,18 @@
 
 # Expressions
 - ref/logic/expressions/intro.md:
+    - ref/logic/expressions/operands.md
+    - ref/logic/expressions/operators.md
     #Create a Calculated Attribute in an Aggregate
     - develop/data/query/calculated-attribute-create.md
     # Available Data Types
     - ref/data/data-types/available-data-types.md
 
-#   Operands
+# Operands
 - ref/logic/expressions/operands.md:
     # Available Data Types
     - ref/data/data-types/available-data-types.md
+    - ref/lang/auto/builtinfunctions.final.md
 
 #     Client Action
 -  ref/lang/auto/Class.Client Action.final.md:

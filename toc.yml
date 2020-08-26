@@ -296,6 +296,7 @@
     # Implement Application Logic
     - href: develop/logic/intro.md
     - topics: 
+        - href: develop/logic/expression-editor.md
         - href: develop/logic/ai-assisted-dev.md
         - href: develop/logic/actions.md
         - href: develop/logic/action-web.md

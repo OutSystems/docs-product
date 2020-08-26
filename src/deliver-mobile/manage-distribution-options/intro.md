@@ -3,9 +3,9 @@ summary: Mobile apps updates distribution setting lets you control how the apps 
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 ---
 
-# Early Access - Configure mobile apps updates distribution
+# Technical Preview - Configure mobile apps updates distribution
 
-With **mobile apps updates distribution settings**, you can choose how apps update on user devices. This early access feature introduces store-only updates, as an addition to the existing hybrid updates. Here is an overview of the two models for updating mobile apps:
+With **mobile apps updates distribution settings**, you can choose how apps update on user devices. This technical preview introduces store-only updates, as an addition to the existing hybrid updates. Here is an overview of the two models for updating mobile apps:
 
 **Store-only updates** require the download of the entire native build to the user devices. These are updates through Google Play or the Apple App Store, or a private store. The store updates always bring both the native shell of the app to user devices and the app logic. This a traditional store distribution model.
 
@@ -24,16 +24,16 @@ To manage how mobile apps update on user devices, you need to meet the following
 * Platform Server 11.9.0 and later. 
 * LifeTime 11.6.0 and later.
 * MABS 6.2 and later.
-* You activated the [early access feature](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Early_access_to_OutSystems_features) **Configure Mobile application updates distribution** in LifeTime in **all environments**. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the early access settings screen, it's turned off in all deployment plans you create.
+* You activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Configure Mobile application updates distribution** in LifeTime in **all environments**. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
 * You create and distribute the native mobile builds of your apps to submit them to the app stores. This means you created and app based on **Phone App** or **Tablet App** in Service Studio. 
 * Ensure you can follow the steps in [How to develop an app that updates only through the app stores](#how-to-develop-an-app-that-updates-only-through-the-app-stores).
 
 ### Deactivating the feature
 
-You can deactivate this early access feature only after you meet both of these conditions:
+You can deactivate this technical preview only after you meet both of these conditions:
 
 1. You turned off the store-only updates **for all apps**. You can do this with [a new deployment plan that activates the hybrid updates](#set-hybrid-updates).
-2. You turned off the store-only updates **in all environments**. You can do this in the [early access settings](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Early_access_to_OutSystems_features).
+1. You turned off the store-only updates **in all environments**. You can do this in the [Technical Preview settings](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features).
 
 These steps ensure that the deployment in LifeTime works correctly and that the apps continue working for your users.
 
@@ -192,7 +192,7 @@ If you're a Service Studio developer or LifeTime administrator, keep in mind the
 
 1. Test your app extensively. With the store-only updates, your users may update the apps less frequently, and you need to ensure that the native shell, the client side, and the server side of your app work correctly for all existing and new users.
 
-1. Manually start the generation of a native mobile build in the target environment. In the current version of this early access feature, you need to start the build process manually. 
+1. Manually start the generation of a native mobile build in the target environment. In the current version of this technical preview, you need to start the build process manually. 
 
 1. Submit the build to the app stores.
 

@@ -223,13 +223,7 @@ Running an OutSystems app on a browser continues to be supported for 6 months af
 * Google Chrome (latest stable version)
 * Safari (latest stable version)
 
-### Progressive Web Apps (Early Access feature)
-
-<div class="info" markdown="1">
-
-Learn more about this Early Access feature by checking out the [Progressive Web Apps documentation page](../deliver-mobile/distribute-pwa/intro.md).
-
-</div>
+### Progressive Web Apps
 
 * Default browser for latest stable version of Android
 * Default browser for latest stable version of iOS

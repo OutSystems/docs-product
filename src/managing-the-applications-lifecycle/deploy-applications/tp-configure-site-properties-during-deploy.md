@@ -1,17 +1,17 @@
 ---
-summary: This early access feature enables you to set application Site Properties in the target environment while performing a deployment in LifeTime.
+summary: This technical preview enables you to set application Site Properties in the target environment while performing a deployment in LifeTime.
 tags: support-Application_Lifecycle-featured
 ---
 
-# Early Access - Configure Site Properties During Deployment
+# Technical Preview - Configure Site Properties During Deployment
 
 <div class="info" markdown="1">
 
-Read how [early access to OutSystems features](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Early_access_to_OutSystems_features) works. We encourage you to try these features out and to [send us your feedback](https://www.outsystems.com/forums/discussion/48360/configure-site-properties-during-deployment/#Post177757).
+Read [how features in Technical Preview work](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features). We encourage you to try these features out and to [send us your feedback](https://www.outsystems.com/forums/discussion/48360/configure-site-properties-during-deployment/#Post177757).
 
 </div>
 
-This early access feature adds a new step during the deployment plan that enables the configuration of Site Properties in the target environment. With this feature disabled, when you deploy an application with a setting that must be different in the target environment, you need to use the Service Center console to [update it in the target environment after deployment](configure-application-settings-after-deployment.md).
+This technical preview adds a new step during the deployment plan that enables the configuration of Site Properties in the target environment. With this feature disabled, when you deploy an application with a setting that must be different in the target environment, you need to use the Service Center console to [update it in the target environment after deployment](configure-application-settings-after-deployment.md).
 
 ![](images/configure-settings-during-deploy-1.gif)
 
@@ -19,13 +19,13 @@ This early access feature adds a new step during the deployment plan that enable
 
 **To use this feature, make sure that:**
 
-* The feature was [activated in LifeTime](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Early_access_to_OutSystems_features).
+* The technical preview **Configure Site Properties during deployment** was [activated in LifeTime](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features).
 * The **source** and **target** environments for the deployment are running Platform Server 11 Release Apr.2019 CP1 or later.
 * The user executing the deployment has the "Change & Deploy Applications" permission for all applications in the deployment plan.
 
 </div>
 
-After activating the early access feature **Configure Site Properties during deployment**, a new deployment plan wizard will be used when deploying applications in LifeTime. This wizard has four steps:
+After activating the technical preview **Configure Site Properties during deployment**, a new deployment plan wizard will be used when deploying applications in LifeTime. This wizard has four steps:
 
 1. Add the applications to deploy
 1. Configure application settings

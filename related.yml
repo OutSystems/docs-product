@@ -4,9 +4,17 @@
   - getting-started/create-mobile.md
   - getting-started/create-web.md
 
+# Developing an Application / Use Data
+
 # Download a file through browser
 - develop/data/download-file-browser.md:
   - ref/logic/implementing-logic/download.md
+
+# Offline
+- develop/data/offline/patterns/intro.md:
+  - external:
+    - "Data Synchronization Course": 
+        https://www.outsystems.com/learn/courses/170/data-synchronization/
 
 # Expression editor
 - develop/logic/expression-editor.md:

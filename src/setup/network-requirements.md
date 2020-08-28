@@ -82,7 +82,7 @@ SSL offloading **is required** to run applications in containers. Follow the ins
 
 Experience Builder must be able to connect to the environment where you want Experience Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
 
-Alternatively, ensure that the front ends of the environment registered in Workflow Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
+Alternatively, ensure that the front ends of the environment used with Workflow Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
@@ -92,7 +92,7 @@ experiencebuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>1
 
 Workflow Builder must be able to connect to the environment where you want Workflow Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
 
-Alternatively, ensure that the front ends of the environment registered in Workflow Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
+Alternatively, ensure that the front ends of the environment used with Workflow Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---

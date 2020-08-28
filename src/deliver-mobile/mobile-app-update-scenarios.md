@@ -5,52 +5,58 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps
 
 # Mobile App Update Scenarios
 
-When developing a mobile app, after you click on “1-Click Publish” the changes made to the app automatically become available to the users with no need to install a new app version. The mobile apps running on the user devices automatically detect the updates when the apps establish a connection to the server. Only mobile app packages generated from an environment receive the new developments and changes published in that same environment.
+After you click on “1-Click Publish” the changes made to the mobile app automatically become available to the users with no need to install a new app version. The mobile apps running on the user devices automatically detect the updates when the apps establish a connection to the server. Only mobile app packages generated from an environment receive the new developments and changes published in that same environment.
 
-## Detecting a new app version is available
+## Detecting a new app version
 
 To be up to date with the version on the server, there are several instances when the app checks for a new version. These instances are:
 
-* Opening of the app
-* Navigation between screens
-* Call to the server, for example, to execute a Server Action or a Server Aggregate
+* Opening of the app.
+* Navigation between screens.
+* Call to the server, for example, to execute a Server Action or a Server Aggregate.
 
 When there's a new version on the server, the app updates itself and notifies the user with a feedback message.
 
 ## Seamless upgrades and attention-requiring upgrades
 
-**Seamless upgrade.** After detecting that a new version is available, the app starts caching all the new resources in the background. Once all resources are cached, the update is triggered on the next navigation event. This can be, for example, during the screen transition. Once the app is fully updated and the destination screen is loaded, the app notifies the user about the update with a feedback message. If the update takes time, the app shows the splash screen before navigating to the destination screen. This is considered a seamless upgrade.
+**Seamless upgrade.** After detecting that a new version is available, the app starts caching all the new resources in the background. Once the app caches the resources, the next navigation event triggers the update. This can be, for example, a screen transition. Once the app is fully updated and the destination screen loads, the app notifies the user about the update with a feedback message. If the update takes time, the app shows the splash screen before navigating to the destination screen. This is a seamless upgrade.
 
-**Attention-requiring upgrade.** An attention-requiring upgrade may happen when the user is on a screen that is modified in the new app version. If the user performs an action that requires interaction with the server, for example, by executing a Server Action, and that action has a different signature, the action fails and a feedback message shows saying that a new version is available and required to proceed. Clicking that message updates the app. After the update, the app loads the updated screen and a feedback message shows with the message that the app is up to date.
+**Attention-requiring upgrade.** An attention-requiring upgrade may happen when the user is on a screen that's changed in the new app version. If the user does something in the app that requires interaction with the server, that interaction may fail due to the upgrade requirements. For example, tapping a button to save data calls a Server Action, but because that action now has a different signature, the action fails. The user then sees a message that a new version is available and required to proceed. Clicking that message updates the app. After the update, the app loads the updated screen and shows the message that the app is up to date.
 
-When there's a Form widget on the screen, the message about the required update also informs the user that the information they entered in the Form will be lost, because the app needs to reload. The data persisted on Local Storage and Client Variables is not affected.
+When there's a Form widget on the screen, the message about the required update also informs the user that the information they entered in the Form will be lost, because the app needs to reload. The data saved in local storage and Client Variables isn't affected.
 
-## Situations when the update is not possible in the device
+<div class="info" markdown="1">
 
-There may be situations when the automatic update of the app is not possible in the user device, even if there were no issues during the publishing step. Possible causes can be:
+The technical preview [Configure mobile apps updates distribution](manage-distribution-options/intro.md) lets you select between **hybrid updates**, described in this document, and **store-only updates**. 
 
-* Poor network connection to download the resources needed for the update
-* Local data model upgrade that is not possible to update automatically
+</div>
+
+## Situations when the update isn't possible in the device
+
+There may be situations when the automatic update of the app isn't possible in the user device, even when there are no issues during the publishing step. Possible causes:
+
+* Poor network connection to download the resources needed for the update.
+* Local data model upgrade that the app can't update automatically.
   
-In situations where an update is not possible on the device of the user, the mobile app rolls back to its most recent fully working version. There is also a message saying to the user the update was not possible and that they may need to restart the app to retry the update.
+In situations where the app can't update itself on the device of the user, the app rolls back to the most recent fully working version. There's also a message that the update wasn't possible and that the user should restart the app and then try updating the app again.
 
-When the error happens while updating the Local Storage data model, possibly because the existing data is incompatible with the new data model, the message informs the user that they may need to reinstall the app if the problem persists. The reinstallation clears the current app data.
+When the error happens while updating the local storage data model, possibly because the existing data is incompatible with the new data model, the message informs the user that they may need to reinstall the app if the problem persists. The reinstallation clears the current app data.
 
-The issue and the cause are logged in the environment and you can check them in Service Center. With these logs, you should be able to identify the cause and implement a fix in a new version of the app.
+You can find the issue and the cause in the Service Center logs by looking for "Upgrade failed - rolling back to previous application version". The information in the log should help you discover the cause of the upgrade failure and implement a fix in a new version of the app.
 
 ## Situations when the user must install a new build
 
-Even though every time a “1-Click Publish” runs the changes are automatically made available to the app, some changes require from the users to install an updated app package on the device. It happens when:
+Even though every time you publish the app the platform makes the changes automatically available to the app, some changes require installation of an updated app package on the user device. This happens when you **change** one of the following:
 
-* the configurations for a mobile platform were changed 
-* the Extensibility Configurations property was changed, for instance, modification, addition or removal of mobile plugins, changes to status bar transparency, custom icons or splash screens, and so on 
-* an external resource of a plugin was updated
-* the app name was changed 
-* the entry module or its name was changed 
-* the app icon was replaced 
-* the main color of the app was changed 
+* App name.
+* App icon.
+* Main color of the app. 
+* An external resource of a plugin.
+* Configurations for a mobile platform.
+* Entry module or the name of the entry module name. 
+* Extensibility Configurations property (for example: modification, addition or removal of mobile plugins, changes to status bar transparency, custom icons or splash screens, and similar) 
 
-After these changes are published, the experience of the users with outdated apps may suffer some impact. In the case of plugins, it is a good practice to include fallbacks in the apps to avoid crashing until the last version is installed on the device. These potential issues are automatically fixed when the user upgrades to the latest app package.
+These changes may negatively affect the user experience in the outdated apps, but the issues are automatically fixed when the user upgrades to the latest app package. In the case of plugins, it's a good practice to include fallbacks in the apps to avoid crashing until the latest app version is on the device. 
 
 <div class="warning" markdown="1">
 

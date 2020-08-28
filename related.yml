@@ -870,6 +870,10 @@
 - develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md:
     - develop/ui/inputs/popup.md
 
+# Mobile App Update Scenarios
+- deliver-mobile/mobile-app-update-scenarios.md:
+    - managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md
+
 # Technical Preview - Configure mobile apps updates distribution
 - deliver-mobile/manage-distribution-options/intro.md:
     - managing-the-applications-lifecycle/deploy-applications/deploy-an-application.md
@@ -879,7 +883,8 @@
     - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
     - deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
     - setup/possible-setups.md
-# UI Web Patterns
+
+    # UI Web Patterns
 - develop/ui/patterns/web/content/accordion/accordion.md:
     - ref/ui-patterns/web/accordion.md
     - external:

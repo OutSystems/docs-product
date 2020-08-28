@@ -78,6 +78,12 @@ If you are using a container-based hosting technology for deploying OutSystems a
 
 SSL offloading **is required** to run applications in containers. Follow the instructions presented in [End-to-end SSL and SSL Offloading](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Using_OutSystems_in_Reverse_Proxy_Scenarios/03_OutSystems_configurations_in_reverse_proxy_scenarios#C_-_End-to-end_SSL_and_SSL_Offloading). Note that you **do not** need to follow the step instructing you to add a new record to the `OSSYS_PARAMETER` table, since the platform already does this step for you when deploying to containers.
 
+### Network latency
+
+Even though OutSystems is built to scale horizontally, you need to consider the network latency between the database server, the Platform Server, and the front-end servers. For this reason, it’s advisable to have all servers that make up an environment, running under the same provider.
+
+As an example, if you are using Amazon RDS as your database server and running the Platform Server on your own infrastructure, the application’s performance will be degraded.
+
 ### Experience Builder
 
 Experience Builder must be able to connect to the environment where you want Experience Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
@@ -97,12 +103,6 @@ Alternatively, ensure that the front ends of the environment used with Workflow 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
 workflowbuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
-
-### Network latency
-
-Even though OutSystems is built to scale horizontally, you need to consider the network latency between the database server, the Platform Server, and the front-end servers. For this reason, it’s advisable to have all servers that make up an environment, running under the same provider.
-
-As an example, if you are using Amazon RDS as your database server and running the Platform Server on your own infrastructure, the application’s performance will be degraded.
 
 ## Network infrastructure requirements
 

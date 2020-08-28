@@ -96,7 +96,7 @@ experiencebuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>1
 
 ### Workflow Builder
 
-[Workflow Builder] must be able to connect to the environment where you want Workflow Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
+[Workflow Builder](http://workflowbuilder.outsystems.com/) must be able to connect to the environment where you want Workflow Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
 
 Alternatively, ensure that the front ends of the environment used with Workflow Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 

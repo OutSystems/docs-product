@@ -150,11 +150,11 @@ Follow these steps to check if an app receives store-only updates or hybrid upda
 
 1. Click **Settings** to open the app settings screen.
 
-   ![App details screen in LifeTime](images/app-details-lt.png?width=600)
+   ![App details screen in LifeTime](images/app-details-lt.png?width=400)
 
 1. At the top of the screen, click the name of the environment in **Settings in (ENVIRONMENT)**, and then select the environment from the list.
 
-    ![The environment selection list in LifeTime app settings](images/app-settings-select-environment-lt.png?width=600)
+    ![The environment selection list in LifeTime app settings](images/app-settings-select-environment-lt.png?width=400)
 
 
 1. Scroll down to the **Advanced** section and check the text next to **Native Mobile Application Updates**:
@@ -162,7 +162,7 @@ Follow these steps to check if an app receives store-only updates or hybrid upda
     * **Automatically pushed through your servers.** The app receives hybrid updates.
     * **Distributed only through the app stores.** The app receives updates only through the app stores.
 
-    ![The advanced settings section and mobile updates configuration status](images/app-settings-advanced-updates.png?width=700)
+    ![The advanced settings section and mobile updates configuration status](images/app-settings-advanced-updates.png?width=600)
 
 ## How to develop an app that updates only through the app stores
 
@@ -188,7 +188,7 @@ If you're a Service Studio developer or LifeTime administrator, keep in mind the
 
 1. Consider reviewing and editing the upgrade messages that users see in the app. In Service Studio, go to the module properties and locate the **Upgrade Messages** section. Those messages are about hybrid updates, and don't fit cases where users need to update the app through the store. For example, following the instruction "tap here to update" works for an app with hybrid updates, but not for app with the store-only update setting.  
 
-    ![Default upgrade messages in Service Studio module properties](images/upgrade-messages-properties-ss.png?width=400)
+    ![Default upgrade messages in Service Studio module properties](images/upgrade-messages-properties-ss.png?width=350)
 
 1. Test your app extensively. With the store-only updates, your users may update the apps less frequently, and you need to ensure that the native shell, the client side, and the server side of your app work correctly for all existing and new users.
 

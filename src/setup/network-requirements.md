@@ -108,3 +108,24 @@ To use [Architecture Dashboard](https://architecture.outsystems.com), the Archit
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
 LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| Architecture Dashboard LifeTime plugin. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work).
+
+### Experience Builder
+
+Experience Builder must be able to connect to the environment where you want Experience Builder to publish. Ensure that the front ends of the environment accept inbound connections from the **Source** address.
+
+Alternatively, ensure that the front ends of te environment accept connections from the IP adresses in the **Notes**. These IP adresses are subject to change.
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+experiencebuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+
+### Workflow Builder
+
+Workflow Builder must be able to connect to the environment where you want use Workflow Builder to publish. Ensure that the front ends of the environment accept inbound connections from the **Source** address.
+
+Alternatively, ensure that the front ends of te environment accept connections from the IP adresses in the **Notes**. These IP adresses are subject to change.
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+workflowbuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+ 

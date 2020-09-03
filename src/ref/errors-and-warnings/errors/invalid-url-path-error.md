@@ -33,5 +33,15 @@ The `Invalid URL Path` error is issued in the following situation:
     You have an invalid URL set in the 'URL Path' property of a method from a REST API.
 
     Review the syntax of the URL path.
+    
+* `Invalid URL characters in property 'URL Path' of the (<method name>) REST API method.`
+
+    Within the 'URL Path', "/", ";", "?" are reserved.
+    
+    The "/" character may be used within HTTP to designate a hierarchical structure.
+
+    The "{" and "}" are used in the ServiceStudio 'URL Path' to designate an input variable to the method.
+    
+    The hyphen (-} is currently a restricted character in ServiceStudio for the "Name" properties and cannot be used in the 'URL Path'.
 
 Double-click on the error line to take you directly to the REST API method's property list where the problem was detected.

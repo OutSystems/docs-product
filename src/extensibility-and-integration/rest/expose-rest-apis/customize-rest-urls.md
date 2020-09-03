@@ -69,11 +69,31 @@ Default Endpoint  |  URL Path  |  Customized Endpoint
 ---|---|---  
 `GET /PhoneAPI/rest/v1/GetContactAddresses` | `/Contacts/{Id}/Addresses` | `GET /PhoneAPI/rest/v1/Contacts/{Id}/Addresses`
 
+## URI case for resource names
+
+There are 3 accepted naming conventions:
+
+* camelCase
+
+* snake_case
+
+* kebab-case or spinal-case
+
+They have their origin in programming languages that have restricted characters which can be used in naming.
+
+The habit is universal and adhering to a single naming convention will help create understandable API's.
+
+Each has some drawbacks with regards to readability or usability.
+
+Due to a limitation that currently exists in ServiceStudio, the hyphen "-" cannot be used in the URL Path to create custom endpoints.
+
 ## Important remarks
 
 * Due to a .NET limitation, the last part of the URL — the part after the last "/" (slash) character — can't contain a "." (period) character, otherwise method calls won't work.
 
-* You can't use the reserved characters "?" and "=" in custom REST URLs of exposed REST API methods.  
+* A forward slash "/" as the last character of the URL Path does not add any definition or explanation to the URL Path, so it is best to not include it.
+
+* You can't use the reserved characters "?", ";" and "=" in custom REST URLs of exposed REST API methods.  
     These characters belong in the query string part of URLs (the part of the URL that starts with a "?" character), and the platform manages the query string part of URLs in exposed REST URL methods.
 
 * When calling an exposed REST API method you must provide any input parameters with the **Receive In** property set to "URL" that aren't included in the custom URL as part of the query string.

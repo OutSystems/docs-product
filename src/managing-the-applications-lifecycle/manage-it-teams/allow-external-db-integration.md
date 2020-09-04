@@ -24,7 +24,7 @@ To do this:
 
     ![grant publish security level](images/external-db-integration-connection-security-sc.png?width=600)
 
-Granting **Publish** security level to the **Integrator** role on the database connection, allows the developers assigned with this role as **Default Role** to publish extensions, through Integration Studio, that use this database connection. However, this security level doesn't allow the developers to change the settings of the database connection.
+Granting the security level **Publish** to the **Integrator** role on the database connection, allows the developers assigned with this role as **Default Role** to publish extensions, through Integration Studio, that use this database connection. This security level doesn't allow the developers to change the settings of the database connection.
 
 Other developers will then be able to use those extensions to access the data on the external database.
 

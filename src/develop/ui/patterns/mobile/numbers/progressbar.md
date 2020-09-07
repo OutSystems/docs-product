@@ -5,13 +5,12 @@ summary: Progress Bar displays the progress of a task by incrementing values in 
 
 # Progress Bar
 
-You can use the Progress Bar to display percentage values by incrementing values in a bar, and to show the current progress of a task flow. <!--You can also show progress in a Progress Circle or a Progress Circle Fraction. When using the Progress Bar UI Pattern, be consistent, for example, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. -->
+You can use the Progress Bar to display percentage values by incrementing values in a bar, and to show the current progress of a task flow. 
 
 ![](<images/progressbar-1-ss.png>)
 
 **How to use the Progress Bar UI Pattern**
-
-In this example, we display the percentage of shipped orders from an existing Customer Order Database.
+In this example, we display the percentage of current users that are active using an existing User database.
 
 1. In Service Studio, in the Toolbox, search for `Progress Bar`.
 
@@ -23,60 +22,49 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
     ![](<images/progressbar-3-ss.png>)
 
-    By default, the Progress Bar widget contains a Title and Value placeholder.
+1. On the **Properties** tab, in the **Progress** property, enter the progess percentage. In this example we enter `55` but you can also use functions or local variables.
 
     ![](<images/progressbar-4-ss.png>)
 
-1. Right-click your screen name and select **Add Preparation**.
-
-1. From the Toolbox, drag an Aggregate onto the screen preparation, and enter a name for the aggregate. In this example, we call the aggregate **GetTotalOrders**.
+1. Add the text you want to appear as the Progress Bar title. In this example, we add ``On Going``.
 
     ![](<images/progressbar-10-ss.png>)
+    
+1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, and size of the Progress Bar.
 
-1. To add a database entity, double-click the aggregate you just created and click on the aggregate screen.
+    ![](<images/progressbar-9-ss.png>)
 
-1. From the **Select Source** pop-up, choose the source entity and click **OK**. In this example, we select the **Order** database.
+After following these steps and publishing the module, you can test the pattern in your app.
+<!-- 
 
-    ![](<images/progressbar-11-ss.png>)
-
-1. Return to the screen preparation, and add another aggregate (See step 4). In this example we call the second aggregate **GetShippedOrders**.
-
-    ![](<images/progressbar-12-ss.png>)
-
-1. To add the relevant database entity, repeat steps 5 and 6.
-
-1. On the aggregate screen, click **Filters**, then **Add Filter**.
-
-1. In the **Filter Condition** pop-up, add the relevant logic for the filter and click **DONE**. In this example, to get all of the shipped orders, we add the following logic:
-
-    `Order.Status = Entities.OrderStatus.Shipped`
-
-    ![](<images/progressbar-13-ss.png>)
-
-1. Double-click your screen name, and on the **Properties** tab, from the **Percentage** drop-down, select **Expression Editor**.
-Enter the logic for the Progress Bar and click **DONE**.  This displays the percentage value as the stroke on the Progress Bar.
-
-    In this example, to show the percentage of shipped orders, we add the following:
-
-    `GetShippedOrders.Count / GetTotalOrders.Count * 100`
-
-    ![](<images/progressbar-14-ss.png>)
-
-1. From the Toolbox, drag an Expression widget into the **Value** placeholder, and on the **Properties** tab, from the **Value** drop-down, select **Expression Editor**.
-
-1. In the Expression Editor, enter the same logic as in step 11 (`GetShippedOrders.Count / GetTotalOrders.Count * 100`), and click **DONE**. This displays the percentage value on the Progress Bar.
-
-    ![](<images/progressbar-15-ss.png>)
-
-1. Add the text you want to appear as the Progress Bar title to the **Title** placeholder. In this example, we add "Total % of shipped Orders".
-
-    ![](<images/progressbar-16-ss.png>)
-
-1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, size, and orientation of the Progress Bar.
+1. To add a database entity, right-click the screen name and select **Fetch Data from Database**.
 
     ![](<images/progressbar-5-ss.png>)
 
-After following these steps and publishing the module, you can test the pattern in your app.
+1. To add a database entity, click the screen, and from the **Select Source** pop-up, choose the source entity and click **OK**. In this example, we select the **User** database.
+
+    ![](<images/progressbar-6-ss.png>)
+
+    The **GetUsers** aggregate is automatically created.
+
+    ![](<images/progressbar-7-ss.png>) 
+
+1. Create a local variable by right-clicking your screen name, and selecting **Add Local Variable**.
+
+1. Enter a name for the variable and set the data type. In this example we enter ``ProgressPercentage`` for the name and ``Decimal`` for the data type.
+
+    ![](<images/progressbar-8-ss.png>)
+
+1. From the Toolbox, drag an Expression widget into the Main Content area of the screen, and in the Expression Editor, enter the relevant logic. In this example we add the following:
+
+
+    ![](<images/progressbar-15-ss.png>) 
+    
+    -->
+
+
+
+
 
 ## Properties
 

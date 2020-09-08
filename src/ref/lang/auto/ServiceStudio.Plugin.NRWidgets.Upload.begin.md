@@ -8,6 +8,6 @@ Users can drag a file to the Upload widget in most **modern browsers**. However,
 
 <div class="info" markdown="1">
 
-The widget can handle files up to 250MB. Files larger than that may not be loaded and end up with 0 bytes.
+The widget can handle files up to 250MB. Files larger than that may not be loaded and end up empty.
 
 </div>

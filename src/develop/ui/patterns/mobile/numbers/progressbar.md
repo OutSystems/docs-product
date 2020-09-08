@@ -70,9 +70,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| Percentage (Integer): Optional  |  Percentage to display. You can use functions or local variables. |
-| Color (Color Identifier): Optional  | Progress bar color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - The progress bar color  is the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The progress bar color is red.</li></ul></p>  |
+| Progress (Integer): Mandatory  |  Percentage displayed on progress bar. You can use integers (usually between 0 and 100), functions, or local variables. |
+| Color (Color Identifier): Optional  | Progress bar color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - The progress bar color is the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The progress bar color is red.</li></ul></p>  |
+| Height (Integer): Optional  | Progress Bar height (in pixels). The default value is 12. |
+| AnimateInitialProgress (Boolean): Optional  | If True, the percentage progress in the progress bar is animated. This is the default. If False, the progress is not animated.   |
+| Text (Text): Optional  | Text to be displayed. If not defined, the progress percentage is displayed. |
 | Shape (Shape Identifier): Optional  |  Set the Progress Bar shape. The predefined options are: <ul><li>Rounded</li><li> Soft Rounded </li> <li>Sharp</li></ul><p>Examples <ul><li>_Blank_ - The Progress Bar has a rounded shape (Entities.Shape.Rounded). This is the default.</li><li>_Entities.Shape.Sharp_ - The Progress Bar has a sharp shape.</li></ul></p> | 
-| Size (ProgressBarSize Identifier): Optional  |  Set the Progress Bar size. The predefined options are: <ul><li>Extra Small</li><li>Small</li> <li>Base (default)</li></ul> |
-| IsInline (Boolean): Optional  | If True, the value placeholder is placed at the end of the line and the label placeholder is hidden. If False, the value and label of the placeholder are placed over the line. This is the default.|
 | ExtendedClass (Text): Optional  | Add custom style classes to the Progress Bar UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Progress Bar UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Progress Bar UI styles being applied.</li></ul></p> |

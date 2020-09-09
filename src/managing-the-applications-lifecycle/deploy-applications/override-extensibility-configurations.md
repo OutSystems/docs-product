@@ -35,4 +35,7 @@ To override the Extensibility Configurations of your mobile app for a specific e
 
 1. Press the **Save** button.
 
+> NOTE! Lifetime has an open issue which limits your configuration length to be max 555 characters of valid JSON data. If your custom configuration is longer than this, you will receive an error:
+> ![](images/override-extensibility-configurations-error-long-json.png)
+
 Now, when a new mobile app package is generated in this environment, the custom configurations will override the default configurations defined in the application module. Also, the custom configurations will be kept for the environment after new application deployments.

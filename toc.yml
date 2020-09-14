@@ -483,6 +483,7 @@
         - topics:
             - href: extensibility-and-integration/artificial-intelligence/chatbot/architecture.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-faq-chatbot.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/configuration-wizard.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-advanced-chatbot.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-custom-ui.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-outsystems-cards.md

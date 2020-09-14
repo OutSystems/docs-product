@@ -11,8 +11,8 @@ OutSystems is a low-code platform that lets you quickly create chatbots and add 
 
 To create a chatbot from the Chatbot component, you need:
 
-* A Microsoft Azure account and a permission to create and edit a bot service
-* Permissions to install Forge components in your environment 
+* A Microsoft Azure account and a permission to create and edit a bot service.
+* Permissions to install Forge components in your environment.
 
 </div>
 
@@ -35,4 +35,4 @@ Here is an overview of some use cases to get you started. The time to develop an
 | Shows cards with thumbnails, buttons, and files for download. | See [Reply with cards](guide-outsystems-cards.md). | Moderate
 | Has a fully custom interface. | See [Create custom chatbot UI](get-started-custom-ui.md). | Moderate
 
-Making a working chatbot is only part of the work towards creating a useful chatbot solution. You also need knowledge about designing interactive user experiences. Check out [Principles of bot design](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0) and [Writing for bots](https://docs.microsoft.com/en-us/style-guide/chatbots-virtual-agents/writing-bots) by Microsoft.
+Making a working chatbot is only part of the work towards creating a useful chatbot. You also need knowledge about designing interactive user experiences. Check out [Principles of bot design](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0) and [Writing for bots](https://docs.microsoft.com/en-us/style-guide/chatbots-virtual-agents/writing-bots) by Microsoft.

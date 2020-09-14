@@ -5,11 +5,11 @@ tags:
 
 # Create the chatbot resources in Azure
 
-This document contains instructions for using Azure resources to add and get configurations for your OutSystems chatbot. 
+This document contains instructions for using Azure resources to add and get configurations for your OutSystems chatbot. You need a valid Azure subscription to follow instructions in this document.
 
 <div class="info" markdown="1">
 
-You need a valid Azure subscription to follow instructions in this document.
+Just starting? Check the [chatbot configuration wizard](configuration-wizard.md) to speed up the setup of your chatbot.
 
 </div>
 
@@ -17,16 +17,23 @@ You need a valid Azure subscription to follow instructions in this document.
 
 Follow these instructions to create a QnA Maker service which you need for the FAQ chatbot. QnA Maker is part of Azure Cognitive Services.
 
-1. Log into the Azure portal at [portal.azure.com](https://portal.azure.com).
-2. Click the search field (or press **Ctrl + /** ) and enter `QnA Maker`. Locate the **Marketplace** section in the results and click **QnA Maker**.
+<div class="info" markdown="1">
+
+You can also use the [chatbot configuration wizard](configuration-wizard.md) to set up this part of chatbot.
+
+</div>
+
+1. Sign into the Azure portal at [portal.azure.com](https://portal.azure.com).
+
+1. Click the search field (or press **Ctrl + /** ) and enter `QnA Maker`. Locate the **Marketplace** section in the results and click **QnA Maker**.
    
     ![Azure portal search](images/azure-portal-qna-search.png?width=600)
 
-3. Enter the information for your QnA Maker and click **Create**. Here is what you need to provide:
+1. Enter the information for your QnA Maker and click **Create**. Here is what you need to provide:
 
     <div class="info" markdown="1">
 
-    The availability of the settings in Azure depend on how your Azure account is managed. You may create some of the resources or ask your administrators to do it for you. This may apply, for example, to your Azure subscription, resource group, available locations, and service plans.
+    The availability of the settings in Azure depends on your Azure account permissions. You may have to ask your administrators to create resources if your account doesn't have permissions to create them.
 
     </div>
 
@@ -36,7 +43,7 @@ Follow these instructions to create a QnA Maker service which you need for the F
     * **Resource group**. The resource group to which you want to add the bot.
     * **Azure search pricing tier**. The pricing tier for the service.
     * **Azure Search location**. The location of the datacenter from which the bot service runs.
-    * **App name**. The name of your bot service that is part of the URL to reach the service.
+    * **App name**. The name of your bot service that's part of the URL to reach the service.
     * **Website location**. The location where you deploy the service.
   
     Optional settings:
@@ -45,7 +52,7 @@ Follow these instructions to create a QnA Maker service which you need for the F
   
     ![Azure portal search](images/azure-qna-maker-service-new.png?width=500)
 
-4. Click **Create**. After validation and deployment, you are redirected to the Azure home page.
+1. Click **Create**. After validation and deployment, the website redirects you to the Azure home page.
 
     <div class="info" markdown="1">
 
@@ -62,17 +69,23 @@ Follow these instructions to create a QnA Maker service which you need for the F
 
 Follow these steps to add a direct line channel and allow the OutSystems chatbot component to communicate with the Azure chatbot back end.
 
-1. Log into the Azure portal at [portal.azure.com](https://portal.azure.com).
+<div class="info" markdown="1">
 
-2. Locate your bot name in **Recent resources** or search the bot in the search bar, then click the bot name. The settings page opens.
+You can also use the [chatbot configuration wizard](configuration-wizard.md) to set up this part of chatbot.
+
+</div>
+
+1. Sign into the Azure portal at [portal.azure.com](https://portal.azure.com).
+
+1. Locate your bot name in **Recent resources** or search the bot in the search bar, then click the bot name. The settings page opens.
 
     ![Web bot in Azure home](images/azure-web-app-bot-dashboard.png?width=500)
 
-3. Open **Channels** from the side menu, locate **Add a featured channel** and click **Configure direct line channel button**. A page to configure direct line opens. 
+1. Open **Channels** from the side menu, locate **Add a featured channel** and click **Configure direct line channel button**. A page to configure direct line opens. 
 
     ![New direct line channel for bot](images/azure-web-app-bot-service-direct-channel-new.png?width=500)
 
-4. In **Configure Direct Line** you can copy a direct line key now, or do it later when you are configuring the OutSystem component. Click **Done** to return to the main settings page.
+1. In **Configure Direct Line** you can copy a direct line key now, or do it later when you are configuring the OutSystem component. Click **Done** to return to the main settings page.
 
     ![Direct line channel secret key](images/azure-web-app-bot-service-direct-channel-key.png?width=500)
 
@@ -80,13 +93,21 @@ Follow these steps to add a direct line channel and allow the OutSystems chatbot
 
 This section shows you where to locate the Azure settings you need for the OutSystems chat component. You first need to [create a bot service in Azure](#create-bot-service) to get these parameters.
 
+<div class="info" markdown="1">
+
+You can also use the [chatbot configuration wizard](configuration-wizard.md) to set up this part of chatbot.
+
+</div>
+
 ### App id and password { #get-id-pass }
 
-Azure application and password fields are, by default, named **MicrosoftAppId** and **MicrosoftAppPassword**. They are listed under Configuration in the App Service Settings section.
+Azure application and password fields are, by default, named **MicrosoftAppId** and **MicrosoftAppPassword**. Find them under **Configuration** in the **App Service Settings** section.
 
 1. Open the chatbot configuration page. You can open it by clicking your bot name in the Azure home page or by searching for the bot name in the search bar.
-2. In the chatbot configuration page, click **Configuration** in the side menu.
-3. In the **Configuration** page, under the **Application settings** section, locate **MicrosoftAppId** and **MicrosoftAppPassword**. Click the eye icons to reveal the field values. Copy the values.
+
+1. In the chatbot configuration page, click **Configuration** in the side menu.
+
+1. In the **Configuration** page, under the **Application settings** section, locate **MicrosoftAppId** and **MicrosoftAppPassword**. Click the eye icons to reveal the field values. Copy the values.
 
     ![Configuration values for bot](images/azure-web-app-bot-service-direct-config.png?width=600)
 
@@ -97,12 +118,14 @@ Another way to get the settings is to download the source code. In the bot confi
 You can get the secret after you [create a direct line channel](#add-a-direct-channel-for-a-bot-service) for your bot. 
 
 1. Open the chatbot configuration page. You can open it by clicking your bot name in the Azure home page or by searching for the bot name in the search bar.
-2. In the chatbot configuration page, click **Channels** in the side menu.
-3. In the Connect to channels page, click **Edit** next to **Direct Line**. **Configure Direct Line** page opens.
+
+1. In the chatbot configuration page, click **Channels** in the side menu.
+
+1. In the Connect to channels page, click **Edit** next to **Direct Line**. **Configure Direct Line** page opens.
 
     ![Edit direct channel for bot](images/azure-web-app-bot-service-direct-channel-edit.png?width=600)
 
-4. In the **Configure Direct Line** page, click **Show** under one of the secret keys. Copy the value.
+1. In the **Configure Direct Line** page, click **Show** under one of the secret keys. Copy the value.
 
     ![Secret key of a direct channel for bot](images/azure-web-app-bot-service-direct-channel-key.png?width=600)
 
@@ -122,22 +145,29 @@ Follow these instructions if you need to create a generic bot service in Azure, 
 
 Follow these steps to create a bot service in Azure. This bot monitors for new messages from your users. 
 
-1. Log into the Azure portal at [portal.azure.com](https://portal.azure.com).
-2. Click the plus button titled **Create a resource**.
+<div class="info" markdown="1">
+
+You can also use the [chatbot configuration wizard](configuration-wizard.md) to set up this part of chatbot.
+
+</div>
+
+1. Sign into the Azure portal at [portal.azure.com](https://portal.azure.com).
+
+1. Click the plus button titled **Create a resource**.
 
     ![Azure portal](images/azure-add-resource-button.png?width=400)
 
-3. Select **AI + Machine Learning** and then click **Web App Bot**. A page to create In the new Web App Bot opens.
+1. Select **AI + Machine Learning** and then click **Web App Bot**. A page to create In the new Web App Bot opens.
     
     ![New Web App Bot](images/azure-web-app-bot-service-new.png?width=450)
     
-4. Enter the information for your bot and click **Create**. Here is what you need to provide:
+1. Enter the information for your bot and click **Create**. Here is what you need to provide:
 
     * **Bot handle**. Unique identifier for the bot.
     * **Subscription**. The Azure subscription you want to use for the bot.
     * **Resource group**. The resource group to which you want to add the bot.
     * **Location**. The location of the datacenter from which the bot service runs.
-    * **App name**. The name of your bot service that is part of the URL to reach the service.
+    * **App name**. The name of your bot service that's part of the URL to reach the service.
     * **Bot template**. Click to expand. In the **SDK language** select **C#**. For creating an echo bot, select **Echo Bot**. For advanced bot service select **Basic Bot**.
     * **App service plan / location**. This is a set of the compute resources which the bot uses.   
     * **Microsoft App ID and password**. Verify the selected option is **Autocreate App Id and password**.
@@ -146,18 +176,18 @@ Follow these steps to create a bot service in Azure. This bot monitors for new m
 
     <div class="info" markdown="1">
 
-    The availability of the settings in Azure depend on how your Azure account is managed. You may create some of the resources or ask your administrators to do it for you. This may apply, for example, to your Azure subscription, resource group, available locations, and service plans.
+    The availability of the settings in Azure depends on your Azure account permissions. You may have to ask your administrators to create resources if your account doesn't have permissions to create them.
 
     </div>
 
-5. You are back to the Azure home page and there's a notification that a deployment is in process. Once the deployment of your bot finishes, you can get the settings you need for the OutSystems Chatbot component.
+1. You are back to the Azure home page and there's a notification that a deployment is in process. Once the deployment of your bot finishes, you can get the settings you need for the OutSystems Chatbot component.
 
 ## Troubleshooting
 
 Here are troubleshooting tips that can help you resolve issues in Azure.
 
-### Azure resource provider is not registered
+### Azure resource provider isn't registered
 
-While creating a resource in Azure you get the following error: "Azure (resource name) resource provider is not registered, please click to search (resource handle) and register it first".
+While creating a resource in Azure you get the following error: "Azure (resource name) resource provider isn't registered, please click to search (resource handle) and register it first".
 
-Check if the combination of settings in **Subscription** and **Resource group** can be used together. You may be trying to create a resource in a group that doesn't belong to the subscription (or vice versa).
+Check if the combination of settings in **Subscription** and **Resource group** match. You may be trying to create a resource in a group that doesn't belong to the subscription, or vice versa.

@@ -3,23 +3,23 @@ summary: Generate a mobile app package for your mobile app to publish in the App
 tags: runtime-mobile; support-mobile; publish-application; apple-app-store; ios-app
 ---
 
-# Publish Your Mobile iOS Application to the Apple App Store
+# Publish your Mobile iOS application to the Apple App Store
 
 This article describes the process you must follow to publish your application to the Apple App Store. Before you proceed, ensure your app fulfills the general [pre-requirements](generate-and-publish-your-mobile-app-to-the-mobile-app-stores.md). 
 
-## Application Preparation
+## Application preparation
 
 You need to prepare your application for publishing. This means that you have to ensure that your application meets some rules required by the App Store.
 
-### Specific iOS Pre-requirements
+### Specific iOS pre-requirements
 
 iOS has graphics assets and app package requirements. Ensure you meet these pre-requirements by checking the following links:
 
 * [App preview specifications](https://help.apple.com/app-store-connect/#/dev4e413fcb8)
 * [Screenshot specifications](https://help.apple.com/app-store-connect/#/devd274dd925)
-* App package: [signed IPA file with the App Store build type](#Generate-the-iOS-App-Package-(IPA)).   
+* App package: [signed IPA file with the App Store build type](#Generate_the_iOS_App_Package_(IPA)).   
 
-### Preparation Checklist
+### Preparation checklist
 
 To publish in App Store, you need to ensure that your application complies to the [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/#before-you-submit), concerning:
 
@@ -29,9 +29,9 @@ To publish in App Store, you need to ensure that your application complies to th
 * Design
 * Legal
 
-## Publishing iOS Applications to App Store
+## Publishing iOS applications to App Store
 
-### Before You Start
+### Before you start
 
 To generate the release version of your iOS mobile app:
 
@@ -128,4 +128,4 @@ Only available if you enrolled in the [Apple Developer Program](https://develope
 
 Now that [your application is prepared](#Application-Preparation) and the IPA file generated you can now [submit your application for review](https://help.apple.com/app-store-connect/#/dev301cb2b3e). Apple is going to review your application before making it available in the App Store.
 
-The process is complete. You will receive feedback from Apple about your application soon.
+The process is complete. You'll receive feedback from Apple about your application submission.

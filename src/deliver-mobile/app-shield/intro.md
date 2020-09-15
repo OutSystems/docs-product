@@ -5,7 +5,7 @@ tags: support-application_development; runtime-mobile;
 
 # Harden the protection of mobile apps with AppShield
 
-OutSystems AppShield lets you harden the protection of your native Android and iOS apps. OutSystems AppShield is fully integrated with Mobile Apps Build Service (MABS) builds and adds protection at runtime and at rest.
+OutSystems AppShield lets you harden the protection of your native Android and iOS apps. OutSystems AppShield integrates with the Mobile Apps Build Service (MABS) version 6 builds and adds protection at runtime and at rest. For more information about the supported mobile operating systems and stacks, check out [MABS and mobile operating systems lifecycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions).
 
 <div class="info" markdown="1">
 

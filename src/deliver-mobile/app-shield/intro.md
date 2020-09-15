@@ -17,9 +17,9 @@ To use OutSystems AppShield, you need to have a license. If you haven't got it a
 
 To protect your apps with AppShield, you need to meet the following requirements.
 
-* You installed the AppShield plugin in your environment. You can [download the plugin from this link](https://drive.google.com/drive/folders/1bkb7LIV-LVVePniK-Zvb4gkfRYC7SE8E) after you have access to it.
+* You installed the AppShield plugin in your environment.
 * You have a license for AppShield.
-* You're using MABS 6.1 and later.
+* You're using MABS 6.1 or later.
 
 Additionally:
 

@@ -17,7 +17,7 @@ To use OutSystems AppShield, you need to have a license. If you haven't got it a
 
 To protect your apps with AppShield, you need to meet the following requirements.
 
-* You installed the AppShield plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/outsystems-appshield-plugin) in Forge. 
+* You installed the AppShield plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge. 
 * You have a license for AppShield.
 * You're using MABS 6.1 or later.
 

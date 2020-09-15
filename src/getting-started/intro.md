@@ -29,7 +29,7 @@ Built-in tutorial
 :   The quickest track to creating apps in OutSystems is through the interactive built-in tutorial. In Service Studio, open the Help menu and select **Build a App in 5 Minutes**. 
 
 Documentation tutorials
-:   You can also check the brief tutorials about creating a [mobile app](create-mobile.md) and a [reactive web app](create-reactive.md).
+:   You can also check the brief tutorials about creating a [mobile app](create-mobile.md) and a [reactive web app](create-reactive-web.md).
 
 Start from an existing sample app
 :   You can leverage a collection of existing apps in Service Studio to get you started. The experience includes a guided tour, which walks you through Service Studio and helps you customize and edit your new app. If you don't want to customize the app, you can also publish it and test right away. In Service Studio, create a new app and choose **Start from an app**.

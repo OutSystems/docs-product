@@ -3,9 +3,9 @@ summary: Protect your mobile apps against tampering. OutSystems AppShield harden
 tags: support-application_development; runtime-mobile;
 ---
 
-# OutSystems AppShield for native mobile apps
+# Harden the protection of mobile apps with AppShield
 
-OutSystems AppShield is a feature that lets you harden the protection of your native Android and iOS apps. OutSystems AppShield is fully integrated with Mobile Apps Build Service (MABS) builds and adds protection at runtime and at rest.
+OutSystems AppShield lets you harden the protection of your native Android and iOS apps. OutSystems AppShield is fully integrated with Mobile Apps Build Service (MABS) builds and adds protection at runtime and at rest.
 
 <div class="info" markdown="1">
 

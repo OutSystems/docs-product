@@ -21,13 +21,18 @@ The OutSystems community welcomes all. We invite you to join the community in th
 
 We provide free [online courses](https://www.outsystems.com/learn/courses/) that teach how to use OutSystems technologies. There are official workshops as well. You may decide to pursue a career in OutSystems low-code development, there is a certification program to help you achieve that.
 
-## Your first apps
+## Your first app
 
-The quickest track to creating apps in OutSystems through the interactive built-in tutorials. In Service Studio, open the Help menu and select **Build a Mobile App in 5 Minutes** or **Build a Web App in 5 Minutes**. You can also check the brief tutorials about creating a [web](create-web.md) and a [mobile app](create-mobile.md).
+You have several quick tracks to create your first app with Service Studio:
 
-## Sample applications
+Built-in tutorial
+:   The quickest track to creating apps in OutSystems is through the interactive built-in tutorial. In Service Studio, open the Help menu and select **Build a App in 5 Minutes**. 
 
-Find [sample apps](https://www.outsystems.com/forge/#category=applications) in Forge, an OutSystems repository where users can share their applications, components, and plug-ins. Sample apps are useful when you want to examine the logic behind the features and learn more about the OutSystems technologies. We recommend [installing and checking out](component.md) sample apps [Tasks Manager](https://www.outsystems.com/forge/component/1405/task-manager/) or [Directory](https://www.outsystems.com/forge/component/614/directory/) as examples of OutSystems key concepts for making apps.
+Documentation tutorials
+:   You can also check the brief tutorials about creating a [mobile app](create-mobile.md) and a [reactive web app](create-reactive.md).
+
+Start from an existing sample app
+:   You can leverage a collection of existing apps in Service Studio to get you started. The experience includes a guided tour, which walks you through Service Studio and helps you customize and edit your new app. If you don't want to customize the app, you can also publish it and test right away. In Service Studio, create a new app and choose **Start from an app**.
 
 ## Creating and deploying apps
 
@@ -46,4 +51,3 @@ Service Studio IDE runs on any computer that satisfies [system requirements](htt
 With Development Environment you also get [Integration Studio](../ref/integration-studio/workspace.md). Use it to [write extensions](../extensibility-and-integration/integration-studio/getting-started/intro.md) for your apps. For example, extend the functionality of the application logic or [build custom database connections](../extensibility-and-integration/connect-external-db.md).
 
 Our community has contributed many extensions which are available for download in [Forge](https://www.outsystems.com/forge/). For mobile apps, you can use some of the official [plug-ins](../extensibility-and-integration/mobile-plugins/intro.md) or [create plug-ins](../extensibility-and-integration/mobile-plugins/using-cordova-plugins.md) on your own.
-

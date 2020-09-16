@@ -31,6 +31,14 @@ For that, do the following:
 
     Make sure to set the "CustomizedResponse" output to the request after your preprocessing.
 
+    <div class="info" markdown="1">
+
+    The "ResponseText" and "ResponseBinary" attributes of the "Response" input parameter contain only the **response body** in serialized JSON format and in binary format, respectively. They don't include the headers that are part of the response.
+
+    If you fill in the "ResponseText" attribute of the "CustomizedResponse" output parameter with some value, this is the response that's sent to the API client, even if you also set the "ResponseBinary" attribute.
+
+    </div>
+
 Once defined and configured in the REST API, OutSystems executes the OnResponse callback for **all methods** exposed by the REST API.
 
 ## Example use case

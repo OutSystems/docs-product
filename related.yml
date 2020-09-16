@@ -832,6 +832,11 @@
         - "Forge Component: How to Add Custom Authentication to a REST API":
             https://www.outsystems.com/forge/component-overview/927/how-to-add-custom-authentication-to-a-rest-api
 
+- extensibility-and-integration/rest/expose-rest-apis/customize-rest-api-responses.md:
+    - external:
+        - "Blog post: How to Implement HTTP Status Codes When Exposing a REST API in OutSystems":
+            https://www.outsystems.com/blog/posts/implementing-http-status-code-exposing-rest/
+
 # --- Managing the Applications Lifecycle > Containers ---
 
 - managing-the-applications-lifecycle/containers/intro.md:

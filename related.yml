@@ -829,8 +829,11 @@
 
 - extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md:
     - external:
-        - "Forge Component: How to Add Custom Authentication to a REST API":
+        - "Forge: How to Add Custom Authentication to a REST API":
             https://www.outsystems.com/forge/component-overview/927/how-to-add-custom-authentication-to-a-rest-api
+    - one-way: develop/data/excel-bootstrap.md
+    - one-way: develop/reuse-and-refactor/expose-and-reuse.md
+    - one-way: ref/apis/auto/httprequesthandler-api.final.md
 
 - extensibility-and-integration/rest/expose-rest-apis/customize-rest-api-responses.md:
     - external:

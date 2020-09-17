@@ -5,31 +5,13 @@ tags: support-application_development; support-Front_end_Development; support-Fr
 
 # Application Templates
 
-OutSystems apps consists of Modules joined by an Application Template. Application Templates make development efficient because the apps based on them contain many predefined elements. For example, the apps have Theme, CSS, Layouts, Blocks, and logic.
+OutSystems apps consists of Modules that start from an Application Template. These make development efficient because the apps based on Application Templates contain many predefined elements. For example, they already have login and error screens, a theme, layout blocks, or any other elements...
 
-## Types of Application Templates
-
-There are three types of Application Templates, based on how they are created and distributed:
-
-* Built-in Application Templates
-* Custom Application Templates
-* Forge Application Templates
+There are built-in, custom and forge application templates.
 
 ### Built-in Application Templates
 
-The built-in Application Templates are created and maintained by OutSystems. Here are some of the templates.
-
-* Reactive Web Application Template: **Reactive Web App**
-* Mobile Application Templates: **Phone**, **Tablet**
-* Traditional Web Application Template
-
-The apps created from one of the built-in Application Templates inherit the features from OutSystems UI Framework and enable you to use:
-
-* OutSystems Theme, with predefined CSS styles.
-* Layout Blocks, with content placeholders.
-* Patterns, with user interface design patterns.
-* Optional components for richer user experience.
-* [Screen Templates](<../../develop/ui/screen-templates-use/intro.md>), for creating Screens that contain logic and sample data.
+Reactive Web App, Phone App, Tablet App and Traditional Web are Built-in Application Templates created and maintained by OutSystems. They reference the OutSystems UI Framework and enable you to use its theme, patterns, screen templates and other components.
 
 ### Custom Application Templates
 
@@ -38,3 +20,4 @@ These are Application Templates you create, based on the UI framework of the sou
 ### Forge Application Templates
 
 These are Application Templates provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates).
+

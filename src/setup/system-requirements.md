@@ -184,7 +184,7 @@ For the versions above, OutSystems only supports Windows editions that are [supp
 
 <div class="info" markdown="1">
 
-The 32-bit versions of Windows 10, Windows 8, and Windows 7 are supported up to Development Environment 11.6.7.
+The 32-bit versions of Windows 10, Windows 8, and Windows 7 are supported up to [Development Environment 11.6.7.](https://www.outsystems.com/Downloads/ScreenDetails.aspx?ComponentName=Development+Environment&MajorVersion=11&ReleaseId=19371)
 
 Microsoft Windows Server 2008 and Microsoft Windows Server 2012 are supported up to Development Environment 11.6.5.
 

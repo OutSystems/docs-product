@@ -60,6 +60,13 @@ Mobile best practices apply for PWA development as well, particularly about [des
 
 </div>
 
+<div class="warning" markdown="1">
+
+OutSystems identified an issue in Platform Server 11.9.0 where the stage of the value of the PWA toggle in LifeTime is not working as expected. If you wish to keep the distribution as PWA enabled/disabled in the target environment you should enable/disable the toggle in the target environment manually as the stage will not keep the value of the toggle from the source environment.
+This issue will be fixed for Platform Server 11.10.0.
+
+</div>
+
 ## Run the PWA
 
 Here is how you can run your PWA. Go to the app details in Service Studio and click **Distribute** tab:

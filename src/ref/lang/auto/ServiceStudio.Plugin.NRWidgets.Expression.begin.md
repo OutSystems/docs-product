@@ -1,3 +1,8 @@
+<div class="info" markdown="1">
+
+We've been working on this article. Please let us know how useful this new version is by voting.
+
+</div>
 
 The expression widget shows text or result of an expression at runtime. It's similar to the **print** command in other programming languages. To use the expression widget:
 

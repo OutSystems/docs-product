@@ -28,7 +28,7 @@ You can deactivate user feedback for an app the same way, this time turning the 
 
 <div class="warning" markdown="1">
 
-OutSystems has identified a temporary limitation in managing App Feedback. Once you turn on App Feedback in a Reactive Web App, you can't turn it off. The team behind the feature is working on a fix.
+OutSystems has identified a temporary limitation in managing App Feedback. Once you turn on App Feedback in a Reactive Web App, you can't turn it off. The fix will be available in Platform Server 11.10.0.
 
 </div>
 

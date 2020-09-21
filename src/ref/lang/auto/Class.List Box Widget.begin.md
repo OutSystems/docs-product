@@ -40,7 +40,7 @@ In the example above, the List Box displays the names of users as selectable val
 
 When there's a Submit operation, you can access the list of Records through the **List** runtime property of the widget. This property includes updated values in the IsSelected attribute according to the items the user selected.
 
-In the following example, the user selected the second value from a list (item 1 from the **List** runtime property has its IsSelected attribute set to `True`):
+In the following example, the user selects the second value from a list (item 1 from the **List** runtime property has its IsSelected attribute set to `True`):
 
 ![List Box runtime properties](images/listbox-runtime-list-ss.png)
 

@@ -4,7 +4,7 @@ Use an Aggregate to get data from a database in OutSystems. Follow the steps:
 
 1. Right-click a Screen or a Block and select **Fetch data from Database**. An empty Aggregate opens, and Service Studio shows that you need to add an Entity.
 
-   ![Crate new Aggregate](images/aggregate-create-ss.png?width=350)
+    ![Crate new Aggregate](images/aggregate-create-ss.png?width=350)
 
 1. With the Aggregate still open, navigate to **Data** > **Entities** > **Database**.
 

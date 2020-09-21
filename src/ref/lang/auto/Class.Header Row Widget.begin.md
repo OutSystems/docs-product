@@ -12,7 +12,7 @@ Widget containing the cells that are part of the header row of a [Table Records 
 
 ![Header Row widget selected in Service Studio](images/header-row-example-ss.png)
 
-When you add a Table Records Widget to a screen, the table gets a Header Row Widget automatically.
+When you add a Table Records Widget to a screen, the table gets a Header Row Widget automatically. To hide the header row of the table, set the **Show Header** property of the Table Records Widget to `No`.
 
 Each time you add or remove a new attribute to the Table Records Widget, Service Studio adds or removes a table [Cell](<Class.Cell Widget.final.md>) to/from both the Header Row and the regular table [Rows](<Class.Row Widget.final.md>) used to display data.
 

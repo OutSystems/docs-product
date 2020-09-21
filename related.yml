@@ -241,7 +241,12 @@
     - ref/lang/auto/Class.Go To Destination.final.md
     # Web Screen
     - ref/lang/auto/Class.Web Screen.final.md
-      
+
+- ref/lang/auto/Class.List Box Widget.final.md:
+    - ref/lang/auto/Class.Combo Box Widget.final.md
+    - develop/ui/patterns/web/controls/dropdown.md
+    - develop/ui/patterns/web/controls/dropdownselect.md
+
 # List Records Widget
 - ref/lang/auto/Class.List Records Widget.final.md:
     # Table Records Widget

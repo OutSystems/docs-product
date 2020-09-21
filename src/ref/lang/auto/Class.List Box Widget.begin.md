@@ -3,6 +3,12 @@ summary: Allows the user to select one or more values from a list of possible va
 tags: runtime-traditionalweb
 ---
 
+<div class="info" markdown="1">
+
+We've been working on this article. Please let us know how useful this new version is by voting.
+
+</div>
+
 Allows the user to select one or more values from a list of possible values.
 
 ![Example of a List Box Widget](images/listbox-example.png)

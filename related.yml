@@ -190,6 +190,9 @@
     - ref/lang/auto/Class.Table Records Widget.final.md
     # Table Widget
     - ref/lang/auto/Class.Table Widget.final.md
+    - external:
+        - "How to scroll records in a table with a fixed header":
+            https://success.outsystems.com/Documentation/How-to_Guides/Front-End/How_to_scroll_records_in_a_table_with_a_fixed_header
       
 # Image Widget
 - ref/lang/auto/Class.Image Widget.final.md:

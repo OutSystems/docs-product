@@ -17,11 +17,11 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
     ![Popup widget](images/popup-1-ss.png)
 
-1. Drag the Popup widget into the Main Content area of your screen. 
+1. Drag the **Popup** widget into the **Main Content** area of your screen. 
     
     ![Drag widget onto screen](images/popup-2-ss.png)
 
-1. Add a variable of boolean data type to the screen by right-clicking on your screen name and selecting **Add Local Variable**. In this example, we call the variable **ShowPopup**.
+1. Add a variable of boolean data type to the screen by right-clicking on your screen name and selecting **Add Local Variable**. In this example, we call the variable ``ShowPopup``.
         
     ![Add new local variable](images/popup-3-ss.png)
 
@@ -37,17 +37,17 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
     ![Add content to popup](images/popup-6-ss.png)
 
-1. Define the Close Popup button action by selecting the button, and from the **OnClick** dropdown, select **Create New Client Action**.
+1. Define the Close Popup button action by selecting the button, and from the **On Click** dropdown, select **New Client Action**.
 
     ![Create New Client Action](images/popup-8-ss.png)
 
-1. Drag an Assign onto the client action, and set the ShowPopup variable to False. 
+1. Drag an **Assign** onto the client action, and set the **ShowPopup** variable to **False**. 
 
     ![Add Assign to client action ](images/popup-7-ss.png)
 
     Clicking the Close Popup button sets the ShowPopup variable to False and closes the popup.
 
-1. Repeat step 7 for the Open Popup button, substituting the variable value to True. Clicking the Open Popup button sets the ShowPopup variable to True and opens the popup.
+1. Repeat steps 6 and 7 for the Open Popup button, substituting the variable value to True. Clicking the **Open Popup** button sets the ShowPopup variable to **True** and opens the popup.
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -61,39 +61,39 @@ Here's a [video tutorial about using Popup in Reactive Web and Mobile App](https
 
 To create and use a popup in Traditional Web Apps:
 
-1. In Service Studio, in the Toolbox, search for and drag the Link widget into the Actions area of your screen.
+1. In Service Studio, in the Toolbox, search for and drag the **Link** widget into the Actions placeholder of your screen.
 
     ![Drag Link widget to the screen](images/popupweb-1-ss.png)
 
-1. Enter a name and some text for the link. In this example we enter ``PopupLink`` for the link name and ``Show Popup`` as the link text.
+1. Enter a name and some text for the link. In this example we enter ``PopupLink`` for the link name and ``Show Popup`` as the link text. Ensure the **Method** property is set to **Navigate**.
 
     ![Enter link name and text](images/popupweb-2-ss.png)
 
-1. Create a new screen for the popup. Select the Widget Tree, and from the **Source Web Block** dropdown, select **Layouts\LayoutPopup**. 
+1. Create a new screen for the popup. Select the **Widget Tree**, and from the **Source Web Block** dropdown, select **Layouts\LayoutPopup**. 
 
     ![Web Block source properties](images/popupweb-3-ss.png)
 
-1. Delete everything from the screen except until you are left with the Main Content only.
+1. Delete the **Center**, **Left**, and **Right** placeholders from the screen until you are left with only the **MainContent** placeholder.
 
     ![Web Block source properties](images/popupweb-4-ss.png)
 
-1. Enter the popup content. In this example, we enter some text.
+1. Add the popup content. In this example, we add some text.
 
     ![Popup content](images/popupweb-5-ss.png)
 
-1. Select your main screen again, and from the **Properties** tab, set the link’s **Destination** property to the popup screen you just created.
+1. Select your main screen again, and from the **Properties** tab, set the link’s **On Click** property to the popup screen you just created.
 
     ![Link destination](images/popupweb-6-ss.png)
 
-1. From the Toolbox, search for and drag the Popup Editor widget into the Main Content area of your screen.
+1. From the Toolbox, search for and drag the **Popup Editor** widget into the **Main Content** area of your screen.
 
     ![Drag popup editor to screen](images/popupweb-7-ss.png)
 
-1. On the **Properties** tab, from the  **LinkOnButtonWidgetId** dropdown, select the Link widget Id. 
+1. On the **Properties** tab, from the  **LinkOnButtonWidgetId** dropdown, select the Link widget Id (in this example, PopupLink.Id). 
 
     ![Drag popup editor to screen](images/popupweb-8-ss.png)
 
-    You can also create a screen action for the Popup Editor widget by selecting **New Screen Action** from the **Destination** dropdown. In this example, we select New Screen Action, but leave the flow of the action empty.
+    You can also create a screen action for the Popup Editor widget by selecting **New Screen Action** from the **Destination** dropdown. In this example, we select **New Screen Action**, but leave the flow of the action empty.
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

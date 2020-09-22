@@ -13,7 +13,7 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
 1. In Service Studio, in the Toolbox, search for `Popup`.
 
-    The Popup widget is displayed. 
+    The **Popup** widget is displayed. 
 
     ![Popup widget](images/popup-1-ss.png)
 
@@ -21,7 +21,7 @@ To create and use a popup in Reactive Web and Mobile Apps:
     
     ![Drag widget onto screen](images/popup-2-ss.png)
 
-1. Add a variable of boolean data type to the screen by right-clicking on your screen name and selecting **Add Local Variable**. In this example, we call the variable ``ShowPopup``.
+1. Add a variable of boolean data type to the screen by right-clicking on your screen name (located in the element tree) and selecting **Add Local Variable**. In this example, we call the variable ``ShowPopup``.
         
     ![Add new local variable](images/popup-3-ss.png)
 
@@ -61,7 +61,7 @@ Here's a [video tutorial about using Popup in Reactive Web and Mobile App](https
 
 To create and use a popup in Traditional Web Apps:
 
-1. In Service Studio, in the Toolbox, search for and drag the **Link** widget into the Actions placeholder of your screen.
+1. In Service Studio, in the Toolbox, search for and drag the **Link** widget into the **Actions** placeholder of your screen.
 
     ![Drag Link widget to the screen](images/popupweb-1-ss.png)
 
@@ -81,7 +81,7 @@ To create and use a popup in Traditional Web Apps:
 
     ![Popup content](images/popupweb-5-ss.png)
 
-1. Select your main screen again, and from the **Properties** tab, set the link’s **On Click** property to the popup screen you just created.
+1. Select your main screen again, and from the **Properties** tab, set the link’s **On Click** destination property to the popup screen you just created.
 
     ![Link destination](images/popupweb-6-ss.png)
 

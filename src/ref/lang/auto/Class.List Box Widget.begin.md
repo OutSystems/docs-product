@@ -15,7 +15,7 @@ Allows the user to select one or more values from a list of possible values.
 
 <div class="info" markdown="1">
 
-Consider the following alternatives if your end users need to select only **one value** from a list:
+Consider the following alternatives if your users need to select only **one value** from a list:
 
 * [Combo Box Widget](<Class.Combo Box Widget.final.md>)
 * [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md) UI Pattern
@@ -26,9 +26,9 @@ The **Source Record List** property defines the source of the list of possible v
 
 The text for each value displayed in the List Box comes from the attribute set in the **Source Attribute** property.
 
-The List Box widget allows end users to select multiple values by default. You can configure the List Box widget to only allow users select one value from the list. Configure this behavior by setting the **Selection Mode** property to `Multiple` or `Single`, respectively.
+The List Box widget allows users to select multiple values by default. You can configure the List Box widget to only allow users select one value from the list. Configure this behavior by setting the **Selection Mode** property to `Multiple` or `Single`, respectively.
 
-End users can select multiple values from the list by pressing the `Ctrl` key while simultaneously selecting the values.
+Users can select multiple values from the list by pressing the `Ctrl` key while simultaneously selecting the values.
 
 ## Obtaining the values that the user selected
 
@@ -76,4 +76,4 @@ To maintain the selection when there's an Ajax refresh, you can follow an approa
 
 ## Combining with other widgets and UI Patterns
 
-If you're allowing end users to select multiple values in a List Box widget, consider using the [Dropdown Select](../../../develop/ui/patterns/web/controls/dropdownselect.md) UI Pattern together with the List Box. The Dropdown Select UI Pattern makes it easier for an end user to check the list items he already selected.
+If you're allowing users to select multiple values in a List Box widget, consider using the [Dropdown Select](../../../develop/ui/patterns/web/controls/dropdownselect.md) UI Pattern together with the List Box. The Dropdown Select UI Pattern makes it easier for an end user to check the list items he already selected.

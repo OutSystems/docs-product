@@ -1,4 +1,5 @@
 ---
+summary: Reference for the Table Records Widget providing details for each property.
 tags: runtime-traditionalweb
 ---
 

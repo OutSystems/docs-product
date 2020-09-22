@@ -1,47 +1,92 @@
 ---
 summary: Fetching data from the database using Aggregates.
-tags: support-application_development; support-Database; support-webapps
+tags: support-application_development; support-Database;
 ---
 
-# Fetch and Display Data from the Database
+# Fetch and display data from the database in OutSystems
 
-One of the most common operations in a data-driven application is fetching data from the database, for example, to display it on the screen. In OutSystems, Aggregates provide this functionality.
+You often need to fetch data from a database to, for example, show it on the screen. An efficient way to fetch data from databases in OutSystems is to use an Aggregate.
 
-To fetch data from the database in Reactive Web or Mobile:
+This document guides you through two steps:
 
-1. On the Interface tab, right-click a screen and select if you want to retrieve data from the database or from the local storage to add an aggregate.
-1. Open the aggregate, and drag the entities from where you want to fetch data from the Data tab to the aggregate.
-1. Access the data using the output list of the aggregate.
+1. Getting data. You first need to load some data from your database. The example uses Entities from OutSystems sample data, but you can use your Entities as well. 
+1. Showing data. Once your app has data, you can show all records or just some. The example uses the List widget, but you can add a Table or some other widget.
 
-To fetch data from the database in Traditional Web:
+## Fetch data from a database
 
-1. Drag the aggregate tool from the toolbox to any action flow. Aggregates are typically used in Preparation actions of screens.
-1. Open the aggregate, and drag the entities from where you want to fetch data from the Data tab to the aggregate.
-1. Access the data using the output list of the aggregate.
+Here is how you can fetch data in your app by using an Aggregate. Aggregates are a handy way to get data, and they don't require knowledge of databases. As this is a simple app, you can reference the data directly from the main module.
 
-## In Reactive Web and Mobile
+<div class="info" markdown="1">
 
-In the following steps, we will fetch Places from the database of a mobile app called GoOut. Then we will use the List widget to display them on the screen.
+This is an example of getting data with an Aggregate to a Screen. Both Aggregate and Screen run in the **client**. For more information about creating Aggregates in the **server** logic, see [Server-side Aggregates](../../../ref/lang/auto/Class.Aggregate.final.md#server-side-aggregates).
 
-1. On the Interface tab, right-click on the screen where you will display the data and select  Fetch Data from Database to add an aggregate to the screen.
-1. Open the aggregate and drag the Place entity from the Data tab to the aggregate.
-1. Drag the List widget from the toolbar onto the screen.
-1. Set the Source property of the widget to `GetPlaces.List` to bind the data of the aggregate to the widget.
-1. To define what to display, drag the Name and Address attributes of the aggregate from the Interface tab into the List widget.
-1. Publish the application.
+</div>
 
-![Fetch and Display Data](images/fetch-display-mobile.gif)
+1. Start by [creating a new app](../../../getting-started/create-reactive-web.md#new-app).
 
-## In Traditional Web
+1. Add a Screen to your app. Go to **Interface** > **UI Flows**, right-click **MainFlow** and select **Add Screen**. In the **New Screen** window select **Empty**, enter **Home** as the Screen name, then click **CREATE SCREEN**. Service Studio adds an empty Screen to your app.
 
-In the following steps we will fetch Places from the database of a web app called GoOutWeb. Then we will use a Table Records widget to display them on the screen.
+    ![New screen window](images/new-screen-ss.png?width=700)
+   
+1. Add data sources to your app by referencing some Entities in the **Manage Dependencies** window (**Ctrl+Q**). This example app [references OutSystems sample data](../../../develop/ui/screen-templates-create/sample-data.md#Referencing_sample data_in_apps). Once you reference Entities, they're available in Service Studio under **Data** > **Entities** > **Database**.
 
-1. Add the Preparation action to the Places screen, and open it.
-1. Drag the aggregate from the toolbar to the Preparation action. Then double-click on the aggregate to open it.
-1. Drag the Place entity from the Data tab to the aggregate.
-1. On the screen, add a Table Records widget from the toolbar.
-1. Set the widget's  Source Record List property to `GetPlaces.List`. This binds the data to the widget.
-1. Drag the Place entity from the Data tab to the Table Records widget on the screen.
-1. Publish the application.
+    ![Database Entities in Service Studio](images/database-entities-ss.png?width=350)
 
-![Fetch and Display Data](images/fetch-display-web.gif)
+    <div class="info" markdown="1">
+
+    Instead of referencing existing Entities, you can [importing data from Excel](../excel-bootstrap.md) and create new Entities.
+
+    </div>
+
+1. Publish the app by clicking the **1-Click Publish button**. This step is optional, but it lets the app show the data preview later.  
+
+1. It's time to load some data to the Screen. Go to **Interface** > **UI Flows** > **Main Flow**, and then right-click your **Home** Screen. Select **Fetch Data from Database**. A new Aggregate edit screen opens, and there's a notice that you need some data.
+
+    ![An empty Aggregate](images/fetch-data-aggregate-open-ss.png?width=800)
+
+1. With the Aggregate still open, navigate to **Data** > **Entities** > **Database** > **OutSystemsSampleDataDB**. Drag the **Sample_Employee** Entity to the Aggregate window. If you're using your data instead of OutSystems sample data, then drag some other Entity. Service Studio shows the data preview in columns, and uses the Entity name to name the Aggregate.
+   
+    ![Aggregate shows data preview](images/fetch-data-aggregate-with-entity-ss.png?width=800)
+
+    <div class="info" markdown="1">
+
+    If you don't see a preview, but warnings instead, go ahead and publish your app to update the references and refresh the preview.
+
+    </div>
+
+1. Go back to **Interface** > **UI Flows** > **Main Flow** > **Home** and notice the **GetEmployees** Aggregate in the Screen. Expand the Aggregate to see the Entities, and then expand the Entities to list the Attributes. There's also a warning that you're not using the data anywhere. Follow the instructions on [how to show the data in an app](#showing-data) to prevent the warning. 
+
+    ![Aggregate in the Screen](images/fetch-data-aggregate-in-screen-ss.png?width=350)
+
+
+## Show data in a widget
+
+Once you fetch data from the database, use one of many OutSystems widgets to show the data to the users. Continuing from the previous section, in this example you create a list with the employee last names.
+
+1. Open your **Home** Screen for editing. To do that, double-click **Home** in  **Interface** > **UI Flows** > **Main Flow**.
+
+1. In the search bar, search for the **List** widget and drag the widget to the Screen. Service Studio now shows an empty List widget.
+
+    ![A widget and screen](images/fetch-data-new-widget-ss.png?width=600)
+
+1. Click the List widget to select it, and go to the properties. In the **Source** field select **GetEmployees.List**. With this you're telling the app which data source to use with this widget.
+
+    ![Widget and the SOurce property](images/fetch-data-widget-with-data-source-ss.png?width=700)
+
+    <div class="info" markdown="1">
+
+    The **Sample_Employees** Entity comes from the OutSystems sample data. See the [fetching data](#fetch-data-from-a-database) section for more information.
+
+    </div>
+
+1. With your List widget connected to a data source, add some Attributes to show data in the List. Expand the Entity to see the Attributes, under **Interface** > **UI Flows** > **Main Flow** > **Home** > **GetEmployees** > **Sample_Employee**. Drag an Attribute, for example, **LastName** to the List widget. This tells the widget to list all last names that are in the database.
+
+    ![Drag an Entity Attribute to the widget](images/fetch-data-drag-attribute-ss.png?width=700)
+
+1. Publish your ap and load it in the browser. There's a list widget listing the last names of the employees.
+
+    ![App running in the browser](images/fetch-data-browser.png?width=400)
+
+## Traditional Web App
+
+For more information on how to add an Aggregate in Traditional Web App, see [Aggregates in Traditional Web Apps](../../../ref/lang/auto/Class.Aggregate.final.md#traditional-web-apps).

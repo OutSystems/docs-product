@@ -290,8 +290,6 @@
       
 # Table Records Widget
 - ref/lang/auto/Class.Table Records Widget.final.md:
-    # Fetch and Display Data from the Database
-    - develop/data/query/fetch-display.md
     # List
     - ref/data/data-types/list.md
       

@@ -22,7 +22,7 @@ This is the overview of what we are about to do:
 5. Implement functionality to delete records.
 6. Test the application in a browser.
 
-## Create a Reactive Web App
+## Create a Reactive Web App { #new-app }
 
 <div class="info" markdown="1">
 

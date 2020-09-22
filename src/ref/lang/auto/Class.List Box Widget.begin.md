@@ -46,7 +46,7 @@ In the example above, the List Box displays the names of users as selectable val
 
 When there's a Submit operation, you can access the list of Records through the **List** runtime property of the widget. This property includes updated values in the IsSelected attribute according to the items the user selected.
 
-In the following example, the user selects the second value from a list (item 1 from the **List** runtime property has its IsSelected attribute set to `True`):
+In the following example, the user selects the second value from a list (item `[1]` from the **List** runtime property has its IsSelected attribute set to `True`):
 
 ![List Box runtime properties](images/listbox-runtime-list-ss.png)
 
@@ -54,7 +54,7 @@ In the following example, the user selects the second value from a list (item 1 
 
 You must take care when using Ajax refresh operations to refresh the List Box widget. Doing a refresh clears the currently selected values.
 
-Executing any action that performs a Submit operation (for example, clicking on a button or link whose **Method** property is set to `Submit`) also clears the current selection of the List Box widget.
+Executing any action that performs a Submit operation (for example, clicking on a button or link with the *Method* property set to `Submit`) also clears the current selection of the List Box widget.
 
 To maintain the selection when there's an Ajax refresh, you can follow an approach similar to the following:
 

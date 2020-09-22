@@ -33,11 +33,11 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
 1. Add your content to the popup.
 
-    In this example, we add some text and a Close Popup button. We also add a Show popup button to the Actions area of the screen.
+    In this example, we add some text and a **Close Popup** button. We also add a **Show Popup** button to the **Actions** screen area.
 
     ![Add content to popup](images/popup-6-ss.png)
 
-1. Define the Close Popup button action by selecting the button, and from the **On Click** dropdown, select **New Client Action**.
+1. Select the **Close Popup** button, and from the **On Click** dropdown, select **New Client Action**.
 
     ![Create New Client Action](images/popup-8-ss.png)
 
@@ -45,7 +45,7 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
     ![Add Assign to client action ](images/popup-7-ss.png)
 
-    Clicking the Close Popup button sets the ShowPopup variable to False and closes the popup.
+    Clicking the **Close Popup** button sets the **ShowPopup** variable to **False** and closes the popup.
 
 1. Repeat steps 6 and 7 for the Open Popup button, substituting the variable value to True. Clicking the **Open Popup** button sets the ShowPopup variable to **True** and opens the popup.
 

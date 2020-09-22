@@ -3,7 +3,7 @@ summary:  Learn how to use the Table Records widget to display the records of an
 tags: runtime-traditionalweb; 
 ---
 
-# Table Records
+# Table Records Widget
 
 You can use the Table Records widget to display the records of an entity or a structure in a tabular layout.
 

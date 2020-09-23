@@ -11,28 +11,44 @@ Create new Screen Templates and make them available in your environment by addin
 
 To add new Screen Templates to your environment, you first need at least one clone of [Custom Screen Templates Web](<https://www.outsystems.com/forge/component-overview/5089/custom-screen-templates-web>) or [Custom Screen Templates Mobile](<https://www.outsystems.com/forge/component-overview/5060/custom-screen-templates-mobile>).
 
-1. Go to the Forge repository tab in Service Studio and search for **Custom Screen Templates**. There are two components in the results list, one for Mobile Apps and one for Web Apps.
+1. In Service Studio, go to the **outsystems** tab and search for **Custom Screen Templates**. There are three components in the results list; one for Mobile Apps, one for Reactive Apps, and one for Web Apps.
 
-    ![Forge results for Custom Screen Templates](images/forge-search-results.png?width=500)
+    ![Forge results for Custom Screen Templates](images/forge-1-ss.png)
     
-1. Select a component to go to the next screen. Click **Open Module** to continue. A new tab opens in Service Studio.
- 
-    ![Forge component details page](images/forge-inside-component.png?width=500)
+1. Click one of the components and then click **Open Module**. 
      
-1. Wait for the module to load, and then click **Open a clone** in the dialog. 
+    ![Forge component details page](images/forge-2-ss.png)
+
+    A new tab opens in Service Studio displaying a warning message.
+     
+1. Click **Open a Clone**.
+
+    ![Open clone confirmation dialog](images/forge-3-ss.png)
+
+1. Once a clone of the module is created, click **Close**.
+
+    ![Close clone dialog box](images/forge-4-ss.png)
+
+1. This is an optional, but a highly recommended step. 
+
+    Go to the **Interface** tab, click the module title in the element tree, and edit the **Name** property to, for example, ``MyCustomScreenTemplatesWeb`` or ``MyCustomScreenTemplatesMobile``. 
     
-    ![Open clone confirmation dialog](images/clone-confirm.png?width=400)
+    ![Rename module name ](images/forge-5-ss.png)
+    
+    This makes the names of the cloned modules more meaningful.
 
-1. Once a clone of the module is created, click **Close** to dismiss the confirmation dialog.
+1. Publish the module. 
 
-1. This is an optional, but a highly recommended step. Go to the **Interface** tab, click the module title in the tree and edit the **Name** property to, for example, "MyCustomScreenTemplatesWeb" or "MyCustomScreenTemplatesMobile". This makes the names of the cloned modules more meaningful.
+    The module is now available on the **Development** tab, in **Independent Modules**.
 
-1. Publish the module. The module is now available in Applications > **Independent Modules**.
+    ![Rename module name ](images/forge-6-ss.png)
+
+    ![Cloned module ](images/forge-7-ss.png)
 
 1. Go to **Independent Modules** and move your Custom Screen Templates Module to another application. Move your mouse pointer over the module name to reveal the **Move to**
  command, and then click it.
     
-    ![Independent modules](images/cloned-in-independent-modules.png?width=500)
+   ![Independent modules](images/cloned-in-independent-modules.png)
 
 ## Creating new Screen Templates
 

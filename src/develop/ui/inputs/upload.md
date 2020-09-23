@@ -5,6 +5,12 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 
 # Enable End Users to Upload Files
 
+<div class="info" markdown="1">
+
+We've been working on this article. Please let us know how useful this new version is by voting.
+
+</div>
+
 Use the Upload widget to allow users to upload files, such as photos to your application.
 
 ## Reactive Web and Mobile

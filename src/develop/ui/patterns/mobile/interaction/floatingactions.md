@@ -25,7 +25,7 @@ Use the Floating Action UI Pattern to show the primary action on a screen. Choos
 
 1. Add the relevant content to the placeholders.
 
-    In this example, we add text to the Label placeholders and a linked icons to the Item placeholders.  
+    In this example, we add text to the Label placeholders and linked icons to the Item placeholders.  
 
     ![](<images/floatingactions-3-ss.png>)
 

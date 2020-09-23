@@ -19,7 +19,6 @@ OutSystems UI Mobile Framework offers you different patterns that you can drag a
 * [Master Detail](<adaptive/masterdetail.md>)
 * [Range Slider Interval](<interaction/rangesliderinterval.md>)
 * [Range Slider](<interaction/rangeslider.md>)
-* [Split Screen](<splitscreen.md>)
 * [Stacked Cards](<interaction/stackedcards.md>)
 * [Swipe Events](<utilities/swipeevents.md>)
 * [Tabs](<navigation/tabs.md>)

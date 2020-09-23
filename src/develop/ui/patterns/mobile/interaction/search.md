@@ -27,18 +27,18 @@ You can use the Search UI Pattern to provide users with a search field. Use the 
 
     ![](<images/search-3-ss.png>)
 
-1. Enter a name for the variable. 
-    
-    In this example, we enter ``SearchText``.
+1. Enter a name for the variable.
 
-   ![](images/search-4-ss.png)
+    In this example, we enter `SearchText`.
 
-   This variable holds the value entered by the user. This variable can be reused throughout your app.
+    ![](images/search-4-ss.png)
+
+    This variable holds the value entered by the user. This variable can be reused throughout your app.
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
-| **Properties** |  **Description** |  
+| Properties | Description |
 |---|---|
-|ExtendedClass (Text): Optional | Add custom style classes to the Search UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value). </li><li>_"myclass"_ - Adds the _myclass_ style to the Search UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Search UI styles being applied.</li></ul> |  
+| ExtendedClass (Text): Optional | Add custom style classes to the Search UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value). </li><li>_"myclass"_ - Adds the _myclass_ style to the Search UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Search UI styles being applied.</li></ul> |  

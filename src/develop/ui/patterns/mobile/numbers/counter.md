@@ -57,10 +57,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-<<<<<<< HEAD
-| Property |  Description |
+| Property | Description |
 |---|---|
 | BackgroundColor (Color Identifier): Optional  | The counter's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - No background color is applied to the counter. This is the default.</li><li>_Entities.Color.Red_ - Displays a red counter.</li></ul></p>  |
 | Height (Text): Optional | The counter's height (in pixels units). By default the counter height is 100 (pixel units). |
 | ExtendedClass (Text): Optional | Add custom style classes to the Counter UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Counter UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Counter UI styles being applied.</li></ul></p> |
->>>>>>> master-withchanges

@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Wizard splits complex tasks and process into steps.
 ---
 
-# Wizard 
+# Wizard
 
 You can use the Wizard UI Pattern to split large complex tasks and processes into smaller manageable steps. A wizard presents a series of steps or conditions that the user needs to complete in order to accomplish a goal. Additionally, wizards usually include explicit button navigation to move a step forward or backward. Some wizard examples include software installation wizards and sign-up screens.
 
@@ -50,7 +50,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. From the Element tree, create an Input Parameter by right-clicking on your screen, and from the drop-down, select **Add Input Parameter**.
 
-    The input parameter controls which Wizard step is shown to the user. 
+    The input parameter controls which Wizard step is shown to the user.
 
     ![](images/wizard-7-ss.png)
 
@@ -141,15 +141,15 @@ After following all of the steps in each of the sections, you can publish the mo
 
 ### Wizard
 
-| Property |  Description |
+| Property | Description |
 |---|---|
-| IsVertical (Boolean): Optional  | If True the wizard is displayed vertically. If False, the wizard is displayed horizontally. This is the default.|
-| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_''myclass''_ - adds the _myclass_ style to the Wizard UI styles being applied</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied.</li></ul></p> |
+| IsVertical (Boolean): Optional | If True the wizard is displayed vertically. If False, the wizard is displayed horizontally. This is the default.|
+| ExtendedClass (Text): Optional | <p>Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_"myclass"_ - adds the _myclass_ style to the Wizard UI styles being applied</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied.</li></ul></p> |
 
 ### Wizard Item
 
 | Property |  Description |
 |---|---|
-| Status (Step Identifier): Mandatory | <p>Set the status of the Wizard Item relative to the current step of the Wizard. You can customize an expression to set the status of the Wizard Item or you can use the predefined values Active, Next, and Past. </p><p>Examples <ul><li>_Entities.Step.Active_ - Sets the Wizard Item to active, that is, the current step the user is on.</li><li>_Entities.Step.Next_ - Sets the Wizard Item to incomplete, that is, a step that is yet to be completed by the user.</li><li>_Entities.Step.Past_ - Sets the step to inactive, that is, a step that has already been completed by the user.</li></ul></p>| 
-| UseTopLabel (Boolean): Optional  | If True, the label (text descibing the step) is placed above the icon. If False, the label is placed below the icon. This is the default.| 
-| ExtendedClass (Text): Optional | <p>Add custom style classes to the Wizard Item UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_''myclass''_ - Adds the myclass style to the Wizard Item UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Wizard Item UI styles being applied.</li></ul></p> | 
+| Status (Step Identifier): Mandatory | <p>Set the status of the Wizard Item relative to the current step of the Wizard. You can customize an expression to set the status of the Wizard Item or you can use the predefined values Active, Next, and Past. </p><p>Examples <ul><li>_Entities.Step.Active_ - Sets the Wizard Item to active, that is, the current step the user is on.</li><li>_Entities.Step.Next_ - Sets the Wizard Item to incomplete, that is, a step that is yet to be completed by the user.</li><li>_Entities.Step.Past_ - Sets the step to inactive, that is, a step that has already been completed by the user.</li></ul></p> |
+| UseTopLabel (Boolean): Optional  | If True, the label (text descibing the step) is placed above the icon. If False, the label is placed below the icon. This is the default. |
+| ExtendedClass (Text): Optional | <p>Add custom style classes to the Wizard Item UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_"myclass"_ - Adds the myclass style to the Wizard Item UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Wizard Item UI styles being applied.</li></ul></p> |

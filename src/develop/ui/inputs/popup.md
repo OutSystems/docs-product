@@ -13,21 +13,21 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
 1. In Service Studio, in the Toolbox, search for `Popup`.
 
-    The **Popup** widget is displayed. 
+    The **Popup** widget is displayed.
 
     ![Popup widget](images/popup-1-ss.png)
 
 1. Drag the **Popup** widget into the **Main Content** area of your screen. 
-    
+
     ![Drag widget onto screen](images/popup-2-ss.png)
 
-1. Add a variable of boolean data type to the screen by right-clicking on your screen name (located in the element tree) and selecting **Add Local Variable**. In this example, we call the variable ``ShowPopup``.
-        
+1. Add a variable of boolean data type to the screen by right-clicking on your screen name (located in the element tree) and selecting **Add Local Variable**. In this example, we call the variable `ShowPopup`.
+
     ![Add new local variable](images/popup-3-ss.png)
 
     ![Set variable to type Boolean](images/popup-4-ss.png)
 
-1. Select the Popup widget, and on the **Properties** tab, enter the new variable for the **Show Popup** property. This toggles the popup according to the variable value. 
+1. Select the Popup widget, and on the **Properties** tab, enter the new variable for the **Show Popup** property. This toggles the popup according to the variable value.
 
     ![Set variable to type Boolean](images/popup-5-ss.png)
 
@@ -41,7 +41,7 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
     ![Create New Client Action](images/popup-8-ss.png)
 
-1. Drag an **Assign** onto the client action, and set the **ShowPopup** variable to **False**. 
+1. Drag an **Assign** onto the client action, and set the **ShowPopup** variable to **False**.
 
     ![Add Assign to client action ](images/popup-7-ss.png)
 
@@ -65,11 +65,11 @@ To create and use a popup in Traditional Web Apps:
 
     ![Drag Link widget to the screen](images/popupweb-1-ss.png)
 
-1. Enter a name and some text for the link. In this example we enter ``PopupLink`` for the link name and ``Show Popup`` as the link text. Ensure the **Method** property is set to **Navigate**.
+1. Enter a name and some text for the link. In this example we enter `PopupLink` for the link name and ``Show Popup`` as the link text. Ensure the **Method** property is set to **Navigate**.
 
     ![Enter link name and text](images/popupweb-2-ss.png)
 
-1. Create a new screen for the popup. Select the **Widget Tree**, and from the **Source Web Block** dropdown, select **Layouts\LayoutPopup**. 
+1. Create a new screen for the popup. Select the **Widget Tree**, and from the **Source Web Block** dropdown, select **Layouts\LayoutPopup**.
 
     ![Web Block source properties](images/popupweb-3-ss.png)
 
@@ -81,7 +81,7 @@ To create and use a popup in Traditional Web Apps:
 
     ![Popup content](images/popupweb-5-ss.png)
 
-1. Select your main screen again, and from the **Properties** tab, set the link’s **On Click** destination property to the popup screen you just created.
+1. Select your main screen again, and from the **Properties** tab, set the link's **On Click** destination property to the popup screen you just created.
 
     ![Link destination](images/popupweb-6-ss.png)
 
@@ -89,7 +89,7 @@ To create and use a popup in Traditional Web Apps:
 
     ![Drag popup editor to screen](images/popupweb-7-ss.png)
 
-1. On the **Properties** tab, from the  **LinkOnButtonWidgetId** dropdown, select the Link widget Id (in this example, PopupLink.Id). 
+1. On the **Properties** tab, from the  **LinkOnButtonWidgetId** dropdown, select the Link widget Id (in this example, PopupLink.Id).
 
     ![Drag popup editor to screen](images/popupweb-8-ss.png)
 

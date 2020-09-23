@@ -42,7 +42,7 @@ In this example, we create a button that increments the progress circle fraction
 
 1. Select the Progress Circle Fraction widget, and on the **Properties** tab, you can change the Progress Circle Fraction's look and feel by setting the (optional) properties, for example, the color settings.
 
-    ![](<images/progresscircle-9-ss.png>)
+    ![](<images/progresscirclefraction-9-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. The result of this example should look someting like the following:
 

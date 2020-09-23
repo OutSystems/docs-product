@@ -22,7 +22,7 @@ This is the overview of what we are about to do:
 5. Implement functionality to delete records.
 6. Test the application in a browser.
 
-## Create a Reactive Web App
+## Create a Reactive Web App { #new-app }
 
 <div class="info" markdown="1">
 
@@ -66,7 +66,7 @@ To do this, we are going to use an Excel file that already contains the followin
 * Due Date
 * Is Active
 
-In the `ToDo` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel**, and select the sample file `Tasks.xlsx` available by default in the directory `C:\Program Files\OutSystems\Development Environment 11.0\Service Studio\TutorialResources`. Click **Import** in the dialog to confirm.
+In the `ToDo` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel**, and select the sample file `Tasks.xlsx` available by default in the directory `C:\Program Files\OutSystems\Development Environment 11\Service Studio\TutorialResources`. Click **Import** in the dialog to confirm.
 
 ![Create a Database Table from an Excel File](images/reactive-new-app-import-excel.png?width=600)
 

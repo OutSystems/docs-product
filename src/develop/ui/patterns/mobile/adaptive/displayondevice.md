@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: DisplayOnDevice improves the way information is displayed on different devices.
+summary: Display on Device improves the way information is displayed on different devices.
 ---
 
 # Display on Device

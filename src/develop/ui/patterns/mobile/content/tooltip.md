@@ -37,9 +37,9 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Properties** |  **Description** |  
+| Properties | Description |
 |---|---|
 | Position ( Position Identifier): Mandatory | Set the tooltip's position. The predefined options are:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul><p>Examples <ul><li>_Entities.Position.Right_ - The tooltip is displayed to the right of the element.</li><li>_Entities.Position.Bottom_ - The tooltip is displayed underneath the element.</li></ul></p> |
 | IsVisible (Boolean): Optional | If True, the tooltip is visible when the page is first loaded (without the need for the initial trigger). If False, the tooltip is not visible. This is the default. |
-| IsHover (Boolean): Optional | If True, the tooltip is triggered by hovering over the element. If False, the tooltip is not triggered by hovering over the element. This is the default.</li></ul></p> |
+| IsHover (Boolean): Optional | If True, the tooltip is triggered by hovering over the element. If False, the tooltip is not triggered by hovering over the element. This is the default. |
 | ExtendedClass (Text): Optional |  Add custom style classes to the Tooltip UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Tooltip UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Tooltip UI styles being applied.</li></ul></p> |

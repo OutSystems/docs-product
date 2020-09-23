@@ -41,7 +41,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen name.
 
-1. Select the Icon Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**, and in the Expression Editor enter the following expression and click **Done**. 
+1. Select the Icon Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**, and in the Expression Editor enter the following expression and click **Done**.
 
     `GetUsers.Count`
 
@@ -49,7 +49,7 @@ The following example demonstrates how you can display the number of registered 
 
     The **Number** property is now set to display the Count property of the Aggregate you created earlier, which gets and displays the number of users on your platform.
 
-1. On the **Properties** tab, you can customize the Icon Badge's look and feel by setting any of the optional properties, for example, the color. 
+1. On the **Properties** tab, you can customize the Icon Badge's look and feel by setting any of the optional properties, for example, the color.
 
     ![](<images/iconbadge-8-ss.png>)
 
@@ -57,9 +57,9 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property |  Description |
+| Property | Description |
 |---|---|
-| Number (Integer): Mandatory  | The number that appears inside the badge. Set this to a data source that contains the value you want to display. <p>Examples <ul><li>_VariableName_ - Displays the value that the variable "VariableName" holds at that time.</li><li>_ExampleAggregate.Name_ - Displays the names contained in the records returned by the "ExampleAggregate" aggregate execution.</li></ul></p> | 
-| Color (Color Identifier): Optional  | Set the icon badge's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the icon badge. <p>Examples <ul><li>_Blank_ - Displays the icon badge in the color you chose when creating the app. This is the default.</li><li>_Entities.Color.Red_ - Displays a red icon badge.</li></ul></p> | 
-| IsLight (Boolean): Optional  | Specify the badge's background and text color. <p>Examples <ul><li>_True_ - A brighter hue of the color is applied to the badge and a darker color to the text.</li><li>_False_ - A darker hue of the color is applied to the badge and a lighter color to the text. This is the default.</li></ul></p> |
-| ExtendedClass (Text):Optional  |  Add custom style classes to the Icon Badge UI Pattern.You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Icon Badge UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Icon Badge UI styles being applied.</li></ul></p> |
+| Number (Integer): Mandatory | The number that appears inside the badge. Set this to a data source that contains the value you want to display. <p>Examples <ul><li>_VariableName_ - Displays the value that the variable "VariableName" holds at that time.</li><li>_ExampleAggregate.Name_ - Displays the names contained in the records returned by the "ExampleAggregate" aggregate execution.</li></ul></p> |
+| Color (Color Identifier): Optional | Set the icon badge's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the icon badge. <p>Examples <ul><li>_Blank_ - Displays the icon badge in the color you chose when creating the app. This is the default.</li><li>_Entities.Color.Red_ - Displays a red icon badge.</li></ul></p> |
+| IsLight (Boolean): Optional | Specify the badge's background and text color. <p>Examples <ul><li>_True_ - A brighter hue of the color is applied to the badge and a darker color to the text.</li><li>_False_ - A darker hue of the color is applied to the badge and a lighter color to the text. This is the default.</li></ul></p> |
+| ExtendedClass (Text):Optional | Add custom style classes to the Icon Badge UI Pattern.You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Icon Badge UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Icon Badge UI styles being applied.</li></ul></p> |

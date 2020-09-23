@@ -5,17 +5,7 @@ tags:
 
 # Create and deploy a knowledge base in Azure
 
-This is a step by step guide to create and deploy a QnA Maker knowledge base in Azure. QnA Maker knowledge base is part of the FAQ chatbot in OutSystems.
-
-## Before you start { #prerequisites }
-
-<div class="info" markdown="1">
-
-**Prerequisites**
-
-To create a QnA knowledge base in Azure, you need Microsoft Azure account and permissions to create QnA Maker Service, QnA Maker knowledge base, and Bot Service. 
-
-</div>
+This is a step by step guide to create and deploy a QnA Maker knowledge base in Azure. QnA Maker knowledge base is part of the FAQ chatbot in OutSystems. To create a QnA knowledge base in Azure, you need Microsoft Azure account and permissions. 
 
 ## Prepare data for knowledge base { #prepare-data-kb }
 
@@ -139,6 +129,12 @@ Here is a table with sample questions and answers.
 
 Follow these steps to create a knowledge base in Azure QnA Maker.
 
+<div class="info" markdown="1">
+
+You can also use the [chatbot configuration wizard](configuration-wizard.md) to set up this part of chatbot.
+
+</div>
+
 1. Go to the [QnA Maker portal](https://www.qnamaker.ai/) and log in with your Azure credentials.
 2. Click **Create a knowledge base** in the top menu.
     
@@ -149,7 +145,7 @@ Follow these steps to create a knowledge base in Azure QnA Maker.
     
     <div class="info" markdown="1">
 
-    The availability of the settings in Azure depend on how your Azure account is managed. You may create some of the resources or ask your administrators to do it for you. This may apply, for example, to your Azure subscription, resource group, available locations, and service plans.
+    The availability of the settings in Azure depends on your Azure account permissions. You may have to ask your administrators to create resources if your account doesn't have permissions to create them.
 
     </div>
 
@@ -158,7 +154,7 @@ Follow these steps to create a knowledge base in Azure QnA Maker.
 6. In **STEP 4: Populate your KB** use the following options:
 
     * **File name**. Click **Add file** and select the XLSX file with your [sample questions and answers](#sample-questions-and-answers).
-    * **Chit-chat**. The chit-chat knowledge base contains light social conversation. Select a knowledge base that is most appropriate for your brand voice. Skip this option if you want to add the chit-chat later.
+    * **Chit-chat**. The chit-chat knowledge base contains light social conversation. Select a knowledge base that's appropriate for your brand voice. Skip this option if you want to add the chit-chat later.
 
     ![The add file button in Azure KB wizard](images/azure-kb-creation-upload-file.png?width=500)
 
@@ -178,6 +174,12 @@ If you're not happy with how your knowledge base performs, you can edit it. Clic
 
 Once you're satisfied with how the knowledge base performs, publish it to make it available for the chatbot. The publishing is the step that pushes the knowledge base to production.
 
+<div class="info" markdown="1">
+
+You can also use the [chatbot configuration wizard](configuration-wizard.md) to set up this part of chatbot.
+
+</div>
+
 1. Go to the [QnA Maker portal](https://www.qnamaker.ai/) and sign in.
 2. Click **My knowledge bases** in the top menu. Then, select your knowledge base.
 3. Once the knowledge base opens, click **PUBLISH**.
@@ -196,7 +198,7 @@ Once you're satisfied with how the knowledge base performs, publish it to make i
 
     <div class="info" markdown="1">
 
-    The availability of the settings in Azure depend on how your Azure account is managed. You may create some of the resources or ask your administrators to do it for you. This may apply, for example, to your Azure subscription, resource group, available locations, and service plans.
+    The availability of the settings in Azure depends on your Azure account permissions. You may have to ask your administrators to create resources if your account doesn't have permissions to create them.
 
     </div>
 

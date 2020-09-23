@@ -1,46 +1,42 @@
 ---
-summary: Learn how users can send feedback to your mobile app.
+summary: Learn how users can send feedback through the mobile app.
 tags: support-Mobile_Apps-featured; runtime-mobile
 ---
 
-# Send Feedback in Mobile Apps
+# Send feedback in mobile apps
 
-OutSystems mobile apps allow users to send feedback using the App Feedback built-in feature. When the App Feedback is enabled for a mobile app, the user will see the following screen when using the app for the first time in the device:
+Users can send feedback from mobile apps by long-pressing two fingers. [View the user feedback](user-feedback-handle.md) in the App Feedback app. Note that you first need to [activate the feedback feature in the environment](user-feedback-enable.md).
 
-![](images/app-feedback-send-mobile-1.png?width=300)
+![Two-fingers gesture](images/app-feedback-send-mobile-1.png?width=300)
 
-App Feedback allows sending feedback through voice recording, which requires permission to access the device's microphone. When sending the first feedback, the app will require this permission:
+Users can send feedback as voice recordings as well, which requires a permission to access the microphone. When sending the first feedback, the app asks for the microphone access:
 
-![](images/app-feedback-send-mobile-2.png?width=300)
+![Permission dialogue](images/app-feedback-send-mobile-2.png?width=300)
 
-To send feedback, users must perform the following steps:
+To send feedback, do the following:
 
-1. Go to the screen for which they want to send feedback.
+1. Go to the screen for which you want to send feedback.
 
-1. Long press 2 fingers on the screen:  
+1. Long-press two fingers on the screen.
 
-    ![](images/app-feedback-send-mobile-3.png)
+    ![Two-fingers gesture](images/app-feedback-send-mobile-3.png)
 
-1. App Feedback feature will be activated:  
+1. Mark the part of the screen you want to submit feedback about.  
 
-    ![](images/app-feedback-send-mobile-4.png?width=300)
+    ![Feedback icon](images/app-feedback-send-mobile-5.png?width=300)
 
-1. Mark on screen with the finger the area referred by the feedback:  
+1. Enter a text message in the input box.  
 
-    ![](images/app-feedback-send-mobile-5.png?width=300)
+    ![Text feedback](images/app-feedback-send-mobile-6.png?width=300)
 
-1. Type a text message in the input box or start a voice recording by clicking on the microphone icon:  
+    Start a voice recording by clicking the microphone icon.
 
-    ![](images/app-feedback-send-mobile-6.png?width=300)
-
-    ![](images/app-feedback-send-mobile-7.png?width=300)
+    ![Voice feedback](images/app-feedback-send-mobile-7.png?width=300)
 
 1. Click Send to submit the feedback.
 
 <div class="info" markdown="1">
 
-Users will not be able to send feedback if the device has no network connectivity.
+You can send feedback only while the device has access to the network.
 
 </div>
-
-You can [handle the feedback sent by users](user-feedback-handle.md) in the App Feedback application.

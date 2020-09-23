@@ -37,8 +37,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property** |  **Description** |
+| Property | Description |
 |---|---|
-| IsFlipped (Boolean): Optional  | If True, the CardFront content is displayed first before flipping. If False, the CardBack content is displayed first before flipping. This is the default. |  
-| FlipSelf (Boolean): Optional  | If True, the content flips event is triggered with on click. This is the default. If False, you can define the action that triggers the flip. |
-| ExtendedClass (Text): Optional  | Add custom style classes to the Flip Content UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the myclass style to the Flip Content UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Flip Content UI styles being applied.</li></ul></p> |  
+| IsFlipped (Boolean): Optional | If True, the CardFront content is displayed first before flipping. If False, the CardBack content is displayed first before flipping. This is the default. |  
+| FlipSelf (Boolean): Optional | If True, the content flips event is triggered with on click. This is the default. If False, you can define the action that triggers the flip. |
+| ExtendedClass (Text): Optional | Add custom style classes to the Flip Content UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the myclass style to the Flip Content UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Flip Content UI styles being applied.</li></ul></p> |

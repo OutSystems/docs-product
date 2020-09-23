@@ -1,8 +1,8 @@
 ---
-summary: Platform tab showing specific configuration settings for the SQL Server / Azure SQL database provider.
+summary: Platform tab showing specific configuration settings for the Azure SQL Database / SQL Server database provider.
 ---
 
-# Platform Tab in SQL Server / Azure SQL
+# Platform Tab in Azure SQL Database / SQL Server database
 
 In the **Database** tab, once you set the **Database Provider** property to `SQL Server / Azure SQL`, the following configurations become available.
 

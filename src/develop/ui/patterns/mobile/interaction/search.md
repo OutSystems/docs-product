@@ -27,7 +27,9 @@ You can use the Search UI Pattern to provide users with a search field. Use the 
 
     ![](<images/search-3-ss.png>)
 
-1. Enter a name for the variable. In this example, we enter ``SearchText``.
+1. Enter a name for the variable. 
+    
+    In this example, we enter ``SearchText``.
 
    ![](images/search-4-ss.png)
 

@@ -5,7 +5,7 @@ summary: Timeline Item indicates related events in chronological order.
 
 # Timeline Item
 
-You can use the Timeline Item UI ?Item Pattern to show related events in a chronological order, such as a user’s upcoming, current, and past activities.
+You can use the Timeline Item UI Item Pattern to show related events in a chronological order, such as a user’s upcoming, current, and past activities.
 
 ![](<images/timelineitem-1-ss.png>)
 
@@ -21,7 +21,9 @@ You can use the Timeline Item UI ?Item Pattern to show related events in a chron
 
     ![](<images/timelineitem-3-ss.png?width=800>)
 
-    By default, the Timeline Item widget contains Left, Icon, Title, Content, and Right placeholders. You can add as many Timeline Item widgets as required. In this example we add two more Timeline Item widgets. 
+    By default, the Timeline Item widget contains Left, Icon, Title, Content, and Right placeholders. You can add as many Timeline Item widgets as required. 
+    
+    In this example we add two more Timeline Item widgets. 
 
 1. Set the required content in each of the placeholders. 
 

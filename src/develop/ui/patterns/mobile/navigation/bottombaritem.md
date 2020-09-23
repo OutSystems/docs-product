@@ -21,11 +21,15 @@ You can use the Bottom Bar Item UI Pattern to provide access to a bottom navigat
 
     ![](<images/bottombaritem-2-ss.png>)
 
-    By default, the Bottom Bar Item contains Icon and Text placeholders. You can add as many Bottom Bar Items as required. In this example, we add another three more Bottom Bar Items.
+    By default, the Bottom Bar Item contains Icon and Text placeholders. You can add as many Bottom Bar Items as required. 
+    
+    In this example, we add another three more Bottom Bar Items.
 
     ![](<images/bottombaritem-4-ss.png>)
       
-1. For each of the Bottom Bar Items, add the relevant content. In this example we add linked icons and linked text to each of placeholders.
+1. For each of the Bottom Bar Items, add the relevant content. 
+    
+    In this example we add linked icons and linked text to each of placeholders.
 
     ![](<images/bottombaritem-5-ss.png>)
 

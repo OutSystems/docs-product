@@ -898,6 +898,12 @@
     - deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
     - setup/possible-setups.md
 
+# Building apps with AndroidX
+- deliver-mobile/mobile-apps-build-service/androidx.md:
+    - deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
+    - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
+    - deliver-mobile/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
+
     # UI Web Patterns
 - develop/ui/patterns/web/content/accordion/accordion.md:
     - ref/ui-patterns/web/accordion.md

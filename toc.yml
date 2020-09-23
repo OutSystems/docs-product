@@ -463,6 +463,7 @@
     - href: deliver-mobile/mobile-apps-build-service/intro.md
     - topics:
         - href: deliver-mobile/mobile-apps-build-service/android-support-library-versions.md
+        - href: deliver-mobile/mobile-apps-build-service/androidx.md
     - href: deliver-mobile/distribute-pwa/intro.md
     - href: deliver-mobile/app-shield/intro.md
     - href: deliver-mobile/compliance-with-third-party-licenses.md

@@ -7,7 +7,7 @@ tags: support-Mobile_Apps-featured; support-webapps-featured
 
 Create new Screen Templates and make them available in your environment by adding them to a Custom Screen Templates Module.
 
-## Creating Custom Screen Templates Module
+## Creating custom screen templates module
 
 To add new Screen Templates to your environment, you first need at least one clone of [Custom Screen Templates Web](<https://www.outsystems.com/forge/component-overview/5089/custom-screen-templates-web>) or [Custom Screen Templates Mobile](<https://www.outsystems.com/forge/component-overview/5060/custom-screen-templates-mobile>).
 
@@ -45,34 +45,61 @@ To add new Screen Templates to your environment, you first need at least one clo
 
     ![Cloned module ](images/forge-7-ss.png)
 
-1. Go to **Independent Modules** and move your Custom Screen Templates Module to another application. Move your mouse pointer over the module name to reveal the **Move to**
- command, and then click it.
+1. From **Independent Modules**, move your Custom Screen Templates Module to another application. 
+
+    To do this, click the Move module icon, select the application you want to move the template to, and click **Move**.
     
-   ![Independent modules](images/cloned-in-independent-modules.png)
+    ![Move module](images/forge-8-ss.png)
+        
+    ![Select application](images/forge-9-ss.png)
 
-## Creating new Screen Templates
+    You're template is now moved to the selected application.
 
-Follow these steps to create new Screen Templates.
 
-1. Open the Custom Screen Templates Module where you want to add new Screen Templates. If you don't have such module, follow the [instructions for creating it](<#creating-custom-screen-templates-module>) and then return to this section.
-1. Go to the **Interface** tab and in the **UI Flows** folder right-click the **ScreenTemplates** flow. Select **Add Web Screen** (or **Add Mobile Screen**) from the context menu.
-1. In the **New Screen** window select either a Screen Template with some content to bootstrap your template or choose **Empty**. Click **Create Screen**. A new Screen shows, with a message "You are editing a Screen Template" at the top.
-1. If you selected **Empty** in the previous step, go to the **UI Flows** folder, expand the **Common** folder, drag the **Layout** block and drop it to the Screen.
+## Creating new screen templates
+
+1. Open the Custom Screen Templates Module where you want to add new Screen Template. If you don't have such module, follow the [instructions for creating it](<#creating-custom-screen-templates-module>) and then return to this section.
+
+1. Go to the **Interface** tab and in the **UI Flows** folder, right-click your screen template flow and select **Add  Screen**.
+
+    ![Add new screen](images/forge-10-ss.png)
+
+1. In the **New Screen** window select either a Screen Template with some content to bootstrap your template or choose **Empty** and click **Create Screen**. 
+
+    In this example, we select **Empty**.
+
+    ![Select new screen type](images/forge-11-ss.png)
+
+    The new screen opens with a warning message: "You are editing a Screen Template. Check the guidelines." .
+
+     ![Warning message](images/forge-12-ss.png)
+
+1. Go to the **UI Flows** folder, expand the **Common** folder, and drag the **Layout** block onto the screen.
+
+    ![Drag layout block to screen](images/forge-13-ss.png)
+
+    Note: This step only applies if you selected the **Empty** screen in the previous step.
+
 1. [Set the preview image](<reference-metadata.md#preview-image>) and enter the [metadata](<reference-metadata.md>) for the Screen Template.
-1. Publish the module. Your Screen Template is now available to all developers in the environment.
 
-![Editing a Screen Template](images/creating-screen-template.png?width=500)
+1. Publish the module.
 
-## Editing Screen Templates
+    Your Screen Template is now available to all developers in the environment.
 
-Edit your Screen Templates in your Custom Screen Templates Module. Republish the module to update the Screen Templates in the environment. Keep in mind that editing an existing Screen Template does not affect Screens that are already created from it.
+    ![Editing a Screen Template](images/creating-screen-template.png?width=500)
 
-## Creating Screen Templates with custom Theme
+## Editing screen templates
 
-You can use a different Theme in each Custom Screen Templates Module. Screen Templates inherit the styles from the Theme.
+You can edit your Screen Templates in your Custom Screen Templates Module. Republish the module to update the Screen Templates in the environment. Keep in mind that editing an existing Screen Template does not affect screens that are already created from it.
+
+## Creating screen templates with a custom theme
+
+You can use a different Theme in each Custom Screen Template Module. Screen Templates inherit the styles from the Theme.
 
 1. Follow the steps for [creating a Custom Screen Templates Module](<#creating-custom-screen-templates-module>).
-1. Edit the module so it uses your Theme. The Custom Screen Templates Modules from Forge use BaseTheme, the default Theme from OutSystems UI.
+
+1. Edit the module so it uses your Theme. The Custom Screen Templates Modules from Forge uses BaseTheme, the default Theme from OutSystems UI.
+
 1. Follow the steps for [creating new Screen Templates](<#creating-new-screen-templates>).
 
 OutSystems provides the following Forge components to assist you in creating your own style guide and Screen Templates:

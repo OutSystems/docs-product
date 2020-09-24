@@ -9,7 +9,14 @@ OutSystems lets you quickly build great and secure web and mobile apps. This is 
 
 1. Create a [free account](https://www.outsystems.com/home/GetStartedForFree.aspx).
 2. Install [Development Environment](https://www.outsystems.com/home/downloads).
-3. Start **Service Studio** and see the section about [your first app](#your-first-app).  
+3. Start **Service Studio** and see the section about [your first app](#your-first-app).
+
+<div class="info" markdown="1">
+
+We've been working on this article. Please let us know how useful this new version is by voting.
+
+</div>
+
 
 ## Your first app
 

@@ -40,5 +40,3 @@ Tip: If you need to import data from an Excel file at **design time**, when deve
 ## Availability
 
 Excel To Record List is only available in **Server Actions**. In Reactive Web and Mobile apps you must send the uploaded file to the server and then process that file in a Server Action. Check [Enable End Users to Upload Files](../../../develop/ui/inputs/upload.md) for more information.
-
-</div>

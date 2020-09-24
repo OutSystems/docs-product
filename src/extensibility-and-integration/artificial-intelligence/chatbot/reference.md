@@ -13,6 +13,10 @@ The chatbot demo app is available in Forge. Go to the [OutSystems.AI Chatbot Rea
 
 ![Forge page to download the chatbot demo](images/chatbot-demo-download-forge.png?width=650)
 
+## Chatbot configuration wizard
+
+The chatbot component comes with the [chatbot configuration wizard](configuration-wizard.md). Use it to set up your app to work with the Azure back end, and to manage chatbots.
+
 ## Block settings { #chatbot-settings }
 
 These are the settings available in the properties of the Blocks that come with the chatbot component from Forge.

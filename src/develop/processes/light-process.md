@@ -44,10 +44,3 @@ To enable light process execution for your module, do the following:
     You will see the same compilation message when you publish the module through Service Studio:  
 
     ![](images/light-process-3.png)
-
-
-<div class="info" markdown="1">
-
-Light process execution is available when using SQL Server or Oracle as main OutSystems database.
-
-</div>

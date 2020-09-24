@@ -1,5 +1,5 @@
 ---
-summary: Learn how to crete an input parameter to pass information to the destination screen.
+summary: Learn how to create an input parameter to pass information to the destination screen.
 tags: support-application_development; support-Mobile_Apps; support-webapps
 ---
 

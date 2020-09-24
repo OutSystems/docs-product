@@ -5,7 +5,7 @@ tags: support-application_development; support-Front_end_Development; support-Fr
 
 # Application Templates
 
-OutSystems apps consists of Modules joined by an Application Template. Application Templates make development efficient because the apps based on them contain many predefined elements. For example, the apps have Theme, CSS, Layouts, Blocks, and logic.
+OutSystems apps consists of Modules joined by an Application Template. Application Templates make development efficient because the apps based on them contain many predefined elements. For example, the apps have a Theme, CSS, Layouts, Blocks, and logic.
 
 ## Types of Application Templates
 

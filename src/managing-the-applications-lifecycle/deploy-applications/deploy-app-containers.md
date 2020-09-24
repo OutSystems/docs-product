@@ -6,7 +6,7 @@ summary: Specify a container-based deployment zone for an application when you a
 
 <div class="info" markdown="1">
 
-Containers is a [Technical Preview](<https://www.outsystems.com/goto/technical-preview>).
+Container deployment is available as an [Early Access Program](<https://www.outsystems.com/goto/technical-preview>).
 
 </div>
 

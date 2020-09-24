@@ -7,7 +7,7 @@ tags: support-Application_Lifecycle
 
 <div class="warning" markdown="1">
 
-Containers is a [Technical Preview](<https://www.outsystems.com/goto/technical-preview>).
+Container deployment is available as an [Early Access Program](<https://www.outsystems.com/goto/technical-preview>).
 
 Application deployment to containers is recommended for **advanced users** that are familiar with container-based solutions, their architecture and their network requirements.
 

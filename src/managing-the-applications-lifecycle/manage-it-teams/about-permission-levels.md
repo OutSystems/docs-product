@@ -253,7 +253,7 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 </tr>
 <tr>
 <td>Assigned as **Default Role**</td>
-<td>The user can add, edit, remove and switch infrastructure environments, as well as turn on/off Early Access features. The user can also add, edit and remove IT users, roles and teams. Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".</td>
+<td>The user can add, edit, remove and switch infrastructure environments, as well as turn on/off features in Technical Preview. The user can also add, edit and remove IT users, roles and teams. Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".</td>
 </tr>
 <tr>
 <td>Assigned for a **Team**</td>

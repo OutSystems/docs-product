@@ -784,6 +784,9 @@
 #     Excel To Record List
 -  ref/lang/auto/Class.Excel To Record List.final.md:
     - ref/lang/auto/Class.Record List To Excel.final.md
+    - one-way: getting-started/create-reactive-web.md
+    - one-way: develop/data/excel-bootstrap.md
+    - one-way: develop/ui/inputs/upload.md
 
 #     Ajax Refresh
 -  ref/lang/auto/Class.Ajax Refresh.final.md:

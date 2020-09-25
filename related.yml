@@ -190,6 +190,9 @@
     - ref/lang/auto/Class.Table Records Widget.final.md
     # Table Widget
     - ref/lang/auto/Class.Table Widget.final.md
+    - external:
+        - "How to scroll records in a table with a fixed header":
+            https://success.outsystems.com/Documentation/How-to_Guides/Front-End/How_to_scroll_records_in_a_table_with_a_fixed_header
       
 # Image Widget
 - ref/lang/auto/Class.Image Widget.final.md:
@@ -238,7 +241,12 @@
     - ref/lang/auto/Class.Go To Destination.final.md
     # Web Screen
     - ref/lang/auto/Class.Web Screen.final.md
-      
+
+- ref/lang/auto/Class.List Box Widget.final.md:
+    - ref/lang/auto/Class.Combo Box Widget.final.md
+    - develop/ui/patterns/web/controls/dropdown.md
+    - develop/ui/patterns/web/controls/dropdownselect.md
+
 # List Records Widget
 - ref/lang/auto/Class.List Records Widget.final.md:
     # Table Records Widget
@@ -282,8 +290,6 @@
       
 # Table Records Widget
 - ref/lang/auto/Class.Table Records Widget.final.md:
-    # Fetch and Display Data from the Database
-    - develop/data/query/fetch-display.md
     # List
     - ref/data/data-types/list.md
       
@@ -778,6 +784,9 @@
 #     Excel To Record List
 -  ref/lang/auto/Class.Excel To Record List.final.md:
     - ref/lang/auto/Class.Record List To Excel.final.md
+    - one-way: getting-started/create-reactive-web.md
+    - one-way: develop/data/excel-bootstrap.md
+    - one-way: develop/ui/inputs/upload.md
 
 #     Ajax Refresh
 -  ref/lang/auto/Class.Ajax Refresh.final.md:
@@ -891,6 +900,12 @@
     - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
     - deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
     - setup/possible-setups.md
+
+# Building apps with AndroidX
+- deliver-mobile/mobile-apps-build-service/androidx.md:
+    - deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
+    - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
+    - deliver-mobile/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
 
     # UI Web Patterns
 - develop/ui/patterns/web/content/accordion/accordion.md:
@@ -1529,6 +1544,16 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
+- develop/ui/patterns/mobile/numbers/progresscircle.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=58
+- develop/ui/patterns/mobile/numbers/progresscirclefraction.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=59
 - develop/ui/patterns/mobile/utilities/aligncenter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

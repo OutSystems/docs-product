@@ -5,6 +5,12 @@ tags:
 
 # Expressions
 
+<div class="info" markdown="1">
+
+We've been working on this article. Please let us know how useful this new version is by voting.
+
+</div>
+
 An expression consists of operands and operators. For example, **n + 1** is an expression with two operands, **n** and **1**, joined by the addition operator +. Here is how you can edit expressions and show the expression values.
 
 * Use the [expression editor](../../../develop/logic/expression-editor.md) to **edit expressions**. The expression editor shows you available elements. It automatically completes the text and shows suggestions after you press **Ctrl+Space**.

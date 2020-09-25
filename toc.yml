@@ -186,17 +186,19 @@
                 - href: develop/ui/patterns/mobile/navigation/submenu.md
                 - href: develop/ui/patterns/mobile/navigation/tabs.md
                 - href: develop/ui/patterns/mobile/navigation/timelineitem.md
+                - href: develop/ui/patterns/mobile/navigation/wizard.md
                 - href: develop/ui/patterns/mobile/numbers/badge.md
                 - href: develop/ui/patterns/mobile/numbers/counter.md
                 - href: develop/ui/patterns/mobile/numbers/iconbadge.md
+                - href: develop/ui/patterns/mobile/numbers/progresscircle.md
+                - href: develop/ui/patterns/mobile/numbers/progresscirclefraction.md
                 - href: develop/ui/patterns/mobile/utilities/aligncenter.md
                 - href: develop/ui/patterns/mobile/utilities/buttonloading.md
                 - href: develop/ui/patterns/mobile/utilities/centercontent.md
                 - href: develop/ui/patterns/mobile/utilities/margincontainer.md
                 - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                 - href: develop/ui/patterns/mobile/utilities/touchevents.md
-                - href: develop/ui/patterns/mobile/public-actions.md
-                - href: develop/ui/patterns/mobile/splitscreen.md            
+                - href: develop/ui/patterns/mobile/public-actions.md             
             - href: develop/ui/patterns/web/intro.md
             - topics:
                 - href: develop/ui/patterns/web/content/intro.md
@@ -463,6 +465,7 @@
     - href: deliver-mobile/mobile-apps-build-service/intro.md
     - topics:
         - href: deliver-mobile/mobile-apps-build-service/android-support-library-versions.md
+        - href: deliver-mobile/mobile-apps-build-service/androidx.md
     - href: deliver-mobile/distribute-pwa/intro.md
     - href: deliver-mobile/app-shield/intro.md
     - href: deliver-mobile/compliance-with-third-party-licenses.md
@@ -980,7 +983,6 @@
                 - href: ref/ui-patterns/mobile/masterdetail-mobile.md
                 - href: ref/ui-patterns/mobile/rangeslider.md
                 - href: ref/ui-patterns/mobile/rangesliderinterval.md
-                - href: ref/ui-patterns/mobile/splitscreen.md
                 - href: ref/ui-patterns/mobile/stackedcards.md
                 - href: ref/ui-patterns/mobile/swipeevents.md
                 - href: ref/ui-patterns/mobile/tabs-mobile.md

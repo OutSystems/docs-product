@@ -5,6 +5,12 @@ tags:
 
 # Operands
 
+<div class="info" markdown="1">
+
+We've been working on this article. Please let us know how useful this new version is by voting.
+
+</div>
+
 An operand tells the platform which data to use for manipulation in an expression. For example, in the expression `MyValue + 1`, `MyValue` and `1` are the operands. 
 
 Use the [expression editor](../../../develop/logic/expression-editor.md) to see which operands are available in the current scope. The expression editor checks what variables, parameters, functions, and other values, you can use for an operation in, for example, a screen or an action.

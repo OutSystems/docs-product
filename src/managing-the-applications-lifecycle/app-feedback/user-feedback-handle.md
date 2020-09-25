@@ -1,8 +1,15 @@
 ---
-summary: Check how to handle the feedback submitted by users.
+tags: handle-feedback-users; app-feedback; users-feedback
+summary: Learn how to handle the feedback submitted by users.
 ---
 
 # Handle the submitted feedback
+
+<div class="info" markdown="1">
+
+We've been working on this article. Please let us know how useful this new version is by voting.
+
+</div>
 
 When you [enable user feedback for your apps](user-feedback-enable.md), the App Feedback application collects all the feedback your users send for each app. To act upon the feedback received, follow the steps below.
 
@@ -18,7 +25,7 @@ When you [enable user feedback for your apps](user-feedback-enable.md), the App 
 
     ![LifeTime applications screen](images/app-feedback-handle-3.png?width=750)
 
-1. Sign in with the credentials of a user account that has Administrator or FeedbackManager permissions.
+1. Sign in with the credentials of a user account defined in the Users app (`https://<your environment>/Users`), that has Administrator or FeedbackManager permissions.
 
 1. Click the **Feedback** section, to see a list of all the feedback submitted by users. 
 
@@ -38,7 +45,7 @@ When you [enable user feedback for your apps](user-feedback-enable.md), the App 
 
         ![Open Service Studio confirmation](images/app-handle-feedback-handle-ss-confirm.png?width=500)
 
-    1. Enter your environment address and login credentials to allow downloading the app module from Service Center to Service Studio.
+    1. Enter your environment address and login credentials to allow downloading the app module from Service Center to Service Studio, and click **LOG IN**.
 
         ![Enter environment address and login credentials](images/app-feedback-handle-download-module.png?width=500)
 

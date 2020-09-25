@@ -1,23 +1,22 @@
 ---
-summary: Use Application Templates to create applications for web and mobile.
+summary: Use application templates to bootstrap an app.
 tags: support-application_development; support-Front_end_Development; support-Front_end_Development-overview; support-Mobile_Apps; support-webapps
 ---
 
 # Application Templates
 
-OutSystems apps consists of Modules that start from an Application Template. These make development efficient because the apps based on Application Templates contain many predefined elements. For example, they already have login and error screens, a theme, layout blocks, or any other elements...
+OutSystems apps consist of modules that you bootstrap from an application template. These make development efficient because the apps based on application templates have many predefined elements. For example, login screens, a theme, layout blocks.
 
-There are built-in, custom and forge application templates.
+There are built-in, custom, and Forge application templates.
 
-### Built-in Application Templates
+### Built-in application templates
 
-Reactive Web App, Phone App, Tablet App and Traditional Web are Built-in Application Templates created and maintained by OutSystems. They reference the OutSystems UI Framework and enable you to use its theme, patterns, screen templates and other components.
+**Reactive Web App**, **Phone App**, **Tablet App** and **Traditional Web** are the built-in application templates created and maintained by OutSystems. They reference the OutSystems UI Framework and enable you to use its theme, patterns, screen templates and other components.
 
-### Custom Application Templates
+### Custom application templates
 
-These are Application Templates you create, based on the UI framework of the source Application Template. The document [Create a Custom Application Template](<../ui/reuse/create-a-custom-application-template.md>) explains how to create these templates.
+These are the application templates you create, based on the UI framework of the source application templates. The document [Create a Custom Application Template](<../ui/reuse/create-a-custom-application-template.md>) explains how to create these templates.
 
-### Forge Application Templates
+### Forge application templates
 
-These are Application Templates provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates).
-
+These are application templates provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates).

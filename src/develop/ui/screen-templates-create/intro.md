@@ -33,7 +33,7 @@ To add new Screen Templates to your environment, you first need at least one clo
 
 1. This is an optional, but a highly recommended step. 
 
-    Go to the **Interface** tab, click the UI flow with the module title in the element tree, and edit the **Name** property to, for example, `MyCustomScreenTemplatesWeb` or `MyCustomScreenTemplatesMobile`. 
+    Go to the **Interface** tab, click the module title in the element tree, and edit the **Name** property to, for example, `MyCustomScreenTemplatesWeb` or `MyCustomScreenTemplatesMobile`. 
     
     ![Rename module name](images/forge-5-ss.png)
     
@@ -47,7 +47,7 @@ To add new Screen Templates to your environment, you first need at least one clo
 
     ![Cloned module](images/forge-7-ss.png)
 
-1. From **Independent Modules**, move your Custom Screen Templates Module to another application. 
+1. From **Independent Modules**, move your Custom Screen Templates Module to the application you want to use it in. 
 
     To do this, click the Move module icon, select the application you want to move the template to, and click **Move**.
     

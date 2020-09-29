@@ -7,7 +7,7 @@ helpids: 30075
 
 # Button Group Item
 
-Individual item representing an option within a ButtonGroup widget.  
+An individual item representing an option within a ButtonGroup widget.  
 
 ## Properties
 
@@ -24,14 +24,14 @@ Individual item representing an option within a ButtonGroup widget.
 <tbody>
 <tr>
 <td title="Name">Name</td>
-<td>Identifies an element in the scope where it's defined, like a screen, action, or module.</td>
+<td>Identifies an element in the scope where it's defined, such as a screen, action, or module.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td title="Value">Value</td>
-<td>Value assigned to the Button Group widget variable when the users select this item.</td>
+<td>Value assigned to the Button Group widget variable when the user select this item.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -45,7 +45,7 @@ Individual item representing an option within a ButtonGroup widget.
 </tr>
 <tr>
 <td title="Visible">Visible</td>
-<td>Boolean literal or expression that defines to display the widget or not.</td>
+<td>Boolean literal or expression that defines whether to display the widget or not.</td>
 <td>Yes</td>
 <td>True</td>
 <td></td>
@@ -119,7 +119,7 @@ Individual item representing an option within a ButtonGroup widget.
 <tbody>
 <tr>
 <td>Id</td>
-<td>Identifies the widget instance at runtime (HTML 'id' attribute). You can use it in JavaScript and Extended Properties.</td>
+<td>Identifies the widget instance at runtime (HTML 'IDA' attribute). You can use it in JavaScript and Extended Properties.</td>
 <td>Yes</td>
 <td>Text</td>
 <td></td>

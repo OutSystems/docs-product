@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the Uplaod widget for allowing the users to browse and select a local file to upload into the application.
+tags: outsystems-designing-screens; reference; designing-screens; upload-widget
 kinds: ServiceStudio.Plugin.NRWidgets.UploadDescriptor
 helpids: 30045
 ---

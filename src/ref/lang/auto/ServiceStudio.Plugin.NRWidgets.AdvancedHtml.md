@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the HTML Element widget for adding a custom HTML element to the screen.
+tags: outsystems-designing-screens; reference; designing-screens; html-element
 kinds: ServiceStudio.Plugin.NRWidgets.AdvancedHtmlDescriptor
 helpids: 30048
 ---
@@ -22,7 +24,7 @@ Allows to add a custom HTML element to the screen.
 <tbody>
 <tr>
 <td title="Name">Name</td>
-<td>Identifies an element in the scope where it is defined, like a screen, action, or module.</td>
+<td>Identifies an element in the scope where it's defined, like a screen, action, or module.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -42,14 +44,14 @@ Allows to add a custom HTML element to the screen.
 <td>Name of an attribute to add to the HTML translation for this element.</td>
 <td></td>
 <td></td>
-<td>You can pick a property from the drop-down list or type a free text. The name of the property will not be validated by the platform.<br/><br/>Duplicated properties are not allowed. Spaces, " or ' are also not allowed.</td>
+<td>You can pick a property from the drop-down list or type a free text. The name of the property isn't validated by the platform.<br/><br/>Duplicated properties aren't allowed. Spaces, " or ' are also not allowed.</td>
 </tr>
 <tr>
 <td title="Value">Value</td>
 <td>Value of the attribute.</td>
 <td></td>
 <td></td>
-<td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
+<td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is property="property". For example, the nowrap property doesn't require a value, therefore its property is nowrap="nowrap".</td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +70,7 @@ Allows to add a custom HTML element to the screen.
 <tbody>
 <tr>
 <td title="EventName">Event</td>
-<td>JavaScript or custom event to be handled.</td>
+<td>JavaScript or custom event to handle.</td>
 <td></td>
 <td></td>
 </tr>
@@ -81,7 +83,7 @@ Allows to add a custom HTML element to the screen.
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>

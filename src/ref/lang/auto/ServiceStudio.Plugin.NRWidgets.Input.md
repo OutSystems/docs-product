@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the Input widget for allowing users to input data on a screen.
+tags: outsystems-designing-screens; reference; designing-screens; input-widget; input-data
 kinds: ServiceStudio.Plugin.NRWidgets.InputDescriptor
 helpids: 30034
 ---

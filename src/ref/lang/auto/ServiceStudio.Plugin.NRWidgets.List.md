@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the List widget for allowing users to get a list of records on a screen.
+tags: outsystems-designing-screens; reference; designing-screens; list-widget
 kinds: ServiceStudio.Plugin.NRWidgets.ListDescriptor
 helpids: 30030
 ---

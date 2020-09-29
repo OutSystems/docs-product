@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the List Action widget for allowing you to define the behavior when swiping the correspondent List Item, which can be executing a screen action or navigating to another screen.
+tags: outsystems-designing-screens; reference; designing-screens; list-action-widget; list-item-swipe
 kinds: ServiceStudio.Plugin.NRWidgets.ListItemActionDescriptor
 helpids: 30077
 ---

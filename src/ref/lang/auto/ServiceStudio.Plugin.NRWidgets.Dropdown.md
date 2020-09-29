@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the Dropdown widget for showing a dropdown list for the users to select a value on the screen.
+tags: outsystems-designing-screens; reference; designing-screens; drop-down
 kinds: ServiceStudio.Plugin.NRWidgets.DropdownDescriptor
 helpids: 30036
 ---
@@ -22,7 +24,7 @@ Dropdown list from which the user can select a value.
 <tbody>
 <tr>
 <td title="Name">Name</td>
-<td>Identifies an element in the scope where it is defined, like a screen, action, or module.</td>
+<td>Identifies an element in the scope where it's defined, like a screen, action, or module.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -43,7 +45,7 @@ Dropdown list from which the user can select a value.
 </tr>
 <tr>
 <td title="DropdownMode">Options Content</td>
-<td>'Text (Default)' content provides a native experience for selecting textual values (uses the select HTML tag). 'Custom' provides richer content with non-textual widgets (e.g. images) inside the dropdown (uses the div HTML tag).</td>
+<td>'Text (Default)' content provides a native experience for selecting textual values (uses the select HTML tag). 'Custom' provides richer content with non-textual widgets (for example, images) inside the dropdown (uses the div HTML tag).</td>
 <td>Yes</td>
 <td>Custom</td>
 <td></td>
@@ -64,7 +66,7 @@ Dropdown list from which the user can select a value.
 </tr>
 <tr>
 <td title="Mandatory">Mandatory</td>
-<td>Boolean literal or expression that defines if the widget is required.</td>
+<td>Boolean literal or expression that defines the obligatoriness of the widget.</td>
 <td>Yes</td>
 <td>False</td>
 <td></td>
@@ -78,7 +80,7 @@ Dropdown list from which the user can select a value.
 </tr>
 <tr>
 <td title="EmptyValue">Empty Text</td>
-<td>Text literal or expression displayed in the Dropdown list that represents an empty selection. When this option is selected, the variable defined holds a default value.</td>
+<td>Text literal or expression displayed in the Dropdown list that represents an empty selection. By selecting this option, the variable defined holds a default value.</td>
 <td></td>
 <td></td>
 <td></td>
@@ -98,14 +100,14 @@ Dropdown list from which the user can select a value.
 <td>Name of an attribute to add to the HTML translation for this element.</td>
 <td></td>
 <td></td>
-<td>You can pick a property from the drop-down list or type a free text. The name of the property will not be validated by the platform.<br/><br/>Duplicated properties are not allowed. Spaces, " or ' are also not allowed.</td>
+<td>You can pick a property from the drop-down list or type a free text. The name of the property isn't validated by the platform.<br/><br/>Duplicated properties aren't allowed. Spaces, " or ' are also not allowed.</td>
 </tr>
 <tr>
 <td title="Value">Value</td>
 <td>Value of the attribute.</td>
 <td></td>
 <td></td>
-<td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
+<td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is property="property". For example, the nowrap property doesn't require a value, therefore its property is nowrap="nowrap".</td>
 </tr>
 </tbody>
 </table>
@@ -124,7 +126,7 @@ Dropdown list from which the user can select a value.
 <tbody>
 <tr>
 <td title="OnChange">On Change</td>
-<td>Screen action to be executed or a screen to navigate to when the value of the element changes.</td>
+<td>Screen action to execute, or a screen to navigate to when the value of the element changes.</td>
 <td></td>
 <td></td>
 </tr>
@@ -136,7 +138,7 @@ Dropdown list from which the user can select a value.
 </tr>
 <tr>
 <td title="EventName">Event</td>
-<td>JavaScript or custom event to be handled.</td>
+<td>JavaScript or custom event to handle.</td>
 <td></td>
 <td></td>
 </tr>
@@ -149,7 +151,7 @@ Dropdown list from which the user can select a value.
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>
@@ -171,7 +173,7 @@ Dropdown list from which the user can select a value.
 </tr>
 <tr>
 <td>Valid</td>
-<td>False when required inputs are not present or the input value does not comply with the defined data type. You can override this property value when performing custom validations.</td>
+<td>False when required inputs aren't present or the input value doesn't comply with the defined data type. You can override this property value when performing custom validations.</td>
 <td></td>
 <td>Boolean</td>
 <td></td>

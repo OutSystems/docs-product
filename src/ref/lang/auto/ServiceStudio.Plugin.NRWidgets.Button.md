@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the Button widget for triggering an action on a screen.
+tags: outsystems-designing-screens; reference; designing-screens; button-widget; trigger-action
 kinds: ServiceStudio.Plugin.NRWidgets.ButtonDescriptor
 helpids: 30040
 ---
@@ -22,7 +24,7 @@ Widget which triggers an action.
 <tbody>
 <tr>
 <td title="Name">Name</td>
-<td>Identifies an element in the scope where it is defined, like a screen, action, or module.</td>
+<td>Identifies an element in the scope where it's defined, like a screen, action, or module.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -43,14 +45,14 @@ Widget which triggers an action.
 </tr>
 <tr>
 <td title="IsDefault">Is Form Default</td>
-<td>Boolean to specify if the button should submit form that is enclosed in.</td>
+<td>Boolean to specify if the button should submit form that's enclosed in.</td>
 <td></td>
 <td>No</td>
-<td>The entry will redirect to the screen it points to.</td>
+<td>The entry redirects to the screen it points to.</td>
 </tr>
 <tr>
 <td title="Visible">Visible</td>
-<td>Boolean literal or expression that defines if the widget is displayed.</td>
+<td>Boolean literal or expression that defines to display the widget or not.</td>
 <td>Yes</td>
 <td>True</td>
 <td></td>
@@ -60,7 +62,7 @@ Widget which triggers an action.
 <td>Specifies one or more style classes to apply to the widget. Separate multiple values with spaces.</td>
 <td></td>
 <td>"btn"</td>
-<td>The first button dragged to the screen or to the form will have an additional style class 'btn-primary'.</td>
+<td>The first button dragged to the screen or to the form is going to have an additional style class 'btn-primary'.</td>
 </tr>
 <tr class="separator">
 <th colspan="5">Attributes</th>
@@ -70,14 +72,14 @@ Widget which triggers an action.
 <td>Name of an attribute to add to the HTML translation for this element.</td>
 <td></td>
 <td></td>
-<td>You can pick a property from the drop-down list or type a free text. The name of the property will not be validated by the platform.<br/><br/>Duplicated properties are not allowed. Spaces, " or ' are also not allowed.</td>
+<td>You can pick a property from the drop-down list or type a free text. The name of the property isn't validated by the platform.<br/><br/>Duplicated properties aren't allowed. Spaces, " or ' are also not allowed.</td>
 </tr>
 <tr>
 <td title="Value">Value</td>
 <td>Value of the attribute.</td>
 <td></td>
 <td></td>
-<td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
+<td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is property="property". For example, the nowrap property doesn't require a value, therefore it's property is nowrap="nowrap".</td>
 </tr>
 </tbody>
 </table>
@@ -96,7 +98,7 @@ Widget which triggers an action.
 <tbody>
 <tr>
 <td title="OnClick">On Click</td>
-<td>Screen action to be executed or a screen to navigate to when the widget is clicked.</td>
+<td>When the user clicks the widget, you can add a screen action to run or a screen to navigate to.</td>
 <td>Yes</td>
 <td></td>
 </tr>
@@ -114,7 +116,7 @@ Widget which triggers an action.
 </tr>
 <tr>
 <td title="EventName">Event</td>
-<td>JavaScript or custom event to be handled.</td>
+<td>JavaScript or custom event to handle.</td>
 <td></td>
 <td></td>
 </tr>
@@ -127,7 +129,7 @@ Widget which triggers an action.
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>

@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the Text widget for adding a multi-line field to hold text typed by the users.
+tags: outsystems-designing-screens; reference; designing-screens; text-area-widget
 kinds: ServiceStudio.Plugin.NRWidgets.TextAreaDescriptor
 helpids: 30035
 ---

@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the Label widget for allowing users add text labels on a screen.
+tags: outsystems-designing-screens; reference; designing-screens; label; text-label
 kinds: ServiceStudio.Plugin.NRWidgets.LabelDescriptor
 helpids: 30033
 ---

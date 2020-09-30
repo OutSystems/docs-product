@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the Block widget available for displaying a reusable screen element on a screen.
+tags: outsystems-designing-screens; reference; designing-screens; block-widget
 kinds: ServiceStudio.Model.NRWebWidgets+WebBlockInstance+Kind, ServiceStudio.Model.NRWebWidgets+ReferenceWebBlockInstance+Kind
 helpids: 0
 ---
@@ -22,7 +24,7 @@ Displays a reusable screen element.
 <tbody>
 <tr>
 <td title="Name">Name</td>
-<td>Identifies an element in the scope where it is defined, like a screen, action, or module.</td>
+<td>Identifies an element in the scope where it's defined, like a screen, action, or module.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -37,7 +39,7 @@ Displays a reusable screen element.
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>

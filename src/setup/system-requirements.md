@@ -144,7 +144,7 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you cannot have inte
 
 <div class="info" markdown="1">
 
-The installation of the IBM iAccess software is required in all Front-End and Deployment Controller server machines.
+The installation of the IBM i Access Client Solutions - Windows Application Package software is required in all Front-End and Deployment Controller server machines.
 
 The use of double-byte characters with DB2 databases is not supported.
 

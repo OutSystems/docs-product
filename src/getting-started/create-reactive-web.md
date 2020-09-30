@@ -56,7 +56,7 @@ Let's create a sample "todo" app.
     ![New App properties](images/reactive-new-module.png?width=500)
 
 
-## Create a database table from an Excel file
+## Create a database table from an Excel file { #create-entity-from-excel }
 
 OutSystems stores your application data in a relational database. This means that the first step in creating an app is defining the data model.
 

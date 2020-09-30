@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the Form widget for specifying a collection of user inputs that share the same validation context, on the screen.
-tags: outsystems-designing-screens; reference; designing-screens; form
 kinds: ServiceStudio.Plugin.NRWidgets.FormDescriptor
 helpids: 30032
 ---

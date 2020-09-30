@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the Button widget for triggering an action on a screen.
-tags: outsystems-designing-screens; reference; designing-screens; button-widget; trigger-action
 kinds: ServiceStudio.Plugin.NRWidgets.ButtonDescriptor
 helpids: 30040
 ---

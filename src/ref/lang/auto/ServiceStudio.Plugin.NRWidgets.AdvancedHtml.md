@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the HTML Element widget for adding a custom HTML element to the screen.
-tags: outsystems-designing-screens; reference; designing-screens; html-element
 kinds: ServiceStudio.Plugin.NRWidgets.AdvancedHtmlDescriptor
 helpids: 30048
 ---

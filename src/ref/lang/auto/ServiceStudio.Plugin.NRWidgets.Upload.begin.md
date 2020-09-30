@@ -1,3 +1,8 @@
+---
+summary: Reference information on the Upload widget for allowing the users to browse and select a local file to upload into the application.
+tags: outsystems-designing-screens; reference; designing-screens; upload-widget
+---
+
 The Upload widget lets users browse and select a local file, which you can then upload to the server.
 
 <div class="info" markdown="1">

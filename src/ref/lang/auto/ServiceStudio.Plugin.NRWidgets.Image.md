@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the Image widget for displaying an image on the screen from a defined source.
-tags: outsystems-designing-screens; reference; designing-screens; image-widget; adding-image
 kinds: ServiceStudio.Plugin.NRWidgets.ImageDescriptor
 helpids: 30043
 ---

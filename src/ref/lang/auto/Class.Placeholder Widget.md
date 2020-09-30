@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the Placeholder widget for reserving space in your block for filling when the block is used.
-tags: outsystems-designing-screens; reference; designing-screens; placeholder-widget
 kinds: ServiceStudio.Model.NRWebWidgets+Placeholder+Kind, ServiceStudio.Model.WebWidgets+Placeholder+Kind, ServiceStudio.Model.NRWebWidgets+ReferencePlaceholder+Kind, ServiceStudio.Model.WebWidgets+ReferencePlaceholder+Kind
 helpids: 17142
 ---

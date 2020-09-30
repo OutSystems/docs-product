@@ -1,5 +1,6 @@
 ---
-tags: runtime-mobileandreactiveweb;
+summary: Reference information on the Button group widget available for adding a set of buttons for users to select a single option on a screen.
+tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; button-group; button-selection
 ---
 
 The ButtonGroupItem is an individual button that represents an option within a [Button Group widget](../../../develop/ui/patterns/web/controls/buttongroup.md). The Button Group Item must be used with a Button Group widget (unlike the Button widget, which is an interface element on its own).

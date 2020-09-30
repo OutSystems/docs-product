@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the Switch Group widget for adding two-state toggle controls to allow users to select between two options.
-tags: outsystems-designing-screens; reference; designing-screens; switch-widget
 kinds: ServiceStudio.Plugin.NRWidgets.SwitchDescriptor
 helpids: 30037
 ---

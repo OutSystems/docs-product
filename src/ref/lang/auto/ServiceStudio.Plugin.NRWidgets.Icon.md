@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the Icon widget for adding a scalable vector picture as icon to the screen.
-tags: outsystems-designing-screens; reference; designing-screens; icon
 helpids: 30044
 ---
 

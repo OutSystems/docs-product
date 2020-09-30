@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the List Item widget for allowing you to displays a list item with full swipe behavior capability, containing a List Action widget to define the swiping behavior.
-tags: outsystems-designing-screens; reference; designing-screens; list-item-widget; list-item-swipe
 kinds: ServiceStudio.Plugin.NRWidgets.ListItemDescriptor
 helpids: 30031
 ---

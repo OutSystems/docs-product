@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the If widget for displaying content on the screen based on a condition.
-tags: outsystems-designing-screens; reference; designing-screens; if-widget
 kinds: ServiceStudio.Model.NRWebWidgets+If+Kind, ServiceStudio.Model.WebWidgets+If+Kind, ServiceStudio.Model.NRWebWidgets+ReferenceIf+Kind, ServiceStudio.Model.WebWidgets+ReferenceIf+Kind
 helpids: 4029
 ---

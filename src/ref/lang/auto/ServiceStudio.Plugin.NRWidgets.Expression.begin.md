@@ -1,3 +1,8 @@
+---
+summary: Reference information on the Expression widget for displaying a text literal or an expression to calculate at runtime on the screen.
+tags: outsystems-designing-screens; reference; designing-screens; expression
+---
+
 <div class="info" markdown="1">
 
 We've been working on this article. Please let us know how useful this new version is by voting.

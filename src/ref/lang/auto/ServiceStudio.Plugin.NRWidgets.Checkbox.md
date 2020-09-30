@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the Checkbox widget for allowing the user to check or uncheck an option on a screen.
-tags: outsystems-designing-screens; reference; designing-screens; check-box
 kinds: ServiceStudio.Plugin.NRWidgets.CheckboxDescriptor
 helpids: 30038
 ---

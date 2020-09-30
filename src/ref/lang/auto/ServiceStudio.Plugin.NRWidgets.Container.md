@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the Container widget for grouping widgets and applying styles to them on a screen.
-tags: outsystems-designing-screens; reference; designing-screens; container
 kinds: ServiceStudio.Plugin.NRWidgets.ContainerDescriptor
 helpids: 30027
 ---

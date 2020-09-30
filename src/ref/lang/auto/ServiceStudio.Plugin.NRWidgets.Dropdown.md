@@ -1,6 +1,4 @@
 ---
-summary: Reference information on the Dropdown widget for showing a dropdown list for the users to select a value on the screen.
-tags: outsystems-designing-screens; reference; designing-screens; drop-down
 kinds: ServiceStudio.Plugin.NRWidgets.DropdownDescriptor
 helpids: 30036
 ---

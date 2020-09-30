@@ -1,5 +1,4 @@
 ---
-
 kinds: ServiceStudio.Plugin.NRWidgets.RadioButtonDescriptor
 helpids: 30215
 ---

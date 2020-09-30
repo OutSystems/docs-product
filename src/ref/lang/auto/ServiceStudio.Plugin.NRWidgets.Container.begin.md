@@ -1,3 +1,8 @@
+---
+summary: Reference information on the Container widget for grouping widgets and applying styles to them on a screen.
+tags: outsystems-designing-screens; reference; designing-screens; container
+---
+
 Container "box" where you can drag and drop other widgets, including other containers, to organize the layout of the screen.
 
 Containers allow you to:

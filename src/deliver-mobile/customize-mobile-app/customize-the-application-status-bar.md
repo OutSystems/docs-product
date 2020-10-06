@@ -13,7 +13,7 @@ The app status bar in mobile apps is black by default and it's always visible. T
 
 2. In the module tree, select the module and, in the properties editor, open the Extensibility Configurations property editor window: 
 
-    ![](images/ss_extensibility_in_module_properties.png)
+    ![Extensibility Configurations of a module](images/ss_extensibility_in_module_properties.png?width=500)
 
 3. Add the JSON properties to customize your application status bar according to the reference information presented below.  
     If you already have some extensibility configurations defined in the module, add the new content making the necessary adjustments.
@@ -55,7 +55,7 @@ Use the following template as a reference for defining a custom behavior for the
 
 ### Transparent Status Bar in Full Screen App
 
-![](images/transparent_statusbar.png)
+![Transparent status bar](images/transparent_statusbar.png?width=400)
 
 ```javascript   
 {
@@ -70,7 +70,7 @@ Use the following template as a reference for defining a custom behavior for the
 
 ### Status Bar with a Different Color
 
-![](images/differentcolor_statusbar.png)
+![Status bar with color](images/differentcolor_statusbar.png?width=400)
 
 ```javascript        
 {

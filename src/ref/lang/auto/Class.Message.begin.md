@@ -9,7 +9,11 @@ You can provide a feedback message to the end user by using the Message logic to
 1. Drag the Message logic tool onto the Client Action flow.
 1. Set the message **Label**, **Message**, and **Type** properties.
 
-![Drag message logic tool to client action flow](images/message-class-1-ss.png)
+    In this example, we enter ``Invalid password`` in the **Message** property (the message displayed to the user) and select **Error** as the message type.  
+
+    ![Drag message logic tool to client action flow](images/message-class-1-ss.png)
+
+    ![Invalid password message](images/message-class-6-ss.png)
 
 The available predefined message types are as follows:
 

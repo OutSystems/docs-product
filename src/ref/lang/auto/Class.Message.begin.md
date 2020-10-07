@@ -1,21 +1,31 @@
 ---
-summary: Provides a feedback message to the user.
+summary: Provides a feedback message to the end user.
 tags: runtime-mobileandreactiveweb;  
 ---
-You can provide a feedback message to the user by using the Message logic tool within a Client Action flow.
+You can provide a feedback message to the end user by using the Message logic tool within a Client Action flow.
 
 ## Using the Message logic tool
 
 1. Drag the Message logic tool onto the Client Action flow.
-1. Set the relevant properties, for example, the message type.
+1. Set the message **Label**, **Message**, and **Type** properties.
 
-![](images/message-class-1-ss.png)
+![Drag message logic tool to client action flow](images/message-class-1-ss.png)
 
-The available predefined Message types are as follows:
-<ul>
-<li>Info</li>
-<li>Warning</li>
-<li>Success</li>
-<li>Warning</li>
-<li>Error</li>
-</ul>
+The available predefined message types are as follows:
+
+* Info
+
+    ![Info message example](images/message-class-2-ss.png)
+
+* Success
+
+    ![Success message example](images/message-class-3-ss.png)
+
+* Warning
+
+    ![Warning message example](images/message-class-4-ss.png)
+
+* Error
+
+    ![Error message example](images/message-class-5-ss.png)
+

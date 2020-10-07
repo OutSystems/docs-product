@@ -9,6 +9,10 @@ Cause
 Recommendation
 :   You need to validate the data on the server before you perform a database operation that can modify data or change the permissions. From the security and data integrity point of view, such validation must be implemented on the server. A client-side validation isn't enough, as its purpose is to provide fast feedback to the users.
 
+To resolve the warning, create a Server Action that calls the Entity Action, and then use this Server Action on the Client Actions. Here's an example:
+
+![Create a server action](images/security-warning-1-ss.png)
+
 ---
 
 Message
@@ -19,3 +23,8 @@ Cause
 
 Recommendation
 :   Review how and where you use Server Action and ensure the logic isn't compromising security. For example, you may be allowing all visitors that aren't signed in to change the employee information. To fix such an issue, you must limit the access to the screen, and later validate the data on the server side.
+
+To resolve the warning, uncheck the **Anonymous** checkbox in the screen properties area.
+
+![Uncheck Anonymous checkbox](images/security-warning-2-ss.png)
+

@@ -1,47 +1,89 @@
 # Invalid URL Path Error
 
-The `Invalid URL Path` error is issued in the following situation:
+The `Invalid URL Path` error is issued in the following situations:
 
-* `URL path needs to start with '/'`
+Message
+:   `'URL Path' property must start with '/'.`
 
-    The URL path doesn't start with '/' in the definition of the REST API.
+Cause
+:   The specified **URL Path** value doesn't start with '/' in the definition of the REST API.
 
-    Review the syntax of the URL path.
+Recommendation
+:   Review the syntax of the URL path.
 
-* `Unexpected or mismatching braces in URL Path`
+---
 
-    The opening and closing curly braces ('{' and '}') do not match in the URL of the REST API.
+Message
+:   `Mismatching braces in property 'URL Path' of the (<method name>) REST API method.`
 
-    Review the syntax of the URL path.
+Cause
+:   The opening and closing curly braces ('{' and '}') don't match in the URL of the REST API.
 
-* `Empty braces in the URL path. Either add a parameter inside the braces, or delete them`
+Recommendation
+:   Review the syntax of the URL path.
 
-    In the URL of the REST API, there are curly braces ('{' and '}') without the parameter name inside.
+---
 
-    Review the syntax of the URL path.
+Message
+:   `Empty braces found in property 'URL Path' of the (<method name>) REST API method. Put a parameter name or delete braces.`
 
-* `(<method name>) method needs to have an (<parameter name>) input parameter. Either add an (<parameter name>) input parameter to the method, or remove the parameter from the URL path`
+Cause
+:   In the URL of the REST API, there are curly braces ('{' and '}') without the parameter name inside.
 
-    You deleted an input parameter from the REST Method, but it is still in the URL of the REST API.
+Recommendation
+:   Review the syntax of the URL path.
 
-* `(<parameter name>) input parameter is used in the URL, but is being placed in the Body of the request`
+---
 
-    An input parameter has the 'Sent In' property set to Body, but it should be URL because the method of the REST API has the 'HTTP Method' set to GET.
+Message
+:   `Parameter (<parameter name>) in property 'URL Path' must be an input parameter of the (<method name>) REST API method.`
 
-* `The URL Path must be either http://host/path or https://host/path`
+Cause
+:   You entered an input parameter placeholder in the URL path of the REST API method, but that input parameter doesn't exist in the REST method.
 
-    You have an invalid URL set in the 'URL Path' property of a method from a REST API.
+Recommendation
+:   Either remove the input parameter placeholder from the URL of the REST API, or add the expected input parameter to the REST API method.
 
-    Review the syntax of the URL path.
-    
-* `Invalid URL characters in property 'URL Path' of the (<method name>) REST API method.`
+---
 
-    Within the 'URL Path', "/", ";", "?" are reserved.
-    
-    The "/" character may be used within HTTP to designate a hierarchical structure.
+Message
+:   `(<parameter name>) input parameter is used in the URL, but is being placed in the Body of the request.`
 
-    The "{" and "}" are used in the ServiceStudio 'URL Path' to designate an input variable to the method.
-    
-    The hyphen (-} is currently a restricted character in ServiceStudio for the "Name" properties and cannot be used in the 'URL Path'.
+Cause
+:   An input parameter has the **Sent In** property set to `Body`. It should be `URL` because the method of the REST API has the **HTTP Method** set to `GET`.
 
-Double-click on the error line to take you directly to the REST API method's property list where the problem was detected.
+Recommendation
+:   Change the **Sent In** property to `URL`.
+
+---
+
+Message
+:   `The URL Path must be either http://host/path or https://host/path`
+
+Cause
+:   You have an invalid URL set in the **URL Path** property of a method from a REST API.
+
+Recommendation
+:   Review the syntax of the URL path.
+
+---
+
+Message
+:   `Invalid URL characters in property 'URL Path' of the (<method name>) REST API method.`
+
+Cause
+:   You used reserved characters like '-', ';', or '?' in the **URL Path** property.
+
+Recommendation
+:   Review the URL set in the **URL Path** property, removing any reserved characters.
+
+    Notes:
+
+    * Even though you can use the '/' character in **URL Path** values, this character is usually reserved for specifying hierarchical structures in REST methods.
+    * OutSystems reserves the '{' and '}' characters for including the value of REST method input parameters in the URL. Check [Customize REST URLs](../../../extensibility-and-integration/rest/expose-rest-apis/customize-rest-urls.md) for more information.
+
+<div class="info" markdown="1">
+
+**Tip:** Double-click on the error line to take you directly to the REST API method's property list where the problem was detected.
+
+</div>

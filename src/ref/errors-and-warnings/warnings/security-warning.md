@@ -24,7 +24,7 @@ Cause
 Recommendation
 :   Review how and where you use Server Action and ensure the logic isn't compromising security. For example, you may be allowing all visitors that aren't signed in to change the employee information. To fix such an issue, you must limit the access to the screen, and later validate the data on the server side.
 
-To resolve the warning, uncheck the **Anonymous** checkbox in the screen properties area.
+To resolve the warning, remove the Anonymous role by unchecking the **Anonymous** checkbox in the screen properties area.
 
 ![Uncheck Anonymous checkbox](images/security-warning-2-ss.png)
 

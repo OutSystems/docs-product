@@ -1,40 +1,22 @@
 ---
-summary: Use Application Templates to create applications for web and mobile.
+summary: Use application templates to bootstrap an app.
 tags: support-application_development; support-Front_end_Development; support-Front_end_Development-overview; support-Mobile_Apps; support-webapps
 ---
 
 # Application Templates
 
-OutSystems apps consists of Modules joined by an Application Template. Application Templates make development efficient because the apps based on them contain many predefined elements. For example, the apps have a Theme, CSS, Layouts, Blocks, and logic.
+OutSystems apps consist of modules that you bootstrap from an application template. These make development efficient because the apps based on application templates have many predefined elements. For example, login screens, a theme, layout blocks.
 
-## Types of Application Templates
+There are built-in, custom, and Forge application templates.
 
-There are three types of Application Templates, based on how they are created and distributed:
+### Built-in application templates
 
-* Built-in Application Templates
-* Custom Application Templates
-* Forge Application Templates
+**Reactive Web App**, **Phone App**, **Tablet App** and **Traditional Web** are the built-in application templates created and maintained by OutSystems. They reference the OutSystems UI Framework and enable you to use its theme, patterns, screen templates and other components.
 
-### Built-in Application Templates
+### Custom application templates
 
-The built-in Application Templates are created and maintained by OutSystems. Here are some of the templates.
+These are the application templates you create, based on the UI framework of the source application templates. The document [Create a Custom Application Template](<../ui/reuse/create-a-custom-application-template.md>) explains how to create these templates.
 
-* Reactive Web Application Template: **Reactive Web App**
-* Mobile Application Templates: **Phone**, **Tablet**
-* Traditional Web Application Template
+### Forge application templates
 
-The apps created from one of the built-in Application Templates inherit the features from OutSystems UI Framework and enable you to use:
-
-* OutSystems Theme, with predefined CSS styles.
-* Layout Blocks, with content placeholders.
-* Patterns, with user interface design patterns.
-* Optional components for richer user experience.
-* [Screen Templates](<../../develop/ui/screen-templates-use/intro.md>), for creating Screens that contain logic and sample data.
-
-### Custom Application Templates
-
-These are Application Templates you create, based on the UI framework of the source Application Template. The document [Create a Custom Application Template](<../ui/reuse/create-a-custom-application-template.md>) explains how to create these templates.
-
-### Forge Application Templates
-
-These are Application Templates provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates).
+These are application templates provided by the OutSystems Community and shared at [Forge](https://www.outsystems.com/forge/#category=templates).

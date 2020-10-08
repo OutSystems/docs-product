@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the Button Group Item widget for displaying an individual item representing an option within a ButtonGroup widget.
+tags: outsystems-designing-screens; reference; designing-screens; button-group-item
 kinds: ServiceStudio.Plugin.NRWidgets.ButtonGroupItemDescriptor
 helpids: 30075
 ---
@@ -22,14 +24,14 @@ Individual item representing an option within a ButtonGroup widget.
 <tbody>
 <tr>
 <td title="Name">Name</td>
-<td>Identifies an element in the scope where it is defined, like a screen, action, or module.</td>
+<td>Identifies an element in the scope where it's defined, like a screen, action, or module.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td title="Value">Value</td>
-<td>Value assigned to the Button Group widget variable when this item is selected.</td>
+<td>Value assigned to the Button Group widget variable when the users select this item.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -43,7 +45,7 @@ Individual item representing an option within a ButtonGroup widget.
 </tr>
 <tr>
 <td title="Visible">Visible</td>
-<td>Boolean literal or expression that defines if the widget is displayed.</td>
+<td>Boolean literal or expression that defines to display the widget or not.</td>
 <td>Yes</td>
 <td>True</td>
 <td></td>
@@ -63,14 +65,14 @@ Individual item representing an option within a ButtonGroup widget.
 <td>Name of an attribute to add to the HTML translation for this element.</td>
 <td></td>
 <td></td>
-<td>You can pick a property from the drop-down list or type a free text. The name of the property will not be validated by the platform.<br/><br/>Duplicated properties are not allowed. Spaces, " or ' are also not allowed.</td>
+<td>You can pick a property from the drop-down list or type a free text. The name of the property isn't validated by the platform.<br/><br/>Duplicated properties aren't allowed. Spaces, " or ' are also not allowed.</td>
 </tr>
 <tr>
 <td title="Value">Value</td>
 <td>Value of the attribute.</td>
 <td></td>
 <td></td>
-<td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
+<td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is property="property". For example, the nowrap property doesn't require a value, therefore the property is nowrap="nowrap".</td>
 </tr>
 </tbody>
 </table>
@@ -89,7 +91,7 @@ Individual item representing an option within a ButtonGroup widget.
 <tbody>
 <tr>
 <td title="EventName">Event</td>
-<td>JavaScript or custom event to be handled.</td>
+<td>JavaScript or custom event to handle.</td>
 <td></td>
 <td></td>
 </tr>
@@ -102,7 +104,7 @@ Individual item representing an option within a ButtonGroup widget.
 </tbody>
 </table>
 
-## Runtime Properties
+## Runtime properties
 
 <table markdown="1">
 <thead>

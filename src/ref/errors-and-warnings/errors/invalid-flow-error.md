@@ -1,12 +1,12 @@
 # Invalid Flow Error
 
 Message
-:   `<element> must have at least one incoming connector in <flow>`
+:   `<element> must have at least one incoming connector in <action-flow>`
 
 ![Incoming connector error](images/invalid-flow-error-1-ss.png?width=800)  
      
 Cause
-:   You have an element in your flow that's not connected to any other element. For example, you have an If element in an action that's not connected to that action flow.
+:   You have an element in your flow that's not connected to any other element. For example, you have an End element in an action that doesn't have an incoming connector.
 
 Recommendation
 :       Edit your flow and connect the element to one of the existing elements, otherwise that element won't be executed.
@@ -16,7 +16,7 @@ Recommendation
 ---
 
 Message
-:   `<element> must have <number> outgoing connector(s) in <flow>`
+:   `<element> must have <number> outgoing connector(s) in <action-flow>`
 
 ![Incoming connector error](images/invalid-flow-error-2-ss.png?width=800) 
 

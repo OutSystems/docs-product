@@ -48,11 +48,14 @@ Create a mobile app and turn on the toggle **Distribute as PWA** in the app deta
 
 1. Publish the app.
 
-1. In the app details, under the **Distribute** tab, turn on the toggle **Distribute as PWA**. To locate the **Distribute** tab, go back to the home screen of Service Studio and click your application icon.
+1. In the app details, under the **Distribute** tab, turn on the toggle **Distribute as PWA**. To locate the **Distribute** tab, go back to the home screen of Service Studio and click your app icon.
    
     ![The PWA toggle to activate progressive web app distribution](images/pwa-toggle.png?width=600)
 
-You don't have to republish your app after changing the value of the **Distribute as PWA**, as this change is effective immediately.
+**Notes**
+
+* You don't have to republish your app after changing the value of the **Distribute as PWA**, as this change is effective immediately.
+* You can also change the PWA settings for an app in an environment through Service Center. For more information, see [Generate and distribute your mobile app](../generate-and-distribute-your-mobile-app/intro.md#distribute-your-app-as-pwa).
 
 <div class="warning" markdown="1">
 

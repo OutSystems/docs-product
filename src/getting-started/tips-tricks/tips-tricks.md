@@ -285,7 +285,7 @@ Drag an Entity to an Action Flow to create an aggregate.
 
 ![](images/tt-drag-agg-unf-04.gif)
 
-If the target Entity has an `Is Active Attribute` defined the new aggregate is created with a `<Entity>.IsActive = True` filter. Otherwise, the new aggregate is created without filters.
+If you set the `Is Active Attribute` of the Entity - choose **More...** in the Entity properties, then expand **More options** - the new Aggregate is created with the filter `<Entity>.<Is Active Attribute> = True`. Otherwise, the new aggregate is created without filters.
 
 ![](images/tt-drag-agg-unf-05.png?width=500)
 

@@ -6,7 +6,7 @@ tags:
 # Operators
 
 
-This is the reference of the operators you can use in an OutSystems [expression](intro.md).
+This is the reference document for the operators you can use in an OutSystems [expression](intro.md).
 
 ## Numeric
 
@@ -16,7 +16,7 @@ The numeric operators are **\+**, **-**, *****, and **/**.
 
 Yields the negation of its numeric operand.
 
-The following are the data types allowed for unary minus (\-) operator:
+The following are the data types allowed for the unary minus (\-) operator:
 
 \- (Unary minus) | Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time  
 ---|---|---|---|---|---|---|---|---  
@@ -26,7 +26,7 @@ The following are the data types allowed for unary minus (\-) operator:
 
 Perform common arithmetic operations.
 
-The following are the data types allowed for arithmetic operators /, \-, \*:
+The following are the data types allowed for the arithmetic operators /, \-, \*:
 
 /, \*, \- | Text | Long Integer | Integer | Decimal | Boolean | Date Time | Date | Time  
 ---|---|---|---|---|---|---|---|---  
@@ -39,13 +39,13 @@ The following are the data types allowed for arithmetic operators /, \-, \*:
 **Date** | No | No | No | No | No | No | No | No  
 **Time** | No | No | No | No | No | No | No | No  
 
-(a) The result of a division operation is always cast as a `Decimal`.
+(a) The result of a division operation is always converted to a `Decimal`.
 
 ### Arithmetic operator +
 
-Performs sum operation. When one of the operands is `Text`, the other operand is cast to `Text`, and performs the concatenate operation.
+Performs sum operation. When one of the operands is `Text`, the other operand is converted to `Text`, and performs the concatenate operation.
 
-The following are the data types allowed for arithmetic operator `+`:
+The following are the data types allowed for the arithmetic operator `+`:
 
 \+ | Text | Long Integer | Integer | Decimal | Boolean | DateTime | Date | Time  
 ---|---|---|---|---|---|---|---|---  
@@ -58,7 +58,7 @@ The following are the data types allowed for arithmetic operator `+`:
 **Date** | Yes(a) | No | No | No | No | No | No | No  
 **Time** | Yes(a) | No | No | No | No | No | No | No
 
-(a) The non-text side is cast to `Text` and then concatenated.
+(a) The non-text side is converted to `Text` and then concatenated.
 
 ## Logical and Boolean
 
@@ -66,19 +66,19 @@ and, or, not, =, &lt;, &gt;, &lt;&gt;, &lt;=, &gt;=
 
 ### AND
 
-Performs the logical 'AND' operation. Allows only `Boolean` type operands.
+Performs the logical 'AND' operation. Only allows `Boolean` type operands.
 
 ### OR
 
-Performs the logical 'OR' operation. Allows only `Boolean` type operands.
+Performs the logical 'OR' operation. Only allows `Boolean` type operands.
 
 ### Unary NOT
 
-Performs the logical 'NOT' operation. Allows only `Boolean` type operands.
+Performs the logical 'NOT' operation. Only allows `Boolean` type operands.
 
 ### Comparison operators &lt;, &gt;, &lt;=, &gt;=
 
-Common comparison operations. When one of the operands is Text, the other operand is converted to Text, and it performs the string comparison operation.
+Common comparison operations. When one of the operands is Text, the other operand is converted to **Text**, and it performs the string comparison operation.
 
 The following are the data types allowed for comparison operators:
 
@@ -99,14 +99,14 @@ The following are the data types allowed for comparison operators:
 
 (a) The non-text side is converted to `Text` and the length of both texts are compared.
 
-(b) Both variables are converted to `Text` and the their length is compared.
+(b) Both variables are converted to `Text` and their length is compared.
 
 (c) The `Currency` operand is converted to `Integer` data type and then
 compared.
 
 ### Equality operators =, &lt;&gt;
 
-Performs equality operations. When one of the operands is `Text`, the other operand is converted to `Text`, and it performs the string comparison operation.
+Performs equality operations. When one of operands is `Text`, the other operand is converted to `Text`, and it performs the string comparison operation.
 
 The following are the data types allowed for equality operators:
 
@@ -130,7 +130,7 @@ The following are the data types allowed for equality operators:
 
 (a) The non-text side is converted to `Text` and then compared.
 
-(b) Only possible if both operands are of the same type, then, compare the value of the attributes.
+(b) Only possible if both operands are of the same type, after which the values of the attributes are compared.
 
 (c) Identifiers of different entities can be compared but a warning is issued.
 
@@ -149,9 +149,9 @@ Currency | Phone Number | Converts both operands to Text.
 
 ## Like
 
-This operator is only valid in the Filter Condition Editor of an aggregate and allows you to compare results. It has the same semantic as the `LIKE` keyword in SQL. You can use the `LIKE` operator to compare with an expression. But the advantage of `LIKE` is the fact that it allows you to use the wildcard character `%` that represents one or more characters.
+This operator is only valid in the Filter Condition Editor of an aggregate and allows you to compare results. It has the same semantic as the `LIKE` keyword in SQL. You can use the `LIKE` operator to compare with an expression. The advantage of `LIKE` is the fact that it allows you to use the wildcard character `%` that represents one or more characters.
 
-For example, if you want to select the Identifier for every Customer that contains "James" in its name, in any position, the following filter condition allows you to get this information:
+For example, if you want to select the Identifier for every Customer that contains "James" in its name, in any position of the string, the following filter condition allows you to get this information:
 
 `name LIKE '%James%'`
 
@@ -167,25 +167,25 @@ LIKE | Text | Integer | Decimal | Boolean | DateTime | Date | Time
 **Date** | (a) | No | No | No | No | No | No  
 **Time** | (a) | No | No | No | No | No | No
 
-(a) The non-text side is cast to `Text` and then compared.
+(a) The non-text side is converted to `Text` and then compared.
 
 ## Indexer declaration
 
-This operator is used to access a specific element of a list. In OutSystems, index (position) starts with zero; to access the first record, you have to type the expression as follows:
+This operator is used to access a specific element of a list. In OutSystems, the index (position) starts at zero.To access the first record in the MyRecord list, you must enter the expression as follows:
 
 `MyRecordList[0]`
 
 When you try to access an index that does not exist, the following runtime error is raised: "Index n is out of range"
 
-Since a record can be a sequence of Entities and/or Structures, you can access to a specific Entity or Structure of a specified record:
+Since a record can be a sequence of Entities and/or Structures, you can access to a specific Entity or Structure of a specified record as follows:
 
 `MyRecordList[0].<entity name | structure name>`
 
-You can use an expression inside the indexer operator as long as it returns an integer value. This includes the use of User Functions.
+You can use an expression inside the indexer operator as long as it returns an integer value. This includes the use of user functions.
 
 `MyRecordList[i-1].Customer.Name` — where `i` is an integer.
 
-`MyRecordList[EmployeeOfMonth()].Employee.Name` — where `EmployeeOfMonth` is a User Function that returns an integer value.
+`MyRecordList[EmployeeOfMonth()].Employee.Name` — where `EmployeeOfMonth` is a user function that returns an integer value.
 
 ## Precedence of operators
 
@@ -196,7 +196,7 @@ Operator | Description
  \- | Numeric negation  
 NOT | Logical negation
 /, \* | Multiplicative operators 
-\-, \+ | Additive operators.  
+\-, \+ | Additive operators  
 &lt;, &gt;, &lt;=, &gt;= | Relational operators 
 =, &lt;&gt; | Equality operators  
 LIKE | Similarity operator

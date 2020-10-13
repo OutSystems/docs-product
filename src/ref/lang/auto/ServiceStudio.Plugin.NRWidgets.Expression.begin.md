@@ -1,12 +1,11 @@
-<div class="info" markdown="1">
+---
+summary: Reference information on the Expression widget for displaying a text literal or an expression to calculate at runtime on the screen.
+tags: outsystems-designing-screens; reference; designing-screens; expression
+---
 
-We've been working on this article. Please let us know how useful this new version is by voting.
+The expression widget displays text or the result of an expression at runtime. It's similar to the **print** command in other programming languages. To use the expression widget:
 
-</div>
-
-The expression widget shows text or result of an expression at runtime. It's similar to the **print** command in other programming languages. To use the expression widget:
-
-1. Search for **expression** in the widget toolbar and drag the widget to a screen, block or placeholder. The expression editor opens.
+1. In the widget toolbar, search for **expression** and drag the widget to a screen, block or placeholder. The expression editor opens.
 
     ![Expression widget](images/expression-widget-ss.png?width=400)
 
@@ -30,7 +29,12 @@ The expression widget shows text or result of an expression at runtime. It's sim
     * **Hello, world!**
     * **1 + 2 = 3**
     * **The square root of 3 is 1.73205080756887729352744634151**
-    * **Today is (current date)!**, where **(current date)** depends on your server. 
+    * **Today is 2020-10-08!!** 
     * **THIS IS TEXT IN UPPERCASE**
 
 
+<div class="info" markdown="1">
+
+We've been working on this article. Please let us know how useful this new version is by voting.
+
+</div>

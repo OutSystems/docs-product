@@ -43,7 +43,7 @@ An Entity represents a table in a database.
 </tr>
 <tr>
 <td title="Label (plural)">Label (plural)</td>
-<td>Label used to described the plural of the entity in the user interface of the application.</td>
+<td>Label used to describe the plural of the entity in the user interface of the application.</td>
 <td></td>
 <td></td>
 <td></td>

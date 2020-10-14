@@ -52,6 +52,8 @@ There are some conditions to which you have to pay attention to when using this 
 \- If there is a single query that uses the Database Connection with the old database before this action is executed, the switch to the new database will not happen until the end of the current request. Only in a next request the database switch becomes effective.  
 \- The Connection String must connect to a database with the same type (e.g. Oracle, SQL Server, MySQL) as the one configured in Service Center for the Database Connection.  
 \- Your license must include the Platform Extensibility APIs feature.
+\- For mobile and reactive apps you need to do this at the beggining of every data action, you'll not be able to use screen aggregates directly.
+
 
 *Inputs*
 

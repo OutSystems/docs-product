@@ -9,7 +9,7 @@ Cause
 Recommendation
 :   You need to validate the data on the server before you perform a database operation that can modify data or change the permissions. From the security and data integrity point of view, you must implement this validation on the server. A client-side validation isn't enough, as its purpose is to provide fast feedback to the users.
 
-To resolve the warning, create a Server Action that calls the Entity Action, and then use this Server Action on the Client Actions. Here's an example:
+To resolve the warning, create a Server Action that calls the Entity Action, and then use this Server Action on the Client Actions. Keep in mind that you still need to create the server logic to ensure that your data is valid before saving. Here's an example of a Server Action calling the Entity Action:
 
 ![Create a server action](images/security-warning-1-ss.png)
 

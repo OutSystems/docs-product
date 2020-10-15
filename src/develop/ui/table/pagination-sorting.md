@@ -24,7 +24,7 @@ You can change the Attribute used for sorting.
 
     ![Pagination logic](<images/table-sort-attribute-ss.png?width=370>)
     
-Please note when using nested structures as table **Source** variable: to select nested item as **Sort Attribute**, table widget's **Source** variable's **Data Type** needs to be a *List of Record* containing your structure. When using a structure List instead of structure Record List, only first level structure attributes can be selected as **Sort Attribute**.
+    **Note.** With nested structure as the table **Source** variable, to select a nested item as **Sort Attribute**, the **Data Type** of the **Source** needs to be a **List of Record** with your structure. Also, when using a structure **List** instead of **Record List**, you can only select the first level attributes as the **Sort Attribute**.
 
 1. Publish the module.
 

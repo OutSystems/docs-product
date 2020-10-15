@@ -5,7 +5,7 @@ tags: runtime-mobile
 
 # Native Platforms Configuration
 
-The Native Platforms tab in Service Center presents the following information:
+The **Distribute** tab in Service Center, section **Native Platforms**, presents the following information:
 
 ![](<images/sc-native-platforms-table.png>)
 

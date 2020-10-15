@@ -15,7 +15,7 @@ Google [provides a checklist](https://developer.android.com/distribute/best-prac
 
 Pre-requirements for Android include [graphics assets](https://developer.android.com/distribute/best-practices/launch/store-listing.html#best-practices) and an [app package](https://support.google.com/googleplay/android-developer/answer/113469?hl=en).
 
-Google provides also a video with a [list of 10 tips](https://www.youtube.com/watch?v=psu3pPdfYSM) you should  follow to ensure the success of your application.
+Google also provides a video with a [list of 10 tips](https://www.youtube.com/watch?v=psu3pPdfYSM) you should  follow to ensure the success of your application.
 
 ## Publishing Android Applications to Google Play
 
@@ -27,15 +27,15 @@ You can generate the release (final) version of your mobile app in Service Studi
 
 To generate the Android App Package in the Service Studio, perform the following steps:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the **Native Platforms** tab.
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the **Distribute** tab.
 
-1. Click on the **CONFIGURE ANDROID APP** button or the Android cog icon button if you've already generated a previous Android app.
+1. Click on the **Generate Android App** button, or the Android cog icon button if you've already generated a previous Android app.
 
     ![Configure Android App Menu](images/ss-native-platforms-tab-android2.png)
 
-1. In the Build type dropdown, select the **Release** option.
+1. In the **Build type** list, select the **Release** option.
 
-1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. com.domain.appname).
+1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, for example, **com.domain.appname**).
 
 1. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check here](more-information-on-generating-and-distributing-mobile-apps.md#For_Android) how to do it.
 
@@ -55,19 +55,19 @@ To generate the Android App Package in the Service Studio, perform the following
 
     ![Service Center Factory Application Menu](images/outsystems-service-center-factory-applications-menu.png)
 
-1. Select the **Native Platforms** tab and click on the **Configure** link for the Android entry.
+1. Select the **Distribute** tab and click on the **Configure** link for the Android entry in the **Native Platforms** section.
 
-    ![Service Center Factory Application Configure Android](images/outsystems-service-center-factory-native-platform-tab-android.png)
+    ![Service Center Factory Application Configure Android](images/outsystems-service-center-factory-native-platform-tab-android.png?width=500)
 
 1. In the **Build type** drop-down menu, select the **Release** option.
 
-    Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g.com.domain.appname).
+    Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, for example, **com.domain.appname**).
 
 1. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check here](more-information-on-generating-and-distributing-mobile-apps.md#For_Android) how to do it.
 
 1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
 
-    ![Service Center Factory Application Android Settings](images/sc-configure-android-settings.png)
+    ![Service Center Factory Application Android Settings](images/sc-configure-android-settings.png?width=500)
 
 1. Click **Save** to save your settings.
 

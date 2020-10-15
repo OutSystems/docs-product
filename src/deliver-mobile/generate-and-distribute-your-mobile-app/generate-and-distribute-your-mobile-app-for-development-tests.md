@@ -5,9 +5,9 @@ tags: runtime-mobile; support-mobile; support-Mobile_Apps
 
 # Generate and Distribute Your Mobile App for Development Tests
 
-While you are developing a mobile app, there are times when you have completed some work that you want to test on the device and share it with other so they can also test it.
+While you are developing a mobile app, there are times when you complete some development work that you want to test on the device and, share it with others for testing.
 
-In OutSystems, you can build and generate a mobile application package for your mobile app for test purposes and install it on the device. You can then share the package with other users following iOS/Android distribution process.
+In OutSystems, you can build and generate a mobile application package for your mobile app for test purposes and install it on the device. You can then share the package with other users following the iOS/Android distribution process.
 
 <div class="info" markdown="1">
 
@@ -21,7 +21,7 @@ You can also [distribute or test your app as a Progressive Web App (PWA)](../dis
 
 * To test your app, you must have a certificate of type `iOS App Development` generated and configured in your Apple Developer account. If you don't have one, learn [how you can create a certificate](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-certificate>).
 
-* To allow launching your app in the devices of the end users group, you must setup the `iOS App Development` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-provisioning-profile>).  
+* To allow launching your app in the devices of the end users group, you must set up the `iOS App Development` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-provisioning-profile>).  
 For more information on registering devices on your Apple Developer account,check the [Apple Developer website](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW10>).
 
 * To get the certificate and provisioning profile to generate the iOS app for your mobile app, you must have an Apple Developer account. If you don't, create a new [Apple Developer Account](https://developer.apple.com/programs/ "https://developer.apple.com/programs/").
@@ -32,7 +32,7 @@ You can configure, generate, and download an iOS mobile app package of your app 
 
 To use Service Studio, do the following:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab.
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab and check out the section **Native Platforms**.
 1. Click on the **Configure iOS App** button or the iOS cog icon button if you've already generated a previous iOS app.
 1. In the  **Build type** dropdown, select the `Development` option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`). You have to register the same app identifier in your Apple Developer Account.
@@ -45,7 +45,7 @@ To use Service Center, do the following:
 
 1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
 1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list.
-1. Select the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the **Configure** link for the iOS entry.
+1. Select the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the **Configure** link for the iOS entry in the **Native Platforms** section.
 1. In the **Build type** dropdown, select the `Development` option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname` ).
 1. Provide a certificate of type `iOS App Development` and its password. The certificate should have a `.p12` file extension.
@@ -77,12 +77,12 @@ You can configure, generate, and download an Android mobile app package of your 
 
 To use Service Studio, do the following:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab.
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab and check out the **Native Platforms** section.
 1. Click on the **Configure Android App** button or the Android cog icon button if you've already generated a previous Android app.
 1. In the "Build type" dropdown, select the `Debug` option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`).
 1. _(Optional step)_ If you want to use a custom keystore to sign the debug version of your app:
-    1. Expand the **>Configure Keystore** section in the **Native Platforms** tab.
+    1. Expand the **>Configure Keystore** section in the **Native Platforms** section of the **Distribute** tab.
     1. Select the keystore and introduce the passwords.
     1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
 1. Click **Generate App**.
@@ -93,7 +93,7 @@ To use Service Center, do the following:
 
 1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
 1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list.
-1. Select the [Native Platforms](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the  Configure  link for the Android entry.
+1. Select the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab, locate the **Native Platforms** section, and click on the **Configure** link for the Android entry.
 1. In the **Build type** dropdown, select the `Debug` option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`).
 1. _(Optional step)_ If you want to use a custom keystore to sign the debug version of your app:

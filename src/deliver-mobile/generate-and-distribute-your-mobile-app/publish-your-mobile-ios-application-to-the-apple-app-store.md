@@ -61,28 +61,28 @@ You can generate the release (final) version of your mobile app in Service Studi
 
 To generate your mobile app in the Service Studio, perform the following steps:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the **Native Platforms** tab.
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the **Distribute** tab, and check out **Native Platforms** section.
 
-1. Click on the **CONFIGURE IOS APP** button or the iOS cog icon if you've already generated a previous iOS app.
+1. Click on the **Generate iOS App** button or the iOS cog icon if you've already generated a previous iOS app.
 
-   ![Configure iOS App Menu](images/ss-native_platforms-tab-ios2.png)
+   ![Configure iOS App Menu](images/ss-native_platforms-tab-ios2.png?width=500)
 
-1. In the **Build type** dropdown, select one of the following options:
+1. In the **Build type** list, select one of the following options:
 
     * **Ad-Hoc** (for organizations to develop and deploy proprietary, internal-use apps to their employees)
     * **App Store** (for Apple Developer Program)
     * **Development** (for testing apps on registered devices only)
     * **In-House** (for Apple Developer Enterprise Program)
 
-1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. com.domain.appname).
+1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, for example, **com.domain.appname**).
 
-1. Provide a certificate of the correct type (see the [Before You Start](#before-you-start) section) and its password. The certificate should have a .p12 extension.
+1. Provide a certificate of the correct type (see the [Before You Start](#before-you-start) section) and its password. The certificate should have a **.p12** extension.
 
-1. Provide a provisioning profile of the correct type (see the [Before You Start](#before-you-start) section). The provisioning profile should have a .mobileprovision extension.
+1. Provide a provisioning profile of the correct type (see the [Before You Start](#before-you-start) section). The provisioning profile should have a **.mobileprovision** extension.
 
 1. Click the **GENERATE APP** button.
 
-   ![Configure iOS App Settings](images/ss-native_platforms-configure-ios-app.png)
+   ![Configure iOS App Settings](images/ss-native_platforms-configure-ios-app.png?width=500)
 
 1. After the generation has been completed, scan the QR code or copy the created installation link using your device to install the generated iOS app. If you need to download the generated app package (IPA), follow the procedure below in Service Center.
 
@@ -96,7 +96,7 @@ To generate your mobile app in the Service Center, perform the following steps:
 
     ![Service Center Factory Application Menu](images/outsystems-service-center-factory-applications-menu.png)
 
-1. Select the **Native Platforms** tab and click on the **Configure** link for the iOS entry.
+1. Select the **Distribute** tab and click on the **Configure** link for the iOS entry in the **Native Platforms** section.
 
     ![Service Center Factory Application Configure iOS](images/outsystems-service-center-factory-native-platform-tab-ios.png)
 
@@ -104,11 +104,11 @@ To generate your mobile app in the Service Center, perform the following steps:
 
     ![Service Center Factory Application Configure iOS](images/outsystems-service-center-factory-native-platform-build-type.png)
 
-1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. com.domain.appname).
+1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, for example, **com.domain.appname**).
 
-1. Provide a certificate of the correct type (see the [Before You Start](#Before-You-Start) section) and its password. The certificate should have a .p12 extension.
+1. Provide a certificate of the correct type (see the [Before You Start](#Before-You-Start) section) and its password. The certificate should have a **.p12** extension.
 
-    Provide a provisioning profile of the correct type (see the [Before You Start](#Before-You-Start) section). The provisioning profile should have a .mobileprovision extension.
+    Provide a provisioning profile of the correct type (see the [Before You Start](#Before-You-Start) section). The provisioning profile should have a **.mobileprovision** extension.
 
     ![Service Center Factory Application Configure iOS](images/sc-configure-ios-settings.png)
 

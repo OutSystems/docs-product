@@ -135,12 +135,6 @@ Service Studio generates the manifest automatically. Modify the manifest only if
 
 ### Override the manifest settings {#override-pwa-manifest}
 
-<div class="warning" markdown="1">
-
-OutSystems identified an issue that prevents LifeTime from overriding the PWA Extensibility Configurations. The development team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
-
-</div>
-
 <div class="info" markdown="1">
 
 Keep in mind that the LifeTime PWA manifest overrides the manifest in Service Studio.
@@ -255,3 +249,15 @@ Here are some suggestions to fix the issue:
 ### There are runtime errors
 
 Try deleting the local data of the app. Locate the settings in the browser, and clear the data for the app installation domain. In Chrome, go to **Settings** > **Site Settings** > **Cookies and site data** > **See all cookies and site data**, search for the domain and clear the data.
+
+## Known issues
+
+Here are the current known issues with PWA.
+
+### Overriding the Extensibility Configurations in LifeTime isn't working
+
+There's an issue that prevents LifeTime from overriding the PWA Extensibility Configurations. The development team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
+
+### Staging of the PWA toggle value in LifeTime isn't working
+
+In Platform Server 11.9.0, the staging of the PWA toggle value in LifeTime isn't working as expected. To keep the PWA distribution settigs in the target environment, set the toggle in the target environment manually. OutSystems is working on a fix.

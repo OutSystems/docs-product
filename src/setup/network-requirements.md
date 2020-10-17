@@ -104,6 +104,8 @@ Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
 workflowbuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
+Workflow Builder needs to be able to connect directly to LifeTime via TCP using https, port 443.
+
 ## Network infrastructure requirements
 
 ### LifeTime

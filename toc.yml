@@ -712,6 +712,8 @@
 - href: setup/intro.md
 - topics:
     - href: setup/possible-setups.md
+    - topics:
+        - href: setup/possible-setups/cloud-architecture.md
     - href: setup/system-requirements.md
     - href: setup/network-requirements.md
     - href: setup/default-configurations.md

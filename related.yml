@@ -900,7 +900,7 @@
     - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
     - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
     - deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
-    - setup/possible-setups/intro.md
+    - one-way: setup/possible-setups/intro.md
 
 # Building apps with AndroidX
 - deliver-mobile/mobile-apps-build-service/androidx.md:

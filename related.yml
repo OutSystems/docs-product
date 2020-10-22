@@ -725,6 +725,11 @@
 -  ref/lang/auto/Class.Role.final.md:
     - develop/security/user-roles/intro.md
 
+# Run Server Action
+- ref/lang/auto/Class.Run Server Action.final.md:
+    - ref/lang/auto/Class.Run Client Action.final.md
+    - develop/reuse-and-refactor/encapsulate-logic.md
+
 #     User Exception
 -  ref/lang/auto/Class.User Exception.final.md:
     - develop/logic/exceptions/intro.md#user-exception

@@ -19,6 +19,11 @@ The diagram below shows the **network architecture** of the base setup for an Ou
 
 ![OutSystems cloud diagram](images/cloud-architecture-standard-diag.png)
 
+Depending on the [OutSystems Cloud edition](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/Cloud_services_catalog), customers can expand their base setup with the following:
+
+* Additional non-production environments, with a dedicated database.
+* Additional pipelines, that enable the independent release of one or more related applications.
+
 ### Communications with OutSystems tools
 
 Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../deliver-mobile/mobile-apps-build-service/intro.md), [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard), [Workflow Builder](https://success.outsystems.com/Documentation/Workflow_Builder), and [Experience Builder](https://success.outsystems.com/Documentation/Experience_Builder):

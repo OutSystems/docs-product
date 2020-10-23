@@ -725,6 +725,11 @@
 -  ref/lang/auto/Class.Role.final.md:
     - develop/security/user-roles/intro.md
 
+# Run Server Action
+- ref/lang/auto/Class.Run Server Action.final.md:
+    - ref/lang/auto/Class.Run Client Action.final.md
+    - develop/reuse-and-refactor/encapsulate-logic.md
+
 #     User Exception
 -  ref/lang/auto/Class.User Exception.final.md:
     - develop/logic/exceptions/intro.md#user-exception
@@ -900,7 +905,7 @@
     - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
     - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
     - deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
-    - setup/possible-setups.md
+    - one-way: setup/possible-setups/intro.md
 
 # Building apps with AndroidX
 - deliver-mobile/mobile-apps-build-service/androidx.md:

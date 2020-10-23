@@ -23,16 +23,16 @@ OutSystems allows delivering enterprise web and mobile applications that run in 
 
 Even though this is the typical OutSystems infrastructure, you can always adjust the infrastructure to add and remove environments, since the platform is made to scale with your own needs.
 
+## Cloud infrastructure
+
+Since OutSystems [runs on the cloud](cloud-architecture.md), it's possible to set up your infrastructure with a mouse-click. You only have to install Service Studio and Integration Studio development tools to start developing and deploying your applications. Learn more at [www.outsystems.com](https://www.outsystems.com).
+
+![](images/possible-setups-2.png)
+
 ## On-premises infrastructure
 
 If you need to retain the control of your servers, simply install OutSystems in your own datacenter.
 
 ![](images/possible-setups-1.png)
 
-The scenario depicts an infrastructure where you manage the environments: Development, Quality Assurance, Production and LifeTime. In this case you’ll have to install the Platform Server in each server of your infrastructure (front-ends and deployment controllers), and Service Center for each environment, to monitor them. You’ll also need to install LifeTime, the console to manage your infrastructure. Given its requirements, LifeTime must run in a **dedicated** environment. **Installing LifeTime in an existing environment is not supported from version OutSystems 11 onwards.**
-
-## Cloud infrastructure
-
-Since OutSystems runs on the cloud, it is possible to set-up your infrastructure with a mouse-click. You only have to install Service Studio and Integration Studio development tools to start developing and deploying your applications. Learn more at [www.outsystems.com](https://www.outsystems.com).
-
-![](images/possible-setups-2.png)
+The scenario depicts an infrastructure where you manage the environments: Development, Quality Assurance, Production, and LifeTime. In this case you’ll have to install the Platform Server in each server of your infrastructure (front-ends and deployment controllers), and Service Center for each environment, to monitor them. You’ll also need to install LifeTime, the console to manage your infrastructure. Given its requirements, LifeTime must run in a **dedicated** environment. **Installing LifeTime in an existing environment is not supported from version OutSystems 11 onwards.**

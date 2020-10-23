@@ -446,20 +446,20 @@
         - href: deliver-mobile/customize-mobile-app/customize-errors-screen.md
         - href: deliver-mobile/customize-mobile-app/configure-accessible-domains.md
         - href: deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
-    - href: deliver-mobile/generate-and-distribute-your-mobile-app/intro.md
+    - href: deliver-mobile/generate-distribute-mobile-app/intro.md
     - topics:
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/development-tests.md
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/limited-group-end-users.md
+        - href: deliver-mobile/generate-distribute-mobile-app/development-tests.md
+        - href: deliver-mobile/generate-distribute-mobile-app/limited-group-end-users.md
 
         # Generate and Publish Your Mobile App to the Mobile App Stores
        
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-app-stores.md
+        - href: deliver-mobile/generate-distribute-mobile-app/publish-app-stores.md
         - topics:
-            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-google-play-store.md
-            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-apple-app-store.md
+            - href: deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
+            - href: deliver-mobile/generate-distribute-mobile-app/publish-apple-app-store.md
 
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/more-information.md
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/configuration-native-platforms.md
+        - href: deliver-mobile/generate-distribute-mobile-app/more-information.md
+        - href: deliver-mobile/generate-distribute-mobile-app/configuration-native-platforms.md
     - href: deliver-mobile/mobile-app-update-scenarios.md
     - href: deliver-mobile/manage-distribution-options/intro.md
     - href: deliver-mobile/mobile-apps-build-service/intro.md

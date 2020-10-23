@@ -55,7 +55,7 @@ Create a mobile app and turn on the toggle **Distribute as PWA** in the app deta
 **Notes**
 
 * You don't have to republish your app after changing the value of the **Distribute as PWA**, as this change is effective immediately.
-* You can also change the PWA settings for an app in an environment through Service Center. For more information, see [Generate and distribute your mobile app](../generate-and-distribute-your-mobile-app/intro.md#distribute-your-app-as-pwa).
+* You can also change the PWA settings for an app in an environment through Service Center. For more information, see [Generate and distribute your mobile app](../generate-distribute-mobile-app/intro.md#distribute-your-app-as-pwa).
 
 <div class="warning" markdown="1">
 

@@ -34,7 +34,7 @@ To change the default icon and use your own icon image, providing multiple versi
 
     ![](images/image5.PNG)
 
-1. To make this change available for the users, [publish and generate a new mobile application](<../generate-and-distribute-your-mobile-app/intro.md>) and distribute it.
+1. To make this change available for the users, [publish and generate a new mobile application](<../generate-distribute-mobile-app/intro.md>) and distribute it.
 
     ![](images/image02.png)
 

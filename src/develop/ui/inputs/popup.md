@@ -57,7 +57,7 @@ To create and use a popup in Reactive Web and Mobile Apps:
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
-<div class="info" markdown="1">
+If your Reactive application requires a scrollable popup, you can try to implement the instructions on [this community post.](https://www.outsystems.com/forums/discussion/64846/trying-to-scroll-in-popup-reactive-web/#Post255212)
 
 Here's a [video tutorial about using Popup in Reactive Web and Mobile App](https://www.youtube.com/watch?v=RrMARHvJBXU).
 

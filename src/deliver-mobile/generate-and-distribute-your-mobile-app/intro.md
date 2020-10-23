@@ -9,7 +9,7 @@ Before generating your mobile app for the first time, you have to configure spec
 
 The following sections show how to configure and generate iOS and Android app packages of your mobile apps in Service Studio or in Service Center.
 
-For additional information about generating and distributing iOS and Android app packages, see [More Information on Generating and Distributing Mobile Apps](more-information-on-generating-and-distributing-mobile-apps.md).
+For additional information about generating and distributing iOS and Android app packages, see [More Information on Generating and Distributing Mobile Apps](more-information.md).
 
 <div class="info" markdown="1">
 

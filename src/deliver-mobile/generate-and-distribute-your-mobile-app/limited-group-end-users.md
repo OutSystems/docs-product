@@ -13,14 +13,14 @@ In OutSystems, you can generate a mobile application package for your mobile app
 
 ### Before You Start
 
-* To generate your iOS mobile app you must be enrolled as an Apple Developer. If you haven’t enrolled yet, learn [how to enroll as an Apple developer](<more-information-on-generating-and-distributing-mobile-apps.md#enroll-as-an-apple-developer>). 
+* To generate your iOS mobile app you must be enrolled as an Apple Developer. If you haven’t enrolled yet, learn [how to enroll as an Apple developer](<more-information.md#enroll-as-an-apple-developer>). 
 
 * To test your app, you must have a certificate generated and configured in your Apple Developer account. The exact type of certificate depends on the developer program you enrolled in:  
 — `App Store and Ad Hoc` certificate for the Apple Developer Program, or  
 — `In-House and Ad Hoc` certificate for the Apple Developer Enterprise Program  
-If you don’t have one, learn [how you can create a certificate](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-certificate>).
+If you don’t have one, learn [how you can create a certificate](<more-information.md#create-a-certificate>).
 
-* To allow launching your app in the devices of the end users group, you must set up the `Ad Hoc` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-provisioning-profile>).
+* To allow launching your app in the devices of the end users group, you must set up the `Ad Hoc` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information.md#create-a-provisioning-profile>).
 
 For more information on registering devices on your Apple Developer account, check the [Apple Developer website](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW10>). For more information on the different provisioning profiles check the Medium blog post "[Cruising through the Complexities of Signing Native Mobile Apps](https://medium.com/outsystems-engineering/cruising-through-the-complexities-of-signing-native-mobile-apps-cc123eb2814b)" by OutSystems.
 
@@ -79,7 +79,7 @@ To use Service Studio, do the following:
 2. Click on the **Configure Android App** button or the Android cog icon button if you've already generated a previous Android app. 
 3. In the **Build type** dropdown, select the `Release` option. 
 4. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). 
-5. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check how to do it](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-keystore>). 
+5. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check how to do it](<more-information.md#create-a-keystore>). 
 6. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore. 
 7. Click **Generate App**. 
 
@@ -92,7 +92,7 @@ To use Service Center, do the following:
 3. Select the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the **Configure**  link for the Android entry, in the **Native Platforms** section.
 4. In the **Build type** dropdown, select the `Release` option. 
 5. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). 
-6. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check how to do it](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-keystore>). 
+6. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check how to do it](<more-information.md#create-a-keystore>). 
 7. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore. 
 8. Click **Save** to save your settings. 
 9. Click **Generate** and wait a few moments while the app is being generated. 

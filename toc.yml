@@ -448,8 +448,8 @@
         - href: deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
     - href: deliver-mobile/generate-and-distribute-your-mobile-app/intro.md
     - topics:
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-to-a-limited-group-of-end-users.md
+        - href: deliver-mobile/generate-and-distribute-your-mobile-app/development-tests.md
+        - href: deliver-mobile/generate-and-distribute-your-mobile-app/limited-group-end-users.md
 
         # Generate and Publish Your Mobile App to the Mobile App Stores
        
@@ -458,7 +458,7 @@
             - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
             - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
 
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/more-information-on-generating-and-distributing-mobile-apps.md
+        - href: deliver-mobile/generate-and-distribute-your-mobile-app/more-information.md
         - href: deliver-mobile/generate-and-distribute-your-mobile-app/configuration-native-platforms.md
     - href: deliver-mobile/mobile-app-update-scenarios.md
     - href: deliver-mobile/manage-distribution-options/intro.md

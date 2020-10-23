@@ -453,10 +453,10 @@
 
         # Generate and Publish Your Mobile App to the Mobile App Stores
        
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-publish-your-mobile-app-to-the-mobile-app-stores.md
+        - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-app-stores.md
         - topics:
-            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
-            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
+            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-google-play-store.md
+            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-apple-app-store.md
 
         - href: deliver-mobile/generate-and-distribute-your-mobile-app/more-information.md
         - href: deliver-mobile/generate-and-distribute-your-mobile-app/configuration-native-platforms.md

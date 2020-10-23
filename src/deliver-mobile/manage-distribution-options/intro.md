@@ -198,6 +198,6 @@ If you're a Service Studio developer or LifeTime administrator, keep in mind the
 
 <div class="info" markdown="1">
 
-Check out the instructions about [publishing and distributing Android apps](../generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md) and about [publishing and distributing iOS apps](../generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md).
+Check out the instructions about [publishing and distributing Android apps](../generate-and-distribute-your-mobile-app/publish-google-play-store.md) and about [publishing and distributing iOS apps](../generate-and-distribute-your-mobile-app/publish-apple-app-store.md).
 
 </div>

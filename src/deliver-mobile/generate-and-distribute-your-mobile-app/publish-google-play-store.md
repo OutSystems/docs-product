@@ -5,7 +5,7 @@ tags: runtime-mobile; support-mobile; publish-application; google-play-store; an
 
 # Publish Your Mobile Android Application to the Google Play Store
 
-This article describes the process you must follow to publish your application to the Google Play Store. Before you proceed, ensure your app fulfills the general [pre-requirements](generate-and-publish-your-mobile-app-to-the-mobile-app-stores.md).
+This article describes the process you must follow to publish your application to the Google Play Store. Before you proceed, ensure your app fulfills the general [pre-requirements](publish-app-stores.md).
 
 To publish your app to the Google Play store you must have a developer account. If you don't, [create a new Google Developer Account here](https://developer.android.com/distribute/googleplay/start.html).
 

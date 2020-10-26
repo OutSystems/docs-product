@@ -18,7 +18,9 @@ Usually you have other systems and you want your users to only have one account 
 
 To ensure everything is secure, only IT users with permissions to manage the infrastructure are allowed to make these changes.
 
-**Note:** The AD External Authentication plugin that is available in on-premises infrastructures is not compatible with cloud environments. As such, it can not be configured in PaaS infrastructures.
+<div class="info" markdown="1">
+ The AD External Authentication plugin that is available in on-premises infrastructures is not compatible with cloud environments. As such, it can not be configured in PaaS infrastructures.
+</div>
 
 ## How OutSystems Authenticates IT Users
 

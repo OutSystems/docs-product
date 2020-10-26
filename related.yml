@@ -1367,6 +1367,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/CardBackground.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=14
+- develop/ui/patterns/mobile/content/carditem.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=15
 - develop/ui/patterns/mobile/content/cardsectioned.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

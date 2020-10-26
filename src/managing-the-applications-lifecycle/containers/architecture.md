@@ -5,6 +5,12 @@ tags: support-Application_Lifecycle; support-Infrastuture_Architecture
 
 # Recommended Network Architecture
 
+<div class="warning" markdown="1">
+
+Container deployment is available as an [Early Access Program](<https://www.outsystems.com/goto/technical-preview>).
+
+</div>
+
 To take full advantage of containers with OutSystems you should adopt a network topology where there's a load balancer and a reverse proxy at the address defined for the container-based deployment zone. This functionality can be provided either by the container cluster itself, in a limited way, or by a standalone software component.
 
 Deployment zones for containers usually have its deployment zone address set to the container cluster manager address, or to the load balancer in front of that cluster.

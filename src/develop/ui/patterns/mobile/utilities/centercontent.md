@@ -5,7 +5,7 @@ summary: Use the Center Content pattern to align the content to the center of it
 
 # Center Content Loading
 
-You can use the Center Content UI Pattern Use to align the content to the center of its container.
+You can use the Center Content UI Pattern to vertically align content to the center of its container.
 
 ![](<images/centercontent-1.png>)
 

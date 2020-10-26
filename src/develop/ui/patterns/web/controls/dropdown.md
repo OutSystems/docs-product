@@ -5,7 +5,7 @@ summary: Dropdown allows end users to make a choice from several options.
 
 # Dropdown
 
-You can use the Dropdown UI Pattern to allow users make a choice from several options. Use the Dropdown UI Pattern to offer a choice of more than **four** options. The Dropdown UI Pattern is used when you want to display rich content, such as images. For a very large number of options, consider using the Dropdown Select UI Pattern to avoid loss of context. 
+You can use the Dropdown UI Pattern to allow users make a choice from several options. Use the Dropdown UI Pattern to offer a choice of more than **four** options. The Dropdown UI Pattern is used when you want to display rich content, such as images. For a very large number of options, consider using the Dropdown Select UI Pattern to avoid loss of context.
 
 **How to use the Dropdown UI Pattern**
 
@@ -16,14 +16,14 @@ In this example, we create a dropdown containing a list of employee names from a
     The Dropdown widget is displayed.
 
     ![](<images/dropdown-1-ss.png>)
- 
+
 1. From the Toolbox, drag the Dropdown widget into the Main Content area of your application's screen.
 
     ![](<images/dropdown-2-ss.png?width=800>)
 
-1. On the **Properties** tab, in the enter a name for the Dropdown widget. 
+1. On the **Properties** tab, in the enter a name for the Dropdown widget.
 
-    In this example, we enter ``EmployeeDropdown``.
+    In this example, we enter `EmployeeDropdown`.
 
     ![](<images/dropdown-5-ss.png?width=800>)
 
@@ -39,19 +39,19 @@ In this example, we create a dropdown containing a list of employee names from a
 
     ![](<images/dropdown-8-ss.png?width=800>)
 
-1. Return to your screen by double-clicking your screen name. From the Toolbox, drag the List Records widget into the **DropdownList** placeholder, and on the **Properties** tab, from the **Source Record List** dropdown, select the relevant record list. 
+1. Return to your screen by double-clicking your screen name. From the Toolbox, drag the List Records widget into the **DropdownList** placeholder, and on the **Properties** tab, from the **Source Record List** dropdown, select the relevant record list.
 
     In this example, we select the **GetEmployees.List**.
 
     ![](<images/dropdown-9-ss.png?width=800>)
 
-1. From the Toolbox, drag an Expression widget into the List Records widget, and on the **Properties** tab, set the **Value** property to the values you want to display in the dropdown. 
+1. From the Toolbox, drag an Expression widget into the List Records widget, and on the **Properties** tab, set the **Value** property to the values you want to display in the dropdown.
 
-    In this example, we set it to the employee names. 
+    In this example, we set it to the employee names.
 
     ![](<images/dropdown-10-ss.png?width=800>)
 
-1. To make each of the values in the dropdown selectable, right-click the expression, and select **Link to** -> **New Screen Action**. 
+1. To make each of the values in the dropdown selectable, right-click the expression, and select **Link to** -> **New Screen Action**.
 
     ![](<images/dropdown-11-ss.png?width=800>)
 
@@ -59,19 +59,19 @@ In this example, we create a dropdown containing a list of employee names from a
 
     ![](<images/dropdown-14-ss.png?width=800>)
 
-1. Double-click the new screen action, and enter a name in the **Name** property. 
+1. Double-click the new screen action, and enter a name in the **Name** property.
 
     In this example, we call it SelectedUser.
-    
+
     ![](<images/dropdown-20-ss.png?width=800>)
 
-1. Double-click the new screen action, and from the Toolbox, drag the **Run Server Action** onto the screen action. In the **Select Action** popup, search for and select the **Feedback_Message** and click **Ok**.
+1. Double-click the new screen action, and from the Toolbox, drag the **Run Server Action** onto the screen action. In the **Select Action** popup, search for and select the **Feedback_Message** and click **OK**.
 
     ![](<images/dropdown-12-ss?width=800.png>)
 
 1. Set the message text and type.
 
-    In this example, we set the message type to **Info** and set the message text to display the currently selected employee. 
+    In this example, we set the message type to **Info** and set the message text to display the currently selected employee.
 
     ![](<images/dropdown-13-ss.png?width=800>)
 
@@ -87,23 +87,22 @@ In this example, we create a dropdown containing a list of employee names from a
 
     ![](<images/dropdown-3-ss.png?width=800>)
 
-1. Add an **Ajax Refresh** to the screen action and in the **Select Widget** popup, select the widget you want to refresh. 
+1. Add an **Ajax Refresh** to the screen action and in the **Select Widget** popup, select the widget you want to refresh.
 
     In this example, we select the expression that holds the currently selected employee.
 
     ![](<images/dropdown-4-ss.png?width=800>)
 
-1. Select the **Logic** tab, navigate to **Interaction** -> **ToggleElement** and drag it onto the screen action. This closes the dropdown once a value is selected. 
+1. Select the **Logic** tab, navigate to **Interaction** -> **ToggleElement** and drag it onto the screen action. This closes the dropdown once a value is selected.
 
     ![](<images/dropdown-15-ss.png?width=800>)
 
+After following these steps and publishing the module, you can test the pattern in your app.
 
-After following these steps and publishing the module, you can test the pattern in your app. 
-
-    ![](<images/dropdown-19-ss.png?width=800>)
+![](<images/dropdown-19-ss.png?width=800>)
 
 ## Properties
 
- **Property** | **Description** | 
+| Property | Description |
 |---|---|
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Dropdown UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown UI styles being applied.</li></ul> |
+| ExtendedClass (Text): Optional | Add custom style classes to the Dropdown UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown UI styles being applied.</li></ul> |

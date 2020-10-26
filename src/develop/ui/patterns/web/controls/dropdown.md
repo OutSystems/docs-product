@@ -67,7 +67,7 @@ In this example, we create a dropdown containing a list of employee names from a
 
 1. Double-click the new screen action, and from the Toolbox, drag the **Run Server Action** onto the screen action. In the **Select Action** popup, search for and select the **Feedback_Message** and click **OK**.
 
-    ![](<images/dropdown-12-ss?width=800.png>)
+    ![](<images/dropdown-12-ss.png?width=800.png>)
 
 1. Set the message text and type.
 

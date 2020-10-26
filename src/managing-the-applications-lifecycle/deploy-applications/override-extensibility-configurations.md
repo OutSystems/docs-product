@@ -36,3 +36,11 @@ To override the Extensibility Configurations of your mobile app for a specific e
 1. Press the **Save** button.
 
 Now, when a new mobile app package is generated in this environment, the custom configurations will override the default configurations defined in the application module. Also, the custom configurations will be kept for the environment after new application deployments.
+
+NOTE: Due to a known known defect on the platform, the content of the Extensibility Configurations can be truncated when being sent to the server via LifeTime causing the following error to occur. 
+
+```
+Failed to deserialize JSON to REST_ErrorRecord: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+```
+
+In the meantime, the only possible workaround is to use the Extensibility Configuration field in Service Studio.

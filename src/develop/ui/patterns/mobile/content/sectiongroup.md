@@ -29,14 +29,14 @@ You can use the Section Group UI Pattern to keep the context of the header while
 
 1. On the **Properties** tab, you can customize the Section Group's look and feel by setting any of the (optional) properties.
 
-   ![](<images/sectiongroup-4-ss.png>)
+    ![](<images/sectiongroup-4-ss.png>)
 
     **HasStickyTitles = False**
-   
+
     ![](<images/sectiongroup-5-ss.png>)
 
     **HasStickyTitles = True**
-   
+
     ![](<images/sectiongroup-6-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.

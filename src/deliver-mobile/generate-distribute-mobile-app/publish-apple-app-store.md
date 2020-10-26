@@ -5,7 +5,7 @@ tags: runtime-mobile; support-mobile; publish-application; apple-app-store; ios-
 
 # Publish your Mobile iOS application to the Apple App Store
 
-This article describes the process you must follow to publish your application to the Apple App Store. Before you proceed, ensure your app fulfills the general [pre-requirements](generate-and-publish-your-mobile-app-to-the-mobile-app-stores.md). 
+This article describes the process you must follow to publish your application to the Apple App Store. Before you proceed, ensure your app fulfills the general [pre-requirements](publish-app-stores.md).
 
 ## Application preparation
 

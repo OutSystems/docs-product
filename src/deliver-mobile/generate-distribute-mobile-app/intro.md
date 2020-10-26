@@ -9,7 +9,7 @@ Before generating your mobile app for the first time, you have to configure spec
 
 The following sections show how to configure and generate iOS and Android app packages of your mobile apps in Service Studio or in Service Center.
 
-For additional information about generating and distributing iOS and Android app packages, see [More Information on Generating and Distributing Mobile Apps](more-information-on-generating-and-distributing-mobile-apps.md).
+For additional information about generating and distributing iOS and Android app packages, see [More Information on Generating and Distributing Mobile Apps](more-information.md).
 
 <div class="info" markdown="1">
 
@@ -33,15 +33,13 @@ To configure or generate your mobile app package (iOS or Android) in Service Stu
 
 ## Configure and Generate a Mobile App Package in Service Center
 
-To configure or generate your mobile app package (iOS or Android) in Service
-Center, do the following:
+To configure or generate your mobile app package (iOS or Android) in Service Center, do the following:
 
 1. Open the Service Center console of the environment (`https://<environmentdomain>/ServiceCenter`) and navigate to **Factory**.
 
 1. Click on the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
 
     ![Native app settings in Service Center](images/sc-native-platforms-tab.png?width=750)
-
 
 1. To configure your mobile app package for the first time or to change the current configuration for a given platform (iOS or Android), click on the **Configure** link for the iOS or Android entry. Follow the configuration steps for your desired scenario, described in the [topics listed at the end of this page](#Articles_in_this_Section).
 
@@ -50,9 +48,9 @@ Center, do the following:
 1. After defining or changing your mobile app iOS or Android settings, click on the **Save** button.
 
 1. At the end of the configuration settings page, select the MABS version you wish to use for generating the mobile app package for the mobile platform you're configuring (iOS or Android) in the current environment.  
-    
+
     <div class="info" markdown="1">
-    
+
     For more information about MABS check [Choosing the MABS Version to Build Your Mobile Packages](<#choosing-the-mabs-version-to-build-your-mobile-packages>)
 
     </div>

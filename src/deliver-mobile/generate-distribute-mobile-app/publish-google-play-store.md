@@ -5,7 +5,7 @@ tags: runtime-mobile; support-mobile; publish-application; google-play-store; an
 
 # Publish Your Mobile Android Application to the Google Play Store
 
-This article describes the process you must follow to publish your application to the Google Play Store. Before you proceed, ensure your app fulfills the general [pre-requirements](generate-and-publish-your-mobile-app-to-the-mobile-app-stores.md).
+This article describes the process you must follow to publish your application to the Google Play Store. Before you proceed, ensure your app fulfills the general [pre-requirements](publish-app-stores.md).
 
 To publish your app to the Google Play store you must have a developer account. If you don't, [create a new Google Developer Account here](https://developer.android.com/distribute/googleplay/start.html).
 
@@ -37,7 +37,7 @@ To generate the Android App Package in the Service Studio, perform the following
 
 1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, for example, **com.domain.appname**).
 
-1. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check here](more-information-on-generating-and-distributing-mobile-apps.md#For_Android) how to do it.
+1. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check here](more-information.md#For_Android) how to do it.
 
 1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
 
@@ -63,7 +63,7 @@ To generate the Android App Package in the Service Studio, perform the following
 
     Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, for example, **com.domain.appname**).
 
-1. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check here](more-information-on-generating-and-distributing-mobile-apps.md#For_Android) how to do it.
+1. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check here](more-information.md#For_Android) how to do it.
 
 1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
 

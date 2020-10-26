@@ -3,7 +3,13 @@ summary: How to scale OutSystems container-based applications.
 tags: support-Application_Lifecycle; 
 --- 
 
-# Scaling Container-deployed Applications 
+# Scaling Container-deployed Applications
+
+<div class="warning" markdown="1">
+
+Container deployment is available as an [Early Access Program](<https://www.outsystems.com/goto/technical-preview>).
+
+</div>
 
 To be able to scale OutSystems container-based applications you should follow the [application architecture recommendations](<intro.md#recommended-application-architecture-for-containers>) while developing and maintaining them.
 

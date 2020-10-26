@@ -40,7 +40,7 @@ To use a custom image as the native splash screen of your app:
     
     </div>
 
-1. To make this change available to users, [publish and generate a new mobile application package](<../generate-and-distribute-your-mobile-app/intro.md>) and distribute it. 
+1. To make this change available to users, [publish and generate a new mobile application package](<../generate-distribute-mobile-app/intro.md>) and distribute it. 
 
     ![](images/image02.png)
 
@@ -397,6 +397,6 @@ See the descriptions of the [available splash screen preferences](https://github
 
 <div class="info" markdown="1">
 
-Do not forget that you must [publish and generate a new mobile application package](<../generate-and-distribute-your-mobile-app/intro.md>) and distribute it in order to make the splash screen preferences visible to the end users.
+Do not forget that you must [publish and generate a new mobile application package](<../generate-distribute-mobile-app/intro.md>) and distribute it to make the splash screen preferences visible to the end users.
 
 </div>

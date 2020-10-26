@@ -886,7 +886,7 @@
 
 # Distribute as a progressive web app (PWA)
 - deliver-mobile/distribute-pwa/intro.md:
-    - deliver-mobile/generate-and-distribute-your-mobile-app/intro.md
+    - deliver-mobile/generate-distribute-mobile-app/intro.md
     - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
 
 # Use Events to Propagate Changes From a Block to the Parent
@@ -902,9 +902,9 @@
     - managing-the-applications-lifecycle/deploy-applications/deploy-an-application.md
     - managing-the-applications-lifecycle/deploy-applications/tag-a-version.md
     - deliver-mobile/mobile-app-update-scenarios.md
-    - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
-    - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
-    - deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
+    - deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
+    - deliver-mobile/generate-distribute-mobile-app/publish-apple-app-store.md
+    - deliver-mobile/generate-distribute-mobile-app/development-tests.md
     - one-way: setup/possible-setups/intro.md
 
 # Building apps with AndroidX
@@ -1397,6 +1397,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Section.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=63
+- develop/ui/patterns/mobile/content/sectiongroup.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=64
 - develop/ui/patterns/mobile/content/tag.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

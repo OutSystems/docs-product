@@ -81,4 +81,4 @@ As agreed, by the deployment window time, we can safely start the second stage o
 
     ![](images/deploy-in-a-short-deployment-window-6.png)
 
-If you are deploying a mobile app to another environment for the first time, you need to [configure the app](<../../deliver-mobile/generate-and-distribute-your-mobile-app/intro.md>) in that target environment, so the mobile app package can be generated.
+If you are deploying a mobile app to another environment for the first time, you need to [configure the app](<../../deliver-mobile/generate-distribute-mobile-app/intro.md>) in that target environment, so the mobile app package can be generated.

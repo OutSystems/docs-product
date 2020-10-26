@@ -19,9 +19,9 @@ You can also [distribute or test your app as a Progressive Web App (PWA)](../dis
 
 ### Before You Start
 
-* To test your app, you must have a certificate of type `iOS App Development` generated and configured in your Apple Developer account. If you don't have one, learn [how you can create a certificate](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-certificate>).
+* To test your app, you must have a certificate of type `iOS App Development` generated and configured in your Apple Developer account. If you don't have one, learn [how you can create a certificate](<more-information.md#create-a-certificate>).
 
-* To allow launching your app in the devices of the end users group, you must set up the `iOS App Development` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-provisioning-profile>).  
+* To allow launching your app in the devices of the end users group, you must set up the `iOS App Development` provisioning profile with the relevant device IDs. A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn [how you can create a provisioning profile](<more-information.md#create-a-provisioning-profile>).  
 For more information on registering devices on your Apple Developer account,check the [Apple Developer website](<https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW10>).
 
 * To get the certificate and provisioning profile to generate the iOS app for your mobile app, you must have an Apple Developer account. If you don't, create a new [Apple Developer Account](https://developer.apple.com/programs/ "https://developer.apple.com/programs/").
@@ -69,7 +69,7 @@ Have in mind that only selected devices specified for the provisioning profile c
 
 ### Before You Start
 
-* If you want to sign the debug version of your app with a custom keystore (which is an optional step in the procedure below) and you don't have one yet, [check how you can create a keystore](<more-information-on-generating-and-distributing-mobile-apps.md#create-a-keystore>).
+* If you want to sign the debug version of your app with a custom keystore (which is an optional step in the procedure below) and you don't have one yet, [check how you can create a keystore](<more-information.md#create-a-keystore>).
 
 ### Generate the Android App Package (APK)
 

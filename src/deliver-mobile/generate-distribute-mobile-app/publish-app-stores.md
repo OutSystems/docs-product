@@ -42,10 +42,10 @@ The product details are the app name, a short description and a full description
 
 Proceed  to the following page to learn about the publishing process for the Google Play Store:
 
-* [Publish Your Mobile App to the Google Play Store](publish-your-mobile-android-application-to-the-google-play-store.md)
+* [Publish Your Mobile App to the Google Play Store](publish-google-play-store.md)
 
 ## Publish to the Apple App Store (iOS applications)
 
 Proceed  to the following page to learn about the publishing process for the Apple App Store:
 
-* [Publish Your Mobile App to the Apple App Store](publish-your-mobile-ios-application-to-the-apple-app-store.md)
+* [Publish Your Mobile App to the Apple App Store](publish-apple-app-store.md)

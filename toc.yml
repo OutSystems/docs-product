@@ -155,11 +155,13 @@
                 - href: develop/ui/patterns/mobile/content/blankslate.md
                 - href: develop/ui/patterns/mobile/content/card.md
                 - href: develop/ui/patterns/mobile/content/cardbackground.md
+                - href: develop/ui/patterns/mobile/content/carditem.md
                 - href: develop/ui/patterns/mobile/content/cardsectioned.md
                 - href: develop/ui/patterns/mobile/content/flipcontent.md
                 - href: develop/ui/patterns/mobile/content/floatingcontent.md
                 - href: develop/ui/patterns/mobile/content/listitemcontent.md
                 - href: develop/ui/patterns/mobile/content/section.md
+                - href: develop/ui/patterns/mobile/content/sectiongroup.md
                 - href: develop/ui/patterns/mobile/content/tag.md
                 - href: develop/ui/patterns/mobile/content/tooltip.md
                 - href: develop/ui/patterns/mobile/content/useravatar.md

@@ -23,8 +23,8 @@ The Flexible Updates feature is available:
 
 An OutSystems update/upgrade now has two steps:
 
-* Platform Server update/upgrade step
-* Module preparation step
+* the Platform Server update/upgrade step
+* the module preparation step
 
 The **module preparation** step occurs after updating Platform Server to a new version. In this new step, Platform Server compiles all your modules in the background using the new platform version. For customers in the OutSystems Cloud, this operation takes place outside your maintenance window, since it doesn't require any downtime.
 
@@ -80,7 +80,7 @@ In **on-premises installations**, you can also check the progress in Configurati
 
 ## Checking for module preparation errors { #check-for-errors }
 
-In some situations, there are errors during the module preparation step. Service Center displays any detected errors in a banner with a message like the following:
+When there are errors in module preparation step, Service Center displays the error count in a banner message like the following:
 
     SCREENSHOT
     "There are errors in 12 of 256 modules."
@@ -89,7 +89,5 @@ These errors can be due to one of the following:
 
 * A
 * B
-
-Lorem ipsum
 
 When there are errors, try to republish the affected modules. If this doesn't solve the issue, [contact OutSystems Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support).

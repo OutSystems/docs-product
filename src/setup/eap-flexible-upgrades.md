@@ -1,36 +1,32 @@
-# Flexible Updates EAP
+# Flexible Upgrades EAP
 
 <div class="info" markdown="1">
 
-Flexible Updates is a feature currently available under an [Early Access Program](https://www.outsystems.com/eap/).
+Flexible Upgrades is a feature currently available under an [Early Access Program](https://www.outsystems.com/eap/).
 
 </div>
 
-Flexible Upgrades is a feature that allows you to skip the "republish all modules" operation in your factory after a platform update. Instead, there's a new step called **module preparation** after upgrading Platform Server, where the platform compiles all your modules in the background using the new platform version, but without deploying them.
-
-<!--
-The preparation step takes less time than the republish operation, and you can start using your upgraded Platform Server sooner.
--->
+Flexible Upgrades is a feature that allows you to skip the "republish all modules" operation in your factory after upgrading the OutSystems platform to a new **minor version** (also known as a "platform update"). Instead, there's a new step called **module preparation** after upgrading Platform Server, where the platform compiles all your modules in the background using the new platform version, but without deploying them.
 
 ## Prerequisites
 
-The Flexible Updates feature is available:
+The Flexible Upgrades feature is available:
 
 * in all OutSystems editions except Free
 * when updating from OutSystems version 11.x to version 11.9 or later
 
 ## Module preparation
 
-An OutSystems update/upgrade now has two steps:
+Upgrading the OutSystems platform to a new minor version now consists of two steps:
 
-* the Platform Server update/upgrade step
+* the Platform Server upgrade step
 * the module preparation step
 
 The **module preparation** step occurs after updating Platform Server to a new version. In this new step, Platform Server compiles all your modules in the background using the new platform version. For customers in the OutSystems Cloud, this operation takes place outside your maintenance window, since it doesn't require any downtime.
 
 While the module preparation is in progress, you can't publish any applications/modules in the environment, and you can't apply configurations. Once the module preparation step ends, your environment is ready and you can publish applications or modules again. You can follow the progress of module preparation in Service Center. For more information, see [Checking the progress of the module preparation step](#progress).
 
-Since you're not republishing your applications or modules during module preparation, your running applications aren't changed during the platform update/upgrade — you'll publish your applications later, according to your own schedule. When you publish a module after the module preparation step, the platform reuses the compilation artifacts generated during this step.
+Since you're not republishing your applications or modules during module preparation, your running applications aren't changed during the platform upgrade — you'll publish your applications later, according to your own schedule. When you publish a module after the module preparation step, the platform reuses the compilation artifacts generated during this step.
 
 ## Starting the module preparation step
 
@@ -56,7 +52,7 @@ Note: Closing the Configuration Tool during the module preparation step doesn't 
 
 You can check the progress of the module preparation step in **Service Center**.
 
-After a successful Platform Server update and while there's an ongoing module preparation, Service Center displays a message like the following:
+After a successful Platform Server upgrade (after installing the binaries) and while there's an ongoing module preparation, Service Center displays a message like the following:
 
     SCREENSHOT  
     "Your environment has been successfully upgraded to Platform Server version 11.9.0 (see the Release Notes)."

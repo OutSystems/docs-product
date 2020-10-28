@@ -56,6 +56,8 @@ To accommodate more advanced integration scenarios and troubleshooting needs, cu
 
 For scenarios that require the use of high bandwidth and a steady connection without network congestion, it’s also possible to [set up AWS Direct Connect](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/AWS_Direct_Connect_on_OutSystems_Cloud) linking the customer’s private network with OutSystems Cloud over a dedicated line.
 
+To set up a private connection between the OutSystems Cloud and other corporate systems running on AWS, customers should [connect to OutSystems Cloud using an AWS Transit Gateway](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Connect_to_your_OutSystems_Cloud_using_AWS_Transit_Gateway).
+
 ## High-availability and compliance options
 
 The OutSystems Cloud high-availability option enables customers to deploy front-end servers across different [AWS Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-availability-zones) and set up a database replica in a different Availability Zone than the primary database.

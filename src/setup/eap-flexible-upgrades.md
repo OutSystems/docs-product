@@ -60,6 +60,10 @@ After a successful Platform Server upgrade (after installing the binaries) and w
 
 ![Module preparation in progress (Service Center)](images/module-preparation-progress-sc.png)
 
+To check the details of the module preparation step, click on the link **Click here for more details** on the blue banner, or click **More details** on the sidebar:
+
+![Module preparation progress details (Service Center)](images/module-preparation-detail-sc.png)
+
 When module preparation finishes and there are no errors, Service Center displays the following message:
 
 `This environment is ready (Release Notes)`  
@@ -86,7 +90,15 @@ When there are errors in module preparation step, Service Center displays a mess
 
 ![Module preparation with errors (Service Center)](images/module-preparation-failure-sc.png)
 
-When the preparation of a producer module fails, the platform automatically skips the preparation of all its consumer modules.
+<div class="info" markdown="1">
+
+When the preparation of a producer module fails, the platform automatically skips the preparation of all its consumer modules. Service Center tells you how many modules **failed** the preparation step and how many were **skipped** because they consumed the modules with errors.
+
+</div>
+
+To check the error details for the modules that failed the preparation step, click the link in the **There were errors preparing some modules** message:
+
+![](images/module-preparation-failure-logs-sc.png)
 
 Errors in the module preparation step are usually due to issues in the OutSystems platform. They would probably also occur if you had republished all modules.
 

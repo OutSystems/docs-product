@@ -52,16 +52,20 @@ Note: Closing the Configuration Tool during the module preparation step doesn't 
 
 You can check the progress of the module preparation step in **Service Center**.
 
-After a successful Platform Server upgrade (after installing the binaries) and while there's an ongoing module preparation, Service Center displays a message like the following:
+After a successful Platform Server upgrade (after installing the binaries) and while there's an ongoing module preparation, Service Center displays the following messages:
 
-    SCREENSHOT  
-    "Your environment has been successfully upgraded to Platform Server version 11.9.0 (see the Release Notes)."
-    "We are now preparing your modules - 38%"
+`The first step of the upgrade process has finished. This environment has been successfully upgrade to Platform Server version (...)`
 
-When module preparation finishes and there are no errors, Service Center displays a message like the following:
+`We are now preparing your modules - NN%`
 
-    SCREENSHOT
-    "This environment is ready"
+![Module preparation in progress (Service Center)](images/module-preparation-progress-sc.png)
+
+When module preparation finishes and there are no errors, Service Center displays the following message:
+
+`This environment is ready (Release Notes)`  
+`No further actions are required.`
+
+![Module preparation finished successfully (Service Center)](images/module-preparation-success-sc.png)
 
 Sometimes there are errors during the module preparation step — learn how to [check for module preparation errors](#check-for-errors) and what you should do to fix them.
 
@@ -69,21 +73,20 @@ Sometimes there are errors during the module preparation step — learn how to [
 
 In **on-premises installations**, you can also check the progress in Configuration Tool, in the window that appears after pressing **Apply/Exit**:
 
-    SCREENSHOT
-    Configuration Tool
+![Module preparation in progress (Configuration Tool)](images/module-preparation-progress-ct.png)
 
 </div>
 
 ## Checking for module preparation errors { #check-for-errors }
 
-When there are errors in module preparation step, Service Center displays the error count in a banner message like the following:
+When there are errors in module preparation step, Service Center displays a message similar to the following:
 
-    SCREENSHOT
-    "There are errors in 12 of 256 modules."
+`MM modules prepared successfully, NN modules failed and PP modules skipped.`
 
-These errors can be due to one of the following:
+![Module preparation with errors (Service Center)](images/module-preparation-failure-sc.png)
 
-* A
-* B
+When the preparation of a producer module fails, the platform automatically skips the preparation of all its consumer modules.
 
-When there are errors, try to republish the affected modules. If this doesn't solve the issue, [contact OutSystems Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support).
+Errors in the module preparation step are usually due to issues in the OutSystems platform. They would probably also occur if you had republished all modules.
+
+First, check if republishing the failed and skipped modules solves the errors. If this doesn't help, [contact OutSystems Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support).

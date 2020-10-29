@@ -26,7 +26,7 @@ The **module preparation** step occurs after updating Platform Server to a new v
 
 While the module preparation is in progress, you can't publish any applications/modules in the environment, and you can't apply configurations. Once the module preparation step ends, your environment is ready and you can publish applications or modules again. You can follow the progress of module preparation in Service Center. For more information, see [Checking the progress of the module preparation step](#progress).
 
-Since you're not republishing your applications or modules during module preparation, your running applications aren't changed during the platform upgrade — you'll publish your applications later, according to your own schedule. When you publish a module after the module preparation step, the platform reuses the compilation artifacts generated during this step.
+Since you're not republishing your applications or modules during module preparation, your running applications aren't changed during the platform upgrade — you'll publish your applications later, according to your own schedule. When you publish a module after the module preparation step, the platform reuses the compilation artifacts (for producer modules only) generated during this step.
 
 ## Starting the module preparation step
 

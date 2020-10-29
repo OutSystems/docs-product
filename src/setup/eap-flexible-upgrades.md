@@ -54,7 +54,7 @@ You can check the progress of the module preparation step in **Service Center**.
 
 After a successful Platform Server upgrade (after installing the binaries) and while there's an ongoing module preparation, Service Center displays the following messages:
 
-`The first step of the upgrade process has finished. This environment has been successfully upgrade to Platform Server version (...)`
+`The first step of the upgrade process has finished. This environment has been successfully upgraded to Platform Server version (...)`
 
 `We are now preparing your modules - NN%`
 
@@ -81,6 +81,7 @@ In **on-premises installations**, you can also check the progress in Configurati
 
 When there are errors in module preparation step, Service Center displays a message similar to the following:
 
+`There were errors preparing some modules.`  
 `MM modules prepared successfully, NN modules failed and PP modules skipped.`
 
 ![Module preparation with errors (Service Center)](images/module-preparation-failure-sc.png)

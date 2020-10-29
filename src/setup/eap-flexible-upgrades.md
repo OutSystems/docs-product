@@ -44,6 +44,8 @@ When you click **Apply and Exit** in Configuration Tool, as mentioned in the ins
 * Publishing the latest version of System Components
 * Prepare modules
 
+![Platform upgrade post-install tasks in Configuration Tool](images/module-preparation-post-install-ct.png)
+
 Press **OK** to start the publishing and module preparation tasks.
 
 Note: Closing the Configuration Tool during the module preparation step doesn't interrupt the operation.

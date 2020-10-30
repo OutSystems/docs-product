@@ -100,7 +100,7 @@ When the preparation of a producer module fails, the platform automatically skip
 
 To check the error details for the modules that failed the preparation step, click the link in the **There were errors preparing some modules** message:
 
-![](images/module-preparation-failure-logs-sc.png)
+![Detailed logs of module preparation errors (Service Center)](images/module-preparation-failure-logs-sc.png)
 
 Errors in the module preparation step are usually due to issues in the OutSystems platform. They would probably also occur if you had republished all modules.
 

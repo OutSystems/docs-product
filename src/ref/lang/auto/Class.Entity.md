@@ -71,7 +71,7 @@ An Entity represents a table in a database.
 </tr>
 <tr>
 <td title="Label Attribute">Label Attribute</td>
-<td>Attribute used to describe each record of the entity.</td>
+<td>Attribute displayed to the users when creating combo boxes.</td>
 <td></td>
 <td></td>
 <td></td>

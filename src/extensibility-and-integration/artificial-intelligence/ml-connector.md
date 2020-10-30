@@ -11,8 +11,8 @@ Use the [Azure ML Connector](https://www.outsystems.com/forge/component-overview
 
 Before using Azure ML Connector in your applications, you need to do the following:
 
-1. [Create Training and predictive experiments](https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-experiment) in Azure ML Studio.
-1. [Deploy the predictive experiment](https://docs.microsoft.com/en-us/azure/machine-learning/studio/tutorial-part1-credit-risk) as New.
+1. [Create a predictive experiment](https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-experiment) in Azure ML Studio.
+1. Deploy an predictive experiment as New. Check out a [tutorial by Azure](https://docs.microsoft.com/en-us/azure/machine-learning/classic/tutorial-part3-credit-risk-deploy) for guidance.
 
 ## Use the connector in your OutSystems application
 

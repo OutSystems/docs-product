@@ -3,7 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Use the Center Content pattern to align the content to the center of its container.
 ---
 
-# Center Content Loading
+# Center Content
 
 You can use the Center Content UI Pattern to vertically align content to the center of its container.
 

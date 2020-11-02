@@ -913,7 +913,7 @@
     - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
     - deliver-mobile/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
 
-    # UI Web Patterns
+# UI Web Patterns
 - develop/ui/patterns/web/content/accordion/accordion.md:
     - ref/ui-patterns/web/accordion.md
     - external:
@@ -1547,7 +1547,6 @@
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7
 - develop/ui/patterns/mobile/numbers/counter.md:
-
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Counter.aspx

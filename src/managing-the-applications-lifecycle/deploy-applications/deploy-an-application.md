@@ -69,7 +69,7 @@ If the deployment is **aborted**, a "Retry Plan" link appears in the deployment 
 
 ![](images/lt-retry-plan-link.png)
 
-**Note:** If you're deploying a mobile app that is already [configured to generate the mobile app package](<../../deliver-mobile/generate-and-distribute-your-mobile-app/intro.md>), be aware that some changes you do in your application might cause the generation of a new application package. For example, changing the icon or the main color of the application.  
+**Note:** If you're deploying a mobile app that is already [configured to generate the mobile app package](<../../deliver-mobile/generate-distribute-mobile-app/intro.md>), be aware that some changes you do in your application might cause the generation of a new application package. For example, changing the icon or the main color of the application.  
 [Check here](../../deliver-mobile/mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build) all the situations that require the user to install a new application package.
 
 

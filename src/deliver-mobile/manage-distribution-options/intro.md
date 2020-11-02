@@ -21,7 +21,7 @@ These are the prerequisites to manage how mobile apps update on user devices.
 
 To manage how mobile apps update on user devices, you need to meet the following requirements:
 
-* Platform Server 11.9.0 and later. 
+* Platform Server 11.9.0 and later.
 * LifeTime 11.6.0 and later.
 * MABS 6.2 and later.
 * You activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Configure Mobile application updates distribution** in LifeTime in **all environments**. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
@@ -198,6 +198,6 @@ If you're a Service Studio developer or LifeTime administrator, keep in mind the
 
 <div class="info" markdown="1">
 
-Check out the instructions about [publishing and distributing Android apps](..\generate-and-distribute-your-mobile-app\publish-your-mobile-android-application-to-the-google-play-store.md) and about [publishing and distributing iOS apps](..\generate-and-distribute-your-mobile-app\publish-your-mobile-ios-application-to-the-apple-app-store.md).
+Check out the instructions about [publishing and distributing Android apps](../generate-distribute-mobile-app/publish-google-play-store.md) and about [publishing and distributing iOS apps](../generate-distribute-mobile-app/publish-apple-app-store.md).
 
 </div>

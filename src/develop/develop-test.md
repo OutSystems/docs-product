@@ -145,19 +145,23 @@ This approach allows for complete control identifying the elements in the screen
 
 First of all, developers need to start adding these extended properties to their widgets in Service Studio, which introduces more development effort. Naming widgets may feel much more natural.
 
-In addition to that, the OutSystems platform does not provide any collision detection for extended properties, so it’s up to the developer to ensure it. This can be especially tricky to manage in complex screens.
+In addition to that, the OutSystems platform doesn't provide any collision detection for extended properties, so it’s up to the developer to ensure it. This can be especially tricky to manage in complex screens.
 
-### Mapping Tests to the 4 Layer Canvas
+### Mapping tests to the Architecture Canvas
+cd
+![Architecture Canvas](images/test-4-layer-diag.png?width=800)
 
-![4 Layer Canvas](images/test-4-layer-diag.png?width=800)
+The [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) is an OutSystems architecture tool to make the design of Service-Oriented Architectures simple.
 
-The [4 Layer Canvas (4LC)](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) is an OutSystems architecture tool to make the design of Service-Oriented Architectures simple.
-
-4LC promotes the correct abstraction of reusable (micro)services and the correct isolation of distinct functional modules. It is useful in cases where you are developing and maintaining multiple applications that reuse common modules.
+Architecture Canvas promotes the correct abstraction of reusable (micro)services and the correct isolation of distinct functional modules. It's useful in cases where you are developing and maintaining multiple applications that reuse common modules.
 
 Due to the nature of the functionalities implemented in modules at each layer, it is possible to map these layers to the types of functional tests that would make sense to implement at each level.
 
-### Orchestration Layer
+### Orchestration layer
+
+<div class="warning" markdown="1">
+The Orchestration layer is applicable only to versions prior to OutSystems 11.
+</div>
 
 #### Functionalities
 

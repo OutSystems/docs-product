@@ -25,7 +25,7 @@ You can use the Pagination UI pattern to help users find a specific item on long
 
     By default, the Pagination widget contains Previous and Next placeholders with icons.
 
-1. Add 2 local variables to store the starting index and the maximum number of records per page. In this example we add the **StartIndex**  and **MaxRecords** variables. Both are of type integer and we set the default value of the **MaxRecords** to 50. Tis means there are 50 records shown per page.
+1. Add 2 local variables - one to store the starting index value and the other to store the maximum number of records per page. In this example, we add the **StartIndex**  and **MaxRecords** variables. Both are of type integer and we set the default value of the **MaxRecords** to 50. This means there are 50 records shown per page.
 
     ![](<images/pagination-9-ss.png>)
 

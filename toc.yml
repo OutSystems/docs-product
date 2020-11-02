@@ -101,7 +101,7 @@
         - href: develop/ui/table/intro.md
         - topics:
             - href: develop/ui/table/pagination-sorting.md
-    
+  
         # Inputs
         - href: develop/ui/inputs/intro.md
         - topics:
@@ -155,11 +155,13 @@
                 - href: develop/ui/patterns/mobile/content/blankslate.md
                 - href: develop/ui/patterns/mobile/content/card.md
                 - href: develop/ui/patterns/mobile/content/cardbackground.md
+                - href: develop/ui/patterns/mobile/content/carditem.md
                 - href: develop/ui/patterns/mobile/content/cardsectioned.md
                 - href: develop/ui/patterns/mobile/content/flipcontent.md
                 - href: develop/ui/patterns/mobile/content/floatingcontent.md
                 - href: develop/ui/patterns/mobile/content/listitemcontent.md
                 - href: develop/ui/patterns/mobile/content/section.md
+                - href: develop/ui/patterns/mobile/content/sectiongroup.md
                 - href: develop/ui/patterns/mobile/content/tag.md
                 - href: develop/ui/patterns/mobile/content/tooltip.md
                 - href: develop/ui/patterns/mobile/content/useravatar.md
@@ -446,25 +448,26 @@
         - href: deliver-mobile/customize-mobile-app/customize-errors-screen.md
         - href: deliver-mobile/customize-mobile-app/configure-accessible-domains.md
         - href: deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
-    - href: deliver-mobile/generate-and-distribute-your-mobile-app/intro.md
+    - href: deliver-mobile/generate-distribute-mobile-app/intro.md
     - topics:
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-to-a-limited-group-of-end-users.md
+        - href: deliver-mobile/generate-distribute-mobile-app/development-tests.md
+        - href: deliver-mobile/generate-distribute-mobile-app/limited-group-end-users.md
 
         # Generate and Publish Your Mobile App to the Mobile App Stores
        
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-publish-your-mobile-app-to-the-mobile-app-stores.md
+        - href: deliver-mobile/generate-distribute-mobile-app/publish-app-stores.md
         - topics:
-            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
-            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
+            - href: deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
+            - href: deliver-mobile/generate-distribute-mobile-app/publish-apple-app-store.md
 
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/more-information-on-generating-and-distributing-mobile-apps.md
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/configuration-native-platforms.md
+        - href: deliver-mobile/generate-distribute-mobile-app/more-information.md
+        - href: deliver-mobile/generate-distribute-mobile-app/configuration-native-platforms.md
     - href: deliver-mobile/mobile-app-update-scenarios.md
     - href: deliver-mobile/manage-distribution-options/intro.md
     - href: deliver-mobile/mobile-apps-build-service/intro.md
     - topics:
         - href: deliver-mobile/mobile-apps-build-service/android-support-library-versions.md
+        - href: deliver-mobile/mobile-apps-build-service/androidx.md
     - href: deliver-mobile/distribute-pwa/intro.md
     - href: deliver-mobile/app-shield/intro.md
     - href: deliver-mobile/compliance-with-third-party-licenses.md
@@ -710,7 +713,9 @@
 # Setting Up OutSystems
 - href: setup/intro.md
 - topics:
-    - href: setup/possible-setups.md
+    - href: setup/possible-setups/intro.md
+    - topics:
+        - href: setup/possible-setups/cloud-architecture.md
     - href: setup/system-requirements.md
     - href: setup/network-requirements.md
     - href: setup/default-configurations.md

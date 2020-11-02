@@ -5,6 +5,12 @@ tags: support-monitoring
 
 # Monitoring Applications Running in Containers
 
+<div class="warning" markdown="1">
+
+Container deployment is available as an [Early Access Program](<https://www.outsystems.com/goto/technical-preview>).
+
+</div>
+
 All OutSystems application logs are available in Service Center, including logs for applications running inside containers.
 
 If you need to obtain more information, check the corresponding section below according to your hosting technology.

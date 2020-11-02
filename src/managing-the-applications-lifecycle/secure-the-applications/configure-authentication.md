@@ -25,6 +25,12 @@ The following setting applies to both persistent and session authentication:
 
 * **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web Apps, and Mobile Apps distributed as Progressive Web Apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they are signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you need to have HTTPS enabled in the environment.
 
+<div class="info" markdown="1">
+
+The **Single Sign-On Between App Types** is not turned on by default. See below the instructions for turning it on.
+
+</div>
+
 The following settings are used for persistent authentication:
 
 * **Max Idle Time** – The maximum number of days a user stays logged in (in the server) without communicating with the server. After this time passes, the user needs to log in again if the application goes online (connects to the server).

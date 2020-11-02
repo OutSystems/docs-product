@@ -1,4 +1,6 @@
 ---
+summary: Reference information on the Radio Group widget for adding that groups of two or more Radio Buttons
+tags: outsystems-designing-screens; reference; designing-screens; radio-group-widget
 kinds: ServiceStudio.Plugin.NRWidgets.RadioGroupDescriptor
 helpids: 30215
 ---

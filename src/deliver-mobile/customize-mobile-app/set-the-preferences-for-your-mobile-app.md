@@ -27,7 +27,7 @@ To specify the preferences for your mobile app:
 
         ![](images/image3_2.PNG)
 
-4. To make this change available for the users, [publish and generate a new mobile application](<../generate-and-distribute-your-mobile-app/intro.md>) and distribute it. 
+4. To make this change available for the users, [publish and generate a new mobile application](<../generate-distribute-mobile-app/intro.md>) and distribute it. 
 
     ![](images/image02.png)
 

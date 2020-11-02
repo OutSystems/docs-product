@@ -14,7 +14,7 @@ To pass information with Input Parameters:
 
 <div class="info" markdown="1">
 
-You can use Input Parameters with Blocks as well. 
+To learn more about Screens, Widget, and Input Parameters see the [introductory video about the UI development](https://www.outsystems.com/learn/lesson/1923/ui-development) and [variables](https://www.outsystems.com/learn/lesson/2069/variables).
 
 </div>
 
@@ -25,6 +25,13 @@ To add an Input Parameter to a Screen in Service Studio:
 1. Go to **Interface** > **UI Flows** > **MainFlow** and locate your Screen.
 
     ![Selected Screen in Service Studio](images/screen-selected-ss.png?width=400)
+
+    <div class="info" markdown="1">
+
+    You can use Input Parameters with Blocks as well. 
+
+    </div>
+    
    
 2. Right-click the Screen and select **Add Input Parameter**. A new Input Parameter appears. 
 

@@ -49,7 +49,7 @@ You can set a **Client Action** as a function and use it directly in Expressions
 
 ## Server Actions
 
-You can also create **Server Actions** in your apps to encapsulate the logic and reuse it other Actions, such as other Server Actions, Data Actions or Client Actions. **Server Actions** run logic on the server.
+You can also create **Server Actions** in your apps to encapsulate the logic and reuse it in other Actions, such as other Server Actions, Data Actions or Client Actions. **Server Actions** run logic on the server.
 
 ![Server Action in Service Studio](images/server-action-ss.png?width=600)
 

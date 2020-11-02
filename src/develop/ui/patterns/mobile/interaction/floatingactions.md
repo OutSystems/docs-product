@@ -7,7 +7,7 @@ summary: Floating Actions displays an action that floats in the bottom right cor
 
 You can use the Floating Actions UI Pattern to display an action that floats in the bottom right corner of the screen, providing access to a set of additional actions.
 
-Use the Floating Action UI Pattern to show the primary action on a screen. Choose actions such as create, share, explore and so on. Avoid actions such as delete, archive or an alert. Exclude limited actions such as cut-and-paste text or actions that should be in a toolbar.
+Use the Floating Action UI Pattern to show the primary action on a screen. You can choose actions such as create, share, explore, but it is advised to avoid actions such as delete, archive, or an alert. Exclude limited actions such as cut-and-paste text or actions that should be in a toolbar.
 
 **How to use the Floating Actions UI Pattern**
 
@@ -28,6 +28,10 @@ Use the Floating Action UI Pattern to show the primary action on a screen. Choos
     In this example, we add text to the Label placeholders and linked icons to the Item placeholders.  
 
     ![](<images/floatingactions-3-ss.png>)
+
+1. Select the Floating Actions widget, and on the **Properties** tab, set the relevant properties, for example, whether the actions are expanded and visible when the page loads.
+
+   ![](<images/floatingactions-4-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
 

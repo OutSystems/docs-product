@@ -25,15 +25,35 @@ You can use the Pagination UI pattern to help users find a specific item on long
 
     By default, the Pagination widget contains Previous and Next placeholders with icons.
 
-1. On the **Properties** tab, set the (mandatory) **StartIndex**, **MaxRecords**, **TotalCount**, and **Handler** properties.
+1. Add 2 local variables to store the starting index and the maximum number of records per page. In this example we add the **StartIndex**  and **MaxRecords** variables. Both are of type integer and we set the default value of the **MaxRecords** to 50. Tis means there are 50 records shown per page.
 
-    ![](<images/pagination-4-ss.png>)
+    ![](<images/pagination-9-ss.png>)
+
+1. Select the Pagination widget, and on the **Properties** tab, set the **StartIndex** and **MaxRecords** properties to the respective local variables we just created.
+
+    ![](<images/pagination-10-ss.png>)
+
+1. Staying on the **Properties** tab, set the **TotalCount** to the number of records fetched in the aggregate that is the source of the table.  in this example, we set it to **GetApplications.Count**.
+
+    ![](<images/pagination-11-ss.png>)
+
+1. To define what happens when the end user changes from one page to another, from the **Handler** dropdown, select **New Client Action**. By default the **New Client Action** contains a **NewStartIndex** input. 
+
+1. To set the start index of the pagination, drag the **StartIndex** onto the client action and set it's value to **NewStartIndex**. When a user changes page, the start index will change accordingly. 
+
+    ![](<images/pagination-12-ss.png>)
+
+1. Refresh the data by re-executing the aggregate so the data for the new page appears in the table.
+
+    ![](<images/pagination-13-ss.png>)
+
+    In this example, when the user changes page, and the refresh action runs, it will take into account the current **StartIndex** and the **MaxRecords** to determine the **NewStartIndex** (in this case (50) for the new page.
+
+1. So that we only fetch the data we need for each page, select the aggregate and set the **StartIndex** and **MaxRecords** properties to the the variables we created earlier, **StartIndex** and **MaxRecords**.
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
-
-### Pagination
 
 | Property | Description |
 |---|---|

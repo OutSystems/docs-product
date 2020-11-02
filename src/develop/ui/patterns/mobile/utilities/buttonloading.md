@@ -7,7 +7,6 @@ summary: Use the Button Loading pattern to call actions that don't run immediate
 
 You can use the Button Loading UI Pattern to call actions that don't run immediately, provide a visual hint, and disable the button from being clicked until it becomes available again.
 
-![](<images/buttonloading-2.png>)
 
 **How to use the Button Loading UI Pattern**
 
@@ -17,9 +16,32 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
 
     ![](<images/buttonloading-1-ss.png>)
 
-1. From the Toolbox, drag the Margin Button Loading widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the Button Loading widget into the Main Content area of your application's screen.
+
+    In this example, we drag the widget onto a form that is already in the Main Content area.
+
+    By default the **Button Loading** widget contains a **Button** widget. We change the text of the button to **Create New User**.
+
+    ![](<images/buttonloading-2-ss.png>)
+
+3. Create a new local variable (of Boolean type) to control the state of the **Button Loading** widget. In this example, we call it **CreatingNewUser** and set the default value to **False**.
+
+    ![](<images/buttonloading-3-ss.png>)
+
+1. In this example, we also set the **ShowLoadingAndLabel** property to **False** so that the spinner doesn't show while the button logic is being executed.
+
+    ![](<images/buttonloading-4-ss.png>)
+
+5. Double-click the **Button** widget and add the necessary logic. In this example, the **ButtonOnClick** action creates a new user. We also add **Assign** logic for the **Button Loading** widget. The first Assign has the **CreatingNewUser** set to **False**. This is so the spinner doesn't display. The second Assign has the **CreatingNewUser** set to **True**. (The logic is added between the two Assigns.)
+
+    ![](<images/buttonloading-5-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
+
+**Result**
+
+![](<images/buttonloading-6-ss.png>)
+
 
 ## Properties
 

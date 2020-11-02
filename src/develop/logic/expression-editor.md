@@ -1,6 +1,6 @@
 ---
 summary: Use the expression editor to edit and validate expressions. The expressions editor shows the available elements, for example, variables and functions. It supports autocomplete and suggestions.
-tags: support-application_development;
+tags: support-application_development
 ---
 
 # Edit expressions

@@ -1,23 +1,48 @@
+---
+summary: Check the causes and recomendations on how to solve the different Invalid Data Type TrueChange errors.
+tags:
+---
+
 # Invalid Data Type Error
 
-The `Invalid Data Type` error is issued in the following situations:
+Message
+:   `Incompatible data types in <operator> operator`
 
-* `Incompatible data types in <operator> operator`
+Cause
+:   The data types aren't compatible with the operator you are using.
+
+Recommendation
+:   Check the [allowed data types for the `<operator>` operator](../../logic/expressions/operators.md), and ensure you only use allowed data types in the operation.
+
+---
   
-    You have data types that are not compatible with the operator being used.
+Message
+:   `<data-type-needed> data type required instead of <data-type-used>`
 
-    Check the allowed data types for that operator and use only those.
+Cause
+:   The property or operator is set with the wrong data type, `<data-type-used>`.
 
-* `<data type> data type required instead of <data type>`
-  
-    You have the wrong data type in a property or in the operator being used.
+Recommendation
+:   Set the property or operator to the correct data type, `<data-type-needed>`.
 
-    Check the allowed data types for the property or operator and use only those.
+---
 
-* `Invalid 'Null Value' data type for specified variable`
-  
-    You have specified an invalid null value for a the variable data type.
+Message
+:  `Invalid 'Null Value' data type for specified variable`
 
-* `Cannot send a 'Binary Data' parameter in the request '<send in>' of a method with '<request format>' request format. Change the parameter data type or the method request format.`
-  
-    In a REST API method, the request format does not allow sending Binary Data in the place that is set for the parameter.
+Cause
+:   The **Null Value** property defined is incompatible with the **Variable** assigned to the **Input** widget.
+
+Recommendation
+:   Set **Null Value** as a value of the same data type as the **Variable** assigned to the **Input** widget. For example, if you assinged a Boolean variable to the Input set the **Null Value** as `False`.
+
+---
+
+Message
+:   `Cannot send a 'Binary Data' parameter in the request '<send in>' of a method with '<request format>' request format. Change the parameter data type or the method request format.`
+
+Cause
+:    In a REST API method, the request format doesn't allow you to send Binary Data in the place that's set for the parameter.
+
+Recommendation
+:    Change the parameter data type or the method request format.

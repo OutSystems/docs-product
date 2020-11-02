@@ -1,14 +1,14 @@
 ---
-summary: Log tab showing specific settings for the 'SQL Server / Azure SQL' database provider.
+summary: Log tab showing specific settings for the 'Azure SQL Database / SQL Server' database provider.
 ---
 
-# Log Tab in SQL Server / Azure SQL
+# Log Tab in SQL Server / Azure SQL Database
 
 The following configurations are available in the **Log** tab when the **Database Provider** property is set to `SQL Server / Azure SQL`.
 
 ## Database Section
 
-This section contains general configurations for the SQL Server / Azure SQL database connection to the logging database.
+This section contains general configurations for the Azure SQL Database / SQL Server database connection to the logging database.
 
 Configuration | Description | Default value  
 --------------|-------------|---------------  

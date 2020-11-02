@@ -27,7 +27,7 @@ OutSystems defines the type of an input parameter, output parameter or structure
 
 In OutSystems, identifiers can't have a complex type (or array element type) as data type. You can only define their data type as Integer, Long Integer, or Text. Service Studio shows you an error when there's an enum (or array of enums) in the API specification with a type other than the supported ones.
 
-Examples:
+Examples of the unsupported use case:
 
 ```javascript
 "parameters": [
@@ -106,7 +106,7 @@ On the other hand, the consuming REST API expects these input parameters to cont
 
 Input parameters defined in the "parameters" section or referenced using a "$ref" field are created with the type defined in the "type" field and the Static Entity will not be created. When defined in body, Service Studio throws an exception.
 
-Examples:
+Examples of the unsupported use case:
 
 ```javascript
 "parameters": [
@@ -164,7 +164,7 @@ Define the parameter in place instead of referencing it.
 
 Output parameters defined in a "headers" section are created with the type defined in the "type" field and the Static Entity will not be created.
 
-Examples:
+Examples of the unsupported use case:
 
 ```javascript
 "responses": {

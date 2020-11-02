@@ -51,7 +51,7 @@ ConfigurationTool.com
 
 :   Creates or upgrades the OutSystems platform and logging database model using the `server.hsconf` configuration file.
 
-    For SQL Server of Azure SQL databases, you must provide the credentials needed to create or upgrade the platform database. Furthermore, if you specify separate platform and logging databases in `server.hsconf`, you also need to provide the credentials needed to create or upgrade the logging database.
+    For Azure SQL Database or SQL Server databases, you must provide the credentials needed to create or upgrade the platform database. Furthermore, if you specify separate platform and logging databases in `server.hsconf`, you also need to provide the credentials needed to create or upgrade the logging database.
 
     For Oracle databases, you do not need to provide the admin usernames and passwords.
     
@@ -141,7 +141,7 @@ ConfigurationTool.com
 
 ## Example
 
-Perform a clean installation for SQL Server or Azure SQL:
+Perform a clean installation for SQL Server or Azure SQL Database:
 
 ```
 ConfigurationTool.com

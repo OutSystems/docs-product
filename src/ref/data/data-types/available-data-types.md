@@ -27,8 +27,8 @@ Text | "" (empty string) | "My name is Christina Sharp." |
 <a id="date-time-notes"></a>**Date Time Notes**
 
 * When you work with Date Time data type in the server, you always deal with the time zone of the server.
-* Date Time in mobile apps is always UTC, even when requested from the server.
-* When you use Date Time in the mobile app UI, the value is converted to the local time of the device.
+* Date Time in reactive and mobile apps is always UTC, even when requested from the server.
+* When you use Date Time in the reactive or mobile app UI, the value is converted to the local time of the device.
  
 Here is an example for a server that is in GMT+01 (Paris) and a mobile device in GMT-05 (New York). The mobile device requests a certain Date Time value from the server, for example `#2007-12-18 17:00:00#`. What happens is:
  

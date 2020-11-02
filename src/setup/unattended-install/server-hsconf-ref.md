@@ -59,9 +59,9 @@ The following are the configurations that do not depend on the database manageme
 |RuntimeAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems applications.|
 |ServicesAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems services.|
 
-### SQL Server/Azure SQL
+### SQL Server/Azure SQL Database
 
-The following are the configurations that are specific to SQL Server and Azure SQL:
+The following are the configurations that are specific to SQL Server and Azure SQL Database:
 
 |Key|Value|Description|
 |---|-----|-----------|
@@ -116,9 +116,9 @@ The following are the configurations that do not depend on the database manageme
 |RuntimePassword|Password of the user used to access logs at applications runtime.|Configuration Tool will read the clear text password and save an encrypted version.|
 |RuntimeAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems applications.|
 
-### SQL Server/Azure SQL
+### SQL Server/Azure SQL Database
 
-The following are the configurations that are specific to SQL Server and Azure SQL:
+The following are the configurations that are specific to SQL Server and Azure SQL Database:
 
 |Key|Value|Description|
 |---|-----|-----------|
@@ -173,8 +173,8 @@ The following are the configurations that do not depend on the database manageme
 |SessionAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems applications.|
 |DeleteExpiredSessionsAvoidLockRowCount|Numeric value.%%**Internal**, do not customize.|
 
-### SQL Server/Azure SQL 
-The following are the configurations that are specific to SQL Server and Azure SQL:
+### SQL Server/Azure SQL Database 
+The following are the configurations that are specific to SQL Server and Azure SQL Database:
 
 |Key|Value|Description|
 |---|-----|-----------|

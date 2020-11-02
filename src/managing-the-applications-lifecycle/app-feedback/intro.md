@@ -1,12 +1,22 @@
 ---
-summary: OutSystems simplifies the whole change management process by allowing users to share feedback right inside mobile and web applications.
+summary: Use the built-in feedback feature to let your users send feedback about an app directly from the app.
 tags: support-Application_Lifecycle; support-application_development; support-Integrations_Extensions; support-Application_Lifecycle-overview
 ---
 
-# Gather User Feedback
+# Gather user feedback
 
-OutSystems simplifies the whole change management process by allowing key users or internal QA users to share written and voice feedback right inside mobile and web applications.
+A group of users can share feedback about an app directly from the app. The feedback is immediately available to the development team for review through the **App Feedback** app. Check out how to [activate the feedback feature in an environment](user-feedback-enable.md),
 
-You can enable feedback for all users or only to a restricted group of users. The feedback provided by the users is immediately available to the development team, which will be able to review all the submitted feedback and decide what changes to apply.
+The feedback users send consists of:
 
-User feedback can be handled directly in OutSystems App Feedback application or you can integrate with your corporate tracking tools. Find out in OutSystems Community how our users are integrating with [JIRA](https://www.outsystems.com/forge/component/2153/feedback-to-jira/), [Zendesk](https://www.outsystems.com/forge/component/2154/feedback-to-zendesk/) or [Asana](https://www.outsystems.com/forge/component/2107/feedback-to-asana/).
+* Date and time
+* User name
+* Status
+* Screenshot
+* Feedback text or a voice message
+* Screen resolution
+* Operating system
+
+![Feedback preview](images/app-feedback-handle-2.png?width=800)
+
+You can also integrate the feedback process into your corporate tracking tools. Check out the components submitted by the OutSystems community, for [JIRA](https://www.outsystems.com/forge/component/2153/feedback-to-jira/), [Zendesk](https://www.outsystems.com/forge/component/2154/feedback-to-zendesk/), and [Asana](https://www.outsystems.com/forge/component/2107/feedback-to-asana/).

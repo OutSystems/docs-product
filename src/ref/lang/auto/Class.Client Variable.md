@@ -46,7 +46,7 @@ Holds data that is persisted client-side and can be used to save information dur
 <td>Initial value of this element. If undefined, the default value of the data type is used.</td>
 <td></td>
 <td></td>
-<td>The default value of a session variable must be a literal.</td>
+<td>The default value of a client variable must be a literal.</td>
 </tr>
 </tbody>
 </table>

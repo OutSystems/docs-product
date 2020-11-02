@@ -17,10 +17,11 @@ Using watches you can inspect:
 
 To watch a module element do the following:
 
-1. Right-click on the element to watch, either in the Scope tabs or in the module tree.
+1. Run the module in Debug mode.
+1. Right-click the element to watch, either in the Scope tabs or in the module tree.
 1. Select the "Add To Debug Watches" option in the pop-up menu. 
 
-All watched module elements are alphabetically listed in the Watches Tab.
+All watched module elements are alphabetically listed in the Watches Tab. 
 
 
 ## Remove a Watch

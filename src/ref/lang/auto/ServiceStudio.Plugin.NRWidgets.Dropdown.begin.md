@@ -1,3 +1,8 @@
+---
+summary: Reference information on the Dropdown widget for showing a dropdown list for the users to select a value on the screen.
+tags: outsystems-designing-screens; reference; designing-screens; drop-down
+---
+
 Use the Dropdown Widget to create drop-down lists in your Mobile and Reactive Web Apps.
 
 With the Dropdown Widget you can implement two types of lists:

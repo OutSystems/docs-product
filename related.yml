@@ -4,9 +4,24 @@
   - getting-started/create-mobile.md
   - getting-started/create-web.md
 
+# Developing an Application / Use Data
+
 # Download a file through browser
 - develop/data/download-file-browser.md:
   - ref/logic/implementing-logic/download.md
+
+# Offline
+- develop/data/offline/patterns/intro.md:
+  - external:
+    - "Data Synchronization Course": 
+        https://www.outsystems.com/learn/courses/170/data-synchronization/
+
+# Expression editor
+- develop/logic/expression-editor.md:
+  - ref/logic/expressions/intro.md
+  - ref/logic/expressions/operators.md
+  - ref/logic/expressions/operands.md
+  - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md
 
 # Caching
 - develop/data/caching.md:
@@ -64,6 +79,11 @@
 # Send an Email From a Web Application
 - develop/logic/emails.md:
     - extensibility-and-integration/configure-send-emails.md
+
+# Styles Editor
+- develop/ui/look-feel/styles-editor.md:
+    - develop/ui/look-feel/css.md
+    - develop/ui/look-feel/themes.md
 
 # ------- Web Interfaces -------
 
@@ -170,6 +190,9 @@
     - ref/lang/auto/Class.Table Records Widget.final.md
     # Table Widget
     - ref/lang/auto/Class.Table Widget.final.md
+    - external:
+        - "How to scroll records in a table with a fixed header":
+            https://success.outsystems.com/Documentation/How-to_Guides/Front-End/How_to_scroll_records_in_a_table_with_a_fixed_header
       
 # Image Widget
 - ref/lang/auto/Class.Image Widget.final.md:
@@ -218,7 +241,12 @@
     - ref/lang/auto/Class.Go To Destination.final.md
     # Web Screen
     - ref/lang/auto/Class.Web Screen.final.md
-      
+
+- ref/lang/auto/Class.List Box Widget.final.md:
+    - ref/lang/auto/Class.Combo Box Widget.final.md
+    - develop/ui/patterns/web/controls/dropdown.md
+    - develop/ui/patterns/web/controls/dropdownselect.md
+
 # List Records Widget
 - ref/lang/auto/Class.List Records Widget.final.md:
     # Table Records Widget
@@ -262,8 +290,6 @@
       
 # Table Records Widget
 - ref/lang/auto/Class.Table Records Widget.final.md:
-    # Fetch and Display Data from the Database
-    - develop/data/query/fetch-display.md
     # List
     - ref/data/data-types/list.md
       
@@ -416,7 +442,8 @@
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroupItem.final.md:
     # ButtonGroup
     - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md
-
+    # Button Group Pattern
+    - develop/ui/patterns/web/controls/buttongroup.md
 # Checkbox
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md:
     # Switch
@@ -666,15 +693,18 @@
 
 # Expressions
 - ref/logic/expressions/intro.md:
+    - ref/logic/expressions/operands.md
+    - ref/logic/expressions/operators.md
     #Create a Calculated Attribute in an Aggregate
     - develop/data/query/calculated-attribute-create.md
     # Available Data Types
     - ref/data/data-types/available-data-types.md
 
-#   Operands
+# Operands
 - ref/logic/expressions/operands.md:
     # Available Data Types
     - ref/data/data-types/available-data-types.md
+    - ref/lang/auto/builtinfunctions.final.md
 
 #     Client Action
 -  ref/lang/auto/Class.Client Action.final.md:
@@ -694,6 +724,11 @@
 #     Role
 -  ref/lang/auto/Class.Role.final.md:
     - develop/security/user-roles/intro.md
+
+# Run Server Action
+- ref/lang/auto/Class.Run Server Action.final.md:
+    - ref/lang/auto/Class.Run Client Action.final.md
+    - develop/reuse-and-refactor/encapsulate-logic.md
 
 #     User Exception
 -  ref/lang/auto/Class.User Exception.final.md:
@@ -755,6 +790,9 @@
 #     Excel To Record List
 -  ref/lang/auto/Class.Excel To Record List.final.md:
     - ref/lang/auto/Class.Record List To Excel.final.md
+    - one-way: getting-started/create-reactive-web.md
+    - one-way: develop/data/excel-bootstrap.md
+    - one-way: develop/ui/inputs/upload.md
 
 #     Ajax Refresh
 -  ref/lang/auto/Class.Ajax Refresh.final.md:
@@ -806,8 +844,16 @@
 
 - extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md:
     - external:
-        - "Forge Component: How to Add Custom Authentication to a REST API":
+        - "Forge: How to Add Custom Authentication to a REST API":
             https://www.outsystems.com/forge/component-overview/927/how-to-add-custom-authentication-to-a-rest-api
+    - one-way: develop/data/excel-bootstrap.md
+    - one-way: develop/reuse-and-refactor/expose-and-reuse.md
+    - one-way: ref/apis/auto/httprequesthandler-api.final.md
+
+- extensibility-and-integration/rest/expose-rest-apis/customize-rest-api-responses.md:
+    - external:
+        - "Blog post: How to Implement HTTP Status Codes When Exposing a REST API in OutSystems":
+            https://www.outsystems.com/blog/posts/implementing-http-status-code-exposing-rest/
 
 # --- Managing the Applications Lifecycle > Containers ---
 
@@ -840,26 +886,34 @@
 
 # Distribute as a progressive web app (PWA)
 - deliver-mobile/distribute-pwa/intro.md:
-    - deliver-mobile/generate-and-distribute-your-mobile-app/intro.md
+    - deliver-mobile/generate-distribute-mobile-app/intro.md
     - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
-    - external:
-        - "The forum topic for PWA during early access":
-            https://www.outsystems.com/forums/discussion/56090/progressive-web-apps-early-access-now-open-to-everyone/
 
 # Use Events to Propagate Changes From a Block to the Parent
 - develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md:
     - develop/ui/inputs/popup.md
 
-# Early Access - Configure mobile apps updates distribution
+# Mobile App Update Scenarios
+- deliver-mobile/mobile-app-update-scenarios.md:
+    - managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md
+
+# Technical Preview - Configure mobile apps updates distribution
 - deliver-mobile/manage-distribution-options/intro.md:
     - managing-the-applications-lifecycle/deploy-applications/deploy-an-application.md
     - managing-the-applications-lifecycle/deploy-applications/tag-a-version.md
     - deliver-mobile/mobile-app-update-scenarios.md
-    - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
-    - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
-    - deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
-    - setup/possible-setups.md
-# UI Web Patterns
+    - deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
+    - deliver-mobile/generate-distribute-mobile-app/publish-apple-app-store.md
+    - deliver-mobile/generate-distribute-mobile-app/development-tests.md
+    - one-way: setup/possible-setups/intro.md
+
+# Building apps with AndroidX
+- deliver-mobile/mobile-apps-build-service/androidx.md:
+    - deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
+    - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
+    - deliver-mobile/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
+
+    # UI Web Patterns
 - develop/ui/patterns/web/content/accordion/accordion.md:
     - ref/ui-patterns/web/accordion.md
     - external:
@@ -1072,17 +1126,16 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/LayoutLoginSplit.aspx  
 - develop/ui/patterns/web/layout/layout-popup.md:
+    - ref/ui-patterns/web/layout-popup.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LayoutPopup.aspx
 - develop/ui/patterns/web/layout/layout-sidemenu.md:
     - ref/ui-patterns/web/layout-sidemenu.md
 - develop/ui/patterns/web/layout/layout-topmenu.md:
     - ref/ui-patterns/web/layout-topmenu.md
 - develop/ui/patterns/web/layout/loginform.md:
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
+    - ref/ui-patterns/web/loginform.md
 - develop/ui/patterns/web/navigation/breadcrumbs.md:
     - ref/ui-patterns/web/breadcrumbs.md
     - external:
@@ -1314,6 +1367,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/CardBackground.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=14
+- develop/ui/patterns/mobile/content/carditem.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=15
 - develop/ui/patterns/mobile/content/cardsectioned.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1326,12 +1383,24 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/FlipContent.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=37
+- develop/ui/patterns/mobile/content/floatingcontent.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=39
+- develop/ui/patterns/mobile/content/listitemcontent.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=49
 - develop/ui/patterns/mobile/content/section.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Section.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=63
+- develop/ui/patterns/mobile/content/sectiongroup.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=64
 - develop/ui/patterns/mobile/content/tag.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1373,7 +1442,25 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/DatePicker.aspx
         - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=31      
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=31
+- develop/ui/patterns/mobile/interaction/dropdownsearch.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=34
+- develop/ui/patterns/mobile/interaction/dropdowntags.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=35  
+- develop/ui/patterns/mobile/interaction/floatingactions.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FloatingActions.aspx
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=38 
+- develop/ui/patterns/mobile/interaction/horizontalscroll.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=42      
 - develop/ui/patterns/mobile/interaction/inputwithicon.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1387,6 +1474,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightBoxImage.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46
+- develop/ui/patterns/mobile/interaction/notification.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=53
 - develop/ui/patterns/mobile/interaction/rangeslider.md:
     - ref/ui-patterns/mobile/rangeslider.md
     - external:
@@ -1401,6 +1492,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSliderInterval.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=61
+- develop/ui/patterns/mobile/interaction/search.md:
+    - external:
+        - "OutSystems UI Pattern":
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=62
 - develop/ui/patterns/mobile/interaction/sidebar.md:
     - external:
        - "OutSystems UI Pattern":  
@@ -1410,19 +1505,41 @@
     - external:
        - "OutSystems UI Pattern":  
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
+- develop/ui/patterns/mobile/navigation/bottombaritem.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=9 
 - develop/ui/patterns/mobile/navigation/breadcrumbs.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Breadcrumbs.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10 
+- develop/ui/patterns/mobile/navigation/pagination.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=54 
+- develop/ui/patterns/mobile/navigation/sectionindex.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/SectionIndex.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=65 
+- develop/ui/patterns/mobile/navigation/submenu.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=69
 - develop/ui/patterns/mobile/navigation/tabs.md:
     - ref/ui-patterns/mobile/tabs-mobile.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
         - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73                  
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73 
+- develop/ui/patterns/mobile/navigation/timelineitem.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=76                 
 - develop/ui/patterns/mobile/numbers/badge.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1430,6 +1547,7 @@
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7
 - develop/ui/patterns/mobile/numbers/counter.md:
+
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Counter.aspx
@@ -1441,6 +1559,16 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
+- develop/ui/patterns/mobile/numbers/progresscircle.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=58
+- develop/ui/patterns/mobile/numbers/progresscirclefraction.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=59
 - develop/ui/patterns/mobile/utilities/aligncenter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

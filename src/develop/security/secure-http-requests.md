@@ -1,29 +1,30 @@
 ---
 tags: runtime-traditionalweb; support-devOps; support-Security; support-Security-featured
+summary: Increase the security of your Traditional Web app by increasing the security level of HTTP requests.
 ---
 
 # Secure HTTP Requests
 
-You can increase the security of your Web application by increasing the security level of the HTTP requests. You can configure the security level of the HTTP requests in the following elements:
+You can increase the security of your Traditional Web app by increasing the security level of HTTP requests. You can configure the security level of HTTP requests in the following elements:
 
-* UI Flows (the value specified is used as default for all Web Screens in the flow) 
+* UI Flows (OutSystems uses the value specified for the flow as the default for all the flow Web Screens)
 * Web Screens
 * Exposed SOAP Web Services
 * Exposed REST APIs
 
-HTTP requests are always secure in reactive and mobile apps, therefore this configuration does not apply to mobile scenarios.
+HTTP requests are always secure in Reactive and Mobile apps, therefore this configuration doesn't apply to mobile scenarios.
 
 To configure the HTTP security level for these elements, set its **HTTP Security** property to the desired value. The following types of HTTP security are available:
 
 * `None`
-* `SSL/TLS`: The HTTPS protocol is used in the requests and client certificates can be accepted but are not required.
-* `SSL/TLS with client certificates`: The HTTPS protocol is used in requests and client certificates are required. This option is not applicable to REST APIs and is not supported for OutSystems Cloud. 
+* `SSL/TLS`: Uses the HTTPS protocol in requests. Client certificates can be accepted but aren't required.
+* `SSL/TLS with client certificates`: Uses the HTTPS protocol in requests and client certificates are required. This option isn't available for REST APIs. Additionally, this option isn't supported in OutSystems Cloud.
 
-If you access an application using an explicit secure request (starting with `https://`), OutSystems will maintain the secure protocol while navigating over non-secure elements.
+If you access an application using an explicit secure request (starting with `https://`), OutSystems maintains the secure protocol while navigating over non-secure elements.
 
-The security level that you define in your application at design time can be overridden by IT Managers or Administrators, as they can [enforce the HTTPS security of applications](<../../managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md>) that are installed and running in an environment.
+The security level that you define in your application at design time can be overridden by IT Managers or Administrators, as they can [enforce the HTTPS security of applications](<../../managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md>) installed and running in an environment.
 
-## Client Certificate Actions
+## Client certificate actions
 
 If you have OutSystems installed **on-premises**, you can use the following System Actions when you are using client certificates:
 

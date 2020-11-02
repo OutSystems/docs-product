@@ -1,5 +1,5 @@
 ---
-tags: runtime-traditionalweb; 
+tags: runtime-mobileandreactiveweb;
 summary: Displays the current progress of a task using circular or semi-circular progress indicators.
 ---
 

@@ -5,7 +5,7 @@ helpids: 0
 
 # On Application Ready
 
-Action executed when the application is loading (in the home module only). Can be used to set up the application (for example, initialize mobile plugins).  
+Action executed when the application is loading (in the home module only). Can be used to set up the application (for example, initialize mobile plugins).  This action will run asynchronously, and it will not block the render of the screens.
 
 ## Properties
 

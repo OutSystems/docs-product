@@ -37,9 +37,9 @@ You can use the Pagination UI pattern to help users find a specific item on long
 
     ![](<images/pagination-11-ss.png>)
 
-1. To define what happens when the end user changes from one page to another, from the **Handler** dropdown, select **New Client Action**. By default the **New Client Action** contains a **NewStartIndex** input. 
+1. To define what happens when the end user changes from one page to another, from the **Handler** dropdown, select **New Client Action**. By default the **New Client Action** contains a **NewStartIndex** input.
 
-1. To set the start index of the pagination, drag the **StartIndex** onto the client action and set it's value to **NewStartIndex**. When a user changes page, the start index will change accordingly. 
+1. To set the start index of the pagination, drag the **StartIndex** onto the client action and set its value to **NewStartIndex**. When a user changes page, the start index will change accordingly.
 
     ![](<images/pagination-12-ss.png>)
 

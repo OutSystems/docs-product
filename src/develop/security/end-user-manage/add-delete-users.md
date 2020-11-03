@@ -27,13 +27,13 @@ To create a new end user for your applications, click **Create a new User** and 
 
 ![](images/add-delete-users-gif1.gif?width=550)
 
-## Deactivate an existing end user { #deactivate }
+## Activate and deactivate an existing end user { #activate-deactivate }
 
 A deactivated end user can't log in to any application and has all the granted permissions suspended.  
 To deactivate an end user, access the user detail page and then click **Set as Inactive**.
 
 In the **Users** tab, click **Inactive Users** to view the list of users who are deactivated.  
-To reactivate a user, enter the user details and click **Set as Active**.
+To activate an end user again, enter the user details and click **Set as Active**.
 
 ## Delete an existing end user { #delete }
 

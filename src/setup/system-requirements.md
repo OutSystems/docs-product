@@ -28,7 +28,9 @@ This section summarizes the requirements for installing the Platform Server in y
 * Microsoft Windows Server 2019 (Standard Edition or higher edition), since Platform Server Release Jul.2019
 * Microsoft Windows Server 2016 (Standard Edition or higher edition)
 
-The supported Operating System configurations need to be deployed on bare metal or hardware virtualization technologies (e.g. VMware, KVM).
+For these Operating System versions, OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
+
+The supported Operating System configurations must be deployed on bare metal or hardware virtualization technologies (for example, VMware or KVM).
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 

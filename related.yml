@@ -913,7 +913,7 @@
     - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
     - deliver-mobile/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
 
-    # UI Web Patterns
+# UI Web Patterns
 - develop/ui/patterns/web/content/accordion/accordion.md:
     - ref/ui-patterns/web/accordion.md
     - external:

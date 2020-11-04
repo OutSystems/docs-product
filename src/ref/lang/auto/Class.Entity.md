@@ -71,7 +71,7 @@ An Entity represents a table in a database.
 </tr>
 <tr>
 <td title="Label Attribute">Label Attribute</td>
-<td>Attribute displayed to the users when creating combo boxes.</td>
+<td>Attribute displayed to the users when creating combo boxes. This Attribute also becomes the source of data for the table row based on the Entity, when scaffolding a screen.</td>
 <td></td>
 <td></td>
 <td></td>

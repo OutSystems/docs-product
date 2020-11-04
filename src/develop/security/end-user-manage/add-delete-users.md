@@ -7,7 +7,7 @@ tags: support-Mobile_Apps; support-webapps
 
 <div class="info" markdown="1">
 
-We’ve been working on this article. Please let us know how useful this new version is by voting.
+We've been working on this article. Please let us know how useful this new version is by voting.
 
 </div>
 
@@ -23,20 +23,28 @@ Check [End Users Authentication](end-user-authentication/intro.md) for more info
 
 </div>
 
-To create a new end user for your applications, click **Create a new User** and fill in the details. After the user is created, you’ll be redirected to the user detail page where you can edit the user’s details, groups, and roles.
+To create a new end user for your applications do the following:
 
-![](images/add-delete-users-gif1.gif?width=550)
+1. Click **Create a new User** under the "Users" page heading.
 
-## Deactivate an existing end user { #deactivate }
+1. Fill in the details and press **Save**.  
+
+    The Users app redirects you to the user detail page after creating the user.
+
+1. Assign groups and roles to the user.
+
+![Demo of creating a user in the Users app](images/add-delete-users-gif1.gif?width=550)
+
+## Activate and deactivate an existing end user { #activate-deactivate }
 
 A deactivated end user can't log in to any application and has all the granted permissions suspended.  
 To deactivate an end user, access the user detail page and then click **Set as Inactive**.
 
-In the **Users** tab, click **Inactive Users** to view the list of users who are deactivated.  
-To reactivate a user, enter the user details and click **Set as Active**.
+In the **Users** tab, click **Inactive Users** to view the list of deactivated users.  
+To activate an end user again, enter the user details and click **Set as Active**.
 
 ## Delete an existing end user { #delete }
 
 To permanently delete an end user, click **Edit this User** on the user detail screen and select **Delete this User**.
 
-![](images/add-delete-users-gif2.gif?width=550)
+![Demo of deleting an end user in the Users app](images/add-delete-users-gif2.gif?width=550)

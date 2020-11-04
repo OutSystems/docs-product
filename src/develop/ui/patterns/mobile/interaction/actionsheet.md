@@ -23,9 +23,31 @@ You can use the Action Sheet UI Patterns to add a menu that slides from the bott
 
     By default, the Action Sheet widget contains 5 button placeholders. 
 
-1. Add the relevant content to the Button placeholders. In this example, we add 
- 
-1. On the **Properties** tab, you can also define (optional) properties, such as the height and width of the video and the audio settings.
+1. Add the relevant content to the Button placeholders. In this example, we add buttons that navigate to other pages when clicked. 
+
+    ![](<images/actionsheet-5-ss.png>)
+
+1. Add a local variable. In this example, we call the variable **IsOpened**. 
+
+1. Select the Action Sheet pattern, and on the **Properties** tab, set the **IsOpen** property to the new local variable (in this example, **IsOpened**).
+
+    ![](<images/actionsheet-4-ss.png>)
+
+1. To open the Action Sheet menu, we add a button and on the **Properties** tab, from the **OnClick** dropdown, select **New Client Action**.
+
+    ![](<images/actionsheet-6-ss.png>)
+
+1. Add an Assign to the client action and set the **IsOpened** local variable to **True**. 
+
+    ![](<images/actionsheet-7-ss.png>)
+
+1. To close the Action Sheet menu, on the **Properties** tab, from the **Handler** dropdrown of the **OnClose** event, select **New Client Action**.
+    
+    ![](<images/actionsheet-8-ss.png>)
+
+1. Add an Assign to the client action and set the **IsOpened** local variable to **False**. 
+
+    ![](<images/actionsheet-9-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. 
        

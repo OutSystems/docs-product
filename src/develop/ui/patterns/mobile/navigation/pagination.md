@@ -47,9 +47,13 @@ You can use the Pagination UI pattern to help users find a specific item on long
 
     ![](<images/pagination-13-ss.png>)
 
-    In this example, when the user changes page, and the refresh action runs, it will take into account the current **StartIndex** and the **MaxRecords** to determine the **NewStartIndex** (in this case (50) for the new page.
+    In this example, when the user changes page, and the refresh action runs, it will take into account the current **StartIndex** and the **MaxRecords** to determine the **NewStartIndex** (in this case 50 for the new page.)
 
-1. So that we only fetch the data we need for each page, select the aggregate and set the **StartIndex** and **MaxRecords** properties to the the variables we created earlier, **StartIndex** and **MaxRecords**.
+1. So that we only fetch the data we need for each page, select the aggregate and set the **Start Index** and **Max. Records** properties to the the variables we created earlier, **StartIndex** and **MaxRecords**.
+
+    ![](<images/pagination-14-ss.png>)
+
+
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

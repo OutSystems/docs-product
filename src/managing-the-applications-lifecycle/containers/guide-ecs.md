@@ -4,13 +4,15 @@ summary: Step-by-step guide on how to deploy OutSystems applications to Amazon E
 
 # Deploy an App to Amazon Elastic Container Service (ECS) Step-by-Step
 
-This document will guide you from having your OutSystems platform hosted on Amazon AWS to preparing your infrastructure and deploying an OutSystems application in a container running on Amazon Elastic Container Service (ECS).
+<div class="warning" markdown="1">
 
-<div class="warning" style="overflow: hidden" markdown="1">
+Container deployment is available as an [Early Access Program](<https://www.outsystems.com/goto/technical-preview>).
 
-Note: The information provided in this guide should be used as general guidance. Use it for **internal and testing purposes** only. 
+Note: The information provided in this guide should be used as general guidance. Use it for **internal and testing purposes** only.
 
 </div>
+
+This document will guide you from having your OutSystems platform hosted on Amazon AWS to preparing your infrastructure and deploying an OutSystems application in a container running on Amazon Elastic Container Service (ECS).
 
 ## Pre-requisites
 

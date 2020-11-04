@@ -12,7 +12,7 @@ Applies to OutSystems licenses purchased after January 2020.
 
 OutSystems identifies two different types of registered end users for licensing purposes: [**Internal Users** and **External Users**](intro.md#internal-external).
 
-You can classify all Registered Users whose email address contains a specific domain (e.g., `mycompany.com`) as Internal Users, while all other Registered Users are considered External Users.
+You can classify all Registered Users whose email address contains a specific domain (for example, `mycompany.com`) as Internal Users, while all other Registered Users are considered External Users.
 
 The list of one or more domains used to identify users as Internal Users is defined in **classification rules**. All users whose email address contains one of the domains contained in the classification rules are considered **Internal Users**. Every other Registered User is considered an **External User**.
 
@@ -21,9 +21,9 @@ For example, if you set the classification rules to `mycompany.com`:
 * A Registered User whose email address is `scott.green@mycompany.com` is considered an Internal User.
 * A Registered User whose email address is `scarlett.doe@outsourcing.com` is considered an External User.
 
-The user classification rules are checked against the user's email address field, if it contains a value, or to the username, if the field value contains an email address. Any Registered Users that do not have a valid email address in one of these fields are classified as Internal Users. 
+The user classification rules are checked against the user's email address field, if it contains a value, or to the username, if the field value contains an email address. Any Registered Users that do not have a valid email address in one of these fields are classified as Internal Users.
 
-The configuration of classification rules is done per environment in Service Center, and you can configure different classification rules in different environments. OutSystems checks for registered [active users](add-delete-users.md#deactivate) when determining the number of Internal/External Users in an environment.
+The configuration of classification rules is done per environment in Service Center, and you can configure different classification rules in different environments. OutSystems checks for registered [active users](add-delete-users.md#activate-deactivate) when determining the number of Internal/External Users in an environment.
 
 Note that this classification applies only to Registered Users (or Named Users). Anonymous Users are not taken into account for this classification. Check [End User Management](intro.md) for more information on end user classification.
 

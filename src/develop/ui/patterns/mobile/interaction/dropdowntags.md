@@ -32,7 +32,7 @@ In this example, we create a dropdown tags search for a list of application user
     ![](<images/dropdowntags-4-ss.png>)
 
     The **GetUser** aggregate is automatically created.
-    
+
     ![](<images/dropdowntags-5-ss.png>)
 
 1. Return to your screen by double-clicking the screen name, select the Dropdown Tags widget, and on the **Properties** tab, set the mandatory properties (ItemList, Value, Text).
@@ -43,9 +43,9 @@ In this example, we create a dropdown tags search for a list of application user
 
 1. Add the relevant logic to the client action. 
 
-   In this example, we add a Message to the client action and in the Expression Editor enter the following logic and click **DONE**. This will display the the number of items as they are selected.
+    In this example, we add a Message to the client action and in the Expression Editor enter the following logic and click **DONE**. This will display the the number of items as they are selected.
 
-    ``CurrentList.Length``
+    `CurrentList.Length`
 
     ![](<images/dropdowntags-7-ss.png>)
 
@@ -57,17 +57,15 @@ After following these steps and publishing the module, you can test the pattern 
 
 ![](<images/dropdowntags-9-ss.png>)
 
-
-
 ## Properties
 
-| **Property** |  **Description** |
+| Property | Description |
 |---|---|
 | ItemList (DropdownItem List): Mandatory |  List of items to show in the dropdown. |  
 | SelectedItemsList (DropdownItem List): Optional | Use this parameter to set preselected items. |  
-| IsRemoveItems (Boolean): Optional | If True, the option to remove items is enabled. This is the default. If False, the option to remove items is disabled.|
-| IsDisabled (Boolean): Optional | If True, the dropdown search option is disabled. If False, the dropdown search is enabled. This is the default.|  
+| IsRemoveItems (Boolean): Optional | If True, the option to remove items is enabled. This is the default. If False, the option to remove items is disabled. |
+| IsDisabled (Boolean): Optional | If True, the dropdown search option is disabled. If False, the dropdown search is enabled. This is the default. |
 | SearchPrompt (Text): Optional | Text to display on the search prompt/placeholder. "Search" is the default value.|  
-| NoResultsText (Text): Optional | Text to display on the search prompt/placeholder. "No results found" is the default value.|
-| AdvancedFormat (Text): Optional   | Allow for more options beyond what's provided through the inputs. Default value is `{}`. <p> Example</p> ``{""searchEnabled"":false}``. <p> For more information, visit: [Choices library](https://github.com/jshjohnson/Choices). </p><p>You can also use fuse.js options to change the search configuration. For more information about configurations, visit: [Fuse](https://fusejs.io/) </p> |
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Dropdown Tags UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown Tags UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown Tags UI styles being applied.</li></ul> |
+| NoResultsText (Text): Optional | Text to display on the search prompt/placeholder. "No results found" is the default value. |
+| AdvancedFormat (Text): Optional | Allow for more options beyond what's provided through the inputs. Default value is `{}`. <p> Example</p> `{"searchEnabled": false}`. <p> For more information, visit: [Choices library](https://github.com/jshjohnson/Choices). </p><p>You can also use fuse.js options to change the search configuration. For more information about configurations, visit: [Fuse](https://fusejs.io/) </p> |
+| ExtendedClass (Text): Optional | Add custom style classes to the Dropdown Tags UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown Tags UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown Tags UI styles being applied.</li></ul> |

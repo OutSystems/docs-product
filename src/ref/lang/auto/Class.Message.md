@@ -29,7 +29,7 @@ Displays a message with feedback information to the user.
 </tr>
 <tr>
 <td title="Message">Message</td>
-<td>Text literal or expression with the message to display.</td>
+<td>Message displayed to the user.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -39,7 +39,7 @@ Displays a message with feedback information to the user.
 <td>Specifies the UI look and feel of the displayed message.</td>
 <td>Yes</td>
 <td>Info</td>
-<td>The possible values are: Info, Success, Warning, Error.</td>
+<td>The possible values are: Info, Success, Warning, and Error.</td>
 </tr>
 </tbody>
 </table>

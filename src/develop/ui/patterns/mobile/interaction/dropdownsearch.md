@@ -11,7 +11,7 @@ The Dropdown Search UI Pattern offers a choice of available options that the use
 
 **How to use the Dropdown Search UI Pattern**
 
-In this example, we create a dropdown search for a list of employees, and when an employee is selected, a message displays their employee Id. 
+In this example, we create a dropdown search for a list of employees, and when an employee is selected, a message displays their employee Id.
 
 1. In Service Studio, in the Toolbox, search for `Dropdown Search`.
 
@@ -32,7 +32,7 @@ In this example, we create a dropdown search for a list of employees, and when a
     ![](<images/dropdownsearch-4-ss.png>)
 
     The **GetEmployee** aggregate is automatically created.
-    
+
     ![](<images/dropdownsearch-6-ss.png>)
 
 1. Return to your screen by double-clicking the screen name, select the Dropdown Search widget, and on the **Properties** tab, set the mandatory properties (ItemList, Value, Text).
@@ -43,9 +43,9 @@ In this example, we create a dropdown search for a list of employees, and when a
 
 1. Add the relevant logic to the client action. 
 
-   In this example, we add a Message to the client action and in the Expression Editor enter the following logic and click **DONE**. This will display the selected employee's name and their Id. 
-    
-    ``SelectedItem.Text + "( Employee ID: " + SelectedItem.Value + ")" ``
+    In this example, we add a Message to the client action and in the Expression Editor enter the following logic and click **DONE**. This will display the selected employee's name and their Id.
+
+    `SelectedItem.Text + "( Employee ID: " + SelectedItem.Value + ")"`
 
     ![](<images/dropdownsearch-9-ss.png>)
 
@@ -59,14 +59,13 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property** |  **Description** |
+| Property | Description |
 |---|---|
-| ItemList (DropdownItem List): Mandatory| List of items to show in the dropdown.|
-| SelectedItem (DropdownItem): Optional| Defines a preselected item from the dropdown list. |
-| IsDisabled (Boolean): Optional | If True, the dropdown search is disabled. If False, the dropdown search is enabled. This is the default.|
+| ItemList (DropdownItem List): Mandatory | List of items to show in the dropdown. |
+| SelectedItem (DropdownItem): Optional | Defines a preselected item from the dropdown list. |
+| IsDisabled (Boolean): Optional | If True, the dropdown search is disabled. If False, the dropdown search is enabled. This is the default. |
 | EmptyText (Text): Optional | Text that is displayed when no items are selected. "Select an item" is the default text.|
-| SearchPrompt (Text): Optional |Text that is displayed in the Search prompt/placeholder. |
-| NoResultsText (Text): Optional |Text that is displayed when there are no results. |
-| AdvancedFormat (Text): Optional   | Enables more options beyond what's provided through the inputs. For more options, go to [Choices library](https://github.com/jshjohnson/Choices). Default value is `{}`. You can also use fuse.js options to change the search configurations. For more information on search configurations, see [Fuse](https://fusejs.io/)|
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Dropdown Search UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown Search UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown Search UI styles being applied.</li></ul> |
-  
+| SearchPrompt (Text): Optional | Text that is displayed in the Search prompt/placeholder. |
+| NoResultsText (Text): Optional | Text that is displayed when there are no results. |
+| AdvancedFormat (Text): Optional | Enables more options beyond what's provided through the inputs. For more options, go to [Choices library](https://github.com/jshjohnson/Choices). Default value is `{}`. You can also use fuse.js options to change the search configurations. For more information on search configurations, see [Fuse](https://fusejs.io/) |
+| ExtendedClass (Text): Optional | Add custom style classes to the Dropdown Search UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown Search UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown Search UI styles being applied.</li></ul> |

@@ -26,8 +26,8 @@ App Details
 Develop tab
 :   This is where you manage the modules of your application. You can also view the application's dependencies - other applications or components used by your application.
 
-Native Platforms tab
-:   In this area, you can test your mobile app and generate your mobile app for iOS or Android.
+Distribute tab
+:   In this area, you can generate your mobile app for iOS or Android. This is also where you turn on the PWA distribution of your app.
 
 Test In Browser button
 :   A quick way to test your application in a browser.

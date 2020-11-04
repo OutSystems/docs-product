@@ -28,7 +28,9 @@ This section summarizes the requirements for installing the Platform Server in y
 * Microsoft Windows Server 2019 (Standard Edition or higher edition), since Platform Server Release Jul.2019
 * Microsoft Windows Server 2016 (Standard Edition or higher edition)
 
-The supported Operating System configurations need to be deployed on bare metal or hardware virtualization technologies (e.g. VMware, KVM).
+For these Operating System versions, OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
+
+The supported Operating System configurations must be deployed on bare metal or hardware virtualization technologies (for example, VMware or KVM).
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
@@ -62,9 +64,13 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ## Cache Invalidation Service
 
-OutSystems Cache Invalidation Service requires a RabbitMQ Server version 3.7.x with Erlang version 20.x.
+OutSystems Cache Invalidation Service requires the following version of RabbitMQ Server:
 
-While installing the OutSystems Platform Server you will be provided with a script that simplifies the local installation of these two components. Alternatively, you can use an existing RabbitMQ Server and Erlang installation as long as it fulfills the same version requirements.
+* RabbitMQ Server 3.8.x with Erlang version 22.x, since Platform Server 11.9.0
+
+Earlier versions of Platform Server require RabbitMQ Server 3.7.x with Erlang version 20.x.
+
+During Platform Server installation, OutSystems provides you with a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Alternatively, you can use an existing RabbitMQ Server and Erlang installation, as long as it fulfills the same version requirements.
 
 ## Amazon EC2 considerations
 
@@ -144,7 +150,7 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you cannot have inte
 
 <div class="info" markdown="1">
 
-The installation of the IBM iAccess software is required in all Front-End and Deployment Controller server machines.
+The installation of the IBM i Access Client Solutions - Windows Application Package software is required in all Front-End and Deployment Controller server machines.
 
 The use of double-byte characters with DB2 databases is not supported.
 

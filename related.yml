@@ -190,6 +190,9 @@
     - ref/lang/auto/Class.Table Records Widget.final.md
     # Table Widget
     - ref/lang/auto/Class.Table Widget.final.md
+    - external:
+        - "How to scroll records in a table with a fixed header":
+            https://success.outsystems.com/Documentation/How-to_Guides/Front-End/How_to_scroll_records_in_a_table_with_a_fixed_header
       
 # Image Widget
 - ref/lang/auto/Class.Image Widget.final.md:
@@ -238,7 +241,12 @@
     - ref/lang/auto/Class.Go To Destination.final.md
     # Web Screen
     - ref/lang/auto/Class.Web Screen.final.md
-      
+
+- ref/lang/auto/Class.List Box Widget.final.md:
+    - ref/lang/auto/Class.Combo Box Widget.final.md
+    - develop/ui/patterns/web/controls/dropdown.md
+    - develop/ui/patterns/web/controls/dropdownselect.md
+
 # List Records Widget
 - ref/lang/auto/Class.List Records Widget.final.md:
     # Table Records Widget
@@ -282,8 +290,6 @@
       
 # Table Records Widget
 - ref/lang/auto/Class.Table Records Widget.final.md:
-    # Fetch and Display Data from the Database
-    - develop/data/query/fetch-display.md
     # List
     - ref/data/data-types/list.md
       
@@ -436,7 +442,8 @@
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroupItem.final.md:
     # ButtonGroup
     - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md
-
+    # Button Group Pattern
+    - develop/ui/patterns/web/controls/buttongroup.md
 # Checkbox
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md:
     # Switch
@@ -718,6 +725,11 @@
 -  ref/lang/auto/Class.Role.final.md:
     - develop/security/user-roles/intro.md
 
+# Run Server Action
+- ref/lang/auto/Class.Run Server Action.final.md:
+    - ref/lang/auto/Class.Run Client Action.final.md
+    - develop/reuse-and-refactor/encapsulate-logic.md
+
 #     User Exception
 -  ref/lang/auto/Class.User Exception.final.md:
     - develop/logic/exceptions/intro.md#user-exception
@@ -778,6 +790,9 @@
 #     Excel To Record List
 -  ref/lang/auto/Class.Excel To Record List.final.md:
     - ref/lang/auto/Class.Record List To Excel.final.md
+    - one-way: getting-started/create-reactive-web.md
+    - one-way: develop/data/excel-bootstrap.md
+    - one-way: develop/ui/inputs/upload.md
 
 #     Ajax Refresh
 -  ref/lang/auto/Class.Ajax Refresh.final.md:
@@ -829,8 +844,16 @@
 
 - extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md:
     - external:
-        - "Forge Component: How to Add Custom Authentication to a REST API":
+        - "Forge: How to Add Custom Authentication to a REST API":
             https://www.outsystems.com/forge/component-overview/927/how-to-add-custom-authentication-to-a-rest-api
+    - one-way: develop/data/excel-bootstrap.md
+    - one-way: develop/reuse-and-refactor/expose-and-reuse.md
+    - one-way: ref/apis/auto/httprequesthandler-api.final.md
+
+- extensibility-and-integration/rest/expose-rest-apis/customize-rest-api-responses.md:
+    - external:
+        - "Blog post: How to Implement HTTP Status Codes When Exposing a REST API in OutSystems":
+            https://www.outsystems.com/blog/posts/implementing-http-status-code-exposing-rest/
 
 # --- Managing the Applications Lifecycle > Containers ---
 
@@ -863,7 +886,7 @@
 
 # Distribute as a progressive web app (PWA)
 - deliver-mobile/distribute-pwa/intro.md:
-    - deliver-mobile/generate-and-distribute-your-mobile-app/intro.md
+    - deliver-mobile/generate-distribute-mobile-app/intro.md
     - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
 
 # Use Events to Propagate Changes From a Block to the Parent
@@ -879,12 +902,18 @@
     - managing-the-applications-lifecycle/deploy-applications/deploy-an-application.md
     - managing-the-applications-lifecycle/deploy-applications/tag-a-version.md
     - deliver-mobile/mobile-app-update-scenarios.md
-    - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
-    - deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
-    - deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
-    - setup/possible-setups.md
+    - deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
+    - deliver-mobile/generate-distribute-mobile-app/publish-apple-app-store.md
+    - deliver-mobile/generate-distribute-mobile-app/development-tests.md
+    - one-way: setup/possible-setups/intro.md
 
-    # UI Web Patterns
+# Building apps with AndroidX
+- deliver-mobile/mobile-apps-build-service/androidx.md:
+    - deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
+    - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
+    - deliver-mobile/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
+
+# UI Web Patterns
 - develop/ui/patterns/web/content/accordion/accordion.md:
     - ref/ui-patterns/web/accordion.md
     - external:
@@ -1338,6 +1367,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/CardBackground.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=14
+- develop/ui/patterns/mobile/content/carditem.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=15
 - develop/ui/patterns/mobile/content/cardsectioned.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1364,6 +1397,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Section.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=63
+- develop/ui/patterns/mobile/content/sectiongroup.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=64
 - develop/ui/patterns/mobile/content/tag.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1525,6 +1562,16 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
+- develop/ui/patterns/mobile/numbers/progresscircle.md:
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=58
+- develop/ui/patterns/mobile/numbers/progresscirclefraction.md:
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=59
 - develop/ui/patterns/mobile/utilities/aligncenter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

@@ -101,7 +101,7 @@
         - href: develop/ui/table/intro.md
         - topics:
             - href: develop/ui/table/pagination-sorting.md
-    
+  
         # Inputs
         - href: develop/ui/inputs/intro.md
         - topics:
@@ -155,9 +155,13 @@
                 - href: develop/ui/patterns/mobile/content/blankslate.md
                 - href: develop/ui/patterns/mobile/content/card.md
                 - href: develop/ui/patterns/mobile/content/cardbackground.md
+                - href: develop/ui/patterns/mobile/content/carditem.md
                 - href: develop/ui/patterns/mobile/content/cardsectioned.md
                 - href: develop/ui/patterns/mobile/content/flipcontent.md
+                - href: develop/ui/patterns/mobile/content/floatingcontent.md
+                - href: develop/ui/patterns/mobile/content/listitemcontent.md
                 - href: develop/ui/patterns/mobile/content/section.md
+                - href: develop/ui/patterns/mobile/content/sectiongroup.md
                 - href: develop/ui/patterns/mobile/content/tag.md
                 - href: develop/ui/patterns/mobile/content/tooltip.md
                 - href: develop/ui/patterns/mobile/content/useravatar.md
@@ -165,25 +169,39 @@
                 - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
                 - href: develop/ui/patterns/mobile/interaction/carousel.md
                 - href: develop/ui/patterns/mobile/interaction/datepicker.md
+                - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
+                - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
+                - href: develop/ui/patterns/mobile/interaction/floatingactions.md
+                - href: develop/ui/patterns/mobile/interaction/horizontalscroll.md
                 - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
                 - href: develop/ui/patterns/mobile/interaction/lightboximage.md
+                - href: develop/ui/patterns/mobile/interaction/notification.md
                 - href: develop/ui/patterns/mobile/interaction/rangeslider.md
                 - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
+                - href: develop/ui/patterns/mobile/interaction/search.md
                 - href: develop/ui/patterns/mobile/interaction/sidebar.md
                 - href: develop/ui/patterns/mobile/interaction/stackedcards.md
+                - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
                 - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
+                - href: develop/ui/patterns/mobile/navigation/pagination.md
+                - href: develop/ui/patterns/mobile/navigation/sectionindex.md
+                - href: develop/ui/patterns/mobile/navigation/submenu.md
                 - href: develop/ui/patterns/mobile/navigation/tabs.md
+                - href: develop/ui/patterns/mobile/navigation/timelineitem.md
+                - href: develop/ui/patterns/mobile/navigation/wizard.md
                 - href: develop/ui/patterns/mobile/numbers/badge.md
                 - href: develop/ui/patterns/mobile/numbers/counter.md
                 - href: develop/ui/patterns/mobile/numbers/iconbadge.md
+                - href: develop/ui/patterns/mobile/numbers/progressbar.md
+                - href: develop/ui/patterns/mobile/numbers/progresscircle.md
+                - href: develop/ui/patterns/mobile/numbers/progresscirclefraction.md
                 - href: develop/ui/patterns/mobile/utilities/aligncenter.md
                 - href: develop/ui/patterns/mobile/utilities/buttonloading.md
                 - href: develop/ui/patterns/mobile/utilities/centercontent.md
                 - href: develop/ui/patterns/mobile/utilities/margincontainer.md
                 - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                 - href: develop/ui/patterns/mobile/utilities/touchevents.md
-                - href: develop/ui/patterns/mobile/public-actions.md
-                - href: develop/ui/patterns/mobile/splitscreen.md            
+                - href: develop/ui/patterns/mobile/public-actions.md             
             - href: develop/ui/patterns/web/intro.md
             - topics:
                 - href: develop/ui/patterns/web/content/intro.md
@@ -283,6 +301,7 @@
     # Implement Application Logic
     - href: develop/logic/intro.md
     - topics: 
+        - href: develop/logic/expression-editor.md
         - href: develop/logic/ai-assisted-dev.md
         - href: develop/logic/actions.md
         - href: develop/logic/action-web.md
@@ -430,30 +449,28 @@
         - href: deliver-mobile/customize-mobile-app/customize-errors-screen.md
         - href: deliver-mobile/customize-mobile-app/configure-accessible-domains.md
         - href: deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
-    - href: deliver-mobile/generate-and-distribute-your-mobile-app/intro.md
+    - href: deliver-mobile/generate-distribute-mobile-app/intro.md
     - topics:
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-for-development-tests.md
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-distribute-your-mobile-app-to-a-limited-group-of-end-users.md
+        - href: deliver-mobile/generate-distribute-mobile-app/development-tests.md
+        - href: deliver-mobile/generate-distribute-mobile-app/limited-group-end-users.md
 
         # Generate and Publish Your Mobile App to the Mobile App Stores
        
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/generate-and-publish-your-mobile-app-to-the-mobile-app-stores.md
+        - href: deliver-mobile/generate-distribute-mobile-app/publish-app-stores.md
         - topics:
-            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-android-application-to-the-google-play-store.md
-            - href: deliver-mobile/generate-and-distribute-your-mobile-app/publish-your-mobile-ios-application-to-the-apple-app-store.md
+            - href: deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
+            - href: deliver-mobile/generate-distribute-mobile-app/publish-apple-app-store.md
 
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/more-information-on-generating-and-distributing-mobile-apps.md
-        - href: deliver-mobile/generate-and-distribute-your-mobile-app/configuration-native-platforms.md
+        - href: deliver-mobile/generate-distribute-mobile-app/more-information.md
+        - href: deliver-mobile/generate-distribute-mobile-app/configuration-native-platforms.md
     - href: deliver-mobile/mobile-app-update-scenarios.md
     - href: deliver-mobile/manage-distribution-options/intro.md
     - href: deliver-mobile/mobile-apps-build-service/intro.md
     - topics:
         - href: deliver-mobile/mobile-apps-build-service/android-support-library-versions.md
+        - href: deliver-mobile/mobile-apps-build-service/androidx.md
     - href: deliver-mobile/distribute-pwa/intro.md
-    #
-    # NOTE: Please keep this topic unlisted in table of content.
-    # - href: deliver-mobile/app-shield/intro.md
-    #
+    - href: deliver-mobile/app-shield/intro.md
     - href: deliver-mobile/compliance-with-third-party-licenses.md
 
 # Extensibility and Integration
@@ -469,6 +486,7 @@
         - topics:
             - href: extensibility-and-integration/artificial-intelligence/chatbot/architecture.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-faq-chatbot.md
+            - href: extensibility-and-integration/artificial-intelligence/chatbot/configuration-wizard.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-advanced-chatbot.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/get-started-custom-ui.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-outsystems-cards.md
@@ -614,7 +632,7 @@
         - href: managing-the-applications-lifecycle/deploy-applications/tag-a-version.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-an-application.md
         - href: managing-the-applications-lifecycle/deploy-applications/deployment-plans.md
-        - href: managing-the-applications-lifecycle/deploy-applications/ea-configure-site-properties-during-deploy.md
+        - href: managing-the-applications-lifecycle/deploy-applications/tp-configure-site-properties-during-deploy.md
         - href: managing-the-applications-lifecycle/deploy-applications/configure-application-settings-after-deployment.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-an-application-with-dependencies.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-a-single-module.md
@@ -639,7 +657,6 @@
         - href: managing-the-applications-lifecycle/app-feedback/user-feedback-send-mobile.md
         - href: managing-the-applications-lifecycle/app-feedback/user-feedback-send-web.md
         - href: managing-the-applications-lifecycle/app-feedback/user-feedback-handle.md
-        - href: managing-the-applications-lifecycle/app-feedback/user-feedback-add-onboard-screen.md
 
     - href: managing-the-applications-lifecycle/manage-it-teams/intro.md
     - topics:
@@ -697,7 +714,9 @@
 # Setting Up OutSystems
 - href: setup/intro.md
 - topics:
-    - href: setup/possible-setups.md
+    - href: setup/possible-setups/intro.md
+    - topics:
+        - href: setup/possible-setups/cloud-architecture.md
     - href: setup/system-requirements.md
     - href: setup/network-requirements.md
     - href: setup/default-configurations.md
@@ -969,7 +988,6 @@
                 - href: ref/ui-patterns/mobile/masterdetail-mobile.md
                 - href: ref/ui-patterns/mobile/rangeslider.md
                 - href: ref/ui-patterns/mobile/rangesliderinterval.md
-                - href: ref/ui-patterns/mobile/splitscreen.md
                 - href: ref/ui-patterns/mobile/stackedcards.md
                 - href: ref/ui-patterns/mobile/swipeevents.md
                 - href: ref/ui-patterns/mobile/tabs-mobile.md
@@ -1105,6 +1123,7 @@
                     - href: ref/ui-patterns/web/inputwithicon.md
                     - href: ref/ui-patterns/web/layout-login.md
                     - href: ref/ui-patterns/web/layout-loginsplit.md
+                    - href: ref/ui-patterns/web/layout-popup.md
                     - href: ref/ui-patterns/web/layout-sidemenu.md
                     - href: ref/ui-patterns/web/layout-topmenu.md
                     - href: ref/ui-patterns/web/lightbox-image.md

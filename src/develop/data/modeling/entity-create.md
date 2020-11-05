@@ -20,7 +20,7 @@ Alternatively, you can create entities in the Data tab:
 
 * Right-click on the Entities folder and select 'Add Entity'.  
 It's a quicker way, but with access to less information about the entity.
-* Right-click on the Entities folder and select 'Import Entities from Excel...'.
+* Right-click on the Entities folder and select 'Import New Entities from Excel...'.
 
 It's useful to create an entity and bootstrap data for it.
 

@@ -3,15 +3,15 @@ summary: Learn what is the right app for your project. Know the difference betwe
 tags: support-application_development; support-devOps; support-Infrastuture_Architecture; support-Mobile_Apps; support-webapps; support-Mobile_Apps-overview; support-webapps-overview
 ---
 
-# Choose the Right App for Your Project
+# Choose the right app for your project
 
-When creating a new app, select the type of app that best fits your users' needs. Here's a quick start to help you choose a new app in the **New Application** window:
+You can create several types of apps in OutSystems. Here's an overview to help you choose a new app in the **New Application** window:
 
 * To create an app that users run mostly in a desktop browser, select **Reactive Web App**.
 * To create an app and submit it to the Apple App Store or Google Play, as a mobile app for users to download, select **Phone App** or **Tablet App**.
 * To create a lightweight app and share it as a progressive web app (PWA) from your website and let users put the app icon on their mobile home screens, select **Phone App** or **Tablet App**.
 
-![A new app window in Service Studio](images/new-app-window-ss.png?width=600)
+![A new app window in Service Studio](images/new-app-window-ss.gif?width=600)
 
 ## What's a Reactive Web App?
 
@@ -27,7 +27,9 @@ When you develop a Reactive Web App:
 
 If you haven't developed OutSystems apps that focus on the client-side development paradigm, you can check the explanation about [Screen and Block lifecycle Events](<../develop/logic/screen-block-lifecycle-events.md>) and these notes about [best practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>).
 
-![Reactive App graph](images/mobile-vs-web-what-is-web.png)
+![Reactive Web App](images/reactive-web-app-diag.png?width=500)
+
+![Reactive Web App characteristics](images/reactive-web-app-characteristics-diag.png?width=500)
 
 
 <div class="info" markdown="1">
@@ -46,38 +48,38 @@ There are two ways you can distribute a Mobile App, as:
 
 * **Progressive web app (PWA)**. PWAs are lightweight apps that have a look and feel of native mobile apps. They're quick to distribute and install directly from your website, as they don't depend on the app stores.
 
-![Mobile and Reactive Web apps compared](images/mobile-vs-web.png)
+![Mobile apps](images/mobile-vs-web-diag.png?width=600)
 
 ## Comparison Between Reactive Web App and Mobile App
 
 Here is a table with a comparison of features between Reactive Web App and Mobile App. In a default OutSystems installation, you can create a Reactive Web App by selecting **Reactive Web App** in the **New Application** window. For Mobile App choose **Phone App** or **Tablet App**.
 
-<table border="1" cellpadding="1" cellspacing="1" markdown="1" class="mt-responsive-table" style="border:none;">
+<table cellpadding="1" cellspacing="1" markdown="1" class="mt-responsive-table" style="border:none;">
 <thead>
 <tr>
 <th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;">
-<p><span class="mt-font-size-20"><strong>Reactive Web App</strong></span></p>
-<p>![](images/mobile-vs-web-web.png?width=126)</p>
+<p><strong>Reactive Web App</strong></p>
+<p>![](images/mobile-vs-web-web-diag.png?width=60)</p>
 </th>
-<th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;"><span class="mt-font-size-20"><strong>vs</strong></span></th>
-<th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:1px solid #E7ECED;text-align:center;">
-<p><span class="mt-font-size-20"><strong>Mobile App</strong></span></p>
-<p>![](images/mobile-vs-web-mobile.png?width=126)</p>
+<th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;"><strong>vs</strong></th>
+<th class="mt-bgcolor-ffffff" scope="col" style="border-bottom:2px solid #E7ECED;text-align:center;">
+<p><strong>Mobile App</strong></p>
+<p>![](images/mobile-vs-web-mobile-diag.png?width=30)</p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="mt-bgcolor-ffffff" data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;">
+<td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;background:#fff;">
 <p> </p>
-<p>![](images/mobile-vs-web-code-reusability-web.png?width=150)</p>
+<p>![](images/mobile-vs-web-code-reusability-web-diag.png?width=50)</p>
 <p>Common logic for all devices and screen sizes.</p>
 <p> </p>
 </td>
-<td class="mt-bgcolor-ffffff" data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;"><strong>Code Reusability</strong></td>
-<td class="mt-bgcolor-ffffff" data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;">
+<td  data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;background:#fff;"><strong>Code Reusability</strong></td>
+<td  data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;background:#fff;">
 <p> </p>
-<p>![](images/mobile-vs-web-code-reusability-mobile.png?width=132)</p>
+<p>![](images/mobile-vs-web-code-reusability-mobile-diag.png?width=50)</p>
 <p>Common logic for all supported native mobile platforms, and supported browsers for PWAs.</p>
 <p> </p>
 </td>
@@ -85,7 +87,7 @@ Here is a table with a comparison of features between Reactive Web App and Mobil
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-runs-in-web.png?width=239)</p>
+<p>![](images/mobile-vs-web-runs-in-web-diag.png?width=50)</p>
 <p>A browser.<br />
 No installation is needed.</p>
 <p> </p>
@@ -93,22 +95,22 @@ No installation is needed.</p>
 <td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;"><strong>Runs in</strong></td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-runs-in-mobile.png?width=116)</p>
+<p>![](images/mobile-vs-web-runs-in-mobile-diag.png?width=50)</p>
 <p>Native mobile apps run in Android and iOS devices. PWAs run in any device with a supported browser.</p>
 <p> </p>
 </td>
 </tr>
 <tr>
-<td class="mt-bgcolor-ffffff" data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;">
+<td  data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;background:#fff;">
 <p> </p>
-<p>![](images/mobile-vs-web-user-experience-web.png?width=240)</p>
+<p>![](images/mobile-vs-web-user-experience-web-diag.png?width=50)</p>
 <p>Responsive layout for all screen sizes and types.</p>
 <p> </p>
 </td>
-<td class="mt-bgcolor-ffffff" data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;"><strong>User Experience</strong></td>
-<td class="mt-bgcolor-ffffff" data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;">
+<td  data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;vertical-align:middle;background:#fff;"><strong>User Experience</strong></td>
+<td  data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;text-align:center;background:#fff;">
 <p> </p>
-<p>![](images/mobile-vs-web-user-experience-mobile.gif)</p>
+<p>![](images/mobile-vs-web-user-experience-mobile-diag.png?width=50)</p>
 <p>Dedicated mobile UI patterns and experiences.</p>
 <p> </p>
 </td>
@@ -116,14 +118,14 @@ No installation is needed.</p>
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-performance-web.png?width=232)</p>
+<p>![](images/mobile-vs-web-performance-web-diag.png?width=120)</p>
 <p>Performance designed for the client side, with smart mechanisms to optimize the data transfer.</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;"><strong>Performance</strong></td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-performance-mobile.png?width=164)</p>
+<p>![](images/mobile-vs-web-performance-mobile-diag.png?width=120)</p>
 <p>Performance designed for the client side, with smart mechanisms to optimize the data transfer.</p>
 <p> </p>
 </td>
@@ -131,16 +133,16 @@ No installation is needed.</p>
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-access-device-web.png?width=187)</p>
+<p>![](images/mobile-vs-web-access-device-web-diag.png?width=50)</p>
 <p>HTML5 supported device capabilities.</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;">
-<p><strong>Access to device hardware</strong></p>
+<strong>Access to device hardware</strong>
 </td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-access-device-mobile.png?width=172)</p>
+<p>![](images/mobile-vs-web-access-device-mobile-diag.png?width=50)</p>
 <p>Native mobile apps access a range of device capabilities through Cordova plugins. PWAs use dedicated plugins, which by design can access only hardware that the browser running the PWA is allowed to access.</p>
 <p> </p>
 </td>
@@ -148,14 +150,14 @@ No installation is needed.</p>
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-offline-web.png?width=240)</p>
+<p>![](images/mobile-vs-web-offline-web-diag.png?width=50)</p>
 <p>No offline capabilities.*</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;"><strong>Offline capabilities</strong></td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-offline-mobile.png?width=180)</p>
+<p>![](images/mobile-vs-web-offline-mobile-diag.png?width=50)</p>
 <p>For storing offline data, native mobile apps use local storage and PWAs use browser storage.</p>
 <p> </p>
 </td>
@@ -163,14 +165,14 @@ No installation is needed.</p>
 <tr>
 <td data-th="Web" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-deployments-web.png?width=240)</p>
+<p>![](images/mobile-vs-web-deployments-web-diag.png?width=50)</p>
 <p>Updates are automatic when users refresh the browser page.</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;vertical-align:middle;"><strong>Deployment and updates</strong></td>
 <td data-th="Mobile" style="border:none;border-bottom:1px solid #E7ECED;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-deployments-mobile.png?width=143)</p>
+<p>![](images/mobile-vs-web-deployments-mobile-diag.png?width=50)</p>
 <p>Native mobile apps can update automatically, and users need to install a new version only when you change the native shell. PWAs update automatically when the app detects a new version.</p>
 <p> </p>
 </td>
@@ -178,14 +180,14 @@ No installation is needed.</p>
 <tr>
 <td data-th="Web" style="border:none;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-distribution-web.png?width=264)</p>
+<p>![](images/mobile-vs-web-distribution-web-diag.png?width=40)</p>
 <p>Share the app link with users.</p>
 <p> </p>
 </td>
 <td data-th="vs" style="border:none;background:#fff;text-align:center;vertical-align:middle;"><strong>Distribution</strong></td>
 <td data-th="Mobile" style="border:none;background:#fff;text-align:center;">
 <p> </p>
-<p>![](images/mobile-vs-web-distribution-mobile.png?width=265)</p>
+<p>![](images/mobile-vs-web-distribution-mobile-diag.png?width=45) ![](images/mobile-vs-web-distribution-web-diag.png?width=30)</p>
 <p>You can distribute native mobile apps in-house or through the app stores. Users can run a PWA directly from your website, and add the app icon to the device home screen. </p>
 <p> </p>
 </td>

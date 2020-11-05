@@ -11,7 +11,7 @@ To update list items in Reactive Web and Mobile:
 
 1. Display the list on a screen. 
 1. Add a button or link that updates the list. 
-1. In the action associated with the button or link, drag the Execute Action from the toolbox to the action flow. 
+1. In the action associated with the button or link, drag the *Run Client Action* from the toolbox to the action flow. 
 1. Select one of the following system actions to manipulate elements in the list variable bound with the widget displayed on the screen: 
     * ListAppend
     * ListAppendAll

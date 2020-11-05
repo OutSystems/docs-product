@@ -3,9 +3,9 @@ summary: Protect your mobile apps against tampering. OutSystems AppShield harden
 tags: support-application_development; runtime-mobile;
 ---
 
-# OutSystems AppShield for native mobile apps
+# Harden the protection of mobile apps with AppShield
 
-OutSystems AppShield is a feature that lets you harden the protection of your native Android and iOS apps. OutSystems AppShield is fully integrated with Mobile Apps Build Service (MABS) builds and adds protection at runtime and at rest.
+OutSystems AppShield lets you harden the protection of your native Android and iOS apps. OutSystems AppShield integrates with the Mobile Apps Build Service (MABS) version 6 builds and adds protection at runtime and at rest. For more information about the supported mobile operating systems and stacks, check out [MABS and mobile operating systems lifecycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions).
 
 <div class="info" markdown="1">
 
@@ -17,9 +17,9 @@ To use OutSystems AppShield, you need to have a license. If you haven't got it a
 
 To protect your apps with AppShield, you need to meet the following requirements.
 
-* You installed the AppShield plugin in your environment. You can [download the plugin from this link](https://drive.google.com/drive/folders/1bkb7LIV-LVVePniK-Zvb4gkfRYC7SE8E) after you have access to it.
+* You installed the AppShield plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge. 
 * You have a license for AppShield.
-* You're using MABS 6.1 and later.
+* You're using MABS 6.1 or later.
 
 Additionally:
 

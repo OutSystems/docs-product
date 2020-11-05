@@ -1,3 +1,8 @@
+---
+summary: Reference information on the Image widget for displaying an image on the screen from a defined source.
+tags: outsystems-designing-screens; reference; designing-screens; image-widget; adding-image
+---
+
 Displays an image in the screen or block. The image source can be one of the following:
 
 * A local image included in the module as a resource

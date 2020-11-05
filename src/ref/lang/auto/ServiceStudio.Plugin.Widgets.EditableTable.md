@@ -22,7 +22,7 @@ Displays content in a tabular layout and allows users to edit and create records
 <tbody>
 <tr>
 <td title="Name">Name</td>
-<td>Identifies an element in the scope where it is defined, like a screen, action, or module.</td>
+<td>Identifies an element in the scope where it is defined, such as a screen, action, or module.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -64,7 +64,7 @@ Displays content in a tabular layout and allows users to edit and create records
 </tr>
 <tr>
 <td title="ShowHeader">Show Header</td>
-<td>Set as Yes to display the header row of the table.</td>
+<td>Set to Yes to display the header row of the table.</td>
 <td></td>
 <td>Yes</td>
 <td></td>
@@ -85,7 +85,7 @@ Displays content in a tabular layout and allows users to edit and create records
 </tr>
 <tr>
 <td title="DeleteConfirmationMessage">Delete Confirmation Message</td>
-<td>Text literal or expression to be displayed to users to confirm the delete record action.</td>
+<td>Text literal or expression that is displayed to users to confirm the delete record action.</td>
 <td></td>
 <td></td>
 <td></td>
@@ -112,7 +112,7 @@ Displays content in a tabular layout and allows users to edit and create records
 <td>Value of the attribute.</td>
 <td></td>
 <td></td>
-<td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
+<td>You can type the value directly or enter expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
 </tr>
 </tbody>
 </table>
@@ -131,13 +131,13 @@ Displays content in a tabular layout and allows users to edit and create records
 <tbody>
 <tr>
 <td title="OnTableRowSave">On Row Save</td>
-<td>Screen action to be executed to persist new records or record updates.</td>
+<td>Screen action that is executed to persist new records or record updates.</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td title="OnTableRowDelete">On Row Delete</td>
-<td>Screen action to be executed when a record is removed.</td>
+<td>Screen action that is executed when a record is removed.</td>
 <td></td>
 <td></td>
 </tr>
@@ -159,7 +159,7 @@ Displays content in a tabular layout and allows users to edit and create records
 <tbody>
 <tr>
 <td>Id</td>
-<td>Identifies the widget instance at runtime (HTML 'id' attribute). You can use it in JavaScript and Extended Properties.</td>
+<td>Identifies the widget instance at runtime (HTML 'ID' attribute). You can use it in JavaScript and Extended Properties.</td>
 <td>Yes</td>
 <td>Text</td>
 <td></td>

@@ -25,7 +25,7 @@ These are the requirements you need to meet to use the Language Analysis compone
 
 * You installed [OutSystems.AI Language Analysis for Reactive Web App](https://www.outsystems.com/forge/component-overview/7316/outsystems-ai-language-analysis-reactive) in your environment.
 
-* You configured the component, as instructed in [Configure the Language Analysis](#configure-the-language-analysis-component)
+* You configured the component, as instructed in [Configure the Language Analysis](#configure-the-language-analysis-component).
 
 ## Get the settings from Azure
 
@@ -42,7 +42,7 @@ To configure your component you need settings from Azure for each component. Her
 
 Configure the module in Service Center with the settings from your Azure resources.
 
-1. Go to Service Studio > **Factory** > **Modules**.
+1. In Service Center, go to **Factory** > **Modules**.
 
 1. In the Name field enter **AzureCognitiveServicesConnector** and click **Filter**. The connector name shows in the results.
 
@@ -60,7 +60,7 @@ Configure the module in Service Center with the settings from your Azure resourc
 
 ## Language Analysis features
 
-Here is what you can do with the Language Analysis component.
+Here's what you can do with the Language Analysis component.
 
 ### Key phrase detection
 
@@ -105,11 +105,11 @@ The **GetLanguageFromText** Server Action receives an input parameter, Text, and
 
 ![Block for language detection, with parameters](images/text-analysis-detect-language-text.png)
 
-### Spellcheck
+### Spell-check
 
 <div class="info" markdown="1">
 
-Spellchecking UI block is currently not available in Reactive App. The team is working on it!
+Spell-checking is currently not available in Reactive Apps. The team is working on it!
 
 </div>
 
@@ -126,19 +126,19 @@ The user can either select a suggestion or ignore it. Once ignored, the suggesti
 
 ![Spellcheck in action](images/text-analysis-gif1.gif)
 
-Additionally, you can use the just **RunSpellChecker** Server Action, without the Block. Drag the Server Action to the logic flow and enter the input parameters. Aan add additional logic to the flow after receiving the output structure.
+Additionally, you can use the just **RunSpellChecker** Server Action, without the Block. Drag the Server Action to the logic flow and enter the input parameters. Add logic to the flow after receiving the output structure.
 
 ### Speech to text conversion
 
 The speech to text feature accepts audio files and outputs a transcription. The feature uses the **SpeechToText** Server Action that receives the following input parameters:
 
-* **Audio File** - the input file for transcription. It can either be a URL or a binary file. The content within the file must be short utterances The duration of the entire audio file has to be less than 15 seconds with only 10 seconds of actual, recorded audio content.
+* **Audio File** – The input file for transcription. It can either be a URL or a binary file. The content within the file must be short utterances The duration of the entire audio file has to be less than 15 seconds with only 10 seconds of actual, recorded audio content.
 
-* **Audio Format** - the format of the input audio file. Mandatory for binary files. The supported audio formats are WAV and OGG. For more information abut the formats see [Speech-to-text REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text#audio-formats) by Microsoft.
+* **Audio Format** – The format of the input audio file. Mandatory for binary files. The supported audio formats are WAV and OGG. For more information abut the formats see [Speech-to-text REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text#audio-formats) by Microsoft.
 
-* **Language Code** - the language that the audio file is in. You can check the [list of supported language codes](https://docs.microsoft.com/en-US/azure/cognitive-services/speech-service/language-support#speech-to-text).
+* **Language Code** – The language that the audio file is in. You can check the [list of supported language codes](https://docs.microsoft.com/en-US/azure/cognitive-services/speech-service/language-support#speech-to-text).
 
-* **Profanity** - the condition specifying how to handle profanity in the results. Accepted values are **masked** (default), which replaces profanity with asterisks, **removed**, which removes all profanity from the result, or **raw**, which includes the profanity in the result.
+* **Profanity** – The condition specifying how to handle profanity in the results. Accepted values are **masked** (default), which replaces profanity with asterisks, **removed**, which removes all profanity from the result, or **raw**, which includes the profanity in the result.
 
 ![Server Action for converting speech to text](images/text-analysis-speech-to-text.png)
 
@@ -152,34 +152,34 @@ Use **GetTextTranslation** and **GetAlternativeTranslations** Server Actions fro
 
 Use **GetTextTranslation** Server Action to translate text. The Action has the following input parameters:
 
-* **Text** - The source text that you want to translate.
-* **FromLanguageCode** - ISO 639-1 code of the source language.
-* **ToLanguageCode** - ISO 639-1 code of the target language.
+* **Text** – The source text that you want to translate.
+* **FromLanguageCode** – ISO 639-1 code of the source language.
+* **ToLanguageCode** – ISO 639-1 code of the target language.
 
 The output parameters are:
 
-* **TranslatedText** - Translation of the source text.
-* **LanguageCode** - ISO 639-1 code of the source language.
-* **Confidence** - The percentage of confidence in the identified language. If you don't supply **FromLanguageCode**, the component identifies the language automatically.  
+* **TranslatedText** – Translation of the source text.
+* **LanguageCode** – ISO 639-1 code of the source language.
+* **Confidence** – The percentage of confidence in the identified language. If you don't supply **FromLanguageCode**, the component identifies the language automatically.  
 
 #### Translate words
 
 Use the **GetAlternativeTranslations** Server Action to translate words. The Action has the following input parameters:
 
-* **Text** - The source word for translation.
-* **FromLanguageCode** - ISO 639-1 code of the source language.
-* **ToLanguageCode** - ISO 639-1 code of the target language.
+* **Text** – The source word for translation.
+* **FromLanguageCode** – ISO 639-1 code of the source language.
+* **ToLanguageCode** – ISO 639-1 code of the target language.
 
 The output parameter is:
 
-* **AlternativeTranslations** - A list with parts of speech, back-translation, and alternative translations for the target language. It also contains some idiomatic phrases.
+* **AlternativeTranslations** – A list with parts of speech, back-translation, and alternative translations for the target language. It also contains some idiomatic phrases.
 
 ### Entity detection
 
 Drop the **EntitiesHighlight** Block to your Screen and enter the two mandatory input parameters:
 
-* **Text** – The text in which you want to detect key phrases
-* **LanguageCode** – A two-letter code representing the language that follows the ISO 639-1 standard of language codes
+* **Text** – The text in which you want to detect key phrases.
+* **LanguageCode** – A two-letter code representing the language that follows the ISO 639-1 standard of language codes.
 
 ![Entity detection in Block](images/text-analysis-entity-detection-block.png)
 
@@ -216,4 +216,4 @@ This is the overview of what you can do with the component, as well and the Azur
 
 ## Language Analysis for Traditional Web App
 
-[OutSystems.AI Language Analysis for Traditional Web App](https://www.outsystems.com/forge/component-overview/5877/text-analysis) is available from Forge,.
+[OutSystems.AI Language Analysis for Traditional Web App](https://www.outsystems.com/forge/component-overview/5877/text-analysis) is available from Forge.

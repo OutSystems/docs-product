@@ -1,25 +1,44 @@
 ---
+summary: An expression is composed of operands and operators. Edit the expression in the expression editor or inline. Show the value of the expression in the expression widget. 
 tags: 
 ---
 
 # Expressions
 
-An Expression is composed of [operands](<operands.md>) and [operators](<operators.md>). It may be edited in one of the following ways:
+An expression consists of operands and operators, or just one operand. For example, **n + 1** is an expression with two operands, **n** and **1**, joined by the addition operator +. Here is how you can edit expressions and show the expression values.
 
-* Typed inline: type the expression in the Expression property box. By using the drop-down list, you can access the variables declared so far. 
+* Use the [expression editor](../../../develop/logic/expression-editor.md) to **edit expressions**. The expression editor shows you available elements. It automatically completes the text and shows suggestions after you press **Ctrl+Space**.
 
-* Use the Expression editor: to launch this editor, simply use the drop-down in the Expression property box, or double-click the Expression property or the widget element itself. 
+    ![Expression editor](images/expression-editor-ss.png?width=600)
 
-## Handling an expression
+* **Edit expressions** inline in the properties of elements.
 
-* There are many functions to manipulate the type `Text`, but the only operand that can be used directly over text is "+", which concatenates the left operand (string) with the right operand (also a string). 
+    ![Expression inline](images/expression-inline-ss.png?width=400)
 
-* You cannot use any of the numeric operators to handle the types `Date`, `Time`, and `DateTime`. There are specific [built-in functions](<../../lang/auto/builtinfunction.Date and Time.final.md>) to handle these types. 
+* To **show the result** of an expression, use the [expression widget](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md). This is similar to the **print** command in other programming languages.
 
-* You cannot make any calculation on the type `BinaryData`. 
+    ![Expression widget](images/expression-widget-ss.png?width=400)
 
-* You cannot make any calculation on the type `Identifier`. There are specific [built-in functions](<../../lang/auto/builtinfunction.Data Conversion.final.md>) to handle this type. 
+<div class="info" markdown="1">
 
-* You can only use the operators "=" and "&lt;&gt;" for the type `Record`. 
+We've been working on this article. Please let us know how useful this new version is by voting.
 
-* You cannot make any calculations on the type `Record List`. 
+</div>
+
+## Notes
+
+Here are some notes about using expressions.
+
+* You can use  many functions to manipulate the type Text, however, you can only use the  **+** (addition) operand with type Text. 
+
+    Example: `"Hello, " + UserName`, where the value of **UserName** is **Billy**, returns `"Hello, Billy!"`. 
+
+* You can use the [built-in functions](<../../lang/auto/builtinfunction.Date and Time.final.md>) to perform various operations on the types **Date**, **Time**, and **DateTime**.
+
+    Example: `AddDays(#2020-01-01 00:00:00#, 90)`. **AddDays** is a function that adds **n** days to a Date Time value. Date Time is here a literal `#2020-01-01 00:00:00#`. The expression returns `#2020-03-31 00:00:00#`.
+
+* You can only use the operators **=** and **&lt;&gt;** (equality operators) for the type `Record`.
+
+* For the type **Identifier**, use the [built-in functions](<../../lang/auto/builtinfunction.Data Conversion.final.md>). 
+
+* The types **BinaryData** and **Record List** don't support calculations.

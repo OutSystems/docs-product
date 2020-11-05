@@ -1,5 +1,6 @@
 ---
-tags: runtime-mobileandreactiveweb;
+summary: Reference information on the List widget for allowing users to get a list of records on a screen.
+tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; list-widget
 ---
 
 Use the List widget to display a simple list, for example a list of Expressions, or to display more complex items by adding a [List Item widget](ServiceStudio.Plugin.NRWidgets.ListItem.final.md). List requires a source to populate the item.

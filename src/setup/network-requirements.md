@@ -44,7 +44,7 @@ The table below details the ports that need to be accessible in each server of a
 |Development Tools|Front-End|80|TCP|Deploy applications to the environment|
 |Development Tools|Front-End|443|TCP|Deploy applications to the environment|
 |Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
-|Front-End|Controller|5672|TCP|Cache Invalidation Service connection|
+|Front-End|Controller (by default)<br/>— Depends on where the Cache Invalidation Service/RabbitMQ is installed.|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
 |Front-End|SQL Server / Oracle|1433 / 1521|TCP|Database connection|
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service connection|
@@ -84,6 +84,28 @@ Even though OutSystems is built to scale horizontally, you need to consider the 
 
 As an example, if you are using Amazon RDS as your database server and running the Platform Server on your own infrastructure, the application’s performance will be degraded.
 
+### Experience Builder
+
+[Experience Builder](https://experiencebuilder.outsystems.com/) must be able to connect to the environment where you want Experience Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
+
+Alternatively, ensure that the front ends of the environment used with Experience Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+experiencebuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+
+### Workflow Builder
+
+[Workflow Builder](http://workflowbuilder.outsystems.com/) must be able to connect to the environment where you want Workflow Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
+
+Alternatively, ensure that the front ends of the environment used with Workflow Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+workflowbuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+
+Workflow Builder needs to be able to connect directly to LifeTime via TCP using https, port 443.
+
 ## Network infrastructure requirements
 
 ### LifeTime
@@ -108,3 +130,4 @@ To use [Architecture Dashboard](https://architecture.outsystems.com), the Archit
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
 LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| Architecture Dashboard LifeTime plugin. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work).
+ 

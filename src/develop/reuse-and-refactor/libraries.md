@@ -5,7 +5,7 @@ tags: runtime-mobileandreactiveweb
 
 # Libraries
 
-A Library is a module type that helps you lay the foundations of your application. Libraries have a direct fit in the **Foundation Layer** of the [4 Layer Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) architecture tool and allow you to reduce the number of dependencies in a given environment.
+A Library is a module type that helps you lay the foundations of your application. Libraries have a direct fit in the **Foundation Layer** of the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) architecture tool and allow you to reduce the number of dependencies in a given environment.
 
 <div class="info" markdown="1">
 
@@ -57,7 +57,7 @@ The elements that you can use in Libraries are enforced both in Service Studio e
 Considering the architectural philosophy behind Libraries, some concepts must be approached differently. Take the following into account when creating a Library:
 
 * Libraries can only reference elements from other Libraries or from Extensions. However, you can still reference System actions.
-* Libraries can only access Site Properties in read-only mode. The effective values of Site Properties can still be modified via Service Center, or via LifeTime when the ["Configure Site Properties during deployment" early access feature](../../managing-the-applications-lifecycle/deploy-applications/ea-configure-site-properties-during-deploy.md) is enabled.
+* Libraries can only access Site Properties in read-only mode. The effective values of Site Properties can still be modified via Service Center, or via LifeTime when the [technical preview "Configure Site Properties during deployment"](../../managing-the-applications-lifecycle/deploy-applications/tp-configure-site-properties-during-deploy.md) is enabled.
 * By design, these elements are not available in Libraries:
     * Screens
     * Service Actions

@@ -5,6 +5,12 @@ tags: support-Application_Lifecycle
 
 # Deploying an Application to a Docker Container
 
+<div class="warning" markdown="1">
+
+Container deployment is available as an [Early Access Program](<https://www.outsystems.com/goto/technical-preview>).
+
+</div>
+
 <div class="info" markdown="1">
 
 **Before you start**, make sure that:

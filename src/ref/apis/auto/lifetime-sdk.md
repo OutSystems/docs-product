@@ -118,7 +118,7 @@ WrapTitle
 
 HideScrollbars
 :   Type: optional, Boolean.  
-    If True, no scrollbars are shown when necessary.
+    If True, no scroll bars are shown when necessary.
 
 JustifyContent
 :   Type: optional, Boolean.  

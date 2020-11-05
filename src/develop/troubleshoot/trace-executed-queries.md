@@ -41,9 +41,9 @@ Do the following:
 
 1. Go to the Factory Configuration application (`https://<environment_name>/FactoryConfiguration`).
 
-1. Enable the **Add Query Origin to Generated SQL** setting under "Compiler".
+1. Enable the **Add Query Origin to Generated SQL** setting under "Publish".
     
-    ![](images/fc-add-query-origin.png)
+    ![](images/add-query-origin-fc.png)
 
 1. Click **Apply**.
 

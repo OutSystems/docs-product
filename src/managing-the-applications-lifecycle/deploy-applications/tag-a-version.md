@@ -50,7 +50,7 @@ To tag the mobile app, do the following:
 
 The mobile app is now tagged and can be [deployed](<deploy-an-application.md>) to Quality at any time.
 
-If you need to install and test the tagged application version in a mobile device still in the Development environment, you can [generate a new mobile package](../../deliver-mobile/generate-and-distribute-your-mobile-app/intro.md) before proceeding with the deploy to Quality. Otherwise, OutSystems generates a new mobile package during the deployment process.
+If you need to install and test the tagged application version in a mobile device still in the Development environment, you can [generate a new mobile package](../../deliver-mobile/generate-distribute-mobile-app/intro.md) before proceeding with the deploy to Quality. Otherwise, OutSystems generates a new mobile package during the deployment process.
 
 #### Mobile package versions { #mobile-package-version }
 

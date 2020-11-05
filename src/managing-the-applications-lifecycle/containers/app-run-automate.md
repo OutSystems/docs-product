@@ -5,6 +5,12 @@ tags: support-Application_Lifecycle
 
 # Deploy an Application to Containers using an Automated Deployment Tool
 
+<div class="warning" markdown="1">
+
+Container deployment is available as an [Early Access Program](<https://www.outsystems.com/goto/technical-preview>).
+
+</div>
+
 <div class="info" markdown="1">
 
 **Before you start**, make sure that:

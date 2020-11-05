@@ -7,7 +7,7 @@ summary: Use the Margin Container and easily add symmetrical padding around a co
 
 You can use the Margin Container UI Pattern to add symmetrical padding around a container.
 
-![](<images/margincontainer-4.png>)
+![](<images/margincontainer-1-ss.png>)
 
 **How to use the Margin Container UI Pattern**
 
@@ -15,17 +15,19 @@ You can use the Margin Container UI Pattern to add symmetrical padding around a 
 
     The Margin Container widget is displayed.
 
-    ![](<images/margincontainer-1-ss.png>)
+    ![](<images/margincontainer-2-ss.png>)
 
 1. From the Toolbox, drag the Margin Container widget into the Main Content area of your application's screen.
 
-    ![](<images/margincontainer-2-ss.png>)
-
-1. Add the relevant content to the MarginContainer placeholder.
-
-    In this example we add an image and some text.
-
     ![](<images/margincontainer-3-ss.png>)
+
+    You can add as many Margin Container widgets as you want. In this example, we add 2.
+
+1. Add the relevant content to the Margin Container placeholder.
+
+    In this example we add an image widget to each of the placeholders and on the **Properties** tab, import an image using the **Image** dropdown.
+
+    ![](<images/margincontainer-4-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

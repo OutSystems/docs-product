@@ -23,6 +23,8 @@ You can change the Attribute used for sorting.
 1. In the **Sort Attribute** drop-down combo box select the Attribute for sorting.
 
     ![Pagination logic](<images/table-sort-attribute-ss.png?width=370>)
+    
+    **Note.** With nested structure as the table **Source** variable, to select a nested item as **Sort Attribute**, the **Data Type** of the **Source** needs to be a **List of Record** with your structure. Also, when using a structure **List** instead of **Record List**, you can only select the first level attributes as the **Sort Attribute**.
 
 1. Publish the module.
 

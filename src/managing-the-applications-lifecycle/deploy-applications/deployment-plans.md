@@ -11,7 +11,7 @@ A deployment plan can contain:
 * Applications
 * Version tag information
 * Deployment notes
-* Settings like [Site Property values](ea-configure-site-properties-during-deploy.md)
+* Settings like [Site Property values](tp-configure-site-properties-during-deploy.md)
 
 You create deployment plans in LifeTime in the **Applications** screen.
 

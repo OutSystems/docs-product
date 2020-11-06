@@ -832,6 +832,13 @@
         - "Forge Component: How to Add Custom Authentication to a REST API":
             https://www.outsystems.com/forge/component-overview/927/how-to-add-custom-authentication-to-a-rest-api
 
+- extensibility-and-integration/rest/expose-rest-apis/customize-rest-urls.md:
+    - external:
+        - "Best practices for REST API design (Stack Overflow blog)":
+            https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+        - "5 Basic REST API Design Guidelines (RestCase blog)":
+            https://blog.restcase.com/5-basic-rest-api-design-guidelines/
+
 # --- Managing the Applications Lifecycle > Containers ---
 
 - managing-the-applications-lifecycle/containers/intro.md:

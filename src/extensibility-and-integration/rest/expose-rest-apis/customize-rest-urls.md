@@ -69,12 +69,18 @@ Default Endpoint  |  URL Path  |  Customized Endpoint
 ---|---|---  
 `GET /PhoneAPI/rest/v1/GetContactAddresses` | `/Contacts/{Id}/Addresses` | `GET /PhoneAPI/rest/v1/Contacts/{Id}/Addresses`
 
+## Recommendations for REST API URLs
+
+* You shouldn't end a customized URL with a forward slash ("/") character. It doesn't have an associated meaning and it's a common practice to omit it.
+
+* There are several common naming conventions for REST API resources, such as "camelCase" and "snake_case". You should follow the same naming convention for all the URLs of your REST API.
+
 ## Important remarks
 
 * Due to a .NET limitation, the last part of the URL — the part after the last "/" (slash) character — can't contain a "." (period) character, otherwise method calls won't work.
 
-* You can't use the reserved characters "?" and "=" in custom REST URLs of exposed REST API methods.  
-    These characters belong in the query string part of URLs (the part of the URL that starts with a "?" character), and the platform manages the query string part of URLs in exposed REST URL methods.
+* You can't use the reserved characters "-" (hyphen), ";" (semicolon), "?" (question mark), and "=" (equal sign) in custom REST URLs of exposed REST API methods.  
+    The "?" and "=" characters belong in the query string part of URLs (the part of the URL that starts with a "?" character), and the platform manages the query string part of URLs in exposed REST URL methods.
 
 * When calling an exposed REST API method you must provide any input parameters with the **Receive In** property set to "URL" that aren't included in the custom URL as part of the query string.
 

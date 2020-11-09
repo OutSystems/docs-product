@@ -915,26 +915,30 @@
                 # Logic Tools
                 - href: ref/logic/implementing-logic/logic-tools/intro.md 
                 - topics:
-                    - href: ref/lang/auto/Class.Aggregate.final.md
-                    - href: ref/lang/auto/Class.Assign.final.md
+                    - href: ref/lang/auto/Class.Start.final.md
                     - href: ref/lang/auto/Class.Run Client Action.final.md
                     - href: ref/lang/auto/Class.Run Server Action.final.md
-                    - href: ref/lang/auto/Class.JavaScript.final.md
+                    - href: ref/lang/auto/Class.Refresh Data.final.md
+                    - href: ref/lang/auto/Class.Aggregate.final.md
+                    - href: ref/lang/auto/Class.SQL.final.md
+                    - href: ref/lang/auto/Class.If.final.md
+                    - href: ref/lang/auto/Class.Switch.final.md
+                    - href: ref/lang/auto/Class.For Each.final.md
+                    - href: ref/lang/auto/Class.Assign.final.md
+                    - href: ref/lang/auto/Class.Record List To Excel.final.md
+                    - href: ref/lang/auto/Class.Excel To Record List.final.md
                     - href: ref/lang/auto/Class.JSON Deserialize.final.md
                     - href: ref/lang/auto/Class.JSON Serialize.final.md
-                    - href: ref/lang/auto/Class.Refresh Data.final.md
-                    - href: ref/lang/auto/Class.Message.final.md
-                    - href: ref/lang/auto/Class.Destination.final.md
-                    - href: ref/lang/auto/Class.If.final.md
-                    - href: ref/lang/auto/Class.For Each.final.md
-                    - href: ref/lang/auto/Class.Switch.final.md
-                    - href: ref/lang/auto/Class.Comment.final.md
                     - href: ref/lang/auto/Class.Exception Handler.final.md
                     - href: ref/lang/auto/Class.Raise Exception.final.md
+                    - href: ref/lang/auto/Class.Comment.final.md             
+                    - href: ref/lang/auto/Class.Message.final.md
+                    - href: ref/lang/auto/Class.Destination.final.md
+                    - href: ref/lang/auto/Class.Download.final.md
+                    - href: ref/lang/auto/Class.JavaScript.final.md 
                     - href: ref/lang/auto/Class.Trigger Event.final.md
-                    - href: ref/lang/auto/Class.End.final.md
-                    - href: ref/lang/auto/Class.Start.final.md
-
+                    - href: ref/lang/auto/Class.End.final.md  
+                
         # Interfaces
         - href: ref/interfaces/intro.md
         - topics:

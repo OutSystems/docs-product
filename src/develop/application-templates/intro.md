@@ -17,7 +17,7 @@ There the following types of application templates:
 
 **Reactive Web App**, **Phone App**, and **Tablet App** are the built-in application templates that OutSystems creates and maintains. They use the [OutSystems UI](https://outsystemsui.outsystems.com/outsystemsuiwebsite/) and let you use the compatible theme, patterns, screen templates, and other UI components.
 
-![App Templates in the New Application widow](images/app-templates.png?width=700)
+![App Templates in the New Application window](images/app-templates.png?width=700)
 
 ### Custom application templates
 

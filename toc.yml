@@ -297,6 +297,13 @@
         - topics:
             - href: develop/ui/multilingual/multilingual-web.md
             - href: develop/ui/multilingual/translations-editor.md
+
+        # Multilingual Technical Preview
+        - href: develop/ui/multilingual-tp/intro.md
+        - topics:
+            - href: develop/ui/multilingual-tp/translate-your-app.md
+            - href: develop/ui/multilingual-tp/translation-editor.md
+            - href: develop/ui/multilingual-tp/translation-management.md
         
     # Implement Application Logic
     - href: develop/logic/intro.md

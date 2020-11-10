@@ -7,6 +7,12 @@ tags: runtime-traditionalweb; support-application_development
 
 Besides the language that your Module was designed in (the default language) you may add other languages for which your Module is translated and executed. Each language is specified by its **Locale** which is defined by the **primary language** or the **primary language and the region**, as some languages vary from region to region.
 
+<div class="info" markdown="1">
+
+These instructions are for translating Traditional Web Apps only. For Reactive Web and Mobile Apps see [Technical Preview: Multilingual apps](../multilingual-tp/intro.md).  
+
+</div>
+
 You can translate the following elements of your Module:
 
 * Text in the screens

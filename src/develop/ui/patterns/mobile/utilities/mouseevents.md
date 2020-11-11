@@ -9,51 +9,65 @@ You can use the Mouse Events UI Pattern when the user needs to select elements o
 
 ![](images/mouseevents-1-ss.png)
 
-## How to use the Mouse Events UI Pattern
-
-The following example shows how you can use the Mouse Events UI pattern to increase a number when a button is clicked.
+The following example shows how you can use the Touch Events UI pattern to display the distance the mouse is dragged left and right across the screen.
 
 1. In Service Studio, in the Toolbox, search for `Mouse Events`.
 
-    The Mouse Events widget is displayed.
+    The Touch events widget is displayed.
 
-    ![](<images/mouseevents-2-ss.png>)
+    ![](images/mouseevents-2-ss.png)
 
-1. From the Toolbox, drag the Mouse Events widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the Touch Events widget into the Main Content area of your application's screen.
 
-    ![](<images/mouseevents-3-ss.png>)
+    ![](images/mouseevents-3-ss.png)
 
-1. Add a local variable by right-clicking on your screen name and selecting **Add Local Variable**.
+1. From the Toolbox, drag the Center Content widget into the Main Content area of your screen.
+ 
+    ![](images/touchevents-3-ss.png)
 
-    ![](images/mouseevents-4-ss.png)
+1. On the **Properties** tab, enter a name in the **Name** property. In this example, we enter `card`.
 
-1. Enter a name, a data type, and a default value for the new variable. In this example, we enter `Number`, `Integer`, and `0` respectively.
+    ![](images/touchevents-4-ss.png)
 
-    ![](images/mouseevents-5-ss.png)
+1. Add 2 local variables by right-clicking on your screen name and selecting **Add Local Variable**.
 
-1. Drag the new variable into the Main Content area of your application's screen.
+    In this example we call name them **Drag** and **Distance**. Both local variables are of data type text.
 
-    ![](images/mouseevents-6-ss.png)
+    ![](images/touchevents-5-ss.png)
 
-1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen and on the **Properties** tab, enter a name. In this example we enter `MouseContainer`. We also enter the text `Drag me in any direction!`.
+1. Add the relevant content to the Center Content widget placeholders. 
 
-    ![](images/mouseevents-7-ss.png)
+    In this example, we add text and 2 expressions to the Center placeholder, and text to the Bottom placeholder. 
 
-1. From the **Widget Tree**, select the Mouse Events widget, and on the **Properties** tab, from the **WidgetId** drop-down, select the Id of the container you just created. In this example, we select **MouseContainer.Id**.
+   ![](images/touchevents-6-ss.png)
 
-    ![](images/mouseevents-8-ss.png)
+   Each of the expressions are set to the local variables respectively (**Drag** and **Distance**). 
 
-1. To set the action for when the user swipes left, remaining on the **Properties** tab, from the **SwipeLeft Handler** drop-down, select **New Client Action**.
+   ![](images/touchevents-7-ss.png)
 
-    ![](images/swipeevents-8-ss.png)
+1. Add a client action by right-clicking your screen name and selecting **Add Client Action**. 
 
-1. Assign the relevant logic you want the swipe left action to perform. In this example, we want the number to decrease by 1 every time the user swipes left. To do this, we drag an Assign onto the client action, set the **Variable** to **Number**, and enter ``Number - 1`` for the **Value**.
+1. Enter a name for the client action. In this example, we enter `MouseEventsMove`.
 
-    ![](images/swipeevents-9-ss.png)
+   ![](images/touchevents-8-ss.png)
 
-1. Repeat steps 8 and 9 for the **SwipeRightHandler** and so that the number increases when the user swipes right, enter `Number + 1`.
+1. Add 2 input parameters by right-clicking the client action and selecting **Add Input Parameter**.
 
-After following these steps and publishing the module, you can test the pattern in your app
+    In this example, we add the **OffsetX** and **OffsetY** input parameters and set their data type to decimal.
+
+    ![](images/touchevents-9-ss.png)
+
+1. Add the relevant logic to the client action. In this example, we add the following:
+
+    ![](images/touchevents-10-ss.png)
+
+1. Select the Mouse Events widget and set the **WidgetId**, **PreventDefaults**, and the **Handler** properties. 
+
+    ![](images/touchevents-11-ss.png)
+
+    The **WidgetId** is set to **card.Id**, the **PreventDefaults** to **False**, **OfFsetX** to **OffsetX**, and **OffsetY** to **OffsetY**.
+
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 

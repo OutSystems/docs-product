@@ -807,6 +807,10 @@
 -  ref/lang/auto/Class.Send Email.final.md:
     - develop/logic/emails.md
 
+#  Invalid Link Error
+-  ref/errors-and-warnings/errors/invalid-link-error.md:
+    - one-way: ref/lang/auto/Class.Link Widget.final.md
+    
 # Configuration Tool
 
 - ref/configuration-tool/tabs/platform-oracle.md:

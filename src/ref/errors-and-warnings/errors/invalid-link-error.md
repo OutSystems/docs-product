@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve an Invalid Link TrueChange error.
+summary: Check the causes and recommendations on how to solve an Invalid Link TrueChange error.
 tags:
 ---
 

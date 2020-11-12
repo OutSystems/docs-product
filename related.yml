@@ -23,6 +23,10 @@
   - ref/logic/expressions/operands.md
   - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md
 
+- develop/logic/exceptions/handling-mechanism.md:
+    - ref/lang/auto/Class.Exception Handler.final.md
+    - ref/lang/auto/Class.Raise Exception.final.md
+
 # Caching
 - develop/data/caching.md:
   - develop/reuse-and-refactor/strong-weak-dependencies.md

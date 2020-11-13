@@ -143,7 +143,7 @@ Keep in mind that the LifeTime PWA manifest overrides the manifest in Service St
 
 Using the manifest overrides the values you set in Service Studio. You have to use the manifest in the `PWAManifest` section of the JSON of the **Extensibility Configurations** field. You can edit the manifest in two places:
 
-* In Service Studio, where the manifest overrides all UI settings **in all environments**. Edit the JSON manifest in the **Extensibility Configurations** field of the module properties.
+* In Service Studio, where the manifest overrides all UI settings **in all environments**. Edit the JSON manifest in the **Extensibility Configurations** field of the module properties. This change can be applied in any module of the application, just keep in mind that when changing the configurations of a module that is not the home module, the home module needs to be republished to properly apply the configurations to the entire application.
 * In LifeTime, where the manifest overrides all UI settings **in the current environment only**. Find the **Extensibility Configurations** field in **Applications** > **(app name)** > **Settings** > **Advanced** > **Extensibility Configurations**
 
 ### Manifest resources and sample JSON
@@ -256,7 +256,7 @@ Here are the current known issues with PWA.
 
 ### Overriding the Extensibility Configurations in LifeTime isn't working
 
-There's an issue that prevents LifeTime from overriding the PWA Extensibility Configurations. The development team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
+There's an issue that prevents LifeTime from overriding the PWA Extensibility Configurations. Upgrade to Platform Server 11.11.0 to resolve the issue.
 
 ### Staging of the PWA toggle value in LifeTime isn't working
 

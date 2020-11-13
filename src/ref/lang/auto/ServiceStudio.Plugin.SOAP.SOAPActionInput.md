@@ -90,7 +90,6 @@ helpids: -1
 <td></td>
 <td></td>
 <td></td>
-<td></td>
 </tr>
 <tr>
 <td title="OriginalDefaultValue">Original Default Value</td>

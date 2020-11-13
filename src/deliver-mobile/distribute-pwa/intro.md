@@ -260,4 +260,4 @@ There's an issue that prevents LifeTime from overriding the PWA Extensibility Co
 
 ### Staging of the PWA toggle value in LifeTime isn't working
 
-In Platform Server 11.9.0, the staging of the PWA toggle value in LifeTime isn't working as expected. To keep the PWA distribution setting in the target environment, set the toggle in the target environment manually. OutSystems is working on a fix.
+In Platform Server 11.9.0, the staging of the PWA toggle value in LifeTime isn't working as expected. Upgrade to Platform Server 11.10.0 to resolve the issue.

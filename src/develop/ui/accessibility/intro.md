@@ -134,7 +134,7 @@ By default, OutSystems UI provides the correct text contrast ratio to comply wit
 
 ### Text spacing
 
-Improve the text rea<dability by letting the users increase the text spacing in your application. To enable this, create an action that runs the accessibility **ToggleTextSpacing** action, by performing the following steps:
+Improve the text readability by letting the users increase the text spacing in your application. To enable this, create an action that runs the accessibility **ToggleTextSpacing** action, by performing the following steps:
 
 1. In your app screen, select the page element that triggers the increased text spacing. For example, a button.
 

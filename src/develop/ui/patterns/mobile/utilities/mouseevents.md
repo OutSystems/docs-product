@@ -9,17 +9,17 @@ You can use the Mouse Events UI Pattern when the user needs to select elements o
 
 ## How to Use the Mouse Events UI Pattern
 
-The following example shows how you can use the Touch Events UI pattern to display the distance the mouse is dragged left and right across the screen.
+The following example shows how you can use the Mouse Events UI pattern to display the distance the mouse is dragged left and right across the screen.
 
 1. In Service Studio, in the Toolbox, search for `Mouse Events`.
 
-    The Touch events widget is displayed.
+    The Mouse Events widget is displayed.
+
+    ![](images/mouseevents-1-ss.png)
+
+1. From the Toolbox, drag the Mousse Events widget into the Main Content area of your application's screen.
 
     ![](images/mouseevents-2-ss.png)
-
-1. From the Toolbox, drag the Touch Events widget into the Main Content area of your application's screen.
-
-    ![](images/mouseevents-3-ss.png)
 
 1. From the Toolbox, drag the Center Content widget into the Main Content area of your screen.
  
@@ -37,7 +37,7 @@ The following example shows how you can use the Touch Events UI pattern to displ
 
 1. Add the relevant content to the Center Content widget placeholders. 
 
-    In this example, we add text and 2 expressions to the Center placeholder, and text to the Bottom placeholder. 
+   In this example, we add text and 2 expressions to the Center placeholder, and text to the Bottom placeholder. 
 
    ![](images/mouseevents-6-ss.png)
 
@@ -67,7 +67,6 @@ The following example shows how you can use the Touch Events UI pattern to displ
 
     ![](images/mouseevents-11-ss.png)
 
-
 After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
@@ -75,4 +74,4 @@ After following these steps and publishing the module, you can test the pattern 
 |**Property** |  **Description** |
 |---|---| 
 | WidgetId (Text): Mandatory  |  The element that responds to the mouse event you configure.|
-| PreventDefaults (Boolean): Optional | If True,. This is the default. If False, |
+| PreventDefaults (Boolean): Optional | If True, all handlers are executed. This is the default. If False, only the MouseEvents handler is executed. |

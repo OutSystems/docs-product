@@ -6,7 +6,9 @@ tags: support-Database
 
 While processing a web request, OutSystems begins a database transaction on its first access to the database. The transaction is committed before OutSystems sends the response to the user.
 
-If an exception is caught, the transaction is rolled back. This means that changes made to the database within the transaction are all reverted, this way ensuring that your data remains consistent.
+If an exception occurs and it's left uncaught, the transaction is rolled back. This means that changes made to the database within the transaction are all reverted, this way ensuring that your data remains consistent.
+
+If an exception occurs and there's an Exception Handler that handles that exception, you can configure what happens to the currently open transaction in the Exception Handler's **Abort Transaction** property. Check [Aborting database transactions](<../../lang/auto/Class.Exception Handler.final.md#aborting>) for more information.
 
 ## Ending Transactions Explicitly
 

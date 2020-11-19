@@ -20,11 +20,11 @@ In the exception-handling flow started by an Exception Handler element you can p
 
 Check [Exception Handling Mechanism](../../../develop/logic/exceptions/handling-mechanism.md) to learn more about the chain of Exception Handlers that the platform searches for when an exception occurs.
 
-## Logging exceptions
+## Logging exceptions { #logging }
 
 If you set the **Log Error** property to **Yes**, the platform creates a log for the exception type configured in the **Exception** property, when such an exception occurs. You can check for logged exceptions in Service Center under **Monitoring** > **Errors**.
 
-## Aborting database transactions
+## Aborting database transactions { #aborting }
 
 When you handle an exception in an [action running on server side](../../../develop/logic/actions.md), you can choose what happens to the database transaction by setting the **Abort Transaction** property of the Exception Handler:
 

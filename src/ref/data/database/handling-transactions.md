@@ -6,7 +6,7 @@ tags: support-Database
 
 While processing a web request, OutSystems begins a database transaction on its first access to the database. The transaction is committed before OutSystems sends the response to the user.
 
-If an exception is left uncaught, the transaction is rolled back. This means that changes made to the database within the transaction are all reverted, this way ensuring that your data remains consistent.
+If an exception is caught, the transaction is rolled back. This means that changes made to the database within the transaction are all reverted, this way ensuring that your data remains consistent.
 
 ## Ending Transactions Explicitly
 

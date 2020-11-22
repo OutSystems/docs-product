@@ -32,18 +32,21 @@ If you want to use the value of a Site Property in the client-side logic of a mo
 1. Change the Effective Value of the Site Property and click Apply.
 
 ## Usage
-Ex. In an aggregate called GetMovies that retrieves records about movies from an Entity called Movie, the Default Max. records is 50
-Go to Data tab
-Right Click Site Property
-Select Add Site Property
-Give Name MaxRecords, DataType Integer and Default Value 10
-Go to Aggregate GetMovies and replace Max. records | 50 by Max.Records | Site.MaxRecords
-Publish and Open in Browser
-Open a page on which the GetMovies aggregate is used
-Go to your Service Center (Click the clog top left in Service Studio)
-Goto https://<Hostname>.outsystemscloud.com/ServiceCenter/eSpace_SiteProperty_Edit.aspx
-Go to Factory/Modules and select the module on which the Site Property was applied
-Go to Site Properties
-Check MaxRecords is listed
-Change the MaxRecords value and refresh the page
-The MaxRecords displayed must adopt the new Value
+
+This section explains how to use a Site Property, using an example of an aggregate called **GetMovies** to retrieve records about movies from a **Movie** Entity, with the default maximum records of 50.
+
+Follow the steps below.
+
+1. Go to **Data** tab and right-click **Site Property**.
+1. Select **Add Site Property**.
+1. On the **Name** property, enter `MaxRecords`.
+1. On the **DataType** property enter `Integer`.
+1. On the **Default Value** property, enter `10`.
+1. Select the **GetMovies** Aggregate and set the **Max. Records** property value by `Site.MaxRecords`.
+1. Click the **1-Publish** button to publish your app, and open it on your web browser.
+1. Open a screen that uses the **GetMovies** Aggregate.
+1. Click on the **Module Management** ícon at the top-left side to open Service Center or open Service Studio on your web browser by typing `https://<Hostname>.outsystemscloud.com/ServiceCenter/eSpace_SiteProperty_Edit.aspx`.
+1. Click on **Factory** and then **Modules**, and select the module on which you applied the Site Property.
+1. Go to **Site Properties** and check that it lists the **MaxRecords** Site Property.
+1. Change the **MaxRecords** value and refresh the page.
+1. The MaxRecords displayed must adopt the new value.

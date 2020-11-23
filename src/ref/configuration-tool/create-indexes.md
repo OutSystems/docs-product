@@ -56,4 +56,4 @@ Do the following:
 
 Every time OutSystems adds a new index in a Platform Server release, you can find a release note in the [Release Notes](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) page similar to the following:
 
-* Added the OSAIX_* index on the table OSSYS_* to the platform. This index is created outside the main database create or upgrade process due to its creation impact.
+* Added the OSAIX_\* index on the table OSSYS_\* to the platform. This index is created outside the main database create or upgrade process due to its creation impact.

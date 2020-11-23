@@ -1,3 +1,7 @@
+---
+summary: Improve platform performance by creating indexes for a specific set of platform tables.
+---
+
 # Creating indexes for platform database tables
 
 _Available since Platform Server 11.10._

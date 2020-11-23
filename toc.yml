@@ -1237,7 +1237,8 @@
         - href: ref/configuration-tool/tabs/cache.md
         - href: ref/configuration-tool/tabs/network.md
         - href: ref/configuration-tool/tabs/scheduler.md
-    
+        - href: ref/configuration-tool/create-indexes.md
+
     # Errors and Warnings
     - href: ref/errors-and-warnings/intro-errors-and-warnings.md
     - topics:

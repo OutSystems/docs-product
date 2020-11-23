@@ -37,12 +37,12 @@ This section explains how to use a Site Property, using an example of an aggrega
 
 Follow the steps below.
 
-1. Go to **Data** tab and right-click **Site Property**.
+1. On the **Data** tab, right-click **Site Property**.
 1. Select **Add Site Property**.
 1. On the **Name** property, enter `MaxRecords`.
-1. On the **DataType** property enter `Integer`.
+1. On the **DataType** property, enter `Integer`.
 1. On the **Default Value** property, enter `10`.
-1. Select the **GetMovies** Aggregate and set the **Max. Records** property value by `Site.MaxRecords`.
+1. Select the **GetMovies** Aggregate and set the **Max. Records** property value to `Site.MaxRecords`.
 1. Click the **1-Publish** button to publish your app, and open it on your web browser.
 1. Open a screen that uses the **GetMovies** Aggregate.
 1. Click on the **Module Management** ícon at the top-left side to open Service Center or open Service Studio on your web browser by typing `https://<Hostname>.outsystemscloud.com/ServiceCenter/eSpace_SiteProperty_Edit.aspx`.

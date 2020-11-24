@@ -100,3 +100,9 @@ If all conditions apply, the server authenticates the request as coming from the
 The authentication mechanism for apps includes caching capabilities to avoid the overhead of validating and updating authentication information in the database upon each request.
 
 Within a defined period of time the server uses the information stored in the cookies to authenticate the requests of an authenticated session, instead of retrieving the authentication information from the database.
+
+### Logging Out of Applications
+
+When the user logs out of an app, either in traditional web or in a mobile device, it also logs him out from all other sessions. It prevents invalid persistent authentication sessions from staying alive.
+
+If the application is configured to use Cache Time In Minutes, it may still work for a few time, until cache is invalidated and the authentication information must be fetched from the database, where it's no longer valid.

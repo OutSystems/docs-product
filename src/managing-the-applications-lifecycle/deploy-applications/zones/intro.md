@@ -160,3 +160,5 @@ Take the following limitations into account when using deployment zones:
 * The platform always deploys System Components to the default deployment zone. Use the internal network configuration to limit the access to Service Center and LifeTime (available in Service Center in **Administration** > **Security** > **Network Security**).
 
 * Processes, Timers and Emails require at least one server in the deployment zone of the application configured to execute them. Check the current configuration for all front-end servers in the environment in Service Center under **Administration** > **Servers** (requires **Full Control** permissions).
+
+* Email links are always generated based on the **Hostname** configured on **Environment Configuration**, they do not respect zone addresses since those are for internal communications. To be able to hardcode link destinations in emails that are not intended to match the **Hostname** configuration, the value in the links cannot match the zone address value.

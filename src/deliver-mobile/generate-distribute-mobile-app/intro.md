@@ -17,7 +17,7 @@ See [Distribute as a progressive web app (PWA)](../distribute-pwa/intro.md) for 
 
 </div>
 
-## Configure and Generate a Mobile App Package in Service Studio
+## Configure and Generate a Mobile App Package in Service Studio { #config-generate-service-studio }
 
 To configure or generate your mobile app package (iOS or Android) in Service Studio, do the following:
 
@@ -31,7 +31,7 @@ To configure or generate your mobile app package (iOS or Android) in Service Stu
 
     ![Native app settings in Service Studio](images/native-platforms-tab-ss.png?width=600)
 
-## Configure and Generate a Mobile App Package in Service Center
+## Configure and Generate a Mobile App Package in Service Center { #config-generate-service-center }
 
 To configure or generate your mobile app package (iOS or Android) in Service Center, do the following:
 
@@ -51,7 +51,7 @@ To configure or generate your mobile app package (iOS or Android) in Service Cen
 
     <div class="info" markdown="1">
 
-    For more information about MABS check [Choosing the MABS Version to Build Your Mobile Packages](<#choosing-the-mabs-version-to-build-your-mobile-packages>)
+    For more information about MABS check [Choosing the MABS Version to Build Your Mobile Packages](#choose-mabs-version)
 
     </div>
 
@@ -59,7 +59,7 @@ To configure or generate your mobile app package (iOS or Android) in Service Cen
 
 Now that you have configured the app, the next time you need to generate a new mobile app package, just click the **Generate** button.
 
-### Customizing the Mobile App Domain Name
+### Customizing the Mobile App Domain Name { #customizing-the-mobile-app-domain-name }
 
 <div class="info" markdown="1">
 
@@ -83,7 +83,7 @@ To define a different domain name for your mobile app, do the following:
 
 1. **Regenerate the mobile app** for the changes to take effect.
 
-### Customizing the Mobile App Version Code
+### Customizing the Mobile App Version Code { #customizing-the-mobile-app-version-code }
 
 The mobile app version code is an internal number associated with the generation of the mobile app package. App stores use this number to determine whether one version is more recent than another. See more detailed information in [Android](https://developer.android.com/studio/publish/versioning) and [iOS](https://help.apple.com/app-store-connect/#/dev82a6a9d79) documentation.
 
@@ -101,7 +101,7 @@ To set a different version code for your mobile app, do the following:
 
 The next time you generate a new app package, the version code increments by one.
 
-### Choosing the MABS Version to Build Your Mobile Packages { #choosing-the-mabs-version-to-build-your-mobile-packages }
+### Choosing the MABS version to build your mobile packages { #choose-mabs-version }
 
 The [Mobile Apps Build Service (MABS)](<../mobile-apps-build-service/intro.md>) is a **cloud service** used by OutSystems to generate the mobile packages of your mobile apps developed in OutSystems for iOS and Android. 
 
@@ -135,7 +135,7 @@ Whether you selected the option of using the latest MABS version or using a spec
 
 **To fully understand the impacts of this setting, be sure to check [Understanding MABS Versions](<../mobile-apps-build-service/intro.md#understanding-mabs-versions>).**
 
-## Download Mobile App Build Logs
+## Download mobile app build logs { #download-mobile-app-build-logs }
 
 You can obtain the build logs of your mobile apps in Service Center. Build logs are available for both successful and unsuccessful builds, and each platform (Android and iOS) has its own build log.
 
@@ -148,13 +148,13 @@ To obtain a mobile app build log:
 
 ![](<images/sc-download-build-logs.png>)
 
-## Updating Your Mobile App Package
+## Updating your mobile app package
 
 In most occasions, the users of your mobile app don't have to update it manually after installing it in their devices, since OutSystems automatically pushes the updates to their devices when you publish a new mobile app version.
 
 However, in some specific situations, the users must install a new mobile app package. For more information check [Mobile App Update Scenarios](<../mobile-app-update-scenarios.md>).
 
-## Distribute your app as PWA
+## Distribute your app as PWA { #distribute-your-app-as-pwa }
 
 You can use the settings in Service Center to configure your app as progressive web app (PWA). PWAs run from your server and don't require distribution though the app stores.
 

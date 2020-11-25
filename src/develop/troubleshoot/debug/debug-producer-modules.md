@@ -34,7 +34,7 @@ To debug the functionality being exposed in a public Action by the producer Modu
 
 1. Interact with the application to execute the functionality that calls the producer logic where the breakpoints are set.
 
-## Service Actions
+## Service Actions { #service-actions }
 
 Unlike public Server Actions, Service Actions run in the context of the producer Module; to debug a Service Action, follow these steps:
 

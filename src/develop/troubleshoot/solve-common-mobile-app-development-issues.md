@@ -63,7 +63,7 @@ Slow operations being done in On Initialize screen event handler
 
 * Do not perform slow operations in the On Initialize screen event handler. Move these operations to another event handler like On Ready, which occurs after the page is displayed. This might have an impact on the behavior of your application, so test your app thoroughly before deploying your changes. 
 
-* If the above suggestion does not help in your case, use the [Performance tab](<advanced-mobile-app-troubleshooting-using-chrome.md#performance-tab>) in Chrome's Developer Tools for doing additional performance troubleshooting. 
+* If the above suggestion does not help in your case, use the [Performance tab](<advanced-mobile-app-troubleshooting-using-chrome.md#tips>) in Chrome's Developer Tools for doing additional performance troubleshooting. 
 
 ### Missing Data in Device
 

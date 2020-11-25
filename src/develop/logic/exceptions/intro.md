@@ -29,13 +29,13 @@ All Exceptions is the most general exception, including all the remaining. This 
 
 You can use All Exceptions if, within that specific scope, you want to handle all the exceptions in the same way.
 
-### User Exception
+### User Exception { #user-exception }
 
 You can create your own User Exceptions and raise them in your logic in specific conditions. For example, you can create a User Exception named UnavailableExternalSystem and raise it in your logic when you detect that the external system you use to fetch data in your application is experiencing a downtime.
 
 The User Exceptions created by you are "children nodes" of the general User Exception. This means that a general User Exception Handler will handle any of your own User Exceptions if it appears in the flow before an Exception Handler for your specific User Exception.
 
-### Database Exception
+### Database Exception { #database-exception }
 
 Database Exceptions are raised by OutSystems when there is an error related to the database management system, such as:
 
@@ -45,7 +45,7 @@ Database Exceptions are raised by OutSystems when there is an error related to t
 
 OutSystems can raise Database Exceptions whenever you are interacting with the database engine, such as, when using an aggregate, an SQL query or an entity action.
 
-### Security Exception
+### Security Exception { #security-exception }
 
 OutSystems can raise Security Exceptions whenever you have authentication or other security mechanisms in your application module. Security Exceptions include:
 
@@ -75,7 +75,7 @@ The raise of Abort Activity Change Exceptions is used in Process Activity callba
 
 When OutSystems raises an exception, the **ExceptionMessage** property of the Exception Handler element is automatically filled in with a problem description. When you raise an exception in your logic, such as a User Exception, you must define the message in the **Exception Message** property of the Raise Exception element.
 
-## Exception Logs
+## Exception Logs { #exception-logs }
 
 When you handle an exception in your module, you can use the **Log Error** property of the Exception Handler element to choose if OutSystems should log the exception or not. You can check for logged exceptions in Service Center.
 

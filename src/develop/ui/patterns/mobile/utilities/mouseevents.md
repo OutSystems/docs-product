@@ -61,7 +61,7 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
     ![](images/mouseevents-10-ss.png)
 
-1. Select the Mouse Events widget and set the **WidgetId**, **PreventDefaults**, and the **Handler** properties. 
+  1. Select the Mouse Events widget and set the **WidgetId**, **PreventDefaults**, and the **Handler** properties. 
 
     In this example, the **WidgetId** is set to **card.Id**, the **PreventDefaults** to **False**, **OfFsetX** to **OffsetX**, and **OffsetY** to **OffsetY**.
 
@@ -74,4 +74,4 @@ After following these steps and publishing the module, you can test the pattern 
 |**Property** |  **Description** |
 |---|---| 
 | WidgetId (Text): Mandatory  |  The element that responds to the mouse event you configure.|
-| PreventDefaults (Boolean): Optional | If True, all handlers are executed. This is the default. If False, only the MouseEvents handler is executed. |
+| PreventDefaults (Boolean): Optional | If True, events propagation to the screen and other widgets is stopped. This is the default. If False, event propagation to the screen and other widgets is enabled.  |

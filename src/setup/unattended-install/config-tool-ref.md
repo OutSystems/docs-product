@@ -43,6 +43,7 @@ ConfigurationTool.com
     | /EnableServerAPI
     | /DisableServerAPI
     | /UpgradeEnvironment
+    | /ApplySettingsFactory
 ```
 
 ## Parameters
@@ -129,7 +130,7 @@ ConfigurationTool.com
     
 `/EnableServerAPI`
 
-:   Enables Server.API and Server.Identity on this machine. (Server.API and Server.Identity are enabled by default)
+:   Enables Server.API and Server.Identity on this machine. (Server.API and Server.Identity are enabled by default).
 
 `/DisableServerAPI`
 
@@ -138,6 +139,11 @@ ConfigurationTool.com
 `/UpgradeEnvironment`
 
 :   Installs Service Center and System Components, and upgrades published applications. Skips any of these steps if they were previously executed.
+
+`/ApplySettingsFactory`
+
+:   Applies the current `server.hsconf` settings to the factory.  
+    Note: This command only generates output in case of errors.
 
 ## Example
 

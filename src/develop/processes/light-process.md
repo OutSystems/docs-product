@@ -1,6 +1,6 @@
 ---
 summary: Use light process execution for large scale batch processing scenarios, such as an event broker.
-tags: support-webapps
+tags: support-webapps;
 ---
 
 # Design Scalable Database Queueing Using Light Processes
@@ -9,38 +9,47 @@ OutSystems Processes are designed to model and execute long-running processes wh
 
 When enabling **light process execution** you allow simpler processes that don't need tracking to run much faster, which increases the event processing throughput. This lighter execution mode is useful for event-driven processes on a large scale that handle several thousand events per day, such as event brokers, and that require a scalable database queueing.
 
-Processes that benefit from light process execution must meet all the following conditions:
+During light process execution, a process doesn't create any process instances or activity instances, therefore the **process history isn't be available**. Defining start dates for Automatic Activities is also **not supported**.
 
-* Has a simplified structure (Start > Automatic Activity > End).
+To enable light process execution, a process must meet all the following conditions:
 
-* Is triggered by a database event.
+* The process flow includes only an **Automatic Activity**, having a simple **Start** > **Automatic Activity** > **End** flow.
 
-* `Expose Process Entity` property is set to No:  
+* The **Launch On** property of the process is set with a database event.
+
+* The **Expose Process Entity** property of the process is set to **No**.
 
     ![](images/light-process-1.png)
 
-This kind of Process does not create any process instances or activity instances, therefore the **process history will not be available**. Defining start dates for Automatic Activities is also **not supported**.
+<div class="info" markdown="1">
 
-## Enable Light Process Execution
+Even if a process is enabled for light process execution, only a trigger by a database event executes the process as a light process. The manual launch of the process using the **Launch Process** action still executes the process as a regular process.
 
-To enable light process execution for your module, do the following:
+</div>
+
+## Enable light process execution
+
+To enable light process execution for a process, do the following:
 
 1. Go to the Service Center management console of your OutSystems environment.
 
-1. Go to the Factory section and select your application.
+1. Go to the **Factory** section and select the app which contains the process for which you want to allow light process execution.
 
-1. In the application details screen, select the module containing the Processes for which you want to allow light process execution.
+1. In the application details screen, select the module containing the process for which you want to allow light process execution.
 
-1. In the module details screen, go to the Operation tab and check the "Light process execution" option.
+1. In the module details screen, go to the **Operation** tab and check the **Light process execution** option.
 
-1. Click the "Apply" button. Changing this setting requires republishing the module.    
+1. Click the **Apply** button. Changing this setting requires republishing the module.
 
     ![light process execution](images/light-process-enable-sc.png)
 
-1. Go to the Versions tab and publish the module. You will get a compilation message for the processes that will benefit from light process execution:
+1. To republish the module, go to the **Versions** tab and publish the current version of the module. You get a compilation message for the processes that can benefit from light process execution:
 
     ![publish module](images/light-process-publish-module-sc.png)  
 
-    You will see the same compilation message when you publish the module through Service Studio:  
+    You see the same compilation message when you publish the module through Service Studio:  
 
     ![](images/light-process-3.png)
+
+After these steps and after publishing your module, the process is enabled for light process execution.  
+Keep in mind that only a trigger by a database event executes the process as a light process. Launching the process using the **Launch Process** action executes the process as a regular process.

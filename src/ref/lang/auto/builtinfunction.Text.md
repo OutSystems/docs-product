@@ -306,7 +306,7 @@ Indicates the direction of the search. In case of searching from the end to the 
 
 ignoreCase
 :    Type: Boolean.  
-
+Set True to treat lowercase and uppercase characters as equal, ignoring the casing of the Text inputs 't' and 'search'. The default value is False. When used in Aggregates this parameter is not present.
 
 ### Output
 

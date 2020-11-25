@@ -50,7 +50,7 @@ Imports the contents of an MS Excel sheet into a list.
 </tr>
 <tr>
 <td title="Sheet Name">Sheet Name</td>
-<td>Name of the Excel sheet to import. By default imports the first sheet.</td>
+<td>Name of the Excel sheet to import. By default, the first sheet is imported, unless a sheet named 'Sheet1' exists in the file.</td>
 <td></td>
 <td></td>
 <td></td>

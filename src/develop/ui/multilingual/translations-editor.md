@@ -7,7 +7,7 @@ tags: runtime-traditionalweb; support-application_development
 
 <div class="info" markdown="1">
 
-We’ve been working on this article. Please let us know how useful this new version is by voting.
+These instructions are for translating Traditional Web Apps only. For Reactive Web and Mobile Apps see [Technical Preview: Multilingual apps](../multilingual-tp/intro.md).  
 
 </div>
 

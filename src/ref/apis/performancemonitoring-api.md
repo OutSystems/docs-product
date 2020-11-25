@@ -1,5 +1,5 @@
 ---
-summary: API to access logged request events by OutSystems Platform with valuable data for your analytics. You can use it to analyze the user experience of your applications.
+summary: API to access logged request events by the OutSystems platform with valuable data for your analytics. You can use it to analyze the user experience of your applications.
 tags: support-devOps; support-monitoring
 ---
 
@@ -14,15 +14,15 @@ The server only stores data for the last two days. Learn [how application perfor
 
 ## Summary
 
-Methods | Description 
+Methods | Description
 ---|---  
-[GET RequestEvents](#get-requestevents) | Returns a list of request events, filtered by the event names and time interval you specify in the parameters.  
-[POST RequestEvents](#post-requestevents) | Logs a request event. Based on that data you can analyze the user experience of your applications.  
-  
+[GET RequestEvents](#get-requestevents) | Returns a list of request events, filtered by the event names and time interval you specify in the parameters.
+[POST RequestEvents](#post-requestevents) | Logs a request event. Based on that data you can analyze the user experience of your applications.
+
 Resources | Description
 ---|---  
-[RequestEvent](#requestevent) | Represents an event of a web request, sent to an OutSystems application.  
-  
+[RequestEvent](#requestevent) | Represents an event of a web request, sent to an OutSystems application.
+
 ## Methods
 
 ### GET RequestEvents
@@ -31,7 +31,7 @@ Returns a list of request events, filtered by event names and time interval you 
 
 This method requires basic authentication. You need to provide the credentials of a LifeTime user. It returns request events only for those applications to which the user has 'Reuse & Monitor' permission in the environment. Learn more about how to [configure security for an infrastructure](../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
 
-To use it in an application, make sure that [monitoring is turned on](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment, and for the application module. Otherwise the API responds with a status code of '200 - OK', but doesn't retrieve any events.
+To use it in an application, make sure that [monitoring is turned on](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment and also for the application module. Otherwise, the API responds with a status code of '200 - OK' but doesn't retrieve any events.
 
 #### URL
 
@@ -40,22 +40,22 @@ To use it in an application, make sure that [monitoring is turned on](../../mana
 #### Input
 
 EventNames
-:   Type: string, optional, to be sent in the URL.  
+:   Type: string, optional, sent in the URL.  
     List of events to filter on. Separate event names with a comma.  
     Example: "WebScreenClientExecuted,WebScreenServerExecuted".
 
 StartInstant
-:   Type: date time, mandatory, to be sent in the URL.  
+:   Type: date time, mandatory, sent in the URL.  
     The start date and time of the time interval you want to filter on. Format: ISO 8601.  
     Example: "2012-04-23T18:25:43.511Z".
 
 EndInstant
-:   Type: date time, mandatory, to be sent in the URL.  
+:   Type: date time, mandatory, sent in the URL.  
     The end date and time of the time period you want to filter on. Format: ISO 8601.  
     Example: "2012-04-23T18:25:43.511Z".
 
 NumberOfResults
-:   Type: int32, optional, to be sent in the URL.  
+:   Type: int32, optional, sent in the URL.  
     The maximum number of events to return. Note that the actual upper limit never exceeds the default limit (15000).  
     This limit is set in the 'MaxResponseSize' site property of the PerformanceProbe module of your environment.
 
@@ -71,14 +71,14 @@ ResultsTruncated
     This can occur due to the limit set either in the 'NumberOfResults' parameter, or in the 'MaxResponseSize' site property of the PerformanceProbe module of your environment. Default limit: 15000.  
     To retrieve the next set of results, you can send a new GET request. Set its StartInstant parameter to the Instant of the most recent RequestEvent you got on the previous request.
 
-#### Example Request
+#### Example request
 
 ```
 curl --user mike.fitt:123456 
 "http://outsystemscloud.com/PerformanceProbe/rest/PerformanceMonitoringAPI/RequestEvents/?StartInstant=2015-09-28T12:45:00.000Z&EndInstant=2015-09-28T12:47:00.025Z"
 ```
 
-#### Example Result
+#### Example result
 
 ```javascript
 {
@@ -146,7 +146,7 @@ curl --user mike.fitt:123456
     ],
     "ResultsTruncated": false
 }
-```    
+```
 
 ### POST RequestEvents
 
@@ -161,10 +161,10 @@ To use this method in an application, make sure that [monitoring is turned on](.
 #### Input
 
 RequestEvent
-:   Type: RequestEvent, mandatory, to be sent in the request body (JSON).  
+:   Type: RequestEvent, mandatory, sent in the request body (JSON).  
     The event of a request in an application to be logged.
 
-#### Example Request
+#### Example request
 
 ```
 curl -X POST -H "Content-Type: application/json" 
@@ -218,24 +218,26 @@ http://outsystemscloud.com/PerformanceProbe/rest/PerformanceMonitoringAPI/Reques
 <tr>
 <td>Request Event Details</td>
 <td>A JSON object with the details about the event. Each built-in request event has its own details:<br/>
-&#8226; [WebScreenClientExecuted](#request-event-details-for-webscreenclientexecuted-event)<br/>
-&#8226; [WebScreenServerExecuted](#request-event-details-for-webscreenserverexecuted-event)<br/>
-&#8226; [QueryExecuted](#request-event-details-for-queryexecuted-event)<br/>
-&#8226; [ConsumedIntegrationExecuted](#request-event-details-for-consumedintegrationexecuted-event)<br/>
-&#8226; [ExtensionExecuted](#request-event-details-for-extensionexecuted-event)
+&#8226; [WebScreenClientExecuted](#webscreenclientexecuted-details)<br/>
+&#8226; [WebScreenServerExecuted](#webscreenserverexecuted-details)<br/>
+&#8226; [QueryExecuted](#queryexecuted-details)<br/>
+&#8226; [ConsumedIntegrationExecuted](#consumedintegrationexecuted-details)<br/>
+&#8226; [ExtensionExecuted](#extensionexecuted-details)<br/>
+&#8226; [ScreenServer](#screenserver-details)<br/>
+&#8226; [TimerExecuted](#timerexecuted-details)
 </td>
 </tr>
 </tbody>
 </table>
-  
-#### Request Event Details for WebScreenClientExecuted Event
 
-This event occurs whenever the user’s browser finishes processing a request (initial page load, any form submission, or any AJAX request). The event's properties are the following:
+#### Request event details for WebScreenClientExecuted event { #webscreenclientexecuted-details }
+
+This event occurs whenever the user's browser finishes processing a request (initial page load, any form submission, or any AJAX request). The event's properties are the following:
 
 Property | Meaning | Description  
 ---|---|---  
 AK | Action Key | The key of the action that was handling the request on the server.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
 EK | Environment Key | The unique key identifying the environment the user was accessing.  
 EN | Environment Name | The name of the environment the user was accessing.  
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
@@ -243,26 +245,26 @@ EPN | EndPoint Name | The name of the web screen that was handling the request.
 TK | Tenant Key | A unique key identifying the tenant.  
 TN | Tenant Name | The name of the tenant.  
 FN | Front-end Name | The name of the front-end server that handled the request.  
-VK | Visitor Key | Unique identifier key for the visitor that performed the request. %%A visitor is a combination of a device and a browser. The key is created at the first time the visitor accesses the website’s domain using a given device and browser. The same key is used until the browser cookies are cleared.  
-ViK | Visit Key | Unique identifier of the visit associated with the current request. %%A visit is defined as a series of page requests from the same visitor. A visit is considered finished when no requests have been recorded for 30 minutes.  
+VK | Visitor Key | Unique identifier key for the visitor that performed the request.<br/>A visitor is a combination of a device and a browser. The key is created at the first time the visitor accesses the website's domain using a given device and browser. The same key is used until the browser cookies are cleared.  
+ViK | Visit Key | Unique identifier of the visit associated with the current request.<br/>A visit is defined as a series of page requests from the same visitor. A visit is considered finished when no requests have been recorded for 30 minutes.  
 SK | Session Key | Unique identifier of the session associated with the request.  
 UK | User Key | Unique user identifier associated with the user, if logged in during the request.  
 SR | Screen Resolution | The browser window screen resolution. Formatted as "&lt;width&gt;x&lt;height&gt;". Example: "1024x768".  
 UA | User Agent | The user agent string as provided by the browser.  
-D | Duration | The time, in milliseconds, that passed from the moment the user made the request (e.g. by clicking on a link) until the browser finished processing the response. %%Note: This attribute is related only to the HTTP request itself. If the HTML contains references to other resources (e.g. images, fonts), the time it took to download and process those resources is not included.  
+D | Duration | The time, in milliseconds, that passed from the moment the user made the request (for example, by clicking on a link) until the browser finished processing the response.<br/>Note: This attribute is related only to the HTTP request itself. If the HTML contains references to other resources (for example, images or fonts), the time it took to download and process those resources is not included.  
 LT | Load Time | The time, in milliseconds, that the browser took to process the response. The load time includes for example the page rendering and the JavaScript execution.  
-TTFB | Time To First Byte | The time, in milliseconds, that passed from the moment the user made the request (e.g. user clicked on a link), until the browser received the first byte of the response from the platform server.  
-TTLB | Time To Last Byte | The time, in milliseconds, that passed from the moment the user made the request (e.g. user clicked on a link), until the browser received the last byte of the response from the platform server.  
+TTFB | Time To First Byte | The time, in milliseconds, that passed from the moment the user made the request (for example, user clicked on a link), until the browser received the first byte of the response from the Platform Server.  
+TTLB | Time To Last Byte | The time, in milliseconds, that passed from the moment the user made the request (for example, user clicked on a link), until the browser received the last byte of the response from the Platform Server.  
 DMan | Device Manufacturer | The name of the device manufacturer. The value is collected only when running the application natively on a mobile device.  
 DMod | Device Model | The name of the device model. The value is collected only when running the application natively on a mobile device.  
 DPlat | Device Platform | The operating system running on the device. The value is collected only when running the application natively on a mobile device.  
 DPlatV | Device Platform Version | The version of the device's operating system. The value is collected only when running the application natively on a mobile device.  
-NT | Network Type | The active network type used by the device. This can either be the Carrier Network Type (e.g. 3G) or WiFi. The value is collected only when running the application natively on a mobile device.  
+NT | Network Type | The active network type used by the device. This can either be the Carrier Network Type (for example, 3G) or WiFi. The value is collected only when running the application natively on a mobile device.  
 CN | Carrier Name | The name of the communications service provider of the device. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
 CCC | Client Country Code | The ISO-Alpha2 country code associated with the device's carrier. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
 CNT | Carrier Network Type | The active network type provided by the device's carrier, such as 3G or GPRS. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
-  
-#### Request Event Details for WebScreenServerExecuted Event
+
+#### Request event details for WebScreenServerExecuted event { #webscreenserverexecuted-details }
 
 This event occurs whenever the server finishes handling a request. The event's properties are the following:
 
@@ -275,9 +277,9 @@ EN | Environment Name | The name of the environment the user was accessing.
 FN | Front-end Name | The name of the front-end server that handled the request.  
 EPN | EndPoint Name | The name of the web screen that was handling the request.  
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
 AK | Action Key | The key of the action that was handling the request.  
-D | Duration | The total time, in milliseconds, the server spent serving the request. %%Note: If the application server (e.g. IIS) queued the request due to server load, the time spent waiting in the queue is not included in this metric.  
+D | Duration | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, the time spent waiting in the queue isn't included in this metric.  
 TQT | Total Query Time | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries).  
 TQE | Total Query Executions | The total number of executed queries (Aggregates and Advanced Queries).  
 TET | Total Extension Time | The total time spent, in milliseconds, calling actions provided by extensions.  
@@ -290,19 +292,19 @@ IP | Client IP | The client's public IP address, collected from the [X-FORWARDED
 SAT | Session Acquisition Time | The time spent, in milliseconds, retrieving the session from the database.  
 SS | Session Size | The session size, in bytes  
 VSS | View State Size | The view state, in bytes.  
-UID | User Id | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity. %%If the request was made by an anonymous user, the User Id is not included in the event attributes.
-EC | Number of errors | The number of errors that occured during the request.
+UID | User Id | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the User Id isn't included in the event attributes.
+EC | Number of errors | The number of errors that occurred during the request.
 
-#### Request Event Details for QueryExecuted Event
+#### Request event details for QueryExecuted event { #queryexecuted-details }
 
-This event occurs when OutSystems Platform detects a [slow query](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
+This event occurs when the platform detects a [slow query](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
 Property | Meaning | Description  
 ---|---|---  
 TK | Tenant Key | A unique key identifying the tenant.  
 TN | Tenant Name | The name of the tenant.  
 AK | Action Key | The key of the action that was handling the request.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
 EK | Environment Key | The unique key identifying the environment the user was accessing.  
 EN | Environment Name | The name of the environment the user was accessing.  
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
@@ -312,11 +314,11 @@ D | Duration | The total duration of all the slow query executions.
 OK | Object Key | The key that identifies the slow query.  
 ON | Object Name | The name of the slow query.  
 NE | Number of Executions | The total number of calls for a given slow query.  
-OEK | Object’s eSpace Key | The key of the application module where the slow query was called.  
-OEN | Object’s eSpace Name | The name of the application module where the slow query was called.  
-EC | Number of errors | The number of errors that occured during the request.
+OEK | Object's eSpace Key | The key of the application module where the slow query was called.  
+OEN | Object's eSpace Name | The name of the application module where the slow query was called.  
+EC | Number of errors | The number of errors that occurred during the request.
 
-#### Request Event Details for ConsumedIntegrationExecuted Event
+#### Request event details for ConsumedIntegrationExecuted event { #consumedintegrationexecuted-details }
 
 This event occurs when the platform detects a [slow consumed integration](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
@@ -325,7 +327,7 @@ Property | Meaning | Description
 TK | Tenant Key | A unique key identifying the tenant.  
 TN | Tenant Name | The name of the tenant.  
 EK | Environment Key | The unique key identifying the environment the user was accessing.  
-EN | Environment Name | The name of the environment the user was accessing. 
+EN | Environment Name | The name of the environment the user was accessing.
 FN | Front-end Name | The name of the front-end server that handled the request.  
 ON | Object Name | The name of the slow integration method.  
 OK | Object Key | The key that identifies the slow integration method.  
@@ -335,13 +337,13 @@ NE | Number of Executions | The total number of calls for a given slow integrati
 D | Duration | The total duration of all the slow integration executions.  
 EPN | EndPoint Name | The name of the web screen that was handling the request.  
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)".  
 AK | Action Key | The key of the action that was handling the request.  
 IT | Integration Type | The integration type. Current supported integration types: SOAP, REST and SAP.  
 IE | Integration Endpoint | The integration's endpoint URL.  
-EC | Number of errors | The number of errors that occured during the request.
-  
-#### Request Event Details for ExtensionExecuted Event
+EC | Number of errors | The number of errors that occurred during the request.
+
+#### Request event details for ExtensionExecuted event { #extensionexecuted-details }
 
 This event occurs when the platform detects a [slow extension action](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md#about-slow-calls). The event's properties are the following:
 
@@ -356,10 +358,72 @@ OK | Object key | The key that identifies the slow extension's action.
 ON | Object name | The name of the slow extension's action.  
 OEK | Object's eSpace key | The key of the eSpace where the slow extension action was called.  
 OEN | Object's eSpace name | The name of the eSpace where the slow extension action was called.  
-NE | Number of Executions | The total number of calls for a given slow extension’s action.  
+NE | Number of Executions | The total number of calls for a given slow extension's action.  
 D | Duration | The total duration of all the slow extension executions.  
 EPK | EndPoint Key | The key of the web screen that was handling the request.  
 EPN | EndPoint Name | The name of the web screen that was handling the request.  
 AK | Action Key | The key of the action that was handling the request.  
-AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions. %%Note: If the web screen does not have a Preparation action, or if a cached version was served, then ActionName is "(PageRender)".  
-EC | Number of errors | The number of errors that occured during the request.
+AN | Action Name | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then ActionName is "(PageRender)".  
+EC | Number of errors | The number of errors that occurred during the request.
+
+#### Request event details for ScreenServer event { #screenserver-details }
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps.
+
+</div>
+
+This event occurs whenever the server finishes handling a request. This is identical to WebScreenServerExecuted without its client counterpart. The event's properties are the following:
+
+| Property | Meaning                               | Description                                                  |
+| -------- | ------------------------------------- | ------------------------------------------------------------ |
+| TK       | Tenant Key                            | A unique key identifying the tenant.                         |
+| TN       | Tenant Name                           | The name of the tenant.                                      |
+| EK       | Environment Key                       | The unique key identifying the environment the user was accessing. |
+| EN       | Environment Name                      | The name of the environment the user was accessing.          |
+| FN       | Front-end Name                        | The name of the front-end server that handled the request.   |
+| EPN      | EndPoint Name                         | The name of the web screen that was handling the request.    |
+| EPK      | EndPoint Key                          | The key of the web screen that was handling the request.     |
+| AN       | Action Name                           | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
+| AK       | Action Key                            | The key of the action that was handling the request.         |
+| D        | Duration                              | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, this metric doesn't include the time spent waiting in the queue. |
+| TQT      | Total Query Time                      | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). |
+| TQE      | Total Query Executions                | The total number of executed queries (Aggregates and Advanced Queries). |
+| TET      | Total Extension Time                  | The total time spent, in milliseconds, calling actions provided by extensions. |
+| TEE      | Total Extension Executions            | The total number of calls to actions provided by extensions. |
+| TCIT     | Total Consumed Integration Time       | The total time spent, in milliseconds, calling actions provided by consumed integrations (SOAP, REST, SAP). |
+| TCIE     | Total Consumed Integration Executions | The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP). |
+| TSAT     | Total Consumed Service Action Time    | The total time spent, in milliseconds, calling service actions. |
+| TSAE     | Total Consumed Service Action Calls   | The total number of calls of service actions.                |
+| IP       | Client IP                             | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875). |
+| UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the event attributes don't include the User Id. |
+| EC       | Number of errors                      | The number of errors that occurred during the request.        |
+
+#### Request event details for TimerExecuted event { #timerexecuted-details }
+
+This event occurs whenever the server finishes handling a timer. The event's properties are the following:
+
+| Property | Meaning                               | Description                                                  |
+| -------- | ------------------------------------- | ------------------------------------------------------------ |
+| TK       | Tenant Key                            | A unique key identifying the tenant.                         |
+| TN       | Tenant Name                           | The name of the tenant.                                      |
+| EK       | Environment Key                       | The unique key identifying the environment the user was accessing. |
+| EN       | Environment Name                      | The name of the environment the user was accessing.          |
+| FN       | Front-end Name                        | The name of the front-end server that handled the request.   |
+| EPN      | EndPoint Name                         | The name of the web screen that was handling the request.    |
+| EPK      | EndPoint Key                          | The key of the web screen that was handling the request.     |
+| AN       | Action Name                           | The name of the action that was handling the request. Actions include the Preparation action and Screen Actions.<br/>Note: If the web screen doesn't have a Preparation action, or if a cached version was served, then the ActionName is "(PageRender)". |
+| AK       | Action Key                            | The key of the action that was handling the request.         |
+| D        | Duration                              | The total time, in milliseconds, the server spent serving the request.<br/>Note: If the application server (for example, IIS) queued the request due to server load, this metric doesn't include the time spent waiting in the queue. |
+| TQT      | Total Query Time                      | The total time spent, in milliseconds, executing queries (Aggregates and Advanced Queries). |
+| TQE      | Total Query Executions                | The total number of executed queries (Aggregates and Advanced Queries). |
+| TET      | Total Extension Time                  | The total time spent, in milliseconds, calling actions provided by extensions. |
+| TEE      | Total Extension Executions            | The total number of calls to actions provided by extensions. |
+| TCIT     | Total Consumed Integration Time       | The total time spent, in milliseconds, calling actions provided by consumed integrations (SOAP, REST, SAP). |
+| TCIE     | Total Consumed Integration Executions | The total number of calls to actions provided by consumed integrations (SOAP, REST, SAP). |
+| TSAT     | Total Consumed Service Action Time    | The total time spent, in milliseconds, calling service actions. |
+| TSAE     | Total Consumed Service Action Calls   | The total number of calls of service actions.                |
+| IP       | Client IP                             | The client's public IP address, collected from the [X-FORWARDED-FOR header](http://tools.ietf.org/html/rfc7239#section-5.2), or if that doesn't exist, from the [REMOTE_ADDR header](https://www.ietf.org/rfc/rfc3875). For TimerExecuted, this reflects the IP address of the Scheduler Service that triggered the timer. |
+| UID      | User Id                               | The unique identifier of the user that made the request. It corresponds to the user's identifier stored in the User system entity.<br/>If the request was made by an anonymous user, the User Id isn't included in the event attributes. |
+| EC       | Number of errors                      | The number of errors that occurred during the request.        |

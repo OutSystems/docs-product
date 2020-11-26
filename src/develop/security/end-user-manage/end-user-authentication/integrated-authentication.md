@@ -1,6 +1,6 @@
 ---
 summary: Learn more about Integrated Windows Authentication in OutSystems.
-tags: support-Mobile_Apps; support-webapps
+tags: runtime-traditionalweb
 ---
 
 # Integrated Authentication

@@ -61,7 +61,7 @@ After following these steps and publishing the module, you can test the pattern 
        
 ## Properties
 
-| **Property** | **Description** | 
+| Property | Description | 
 |---|---|
 | VideoURL (Text): Mandatory | The video file URL or the runtime path of the resource video file. |
 | PosterURL (Text): Optional | The URL to the poster image that displays before the video starts. |

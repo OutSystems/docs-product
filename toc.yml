@@ -157,6 +157,7 @@
                 - href: develop/ui/patterns/mobile/content/cardbackground.md
                 - href: develop/ui/patterns/mobile/content/carditem.md
                 - href: develop/ui/patterns/mobile/content/cardsectioned.md
+                - href: develop/ui/patterns/mobile/content/chatmessage.md
                 - href: develop/ui/patterns/mobile/content/flipcontent.md
                 - href: develop/ui/patterns/mobile/content/floatingcontent.md
                 - href: develop/ui/patterns/mobile/content/listitemcontent.md
@@ -165,6 +166,7 @@
                 - href: develop/ui/patterns/mobile/content/tag.md
                 - href: develop/ui/patterns/mobile/content/tooltip.md
                 - href: develop/ui/patterns/mobile/content/useravatar.md
+                - href: develop/ui/patterns/mobile/interaction/actionsheet.md
                 - href: develop/ui/patterns/mobile/interaction/animate.md
                 - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
                 - href: develop/ui/patterns/mobile/interaction/carousel.md
@@ -181,6 +183,7 @@
                 - href: develop/ui/patterns/mobile/interaction/search.md
                 - href: develop/ui/patterns/mobile/interaction/sidebar.md
                 - href: develop/ui/patterns/mobile/interaction/stackedcards.md
+                - href: develop/ui/patterns/mobile/interaction/video.md
                 - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
                 - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
                 - href: develop/ui/patterns/mobile/navigation/pagination.md
@@ -199,6 +202,7 @@
                 - href: develop/ui/patterns/mobile/utilities/buttonloading.md
                 - href: develop/ui/patterns/mobile/utilities/centercontent.md
                 - href: develop/ui/patterns/mobile/utilities/margincontainer.md
+                - href: develop/ui/patterns/mobile/utilities/mouseevents.md
                 - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                 - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md             

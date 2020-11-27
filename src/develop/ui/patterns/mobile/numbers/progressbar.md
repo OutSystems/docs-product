@@ -21,7 +21,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     ![](<images/progressbar-3-ss.png>)
 
-1. On the **Properties** tab, in the **Progress** property, enter the progess percentage. In this example we enter `55` but you can also use functions or local variables.
+1. On the **Properties** tab, in the **Progress** property, enter the progress percentage. In this example we enter `55` but you can also use functions or local variables.
 
     ![](<images/progressbar-4-ss.png>)
 

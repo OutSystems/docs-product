@@ -1520,6 +1520,10 @@
     - external:
        - "OutSystems UI Pattern":  
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
+- develop/ui/patterns/mobile/interaction/video.md:
+    - external:
+       - "OutSystems UI Pattern":  
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=81
 - develop/ui/patterns/mobile/navigation/bottombaritem.md:
     - external:
         - "OutSystems UI Pattern": 

@@ -53,7 +53,7 @@ After following these steps and publishing the module, you can test the pattern 
        
 ## Properties
 
-| **Property** | **Description** | 
+| Property | Description | 
 |---|---|
 | IsOpen(Boolean): Mandatory | Assign a variable open/close the Action Sheet. |
 | ExtendedClass | Add custom style classes to the Action sheet UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Action Sheet UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Action Sheet UI styles being applied.</li></ul> |

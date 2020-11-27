@@ -17,7 +17,7 @@ You can use the Chat Message UI Pattern to display conversational posts in notif
 
     ![](<images/chatmessage-1-ss.png>)
 
-1. To From the Toolbox, drag the Chat Message widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the Chat Message widget into the Main Content area of your application's screen.
 
     ![](<images/chatmessage-2-ss.png>)
 

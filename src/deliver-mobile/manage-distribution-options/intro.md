@@ -21,9 +21,9 @@ These are the prerequisites to manage how mobile apps update on user devices.
 
 To manage how mobile apps update on user devices, you need to meet the following requirements:
 
-* Platform Server 11.9.0 and later.
-* LifeTime 11.6.0 and later.
-* MABS 6.2 and later.
+* Platform Server 11.10 or later.
+* LifeTime 11.6.0 or later.
+* MABS 6.2 or later.
 * You activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Configure Mobile application updates distribution** in LifeTime in **all environments**. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
 * You create and distribute the native mobile builds of your apps to submit them to the app stores. This means you created and app based on **Phone App** or **Tablet App** in Service Studio. 
 * Ensure you can follow the steps in [How to develop an app that updates only through the app stores](#how-to-develop-an-app-that-updates-only-through-the-app-stores).
@@ -168,7 +168,7 @@ Follow these steps to check if an app receives store-only updates or hybrid upda
 
 If you're a Service Studio developer or LifeTime administrator, keep in mind the following workflow for managing apps with store-only updates distribution.
 
-1. Before you change the app updates setting, define a minimum app version and generate the new version with Platform Server 11.9. You need to ensure that the **users have the version of the app that recognizes the new distribution configuration**. Check out the community-contributed plugins [App BuildInfo Plugin](https://www.outsystems.com/forge/component-overview/5580/app-buildinfo-plugin) and [Mobile Force Install Manager](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=3493) to assist you in meeting this requirement.
+1. Before you change the app updates setting, define a minimum app version and generate the new version with Platform Server 11.10. You need to ensure that the **users have the version of the app that recognizes the new distribution configuration**. Check out the community-contributed plugins [App BuildInfo Plugin](https://www.outsystems.com/forge/component-overview/5580/app-buildinfo-plugin) and [Mobile Force Install Manager](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=3493) to assist you in meeting this requirement.
 
 1. Create logic that's resistant to breaking changes. Here are the two key guidelines. 
     

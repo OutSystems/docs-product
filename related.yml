@@ -23,6 +23,10 @@
   - ref/logic/expressions/operands.md
   - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md
 
+- develop/logic/exceptions/handling-mechanism.md:
+    - ref/lang/auto/Class.Exception Handler.final.md
+    - ref/lang/auto/Class.Raise Exception.final.md
+
 # Caching
 - develop/data/caching.md:
   - develop/reuse-and-refactor/strong-weak-dependencies.md
@@ -807,6 +811,10 @@
 -  ref/lang/auto/Class.Send Email.final.md:
     - develop/logic/emails.md
 
+#  Invalid Link Error
+-  ref/errors-and-warnings/errors/invalid-link-error.md:
+    - one-way: ref/lang/auto/Class.Link Widget.final.md
+    
 # Configuration Tool
 
 - ref/configuration-tool/tabs/platform-oracle.md:
@@ -854,6 +862,13 @@
     - external:
         - "Blog post: How to Implement HTTP Status Codes When Exposing a REST API in OutSystems":
             https://www.outsystems.com/blog/posts/implementing-http-status-code-exposing-rest/
+
+- extensibility-and-integration/rest/expose-rest-apis/customize-rest-urls.md:
+    - external:
+        - "Best practices for REST API design (Stack Overflow blog)":
+            https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+        - "5 Basic REST API Design Guidelines (RestCase blog)":
+            https://blog.restcase.com/5-basic-rest-api-design-guidelines/
 
 # --- Managing the Applications Lifecycle > Containers ---
 
@@ -1505,6 +1520,10 @@
     - external:
        - "OutSystems UI Pattern":  
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
+- develop/ui/patterns/mobile/interaction/video.md:
+    - external:
+       - "OutSystems UI Pattern":  
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=81
 - develop/ui/patterns/mobile/navigation/bottombaritem.md:
     - external:
         - "OutSystems UI Pattern": 

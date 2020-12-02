@@ -5,4 +5,4 @@ tags:
 
 The BPT API provides functionality to manage processes and activities.
 
-To use this API simply reference the **BPT_API extension** using the References Window in the development environment.
+To use this API, first reference the **BPT_API** extension by using the **Manage Dependencies** (**Ctrl+Q**) window in Service Studio.

@@ -55,7 +55,7 @@ To follow the principle of security by default, the default role of users should
 
 ![default role](images/about-permission-levels-2.png)
 
-### Role assigned to users for a team
+### Role assigned to users for a team { #role-assigned-to-users-for-a-team }
 
 While [adding an IT user to a team](create-an-it-team.md#add-it-users-to-the-team), it's mandatory to define the role that will be applied to the user when dealing with **the applications that belong to that team**.
 
@@ -65,7 +65,7 @@ The role assigned to users for teams **overrides the default role** of the users
 
 This allows granting permissions for all applications that the team manages, without having to grant permissions on each application individually.
 
-### Role assigned to users for a specific application
+### Role assigned to users for a specific application { #role-assigned-to-users-for-a-specific-application }
 
 It's also possible to [assign a role directly to one user for a specific application](create-an-it-role.md#assign-a-role-to-a-user-for-a-specific-application). This provides flexibility for more exceptional situations where it may be useful to either **grant or revoke the permissions of users for particular applications** without using teams.
 

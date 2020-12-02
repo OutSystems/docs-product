@@ -9,7 +9,11 @@ Create new Screen Templates and make them available in your environment by addin
 
 ## Creating a Custom Screen Templates Module
 
-To add new Screen Templates to your environment, you first need at least one clone of [Custom Screen Templates Web](<https://www.outsystems.com/forge/component-overview/5089/custom-screen-templates-web>) or [Custom Screen Templates Mobile](<https://www.outsystems.com/forge/component-overview/5060/custom-screen-templates-mobile>).
+To add new Screen Templates to your environment, you first need to clone one of the Screen Template components: 
+
+* [Custom Screen Templates Reactive](https://www.outsystems.com/forge/component-overview/7127/custom-screen-templates-reactive) for Reactive Web Apps
+* [Custom Screen Templates Mobile](<https://www.outsystems.com/forge/component-overview/5060/custom-screen-templates-mobile>) for Mobile Apps
+* [Custom Screen Templates Traditional Web](<https://www.outsystems.com/forge/component-overview/5089/custom-screen-templates-web>) for Traditional Web Apps
 
 1. In Service Studio, go to the **outsystems** tab and search for **Custom Screen Templates**. There are three components in the results list: one for Mobile Apps, one for Reactive Apps, and one for Web Apps.
 

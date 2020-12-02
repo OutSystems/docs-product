@@ -204,7 +204,7 @@ To implement the form validations, use server action that the app calls after su
 
 The **Valid** property of the form is  `False` when: 
 
-* A of the built-in validation fails
+* Built-in validation for any field fails
 * You assign `False` to the **Valid** property of any field of the form
   
 The validation messages show next to all fields with invalid inputs.

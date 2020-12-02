@@ -32,7 +32,7 @@ You can configure, generate, and download an iOS mobile app package of your app 
 
 To use Service Studio, do the following:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab and check out the section **Native Platforms**.
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#config-generate-service-studio>) tab and check out the section **Native Platforms**.
 1. Click on the **Configure iOS App** button or the iOS cog icon button if you've already generated a previous iOS app.
 1. In the  **Build type** dropdown, select the `Development` option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`). You have to register the same app identifier in your Apple Developer Account.
@@ -45,7 +45,7 @@ To use Service Center, do the following:
 
 1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
 1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list.
-1. Select the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the **Configure** link for the iOS entry in the **Native Platforms** section.
+1. Select the [Distribute](<intro.md#config-generate-service-center>) tab and click on the **Configure** link for the iOS entry in the **Native Platforms** section.
 1. In the **Build type** dropdown, select the `Development` option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname` ).
 1. Provide a certificate of type `iOS App Development` and its password. The certificate should have a `.p12` file extension.
@@ -77,7 +77,7 @@ You can configure, generate, and download an Android mobile app package of your 
 
 To use Service Studio, do the following:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab and check out the **Native Platforms** section.
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#config-generate-service-studio>) tab and check out the **Native Platforms** section.
 1. Click on the **Configure Android App** button or the Android cog icon button if you've already generated a previous Android app.
 1. In the "Build type" dropdown, select the `Debug` option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`).
@@ -93,7 +93,7 @@ To use Service Center, do the following:
 
 1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
 1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list.
-1. Select the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab, locate the **Native Platforms** section, and click on the **Configure** link for the Android entry.
+1. Select the [Distribute](<intro.md#config-generate-service-center>) tab, locate the **Native Platforms** section, and click on the **Configure** link for the Android entry.
 1. In the **Build type** dropdown, select the `Debug` option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`).
 1. _(Optional step)_ If you want to use a custom keystore to sign the debug version of your app:

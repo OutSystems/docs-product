@@ -22,6 +22,6 @@ To use Active Directory domain authentication:
 
 1. Add the authentication domain in the **Default Domain** text field.
 
-1. To enable Integrated Windows Authentication for all applications, select **Windows Integrated Authentication**.
+1. To enable Integrated Windows Authentication for all applications, select **Windows Integrated Authentication** (only available in Traditional Web applications).
 
     Alternatively, you can enable Integrated Windows Authentication for a just [a selected number of elements](integrated-authentication.md) in Service Studio (for example, just for some web screens, web flows or web services).

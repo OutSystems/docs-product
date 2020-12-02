@@ -18,7 +18,7 @@ Time | #00:00:00# | #12:20:56# | Minimum value: #00:00:00# %% %% Maximum value: 
 Date Time | #1900-01-01 00:00:00# | #1988-08-28 23:59:59# | The supported range is [#1900-01-01 00:00:00#, #3000-12-31 23:59:59#]%% %%Refer to the [additional notes](<#date-time-notes>) about the time zone conversions.  
 Integer | 0 | 2147483600 | Minimum value: -2^31, which is -2147483648.%% %% Maximum value: 2^31-1, which is 2147483647.  
 Long Integer | 0 | 5645245584135987412 | Minimum value: -2^63%% Maximum value: 2^63-1  
-Decimal | 0.0 | -158121.025 4000.0 | Integer and decimal parts must be separated by a period. %% %% Minimum value: -2^96 %% %%Maximum value: 2^96-1%% %%The maximum number of digits in the decimal part is 8.   
+Decimal | 0.0 | -158121.025 %%4000.0 | Integer and decimal parts must be separated by a period. %% %% Minimum value: -2^96 %% %%Maximum value: 2^96-1%% %%The maximum number of digits in the decimal part is 8.   
 Email | "" (empty string) | "[fran.wilson@company.com](mailto:fran.wilson@company.com "mailto:fran.wilson@company.com")" |  
 Phone Number | "" (empty string) | "+1 555 565 3730" |  
 Text | "" (empty string) | "My name is Christina Sharp." |  
@@ -135,6 +135,6 @@ Decimal | Boolean %%Integer %%Text | [DecimalToBoolean](../../lang/auto/builtinf
 Entity Identifier (Integer) | Integer | [IdentifierToInteger](../../lang/auto/builtinfunction.Data Conversion.final.md#IdentifierToInteger)  
 Entity Identifier (Long Integer) |  Long Integer  | [IdentifierToLongInteger](../../lang/auto/builtinfunction.Data Conversion.final.md#IdentifierToLongInteger)  
 Entity Identifier (Text) | Text | [IdentifierToText](../../lang/auto/builtinfunction.Data Conversion.final.md#IdentifierToText)  
-Text | Date %%Date Time %%Decimal %%Integer %%Time %%Text Identifier | [TextToDate](../../lang/auto/builtinfunction.Data Conversion.final.md#>TextToDate)%% [TextToDateTime](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToDateTime)%% [TextToDecimal](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToDecimal)%% [TextToInteger](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToInteger)%% [TextToTime](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToTime)%% [TextToIdentifier](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToIdentifier)  
+Text | Date %%Date Time %%Decimal %%Integer %%Time %%Text Identifier | [TextToDate](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToDate)%% [TextToDateTime](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToDateTime)%% [TextToDecimal](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToDecimal)%% [TextToInteger](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToInteger)%% [TextToTime](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToTime)%% [TextToIdentifier](../../lang/auto/builtinfunction.Data Conversion.final.md#TextToIdentifier)  
 Time | Text | [TimeToText](../../lang/auto/builtinfunction.Data Conversion.final.md#TimeToText)  
 Any data type | Object | [ToObject](../../lang/auto/builtinfunction.Data Conversion.final.md#ToObject)  

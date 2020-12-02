@@ -157,6 +157,7 @@
                 - href: develop/ui/patterns/mobile/content/cardbackground.md
                 - href: develop/ui/patterns/mobile/content/carditem.md
                 - href: develop/ui/patterns/mobile/content/cardsectioned.md
+                - href: develop/ui/patterns/mobile/content/chatmessage.md
                 - href: develop/ui/patterns/mobile/content/flipcontent.md
                 - href: develop/ui/patterns/mobile/content/floatingcontent.md
                 - href: develop/ui/patterns/mobile/content/listitemcontent.md
@@ -165,6 +166,7 @@
                 - href: develop/ui/patterns/mobile/content/tag.md
                 - href: develop/ui/patterns/mobile/content/tooltip.md
                 - href: develop/ui/patterns/mobile/content/useravatar.md
+                - href: develop/ui/patterns/mobile/interaction/actionsheet.md
                 - href: develop/ui/patterns/mobile/interaction/animate.md
                 - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
                 - href: develop/ui/patterns/mobile/interaction/carousel.md
@@ -181,6 +183,7 @@
                 - href: develop/ui/patterns/mobile/interaction/search.md
                 - href: develop/ui/patterns/mobile/interaction/sidebar.md
                 - href: develop/ui/patterns/mobile/interaction/stackedcards.md
+                - href: develop/ui/patterns/mobile/interaction/video.md
                 - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
                 - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
                 - href: develop/ui/patterns/mobile/navigation/pagination.md
@@ -199,6 +202,7 @@
                 - href: develop/ui/patterns/mobile/utilities/buttonloading.md
                 - href: develop/ui/patterns/mobile/utilities/centercontent.md
                 - href: develop/ui/patterns/mobile/utilities/margincontainer.md
+                - href: develop/ui/patterns/mobile/utilities/mouseevents.md
                 - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                 - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md             
@@ -297,6 +301,13 @@
         - topics:
             - href: develop/ui/multilingual/multilingual-web.md
             - href: develop/ui/multilingual/translations-editor.md
+
+        # Multilingual Technical Preview
+        - href: develop/ui/multilingual-tp/intro.md
+        - topics:
+            - href: develop/ui/multilingual-tp/translate-your-app.md
+            - href: develop/ui/multilingual-tp/translation-editor.md
+            - href: develop/ui/multilingual-tp/translation-management.md
         
     # Implement Application Logic
     - href: develop/logic/intro.md
@@ -496,6 +507,14 @@
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-services.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/reference.md
         - href: extensibility-and-integration/artificial-intelligence/azure-reference.md
+        - href: extensibility-and-integration/artificial-intelligence/ml-builder/intro.md
+        - topics:
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/getting-started.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/creating-model.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/implement-model.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/data-considerations.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/model-performance.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/compliance-legal-faq.md
 
 
     - href: extensibility-and-integration/mobile-plugins/intro.md
@@ -915,26 +934,30 @@
                 # Logic Tools
                 - href: ref/logic/implementing-logic/logic-tools/intro.md 
                 - topics:
-                    - href: ref/lang/auto/Class.Aggregate.final.md
-                    - href: ref/lang/auto/Class.Assign.final.md
+                    - href: ref/lang/auto/Class.Start.final.md
                     - href: ref/lang/auto/Class.Run Client Action.final.md
                     - href: ref/lang/auto/Class.Run Server Action.final.md
-                    - href: ref/lang/auto/Class.JavaScript.final.md
+                    - href: ref/lang/auto/Class.Refresh Data.final.md
+                    - href: ref/lang/auto/Class.Aggregate.final.md
+                    - href: ref/lang/auto/Class.SQL.final.md
+                    - href: ref/lang/auto/Class.If.final.md
+                    - href: ref/lang/auto/Class.Switch.final.md
+                    - href: ref/lang/auto/Class.For Each.final.md
+                    - href: ref/lang/auto/Class.Assign.final.md
+                    - href: ref/lang/auto/Class.Record List To Excel.final.md
+                    - href: ref/lang/auto/Class.Excel To Record List.final.md
                     - href: ref/lang/auto/Class.JSON Deserialize.final.md
                     - href: ref/lang/auto/Class.JSON Serialize.final.md
-                    - href: ref/lang/auto/Class.Refresh Data.final.md
-                    - href: ref/lang/auto/Class.Message.final.md
-                    - href: ref/lang/auto/Class.Destination.final.md
-                    - href: ref/lang/auto/Class.If.final.md
-                    - href: ref/lang/auto/Class.For Each.final.md
-                    - href: ref/lang/auto/Class.Switch.final.md
-                    - href: ref/lang/auto/Class.Comment.final.md
                     - href: ref/lang/auto/Class.Exception Handler.final.md
                     - href: ref/lang/auto/Class.Raise Exception.final.md
+                    - href: ref/lang/auto/Class.Comment.final.md             
+                    - href: ref/lang/auto/Class.Message.final.md
+                    - href: ref/lang/auto/Class.Destination.final.md
+                    - href: ref/lang/auto/Class.Download.final.md
+                    - href: ref/lang/auto/Class.JavaScript.final.md 
                     - href: ref/lang/auto/Class.Trigger Event.final.md
-                    - href: ref/lang/auto/Class.End.final.md
-                    - href: ref/lang/auto/Class.Start.final.md
-
+                    - href: ref/lang/auto/Class.End.final.md  
+                
         # Interfaces
         - href: ref/interfaces/intro.md
         - topics:
@@ -1226,7 +1249,8 @@
         - href: ref/configuration-tool/tabs/cache.md
         - href: ref/configuration-tool/tabs/network.md
         - href: ref/configuration-tool/tabs/scheduler.md
-    
+        - href: ref/configuration-tool/create-indexes.md
+
     # Errors and Warnings
     - href: ref/errors-and-warnings/intro-errors-and-warnings.md
     - topics:

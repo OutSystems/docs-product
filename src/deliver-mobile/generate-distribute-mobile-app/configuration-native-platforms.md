@@ -12,7 +12,7 @@ The **Distribute** tab in Service Center, section **Native Platforms**, presents
 Platform
 :   The mobile platform being configured: iOS or Android.
 
-Package of Last Tagged Version	
+Package of Last Tagged Version
 :   Details of the latest package built from the last tagged version. Contains information on the version number, version code and MABS version used to generate the mobile app package.  
 
     There are two operations available in this column:  
@@ -38,7 +38,7 @@ Version
     — **Code:** An automatically incremented number, unless configured manually. For more information check [Customizing the Mobile App Version Code](<intro.md#customizing-the-mobile-app-version-code>).
 
 Settings
-:   Allows you to configure the settings for the current mobile platform. For more information check [Configure and Generate a Mobile App Package in Service Center](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>).
+:   Allows you to configure the settings for the current mobile platform. For more information check [Configure and Generate a Mobile App Package in Service Center](intro.md#config-generate-service-center).
 
 Domain Name
 :   Current domain name for the mobile app (this setting is common to all mobile platforms). For more information check [Customizing the Mobile App Domain Name](<intro.md#customizing-the-mobile-app-domain-name>).

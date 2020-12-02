@@ -30,3 +30,23 @@ If you want to use the value of a Site Property in the client-side logic of a mo
 1. Select the module in which the Site Properties are stored.
 1. Click on the **Site Properties** tab and select the Site Property whose value you want to change.
 1. Change the Effective Value of the Site Property and click Apply.
+
+## Usage
+
+This section explains how to use a Site Property, using an example of an aggregate called **GetMovies** to retrieve records about movies from a **Movie** Entity, with the default maximum records of 50.
+
+Follow the steps below.
+
+1. On the **Data** tab, right-click **Site Property**.
+1. Select **Add Site Property**.
+1. On the **Name** property, enter `MaxRecords`.
+1. On the **DataType** property, enter `Integer`.
+1. On the **Default Value** property, enter `10`.
+1. Select the **GetMovies** Aggregate and set the **Max. Records** property value to `Site.MaxRecords`.
+1. Click the **1-Publish** button to publish your app, and open it on your web browser.
+1. Open a screen that uses the **GetMovies** Aggregate.
+1. Click on the **Module Management** ícon at the top-left side to open Service Center or open Service Studio on your web browser by typing `https://<Hostname>.outsystemscloud.com/ServiceCenter/eSpace_SiteProperty_Edit.aspx`.
+1. Click on **Factory** and then **Modules**, and select the module on which you applied the Site Property.
+1. Go to **Site Properties** and check that it lists the **MaxRecords** Site Property.
+1. Change the **MaxRecords** value and refresh the page.
+1. The MaxRecords displayed must adopt the new value.

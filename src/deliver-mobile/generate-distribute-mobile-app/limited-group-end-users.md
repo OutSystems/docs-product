@@ -30,7 +30,7 @@ You can generate your iOS app package in Service Studio or in Service Center.
 
 To use Service Studio, do the following:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab, and check out the **Native Platforms** section.
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#config-generate-service-studio>) tab, and check out the **Native Platforms** section.
 1. Click on the **Configure iOS App** button or the iOS cog icon if you've already generated a previous iOS app. 
 1. In the **Build type** dropdown, select the `Ad-Hoc` option. 
 1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). You have to register the same app identifier in your Apple Developer Account. 
@@ -44,7 +44,7 @@ To use Service Center, do the following:
 
 1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`). 
 1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list. 
-1. Select the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the **Configure** link for the iOS entry, in the **Native Platforms** section.
+1. Select the [Distribute](<intro.md#config-generate-service-center>) tab and click on the **Configure** link for the iOS entry, in the **Native Platforms** section.
 1. In the **Build type** dropdown, select the `Ad-Hoc` option. 
 1. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). 
 1. Provide a certificate of the correct type (see "Before You Start") and its password. The certificate should have a .p12 file extension. 
@@ -75,7 +75,7 @@ You can generate your mobile app package in Service Studio or in Service Center.
 
 To use Service Studio, do the following:
 
-1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-studio>) tab, and check out the **Native Platforms** section.
+1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#config-generate-service-studio>) tab, and check out the **Native Platforms** section.
 2. Click on the **Configure Android App** button or the Android cog icon button if you've already generated a previous Android app. 
 3. In the **Build type** dropdown, select the `Release` option. 
 4. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). 
@@ -89,7 +89,7 @@ To use Service Center, do the following:
 
 1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`). 
 2. Go to **Factory**, click on the  Applications  tab and open your application from the applications list. 
-3. Select the [Distribute](<intro.md#configure-and-generate-a-mobile-app-package-in-service-center>) tab and click on the **Configure**  link for the Android entry, in the **Native Platforms** section.
+3. Select the [Distribute](<intro.md#config-generate-service-center>) tab and click on the **Configure**  link for the Android entry, in the **Native Platforms** section.
 4. In the **Build type** dropdown, select the `Release` option. 
 5. Keep the default app identifier assigned by OutSystems or write your own (matching reverse domain name notation, e.g. `com.domain.appname`). 
 6. Select the keystore to sign your app and introduce the passwords. If you don't have a keystore to sign your Android apps, [check how to do it](<more-information.md#create-a-keystore>). 

@@ -24,3 +24,13 @@ To add a resource do the following:
     * **Description**: description of the resource.
 
 ![](images/tip.gif) The [Resource editor](<../../../ref/integration-studio/editor/resource.md>) allows you to later change the resource properties.
+
+<div class="info" markdown="1">
+
+When including a DLL (Dynamic Link Library) file as a resource of your extension, beware of a possible name clash between the resource filename and the name of an application module.
+
+For example, you may get runtime issues if you include a resource named `MyResource.dll` in your extension while also having an application module named `MyResource` in the app that uses the extension. Since OutSystems generates a `MyResource.dll` file for this module, the extension resource file might get overwritten, depending on the publishing method you use (1-Click Publish operation or solution publish).
+
+To prevent this, you should rename the application module so that there's no clash between the extension resource filename and the module name.
+
+</div>

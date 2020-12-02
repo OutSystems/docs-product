@@ -13,5 +13,5 @@ The Verify operation checks whether the extension is valid and ready to be publi
 
 To verify your extension do the following:
   
-1. In the File menu or Toolbar, click Verify ![](images/validate.gif), Verify and Save ![](images/verify-save-icon.gif) or [1-Click Publish](<extension-1-cp.md>) ![](images/1-click-publish-icon.gif).
+1. In the **File** menu or in the toolbar, click ![](images/validate.gif) **Verify**, ![](images/verify-save-icon.gif) **Verify and Save**, or ![](images/1-click-publish-icon.gif) [**1-Click Publish**](<extension-1-cp.md>).
 1. Check the [Verify window](<../../../ref/integration-studio/menu/file/extension-verify-window.md>) for any errors and warnings for your extension.

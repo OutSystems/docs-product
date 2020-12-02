@@ -19,12 +19,12 @@ Actions
     These elements are displayed in the Actions folder of the [Extension tree](<../../../ref/integration-studio/multi-tree-navigator.md>).
 
 Structures
-:   Correspond to more complex data types handled by your actions. You must define the Structures for each data type that you want to expose to your module. To create a Structure, in Integration Studio, simply add it [manually](<../managing-extensions/structure-define.md>).
+:   Correspond to more complex data types handled by your actions. You must define the Structures for each data type that you want to expose to your module. To create a Structure, in Integration Studio, add it [manually](<../managing-extensions/structure-define.md>).
 
     These elements are displayed in the Structures folder of the [Extension tree](<../../../ref/integration-studio/multi-tree-navigator.md>).
 
 Entities
-:   Correspond to tables that exist outside OutSystems that you want to access in your application. There must be an Entity for each physical table with which you want to integrate. To create an Entity, in Integration Studio, simply add it [manually](<../managing-extensions/entity-add.md>) or use the [import](<../managing-extensions/entity-import-from-database.md>) feature.
+:   Correspond to tables that exist outside OutSystems that you want to access in your application. There must be an Entity for each physical table with which you want to integrate. To create an Entity, in Integration Studio, add it [manually](<../managing-extensions/entity-add.md>) or use the [import](<../managing-extensions/entity-import-from-database.md>) feature.
 
     These elements are displayed in the Entities folder of the [Extension tree](<../../../ref/integration-studio/multi-tree-navigator.md>).
 

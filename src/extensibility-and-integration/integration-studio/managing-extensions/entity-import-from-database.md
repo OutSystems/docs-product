@@ -2,8 +2,8 @@
 
 OutSystems integrates with external databases, making it possible to use data from those databases in your OutSystems applications.
 
-For this, you can use the 'Connect to External Table or View' wizard in Integration Studio. It will automatically create a connector to the external database and allow you to use the data from the external database in a transparent way, by defining entities and entity attributes that you can use in Service Studio as part of the application data layer.
+For this, you can use the **Connect to External Table or View** wizard in Integration Studio. It automatically creates a connector to the external database and allows you to use the data from the external database in a transparent way, by defining entities and entity attributes that you can use in Service Studio as part of the application data layer.
 
-For the list of supported external databases please see the [System Requirements](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/OutSystems_Platform_system_requirements>).
+For the list of supported external databases, check the [System Requirements](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/OutSystems_Platform_system_requirements>).
 
-The import process is composed of several steps done in different tools. Follow the [Connect to an External Database](<../../connect-external-db.md>) instructions that will take you through all the required steps.
+The import process has several steps done in different tools. Follow the instructions in [Connect to an External Database](<../../connect-external-db.md>) that take you through all the required steps.

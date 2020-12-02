@@ -49,6 +49,12 @@ As a rule, when you create a new application and publish it for the first time, 
 
 Creating a new application module associates it automatically with the **same deployment zone** as the other modules in that application.
 
+<div class="warning" markdown="1">
+
+The OutSystems applications provided in the System Components solution must be available in **all the front-end servers** of your OutSystems environment. Make sure that you only deploy these applications to deployment zones that include all the front-end servers in your environment.
+
+</div>
+
 ## Example
 
 In the following example, we define three deployment zones:

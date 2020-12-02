@@ -38,8 +38,13 @@ Here is an example for a server that is in GMT+01 (Paris) and a mobile device in
  
 If you do not need this scenario in your logic, use data types Date and Time separately to deal with the respective values.
 
+<a id="text-notes"></a>**Text Notes**
 
-## Compound Data Types
+If your database is SQL Server, the length of a Text attribute represents the number of **byte-pairs** that you can store in a column of type Text, rather than the number of characters. Characters defined in the Unicode range 0-65,535 can be stored in one byte-pair. However, characters defined in higher Unicode ranges (65,536-1,114,111), such as emojis, kanji, hiragana, and katakana characters, may use two byte-pairs. This is a [limitation of SQL Server itself](https://docs.microsoft.com/en-us/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql?view=sql-server-ver15#remarks).
+
+If your application needs to store characters defined in higher Unicode ranges, you must take this into account when defining the length of a Text attribute. You must also adjust your client-side and server-side validations so that they take this into consideration.
+
+## Compound data types
 
 <table markdown="1">
 <thead>

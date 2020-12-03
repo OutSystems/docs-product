@@ -3,7 +3,7 @@ summary: Define and manage the user interface, data model, logic and security of
 tags: support-application_development; support-Mobile_Apps; support-webapps; support-webapps-overview
 ---
 
-# Developing an app
+# Developing an Application
 
 You develop apps in Service Studio, the main IDE in OutSystems. A new app usually contains one module with a user interface, and you can use that module to start building your app.
 

@@ -5,20 +5,17 @@ tags: runtime-mobile
 
 # Building apps with AndroidX
 
-AndroidX is a new and much improved support library. The old Support Library is no longer maintained after Android 9.0 (API level 28). This document shows how to create native builds with AndroidX, which is optional in MABS 6.
+AndroidX is a new and much improved Android support library. The Android developers no longer maintain Support Library after Android 9.0 (API level 28). This document shows how to create native builds with AndroidX.
 
 <div class="info" markdown="1">
 
-To build your apps and custom mobile plugins with AndroidX, you need to meet the following requirements:
-
-* You're using MABS 6.3 Beta or later
-* You enabled the AndroidX support library
+To build your apps and custom mobile plugins with AndroidX, you need to be using MABS 6.3 Beta or later. MABS releases after 6.3 Beta have AndroidX enabled by default. 
 
 </div>
 
-When you enable AndroidX, MABS replaces the legacy dependencies from Support Library with the corresponding dependencies from the new AndroidX library. This migration is necessary because Support Libraries and AndroidX packages can't be in the same Android project.
+With AndroidX support, MABS replaces the legacy dependencies from Support Library with the corresponding dependencies from the new AndroidX library. This migration is necessary because Support Libraries and AndroidX packages can't be in the same Android project.
 
-Once you enable the AndroidX support, you should test your apps and make sure that all features are working as expected. Testing is particularly relevant for the features that depend on Support Library, such as custom Cordova plugins.
+You should test your apps and make sure that all features are working as expected. Testing is particularly relevant for the features that depend on Support Library, such as custom Cordova plugins.
 
 For more information about AndroidX migration check out [Migrating to AndroidX](https://developer.android.com/jetpack/androidx/migrate) and [Migrating to AndroidX: tips, tricks, and guidance](https://medium.com/androiddevelopers/migrating-to-androidx-tip-tricks-and-guidance-88d5de238876) by Android Developers.
 
@@ -29,6 +26,12 @@ The content in this document applies only to the native Android apps.
 </div>
 
 ## How to enable AndroidX 
+
+<div class="info" markdown="1">
+
+You need to enable AndoridX if you're using MABS 6.3 Beta. AndoridX is **enabled by default in MABS 7 Beta**.  
+
+</div>
 
 To build a mobile app with AndroidX enabled, do the following: 
 
@@ -47,6 +50,6 @@ To build a mobile app with AndroidX enabled, do the following:
             }
         }
 
-1. Publish the app in your environment. This lets MABS acquire updated resources.
+1. Publish the app in your environment so MABS can acquire the updated resources.
    
 1. Create native mobile builds of the app.

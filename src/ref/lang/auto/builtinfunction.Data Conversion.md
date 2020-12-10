@@ -1257,8 +1257,8 @@ TextToInteger("not a number") = 0
 
 ## TextToLongInteger { #TextToLongInteger }
 
-Converts Text 't' to a Long Integer value.  
-If 't' is outside the boundaries of the Long Integer values the function will return a Long Integer default value. However, if you use TextToLongInteger in an Aggregate and 't' is outside the boundaries of Integer values, the function throws an exception. To check if the conversion is possible you can use the TextToLongIntegerValidate function.  
+Converts Text 't' to a Long Integer value.
+If 't' is outside the boundaries of Long Integer values, the function returns a Long Integer default value. However, if you use TextToLongInteger in an Aggregate and 't' is outside the boundaries of Long Integer values, the function throws an exception. To check if the conversion is possible you can use the TextToLongIntegerValidate function.
 
 Available in:  
 

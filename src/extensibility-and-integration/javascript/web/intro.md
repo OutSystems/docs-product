@@ -60,9 +60,9 @@ There several possibilities for running JavaScript code in your Traditional Web 
 
 ### Run JavaScript code using Extended Properties
 
-You can invoke a JavaScript function when the a given event (for example, `onkeypress` or `onclick`) occurs in a Web Screen or in a widget, like a Button or a Link.
+You can invoke a JavaScript function when a given event occurs (for example, `onkeypress` or `onclick`) in a Web Screen or in a widget, like a Button or a Link.
 
-1. Select the element where you want to invoke the JavaScript function when the users clicks the element.
+1. Select the element where you want to invoke the JavaScript function when an event occurs.
 
 1. In the "Extended Properties" property group, select the event on which you want to run JavaScript code in the **Property** property (without any quotes). For example, `onclick`.
 
@@ -84,7 +84,7 @@ This example shows the properties of a Button configured to invoke the `AlertFie
 
 ### Run JavaScript code using an unescaped Expression
 
-You can use unescaped Expressions to include JavaScript statements at a specific location in your Web Screen. The browser of the user of your application runs these JavaScript statements as soon as it evaluates the Expression element.
+You can use unescaped Expressions to include JavaScript statements at a specific location in your Web Screen. The browser runs these JavaScript statements as soon as it evaluates the Expression element on the page.
 
 1. Add an Expression element to your Web Screen/Block.
 

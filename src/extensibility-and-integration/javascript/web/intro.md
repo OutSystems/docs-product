@@ -32,8 +32,7 @@ To run JavaScript code in your web application you should do the following:
     * Using an unescaped Expression
     * Using the [RunJavaScript](../../../ref/apis/auto/httprequesthandler-api.final.md#RunJavaScript) action of the HTTPRequestHandler API
 
-    Even though you can define the JavaScript code right before (or instead of) calling it, this is **not recommended** for code blocks with more than a few lines of JavaScript.
-
+    Even though you can define the JavaScript code right before (or instead of) calling it, this is **not recommended** for code blocks with more than a few lines of JavaScript.  
     You should define JavaScript code blocks in one of the supported elements (see above) and then call it using one of these methods.
 
 ## 1. Add a JavaScript code block

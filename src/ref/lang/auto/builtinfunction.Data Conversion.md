@@ -145,7 +145,7 @@
 </tr>
 <tr>
 <td><a href="#TextToDecimal">TextToDecimal</a>(&#8203;Text)</td>
-<td>Converts Text 't' to a Decimal value. The only allowed decimal separator is the ".". <br/>If 't' is outside the boundaries of the Decimal values, the function will return the Decimal default value. But note that if TextToDecimal is used in an aggregate and 't' is outside the boundaries of the Decimal values, it will throw an exception. To check if the conversion is possible you can use the TextToDecimalValidate function.</td>
+<td>Converts Text 't' to a Decimal value. The only allowed decimal separator is "." (period).<br/>If 't' is outside the boundaries of Decimal values, the function returns the Decimal default value. However, if you use TextToDecimal in an Aggregate and 't' is outside the boundaries of Decimal values, the function throws an exception. To check if the conversion is possible, use the TextToDecimalValidate function.</td>
 </tr>
 <tr>
 <td><a href="#TextToDecimalValidate">TextToDecimalValidate</a>(&#8203;Text)</td>
@@ -157,7 +157,7 @@
 </tr>
 <tr>
 <td><a href="#TextToInteger">TextToInteger</a>(&#8203;Text)</td>
-<td>Converts Text 't' to an Integer value.<br/>If 't' is outside the boundaries of the Integer values the function will return an Integer default value. But note that if TextToInteger is used in an aggregate and 't' is outside the boundaries of the Decimal values, it will throw an exception. To check if the conversion is possible you can use the TextToIntegerValidate function.</td>
+<td>Converts Text 't' to an Integer value.<br/>If 't' is outside the boundaries of Integer values, the function returns the Integer default value. However, if you use TextToInteger in an Aggregate and 't' is outside the boundaries of Integer values, the function throws an exception. To check if the conversion is possible, use the TextToIntegerValidate function.</td>
 </tr>
 <tr>
 <td><a href="#TextToLongInteger">TextToLongInteger</a>(&#8203;Text)</td>
@@ -1134,7 +1134,8 @@ TextToDateValidate("10000.01.01") = False
 
 ## TextToDecimal { #TextToDecimal }
 
-Converts Text 't' to a Decimal value. The only allowed decimal separator is the ".". If 't' is outside the boundaries of the Decimal values, the function will return the Decimal default value. To check if the conversion is possible you can use the TextToDecimalValidate function.  
+Converts Text 't' to a Decimal value. The only allowed decimal separator is "." (period).  
+If 't' is outside the boundaries of Decimal values, the function returns the Decimal default value. However, if you use TextToDecimal in an Aggregate and 't' is outside the boundaries of Decimal values, the function throws an exception. To check if the conversion is possible, use the TextToDecimalValidate function.  
 
 Available in:  
 
@@ -1226,7 +1227,7 @@ TextToIdentifier("NEW") = 'NEW'
 ## TextToInteger { #TextToInteger }
 
 Converts Text 't' to an Integer value.  
-If 't' is outside the boundaries of the Integer values the function will return an Integer default value. To check if the conversion is possible you can use the TextToIntegerValidate function.  
+If 't' is outside the boundaries of Integer values, the function returns the Integer default value. However, if you use TextToInteger in an Aggregate and 't' is outside the boundaries of Integer values, the function throws an exception. To check if the conversion is possible, use the TextToIntegerValidate function.
 
 Available in:  
 

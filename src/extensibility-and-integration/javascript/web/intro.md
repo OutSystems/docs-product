@@ -8,9 +8,9 @@ You can add JavaScript code to Traditional Web Apps to make them more dynamic, a
 
 Tools like [Ajax Refresh](<../../../ref/lang/auto/Class.Ajax Refresh.final.md>) already allow you to refresh parts of your screen in an action flow without forcing a page reload. However, you may want to define some custom behavior using JavaScript in your app, or use an existing JavaScript library to improve the user experience.
 
-In general terms, to run JavaScript code in your web application you must do the following:
+To run JavaScript code in your web application you should do the following:
 
-1\. Add JavaScript code blocks to one of the supported elements
+1\. Add a JavaScript code block to one of the supported elements
 :   The following three elements support JavaScript code blocks:
 
     * Module
@@ -26,7 +26,7 @@ In general terms, to run JavaScript code in your web application you must do the
     You can also [include JavaScript files hosted outside your OutSystems infrastructure](#external-js).
 
 2\. Run JavaScript code
-:   You can call JavaScript functions or run any JavaScript statement using these three methods:
+:   You can run any JavaScript statement in a Web Screen/Block using one of the following methods:
 
     * Using the Extended Properties of Web Screens or widgets
     * Using an unescaped Expression
@@ -36,7 +36,7 @@ In general terms, to run JavaScript code in your web application you must do the
 
     You should define JavaScript code blocks in one of the supported elements (see above) and then call it using one of these methods.
 
-## 1. Add JavaScript code blocks
+## 1. Add a JavaScript code block
 
 Do the following:
 
@@ -44,7 +44,7 @@ Do the following:
 
 1. In the properties pane, click **...** (ellipsis) on the **JavaScript** property to open the JavaScript editor.
 
-![](images/run-js-code-4-ss.png)
+![Opening the JavaScript editor for a Web Screen](images/run-js-code-4-ss.png)
 
 **Note:** You can also [include JavaScript files hosted outside your OutSystems infrastructure](#external-js).
 
@@ -52,27 +52,25 @@ Do the following:
 
 The example below shows a JavaScript function defined in the "ContactDetail" Web Screen:
 
-![](images/run-js-code-2-ss.png)
+![Example of a JS function defined for a Web Screen](images/run-js-code-2-ss.png)
 
 ## 2. Run JavaScript code
 
 There several possibilities for running JavaScript code in your Traditional Web application. Check the following sections for more information.
 
-Note that the browser runs the JavaScript statements you include using the first two methods as soon as it evaluates the element containing the JavaScript code (the Button, Link, or Expression).
-
 ### Run JavaScript code using Extended Properties
 
-You can invoke a JavaScript function when the `onclick` event occurs in a Button or in a Link.
+You can invoke a JavaScript function when the a given event (for example, `onkeypress` or `onclick`) occurs in a Web Screen or in a widget, like a Button or a Link.
 
-1. Select the Button or the Link where you want to invoke the JavaScript function when the users clicks the element.
+1. Select the element where you want to invoke the JavaScript function when the users clicks the element.
 
-1. In the "Extended Properties" property group, enter `onclick` in the **Property** property (without any quotes).
+1. In the "Extended Properties" property group, select the event on which you want to run JavaScript code in the **Property** property (without any quotes). For example, `onclick`.
 
-1. In the **Value** property, enter the JavaScript statement you want to run (between double quotes). If you're invoking a JavaScript function, include any necessary arguments.
+1. In the **Value** property, enter the JavaScript statement you want to run (between double quotes).
 
 **Example**
 
-This example shows the properties of a Button, configured to invoke the `AlertFieldMustBeFilled()` JavaScript function when the user clicks it:
+This example shows the properties of a Button configured to invoke the `AlertFieldMustBeFilled()` JavaScript function when the user clicks it:
 
 ![Calling a JS function in Extended Properties](images/run-js-code-ext-properties-1-ss.png)
 
@@ -86,11 +84,11 @@ This example shows the properties of a Button, configured to invoke the `AlertFi
 
 ### Run JavaScript code using an unescaped Expression
 
-You can use unescaped Expressions to add JavaScript at a specific point of your Web Screen.
+You can use unescaped Expressions to include JavaScript statements at a specific location in your Web Screen. The browser of the user of your application runs these JavaScript statements as soon as it evaluates the Expression element.
 
-1. Add an Expression element to your Web Screen or Web Block.
+1. Add an Expression element to your Web Screen/Block.
 
-1. In the Web Screen/Web Block properties, enter the JavaScript code in **Value** property, between `<script></script>` tags.
+1. In the screen/block properties, enter the JavaScript code in **Value** property, between `<script></script>` tags.
 
     ![Expression Editor showing unescaped content](images/run-js-code-expression-editor-ss.png)
 
@@ -100,21 +98,29 @@ You can use unescaped Expressions to add JavaScript at a specific point of your 
 
 ### Run JavaScript code using the RunJavaScript action
 
-In your action flows, either in a Screen Action or a Server Action, you can use the [RunJavaScript](../../../ref/apis/auto/httprequesthandler-api.final.md#RunJavaScript) action of the HTTPRequestHandler extension to get your JavaScript code to run in the context of the browser:
+In your action flows, either in a Screen Action or a Server Action, you can use the [RunJavaScript](../../../ref/apis/auto/httprequesthandler-api.final.md#RunJavaScript) action of the HTTPRequestHandler extension to get your JavaScript code to run in the context of the browser.
 
-![](images/run-js-code-3.png)
+1. Open the **Manage Dependencies** window and select the `HTTPRequestHandler` producer module on the left side of the dialog window.
+
+    ![Manage Dependencies window showing the RunJavaScript Server Action](images/run-js-code-runjavascript-ss.png)
+
+1. On the right side of the dialog window, add a dependency on the **RunJavaScript** Server Action (select the check box) and click **Apply**.
+
+1. In the flow of a Screen Action or Server Action, add a **Run Server Action** element and select the **RunJavaScript** Server Action.
+
+1. Enter the JavaScript code you wish to run in the **Script** property of the RunJavaScript action.
 
 <div class="info" markdown="1">
 
 **Note:** If you're using the RunJavaScript action in a Screen Action that handles a click in a Button or in a Link, you must set the **Method** property of the Button/Link to **Ajax Submit**.
 
-You must do this so that the page doesn't get refreshed when clicking the Button/Link and the JavaScript code defined in the RunJavaScript action runs in the context of the currently loaded page.
+You must do this so that the current page doesn't get refreshed when clicking the Button/Link. This way, the JavaScript code defined in the RunJavaScript action runs in the context of the currently loaded page.
 
 </div>
 
 ## Include a JavaScript file hosted elsewhere { #external-js }
 
-Besides defining JavaScript code in one of the supported elements (Module, Web Screen, or Web Block) you can also reference an existing JavaScript file, hosted elsewhere, in a Screen of your OutSystems web application.
+Besides defining JavaScript code in one of the supported elements (Module, Web Screen, or Web Block) you can also reference an existing JavaScript file hosted elsewhere in a Screen of your OutSystems Traditional Web application.
 
 Do the following:
 

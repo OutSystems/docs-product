@@ -517,7 +517,6 @@
 
         - href: extensibility-and-integration/javascript/web/intro.md
         - topics:
-            - href: extensibility-and-integration/javascript/web/run-js-code.md
             - href: extensibility-and-integration/javascript/web/handle-errors.md
 
     #REST

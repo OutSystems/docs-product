@@ -4,34 +4,124 @@ tags: runtime-traditionalweb
 
 # Extend Your Web Application Using JavaScript
 
-in Traditional Web Apps, you can define JavaScript code in three different elements, with different scopes:
+You can add JavaScript code to Traditional Web Apps to make them more dynamic, adding custom behavior to pages executed on the user's browser, while also minimizing the number of calls to the server.
 
-* Globally for the Module
-* For a Web Screen
-* For a Web Block
+Tools like [Ajax Refresh](<../../../ref/lang/auto/Class.Ajax Refresh.final.md>) already allow you to refresh parts of your screen in an action flow without forcing a page reload. However, you may want to define some custom behavior using JavaScript in your app, or use an existing JavaScript library to improve the user experience.
 
-When you deploy your web app, OutSystems creates separate files for the JavaScript code defined at these three levels: Module, Web Screen, and Web Block level.
+In general terms, to run JavaScript code in your web application you must do the following:
 
-Each rendered HTML page (corresponding to a Screen in your Traditional Web App) includes these JavaScript files by adding `<script>` tags inside the `<head>` element of the page. This means that the browser interprets the JavaScript code **before** loading all the elements in the page.
+1\. Add JavaScript code blocks to one of the supported elements
+:   The following three elements support JavaScript code blocks:
 
-Check how to [Define and Run JavaScript Code](run-js-code.md) in your Traditional Web App.
+    * Module
+    * Web Screen
+    * Web Block
 
-## Define JavaScript code in the Module
+    Define any large JavaScript code blocks in one of these elements. You can later invoke the code that you defined in this step. This way you can avoid having JavaScript code blocks in many different places across your Web Screens and Web Blocks, and have a central place for JavaScript code in a given scope.
 
+    When you deploy your web app, OutSystems creates separate `.js` files for the JavaScript code defined at these three levels: Module, Web Screen, and Web Block level.
 
+    Each rendered HTML page (corresponding to a Screen in your Traditional Web App) includes these JavaScript files by adding `<script>` tags inside the `<head>` element of the page. This means that the browser interprets the JavaScript code **before** loading all the elements in the page.
 
-## Include a JavaScript file hosted elsewhere
+    You can also [include JavaScript files hosted outside your OutSystems infrastructure](#external-js).
+
+2\. Run JavaScript code
+:   You can call JavaScript functions or run any JavaScript statement using these three methods:
+
+    * Using the Extended Properties of Web Screens or widgets
+    * Using an unescaped Expression
+    * Using the [RunJavaScript](../../../ref/apis/auto/httprequesthandler-api.final.md#RunJavaScript) action of the HTTPRequestHandler API
+
+    Even though you can define the JavaScript code right before (or instead of) calling it, this is **not recommended** for code blocks with more than a few lines of JavaScript.
+
+    You should define JavaScript code blocks in one of the supported elements (see above) and then call it using one of these methods.
+
+## 1. Add JavaScript code blocks
+
+Do the following:
+
+1. Select the element in the element tree where you want to add or edit JavaScript code (must be a Module, a Web Screen, or a Web Block).
+
+1. In the properties pane, click **...** (ellipsis) on the **JavaScript** property to open the JavaScript editor.
+
+![](images/run-js-code-4-ss.png)
+
+**Note:** You can also [include JavaScript files hosted outside your OutSystems infrastructure](#external-js).
+
+**Example**
+
+The example below shows a JavaScript function defined in the "ContactDetail" Web Screen:
+
+![](images/run-js-code-2-ss.png)
+
+## 2. Run JavaScript code
+
+There several possibilities for running JavaScript code in your Traditional Web application. Check the following sections for more information.
+
+Note that the browser runs the JavaScript statements you include using the first two methods as soon as it evaluates the element containing the JavaScript code (the Button, Link, or Expression).
+
+### Run JavaScript code using Extended Properties
+
+You can invoke a JavaScript function when the `onclick` event occurs in a Button or in a Link.
+
+1. Select the Button or the Link where you want to invoke the JavaScript function when the users clicks the element.
+
+1. In the "Extended Properties" property group, enter `onclick` in the **Property** property (without any quotes).
+
+1. In the **Value** property, enter the JavaScript statement you want to run (between double quotes). If you're invoking a JavaScript function, include any necessary arguments.
+
+**Example**
+
+This example shows the properties of a Button, configured to invoke the `AlertFieldMustBeFilled()` JavaScript function when the user clicks it:
+
+![Calling a JS function in Extended Properties](images/run-js-code-ext-properties-1-ss.png)
+
+<div class="info" markdown="1">
+
+**Note:** Since the value of an Extended Property is an expression, you can enter any JavaScript statement directly as the **Extended Property** value:
+
+![Entering JS statements directly in Extended Properties](images/run-js-code-ext-properties-2-ss.png)
+
+</div>
+
+### Run JavaScript code using an unescaped Expression
+
+You can use unescaped Expressions to add JavaScript at a specific point of your Web Screen.
+
+1. Add an Expression element to your Web Screen or Web Block.
+
+1. In the Web Screen/Web Block properties, enter the JavaScript code in **Value** property, between `<script></script>` tags.
+
+    ![Expression Editor showing unescaped content](images/run-js-code-expression-editor-ss.png)
+
+1. Set the **Escape Content** property to **No**:
+
+![Expression set as having unescaped content](images/run-js-code-expression-ss.png)
+
+### Run JavaScript code using the RunJavaScript action
+
+In your action flows, either in a Screen Action or a Server Action, you can use the [RunJavaScript](../../../ref/apis/auto/httprequesthandler-api.final.md#RunJavaScript) action of the HTTPRequestHandler extension to get your JavaScript code to run in the context of the browser:
+
+![](images/run-js-code-3.png)
+
+<div class="info" markdown="1">
+
+**Note:** If you're using the RunJavaScript action in a Screen Action that handles a click in a Button or in a Link, you must set the **Method** property of the Button/Link to **Ajax Submit**.
+
+You must do this so that the page doesn't get refreshed when clicking the Button/Link and the JavaScript code defined in the RunJavaScript action runs in the context of the currently loaded page.
+
+</div>
+
+## Include a JavaScript file hosted elsewhere { #external-js }
 
 Besides defining JavaScript code in one of the supported elements (Module, Web Screen, or Web Block) you can also reference an existing JavaScript file, hosted elsewhere, in a Screen of your OutSystems web application.
 
 Do the following:
 
-1. Get the full URL of the JavaScript file you wish to include in a Screen of your app.
-
-    For example:  
+1. Get the full URL of the JavaScript file you wish to include in a Screen of your app. For example:  
     `https://cdn.mycompany.com/js/util.js`
 
-1. Add the [AddJavaScriptTag](../../../ref/apis/auto/httprequesthandler-api.final.md#AddJavaScriptTag) Server Action of the HTTPRequestHandler API as a dependency of your module. Check [Reuse functionality from other modules](../../../develop/reuse-and-refactor/expose-and-reuse.md#reuse) for more information.
+1. Add the [AddJavaScriptTag](../../../ref/apis/auto/httprequesthandler-api.final.md#AddJavaScriptTag) Server Action of the HTTPRequestHandler API as a dependency of your module. For more information, check [Reuse functionality from other modules](../../../develop/reuse-and-refactor/expose-and-reuse.md#reuse).
 
 1. In the **Preparation** of the Screen where you want to include the JavaScript code, add a call to the "AddJavaScriptTag" Server Action. Set the **JavaScriptURL** argument to the URL you previously identified.
 

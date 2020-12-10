@@ -40,7 +40,7 @@ To run JavaScript code in your web application you should do the following:
 
 Do the following:
 
-1. Select the element in the element tree where you want to add or edit JavaScript code (must be a Module, a Web Screen, or a Web Block).
+1. In Service Studio, select the element in the element tree where you want to add or edit JavaScript code (must be a Module, a Web Screen, or a Web Block).
 
 1. In the properties pane, click **...** (ellipsis) on the **JavaScript** property to open the JavaScript editor.
 
@@ -62,7 +62,7 @@ There several possibilities for running JavaScript code in your Traditional Web 
 
 You can invoke a JavaScript function when a given event occurs (for example, `onkeypress` or `onclick`) in a Web Screen or in a widget, like a Button or a Link.
 
-1. Select the element where you want to invoke the JavaScript function when an event occurs.
+1. In Service Studio, select the element where you want to invoke the JavaScript function when an event occurs.
 
 1. In the "Extended Properties" property group, select the event on which you want to run JavaScript code in the **Property** property (without any quotes). For example, `onclick`.
 
@@ -86,7 +86,7 @@ This example shows the properties of a Button configured to invoke the `AlertFie
 
 You can use unescaped Expressions to include JavaScript statements at a specific location in your Web Screen. The browser runs these JavaScript statements as soon as it evaluates the Expression element on the page.
 
-1. Add an Expression element to your Web Screen/Block.
+1. In Service Studio, add an Expression element to your Web Screen/Block.
 
 1. In the screen/block properties, enter the JavaScript code in **Value** property, between `<script></script>` tags.
 
@@ -100,15 +100,15 @@ You can use unescaped Expressions to include JavaScript statements at a specific
 
 In your action flows, either in a Screen Action or a Server Action, you can use the [RunJavaScript](../../../ref/apis/auto/httprequesthandler-api.final.md#RunJavaScript) action of the HTTPRequestHandler extension to get your JavaScript code to run in the context of the browser.
 
-1. Open the **Manage Dependencies** window and select the `HTTPRequestHandler` producer module on the left side of the dialog window.
+1. In Service Studio, add a dependency on the **RunJavaScript** Server Action of the HTTPRequestHandler producer module. For more information on adding a dependency, check [Expose and Reuse Functionality Between Modules](../../../develop/reuse-and-refactor/expose-and-reuse.md#reuse).
 
     ![Manage Dependencies window showing the RunJavaScript Server Action](images/run-js-code-runjavascript-ss.png)
 
-1. On the right side of the dialog window, add a dependency on the **RunJavaScript** Server Action (select the check box) and click **Apply**.
-
 1. In the flow of a Screen Action or Server Action, add a **Run Server Action** element and select the **RunJavaScript** Server Action.
 
-1. Enter the JavaScript code you wish to run in the **Script** property of the RunJavaScript action.
+1. Enter the JavaScript code you wish to run in the **Script** property of the RunJavaScript Server Action.
+
+    ![Properties of the RunJavaScript Server Action element](images/run-js-code-runjavascript-props-ss.png)
 
 <div class="info" markdown="1">
 

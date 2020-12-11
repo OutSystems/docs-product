@@ -5,11 +5,11 @@ tags: modeling-data; static-entities
 
 # Static Entities
 
-A **Static Entity** consists of a set of named values. Think of Static Entities as literal values stored in a database whose scope is always global.
-
-Static Entities can have relationships with static and non-Static Entities. The **Records** folder of the Static Entity holds the data, and the Attributes define the structure of the data.
+A **Static Entity** consists of a set of named values. Think of Static Entities as literal values stored in a database whose scope is always global. The **Records** folder of the Static Entity holds the data, and the Attributes define the structure of the data.
 
 The only action available for the Static Entities is the **Get&lt;StaticEntity&gt;** action, because OutSystems manages the data persistence for you.
+
+When modeling your data, keep in mind that Static Entities can only contain foreign keys of other Static Entities. For more information check out [Entity Relationships](relationship\intro.md).
 
 <div class="info" markdown="1">
 

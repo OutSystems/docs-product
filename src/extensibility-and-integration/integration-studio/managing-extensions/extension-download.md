@@ -4,20 +4,20 @@ You can download to your work area any extension previously published in a Platf
 
 ## Downloading an Extension version
 
-The ![](images/download-icon.gif) Download operation is available in the File menu or on the Toolbar.
+The ![](images/download-icon.gif) **Download** operation is available in the **File** menu or in the toolbar.
 
-If you are not connected to a Platform Server, Integration Studio automatically prompts you to select a server and a user name, in order to establish the connection. [See how to Select Server window](<../../../ref/integration-studio/menu/file/server-select-window.md>).
+If you're not connected to a Platform Server, Integration Studio automatically prompts you to select a server and a user name to establish the connection. [See how to Select Server window](<../../../ref/integration-studio/menu/file/server-select-window.md>).
 
-When the [Download from Server window](<../../../ref/integration-studio/menu/file/extension-download-window.md>) is launched, you can simply select the extension you want to download.
+When the [Download from Server window](<../../../ref/integration-studio/menu/file/extension-download-window.md>) is launched, you can select the extension you want to download.
 
-If you want to download the latest extension version uploaded to the server, which may or many not be the one currently published, just click the Download button.
+To download the latest extension version uploaded to the server, which may or many not be the one currently published, click **Download**.
 
-If you want to download another extension version, select the Older versions button, select the version, and click the Download button. See how to [download a specific extension version](<../../../ref/integration-studio/menu/file/extension-download-version-window.md>).
+If you want to download another extension version, click **Older versions**, select the version, and click **Download**. See how to [download a specific extension version](<../../../ref/integration-studio/menu/file/extension-download-version-window.md>).
 
 ## Download access rights
 
-To download an extension from the server, you must have, at least, a `Download` security level for that extension.
+To download an extension from the server, you must have, at least, a "Download" security level for that extension.
 
-![](images/note.gif) To check your permissions, you must login to the Service Center. In the "My Settings" screen, available by clicking on your user name in the top right corner of the Service Center interface), you can check your effective permissions in the "Security Settings", "eSpaces Granted", "Extensions Granted" and "Solutions Granted" areas. If necessary, contact the Service Center administrator and ask to be granted the suitable permissions.
+![](images/note.gif) To check your permissions, you must login to the Service Center. In the **My Settings** screen, available by clicking on your user name in the top right corner of the Service Center interface, you can check your effective permissions in the **Security Settings**, **eSpaces Granted**, **Extensions Granted**, and **Solutions Granted** areas. If necessary, contact the Service Center administrator and ask to be granted the suitable permissions.
 
-![](images/tip.gif) You can also download an extension version in Service Center, from the Factory > Extensions > (extension detail) screen.
+![](images/tip.gif) You can also download an extension version in Service Center, in **Factory** > **Extensions** > **(extension detail)** screen.

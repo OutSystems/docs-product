@@ -5,4 +5,5 @@ Once you have created your extension you may define the actions exported by it. 
 To add an action to your extension, execute one of the following operations:
 
 * [Add the action](<action-add.md>) manually to the extension.
-* Import the action from a .NET assembly, through the [Import Actions from .Net Assembly](<net-assembly-import-action.md>) wizard.
+
+* Import the action from a .NET assembly, through the [Import Actions from .NET Assembly](<net-assembly-import-action.md>) wizard.

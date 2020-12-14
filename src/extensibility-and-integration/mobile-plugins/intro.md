@@ -1,6 +1,6 @@
 ---
 summary: Extend the functionalities of your mobile apps by using plugins.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
+tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
 ---
 
 # Mobile Plugins

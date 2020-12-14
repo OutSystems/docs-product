@@ -36,9 +36,7 @@ Method of a consumed REST API.
 </tr>
 <tr>
 <td title="URL Path">URL Path</td>
-<td>URL of the method relative to the Base URL of the REST API.
-It supports using input parameters enclosed in braces, e.g.,
-/drive/v1/files/{id}?convert={convert}</td>
+<td>URL of the method relative to the Base URL of the REST API. It supports using input parameters enclosed in braces, for example, `/drive/v1/files/{id}?convert={convert}`</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -69,8 +67,7 @@ It supports using input parameters enclosed in braces, e.g.,
 <td>Maximum waiting time to get a response from the Web Service. By default is 100 seconds.</td>
 <td></td>
 <td></td>
-<td></td>
+<td>The "Duration" field in integration logs can have higher values than the "Timeout in Seconds" value. For more information check [Log data reference](../../../managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md#integration).</td>
 </tr>
 </tbody>
 </table>
-

@@ -9,11 +9,13 @@ OutSystems Cloud is a public cloud having the physical infrastructure hosted in 
 
 ## Dedicated cloud
 
-Each customer has a dedicated set of virtual machines and database instances protected inside a dedicated [Virtual Private Cloud (VPC)](https://aws.amazon.com/vpc/), which is logically isolated from the internet and other virtual networks in the AWS cloud.
+Each customer has a **dedicated set of virtual machines and database instances** protected inside a dedicated [Virtual Private Cloud (VPC)](https://aws.amazon.com/vpc/), which is logically isolated from the internet and other virtual networks in the AWS cloud.
 
-OutSystems provides segregated environments for development, testing, and production, running on different virtual server instances.
+OutSystems provides **segregated environments** for development, testing, and production, running on different virtual server instances.
 
 OutSystems Cloud uses a layer of [AWS Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html), acting as firewalls, to control the traffic allowed between the customer environments and the internet. The several Security Groups define a granular access control per environment and per asset.
+
+Additionally, OutSystems shields each environment using a **Web Application Firewall (WAF)**, which blocks malicious traffic from reaching the running web applications. To ensure that OutSystems keeps full flexibility on the reaction to evolving security threats, maximum availability, and compatibility with OutSystems product evolution, the same WAF's policies apply to all customers.
 
 The diagram below shows the **network architecture** of the base setup for an OutSystems Cloud Standard Edition, including the set of **servers** and the **inbound/outbound communications** between the customer’s infrastructure and the internet:
 

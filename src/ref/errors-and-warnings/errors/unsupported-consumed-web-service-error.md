@@ -32,4 +32,4 @@ The `Unsupported Consumed Web Service` error is displayed in the following situa
 
     The SOAP Web Service you are consuming has data types that are not supported by Service Studio.
 
-To consume a SOAP Web Service in the scenarios presented above, use Integration Studio, either to Import Web Services from a .Net Assembly or implement a custom extension that can be then used in Service Studio.
+To consume a SOAP Web Service in the scenarios presented above, use Integration Studio, either to Import Web Services from a .NET Assembly or implement a custom extension that can be then used in Service Studio.

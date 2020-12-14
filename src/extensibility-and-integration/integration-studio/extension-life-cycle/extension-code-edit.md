@@ -4,7 +4,7 @@ You can open the .NET IDE directly from Integration Studio, with the advantage o
 
 ## How to edit the extension source code
 
-1. In the File menu or Toolbar, click Edit Source Code ![](images/launch-ide-net.gif).
+1. In the **File** menu or in the toolbar, click ![](images/launch-ide-net.gif) **Edit Source Code**.
 
     When developing an extension you must edit the source code in the .NET IDE. In this situation you are responsible of ensuring the synchronization of the written code, since Integration Studio only guarantees the synchronization of the extension definition.
 

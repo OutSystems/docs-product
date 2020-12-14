@@ -4,9 +4,9 @@ You must connect to a server when you want to execute the following operations: 
 
 ## Connecting to a Server
 
-You can explicitly connect to a server or let Integration Studio prompt you to connect whenever you must be connected but are not; e.g. if you are publishing the extension. In both situations the [Select server window](<../../../ref/integration-studio/menu/file/server-select-window.md>) is displayed.
+You can explicitly connect to a server or let Integration Studio prompt you to connect whenever you must be connected but are not; for example, if you are publishing the extension. In both situations the [Select server window](<../../../ref/integration-studio/menu/file/server-select-window.md>) is displayed.
 
-In the File menu or Toolbar, simply click Select server... ![](images/connect-server.gif) and specify the parameters presented below.
+In the **File** menu or in the toolbar, click ![](images/connect-server.gif) **Select server...** and specify the parameters presented below.
 
 ## Connection Information
 

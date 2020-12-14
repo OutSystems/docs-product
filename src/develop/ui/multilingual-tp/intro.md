@@ -30,15 +30,11 @@ Here's how to get started:
 
 You can translate the following elements of your app:
 
-* Text in the screens
-* Text in Links
+* Text in Buttons, Links, Screens
 * Screen titles
-* Labels of buttons, processes, and process activities
 * Instructions in Human Activities
-* Special List Options of the Combo Box widget
 * Validation messages, widget confirmation messages, and empty state messages
 * Text literals in expressions
-
 
 ## Send feedback
 

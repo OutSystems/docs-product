@@ -5,6 +5,12 @@ tags: runtime-traditionalwebandreactiveweb
 
 # Configure Okta Authentication
 
+<div class="info" markdown="1">
+
+Requires Platform Server Release Jul.2019 CP2 (11.0.542.0) or later.
+
+</div>
+
 OutSystems allows you to use Okta for authenticating the end users of your OutSystems applications. This authentication method is configured in a way that's quite similar to the [SAML 2.0](configure-saml.md) one.
 
 <div class="info" markdown="1">
@@ -34,7 +40,7 @@ The following sections describe these steps in detail.
 
 1. In **Authentication** choose `OKTA` (A).
 
-    ![](images/okta-config-3-usr.png)
+    ![Configure Authentication screen of Users app](images/okta-config-3-usr.png)
 
 1. Fill the **1. Service Provider Connector Settings** (B). OutSystems suggests that you use the following values for the settings under **Attribute Statements (Claims)**:
 
@@ -46,10 +52,10 @@ The following sections describe these steps in detail.
 
 1. Click **Download KeyStore Certificate** to download the certificate PEM file.
 
-    ![](images/okta-config-4-usr.png)
+    ![Download KeyStore Certificate link](images/okta-config-4-usr.png)
 
 ### Create application in the Okta portal
- 
+
 1. Sign in to the Okta portal and click **Admin** to go to the Developer Console.
 
     ![Go to Developer Console in Okta](images/okta-dashboard.png)

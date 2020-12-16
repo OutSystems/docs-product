@@ -65,3 +65,6 @@ When installing a new version of an Android app already installed on the device 
 </div>
 
 After the first mobile app generation, every time you click “1-Click Publish”, OutSystems generates a new app package in the situations listed above. You can then download those app packages via Service Studio, Service Center, and LifeTime. This guarantees that the latest app package available to download from the environment is synchronized with the development of the app.
+
+Additional Note(s):
+Changing configuration file similar to "pinning.json" file which is under SSL Pinning Plugin requires the mobile application to be regerenerated and install this new build.

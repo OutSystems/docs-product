@@ -545,6 +545,7 @@
             - href: extensibility-and-integration/rest/consume-rest-apis/simple-customizations.md
             - href: extensibility-and-integration/rest/consume-rest-apis/advanced-customizations.md
             - href: extensibility-and-integration/rest/consume-rest-apis/handling-rest-errors.md
+            - href: extensibility-and-integration/rest/consume-rest-apis/redact-info-from-logs.md
             - href: extensibility-and-integration/rest/consume-rest-apis/unsupported-use-cases.md
         - href: extensibility-and-integration/rest/expose-rest-apis/intro.md
         - topics:
@@ -583,6 +584,11 @@
             - href: extensibility-and-integration/soap/expose/expose-soap-web-service.md
             - href: extensibility-and-integration/soap/expose/document-exposed-soap-web-service.md
         - href: extensibility-and-integration/soap/troubleshoot-soap-web-services.md
+
+    # Log levels for consumed REST and SOAP integrations
+    - href: extensibility-and-integration/log-levels-set.md
+    - topics:
+        - href: extensibility-and-integration/log-levels-reference.md
 
     #SAP
     - href: extensibility-and-integration/sap/intro.md

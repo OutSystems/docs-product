@@ -80,7 +80,7 @@ OutSystems can run on Amazon EC2 instances. Each instance must fulfill the follo
 
 For more information on how to enable this service check Amazon's [EC2Config service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2config-service.html).
 
-## Amazon RDS considerations 
+## Amazon RDS considerations
 
 OutSystems supports Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
 
@@ -135,7 +135,7 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 <div class="info" markdown="1">
 
-From OutSystems 11 Platform Server Release Oct.2019 onwards you cannot have integrations with Oracle databases earlier than 11g R2. 
+From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integrations with Oracle databases earlier than 11g R2.
 
 </div>
 
@@ -255,91 +255,3 @@ Note: Only official Android and iOS ROMs are supported.
 * Default browser for iOS 7 or higher
 * Default browser for Android 4.1 or higher
 * Default browser for Windows Phone 8 or higher
-
-## Containers considerations
-
-Containers only expose HTTP port 80. HTTPS connections must be ensured by the load balancer, following an SSL offload scenario.
-
-Follow the instructions in [End-to-end SSL and SSL Offloading](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Using_OutSystems_in_Reverse_Proxy_Scenarios/03_OutSystems_configurations_in_reverse_proxy_scenarios#C_-_End-to-end_SSL_and_SSL_Offloading): you **do not** need to follow the step instructing you to insert a record in the `OSSYS_PARAMETER` table, since the platform already performs this task when deploying an application to containers.
-
-### Docker Containers
-
-To deploy OutSystems applications to Docker containers you will need a Docker infrastructure able to run standard Docker Windows Server containers, i.e. Windows Server containers that only use the functionality provided by default in a Docker installation.
- 
-#### Infrastructure
-
-The minimum required Docker infrastructure consists of a Docker Engine installation, i.e. the client-server technology that builds and runs containers using Docker components and services. The engine must support and be able to run Windows Server containers.
-
-The minimum recommended Docker version is the following:
-
-* Docker client/server version 17.10
-
-The machine running Docker must fulfill the following OS requirement:
-
-* Windows Server 2016 (version 1709 or later)
-
-OutSystems also supports the following Docker-based hosting technologies:
-
-* Amazon ECS (Elastic Container Service)
-* Azure Container Service (ACS)
-
-If you are using Amazon please read the [Amazon Elastic Container Service documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_GetStarted.html). If you are using Azure please read the documentation on [Azure for Containers documentation](https://docs.microsoft.com/en-us/azure/containers/).
-
-The Docker Secrets functionality is not supported, since its support on Windows containers is not yet ready for production use.
-
-#### Docker Registries
-
-While having a Docker registry is not mandatory, it is highly recommended. You can use any Docker registry as long as it supports storing and retrieving images for Windows Server containers.
-
-For example, you can use one of the following docker registries (either on-premises or in the cloud):
-
-* Docker Hub
-* Docker Trusted Registry
-
-#### Container Cluster Orchestrators
-
-When deploying an OutSystems application in a Docker container it's necessary to map port 80 exposed by the container to an available port in the container host (usually a high-numbered port selected by the container runtime).
-
-Since this port in the container host may change and each container needs at least port 80 mapped in the container host machine, the recommended approach is to set up a **container cluster**, together with a container cluster manager/orchestrator, that seamlessly handles all the routing to the right container and port.
-
-You can use OutSystems with the following container cluster orchestrators:
-
-* Docker Swarm
-* Google Kubernetes
-* Amazon Elastic Container Service
-
-If you are using Docker Swarm, please read the official [Docker Swarm documentation](https://docs.docker.com/engine/swarm/). If you are using Kubernetes, please read the official Kubernetes documentation that includes detailed instructions on [using Kubernetes with a cluster](https://kubernetes.io/docs/tasks/access-application-cluster/access-cluster/).
-
-The container cluster manager/orchestrator can be installed anywhere as long as it allows you to manage the Docker engine on which you will be running the containers with OutSystems applications.
- 
-#### Base Image Availability
-
-Ensure that all machines that will build/run the application images have the `microsoft/dotnet-framework:4.7.2-runtime` base image present in the machine. If the base image is not in the machine, the first build/run may timeout while the base image is downloaded.
-
-### Pivotal Cloud Foundry
-
-To deploy your OutSystems applications to Pivotal Cloud Foundry (PCF) you will need to have access to a PCF infrastructure. It must be able to run Windows stemcells, i.e. you will need to install a Windows tile in your infrastructure.
-
-#### Infrastructure
-
-The PCF infrastructure must have a Pivotal Application Service for Windows tile installed. To install a Windows tile, follow the instructions provided by Pivotal for the Windows 2016 tile.
-
-Note: The Windows 2012r2 tile is **not supported**.
- 
-#### PCF Internal Routing
-
-You will need to ensure that your PCF internal router can route requests to OutSystems applications both when these come from your internal network, as well as when coming from the outside.
-
-We recommend adding **two domains** to your Pivotal Apps Manager's "org" (organization):
-
-* A subdomain of your main shared domain that will be used as the PCF's deployment zone address. All the modules of each OutSystems application deployed to this zone will be mapped here. Example: If your main shared domain is `apps.pcf.example.com`, add a new domain called `os.apps.pcf.example.com`.
-
-* A domain equal to the public address of your main load balancer and reverse proxy. This lets the PCF internally route requests coming from outside your internal network. Example: If your main load balancer and reverse proxy is publicly accessible using `site.example.com`, add exactly this value as a new domain.
-
-#### Command-line Tools (cf CLI)
-
-The deployment instructions provided by OutSystems use the Cloud Foundry Command Line Interface ("cf CLI") tool provided by Pivotal.
-
-You must [install "cf CLI"](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) on the machine executing the deployment to PCF to be able to run the `cf` command-line executable.
-
-You will also need to [log in to Cloud Foundry using "cf CLI"](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html), specifying an API endpoint and an "org" (organization), before you are able to run commands like `cf push` successfully.

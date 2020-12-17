@@ -64,20 +64,6 @@ The following table lists the ports that should be open to correctly **monitor**
 
 In case you are using a hybrid infrastructure where some part is in OutSystems Cloud and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
 
-### Containers considerations
-
-If you are using a container-based hosting technology for deploying OutSystems applications, your network topology and firewall configuration should fulfill these requirements:
-
-* The Container Runtime network endpoint must accept connections on port 80.
-
-* The platform database and logging database addresses (and ports) must allow connections from the Container Runtime.
-
-* The Platform Server Deployment Controller port (12000) must allow connections from the Container Runtime.
-
-* The Cache Invalidation Service (RabbitMQ) port (default is 5672) must allow connections from the Container Runtime.
-
-SSL offloading **is required** to run applications in containers. Follow the instructions presented in [End-to-end SSL and SSL Offloading](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Using_OutSystems_in_Reverse_Proxy_Scenarios/03_OutSystems_configurations_in_reverse_proxy_scenarios#C_-_End-to-end_SSL_and_SSL_Offloading). Note that you **do not** need to follow the step instructing you to add a new record to the `OSSYS_PARAMETER` table, since the platform already does this step for you when deploying to containers.
-
 ### Network latency
 
 Even though OutSystems is built to scale horizontally, you need to consider the network latency between the database server, the Platform Server, and the front-end servers. For this reason, it’s advisable to have all servers that make up an environment, running under the same provider.

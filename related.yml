@@ -880,20 +880,6 @@
 - extensibility-and-integration/rest/troubleshoot-a-rest-api.md:
     - extensibility-and-integration/log-levels-set.md
 
-# --- Managing the Applications Lifecycle > Containers ---
-
-- managing-the-applications-lifecycle/containers/intro.md:
-    - managing-the-applications-lifecycle/deploy-applications/zones/intro.md
-
-- managing-the-applications-lifecycle/containers/guide-ecs.md:
-    - one-way: managing-the-applications-lifecycle/containers/intro.md
-    - one-way: managing-the-applications-lifecycle/deploy-applications/zones/intro.md
-    - external:
-        - "Development FAQ: How to automate Docker container deployment with Jenkins": 
-            https://success.outsystems.com/Documentation/Development_FAQs/How_to_automate_Docker_container_deployment_with_Jenkins
-        - "Development FAQ: How to automate container deployment by using LifeTime API v2 and Jenkins": 
-            https://success.outsystems.com/Documentation/Development_FAQs/How_to_automate_container_deployment_by_using_LifeTime_API_v2_and_Jenkins
-
 # --- Developing an Application ---
 
 #     Use Data/Data Modeling/Entity Relationships

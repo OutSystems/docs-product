@@ -91,10 +91,6 @@ Service Actions mix the advantages of loosely-coupled REST API methods with the 
 **Access governance**
 :   Service Actions follow the same governance model as any other reusable element defined by permissions in LifeTime.
 
-#### Scalability
-
-Due to its loosely-coupled nature, using Service Actions enable you to handle additional load by scaling your service through [container deployment](../../managing-the-applications-lifecycle/containers/intro.md). The requests to the service will then be distributed among the several containers.
-
 #### Dealing with transactionality and networking
 
 Since Service Actions don’t share the same process and transaction with the consumers, implementing fault-tolerant services using Service Actions requires additional logic on the consumer side.
@@ -115,7 +111,6 @@ The table below compares the most relevant differences between Server Actions an
 |   | Server Actions | Service Actions |
 | - | -------------- | --------------- |
 | **Release cycles** | Changes in implementation requires consumers to also be deployed. | Changes in the implementation can be deployed independently from the consumers. |
-| **Scaling through containers** | Each runtime is published with all dependencies. | Loosely coupled elements can be built and published independently.|
 | **Service communication** | Consumer and producer modules run in a single process. | Consumer and producer modules run in different processes. |
 | **DB transactions** | All transactions in a single process. |Multiple processes require multiple transactions. |
 | **Development effort** | Simpler logic and faster development. | Requires additional logic to handle transactionality and networking. |
@@ -160,7 +155,5 @@ In this case, using Service Actions to expose functionality will increase busine
 To decide for using Service Actions to expose functionality, you must evaluate if the additional development effort pays off the increased business value of having independent release cycles.
 
 #### Services with scaling requirements
-
-If you already have a large distributed service with **processor intensive tasks**, using Service Actions will enable you to scale your service through [container deployment](../../managing-the-applications-lifecycle/containers/intro.md).
 
 To decide for using Service Actions to expose functionality, you must evaluate if the additional development effort pays off the capability to scale your service.

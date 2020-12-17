@@ -26,11 +26,6 @@ When you do one of the following changes, OutSystems deploys the application to 
 
 You can define that a deployment zone should automatically include all front-end servers available in the environment by activating the "Includes all Servers" configuration option. This avoids the manual task of adding a new server to the deployment zone each time you add a new front-end server to the environment.
 
-You can configure deployment zones to perform one of the following kinds of deployments:
-
-* deploying to a regular Internet Information Services (IIS) web server — a hosted technology named "Classic Virtual Machines"
-* deploying to a [container-based infrastructure](<../../containers/app-run.md>), supporting different hosting technologies
-
 When you change the deployment zone of an application to a deployment zone that uses a container-based hosting technology, you must republish your application for the changes to take effect.
 
 <div class="info" markdown="1">

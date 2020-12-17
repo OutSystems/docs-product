@@ -26,8 +26,6 @@ When you do one of the following changes, OutSystems deploys the application to 
 
 You can define that a deployment zone should automatically include all front-end servers available in the environment by activating the "Includes all Servers" configuration option. This avoids the manual task of adding a new server to the deployment zone each time you add a new front-end server to the environment.
 
-When you change the deployment zone of an application to a deployment zone that uses a container-based hosting technology, you must republish your application for the changes to take effect.
-
 <div class="info" markdown="1">
 
 Configuring the deployment zone of individual modules is **deprecated** since Platform Server 11.8. Even though applications with modules in different deployment zones are still supported, OutSystems will stop supporting this option in the future.

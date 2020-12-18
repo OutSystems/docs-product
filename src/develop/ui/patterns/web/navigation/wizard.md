@@ -117,10 +117,10 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. On the **Properties** tab, define the button names and the button behavior (previous and next).
 
-    | Property |  Button 1 | Button 2
+    | Property | Button 1 | Button 2
     |---|---|---|
-    | Label | "Previous"| "Next"|
-    | Method | Navigate/Submit| Navigate/Submit|
+    | Label | "Previous" | "Next" |
+    | Method | Navigate/Submit | Navigate/Submit |
 
 1. To ensure that all of the information the user enters is passed from step to step, create a [screen action](../../../../logic/action-web.md#screen-actions) by selecting the **Next** button.
 

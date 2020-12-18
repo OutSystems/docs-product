@@ -26,14 +26,21 @@ Client-side Aggregates run in the client logic. Use them to get data for your wi
 
 Aggregates that run in the **server-side logic** are in the logic flows. To add an Aggregate in the server logic, drag an Aggregate from the toolbox to the flow of an action. 
 
-![Server-side aggregates](images/aggregate-server-side-ss.png?width=450)
+![Server-side aggregates](images/aggregate-server-side-ss.png?width=350)
 
-## Notes on Max. Records and zero value
+## Fetching all records in client-side logic
+
+There are cases when you always need to fetch all records from the database, for example to populate drop-down box lists. There are two ways of doing it:
+
+* Use a Screen Aggregate and set **Max. Records** higher than the maximum number of records you expect. Keep in mind that large amounts of data may slow down the user interface and degrade the responsiveness of the app.
+* Use a Data Action instead of Screen Aggregate and leave **Max. Records** field empty. In Data Actions, the **Max. Records** value is optional, and if you provide no value the Data Action fetches all records from the database.   
+
+## Max. Records and zero value
 
 The **Max. Records** property in Aggregates controls the maximum number of records the Aggregate returns. **Max. Records** property works slightly different in **client actions** and **server actions** when you set the value to zero (**Max. Records = 0**).
 
 * In the **server** actions, **Max. Records = 0** returns **all records** from database.
-* In the **client** actions, **Max. Records = 0** returns **zero records** from database. Additionally, **Max. Records** is mandatory in Reactive Web and Mobile Apps in Screens/Blocks and client actions. This helps you control the amount of data the Aggregate returns and avoid performance issues.
+* In the **client** actions, **Max. Records = 0** returns **zero records** from database. Additionally, **Max. Records** is mandatory in Reactive Web Apps and Mobile Apps in Screens/Blocks and client actions. This helps you control the amount of data the Aggregate returns and avoid performance issues.
 
 Setting **Max. Records** to zero works like this in other elements that reuse Aggregates to get data, for example **Refresh Data**.
 

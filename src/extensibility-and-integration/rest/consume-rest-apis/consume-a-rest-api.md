@@ -122,7 +122,6 @@ When importing the REST API method, Service Studio does the following:
 
 ![Created structures in Service Studio after consuming a REST API](images/ss-rest-consume-created-structures.png)
 
-
 ## Use a REST API Method in your Application { #use }
 
 OutSystems translates the methods exposed by a REST API into **OutSystems actions**, with the same semantics as any action created by you in Service Studio.
@@ -131,7 +130,7 @@ You can now use the newly created methods in your application the same way you u
 
 1. Go to the action flow where you want to use the REST API Method.
   
-    ![Preparation flow where we want to use the imported REST API method](images/ss-rest-consume-use-method-3.png)
+    ![Preparation flow where you want to use the imported REST API method](images/ss-rest-consume-use-method-3.png)
 
 1. In the **Logic** tab, open the **Integrations** folder and the **REST** element.
 
@@ -149,12 +148,12 @@ OutSystems supports using input parameters in URL query string as name/value pai
 
 For example, you can use the following URLs:
 
-* `http://apps.mycompany.com/Orders/{id}/?show_details={ShowDetails}`
+* `http://apps.example.com/Orders/{id}/?show_details={ShowDetails}`
 
     `id` used outside the query string, as part of the URL.  
     `ShowDetails` used as an input parameter, following the allowed format (`key={value}`).
 
-* `http://apps.mycompany.com/Orders/?key1={value1}&key2={value2}`
+* `http://apps.example.com/Orders/?key1={value1}&key2={value2}`
 
     `value1` and `value2` used as input parameters, following the allowed format.  
     Separate parameters in the query string using the `&` (ampersand) character.
@@ -163,18 +162,18 @@ Using input parameters in the query string following a different format, or as a
 
 For example, you can't use any of the following URLs because they're not currently supported:
 
-* `http://localhost/Orders/?{key}={value}`
+* `http://apps.example.com/Orders/?{key}={value}`
 
     You can't use an input parameter (in this case, `key`) to define a query string parameter name.
 
-* `http://localhost/Orders/?key={value1},{value2}`
+* `http://apps.example.com/Orders/?key={value1},{value2}`
 
     You can't use several input parameters (in this case, `value1` and `value2`) to define a composed value for a query string parameter.
 
-* `http://localhost/Orders/?name={"last":{value1},"first":{value2}}`
+* `http://apps.example.com/Orders/?name={"last":{value1},"first":{value2}}`
 
     You can't use JSON structures as query string parameter values.
 
-* `http://localhost/Orders/?{QueryString}`
+* `http://apps.example.com/Orders/?{QueryString}`
 
     You can't define a generic query string that's only defined at runtime using an input parameter.

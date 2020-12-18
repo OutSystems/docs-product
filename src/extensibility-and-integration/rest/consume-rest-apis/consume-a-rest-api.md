@@ -150,13 +150,13 @@ For example, you can use the following URLs:
 
 * `http://apps.example.com/Orders/{id}/?show_details={ShowDetails}`
 
-    `id` used outside the query string, as part of the URL.  
-    `ShowDetails` used as an input parameter, following the allowed format (`key={value}`).
+    Uses `id` outside the query string, as part of the URL.  
+    Uses `ShowDetails` as the value of a query string parameter, following the allowed format (`key={value}`).
 
 * `http://apps.example.com/Orders/?key1={value1}&key2={value2}`
 
-    `value1` and `value2` used as input parameters, following the allowed format.  
-    Separate parameters in the query string using the `&` (ampersand) character.
+    Uses `value1` and `value2` as input parameters, following the allowed format.  
+    You can separate parameters in the query string using the `&` (ampersand) character.
 
 Using input parameters in the query string following a different format, or as a way of defining the whole query string, is **not supported** in OutSystems.
 

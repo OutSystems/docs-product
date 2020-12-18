@@ -161,7 +161,7 @@ For example, you can use the following URLs:
 
 Using input parameters in the query string following a different format, or as a way of defining the whole query string, is **not supported** in OutSystems.
 
-For example, you can't use any of the following URLs because they're not supported:
+For example, you can't use any of the following URLs because they're not currently supported:
 
 * `http://localhost/Orders/?{key}={value}`
 
@@ -173,7 +173,7 @@ For example, you can't use any of the following URLs because they're not support
 
 * `http://localhost/Orders/?name={"last":{value1},"first":{value2}}`
 
-    You can't use JSON structures as query parameter values.
+    You can't use JSON structures as query string parameter values.
 
 * `http://localhost/Orders/?{QueryString}`
 

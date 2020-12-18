@@ -77,6 +77,12 @@ Do the following:
 
     Each input parameter defined between braces in the URL becomes an input parameter of the method.
 
+    <div class="info" markdown="1">
+
+    **Note:** Input parameters in URL query strings must follow a specific format. See [Using parameters in the URL query string](#using-params-query-string) for details.
+
+    </div>
+
 1. If the REST API you are consuming requires specific headers or uses HTTP Basic Authentication, open the **Headers / Auth** tab and fill the necessary information.
 
     ![Consume REST API Method - Headers/Auth tab](images/ss-rest-consume-headers-auth.png)
@@ -116,7 +122,6 @@ When importing the REST API method, Service Studio does the following:
 
 ![Created structures in Service Studio after consuming a REST API](images/ss-rest-consume-created-structures.png)
 
-
 ## Use a REST API Method in your Application { #use }
 
 OutSystems translates the methods exposed by a REST API into **OutSystems actions**, with the same semantics as any action created by you in Service Studio.
@@ -125,7 +130,7 @@ You can now use the newly created methods in your application the same way you u
 
 1. Go to the action flow where you want to use the REST API Method.
   
-    ![Preparation flow where we want to use the imported REST API method](images/ss-rest-consume-use-method-3.png)
+    ![Preparation flow where you want to use the imported REST API method](images/ss-rest-consume-use-method-3.png)
 
 1. In the **Logic** tab, open the **Integrations** folder and the **REST** element.
 
@@ -136,3 +141,39 @@ You can now use the newly created methods in your application the same way you u
 1. Use the method's output parameters as you do for any other action.
   
     ![Example of using the output of a REST API method as a Source Record List](images/ss-rest-consume-use-method-2.png)
+
+## Using parameters in the URL query string { #using-params-query-string }
+
+OutSystems supports using input parameters in URL query string as name/value pairs, like in `key={value}`, where `value` is an input parameter. The URL query string is the part of the URL after the `?` (question mark) character.
+
+For example, you can use the following URLs:
+
+* `http://apps.example.com/Orders/{id}/?show_details={ShowDetails}`
+
+    Uses `id` outside the query string, as part of the URL.  
+    Uses `ShowDetails` as the value of a query string parameter, following the allowed format (`key={value}`).
+
+* `http://apps.example.com/Orders/?key1={value1}&key2={value2}`
+
+    Uses `value1` and `value2` as input parameters, following the allowed format.  
+    You can separate parameters in the query string using the `&` (ampersand) character.
+
+Using input parameters in the query string following a different format, or as a way of defining the whole query string, is **not supported** in OutSystems.
+
+For example, you can't use any of the following URLs because they're not currently supported:
+
+* `http://apps.example.com/Orders/?{key}={value}`
+
+    You can't use an input parameter (in this case, `key`) to define a query string parameter name.
+
+* `http://apps.example.com/Orders/?key={value1},{value2}`
+
+    You can't use several input parameters (in this case, `value1` and `value2`) to define a composed value for a query string parameter.
+
+* `http://apps.example.com/Orders/?name={"last":{value1},"first":{value2}}`
+
+    You can't use JSON structures as query string parameter values.
+
+* `http://apps.example.com/Orders/?{QueryString}`
+
+    You can't define a generic query string that's only defined at runtime using an input parameter.

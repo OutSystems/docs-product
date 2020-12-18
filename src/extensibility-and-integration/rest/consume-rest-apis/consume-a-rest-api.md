@@ -77,6 +77,12 @@ Do the following:
 
     Each input parameter defined between braces in the URL becomes an input parameter of the method.
 
+    <div class="info" markdown="1">
+
+    **Note:** Input parameters in URL query strings must follow a specific format. See [Using parameters in the URL query string](#using-params-query-string) for details.
+
+    </div>
+
 1. If the REST API you are consuming requires specific headers or uses HTTP Basic Authentication, open the **Headers / Auth** tab and fill the necessary information.
 
     ![Consume REST API Method - Headers/Auth tab](images/ss-rest-consume-headers-auth.png)
@@ -136,3 +142,39 @@ You can now use the newly created methods in your application the same way you u
 1. Use the method's output parameters as you do for any other action.
   
     ![Example of using the output of a REST API method as a Source Record List](images/ss-rest-consume-use-method-2.png)
+
+## Using parameters in the URL query string { #using-params-query-string }
+
+OutSystems supports using input parameters in URL query string as name/value pairs, like in `key={value}`, where `value` is an input parameter. The URL query string is the part of the URL after the `?` (question mark) character.
+
+For example, you can use the following URLs:
+
+* `http://apps.mycompany.com/Orders/{id}/?show_details={ShowDetails}`
+
+    `id` used outside the query string, as part of the URL.  
+    `ShowDetails` used as an input parameter, following the allowed format (`key={value}`).
+
+* `http://apps.mycompany.com/Orders/?key1={value1}&key2={value2}`
+
+    `value1` and `value2` used as input parameters, following the allowed format.  
+    Separate parameters in the query string using the `&` (ampersand) character.
+
+Using input parameters in the query string following a different format, or as a way of defining the whole query string, is **not supported** in OutSystems.
+
+For example, you can't use any of the following URLs because they're not supported:
+
+* `http://localhost/Orders/?{key}={value}`
+
+    You can't use an input parameter (in this case, `key`) to define a query string parameter name.
+
+* `http://localhost/Orders/?key={value1},{value2}`
+
+    You can't use several input parameters (in this case, `value1` and `value2`) to define a composed value for a query string parameter.
+
+* `http://localhost/Orders/?name={"last":{value1},"first":{value2}}`
+
+    You can't use JSON structures as query parameter values.
+
+* `http://localhost/Orders/?{QueryString}`
+
+    You can't define a generic query string that's only defined at runtime using an input parameter.

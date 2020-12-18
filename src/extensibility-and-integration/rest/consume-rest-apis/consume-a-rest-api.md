@@ -9,13 +9,13 @@ Make sure you gather all the information you need from the REST API documentatio
 
 In Service Studio you can:
 
-* consume several REST API methods described in a Swagger specification file, provided either by entering a URL or by selecting a specification file from the local file system.
+* consume several REST API methods (all methods or just the methods you select) described in a Swagger specification file, provided either by entering a URL or by selecting a specification file from the local file system.
 
 * Consume a single REST API method.
 
 ## Consume several methods of a REST API { #all-methods }
 
-You can consume several methods of a REST API if that API is compliant with the [Swagger specification](https://swagger.io/specification/) – REST APIs exposed by OutSystems are compliant with this specification.  
+You can consume several methods of a REST API (all API methods or just the methods you select) if that API is compliant with the [Swagger specification](https://swagger.io/specification/). REST APIs exposed by OutSystems are compliant with this specification.  
 
 You can import Swagger specifications either by providing a URL or by selecting a specification file from the local file system.
 
@@ -23,23 +23,23 @@ Do the following:
 
 1. In the **Logic** tab, open the **Integrations** folder.
 
-1. Right-click on the **REST** element and select **Consume REST API...**.
+1. Right-click on the **REST** element and select **Consume REST API...**
 
     ![Context menu when right-clicking REST in Service Studio](images/ss-rest-consume-menu.png)
 
-1. In the displayed dialog, choose **Add All Methods**.
+1. In the displayed dialog, choose **Add Multiple Methods**.
 
-    ![Consume REST API dialog - add single or all methods](images/ss-rest-consume-dialog.png)
+    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog.png)
+
+1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Finish**.
+
+    ![Dialog to choose one of the available server endpoints](images/ss-rest-consume-multiples-server-endpoint-dialog.png?width=582)
+
+    _Note:_ You can't change the server endpoint after importing the REST API.
 
 1. Choose the REST API methods you want to import (by default, all methods) and click **Finish**.
 
     ![Dialog to choose the REST API methods to import](images/ss-rest-consume-choose-methods.png)
-
-1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Finish**.
-
-    ![Dialog to choose one of the available server endpoints](images/ss-rest-consume-multiples-server-endpoint-dialog.png)
-
-    _Note:_ You can't change the server endpoint after importing the REST API.
 
 When importing the REST API, Service Studio does the following:
 
@@ -66,7 +66,7 @@ Do the following:
 
 1. In the displayed dialog, choose **Add Single Method**.
 
-    ![Consume REST API dialog - add single or all methods](images/ss-rest-consume-dialog.png)
+    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog.png)
 
 1. Fill the information about the **Method URL**. You can include parameters between braces in the URL for the method's input parameters.
 

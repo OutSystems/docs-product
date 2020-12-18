@@ -53,7 +53,7 @@ Fetches and computes data from a database.
 <td>Maximum number of records read from the database.</td>
 <td></td>
 <td></td>
-<td>If undefined, the default value is:<br/>
+<td>In Traditional Web App only. If undefined, the default value is:<br/>
         – In widgets: StartIndex + LineCount + 1;<br/>
         – Exporting to Excel: No limit.</td>
 </tr>

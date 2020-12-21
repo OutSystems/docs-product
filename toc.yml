@@ -727,10 +727,6 @@
     - href: managing-the-applications-lifecycle/containers/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/containers/architecture.md
-        - href: managing-the-applications-lifecycle/containers/app-run.md
-        - topics:
-            - href: managing-the-applications-lifecycle/containers/app-run-docker.md
-            - href: managing-the-applications-lifecycle/containers/app-run-pcf.md
                         
 # Setting Up OutSystems
 - href: setup/intro.md

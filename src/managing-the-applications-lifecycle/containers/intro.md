@@ -29,9 +29,6 @@ This deployment possibility allows you to benefit from the continuous low-code d
 
 Containers are supported in all **non-development environments**. This allows you to take advantage of the fast development cycles provided by OutSystems in earlier stages of your application lifecycle while being able to test your application (e.g. in Quality Assurance environment) running on a container similar to the ones available in your Production environment.
 
-The OutSystems deployment unit for containers is the **application**, in which all modules from an application will be deployed to the same [deployment zone](<app-run.md#create-and-configure-a-containers-deployment-zone>). Additionally, OutSystems only supports **one application per container**.
-
-
 ## Recommended Application Architecture for Containers
 
 The container model is suitable for a microservices architecture in which an application consists of multiple independent subsystems in the form of autonomous services that can be developed, tested, versioned, deployed and scaled independently.

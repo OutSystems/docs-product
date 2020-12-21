@@ -167,8 +167,6 @@ After the result file is processed by the platform, the operator can terminate t
 * [Deploying an Application to a Docker Container](<app-run-docker.md>)
 * [Deploying an Application to Pivotal Cloud Foundry](<app-run-pcf.md>)
 
-You can also check [how to automate the deployment process](<app-run-automate.md>) using an automated deployment tool.
-
 </div>
 
 ## The two deployment stages

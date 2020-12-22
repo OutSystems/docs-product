@@ -11,8 +11,8 @@ Tools like [Ajax Refresh](<../../../ref/lang/auto/Class.Ajax Refresh.final.md>) 
 
 To run JavaScript code in your Traditional Web App do the following:
 
-1\. [Add a JavaScript code block to one of the supported elements](#add-js-code-block)
-:   The following elements support JavaScript code blocks:
+1. [**Add a JavaScript code block to one of the supported elements**](#add-js-code-block).  
+    The following elements support JavaScript code blocks:
 
     * Module
     * Web Screen
@@ -30,8 +30,8 @@ To run JavaScript code in your Traditional Web App do the following:
 
     </div>
 
-2\. [Run JavaScript code](#run-js-code)
-:   You can run any JavaScript statement in a Web Screen or Web Block using one of the following methods:
+1. [**Run JavaScript code**](#run-js-code).  
+    You can run any JavaScript statement in a Web Screen or Web Block using one of the following methods:
 
     * Using the **Extended Properties** of Web Screens or widgets.
     * Using an unescaped **Expression**.

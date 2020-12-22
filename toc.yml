@@ -672,6 +672,7 @@
         - href: managing-the-applications-lifecycle/deploy-applications/rollback-to-a-previous-version.md
         - href: managing-the-applications-lifecycle/deploy-applications/zones/intro.md
         - topics:
+            - href: managing-the-applications-lifecycle/deploy-applications/zones/network-architecture.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/zone-create.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/zone-configure-app.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/reference.md
@@ -723,10 +724,6 @@
     - href: managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
     - href: managing-the-applications-lifecycle/data-protection.md
 
-    # Containers
-    - href: managing-the-applications-lifecycle/containers/intro.md
-    - topics:
-        - href: managing-the-applications-lifecycle/containers/architecture.md
                         
 # Setting Up OutSystems
 - href: setup/intro.md

@@ -36,7 +36,7 @@ If you have applications with modules in different deployment zones, you must re
 
 ## Default deployment zone
 
-The **default deployment zone** configuration controls where OutSystems deploys your new modules and applications. OutSystems creates a deployment zone named "Global" on a first install, set as the default deployment zone. 
+The **default deployment zone** configuration controls where OutSystems deploys your new modules and applications. OutSystems creates a deployment zone named "Global" on a first install, set as the default deployment zone.
 
 As a rule, when you create a new application and publish it for the first time, the platform deploys its modules to the default deployment zone. Once you have published a module or application for the first time, you can select any other deployment zone as its deployment target.
 

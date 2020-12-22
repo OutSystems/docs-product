@@ -28,7 +28,7 @@ Deployment Zone Address
 
     This address may vary according to your network architecture. For example with only one front-end server, the "Deployment Zone Address" can be the machine's hostname. However, with multiple front-ends, the "Deployment Zone Address" should be the Fully Qualified Domain Name (FQDN) of the device responsible for the communication between these front-end servers, for example, a load balancer.
 
-    Learn how this address must fit in your network architecture in [Recommended Network Architecture](<../../containers/architecture.md#configuring-the-address-of-deployment-zones>).
+    Learn how this address must fit in your network architecture in [Recommended Network Architecture](<network-architecture.md#configuring-the-address-of-deployment-zones>).
 
     The platform installation must be able to access this address on ports 80 and 443. Anything living in this deployment zone must be able to reach the platform installation on the port defined for the Deployment Controller Service (by default, 12000).
 

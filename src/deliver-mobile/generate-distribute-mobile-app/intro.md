@@ -1,6 +1,6 @@
 ---
 summary: You can generate the mobile app package for your mobile app and distribute it for tests purposes or, when you have completed work on your app, generate a production-ready version of your app to distribute to a selected group of end users or to publish in mobile app stores.
-tags: runtime-mobile
+tags: article-section, runtime-mobile
 ---
 
 # Generate and Distribute Your Mobile App
@@ -11,9 +11,9 @@ The following sections show how to configure and generate iOS and Android app pa
 
 For additional information about generating and distributing iOS and Android app packages, see [More Information on Generating and Distributing Mobile Apps](more-information.md).
 
-<div class="info" markdown="1">
+<div class="warning">
 
-See [Distribute as a progressive web app (PWA)](../distribute-pwa/intro.md) for information about the PWA options.
+Don't tamper with the iOS or Android mobile builds once the platform generates them. For example, don't use a third-party tool to add a new functionality like a performance monitoring. If you modify a mobile build, you're risking to have an app that doesn't run correctly and that fails to pass integrity checks. 
 
 </div>
 

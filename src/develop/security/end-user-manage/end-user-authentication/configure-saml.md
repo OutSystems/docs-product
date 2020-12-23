@@ -58,10 +58,12 @@ Do the following:
     If the option **Accept Only Signed Login Responses** in the OutSystems Users application is active (it's enabled by default), make sure you activate the corresponding setting in your Identity Provider.  
     The option **Accept Only Signed Login Responses** is available in **1. Service Provider Connector Settings**, under **Advanced Options**.
 
+    **Note:** The Users app requires SAML assertions to be **signed**. Make sure you activate the assertion signing setting in your Identity Provider.
+
     ![Accept Only Signed Login Responses option in Configure Authentication](images/saml-option-signed-login-responses.png)
 
-    **Tip:** To speed up configuration, and if your Identity Provider (IdP) has this feature, you can export a Service Provider (SP) metadata XML file in the Users application to import it in your IdP.  
-    Similarly, you can import a Federation metadata XML file containing the IdP Server Settings in the Users application if your IdP has the option to export this metadata file.
+**Tip:** To speed up configuration, and if your Identity Provider (IdP) has this feature, you can export a Service Provider (SP) metadata XML file in the Users application to import it in your IdP.  
+Similarly, you can import a Federation metadata XML file containing the IdP Server Settings in the Users application if your IdP has the option to export this metadata file.
 
 ### Check the authentication flows of your OutSystems applications { #change-auth-flows }
 

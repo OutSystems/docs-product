@@ -728,6 +728,12 @@ SafeURL
 
 Runs the provided JavaScript code in the browser.
 
+<div class="info" markdown="1">
+
+The RunJavaScript action sends the response to the browser. This means that you can't call other actions to manipulate the response after RunJavaScript, for example the SetCookie action.
+
+</div>
+
 *Inputs*
 
 Script

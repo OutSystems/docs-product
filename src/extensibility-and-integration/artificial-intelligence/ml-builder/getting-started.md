@@ -29,7 +29,9 @@ To get started with ML Builder, do the following:
 
     ![ML Builder plugin](images/download-plugin.png?width=650)
 
-1. [Create a model](creating-model.md) in the ML Builder app. Select your use case depending on what you want to predict, choose data, and let ML Builder create a model. Validate the performance in the model details page.
+1. [Create a model](creating-model.md) in the ML Builder app. Select your use case depending on what you want to predict, choose data, and let ML Builder create a model.
+
+1. Validate and deploy your model in the overview page, to make the model available in your environment.
 
 1. Implement the model in your app.
 

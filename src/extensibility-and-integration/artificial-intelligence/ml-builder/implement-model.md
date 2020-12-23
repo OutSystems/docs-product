@@ -9,7 +9,10 @@ After you train your model and you're happy with the model performance, use the 
 
 <div class="info" markdown="1">
 
-To use the model in your app, you need to install **ML Builder plugin**. You can download the plugin during the setup, as described in [Getting started](getting-started.md).
+To use the model in your app, you need to:
+
+* Install the **ML Builder plugin**. You can download the plugin during the setup, as described in [Getting started](getting-started.md).
+* Deploy at least one model. You can deploy a model by clicking on the **Deploy** button in the model overview page.
 
 </div>
 

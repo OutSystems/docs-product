@@ -39,3 +39,8 @@ You can translate the following elements of your app:
 ## Send feedback
 
 If you experience issues with this technical preview, let us know by posting [a new question with the **technical preview** tag](https://www.outsystems.com/forums/tag/6875/technical-preview/) in Forums.
+
+## Training resources
+
+Check out the [Multi-Language in OutSystems](https://www.outsystems.com/training/courses/182/multi-language-in-outsystems/) training section for video resources and demos. 
+

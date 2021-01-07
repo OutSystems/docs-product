@@ -27,6 +27,12 @@ You can see and define the event handlers in the Events section of the propertie
 
 Opening an application is one of the situations when a screen is loaded (the other situation is when navigating from another screen). In this case, the app displays the configured splash screen and then navigates to the default screen.
 
+<div class="info" markdown="1">
+
+This article often mentions DOM, or Document Object Model. To learn more about DOM, check out [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) by MDN.
+
+</div>
+
 While displaying the splash screen, the application checks the user role against the roles with permission to access the screen (defined in the screen properties). After this verification, the Initialize event happens and the respective event handler action, the [On Initialize](<#on-initialize>) is triggered. Since the DOM of the default screen is not completely loaded when this event occurs, you can use this event handler to implement all the logic that doesn’t require the DOM, such as to initialize some default data.
 
 When the On Initialize event handler ends, the Aggregates and Data Actions of the default screen concurrently start to fetch data (exemplified by the GetContacts and GetProfileImages of the image above), the DOM of the screen loads and the [Ready](<#on-ready>) and [Render](<#on-render>) event handlers run. The difference between these two events is that the Ready event only happens when opening the screen while the Render event also happens every time the data of the screen (such as input parameters, variables, aggregates and data actions, or validation messages) is modified. You can use both event handlers to act on the loaded DOM. Avoid accessing the data of the screen since this data may not be fetched yet.

@@ -14,14 +14,14 @@ OutSystems identifies two different types of registered end users for licensing 
 
 You can classify all Registered Users whose email address contains a specific domain (for example, `mycompany.com`) as Internal Users, while all other Registered Users are considered External Users.
 
-The list of one or more domains used to identify users as Internal Users is defined in **classification rules**. All users whose email address contains one of the domains contained in the classification rules are considered **Internal Users**. Every other Registered User is considered an **External User**.
+The list of one or more domains used to identify users as Internal Users is defined in **classification rules**. All users with a **valid email address** that contains one of the domains contained in the classification rules are considered **Internal Users**. Every other Registered User is considered an **External User**.
 
 For example, if you set the classification rules to `mycompany.com`:
 
 * A Registered User whose email address is `scott.green@mycompany.com` is considered an Internal User.
 * A Registered User whose email address is `scarlett.doe@outsourcing.com` is considered an External User.
 
-The user classification rules are checked against the user's email address field, if it contains a value, or to the username, if the field value contains an email address. Any Registered Users that do not have a valid email address in one of these fields are classified as Internal Users.
+The user classification rules are checked against the user's email address field, if it contains a value, or to the username, if the field value contains an email address. Any Registered Users that **do not have a valid email address** in one of these fields are classified as Internal Users. This also includes Registered Users without an email.
 
 The configuration of classification rules is done per environment in Service Center, and you can configure different classification rules in different environments. OutSystems checks for registered [active users](add-delete-users.md#activate-deactivate) when determining the number of Internal/External Users in an environment.
 

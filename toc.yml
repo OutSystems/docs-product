@@ -419,7 +419,6 @@
             - href: develop/security/user-roles/validate-permissions.md
         - href: develop/security/restrict-access-to-an-internal-network.md
         - href: develop/security/secure-http-requests.md
-        - href: develop/security/encrypt-viewstate.md
         - href: develop/security/secure-the-data-of-your-mobile-apps.md
         
     # Troubleshooting Applications
@@ -705,6 +704,7 @@
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md
         - href: managing-the-applications-lifecycle/secure-the-applications/apply-content-security-policy.md
         - href: managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md
+        - href: managing-the-applications-lifecycle/secure-the-applications/encrypt-viewstate.md 
         - href: managing-the-applications-lifecycle/secure-the-applications/protection-against-brute-force-attacks.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-https-by-enabling-ssl.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md

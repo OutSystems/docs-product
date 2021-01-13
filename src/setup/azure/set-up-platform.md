@@ -76,7 +76,10 @@ To apply your OutSystems license to the **development** environment, do the foll
 
 1. Using the DNS name from the previous step, access the Service Center management console of the environment with the following URL: `http://<DNS_name>/ServiceCenter`.
 
-1. Log on using the default credentials (admin/<password provided in the Solution Template Wizard>).
+1. Log on using the following user credential:
+    
+    * Username = `admin`
+    * Password =  password set in step 3. of the ["Run the Solution Template Wizard" section](#run-the-solution-template-wizard)
 
 1. Go to the Administration section and select the Licensing tab.
 

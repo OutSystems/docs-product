@@ -559,7 +559,7 @@ tags: article-page; support-application_development; support-Application_Lifecyc
 </pre>
 
 
-The LifeTime API allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure. Version 2 of the API adds support for deployment zones, users, teams, and roles.
+The LifeTime API allows you to manage applications, modules, environments, and deployments of your OutSystems infrastructure. Version 2 of the API adds support for deployment zones, users, teams, and roles.
 
 Follow the guidelines presented in [REST API Authentication](<../lifetime-deployment/rest-api-authentication.md>) to authenticate your API requests.
 
@@ -569,4 +569,6 @@ Check [LifeTime API Examples](<../lifetime-deployment/api-use-cases.md>) to lear
 
 </div>
 
-You can find the Swagger file for LifeTime API v2 in the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), inside the detail page of each LifeTime Management Console version.
+You can download the Swagger file for the LifeTime API v2 in the download page of LifeTime Management Console binaries (available from LifeTime Management Console 11.5.0). Go to the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), and select your LifeTime Management Console version:
+
+![download LifeTime](images/lifetime-api-downloads.png)

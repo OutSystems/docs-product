@@ -522,6 +522,7 @@
     - topics:
         - href: extensibility-and-integration/mobile-plugins/file-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/transfer-plugin/intro.md
+        - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md
         - href: extensibility-and-integration/mobile-plugins/using-cordova-plugins.md
     - href: extensibility-and-integration/javascript/intro.md
     - topics:

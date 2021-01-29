@@ -186,7 +186,7 @@ These are officially supported plugins for PWAs:
 
 More plugins are coming soon, and you can contribute with your own on the Forge.
 
-## Debug you PWA
+## Debug your PWA
 
 To debug a PWA, emulate the app in Google Chrome. Go to the **Debugger** tab, and then in the **Debug Setup** select **Emulate using Chrome**.
 

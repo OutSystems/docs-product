@@ -20,7 +20,7 @@ To translate **Reactive Web** and **Mobile Apps** in Service Studio, as part of 
 
 You design the UI in the default language, and the app shows in that language by default. You can translate the app to other languages, and then let users switch between the UI languages.
 
-The default language is **en-US**. All language codes are in the [RFC 1766](https://tools.ietf.org/html/rfc1766) standard format, and they're **case sensitive**.
+The default language is **en-US**. All language codes are in the [RFC 1766](https://tools.ietf.org/html/rfc1766) standard format, and they're **case sensitive**. The platform detects right-to-left locales automatically and adjusts the styles.
 
 Here's how to get started:
 

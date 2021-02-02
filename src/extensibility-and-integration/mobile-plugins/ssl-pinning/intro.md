@@ -197,11 +197,3 @@ If you want your mobile app to perform SSL Pinning validations while connecting 
 ## Plan for the certificate renewal
 
 If you're planning to update your certificate soon, release a new version of the app with the JSON configuration that contains the hash values for both the current certificate and the new certificate. Do this before you update the certificate to give enough time for your users to update the app. This way, once you update the certificate, the app continues to work.
-
-## Limitations
-
-This section is about limitations of the plugin.
-
-### Blob object and Android
-
-Currently, handling [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) objects isn't supported in Android when SSL Pinning is enabled.

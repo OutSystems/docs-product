@@ -108,7 +108,7 @@ The On Ready event handler runs when the Screen or Block is ready, i.e. when the
 Notes:
 
 * The DOM of the previous and current Screens are loaded when this event is triggered. To ensure that you are operating on the screen being created, execute logic only for the HTML `div` element with the class `active-screen`. 
-* Keep this event handler action simple and avoid slow actions such as server requests, since it may delay the render of the Screen or Block. 
+* Keep this event handler action simple and avoid using Screen Aggregates or Data Actions, which run in parallel, to manipulate data that might not be available.
 * Avoid accessing the data of the Screen or Block since this action runs before the data is fetched. If you need to develop some logic on these data, use the On After Fetch event handler of the respective Aggregate or Data Action. 
 
 Use cases you can implement with this event handler:

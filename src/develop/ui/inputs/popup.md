@@ -108,3 +108,14 @@ After following these steps and publishing the module, you can test the pattern 
 Here is a [video tutorial about using Popup in Traditional Web App](https://www.youtube.com/watch?v=ShOCxc3g91M).
 
 </div>
+
+### Notes
+
+#### How to display a Confirmation Message for a Link that navigates to a Popup
+When a Link widget has a Confirmation Message and the destination a RichWidgets\Popup_Upload, the Confirmation Message is never displayed. If you want to achieve that experience, you'll need to first navigate to a hidden Link that can then navigate to a RichWidgets\Popup_Upload:
+
+1. Add a Link widget with the property **Confirmation Message** filled.
+
+1. Set its **Destination** as a **Server Action** that uses **RichWidgets\Widget_Click** action to select the **id** of a second Link widget.
+
+1. Set the second Link's **Visibility** property as **False** and its **Destination** as **RichWidgets\Popup_Upload**.

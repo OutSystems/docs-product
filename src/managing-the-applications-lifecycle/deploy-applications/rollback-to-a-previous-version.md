@@ -9,7 +9,7 @@ This topic describes how to rollback to a previous version of an application.
 
 In this example the 0.3 version of Directory was deployed to Production, and a critical bug was then detected. Since the bug is causing data to be inconsistent, the Operations team needs to rollback the application to its previous version.
 
-## When to Rollback to a Previous Version?
+## When to rollback to a previous version?
 
 Most of times, bugs found in Production are small and have low impact to the business. In those scenarios the team can simply [Apply a Hotfix](<apply-a-hotfix.md>).
 
@@ -18,17 +18,17 @@ In scenarios where it's not possible to apply a hotfix due to the severity of th
 * Create and deploy a tag based on a previous version, in the LifeTime console.
 * Republish a previous version of the Solution, in the Service Center console.
 
+## Create a tag based on a previous version
+
 <div class="info" markdown="1">
 
-For mobile applications, it's only possible to rollback by republishing a previous version of the Solution in the Service Center console. As it's not possible to rollback app versions in the App Stores, LifeTime doesn't support creating a tag based on a previous mobile app version.
+This operation isn't available for mobile apps. As it's not possible to rollback app versions in the App Stores, LifeTime doesn't support creating a tag based on a previous mobile app version.
 
 </div>
 
-## Create a tag based on a previous version
-
 ![](images/rollback-to-a-previous-version-1.png)
 
-In LifeTime it's not possible to deploy a version prior to the one running on the environment. Instead, you need to create a new tag for that version. This lets you track which patches have been applied to a running application.
+In LifeTime it's not possible to deploy a version lower than the one running on the environment. Instead, you need to create a new tag for that version. This lets you track which patches have been applied to a running application.
 
 This version will be exactly the same as the stable version, since LifeTime lets you specify the modules when tagging a version.
 

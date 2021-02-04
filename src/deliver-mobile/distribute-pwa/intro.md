@@ -120,11 +120,11 @@ Follow these steps to install and run your PWA on an iOS device.
 You can customize your app by:
 
 * Editing the details in the app details screen.
-* [Editing the PWA manifest](advanced.md#editing-manifest)
+* [Editing the PWA manifest](advanced.md#editing-manifest).
 
 ### Changing the PWA properties
 
-You can edit your app name, description, color, and logo through the UI of Service Studio. Make sure you republish the app. For overriding properties with the PWA manifest, check out [Advanced settings and customizations](advanced.md)
+You can edit your app name, description, color, and logo through the UI of Service Studio. Make sure you republish the app. For overriding properties with the PWA manifest, check out [Advanced settings and customizations](advanced.md).
 
 ### Prompting users to install PWA in iOS
 

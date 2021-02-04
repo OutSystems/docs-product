@@ -5,7 +5,7 @@ tags: support-application_development; runtime-mobile;
 
 # Distribute as a progressive web app (PWA)
 
-A progressive web app (PWA) provides a native-like experience without having to distribute a native app. PWA is an emerging technology that combines existing web development techniques with functionalities of modern browsers.
+A progressive web app (PWA) provides a native-like experience without having to distribute a native mobile app. PWA is an emerging technology that combines existing web technologies with modern browser features.
 
 The main benefits of PWAs:
 
@@ -14,6 +14,12 @@ The main benefits of PWAs:
 * They update the moment you publish changes to your OutSystems environment.
 * Lighter on user devices' systems resources.
 * When you develop PWAs in OutSystems, you get all benefits of the low-code development. It's enough to turn on the PWA distribution of the app.
+
+<div class="info" markdown="1">
+
+The team would love to hear what you think of this document and if it helps you. Please **leave feedback** in the feedback section. If you want to get a reply, select **Yes, you may contact me about this feedback**.
+
+</div>
 
 PWA in OutSystems is a **distribution mode** for mobile apps. A mobile app belongs to the Mobile App runtime, and the default app templates of this type are **Phone App** and **Tablet App**. Select them when you're creating a new app in Service Studio that you want to offer users as a PWA. You can simultaneously distribute a mobile app as a native mobile app and as a PWA.
 
@@ -30,7 +36,7 @@ To distribute your app as a PWA, you need:
 
 </div>
 
-## Create an app and enable the PWA
+## Creating an app and enabling the PWA
 
 Create a mobile app and turn on the toggle **Distribute as PWA** in the app details. 
 
@@ -63,7 +69,7 @@ Mobile best practices apply for PWA development as well, particularly about [des
 
 </div>
 
-## Run the PWA
+## Running the PWA
 
 Here is how you can run your PWA. Go to the app details in Service Studio and click **Distribute** tab:
 
@@ -109,67 +115,18 @@ Follow these steps to install and run your PWA on an iOS device.
     ![Add to home screen share option on iOS](images/pwa-app-ios-home.png?width=300)
 
 
-## Customize your PWA
+## Customizing your PWA
 
 You can customize your app by:
 
 * Editing the details in the app details screen.
-* Overriding the settings in the [PWA manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest), in the Extensibility Configurations.
+* [Editing the PWA manifest](advanced.md#editing-manifest)
 
 ### Changing the PWA properties
 
-You can edit your app name, description, color, and logo through the UI of Service Studio. Make sure you republish the app.
-  
-### The manifest values you can edit in Service Studio
+You can edit your app name, description, color, and logo through the UI of Service Studio. Make sure you republish the app. For overriding properties with the PWA manifest, check out [Advanced settings and customizations](advanced.md)
 
-Service Studio generates the manifest automatically. Modify the manifest only if you want to override the values. You can edit the following manifest options from the Service Studio UI.
-
-| Service Studio property | Manifest key  |
-| ----------------------- | ------------- |
-| Application Name        | `name`        |
-| Application Description | `description` |
-| App Primary Color       | `theme_color` |
-| Application Logo*       | `icons`       |
-
-(*) Service Studio generates the four required resolutions of the icon.
-
-### Override the manifest settings {#override-pwa-manifest}
-
-<div class="info" markdown="1">
-
-Keep in mind that the LifeTime PWA manifest overrides the manifest in Service Studio.
-
-</div>
-
-Using the manifest overrides the values you set in Service Studio. You have to use the manifest in the `PWAManifest` section of the JSON of the **Extensibility Configurations** field. You can edit the manifest in two places:
-
-* In Service Studio, where the manifest overrides all UI settings **in all environments**. Edit the JSON manifest in the **Extensibility Configurations** field of the module properties.
-* In LifeTime, where the manifest overrides all UI settings **in the current environment only**. Find the **Extensibility Configurations** field in **Applications** > **(app name)** > **Settings** > **Advanced** > **Extensibility Configurations**
-
-### Manifest resources and sample JSON
-
-You can use [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) to generate the manifest, or experiment with this sample.
-
-```
-{ 
-   "PWAManifest":{ 
-      "name":"Name overridden",
-      "short_name":"ShortName overridden",
-      "description":"Description overridden",
-      "theme_color":"#EDEDED",
-      "background_color":"black",
-      "dir":"ltr",
-      "orientation": "portrait",
-      "serviceworker":{ 
-         "src":"/PWAServiceWorker/scripts/PWAServiceWorker.ServiceWorker.js"
-      }
-   }
-}
-```
-
-You should be able to use the JSON for both PWA and plugins.
-
-### Prompt to install PWA in iOS
+### Prompting users to install PWA in iOS
 
 Use a prompt to tell your users they can install the PWA version of the app. For the iOS devices, try out the community-contributed plugin [Prompt to Install PWA](https://www.outsystems.com/forge/component-overview/8216/prompt-to-install-pwa), or develop a custom solution. 
 
@@ -177,87 +134,23 @@ Use a prompt to tell your users they can install the PWA version of the app. For
 
 Android (Chrome) offers a native experience for the install prompt, so you don't need a plugin. 
 
-## Use plugins in PWA {#plugins}
+## Using plugins {#plugins}
 
-These are officially supported plugins for PWAs:
+These are the officially supported plugins for PWAs:
 
 * [Camera Plugin](https://www.outsystems.com/forge/component-overview/1390/camera-plugin), from version 6.0
 * [Location Plugin](https://www.outsystems.com/forge/component-versions/1395), from version 5.1
 
 More plugins are coming soon, and you can contribute with your own on the Forge.
 
-## Debug your PWA
+## Debugging your PWA
 
 To debug a PWA, emulate the app in Google Chrome. Go to the **Debugger** tab, and then in the **Debug Setup** select **Emulate using Chrome**.
 
 ![Activating the PWA debugger](images/pwa-debug-ss.png?width=750)
 
-## Troubleshooting
+<div class="info" markdown="1">
 
-Here are some troubleshooting tips to assist you in fixing you PWA.
+Having issues with your PWA? Check out [Troubleshooting and known issues](troubleshooting-know-issues.md).
 
-### The toggle button has no effect
-
-If you haven't done it already, republish the apps in the factory and then turn on the toggle **Distribute as PWA**. For the new features to work correctly, you need to republish your apps after a Platform Server upgrade, as instructed in the Platform Server upgrade list.
-
-### I'm getting an invalid home URL for PWA
-
-If the PWA can't load because you're getting the URL that matches the URL of the environment, for example ` https://example.com/`, check if your set a home module for your app.
-
-Open the app details screen. If the **Test in browser button** is deactivated, the app doesn't have a module defined. Click the curly arrow icon on the right side of the module name to set that module as the home module. Try loading the PWA again.
-
-![Set a home module](images/set-home-module-ss.png?width=600)
-
-### The PWA debugging isn't starting
-
-The window **Waiting for application** stays open, and nothing happens when you start the debugging of your PWA.
-
-To fix this issue, set the debugger to **Emulate using Chrome** before you click **Start debugging**. Note that the options **Android device** and **iOS device** of the debugger work only when you distribute your app as a native build, and can't work with an app you distribute as PWA.
-
-### Extensibility Configurations override isn't working when applied in LifeTime
-
-There's an issue with applying Extensibility Configurations from LifeTime to override the manifest. The team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
-
-### PWA doesn't install in iOS
-
-If you're using Platform Server 11.7 or earlier **and** iOS 13 and later, you should **either**:
-
-* Upgrade to Platform Server 11.8 or later.
-
-* Disable Web SQL. Go to **Settings** > **Safari** > **Advanced** > **Experimental Features** > and make sure **Disable Web SQL** is off.
-    
-    ![WebSQL Settings in Safari iOS](images/pwa-ios-websql-settings.png?width=250)
-
-### PWA isn't working in iOS 13.0 to 13.2
-
-There's an iOS bug that prevents PWAs from running correctly in the iOS versions 13.0 to 13.2. To fix the issue, use iOS 13.3 or later.
-
-### PWA is slow and queries take too long to execute
-
-If your PWA performs poorly and queries take too long to execute, your local storage model might be too complex or the amount of data that the app needs to handle is too high. See [Design a lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage) for recommendations.
-
-### I'm getting "not connected to the environment" error when I enable the PWA
-
-You're getting the following error in Service Studio when you try to enable the PWA: "There was an error connecting to your development environment. Confirm your connection and retry".
-
-Here are some suggestions to fix the issue:
-
-* Connect to Service Studio by entering your environment URL that begins with "https". For example, instead of connecting to `http://myenvironment.example.com`, connect to `https://myenvironment.example.com`. After that, retry enabling the PWA.
-
-* Check if you have a valid and properly configured SSL certificate. When you distribute a mobile app, by a native build or as a PWA, you need the certificate for secure communication with the server. For more information, see notes in [Enforce HTTPS Security](../../managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md).
-
-### There are runtime errors
-
-Try deleting the local data of the app. Locate the settings in the browser, and clear the data for the app installation domain. In Chrome, go to **Settings** > **Site Settings** > **Cookies and site data** > **See all cookies and site data**, search for the domain and clear the data.
-
-## Known issues
-
-Here are the current known issues with PWA.
-
-### Overriding the Extensibility Configurations in LifeTime isn't working
-
-There's an issue that prevents LifeTime from overriding the PWA Extensibility Configurations. The development team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
-
-### Staging of the PWA toggle value in LifeTime isn't working
-
-In Platform Server 11.9.0, the staging of the PWA toggle value in LifeTime isn't working as expected. Upgrade to Platform Server 11.10.0 or later to resolve the issue.
+</div>

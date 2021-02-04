@@ -6,6 +6,10 @@ The `Database Upgrade` error is issued in the following situations:
   
     You are trying to change the data type of a Site Property and this conversion is not supported by the database. This situation only occurs if the module has been published with this Site Property and if the data types are not compatible.
 
+* In version 11.12 and later: `The database upgrade has failed because site property <site property> type was changed from data type <type> to data type <type> after publishing. If you want to change it, please delete the site property <site property> first and then create a new site property with a different type.
+
+    This is the same error than the previous one, you are trying to change the data type of a Site Property and this conversion is not supported by the database.
+
 * `Could not find database column for <attribute> attribute`
   
     Attribute `<attribute>` was deleted or changed directly in the database and the entity definition does not match the table as defined in the database.

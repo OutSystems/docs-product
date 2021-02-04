@@ -77,9 +77,9 @@ If you choose to have a custom service worker in your PWA, you need to **manage 
 
 To add a custom service worker in PWA, do the following:
 
-1. [Get static resources links and URL mappings](#get-static-resources-links-and-url-mappings).
-2. [Add a custom service worker script](#add-custom-service-worker).
-3. [Edit the PWA manifest to reference the worker](#add-the-custom-service-worker-to-the-manifest).
+1. [Get static resources links and URL mappings](#getting-static-resources-links-and-url-mappings).
+2. [Add a custom service worker script](#adding-custom-service-worker).
+3. [Edit the PWA manifest to reference the worker](#editing-manifest).
 
 ### Getting static resources links and URL mappings
 

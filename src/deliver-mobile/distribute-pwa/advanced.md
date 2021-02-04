@@ -148,6 +148,4 @@ When you publish a new version of the app, you should:
 1. Remove the custom service worker and republish the app. This adds the default service worker to the app.
 1. With the default service worker on, [extract static resource and URL list](#getting-static-resources-links-and-url-mappings).
 1. Update your code of the custom service worker with the new lists of static resources and URL mappings.
-1. Add the custom worker again to the app by editing the manifest and republish the app. 
-
-The platform optimizes the resources so only changed parts of the app affect the cache.
+1. Add the custom worker again to the app by editing the manifest and republish the app.

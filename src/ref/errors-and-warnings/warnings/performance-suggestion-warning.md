@@ -41,27 +41,16 @@ Recommendation
 
 <a id="helpid-30140"></a>
 
-Message
-:   `'<OnInitialize action | OnReady action>' contains accesses to the local storage or server, which delays the screen's render. To avoid performance issues, use Aggregates or Data Actions instead.`
-
-Cause
-:   The rendering of the screen only starts after the OnInitialize and the OnReady actions finish. If you access to the local storage or execute requests to the server during this stage, you may delay the rendering of the screen and make the app look unresponsive.
-
-Recommendation
-:   Move all the accesses to local storage or server into screen Aggregates or Data Actions. This way the render starts sooner and the fetching for data or other server operations will run concurrently while the screen is rendering. For more information, see the [Screen and Block Lifecycle Events](<../../../develop/logic/screen-block-lifecycle-events.md>) documentation.
-
----
-
 <a id="helpid-30141"></a>
 
 Message
-:   `'<OnInitialize action | OnReady action>' contains accesses to the local storage or server, which delays the block's render. To avoid performance issues, use Aggregates or Data Actions instead.`
+:   `'<OnInitialize action>' contains accesses to the local storage or server, which delays the <screen | block >'s render. To avoid performance issues, use Aggregates or Data Actions instead.`
 
 Cause
-:   Accessing the local storage or executing requests to the server in the OnInitialize or OnReady actions of a block may delay the render of the block.
+:   The rendering of the screen/block only starts after the OnInitialize action finishes. If you access the local storage or execute requests to the server during this stage, you may delay the rendering of the screen/block and make the app look unresponsive.
 
-Recommendations
-:   Move all accesses to the local storage or server into block Aggregates or Data Actions. For more information, see the [Screen and Block Lifecycle Events](<../../../develop/logic/screen-block-lifecycle-events.md>) documentation.
+Recommendation
+:   Move all logic that accesses local storage or server into Screen Aggregates or Data Actions. This way the rendering starts sooner and the fetching of the data or running other server operations runs concurrently, while the screen/block is rendering. For more information, see the [Screen and Block Lifecycle Events](<../../../develop/logic/screen-block-lifecycle-events.md>) documentation.
 
 ---
 

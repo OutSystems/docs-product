@@ -1,6 +1,6 @@
 # Extension Source Files
 
-Once the extension is [created](<../extension-life-cycle/extension-create.md>), Integration Studio automatically generates, according to the [definition](<../extension-life-cycle/extension-define.md>) of the extension elements, the necessary template files for the development boot-strap of that extension. Once these templates are generated, the source files listed below are added as resources of your extension and you can start coding the behavior of your extension actions.
+Once the extension is [created](<../extension-life-cycle/extension-create.md>), Integration Studio automatically generates, according to the [definition](<../extension-life-cycle/extension-define.md>) of the extension elements, the necessary template files for the development bootstrap of that extension. Once these templates are generated, the source files listed below are added as resources of your extension and you can start coding the behavior of your extension actions.
 
 <div class="info" markdown="1">
 
@@ -24,11 +24,11 @@ By default, your extension has the following source files, stored under the `Sou
 
         Actions are declared in the `Interface.cs` file in the same way as explained above for `<ExtensionName>.cs` file.
 
-    * Entities are declared in the Entities.cs file, which contains a .NET structure for each entity defined in by your extension: the structure name is `EN<EntityName>EntityRecord` and member names are `ss<AttributeName>`.
+    * Entities are declared in the `Entities.cs` file, which contains a .NET structure for each entity defined in by your extension: the structure name is `EN<EntityName>EntityRecord` and member names are `ss<AttributeName>`.
 
     * Record Lists are declared in the `RecordLists.cs` file, which contains a .NET class for each record list definition used in your actions: the class name is `RL<RecordListDefinition>RecordList` and a set of methods are generated to manage the record list.
 
-    * Records are declared in the Record.cs file, which contains a .NET structure for each record definition used in your actions: the structure name is `RC<RecordDefinition>Record` and a set of methods are generated to manage the record.
+    * Records are declared in the `Record.cs` file, which contains a .NET structure for each record definition used in your actions: the structure name is `RC<RecordDefinition>Record` and a set of methods are generated to manage the record.
 
     * Structures are declared in the `Structures.cs` file, which contains a .NET structure for each structure defined in your extension: the structure name is `ST<EntityName>Structure` and member names are `ss<AttributeName>`.
 

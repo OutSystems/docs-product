@@ -31,11 +31,11 @@ The time spent on the client-side is measured by the Load Time (steps 4, 6, and 
 * Requesting static elements from the server: CSS, images, JavaScript scripts, etc.
 * Rendering the screen.
 
-This information is registered in the events called [WebScreenClientExecuted](<../../ref/apis/performancemonitoring-api.md#WebScreenClientExecuted_Event>).
+This information is registered in the events called [WebScreenClientExecuted](<../../ref/apis/performancemonitoring-api.md#webscreenclientexecuted-details>).
 
 To collect these metrics, OutSystems uses the [NavigationTiming API](<http://www.w3.org/TR/navigation-timing/>), if it's [possible](<http://caniuse.com/#feat=nav-timing>). Otherwise, it uses custom JavaScript code.
 
-Besides metrics, the WebScreenClientExecuted event contains additional client details, like the user agent and the operating system. See all [the information collected on the client](<../../ref/apis/performancemonitoring-api.md#WebScreenClientExecuted_Event>).
+Besides metrics, the WebScreenClientExecuted event contains additional client details, like the user agent and the operating system. See all [the information collected on the client](<../../ref/apis/performancemonitoring-api.md#webscreenclientexecuted-details>).
 
 ## Network Metrics
 
@@ -43,11 +43,11 @@ The platform computes the network time based on metrics collected on client and 
 
 Network Duration = Client Duration – Client Load Time – Server Duration
 
-When a web application runs in a browser, the WebScreenClientExecuted event captures further network-related details. Learn more about [the network-related details collected by the Platform](<../../ref/apis/performancemonitoring-api.md#WebScreenClientExecuted_Event>).
+When a web application runs in a browser, the WebScreenClientExecuted event captures further network-related details. Learn more about [the network-related details collected by the Platform](<../../ref/apis/performancemonitoring-api.md#webscreenclientexecuted-details>).
 
 ## Server Metrics
 
-During server execution (steps 2, 3, and 5), the Platform collects metrics in a [WebScreenServerExecuted](<../../ref/apis/performancemonitoring-api.md#WebScreenServerExecuted_Event>) event for:
+During server execution (steps 2, 3, and 5), the Platform collects metrics in a [WebScreenServerExecuted](<../../ref/apis/performancemonitoring-api.md#webscreenserverexecuted-details>) event for:
 
 * All executed queries.
 * All executed consumed integration methods: SOAP, REST or SAP.
@@ -63,7 +63,7 @@ A slow call occurs when the execution of a query exceeds a threshold (200ms by d
 
 If the same call is executed multiple times in an action, eg. happens inside a loop (For Each), the time considered is the sum of all executions. For example, if the 'GetOrdersForCustomer' query is executed ten times, each call taking 30 milliseconds, then the total time spent executing that query is 300ms.
 
-When OutSystems detects a slow call, it registers it in a [QueryExecuted](<../../ref/apis/performancemonitoring-api.md#QueryExecuted_Event>), [ExtensionExecuted](<../../ref/apis/performancemonitoring-api.md#ExtensionExecuted_Event>) or [ConsumedIntegrationExecuted](<../../ref/apis/performancemonitoring-api.md#ConsumedIntegrationExecuted_Event>) event, respectively.
+When OutSystems detects a slow call, it registers it in a [QueryExecuted](<../../ref/apis/performancemonitoring-api.md#queryexecuted-details>), [ExtensionExecuted](<../../ref/apis/performancemonitoring-api.md#extensionexecuted-details>) or [ConsumedIntegrationExecuted](<../../ref/apis/performancemonitoring-api.md#consumedintegrationexecuted-details>) event, respectively.
 
 ## Read Metrics and Add Your Custom Metrics
 

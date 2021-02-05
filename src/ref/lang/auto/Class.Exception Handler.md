@@ -39,7 +39,7 @@ Logic to catch an exception or set of exceptions.
 <td>Set to Yes to abort the transaction and rollback changes.</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>This property is only available in Traditional Web Apps or in the context of Server Actions (for all apps).</td>
+<td>This property is only available in Traditional Web Apps or in a server-side context (for all apps).</td>
 </tr>
 <tr>
 <td title="Log Error">Log Error</td>

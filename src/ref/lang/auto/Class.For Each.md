@@ -38,14 +38,14 @@ Executes the same logic over each item of a list.
 <td title="Start Index">Start Index</td>
 <td>Index of the first List item to iterate. Can be an expression.</td>
 <td></td>
-<td></td>
+<td>0</td>
 <td></td>
 </tr>
 <tr>
 <td title="Maximum Iterations">Maximum Iterations</td>
 <td>Maximum number of list items to be iterated.</td>
 <td></td>
-<td></td>
+<td><i>Record List.Length</i></td>
 <td></td>
 </tr>
 </tbody>

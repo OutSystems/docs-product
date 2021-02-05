@@ -7,7 +7,7 @@ tags: runtime-traditionalwebandreactiveweb
 
 <div class="info" markdown="1">
 
-Requires Platform Server Release Jul.2019 CP2 or later.
+Requires Platform Server Release Jul.2019 CP2 (11.0.542.0) or later.
 
 </div>
 

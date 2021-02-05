@@ -3,7 +3,13 @@ summary: Use Static Entities for immutable data.
 tags: modeling-data; static-entities
 ---
 
-# Static entities
+# Static Entities
+
+A **Static Entity** consists of a set of named values. Think of Static Entities as literal values stored in a database whose scope is always global. The **Records** folder of the Static Entity holds the data, and the Attributes define the structure of the data.
+
+The only action available for the Static Entities is the **Get&lt;StaticEntity&gt;** action, because OutSystems manages the data persistence for you.
+
+When modeling your data, keep in mind that Static Entities can only contain foreign keys of other Static Entities. For more information check out [Entity Relationships](relationship\intro.md).
 
 <div class="info" markdown="1">
 
@@ -11,12 +17,26 @@ We've been working on this article. Please let us know how useful this new versi
 
 </div>
 
-A **static entity** consists of a set of named values. Think of static entities as enumerates or literal values stored in a database. While managing the data n the **Records** folder, the static entity attributes define the structure. The scope of Static Entities is always global. Static Entities can have relationships with static and non-static entities.
+## Create a Static Entity
 
-The following attributes are automatically created:
+To add a Static Entity to your app, do the following in Service Studio:
+
+1. Navigate to the **Data** tab, right-click on the **Entities** folder, and select **Add Static Entity to Database**.
+
+    ![Help menu with Entity commands](images/add-static-entity-ss.png?width=550)
+
+    Start typing to enter the name. Press **Enter** to confirm.
+
+1. Each new Static Entity gets the [default set of Attributes](#default-attributes). To add a new Attribute, right-click on your Static Entity, and select **Add Entity Attribute**. Then, edit the Attribute name and data type.
+
+1. Finally, add some data to your Static Entity. Right-click on the Static Entity, and select **Add Record**. Enter the properties of the Record.
+
+## Default Attributes
+
+Service Studio creates the following Attributes automatically:
 
 **Id**
-:   Identifies a record and is always unique. It is the only attribute in the static entity that can be auto-number.
+:   Identifies a record and is always unique. It's the only Attribute in the Static Entity that can be auto-number.
 
 **Label**
 :   Holds a value to display in an application.
@@ -25,27 +45,31 @@ The following attributes are automatically created:
 :   Defines the order for displaying the records to the end user.
 
 **Is_Active**
-:   The boolean Is_Active attribute defines whether a record is available during runtime. For example, the records with Is_Active set to false aren't used when scaffolding uses the static entity.
+:   Defines whether a record is available during runtime. For example, the records with **Is_Active** set to false aren't used when scaffolding uses the Static Entity.
 
-You can create new entity attributes and define their types.
 
-Each record within a static entity has an **Identifier** attribute as a unique handle. When designing applications, use the Identifier directly in your business logic, for example: `Entities.<StaticEntity>.<Identifier>`.
+## Convert Static Entity to Entity
 
-Because OutSystems manages the data persistence for you, the only action available for the static entities is the Get&lt;StaticEntity&gt; action.
+You can convert existing Entities to Static Entities. To convert a Static Entity to Entity, right-click on the Static Entity, navigate to the **Advanced** help menu and then select **Convert to Entity**. 
 
-You can convert existing entities to Static Entities and vice versa. After converting a static entity to an entity, the existing records contained in the entity become available through database queries (Aggregate or SQL Query). When converted to an entity, the existing Records folder is no longer visible in Service Studio.
+After converting a Static Entity to an Entity:
+
+* The records from the Static Entity become available through database queries, via Aggregate or SQL Query 
+* The **Records** folder is no longer available in Service Studio
+
+Note that it's also possible to convert an Entity to Static Entity.
 
 ## Example
 
-Use static entities when you need a predefined immutable (constant) set of values. For example, in a hotel app, you probably need some reservation statuses: "booked", "checked in", "checked out", and "canceled". You also need the default descriptions for the statuses (for example, "The guests have just left." for "checked out").
+Use Static Entities when you need a predefined, or constant, set of values. For example, in a hotel app, you probably need some reservation statuses: "booked", "checked in", "checked out", and "canceled". You also need the default descriptions for the statuses like "The guests have just left." for "checked out".
 
 Your Static Entity Status may look like this:
 
-![Static entity example](images/static-entity-example.png)
+![Static entity example](images/static-entity-example.png?width=300)
 
-The Records folder of your Static entity contains all statuses you have created. If you select "CheckedOut", the Properties Editor shows the folowing details:
+The Records folder of your Static Entity contains all statuses you have created. If you select "CheckedOut", the Properties Editor shows the following details:
 
-![Static entity - a Record example](images/static-entity-record-example.png)
+![Static entity - a Record example](images/static-entity-record-example.png?width=300)
 
 The Identifier for the checked out status is `CheckedOut` and the Label is `"Checked-Out"`. The field TextDescription is the custom field and has the string value `"The guests have just left."`.
 

@@ -64,6 +64,7 @@ Client Action | Description | Is Function?
 [ListSort](<#Client_ListSort>) | Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. | 
 [LogMessage](<#Client_LogMessage>) | Registers information that can be presented in Service Center in the module general log. | 
 [RequireScript](<#Client_RequireScript>) | Add a Javascript to the html header. Multiple calls for the same Javascript will only add it once. Action flow will proceed after the Javascript has been successfully loaded. | 
+[SetCurrentLocale](<#Client_SetCurrentLocale>) | Set the locale to change your app's display language. | 
 
 ## Server Actions
 
@@ -1047,3 +1048,18 @@ Url
     The Url of the Javascript to add to the header
 
 
+### SetCurrentLocale { #Client_SetCurrentLocale }
+
+<div class="info" markdown="1">
+
+Available in Multilingual Technical Preview. See [Technical Preview features](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) for more information.
+
+</div>
+
+Set the locale to change your app's display language.
+
+*Inputs*
+
+Locale
+:   Type: mandatory, Text.  
+    Changes the display language of your app (for example, en-US, pt-PT).

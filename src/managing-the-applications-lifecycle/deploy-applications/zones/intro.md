@@ -49,6 +49,12 @@ As a rule, when you create a new application and publish it for the first time, 
 
 Creating a new application module associates it automatically with the **same deployment zone** as the other modules in that application.
 
+<div class="warning" markdown="1">
+
+The OutSystems applications provided in the System Components solution must be available in **all the front-end servers** of your OutSystems environment. Make sure that you only deploy these applications to deployment zones that include all the front-end servers in your environment.
+
+</div>
+
 ## Example
 
 In the following example, we define three deployment zones:
@@ -160,3 +166,5 @@ Take the following limitations into account when using deployment zones:
 * The platform always deploys System Components to the default deployment zone. Use the internal network configuration to limit the access to Service Center and LifeTime (available in Service Center in **Administration** > **Security** > **Network Security**).
 
 * Processes, Timers and Emails require at least one server in the deployment zone of the application configured to execute them. Check the current configuration for all front-end servers in the environment in Service Center under **Administration** > **Servers** (requires **Full Control** permissions).
+
+* Links included in emails are always generated based on the **Hostname** setting configured in Service Center under **Administration** > **Environment Configuration**, as the **Deployment Zone Address** is intended for internal communications. If you have a Link widget within an email pointing to a URL domain that matches any of your **Deployment Zone Address** values, OutSystems replaces that URL domain with the environment **Hostname**. To point Links in emails to a specific URL domain, that domain must be different from any of the deployment zone addresses.

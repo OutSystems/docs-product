@@ -106,7 +106,7 @@ To perform an offline installation of Platform Server you might need to download
 
 </div>
 
-### 2. Install the Platform Server
+### 2. Install the Platform Server { #install-the-platform-server }
 
 Install the Platform Server in each environment of your infrastructure that will host your applications (eg. Development, Quality and Production). For this, follow the [Platform Server installation checklist](http://www.outsystems.com/goto/checklist-11) that is launched when you run the Platform Server installation binary.
 

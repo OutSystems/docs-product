@@ -157,6 +157,7 @@
                 - href: develop/ui/patterns/mobile/content/cardbackground.md
                 - href: develop/ui/patterns/mobile/content/carditem.md
                 - href: develop/ui/patterns/mobile/content/cardsectioned.md
+                - href: develop/ui/patterns/mobile/content/chatmessage.md
                 - href: develop/ui/patterns/mobile/content/flipcontent.md
                 - href: develop/ui/patterns/mobile/content/floatingcontent.md
                 - href: develop/ui/patterns/mobile/content/listitemcontent.md
@@ -165,6 +166,7 @@
                 - href: develop/ui/patterns/mobile/content/tag.md
                 - href: develop/ui/patterns/mobile/content/tooltip.md
                 - href: develop/ui/patterns/mobile/content/useravatar.md
+                - href: develop/ui/patterns/mobile/interaction/actionsheet.md
                 - href: develop/ui/patterns/mobile/interaction/animate.md
                 - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
                 - href: develop/ui/patterns/mobile/interaction/carousel.md
@@ -176,11 +178,13 @@
                 - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
                 - href: develop/ui/patterns/mobile/interaction/lightboximage.md
                 - href: develop/ui/patterns/mobile/interaction/notification.md
+                - href: develop/ui/patterns/mobile/interaction/map.md
                 - href: develop/ui/patterns/mobile/interaction/rangeslider.md
                 - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
                 - href: develop/ui/patterns/mobile/interaction/search.md
                 - href: develop/ui/patterns/mobile/interaction/sidebar.md
                 - href: develop/ui/patterns/mobile/interaction/stackedcards.md
+                - href: develop/ui/patterns/mobile/interaction/video.md
                 - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
                 - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
                 - href: develop/ui/patterns/mobile/navigation/pagination.md
@@ -199,6 +203,7 @@
                 - href: develop/ui/patterns/mobile/utilities/buttonloading.md
                 - href: develop/ui/patterns/mobile/utilities/centercontent.md
                 - href: develop/ui/patterns/mobile/utilities/margincontainer.md
+                - href: develop/ui/patterns/mobile/utilities/mouseevents.md
                 - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                 - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md             
@@ -304,6 +309,7 @@
             - href: develop/ui/multilingual-tp/translate-your-app.md
             - href: develop/ui/multilingual-tp/translation-editor.md
             - href: develop/ui/multilingual-tp/translation-management.md
+            - href: develop/ui/multilingual-tp/troubleshooting-known-issues.md
         
     # Implement Application Logic
     - href: develop/logic/intro.md
@@ -477,6 +483,9 @@
         - href: deliver-mobile/mobile-apps-build-service/android-support-library-versions.md
         - href: deliver-mobile/mobile-apps-build-service/androidx.md
     - href: deliver-mobile/distribute-pwa/intro.md
+    - topics:
+        - href: deliver-mobile/distribute-pwa/advanced.md
+        - href: deliver-mobile/distribute-pwa/troubleshooting-know-issues.md
     - href: deliver-mobile/app-shield/intro.md
     - href: deliver-mobile/compliance-with-third-party-licenses.md
 
@@ -503,10 +512,21 @@
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-services.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/reference.md
         - href: extensibility-and-integration/artificial-intelligence/azure-reference.md
+        - href: extensibility-and-integration/artificial-intelligence/ml-builder/intro.md
+        - topics:
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/getting-started.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/creating-model.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/implement-model.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/data-considerations.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/model-performance.md
+            - href: extensibility-and-integration/artificial-intelligence/ml-builder/compliance-legal-faq.md
 
 
     - href: extensibility-and-integration/mobile-plugins/intro.md
     - topics:
+        - href: extensibility-and-integration/mobile-plugins/file-plugin/intro.md
+        - href: extensibility-and-integration/mobile-plugins/transfer-plugin/intro.md
+        - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md
         - href: extensibility-and-integration/mobile-plugins/using-cordova-plugins.md
     - href: extensibility-and-integration/javascript/intro.md
     - topics:
@@ -532,6 +552,7 @@
             - href: extensibility-and-integration/rest/consume-rest-apis/simple-customizations.md
             - href: extensibility-and-integration/rest/consume-rest-apis/advanced-customizations.md
             - href: extensibility-and-integration/rest/consume-rest-apis/handling-rest-errors.md
+            - href: extensibility-and-integration/rest/consume-rest-apis/redact-info-from-logs.md
             - href: extensibility-and-integration/rest/consume-rest-apis/unsupported-use-cases.md
         - href: extensibility-and-integration/rest/expose-rest-apis/intro.md
         - topics:
@@ -570,6 +591,11 @@
             - href: extensibility-and-integration/soap/expose/expose-soap-web-service.md
             - href: extensibility-and-integration/soap/expose/document-exposed-soap-web-service.md
         - href: extensibility-and-integration/soap/troubleshoot-soap-web-services.md
+
+    # Log levels for consumed REST and SOAP integrations
+    - href: extensibility-and-integration/log-levels-set.md
+    - topics:
+        - href: extensibility-and-integration/log-levels-reference.md
 
     #SAP
     - href: extensibility-and-integration/sap/intro.md
@@ -683,6 +709,7 @@
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md
         - href: managing-the-applications-lifecycle/secure-the-applications/apply-content-security-policy.md
         - href: managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md
+        - href: managing-the-applications-lifecycle/secure-the-applications/encrypt-viewstate.md 
         - href: managing-the-applications-lifecycle/secure-the-applications/protection-against-brute-force-attacks.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-https-by-enabling-ssl.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md
@@ -1237,7 +1264,8 @@
         - href: ref/configuration-tool/tabs/cache.md
         - href: ref/configuration-tool/tabs/network.md
         - href: ref/configuration-tool/tabs/scheduler.md
-    
+        - href: ref/configuration-tool/create-indexes.md
+
     # Errors and Warnings
     - href: ref/errors-and-warnings/intro-errors-and-warnings.md
     - topics:

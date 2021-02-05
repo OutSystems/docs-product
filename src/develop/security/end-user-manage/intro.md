@@ -19,7 +19,7 @@ OutSystems also offers the [Users API](<../../../ref/apis/auto/users-api.final.m
 
 <div class="info" markdown="1">
 
-If you use an external authentication method (e.g., Active Directory or SAML 2.0) to authenticate end users, you do not need to create these users manually. Instead, these users are created automatically in the OutSystems database on their first login.  
+If you use an external authentication method (for example, Active Directory or SAML 2.0) to authenticate end users, you don't need to create these users manually. Instead, these users are created automatically in the OutSystems database on their first login.  
 Check [End Users Authentication](end-user-authentication/intro.md) for more information on external authentication methods.
 
 </div>
@@ -40,12 +40,12 @@ Internal Users
 External Users
 :   Any Named Users who are not considered Internal Users.
 
-You can classify all Registered Users whose email address contains a specific domain (e.g., `mycompany.com`) as Internal Users, while all other Registered Users are considered External Users. Check [Classify Users as Internal Users](classify-internal-users.md) for more information on configuring these domains.
+You can classify all Registered Users whose email address contains a specific domain (for example, `mycompany.com`) as Internal Users, while all other Registered Users are considered External Users. Check [Classify Users as Internal Users](classify-internal-users.md) for more information on configuring these domains.
 
 By default, Registered Users are considered **Internal Users**.
 
 <div class="info" markdown="1">
 
-The distinction between Internal Users and External Users is only applicable to the **end users** of your OutSystems applications. [IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md) (e.g., OutSystems developers or Administrators) are a separate set of users that don't have this kind of classification.
+The distinction between Internal Users and External Users is only applicable to the **end users** of your OutSystems applications. [IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md) (for example, OutSystems developers or Administrators) are a separate set of users that don't have this kind of classification.
 
 </div>

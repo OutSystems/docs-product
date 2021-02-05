@@ -5,7 +5,7 @@ tags: support-application_development; support-Mobile_Apps; support-webapps
 
 # Getting started
 
-OutSystems lets you quickly build great and secure web and mobile apps. This is what you need to get started:
+OutSystems lets you build great and secure web and mobile apps. This is what you need to get started:
 
 1. Create a [free account](https://www.outsystems.com/home/GetStartedForFree.aspx).
 2. Install [Development Environment](https://www.outsystems.com/home/downloads).

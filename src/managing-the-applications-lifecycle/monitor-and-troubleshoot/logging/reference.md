@@ -97,6 +97,7 @@ OutSystems entity name
 <td>
 (System).Log_Error
 </td></tr></table>
+
 Field | Description | Data type | Mapped Entity
 -----|-----------|---------|-------------
 Id | Unique identifier of the error message. | GUID |
@@ -144,6 +145,7 @@ OutSystems entity name
 <td>
 n/a
 </td></tr></table>
+
 Field | Description | Data type | Mapped Entity
 -----|-----------|---------|-------------
 Id | Unique identifier of the error message. | GUID | (System).Log_Error
@@ -245,7 +247,7 @@ Application_Name | The name of the app. | Text |
 Application_Key | Unique identifier for the application. | Text |
 Username |  | Text |
 
-## Integration
+## Integration { #integration }
 
 <table markdown="1">
 <tr>
@@ -269,11 +271,12 @@ OutSystems entity name
 <td>
 (System).Log_Integration
 </td></tr></table>
+
 Field | Description | Data type | Mapped Entity
 -----|-----------|---------|-------------
 Id | Unique identifier. | Text |
 Instant | Time of log generation in the front-end (server log) or of log generation in the mobile device (client log). | Date Time |
-Duration | Duration of the execution of the integration, in milliseconds. For CONSUME type, this is the time from the beginning of the request to the external system until the response finished transmission to the platform; for EXPOSE type, this is the time from the beginning of execution on the platform until end of transmission to the external system. | Int |
+Duration | Duration of the execution of the integration, in milliseconds. For CONSUME type, this is the time from the beginning of the request to the external system until the response finished transmission to the platform, including the time it takes to create the connection/request and the time spent executing any OnBeforeRequest callback. For EXPOSE type, this is the time from the beginning of execution on the platform until end of transmission to the external system. | Int |
 Source | Empty / meaningless for CONSUME type; for EXPOSE type this is the source IP of the external system. | Text |
 Endpoint | For CONSUME type this is the URL of the external system; empty / meaningless for EXPOSE type. | Text |
 Action | Name of the service and action being consumed / exposed. For SOAP (CONSUME), in the form of &lt;service&gt; (&lt;method&gt; For all other types, in the form of &lt;service&gt;.&lt;method&gt;. | Text |
@@ -387,7 +390,6 @@ OutSystems entity name
 (System).Log_Web_Service
 </td></tr></table>
 
-
 Field | Description | Data type | Mapped Entity
 -----|-----------|---------|-------------
 Tenant_Id | Id of the tenant where the message was logged. 0 if message originates from an OutSystems service. | Int | (System).Tenant
@@ -425,7 +427,6 @@ OutSystems entity name
 <td>
 (System).Log_Cyclic_Job
 </td></tr></table>
-
 
 Field | Description | Data type | Mapped Entity
 -----|-----------|---------|-------------
@@ -515,7 +516,6 @@ OutSystems entity name
 (System).Log_Mobile_Request
 </td></tr></table>
 
-
 Field | Description | Data type | Mapped Entity
 -----|-----------|---------|-------------
 Tenant_Id | Id of the tenant where the message was logged. 0 if message originates from an OutSystems service. | Int | (System).Tenant
@@ -562,7 +562,6 @@ OutSystems entity name
 (System).Log_Mobile_Request_Detail
 </td></tr></table>
 
-
 Field | Description | Data type | Mapped Entity
 -----|-----------|---------|-------------
 Tenant_Id | Id of the tenant where the message was logged. 0 if message originates from an OutSystems service. | Int | (System).Tenant
@@ -596,7 +595,6 @@ OutSystems entity name
 <td>
 (System).Log_Sms
 </td></tr></table>
-
 
 Field | Description | Data type | Mapped Entity
 -----|-----------|---------|-------------

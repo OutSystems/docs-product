@@ -23,7 +23,7 @@ Files extensions
 Copy to Binaries directory
 </td>
 <td>
-The resources are copied to the Platform Server where the module is published. The files are stored in the `bin2` directory, under the module directory.
+The resources are copied to the Platform Server where the module is published. The files are stored in the `bin2` directory, under the module directory.  
 ![](images/note.gif) Files stored in this directory are not accessible through the Internet browser.
 </td>
 <td>

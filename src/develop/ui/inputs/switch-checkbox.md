@@ -45,7 +45,7 @@ There's already a Profile screen in the GoOutWeb application with a form to ente
 1. Add a Checkbox widget at the end of the form. 
 1. Set property Variable to: `ProfileForm.Record.Profile.NotifyCheckInsReviews`.
 1. Add a Label text before the widget with "Friends Check-ins and Reviews".
-1. Repeat steps 1 to 3 to add another Switch, now with the following values: `ProfileForm.Record.Profile.NotifyReportedReview` and "Friends Check-ins and Reviews".
+1. Repeat steps 1 to 3 to add another Checkbox, now with the following values: `ProfileForm.Record.Profile.NotifyReportedReview` and "Friends Check-ins and Reviews".
 1. Add a heading text with "Notifications" at top of the two configurations.
 1. Publish and test.
 

@@ -9,11 +9,11 @@ OutSystems Processes are designed to model and execute long-running processes wh
 
 When enabling **light process execution** you allow simpler processes that don't need tracking to run much faster, which increases the event processing throughput. This lighter execution mode is useful for event-driven processes on a large scale that handle several thousand events per day, such as event brokers, and that require a scalable database queueing.
 
-During light process execution, a process doesn't create any process instances or activity instances, therefore the **process history isn't be available**. Defining start dates for Automatic Activities is also **not supported**.
+During light process execution, a process doesn't create any process instances or activity instances, therefore the **process history isn't available**. Defining start dates for Automatic Activities is also **not supported**.
 
 To enable light process execution, a process must meet all the following conditions:
 
-* The process flow includes only an **Automatic Activity**, having a simple **Start** > **Automatic Activity** > **End** flow.
+* The process flow includes only one **Automatic Activity**, having a simple **Start** > **Automatic Activity** > **End** flow.
 
 * The **Launch On** property of the process is set with a database event.
 

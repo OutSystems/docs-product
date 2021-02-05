@@ -29,8 +29,7 @@ ConfigurationTool.com
     | /UpgradeInstall [<integrated_auth_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>] 
     | /RebuildSession <session_db_admin_username> <session_db_admin_password> 
     | /SCInstall 
-    | /UpgradeSystemComponents
-    | /UpgradePublishedApplications
+    | /InstallSystemComponents
     | /GenerateTemplates
     | /ClearInternalNetwork
     | /UploadLicense <license_file> <platform_server_admin_user> <platform_server_admin_password>
@@ -43,6 +42,7 @@ ConfigurationTool.com
     | /EnableServerAPI
     | /DisableServerAPI
     | /UpgradeEnvironment
+    | /ApplySettingsFactory
 ```
 
 ## Parameters
@@ -73,13 +73,9 @@ ConfigurationTool.com
 
 :   Forces the Service Center installation to run after finishing Configuration Tool.
 
-`/UpgradeSystemComponents`
+`/InstallSystemComponents`
 
 :   Forces the System Components installation or upgrade to run after applying the configuration settings.
-
-`/UpgradePublishedApplications`
-
-:   Forces the published applications upgrade to run after applying the configuration settings.
 
 `/GenerateTemplates`
 
@@ -129,7 +125,7 @@ ConfigurationTool.com
     
 `/EnableServerAPI`
 
-:   Enables Server.API and Server.Identity on this machine. (Server.API and Server.Identity are enabled by default)
+:   Enables Server.API and Server.Identity on this machine. (Server.API and Server.Identity are enabled by default).
 
 `/DisableServerAPI`
 
@@ -137,7 +133,12 @@ ConfigurationTool.com
 
 `/UpgradeEnvironment`
 
-:   Installs Service Center and System Components, and upgrades published applications. Skips any of these steps if they were previously executed.
+:   Installs Service Center and System Components. Skips any of these steps if they were previously executed.
+
+`/ApplySettingsFactory`
+
+:   Applies the current `server.hsconf` settings to the factory.  
+    Note: This command only generates output in case of errors.
 
 ## Example
 

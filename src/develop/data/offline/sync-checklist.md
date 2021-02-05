@@ -7,6 +7,15 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps
 
 What follows is a checklist for implementing sync in mobile devices with OutSystems. If you follow the checklist you will greatly improve synchronization of data between the mobile device and the server, as well as ensure there are no performance issues in the overall experience.
 
+## Avoid
+
+Have you called EndOfflineDataSync multiple times?
+: Calling EndOfflineDataSync multiple times triggers several synchronizations simultaneously, which might cause your data to be incorrectly synchronized.
+
+Have you called a TriggerOfflineDataSync inside a OnSyncComplete action?
+: If you are using OnSyncComplete to trigger multiple syncs, don't call TriggerOfflineDataSync inside the OnSyncComplete, since this creates a synchronization loop.
+Instead, if you want to synchronize sequentially, call OnSyncComplete one after the other, as they get queued and processed sequentially.
+
 
 ## Performance
 

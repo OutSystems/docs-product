@@ -32,6 +32,7 @@ In our example we have only one action (SyncProducts) and we placed it, as requi
 
 ![](images/step-2-offline.png)
 
+
 ## 3. Configure manual start of the sync
 
 The manual sync should be started by **TriggerOfflineDataSync** from _Logic > Client Actions > OfflineDataSync_ folder. Place the TriggerOfflineDataSync into the flow at the point where the sync should start. Don't start the sync by placing OfflineDataSync directly in a flow, as this does not run the sync in the background and may cause the UI to freeze.
@@ -47,6 +48,7 @@ Open the **OfflineDataSyncConfiguration** action from _Logic > Client Actions > 
 In our example we decided not to start the sync automatically regardless of the conditions, so all our values are set to False.
 
 ![](images/step-4-offline.png)
+
 
 # Sync Logic Flow
 
@@ -65,3 +67,7 @@ Stage 3
 
 Stage 4
 :   The actions in OfflineDataSync update the local storage with the data received from the server.
+
+<div class="info" markdown="1">
+Now that you know how to implement Offline Synchronization, it's recommend that you check the [Offline Synchronization Checklist](<sync-checklist.md>), to make sure that you avoid common issues, in your solution.
+</div>

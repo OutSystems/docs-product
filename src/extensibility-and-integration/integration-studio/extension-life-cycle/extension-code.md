@@ -37,4 +37,5 @@ On one hand, some of the changes you have made in the IDE are automatically sync
 Changes in the signature of your actions should not be done in the IDE; you should change the action directly in Integration Studio, as explained in the next paragraph.
 
 </div>
+
 On the other hand, any element (action, entity, or structure) created or changed in Integration Studio is automatically available or refreshed in the IDE, after invoking the [Update Source Code](<extension-update-source-code.md>) operation. This operation merges the definition of the actions with the code you implemented in the IDE, without losing your source code. The elements of your extension are identified by its name, which means that if you want to change the name of an action, Integration Studio has no way of relating the old action to the new one. In this situation, you have to manually change the name of the respective method in the source code. To help you with this merging operation, you have the [Compare With Template](<../../../ref/integration-studio/resources-tree.md>) operation.

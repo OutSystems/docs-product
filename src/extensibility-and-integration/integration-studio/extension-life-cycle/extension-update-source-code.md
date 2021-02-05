@@ -24,7 +24,7 @@ The Update Source Code operation synchronizes the source code you added in the .
   
 ## How to update the extension source code
 
-In the File menu or Toolbar, click Update Source Code ![](images/update-source-code.gif) or [1-Click Publish](<extension-1-cp.md>) ![](images/1-click-publish-icon.gif).
+In the **File** menu or in the toolbar, click ![](images/update-source-code.gif) **Update Source Code** or ![](images/1-click-publish-icon.gif) [**1-Click Publish**](<extension-1-cp.md>).
 
 ![](images/tip.gif) The Update Source Code operation is also executed when you [edit source code](<extension-code-edit.md>) or [verify](<extension-verify.md>) the extension.
 

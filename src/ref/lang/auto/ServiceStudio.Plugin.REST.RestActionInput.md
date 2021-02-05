@@ -48,6 +48,13 @@ Input parameter of a consumed REST API Method.
 <td>Yes</td>
 <td></td>
 </tr>
+<tr>
+<td title="LogRedaction">Log Redaction</td>
+<td>Set to Yes to hide sensitive information (for example, salary information) in integration logs.</td>
+<td>Yes</td>
+<td>No</td>
+<td>Check [Redacting information from REST API logs](../../../extensibility-and-integration/rest/consume-rest-apis/redact-info-from-logs.md).</td>
+</tr>
 <tr class="separator">
 <th colspan="5">Advanced</th>
 </tr>

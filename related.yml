@@ -2,7 +2,8 @@
 - develop/intro.md:
   - getting-started/create-reactive-web.md
   - getting-started/create-mobile.md
-  - getting-started/create-web.md
+  - getting-started/service-studio.md
+  - getting-started/tips-tricks/tips-tricks.md
 
 # Developing an Application / Use Data
 
@@ -811,6 +812,10 @@
 -  ref/lang/auto/Class.Send Email.final.md:
     - develop/logic/emails.md
 
+#  Invalid Link Error
+-  ref/errors-and-warnings/errors/invalid-link-error.md:
+    - one-way: ref/lang/auto/Class.Link Widget.final.md
+    
 # Configuration Tool
 
 - ref/configuration-tool/tabs/platform-oracle.md:
@@ -836,6 +841,9 @@
         - "Forge Component: SOAP Extensibility Samples":
             https://www.outsystems.com/forge/component-overview/5322/soap-extensibility-samples
 
+- extensibility-and-integration/soap/troubleshoot-soap-web-services.md:
+    - extensibility-and-integration/log-levels-set.md
+
 - extensibility-and-integration/rest/consume-rest-apis/handling-rest-errors.md:
     - develop/logic/exceptions/intro.md
     - develop/logic/exceptions/handling-mechanism.md
@@ -845,6 +853,9 @@
     - external:
         - "LinkedIn Article: Handling HTTP status codes when consuming a REST in OutSystems":
             https://www.linkedin.com/pulse/handling-http-status-codes-when-consuming-rest-rui-barbosa/
+
+- extensibility-and-integration/rest/consume-rest-apis/redact-info-from-logs.md:
+    - extensibility-and-integration/log-levels-set.md
 
 - extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md:
     - external:
@@ -865,6 +876,9 @@
             https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
         - "5 Basic REST API Design Guidelines (RestCase blog)":
             https://blog.restcase.com/5-basic-rest-api-design-guidelines/
+
+- extensibility-and-integration/rest/troubleshoot-a-rest-api.md:
+    - extensibility-and-integration/log-levels-set.md
 
 # --- Managing the Applications Lifecycle > Containers ---
 
@@ -1516,6 +1530,10 @@
     - external:
        - "OutSystems UI Pattern":  
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=68
+- develop/ui/patterns/mobile/interaction/video.md:
+    - external:
+       - "OutSystems UI Pattern":  
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=81
 - develop/ui/patterns/mobile/navigation/bottombaritem.md:
     - external:
         - "OutSystems UI Pattern": 
@@ -1662,6 +1680,7 @@
 
 - ref/lang/auto/ServiceStudio.Plugin.REST.RestActionInput.final.md:
     - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
+    - one-way: extensibility-and-integration/log-levels-reference.md
 
 - ref/lang/auto/ServiceStudio.Plugin.REST.RestActionOutput.final.md:
     - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md

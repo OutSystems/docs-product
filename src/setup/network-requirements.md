@@ -125,9 +125,12 @@ Applications must be deployed as follows:
 
 ### Architecture Dashboard
 
-To use [Architecture Dashboard](https://architecture.outsystems.com), the Architecture Dashboard LifeTime plugin must be able to communicate with the Architecture Dashboard SaaS. Ensure that the following port is open:
+To use [Architecture Dashboard](https://architecture.outsystems.com), the Architecture Dashboard LifeTime plugin must be able to communicate with the Architecture Dashboard SaaS. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work). 
+
+Depending on the version of the Architecture Dashboard probe, ensure that one of the following destination endpoints is reachable:
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| Architecture Dashboard LifeTime plugin. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work).
+LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or higher** of the Architecture Dashboard LifeTime probes.
+LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the Architecture Dashboard LifeTime probes.
  

@@ -2,11 +2,9 @@
 *   @OutSystems/technical-knowledge-group
 
 /src/managing-the-applications-lifecycle/              @claudiacarpinteiro
-/src/managing-the-applications-lifecycle/containers/   @pedrosousa
 
 /src/deliver-mobile/   @rmlos
 
-/src/extensibility-and-integration/                           @pedrosousa
 /src/extensibility-and-integration/artificial-intelligence/   @rmlos
 /src/extensibility-and-integration/mobile-plugins/            @rmlos
 

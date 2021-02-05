@@ -9,7 +9,13 @@ In Service Studio, an entity encloses not only the logical definition of a busin
 
 Relationships are created by defining a single **reference attribute** (also known as "foreign key" in database terminology). Its data type is `<Entity> Identifier` which corresponds to the type of the Identifier of the other entity. The reference attribute is shown with a different icon (![reference attribute icon](<images/reference-attr.png>) or ![key reference attribute icon](<images/key-reference-attr.png>), depending on the type of relationship) which is also visible in Entity Diagrams. 
 
-The entity where the reference attribute should be created depends on the cardinality (One-to-One, One-to-Many, Many-to-Many) and optionality (mandatory or optional) of the relationship. Static entities can only have relationships with other static entities.
+The entity where the reference attribute should be created depends on the cardinality (One-to-One, One-to-Many, Many-to-Many) and optionality (mandatory or optional) of the relationship.
+
+<div class="info" markdown="1">
+
+When modeling your data keep in mind that **static entities** can only have relationships with **other static entities**.
+
+</div>
 
 A relationship can be:
 

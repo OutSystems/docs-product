@@ -1,5 +1,5 @@
 ---
-tags: runtime-mobileandreactiveweb
+tags: runtime-mobileandreactiveweb; article-page
 ---
 
 # Extend Your Mobile and Reactive Apps Using JavaScript

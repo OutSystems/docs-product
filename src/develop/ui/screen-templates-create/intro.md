@@ -15,7 +15,7 @@ To add new Screen Templates to your environment, you first need to clone one of 
 * [Custom Screen Templates Mobile](<https://www.outsystems.com/forge/component-overview/5060/custom-screen-templates-mobile>) for Mobile Apps
 * [Custom Screen Templates Traditional Web](<https://www.outsystems.com/forge/component-overview/5089/custom-screen-templates-web>) for Traditional Web Apps
 
-1. In Service Studio, go to the **outsystems** tab and search for **Custom Screen Templates**. There are three components in the results list: one for Mobile Apps, one for Reactive Apps, and one for Web Apps.
+1. In Service Studio, go to the **Forge** tab and search for **Custom Screen Templates**. There are three components in the results list: one for Mobile Apps, one for Reactive Apps, and one for Web Apps.
 
     ![Forge results for Custom Screen Templates](images/forge-1-ss.png)
     

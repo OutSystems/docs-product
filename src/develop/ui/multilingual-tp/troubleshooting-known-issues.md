@@ -34,6 +34,6 @@ The CSS class `is-rtl` defines the styles for the RTL locales. Create custom log
 
 1. Go to **UI Flows** > **Common** > **Menu** and add the client action you just created to the logic flow of **OnRender** action under **Menu**.
 
-    ![Sample logic](images/ts-rtl-fix-details-ss.png.png)
+    ![Sample logic](images/ts-rtl-fix-details-ss.png)
 
     Add your action in the OnRender action of an element that runs **in all screens of the app**. In this example, the action is in the OnRender of the Menu block.

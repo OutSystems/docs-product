@@ -12,40 +12,81 @@ Applies to OutSystems licenses purchased after January 2020.
 
 OutSystems identifies two different types of registered end users for licensing purposes: [**Internal Users** and **External Users**](intro.md#internal-external).
 
-You can classify all Registered Users whose email address contains a specific domain (for example, `mycompany.com`) as Internal Users, while all other Registered Users are considered External Users.
+OutSystems classifies registered users according to the following rules:
 
-The list of one or more domains used to identify users as Internal Users is defined in **classification rules**. All users whose email address contains one of the domains contained in the classification rules are considered **Internal Users**. Every other Registered User is considered an **External User**.
+![](images/classify_internal_users.png?width=750)
 
-For example, if you set the classification rules to `mycompany.com`:
+*When adding a new environment, all your users are internal by default. [Check here how to configure external users](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/Classify_Users_as_Internal_Users#Configuring_the_users_to_be_internal_or_external
+).
 
-* A Registered User whose email address is `scott.green@mycompany.com` is considered an Internal User.
-* A Registered User whose email address is `scarlett.doe@outsourcing.com` is considered an External User.
+## Defining user classification rules
 
-The user classification rules are checked against the user's email address field, if it contains a value, or to the username, if the field value contains an email address. Any Registered Users that do not have a valid email address in one of these fields are classified as Internal Users.
+Classification rules are configured per environment using Service Center, and you can have different classification rules in different environments. 
 
-The configuration of classification rules is done per environment in Service Center, and you can configure different classification rules in different environments. OutSystems checks for registered [active users](add-delete-users.md#activate-deactivate) when determining the number of Internal/External Users in an environment.
+<div class="info" markdown="1">
+Note that when adding a new environment, all your users are internal by default.
+</div>
 
-Note that this classification applies only to Registered Users (or Named Users). Anonymous Users are not taken into account for this classification. Check [End User Management](intro.md) for more information on end user classification.
+OutSystems checks for registered [active users](add-delete-users.md#activate-deactivate) when determining the number of Internal/External Users in an environment. Also, user classification in Internal Users or External Users applies only to **Registered Users** (or Named Users). 
 
-## Define user classification rules
+Anonymous Users aren't taken into account for this classification. Check [End User Management](intro.md) for more information on end user classification.
 
-To define the list of domain names used to identify Internal Users do the following:
+So, let’s look at these rules in detail.
+
+### Ensuring that users are ready to be classified as Internal and External
+
+To be able to configure your users as internal or external make sure that:
+
+1. Your users have a valid email address. This email address **can exist** in the **Username** field or **Email** field of [your user](add-delete-users.md).
+
+1. You keep in mind that **users without a valid email address will always be classified as Internal Users**.
+
+### Configuring the users to be internal or external 
+
+You can configure your users to be internal or external by using Internal User domains. The **User Classification rules** field can contain one or more domains separated by commas.
+
+OutSystems considers that a subdomain is a different value from its domain. To classify users based on a subdomain, add a value to the **User Classification rules*** field for the subdomain.
+
+For example, to classify a user with the email address `scott.green@sales.mycompany.com` as an Internal User, the **User Classification rules** field value must contain the `sales.mycompany.com` subdomain.
+
+**To configure your internal user domains, do the following:**
 
 1. Open the Service Center management console of your environment.
 
 1. Navigate to **Administration** > **Licensing** and click the "End-Users Configuration" link.
 
-1. In "User Classification Rules", select the option "Only users registered with these domains count as Internal" and enter the domain names associated with the email addresses of Internal Users. Separate each domain with a comma.
+1. In **User Classification Rules**, select the option **Only users registered with these domains count as Internal** and enter the domain names associated with the email addresses of Internal Users. 
 
-    E.g., `mycompany.com`
+    Separate multiple domains using a `,` (comma) character.
+
+    For example, `mycompany.com` and `sales.mycompany.com`:
 
     ![](images/sc-user-classification-rules.png?width=900)
 
-1. Press **Save**.
+1. Click **Save**.
 
-After saving your changes, OutSystems starts the process of obtaining the current Internal/External User count. This process might take a few minutes. The "Last update on" label displays the finish date/time of the last user count process.
+After saving your changes, OutSystems starts the process of obtaining the current Internal/External User count. This process might take a few minutes. The **Last update on** label displays the finish date/time of the last user count process.
 
-## Check the total number of Internal/External Users
+## User classification examples
+
+Let’s look to some examples on how to classify users.
+
+In this example, consider that the following user domains were added in the User Classification rules field:
+
+`mycompany.com,sales.mycompany.com`
+
+By adding these two domains, the following examples detail the classification of each user according to their Email and Username attribute values:
+
+|Username|Email|User Classification|
+|---|---|---|
+|sgreen|scott.green@mycompany.com|Considered an **Internal User**|
+|sgreen|scott.green@sales.mycompany.com|Considered an **Internal User**|
+|jane.green@mycompany.com|`<empty>`|Considered an **Internal User**|
+|sjones|scarlett.jones@outsourcing.com|Considered an **External User**|
+|sdavidson|samantha.davidson@finance.mycompany.com|Considered an **External User**, because classification rules consider subdomains different from domains (`sales.mycompany.com <> mycompany.com`)|
+|mjohnson|`<empty>`|Considered an **Internal User**|
+
+## Check the total number of Internal/External users
 
 You can check the current usage of Internal and External Users — both the total number of each end user type and their distribution per User Provider — for a given environment in Service Center.
 
@@ -59,4 +100,4 @@ To check the number of Internal/External Users do the following:
 
 This page displays the total number of Internal and External Users, as well as their distribution per User Provider in the current environment. 
 
-Note: The process of determining the current user count is executed based on a timer, and therefore the displayed user count values might not reflect the exact user count.
+**Note:** A timer executes the process of determining the current user count, and therefore the displayed user count values might not reflect the exact user count.

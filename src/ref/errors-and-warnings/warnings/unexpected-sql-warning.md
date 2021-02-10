@@ -12,6 +12,16 @@ Recommendation
     * Change the specified Output Structure of the query.
     * Change the attributes being selected.
 
+<div class="info" markdown="1">
+
+To learn more about SQL in OutSystems, check out the following free courses:
+
+* [SQL Queries](https://www.outsystems.com/training/courses/146/sql-queries/). Write your SQL queries to interact with data in OutSystems.
+* [Getting Started with OutSystems for SQL Developers](https://www.outsystems.com/training/courses/169/getting-started-with-outsystems-for-sql-developers/). Learn how to create a data model, fetch data, and how to use an existing external database in an OutSystems app.
+
+
+</div>
+
 ---
 
 Message

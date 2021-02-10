@@ -45,3 +45,13 @@ Use EncodeSql to encode string literals
 
 Do not perform manual string encoding using the Replace
 :   String literals should **only** be encoded using the EncodeSql function. Doing it manually through the Replace function is prone to errors and can introduce bugs in your application that can later be exploited by end users of your application.
+
+<div class="info" markdown="1">
+
+To learn more about SQL in OutSystems, check out the following free courses:
+
+* [SQL Queries](https://www.outsystems.com/training/courses/146/sql-queries/). Write your SQL queries to interact with data in OutSystems.
+* [Getting Started with OutSystems for SQL Developers](https://www.outsystems.com/training/courses/169/getting-started-with-outsystems-for-sql-developers/). Learn how to create a data model, fetch data, and how to use an existing external database in an OutSystems app.
+
+
+</div>

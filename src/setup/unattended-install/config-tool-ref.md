@@ -28,7 +28,7 @@ ConfigurationTool.com
     | /SetupInstall [<platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>] 
     | /UpgradeInstall [<integrated_auth_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>] 
     | /RebuildSession <session_db_admin_username> <session_db_admin_password> 
-    | /SCInstall 
+    | /InstallServiceCenter  
     | /InstallSystemComponents
     | /GenerateTemplates
     | /ClearInternalNetwork
@@ -42,6 +42,7 @@ ConfigurationTool.com
     | /EnableServerAPI
     | /DisableServerAPI
     | /UpgradeEnvironment
+    | /UpgradePublishedApplications
     | /ApplySettingsFactory
 ```
 
@@ -69,7 +70,7 @@ ConfigurationTool.com
 
 :   Upgrades the session database model. The username and password provided must belong to a user with permissions to execute these operations.
 
-`/SCInstall`
+`/InstallServiceCenter `
 
 :   Forces the Service Center installation to run after finishing Configuration Tool.
 
@@ -133,7 +134,11 @@ ConfigurationTool.com
 
 `/UpgradeEnvironment`
 
-:   Installs Service Center and System Components. Skips any of these steps if they were previously executed.
+:   Installs core components (Service Center, System Components) followed by Module Preparation where your published modules are prepared for the new platform version. Skips any of these steps if they were previously executed.
+
+`/UpgradePublishedApplications`
+
+:   Prepares your published modules the new platform version.
 
 `/ApplySettingsFactory`
 
@@ -149,7 +154,7 @@ ConfigurationTool.com
     /SetupInstall <platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
     /CreateUpgradeCacheInvalidationService
-    /SCInstall
+    /InstallServiceCenter 
 ```
 
 Perform a clean installation for Oracle:
@@ -159,7 +164,7 @@ ConfigurationTool.com
     /SetupInstall
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
     /CreateUpgradeCacheInvalidationService
-    /SCInstall
+    /InstallServiceCenter 
 ```
 
 Perform an upgrade from OutSystems 10 (or lower):
@@ -169,7 +174,7 @@ ConfigurationTool.com
     /UpgradeInstall <integrated_auth_admin_password>
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
     /CreateUpgradeCacheInvalidationService
-    /SCInstall
+    /UpgradePublishedApplications  
 ```
 
 Perform an upgrade from OutSystems 11:
@@ -178,7 +183,7 @@ Perform an upgrade from OutSystems 11:
 ConfigurationTool.com
     /UpgradeInstall <integrated_auth_admin_password>
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
-    /SCInstall
+    /UpgradePublishedApplications  
 ```
 
 Modify the Address and/or Enable HTTPS settings of the "Global" deployment zone:
@@ -199,7 +204,7 @@ Enable Server.API and Server.Identity:
 
 ```
 ConfigurationTool.com
-    /EnabelServerAPI
+    /EnableServerAPI
 ```
 
 ## Logging

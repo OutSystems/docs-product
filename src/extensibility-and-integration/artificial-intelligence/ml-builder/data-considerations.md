@@ -5,7 +5,7 @@ tags:
 
 # Data considerations { #data-considerations }
 
-This section explains how ML Builder handles data, what data you can use, and how to avoid some model issues.
+This section explains how ML Builder handles data, what data you can use, and how to avoid common issues.
 
 <div class="info" markdown="1">
 
@@ -43,7 +43,7 @@ As a rule of thumb, the more data you have for training the model, the better. H
 
 Data leak occurs when you use data, to train your model, that you want to predict or data that doesn't exist when you use the model in production. In the support portal use case, the data set fields like priority, ticket type, and responsible team are only available after a support agent creates a ticket. If one of those fields is the target for the prediction, ML Builder excludes it as the attribute to predict the target. You should also not include those attributes to predict the target.
 
-This is what you can do to prevent data leak. **Identify**, and then **exclude from the training**:
+This is what you can do to prevent data leak. **Identify** and then **exclude from the training**:
 
 * The attributes that contain information about the future.
 * Any fields that don't exist at the moment of prediction.
@@ -70,4 +70,4 @@ To prevent bias:
 
 Be aware of the data you are using to train your model. Protect and use sensitive data according to GDPR and data protection policies that are applicable to your company.
 
-For example, instead of using the credit card number, use only the last four digits. This may produce a model of lower quality, but it's GDPR compliant.
+For example, instead of using the credit card number, use only the last four digits. The four digits may produce a model of lower quality, but it's GDPR compliant.

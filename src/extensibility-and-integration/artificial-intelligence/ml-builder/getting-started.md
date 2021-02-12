@@ -33,13 +33,14 @@ To get started with ML Builder, do the following:
 
 1. Validate and deploy your model in the overview page, to make the model available in your environment.
 
-1. Implement the model in your app.
+1. [Implement the model predictions](implement-model.md) in your app.
 
 ## Configuration { #configuration }
 
-ML Builder requires Azure to create a model. The first time you log in, ML Builder asks you to set up your environment to work with Azure.
+ML Builder requires Azure to create a model. The first time you sign in, ML Builder asks you to set up your environment to work with Azure. 
+**Follow the instructions in ML Builder to configure the settings.**
 
-Follow the instructions in the wizard. You need the following configuration information:
+You need the following information from Azure:
 
 * Subscription ID
 * Application / Client ID
@@ -48,4 +49,6 @@ Follow the instructions in the wizard. You need the following configuration info
 * Machine learning workspace and a training cluster
 * Storage container and the connection string for storing data
 
-For detailed instructions about the configuration of Microsoft Azure, check out [Setting up an AI provider](https://docs.google.com/document/d/167TZlQ4RIx1-Dm_3GEY9oO_sFQYsSuhHVTQXav73Bko/edit#heading=h.gjdgxs).
+Here is an overview of how ML Builder uses Azure.
+
+![Azure overview](images/azure-diag.png?width=750)

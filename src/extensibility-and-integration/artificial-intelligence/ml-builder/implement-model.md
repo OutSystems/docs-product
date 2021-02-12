@@ -96,7 +96,7 @@ After you reference the plugin, create logic that asks your model for prediction
 
 4. Get the top result of the prediction. Do that by evaluating `GetAttributePrediction.TopPrediction[0].score` and assigning the value to a variable. In the example, the variable is **TopPrediction**.
 
-    ![Getting the top prediction](images/top-prediction-ss.png?width=350)
+    ![Getting the top prediction](images/top-prediction-ss.png?width=400)
 
     The data type of **TopPrediction** is decimal because you're predicting the likelihood of the customer ending the contract (churning), on a scale from **0** to **1**. This is because you trained the model with the data where the churn value is **0** or **1**.
 

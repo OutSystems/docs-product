@@ -36,7 +36,7 @@ Resolved issues in ML Builder.
 
 ML Builder updates for the release of December 7, 2020.
 
-## What's new
+### What's new
 
 New in ML Builder.
 

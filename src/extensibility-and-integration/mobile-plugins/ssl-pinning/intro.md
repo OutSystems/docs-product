@@ -43,6 +43,12 @@ Here is an example of the openSSL commands to generate the hash of the certifica
 
 `openssl x509 -in my-certificate.crt -pubkey -noout | openssl rsa -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64`
 
+<div class="info" markdown="1">
+
+To generate a hash with **openssl**, you should use Command Prompt on Windows or a console on Linux. Avoid using PowerShell, as it can generate a different hash value.
+
+</div>
+
 For more examples of the openSSL commands, check out this [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning#extracting_the_base64_encoded_public_key_information) page or [this script](https://github.com/datatheorem/TrustKit/blob/master/get_pin_from_certificate.py) in GitHub.
 
 ### Create the configuration file
@@ -208,3 +214,4 @@ When working with [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob),
 
 * Blob works with apps generated for Android 7 and later if you use SSL Pinning 6.0.0 and later. 
 * Blob doesn't work in the Android apps with SSL Pinning 5.1.1 and earlier.
+    

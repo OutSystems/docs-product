@@ -122,11 +122,15 @@ Now we will define the logic that runs when the end users press the Save button:
 
 Now let's add the functionality to mark tasks as complete. We can implement that by adding a feature to delete the completed task:
 
-1. Delete the check mark icon in the last column of the table. Drag a Button Widget and enter "Done" in the Text property of the button.
+1. In the **Interface** tab, click on the "tasks" screen. Right click on the checkbox in the **Is Active** column and select **Delete**.
+
+    ![Allow Completing Tasks](images/Create-first-WebApp-Task-tab-del-ss.png?width=600)
+
+1. Drag a Button Widget and enter "Done" in the Text property of the button.
 
 1. Double-click an empty area of the button to define the logic associated with the click.
 
-1. In the **Data** tab, expand the **Task** entity and drag **DeleteTask** entity action  available under the entity Task in the Data tab to the flow of the DoneOnClick Action. Set the **Id** property  to `GetTasks.List.Current.Task.Id`.
+1. In the **Data** tab, expand the **Task** entity and drag **DeleteTask** entity to the flow of the DoneOnClick Action. Set the **Id** property  to `GetTasks.List.Current.Task.Id`.
 
 1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **DeleteTask** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
 

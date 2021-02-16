@@ -9,7 +9,9 @@ This article describes the steps to deploy and set up OutSystems on Microsoft Az
 
 <div class="info" markdown="1">
 
-Prerequisites: OutSystems on Microsoft Azure solution template is available on Microsoft Azure Marketplace under Bring-Your-Own-License (BYOL) pricing model. To deploy OutSystems on Microsoft Azure, start by [contacting OutSystems](https://www.outsystems.com/pricing-and-editions/#contact-us) and get your license.
+Prerequisites: 
+- OutSystems on Microsoft Azure solution template is available on Microsoft Azure Marketplace under Bring-Your-Own-License (BYOL) pricing model. To deploy OutSystems on Microsoft Azure, start by [contacting OutSystems](https://www.outsystems.com/pricing-and-editions/#contact-us) and get your license;
+- The Azure Private Endpoint is not supported.
 
 </div>
 

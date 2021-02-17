@@ -200,13 +200,13 @@ These are the prerequisites to deobfuscate the logs.
 
     ![Proguard UI](images/proguard-log.png?width=600) 
 
-### Limitations
+<div class="warning" markdown="1>
 
 The lines for the purposes of parsing can't have the timestamp, which is what logcat tools usually produce. Instead, the lines must start with the **at** keyword.
 
-### More information
+</div>
 
-For more information, see:
+For more information about logs, see:
 
 * [Write and View Logs with Logcat](https://developer.android.com/studio/debug/am-logcat#format)
 * [ReTrace](https://www.guardsquare.com/en/products/proguard/manual/retrace)
@@ -272,8 +272,5 @@ When editing the Extensibility Configurations in LifeTime, you need to encode th
 2. Run JavaScript code `encodeURIComponent("[public-key-certificate]")`.
 3. Copy the output of the command as the new value for the preference the **GooglePlayAppSigningCertificate** key.
 
-### More information
 
-For more information, see:
-
-* [Google Play App Signing](https://developer.android.com/studio/publish/app-signing#app-signing-google-play)
+Check out [Google Play App Signing](https://developer.android.com/studio/publish/app-signing#app-signing-google-play) on Google Android Development for more information about app signing.

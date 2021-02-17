@@ -1,11 +1,11 @@
 ---
-summary: Protect your mobile apps against tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse.
+summary: Protect your mobile apps against tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse. Check out notes about Google Play app signing.
 tags: support-application_development; runtime-mobile;
 ---
 
 # Harden the protection of mobile apps with AppShield
 
-OutSystems AppShield lets you harden the protection of your native Android and iOS apps. OutSystems AppShield integrates with the Mobile Apps Build Service (MABS) version 6 builds and adds protection at runtime and at rest. For more information about the supported mobile operating systems and stacks, check out [MABS and mobile operating systems lifecycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions).
+OutSystems AppShield lets you harden the protection of your native Android and iOS apps. OutSystems AppShield integrates with the Mobile Apps Build Service (MABS) version 6.1 and adds app protection at runtime and at rest.
 
 <div class="info" markdown="1">
 
@@ -19,12 +19,13 @@ To protect your apps with AppShield, you need to meet the following requirements
 
 * You installed the AppShield plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge. 
 * You have a license for AppShield.
-* You're using MABS 6.1 or later.
+* You're using MABS 6.1 or later. Check out [MABS and mobile operating systems lifecycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for more information about the supported operating systems.
 
-Additionally:
+Also note:
 
-* You need to rebuild and redistribute the mobile apps that you want to protect.
-* Account for the app file size increases after hardening the security, and additional time for MABS to create the build.  
+* You need to rebuild and redistribute the mobile apps protected with AppShield.
+* The app file size increases after hardening the security.
+* MABS takes more time to create a hardened build.  
 
 ## Supported features
 
@@ -59,19 +60,22 @@ Protection available for the iOS builds.
 To create a mobile app build with AppShield to hardened security, do the following:
 
 1. Install the AppShield component.
-2. Add AppShield dependencies to your app. Press **Ctrl+Q** to open the **Manage Dependencies** window. Enter `OutSystemsAppShieldPlugin` in the producer search field and then select all the elements in the right pane. Click **Apply** to add the references to your app and close the window.
+
+2. Add AppShield dependencies to your app. Press **Ctrl+Q** to open the **Manage Dependencies** window. Enter `OutSystemsAppShieldPlugin` in the producer search field and then select all elements in the right pane. Click **Apply** to add the references to your app and close the window.
 
     ![Manage dependencies](images/reference-appshield-ss.png?width=600)
 
 4. Publish the app.
+
 5. Create native mobile builds of the app.
 
 ### Configuration
 
-AppShield and its features are enabled by default when you install it. You may want to disable it in one or more environments for **testing purposes**.
+AppShield is on by default when you install the plugin. You can turn it off in one or more environments for **testing purposes**.
 
-* To disable AppShield functionalities in one or more environments, edit the Extensibility Configuration settings **in LifeTime** for the environment. Disabling the plugin in the development environment, for example, lets you run the app in emulators or debug the app.
-* To disable AppShield functionalities globally, edit the Extensibility Configuration settings **in Service Studio**. LifeTime copies configuration from Service Studio to environments during deployment. 
+* To turn off AppShield in one or more environments, edit the Extensibility Configuration settings **in LifeTime** for the environment. Disabling the plugin in the development environment, for example, lets you run the app in emulators or debug the app.
+  
+* To turn off AppShield globally, edit the Extensibility Configuration settings **in Service Studio**. LifeTime copies configuration from Service Studio to other environments during deployment. 
 
 <div class="info" markdown="1">
 
@@ -125,14 +129,14 @@ Here is an example of the JSON for Extensibility Configurations. You can use dif
 
 These are the values available in the AppShield configuration JSON.
 
-| Value                        | Type       | OS           | Description                                                            |
-| ---------------------------- | ---------- | ------------ | ---------------------------------------------------------------------- |
-| DisableAppShielding          | boolean    | iOS, Android | Activates or deactivates App Shield.                                |
-| AllowScreenshot              | boolean    | iOS, Android | If set to true, allows users to take screenshots of the app.           |
-| AllowJailbrokenRootedDevices | boolean    | iOS          | If set to true, allows users to run the app on the jailbroken devices. |
-| global                       | JSON value | iOS, Android | Settings in this section apply to both Android and iOS builds.         |
-| android                      | JSON value | Android      | The key denoting values that apply to the Android devices.             |
-| ios                          | JSON value | iOS          | The key denoting values that apply to the iOS devices.                 |
+| Value                        | Type       | OS           | Description                                                                                                         |
+| ---------------------------- | ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| DisableAppShielding          | boolean    | iOS, Android | Activates or deactivates App Shield.                                                                                |
+| AllowScreenshot              | boolean    | iOS, Android | If set to true, allows users to take screenshots of the app.                                                        |
+| AllowJailbrokenRootedDevices | boolean    | iOS          | If set to true, allows users to run the app on the jailbroken devices.                                              |
+| global                       | JSON value | iOS, Android | Settings in this section apply to both Android and iOS builds.                                                      |
+| android                      | JSON value | Android      | The key denoting values that apply to the Android devices. See [Google Play App Signing](#google-play-app-signing). |
+| ios                          | JSON value | iOS          | The key denoting values that apply to the iOS devices.                                                              |
 
 
 ## Obfuscation
@@ -148,7 +152,8 @@ AppShield has the following limitations.
 Non-specific limitations.
 
 * On iOS the plugin doesn't block user-initiated screenshots, it only notifies the app that a screenshot was taken. OutSystems currently doesn't support this event. However, AppShield blocks taking screenshots of the iOS App Switcher.
-* After MABS creates a build, with the AppShield plugin active, and signs the build, you can't sign that build again manually because the app would recognize that as signs of tampering.
+
+* After MABS creates a build with the AppShield plugin active, and signs the build, you can't sign that build again manually because the app would recognize that as a sign of tampering.
 
 ### Obfuscation
 
@@ -195,9 +200,9 @@ These are the prerequisites to deobfuscate the logs.
 
     ![Proguard UI](images/proguard-log.png?width=600) 
 
-### Known limitations
+### Limitations
 
-The lines that for parsing can't have the timestamp, which is what logcat tools usually produce. Instead, the lines must start with the **at** keyword.
+The lines for the purposes of parsing can't have the timestamp, which is what logcat tools usually produce. Instead, the lines must start with the **at** keyword.
 
 ### More information
 
@@ -206,3 +211,69 @@ For more information, see:
 * [Write and View Logs with Logcat](https://developer.android.com/studio/debug/am-logcat#format)
 * [ReTrace](https://www.guardsquare.com/en/products/proguard/manual/retrace)
 * [ProGuard](https://www.guardsquare.com/en/products/proguard)
+
+## Google Play App Signing
+
+<div class="info" markdown="1">
+
+Applies to apps for Google Play Store that have app signing feature enabled.
+
+</div>
+
+One of the security features of AppShield is repackaging detection. This protection prevents re-signing of the app package, but also causes incompatibility with the Google Play App Signing. You can fix this by providing information about the certificate in the AppShield settings.
+
+In the **Android section** of the Extensibility Configurations JSON, add **name** with `GooglePlayAppSigningCertificate` and the **value** with public key. Here is an example:
+
+
+```
+{
+    "preferences": {
+        "android": [
+            {
+                "name": "GooglePlayAppSigningCertificate",
+                "value": "[public-key-certificate]"
+            }
+        ]
+    }
+}
+```
+
+To get the values for **[public-key-certificate]**, do the following:
+
+1. From Google Play Console download the **App Signing Certificate** available in the **App Signing** fragment.
+
+2. Convert the **.der** file to **.pem** by running the command `openssl x509 -inform der -in deployment_cert.der -out certificate.pem`. You should now have **certificate.pem**.
+
+3. Open the **certificate.pem** file in a text editor and copy the content between **-BEGIN CERTIFICATE-** and **-END CERTIFICATE-**.
+
+After these changes steps, generate **a new build** of your mobile app.
+
+<div class="warning" markdown="1">
+
+If you generate an app in MABS with Play App Signing on, you need to sign the app via Google Play before you install it on your device. An unsigned app won't work, even if you install it by running the installer directly on the device.
+
+</div>
+
+### Known issues
+
+Known issues and workarounds related to Play App Signing and AppShield. 
+
+#### The value of GooglePlayAppSigningCertificate requires encoding
+
+<div class="info" markdown="1">
+
+Fixed in LifeTime 11.6.1 and Platform Server 11.10.0.
+
+</div>
+
+When editing the Extensibility Configurations in LifeTime, you need to encode the value of the  **GooglePlayAppSigningCertificate** key. This is what you can do:
+
+1. Open the console in Google Chrome developer tools.
+2. Run JavaScript code `encodeURIComponent("[public-key-certificate]")`.
+3. Copy the output of the command as the new value for the preference the **GooglePlayAppSigningCertificate** key.
+
+### More information
+
+For more information, see:
+
+* [Google Play App Signing](https://developer.android.com/studio/publish/app-signing#app-signing-google-play)

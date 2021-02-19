@@ -16,18 +16,20 @@ To understand the current state of an environment and monitor problems impacting
 
 OutSystems provides built-in tools that collect and present data about the platform and the applications running on it.
 
- ![Monitoring tools](images/intro-tools-EnviroHealth-sc-lt.png?width=800)
-
- ![Monitoring tools](images/intro-tools-dashboard-sc-lt.png?width=800)
-
 Service Center Console
 :   [Service Center](monitoring-an-environment.md) provides a set of metrics regarding a specific environment. It provides access to application logs and errors, web and mobile requests, integration calls, business processes, and security audits. Additionally, it displays the current status of environment servers and services and allows the creation of aggregation reports over the available data.
+
+ ![Monitoring tools](images/intro-tools-sc.png?width=800)
 
 LifeTime Analytics
 :   [LifeTime Analytics](troubleshoot-the-performance-of-an-application.md) provides immediate insight into the performance and end user experience of your Traditional Web Applications. It measures the end user experience based on industry-standard indicators. Here, you can further drill down to identify bottlenecks on different levels: [client](how-application-performance-is-measured.md#client-metrics) (eg. operating systems), [network](how-application-performance-is-measured.md#network-metrics) (eg. network types), and [server](how-application-performance-is-measured.md#server-metrics) (eg. business logic elements).
 
+ ![Monitoring tools](images/intro-tools-lt.png?width=800)
+
 App Feedback
 :   [App Feedback](../app-feedback/intro.md) application lets you manage the feedback from your business users. It allows you to streamline the feedback gathering process and defect tracking.
+
+![Monitoring tools](images/app-feedback-af.png?width=800)
 
 ## Extending OutSystems Monitoring Capabilities
 
@@ -50,9 +52,9 @@ The scope of your monitoring responsibility depends on the [setup of your OutSys
 OutSystems Cloud
 :   OutSystems guarantees the monitoring of the infrastructure layer components (servers and networking) and the platform main services in the middleware layer (web servers, deployment controllers, database). The customer is responsible for monitoring application usage (errors and performance), external integrations, end user experience, and business outcomes.
 
-![Monitoring scope](images/customer-mon-outsys-cloud-sc-It.png?width=600)
+![Monitoring scope](images/intro-cloud-scope-diag.png?width=600)
 
 OutSystems on-premises
 :   Monitoring should focus on the whole stack across the different layers: infrastructure, middleware, and platform.
 
-![Monitoring scope](images/customer-mon-outsys-on-prem-sc-It.png?width=600)
+![Monitoring scope](images/intro-on-prem-scope-diag.png?width=600)

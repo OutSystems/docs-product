@@ -3,7 +3,7 @@ summary: Develop a progressive web app (PWA) by creating a mobile app and toggli
 tags: support-application_development, runtime-mobile, article-page
 ---
 
-# Distribute as a progressive web app (PWA)
+# Distribute as a progressive web app
 
 A progressive web app (PWA) provides a native-like experience without having to distribute a native mobile app. PWA is an emerging technology that combines existing web technologies with modern browser features.
 

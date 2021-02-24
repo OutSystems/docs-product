@@ -123,11 +123,13 @@ Download the latest [LifeTime Management Console binaries](https://www.outsystem
 
 ### 4. Install the infrastructure management console
 
-Install LifeTime management console in a **dedicated environment**. For this, follow the [LifeTime installation checklist](https://www.outsystems.com/goto/checklist-lifetime) that is launched when you run the LifeTime management console installation binary.
+Install LifeTime management console in a **dedicated** environment. **Installing LifeTime in an existing environment isn't a supported scenario**.
 
-**Installing LifeTime in an existing environment is not a supported scenario.** Learn how to [size an environment for the infrastructure management console](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Size_an_environment_to_run_the_infrastructure_management_console).
+For this, follow the [LifeTime installation checklist](https://www.outsystems.com/goto/checklist-lifetime) launched when you run the LifeTime installation binary. As LifeTime **doesn't support farm configuration**, you must select the combination "Deployment Controller + Server" in the checklist to install a single server with both roles.
 
 The OutSystems Scheduler service must be running in the LifeTime environment.
+
+Learn how to [size an environment for the infrastructure management console](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Size_an_environment_to_run_the_infrastructure_management_console).
 
 ### 5. Configure the infrastructure management console
 

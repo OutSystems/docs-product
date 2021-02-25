@@ -22,12 +22,11 @@ You also need:
 * An Azure subscription and sufficient permissions to create and manage the Azure resources. ML Builder uses **Microsoft Azure** as the AI provider.
 * Good data and the more data you have, the better. Predictions based on machine learning depend on good data. 
 
-
 </div>
 
 ML Builder is an OutSystems cloud tool that helps you create apps with predictive capabilities thanks to its built-in machine learning features. The user interface guides you through to the steps of connecting to your data and training a model. When a model is ready, ML Builder exposes server actions for you to build the logic of an app. You can also create back ends for administrators and more sophisticated UI for users, or even further expose the prediction capabilities through a REST API.
 
-"ML" in ML Builder stands for "machine learning". OutSystems is developing ML Builder to be straightforward to use for most OutSystems developers. The tool requires only basic knowledge of machine learning concepts.
+"ML" stands for "machine learning" in ML Builder. OutSystems is developing ML Builder to be straightforward to use for most OutSystems developers. The tool requires only basic knowledge of machine learning concepts.
 
 Here is an overview of how ML Builder works and how you integrate the model predictions in an app.
 

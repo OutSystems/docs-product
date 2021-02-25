@@ -13,20 +13,34 @@ Each section in this document contains:
 * The **What's new** section. Updates about new features and improvements.
 * The **Bug fixes** section. The list of resolved issues.
 
+## Release Feb 24 2021
+
+ML Builder updates for the release of February 24, 2021.
+
+### What's new
+
+* Starting Guide. Use the Starting Guide to guide you through the main ML Builder concepts.
+* New Welcome page experience.
+* Removed unnecessary paddings from the right sidebar.
+* Minor improvements in user experience.
+* The right sidebar now is open by default in the model training flow.
+
+### Bug fixes
+
+* Fixed CSV generation issue by enclosing fields that have commas in quotes.
+* Fixed CSV format by the encoding to UTF-8 as default.
+* Fixed scroll to top in the model review screen.
+
 ## Release Feb 10 2021
 
 ML Builder updates for the release of February 10, 2021.
 
 ### What's new
 
-New in ML Builder.
-
 * You can now delete your models through the ML Builder. Deleting obsolete models is important to avoid additional costs in your Azure subscription.
 * In the AI provider setup now you don't have to register Azure resources before fetching the workspace. This lets you set up the tool faster.
 
 ### Bug fixes
-
-Resolved issues in ML Builder.
 
 * Fixed an issue that prevented training more than two models in parallel, in the same cluster.
 * Fixed the cluster name so it can accept more than 16 characters.
@@ -37,8 +51,6 @@ Resolved issues in ML Builder.
 ML Builder updates for the release of December 7, 2020.
 
 ### What's new
-
-New in ML Builder.
 
 * ML Builder is now a SaaS tool. Having the tool in the cloud reduces the installation efforts and provides a scalable solution for public availability.
 * Now the training and deploy of a model are separate stages. The separation of stages lets you have a better overview and cost control of your Azure subscription.

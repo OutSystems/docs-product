@@ -5,7 +5,6 @@ tags: support-application_development;
 
 # Technical Preview - Multilingual Reactive Web and Mobile Apps
 
-<div class="info" markdown="1">
 
 ## Prerequisites { #prerequisites }
 
@@ -16,7 +15,6 @@ To translate **Reactive Web** and **Mobile Apps** in Service Studio, as part of 
 * Up to date Service Studio
 * You activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Multilingual for Mobile and Reactive** in LifeTime
 
-</div>
 
 You design the UI in the default language, and the app shows in that language by default. You can translate the app to other languages, and then let users switch between the UI languages.
 

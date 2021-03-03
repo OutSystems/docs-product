@@ -8,10 +8,11 @@ Also available: [Log data reference in OutSystems 10](https://success.outsystems
 
 </div>
 
-## Mapping of the database views and Entities
+## Mapping of the database views and entities
 
-You can access the log data in Service Studio, by using the PlatformLogs extension. Each entry has the corresponding _Previous entry. For example, for the oslog_General view you have both oslog_General_Previous in the database views and Log_General_Previous in the Entity list.
+You can access the log data in Service Studio by using the PlatformLogs extension.
 
+The following entries refer to the current week's logs. Each entry has a corresponding _\_Previous_ entry for the previous week's logs. For example, the `oslog_General` view has both `oslog_General_Previous` in the database views and `Log_General_Previous` in the entity list. Each entry also has a set of ten views suffixed with the cycle number, where the cycle number is a value from 0 to 9 that refers to the week in which the logs were [rotated](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture/The_log_tables_and_views#The_rotation_of_the_logs). For example, the `oslog_General` view has `oslog_General_0` for cycle number 0 to `oslog_General_9` for cycle number 9. If you want to retrieve logs older than two weeks, you need to identify the cycle in which the event occured and read the view for that cycle.
 
 Database view | Entity
 ---|---

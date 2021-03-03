@@ -5,7 +5,12 @@ tags: support-application_development
 
 # Translating with the translation editor
 
-The **translation editor** lets you translate text and manage your translation directly from Service Studio. To open the editor go to the **Data** > right-click the **Multilingual Locales** folder > click **Edit Translations**. Translation editor also opens when you [add a new translation language](translate-your-app.md).
+The **translation editor** lets you translate text and manage your translation directly from Service Studio. To open the editor go to the **Data** > right-click the **Multilingual Locales** folder > click **Edit Translations**.
+
+![Menu to open translation editor](images/opening-translation-editor-ss.png?width=550)
+
+Translation editor also opens when you [add a new translation language](translate-your-app.md).
+
 
 <div class="info" markdown="1">
 
@@ -32,19 +37,30 @@ If a translatable text has no translation, the app shows the text in the default
 
 ## Translatable and non-translatable text
 
-The **Behavior** column in the translation editor shows what to do with the text in the translation process:
+Use the **Behavior** column in the translation editor to set the as text as translatable or non-translatable:
 
-* **Translate**. Translatable and it's **exported** in the translation files.
-* **Don't translate**. Non-translatable and it **isn't exported** in the translation files.
-* **Not defined**. Neither translatable or non-translatable, and it **isn't exported** in the translation files.
+| **Behavior**        | Translation shows in UI | Exported |
+| ------------------- | ----------------------- | -------- |
+| **Translate**       | Yes                     | Yes      |
+| **Don't translate** | No                      | No       |
+| **Not defined**     | No                      | No       |
 
-You can also set property for several selected cells with text by using **TRANSLATE**, **DON'T TRANSLATE**, and **NOT DEFINED** buttons. Use the **Ctrl/Shift** key for multiple selection or **Ctrl+A** to select all cells in the list. 
+Here are notes with more information:
+
+* When you set the text as **Translate**, you tell to Service Studio that the text is **translatable**. You need to supply the translation for the text, otherwise the app shows the original text.
+* If you set text as **Don't translate**, Service Studio treats it as **non-translatable**. The app shows the original text for the non-translatable text **even if you supply the translation**. This is useful if you want to protect text like brand name, product name, or strings with special purpose in your app.
+* If the text is **Not defined**, Service Studio hasn't got information how the text should show in the app. For the purposes of optimization, the app shows the original text even if you supply the translation. To show the translation, set the **Behavior** to **Translate**. To protect the text, set the to **Don't translate** instead.     
+* For more information about exporting text for translation see [Translation management](translation-management.md).
+
+<div class="info" markdown="1">
 
 Service Studio automatically sets as translatable the following text:  
 
 * Screen titles
 * Button labels
 * Text in the screens
+
+</div>
 
 ## Send feedback
 

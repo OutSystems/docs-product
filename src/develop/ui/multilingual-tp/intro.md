@@ -5,6 +5,17 @@ tags: support-application_development;
 
 # Technical Preview - Multilingual Reactive Web and Mobile Apps
 
+With Multilingual Reactive Web and Mobile Apps you can translate the app to other languages. Once the translations to other languages are available in the app, you can switch the language automatically or let users do it.
+
+<div class="info" markdown="1">
+
+When translating the apps, note the following important information about the language codes:
+
+* The default language code is **en-US**.
+* All language codes are in the [RFC 1766](https://tools.ietf.org/html/rfc1766) standard format.
+* Language codes are **case sensitive**.
+
+</div>
 
 ## Prerequisites { #prerequisites }
 
@@ -15,10 +26,7 @@ To translate **Reactive Web** and **Mobile Apps** in Service Studio, as part of 
 * Up to date Service Studio
 * You activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Multilingual for Mobile and Reactive** in LifeTime
 
-
-You design the UI in the default language, and the app shows in that language by default. You can translate the app to other languages, and then let users switch between the UI languages.
-
-The default language is **en-US**. All language codes are in the [RFC 1766](https://tools.ietf.org/html/rfc1766) standard format, and they're **case sensitive**.
+## Getting started
 
 Here's how to get started:
 
@@ -28,11 +36,12 @@ Here's how to get started:
 
 You can translate the following elements of your app:
 
-* Text in Buttons, Links, Screens
 * Screen titles
+* Text in Buttons, Links, Screens
+* Text literals in expressions
 * Instructions in Human Activities
 * Validation messages, widget confirmation messages, and empty state messages
-* Text literals in expressions
+* Static Entities. Check [Working with Static Entities](translate-your-app.md#working-with-static-entities) for important notes.
 
 ## Send feedback
 

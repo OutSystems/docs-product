@@ -35,9 +35,10 @@ Plugin | Description | Supported in PWA
 [Calendar](<https://www.outsystems.com/forge/component/1566/calendar-plugin/>) | Access the calendar of your device. | —
 [Contacts](<http://www.outsystems.com/forge/component-discussions/1394/Contacts+Plugin>) | Access the contacts of your device. | —
 [Ciphered Local Storage](<https://www.outsystems.com/forge/component-details/1500/ciphered-local-storage-plugin/>) | Keep your mobile application's sensitive data safe using a ciphered local storage database. | —
+[File](<https://www.outsystems.com/forge/component-overview/1633/file-plugin>) | Lets you manage files and folders on a mobile device within the app sandbox. | —
+[File Transfer](<https://www.outsystems.com/forge/component-overview/1409/file-transfer-plugin>) | Lets you upload and download files in the background in your native application. | —
 [InApp Browser](<https://www.outsystems.com/forge/component/1558/inappbrowser-plugin/>) | Open external URLs directly in your application. | —
 [OneSignal Notifications](<http://www.outsystems.com/forge/component/2119/onesignal-plugin/>) | Push notifications using OneSignal, with deep-linking and actions. | —
-[Pushwoosh Notifications](<http://www.outsystems.com/forge/component/1556/pushwoosh-plugin/>) | Push notifications using Pushwoosh, with deep-linking and actions. | —
 [Touch ID](<https://www.outsystems.com/forge/component-details/1431/Touch+ID+Plugin/>) | Use authentication with Touch ID in your application. | —
 [QR/Barcode scanner](<https://www.outsystems.com/forge/component/1403/barcode-plugin/>) | Scan barcodes and QR codes. | —
 [SSL Pinning](<https://www.outsystems.com/forge/component-discussions/1873/SSL+Pinning+Plugin>) | Provide an extra layer of security to HTTPS communications by adding a verification of the server certificate against hashes of public keys. | —
@@ -45,7 +46,7 @@ Plugin | Description | Supported in PWA
 [Local Notifications](<http://www.outsystems.com/forge/component/1541/local-notifications-plugin/>) | Send app notifications to the device when the application isn't running in the foreground. | —
 [Location](<https://www.outsystems.com/forge/component/1395/location-plugin/>) | Access the GPS capabilities of the user's device to show, for example, the present latitude, longitude, and  altitude. | Yes
 
-Once you [install the plugin](<../../getting-started/component.md>) in the environment it functions just like any other native OutSystems component: use the client actions of the plugin module to call the native capabilities of the device within your application. The plugin must support the mobile platforms (iOS, Android) for which you are creating an app or the app generation will fail.
+Once you [install the plugin](<../../getting-started/component.md>) in the environment it functions just like any other native OutSystems component: use the client actions of the plugin module to call the native capabilities of the device within your application. Make sure that the plugin supports the mobile platforms (iOS, Android) for which you are creating an app. If it is not supported app generation will fail.
 
 Each time you add, remove, or modify the plugin in an app, OutSystems [rebuilds the native shell](<../../deliver-mobile/mobile-app-update-scenarios.md#Situations_When_the_User_Must_Install_a_New_Build>) which you then have to distribute to the end users for installation.
 
@@ -57,18 +58,3 @@ The Forge also contains mobile plugins created and supported by the OutSystems c
 
 You may also create mobile plugins by [wrapping an Apache Cordova plugin into a module](<using-cordova-plugins.md>).
 
-
-### Included plugins in OutSystems Now (discontinued)
-
-Plugins included in the OutSystems Now mobile app, now discontinued, are as follows:
-
-* Camera
-* Card IO
-* Local Notifications
-* QR/Barcode scanner 
-* Location
-* Contacts
-* InApp Browser
-* Touch ID
-* Calendar
-* Key Store

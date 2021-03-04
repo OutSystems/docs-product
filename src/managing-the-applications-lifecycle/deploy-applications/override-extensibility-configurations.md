@@ -36,3 +36,24 @@ To override the Extensibility Configurations of your mobile app for a specific e
 1. Press the **Save** button.
 
 Now, when a new mobile app package is generated in this environment, the custom configurations will override the default configurations defined in the application module. Also, the custom configurations will be kept for the environment after new application deployments.
+
+## Know issue with the JSON size limit in LifeTime Extensibility Configuration
+
+<div class="info" markdown="1">
+
+Applies only to:
+
+* LifeTime, versions earlier than 11.6.1 **with**
+* Platform Server, versions earlier than 11.10.0
+
+</div>
+
+In LifeTime earlier than version 11.6.1 the Extensibility Configuration JSON has a character limit. If you go over the limit, the following error shows: **Failed to deserialize JSON to REST_ErrorRecord: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.**
+
+You can resolve the issue by:
+
+* Upgrading **both** LifeTime to 11.6.1 or later and Platform Server to version 11.10.0 or later.
+
+Or by:
+
+* Editing the Extensibility Configuration JSON in Service Studio.

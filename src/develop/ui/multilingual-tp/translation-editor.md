@@ -49,7 +49,7 @@ Here are notes with more information:
 
 * When you set the text as **Translate**, you tell to Service Studio that the text is **translatable**. You need to supply the translation for the text, otherwise the app shows the original text.
 * If you set text as **Don't translate**, Service Studio treats it as **non-translatable**. The app shows the original text for the non-translatable text **even if you supply the translation**. This is useful if you want to protect text like brand name, product name, or strings with special purpose in your app.
-* If the text is **Not defined**, Service Studio hasn't got information how the text should show in the app. For the purposes of optimization, the app shows the original text even if you supply the translation. To show the translation, set the **Behavior** to **Translate**. To protect the text, set the to **Don't translate** instead.     
+* If the text is **Not defined**, Service Studio hasn't got information how the text should show in the app. For the purposes of optimization, the app shows the original text even if you supply the translation. To show the translation, set the **Behavior** to **Translate**. To protect the text, set it to **Don't translate**.     
 * For more information about exporting text for translation see [Translation management](translation-management.md).
 
 <div class="info" markdown="1">

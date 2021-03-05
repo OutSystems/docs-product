@@ -90,7 +90,7 @@ After you reference the plugin, create logic that asks your model for prediction
 
     </div>
 
-3. Check if the model returns data. The value of **GetAttributePrediction.IsSuccess** should be **True**. In the example, the shows an error if the request to the model isn't successful.
+3. Check if the model returns data. The value of **GetAttributePrediction.IsSuccess** should be **True**. The example shows an error if the request to the model isn't successful.
 
     ![Check if response is valid](images/condition-success-ss.png?width=550)
 

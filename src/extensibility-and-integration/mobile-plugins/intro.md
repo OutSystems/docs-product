@@ -31,9 +31,9 @@ Plugin | Description | Supported in PWA
 -------|-------------|---
 [AppShield](<https://www.outsystems.com/forge/component-overview/9379//>) | Protect your mobile apps from tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse. | —
 [Card IO](<https://www.outsystems.com/forge/component/1438/card-io-plugin/>) | Automatically get the details of a credit card by taking a picture. | —
-[Camera](<http://www.outsystems.com/forge/component-discussions/1390/Camera+Plugin>) | Enable your application to access the camera capabilities of the device. | Yes
+[Camera](<https://www.outsystems.com/forge/component-overview/1390/camera-plugin>) | Enable your application to access the camera capabilities of the device. | Yes
 [Calendar](<https://www.outsystems.com/forge/component/1566/calendar-plugin/>) | Access the calendar of your device. | —
-[Contacts](<http://www.outsystems.com/forge/component-discussions/1394/Contacts+Plugin>) | Access the contacts of your device. | —
+[Contacts](<https://www.outsystems.com/forge/component-overview/1394/contacts-plugin>) | Access the contacts of your device. | —
 [Ciphered Local Storage](<https://www.outsystems.com/forge/component-details/1500/ciphered-local-storage-plugin/>) | Keep your mobile application's sensitive data safe using a ciphered local storage database. | —
 [File](<https://www.outsystems.com/forge/component-overview/1633/file-plugin>) | Lets you manage files and folders on a mobile device within the app sandbox. | —
 [File Transfer](<https://www.outsystems.com/forge/component-overview/1409/file-transfer-plugin>) | Lets you upload and download files in the background in your native application. | —
@@ -41,7 +41,7 @@ Plugin | Description | Supported in PWA
 [OneSignal Notifications](<http://www.outsystems.com/forge/component/2119/onesignal-plugin/>) | Push notifications using OneSignal, with deep-linking and actions. | —
 [Touch ID](<https://www.outsystems.com/forge/component-details/1431/Touch+ID+Plugin/>) | Use authentication with Touch ID in your application. | —
 [QR/Barcode scanner](<https://www.outsystems.com/forge/component/1403/barcode-plugin/>) | Scan barcodes and QR codes. | —
-[SSL Pinning](<https://www.outsystems.com/forge/component-discussions/1873/SSL+Pinning+Plugin>) | Provide an extra layer of security to HTTPS communications by adding a verification of the server certificate against hashes of public keys. | —
+[SSL Pinning](<https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin>) | Provide an extra layer of security to HTTPS communications by adding a verification of the server certificate against hashes of public keys. | —
 [Key Store](<https://www.outsystems.com/forge/component/1550/Key+Store+Plugin/>) | Store small amounts of sensitive information on your device. Key Store secures data by encrypting the data before storing it, and the platform itself carefully controls access to stored items. | —
 [Local Notifications](<http://www.outsystems.com/forge/component/1541/local-notifications-plugin/>) | Send app notifications to the device when the application isn't running in the foreground. | —
 [Location](<https://www.outsystems.com/forge/component/1395/location-plugin/>) | Access the GPS capabilities of the user's device to show, for example, the present latitude, longitude, and  altitude. | Yes

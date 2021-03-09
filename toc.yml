@@ -733,7 +733,6 @@
         - href: setup/azure/additional-configurations.md
         - href: setup/azure/quick-reference.md
         - href: setup/azure/getting-setup-logs.md
-    - href: setup/eap-flexible-upgrades.md        
 # Reference
 - href: ref/intro.md
 - topics:

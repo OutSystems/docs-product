@@ -40,9 +40,8 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ### Database Management System
 
-* Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
-* Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
-* Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
+* Microsoft SQL Server at compatibility level 150, since Platform Server 11.12.0
+* Microsoft SQL Server 2014, 2016 or 2017 (Web Edition or higher edition)<sup>1</sup>
 * Azure SQL Database V12
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
 * Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2
@@ -82,7 +81,7 @@ For more information on how to enable this service check Amazon's [EC2Config ser
 
 ## Amazon RDS considerations 
 
-OutSystems supports Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
+OutSystems supports Microsoft SQL Server at compatibility level 150, Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
 
 * 1 vCPU (virtual central processing unit) or higher
 * 1 ECU (EC2 Compute Unit) or higher
@@ -113,6 +112,7 @@ The following systems are certified to integrate with OutSystems.
 
 ### SQL Server Database
 
+* Microsoft SQL Server at compatibility level 150
 * Microsoft SQL Server 2017
 * Microsoft SQL Server 2016
 * Microsoft SQL Server 2014

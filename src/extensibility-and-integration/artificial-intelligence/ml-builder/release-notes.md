@@ -30,7 +30,7 @@ ML Builder updates for the release of March 11, 2021.
 * Fixed the delete button in the model details screen.
 * Fixed delete and deploy model popup size.
 * Fixed popups to prevent clipping of the content.
-* Fixed the position of the starting guide.
+* Fixed the position of the starting guide topics.
 
 ## Release Feb 24 2021
 

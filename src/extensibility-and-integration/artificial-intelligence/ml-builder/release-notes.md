@@ -13,6 +13,25 @@ Each section in this document contains:
 * The **What's new** section. Updates about new features and improvements.
 * The **Bug fixes** section. The list of resolved issues.
 
+## Release Mar 11 2021
+
+ML Builder updates for the release of March 11, 2021.
+
+### What's new
+
+* ML Builder now shows the score for each attribute about how useful the attribute is for the prediction. Only available for new models.
+* Improved the AI provider setup to define the storage container automatically.
+* New popup for attributes in the review and model details pages.
+* Reviewed and improved text in the "Tips" section.
+
+### Bug fixes
+
+* Fixed the model performance score to show correctly after training a model.
+* Fixed the delete button in the model details screen.
+* Fixed delete and deploy model popup size.
+* Fixed popups to prevent clipping of the content.
+* Fixed the position of the starting guide.
+
 ## Release Feb 24 2021
 
 ML Builder updates for the release of February 24, 2021.

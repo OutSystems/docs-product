@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve the different Locked Module TrueChange errors.
+summary: Check the causes and recomendations on how to solve the different Locked Module errors.
 tags:
 ---
 

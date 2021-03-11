@@ -6,7 +6,7 @@ tags:
 # Old Producer Error
 
 Message
-:   `Producer '<module>' hasn’t been upgraded to the current OutSystems environment version, even though it had been previously upgraded to an old environment version. (...)`
+:   `Producer '<module>' hasn’t been upgraded to the current OutSystems environment version, even though it had been previously upgraded to an old environment version. Please publish the module. Alternatively, run another environment upgrade.`
 
 Cause
 :   The module you are trying to publish has a dependency to a producer module that hasn't been compiled in the current Platform Server version yet. Possible causes are:
@@ -25,7 +25,7 @@ Recommendation
 ---
   
 Message
-:   `Producer '<module>' hasn’t been upgraded to the current OutSystems environment version. (...)`
+:   `Producer '<module>' hasn’t been upgraded to the current OutSystems environment version. Please publish the module. Alternatively, run another environment upgrade.`
 
 Cause
 :   The module you are trying to publish has a dependency to a producer module that hasn't been compiled in the current Platform Server version yet. Possible causes are:

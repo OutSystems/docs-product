@@ -1302,10 +1302,12 @@
             - href: ref/errors-and-warnings/errors/invalid-username-or-password-error.md
             - href: ref/errors-and-warnings/errors/invalid-variable-error.md
             - href: ref/errors-and-warnings/errors/licensing-error.md
+            - href: ref/errors-and-warnings/errors/locked-module-error.md
             - href: ref/errors-and-warnings/errors/mobile-debugger-errors.md
             - href: ref/errors-and-warnings/errors/module-name-conflict-error.md
             - href: ref/errors-and-warnings/errors/module-version-error.md
             - href: ref/errors-and-warnings/errors/multiple-date-formats-error.md
+            - href: ref/errors-and-warnings/errors/old-producer-error.md
             - href: ref/errors-and-warnings/errors/publishing-error.md
             - href: ref/errors-and-warnings/errors/recursive-theme-hierarchy-error.md
             - href: ref/errors-and-warnings/errors/required-input-parameter-error.md

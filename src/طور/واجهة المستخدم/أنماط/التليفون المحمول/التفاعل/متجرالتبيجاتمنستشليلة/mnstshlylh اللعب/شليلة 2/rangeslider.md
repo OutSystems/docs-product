@@ -1,9 +1,9 @@
----
-tags: runtime-mobileandreactiveweb;  
+-متجرمنصةشليله 
+العلامات: runtime-mobileandreactiveweb ؛ mnstshlylh اللعب  
 summary: Allows the user select a single value between two range values.
 ---
 
-# Range Slider
+#mnstshlylh-play نطاق المنزلق
 
 You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track, increases or decreases the value.  
 
@@ -76,7 +76,7 @@ After following these steps and publishing the module, you can test the pattern 
 |ShowPips (Boolean): Optional  | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. |
 |PipsStep (Integer): Optional  |  Range interval after which a Pip is drawn (when ShowPips is enabled). If not specified, the component tries to guess what step fits your data. |
 |ChangeEventDuringSlide (Boolean): Optional  | If True, a change event is triggered while the slider is being dragged. This is the default value. If False, the change events are only triggered when the user releases the slider. **Tip**: If you're refreshing a query based on the value of the slider, you probably want to set this to False. |
-|IsDisabled (Boolean): Optional | If True, the slider is disabled. If False, the slider is enabled. This is the default value. |
-|IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. |
-|VerticalHeight (Integer): Optional | If IsVertical is True, use this property to set the height (in px) of the slider. <p>Examples <ul><li>_Blank_ - The slider is 100px high. This is the default value. </li><li>_250_ - The slider is 250px high.</li></ul></p> |
+| IsDisabled (منطقي): اختياري | إذا كان True ، فسيتم تعطيل شريط التمرير. إذا كان خطأ ، يتم تمكين شريط التمرير. هذه هي القيمة الافتراضية. |
+| عمودي (منطقي): اختياري | إذا كان صحيحًا ، يكون اتجاه شريط التمرير عموديًا. إذا كان خطأ ، يكون اتجاه شريط التمرير أفقيًا. |
+| الارتفاع العمودي (عدد صحيح): اختياري | استخدام هذه الخاصية لتعيين ارتفاع شريط التمرير (بالبكسل). <p>> <ul> <li> _Blank_ - شريط التمرير ارتفاع 100 بكسل. هذه هي القيمة الافتراضية. </ li> <li> _250_ - ارتفاع شريط التمرير 250 بكسل. </ li> </ ul> </p> |
 |AdvancedFormat (Text): Optional  |  Allow for more options beyond what's provided through the input parameters. For more information, visit: <https://kimmobrunfeldt.github.io/progressbar.js/>. Example: `{ easing: 'bounce' }` |

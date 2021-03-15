@@ -13,6 +13,14 @@ This section contains more details about known issues.
 
 ### Right-to-left languages don't show properly
 
+<div class="info" markdown="1">
+
+Fixed in Platform Server 11.11.1.
+
+Update to Platform Server 11.11.1 and use up-to-date Service Studio to prevent issues with the display of content in right-to-left languages.
+
+</div>
+
 Apps show content for the right-to-left (RTL) languages left to right instead of right to left. This is a known issue and OutSystems is working on the improvements. Until the fix is public, you can use the workaround to control how the content shows in your apps.
 
 #### Workaround

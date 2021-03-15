@@ -66,3 +66,12 @@ When installing a new version of an Android app already installed on the device 
 </div>
 
 After the first mobile app generation, every time you click “1-Click Publish”, OutSystems generates a new app package in the situations listed above. You can then download those app packages via Service Studio, Service Center, and LifeTime. This guarantees that the latest app package available to download from the environment is synchronized with the development of the app.
+
+<div class="warning" markdown="1">
+
+## Conditions about automatic and manual generation 
+* Automatic generation only is triggered when you add a Cordova plugin as a resource and reference it in the Extensibility Configuration. 
+If you have any resources used by the plugin in the application that doesn't match the above (1) condition the automatic generation will not be triggered, hence manual generation is needed.
+* A good example of this is when the SSL Pinning resource (pinning.json) was changed in the application (which is an external plugin resource), hence, needing a manual generation.
+
+</div>

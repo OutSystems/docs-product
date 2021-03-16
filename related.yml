@@ -880,6 +880,26 @@
 - extensibility-and-integration/rest/troubleshoot-a-rest-api.md:
     - extensibility-and-integration/log-levels-set.md
 
+# --- Extensibility and Integration --- Integration Builder
+
+- intro.md:
+    - one-way: extensibility-and-integration/integration-builder/works.md
+    - one-way: extensibility-and-integration/integration-builder/connectors/integration-salesforce.md
+    - one-way: extensibility-and-integration/integration-builder/connectors/integration-sap.md
+
+- works.md:
+    - extensibility-and-integration/integration-builder/use.md
+    - extensibility-and-integration/integration-builder/structure.md
+
+- use.md:
+    - extensibility-and-integration/integration-builder/connectors/integration-salesforce.md
+    - extensibility-and-integration/integration-builder/connectors/integration-sap.md
+    - extensibility-and-integration/integration-builder/connectors/integration-ms-dataverse.md
+    - extensibility-and-integration/integration-builder/connectors/integration-ms-dynamics.md
+
+- connectors/integration-sap.md:
+    - extensibility-and-integration/integration-builder/connectors/integration-sap-get-spec.md
+
 # --- Managing the Applications Lifecycle > Containers ---
 
 - managing-the-applications-lifecycle/containers/intro.md:

@@ -542,6 +542,23 @@
             - href: extensibility-and-integration/javascript/web/run-js-code.md
             - href: extensibility-and-integration/javascript/web/handle-errors.md
 
+    #Integration Builder
+    - href: extensibility-and-integration/integration-builder/homepage.md
+    - topics:
+        - href: extensibility-and-integration/integration-builder/intro.md
+        - href: extensibility-and-integration/integration-builder/works.md
+        - href: extensibility-and-integration/integration-builder/set-up.md
+        - href: extensibility-and-integration/integration-builder/use.md
+        - topics:
+            - href: extensibility-and-integration/integration-builder/connectors/integration-salesforce.md
+            - href: extensibility-and-integration/integration-builder/connectors/integration-sap.md
+            - topics:
+                - href: extensibility-and-integration/integration-builder/connectors/integration-sap-get-spec.md
+            - href: extensibility-and-integration/integration-builder/connectors/integration-ms-dataverse.md
+            - href: extensibility-and-integration/integration-builder/connectors/integration-ms-dynamics.md
+        - href: extensibility-and-integration/integration-builder/structure.md
+        - href: extensibility-and-integration/integration-builder/troubleshoot.md
+
     #REST
     - href: extensibility-and-integration/rest/intro.md
     - topics:

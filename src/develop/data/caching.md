@@ -8,7 +8,7 @@ You can improve the performance of your app by enabling the caching of some elem
 
 Caching is RAM-based and is available in every front-end server. Whenever memory space is required, the elements are removed from the cache using the least recently used algorithm.
 
-There is a specific cache for each tenant in the multitenant apps, which only stores data related to it. You can invalidate the cache in the multitenant environments by using [System Actions](../../ref/apis/auto/system-actions.final.md) **EspaceInvalidateCache** and **TenantInvalidateCache**.
+There is a specific cache for each tenant in the multitenant apps, which only stores data related to it. You can invalidate the cache in the multitenant environments by using [System Actions](../../ref/apis/auto/system-actions.final.md) **EspaceInvalidateCache** and **TenantInvalidateCache**. Additinally, when we use the **IncludeJavascript_API** or the **HTTPRequestHandler** extension, the platform forces an invalidate cache call for all users in the Espace.
 
 These are the elements that **support** caching:
 

@@ -7,19 +7,11 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 
 File Plugin lets you manage files and folders on a mobile device within the app sandbox.
 
-To use the plugin, do the following:
+<div class="info" markdown="1">
 
-1. [Install File Plugin from Forge](https://www.outsystems.com/forge/component-overview/1633/file-plugin) to your environment. 
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
 
-2. Add the plugin actions to the app. In Service Studio, go to **Manage Dependencies** (**Ctrl+Q**)
-   
-3. Search for **FilePlugin** and select the actions you want to use.
-
-    ![Adding File Plugin to the app](images/reference-file-plugin-ss.png?width=700)
-
-4. Click **Apply** to add the plugin to the app.
-
-After you reference the File Plugin, you can use the actions in **Logic** > **Client Actions** > **FilePlugin**.  
+</div>
 
 ## Sample app
 

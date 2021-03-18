@@ -7,6 +7,12 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 
 Use File Viewer Plugin to create logic that lets users to open remote or app resource files. In Android users select an app to open the file. iOS provides a native preview for supported file types.
 
+<div class="info" markdown="1">
+
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
+
+</div>
+
 File Viewer Plugin can open:
 
 * **File from the app resources**. The plugin can access the **resources** path to load the file that's part of the app static content. See [Working with app resources](#working-with-app-resources)
@@ -14,19 +20,6 @@ File Viewer Plugin can open:
 
 ![File Viewer Plugin](images/file-viewer-preview.png?width=300)
 
-## Installing and referencing
-
-To use the plugin, do the following:
-
-1. [Install File Plugin from Forge](https://www.outsystems.com/forge/component-overview/1606/) to your environment. You can also install the demo app to see sample logic for common use cases.
-
-2. In Service Studio, open **Manage Dependencies** (**Ctrl+Q**). 
-   
-3. Search for **FileViewerPlugin** and select the actions from the plugin.
-
-4. Click **Apply** to add the plugin actions to the app. 
-
-After you reference the File Plugin, you can use the actions in **Logic** > **Client Actions** > **FileViewerPlugin**.
 
 ## Viewing files in Android and iOS
 

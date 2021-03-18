@@ -9,19 +9,11 @@ File Transfer Plugin lets you download and upload files in your mobile app. The 
 
 File Transfer Plugin also has a progress update for transfers that take longer, for example video, music, and large images.
 
-To use the plugin, do the following:
+<div class="info" markdown="1">
 
-1. [Install File Transfer Plugin from Forge](https://www.outsystems.com/forge/component-overview/1409/file-transfer-plugin) to your environment. 
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
 
-2. In Service Studio, go to **Manage Dependencies** (**Ctrl+Q**).
-   
-3. Search for **FileTransferPlugin** and select the actions and UI flows you want to use.
-
-    ![Adding File Plugin to the app](images/reference-file-transfer-plugin-ss.png?width=700)
-
-4. Click **Apply** to add the plugin to the app. 
-   
-After you reference the File Plugin, you can use the [actions and events](#reference) to create your logic.
+</div>
 
 ## Sample app
 

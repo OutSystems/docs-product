@@ -13,6 +13,12 @@ SSL Pinning uses a customized version of the SSL certificate validation and does
 
 **Note** Don't use the SSL Pinning plugin in production with the default certificate provided by the OutSystems cloud as your apps won't work when OutSystems renews the certificate. In general, you should always use the certificate for which you have the certificate keys.
 
+<div class="info" markdown="1">
+
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
+
+</div>
+
 ## How to implement SSL pinning in OutSystems
 
 To implement SSL Pinning you must have two certificates on the server - one as the primary certificate and the second as backup (in case the primary certificate gets compromised).

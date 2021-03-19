@@ -57,6 +57,14 @@ After following these steps and publishing the module, you can test the pattern 
 
 ![](<images/dropdownsearch-8-ss.png>)
 
+## Setting the number of returned suggestions
+
+By default, Dropdown Search returns four search results in the dropdown list. You can change this number by editing the **AdvancedFormat** property of the widget.
+
+To increase the limit to 10 suggestions, enter `"{searchResultLimit:10}"` in **AdvancedFormat**.
+
+![Property to set the number of suggestions](images/dropdownsearch-set-number-of-suggestions-ss.png?width=320)
+
 ## Properties
 
 | Property | Description |
@@ -67,5 +75,5 @@ After following these steps and publishing the module, you can test the pattern 
 | EmptyText (Text): Optional | Text that is displayed when no items are selected. "Select an item" is the default text.|
 | SearchPrompt (Text): Optional | Text that is displayed in the Search prompt/placeholder. |
 | NoResultsText (Text): Optional | Text that is displayed when there are no results. |
-| AdvancedFormat (Text): Optional | Enables more options beyond what's provided through the inputs. For more options, go to [Choices library](https://github.com/jshjohnson/Choices). Default value is `{}`. You can also use fuse.js options to change the search configurations. For more information on search configurations, see [Fuse](https://fusejs.io/) |
+| AdvancedFormat (Text): Optional | Enables more options beyond what's provided through the inputs. For more options, go to [Choices library](https://github.com/jshjohnson/Choices). Default value is `{}`. You can also use fuse.js options to change the search configurations. For more information on search configurations, see [Fuse](https://fusejs.io/). <br/><br/> See also [Setting the number of returned suggestions](#setting-the-number-of-returned-suggestions) |
 | ExtendedClass (Text): Optional | Add custom style classes to the Dropdown Search UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown Search UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown Search UI styles being applied.</li></ul> |

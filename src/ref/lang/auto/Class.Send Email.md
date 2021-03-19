@@ -32,28 +32,28 @@ Sends an email to one or more recipients.
 <td>Email address of the sender.</td>
 <td></td>
 <td></td>
-<td>Use the EmailAddressCreate built-in function to create an encoded value for the 'From' property.<br/><br/>The default sender is configured in the Email Configuration in Service Center.<br/><br/>The maximum size of this property is 200 characters.</td>
+<td>Use the EmailAddressCreate built-in function to create an encoded value for the 'From' property.<br/><br/>The default sender is configured in the Email Configuration in Service Center.</td>
 </tr>
 <tr>
 <td title="To">To</td>
 <td>One or more email addresses to send the email. Separate email addresses with a comma (,).</td>
 <td>Yes</td>
 <td></td>
-<td>To handle Email addresses use the Email data type and Email built-in functions.<br/><br/>The maximum size of this property is 2000 characters.</td>
+<td>To handle Email addresses use the Email data type and Email built-in functions.</td>
 </tr>
 <tr>
 <td title="CC">CC</td>
 <td>One or more email addresses to send a carbon copy of the email. Separate email addresses with a comma (,).</td>
 <td></td>
 <td></td>
-<td>To handle Email addresses use the Email data type and Email built-in functions.<br/><br/>The maximum size of this property is 2000 characters.</td>
+<td>To handle Email addresses use the Email data type and Email built-in functions.</td>
 </tr>
 <tr>
 <td title="BCC">BCC</td>
 <td>One or more email addresses to send a blind carbon copy of the email. Separate email addresses with a comma (,).</td>
 <td></td>
 <td></td>
-<td>To handle Email addresses use the Email data type and Email built-in functions.<br/><br/>The maximum size of this property is 2000 characters.</td>
+<td>To handle Email addresses use the Email data type and Email built-in functions.</td>
 </tr>
 <tr>
 <td title="Log Content">Log Content</td>

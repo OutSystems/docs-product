@@ -9,7 +9,7 @@ tags:
 
 ## Prerequisites
 
-ML Builder is currently in a public **early access program (EAP)** and you need to register at the [ML Builder registration page](https://www.outsystems.com/eap-ml-builder/).
+ML Builder is currently in a public **early access program (EAP)** and you need to register at the [Early Access Program registration page](https://www.outsystems.com/EAP/).
 
 To use ML Builder, you need to meet the following requirements:
 

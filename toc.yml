@@ -544,9 +544,8 @@
             - href: extensibility-and-integration/javascript/web/handle-errors.md
 
     #Integration Builder
-    - href: extensibility-and-integration/integration-builder/homepage.md
+    - href: extensibility-and-integration/integration-builder/intro.md
     - topics:
-        - href: extensibility-and-integration/integration-builder/intro.md
         - href: extensibility-and-integration/integration-builder/works.md
         - href: extensibility-and-integration/integration-builder/set-up.md
         - href: extensibility-and-integration/integration-builder/use.md

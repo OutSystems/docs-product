@@ -9,7 +9,7 @@ Message
 :   `The 1-Click Publish started by <user> at <time> can't proceed because there is an ongoing Modules upgrade, started by Compiler Service at <time>, that is locking '<module>' module.`
 
 Cause
-:   The environment is being upgraded to a new Platform Server version, and the [modules preparation step](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) hasn't finished yet. You can't publish any application or module in the environment while the modules preparation is still in progress.
+:   The environment is being upgraded to a new Platform Server version, and the [modules preparation step](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) hasn't finished yet. You cannot publish any application or module in the environment while the modules preparation step is still in progress.
 
 Recommendation
 :   Wait for the modules preparation step to finish before you publish your applications or modules. You can [check the progress](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) of the modules preparation step in the Service Center console. For further details about the ongoing upgrade, contact your System Administrator.
@@ -20,7 +20,7 @@ Message
 :   `The Delete module started by <user> at <time> can't proceed because there is an ongoing Modules upgrade, started by Compiler Service at <time>, that is locking '<module>' module.`
 
 Cause
-:   The environment is being upgraded to a new Platform Server version, and the [modules preparation step](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) hasn't finished yet. You can't delete a module while the modules preparation is still in progress.
+:   The environment is being upgraded to a new Platform Server version, and the [modules preparation step](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) hasn't finished yet. You cannot delete a module while the modules preparation step is still in progress.
 
 Recommendation
 :   Wait for the modules preparation step to finish before you delete the module. You can [check the progress](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) of the modules preparation step in the Service Center console. For further details about the ongoing upgrade, contact your System Administrator.

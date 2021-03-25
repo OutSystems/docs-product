@@ -7,11 +7,25 @@ tags:
 
 These are the release notes for ML Builder.
 
-Each section in this document contains:
+## Release Mar 25 2021
 
-* **Title**. The date when ML Builder received updates.
-* The **What's new** section. Updates about new features and improvements.
-* The **Bug fixes** section. The list of resolved issues.
+ML Builder updates for the release of March 25, 2021.
+
+### What's new
+
+* All attributes now show during the attribute selection. Invalid attributes are disabled by default.
+* Added the **Retry** button to the **Create a cluster** action. Use the button to retry the action if there's timeout while the cluster templates load.
+* Improved the performance of loading cluster templates during the AI provider setup.
+* Added an overview area for text classification and attribute prediction on the screen where you select a use case.
+* Now the tips area is highlighted in the first training.
+* Minor UX improvements.
+ 
+### Bug fixes
+
+* Fixed a sync issue where the workspace was registered in the database before getting the API response.
+* Fixed the screen auto-refresh to prevent unnecessary refreshes.
+* Fixed the display of a new workspace when the creation process starts.
+* Fixed the provisioning cluster message display during the creation of a workspace.
 
 ## Release Mar 11 2021
 

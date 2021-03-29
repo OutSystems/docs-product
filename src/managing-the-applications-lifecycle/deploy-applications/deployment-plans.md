@@ -13,7 +13,7 @@ A deployment plan can contain:
 * Deployment notes
 * Settings like [Site Property values](tp-configure-site-properties-during-deploy.md)
 
-You create deployment plans in LifeTime in the **Applications** screen.
+You can create deployment plans in LifeTime, on the **Deployment Plans** screen, under the **Applications** area.
 
 You can also create a deployment plan by [reusing a finished plan](#reuse) or [retrying an aborted plan](#retry).
 
@@ -21,17 +21,17 @@ You can also create a deployment plan by [reusing a finished plan](#reuse) or [r
 
 The **Deployment Plans** screen contains a list of past and current deployment plans in LifeTime, along with their status and details.
 
-Open the Deployment Plans screen by clicking **Applications** and then clicking the "Deployment Plans" link below the page header.
+Open the Deployment Plans screen by clicking **Deployment Plans** under the **Applications** area.
 
-![](images/lt-deployment-plans-link.png)
+![](images/deployment-plans-option-lt.png)
 
 From this screen you can perform several operations like retrying an aborted deployment plan and reusing a finished deployment plan. The available operations on each plan depend on the plan's status.
 
-![](images/lt-deployment-plans-screen.png)
+![](images/deployment-plans-list-lt.png)
 
 ## Reusing a deployment plan { #reuse }
 
-Reusing a deployment plan will get you faster deployments by not having to create deployment plans from scratch. You can reuse any finished deployment plan that was not aborted. 
+Reusing a deployment plan will get you faster deployments by not having to create deployment plans from scratch. You can reuse any finished deployment plan that was not aborted.
 
  This operation is especially useful in the following situations:
 
@@ -47,17 +47,17 @@ To reuse a deployment plan from the Deployment Plans screen do the following:
 
 1. Open the Deployment Plans screen from the Applications screen.
 
-    ![](images/lt-deployment-plans-link.png)
+    ![](images/deployment-plans-option-lt.png)
 
-1. Find the plan you wish to reuse in the plan list. You can search for the plan using several criteria. 
+1. Find the plan you wish to reuse in the plan list. You can search for the plan using several criteria, and use the **Advanced filters** for more search options.
 
-    ![](images/lt-deployment-plans-screen.png)
+    ![](images/deployment-plans-list-lt.png)
 
 1. Click **Reuse Plan**. This operation is available for all finished plans that were not aborted.
 
-1. In the pop-up window, choose the **source** and **target** environments for the new plan. 
+1. In the pop-up window, choose the **source** and **target** environments for the new plan.
 
-    ![](images/lt-reuse-deployment-plan-popup.png)
+    ![](images/deployment-plans-reuse-popup-lt.png)
 
 You can choose to keep the tags that were in the source plan by selecting **Keep the tags used in the original plan**.  
 In this case, if some of the tagged versions of the original plan are not available for deployment (for example, if the version is not available in the selected source environment or if there's a more recent version of an application in the selected target environment), you will get a feedback message stating this situation, and you will be able to adjust the new deployment plan accordingly.  
@@ -88,11 +88,11 @@ To retry a deployment plan from the Deployment Plans screen do the following:
 
 1. Open the Deployment Plans screen from the Applications screen.
 
-    ![](images/lt-deployment-plans-link.png)
+    ![](images/deployment-plans-option-lt.png)
 
 1. Find the aborted plan you wish to retry in the plan list. You can search for the plan using several criteria.
 
-    ![](images/lt-deployment-plans-screen.png)
+    ![](images/deployment-plans-list-lt.png)
 
 1. Click **Retry Plan**. This operation is available for all aborted plans.
 

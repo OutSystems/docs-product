@@ -9,7 +9,7 @@ Translate the interface of your app to other languages to let more users use you
 
 ## Quick start
 
-Hers is a quick start to help you translate your app. To let the users use your app in their language, you need to:
+Here is a quick start to help you translate your app. To let the users use your app in their language, you need to:
 
 1. [Add a new language and translate the text in the app](#adding-a-new-language-and-translating-the-text) by using the Service Studio translation editor.
 
@@ -31,28 +31,27 @@ To add a new language and translate your app, do the following in Service Studio
 
     ![Add new language for translation](images/add-new-language-translation-ss.png?width=550)
 
-2. Select a locale and then select **OK**. The **translations editor** opens.
+2. Select a locale and then click **OK** to open the **translations editor**.
 
     ![Select new language](images/select-new-language-ss.png?width=400)
 
     <div class="info" markdown="1">
 
-    Note the language code, as you need it later. For example, for **Portuguese (Portugal)** the code is **pt-PT**.
+    Make note of the language code, since you will need it later. For example, for **Portuguese (Portugal)** the code is **pt-PT**.
 
     </div>
 
-3. In the translations editor, select **Show Translate** option in the filter list to see all text that needs translation.
+3. In the translations editor, select the **Show Translate** option in the filter list to see all text that needs translation.
 
     ![Shows text that needs translation](images/show-translatable-text-ss.png?width=650)
 
     See [Translating with the translation editor](translation-editor.md) for more information on how to use the editor.
 
-4. Translate the text in the **Translation in (language code)** column. Click on **Done** when you finish.
+4. Translate the text in the **Translation in (language code)** column. Click **Done** when you are finished.
 
     ![Translation in the translation editor](images/enter-translation-ss.png?width=650)
     
-
-When you finish translating the text in your app, you need to create a language switcher to show the translations in the app.
+After you finish translating the text in your app, you then need to create a language switcher to show the available translations.
 
 <div class="info" markdown="1">
 
@@ -64,13 +63,13 @@ Translate the text in **all modules of your app**. This is important as an app c
 
 A language switcher lets your users change the language of the app. To create a language switcher, do the following:
 
-1. Drag a Link widget to a screen. Then, enter the language name in the **Text** part of the **Link**. 
+1. Drag a Link widget to a screen and enter the language name in the **Text** part of the **Link**. 
 
     ![Link with a language name](images/link-with-language-name-ss.png?width=750)
 
-    The example shows how to use the Link widget to change the app language. You can create the same action with other widgets like Button or Dropdown.
+    The example shows how to use the Link widget to change the app language. You can create the same action with other widgets, including Button and Dropdown.
 
-2. Select the Link widget and in the properties, in the **On Click** list, select **New Client Action**. New Client Action opens for editing.
+2. Select the Link widget to view its properties. In the **On Click** list, select **New Client Action**. New Client Action opens for editing.
 
     ![New client action from the list](images/new-client-action-for-link-ss.png?width=750)
 
@@ -80,7 +79,7 @@ A language switcher lets your users change the language of the app. To create a 
 
     <div class="info" markdown="1">
 
-    If you can't find the **SetCurrentLocale Client Action**, you need to reference it first. Press **Ctrl+Q** to open the **Manage Dependencies** window. Select **(System)**; then, in the right pane under **Client Actions**, select **SetCurrentLocale**. Click on the **Apply** to confirm. You can now use **SetCurrentLocale Client Action** in your app logic.
+    If you can't find the **SetCurrentLocale Client Action**, you need to reference it first. Press **Ctrl+Q** to open the **Manage Dependencies** window and select **(System)**. In the right pane under **Client Actions**, select **SetCurrentLocale** and click **Apply** to confirm. You can now use **SetCurrentLocale Client Action** in your app logic.
 
     ![SetCurrentLocale Client Action in Manage Dependencies](images/set-current-locale-in-manage-dependencies.png?width=550)
 
@@ -92,7 +91,7 @@ A language switcher lets your users change the language of the app. To create a 
 
     </div>
 
-4. In the **SetCurrentLocale Client Action**, in the **Locale** property, enter the code of the language. For example, `"pt-PT"`.
+4. In the **SetCurrentLocale Client Action**, enter the code of the language (for example, `"pt-PT"`) in the **Locale** property.
 
     ![SetCurrentLocale and the Locale property](images/locale-in-client-action.png?width=550)
 
@@ -104,7 +103,7 @@ A language switcher lets your users change the language of the app. To create a 
 
 5. Publish the app and select your link to change the language of the app.
 
-## Editing existing translation
+## Editing existing translations
 
 Use the [translation editor](translation-editor.md) to edit existing translations. You can also [export and import text for translation](translation-management.md). 
 
@@ -122,9 +121,9 @@ Follow these steps to translate the text in Static Entities and show the transla
 
     ![Translation editor](images/static-entity-translate-ss.png?width=550)
 
-2. Still in the translation editor, enter the translation in the **Translation in (language name)** cell.
+2. While still in the translation editor, enter the translation in the **Translation in (language name)** cell.
 
-3. In the logic to switch the locale, just after the **SetCurrentLocale** action, add **Refresh Data** and select the Static Entity.
+3. In the logic to switch the locale, add **Refresh Data** just after the **SetCurrentLocale** action and select the Static Entity.
 
     ![Refresh of Static Entity](images/static-entity-refresh.png?width=500)
 

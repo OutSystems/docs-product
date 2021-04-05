@@ -43,6 +43,7 @@ Currently Integration Builder supports:
 * [SAP OData integrations](connectors/integration-sap.md)
 * [Microsoft Dataverse integrations](connectors/integration-ms-dataverse.md)
 * [Microsoft Dynamics 365 integrations](connectors/integration-ms-dynamics.md)
+* [SharePoint Online integration](connectors/integration-ms-sharepoint.md)
 
 ## Start using Integration Builder
 

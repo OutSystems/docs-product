@@ -556,6 +556,7 @@
                 - href: extensibility-and-integration/integration-builder/connectors/integration-sap-get-spec.md
             - href: extensibility-and-integration/integration-builder/connectors/integration-ms-dataverse.md
             - href: extensibility-and-integration/integration-builder/connectors/integration-ms-dynamics.md
+            - href: extensibility-and-integration/integration-builder/connectors/integration-ms-sharepoint.md
         - href: extensibility-and-integration/integration-builder/structure.md
         - href: extensibility-and-integration/integration-builder/troubleshoot.md
 

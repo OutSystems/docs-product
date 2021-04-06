@@ -792,9 +792,6 @@
 # Reference
 - href: ref/intro.md
 - topics:
-    # Service Studio command line
-    - topics:
-        - href: ref/ss-command/ss-command-line.md
     # OutSystems Language (reference)
     - href: ref/os-language-intro.md
     - topics: 

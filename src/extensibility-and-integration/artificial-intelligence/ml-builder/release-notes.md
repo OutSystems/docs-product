@@ -7,6 +7,24 @@ tags:
 
 These are the release notes for ML Builder.
 
+## Release Apr 8 2021
+
+ML Builder updates for the release of April 8, 2021.
+
+### What's new
+
+* Added a new and guided tutorial with a sample dataset and a demo app. Together, they let you train and integrate your first model.
+* Now the ML Builder sets the number of the experiments automatically.
+* On the review model page, added new instructions explaining how to obtain the relative path to a remote CSV file.
+* We reviewed and improved the parameter descriptions of the public action of ML Builder Plugin v1.0.2.
+* Added a success message for connection string validation during the AI provider setup.
+
+### Bug fixes
+
+* Fixed how the locations list show when configuring a new workspace. Now ML Builder shows only the valid locations for the subscription.
+* Fixed the delete model button that was not appearing in certain use cases.
+* Fixed the duplicated **Set up environment** title in the homepage.
+
 ## Release Mar 25 2021
 
 ML Builder updates for the release of March 25, 2021.

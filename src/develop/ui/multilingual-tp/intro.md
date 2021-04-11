@@ -51,7 +51,7 @@ You can translate systems components. See the forum blog post [System Components
 
 You need to define at least one locale to be able to export the text resources from a system component.
 
-</dvi>
+</div>
 
 ## Send feedback
 

@@ -41,7 +41,8 @@ Protection available for the Android builds.
 * Code injection protection
 * Debugger protection
 * Emulator detection
-* Keylogger protection
+* Key logger protection
+* Screen reader detection
 * Screenshot protection
 * Task hijacking protection
 
@@ -53,6 +54,7 @@ Protection available for the iOS builds.
 * Repackaging detection
 * Code injection protection
 * Debugger protection
+* Screen mirroring detection
 * Screenshot protection
 
 ## How to use OutSystems AppShield
@@ -141,7 +143,53 @@ These are the values available in the AppShield configuration JSON.
 
 ## Obfuscation
 
-In the current version, native code from the shell and supported plugins are obfuscated. A crash from the core OutSystems components generates an obfuscated stack trace.
+In the current version, native code from the shell and supported plugins are obfuscated. A crash from an obfuscated code will generate an obfuscated stack trace.
+
+### Considerations
+
+Customized plugins might not work as-is with obfuscation.
+
+One common example is the usage of reflection to perform operations based on class/method names. Since obfuscation changes these names, the code might stop working as expected and even crash. This can occur not only in the Java code in the plugin, but also in the code from the libraries imported via Gradle or JAR/AAR files.
+
+Getting a `ClassNotFoundException` or `MethodNotFoundException` at runtime is a sure sign you're missing classes or methods, either because they were obfuscated and now have other names. Or, they were missing because of some misconfigured dependencies.
+
+Examples of deobfuscated exceptions that can be thrown:
+
+```
+java.lang.ClassNotFoundException: com.example.SomeClass
+    at java.lang.Class.classForName(Native Method)
+    at java.lang.Class.forName(Class.java:454)
+    at java.lang.Class.forName(Class.java:379)
+    ...
+```
+
+```
+java.lang.ClassNotFoundException: Didn't find class "com.example.SomeClass" on path: DexPathList[[zip file "/data/app/..., /system/lib, /system_ext/lib]]
+    at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:207)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+    ...
+```
+
+```
+java.lang.NoSuchMethodException: com.example.SomeClass.someMethod [class java.lang.String, int]
+    at java.lang.Class.getMethod(Class.java:2072)
+    at java.lang.Class.getMethod(Class.java:1693)
+    ...
+```
+
+```
+java.lang.AssertionError: illegal type variable reference
+    at libcore.reflect.TypeVariableImpl.resolve(TypeVariableImpl.java:111)
+    at libcore.reflect.TypeVariableImpl.getGenericDeclaration(TypeVariableImpl.java:125)
+    at libcore.reflect.TypeVariableImpl.hashCode(TypeVariableImpl.java:47)
+    at com.google.gson.reflect.TypeToken.[init](TypeToken.java:64)
+    ...
+```
+
+## Performance
+
+When the user launches a hardened app, the app performs multiple checks. Some examples of these checks are the root and repackaging detection. This makes the app take slightly more time to launch, especially when starting for the first time. The time to start varies depending on multiple factors, such as device hardware and the complexity of the app.
 
 ## Limitations
 
@@ -222,7 +270,7 @@ Applies to apps for Google Play Store that have app signing feature enabled.
 
 One of the security features of AppShield is repackaging detection. This protection prevents re-signing of the app package, but also causes incompatibility with the Google Play App Signing. You can fix this by providing information about the certificate in the AppShield settings.
 
-In the **Android section** of the Extensibility Configurations JSON, add **name** with `GooglePlayAppSigningCertificate` and the **value** with public key. Here is an example:
+In the **Android section** of the Extensibility Configurations JSON, add **name** with `GooglePlayAppSigningCertificate` and the **value** with the public key. Here is an example:
 
 
 ```
@@ -270,7 +318,7 @@ When editing the Extensibility Configurations in LifeTime, you need to encode th
 
 1. Open the console in Google Chrome developer tools.
 2. Run JavaScript code `encodeURIComponent("[public-key-certificate]")`.
-3. Copy the output of the command as the new value for the preference the **GooglePlayAppSigningCertificate** key.
+3. Copy the output of the command as the new value for the **GooglePlayAppSigningCertificate** key.
 
 
 Check out [Google Play App Signing](https://developer.android.com/studio/publish/app-signing#app-signing-google-play) on Google Android Development for more information about app signing.

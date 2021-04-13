@@ -526,6 +526,7 @@
     - href: extensibility-and-integration/mobile-plugins/intro.md
     - topics:
         - href: extensibility-and-integration/mobile-plugins/barcode/intro.md
+        - href: extensibility-and-integration/mobile-plugins/camera/intro.md
         - href: extensibility-and-integration/mobile-plugins/file-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/file-transfer-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/file-viewer-plugin/intro.md

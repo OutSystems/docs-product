@@ -15,3 +15,5 @@ To create a one-to-many relationship between two entities:
 Having an identifier attribute pointing to another entity automatically creates a relationship. You can see the relationships between entities if you have them in the same Entity Diagram.
 
 ![One-to-many relationship entity diagram](images/one-to-many-relationship-1.png)
+
+When you create relationships between entities in your module, you must define the referential integrity you want to use when deleting records. For more information on deletion rules, see [Delete Rules](delete-rules.md)

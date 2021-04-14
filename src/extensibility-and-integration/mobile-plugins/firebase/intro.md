@@ -1,15 +1,15 @@
 ---
-summary:
+summary: Use the Firebase-based plugins Analytics, Crashlytics, and Performance to implement common development patterns in your mobile apps. 
 tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
 ---
 
 # Firebase Plugins
 
-Firebase is a Google mobile development platform. It speeds up many of the common development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
+Firebase is a Google mobile development platform. It speeds up development many of the common development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
 
-* Firebase Analytics
-* Firebase Crashlytics
-* Firebase Performance
+* [Analytics Plugin](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)
+* [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)
+* [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ To use the Firebase plugins you meet the following requirements:
 
 To add a Firebase plugin to your module, follow these steps:
 
-1. Install the plugin and reference it in you module. See [Adding plugins](../intro.md#adding-plugins) for detailed instructions.
+1. Install the plugin and reference it in your module. See [Adding plugins](../intro.md#adding-plugins) for detailed instructions.
 
 2. Add the [Google services configuration file](#adding-google-services-configuration-file) to the module.
 
@@ -59,7 +59,7 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
 
     ![Resource settings for Firebase](images/firebase-resource-properties-single-ss.png?width=350)
 
-5. Repeat steps two and four for each environment, each time using different configuration and [target directory](#generating-target-directories-for-configuration-files).
+5. Repeat steps two and four for each environment, each time using a different configuration and [target directory](#generating-target-directories-for-configuration-files).
 
     ![Resource settings for Firebase](images/firebase-resource-properties-multiple-ss.png?width=350)
 

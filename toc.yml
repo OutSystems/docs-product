@@ -146,66 +146,83 @@
         - topics:
             - href: develop/ui/patterns/mobile/intro.md
             - topics:
-                - href: develop/ui/patterns/mobile/adaptive/columns.md
-                - href: develop/ui/patterns/mobile/adaptive/displayondevice.md
-                - href: develop/ui/patterns/mobile/adaptive/gallery.md
-                - href: develop/ui/patterns/mobile/adaptive/masterdetail.md
-                - href: develop/ui/patterns/mobile/content/accordion.md
-                - href: develop/ui/patterns/mobile/content/alert.md
-                - href: develop/ui/patterns/mobile/content/blankslate.md
-                - href: develop/ui/patterns/mobile/content/card.md
-                - href: develop/ui/patterns/mobile/content/cardbackground.md
-                - href: develop/ui/patterns/mobile/content/carditem.md
-                - href: develop/ui/patterns/mobile/content/cardsectioned.md
-                - href: develop/ui/patterns/mobile/content/chatmessage.md
-                - href: develop/ui/patterns/mobile/content/flipcontent.md
-                - href: develop/ui/patterns/mobile/content/floatingcontent.md
-                - href: develop/ui/patterns/mobile/content/listitemcontent.md
-                - href: develop/ui/patterns/mobile/content/section.md
-                - href: develop/ui/patterns/mobile/content/sectiongroup.md
-                - href: develop/ui/patterns/mobile/content/tag.md
-                - href: develop/ui/patterns/mobile/content/tooltip.md
-                - href: develop/ui/patterns/mobile/content/useravatar.md
-                - href: develop/ui/patterns/mobile/interaction/actionsheet.md
-                - href: develop/ui/patterns/mobile/interaction/animate.md
-                - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
-                - href: develop/ui/patterns/mobile/interaction/carousel.md
-                - href: develop/ui/patterns/mobile/interaction/datepicker.md
-                - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
-                - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
-                - href: develop/ui/patterns/mobile/interaction/floatingactions.md
-                - href: develop/ui/patterns/mobile/interaction/horizontalscroll.md
-                - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
-                - href: develop/ui/patterns/mobile/interaction/lightboximage.md
-                - href: develop/ui/patterns/mobile/interaction/notification.md
-                - href: develop/ui/patterns/mobile/interaction/map.md
-                - href: develop/ui/patterns/mobile/interaction/rangeslider.md
-                - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
-                - href: develop/ui/patterns/mobile/interaction/search.md
-                - href: develop/ui/patterns/mobile/interaction/sidebar.md
-                - href: develop/ui/patterns/mobile/interaction/stackedcards.md
-                - href: develop/ui/patterns/mobile/interaction/video.md
-                - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
-                - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
-                - href: develop/ui/patterns/mobile/navigation/pagination.md
-                - href: develop/ui/patterns/mobile/navigation/sectionindex.md
-                - href: develop/ui/patterns/mobile/navigation/submenu.md
-                - href: develop/ui/patterns/mobile/navigation/tabs.md
-                - href: develop/ui/patterns/mobile/navigation/timelineitem.md
-                - href: develop/ui/patterns/mobile/navigation/wizard.md
-                - href: develop/ui/patterns/mobile/numbers/badge.md
-                - href: develop/ui/patterns/mobile/numbers/counter.md
-                - href: develop/ui/patterns/mobile/numbers/iconbadge.md
-                - href: develop/ui/patterns/mobile/numbers/progressbar.md
-                - href: develop/ui/patterns/mobile/numbers/progresscircle.md
-                - href: develop/ui/patterns/mobile/numbers/progresscirclefraction.md
-                - href: develop/ui/patterns/mobile/utilities/aligncenter.md
-                - href: develop/ui/patterns/mobile/utilities/buttonloading.md
-                - href: develop/ui/patterns/mobile/utilities/centercontent.md
-                - href: develop/ui/patterns/mobile/utilities/margincontainer.md
-                - href: develop/ui/patterns/mobile/utilities/mouseevents.md
-                - href: develop/ui/patterns/mobile/utilities/swipeevents.md
-                - href: develop/ui/patterns/mobile/utilities/touchevents.md
+                - href: develop/ui/patterns/mobile/adaptive/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/adaptive/columns.md
+                    - href: develop/ui/patterns/mobile/adaptive/displayondevice.md
+                    - href: develop/ui/patterns/mobile/adaptive/gallery.md
+                    - href: develop/ui/patterns/mobile/adaptive/masterdetail.md
+            - topics:
+                - href: develop/ui/patterns/mobile/content/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/content/accordion.md
+                    - href: develop/ui/patterns/mobile/content/alert.md
+                    - href: develop/ui/patterns/mobile/content/blankslate.md
+                    - href: develop/ui/patterns/mobile/content/card.md
+                    - href: develop/ui/patterns/mobile/content/cardbackground.md
+                    - href: develop/ui/patterns/mobile/content/carditem.md
+                    - href: develop/ui/patterns/mobile/content/cardsectioned.md
+                    - href: develop/ui/patterns/mobile/content/chatmessage.md
+                    - href: develop/ui/patterns/mobile/content/flipcontent.md
+                    - href: develop/ui/patterns/mobile/content/floatingcontent.md
+                    - href: develop/ui/patterns/mobile/content/listitemcontent.md
+                    - href: develop/ui/patterns/mobile/content/section.md
+                    - href: develop/ui/patterns/mobile/content/sectiongroup.md
+                    - href: develop/ui/patterns/mobile/content/tag.md
+                    - href: develop/ui/patterns/mobile/content/tooltip.md
+                    - href: develop/ui/patterns/mobile/content/useravatar.md
+            - topics:
+                - href: develop/ui/patterns/mobile/interaction/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/interaction/actionsheet.md
+                    - href: develop/ui/patterns/mobile/interaction/animate.md
+                    - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
+                    - href: develop/ui/patterns/mobile/interaction/carousel.md
+                    - href: develop/ui/patterns/mobile/interaction/datepicker.md
+                    - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
+                    - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
+                    - href: develop/ui/patterns/mobile/interaction/floatingactions.md
+                    - href: develop/ui/patterns/mobile/interaction/horizontalscroll.md
+                    - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
+                    - href: develop/ui/patterns/mobile/interaction/lightboximage.md
+                    - href: develop/ui/patterns/mobile/interaction/notification.md
+                    - href: develop/ui/patterns/mobile/interaction/map.md
+                    - href: develop/ui/patterns/mobile/interaction/rangeslider.md
+                    - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
+                    - href: develop/ui/patterns/mobile/interaction/search.md
+                    - href: develop/ui/patterns/mobile/interaction/sidebar.md
+                    - href: develop/ui/patterns/mobile/interaction/stackedcards.md
+                    - href: develop/ui/patterns/mobile/interaction/video.md
+            - topics:
+                - href: develop/ui/patterns/mobile/navigation/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
+                    - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
+                    - href: develop/ui/patterns/mobile/navigation/pagination.md
+                    - href: develop/ui/patterns/mobile/navigation/sectionindex.md
+                    - href: develop/ui/patterns/mobile/navigation/submenu.md
+                    - href: develop/ui/patterns/mobile/navigation/tabs.md
+                    - href: develop/ui/patterns/mobile/navigation/timelineitem.md
+                    - href: develop/ui/patterns/mobile/navigation/wizard.md
+            - topics:
+                - href: develop/ui/patterns/mobile/numbers/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/numbers/badge.md
+                    - href: develop/ui/patterns/mobile/numbers/counter.md
+                    - href: develop/ui/patterns/mobile/numbers/iconbadge.md
+                    - href: develop/ui/patterns/mobile/numbers/progressbar.md
+                    - href: develop/ui/patterns/mobile/numbers/progresscircle.md
+                    - href: develop/ui/patterns/mobile/numbers/progresscirclefraction.md
+            - topics:
+                - href: develop/ui/patterns/mobile/utilities/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/utilities/aligncenter.md
+                    - href: develop/ui/patterns/mobile/utilities/buttonloading.md
+                    - href: develop/ui/patterns/mobile/utilities/centercontent.md
+                    - href: develop/ui/patterns/mobile/utilities/margincontainer.md
+                    - href: develop/ui/patterns/mobile/utilities/mouseevents.md
+                    - href: develop/ui/patterns/mobile/utilities/swipeevents.md
+                    - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md             
             - href: develop/ui/patterns/web/intro.md
             - topics:

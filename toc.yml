@@ -34,6 +34,9 @@
                 - href: develop/data/modeling/relationship/relationship-many-to-many.md
                 - href: develop/data/modeling/relationship/delete-rules.md
             - href: develop/data/modeling/index-create.md
+        - href: develop/data/edit/intro.md
+        - topics: 
+            - href: develop/data/edit/how-edit-data.md
         - href: develop/data/query/intro.md
         - topics:
             - href: develop/data/query/fetch-display.md

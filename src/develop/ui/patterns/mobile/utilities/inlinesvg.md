@@ -46,4 +46,4 @@ Using the example above, the results are as follows:
 | Property | Description |
 |---|---|
 | SVGCode (Text): Optional | SVG markup code that is appended onto the HTML.|
-| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Inline SVG wrapper. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Inline SVG UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Inline SVG UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Inline SVG wrapper. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Inline SVG UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Inline SVG UI styles being applied.</li></ul></p> |

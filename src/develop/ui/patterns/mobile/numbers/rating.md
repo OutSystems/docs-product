@@ -23,7 +23,7 @@ You can use the Rating UI Pattern to allow users to rate a particular item.
 
     By default, the pattern is already prepared to work as a 5-Star rating pattern. However, you can change the icons to hearts, smiles, thumbs, or any other content.
 
-1. On the **Properties** tab, from the **RatingValue** dropdown, enter the rating number you want displayed. In this example, we enter `7`.  
+1. On the **Properties** tab, from the **RatingValue** dropdown, enter the rating number you want displayed. In this example, we enter `2`.  
     
     ![](<images/rating-5-ss.png>)
 

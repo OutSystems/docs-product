@@ -48,7 +48,7 @@ You can use the Accordion UI Pattern to allow users expand and hide content when
 
 | **Property** |  **Description** | 
 |---|---|
-| IsOpen (Boolean): Optional  |  If set to True, when rendering, the Accordion Item is open. If set to False, the Accordion Item is closed. This is the default value.|  
+| IsOpen (Boolean): Optional  |  If set to True, when rendering, the Accordion Item is open. If set to False, the Accordion Item is closed. This is the default value. Keep in mind that the Accordion's contents are loaded even when they are not expanded.|  
 | IsDisable (Boolean): Optional  |  If set to True, the Accordion Item cannot be clicked. If set to False, the Accordion Item is clickable. This is the default value. |
 | ExtendedClass (Text): Optional  |  Add custom style classes to the Accordion Item UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Accordion Item UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Accordion Item UI styles being applied. </li></ul> |
 

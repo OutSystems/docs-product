@@ -3,7 +3,7 @@ Use Session Variables to store data server-side in a key-value format. Use it to
 
 <div class="info" markdown="1">
 
-INFO GOES HERE
+MY INFO GOES HERE
 
 </div>
 

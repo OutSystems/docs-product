@@ -13,7 +13,7 @@ OutSystems lets you build great and secure web and mobile apps. This is what you
 
 <div class="info" markdown="1">
 
-We've been working on this article. Please let us know how useful this new version is by voting.
+We are working on this article. Please let us know how useful this new version is by voting.
 
 </div>
 

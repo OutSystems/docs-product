@@ -226,6 +226,7 @@
                     - href: develop/ui/patterns/mobile/utilities/inlinesvg.md
                     - href: develop/ui/patterns/mobile/utilities/margincontainer.md
                     - href: develop/ui/patterns/mobile/utilities/mouseevents.md
+                    - href: develop/ui/patterns/mobile/utilities/separator.md
                     - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                     - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md             

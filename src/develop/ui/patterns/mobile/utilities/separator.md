@@ -1,5 +1,5 @@
 ---
-tags: runtime-traditionalweb; 
+tags: runtime-mobileandreactiveweb;   
 summary: Separator distributes content into clear groups and ease visual organization.
 ---
 
@@ -7,7 +7,7 @@ summary: Separator distributes content into clear groups and ease visual organiz
 
 You can use the Separator UI Pattern to separate content clearly and ease visual organization.
 
-  ![](<images/separator-1.png>)
+  ![Separator widget example](<images/separator-example.png>)
 
 **How to use the Separator UI Pattern**
 
@@ -15,15 +15,17 @@ You can use the Separator UI Pattern to separate content clearly and ease visual
 
     The Separator widget is displayed.
 
-    ![](<images/separator-5-ss.png>)
+    ![Separator](<images/separator-widget-ss.png>)
 
-1. From the Toolbox, drag the Separator widget into the Main Content area of your application's screen, where you want to separate content. In this example, we drag the widget in between an image and some text.
+1. From the Toolbox, drag the Separator widget into the Main Content area of your application's screen, where you want to separate content. In this example, we drag the widget in between 2 images.
 
-    ![](<images/separator-7-ss.png>)
+    ![Drag widget to screen](<images/separator-drag-ss.png>)
 
-1. On the **Properties** tab, set the relevant (optional) properties, for example, the color and the amount of space separating the content.
+    By default, the pattern displays a horizontal line with the application’s primary color. 
 
-    ![](<images/separator-8-ss.png>)
+1. On the **Properties** tab, you can customize the Separator's look and feel by setting any of the optional properties, for example, the color and the amount of space separating the content.
+
+    ![](<images/separator-prop-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

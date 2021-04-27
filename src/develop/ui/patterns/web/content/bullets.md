@@ -33,4 +33,4 @@ After following these steps and publishing the module, you can test the pattern 
 
 | **Property** |  **Description** |  
 |---|---|
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Bullets UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Bullets UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Bullets UI styles being applied. </li></ul> |
+| ExtendedClass (Text): Optional  |  Add custom style classes to the Bullets UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ Adds the _myclass_ style to the Bullets UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Bullets UI styles being applied. </li></ul> |

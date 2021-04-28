@@ -78,6 +78,8 @@ When configuring CSP take into account the following risks of misconfiguration:
 
 * **Too permissive policies**: Be especially cautious when allowing resources to be loaded from everywhere (by using `*` in the domain list). Hackers may take advantage of links, scripts, or other resources in your applications to redirect users to malicious pages.
 
+* **Duplicated configuration**: On on-premises environments, do not set the CSP outside the the OutSystems Platform (directly in the IIS, for example). This will cause unespected results, since the CSP directives will be included twice.
+
 ## Directives reference
 
 The list of available directives to configure Content Security Policy in OutSystems is described in the table below.

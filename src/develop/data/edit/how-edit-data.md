@@ -5,7 +5,7 @@ tags:
 
 # How to edit the data of an entity in Service Studio
 
-Before checking the rest of this article, check out
+Learn how to add a record or row, remove a record or row, and change an attribute or cell in Service Studio.
 
 ## Add a record or row { #add }
 

@@ -9,7 +9,7 @@ You can restrict end-user access to specific areas, operations or data of an app
 
 By validating their user ID or Roles you can control access to screens, screen elements or actions. It's also possible to restrict access to data depending on the logged in user or their role.
 
-## Restricting access to screens and actions
+## Restricting access to screens, processes and actions
 
 To restrict access to a screen of an app, in the **Roles** property of the screen select the end user Roles that can view the screen.
 

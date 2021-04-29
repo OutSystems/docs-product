@@ -1,5 +1,5 @@
 ---
-summary: Learn how to edit your app's data using Service Studio, to test your app or prepare a demo with meaningful data.
+summary: Learn how to edit your app's data using Service Studio, to test your app, or to prepare a demo with meaningful data.
 tags:
 en_title: Edit Data
 ---
@@ -8,7 +8,9 @@ en_title: Edit Data
 
 After you [create entities to persist data](../modeling/entity-create.md), you can edit your app's data without leaving Service Studio.
 
-Add, remove, and change records of **entities** during app development, so you can:
+![Edit data in Service Studio](images/edit-data-ss.png)
+
+Add, remove, and change records of **entities** during app development, enables you to do the following:
 
 * Test your app with real and meaningful data to ensure your apps works correctly once it reaches your production environment.
 
@@ -16,7 +18,7 @@ Add, remove, and change records of **entities** during app development, so you c
 
 <div class="info" markdown="1">
 
-This topics relates to editing data of Entities, to learn how to edit data in **Static Entities**, check [Static Entities](../modeling/entity-static.md) and [Create and Use an Enumerate](../modeling/enumerate-create.md) topics.
+This topics relates to editing data of **Entities**, to learn how to edit data in **Static Entities**, check [Static Entities](../modeling/entity-static.md) and [Create and Use an Enumerate](../modeling/enumerate-create.md) topics.
 
 </div>
 
@@ -41,7 +43,9 @@ In Service Studio, you can edit the data of **entities** that meet the following
 
 ## Adding changes
 
-To start editing an entity's data in Service Studio, open the module where the entity exists. Then in the **Data** tab, double-click the entity, or right-click the entity and select **View or Edit Data**.
+To start editing an entity's data, open the module where the entity exists. Then in the **Data** tab, double-click the entity, or right-click the entity and select **View or Edit Data**.
+
+![Open edit data in Service Studio](images/open-edit-data-ss.png)
 
 <div class="info" markdown="1">
 
@@ -52,11 +56,16 @@ Rows represent entity records, and cells represent attributes.
 
 In the entity Data screen, you can then [add rows](how-edit-data.md#add), [remove rows](how-edit-data.md#remove), and [modify cells of existing rows](how-edit-data.md#modify) to the entity. Changes aren't committed immediately, you can prepare several changes before applying them.
 
-Service Studio adds an asterisk, **\***, to the first cell of rows that contain pending changes.<br/>
+Service Studio adds an asterisk, **\***, to the first cell of rows that contain pending changes.
+
+![Pending changes for a row](images/pending-changes-ss.png)
+
 If the change applies to specific cells of a row, Service Studio highlights that cell's background.
 
 Service Studio continually validates your pending changes, and highlights cells with a red outline if it detects an issue.<br/>
 Check the issue by hovering over the highlighted cell. Fix these issues before applying your changes.
+
+![Get details on issues with pending changes](images/pedning-changes-validation-ss.png)
 
 If you don't apply or discard your pending changes, Service Studio keeps them saved in your machine.
 

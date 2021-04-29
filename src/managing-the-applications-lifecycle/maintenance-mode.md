@@ -53,6 +53,8 @@ If you have a **self-managed infrastructure**, you can enable maintenance mode i
 
 To enable maintenance mode in an environment, do the following:
 
+1. Go to your LifeTime console (`https://<your_lifetime_server>/lifetime`).
+
 1. In the **Infrastructure** tab, click the **Edit Environment** link for the environment you want to enable the maintenance mode.
 
 ![edit environment](images/infrastructure-edit-env-lt.png)
@@ -74,6 +76,8 @@ In OutSystems Cloud, your infrastructure is fully managed by OutSystems. After p
 </div>
 
 After you finish a maintenance operation in your **self-managed infrastructure**, disable maintenance mode in the environment:
+
+1. Go to your LifeTime console (`https://<your_lifetime_server>/lifetime`).
 
 1. In the **Infrastructure** tab, click the **Edit Environment** link for the environment you want to disable the maintenance mode.
 

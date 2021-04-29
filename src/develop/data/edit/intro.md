@@ -89,6 +89,3 @@ To discard changes to a specific row, right-click the row and select **Discard t
 To discard all your changes, select **Discard** and then confirm that you really want to permanently discard your changes.
 
 ![Confirm you want to discard changes](images/confirm-discard-changes-ss.png)
-
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide')</pre>

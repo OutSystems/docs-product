@@ -11,7 +11,7 @@ Integration Builder is available as an [Early Access Program](https://www.outsys
 
 </div>
 
-Integration Builder a Software as a Service (SaaS) that allows you to implement complex integrations between an OutSystems application and your enterprise Systems of Records like SAP or Salesforce. 
+Integration Builder is a Software as a Service (SaaS) that allows you to implement complex integrations between an OutSystems application and your enterprise Systems of Records like SAP or Salesforce. 
 
 Allowing business to break enterprise data silos and use them across the enterprise ecosystem (cross-departmental) is fundamental in modern times, where companies want to:
 

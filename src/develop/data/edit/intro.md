@@ -72,12 +72,23 @@ If you don't apply or discard your pending changes, Service Studio keeps them sa
 ## Applying changes
 
 Once you're done with your changes, confirm you want to change the data by selecting **Apply**.<br/>
+
+![](images/apply-changes-ss.png)
+
 Service Studio then creates and sends SQL statements to your platform database, changing one record at a time.
 
 After trying to apply all your changes, Service Studio lets you know if all changes were successful, or if any of the changes failed.
+
+![Changes applied successfully](images/changes-successfully-ss.png)
+![Changes failed to be applied](images/changes-failed-ss.png)
 
 ## Discarding changes
 
 To discard changes to a specific row, right-click the row and select **Discard this change**.
 
 To discard all your changes, select **Discard** and then confirm that you really want to permanently discard your changes.
+
+![Confirm you want to discard changes](images/confirm-discard-changes-ss.png)
+
+<pre class="script">
+template('MindTouch/IDF3/Views/Guide')</pre>

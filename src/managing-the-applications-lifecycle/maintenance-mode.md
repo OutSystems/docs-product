@@ -39,23 +39,25 @@ Enabling maintenance mode in an environment affects only the communication betwe
 
 When disabling maintenance mode, LifeTime resumes the communication with the environment, and the environment is fully synchronized.
 
-LifeTime tracks the operations of enabling and disabling the maintenance mode in the [audit logs](monitor-and-troubleshoot/monitor-usage-with-audit-logs.md).
-
-## Enable maintenance mode in an environment
+LifeTime tracks the enabling/disabling maintenance mode operations in the [audit logs](monitor-and-troubleshoot/monitor-usage-with-audit-logs.md).
 
 <div class="info" markdown="1">
 
-In OutSystems Cloud, your infrastructure is fully managed by OutSystems. When performing a maintenance operation in one of your Cloud environments, OutSystems enables maintenance mode accordingly.
+In OutSystems Cloud, your infrastructure is managed by OutSystems. When performing a maintenance operation in one of your Cloud environments, OutSystems enables/disables maintenance mode accordingly.
+
+In case you have a hybrid infrastructure, you can enable/disable maintenance mode for your self-managed environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020).
 
 </div>
 
-If you have a **self-managed infrastructure**, you can enable maintenance mode in an environment before the execution of a planned maintenance operation. After the operation finishes, you must disable the maintenance mode to get the environment synchronized with LifeTime again.
+## Enable maintenance mode in an environment
+
+You can enable maintenance mode in your **self-managed environments** before the execution of a planned maintenance operation. After the operation finishes, you must disable the maintenance mode to get the environment synchronized with LifeTime again.
 
 To enable maintenance mode in an environment, do the following:
 
 1. Go to your LifeTime console (`https://<your_lifetime_server>/lifetime`).
 
-1. In the **Infrastructure** tab, click the **Edit Environment** link for the environment you want to enable the maintenance mode.
+1. In the **Infrastructure** tab, click the **Edit Environment** link for the environment you want to enable the maintenance mode. For self-managed environments in OutSystems Cloud, go to the **Environments** tab, and select the environment.
 
 ![edit environment](images/infrastructure-edit-env-lt.png)
 
@@ -69,17 +71,11 @@ Maintenance mode is now enabled, and LifeTime doesn't communicate with the envir
 
 ## Disable maintenance mode in an environment
 
-<div class="info" markdown="1">
-
-In OutSystems Cloud, your infrastructure is fully managed by OutSystems. After performing a maintenance operation in one of your Cloud environments, OutSystems disables maintenance mode accordingly.
-
-</div>
-
-After you finish a maintenance operation in your **self-managed infrastructure**, disable maintenance mode in the environment:
+After you finish the maintenance operation in your **self-managed environment**, disable maintenance mode:
 
 1. Go to your LifeTime console (`https://<your_lifetime_server>/lifetime`).
 
-1. In the **Infrastructure** tab, click the **Edit Environment** link for the environment you want to disable the maintenance mode.
+1. In the **Infrastructure** tab, click the **Edit Environment** link for the environment you want to disable the maintenance mode. For self-managed environments in OutSystems Cloud, go to the **Environments** tab, and select the environment.
 
 1. Click the **Disable maintenance mode** link.
 

@@ -67,26 +67,13 @@ Check the issue by hovering over the highlighted cell. Fix these issues before a
 
 ![Get details on issues with pending changes](images/pedning-changes-validation-ss.png)
 
-If you don't apply or discard your pending changes, Service Studio keeps them saved in your machine.
+If needed, you can [discard your changes](how-edit-data.md#discard) all at once, or one row at time.
 
-## Applying changes
+Once you [apply your changes](how-edit-data.md#apply), Service Studio creates and sends SQL statements to your platform database, changing one record at a time.
 
-Once you're done with your changes, confirm you want to change the data by selecting **Apply**.<br/>
-
-![](images/apply-changes-ss.png)
-
-Service Studio then creates and sends SQL statements to your platform database, changing one record at a time.
-
-After trying to apply all your changes, Service Studio lets you know if all changes were successful, or if any of the changes failed.
+After trying to apply all your changes in the database, Service Studio lets you know if all changes were successful, or if any of the changes failed.
 
 ![Changes applied successfully](images/changes-successfully-ss.png)
 ![Changes failed to be applied](images/changes-failed-ss.png)
 
-## Discarding changes
-
-To discard changes to a specific row, right-click the row and select **Discard this change**.
-
-To discard all your changes, select **Discard** and then confirm that you really want to permanently discard your changes.
-
-![Confirm you want to discard changes](images/confirm-discard-changes-ss.png)
-
+If you don't apply or discard your pending changes, Service Studio keeps them saved in your machine.

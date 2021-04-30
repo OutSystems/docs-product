@@ -63,7 +63,7 @@ To modify a record's attribute or cell, follow these steps:
 
 ## Apply changes { #apply}
 
-Once you're done with your changes, confirm you want to change the data by selecting **Apply**.</br>
+Once you're done with your changes, confirm you want to change the data by selecting **Apply**.<br/>
 You won't be able to apply changes if you have cells highlighted in red.
 
 ![](images/apply-changes-ss.png)
@@ -74,7 +74,7 @@ After trying to apply all your changes in the database, Service Studio lets show
 
     ![Changes applied successfully](images/changes-successfully-ss.png)
 
-* If some changes fail Service Studio shows you an error message and highlights the rows with changes that weren't applied.</br> To understand the causes of the errors, hover over the asterisk, **\***, in the first cell of each highlighted cell, or select **view error report** to generate a text file with all the errors.
+* If some changes fail Service Studio shows you an error message and highlights the rows with changes that weren't applied.<br/> To understand the causes of the errors, hover over the asterisk, **\***, in the first cell of each highlighted cell, or select **view error report** to generate a text file with all the errors.
 
     ![Changes failed to be applied](images/changes-failed-ss.png)
 

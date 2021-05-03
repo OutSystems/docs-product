@@ -46,7 +46,9 @@ You can find the issue and the cause in the Service Center logs by looking for "
 
 ## Situations when the user must install a new build
 
-Even though every time you publish the app the platform makes the changes automatically available to the app, some changes require installation of an updated app package on the user device. This happens when you **change** one of the following:
+Even though every time you publish the app the platform makes the changes automatically available to the app, some changes require installation of an updated app package on the user device. If you have the app of the build type **Debug**, uninstall it from the device before installing a new version of an Android. This guarantees the new app features work correctly.
+
+You need a new app build when you **change** one of the following:
 
 * App name
 * App icon
@@ -59,19 +61,12 @@ Even though every time you publish the app the platform makes the changes automa
 
 These changes may negatively affect the user experience in the outdated apps, but the issues are automatically fixed when the user upgrades to the latest app package. In the case of plugins, it's a good practice to include fallbacks in the apps to avoid crashing until the latest app version is on the device. 
 
-<div class="warning" markdown="1">
-
-When installing a new version of an Android app already installed on the device and generated using the build type "Debug", uninstall the previous version from the device before installing the new one. This guarantees the new features work correctly.
-
-</div>
-
-After the first mobile app generation, every time you click “1-Click Publish”, OutSystems generates a new app package in the situations listed above. You can then download those app packages via Service Studio, Service Center, and LifeTime. This guarantees that the latest app package available to download from the environment is synchronized with the development of the app.
+After the first mobile app generation, every time you click **1-Click Publish**, OutSystems generates a new app package listed in this section. You can then download those app packages via Service Studio, Service Center, and LifeTime. This guarantees that the latest app package available to download from the environment is synchronized with the development of the app.
 
 <div class="warning" markdown="1">
 
-## Conditions about automatic and manual generation 
-* Automatic generation only is triggered when you add a Cordova plugin as a resource and reference it in the Extensibility Configuration. 
-If you have any resources used by the plugin in the application that doesn't match the above (1) condition the automatic generation will not be triggered, hence manual generation is needed.
-* A good example of this is when the SSL Pinning resource (pinning.json) was changed in the application (which is an external plugin resource), hence, needing a manual generation.
+## Obligatory manual build after changing external plugin configuration 
 
-</div>
+MABS automatically generates a new build after you add a Cordova plugin as a resource and reference it in the Extensibility Configurations. If you have changes to your app that are outside of the app resources, you need to **manually start the generation of a new build**. For example, if you change the SSL Pinning resource file pinning.json in the as external plugin resource, you need to run the build creation manually.
+
+</warning>

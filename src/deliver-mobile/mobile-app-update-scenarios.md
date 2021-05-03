@@ -69,4 +69,4 @@ After the first mobile app generation, every time you click **1-Click Publish**,
 
 MABS automatically generates a new build after you add a Cordova plugin as a resource and reference it in the Extensibility Configurations. If you have changes to your app that are outside of the app resources, you need to **manually start the generation of a new build**. For example, if you change the SSL Pinning resource file pinning.json in the as external plugin resource, you need to run the build creation manually.
 
-</warning>
+</div>

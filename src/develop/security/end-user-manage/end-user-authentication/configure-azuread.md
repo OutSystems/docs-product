@@ -66,7 +66,7 @@ On the Azure side, create a new enterprise application from a template and confi
 
     ![Search for OutSystems Azure AD application](images/azuread-search-application.png)
 
-1. A sidebar with options opens at the right side of the page. Define a name for your Azure application in the **Name** field (C) and click **Add** (D).
+1. A sidebar with options opens at the right side of the page. Define a name for your Azure application in the **Name** field (C) and click **Create** (D).
 
     Wait a few seconds while Azure creates your application.
 

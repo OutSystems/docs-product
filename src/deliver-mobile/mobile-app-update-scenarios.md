@@ -5,7 +5,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps
 
 # Mobile App Update Scenarios
 
-After you click on “1-Click Publish” the changes made to the mobile app automatically become available to the users with no need to install a new app version. The mobile apps running on the user devices automatically detect the updates when the apps establish a connection to the server. Only mobile app packages generated from an environment receive the new developments and changes published in that same environment.
+After you click the **1-Click Publish** button, the updates to the mobile app that you deploy to a production environment automatically become available to the users with no need to install a new app version. The mobile app running on the user devices detect the updates when the app connects to the server. Only mobile app packages generated from an environment receive the new developments and changes published in that same environment.
 
 ## Detecting a new app version
 
@@ -21,9 +21,9 @@ When there's a new version on the server, the app updates itself and notifies th
 
 **Seamless upgrade.** After detecting that a new version is available, the app starts caching all the new resources in the background. Once the app caches the resources, the next navigation event triggers the update. This can be, for example, a screen transition. Once the app is fully updated and the destination screen loads, the app notifies the user about the update with a feedback message. If the update takes time, the app shows the splash screen before navigating to the destination screen. This is a seamless upgrade.
 
-**Attention-requiring upgrade.** An attention-requiring upgrade may happen when the user is on a screen that's changed in the new app version. If the user does something in the app that requires interaction with the server, that interaction may fail due to the upgrade requirements. For example, tapping a button to save data calls a Server Action, but because that action now has a different signature, the action fails. The user then sees a message that a new version is available and required to proceed. Clicking that message updates the app. After the update, the app loads the updated screen and shows the message that the app is up to date.
+**Attention-requiring upgrade.** An attention-requiring upgrade may happen when the user is on a screen that's changed in the new app version. If the user does something in the app that requires interaction with the server, that interaction may fail due to the upgrade requirements. For example, tapping a button to save data calls a Server Action, but because that action now has a different signature, the action fails. The user then sees a message that a new app version is available and required to proceed. Clicking the message updates the app. After the update, the app loads the updated screen and shows the update confirmation message.
 
-When there's a Form widget on the screen, the message about the required update also informs the user that the information they entered in the Form will be lost, because the app needs to reload. The data saved in local storage and Client Variables isn't affected.
+When there's a Form widget on the screen, the message about the required update also informs the user that the information they entered in the Form will be lost, because the app needs to reload. The data saved in local storage and Client Variables remains unaffected.
 
 <div class="info" markdown="1">
 
@@ -44,7 +44,7 @@ When the error happens while updating the local storage data model, possibly bec
 
 You can find the issue and the cause in the Service Center logs by looking for "Upgrade failed - rolling back to previous application version". The information in the log should help you discover the cause of the upgrade failure and implement a fix in a new version of the app.
 
-## Situations when the user must install a new build
+## Situations when the user must install a new build { #required-new-build }
 
 Even though every time you publish the app the platform makes the changes automatically available to the app, some changes require installation of an updated app package on the user device. If you have the app of the build type **Debug**, uninstall it from the device before installing a new version of an Android. This guarantees the new app features work correctly.
 
@@ -53,7 +53,7 @@ You need a new app build when you **change** one of the following:
 * App name
 * App icon
 * Primary color of the app
-* External resource
+* External resource, including any configuration files of mobile plugins
 * Plugin or plugin configuration
 * Configurations for a mobile platform
 * Entry module or the name of the entry module name 
@@ -61,12 +61,12 @@ You need a new app build when you **change** one of the following:
 
 These changes may negatively affect the user experience in the outdated apps, but the issues are automatically fixed when the user upgrades to the latest app package. In the case of plugins, it's a good practice to include fallbacks in the apps to avoid crashing until the latest app version is on the device. 
 
-After the first mobile app generation, every time you click **1-Click Publish**, OutSystems generates a new app package listed in this section. You can then download those app packages via Service Studio, Service Center, and LifeTime. This guarantees that the latest app package available to download from the environment is synchronized with the development of the app.
-
 <div class="warning" markdown="1">
 
-## Obligatory manual build after changing external plugin configuration 
-
-MABS automatically generates a new build after you add a Cordova plugin as a resource and reference it in the Extensibility Configurations. If you have changes to your app that are outside of the app resources, you need to **manually start the generation of a new build**. For example, if you change the SSL Pinning resource file pinning.json in the as external plugin resource, you need to run the build creation manually.
+By design, the platform ignores changes in the external configuration files of non-core components as a trigger to generate a new build. If you're using **plugins that depend on external configurations**, start the app package build manually and then distribute the builds as usual.
 
 </div>
+
+After the first mobile app generation, every time you click **1-Click Publish**, OutSystems generates a new app package in the situations listed above. You can then download those app packages via Service Studio, Service Center, and LifeTime. This guarantees that the latest app package available to download from the environment is synchronized with the development of the app.
+
+When installing a new version of an Android app already installed on the device and generated using the build type **Debug**, uninstall the previous version from the device before installing the new one. This guarantees the new features work correctly.

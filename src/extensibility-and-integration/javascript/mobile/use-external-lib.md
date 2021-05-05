@@ -1,9 +1,13 @@
 ---
 summary: How to call externally defined JavaScript code in OutSystems.
-tags: runtime-mobileandreactiveweb
+tags: runtime-mobileandreactiveweb,javascript
 ---
 
 # Use JavaScript Code from an External Library
+
+How can I use JavaScript Code from an External Library?
+
+## Solution
 
 <div class="info" markdown="1">
 
@@ -33,3 +37,7 @@ var numMonths = 30 * 12;      // number of payments months
 // calculate mortgage monthly payment
 var monthlyPayment = getMonthlyPayment(initialAmount, numMonths, intRate);
 ```
+
+## Video Example
+
+[![](http://img.youtube.com/vi/xmvxkkkDL5E/0.jpg)](http://www.youtube.com/watch?v=xmvxkkkDL5E "")

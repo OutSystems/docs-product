@@ -19,7 +19,7 @@ Here are the known issues with PWA.
 
 ### Overriding the Extensibility Configurations in LifeTime isn't working
 
-There's an issue that prevents LifeTime from overriding the PWA Extensibility Configurations. The development team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
+There's an issue that prevents LifeTime from overriding the PWA Extensibility Configurations. Upgrade to Platform Server 11.11.0 to resolve the issue.
 
 ### Staging of the PWA toggle value in LifeTime isn't working
 

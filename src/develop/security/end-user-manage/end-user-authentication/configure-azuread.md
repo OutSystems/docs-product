@@ -126,6 +126,19 @@ Back in the Users application, upload the XML file you downloaded in the previou
 
 1. Click **Save**.
 
+    **Note**: A warning message about enabling SSO between app types is displayed. **Enabling this functionality is optional.**
+
+    ![SSO warning](images/azuread-warning.png)
+
+    To enable IdP in Reactive Apps, do the following:
+    1. Go to the Service Center management console of your OutSystems environment.
+    1. Go to the **Administration** section and select the **Security** tab.
+    1. In the **Common Login** section, select the **Single Sign-On Between App Types** checkbox, and click **Apply**.
+
+        ![Applications Authentication](images/azuread-sso.png)
+
+    For more information about application authentication, see [Configure App Authentication](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md). 
+
 ### Assign user or group to Azure application { #assign-user-azure-app }
 
 In the Azure portal, assign a user or a group to the Azure application you created.

@@ -639,14 +639,14 @@
     - topics:
         - href: extensibility-and-integration/log-levels-reference.md
 
-    #SAP
-    - href: extensibility-and-integration/sap/intro.md
-    - topics:
-        - href: extensibility-and-integration/sap/integrate-with-a-sap-system.md
-        - href: extensibility-and-integration/sap/configure-a-sap-connection-at-runtime.md
-        - href: extensibility-and-integration/sap/execute-sap-stateful-calls.md
-        - href: extensibility-and-integration/sap/execute-sap-stateless-calls.md
-        - href: extensibility-and-integration/sap/troubleshoot-sap-remote-functions.md
+    # #SAP
+    # - href: extensibility-and-integration/sap/intro.md
+    # - topics:
+    #     - href: extensibility-and-integration/sap/integrate-with-a-sap-system.md
+    #     - href: extensibility-and-integration/sap/configure-a-sap-connection-at-runtime.md
+    #     - href: extensibility-and-integration/sap/execute-sap-stateful-calls.md
+    #     - href: extensibility-and-integration/sap/execute-sap-stateless-calls.md
+    #     - href: extensibility-and-integration/sap/troubleshoot-sap-remote-functions.md
 
     # Integration Studio
     - href: extensibility-and-integration/integration-studio/getting-started/intro.md

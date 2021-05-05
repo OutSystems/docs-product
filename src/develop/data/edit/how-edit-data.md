@@ -7,7 +7,7 @@ tags:
 
 Learn how to add a record or row, remove a record or row, and change an attribute or cell in Service Studio.
 
-To understand how editing data on Service Studio works and the prerequisites check the [Edit data while developing article](intro.md).
+To understand how editing data on Service Studio works and the prerequisites check the [edit data while developing article](intro.md).
 
 ## Add a record or row { #add }
 
@@ -15,9 +15,13 @@ To add a record or row, follow these steps:
 
 1. In the module where the entity exists, go to the **Data** tab, and double-click the entity to **View or Edit Data**.
 
+    ![Open edit data in Service Studio](images/open-edit-data-ss.png)
+
 1. Select **Add row**.
 
 1. If one or more cells' has a red outline after the previous step, it probably means they're mandatory attributes. [Define each one of those cells](#modify).
+
+    ![Mandatory fields must be set before applying changes](images/mandatory-fields-ss.png)
 
 1. [Optional] [Define each one of the remaining cells](#modify).
 
@@ -31,7 +35,12 @@ To remove a record or row, follow these steps:
 
 1. In the module where the entity exists, go to the **Data** tab, and double-click the entity to **View or Edit Data**.
 
+    ![Open edit data in Service Studio](images/open-edit-data-ss.png)
+
 1. Right-click the row you want to remove, and select **Delete row**.
+
+    ![Delete a row](images/delete-row-ss.png)
+    ![Pending deletion of a row](images/pending-delete-row-ss.png)
 
 1. You can prepare more than one change at a time. Once you're done with your changes [apply them](#apply).
 
@@ -40,6 +49,8 @@ To remove a record or row, follow these steps:
 To modify a record's attribute or cell, follow these steps:
 
 1. In the module where the entity exists, go to the **Data** tab, and double-click the entity to **View or Edit Data**.
+
+    ![Open edit data in Service Studio](images/open-edit-data-ss.png)
 
 1. Double-click an empty space inside the cell you want to change.
 
@@ -58,6 +69,8 @@ To modify a record's attribute or cell, follow these steps:
     * For a static entity identifier cell, select a value from the dropdown.
 
 1. If the cell has a red outline, hover over the highlighted cell to learn about the issue, and then fix the issue.
+
+    ![Get details on issues with pending changes](images/pedning-changes-validation-ss.png)
 
 1. You can prepare more than one change to the entity to the entity at a time. Once you're done with your changes [apply them](#apply).
 

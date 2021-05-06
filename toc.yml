@@ -53,7 +53,7 @@
         - href: develop/data/excel-bootstrap.md
         - href: develop/data/structure-create-use.md
         - href: develop/data/site.md
-        - href: develop/data/session.md
+        # - href: develop/data/session.md
         - href: develop/data/share-client-var-between-app.md
         - href: develop/data/resources.md
         - href: develop/data/caching.md

@@ -227,88 +227,88 @@
                     - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                     - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md             
-            - href: develop/ui/patterns/web/intro.md
-            - topics:
-                - href: develop/ui/patterns/web/content/intro.md
-                - topics:
-                    - href: develop/ui/patterns/web/content/accordion/accordion.md
-                    - href: develop/ui/patterns/web/content/alert/alert.md
-                    - href: develop/ui/patterns/web/content/balloon/balloon.md
-                    - href: develop/ui/patterns/web/content/blankslate.md
-                    - href: develop/ui/patterns/web/content/bullets.md
-                    - href: develop/ui/patterns/web/content/card.md
-                    - href: develop/ui/patterns/web/content/cardbackground.md
-                    - href: develop/ui/patterns/web/content/cardsectioned.md
-                    - href: develop/ui/patterns/web/content/carousel.md
-                    - href: develop/ui/patterns/web/content/chatmessage.md
-                    - href: develop/ui/patterns/web/content/lightboximage.md
-                    - href: develop/ui/patterns/web/content/modal.md
-                    - href: develop/ui/patterns/web/content/panel.md
-                    - href: develop/ui/patterns/web/content/section.md
-                    - href: develop/ui/patterns/web/content/tag.md
-                    - href: develop/ui/patterns/web/content/tooltip.md
-                - href: develop/ui/patterns/web/controls/intro.md
-                - topics:
-                    - href: develop/ui/patterns/web/controls/animatedlabel.md
-                    - href: develop/ui/patterns/web/controls/buttongroup.md
-                    - href: develop/ui/patterns/web/controls/datepicker.md
-                    - href: develop/ui/patterns/web/controls/dropdown.md
-                    - href: develop/ui/patterns/web/controls/dropdownselect.md
-                    - href: develop/ui/patterns/web/controls/fileupload/fileupload.md
-                    - href: develop/ui/patterns/web/controls/floatingactions.md
-                    - href: develop/ui/patterns/web/controls/inputwithicon.md
-                    - href: develop/ui/patterns/web/controls/rangeslider.md
-                    - href: develop/ui/patterns/web/controls/rangesliderinterval.md
-                    - href: develop/ui/patterns/web/controls/search-balloon.md
-                    - href: develop/ui/patterns/web/controls/search.md
-                    - href: develop/ui/patterns/web/controls/timepicker.md
-                    - href: develop/ui/patterns/web/controls/togglebutton.md
-                    - href: develop/ui/patterns/web/controls/video.md
-                - href: develop/ui/patterns/web/layout/intro.md
-                - topics:
-                    - href: develop/ui/patterns/web/layout/layout-login.md
-                    - href: develop/ui/patterns/web/layout/layout-loginsplit.md
-                    - href: develop/ui/patterns/web/layout/layout-popup.md
-                    - href: develop/ui/patterns/web/layout/layout-sidemenu.md
-                    - href: develop/ui/patterns/web/layout/layout-topmenu.md
-                    - href: develop/ui/patterns/web/layout/loginform.md
-                - href: develop/ui/patterns/web/navigation/intro.md
-                - topics:
-                    - href: develop/ui/patterns/web/navigation/breadcrumbs.md
-                    - href: develop/ui/patterns/web/navigation/navigationbar.md
-                    - href: develop/ui/patterns/web/navigation/sectionindex.md
-                    - href: develop/ui/patterns/web/navigation/sidebar.md
-                    - href: develop/ui/patterns/web/navigation/tabs/tabs.md
-                    - href: develop/ui/patterns/web/navigation/timeline.md
-                    - href: develop/ui/patterns/web/navigation/wizard.md
-                - href: develop/ui/patterns/web/numbers/intro.md
-                - topics:
-                    - href: develop/ui/patterns/web/numbers/badge.md
-                    - href: develop/ui/patterns/web/numbers/counter.md
-                    - href: develop/ui/patterns/web/numbers/iconbadge.md
-                    - href: develop/ui/patterns/web/numbers/progressbar.md
-                    - href: develop/ui/patterns/web/numbers/progresscircle.md
-                    - href: develop/ui/patterns/web/numbers/userinitials.md
-                - href: develop/ui/patterns/web/responsive/intro.md
-                - topics:
-                    - href: develop/ui/patterns/web/responsive/displayondevice.md
-                    - href: develop/ui/patterns/web/responsive/loadonvisible.md
-                    - href: develop/ui/patterns/web/responsive/moveondevice.md
-                    - href: develop/ui/patterns/web/responsive/responsivetable.md
-                - href: develop/ui/patterns/web/structure/intro.md
-                - topics:
-                    - href: develop/ui/patterns/web/structure/aligncenter.md
-                    - href: develop/ui/patterns/web/structure/columns.md
-                    - href: develop/ui/patterns/web/structure/gallery.md
-                - href: develop/ui/patterns/web/utilities/intro.md
-                - topics:
-                    - href: develop/ui/patterns/web/utilities/animate.md
-                    - href: develop/ui/patterns/web/utilities/charactercount.md
-                    - href: develop/ui/patterns/web/utilities/fieldset.md
-                    - href: develop/ui/patterns/web/utilities/flipcontent.md
-                    - href: develop/ui/patterns/web/utilities/iframe.md
-                    - href: develop/ui/patterns/web/utilities/separator.md
-                    - href: develop/ui/patterns/web/utilities/stackedicon.md
+            # - href: develop/ui/patterns/web/intro.md
+            # - topics:
+            #     - href: develop/ui/patterns/web/content/intro.md
+            #     - topics:
+            #         - href: develop/ui/patterns/web/content/accordion/accordion.md
+            #         - href: develop/ui/patterns/web/content/alert/alert.md
+            #         - href: develop/ui/patterns/web/content/balloon/balloon.md
+            #         - href: develop/ui/patterns/web/content/blankslate.md
+            #         - href: develop/ui/patterns/web/content/bullets.md
+            #         - href: develop/ui/patterns/web/content/card.md
+            #         - href: develop/ui/patterns/web/content/cardbackground.md
+            #         - href: develop/ui/patterns/web/content/cardsectioned.md
+            #         - href: develop/ui/patterns/web/content/carousel.md
+            #         - href: develop/ui/patterns/web/content/chatmessage.md
+            #         - href: develop/ui/patterns/web/content/lightboximage.md
+            #         - href: develop/ui/patterns/web/content/modal.md
+            #         - href: develop/ui/patterns/web/content/panel.md
+            #         - href: develop/ui/patterns/web/content/section.md
+            #         - href: develop/ui/patterns/web/content/tag.md
+            #         - href: develop/ui/patterns/web/content/tooltip.md
+            #     - href: develop/ui/patterns/web/controls/intro.md
+            #     - topics:
+            #         - href: develop/ui/patterns/web/controls/animatedlabel.md
+            #         - href: develop/ui/patterns/web/controls/buttongroup.md
+            #         - href: develop/ui/patterns/web/controls/datepicker.md
+            #         - href: develop/ui/patterns/web/controls/dropdown.md
+            #         - href: develop/ui/patterns/web/controls/dropdownselect.md
+            #         - href: develop/ui/patterns/web/controls/fileupload/fileupload.md
+            #         - href: develop/ui/patterns/web/controls/floatingactions.md
+            #         - href: develop/ui/patterns/web/controls/inputwithicon.md
+            #         - href: develop/ui/patterns/web/controls/rangeslider.md
+            #         - href: develop/ui/patterns/web/controls/rangesliderinterval.md
+            #         - href: develop/ui/patterns/web/controls/search-balloon.md
+            #         - href: develop/ui/patterns/web/controls/search.md
+            #         - href: develop/ui/patterns/web/controls/timepicker.md
+            #         - href: develop/ui/patterns/web/controls/togglebutton.md
+            #         - href: develop/ui/patterns/web/controls/video.md
+            #     - href: develop/ui/patterns/web/layout/intro.md
+            #     - topics:
+            #         - href: develop/ui/patterns/web/layout/layout-login.md
+            #         - href: develop/ui/patterns/web/layout/layout-loginsplit.md
+            #         - href: develop/ui/patterns/web/layout/layout-popup.md
+            #         - href: develop/ui/patterns/web/layout/layout-sidemenu.md
+            #         - href: develop/ui/patterns/web/layout/layout-topmenu.md
+            #         - href: develop/ui/patterns/web/layout/loginform.md
+            #     - href: develop/ui/patterns/web/navigation/intro.md
+            #     - topics:
+            #         - href: develop/ui/patterns/web/navigation/breadcrumbs.md
+            #         - href: develop/ui/patterns/web/navigation/navigationbar.md
+            #         - href: develop/ui/patterns/web/navigation/sectionindex.md
+            #         - href: develop/ui/patterns/web/navigation/sidebar.md
+            #         - href: develop/ui/patterns/web/navigation/tabs/tabs.md
+            #         - href: develop/ui/patterns/web/navigation/timeline.md
+            #         - href: develop/ui/patterns/web/navigation/wizard.md
+            #     - href: develop/ui/patterns/web/numbers/intro.md
+            #     - topics:
+            #         - href: develop/ui/patterns/web/numbers/badge.md
+            #         - href: develop/ui/patterns/web/numbers/counter.md
+            #         - href: develop/ui/patterns/web/numbers/iconbadge.md
+            #         - href: develop/ui/patterns/web/numbers/progressbar.md
+            #         - href: develop/ui/patterns/web/numbers/progresscircle.md
+            #         - href: develop/ui/patterns/web/numbers/userinitials.md
+            #     - href: develop/ui/patterns/web/responsive/intro.md
+            #     - topics:
+            #         - href: develop/ui/patterns/web/responsive/displayondevice.md
+            #         - href: develop/ui/patterns/web/responsive/loadonvisible.md
+            #         - href: develop/ui/patterns/web/responsive/moveondevice.md
+            #         - href: develop/ui/patterns/web/responsive/responsivetable.md
+            #     - href: develop/ui/patterns/web/structure/intro.md
+            #     - topics:
+            #         - href: develop/ui/patterns/web/structure/aligncenter.md
+            #         - href: develop/ui/patterns/web/structure/columns.md
+            #         - href: develop/ui/patterns/web/structure/gallery.md
+            #     - href: develop/ui/patterns/web/utilities/intro.md
+            #     - topics:
+            #         - href: develop/ui/patterns/web/utilities/animate.md
+            #         - href: develop/ui/patterns/web/utilities/charactercount.md
+            #         - href: develop/ui/patterns/web/utilities/fieldset.md
+            #         - href: develop/ui/patterns/web/utilities/flipcontent.md
+            #         - href: develop/ui/patterns/web/utilities/iframe.md
+            #         - href: develop/ui/patterns/web/utilities/separator.md
+            #         - href: develop/ui/patterns/web/utilities/stackedicon.md
 
         # Navigation
         - href: develop/ui/navigation/intro.md
@@ -317,11 +317,11 @@
             - href: develop/ui/navigation/pass-information-between-screens.md
             - href: develop/ui/navigation/ui-flow.md
 
-        # Multilingual UI
-        - href: develop/ui/multilingual/intro.md
-        - topics:
-            - href: develop/ui/multilingual/multilingual-web.md
-            - href: develop/ui/multilingual/translations-editor.md
+        # # Multilingual UI
+        # - href: develop/ui/multilingual/intro.md
+        # - topics:
+        #     - href: develop/ui/multilingual/multilingual-web.md
+        #     - href: develop/ui/multilingual/translations-editor.md
 
         # Multilingual Technical Preview
         - href: develop/ui/multilingual-tp/intro.md
@@ -337,12 +337,12 @@
         - href: develop/logic/expression-editor.md
         - href: develop/logic/ai-assisted-dev.md
         - href: develop/logic/actions.md
-        - href: develop/logic/action-web.md
+        # - href: develop/logic/action-web.md
         - href: develop/logic/screen-block-lifecycle-events.md
         - href: develop/logic/list-iterate.md
         - href: develop/logic/screen-update-list-items.md
-        - href: develop/logic/screen-partial-refresh.md
-        - href: develop/logic/emails.md
+        # - href: develop/logic/screen-partial-refresh.md
+        # - href: develop/logic/emails.md
 
         - href: develop/logic/exceptions/intro.md
         - topics:

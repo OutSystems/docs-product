@@ -131,8 +131,11 @@ Back in the Users application, upload the XML file you downloaded in the previou
     ![SSO warning](images/azuread-warning.png)
 
     To enable IdP in Reactive Apps, do the following:
+    
     1. Go to the Service Center management console of your OutSystems environment.
+
     1. Go to the **Administration** section and select the **Security** tab.
+
     1. In the **Common Login** section, select the **Single Sign-On Between App Types** checkbox, and click **Apply**.
 
        ![Applications Authentication](images/azuread-sso.png)

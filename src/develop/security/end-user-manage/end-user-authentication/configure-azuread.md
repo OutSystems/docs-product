@@ -135,7 +135,7 @@ Back in the Users application, upload the XML file you downloaded in the previou
     1. Go to the **Administration** section and select the **Security** tab.
     1. In the **Common Login** section, select the **Single Sign-On Between App Types** checkbox, and click **Apply**.
 
-        ![Applications Authentication](images/azuread-sso.png)
+       ![Applications Authentication](images/azuread-sso.png)
 
     For more information about application authentication, see [Configure App Authentication](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md). 
 

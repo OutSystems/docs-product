@@ -48,7 +48,7 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
 
 2. Right-click the **Resources** folder and select **Import Resource**. The **Import Resource** dialog opens.
 
-3. Select the [google-services.zip firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
+3. Select the [google-services.zip Firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
 
     ![Resources folder in Service Studio](images/resources-folder-ss.png?width=350)
 
@@ -73,7 +73,7 @@ Add the files **GoogleService-Info.plist** and **google-services.json** in a zip
 
 A Firebase Plugin requires that you supply configuration files in the app file resources. The mobile apps commonly have different identifiers in different environments, so you need to generate target directories for each environment.
 
-To get the target directory, concatenate the **app identifier** and **.fierbase**. Here are examples for three environments with different app identifiers.
+To get the target directory, concatenate the **app identifier** and **.firebase**. Here are examples for three environments with different app identifiers.
 
 | Environment | App identifier | Target directory |
 | - | - | - |

@@ -1,6 +1,6 @@
 ---
 summary: LifeTime is the centralized console for managing the infrastructure, environments, applications, IT users, and security.
-tags: runtime-traditionalweb; support-Application_Lifecycle; support-Cloud_Platform; support-devOps; support-Infrastuture_Architecture-overview
+tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps; support-Infrastuture_Architecture-overview
 ---
 
 # Manage Your OutSystems Infrastructure

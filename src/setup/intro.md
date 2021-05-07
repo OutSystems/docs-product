@@ -59,7 +59,7 @@ If you selected to setup OutSystems infrastructure using our Cloud offering you 
 
 Nevertheless, when managing a single environment or infrastructure on the OutSystems cloud, you should take into account the following considerations:
 
-* Currently, our cloud provider (Amazon) does not support customizing the time zone for SQL Server. Conversions need to be done programmatically from UTC to the desired time zone.
+* Currently, our cloud provider (Amazon) does not support customizing the time zone. The timezone is always UTC. Conversions need to be done programmatically from UTC to the desired time zone.
 
 * Custom database objects such as stored procedures are not supported. You can either implement the same logic using "Advanced Queries" (standard SQL) or through Extensions (by implementing your own C# code).
 

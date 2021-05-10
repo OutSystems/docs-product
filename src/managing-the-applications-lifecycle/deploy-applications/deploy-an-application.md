@@ -72,6 +72,8 @@ If the deployment is **aborted**, a "Retry Plan" link appears in the deployment 
 **Note:** If you're deploying a mobile app that is already [configured to generate the mobile app package](<../../deliver-mobile/generate-distribute-mobile-app/intro.md>), be aware that some changes you do in your application might cause the generation of a new application package. For example, changing the icon or the main color of the application.  
 [Check here](../../deliver-mobile/mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build) all the situations that require the user to install a new application package.
 
+**Note:** If the chosen application has added new [Entity Attributes](<../../ref/lang/auto/Class.Entity%20Attribute.final.md>) to existing entities that contain millions of entries, it is possible that the deployment may take considerable time in the target environment, due to how [Default Values](<../../ref/data/database/default-values-on-database.md>) are added for each entry of the entity. Starting in Platform Server 11.11.1, the addition of default values is much faster in SQL Server Enterprise and in any edition of Oracle.
+
 
 ## Deploying to a different target environment { #change-target-environment }
 

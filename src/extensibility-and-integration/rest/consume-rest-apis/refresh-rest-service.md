@@ -13,7 +13,7 @@ To change the services consumed from a REST Web Service or to modify the list of
 
     ![](images/ss-rest-refresh-1.png)
 
-3. In the Refresh REST API popup, click **Yes** to proceed and select the methods to consume.
+3. In the Refresh REST API popup, click **Yes**. 
 
     ![](images/ss-rest-refresh-confirm-2.png)
 
@@ -23,7 +23,9 @@ To change the services consumed from a REST Web Service or to modify the list of
 
 5. Select the methods you would like to consume. Note that the list of methods you select overwrites any previously defined methods for the service. 
 
-    The format is method name [/relative endpoint] and, where applicable, (outdated). Where:
+    The format is **method name [/relative endpoint]** and, if applicable, **(outdated)**. 
+    
+    Where:
     * method name = the method you may select to import or update
     * [/relative endpoint] = endpoint relative to the base URL
     * (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification

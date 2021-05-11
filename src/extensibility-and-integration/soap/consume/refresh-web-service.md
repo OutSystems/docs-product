@@ -14,13 +14,12 @@ To change the services consumed  from a SOAP Web Service or to modify the list o
     ![](images/soap-refresh-menu.png)
 
 1. In the Refresh SOAP Web Service popup, click **Yes**. 
-* 
+
     ![](images/soap-refresh-confirm.png)
 
 1. Type or confirm the URL or local file path for the WSDL, and then click **Consume**. Service Studio re-reads the WSDL and displays a selectable list of available methods to consume.
 
     ![](images/soap-refresh-WSDL.png)
-
 
 1. Select all methods you want to consume. Note that:
 

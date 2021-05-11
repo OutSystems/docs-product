@@ -245,17 +245,15 @@
         - href: develop/logic/expression-editor.md
         - href: develop/logic/ai-assisted-dev.md
         - href: develop/logic/actions.md
-        # - href: develop/logic/action-web.md
         - href: develop/logic/screen-block-lifecycle-events.md
         - href: develop/logic/list-iterate.md
         - href: develop/logic/screen-update-list-items.md
-        # - href: develop/logic/screen-partial-refresh.md
-        # - href: develop/logic/emails.md
 
         - href: develop/logic/exceptions/intro.md
         - topics:
             - href: develop/logic/exceptions/analyze-logs.md
             - href: develop/logic/exceptions/handling-mechanism.md
+            
     # Use Processes
     - href: develop/processes/intro.md
     - topics: 

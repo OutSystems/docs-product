@@ -23,21 +23,22 @@ To change the services consumed from a REST Web Service or to modify the list of
 
 5. Select the methods you would like to consume. 
 
-Note: 
-* The methods you select overwrite previously consumed methods for the service. Be sure to select all methods you want to consume, even if they haven't changed.
-* The following settings are NOT overridden: 
-    * Basic authentication
-    * Advanced settings (Date Format, On Before Request and On After Response)
-    * HTTP headers
+    Note: 
+    * The methods you select overwrite previously consumed methods for the service. Be sure to select all methods you want to consume, even if they haven't changed.
+    * The following settings are NOT overridden: 
+        * Basic authentication
+        * Advanced settings (Date Format, On Before Request and On After Response)
+        * HTTP headers
 
-The method format displays as **method name [/relative endpoint]** and, if applicable, **(outdated)**. 
-    
+    The method format displays as **method name [/relative endpoint]** and, if applicable, **(outdated)**. 
+
     Where:
     * method name = the method you may select to import or update
-    * [/relative endpoint] = endpoint relative to the base URL
-    * (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification
+    *  [/relative endpoint] = endpoint relative to the base URL
+    *  (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification
 
     ![](images/ss-rest-refresh-methods-4.png)
+
 
 6. Click **Finish** to add the selected methods.  
 

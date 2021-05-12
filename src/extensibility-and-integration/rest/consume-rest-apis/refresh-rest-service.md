@@ -40,5 +40,5 @@ To change the services consumed from a REST Web Service or to modify the list of
     ![](images/ss-rest-refresh-methods-4.png)
 
 
-6. Click **Finish** to add the selected methods.  
+6. Click **Finish** to add the selected methods. In this example, all available methods are selected. **AllGoalKeepers** is outdated, which means it's no longer in the specification and, therefore, can't be be selected or consumed.  
 

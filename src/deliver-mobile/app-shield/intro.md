@@ -5,27 +5,63 @@ tags: support-application_development; runtime-mobile;
 
 # Harden the protection of mobile apps with AppShield
 
-OutSystems AppShield lets you harden the protection of your native Android and iOS apps. OutSystems AppShield integrates with the Mobile Apps Build Service (MABS) version 6.1 and adds app protection at runtime and at rest.
+OutSystems AppShield is a licensed plugin available from Forge. AppShield lets you harden the protection of your native Android and iOS apps. AppShield integrates with the Mobile Apps Build Service (MABS) version 6.3 and adds app protection at runtime and at rest.
 
 <div class="info" markdown="1">
 
-To use OutSystems AppShield, you need to have a license. If you haven't got it already, contact the sales team.
+To use OutSystems AppShield, you must have a license. If you don't already have a license, contact the sales team.
+
+</div>
+
+By using AppShield, you can prevent:
+
+* Code from being injected into your app
+* Users from taking screenshots of the data
+* Data from being hijacked 
+
+Before you install and use AppShield, it's important to understand the release cycle and how it improves security. For example, suppose you have a mobile banking application and your app data must always be secure, but your version of AppShield isn't current. OutSystems regularly updates AppShield, and strongly recommends that you always install the latest version of AppShield in your environment. Then release a new build of your app to your users.
+
+To ensure your app users have protection against the latest security vulnerabilities, OutSystems provides continuous updates to AppShield.
+
+## Understanding the AppShield life cycle
+
+To identify the AppShield plugin releases, OutSystems uses the following tags:
+
+* Stable 
+* Current
+* Expiring
+* Discontinued
+
+The following list describes the tags:
+
+* **Stable and Current** - This is the active version and has the up-to-date protection. OutSystems **supports** this version and highly recommends that you install and use this version.
+* **Stable** - You can use this version, but the protection isn't current. OutSystems **doesn't support** this version. You can build an app, but you get a warning message when you use the app.
+* **Stable and Expiring** - This version becomes discontinued in three months. OutSystems **doesn't support** this version, but you can build an app with it. If you use this version, a warning message displays advising you to update to the most current version before the expiration date. Once this version is **discontinued**, you won't be able to build your app with it.
+* **Discontinued** - This plugin version is out of date. OutSystems security mechanisms prevent you from creating a new build for your users. OutSystems **doesn't support** this version.
+
+The following diagram shows how release versions work in AppShield.
+
+![AppShield release life cycle](images/life-cycle-dia.png?width=800)
+
+<div class="warning" markdown="1">
+
+To keep your apps and data secure, OutSystems recommends that you always use the current version of the AppShield plugin. Go to the [Versions tab of the plugin Forge page](https://www.outsystems.com/forge/component-versions/9379) to get the current version. 
 
 </div>
 
 ## Prerequisites
 
-To protect your apps with AppShield, you need to meet the following requirements.
+To ensure the integrity and protection of your apps with AppShield, you must meet the following requirements.
 
 * You installed the AppShield plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge. 
 * You have a license for AppShield.
-* You're using MABS 6.1 or later. Check out [MABS and mobile operating systems lifecycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for more information about the supported operating systems.
+* You're using MABS 6.3 or later. Check out [MABS and mobile operating systems life cycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for more information about the supported operating systems.
 
-Also note:
+Also note the following:
 
 * You need to rebuild and redistribute the mobile apps protected with AppShield.
 * The app file size increases after hardening the security.
-* MABS takes more time to create a hardened build.  
+* MABS takes more time to create a hardened build.
 
 ## Supported features
 

@@ -253,7 +253,7 @@
         - topics:
             - href: develop/logic/exceptions/analyze-logs.md
             - href: develop/logic/exceptions/handling-mechanism.md
-            
+
     # Use Processes
     - href: develop/processes/intro.md
     - topics: 
@@ -388,7 +388,6 @@
         - href: deliver-mobile/generate-distribute-mobile-app/limited-group-end-users.md
 
         # Generate and Publish Your Mobile App to the Mobile App Stores
-       
         - href: deliver-mobile/generate-distribute-mobile-app/publish-app-stores.md
         - topics:
             - href: deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md

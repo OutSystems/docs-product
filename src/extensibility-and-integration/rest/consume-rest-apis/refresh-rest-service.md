@@ -23,9 +23,11 @@ To change the services consumed from a REST Web Service or to modify the list of
 
 5. Select the methods you would like to consume. 
 
-    Note: 
+    Note:
+    
     * The methods you select overwrite previously consumed methods for the service. Be sure to select all methods you want to consume, even if they haven't changed.
-    * The following settings are NOT overridden when you refresh: 
+    * The following settings are NOT overridden when you refresh:
+            
         * Basic authentication
         * Advanced settings (Date Format, On Before Request and On After Response)
         * HTTP headers
@@ -33,6 +35,7 @@ To change the services consumed from a REST Web Service or to modify the list of
     The method format displays as **method name [/relative endpoint]** and, if applicable, **(outdated)**. 
 
     Where:
+    
     * method name = the method you may select to consume or update
     *  [/relative endpoint] = endpoint relative to the base URL
     *  (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification

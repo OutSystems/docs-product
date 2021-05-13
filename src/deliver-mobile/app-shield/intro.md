@@ -35,7 +35,7 @@ To identify the AppShield plugin releases, OutSystems uses the following tags:
 The following list describes the tags:
 
 * **Stable and Current** - This is the active version and has the up-to-date protection. OutSystems **supports** this version and highly recommends that you install and use this version.
-* **Stable** - You can use this version, but the protection isn't current. OutSystems **doesn't support** this version. You can build an app, but you get a warning message when you use the app.
+* **Stable** - You can use this version, but the protection isn't current. OutSystems **doesn't support** this version. You can build an app, but you get a warning message when you try to build the app.
 * **Stable and Expiring** - This version becomes discontinued in three months. OutSystems **doesn't support** this version, but you can build an app with it. If you use this version, a warning message displays advising you to update to the most current version before the expiration date. Once this version is **discontinued**, you won't be able to build your app with it.
 * **Discontinued** - This plugin version is out of date. OutSystems security mechanisms prevent you from creating a new build for your users. OutSystems **doesn't support** this version.
 

@@ -5,10 +5,6 @@ tags: runtime-mobileandreactiveweb
 
 # Use JavaScript Code from an External Library
 
-How can I use JavaScript Code from an External Library?
-
-## Solution
-
 <div class="info" markdown="1">
 
 OutSystems doesn't recommend using JavaScript libraries that directly manipulate the DOM, such as jQuery. Such libraries can break Reactive and Mobile apps and make them difficult to maintain.

@@ -6,6 +6,12 @@ tags: support-Database
 
 When changing the data model of your applications, the changes are not immediately reflected in the database. This only happens when you deploy the application, and is done in a way that ensures no data is lost.
 
+<div class="info" markdown="1">
+
+If you cut and paste an entity in Service Studio, it will generate new keys which in turn creates a new table in the database. This means that if the entity has data in the database, that data will be lost in the pasted entity.
+
+</div>
+
 This topic explains how OutSystems handles the following:
 
 * Deleting an Attribute

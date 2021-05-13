@@ -5,7 +5,7 @@ tags: support-Integrations_Extensions-featured
 
 # Consume One or More REST API Methods
 
-Make sure you gather all the information you need from the REST API documentation before starting.
+Make sure you gather all the information you need from the REST API documentation before starting. You can also take a quick video tour about [Consuming a REST API in 10 minutes with OutSystems](https://youtu.be/gNyWIeJYfG0).
 
 In Service Studio you can:
 

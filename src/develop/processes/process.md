@@ -28,7 +28,7 @@ Anyway, when you're editing your process flow, all of the process activities ava
 
 ## Launching a Process
 
-In your application, a process may be either **automatically launched** when an entity is created, or **explicitly launched** in an action flow of your actions. In the first case, simply set the `Launch On` process property with the Create entity action.
+In your application, a process may be either **automatically launched** when an entity record is created, or **explicitly launched** in an action flow of your actions. In the first case, simply set the `Launch On` process property with the CreateEntity (for example, CreateCustomer) action.
 
 When a process is automatically launched as result of a Create entity action, an input parameter with the entity identifier is automatically added to the process so that you know which created entity launched that process.
 
@@ -47,7 +47,7 @@ If you are using an Oracle or DB2 database, commit the transaction before launch
 
 When a process is launched a process instance is created and executed starting at the **Start** element of its flow. The process flow is then followed and each process activity found in the path has an **activity instance** created and executed.
 
-If you have a cycle in your process flow, each time the same process activity is found a new instance of it is created and executed.
+If you have a cycle in your process flow, each time the same process activity is found a new instance is created and executed.
 
 You may add business logic to validate your process instance execution, for example, when the process is launched, to validate whether the process instance can be executed.
 

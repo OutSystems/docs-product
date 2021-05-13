@@ -37,7 +37,7 @@ To override the Extensibility Configurations of your mobile app for a specific e
 
 Now, when a new mobile app package is generated in this environment, the custom configurations will override the default configurations defined in the application module. Also, the custom configurations will be kept for the environment after new application deployments.
 
-## Know issue with the JSON size limit in LifeTime Extensibility Configuration
+## Known issue with the JSON size limit in LifeTime Extensibility Configuration
 
 <div class="info" markdown="1">
 

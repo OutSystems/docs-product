@@ -17,11 +17,11 @@ Google Maps isn’t free. You must always buy an API key. For more info on getti
 
 1. In Service Studio, in the Toolbox, search for `Map`.
 
-    The Maps widget is displayed.
+    The Map widget is displayed.
 
     ![Map in the Service Studio toolbar](<images/map-1-ss.png>)
 
-1. From the Toolbox, drag the Maps widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the Map widget into the Main Content area of your application's screen.
 
     ![Map pattern in the preview screen](<images/map-2-ss.png>)
 

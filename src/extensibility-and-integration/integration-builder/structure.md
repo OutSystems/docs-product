@@ -23,7 +23,7 @@ For each entity of the external system you get Server Actions in the service mod
 * `Create<Entity>` — Create an entity record in the external system with the provided data.
 * `Get<Entity>` — Get the data of an entity record with the given identifier.
 * `Update<Entity>` — Update the data of an entity record with the given identifier.
-* `Count<Entity>s` — Count the number of entity records that fulfill the provided filter conditions.
+* `Count<Entity>s` — Count the number of entity records that fulfill the provided filter conditions. Note: SharePoint Online integrations don't include this action.
 * `Search<Entity>s` — Get a list of entity records that fulfill the provided filter conditions. The list of results supports paging and custom ordering.
 * `Delete<Entity>` — Delete an entity record in the external system.
 
@@ -48,6 +48,12 @@ BasicFilters (List of BasicFilter)
 
     EntityAttributeType = `DateTime`, `Number`, `Text`, etc.  
     FilterOperator = `Equal`, `GreaterThan`, `StringContains`, `EndsWith`, `EndsWith_CaseInsensitive`, etc.
+
+    <div class="info" markdown="1">
+
+     Note: Don't use `CaseInsentitve` filter operator with SharePoint Online integrations. Doing so causes an error.
+
+    </div>
 
     Combine one or more of these basic filters to produce your final filter condition. For example, consider a Customer entity of the external system with a CustomerName attribute. For example, to search for customers whose name starts with "John" (case insensitive), use the following BasicFilter:
 

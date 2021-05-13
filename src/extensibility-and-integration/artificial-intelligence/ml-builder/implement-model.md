@@ -75,7 +75,7 @@ After you reference the plugin, create logic that asks your model for prediction
     In the example, the action requires an input parameter of the data type **SampleCustomerData**, which is then the **Data** for **JSONSerializeCustomer**.
   
 
-2.  Send the data to the model by using **Logic** > **Service Actions** > **MLBuilderPlugin** > **ModelScore** > **GetAttributePrediction** action with **JSONSerializeCustomer.JSON** as the **ScoreInputs** value.
+2.  Send the data to the model by using **Logic** > **Service Actions** > **MLBuilderPlugin** > **ModelScore** > **GetAttributePrediction** action with the value **JSONSerializeCustomer.JSON** in the **RecordToPredictInJSON** property.
 
     ![Calling action to query the prediction model](images/server-action-model-ss.png?width=500)
 
@@ -130,15 +130,15 @@ The available service actions are in **Logic** > **Service Actions** > **MLBuild
 
 Here is more information about the parameters you can use in the ML Builder plugin actions.
 
-| Name               | Type   | Action                 | Data                 | Description                                                   |
-| ------------------ | ------ | ---------------------- | -------------------- | ------------------------------------------------------------- |
-| **ErrorMessage**   | Output | All                    | Text                 | If the call fails, the parameter returns the error details.   |
-| **IsSuccess**      | Output | All                    | Boolean              | Flag telling if the call was successful.                      |
-| **ModelName**      | Input  | All                    | Text                 | The name of the model that must match the name in ML Builder. |
-| **ScoreInputs**    | Input  | GetAttributePrediction | Text                 | A JSON with the information to query the model.               |
-| **ScoreResult**    | Output | All                    | ModelScore Structure | Data structure with the results of a scored model.            |
-| **TextToClassify** | Input  | GetTextClassification  | Text List            | Text you classify with the text classification model.         |
-| **TopPrediction**  | Output | All                    | PredictionItem List  | Data structure with the top-scored result of a model.         |
+| Name                      | Type   | Action                 | Data                 | Description                                                   |
+| ------------------------- | ------ | ---------------------- | -------------------- | ------------------------------------------------------------- |
+| **ErrorMessage**          | Output | All                    | Text                 | If the call fails, the parameter returns the error details.   |
+| **IsSuccess**             | Output | All                    | Boolean              | Flag telling if the call was successful.                      |
+| **ModelName**             | Input  | All                    | Text                 | The name of the model that must match the name in ML Builder. |
+| **RecordToPredictInJSON** | Input  | GetAttributePrediction | Text                 | A JSON with the information to query the model.               |
+| **ScoreResult**           | Output | All                    | ModelScore Structure | Data structure with the results of a scored model.            |
+| **TextToClassify**        | Input  | GetTextClassification  | Text List            | Text you classify with the text classification model.         |
+| **TopPrediction**         | Output | All                    | PredictionItem List  | Data structure with the top-scored result of a model.         |
 
 ### Structures
 

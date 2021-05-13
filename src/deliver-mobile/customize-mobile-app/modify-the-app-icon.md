@@ -30,7 +30,7 @@ To change the default icon and use your own icon image, providing multiple versi
 
     ![](images/image4.PNG)
 
-1. For each mobile platform, specify the size (iOS) and density (Android) and the correspondent icon location in the ZIP folders. Ensure that you define icons for all size and densities available, otherwise, you'll get an error (the example below is just for reference). Check the [JSON template for the icons](<#icons-json-template>) to avoid mistakes.
+1. For each mobile platform, specify the size (iOS) and density (Android) and the correspondent icon location in the ZIP folders, also mentioning in the path if the icon is inside of a folder inside the .zip file. Ensure that you define icons for all size and densities available, otherwise, you'll get an error (the example below is just for reference). Check the [JSON template for the icons](<#icons-json-template>) to avoid mistakes.
 
     ![](images/image5.PNG)
 

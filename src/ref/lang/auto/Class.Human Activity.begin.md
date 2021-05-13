@@ -10,6 +10,14 @@ Human Activity is not available in Service Modules because this activity require
 
 If no configuration is done, the Human Activity is assigned to all end users, that is, it is displayed in the [Taskbox](<../../../develop/processes/intro.md#using-the-taskbox>) of each end user until it is executed by one of them. However, to force the assignment of a Human Activity to a specific end user, simply set the `User` property to the desired end user. For advanced cases, you may set an expression that returns the user that handles the activity, using the expression editor.
 
+To improve the end users experience while executing these activities, each Human Activity definition can be enriched with additional information, such as `Detail` about each activity instance and `Instructions` on how to execute it. In Service Studio, this can be achieved by filling the End-User Information properties:
+
+![Human Activity properties](images/process-human-activity-properties-ss.png)
+
+This information will be available in the application Taskbox. In the activities list and activity detail inside the built-in taskbox it will be displayed like this:
+
+![Human Activity Taskbox](images/process-human-activity-taskbox.png)
+
 ## End the Activity on Entity Events
 
 If the execution of the human activity is to be automatically ended after an event occurs over an entity, the kind of event must be set in the `Close On` property with one of the following entity actions: **Create&lt;Entity&gt;** or **Update&lt;Entity&gt;**.

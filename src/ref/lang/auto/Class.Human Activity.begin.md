@@ -1,20 +1,20 @@
 When designing the process flow of your process, you can add work to be carried out by the end user. This behavior is implemented through the **Human Activity** process activity, which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
 
-The Human Activity allows you to specify and assign a work to be carried out by the end users in your application. Once the process flow execution reaches a Human Activity the end user or end users are informed (in their [Taskbox](<../../../develop/processes/intro.md#using-the-taskbox>)) of the work that has to be carried out. Then, one of them executes the activity and signals that it has been done in the Taskbox, and the Human Activity execution finishes and the process flow execution continues to the next process activity in the flow path.
+The Human Activity allows you to specify and assign a work to be carried out by the end users in your application. Once the process flow execution reaches a Human Activity the end user or end users are informed (in their [Taskbox](<../../../develop/processes/intro.md#using-the-taskbox>)) of the work that has to be carried out. Then, one of them executes the activity and signals in the Taskbox that the activity has been done, and the Human Activity execution finishes. The process flow execution continues to the next process activity in the flow path.
 
 A Human Activity can have input parameters, output parameters and [callback actions](<../../../develop/processes/actions-callback/actions-activities-callback.md>).
 
 Human Activity is not available in Service Modules because this activity requires user interface.
 
-## Assigning a Human Activity to the End Users
+## Assigning a Human Activity to end users
 
-If no configuration is done, the Human Activity is assigned to all end users, that is, it is displayed in the [Taskbox](<../../../develop/processes/intro.md#using-the-taskbox>) of each end user until it is executed by one of them. However, to force the assignment of a Human Activity to a specific end user, simply set the `User` property to the desired end user. For advanced cases, you may set an expression that returns the user that handles the activity, using the expression editor.
+If no configuration is done, the Human Activity is assigned to all end users, that is, it is displayed in the [Taskbox](<../../../develop/processes/intro.md#using-the-taskbox>) of each end user until it's executed by one of them. However, to force the assignment of a Human Activity to a specific end user, set the `User` property to the desired end user. For advanced cases, you may set an expression that returns the user that handles the activity, using the expression editor.
 
-To improve the end users experience while executing these activities, each Human Activity definition can be enriched with additional information, such as `Detail` about each activity instance and `Instructions` on how to execute it. In Service Studio, this can be achieved by filling the End-User Information properties:
+To improve the end users experience while executing these activities, you can provide the details of the Human Activity and the instructions on how to execute it. For this, select the Human Activity instance in the flow path, and set the `Detail` and `Instructions` properties under **End-User Information**:
 
 ![Human Activity properties](images/process-human-activity-properties-ss.png)
 
-This information will be available in the application Taskbox. In the activities list and activity detail inside the built-in taskbox it will be displayed like this:
+This information will be available in the activities list and the activity details of the end users' Taskbox:
 
 ![Human Activity Taskbox](images/process-human-activity-taskbox.png)
 
@@ -26,13 +26,13 @@ Once you select the kind of event in the On Close property, a list of entity att
 
 For example, if the human activity is designed for a user to carry on an interview but interviews can be canceled, then the `Close On` property must be set with the **UpdateInterview** entity action and the interview status attribute with the canceled code.
 
-## Adding Security
+## Adding security
 
 You may add security to your Human Activities to be sure that only authorized end users can execute the activity, which is especially useful for critical or high responsibility activities. For this, simply check the roles allowed to execute the Human Activity.
 
-## Using Human Activity References
+## Using Human Activity references
 
-Service Studio provides you with mechanisms to access Human Activity process activities among eSpaces. You can expose your Human Activity process activities to other eSpaces or use Human Activity process activities defined in another eSpace. This activity cannot be exposed if its Process is not exposed or the module is Multi-tenant.
+Service Studio provides you with mechanisms to access Human Activity process activities among modules. You can expose your Human Activity process activities to other modules or use Human Activity process activities defined in another module. This activity cannot be exposed if its Process is not exposed or the module is Multi-tenant.
 
 ## Remarks
 

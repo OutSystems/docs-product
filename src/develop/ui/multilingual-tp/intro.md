@@ -5,11 +5,11 @@ tags: support-application_development;
 
 # Technical Preview - Multilingual Reactive Web and Mobile Apps
 
-With Multilingual Reactive Web and Mobile Apps you can translate the app to other languages. Once the translations to other languages are available in the app, you can switch the language automatically or let users do it.
+With Multilingual Reactive Web and Mobile Apps you can translate an app to other languages. Once the translations are available in the app, you can switch the language automatically or let users do it.
 
 <div class="info" markdown="1">
 
-When translating the apps, note the following important information about the language codes:
+When translating apps, note the following important information about language codes:
 
 * The default language code is **en-US**.
 * All language codes are in the [RFC 1766](https://tools.ietf.org/html/rfc1766) standard format.
@@ -19,12 +19,12 @@ When translating the apps, note the following important information about the la
 
 ## Prerequisites { #prerequisites }
 
-To translate **Reactive Web** and **Mobile Apps** in Service Studio, as part of a technical preview, you need to meet the following requirements:
+To translate **Reactive Web** and **Mobile Apps** in Service Studio as part of a technical preview, you need to meet the following requirements:
 
 * Platform Server 11.10.0 or later
 * LifeTime 11.6.0 or later
-* Up to date Service Studio
-* You activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Multilingual for Mobile and Reactive** in LifeTime
+* Up-to-date Service Studio
+* Activated [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Multilingual for Mobile and Reactive** in LifeTime
 
 ## Getting started
 
@@ -37,11 +37,11 @@ Here's how to get started:
 You can translate the following elements of your app:
 
 * Screen titles
-* Text in Buttons, Links, Screens
+* Text in buttons, links, and screens
 * Text literals in expressions
-* Instructions in Human Activities
+* Instructions in human activities
 * Validation messages, widget confirmation messages, and empty state messages
-* Static Entities. Check [Working with Static Entities](translate-your-app.md#working-with-static-entities) for important notes.
+* Static entities. Check [Working with Static Entities](translate-your-app.md#working-with-static-entities) for important notes.
 
 ## Translating systems components
 

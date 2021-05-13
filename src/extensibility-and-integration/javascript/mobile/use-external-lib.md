@@ -38,4 +38,4 @@ var monthlyPayment = getMonthlyPayment(initialAmount, numMonths, intRate);
 
 This demo shows how you can easily add a reference to an external javascript and then use it in your app.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmvxkkkDL5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xmvxkkkDL5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>

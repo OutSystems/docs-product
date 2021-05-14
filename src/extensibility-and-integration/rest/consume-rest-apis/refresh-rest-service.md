@@ -5,15 +5,15 @@ tags: support-Integrations_Extensions
 
 # Refresh a REST Web Service
 
-To change the services consumed from a REST Web Service or to modify the list of consumed methods, refresh the service in Service Studio:
+To change the services consumed from a REST API or to modify the list of consumed REST API methods, refresh the service in Service Studio:
 
 1. In the **Logic** tab, expand the **Integrations** folder and then **REST**.
 
-2. Under **REST**, right-click the REST API service and select **Refresh REST API**. In this example, the REST service is called **SoccerTeam**.
+2. Under **REST**, right-click the REST API  and select **Refresh REST API...**. In this example, the REST API is called **SoccerTeam**.
 
     ![](images/ss-rest-refresh-1.png)
 
-3. In the Refresh REST API popup, click **Yes**. 
+3. In the Refresh REST API popup, click **Yes**. When you click **Yes**, any changes made to the previous version are lost.  
 
     ![](images/ss-rest-refresh-confirm-2.png)
 
@@ -21,9 +21,7 @@ To change the services consumed from a REST Web Service or to modify the list of
 
     ![](images/ss-rest-refresh-URL-3.png)
 
-5. Select the methods you would like to consume. 
-
-    Note:
+5. Select the methods you would like to consume. Note that:
     
     * The methods you select overwrite previously consumed methods for the service. Be sure to select all methods you want to consume, even if they haven't changed.
     * The following settings are NOT overridden when you refresh:

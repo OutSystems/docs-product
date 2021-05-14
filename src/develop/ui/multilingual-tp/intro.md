@@ -12,6 +12,7 @@ With Multilingual Reactive Web and Mobile Apps you can translate an app to other
 When translating apps, note the following important information about language codes:
 
 * The default language code is **en-US**.
+* The current language is bound to the user session and when the user logs out, the language code automatically changes to the default language code.
 * All language codes are in the [RFC 1766](https://tools.ietf.org/html/rfc1766) standard format.
 * Language codes are **case sensitive**.
 

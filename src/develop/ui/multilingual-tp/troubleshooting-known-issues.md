@@ -5,9 +5,9 @@ tags: support-application_development
 
 # Troubleshooting and known issues
 
-The Multilingual feature for Reactive Web Apps and Mobile Apps is in a technical preview phase. OutSystems is collecting feedback and improving the  feature. Until the feature is generally available, use this document to read about the issues and recommended workarounds.
+The multilingual feature for Reactive Web Apps and Mobile Apps is in the technical preview phase. OutSystems is collecting feedback to improve the feature. Until the feature is generally available, use this document to read about the issues and recommended workarounds.
 
-## Know issues and workarounds
+## Known issues and workarounds
 
 This section contains more details about known issues.
 
@@ -21,11 +21,11 @@ Update to Platform Server 11.11.1 and use up-to-date Service Studio to prevent i
 
 </div>
 
-Apps show content for the right-to-left (RTL) languages left to right instead of right to left. This is a known issue and OutSystems is working on the improvements. Until the fix is public, you can use the workaround to control how the content shows in your apps.
+Apps show content for the right-to-left (RTL) languages left to right instead of right to left. This is a known issue and OutSystems is working on improvements. Until the fix is public, use the workaround below to control how the content shows in your apps.
 
 #### Workaround
 
-The CSS class `is-rtl` defines the styles for the RTL locales. Create custom logic to add the **is-rtl** class for all your locales that are RTL, while removing it for non-RTL locales.
+The CSS class `is-rtl` defines the styles for the RTL locales. Create custom logic to add the **is-rtl** class for all your RTL locales and remove it it for non-RTL locales.
 
 1.  Compile a list of the identifiers for the RTL locales your app supports.
 
@@ -33,7 +33,7 @@ The CSS class `is-rtl` defines the styles for the RTL locales. Create custom log
 
     ![Sample logic with If and JS nodes](images/ts-rtl-fix-ss.png)
 
-    The If node checks the condition **GetCurrentLocale() =** `"ar-AE"`. As `"ar-AE"` is one of the RTL locales, the logic runs the **AddRTL** node.
+    The If node checks the condition **GetCurrentLocale() =** `"ar-AE"`. Since `"ar-AE"` is one of the RTL locales, the logic runs the **AddRTL** node.
 
     Here is the code for the **JavaScript** nodes:
 
@@ -44,4 +44,4 @@ The CSS class `is-rtl` defines the styles for the RTL locales. Create custom log
 
     ![Sample logic](images/ts-rtl-fix-details-ss.png)
 
-    Add your action in the OnRender action of an element that runs **in all screens of the app**. In this example, the action is in the OnRender of the Menu block.
+    Add your action in the **OnRender** action of an element that runs **in all screens of the app**. In this example, the action is in the **OnRender** of the Menu block.

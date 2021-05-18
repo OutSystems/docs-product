@@ -337,24 +337,3 @@ After these changes steps, generate **a new build** of your mobile app.
 If you generate an app in MABS with Play App Signing on, you need to sign the app via Google Play before you install it on your device. An unsigned app won't work, even if you install it by running the installer directly on the device.
 
 </div>
-
-### Known issues
-
-Known issues and workarounds related to Play App Signing and AppShield. 
-
-#### The value of GooglePlayAppSigningCertificate requires encoding
-
-<div class="info" markdown="1">
-
-Fixed in LifeTime 11.6.1 and Platform Server 11.10.0.
-
-</div>
-
-When editing the Extensibility Configurations in LifeTime, you need to encode the value of the  **GooglePlayAppSigningCertificate** key. This is what you can do:
-
-1. Open the console in Google Chrome developer tools.
-2. Run JavaScript code `encodeURIComponent("[public-key-certificate]")`.
-3. Copy the output of the command as the new value for the **GooglePlayAppSigningCertificate** key.
-
-
-Check out [Google Play App Signing](https://developer.android.com/studio/publish/app-signing#app-signing-google-play) on Google Android Development for more information about app signing.

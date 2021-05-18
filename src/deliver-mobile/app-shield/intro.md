@@ -63,6 +63,12 @@ Also note the following:
 * The app file size increases after hardening the security.
 * MABS takes more time to create a hardened build.
 
+<div class="info" markdown="1">
+
+To learn more about adding mobile plugins to your app, see [Adding plugins](../../extensibility-and-integration/mobile-plugins/intro.md#adding_plugins). 
+
+</div>
+
 ## Supported features
 
 These are the features you can use with the current release of the AppShield plugin.
@@ -92,20 +98,6 @@ Protection available for the iOS builds.
 * Debugger protection
 * Screen mirroring detection
 * Screenshot protection
-
-## How to use OutSystems AppShield
-
-To create a mobile app build with AppShield to hardened security, do the following:
-
-1. Install the AppShield component.
-
-2. Add AppShield dependencies to your app. Press **Ctrl+Q** to open the **Manage Dependencies** window. Enter `OutSystemsAppShieldPlugin` in the producer search field and then select all elements in the right pane. Click **Apply** to add the references to your app and close the window.
-
-    ![Manage dependencies](images/reference-appshield-ss.png?width=600)
-
-4. Publish the app.
-
-5. Create native mobile builds of the app.
 
 ### Configuration
 

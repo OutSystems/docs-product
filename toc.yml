@@ -469,6 +469,10 @@
     - topics:
         - href: develop/merge/concepts.md
         - href: develop/merge/merge-example.md
+    # SEO
+    - href: develop/seo/intro.md
+    - topics:
+        - href: develop/seo/troubleshooting.md
     # Develop for testing
     - href: develop/develop-test.md
     # Shortcuts

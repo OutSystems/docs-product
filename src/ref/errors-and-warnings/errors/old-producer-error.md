@@ -18,6 +18,6 @@ Cause
     * The upgrade of the environment to a new Platform Server version wasn't performed correctly.
 
 Recommendation
-:   Wait for the environment upgrade to finish before you publish your applications or modules. You can [check the progress](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) of the modules preparation step in the Service Center console. If the step is still ongoing, wait for it to finish.
+:   Wait for the environment upgrade to finish before you publish your applications or modules. You can [check the progress](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade#progress) of the modules preparation step in the Service Center console. If the step is still ongoing, wait for it to finish.
 
     If the problem persists, contact your System Administrator.

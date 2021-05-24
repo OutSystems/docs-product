@@ -347,6 +347,11 @@
         - href: develop/logic/screen-update-list-items.md
         - href: develop/logic/screen-partial-refresh.md
         - href: develop/logic/emails.md
+        - href: develop/logic/emails-reactive/intro.md
+        - topics:
+            - href: develop/logic/emails-reactive/managing.md
+            - href: develop/logic/emails-reactive/sending.md
+        
 
         - href: develop/logic/exceptions/intro.md
         - topics:

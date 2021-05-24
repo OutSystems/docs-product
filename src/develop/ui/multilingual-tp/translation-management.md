@@ -13,12 +13,6 @@ You can export translatable resources to files and send them to a professional t
 
 </div>
 
-<div class="info" markdown="1">
-
-These instructions are part of the technical preview for translating Reactive Web and Mobile Apps. See [Technical Preview: Multilingual apps](intro.md) for more information.  
-
-</div>
-
 ## Export the text for translation
 
 To export the translatable text from your module follow these steps in Service Studio:
@@ -79,7 +73,3 @@ All translatable text is in the .resX files, one file **for each language locale
 Some .NET Framework versions may have more attributes in the translatable resource files than those described here. The extra attributes have no effect on the app interface.
     
 The name of the .resX files is in the following format: `<module name>` + `Language` + `.<Language locale>.resX'`. For example, if your module name is **Recruitment** with the locales being French (France) (fr-FR) and French (Canada) (fr-CA), then the three generated files are: **RecruitmentLanguage.fr-FR.resX**, **RecruitmentLanguage.fr-CA.resX**, and **RecruitmentLanguage.resX** for the default language.
-
-## Send feedback
-
-If you experience issues with this technical preview, let us know by posting [a new question with the **technical preview** tag](https://www.outsystems.com/forums/tag/6875/technical-preview/) in Forums.

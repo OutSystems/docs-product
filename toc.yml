@@ -333,7 +333,6 @@
             - href: develop/ui/multilingual-tp/translate-your-app.md
             - href: develop/ui/multilingual-tp/translation-editor.md
             - href: develop/ui/multilingual-tp/translation-management.md
-            - href: develop/ui/multilingual-tp/troubleshooting-known-issues.md
         
     # Implement Application Logic
     - href: develop/logic/intro.md

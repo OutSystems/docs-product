@@ -5,7 +5,7 @@ tags: support-application_development
 
 # Translate your app
 
-Translate the interface of your app to other languages to let more users use your app. These instructions are part of the technical preview for translating Reactive Web and Mobile Apps. See [Technical Preview: Multilingual apps](intro.md) for more information.  
+Translate the interface of your app to other languages to let more users use your app.
 
 ## Quick start
 
@@ -18,12 +18,6 @@ Here is a quick start to help you translate your app. To let the users use your 
 1. If your app uses Static Entities, check [Working with Static Entities](#working-with-static-entities) for more information.
 
 ## Adding a new language and translating the text
-
-<div class="info" markdown="1">
-
-These instructions are part of the technical preview for translating Reactive Web and Mobile Apps. See [Technical Preview: Multilingual apps](intro.md) for more information.  
-
-</div>
 
 To add a new language and translate your app, do the following in Service Studio:
 
@@ -130,7 +124,3 @@ Follow these steps to translate the text in Static Entities and show the transla
 ## Switching back to the default language
 
 To let users switch back to the default UI language, [create a language switcher](#creating-a-language-switcher) that sets the locale code to **en-US**.
-
-## Sending feedback
-
-If you experience issues with this technical preview, let us know by posting [a new question with the **technical preview** tag](https://www.outsystems.com/forums/tag/6875/technical-preview/) in Forums.

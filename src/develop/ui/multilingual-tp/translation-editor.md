@@ -12,12 +12,6 @@ The **translation editor** lets you translate text and manage your translation d
 Translation editor also opens when you [add a new translation language](translate-your-app.md).
 
 
-<div class="info" markdown="1">
-
-These instructions are part of the technical preview for translating Reactive Web and Mobile Apps. See [Technical Preview: Multilingual apps](intro.md) for more information.  
-
-</div>
-
 Once you open the translation editor, you can:
 
 * **Translate** text by entering the translation in the **Translation in (language code)** column (1).
@@ -62,7 +56,3 @@ Service Studio automatically sets as translatable the following text:
 * Text in the screens
 
 </div>
-
-## Send feedback
-
-If you experience issues with this technical preview, let us know by posting [a new question with the **technical preview** tag](https://www.outsystems.com/forums/tag/6875/technical-preview/) in Forums.

@@ -56,6 +56,9 @@ Do all synced local entities have their own action in OfflineDataSync folder?
 Does the app clear the pending sync requests when needed?
 :   The syncs started by TriggerOfflineDataSync wait in a queue until they run. There are some instances where a sync must run with a higher priority or you no longer need the currently queued syncs to run. To do this, call TriggerOfflineDataSync with the input DiscardPendingSyncUnits set to True to clear the sync queue.
 
+Have you added the web block OfflineDataSyncEvents when calling the TriggerOfflineDataSync action?
+:   The TriggerOfflineDataSync action calls the OfflineDataSyncEvents web block, so make sure that you added the OfflineDataSyncEvents web block in the same screen that you are calling the TriggerOfflineDataSync action, or you will face the `syncWrapper is not a function` error.
+
 
 ## End User Experience
 

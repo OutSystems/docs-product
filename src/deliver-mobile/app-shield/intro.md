@@ -56,6 +56,7 @@ To ensure the integrity and protection of your apps with AppShield, you must mee
 * You installed the AppShield plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge. 
 * You have a license for AppShield.
 * You're using MABS 6.3 or later. Check out [MABS and mobile operating systems life cycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for more information about the supported operating systems.
+* The OutSystems Platform Server is running on OutSystems 11.
 
 Also note the following:
 

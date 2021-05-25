@@ -237,7 +237,6 @@
             - href: develop/ui/multilingual-tp/translate-your-app.md
             - href: develop/ui/multilingual-tp/translation-editor.md
             - href: develop/ui/multilingual-tp/translation-management.md
-            - href: develop/ui/multilingual-tp/troubleshooting-known-issues.md
         
     # Implement Application Logic
     - href: develop/logic/intro.md
@@ -248,6 +247,16 @@
         - href: develop/logic/screen-block-lifecycle-events.md
         - href: develop/logic/list-iterate.md
         - href: develop/logic/screen-update-list-items.md
+<<<<<<< HEAD
+=======
+        - href: develop/logic/screen-partial-refresh.md
+        - href: develop/logic/emails.md
+        - href: develop/logic/emails-reactive/intro.md
+        - topics:
+            - href: develop/logic/emails-reactive/managing.md
+            - href: develop/logic/emails-reactive/sending.md
+        
+>>>>>>> master
 
         - href: develop/logic/exceptions/intro.md
         - topics:
@@ -365,6 +374,10 @@
     - topics:
         - href: develop/merge/concepts.md
         - href: develop/merge/merge-example.md
+    # SEO
+    - href: develop/seo/intro.md
+    - topics:
+        - href: develop/seo/troubleshooting.md
     # Develop for testing
     - href: develop/develop-test.md
     # Shortcuts
@@ -483,6 +496,7 @@
         - topics:
             - href: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
             - href: extensibility-and-integration/rest/consume-rest-apis/change-a-rest-api-method.md
+            - href: extensibility-and-integration/rest/consume-rest-apis/refresh-rest-service.md
             - href: extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
             - href: extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md
             - href: extensibility-and-integration/rest/consume-rest-apis/simple-customizations.md
@@ -977,10 +991,12 @@
             - href: ref/errors-and-warnings/errors/invalid-username-or-password-error.md
             - href: ref/errors-and-warnings/errors/invalid-variable-error.md
             - href: ref/errors-and-warnings/errors/licensing-error.md
+            - href: ref/errors-and-warnings/errors/locked-module-error.md
             - href: ref/errors-and-warnings/errors/mobile-debugger-errors.md
             - href: ref/errors-and-warnings/errors/module-name-conflict-error.md
             - href: ref/errors-and-warnings/errors/module-version-error.md
             - href: ref/errors-and-warnings/errors/multiple-date-formats-error.md
+            - href: ref/errors-and-warnings/errors/old-producer-error.md
             - href: ref/errors-and-warnings/errors/publishing-error.md
             - href: ref/errors-and-warnings/errors/recursive-theme-hierarchy-error.md
             - href: ref/errors-and-warnings/errors/required-input-parameter-error.md

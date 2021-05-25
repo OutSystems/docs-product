@@ -5,7 +5,7 @@ tags: article-page; runtime-mobile; support-application_development; support-Mob
 
 # Mobile Plugins
 
-Plugins provide important functionalities to mobile apps, letting you use many of the hardware capabilities of mobile devices. You can add notifications, use camera or global positioning services, read QR codes, and more.
+Plugins provide important functionalities to native mobile apps, letting you use many of the hardware capabilities of mobile devices. You can add notifications, use camera or global positioning services, read QR codes, and more.
  
 ## The list of supported mobile plugins 
 

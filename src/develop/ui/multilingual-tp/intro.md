@@ -1,13 +1,17 @@
 ---
-summary: Learn how to create multilingual Reactive Web and Mobile App with OutSystems. This feature is a technical preview.
+summary: Learn how to create multilingual Reactive Web and Mobile App with OutSystems.
 tags: support-application_development;
 ---
 
-# Technical Preview - Multilingual Reactive Web and Mobile Apps
+# Multilingual Reactive Web and Mobile Apps
 
 With Multilingual Reactive Web and Mobile Apps you can translate an app to other languages. Once the translations are available in the app, you can switch the language automatically or let users do it.
 
 <div class="info" markdown="1">
+
+Available in Platform Server 11.12.0 or later and up-to-date Service Studio.
+
+</div>
 
 When translating apps, note the following important information about language codes:
 
@@ -15,17 +19,6 @@ When translating apps, note the following important information about language c
 * The current language is bound to the user session and when the user logs out, the language code automatically changes to the default language code.
 * All language codes are in the [RFC 1766](https://tools.ietf.org/html/rfc1766) standard format.
 * Language codes are **case sensitive**.
-
-</div>
-
-## Prerequisites { #prerequisites }
-
-To translate **Reactive Web** and **Mobile Apps** in Service Studio as part of a technical preview, you need to meet the following requirements:
-
-* Platform Server 11.10.0 or later
-* LifeTime 11.6.0 or later
-* Up-to-date Service Studio
-* Activated [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Multilingual for Mobile and Reactive** in LifeTime
 
 ## Getting started
 
@@ -53,10 +46,6 @@ You can translate systems components. See the forum blog post [System Components
 You need to define at least one locale to be able to export the text resources from a system component.
 
 </div>
-
-## Send feedback
-
-If you experience issues with this technical preview, let us know by posting [a new question with the **technical preview** tag](https://www.outsystems.com/forums/tag/6875/technical-preview/) in Forums.
 
 ## Training resources
 

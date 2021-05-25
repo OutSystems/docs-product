@@ -7,6 +7,10 @@ tags: support-Database; support-database-featured
 
 You can import data from an Excel file to load data to an entity. This is useful when you are developing and testing your application. This way, you can quickly have your data up and running in the application while developing it.
 
+<div class="info" markdown="1">
+If you're using Google Sheets, download your document as an .xlsx file (File > Download > Microsoft Excel), and then bootstrap the data. 
+</div>
+
 ## Validate the Excel file
 
 1. Open the Excel file, check that the Excel sheet has the name of the Entity and the column headers have the names of the entity attributes.

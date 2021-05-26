@@ -180,17 +180,6 @@ Start by selecting the elements for which you want to change the Properties and 
 
 Then, you'll be able to see where their Properties differ and where they share common values. All you have to do now is adjust them according to your needs. Any change made within your current selection will be applied to all selected elements.
 
-## Close several Modules in one go
-
-Do you have way too many Modules open? Quickly close any number of them by right-clicking a Module tab and selecting **Close other modules** or **Close modules to the right**.
-
-![](images/tt-close-tabs.gif)
-
-[//]: # (### Use the Search)
-
-
-[//]: # (### Find and Replace)
-
 
 ## Open a Screen in browser
 

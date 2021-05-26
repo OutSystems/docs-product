@@ -133,4 +133,11 @@ Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
 LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or higher** of the Architecture Dashboard LifeTime probes.
 LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the Architecture Dashboard LifeTime probes.
- 
+
+### Service Studio
+
+To make use of the Service Studio's auto updates, ensure that your desktop can reach the following destination endpoint:
+
+Source|Destination|Port|Protocol
+---|---|---|---
+Desktop|api.outsystems.com/releaseshub|443|TCP

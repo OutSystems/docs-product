@@ -7,12 +7,6 @@ tags:
 
 This section explains how ML Builder handles data, what data you can use, and how to avoid common issues.
 
-<div class="info" markdown="1">
-
-ML Builder is currently in a public **early access program (EAP)** and you need to register at the [ML Builder registration page](https://www.outsystems.com/eap-ml-builder/) to try it out.
-
-</div>
-
 ## Data sources
 
 You can use the Entities in your environment to train a model, but you can also use remote CSV data. Whether you use Entities or CSV, ML Builder extracts the data and then securely sends it to Azure, to the default blob storage. The file with your data has the following path: **datasets\[model-name].csv**, where **[model-name]**.

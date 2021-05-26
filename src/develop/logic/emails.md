@@ -5,6 +5,12 @@ tags: runtime-traditionalweb; support-application_development
 
 # Send an Email From a Web Application
 
+<div class="info" markdown="1">
+
+This article is about emails in Traditional Web Apps. For Reactive Web Apps, see [Emails in Mobile and Reactive Web Apps](emails-reactive/intro.md).
+
+</div>
+
 OutSystems provides you with tools that allow you to use built-in emails in your web applications: create an email, compose the email content, send emails, send emails with attached files, use emails logging, and even extend email functionality or adapt emails to your needs through the [Emails API](<../../ref/apis/emails-api.md>).
 
 ![](images/emails-1.png)

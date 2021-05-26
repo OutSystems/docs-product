@@ -710,7 +710,7 @@ Registers information that can be presented in Service Center in the module gene
 
 Message
 :   Type: mandatory, Text.  
-    The message to add to the module general log.
+    The message to add to the module general log. Limited to 2000 chars.
 
 ModuleName
 :   Type: mandatory, Text.  

@@ -82,7 +82,7 @@
     - develop/ui/reuse/block-create-reuse.md
 
 # Send an Email From a Web Application
-- develop/logic/emails.md:
+- develop/logic/emails-reactive/intro.md:
     - extensibility-and-integration/configure-send-emails.md
 
 # Styles Editor
@@ -338,7 +338,7 @@
 # Email
 - ref/lang/auto/Class.Email.final.md:
     # Send an Email From a Web Application
-    - develop/logic/emails.md
+    - one-way: develop/logic/emails-reactive/intro.md
     # Configure OutSystems to Send Emails
     - extensibility-and-integration/configure-send-emails.md
     # UI Flow
@@ -677,7 +677,7 @@
 #   Email
 - ref/lang/auto/builtinfunction.Email.final.md:
     #Send an Email From a Web Application
-    - develop/logic/emails.md
+    - one-way: develop/logic/emails-reactive/intro.md
 
 #   Math
 - ref/lang/auto/builtinfunction.Math.final.md:
@@ -810,7 +810,7 @@
 
 #     Send Email
 -  ref/lang/auto/Class.Send Email.final.md:
-    - develop/logic/emails.md
+    - one-way: develop/logic/emails-reactive/intro.md
 
 #  Invalid Link Error
 -  ref/errors-and-warnings/errors/invalid-link-error.md:

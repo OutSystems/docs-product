@@ -33,3 +33,9 @@ var numMonths = 30 * 12;      // number of payments months
 // calculate mortgage monthly payment
 var monthlyPayment = getMonthlyPayment(initialAmount, numMonths, intRate);
 ```
+
+## Demo
+
+This demo shows how you can easily add a reference to an external javascript and then use it in your app.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xmvxkkkDL5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>

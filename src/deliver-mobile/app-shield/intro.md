@@ -5,27 +5,70 @@ tags: support-application_development; runtime-mobile;
 
 # Harden the protection of mobile apps with AppShield
 
-OutSystems AppShield lets you harden the protection of your native Android and iOS apps. OutSystems AppShield integrates with the Mobile Apps Build Service (MABS) version 6.1 and adds app protection at runtime and at rest.
+OutSystems AppShield is a licensed plugin available from Forge. AppShield lets you harden the protection of your native Android and iOS apps. AppShield integrates with the Mobile Apps Build Service (MABS) version 6.3 and adds app protection at runtime and at rest.
 
 <div class="info" markdown="1">
 
-To use OutSystems AppShield, you need to have a license. If you haven't got it already, contact the sales team.
+To use OutSystems AppShield, you must have a license. If you don't already have a license, contact the sales team.
+
+</div>
+
+By using AppShield, you can prevent:
+
+* Code from being injected into your app
+* Users from taking screenshots of the data
+* Data from being hijacked 
+
+Before you install and use AppShield, it's important to understand the release cycle and how it improves security. For example, suppose you have a mobile banking application and your app data must always be secure, but your version of AppShield isn't current. OutSystems regularly updates AppShield, and strongly recommends that you always install the latest version of AppShield in your environment. Then release a new build of your app to your users.
+
+To ensure your app users have protection against the latest security vulnerabilities, OutSystems provides continuous updates to AppShield.
+
+## Understanding the AppShield life cycle
+
+To identify the AppShield plugin releases, OutSystems uses the following tags:
+
+* Stable 
+* Current
+* Expiring
+* Discontinued
+
+The following list describes the tags:
+
+* **Stable and Current** - This is the active version and has the up-to-date protection. OutSystems **supports** this version and highly recommends that you install and use this version.
+* **Stable** - You can use this version, but the protection isn't current. OutSystems **doesn't support** this version. You can build an app, but you get a warning message when you try to build the app.
+* **Stable and Expiring** - This version becomes discontinued in three months. OutSystems **doesn't support** this version, but you can build an app with it. If you use this version, a warning message displays advising you to update to the most current version before the expiration date. Once this version is **discontinued**, you won't be able to build your app with it.
+* **Discontinued** - This plugin version is out of date. OutSystems security mechanisms prevent you from creating a new build for your users. OutSystems **doesn't support** this version.
+
+The following diagram shows how release versions work in AppShield.
+
+![AppShield release life cycle](images/life-cycle-dia.png?width=800)
+
+<div class="warning" markdown="1">
+
+To keep your apps and data secure, OutSystems recommends that you always use the current version of the AppShield plugin. Go to the [Versions tab of the plugin Forge page](https://www.outsystems.com/forge/component-versions/9379) to get the current version. 
 
 </div>
 
 ## Prerequisites
 
-To protect your apps with AppShield, you need to meet the following requirements.
+To ensure the integrity and protection of your apps with AppShield, you must meet the following requirements.
 
 * You installed the AppShield plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge. 
 * You have a license for AppShield.
-* You're using MABS 6.1 or later. Check out [MABS and mobile operating systems lifecycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for more information about the supported operating systems.
+* You're using MABS 6.3 or later. Check out [MABS and mobile operating systems life cycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for more information about the supported operating systems.
+* The OutSystems Platform Server is running on OutSystems 11.
 
-Also note:
+Also note the following:
 
 * You need to rebuild and redistribute the mobile apps protected with AppShield.
 * The app file size increases after hardening the security.
-* MABS takes more time to create a hardened build.  
+* MABS takes more time to create a hardened build.
+
+<div class="info" markdown="1">
+
+To learn more about adding mobile plugins to your app, see [Adding plugins](../../extensibility-and-integration/mobile-plugins/intro.md#adding_plugins). 
+
+</div>
 
 ## Supported features
 
@@ -56,20 +99,6 @@ Protection available for the iOS builds.
 * Debugger protection
 * Screen mirroring detection
 * Screenshot protection
-
-## How to use OutSystems AppShield
-
-To create a mobile app build with AppShield to hardened security, do the following:
-
-1. Install the AppShield component.
-
-2. Add AppShield dependencies to your app. Press **Ctrl+Q** to open the **Manage Dependencies** window. Enter `OutSystemsAppShieldPlugin` in the producer search field and then select all elements in the right pane. Click **Apply** to add the references to your app and close the window.
-
-    ![Manage dependencies](images/reference-appshield-ss.png?width=600)
-
-4. Publish the app.
-
-5. Create native mobile builds of the app.
 
 ### Configuration
 
@@ -135,7 +164,7 @@ These are the values available in the AppShield configuration JSON.
 | ---------------------------- | ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------- |
 | DisableAppShielding          | boolean    | iOS, Android | Activates or deactivates App Shield.                                                                                |
 | AllowScreenshot              | boolean    | iOS, Android | If set to true, allows users to take screenshots of the app.                                                        |
-| AllowJailbrokenRootedDevices | boolean    | iOS          | If set to true, allows users to run the app on the jailbroken devices.                                              |
+| AllowJailbrokenRootedDevices | boolean    | iOS, Android | If set to true, allows users to run the app on the jailbroken devices.                                              |
 | global                       | JSON value | iOS, Android | Settings in this section apply to both Android and iOS builds.                                                      |
 | android                      | JSON value | Android      | The key denoting values that apply to the Android devices. See [Google Play App Signing](#google-play-app-signing). |
 | ios                          | JSON value | iOS          | The key denoting values that apply to the iOS devices.                                                              |
@@ -270,7 +299,7 @@ Applies to apps for Google Play Store that have app signing feature enabled.
 
 One of the security features of AppShield is repackaging detection. This protection prevents re-signing of the app package, but also causes incompatibility with the Google Play App Signing. You can fix this by providing information about the certificate in the AppShield settings.
 
-In the **Android section** of the Extensibility Configurations JSON, add **name** with `GooglePlayAppSigningCertificate` and the **value** with the public key. Here is an example:
+In the **Android section** of the Extensibility Configurations JSON, add a preference item with `GooglePlayAppSigningCertificate` as its **name** and the public key as its **value**. Here is an example:
 
 
 ```
@@ -301,24 +330,3 @@ After these changes steps, generate **a new build** of your mobile app.
 If you generate an app in MABS with Play App Signing on, you need to sign the app via Google Play before you install it on your device. An unsigned app won't work, even if you install it by running the installer directly on the device.
 
 </div>
-
-### Known issues
-
-Known issues and workarounds related to Play App Signing and AppShield. 
-
-#### The value of GooglePlayAppSigningCertificate requires encoding
-
-<div class="info" markdown="1">
-
-Fixed in LifeTime 11.6.1 and Platform Server 11.10.0.
-
-</div>
-
-When editing the Extensibility Configurations in LifeTime, you need to encode the value of the  **GooglePlayAppSigningCertificate** key. This is what you can do:
-
-1. Open the console in Google Chrome developer tools.
-2. Run JavaScript code `encodeURIComponent("[public-key-certificate]")`.
-3. Copy the output of the command as the new value for the **GooglePlayAppSigningCertificate** key.
-
-
-Check out [Google Play App Signing](https://developer.android.com/studio/publish/app-signing#app-signing-google-play) on Google Android Development for more information about app signing.

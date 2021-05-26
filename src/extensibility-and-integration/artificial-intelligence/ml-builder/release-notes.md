@@ -7,6 +7,18 @@ tags:
 
 These are the release notes for ML Builder.
 
+## Release May 13 2021
+
+ML Builder updates for the release of May 13, 2021.
+
+### What's new
+
+* Now you have the mini-hub in the header to help you browse the OutSystems cloud tools.
+* Now you can request to receive a notification when the training is finished.
+* New copy and images in the screen **Choose a use case**.
+* In Service Studio, a new alert message when you try to call a model that's not deployed.
+* In Service Studio, a new alert message when you try to call a model without all required parameters in the request.
+
 ## Release Apr 8 2021
 
 ML Builder updates for the release of April 8, 2021.

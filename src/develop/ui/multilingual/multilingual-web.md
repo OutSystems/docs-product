@@ -9,7 +9,7 @@ Besides the language that your Module was designed in (the default language) you
 
 <div class="info" markdown="1">
 
-These instructions are for translating Traditional Web Apps only. For Reactive Web and Mobile Apps see [Technical Preview: Multilingual apps](../multilingual-tp/intro.md).  
+These instructions are for translating Traditional Web Apps only. For Reactive Web and Mobile Apps see [Multilingual apps](../multilingual-tp/intro.md).  
 
 </div>
 

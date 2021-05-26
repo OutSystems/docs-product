@@ -620,6 +620,8 @@
             - href: extensibility-and-integration/rest/expose-rest-apis/change-the-http-status-code-of-a-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/throw-a-custom-error-in-an-exposed-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/document-an-exposed-rest-api.md
+            - href: extensibility-and-integration/rest/expose-rest-apis/patch-method.md
+
         - href: extensibility-and-integration/rest/troubleshoot-a-rest-api.md
 
     #SOAP

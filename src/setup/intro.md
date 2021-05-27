@@ -83,6 +83,10 @@ Before installing any component of OutSystems, make sure your hardware and softw
 
 * [Default Platform Server and database configurations](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Default_Platform_Server_and_database_configurations): to install and run OutSystems, you need permission to change files in the file system, run services, and make changes to the database.
 
+## On-Premises Pre-Installation Video Example
+
+[![On-Premises Pre-Installation Video](images/onpremvid1.png)](https://vimeo.com/553398176 "On-Premises Pre-Installation Video")
+
 ## Installation steps
 
 To install OutSystems in your infrastructure:
@@ -143,6 +147,10 @@ OutSystems is now ready for you to start developing. The only thing missing is t
 
 After installing the development tools, [configure them for developing your own extensions](http://www.outsystems.com/goto/howto-configure-integration-studio).
 
+## On-Premises Installation Video Example
+
+[![On-Premises Installation Video](images/onpremvid2.png)](https://vimeo.com/553397944 "On-Premises Installation Video")
+
 ## Automatic Prerequisites Installation and Configuration Tuning { #prerequisites }
 
 The OutSystems Platform Server installation package can automatically install most of the prerequisites (as described in the Installation Checklist) when you select the **Install Prerequisites** option in the installer. You may need to reboot your system to finish the installation of some prerequisites.
@@ -157,6 +165,10 @@ The process will not make any modifications to user-defined configurations; it w
 The configuration tuning option is also available as a command-line switch when running the installer in [unattended mode](unattended-install/intro.md): `/DoTuning=<factory_size>`.  
 When you provide this switch, the installer will change any default values to the ones recommended for the specified `<factory_size>`. These recommended values for each factory size are described in the subsections **Tuning .NET Framework Runtime** and **Tuning Internet Information Services** in the Installation Checklist.  
 The available options for `<factory_size>` are `small`, `medium` and `large`. Any other option text will map to the `small` option.
+
+## On-Premises Post-Installation Video Example
+
+[![On-Premises Post-Installation Video](images/onpremvid3.png)](https://vimeo.com/553398449 "On-Premises Post-Installation Video")
 
 ## Offline Installation { #offline-installation }
 

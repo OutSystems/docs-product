@@ -476,6 +476,7 @@
     # SEO
     - href: develop/seo/intro.md
     - topics:
+        - href: develop/seo/indexing.md
         - href: develop/seo/troubleshooting.md
     # Develop for testing
     - href: develop/develop-test.md

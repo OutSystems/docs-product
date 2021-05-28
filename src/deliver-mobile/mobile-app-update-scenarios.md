@@ -54,7 +54,7 @@ Even though every time you publish the app the platform makes the changes automa
 * External resource
 * Plugin or plugin configuration
 * Configurations for a mobile platform
-* Entry module or the name of the entry module name 
+* Entry module or the name of the entry module
 * Extensibility Configurations property (for example: modification, addition or removal of mobile plugins, changes to status bar transparency, custom icons or splash screens, and similar) 
 
 These changes may negatively affect the user experience in the outdated apps, but the issues are automatically fixed when the user upgrades to the latest app package. In the case of plugins, it's a good practice to include fallbacks in the apps to avoid crashing until the latest app version is on the device. 

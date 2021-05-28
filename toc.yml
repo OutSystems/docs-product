@@ -377,6 +377,7 @@
     # SEO
     - href: develop/seo/intro.md
     - topics:
+        - href: develop/seo/indexing.md
         - href: develop/seo/troubleshooting.md
     # Develop for testing
     - href: develop/develop-test.md
@@ -515,6 +516,7 @@
             - href: extensibility-and-integration/rest/expose-rest-apis/change-the-http-status-code-of-a-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/throw-a-custom-error-in-an-exposed-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/document-an-exposed-rest-api.md
+            - href: extensibility-and-integration/rest/expose-rest-apis/patch-method.md
         - href: extensibility-and-integration/rest/troubleshoot-a-rest-api.md
 
     # Log levels for consumed REST and SOAP integrations

@@ -1,11 +1,11 @@
 ---
 summary: Redirect URLs and create site and Screen URLs to to improve user experience and search page ranking.  
-tags:
+tags: article-page,
 ---
 
 # Technical Preview - SEO in Reactive Web Apps
 
-Use **SEO-friendly URLs for Reactive Web Apps** to create the SEO-friendly versions of the uniform resource locators (URLs).
+Use **SEO-friendly URLs for Reactive Web Apps** to create the SEO-friendly versions of the uniform resource locators (URLs). Service Center lets you manage Site Rules and Redirects. You can edit custom URLs in Service Studio, in the properties of each Screen. 
 
 ## Prerequisites
 
@@ -14,8 +14,8 @@ Use **SEO-friendly URLs for Reactive Web Apps** to create the SEO-friendly versi
 * You're using Platform Server 11.12.0 or later.
 * Your Service Studio is up to date.
 * The [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **SEO-friendly URLs for Reactive Web Apps** is active in LifeTime for all environments.
-* You're using an OutSystems cloud offer or properly configured on-premises installation.
-* For on-premises installations only: [ISAPI Filters](<https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Customize_or_redirect_the_application_URL#Installing_ISAPI_Filters_and_Logging>) are active in your environment.
+* You're using an OutSystems enterprise cloud offer or a properly configured on-premises installation.
+* For on-premises installations only: make sure that [ISAPI Filters](<https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Customize_or_redirect_the_application_URL#Installing_ISAPI_Filters_and_Logging>) are active in your environment.
 
 <div class="warning" markdown="1">
 
@@ -104,7 +104,7 @@ When working with Site Rules, keep in mind the following:
 
 ### Managing custom Screen URLs
 
-You can add a custom Screen URLs in Service Studio. Go to the properties of the Screen to which you want to set the name. Then, set **Custom URL** to **Yes** in the **Advanced** section and edit the URL structure.
+You can add custom Screen URLs in Service Studio. Go to the properties of the Screen to which you want to set the name. Then, set **Custom URL** to **Yes** in the **Advanced** section and edit the URL structure.
 
 ![Screen URLs settings and properties](images/page-redirects-properties-ss.png?width=350)
 

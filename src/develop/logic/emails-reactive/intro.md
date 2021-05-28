@@ -1,6 +1,6 @@
 ---
 summary: Send emails from Reactive Web Apps and Mobile Apps. Learn more about how emails work in OutSystems.
-tags: support-application_development,
+tags: support-application_development, article-page
 ---
 
 # Technical Preview - Emails in Mobile and Reactive Web Apps

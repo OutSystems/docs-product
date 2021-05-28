@@ -101,3 +101,27 @@ To check the number of Internal/External Users do the following:
 This page displays the total number of Internal and External Users, as well as their distribution per User Provider in the current environment. 
 
 **Note:** A timer executes the process of determining the current user count, and therefore the displayed user count values might not reflect the exact user count.
+
+## Single user account for multiple User Providers 
+
+In your ecosystem, you can have different [User Providers](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management#User_providers) for different applications. For example, you can have legacy applications that are using a User Provider, other than the [Users application](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/Access_the_Users_application).
+
+In such cases, it is also common that some users require access to both the legacy applications and the more recent ones. 
+
+Because they have different User Providers, the user needs to have a different account in each application, even though it’s the same user, with the same username, email, name, etc.
+
+**Until Platform Server 11.11.3** these users **are counted as different users** for licensing purposes.
+
+**From Platform Server 11.11.3 onwards**, identical users (same username or same email) in different User Providers **are counted as a single user** for licensing purposes, as long as they are in the [default tenant](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management#tenants).
+
+Note that any account with the same username or email that exists in another tenant, **that is not the default tenant** of that User Provider, **is counted as a new user**. This happens because different tenants can have users in common that are not the same user. 
+
+To better understand this, picture a scenario where you have a company providing a SaaS solution to two insurance companies.
+
+In this scenario, one person can be a customer of both insurance companies and have insurance products in both companies and be using the exact same email address in his contact details in both companies also.
+
+So, although the user exists in both tenants, it is not a shared account, counting that way as a different user for each company.
+
+The following diagram explains how multiple accounts are considered as the same user:
+
+![](images/multiple-accounts-the-same-user.png?width=750px)

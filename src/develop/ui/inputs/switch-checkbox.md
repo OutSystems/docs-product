@@ -34,7 +34,6 @@ There's already a Profile screen in the GoOut application with a form to enter d
 1. Add a heading text with 'Notifications' at top of the two configurations. 
 1. Publish and test.
 
-![](images/switch-checkbox-3.png)
 
 ## Using a Checkbox in Traditional Web
 
@@ -49,4 +48,5 @@ There's already a Profile screen in the GoOutWeb application with a form to ente
 1. Add a heading text with "Notifications" at top of the two configurations.
 1. Publish and test.
 
-![](images/switch-checkbox-4.png)
+
+Check a demo on [How To Use the Checkbox and Switch Widgets](https://www.outsystems.com/training/lesson/1959/demo-how-to-use-the-checkbox-and-switch-widgets?LearningPathId=1).

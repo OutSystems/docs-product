@@ -34,6 +34,9 @@
                 - href: develop/data/modeling/relationship/relationship-many-to-many.md
                 - href: develop/data/modeling/relationship/delete-rules.md
             - href: develop/data/modeling/index-create.md
+        - href: develop/data/edit/intro.md
+        - topics: 
+            - href: develop/data/edit/how-edit-data.md
         - href: develop/data/query/intro.md
         - topics:
             - href: develop/data/query/fetch-display.md
@@ -146,66 +149,87 @@
         - topics:
             - href: develop/ui/patterns/mobile/intro.md
             - topics:
-                - href: develop/ui/patterns/mobile/adaptive/columns.md
-                - href: develop/ui/patterns/mobile/adaptive/displayondevice.md
-                - href: develop/ui/patterns/mobile/adaptive/gallery.md
-                - href: develop/ui/patterns/mobile/adaptive/masterdetail.md
-                - href: develop/ui/patterns/mobile/content/accordion.md
-                - href: develop/ui/patterns/mobile/content/alert.md
-                - href: develop/ui/patterns/mobile/content/blankslate.md
-                - href: develop/ui/patterns/mobile/content/card.md
-                - href: develop/ui/patterns/mobile/content/cardbackground.md
-                - href: develop/ui/patterns/mobile/content/carditem.md
-                - href: develop/ui/patterns/mobile/content/cardsectioned.md
-                - href: develop/ui/patterns/mobile/content/chatmessage.md
-                - href: develop/ui/patterns/mobile/content/flipcontent.md
-                - href: develop/ui/patterns/mobile/content/floatingcontent.md
-                - href: develop/ui/patterns/mobile/content/listitemcontent.md
-                - href: develop/ui/patterns/mobile/content/section.md
-                - href: develop/ui/patterns/mobile/content/sectiongroup.md
-                - href: develop/ui/patterns/mobile/content/tag.md
-                - href: develop/ui/patterns/mobile/content/tooltip.md
-                - href: develop/ui/patterns/mobile/content/useravatar.md
-                - href: develop/ui/patterns/mobile/interaction/actionsheet.md
-                - href: develop/ui/patterns/mobile/interaction/animate.md
-                - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
-                - href: develop/ui/patterns/mobile/interaction/carousel.md
-                - href: develop/ui/patterns/mobile/interaction/datepicker.md
-                - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
-                - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
-                - href: develop/ui/patterns/mobile/interaction/floatingactions.md
-                - href: develop/ui/patterns/mobile/interaction/horizontalscroll.md
-                - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
-                - href: develop/ui/patterns/mobile/interaction/lightboximage.md
-                - href: develop/ui/patterns/mobile/interaction/notification.md
-                - href: develop/ui/patterns/mobile/interaction/map.md
-                - href: develop/ui/patterns/mobile/interaction/rangeslider.md
-                - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
-                - href: develop/ui/patterns/mobile/interaction/search.md
-                - href: develop/ui/patterns/mobile/interaction/sidebar.md
-                - href: develop/ui/patterns/mobile/interaction/stackedcards.md
-                - href: develop/ui/patterns/mobile/interaction/video.md
-                - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
-                - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
-                - href: develop/ui/patterns/mobile/navigation/pagination.md
-                - href: develop/ui/patterns/mobile/navigation/sectionindex.md
-                - href: develop/ui/patterns/mobile/navigation/submenu.md
-                - href: develop/ui/patterns/mobile/navigation/tabs.md
-                - href: develop/ui/patterns/mobile/navigation/timelineitem.md
-                - href: develop/ui/patterns/mobile/navigation/wizard.md
-                - href: develop/ui/patterns/mobile/numbers/badge.md
-                - href: develop/ui/patterns/mobile/numbers/counter.md
-                - href: develop/ui/patterns/mobile/numbers/iconbadge.md
-                - href: develop/ui/patterns/mobile/numbers/progressbar.md
-                - href: develop/ui/patterns/mobile/numbers/progresscircle.md
-                - href: develop/ui/patterns/mobile/numbers/progresscirclefraction.md
-                - href: develop/ui/patterns/mobile/utilities/aligncenter.md
-                - href: develop/ui/patterns/mobile/utilities/buttonloading.md
-                - href: develop/ui/patterns/mobile/utilities/centercontent.md
-                - href: develop/ui/patterns/mobile/utilities/margincontainer.md
-                - href: develop/ui/patterns/mobile/utilities/mouseevents.md
-                - href: develop/ui/patterns/mobile/utilities/swipeevents.md
-                - href: develop/ui/patterns/mobile/utilities/touchevents.md
+                - href: develop/ui/patterns/mobile/adaptive/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/adaptive/columns.md
+                    - href: develop/ui/patterns/mobile/adaptive/displayondevice.md
+                    - href: develop/ui/patterns/mobile/adaptive/gallery.md
+                    - href: develop/ui/patterns/mobile/adaptive/masterdetail.md
+            - topics:
+                - href: develop/ui/patterns/mobile/content/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/content/accordion.md
+                    - href: develop/ui/patterns/mobile/content/alert.md
+                    - href: develop/ui/patterns/mobile/content/blankslate.md
+                    - href: develop/ui/patterns/mobile/content/card.md
+                    - href: develop/ui/patterns/mobile/content/cardbackground.md
+                    - href: develop/ui/patterns/mobile/content/carditem.md
+                    - href: develop/ui/patterns/mobile/content/cardsectioned.md
+                    - href: develop/ui/patterns/mobile/content/chatmessage.md
+                    - href: develop/ui/patterns/mobile/content/flipcontent.md
+                    - href: develop/ui/patterns/mobile/content/floatingcontent.md
+                    - href: develop/ui/patterns/mobile/content/listitemcontent.md
+                    - href: develop/ui/patterns/mobile/content/section.md
+                    - href: develop/ui/patterns/mobile/content/sectiongroup.md
+                    - href: develop/ui/patterns/mobile/content/tag.md
+                    - href: develop/ui/patterns/mobile/content/tooltip.md
+                    - href: develop/ui/patterns/mobile/content/useravatar.md
+            - topics:
+                - href: develop/ui/patterns/mobile/interaction/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/interaction/actionsheet.md
+                    - href: develop/ui/patterns/mobile/interaction/animate.md
+                    - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
+                    - href: develop/ui/patterns/mobile/interaction/carousel.md
+                    - href: develop/ui/patterns/mobile/interaction/datepicker.md
+                    - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
+                    - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
+                    - href: develop/ui/patterns/mobile/interaction/floatingactions.md
+                    - href: develop/ui/patterns/mobile/interaction/horizontalscroll.md
+                    - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
+                    - href: develop/ui/patterns/mobile/interaction/lightboximage.md
+                    - href: develop/ui/patterns/mobile/interaction/notification.md
+                    - href: develop/ui/patterns/mobile/interaction/map.md
+                    - href: develop/ui/patterns/mobile/interaction/rangeslider.md
+                    - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
+                    - href: develop/ui/patterns/mobile/interaction/scrollablearea.md
+                    - href: develop/ui/patterns/mobile/interaction/search.md
+                    - href: develop/ui/patterns/mobile/interaction/sidebar.md
+                    - href: develop/ui/patterns/mobile/interaction/stackedcards.md
+                    - href: develop/ui/patterns/mobile/interaction/video.md
+            - topics:
+                - href: develop/ui/patterns/mobile/navigation/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
+                    - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
+                    - href: develop/ui/patterns/mobile/navigation/pagination.md
+                    - href: develop/ui/patterns/mobile/navigation/sectionindex.md
+                    - href: develop/ui/patterns/mobile/navigation/submenu.md
+                    - href: develop/ui/patterns/mobile/navigation/tabs.md
+                    - href: develop/ui/patterns/mobile/navigation/timelineitem.md
+                    - href: develop/ui/patterns/mobile/navigation/wizard.md
+            - topics:
+                - href: develop/ui/patterns/mobile/numbers/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/numbers/badge.md
+                    - href: develop/ui/patterns/mobile/numbers/counter.md
+                    - href: develop/ui/patterns/mobile/numbers/iconbadge.md
+                    - href: develop/ui/patterns/mobile/numbers/progressbar.md
+                    - href: develop/ui/patterns/mobile/numbers/progresscircle.md
+                    - href: develop/ui/patterns/mobile/numbers/progresscirclefraction.md
+                    - href: develop/ui/patterns/mobile/numbers/rating.md
+            - topics:
+                - href: develop/ui/patterns/mobile/utilities/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/utilities/aligncenter.md
+                    - href: develop/ui/patterns/mobile/utilities/buttonloading.md
+                    - href: develop/ui/patterns/mobile/utilities/centercontent.md
+                    - href: develop/ui/patterns/mobile/utilities/inlinesvg.md
+                    - href: develop/ui/patterns/mobile/utilities/margincontainer.md
+                    - href: develop/ui/patterns/mobile/utilities/mouseevents.md
+                    - href: develop/ui/patterns/mobile/utilities/separator.md
+                    - href: develop/ui/patterns/mobile/utilities/swipeevents.md
+                    - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md             
             - href: develop/ui/patterns/web/intro.md
             - topics:
@@ -309,7 +333,6 @@
             - href: develop/ui/multilingual-tp/translate-your-app.md
             - href: develop/ui/multilingual-tp/translation-editor.md
             - href: develop/ui/multilingual-tp/translation-management.md
-            - href: develop/ui/multilingual-tp/troubleshooting-known-issues.md
         
     # Implement Application Logic
     - href: develop/logic/intro.md
@@ -323,6 +346,11 @@
         - href: develop/logic/screen-update-list-items.md
         - href: develop/logic/screen-partial-refresh.md
         - href: develop/logic/emails.md
+        - href: develop/logic/emails-reactive/intro.md
+        - topics:
+            - href: develop/logic/emails-reactive/managing.md
+            - href: develop/logic/emails-reactive/sending.md
+        
 
         - href: develop/logic/exceptions/intro.md
         - topics:
@@ -445,6 +473,11 @@
     - topics:
         - href: develop/merge/concepts.md
         - href: develop/merge/merge-example.md
+    # SEO
+    - href: develop/seo/intro.md
+    - topics:
+        - href: develop/seo/indexing.md
+        - href: develop/seo/troubleshooting.md
     # Develop for testing
     - href: develop/develop-test.md
     # Shortcuts
@@ -525,8 +558,12 @@
 
     - href: extensibility-and-integration/mobile-plugins/intro.md
     - topics:
+        - href: extensibility-and-integration/mobile-plugins/barcode/intro.md
+        - href: extensibility-and-integration/mobile-plugins/camera/intro.md
         - href: extensibility-and-integration/mobile-plugins/file-plugin/intro.md
-        - href: extensibility-and-integration/mobile-plugins/transfer-plugin/intro.md
+        - href: extensibility-and-integration/mobile-plugins/file-transfer-plugin/intro.md
+        - href: extensibility-and-integration/mobile-plugins/file-viewer-plugin/intro.md
+        - href: extensibility-and-integration/mobile-plugins/firebase/intro.md
         - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md
         - href: extensibility-and-integration/mobile-plugins/using-cordova-plugins.md
     - href: extensibility-and-integration/javascript/intro.md
@@ -541,6 +578,23 @@
             - href: extensibility-and-integration/javascript/web/run-js-code.md
             - href: extensibility-and-integration/javascript/web/handle-errors.md
 
+    #Integration Builder
+    - href: extensibility-and-integration/integration-builder/intro.md
+    - topics:
+        - href: extensibility-and-integration/integration-builder/works.md
+        - href: extensibility-and-integration/integration-builder/set-up.md
+        - href: extensibility-and-integration/integration-builder/use.md
+        - topics:
+            - href: extensibility-and-integration/integration-builder/connectors/integration-salesforce.md
+            - href: extensibility-and-integration/integration-builder/connectors/integration-sap.md
+            - topics:
+                - href: extensibility-and-integration/integration-builder/connectors/integration-sap-get-spec.md
+            - href: extensibility-and-integration/integration-builder/connectors/integration-ms-dataverse.md
+            - href: extensibility-and-integration/integration-builder/connectors/integration-ms-dynamics.md
+            - href: extensibility-and-integration/integration-builder/connectors/integration-ms-sharepoint.md
+        - href: extensibility-and-integration/integration-builder/structure.md
+        - href: extensibility-and-integration/integration-builder/troubleshoot.md
+
     #REST
     - href: extensibility-and-integration/rest/intro.md
     - topics:
@@ -548,6 +602,7 @@
         - topics:
             - href: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
             - href: extensibility-and-integration/rest/consume-rest-apis/change-a-rest-api-method.md
+            - href: extensibility-and-integration/rest/consume-rest-apis/refresh-rest-service.md
             - href: extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
             - href: extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md
             - href: extensibility-and-integration/rest/consume-rest-apis/simple-customizations.md
@@ -566,6 +621,7 @@
             - href: extensibility-and-integration/rest/expose-rest-apis/change-the-http-status-code-of-a-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/throw-a-custom-error-in-an-exposed-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/document-an-exposed-rest-api.md
+            - href: extensibility-and-integration/rest/expose-rest-apis/patch-method.md
         - href: extensibility-and-integration/rest/troubleshoot-a-rest-api.md
 
     #SOAP
@@ -660,7 +716,8 @@
 - href: managing-the-applications-lifecycle/intro.md
 - topics: 
     - href: managing-the-applications-lifecycle/initial-setup-of-an-infrastructure.md
-
+    - topics: 
+        - href: managing-the-applications-lifecycle/maintenance-mode.md
     - href: managing-the-applications-lifecycle/deploy-applications/intro.md
     - topics: 
         - href: managing-the-applications-lifecycle/deploy-applications/tag-a-version.md
@@ -769,7 +826,6 @@
         - href: setup/azure/additional-configurations.md
         - href: setup/azure/quick-reference.md
         - href: setup/azure/getting-setup-logs.md
-        
 # Reference
 - href: ref/intro.md
 - topics:
@@ -1243,6 +1299,9 @@
                 - href: ref/lang/auto/Class.On Session Start.final.md
         
             - href: ref/lang/auto/Class.Module.final.md
+    
+    # Service Studio command line
+    - href: ref/ss-command/ss-command-line.md
 
     # Configuration Tool
     - href: ref/configuration-tool/intro.md
@@ -1344,10 +1403,12 @@
             - href: ref/errors-and-warnings/errors/invalid-username-or-password-error.md
             - href: ref/errors-and-warnings/errors/invalid-variable-error.md
             - href: ref/errors-and-warnings/errors/licensing-error.md
+            - href: ref/errors-and-warnings/errors/locked-module-error.md
             - href: ref/errors-and-warnings/errors/mobile-debugger-errors.md
             - href: ref/errors-and-warnings/errors/module-name-conflict-error.md
             - href: ref/errors-and-warnings/errors/module-version-error.md
             - href: ref/errors-and-warnings/errors/multiple-date-formats-error.md
+            - href: ref/errors-and-warnings/errors/old-producer-error.md
             - href: ref/errors-and-warnings/errors/publishing-error.md
             - href: ref/errors-and-warnings/errors/recursive-theme-hierarchy-error.md
             - href: ref/errors-and-warnings/errors/required-input-parameter-error.md

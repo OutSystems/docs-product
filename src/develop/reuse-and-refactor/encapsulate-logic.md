@@ -7,6 +7,8 @@ tags: support-application_development; support-webapps-featured
 
 When implementing the logic of your application, you can create actions in your module to later invoke in other action flows. This allows you to centralize the logic and makes your module easier to maintain. You change the logic in only one place and all other actions using it will benefit.
 
+This article shows how to encapsulate logic in Server Actions. You can also encapsulate logic in Client Actions.
+
 ## Use Actions to Encapsulate Logic
 
 To encapsulate logic in a new action, do the following:

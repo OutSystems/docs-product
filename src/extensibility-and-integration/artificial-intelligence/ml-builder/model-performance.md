@@ -7,12 +7,6 @@ tags:
 
 What follows is more information about how you can assess you model's performance, and how to improve it.
 
-<div class="info" markdown="1">
-
-ML Builder is currently in a public **early access program (EAP)** and you need to register at the [ML Builder registration page](https://www.outsystems.com/eap-ml-builder/) to try it out.
-
-</div>
-
 ## Assessing model performance
 
 Once ML Builder successfully trains a model, check the performance of the model. To understand the performance results, you should be familiar with the concepts of:

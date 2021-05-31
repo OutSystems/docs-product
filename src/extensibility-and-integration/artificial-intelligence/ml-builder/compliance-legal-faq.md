@@ -7,12 +7,6 @@ tags:
 
 This document contains information about how ML Builder handles data.
 
-<div class="info" markdown="1">
-
-ML Builder is currently in a public **early access program (EAP)** and you need to register at the [ML Builder registration page](https://www.outsystems.com/eap-ml-builder/) to try it out.
-
-</div>
-
 ## Registration in ML Builder
 
 1. What is ML Builder?

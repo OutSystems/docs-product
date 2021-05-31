@@ -25,3 +25,5 @@ When replacing the data inside the Screen created from a Screen Template, you ca
 1. Drag and drop the Entity, that has the data you want to use over the Widget for which you want to replace the data.
 2.  Check the **TrueChange** tab for errors and warnings and fix them.
 3.  Verify the Widget labels correspond to the data and edit the labels or Expressions if needed.
+
+For more information about importing data from an Excel file to an entity, see [Bootstrap an Entity Using an Excel File](../../data/excel-bootstrap.md)

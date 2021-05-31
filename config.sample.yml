@@ -12,3 +12,8 @@ reference:
     assemble-folder: 
         - src/ref/lang/auto
         - src/ref/apis/auto
+checktoc:
+    url: https://success.outsystems.com/
+    root_path: ""
+    mindtouch-toc-path: Documentation/11/TOC
+    auto-toc-path: Documentation/Unlisted/Technical_Communication/Wiki_Tree_11

@@ -106,7 +106,7 @@ To set an alternative text to an image, execute the following steps:
 1. In the **Attributes** section, create an **alt**.
 1. Enter the description. When an image is for decorative purposes, set **alt=""**.
 
-    ![Adding text alterntives to images](images/image-text-alternatives-ss.png)
+    ![Adding text alternative to images](images/image-text-alternatives-ss.png)
 
 After following these steps, for each of the used images, and published the module, you can test the image text alternatives by using a screen reader.
 
@@ -218,3 +218,16 @@ You must enter the name in the widget properties before you can use that widget 
 The default content Container is the **MainContentWrapper**. To find it, go to **UI Flows** > **Layouts**, and click on the layout you use in your app.
 
 To find the  **SkipToContent** action, go to **Logic** > **OutSystemsUI** > **Accessibility**.
+
+## Modal dialogs
+
+<div class="info" markdown="1">
+
+Applies to Platform Server 11.11 and later.
+
+</div>
+
+Use the [Popup widget](../../ui/inputs/popup.md) to create accessible modal dialogs. Popup adds the following attributes to the widget:
+
+* `role="dialog"`
+* `aria-modal="true"`

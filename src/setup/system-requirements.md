@@ -40,8 +40,11 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ### Database Management System
 
-* Microsoft SQL Server at compatibility level 150, since Platform Server 11.12.0
-* Microsoft SQL Server 2014, 2016 or 2017 (Web Edition or higher edition)<sup>1</sup>
+Keep in mind that you must use the same flavour of database engine for the 3 databases used by the platform (platform and apps, logs, session). Combinations of database engines, for example, using SQL Server for the platform database and Azure SQL database for the logs and or session databases (or any other combination), are not supported.
+* Microsoft SQL Server at compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
+* Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
+* Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
+* Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
 * Azure SQL Database V12
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
 * Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2

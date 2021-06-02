@@ -9,7 +9,7 @@ OutSystems applications can set the access to specific elements (Web UI Flows, e
 
 <div class="info" markdown="1">
 
-This procedure applies only to **on-premises installations**. For OutSystems Cloud installations, contact [OutSystems Technical Support](https://www.outsystems.com/SupportPortal/CaseOpen/).
+This procedure applies only to **self-managed environments**. For OutSystems Cloud installations, contact [OutSystems Support](https://www.outsystems.com/SupportPortal/CaseOpen/) and provide the desired internal network addresses.
 
 </div>
 
@@ -35,4 +35,7 @@ When you define an internal network for a specific OutSystems environment, it wi
 * The LifeTime console of the environment, if the environment where the configuration was applied is a LifeTime environment
 * Connections from Service Studio, Integration Studio and OSP Tool to the environment
 
-In the case you inadvertently define an internal network configuration that blocks you from accessing Service Center, you can [use the Configuration Tool to clear the internal network settings](../../ref/configuration-tool/tabs/network.md) currently defined.
+In the case you inadvertently define an internal network configuration that blocks you from accessing Service Center, you can:
+
+* [use the Configuration Tool to clear the internal network settings](../../ref/configuration-tool/tabs/network.md) currently defined, if it's a self-managed environment;
+* contact [OutSystems Support](https://www.outsystems.com/SupportPortal/CaseOpen/) to revert or adjust the internal network addresses if it's an OutSystems Cloud environment. 

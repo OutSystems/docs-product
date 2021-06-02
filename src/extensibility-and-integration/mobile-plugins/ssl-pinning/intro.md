@@ -5,7 +5,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 
 # SSL Pinning Plugin
 
-In mobile apps, SSL Pinning or HTTP Public Key Pinning (HPKP) provides an extra layer of security to HTTPS communications to avoid, for example, man-in-the-middle attacks. SSL Pinning works client-side and verifies the server certificate by comparing hashes of public keys that are pre-bundled with the mobile app.
+In native mobile apps, SSL Pinning or HTTP Public Key Pinning (HPKP) provides an extra layer of security to HTTPS communications to avoid, for example, man-in-the-middle attacks. SSL Pinning works client-side and verifies the server certificate by comparing hashes of public keys that are pre-bundled with the mobile app.
 
 Keep in mind that, by design, calls to server actions stop working if there's a hash mismatch. In this case, you need to add a new hash list in the app, build a new version of the app, and distribute it to your users. To anticipate the hash mismatches, you can design the app so that it checks if the certificate is valid or not. For more information, see [Check the hash validity](#check-the-hash-validity) section.
 

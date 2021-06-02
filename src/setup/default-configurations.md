@@ -70,6 +70,8 @@ The Azure SQL Database catalog and database must comply with the following colla
 
 * The database catalog must be Case Insensitive and should also be Accent Insensitive.
 
+* Connecting to the Azure SQL Database using Windows Authentication is not supported.
+
 ### Oracle
 
 To integrate with an Oracle database, the **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**. Additionally, names of tables and columns you want to integrate must use uppercase letters only.

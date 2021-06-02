@@ -333,7 +333,6 @@
             - href: develop/ui/multilingual-tp/translate-your-app.md
             - href: develop/ui/multilingual-tp/translation-editor.md
             - href: develop/ui/multilingual-tp/translation-management.md
-            - href: develop/ui/multilingual-tp/troubleshooting-known-issues.md
         
     # Implement Application Logic
     - href: develop/logic/intro.md
@@ -347,6 +346,11 @@
         - href: develop/logic/screen-update-list-items.md
         - href: develop/logic/screen-partial-refresh.md
         - href: develop/logic/emails.md
+        - href: develop/logic/emails-reactive/intro.md
+        - topics:
+            - href: develop/logic/emails-reactive/managing.md
+            - href: develop/logic/emails-reactive/sending.md
+        
 
         - href: develop/logic/exceptions/intro.md
         - topics:
@@ -469,6 +473,11 @@
     - topics:
         - href: develop/merge/concepts.md
         - href: develop/merge/merge-example.md
+    # SEO
+    - href: develop/seo/intro.md
+    - topics:
+        - href: develop/seo/indexing.md
+        - href: develop/seo/troubleshooting.md
     # Develop for testing
     - href: develop/develop-test.md
     # Shortcuts
@@ -593,6 +602,7 @@
         - topics:
             - href: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
             - href: extensibility-and-integration/rest/consume-rest-apis/change-a-rest-api-method.md
+            - href: extensibility-and-integration/rest/consume-rest-apis/refresh-rest-service.md
             - href: extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
             - href: extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md
             - href: extensibility-and-integration/rest/consume-rest-apis/simple-customizations.md
@@ -611,6 +621,7 @@
             - href: extensibility-and-integration/rest/expose-rest-apis/change-the-http-status-code-of-a-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/throw-a-custom-error-in-an-exposed-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/document-an-exposed-rest-api.md
+            - href: extensibility-and-integration/rest/expose-rest-apis/patch-method.md
         - href: extensibility-and-integration/rest/troubleshoot-a-rest-api.md
 
     #SOAP
@@ -730,6 +741,7 @@
             - href: managing-the-applications-lifecycle/deploy-applications/zones/zone-create.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/zone-configure-app.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/reference.md
+            - href: managing-the-applications-lifecycle/deploy-applications/zones/modules-and-apps-in-deployment-zones.md
         - href: managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
     - href: managing-the-applications-lifecycle/app-feedback/intro.md
     - topics:
@@ -815,7 +827,6 @@
         - href: setup/azure/additional-configurations.md
         - href: setup/azure/quick-reference.md
         - href: setup/azure/getting-setup-logs.md
-        
 # Reference
 - href: ref/intro.md
 - topics:
@@ -1393,10 +1404,12 @@
             - href: ref/errors-and-warnings/errors/invalid-username-or-password-error.md
             - href: ref/errors-and-warnings/errors/invalid-variable-error.md
             - href: ref/errors-and-warnings/errors/licensing-error.md
+            - href: ref/errors-and-warnings/errors/locked-module-error.md
             - href: ref/errors-and-warnings/errors/mobile-debugger-errors.md
             - href: ref/errors-and-warnings/errors/module-name-conflict-error.md
             - href: ref/errors-and-warnings/errors/module-version-error.md
             - href: ref/errors-and-warnings/errors/multiple-date-formats-error.md
+            - href: ref/errors-and-warnings/errors/old-producer-error.md
             - href: ref/errors-and-warnings/errors/publishing-error.md
             - href: ref/errors-and-warnings/errors/recursive-theme-hierarchy-error.md
             - href: ref/errors-and-warnings/errors/required-input-parameter-error.md

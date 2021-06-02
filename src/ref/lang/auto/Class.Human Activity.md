@@ -36,7 +36,7 @@ Activity to be executed by an end user.
 </tr>
 <tr>
 <td title="Label">Label</td>
-<td>Text displayed in the Taskbox and in the back-office when an instance of this Human Activity is executed.</td>
+<td>Text displayed to the end user in the Taskbox and in the back-office when an instance of this Human Activity is executed.</td>
 <td></td>
 <td></td>
 <td>If not defined, the displayed text will be the Human Activity name.</td>
@@ -83,14 +83,14 @@ Activity to be executed by an end user.
 </tr>
 <tr>
 <td title="Detail">Detail</td>
-<td>Description of the Human Activity to be displayed to the user in the Taskbox. Can be an expression.</td>
+<td>Description of the Human Activity to be displayed to the end user in the Taskbox. Can be an expression. Overrides the Detail value defined on the Process. Changing this value will not affect existing Human Activity instances.</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td title="Instructions">Instructions</td>
-<td>Instructions on how to complete the Human Activity work to be displayed to the user in the Taskbox.</td>
+<td>Instructions on how to complete the Human Activity work to be displayed to the end user in the Taskbox.</td>
 <td></td>
 <td></td>
 <td></td>

@@ -5,12 +5,6 @@ tags:
 
 # Getting started
 
-<div class="info" markdown="1">
-
-ML Builder is currently in a public **early access program (EAP)** and you need to register at the [ML Builder registration page](https://www.outsystems.com/eap-ml-builder/) to try it out.
-
-</div>
-
 To get started with ML Builder, do the following:
 
 1. Sign in to the [ML Builder portal](https://mlbuilder.outsystems.com/) and register your non-production environment. When signing in, enter the name of your environment in **Environment**. For example, if the URL of the environment is **https://pp.example.com** enter **pp.example.com**. This is the **source environment** ML Builder connects to get data for training models.

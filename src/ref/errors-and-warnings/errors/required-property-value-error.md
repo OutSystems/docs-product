@@ -20,7 +20,7 @@ You need to define a valid value in the Value property.
 
 For example, in an Expression you need to define a [valid expression](../../../ref/logic/expressions/intro.md).
 
-For a Button Group, set a valid value for the Value property. 
+For a Button Group, set a [valid value](../../../develop/ui/patterns/web/controls/buttongroup.md) for the Value property. 
 
 <!-- Link to be added to 'valid value' above to go to Developing_an_Application/Design_UI/Patterns/Using_Traditional_Web_Patterns/Controls/Button_Group  -->
 

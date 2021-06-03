@@ -476,6 +476,7 @@
     # SEO
     - href: develop/seo/intro.md
     - topics:
+        - href: develop/seo/indexing.md
         - href: develop/seo/troubleshooting.md
     # Develop for testing
     - href: develop/develop-test.md
@@ -740,6 +741,7 @@
             - href: managing-the-applications-lifecycle/deploy-applications/zones/zone-create.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/zone-configure-app.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/reference.md
+            - href: managing-the-applications-lifecycle/deploy-applications/zones/modules-and-apps-in-deployment-zones.md
         - href: managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
     - href: managing-the-applications-lifecycle/app-feedback/intro.md
     - topics:

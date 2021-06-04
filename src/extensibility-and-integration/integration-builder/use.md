@@ -101,7 +101,7 @@ To associate the connection to the integration do the following:
 
 1. Select the connection you want to use in the **Select a connection** drop-down.
 
-### Use the integration in Service Studio
+### Use the integration in Service Studio { #use }
 
 1. In Service Studio, open the application module of the OutSystems application where you want to use the integration.
 

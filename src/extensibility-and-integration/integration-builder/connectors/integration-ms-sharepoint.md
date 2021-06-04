@@ -35,3 +35,7 @@ Request authentication is handled transparently when you call Server Actions exp
 Each connection to SharePoint Online you create in Integration Manager is tied to an application registered in Azure AD. To edit the connection, you must use a Microsoft account that has access to Azure AD and must authorize Integration Builder to connect on this user's behalf.
 
 This authorization is only valid for a specific user. If another user wants to edit a connection or integration, they also need to authorize Integration Builder.
+
+### Use the integration in Service Studio
+
+Check [how to use the integration in Service Studio](../use.md#use).

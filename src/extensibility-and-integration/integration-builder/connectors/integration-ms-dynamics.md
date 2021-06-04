@@ -12,7 +12,6 @@ The Microsoft Dynamics 365 integration allows you to perform operations on entit
 * The Microsoft Dynamics 365 integration deployed in your OutSystems development environment can make HTTPS outbound requests (port 443) to your Microsoft Dynamics 365 service.
 * You have a Microsoft account with Microsoft Dynamics 365 and Azure Administrator privileges. These admin privileges are required to access your Azure Active Directory tenant and to create security roles and application users.
 
-
 ## Authorizing Integration Builder in your Microsoft account
 
 Follow the instructions provided in [Creating and using an integration](../use.md#create-use). You must authorize Integration Builder to access your data in Microsoft Dynamics 365 through your Microsoft account.
@@ -42,3 +41,7 @@ Request authentication is handled transparently when you call Server Actions exp
 Each connection to Microsoft Dynamics 365 you create in Integration Manager is tied to an application registered in Azure AD. To edit the connection, you must use a Microsoft account that has access to Azure AD and must authorize Integration Builder to connect on this user's behalf.
 
 This authorization is only valid for a specific user. If another user wants to edit a connection or integration, they also need to authorize Integration Builder.
+
+### Use the integration in Service Studio
+
+Check [how to use the integration in Service Studio](../use.md#use).

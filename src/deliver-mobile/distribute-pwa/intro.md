@@ -10,7 +10,9 @@ A progressive web app (PWA) provides a native-like experience without having to 
 The main benefits of PWAs:
 
 * More efficient to manage, as they don't require app stores like native mobile apps.
-* Based on the web browser technology that doesn't depend on a platform. The same app runs on Android and iOS. Additionally, in OutSystems you can distribute an app as a PWA and as native builds for Android/iOS. 
+* Based on the web browser technology that doesn't depend on a platform:
+    * The same app runs on Android and iOS. Additionally, in OutSystems you can distribute an app as a PWA and as native builds for Android/iOS.
+    * They can run on a web browser with the same offline capabilities of a mobile app.
 * They update the moment you publish changes to your OutSystems environment.
 * Lighter on user devices' systems resources.
 * When you develop PWAs in OutSystems, you get all benefits of the low-code development. It's enough to turn on the PWA distribution of the app.

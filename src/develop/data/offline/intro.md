@@ -5,16 +5,17 @@ tags: support-application_development; support-Mobile_Apps
 
 # Offline
 
-OutSystems provides the necessary capabilities to implement use cases that require having offline access to some or even all of the functionality in your mobile apps. For example, a field service mobile app to support remote workers that may not always have a connection to the Internet on their mobile devices.
+OutSystems provides the necessary capabilities to implement use cases that require having offline access to some or even all of the functionality in your apps. Offline capabilities are available for apps running on mobile devices and on the browser (if you use PWAs - [Progressive Web Apps](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Distribute_as_a_progressive_web_app)). For example, a field service mobile app to support remote workers that may not always have a connection to the Internet on their mobile devices.
 
 When you install an OutSystems mobile app, it already includes all resources such as UI elements and client-side logic that are necessary for the app to run with no connectivity to the server. Data can be persisted locally in an SQLite database. Your mobile app only needs network connectivity to access data and logic on the server.
 
-The following diagram shows the runtime architecture of a typical OutSystems mobile app.
+The following diagram shows the runtime architecture of a typical OutSystems mobile app. In PWA's the architecture is very similar but uses IndexedDB for the browser local storage and an offline framework composed of JavaScript.
 
 ![Offline architecture](images/offline-architecture.png)
 
-To make your mobile apps ready for scenarios with intermittent network access you need to define you local data model and implement a synchronization mechanism to exchange data between the mobile device and the server when there is network access.
+To make your apps ready for scenarios with intermittent network access you need to define you local data model and implement a synchronization mechanism to exchange data between the device and the server when there is network access.
 
+Offline capabilities require that the app you chose in Service Studio is of the type mobile (Tablet of Phone), but the same code base can be used to run the app in a browser, by choosing [Distribute as a progressive web app](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Distribute_as_a_progressive_web_app).
 
 ## Using Local Storage
 

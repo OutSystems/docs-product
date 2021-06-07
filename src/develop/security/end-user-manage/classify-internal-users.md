@@ -45,7 +45,7 @@ To be able to configure your users as internal or external make sure that:
 
 You can configure your users to be internal or external by using Internal User domains. The **User Classification rules** field can contain one or more domains separated by commas.
 
-OutSystems considers that a subdomain is a different value from its domain. To classify users based on a subdomain, add a value to the **User Classification rules*** field for the subdomain.
+OutSystems considers that a subdomain is a different value from its domain. To classify users based on a subdomain, add a value to the **User Classification rules** field for the subdomain.
 
 For example, to classify a user with the email address `scott.green@sales.mycompany.com` as an Internal User, the **User Classification rules** field value must contain the `sales.mycompany.com` subdomain.
 

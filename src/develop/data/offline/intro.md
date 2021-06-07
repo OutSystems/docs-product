@@ -1,6 +1,6 @@
 ---
 summary: An overview of how to implement offline sync in your mobile apps.
-tags: runtime-mobile; support-application_development; support-Mobile_Apps
+tags: support-application_development; support-Mobile_Apps
 ---
 
 # Offline

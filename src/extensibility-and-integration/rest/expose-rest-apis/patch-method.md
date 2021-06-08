@@ -20,7 +20,7 @@ PUT inserts or updates a resource, while PATCH applies a partial update to the r
 
 ## Create a PATCH Method
 
-As for the other REST methods, to create a PATCH method, do the following:
+To create a PATCH method, do the following:
 
 1. In the Logic tab, right-click your existing REST API and select Add REST API Method.
 

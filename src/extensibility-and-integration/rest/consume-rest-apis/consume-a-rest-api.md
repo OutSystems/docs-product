@@ -3,7 +3,7 @@ summary: How to consume a REST API or a single API method and use it in your Out
 tags: support-Integrations_Extensions-featured
 ---
 
-# Consume One or More REST API Methods
+# Consume one or more REST API methods
 
 Make sure you gather all the information you need from the REST API documentation before starting. You can also take a quick video tour about [Consuming a REST API in 10 minutes with OutSystems](https://youtu.be/gNyWIeJYfG0).
 

@@ -3,13 +3,16 @@ summary: Change the services consumed from a REST Web Service; get the latest ch
 tags: support-Integrations_Extensions
 ---
 
-# Refresh a REST Web Service
+# Refresh a REST web service
 
-To change the services consumed from a REST API or to modify the list of consumed REST API methods, refresh the service in Service Studio:
+To change the services consumed from a REST API or to modify the list of consumed REST API methods, you can refresh the service in Service Studio.
+An earlier approach to updating a single method, described later in this article, is still valid. However, the refresh option is easier to use and the recommended approach.
+
+To refresh a REST API service:
 
 1. In the **Logic** tab, expand the **Integrations** folder and then **REST**.
 
-2. Under **REST**, right-click the REST API  and select **Refresh REST API...**. In this example, the REST API is called **SoccerTeam**.
+2. Under **REST**, right-click the REST API and select **Refresh REST API...**. In this example, the name of the REST API is **SoccerTeam**.
 
     ![](images/ss-rest-refresh-1.png)
 
@@ -38,8 +41,39 @@ To change the services consumed from a REST API or to modify the list of consume
     *  [/relative endpoint] = endpoint relative to the base URL
     *  (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification
 
+    This example shows all available methods selected. **AllGoalKeepers** shows as outdated, which means you can't select it.
+
     ![](images/ss-rest-refresh-methods-4.png)
 
 
-6. Click **Finish** to add the selected methods. In this example, all available methods are selected. **AllGoalKeepers**  includes an outdated label, which means it no longer exists in the service and can't be selected.    
+6. Click **Finish** to add the selected methods.     
 
+Next, see [Adapt your application to the changes](#adapt-your-application-to-the-changes).
+
+## Manually update a single REST API method
+
+Before the refresh option existed, you could update a method using the following more manual approach. This approach is still valid.
+
+To update a method using this procedure, look at the REST API documentation to understand what needs to change when invoking the REST API method.
+
+To manually update a REST method:
+
+1. In the **Logic** tab, open the **Integrations** folder and expand the REST element containing the method you want to change.
+
+1. Double-click on the REST API Method you want to change.
+
+1. Update the REST API Method information to reflect the change you want to execute, such as adding new parameters to the request structure:
+
+    ![](images/ss-rest-change-1.png) 
+
+1. Click **OK**. 
+
+## Adapt your application to the changes
+
+When you change the definition of the REST API method, OutSystems automatically updates the REST API Method and the associated structures according to your changes:
+
+![](images/ss-rest-change-2.png)
+
+![](images/ss-rest-change-3.png)
+
+You can now adapt the action flows or screens of your application to reflect the updated functionality.

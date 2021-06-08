@@ -20,7 +20,7 @@ PUT inserts or updates a resource, while PATCH applies a partial update to the r
 
 ## Create a PATCH Method
 
-Likewise, the other methods, to create a PATCH method, do the following:
+As for the other REST methods, to create a PATCH method, do the following:
 
 1. In the Logic tab, right-click your existing REST API and select Add REST API Method.
 
@@ -33,10 +33,10 @@ Likewise, the other methods, to create a PATCH method, do the following:
     ![](images/ss-patch-add.png?width=750)
 
 ## Constraint with the PATCH method
-Due to the simplification and abstraction provided by OutSystems to accelerate development, there's a constraing in the PATCH semantics that may result in patterns that are not supported by OutSystems language, like null values or dynamic structures. The following topics help you overcome this constraint if you neeed to do it.
+Due to the simplification and abstraction provided by OutSystems to accelerate development, there's a constraint in the PATCH semantics that may result in patterns that are not supported by OutSystems language, like null values or dynamic structures. The following sections help you overcome this constraint if you need to do it.
 
 ### Ensuring PATCH semantics
-If you need to ensure that your PATCH fully obey to the semantics, your Data Types need to obey to the following best practices: 
+If you need to ensure that your PATCH fully obeys the semantics, your Data Types need to obey the following best practices:
 
 #### Integers, Long Integers, Text and Email data types
 
@@ -84,7 +84,7 @@ Check the following example to guide you in this operation:
 
 ### Converting a Text to a Boolean
 
-When you do a PATCH, you may need to convert a Text to Boolean. Since there is no Build-in function to perform this data conversion, it is necessary to do it manually. 
+When you do a PATCH, you may need to convert a Text to Boolean. Since there is no Built-in function to perform this data conversion, it is necessary to do it manually. 
 
 To do it, create a server action that receives a text input and returns a respective boolean value:
 

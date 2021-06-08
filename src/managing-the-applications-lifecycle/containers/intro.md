@@ -52,49 +52,6 @@ To learn more about this topic, check for example the following articles:
 "[Docker Reference Architecture: Designing Scalable, Portable Docker Container Networks](<https://success.docker.com/article/networking>)" (by Docker)
 :   Provides a good starting point for a solid architecture design.
 
-
-## Limitations
-
-OutSystems applications deployed to containers have some limitations in terms of application features and available operations.
-
-### Unavailable Application Features
-
-You will not be able to deploy into containers any application with the following functionality:
-
-* HTTP Security with client certificates;
-* Integrated Authentication on UI flows or screens;
-* Integrated Authentication on SOAP web services;
-* Applications using DB2 databases;
-* Applications or modules using SEO rules.
-
-In addition to the recommended practice of keeping **system applications** like Service Center and LifeTime in the "Global" deployment zone, you will **not be able** to associate or deploy system applications to deployment zones whose hosting technology is containers, or to deployment zones that do not include any front-end servers.
-
-Using the `localhost` address to render pages or access any endpoint from other applications **will not work**. For an application running inside a container, `localhost` refers to the container itself. Since in OutSystems there's only  one application per container, any referenced application will not live in the same container. Also, due to the nature of containers, there's no guarantee that the containers for two applications will be on the same server, which means that applications must not refer to each other by using `localhost` or the address of the container engine host; the  developer must always use the address of the deployment zone of the desired application.
-
-### Unavailable Operations
-
-Some operations are not available when an application is set to be deployed to a deployment zone configured with a container-based hosting technology.
-
-In **Service Studio** you will not be able to:
-
-* Create a new module in a container-bound application;
-* Move a module from one application to another one if any of them is a container-bound application;
-* Perform 1-Click Publish of a module in a container-bound application;
-* Perform 1-Click Publish of a container-bound application;
-* Delete a module that belongs to a container-bound application;
-* Debug a module in a container-bound application (debugging must be done in an environment where the application is not in a deployment zone using containers).
-
-In **Service Center** or using the [**OSPTool**](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/Unattended_Installation_and_Upgrade/Solution_Pack_Tool_(OSPTool)_Command_Line_Reference>) the following operations will not be available:
-
-* Perform 1-Click Publish of a module in a container-bound application;
-* Delete a module that belongs to a container-bound application;
-* Download or publish a solution containing a partial subset of the modules of a container-bound application.
-
-In addition, in **Service Center** it's not possible to:
-
-* Set a deployment zone as the default zone when its hosting technology is container-based;
-* Delete an application manually deployed to a container (check this [procedure](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Deleting_an_application_that_is_manually_deployed_to_a_container) that enables you to delete such an app).
-
 ## Application Scheduler Service in Containers
 
 Each container-bound application has an Application Scheduler Service, which is bundled together with the application inside the container. If any problem occurs with this service, the container will stop.

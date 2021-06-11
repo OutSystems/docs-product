@@ -17,13 +17,15 @@ By using AppShield, you can prevent:
 
 * Code from being injected into your app
 * Users from taking screenshots of the data
-* Data from being hijacked 
+* Data from being hijacked
 
-Before you install and use AppShield, it's important to understand the release cycle and how it improves security. For example, suppose you have a mobile banking application and your app data must always be secure, but your version of AppShield isn't current. OutSystems regularly updates AppShield, and strongly recommends that you always install the latest version of AppShield in your environment. Then release a new build of your app to your users.
+When the user launches a hardened app, the app performs multiple checks. Some examples of these checks are the root and repackaging detection. This makes the app take slightly more time to launch, especially when starting for the first time. The time to start varies depending on multiple factors, such as device hardware and the complexity of the app.
 
 To ensure your app users have protection against the latest security vulnerabilities, OutSystems provides continuous updates to AppShield.
 
 ## Understanding the AppShield life cycle
+
+Before you install and use AppShield, it's important to understand the release cycle and how it improves security. For example, suppose you have a mobile banking application and your app data must always be secure, but your version of AppShield isn't current. OutSystems regularly updates AppShield, and strongly recommends that you always install the latest version of AppShield in your environment. Then release a new build of your app to your users.
 
 To identify the AppShield plugin releases, OutSystems uses the following tags:
 
@@ -172,68 +174,6 @@ These are the values available in the AppShield configuration JSON.
 
 ## Obfuscation
 
-In the current version, native code from the shell and supported plugins are obfuscated. A crash from an obfuscated code will generate an obfuscated stack trace.
-
-### Considerations
-
-Customized plugins might not work as-is with obfuscation.
-
-One common example is the usage of reflection to perform operations based on class/method names. Since obfuscation changes these names, the code might stop working as expected and even crash. This can occur not only in the Java code in the plugin, but also in the code from the libraries imported via Gradle or JAR/AAR files.
-
-Getting a `ClassNotFoundException` or `MethodNotFoundException` at runtime is a sure sign you're missing classes or methods, either because they were obfuscated and now have other names. Or, they were missing because of some misconfigured dependencies.
-
-Examples of deobfuscated exceptions that can be thrown:
-
-```
-java.lang.ClassNotFoundException: com.example.SomeClass
-    at java.lang.Class.classForName(Native Method)
-    at java.lang.Class.forName(Class.java:454)
-    at java.lang.Class.forName(Class.java:379)
-    ...
-```
-
-```
-java.lang.ClassNotFoundException: Didn't find class "com.example.SomeClass" on path: DexPathList[[zip file "/data/app/..., /system/lib, /system_ext/lib]]
-    at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:207)
-    at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
-    at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
-    ...
-```
-
-```
-java.lang.NoSuchMethodException: com.example.SomeClass.someMethod [class java.lang.String, int]
-    at java.lang.Class.getMethod(Class.java:2072)
-    at java.lang.Class.getMethod(Class.java:1693)
-    ...
-```
-
-```
-java.lang.AssertionError: illegal type variable reference
-    at libcore.reflect.TypeVariableImpl.resolve(TypeVariableImpl.java:111)
-    at libcore.reflect.TypeVariableImpl.getGenericDeclaration(TypeVariableImpl.java:125)
-    at libcore.reflect.TypeVariableImpl.hashCode(TypeVariableImpl.java:47)
-    at com.google.gson.reflect.TypeToken.[init](TypeToken.java:64)
-    ...
-```
-
-## Performance
-
-When the user launches a hardened app, the app performs multiple checks. Some examples of these checks are the root and repackaging detection. This makes the app take slightly more time to launch, especially when starting for the first time. The time to start varies depending on multiple factors, such as device hardware and the complexity of the app.
-
-## Limitations
-
-AppShield has the following limitations. 
-
-### General
-
-Non-specific limitations.
-
-* On iOS the plugin doesn't block user-initiated screenshots, it only notifies the app that a screenshot was taken. OutSystems currently doesn't support this event. However, AppShield blocks taking screenshots of the iOS App Switcher.
-
-* After MABS creates a build with the AppShield plugin active, and signs the build, you can't sign that build again manually because the app would recognize that as a sign of tampering.
-
-### Obfuscation
-
 The limitations that are specific to the obfuscation.
 
 <div class="info" markdown="1">
@@ -248,46 +188,17 @@ We know how important obfuscation of JavaScript is to our customers. Our develop
 * Native iOS bitcode obfuscation isn't supported.
 * You need to contact Support to get the mapping files.
 
+## Limitations
 
-## How to retrace Android obfuscated logs
+AppShield has the following limitations. 
 
-The purpose of the obfuscation is to make the app harder to reverse-engineer. During the obfuscation process, the platform creates a mapping with the old and new names of methods and classes.
+### General
 
-In an obfuscated app, an error stack trace might look like this:
+Non-specific limitations.
 
-![Obfuscation example](images/obfuscated.png?width=600)
+* On iOS the plugin doesn't block user-initiated screenshots, it only notifies the app that a screenshot was taken. OutSystems currently doesn't support this event. However, AppShield blocks taking screenshots of the iOS App Switcher.
 
-**Prerequisites**
-
-These are the prerequisites to deobfuscate the logs.
-
-* Android Studio on Mac, Linux, or Windows.
-* The mapping.txt file from the build. Please reach Support and request the mapping file. 
-* A stack trace to deobfuscate and retrace.
-
-**Steps**
-
-1. Have the mapping file ready.
-1. Locate the proguard tools, located under your Android SDK folder, usually in `$ANDROID_HOME/tools/proguard/bin`.
-1. Inside, you should have the retrace cli, or the proguardgui.
-
-    With **retrace cli**. Use the retrace command, followed by the path to the mapping file and the file with the stack trace. Or, run the command without the stack trace file and then paste the log content. 
-
-    With **proguardgui**. Click the **ReTrace** button in the left pane and locate your mapping file. Paste the obfuscated stack trace and click **ReTrace!**.
-
-    ![Proguard UI](images/proguard-log.png?width=600) 
-
-<div class="warning" markdown="1>
-
-The lines for the purposes of parsing can't have the timestamp, which is what logcat tools usually produce. Instead, the lines must start with the **at** keyword.
-
-</div>
-
-For more information about logs, see:
-
-* [Write and View Logs with Logcat](https://developer.android.com/studio/debug/am-logcat#format)
-* [ReTrace](https://www.guardsquare.com/en/products/proguard/manual/retrace)
-* [ProGuard](https://www.guardsquare.com/en/products/proguard)
+* After MABS creates a build with the AppShield plugin active, and signs the build, you can't sign that build again manually because the app would recognize that as a sign of tampering.
 
 ## Google Play App Signing
 

@@ -958,6 +958,12 @@
     - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
     - deliver-mobile/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
 
+# Harden the protection of mobile apps with AppShield
+- deliver-mobile/app-shield/intro.md:
+    - external:
+        - "Obfuscation and retracing logs of mobile builds":
+            https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Obfuscation_and_retracing_logs_of_mobile_builds
+
 # UI Web Patterns
 - develop/ui/patterns/web/content/accordion/accordion.md:
     - ref/ui-patterns/web/accordion.md

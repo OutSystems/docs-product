@@ -2,7 +2,7 @@
 summary: How to add a SOAP header element using the SOAP Extensibility API.
 ---
 
-# Example: Add SOAP header
+# Add SOAP header
 
 In this example scenario we will add a new element to the SOAP header of all requests of a consumed SOAP web service.
 

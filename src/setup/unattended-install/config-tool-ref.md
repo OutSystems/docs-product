@@ -134,11 +134,11 @@ ConfigurationTool.com
 
 `/UpgradeEnvironment`
 
-:   Installs the core components (Service Center and the System Components), and starts [preparing your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) for the new Platform Server version. Skips any of these steps if they were previously executed.
+:   Installs the core components (Service Center and the System Components), and starts [preparing your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version. Skips any of these steps if they were previously executed.
 
 `/UpgradePublishedApplications`
 
-:   Forces the [preparation of your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) for the new Platform Server version.
+:   Forces the [preparation of your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version.
 
 `/ApplySettingsFactory`
 

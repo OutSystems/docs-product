@@ -18,7 +18,7 @@ This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available
 
 </div>
 
-The goal of this document is to describe the unattended or automated processes of installing or updating OutSystems Platform Server, and adding a new front-end server.
+The goal of this document is to describe the unattended or automated processes of installing or upgrading OutSystems Platform Server in application environments, and adding a new front-end server.
 
 ## Overview
 
@@ -31,18 +31,15 @@ The process for installing or upgrading OutSystems Platform Server in unattended
 1. Install or upgrade the Platform Server binaries
 1. Only for Oracle on first install: create the database users
 1. Update the `server.hsconf` configuration file
-1. Run Configuration Tool and install Service Center
-1. Publish System Components
-1. Upload license file (requires manual intervention)
-1. Only for upgrades and updates: republish the entire factory
+1. Run the Configuration Tool
+1. Upload the license file (requires manual intervention)
+1. Only for upgrades: republish the entire factory
 
 The following sections present detailed instructions on how to install, upgrade, and add front-end servers in unattended mode.
 
-## Before You Start
+## Before you start
 
 * Download the [Installation Checklist](http://www.outsystems.com/goto/checklist-11) from OutSystems website.
-
-* To publish OutSystems Now you will need to [download OutSystems Now](https://www.outsystems.com/forge/component/580/outsystems-now/) from Forge.
 
 * The default paths used in the procedures below are the following:
 
@@ -52,7 +49,7 @@ The following sections present detailed instructions on how to install, upgrade,
 
     Adjust them if necessary.
 
-## First Install
+## First install
 
 ### 1. Install the OutSystems platform prerequisites
 
@@ -94,7 +91,6 @@ The optional `/D` switch specifies the path where the OutSystems Platform Server
 
 For more information check the [Automatic Prerequisites Installation and Configuration Tuning](../intro.md#prerequisites).
 
-
 ### 4. Only for Oracle: create the database users
 
 Follow the instructions in the **Database** section of the Installation Checklist.
@@ -117,7 +113,9 @@ To easily add a front-end later, the `CompilerServerHostname` parameter must inc
 
 Ensure that usernames and passwords are stored with the correct casing.
 
-### 6. Run Configuration Tool and install Service Center
+### 6. Run the Configuration Tool
+
+This step configures the platform, installs Service Center and installs the System Components.
 
 For SQL Server and Azure SQL Database:
 
@@ -126,7 +124,8 @@ For SQL Server and Azure SQL Database:
     /SetPlatformServerAdminPassword <platform_server_admin_password>
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
     /CreateUpgradeCacheInvalidationService
-    /SCInstall
+    /InstallServiceCenter
+    /InstallSystemComponents
 ```
 
 For Oracle:
@@ -136,16 +135,11 @@ For Oracle:
     /SetPlatformServerAdminPassword <platform_server_admin_password>
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
     /CreateUpgradeCacheInvalidationService
-    /SCInstall
+    /InstallServiceCenter
+    /InstallSystemComponents
 ```
 
-### 7. Publish System Components
-
-```
-<outsystems_common_path>\OSPTool.com /Publish "<platform_path>\System_Components.osp" <hostname> <username> <password>
-```
-
-### 8. Upload license file (requires manual intervention)
+### 7. Upload license file (requires manual intervention)
 
 Manually obtain a valid OutSystems platform license from [www.outsystems.com/licensing](http://www.outsystems.com/licensing) using the environment activation code.
 
@@ -195,30 +189,62 @@ The optional `/D` switch is ignored in an upgrade scenario.
 
 For more information check the [Automatic Prerequisites Installation and Configuration Tuning](../intro.md#prerequisites).
 
-
 ### 4. Update the server.hsconf configuration file
 
 Skip this step if no changes are necessary to the running configuration and that configuration file templates haven't changed.
 
-### 5. Run Configuration Tool and install Service Center
+### 5. Run the Configuration Tool { #upgrade-step-5 }
+
+This step configures the platform, installs Service Center, and installs the System Components. Depending on your upgrade scenario, this step also starts [preparing your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version.
+
+#### 5.1 Minor upgrades
+
+If you are upgrading from **Platform Server 11.x** to **Platform Server 11.12 or later**, after the Platform Server is upgraded, you can publish your applications gradually, following your teams' pace. You can also opt to republish all your applications right after the upgrade, but it's not a mandatory step.
+
+If you plan to **publish your applications gradually**, run the Configuration Tool as follows:
 
 ```
 <platform_path>\ConfigurationTool.com /UpgradeInstall [<admin_password>]
     [/SetPlatformServerAdminPassword <platform_server_admin_password>]
     [/RebuildSession <session_db_admin_username> <session_db_admin_password>]
     [/CreateUpgradeCacheInvalidationService]
-    /SCInstall
+    /UpgradeEnvironment
+```
+
+The above command sets the Configuration Tool to start [preparing your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform) for the new Platform Server version, without deploying them. In this scenario, you won't execute [Step 7](#upgrade-step-7) to republish all applications.
+
+If you plan to **republish all your applications right after the upgrade**, use the following instead:
+
+```
+<platform_path>\ConfigurationTool.com /UpgradeInstall [<admin_password>]
+    [/SetPlatformServerAdminPassword <platform_server_admin_password>]
+    [/RebuildSession <session_db_admin_username> <session_db_admin_password>]
+    [/CreateUpgradeCacheInvalidationService]
+    /InstallServiceCenter
+    /InstallSystemComponents
+```
+
+The above command skips the modules preparation step. In this scenario, you need to execute [Step 7](#upgrade-step-7) to republish all applications right after the upgrade.
+
+**Note:** In both cases, you need to include the `/SetPlatformServerAdminPassword <platform_server_admin_password>` argument if the Admin user of Platform Server is active and its password is still defined as 'admin'.
+
+#### 5.2 Major upgrades
+
+If you are upgrading from **Platform Server 10 or previous** to **Platform Server 11**, run the Configuration Tool as follows:
+
+```
+<platform_path>\ConfigurationTool.com /UpgradeInstall [<admin_password>]
+    [/SetPlatformServerAdminPassword <platform_server_admin_password>]
+    [/RebuildSession <session_db_admin_username> <session_db_admin_password>]
+    [/CreateUpgradeCacheInvalidationService]
+    /UpgradeEnvironment
 ```
 
 **Note:** You need to include the `/SetPlatformServerAdminPassword <platform_server_admin_password>` argument if the Admin user of Platform Server is active and its password is still defined as 'admin'.
 
-### 6. Publish System Components
+In major upgrades, the module preparation is skipped, thus you are required to republish all applications right after the upgrade ([Step 7](#upgrade-step-7)).
 
-```
-<outsystems_common_path>\OSPTool.com /Publish "<platform_path>\System_Components.osp" <hostname> <username> <password>
-```
-
-### 7. Upload license file (requires manual intervention)
+### 6. Upload the license file (requires manual intervention)
 
 Skip this step if the existing license is valid for the OutSystems version you're upgrading to.
 
@@ -228,7 +254,20 @@ Manually obtain a valid OutSystems platform license from [www.outsystems.com/lic
 <platform_path>\ConfigurationTool.com /UploadLicense <license_file.lic>
 ```
 
-### 8. Republish the entire factory
+### 7. Only for upgrades: republish the entire factory { #upgrade-step-7 }
+
+<div class="info" markdown="1">
+
+This step is not mandatory for minor upgrades. Don't run this step if you are doing a **minor upgrade** and you plan to **publish your applications gradually**. For this case, you must run the Configuration Tool in [Step 5](#upgrade-step-5) to start preparing your modules for the new Platform Server version, without deploying them.
+
+</div>
+
+Execute this step only if you are:
+
+* Doing a major upgrade (from **Platform Server 10 or previous** to **Platform Server 11**)
+* Doing a minor upgrade, and you opt to **republish all your applications** right after the upgrade
+
+Run the following:
 
 ```
 <outsystems_common_path>\OSPTool.com /PublishFactory <hostname> <username> <password>
@@ -262,7 +301,7 @@ Copy the following files from the **controller** machine to the **front-end** ma
 
 * `<platform_path>\server.hsconf`
 
-### 3. Run Configuration Tool
+### 3. Run the Configuration Tool
 
 For SQL Server and Azure SQL Database:
 

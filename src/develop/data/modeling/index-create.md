@@ -22,7 +22,7 @@ In the GoOutWeb application, an application to find and review interesting place
 
 To create a unique index in the  Review  entity to ensure this restriction:
 
-1. Open the  Review  entity.
+1. Open the  Review  entity by right-clicing on the entity and clicking "Edit Entity."
 
 2. In the Indexes tab, add a new index and name it `UniqueReview`.
 

@@ -33,8 +33,6 @@ Do the following:
 
 1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Next**.
 
-    ![Dialog to choose one of the available server endpoints](images/ss-rest-consume-multiples-server-endpoint-dialog.png?width=582)
-
     _Note:_ You can't change the server endpoint after importing the REST API.
 
 1. Choose the REST API methods you want to import (by default, all methods) and click **Finish**.

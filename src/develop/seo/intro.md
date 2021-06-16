@@ -44,7 +44,7 @@ See [Managing site rules](#managing-site-rules) for instructions.
 
 ## Custom Screen URLs
 
-A custom Screen URL works on the module level, letting you to change how the URL of one screen shows in the browser. The Screen **ProductListSection** from your module can load from the URL /`Products` instead of `/ProductListSection`. Custom Screen URLs support having the parameters on the path instead of using the query string, so you can redirect users to the URL `/Products/1` that would without the custom URL load as `/Products?Id=1`.
+A custom Screen URL works on the module level, letting you change how the URL of one screen shows in the browser. The Screen **ProductListSection** from your module can load from the URL /`Products` instead of `/ProductListSection`. Custom Screen URLs support having the parameters on the path instead of using the query string, so you can redirect users to the URL `/Products/1` that would without the custom URL load as `/Products?Id=1`.
 
 The following table shows examples of custom Screen URLs:
 
@@ -107,6 +107,8 @@ When working with Site Rules, keep in mind the following:
 You can add custom Screen URLs in Service Studio. Go to the properties of the Screen to which you want to set the name. Then, set **Custom URL** to **Yes** in the **Advanced** section and edit the URL structure.
 
 ![Screen URLs settings and properties](images/page-redirects-properties-ss.png?width=350)
+
+If an app passes an empty string as a value for a required parameter, the users see an error message. See [Empty string in a required parameter causes an error](troubleshooting.md#empty-string-in-a-required-parameter-causes-an-error) for more information.
 
 Here are more details about the properties.
 

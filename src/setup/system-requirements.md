@@ -42,7 +42,7 @@ Future revisions of OutSystems may require the installation of an update within 
 
 Keep in mind that you must use the same flavour of database engine for the 3 databases used by the platform (platform and apps, logs, session). Combinations of database engines, for example, using SQL Server for the platform database and Azure SQL database for the logs and or session databases (or any other combination), are not supported.
 
-* Microsoft SQL Server at compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
+* Microsoft SQL Server 2019 and compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
 * Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
@@ -83,9 +83,9 @@ OutSystems can run on Amazon EC2 instances. Each instance must fulfill the follo
 
 For more information on how to enable this service check Amazon's [EC2Config service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2config-service.html).
 
-## Amazon RDS considerations 
+## Amazon RDS considerations
 
-OutSystems supports Microsoft SQL Server at compatibility level 150, Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
+OutSystems supports Microsoft SQL Server 2019 and compatibility level 150 (since Platform Server 11.12.0), Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
 
 * 1 vCPU (virtual central processing unit) or higher
 * 1 ECU (EC2 Compute Unit) or higher
@@ -116,7 +116,7 @@ The following systems are certified to integrate with OutSystems.
 
 ### SQL Server Database
 
-* Microsoft SQL Server at compatibility level 150
+* Microsoft SQL Server 2019 and compatibility level 150, since Platform Server 11.12.0
 * Microsoft SQL Server 2017
 * Microsoft SQL Server 2016
 * Microsoft SQL Server 2014

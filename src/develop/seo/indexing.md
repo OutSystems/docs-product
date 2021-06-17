@@ -5,7 +5,7 @@ tags:
 
 # Sitemap.xml and robots.txt
 
-The **sitemap.xml** and **robots.txt** files let you control website crawlers and indexing the public pages in your apps. Check information in this document and the [sample app](files/sitemap-and-robots.oap) that shows how to generate and deploy a sitemap file.
+The **sitemap.xml** and **robots.txt** files let you control website crawlers and indexing the public pages in your apps. Check information in this document and the [sample app](#sample-app) to generate and deploy the files.
 
 <div class="info" markdown="1">
 
@@ -78,6 +78,18 @@ To deploy a static file, follow these steps in Service Studio:
 
 To generate the list of URLs, create a REST endpoint that outputs the list as text. You need to add the hostname and the list of static screens, but you can generate the subpages by looping over the data in Aggregates.
 
-[Download the sample app](files/sitemap-and-robots.oap), open it in Service Studio. Check the logic in **Logic** > **Integrations** > **REST** > **Sitemap**. The logic shows how to generate links for your content. To see the list or URLs the method generates, right-click **Sitemap** and select **Open Documentation**.
+[Download and install the sample app](#sample-app) and open it in Service Studio. Check the logic in **Logic** > **Integrations** > **REST** > **Sitemap**. The logic shows how to generate links for your content. To see the list or URLs the method generates, right-click **Sitemap** and select **Open Documentation**.
+
+
+## Sample app
+
+You can [download the sample app](files/sitemap-and-robots.oap), install it in your environment, and open it in Service Studio. The app contains examples of how to deploy and generate **sitemap.xml** and **robots.txt**.
+
+When working with the sample app, keep in mind the following:
+
+* You need to activate the technical preview **SEO-friendly URLs for Reactive Web Apps**. See [the prerequisites](intro.md#prerequisites).
+* You can't install the sample app in a Personal Environment, only in the cloud environments managed by OutSystems or properly configured on-premises installations.
+* The app uses sample data from the OutSystems UI, a default component in OutSystems installations.
+* You have some feedback? Great! Use the feedback box in the page to send us a message.
 
 ![REST logic to generate the URLs](images/rest-sitemap-ss.png?width=800)

@@ -181,7 +181,6 @@
                     - href: develop/ui/patterns/mobile/interaction/animate.md
                     - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
                     - href: develop/ui/patterns/mobile/interaction/carousel.md
-                - topics:
                     - href: develop/ui/patterns/mobile/interaction/datepicker/intro.md
                     - topics:
                         - href: develop/ui/patterns/mobile/interaction/datepicker/datepicker.md

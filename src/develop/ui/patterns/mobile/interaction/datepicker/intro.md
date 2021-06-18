@@ -9,7 +9,7 @@ You can use the Date Picker UI Pattern to allow users select a single date or a 
 
 <div class ="info" markdown="1">
 
-Only use the Date Picker Pattern if you really need the more advanced use cases it provides. As a general good practice in web development, especially when targeting Mobile, using the HTML [input type="date"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date) should be prioritized, because by default, it provides the best user experience and accessibility across all browsers with very low impact to performance.
+Only use the Date Picker Pattern if you really need the more advanced use cases it provides. As a general good practice in web development, especially when targeting Mobile, using the HTML [input type=date](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date) should be prioritized, because by default, it provides the best user experience and accessibility across all browsers with very low impact to performance.
 
 </div>
 

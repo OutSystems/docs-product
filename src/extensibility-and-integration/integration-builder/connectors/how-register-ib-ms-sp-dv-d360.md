@@ -56,19 +56,15 @@ To add and request application permissions for your environment, choose either t
 
 1. Below Configured permissions, click **Add a permission** to open the Request API permissions window.
 
-    ![add a permission](images/ms-azure-permission-selected.png)
-
 1. Click **SharePoint**.
 
 1. Select **Application Permissions**.
 
-1. From the list of permissions, continue to scroll, click **Sites** and select **Sites.Read.All (Read items in all site collections**). Click **Add permissions**.
+1. From the list of permissions, continue to scroll, click **Sites** and select **Sites.ReadWrite.All**. Click **Add permissions**.
 
     <div class="info" markdown="1">
 
     A warning message may display in the Add a Permissions list, indicating the permission was not granted for OutSystems Integration team.
-
-    ![Grant permission SharePoint](images/ms-azure-sp-grant-permissions.png)
 
     </div>
 

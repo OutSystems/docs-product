@@ -39,7 +39,7 @@ Entities
 Actions
 :   Actions available in the SAP service you want to invoke from OutSystems applications.
 
-## Authentication methods
+## Authentication methods { #authorize-integration }
 
 SAP connections support the following authentication methods through Integration Manager:
 

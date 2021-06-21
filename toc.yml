@@ -595,6 +595,10 @@
             - href: extensibility-and-integration/integration-builder/connectors/integration-ms-dataverse.md
             - href: extensibility-and-integration/integration-builder/connectors/integration-ms-dynamics.md
             - href: extensibility-and-integration/integration-builder/connectors/integration-ms-sharepoint.md
+            - href: extensibility-and-integration/integration-builder/connectors/auth-without-admin-intro.md
+            - topics:
+                - href: extensibility-and-integration/integration-builder/connectors/integration-salesforce-oauth-client.md
+                - href: extensibility-and-integration/integration-builder/connectors/how-register-ib-ms-sp-dv-d360.md
         - href: extensibility-and-integration/integration-builder/structure.md
         - href: extensibility-and-integration/integration-builder/troubleshoot.md
 

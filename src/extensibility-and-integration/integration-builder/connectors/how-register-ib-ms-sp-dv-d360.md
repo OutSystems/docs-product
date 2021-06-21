@@ -1,9 +1,10 @@
 ---
-summary: Register Integration SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 360  applications in Azure AD to authenticate and authorize users. 
+summary: Register Integration SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 applications in Azure AD to authenticate and authorize users. 
 ---
-# How to register SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 360 apps in the Azure Active Directory
+# How to register SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 apps in the Azure Active Directory
 
-OutSystems owns and manages the Azure Active Directory application you are using for authentication and authorization. This provides another level of trust for our customers. Microsoft uses the Azure portal to authenticate and authorize services for your app and users. To use the authentication and authorization services, you must register your app in the Azure AD (Active Directory). Integration Builder can then access your Microsoft SharePoint. Microsoft Dataverse, or Microsoft Dynamics 360 environments through the Azure AD application.
+OutSystems owns and manages the Azure Active Directory application you are using for authentication and authorization. This provides another level of trust for our customers. Microsoft uses the Azure portal to authenticate and authorize services for your app and users. To use the authentication and authorization services, you must register your app in the Azure AD (Active Directory). Integration Builder can then access your Microsoft SharePoint. Microsoft Dataverse, or Microsoft Dynamics 365 environments through the Azure AD application.
+
 
 The procedure to register your application includes the following:
 
@@ -33,7 +34,7 @@ The procedure to register your application includes the following:
 
     * For **SharePoint Online**: `OutSystems SharePoint`
     * For **Microsoft Dataverse**:  `OutSystems Dataverse`
-    * For **Microsoft Dynamics 360**: `OutSystems Dynamics 360`
+    * For **Microsoft Dynamics 365**: `OutSystems Dynamics 365`
 
 1. In the Supported account types section, select **Accounts in this organizational directory only (\<organization name\> only - Single tenant)**.
 
@@ -47,7 +48,7 @@ The procedure to register your application includes the following:
 
 ## Adding and requesting application permissions
 
-To add and request application permissions for your environment, choose either the SharePoint Online, Microsoft Dataverse / Microsoft Dynamics 360 procedure.
+To add and request application permissions for your environment, choose either the SharePoint Online, Microsoft Dataverse / Microsoft Dynamics 365 procedure.
 
 ### Adding SharePoint Online permissions
 
@@ -73,7 +74,7 @@ To add and request application permissions for your environment, choose either t
 
 1. Optionally, to grant permission, click the **Grant admin consent for OutSystems Integrations Team** link.
 
-### Adding Microsoft Dataverse or Microsoft Dynamics 360 permissions
+### Adding Microsoft Dataverse or Microsoft Dynamics 365 permissions
 
 1. From the left menu pane, click **API permissions**.
 

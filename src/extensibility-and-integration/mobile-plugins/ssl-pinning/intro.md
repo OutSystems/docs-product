@@ -7,23 +7,34 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 
 In native mobile apps, SSL Pinning or HTTP Public Key Pinning (HPKP) provides an extra layer of security to HTTPS communications to avoid, for example, man-in-the-middle attacks. SSL Pinning works client-side and verifies the server certificate by comparing hashes of public keys that are pre-bundled with the mobile app.
 
-Keep in mind that, by design, calls to server actions stop working if there's a hash mismatch. In this case, you need to add a new hash list in the app, build a new version of the app, and distribute it to your users. To anticipate the hash mismatches, you can design the app so that it checks if the certificate is valid or not. For more information, see [Check the hash validity](#check-the-hash-validity) section.
+By design, if there's a hash mismatch, calls to server actions stop working.  If there's a hash mismatch, you must add a new hash list in the app, build a new version of the app, and distribute it to your users. To prevent a  hash mismatch, design the app to verify the certificate is valid. For more information, see [Check the hash validity](#check-the-hash-validity) section.
 
 SSL Pinning uses a customized version of the SSL certificate validation and doesn't rely on deprecated SSL Pinning in browsers.
-
-Avoid using the SSL Pinning plugin in production with the default certificate provided by the OutSystems cloud as your apps won't work when OutSystems renews the certificate. In general, you should always **use the certificate for which you have the certificate keys**.
-
-<div class="info" markdown="1">
-
-If you update the [configuration file](#create-the-configuration-file) of the SSL Pinning plugin in new versions of your app, you need to run the app build creation manually. See: [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
-
-</div>
 
 <div class="info" markdown="1">
 
 See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
 
 </div>
+
+## Important note about certificates
+
+To keep your environments secure, OutSystems continuously updates server certificates for their domains. This is important especially if your environments use OutSystems default domains and certificates.
+
+When certificates change, environments using these certificates in their apps can stop working. To fix this problem, you must generate a new app and distribute the app. If OutSystems is unable to notify you every time there is a change, everyone involved is at risk.
+
+OutSystems no longer supports the generation of the native mobile apps when using SSL Pinning to pin your apps to OutSystems managed certificates. This change affects all environments, production and non-production. If this change affects your environments, get new domains and certificates and provide them to OutSystems.
+
+To give you time to get the necessary assets, OutSystems is providing a grace period ending **September 30, 2021** during which you can still generate apps with the OutSystems certificates, **provided** you use the following setting in the Extensibility Configurations JSON: 
+
+        {
+            "preferences": {
+                "global": [{
+                    "name": "BypassOSDomainsValidation",
+                    "value": "true"
+                }]
+            }
+        }
 
 ## How to implement SSL pinning in OutSystems
 
@@ -36,6 +47,12 @@ To implement SSL Pinning, follow these steps:
 1. Install the SSL Pinning from Forge.
 1. Add the configuration file to your mobile app.
 1. Validate that certificates are working only for the hashes in the mobile app.
+
+<div class="info" markdown="1">
+
+If you update the [configuration file](#create-the-configuration-file) of the SSL Pinning plugin in new versions of your app, you need to run the app build creation manually. See: [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
+
+</div>
 
 ### Generate the hashes for public keys
 

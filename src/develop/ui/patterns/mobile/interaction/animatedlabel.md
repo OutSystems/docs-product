@@ -39,7 +39,7 @@ You can use the Animated Label UI Pattern to animate a label when there is a use
 
 1. On the **Properties** tab, you can change the look and feel of the Animated Label by setting the (optional) properties.
 
-    ![](<images/animatedlabel-3-ss.png>)
+    ![](<images/animatedlabel-5-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -47,4 +47,4 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| ExtendedClass (Text): Optional | Add custom style classes to the Animated Label UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Animated Label UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Animated Label UI styles being applied.</li></ul> |
+| ExtendedClass (Text): Optional | Add custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the styles being applied.</li></ul> |

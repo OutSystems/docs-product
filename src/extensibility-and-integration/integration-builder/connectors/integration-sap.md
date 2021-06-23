@@ -2,6 +2,12 @@
 
 The SAP OData integration allows you to perform operations on SAP entities and call SAP actions from your OutSystems applications.
 
+<div class="info" markown="1">
+
+
+
+</div>
+
 ## Prerequisites
 
 * Make sure you meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).
@@ -33,7 +39,7 @@ Entities
 Actions
 :   Actions available in the SAP service you want to invoke from OutSystems applications.
 
-## Authentication methods
+## Authentication methods { #authorize-integration }
 
 SAP connections support the following authentication methods through Integration Manager:
 
@@ -60,3 +66,7 @@ When Integration Builder can't determine the OData version from the service spec
 It's very important that you select the correct OData version when importing the service specification. **Selecting the incorrect OData version causes runtime issues.**
 
 </div>
+
+### Use the integration in Service Studio
+
+Check [how to use the integration in Service Studio](../use.md#use).

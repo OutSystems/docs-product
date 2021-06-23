@@ -36,7 +36,7 @@ To add a Static Entity to your app, do the following in Service Studio:
 Service Studio creates the following Attributes automatically:
 
 **Id**
-:   Identifies a record and is always unique. It's the only Attribute in the Static Entity that can be auto-number.
+:   Identifies a record and is always unique. Using auto-number is not recommended, as it might generate issues in complex scenarios.
 
 **Label**
 :   Holds a value to display in an application.

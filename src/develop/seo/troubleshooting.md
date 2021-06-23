@@ -92,8 +92,8 @@ The following sections cover more technical details related to the known issues.
 
 ### Empty string in a required parameter causes an error
 
-When the app runtime passes an **empty string** as a value for a **required parameter** of the Text data type, the screen can't load. The users of the app see the following error:
+When the app runtime passes an **empty string** as a value for a **required parameter** of the Text data type, by design the screen can't load. The users of the app see the following error:
 
-* Error building URL for (screen name)/:(parameter name). Parameter (parameter name) is missing or has an empty value
+* Error building URL for (screen name)/:(parameter name). Parameter (parameter name) is missing or has an empty value.
 
-As a fix, try configuring the Screen without parameters on the path.
+Try configuring the Screen without parameters on the path.

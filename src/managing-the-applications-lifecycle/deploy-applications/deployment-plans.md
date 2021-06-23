@@ -1,5 +1,5 @@
 ---
-summary: Use deployment plans to take changes done in applications from one environment to another.
+summary: Use deployment plans to take changes done in applications from one environment to another. Select tagged application stable versions and include release notes.
 ---
 
 # Deployment Plans
@@ -8,9 +8,9 @@ A **deployment plan** allows you deploy application changes like new features an
 
 A deployment plan can contain:
 
-* Applications
-* Version tag information
-* Deployment notes
+* The applications to be deployed
+* Version tag information, that can be used to tag stable versions of apps
+* Deployment notes, including the release notes
 * Settings like [Site Property values](tp-configure-site-properties-during-deploy.md)
 
 You create deployment plans in LifeTime in the **Applications** screen.

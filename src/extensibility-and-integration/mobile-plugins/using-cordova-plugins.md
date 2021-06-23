@@ -87,9 +87,9 @@ Here is an example:
 
 ## Wrapper Module Structure
 
-Each plugin should have a `Check<Capability>Plugin` action (e.g. "CheckCameraPlugin") with an IsAvailable output parameter of type Boolean. This enables you to check if the plugin is available in the target module.
+Each plugin should have a `Check<Capability>Plugin` action (e.g. "CheckToastyPlugin") with an IsAvailable output parameter of type Boolean. This enables you to check if the plugin is available in the target module.
 
-Create actions within the wrapper module and add a JavaScript flow element with the variables. Make the actions public so that they are available in the application. Write the descriptions for all the public actions, inputs and outputs. This helps when using the module in the target application.
+Create actions (e.g. "ShowToast") within the wrapper module and add a JavaScript flow element with the variables. Make the actions public so that they are available in the application. Write the descriptions for all the public actions, inputs and outputs. This helps when using the module in the target application.
 
 ![](<images/plugin-exensibility-actions.png>)
 

@@ -70,8 +70,7 @@ See [Your Complete Guide to BDD Testing in OutSystems] for more information on c
 If you're interested in learning more, including about best practices, see the following resources. These pages provide information to help you master the art of automated testing.
 
 * [Component Testing Best Practices video] -- A video detailing best practices for structuring and organizing test code for component tests.
-* [Your Complete Guide to BDD Testing in OutSystems] -- A thorough how-to guide on implementing your first test case with the BDDFramework
-* [Becoming a Tester in OutSystems] -- Guided Path training on implementing tests and testing strategy  
+* [Your Complete Guide to BDD Testing in OutSystems] -- A thorough how-to guide on implementing your first test case with the BDDFramework 
 * [BDDFramework documentation page] -- A summary of the latest changes and features for the server-side tool
 * [BDDFramework for Client-Side documentation page] -- A summary of the latest changes and features for the client-side tool
 
@@ -83,7 +82,6 @@ If you're interested in learning more, including about best practices, see the f
 
 [Your Complete Guide to BDD Testing in Outsystems]: https://www.outsystems.com/blog/posts/bdd-testing/
 [Component Testing Best Practices video]: https://www.outsystems.com/training/courses/180/component-testing/?LearningPathId=10
-[Becoming a Tester in OutSystems]: https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/
 
 [BDDFramework documentation page]: https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1201&ProjectName=bddframework
 [BDDFramework for Client-Side documentation page]: https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=10917&ProjectName=bddframework-client-side

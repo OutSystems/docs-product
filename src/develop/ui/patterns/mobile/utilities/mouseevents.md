@@ -17,7 +17,7 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
     ![](images/mouseevents-1-ss.png)
 
-1. From the Toolbox, drag the Mousse Events widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the Mouse Events widget into the Main Content area of your application's screen.
 
     ![](images/mouseevents-2-ss.png)
 

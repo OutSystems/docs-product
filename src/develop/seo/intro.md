@@ -11,11 +11,11 @@ Use **SEO-friendly URLs for Reactive Web Apps** to create the SEO-friendly versi
 
 **SEO-friendly URLs for Reactive Web Apps** is a technical preview feature. To use it you must meet the following requirements:
 
-* You're using Platform Server 11.12.0 or later.
-* Your Service Studio is up to date.
-* The [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **SEO-friendly URLs for Reactive Web Apps** is active in LifeTime for all environments.
-* You're using an OutSystems enterprise cloud offer or a properly configured on-premises installation.
-* For on-premises installations only, verify that the [ISAPI Filters](<https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Customize_or_redirect_the_application_URL#Installing_ISAPI_Filters_and_Logging>) are active in your environment.
+* Platform Server 11.12.0 or later 
+* Service Studio 11.11.0 or later
+* [Technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **SEO-friendly URLs for Reactive Web Apps** is active in LifeTime for all environments.
+* OutSystems enterprise cloud offer or a properly configured on-premises installation
+* On-premises installations must have [ISAPI Filters](<https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Customize_or_redirect_the_application_URL#Installing_ISAPI_Filters_and_Logging>) active
 
 <div class="warning" markdown="1">
 
@@ -28,7 +28,7 @@ Use **SEO-friendly URLs for Reactive Web Apps** to create the SEO-friendly versi
 
 ## Site Rules
 
-A Site Rule maps the URL to a module in the environment. If users enter `www.example.com` in the browser, the platform loads the the **MyMainModule** home screen.
+A Site Rule maps the URL to a module in the environment. If users enter `www.example.com` in the browser, the platform loads the **MyMainModule** home screen.
 
 The following table shows examples of Site Rules:
 
@@ -128,7 +128,7 @@ When working with custom URLs, keep in mind that:
     * 'img'
     * 'Blocks'
     * 'rest'
-* The following strings are not supported because you cannot have a "/" between them:
+* The following strings are not supported because you can't have a "/" between them:
 
     * screenservices/list
     * List/screenservices/List

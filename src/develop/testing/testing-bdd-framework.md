@@ -7,15 +7,20 @@ tags:
  
 This article describes how to install and start using the BDDFramework tools to implement automated and structured component testing. Component testing in OutSystems covers testing **Actions** and exposed **Services** that make up an application's logic. 
 
+Component testing in OutSystems includes the following standard test types:
+* Unit Tests, which developers maintain, focus on individual units of code or components that are owned by a single team
+* Integration Tests, which test whether two or more components work together; these touch a broader application scope than unit testing and the tested code usually belongs to two or more teams
+* API Tests, which verify the contract between consumer and provider and the behavior of your application's existing API endpoints
+
  Separate BDDFramework tools exist for server-side and client-side testing. 
 
 * [BDDFramework](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1201&ProjectName=bddframework) - Allows you to test public Server Actions
 * [BDDFramework for Client-Side](https://www.outsystems.com/forge/component-overview/10917/bddframework-client-side) - Allows you to test public Client Actions
 
 
-Both tools provide a similar user experience as well as the following features:
+Both tools provide a similar user experience and the following features:
 * Tests use Gherkin-like syntax and offer a visual representation of test execution
-* Test structure is created using Web Blocks that the tool provides
+* You create the test structure using Web Blocks that the tool provides
 * Test code is implemented through actions that are bound to each used Web Block
 * Test Web Blocks are organized into normal screens called Test Suites
 
@@ -65,7 +70,7 @@ Suppose you have an OutSystems application named **ACME Services** that you want
 See [Your Complete Guide to BDD Testing in OutSystems] for more information on creating tests.
 
 
-## Learn more
+## Learn more about component testing
 
 If you're interested in learning more, including about best practices, see the following resources. These pages provide information to help you master the art of automated testing.
 
@@ -73,6 +78,14 @@ If you're interested in learning more, including about best practices, see the f
 * [Your Complete Guide to BDD Testing in OutSystems] -- A thorough how-to guide on implementing your first test case with the BDDFramework 
 * [BDDFramework documentation page] -- A summary of the latest changes and features for the server-side tool
 * [BDDFramework for Client-Side documentation page] -- A summary of the latest changes and features for the client-side tool
+
+## Learn more about testing with OutSystems
+
+The following resources provide general information about planning and executing tests with OutSystems.
+* [Developing for testability](/develop-test.md) -- Conceptual information to help you integrate testing with the development process.
+* [Becoming a Tester in OutSystems](https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/) -- Guided path training on implementing tests and testing strategy
+* [Test automation in the delivery life cycle](/managing-the-application-lifecycle/test-automation-in-delivery-lifecycle.md) -- Test automation planning, roles and process.
+* [OutSystems testing guidelines](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines) -- Includes articles on test strategy, tools, and types of tests.
 
 
 [Forge portal]: https://www.outsystems.com/forge/

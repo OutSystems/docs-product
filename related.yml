@@ -1530,6 +1530,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightBoxImage.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46
+- develop/ui/patterns/mobile/interaction/map/intro.md:
+    - external:
+        - "OutSystems Troubleshooting": 
+            https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Known_issue_with_the_Map_component_for_Reactive_Web_apps
 - develop/ui/patterns/mobile/interaction/notification.md:
     - external:
         - "OutSystems UI Pattern":

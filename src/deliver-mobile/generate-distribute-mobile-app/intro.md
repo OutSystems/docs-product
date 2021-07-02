@@ -61,11 +61,6 @@ Now that you have configured the app, the next time you need to generate a new m
 
 ### Customizing the Mobile App Domain Name { #customizing-the-mobile-app-domain-name }
 
-<div class="info" markdown="1">
-
-This feature is only available in OutSystems on-premises installations.
-
-</div>
 
 For some cases, you might need to change the domain name associated with your mobile app, like when you have internal security policies dictating that different mobile apps should have different associated domain names and SSL certificates.
 

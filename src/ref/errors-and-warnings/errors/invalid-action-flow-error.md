@@ -32,12 +32,12 @@ For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Ac
 
 You have an element that belongs simultaneously to different Start, Exception Handler, or For Each paths.
 
-    **Examples**  
+**Examples**  
 
-    | Flow        | Description  |
-    |:-----------:|:-------------|
-    | ![](images/ambiguous-paths-1.png) | In this situation, the Assign element belongs to the Action flow and also to the Exception flow, therefore the Error Handler flow is crossing the regular execution of the Action. |
-    | ![](images/ambiguous-paths-2.png) | In this situation, the Assign element belongs to the Action flow and also to the For Each flow. |
+| Flow        | Description  |
+|:-----------:|:-------------|
+| ![](images/ambiguous-paths-1.png) | In this situation, the Assign element belongs to the Action flow and also to the Exception flow, therefore the Error Handler flow is crossing the regular execution of the Action. |
+| ![](images/ambiguous-paths-2.png) | In this situation, the Assign element belongs to the Action flow and also to the For Each flow. |
 
 Alternatively, there are missing paths in a node of your Action. For example, you have a For Each node with no Cycle loop path.
 

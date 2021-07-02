@@ -1,48 +1,51 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Invalid Data Type TrueChange errors.
 tags:
+en_title:
 ---
 
 # Invalid Data Type Error
 
-Message
-:   `Incompatible data types in <operator> operator`
+The Invalid Data Type Error is issued, for example, when you use an [Expression](../../../ref/logic/expressions/intro.md) widget or a REST API method.
 
-Cause
-:   The data types aren't compatible with the operator you are using.
+Double-click on the error line in TrueChange to take you directly to the expression that is issuing the error.
 
-Recommendation
-:   Check the [allowed data types for the `<operator>` operator](../../logic/expressions/operators.md), and ensure you only use allowed data types in the operation.
+## Incompatible data types in &lt;operator> operator
 
----
-  
-Message
-:   `<data-type-needed> data type required instead of <data-type-used>`
+**Cause**
 
-Cause
-:   The property or operator is set with the wrong data type, `<data-type-used>`.
+You are using data types with an operator which are not compatible with it. 
 
-Recommendation
-:   Set the property or operator to the correct data type, `<data-type-needed>`.
+**Recommended action**
 
----
+Check the data types for the [operator](../../logic/expressions/operators.md) `<operator>` and ensure you use only allowed [data types](../../../ref/data/data-types/available-data-types.md) in the operation.
 
-Message
-:  `Invalid 'Null Value' data type for specified variable`
+## &lt;data-type-needed> data type required instead of &lt;data-type-used>
 
-Cause
-:   The **Null Value** property defined is incompatible with the **Variable** assigned to the **Input** widget.
+**Cause**
 
-Recommendation
-:   Set **Null Value** as a value of the same data type as the **Variable** assigned to the **Input** widget. For example, if you assinged a Boolean variable to the Input set the **Null Value** as `False`.
+You are using a property or operator which is set with the incorrect data type, `<data-type-used>`.
 
----
+**Recommended action**
 
-Message
-:   `Cannot send a 'Binary Data' parameter in the request '<send in>' of a method with '<request format>' request format. Change the parameter data type or the method request format.`
+Set the property or [operator](../../logic/expressions/operators.md) to the correct [data type](../../../ref/data/data-types/available-data-types.md), `<data-type-needed>`.
 
-Cause
-:    In a REST API method, the request format doesn't allow you to send Binary Data in the place that's set for the parameter.
+## Invalid 'Null Value' data type for specified variable
 
-Recommendation
-:    Change the parameter data type or the method request format.
+**Cause**
+
+You are using a Null Value property which is incompatible with the Variable assigned to the Input widget.
+
+**Recommended action**
+
+Set the Null Value property to a value of the same [data type](../../../ref/data/data-types/available-data-types.md) as the Variable assigned to the [Input widget](../../../ref/lang/auto/Class.Input%20Widget.final.md). For example, if you assigned a Boolean variable to the Input, set Null Value as `False`.
+
+## Cannot send a 'Binary Data' parameter in the request &lt;send in> of a method with &lt;request format> request format. Change the parameter data type or the method request format.
+
+**Cause**
+
+In a REST API method request, you are defining a parameter and setting it to the Binary Data data type, and the method request format does not correspond with this.
+
+**Recommended action**
+
+Change the [data type](../../../ref/data/data-types/available-data-types.md) of the [parameter](../../../ref/lang/auto/ServiceStudio.Plugin.REST.RestActionInput.final.md) or the request format of the [REST API method](../../../ref/lang/auto/ServiceStudio.Plugin.REST.RestAction.final.md).

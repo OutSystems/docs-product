@@ -57,22 +57,20 @@ Suppose you have an OutSystems application named **ACME Services** that you want
 2. Right-click **TestFlow** and select **Add Web Screen**.
     ![](images/testflow-1.png)
 
-3. You may see a message that new templates are loading. When done loading, click **Refresh** to update the list of templates. New templates for the BDDFramework appear in the list.
+3. You may see a message that new templates are loading. When loading completes, click **Refresh** to update the list of templates. New templates for the BDDFramework appear in the list.
 
 4. Select **New Test Suite**, type **MyFirst_TestSuite** in the name field, and click **Create Screen.**
  
      ![](images/new-test-suite.png)
 
-    The screen contains a test structure and it's' added to the UI Flow.
+    The screen contains a test structure that's added to the UI Flow.
 
-12. You can now start implementing the code for your test. 
-
-See [Your Complete Guide to BDD Testing in OutSystems] for more information on creating tests.
+12. Start implementing the code for your test. See [Your Complete Guide to BDD Testing in OutSystems] for more information on creating specific tests.
 
 
 ## Learn more about component testing
 
-If you're interested in learning more, including about best practices, see the following resources. These pages provide information to help you master the art of automated testing.
+If you're interested in learning more about component testing and about best practices, see the following resources. These pages provide information to help you master the art of automated testing.
 
 * [Component Testing Best Practices video] -- A video detailing best practices for structuring and organizing test code for component tests.
 * [Your Complete Guide to BDD Testing in OutSystems] -- A thorough how-to guide on implementing your first test case with the BDDFramework 
@@ -82,9 +80,10 @@ If you're interested in learning more, including about best practices, see the f
 ## Learn more about testing with OutSystems
 
 The following resources provide general information about planning and executing tests with OutSystems.
-* [Developing for testability](/develop-test.md) -- Conceptual information to help you integrate testing with the development process.
+
+* [Developing for testability](develop-test.md) -- Conceptual information to help you integrate testing with the development process.
 * [Becoming a Tester in OutSystems](https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/) -- Guided path training on implementing tests and testing strategy
-* [Test automation in the delivery life cycle](/managing-the-application-lifecycle/test-automation-in-delivery-lifecycle.md) -- Test automation planning, roles and process.
+* [Test automation in the delivery life cycle](../../managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md) -- Test automation planning, roles and process.
 * [OutSystems testing guidelines](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines) -- Includes articles on test strategy, tools, and types of tests.
 
 

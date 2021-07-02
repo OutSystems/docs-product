@@ -11,7 +11,7 @@ OutSystems provides tools, guidance, and best practices for implementing automat
 ## Component testing with BDDFramework tools
 Component testing is the process of testing Actions and exposed Services that make up an application's logic. Component testing in OutSystems spans multiple test types, including unit, integration, and API tests. BDDFramework is the recommended tool for planning and executing component testing. The following resources provide more information.
 
-* [Component testing with BDDFramework tools](/testing-bdd-framework.md) -- Introduction to BDDFramework tools that includes installation and getting started steps
+* [Component testing with BDDFramework tools](testing-bdd-framework.md) -- Introduction to BDDFramework tools that includes installation and getting started steps
 * [Your Complete Guide to BDD Testing in OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) -- Comprehensive blog post describing how to use the BDDFramework for server-side testing 
 * [Component testing](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Component_Testing) -- Best practices for implementing component tests
 
@@ -28,6 +28,7 @@ Considerations and best practices for [web UI testing](https://success.outsystem
 ## More information and training 
 The following resources provide general information about planning and executing tests with OutSystems.
 
-* [Developing for testability](/develop-test.md) -- Conceptual information to help you integrate testing with the development process.
+* [Developing for testability](develop-test.md) -- Conceptual information to help you integrate testing with the development process
 * [Becoming a Tester in OutSystems](https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems) -- Guided path training on implementing tests and testing strategy  
-* [Test automation in the delivery life cycle](/managing-the-application-lifecycle/test-automation-in-the-delivery-lifecycle.md) -- Considerations when implementing test automation, including acceptance criteria and definition of ready and definition of done
+* [Test automation in the delivery life cycle](../../managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md) -- 
+Considerations when implementing test automation, including acceptance criteria and definition of ready and definition of done

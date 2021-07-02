@@ -6,7 +6,7 @@ Introducing automated testing as part of the development-and-release lifecycles 
 
 Because teams are responsible for the entire application lifecycle, there are no longer individualized roles such as  Product Owner (PO), Business Analyst (BA), Development (DEV), Quality Assurance (QA),or Operations. Instead, there will be a single Product team responsible for every aspect related to all applications under its domain. This team has at least one member for each role just described, but all members work together in each aspect to build the application with quality, deliver it to production as soon as possible, and maintain it.
 
-In the context of automated testing, QA has a big impact. QAs define test strategies, identify risks and test scenarios, and say where test efforts should be directed. They can even have a say in how to design the application architecture so that it can be more easily tested.
+In the context of automated testing, QA has a big impact. QA teams define test strategies, identify risks and test scenarios, and say where test efforts should be directed. They can even have a say in how to design the application architecture so that it can be more easily tested.
 
 We're not saying that the QA role is the only role responsible for everything related to Automated Testing, or even that the DEV role only cares about implementing, or that the POs and BAs look only at the requirements. Just as in any Agile methodology, the team is responsible for all aspects of the application as a whole. Think of it as each role having its own mindset. Each mindset brings its own point of view and strengths to the table,  improving the application under development.
 

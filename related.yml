@@ -1892,3 +1892,13 @@
         - "A course about Logic in Training":
             https://www.outsystems.com/learn/courses/125/logic/
 
+# Testing 
+
+- develop/testing/testing-bdd-framework.md:
+    - develop/testing/develop-test.md
+    - managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
+    - external:
+        - "Becoming a Tester in OutSystems":
+            https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/
+        - "OutSystems testing guidelines":
+            https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines 

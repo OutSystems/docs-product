@@ -72,28 +72,8 @@ Suppose you have an OutSystems application named **ACME Services** that you want
 
 If you're interested in learning more about component testing and about best practices, see the following resources. These pages provide information to help you master the art of automated testing.
 
-* [Component Testing Best Practices video] -- A video detailing best practices for structuring and organizing test code for component tests.
-* [Your Complete Guide to BDD Testing in OutSystems] -- A thorough how-to guide on implementing your first test case with the BDDFramework 
-* [BDDFramework documentation page] -- A summary of the latest changes and features for the server-side tool
-* [BDDFramework for Client-Side documentation page] -- A summary of the latest changes and features for the client-side tool
+* [Component Testing Best Practices video](https://www.outsystems.com/training/courses/180/component-testing/?LearningPathId=10) -- A video detailing best practices for structuring and organizing test code for component tests.
+* [Your Complete Guide to BDD Testing in OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) -- A thorough how-to guide on implementing your first test case with the BDDFramework 
+* [BDDFramework documentation page](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1201&ProjectName=bddframework) -- A summary of the latest changes and features for the server-side tool
+* [BDDFramework for Client-Side documentation page]( https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=10917&ProjectName=bddframework-client-side) -- A summary of the latest changes and features for the client-side tool
 
-## Learn more about testing with OutSystems
-
-The following resources provide general information about planning and executing tests with OutSystems.
-
-* [Developing for testability](develop-test.md) -- Conceptual information to help you integrate testing with the development process.
-* [Becoming a Tester in OutSystems](https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/) -- Guided path training on implementing tests and testing strategy
-* [Test automation in the delivery life cycle](../../managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md) -- Test automation planning, roles and process.
-* [OutSystems testing guidelines](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines) -- Includes articles on test strategy, tools, and types of tests.
-
-
-[Forge portal]: https://www.outsystems.com/forge/
-
-[BDDFramework]: https://www.outsystems.com/forge/component-overview/1201/bddframework
-[BDDFramework for Client-Side]: https://www.outsystems.com/forge/component-overview/10917/bddframework-client-side
-
-[Your Complete Guide to BDD Testing in Outsystems]: https://www.outsystems.com/blog/posts/bdd-testing/
-[Component Testing Best Practices video]: https://www.outsystems.com/training/courses/180/component-testing/?LearningPathId=10
-
-[BDDFramework documentation page]: https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1201&ProjectName=bddframework
-[BDDFramework for Client-Side documentation page]: https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=10917&ProjectName=bddframework-client-side

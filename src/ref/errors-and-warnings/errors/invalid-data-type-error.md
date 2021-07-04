@@ -18,7 +18,7 @@ You are using data types with an operator which are not compatible with it.
 
 **Recommended action**
 
-Check the data types for the [operator](../../logic/expressions/operators.md) `<operator>` and ensure you use only allowed [data types](../../../ref/data/data-types/available-data-types.md) in the operation.
+Check the data types for the [`<operator>`](../../logic/expressions/operators.md) and ensure you use only allowed [data types](../../../ref/data/data-types/available-data-types.md) in the operation.
 
 ## &lt;data-type-needed> data type required instead of &lt;data-type-used>
 
@@ -28,7 +28,7 @@ You are using a property or operator which is set with the incorrect data type, 
 
 **Recommended action**
 
-Set the property or [operator](../../logic/expressions/operators.md) to the correct [data type](../../../ref/data/data-types/available-data-types.md), `<data-type-needed>`.
+Set the property or [operator](../../logic/expressions/operators.md) to the correct [`<data-type-needed>`](../../../ref/data/data-types/available-data-types.md).
 
 ## Invalid 'Null Value' data type for specified variable
 

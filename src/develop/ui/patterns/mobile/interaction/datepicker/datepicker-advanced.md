@@ -11,7 +11,7 @@ This article guides you on how to implement more advanced use cases for the Date
 
 When using the Date Picker bound to an input, one of the main issues for the user experience is the native keyboard opening when the input is clicked. To prevent this, add the **readonly="true"** attribute to the input.
 
-![](<images/datepicker-attributes.png>)
+![](<images/datepicker-advanced-attributes.png>)
 
 This way, the keyboard won’t open but the Date Picker opens as a popover. Furthermore, on iOS, to prevent the browser zoom when selecting a month or year, add the following CSS to your theme:
 
@@ -33,11 +33,11 @@ To create a custom string, you can set the **disableInputOverride** option to Tr
 
 1. On the **OnSelect** event, assign the input’s variable to the desired value.
 
-    ![](<images/datepicker-input-string.png>)
+    ![](<images/datepicker-advanced-input-string.png>)
 
 **Result**
 
-![](<images/datepicker-custom-result.png>)
+![](<images/datepicker-advanced-custom-result.png>)
 
 <div class ="info" markdown="1">
 
@@ -51,15 +51,15 @@ To clear the date on both the Date Picker and the bound input, using the library
 
 1. Drag a **Button** widget to the screen and create a new client action called **ClearDateOnClick**.
 
-    ![](<images/datepicker-clear.png>)
+    ![](<images/datepicker-advanced-clear.png>)
 
 1. On the action flow, drag the client action **DatePickerClearInputDate** and set the **InputId** property to the Id of the input bound to the Date Picker.
 
-    ![](<images/datepicker-clear-action.png>)
+    ![](<images/datepicker-advanced-clear-action.png>)
 
 **Result**
 
-![](<images/datepicker-clear-result.png>)
+![](<images/datepicker-advanced-clear-result.png>)
 
 ## Customize the available years in the year selection drop-down
 
@@ -79,10 +79,10 @@ You can customize the year range available in the Date Picker year dropdown usin
     "{ yearRange: [1950, 2020] }"
     ```
 
-    ![Date Picker AdvancedFormat configuration ](images/date-picker-year-configuration.png)
+    ![Date Picker AdvancedFormat configuration ](images/datepicker-advanced-year-configuration.png)
 
     The Date Picker appears as follows:
 
-    ![Date Picker example in runtime](images/date-picker-year-example.png)
+    ![Date Picker example in runtime](images/datepicker-advanced-year-example.png)
 
     **Note:** If you already have some configuration settings in the **AdvancedFormat** property, you must merge any new option with the existing value. The resulting string content must be a valid JSON object.

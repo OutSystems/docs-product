@@ -5,8 +5,6 @@ tags:
 
 # Internal Error
 
-## Internal Error
-
 **Cause**
 
 Unfortunately, an unexpected situation has arisen in your application or environment. 

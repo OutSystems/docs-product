@@ -12,13 +12,13 @@ Component testing in OutSystems includes the following standard test types:
 * Integration Tests, which test whether two or more components work together; these touch a broader application scope than unit testing and the tested code usually belongs to two or more teams
 * API Tests, which verify the contract between consumer and provider and the behavior of your application's existing API endpoints
 
- Separate BDDFramework tools exist for server-side and client-side testing. 
+Separate BDDFramework tools exist for server-side and client-side testing. 
 
 * [BDDFramework](https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1201&ProjectName=bddframework) - Allows you to test public Server Actions
 * [BDDFramework for Client-Side](https://www.outsystems.com/forge/component-overview/10917/bddframework-client-side) - Allows you to test public Client Actions
 
-
 Both tools provide a similar user experience and the following features:
+
 * Tests use Gherkin-like syntax and offer a visual representation of test execution
 * You create the test structure using Web Blocks that the tool provides
 * Test code is implemented through actions that are bound to each used Web Block

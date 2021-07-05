@@ -1,7 +1,6 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Required Property Value TrueChange errors
 tags:
-en_title:
 ---
 
 # Required Property Value Error

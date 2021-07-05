@@ -1,7 +1,6 @@
 ---
 summary:  Check the causes and recomendations on how to solve the different Invalid Variable TrueChange errors.
 tags:
-en_title:
 ---
 
 # Invalid Variable Error

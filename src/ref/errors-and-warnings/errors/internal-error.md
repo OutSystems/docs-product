@@ -1,7 +1,6 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Internal TrueChange errors.
 tags:
-en_title:
 ---
 
 # Internal Error

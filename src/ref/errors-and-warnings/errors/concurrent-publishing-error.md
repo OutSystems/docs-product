@@ -1,7 +1,6 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Concurrent Publishing TrueChange errors.
 tags:
-en_title:
 ---
 
 # Concurrent Publishing Error

@@ -1,7 +1,6 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Invalid Theme TrueChange warnings.
 tags:
-en_title:
 ---
 
 # Invalid Theme Warning

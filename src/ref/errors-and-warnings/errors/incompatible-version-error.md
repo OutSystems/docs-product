@@ -1,7 +1,6 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Incompatible Version TrueChange errors.
 tags:
-en_title:
 ---
 
 # Incompatible Version Error

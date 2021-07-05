@@ -2,12 +2,6 @@
 
 The SAP OData integration allows you to perform operations on SAP entities and call SAP actions from your OutSystems applications.
 
-<div class="info" markown="1">
-
-
-
-</div>
-
 ## Prerequisites
 
 * Make sure you meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).

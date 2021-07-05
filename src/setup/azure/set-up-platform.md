@@ -176,12 +176,12 @@ There are eight components that you need to set up in your **development environ
 Here is the list of all extended product components that you need to install, in the order as shown:
 
 1. [Charts Web](https://www.outsystems.com/forge/4142/) (we used it in the installation example)
-1. [Charts Mobile](https://www.outsystems.com/forge/4141/)
+1. [OutSystems Charts](https://www.outsystems.com/forge/4141/)
 1. [OutSystems UI Web](https://www.outsystems.com/forge/4143/)
-1. [OutSystems UI Mobile](https://www.outsystems.com/forge/component/1385/silk-ui-mobile/)
+1. [OutSystems UI](https://www.outsystems.com/forge/component/1385/silk-ui-mobile/)
 1. [OutSystems Sample Data](https://www.outsystems.com/forge/4145/)
 1. [OutSystems Template Screens Web](https://www.outsystems.com/forge/4146/)
 1. [OutSystems Template Screens Mobile](https://www.outsystems.com/forge/4148/)
-1. [OutSystems Now](https://www.outsystems.com/forge/component/580/outsystems-now/)
+1. [OutSystems Templates Reactive Web](https://www.outsystems.com/forge/6335/)
 
 And you are done! At this point, your OutSystems on Microsoft Azure is ready to use. Check [additional configurations](<additional-configurations.md> "OutSystems on Microsoft Azure - Additional Configurations") to learn more about configurations you might want to execute in your OutSystems infrastructure.

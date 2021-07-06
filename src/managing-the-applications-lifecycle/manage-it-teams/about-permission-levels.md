@@ -137,7 +137,7 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 
 <table markdown="1">
 <tr>
-<th style="text-align: left" colspan="2">Monitor and Add Dependencies</th>
+<th style="text-align: left" colspan="2">Monitor and Add Dependencies (*)</th>
 </tr>
 <tr>
 <td>Assigned as **Default Role**</td>
@@ -152,6 +152,8 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <td>From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of this **application**. The user can also monitor the **application**.</td>
 </tr>
 </table>
+
+(*) **Monitor and Add Dependencies** permission level is available for environments with Platform Server Release Oct.2019 or later.
 
 <table markdown="1">
 <tr>
@@ -173,7 +175,7 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 
 <table markdown="1">
 <tr>
-<th style="text-align: left" colspan="2">Access</th>
+<th style="text-align: left" colspan="2">Access (*)</th>
 </tr>
 <tr>
 <td>Assigned as **Default Role**</td>
@@ -188,6 +190,8 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <td>Same behavior as **No Access** permission level for applications: The user can’t see the **application** listed in LifeTime, Service Center or Service Studio.</td>
 </tr>
 </table>
+
+(*) **Access** permission level is available for environments with Platform Server Release Oct.2019 or later.
 
 <table markdown="1">
 <tr>

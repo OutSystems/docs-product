@@ -137,7 +137,7 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 
 <table markdown="1">
 <tr>
-<th style="text-align: left" colspan="2">Monitor and Add Dependencies (*)</th>
+<th style="text-align: left" colspan="2">Monitor and Add Dependencies *</th>
 </tr>
 <tr>
 <td>Assigned as **Default Role**</td>
@@ -175,7 +175,7 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 
 <table markdown="1">
 <tr>
-<th style="text-align: left" colspan="2">Access (*)</th>
+<th style="text-align: left" colspan="2">Access *</th>
 </tr>
 <tr>
 <td>Assigned as **Default Role**</td>

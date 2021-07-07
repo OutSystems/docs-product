@@ -1,15 +1,10 @@
 ---
 summary: How to configure Azure AD end user authentication for your applications.
-tags: runtime-traditionalwebandreactiveweb
+tags: runtime-reactiveweb
 ---
 
 # Configure Azure AD Authentication
 
-<div class="info" markdown="1">
-
-Requires Platform Server Release Jul.2019 CP2 (11.0.542.0) or later.
-
-</div>
 
 The configuration of the Azure Active Directory (AD) authentication method is quite similar to the [SAML 2.0](configure-saml.md) one, but in this case the "Claims" settings are already filled in with Azure AD default values.
 
@@ -180,7 +175,7 @@ Just like when using SAML 2.0 authentication, you must perform these two final t
 
 1. [Check if the authentication flows of your OutSystems application already support external authentication](configure-saml.md#change-auth-flows). The instructions provided for the SAML 2.0 authentication method are also applicable to Azure AD authentication.
 
-1. If you're using Azure AD authentication in **Reactive Web Apps**, [enable the "Single Sign-On Between App Types" setting](configure-saml.md#enable-sso-between-app-types) in Service Center.
+1. In **Reactive Web Apps**, [enable the "Single Sign-On Between App Types" setting](configure-saml.md#enable-sso-between-app-types) in Service Center.
 
 ## Troubleshooting Azure AD authentication issues
 

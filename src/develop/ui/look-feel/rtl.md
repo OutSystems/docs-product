@@ -13,41 +13,62 @@ To translate your application to, for example, Arabic, you just need to set the 
 
 When you use the Multilingual feature, the RTL is automatically applied based on the language applied to the HTML and the platform adds the CSS class **"is-rtl"** to the body, changing the direction of this content:
 
-`.is-rtl {
+``.is-rtl {
    direction: rtl;
-}`
+}``
+
+![Applying the Multilingual feature](images/rtl-multilingual.png)
 
 Here's the final result:
 
+![Multilingual feature applied](images/rtl-multilingual-result.gif)
 
-The multilingual feature is available from [Platform Server version 11.11.1 onwards](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server). To enable the Multilingual feature in your application, follow the [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md) guidelines.
+The multilingual feature is available from [Platform Server version 11.11.1 onwards](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server). To enable the Multilingual feature in your application, follow the [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md) guidelines. For more information about RTL languages, see [Checklist: Right-To-Left Languages (RTL)](https://lingohub.com/academy/best-practices/rtl-language-list).
 
-<div class="warning" markdown="1">
-For environments that have a Platform server lower than **version 11.11.1**, you can apply the RTL manually by adding a class directly to the body element. To add the class injection, you must create an action with a JS node with the following JS 
-
-``document.body.classList.add('is-rtl');``
-
-</div>
+**Note:** OutSystems doesn’t support Aramaic, Khowar, Hausa, or Kashmiri.
 
 ## Applying RTL manually
 
-You can manually apply RTL to your application by adding a class directly to the body element. To add the class injection, you must create an action with a JS node with the following JS snippet:
+<div class="warning" markdown="1">
 
-Here's the final result:
+For environments that have a Platform server lower than **version 11.11.1**, you can apply the RTL manually by adding a class directly to the body element. 
+
+</div>
+
+To add the class injection, you must create an action with a JS node with the following JS snippet:
+
+``document.body.classList.add('is-rtl');``
+
+![Multilingual feature applied manually](images/rtl-applyrtl-ss.png)
+
+Here is the final result:
+
+**ENTER GIF HERE**
+
 
 ## Changing the application’s content based on RTL
 
 OutSystems UI provides an **IsRTL** action that checks if RTL is applied or not (boolean value). This action also works like a function. You can find it in the **Utilities** folder. 
 
+|![ISRtl action in Utilities folder](images/rtl-isrtl-ss.png)
+
 You can use it in the following ways:
 
 * To set values on input parameters
 
+![Set values on input parameters](images/rtl-advancedformat-ss.png)
+
 * To control the Container’s visibility
+
+![Control the Container’s visibility](images/rtl-container-ss.png)
 
 * To set conditions (If widget)
 
+![Set If conditions](images/rtl-condition-ss.png)
+
 * To apply logic inside client actions on If conditions
+
+![Control the Container’s visibility](images/rtl-logic-ss.png)
 
 ## Exceptions
 
@@ -71,7 +92,6 @@ Selector to check if the  “is-rtl” class is applied:
 
 Selector to get the HTML lang:
 ``document.documentElement.lang``
-
 
 Use one of the following JS Snippets to toggle "is-rtl" class on body:
 
@@ -98,3 +118,4 @@ element.classList.add('is-rtl')``
 
 You can also apply it directly to the layout block using the ExtendedClass parameter:
 
+![Apply RTL ExtendedClass parameter](images/rtl-extendedclass-ss.png)

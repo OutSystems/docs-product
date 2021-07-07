@@ -21,7 +21,7 @@ When you use the Multilingual feature, the RTL is automatically applied based on
 
 Here's the final result:
 
-![English applied](images/rtl-english-applied.png?width=100) ![Arabic applied](images/rtl-arabic-applied.png?width=100)
+![English and Arabic applied](images/rtl-arabic-english-applied.png)
 
 The multilingual feature is available from [Platform Server version 11.11.1 onwards](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server). To enable the Multilingual feature in your application, follow the [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md) guidelines. For more information about RTL languages, see [Checklist: Right-To-Left Languages (RTL)](https://lingohub.com/academy/best-practices/rtl-language-list).
 
@@ -46,7 +46,6 @@ Here's the final result:
 ![English applied](images/rtl-english-applied.png)
 
 ![Arabic applied](images/rtl-arabic-applied.png)
-
 
 ## Changing the application’s content based on RTL
 

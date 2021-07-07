@@ -5,11 +5,6 @@ tags: support-Mobile_Apps; support-webapps
 
 # Add and Delete End Users
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 In the Users application, click the **Users** tab to view the list of all the end users currently active in your environment.
 
@@ -17,7 +12,7 @@ In the Users application, click the **Users** tab to view the list of all the en
 
 <div class="info" markdown="1">
 
-If you use an external authentication method (for example, Active Directory or SAML 2.0) to authenticate end users, you don't need to create the users manually. Instead, they're created automatically in the OutSystems database on the first login.
+If you use an external authentication method (for example, SAML 2.0) to authenticate end users, you don't need to create the users manually. Instead, they're created automatically in the OutSystems database on the first login.
 
 Check [End Users Authentication](end-user-authentication/intro.md) for more information on external authentication methods.
 

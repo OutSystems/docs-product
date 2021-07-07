@@ -21,7 +21,7 @@ When you use the Multilingual feature, the RTL is automatically applied based on
 
 Here's the final result:
 
-![Multilingual feature applied](images/rtl-multilingual-result.gif)
+![English applied](images/rtl-english-applied.png?width=100) ![Arabic applied](images/rtl-arabic-applied.png?width=100)
 
 The multilingual feature is available from [Platform Server version 11.11.1 onwards](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server). To enable the Multilingual feature in your application, follow the [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md) guidelines. For more information about RTL languages, see [Checklist: Right-To-Left Languages (RTL)](https://lingohub.com/academy/best-practices/rtl-language-list).
 
@@ -41,9 +41,11 @@ To add the class injection, you must create an action with a JS node with the fo
 
 ![Multilingual feature applied manually](images/rtl-applyrtl-ss.png)
 
-Here is the final result:
+Here's the final result:
 
-**ENTER GIF HERE**
+![English applied](images/rtl-english-applied.png)
+
+![Arabic applied](images/rtl-arabic-applied.png)
 
 
 ## Changing the application’s content based on RTL

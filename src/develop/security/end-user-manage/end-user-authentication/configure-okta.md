@@ -1,15 +1,10 @@
 ---
 summary: How to configure Okta end user authentication for your applications.
-tags: runtime-traditionalwebandreactiveweb
+tags: runtime-reactiveweb
 ---
 
 # Configure Okta Authentication
 
-<div class="info" markdown="1">
-
-Requires Platform Server Release Jul.2019 CP2 (11.0.542.0) or later.
-
-</div>
 
 OutSystems allows you to use Okta for authenticating the end users of your OutSystems applications. This authentication method is configured in a way that's quite similar to the [SAML 2.0](configure-saml.md) one.
 
@@ -192,7 +187,7 @@ Do the following:
 
 1. Open the following URL:
 
-    `https://<your_server_name>/Users/Login.aspx`
+    `https://<your_server_name>/Users`
 
     Using this specific URL allows you to log in to the Users app skipping the external authentication method that's currently configured (Okta).
 
@@ -206,7 +201,7 @@ Just like when using SAML 2.0 authentication, you must perform these two final t
 
 1. [Check if the authentication flows of your OutSystems application already support external authentication](configure-saml.md#change-auth-flows). The instructions provided for the SAML 2.0 authentication method are also applicable to Okta.
 
-1. If you're using Okta authentication in **Reactive Web Apps**, [enable the "Single Sign-On Between App Types" setting](configure-saml.md#enable-sso-between-app-types) in Service Center.
+1. In **Reactive Web Apps**, [enable the "Single Sign-On Between App Types" setting](configure-saml.md#enable-sso-between-app-types) in Service Center.
 
 ## Troubleshooting Okta authentication issues
 

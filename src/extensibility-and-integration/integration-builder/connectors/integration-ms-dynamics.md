@@ -6,6 +6,12 @@ summary: Learn more about the Microsoft Dynamics 365 integration.
 
 The Microsoft Dynamics 365 integration allows you to perform operations on entities available in Microsoft Dynamics 365 from your OutSystems applications.
 
+<div class="info" markdown="1">
+
+Tables created as part of Dynamics 365 customer engagement apps, like Product or Opportunity, are only available if you have a Dynamics 365 license. Check Microsoft documentation for a [list ot these tables](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/data-platform-complex-entities#complex-tables-installed-with-dynamics-365-apps).
+
+</div>
+
 ## Prerequisites
 
 * Make sure you meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).

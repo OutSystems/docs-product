@@ -44,7 +44,7 @@ Here are some examples of how you can use Styles Editor to change widgets look, 
 
 How to change the style of a widget.
 
-1. Drag a widget to a (Web) Screen.
+1. Drag a widget to a Screen.
 1. In the **Properties Pane** click the **Styles** tab.
 1. In the **Font** section edit text properties, for elements that contain text.
 1. Use **Color** fields to open the color picker and set the color of a property.

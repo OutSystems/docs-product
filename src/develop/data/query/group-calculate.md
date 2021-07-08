@@ -20,8 +20,15 @@ In the GoOutWeb application to find, review, and rate places, you want to show t
 
 1. On the `Place.Id` attribute, open the ![Aggregate Menu](../../../shared/icons-service-studio/aggregate-menu.png) menu and choose **Group By Id**.
 
-    ![](images/group-calculate.png)
 
 1. On the `Review.Rate` attribute, open the ![Aggregate Menu](../../../shared/icons-service-studio/aggregate-menu.png) menu and choose **Average**.
 
 1. Use the calculated values to display the average rating for each place on the screen.
+
+
+![Group by city](images/group-calculate-ex-ss.png)
+
+![Count employees](images/group-calculate-ex1-ss.png)
+
+![Employees per city](images/group-calculate-ex2-ss.png)
+

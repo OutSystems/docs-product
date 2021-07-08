@@ -28,17 +28,17 @@ While defining expressions as values for your variable, you can specify:
 
 In the following Sorting Example, a reactive application displays a list of employees, with details about each employee. Users should be able sort by the name of the employee in either ascending or descending order.
 
-1. Open Service Studio, create a new reactive application named Sorting Example.
+1. Open Service Studio, create a new Reactive Webb App named SortingExample.
 1. Create a module with the default name.
 1. Create an empty screen and name it.
-1. Go to Manage Dependencies and search for sample_employees entity.
+1. Go to **Manage Dependencies...** and search for the Sample_Employees entity of the **OutSystemsSampleDataDB** module.
 1. Fetch this entity to be used on the previous screen you created.
-1. Drag and drop a list widget into the screen and define sample_employees as the source list for it.
-1. Drag and drop the first name, last name, and email attributes into the list.
+1. Drag and drop a list widget into the screen and define Sample_Employees as the source list for it.
+1. Drag and drop the FirstName, LastName, and Email attributes into the list.
 
 1. Create a local variable named **SortAttribute** as text data type.
-1. Double-click on the aggregate **GetEmployees*.
-1. From the Sort tab, click **dynamic sort**, and then define the local variable as the value for the dynamic sort.
+1. Double-click on the aggregate **GetEmployees**.
+1. From the Sort tab, click **Add dynamic sort**, and then define the Local Variable as the value for the dynamic sort.
 
 1. From the toolbox, drag a **Button Group widget** to the top of the employees list and bind the **variable SortAttribute** with the Button Group.
 1. Remove one of the Button Group Items and rename the remaining Button Group Items to **Sort ASC** and **Sort DESC**.

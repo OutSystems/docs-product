@@ -24,7 +24,7 @@ To use this feature, you must meet the following requirements.
 **Using attachments, Image with binary content, List, Table, If**
 
 * You're using Platform Server 11.13.0 or later.
-* You have activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Attachments in Mobile and Reactive emails** in LifeTime in all environments.
+* You have activated the [technical previews](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Emails for Mobile and Reactive** and **Attachments in Mobile and Reactive emails** in LifeTime, in all environments.
 
 ## Getting started
 

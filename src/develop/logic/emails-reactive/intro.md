@@ -16,12 +16,12 @@ To use this feature, you must meet the following requirements.
 * Your Service Studio is up to date.
 * You have configured the SMTP server. See [Configure OutSystems to Send Emails](../../../extensibility-and-integration/configure-send-emails.md) for instructions.
 
-**Sending emails and using email widgets**
+**Sending emails and using basic widgets**
 
 * You're using Platform Server 11.12.0 or later.
 * You have activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Emails for Mobile and Reactive** in LifeTime in all environments.
 
-**Adding attachments to emails**
+**Using attachments, Image with binary content, List, Table, If**
 
 * You're using Platform Server 11.13.0 or later.
 * You have activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Attachments in Mobile and Reactive emails** in LifeTime in all environments.

@@ -5,34 +5,34 @@ tags: support-application_development, article-page
 
 # Technical Preview - Emails in Mobile and Reactive Web Apps
 
-You can create and send emails from Mobile Apps and Reactive Web Apps. In this technical preview, you can use basic formatting and navigation in your emails.     
-
-Continue reading about the emails in OutSystems or jump right to:
-
-* [Prerequisites](#prerequisites)
-* [Getting started](#getting-started)
+You can create and send emails from Mobile Apps and Reactive Web Apps. In this technical preview, you can use basic formatting and navigation in your emails.
 
 ## Prerequisites
 
-To use this feature, you must meet the following requirements:
+To use this feature, you must meet the following requirements.
 
-* You're using Platform Server 11.12 or later.
+**General requirements**
+
 * Your Service Studio is up to date.
 * You have configured the SMTP server. See [Configure OutSystems to Send Emails](../../../extensibility-and-integration/configure-send-emails.md) for instructions.
-* You have activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Emails for Mobile and Reactive** in LifeTime in **all environments**.
+
+**Sending emails and using email widgets**
+
+* You're using Platform Server 11.12.0 or later.
+* You have activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Emails for Mobile and Reactive** in LifeTime in all environments.
+
+**Adding attachments to emails**
+
+* You're using Platform Server 11.13.0 or later.
+* You have activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Attachments in Mobile and Reactive emails** in LifeTime in all environments.
 
 ## Getting started
 
 The following are the steps to get you started with creating and sending emails:
 
-1. Create an Email and add some content to it. See: [Managing emails](managing.md)
-2. Create logic that renders Emails and sends them as emails to users. See: [Sending emails](sending.md)
-   
-<div class="info" markdown="1">
-
-**Emails for Mobile and Reactive** is a technical preview feature. See: [Prerequisites](#prerequisites). 
-
-</div>
+1. Create an email and add some content to it. See: [Managing emails](managing.md)
+2. Create logic that sends emails to users. See: [Sending emails](sending.md)
+3. Optionally, add attachments in your emails. See: [Adding email attachments](attachments.md)
 
 For more information about emails, see the following resources:
 

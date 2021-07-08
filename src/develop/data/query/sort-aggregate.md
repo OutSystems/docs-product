@@ -43,7 +43,6 @@ In the following Sorting Example, a reactive application displays a list of empl
 1. Drag and drop the FirstName, LastName, and Email attributes into the list.
 
 1. Create a local variable and name it **SortAttribute**, then set the Data Type property to **text**.
-1. Create a Local Variable named **SortAttribute** as text data type.
 
     ![List widget on a screen](images/sort-aggregate-ex-ss.png)
 

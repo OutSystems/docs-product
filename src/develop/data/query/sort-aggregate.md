@@ -36,7 +36,7 @@ In the following Sorting Example, a reactive application displays a list of empl
 1. Drag and drop a list widget into the screen and define Sample_Employees as the source list for it.
 1. Drag and drop the FirstName, LastName, and Email attributes into the list.
 
-1. Create a local variable named **SortAttribute** as text data type.
+1. Create a local variable and name it **SortAttribute**, then set the Data Type property to **text**.
 1. Double-click on the aggregate **GetEmployees**.
 1. From the Sort tab, click **Add dynamic sort**, and then define the Local Variable as the value for the dynamic sort.
 

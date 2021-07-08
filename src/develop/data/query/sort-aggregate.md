@@ -28,7 +28,7 @@ While defining expressions as values for your variable, you can specify:
 
 In the following Sorting Example, a reactive application displays a list of employees, with details about each employee. Users should be able sort by the name of the employee in either ascending or descending order.
 
-1. Open Service Studio, create a new Reactive Webb App named SortingExample.
+1. Open Service Studio, create a new Reactive Web App named SortingExample.
 1. Create a module with the default name.
 1. Create an empty screen and name it.
 1. Go to **Manage Dependencies...** and search for the Sample_Employees entity of the **OutSystemsSampleDataDB** module.

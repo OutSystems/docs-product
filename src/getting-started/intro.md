@@ -56,8 +56,6 @@ With Development Environment you also get Integration Studio, for writing extens
 
 OutSystems documentation is here to help you build, publish, maintain, and troubleshoot your apps. The section you're reading now is a good starting point — check the links in the table of content, or use the search to find something specific.
 
-* [OutSystems 11 Docs](https://success.outsystems.com/Documentation/11)
-
 ## Training
 
 There are free online courses that teach how to use OutSystems. There are official workshops as well. If you decide, like many, to pursue a career in OutSystems low-code development, there's a certification program to help you with that.

@@ -66,7 +66,7 @@ In the technical preview you can use text, images, and links in Emails. To add c
 
     <div class="info" markdown="1">
 
-    To learn more about what elements you can use in Emails, see [Widgets available in Emails](#widgets-available-in-emails). 
+    To learn more about what elements you can use in Emails, see [Widgets available in Emails](widgets.md#widgets-available-in-emails). 
 
     </div>
 
@@ -107,25 +107,6 @@ When you open this email in the email client, the expression displays "Hello, Jo
 <div class="warning" markdown="1">
 
 [Follow security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices) when designing emails that have user inputs.
-
-</div>
-
-## Widgets available in Emails
-
-You can use the following widgets in Emails:
-
-| Widget      | Description                                         | Notes                                 |
-| ----------- | --------------------------------------------------- | ------------------------------------- |
-| Text        | Adds plain text.                                    |                                       |
-| Container   | Adds the HTML div tag.                              |                                       |
-| Expressions | Evaluates expressions and displays variable values. |                                       |
-| Images      | Embeds an image.                                    | Local images and external links only. |
-| Link        | Adds navigational elements.                         |                                       |
-
-
-<div class="info" markdown="1">
-
-You can use the available widgets to emulate new widgets. For example, use the Container widget and style it to look like a Button widget. 
 
 </div>
 

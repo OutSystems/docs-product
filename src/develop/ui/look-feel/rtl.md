@@ -43,9 +43,7 @@ To add the class injection, you must create an action with a JS node with the fo
 
 Here's the final result:
 
-![English applied](images/rtl-english-applied.png)
-
-![Arabic applied](images/rtl-arabic-applied.png)
+![English and Arabic applied](images/rtl-arabic-english-applied.png)
 
 ## Changing the application’s content based on RTL
 

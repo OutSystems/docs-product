@@ -11,11 +11,6 @@ OutSystems lets you build great and secure web and mobile apps. This is what you
 2. Install [Development Environment](https://www.outsystems.com/home/downloads).
 3. Start **Service Studio** and see the section about [your first app](#your-first-app).
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## Your first app
 
@@ -49,7 +44,6 @@ With Development Environment you also get Integration Studio for writing extensi
 
 OutSystems documentation is here to help you build, publish, maintain, and troubleshoot your apps. The section you're reading now is a good starting point — check out the links in the table of contents, or use the search to find something specific.
 
-* [OutSystems 11 Docs](https://success.outsystems.com/Documentation/11)
 
 ## Training
 

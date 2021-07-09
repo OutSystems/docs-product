@@ -15,13 +15,13 @@ In this article, we'll review some best practices to consider when implementing 
 
 ## Domain Isolation
 
-OutSystems organizes business concepts and business logic into modules. Each module “owns” any concept or logic defined within it. As a result, modules can ensure that any use of their concepts or logic is correct according to their own internal business rules. [Domain-Driven Design (DDD)](https://dddcommunity.org/learning-ddd/what_is_ddd/) principles to promote code (and test) isolation are highly recommended. DDD drives the development of complex systems based on decoupled domains of technology artifacts. From a best practices perspective, OutSystems maps a domain to a LifeTime team. This team owns a set of applications for a business domain with an independent lifecycle from other teams (domains). Domains can be horizontal or vertical. Depending on the scenario, the level of decoupling between domains needs to be carefully evaluated.
+OutSystems organizes business concepts and business logic into modules. Each module "owns" any concept or logic defined within it. As a result, modules can ensure that any use of their concepts or logic is correct according to their own internal business rules. [Domain-Driven Design (DDD)](https://dddcommunity.org/learning-ddd/what_is_ddd/) principles to promote code (and test) isolation are highly recommended. DDD drives the development of complex systems based on decoupled domains of technology artifacts. From a best practices perspective, OutSystems maps a domain to a LifeTime team. This team owns a set of applications for a business domain with an independent lifecycle from other teams (domains). Domains can be horizontal or vertical. Depending on the scenario, the level of decoupling between domains needs to be carefully evaluated.
 
 If you want to learn more about DDD in OutSystems, see this great content describing its main concerns and principles:
 
 * [Monoliths or Microservices: Make Both Your Domain](https://www.outsystems.com/blog/posts/monoliths-or-microservices-make-both-your-domain/) — Article
 
-* [Domains and Services Architecture](https://www.outsystems.com/learn/lesson/1696/domains-and-services-architecture/) ​— ODC Talk 2018
+* [Domains and Services Architecture](https://www.outsystems.com/learn/lesson/1696/domains-and-services-architecture/) — OutSystems Developer Conference Talk 2018
 
 With this introduction to the principles of DDD, you may notice some common pitfalls in implementing OutSystems applications. These will have an impact on application testability, so we’ll examine them further.
 
@@ -95,13 +95,13 @@ In the case of REST APIs, the OnBeforeRequest event action available at the cons
 
 * For service actions, because they behave like public actions at development time, the wrapper should implement logic to return the output expected for the test instead of executing the service action call.
 
-For more detail on mocking strategies, read [Mock Services​ for Integration Points](https://success.outsystems.com/Documentation/Best_Practices/Automated_Testing_Strategy#Mocking_Services_for_Integrations_Points).
+For more detail on mocking strategies, read [Mock Services for Integration Points](https://success.outsystems.com/Documentation/Best_Practices/Automated_Testing_Strategy#Mocking_Services_for_Integrations_Points).
 
 ## Web UI Simulation
 
 ### Widget Naming
 
-The way automated UI testing works in web applications is by simulating the user interaction through application screens in order to fulfill a specific user journey or functionality provided by the application. This simulation is done through scripting the various steps a user needs to perform on the screen elements. An example would be: Follow the home menu link; Click on the submit button; Enter the “email@domain.com” into the email input.
+The way automated UI testing works in web applications is by simulating the user interaction through application screens in order to fulfill a specific user journey or functionality provided by the application. This simulation is done through scripting the various steps a user needs to perform on the screen elements. An example would be: Follow the home menu link; Click on the submit button; Enter the `email@example.com` into the email input.
 
 This means that the UI test script needs to uniquely identify the elements that the user is interacting with. The easiest way to uniquely identify an element in a screen is through its ID property. As such, and in the scope of OutSystems application screens, it implies that those widgets need to be properly identified in Service Studio.
 
@@ -109,15 +109,15 @@ When developing a screen, the developer should ensure that all elements that hav
 
 Eventually, it may be the case that a specific UI test will require additional elements on the screen, which will also need identifiers. However, by naming at least the widgets mentioned above, the developer minimizes the number of times that rework needs to be done. Saving some of this effort fosters a faster workflow when implementing UI testing.
 
-Using the name as the basis of the selector also allows the platform to detect name collision inside the same screen. This is an added benefit. It does not allow two different widgets to have the same Name property, and so the second will add the suffix of “2”, and so on.
+Using the name as the basis of the selector also allows the platform to detect name collision inside the same screen. This is an added benefit. It does not allow two different widgets to have the same Name property, and so the second will add the suffix of "2", and so on.
 
 Still, because OutSystems allows composing a screen with multiple Web Blocks, if we use the same name in two different Web Blocks for the same screen, this name collision will not be automatically addressed by Service Studio. Taking that into account, we recommend that when naming a widget in a block, developers should include the web block name as a prefix to the name of the UI widget. This ensures that names will still be unique when a screen is composed by multiple, different Web Blocks.
 
 And what if there is a need to have multiple instances of the same web block on the same screen? In these scenarios, developers should wrap each web block in a container with a specific ID for the screen, and then use that container ID to anchor each specific web block instance in a unique way for that screen.
 
-Testing tools usually use XPath or CSS selectors to identify each UI element. When following the approach mentioned above for UI element identification, these UI widgets will all have IDs, but the OutSystems platform will generate a “composed” ID that will only end with the actual name given to the widget inside Service Studio.
+Testing tools usually use XPath or CSS selectors to identify each UI element. When following the approach mentioned above for UI element identification, these UI widgets will all have IDs, but the OutSystems platform will generate a "composed" ID that will only end with the actual name given to the widget inside Service Studio.
 
-The following is a simple example of how you can identify these IDs that end with a given unique name. Remember, the name represents both CSS selectors and XPath selectors for an input with the name “UserNameInput” in Service Studio:
+The following is a simple example of how you can identify these IDs that end with a given unique name. Remember, the name represents both CSS selectors and XPath selectors for an input with the name "UserNameInput" in Service Studio:
 
 
 CSS Selector
@@ -131,7 +131,7 @@ XPath Selector (2.0) not commonly supported by testing tools
 
 ### Extended Property Alternative
 
-As an alternative to using the name property to identify the elements, an extended property named “os-test-id” can be used as the identifier. For the same input in the previous example, add the “os-test-id” extended property with the value “UserNameInput” in Service Studio. In the generated HTML code, the platform will add an attribute with the mentioned name/value pair.
+As an alternative to using the name property to identify the elements, an extended property named "os-test-id" can be used as the identifier. For the same input in the previous example, add the "os-test-id" extended property with the value "UserNameInput" in Service Studio. In the generated HTML code, the platform will add an attribute with the mentioned name/value pair.
 
 Then, the following selectors can be used to identify the element on the screen:
 

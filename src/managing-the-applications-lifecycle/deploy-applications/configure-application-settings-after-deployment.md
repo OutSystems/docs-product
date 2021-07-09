@@ -36,7 +36,6 @@ Now on the Quality environment management console, click on the modules you want
 The module settings are grouped into different tabs:
 
 * Integrations – Configure the connections to external systems the module integrates with
-* Tenants – If your module supports multi-tenancy, here you can manage the tenants
 * Site Properties – Set the value of parameters used in the module
 * Timers – Set the schedule of batch tasks defined in the module
 * Operation – Configure other runtime settings like logging and auditing

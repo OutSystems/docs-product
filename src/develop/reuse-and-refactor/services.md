@@ -91,9 +91,6 @@ Service Actions mix the advantages of loosely-coupled REST API methods with the 
 **Access governance**
 :   Service Actions follow the same governance model as any other reusable element defined by permissions in LifeTime.
 
-#### Scalability
-
-Due to its loosely-coupled nature, using Service Actions enable you to handle additional load by scaling your service through [container deployment](../../managing-the-applications-lifecycle/containers/intro.md). The requests to the service will then be distributed among the several containers.
 
 #### Dealing with transactionality and networking
 
@@ -158,9 +155,3 @@ At this point you should consider exposing the functionality of your service in 
 In this case, using Service Actions to expose functionality will increase business value by enabling several consumers to have **independent release cycles**. On the other hand, you will have additional development effort, since the developer must implement additional logic to handle multiple processes and transactions. 
 
 To decide for using Service Actions to expose functionality, you must evaluate if the additional development effort pays off the increased business value of having independent release cycles.
-
-#### Services with scaling requirements
-
-If you already have a large distributed service with **processor intensive tasks**, using Service Actions will enable you to scale your service through [container deployment](../../managing-the-applications-lifecycle/containers/intro.md).
-
-To decide for using Service Actions to expose functionality, you must evaluate if the additional development effort pays off the capability to scale your service.

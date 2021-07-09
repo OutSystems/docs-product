@@ -95,8 +95,6 @@
 #   Adding Data and Logic
 #     Screen Action
 - ref/lang/auto/Class.Screen Action.final.md:
-    # Actions in Web Applications
-    - develop/logic/action-web.md#screen-actions
     # Web Screen
     - ref/lang/auto/Class.Web Screen.final.md
     # Web Block
@@ -249,8 +247,6 @@
 
 - ref/lang/auto/Class.List Box Widget.final.md:
     - ref/lang/auto/Class.Combo Box Widget.final.md
-    - develop/ui/patterns/web/controls/dropdown.md
-    - develop/ui/patterns/web/controls/dropdownselect.md
 
 # List Records Widget
 - ref/lang/auto/Class.List Records Widget.final.md:
@@ -314,10 +310,6 @@
     #Localized Image
     - ref/lang/auto/Class.Localized Image.final.md
     
-# Localized Image
-- ref/lang/auto/Class.Localized Image.final.md:
-    # Multilingual Web Applications
-    - develop/ui/multilingual/multilingual-web.md
     
 # Theme
 - ref/lang/auto/Class.Theme.final.md:
@@ -447,8 +439,7 @@
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroupItem.final.md:
     # ButtonGroup
     - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md
-    # Button Group Pattern
-    - develop/ui/patterns/web/controls/buttongroup.md
+
 # Checkbox
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md:
     # Switch
@@ -634,10 +625,6 @@
     # Session Variables
     - ref/lang/auto/Class.Session Variable.final.md
 
-# Session Variable
-- ref/lang/auto/Class.Session Variable.final.md:
-    # Sessions in Web Applications
-    - develop/data/session.md
 
 # Event
 - ref/lang/auto/Class.Event.final.md:
@@ -718,7 +705,6 @@
 #     Server Action
 -  ref/lang/auto/Class.Server Action.final.md:
     - develop/logic/actions.md#server-actions
-    - develop/logic/action-web.md#server-actions
     - ref/lang/auto/Class.Run Server Action.final.md
     - develop/reuse-and-refactor/encapsulate-logic.md
     - external:
@@ -799,13 +785,9 @@
     - one-way: develop/data/excel-bootstrap.md
     - one-way: develop/ui/inputs/upload.md
 
-#     Ajax Refresh
--  ref/lang/auto/Class.Ajax Refresh.final.md:
-    - develop/logic/screen-partial-refresh.md
 
 #     Attach File
 -  ref/lang/auto/Class.Attach File.final.md:
-    - develop/logic/emails.md
     - ref/lang/auto/Class.Email.final.md
 
 #     Send Email
@@ -835,11 +817,6 @@
         - "How to Create a Cordova Plugin from Scratch":
             https://www.outsystems.com/blog/posts/how-to-create-a-cordova-plugin-from-scratch/
 
-- extensibility-and-integration/soap/consume/advanced-extensibility.md:
-    - ref/apis/soap-extensibility-api.md
-    - external:
-        - "Forge Component: SOAP Extensibility Samples":
-            https://www.outsystems.com/forge/component-overview/5322/soap-extensibility-samples
 
 - extensibility-and-integration/soap/troubleshoot-soap-web-services.md:
     - extensibility-and-integration/log-levels-set.md
@@ -900,19 +877,6 @@
 - connectors/integration-sap.md:
     - extensibility-and-integration/integration-builder/connectors/integration-sap-get-spec.md
 
-# --- Managing the Applications Lifecycle > Containers ---
-
-- managing-the-applications-lifecycle/containers/intro.md:
-    - managing-the-applications-lifecycle/deploy-applications/zones/intro.md
-
-- managing-the-applications-lifecycle/containers/guide-ecs.md:
-    - one-way: managing-the-applications-lifecycle/containers/intro.md
-    - one-way: managing-the-applications-lifecycle/deploy-applications/zones/intro.md
-    - external:
-        - "Development FAQ: How to automate Docker container deployment with Jenkins": 
-            https://success.outsystems.com/Documentation/Development_FAQs/How_to_automate_Docker_container_deployment_with_Jenkins
-        - "Development FAQ: How to automate container deployment by using LifeTime API v2 and Jenkins": 
-            https://success.outsystems.com/Documentation/Development_FAQs/How_to_automate_container_deployment_by_using_LifeTime_API_v2_and_Jenkins
 
 # --- Developing an Application ---
 

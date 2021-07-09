@@ -10,11 +10,6 @@ The ![SQL](../../../shared/icons-tools/advanced-query.png) **SQL** element lets 
 
 ![SQL in a logic flow](images/sql-in-flow-ss.png?width=350)
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## Accessing data
 
@@ -144,9 +139,6 @@ To ensure the OutSystems metamodel is always consistent, it isn't possible to ru
 
 OutSystems starts a transaction when the web request arrives to the server, and commits the transaction before sending the reply to the user. If there's an uncaught exception, the transaction rolls back to ensure data consistency. This means that your queries run inside a transaction and that the platform reverts the changes if something goes wrong.
 
-### Check runtime user permissions
-
-Your queries run in the database using the runtime user specified in the [Configuration Tool](<../../../ref/configuration-tool/tabs/platform.md>). You need to make sure this user has permissions to run the SQL statements, otherwise errors occur.
 
 ### Check for data support
 

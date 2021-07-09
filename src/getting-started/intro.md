@@ -17,12 +17,11 @@ We've been working on this article. Please let us know how useful this new versi
 
 </div>
 
-
 ## Your first app
 
 To create your first app in Service Studio you can: 
 
-* Run a **built-in interactive tutorial**. In Service Studio, open the Help menu and select **Build an App in 5 minutes tutorial** to start and interactive tutorial. 
+* Run a **built-in interactive tutorial**. In Service Studio, open the **Help** menu and select **Build an App in 5 minutes tutorial** to start and interactive tutorial. 
 * Follow **step-by-steps tutorials**. Check out the tutorials about [how to create a mobile app](create-mobile.md) or [how to create a web app](create-reactive-web.md).
 * Start from an **existing sample app**. Create a new app in Service Studio and choose **Start from an app** to see the collection of the prebuilt apps.
 
@@ -30,7 +29,7 @@ To create your first app in Service Studio you can:
 
 ## Creating apps
 
-You build, edit, and debug your apps in Service Studio, using OutSystems visual language. Once you're happy how your app looks and works, publish it as a web app, progressive web app, or native mobile app. For an overview, see [Choose the right app for your project](right-app.md).
+You build, edit, and debug your apps in Service Studio, using OutSystems visual language. Once you're happy with how your app looks and works, publish it as a web app, progressive web app, or native mobile app. For an overview, see [Choose the right app for your project](right-app.md).
 
 There are several prebuilt elements that you can use to build your apps faster. For example, screen templates come with user interface and logic, and components from Forge significantly increase your app's functionality. You can also build your screens and components and share them with other developers.
 
@@ -39,22 +38,16 @@ There are several prebuilt elements that you can use to build your apps faster. 
 * [User interface patterns](https://www.outsystems.com/OutSystemsUIWebsite/PatternOverview)
 * [Choose the right app for your project](right-app.md)
 
-
-You can also use OutSystems builder to prototype the front end of mobile apps or create workflows, if your product license includes these tools. With the builders you can start creating your apps without Service Studio.
-
-* [Workflow Builder](https://success.outsystems.com/Documentation/Workflow_Builder) lets you create fully functional web apps to automate and manage simple workflows.
-* [Experience Builder](https://success.outsystems.com/Documentation/Experience_Builder) lets you create the front end of mobile apps, that you can test right away, and then continue developing in Service Studio.
-
 ## Extensions
 
-With Development Environment you also get Integration Studio, for writing extensions in C#. This lets you expand the functionality of your apps and to work with any existing systems you may have.
+With Development Environment you also get Integration Studio for writing extensions in C#. This lets you expand the functionality of your apps and to work with any existing systems you may have.
 
 * [Integration Studio](../ref/integration-studio/workspace.md)
 * [Writing extensions](../extensibility-and-integration/integration-studio/getting-started/intro.md)
 
 ## Documentation
 
-OutSystems documentation is here to help you build, publish, maintain, and troubleshoot your apps. The section you're reading now is a good starting point — check the links in the table of content, or use the search to find something specific.
+OutSystems documentation is here to help you build, publish, maintain, and troubleshoot your apps. The section you're reading now is a good starting point — check out the links in the table of contents, or use the search to find something specific.
 
 * [OutSystems 11 Docs](https://success.outsystems.com/Documentation/11)
 
@@ -62,8 +55,9 @@ OutSystems documentation is here to help you build, publish, maintain, and troub
 
 There are free online courses that teach how to use OutSystems. There are official workshops as well. If you decide, like many, to pursue a career in OutSystems low-code development, there's a certification program to help you with that.
 
-* [OutSystems overview](https://www.outsystems.com/learn/courses/173/outsystems-overview/)
-* [All OutSystems training courses](https://www.outsystems.com/learn/courses/)
+* [OutSystems overview](https://www.outsystems.com/training/courses/173/outsystems-overview/)
+* [All OutSystems training courses](https://www.outsystems.com/training/courses/)
+* [Service Studio Overview](https://www.outsystems.com/training/courses/174/service-studio-overview/)
 
 ![Training](images/getting-started-training.png?width=700)
 

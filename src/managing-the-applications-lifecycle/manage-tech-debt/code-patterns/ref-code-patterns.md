@@ -552,8 +552,30 @@ Impact
 How to fix
 :   Long execution Timers should follow the wake timer pattern to reschedule themselves to restart and continue the current task at hand. To implement the wake timer pattern start by adding an explicit logical timeout inside the Timer logic that when reached takes the necessary actions to properly terminate the current execution, store the current progress of the process in such a way that when its execution restarts it can easily pick up the execution from this stored last point. This pattern ends with a wake timer action for itself at the end of the timer flow. Another good practice for long Timers is to define them with checkpoints so that the Timer can be killed and restarted with no impact on the data. At these checkpoints, consider executing partial commits to ensure that if some error occurs the processed data is only rolled back until the last commit (and avoid processing the same data all over again on next execution).
 
-
 ## Security
+
+### Automatically generated publicly exposed REST endpoint
+
+<div class="info" markdown="1">
+
+Applies to **Reactive Web** and **Mobile** apps only.
+
+</div>
+
+An automatically generated REST endpoint for a Server Action is being exposed in a screen using the Anonymous Role.
+
+Impact
+:   In Reactive Web apps and Mobile apps, Server Actions used in the logic of a screen are automatically exposed as REST endpoints to enable client side consumption.
+
+    If the screen that calls a server action allows anonymous access, the REST endpoint for that server action also allows anonymous access. This means that the REST endpoint can be used without authentication.
+
+    A malicious actor might modify client-side logic (JavaScript), check the server requests, and manipulate input parameters to try to access your data or perform unauthorized actions.
+
+
+How to fix
+:   If you don't need the screen to be publicly accessible, disable the Anonymous Role for that screen.<br/>
+Otherwise, ensure that all data sent from the app to the server is re-validated in the server action in a way that prevents unauthorized access to read or edit data.
+
 
 ### SQL injection
 

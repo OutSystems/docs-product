@@ -15,7 +15,6 @@ API Name | Available As | Description
 ---|---|---
 [BPT API](auto/bpt-api.final.md) | Referenced extension | Provides functionality to manage processes and activities.
 [Processes API](processes-api.md) | Referenced system module | Allows you to get information from the OutSystems data model to customize and extend the design of your processes.
-[EPA TaskBox API](auto/epa-taskbox-api.final.md) | Referenced module | Provides access to the BPT taskbox, allowing you to extend its functionality according to your specifications.
 
 ## Charts
 
@@ -23,12 +22,6 @@ API Name | Available As | Description
 ---|---|---
 [Charts API](auto/charts-api.final.md) | Referenced module | Allows you to plot charts for the web and mobile devices.
 
-## Client-side Behavior
-
-API Name | Available As | Description
----|---|---
-[outsystems.api.preloader API](outsystems-api-preloader-api.md) | Referenced extension and JavaScript file | A JavaScript API that allows you to prefetch static resources (css, js, png, gif. jpg, jpeg, woff) for a list of modules.
-[outsystems.api.requestInfo API](outsystems-api-requestinfo-api.md) | Predefined JavaScript object | A JavaScript API that provides methods to get information about the current request and session.
 
 ## Database
 
@@ -63,11 +56,8 @@ API Name | Available As | Description
 API Name | Available As | Description
 ---|---|---
 [BinaryData API](auto/binarydata-api.final.md) | Referenced extension | API to manipulate binary content such as conversions from and to Text or Base64 Text, encoding conversion, binary content length, and binary data comparison.
-[EnhancedWebReferences API](auto/enhancedwebreferences-api.final.md) | Referenced extension | API to dynamically change Web Service and Web Reference URLs, SOAP headers, credentials, and proxies.<br/>Applicable to exposed SOAP Web Services and consumed SOAP Web Services that were upgraded to OutSystems 11.
 [HTTPRequestHandler API](auto/httprequesthandler-api.final.md) | Referenced extension | API with functionality to allow you to manipulate HTTP Requests and Responses.
 [REST Extensibility API](rest-extensibility-api.md) | .NET classes | API that enables you to access the content of requests and responses used by methods consumed from other REST APIs.
-[SAP Extensibility API](sap-extensibility-api.md) | .NET libraries | API that enables you to customize your connection and calls to SAP remote functions through an extension.
-[SOAP Extensibility API](soap-extensibility-api.md) | .NET classes | API that enables you to modify the SOAP connection, request and/or response message using .NET code.<br/>Applicable to consumed SOAP Web Services created in OutSystems 11.
 
 ## Monitoring and Traceability
 
@@ -80,7 +70,6 @@ API Name | Available As | Description
 
 API Name | Available As | Description
 ---|---|---
-[IncludeJavaScript API](auto/includejavascript-api.final.md) | Referenced extension | Allows you to programmatically include JavaScript snippets in all Web Screens.
 [JavaScript API](javascript/README.md) | Predefined JavaScript objects | Allows you to call OutSystems specific actions and act upon mobile app events in your JavaScript code, to tweak and customize the mobile app experience of the final user.
 
 ## System Actions

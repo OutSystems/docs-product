@@ -1173,7 +1173,6 @@
 
         - href: ref/apis/auto/lifetime-sdk.final.md
         - href: ref/apis/auto/lifetime-services-api.final.md
-        - href: ref/apis/performancemonitoring-api.md
         - href: ref/apis/auto/platformpasswordutils-api.final.md
         - href: ref/apis/auto/platformruntime-api.final.md
         - href: ref/apis/processes-api.md

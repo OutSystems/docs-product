@@ -7,53 +7,55 @@ tags: support-Application_Lifecycle-featured
 
 In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>) takes a version of the application from one environment and deploys it in another. Just select the tagged version of the application and LifeTime deploys it in the exact development state in which it was tagged.
 
-Here's an example of deploying applications in LifeTime.
-
 ## Deploy a Web and a Mobile Application
 
-In this example, two applications are being developed in the Development environment:
+/div class="note" markdown=1>
 
-* A mobile app (MyApp)
-* A web application (MyWebApp)
+You can use any name for your environments. In this example, Development, Quality, and Production are being used.
 
-A milestone is reached and the applications are ready to be tested by Quality. They are [tagged](<tag-a-version.md>) as follows:
+</div>
 
-* The mobile app is tagged with version 0.2
-* The web application is tagged wih version 0.3
+In this example, we are creating an application in Development and then moving it to Quality for testing, and then  to Production.
 
-To deploy both applications to Quality, do the following:
+A milestone is reached and the application is ready for testing by the Quality team. LifeTime tags [tags](<tag-a-version.md> our application with the next version number as follows:
 
-1. Click the **Deploy...** button between Development and Quality.
+To deploy the application to Quality, do the following:
 
-    ![](images/deploy-an-application-1.png)
+1. From Lifetime, click Applications.
+1. In the search box, you can enter the name of the application and click **Search** or you can click **SHow All**. A list of available applications displays.
 
-1. Choose **Add Applications** to select the applications to deploy. You can also **Add All Applications** to the deployment plan.
+     ![](images/applications-dev-quality.png)
+
+1. CLick on the name of one or more applications that you want to move.
+
+   
+3. Choose **Add Applications** to select the applications to deploy. You can also **Add All Applications** to the deployment plan.
 
     ![](images/deploy-an-application-2.png)
 
-1. If you chose **Add Applications** in the previous step, search for the applications to deploy. You can filter by applications with differences or search by the application name. 
+4. If you chose **Add Applications** in the previous step, search for the applications to deploy. You can filter by applications with differences or search by the application name. 
 
     ![](images/deploy-an-application-3.png)
 
-1. Select the applications to deploy and click the **Add to Deployment Plan** button.
+5. Select the applications to deploy and click the **Add to Deployment Plan** button.
 
     ![](images/deploy-an-application-4.png)
 
-1. In the deploy options, select **DEPLOY 0.2** for MyApp and **DEPLOY 0.3** for MyWebApp:
+6. In the deploy options, select **DEPLOY 0.2** for MyApp and **DEPLOY 0.3** for MyWebApp:
 
     ![](images/deploy-an-application-5.png)
 
-1. Click **VALIDATE NOW** to validate the deployment in Quality: 
+7. Click **VALIDATE NOW** to validate the deployment in Quality: 
 
     ![](images/deploy-an-application-6.png)
 
     Note: If LifeTime detects any changes in the applications included in the plan either in the source or in the target environment, it will show a **Refresh Applications** sticker that you can click to [refresh the applications](#refresh) included in the plan.
 
-1. The deploy is OK (all green). Click **CONTINUE** to move on:
+8. The deploy is OK (all green). Click **CONTINUE** to move on:
     
     ![](images/deploy-an-application-7.png)
 
-1. Type the Deployment Notes and click the **Deploy Now** button to execute the deployment:
+9.  Type the Deployment Notes and click the **Deploy Now** button to execute the deployment:
     
     ![](images/deploy-an-application-8.png)
 

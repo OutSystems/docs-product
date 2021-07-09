@@ -9,7 +9,7 @@ In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>)
 
 ## Deploy a Web and a Mobile Application
 
-/div class="note" markdown=1>
+<div class="note" markdown="1">
 
 You can use any name for your environments. In this example, Development, Quality, and Production are being used.
 
@@ -21,41 +21,59 @@ A milestone is reached and the application is ready for testing by the Quality t
 
 To deploy the application to Quality, do the following:
 
-1. From Lifetime, click Applications.
-1. In the search box, you can enter the name of the application and click **Search** or you can click **SHow All**. A list of available applications displays.
+1. From Lifetime, click **Applications**.
+1. In the search box, you can search by application name or tam and click **Search** or you can click **SHow All** to see a list of available applications.
 
      ![](images/applications-dev-quality.png)
 
-1. CLick on the name of one or more applications that you want to move.
+1. CLick on the name of one or more applications that you want to deploy.
+1. In the Development environment, below the version information, click the **Tag Version** button.
 
-   
-3. Choose **Add Applications** to select the applications to deploy. You can also **Add All Applications** to the deployment plan.
+    ![](images/add-applications.png)
 
-    ![](images/deploy-an-application-2.png)
+1. In the Development screen, enter a version number and description of your App. Then click **tag Version**.
 
-4. If you chose **Add Applications** in the previous step, search for the applications to deploy. You can filter by applications with differences or search by the application name. 
+    ![](images/add-info-dev-screen.png)
 
-    ![](images/deploy-an-application-3.png)
+1. To finalize the deployment, click the **Deploy. . . ** button.
 
-5. Select the applications to deploy and click the **Add to Deployment Plan** button.
+    ![](images/deploy-verification.png)
 
-    ![](images/deploy-an-application-4.png)
+OutSystems displays the workflow, showing where you are in the deployment process. You can validate, deploy the version, or do nothing.
 
-6. In the deploy options, select **DEPLOY 0.2** for MyApp and **DEPLOY 0.3** for MyWebApp:
+  ![](images/flow-deploy-verification.png)
 
-    ![](images/deploy-an-application-5.png)
 
-7. Click **VALIDATE NOW** to validate the deployment in Quality: 
+##Create Deployment Plant to Quality
+
+To continue the deployment process, follow these steps.
+
+1. From the Deployment Plan screen, click **Validate Now**. The system validates the deployment to Quality.
+
+<div class="note" markdown="1">
+
+If LifeTime detects any changes in the applications included in the plan either in the source or in the target environment, it will show a Refresh Applications sticker that you can click to refresh the applications included in the plan.
+
+</div>
+
+
+1. Click **Validate NowW** to validate the deployment in Quality.
+
+
+BEV  replace screen shot and continue updating the steps. 
 
     ![](images/deploy-an-application-6.png)
 
     Note: If LifeTime detects any changes in the applications included in the plan either in the source or in the target environment, it will show a **Refresh Applications** sticker that you can click to [refresh the applications](#refresh) included in the plan.
 
-8. The deploy is OK (all green). Click **CONTINUE** to move on:
+2. The deploy is OK (all green). Click **CONTINUE** to move on:
+
+    1[](images/)
+3. 
     
     ![](images/deploy-an-application-7.png)
 
-9.  Type the Deployment Notes and click the **Deploy Now** button to execute the deployment:
+4.  Type the Deployment Notes and click the **Deploy Now** button to execute the deployment:
     
     ![](images/deploy-an-application-8.png)
 

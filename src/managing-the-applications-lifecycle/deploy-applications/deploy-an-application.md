@@ -11,18 +11,18 @@ In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>)
 
 <div class="note" markdown="1">
 
-You can use any name for your environments. In this example, Development, Quality, and Production are being used.
+You can use any name for your environments. In this example, we are using Development, Quality, and Production.
 
 </div>
 
-In this example, we are creating an application in Development and then moving it to Quality for testing, and then  to Production.
+We are creating an application in Development and then moving it to Quality for testing, and then  to Production.
 
-A milestone is reached and the application is ready for testing by the Quality team. LifeTime tags [tags](<tag-a-version.md> our application with the next version number as follows:
+A milestone is reached and the application is ready for testing by the Quality team. When the app moves to the next environment, LifeTime tags [tags](<tag-a-version.md> the application with the next version number.
 
 To deploy the application to Quality, do the following:
 
 1. From Lifetime, click **Applications**.
-1. In the search box, you can search by application name or tam and click **Search** or you can click **SHow All** to see a list of available applications.
+1. In the search box, you can search by application name or team name, and click **Search** or you can click **Show All** to see a list of available applications.
 
      ![deploy to quality](images/applications-dev-quality.png)
 
@@ -31,7 +31,7 @@ To deploy the application to Quality, do the following:
 
     ![clickk tag version](images/add-applications.png)
 
-1. In the Development screen, enter a version number and description of your App. Then click **tag Version**.
+1. In the Development screen, enter a version number and description of your App, then click **tag Version**.
 
     ![development screen](images/add-info-dev-screen.png)
 
@@ -55,7 +55,7 @@ If LifeTime detects any changes in the applications included in the plan either 
 
 </div>
 
-    ![](images/create-deploy-plan-validate.-1.png)
+    ![plan validate](images/create-deploy-plan-validate.-1.png)
 
 <div class="note" markdown"1">
 
@@ -73,11 +73,11 @@ If LifeTime detects any changes in the applications included in the plan either 
 
 When the deployment finishes, both applications have the same tagged version in both environments.
 
-![deploy an application](images/deploy-an-application-9.png)
+    ![deploy an application](images/deploy-an-application-9.png)
 
 ## Other deployment scenarios
 
-When deploying an application, you may encounter other scenarios that do not follow the standard path. The following describes different scenarios and their meanings.
+When deploying an application, you may encounter other scenarios that do not follow the standard path. The following describes different scenarios you may encounter.
 
 ## Deployment is successful
 
@@ -108,13 +108,13 @@ To change the target environment of a deployment, follow theses steps:
 
     ![deploy tev to auality](images/deploy-dev-quality-p1-lt-1.png)
 
-1. When asked to choose one or more applications to deploy, click **Cancel** and first select the target environment.
+1. When asked to choose one or more applications to deploy, click **Cancel** and then select the target environment.
 
-1. open the target environment from the dropdown click its name (**Quality P1** in our example).
+1. open the target environment from the dropdown, and click its name (**Quality P1** in our example).
 
     ![target environment](images/deploy-choose-target-environment-lt.png)
 
-1. Select the desired target environment in the pop-up menu. In this example, we selected **Change environment to Quality P2**.
+1. Select the desired target environment in the pop-up menu. In this example, select **Change environment to Quality P2**.
 
 1. Proceed as previously described by adding apps to the deployment plan, validating the plan, and starting the deployment.
 
@@ -124,17 +124,15 @@ After creating a deployment plan and adding applications to it, OutSystems notif
 
 The detected changes include:
 
-* In the **source** environment, publishing/moving a module of an application included in the plan
-* In the **target** environment, publishing/moving **any** module of an application
-* In the **source**/**target** environment, tagging a version of an application included in the plan
+* In the **source** environment, publishing/moving a module of an application included in the plan.
+* In the **target** environment, publishing/moving **any** module of an application.
+* In the **source**/**target** environment, tagging a version of an application included in the plan.
 
 When any of these changes are detected, a **Refresh Applications** sticker displays below the page title heading of the deployment plan creation screen:
 
 ![refresh applications](images/lt-refresh-applications.png)
 
-To refresh the applications in the current plan, click **Refresh Applications**.
-
-The refresh operation does the following:
+To refresh the applications in the current plan, click **Refresh Applications**. The refresh operation does the following:
 
 * The versions that display in the deployment plan's source and target environments are updated.
 * Applications with the "Tag & Deploy" option selected are deployed with the most recent code.

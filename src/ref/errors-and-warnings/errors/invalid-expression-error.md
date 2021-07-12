@@ -166,7 +166,6 @@ You are using a User function or [Built-in function](../../../ref/lang/auto/buil
 Change the function to use a [parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md) from outside the [Aggregate](../../../ref/lang/auto/Class.Aggregate.final.md).
 
 ## Cannot apply &lt;operator_name> operator to Integer together with Integer
-<!-- mm added  -->
 
 **Cause**
 

@@ -1,29 +1,19 @@
 ---
-summary: Learn how to configure the hostname, purpose and debug mode of your OutSystems environment in Service Center console.
-tags: serverconfigurations; support-Installation_Configuration
+summary: Learn how to configure the purpose and debug mode of your OutSystems environment in Service Center console.
+tags: serverconfigurations;
 ---
 
 # Configure your OutSystems environment
-
-<div class="info" markdown="1">
-
-This article applies to: **OutSystems 11**
-
-</div>
-
-When [installing the Platform Server](intro.md#install-the-platform-server) in an environment, the installation checklist will ask you to configure Service Center, which is the management console of your OutSystems environment.
 
 The Service Center console of a specific environment (eg. Development, Test, Production) is accessible through the url `http://<your_server>/ServiceCenter`.
 
 ## Configure your environment
 
-The configuration of your environment is done in the **Administration > Environment Configuration** area in Service Center console:
+In an OutSystems Cloud setup, your environments are already configured. To change the configuration of your environment go to the **Administration > Environment Configuration** area in Service Center console:
 
 ![](images/environment-config-1.png)
 
-When installing the Platform Server for the first time, you must configure the following settings:
-
-* Hostname
+The following settings can be altered:
 
 * Purpose
 
@@ -70,13 +60,6 @@ The **Purpose** you can configure for the environment is subject to the environm
 <th style="font-weight:bold;align:center;vertical-align:middle;">Non-Production</th>
 <th style="font-weight:bold;align:center;vertical-align:middle;">Production</th>
 <th style="font-weight:bold;align:center;vertical-align:middle;">Management (LifeTime)</th>
-</tr>
-<tr>
-<td>Deploy to containers</td>
-<td style="align:center;background-color:#dddddd;">No</td>
-<td style="align:center;background-color:#2ecc71;">Yes</td>
-<td style="align:center;background-color:#2ecc71;">Yes</td>
-<td style="align:center;background-color:#2ecc71;">Yes</td>
 </tr>
 <tr>
 <td>1-Click Publish process optimizations<sup>1</sup></td>
@@ -154,22 +137,22 @@ A- Requires enabling the site property `AvailableInProductionMode` in PreviewInD
 
 ### Environment Debug Mode
 
-The Debug Mode of an OutSystems environment determines if eSpaces in that environment can be debugged in Service Studio.
+The Debug Mode of an OutSystems environment determines if modules in that environment can be debugged in Service Studio.
 
-To be able to debug an eSpace in Service Studio, **both** the environment Debug Mode and the eSpace Debug Mode must be enabled.
+To be able to debug a module in Service Studio, **both** the environment Debug Mode and the module Debug Mode must be enabled.
 
 Disabling the environment Debug Mode
 
-:   Disables the Debug Mode for each eSpace in the environment.
+:   Disables the Debug Mode for each module in the environment.
 
-    When the Debug Mode of the environment is disabled it is not possible to enable the Debug Mode for any of the eSpaces.
+    When the Debug Mode of the environment is disabled it is not possible to enable the Debug Mode for any of the modules.
 
 Enabling the environment Debug Mode
 
-:   Allows you to manually enable the Debug Mode for eSpaces you want to debug.
+:   Allows you to manually enable the Debug Mode for modules you want to debug.
 
 Changes in Debug Mode will only affect Modules after they have been republished; read more about [applying compile-time configurations](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Applying_Configurations_in_Service_Center#Apply_Compile-time_Configurations).
 
-Note: When disabling the Debug Mode of an environment you will only need to republish the eSpaces whose Debug Mode was previously enabled.
+Note: When disabling the Debug Mode of an environment you will only need to republish the modules whose Debug Mode was previously enabled.
 
-When you publish an eSpace for the first time, the Debug Mode of the eSpace is set according to the Debug Mode of that environment.
+When you publish a module for the first time, the Debug Mode of the module is set according to the Debug Mode of that environment.

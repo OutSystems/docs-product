@@ -3,23 +3,34 @@ summary:
 tags: support-application_development,
 ---
 
-# Email widgets
+# Widgets in emails
 
-OutSystems designed email widgets to help you create lightweight emails most browsers can open.
+OutSystems designed widgets to help you create lightweight emails that most email readers can open. When you open Email for editing, Service Studio shows the available widgets in the widgets toolbar.
+
+Use the [widgets in Email](#widgets-available-in-emails) like you use the widgets for Screens, with the following common differences designed to make the emails light and secure:
+
+* Screen widgets have features that work in a UI that can handle plenty of data. For example, Table in Screens supports pagination.
+* You can use JavaScript and custom actions in Screen widgets only. Most email clients don't support JavaScript due to security concerns.
+ 
+## Table
 
 <div class="info" markdown="1">
 
-You can use the available widgets to emulate new widgets. For example, use the Container widget and style it to look like a Button widget. 
+To quickly create a table in a Reactive Web App, drag an Entity to Email. 
 
 </div>
 
-## Table
-
-TODO
+When you place the Table widget to an Email, add columns and drag attributes to create columns and cells. For more information on how to work with the Table widget, see [Creating and editing tables](../../ui/table/intro.md).
 
 ## List
 
-TODO 
+<div class="info" markdown="1">
+
+To quickly create a list in a Mobile App, drag an Entity to Email. 
+
+</div>
+
+Drag the List widget to an Email, then drag attributes or other widgets like Image or Expression to create the list items. 
 
 ## Widgets available in Emails
 

@@ -86,7 +86,3 @@ In this technical preview, when your Email modules (consumers) use CSS from othe
 ### Clipped content in Gmail
 
 Google Gmail clips messages if the HTML code is larger than 102 KB. OutSystems recommends you start with Emails that have only basic styles, without the CSS from OutSystems UI.
-
-### Emails in Traditional Web App
-
-For emails in Traditional Web App, check out [Send an Email From a Web Application](../emails.md).

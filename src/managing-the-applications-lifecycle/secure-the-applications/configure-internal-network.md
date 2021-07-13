@@ -37,5 +37,4 @@ When you define an internal network for a specific OutSystems environment, it wi
 
 In the case you inadvertently define an internal network configuration that blocks you from accessing Service Center, you can:
 
-* [use the Configuration Tool to clear the internal network settings](../../ref/configuration-tool/tabs/network.md) currently defined, if it's a self-managed environment;
 * contact [OutSystems Support](https://www.outsystems.com/SupportPortal/CaseOpen/) to revert or adjust the internal network addresses if it's an OutSystems Cloud environment. 

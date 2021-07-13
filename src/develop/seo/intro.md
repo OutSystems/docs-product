@@ -117,27 +117,29 @@ Here are more details about the properties.
 | **URL Structure** | Set to **Path** to pass the parameters separated by `/` in the URL (example: `/Product/1`). Set to **Query string** to pass the parameters as a string (example: `Products?Id=1`).                                      |
 | **URL Pattern**   | Preview only. Shows the URL preview as you edit the settings.
 
-### Notes
+#### Reserved strings
 
-When working with custom URLs, keep in mind that:
+These are the reserved strings that you **cannot** use in the **Page Name** property:
 
-* The following are the reserved strings that you **cannot** use in the **Page Name** property:
+* `screenservices`
+* `moduleservices`
+* `img`
+* `Blocks`
+* `rest`
 
-    * 'screenservices'
-    * 'moduleservices'
-    * 'img'
-    * 'Blocks'
-    * 'rest'
-* The following strings are not supported because you can't have a "/" between them:
+The following strings aren't supported because you can't have `/` between them:
 
-    * screenservices/list
-    * List/screenservices/List
-    * List/sreenservices
+* `screenservices/list`
+* `List/screenservices/List`
+* `List/sreenservices`
 
-* Using "listifscreenservices" is supported
-* Using upper and lower case characters is supported
-* Adding custom URLs to all Screens **except** the Default Screen. is supported.
+#### Notes
+
+These are additional notes about custom URLs.
+
+* You can add custom URLs to all Screens **except** the Default Screen.
 * When copying Screens with custom URLs from Reactive Web App module to Mobile App module, Service Studio removes the URL rules in the Mobile App module.
+
 
 ### Managing Redirect Rules
 

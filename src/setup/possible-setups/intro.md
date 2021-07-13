@@ -26,6 +26,6 @@ You can always adjust the infrastructure to add and remove environments, since O
 
 ## Cloud infrastructure
 
-Since OutSystems [runs on the cloud](cloud-architecture.md), it's possible to set up your infrastructure with a mouse-click. You only have to install Service Studio and Integration Studio development tools to start developing and deploying your applications. Learn more at [www.outsystems.com](https://www.outsystems.com).
+Since OutSystems runs on the cloud, it's possible to set up your infrastructure with a mouse-click. You only have to install Service Studio and Integration Studio development tools to start developing and deploying your applications. Learn more at [www.outsystems.com](https://www.outsystems.com).
 
 ![](images/possible-setups-2.png)

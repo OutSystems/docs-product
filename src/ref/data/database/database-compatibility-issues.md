@@ -4,7 +4,7 @@ tags:
 
 # Database Compatibility Issues
 
-Whenever the DBMS type is set to `(all)` in the [properties of the Module](<../../lang/auto/Class.Module.final.md>), it means that queries are expected to be compatible with all database servers supported by OutSystems.
+Whenever the DBMS type is set to `(all)` in the properties of the Module, it means that queries are expected to be compatible with all database servers supported by OutSystems.
 
 If you are not concerned with compatibility issues, you can use SQL statements specific to your database server.
 

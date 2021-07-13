@@ -5,23 +5,23 @@ tags: support-Application_Lifecycle-featured
 
 # Deploy an Application
 
-In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>) takes a version of the application from one environment and deploys it in another. Just select the tagged version of the application and LifeTime deploys it in the exact development state in which it was tagged.
+In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>) takes a version of the application from one environment and deploys it in another. Just select the tagged version of the application and LifeTime deploys it in the exact state.
 
 ## Deploy a Web and a Mobile Application
 
 <div class="note" markdown="1">
 
-You can use any name for your environments. In this example, we are using Development, Quality, and Production.
+You can give any name to an environment. This example uses Development, Quality, and Production.
 
 </div>
 
-We are creating an application in Development and then moving it to Quality for testing, and then  to Production.
+You create an application in Development and then move it to Quality for testing, and then  to Production.
 
-A milestone is reached and the application is ready for testing by the Quality team. When the app moves to the next environment, LifeTime tags [tags](<tag-a-version.md> the application with the next version number.
+When your application reaches a milestone in development, it's ready for testing by the Quality team. When the app moves to the next environment, LifeTime tags [tags](<tag-a-version.md> the application with the next higher version number.
 
 To deploy the application to Quality, do the following:
 
-1. From Lifetime, click **Applications**.
+1. From LifeTime, click **Applications**.
 1. In the search box, you can search by application name or team name, and click **Search** or you can click **Show All** to see a list of available applications.
 
      ![deploy to quality](images/applications-dev-quality.png)
@@ -43,7 +43,7 @@ OutSystems displays the workflow, showing where you are in the deployment proces
 
   ![plan verification](images/deployment-plan-verification.png)
 
-## Create Deployment Plan to Quality
+## Create a deployment plan to quality
 
 To continue the deployment process, follow these steps.
 
@@ -77,7 +77,7 @@ When the deployment finishes, both applications have the same tagged version in 
 
 ## Other deployment scenarios
 
-When deploying an application, you may encounter other scenarios that do not follow the standard path. The following describes different scenarios you may encounter.
+When deploying an application, you may encounter other scenarios that don't follow the standard path. The following describes different scenarios you may encounter.
 
 ## Deployment is successful
 
@@ -85,7 +85,7 @@ If the deployment **finishes successfully**, a "Reuse Plan" link displays in the
 
 ![reuse link](images/lt-reuse-plan-link.png)
 
-### Deployment is aborted
+### Deployment aborts
 
 If the deployment **aborts**, a "Retry Plan" link displays in the deployment plan progress screen. [Retrying the plan](deployment-plans.md#retry) creates a copy of the original plan and allows you to customize it before running it again.
 
@@ -93,7 +93,7 @@ If the deployment **aborts**, a "Retry Plan" link displays in the deployment pla
 
 ### Deploying a mobile app that already generates a package
 
-If you're deploying a mobile app that is already [configured to generate the mobile app package](<../../deliver-mobile/generate-distribute-mobile-app/intro.md>),  some changes you make in your application might cause the generation of a new application package. For example, changing the icon or the main color of the application.  
+If you're deploying a mobile app that's already [configured to generate the mobile app package](<../../deliver-mobile/generate-distribute-mobile-app/intro.md>),  some changes you make in your application might cause the generation of a new application package. For example, changing the icon or the main color of the application.  
 [Check here](../../deliver-mobile/mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build) for all the situations that require users to install a new application package.
 
 ## Deploying to a different target environment { #change-target-environment }
@@ -104,13 +104,13 @@ To change the target environment of a deployment, follow theses steps:
 
 1. To the right of the source environment name, click the **Deploy...** button.  
 
-    For example, if we want to deploy an app from **Development** to **Quality P2**, the source environment is **Development**.
+    For example, if you want to deploy an app from **Development** to **Quality P2**, the source environment is **Development**.
 
     ![deploy tev to auality](images/deploy-dev-quality-p1-lt-1.png)
 
 1. When asked to choose one or more applications to deploy, click **Cancel** and then select the target environment.
 
-1. open the target environment from the dropdown, and click its name (**Quality P1** in our example).
+1. open the target environment from the dropdown, and click its name (**Quality P1** in the example).
 
     ![target environment](images/deploy-choose-target-environment-lt.png)
 
@@ -128,13 +128,13 @@ The detected changes include:
 * In the **target** environment, publishing/moving **any** module of an application.
 * In the **source**/**target** environment, tagging a version of an application included in the plan.
 
-When any of these changes are detected, a **Refresh Applications** sticker displays below the page title heading of the deployment plan creation screen:
+When LifeTime detects any of these changes, a **Refresh Applications** sticker displays below the page title heading of the deployment plan creation screen:
 
 ![refresh applications](images/lt-refresh-applications.png)
 
 To refresh the applications in the current plan, click **Refresh Applications**. The refresh operation does the following:
 
-* The versions that display in the deployment plan's source and target environments are updated.
-* Applications with the "Tag & Deploy" option selected are deployed with the most recent code.
-* Any new tags created outside the plan are shown in the deployment options and can be selected for deployment.
-* All deployment options previously selected are kept, as long as they are still available.
+* Updates the versions that display in the deployment plan's source and target environments.
+* Deploys applications with the "Tag & Deploy" option with the most recent code.
+* Makes new tags created outside the plan, available in the deployment options so you can select them for deployment.
+* Keeps deployment options previously selected and still available.

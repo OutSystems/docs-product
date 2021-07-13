@@ -44,15 +44,10 @@ After adding the applications to your deployment plan, you now have a new step t
 
     ![](images/configure-site-settings-during-deploy-3.png?width=800)
 
-* The [Deployment Zone](zones/intro.md) for the applications being deployed, when the target environment has more than one Deployment Zone.
-
-    ![](images/configure-settings-during-deploy-4.png?width=800)
 
 The deployment plan wizard includes this step when there are **new settings** to configure:
 
 * There are applications in the plan with new Site Properties that were never set in the target environment. In this step, you can define the effective value for those Site Properties in the target environment.
-
-* There are application modules using [Deployment Zones](zones/intro.md), and that application will be deployed to the target environment for the first time. In this step, you can choose the deployment zone to which your application will be deployed.
 
 You can also see and change the existing settings of the applications to deploy. Click the button **All settings** to see the existing settings.
 
@@ -62,10 +57,7 @@ There are some situations when this step is **skipped** or **disabled**:
 
 * The step will be **skipped** when there are no new settings to configure. However, if you need to change any existing setting, you can manually go back to **Configure application settings** by clicking the step in the wizard.
 
-    ![](images/configure-site-settings-during-deploy-4.png?width=800)
 
 * The step will be **disabled** when there aren't any settings to configure or the user executing the deployment does not have the required permissions.
 
 The Site Properties of the applications to deploy are set in the target environment after the applications are published. Beware of Timers that run `When Published`, since the Site Properties that the Timers may use are not yet updated when the Timers run.
-
-This feature does not apply to multi-tenant Site Properties.

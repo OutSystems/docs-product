@@ -631,8 +631,6 @@
 - href: setup/intro.md
 - topics:
     - href: setup/possible-setups/intro.md
-    - href: setup/system-requirements.md
-    - href: setup/network-requirements.md
     - href: setup/environment-config.md
 
 # Reference

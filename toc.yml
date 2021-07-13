@@ -1139,7 +1139,6 @@
             - href: ref/apis/charts/chart-task-linearea.md
             - href: ref/apis/charts/chart-json.md
         - href: ref/apis/auto/dbcleaner-api.final.md
-        - href: ref/apis/emails-api.md
         - href: ref/apis/auto/httprequesthandler-api.final.md
         - href: ref/apis/javascript/README.md
         - topics:

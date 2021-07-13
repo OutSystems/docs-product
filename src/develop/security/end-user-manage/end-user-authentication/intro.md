@@ -17,10 +17,6 @@ When you start developing a new module it has the built-in logic for end user au
 Internal
 :   The default authentication method. The end user information is stored in the OutSystems database. The credentials are not stored, but a cryptographic hash function is computed using the credentials and only its result is stored. When the end user attempts to log in, the hash function is computed again and its result is compared with what is in the database.
 
-Active Directory
-:   Uses your Active Directory to authenticate the end users. Available only in on-premises installations.  
-    Check how to [Configure Active Directory Authentication](configure-active-directory.md).
-
 LDAP
 :   Authenticates the end user against your LDAP server, either using LDAP configured for Active Directory or standard LDAP.  
     Check how to [Configure LDAP Authentication](configure-ldap.md).
@@ -61,7 +57,7 @@ When the end user uses the application for the first time and the accessed scree
 
 1. If the platform is configured to use SAML 2.0, Azure AD or Okta authentication, the end user is redirected to a web page where he must enter his enterprise credentials (username and password). Upon successful authentication, the end user is redirected back to the OutSystems application.
 
-1. If the platform is [configured to use Integrated Windows Authentication](<integrated-authentication.md>) and the end user is in the same domain as the platform server, the end user is authenticated using Integrated Windows Authentication.
+1. If the platform is configured to use Integrated Windows Authentication and the end user is in the same domain as the platform server, the end user is authenticated using Integrated Windows Authentication.
 
     Once the end user makes a request, the server replies with an HTTP 401 status, signaling to the end user browser that authentication is required. If the browser already has the end user credentials stored, it automatically sends the credentials to the web server. Otherwise, the browser displays a form for the end user to input the credentials and sends them to the server. This means that even if you have a custom Login page, the end user will not see it.
 

@@ -112,7 +112,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. On the **Properties** tab, in the **Name** property, enter a name for each of the buttons (in this example, Previous and Next).
 
-1. To ensure that all of the information the user enters is passed from step to step, create a [screen action](../../../../logic/action-web.md#screen-actions) by selecting the **Next** button, and on the **Properties** tab, from the **OnClick** drop-down, select **New Client Action**.
+1. To ensure that all of the information the user enters is passed from step to step, create a [action](../../../../logic/actions.md) by selecting the **Next** button, and on the **Properties** tab, from the **OnClick** drop-down, select **New Client Action**.
 
     ![](images/wizard-14-ss.png)
 

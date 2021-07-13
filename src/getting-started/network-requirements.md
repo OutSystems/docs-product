@@ -15,25 +15,6 @@ This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available
 
 ### Open ports
 
-The OutSystems services use the following ports:
-
-* 12000 - OutSystems Deployment Controller Service
-
-* 12001 - OutSystems Deployment Service
-
-* 12002 - OutSystems Scheduler Service
-
-For each server of an OutSystems environment, `localhost`:
-
-* Must resolve to 127.0.0.1 (IPv4)
-* Must be accessible by HTTP on 127.0.0.1
-
-<div class="info" markdown="1">
-
-It's possible to configure some of the ports used. Check the [Configuration Tool documentation](../ref/configuration-tool/intro.md) to learn more.
-
-</div>
-
 The table below details the ports that need to be accessible in each server of an OutSystems environment for **publication and runtime connectivity**. If a server has both roles (Controller and Front-End), then consider the ports for both profiles on that server.
 
 |Source|Destination|Port|Protocol|Notes|
@@ -45,10 +26,7 @@ The table below details the ports that need to be accessible in each server of a
 |Front-End|SQL Server / Oracle|1433 / 1521|TCP|Database connection|
 |Controller|SQL Server / Oracle|1433 / 1521|TCP|Database connection|
 
-If you are using a hybrid infrastructure where some part is in OutSystems Cloud and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
 
 ### Network latency
 
 Even though OutSystems is built to scale horizontally, you need to consider the network latency between the database server, the Platform Server, and the front-end servers. For this reason, it’s advisable to have all servers that make up an environment, running under the same provider.
-
-As an example, if you are using Amazon RDS as your database server and running the Platform Server on your own infrastructure, the application’s performance will be degraded.

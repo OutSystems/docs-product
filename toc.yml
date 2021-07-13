@@ -556,9 +556,6 @@
                 - href: extensibility-and-integration/integration-studio/managing-extensions/entity-refresh.md
 
             - href: extensibility-and-integration/integration-studio/managing-extensions/resource-define.md
-
-            - href: extensibility-and-integration/integration-studio/managing-extensions/net-assembly-import-web-service.md
-
             - href: extensibility-and-integration/integration-studio/managing-extensions/extension-download.md
 
     - href: extensibility-and-integration/connect-external-db.md

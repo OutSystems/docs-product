@@ -1,15 +1,9 @@
 ---
 summary: Blocks use events to communicate changes to the parent screen/block or to another block.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps; support-webapps-featured
+tags:
 ---
 
 # Pass Data Between Blocks
-
-<div class="info" markdown="1">
-
-We’ve been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 In a screen or block with child blocks, it can happen that an event in a child block requires updating another block. For example, a block containing a date picker that, when changed, requires updating a chart plotted by another block. 
 
@@ -59,9 +53,3 @@ In **Reactive Web** and **Mobile** apps, if the **Target** block needs to execut
 1. In the newly created Client Action, implement the logic to refresh the queries or deal with the new values of the input parameters.
 
     ![](images/block-communicate-5.png)
-
-In **Traditional Web** apps, if the **Target** block needs to execute logic in response to the updated input parameter values:
-
-1. Go to the event handler action.
-
-1. Update the **Target** block with the Ajax Refresh tool.

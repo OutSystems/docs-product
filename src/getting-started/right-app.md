@@ -1,6 +1,6 @@
 ---
 summary: Learn what is the right app for your project. Know the difference between web and mobile apps in OutSystems and what to choose for your needs. 
-tags: support-application_development; support-devOps; support-Infrastuture_Architecture; support-Mobile_Apps; support-webapps; support-Mobile_Apps-overview; support-webapps-overview
+tags:
 ---
 
 # Choose the right app for your project
@@ -197,9 +197,6 @@ No installation is needed.</p>
 
 (*) Currently not available.
 
-## What's a Traditional Web App?
-
-Traditional Web App is an earlier type of OutSystems app with a focus on server-side development. You may know this app as app templates **Top Menu** or **Lisbon**.
 
 ## What's a Service?
 

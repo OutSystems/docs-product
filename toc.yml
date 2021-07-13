@@ -898,9 +898,6 @@
         - topics:
             - href: ref/lang/auto/Class.Mobile Module.final.md
             - href: ref/lang/auto/Class.Reference.final.md
-    
-    # Service Studio command line
-    - href: ref/ss-command/ss-command-line.md
 
     # Errors and Warnings
     - href: ref/errors-and-warnings/intro-errors-and-warnings.md

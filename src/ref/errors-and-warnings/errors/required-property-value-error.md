@@ -22,7 +22,7 @@ For an [Expression](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expres
 ![Location of Expression value](images/required-property-value-error.png?width=400)
 
 
-For a [Button Group](../../../develop/ui/patterns/web/controls/buttongroup.md), set a valid value for the Value property of each of the options. 
+For a [Button Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md), set a valid value for the Value property of each of the options. 
 
 
 ![Location of Button Group value](images/required-property-value-error-03.png?width=300)
@@ -42,7 +42,7 @@ You added a Table or a List widget to your application, and did not set a value 
 
 You need to set a valid value for the Source property. 
 
-For a [Table](../../../ref/lang/auto/Class.Table%20Widget.final.md) or a [List](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md), set a valid value for the Source property to determine the source of the data you want to display on the screen. 
+For a Table or a [List](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md), set a valid value for the Source property to determine the source of the data you want to display on the screen. 
 
 
 For example, for a table, set the Source property by selecting the value for the list result of an Aggregate that is already created for fetching data from the database.
@@ -78,7 +78,7 @@ For a [Radio Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioG
 
 
 
-For an [Input](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md), [Text Area](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md), [Switch](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md), [Checkbox](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md), [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md), or [Button Group](../../../develop/ui/patterns/web/controls/buttongroup.md), set a valid value for the Variable property.
+For an [Input](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md), [Text Area](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md), [Switch](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md), [Checkbox](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md), [Dropdown](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md), or [Button Group](../../lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.md), set a valid value for the Variable property.
 
 
 
@@ -90,7 +90,7 @@ You added a Dropdown widget and did not set a value for the List property.
 
 **Recommended action**
 
-You need to set a valid value for the List property of the [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md).
+You need to set a valid value for the List property of the [Dropdown](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md).
 
 
 
@@ -102,7 +102,7 @@ You added a Dropdown widget and did not set a value for the Options Value proper
 
 **Recommended action**
 
-You need to set a valid value for the Options Value property of the [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md).
+You need to set a valid value for the Options Value property of the [Dropdown](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md).
 
 
 
@@ -116,7 +116,7 @@ You added an [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Uplo
 
 **Recommended action**
 
-You need to set a valid value for the File Content property of the [Upload](../../../ref/lang/auto/Class.Upload%20Widget.final.md).
+You need to set a valid value for the File Content property of the [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md).
 
 
 ## File Name must be set
@@ -128,7 +128,7 @@ You added an [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Uplo
 
 **Recommended action**
 
-You need to set a valid value for the File Name property of the [Upload](../../../ref/lang/auto/Class.Upload%20Widget.final.md).
+You need to set a valid value for the File Name property of the [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md).
 
 
 
@@ -179,7 +179,7 @@ For example, an existing entity was added to a list or a table, and you subseque
 
 Double-click on the error line to take you directly to the missing property and update it. 
 
-For example, for a [List](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md) or a [Table](../../../ref/lang/auto/Class.Table%20Widget.final.md), select a valid entity for the Source value, such as another database table, to replace the deleted one as the data source.
+For example, for a [List](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md) or a Table, select a valid entity for the Source value, such as another database table, to replace the deleted one as the data source.
 
 
 ## URL Path must be set

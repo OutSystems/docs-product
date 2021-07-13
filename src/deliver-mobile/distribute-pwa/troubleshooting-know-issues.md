@@ -7,11 +7,6 @@ tags: support-application_development; runtime-mobile;
 
 This document contains information about troubleshooting and known issues.
 
-<div class="info" markdown="1">
-
-The team would love to hear what you think of this document and if it helps you. Please **leave feedback** in the feedback section. If you want to get a reply, select **Yes, you may contact me about this feedback**.
-
-</div>
 
 ## Known issues
 
@@ -77,7 +72,7 @@ Here are some suggestions to fix the issue:
 
 * Connect to Service Studio by entering your environment URL that begins with "https". For example, instead of connecting to `http://myenvironment.example.com`, connect to `https://myenvironment.example.com`. After that, retry enabling the PWA.
 
-* Check if you have a valid and properly configured SSL certificate. When you distribute a mobile app, by a native build or as a PWA, you need the certificate for secure communication with the server. For more information, see notes in [Enforce HTTPS Security](../../managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md).
+* Check if you have a valid and properly configured SSL certificate. When you distribute a mobile app, by a native build or as a PWA, you need the certificate for secure communication with the server.
 
 ### There are runtime errors
 

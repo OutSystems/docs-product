@@ -916,7 +916,6 @@
             - href: ref/errors-and-warnings/errors/environment-fault-error.md
             - href: ref/errors-and-warnings/errors/expression-overflow-error.md
             - href: ref/errors-and-warnings/errors/grid-dimensions-overflow-error.md
-            - href: ref/errors-and-warnings/errors/incompatible-action-error.md
             - href: ref/errors-and-warnings/errors/incompatible-date-formats-error.md
             - href: ref/errors-and-warnings/errors/incompatible-version-error.md
             - href: ref/errors-and-warnings/errors/internal-error.md

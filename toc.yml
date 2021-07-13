@@ -959,10 +959,7 @@
             - href: ref/errors-and-warnings/errors/invalid-reference-error.md
             - href: ref/errors-and-warnings/errors/invalid-request-format-error.md
             - href: ref/errors-and-warnings/errors/invalid-response-format-error.md
-            - href: ref/errors-and-warnings/errors/invalid-sap-connection-error.md
             - href: ref/errors-and-warnings/errors/invalid-screen-error.md
-            - href: ref/errors-and-warnings/errors/invalid-send-bulk-messages-error.md
-            - href: ref/errors-and-warnings/errors/invalid-soap-static-entity-usage-error.md
             - href: ref/errors-and-warnings/errors/invalid-sql-error.md
             - href: ref/errors-and-warnings/errors/invalid-structure-error.md
             - href: ref/errors-and-warnings/errors/invalid-text-value-error.md
@@ -987,7 +984,6 @@
             - href: ref/errors-and-warnings/errors/required-permission-error.md
             - href: ref/errors-and-warnings/errors/required-property-value-error.md
             - href: ref/errors-and-warnings/errors/unknown-object.md
-            - href: ref/errors-and-warnings/errors/unsupported-consumed-web-service-error.md
             - href: ref/errors-and-warnings/errors/unused-callback-error.md
             - href: ref/errors-and-warnings/errors/unused-input-parameter-error.md   
         - href: ref/errors-and-warnings/warnings/intro-warnings.md
@@ -1031,7 +1027,6 @@
             - href: ref/errors-and-warnings/warnings/possible-data-loss-warning.md
             - href: ref/errors-and-warnings/warnings/potential-incompatible-consumer-warning.md
             - href: ref/errors-and-warnings/warnings/potential-loop-warning.md
-            - href: ref/errors-and-warnings/warnings/required-phone-warning.md
             - href: ref/errors-and-warnings/warnings/scalability-suggestion-warning.md
             - href: ref/errors-and-warnings/warnings/security-warning.md
             - href: ref/errors-and-warnings/warnings/sql-injection-warning.md

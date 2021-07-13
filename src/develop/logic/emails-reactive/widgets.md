@@ -5,6 +5,7 @@ tags: support-application_development,
 
 # Widgets in emails
 
+
 OutSystems designed widgets to help you create lightweight emails that most email readers can open. When you open Email for editing, Service Studio shows the available widgets in the widgets toolbar.
 
 Use the [widgets in Email](#widgets-available-in-emails) like you use the widgets for Screens, with the following common differences designed to make the emails light and secure:
@@ -34,7 +35,7 @@ Drag the List widget to an Email, then drag attributes or other widgets like Ima
 
 ## Widgets available in Emails
 
-You can use the following widgets in Emails:
+You can use the following widgets in Emails.
 
 | Widget      | Description                                         | Notes                                                          |
 | ----------- | --------------------------------------------------- | -------------------------------------------------------------- |

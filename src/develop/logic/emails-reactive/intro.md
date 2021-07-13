@@ -9,7 +9,7 @@ You can create and send emails from Mobile Apps and Reactive Web Apps. In this t
 
 ## Prerequisites
 
-To use this feature, you must meet the following requirements.
+To use this feature, you must meet the following requirements for the [technical previews](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features).
 
 **General requirements**
 
@@ -19,12 +19,12 @@ To use this feature, you must meet the following requirements.
 **Sending emails and using basic widgets**
 
 * You're using Platform Server 11.12.0 or later.
-* You have activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Emails for Mobile and Reactive** in LifeTime in all environments.
+* You have activated the technical preview **Emails for Mobile and Reactive** in LifeTime in all environments.
 
 **Using attachments, Image with binary content, List, Table, If**
 
 * You're using Platform Server 11.13.0 or later.
-* You have activated the [technical previews](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Emails for Mobile and Reactive** and **Attachments in Mobile and Reactive emails** in LifeTime, in all environments.
+* You have activated the technical previews **Emails for Mobile and Reactive** and **Attachments in Mobile and Reactive emails** in LifeTime, in all environments.
 
 ## Getting started
 

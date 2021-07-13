@@ -85,7 +85,7 @@ Environment Health
 
 <div class="info" markdown="1">
 
-The information about the Scheduler Service in the **Environment Health** screen applies only to applications that are not running in a [Container](../containers/intro.md).
+The information about the Scheduler Service in the **Environment Health** screen applies only to applications that are not running in a Container.
 
 </div>
 

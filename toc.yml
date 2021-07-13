@@ -947,7 +947,6 @@
             - href: ref/errors-and-warnings/errors/invalid-image-error.md
             - href: ref/errors-and-warnings/errors/invalid-javascript.md
             - href: ref/errors-and-warnings/errors/invalid-join-error.md
-            - href: ref/errors-and-warnings/errors/invalid-link-error.md
             - href: ref/errors-and-warnings/errors/invalid-list-box-widget-error.md
             - href: ref/errors-and-warnings/errors/invalid-module-error.md
             - href: ref/errors-and-warnings/errors/invalid-numeric-value-error.md

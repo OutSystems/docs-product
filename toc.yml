@@ -631,9 +631,8 @@
 
 
 # Setting Up OutSystems
-- href: setup/intro.md
+- href: setup/possible-setups/intro.md
 - topics:
-    - href: setup/possible-setups/intro.md
     - href: setup/environment-config.md
 
 # Reference

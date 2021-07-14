@@ -17,7 +17,7 @@ You can give any name to an environment. This example uses Development, Quality,
 
 You create an application in Development and then move it to Quality for testing, and then  to Production.
 
-When your application reaches a milestone in development, it's ready for testing by the Quality team. When the app moves to the next environment, LifeTime tags [tags](<tag-a-version.md> the application with the next higher version number.
+When your application reaches a milestone in development, it's ready for testing by the Quality team. When the app moves to the next environment, LifeTime [tags](tag-a-version.md) the application with the next higher version number.
 
 To deploy the application to Quality, do the following:
 

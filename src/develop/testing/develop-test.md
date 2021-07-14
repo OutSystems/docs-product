@@ -1,56 +1,56 @@
 ---
-summary:
+summary: Testing in OutSystems
 tags:
 ---
 
-# Developing for Testability
+# Develop for Testability
 
-Best practices in development and architecture apply for OutSystems, as they would with any other programming language. Basically, you want to ensure that your developed code/module/application is reusable, maintainable, and scalable.
+Best practices in development and architecture apply to OutSystems as they would to any other programming language. Basically, you want to ensure that your developed code/module/application is reusable, maintainable, and scalable.
 
-When introducing Automated Tests in OutSystems (UI, Integration, or Component) the concept of developing code so that it is testable reinforces some of those best practices. It also introduces some new ones.
+When introducing automated tests in OutSystems (UI, integration, or component tests) the concept of developing code that is testable reinforces some of those best practices. It also introduces some new ones.
 
-Every application should be developed to facilitate tests that validate its correctness. This overarching concept is completely independent of the technology involved.
+You should develop every application to facilitate tests that validate its correctness. This overarching concept is completely independent of the technology involved.
 
-Some of the best practices to consider when implementing testable OutSystems applications are presented in this section.
+In this article, we'll review some best practices to consider when implementing testable OutSystems applications. 
 
 ## Domain Isolation
 
-In OutSystems, business concepts and business logic are organized into modules. Each module “owns” any concept or logic defined within it. As a result of this organization, modules can ensure that any use of their concepts or logic is correct according to their own internal business rules. [Domain-Driven Design (DDD)](https://dddcommunity.org/learning-ddd/what_is_ddd/) principles to promote code (and test) isolation are highly recommended. DDD drives the development of complex systems based on decoupled domains of technology artifacts. From a best practices perspective, in OutSystems a domain is mapped into a LifeTime team. This team owns a set of applications for a business domain with an independent lifecycle from other teams (domains). Domains can be horizontal or vertical. Depending on the scenario, the level of decoupling between domains needs to be carefully evaluated.
+OutSystems organizes business concepts and business logic into modules. Each module "owns" any concept or logic defined within it. As a result, modules can ensure that any use of their concepts or logic is correct according to their own internal business rules. [Domain-Driven Design (DDD)](https://dddcommunity.org/learning-ddd/what_is_ddd/) principles to promote code (and test) isolation are highly recommended. DDD drives the development of complex systems based on decoupled domains of technology artifacts. From a best practices perspective, OutSystems maps a domain to a LifeTime team. This team owns a set of applications for a business domain with an independent lifecycle from other teams (domains). Domains can be horizontal or vertical. Depending on the scenario, the level of decoupling between domains needs to be carefully evaluated.
 
-If you are not too familiar with DDD in OutSystems and want to learn more about it, there’s already some great content describing its main concerns and principles. You should definitely read:
+If you want to learn more about DDD in OutSystems, see this great content describing its main concerns and principles:
 
 * [Monoliths or Microservices: Make Both Your Domain](https://www.outsystems.com/blog/posts/monoliths-or-microservices-make-both-your-domain/) — Article
 
-* [Domains and Services Architecture](https://www.outsystems.com/learn/lesson/1696/domains-and-services-architecture/) ​— ODC Talk 2018
+* [Domains and Services Architecture](https://www.outsystems.com/learn/lesson/1696/domains-and-services-architecture/) — OutSystems Developer Conference Talk 2018
 
-With this introduction to the principles of DDD, you may observe some common pitfalls in implementing OutSystems applications. These will have an impact on application testability, so we’ll examine them further.
+With this introduction to the principles of DDD, you may notice some common pitfalls in implementing OutSystems applications. These will have an impact on application testability, so we’ll examine them further.
 
 ### Anti-Pattern #1: Validations at the UI Level Only
 
-In the following image, the screen in the UI module displays a form to edit a concept owned by the Core module. When submitting the changes, all validations take place in the corresponding Screen action, which then calls the action from the Core module to save the record. The Core action itself does not perform any validation on the given input and serves mostly as a wrapper for the Create action of the entity.
+In the following image, the screen in the UI module displays a form to edit a concept owned by the Core module. When submitting the changes, all validations take place in the corresponding Screen Action, which then calls the action from the Core modimages/ule to save the record. The Core Action itself doesn't  perform any validation on the given input and serves mostly as a wrapper for the Create Action of the entity.
 
 ![Anti-Pattern #1 - Validations in the UI only](images/test-validation-only-ui-ss.png?width=800)
 
-When testing the Core action, we can input any values into the action, and it will always succeed, barring any problems communicating with the database. Any test that uses this action in its execution, therefore, loses its relevance.
+When testing the Core action, we can input any value into the action, and it will always succeed, barring any problems communicating with the database. Therefore, any test that uses this action in its execution loses its relevance.
 To solve this problem, move all business validations to the Core action to ensure the provided inputs are valid according to the business rules for that module.
 
-Keep in mind that the Core module action should be testable and take business validations/rules into account on its own. It should be able to be tested alone, without depending on a UI test, for the validation/rule check. On the UI level, validations should also be performed, but they should be focused more on user interaction and not so much on business rules - include simple input validation feedback.
+Keep in mind that the Core module action should be testable and take business validations/rules into account on its own. It should be possible to independently test it for validation/rule tests, without depending on a UI test. At the UI level, validations should focus more on user interaction than on business rules, and they should include simple input validation feedback.
 
-In summary, the focus at the UI level should be to validate only the inputs provided by the user. Consider these questions:
+In summary, UI testing should focus on validating user inputs. Consider these questions:
 
 * Did the user input a value that exists in the autocomplete input options?
 
-* Did the user fill in all mandatory inputs?
+* Did the user fill in all mandatory input?
 
-Whereas, at the Core level, it should be to validate the business rules:
+Core level testing should focus on validating business rules:
 
-* Is the option selected from the autocomplete a valid one in the current context?
+* Is the option selected from autocomplete a valid one in the current context?
 
 * Is the value submitted for the mandatory input valid in the current context? 
 
 ### Anti Pattern #2: Business Logic at the UI Level
 
-The Screen action to submit the changes of the page has embedded business logic in its flow. In the example image, it creates a master record, then it creates or updates child records, and finally creates some notification. 
+The Screen Action to submit changes on a page has embedded business logic in its flow. In the example image, it creates a master record, then it creates or updates child records, and finally creates some notification. 
 
 ![Anti-Pattern #2 - Business logic in the UI](images/test-biz-logic-ui-ss.png?width=800)
 
@@ -60,7 +60,7 @@ If this logic needs to be tested as a whole, then one of two things will happen:
 
 1. That logic would have to be replicated in the test logic, which is of course not desirable because the test would need an update every time the screen action changes.
 
-The best way to handle this problem is to encapsulate the logic that needs to be tested in a public action at a Core module level, which will then be used in the screen action. This way, the business logic can be tested through component testing, without depending on the implementation of UI tests, which are way more expensive to produce and maintain.
+The best way to handle this problem is to encapsulate the logic that needs to be tested in a public action at a Core module level, which will then be used in the screen action. This way, the business logic can be tested through component testing, without depending on the implementation of UI tests, which are much more expensive to produce and maintain.
 
 ### Anti Pattern #3: Unsupported Cross-Domain Referencing
 
@@ -68,16 +68,16 @@ DDD recommends using Service Actions and Public Entities for dependencies betwee
 
 ![Anti-Pattern #3 - Unsupported cross-domain dependencies](images/test-cross-domain-references-diag.png?width=600)
 
-This decision to directly reference Public entities or not between domains may impact the test data setup and therefore needs to be discussed here.
+This decision about whether to directly reference Public entities between domains may impact the test data setup and therefore needs to be discussed here.
 
 There are a couple of things you can do to sort it out. If cross-domain entities are referenced directly, that means there’s no possibility to mock data from the other domain. As a result, it is acceptable for test setup activities in the local domain to create any required data directly in the external domain.
 
-However, if those entities are only referenced through REST/SOAP APIs or service actions, that opens up the possibility to use mock services to simulate data from the external domain. This will promote test independence and reliability. In this scenario, it isn’t acceptable for test setup activities in the local domain to directly create any required data in the external domain. Instead, use mock services to get the data.
+However, if those entities are only referenced through REST/SOAP APIs or Service Actions, that opens up the possibility to use mock services to simulate data from the external domain. This approach promotes test independence and reliability. In this scenario, it isn’t acceptable for test setup activities in the local domain to directly create any required data in the external domain. Instead, use mock services to get the data.
 ## Service API Isolation
 
 Whenever a REST/SOAP API service external to the current domain needs to be consumed, it should be done so in a wrapper module. This wrapper module should then expose a set of public actions to use that REST API, and all modules needing to access the API must go through the wrapper module.
 
-Available since OutSystems 11, Service actions are essentially REST remote calls available only to other OutSystems applications running in the same environment. They are used to create loosely coupled dependencies between applications, allowing them to break monoliths inside the OutSystems context. Because at runtime they are REST services, it also makes sense to apply this isolation for service actions that are referenced across different domains.
+Available since OutSystems 11, Service Actions are essentially REST remote calls available only to other OutSystems applications running in the same environment. They are used to create loosely coupled dependencies between applications, allowing them to break monoliths inside the OutSystems context. Because at runtime they are REST services, it also makes sense to apply this isolation for Service Actions that are referenced across different domains.
 
 In this section, we will use API to refer to REST, SOAP, or service actions.
 
@@ -95,13 +95,13 @@ In the case of REST APIs, the OnBeforeRequest event action available at the cons
 
 * For service actions, because they behave like public actions at development time, the wrapper should implement logic to return the output expected for the test instead of executing the service action call.
 
-For more detail on mocking strategies, read [Mock Services​ for Integration Points](https://success.outsystems.com/Documentation/Best_Practices/Automated_Testing_Strategy#Mocking_Services_for_Integrations_Points).
+For more detail on mocking strategies, read [Mock Services for Integration Points](https://success.outsystems.com/Documentation/Best_Practices/Automated_Testing_Strategy#Mocking_Services_for_Integrations_Points).
 
 ## Web UI Simulation
 
 ### Widget Naming
 
-The way automated UI testing works in web applications is by simulating the user interaction through application screens in order to fulfill a specific user journey or functionality provided by the application. This simulation is done through scripting the various steps a user needs to perform on the screen elements. An example would be: Follow the home menu link; Click on the submit button; Enter the “email@domain.com” into the email input.
+The way automated UI testing works in web applications is by simulating the user interaction through application screens in order to fulfill a specific user journey or functionality provided by the application. This simulation is done through scripting the various steps a user needs to perform on the screen elements. An example would be: Follow the home menu link; Click on the submit button; Enter the `email@example.com` into the email input.
 
 This means that the UI test script needs to uniquely identify the elements that the user is interacting with. The easiest way to uniquely identify an element in a screen is through its ID property. As such, and in the scope of OutSystems application screens, it implies that those widgets need to be properly identified in Service Studio.
 
@@ -109,15 +109,15 @@ When developing a screen, the developer should ensure that all elements that hav
 
 Eventually, it may be the case that a specific UI test will require additional elements on the screen, which will also need identifiers. However, by naming at least the widgets mentioned above, the developer minimizes the number of times that rework needs to be done. Saving some of this effort fosters a faster workflow when implementing UI testing.
 
-Using the name as the basis of the selector also allows the platform to detect name collision inside the same screen. This is an added benefit. It does not allow two different widgets to have the same Name property, and so the second will add the suffix of “2”, and so on.
+Using the name as the basis of the selector also allows the platform to detect name collision inside the same screen. This is an added benefit. It does not allow two different widgets to have the same Name property, and so the second will add the suffix of "2", and so on.
 
-Still, because OutSystems allows composing a screen with multiple web blocks, if we use the same name in two different web blocks for the same screen, this name collision will not be automatically addressed by Service Studio. Taking that into account, we recommend that when naming a widget in a block, developers should include the web block name as a prefix to the name of the UI widget. This ensures that names will still be unique when a screen is composed by multiple, different web blocks.
+Still, because OutSystems allows composing a screen with multiple Web Blocks, if we use the same name in two different Web Blocks for the same screen, this name collision will not be automatically addressed by Service Studio. Taking that into account, we recommend that when naming a widget in a block, developers should include the web block name as a prefix to the name of the UI widget. This ensures that names will still be unique when a screen is composed by multiple, different Web Blocks.
 
 And what if there is a need to have multiple instances of the same web block on the same screen? In these scenarios, developers should wrap each web block in a container with a specific ID for the screen, and then use that container ID to anchor each specific web block instance in a unique way for that screen.
 
-Testing tools usually use XPath or CSS selectors to identify each UI element. When following the approach mentioned above for UI element identification, these UI widgets will all have IDs, but the OutSystems platform will generate a “composed” ID that will only end with the actual name given to the widget inside Service Studio.
+Testing tools usually use XPath or CSS selectors to identify each UI element. When following the approach mentioned above for UI element identification, these UI widgets will all have IDs, but the OutSystems platform will generate a "composed" ID that will only end with the actual name given to the widget inside Service Studio.
 
-The following is a simple example of how you can identify these IDs that end with a given unique name. Remember, the name represents both CSS selectors and XPath selectors for an input with the name “UserNameInput” in Service Studio:
+The following is a simple example of how you can identify these IDs that end with a given unique name. Remember, the name represents both CSS selectors and XPath selectors for an input with the name "UserNameInput" in Service Studio:
 
 
 CSS Selector
@@ -131,7 +131,7 @@ XPath Selector (2.0) not commonly supported by testing tools
 
 ### Extended Property Alternative
 
-As an alternative to using the name property to identify the elements, an extended property named “os-test-id” can be used as the identifier. For the same input in the previous example, add the “os-test-id” extended property with the value “UserNameInput” in Service Studio. In the generated HTML code, the platform will add an attribute with the mentioned name/value pair.
+As an alternative to using the name property to identify the elements, an extended property named "os-test-id" can be used as the identifier. For the same input in the previous example, add the "os-test-id" extended property with the value "UserNameInput" in Service Studio. In the generated HTML code, the platform will add an attribute with the mentioned name/value pair.
 
 Then, the following selectors can be used to identify the element on the screen:
 

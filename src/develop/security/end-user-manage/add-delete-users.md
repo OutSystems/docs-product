@@ -18,13 +18,13 @@ Check [End Users Authentication](end-user-authentication/intro.md) for more info
 
 </div>
 
+Before you can add users, you must have access to the Users application. To learn more about access to the Users application, see [Access the Users application](accessing-users.md).
+
 To create a new end user for your applications do the following:
 
-1. Click **Create a new User** under the "Users" page heading.
+1. From the Users tab click **Create a new User**.
 
-1. Fill in the details and press **Save**.  
-
-    The Users app redirects you to the user detail page after creating the user.
+1. Complete the form entering all required fields, and press **Save**. The Users app redirects you to the user detail page.
 
 1. Assign groups and roles to the user.
 
@@ -32,14 +32,14 @@ To create a new end user for your applications do the following:
 
 ## Activate and deactivate an existing end user { #activate-deactivate }
 
-A deactivated end user can't log in to any application and has all the granted permissions suspended.  
-To deactivate an end user, access the user detail page and then click **Set as Inactive**.
+A deactivated end user can't log in to any application and has all permissions are suspended.
+  
+1. To deactivate an end user, from the user detail page, click **Set as Inactive**.
 
-In the **Users** tab, click **Inactive Users** to view the list of deactivated users.  
-To activate an end user again, enter the user details and click **Set as Active**.
+1. To view the list of deactivated users, from the **Users** tab, click **Inactive Users**. To re-activate an end user, enter the user details and click **Set as Active**.
 
 ## Delete an existing end user { #delete }
 
-To permanently delete an end user, click **Edit this User** on the user detail screen and select **Delete this User**.
+To permanently delete an end user, from the user detail screen, click **Edit this User** and select **Delete this User**.
 
 ![Demo of deleting an end user in the Users app](images/add-delete-users-gif2.gif?width=550)

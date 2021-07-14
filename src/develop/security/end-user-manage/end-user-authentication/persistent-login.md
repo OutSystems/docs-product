@@ -18,6 +18,6 @@ The default duration of a persistent login session is 10 days in Traditional Web
 For Traditional Web apps you can customize this duration by using the supported Forge Component [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) and changing the `Remember Login(days)` parameter in the Platform Configurations Tab.  
 For Reactive and Mobile apps you can customize this duration in Service Center by [changing the `Max Idle Time` parameter](<../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md#configure-app-authentication-settings>) for persistent authentication.
 
-For example, when you create a mobile application that uses one of the built-in [Application Templates](<../../../../develop/application-templates/intro.md>) for mobile apps (Phone, Tablet or Universal) the use of persistent login is the default.
+For example, when you create a mobile application that uses one of the built-in [Application Templates](<../../../../develop/application-templates/intro.md>), the use of persistent login is the default.
 
 ![](images/userlogin-remember.png)

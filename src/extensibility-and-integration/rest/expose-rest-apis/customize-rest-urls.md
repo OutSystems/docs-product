@@ -58,7 +58,7 @@ When handling a specific resource, start the "URL Path" property value with the 
 Default Endpoint | URL Path | Customized Endpoint
 ---|---|---
 `GET /PhoneAPI/rest/v1/GetContact` | `/contacts/{Id}`  | `GET /PhoneAPI/rest/v1/contacts/{Id}`
-`DELETE /PhoneAPI/rest/v1/DeleteContact` | `/contacts/{Id}` | `DELETE /PhoneAPI/restv1/contacts/{Id}`
+`DELETE /PhoneAPI/rest/v1/DeleteContact` | `/contacts/{Id}` | `DELETE /PhoneAPI/rest/v1/contacts/{Id}`
 `PUT /PhoneAPI/rest/v1/UpdateContact` | `/contacts` | `PUT /PhoneAPI/rest/v1/contacts`
 
 ## Endpoints for sub-collections example

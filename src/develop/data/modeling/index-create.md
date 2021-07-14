@@ -18,11 +18,11 @@ To create an index for an entity:
 
 ## Example
 
-This example is based 0n a simple app that manages customers and orders. 
+This example is based on a simple app that manages customers and orders. 
 
 1. Double-click the **OrderProduct** entity.
 
-    The entity editor opens. 
+1. Open the Review entity by right-clicking on the entity and then **Edit Entity**.
 
 1. On the **Indexes** tab, add a new index by clicking **New** and set the **Name** property.
 

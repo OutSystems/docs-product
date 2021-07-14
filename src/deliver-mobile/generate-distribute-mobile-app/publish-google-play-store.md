@@ -107,3 +107,6 @@ You have to provide the following information:
 At the final steps, you need to release the app to Beta Testing or Production, according to your choice, confirm the version and APK, and start the rollout.
 
 After completing this process your application is published and available for download at the Google Play Store.
+
+______________________________________________________________
+_QR CODE is a registered trademark of Denso Wave Incorporated._

@@ -16,4 +16,4 @@ Your module has a User Provider module that does not exist in the Platform Serve
 Do one of the following:
 
 * Check with the Platform Server administrator or with the User Provider's owner to determine what the cause might be for this situation.
-* Change the User Provider [module](../../../ref/lang/auto/Class.Module.final.md) property of your module.
+* Change the User Provider module property of your module.

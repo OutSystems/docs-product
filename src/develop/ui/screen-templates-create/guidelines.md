@@ -36,9 +36,6 @@ In Reactive Web App, go to the properties and then under **Attributes** add `ser
 
 ![Attribute](images/template-guidelines-custom-data-replacement-support-ss.png?width=400)
 
-In Traditional Web App use the **Extended Properties** pane to add the same attribute.
-
-![Properties pane](images/guidelines-enable-replace-data.png)
 
 ### Expressions
 

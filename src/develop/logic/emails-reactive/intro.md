@@ -5,7 +5,7 @@ tags: support-application_development, article-page
 
 # Technical Preview - Emails in Mobile and Reactive Web Apps
 
-You can create and send emails from Mobile Apps and Reactive Web Apps. In this technical preview, you can use basic formatting and navigation in your emails.
+Create and send emails from Mobile and Reactive Web Apps.
 
 ## Prerequisites
 
@@ -67,17 +67,17 @@ The following is some terminology used in this section.
 
 ### Data considerations
 
-You can create Emails by using input parameters data, local variables and the scope of the Email widgets expressions. Elements like Aggregates, Data Actions, or Client Variables aren't available in the Email scope.
+You can create content for emails by using input parameters, local variables and the scope of the Email widgets expressions. Elements like Aggregates, Data Actions, or Client Variables aren't available in the scope of an Email element.
 
 Emails support compound data types.
 
 ### Security consideration
 
-Most modern apps run some logic in the client devices which makes it straightforward to inspect and manipulate the code. When you design Emails that require input fields from the client-side of the app, make sure that you [follow security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices).
+Most modern apps run some logic in the client devices which makes it straightforward to inspect and manipulate the code. When you design emails that require input fields from the client-side of the app, make sure that you [follow security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices).
 
 ### Email clients and CSS
 
-There are many email clients and there's no consistent support for CSS. OutSystems recommends you test your email content regularly in different clients. To check how different platforms support the CSS you want to use, you can use tools such as, [Can I email](https://www.caniemail.com/).
+There are many email clients and there's no consistent support for CSS. OutSystems recommends that you test your email content regularly in different clients. To check how different platforms support the CSS you want to use, you can use tools such as, [Can I email](https://www.caniemail.com/).
 
 ### CSS from producers
 

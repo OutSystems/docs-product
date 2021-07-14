@@ -7,7 +7,7 @@ tags: runtime-reactiveweb;
 
 <div class="info" markdown="1">
 
-Check our training [Becoming a Reactive Web Developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer/) for a guided introduction into Reactive Web App. To read more about this new type of app in OutSystems, we invite you to read the forum post <a href="https://www.outsystems.com/forums/discussion/52761/reactive-web-the-next-generation-of-web-apps/">The Next Generation of Web Apps</a>.
+Check our training [Becoming a Reactive Web Developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer/) for a guided introduction into Reactive Web App. To read more about this type of app in OutSystems, we invite you to read the forum post <a href="https://www.outsystems.com/forums/discussion/52761/reactive-web-the-next-generation-of-web-apps/">The Next Generation of Web Apps</a>.
 
 </div>
 
@@ -45,7 +45,7 @@ Let's create a sample "todo" app.
 
 1. In Service Studio, click **New Application** and choose **Reactive Web App**. Click **Next**.
     
-    ![Create a Reactive Web App](images/reactive-new-app-window.png?width=500)
+    ![Create a Reactive Web App](images/reactive-new-app-window.png)
 
 2. In the properties for your new app, we will set up quite a few interesting things. Upload an icon (1) by clicking **Upload icon**. Then, name your app (2) "ToDo", add some description (3) and change the primary color (4) by selecting one of the colors. Click **Create app** to advance to the next step.
 
@@ -122,7 +122,7 @@ Now we will define the logic that runs when the end users press the Save button:
 
 1. Next, we'll need to assign value of the output parameter **TaskId** to the **CreateOrUpdateTask**. Drag an **Assign** node to the flow and set the **Variable** to **TaskId**, and the **Value** to `CreateOrUpdateTask.Id`.
 
-    ![](images/wrapper-create.png)
+<!--- ![](images/wrapper-create.png) --->
 
 1. Navigate to the **Interface** tab and double click the **SaveOnClick** action.
 
@@ -150,7 +150,7 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
 1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the property *Id* to the input parameter *TaskId*.
 
-    ![](images/wrapper-delete.png)
+<!---![](images/wrapper-delete.png)--->
 
 
 

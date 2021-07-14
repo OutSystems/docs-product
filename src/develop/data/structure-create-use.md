@@ -24,7 +24,7 @@ To define a Record:
 
 ## Example using a Record
 
-In the application GoOutWeb, a Web app to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating.
+In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating.
 
 Since the data type that we will need to assign to the output parameter will only be used here, we will use a Record:
 
@@ -38,7 +38,7 @@ Since the data type that we will need to assign to the output parameter will onl
 
 ## Example using a Structure
 
-In the application GoOutWeb, a Web application to find and review places of interest, we are developing a REST API method to expose basic information about a registered end user of the application. The  information we are returning is the Id, the name, and the profile picture of an end user.
+In an application to find and review places of interest, we are developing a REST API method to expose basic information about a registered end user of the application. The information we are returning is the Id, the name, and the profile picture of an end user.
 
 Since we are going to reuse the user information in another action of the application, we will create a Structure to hold this information thus allowing us to reuse the data type:
 

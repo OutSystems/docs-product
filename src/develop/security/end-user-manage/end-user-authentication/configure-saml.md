@@ -1,6 +1,6 @@
 ---
 summary: How to configure SAML 2.0 end user authentication for your applications.
-tags: runtime-traditionalwebandreactiveweb
+tags: runtime-reactiveweb
 ---
 
 # Configure SAML 2.0 Authentication
@@ -25,7 +25,7 @@ The general authentication workflow is the following:
 
 The current SAML 2.0 implementation in OutSystems has some limitations outlined below. Since the OutSystems platform is being continuously improved, be sure to check this page regularly for an updated list of limitations.
 
-* The SAML 2.0 support provided by the Users module is only applicable to **Traditional Web Apps** and **Reactive Web Apps**. To use SAML 2.0 in Mobile apps you can use Forge components that address those use cases, like [IdP Connector](https://www.outsystems.com/forge/component-overview/599/idp) and [IdP Mobile](https://www.outsystems.com/forge/component-overview/2044/idp-mobile).  
+* The SAML 2.0 support provided by the Users module is only applicable to **Reactive Web Apps**. To use SAML 2.0 in Mobile apps you can use Forge components that address those use cases, like [IdP Connector](https://www.outsystems.com/forge/component-overview/599/idp) and [IdP Mobile](https://www.outsystems.com/forge/component-overview/2044/idp-mobile).  
     _Note:_ The Forge components mentioned above aren't supported by OutSystems and are maintained by the Forge community.
 * To implement single logout you may need to change the authentication flows of your OutSystems application. Check below for details.
 
@@ -67,12 +67,9 @@ Similarly, you can import a Federation metadata XML file containing the IdP Serv
 
 ### Check the authentication flows of your OutSystems applications { #change-auth-flows }
 
-Depending on the version of OutSystems UI Web (for Traditional Web Apps) or OutSystems UI Reactive Templates (for Reactive Web Apps) installed in your development environment when you created your application, you may need to update the login/logout flows of your app to make them compatible with SAML 2.0 authentication.
+Depending on the version of OutSystems UI Reactive Templates (for Reactive Web Apps) installed in your development environment when you created your application, you may need to update the login/logout flows of your app to make them compatible with SAML 2.0 authentication.
 
-For more information, check the following topics according to your application type:
-
-* For **Reactive Web Apps** check [Updating the login/logout flows of your Reactive Web App to support SAML 2.0](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Updating_the_login%2F%2Flogout_flows_of_your_Reactive_Web_App_to_support_SAML_2.0).
-* For **Traditional Web Apps** check [Updating the logout flow of your Traditional Web App to support SAML 2.0](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Updating_the_logout_flow_of_your_Traditional_Web_App_to_support_SAML_2.0). 
+For **Reactive Web Apps** check [Updating the login/logout flows of your Reactive Web App to support SAML 2.0](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Updating_the_login%2F%2Flogout_flows_of_your_Reactive_Web_App_to_support_SAML_2.0).
 
 ### Enable single sign-on between app types to use SAML 2.0 in Reactive Web Apps { #enable-sso-between-app-types }
 
@@ -88,8 +85,8 @@ To enable all the required settings do the following:
 
 1. Enable the following settings:
 
-    – Secure Connections > **Enable HTTP Strict Transport Security (HSTS)**  
-    – Cookies > **Secure**
+    * Secure Connections > **Enable HTTP Strict Transport Security (HSTS)**  
+    * Cookies > **Secure**
 
 1. Click **Save**.
 

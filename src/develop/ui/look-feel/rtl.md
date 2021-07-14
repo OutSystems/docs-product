@@ -73,12 +73,6 @@ You can use it in the following ways:
 
 ![Control the Container’s visibility](images/rtl-logic-ss.png)
 
-## Exceptions
-
-On the OutSystems UI Framework, there are exceptions (Range Slider, Range Slider Interval, Dropdown Search, and Dropdown Tags) that, when used, must apply RTL using the **AdvancedFormat** parameter. The following is the library option that you must add when applying the RTL:
-
-**Note:** By default, the Date Picker pattern already has full RTL support.
-
 ## Utilities
 
 The following are some useful utilities that you can use during your app development to handle your RTL based content.

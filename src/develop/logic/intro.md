@@ -15,7 +15,7 @@ In OutSystems, the logic of your applications is implemented through **Actions**
 
 ## Actions in Reactive Web and Mobile apps
 
-The architecture of Reactive Web and Mobile apps is different from the architecture of Tradtional Web and Service apps and this affects the type of actions available and in which context the logic runs. While in Traditional Web and Service apps all the logic runs on the server, in Reactive Web and Mobile apps some of the logic may run on the server and some logic may run on the client — the user's device.
+In Reactive Web and Mobile apps some of the logic may run on the server and some logic may run on the client — the user's device.
 
 When developing the logic of your Reactive Web and Mobile apps you must take into account that every time your client side logic needs to execute server side logic, the user's device will make a request to the server and wait for the server response. This communication requires that the user's device is online (connected to the internet).
 

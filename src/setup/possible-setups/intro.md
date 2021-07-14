@@ -7,7 +7,8 @@ tags: Installation; support-Infrastructure_Architecture; support-Infrastructure_
 
 <div class="info" markdown="1">
 
-This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure)
+This article applies to: **OutSystems 11 new Service Studio**<br/>
+Other versions available:&#8195;[11](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure)&#8195;[10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure)
 
 </div>
 

@@ -37,7 +37,7 @@ You are using a Null Value property which is incompatible with the Variable assi
 
 **Recommended action**
 
-Set the Null Value property to a value of the same [data type](../../../ref/data/data-types/available-data-types.md) as the Variable assigned to the [Input widget](../../../ref/lang/auto/Class.Input%20Widget.final.md). For example, if you assigned a Boolean variable to the Input, set Null Value as `False`.
+Set the Null Value property to a value of the same [data type](../../../ref/data/data-types/available-data-types.md) as the Variable assigned to the [Input widget](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md). For example, if you assigned a Boolean variable to the Input, set Null Value as `False`.
 
 ## Cannot send a 'Binary Data' parameter in the request &lt;send in> of a method with &lt;request format> request format. Change the parameter data type or the method request format.
 

@@ -14,70 +14,65 @@
 </thead>
 <tbody>
 <tr>
-<td>Ctrl+C
- (Ctrl+Ins)
-</td>
+<td>Cmd+C</td>
 <td>Copy</td>
 </tr>
 <tr>
-<td>Ctrl+V
- (Shift+Ins)
-</td>
+<td>Cmd+V</td>
 <td>Paste</td>
 </tr>
 <tr>
-<td>Ctrl+Shift+V
+<td>Shift+Cmd+V
 </td>
 <td>Paste As</td>
 </tr>
 <tr>
-<td>Ctrl+X
- (Shift+Del)
+<td>Cmd+X
 </td>
 <td>Cut</td>
 </tr>
 <tr>
-<td>Ctrl+Z
+<td>Cmd+Z
 </td>
 <td>Undo</td>
 </tr>
 <tr>
-<td>Ctrl+Y
+<td>Shift+Cmd+Z
 </td>
 <td>Redo</td>
 </tr>
 <tr>
-<td>Ctrl+O
+<td>Cmd+O
 </td>
 <td>Open module from the environment</td>
 </tr>
 <tr>
-<td>Ctrl+Shift+O
+<td>Shift+Cmd+O
 </td>
 <td>Open module from file</td>
 </tr>
 <tr>
-<td>Ctrl+S
+<td>Cmd+S
 </td>
 <td>Save or export module</td>
 </tr>
 <tr>
-<td>Ctrl+Shift+S
+<td>Shift+Cmd+S
 </td>
 <td>Save As</td>
 </tr>
 <tr>
-<td>Ctrl+Plus
+<td>Cmd+Plus
 </td>
 <td>Zoom in</td>
 </tr>
 <tr>
-<td>Ctrl+Minus
+<td>Cmd+Minus
 </td>
 <td>Zoom out</td>
 </tr>
 <tr>
-<td>Ctrl+0
+<td>Cmd+0
 </td>
 <td>Zoom 100%</td>
 </tr>
@@ -87,12 +82,12 @@
 <td>Auto-complete</td>
 </tr>
 <tr>
-<td>Ctrl+A
+<td>Cmd+A
 </td>
 <td>Select all elements</td>
 </tr>
 <tr>
-<td>Ctrl+F4
+<td>Cmd+W
 </td>
 <td>Close module</td>
 </tr>
@@ -102,14 +97,14 @@
 <td>Cancel and close the current pop-up window</td>
 </tr>
 <tr>
-<td>F1
+<td>F4
 </td>
-<td>Open documentation</td>
+<td>Open selected dropdwon</td>
 </tr>
 <tr>
-<td>F2
+<td>Cmd+comma
 </td>
-<td>Rename selected element</td>
+<td>Open Prefrences</td>
 </tr>
 </tbody></table>
 
@@ -128,45 +123,13 @@
 </td>
 <td>1-Click Publish</td>
 </tr>
-<tr>
-<td>Ctrl+H
-</td>
-<td>Hide/show warning in TrueChange tab</td>
-</tr>
-<tr>
-<td>Ctrl+J
-</td>
-<td>Enable/disable Styles Editor</td>
-</tr>
-<tr>
-<td>Ctrl+L
+<td>Cmd+R
 </td>
 <td>Refresh Aggregate's data preview</td>
-</tr>
 <tr>
-<td>Ctrl+M
-</td>
-<td>Compare and Merge module with published version</td>
-</tr>
-<tr>
-<td>Ctrl+N
+<td>Cmd+N
 </td>
 <td>Create new element</td>
-</tr>
-<tr>
-<td>Ctrl+Q
-</td>
-<td>Open Manage Dependencies window</td>
-</tr>
-<tr>
-<td>Ctrl+Shift+K
-</td>
-<td>Open list of shortcuts</td>
-</tr>
-<tr>
-<td>Ctrl+D
-</td>
-<td>Delete Extended Property</td>
 </tr>
 </tbody></table>
 
@@ -181,59 +144,39 @@
 </thead>
 <tbody>
 <tr>
-<td>Alt+Left
-</td>
-<td>Go back</td>
-</tr>
-<tr>
-<td>Alt+Right
-</td>
-<td>Go forward</td>
-</tr>
-<tr>
-<td>Ctrl+Tab
+<td>Ctrl+Right
 </td>
 <td>Move forward through window tabs</td>
 </tr>
 <tr>
-<td>Ctrl+Shift+Tab
+<td>Ctrl+Shift+Right
 </td>
 <td>Move back through window tabs</td>
 </tr>
 <tr>
-<td>Ctrl+1
+<td>Cmd+1
 </td>
 <td>Move to the Processes tab</td>
 </tr>
 <tr>
-<td>Ctrl+2
+<td>Cmd+2
 </td>
 <td>Move to the Interface tab</td>
 </tr>
 <tr>
-<td>Ctrl+3
+<td>Cmd+3
 </td>
 <td>Move to the Logic tab</td>
 </tr>
 <tr>
-<td>Ctrl+4
+<td>Cmd+4
 </td>
 <td>Move to the Data tab</td>
 </tr>
 <tr>
-<td>Ctrl+Shift+T
+<td>Shift+Cmd+T
 </td>
 <td>Open the last closed window tab</td>
-</tr>
-<tr>
-<td>Ctrl+G
-</td>
-<td>Show/hide development tabs</td>
-</tr>
-<tr>
-<td>Ctrl+W
-</td>
-<td>Show Widget Tree</td>
 </tr>
 <tr>
 <td>Ctrl+Period
@@ -241,7 +184,7 @@
 <td>Select the active element in the elements tree</td>
 </tr>
 <tr>
-<td>Ctrl+Click
+<td>Cmd+Click
 </td>
 <td>Navigate to the target element in the Expression Editor</td>
 </tr>
@@ -258,44 +201,39 @@
 </thead>
 <tbody>
 <tr>
-<td>Ctrl+F
+<td>Shift+Cmd+F
 </td>
-<td>Open dialog to search in the module or in the Community</td>
+<td>Open "What do you want to do?" dialog</td>
 </tr>
 <tr>
-<td>Ctrl+R
+<td>Cmd+F
+</td>
+<td>Open search dialog</td>
+</tr>
+<tr>
+<td>Alt+Cmd+F
 </td>
 <td>Open Find and Replace window</td>
 </tr>
 <tr>
-<td>F12
+<td>Cmd+E
 </td>
 <td>Find usages of the selected element</td>
 </tr>
 <tr>
-<td>Ctrl+F12
+<td>Alt+Cmd+E
 </td>
 <td>Find usages of the selected element in all modules</td>
 </tr>
 <tr>
-<td>Ctrl+H
-</td>
-<td>Replace all text occurrences or element usages</td>
-</tr>
-<tr>
-<td>F3
+<td>Cmd+G or F3
 </td>
 <td>Go to next text occurrence or element usage</td>
 </tr>
 <tr>
-<td>Shift+F3
+<td>Shift+Cmd+G or Shift+F3
 </td>
 <td>Go to previous text occurrence or element usage</td>
-</tr>
-<tr>
-<td>Ctrl+E
-</td>
-<td>Search widgets or blocks in the Toolbox</td>
 </tr>
 </tbody></table>
 
@@ -310,47 +248,42 @@
 </thead>
 <tbody>
 <tr>
-<td>Ctrl+B
+<td>Cmd+B
 </td>
 <td>Bold</td>
 </tr>
 <tr>
-<td>Ctrl+I
+<td>Cmd+I
 </td>
 <td>Italic</td>
 </tr>
 <tr>
-<td>Ctrl+U
+<td>Cmd+U
 </td>
 <td>Underline</td>
 </tr>
 <tr>
-<td>Ctrl+P
-</td>
-<td>Preview screen</td>
-</tr>
-<tr>
-<td>Ctrl+K
+<td>Cmd+K
 </td>
 <td>Link to another destination</td>
 </tr>
 <tr>
-<td>Ctrl+Left
+<td>Cmd+Left
 </td>
 <td>Move Table's column left</td>
 </tr>
 <tr>
-<td>Ctrl+Right
+<td>Cmd+Right
 </td>
 <td>Move Table's column right</td>
 </tr>
 <tr>
-<td>Ctrl+Up
+<td>Cmd+Up
 </td>
 <td>Move Table's row up</td>
 </tr>
 <tr>
-<td>Ctrl+Down
+<td>Cmd+Down
 </td>
 <td>Move Table's row down</td>
 </tr>
@@ -367,22 +300,17 @@
 </thead>
 <tbody>
 <tr>
-<td>Ctrl+Shift+Click
+<td>Shift+Cmd+Click
 </td>
 <td>Select all following elements</td>
 </tr>
 <tr>
-<td>Ctrl+D
-</td>
-<td>Delete Assignment row within an Assign</td>
-</tr>
-<tr>
-<td>Ctrl+Up
+<td>Alt+Cmd+Up
 </td>
 <td>Move Assignment up within an Assign</td>
 </tr>
 <tr>
-<td>Ctrl+Down
+<td>Alt+Cmd+Down
 </td>
 <td>Move Assignment down within an Assign</td>
 </tr>
@@ -399,48 +327,48 @@
 </thead>
 <tbody>
 <tr>
-<td>F6
+<td>Cmd+F6
 </td>
 <td>Run and Debug in Personal Area</td>
 </tr>
 <tr>
-<td>F7
+<td>Cmd+F7
 </td>
 <td>Debug in Public Area</td>
 </tr>
 <tr>
-<td>Shift+F6
- (Shift+F7)
+<td>Shift+Cmd+F6
+ (Shift+Cmd+F7)
 </td>
 <td>Stop Debug</td>
 </tr>
 <tr>
-<td>F8
+<td>Cmd+F8
 </td>
 <td>Add/remove breakpoint</td>
 </tr>
 <tr>
-<td>Ctrl+F8
+<td>Shift+Cmd+F8
 </td>
 <td>Disable/enable breakpoint</td>
 </tr>
 <tr>
-<td>F11
+<td>Cmd+F11
 </td>
 <td>Step into</td>
 </tr>
 <tr>
-<td>Shift+F11
+<td>Shift+Cmd+F11
 </td>
 <td>Step out</td>
 </tr>
 <tr>
-<td>F10
+<td>Cmd+F10
 </td>
 <td>Step over</td>
 </tr>
 <tr>
-<td>F9
+<td>Cmd+F9
 </td>
 <td>Continue request</td>
 </tr>

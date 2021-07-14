@@ -1,11 +1,11 @@
 ---
-summary: Learn how users can send feedback through Reactive Web App or Traditional Web App. 
-tags: runtime-traditionalwebandreactiveweb
+summary: Learn how users can send feedback in Reactive Web Apps. 
+tags: runtime-reactiveweb
 ---
 
 # Send feedback in web apps
 
-When sending feedback is active for a Reactive Web App or Traditional Web App, a glowing circle shows on the app screens, close to the bottom-right corner. Note that you first need to [activate the feedback feature in the environment](user-feedback-enable.md).
+When sending feedback is active for a Reactive Web App, a glowing circle shows on the app screens, close to the bottom-right corner. Note that you first need to [activate the feedback feature in the environment](user-feedback-enable.md).
 
 ![App Feedback button](images/send-feedback-in-web-applications-1.png?width=800)
 

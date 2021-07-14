@@ -35,9 +35,9 @@ Okta
 
 **Notes:**
 
-* If you use Active Directory, LDAP, SAML 2.0, Azure AD or Okta to authenticate users, you don't need to create the users manually. Instead, they're automatically created in the OutSystems database on the first login without storing any password data.
+* If you use LDAP, SAML 2.0, Azure AD or Okta to authenticate users, you don't need to create the users manually. Instead, they're automatically created in the OutSystems database on the first login without storing any password data.
 
-* When using Active Directory or LDAP authentication, the Users module tries to authenticate the user locally first, if it exists in the OutSystems database and if it has a password defined. This first authentication attempt doesn't occur when using SAML 2.0, Azure AD or Okta authentication methods.
+* When using LDAP authentication, the Users module tries to authenticate the user locally first, if it exists in the OutSystems database and if it has a password defined. This first authentication attempt doesn't occur when using SAML 2.0, Azure AD or Okta authentication methods.
 
 ## Configure the authentication of end users
 
@@ -45,11 +45,11 @@ To configure how the platform authenticates end users do the following:
 
 1. In the [Users application](../accessing-users.md), click "Configure Authentication" in the sidebar.
 
-1. Select one of the authentication methods in the **Authentication** drop-down list: `Internal Only`, `Active Directory`, `LDAP`, `Azure AD`, `SAML 2.0`, or `Okta`.
+1. Select one of the authentication methods in the **Authentication** drop-down list: `Internal Only`,  `LDAP`, `Azure AD`, `SAML 2.0`, or `Okta`.
 
     ![](images/ldap-2.png)
 
-1. If you chose **Active Directory**, **LDAP**, **SAML 2.0**, **Azure AD** or **Okta** in the previous step, you need to fill in other configuration fields specific to the authentication method you selected in step 2. Check the other topics in this section for more information on configuring these authentication methods.
+1. If you chose **LDAP**, **SAML 2.0**, **Azure AD** or **Okta** in the previous step, you need to fill in other configuration fields specific to the authentication method you selected in step 2. Check the other topics in this section for more information on configuring these authentication methods.
 
 ## Authentication flow
 
@@ -65,17 +65,14 @@ When the end user uses the application for the first time and the accessed scree
 
     1. The credentials are validated against the OutSystems database.
 
-    1. The platform checks if the authentication is configured to use Active Directory or LDAP authentication and does one of the following:
+    1. The platform checks if the authentication is configured to use LDAP authentication the credentials are validated against the configured LDAP server.
 
-        A) If the platform is configured to authenticate using Active Directory, the credentials are validated against the configured domain server.
-
-        B) If the platform is configured to authenticate using LDAP, the credentials are validated against the configured LDAP server.
 
 1. If after this process the end user could not be authenticated, then an "Invalid Login" message is displayed to the end user.
 
 ## User data synchronization
 
-When authenticating end users using Active Directory, LDAP, SAML 2.0, Azure AD or Okta, the user data in the OutSystems database is updated, in one or more occasions, with the most recent data from the external authentication system. The updated attributes for each user are the following:
+When authenticating end users using LDAP, SAML 2.0, Azure AD or Okta, the user data in the OutSystems database is updated, in one or more occasions, with the most recent data from the external authentication system. The updated attributes for each user are the following:
 
 * Name
 * Email
@@ -84,7 +81,7 @@ When authenticating end users using Active Directory, LDAP, SAML 2.0, Azure AD o
 This synchronization occurs at the following moments, depending on the configured authentication:
 
 After a successful login
-:   The data for the **logged in user** is updated. Occurs when using Active Directory, LDAP, SAML 2.0, Azure AD or Okta authentication.
+:   The data for the **logged in user** is updated. Occurs when using LDAP, SAML 2.0, Azure AD or Okta authentication.
 
 On a daily timer
 :   The data for **all existing users from external authentication sources** in the OutSystems database is updated. These users are the ones whose username contains a `\` (slash) character.  

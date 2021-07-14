@@ -5,7 +5,7 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 
 # Reuse UI
 
-When designing interfaces it's frequent to have parts that are common to some of those interfaces. In OutSystems, it is possible to refactor and implement those common parts using widgets like **Blocks** (in Reactive Web and Mobile apps) and **Web Blocks** (in Traditional Web apps) and then reuse them on screens and other blocks.
+When designing interfaces it's common to have parts that are common to some of those interfaces. In OutSystems, it is possible to refactor and implement those common parts using widgets like **Blocks** (in Reactive Web and Mobile apps) and then reuse them on screens and other blocks.
 
 An immediate advantage of using blocks is improving the reusability of screen elements and, therefore, the maintainability of applications. For example, the header and footer of an application can be implemented using blocks that are reused in all screens of the application. If there are any changes to the header or footer, you only need to update the blocks and those changes are automatically propagated to all the screens of the application.
 
@@ -16,7 +16,6 @@ Creation
 
 Usage
 :   You instantiate the block on screens or other blocks of your application.
-
 
 ## Communication between Blocks
 

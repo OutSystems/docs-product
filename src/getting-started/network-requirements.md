@@ -7,7 +7,8 @@ tags: requirements; support-installation
 
 <div class="info" markdown="1">
 
-This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_network_requirements)&#8195;[9.1](https://success.outsystems.com/Support/Archive/9.1/OutSystems_Platform_network_requirements)&#8195;[9.0](https://success.outsystems.com/Support/Archive/9.0/OutSystems_Platform_network_requirements)
+This article applies to: **OutSystems 11 new Service Studio**<br/>
+Other versions available:&#8195;[11](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_network_requirements)&#8195;[10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_network_requirements)&#8195;[9.1](https://success.outsystems.com/Support/Archive/9.1/OutSystems_Platform_network_requirements)&#8195;[9.0](https://success.outsystems.com/Support/Archive/9.0/OutSystems_Platform_network_requirements)
 
 </div>
 

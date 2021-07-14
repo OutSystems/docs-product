@@ -64,8 +64,6 @@ The Platform Server in a cloud environment is set up for you. You'll receive an 
 
 * The Multiple Database Catalogs and Schema feature isn't available. This means that all applications store their data in the same database Catalog/Schema.
 
-* The Zones feature isn't available. All applications running on an environment are available in all front-end servers of that environment. However, you can set up applications so they are accessible only from the internal network.
-
 
 ## Installation prerequisites
 
@@ -75,7 +73,7 @@ Before installing any component of OutSystems, make sure your hardware and softw
 
 * [Network requirements](../getting-started/network-requirements.md)
 
-## Sign up for a free environment
+# Sign up for a free environment
 
 To sign up for a trail version of OutSystems:
 
@@ -87,19 +85,9 @@ To sign up for a trail version of OutSystems:
 6. Optionally, on the Welcome screen, invite other developers to access the trial environment.
 7. Optionally, from the Welcome screen, play the two-minute video overview to help you get started.
 
+### 6. Install and configure the development tools
 
-### Configure Service Center 
-After you install Service Studio, you can install the management consoles. 
-
-1. In Service Studio, from the development home page, click the gear icon in the menu bar.
-2. Configure the environment. Refer to XYZ for more information.
-
-Congigure your LifeTime environment
-To go to the LifeTime environment: 
-
-1. From Service Center, in the upper right corner, click **Manage all environments in LifeTime**.
-2. Configure your 
-
+OutSystems is now ready for you to start developing. The only thing missing is to [install the development tools](http://www.outsystems.com/home/downloads/) on your developers' desktops. Be sure to install a version of the development tools that is compatible with the version of the Platform Server installed in your environments.
 
 ## More Information
 

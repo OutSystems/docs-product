@@ -1,5 +1,5 @@
 ---
-summary: Build fully functional Screens, with built-in logic, styles, and sample data. Screen Templates speed up development for most often use cases and patterns.
+summary: Build fully functional Screens, with built-in logic, styles, and sample data.
 tags: support-Mobile_Apps-featured; support-webapps-featured
 ---
 
@@ -11,13 +11,10 @@ Check <a href="https://outsystemsui.outsystems.com/OutSystemsUIWebsite/ScreenOve
 
 </div>
 
+Screen Templates enable you to create [Screens](../screens/intro.md) with predefined layouts, widgets, components, styles, and logic. The Screens you create from the built-in Screen Templates have sample data. Having sample data in the Screen is a good way to see how the Screen is designed and to get inspired for developing your app.
 
-Screen Templates enable you to create [Screens](../screens/intro.md) with predefined layouts, widgets, components, styles, and logic. A Screen created from a Screen Template can be published immediately and shown as a part of a demo.
+Screen Templates help you develop faster. For example, create a work order template and make it onto a Screen that shows the statuses of your project tasks. You can change the Screens by [dropping](<replace-data.md>) an Entity over the widget. When the Entity changes, Service Studio updates the user interface.
 
-The Screens created from the built-in Screen Templates have sample data that you can replace manually or semi-automatically. Having sample data in the Screen is a good way to see how the Screen is designed and to get inspired for developing your app.
-
-Screen Templates help you develop faster. For example, you can create the Work Order List Screen and then adapt it to the Screen that shows the statuses of your project tasks. You can change WorkOrderItem to ProjectTaskItem by [dragging and dropping](<replace-data.md>) the corresponding Entity over the Widget. This changes the data sources and updates the user interface.
-
-OutSystems provides the default Screen Templates that are built on top of the OutSystems UI Framework, but you can [create your own Screen Templates](<../screen-templates-create/intro.md>) as well.
+Service Studio comes with the default Screen Templates that are based on the OutSystems UI Framework. You can [create your Screen Templates](<../screen-templates-create/intro.md>) as well.
 
 ![New Screen dialog with default Screen Templates](images/new-screen-window-mobile.png?width=600)

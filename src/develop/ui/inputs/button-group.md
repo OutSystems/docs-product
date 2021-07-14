@@ -1,6 +1,6 @@
 ---
 summary: Let users select a single option from a group of choices, with the Radio Group widget.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
 ---
 
 # Pick Only One Option in a Group of Choices
@@ -46,12 +46,3 @@ You can also use Button Group in Reactive Web and Mobile:
 1. For each Button Group Item, define the value to assign to the variable when the Button Group Item is selected and edit the corresponding text label. 
 
 ![](images/button-group-1.png?width=750)
-
-## In Traditional Web
-
-To use Radio Buttons in Traditional Web:
-
-1. Drag and drop the Radio Buttons from the widgets toolbox. 
-1. For each Radio Button, bind it to the variable that will store the selected value and define the value to assign to the variable when the Radio Button is selected. 
-
-![](images/button-group-2.png?width=750)

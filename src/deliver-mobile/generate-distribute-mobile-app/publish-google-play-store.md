@@ -41,7 +41,7 @@ To generate the Android App Package in the Service Studio, perform the following
 
 1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
 
-1. Click **GENERATE APP**.
+1. Click **Generate Android app**.
 
     ![Configure Android App Settings](images/ss-native_platforms-configure-android-app.png)    
 
@@ -107,3 +107,6 @@ You have to provide the following information:
 At the final steps, you need to release the app to Beta Testing or Production, according to your choice, confirm the version and APK, and start the rollout.
 
 After completing this process your application is published and available for download at the Google Play Store.
+
+______________________________________________________________
+_QR CODE is a registered trademark of Denso Wave Incorporated._

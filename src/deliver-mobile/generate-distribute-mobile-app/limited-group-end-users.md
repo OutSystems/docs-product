@@ -107,3 +107,6 @@ There are several ways to distribute your Android mobile app to a selected group
 
 * Set up a closed beta testing program in the Play Store. This allows you to distribute the app to a limited group of end users. You will need to set up a closed beta testing program in your [Google Play Developer Console](<https://play.google.com/apps/publish/>), specify (or import) the email addresses of the end users that will have access to your beta testing program, share the opt-in URL with them, upload your app package (APK) and publish your app.  
     Note that the Play Store's closed beta functionality cannot ensure that only the devices of authorized end users are able to install and run your beta mobile app. While iOS enforces this through a list of authorized device IDs, in Android there are no such limits. Check the [Google Play Developer Console documentation](<https://support.google.com/googleplay/android-developer/answer/3131213?hl=en#runtest>) for more information on running beta testing programs for Android mobile apps.
+
+______________________________________________________________
+_QR CODE is a registered trademark of Denso Wave Incorporated._

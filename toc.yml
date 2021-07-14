@@ -189,7 +189,11 @@
                     - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
                     - href: develop/ui/patterns/mobile/interaction/lightboximage.md
                     - href: develop/ui/patterns/mobile/interaction/notification.md
-                    - href: develop/ui/patterns/mobile/interaction/map.md
+                    - href: develop/ui/patterns/mobile/interaction/map/intro.md
+                    - topics:
+                        - href: develop/ui/patterns/mobile/interaction/map/map.md
+                        - href: develop/ui/patterns/mobile/interaction/map/addmarker.md
+                        - href: develop/ui/patterns/mobile/interaction/map/dragmarker.md
                     - href: develop/ui/patterns/mobile/interaction/rangeslider.md
                     - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
                     - href: develop/ui/patterns/mobile/interaction/search.md
@@ -376,8 +380,11 @@
     - topics:
         - href: develop/seo/indexing.md
         - href: develop/seo/troubleshooting.md
-    # Develop for testing
-    - href: develop/develop-test.md
+    # Testing
+    - href: develop/testing/intro.md
+    - topics:
+        - href: develop/testing/develop-test.md
+        - href: develop/testing/testing-bdd-framework.md
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
     
@@ -619,7 +626,6 @@
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/views-and-tables.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/query-log-data.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md
-
     - href: managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
     - href: managing-the-applications-lifecycle/data-protection.md
 
@@ -832,6 +838,7 @@
             # Patterns
             - href: ref/interfaces/ui-patterns.md
             - topics:
+                - href: ref/ui-patterns/mobile/data-grid-api-ref.md
                 - href: ref/ui-patterns/mobile/carousel-mobile.md
                 - href: ref/ui-patterns/mobile/columns.md
                 - href: ref/ui-patterns/mobile/datepicker.md
@@ -898,9 +905,6 @@
         - topics:
             - href: ref/lang/auto/Class.Mobile Module.final.md
             - href: ref/lang/auto/Class.Reference.final.md
-    
-    # Service Studio command line
-    - href: ref/ss-command/ss-command-line.md
 
     # Errors and Warnings
     - href: ref/errors-and-warnings/intro-errors-and-warnings.md
@@ -916,7 +920,6 @@
             - href: ref/errors-and-warnings/errors/environment-fault-error.md
             - href: ref/errors-and-warnings/errors/expression-overflow-error.md
             - href: ref/errors-and-warnings/errors/grid-dimensions-overflow-error.md
-            - href: ref/errors-and-warnings/errors/incompatible-action-error.md
             - href: ref/errors-and-warnings/errors/incompatible-date-formats-error.md
             - href: ref/errors-and-warnings/errors/incompatible-version-error.md
             - href: ref/errors-and-warnings/errors/internal-error.md
@@ -948,7 +951,6 @@
             - href: ref/errors-and-warnings/errors/invalid-image-error.md
             - href: ref/errors-and-warnings/errors/invalid-javascript.md
             - href: ref/errors-and-warnings/errors/invalid-join-error.md
-            - href: ref/errors-and-warnings/errors/invalid-link-error.md
             - href: ref/errors-and-warnings/errors/invalid-list-box-widget-error.md
             - href: ref/errors-and-warnings/errors/invalid-module-error.md
             - href: ref/errors-and-warnings/errors/invalid-numeric-value-error.md
@@ -964,10 +966,7 @@
             - href: ref/errors-and-warnings/errors/invalid-reference-error.md
             - href: ref/errors-and-warnings/errors/invalid-request-format-error.md
             - href: ref/errors-and-warnings/errors/invalid-response-format-error.md
-            - href: ref/errors-and-warnings/errors/invalid-sap-connection-error.md
             - href: ref/errors-and-warnings/errors/invalid-screen-error.md
-            - href: ref/errors-and-warnings/errors/invalid-send-bulk-messages-error.md
-            - href: ref/errors-and-warnings/errors/invalid-soap-static-entity-usage-error.md
             - href: ref/errors-and-warnings/errors/invalid-sql-error.md
             - href: ref/errors-and-warnings/errors/invalid-structure-error.md
             - href: ref/errors-and-warnings/errors/invalid-text-value-error.md
@@ -992,7 +991,6 @@
             - href: ref/errors-and-warnings/errors/required-permission-error.md
             - href: ref/errors-and-warnings/errors/required-property-value-error.md
             - href: ref/errors-and-warnings/errors/unknown-object.md
-            - href: ref/errors-and-warnings/errors/unsupported-consumed-web-service-error.md
             - href: ref/errors-and-warnings/errors/unused-callback-error.md
             - href: ref/errors-and-warnings/errors/unused-input-parameter-error.md   
         - href: ref/errors-and-warnings/warnings/intro-warnings.md
@@ -1012,7 +1010,6 @@
             - href: ref/errors-and-warnings/warnings/inconsistent-dependency-warning.md
             - href: ref/errors-and-warnings/warnings/internal-warning.md
             - href: ref/errors-and-warnings/warnings/invalid-argument-value-warning.md
-            - href: ref/errors-and-warnings/warnings/invalid-theme-warning.md
             - href: ref/errors-and-warnings/warnings/invalid-widget-warning.md
             - href: ref/errors-and-warnings/warnings/javascript-injection-warning.md
             - href: ref/errors-and-warnings/warnings/licensing-warning.md
@@ -1036,7 +1033,6 @@
             - href: ref/errors-and-warnings/warnings/possible-data-loss-warning.md
             - href: ref/errors-and-warnings/warnings/potential-incompatible-consumer-warning.md
             - href: ref/errors-and-warnings/warnings/potential-loop-warning.md
-            - href: ref/errors-and-warnings/warnings/required-phone-warning.md
             - href: ref/errors-and-warnings/warnings/scalability-suggestion-warning.md
             - href: ref/errors-and-warnings/warnings/security-warning.md
             - href: ref/errors-and-warnings/warnings/sql-injection-warning.md
@@ -1149,7 +1145,6 @@
             - href: ref/apis/charts/chart-task-linearea.md
             - href: ref/apis/charts/chart-json.md
         - href: ref/apis/auto/dbcleaner-api.final.md
-        - href: ref/apis/emails-api.md
         - href: ref/apis/auto/httprequesthandler-api.final.md
         - href: ref/apis/javascript/README.md
         - topics:
@@ -1167,9 +1162,9 @@
         - topics: 
             - href: ref/apis/lifetime-deployment/rest-api-authentication.md
             - href: ref/apis/lifetime-deployment/api-use-cases.md
-
         - href: ref/apis/auto/lifetime-sdk.final.md
         - href: ref/apis/auto/lifetime-services-api.final.md
+        - href: ref/apis/performancemonitoring-api.md
         - href: ref/apis/auto/platformpasswordutils-api.final.md
         - href: ref/apis/auto/platformruntime-api.final.md
         - href: ref/apis/processes-api.md

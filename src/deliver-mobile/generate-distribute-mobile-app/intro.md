@@ -1,6 +1,6 @@
 ---
 summary: You can generate the mobile app package for your mobile app and distribute it for tests purposes or, when you have completed work on your app, generate a production-ready version of your app to distribute to a selected group of end users or to publish in mobile app stores.
-tags: article-section, runtime-mobile
+tags: runtime-mobile, article-page
 ---
 
 # Generate and Distribute Your Mobile App
@@ -61,11 +61,6 @@ Now that you have configured the app, the next time you need to generate a new m
 
 ### Customizing the Mobile App Domain Name { #customizing-the-mobile-app-domain-name }
 
-<div class="info" markdown="1">
-
-This feature is only available in OutSystems on-premises installations.
-
-</div>
 
 For some cases, you might need to change the domain name associated with your mobile app, like when you have internal security policies dictating that different mobile apps should have different associated domain names and SSL certificates.
 

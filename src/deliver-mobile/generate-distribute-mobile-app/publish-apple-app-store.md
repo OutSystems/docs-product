@@ -80,7 +80,7 @@ To generate your mobile app in the Service Studio, perform the following steps:
 
 1. Provide a provisioning profile of the correct type (see the [Before You Start](#before-you-start) section). The provisioning profile should have a **.mobileprovision** extension.
 
-1. Click the **GENERATE APP** button.
+1. Click the **Generate iOS app** button.
 
    ![Configure iOS App Settings](images/ss-native_platforms-configure-ios-app.png?width=500)
 
@@ -129,3 +129,6 @@ Only available if you enrolled in the [Apple Developer Program](https://develope
 Now that [your application is prepared](#Application-Preparation) and the IPA file generated you can now [submit your application for review](https://help.apple.com/app-store-connect/#/dev301cb2b3e). Apple is going to review your application before making it available in the App Store.
 
 The process is complete. You'll receive feedback from Apple about your application submission.
+
+______________________________________________________________
+_QR CODE is a registered trademark of Denso Wave Incorporated._

@@ -95,9 +95,3 @@ To create a Screen or Block, drag the element from the toolbox to the UI Flow ed
 Drag **Entities** to the UI Flow editor to start the accelerators (scaffolding). For example, if you drag an Entity to a UI Flow editor, you automatically scaffold two Screens with working logic, one for listing the items, one for editing them.
 
 ![Automatically created Screens](images/scaffolding-screens-ss.png?width=400)
-
-## UI Flows in Traditional Web Apps
-
-UI Flows in Traditional Web Apps have **Entry Point** which defines the URL within the app. The Entry Point with the property **Is Default** set to true is the index page of the app.
-
-UI Flows in Traditional Web Apps also have security settings that apply to all Screens in the UI Flow.

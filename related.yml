@@ -23,6 +23,7 @@
   - ref/logic/expressions/operators.md
   - ref/logic/expressions/operands.md
   - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md
+  - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 - develop/logic/exceptions/handling-mechanism.md:
     - ref/lang/auto/Class.Exception Handler.final.md
@@ -81,9 +82,6 @@
 - develop/ui/reuse/dedicated-ui-modules.md:
     - develop/ui/reuse/block-create-reuse.md
 
-# Send an Email From a Web Application
-- develop/logic/emails-reactive/intro.md:
-    - extensibility-and-integration/configure-send-emails.md
 
 # Styles Editor
 - develop/ui/look-feel/styles-editor.md:
@@ -461,6 +459,8 @@
     - ref/lang/auto/builtinfunctions.final.md
     # Expressions
     - ref/logic/expressions/intro.md
+    # Invalid Expression Error
+    - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 # Form
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Form.final.md:
@@ -691,6 +691,8 @@
     - develop/data/query/calculated-attribute-create.md
     # Available Data Types
     - ref/data/data-types/available-data-types.md
+    # Invalid Expression Error
+    - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 # Operands
 - ref/logic/expressions/operands.md:
@@ -793,22 +795,7 @@
 #     Send Email
 -  ref/lang/auto/Class.Send Email.final.md:
     - one-way: develop/logic/emails-reactive/intro.md
-
-#  Invalid Link Error
--  ref/errors-and-warnings/errors/invalid-link-error.md:
-    - one-way: ref/lang/auto/Class.Link Widget.final.md
     
-# Configuration Tool
-
-- ref/configuration-tool/tabs/platform-oracle.md:
-    - external:
-        - "Configuring linguistic sorting in an OutSystems environment using an Oracle database":
-            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Configuring_linguistic_sorting_in_an_OutSystems_environment_using_an_Oracle_database
-
-- ref/configuration-tool/tabs/log-oracle.md:
-    - external:
-        - "Configuring linguistic sorting in an OutSystems environment using an Oracle database":
-            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Configuring_linguistic_sorting_in_an_OutSystems_environment_using_an_Oracle_database
 
 # --- Extensibility and Integration ---
 
@@ -928,404 +915,7 @@
         - "Obfuscation and retracing logs of mobile builds":
             https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Obfuscation_and_retracing_logs_of_mobile_builds
 
-# UI Web Patterns
-- develop/ui/patterns/web/content/accordion/accordion.md:
-    - ref/ui-patterns/web/accordion.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Accordion.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=1
-- develop/ui/patterns/web/content/alert/alert.md:
-    - ref/ui-patterns/web/alert.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Alert.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=3   
-- develop/ui/patterns/web/content/balloon/balloon.md:
-    - ref/ui-patterns/web/balloon.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Balloon.aspx
-- develop/ui/patterns/web/content/blankslate.md:
-    - ref/ui-patterns/web/blankslate.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/BlankSlate.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=8   
-- develop/ui/patterns/web/content/bullets.md:
-    - ref/ui-patterns/web/bullets.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Bullets.aspx
-- develop/ui/patterns/web/content/card.md:
-    - ref/ui-patterns/web/card.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Card.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=13    
-- develop/ui/patterns/web/content/cardbackground.md:
-    - ref/ui-patterns/web/cardbackground.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/CardBackground.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=14
-- develop/ui/patterns/web/content/cardsectioned.md:
-    - ref/ui-patterns/web/cardsectioned.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/CardSectioned.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=16
-- develop/ui/patterns/web/content/carousel.md:
-    - ref/ui-patterns/web/carousel.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
-- develop/ui/patterns/web/content/chatmessage.md:
-    - ref/ui-patterns/web/chatmessage.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ChatMessage.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=19
-- develop/ui/patterns/web/content/lightboximage.md:
-    - ref/ui-patterns/web/lightbox-image.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightboxImage.aspx
-- develop/ui/patterns/web/content/modal.md:
-    - ref/ui-patterns/web/modal.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-           https://outsystemsui.outsystems.com/WebStyleGuidePreview/Modal.aspx
-- develop/ui/patterns/web/content/panel.md:
-    - ref/ui-patterns/web/panel.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Panel.aspx
-- develop/ui/patterns/web/content/section.md:
-    - ref/ui-patterns/web/section.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Section.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=63
-- develop/ui/patterns/web/content/tag.md:
-    - ref/ui-patterns/web/tag.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tag.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=74
-- develop/ui/patterns/web/content/tooltip.md:
-    - ref/ui-patterns/web/tooltip.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tooltip.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=77
-- develop/ui/patterns/web/controls/animatedlabel.md:
-    - ref/ui-patterns/web/animatedlabel.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/AnimatedLabel.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=6
-- develop/ui/patterns/web/controls/buttongroup.md:
-    - ref/ui-patterns/web/buttongroup.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ButtonGroup.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=12
-- develop/ui/patterns/web/controls/datepicker.md:
-    - ref/ui-patterns/web/datepicker.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/DatePicker.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=31
-- develop/ui/patterns/web/controls/dropdown.md:
-    - ref/ui-patterns/web/dropdown.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Dropdown.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=33
-- develop/ui/patterns/web/controls/dropdownselect.md:
-    - ref/ui-patterns/web/dropdownselect.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/DropdownSelect.aspx
-- develop/ui/patterns/web/controls/fileupload/fileupload.md:
-    - ref/ui-patterns/web/fileupload.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FileUpload.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=79
-- develop/ui/patterns/web/controls/floatingactions.md:
-    - ref/ui-patterns/web/floatingactions.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FloatingActions.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=38
-- develop/ui/patterns/web/controls/inputwithicon.md:
-    - ref/ui-patterns/web/inputwithicon.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/InputWithIcon.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=45
-- develop/ui/patterns/web/controls/rangeslider.md:
-    - ref/ui-patterns/web/rangeslider.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSlider.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=60
-- develop/ui/patterns/web/controls/rangesliderinterval.md:
-    - ref/ui-patterns/web/rangesliderinterval.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/RangeSliderInterval.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=61
-- develop/ui/patterns/web/controls/search.md:
-    - ref/ui-patterns/web/search.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Search.aspx 
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=62   
-- develop/ui/patterns/web/controls/search-balloon.md:
-    - ref/ui-patterns/web/search-balloon.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/SearchBalloon.aspx
-- develop/ui/patterns/web/controls/timepicker.md:
-    - ref/ui-patterns/web/timepicker.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/TimePicker.aspx
-- develop/ui/patterns/web/controls/togglebutton.md:
-    - ref/ui-patterns/web/togglebutton.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ToggleButton.aspx
-- develop/ui/patterns/web/controls/video.md:
-    - ref/ui-patterns/web/video.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Video.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=81
-        - "How to Add Video to Your Applications": 
-            https://success.outsystems.com/Documentation/How-to_Guides/Front-End/How_to_Add_Video_to_Your_Applications
-- develop/ui/patterns/web/layout/layout-login.md:
-    - ref/ui-patterns/web/layout-login.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LayoutLogin.aspx
-- develop/ui/patterns/web/layout/layout-loginsplit.md:
-    - ref/ui-patterns/web/layout-loginsplit.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LayoutLoginSplit.aspx  
-- develop/ui/patterns/web/layout/layout-popup.md:
-    - ref/ui-patterns/web/layout-popup.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LayoutPopup.aspx
-- develop/ui/patterns/web/layout/layout-sidemenu.md:
-    - ref/ui-patterns/web/layout-sidemenu.md
-- develop/ui/patterns/web/layout/layout-topmenu.md:
-    - ref/ui-patterns/web/layout-topmenu.md
-- develop/ui/patterns/web/layout/loginform.md:
-    - ref/ui-patterns/web/loginform.md
-- develop/ui/patterns/web/navigation/breadcrumbs.md:
-    - ref/ui-patterns/web/breadcrumbs.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Breadcrumbs.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=10
-- develop/ui/patterns/web/navigation/sectionindex.md:
-    - ref/ui-patterns/web/sectionindex.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/SectionIndex.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=73
-- develop/ui/patterns/web/navigation/sidebar.md:
-    - ref/ui-patterns/web/sidebar.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Sidebar.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=67
-- develop/ui/patterns/web/navigation/tabs/tabs.md:
-    - ref/ui-patterns/web/tabs.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Tabs.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=65
-- develop/ui/patterns/web/navigation/timeline.md:
-    - ref/ui-patterns/web/timeline.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Timeline.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=76
-- develop/ui/patterns/web/navigation/wizard.md:
-    - ref/ui-patterns/web/wizard.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Wizard.aspx        
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=82
-- develop/ui/patterns/web/numbers/badge.md:
-    - ref/ui-patterns/web/badge.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Badge.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=7
-- develop/ui/patterns/web/numbers/counter.md:
-    - ref/ui-patterns/web/counter.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Counter.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=30
-- develop/ui/patterns/web/numbers/iconbadge.md:
-    - ref/ui-patterns/web/icon-badge.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
-- develop/ui/patterns/web/numbers/progressbar.md:
-    - ref/ui-patterns/web/progressbar.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressBar.aspx 
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=57 
-- develop/ui/patterns/web/numbers/progresscircle.md:
-    - ref/ui-patterns/web/progresscircle.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=58
-- develop/ui/patterns/web/numbers/userinitials.md:
-    - ref/ui-patterns/web/user-initials.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/UserInitials.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=80
-- develop/ui/patterns/web/responsive/displayondevice.md:
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/DisplayOnDevice.aspx
-        - "OutSystems UI Pattern": 
-           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=32
-- develop/ui/patterns/web/responsive/loadonvisible.md:
-    - ref/ui-patterns/web/load-on-visible.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/LoadOnVisible.aspx
-- develop/ui/patterns/web/responsive/moveondevice.md:
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/MoveOnDevice.aspx
-- develop/ui/patterns/web/responsive/responsivetable.md:
-    - ref/ui-patterns/web/responsive-table.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ResponsiveTableRecords.aspx
-- develop/ui/patterns/web/structure/aligncenter.md:
-    - ref/ui-patterns/web/aligncenter.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-           https://outsystemsui.outsystems.com/WebStyleGuidePreview/AlignCenter.aspx 
-        - "OutSystems UI Pattern": 
-           https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=4
-- develop/ui/patterns/web/structure/columns.md:
-    - ref/ui-patterns/web/columns.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Columns2.aspx
-- develop/ui/patterns/web/structure/gallery.md:
-    - ref/ui-patterns/web/gallery.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Gallery.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=41 
-- develop/ui/patterns/web/utilities/animate.md:
-    - ref/ui-patterns/web/animate.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Animate.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=5
-- develop/ui/patterns/web/utilities/charactercount.md:
-    - ref/ui-patterns/web/character-count.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/CharacterCount.aspx
-- develop/ui/patterns/web/utilities/fieldset.md:
-    - ref/ui-patterns/web/fieldset.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Fieldset.aspx
-- develop/ui/patterns/web/utilities/flipcontent.md:
-    - ref/ui-patterns/web/flip-content.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/FlipContent.aspx
-        - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=37
-- develop/ui/patterns/web/utilities/iframe.md:
-    - ref/ui-patterns/web/iframe.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Iframe.aspx
-        - "How to Add Video to Your Applications": 
-            https://success.outsystems.com/Documentation/Development_FAQs/How_to_Add_Video_to_Your_Applications            
-- develop/ui/patterns/web/utilities/separator.md:
-    - ref/ui-patterns/web/separator.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/Separator.aspx
-        - "OutSystems UI Pattern":
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=66
-- develop/ui/patterns/web/utilities/stackedicon.md:
-    - ref/ui-patterns/web/stackedicon.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/StackedIcon.aspx
-- develop/ui/patterns/web/intro.md:
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/OutSystemsUILiveStyleGuide/Homepage.aspx
-- develop/ui/patterns/web/navigation/navigationbar.md:
-    - ref/ui-patterns/web/navigation-bar.md
-    - external:
-        - "OutSystems UI Web Live Style Guide": 
-            https://outsystemsui.outsystems.com/WebStyleGuidePreview/NavigationBar.aspx
+
 # UI Mobile Patterns
 - develop/ui/patterns/mobile/adaptive/columns.md:
     - ref/ui-patterns/mobile/columns.md
@@ -1489,6 +1079,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightBoxImage.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46
+- develop/ui/patterns/mobile/interaction/map/intro.md:
+    - external:
+        - "Known issue with the Map component for Reactive Web apps": 
+            https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Known_issue_with_the_Map_component_for_Reactive_Web_apps
 - develop/ui/patterns/mobile/interaction/notification.md:
     - external:
         - "OutSystems UI Pattern":
@@ -1839,3 +1433,21 @@
         - "Anatomy of an OutSystems error stack":
             https://www.outsystems.com/forums/discussion/7856/anatomy-of-an-outsystems-error-stack/
             
+# --- Reference > Errors and Warnings > Errors ---
+
+#  Invalid Action Flow Error
+-  ref/errors-and-warnings/errors/invalid-action-flow-error.md:
+    - external:
+        - "A course about Logic in Training":
+            https://www.outsystems.com/learn/courses/125/logic/
+
+# Testing 
+
+- develop/testing/testing-bdd-framework.md:
+    - develop/testing/develop-test.md
+    - managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
+    - external:
+        - "Becoming a Tester in OutSystems":
+            https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/
+        - "OutSystems testing guidelines":
+            https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines 

@@ -1,13 +1,19 @@
+---
+summary: Check the causes and recomendations on how to solve the different Missing Module TrueChange warnings.
+tags:
+---
+
 # Missing Module Warning
 
-Message
-:   `Module '<module name>' uses module '<producer name>' that was not found. Runtime errors may occur.`
+## Module &lt;module name> uses module &lt;producer name> that was not found. Runtime errors may occur.
 
-Cause
-:   Your module has a reference to a producer module that was not found.
+**Cause**
 
-Recommendation
-:   Do one of the following:
+Your module has a reference to a producer module that was not found.
 
-    * Check with the producer module's owner to determine what the cause might be for the missing.
-    * Check with the Platform Server administrator.
+**Recommended action**
+
+Do one of the following:
+
+* Check with the producer module's owner to determine what the cause might be for the missing module.
+* Check with the Platform Server administrator.

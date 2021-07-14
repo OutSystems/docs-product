@@ -1,6 +1,6 @@
 ---
 summary: Learn how to use a Form to group Inputs Widgets.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps; support-webapps-featured
+tags:
 ---
 
 # Use a Form to Group Input Widgets
@@ -20,19 +20,3 @@ To use a form to group input widgets in Reactive Web and Mobile:
     ![](images/form-use-mobile.png?width=750)
 
 1. Associate a client action to the Save button that calls a server action to store the aggregate/variable record in the database. 
-
-## In Traditional Web
-
-In a Traditional Web app, the screen must have an aggregate or a variable that defines the form record and holds the initial values.
-
-To use a form to group input widgets in Traditional Web:
-
-1. Add the Form widget to the screen and set Source Record to the aggregate/variable.
-
-    ![](images/form-use-web.png?width=750) 
-
-1. Add inputs to the form and bind them to the attributes of the form record.
-
-1. Add a Button to the form.
-
-1. Associate an action to the button that stores the form record in the database. 

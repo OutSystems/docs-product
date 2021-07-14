@@ -104,13 +104,6 @@ The **Purpose** you can configure for the environment is subject to the environm
 <td style="align:center;background-color:#dddddd;">No</td>
 </tr>
 <tr>
-<td>[Test and debug in Personal Area](../develop/troubleshoot/debug/public-personal-areas.md)</td>
-<td style="align:center;background-color:#f1c40f;">Yes<sup>B</sup></td>
-<td style="align:center;background-color:#dddddd;">No</td>
-<td style="align:center;background-color:#dddddd;">No</td>
-<td style="align:center;background-color:#dddddd;">No</td>
-</tr>
-<tr>
 <td style="width:433px;">Delete Module in Service Studio</td>
 <td style="align:center;background-color:#2ecc71;">Yes</td>
 <td style="align:center;background-color:#dddddd;">No</td>

@@ -1,6 +1,6 @@
 ---
 summary: Learn how to validate the information users enter in forms. Use the built-in validation for email, currency, numbers, text — or create custom validators. Customize the feedback messages that show next to the invalid values.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
 ---
 
 # Validate the fields of a form
@@ -11,12 +11,6 @@ For example, if your users need to enter their emails in the field, and they ent
 
 The client-side validation improves the user experience because it's quick feedback about information users enter in the form. However, **you should always check the data that comes from the client side before you save that data to the database**.
 
-
-<div class="info" markdown="1">
-
-Most of this document applies to Reactive Web App and Mobile App. For Traditional Web App, see [Validation in Traditional Web](#validation-in-traditional-web).
-
-</div>
 
 ## Using accelerators to create initial validation flow
 
@@ -178,33 +172,3 @@ Invalidating the date field invalidates the entire form (3), and shows the custo
 Here is the custom validation message in the app running in a browser, with a custom validation message (1) and the feedback message after the form validation failed (2).
 
 ![Custom validation message while the app is running](images/form-custom-validation-browser.png?width=400)
-
-
-## Validation in Traditional Web
-
-<div class="info" markdown="1">
-
-This section applies to the Traditional Web Apps, where validation runs on the server side.
-
-</div>
-
-To implement the form validations, use server action that the app calls after submitting the form data. Add all validations at the beginning of the flow:
-
-1. For each validation:    
-    1. Add the logic to validate the input value. 
-    1. If the validation fails, assign the input's runtime properties as follows:    
-        * `Input.Valid = False`
-        * `Input.ValidationMessage = "<your error message>"`
-1. Check the value of **Form.Valid** after all input validations. If an inputs isn't valid, the form is also not valid:     
-    1. Add an If element with the following condition: `Form.Valid`
-    1. If `True`, continue the action flow. 
-    1. If `False`, end the action flow. The form displays validation messages next to all inputs that aren't valid. 
-
-![Form validation in Traditional](images/form-validate-web.png?width=600)
-
-The **Valid** property of the form is  `False` when: 
-
-* Built-in validation for any field fails
-* You assign `False` to the **Valid** property of any field of the form
-  
-The validation messages show next to all fields with invalid inputs.

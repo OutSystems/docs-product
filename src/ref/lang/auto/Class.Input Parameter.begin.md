@@ -38,18 +38,14 @@ The following elements displayed in the element tree can have Input Parameters:
 * Screens and Blocks
 * Processes
 * Exposed/Consumed REST Methods
-* Exposed/Consumed SOAP Web Service Methods
-* SAP Remote Functions
-* Callback and Authentication actions for REST, SOAP, and SAP integrations (although you can't modify the default Input Parameters of these actions)
+* Callback and Authentication actions for REST and SOAP integrations (although you can't modify the default Input Parameters of these actions)
 * Emails
 * External Sites
 * JavaScript elements (available on Client Actions)
 
 The Input Parameters of the following elements have additional properties:
 
-* [Input Parameter](ServiceStudio.Plugin.SOAP.SOAPActionInput.final.md) of a consumed SOAP Web Service Method
 * [Input Parameter](ServiceStudio.Plugin.RESTService.RestServiceActionInput.final.md) of an exposed REST API Method
-* [Input Parameter](ServiceStudio.Plugin.SAP.SapActionInput.final.md) of a SAP Remote Function
 * [Query Parameter](<Class.Query Parameter.final.md>) of a SQL element
 
 Check their reference topics for more information.

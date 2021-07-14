@@ -86,6 +86,13 @@ Depending on **where the platform registers the request** to access `www.example
 * If the request comes from **within** the browser running MyApp, **Screen1** of the module **MyApp** loads.
 * If the request comes **outside** the browser running MyApp, the system app **Users** loads.
 
+## Reserved page name
+
+Error:
+
+* The Page Name in [name_of_screen] screen contains a string that is not supported: "[reserved_string]". Use a different Page Name.
+
+
 ## Known issues
 
 The following sections cover more technical details related to the known issues.
@@ -96,4 +103,5 @@ When the app runtime passes an **empty string** as a value for a **required para
 
 * Error building URL for (screen name)/:(parameter name). Parameter (parameter name) is missing or has an empty value.
 
-Try configuring the Screen without parameters on the path.
+As a fix, try configuring the Screen without parameters on the path.
+

@@ -1,6 +1,6 @@
 ---
 summary: Use Switch or Check Box widgets to change the value of boolean variables.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
 ---
 
 # Switch or Toggle a Boolean Value
@@ -32,20 +32,6 @@ There's already a Profile screen in the GoOut application with a form to enter d
 1. Add a Label text before the widget with "Friends Check-ins and Reviews".
 1. Repeat steps 1. to 3. to add another Switch, now with the following values: `GetLocalProfiles.List.Current.LocalProfile.NotifyReportedReview` and "Friends Check-ins and Reviews".
 1. Add a heading text with 'Notifications' at top of the two configurations. 
-1. Publish and test.
-
-
-## Using a Checkbox in Traditional Web
-
-In the GoOutWeb app, the Traditional Web version of the GoOut app, we want to also allow end users to configure their notifications.
-
-There's already a Profile screen in the GoOutWeb application with a form to enter data:
-
-1. Add a Checkbox widget at the end of the form. 
-1. Set property Variable to: `ProfileForm.Record.Profile.NotifyCheckInsReviews`.
-1. Add a Label text before the widget with "Friends Check-ins and Reviews".
-1. Repeat steps 1 to 3 to add another Checkbox, now with the following values: `ProfileForm.Record.Profile.NotifyReportedReview` and "Friends Check-ins and Reviews".
-1. Add a heading text with "Notifications" at top of the two configurations.
 1. Publish and test.
 
 

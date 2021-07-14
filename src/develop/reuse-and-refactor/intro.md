@@ -12,7 +12,6 @@ Module type | Description
 --- | ---
 Reactive | Module for building Reactive Web Apps. Supports UI and logic.
 Mobile | Module for building Mobile Apps. Supports UI and logic.
-Traditional Web | Module for building Traditional Web Apps. Supports UI and logic.
 Service | Enforces the encapsulation of core services by abstracting either business concepts or business-agnostic services. See more at [Service modules](services.md).
 Library | Encapsulates logic and UI patterns that are database independent, promoting the reuse of these elements within your factory. See more at [Library modules](libraries.md)
 Extension | Lets you integrate with enterprise systems and to extend the existing functionality and data model of OutSystems. You can learn more in the document about [extending logic with your code](../../extensibility-and-integration/integration-studio/getting-started/intro.md).

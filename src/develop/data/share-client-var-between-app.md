@@ -31,6 +31,3 @@ The following steps show how to share the Client Variable between apps by reusin
 3. Drag the **BlockWithClientVariable** to the Screen.
 4. Publish the app and open it in a browser.
 
-## Sharing values in Traditional Web Apps 
-
-In Traditional Web Apps, you can use Session Variables to keep configurations and app context data.

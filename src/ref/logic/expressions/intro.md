@@ -5,7 +5,11 @@ tags:
 
 # Expressions
 
-An expression consists of operands and operators, or just one operand. For example, **n + 1** is an expression with two operands, **n** and **1**, joined by the addition operator +. Here is how you can edit expressions and show the expression values.
+An expression consists of operands and operators, or just one operand. For example, **n + 1** is an expression with two operands, **n** and **1**, joined by the addition operator +. 
+
+If you are creating an expression and encounter errors, check [here](../../../ref/errors-and-warnings/errors/invalid-expression-error.md) for the causes and the actions you can take to resolve them. 
+
+Here is how you can edit expressions and show the expression values.
 
 * Use the [expression editor](../../../develop/logic/expression-editor.md) to **edit expressions**. The expression editor shows you available elements. It automatically completes the text and shows suggestions after you press **Ctrl+Space**.
 
@@ -27,7 +31,7 @@ We've been working on this article. Please let us know how useful this new versi
 
 ## Notes
 
-Here are some notes about using expressions.
+Here are some tips for using expressions.
 
 * You can use  many functions to manipulate the type Text, however, you can only use the  **+** (addition) operand with type Text. 
 

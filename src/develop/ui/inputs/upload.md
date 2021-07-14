@@ -1,6 +1,6 @@
 ---
 summary: Learn how to enable end users to upload files using your application.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
 ---
 
 # Enable End Users to Upload Files
@@ -45,29 +45,5 @@ There are several ways to save the uploaded file. For example,  you can use a Cl
 1. Ensure the Server Action has an input parameter to accept the contents of the BinaryDataVar variable.
 
 1. Inside the Server Action, create the logic to process or store the uploaded file.
-
-After following these steps and publishing the module, you can test the pattern in your app.
-
-## Traditional Web
-
-To upload a file in a Traditional Web app:
-
-1. In Service Studio, in the Toolbox, search for `Upload`.
-
-    The Upload widget is displayed.
-
-    ![Upload widget](images/uploadweb-1-ss.png)
-
-1. Drag the Upload widget into the Main Content area of your screen.
-
-    ![Drag widget onto screen](images/uploadweb-2-ss.png)
-
-### Save the uploaded file
-
-There are several ways to save the uploaded file. For example, you can add a Button to the screen that executes a screen action and the logic defined in the screen action saves the file. To save the uploaded file, inside the Screen Action flow, use the following Runtime Properties of the Upload widget:
-
-* `Upload.Content`: The file content
-* `Upload.Filename`: The file name
-* `Upload.Type`: The file type
 
 After following these steps and publishing the module, you can test the pattern in your app.

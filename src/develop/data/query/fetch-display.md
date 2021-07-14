@@ -92,7 +92,3 @@ Once you fetch data from the database, use one of many OutSystems widgets to sho
 1. Publish your ap and load it in the browser. There's a list widget listing the last names of the employees.
 
     ![App running in the browser](images/fetch-data-browser.png?width=400)
-
-## Traditional Web App
-
-For more information on how to add an Aggregate in Traditional Web App, see [Aggregates in Traditional Web Apps](../../../ref/lang/auto/Class.Aggregate.final.md#traditional-web-apps).

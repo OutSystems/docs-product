@@ -1,13 +1,19 @@
+---
+summary: Check the causes and recomendations on how to solve the different Missing User Provider TrueChange warnings.
+tags:
+---
+
 # Missing User Provider Warning
 
-Message
-:   `Could not find the '<provider>' User Provider module in this server. Application runtime errors might occur`
+## Could not find the &lt;provider> User Provider module in this server. Application runtime errors might occur
 
-Cause
-:   Your module has a User Provider module that does not exist in the Platform Server you are publishing to.
+**Cause**
 
-Recommendation
-:   Do one of the following:
+Your module has a User Provider module that does not exist in the Platform Server you are publishing to.
 
-    * Check with the Platform Server administrator or with the User Provider's owner to determine what the cause might be for this situation.
-    * Change the User Provider module property of your module.
+**Recommended action**
+
+Do one of the following:
+
+* Check with the Platform Server administrator or with the User Provider's owner to determine what the cause might be for this situation.
+* Change the User Provider module property of your module.

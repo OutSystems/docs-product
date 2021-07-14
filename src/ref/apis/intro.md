@@ -31,12 +31,6 @@ API Name | Available As | Description
 [PlatformRuntime API](auto/platformruntime-api.final.md) | Referenced extension | Allows your applications to switch the database connection in runtime.
 [RuntimePublic.Db API](runtimepublic-db/intro.md) | .NET classes | Allows your extensions modules to call the databases configured in the environment console.
 
-## Emails
-
-API Name | Available As | Description
----|---|---
-[Emails API](emails-api.md) | Referenced system module | Allows you to access data about your Emails.
-
 ## End User Management
 
 API Name | Available As | Description

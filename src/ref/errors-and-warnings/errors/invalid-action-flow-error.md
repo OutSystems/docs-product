@@ -1,56 +1,123 @@
+---
+summary: Check the causes and recomendations on how to solve the different Invalid Action Flow TrueChange errors
+tags:
+---
+
 # Invalid Action Flow Error
 
-The `Invalid Action Flow` error is issued in the following situations:
+The Invalid Action Flow Error is issued, for example, when you create logic flows for Screen Actions, Client Actions, Server Actions, or Data Actions. 
 
-* `'Cycle' path must return to the 'For Each' element in <action>`
+Double-click on the error line in TrueChange to take you directly to the Action that is issuing the error.
+
+## 'Cycle' path must return to the 'For Each' element in &lt;action>
+
+**Cause**
+
+You have a For Each element with a Cycle loop path that does not return to the For Each element.
+
+**Recommended action**
+
+Update the Cycle loop to return to the [For Each](../../../ref/lang/auto/Class.For%20Each.final.md) element in your Action. 
+
+For example, for a [list](../../../develop/logic/list-iterate.md), you need to create a connection from the last step in your logic to the For Each node to close the cycle.
+
+**More info**
+
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md).
+
+## Ambiguous paths to &lt;element> in &lt;action>
+
+**Cause**
+
+You have an element that belongs simultaneously to different Start, Exception Handler, or For Each paths.
+
+**Examples**  
+
+| Flow        | Description  |
+|:-----------:|:-------------|
+| ![](images/ambiguous-paths-1.png) | In this situation, the Assign element belongs to the Action flow and also to the Exception flow, therefore the Error Handler flow is crossing the regular execution of the Action. |
+| ![](images/ambiguous-paths-2.png) | In this situation, the Assign element belongs to the Action flow and also to the For Each flow. |
+
+Alternatively, there are missing paths in a node of your Action. For example, you have a For Each node with no Cycle loop path.
+
+**Recommended action**
+
+Edit the Action flow and update the ambiguous paths. Add any paths that are missing, for example, from a [For Each](../../../ref/lang/auto/Class.For%20Each.final.md) node. 
+
+Check [Exception Handler](../../../ref/lang/auto/Class.Exception%20Handler.final.md) for information about how to add an Exception Handler element and its logic in your Action flow. 
+
+**More info**
+
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md).
+
+Check [Exception Handling Mechanism](../../../develop/logic/exceptions/handling-mechanism.md) for additional information about Exception Handler flows.
+
+## If must have one (T)rue and one F(alse) link
   
-    You have a For Each element with a Cycle loop path that does not return to the For Each element.
+**Cause**
 
-    Fix the Cycle loop to return to the For each element.
+You have an If element in your Action that does not have a True link and a False link.
 
-* `Ambiguous paths to <element> in <action>`
+**Recommended action**
+
+Update the [If](../../../ref/lang/auto/Class.If.final.md) element in the Action to have True and False branches.
+
+**More info**
+
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md).
+
+## Switch condition for &lt;path> connector must return a 'Boolean' value
   
-    You have an element that belongs simultaneously to different Start, Exception Handler, or For each paths.
+**Cause**
 
-    **Examples**  
+You have a condition in your Switch element that does not return a Boolean value.
 
-    | Flow        | Description  |
-    |:-----------:|:-------------|
-    | ![](images/ambiguous-paths-1.png) | In this situation, the Assign element belongs to the Action flow and also to the Exception flow, therefore the Error handler flow is crossing the regular execution of the action. |
-    | ![](images/ambiguous-paths-2.png) | In this situation, the Assign element belongs to the Action flow and also to the For Each flow. |
+**Recommended action**
 
-    Alternatively, there are missing paths in a node of your action. For example, you have a For Each node with no Cycle loop path.
+Update the [Switch](../../../ref/lang/auto/Class.Switch.final.md) element in the Action to have the condition return a Boolean value.
 
-    Edit the Action flow and fix the ambiguous paths.
+**More info**
 
-* `If must have one (T)rue and one F(alse) link`
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md).
+
+## &lt;switch> must have an otherwise optional connector in &lt;action>
   
-    You have an If element that is not well implemented.
+**Cause**
 
-    Fix the If element in this action to have True and False branches.
+You have a Switch element in your Action that does not have the Otherwise path.
 
-* `Switch condition for <path> connector must return a 'Boolean' value`
-  
-    You have a condition in your Switch element that does not return a Boolean value and therefore is not well implemented.
+**Recommended action**
 
-    Fix the Switch element in this action to have the conditions returning a Boolean value.
+Update the [Switch](../../../ref/lang/auto/Class.Switch.final.md) element in the Action and add an Otherwise path.
 
-* `<switch> must have an otherwise optional connector in <action>`
-  
-    You have a Switch element that does not have the Otherwise path and therefore is not well implemented.
+**More info**
 
-    Fix the Switch element in this action to have an Otherwise path.
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md).
 
-* `Start is required in <action>`
-  
-    You have an action flow that does not have the Start element.
+## Start is required in &lt;action>
 
-    Edit this action and add a Start element. Note that an action flow must have one and only one Start element.
+**Cause**
 
-* `More than one Start found in <action>`
-  
-    You have more than one Start element in your action.
+You have an Action flow that does not have the Start element.
 
-    Edit this action and remove the duplicated Start elements.
+**Recommended action**
 
-Double-click the error line to take you to the action flow and highlight the element where the problem is occurring.
+Edit the Action and add a Start element. An Action flow must have only one Start element.
+
+**More info**
+
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md).
+
+## More than one Start found in &lt;action>
+
+**Cause**
+
+You have more than one Start element in your Action.
+
+**Recommended action**
+
+Edit the Action and remove the additional Start elements.
+
+**More info**
+
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md).

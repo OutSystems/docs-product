@@ -23,6 +23,7 @@
   - ref/logic/expressions/operators.md
   - ref/logic/expressions/operands.md
   - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md
+  - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 - develop/logic/exceptions/handling-mechanism.md:
     - ref/lang/auto/Class.Exception Handler.final.md
@@ -470,6 +471,8 @@
     - ref/lang/auto/builtinfunctions.final.md
     # Expressions
     - ref/logic/expressions/intro.md
+    # Invalid Expression Error
+    - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 # Form
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Form.final.md:
@@ -704,6 +707,8 @@
     - develop/data/query/calculated-attribute-create.md
     # Available Data Types
     - ref/data/data-types/available-data-types.md
+    # Invalid Expression Error
+    - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 # Operands
 - ref/logic/expressions/operands.md:
@@ -1525,6 +1530,10 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightBoxImage.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46
+- develop/ui/patterns/mobile/interaction/map/intro.md:
+    - external:
+        - "Known issue with the Map component for Reactive Web apps": 
+            https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Known_issue_with_the_Map_component_for_Reactive_Web_apps
 - develop/ui/patterns/mobile/interaction/notification.md:
     - external:
         - "OutSystems UI Pattern":
@@ -1875,3 +1884,21 @@
         - "Anatomy of an OutSystems error stack":
             https://www.outsystems.com/forums/discussion/7856/anatomy-of-an-outsystems-error-stack/
             
+# --- Reference > Errors and Warnings > Errors ---
+
+#  Invalid Action Flow Error
+-  ref/errors-and-warnings/errors/invalid-action-flow-error.md:
+    - external:
+        - "A course about Logic in Training":
+            https://www.outsystems.com/learn/courses/125/logic/
+
+# Testing 
+
+- develop/testing/testing-bdd-framework.md:
+    - develop/testing/develop-test.md
+    - managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
+    - external:
+        - "Becoming a Tester in OutSystems":
+            https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/
+        - "OutSystems testing guidelines":
+            https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines 

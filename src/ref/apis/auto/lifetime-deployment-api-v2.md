@@ -73,7 +73,7 @@ Scheme
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--post">POST /environments/{EnvironmentKey}/applications/</a></td>
-<td>Creates a new application in the environment.</td>
+<td>Creates a new application in the environment. <strong>This endpoint is available as of LifeTime Management Console 11.5.0.</strong></td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--ApplicationKey---get">GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/</a></td>
@@ -93,7 +93,7 @@ Scheme
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--templates--get">GET /environments/{EnvironmentKey}/templates/</a></td>
-<td>Returns information about the templates available in a given environment.</td>
+<td>Returns information about the templates available in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.5.0.</strong></td>
 </tr>
 </tbody>
 </table>
@@ -170,6 +170,7 @@ Scheme
 </table>
 <h3 id="tag--roles" class="swagger-summary-tag">/roles</h3>
 <p class="sw-tag-external-doc">
+<strong>Available as of LifeTime Management Console 11.5.0.</strong>
 </p>
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
@@ -207,6 +208,7 @@ Scheme
 </table>
 <h3 id="tag--teams" class="swagger-summary-tag">/teams</h3>
 <p class="sw-tag-external-doc">
+<strong>Available as of LifeTime Management Console 11.5.0.</strong>
 </p>
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
@@ -256,6 +258,7 @@ Scheme
 </table>
 <h3 id="tag--users" class="swagger-summary-tag">/users</h3>
 <p class="sw-tag-external-doc">
+<strong>Available as of LifeTime Management Console 11.5.0.</strong>
 </p>
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
@@ -2556,7 +2559,7 @@ Go to
 </div>
 <div class="panel-body">
 <section class="sw-operation-description">
-<p>Creates a new application in the environment.</p>
+<p>Creates a new application in the environment. <strong>This endpoint is available as of LifeTime Management Console 11.5.0.</strong></p>
 </section>
 <section class="sw-request-body">
 <div class="rowr">
@@ -3398,7 +3401,7 @@ Go to
 </div>
 <div class="panel-body">
 <section class="sw-operation-description">
-<p>Returns information about the templates available in a given environment.</p>
+<p>Returns information about the templates available in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.5.0.</strong></p>
 </section>
 <section class="sw-request-params">
 <table class="table">

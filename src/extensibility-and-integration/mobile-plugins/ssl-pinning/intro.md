@@ -130,7 +130,7 @@ In Service Studio, complete the following steps in the mobile app:
 
 ### Implement additional verification of the server certificate
 
-To add the SSL Pinning verification, you must install the SSL Pinning component from [Forge](https://www.outsystems.com/forge/) in your environment. 
+To add the SSL Pinning verification, you must install the [SSL Pinning Plugin](https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin) from Forge in your environment. 
 
   ![Adding SSL verification](images/sslplugin-1-ss.png)
 

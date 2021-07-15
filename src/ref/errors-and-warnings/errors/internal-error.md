@@ -1,5 +1,14 @@
+---
+summary: Check the causes and recomendations on how to solve the different Internal TrueChange errors.
+tags:
+---
+
 # Internal Error
 
-The `Internal Error` is issued in an unexpected situation. 
+**Cause**
 
-In the tool where you got this error (for example, Service Studio, or Service Center), submit feedback using the toolbar button in the window you're currently on or contact OutSystems Support.
+Unfortunately, an unexpected situation has arisen in your application or environment. 
+
+**Recommended action**
+
+We are sorry about this, and kindly ask you to submit feedback in the tool, or if the error persists, contact [OutSystems Support](https://success.outsystems.com/Support).

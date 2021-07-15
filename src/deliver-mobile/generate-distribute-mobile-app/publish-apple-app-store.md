@@ -129,3 +129,6 @@ Only available if you enrolled in the [Apple Developer Program](https://develope
 Now that [your application is prepared](#Application-Preparation) and the IPA file generated you can now [submit your application for review](https://help.apple.com/app-store-connect/#/dev301cb2b3e). Apple is going to review your application before making it available in the App Store.
 
 The process is complete. You'll receive feedback from Apple about your application submission.
+
+______________________________________________________________
+_QR CODE is a registered trademark of Denso Wave Incorporated._

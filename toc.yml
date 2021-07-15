@@ -8,7 +8,6 @@
     - href: getting-started/create-reactive-web.md
     - href: getting-started/create-mobile.md
     - href: getting-started/create-web.md
-    - href: getting-started/create-from-template.md
     - href: getting-started/component.md
     - href: getting-started/tips-tricks/tips-tricks.md
 
@@ -135,6 +134,7 @@
             - href: develop/ui/look-feel/themes.md
             - href: develop/ui/look-feel/theme-editor.md
             - href: develop/ui/look-feel/rtl.md
+            - href: develop/ui/look-feel/responsive.md
 
         # Reuse UI
         - href: develop/ui/reuse/intro.md
@@ -193,7 +193,11 @@
                     - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
                     - href: develop/ui/patterns/mobile/interaction/lightboximage.md
                     - href: develop/ui/patterns/mobile/interaction/notification.md
-                    - href: develop/ui/patterns/mobile/interaction/map.md
+                    - href: develop/ui/patterns/mobile/interaction/map/intro.md
+                    - topics:
+                        - href: develop/ui/patterns/mobile/interaction/map/map.md
+                        - href: develop/ui/patterns/mobile/interaction/map/addmarker.md
+                        - href: develop/ui/patterns/mobile/interaction/map/dragmarker.md
                     - href: develop/ui/patterns/mobile/interaction/rangeslider.md
                     - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
                     - href: develop/ui/patterns/mobile/interaction/scrollablearea.md
@@ -482,8 +486,11 @@
     - topics:
         - href: develop/seo/indexing.md
         - href: develop/seo/troubleshooting.md
-    # Develop for testing
-    - href: develop/develop-test.md
+    # Testing
+    - href: develop/testing/intro.md
+    - topics:
+        - href: develop/testing/develop-test.md
+        - href: develop/testing/testing-bdd-framework.md
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
     
@@ -794,6 +801,37 @@
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/views-and-tables.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/query-log-data.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md
+    #Architecture Dashboard
+    - href: managing-the-applications-lifecycle/manage-tech-debt/intro.md
+    - topics:
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-works.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-setup.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-use.md
+        - topics:
+            - href: managing-the-applications-lifecycle/manage-tech-debt/how-use-architect.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/how-use-team-lead.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/how-use-developer.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/ref-code-patterns.md
+        - topics:
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/best-pratices.md
+            - topics:            
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-inline-js-and-style.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-large-session-variables.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-site-property-updates.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/control-image-size.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/expand-inline-parameters.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/limit-records-sql.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-module-classification.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-probes-o10.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-update-probes.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-force-sync.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-proxy.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/faq.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/troubleshoot.md
 
     - href: managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
     - href: managing-the-applications-lifecycle/data-protection.md
@@ -1083,6 +1121,7 @@
             # Patterns
             - href: ref/interfaces/ui-patterns.md
             - topics:
+                - href: ref/ui-patterns/mobile/data-grid-api-ref.md
                 - href: ref/ui-patterns/mobile/carousel-mobile.md
                 - href: ref/ui-patterns/mobile/columns.md
                 - href: ref/ui-patterns/mobile/datepicker.md
@@ -1398,7 +1437,6 @@
             - href: ref/errors-and-warnings/errors/invalid-response-format-error.md
             - href: ref/errors-and-warnings/errors/invalid-sap-connection-error.md
             - href: ref/errors-and-warnings/errors/invalid-screen-error.md
-            - href: ref/errors-and-warnings/errors/invalid-send-bulk-messages-error.md
             - href: ref/errors-and-warnings/errors/invalid-soap-static-entity-usage-error.md
             - href: ref/errors-and-warnings/errors/invalid-sql-error.md
             - href: ref/errors-and-warnings/errors/invalid-structure-error.md
@@ -1468,7 +1506,6 @@
             - href: ref/errors-and-warnings/warnings/possible-data-loss-warning.md
             - href: ref/errors-and-warnings/warnings/potential-incompatible-consumer-warning.md
             - href: ref/errors-and-warnings/warnings/potential-loop-warning.md
-            - href: ref/errors-and-warnings/warnings/required-phone-warning.md
             - href: ref/errors-and-warnings/warnings/scalability-suggestion-warning.md
             - href: ref/errors-and-warnings/warnings/security-warning.md
             - href: ref/errors-and-warnings/warnings/sql-injection-warning.md
@@ -1604,6 +1641,7 @@
             - href: ref/apis/lifetime-deployment/api-use-cases.md
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md
+        
         - href: ref/apis/auto/lifetime-sdk.final.md
         - href: ref/apis/auto/lifetime-services-api.final.md
         - href: ref/apis/outsystems-api-preloader-api.md

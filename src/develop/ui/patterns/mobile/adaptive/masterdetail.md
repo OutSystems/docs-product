@@ -51,7 +51,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
     ![](images/masterdetail-7-ss.png)
 
-1. From the Toolbox, add the **Assign** logic to the client action, and from the  **Value** drop-down, select the Expression Editor. Navigate to and double-click the current user Id and click **Done**.
+1. From the Toolbox, add the **Assign** logic to the client action, and from the  **Value** drop-down, select the Expression Editor. Navigate to and double-click the current user Id and click **Close**.
 
     ![](images/masterdetail-8-ss.png)
 
@@ -69,7 +69,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
     ![](images/masterdetail-11-ss.png)
 
-1. To add a database entity, click on the screen, select the relevant entity, and click **OK**. In this example, we use the **User** entity.
+1. To add a database entity, click on the screen, select the relevant entity, and click **Select**. In this example, we use the **User** entity.
 
 1. On the **GetUserDetails** screen, click **Filters**, then click **Add Filter**.
 

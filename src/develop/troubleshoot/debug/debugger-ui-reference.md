@@ -95,7 +95,7 @@ Debug Setup Tab
 
     ![](<images/debug-setup-tab-mobile.png>)
     
-    In **web applications** you can check the "Open in new browser window" option to also open a browser when starting the debugger. If the option is unchecked, you will have to enter the application URL in a browser or click on the "Open in Browser" button in Service Studio.
+    In **Traditional web applications** you can check the "Open in new browser window" option to also open a browser when starting the debugger. If the option is unchecked, you will have to enter the application URL in a browser or click on the "Open in Browser" button in Service Studio.
 
     ![](<images/debug-setup-tab-web.png>)
     
@@ -109,7 +109,10 @@ Widgets Tab
 :   Lists all widgets in scope of the module element currently being debugged.
 
 Session Tab
-:   Only available for web applications. Lists all session variables of the module.
+:   Only available for Traditional web applications. Lists all session variables of the module.
+
+Client Tab
+:   Only available for Mobile and Reactive web applications. Lists all client-side variables of the module.
 
 Site Tab
 :   Lists all site properties of the module.

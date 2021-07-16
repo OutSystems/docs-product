@@ -3,7 +3,7 @@ summary: Get to know the main areas of the Service Studio interface.
 tags: outsystems; service-studio
 ---
 
-# Service Studio Overview
+# Service Studio overview
 
 <div class="info" markdown="1">
 
@@ -14,7 +14,7 @@ Before you start using Service Studio, you need to have an OutSystems environmen
 Service Studio is the OutSystems low-code and visual development environment that allows you to:
 
 * Create applications and Modules on the server
-* Create the user interfaces for Traditional Web, Reactive Web, and Mobile Applications
+* Create user interfaces for Reactive Web and Mobile Applications
 * Define the data model
 * Define business processes and timers (batch processes)
 * Debug your apps

@@ -2,6 +2,7 @@
 - href: getting-started/intro.md
 - topics:
     - href: getting-started/right-app.md
+    - href: getting-started/outsystems-overview.md
     - href: getting-started/service-studio.md
     - href: getting-started/create-reactive-web.md
     - href: getting-started/create-mobile.md

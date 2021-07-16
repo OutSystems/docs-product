@@ -112,7 +112,7 @@ Session Tab
 :   Only available for Traditional web applications. Lists all session variables of the module.
 
 Client Tab
-:   Only available for Mobile and Reactive web applications. Lists all client-side variables of the module.
+:   Only available for Mobile and Reactive web applications. Lists all client variables of the module.
 
 Site Tab
 :   Lists all site properties of the module.

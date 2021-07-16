@@ -31,7 +31,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/iconbadge-4-ss.png>)
 
-1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **OK**. In this example, we select the **User** entity.
+1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **Select**. In this example, we select the **User** entity.
 
     ![](<images/iconbadge-5-ss.png>)
 
@@ -41,7 +41,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen name.
 
-1. Select the Icon Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**, and in the Expression Editor enter the following expression and click **Done**.
+1. Select the Icon Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**, and in the Expression Editor enter the following expression and click **Close**.
 
     `GetUsers.Count`
 

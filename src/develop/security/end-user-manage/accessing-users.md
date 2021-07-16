@@ -5,11 +5,6 @@ tags: support-Mobile_Apps; support-webapps
 
 # Access the Users application
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 The OutSystems **Users** application lets you create, update, and delete end users (the users of your applications) and their roles. You can also manage user roles individually or in bulk using groups.
 

@@ -5,12 +5,6 @@ summary: Badge display numerical information as notification.
 
 # Badge
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
-
 You can use the Badge UI Pattern to display numerical information as a notification. For example, the Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
 ![](<images/badge-image-7.png>)
@@ -33,7 +27,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/badge-1-ss.png>)
 
-1. Click the Aggregate screen, and from the **Select Source** popup, select the relevant database entity (in this example, **Users**), and click **Ok**.
+1. Click the Aggregate screen, and from the **Select Source** popup, select the relevant database entity (in this example, **Users**), and click **Select**.
 
     ![](<images/badge-2-ss.png>)
 
@@ -41,7 +35,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. Select the Badge widget, and on the **Properties** tab, from the **Number** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the following expression and click **Done**.
+1. In the Expression Editor, enter the following expression and click **Close**.
 
     `(GetUsers.Count)`
 

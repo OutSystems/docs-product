@@ -1,6 +1,6 @@
 ---
-tags: runtime-traditionalweb; 
 summary: Flip Content prioritizes information display, keeping the interface uncluttered.
+tags:
 ---
 
 # Flip Content

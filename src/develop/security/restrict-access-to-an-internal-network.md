@@ -4,11 +4,6 @@ tags: support-devOps; support-Security; support-Security-featured; runtime-tradi
 
 # Restrict Access to an Internal Network
 
-<div class="info" markdown="1">
-
-We’ve been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 You can tighten the security of your applications, or part of them, by only allowing the access to end users who have authenticated themselves in an IP belonging to an internal network.
 

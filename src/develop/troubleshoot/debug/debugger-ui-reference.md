@@ -39,7 +39,7 @@ Icon | Name | Shortcut | Description
 
 <div class="info" markdown="1"> 
 
-While debugging **web applications** you can also define breakpoints in widgets. The step commands mentioned above (![](images/toolbar-button-step-over.png) Step Over, ![](images/toolbar-button-step-into.png) Step Into and ![](images/toolbar-button-step-out.png) Step Out) have a particular behavior on widgets:
+While debugging, you can also define breakpoints in widgets. The step commands mentioned above (![](images/toolbar-button-step-over.png) Step Over, ![](images/toolbar-button-step-into.png) Step Into and ![](images/toolbar-button-step-out.png) Step Out) have a particular behavior on widgets:
 
 * They don't stop on widgets unless the widget has a breakpoint, or is designed using elements that are evaluated at runtime as, for example, widgets designed using user-defined functions.
 
@@ -94,11 +94,7 @@ Debug Setup Tab
     In **mobile apps** you must choose the target where you want to debug your module: emulate using Google Chrome browser on your PC or debug in an iOS/Android device connected to your PC. If you choose the Google Chrome browser target, Service Studio will open a special Google Chrome instance where the user must perform user interactions with the app.
 
     ![](<images/debug-setup-tab-mobile.png>)
-    
-    In **Reactive web applications** you can check the "Open in new browser window" option to also open a browser when starting the debugger. If the option is unchecked, you will have to enter the application URL in a browser or click on the "Open in Browser" button in Service Studio.
-
-    ![](<images/debug-setup-tab-web.png>)
-    
+        
 In Use Tab
 :   Lists all elements from the scope tree relevant for immediate examination regarding the module element currently being debugged.
 
@@ -108,8 +104,8 @@ Locals Tab
 Widgets Tab
 :   Lists all widgets in scope of the module element currently being debugged.
 
-Session Tab
-:   Only available for web applications. Lists all session variables of the module.
+Client Tab
+:   Lists all client variables of the module.
 
 Site Tab
 :   Lists all site properties of the module.

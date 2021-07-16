@@ -29,7 +29,7 @@ The following example demonstrates how you can display the initials of the regis
 
     ![](<images/useravatar-3-ss.png>)
 
-1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **OK**. In this example, we select the **User** entity.
+1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **Select**. In this example, we select the **User** entity.
 
     ![](<images/useravatar-5-ss.png>)
 
@@ -41,7 +41,7 @@ The following example demonstrates how you can display the initials of the regis
 
 1. Select the User Avatar widget, and on the **Properties** tab, from the **Name** drop-down, select **Expression Editor**.
 
-1. In the Expression Editor, enter the following expression and click **DONE**.
+1. In the Expression Editor, enter the following expression and click **Close**.
 
     `GetUsers.List.Current.User.Name`
 

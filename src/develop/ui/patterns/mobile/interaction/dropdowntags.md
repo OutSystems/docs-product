@@ -25,7 +25,7 @@ In this example, we create a dropdown tags search for a list of application user
 
 1. Select and right-click your screen name, and select **Fetch Data from Database**.
 
-1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant database entity and click **OK**.
+1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant database entity and click **Select**.
 
     In this example, we select the User entity. 
 
@@ -43,7 +43,7 @@ In this example, we create a dropdown tags search for a list of application user
 
 1. Add the relevant logic to the client action. 
 
-    In this example, we add a Message to the client action and in the Expression Editor enter the following logic and click **DONE**. This will display the the number of items as they are selected.
+    In this example, we add a Message to the client action and in the Expression Editor enter the following logic and click **Close**. This will display the the number of items as they are selected.
 
     `CurrentList.Length`
 

@@ -31,7 +31,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/counter-4-ss.png>)
 
-1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **OK**. In this example, we select the **User** entity.
+1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **Select**. In this example, we select the **User** entity.
 
     ![](<images/counter-5-ss.png>)
 
@@ -41,7 +41,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
 
-1. From the Toolbox, drag an Expression widget into the Content placeholder, and in the **Expression Editor** enter the following expression and click **Done**.
+1. From the Toolbox, drag an Expression widget into the Content placeholder, and in the **Expression Editor** enter the following expression and click **Close**.
 
     `GetUsers.Count`
 

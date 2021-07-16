@@ -25,9 +25,9 @@ To configure or generate your mobile app package (iOS or Android) in Service Stu
 
 1. Select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
 
-1. When configuring your mobile app for the first time for a given platform (iOS or Android), click on the **Configure iOS App** or **Configure Android App** button, according to the platform. Follow the configuration steps for your desired scenario, described in the [topics listed at the end of this page](#Articles_in_this_Section). If you have previously defined your mobile app's iOS or Android configuration settings, click on the cog icon for the correct platform to change your configuration. 
+1. When configuring your mobile app for the first time for a given platform (iOS or Android), click the **Configure iOS App** or **Configure Android App** button, according to the platform. Follow the configuration steps for your desired scenario, described in the [topics listed at the end of this page](#Articles_in_this_Section). If you have previously defined your mobile app's iOS or Android configuration settings, click on the cog icon for the correct platform to change your configuration. 
 
-1. After defining or changing your mobile app iOS or Android settings, click on the **Generate App** button. 
+1. After defining or changing your mobile app iOS or Android settings, click the **Generate App** button. 
 
     ![Native app settings in Service Studio](images/native-platforms-tab-ss.png?width=600)
 
@@ -159,8 +159,8 @@ To set an app for the PWA distribution in Service Center, do the following:
 
 1. Open the Service Center console of the environment (`https://<environmentdomain>/ServiceCenter`) and navigate to **Factory**.
 
-1. Click on the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The PWA settings are in the **Progressive Web Application (PWA)** section.
+1. Click the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The PWA settings are in the **Progressive Web Application (PWA)** section.
 
     ![PWA settings in Service Center](images/sc-pwa-settings.png?width=750)
 
-1. Select the checkbox **Distribute as PWA**, then click on **Apply**.
+1. Select the checkbox **Distribute as PWA**, then click **Apply**.

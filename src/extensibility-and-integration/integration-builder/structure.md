@@ -14,9 +14,9 @@ Integration Builder generates and publishes integrations, which are OutSystems a
 
 You can define both the OutSystems application name and the name of the modules when creating the integration in Integration Builder. Check [Create and configure a new integration](use.md#create-configure-integration) for more information.
 
-## Available Service Actions in an integration
+## Available Server Actions in an integration
 
-Integration Builder creates several Service Actions to support CRUD (create, read, update, delete) operations and other actions in the external system.
+Integration Builder creates several Server Actions to support CRUD (create, read, update, delete) operations and other actions in the external system.
 
 For each entity of the external system you get Server Actions in the service module similar to the following, depending on the actions available in the external API:
 

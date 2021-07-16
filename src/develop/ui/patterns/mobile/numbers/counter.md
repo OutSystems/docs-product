@@ -31,7 +31,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/counter-4-ss.png>)
 
-1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **OK**. In this example, we select the **User** entity.
+1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant entity and click **Select**. In this example, we select the **User** entity.
 
     ![](<images/counter-5-ss.png>)
 

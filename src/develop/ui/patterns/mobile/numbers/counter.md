@@ -41,7 +41,7 @@ The following example demonstrates how you can display the number of registered 
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
 
-1. From the Toolbox, drag an Expression widget into the Content placeholder, and in the **Expression Editor** enter the following expression and click **Done**.
+1. From the Toolbox, drag an Expression widget into the Content placeholder, and in the **Expression Editor** enter the following expression and click **Close**.
 
     `GetUsers.Count`
 

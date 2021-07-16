@@ -70,7 +70,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
     ![](images/wizard-9-ss.png)
 
-1. In the expression editor, enter the following expression and click **DONE**:
+1. In the expression editor, enter the following expression and click **CLOSE**:
 
     `If(CurrentStep = 1, Entities.Steps.Active,If(CurrentStep > 1, Entities.Steps.Past, Entities.Steps.Next))`
 
@@ -90,7 +90,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
     ![](images/wizard-11-ss.png)
 
-1. On the **Properties** tab, from the **Condition** dropdown, select Expression Editor, enter the following logic and click **DONE**:
+1. On the **Properties** tab, from the **Condition** dropdown, select Expression Editor, enter the following logic and click **CLOSE**:
 
     `CurrentStep = 1`
 

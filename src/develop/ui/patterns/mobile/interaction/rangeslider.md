@@ -43,7 +43,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     ![](images/rangeslider-8-ss.png)
 
-1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
+1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Close**.
 
     ![](images/rangeslider-9-ss.png)
 

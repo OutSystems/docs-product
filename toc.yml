@@ -928,7 +928,6 @@
             - href: ref/errors-and-warnings/errors/invalid-client-function.md
             - href: ref/errors-and-warnings/errors/invalid-column-reference-error.md
             - href: ref/errors-and-warnings/errors/invalid-combo-box-widget-error.md
-            - href: ref/errors-and-warnings/errors/invalid-consumed-web-service-error.md
             - href: ref/errors-and-warnings/errors/invalid-data-action.md
             - href: ref/errors-and-warnings/errors/invalid-data-dependency.md
             - href: ref/errors-and-warnings/errors/invalid-data-type-error.md

@@ -519,7 +519,7 @@
             - href: extensibility-and-integration/rest/expose-rest-apis/patch-method.md
         - href: extensibility-and-integration/rest/troubleshoot-a-rest-api.md
 
-    # Log levels for consumed REST and SOAP integrations
+    # Log levels for consumed integrations
     - href: extensibility-and-integration/log-levels-set.md
     - topics:
         - href: extensibility-and-integration/log-levels-reference.md

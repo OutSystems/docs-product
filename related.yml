@@ -624,9 +624,6 @@
             https://www.outsystems.com/blog/posts/how-to-create-a-cordova-plugin-from-scratch/
 
 
-- extensibility-and-integration/soap/troubleshoot-soap-web-services.md:
-    - extensibility-and-integration/log-levels-set.md
-
 - extensibility-and-integration/rest/consume-rest-apis/handling-rest-errors.md:
     - develop/logic/exceptions/intro.md
     - develop/logic/exceptions/handling-mechanism.md

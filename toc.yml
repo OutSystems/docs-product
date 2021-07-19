@@ -994,7 +994,6 @@
             - href: ref/errors-and-warnings/warnings/application-configuration-warning.md
             - href: ref/errors-and-warnings/warnings/audit-suggestion-warning.md
             - href: ref/errors-and-warnings/warnings/coherence-suggestion-warning.md
-            - href: ref/errors-and-warnings/warnings/consumed-web-service-integrity-warning.md
             - href: ref/errors-and-warnings/warnings/data-dependency-warning.md
             - href: ref/errors-and-warnings/warnings/database-integrity-suggestion-warning.md
             - href: ref/errors-and-warnings/warnings/debugger-not-started-warning.md

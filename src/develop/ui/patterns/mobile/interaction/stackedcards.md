@@ -31,7 +31,7 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
     ![](images/stackedcards-5-ss.png)
 
-1. From the Toolbox, drag the Icon widget into the OverlayTop placeholder, and from the Pick an Icon editor, choose an icon. Click **Ok**.
+1. From the Toolbox, drag the Icon widget into the OverlayTop placeholder, and from the Pick an Icon editor, choose an icon. Click **Select**.
 
     ![](images/stackedcards-6-ss.png)
 

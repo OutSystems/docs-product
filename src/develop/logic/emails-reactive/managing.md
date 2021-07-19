@@ -115,3 +115,9 @@ When you open this email in the email client, the expression displays "Hello, Jo
 If the content of an email is too big, some email readers clip the content. For example, Gmail shows **[Message clipped] View entire message** for all emails larger than 102KB. This can happen if you're generating content in your emails with a Theme that has a lot of CSS not designed for emails.
 
 To reduce the size of the email content, use a UI Flow with a blank Theme. See [Creating UI Flow without styles](../../ui/navigation/ui-flow.md#creating-ui-flow-without-styles) for instructions.
+
+## Email templates
+
+You or your designers can create email templates and share them in the environment with your developers. Templates ensure consistent look and feel and speed up development.
+
+Install a [module for custom email templates]() from Forge and follow the instructions for [creating screen templates](../ui/../../ui/screen-templates-create/intro.md). The process and user experience for creating email templates is similar to creating screen templates. Due to intended use, email templates, just like emails, don't support logic or non-email themes.

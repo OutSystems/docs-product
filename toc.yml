@@ -817,7 +817,6 @@
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Form.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.AdvancedHtml.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Icon.final.md
-                - href: ref/lang/auto/Class.If Widget.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Image.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md
                 - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Label.final.md
@@ -896,7 +895,6 @@
                 - href: ref/lang/auto/Class.Human Activity.final.md
                 - href: ref/lang/auto/Class.Process Start.final.md
                 - href: ref/lang/auto/Class.Process End.final.md
-                - href: ref/lang/auto/Class.Send Email.final.md
                 - href: ref/lang/auto/Class.Wait.final.md
             - href: ref/lang/auto/Class.Timer.final.md
 

@@ -87,37 +87,10 @@
 - develop/ui/look-feel/styles-editor.md:
     - develop/ui/look-feel/css.md
     - develop/ui/look-feel/themes.md
-
-# ------- Web Interfaces -------
-
-#   Adding Data and Logic
-#     Screen Action
-- ref/lang/auto/Class.Screen Action.final.md:
-    # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md
-    # Web Block
-    - ref/lang/auto/Class.Web Block.final.md
-
-#  Designing Screens
-#    Button Widget
-- ref/lang/auto/Class.Button Widget.final.md:
-    # Link Widget
-    - ref/lang/auto/Class.Link Widget.final.md
-    # Navigate to Another Screen
-    - develop/ui/navigation/navigate-to-detail-screen.md
-    # Screen Action
-    - ref/lang/auto/Class.Screen Action.final.md
-    # External Site
-    - ref/lang/auto/Class.External Site.final.md
-    # Go To Destination
-    - ref/lang/auto/Class.Go To Destination.final.md
-    # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md        
+  
     
 # Cell Widget            
 - ref/lang/auto/Class.Cell Widget.final.md:
-    # Header Row Widget
-    - ref/lang/auto/Class.Header Row Widget.final.md
     # Row Widget
     - ref/lang/auto/Class.Row Widget.final.md
 
@@ -125,29 +98,12 @@
 - ref/lang/auto/Class.Check Box Widget.final.md:
     # Switch or Toggle a Boolean Value
     - develop/ui/inputs/switch-checkbox.md
-    # Radio Button Widget
-    - ref/lang/auto/Class.Radio Button Widget.final.md
 
 # Combo Box Widget
 - ref/lang/auto/Class.Combo Box Widget.final.md:
     # Choose One Value from a List
     - develop/ui/inputs/dropdown-combo.md
 
-# Editable Table Widget
-- ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md:
-    # Table Records Widget
-    - ref/lang/auto/Class.Table Records Widget.final.md
-    # Aggregate
-    - ref/lang/auto/Class.Aggregate.final.md
-    # SQL
-    - ref/lang/auto/Class.SQL.final.md
-
-# Edit Record Widget
-- ref/lang/auto/Class.Edit Record Widget.final.md:
-    # Show Record Widget
-    - ref/lang/auto/Class.Show Record Widget.final.md
-    # List
-    - ref/data/data-types/list.md
 
 # Expression Widget
 - ref/lang/auto/Class.Expression Widget.final.md:
@@ -160,37 +116,11 @@
 - ref/lang/auto/ServiceStudio.Plugin.Widgets.Form.final.md:
     # Use a Form to Enter Data
     - develop/ui/forms/form-use.md
-    # Button Widget
-    - ref/lang/auto/Class.Button Widget.final.md
-    # Check Box Widget
-    - ref/lang/auto/Class.Check Box Widget.final.md
-    # Combo Box Widget
-    - ref/lang/auto/Class.Combo Box Widget.final.md
-    # Input Password Widget
-    - ref/lang/auto/Class.Input Password Widget.final.md
-    # Input Widget
-    - ref/lang/auto/Class.Input Widget.final.md
-    # Label Widget
-    - ref/lang/auto/ServiceStudio.Plugin.Widgets.Label.final.md
-    # Link Widget
-    - ref/lang/auto/Class.Link Widget.final.md
-    # List Box Widget
-    - ref/lang/auto/Class.List Box Widget.final.md
-    # Radio Button Widget
-    - ref/lang/auto/Class.Radio Button Widget.final.md
-    # Upload Widget
-    - ref/lang/auto/Class.Upload Widget.final.md
 
 # Header Row Widget
 - ref/lang/auto/Class.Header Row Widget.final.md:
-    # Editable Table Widget
-    - ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md
     # Row Widget
     - ref/lang/auto/Class.Row Widget.final.md
-    # Table Records Widget
-    - ref/lang/auto/Class.Table Records Widget.final.md
-    # Table Widget
-    - ref/lang/auto/Class.Table Widget.final.md
     - external:
         - "How to scroll records in a table with a fixed header":
             https://success.outsystems.com/Documentation/How-to_Guides/Front-End/How_to_scroll_records_in_a_table_with_a_fixed_header
@@ -206,50 +136,10 @@
     # Localized Image
     - ref/lang/auto/Class.Localized Image.final.md
       
-# Input Password Widget
-- ref/lang/auto/Class.Input Password Widget.final.md:
-    # Input Widget
-    - ref/lang/auto/Class.Input Widget.final.md
     
-# Label Widget
-- ref/lang/auto/ServiceStudio.Plugin.Widgets.Label.final.md:
-    # Button Widget
-    - ref/lang/auto/Class.Button Widget.final.md
-    # Check Box Widget
-    - ref/lang/auto/Class.Check Box Widget.final.md
-    # Combo Box Widget
-    - ref/lang/auto/Class.Combo Box Widget.final.md
-    # Input Password Widget
-    - ref/lang/auto/Class.Input Password Widget.final.md
-    # Input Widget
-    - ref/lang/auto/Class.Input Widget.final.md
-    # List Box Widget
-    - ref/lang/auto/Class.List Box Widget.final.md
-    # Radio Button Widget
-    - ref/lang/auto/Class.Radio Button Widget.final.md
-    # Upload Widget
-    - ref/lang/auto/Class.Upload Widget.final.md
-      
-# Link Widget
-- ref/lang/auto/Class.Link Widget.final.md:
-    # Navigate to Another Screen
-    - develop/ui/navigation/navigate-to-detail-screen.md
-    # Screen Action
-    - ref/lang/auto/Class.Screen Action.final.md
-    # External Site
-    - ref/lang/auto/Class.External Site.final.md
-    # Go To Destination
-    - ref/lang/auto/Class.Go To Destination.final.md
-    # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md
-
-- ref/lang/auto/Class.List Box Widget.final.md:
-    - ref/lang/auto/Class.Combo Box Widget.final.md
 
 # List Records Widget
 - ref/lang/auto/Class.List Records Widget.final.md:
-    # Table Records Widget
-    - ref/lang/auto/Class.Table Records Widget.final.md
     # List
     - ref/data/data-types/list.md
 
@@ -259,49 +149,8 @@
     - develop/ui/look-feel/design-screens-layout.md
     # Placeholders
     - develop/ui/look-feel/themes.md#placeholders
-    # Web Block
-    - ref/lang/auto/Class.Web Block.final.md
 
-# Radio Button Widget
-- ref/lang/auto/Class.Radio Button Widget.final.md:
-    # Pick Only One Option in a Group of Choices
-    - develop/ui/inputs/button-group.md
-      
-# Row Widget
-- ref/lang/auto/Class.Row Widget.final.md:
-    # Editable Table Widget
-    - ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md
-    # Edit Record Widget
-    - ref/lang/auto/Class.Edit Record Widget.final.md
-    # Show Record Widget
-    - ref/lang/auto/Class.Show Record Widget.final.md
-    # Table Records Widget
-    - ref/lang/auto/Class.Table Records Widget.final.md
-    # Table Widget
-    - ref/lang/auto/Class.Table Widget.final.md
-      
-# Show Record Widget
-- ref/lang/auto/Class.Show Record Widget.final.md:
-    # Aggregate
-    - ref/lang/auto/Class.Aggregate.final.md
-    # SQL
-    - ref/lang/auto/Class.SQL.final.md
-      
-# Table Records Widget
-- ref/lang/auto/Class.Table Records Widget.final.md:
-    # List
-    - ref/data/data-types/list.md
-      
-# Upload Widget
-- ref/lang/auto/Class.Upload Widget.final.md:
-    # Upload Files
-    - develop/ui/inputs/upload.md
-      
-# Web Block Widget
-- ref/lang/auto/Class.Web Block Widget.final.md:
-    # Web Block
-    - ref/lang/auto/Class.Web Block.final.md 
-  
+
 # Designing the Layout
 #   Image
 - ref/lang/auto/Class.Image.final.md:
@@ -333,8 +182,6 @@
     - extensibility-and-integration/configure-send-emails.md
     # UI Flow
     - develop/ui/navigation/ui-flow.md
-    # Send Email
-    - ref/lang/auto/Class.Send Email.final.md
     # Email
     - ref/lang/auto/builtinfunction.Email.final.md
   
@@ -346,8 +193,6 @@
     - ref/lang/auto/Class.External Site.final.md
     # Go To Destination
     - ref/lang/auto/Class.Go To Destination.final.md
-    # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md
     
 # External Site
 - ref/lang/auto/Class.External Site.final.md:
@@ -360,25 +205,7 @@
     - develop/ui/navigation/ui-flow.md
     # External Site
     - ref/lang/auto/Class.External Site.final.md
-    # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md
     
-#Web Block
-- ref/lang/auto/Class.Web Block.final.md:
-    # Blocks in Themes
-    - develop/ui/look-feel/themes.md#blocks
-    # UI Flow
-    - develop/ui/navigation/ui-flow.md
-    # Reuse UI
-    - develop/ui/reuse/intro.md
-    - develop/ui/reuse/block-create-reuse.md
-    
-# Web Screen
-- ref/lang/auto/Class.Web Screen.final.md:
-    # UI Flow
-    - develop/ui/navigation/ui-flow.md
-    # Navigate to Another Screen
-    - develop/ui/navigation/navigate-to-detail-screen.md
     
 # ------- Mobile Interfaces -------
 
@@ -620,11 +447,6 @@
     # Lifecycle Events
     - one-way: develop/logic/screen-block-lifecycle-events.md
 
-# Client Variable
-- ref/lang/auto/Class.Client Variable.final.md:
-    # Session Variables
-    - ref/lang/auto/Class.Session Variable.final.md
-
 
 # Event
 - ref/lang/auto/Class.Event.final.md:
@@ -792,9 +614,6 @@
 -  ref/lang/auto/Class.Attach File.final.md:
     - ref/lang/auto/Class.Email.final.md
 
-#     Send Email
--  ref/lang/auto/Class.Send Email.final.md:
-    - one-way: develop/logic/emails-reactive/intro.md
     
 
 # --- Extensibility and Integration ---

@@ -13,4 +13,4 @@ As an example, think of a recruitment process that ends taking one of two action
 
 In this example there are two named connectors, therefore, two outcomes have to be defined in the flow of the **Decision**:
 
-![](images/decision-flow.png) ![](images/decision-if-condition.png)
+![](images/decision-flow.png) 

@@ -677,7 +677,6 @@
                     - href: ref/data/handling-data/queries/supported-join-types.md
                 - href: ref/lang/auto/Class.Resource.final.md
                 - href: ref/lang/auto/Class.Runtime Property.final.md
-                - href: ref/lang/auto/Class.Session Variable.final.md
                 - href: ref/lang/auto/Class.Client Variable.final.md
                 - href: ref/lang/auto/Class.Site Property.final.md
                 # Variables

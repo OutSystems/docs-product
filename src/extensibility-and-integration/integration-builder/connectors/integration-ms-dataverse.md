@@ -14,9 +14,11 @@ Microsoft Dataverse was formerly known as Microsoft Common Data Service or **Mic
 
 ## Prerequisites
 
-* Make sure you meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).
+Verify the following:
+
+* You meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).
 * The Microsoft Dataverse integration deployed in your OutSystems development environment can make HTTPS outbound requests (port 443) to your Microsoft Dataverse service.
-* You have a Microsoft account with Microsoft Dataverse and Azure Administrator privileges. These admin privileges are required to access your Azure Active Directory tenant and to create security roles and application users.
+* You have a Microsoft account with Microsoft Dataverse and Azure Administrator privileges. These admin privileges are required to access your Azure Active Directory (AD) tenant and to create security roles and application users.
 
 ## Authorizing Integration Builder in your Microsoft account
 
@@ -30,7 +32,7 @@ Additionally, when you're creating a connection, Integration Manager connects to
 
 ### About environment instances
 
-If you have several Microsoft Dataverse environment instances in your Microsoft account, Integration Builder will ask you which environment you want to use when connecting to Microsoft Dataverse.
+If you have several Microsoft Dataverse environment instances in your Microsoft account, Integration Builder asks you which environment you want to use when connecting to Microsoft Dataverse.
 
 According to Microsoft, an environment instance in Microsoft Dataverse is "a space to store, manage, and share your organization's business data, apps, and flows". When you're creating a Microsoft Dataverse integration, Integration Builder registers an Azure application in the environment you choose.
 
@@ -60,4 +62,4 @@ This authorization is only valid for a specific user. If another user wants to e
 
 ### Use the integration in Service Studio
 
-Check [how to use the integration in Service Studio](../use.md#use).
+For more information, see [how to use the integration in Service Studio](../use.md#use).

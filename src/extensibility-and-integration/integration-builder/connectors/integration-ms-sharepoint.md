@@ -8,9 +8,11 @@ The SharePoint Online integration allows you to perform operations on entities a
 
 ## Prerequisites
 
-* Make sure you meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).
+Verify the following:
+
+* You meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).
 * The SharePoint Online integration deployed in your OutSystems development environment can make HTTPS outbound requests (port 443) to your SharePoint Online service.
-* You have a Microsoft account with Administrator role permissions in Microsoft Azure Active Directory. These Administrator role permissions are required to access your Azure Active Directory tenant and to create security roles.
+* You have a Microsoft account with Administrator role permissions in Microsoft Azure Active Directory (AD). These Administrator role permissions are required to access your Azure AD tenant and to create security roles.
 
 ## Authorizing Integration Builder in your Microsoft account
 
@@ -30,11 +32,11 @@ Request authentication is handled transparently when you call Server Actions exp
 
 ### If you have administrator permissions in Azure Active Directory
 
-Integration Builder registers an app with Azure Active Directory at the request of Integration Manager. When you create a connection, Integration Manager requests Integration Builder to create and associate a certificate with this app, saving the certificate details in an encrypted way as part of the connection information.
+Integration Builder registers an app with Azure AD at the request of Integration Manager. When you create a connection, Integration Manager requests Integration Builder to create and associate a certificate with this app, saving the certificate details in an encrypted way as part of the connection information.
 
 ### If you don't have administrator permissions in Azure Active Directory
 
-Creating a connection without administrator credentials requires parameters from the Azure Active Directory platform. The Azure Active Directory account administrator needs to create a new Azure app to obtain these parameters.
+Creating a connection without administrator credentials requires parameters from the Azure AD platform. The Azure AD account administrator needs to create a new Azure app to obtain these parameters.
 
 Integration Builder can send an email to the administrator requesting the information you need. The email includes a unique authorization certificate, and [instructions on how the administrator proceeds](how-register-ib-ms-sp-dv-d360.md).
 
@@ -48,4 +50,4 @@ This authorization is only valid for a specific user. If another user wants to e
 
 ### Use the integration in Service Studio
 
-Check [how to use the integration in Service Studio](../use.md#use).
+For more information, see [how to use the integration in Service Studio](../use.md#use).

@@ -303,7 +303,6 @@
             - href: develop/processes/design-patterns/waiting-activities.md
             - href: develop/processes/design-patterns/automatic-activities.md
             - href: develop/processes/design-patterns/process-communicate.md
-            - href: develop/processes/design-patterns/poll-external-systems.md
             - href: develop/processes/design-patterns/multiple-instance-activities.md
         - href: develop/processes/best-practices/intro.md
         - topics:

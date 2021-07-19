@@ -43,7 +43,7 @@ To reuse elements from other modules, do the following:
 
     ![](images/expose-and-reuse-4.png?width=600)
 
-1. Press **OK** to make the element available in your module.
+1. Press **Apply** to make the element available in your module.
 
     ![](images/expose-and-reuse-5.png?width=300)
 

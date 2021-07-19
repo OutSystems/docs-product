@@ -37,7 +37,7 @@ In this example, we create a Range Slider Interval that allows the user select a
 
     ![](images/rangesliderinterval-8-ss.png)
 
-1. To bind the **IntervalStart** variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
+1. To bind the **IntervalStart** variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Close**.
 
     ![](images/rangesliderinterval-9-ss.png)
 

@@ -25,7 +25,7 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
 1. Start by [creating a new app](../../../getting-started/create-reactive-web.md#new-app).
 
-1. Add a Screen to your app. Go to **Interface** > **UI Flows**, right-click **MainFlow** and select **Add Screen**. In the **New Screen** window select **Empty**, enter **Home** as the Screen name, then click **CREATE SCREEN**. Service Studio adds an empty Screen to your app.
+1. Add a Screen to your app. Go to **Interface** > **UI Flows**, right-click **MainFlow** and select **Add Screen**. In the **New Screen** window select **Empty** (1), enter **Home** as the Screen name (2), then click **CREATE SCREEN** (3). Service Studio adds an empty Screen to your app.
 
     ![New screen window](images/new-screen-ss.png?width=700)
    

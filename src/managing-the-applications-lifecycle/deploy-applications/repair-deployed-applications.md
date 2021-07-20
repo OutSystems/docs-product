@@ -26,8 +26,6 @@ To know which references are broken, the Mobile Sales module has to be opened an
 1. Once the module opens, a warning of incompatible or missing references is displayed. Open the **Add/Remove References** window.
 1. Check which references are broken: the references to the Sales application.
 
-![](images/repair-deployed-applications-3.png)
-
 ## Solve the Conflict
 
 Deploy Sales 0.2 from the development environment to the quality assurance environment.

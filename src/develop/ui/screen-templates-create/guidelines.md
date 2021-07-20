@@ -77,6 +77,6 @@ Use the OutSystems UI Framework CSS classes or classes from your default Theme. 
 
 In cases where an element collapses within a branch of the If tool and breaks the preview in the main editor, wrap the element inside a Container. This forces the element to take the full width of the parent Container and fixes the preview. 
  
-![Service Studio Preview](images/guidelines-wrap-if.gif?width=700)
+![Service Studio Preview](images/gif-2.png)
 
 Use a "Work in progress" category, or similar, to let the developers know which Screen Templates are work in progress.

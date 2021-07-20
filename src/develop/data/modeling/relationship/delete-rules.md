@@ -79,11 +79,11 @@ Consider the following business scenario:
 
 * We want to delete all the closed **Orders** older than five years.
 
-* An **Order** has one or more **Order_Items**, and an **Order_Item** belongs to one and only one **Order**.
+* An **Order** has one or more **OrderItems**, and an **OrderItem** belongs to one and only one **Order**.
 
-* When an **Order** is deleted, all the associated **Order_Items** must be deleted.
+* When an **Order** is deleted, all the associated **OrderItems** must be deleted.
 
-Setting the **Delete Rule** property of the reference attribute **OrderId** to `Delete` assures that when an Order is deleted, all the related Order_Items are also automatically deleted.
+Setting the **Delete Rule** property of the reference attribute **OrderId** to `Delete` assures that when an Order is deleted, all the related OrderItems are also automatically deleted.
 
 ![](images/delete-rules-5.png?width=500)
 
@@ -105,13 +105,13 @@ The Ignore value is commonly used when you implement historical data archiving m
 
 Consider the following business scenario:
 
-* Every operation performed over an **Order** is logged in **Order_History**.
+* Every operation performed over an **Order** is logged in **OrderHistory**.
 
-* One **Order_History** record relates to one and only one **Order** and one **Order** has one or more related **Order_History** records.
+* One **OrderHistory** record relates to one and only one **Order** and one **Order** has one or more related **OrderHistory** records.
 
-* We want to delete all the closed **Orders** older than five years, but the **Order_History** records must be kept for 10 years, for compliance reasons.
+* We want to delete all the closed **Orders** older than five years, but the **OrderHistory** records must be kept for 10 years, for compliance reasons.
 
-Setting the **Delete Rule** property of the reference attribute **OrderId** to `Ignore` allows you to delete an Order and keep the related Order_History records.
+Setting the **Delete Rule** property of the reference attribute **OrderId** to `Ignore` allows you to delete an Order and keep the related OrderHistory records.
 
 ![](images/delete-rules-6.png?width=500)
 

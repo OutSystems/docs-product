@@ -47,7 +47,7 @@ To implement this relationship, the primary key of the `ContactPhoto` must be a 
 
 Entity Diagram | Module Tree
 ---------------|------------
-![](images/one-to-one-entity-diagram.png) | ![](images/one-to-one-module-tree.jpg)
+![](images/one-to-one-entity-diagram.png) | ![](images/one-to-one-module-tree.png)
 
 ## One-to-Many Relationships
 

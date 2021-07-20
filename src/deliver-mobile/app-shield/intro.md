@@ -184,7 +184,7 @@ We know how important obfuscation of JavaScript is to our customers. Our develop
 
 * The plugin obfuscates only the supported OutSystems mobile plugins.
 * The plugin obfuscates native Android logs in Service Center. You need to use an external tool to deobfuscate the logs.
-* JavaScript files obfuscation isn't supported. OutSystems provides guidance to obfuscate JavaScript.
+* JavaScript files obfuscation isn't supported.
 * Native iOS bitcode obfuscation isn't supported.
 * You need to contact Support to get the mapping files.
 

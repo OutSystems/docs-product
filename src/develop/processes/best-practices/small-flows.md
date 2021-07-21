@@ -33,6 +33,6 @@ The main process flow becomes shorter and simpler and two new small processes ar
 
 ![](images/small-flows-2.png)
 
-The [NotifyPhysician](<../../../ref/lang/auto/Class.Send Email.final.md>) send email was also included in the new process as an optional branch that is executed or not depending on the type of document. This way we can further simplify the process flow by merging the two conditional starts into a single one, with the type of document as parameter.
+The NotifyPhysician send email was also included in the new process as an optional branch that is executed or not depending on the type of document. This way we can further simplify the process flow by merging the two conditional starts into a single one, with the type of document as parameter.
 
 ![](images/small-flows-3.png)

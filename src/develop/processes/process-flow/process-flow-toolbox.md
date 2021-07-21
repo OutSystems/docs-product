@@ -11,7 +11,6 @@ When defining the process flow of your processes, Service Studio provides the fo
 | ![](../../../shared/icons-tools/start-process.png) Start | Starts the process flow. Only one Start element is allowed in a process flow. |
 | ![](../../../shared/icons-tools/conditional-start.png) Conditional Start | Starts an alternative flow in the process flow. How to use a [Conditional Start](<../../../ref/lang/auto/Class.Conditional Start.final.md>). |
 | ![](../../../shared/icons-tools/human-activity.png) Human Activity | Activity to be executed by a human being. How to use a [Human Activity](<../../../ref/lang/auto/Class.Human Activity.final.md>). |
-| ![](../../../shared/icons-tools/email-send.png) Send Email | Sends an Email to one or more recipients. How to use a [Send Email](<../../../ref/lang/auto/Class.Send Email.final.md>). |
 | ![](../../../shared/icons-tools/automatic-activity.png) Automatic Activity | Executes an action flow to do some work without the need of human intervention. How to use an [Automatic Activity](<../../../ref/lang/auto/Class.Automatic Activity.final.md>). |
 | ![](../../../shared/icons-tools/process.png) Execute Process | Executes another process as an activity of the current process. How to use an [Execute Process](<../../../ref/lang/auto/Class.Execute Process.final.md>). |
 | ![](../../../shared/icons-tools/wait-activity.png) Wait | Puts the process flow execution on hold until a specific event occurs. How to use a [Wait](<../../../ref/lang/auto/Class.Wait.final.md>). |

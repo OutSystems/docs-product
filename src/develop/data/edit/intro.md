@@ -16,7 +16,7 @@ Add, remove, and change records of **entities** during app development, so you c
 
 <div class="info" markdown="1">
 
-This topics relates to editing data of Entities, to learn how to edit data in **Static Entities**, check [Static Entities](../modeling/entity-static.md) and [Create and Use an Enumerate](../modeling/enumerate-create.md) topics.
+This topics relates to editing data of Entities, to learn how to edit data in **Static Entities**, check [Static Entities](../modeling/entity-static.md).
 
 </div>
 

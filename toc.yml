@@ -25,7 +25,6 @@
             - href: develop/data/modeling/entity.md
             - href: develop/data/modeling/entity-create.md
             - href: develop/data/modeling/entity-static.md
-            - href: develop/data/modeling/enumerate-create.md
             - href: develop/data/modeling/relationship/intro.md
             - topics:
                 - href: develop/data/modeling/relationship/relationship-one-to-one.md

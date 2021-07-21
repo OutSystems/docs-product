@@ -161,7 +161,7 @@ You added an If widget and did not set a value for the Condition.
 
 **Recommended action**
 
-You need to set a valid value for the Condition property of the [If](../../../ref/lang/auto/Class.If%20Widget.final.md).
+You need to set a valid value for the Condition property of the [If](../../../ref/lang/auto/Class.If.final.md).
 
 ## Unknown &lt;entity_name> &lt;property> in &lt;element> &lt;element_type>
 

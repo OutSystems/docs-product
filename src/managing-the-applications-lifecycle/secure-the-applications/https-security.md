@@ -19,5 +19,5 @@ With HTTPS security, your Mobile Apps and Reactive Web Apps establish a secure c
 * The data exchanged cannot be tampered with, since the message integrity is checked.
 * Man-in-the-middle attacks are prevented: when the end user accesses the application using HTTPS, the application server is required to present a certificate. The end user's browser checks to see if that is a trusted application server or some other application server that cannot be trusted.
 
-All the communication between the app and the Platform Server is done through [secure REST calls](<../../security/app-security/mobile-app-server.md>).
+All the communication between the app and the Platform Server is done through [secure REST calls](https://success.outsystems.com/Support/Security/Application_security_overview/Mobile_app_to_server_communication_and_security).
 

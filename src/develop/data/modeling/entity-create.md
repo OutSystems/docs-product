@@ -9,12 +9,12 @@ In OutSystems, a database table is an ![Entity](../../../shared/icons-service-st
 
 To create an Entity you need to:
 
-1. Open the Entity Diagram created by default in your application. 
-1. Right-click anywhere on the canvas and select 'Add Entity'.
-1. In the window that pops up:
-    1. Give a name to the entity.
-    1. The entity already has the Id attribute created as Entity Identifier (primary key). Add the other attributes.
-    1. Add indexes if necessary.
+1. Double click in the Entity Diagram created by default in the Data tab. 
+1. Right-click anywhere on the canvas and select 'Add Entity to Database'.
+1. Give a name to the entity which is named "Entity 1" by default
+1. By drop-down the entity arrow tree, note that the entity already has the Id attribute created as Entity Identifier (primary key). 
+1. With the entity selected, add the other attributes by clicking with the right-button in "Add Entity Attribute".
+1. You can add indexes if necessary, as the previous step, by clicking with the right-button in "Edit Entity".
 
 Alternatively, you can create entities in the Data tab:
 
@@ -37,7 +37,7 @@ We have an application called Go Out, that allows you to read and write reviews 
 
 3. Set the name of the entity to `Place`. OutSystems creates an `Id` attribute with data type `Long Integer`, set as AutoNumber.
 
-4. Use the ![Entity Attribute](../../../shared/icons-service-studio/entity-attribute.png) New button to create the attributes:
+4. With the entity selected, add the other attributes by clicking with the right-button in "Add Entity Attribute" to create the attributes:
 
     ![](images/entity-editor.png)
 

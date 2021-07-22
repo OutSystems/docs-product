@@ -21,7 +21,7 @@ To use this feature, you must meet the following requirements for the [technical
 * You're using Platform Server 11.12.0 or later.
 * You have activated the technical preview **Emails for Mobile and Reactive** in LifeTime in all environments.
 
-**Using attachments, Image with binary content, List, Table, If**
+**Using email templates, attachments, Image with binary content, List, Table, If**,
 
 * You're using Platform Server 11.13.0 or later.
 * You have activated the technical previews **Emails for Mobile and Reactive** and **Attachments in Mobile and Reactive emails** in LifeTime, in all environments.
@@ -55,15 +55,6 @@ The following sections cover the more technical details related to the emails as
 ### How emails work
 
 In Service Studio, you first define the structure of the email and the expressions the platform evaluates to generate the email content. Then, the platform turns the structure into a HTML template, evaluates the expressions, replaces the content, and creates the final HTML. Finally, the platform sends the email message using the configurations you provide in Service Center.
-
-### Terminology
-
-The following is some terminology used in this section.
-
-* **Email** — the UI element in Service Studio
-* **email** — generic meaning of the word
-* **to send email** — sending an email message to the user email address
-* **to trigger email** — event that starts the logic for sending emails
 
 ### Data considerations
 

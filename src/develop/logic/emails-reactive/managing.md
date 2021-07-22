@@ -17,29 +17,26 @@ This content is about a technical preview. See [Technical Preview - Emails in Mo
 
 To create a new Email in Service Studio, follow these steps:
  
-1. Ensure you have a **UI Flow with a blank Theme** in your module. See [Creating UI Flow without styles](../../ui/navigation/ui-flow.md#creating-ui-flow-without-styles) for instructions.
+1. Go to **Interface** > **UI Flows** and do one of the following:
 
-    ![UI Flow with the Theme property](images/ui-flow-blank-theme-ss.png?width=310)
-
-    <div class="info" markdown="1">
-
-    The name of UI Flow for emails in this document is **Emails**.  
-
-    </div>
-
-    <div class="warning" markdown="1">
-
-    If you try adding an Email to a large Theme, Service Studio warns you about possible rendering issues in email clients.
-
-    Create Emails based on a Theme without styles or a custom minimal Theme. A minimal CSS ensures low size of emails and discourages email readers from clipping the content. For example, Gmail shows **[Message clipped] View entire message** for all emails larger than 102KB.
-
-    </div>
-
-1. Right-click your **Emails** UI Flow and select **Add Email**. Service Studio adds a new Email element under the UI Flow. 
+    * In you're adding the first email in the module, right-click any UI Flow and select **Add Email**.
+    * If you already have an email in the module, right-click the **Emails** UI Flow and select **Add Email**.
 
     ![UI Flow and the new Email menu](images/add-email-ui-flow-ss.png?width=410)
 
-1. Select the new Email under the UI Flow, and enter the following details:
+    <div class="info" markdown="1">
+
+    Emails require a light theme. When you add your first email to the module, Service Stdio creates Emails UI Flow and a light theme, and then adds your email.
+
+    </div>
+
+1. In the **New Email** window, select **Empty** and click **Create Email**.
+
+    ![Email templates in new email window](images/new-email-window-ss.png?width=700)
+
+    If you see a dialog **Add Email to flow with large theme** instead of the **New Email** window, verify that your Service Studio and Platform Server meet the latest[technical preview requirements](intro.md#prerequisites). 
+
+1. Select the Email under the UI Flow, and enter the following details:
 
     * A name in the **Name** field
     * `"No subject"` as a temporary subject in the **Subject** field
@@ -48,9 +45,9 @@ To create a new Email in Service Studio, follow these steps:
 
 ## Adding content to Email
 
-In the technical preview you can use text, images, and links in Emails. To add content to your emails, follow these steps in Service Studio:
+To add content to your emails, follow these steps in Service Studio:
 
-1. Go to **Interface** > **UI Flows** > **your Emails UI Flow** and double-click the Email you want to edit. The Email opens for editing and the widget list shows the widgets that Emails currently support.
+1. Go to **Interface** > **UI Flows** > **your Emails UI Flow** and double-click the Email you want to edit. The Email opens for editing. The widget list shows the widgets that Emails currently support.
     
     ![Email for editing](images/edit-email-open-ss.png?width=810)
 
@@ -114,7 +111,8 @@ When you open this email in the email client, the expression displays "Hello, Jo
 
 If the content of an email is too big, some email readers clip the content. For example, Gmail shows **[Message clipped] View entire message** for all emails larger than 102KB. This can happen if you're generating content in your emails with a Theme that has a lot of CSS not designed for emails.
 
-To reduce the size of the email content, use a UI Flow with a blank Theme. See [Creating UI Flow without styles](../../ui/navigation/ui-flow.md#creating-ui-flow-without-styles) for instructions.
+To reduce the size of the email content, use a blank Theme or a dedicated email Theme. When you add email based on one of the email templates, Service Studio applies an email theme automatically for you. You can also [create UI Flow without styles](../../ui/navigation/ui-flow.md#creating-ui-flow-without-styles) and then add your emails under this UI Flow. 
+
 
 ## Email templates
 

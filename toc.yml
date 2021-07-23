@@ -625,6 +625,39 @@
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/views-and-tables.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/query-log-data.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md
+    
+    #Architecture Dashboard
+    - href: managing-the-applications-lifecycle/manage-tech-debt/intro.md
+    - topics:
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-works.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-setup.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-use.md
+        - topics:
+            - href: managing-the-applications-lifecycle/manage-tech-debt/how-use-architect.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/how-use-team-lead.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/how-use-developer.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/ref-code-patterns.md
+        - topics:
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/best-pratices.md
+            - topics:            
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-inline-js-and-style.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-large-session-variables.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-site-property-updates.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/control-image-size.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/expand-inline-parameters.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/limit-records-sql.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
+                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-module-classification.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-probes-o10.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-update-probes.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-force-sync.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-proxy.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/faq.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/troubleshoot.md
+    
     - href: managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
     - href: managing-the-applications-lifecycle/data-protection.md
 

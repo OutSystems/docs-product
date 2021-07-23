@@ -29,11 +29,3 @@ There are cases when you always need to fetch all records from the database, for
 
 * Use a Screen Aggregate and set **Max. Records** higher than the maximum number of records you expect. Keep in mind that large amounts of data may slow down the user interface and degrade the responsiveness of the app.
 * Use a Data Action instead of Screen Aggregate and leave **Max. Records** field empty. In Data Actions, the **Max. Records** value is optional, and if you provide no value the Data Action fetches all records from the database.   
-
-## Traditional Web Apps
-
-In Traditional Web Apps, Aggregates run on the server, so you can only add [server-side Aggregates](#server-side-aggregates).
-
-To load data when the screen loads in Traditional Web Apps, place an Aggregate in the **Preparation** action (right-click a screen add select **Add Preparation**.). **Preparation** exists in Traditional Web Apps only.
-
-![Preparation in Traditional Web App](images/aggregate-preparation-ss.png?width=550)

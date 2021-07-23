@@ -11,7 +11,6 @@ OutSystems provides tools, guidance, and best practices for implementing automat
 ## Component testing with BDDFramework tools
 Component testing is the process of testing Actions and exposed Services that make up an application's logic. Component testing in OutSystems spans multiple test types, including unit, integration, and API tests. BDDFramework is the recommended tool for planning and executing component testing. The following resources provide more information.
 
-* [Component testing with BDDFramework tools](testing-bdd-framework.md) -- Introduction to BDDFramework tools that includes installation and getting started steps
 * [Your Complete Guide to BDD Testing in OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) -- Comprehensive blog post describing how to use the BDDFramework for server-side testing 
 * [Component testing](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Component_Testing) -- Best practices for implementing component tests
 

@@ -146,7 +146,7 @@ First of all, developers need to start adding these extended properties to their
 In addition to that, the OutSystems platform doesn't provide any collision detection for extended properties, so it’s up to the developer to ensure it. This can be especially tricky to manage in complex screens.
 
 ### Mapping tests to the Architecture Canvas
-cd
+
 ![Architecture Canvas](images/test-4-layer-diag.png?width=800)
 
 The [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) is an OutSystems architecture tool to make the design of Service-Oriented Architectures simple.

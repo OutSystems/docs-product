@@ -77,7 +77,7 @@ Follow these steps:
 
     ![Select new screen type](images/forge-11-ss.png)
 
-    The new screen opens with a warning message: "You are editing a Screen Template. Check the guidelines." 
+    The new screen opens: 
 
     ![Warning message](images/forge-12-ss.png)
 

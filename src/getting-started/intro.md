@@ -22,7 +22,7 @@ We are working on this article. Please let us know how useful this new version i
 
 To create your first app in Service Studio you can: 
 
-* Run a **built-in interactive tutorial**. In Service Studio, open the Help menu and select **Build an App in 5 minutes tutorial** to start and interactive tutorial. 
+* Run a **built-in interactive tutorial**. In Service Studio, open the **Help** menu and select **Build an App in 5 minutes tutorial** to start and interactive tutorial. 
 * Follow **step-by-steps tutorials**. Check out the tutorials about [how to create a mobile app](create-mobile.md) or [how to create a web app](create-reactive-web.md).
 * Start from an **existing sample app**. Create a new app in Service Studio and choose **Start from an app** to see the collection of the prebuilt apps.
 

@@ -16,22 +16,27 @@ Once you group or use aggregate functions on attributes, those attributes become
 
 ## Example
 
-In the GoOutWeb application to find, review, and rate places, you want to show the average rating of places to help you make a decision. Consider that you already have an aggregate fetching all the reviews of a place from the database. Open the aggregate and do the following:
+Consider that you already have an aggregate fetching all the data from the database. Open the aggregate and do the following:
 
 In the Sorting Example application, we want to define how many employees are in each city. First, create a **Group by** city. Next, calculate the **count** of those employees by city. Assume that you already have an aggregate fetching all the employees from a sample database. 
 
 Open the aggregate and do the following:
 
 1. On the `City` attribute, right-click, and choose **Group By City**.
+  
+    ![Group by city](images/group-calculate-ex-ss.png)
 
 1. On the `Employee Id` attribute, right-click, and choose **count**.
 
+    ![Count employees](images/group-calculate-ex1-ss.png)
+
 1. Now you see how many employees are in each city.
 
+    ![Employees per city](images/group-calculate-ex2-ss.png)
 
-![Group by city](images/group-calculate-ex-ss.png)
 
-![Count employees](images/group-calculate-ex1-ss.png)
 
-![Employees per city](images/group-calculate-ex2-ss.png)
+
+
+
 

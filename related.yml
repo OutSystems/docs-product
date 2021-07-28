@@ -717,7 +717,6 @@
     - deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
     - deliver-mobile/generate-distribute-mobile-app/publish-apple-app-store.md
     - deliver-mobile/generate-distribute-mobile-app/development-tests.md
-    - one-way: setup/possible-setups/intro.md
 
 # Building apps with AndroidX
 - deliver-mobile/mobile-apps-build-service/androidx.md:

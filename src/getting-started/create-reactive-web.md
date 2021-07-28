@@ -146,14 +146,14 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
 1. Click the **Logic** tab and add a a Server Action. Name it *TaskDelete*. 
 
-1. Add an input parameter to the *TaskDelete* to recieve the Task identifier. Set it's name to *TaskId* and the Data Type to *Task Identifier*.
+1. Add an input parameter to the *TaskDelete* to receive the Task identifier. Set it's name to *TaskId* and the Data Type to *Task Identifier*.
 
 1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the property *Id* to the input parameter *TaskId*.
 
     ![](images/wrapper-delete-ss.png)
 
 
-1. Go back to the **Interface** tab and double click the **DeleteTask**. Drag the **TaskDelete** action to the flow. and set the TaskId to the input parameter *TaskId*.
+1. Go back to the **Interface** tab and double click the action **DeleteTask**. Drag the **TaskDelete** server action to the flow. and set the TaskId to the input parameter *TaskId*.
 
 1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
 

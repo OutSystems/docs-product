@@ -122,7 +122,7 @@ Now we will define the logic that runs when the end users press the Save button:
 
 1. Next, we'll need to assign value of the output parameter **TaskId** to the **CreateOrUpdateTask**. Drag an **Assign** node to the flow and set the **Variable** to **TaskId**, and the **Value** to `CreateOrUpdateTask.Id`.
 
-wrapper-create.png
+    ![](images/wrapper-create-ss.png)
 
 1. Navigate to the **Interface** tab and double click the **SaveOnClick** action.
 
@@ -150,7 +150,7 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
 1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the property *Id* to the input parameter *TaskId*.
 
-    wrapper-delete.png
+    ![](images/wrapper-delete-ss.png)
 
 
 1. Go back to the **Interface** tab and double click the **DeleteTask**. Drag the **TaskDelete** action to the flow. and set the TaskId to the input parameter *TaskId*.

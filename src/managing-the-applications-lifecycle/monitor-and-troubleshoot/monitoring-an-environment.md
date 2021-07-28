@@ -83,12 +83,6 @@ Mobile Apps
 Environment Health
 :   Displays the status of the [OutSystems services](#outsystems-services), including the services running on each front-end. It also displays the status of asynchronous tasks, such as processes, emails, and Timers. It provides an overview of the status of your environment.
 
-<div class="info" markdown="1">
-
-The information about the Scheduler Service in the **Environment Health** screen applies only to applications that are not running in a Container.
-
-</div>
-
 Security
 : Displays the IP addresses that were [blocked by the Platform Server](../secure-the-applications/protection-against-brute-force-attacks.md) due to multiple failed login attempts. You will be able to unblock those IP addresses.
 

@@ -655,11 +655,6 @@
     - href: managing-the-applications-lifecycle/data-protection.md
 
 
-# Setting Up OutSystems
-- href: setup/possible-setups/intro.md
-- topics:
-    - href: setup/environment-config.md
-
 # Reference
 - href: ref/intro.md
 - topics:

@@ -12,15 +12,6 @@ Other versions available:&#8195;[11](https://success.outsystems.com/Documentatio
 
 </div>
 
-Before installing OutSystems on-premises, check its hardware and software requirements. Once you're ready to start the installation, head to [Setting Up OutSystems](intro.md).
-
-## Amazon EC2 considerations
-
-OutSystems can run on Amazon EC2 instances. Each instance must fulfill the following requirements:
-
-* The EC2Config service must be running
-
-For more information on how to enable this service check Amazon's [EC2Config service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2config-service.html).
 
 ## Integration with external systems
 
@@ -72,11 +63,6 @@ The use of double-byte characters with DB2 databases is not supported.
 
 </div>
 
-### SAP
-
-* SAP ERP R/3 4.6 or higher
-* SAP ECC 5.0 or higher
-* SAP S/4HANA
 
 ## Development tools
 

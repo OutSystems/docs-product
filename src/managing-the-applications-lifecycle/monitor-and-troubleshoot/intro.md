@@ -41,9 +41,6 @@ Also, OutSystems exposes the collected data and shares monitoring points that en
 
 ## Monitoring Responsibilities
 
-The scope of your monitoring responsibility depends on the [setup of your OutSystems infrastructure](../../setup/possible-setups/intro.md) **on the cloud**.
-
-OutSystems Cloud
-:   OutSystems guarantees the monitoring of the infrastructure layer components (servers and networking) and the platform main services in the middleware layer (web servers, deployment controllers, database). The customer is responsible for monitoring application usage (errors and performance), external integrations, end user experience, and business outcomes.
+On the OutSystems Cloud, OutSystems guarantees the monitoring of the infrastructure layer components (servers and networking) and the platform main services in the middleware layer (web servers, deployment controllers, database). The customer is responsible for monitoring application usage (errors and performance), external integrations, end user experience, and business outcomes.
 
 ![Monitoring scope](images/intro-cloud-scope-diag.png?width=600)

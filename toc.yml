@@ -488,8 +488,8 @@
     - topics:
         - href: extensibility-and-integration/rest/consume-rest-apis/intro.md
         - topics:
-            - href: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
-            - href: extensibility-and-integration/rest/consume-rest-apis/refresh-rest-service.md
+            # - href: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
+            # - href: extensibility-and-integration/rest/consume-rest-apis/refresh-rest-service.md
             - href: extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
             - href: extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md
             - href: extensibility-and-integration/rest/consume-rest-apis/simple-customizations.md

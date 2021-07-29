@@ -17,4 +17,4 @@ Screen Templates help you develop faster. For example, create a work order templ
 
 Service Studio comes with the default Screen Templates that are based on the OutSystems UI Framework. You can [create your Screen Templates](<../screen-templates-create/intro.md>) as well.
 
-![New Screen dialog with default Screen Templates](images/new-screen-window-mobile.png?width=600)
+![New Screen dialog with default Screen Templates](images/new-screen-window-mobile.png)

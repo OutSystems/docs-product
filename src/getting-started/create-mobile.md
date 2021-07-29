@@ -135,7 +135,7 @@ Now let's add the functionality to mark tasks as complete. Let's implement that 
 
 1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
 
-    ![Allow Completing Tasks](images/reactive-new-app-delete-refresh.png?width=600)
+    ![Allow Completing Tasks](images/reactive-new-app-delete-refresh.png)
 
 
 ## Allow adding tasks
@@ -160,6 +160,5 @@ At this stage we test the mobile app. Click the **![1-Click Publish](../shared/i
 
 When the application is deployed, click the **![Open in Browser](../shared/icons-service-studio/open-browser.png) Open in Browser** button to test your application in a browser (Chrome and Safari are supported).
 
-![Test Your Mobile App](images/create-mobile-18.png)
 
 To try out the app on your mobile device see [Distribute as a progressive web app (PWA)](../deliver-mobile/distribute-pwa/intro.md).

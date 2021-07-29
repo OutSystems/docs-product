@@ -105,26 +105,6 @@ The **GetLanguageFromText** Server Action receives an input parameter, Text, and
 
 ![Block for language detection, with parameters](images/text-analysis-detect-language-text.png)
 
-### Spell-check
-
-<div class="info" markdown="1">
-
-Spell-checking is currently not available in Reactive Apps. The team is working on it!
-
-</div>
-
-The spell-check feature has a Block and a Server Action.
-
-1. Drag the **SpellCheck** Block to a screen in the application. 
-2. In the **TextArea** placeholder, drag an Input widget and bind it to a variable. 
-
-![Spellcheck block](images/text-analysis-image12.png)
-
-The **SpellCheck** Block has server-side logic to analyze text and retrieve suggestions for the detected errors. It also has client-side logic that highlights and enables end users to choose what they want to do with the error. 
-
-The user can either select a suggestion or ignore it. Once ignored, the suggestion no longer shows.
-
-Additionally, you can use the just **RunSpellChecker** Server Action, without the Block. Drag the Server Action to the logic flow and enter the input parameters. Add logic to the flow after receiving the output structure.
 
 ### Speech to text conversion
 

@@ -61,7 +61,7 @@ To attach several files to an email, create a List with the Attachment data stru
 
 <div class="info" markdown="1">
 
-The example references the **Sample_ProductImage** Entity from **OutSystemsSampleDataDB**, a standard sample data module in the OutSystems cloud. The text attribute **FileName** is the file name of the image attachments, and binary **FileContent** is the content.   
+The example references the **Sample_ProductImage** Entity from **OutSystemsSampleDataDB**, a standard sample data module in the OutSystems cloud. The text attribute **FileName** is the file name of the image attachment. The binary attribute **FileContent** is the content of the image.   
 
 </div>
 

@@ -27,11 +27,11 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
 1. Add a Screen to your app. Go to **Interface** > **UI Flows**, right-click **MainFlow** and select **Add Screen**. In the **New Screen** window select **Empty** (1), enter **Home** as the Screen name (2), then click **CREATE SCREEN** (3). Service Studio adds an empty Screen to your app.
 
-    ![New screen window](images/new-screen-ss.png?width=700)
+    ![New screen window](images/new-screen-ss.png)
    
 1. Add data sources to your app by referencing some Entities in the **Manage Dependencies** window (**Ctrl+Q**). This example app [references OutSystems sample data](../../../develop/ui/screen-templates-create/sample-data.md#Referencing_sample data_in_apps). Once you reference Entities, they're available in Service Studio under **Data** > **Entities** > **Database**.
 
-    ![Database Entities in Service Studio](images/database-entities-ss.png?width=350)
+    ![Database Entities in Service Studio](images/database-entities-ss.png)
 
     <div class="info" markdown="1">
 
@@ -43,11 +43,11 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
 1. It's time to load some data to the Screen. Go to **Interface** > **UI Flows** > **Main Flow**, and then right-click your **Home** Screen. Select **Fetch Data from Database**. A new Aggregate edit screen opens, and there's a notice that you need some data.
 
-    ![An empty Aggregate](images/fetch-data-aggregate-open-ss.png?width=800)
+    ![An empty Aggregate](images/fetch-data-aggregate-open-ss.png)
 
 1. With the Aggregate still open, navigate to **Data** > **Entities** > **Database** > **OutSystemsSampleDataDB**. Drag the **Sample_Employee** Entity to the Aggregate window. If you're using your data instead of OutSystems sample data, then drag some other Entity. Service Studio shows the data preview in columns, and uses the Entity name to name the Aggregate.
    
-    ![Aggregate shows data preview](images/fetch-data-aggregate-with-entity-ss.png?width=800)
+    ![Aggregate shows data preview](images/fetch-data-aggregate-with-entity-ss.png)
 
     <div class="info" markdown="1">
 
@@ -57,7 +57,7 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
 1. Go back to **Interface** > **UI Flows** > **Main Flow** > **Home** and notice the **GetEmployees** Aggregate in the Screen. Expand the Aggregate to see the Entities, and then expand the Entities to list the Attributes. There's also a warning that you're not using the data anywhere. Follow the instructions on [how to show the data in an app](#showing-data) to prevent the warning. 
 
-    ![Aggregate in the Screen](images/fetch-data-aggregate-in-screen-ss.png?width=350)
+    ![Aggregate in the Screen](images/fetch-data-aggregate-in-screen-ss.png)
 
 
 ## Show data in a widget
@@ -68,11 +68,11 @@ Once you fetch data from the database, use one of many OutSystems widgets to sho
 
 1. In the search bar, search for the **List** widget and drag the widget to the Screen. Service Studio now shows an empty List widget.
 
-    ![A widget and screen](images/fetch-data-new-widget-ss.png?width=600)
+    ![A widget and screen](images/fetch-data-new-widget-ss.png)
 
 1. Click the List widget to select it, and go to the properties. In the **Source** field select **GetEmployees.List**. With this you're telling the app which data source to use with this widget.
 
-    ![Widget and the SOurce property](images/fetch-data-widget-with-data-source-ss.png?width=700)
+    ![Widget and the SOurce property](images/fetch-data-widget-with-data-source-ss.png)
 
     <div class="info" markdown="1">
 
@@ -82,8 +82,9 @@ Once you fetch data from the database, use one of many OutSystems widgets to sho
 
 1. With your List widget connected to a data source, add some Attributes to show data in the List. Expand the Entity to see the Attributes, under **Interface** > **UI Flows** > **Main Flow** > **Home** > **GetEmployees** > **Sample_Employee**. Drag an Attribute, for example, **LastName** to the List widget. This tells the widget to list all last names that are in the database.
 
-    ![Drag an Entity Attribute to the widget](images/fetch-data-drag-attribute-ss.png?width=700)
+    ![Drag an Entity Attribute to the widget](images/fetch-data-drag-attribute-ss.png)
 
 1. Publish your ap and load it in the browser. There's a list widget listing the last names of the employees.
 
-    ![App running in the browser](images/fetch-data-browser.png?width=400)
+    ![App running in the browser](images/fetch-data-browser.png)
+

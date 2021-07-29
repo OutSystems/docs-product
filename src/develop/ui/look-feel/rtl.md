@@ -94,7 +94,7 @@ Selector to get the HTML lang:
 document.documentElement.lang
 ```
 
-Use one of the following JS Snippets to toggle **is-rtl** class on body:
+Use one of the following JS Snippets to toggle **is-rtl** class on the body:
 
 ```
 var element = document.body;
@@ -112,7 +112,7 @@ var element = document.body;
 element.classList.contains('is-rtl') ? element.classList.remove('is-rtl') : element.classList.add('is-rtl');
 ```
 
-#### Adding RTL class to the layout element
+### Adding RTL class to the layout element
 
 You can add the RTL class to the **layout** element instead of the **body** element. The RTL behavior on OutSystems UI patterns is the same.
 

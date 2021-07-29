@@ -37,16 +37,6 @@ Icon | Name | Shortcut | Description
 ![](images/toolbar-button-step-out.png) | Step Out | `Shift+F11` | Continues the execution trace to the next element in the outer "level" of the flow or screen, i.e. it "gets out" of the current flow or screen.
 ![](images/toolbar-button-break-on-all-exceptions.png) | Break On All Exceptions | | When active, this toggle button forces the debugger to suspend the execution of threads whenever handled or unhandled exceptions occur.
 
-<div class="info" markdown="1"> 
-
-While debugging, you can also define breakpoints in widgets. The step commands mentioned above (![](images/toolbar-button-step-over.png) Step Over, ![](images/toolbar-button-step-into.png) Step Into and ![](images/toolbar-button-step-out.png) Step Out) have a particular behavior on widgets:
-
-* They don't stop on widgets unless the widget has a breakpoint, or is designed using elements that are evaluated at runtime as, for example, widgets designed using user-defined functions.
-
-* The order that step commands follow widgets on the screen is the same by which they are rendered and not the order the widgets are displayed on the screen.
-
-</div>
-
 ## Debugging Context Area { #debugging-context-area }
 
 Located on the left-hand side of the Debugger Tab, this area contains several tabs containing information about the debugger execution. 

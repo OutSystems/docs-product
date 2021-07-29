@@ -38,9 +38,10 @@ For more information about emails, see the following resources:
 
 If you want to... | Check out... |
 | - | - |
-| Create a new Email | [Creating a new Email](managing.md#creating-a-new-email) | 
-| Add some content to an Email | [Adding content to Email](managing.md#adding-content-to-email)| 
+| Create a new email | [Creating a new Email](managing.md#creating-a-new-email) | 
+| Add content for an email | [Adding content to Email](managing.md#adding-content-to-email)| 
 | Add content based on user inputs  | [Handling inputs in Emails](managing.md#handling-inputs-in-emails)| 
+| Add attachment to emails  | [Adding email attachments](attachments.md)| 
 | Create logic to send emails | [Sending Emails](sending.md)| 
 | See what widgets you can use  | [Widgets available in Emails](widgets.md#widgets-available-in-emails)| 
 | See what data types you can use in inputs  | [Available data types](../../../ref/data/data-types/available-data-types.md), in particular [compound data types](../../../ref/data/data-types/available-data-types.md#compound-data-types)  | 

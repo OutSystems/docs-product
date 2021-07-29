@@ -6,7 +6,7 @@ Once you define the actions and publish the extension, add a reference to these 
 
 Do the following:
 
-1. Right-click on the **Actions** folder in the Multi-tree Navigator and select ![](images/action.gif) **Add Action**.
+1. Right-click on the **Actions** folder in the Multi-tree Navigator and select ![](images/action.png) **Add Action**.
 
 1. Specify the following properties:
 

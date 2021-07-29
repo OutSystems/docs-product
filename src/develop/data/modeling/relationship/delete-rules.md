@@ -8,13 +8,13 @@ When you create relationships between the Entities in your module, you must defi
 
 The following Entity Diagram defines the relationship between Customers (main Entity A) and Orders (related Entity B), where a Customer can have several Orders, and an Order belongs to one and only one Customer. The [reference attribute](intro.md), which corresponds in database terminology to a foreign key, is the attribute **CustomerId** in Entity **Order**.
 
-![](images/delete-rules-1.png?width=500)
+![](images/delete-rules-1.png)
 
 In this example, specifying the **referential integrity** is to define what happens to the Orders of a Customer when that Customer is deleted.
 
 To specify the **referential integrity** in a relationship between two Entities, you need to edit the **reference attribute** of the related Entity and set the **Delete Rule** property to one of the following values: `Protect`, `Delete` or `Ignore`.
 
-![](images/delete-rules-2.png?width=400)
+![](images/delete-rules-2.png)
 
 **Protect**
 :   Setting the **Delete Rule** to `Protect` prevents deleting records of the main Entity while there are associated records in the related Entity.
@@ -49,11 +49,11 @@ Consider the following business scenario:
 
 Setting the **Delete Rule** property of the reference attribute **CustomerId** to `Protect` assures that the end user won’t delete a Customer that still has associated Orders.
 
-![](images/delete-rules-3.png?width=500)
+![](images/delete-rules-3.png)
 
 Trying to delete a Customer that still has associated Orders results in a database exception, and the operation is not executed:
 
-![](images/delete-rules-4.png?width=800)
+![](images/delete-rules-4.png)
 
 In this case, to delete a Customer you must first delete all the Orders placed by that Customer.
 
@@ -85,7 +85,7 @@ Consider the following business scenario:
 
 Setting the **Delete Rule** property of the reference attribute **OrderId** to `Delete` assures that when an Order is deleted, all the related OrderItems are also automatically deleted.
 
-![](images/delete-rules-5.png?width=500)
+![](images/delete-rules-5.png)
 
 ### Advantages
 
@@ -113,7 +113,7 @@ Consider the following business scenario:
 
 Setting the **Delete Rule** property of the reference attribute **OrderId** to `Ignore` allows you to delete an Order and keep the related OrderHistory records.
 
-![](images/delete-rules-6.png?width=500)
+![](images/delete-rules-6.png)
 
 ### Advantages
 

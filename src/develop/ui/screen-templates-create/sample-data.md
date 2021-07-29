@@ -12,11 +12,11 @@ Sample data is useful when you need to create a prototype, proof of concept, or 
 
 1. Click the manage dependencies icon in the Service Studio toolbar, or press CTRL+Q. **Manage Dependencies** dialog opens.
 
-    ![Manage dependencies icon](images/manage-dependencies-ss.png?width=500)
+    ![Manage dependencies icon](images/manage-dependencies-ss.png)
 
 2. Enter OutSystemsSampleDataDB to search the available producer modules. Select **OutSystemsSampleDataDB** in the results, and in the right pane select all **Entities** of the module.
 
-    ![Manage dependencies adding module](images/manage-dependencies-sample-data-module-ss.png?width=600)
+    ![Manage dependencies adding module](images/manage-dependencies-sample-data-module-ss.png)
 
 3. Click **Apply** to confirm and close. The Entities are now available in the **Data** tab of Service Studio.
 
@@ -45,7 +45,7 @@ Follow these steps to import your own data for use in Screen Templates.
    
 1. Use the **DownloadOriginalData** Server Action from **Logic** > **Server Actions** > **OutSystemsSampleDataDB** > **Export** to save the original source files in a zip archive. You need to create a logic to download a file, by adding a **Download** element at the end of the flow.  
 
-    ![A flow to export sample data](images/sample-data-export-ss.png?width=400)
+    ![A flow to export sample data](images/sample-data-export-ss.png)
 
 1. Edit the source files in the zip archive with your own data.
 

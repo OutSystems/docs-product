@@ -49,11 +49,11 @@ Let's create a sample "todo" app.
 
 2. In the properties for your new app, we will set up quite a few interesting things. Upload an icon (1) by clicking **Upload icon**. Then, name your app (2) "ToDo", add some description (3) and change the primary color (4) by selecting one of the colors. Click **Create app** to advance to the next step.
 
-    ![New App properties](images/new-app-properties.png?width=500)
+    ![New App properties](images/new-app-properties.png)
 
 3. In the application properties screen, make sure **Reactive Web App** is selected in **Choose module type**. Click **Create module** to create the module and open it for editing.
 
-    ![New App properties](images/reactive-new-module.png?width=500)
+    ![New App properties](images/reactive-new-module.png)
 
 
 ## Create a database table from an Excel file { #create-entity-from-excel }
@@ -68,7 +68,7 @@ To do this, we are going to use an Excel file that already contains the followin
 
 In the `ToDo` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel**, and select the sample file `Tasks.xlsx` available by default in the directory `C:\Program Files\OutSystems\Development Environment 11\Service Studio\TutorialResources`. Click **Import** in the dialog to confirm.
 
-![Create a Database Table from an Excel File](images/reactive-new-app-import-excel.png?width=600)
+![Create a Database Table from an Excel File](images/reactive-new-app-import-excel.png)
 
 When importing an Excel file, OutSystems creates a database table (called an Entity in OutSystems) with the necessary columns (called Attributes in OutSystems) to store the data in the database.
 
@@ -80,15 +80,15 @@ Now we can create a screen that shows all of the tasks.
 
 Open the **Interface** tab on the top right-hand corner, and double-click **MainFlow** under **UI Flows**. Then, drag a **Screen** from the Toolbox to an empty area in the Main Editor window. Choose the **Empty** template, name your screen `Tasks` and click **Create Screen**.
 
-![Create a new empty screen](images/reactive-new-app-screen-template-selection.png?width=600)
+![Create a new empty screen](images/reactive-new-app-screen-template-selection.png)
 
 Drag the **Task** entity from the **Data** tab to the Content placeholder of the screen in the Main Editor window.
 
-![Data tab and Task Entity](images/reactive-new-app-data-imported.png?width=600)
+![Data tab and Task Entity](images/reactive-new-app-data-imported.png)
 
 This automatically creates a table with the pagination support.
 
-![Tasks Screen](images/reactive-new-app-table.png?width=600)
+![Tasks Screen](images/reactive-new-app-table.png)
 
 ## Create a screen to edit tasks
 
@@ -96,17 +96,17 @@ Creating a screen to edit the records is as fast as creating a table.
 
 Right-click the title of the first task in the row, click **Link to** > **(New Screen)**, choose the **Empty** template, name your screen `TaskDetail` and click **Create Screen**.
 
-![Create a Screen to Edit Tasks](images/reactive-new-app-link-to-new-window.png?width=600)
+![Create a Screen to Edit Tasks](images/reactive-new-app-link-to-new-window.png)
 
 This links the title of the tasks to a newly created screen. We will use this new screen to edit the tasks, but for that we will need a form:
 
 1. Drag a **Form** widget from the Toolbox to the Content placeholder in the **TaskDetail** screen.
 
-    ![Drag a Form](images/reactive-new-app-form-created.png?width=600)
+    ![Drag a Form](images/reactive-new-app-form-created.png)
 
 2. Drag the **Task** entity from the **Data** tab to the previously created Form.
 
-    ![Create a Screen to Edit Tasks](images/reactive-new-app-entity-in-form.png?width=600)
+    ![Create a Screen to Edit Tasks](images/reactive-new-app-entity-in-form.png)
 
 Now we will define the logic that runs when the end users press the Save button:
 
@@ -130,7 +130,7 @@ Now we will define the logic that runs when the end users press the Save button:
 
 1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task. 
 
-    ![Create a Screen to Edit Tasks](images/reactive-new-app-redirect-to-task.png?width=600)
+    ![Create a Screen to Edit Tasks](images/reactive-new-app-redirect-to-task.png)
 
 ## Allow completing tasks
 
@@ -138,7 +138,7 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
 1. In the **Interface** tab, click on the "Task" screen. Right click on the checkbox in the **Is Active** column and select **Delete**.
 
-    ![Allow Completing Tasks](images/Create-first-WebApp-Task-tab-del-ss.png?width=600)
+    ![Allow Completing Tasks](images/Create-first-WebApp-Task-tab-del-ss.png)
 
 1. Drag a Button Widget and enter "Done" in the Text property of the button.
 
@@ -157,7 +157,7 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
 1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
 
-    ![Allow Completing Tasks](images/reactive-new-app-delete-refresh.png?width=600)
+    ![Allow Completing Tasks](images/reactive-new-app-delete-refresh.png)
 
 ## Allow adding tasks
 
@@ -167,11 +167,11 @@ We also want to enable the end users to add new tasks from the screen with all t
 
 1. Drag a Button Widget from the Toolbox to the Actions placeholder in the top right-hand corner of the screen. Change the label of the button to "Add".
 
-    ![Add plus icon to Actions placeholder](images/reactive-new-app-add-button.png?width=600)
+    ![Add plus icon to Actions placeholder](images/reactive-new-app-add-button.png)
 
 1. Right-click the button selector and choose **Link** > **MainFlow\TaskDetail**.
 
-    ![Allow Adding Tasks](images/reactive-new-button-linkto.png?width=600)
+    ![Allow Adding Tasks](images/reactive-new-button-linkto.png)
 
 ## Test your Reactive Web App
 

@@ -11,7 +11,7 @@ You can create several types of apps in OutSystems. Here's an overview to help y
 * To create an app and submit it to the Apple App Store or Google Play, as a mobile app for users to download, select **Phone App** or **Tablet App**.
 * To create a lightweight app and share it as a progressive web app (PWA) from your website and let users put the app icon on their mobile home screens, select **Phone App** or **Tablet App**.
 
-![A new app window in Service Studio](images/new-app-window-ss.png?width=600)
+![A new app window in Service Studio](images/new-app-window-ss.gif)
 
 ## What's a Reactive Web App?
 
@@ -27,9 +27,9 @@ When you develop a Reactive Web App:
 
 If you haven't developed OutSystems apps that focus on the client-side development paradigm, you can check the explanation about [Screen and Block lifecycle Events](<../develop/logic/screen-block-lifecycle-events.md>) and these notes about [best practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>).
 
-![Reactive Web App](images/reactive-web-app-diag.png?width=500)
+![Reactive Web App](images/reactive-web-app-diag.png)
 
-![Reactive Web App characteristics](images/reactive-web-app-characteristics-diag.png?width=500)
+![Reactive Web App characteristics](images/reactive-web-app-characteristics-diag.png)
 
 
 <div class="info" markdown="1">
@@ -48,7 +48,7 @@ There are two ways you can distribute a Mobile App, as:
 
 * **Progressive web app (PWA)**. PWAs are lightweight apps that have a look and feel of native mobile apps. They're quick to distribute and install directly from your website, as they don't depend on the app stores.
 
-![Mobile apps](images/mobile-vs-web-diag.png?width=600)
+![Mobile apps](images/mobile-vs-web-diag.png)
 
 ## Comparison Between Reactive Web App and Mobile App
 

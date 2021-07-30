@@ -121,17 +121,11 @@ To use [IT user governance based on LifeTime teams](https://success.outsystems.c
 
 ### LifeTime
 
-To use LifeTime to manage your application lifecycle, you need to have bidirectional communication between the front-end of the LifeTime environment, and all other servers (front-ends and deployment controllers) of your OutSystems Infrastructure. When the environments have load balancers, you can establish the connectivity between LifeTime and the load balancers of the environments it manages.
-
-In case HTTPS isn't supported, LifeTime communicates with the environments it manages by HTTP.
-
-Applications must be deployed as follows:
+You need to have bidirectional secure communication between the front-end of the LifeTime environment, and all other servers (front-ends and deployment controllers) of your OutSystems Infrastructure. When the environments have load balancers, you can establish the connectivity between LifeTime and the load balancers of the environments it manages.
 
 |Source|Destination|Port|Protocol|
 |------|-----------|----|--------|
-|LifeTime Front-End|Environment Front-End|80|TCP|
 |LifeTime Front-End|Environment Front-End|443|TCP|
-|Environment Front-End|LifeTime Front-End|80|TCP|
 |Environment Front-End|LifeTime Front-End|443|TCP|
 
 ### Architecture Dashboard

@@ -79,7 +79,7 @@ To add an Input to your Email and show the value in the email body, follow these
 
 1. Right-click the Email in the **Interface** tab and select **Add Input Parameter** from the menu. Service Studio adds an Input Parameter.
 
-    ![Input parameter for Email](images/adding-input-param-emai-ss.png?width=410)
+    ![Input parameter for Email](images/adding-input-param-email-ss.png?width=380)
 
 1. Set the following Input Parameter properties:
 
@@ -87,7 +87,7 @@ To add an Input to your Email and show the value in the email body, follow these
     * **Data Type** - select **Text**
     * **Is Mandatory** - Select **Yes** to make the **Handle** a required value in the Email
 
-    ![Input parameters for Email](images/inputs-for-emails-ss.png?width=280)
+    ![Input parameters for Email](images/inputs-for-emails-ss.png?width=350)
 
 1. Double-click the Email in the **Interface** tab to open it for editing.
 
@@ -95,7 +95,7 @@ To add an Input to your Email and show the value in the email body, follow these
 
 1. Enter `"Hello, " + Handle + "!"` and click **Done**.
 
-    ![Email preview](images/expression-preview-ss.png?width=500)
+    ![Email preview](images/expression-preview-ss.png?width=700)
 
 
 When you open this email in the email client, the expression displays "Hello, John!" when the value of **Handle** is `"John"`.

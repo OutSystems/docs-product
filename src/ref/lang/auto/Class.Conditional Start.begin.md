@@ -20,7 +20,7 @@ In some cases you may want the Conditional Start to be executed only after one o
 
 This kind of connector is represented as the green dotted connector shown in the image below:
 
-![](images/dependency-connector.jpg)
+![](images/dependency-connector.png)
 
 ## Using Conditional Start Activity References
 

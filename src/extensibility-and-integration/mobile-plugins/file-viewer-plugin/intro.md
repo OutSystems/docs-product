@@ -48,7 +48,7 @@ Here is how to add a file as a resource and open the file with the plugin.
     * Enter `resources` in the **Target Directory** property. Note that this value must be `resources` and you can't change it.
     * Select **Deploy to Target Directory** in the **Deploy Action** list.
 
-    ![Resources properties for File Viewer](images/resources-file-viewer-ss.png?width=300)
+    ![Resources properties for File Viewer](images/resources-file-viewer-ss.png)
 
 4. In the **OpenDocument** action enter `"resources\<file name>"` in the **FilePath** property. For example, if you add **sample.pdf** to **Resources**, the value of  **FilePath** is `"resources\sample.pdf"`.
 
@@ -63,7 +63,7 @@ The plugin can access only resources you deploy in the **resources** path. This 
 
 Here is an example of how to use File Viewer Plugin.
 
-![Open file logic](images/logic-file-viewer-ss.png?width=550)
+![Open file logic](images/logic-file-viewer-ss.png)
 
 A good practice is to check if the plugin is available to the app, and report an error if it's not. You can check the plugin availability by using the **CheckPlugin** action and checking the value of the **CheckPlugin.IsAvailable** boolean (1).
 

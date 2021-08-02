@@ -39,7 +39,7 @@ To create the logic to scan for barcodes, follow these steps in Service Studio:
 
 2. To open the camera in your app for scanning, drag the **ScanBarcode** action to the flow.
 
-    ![Client action to scan a barcode](images/client-action-ss.png?width=400)
+    ![Client action to scan a barcode](images/client-action-ss.png)
 
     In the **ScanBarcode** action you can set scan instructions, back or front camera, or UI orientation, and enable the scan button. For more information about the **ScanBarcode** action, see [Scanning options](#scanning-options).
 

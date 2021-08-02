@@ -34,7 +34,7 @@ To create a new Email in Service Studio, follow these steps:
 
     ![Email templates in new email window](images/new-email-window-ss.png?width=700)
 
-    If you see a dialog **Add Email to flow with large theme** instead of the **New Email** window, verify that your Service Studio and Platform Server meet the latest[technical preview requirements](intro.md#prerequisites). 
+    If you see a dialog **Add Email to flow with large theme** instead of the **New Email** window, verify that your Service Studio and Platform Server meet the latest [technical preview requirements](intro.md#prerequisites). 
 
 1. Select the Email under the UI Flow, and enter the following details:
 

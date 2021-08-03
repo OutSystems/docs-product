@@ -21,8 +21,15 @@ To use this feature, you must meet the following requirements for the [technical
 * You're using Platform Server 11.12.0 or later.
 * You have activated the technical preview **Emails for Mobile and Reactive** in LifeTime in all environments.
 
-**Using email templates, attachments, Image with binary content, List, Table, If**,
+**Using email templates, Image with binary content, List, Table, If**,
 
+* You're using Service Studio 11.12.0.
+* You're using Platform Server 11.13.0 or later.
+* You have activated the technical preview **Emails for Mobile and Reactive** in LifeTime in all environments.
+
+**Attachments** 
+
+* You're using Service Studio 11.12.0.
 * You're using Platform Server 11.13.0 or later.
 * You have activated the technical previews **Emails for Mobile and Reactive** and **Attachments in Mobile and Reactive emails** in LifeTime, in all environments.
 

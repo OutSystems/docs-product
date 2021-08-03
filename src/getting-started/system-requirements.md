@@ -70,7 +70,7 @@ To develop your applications using OutSystems, developers need to install Servic
 
 ### Service Studio 
 
-efore setting up Service Studio make sure that your computer meets the following requirements:
+Before setting up Service Studio make sure that your computer meets the following requirements:
 
 ### Hardware (minimum requirements)
 

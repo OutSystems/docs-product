@@ -38,7 +38,7 @@ To add a Firebase plugin to your module, follow these steps:
 
 3. In Service Studio, go to **Logic** > **Client Action** > **your Firebase plugin** and use the actions in your logic.
 
-    ![Firebase actions in the logic tab of Service Studio](images/plugin-logic-tab-ss.png?width=350)
+    ![Firebase actions in the logic tab of Service Studio](images/plugin-logic-tab-ss.png)
 
 ## Adding Google services configuration file
 
@@ -50,30 +50,30 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
 
 3. Select the [google-services.zip firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
 
-    ![Resources folder in Service Studio](images/resources-folder-ss.png?width=350)
+    ![Resources folder in Service Studio](images/resources-folder-ss.png)
 
 4. Select the **google-services.zip** resource and configure the following:
    
     * In the **Deploy Action** list, select **Deploy to Target Directory**.
     * In the Target Directory, enter the [target directory for your environment](#generating-target-directories-for-configuration-files).
 
-    ![Resource settings for Firebase](images/firebase-resource-properties-single-ss.png?width=350)
+    ![Resource settings for Firebase](images/firebase-resource-properties-single-ss.png)
 
 5. Repeat steps two and four for each environment, each time using a different configuration and [target directory](#generating-target-directories-for-configuration-files).
 
-    ![Resource settings for Firebase](images/firebase-resource-properties-multiple-ss.png?width=350)
+    ![Resource settings for Firebase](images/firebase-resource-properties-multiple-ss.png)
 
 ### Preparing Firebase configuration file
 
 Add the files **GoogleService-Info.plist** and **google-services.json** in a zip file and name the zip file **google-services.zip**. 
 
-![Configuration files in a zip archive](images/zipped-configs.png?width=500)
+![Configuration files in a zip archive](images/zipped-configs.png)
 
 ### Generating target directories for configuration files
 
 A Firebase Plugin requires that you supply configuration files in the app file resources. The mobile apps commonly have different identifiers in different environments, so you need to generate target directories for each environment.
 
-To get the target directory, concatenate the **app identifier** and **.fierbase**. Here are examples for three environments with different app identifiers.
+To get the target directory, concatenate the **app identifier** and **.firebase**. Here are examples for three environments with different app identifiers.
 
 | Environment | App identifier | Target directory |
 | - | - | - |

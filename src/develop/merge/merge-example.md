@@ -10,8 +10,8 @@ In this example you are trying to publish the module, but a window **Modified ve
 
 After analyzing the **Compare and Merge** window, you see that:
 
-* You both edited the preparation screen and the CSS on the "Homepage" screen. You need to resolve the conflicting changes.
-* The other developer added the screen "About". There are no conflicts to resolve there.
+* You both edited the CSS on the "ClientList" screen. You need to resolve the conflicting changes.
+* The other developer added the screen "Report". There are no conflicts to resolve there.
 
 These could be the steps to resolve the conflicts.
 

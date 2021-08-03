@@ -5,7 +5,7 @@ tags: support-application_development, article-page
 
 # Technical Preview - Emails in Mobile and Reactive Web Apps
 
-Create and send emails from Mobile and Reactive Web Apps.
+Create and send emails from Mobile and Reactive Web Apps. TODO: Improve the intro to link better with prereqs.
 
 ## Prerequisites
 
@@ -16,12 +16,12 @@ To use this feature, you must meet the following requirements for the [technical
 * Your Service Studio is up to date.
 * You have configured the SMTP server. See [Configure OutSystems to Send Emails](../../../extensibility-and-integration/configure-send-emails.md) for instructions.
 
-**Sending emails and using basic widgets**
+**Emails and basic widgets**
 
 * You're using Platform Server 11.12.0 or later.
 * You have activated the technical preview **Emails for Mobile and Reactive** in LifeTime in all environments.
 
-**Using email templates, Image with binary content, List, Table, If**,
+**Email templates, Image with binary content, List, Table, If**,
 
 * You're using Service Studio 11.12.0.
 * You're using Platform Server 11.13.0 or later.

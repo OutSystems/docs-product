@@ -21,7 +21,7 @@ Install [Camera Sample App](https://www.outsystems.com/forge/component-overview/
 * Select a picture from the gallery
 * Create a settings page
 
-![Camera Plugin sample app](images/camera-sample-app.png?width=330)
+![Camera Plugin sample app](images/camera-sample-app.png)
 
 ## Taking a picture
 
@@ -37,7 +37,7 @@ See the sections that follow for more information.
 
 You can start by defining a variable of the **Binary Data** data type to hold the image data (1). Use a Button (2) or other widget to run the action that takes a picture. Use an **Image** widget (3) to show the image after using the camera, by setting **Type** to **Binary Data** and **Image Content** to the variable you created.
 
-![UI setup for taking pictures](images/camera-ui-setup-ss.png?width=700)
+![UI setup for taking pictures](images/camera-ui-setup-ss.png)
 
 For more guidance on how to create an interface, see the UI accelerators that come with the Camera Plugin. In Service Studio, navigate to **Interface** > **UI FLows** > **Camera Plugin** > **Camera Plugin**, and drag these Blocks to your Screen:
 
@@ -52,7 +52,7 @@ To prevent errors, it's a good practice to first check if the plugin is availabl
 
 Check if taking pictures on the device works by seeing if the value of **TakePicture.Success** is **True** (3). If yes, handle the picture data in **TakePicture.ImageCaptured** by assigning it to a variable of the **Binary Data** data type (4).
 
-![Take picture logic flow](images/camera-flow-take-picture-ss.png?width=700)
+![Take picture logic flow](images/camera-flow-take-picture-ss.png)
 
 ## Opening a picture from gallery
 
@@ -60,7 +60,7 @@ Let the user choose a picture from the device gallery with the **ChooseGalleryPi
 
 The action **ChooseGalleryPicture** opens an image browser to let users select an image (1). [Check for errors](#handling-errors) by verifying **ChooseGalleryPicture.Success** is **True** (2). After the user selects the image, the binary data of the image is in the variable **ChooseGalleryPicture.ImageCaptured.** (3).
 
-![Open from gallery](images/camera-flow-choose-from-gallery.png?width=700)
+![Open from gallery](images/camera-flow-choose-from-gallery.png)
 
 ## Image quality and app responsiveness
 
@@ -87,7 +87,7 @@ Here is the list of actions you can use to handle the errors.
 
 You can use these actions with the **If** nodes to check for errors and control how the app works.
 
-![Handling errors in the camera plugin](images/camera-handling-errors.png?width=800)
+![Handling errors in the camera plugin](images/camera-handling-errors.png)
 
 ## Reference
 

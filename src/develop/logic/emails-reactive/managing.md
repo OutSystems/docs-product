@@ -118,6 +118,6 @@ To reduce the size of the email content, use a blank Theme or a dedicated email 
 
 You or your designers can create email templates and share them with other developers in the OutSystems environment. The templates ensure consistent look and feel of the emails, and speed up development.
 
-Install a [module for custom email templates]() from Forge and follow the instructions for [creating screen templates](../ui/../../ui/screen-templates-create/intro.md). The process and user experience for creating email templates is similar to creating screen templates. Due to intended use, email templates, just like emails, don't support logic or non-email themes.
+Follow the instructions for [creating screen templates](../ui/../../ui/screen-templates-create/intro.md). The process and user experience for creating email templates is similar to creating screen templates. Due to the intended use, email templates, just like emails, don't support logic or non-email themes.
 
 You can post questions about using email templates [with the **technical preview** tag](https://www.outsystems.com/forums/tag/6875/technical-preview/) in Forums, so the OutSystems developers and community can provide support.

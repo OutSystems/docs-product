@@ -54,7 +54,7 @@ You have just created the Directory version 0.2.1, that is exactly the same has 
 
 Some software factories have complex internal processes to deploy applications, making it difficult to integrate OutSystems in their deployment procedures.
 
-In such scenarios, another way to rollback to a previous version, is to create a Solution in the Service Center console **before deploying a new version**. Solutions allow you to aggregate several application modules (eSpaces and extensions) into a single deployable unit.
+In such scenarios, another way to rollback to a previous version, is to create a Solution in the Service Center console **before deploying a new version**. Solutions allow you to aggregate several application modules into a single deployable unit.
 
 To create the Solution, do the following:
 

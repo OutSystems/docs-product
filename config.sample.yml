@@ -1,5 +1,5 @@
 build:
-    title: OutSystems 11
+    title: OutSystems 11 Cross-platform Docs
     input-folder: src
     output-folder: build
     related-title: See Also   

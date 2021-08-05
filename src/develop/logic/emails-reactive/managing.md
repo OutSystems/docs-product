@@ -116,13 +116,7 @@ To reduce the size of the email content, use a blank Theme or a dedicated email 
 
 ## Email templates
 
-<div class="info" markdown="1">
-
-OutSystems is working on providing a dedicated module for email templates. To try out creating email templates in the technical preview, use the module for email templates from Forge.   
-
-</div>
-
-You or your designers can create email templates and share them with other developers in the OutSystems environment. The templates ensure consistent look and feel of the emails, and speed up development.
+You can create email templates and share them with other developers in the OutSystems environment. The templates ensure consistent look and feel of the emails, and speed up development.
 
 Follow the instructions for [creating screen templates](../ui/../../ui/screen-templates-create/intro.md). The process and user experience for creating email templates is similar to creating screen templates. Due to the intended use, email templates, just like emails, don't support logic or non-email themes.
 

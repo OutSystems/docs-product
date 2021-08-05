@@ -5,11 +5,7 @@ summary:  The Columns UI Pattern splits content into separate columns.
 
 # Columns
 
-You can use the Columns UI Pattern to split content into separate columns, improving the way information is displayed on-screen. <!--You can configure the behavior using the properties. They will define how columns will stack in different devices. This is ideal to improve the way information is displayed across  different devices. You can use this pattern to display a list of elements side by side, with a different number of items per row on different devices. -->
-
-<!-- The following is a preview of the different ways content can be split into columns:
-
-![](images/Column_columns.png)-->
+You can use the Columns UI Pattern to split content into separate columns, improving the way information is displayed on-screen.
 
 ## How to use the Columns UI Pattern
 

@@ -5,7 +5,7 @@ tags: support-application_development, article-page
 
 # Technical Preview - Emails in Mobile and Reactive Web Apps
 
-Create and send emails from Mobile and Reactive Web Apps. TODO: Improve the intro to link better with prereqs.
+Create and send emails from Mobile and Reactive Web Apps, as part of a technical preview. The technical preview consists of **Emails for Mobile and Reactive** and **Attachments in Mobile and Reactive emails**. See the prerequisites section to learn about product versions that support features you want to try out. 
 
 ## Prerequisites
 

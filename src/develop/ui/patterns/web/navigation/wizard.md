@@ -31,6 +31,18 @@ The following example demonstrates how you can create a four step Wizard with na
 
     ![](<images/wizard-23-ss.png>)
 
+    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+
+    a. Go to **Module > Manage dependencies**.
+
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+
+    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
+    d. Search for and select the element you want to add, and click **Apply**. 
+    
+    e. In Service Studio, in the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Wizard widget into the Main Content area of your application's screen.
 
     ![](<images/wizard-1-ss.png>)
@@ -158,7 +170,7 @@ After following all of the steps in each of the sections, you can publish the mo
 | Property |  Description |
 |---|---|
 | Orientation (Orientation Identifier): Optional  | <p>Set the wizard orientation. By default the Wizard displays horizontally.</p><p> Examples <ul><li>_Entities.Orientation.Horizontal_ - The wizard displays horizontally.</li><li>_Entities.Orientation.Vertical_ - The wizard displays vertically.</li></ul></p>|
-| ExtendedClass (Text): Optional  | <p>Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_''myclass''_ - adds the _myclass_ style to the Wizard UI styles being applied</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional  | <p>Adds custom style classes to the Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_''myclass''_ - adds the _myclass_ style to the UI styles being applied</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
 
 ### Wizard Item
 
@@ -166,4 +178,4 @@ After following all of the steps in each of the sections, you can publish the mo
 |---|---|
 | Step (Step Identifier): Mandatory | <p>Set the status of the Wizard Item relative to the current step of the Wizard. You can customize an expression to set the status of the Wizard Item or you can use the predefined values Active, Next, and Past. </p><p>Examples <ul><li>_Extended.Step.Active_ - Sets the Wizard Item to active, that is, the current step the user is on.</li><li>_Extended.Step.Next_ - Sets the Wizard Item to incomplete, that is, a step that is yet to be completed by the user.</li><li>_Extended.Step.Past_ - Sets the step to inactive, that is, a step that has already been completed by the user.</li></ul></p>| 
 | UseTopLabel (Boolean): Optional  | If True, label is placed above the icon. If False, label is placed below the icon. The text describing the step is either placed above or below the step icon. | 
-| ExtendedClass (Text): Optional | <p>Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_''myclass''_ - Adds the myclass style to the Wizard UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied.</li></ul></p> | 
+| ExtendedClass (Text): Optional | <p>Adds custom style classes to the Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_''myclass''_ - Adds the myclass style to the UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). | 

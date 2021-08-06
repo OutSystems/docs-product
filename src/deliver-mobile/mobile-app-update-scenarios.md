@@ -70,3 +70,7 @@ By design, the platform ignores changes in the external configuration files of n
 After the first mobile app generation, every time you click **1-Click Publish**, OutSystems generates a new app package in the situations listed above. You can then download those app packages via Service Studio, Service Center, and LifeTime. This guarantees that the latest app package available to download from the environment is synchronized with the development of the app.
 
 When installing a new version of an Android app already installed on the device and generated using the build type **Debug**, uninstall the previous version from the device before installing the new one. This guarantees the new features work correctly.
+
+## Cache interference
+
+If you are using cache in your on-premises infrastructure, make sure to clear it in the network components whenever the application is published, or the resources being served to the mobile application will be the ones before the update.

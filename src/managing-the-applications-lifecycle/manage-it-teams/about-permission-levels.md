@@ -31,7 +31,7 @@ Each role is defined by a set of permissions that determine which operations the
 :   Can be turned on/off for a specific environment.
 
 **Infrastructure-wide permissions**
-:   Control who can manage IT users, teams, and roles across the infrastructure. For self-managed infrastructures, allow managing the environments and its configurations.
+:   Control who can manage IT users, teams, and roles across the infrastructure.
 
 ![](images/lt-about-permission-levels-5.png?width=800)
 
@@ -253,29 +253,11 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 
 <table markdown="1">
 <tr>
-<th style="text-align: left" colspan="2">Manage Users and Roles (applies only to OutSystems Cloud)</th>
+<th style="text-align: left" colspan="2">Manage Users and Roles</th>
 </tr>
 <tr>
 <td>Assigned as **Default Role**</td>
 <td>The user can add, edit and remove IT users, roles and teams. The user can also turn on/off features in Technical Preview. Setting this permission ON also sets ON the permission "Manage Teams and Application Roles"."</td>
-</tr>
-<tr>
-<td>Assigned for a **Team**</td>
-<td>Not applicable.</td>
-</tr>
-<tr>
-<td>Assigned for an **Application**</td>
-<td>Not applicable.</td>
-</tr>
-</table>
-
-<table markdown="1">
-<tr>
-<th style="text-align: left" colspan="2">Manage Infrastructure and Users (applies only to self-managed infrastructures)</th>
-</tr>
-<tr>
-<td>Assigned as **Default Role**</td>
-<td>The user can add, edit, remove and switch infrastructure environments, as well as turn on/off features in Technical Preview. The user can also add, edit and remove IT users, roles and teams. Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".</td>
 </tr>
 <tr>
 <td>Assigned for a **Team**</td>

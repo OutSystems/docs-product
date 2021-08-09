@@ -5,11 +5,7 @@ summary:  The Columns UI Pattern splits content into separate columns.
 
 # Columns
 
-You can use the Columns UI Pattern to split content into separate columns, improving the way information is displayed on-screen. <!--You can configure the behavior using the properties. They will define how columns will stack in different devices. This is ideal to improve the way information is displayed across  different devices. You can use this pattern to display a list of elements side by side, with a different number of items per row on different devices. -->
-
-<!-- The following is a preview of the different ways content can be split into columns:
-
-![](images/Column_columns.png)-->
+You can use the Columns UI Pattern to split content into separate columns, improving the way information is displayed on-screen.
 
 ## How to use the Columns UI Pattern
 
@@ -18,6 +14,18 @@ You can use the Columns UI Pattern to split content into separate columns, impro
     The various Columns widgets are displayed. 
 
     ![](images/columnsmob-image-1.png)
+
+    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+
+    a. Go to **Module > Manage dependencies**.
+
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+
+    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
+    d. Search for and select the element you want to add, and click **Apply**. 
+    
+    e. In Service Studio, in the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. The following example uses the Columns 2 widget.
 
@@ -40,7 +48,7 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 GutterSize (GutterSizeIdentifier): Optional | Defines the space between columns.<br/><br/>Examples<br/><br/><ul><li>_Empty_ - Leaves a space of 16px between columns. This is the default (Entities.GutterSize.Base).</li><li>_Entities.GutterSize.None_ - No space between columns.</li></ul> |
 TabletBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on tablets. The predefined options for the tablet behavior are:<br/><br/><ul><li>All</li><li>First</li><li>Last</li><li>Middle</li><li>None</li></ul>See below for an example of how each of the options look. |
 PhoneBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on phones. The predefined options for the phone behavior are:<br/><br/><ul><li>All</li><li>First</li><li>Last</li><li>Middle</li><li>None</li></ul>See below for an example of how each of the options look. |
-ExtendedClass (Text): Optional | Add custom style classes to the Columns UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Columns UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ _myclass2_ styles to the Columns UI styles being applied.</li></ul> |
+ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
 
 **Entities.ColumnBreak.BreakNone (default)**
 

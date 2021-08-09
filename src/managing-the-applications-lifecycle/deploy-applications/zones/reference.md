@@ -20,7 +20,7 @@ Name
 Description
 :   The purpose of the deployment zone. You can use this field to store any relevant information to better understand how the zone is used and what kind of applications should be added to it.
 
-Is Default for new eSpaces
+Is Default for new modules
 :   Boolean parameter that, when active, states that the current deployment zone is the [default deployment zone](<intro.md#default-deployment-zone>). You can set a deployment zone as the default one by clicking "Set as Default".
 
 Deployment Zone Address

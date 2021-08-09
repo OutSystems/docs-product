@@ -240,15 +240,15 @@ Impact
 How to fix
 :   Avoid using data from Preparation in Screen Actions. For example, instead of using the TableRecords record data in a Screen Action, send the Record's identifier as an Input Parameter of the Screen Action, only fetching the data from the database when needed. If you need the full list of records, refresh the query. It is better to rerun the query server-side than to send the data back and forth through the ViewState.
 
-### Large Local Variable in ViewState (Traditional Web apps only)
+### Large Input Parameter or Local Variable in ViewState (Traditional Web apps only)
 
-A large screen Local Variable is being used in a Screen Action.
+A large screen or block Input Parameter or Local Variable is being used in a Screen Action.
 
 Impact
-:   When a screen's Local Variable is used in a Screen Action, the Local Variable data is saved in the ViewState of that Screen. Local Variables with data types Compound or Collection are considered large. Including additional data to the ViewState increases response size and loading time in the browser since it's sent to the user at every page request, and is also sent back at every POST, postback, or AJAX request.
+:   When a screen's or block's Input Parameter or Local Variable is used in a Screen Action, the corresponding data is saved in the ViewState of that Screen. To be considered large, the Input Parameters or Local Variables must have data types of type Compound or Collection. Additional data to the ViewState increases response size and loading time in the browser since it's sent to the user at every page request and is also sent back at every POST, postback, or AJAX request.
 
 How to fix
-:   Avoid using screen local variables in screen actions.
+:   Avoid using screen or web block input parameters or local variables with large data in screen actions.
 
 ### Long Server Requests Timeout
 

@@ -255,6 +255,10 @@
         - topics:
             - href: develop/logic/emails-reactive/managing.md
             - href: develop/logic/emails-reactive/sending.md
+            - href: develop/logic/emails-reactive/widgets.md
+            - href: develop/logic/emails-reactive/attachments.md
+        
+
         - href: develop/logic/exceptions/intro.md
         - topics:
             - href: develop/logic/exceptions/analyze-logs.md

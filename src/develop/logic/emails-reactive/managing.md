@@ -3,7 +3,7 @@ summary: Use Emails under UI Flows to design and add available widgets. Add data
 tags: support-application_development,
 ---
 
-# Managing Emails
+# Managing emails
 
 In Service Studio, Email is a UI element that lets you design and manage the content of email messages. Like Screens, you can find and create Emails in the UI Flows. However, unlike Screens that usually use the OutSystems UI, Emails require lightweight styles to follow the industry best standards for email sizes.
 

@@ -240,9 +240,7 @@ Running an OutSystems app on a browser continues to be supported for 6 months af
 
 ### Mobile App packages
 
-The minimum requirements depend on the [Mobile Apps Build Service (MABS) version](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) used to generate your Mobile Apps.
-
-Note: Only official Android and iOS ROMs are supported.
+See [Mobile Apps Build Service (MABS)](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for the latest supported Android and iOS platform versions and the minimum requirements to generate your Mobile Apps.
 
 ### Traditional Web Apps
 

@@ -18,6 +18,6 @@ If you want to download another extension version, click **Older versions**, sel
 
 To download an extension from the server, you must have, at least, a "Download" security level for that extension.
 
-![](images/note.gif) To check your permissions, you must login to the Service Center. In the **My Settings** screen, available by clicking on your user name in the top right corner of the Service Center interface, you can check your effective permissions in the **Security Settings**, **eSpaces Granted**, **Extensions Granted**, and **Solutions Granted** areas. If necessary, contact the Service Center administrator and ask to be granted the suitable permissions.
+![](images/note.gif) To check your permissions, you must login to the Service Center. In the **My Settings** screen, available by clicking on your user name in the top right corner of the Service Center interface, you can check your effective permissions in the **Security Settings**, **Applications Granted**, **Modules Granted**, **Extensions Granted**, and **Solutions Granted** areas. If necessary, contact the Service Center administrator and ask to be granted the suitable permissions.
 
 ![](images/tip.gif) You can also download an extension version in Service Center, in **Factory** > **Extensions** > **(extension detail)** screen.

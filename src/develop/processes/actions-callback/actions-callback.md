@@ -5,7 +5,7 @@ When designing the process flow of your process, you can add business rules to v
 
 ## Add an Process Callback Action
 
-1. In the **eSpace Tree**, under the **Process** layer, right-click on the **Process** element, select **"Add Callback Action"**, and pick one of the available `On Process ...` actions.
+1. In the **module tree**, under **Processes**, right-click on the **Process** element, select **"Add Callback Action"**, and pick one of the available `On Process ...` actions.
 
 1. Design the behavior of the action.
 

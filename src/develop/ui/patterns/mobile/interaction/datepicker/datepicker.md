@@ -13,6 +13,18 @@ This example binds the Date Picker widget to an input. When the user selects a d
 
     ![](<images/datepicker-image-2.png>)
 
+    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+
+    a. Go to **Module > Manage dependencies**.
+
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+
+    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
+    d. Search for and select the element you want to add, and click **Apply**. 
+    
+    e. In Service Studio, in the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Date Picker widget into the Main Content area of your application's screen.
 
     ![](<images/datepicker-image-1.png>)

@@ -4,12 +4,12 @@ tags: support-application_development; support-webapps
 
 # Use Process Extended Actions
 
-To manage the life cycle of your [processes](../process.md) or [process activities](../process-flow/process-flow-toolbox.md) of your eSpace you're provided with **Process Extended Actions** and **Process Activities Extended Actions**. You can find them under your processes and process activities in the Processes Layer of the eSpace Tree.
+To manage the life cycle of your [processes](../process.md) or [process activities](../process-flow/process-flow-toolbox.md) of your module you're provided with **Process Extended Actions** and **Process Activities Extended Actions**. You can find them under your processes and process activities in the Processes layer of the module tree.
 
 
 ## Execute a Process Extended Action or Process Activity Extended Action
 
-In the **Processes Layer** of the **eSpace Tree**, drag the **Extended action** of the process or process activity and drop it on the action flow.
+In the **Processes** layer of the **module tree**, drag the **Extended action** of the process or process activity and drop it on the action flow.
 
 An extended action can have input parameters and output parameters.
 

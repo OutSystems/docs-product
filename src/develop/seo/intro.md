@@ -44,11 +44,11 @@ See [Managing Site Rules](#managing-site-rules) for instructions.
 
 ## URL prioritization
 
-Prioritization determines the order in which results display. The system uses the following priorities:
+Prioritization determines the order in which pages load in the browser. The platform uses the following priorities:
 
 1. Static URLs have priority over dynamic URLs.
 
-2. The priority for Dynamic URLs is based on the number of parameters analyzed. Rules with fewer parameters have priority over rules with more parameters.
+2. The priority for dynamic URLs is based on the number of parameters. Rules with fewer parameters have priority over rules with more parameters.
 
 ## Custom Screen URLs
 

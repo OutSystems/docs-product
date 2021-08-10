@@ -3,7 +3,7 @@ summary: Use Emails under UI Flows to design and add available widgets. Add data
 tags: support-application_development,
 ---
 
-# Managing Emails
+# Managing emails
 
 In Service Studio, Email is a UI element that lets you design and manage the content of email messages. Like Screens, you can find and create Emails in the UI Flows. However, unlike Screens that usually use the OutSystems UI, Emails require lightweight styles to follow the industry best standards for email sizes.
 
@@ -17,29 +17,26 @@ This content is about a technical preview. See [Technical Preview - Emails in Mo
 
 To create a new Email in Service Studio, follow these steps:
  
-1. Ensure you have a **UI Flow with a blank Theme** in your module. See [Creating UI Flow without styles](../../ui/navigation/ui-flow.md#creating-ui-flow-without-styles) for instructions.
+1. Go to **Interface** > **UI Flows** and do one of the following:
 
-    ![UI Flow with the Theme property](images/ui-flow-blank-theme-ss.png?width=310)
-
-    <div class="info" markdown="1">
-
-    The name of UI Flow for emails in this document is **Emails**.  
-
-    </div>
-
-    <div class="warning" markdown="1">
-
-    If you try adding an Email to a large Theme, Service Studio warns you about possible rendering issues in email clients.
-
-    Create Emails based on a Theme without styles or a custom minimal Theme. A minimal CSS ensures low size of emails and discourages email readers from clipping the content. For example, Gmail shows **[Message clipped] View entire message** for all emails larger than 102KB.
-
-    </div>
-
-1. Right-click your **Emails** UI Flow and select **Add Email**. Service Studio adds a new Email element under the UI Flow. 
+    * In you're adding the first email in the module, right-click any UI Flow and select **Add Email**.
+    * If you already have an email in the module, right-click the **Emails** UI Flow and select **Add Email**.
 
     ![UI Flow and the new Email menu](images/add-email-ui-flow-ss.png?width=410)
 
-1. Select the new Email under the UI Flow, and enter the following details:
+    <div class="info" markdown="1">
+
+    Emails require a light theme. When you add your first email to the module, Service Stdio creates Emails UI Flow and a light theme, and then adds your email.
+
+    </div>
+
+1. In the **New Email** window, select **Empty** and click **Create Email**.
+
+    ![Email templates in new email window](images/new-email-window-ss.png?width=700)
+
+    If you see a dialog **Add Email to flow with large theme** instead of the **New Email** window, verify that your Service Studio and Platform Server meet the latest [technical preview requirements](intro.md#prerequisites). 
+
+1. Select the Email under the UI Flow, and enter the following details:
 
     * A name in the **Name** field
     * `"No subject"` as a temporary subject in the **Subject** field
@@ -48,9 +45,9 @@ To create a new Email in Service Studio, follow these steps:
 
 ## Adding content to Email
 
-In the technical preview you can use text, images, and links in Emails. To add content to your Emails, follow these steps in Service Studio:
+To add content to your emails, follow these steps in Service Studio:
 
-1. Go to **Interface** > **UI Flows** > **your Emails UI Flow** and double-click the Email you want to edit. The Email opens for editing and the widget list shows the widgets that Emails currently support.
+1. Go to **Interface** > **UI Flows** > **your Emails UI Flow** and double-click the Email you want to edit. The Email opens for editing. The widget list shows the widgets that Emails currently support.
     
     ![Email for editing](images/edit-email-open-ss.png?width=810)
 
@@ -66,7 +63,7 @@ In the technical preview you can use text, images, and links in Emails. To add c
 
     <div class="info" markdown="1">
 
-    To learn more about what elements you can use in Emails, see [Widgets available in Emails](#widgets-available-in-emails). 
+    To learn more about what elements you can use in Emails, see [Widgets available in Emails](widgets.md#widgets-available-in-emails). 
 
     </div>
 
@@ -74,7 +71,7 @@ In the technical preview you can use text, images, and links in Emails. To add c
 
 ## Handling inputs in Emails
 
-Customize the content of your Emails by adding custom information to it. Emails support compound data types and can use the data from the client scope of Email.
+Customize the content of your emails by adding information to the corresponding Email. Emails support compound data types and can use the data from the client scope of Email.
 
 To add an Input to your Email and show the value in the email body, follow these steps:
 
@@ -82,7 +79,7 @@ To add an Input to your Email and show the value in the email body, follow these
 
 1. Right-click the Email in the **Interface** tab and select **Add Input Parameter** from the menu. Service Studio adds an Input Parameter.
 
-    ![Input parameter for Email](images/adding-input-param-emai-ss.png?width=410)
+    ![Input parameter for Email](images/adding-input-param-email-ss.png?width=380)
 
 1. Set the following Input Parameter properties:
 
@@ -90,7 +87,7 @@ To add an Input to your Email and show the value in the email body, follow these
     * **Data Type** - select **Text**
     * **Is Mandatory** - Select **Yes** to make the **Handle** a required value in the Email
 
-    ![Input parameters for Email](images/inputs-for-emails-ss.png?width=280)
+    ![Input parameters for Email](images/inputs-for-emails-ss.png?width=350)
 
 1. Double-click the Email in the **Interface** tab to open it for editing.
 
@@ -98,7 +95,7 @@ To add an Input to your Email and show the value in the email body, follow these
 
 1. Enter `"Hello, " + Handle + "!"` and click **Done**.
 
-    ![Email preview](images/expression-preview-ss.png?width=500)
+    ![Email preview](images/expression-preview-ss.png?width=700)
 
 
 When you open this email in the email client, the expression displays "Hello, John!" when the value of **Handle** is `"John"`.
@@ -110,27 +107,17 @@ When you open this email in the email client, the expression displays "Hello, Jo
 
 </div>
 
-## Widgets available in Emails
-
-You can use the following widgets in Emails:
-
-| Widget      | Description                                         | Notes                                 |
-| ----------- | --------------------------------------------------- | ------------------------------------- |
-| Text        | Adds plain text.                                    |                                       |
-| Container   | Adds the HTML div tag.                              |                                       |
-| Expressions | Evaluates expressions and displays variable values. |                                       |
-| Images      | Embeds an image.                                    | Local images and external links only. |
-| Link        | Adds navigational elements.                         |                                       |
-
-
-<div class="info" markdown="1">
-
-You can use the available widgets to emulate new widgets. For example, use the Container widget and style it to look like a Button widget. 
-
-</div>
-
 ## Clipped content warning { #clipped-content-warning }
 
 If the content of an email is too big, some email readers clip the content. For example, Gmail shows **[Message clipped] View entire message** for all emails larger than 102KB. This can happen if you're generating content in your emails with a Theme that has a lot of CSS not designed for emails.
 
-To reduce the size of the email content, use a UI Flow with a blank Theme. See [Creating UI Flow without styles](../../ui/navigation/ui-flow.md#creating-ui-flow-without-styles) for instructions.
+To reduce the size of the email content, use a blank Theme or a dedicated email Theme. When you add email based on one of the email templates, Service Studio applies an email theme automatically for you. You can also [create UI Flow without styles](../../ui/navigation/ui-flow.md#creating-ui-flow-without-styles) and then add your emails under this UI Flow. 
+
+
+## Email templates
+
+You can create email templates and share them with other developers in the OutSystems environment. The templates ensure consistent look and feel of the emails, and speed up development.
+
+Follow the instructions for [creating screen templates](../ui/../../ui/screen-templates-create/intro.md). The process and user experience for creating email templates is similar to creating screen templates. Due to the intended use, email templates, just like emails, don't support logic or non-email themes.
+
+You can post questions about using email templates [with the **technical preview** tag](https://www.outsystems.com/forums/tag/6875/technical-preview/) in Forums, so the OutSystems developers and community can provide support.

@@ -113,7 +113,7 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 
 You need an internet connection to install Service Studio with a minimum speed of 1 Mbps for both downloading and uploading. You need an internet connection even when installing Service Studio on a virtual machine.
 
-### Integration Builder
+### Integration Studio
 
 Installation requirements for these tools are as follows.
 
@@ -169,5 +169,3 @@ Running an OutSystems app on a browser continues to be supported for 6 months af
 ### Mobile App packages
 
 The minimum requirements depend on the [Mobile Apps Build Service (MABS) version](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) used to generate your Mobile Apps.
-
-**Note:** Only official Android and iOS ROMs are supported.

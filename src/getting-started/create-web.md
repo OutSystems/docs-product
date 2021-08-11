@@ -23,11 +23,11 @@ Let's create a new contact information management app. An application contains o
 
 In Service Studio, click **New Application**, choose **Traditional Web**, and name it `Contact Portal`.
 
-![Create a Traditional Web App](images/create-web-01.png?width=600)
+![Create a Traditional Web App](images/create-web-01.png)
 
 In the new **Contact Portal** application, create a **Traditional Web** module, named `ContactPortal`.
 
-![Create a Module](images/create-web-02.png?width=900)
+![Create a Module](images/create-web-02.png)
 
 Click **Create Module** to create the module and open it for editing.
 
@@ -44,7 +44,7 @@ To do this, we are going to use an Excel file that already contains the followin
 
 In the `ContactPortal` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel...**, and select the sample file `Contacts.xlsx` (available [here](resources/Contacts.xlsx)).
 
-![Create a Database Table from an Excel File](images/create-web-03.png?width=900)
+![Create a Database Table from an Excel File](images/create-web-03.png)
 
 When importing an Excel file, OutSystems creates a database table (called an Entity in OutSystems) with the necessary columns (called Attributes in OutSystems) to store the data in the database.
 
@@ -56,11 +56,11 @@ Now we can create a screen that lists all of the contacts.
 
 Open the **Interface** tab on the top right-hand corner, and double-click **MainFlow** under **UI Flows**. Then, drag and drop the entity **Contact** from the **Data** tab to an empty area in the Main Editor window.
 
-![Create a Screen to List Contacts](images/create-web-04.png?width=900)
+![Create a Screen to List Contacts](images/create-web-04.png)
 
 This creates a screen that includes a list that displays 50 contacts at a time, along with pagination and search functionality.
 
-![Contacts Screen](images/create-web-05.png?width=900)
+![Contacts Screen](images/create-web-05.png)
 
 ## Create a screen to create and edit contacts
 
@@ -68,11 +68,11 @@ Creating a screen to create and edit records is as fast as creating a list scree
 
 With the **MainFlow** open, drag and drop the entity Contact from the **Data** tab to an empty area in the Main Editor window.
 
-![Create a Screen to Create and Edit Contacts](images/create-web-06.png?width=900)
+![Create a Screen to Create and Edit Contacts](images/create-web-06.png)
 
 This creates a new screen with a form to create new records or edit existing ones. OutSystems also adds the server-side logic to create and edit records automatically.
 
-![ContactDetail Screen](images/create-web-07.png?width=900)
+![ContactDetail Screen](images/create-web-07.png)
 
 ## Allow deleting contacts
 
@@ -80,7 +80,7 @@ To implement an application to manage contacts we are just missing the delete fu
 
 Double-click the screen **ContactDetail** to open it. Drag and drop a **Button** widget from the toolbox to the right of the Cancel button of the screen, right-click the new button and choose **Link to New 'DeleteContact' Screen Action**.
 
-![](images/create-web-09.png?width=900)
+![](images/create-web-09.png)
 
 OutSystems adds server-side logic to delete the contact record and associates the button to that logic.
 
@@ -88,8 +88,8 @@ OutSystems adds server-side logic to delete the contact record and associates th
 
 Now we just need to make the application go live. Click the ![1-Click Publish](../shared/icons-service-studio/publish.png) **1-Click Publish** button to publish the application to your environment.
 
-![Publish Your Application](images/create-web-10.png?width=900)
+![Publish Your Application](images/create-web-10.png)
 
 When the application is deployed, click the ![Open in Browser](../shared/icons-service-studio/open-browser.png) **Open in Browser** button to test your application in a browser.
 
-![Open Your Application](images/create-web-11.png?width=900)
+![Open Your Application](images/create-web-11.png)

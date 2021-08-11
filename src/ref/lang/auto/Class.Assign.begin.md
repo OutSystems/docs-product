@@ -10,7 +10,7 @@ Similarly, to assign a value or variable to a **Value** field, you can:
 
 * Select the name of a variable in the drop-down list.
 * Enter the value.
-* Double-click the field, click the formula icon (![](../../../shared/icons-service-studio/expression.gif)) or select **(Expression Editor...)** in the drop-down to open the Expression Editor.
+* Double-click the field, click the formula icon (![](../../../shared/icons-service-studio/expression.png)) or select **(Expression Editor...)** in the drop-down to open the Expression Editor.
 
 When assigning values for Record data type, Service Studio can offer to assign the values of attributes automatically if you set an initial assignment of the attributes which identifies the record. If automatic assignment is available, you will see **(Auto Assign &lt;Record&gt;.&lt;Attribute&gt;)** in the drop-down list.
 

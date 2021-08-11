@@ -105,3 +105,28 @@ When the app runtime passes an **empty string** as a value for a **required para
 
 As a fix, try configuring the Screen without parameters on the path.
 
+### Users can't access page when Screen has External URL in SecurityException
+
+If you have:
+
+* An active site rule for a domain
+* An **External URL** node in the **SecurityException** logic
+
+The following happens and prevents users from accessing a login page or a home page:
+
+* A blank page loads in the browser
+* Service Center logs show an error with the message "Content Security Policy blocked `<url>`"
+
+To fix the issue, use a **JavaScript** note instead of the **External URL**, and add the following code:
+
+
+```javascript
+var url = window.location.origin + $parameters.url;
+console.log(url);
+setTimeout(function() {
+    window.location.href = url
+}, 0);
+```
+Here is a screenshot of the fix:
+
+![JS workaround for redirect](images/workaround-js-redirect-url-ss.png?width=900)

@@ -45,5 +45,5 @@ Once you receive the information, enter it into Integration Builder, and select 
 
 ### Use the integration in Service Studio
 
-Check [how to use the integration in Service Studio](../use.md#use).
+Check out [how to use the integration in Service Studio](../use.md#use).
 

@@ -29,7 +29,7 @@ The Alert pattern further supports changing the ARIA role with the **SetAccessib
 
 When toggling the visibility of the Alert, you must update the **aria-hidden** attribute to guarantee the alert complies with the Accessibility guidelines. You can do this by using the **SetAriaHidden** client action.
 
-![Setting the role of the Alert pattern](images/set-role-alert-pattern-ss.png?width=350)
+![Setting the role of the Alert pattern](images/set-role-alert-pattern-ss.png)
 
 ## MasterDetail pattern
 

@@ -19,13 +19,13 @@ Google also provides a video with a [list of 10 tips](https://www.youtube.com/wa
 
 ## Publishing Android Applications to Google Play
 
-### Generate the Android App Package (APK)
+### Generate an Android build
 
 You can generate the release (final) version of your mobile app in Service Studio or Service Center.
 
 #### Service Studio
 
-To generate the Android App Package in the Service Studio, perform the following steps:
+To generate an Android build in the Service Studio, perform the following steps:
 
 1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the **Distribute** tab.
 
@@ -47,7 +47,7 @@ To generate the Android App Package in the Service Studio, perform the following
 
 #### Service Center
 
- To generate the Android App Package in the Service Center, perform the following steps:
+ To Generate an Android build in the Service Center, perform the following steps:
 
 1. Access Service Center console of the environment (`https://<environmentdomain>/ServiceCenter`).
 
@@ -75,13 +75,13 @@ To generate the Android App Package in the Service Studio, perform the following
 
     ![Service Center Factory Application Generate](images/sc-select-mabs-version.png)
 
-1. After the app is generated, click the **download** icon near the version information to download the Android app package (APK).
+1. After the app is generated, click the **download** icon near the version information to download the Android build.
 
-    ![Service Center Factory Application Download APK](images/outsystems-service-center-factory-native-platform-download-android.png)
+    ![Service Center Factory Application Download](images/outsystems-service-center-factory-native-platform-download-android.png)
 
 ## Distribute the Mobile App through the Google Play store
 
-After the generation has been completed, scan the QR code or copy the created installation link using your device to download the Android app package (APK).
+After the generation has been completed, scan the QR code or copy the created installation link using your device to download the Android build.
 
 You need now to access the [Google Play Console](https://play.google.com/apps/publish) to upload your mobile app.
 
@@ -104,7 +104,7 @@ You have to provide the following information:
     * your contacts;
     * The URL of your privacy policy, if any;
 
-At the final steps, you need to release the app to Beta Testing or Production, according to your choice, confirm the version and APK, and start the rollout.
+At the final steps, you need to release the app to Beta Testing or Production, according to your choice, confirm the version and the build (APK/AAB), and start the rollout.
 
 After completing this process your application is published and available for download at the Google Play Store.
 

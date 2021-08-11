@@ -69,7 +69,7 @@ Suppose you have an OutSystems application named **ACME Services** that you want
 
     The screen contains a test structure that's added to the UI Flow.
 
-12. Start implementing the code for your test. See [Your Complete Guide to BDD Testing in OutSystems] for more information on creating specific tests.
+12. Start implementing the code for your test. See [Your Complete Guide to BDD Testing in OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) for more information on creating specific tests.
 
 ## Learn more about component testing
 

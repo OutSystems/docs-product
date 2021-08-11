@@ -14,9 +14,11 @@ Tables created as part of Dynamics 365 customer engagement apps, like Product or
 
 ## Prerequisites
 
-* Make sure you meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).
+Verify the following:
+
+* You meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).
 * The Microsoft Dynamics 365 integration deployed in your OutSystems development environment can make HTTPS outbound requests (port 443) to your Microsoft Dynamics 365 service.
-* You have a Microsoft account with Microsoft Dynamics 365 and Azure Administrator privileges. These admin privileges are required to access your Azure Active Directory tenant and to create security roles and application users.
+* You have a Microsoft account with Microsoft Dynamics 365 and Azure Administrator privileges. These admin privileges are required to access your Azure AD tenant and to create security roles and application users.
 
 ## Authorizing Integration Builder in your Microsoft account
 
@@ -30,7 +32,7 @@ Additionally, when you're creating a connection, Integration Manager connects to
 
 ### About environment instances
 
-If you have several Microsoft Dynamics 365 environment instances in your Microsoft account, Integration Builder will ask you which environment you want to use when connecting to Microsoft Dynamics 365.
+If you have several Microsoft Dynamics 365 environment instances in your Microsoft account, Integration Builder asks you which environment you want to use when connecting to Microsoft Dynamics 365.
 
 According to Microsoft, an environment instance in Microsoft Dynamics 365 is "a space to store, manage, and share your organization's business data, apps, and flows". When you're creating a Microsoft Dynamics 365 integration, Integration Builder registers an Azure application in the environment you choose.
 
@@ -42,11 +44,11 @@ Request authentication is handled transparently when you call Server Actions exp
 
 ### If you have administrator permissions in Azure Active Directory
 
-Integration Builder registers an app with Azure Active Directory at the request of Integration Manager. When you create a connection, Integration Manager requests Integration Builder to create and associate a certificate with this app, saving the certificate details in an encrypted way as part of the connection information.
+Integration Builder registers an app with Azure AD at the request of Integration Manager. When you create a connection, Integration Manager requests Integration Builder to create and associate a certificate with this app, saving the certificate details in an encrypted way as part of the connection information.
 
 ### If you don't have administrator permissions in Azure Active Directory
 
-Creating a connection without administrator credentials requires parameters from the Azure Active Directory platform. The Azure Active Directory account administrator needs to create a new Azure app to obtain these parameters.
+Creating a connection without administrator credentials requires parameters from the Azure AD platform. The Azure AD account administrator needs to create a new Azure app to obtain these parameters.
 
 Integration Builder can send an email to the administrator requesting the information you need. The email includes a unique authorization certificate, and [instructions on how the administrator proceeds](how-register-ib-ms-sp-dv-d360.md).
 
@@ -60,4 +62,4 @@ This authorization is only valid for a specific user. If another user wants to e
 
 ### Use the integration in Service Studio
 
-Check [how to use the integration in Service Studio](../use.md#use).
+For more information, see [how to use the integration in Service Studio](../use.md#use).

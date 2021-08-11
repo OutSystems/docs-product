@@ -94,6 +94,17 @@ Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
 experiencebuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
+### Integration Builder
+
+[Integration Builder](https://integrationbuilder.outsystems.com/) must be able to connect to the environments where you deploy integrations. Ensure that the front ends of the environments accept inbound connections from the **Source** address. For example, for a standard infrastructure, Integration Builder must be able to connect to the development, quality assurance, and production environments but doesn't need to connect to the LifeTime.
+
+Alternatively, ensure that the front ends of the environments used with Integration Builder accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+IntegrationBuilder.outsystems.com|Environment Front-End|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+Environment Front-End|IntegrationBuilder.outsystems.com|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+
 ### Workflow Builder
 
 [Workflow Builder](http://workflowbuilder.outsystems.com/) must be able to connect to the environment where you want Workflow Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
@@ -110,17 +121,11 @@ To use [IT user governance based on LifeTime teams](https://success.outsystems.c
 
 ### LifeTime
 
-To use LifeTime to manage your application lifecycle, you need to have bidirectional communication between the front-end of the LifeTime environment, and all other servers (front-ends and deployment controllers) of your OutSystems Infrastructure. When the environments have load balancers, you can establish the connectivity between LifeTime and the load balancers of the environments it manages.
-
-In case HTTPS isn't supported, LifeTime communicates with the environments it manages by HTTP.
-
-Applications must be deployed as follows:
+You need to have bidirectional secure communication between the front-end of the LifeTime environment, and all other servers (front-ends and deployment controllers) of your OutSystems Infrastructure. When the environments have load balancers, you can establish the connectivity between LifeTime and the load balancers of the environments it manages.
 
 |Source|Destination|Port|Protocol|
 |------|-----------|----|--------|
-|LifeTime Front-End|Environment Front-End|80|TCP|
 |LifeTime Front-End|Environment Front-End|443|TCP|
-|Environment Front-End|LifeTime Front-End|80|TCP|
 |Environment Front-End|LifeTime Front-End|443|TCP|
 
 ### Architecture Dashboard

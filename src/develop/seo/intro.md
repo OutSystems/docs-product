@@ -5,32 +5,33 @@ tags: article-page,
 
 # Technical Preview - SEO in Reactive Web Apps
 
-Use **SEO-friendly URLs for Reactive Web Apps** to create the SEO-friendly versions of the uniform resource locators (URLs). Service Center lets you manage Site Rules and Redirects. You can edit custom URLs in Service Studio, in the properties of each Screen.
+As a best practice use **SEO-friendly URLs for Reactive Web Apps**. Friendly URLs provide both humans and machines an indication of the search-engine results. With Service Center you can create the SEO-friendly versions of the URLs, manage Site Rules and Redirects. Edit custom URLs in Service Studio, in the properties of each Screen.
 
 ## Prerequisites
 
-**SEO-friendly URLs for Reactive Web Apps** is a technical preview feature. To use it you must meet the following requirements:
+**SEO-friendly URLs for Reactive Web Apps** is a technical preview feature and requires the following:
 
-* Platform Server 11.12.0 or later 
+* Platform Server 11.12.0 or later
 * Service Studio 11.11.0 or later
-* [Technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **SEO-friendly URLs for Reactive Web Apps** is active in LifeTime for all environments.
+* [Technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **SEO-friendly URLs for Reactive Web Apps** is active in LifeTime for all environments
 * OutSystems enterprise cloud offer or a properly configured on-premises installation
-* On-premises installations must have [ISAPI Filters](<https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Customize_or_redirect_the_application_URL#Installing_ISAPI_Filters_and_Logging>) active
+  
+<div class="info" markdown="1">
 
-<div class="warning" markdown="1">
-
-**About activating or deactivating the feature**
-
-* To deactivate **SEO-friendly URLs for Reactive Web Apps** you first need to remove all Site Rules from Service Center.
-* After you **activate or deactivate** the feature, publish your apps to apply the changes.
+On-premises installations must have [ISAPI Filters](<https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Customize_or_redirect_the_application_URL#Installing_ISAPI_Filters_and_Logging>) active.
 
 </div>
 
-## Site Rules
+## Activating and deactivating the feature
 
-A Site Rule maps the URL to a module in the environment. If users enter `www.example.com` in the browser, the platform loads the **MyMainModule** home screen.
+* To **deactivate SEO-friendly URLs for Reactive Web Apps**, remove all Site Rules from Service Center.
+* After you **activate or deactivate** the feature, publish your apps to apply the changes.
 
-The following table shows examples of Site Rules:
+## Site rules
+
+A Site rule maps the URL to a module in the environment. If users enter `www.example.com` in the browser, the platform loads the **MyMainModule** home screen.
+
+The following table shows examples of Site rules:
 
 | URL                             | To the module         |
 | ------------------------------- | --------------------- |
@@ -39,7 +40,15 @@ The following table shows examples of Site Rules:
 | `subdomain1.example.com`        | MyAppSubdomainModule  |
 | `subdomain1.example.com/myapp1` | MyAppSubdomainModule2 |
 
-See [Managing site rules](#managing-site-rules) for instructions.
+See [Managing Site Rules](#managing-site-rules) for instructions.
+
+## URL prioritization
+
+Prioritization determines the order in which pages load in the browser. The platform uses the following priorities:
+
+1. Static URLs have priority over dynamic URLs.
+
+2. The priority for dynamic URLs is based on the number of parameters. Rules with fewer parameters have priority over rules with more parameters.
 
 ## Custom Screen URLs
 
@@ -93,9 +102,9 @@ Go to **Service Center** > **Administration** > **SEO URLs** > **Site Rules List
 * Update a Site Rule
 * Disable or delete a Site Rule
 
-When working with Site Rules, keep in mind the following:
+When working with Site Rules, remember:
 
-* You can have only one Site Rule per root application for domains with subpaths.
+* You can have only one Site Rule per root application for domains with sub-paths.
 * Creating or editing a Site Rule can temporarily slow down the app because the platform needs to reload the setting files.
 
 ![Site rules list in Service Center](images/site-rules-sc.png?width=910)
@@ -106,7 +115,7 @@ You can add custom Screen URLs in Service Studio. Go to the properties of the Sc
 
 ![Screen URLs settings and properties](images/page-redirects-properties-ss.png?width=350)
 
-If an app passes an empty string as a value for a required parameter, the users see an error message. See [Empty string in a required parameter causes an error](troubleshooting.md#empty-string-in-a-required-parameter-causes-an-error) for more information.
+If an app passes an empty string as a value for a required parameter, users see an error message. See [Empty string in a required parameter causes an error](troubleshooting.md#empty-string-in-a-required-parameter-causes-an-error) for more information.
 
 Here are more details about the properties.
 

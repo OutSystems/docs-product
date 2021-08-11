@@ -48,7 +48,7 @@ Core level testing should focus on validating business rules:
 
 * Is the value submitted for the mandatory input valid in the current context? 
 
-### Anti Pattern #2: Business Logic at the UI Level
+### Anti-Pattern #2: Business Logic at the UI Level
 
 The Screen Action to submit changes on a page has embedded business logic in its flow. In the example image, it creates a master record, then it creates or updates child records, and finally creates some notification. 
 
@@ -62,7 +62,7 @@ If this logic needs to be tested as a whole, then one of two things will happen:
 
 The best way to handle this problem is to encapsulate the logic that needs to be tested in a public action at a Core module level, which will then be used in the screen action. This way, the business logic can be tested through component testing, without depending on the implementation of UI tests, which are much more expensive to produce and maintain.
 
-### Anti Pattern #3: Unsupported Cross-Domain Referencing
+### Anti-Pattern #3: Unsupported Cross-Domain Referencing
 
 DDD recommends using Service Actions and Public Entities for dependencies between domains.
 
@@ -81,11 +81,11 @@ Available since OutSystems 11, Service Actions are essentially REST remote calls
 
 In this section, we will use API to refer to REST, SOAP, or service actions.
 
-### Anti Pattern #1: Same API Consumed in Multiple Modules
+### Anti-Pattern #4: Same API Consumed in Multiple Modules
 
 In an OutSystems environment, there are multiple modules that consume the same API. When we’re in the scope of a test execution and need to use mock services to isolate the application under test from the remote system (where the API is exposed), we’ll have to change every single module that is consuming this specific API. Needless to say, this becomes a maintenance nightmare while also being error-prone, as the potential to forget to change one module increases.
 
-![Anti-Pattern #1 - Same API consumed in multiple Modules](images/test-consume-api-several-modules-diag.png?width=500)
+![Anti-Pattern #4 - Same API consumed in multiple Modules](images/test-consume-api-several-modules-diag.png?width=500)
 
 The best solution for you is to isolate the API consumption in a wrapper module that exposes the API methods through public actions. Core modules needing access to the API do it through the wrapper module. Later, in the scope of a test execution, when we need to point it to a mock service, that is done in one place only — the wrapper module
 
@@ -148,7 +148,7 @@ First of all, developers need to start adding these extended properties to their
 In addition to that, the OutSystems platform doesn't provide any collision detection for extended properties, so it’s up to the developer to ensure it. This can be especially tricky to manage in complex screens.
 
 ### Mapping tests to the Architecture Canvas
-cd
+
 ![Architecture Canvas](images/test-4-layer-diag.png?width=800)
 
 The [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) is an OutSystems architecture tool to make the design of Service-Oriented Architectures simple.

@@ -1026,7 +1026,17 @@
     - external:
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=78
-# Link to Training
+
+# Links to Training
+
+# Developing an Application > Troubleshooting Applications > Debugging Applications
+
+- develop/troubleshoot/debug/intro.md:
+    - external:
+        - "Training video - How to Debug Logic in OutSystems":
+            https://www.outsystems.com/training/lesson/2035/how-to-debug-logic-in-outsystems
+
+# Extensibility and Integration
 - extensibility-and-integration/connect-external-db.md:
     - external:
         - "Demo - Integrating with a SQL Server Database":

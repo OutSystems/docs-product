@@ -1,6 +1,6 @@
 ---
 summary: Creating apps that display content right-to-left (RTL) 
-tage: right-to-left
+tags: right-to-left
 ---
 
 # Right-to-Left (RTL)

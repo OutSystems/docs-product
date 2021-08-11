@@ -134,6 +134,7 @@
             - href: develop/ui/look-feel/themes.md
             - href: develop/ui/look-feel/theme-editor.md
             - href: develop/ui/look-feel/responsive.md
+            - href: develop/ui/look-feel/rtl.md
 
         # Reuse UI
         - href: develop/ui/reuse/intro.md

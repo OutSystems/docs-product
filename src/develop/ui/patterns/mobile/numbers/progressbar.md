@@ -17,6 +17,18 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     ![](<images/progressbar-2-ss.png>)
 
+    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+
+    a. Go to **Module > Manage dependencies**.
+
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+
+    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
+    d. Search for and select the element you want to add, and click **Apply**. 
+    
+    e. In Service Studio, in the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen.
 
     ![](<images/progressbar-3-ss.png>)
@@ -45,4 +57,4 @@ After following these steps and publishing the module, you can test the pattern 
 | AnimateInitialProgress (Boolean): Optional | If True, the percentage progress in the progress bar is animated. This is the default. If False, the progress is not animated. |
 | Text (Text): Optional | **Deprecated in OutSystems UI.** |
 | Shape (Shape Identifier): Optional | Set the Progress Bar shape. The predefined options are: <ul><li>Rounded</li><li> Soft Rounded </li> <li>Sharp</li></ul><p>Examples <ul><li>_Blank_ - The Progress Bar has a rounded shape (Entities.Shape.Rounded). This is the default.</li><li>_Entities.Shape.Sharp_ - The Progress Bar has a sharp shape.</li></ul></p> |
-| ExtendedClass (Text): Optional | Add custom style classes to the Progress Bar UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Progress Bar UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Progress Bar UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |

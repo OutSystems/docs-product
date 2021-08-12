@@ -15,6 +15,18 @@ You can use the Date Picker UI Pattern to allow the user to select a single or a
 
 1. In Service Studio, from the Toolbox, drag an Input widget into the Main Content area of your application's screen.
 
+    If the UI widget is not displayed in the Toolbox, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+
+    a. Go to **Module > Manage dependencies**.
+
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+
+    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
+    d. Search for and select the element you want to add, and click **Apply**. 
+    
+    e. In Service Studio, in the Toolbox, search for the widget.
+
 1. On the **Properties** tab, enter the Input **Name**. In this example we call it **datepicker**. 
 
     ![](<images/datepicker-image-14.png>)

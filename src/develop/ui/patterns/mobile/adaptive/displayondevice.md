@@ -24,6 +24,7 @@ You can use the Display on Device UI pattern to select what elements are display
     b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
 
     c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
     d. Search for and select the element you want to add, and click **Apply**. 
     
     e. In Service Studio, in the Toolbox, search for the widget again.

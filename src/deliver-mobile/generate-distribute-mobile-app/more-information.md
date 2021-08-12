@@ -115,6 +115,22 @@ To create a provisioning profile (`.mobileprovision` extension format):
 
 In order to generate iOS mobile apps in OutSystems you will be asked to provide a provisioning profile along with one of the certificates that you associated with it in the steps described above.
 
+### Renew a Provisioning Profile
+
+It is possible to check the validity of your provisioning profile by:
+
+* Accessing your Apple developer portal and go to Account -> Certificates, Identifiers & Profiles -> Profiles and check the expiration date of the desired provisioning profile.
+* Opening the provisioning profile on a text editor and look for the key **ExpirationDate** that will contain information about the expiring date.
+
+To renew your provisioning profile follow these steps:
+1. Log in to your [Apple Developer account](https://developer.apple.com/account).
+3. Select Certificates, Identifiers & Profiles.
+4. Click on Profiles.
+5. Click on the provisioning profile to be renewed.
+6. Click on Edit.
+7. Select the certificate(s) you want to associate with the profile.
+8. Click on Generate.
+9. Download the renewed provisioning profile.
 
 ## For Android
 

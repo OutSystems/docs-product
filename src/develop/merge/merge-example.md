@@ -11,6 +11,7 @@ In this example you are trying to publish the module, but a window **Modified ve
 After analyzing the **Compare and Merge** window, you see that:
 
 * You both edited the CSS on the "ClientList" screen. You need to resolve the conflicting changes.
+* You both edited the "Section" Assign on the "ButtonOnClick" action. You'll need to resolve the conflicts here as well.
 * The other developer added the screen "Report". There are no conflicts to resolve there.
 
 These could be the steps to resolve the conflicts.
@@ -25,7 +26,9 @@ These could be the steps to resolve the conflicts.
 
 1. Click **Done and back** in the lower left corner to return to the **Compare and Merge** section.
 
-1. Double-click **Preparation** to open the **Compare and Merge - Preparation** window. You can see that the `Section` assign element has conflicting values.
+    ![](images/merge-example-compare-ss.png)
+
+1. Double-click **ButtonOnClick** to open the **Compare and Merge - ButtonOnClick** window. You can see that the `Section` assign element has conflicting values.
 
     ![](images/visual-element-changes.png)
 
@@ -37,7 +40,7 @@ These could be the steps to resolve the conflicts.
 
     ![](images/text-changes-checkbox.png)
 
-1. Click **Done and back** in the lower left corner to return to the **Compare and Merge - Preparation** section.
+1. Click **Done and back** in the lower left corner to return to the **Compare and Merge - ButtonOnClick** section.
 
 1. Finally, click **Back** in the lower right corner to return to the main **Compare and Merge** window. If there are no conflicts (no elements highlighted red), you can continue to the next step to publish the module.
 

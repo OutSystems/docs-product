@@ -96,7 +96,7 @@ To create a connection do the following:
     
     * For **Salesforce**, **SharePoint Online**, **Microsoft Dataverse** or **Microsoft Dynamics 365** **with administrator permissions** in the external system, enter a connection name and the basic elements for accessing the external system, then select **Create connection**.
 
-    * For **Salesforce**, **SharePoint Online**, or **Microsoft Dataverse** **withouth administrator permissions** in the external system, Integration Builder can send an email to the administrator requesting the information you need. Once you have the information, enter it into Integration Builder, and select **Create connection**.
+    * For **Salesforce**, **SharePoint Online**, or **Microsoft Dataverse** **without administrator permissions** in the external system, Integration Builder can send an email to the administrator requesting the information you need. Once you have the information, enter it into Integration Builder, and select **Create connection**.
 
     <div class="info" markdown="1">
 

@@ -13,7 +13,7 @@ To use this feature, you must meet the following requirements for the [technical
 
 **General requirements**
 
-* Your Service Studio is up to date.
+* Your Service Studio is up to date (recommended). Sections that follow specify the minimum version for a feature. 
 * You have configured the SMTP server. See [Configure OutSystems to Send Emails](../../../extensibility-and-integration/configure-send-emails.md) for instructions.
 
 **Emails and basic widgets**

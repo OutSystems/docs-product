@@ -384,6 +384,8 @@
     - href: develop/testing/intro.md
     - topics:
         - href: develop/testing/develop-test.md
+        - href: develop/testing/testing-bdd-framework.md
+
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
     

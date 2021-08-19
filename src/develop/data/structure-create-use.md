@@ -5,7 +5,7 @@ tags: support-Mobile_Apps; support-webapps
 
 # Use Structures and Records to Create Compound Data Types
 
-While developing your application, you may find it interesting to have a variable holding a collection of variables with different data types grouped together and use it in the logic or UI. For example, to assign the values returned by an action where you don't have to create one output for each value.
+While developing your application, you may find it interesting to have a variable holding a collection of variables with different data types grouped together and use it in the logic. For example, to assign the values returned by an action where you don't have to create one output for each value.
 
 In OutSystems, you can create structured values by using a ![Structure.png](../../shared/icons-service-studio/structure.png) Structure or a Record. A Structure is a custom data type that you can use in your module. A Record is a custom data type defined for a single variable and cannot be reused in another variable.
 
@@ -25,17 +25,42 @@ To create a Record for a variable, you need to:
 
 ## Example using a Record
 
-In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating.
+In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating. The data is stored in the Place an Review entities.
 
 Since the data type that we will need to assign to the output parameter will only be used here, we will use a Record:
 
 1. Expose a REST API, name it Place and create the method GetPlace.
-1. Add an input parameter with the Place Id for which to return information.
-1. In the action flow, add an aggregate with the Place and Review entities and filter using the Place Id input parameter.
-1. Add an output parameter called PlaceInformation.
-1. Select the suggested data type `GetPlacesWithReviews Record Type` to set the data type of the output parameter to the records returned by the aggregate.
-1. Back to the GetPlace action flow, to assign the values to the output variable, add an Assign flow element to the action and assign the first element returned from the aggregate to it. Since they are the of the same data type, there is no need to map the attributes between the two.
-1. Publish and test.
+1. Add an input parameter to the GetPlace method named  `PlaceId`. Ensure the **Data Type** is **Place Identifier**.
+
+    ![Place REST API with an input parameter](images/structure-create-use-3.png)
+
+1. To define the logic of the GetPlace method, in the element tree, double-click **GetPlace**.
+1. Drag an aggregate from the toolbox into the action flow.
+1. Add the Place and Review entities to the aggregate.
+1. Filter the aggregate ensuring the Place.Id attribute matches the PlaceId parameter. Add a filter condition with `Place.Id = PlaceId`.
+
+    ![Logic of the GetPlace method](images/structure-create-use-4.png)
+
+1. In the GetPlace method, add an output parameter called `PlaceInformation`.
+1. Set the PlaceInformation **Data Type** to **Record...**. A Text attribute is added to the variable.
+1. Change the **Data Type** of the Text attribute to the **Place** entity and its **Name** to `Place`.
+1. Add a new attribute from the PlaceInformation context menu.
+1. Change the **Data Type** of the attribute to the **Review** entity and its **Name** to `Review`.
+
+    ![](images/structure-create-use-5.png)
+
+    <div class="info" markdown="1">
+
+    You can also use the suggested Data Type **GetPlaceById Record Type** to set the PlaceInformation data type as a compound data as covered by steps 6 to 9.
+
+    </div>
+
+<!---add screenshot-->
+
+1. In the GetPlace method flow, assign the result of the aggregate to the output parameter. 
+    1. From the toolbox, drag an Assign after the aggregate.
+    1. Add an assignment by setting the **Variable** to `PlaceInformation` and the **Value** to `GetPlaceById.List.Current`.
+
 
 ## Example using a Structure
 
@@ -65,6 +90,5 @@ Since we're going to reuse the user information in another action of the applica
 
 1. Since the data type returned by the aggregate is different from the output variable, below the assignment in the properties of the Assign node, map the attributes from the aggregate output to the output parameter attributes.
 
-1. Publish and test.
 
 ![Create and Use Structured Data](images/structure-create-use-2.png)

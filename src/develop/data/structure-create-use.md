@@ -76,7 +76,7 @@ Since we're going to reuse the user information in another action of the applica
     * `Name` of type Text
     * `Photo` of type Binary Data
 
-    ![Create and Use Structured Data](images/structure-create-use-1.png)
+    ![Create and Use Structured Data](images/structure-create-use-1-ss.png)
 
 1. Expose a REST API named User and create the method GetUser.
 
@@ -91,4 +91,4 @@ Since we're going to reuse the user information in another action of the applica
 1. Since the data type returned by the aggregate is different from the output variable, below the assignment in the properties of the Assign node, map the attributes from the aggregate output to the output parameter attributes.
 
 
-![Create and Use Structured Data](images/structure-create-use-2.png)
+![Create and Use Structured Data](images/structure-create-use-2-ss.png)

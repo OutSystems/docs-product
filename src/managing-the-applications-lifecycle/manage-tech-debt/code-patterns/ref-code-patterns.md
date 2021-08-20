@@ -20,9 +20,7 @@ Impact
 :   Since a Module isn't classified (undefined) in Discovery, it doesn't allow proper validation of the architecture and the detection of Canvas violation patterns.
 
 How to fix
-:
-
-On the Discovery application, check the unclassified module. Classify its layer based on its nature and architecture best practices (Orchestration, End-user, Core, or Foundation). In case a module falls on more than one layer, classify it as the top one. For example, if a module has concepts of End-user layer (screens) and the Core layer (entities), it should be set as End-user.
+:   On the Discovery application, check the unclassified module. Classify its layer based on its nature and architecture best practices (Orchestration, End-user, Core, or Foundation). In case a module falls on more than one layer, classify it as the top one. For example, if a module has concepts of End-user layer (screens) and the Core layer (entities), it should be set as End-user.
 
 ### Orchestration module providing services
 
@@ -240,7 +238,13 @@ Impact
 How to fix
 :   Avoid using data from Preparation in Screen Actions. For example, instead of using the TableRecords record data in a Screen Action, send the Record's identifier as an Input Parameter of the Screen Action, only fetching the data from the database when needed. If you need the full list of records, refresh the query. It is better to rerun the query server-side than to send the data back and forth through the ViewState.
 
-### Large Input Parameter or Local Variable in ViewState (Traditional Web apps only)
+### Large Input Parameter or Local Variable in ViewState
+
+<div class="info" markdown="1">
+
+Applies to **Traditional Web** apps only.
+
+</div>
 
 A large screen or block Input Parameter or Local Variable is being used in a Screen Action.
 

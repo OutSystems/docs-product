@@ -32,14 +32,14 @@ Since the data type that we will need to assign to the output parameter will onl
 1. Expose a REST API, name it Place and create the method GetPlace.
 1. Add an input parameter to the GetPlace method named  `PlaceId`. Ensure the **Data Type** is **Place Identifier**.
 
-    ![Place REST API with an input parameter](images/structure-create-use-3.png)
+    ![Place REST API with an input parameter](images/structure-create-use-3-ss.png)
 
 1. To define the logic of the GetPlace method, in the element tree, double-click **GetPlace**.
 1. Drag an aggregate from the toolbox into the action flow.
 1. Add the Place and Review entities to the aggregate.
 1. Filter the aggregate ensuring the Place.Id attribute matches the PlaceId parameter. Add a filter condition with `Place.Id = PlaceId`.
 
-    ![Logic of the GetPlace method](images/structure-create-use-4.png)
+    ![Logic of the GetPlace method](images/structure-create-use-4-ss.png)
 
 1. In the GetPlace method, add an output parameter called `PlaceInformation`.
 1. Set the PlaceInformation **Data Type** to **Record...**. A Text attribute is added to the variable.
@@ -47,7 +47,7 @@ Since the data type that we will need to assign to the output parameter will onl
 1. Add a new attribute from the PlaceInformation context menu.
 1. Change the **Data Type** of the attribute to the **Review** entity and its **Name** to `Review`.
 
-    ![](images/structure-create-use-5.png)
+    ![Output parameter with a record](images/structure-create-use-5-ss.png)
 
     <div class="info" markdown="1">
 
@@ -55,12 +55,12 @@ Since the data type that we will need to assign to the output parameter will onl
 
     </div>
 
-<!---add screenshot-->
 
 1. In the GetPlace method flow, assign the result of the aggregate to the output parameter. 
     1. From the toolbox, drag an Assign after the aggregate.
     1. Add an assignment by setting the **Variable** to `PlaceInformation` and the **Value** to `GetPlaceById.List.Current`.
 
+    ![Assign values to the output parameter](images/structure-create-use-6-ss.png)
 
 ## Example using a Structure
 

@@ -5,13 +5,8 @@ tags: support-Security-overview
 
 # Apply Content Security Policy
 
-<div class="info" markdown="1">
 
-We’ve been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
-
-To protect against a growing number of attacks on the Web, use the Content Security Policy (CSP) against code injection attacks in applications developed with OutSystems. CSP provides a standard way of declaring approved origins of content that browsers are allowed to load.
+Content Security Policy (CSP) lets you define rules that help protect your users and apps from web attacks. CSP provides a standard way of declaring approved origins of content that browsers are allowed to load.
 
 CSP is configured using directives that are sent to browsers in [specific HTTP headers](<https://en.wikipedia.org/wiki/Content_Security_Policy#Status>). This way, when browsers run pages of your applications, they know from which location and/or which type of resources to load.
 
@@ -44,6 +39,12 @@ To configure CSP for an application in LifeTime:
 1. Enable CSP.
 1. Configure directives, with one value per line.
 
+<div class="warning" markdown="1">
+
+By design, the Content Security Policy on the app level overrides the same policy on the environment level. 
+
+</div>
+
 ## Configure CSP in Service Center
 
 If you don’t have LifeTime installed, configure CSP in each environment using the environment management console, Service Center.
@@ -64,6 +65,12 @@ To configure CSP for an application in Service Center:
 1. Select the **Security** tab.
 1. Enable CSP.
 1. Configure directives, with one value per line.
+
+<div class="warning" markdown="1">
+
+By design, the Content Security Policy on the app level overrides the same policy on the environment level.
+
+</div>
 
 ## Monitoring
 

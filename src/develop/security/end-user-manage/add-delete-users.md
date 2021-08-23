@@ -32,7 +32,7 @@ To create a new end user for your applications do the following:
 
 ## Activate and deactivate an existing end user { #activate-deactivate }
 
-A deactivated end user can't log in to any application and has all permissions are suspended.
+A deactivated end user can't log in to any application and has all permissions suspended.
   
 1. To deactivate an end user, from the user detail page, click **Set as Inactive**.
 

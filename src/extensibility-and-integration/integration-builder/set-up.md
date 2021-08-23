@@ -8,17 +8,23 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
 * The [IT user](../../managing-the-applications-lifecycle/manage-it-teams/intro.md) you use to log in to Integration Builder must have the **Change and Deploy Applications** permission level and the **Create Applications** specific permission for the development environment. Check [Understanding the permission model for IT users](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) for more information.
 
-* Use the version of any of the following desktop browsers: Edge, Firefox, Google Chrome, or Safari.
+* Use the latest version of any of the following desktop browsers: Edge, Firefox, Google Chrome, or Safari.
 
-* All environments, except for the LifeTime environment, must meet the following:
-    
-    * Must use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.
+* All environments, except for the LifeTime environment, must:
 
-    * Must allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. Check [Integration Builder network requirements](../../setup/network-requirements.md#integration-builder) for detailed information.
+  * Use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.
 
-* Each integration may have additional requirements. Check the specific integration documentation for details.
+  * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. Check [Integration Builder network requirements](../../setup/network-requirements.md#integration-builder) for detailed information.
 
-**Note:** Integration Builder currently doesn't support Multiple Database Catalogs (MDC) in OutSystems on-premises installations.
+<div class="info" markdown="1">
+
+Keep in min:
+
+* Each integration may have additional requirements. To verify, check the specific integration documentation.
+
+* When using Integration Builder with Multiple Database Catalogs MDC), and publishing to a development environment, a prompt displays for you to download your solution. Currently Integration Builder is unable to publish to a development environment. You can then use Service Center to publish your integration solution
+
+</div>
 
 ## Registering your infrastructure
 

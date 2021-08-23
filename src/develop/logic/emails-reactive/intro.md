@@ -13,7 +13,7 @@ To use this feature, you must meet the following requirements for the [technical
 
 **General requirements**
 
-* Your Service Studio is up to date.
+* Your Service Studio is up to date (recommended). Sections that follow specify the minimum version for a feature. 
 * You have configured the SMTP server. See [Configure OutSystems to Send Emails](../../../extensibility-and-integration/configure-send-emails.md) for instructions.
 
 **Emails and basic widgets**
@@ -23,13 +23,13 @@ To use this feature, you must meet the following requirements for the [technical
 
 **Email templates, Image with binary content, List, Table, If**,
 
-* You're using Service Studio 11.12.0.
+* You're using Service Studio 11.11.12.
 * You're using Platform Server 11.13.0 or later.
 * You have activated the technical preview **Emails for Mobile and Reactive** in LifeTime in all environments.
 
 **Attachments** 
 
-* You're using Service Studio 11.12.0.
+* You're using Service Studio 11.11.12.
 * You're using Platform Server 11.13.0 or later.
 * You have activated the technical previews **Emails for Mobile and Reactive** and **Attachments in Mobile and Reactive emails** in LifeTime, in all environments.
 

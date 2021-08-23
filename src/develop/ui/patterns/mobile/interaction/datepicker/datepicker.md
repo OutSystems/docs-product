@@ -5,7 +5,7 @@ summary: Date Picker allows the end user to select a single or a range of dates 
 
 # How to use the Date Picker UI Pattern
 
-This example binds the Date Picker widget to an input. When the user selects a date from teh calendar it is displayed in the input widget.
+This example binds the Date Picker widget to an input. When the user selects a date from the calendar it is displayed in the input widget.
 
 1. In Service Studio, in the Toolbox, search for `Date Picker`.
 

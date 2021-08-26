@@ -514,22 +514,6 @@ Impact
 How to fix
 :   Define the class inside the theme of the application. Even if it's only a small change it is better to define a specific class (that can then be reused) for it than add to a specific page and then copy the same class over and over.
 
-### Image widgets without width
-
-<div class="info" markdown="1">
-
-Applies to **Mobile** apps only.
-
-</div>
-
-Set the width of Image widgets.
-
-Impact
-:   If you do not set the width and height of an Image widget, the user of your app may see a flickering effect while the final image is being downloaded. For example, not setting the image height might cause the total height of the screen to change until the image loads completely since the widget height will be changing from 0px to the height of the final image.
-
-How to fix
-:   Set the width and height of the Image widget to the expected size of the final image. If you only set one of the dimensions, the other will be adjusted proportionally.
-
 ### Complex splash screen
 
 <div class="info" markdown="1">
@@ -662,22 +646,6 @@ How to fix
     * Use the SanitizeHtml() function from the Sanitization extension module to ensure that the value entered by the end-user does not contain any malicious content.
     * Use the EncodeUrl() built-in function to replace all URL invalid characters by their percent-encoded counterpart."
 
-### Not checking if the mobile device is compromised
-
-<div class="info" markdown="1">
-
-Applies to **Mobile** apps only.
-
-</div>
-
-Not checking if the mobile device is compromised, meaning it's rooted (Android) or jailbroken (iOS).
-
-Impact
-:   Mobile apps are susceptible to code modification. Even when encrypted by the operating system, sophisticated attackers can, and will, recover a decrypted binary, which gives them every opportunity to edit system calls, conditional statements, and other application logic.
-
-How to fix
-:   To prevent an attacker from tampering your application, OWASP recommends you validate the integrity of your executable at runtime. With the Secure Device plugin (available on Forge), you can check whether the end-user has compromised their devices to gain access to privileged subroutines and then shut down the application in response. To use the Secure Device plugin, add a reference to the plugin and use the CheckSecureDevicePlugin action in the OnApplicationReady event. This ensures that the plugin will be included in the native build.
-
 ## Maintainability
 
 ### Duplicated Code
@@ -723,16 +691,6 @@ Impact
 
 How to fix
 :   Break flow logic into smaller and potentially reusable actions and/or place comments to explain portions of your flow. Note: explore the 'Extract to Action' feature, available in the right-click menu when you select a portion of a flow.
-
-### Prefix Timer actions
-
-Timer actions should have the prefix "Timer\_".
-
-Impact
-:   Identifying actions that are executed by timers using a naming convention, helps the team on what the action does without searching their references. Also this naming helps on not sharing these actions on other business logic.
-
-How to fix
-:   Prefix the name of the actions used by timer with the "Timer\_" prefix. E.g. If the action used by a timer is called BootstrapCustomers rename it to Timer\_BootstrapCustomers.
 
 ### Too much disabled code
 

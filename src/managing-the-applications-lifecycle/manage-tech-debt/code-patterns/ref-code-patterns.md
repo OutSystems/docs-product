@@ -699,10 +699,10 @@ How to fix
 Required description on public elements.
 
 Impact
-:   Meaningful descriptions in modules, public elements, entities, attributes and input/output parameters clarify their purpose and expected behavior. It's crucial when consuming closed modules, because the implemented logic isn't visible.
+:   Meaningful descriptions in modules, public elements, entities, and input/output parameters clarify their purpose and expected behavior. It's crucial when consuming closed modules, because the implemented logic isn't visible.
 
 How to fix
-:   Add a description to the module that explains the module's purpose and identifies the concepts it contains. Add meaningful descriptions to all of the module public elements, and their related parameters (or attributes in the case of Entities or Structures). If parameter/attribute names already follow well-established naming conventions, you can choose not to add a description (e.g. Id, Name, Label, Description, CreatedBy, UpdatedBy, CreatedOn, UpdatedOn).
+:   Add a description to the module that explains the purpose and identifies the concepts it contains. Add meaningful descriptions to all module's public elements, and their related parameters. The only exceptions are Entities and Structures attributes which descriptions are optional. A parameter name that already follows well-established naming conventions doesn't require a description (e.g. Id, Name, Label, Description, CreatedBy, UpdatedBy, CreatedOn, UpdatedOn).
 
 ### Unidentified public action managing transaction
 

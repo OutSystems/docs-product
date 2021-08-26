@@ -105,6 +105,7 @@ The list of available directives to configure Content Security Policy in OutSyst
 | Script-src    |The domains from which applications are allowed to load scripts.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`|
 | Style-src     |The domains from which applications are allowed to load styles.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`|
 | Frame-ancestors|The domains which are allowed to embed applications in a frame.<br/>The following source expressions are allowed: `self` and `*`.|`self`<br/>`gap:`|
+| Frame-src | There's no dedicated field, but you can use the `Child-src` field to enter the values for the platform to generate the `Frame-src` directive. | `self` |
 | Report-to     |URI where content security violations will be reported.|`<internal>`|
 | Other directives|More directives to append to the Content Security Policy headers.|-|
 

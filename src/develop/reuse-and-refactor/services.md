@@ -53,7 +53,7 @@ Each time the implementation of an exposed Server Action changes, the consumer m
 
 In OutSystems, a **Service Action** is a REST based remote call to another process, but its usage is very similar to public Server Actions. 
 
-![](images/services-2.png?width=600)
+![](images/services-2.png)
 
 Exposing a Service Action generates a [weak dependency](strong-weak-dependencies.md#weak-dependencies) from the consumer to the producer module, in a **loosely-coupled** way.
 

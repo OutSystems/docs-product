@@ -54,7 +54,7 @@ Snooze it with the "False Positive" reason and explain in the comments why you b
 
 If an environment has outdated probes, users with Full Control of the code analysis environment can update it autonomously see a warning message in Architecture Dashboard with a link to download the latest version.
 
-![](images/probes-update-message.png)
+![](images/probes-update-message-ad.png)
 
 Check out [how to update the Architecture Dashboard probes](how-update-probes.md).
 

@@ -23,13 +23,13 @@ To use this feature, you must meet the following requirements for the [technical
 
 **Email templates, Image with binary content, List, Table, If**,
 
-* You're using Service Studio 11.50.11.
+* You're using Service Studio 11.50.11 or later.
 * You're using Platform Server 11.13.0 or later.
 * You have activated the technical preview **Emails for Mobile and Reactive** in LifeTime in all environments.
 
 **Attachments** 
 
-* You're using Service Studio 11.50.11.
+* You're using Service Studio 11.50.11 or later.
 * You're using Platform Server 11.13.0 or later.
 * You have activated the technical previews **Emails for Mobile and Reactive** and **Attachments in Mobile and Reactive emails** in LifeTime, in all environments.
 

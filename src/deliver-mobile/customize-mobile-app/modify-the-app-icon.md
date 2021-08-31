@@ -27,10 +27,7 @@ To change the default icon and use your own icon image, providing multiple versi
     ![](images/image3.PNG)
 
 1. Add the “icons” tag to the JSON to indicate that you want to use your own icons for your application.
-
-    ![](images/image4.PNG)
-
-1. For each mobile platform, specify the size (iOS) and density (Android) and the correspondent icon location in the ZIP folders. Ensure that you define icons for all size and densities available, otherwise, you'll get an error (the example below is just for reference). Check the [JSON template for the icons](<#icons-json-template>) to avoid mistakes.
+For each mobile platform, specify the size (iOS) and density (Android) and the correspondent icon location in the ZIP folders. Ensure that you define icons for all size and densities available, otherwise, you'll get an error (the example below is just for reference). Check the [JSON template for the icons](<#icons-json-template>) to avoid mistakes.
 
     ![](images/image5.PNG)
 

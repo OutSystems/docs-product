@@ -8,8 +8,6 @@ en_title: Don't abuse scope information
 
 All the local variables of a screen and the results of queries or actions from the preparation are kept in the scope of the entire screen. You can reference Local variables in the Preparation, in the screen itself and in  screen actions.
 
-![](images/scope-info.png)
-
 ## Impact - think Viewstate
 
 The screen scope is practical, but it should be used carefully in screen actions.

@@ -40,7 +40,13 @@ By default, all new infrastructures added to Architecture Dashboard use AI auto-
 
 ### Runtime Performance Analysis
 
-Regarding runtime performance analysis, Architecture Dashboard uses the analytics data from LifeTime, which is crossed with the code findings to display the most relevant and urgent cases for improvement, effectively helping address runtime performance issues.
+<div class="info" markdown="1">
+
+Applies to **Traditional Web** apps only.
+
+</div>
+
+Regarding runtime performance analysis, Architecture Dashboard uses the [analytics data from LifeTime](../monitor-and-troubleshoot/enable-analytics-for-an-environment.md), which is crossed with the code findings to display the most relevant and urgent cases for improvement, effectively helping address runtime performance issues.
 
 ## Access to Architecture Dashboard features
 

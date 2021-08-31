@@ -16,6 +16,10 @@
   - external:
     - "Data Synchronization Course": 
         https://www.outsystems.com/learn/courses/170/data-synchronization/
+- develop/data/offline/sync-implement.md:
+  - external:
+    - "Data Synchronization Course": 
+        https://www.outsystems.com/learn/courses/170/data-synchronization/
 
 # Expression editor
 - develop/logic/expression-editor.md:

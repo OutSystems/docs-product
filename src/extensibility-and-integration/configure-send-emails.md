@@ -12,7 +12,7 @@ OutSystems lets you send emails from your apps via the Simple Mail Transference 
 To configure SMTP in the environment, follow these steps in **Service Center**:
 
 1. Go to **Administration** > **Email**.
-1. Enter the information about the SMTP server.
+1. Enter the information about the SMTP server (for example smtp.gmail.com).
 1. Click **Save**.
 
 ![SMTP configuration in Service Center](images/configure-outsystems-to-send-emails-1.png)

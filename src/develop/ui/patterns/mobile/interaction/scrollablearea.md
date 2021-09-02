@@ -7,8 +7,6 @@ summary: Simple scrollable Block with a placeholder for content. Ideal to displa
 
 The Scrollable Area Pattern is a simple scrollable block with a placeholder for content. You can use this pattern to display multiple elements in a single, scrollable row or column.
 
-  ![Scrollable Area example](<images/scrollexample.png>)
-
 **How to use the Separator UI Pattern**
 
 1. In Service Studio, in the Toolbox, search for `Scrollable Area`.
@@ -46,6 +44,10 @@ The Scrollable Area Pattern is a simple scrollable block with a placeholder for 
     ![Set the optional properties](<images/scrollprop-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
+
+Example result:
+
+![Scrollable Area example](<images/scrollexample.png>)
 
 ## Properties
 

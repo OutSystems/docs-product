@@ -51,7 +51,7 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
     ![](<images/sidebar-2-ss.png>)
 
-1. On the **Properties** tab, from the **WidgetId** drop-down, select the Id for the widget. In this example, **MySidebar.Id**.
+1. On the **Properties** tab, click the drop-down in the **WidgetId** field and select the Id for the widget. In this example, it is **MySidebar.Id**.
 
     ![](<images/sidebar-7-ss.png>)
 

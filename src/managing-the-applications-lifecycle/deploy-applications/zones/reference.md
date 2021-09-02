@@ -39,6 +39,8 @@ Deployment Zone Address
     Valid examples: `192.168.42.23`, `intranet.mydomain.com`, `rincewind.lan`
   
     Invalid examples: `192.168.42.23/site`, `192.168.42.23:8080/site`, `rincewind.lan/university`
+    
+    Please bear in mind that it is only possible to change the Deployment Zone Address of a deployment zone if that zone has no modules in it.
 
 Use HTTPS for internal communications
 :   Boolean parameter that, when active, will cause all communication made by OutSystems applications in another deployment zones to applications in the current deployment zone to be made via HTTPS.

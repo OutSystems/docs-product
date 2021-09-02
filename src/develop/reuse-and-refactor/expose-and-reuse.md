@@ -9,7 +9,7 @@ When developing your OutSystems applications, elements are implemented and reuse
 
 The module that implements and exposes functionality is the **producer** module. On the other hand, the module that reuses the exposed functionality is the **consumer** module. The functionality exposed by a **producer** module is considered as **dependencies** in the **consumers**.
 
-![](images/expose-and-reuse-1.png?width=400)
+![](images/expose-and-reuse-diag.png)
 
 Changes made in the producer module to the signature or implementation of the exposed elements may have impact in the consumer module. Check [this topic](handle-changes.md) to learn how the changes made in the producer in the exposed elements will impact the consumer modules.
 

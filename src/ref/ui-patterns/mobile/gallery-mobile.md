@@ -5,10 +5,6 @@ summary: Advanced Use Cases for the Gallery UI Pattern.
 
 # Gallery Reference
 
-## Layout and classes
-
-![](images/gallerymob-5-diag.png)
-
 ## Advanced use case
 
 ### Using animations inside the Gallery

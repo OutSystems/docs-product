@@ -45,7 +45,8 @@ If you don’t have one, learn [how you can create a certificate](https://develo
 * You  need a provisioning profile according to the developer program you enrolled in:   
 — `App Store` provisioning profile for the Apple Developer Program, or  
 — `In-House` provisioning profile for the Apple Developer Enterprise Program  
-A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn how you can [create a provisioning profile](https://help.apple.com/xcode/mac/current/#/devaafd622d2). For more information on the different provisioning profiles, check the Medium blog post "[Cruising through the Complexities of Signing Native Mobile Apps](<https://medium.com/outsystems-engineering/cruising-through-the-complexities-of-signing-native-mobile-apps-cc123eb2814b>)" by OutSystems.
+
+A provisioning profile allows your application to be launched on Apple devices and use app services. If you don't have one, learn how you can [create a provisioning profile](https://help.apple.com/xcode/mac/current/#/devaafd622d2). If you already have a provisioning profile **make sure it has a valid expiring date**. Don't forget to **rebuild and redistribute your app when the provisioning profile is renewed**. You can find more details about provisioning profiles and In-House distribution [here](https://support.apple.com/en-au/guide/deployment-reference-ios/apda0e3426d7/1/web/1.0). For more information about the different provisioning profiles, check out the Medium blog post "[Cruising through the Complexities of Signing Native Mobile Apps](<https://medium.com/outsystems-engineering/cruising-through-the-complexities-of-signing-native-mobile-apps-cc123eb2814b>)" by OutSystems.
 
 You can generate a release version of your app (without debug information) using an In-House provisioning profile, but you have to handle the app distribution on your own, outside the App Store to your company's end users by sending the installation link or the app package (IPA) itself, or by using an internal enterprise store or an MDM (Mobile Device Management) solution.
 
@@ -82,7 +83,7 @@ To generate your mobile app in the Service Studio, perform the following steps:
 
 1. Click the **GENERATE APP** button.
 
-   ![Configure iOS App Settings](images/ss-native_platforms-configure-ios-app.png?width=500)
+    ![Configure iOS App Settings](images/ss-native_platforms-configure-ios-app.png?width=500)
 
 1. After the generation has been completed, scan the QR code or copy the created installation link using your device to install the generated iOS app. If you need to download the generated app package (IPA), follow the procedure below in Service Center.
 

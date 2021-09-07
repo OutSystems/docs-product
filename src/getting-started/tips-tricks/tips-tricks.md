@@ -146,6 +146,10 @@ $(function() {
 
 # Basics
 
+## Dark theme
+
+You can switch Service Studio to the dark theme (or dark mode). On the **Edit** menu, chose **Preferences...** then, under **Theme** switch on **Dark theme**.
+
 ## Would you like to know more? Hit F1
 
 You can always access relevant documentation and find more about any element/flow/tab by selecting it and pressing <span class="keyboard"> F1 </span> from within Service Studio.

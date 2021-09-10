@@ -1380,6 +1380,7 @@
         - href: ref/errors-and-warnings/errors/intro-errors.md
         - topics:
             - href: ref/errors-and-warnings/errors/1-click-publish-required-error.md
+            - href: ref/errors-and-warnings/errors/change-target-directory.md
             - href: ref/errors-and-warnings/errors/concurrent-publishing-error.md
             - href: ref/errors-and-warnings/errors/connection-error.md
             - href: ref/errors-and-warnings/errors/database-upgrade-error.md

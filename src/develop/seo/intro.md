@@ -149,7 +149,6 @@ These are additional notes about custom URLs.
 * You can add custom URLs to all Screens **except** the Default Screen.
 * When copying Screens with custom URLs from Reactive Web App module to Mobile App module, Service Studio removes the URL rules in the Mobile App module.
 
-
 ### Managing Redirect Rules
 
 To manage Redirect Rules you need to know the following:
@@ -163,4 +162,28 @@ Go to **Service Center** > **Administration** > **SEO URLs** > **Redirect Rules 
 * Update a Redirect Rule
 * Disable or delete a Redirect Rule
 
-![Redirects in Service Center](images/redirects-sc.png?width=910)
+![Redirects in Service Center](images/redirects-sc.png)
+
+## Dynamic page titles
+
+<div class="info" markdown="1">
+
+Introduced in Platform Server 11.13.0 and Service Studio 11.12.0.
+
+</div>
+
+The page titles show in the browser tabs, bookmarks, and results from the search engines. Use expressions to set titles of Screens and change the page title dynamically. 
+
+<div class="warning" markdown="1">
+
+OutSystems strongly recommends that all team members update Service Studio before using dynamic page titles in  acollaborative environment.    
+
+</div>
+
+To set the Screen names dynamically, do the following in Service Studio:
+
+1. Locate the Screen where you want to set the title dynamically.
+2. In the Screen properties, double-click the **Tile** property. Expression editor opens.
+3. Enter an expression that sets the title value during runtime. For example, `"More about" + ProductTitle`.
+
+    ![Dynamic title property](images/dynamic-title-property-ss.png)

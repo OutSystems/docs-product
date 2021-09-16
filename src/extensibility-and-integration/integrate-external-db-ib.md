@@ -11,7 +11,7 @@ For more information about the supported databases and the systems that are cert
 
 To integrate with an external database using Integration Builder:
 
-1. Log into Integration Builder with your development environment URL and your username and password.
+1. Log into Integration Builder with your development environment URL, your username and password.
 
 1. Create a new integration for an external system and configure its settings.
 
@@ -31,15 +31,23 @@ To integrate with an external database using Integration Builder:
 
 1. In the **Environment** field, enter the address of your OutSystems development environment and click **Next**.
 
-For security and governance reasons, you can only connect to a development environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
+   ![Log into Integration Builder](<images/login-ib.png>)
+
+    For security and governance reasons, you can only connect to a development environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
 
 1. Enter your username and password and click **Log in**.
+
+  ![Enter username and password](<images/login-user-ib.png>)
 
 ### Create a new integration
 
 1. On the **My integrations** screen, click **Create integration**.
 
+   ![Click Create integration button](<images/create-integration-ib.png>)
+
 1. Choose a provider.
+
+   ![Choose a provider](<images/choose-provider-ib.png>)
 
 1. Validate your credentials and click **Confirm**. 
 

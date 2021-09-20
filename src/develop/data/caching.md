@@ -10,6 +10,12 @@ Caching is RAM-based and is available in every front-end server. Whenever memory
 
 There is a specific cache for each tenant in the multitenant apps, which only stores data related to it. You can invalidate the cache in the multitenant environments by using [System Actions](../../ref/apis/auto/system-actions.final.md) **EspaceInvalidateCache** and **TenantInvalidateCache**.
 
+<div class="info" markdown="1">
+
+The cache invalidation system action can have a negative performance impact during the first access of an application. It also increases the load in the servers due to the compilation of the applications in IIS. For these reasons use of the cache invalidation system action should be kept to a minimum.
+
+</div>
+
 These are the elements that **support** caching:
 
 * The lists returned by Aggregate and SQL.

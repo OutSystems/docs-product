@@ -9,7 +9,7 @@ A chatbot is a feature that you add to an existing app. The architecture of a ch
 
 ## Bot service
 
-Just like any other bot, a chatbot needs a service that monitors for user interaction. OutSystems uses Azure **Bot Service** and **Bot Framework** to provide the bot service.
+Just like any other bot, a chatbot needs a service that monitors for user interaction. OutSystems uses Azure [**Bot Service**](https://azure.microsoft.com/en-us/services/bot-services/) and [**Bot Framework**](https://docs.microsoft.com/en-us/azure/bot-service/index-bf-sdk?view=azure-bot-service-4.0) to provide the bot service.
 
 ## Chatbot logic
 

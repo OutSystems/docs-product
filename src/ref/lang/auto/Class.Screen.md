@@ -39,7 +39,7 @@ User interface with which end users interact.
 <td>Text literal or expression displayed in the title bar of the browser.</td>
 <td></td>
 <td></td>
-<td>When this property is empty, the title bar has the name of the element.</td>
+<td>When this property is empty, the title bar has the name of the element. Using expressions in titles, and like that having dynamic page titles, works in Platform Server 11.13.0 with Service Studio 11.12.0, and later.</td>
 </tr>
 <tr>
 <td title="Public">Public</td>

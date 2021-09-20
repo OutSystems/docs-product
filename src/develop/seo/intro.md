@@ -3,16 +3,17 @@ summary: Redirect URLs and create site and Screen URLs to to improve user experi
 tags: article-page,
 ---
 
-# SEO in Reactive Web Apps
+# Technical Preview - SEO in Reactive Web Apps
 
 As a best practice use **SEO-friendly URLs for Reactive Web Apps**. Friendly URLs provide both humans and machines an indication of the search-engine results. With Service Center you can create the SEO-friendly versions of the URLs, manage Site Rules and Redirects. Edit custom URLs in Service Studio, in the properties of each Screen.
 
 ## Prerequisites
 
-**SEO-friendly URLs for Reactive Web Apps** requires the following:
+**SEO-friendly URLs for Reactive Web Apps** is a technical preview feature and requires the following:
 
 * Platform Server 11.12.0 or later
 * Service Studio 11.11.0 or later
+* [Technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **SEO-friendly URLs for Reactive Web Apps** is active in LifeTime for all environments
 * OutSystems enterprise cloud offer or a properly configured on-premises installation
   
 <div class="info" markdown="1">

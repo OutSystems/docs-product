@@ -5,7 +5,7 @@ tags:
 
 # Troubleshooting
 
-This document provides more details about errors, warnings, and known issues when using **SEO-friendly URLs for Reactive Web Apps**.
+This document provides more details about errors, warnings, and known issues in the technical preview Use **SEO-friendly URLs for Reactive Web Apps**,
 
 ## Errors and warnings
 
@@ -51,7 +51,7 @@ When you have a Screen with custom URLs, put the mandatory Input Parameters firs
 
 Service Studio shows the **Duplicated Page Name** error:
 
-* Duplicated Page Name | (screen name) has name Page Name clashing with (element name). Use unique values.
+* Duplicated Page Name | (screen name) has name Page Name clashing with (element name). Please use unique values.
 
 To fix the error, change the Page Names so it's different from the names of the following **elements in the module**:
 
@@ -99,7 +99,7 @@ The following sections cover more technical details related to the known issues.
 
 ### Redirects don't work after adding rules
 
-In a small number of OutSystems Cloud environments the redirect rules may not work initially. This may happen in environments that satisfy all [prerequisites for the](intro.md#prerequisites) **SEO-friendly URLs for Reactive Web Apps**. To make your redirects work, first check what version of React your OutSystems apps are running.
+In a small number of OutSystems Cloud environments the redirect rules may not work initially. This may happen in environments that satisfy all [prerequisites for the technical preview](intro.md#prerequisites) **SEO-friendly URLs for Reactive Web Apps**. To make your redirects work, first check what version of React your OutSystems apps are running.
 
 Do the following in Google Chrome to get the React version your apps are using:
 
@@ -108,7 +108,7 @@ Do the following in Google Chrome to get the React version your apps are using:
 1. Paste the following code into the console: `console.log("React Version " + require("react").version);`
 1. Press **Enter** to confirm. The console returns the React version.
 
-If your React version is **lower than 16**, contact OutSystems Support and inform them that your OutSystems Cloud environment isn't running React 16. There may be a valid technical reason why your OutSystems Cloud is still using React 15. 
+If your React version is **lower than 16**, please contact OutSystems Support and inform them that your OutSystems Cloud environment isn't running React 16. There may be a valid technical reason why your OutSystems Cloud is still using React 15. 
 
 
 ### Empty string in a required parameter causes an error

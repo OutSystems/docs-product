@@ -9,6 +9,12 @@ You can improve the performance of your app by enabling the caching of some elem
 Caching is RAM-based and is available in every front-end server. Whenever memory space is required, the elements are removed from the cache using the least recently used algorithm.
 
 
+<div class="info" markdown="1">
+
+The cache invalidation system action can have a negative performance impact during the first access of an application. It also increases the load in the servers due to the compilation of the applications in IIS. For these reasons use of the cache invalidation system action should be kept to a minimum.
+
+</div>
+
 These are the elements that **support** caching:
 
 * The lists returned by Aggregate and SQL.

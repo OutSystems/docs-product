@@ -1,10 +1,4 @@
-# Should be added to default rules, uncommenting the line
-#removeDebug removeLines *;
-
-# obfuscate class okhttp3.** ;
 preserve class * ;
-
-# obfuscate class android.** ;
 
 obfuscate class java.** ;
 obfuscate class javax.** ;
@@ -36,7 +30,7 @@ obfuscate class com.outsystems.** ;
 
 preserve com.google.android.gms.measurement.* ;
 
-#GSON
+# GSON
 preserve class * implements com.google.gson.TypeAdapter ;
 preserve class * implements com.google.gson.TypeAdapterFactory ;
 preserve class * implements com.google.gson.JsonSerializer ;
@@ -61,7 +55,6 @@ match class org.apache.cordova.engine.SystemWebViewEngine { preserve org.apache.
 preserve class com.ionicframework.cordova.webview.** ;
 
 # AppFeedback
-# OSECTAppInfo private fields are accessed directly in the string passed to evaluateJavascript()
 match class com.outsystems.android.mobileect.parsing.OSECTAppInfo {
     preserve private <fields> ;
 }
@@ -75,11 +68,11 @@ preserve class okhttp3.internal.publicsuffix.PublicSuffixDatabase {
 # SQLCipher
 preserve class net.sqlcipher.** ;
 
-#Pandora
+# Pandora
 # https://github.com/whataa/pandora
 preserve class tech.linjiang.pandora.cache.** ;
 
-#CardIoPlugin
+# CardIoPlugin
 #https://github.com/card-io/card.io-Android-SDK/blob/5.1.2/SampleApp/proguard.cfg
 preserve class io.card.payment.DetectionInfo ;
 
@@ -92,12 +85,12 @@ match class io.card.payment.** {
     preserve protected *;
 }
 
-#PushWooshPlugin
+# PushWooshPlugin
 # https://github.com/Pushwoosh/pushwoosh-android-sdk/blob/master/Samples/Android-Advanced/app/proguard-rules.pro
 preserve class com.pushwoosh.** ;
 preserve class com.arellomobile.** ;
 
-#zBar Barcode Plugin
+# zBar Barcode Plugin
 preserve class net.sourceforge.zbar.** ;
 
 # Glide
@@ -164,17 +157,14 @@ preserve interface android.support.customtabs.ICustomTabsService {
 }
 
 # SQLite
-# This class is being instantiated in the native side. Not preserving it results in a crash
 preserve class io.liteglue.SQLiteResponse ;
 
-# Should be removed from default rules
 untouchable keepStrings *;
 
-# Should be removed from default rules
 preserve class javax.inject.** ;
 
 include builtin:default-unobfuscate.cfg ;
 
-# Not needed for later AppShield Plugin versions (since version 1.2.0) 
+# Can be removed later AppShield Plugin versions greater or equal to 1.2.0
 whitelistPath "stamp-cert-sha256";
 whitelistPath "stamp-cert-sha1";

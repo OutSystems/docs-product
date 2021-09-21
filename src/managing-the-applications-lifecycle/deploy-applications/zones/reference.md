@@ -24,7 +24,13 @@ Is Default for new modules
 :   Boolean parameter that, when active, states that the current deployment zone is the [default deployment zone](<intro.md#default-deployment-zone>). You can set a deployment zone as the default one by clicking "Set as Default".
 
 Deployment Zone Address
-:   Address for all applications living in the deployment zone, intended for internal communications. When applications in other deployment zones need to refer applications living in this deployment zone and do not want to use the environment URL, they will use this address. 
+:   Address for all applications living in the deployment zone, intended for internal communications. When applications in other deployment zones need to refer applications living in this deployment zone and do not want to use the environment URL, they will use this address.
+
+    <div class="info" markdown="1">
+
+    You can only change the Deployment Zone Address if there are no modules deployed in that deployment zone.
+
+    </div>
 
     This address may vary according to your network architecture. For example with only one front-end server, the "Deployment Zone Address" can be the machine's hostname. However, with multiple front-ends, the "Deployment Zone Address" should be the Fully Qualified Domain Name (FQDN) of the device responsible for the communication between these front-end servers, for example, a load balancer.
 
@@ -39,8 +45,6 @@ Deployment Zone Address
     Valid examples: `192.168.42.23`, `intranet.mydomain.com`, `rincewind.lan`
   
     Invalid examples: `192.168.42.23/site`, `192.168.42.23:8080/site`, `rincewind.lan/university`
-    
-    Please bear in mind that it is only possible to change the Deployment Zone Address of a deployment zone if that zone has no modules in it.
 
 Use HTTPS for internal communications
 :   Boolean parameter that, when active, will cause all communication made by OutSystems applications in another deployment zones to applications in the current deployment zone to be made via HTTPS.

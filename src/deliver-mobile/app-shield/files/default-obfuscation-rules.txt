@@ -1,8 +1,6 @@
 # Should be added to default rules, uncommenting the line
 #removeDebug removeLines *;
 
-obfuscateStyle:promonOld *;
-
 # obfuscate class okhttp3.** ;
 preserve class * ;
 

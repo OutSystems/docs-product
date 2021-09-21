@@ -425,6 +425,8 @@
         - href: deliver-mobile/distribute-pwa/advanced.md
         - href: deliver-mobile/distribute-pwa/troubleshooting-know-issues.md
     - href: deliver-mobile/app-shield/intro.md
+    - topics:
+        - href: deliver-mobile/app-shield/obfuscate-custom-rules.md
     - href: deliver-mobile/compliance-with-third-party-licenses.md
 
 # Extensibility and Integration

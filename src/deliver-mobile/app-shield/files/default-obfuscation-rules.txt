@@ -1,0 +1,182 @@
+# Should be added to default rules, uncommenting the line
+#removeDebug removeLines *;
+
+obfuscateStyle:promonOld *;
+
+# obfuscate class okhttp3.** ;
+preserve class * ;
+
+# obfuscate class android.** ;
+
+obfuscate class java.** ;
+obfuscate class javax.** ;
+obfuscate class org.xmlpull.** ;
+obfuscate class org.conscrypt.** ;
+obfuscate class org.json.** ;
+
+obfuscate class com.google.android.gms.** ;
+
+# LocalStorage
+obfuscate class com.ianhanniballake.** ;
+# FileUtils
+obfuscate class com.ipaulpro.afilechooser.** ;
+# Notifications Plugin
+obfuscate class de.appplant.cordova.plugin.** ;
+# Puree Logger
+obfuscate class com.cookpad.puree.** ;
+
+obfuscate class okio.** ;
+obfuscate class io.liteglue.** ;
+obfuscate class tech.linjiang.pandora.** ;
+obfuscate class io.card.** ;
+obfuscate class com.bumptech.glide.** ;
+obfuscate class com.onesignal.** ;
+obfuscate class com.google.android.gms.**;
+
+# Outsystems
+obfuscate class com.outsystems.** ;
+
+preserve com.google.android.gms.measurement.* ;
+
+#GSON
+preserve class * implements com.google.gson.TypeAdapter ;
+preserve class * implements com.google.gson.TypeAdapterFactory ;
+preserve class * implements com.google.gson.JsonSerializer ;
+preserve class * implements com.google.gson.JsonDeserializer ;
+
+# Outsystems
+preserve class com.outsystems.plugins.oslogger.engines.puree.OSPureeLog ;
+
+# Enable proguard with Cordova
+preserve class org.apache.cordova.** ;
+preserve class com.google.** ;
+preserve class * extends org.apache.cordova.CordovaPlugin;
+
+match class org.apache.cordova.CordovaBridge { preserve org.apache.cordova.PluginManager pluginManager; }
+match class org.apache.cordova.CordovaInterfaceImpl { preserve org.apache.cordova.PluginManager pluginManager; }
+match class org.apache.cordova.CordovaResourceApi { preserve org.apache.cordova.PluginManager pluginManager; }
+match class org.apache.cordova.CordovaWebViewImpl { preserve org.apache.cordova.PluginManager pluginManager; }
+match class org.apache.cordova.ResumeCallback { preserve org.apache.cordova.PluginManager pluginManager; }
+match class org.apache.cordova.engine.SystemWebViewEngine { preserve org.apache.cordova.PluginManager pluginManager; }
+
+# These classes contain references to cordova webView
+preserve class com.ionicframework.cordova.webview.** ;
+
+# AppFeedback
+# OSECTAppInfo private fields are accessed directly in the string passed to evaluateJavascript()
+match class com.outsystems.android.mobileect.parsing.OSECTAppInfo {
+    preserve private <fields> ;
+}
+
+# OkHttp
+# https://github.com/square/okhttp/blob/master/okhttp/src/main/resources/META-INF/proguard/okhttp3.pro
+preserve class okhttp3.internal.publicsuffix.PublicSuffixDatabase {
+   preserve <members> ;
+}
+
+# SQLCipher
+preserve class net.sqlcipher.** ;
+
+#Pandora
+# https://github.com/whataa/pandora
+preserve class tech.linjiang.pandora.cache.** ;
+
+#CardIoPlugin
+#https://github.com/card-io/card.io-Android-SDK/blob/5.1.2/SampleApp/proguard.cfg
+preserve class io.card.payment.DetectionInfo ;
+
+preserve class io.card.payment.CreditCard ;
+preserve class io.card.payment.CreditCard$1 ;
+
+preserve class io.card.payment.CardScanner ;
+match class io.card.payment.** {
+    preserve public *;
+    preserve protected *;
+}
+
+#PushWooshPlugin
+# https://github.com/Pushwoosh/pushwoosh-android-sdk/blob/master/Samples/Android-Advanced/app/proguard-rules.pro
+preserve class com.pushwoosh.** ;
+preserve class com.arellomobile.** ;
+
+#zBar Barcode Plugin
+preserve class net.sourceforge.zbar.** ;
+
+# Glide
+preserve public class * implements com.bumptech.glide.module.GlideModule ;
+preserve public class * extends com.bumptech.glide.module.AppGlideModule ;
+preserve public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  preserve **[] $VALUES;
+  preserve public *;
+}
+
+preserve class cz.msebera.android.httpclient.** ;
+preserve class com.loopj.android.http.** ;
+
+# OneSignal
+# These 2 methods are called with reflection.
+preserve class com.google.android.gms.common.api.GoogleApiClient {
+    void connect();
+    void disconnect();
+}
+preserve class com.onesignal.ActivityLifecycleListenerCompat** {*;}
+# Observer backcall methods are called with reflection
+preserve class com.onesignal.OSSubscriptionState {
+    void changed(com.onesignal.OSPermissionState);
+}
+
+preserve class com.onesignal.OSPermissionChangedInternalObserver {
+    void changed(com.onesignal.OSPermissionState);
+}
+
+preserve class com.onesignal.OSSubscriptionChangedInternalObserver {
+    void changed(com.onesignal.OSSubscriptionState);
+}
+
+preserve class ** implements com.onesignal.OSPermissionObserver {
+    void onOSPermissionChanged(com.onesignal.OSPermissionStateChanges);
+}
+
+preserve class ** implements com.onesignal.OSSubscriptionObserver {
+    void onOSSubscriptionChanged(com.onesignal.OSSubscriptionStateChanges);
+}
+
+preserve class com.onesignal.shortcutbadger.impl.AdwHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.ApexHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.AsusHomeLauncher { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.DefaultBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.EverythingMeHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.HuaweiHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.LGHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.NewHtcHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.NovaHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.OPPOHomeBader { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.SamsungHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.SonyHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.VivoHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.XiaomiHomeBadger { <init>(...); }
+preserve class com.onesignal.shortcutbadger.impl.ZukHomeBadger { <init>(...); }
+# Proguard ends up removing this class even if it is used in AndroidManifest.xml so force keeping it.
+preserve public class com.onesignal.ADMMessageHandler ;
+preserve class com.onesignal.JobIntentService$* ;
+preserve class com.onesignal.OneSignalUnityProxy ;
+# This method is being called by OneSignalChromeTab class
+preserve interface android.support.customtabs.ICustomTabsService {
+    preserve public boolean warmup(long);
+}
+
+# SQLite
+# This class is being instantiated in the native side. Not preserving it results in a crash
+preserve class io.liteglue.SQLiteResponse ;
+
+# Should be removed from default rules
+untouchable keepStrings *;
+
+# Should be removed from default rules
+preserve class javax.inject.** ;
+
+include builtin:default-unobfuscate.cfg ;
+
+# Not needed for later AppShield Plugin versions (since version 1.2.0) 
+whitelistPath "stamp-cert-sha256";
+whitelistPath "stamp-cert-sha1";

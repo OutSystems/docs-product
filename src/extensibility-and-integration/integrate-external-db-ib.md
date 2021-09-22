@@ -53,6 +53,8 @@ To integrate with an external database using Integration Builder:
 
     Note: This step only occurs if you are using a personal environment. 
 
+   ![Validate your credentials](<images/validate-credentials-ib.png>)
+
 1. Follow the wizard steps to configure the integration. 
 
     <ul><li>Connect integration</li>
@@ -68,20 +70,30 @@ The following steps are an example of an  integration with MySQL:
 1. Select a connection and click **Next**.
 
     **Note**: The list of connections only displays  the connections you have permissions to view.
+    
+    ![Select a connection](<images/select-db-ib.png>) 
 
     Alternatively, you can create a new connection. To do this:
 
-    a. Click **+ Create a connection**.
+    a. Click **Create connection**.
+    
+    ![Create a connection](<images/connect-integration-ib.png>) 
 
     b. Click **Create connection in Service Center**.
 
-    c. In Service Center, enter the mandatory details and click **Create**.
+    ![Create a connection in Service Studio](<images/create-connection-ib.png>) 
+
+    c. In Service Center, enter the mandatory details and click **Create connection**.
+
+    ![Create a database connection in Service Center](<images/create-db-connection-sc.png>)
 
     d. Go back to Integration Builder and continue with step 1.
 
 ### Select database
 
 1. Select the database to consume with the integration and click **Next**.
+
+![Select a connection](<images/connect-integration-ib.png>) 
 
 ### Add tables
 

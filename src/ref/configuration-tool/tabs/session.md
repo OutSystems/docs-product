@@ -32,6 +32,8 @@ Error Messages Language | Allows you to set the NLS_LANGUAGE setting when connec
 
 ## Session section
 
+**Note:** these configurations are read-only when Authentication is set to `Windows Authentication` in the *Platform* tab.
+
 Configuration | Description | Default value
 ---|---|---
 User | Name of the user that's the owner of OutSystems session tables. | `OSSTATE`

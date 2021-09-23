@@ -53,24 +53,24 @@ For advanced settings, click the **Advanced Settings** link.
 
 The Administrator section allows you to configure the database user that manages the logging database. This user owns the log tables, views, and indexes.
 
+**Note:** these configurations are read-only when Authentication is set to `Windows Authentication` in the *Platform* tab.
+
 Configuration | Description | Default value  
 --------------|-------------|--------------  
 User | Name of the user that's the owner of log tables and associated objects. | `OSADMIN_LOG`  
 Password | Password for the user. |
 
-Note: these configurations are read-only when Authentication is set to `Windows Authentication` in the **Platform** tab.
-
 ## Runtime section
 
 The Runtime section allows you to configure the database user used by the applications at runtime for logging purposes. This user owns the tables created by developers in the development environment.
+
+**Note:** these configurations are read-only when Authentication is set to `Windows Authentication` in the *Platform* tab.
 
 Configuration | Description | Default value  
 --------------|-------------|--------------  
 User | Name of the user used by the applications at runtime for logging purposes. | `OSRUNTIME_LOG`
 Password | Password of the specified user. |
   
-Note: these configurations are read-only when Authentication is set to `Windows Authentication` in Platform tab.
-
 ## Create/Upgrade Database button
 
 To create all the database objects (tables, indexes, views, etc) required for logging purposes, click **Create/Upgrade Database**.

@@ -71,7 +71,7 @@ The following steps are an example of an  integration with MySQL:
 
     **Note**: The list of connections only displays  the connections you have permissions to view.
     
-    ![Select a connection](<images/select-db-ib.png>) 
+    ![Select a connection](<images/select-connection-ib.png>) 
 
     Alternatively, you can create a new connection. To do this:
 
@@ -93,22 +93,28 @@ The following steps are an example of an  integration with MySQL:
 
 1. Select the database to consume with the integration and click **Next**.
 
-![Select a connection](<images/connect-integration-ib.png>) 
+    ![Select database](<images/select-database-ib.png>)
+
 
 ### Add tables
 
-1. Select the tables to consume with the integration and click Next.
-When you publish the integration, these tables are represented as entities in Service Studio.
+1. Select the tables to consume with the integration and click **Next**.
+    
+    To view the attributes of a table, select the relevant table. 
+
+    When you publish the integration, these tables are represented as entities in Service Studio.
+
+     ![Add tables](<images/add-tables-ib.png>)
 
    **Note:** You can select more tables later on by editing the published integration in Integration Builder.
-
-    To view the attributes of a table, select the relevant table. 
 
 ### Review integration and publish
 
 1. Review the integration information, update if necessary, and click **Publish**.
 
     The published integration is now available in your environment and ready to be used in your OutSystems applications. 
+
+    ![Add tables](<images/review-integration-ib.png>)
 
 ### Use the integration in your application
 

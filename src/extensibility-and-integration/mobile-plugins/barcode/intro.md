@@ -39,13 +39,13 @@ To create the logic to scan for barcodes, follow these steps in Service Studio:
 
 2. To open the camera in your app for scanning, drag the **ScanBarcode** action to the flow.
 
-    ![Client action to scan a barcode](images/client-action-ss.png)
+    ![Client action to scan a barcode](images/client-action-ss.png?width=400)
 
     In the **ScanBarcode** action you can set scan instructions, back or front camera, or UI orientation, and enable the scan button. For more information about the **ScanBarcode** action, see [Scanning options](#scanning-options).
 
 3. Check the **ScanResult** text for the result of the scan.
 
-To prevent errors, it's a good practice to first check if the plugin is available using the action **CheckBarcodePlugin**. To confirm the device can read the barcodes, verify that the value of **ScanBarcode.Success** is true. See the [sample app](#sample-app) for the examples. 
+To prevent errors, it's a good practice to first check if the plugin is available using the action **CheckBarcodePlugin**. To confirm the device can read the barcodes, verify that the value of **ScanBarcode.Success** is true. See the [demo app](#demo-app) for the examples.
 
 ## Reference
 

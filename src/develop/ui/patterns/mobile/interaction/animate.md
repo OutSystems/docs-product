@@ -7,7 +7,7 @@ summary: Animate adds default animations to emphasize elements as they appear on
 
 You can use the Animate UI Pattern to create animations within your app. This UI pattern allows you to emphasize elements as they appear on screen which enhances the overall usability of the app.
 
-![](<images/animate-2-ss.png?width=800>)
+![](images/animation.gif)
 
 **How to use the Animate UI Pattern**
 

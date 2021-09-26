@@ -13,7 +13,7 @@ SSL Pinning uses a customized version of the SSL certificate validation and does
 
 <div class="info" markdown="1">
 
-See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a demo app.
 
 </div>
 

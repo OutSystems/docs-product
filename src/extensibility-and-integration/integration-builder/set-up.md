@@ -18,7 +18,7 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
 <div class="info" markdown="1">
 
-Keep in min:
+Keep in mind:
 
 * Each integration may have additional requirements. To verify, check the specific integration documentation.
 
@@ -71,7 +71,7 @@ When using an on-premises infrastructure with Integration Builder, you need to s
 
 After you develop and publish the first integration, the **Setup** widget at the bottom right prompts you to add the environment addresses.
 
-To setup the environments, follow these steps:
+To set up the environments, follow these steps:
 
 1. Click the **Setup** widget to expand it, and the click on **Setup environments**.
 

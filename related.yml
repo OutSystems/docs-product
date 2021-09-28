@@ -914,6 +914,9 @@
 - managing-the-applications-lifecycle/containers/intro.md:
     - managing-the-applications-lifecycle/deploy-applications/zones/intro.md
 
+- managing-the-applications-lifecycle/deploy-applications/zones/intro.md:
+    - managing-the-applications-lifecycle/containers/architecture.md
+
 - managing-the-applications-lifecycle/containers/guide-ecs.md:
     - one-way: managing-the-applications-lifecycle/containers/intro.md
     - one-way: managing-the-applications-lifecycle/deploy-applications/zones/intro.md

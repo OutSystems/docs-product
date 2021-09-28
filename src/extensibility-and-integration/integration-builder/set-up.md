@@ -22,7 +22,7 @@ Keep in mind:
 
 * Each integration may have additional requirements. To verify, check the specific integration documentation.
 
-* When using Integration Builder with Multiple Database Catalogs MDC), and publishing to a development environment, a prompt displays for you to download your solution. Currently Integration Builder is unable to publish to a development environment. You can then use Service Center to publish your integration solution
+* When using Integration Builder with Multiple Database Catalogs (MDC), and publishing to a development environment, a prompt displays for you to download your solution. Currently Integration Builder is unable to publish to a development environment. You can then use Service Center to publish your integration solution
 
 </div>
 

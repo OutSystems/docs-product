@@ -12,13 +12,13 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
 * All environments, except for the LifeTime environment, must:
 
-  * Use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.
+      * Use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.
 
-  * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. Check [Integration Builder network requirements](../../getting-started/network-requirements.md#integration-builder) for detailed information.
+      * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. Check [Integration Builder network requirements](../../setup/network-requirements.md#integration-builder) for detailed information.
 
 <div class="info" markdown="1">
 
-Keep in min:
+Keep in mind:
 
 * Each integration may have additional requirements. To verify, check the specific integration documentation.
 
@@ -71,7 +71,7 @@ When using an on-premises infrastructure with Integration Builder, you need to s
 
 After you develop and publish the first integration, the **Setup** widget at the bottom right prompts you to add the environment addresses.
 
-To setup the environments, follow these steps:
+To set up the environments, follow these steps:
 
 1. Click the **Setup** widget to expand it, and the click on **Setup environments**.
 

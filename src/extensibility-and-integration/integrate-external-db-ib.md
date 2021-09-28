@@ -9,6 +9,10 @@ You can integrate your applications  with external databases including DB2 iSeri
 
 For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems.](../setup/system-requirements.md)
 
+## Prerequisites
+
+You must be using Platform Server 11.13.2 or later.
+
 To integrate with an external database using Integration Builder:
 
 1. Log into Integration Builder with your development environment URL, your username and password.
@@ -24,6 +28,8 @@ To integrate with an external database using Integration Builder:
 1. Use the integration in your application.
 
 ## How to integrate with an external database
+
+The following steps are an example of an integration with MySQL.
 
 ### Log into Integration Builder
 
@@ -63,9 +69,14 @@ To integrate with an external database using Integration Builder:
     <li>Review integration</li>
     <li>Publish</li></ul>
 
-The following steps are an example of an  integration with MySQL:
-
 ### Connect integration
+
+You can connect an integration in the following ways:
+* **Option 1**: Select a connection from a list of available connections 
+* **Option 2**: Create a new connection
+* **Option 3**: Request a connection 
+
+**Option 1**
 
 1. Select a connection and click **Next**.
 
@@ -73,21 +84,35 @@ The following steps are an example of an  integration with MySQL:
     
     ![Select a connection](<images/select-connection-ib.png>) 
 
-    Alternatively, you can create a new connection. To do this:
+**Option 2**
 
-    a. Click **Create connection**.
-    
-    ![Create a connection](<images/connect-integration-ib.png>) 
+1. Click **+ Create a connection**.
 
-    b. Click **Create connection in Service Center**.
+1. Click **Create connection in Service Center**. 
 
-    ![Create a connection in Service Studio](<images/create-connection-ib.png>) 
+    ![Create a connection in Service Studio](<images/create-connection-ib.png>)
 
-    c. In Service Center, enter the mandatory details and click **Create connection**.
+1. In Service Center, enter the mandatory details and click **Create**.
 
     ![Create a database connection in Service Center](<images/create-db-connection-sc.png>)
 
-    d. Go back to Integration Builder and continue with step 1.
+    When the database is created, it appears in your connection list in Integration Builder. 
+
+4. Go back to Integration Builder, select a connection and click **Next**, then continue with [selecting a database](#select-database).
+
+**Option 3**
+
+1. If your credentials do not allow you to create a connection, you can request your OutSystems Administrator to create it by clicking **Request a new connection**.
+
+    ![Request a new connection](<images/create-connection-ib.png>)
+ 
+ 1. Enter all connection details to allow an OutSystem Administrator to create the connection and click **Send request**.
+
+    ![Send Request](<images/send-request-new-db-ib.png>)
+
+    When your request is approved it will appear in your connection list in Integration Builder. 
+
+1. Go back to Integration Builder, select a connection and click **Next**, then continue with [selecting a database](#select-database).
 
 ### Select database
 
@@ -95,6 +120,7 @@ The following steps are an example of an  integration with MySQL:
 
     ![Select database](<images/select-database-ib.png>)
 
+1. Go back to Integration Builder, select a connection and click Next, then continue with selecting a database.
 
 ### Add tables
 
@@ -123,5 +149,18 @@ The following steps are an example of an  integration with MySQL:
 1. Add a dependency to the integration and select the entities you want to use in your application.
 
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
+
+## Known limitations 
+* Previous external database extensions created in Integration Studio can not be edited in Integration Builder.
+
+* External database extensions created in Integration Builder can not be edited in Integration Studio.
+
+* An external database integration created in Integration Builder only supports one database at a time. 
+
+* It is not possible to change attribute data types for external database tables.
+
+* Default values are fixed and defined by Integration Builder as with other external providers, such as SAP and Salesforce.
+
+* It is not possible to rename entities.
 
 For more information about integrating with external databases, see [Integrating OutSystems with your ecosystem](https://success.outsystems.com/Support/Enterprise_Customers/Integrating_OutSystems_with_your_ecosystem).

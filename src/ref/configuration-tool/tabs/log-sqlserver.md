@@ -53,7 +53,11 @@ For advanced settings, click the **Advanced Settings** link.
 
 The Administrator section allows you to configure the database user that manages the logging database. This user owns the log tables, views, and indexes.
 
-**Note:** these configurations are read-only when Authentication is set to `Windows Authentication` in the *Platform* tab.
+<div class="info" markdown="1">
+
+These configurations are read-only when Authentication is set to `Windows Authentication` in the **Platform** tab.
+
+</div>
 
 Configuration | Description | Default value  
 --------------|-------------|--------------  
@@ -64,7 +68,11 @@ Password | Password for the user. |
 
 The Runtime section allows you to configure the database user used by the applications at runtime for logging purposes. This user owns the tables created by developers in the development environment.
 
-**Note:** these configurations are read-only when Authentication is set to `Windows Authentication` in the *Platform* tab.
+<div class="info" markdown="1">
+
+These configurations are read-only when Authentication is set to `Windows Authentication` in the **Platform** tab.
+
+</div>
 
 Configuration | Description | Default value  
 --------------|-------------|--------------  

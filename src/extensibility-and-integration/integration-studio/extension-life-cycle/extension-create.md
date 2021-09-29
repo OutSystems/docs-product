@@ -8,7 +8,7 @@ If you don't have LifeTime installed in your infrastructure, User Management is 
 
 ## How to create an extension
 
-1. In the **File** menu or in the toolbar, click ![](images/new.gif) **New**.
+1. In the **File** menu or in the toolbar, click ![](images/new.png) **New**.
 
 1. Provide the information in the **Connect to Environment** window and click **Connect**. This step is required only once per session.  
 

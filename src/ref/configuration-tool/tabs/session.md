@@ -32,7 +32,11 @@ Error Messages Language | Allows you to set the NLS_LANGUAGE setting when connec
 
 ## Session section
 
-**Note:** these configurations are read-only when Authentication is set to `Windows Authentication` in the *Platform* tab.
+<div class="info" markdown="1">
+
+These configurations are read-only when Authentication is set to `Windows Authentication` in the **Platform** tab.
+
+</div>
 
 Configuration | Description | Default value
 ---|---|---

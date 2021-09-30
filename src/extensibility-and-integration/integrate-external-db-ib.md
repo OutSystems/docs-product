@@ -3,7 +3,7 @@ summary:
 tags: 
 ---
 
-# Integrate with an external database using Integration Builder (Technical Review)
+# Technical Preview - Integrate with an external database using Integration Builder 
 
 You can integrate your applications  with external databases including DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can extract, load, transform, and update data from the external database.
 
@@ -11,7 +11,23 @@ For more information about the supported databases and the systems that are cert
 
 ## Prerequisites
 
-You must be using Platform Server 11.13.2 or later.
+Platform Server 11.13.2 or later
+
+## Known limitations 
+
+* Previous external database extensions created in Integration Studio can not be edited in Integration Builder.
+
+* External database extensions created in Integration Builder can not be edited in Integration Studio.
+
+* An external database integration created in Integration Builder only supports one database at a time. 
+
+* It is not possible to change attribute data types for external database tables.
+
+* Default values are fixed and defined by Integration Builder as i done by other external providers, such as SAP and Salesforce.
+
+* It is not possible to rename entities.
+
+## Process overview
 
 To integrate with an external database using Integration Builder:
 
@@ -63,24 +79,20 @@ The following steps are an example of an integration with MySQL.
 
 1. Follow the wizard steps to configure the integration. 
 
-    <ul><li>Connect integration</li>
-    <li>Select database</li>
-    <li>Add tables</li>
-    <li>Review integration</li>
-    <li>Publish</li></ul>
-
 ### Connect integration
 
 You can connect an integration in the following ways:
-* **Option 1**: Select a connection from a list of available connections 
-* **Option 2**: Create a new connection
-* **Option 3**: Request a connection 
+* [**Option 1**](#option-1): If you already have a database connection, you can **select a connection** from the list of available connections.
+
+* [**Option 2**](#option-2): If you need a new database connection and have the required permissions,you can **create a new connection**.
+
+* [**Option 3**](#option-3): Request a connection. If you need a new connection but don't have the needed permissions, you can **request a new connection**. 
 
 **Option 1**
 
-1. Select a connection and click **Next**.
+1. Select a connection and click, click **Next** and then continue with with [selecting a database](#select-database).
 
-    **Note**: The list of connections only displays  the connections you have permissions to view.
+    **Note**: The list of connections only displays the connections you have permissions to view.
     
     ![Select a connection](<images/select-connection-ib.png>) 
 
@@ -98,7 +110,7 @@ You can connect an integration in the following ways:
 
     When the database is created, it appears in your connection list in Integration Builder. 
 
-4. Go back to Integration Builder, select a connection and click **Next**, then continue with [selecting a database](#select-database).
+1. Go back to Integration Builder, select a connection, click **Next**, and then continue with [selecting a database](#select-database).
 
 **Option 3**
 
@@ -112,7 +124,7 @@ You can connect an integration in the following ways:
 
     When your request is approved it will appear in your connection list in Integration Builder. 
 
-1. Go back to Integration Builder, select a connection and click **Next**, then continue with [selecting a database](#select-database).
+1. Go back to Integration Builder, select a connection, click **Next**, and then continue with [selecting a database](#select-database).
 
 ### Select database
 
@@ -148,19 +160,8 @@ You can connect an integration in the following ways:
 
 1. Add a dependency to the integration and select the entities you want to use in your application.
 
+    ![Add dependency](<images/add-dep-ss.png>)
+
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
-
-## Known limitations 
-* Previous external database extensions created in Integration Studio can not be edited in Integration Builder.
-
-* External database extensions created in Integration Builder can not be edited in Integration Studio.
-
-* An external database integration created in Integration Builder only supports one database at a time. 
-
-* It is not possible to change attribute data types for external database tables.
-
-* Default values are fixed and defined by Integration Builder as with other external providers, such as SAP and Salesforce.
-
-* It is not possible to rename entities.
 
 For more information about integrating with external databases, see [Integrating OutSystems with your ecosystem](https://success.outsystems.com/Support/Enterprise_Customers/Integrating_OutSystems_with_your_ecosystem).

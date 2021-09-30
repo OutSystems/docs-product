@@ -2,28 +2,60 @@
 summary: Replace data in Screens created from Screen Templates with your data. The replacement can be manual or semi-automatic.
 ---
 
-# Replace the sample data in Screens created from Screen Templates
+# Replace sample data in screens
 
-You can replace the Sample Data either manually or semi-automatically, in a Screen you create from a Screen Template. The manual replacement involves editing the data sources and updating the UI references, and can be assisted by the semi-automated replacement.
+Once you’ve built an app that contains screen templates or accelerators, you may want to replace the sample data in your screens with your own data. Sample data can be replaced [manually](#replace-sample-data-manually) or [automatically](#replace-sample-data-automatically). 
 
-## Manual replacement of Sample Data
+## Replace sample data manually
 
-Use the manual replacement when you want full control over the changes in the Screen. Here are some examples of the manual replacement steps.
+Manually replacing sample data allows you to have full control over the changes you make on the screen. To replace sample data, follow these steps: 
 
-1. Remove the UI elements that you don't need. This minimizes the number of warnings in the later steps.
-2. Delete the Sample Data references. In the Element Tree, locate the Screen you want to edit. Remove the source of the data: in a Traditional Web App, open the aggregates inside the **Preparation** Action and delete the source entries inside the aggregates; in a Mobile App, delete the source entries inside the aggregates assigned to the Screen.
-3. Insert the entries for new sources.
-4. Replace the data references.
-5. Review the errors and warnings in the **TrueChange** pane. Double-click on each, and fix them by assigning a valid variable or by deleting the associated Widget.
+**Note** These steps are example steps only and may differ depending on the  type of screen and the type of data you are replacing. 
 
-## Semi-automatic replacement of Sample Data
+1. Compare the screen with your data model and remove the UI elements you don't need. 
 
-The semi-automatic replacement works by dragging and dropping an Entity to the Widget that supports the automatic data replacement. Sometimes the labels associated with the data in your Screen are also replaced. The semi-automatic replacement is designed as an assistance to the manual data replacement and it does not always result in best matches. 
+    Removing these UI elements reduces the number of warnings and errors in the later steps.
 
-When replacing the data inside the Screen created from a Screen Template, you can only replace server data with server data, and local data with local data. The drag and drop data replacement accelerators do not work with the mixed data sources.
+1. Delete the data source entities.
+    * In Reactive Web Apps, for screens that use data actions:
+        * Open the data action
+        * Delete the aggregates you don’t need
+        * Add your own data fetching, for example, aggregates or SQL, to the action flow and apply any necessary filtering
+    * In Reactive Web Apps, for screens that use aggregates:
+        * Delete the aggregates you don’t need
+        * Add your own data fetching, for example, aggregates or data action to the screen and apply any necessary filtering
+    * In Traditional Web apps, for screens that use aggregates:
+        * Open the aggregates inside the Preparation action 
+        * Delete the source references inside the aggregate
 
-1. Drag and drop the Entity, that has the data you want to use over the Widget for which you want to replace the data.
-2.  Check the **TrueChange** tab for errors and warnings and fix them.
-3.  Verify the Widget labels correspond to the data and edit the labels or Expressions if needed.
+1. Check the TrueChange tab for errors and warnings and fix them.
 
-For more information about importing data from an Excel file to an entity, see [Bootstrap an Entity Using an Excel File](../../data/excel-bootstrap.md)
+## Replace sample data automatically
+
+<div class="info" markdown="1">
+Include your informational text here.
+</div>
+
+**Warning** Automatic replacement is only supported by the Chart, Form, Table, and List widgets.
+
+You can automatically replace data in your screen by dragging and dropping an entity to the widget that supports automatic data replacement (Form, Table, List, and Gallery widgets).
+
+Sometimes, the labels associated with the data in your screen are also replaced. Automatic replacement of data is designed as an assistance to the manual data replacement as it does not always result in best matches.
+
+**Note**: When replacing data inside a Mobile App screen that has been created from a screen template or accelerator, you can only replace server data with server data and local data with local data. Replacing data by dragging and dropping does not work with mixed data sources.
+
+1. Drag and drop the data source entity that contains your data to the widget for which you want to replace the data.
+
+    **Note**: You can only drag and drop one entity at a time.
+
+1. After dragging and dropping the new entity to the widget, check that the widget displays all of the correct attributes.
+
+    You can drag and drop any missing attributes or entities that are related to the  data source you added in step 1.
+
+1. Verify that the widget labels correspond to the data and edit the labels or expressions if necessary.
+
+    For example, when using the Table widget, check that the information of each Header Cell corresponds to the information displayed in the related cell. 
+
+1. Check any logic associated with the widget, for example, a dropdown filter in a Table, and replace the sample data (List property) manually. 
+
+1. Check the TrueChange tab for errors and warnings and fix them.

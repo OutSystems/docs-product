@@ -70,6 +70,11 @@ Removing the probes from the infrastructure (both LifeTime and code analysis env
 
 By doing this, the LifeTime Plugin is removed and the infrastructure will be deactivated on Architecture Dashboard, revoking the user's access.
 
+### Can I change the target environment of a code analysis probe?
+
+You can change the target environment, but before doing so contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existinig data from Architecture Dashboard. Otherwise, data inconsistencies may occur. After data is deleted, follow the [setup procedure](how-setup.md) to configure a new target environment. 
+
+
 ## Security, legal and compliance - registration in Architecture Dashboard {#data-faq}
 
 ### What information is sent to Architecture Dashboard, what information is stored, and how is it stored?

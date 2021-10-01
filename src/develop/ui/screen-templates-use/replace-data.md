@@ -18,25 +18,33 @@ Manually replacing sample data allows you to have full control over the changes 
 
 1. Delete the data source entities.
     * In Reactive Web Apps, for screens that use data actions:
+
         * Open the data action
+
         * Delete the aggregates you don’t need
+
         * Add your own data fetching, for example, aggregates or SQL, to the action flow and apply any necessary filtering
+
     * In Reactive Web Apps, for screens that use aggregates:
+
         * Delete the aggregates you don’t need
+
         * Add your own data fetching, for example, aggregates or data action to the screen and apply any necessary filtering
+
     * In Traditional Web apps, for screens that use aggregates:
+
         * Open the aggregates inside the Preparation action 
+
         * Delete the source references inside the aggregate
 
 1. Check the TrueChange tab for errors and warnings and fix them.
 
 ## Replace sample data automatically
 
-<div class="info" markdown="1">
-Include your informational text here.
+<div class="warning" markdown="1">
+Automatic replacement is only supported by the Chart, Form, Table, and List widgets.
 </div>
 
-**Warning** Automatic replacement is only supported by the Chart, Form, Table, and List widgets.
 
 You can automatically replace data in your screen by dragging and dropping an entity to the widget that supports automatic data replacement (Form, Table, List, and Gallery widgets).
 

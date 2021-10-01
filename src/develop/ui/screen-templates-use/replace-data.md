@@ -1,10 +1,10 @@
 ---
-summary: Replace data in Screens created from Screen Templates with your data. The replacement can be manual or semi-automatic.
+summary: Replace data in screens created from screen templates or accelerators with your data. 
 ---
 
 # Replace data in screens
 
-Once you’ve built an app that contains screen templates or accelerators, you may want to replace the data in your screens with your own data. Data can be replaced [manually](#replace-sample-data-manually) or [automatically](#replace-sample-data-automatically). 
+Once you’ve built an app that contains screen templates or accelerators, you may want to replace the data in your screens with your own data. Data can be replaced [manually](#replace-data-manually) or [automatically](#replace-data-automatically). 
 
 ## Replace data automatically
 

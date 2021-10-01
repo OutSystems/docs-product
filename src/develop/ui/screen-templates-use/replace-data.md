@@ -2,55 +2,13 @@
 summary: Replace data in Screens created from Screen Templates with your data. The replacement can be manual or semi-automatic.
 ---
 
-# Replace sample data in screens
+# Replace data in screens
 
-Once you’ve built an app that contains screen templates or accelerators, you may want to replace the sample data in your screens with your own data. Sample data can be replaced [manually](#replace-sample-data-manually) or [automatically](#replace-sample-data-automatically). 
+Once you’ve built an app that contains screen templates or accelerators, you may want to replace the data in your screens with your own data. Data can be replaced [manually](#replace-sample-data-manually) or [automatically](#replace-sample-data-automatically). 
 
-## Replace sample data manually
+## Replace data automatically
 
-Manually replacing sample data allows you to have full control over the changes you make on the screen. To replace sample data, follow these steps: 
-
-**Note** These steps are example steps only and may differ depending on the  type of screen and the type of data you are replacing. 
-
-1. Compare the screen with your data model and remove the UI elements you don't need. 
-
-    Removing these UI elements reduces the number of warnings and errors in the later steps.
-
-1. Delete the data source entities.
-    * In Reactive Web Apps, for screens that use data actions:
-
-        * Open the data action
-
-        * Delete the aggregates you don’t need
-
-        * Add your own data fetching, for example, aggregates or SQL, to the action flow and apply any necessary filtering
-
-    * In Reactive Web Apps, for screens that use aggregates:
-
-        * Delete the aggregates you don’t need
-
-        * Add your own data fetching, for example, aggregates or data action to the screen and apply any necessary filtering
-
-    * In Traditional Web apps, for screens that use aggregates:
-
-        * Open the aggregates inside the Preparation action 
-
-        * Delete the source references inside the aggregate
-
-1. Check the TrueChange tab for errors and warnings and fix them.
-
-## Replace sample data automatically
-
-<div class="warning" markdown="1">
-Automatic replacement is only supported by the Chart, Form, Table, and List widgets.
-</div>
-
-
-You can automatically replace data in your screen by dragging and dropping an entity to the widget that supports automatic data replacement (Form, Table, List, and Gallery widgets).
-
-Sometimes, the labels associated with the data in your screen are also replaced. Automatic replacement of data is designed as an assistance to the manual data replacement as it does not always result in best matches.
-
-**Note**: When replacing data inside a Mobile App screen that has been created from a screen template or accelerator, you can only replace server data with server data and local data with local data. Replacing data by dragging and dropping does not work with mixed data sources.
+Automatic replacement works in Form, Table, List, and Gallery widgets. You can automatically replace data in your screen by dragging and dropping an entity to the widget that supports automatic data replacement.
 
 1. Drag and drop the data source entity that contains your data to the widget for which you want to replace the data.
 
@@ -65,5 +23,32 @@ Sometimes, the labels associated with the data in your screen are also replaced.
     For example, when using the Table widget, check that the information of each Header Cell corresponds to the information displayed in the related cell. 
 
 1. Check any logic associated with the widget, for example, a dropdown filter in a Table, and replace the sample data (List property) manually. 
+
+1. Check the **TrueChange** tab for errors and warnings and fix them.
+
+When replacing data inside a **Mobile App** screen that has been created from a screen template or accelerator, you can only replace server data with server data and local data with local data. Replacing data by dragging and dropping does not work with mixed data sources.
+
+## Replace data manually
+
+Manually replacing data allows you to have full control over the changes you make on the screen. To replace data, follow these steps: 
+
+1. Compare the screen with your data model and remove the UI elements you don't need. 
+
+    Removing these UI elements reduces the number of warnings and errors in the later steps.
+
+1. Delete the data source entities.
+    * For screens that use data actions:
+
+        * Open the data action
+
+        * Delete the aggregates you don’t need
+
+        * Add your own data fetching, for example, aggregates or SQL, to the action flow and apply any necessary filtering
+
+    * For screens that use aggregates:
+
+        * Delete the aggregates you don’t need
+
+        * Add your own data fetching, for example, aggregates or data action to the screen and apply any necessary filtering
 
 1. Check the TrueChange tab for errors and warnings and fix them.

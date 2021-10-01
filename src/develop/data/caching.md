@@ -52,7 +52,7 @@ Additionally, the cached elements cannot have input parameters of the following 
 
 The cache also depends on whether the producer module is referenced as a strong or a weak dependency. 
 
-When the modules have a **strong dependency**, the Action logic is executed in the context of each consumer module handling the request. The cached value exists in each of the producers and cannot be reused between them.
+When the modules have a **strong dependency**, the Action logic is executed in the context of each consumer module handling the request. The cached value exists in each of the consumers and cannot be reused between them.
 
 If you want a **single cached value** instance in memory and serve all requests with it, expose the Action through a **weak dependency**. This way, the request executing and caching the Action exists only in the producer module, and all its consumers see the same value.
 

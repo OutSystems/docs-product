@@ -106,19 +106,17 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
     If your infrastructure uses **OutSystems 10**, go to [How to configure Architecture Dashboard probes in OutSystems 10](how-probes-o10.md) and follow the procedure.
     </div>
 
-1. Configure the **Code analysis** probe by selecting the development environment as the **Target environment**.
+1. Configure the **Code analysis** probe by selecting the development environment as the **Target environment**. 
 
     ![](images/setup-probes-configure-lt.png)
 
     <div class="info" markdown="1">
-    The code analysis uses the Development environment probe.
+    To change the target environment of a code analysis probe, contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data from Architecture Dashboard. Do this before installing probes in a new environment or deleting probes from an existing environment to avoid data inconsistencies. Once existing data is deleted from Architecture Dashboard, follow the setup procedure in this article to configure a new target environment.
     </div>
 
-1. If you want to monitor the runtime performance of apps in one of your environments, configure the **Runtime performance** probe by selecting the target environment.
 
-    <div class="info" markdown="1">
-    The runtime performance analysis uses analytics data from LifeTime.
-    </div>
+1. If you want to monitor the runtime performance of apps in one of your environments, configure the **Runtime performance** probe by selecting the target environment. The runtime performance analysis uses analytics data from LifeTime.
+
 
 1. Optional: If you want the Architecture Dashboard plugin to use a forward proxy while connecting to the Architecture Dashboard SaaS, in the **Proxy configuration** section, select **show request information**, and enter the proxy URL and the credentials.
 

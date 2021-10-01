@@ -164,4 +164,6 @@ You can connect an integration in the following ways:
 
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
 
+**Note**: If you use the Internal Network configuration in the Configuration tool, you must add the Integration Builder IPs or the SIPO IPs in the case that SIPO is already live.
+
 For more information about integrating with external databases, see [Integrating OutSystems with your ecosystem](https://success.outsystems.com/Support/Enterprise_Customers/Integrating_OutSystems_with_your_ecosystem).

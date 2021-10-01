@@ -724,6 +724,8 @@
 
             - href: extensibility-and-integration/integration-studio/managing-extensions/extension-download.md
 
+    - href: extensibility-and-integration/integrate-external-db.md
+    - href: extensibility-and-integration/integrate-external-db-ib.md
     - href: extensibility-and-integration/connect-external-db.md
     - href: extensibility-and-integration/configure-send-emails.md
 

@@ -22,7 +22,7 @@ Automatic replacement works in Form, Table, List, and Gallery widgets. You can a
 
     For example, when using the Table widget, check that the information of each Header Cell corresponds to the information displayed in the related cell. 
 
-1. Check any logic associated with the widget, for example, a dropdown filter in a Table, and replace the sample data (List property) manually. 
+1. Check any logic associated with the widget, for example, a dropdown filter in a Table, and replace the data (List property) manually. 
 
 1. Check the **TrueChange** tab for errors and warnings and fix them.
 

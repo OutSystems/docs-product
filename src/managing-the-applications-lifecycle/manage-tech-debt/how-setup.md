@@ -52,8 +52,6 @@ Before registering and setting up your infrastructure in Architecture Dashboard,
 * Allow outbound HTTPS communication (port 443) from the  **LifeTime environment** to `https://architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard`. Check [Architecture Dashboard network requirements for detailed information](../../setup/network-requirements.md#architecture-dashboard).
 * You have the **Administrator** role in your infrastructure.
 
-* To collect performance metrics, LifeTime Analytics must be enabled on the **non-development environments**.
-
 ### Register and set up your infrastructure
 
 To set up your infrastructure in Architecture Dashboard, follow these steps:
@@ -115,8 +113,7 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
     </div>
 
 
-1. If you want to monitor the runtime performance of apps in one of your environments, configure the **Runtime performance** probe by selecting the target environment. The runtime performance analysis uses analytics data from LifeTime.
-
+1. If you want to monitor the runtime performance of apps in one of your environments, configure the **Runtime performance** probe by selecting the target environment.
 
 1. Optional: If you want the Architecture Dashboard plugin to use a forward proxy while connecting to the Architecture Dashboard SaaS, in the **Proxy configuration** section, select **show request information**, and enter the proxy URL and the credentials.
 

@@ -15,8 +15,7 @@ Find answers to frequently asked questions about Architecture Dashboard in the f
 
 According to our licensing model one License, corresponding to one Activation Code, can have several environments but only one development environment.
 
-In Architecture Dashboard, for each Activation Code, you are allowed to have one code analysis environment (usually the development environment).
-This means that:
+In Architecture Dashboard, for each Activation Code, you are allowed to have one code analysis environment (usually the development environment). This means that:
 
 * You can do code analysis on two different development environments if both have different Activation Codes. They will appear in Architecture Dashboard as two separate infrastructures.
 

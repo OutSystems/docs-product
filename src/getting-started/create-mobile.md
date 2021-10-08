@@ -21,7 +21,7 @@ Let's do this! In this example we'll use a sample Excel file with to-do task inf
 
 Let's create a new task management mobile app. An application contains one or more modules, different parts of the application can be encapsulated in a module. A module is where you design the data model, implement the logic, and design the UI of your application.
 
-In Service Studio, click **New Application**, choose **Mobile App**, choose the **Phone** template and name it `To Do`.
+In Service Studio, click **New Application**, then **From scratch**, choose the **Phone** template and name it `To Do`.
 
 ![Create a Mobile App](images/create-mobile-01.png)
 

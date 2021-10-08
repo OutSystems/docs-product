@@ -86,34 +86,40 @@ As an example, if you are using Amazon RDS as your database server and running t
 
 ### Experience Builder
 
-[Experience Builder](https://experiencebuilder.outsystems.com/) must be able to connect to the environment where you want Experience Builder to publish apps through the environment's public DNS hostname. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
+[Experience Builder](https://experiencebuilder.outsystems.com/) must be able to connect to the environment where you want Experience Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
 
 Alternatively, ensure that the front ends of the environment used with Experience Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
+The Experience Builder uses the environment's public DNS hostname to communicate.
+
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-experiencebuilder.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+experiencebuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
 ### Integration Builder
 
-[Integration Builder](https://integrationbuilder.outsystems.com/) must be able to connect to the environments where you deploy integrations through the environment's public DNS hostname. Ensure that the front ends of the environments accept inbound connections from the **Source** address. For example, for a standard infrastructure, Integration Builder must be able to connect to the development, quality assurance, and production environments but doesn't need to connect to the LifeTime.
+[Integration Builder](https://integrationbuilder.outsystems.com/) must be able to connect to the environments where you deploy integrations. Ensure that the front ends of the environments accept inbound connections from the **Source** address. For example, for a standard infrastructure, Integration Builder must be able to connect to the development, quality assurance, and production environments but doesn't need to connect to the LifeTime.
 
 Alternatively, ensure that the front ends of the environments used with Integration Builder accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
+The Integration Builder uses the environments' public DNS hostname to communicate.
+
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-IntegrationBuilder.outsystems.com|Environment Front-End (public DNS hostname)|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+IntegrationBuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 Environment Front-End|IntegrationBuilder.outsystems.com|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
 ### Workflow Builder
 
-[Workflow Builder](http://workflowbuilder.outsystems.com/) must be able to connect to the environment where you want Workflow Builder to publish apps through the environment's public DNS hostname. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
+[Workflow Builder](http://workflowbuilder.outsystems.com/) must be able to connect to the environment where you want Workflow Builder to publish apps. Ensure that the front ends of that environment accept inbound connections from the **Source** address.
 
 Alternatively, ensure that the front ends of the environment used with Workflow Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
+The Workflow Builder uses the environment's public DNS hostname to communicate.
+
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-workflowbuilder.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+workflowbuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
 To use [IT user governance based on LifeTime teams](https://success.outsystems.com/Documentation/Workflow_Builder/How_to_set_up_Workflow_Builder/How_to_set_up_the_users_governance_model), Workflow Builder needs to be able to connect directly to LifeTime via TCP using HTTPS, port 443.
 

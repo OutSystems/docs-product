@@ -14,7 +14,7 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
       * Use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.
 
-      * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`.
+      * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. The Integration Builder will use the environment's public DNS hostname to communicate.
 
 <div class="info" markdown="1">
 

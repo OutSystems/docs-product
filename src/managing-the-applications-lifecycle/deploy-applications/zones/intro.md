@@ -30,7 +30,7 @@ You can define that a deployment zone should automatically include all front-end
 
 Configuring the deployment zone of individual modules is **deprecated** since Platform Server 11.8. Even though applications with modules in different deployment zones are still supported, OutSystems will stop supporting this option in the future.
 
-If you have applications with modules in different deployment zones, you must refactor and reorganize them to meet this restriction.
+For more information see [Modules and apps in deployments zones](modules-and-apps-in-deployment-zones.md).
 
 </div>
 

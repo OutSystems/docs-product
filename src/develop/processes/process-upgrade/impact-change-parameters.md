@@ -1,6 +1,6 @@
 # Impact of Changing Parameters
 
-When you publish an eSpace containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic describes which changes to input and output parameters may suspend process instances.
+When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic describes which changes to input and output parameters may suspend process instances.
 
 
 ## Impact of Modified Output Parameters of an Activity

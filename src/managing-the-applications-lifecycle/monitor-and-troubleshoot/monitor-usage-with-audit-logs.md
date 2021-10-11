@@ -19,6 +19,12 @@ IT users have access to the audit log and can check:
     * Environments
     * Infrastructure
 
+<div class="info" markdown="1">
+
+Note that screenshots used in this article are taken from the self-managed installation and they may differ if you are using OutSystems Cloud.
+
+</div>
+
 ## See the Tasks a User has Performed
 
 You can find the audit log for the tasks a user has made in the user details screen.
@@ -35,7 +41,7 @@ As an example, let's see the audit logs related to the "Developer" role. Go to t
 
 ![](images/monitor-usage-with-audit-logs-2.png)
 
-Sometimes it's also useful to see all changes made in the infrastructure, and be able to filter them. For this, go to the **INFRASTRUCTURE** tab and click the link **View Audit Logs**.
+Sometimes it's also useful to see all changes made in the infrastructure, and be able to filter them. For this, go to the **INFRASTRUCTURE** tab, or to the **ENVIRONMENTS** tab in OutSystems Cloud, and click the link **View Audit Logs**.
 
 ![](images/monitor-usage-with-audit-logs-3.png)
 

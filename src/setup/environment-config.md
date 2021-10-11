@@ -147,22 +147,22 @@ A- Requires enabling the site property `AvailableInProductionMode` in PreviewInD
 
 ### Environment Debug Mode
 
-The Debug Mode of an OutSystems environment determines if eSpaces in that environment can be debugged in Service Studio.
+The Debug Mode of an OutSystems environment determines if Modules in that environment can be debugged in Service Studio.
 
-To be able to debug an eSpace in Service Studio, **both** the environment Debug Mode and the eSpace Debug Mode must be enabled.
+To be able to debug a Module in Service Studio, **both** the environment Debug Mode and the Module Debug Mode must be enabled.
 
 Disabling the environment Debug Mode
 
-:   Disables the Debug Mode for each eSpace in the environment.
+:   Disables the Debug Mode for each Module in the environment.
 
-    When the Debug Mode of the environment is disabled it is not possible to enable the Debug Mode for any of the eSpaces.
+    When the Debug Mode of the environment is disabled it is not possible to enable the Debug Mode for any of the Modules.
 
 Enabling the environment Debug Mode
 
-:   Allows you to manually enable the Debug Mode for eSpaces you want to debug.
+:   Allows you to manually enable the Debug Mode for Modules you want to debug.
 
 Changes in Debug Mode will only affect Modules after they have been republished; read more about [applying compile-time configurations](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Applying_Configurations_in_Service_Center#Apply_Compile-time_Configurations).
 
-Note: When disabling the Debug Mode of an environment you will only need to republish the eSpaces whose Debug Mode was previously enabled.
+Note: When disabling the Debug Mode of an environment you will only need to republish the Modules whose Debug Mode was previously enabled.
 
-When you publish an eSpace for the first time, the Debug Mode of the eSpace is set according to the Debug Mode of that environment.
+When you publish a Module for the first time, the Debug Mode of the Module is set according to the Debug Mode of that environment.

@@ -40,6 +40,9 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ### Database Management System
 
+Keep in mind that you must use the same flavour of database engine for the 3 databases used by the platform (platform and apps, logs, session). Combinations of database engines, for example, using SQL Server for the platform database and Azure SQL database for the logs and or session databases (or any other combination), are not supported.
+
+* Microsoft SQL Server 2019 and compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
 * Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
@@ -58,7 +61,7 @@ Apart from standard Oracle Database setups, OutSystems Platform 8.0 and onwards 
 
 * Microsoft .NET Framework 4.8 (supported since Platform Server 11 – Release Oct.2019 CP2) or Microsoft .NET Framework 4.7.2
 * Microsoft Build Tools 2015
-* .NET Core 2.1 Runtime & Hosting Bundle for Windows
+* .NET Core 3.1 Runtime & Hosting Bundle for Windows
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
@@ -82,7 +85,7 @@ For more information on how to enable this service check Amazon's [EC2Config ser
 
 ## Amazon RDS considerations
 
-OutSystems supports Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
+OutSystems supports Microsoft SQL Server 2019 and compatibility level 150 (since Platform Server 11.12.0), Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
 
 * 1 vCPU (virtual central processing unit) or higher
 * 1 ECU (EC2 Compute Unit) or higher
@@ -113,6 +116,7 @@ The following systems are certified to integrate with OutSystems.
 
 ### SQL Server Database
 
+* Microsoft SQL Server 2019 and compatibility level 150, since Platform Server 11.12.0
 * Microsoft SQL Server 2017
 * Microsoft SQL Server 2016
 * Microsoft SQL Server 2014
@@ -236,9 +240,7 @@ Running an OutSystems app on a browser continues to be supported for 6 months af
 
 ### Mobile App packages
 
-The minimum requirements depend on the [Mobile Apps Build Service (MABS) version](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) used to generate your Mobile Apps.
-
-Note: Only official Android and iOS ROMs are supported.
+See [Mobile Apps Build Service (MABS)](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for the latest supported Android and iOS platform versions and the minimum requirements to generate your Mobile Apps.
 
 ### Traditional Web Apps
 

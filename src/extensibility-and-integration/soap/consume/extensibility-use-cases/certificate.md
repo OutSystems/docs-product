@@ -2,7 +2,7 @@
 summary: How to add support for authenticating SOAP requests with a client certificate using the SOAP Extensibility API.
 ---
 
-# Example: Authenticate using a client certificate
+# Authenticate using a client certificate
 
 In this example scenario we will add support for authenticating SOAP requests using a client certificate.
 

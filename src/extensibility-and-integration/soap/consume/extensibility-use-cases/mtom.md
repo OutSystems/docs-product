@@ -2,7 +2,7 @@
 summary: How to add support for Message Transmission Optimization Mechanism (MTOM) using the SOAP Extensibility API.
 ---
 
-# Example: Use MTOM
+# Use MTOM
 
 The Message Transmission Optimization Mechanism (MTOM) allows you to optimize the transmission and/or wire format of SOAP messages by selectively encoding portions of the message as binary data.
 

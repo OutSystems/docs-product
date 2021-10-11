@@ -76,25 +76,7 @@ The default page title of the log-in page is blank. Navigate to **UI Flows** > *
 
 ### Page language settings for screen readers
 
-The language of a page allows screen readers to switch language profiles which provides the correct accent and pronunciation.
-To set the page language, perform the following steps:
-
-1. Go to **UI Flows** and click on **Layouts**.
-1. Expand the layout you're using.
-1. Double-click the **OnReady** action to open it.
-1. On the **Logic** tab, expand **Client Actions** > **OutSystemsUI** > **Accessibility**.
-1. Select the **SetLang** action in the logic, and drag it into the **OnReady** action, as shown in the figure below.
-1. On the **Properties**, enter an [ISO language code](https://tools.ietf.org/html/bcp47) (for example, "en-EN") in the **Lang** field.
-
-    ![Setting the Language on the OnReady action](images/set-page-language-ss.png)
-
-After following these steps for each of the used layouts and published the module, you can test the page language.
-
-<div class="info" markdown="1">
- 
-Remember to set the language of the log-in page too, as it isn't defined. Navigate to **UI Flows** > **Common** > **Login** to supply the language identifier by using the **SetLang** action as described.
- 
-</div>
+The locale of the app defines the language of the page. For more information see [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md).
 
 ### Image text alternatives
 
@@ -106,7 +88,7 @@ To set an alternative text to an image, execute the following steps:
 1. In the **Attributes** section, create an **alt**.
 1. Enter the description. When an image is for decorative purposes, set **alt=""**.
 
-    ![Adding text alterntives to images](images/image-text-alternatives-ss.png)
+    ![Adding text alternative to images](images/image-text-alternatives-ss.png)
 
 After following these steps, for each of the used images, and published the module, you can test the image text alternatives by using a screen reader.
 
@@ -218,3 +200,16 @@ You must enter the name in the widget properties before you can use that widget 
 The default content Container is the **MainContentWrapper**. To find it, go to **UI Flows** > **Layouts**, and click on the layout you use in your app.
 
 To find the  **SkipToContent** action, go to **Logic** > **OutSystemsUI** > **Accessibility**.
+
+## Modal dialogs
+
+<div class="info" markdown="1">
+
+Applies to Platform Server 11.11 and later.
+
+</div>
+
+Use the [Popup widget](../../ui/inputs/popup.md) to create accessible modal dialogs. Popup adds the following attributes to the widget:
+
+* `role="dialog"`
+* `aria-modal="true"`

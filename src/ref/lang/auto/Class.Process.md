@@ -65,7 +65,7 @@ helpids: 17016
 </tr>
 <tr>
 <td title="Detail">Detail</td>
-<td>Description to be used as the default Detail property of Human Activities in the process flow.</td>
+<td>Description to be used as the default Detail property of Human Activities in the process flow. This description will be displayed to the end user in the Taskbox for all Human Activities inside this process. Changing this value will not affect existing Human Activity instances.</td>
 <td></td>
 <td></td>
 <td>This property should be defined when the Launch On property is not defined or, if defined, when the Entity referred in it does not have any Text attribute. These properties are used to calculate a default value for the Detail property of Human Activities that don't have that property specified.<br/>

@@ -7,12 +7,6 @@ tags:
 
 When you start creating a model, ML Builder guides you through several steps. What follows is an overview with some additional information.
 
-<div class="info" markdown="1">
-
-ML Builder is currently in a public **early access program (EAP)** and you need to register at the [ML Builder registration page](https://www.outsystems.com/eap-ml-builder/) to try it out.
-
-</div>
-
 ## Selecting use case
 
 This section explains which use cases ML Builder supports and when to select each.
@@ -37,7 +31,7 @@ With attribute prediction, keep in mind potential issues such as data leak or co
 
 ## Selecting data { #selecting-data }
 
-After you choose a use case for creating a model, the next step is selecting data from an Entity. See [Data considerations](data-considerations.md#data-considerations) for more information.
+After choosing a use case for creating a model, the next step is selecting data from an Entity. See [Data considerations](data-considerations.md#data-considerations) for more information.
 
 ### Selecting target attribute
 
@@ -47,11 +41,11 @@ In the attribute selection step you select the attribute corresponding to **what
 
 Applies to **Text classification**.
 
-This is the attribute for which your model predicts a category based on the data you provide.
+The attribute for which your model predicts a category based on the data you provide.
 
 ### Selecting attributes to learn from
 
-ML Builder recommends automatically the attributes that fit the use case for your model. You can modify this selection.
+ML Builder recommends the attributes that fit the use case for your model. You can modify this selection.
 
 In the **text classification** use case, you select the single text attribute to classify.
 

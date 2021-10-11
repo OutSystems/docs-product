@@ -148,7 +148,7 @@ $(function() {
 
 ## Would you like to know more? Hit F1
 
-You can always access relevant documentation and find more about any Element/Flow/Tab by selecting it and pressing <span class="keyboard"> F1 </span> from within Service Studio.
+You can always access relevant documentation and find more about any element/flow/tab by selecting it and pressing <span class="keyboard"> F1 </span> from within Service Studio.
 
 ## Keyboard shortcuts
 

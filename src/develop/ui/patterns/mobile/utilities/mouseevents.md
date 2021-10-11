@@ -17,7 +17,19 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
     ![](images/mouseevents-1-ss.png)
 
-1. From the Toolbox, drag the Mousse Events widget into the Main Content area of your application's screen.
+    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+
+    a. Go to **Module > Manage dependencies**.
+
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+
+    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
+    d. Search for and select the element you want to add, and click **Apply**. 
+    
+    e. In Service Studio, in the Toolbox, search for the widget again.
+
+1. From the Toolbox, drag the Mouse Events widget into the Main Content area of your application's screen.
 
     ![](images/mouseevents-2-ss.png)
 

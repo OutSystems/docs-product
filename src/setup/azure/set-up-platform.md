@@ -76,29 +76,24 @@ To apply your OutSystems license to the **development** environment, do the foll
 
 1. Using the DNS name from the previous step, access the Service Center management console of the environment with the following URL: `http://<DNS_name>/ServiceCenter`.
 
-1. Log on using the default credentials (admin/admin). Don’t change the "admin" user password at this stage, you will do it at the end of the setup process.
+1. Log on using the following user credential:
+    
+    * Username = `admin`
+    * Password =  password set in step 3. of the ["Run the Solution Template Wizard" section](#run-the-solution-template-wizard)
 
 1. Go to the Administration section and select the Licensing tab.
 
-1. Take note of the **Serial Number** of the environment. You will need it to get the license file from OutSystems Licensing portal.
+1. Take note of the **Serial Number** of the environment. You will need it to get the license file from OutSystems Customer portal.
 
     ![Serial Number](images/setup-image9.png?width=700)  
 
-1. Go to [OutSystems Licensing portal](http://www.outsystems.com/licensing), select your infrastructure and choose ACCESS LICENSING.
+1. Follow the steps at [Get a license file for an environment](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Manage_and_Upgrade/03_Get_a_license_file_for_an_environment#Self-managed_environments) to register the Serial Number and download the license file.
 
-    ![Licensing](images/setup-image10.png)  
 
-1. Register your environment using the serial number you obtained in step 6.
+1. Once you have the license file (`*.lic`), go back to the Licensing tab of Service Center and follow the steps to [install a license file](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Manage_and_Upgrade/04_How_to_install_a_license_file).
 
-1. If you are an authorized contact for licensing purposes, proceed with downloading the license file. Otherwise, the license file will be sent to an authorized contact via email.
 
-    ![License Download](images/setup-image8.png)
-
-1. Once you have the license file (`*.lic`), go back to the Licensing tab of the Service Center management console of your environment and select **Upload New License** to upload the license file.
-
-    ![Upload license](images/setup-image3.png?width=700)
-
-Repeat the same procedure to apply the license to the remaining environments - Test, Production, and LifeTime.
+1. Repeat the same procedure to apply the license to the remaining environments - Test, Production, and LifeTime.
 
 ## Add a valid certificate to the environments
 
@@ -172,13 +167,13 @@ There are eight components that you need to set up in your **development environ
 
 Here is the list of all extended product components that you need to install, in the order as shown:
 
-1. [Charts Web](https://www.outsystems.com/forge/4142/) (we used it in the installation example)
-1. [Charts Mobile](https://www.outsystems.com/forge/4141/)
+1. [OutSystems Charts Web](https://www.outsystems.com/forge/4142/) (we used it in the installation example)
+1. [OutSystems Charts](https://www.outsystems.com/forge/4141/)
 1. [OutSystems UI Web](https://www.outsystems.com/forge/4143/)
-1. [OutSystems UI Mobile](https://www.outsystems.com/forge/component/1385/silk-ui-mobile/)
+1. [OutSystems UI](https://www.outsystems.com/forge/component/1385/silk-ui-mobile/)
 1. [OutSystems Sample Data](https://www.outsystems.com/forge/4145/)
-1. [OutSystems Template Screens Web](https://www.outsystems.com/forge/4146/)
-1. [OutSystems Template Screens Mobile](https://www.outsystems.com/forge/4148/)
-1. [OutSystems Now](https://www.outsystems.com/forge/component/580/outsystems-now/)
+1. [OutSystems UI Web Screen Templates](https://www.outsystems.com/forge/4146/)
+1. [OutSystems UI Templates Mobile](https://www.outsystems.com/forge/4148/)
+1. [OutSystems UI Templates Reactive](https://www.outsystems.com/forge/6335/)
 
 And you are done! At this point, your OutSystems on Microsoft Azure is ready to use. Check [additional configurations](<additional-configurations.md> "OutSystems on Microsoft Azure - Additional Configurations") to learn more about configurations you might want to execute in your OutSystems infrastructure.

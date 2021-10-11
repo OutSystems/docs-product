@@ -41,8 +41,8 @@ The table below details the ports that need to be accessible in each server of a
 |SysOps|Server|22/3389|TCP|Access the server through SSH or Remote Desktop|
 |End Users|Front-End|80|TCP|Applications HTTP access|
 |End Users|Front-End|443|TCP|Applications HTTPS access (always required for Mobile and Reactive Web apps)|
-|Development Tools|Front-End|80|TCP|Deploy applications to the environment|
-|Development Tools|Front-End|443|TCP|Deploy applications to the environment|
+|Development Tools (Service Studio and Integration Studio) |Front-End|80|TCP|Deploy applications to the environment|
+|Development Tools (Service Studio and Integration Studio) |Front-End|443|TCP|Deploy applications to the environment|
 |Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
 |Front-End|Controller (by default)<br/>— Depends on where the Cache Invalidation Service/RabbitMQ is installed.|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
@@ -76,9 +76,24 @@ As an example, if you are using Amazon RDS as your database server and running t
 
 Alternatively, ensure that the front ends of the environment used with Experience Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
+The Experience Builder uses the environment's public DNS hostname to communicate.
+
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-experiencebuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+experiencebuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+
+### Integration Builder
+
+[Integration Builder](https://integrationbuilder.outsystems.com/) must be able to connect to the environments where you deploy integrations. Ensure that the front ends of the environments accept inbound connections from the **Source** address. For example, for a standard infrastructure, Integration Builder must be able to connect to the development, quality assurance, and production environments but doesn't need to connect to the LifeTime.
+
+Alternatively, ensure that the front ends of the environments used with Integration Builder accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
+
+The Integration Builder uses the environments' public DNS hostname to communicate.
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+IntegrationBuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+Environment Front-End|IntegrationBuilder.outsystems.com|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
 ### Workflow Builder
 
@@ -86,34 +101,33 @@ experiencebuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>1
 
 Alternatively, ensure that the front ends of the environment used with Workflow Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
+The Workflow Builder uses the environment's public DNS hostname to communicate.
+
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-workflowbuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+workflowbuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
-Workflow Builder needs to be able to connect directly to LifeTime via TCP using https, port 443.
+To use [IT user governance based on LifeTime teams](https://success.outsystems.com/Documentation/Workflow_Builder/How_to_set_up_Workflow_Builder/How_to_set_up_the_users_governance_model), Workflow Builder needs to be able to connect directly to LifeTime via TCP using HTTPS, port 443.
 
 ## Network infrastructure requirements
 
 ### LifeTime
 
-To use LifeTime to manage your application lifecycle, you need to have bidirectional communication between the front-end of the LifeTime environment, and all other servers (front-ends and deployment controllers) of your OutSystems Infrastructure. 
-
-In case HTTPS isn't supported, LifeTime communicates with the environments it manages by HTTP.
-
-Applications must be deployed as follows:
+You need to have bidirectional secure communication between the front-end of the LifeTime environment, and all other servers (front-ends and deployment controllers) of your OutSystems Infrastructure. When the environments have load balancers, you can establish the connectivity between LifeTime and the load balancers of the environments it manages.
 
 |Source|Destination|Port|Protocol|
 |------|-----------|----|--------|
-|LifeTime Front-End|Environment Front-End|80|TCP|
 |LifeTime Front-End|Environment Front-End|443|TCP|
-|Environment Front-End|LifeTime Front-End|80|TCP|
 |Environment Front-End|LifeTime Front-End|443|TCP|
 
 ### Architecture Dashboard
 
-To use [Architecture Dashboard](https://architecture.outsystems.com), the Architecture Dashboard LifeTime plugin must be able to communicate with the Architecture Dashboard SaaS. Ensure that the following port is open:
+To use [Architecture Dashboard](https://architecture.outsystems.com), the Architecture Dashboard LifeTime plugin must be able to communicate with the Architecture Dashboard SaaS. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work). 
+
+Depending on the version of the Architecture Dashboard probe, ensure that one of the following destination endpoints is reachable:
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| Architecture Dashboard LifeTime plugin. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work).
+LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or higher** of the Architecture Dashboard LifeTime probes.
+LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the Architecture Dashboard LifeTime probes.
  

@@ -7,7 +7,7 @@ tags: support-Application_Lifecycle-featured
 
 This topic describes how to implement an immediate corrective development, also known as **Hotfix**.
 
-The best way to handle hotfix situations is to have an environment (e.g. Pre-Production) synchronized with Production, with the same application versions, as well as its data replicated. This way you can test and debug the hotfix and then deploy it to Production, with no downtime. Finally the hotfix is propagated backwards to previous environments (Quality Assurance and Development).
+We highly recommend publishing hotfixes to a Pre-Production environment fully synchronized with a Production environment, and not to the Production environment directly. Both environments should have the same application version as well as its data replicated. This way you can test and debug the hotfix and then deploy it to Production, with no downtime. Finally the hotfix is propagated backwards to previous environments (Quality Assurance and Development).
 
 In the following example, it is described how a hotfix is applied to fix a severe bug found in the eCommerce application.
 

@@ -3,11 +3,11 @@ summary: Reference information on the List widget for allowing users to get a li
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; list-widget
 ---
 
-Use the List widget to display a simple list, for example a list of Expressions, or to display more complex items by adding a [List Item widget](ServiceStudio.Plugin.NRWidgets.ListItem.final.md). List requires a source to populate the item.
+Use the List widget to display a simple list, for example a list of Expressions, or to display more complex items by adding a [List Item widget](ServiceStudio.Plugin.NRWidgets.ListItem.final.md). The List widget requires a source to populate the items.
 
 ## Virtualization
 
-The List widget uses virtualization to render only those elements that are visible in the screen. You can set the value for virtualized pixels with `virtualization-threshold-before` and `virtualization-threshold-after` in the **Attributes** of List. Use them to tweak the scroll experience of List when the virtualization is enabled.
+The List widget uses virtualization to render only those elements that are visible in the screen. You can set the value for virtualized pixels with `virtualization-threshold-before` and `virtualization-threshold-after` in the **Attributes** of List. Adjust the threshold values to tweak the scroll behavior.
 
 You can also deactivate the virtualization with `disable-virtualization=True`. 
 

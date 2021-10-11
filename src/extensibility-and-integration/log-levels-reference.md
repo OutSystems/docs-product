@@ -1,4 +1,4 @@
-# Logging levels reference for REST and SOAP
+# Logging levels reference for integrations
 
 The available logging levels for REST APIs and consumed SOAP Web Services are the following:
 

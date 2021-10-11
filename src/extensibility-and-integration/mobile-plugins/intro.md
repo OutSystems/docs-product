@@ -5,58 +5,98 @@ tags: article-page; runtime-mobile; support-application_development; support-Mob
 
 # Mobile Plugins
 
-When developing a mobile app you often want to use the capabilities of the mobile device, such as the GPS or notifications. You can achieve this in OutSystems using plugins. A plugin is a module that acts as a wrapper for an Apache Cordova plugin and enables you to use native mobile features.
+Plugins provide important functionalities to native mobile apps, letting you use many of the hardware capabilities of mobile devices. You can add notifications, use camera or global positioning services, read QR codes, and more.
+ 
+## The list of supported mobile plugins 
 
-You can find [ready-to-use plugins in Forge](<https://www.outsystems.com/forge/#category=plug-ins>), which contains both officially supported plugins and plugins created by the OutSystems Community. If you want to create your own plugins for use in mobile apps, do it by [wrapping an Apache Cordova plugin into a module](<using-cordova-plugins.md>).
+The table shows the OutSystems-supported mobile plugins that you can find in the Forge repository. Some of them are already supported when distributing your app as a Progressive Web App (PWA).
 
-## Using a mobile plugin
-
-[Install the plugin](<../../getting-started/component.md>) in the environment as any other component. Use the client actions of the plugin module to call the native capabilities of the device within your application. The plugin must support the mobile platforms (iOS, Android) for which you are creating an app or the app generation will fail.
-
-Each time you add, remove, or modify the plugin in an app, OutSystems [rebuilds the native shell](<../../deliver-mobile/mobile-app-update-scenarios.md#Situations_When_the_User_Must_Install_a_New_Build>) which you then have to distribute to the end users for installation.
-
-You must [include the plugin license](<../../deliver-mobile/compliance-with-third-party-licenses.md#Include_the_Third_Party_Licenses_Used_by_Plug-ins_or_Components>) in your app to respect the license agreements of that plugin. These license agreements are usually placed in the About page of the app that uses them.
-
-## What are the supported plugins provided by OutSystems { #Supported_Plugins }
-
-This is the list of officially supported mobile plugins. Some of these plugins are already supported when distributing your app as a Progressive Web App (PWA).
+You may also create mobile plugins by [wrapping an Apache Cordova plugin into a module](<using-cordova-plugins.md>).
 
 Plugin | Description | Supported in PWA
 -------|-------------|---
 [AppShield](<https://www.outsystems.com/forge/component-overview/9379//>) | Protect your mobile apps from tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse. | —
-[Card IO](<https://www.outsystems.com/forge/component/1438/card-io-plugin/>) | Automatically get the details of a credit card just by taking a picture. | —
-[Camera](<http://www.outsystems.com/forge/component-discussions/1390/Camera+Plugin>) | Enable your application to access the camera capabilities of the device. | Yes
 [Calendar](<https://www.outsystems.com/forge/component/1566/calendar-plugin/>) | Access the calendar of your device. | —
-[Contacts](<http://www.outsystems.com/forge/component-discussions/1394/Contacts+Plugin>) | Access the contacts of your device. | —
-[Ciphered Local Storage](<https://www.outsystems.com/forge/component-details/1500/ciphered-local-storage-plugin/>) | Keep your mobile application's sensitive data safe using a ciphered Local Storage database. | —
+[Camera](<https://www.outsystems.com/forge/component-overview/1390/camera-plugin>) | Enable your application to access the camera capabilities of the device. | Yes
+[Ciphered Local Storage](<https://www.outsystems.com/forge/component-details/1500/ciphered-local-storage-plugin/>) | Keep your mobile application's sensitive data safe using a ciphered local storage database. | —
+[Contacts](<https://www.outsystems.com/forge/component-overview/1394/contacts-plugin>) | Access the contacts of your device. | —
+[Card IO](<https://www.outsystems.com/forge/component/1438/card-io-plugin/>) | Automatically get the details of a credit card by taking a picture. | —
+[File](<https://www.outsystems.com/forge/component-overview/1633/file-plugin>) | Lets you manage files and folders on a mobile device within the app sandbox. | —
+[File Transfer](<https://www.outsystems.com/forge/component-overview/1409/file-transfer-plugin>) | Lets users upload and download files in the background. | —
+[File Viewer](<https://www.outsystems.com/forge/component-overview/1606/file-viewer-plugin>) | Lets users view remote or app resource files. | —
 [InApp Browser](<https://www.outsystems.com/forge/component/1558/inappbrowser-plugin/>) | Open external URLs directly in your application. | —
-[OneSignal Notifications](<http://www.outsystems.com/forge/component/2119/onesignal-plugin/>) | Push Notifications using OneSignal, with deep-linking and actions. | —
-[Pushwoosh Notifications](<http://www.outsystems.com/forge/component/1556/pushwoosh-plugin/>) | Push Notifications using Pushwoosh, with deep-linking and actions. | —
-[Touch ID](<https://www.outsystems.com/forge/component-details/1431/Touch+ID+Plugin/>) | Use authentication with Touch ID in your application. | —
-[QR/Barcode scanner](<https://www.outsystems.com/forge/component/1403/barcode-plugin/>) | Scan barcodes and QR codes. | —
-[SSL Pinning](<https://www.outsystems.com/forge/component-discussions/1873/SSL+Pinning+Plugin>) | Provide an extra layer of security to HTTPS communications by adding a verification of the server certificate against hashes of public keys. | —
-[Key Store](<https://www.outsystems.com/forge/component/1550/Key+Store+Plugin/>) | Store small amounts of sensitive information on your device. The keystore secures data by encrypting the data before storing it, and the platform itself carefully controls access to stored items. | —
+[Key Store](<https://www.outsystems.com/forge/component/1550/Key+Store+Plugin/>) | Store small amounts of sensitive information on your device. Key Store secures data by encrypting the data before storing it, and the platform itself carefully controls access to stored items. | —
+[Location](<https://www.outsystems.com/forge/component/1395/location-plugin/>) | Access the GPS capabilities of the user's device to show, for example, the present latitude, longitude, and  altitude. | Yes
 [Local Notifications](<http://www.outsystems.com/forge/component/1541/local-notifications-plugin/>) | Send app notifications to the device when the application isn't running in the foreground. | —
-[Location](<https://www.outsystems.com/forge/component/1395/location-plugin/>) | Access the GPS capabilities of the user's device. For example the latitude, longitude and the altitude of the user's device. | Yes
+[OneSignal Notifications](<http://www.outsystems.com/forge/component/2119/onesignal-plugin/>) | Push notifications using OneSignal, with deep-linking and actions. | —
+[QR/Barcode scanner](<https://www.outsystems.com/forge/component/1403/barcode-plugin/>) | Scan barcodes and QR codes. | —
+[SSL Pinning](<https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin>) | Provide an extra layer of security to HTTPS communications by adding a verification of the server certificate against hashes of public keys. | —
+[Touch ID](<https://www.outsystems.com/forge/component-details/1431/Touch+ID+Plugin/>) | Use authentication with Touch ID in your application. | —
 
-**Included plugins in OutSystems Now (discontinued)**
+### Notes
 
-The plugins included in the OutSystems Now mobile app, now discontinued, are the following:
+When working with the plugins, keep in mind the following notes:
 
-* Camera, Card IO, Local Notifications, QR/Barcode scanner, Location, Contacts, InApp Browser, Touch ID, Calendar, Key Store
+* Use the plugin that supports iOS or Android, depending on your target platform. The app generation fails if you use a plugin that isn't supported on the target platform. 
+* Each time you add, remove, or modify the plugin in an app, OutSystems [rebuilds the native shell](<../../deliver-mobile/mobile-app-update-scenarios.md#Situations_When_the_User_Must_Install_a_New_Build>) which you then have to distribute to the end users for installation.
+* You must [include the plugin license](<../../deliver-mobile/compliance-with-third-party-licenses.md#Include_the_Third_Party_Licenses_Used_by_Plug-ins_or_Components>) in your app to respect the license agreements of that plugin. These license agreements are usually placed in the About page of the app that uses them.
+
+## Adding plugins
+
+The plugins are available from the Forge repository. To use a plugin in your app, you need to [install the plugin](#installing-a-plugin) and [add the plugin elements to your module](#referencing-a-plugin).
+
+### Installing a plugin
+
+To install a supported plugin from Forge:
+
+1. Find the plugin you want to use in the [list of supported mobile plugins](#the-list-of-supported-mobile-plugins).
+
+1. Click the plugin name in the column **Plugin**. The Forge page opens.
+
+1. In the Forge plugin page, click **INSTALL** and follow the instructions to install the plugin and optionally the demo app that comes with the plugin.
+
+    ![Install plugin from Forge](images/forge-install.png?width=700)
+
+1. Once the installation finishes, [reference the plugin in your module](#referencing-a-plugin). 
+
+<div class="info" markdown="1">
+
+Find the plugin documentation in the table of content next to this page, or check out the **Documentation** tab in the plugin Forge page.
+
+</div>
+
+### Referencing a plugin
+
+Referencing an [installed plugin](#installing-a-plugin) lets you use the plugin functionalities in the app logic. Follow these steps to reference a mobile plugin:
+
+1. In Service Studio, open **Manage Dependencies** (**Ctrl+Q**). 
+   
+1. Enter the plugin name in the **Search producers** field. If the plugin name is **Camera Plugin**, try searching for `CameraPlugin`. 
+
+1. In the results, in the producers list, select the plugin.
+
+1. In the plugin elements, in the public elements list, select the elements you want to use in your app. If you're unsure which elements to select, select all by selecting the plugin handle at the top of the list.
+
+    ![Manage Dependencies dialog with all elements selected](images/manage-dependencies-plugin-ss.png?width=700)
+
+1. Click **Apply** to confirm adding the plugin to the app.
+
+1. Verify Service Studio added the plugin elements. Most plugins have logic in **Logic** > **Client Actions** > **plugin handle**. Some plugins come with user interface elements that you can find in **Interface** > **UI Flows** > **plugin handle**.
 
 ## Built-in plugins
 
-Mobile apps generated by OutSystems have a native shell with the following plugins which OutSystems uses internally. You may see the names of these plugins in the [native mobile shell logs](<../../managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md>).
+All mobile apps generated by OutSystems include a native shell with the following built-in plugins that are used internally, handling a variety of housekeeping and infrastructure tasks.
 
 Plugin | Description
 -------|-----------------
-OS Cache       | Allows your application to run offline or with bad network conditions.
+OS Cache       | Lets your application to run offline or with bad network conditions.
 OS Cordova Loader | Loads the Cordova engine on your app.
-OS Deeplinks   | Allows opening hyperlinks to specific screens of your app.
+OS Deeplinks   | Opens hyperlinks to specific screens of your app.
 OS DB Upgrader | Manages the local storage of your app.
 OS Manifest    | Provides a parser for the app manifest.
-OS Pre-Bundle  | Handles the content of pre-bundled resources on your app.
-OS Security    | Provides the required APIs for the security layer.
-Mobile AppFeedback | Enables the user to invoke App Feedback for submitting feedback about the app. (Only present in the native shell if the App Feedback feature is [enabled](<../../managing-the-applications-lifecycle/app-feedback/user-feedback-enable.md>) in the mobile app.)
-NetworkStatus  | Allows your application to know when the device is online, offline and the type of network available (for example, Wifi, 3G, 4G).
+OS Pre-Bundle  | Handles the content of the app pre-bundled resources.
+OS Security    | Provides the APIs for the security layer.
+Mobile AppFeedback | Enables the user to invoke App Feedback for submitting feedback about the app.
+NetworkStatus  | Lets your app know when the device is online/offline and informs of the type of network available (for example, WiFi, 3G, 4G).
+
+While you may see the names of these built-in plugins in the [native mobile shell logs](<../../managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md>) they're not user-configurable. The only exception is [Mobile AppFeedback](<../../managing-the-applications-lifecycle/app-feedback/user-feedback-enable.md>), which is present in the native shell if you enable the App Feedback feature.

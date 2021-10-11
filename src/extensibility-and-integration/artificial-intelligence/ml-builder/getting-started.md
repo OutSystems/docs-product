@@ -5,12 +5,6 @@ tags:
 
 # Getting started
 
-<div class="info" markdown="1">
-
-ML Builder is currently in a public **early access program (EAP)** and you need to register at the [ML Builder registration page](https://www.outsystems.com/eap-ml-builder/) to try it out.
-
-</div>
-
 To get started with ML Builder, do the following:
 
 1. Sign in to the [ML Builder portal](https://mlbuilder.outsystems.com/) and register your non-production environment. When signing in, enter the name of your environment in **Environment**. For example, if the URL of the environment is **https://pp.example.com** enter **pp.example.com**. This is the **source environment** ML Builder connects to get data for training models.
@@ -33,13 +27,14 @@ To get started with ML Builder, do the following:
 
 1. Validate and deploy your model in the overview page, to make the model available in your environment.
 
-1. Implement the model in your app.
+1. [Implement the model predictions](implement-model.md) in your app.
 
 ## Configuration { #configuration }
 
-ML Builder requires Azure to create a model. The first time you log in, ML Builder asks you to set up your environment to work with Azure.
+ML Builder requires Azure to create a model. The first time you sign in, ML Builder asks you to set up your environment to work with Azure. 
+**Follow the instructions in ML Builder to configure the settings.**
 
-Follow the instructions in the wizard. You need the following configuration information:
+You need the following information from Azure:
 
 * Subscription ID
 * Application / Client ID
@@ -48,4 +43,6 @@ Follow the instructions in the wizard. You need the following configuration info
 * Machine learning workspace and a training cluster
 * Storage container and the connection string for storing data
 
-For detailed instructions about the configuration of Microsoft Azure, check out [Setting up an AI provider](https://docs.google.com/document/d/167TZlQ4RIx1-Dm_3GEY9oO_sFQYsSuhHVTQXav73Bko/edit#heading=h.gjdgxs).
+Here is an overview of how ML Builder uses Azure.
+
+![Azure overview](images/azure-diag.png?width=750)

@@ -3,7 +3,18 @@ summary: Learn about basic end user management, such as creating, deleting, deac
 tags: support-Mobile_Apps; support-webapps
 ---
 
-# End User Management
+# End User management
+
+Applications user management is created around the following core concepts:
+
+ - [Users](#Users)
+ - [Groups](#Groups)
+ - [User Providers](#user-providers)
+ - [Tenants](#tenants)
+
+Through the combination of these concepts you can define all the user management needs required to provide access to your applications to the end users. This section guides you in everything that you need to know about end user management.
+
+## Users
 
 The end users of your OutSystems applications are considered either **Anonymous Users** or **Named Users** (also called Registered Users) according to the following definitions:
 
@@ -24,7 +35,7 @@ Check [End Users Authentication](end-user-authentication/intro.md) for more info
 
 </div>
 
-## Internal Users vs. External Users { #internal-external }
+### Internal Users vs. External Users { #internal-external }
 
 <div class="info" markdown="1">
 
@@ -49,3 +60,15 @@ By default, Registered Users are considered **Internal Users**.
 The distinction between Internal Users and External Users is only applicable to the **end users** of your OutSystems applications. [IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md) (for example, OutSystems developers or Administrators) are a separate set of users that don't have this kind of classification.
 
 </div>
+
+## Groups
+
+[Groups](groups.md) help you to group users that have same type of permissions in your applications. With groups you can easily attribute the [same role at a group level](../user-roles/intro.md) instead in doing it per user. For example you can have departmental groups (HR, Marketing, Sales, etc.) for applications used by the entire company.
+
+## User providers
+
+User providers are applications that enable you to manage the end-users that access your applications. OutSystems provides the [Users application](accessing-users.md) out of the box, but other User providers can be developed by your teams.
+
+## Tenants
+
+User providers always have a Default Tenant, but in a scenario, for example of an application accessed by different customers, you can create different tenants for different types of users. [Read this article](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/How_to_Build_a_Multi-tenant_Application#Managing_Tenants_and_End-Users), if you want to learn more about multi-tenancy in OutSystems. 

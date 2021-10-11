@@ -23,6 +23,18 @@ You can use the Animate UI Pattern to create animations within your app. This UI
 
     ![](<images/animate-11-ss.png>)
 
+    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+
+    a. Go to **Module > Manage dependencies**.
+
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+
+    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
+    d. Search for and select the element you want to add, and click **Apply**. 
+    
+    e. In Service Studio, in the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Animate widget into the Main Content area of your application's screen.
 
     ![](<images/animate-1-ss.png>)
@@ -47,4 +59,4 @@ After following these steps and publishing the module, you can test the pattern 
 | LeaveAnimation (LeaveAnimation Identifier): Optional | Set how the animation leaves the screen. The predefined options available are:<p><ul><li>LeaveBottom</li> <li>LeaveFade (default)</li><li>LeaveLeft</li><li>LeaveRight</li><li>LeaveScale</li><li>LeaveTop</li></ul></p> <p>Examples <ul><li>_Entities.LeaveAnimation.LeaveBottom_ - Leaves from the bottom of the screen</li><li>_Entities.LeaveAnimation.LeaveRight_ - Leaves from the right of the screen</li></ul></p> |
 | Speed (Speed Identifier): Optional | Animation duration. Fast, normal, and slow are the predefined speeds available for the animation.| 
 | Delay (Integer): Optional | Time to wait before animation starts (in milliseconds). The default value is 0. | 
-| ExtendedClass (Text): Optional  |   Add custom style classes to the Animate UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the myclass style to the Animate UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Animate UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional  |   Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the myclass style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |

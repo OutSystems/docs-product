@@ -20,6 +20,6 @@ These are the generic steps that you should take to implement and use a extensio
 
     If your extension does not contain [manually added](<../managing-extensions/action-add.md>) actions, you can skip this step. However, the extension will still have source code files associated. See [Extension Source Files](<../getting-started/extension-source-files.md>) for more information.
 
-1. [Publish the extension module](<extension-1-cp.md>) to the Platform Server from Integration Studio by clicking ![](images/1-click-publish-icon.gif) **1-Click Publish** in the **File** menu or Toolbar.
+1. [Publish the extension module](<extension-1-cp.md>) to the Platform Server from Integration Studio by clicking ![](images/1-click-publish-icon.png) **1-Click Publish** in the **File** menu or Toolbar.
 
 1. [Use the created extension](<extension-use.md>) in any OutSystems applications where you want to use it, adding it as a dependency in **Service Studio**. Once the extension module is a dependency of your application, the logic that the module implements becomes available in the Logic tab of Service Studio.

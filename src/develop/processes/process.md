@@ -9,7 +9,7 @@ A **Process** is an element that allows you to integrate your business processes
 
 ## Create a Process
 
-1. In the **eSpace tree**, under the **Processes Layer**, right-click on the **Processes** folder and select **Add Process**.
+1. In the **module tree**, under **Processes**, right-click on the **Processes** folder and select **Add Process**.
 2. Rename it as desired. OutSystems Platform automatically opens the process flow on the flow canvas.
 3. Design the behavior of the process (i.e. the [process flow](<process-flow/intro.md>)) using the [Process Flow Editor](<process-flow/process-flow-editor.md>).
 
@@ -28,7 +28,7 @@ Anyway, when you're editing your process flow, all of the process activities ava
 
 ## Launching a Process
 
-In your application, a process may be either **automatically launched** when an entity is created, or **explicitly launched** in an action flow of your actions. In the first case, simply set the `Launch On` process property with the Create entity action.
+In your application, a process may be either **automatically launched** when an entity record is created, or **explicitly launched** in an action flow of your actions. In the first case, simply set the `Launch On` process property with the CreateEntity (for example, CreateCustomer) action.
 
 When a process is automatically launched as result of a Create entity action, an input parameter with the entity identifier is automatically added to the process so that you know which created entity launched that process.
 
@@ -38,7 +38,7 @@ A process can also be [executed](<../../ref/lang/auto/Class.Execute Process.fina
 
 ### Using Process References
 
-Service Studio provides you with mechanisms to reuse Processes among eSpaces. You can expose your Processes to other eSpaces or use Processes defined in another eSpace.
+Service Studio provides you with mechanisms to reuse Processes among modules. You can expose your Processes to other modules or use Processes defined in another module.
 
 If you are using an Oracle or DB2 database, commit the transaction before launching a Process instance.
 
@@ -47,7 +47,7 @@ If you are using an Oracle or DB2 database, commit the transaction before launch
 
 When a process is launched a process instance is created and executed starting at the **Start** element of its flow. The process flow is then followed and each process activity found in the path has an **activity instance** created and executed.
 
-If you have a cycle in your process flow, each time the same process activity is found a new instance of it is created and executed.
+If you have a cycle in your process flow, each time the same process activity is found a new instance is created and executed.
 
 You may add business logic to validate your process instance execution, for example, when the process is launched, to validate whether the process instance can be executed.
 
@@ -58,7 +58,7 @@ Each activity instance has its own life cycle with several states followed from 
 
 ## Upgrading Your Process
 
-To upgrade your process flow, simply edit the process flow and publish your eSpace. OutSystems automatically performs the process flow upgrade for all executing process instances.
+To upgrade your process flow, simply edit the process flow and publish your module. OutSystems automatically performs the process flow upgrade for all executing process instances.
 
 
 ## Using Process Entities

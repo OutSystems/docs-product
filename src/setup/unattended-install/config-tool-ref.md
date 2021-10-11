@@ -28,9 +28,8 @@ ConfigurationTool.com
     | /SetupInstall [<platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>] 
     | /UpgradeInstall [<integrated_auth_admin_password>] [/SetPlatformServerAdminPassword <platform_server_admin_password>] 
     | /RebuildSession <session_db_admin_username> <session_db_admin_password> 
-    | /SCInstall 
-    | /UpgradeSystemComponents
-    | /UpgradePublishedApplications
+    | /InstallServiceCenter  
+    | /InstallSystemComponents
     | /GenerateTemplates
     | /ClearInternalNetwork
     | /UploadLicense <license_file> <platform_server_admin_user> <platform_server_admin_password>
@@ -43,6 +42,7 @@ ConfigurationTool.com
     | /EnableServerAPI
     | /DisableServerAPI
     | /UpgradeEnvironment
+    | /UpgradePublishedApplications
     | /ApplySettingsFactory
 ```
 
@@ -70,17 +70,13 @@ ConfigurationTool.com
 
 :   Upgrades the session database model. The username and password provided must belong to a user with permissions to execute these operations.
 
-`/SCInstall`
+`/InstallServiceCenter `
 
 :   Forces the Service Center installation to run after finishing Configuration Tool.
 
-`/UpgradeSystemComponents`
+`/InstallSystemComponents`
 
 :   Forces the System Components installation or upgrade to run after applying the configuration settings.
-
-`/UpgradePublishedApplications`
-
-:   Forces the published applications upgrade to run after applying the configuration settings.
 
 `/GenerateTemplates`
 
@@ -138,7 +134,11 @@ ConfigurationTool.com
 
 `/UpgradeEnvironment`
 
-:   Installs Service Center and System Components, and upgrades published applications. Skips any of these steps if they were previously executed.
+:   Installs the core components (Service Center and the System Components), and starts [preparing your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version. Skips any of these steps if they were previously executed.
+
+`/UpgradePublishedApplications`
+
+:   Forces the [preparation of your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version.
 
 `/ApplySettingsFactory`
 
@@ -154,7 +154,7 @@ ConfigurationTool.com
     /SetupInstall <platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
     /CreateUpgradeCacheInvalidationService
-    /SCInstall
+    /InstallServiceCenter 
 ```
 
 Perform a clean installation for Oracle:
@@ -164,7 +164,7 @@ ConfigurationTool.com
     /SetupInstall
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
     /CreateUpgradeCacheInvalidationService
-    /SCInstall
+    /InstallServiceCenter 
 ```
 
 Perform an upgrade from OutSystems 10 (or lower):
@@ -174,7 +174,7 @@ ConfigurationTool.com
     /UpgradeInstall <integrated_auth_admin_password>
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
     /CreateUpgradeCacheInvalidationService
-    /SCInstall
+    /UpgradeEnvironment  
 ```
 
 Perform an upgrade from OutSystems 11:
@@ -183,7 +183,7 @@ Perform an upgrade from OutSystems 11:
 ConfigurationTool.com
     /UpgradeInstall <integrated_auth_admin_password>
     /RebuildSession <session_db_admin_username> <session_db_admin_password>
-    /SCInstall
+    /UpgradeEnvironment  
 ```
 
 Modify the Address and/or Enable HTTPS settings of the "Global" deployment zone:
@@ -204,7 +204,7 @@ Enable Server.API and Server.Identity:
 
 ```
 ConfigurationTool.com
-    /EnabelServerAPI
+    /EnableServerAPI
 ```
 
 ## Logging

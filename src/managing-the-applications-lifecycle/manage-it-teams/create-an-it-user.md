@@ -6,7 +6,7 @@ summary: Create IT users for new developers and operators that will operate the 
 
 OutSystems allows you to manage IT users like developers, testers, and operators.
 
-Consider that a new developer just joined the company and needs a user to login in the platform. To create the new IT user, do the following:
+When adding a new user they need to be given a username in order to log in to the platform. This username will be their own unique indentifier. Consider that a new developer just joined the company. To create the new IT user, follow these steps:
 
 1. In your LifeTime console (`https://<lifetime_env>/lifetime`), go to the **USER MANAGEMENT** area.
 

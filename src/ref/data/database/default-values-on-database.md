@@ -5,6 +5,7 @@ tags: support-Database
 # Default Values on Database
 
 The following table represents the default values of the OutSystems data types, and the respective values stored in the database.
+If an [Entity Attribute](<../../lang/auto/Class.Entity%20Attribute.final.md>) does not have a default value defined, the following default values will be used:
 
 Data Type  |  OutSystems  |  SQL Server  |  Oracle  |  MySQL  
 ---|---|---|---|---  

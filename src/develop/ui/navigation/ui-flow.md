@@ -20,7 +20,7 @@ Be careful when editing the default content of **Common** and **Layouts** UI Flo
 
 </div>
 
-## Add new UI Flow
+## Adding a new UI Flow
 
 To add a new UI Flow, do the following in Service Studio:
 
@@ -30,11 +30,41 @@ To add a new UI Flow, do the following in Service Studio:
     
     ![Help menu with Add new UI Flow option](images/ui-flow-add-new-ss.png?width=400)
 
-## Set the Theme of UI Flow
+## Creating UI Flow without styles
 
-All Screens you add to a UI Flow use the default Theme of the module. You can change the Theme by editing the **Theme** property of the **UI Flow**.
+Follow these steps in Service Studio to create a UI Flow without CSS styles:
 
-## Set the default screen
+1. [Create your Theme without styles](../look-feel/themes.md#creating-a-theme-without-styles).
+
+2. [Add a new UI Flow](#adding-a-new-ui-flow) to your module.
+
+3. Set the UI Flow to use your Theme without styles. See [Setting the Theme of UI Flow](#setting-the-theme-of-ui-flow) for instructions.
+
+4. Optionally, add a Screen under the UI Flow and verify if has no styles.
+
+    ![Screen with a blank Theme](images/screen-blank-theme-ss.png?width=530)
+
+## Setting the Theme of UI Flow
+
+All elements you add to a UI Flow use the default Theme of the module. You can change the Theme by editing the **Theme** property of the **UI Flow**. To change the Theme of a UI Flow, do the following in Service Studio:
+
+1. Go to the **Interface** tab.
+
+2. Select the UI Flow for which you want to change the Theme.
+
+    <div class="info" markdown="1">
+
+    All modules with UI from the default app templates use **MainFlow** as the default UI Flow for Screens. This is a convention more than a requirement. 
+
+    </div>
+
+3. In the UI Flow properties, select a Theme from the **Theme** list.
+
+    ![Theme property of a UI Flow](images/ui-flow-default-theme-ss.png?width=310) 
+
+4. Optionally, create a Screen under the UI Flow to verify the Screen uses the UI Flow's Theme. 
+
+## Setting the default Screen
 
 **Default Screen** is the index page in Reactive Web Apps, or the home screen in Mobile Apps. There can be only one Default Screen in the module, and it's marked with the house icon.
 

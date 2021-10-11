@@ -73,7 +73,7 @@ Scheme
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--post">POST /environments/{EnvironmentKey}/applications/</a></td>
-<td>Creates a new application in the environment.</td>
+<td>Creates a new application in the environment. <strong>This endpoint is available as of LifeTime Management Console 11.5.0.</strong></td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--ApplicationKey---get">GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/</a></td>
@@ -93,7 +93,15 @@ Scheme
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--templates--get">GET /environments/{EnvironmentKey}/templates/</a></td>
-<td>Returns information about the templates available in a given environment.</td>
+<td>Returns information about the templates available in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.5.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--content_security_policies--get">GET /environments/{EnvironmentKey}/content_security_policies/</a></td>
+<td>Returns information about the Content Security Policy in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.10.3.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--content_security_policies--put">PUT /environments/{EnvironmentKey}/content_security_policies/</a></td>
+<td>Sets the Content Security Policies for a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.10.3.</strong></td>
 </tr>
 </tbody>
 </table>
@@ -170,6 +178,7 @@ Scheme
 </table>
 <h3 id="tag--roles" class="swagger-summary-tag">/roles</h3>
 <p class="sw-tag-external-doc">
+<strong>Available as of LifeTime Management Console 11.5.0.</strong>
 </p>
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
@@ -207,6 +216,7 @@ Scheme
 </table>
 <h3 id="tag--teams" class="swagger-summary-tag">/teams</h3>
 <p class="sw-tag-external-doc">
+<strong>Available as of LifeTime Management Console 11.5.0.</strong>
 </p>
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
@@ -256,6 +266,7 @@ Scheme
 </table>
 <h3 id="tag--users" class="swagger-summary-tag">/users</h3>
 <p class="sw-tag-external-doc">
+<strong>Available as of LifeTime Management Console 11.5.0.</strong>
 </p>
 <table class="table table-bordered table-condensed swagger--summary">
 <thead>
@@ -1178,7 +1189,7 @@ Expires</td>
 <dd class="sw-response-403">
 <div class="rowr">
 <div class="col-md-12">
-<p>User doesn’t have permissions for the given keys (Application:<code>&lt;ApplicationKey&gt;</code>; ApplicationVersionKey <code>&lt;ApplicationVersionKey&gt;</code>).</p>
+<p>User doesn&#39;t have permissions for the given keys (Application:<code>&lt;ApplicationKey&gt;</code>; ApplicationVersionKey <code>&lt;ApplicationVersionKey&gt;</code>).</p>
 </div>
 </div>
 <div class="rowr">
@@ -2556,7 +2567,7 @@ Go to
 </div>
 <div class="panel-body">
 <section class="sw-operation-description">
-<p>Creates a new application in the environment.</p>
+<p>Creates a new application in the environment. <strong>This endpoint is available as of LifeTime Management Console 11.5.0.</strong></p>
 </section>
 <section class="sw-request-body">
 <div class="rowr">
@@ -2824,7 +2835,7 @@ IncludeModules
 <dd class="sw-response-403">
 <div class="rowr">
 <div class="col-md-12">
-<p>User doesn’t have permissions for the given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
+<p>User doesn&#39;t have permissions for the given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
 </div>
 </div>
 <div class="rowr">
@@ -3030,7 +3041,7 @@ Expires</td>
 <dd class="sw-response-403">
 <div class="rowr">
 <div class="col-md-12">
-<p>User doesn’t have permissions for the given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
+<p>User doesn&#39;t have permissions for the given keys (EnvironmentKey:<code>&lt;EnvironmentKey&gt;</code>; Application:<code>&lt;ApplicationKey&gt;</code>).</p>
 </div>
 </div>
 <div class="rowr">
@@ -3398,7 +3409,7 @@ Go to
 </div>
 <div class="panel-body">
 <section class="sw-operation-description">
-<p>Returns information about the templates available in a given environment.</p>
+<p>Returns information about the templates available in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.5.0.</strong></p>
 </section>
 <section class="sw-request-params">
 <table class="table">
@@ -3466,6 +3477,291 @@ EnvironmentKey
 <div class="rowr">
 <div class="col-md-12">
 <p>Environment doesn&#39;t support list templates.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-403">
+403 Forbidden
+</dt>
+<dd class="sw-response-403">
+<div class="rowr">
+<div class="col-md-12">
+<p>User doesn&#39;t have permissions.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Environment not found.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Internal error raised.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--EnvironmentKey--content_security_policies-"></span>
+<div id="operation--environments--EnvironmentKey--content_security_policies--get" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/{EnvironmentKey}/content_security_policies/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Returns information about the Content Security Policy in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.10.3.</strong></p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment from which to get the running Content Security Policy.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>Content Security Policy successfully retrieved.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/CSPDirectives">CSPDirectives</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve the Content Security Policy.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-403">
+403 Forbidden
+</dt>
+<dd class="sw-response-403">
+<div class="rowr">
+<div class="col-md-12">
+<p>User doesn&#39;t have permissions.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Environment not found.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Internal error raised.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="operation--environments--EnvironmentKey--content_security_policies--put" class="swagger--panel-operation-put panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">PUT</span> <strong>/environments/{EnvironmentKey}/content_security_policies/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Sets the Content Security Policy for a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.10.3.</strong></p>
+</section>
+<section class="sw-request-body">
+<p><span class="label label-default">application/json</span> 
+</p>
+<div class="rowr">
+<div class="col-md-6">
+<p><p>The Content Security Policy directives to set in the environment.</p>
+</p>
+</div>
+<div class="col-md-6 sw-request-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/CSPDirectives">CSPDirectives</a>
+</div>
+</div></div>
+</div>
+</section>        
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment to apply the Content Security Policy.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>Content Security Policy successfully set.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Environment_CSP_Response">Environment_CSP_Response</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to set Content Security Policy.</p>
 </div>
 </div>
 <div class="rowr">
@@ -5199,7 +5495,7 @@ IncludeApplications
 <dd class="sw-response-403">
 <div class="rowr">
 <div class="col-md-12">
-<p>User don&#39;t have permissions.</p>
+<p>User doesn&#39;t have permissions.</p>
 </div>
 </div>
 <div class="rowr">
@@ -9860,3 +10156,322 @@ UserKey
 <dd>
 <div class="json-inner-schema">
 </div></dd></dl></section></div></div>
+<div id="definition-CSPDirectives" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/CSPDirectives"></a>CSPDirectives:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>The Content Security Policy directives for an environment.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="BaseUri">
+<span class="json-property-name">BaseUri:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="ChildSrc">
+<span class="json-property-name">ChildSrc:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="ConnectSrc">
+<span class="json-property-name">ConnectSrc:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="DefaultSrc">
+<span class="json-property-name">DefaultSrc:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="FontSrc">
+<span class="json-property-name">FontSrc:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="ImgSrc">
+<span class="json-property-name">ImgSrc:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="MediaSrc">
+<span class="json-property-name">MediaSrc:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="ObjectSrc">
+<span class="json-property-name">ObjectSrc:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="PluginTypes">
+<span class="json-property-name">PluginTypes:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="ScriptSrc">
+<span class="json-property-name">ScriptSrc:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="StyleSrc">
+<span class="json-property-name">StyleSrc:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="FrameAncestors">
+<span class="json-property-name">FrameAncestors:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="ReportTo">
+<span class="json-property-name">ReportTo:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd><dt data-property-name="Other">
+<span class="json-property-name">Other:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/CSPDirective">CSPDirective</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="definition-CSPDirective" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/CSPDirective"></a>CSPDirective:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>A directive of the Content Security Policy.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="CSPDirectiveId">
+<span class="json-property-name">CSPDirectiveId:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="Value">
+<span class="json-property-name">Value:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="IsSetForEnv">
+<span class="json-property-name">IsSetForEnv:</span>
+<span class="json-property-type">boolean</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="definition-Environment_CSP_Response" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/Environment_CSP_Response"></a>Environment_CSP_Response:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Detailed result of setting the Content Security Policy for an environment.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="Success">
+<span class="json-property-name">Success:</span>
+<span class="json-property-type">boolean</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="EnvironmentKey">
+<span class="json-property-name">EnvironmentKey:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="ErrorDirectives">
+<span class="json-property-name">ErrorDirectives:</span>
+<span class="json-property-type">string[]</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+<section class="json-schema-array-items">
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+<section class="json-schema-description">
+</section>
+</div>
+</section>
+</div>
+</dd>
+<dt data-property-name="ErrorMessage">
+<span class="json-property-name">ErrorMessage:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="NeedsRecompilation">
+<span class="json-property-name">NeedsRecompilation:</span>
+<span class="json-property-type">boolean</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="AddedDataDirectives">
+<span class="json-property-name">AddedDataDirectivess:</span>
+<span class="json-property-type">string[]</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+<section class="json-schema-array-items">
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+<section class="json-schema-description">
+</section>
+</div>
+</section>
+</div>
+</dd>
+<dt data-property-name="AddedSelfDirectives">
+<span class="json-property-name">AddedSelfDirectives:</span>
+<span class="json-property-type">string[]</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+<section class="json-schema-array-items">
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+<section class="json-schema-description">
+</section>
+</div>
+</section>
+</div>
+</dd>
+<dt data-property-name="AddedInternalDirectives">
+<span class="json-property-name">AddedInternalDirectives:</span>
+<span class="json-property-type">string[]</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+<section class="json-schema-array-items">
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+<section class="json-schema-description">
+</section>
+</div>
+</section>
+</div>
+</dd>
+<dt data-property-name="AddedGapDirectives">
+<span class="json-property-name">AddedGapDirectives:</span>
+<span class="json-property-type">string[]</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+<section class="json-schema-array-items">
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+<section class="json-schema-description">
+</section>
+</div>
+</section>
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>

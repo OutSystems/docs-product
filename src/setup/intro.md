@@ -59,7 +59,7 @@ If you selected to setup OutSystems infrastructure using our Cloud offering you 
 
 Nevertheless, when managing a single environment or infrastructure on the OutSystems cloud, you should take into account the following considerations:
 
-* Currently, our cloud provider (Amazon) does not support customizing the time zone for SQL Server. Conversions need to be done programmatically from UTC to the desired time zone.
+* Currently, our cloud provider (Amazon) does not support customizing the time zone. The timezone is always UTC. Conversions need to be done programmatically from UTC to the desired time zone.
 
 * Custom database objects such as stored procedures are not supported. You can either implement the same logic using "Advanced Queries" (standard SQL) or through Extensions (by implementing your own C# code).
 
@@ -123,11 +123,13 @@ Download the latest [LifeTime Management Console binaries](https://www.outsystem
 
 ### 4. Install the infrastructure management console
 
-Install LifeTime management console in a **dedicated environment**. For this, follow the [LifeTime installation checklist](https://www.outsystems.com/goto/checklist-lifetime) that is launched when you run the LifeTime management console installation binary.
+Install LifeTime management console in a **dedicated** environment. **Installing LifeTime in an existing environment isn't a supported scenario**.
 
-**Installing LifeTime in an existing environment is not a supported scenario.** Learn how to [size an environment for the infrastructure management console](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Size_an_environment_to_run_the_infrastructure_management_console).
+For this, follow the [LifeTime installation checklist](https://www.outsystems.com/goto/checklist-lifetime) launched when you run the LifeTime installation binary. As LifeTime **doesn't support farm configuration**, you must select the combination "Deployment Controller + Server" in the checklist to install a single server with both roles.
 
 The OutSystems Scheduler service must be running in the LifeTime environment.
+
+Learn how to [size an environment for the infrastructure management console](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Size_an_environment_to_run_the_infrastructure_management_console).
 
 ### 5. Configure the infrastructure management console
 
@@ -171,8 +173,8 @@ Do the following:
     2\. Rename the Microsot .NET Framework Installer to `DotNet.exe`.  
     _Note:_ If you're installing a Platform Server version earlier than 11.9, rename the installer to `NDP472-KB4054530-x86-x64-AllOS-ENU.exe` instead.
     
-    * **.NET Core 2.1 Runtime & Hosting Bundle for Windows**  
-    1\. [Download the .NET Core 2.1 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-2.1.12-windows-hosting-bundle-installer) from Microsoft.  
+    * **.NET Core 3.1 Runtime & Hosting Bundle for Windows**  
+    1\. [Download the .NET Core 3.1 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-3.1.14-windows-hosting-bundle-installer) from Microsoft.  
     2\. Rename the .NET Core Installer to `DotNetCore_WindowsHosting.exe`.
     
     * **Build Tools 2015**  

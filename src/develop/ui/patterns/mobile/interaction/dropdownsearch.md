@@ -19,6 +19,18 @@ In this example, we create a dropdown search for a list of employees, and when a
 
     ![](<images/dropdownsearch-2-ss.png>)
 
+    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+
+    a. Go to **Module > Manage dependencies**.
+
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+
+    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
+    d. Search for and select the element you want to add, and click **Apply**. 
+    
+    e. In Service Studio, in the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Dropdown Search widget into the Main Content area of your application's screen.
 
     ![](<images/dropdownsearch-3-ss.png>)
@@ -57,6 +69,14 @@ After following these steps and publishing the module, you can test the pattern 
 
 ![](<images/dropdownsearch-8-ss.png>)
 
+## Setting the number of returned suggestions
+
+By default, Dropdown Search returns four search results in the dropdown list. You can change this number by editing the **AdvancedFormat** property of the widget.
+
+To increase the limit to 10 suggestions, enter `"{searchResultLimit:10}"` in **AdvancedFormat**.
+
+![Property to set the number of suggestions](images/dropdownsearch-set-number-of-suggestions-ss.png?width=320)
+
 ## Properties
 
 | Property | Description |
@@ -67,5 +87,5 @@ After following these steps and publishing the module, you can test the pattern 
 | EmptyText (Text): Optional | Text that is displayed when no items are selected. "Select an item" is the default text.|
 | SearchPrompt (Text): Optional | Text that is displayed in the Search prompt/placeholder. |
 | NoResultsText (Text): Optional | Text that is displayed when there are no results. |
-| AdvancedFormat (Text): Optional | Enables more options beyond what's provided through the inputs. For more options, go to [Choices library](https://github.com/jshjohnson/Choices). Default value is `{}`. You can also use fuse.js options to change the search configurations. For more information on search configurations, see [Fuse](https://fusejs.io/) |
-| ExtendedClass (Text): Optional | Add custom style classes to the Dropdown Search UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown Search UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown Search UI styles being applied.</li></ul> |
+| AdvancedFormat (Text): Optional | Enables more options beyond what's provided through the inputs. For more options, go to [Choices library](https://github.com/jshjohnson/Choices). Default value is `{}`. You can also use fuse.js options to change the search configurations. For more information on search configurations, see [Fuse](https://fusejs.io/). <br/><br/> See also [Setting the number of returned suggestions](#setting-the-number-of-returned-suggestions) |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |

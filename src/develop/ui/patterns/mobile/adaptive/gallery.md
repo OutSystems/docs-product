@@ -15,6 +15,18 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     ![](<images/gallerymob-8-ss.png>)
 
+    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+
+    a. Go to **Module > Manage dependencies**.
+
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+
+    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    
+    d. Search for and select the element you want to add, and click **Apply**. 
+    
+    e. In Service Studio, in the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
 
     ![](<images/gallerymob-9-ss.png>)
@@ -25,7 +37,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     ![](<images/gallerymob-13-ss.png>)
 
-    To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.final.md>) into the Gallery widget and create your custom content.
+    To use the Gallery UI Pattern with items from a database, drag a [List](<../../../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md>) into the Gallery widget and create your custom content.
 
     In this example, we delete the list and add local images to the Gallery widget.
 

@@ -16,16 +16,20 @@ To understand the current state of an environment and monitor problems impacting
 
 OutSystems provides built-in tools that collect and present data about the platform and the applications running on it.
 
- ![Monitoring tools](images/intro-built-in-tools-sc-lt.png?width=800)
-
 Service Center Console
 :   [Service Center](monitoring-an-environment.md) provides a set of metrics regarding a specific environment. It provides access to application logs and errors, web and mobile requests, integration calls, business processes, and security audits. Additionally, it displays the current status of environment servers and services and allows the creation of aggregation reports over the available data.
+
+ ![Monitoring tools](images/intro-tools-sc.png?width=800)
 
 LifeTime Analytics
 :   [LifeTime Analytics](troubleshoot-the-performance-of-an-application.md) provides immediate insight into the performance and end user experience of your Traditional Web Applications. It measures the end user experience based on industry-standard indicators. Here, you can further drill down to identify bottlenecks on different levels: [client](how-application-performance-is-measured.md#client-metrics) (eg. operating systems), [network](how-application-performance-is-measured.md#network-metrics) (eg. network types), and [server](how-application-performance-is-measured.md#server-metrics) (eg. business logic elements).
 
+ ![Monitoring tools](images/intro-tools-lt.png?width=800)
+
 App Feedback
 :   [App Feedback](../app-feedback/intro.md) application lets you manage the feedback from your business users. It allows you to streamline the feedback gathering process and defect tracking.
+
+![Monitoring tools](images/app-feedback-af.png?width=800)
 
 ## Extending OutSystems Monitoring Capabilities
 

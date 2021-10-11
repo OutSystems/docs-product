@@ -58,6 +58,8 @@ Available in:
   * Database: Function is evaluated before the aggregate is executed.
   * Local Storage: Function is evaluated before the aggregate is executed.
 
+Note: Executing GetUserId() on an AfterFetch event is not recommended. For example, if a screen has multiple Data Actions or Screen Aggregates and one of these performs a login, as they're executed simultaneously, it is not possible to determine which one will override cookies last.
+
 ### Output
 
 Type: UserId  

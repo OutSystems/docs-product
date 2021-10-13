@@ -22,7 +22,7 @@ In OutSystems, it is not possible to have composite keys because only one attrib
 
 ## Sequential Attributes
 
-Sequential attributes are useful most of the time for Entity Identifier attributes. It is an easy way to ensure that each record has a unique primary key. 
+Sequential attributes are useful for Entity Identifier attributes. It is an easy way to ensure that each record has a unique primary key. 
 
 When creating new records in the database with Entity Actions, the platform automatically calculates a new sequential and unique value. 
 

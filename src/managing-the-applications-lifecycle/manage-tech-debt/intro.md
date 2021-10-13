@@ -17,7 +17,7 @@ For architects and development team leaders, it provides an integrated, bird’s
 
 ## What Architecture Dashboard analyzes
 
-Architecture Dashboard performs 2 different types of analysis which combine to provide added context and greater relevance in findings: Code Analysis and Runtime Performance Analysis.
+Architecture Dashboard analyzes the produced low-code to provide context and greater relevance in its findings.
 
 ### Code Analysis
 
@@ -37,16 +37,6 @@ Architecture Dashboard is self-sufficient when it comes to analyzing the archite
 AI auto-classification allows you to onboard factories into the Architecture Dashboard and classify each module so that it fits into the right architecture layer. Having the right architecture classification is important as it enables all other code analysis. 
 
 By default, all new infrastructures added to Architecture Dashboard use AI auto-classification. You also have the option of turning AI auto-classification off, however, this means that for architecture classification, you must have Discovery installed.
-
-### Runtime Performance Analysis
-
-<div class="info" markdown="1">
-
-Applies to **Traditional Web** apps only.
-
-</div>
-
-Regarding runtime performance analysis, Architecture Dashboard uses the analytics data from LifeTime, which is crossed with the code findings to display the most relevant and urgent cases for improvement, effectively helping address runtime performance issues.
 
 ## Access to Architecture Dashboard features
 

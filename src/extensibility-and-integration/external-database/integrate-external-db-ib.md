@@ -43,6 +43,8 @@ To integrate with an external database using Integration Builder:
 
 1. Use the integration in your application.
 
+    ![integrating with an external database using Integration Builder process overview](<images/integrate-external-db-process-diag.png>)
+
 ## How to integrate with an external database
 
 The following steps are an example of an integration with MySQL.

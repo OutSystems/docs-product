@@ -19,15 +19,32 @@ Let's do this! In this example we'll use a sample Excel file with to-do task inf
 
 ## Create a Mobile App
 
-Let's create a new task management mobile app. An application contains one or more modules, different parts of the application can be encapsulated in a module. A module is where you design the data model, implement the logic, and design the UI of your application.
+Let's create a new task management mobile app. Do the following in Service Studio:
 
-In Service Studio, select **New Application**, then **From scratch**, and choose the **Phone App** template. Name the app `To Do`.
+1. Select **New Application**.
 
-![Create a Mobile App](images/create-mobile-01.png)
+    ![New app in Service Studio](images/new-app-ss.png)
 
-In the new **To Do** application, create a **Mobile** module, named `ToDo`.
+1. Select **From scratch** and click **Next**.
 
-![Create a Mobile Module](images/create-mobile-02.png)
+    ![New app in Service Studio](images/from-scratch-ss.png)
+
+1. Choose the **Phone App** template and click **Next**.
+
+    ![Mobile App template](images/phone-app-template-ss.png)
+
+1. Name the app **To Do** and click **Create App**. Service Studio opens app details for you to add your first module.
+
+    ![App name in the new app window](images/name-of-app-ss.png)
+
+1. In the app detail screen, confirm the following and click **Create Module**:
+    
+    * The name of the module is `ToDo`
+    * The module type is **Phone App**.
+
+    ![Create a Mobile Module](images/new-module-ss.png)
+
+    An application contains one or more modules, different parts of the application can be encapsulated in a module. A module is where you design the data model, implement the logic, and design the UI of your application.
 
 ## Create a database table from an Excel file
 

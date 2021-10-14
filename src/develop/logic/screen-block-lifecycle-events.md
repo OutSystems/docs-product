@@ -139,7 +139,8 @@ The On After Fetch event handler executes right after an Aggregate or Data Actio
 
 Notes:
 
-* When the On After Fetch event handler runs, the data has arrived and is available but it isn't bound to widgets. This means that the widgets haven't updated yet. 
+* When the On After Fetch event handler runs, the data has arrived and is available but it isn't bound to widgets. This means that the widgets haven't updated yet.
+* Avoid doing any login operations in Data Actions or Aggregates, as these and the On After Fetch event run in parallel and it is unsure which of them will override cookies last.
 
 Use cases you can implement with this event handler:
 

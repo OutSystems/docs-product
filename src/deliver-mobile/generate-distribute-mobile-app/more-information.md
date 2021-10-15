@@ -115,6 +115,24 @@ To create a provisioning profile (`.mobileprovision` extension format):
 
 In order to generate iOS mobile apps in OutSystems you will be asked to provide a provisioning profile along with one of the certificates that you associated with it in the steps described above.
 
+### Renew a Provisioning Profile
+
+To check the validity of your provisioning profile:
+
+* Access your Apple developer portal, go to **Account -> Certificates, Identifiers & Profiles -> Profiles**, and check the expiration date of the desired provisioning profile.
+* Open the provisioning profile in a text editor and look for the **ExpirationDate** key that contains information about the expiring date.
+
+To renew your provisioning profile, follow these steps:
+
+1. Log in to your [Apple Developer account](https://developer.apple.com/account).
+1. Select **Certificates, Identifiers & Profiles**.
+1. Click **Profiles**.
+1. Select the provisioning profile to be renewed.
+1. Click **Edit**.
+1. Select the certificate(s) you want to associate with the profile.
+1. Click **Generate**.
+1. Download the renewed provisioning profile.
+    
 
 ## For Android
 
@@ -126,7 +144,7 @@ To create a new keystore, you can use the [keytool](https://docs.oracle.com/java
 
 After you verify the availability of the keytool command, open a computer command prompt (Start > Run > `cmd.exe`) and, if the keytool command is not available in the path, navigate to the Java "bin" directory. Execute:
     
-    keytool -genkey -v -keystore <keystore_name>.keystore -alias <alias_name> -keyalg RSA -keysize 2048 -validity 10000
+    keytool -genkey -v -keystore <keystore_name>.keystore -alias <alias_name> -keyalg RSA -keysize 2048 -validity 10000 -storetype jks
 
 where:
 

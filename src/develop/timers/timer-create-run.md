@@ -28,7 +28,7 @@ You can set the schedule of a Timer in one of the following ways:
 
     ![](images/timer-create-run-1.png)
 
-* **Setting the Timer schedule at runtime in Service Center**: The effective Timer schedule is set in Service Center. If you define the Timer schedule both when designing the application, and in Service Center, the first schedule is ignored. This ensures you can customize the Timer schedule when deploying an application to another environment, without having to change the application itself.
+* **Setting the Timer schedule at runtime in Service Center**: In cases when you need to customize the Timer schedule when deploying an application to another environment, there is no need to change the application. The effective Timer schedule is set in Service Center, which uses the default settings in every environment unless specifically modified.
 
 * **Implement logic that changes the Timer schedule at runtime**: Assign the `Schedule` runtime property of the Timer with a specific schedule within your logic. Make sure to use the [correct time format](../../ref/lang/auto/Class.Timer.final.md#runtime-properties).  
 

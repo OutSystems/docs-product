@@ -7,6 +7,12 @@ tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps
 
 LifeTime continuously synchronizes information with all the registered environments. When there’s the need to perform maintenance on an environment, for example, when upgrading the Platform Server version, enabling **maintenance mode** avoids unnecessary communication attempts from the LifeTime console.
 
+<div class="info" markdown="1">
+
+Maitenance Mode is  available in **Lifetime** version 11.9.0 onwards.
+
+</div>
+
 ![environment in maintenance mode](images/infrastructure-maint-mode-lt.png)
 
 When an environment is in maintenance mode, LifeTime doesn't synchronize with that environment, and some operations are disabled.

@@ -24,7 +24,7 @@ If you are creating your first chart, start with [a Line Chart with a fixed numb
 
     Optionally, you can also set **DataSeriesName**, **Tooltip** and **Color** for the [data points](../auto/charts-api.final.md#Structure_DataPoint).
 
-1. To add another data point, repeat steps **.2** and **.3**.
+1. To add another data point, repeat steps **2** and **3**.
 
     ![](images/line-07.png?width=400)
 
@@ -34,7 +34,7 @@ After publishing your module you can check your chart by opening the screen in b
 
 ## Create a Line or Area Chart with a variable number of data points
 
-Before you start, make sure your List of data points is ready to be used in your chart: each data point must include a label and a numerical value.
+Before you start, make sure your list of data points is ready to be used in your chart. In the example below, an entity has been created that includes rows for a label and a numerical value.
 
 To create a Line or Area Chart with a variable number of data points follow these steps:
 

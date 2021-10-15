@@ -839,11 +839,6 @@
 
 # --- Extensibility and Integration ---
 
-- extensibility-and-integration/configure-send-emails.md:
-    - external:
-        - "How-to send emails from your personal environment":
-            https://success.outsystems.com/Support/Personal_Environment/How-to_send_emails_from_your_personal_environment
-
 - extensibility-and-integration/mobile-plugins/using-cordova-plugins.md:
     - external:
         - "How to Create a Cordova Plugin from Scratch":
@@ -918,6 +913,9 @@
 
 - managing-the-applications-lifecycle/containers/intro.md:
     - managing-the-applications-lifecycle/deploy-applications/zones/intro.md
+
+- managing-the-applications-lifecycle/deploy-applications/zones/intro.md:
+    - managing-the-applications-lifecycle/containers/architecture.md
 
 - managing-the-applications-lifecycle/containers/guide-ecs.md:
     - one-way: managing-the-applications-lifecycle/containers/intro.md

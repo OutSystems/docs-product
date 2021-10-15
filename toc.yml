@@ -532,6 +532,8 @@
         - href: deliver-mobile/distribute-pwa/advanced.md
         - href: deliver-mobile/distribute-pwa/troubleshooting-know-issues.md
     - href: deliver-mobile/app-shield/intro.md
+    - topics:
+        - href: deliver-mobile/app-shield/obfuscate-custom-rules.md
     - href: deliver-mobile/compliance-with-third-party-licenses.md
 
 # Extensibility and Integration
@@ -576,6 +578,7 @@
         - href: extensibility-and-integration/mobile-plugins/file-transfer-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/file-viewer-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/firebase/intro.md
+        - href: extensibility-and-integration/mobile-plugins/health-fitness/intro.md
         - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md
         - href: extensibility-and-integration/mobile-plugins/using-cordova-plugins.md
     - href: extensibility-and-integration/javascript/intro.md
@@ -1380,6 +1383,7 @@
         - href: ref/errors-and-warnings/errors/intro-errors.md
         - topics:
             - href: ref/errors-and-warnings/errors/1-click-publish-required-error.md
+            - href: ref/errors-and-warnings/errors/change-target-directory.md
             - href: ref/errors-and-warnings/errors/concurrent-publishing-error.md
             - href: ref/errors-and-warnings/errors/connection-error.md
             - href: ref/errors-and-warnings/errors/database-upgrade-error.md

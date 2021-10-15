@@ -8,6 +8,12 @@ tags:
 
 When you are debugging a producer Module the debugger will not stop in any breakpoints set in the consumer Module unless you also start a debug session in the consumer Module.
 
+<div class="info" markdown="1">
+
+See [this article](https://success.outsystems.com/Documentation/11/Developing_an_Application/Reuse_and_Refactor/Expose_and_reuse_functionality_between_modules) for more information about consumer and producer modules in OutSystems.
+
+</div>
+
 The procedure for debugging producer Modules differs depending on the type of exposed Actions: 
 
 ## Public Client Actions or public Server Actions

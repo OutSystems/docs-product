@@ -45,7 +45,7 @@ To create the logic to scan for barcodes, follow these steps in Service Studio:
 
 3. Check the **ScanResult** text for the result of the scan.
 
-To prevent errors, it's a good practice to first check if the plugin is available using the action **CheckBarcodePlugin**. To confirm the device can read the barcodes, verify that the value of **ScanBarcode.Success** is true. See the [sample app](#sample-app) for the examples.
+To prevent errors, it's a good practice to first check if the plugin is available using the action **CheckBarcodePlugin**. To confirm the device can read the barcodes, verify that the value of **ScanBarcode.Success** is true. See the [demo app](#demo-app) for the examples.
 
 ## Reference
 

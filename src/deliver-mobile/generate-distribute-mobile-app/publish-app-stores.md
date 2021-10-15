@@ -17,7 +17,7 @@ The following diagram shows a typical publishing process:
 
 When you have your application ready, it's time to publish it. Unlike publishing an app in OutSystems with one single click, publishing an app to a store requires several steps. Here are some pre-requirements to follow.
 
-### Splash screen
+### Screenshots
 
 Each application can have up to five screenshots and three previews, and you must provide at least one. If you are developing a universal app that runs on multiple devices, [you need to provide separate screenshots for each device](../customize-mobile-app/use-custom-splash-screens.md).
 

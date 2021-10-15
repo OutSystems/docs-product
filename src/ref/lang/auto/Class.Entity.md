@@ -105,7 +105,7 @@ An Entity represents a table in a database.
 <td>Set which is the way the update of entity records is performed:<br/> - <b>All Attributes</b>: all the attributes are always updated in the database.<br/> - <b>Changed Attributes</b>: only the attributes that were changed are updated in the database thus, improving efficiency.</td>
 <td>Yes</td>
 <td>Changed Attributes</td>
-<td>hChange Attributes only works with an entity variable that's populated by an Aggregate or SQL node. That data is flagged as being "original" and changes to that data by an Assign node changes this flag to "changed" and that's how the platform knows how to build the more efficient query when invoking the entity's CreateOrUpdate or Update action.</td>
+<td>The Change Attribute only works with an entity variable type that's populated by an Aggregate or SQL node. That data is flagged as "original" and changes to that data by an Assign node sets this flag to "changed." That's how the platform knows how to build a more efficient query when invoking the entity's CreateOrUpdate or Update action.</td>
 </tr>
 <tr>
 <td title="Expose Process Events">Expose Process Events</td>

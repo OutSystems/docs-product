@@ -45,7 +45,7 @@ Dropdown list from which the user can select a value.
 <td title="DropdownMode">Options Content</td>
 <td>'Text (Default)' content provides a native experience for selecting textual values (uses the select HTML tag). 'Custom' provides richer content with non-textual widgets (for example, images) inside the dropdown (uses the div HTML tag).</td>
 <td>Yes</td>
-<td>Custom</td>
+<td>Text Only</td>
 <td></td>
 </tr>
 <tr>

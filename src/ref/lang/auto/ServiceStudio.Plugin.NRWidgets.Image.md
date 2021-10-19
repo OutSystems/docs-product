@@ -51,7 +51,7 @@ Displays an image from a defined source.
 <tr>
 <td title="ImageContent">Image Content</td>
 <td>Defines the image to display when Type is set to Binary Data.</td>
-<td></td>
+<td>Yes</td>
 <td></td>
 <td>Only available when Type is set as Binary Data.</td>
 </tr>

@@ -23,7 +23,7 @@ Groups widgets and apply styles to them. Translates into an HTML div element.
 <tr>
 <td title="Name">Name</td>
 <td>Identifies an element in the scope where it is defined, like a screen, action, or module.</td>
-<td>Yes</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>

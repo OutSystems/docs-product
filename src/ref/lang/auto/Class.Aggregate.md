@@ -7,7 +7,7 @@ helpids: 17203
 
 Fetches and computes data from a database.  
 
-Note: Avoid doing any login operations in Aggregates, because these run in parallel and it is unsure which of them will override cookies last.
+Note: Avoid doing any login operations in Aggregates, because these run in parallel and it's unsure which of them will override cookies last.
 
 ## Properties
 

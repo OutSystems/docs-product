@@ -144,7 +144,7 @@ To create a new keystore, you can use the [keytool](https://docs.oracle.com/java
 
 After you verify the availability of the keytool command, open a computer command prompt (Start > Run > `cmd.exe`) and, if the keytool command is not available in the path, navigate to the Java "bin" directory. Execute:
     
-    keytool -genkey -v -keystore <keystore_name>.keystore -alias <alias_name> -keyalg RSA -keysize 2048 -validity 10000
+    keytool -genkey -v -keystore <keystore_name>.keystore -alias <alias_name> -keyalg RSA -keysize 2048 -validity 10000 -storetype jks
 
 where:
 

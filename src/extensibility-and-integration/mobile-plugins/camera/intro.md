@@ -9,13 +9,13 @@ Use the Camera Plugin to let users take pictures with their mobile device. This 
 
 <div class="info" markdown="1">
 
-See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a demo app.
 
 </div> 
 
-## Sample app
+## Demo app
 
-Install [Camera Sample App](https://www.outsystems.com/forge/component-overview/1390/camera-plugin) from Forge and open the app in Service Studio. The sample app contains logic for common use cases, which you can examine and recreate in your apps. For example, the sample app shows how to:
+Install [Camera Demo App](https://www.outsystems.com/forge/component-overview/1390/camera-plugin) from Forge and open the app in Service Studio. The demo app contains logic for common use cases, which you can examine and recreate in your apps. For example, the demo app shows how to:
 
 * Take a picture
 * Select a picture from the gallery
@@ -23,7 +23,7 @@ Install [Camera Sample App](https://www.outsystems.com/forge/component-overview/
 * Edit a picture taken with the camera or selected from the gallery
 * Edit the picture that now displays in the app
 
-![Camera Plugin sample app](images/camera-sample-app.png)
+![Camera Plugin demo app](images/camera-sample-app.png?width=330)
 
 ## Taking a picture
 
@@ -39,7 +39,7 @@ See the sections that follow for more information.
 
 You can start by defining a variable of the **Binary Data** data type to hold the image data (1). Use a Button (2) or other widget to run the action that takes a picture. Use an **Image** widget (3) to show the image after using the camera, by setting **Type** to **Binary Data** and **Image Content** to the variable you created.
 
-![UI setup for taking pictures](images/camera-ui-setup-ss.png)
+![UI setup for taking pictures](images/camera-ui-setup-ss.png?width=700)
 
 For more guidance on how to create an interface, see the UI accelerators that come with the Camera Plugin. In Service Studio, navigate to **Interface** > **UI FLows** > **Camera Plugin** > **Camera Plugin**, and drag these Blocks to your Screen:
 
@@ -54,7 +54,7 @@ To prevent errors, it's a best practice to first check if the plugin is availabl
 
 Check if taking pictures on the device works by verifying the value of **TakePicture.Success** is **True** (3). If yes, handle the picture data in **TakePicture.ImageCaptured** by assigning it to a variable of the **Binary Data** data type (4).
 
-![Take picture logic flow](images/camera-flow-take-picture-ss.png)
+![Take picture logic flow](images/camera-flow-take-picture-ss.png?width=700)
 
 ## Opening a picture from the gallery
 
@@ -62,7 +62,7 @@ Let users choose a picture from the device gallery with the **ChooseGalleryPictu
 
 The action **ChooseGalleryPicture** opens an image browser to let users select an image (1). [Check for errors](#handling-errors) by verifying **ChooseGalleryPicture.Success** is **True** (2). After users select the image, the binary data of the image is in the variable **ChooseGalleryPicture.ImageCaptured.** (3).
 
-![Open from gallery](images/camera-flow-choose-from-gallery.png)
+![Open from gallery](images/camera-flow-choose-from-gallery.png?width=700)
 
 ## Image quality and app responsiveness
 
@@ -90,7 +90,7 @@ Here is the list of actions you can use to handle the errors.
 
 You can use these actions with the **If** nodes to check for errors and control how the app works.
 
-![Handling errors in the camera plugin](images/camera-handling-errors.png)
+![Handling errors in the camera plugin](images/camera-handling-errors.png?width=800)
 
 ## Reference
 

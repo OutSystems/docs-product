@@ -9,6 +9,12 @@ You can improve the performance of your app by enabling the caching of some elem
 Caching is RAM-based and is available in every front-end server. Whenever memory space is required, the elements are removed from the cache using the least recently used algorithm.
 
 
+<div class="info" markdown="1">
+
+The cache invalidation system action can have a negative performance impact during the first access of an application. It also increases the load in the servers due to the compilation of the applications in IIS. For these reasons use of the cache invalidation system action should be kept to a minimum.
+
+</div>
+
 These are the elements that **support** caching:
 
 * The lists returned by Aggregate and SQL.
@@ -46,7 +52,7 @@ Additionally, the cached elements cannot have input parameters of the following 
 
 The cache also depends on whether the producer module is referenced as a strong or a weak dependency. 
 
-When the modules have a **strong dependency**, the Action logic is executed in the context of each consumer module handling the request. The cached value exists in each of the producers and cannot be reused between them.
+When the modules have a **strong dependency**, the Action logic is executed in the context of each consumer module handling the request. The cached value exists in each of the consumers and cannot be reused between them.
 
 If you want a **single cached value** instance in memory and serve all requests with it, expose the Action through a **weak dependency**. This way, the request executing and caching the Action exists only in the producer module, and all its consumers see the same value.
 

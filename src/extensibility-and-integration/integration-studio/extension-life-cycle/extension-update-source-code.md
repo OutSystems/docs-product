@@ -24,9 +24,13 @@ The Update Source Code operation synchronizes the source code you added in the .
   
 ## How to update the extension source code
 
-In the **File** menu or in the toolbar, click ![](images/update-source-code.gif) **Update Source Code** or ![](images/1-click-publish-icon.gif) [**1-Click Publish**](<extension-1-cp.md>).
+In the **File** menu or in the toolbar, click ![](images/update-source-code.png) **Update Source Code** or ![](images/1-click-publish-icon.png) [**1-Click Publish**](<extension-1-cp.md>).
 
-![](images/tip.gif) The Update Source Code operation is also executed when you [edit source code](<extension-code-edit.md>) or [verify](<extension-verify.md>) the extension.
+<div class="info" markdown="1">
+
+The Update Source Code operation is also executed when you [edit source code](<extension-code-edit.md>) or [verify](<extension-verify.md>) the extension.
+
+</div>
 
 ## Merge Algorithm
 

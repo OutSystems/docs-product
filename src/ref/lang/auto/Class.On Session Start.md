@@ -5,7 +5,7 @@ helpids: 0
 
 # On Session Start
 
-Action to be executed in the first request to the server, after logging in, or on the first request after having logged out.  
+On Session sStart is an action that executes after logging in, or after the first request to the server, or the first request after logging out.
 
 ## Properties
 
@@ -29,4 +29,3 @@ Action to be executed in the first request to the server, after logging in, or o
 </tr>
 </tbody>
 </table>
-

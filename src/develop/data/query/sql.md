@@ -142,7 +142,8 @@ OutSystems starts a transaction when the web request arrives to the server, and 
 
 ### Check for data support
 
-If the value of the Database Module Property is **All**, OutSystems checks the queries to ensure all supported databases can run the query. If the query can't run in all databases, the platform shows a warning.
+Service Studio checks if the SQL statement can run in the databases set in the **Database** property of the module. If the query can't run in the databases, Service Studio shows a warning.
+If the **Database** property is set as **All**, Service Studio checks the queries to ensure [all supported databases](../../../getting-started/system-requirements.md#database-management-system) can run the query.
 
 ### Avoid Expand Inline property of query parameters
 

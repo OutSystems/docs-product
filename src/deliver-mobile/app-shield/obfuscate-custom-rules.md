@@ -31,7 +31,7 @@ At a high-level, you:
 
 ## Create your own obfuscation rules
 
-To begin, use your favorite editor to create your rules. Or try our editor which has a validation feature for custom obfuscation rules. For more information, see the [Obfuscation Helper](https://enmobile11-dev.outsystemsenterprise.com/ObfuscationHelper/).
+To begin, use your favorite editor to create your rules. Or try our editor which has a validation feature for custom obfuscation rules. For more information, see the [Obfuscation Helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/).
 
 Be sure to include [OutSystems obfuscation base rules](files/default-obfuscation-rules.txt). Base rules are a set of mandatory obfuscation rules that guarantee that the obfuscation process correctly obfuscates native code from the shell and OS-Supported plugins. When you're defining custom rules for non-supported plugins, you must include OutSystems Obfuscation rules.
 
@@ -132,7 +132,7 @@ The following is a list of the specifiers with a short description.
 
 ## Obfuscation Helper
 
-Using the Obfuscation [Helper tool](https://enmobile11-dev.outsystemsenterprise.com/ObfuscationHelper/) you can verify the syntax of your custom obfuscation rules and encode them in a base64 format. The Helper tool automatically checks your rules, encodes your script, and defines the value of your AppShieldObfuscationRules in the Extensibility Configuration.
+Using the Obfuscation [Helper tool](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/) you can verify the syntax of your custom obfuscation rules and encode them in a base64 format. The Helper tool automatically checks your rules, encodes your script, and defines the value of your AppShieldObfuscationRules in the Extensibility Configuration.
 
 ## Additional syntax guidance
 
@@ -168,7 +168,7 @@ To enable custom code obfuscation, follow these steps to add a property to the E
 
 <div class="info" markdown="1">
 
-Optionally, you can use the [Obfuscation Helper](https://enmobile11-dev.outsystemsenterprise.com/ObfuscationHelper/) to verify the syntax of your custom obfuscation rules and encode them in a bae64 format.
+Optionally, you can use the [Obfuscation Helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/) to verify the syntax of your custom obfuscation rules and encode them in a bae64 format.
 
 </div>
 

@@ -734,7 +734,6 @@
         - "Obfuscation and retracing logs of mobile builds":
             https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Obfuscation_and_retracing_logs_of_mobile_builds
 
-
 # UI Mobile Patterns
 - develop/ui/patterns/mobile/adaptive/columns.md:
     - ref/ui-patterns/mobile/columns.md

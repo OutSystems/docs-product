@@ -1,5 +1,5 @@
 ---
-summary: Troubleshooting, errors, warnings, and know issues.  
+summary: Troubleshooting, errors, warnings, and known issues.  
 tags:
 ---
 

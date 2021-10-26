@@ -140,13 +140,16 @@ The On After Fetch event handler executes right after an Aggregate or Data Actio
 Notes:
 
 * When the On After Fetch event handler runs, the data has arrived and is available but it isn't bound to widgets. This means that the widgets haven't updated yet.
-* Avoid doing any login operations in Data Actions or Aggregates, as these and the On After Fetch event run in parallel and it is unsure which of them will override cookies last.
 
 Use cases you can implement with this event handler:
 
 * Assign the first or last record returned by the query to a variable.
 * In the master-detail pattern, to iterate a query to populate a list of lists.
 * For queries dependent on other queries, you can use this event handler to trigger the dependent Aggregate. 
+
+Use cases you shouldn't implement with this event handler:
+
+* Don't use the GetUserId() function at this moment to know the user that is currently authenticated. The parallel execution of Data Actions and client-side Agreggates in a Screen overrides the session authentication cookie. Therefore, using the GetUserId() function in the On After Fetch event might return an empty value.
 
 ### On Parameters Changed
 

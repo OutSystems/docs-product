@@ -7,8 +7,6 @@ helpids: 0
 
 System defined action to manipulate entity records.  
 
-Note: Avoid doing any login operations in Data Actions, because these run in parallel and it is unsure which of them will override cookies last.
-
 ## Properties
 
 <table markdown="1">

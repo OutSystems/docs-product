@@ -1,19 +1,9 @@
-# Connect to a Server
+# Connect to an environment
 
-You must connect to a server when you want to execute the following operations: [1-Click Publish](<extension-1-cp.md>), [Download an Extension](<../managing-extensions/extension-download.md>) and, [Import Entities from a Database](<../managing-extensions/entity-import-from-database.md>).
+When you launch **Integration Studio** you must connect to an environment before you can you execute the following operations: [1-Click Publish](<extension-1-cp.md>), [Download an Extension](<../managing-extensions/extension-download.md>), and [Import Entities from a Database](<../managing-extensions/entity-import-from-database.md>).
 
-## Connecting to a Server
+## Connecting to an environment
 
-You can explicitly connect to a server or let Integration Studio prompt you to connect whenever you must be connected but are not; for example, if you are publishing the extension. In both situations the [Select server window](<../../../ref/integration-studio/menu/file/server-select-window.md>) is displayed.
+In the **File** menu or in the toolbar click ![](images/connect-server.gif) **Connect to Environment...** In the **Connect to Environment...** window select the environment from the dropdown list, give your user name and password, and then click **Connect**.
 
-In the **File** menu or in the toolbar, click ![](images/connect-server.gif) **Select server...** and specify the parameters presented below.
-
-## Connection Information
-
-Once you are connected to a server, Integration Studio presents you information about the connection:
-
-Title bar
-:   Contains the name of the Platform Server you are connected to; for example `MyExtension@HubServer`.
-
-Status bar
-:   Contains the name of the Platform Server you are connected to and the username of the user that established the connection.
+Once you have connected to your environment the **Context information** pane at the bottom of the **Integration Studio** workspace displays the name of the environment server and your user name. 

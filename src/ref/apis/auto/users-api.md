@@ -31,6 +31,7 @@ Action | Description
 [User_GetLastFailedLoginAttempts](<#User_GetLastFailedLoginAttempts>) | Returns a list of last failed login attempts (one record for each IP address). This information can be used to invoke User_Unblock or IPaddress_Unblock.
 [User_GetName](<#User_GetName>) | Returns the name of the logged user.
 [User_GetUnifiedLoginUrl](<#User_GetUnifiedLoginUrl>) | Returns the Url used for custom unified login patterns. Includes Windows Integrated Authentication pattern.
+[User_GetUnifiedLogoutUrl](<#User_GetUnifiedLogoutUrl>) | Returns the Url used for custom unified logout patterns. Includes Windows Integrated Authentication pattern.
 [User_IsExternalUser](<#User_IsExternalUser>) | 
 [User_Login](<#User_Login>) | Action to login using username and password as credentials.
 [User_Logout](<#User_Logout>) | Logs out the current user. Session variables are cleared during the logout process.
@@ -348,6 +349,20 @@ OriginalUrl
 Url
 :   Type: Text.  
     
+### User_GetUnifiedLogoutUrl { #User_GetUnifiedLogoutUrl }
+
+Returns the Url used for custom unified logout patterns. Includes Windows Integrated Authentication pattern.
+
+*Inputs*
+
+OriginalUrl
+:   Type: optional, Text.  
+    
+
+*Outputs*
+
+Url
+:   Type: Text.  
 
 ### User_IsExternalUser { #User_IsExternalUser }
 

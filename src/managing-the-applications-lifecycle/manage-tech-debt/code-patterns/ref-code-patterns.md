@@ -571,28 +571,32 @@ Avoid enabling the Expand Inline property of a SQL Query Parameter since it coul
 
 Impact
 :   OutSystems uses prepared statements by default to execute the SQL queries that you define in SQL elements. These prepared statements contain SQL parameters or placeholders, for which you define values before executing the SQL statement. These parameters can only store a value of a given type and not arbitrary SQL fragments.
-If you enable the Expand Inline property for a Query Parameter, its value will no longer be handled as a SQL parameter value. Instead, the Query Parameter value will be included in the SQL statement without first being evaluated and turned into a literal by the SQL engine. This means that you can use the Query Parameter to insert SQL fragments in the full SQL statement dynamically, but it also means that your end-users may be able to exploit this fact if you do not take the necessary precautions.
+
+    If you enable the Expand Inline property for a Query Parameter, its value will no longer be handled as a SQL parameter value. Instead, the Query Parameter value will be included in the SQL statement without first being evaluated and turned into a literal by the SQL engine. This means that you can use the Query Parameter to insert SQL fragments in the full SQL statement dynamically, but it also means that your end-users may be able to exploit this fact if you do not take the necessary precautions.
 
     OutSystems will use an SQL parameter for every Query Parameter that has the Expand Inline property disabled. This property is disabled by default, providing you default protection against SQL injection attacks.
 
     It's difficult to use properly expanded parameters inline since you need to make sure that any user input is properly escaped before using it in an SQL statement. If you can, avoid enabling this property altogether.
 
 How to fix
-:   OutSystems provides ways of implementing common use cases without enabling the Expand Inline property. Check [Building dynamic SQL statements the right way](https://success.outsystems.com/Documentation/Best_Practices/Building_dynamic_SQL_statements_the_right_way) Best Practice in the documentation.
+:   OutSystems provides ways of implementing common use cases without enabling the Expand Inline property and provides recommendations when using the Expand Inline. For more information, see [SQL Injection Warning ](../../../ref/errors-and-warnings/warnings/sql-injection-warning.md).
 
     If you must enable Expand Inline, take the following recommendations into account:
 
-    * Do not perform manual string encoding using the Replace.
-    String literals should only be encoded using the EncodeSql function. Doing it manually through the Replace function is prone to errors and can introduce bugs into your application that can later be exploited by end-users.
-    * Use EncodeSql() to encode string literals. The EncodeSql function encodes string literals to be used in SQL statements when the Expand Inline property is enabled. Make sure you avoid the following bad practices when using EncodeSql():
-    * Do not use EncodeSql() to encode the full contents of an SQL parameter. For example:
-    myparameter = EncodeSql(""WHERE surname = "" + @myVariable1 + "" OR name = "" + @myVariable2)
-    This pattern is wrong on most occasions, so you will get a warning if you use it.
-    Use EncodeSql only to encode string literals, not complete fragments of an SQL statement.
-    * Do not build ""WHERE column IN (@values)"" clauses by wrapping all the values in a EncodeSql call:
-    values = EncodeSql(name1 + "","" + name2 + "","" + name)
-    This approach will not protect you from SQL injection.
-    Instead, use the BuildSafe_InClauseIntegerList() and BuildSafe_InClauseTextList() functions to build ""WHERE column IN (@values)"" clauses.
+    * Do not perform manual string encoding using the **Replace** function.String literals should only be encoded using the **EncodeSql** function. Doing it manually using the **Replace** function is prone to errors and can introduce bugs into your application that can later be exploited by end-users.
+
+    * Use **EncodeSql()** to encode string literals. The **EncodeSql** function encodes string literals to be used in SQL statements when the **Expand Inline** property is enabled. Make sure you avoid the following bad practices when using **EncodeSql()**:
+
+        * Do not use **EncodeSql()** to encode the full contents of an SQL parameter. For example:
+        ``myparameter = EncodeSql(""WHERE surname = "" + @myVariable1 + "" OR name = "" + @myVariable2).``      
+        This pattern is wrong on most occasions, so you will get a warning if you use it.
+        
+        * Use **EncodeSql** only to encode string literals, not complete fragments of an SQL statement.
+
+    * Do not build ``""WHERE column IN (@values)""`` clauses by wrapping all the values in a EncodeSql call:
+    ``values = EncodeSql(name1 + "","" + name2 + "","" + name).``
+    
+        This approach will not protect you from SQL injection. Instead, use the ``BuildSafe_InClauseIntegerList() and BuildSafe_InClauseTextList()`` functions to build ``""WHERE column IN (@values)""`` clauses.
 
 ### Visible disabled Button
 

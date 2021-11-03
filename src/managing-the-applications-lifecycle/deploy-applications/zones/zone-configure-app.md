@@ -26,6 +26,4 @@ To configure an application to use a given deployment zone do the following:
 
 1. Click the **Save** button.
 
-1. If the new deployment zone uses a **container-based hosting technology**, you need to republish your application for the configuration changes to take effect.
-
-    On the other hand, if the selected deployment zone uses the **Classic Virtual Machines** hosting technology, the application is automatically deployed to the front-end servers included in the deployment zone. The application is also removed from all front-end servers that don't belong to the deployment zone.
+1. You need to republish your application for the configuration changes to take effect.

@@ -649,7 +649,6 @@
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-large-session-variables.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-site-property-updates.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/control-image-size.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/expand-inline-parameters.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/limit-records-sql.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md

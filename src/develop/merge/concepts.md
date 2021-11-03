@@ -24,7 +24,7 @@ This merge is automatic if there are no conflicts, and applies to both visual el
 1. The other developers publish their changes.
 1. You publish your changes. OutSystems detects there are changes to be merged, based on the version from where both started developing (V4). The **Modified Version Detected** window is displayed and you choose **Merge and Publish**. OutSystems automatically merges and publishes the module for you. 
 
-![](images/graph-automerge.png)
+![](images/automatic-merge-module-versions-diag.png)
 
 ## Resolve merge conflicts
 
@@ -36,7 +36,7 @@ elements, OutSystems cannot automatically merge the work. It's not possible to a
 1. The other developers publish their changes. 
 1. You publish your changes. OutSystems determines that there are changes to be merged based on the version from where both parties started developing (V4). The  **Modified Version Detected**  window is displayed, and you choose **Merge and Publish**. There are conflicts because you have changed some elements that the other developers also changed. Service Studio displays the **Compare and Merge** window. The non-conflicting changes are selected for you, but you have to decide which conflicting changes you want to keep.
 
-![](images/graph-resolve-conflicts.png)
+![](images/resolve-merge-conflicts-diag.png)
 
 ## Compare and merge versions
 

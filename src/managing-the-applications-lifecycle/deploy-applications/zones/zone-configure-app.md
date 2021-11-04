@@ -26,4 +26,4 @@ To configure an application to use a given deployment zone do the following:
 
 1. Click the **Save** button.
 
-1. You need to republish your application for the configuration changes to take effect.
+1. Republish your application for the configuration changes to take effect.

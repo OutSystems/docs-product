@@ -21,7 +21,7 @@ Usage
 
 When something happens in a block it is possible to communicate that event to the parent screen or block so that it executes an action. In the same way, parent screens or blocks can also communicate with child blocks so that they execute an action. Using these two mechanisms together it is possible for a block to communicate with a sibling block.
 
-![Communicate between Blocks](images/block-communicate.png?width=400)
+![Communicate between Blocks](images/block-communicate-diag.png)
 
 ### (A) Communication between a Block and the Parent Screen or Block
 

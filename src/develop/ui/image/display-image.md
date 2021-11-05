@@ -25,13 +25,13 @@ To display a database image in Reactive Web and Mobile:
 
     ![](images/drag-image-widget-ss.png)
 
-    <br>
+    
 
 1. Set the property Type to `Binary Data`. 
 
     ![](images/set-property-type.png)
 
-    <br>
+  
 
 1. Set the property Image Content to the entity attribute that stores the image.
 

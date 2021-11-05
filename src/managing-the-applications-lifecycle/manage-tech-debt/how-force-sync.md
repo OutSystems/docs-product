@@ -11,7 +11,7 @@ Synchronization of data between the Architecture Dashboard LifeTime probe and th
 
 <div class="info" markdown="1">
 
-There's a daily limit to the number of unscheduled synchronization requests that Architecture Dashboard processes for each infrastructure.
+There's a daily limit to the number of unscheduled synchronization requests that Architecture Dashboard can process for each infrastructure. You can request 5 synchronization requests per day.
 
 </div>
 

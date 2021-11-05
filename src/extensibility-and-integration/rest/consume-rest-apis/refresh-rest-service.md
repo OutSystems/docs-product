@@ -47,7 +47,7 @@ To refresh a REST API service:
     *  /relative endpoint = endpoint relative to the base URL
     *  (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification
 
-    This example shows all available methods selected. **AllGoalKeepers** shows as outdated, which means you can't select it.
+    This example shows all available methods selected. **GetCustomersWithOrders** shows as outdated, which means you can't select it.
 
     ![](images/ss-rest-refresh-methods-4.png)
 

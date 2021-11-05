@@ -13,37 +13,37 @@ To display a database image in Reactive Web and Mobile:
 
 1. Open the screen where you want to display the image. 
 
-![](images/open-screen-ss.png)
+    ![](images/open-screen-ss.png)
 
-<br>
+    <br>
 
 2. Check if there is an aggregate fetching the image from the database. Add the aggregate if needed. 
 
-![](images/add-aggregate-ss.png)
+    ![](images/add-aggregate-ss.png)
 
-<br>
+    <br>
 
 
 3. Drag the Image widget from the toolbox to the screen. 
 
-![](images/drag-image-widget-ss.png)
+    ![](images/drag-image-widget-ss.png)
 
-<br>
+    <br>
 
 
 4. Set the property Type to `Binary Data`. 
 
-![](images/set-property-type.png)
+    ![](images/set-property-type.png)
 
-<br>
+    <br>
 
 
 5. Set the property Image Content to the entity attribute that stores the image.
 
 
-![](images/set-property-image-content.png)
+    ![](images/set-property-image-content.png)
 
-<br>
+    <br>
 
 
 ## In Traditional Web

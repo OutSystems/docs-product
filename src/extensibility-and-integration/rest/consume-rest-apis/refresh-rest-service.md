@@ -10,35 +10,41 @@ An earlier approach to updating a single method, described later in this article
 
 To refresh a REST API service:
 
-1. In the **Logic** tab, expand the **Integrations** folder and then **REST**.
+1. In the **Logic** tab, expand the **Integrations** folder and then expand **REST**.
 
-2. Under **REST**, right-click the REST API and select **Refresh REST API...**. In this example, the name of the REST API is **SoccerTeam**.
+2. Under **REST**, right-click the REST API and select **Refresh REST API**. In this example, the name of the REST API is **Customers**.
 
     ![](images/ss-rest-refresh-1.png)
 
-3. In the Refresh REST API popup, click **Yes**. When you click **Yes**, any changes made to the previous version are lost.  
+3. In the Refresh REST API popup, click **Yes**. 
+
+    When you click **Yes**, any changes made to the previous version are lost.  
 
     ![](images/ss-rest-refresh-confirm-2.png)
 
-4. Enter the REST API URL or upload a new specification, and click **Add Methods**. In this example, the URL points to a JSON file that contains the complete list of REST methods.
+4. Enter the REST API URL or upload a new file, and click **Refresh Methods**. 
+
+    In this example, the URL points to a JSON file that contains the complete list of REST methods.
 
     ![](images/ss-rest-refresh-URL-3.png)
 
-5. Select the methods you would like to consume. Note that:
+5. Select the methods you would like to consume. 
     
-    * The methods you select overwrite previously consumed methods for the service. Be sure to select all methods you want to consume, even if they haven't changed.
-    * The following settings are NOT overridden when you refresh:
+    Note that:
+    
+    * The methods you select overwrite previously consumed methods for the service. Ensure you select all methods you want to consume, even if they haven't changed.
+    * The following settings are **not** overridden when you refresh:
             
         * Basic authentication
         * Advanced settings (Date Format, On Before Request and On After Response)
         * HTTP headers
 
-    The method format displays as **method name [/relative endpoint]** and, if applicable, **(outdated)**. 
+    The method format displays as **method name/relative endpoint** and, if applicable, **(outdated)**. 
 
     Where:
     
     * method name = the method you may select to consume or update
-    *  [/relative endpoint] = endpoint relative to the base URL
+    *  /relative endpoint = endpoint relative to the base URL
     *  (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification
 
     This example shows all available methods selected. **AllGoalKeepers** shows as outdated, which means you can't select it.
@@ -66,14 +72,12 @@ To manually update a REST method:
 
     ![](images/ss-rest-change-1.png) 
 
-1. Click **OK**. 
+1. Click **Finish**. 
 
 ## Adapt your application to the changes
 
 When you change the definition of the REST API method, OutSystems automatically updates the REST API Method and the associated structures according to your changes:
 
 ![](images/ss-rest-change-2.png)
-
-![](images/ss-rest-change-3.png)
 
 You can now adapt the action flows or screens of your application to reflect the updated functionality.

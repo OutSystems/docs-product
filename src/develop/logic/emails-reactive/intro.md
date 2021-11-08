@@ -85,3 +85,8 @@ In this technical preview, when your Email modules (consumers) use CSS from othe
 ### Clipped content in Gmail
 
 Google Gmail clips messages if the HTML code is larger than 102 KB. OutSystems recommends you start with Emails that have only basic styles, without the CSS from OutSystems UI.
+
+### Video Example
+
+[![Send Emails from Reactive or Mobile Apps](https://res.cloudinary.com/marcomontalbano/image/upload/v1636408427/video_to_markdown/images/vimeo--643684903-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://vimeo.com/643684903 "Send Emails from Reactive or Mobile Apps")
+

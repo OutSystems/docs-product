@@ -5,9 +5,9 @@ tags:
 
 # Technical Preview - Integrate with an external database using Integration Builder 
 
-You can integrate your applications  with external databases including DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can extract, load, transform, and update data from the external database.
+You can integrate your applications with external databases including DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can extract, load, transform, and update data from the external database.
 
-For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems.](../../setup/system-requirements.md)
+For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems.](../../setup/system-requirements.md).
 
 ## Prerequisites
 
@@ -26,6 +26,15 @@ Platform Server 11.13.2 or later
 * Default values are fixed and defined by Integration Builder as i done by other external providers, such as SAP and Salesforce.
 
 * It is not possible to rename entities.
+
+* The external database must communicate with Service Center, otherwise it’s not possible to use Integration Builder.
+
+
+<div class="info" markdown="1">
+
+**Note**: If you use the Internal Network configuration in the Configuration tool, you must add the Integration Builder IPs or the SIPO IPs in the case that SIPO is already live.
+
+</div>
 
 ## Process overview
 
@@ -75,7 +84,7 @@ The following steps are an example of an integration with MySQL.
 
 1. Validate your credentials and click **Confirm**. 
 
-    Note: This step only occurs if you are using a personal environment. 
+    **Note:** This step only occurs if you are using a personal environment. 
 
    ![Validate your credentials](<images/validate-credentials-ib.png>)
 
@@ -84,15 +93,16 @@ The following steps are an example of an integration with MySQL.
 ### Connect integration
 
 You can connect an integration in the following ways:
+
 * [**Option 1**](#option-1): If you already have a database connection, you can **select a connection** from the list of available connections.
 
-* [**Option 2**](#option-2): If you need a new database connection and have the required permissions,you can **create a new connection**.
+* [**Option 2**](#option-2): If you need a new database connection and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md),you can **create a new connection**.
 
 * [**Option 3**](#option-3): Request a connection. If you need a new connection but don't have the needed permissions, you can **request a new connection**. 
 
 **Option 1**
 
-1. Select a connection and click, click **Next** and then continue with with [selecting a database](#select-database).
+1. Select a connection, click **Next**, and then continue with with [selecting a database](#select-database).
 
     **Note**: The list of connections only displays the connections you have permissions to view.
     
@@ -166,6 +176,7 @@ You can connect an integration in the following ways:
 
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
 
-**Note**: If you use the Internal Network configuration in the Configuration tool, you must add the Integration Builder IPs or the SIPO IPs in the case that SIPO is already live.
+## Null and default values
+
 
 For more information about integrating with external databases, see [Integrating OutSystems with your ecosystem](https://success.outsystems.com/Support/Enterprise_Customers/Integrating_OutSystems_with_your_ecosystem).

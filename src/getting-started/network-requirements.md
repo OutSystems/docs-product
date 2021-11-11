@@ -22,11 +22,22 @@ The table below details the ports that need to be accessible in each server of a
 |------|-----------|----|--------|-----|
 |End Users|Front-End|80|TCP|Applications HTTP access|
 |End Users|Front-End|443|TCP|Applications HTTPS access (always required for Mobile and Reactive Web apps)|
-|Development Tools (Service Studio and Integration Studio) |Front-End|80|TCP|Deploy applications to the environment|
-|Development Tools (Service Studio and Integration Studio) |Front-End|443|TCP|Deploy applications to the environment|
 |Front-End|SQL Server / Oracle|1433 / 1521|TCP|Database connection|
 |Controller|SQL Server / Oracle|1433 / 1521|TCP|Database connection|
 
+### Development tools
+
+The following table lists the necessary connectivity between the developers workstations and the several endpoints that support the full experience of Service Studio and Integration Studio.
+
+|Source|Destination|Port|Protocol|Notes|
+|------|-----------|----|--------|-----|
+|Service Studio and Integration Studio|Front-End|80|TCP|<ul>Deploy applications to the environment</ul>|
+|Service Studio and Integration Studio|Front-End|443|TCP|<ul>Deploy applications to the environment</ul>|
+|Service Studio|\*outsystems.com|443|TCP| Service Studio connects to several sub-domains to achieve the following: <ul><li>[AI-Assisted Development](../develop/logic/ai-assisted-dev.md) </li><li> What's New! - The What's New dialog shows you the latest features added.</li> <li>Update Service Studio automatically</li><li>Telemetry</li><li>Submit feedback and errors via Service Studio</li> <li>Forge - The Forge bell icon lets you know if there are updates for installed components. </li><li>Application creation when creating from an existing sample app</li><li>Shows related documentation links when using help.</li></ul>|
+|Service Studio|s3.amazonaws.com |443|TCP|<ul><li>Forge components - To install Forge components from the Forge tab or from the Forge website.</li><li>Access app templates while creating apps from scratch.</li></ul>|
+|Service Studio| fonts.googleapis.com |443|TCP|<ul>Used when changing the theme when using the Theme Editor both at development and runtime.</ul>
+|Service Studio| outsystems.drift.click |443|TCP|<ul>Help Chatbot. This applies when connecting to a personal environment only and to free editions.</ul>|
+|Service Studio| outsystems.eu.qualtrics.com|443|TCP|<ul>Used to run surveys inside Service Studio. This applies when connecting to a personal environment only and to free editions.</ul>|
 
 ### Network latency
 

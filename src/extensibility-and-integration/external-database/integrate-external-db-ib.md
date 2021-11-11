@@ -178,5 +178,10 @@ You can connect an integration in the following ways:
 
 ## Null and default values
 
+When creating an external database integration, you can select one of the following options for null and default values:
+
+* Overwrite database NULLs - Always write platform default values to the database. Database NULLs are read as platform default values.
+
+* Preserve database NULLs - Always write platform default values to the database. Database NULLs are read as platform default values.
 
 For more information about integrating with external databases, see [Integrating OutSystems with your ecosystem](https://success.outsystems.com/Support/Enterprise_Customers/Integrating_OutSystems_with_your_ecosystem).

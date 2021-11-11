@@ -21,7 +21,7 @@ Platform Server 11.13.2 or later
 
 * An external database integration created in Integration Builder only supports one database at a time. 
 
-* It is not possible to change attribute data types for external database tables.
+* It is not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description. for external database tables.
 
 * It is not possible to rename entities.
 
@@ -52,6 +52,8 @@ To integrate with an external database using Integration Builder:
     ![integrating with an external database using Integration Builder process overview](<images/integrate-external-db-process-diag.png>)
 
 Previous integrations created in Integration Studio must be maintained and evolved in Integration Studio. Integration Builder cannot maintain those integrations. For new integrations, use Integration Builder.
+
+To establish communication between external databases and Integration Builder, it is not required to have Integration Builder directly connected to your external database. However, Service Center must be connected to your external database.
 
 ## How to integrate with an external database
 
@@ -179,8 +181,34 @@ You can connect an integration in the following ways:
 
 When creating an external database integration, you can select one of the following options for null and default values:
 
-* Overwrite database NULLs - Always write platform default values to the database. Database NULLs are read as platform default values.
+* Overwrite database NULLs 
 
-* Preserve database NULLs - Always write platform default values to the database. Database NULLs are read as platform default values.
+* Preserve database NULLs 
+
+    ![Review null and default value behaviors](<images/review-default-values-ib.png>)
 
 For more information about integrating with external databases, see [Integrating OutSystems with your ecosystem](https://success.outsystems.com/Support/Enterprise_Customers/Integrating_OutSystems_with_your_ecosystem).
+
+### Entity properties
+
+|**Property** | **Description** |  **Optionality** | **Default value** |
+|---|---|---|---|
+|Null and default values|<ul><li>Overwrite database NULLs: Always write platform default values to the database. Database NULLs are read as platform default values.</li><li>Preserve database NULLs: Always write platform default values as database NULL. Database NULLs are read as Integration Builder default values.</li></ul>|Mandatory|Overwrite database NULLs|
+
+### Entity properties
+
+|**Type** | **Platform default value** |  **Integration Builder default value** | **Example** |
+|---|---|---|---|
+|Binary Data|Byte array with no elements|Byte array with no elements|N/A|
+|Boolean|False|False|True or Flase|
+|Currency|0.0|0.0|545870.025|
+|Date|#1900-01-01#|#1900-01-01#|#1988-08-28#|
+|Time|#00:00:00#|#00:00:00#|#12:20:56#|
+|Date Time|#1900-01-01 00:00:00#|#1900-01-01 00:00:00#|#1988-08-28 23:59:59#|
+|Integer|0|-1999999991|2147483600|
+|Long Integer|0|0|5645245584135987412|
+|Decimal|0.0|<ib>NULL</ib>|-158121.025|4000.0|
+|Email|"" (empty string)|<ib>NULL</ib>|"fran.wilson@company.com"|
+|Phone Number|"" (empty string)|<ib>NULL</ib>|"+1 555 565 3730"|
+|Text|"" (empty string)|<ib>NULL</ib>|"My name is Christina Sharp."|
+|<Entity> Identifier|When an Entity is created, the <Entity> identifier data type is created for the identifier attribute.|---|---|

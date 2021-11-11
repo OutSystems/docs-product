@@ -25,8 +25,7 @@ Platform Server 11.13.2 or later
 
 * It is not possible to rename entities.
 
-* The external database must communicate with Service Center, otherwise it’s not possible to use Integration Builder.
-
+*  The OutSystems platform front-end servers must be able to communicate with the external database, otherwise Service Center can’t test the connection.
 
 <div class="info" markdown="1">
 

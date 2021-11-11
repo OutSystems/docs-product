@@ -23,6 +23,8 @@ To create a Record for a variable, you need to:
 1. Optionally, change the **Data Type** and the **Name** of the attribute.
 1. In the variable context menu you can add more attributes to the Record.
 
+    ![Create a record for a variable](images/structure-create-use-7-ss.gif)
+
 ## Example using a Record
 
 In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating. The data is stored in the Place an Review entities.

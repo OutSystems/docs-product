@@ -94,7 +94,7 @@
 <tr>
 <td>Esc
 </td>
-<td>Cancel and close the current pop-up window</td>
+<td>Close the current pop-up window</td>
 </tr>
 <tr>
 <td>F4

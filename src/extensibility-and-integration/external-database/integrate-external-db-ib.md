@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: 
+summary: Integrating your applications with external databases using Integration Builder
+tags: external database; integration builder
 ---
 
 # Technical Preview - Integrate with an external database using Integration Builder 
@@ -22,8 +22,6 @@ Platform Server 11.13.2 or later
 * An external database integration created in Integration Builder only supports one database at a time. 
 
 * It is not possible to change attribute data types for external database tables.
-
-* Default values are fixed and defined by Integration Builder as i done by other external providers, such as SAP and Salesforce.
 
 * It is not possible to rename entities.
 
@@ -53,6 +51,8 @@ To integrate with an external database using Integration Builder:
 1. Use the integration in your application.
 
     ![integrating with an external database using Integration Builder process overview](<images/integrate-external-db-process-diag.png>)
+
+Previous integrations created in Integration Studio must be maintained and evolved in Integration Studio. Integration Builder cannot maintain those integrations. For new integrations, use Integration Builder.
 
 ## How to integrate with an external database
 

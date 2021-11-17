@@ -12,17 +12,17 @@ To refresh a REST API service:
 
 1. In the **Logic** tab, expand the **Integrations** folder and then expand **REST**.
 
-2. Under **REST**, right-click the REST API and select **Refresh REST API**. In this example, the name of the REST API is **Customers**.
+1. Under **REST**, right-click the REST API and select **Refresh REST API**. In this example, the name of the REST API is **Customers**.
 
     ![](images/ss-rest-refresh-1.png)
 
-3. In the Refresh REST API popup, click **Yes**. 
+1. In the Refresh REST API popup, click **Yes**. 
 
     When you click **Yes**, any changes made to the previous version are lost.  
 
     ![](images/ss-rest-refresh-confirm-2.png)
 
-4. Enter the REST API URL or upload a new file, and click **Refresh Methods**. 
+1. Enter the REST API URL or upload a new file, and click **Refresh Methods**. 
 
     In this example, the URL points to a JSON file that contains the complete list of REST methods.
 
@@ -39,20 +39,19 @@ To refresh a REST API service:
         * Advanced settings (Date Format, On Before Request and On After Response)
         * HTTP headers
 
-    The method format displays as **method name/relative endpoint** and, if applicable, **(outdated)**. 
+    The method format displays as **method name/relative endpoint** and, if applicable, **(Deleted)**. 
 
     Where:
     
     * method name = the method you may select to consume or update
     *  /relative endpoint = endpoint relative to the base URL
-    *  (outdated) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification
+    *  (Deleted) = if applicable, identifies methods that were previously imported but no longer exist in the latest specification
 
-    This example shows all available methods selected. **GetCustomersWithOrders** shows as outdated, which means you can't select it.
+    This example shows all available methods selected. **GetCustomersWithOrders** shows as **Deleted**, which means you can't select it.
 
     ![](images/ss-rest-refresh-methods-4.png)
 
-
-6. Click **Finish** to add the selected methods.     
+1. Click **Finish** to add the selected methods.     
 
 Next, see [Adapt your application to the changes](#adapt-your-application-to-the-changes).
 

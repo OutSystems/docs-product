@@ -162,14 +162,16 @@ Here is an example of the JSON for Extensibility Configurations. You can use dif
 
 These are the values available in the AppShield configuration JSON.
 
-| Value                        | Type       | OS           | Description                                                                                                         |
-| ---------------------------- | ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------- |
-| DisableAppShielding          | boolean    | iOS, Android | Activates or deactivates App Shield.                                                                                |
-| AllowScreenshot              | boolean    | iOS, Android | If set to true, allows users to take screenshots of the app.                                                        |
-| AllowJailbrokenRootedDevices | boolean    | iOS, Android | If set to true, allows users to run the app on the jailbroken devices.                                              |
-| global                       | JSON value | iOS, Android | Settings in this section apply to both Android and iOS builds.                                                      |
-| android                      | JSON value | Android      | The key denoting values that apply to the Android devices. See [Google Play App Signing](#google-play-app-signing). |
-| ios                          | JSON value | iOS          | The key denoting values that apply to the iOS devices.                                                              |
+| Value                           | Type         | OS           | Description                                                                                       |
+| ------------------------------- | ------------ | ------------ | ------------------------------------------------------------------------------------------------- |
+| AllowJailbrokenRootedDevices    | boolean      | iOS, Android | If set to true, allows users to run the app on the jailbroken devices.                            |
+| AllowScreenshot                 | boolean      | iOS, Android | If set to true, allows users to take screenshots of the app.                                      |
+| AppShieldObfuscationRules       | Text(base46) | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
+| DisableAppShielding             | boolean      | iOS, Android | Activates or deactivates App Shield.                                                              |
+| GooglePlayAppSigningCertificate | Text(Base64) | iOS, Android | Google Play App Signing certificate.                                                              |
+| android                         | JSON value   | Android      | The key denoting values that apply to the Android devices.                                        |
+| global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.                                    |
+| ios                             | JSON value   | iOS          | The key denoting values that apply to the iOS devices.                                            |
 
 
 ## Obfuscation

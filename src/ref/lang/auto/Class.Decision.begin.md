@@ -1,4 +1,4 @@
-When designing the process flow of your process, you can split the process flow into multiple paths only one of which is followed. This behavior is implemented through the **Decision** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
+When designing the process flow of your process, you can split it into multiple paths, only one of which is followed, depending on the behavior implemented through the **Decision** process activity which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
 
 By default, the first two connectors for the Decision are labeled with Yes and No because these are the most frequent ones. However, you may change these names and also add more connectors with other names.
 

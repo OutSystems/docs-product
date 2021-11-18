@@ -17,7 +17,7 @@ The following diagram shows the runtime architecture of a typical OutSystems mob
 
 To make your apps ready for scenarios with intermittent network access you need to define you local data model and implement a synchronization mechanism to exchange data between the device and the server when there is network access.
 
-Offline capabilities require that the app you chose in Service Studio is of the type mobile (Tablet of Phone), but the same code base can be used to run the app in a browser, by choosing [Distribute as a progressive web app](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Distribute_as_a_progressive_web_app).
+Offline capabilities require that the app you chose in Service Studio is of the type mobile (Tablet or Phone), but the same code base can be used to run the app in a browser, by choosing [Distribute as a progressive web app](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Distribute_as_a_progressive_web_app).
 
 ## Using Local Storage
 

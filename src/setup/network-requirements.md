@@ -41,8 +41,6 @@ The table below details the ports that need to be accessible in each server of a
 |SysOps|Server|22/3389|TCP|Access the server through SSH or Remote Desktop|
 |End Users|Front-End|80|TCP|Applications HTTP access|
 |End Users|Front-End|443|TCP|Applications HTTPS access (always required for Mobile and Reactive Web apps)|
-|Development Tools (Service Studio and Integration Studio) |Front-End|80|TCP|Deploy applications to the environment|
-|Development Tools (Service Studio and Integration Studio) |Front-End|443|TCP|Deploy applications to the environment|
 |Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
 |Front-End|Controller (by default)<br/>— Depends on where the Cache Invalidation Service/RabbitMQ is installed.|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
@@ -63,6 +61,20 @@ The following table lists the ports that should be open to correctly **monitor**
 |Controller|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
 
 In case you are using a hybrid infrastructure where some part is in OutSystems Cloud and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
+
+### Development tools
+
+The following table lists the necessary connectivity between the developers workstations and the several endpoints that support the full experience of Service Studio and Integration Studio.
+
+|Source|Destination|Port|Protocol|Notes|
+|------|-----------|----|--------|-----|
+|Service Studio and Integration Studio|Front-End|80|TCP|<ul>Deploy applications to the environment</ul>|
+|Service Studio and Integration Studio|Front-End|443|TCP|<ul>Deploy applications to the environment</ul>|
+|Service Studio|\*.outsystems.com|443|TCP| Service Studio connects to `www.outsystems.com` and several sub-domains to achieve the following: <ul><li>[AI-Assisted Development](../develop/logic/ai-assisted-dev.md) </li><li> What's New! - The What's New dialog shows you the latest features added.</li> <li>Update Service Studio automatically</li><li>Telemetry</li><li>Submit feedback and errors via Service Studio</li> <li>Forge - The Forge bell icon lets you know if there are updates for installed components. </li><li>Application creation when creating from an existing sample app</li><li>Shows related documentation links when using help.</li></ul>|
+|Service Studio|s3.amazonaws.com |443|TCP|<ul><li>Forge components - To install Forge components from the Forge tab or from the Forge website.</li><li>Access app templates while creating apps from scratch.</li></ul>|
+|Service Studio| fonts.googleapis.com |443|TCP|<ul>Used when changing the theme when using the Theme Editor both at development and runtime.</ul>
+|Service Studio| outsystems.drift.click |443|TCP|<ul>Help Chatbot. This applies when connecting to a personal environment only and to free editions.</ul>|
+|Service Studio| outsystems.eu.qualtrics.com|443|TCP|<ul>Used to run surveys inside Service Studio. This applies when connecting to a personal environment only and to free editions.</ul>|
 
 ### Network latency
 

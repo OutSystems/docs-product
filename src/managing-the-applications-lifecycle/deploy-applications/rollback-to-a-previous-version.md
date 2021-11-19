@@ -22,7 +22,7 @@ In scenarios where it's not possible to apply a hotfix due to the severity of th
 
 <div class="info" markdown="1">
 
-This operation isn't available for mobile apps. As it's not possible to rollback app versions in the App Stores, LifeTime doesn't support creating a tag based on a previous mobile app version.
+The tagging operation isn't available for mobile apps. As it's not possible to rollback app versions in the App Stores, LifeTime doesn't support creating a tag based on a previous mobile app version. However, you can rollback a mobile app to a previous version [using the LifeTime API](../../ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md).
 
 </div>
 

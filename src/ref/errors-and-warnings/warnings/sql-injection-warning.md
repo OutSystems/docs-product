@@ -1,5 +1,5 @@
 ---
-summary: Check the causes and recomendations on how to solve the different SQL Injection TrueChange warnings
+summary: Check the causes and recommendations on how to solve the different SQL Injection TrueChange warnings.
 tags:
 ---
 
@@ -51,7 +51,7 @@ You should **only** hide this warning when you have ensured that the expand inli
 
 ## Recommendations when using Expand Inline { #recommendations }
 
-**Proper use of parameters being expanded inline is hard**, since you need to make sure that any user input has been properly escaped in the right way before using it in a SQL statement. If possible, avoid enabling this property altogether.
+**Proper use of parameters being expanded inline is hard**, since you need to make sure that any user input has been properly escaped in the right way before using it in a SQL statement. If possible, avoid enabling this property altogether. Inline parameters that change too often don't allow the database to optimize execution plans, since the engine keeps generating different queries. This is a huge impact on performance. A complex query with volumes of data that takes a couple of seconds at the first execution, executes in milliseconds for each next call after statistical optimization.
 
 If you **must** use Expand Inline, take the following recommendations into account:
 

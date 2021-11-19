@@ -30,8 +30,6 @@ Architecture Dashboard collects the following data from your infrastructure:
 
 * Modules and dependency information for code analysis.
 
-* LifeTime Analytics data for runtime performance analysis.
-
 * Upon acceptance of the agreement, during Architecture Dashboard set up: users information (name, username, email address, user creation date, last login date) and LifeTime permissions.
 
 * Optionally: Discovery snapshot data (architectural references, applications, and modules) for architecture analysis.

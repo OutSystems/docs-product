@@ -7,4 +7,4 @@ summary: Advanced use cases for the Columns UI Pattern.
 
 ## Layout and Classes
 
-![](images/Column_layout.png)
+![](images/column-layout-diag.png)

@@ -18,7 +18,7 @@ If you want to **consume** a REST API, check [Consume REST APIs](../consume-rest
 
 When a request to your REST API Method is received, OutSystems executes the following flow:
 
-![](images/diagram-rest-expose-method-flow.png)
+![](images/rest-expose-method-flow-diag.png)
 
 1. **Security Validations:** After receiving the REST API Method request, OutSystems executes the security validations according to the settings in [REST API properties](../../../ref/lang/auto/ServiceStudio.Plugin.RESTService.RestService.final.md) **HTTP Security** and **Internal Access Only**. 
 1. **OnRequest():** OnRequest callback allows you to [run logic over the requests](<preprocess-rest-api-requests.md>) after receiving them. 

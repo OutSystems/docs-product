@@ -26,4 +26,4 @@ To configure an application to use a given deployment zone do the following:
 
 1. Click the **Save** button.
 
-The application is automatically deployed to the front-end servers included in the deployment zone. The application is also removed from all front-end servers that don't belong to the deployment zone.
+1. Republish your application for the configuration changes to take effect.

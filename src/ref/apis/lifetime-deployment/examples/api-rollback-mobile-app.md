@@ -86,7 +86,7 @@ Response body:
 
 We take note of the environment keys of the Quality Assurance and Production environments so that we can use them in the next API calls:
 
-Quality Assurance environment key: **f5d16abb-612d-4fa5-a34e-4695e49678b2**
+Quality Assurance environment key: **f5d16abb-612d-4fa5-a34e-4695e49678b2**  
 Production environment key: **f78966c5-4c1f-4c35-9b3d-502b66943964**
 
 ## 2. Get the application key

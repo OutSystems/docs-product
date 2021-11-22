@@ -52,7 +52,7 @@ You can generate a release version of your app (without debug information) using
 
 If the application requires users to sign in, you must [provide Apple with a test or demo account](https://help.apple.com/app-store-connect/#/devbef8ace74) to make sure that the review team can immediately sign in and use your application without the need to sign up for an account. You must also understand how the certificates work. You can find information about how to enroll as an Apple developer, create a certificate, and create a provisioning profile here. Read it carefully to make sure you have everything in place.
 
-Additionally, you need to run **Application Loader**, an application only available for Mac, to submit the app to the App Store for distribution. This application is available for Mac running OS X 10.9 or later and can be obtained by installing the latest [Xcode](https://developer.apple.com/xcode/) development IDE from Apple.
+Additionally, you need to run **Tranporter**, an application only available for Mac, to submit the app to the App Store for distribution. This application is available for Mac running macOS 10.13.6 or later and can be obtained by dowloading the [Transporter](https://apps.apple.com/us/app/transporter/id1450874784?mt=12) app from App Store.
 
 ### Generate the iOS App Package (IPA)
 

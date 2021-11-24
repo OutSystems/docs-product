@@ -64,7 +64,7 @@ Do the following:
 
 1. In the displayed dialog, choose **Add Single Method**.
 
-    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog.png)
+    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog-single.png)
 
 1. Fill the information about the **Method URL**. You can include parameters between braces in the URL for the method's input parameters.
 

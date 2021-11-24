@@ -29,7 +29,7 @@ Do the following:
 
 1. In the displayed dialog, choose **Add Multiple Methods**.
 
-    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog.png)
+    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog-multiple.png)
 
 1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Next**.
 

@@ -7,11 +7,11 @@ tags: external database; integration builder
 
 You can integrate your applications with external databases including DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can extract, load, transform, and update data from the external database.
 
-For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems.](../../setup/system-requirements.md).
+For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup/system-requirements.md).
 
 ## Prerequisites
 
-Platform Server 11.13.2 or later
+Platform Server 11.14.0 or later
 
 ## Known limitations 
 
@@ -19,13 +19,11 @@ Platform Server 11.13.2 or later
 
 * External database extensions created in Integration Builder can not be edited in Integration Studio.
 
-* An external database integration created in Integration Builder only supports one database at a time. 
+* An external database integration created in Integration Builder only supports one database at a time. If you require various tables from different databases, you must create several integrations.
 
-* It is not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description. for external database tables.
+* It is not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description. 
 
 * It is not possible to rename entities.
-
-*  The OutSystems platform front-end servers must be able to communicate with the external database, otherwise Service Center can’t test the connection.
 
 <div class="info" markdown="1">
 
@@ -97,9 +95,9 @@ You can connect an integration in the following ways:
 
 * [**Option 1**](#option-1): If you already have a database connection, you can **select a connection** from the list of available connections.
 
-* [**Option 2**](#option-2): If you need a new database connection and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md),you can **create a new connection**.
+* [**Option 2**](#option-2): If you need a new database connection and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md), you can **create a new connection**.
 
-* [**Option 3**](#option-3): Request a connection. If you need a new connection but don't have the needed permissions, you can **request a new connection**. 
+* [**Option 3**](#option-3): If you need a new connection but don't have the required permissions, you can **request a new connection**. 
 
 **Option 1**
 
@@ -159,6 +157,8 @@ You can connect an integration in the following ways:
 
    **Note:** You can select more tables later on by editing the published integration in Integration Builder.
 
+   To view the attributes of a table, select the relevant table. 
+
 ### Review integration and publish
 
 1. Review the integration information, update if necessary, and click **Publish**.
@@ -187,15 +187,13 @@ When creating an external database integration, you can select one of the follow
 
     ![Review null and default value behaviors](<images/review-default-values-ib.png>)
 
-For more information about integrating with external databases, see [Integrating OutSystems with your ecosystem](https://success.outsystems.com/Support/Enterprise_Customers/Integrating_OutSystems_with_your_ecosystem).
-
 ### Entity properties
 
 |**Property** | **Description** |  **Optionality** | **Default value** |
 |---|---|---|---|
 |Null and default values|<ul><li>Overwrite database NULLs: Always write platform default values to the database. Database NULLs are read as platform default values.</li><li>Preserve database NULLs: Always write platform default values as database NULL. Database NULLs are read as Integration Builder default values.</li></ul>|Mandatory|Overwrite database NULLs|
 
-### Entity properties
+### Integration Builder default values
 
 |**Type** | **Platform default value** |  **Integration Builder default value** | **Example** |
 |---|---|---|---|
@@ -212,3 +210,5 @@ For more information about integrating with external databases, see [Integrating
 |Phone Number|"" (empty string)|<ib>NULL</ib>|"+1 555 565 3730"|
 |Text|"" (empty string)|<ib>NULL</ib>|"My name is Christina Sharp."|
 |<Entity> Identifier|When an Entity is created, the <Entity> identifier data type is created for the identifier attribute.|---|---|
+
+For more information about integrating with external databases, see [Integrating OutSystems with your ecosystem](https://success.outsystems.com/Support/Enterprise_Customers/Integrating_OutSystems_with_your_ecosystem).

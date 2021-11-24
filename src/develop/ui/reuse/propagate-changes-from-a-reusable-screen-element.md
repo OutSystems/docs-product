@@ -26,7 +26,7 @@ Let's first create a Block with "Small", "Medium", and "Large" buttons that, whe
 
 1. Right-click a Flow and select **Add Block**. Name it Sizes.
 1. Right-click the Sizes Block and select **Add Event**. Name it SelectSize.
-1. Right-click the SelectSize Even and select **Add Input Parameter**. Name it SizeName.
+1. Right-click the SelectSize Event and select **Add Input Parameter**. Name it SizeName.
 
     ![Event with a parameter on a Block](images/block-event-properties.png)
 

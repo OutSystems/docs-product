@@ -143,8 +143,6 @@ You can connect an integration in the following ways:
 
     ![Select database](<images/select-database-ib.png>)
 
-1. Go back to Integration Builder, select a connection and click Next, then continue with selecting a database.
-
 ### Add tables
 
 1. Select the tables to consume with the integration and click **Next**.
@@ -156,8 +154,6 @@ You can connect an integration in the following ways:
      ![Add tables](<images/add-tables-ib.png>)
 
    **Note:** You can select more tables later on by editing the published integration in Integration Builder.
-
-   To view the attributes of a table, select the relevant table. 
 
 ### Review integration and publish
 

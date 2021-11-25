@@ -5,7 +5,7 @@ tags: runtime-mobile
 
 # Configure Accessible Domains for Your Mobile App
 
-To enhance your mobile app's security, you can create a whitelist of domains that your mobile app can access. The `access` extended configuration entry allows you to define the whitelist. After this, when using HTTP connections, all non-whitelisted domains will be blocked. 
+To enhance your mobile app's security, you can create a allowlist of domains that your mobile app can access. The `access` extended configuration entry allows you to define the allowlist. After this, when using HTTP connections, all non-allowlisted domains will be blocked. 
 
 To define the list of accessible domains for your mobile app do the following:
 
@@ -80,7 +80,7 @@ Field Name                              | Applies to | Allowed Origin Values | D
 
 Note that the last three fields can only be included in an `access` list element whose `origin` field contains an `*` value.
 
-Check the relevant Cordova ([Domain Whitelist Guide](<https://cordova.apache.org/docs/en/latest/guide/appdev/whitelist/>)) and Apple ([App Transport Security](<https://developer.apple.com/library/content/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14>)) documentation topics for more information on these fields.
+Check the relevant Cordova ([Allow List Guide](<https://cordova.apache.org/docs/en/latest/guide/appdev/allowlist/>)) and Apple ([App Transport Security](<https://developer.apple.com/library/content/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14>)) documentation topics for more information on these fields.
 
 ## Accessible Domains JSON Template { #accessible-domains-json-template }
 

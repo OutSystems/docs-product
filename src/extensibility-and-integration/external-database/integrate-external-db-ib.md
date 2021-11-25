@@ -5,13 +5,17 @@ tags: external database; integration builder
 
 # Technical Preview - Integrate with an external database using Integration Builder 
 
-You can integrate your applications with external databases including DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can extract, load, transform, and update data from the external database.
+You can integrate your applications with external databases including DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
 
 For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup/system-requirements.md).
 
 ## Prerequisites
 
-Platform Server 11.14.0 or later
+* Platform Server 11.14.0 or later.
+
+* Service Center must be connected to your external database.
+
+* If you use the Internal Network configuration, you must add the [Integration Builder IPs](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md).
 
 ## Known limitations 
 
@@ -21,21 +25,15 @@ Platform Server 11.14.0 or later
 
 * An external database integration created in Integration Builder only supports one database at a time. If you require various tables from different databases, you must create several integrations.
 
-* It is not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description. 
+* It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description. 
 
-* It is not possible to rename entities.
-
-<div class="info" markdown="1">
-
-**Note**: If you use the Internal Network configuration in the Configuration tool, you must add the Integration Builder IPs or the SIPO IPs in the case that SIPO is already live.
-
-</div>
+* It's not possible to rename entities.
 
 ## Process overview
 
 To integrate with an external database using Integration Builder:
 
-1. Log into Integration Builder with your development environment URL, your username and password.
+1. Log into Integration Builder using your development environment URL and your IT user credentials (username and password).
 
 1. Create a new integration for an external system and configure its settings.
 
@@ -50,8 +48,6 @@ To integrate with an external database using Integration Builder:
     ![integrating with an external database using Integration Builder process overview](<images/integrate-external-db-process-diag.png>)
 
 Previous integrations created in Integration Studio must be maintained and evolved in Integration Studio. Integration Builder cannot maintain those integrations. For new integrations, use Integration Builder.
-
-To establish communication between external databases and Integration Builder, it is not required to have Integration Builder directly connected to your external database. However, Service Center must be connected to your external database.
 
 ## How to integrate with an external database
 
@@ -103,7 +99,7 @@ You can connect an integration in the following ways:
 
 1. Select a connection, click **Next**, and then continue with with [selecting a database](#select-database).
 
-    **Note**: The list of connections only displays the connections you have permissions to view.
+    **Note**: The list of connections only displays connections that you have permissions to view. To select a connection from the list, you must have **Full Control** permissions.
     
     ![Select a connection](<images/select-connection-ib.png>) 
 
@@ -112,6 +108,8 @@ You can connect an integration in the following ways:
 1. Click **+ Create a connection**.
 
 1. Click **Create connection in Service Center**. 
+
+    **Note:** By default, SQL Server/Azure SQL is selected in the DBMS dropdown. Don’t forget to select the correct database.
 
     ![Create a connection in Service Studio](<images/create-connection-ib.png>)
 
@@ -151,7 +149,7 @@ You can connect an integration in the following ways:
 
     When you publish the integration, these tables are represented as entities in Service Studio.
 
-     ![Add tables](<images/add-tables-ib.png>)
+    ![Add tables](<images/add-tables-ib.png>)
 
    **Note:** You can select more tables later on by editing the published integration in Integration Builder.
 
@@ -161,7 +159,7 @@ You can connect an integration in the following ways:
 
     The published integration is now available in your environment and ready to be used in your OutSystems applications. 
 
-    ![Add tables](<images/review-integration-ib.png>)
+    ![Review integration](<images/review-integration-ib.png>)
 
 ### Use the integration in your application
 
@@ -191,20 +189,18 @@ When creating an external database integration, you can select one of the follow
 
 ### Integration Builder default values
 
-|**Type** | **Platform default value** |  **Integration Builder default value** | **Example** |
-|---|---|---|---|
+|**Type** | **Platform default value** | **Integration Builder default value** | 
+|---|---|---|
 |Binary Data|Byte array with no elements|Byte array with no elements|N/A|
-|Boolean|False|False|True or Flase|
-|Currency|0.0|0.0|545870.025|
-|Date|#1900-01-01#|#1900-01-01#|#1988-08-28#|
+|Boolean|False|False|
+|Currency|0.0|0.0|
+|Date|#1900-01-01#|#1900-01-01#|
 |Time|#00:00:00#|#00:00:00#|#12:20:56#|
-|Date Time|#1900-01-01 00:00:00#|#1900-01-01 00:00:00#|#1988-08-28 23:59:59#|
-|Integer|0|-1999999991|2147483600|
+|Date Time|#1900-01-01 00:00:00#|#1900-01-01 00:00:00#|
+|Integer|0|-1999999991|
 |Long Integer|0|0|5645245584135987412|
-|Decimal|0.0|<ib>NULL</ib>|-158121.025|4000.0|
-|Email|"" (empty string)|<ib>NULL</ib>|"fran.wilson@company.com"|
-|Phone Number|"" (empty string)|<ib>NULL</ib>|"+1 555 565 3730"|
-|Text|"" (empty string)|<ib>NULL</ib>|"My name is Christina Sharp."|
-|<Entity> Identifier|When an Entity is created, the <Entity> identifier data type is created for the identifier attribute.|---|---|
-
-For more information about integrating with external databases, see [Integrating OutSystems with your ecosystem](https://success.outsystems.com/Support/Enterprise_Customers/Integrating_OutSystems_with_your_ecosystem).
+|Decimal|0.0|<ib>NULL</ib>|-158121.025|
+|Email|"" (empty string)|<ib>NULL</ib>|
+|Phone Number|"" (empty string)|<ib>NULL</ib>|
+|Text|"" (empty string)|<ib>NULL</ib>|
+|<Entity> Identifier|When an Entity is created, the <Entity> identifier data type is created for the identifier attribute.|---|

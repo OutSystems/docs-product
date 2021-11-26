@@ -15,7 +15,7 @@ For more information about the supported databases and the systems that are cert
 
 * All infrastructure servers must be able to connect to the external database.
 
-* If you use the [Internal Network configuration](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup/network-requirements.md#Integration_Builder).
+* If you use the [Internal Network configuration](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup/network-requirements.md#integration-builder).
 
 ## Known limitations 
 

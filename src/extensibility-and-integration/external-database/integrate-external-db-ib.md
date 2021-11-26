@@ -13,17 +13,17 @@ For more information about the supported databases and the systems that are cert
 
 * Platform Server 11.14.0 or later.
 
-* Service Center must be connected to your external database.
+* All infrastructure servers must be able to connect to the external database.
 
-* If you use the Internal Network configuration, you must add the [Integration Builder IPs](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md).
+* If you use the [Internal Network configuration](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup/network-requirements.md#Integration_Builder).
 
 ## Known limitations 
 
-* Previous external database extensions created in Integration Studio can not be edited in Integration Builder.
+* Previous external database extensions created in Integration Studio cannot be edited in Integration Builder.
 
-* External database extensions created in Integration Builder can not be edited in Integration Studio.
+* External database extensions created in Integration Builder cannot be edited in Integration Studio.
 
-* An external database integration created in Integration Builder only supports one database at a time. If you require various tables from different databases, you must create several integrations.
+* An external database integration created in Integration Builder only supports one database,catalog, or schema at a time. If you require various tables from different databases, you must create several integrations.
 
 * It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description. 
 
@@ -51,7 +51,7 @@ Previous integrations created in Integration Studio must be maintained and evolv
 
 ## How to integrate with an external database
 
-The following steps are an example of an integration with MySQL.
+The following is an example of an integration with MySQL.
 
 ### Log into Integration Builder
 
@@ -61,7 +61,7 @@ The following steps are an example of an integration with MySQL.
 
    ![Log into Integration Builder](<images/login-ib.png>)
 
-    For security and governance reasons, you can only connect to a development environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
+    For security and governance reasons, you can only connect to a **development** environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
 
 1. Enter your username and password and click **Log in**.
 
@@ -109,11 +109,11 @@ You can connect an integration in the following ways:
 
 1. Click **Create connection in Service Center**. 
 
-    **Note:** By default, SQL Server/Azure SQL is selected in the DBMS dropdown. Don’t forget to select the correct database.
-
     ![Create a connection in Service Studio](<images/create-connection-ib.png>)
 
 1. In Service Center, enter the mandatory details and click **Create**.
+
+    **Note:** By default, SQL Server/Azure SQL is selected in the DBMS dropdown. Don’t forget to select the correct database.
 
     ![Create a database connection in Service Center](<images/create-db-connection-sc.png>)
 
@@ -185,7 +185,7 @@ When creating an external database integration, you can select one of the follow
 
 |**Property** | **Description** |  **Optionality** | **Default value** |
 |---|---|---|---|
-|Null and default values|<ul><li>Overwrite database NULLs: Always write platform default values to the database. Database NULLs are read as platform default values.</li><li>Preserve database NULLs: Always write platform default values as database NULL. Database NULLs are read as Integration Builder default values.</li></ul>|Mandatory|Overwrite database NULLs|
+|Default value behavior|<ul><li>Overwrite database NULLs: Always write platform default values to the database. Database NULLs are read as platform default values.</li><li>Preserve database NULLs: Always write Integration Builder default values as database NULL. Database NULLs are read as Integration Builder default values.</li></ul>|Mandatory|Overwrite database NULLs|
 
 ### Integration Builder default values
 
@@ -199,8 +199,8 @@ When creating an external database integration, you can select one of the follow
 |Date Time|#1900-01-01 00:00:00#|#1900-01-01 00:00:00#|
 |Integer|0|-1999999991|
 |Long Integer|0|0|5645245584135987412|
-|Decimal|0.0|<ib>NULL</ib>|-158121.025|
-|Email|"" (empty string)|<ib>NULL</ib>|
-|Phone Number|"" (empty string)|<ib>NULL</ib>|
-|Text|"" (empty string)|<ib>NULL</ib>|
+|Decimal|0.0|"<ib>NULL</ib>"|-158121.025|
+|Email|"" (empty string)|"<ib>NULL</ib>"|
+|Phone Number|"" (empty string)|"<ib>NULL</ib>"|
+|Text|"" (empty string)|"<ib>NULL</ib>"|
 |<Entity> Identifier|When an Entity is created, the <Entity> identifier data type is created for the identifier attribute.|---|

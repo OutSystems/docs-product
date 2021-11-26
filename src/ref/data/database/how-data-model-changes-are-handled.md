@@ -28,7 +28,7 @@ Nonetheless, the data is still safely stored on the database. You can access it 
 
 After deleting an Attribute, OutSystems warns you that the database has more columns than your Entity. Learn more about the [Database Integrity Suggestion](<../../errors-and-warnings/warnings/database-integrity-suggestion-warning.md>).
 
-The association of entities and attributes can be found in the System reference. The Entity reference provides a map between the OutSystems entity name and the database's phyiscal table name. The `Entity` and `Entity_Attr` entities contain a reference to both the active and deleted entities and attributes.
+The association of entities and attributes can be found in the System reference. The Entity reference provides a map between the OutSystems entity name and the database's physical table name. The `Entity` and `Entity_Attr` entities contain a reference to both the active and deleted entities and attributes.
 
 ## Adding an Entity or Attribute
 

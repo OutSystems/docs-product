@@ -37,7 +37,7 @@ You can use the Blank State UI Pattern to inform end users, for example, to comp
 
 1. Add your content to the placeholders.
 
-    In this example, we change the icon to a calendar icon, enter some text in the Text placeholder, and add a button to the Actions placeholder. This button, when clicked, redirects the user to another page.
+    In this example, we change the icon to a calendar icon, enter some text in the Content placeholder, and add a button to the Actions placeholder. This button, when clicked, redirects the user to another page.
 
     ![](<images/blankslate-4-ss.png?width=800>)
 

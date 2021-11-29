@@ -186,12 +186,12 @@ To help you decide which default behavior is best for your new integration, the 
 |Time|#00:00:00#|#00:00:00#|#12:20:56#|
 |Date Time|#1900-01-01 00:00:00#|#1900-01-01 00:00:00#|
 |Integer|0|-1999999991|
-|Long Integer|0|-8999999999999998|5645245584135987412|
-|Decimal|0.0|"<ib>NULL</ib>"|-158121.025|
-|Email|"" (empty string)|"<ib>NULL</ib>"|
-|Phone Number|"" (empty string)|"<ib>NULL</ib>"|
-|Text|"" (empty string)|"<ib>NULL</ib>"|
-|<Entity> Identifier|When an Entity is created, the <Entity> identifier data type is created for the identifier attribute.|---|
+|Long Integer|0|-8999999999999998|
+|Decimal|0.0|99999993.14159356|
+|Email|"" (empty string)|``"<ib>NULL</ib>"``|
+|Phone Number|"" (empty string)|``"<ib>NULL</ib>"``|
+|Text|"" (empty string)|``"<ib>NULL</ib>"``|
+|<Entity> Identifier|When an Entity is created, the ``<Entity> ``identifier data type is created for the identifier attribute.||
 
  ### Use the integration in your application
 

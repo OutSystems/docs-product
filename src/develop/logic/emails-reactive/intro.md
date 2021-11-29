@@ -5,30 +5,13 @@ tags: support-application_development, article-page
 
 # Emails in Mobile and Reactive Web Apps
 
-Create and send **Emails for Mobile and Reactive** along with **Attachments in Mobile and Reactive emails**. See the prerequisites section to learn about product versions that support features you want to use. 
+Create and send **Emails for Mobile and Reactive** along with **Attachments in Mobile and Reactive emails**.
 
 ## Prerequisites
 
-To use this feature, you must meet the following requirements.
-
-**General requirements**
-
-* Your Service Studio is up to date (recommended). Sections that follow specify the minimum version for a feature. 
+* You're using Platform Server 11.14 or later. If your're using an earlier version, see the [prerequisites for technical preview](#prerequisites-for-technical-preview).
+* Your Service Studio is up to date. 
 * You have configured the SMTP server. See [Configure OutSystems to Send Emails](../../../extensibility-and-integration/configure-send-emails.md) for instructions.
-
-**Emails and basic widgets**
-
-* You're using Platform Server 11.12.0 or later.
-
-**Email templates, Image with binary content, List, Table, If**,
-
-* You're using Service Studio 11.11.12 or later.
-* You're using Platform Server 11.13.0 or later.
-
-**Attachments** 
-
-* You're using Service Studio 11.11.12 or later.
-* You're using Platform Server 11.13.0 or later.
 
 ## Getting started
 
@@ -82,3 +65,21 @@ In this technical preview, when your Email modules (consumers) use CSS from othe
 ### Clipped content in Gmail
 
 Google Gmail clips messages if the HTML code is larger than 102 KB. OutSystems recommends you start with Emails that have only basic styles, without the CSS from OutSystems UI.
+
+## Prerequisites for technical preview
+
+**Emails for Mobile and Reactive** along with **Attachments in Mobile and Reactive emails** are generally available in Platform Server 11.14. You can use these features in earlier versions as technical preview, by meeting the following requirements:
+
+**Emails and basic widgets**
+
+* You're using Platform Server 11.12.0 or later.
+
+**Email templates, Image with binary content, List, Table, If**,
+
+* You're using Service Studio 11.11.12 or later.
+* You're using Platform Server 11.13.0 or later.
+
+**Attachments** 
+
+* You're using Service Studio 11.11.12 or later.
+* You're using Platform Server 11.13.0 or later.

@@ -23,15 +23,15 @@ For more information about the supported databases and the systems that are cert
 
 * External database extensions created in Integration Builder cannot be edited in Integration Studio.
 
-* An external database integration created in Integration Builder only supports one database,catalog, or schema at a time. If you require various tables from different databases, you must create several integrations.
+* An external database integration created in Integration Builder only supports one database, catalog, or schema at a time. If you require various tables from different databases, catalogs, or schemas, you must create several integrations.
 
 * It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description. 
 
-* It's not possible to rename entities.
+* It's not possible to rename entities or attributes.
 
 ## Process overview
 
-To integrate with an external database using Integration Builder:
+To integrate with an external database using Integration Builder, follow these steps:
 
 1. Log into Integration Builder using your development environment URL and your IT user credentials (username and password).
 
@@ -155,13 +155,45 @@ You can connect an integration in the following ways:
 
 ### Review integration and publish
 
-1. Review the integration information, update if necessary, and click **Publish**.
+1. Review the integration information, update if necessary.
+
+1. Ensure you have selected the correct **Default value behavior** (by default Overwrite database NULLs is selected). 
+
+    The following are the options for null and default values:
+    * Overwrite database NULLs - Always writes platform default values to the database. Database NULLs are read as platform default values.
+
+    * Preserve database NULLs - Always write Integration Builder default values as database NULL. Database NULLs are read as Integration Builder default values.
+
+    For more information about default values, see [Platform and Integration Builder default values](#platform-and-integration-builder-default-values).
+
+    ![Review default value behavior option](<images/review-default-values-ib.png>)
+
+1. Click **Publish**.
+
+   ![Review integration](<images/review-integration-ib.png>)
 
     The published integration is now available in your environment and ready to be used in your OutSystems applications. 
 
-    ![Review integration](<images/review-integration-ib.png>)
+To help you decide which default behavior is best for your new integration, the following table outlines the differences between the default values for the platform and Integration builder. 
 
-### Use the integration in your application
+#### **Platform and Integration Builder default values**
+|**Type** | **Platform default value** | **Integration Builder default value** | 
+|---|---|---|
+|Binary Data|Byte array with no elements|Byte array with no elements|N/A|
+|Boolean|False|False|
+|Currency|0.0|N/A|
+|Date|#1900-01-01#|#1900-01-01#|
+|Time|#00:00:00#|#00:00:00#|#12:20:56#|
+|Date Time|#1900-01-01 00:00:00#|#1900-01-01 00:00:00#|
+|Integer|0|-1999999991|
+|Long Integer|0|-8999999999999998|5645245584135987412|
+|Decimal|0.0|"<ib>NULL</ib>"|-158121.025|
+|Email|"" (empty string)|"<ib>NULL</ib>"|
+|Phone Number|"" (empty string)|"<ib>NULL</ib>"|
+|Text|"" (empty string)|"<ib>NULL</ib>"|
+|<Entity> Identifier|When an Entity is created, the <Entity> identifier data type is created for the identifier attribute.|---|
+
+ ### Use the integration in your application
 
 1. In your application, go to **Module** -> **Manage Dependencies**.
 
@@ -171,36 +203,5 @@ You can connect an integration in the following ways:
 
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
 
-## Null and default values
 
-When creating an external database integration, you can select one of the following options for null and default values:
 
-* Overwrite database NULLs 
-
-* Preserve database NULLs 
-
-    ![Review null and default value behaviors](<images/review-default-values-ib.png>)
-
-### Entity properties
-
-|**Property** | **Description** |  **Optionality** | **Default value** |
-|---|---|---|---|
-|Default value behavior|<ul><li>Overwrite database NULLs: Always write platform default values to the database. Database NULLs are read as platform default values.</li><li>Preserve database NULLs: Always write Integration Builder default values as database NULL. Database NULLs are read as Integration Builder default values.</li></ul>|Mandatory|Overwrite database NULLs|
-
-### Integration Builder default values
-
-|**Type** | **Platform default value** | **Integration Builder default value** | 
-|---|---|---|
-|Binary Data|Byte array with no elements|Byte array with no elements|N/A|
-|Boolean|False|False|
-|Currency|0.0|0.0|
-|Date|#1900-01-01#|#1900-01-01#|
-|Time|#00:00:00#|#00:00:00#|#12:20:56#|
-|Date Time|#1900-01-01 00:00:00#|#1900-01-01 00:00:00#|
-|Integer|0|-1999999991|
-|Long Integer|0|0|5645245584135987412|
-|Decimal|0.0|"<ib>NULL</ib>"|-158121.025|
-|Email|"" (empty string)|"<ib>NULL</ib>"|
-|Phone Number|"" (empty string)|"<ib>NULL</ib>"|
-|Text|"" (empty string)|"<ib>NULL</ib>"|
-|<Entity> Identifier|When an Entity is created, the <Entity> identifier data type is created for the identifier attribute.|---|

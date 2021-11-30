@@ -758,6 +758,7 @@
             - href: managing-the-applications-lifecycle/deploy-applications/zones/network-architecture.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/zone-create.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/zone-configure-app.md
+            - href: managing-the-applications-lifecycle/deploy-applications/zones/zone-configure-during-deploy.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/reference.md
             - href: managing-the-applications-lifecycle/deploy-applications/zones/modules-and-apps-in-deployment-zones.md
         - href: managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md

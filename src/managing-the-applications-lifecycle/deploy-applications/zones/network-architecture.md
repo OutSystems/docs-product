@@ -5,6 +5,12 @@ tags: support-Application_Lifecycle; support-Infrastuture_Architecture
 
 # Recommended Network Architecture
 
+<div class="info" markdown="1">
+
+Deployment Zones are only available in OutSystems on-premises installations.
+
+</div>
+
 When using deployment zones with more than one front-end server, you must use additional pieces of software (or hardware) to ensure that user requests get to the correct front-end servers where you deployed your OutSystems applications.
 
 You can use a **load balancer** to distribute load (according to a given algorithm) between several servers. Deployment zones usually have their deployment zone address set to the address of the load balancer that distributes load between the front-end servers of that deployment zone.

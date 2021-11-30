@@ -8,7 +8,7 @@ Using teams, you can manage the permissions of several IT users working in the s
 
 In this example we want to:
 
-* Allow developers in Team Baking and Team Intranet to see and **work only on the applications of their respective teams**.
+* Allow developers in Team Banking and Team Intranet to see and **work only on the applications of their respective teams**.
 
 * Allow a senior developer of Team Banking to both **debug and add dependencies to the core applications Customers and Services**, but without granting permissions to make changes to those applications. These applications are managed by another team, the Team Core Applications.
 

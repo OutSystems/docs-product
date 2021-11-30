@@ -68,7 +68,7 @@ When  **Appshield** blocks an app it generates query parameters that you may use
 
 For example, a landing page for a blocked Android device might be something like the following:
 
-```https://example.com/errors/protectionblocker/why-cant-i-use-my-app??reason=6&manufacturer=Google&model=Pixel4a&ANDROID=31```
+```https://example.com/errors/protectionblocker/why-cant-i-use-my-app?reason=6&manufacturer=Google&model=Pixel4a&ANDROID=31```
 
 You may incorporate these generated query parameters into your informative message.
 
@@ -110,7 +110,6 @@ The following parameter information is included in the generated **Exit URL**.
 | 4 | Untrusted keyboard found |
 | 5 | Untrusted screen reader found |
 | 6 | Native code hooks, possibly inserted by malicious app |
-| 7 | Time limited license expired |
 | 8 | Shield could not read configuration file |
 | 9 | Problem with Native Debugger Protection |
 | 13 | Problem initializing Shield |

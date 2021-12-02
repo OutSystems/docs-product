@@ -56,11 +56,16 @@ If any app extends the provided entities, the **Foreign Key** constraint will no
 
 </div>
 
-1. Access `http://<yourserver>/ServiceCenter/` and, from the **Factory>Application** area, search for **OutSystems Sample Data** and click it.  
+1. Access `http://<yourserver>/ServiceCenter/` and, from the **Factory** > **Application** area, search for **OutSystems Sample Data** and click it. 
+    
     ![Search for OutSystems Sample App](images/search-for-sample-data-app-sc.png)
+    
 1. Click **OutSystemsSampleDataDB** in the **Application OutSystems Sample Data** window.
-   ![Search for OutSystems Sample App](images/application-outsystems-sample-data-sc.png) 
+   
+    ![Search for OutSystems Sample App](images/application-outsystems-sample-data-sc.png)
+
 1. In the **Timers** tab in the module details window, select **Reset_SampleData**, and then click **Run Now**.
+    
     ![Reset sample data timer](images/reset-sample-data-timer-sc.png)
 
 Other timers that may be reset in the same way are described in the list below:

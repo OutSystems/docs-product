@@ -23,21 +23,14 @@ To create a Screen, follow these steps in Service Studio:
 
     ![Add a Screen](images/add-screen-ss.png)
 
-1. Select one of the following options:
+1. Select one of the following:
     
-    * Choose **Empty** to create an empty Screen.
-![create Blank Screen](images/create-blank-screen-ss.png)
-    * Choose one of the Screen Templates to create a Screen based on a template. To add this screen to the navigation menu select **Include in Menu**.
-![create Blank Screen](images/add-new-screen-to-menu.png)
-    
+    * **Empty**, to create an empty Screen
+    * A Screen Template, to create a Screen based on a template
+
+    ![create Blank Screen](images/create-blank-screen-ss.png)
 
 1. Optionally, enter a name in the **Screen name** field.
-
-<div class="info" markdown="1">
-
-If you have selected **Include in Menu**, the **Screen name** you have given this new screen will appear in the navigation **Menu** block.
-
-</div>
 
 1. Click **Create Screen**.
 

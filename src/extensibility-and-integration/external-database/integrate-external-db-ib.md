@@ -196,7 +196,7 @@ To help you decide which default behavior is best for your new integration, the 
 
 1. In your application, go to **Module** -> **Manage Dependencies**.
 
-1. Add a dependency to the integration and select the entities you want to use in your application.
+1. Add a dependency to the integration, select the entities you want to use in your application, and click **Apply**.
 
     ![Add dependency](<images/add-dependency-ss.png>)
 

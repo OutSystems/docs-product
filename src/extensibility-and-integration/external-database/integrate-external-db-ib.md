@@ -65,7 +65,6 @@ The following is an example of an integration with MySQL.
 
 1. Enter your username and password and click **Log in**.
 
-  ![Enter username and password](<images/login-user-ib.png>)
 
 ### Create a new integration
 
@@ -199,7 +198,7 @@ To help you decide which default behavior is best for your new integration, the 
 
 1. Add a dependency to the integration and select the entities you want to use in your application.
 
-    ![Add dependency](<images/add-dep-ss.png>)
+    ![Add dependency](<images/add-dependency-ss.png>)
 
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
 

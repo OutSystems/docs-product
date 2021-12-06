@@ -45,10 +45,22 @@ Manually replacing data allows you to have full control over the changes you mak
 
         * Add your own data fetching, for example, aggregates or SQL, to the action flow and apply any necessary filtering
 
+        <div class="info" markdown="1">
+
+        If you are using data from an Integration Builder integration, fetch data using one of the [available entity actions](../../../extensibility-and-integration/integration-builder/structure.md#actions). For a list or records use **Search&lt;entity&gt;** action, for a record use **Get&lt;entity&gt;**.
+
+        </div>
+
     * For screens that use aggregates:
 
         * Delete the aggregates you don’t need
 
         * Add your own data fetching, for example, aggregates or data action to the screen and apply any necessary filtering
+
+        <div class="info" markdown="1">
+
+        If you are using data from an Integration Builder integration, fetch data using one of the [available entity actions](../../data/query/fetch-data-ib.md#fetch).
+
+        </div>
 
 1. Check the TrueChange tab for errors and warnings and fix them.

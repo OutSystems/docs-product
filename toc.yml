@@ -7,6 +7,13 @@
     - href: getting-started/service-studio.md
     - href: getting-started/create-reactive-web.md
     - href: getting-started/create-mobile.md
+    - href: getting-started/create-use-case/intro.md
+    - topics: 
+        - href: getting-started/create-use-case/understand-create-app.md
+        - href: getting-started/create-use-case/use-own-data.md
+        - topics:
+            - href: getting-started/create-use-case/get-external-data.md
+            - href: getting-started/create-use-case/replace-data-sauce.md
     - href: getting-started/create-web.md
     - href: getting-started/component.md
     - href: getting-started/tips-tricks/tips-tricks.md
@@ -39,6 +46,7 @@
         - href: develop/data/query/intro.md
         - topics:
             - href: develop/data/query/fetch-display.md
+            - href: develop/data/query/fetch-data-ib.md
             - href: develop/data/query/filter-results.md
             - href: develop/data/query/sort-aggregate.md
             - href: develop/data/query/group-calculate.md

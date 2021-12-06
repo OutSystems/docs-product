@@ -15,7 +15,7 @@ Connecting to an external database or System of Record (SoR) allows you to lever
 
 You can connect OutSystems to external databases, including SQL Server, Azure SQL, Oracle, MySQL, and DB2 iSeries. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can extract, load, transform, and update data from the external database.
 
-See [Integrate with an External Database](../../extensibility-and-integration/connect-external-db.md) for detailed steps.
+See [Integrate with an External Database](../../extensibility-and-integration/external-database/connect-external-db.md) for detailed steps.
 
 ## Connect to an external system of record (SoR)
 

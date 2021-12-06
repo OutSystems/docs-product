@@ -7,7 +7,7 @@ tags:
 
 Follow the steps in this guide to deploy an application with a connection to an external database from an OutSystems environment (in this case, the Development environment) to the next environment (in this case, the Quality environment).
 
-Use this guide after you [created the integration with the external database](../../extensibility-and-integration/connect-external-db.md) in your Development environment and if your application needs to connect to a different external database in each environment.
+Use this guide after you [created the integration with the external database](../../extensibility-and-integration/external-database/connect-external-db.md) in your Development environment and if your application needs to connect to a different external database in each environment.
 
 <div class="info" markdown="1">
 

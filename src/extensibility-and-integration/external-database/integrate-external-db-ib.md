@@ -7,7 +7,7 @@ tags: external database; integration builder
 
 You can integrate your applications with external databases including DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
 
-For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup/system-requirements.md).
+For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../getting-started/system-requirements.md).
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ For more information about the supported databases and the systems that are cert
 
 * All infrastructure servers must be able to connect to the external database.
 
-* If you use the [Internal Network configuration](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup/network-requirements.md#integration-builder).
+* If you use the [Internal Network configuration](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you must add the [Integration Builder IPs](../../getting-started/network-requirements.md#integration-builder).
 
 ## Known limitations 
 
@@ -187,12 +187,11 @@ To help you decide which default behavior is best for your new integration, the 
 |Integer|0|-1999999991|
 |Long Integer|0|-8999999999999998|
 |Decimal|0.0|99999993.14159356|
-|Email|"" (empty string)|``"<ib>NULL</ib>"``|
-|Phone Number|"" (empty string)|``"<ib>NULL</ib>"``|
-|Text|"" (empty string)|``"<ib>NULL</ib>"``|
-|<Entity> Identifier|When an Entity is created, the ``<Entity> ``identifier data type is created for the identifier attribute.||
+|Email|"" (empty string)|`"<ib>NULL</ib>"`|
+|Phone Number|"" (empty string)|`"<ib>NULL</ib>"`|
+|Text|"" (empty string)|`"<ib>NULL</ib>"`|
 
- ### Use the integration in your application
+### Use the integration in your application
 
 1. In your application, go to **Module** -> **Manage Dependencies**.
 
@@ -201,6 +200,3 @@ To help you decide which default behavior is best for your new integration, the 
     ![Add dependency](<images/add-dependency-ss.png>)
 
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
-
-
-

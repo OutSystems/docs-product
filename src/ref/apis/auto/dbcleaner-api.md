@@ -29,7 +29,7 @@ Static Entity | Description
 
 ### Attribute_DropColumn { #Attribute_DropColumn }
 
-Physically deletes the database table column associated with the specified entity attribute.  If the entity attribute still exists in a module’s meta model, the delete operation will not be performed.  
+Physically deletes the database table column associated with the specified entity attribute.  If the entity attribute still exists in a module’s meta model, the delete operation will not be performed and the reason for failure will be recorded in the platform logs.  
 The logged user needs to have the 'Administrator' built-in role.
 
 *Inputs*
@@ -37,6 +37,12 @@ The logged user needs to have the 'Administrator' built-in role.
 AttributeId
 :   Type: mandatory, Integer.  
     The attribute identifier.
+
+*Outputs*
+
+Success
+:   Type: Boolean.  
+    True if the column was successfully deleted. False otherwise.
 
 ### Attribute_ListDeleted { #Attribute_ListDeleted }
 
@@ -51,7 +57,7 @@ DeletedAttributes
 
 ### Entity_DropTable { #Entity_DropTable }
 
-Physically deletes the database table associated with the specified entity.  If the entity still exists in a module’s meta model, the delete operation will not be performed.  
+Physically deletes the database table associated with the specified entity.  If the entity still exists in a module’s meta model, the delete operation will not be performed and the reason for failure will be recorded in the platform logs.  
 The logged user needs to have the 'Administrator' built-in role.
 
 *Inputs*
@@ -59,6 +65,12 @@ The logged user needs to have the 'Administrator' built-in role.
 EntityId
 :   Type: mandatory, Integer.  
     The entity identifier.
+
+*Outputs*
+
+Success
+:   Type: Boolean.  
+    True if the table was successfully deleted. False otherwise.
 
 ### Entity_ListDeleted { #Entity_ListDeleted }
 

@@ -114,7 +114,7 @@ You can add custom Screen URLs in Service Studio. Go to the properties of the Sc
 
 ![Screen URLs settings and properties](images/page-redirects-properties-ss.png?width=350)
 
-If an app passes an empty string as a value for a required parameter, users see an error message. See [Empty string in a required parameter causes an error](troubleshooting.md#empty-string-in-a-required-parameter-causes-an-error) for more information.
+If an app passes an empty string as a value for a required parameter, users see an error message. See [Empty string in a required parameter causes an error](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/SEO/Troubleshooting#empty-string-in-a-required-parameter-causes-an-error) for more information.
 
 Here are more details about the properties.
 
@@ -186,3 +186,13 @@ To set the Screen names dynamically, do the following in Service Studio:
 3. Enter an expression that sets the title value during runtime. For example, `"More about" + ProductTitle`.
 
     ![Dynamic title property](images/dynamic-title-property-ss.png)
+
+## Errors
+
+A list of errors related to  **SEO-friendly URLs for Reactive Web Apps**.
+
+* [Duplicated Page Name](../../ref/errors-and-warnings/errors/duplicated-page-name.md)
+* [Invalid Page Name](../../ref/errors-and-warnings/errors/invalid-page-name.md)
+* [Invalid Parameter Order](../../ref/errors-and-warnings/errors/invalid-format-page-name.md)
+* [Invalid Parameter Order](../../ref/errors-and-warnings/errors/invalid-parameter-order.md)
+* [Reserved Page Name](../../ref/errors-and-warnings/errors/reserved-page-name.md)

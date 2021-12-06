@@ -380,7 +380,6 @@
     - href: develop/seo/intro.md
     - topics:
         - href: develop/seo/indexing.md
-        - href: develop/seo/troubleshooting.md
     # Testing
     - href: develop/testing/intro.md
     - topics:
@@ -943,6 +942,7 @@
             - href: ref/errors-and-warnings/errors/concurrent-publishing-error.md
             - href: ref/errors-and-warnings/errors/connection-error.md
             - href: ref/errors-and-warnings/errors/database-upgrade-error.md
+            - href: ref/errors-and-warnings/errors/duplicated-page-name.md
             - href: ref/errors-and-warnings/errors/empty-onexception.md
             - href: ref/errors-and-warnings/errors/empty-widget.md
             - href: ref/errors-and-warnings/errors/environment-fault-error.md
@@ -952,6 +952,9 @@
             - href: ref/errors-and-warnings/errors/incompatible-version-error.md
             - href: ref/errors-and-warnings/errors/internal-error.md
             - href: ref/errors-and-warnings/errors/invalid-action-flow-error.md
+            - href: ref/errors-and-warnings/errors/invalid-page-name.md
+            - href: ref/errors-and-warnings/errors/invalid-format-page-name.md
+            - href: ref/errors-and-warnings/errors/invalid-parameter-order.md
             - href: ref/errors-and-warnings/errors/invalid-aggregate-error.md
             - href: ref/errors-and-warnings/errors/invalid-argument-value-error.md
             - href: ref/errors-and-warnings/errors/invalid-attribute-error.md
@@ -1017,6 +1020,7 @@
             - href: ref/errors-and-warnings/errors/required-output-parameter-error.md
             - href: ref/errors-and-warnings/errors/required-permission-error.md
             - href: ref/errors-and-warnings/errors/required-property-value-error.md
+            - href: ref/errors-and-warnings/errors/reserved-page-name.md
             - href: ref/errors-and-warnings/errors/unknown-object.md
             - href: ref/errors-and-warnings/errors/unused-callback-error.md
             - href: ref/errors-and-warnings/errors/unused-input-parameter-error.md   

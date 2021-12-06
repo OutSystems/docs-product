@@ -41,8 +41,6 @@ The table below details the ports that need to be accessible in each server of a
 |SysOps|Server|22/3389|TCP|Access the server through SSH or Remote Desktop|
 |End Users|Front-End|80|TCP|Applications HTTP access|
 |End Users|Front-End|443|TCP|Applications HTTPS access (always required for Mobile and Reactive Web apps)|
-|Development Tools (Service Studio and Integration Studio) |Front-End|80|TCP|Deploy applications to the environment|
-|Development Tools (Service Studio and Integration Studio) |Front-End|443|TCP|Deploy applications to the environment|
 |Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
 |Front-End|Controller (by default)<br/>— Depends on where the Cache Invalidation Service/RabbitMQ is installed.|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
@@ -64,19 +62,19 @@ The following table lists the ports that should be open to correctly **monitor**
 
 In case you are using a hybrid infrastructure where some part is in OutSystems Cloud and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
 
-### Containers considerations
+### Development tools
 
-If you are using a container-based hosting technology for deploying OutSystems applications, your network topology and firewall configuration should fulfill these requirements:
+The following table lists the necessary connectivity between the developers workstations and the several endpoints that support the full experience of Service Studio and Integration Studio.
 
-* The Container Runtime network endpoint must accept connections on port 80.
-
-* The platform database and logging database addresses (and ports) must allow connections from the Container Runtime.
-
-* The Platform Server Deployment Controller port (12000) must allow connections from the Container Runtime.
-
-* The Cache Invalidation Service (RabbitMQ) port (default is 5672) must allow connections from the Container Runtime.
-
-SSL offloading **is required** to run applications in containers. Follow the instructions presented in [End-to-end SSL and SSL Offloading](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Using_OutSystems_in_Reverse_Proxy_Scenarios/03_OutSystems_configurations_in_reverse_proxy_scenarios#C_-_End-to-end_SSL_and_SSL_Offloading). Note that you **do not** need to follow the step instructing you to add a new record to the `OSSYS_PARAMETER` table, since the platform already does this step for you when deploying to containers.
+|Source|Destination|Port|Protocol|Notes|
+|------|-----------|----|--------|-----|
+|Service Studio and Integration Studio|Front-End|80|TCP|<ul>Deploy applications to the environment</ul>|
+|Service Studio and Integration Studio|Front-End|443|TCP|<ul>Deploy applications to the environment</ul>|
+|Service Studio|\*.outsystems.com<br/>outsystems.com|443|TCP| Service Studio connects to `outsystems.com` and several sub-domains to achieve the following: <ul><li>[AI-Assisted Development](../develop/logic/ai-assisted-dev.md) </li><li> What's New! - The What's New dialog shows you the latest features added.</li> <li>Update Service Studio automatically</li><li>Telemetry</li><li>Submit feedback and errors via Service Studio</li> <li>Forge - The Forge bell icon lets you know if there are updates for installed components. </li><li>Application creation when creating from an existing sample app</li><li>Shows related documentation links when using help.</li></ul>|
+|Service Studio|s3.amazonaws.com |443|TCP|<ul><li>Forge components - To install Forge components from the Forge tab or from the Forge website.</li><li>Access app templates while creating apps from scratch.</li></ul>|
+|Service Studio| fonts.googleapis.com |443|TCP|<ul>Used when changing the theme when using the Theme Editor both at development and runtime.</ul>
+|Service Studio| outsystems.drift.click |443|TCP|<ul>Help Chatbot. This applies when connecting to a personal environment only and to free editions.</ul>|
+|Service Studio| outsystems.eu.qualtrics.com|443|TCP|<ul>Used to run surveys inside Service Studio. This applies when connecting to a personal environment only and to free editions.</ul>|
 
 ### Network latency
 
@@ -90,9 +88,11 @@ As an example, if you are using Amazon RDS as your database server and running t
 
 Alternatively, ensure that the front ends of the environment used with Experience Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
+The Experience Builder uses the environment's public DNS hostname to communicate.
+
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-experiencebuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+experiencebuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
 ### Integration Builder
 
@@ -100,9 +100,11 @@ experiencebuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>1
 
 Alternatively, ensure that the front ends of the environments used with Integration Builder accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
+The Integration Builder uses the environments' public DNS hostname to communicate.
+
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-IntegrationBuilder.outsystems.com|Environment Front-End|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+IntegrationBuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 Environment Front-End|IntegrationBuilder.outsystems.com|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
 ### Workflow Builder
@@ -111,9 +113,11 @@ Environment Front-End|IntegrationBuilder.outsystems.com|443|HTTPS|52.51.203.1<br
 
 Alternatively, ensure that the front ends of the environment used with Workflow Builder accepts connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
+The Workflow Builder uses the environment's public DNS hostname to communicate.
+
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-workflowbuilder.outsystems.com|Environment Front-End|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+workflowbuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|TCP|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 
 To use [IT user governance based on LifeTime teams](https://success.outsystems.com/Documentation/Workflow_Builder/How_to_set_up_Workflow_Builder/How_to_set_up_the_users_governance_model), Workflow Builder needs to be able to connect directly to LifeTime via TCP using HTTPS, port 443.
 

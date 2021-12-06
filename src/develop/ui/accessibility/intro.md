@@ -150,6 +150,12 @@ To bind labels with the Forms fields they refer to, perform the following steps:
 
 After following these steps for each input field and published the module, you can test reading the inputs captions using a screen reader.
 
+<div class="info" markdown="1">
+
+Use the `aria-labelledby` attribute for more control when setting up relationships between objects and their text labels. For more information, see [Examples of ARIA](aria-roles-and-attributes.md#examples-of-aria). 
+
+</div>
+
 ### Form validation on screen readers
 
 To learn how to validate the input fields of a form, refer to [Validate the fields of a form](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Forms/Validate_the_fields_of_a_form#Examples_of_the_client-side_validation_with_accelerators).

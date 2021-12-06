@@ -9,13 +9,13 @@ Use the Camera Plugin to let users take pictures with their mobile device. This 
 
 <div class="info" markdown="1">
 
-See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a demo app.
 
 </div> 
 
-## Sample app
+## Demo app
 
-Install [Camera Sample App](https://www.outsystems.com/forge/component-overview/1390/camera-plugin) from Forge and open the app in Service Studio. The sample app contains logic for common use cases, which you can examine and recreate in your apps. For example, the sample app shows how to:
+Install [Camera Demo App](https://www.outsystems.com/forge/component-overview/1390/camera-plugin) from Forge and open the app in Service Studio. The demo app contains logic for common use cases, which you can examine and recreate in your apps. For example, the demo app shows how to:
 
 * Take a picture
 * Select a picture from the gallery
@@ -23,7 +23,7 @@ Install [Camera Sample App](https://www.outsystems.com/forge/component-overview/
 * Edit a picture taken with the camera or selected from the gallery
 * Edit the picture that now displays in the app
 
-![Camera Plugin sample app](images/camera-sample-app.png?width=330)
+![Camera Plugin demo app](images/camera-sample-app.png?width=330)
 
 ## Taking a picture
 

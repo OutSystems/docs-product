@@ -22,7 +22,7 @@ Adds a comment that is displayed at development time and which can also be a rem
 <tbody>
 <tr>
 <td title="Text">Text</td>
-<td>Text to display.</td>
+<td>Text to display. The HTML <b>a</b> tag is allowed.</td>
 <td></td>
 <td>"Write your comment here"</td>
 <td></td>

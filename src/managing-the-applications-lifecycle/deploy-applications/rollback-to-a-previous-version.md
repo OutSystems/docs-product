@@ -15,14 +15,14 @@ Most of times, bugs found in Production are small and have low impact to the bus
 
 In scenarios where it's not possible to apply a hotfix due to the severity of the bug or time constraints, there are two ways to rollback an application to its previous version:
 
-* Create and deploy a tag based on a previous version, in the LifeTime console.
-* Republish a previous version of the Solution, in the Service Center console.
+* Create and deploy a tag based on a previous version, in the LifeTime console (`https://<lifetime_env>/lifetime`).
+* Republish a previous version of the Solution, in the environment's Service Center console (`https://<environment>/ServiceCenter`).
 
 ## Create a tag based on a previous version
 
 <div class="info" markdown="1">
 
-This operation isn't available for mobile apps. As it's not possible to rollback app versions in the App Stores, LifeTime doesn't support creating a tag based on a previous mobile app version.
+The tagging operation isn't available for mobile apps. As it's not possible to rollback app versions in the App Stores, LifeTime doesn't support creating a tag based on a previous mobile app version. However, you can rollback a mobile app to a previous version [using the LifeTime API](../../ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md).
 
 </div>
 
@@ -36,7 +36,7 @@ To create a new tag based on the previous version, do the following:
 
 1. In LifeTime, click the Directory application to go to the application details screen.
 
-1. In the Quality Assurance, click **Tag Version** to create the new tag.
+1. In the Quality environment, click **Tag Version** to create the new tag.
 
 1. By default, tags are based on the latest version: click the ▼ button in front of the application version and choose the **0.2** option to specify that the version you are creating is the same as version 0.2. This option isn't available for mobile applications.
 
@@ -58,7 +58,7 @@ In such scenarios, another way to rollback to a previous version, is to create a
 
 To create the Solution, do the following:
 
-1. Go to the Service Center console of the Production environment (`https://<prod-environment>/ServiceCenter`).
+1. Go to the Service Center console of the Production environment (`https://<prod_environment>/ServiceCenter`).
 
 1. Click **Factory** and then **Solutions**.
 

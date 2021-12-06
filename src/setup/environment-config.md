@@ -41,7 +41,7 @@ This setting must be set to one of the following values:
 
 Development
 
-:   Environments whose main purpose is to create and develop applications, requiring a fast feedback loop. Development environments use several 1-Click Publish process optimizations, like differential compilation, and allow testing/previewing data in Aggregates and SQL Queries, viewing data in Entities and using Personal Areas; Furthermore, in Development environments, it is not possible to deploy applications to Containers.
+:   Environments whose main purpose is to create and develop applications, requiring a fast feedback loop. Development environments use several 1-Click Publish process optimizations, like differential compilation, and allow testing/previewing data in Aggregates and SQL Queries, viewing data in Entities and using Personal Areas.
 
 Production
 
@@ -70,13 +70,6 @@ The **Purpose** you can configure for the environment is subject to the environm
 <th style="font-weight:bold;align:center;vertical-align:middle;">Non-Production</th>
 <th style="font-weight:bold;align:center;vertical-align:middle;">Production</th>
 <th style="font-weight:bold;align:center;vertical-align:middle;">Management (LifeTime)</th>
-</tr>
-<tr>
-<td>Deploy to containers</td>
-<td style="align:center;background-color:#dddddd;">No</td>
-<td style="align:center;background-color:#2ecc71;">Yes</td>
-<td style="align:center;background-color:#2ecc71;">Yes</td>
-<td style="align:center;background-color:#2ecc71;">Yes</td>
 </tr>
 <tr>
 <td>1-Click Publish process optimizations<sup>1</sup></td>

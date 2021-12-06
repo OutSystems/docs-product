@@ -13,7 +13,7 @@ SSL Pinning uses a customized version of the SSL certificate validation and does
 
 <div class="info" markdown="1">
 
-See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a demo app.
 
 </div>
 
@@ -24,17 +24,6 @@ To keep your environments secure, OutSystems continuously updates server certifi
 When certificates change, environments using these certificates in their apps can stop working. To fix this problem, you must generate a new app and distribute the app. If OutSystems is unable to notify you every time there is a change, everyone involved is at risk.
 
 OutSystems no longer supports the generation of the native mobile apps when using SSL Pinning to pin your apps to OutSystems managed certificates. This change affects all environments, production and non-production. If this change affects your environments, get new domains and certificates and provide them to OutSystems.
-
-To give you time to get the necessary assets, OutSystems is providing a grace period ending **September 30, 2021** during which you can still generate apps with the OutSystems certificates, **provided** you use the following setting in the Extensibility Configurations JSON: 
-
-        {
-            "preferences": {
-                "global": [{
-                    "name": "BypassOSDomainsValidation",
-                    "value": "true"
-                }]
-            }
-        }
 
 ## How to implement SSL pinning in OutSystems
 

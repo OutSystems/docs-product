@@ -91,7 +91,6 @@ Service Actions mix the advantages of loosely-coupled REST API methods with the 
 **Access governance**
 :   Service Actions follow the same governance model as any other reusable element defined by permissions in LifeTime.
 
-
 #### Dealing with transactionality and networking
 
 Since Service Actions don’t share the same process and transaction with the consumers, implementing fault-tolerant services using Service Actions requires additional logic on the consumer side.
@@ -112,7 +111,6 @@ The table below compares the most relevant differences between Server Actions an
 |   | Server Actions | Service Actions |
 | - | -------------- | --------------- |
 | **Release cycles** | Changes in implementation requires consumers to also be deployed. | Changes in the implementation can be deployed independently from the consumers. |
-| **Scaling through containers** | Each runtime is published with all dependencies. | Loosely coupled elements can be built and published independently.|
 | **Service communication** | Consumer and producer modules run in a single process. | Consumer and producer modules run in different processes. |
 | **DB transactions** | All transactions in a single process. |Multiple processes require multiple transactions. |
 | **Development effort** | Simpler logic and faster development. | Requires additional logic to handle transactionality and networking. |

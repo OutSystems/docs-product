@@ -13,7 +13,7 @@ summary: Advanced use cases for the Range Slider Interval UI Pattern
   
 ## Layout and Classes
 
-![](images/rangeslider-14-diag.png)
+![](images/rangesliderinterval-diag.png)
 
 ## CSS Selectors
 

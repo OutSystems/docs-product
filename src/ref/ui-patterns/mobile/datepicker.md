@@ -13,7 +13,7 @@ summary: Advanced use cases for the Date Picker UI Pattern.
   
 ## Layout and Classes
 
-![](images/datepicker_layout_classes.png?width=700)
+![](images/datepicker-layout-classes-diag.png)
 
 ## CSS Selectors
 

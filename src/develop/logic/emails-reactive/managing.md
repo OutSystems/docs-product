@@ -120,7 +120,7 @@ You can create email templates and share them with other developers in the OutSy
 
 **Install email templates from Forge**
 
-You can get email templates from Forge. Go to [OutSystems Email Templates](https://www.outsystems.com/forge/component-overview/11507/outsystems-email-templates) and install the component. Then, to create a new email, select a template.
+You can get email templates from Forge. Go to [OutSystems Email Templates](https://www.outsystems.com/forge/component-overview/11507/outsystems-email-templates) and install the component. Then, to create a new email, select a template. The templates are under development (not stable) and work better when you install them directly from the Forge web page.
 
 **Create your templates**
 

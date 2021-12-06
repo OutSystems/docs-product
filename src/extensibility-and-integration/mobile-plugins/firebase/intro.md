@@ -5,10 +5,11 @@ tags: article-page; runtime-mobile; support-application_development; support-Mob
 
 # Firebase Plugins
 
-Firebase is a Google mobile development platform. It speeds up development many of the common development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
+Firebase is a Google mobile development platform. It speeds up development of many development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
 
-* [Analytics Plugin](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)
+* [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)
 * [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)
+* [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase)
 * [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
 
 ## Prerequisites
@@ -21,6 +22,10 @@ To use the Firebase plugins you meet the following requirements:
 
     * **GoogleService-Info.plist** for iOS
     * **google-services.json** for Android
+
+## Demo app
+
+Install [Firebase Mobile Sample App](https://www.outsystems.com/forge/component_overview.aspx?projectid=10707&projectname=firebase-mobile-sample-app) from Forge and open the app in Service Studio. The demo app contains logic for common use cases, which you can examine and recreate in your apps. If you want to build the app and run it, check the prerequisites in the Forge page.
 
 ## Adding and using a Firebase plugin
 
@@ -82,3 +87,22 @@ To get the target directory, concatenate the **app identifier** and **.firebase*
 | PROD | com.sample.prod.MyApp | `com.sample.prod.MyApp.firebase` |
 
 Use the target directory value in the **Target Directory** property of the **Resource**.
+
+### Additional setup for the Dynamic Links Plugin
+
+The Firebase Dynamic Links Plugin has some additional setup steps that need to be followed for it to work correctly:
+
+* You need to include a global preference in the Extensibility Configurations of the application using the plugin. The value for this preference needs to match the URL prefix you set in the Dynamic Links page in the Firebase console. For example:
+
+    ```
+    {
+        "preferences": {
+            "global": [{
+                "name": "FIREBASE_DOMAIN_URL_PREFIX",
+                "value": "outsystemsfirebase.page.link"
+            }]
+        }
+    }
+    ```
+
+* For iOS, you need to use a provisioning profile from Apple that contains the Associated Domains capability. For more info, see [Configuring an Associated Domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain) by Apple.

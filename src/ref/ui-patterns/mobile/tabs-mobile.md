@@ -13,7 +13,7 @@ OnTabChange  |  Triggered when switching tabs.  |  _False_
 
 ## Layout and Classes
 
-![](images/tabs-7-diag.png)
+![](images/tabs-layout-classes-diag.png)
 
 ## CSS Selectors
 

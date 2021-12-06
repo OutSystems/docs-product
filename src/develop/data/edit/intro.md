@@ -32,6 +32,8 @@ To edit entity's data in Service Studio, ensure the following:
 
 * Your IT user has [**Change and Deploy Applications**](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) or higher for the module that contains the entity you are editing.
 
+*  If your environment uses [Multiple Database Catalogs and Schemas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Multiple_Database_Catalogs_and_Schemas), the entity must belong to a module published to the **(Main)** database catalog.
+
 ### Entities whose data can be edited
 
 In Service Studio, you can edit the data of **entities** that meet the following criteria:

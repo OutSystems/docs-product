@@ -11,7 +11,7 @@ Site properties, loaded by the server and then cached for faster access, are use
 
 ## Impact
 
-Updating site properties invalidates the cache and requires the properties to be reloaded from the database. This causes unnecessary database overhead for all parts of the application using site variables.
+Every time you update a site property, the cache of the module and its consumers will be invalidated and reloaded from the database again. This causes unnecessary database overhead for all parts of the application using site variables. 
 
 ## Best practices
 

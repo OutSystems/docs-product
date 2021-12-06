@@ -1,5 +1,6 @@
 ---
-summary: How to configure an application in Service Center to use a specific deployment zone.
+summary: How to configure an application to be deployed to a specific deployment zone.
+tags: support-Application_Lifecycle; support-Infrastuture_Architecture
 ---
 
 # Configure an Application to Use a Deployment Zone
@@ -10,22 +11,42 @@ Only available in OutSystems on-premises installations.
 
 </div>
 
-After creating a new deployment zone and associating one or more front-end servers to it, you can change the configuration of OutSystems applications so that the platform deploys them to this deployment zone.
+After creating a new Deployment Zone in your OutSystems environment, you can configure the settings of your OutSystems applications so that the platform deploys them to this Deployment Zone.
 
-## Configure an application
+For the applications already deployed in that environment, you can configure the Deployment Zone setting in the LifeTime console or in the environment's Service Center console, as described below.
 
-To configure an application to use a given deployment zone do the following:
+For applications being deployed to that environment for the first time, you can [configure the Deployment Zone during the deployment](zone-configure-during-deploy.md).
 
-1. Go to the Service Center management console of your OutSystems environment.
+## Configure an application in LifeTime
+
+In your LifeTime console (`https://<your_lifetime_server>/lifetime`), do the following to configure an application to be deployed to a specific deployment zone in an environment:
+
+1. In the **Applications** list, search for the application you want to configure.
+
+1. Click the application's name to go to the application details page.
+
+1. Click the **Settings** menu.
+
+1. Select the environment where the deployment zone was created.
+
+1. Choose the **Deployment Zone** where you want the application to be deployed.
+
+1. Click **Save**.
+
+1. Republish your application for the configuration changes to take effect.
+
+## Configure an application in Service Center
+
+In the environment's Service Center console (`https://<environment>/ServiceCenter`), do the following to configure an application to be deployed to specific deployment zone:
 
 1. Go to the **Factory** section and select the **Applications** tab.
 
-1. Click the name of the application that you are deploying to the new deployment zone.
+1. In the **Applications** list, search for the application you want to configure.
 
-1. In the **Operation** tab, select the desired deployment zone in the **Deployment Zone** field.
+1. Click the application's name to go to the application details page.
 
-1. Click the **Save** button.
+1. In the **Operation** tab, choose the **Deployment Zone** where you want the application to be deployed.
 
-1. If the new deployment zone uses a **container-based hosting technology**, you need to republish your application for the configuration changes to take effect.
+1. Click **Save**.
 
-    On the other hand, if the selected deployment zone uses the **Classic Virtual Machines** hosting technology, the application is automatically deployed to the front-end servers included in the deployment zone. The application is also removed from all front-end servers that don't belong to the deployment zone.
+1. Republish your application for the configuration changes to take effect.

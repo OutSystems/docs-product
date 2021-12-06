@@ -9,7 +9,7 @@ LifeTime continuously synchronizes information with all the registered environme
 
 <div class="info" markdown="1">
 
-Maitenance Mode is  available in **Lifetime** version 11.9.0 onwards.
+Maintenance mode is available from **LifeTime** version 11.9.0 onwards.
 
 </div>
 

@@ -1671,7 +1671,7 @@
             https://www.outsystems.com/training/lesson/2035/how-to-debug-logic-in-outsystems
 
 # Extensibility and Integration
-- extensibility-and-integration/connect-external-db.md:
+- extensibility-and-integration/external-database/connect-external-db.md:
     - external:
         - "Demo - Integrating with a SQL Server Database":
             https://www.outsystems.com/learn/lesson/1847/demo-integrating-with-external-databases/

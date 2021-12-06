@@ -4,7 +4,7 @@ summary: Learn how to allow developers in the team to create integrations with e
 
 # Allow Integrations With External Databases
 
-In this example, we want to allow one developer in the team to [create integrations with external databases](../../extensibility-and-integration/connect-external-db.md). This developer must be able to publish extensions, through Integration Studio, that use specific database connections. However, the developer must not be able to change the settings of the database connections.
+In this example, we want to allow one developer in the team to [create integrations with external databases](../../extensibility-and-integration/external-database/connect-external-db.md). This developer must be able to publish extensions, through Integration Studio, that use specific database connections. However, the developer must not be able to change the settings of the database connections.
 
 ![create integration with external database](images/external-db-integration-diag.png?width=400)
 
@@ -30,6 +30,6 @@ Other developers will then be able to use those extensions to access the data on
 
 <div class="info" markdown="1">
 
-Accessing the data on the external database through an extension requires that a user with the security level **Full Control** over the database connection [configures the extension in Service Center](../../extensibility-and-integration/connect-external-db.md#configure-the-extension-to-use-a-database-connection) to use the database connection.
+Accessing the data on the external database through an extension requires that a user with the security level **Full Control** over the database connection [configures the extension in Service Center](../../extensibility-and-integration/external-database/connect-external-db.md#configure-the-extension-to-use-a-database-connection) to use the database connection.
 
 </div>

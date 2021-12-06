@@ -3,13 +3,13 @@ summary: OutSystems allows you to define connections to your existing SQL Server
 tags: support-application_development; support-Database; support-Integrations_Extensions; support-database-overview; support-Integrations_Extensions-featured
 ---
 
-# Integrate with an External Database
+# Integrate with an External Database using Integration Studio
 
 OutSystems integrates with your existing databases. This allows you to develop applications that access data on external databases using OutSystems entities in Service Studio and without having to worry about data migration. For a list of supported external database engines and their supported versions check the [System Requirements](../getting-started/system-requirements.md#integration-with-external-systems).
 
 <div class="info" markdown="1">
  
-When you are done developing your integration with an external database and you want to deploy the application to another Environment (e.g. quality assurance environment) check out [this step by step guide](../managing-the-applications-lifecycle/deploy-applications/deploy-an-app-externaldb.md).
+When you are done developing your integration with an external database and you want to deploy the application to another Environment (e.g. quality assurance environment) check out [this step by step guide](../../managing-the-applications-lifecycle/deploy-applications/deploy-an-app-externaldb.md).
 
 </div>
 
@@ -108,7 +108,7 @@ After mapping the tables or views, use Service Center to configure which databas
 
 In some cases you need to select the database based on runtime data. Typically, the applicable databases share the same schema but they contain different data.
 
-In these scenarios you can use the action [DatabaseConnection_SetConnectionStringForSession](<../ref/apis/auto/platformruntime-api.final.md#DatabaseConnection_SetConnectionStringForSession>) of the [PlatformRuntime API](<../ref/apis/auto/platformruntime-api.final.md>).
+In these scenarios, you can use the action [DatabaseConnection_SetConnectionStringForSession](<../../ref/apis/auto/platformruntime-api.final.md#DatabaseConnection_SetConnectionStringForSession>) of the [PlatformRuntime API](<../../ref/apis/auto/platformruntime-api.final.md>).
 
 
 ## Use the Extension in your application

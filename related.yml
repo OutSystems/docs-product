@@ -684,6 +684,14 @@
 - connectors/integration-sap.md:
     - extensibility-and-integration/integration-builder/connectors/integration-sap-get-spec.md
 
+# --- Extensibility and Integration --- Extend Logic with Your Own Code (Integration Studio)
+
+- extensibility-and-integration/integration-studio/extension-life-cycle/intro.md:
+    - external:
+        - "Server extension recompilation on upgrade":
+            https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Server_extension_recompilation_on_upgrade
+
+
 # --- Developing an Application ---
 
 #     Use Data/Data Modeling/Entity Relationships

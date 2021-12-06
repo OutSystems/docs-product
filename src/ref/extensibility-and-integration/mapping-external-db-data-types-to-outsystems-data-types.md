@@ -4,7 +4,7 @@ tags: support-application_development; support-Database; support-Integrations_Ex
 
 # Mapping External DB Data Types to OutSystems Data Types
 
-When [connecting to external databases](<../../../../extensibility-and-integration/external-database/connect-external-db.md>), OutSystems maps the external DB Data Types into OutSystems Data Types as follows:
+When [connecting to external databases](../../extensibility-and-integration/external-database/connect-external-db.md), OutSystems maps the external DB Data Types into OutSystems Data Types as follows:
 
 SQL Server  |  Oracle Data Type  |  MySQL Data Type  |  DB2 Data Type  | OutSystems Data Type  
 ---|---|---|---|---  

@@ -193,6 +193,6 @@ A list of errors related to  **SEO-friendly URLs for Reactive Web Apps**.
 
 * [Duplicated Page Name](../../ref/errors-and-warnings/errors/duplicated-page-name.md)
 * [Invalid Page Name](../../ref/errors-and-warnings/errors/invalid-page-name.md)
-* [Invalid Parameter Order](../../ref/errors-and-warnings/errors/invalid-format-page-name.md)
+* [Invalid Format](../../ref/errors-and-warnings/errors/invalid-format-page-name.md)
 * [Invalid Parameter Order](../../ref/errors-and-warnings/errors/invalid-parameter-order.md)
 * [Reserved Page Name](../../ref/errors-and-warnings/errors/reserved-page-name.md)

@@ -5,7 +5,7 @@ tags: support-application_development; support-Database; support-Integrations_Ex
 
 # Integrate with an External Database using Integration Studio
 
-OutSystems integrates with your existing databases. This allows you to develop applications that access data on external databases using OutSystems entities in Service Studio and without having to worry about data migration. For a list of supported external database engines and their supported versions check the [System Requirements](../getting-started/system-requirements.md#integration-with-external-systems).
+OutSystems integrates with your existing databases. This allows you to develop applications that access data on external databases using OutSystems entities in Service Studio and without having to worry about data migration. For a list of supported external database engines and their supported versions check the [System Requirements](../../getting-started/system-requirements.md#integration-with-external-systems).
 
 <div class="info" markdown="1">
  

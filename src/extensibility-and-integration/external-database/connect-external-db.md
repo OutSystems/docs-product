@@ -3,7 +3,7 @@ summary: OutSystems allows you to define connections to your existing SQL Server
 tags: support-application_development; support-Database; support-Integrations_Extensions; support-database-overview; support-Integrations_Extensions-featured
 ---
 
-# Integrate with an External Database
+# Integrate with an External Database using Integration Studio
 
 OutSystems integrates with your existing databases. This allows you to develop applications that access data on external databases using OutSystems entities in Service Studio and without having to worry about data migration. For a list of supported external database engines and their supported versions check the [System Requirements](../../setup/system-requirements.md#integration-with-external-systems).
 

@@ -190,9 +190,8 @@ To help you decide which default behavior is best for your new integration, the 
 |Email|"" (empty string)|``"<ib>NULL</ib>"``|
 |Phone Number|"" (empty string)|``"<ib>NULL</ib>"``|
 |Text|"" (empty string)|``"<ib>NULL</ib>"``|
-|<Entity> Identifier|When an Entity is created, the ``<Entity> ``identifier data type is created for the identifier attribute.||
 
- ### Use the integration in your application
+### Use the integration in your application
 
 1. In your application, go to **Module** -> **Manage Dependencies**.
 

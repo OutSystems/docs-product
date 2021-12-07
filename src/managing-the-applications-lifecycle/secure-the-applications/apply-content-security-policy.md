@@ -129,4 +129,8 @@ Here are some examples:
 | `https://example.com`   | `https://example.com` (no change) |
 | `http://example.com`    | `http://example.com` (no change)  |
 
-Keep in mind that these changes **should only be applied to the mobile apps**. If CSP is configured for an entire environment in LifeTime, it is recommended to perform these changes in the mobile application CSP configuration to ensure there are no side effects for Traditional Web or Progressive Web Apps (PWAs).
+**Applies to the mobile apps only**. If you configure CSP on the environment level in LifeTime, change the schema to `outsystems://` in the mobile apps CSP configuration only. This prevents side effects for Traditional Web Apps or Progressive Web Apps (PWAs).
+
+### Using iframes in iOS apps
+
+If you want to use both CSP directives and iframes in your iOS apps, add `outsystems://<hostname>` to the **frame-ancestors** directive. Failure to do so prevents content from rendering. You can identify the issue by searching for the following error log: "Interrupting main resource load due to CSP frame-ancestors or X-Frame-Options". 

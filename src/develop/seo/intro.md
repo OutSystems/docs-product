@@ -11,9 +11,11 @@ As a best practice use **SEO-friendly URLs for Reactive Web Apps**. Friendly URL
 
 **SEO-friendly URLs for Reactive Web Apps** requires the following:
 
-* Platform Server 11.12.0 or later
-* Service Studio 11.11.0 or later
+* Platform Server 11.14.0 or later
+* Service Studio 11.13.0 or later
 * OutSystems enterprise cloud offer or a properly configured on-premises installation
+
+For Platform Server versions between 11.12.0 and 11.14.0 you can enable the technical preview and use Service Studio 11.11 and later.
   
 <div class="info" markdown="1">
 

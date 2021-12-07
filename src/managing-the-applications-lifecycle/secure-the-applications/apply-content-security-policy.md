@@ -133,9 +133,9 @@ Here are some examples:
 
 ### Using iframes in iOS apps
 
-If you want to use both CSP directives and iframes in your iOS apps, add the following to the **frame-ancestors** directive:
+If you want to use both CSP directives and iframes in your iOS apps, add the following to the **Frame-ancestors** directive field:
 
     outsystems://YOUR_APP_URL
     https://YOUR_APP_URL
 
- Failure to do so prevents content from rendering. You can identify the issue by searching for the following error log: "Interrupting main resource load due to CSP frame-ancestors or X-Frame-Options".
+Failure to do so prevents content from rendering. You can identify the issue by searching for the following error log: "Interrupting main resource load due to CSP frame-ancestors or X-Frame-Options".

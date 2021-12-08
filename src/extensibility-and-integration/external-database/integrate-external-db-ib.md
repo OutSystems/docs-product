@@ -63,10 +63,9 @@ The following is an example of an integration with MySQL.
 
    ![Log into Integration Builder](<images/login-ib.png>)
 
-    For security and governance reasons, you can only connect to a **development** environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
+    **Note**: For security and governance reasons, you can only connect to a **development** environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
 
 1. Enter your username and password and click **Log in**.
-
 
 ### Create a new integration
 

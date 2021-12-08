@@ -160,6 +160,7 @@ You can connect an integration in the following ways:
 1. Ensure you have selected the correct **Default value behavior** (by default Overwrite database NULLs is selected). 
 
     The following are the options for null and default values:
+    
     * Overwrite database NULLs - Always writes platform default values to the database. Database NULLs are read as platform default values.
 
     * Preserve database NULLs - Always write Integration Builder default values as database NULL. Database NULLs are read as Integration Builder default values.

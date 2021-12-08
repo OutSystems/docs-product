@@ -61,7 +61,7 @@ The following is an example of an integration with MySQL.
 
 1. In the **Environment** field, enter the address of your OutSystems development environment and click **Next**.
 
-   ![Log into Integration Builder](<images/login-ib.png>)
+    ![Log into Integration Builder](<images/login-ib.png>)
 
     **Note**: For security and governance reasons, you can only connect to a **development** environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
 
@@ -71,17 +71,17 @@ The following is an example of an integration with MySQL.
 
 1. On the **My integrations** screen, click **Create integration**.
 
-   ![Click Create integration button](<images/create-integration-ib.png>)
+    ![Click Create integration button](<images/create-integration-ib.png>)
 
 1. Choose a provider.
 
-   ![Choose a provider](<images/choose-provider-ib.png>)
+    ![Choose a provider](<images/choose-provider-ib.png>)
 
 1. Validate your credentials and click **Confirm**. 
 
     **Note:** This step only occurs if you are using a personal environment. 
 
-   ![Validate your credentials](<images/validate-credentials-ib.png>)
+    ![Validate your credentials](<images/validate-credentials-ib.png>)
 
 1. Follow the wizard steps to configure the integration. 
 
@@ -170,7 +170,7 @@ You can connect an integration in the following ways:
 
 1. Click **Publish**.
 
-   ![Review integration](<images/review-integration-ib.png>)
+    ![Review integration](<images/review-integration-ib.png>)
 
     The published integration is now available in your environment and ready to be used in your OutSystems applications. 
 

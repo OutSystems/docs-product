@@ -61,28 +61,27 @@ The following is an example of an integration with MySQL.
 
 1. In the **Environment** field, enter the address of your OutSystems development environment and click **Next**.
 
-   ![Log into Integration Builder](<images/login-ib.png>)
+    ![Log into Integration Builder](<images/login-ib.png>)
 
-    For security and governance reasons, you can only connect to a **development** environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
+    **Note**: For security and governance reasons, you can only connect to a **development** environment. Once Integration Builder publishes the integration, it is available for you to use in the environment you enter on the login page.
 
 1. Enter your username and password and click **Log in**.
-
 
 ### Create a new integration
 
 1. On the **My integrations** screen, click **Create integration**.
 
-   ![Click Create integration button](<images/create-integration-ib.png>)
+    ![Click Create integration button](<images/create-integration-ib.png>)
 
 1. Choose a provider.
 
-   ![Choose a provider](<images/choose-provider-ib.png>)
+    ![Choose a provider](<images/choose-provider-ib.png>)
 
 1. Validate your credentials and click **Confirm**. 
 
     **Note:** This step only occurs if you are using a personal environment. 
 
-   ![Validate your credentials](<images/validate-credentials-ib.png>)
+    ![Validate your credentials](<images/validate-credentials-ib.png>)
 
 1. Follow the wizard steps to configure the integration. 
 
@@ -161,6 +160,7 @@ You can connect an integration in the following ways:
 1. Ensure you have selected the correct **Default value behavior** (by default Overwrite database NULLs is selected). 
 
     The following are the options for null and default values:
+    
     * Overwrite database NULLs - Always writes platform default values to the database. Database NULLs are read as platform default values.
 
     * Preserve database NULLs - Always write Integration Builder default values as database NULL. Database NULLs are read as Integration Builder default values.
@@ -171,7 +171,7 @@ You can connect an integration in the following ways:
 
 1. Click **Publish**.
 
-   ![Review integration](<images/review-integration-ib.png>)
+    ![Review integration](<images/review-integration-ib.png>)
 
     The published integration is now available in your environment and ready to be used in your OutSystems applications. 
 

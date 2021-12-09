@@ -19,7 +19,7 @@ Start by [fetching data in your screen](#fetch-data), and then [show the data in
 
 ## Prerequisites
 
-Before you start, ensure you created an app with a module and added the integration as a dependency to your module in Service Studio](use.md#use).
+Before you start, ensure you created an app with a module and [added the integration as a dependency to your module in Service Studio](../../../extensibility-and-integration/integration-builder/use.md#use).
 
 ## Fetch data from an integration { #fetch }
 

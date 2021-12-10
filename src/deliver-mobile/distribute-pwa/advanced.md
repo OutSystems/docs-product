@@ -41,7 +41,7 @@ You can edit the manifest in two places:
 
 The platform applies the default settings for all values that aren't in the manifest. When you insert your values to override the settings, keep in mind the following:
 
-* The manifest in Service Studio overrides the PWA settings **in all environments**. You can edit the manifest in any module of the app, just keep in mind that when changing the configurations of a module that isn't the home module, you need to republish the home module to properly apply the configurations to the entire app.
+* The manifest in Service Studio overrides the PWA settings **in all environments**.
 * The manifest in LifeTime overrides the PWA settings **in the current environment only**.
 
 </div>

@@ -1,6 +1,6 @@
 ---
 summary: If you need to restrict end user access to specific areas or operations in an application, you must validate their permissions.
-tags: support-Security; support-Security-featured
+tags:
 ---
 
 # Validate End User Permissions in the Application

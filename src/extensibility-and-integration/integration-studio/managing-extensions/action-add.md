@@ -6,7 +6,7 @@ Once you define the actions and publish the extension, add a reference to these 
 
 Do the following:
 
-1. Right-click on the **Actions** folder in the Multi-tree Navigator and select ![](images/action.gif) **Add Action**.
+1. Right-click on the **Actions** folder in the Multi-tree Navigator and select ![](images/action.png) **Add Action**.
 
 1. Specify the following properties:
 
@@ -22,7 +22,3 @@ Do the following:
 You can later change any of the action properties, in the [Action editor](<../../../ref/integration-studio/editor/action.md#import-details>).
 
 Integration Studio also provides the [Import Actions from .NET Assembly](<net-assembly-import-action.md>) wizard that allows you to add several actions with less effort by using introspection.
-
-## Web Services
-
-When creating custom extensions to consume Web Services you can use the Import Actions from a .NET Assembly wizard, which supports Web Service proxies. Learn how to [Import Web Services from a .NET Assembly](<net-assembly-import-web-service.md>).

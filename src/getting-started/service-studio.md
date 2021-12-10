@@ -3,7 +3,7 @@ summary: Get to know the main areas of the Service Studio interface.
 tags: outsystems; service-studio
 ---
 
-# Service Studio Overview
+# Service Studio overview
 
 <div class="info" markdown="1">
 

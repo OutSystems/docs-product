@@ -1,13 +1,15 @@
 build:
-    title: OutSystems 11 Documentation
+    title: OutSystems 11 Cross-platform Docs
     input-folder: src
     output-folder: build
     related-title: See Also   
 publish:
     url: https://success.outsystems.com/
-    root_path: Documentation/11
+    root_path: Documentation/11_x_platform
     toc_url: https://success.outsystems.com/
-    toc_root_path: Documentation/11
+    toc_root_path: Documentation/11_x_platform
+    skip_toc_publish: False
+    skip_edit_links: True
 reference:
     assemble-folder: 
         - src/ref/lang/auto
@@ -15,5 +17,5 @@ reference:
 checktoc:
     url: https://success.outsystems.com/
     root_path: ""
-    mindtouch-toc-path: Documentation/11/TOC
-    auto-toc-path: Documentation/Unlisted/Technical_Communication/Wiki_Tree_11
+    mindtouch-toc-path: Documentation/11_x_platform/TOC
+    auto-toc-path: Documentation/Unlisted/Technical_Communication/Wiki_Tree_11_x_platform

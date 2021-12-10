@@ -88,8 +88,8 @@ To enable all the required settings do the following:
 
 1. Enable the following settings:
 
-    – Secure Connections > **Enable HTTP Strict Transport Security (HSTS)**  
-    – Cookies > **Secure**
+    * Secure Connections > **Enable HTTP Strict Transport Security (HSTS)**  
+    * Cookies > **Secure**
 
 1. Click **Save**.
 

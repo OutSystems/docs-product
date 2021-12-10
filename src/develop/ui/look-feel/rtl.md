@@ -7,28 +7,6 @@ tags: right-to-left
 
 Most applications are designed and created with all content displaying from left to right (LTR). However, to accommodate languages from the Middle East, for example, Arabic, the written content and layout must be swapped so that it displays from right to left. All patterns on the OutSystems UI framework support RTL by default. 
 
-## Using the Multilingual feature
-
-To translate your application to, for example, Arabic, you just need to set the locale **"ar"** and the RTL is applied by default. 
-
-When you use the Multilingual feature, the RTL is automatically applied based on the language applied to the HTML and the platform adds the CSS class **"is-rtl"** to the body, changing the direction of this content.
-
-```
-.is-rtl {
-   direction: rtl;
-}
-```
-
-![Applying the Multilingual feature](images/rtl-multilingual.png)
-
-Here's the final result:
-
-![English and Arabic applied](images/rtl-arabic-english-applied-4.png)
-
-The multilingual feature is available from [Platform Server version 11.11.1 onwards](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server). To enable the Multilingual feature in your application, follow the [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md) guidelines. For more information about RTL languages, see [Checklist: Right-To-Left Languages (RTL)](https://lingohub.com/academy/best-practices/rtl-language-list).
-
-**Note:** OutSystems doesn’t support Aramaic, Khowar, Hausa, or Kashmiri.
-
 ## Applying RTL manually
 
 <div class="warning" markdown="1">

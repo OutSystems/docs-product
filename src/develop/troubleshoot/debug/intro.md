@@ -25,7 +25,7 @@ To debug your app, do the following in Service Studio:
 
 1. Start debugger by clicking the **Start Debugging** button in the [Debugger tab](<debugger-ui-reference.md>) or by selecting **Debug in the Public Area** in the Debugger menu. When you're debugging mobile apps using the Google Chrome target, Service Studio opens a dedicated Chrome browser instance for debugging only.
 
-    Note: To also open a browser when starting a debug session in a **web application**, check the **Open in new browser window** option in the **Debug Setup** tab.
+    Note: To also open a browser when starting a debug session in a **reactive web application**, check the **Open in new browser window** option in the **Debug Setup** tab.
 
     ![Debug Setup](<images/debug-setup-tab-web.png>)
 
@@ -43,7 +43,6 @@ To debug your app, do the following in Service Studio:
 
 In some scenarios you need to [debug some functionality exposed by another module](<debug-producer-modules.md>) (called a producer module).
 
-While developing **Traditional Web apps** you can also [debug modules in your Personal Area](<public-personal-areas.md>). This lets you test your changes separately from other developer's changes in the same module.
 
 ## Mobile debugging scenarios { #mobile-debugging-scenarios }
 

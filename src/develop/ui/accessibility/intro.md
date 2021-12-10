@@ -76,7 +76,7 @@ The default page title of the log-in page is blank. Navigate to **UI Flows** > *
 
 ### Page language settings for screen readers
 
-The locale of the app defines the language of the page. For more information see [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md).
+The locale of the app defines the language of the page. For more information see [Multilingual Reactive Web and Mobile Apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Multilingual_Reactive_Web_and_Mobile_Apps) in the Windows section of the IDE documentation.
 
 ### Image text alternatives
 

@@ -10,11 +10,6 @@ The ![SQL](../../../shared/icons-tools/advanced-query.png) **SQL** element lets 
 
 ![SQL in a logic flow](images/sql-in-flow-ss.png?width=350)
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## Accessing data
 

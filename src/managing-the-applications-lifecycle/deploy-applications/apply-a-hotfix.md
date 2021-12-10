@@ -42,7 +42,6 @@ To solve an hotfix, all changes made to the application have to be propagated ba
 
 1. Merge all the modules with the hotfix changes in Pre-Production to Quality Assurance: click on the compare button (the difference sign) between the environments and select the specific changes you have done to implement the hotfix.
 
-    ![](images/apply-a-hotfix-4.png)
 
 3. In Service Studio select the hotfix changes and click **Merge**.
 

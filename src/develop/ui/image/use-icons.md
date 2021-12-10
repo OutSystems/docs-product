@@ -1,6 +1,6 @@
 ---
 summary: Learn how to display an icon to help end users identify functionality or information on the screens.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
 ---
 
 # Use Icons

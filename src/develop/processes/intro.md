@@ -1,6 +1,6 @@
 ---
 summary: Use OutSystems Business Process Technology (BPT) to design and manage your business processes and integrate them into your applications.
-tags: bpt; support-webapps-featured
+tags: bpt
 ---
 
 # Use Processes (BPT)

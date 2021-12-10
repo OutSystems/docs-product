@@ -1,6 +1,6 @@
 ---
-summary: Learn how to manipulate a list and update it right away on the screen without having to reload the screen on a traditional web app.
-tags: support-application_development; support-Front_end_Development;
+summary: Learn how to manipulate a list and update it right away on the screen.
+tags:
 ---
 
 # Update List Items on a Screen

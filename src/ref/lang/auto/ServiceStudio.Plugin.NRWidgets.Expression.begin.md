@@ -31,10 +31,3 @@ The expression widget displays text or the result of an expression at runtime. I
     * **The square root of 3 is 1.73205080756887729352744634151**
     * **Today is 2020-10-08!!** 
     * **THIS IS TEXT IN UPPERCASE**
-
-
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>

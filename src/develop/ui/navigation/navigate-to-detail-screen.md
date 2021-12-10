@@ -1,6 +1,6 @@
 ---
 summary: Allow end users to check the details of a record by navigating to another screen.
-tags: support-application_development; support-Mobile_Apps; support-webapps
+tags:
 ---
 
 # Navigate to a Detail Screen

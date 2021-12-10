@@ -2,7 +2,7 @@
 
 Use this pattern to design action flows, adding automated business logic to your processes with the [Automatic Activity](<../../../ref/lang/auto/Class.Automatic Activity.final.md>) as, for example:
 
-* Integrate with external systems through extensions. See an example in [Designing Polling of External Systems](poll-external-systems.md).
+* Integrate with external systems through extensions.
 
 * Change the behavior of applications using, for example, Entity actions.
 

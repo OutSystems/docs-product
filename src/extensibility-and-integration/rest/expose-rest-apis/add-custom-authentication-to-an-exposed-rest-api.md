@@ -5,11 +5,6 @@ tags:
 
 # Add Custom Authentication to an Exposed REST API
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 OutSystems allows you to customize the authentication logic used in your exposed REST APIs.
 

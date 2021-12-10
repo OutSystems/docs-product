@@ -16,7 +16,7 @@ The impact that those changes have on the consumer modules at runtime depends on
 
 When you change the functionality in your **producer** and you publish the changed module, one of the following situations can happen in a **consumer module at runtime**:
 
-* **No impact on Consumer**: The changes you performed in the producer causes no impact on the consumer module at runtime and the consumer immediately starts using your latest implementation. Example: Changing the content of a WebScreen ([weak dependency](strong-weak-dependencies.md#weak-dependencies)) with no changes to its signature.
+* **No impact on Consumer**: The changes you performed in the producer causes no impact on the consumer module at runtime and the consumer immediately starts using your latest implementation. Example: Changing the content of a Screen ([weak dependency](strong-weak-dependencies.md#weak-dependencies)) with no changes to its signature.
 
 * **Outdated Consumer**: The changes you performed in the producer module are compatible with the consumer, which means that there are no manual fixes to do in the consumer, but the consumer is now running an outdated version of your producer. Example: Changing the logic of an exposed Server Action ([strong dependency](strong-weak-dependencies.md#strong-dependencies)) with no changes to its signature.
 
@@ -24,7 +24,7 @@ When you change the functionality in your **producer** and you publish the chang
   
     In this case, the consumer module at runtime keeps using the previous logic of your producer module until a republish. The consumer module needs to be republished to start using the latest implementation of your producer module. There is no need to refresh the producer dependencies because the signature did not change.
 
-* **Potential Incompatible Consumer**: You performed changes in the signature of exposed elements that **may be incompatible** with the consumer module and cause runtime errors. Example: Adding an optional Input Parameter to an exposed Server Action or Web Screen.
+* **Potential Incompatible Consumer**: You performed changes in the signature of exposed elements that **may be incompatible** with the consumer module and cause runtime errors. Example: Adding an optional Input Parameter to an exposed Server Action or Screen.
 
     ![](images/handle-changes-2.png?width=700)
 

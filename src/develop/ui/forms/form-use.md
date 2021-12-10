@@ -1,6 +1,6 @@
 ---
 summary: Learn how to use a Form to group Inputs Widgets.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps; support-webapps-featured
+tags:
 ---
 
 # Use a Form to Group Input Widgets

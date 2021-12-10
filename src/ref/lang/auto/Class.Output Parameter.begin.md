@@ -31,17 +31,13 @@ The following elements displayed in the element tree can have Output Parameters:
 * Server Actions and Client Actions
 * Processes, Process Activities, and Wait elements
 * Exposed/Consumed REST Methods
-* Exposed/Consumed SOAP Web Service Methods
-* SAP Remote Functions
 
 Additionally, JavaScript elements (available on Client Actions) also have Output Parameters.
 
-External integrations like consumed REST APIs, consumed SOAP Web Services, and SAP Remote Functions have their logic defined in an external system. In this case, OutSystems fills the Output Parameter values from the values returned by the external system. You can then use the Output Parameter values in your business logic.
+External integrations like consumed REST APIs have their logic defined in an external system. In this case, OutSystems fills the Output Parameter values from the values returned by the external system. You can then use the Output Parameter values in your business logic.
 
 The Output Parameters of the following elements have additional properties:
 
-* [Output Parameter](ServiceStudio.Plugin.SOAP.SOAPActionOutput.final.md) of a consumed SOAP Web Service Method
 * [Output Parameter](ServiceStudio.Plugin.RESTService.RestServiceActionOutput.final.md) of an exposed REST API Method
-* [Output Parameter](ServiceStudio.Plugin.SAP.SapActionOutput.final.md) of a SAP Remote Function
 
 Check their reference topics for more information.

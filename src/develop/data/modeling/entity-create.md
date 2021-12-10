@@ -9,12 +9,11 @@ In OutSystems, a database table is an ![Entity](../../../shared/icons-service-st
 
 To create an Entity you need to:
 
-1. Open the Entity Diagram created by default in your application. 
-1. Right-click anywhere on the canvas and select 'Add Entity'.
-1. In the window that pops up:
-    1. Give a name to the entity.
-    1. The entity already has the Id attribute created as Entity Identifier (primary key). Add the other attributes.
-    1. Add indexes if necessary.
+1. Double click in the Entity Diagram created by default in the Data tab. 
+1. Right-click anywhere on the canvas and select **Add Entity to Database**. By default, it will be named "Entity1" and it can be renamed.
+1. Expand the **Entities** tree and note the entity has the Id attribute created as Entity Identifier (primary key). 
+1. Right-click the Entity and the other attributes by selecting **Add Entity Attribute**.
+1. You can add indexes if necessary by right clicking with the Entity and choosing **Edit Entity**.
 
 Alternatively, you can create entities in the Data tab:
 
@@ -24,7 +23,7 @@ It's a quicker way, but with access to less information about the entity.
 
 It's useful to create an entity and bootstrap data for it.
 
-In mobile applications, you can create entities to store information in the device's local storage. This typically happens when end users need to take the data offline.
+In mobile applications, you can create entities to store information in the device's local storage. This typically happens when end users need use the application while  offline.
 
 
 ## Example
@@ -37,7 +36,7 @@ We have an application called Go Out, that allows you to read and write reviews 
 
 3. Set the name of the entity to `Place`. OutSystems creates an `Id` attribute with data type `Long Integer`, set as AutoNumber.
 
-4. Use the ![Entity Attribute](../../../shared/icons-service-studio/entity-attribute.png) New button to create the attributes:
+4. With the entity selected, add the other attributes by clicking with the right-button in "Add Entity Attribute" to create the attributes:
 
     ![](images/entity-editor.png)
 

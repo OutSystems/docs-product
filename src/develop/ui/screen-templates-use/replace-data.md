@@ -1,10 +1,10 @@
 ---
-summary: Replace data in screens created from screen templates or accelerators with your data. 
+summary: Replace data in screens created from screen templates with your data. 
 ---
 
 # Replace data in screens
 
-Once you’ve built an app that contains screen templates or accelerators, you may want to replace the data in your screens with your own data. Data can be replaced [manually](#replace-data-manually) or [automatically](#replace-data-automatically). 
+Once you’ve built an app that contains screen templates, you may want to replace the data in your screens with your own data. Data can be replaced [manually](#replace-data-manually) or [automatically](#replace-data-automatically). 
 
 ## Replace data automatically
 
@@ -26,7 +26,7 @@ Automatic replacement works in Form, Table, List, and Gallery widgets. You can a
 
 1. Check the **TrueChange** tab for errors and warnings and fix them.
 
-When replacing data inside a **Mobile App** screen that has been created from a screen template or accelerator, you can only replace server data with server data and local data with local data. Replacing data by dragging and dropping does not work with mixed data sources.
+When replacing data inside a **Mobile App** screen that has been created from a screen template, you can only replace server data with server data and local data with local data. Replacing data by dragging and dropping does not work with mixed data sources.
 
 ## Replace data manually
 

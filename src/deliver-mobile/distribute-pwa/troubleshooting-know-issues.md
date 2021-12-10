@@ -7,11 +7,6 @@ tags: support-application_development; runtime-mobile;
 
 This document contains information about troubleshooting and known issues.
 
-<div class="info" markdown="1">
-
-The team would love to hear what you think of this document and if it helps you. Please **leave feedback** in the feedback section. If you want to get a reply, select **Yes, you may contact me about this feedback**.
-
-</div>
 
 ## Known issues
 

@@ -4,11 +4,6 @@ summary: How to define user classification rules for identifying Internal Users.
 
 # Classify Users as Internal Users
 
-<div class="info" markdown="1">
-
-Applies to OutSystems licenses purchased after January 2020.
-
-</div>
 
 OutSystems identifies two different types of registered end users for licensing purposes: [**Internal Users** and **External Users**](intro.md#internal-external).
 

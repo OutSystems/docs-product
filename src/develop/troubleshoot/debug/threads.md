@@ -10,7 +10,7 @@ In OutSystems a **thread** may result from the following:
 * A client action triggered by the user in a mobile app, or an event triggered in a mobile app (e.g. OnReady event of a screen).
 * An awakened Timer action.
 * A Process instance execution.
-* An integration method (belonging to a SOAP web service or a REST service) exposed by a module. 
+* An integration method belonging to a REST service exposed by a module. 
 
 The execution of a thread follows its designed action flow, e.g. an action to be executed when a button is pressed or a Web Service method (Web Service method call).
 
@@ -20,7 +20,7 @@ The debugger behaves differently when suspending the execution flow at breakpoin
 
 * **Threads from client/server actions or mobile app events**: these threads are originated by some action taken by the user on a screen in a web or a mobile app, or from events triggered in a mobile app (e.g. OnReady, OnInitialize). These threads are isolated and suspended at the breakpoints you set; the same happens for all other users in their machines.
 
-* **Other types of threads**: threads like the ones executing Process flows, Timer actions, or integration methods are suspended from execution whenever they run into a breakpoint of a debug session started in the Public Area, either yours or of any other user because they're not isolated. In this case, you might be debugging not only your threads, but also threads from other users and vice-versa. To overcome this situation, you should check in the Users Tab if there are other users debugging the module. If that is the case, each suspended thread should have its module elements and runtime values examined by you (in the [scope tabs](<debugger-ui-reference.md#scope-tabs-area>)) to check if the suspended thread is yours.
+* **Other types of threads**: threads like the ones executing Process flows, Timer actions, or integration methods are suspended from execution whenever they run into a breakpoint of a debug session, either yours or of any other user because they're not isolated. In this case, you might be debugging not only your threads, but also threads from other users and vice-versa. To overcome this situation, you should check in the Users Tab if there are other users debugging the module. If that is the case, each suspended thread should have its module elements and runtime values examined by you (in the [scope tabs](<debugger-ui-reference.md#scope-tabs-area>)) to check if the suspended thread is yours.
 
 <div class="info" markdown="1"> 
 

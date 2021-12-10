@@ -18,7 +18,7 @@ Depending on the size of your services portfolio, you can also create a **Servic
 In a Service module you define the elements that compose your core services:
 
 * The service logic, using Server Actions and Service Actions.
-* Integrations (SOAP, REST and SAP).
+* Integrations such as REST.
 * Processes and Timers.
 * Database Entities.
 
@@ -36,7 +36,7 @@ You should use Reactive Web, Mobile, or Traditional Web modules to implement UI 
 
 The way you implement a service in OutSystems will be different if your service exposes functionality to external systems or inside the same OutSystems environment:
 
-* **Expose functionality to an external system or a different OutSystems infrastructure:** You can implement the logic of your service exposing a [REST API](../../extensibility-and-integration/rest/expose-rest-apis/intro.md) or a [SOAP Web Service](../../extensibility-and-integration/soap/expose/expose-soap-web-service.md) in your Service module.
+* **Expose functionality to an external system or a different OutSystems infrastructure:** You can implement the logic of your service exposing a [REST API](../../extensibility-and-integration/rest/expose-rest-apis/intro.md) in your Service module.
 
 * **Expose a service to be reused by other modules or applications inside the same OutSystems environment:** You can implement the logic of your service in a tightly-coupled way exposing public **Server Actions**, or you can do it in a loosely-coupled way exposing **Service Actions**.
 

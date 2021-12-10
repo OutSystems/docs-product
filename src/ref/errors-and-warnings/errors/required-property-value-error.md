@@ -21,13 +21,19 @@ You need to set a valid value in the Value property.
 
 For an [Expression](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md), you need to define a [valid expression](../../../ref/logic/expressions/intro.md).
 
+
 ![Location of Expression value](images/required-property-value-error.png?width=400)
 
-For a [Button Group](../../../develop/ui/patterns/web/controls/buttongroup.md), set a valid value for the Value property of each of the options. 
+
+For a [Button Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md), set a valid value for the Value property of each of the options. 
+
 
 ![Location of Button Group value](images/required-property-value-error-03.png?width=300)
 
+
 For a [Radio Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioGroup.final.md), set a valid value for the Value property of each of the options, and also ensure a value is set for the [Variable property](#variable-must-be-set). 
+
+
 
 ## Source must be set
 
@@ -55,6 +61,8 @@ You need to set a valid value for the On Click property for the Event.
 
 For a [List Item](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ListItem.final.md), [Button](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md), or [Link](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md), set a valid value for the On Click property of the Event.
 
+
+
 ## Variable must be set
 
 **Cause**
@@ -67,9 +75,14 @@ You need to set a valid value for the Variable property.
 
 For a [Radio Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioGroup.final.md), set a valid value for the Variable property, and also ensure a value is set for the [Value property](#value-must-be-set) of each of the options.
 
+
 ![Location of Radio Group variable](images/required-property-value-error-02.png?width=300)
 
-For an [Input](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md), [Text Area](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md), [Switch](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md), [Checkbox](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md), [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md), or [Button Group](../../../develop/ui/patterns/web/controls/buttongroup.md), set a valid value for the Variable property.
+
+
+For an [Input](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md), [Text Area](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md), [Switch](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md), [Checkbox](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md), [Dropdown](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md), or [Button Group](../../lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md), set a valid value for the Variable property.
+
+
 
 ## List must be set
 
@@ -79,7 +92,8 @@ You added a Dropdown widget and did not set a value for the List property.
 
 **Recommended action**
 
-You need to set a valid value for the List property of the [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md).
+You need to set a valid value for the List property of the [Dropdown](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md).
+
 
 ## Options Value must be set
 
@@ -89,7 +103,8 @@ You added a Dropdown widget and did not set a value for the Options Value proper
 
 **Recommended action**
 
-You need to set a valid value for the Options Value property of the [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md).
+You need to set a valid value for the Options Value property of the [Dropdown](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md).
+
 
 ## File Content must be set
 
@@ -97,9 +112,11 @@ You need to set a valid value for the Options Value property of the [Dropdown](.
 
 You added an [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md) widget and did not set a value for the File Content property.
 
+
+
 **Recommended action**
 
-You need to set a valid value for the File Content property of the [Upload](../../../ref/lang/auto/Class.Upload%20Widget.final.md).
+You need to set a valid value for the File Content property of the [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md).
 
 ## File Name must be set
 
@@ -109,7 +126,8 @@ You added an [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Uplo
 
 **Recommended action**
 
-You need to set a valid value for the File Name property of the [Upload](../../../ref/lang/auto/Class.Upload%20Widget.final.md).
+You need to set a valid value for the File Name property of the [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md).
+
 
 ## Show Popup must be set
 
@@ -121,6 +139,8 @@ You added a Popup widget and did not set a value for the Show Popup property.
 
 You need to set a valid value for the Show Popup property of the [Popup](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popup.final.md).
 
+
+
 ## Source Block must be set in Block
 
 **Cause**
@@ -131,6 +151,8 @@ You added a Block widget and did not set a value for the Source Block property.
 
 You need to set a valid value for the Source Block property of the [Block](../../../ref/lang/auto/Class.Block%20Widget.final.md).
 
+
+
 ## Condition must be set in If
 
 **Cause**
@@ -139,7 +161,7 @@ You added an If widget and did not set a value for the Condition.
 
 **Recommended action**
 
-You need to set a valid value for the Condition property of the [If](../../../ref/lang/auto/Class.If%20Widget.final.md).
+You need to set a valid value for the Condition property of the [If](../../../ref/lang/auto/Class.If.final.md).
 
 ## Unknown &lt;entity_name> &lt;property> in &lt;element> &lt;element_type>
 

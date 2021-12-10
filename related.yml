@@ -319,10 +319,6 @@
     #Localized Image
     - ref/lang/auto/Class.Localized Image.final.md
     
-# Localized Image
-- ref/lang/auto/Class.Localized Image.final.md:
-    # Multilingual Web Applications
-    - develop/ui/multilingual/multilingual-web.md
     
 # Theme
 - ref/lang/auto/Class.Theme.final.md:
@@ -844,14 +840,6 @@
         - "How to Create a Cordova Plugin from Scratch":
             https://www.outsystems.com/blog/posts/how-to-create-a-cordova-plugin-from-scratch/
 
-- extensibility-and-integration/soap/consume/advanced-extensibility.md:
-    - ref/apis/soap-extensibility-api.md
-    - external:
-        - "Forge Component: SOAP Extensibility Samples":
-            https://www.outsystems.com/forge/component-overview/5322/soap-extensibility-samples
-
-- extensibility-and-integration/soap/troubleshoot-soap-web-services.md:
-    - extensibility-and-integration/log-levels-set.md
 
 - extensibility-and-integration/rest/consume-rest-apis/handling-rest-errors.md:
     - develop/logic/exceptions/intro.md

@@ -25,19 +25,19 @@ Let's create a new task management mobile app. Do the following in Service Studi
 
     ![New app in Service Studio](images/new-app-ss.png)
 
-1. Select **From scratch** and click **NEXT**.
+1. Select **From scratch** and click **Next**.
 
     ![New app in Service Studio](images/from-scratch-ss.png)
 
-1. Choose the **Phone App** template and click **NEXT**.
+1. Choose the **Phone App** template and click **Next**.
 
     ![Mobile App template](images/phone-app-template-ss.png)
 
-1. Name the app **To Do** and click **CREATE APP**. Service Studio opens app details for you to add your first module.
+1. Name the app **To Do** and click **Create App**. Service Studio opens app details for you to add your first module.
 
     ![App name in the new app window](images/name-of-app-ss.png)
 
-1. In the app detail screen, confirm the following and click **CREATE MODULE**:
+1. In the app detail screen, confirm the following and click **Create Module**:
     
     * The name of the module is `ToDo`
     * The module type is **Phone App**.
@@ -56,7 +56,7 @@ To do this, we are going to use an Excel file that already contains the followin
 * Due Date
 * Is Active
 
-In the `ToDo` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel...**, and select the sample file `Tasks.xlsx` available by default in the directory `C:\Program Files\OutSystems\Development Environment 11\Service Studio\TutorialResources`.
+In the `ToDo` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel...**, and select the sample file `Tasks.xlsx` available by default in the directory `C:\Program Files\OutSystems\Development Environment 11\Service Studio\TutorialResources`
 
 ![Create a Database Table from an Excel File](images/create-mobile-03.png)
 
@@ -104,11 +104,56 @@ Now we will define the logic that runs when the end users press the Save button:
 
 1. Double-click an empty area of the **Save** button to define the logic associated with the button. This will create a new screen action named **SaveOnClick**.
 
-1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the **True** branch of the **If**. Set the **Source** property to `GetTaskById.List.Current`.
+1. In the Logic tab create a server action named **TaskCreateOrUpdate**.
+
+1. Add an input parameter and set it's name to **Task**. Set the data type to **Task**.
+
+1. Add an output parameter and set it's name to **TaskId**. Set the data type to **Task Identifier**. This will be the task id returned by the CreateOrUpdateTask that we'll need to pass on to the **SaveOnClick** action.
+
+1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action. Set the **Source** to the input parameter **Task**.
+
+1. Next, we'll need to assign value of the output parameter **TaskId** to the **CreateOrUpdateTask**. Drag an **Assign** node to the flow and set the **Variable** to **TaskId**, and the **Value** to `CreateOrUpdateTask.Id`.
+    
+    ![](images/wrapper-create-ss.png)
+
+<!---1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the **True** branch of the **If**. Set the **Source** property to `GetTaskById.List.Current`.
+
+1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task.-->
+
+1. Navigate to the **Interface** tab and double click the **SaveOnClick** action.
+
+1. In the **Logic** tab and drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If**. Set the **Task** property to `GetTaskById.List.Current.task`.
 
 1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task. 
 
-    ![Create a Screen to Edit Tasks](images/create-mobile-11.png)
+   ![Create a Screen to Edit Tasks](images/create-mobile-11.png)
+
+## Allow completing tasks
+
+Now let's add the functionality to mark tasks as complete. Let's implement that by deleting the completed tasks:
+
+1. Click the item of the list and then, on the Toolbar, click **Swipe Left Action**.
+
+1. In the newly created List Action, replace the text "Action" with "Done".
+
+    ![Allow Completing Tasks](images/create-mobile-14.png)
+
+1. Double-click an empty area of the List Action to define the logic associated with the Swipe Left Action.
+
+1. Click the **Logic** tab and add a a Server Action. Name it *TaskDelete*. 
+
+1. Add an input parameter to the *TaskDelete* to receive the Task identifier. Set it's name to *TaskId* and the Data Type to *Task Identifier*.
+
+1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the property *Id* to the input parameter *TaskId*.
+
+    ![](images/wrapper-delete-ss.png)
+
+1. Go back to the **Interface** tab and double click the action **DeleteTask**. Drag the **TaskDelete** server action to the flow. and set the TaskId to the input parameter *TaskId*.
+
+1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
+
+    ![Allow Completing Tasks](images/reactive-new-app-delete-refresh.png)
+
 
 ## Allow adding tasks
 
@@ -123,25 +168,6 @@ Drag an **Icon** widget from the Toolbox to the Actions placeholder in the top r
 
     ![Allow Adding Tasks](images/create-mobile-13.png)
 
-## Allow completing tasks
-
-Now let's add the functionality to mark tasks as complete. Let's implement that by deleting the completed tasks:
-
-1. Click the item of the list and then, on the Toolbar, click **Swipe Left Action**.
-
-1. In the newly created List Action, replace the text "Action" with "Done".
-
-    ![Allow Completing Tasks](images/create-mobile-14.png)
-
-1. Double-click an empty area of the List Action to define the logic associated with the Swipe Left Action.
-
-1. In the **Data** tab, expand the **Task** entity and drag **DeleteTask** entity action  available under the entity Task in the Data tab to the flow of the Swipe Left Action. Set the **Id** property  to `GetTasks.List.Current.Task.Id`.
-
-    ![Allow Completing Tasks](images/create-mobile-15.png)
-
-1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **DeleteTask** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
-
-    ![Allow Completing Tasks](images/create-mobile-16.png)
 
 ## Test your Mobile App
 
@@ -151,6 +177,5 @@ At this stage we test the mobile app. Click the **![1-Click Publish](../shared/i
 
 When the application is deployed, click the **![Open in Browser](../shared/icons-service-studio/open-browser.png) Open in Browser** button to test your application in a browser (Chrome and Safari are supported).
 
-![Test Your Mobile App](images/create-mobile-18.png)
 
 To try out the app on your mobile device see [Distribute as a progressive web app (PWA)](../deliver-mobile/distribute-pwa/intro.md).

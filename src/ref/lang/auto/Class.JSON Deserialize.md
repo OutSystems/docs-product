@@ -43,7 +43,7 @@ Deserializes a JSON string to an OutSystems object.
 </tr>
 <tr>
 <td title="Data Type">Data Type</td>
-<td>Record or List representing the structure of the data in the JSON string.</td>
+<td>List or Structure of the data in the JSON string. If you want to add a Record composed of Attributes of several Entities, you'll have to first create a Structure. </td>
 <td>Yes</td>
 <td></td>
 <td></td>

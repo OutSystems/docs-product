@@ -146,6 +146,10 @@ $(function() {
 
 # Basics
 
+## Dark theme
+
+You can switch Service Studio to the dark theme (or dark mode). On the **Edit** menu, chose **Preferences...** then, under **Theme** switch on **Dark theme**.
+
 ## Would you like to know more? Hit F1
 
 You can always access relevant documentation and find more about any element/flow/tab by selecting it and pressing <span class="keyboard"> F1 </span> from within Service Studio.
@@ -154,7 +158,7 @@ You can always access relevant documentation and find more about any element/flo
 
 You can consult the list of keyboard shortcuts in two ways:
 
-* Use a shortcut for shortcuts: <span class="keyboard"> Ctrl </span>+<span class="keyboard"> Shift </span>+<span class="keyboard"> K </span>
+* Use a shortcut for shortcuts: <span class="keyboard"> Cmd </span>+<span class="keyboard"> Shift </span>+<span class="keyboard"> K </span>
 
 * Check [the shortcuts list](../../ref/lang/auto/shortcutkeys.md) in the documentation
 
@@ -164,11 +168,11 @@ You can consult the list of keyboard shortcuts in two ways:
 
 Whether you are opening files from your Environment or from a local source, you can always do it faster by selecting and opening them all at once in one of three different ways:
 
-* Use <span class="keyboard"> Ctrl </span>+<span class="lclick">Left-Click</span> to add the clicked file to your selection
+* Use <span class="keyboard"> Cmd </span>+<span class="lclick">Left-Click</span> to add the clicked file to your selection
 
 * Use <span class="keyboard"> Shift </span>+<span class="lclick">Left-Click</span> to select all files between the last file you previously selected and the clicked file
 
-* Use <span class="keyboard"> Ctrl </span>+<span class="keyboard"> Shift </span>+<span class="lclick">Left-Click</span> to add to your previous selection all files from the last file you previously selected to the clicked file
+* Use <span class="keyboard"> Cmd </span>+<span class="keyboard"> Shift </span>+<span class="lclick">Left-Click</span> to add to your previous selection all files from the last file you previously selected to the clicked file
 
 ## Edit the Properties of several elements in one go
 
@@ -180,17 +184,6 @@ Start by selecting the elements for which you want to change the Properties and 
 
 Then, you'll be able to see where their Properties differ and where they share common values. All you have to do now is adjust them according to your needs. Any change made within your current selection will be applied to all selected elements.
 
-## Close several Modules in one go
-
-Do you have way too many Modules open? Quickly close any number of them by right-clicking a Module tab and selecting **Close other modules** or **Close modules to the right**.
-
-![](images/tt-close-tabs.gif)
-
-[//]: # (### Use the Search)
-
-
-[//]: # (### Find and Replace)
-
 
 ## Open a Screen in browser
 
@@ -200,7 +193,7 @@ To open a Screen in a browser open the **Interface** tab, right-click that Scree
 
 ## Expanding and collapsing trees
 
-In any tree, you can collapse or expand all items and subitems by clicking <span class="keyboard"> Ctrl </span>+<span class="lclick">Left-Click</span> in the arrow next to the item you want to expand or collapse. With just a few clicks, you can keep your development environment neat and tidy at all times.
+In any tree, you can collapse or expand all items and subitems by clicking <span class="keyboard"> Cmd </span>+<span class="lclick">Left-Click</span> in the arrow next to the item you want to expand or collapse. With just a few clicks, you can keep your development environment neat and tidy at all times.
 
 ![](images/tt-tree-02.png)
 
@@ -263,7 +256,7 @@ Cut the search time to a minimum and quickly add dependencies by searching acros
 
 ![](images/tt-search-add-other-modules.gif)
 
-Use <span class="keyboard"> Ctrl </span>+<span class="keyboard"> F </span> to search for the desired element in the **Search** bar.
+Use <span class="keyboard"> Cmd </span>+<span class="keyboard"> F </span> to search for the desired element in the **Search** bar.
 
 Click **Search in other Modules** in the dropdown menu to open a window that'll list all elements that match your search query across every module of the environment.
 

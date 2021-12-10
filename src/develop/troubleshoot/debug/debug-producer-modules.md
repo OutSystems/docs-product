@@ -36,7 +36,7 @@ To debug the functionality being exposed in a public Action by the producer Modu
 
 1. Place breakpoints where you want the execution to stop. The execution will only stop on breakpoints of the producer Module.
 
-1. Start the debugger in the producer Module. If the producer Module is part of a mobile app, the **consumer Module** will automatically be opened; if it's part of an application, you can open the **consumer Module** in a browser.
+1. Start the debugger in the producer Module. If the producer Module is part of a mobile app, the **consumer Module** will automatically be opened; if it's part of a web application, you can open the **consumer Module** in a browser.
 
 1. Interact with the application to execute the functionality that calls the producer logic where the breakpoints are set.
 

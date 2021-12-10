@@ -24,5 +24,3 @@ The following are the main ways you can display the Date Picker widget on a scre
 ## Direction and Internationalization
 
 The Date Picker Pattern sets both directions and translations automatically. If you choose a locale that triggers the Right-To-Left options on the screen, the Date Picker automatically sets the isRTL setting to True.
-
-Translation options are automatically set using the settings in the [Multilingual component](../../../../multilingual-tp/intro.md). This component automatically changes the language based on the current HTML language attribute.

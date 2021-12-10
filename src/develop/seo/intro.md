@@ -13,7 +13,6 @@ As a best practice use **SEO-friendly URLs for Reactive Web Apps**. Friendly URL
 
 * Platform Server 11.14.0 or later
 * Service Studio 11.13.0 or later
-* React v16.0 or later
 * OutSystems enterprise cloud offer or a properly configured on-premises installation
 
 For Platform Server versions between 11.12.0 and 11.14.0 you can enable the technical preview and use Service Studio 11.11 and later.

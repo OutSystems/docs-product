@@ -199,6 +199,3 @@ To help you decide which default behavior is best for your new integration, the 
     ![Add dependency](<images/add-dependency-ss.png>)
 
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
-
-
-

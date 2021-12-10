@@ -787,6 +787,8 @@
     - topics:
         - href: setup/possible-setups/cloud-architecture.md
     - href: setup/system-requirements.md
+    - topics:
+        - href: setup/limitations.md
     - href: setup/network-requirements.md
     - href: setup/default-configurations.md
     - href: setup/environment-config.md

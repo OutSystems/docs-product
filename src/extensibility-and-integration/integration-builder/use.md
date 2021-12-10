@@ -132,7 +132,9 @@ After creating a connection, associate it to the integration do the following:
 
 1. Click **Apply**.
 
-1. Add calls to the Server Actions exposed by the integration module to your application logic. Check [Structure of generated integrations](structure.md) for more information on the available elements in the generated integration.
+After the steps, add calls to the Server Actions exposed by the integration module to your application logic. Check [Structure of generated integrations](structure.md) for more information on the available elements in the generated integration.
+
+If you want to show data in screens, learn how to do it in [this article](../../develop/data/query/fetch-data-ib.md)
 
 ## Configuring your integration after deployment
 

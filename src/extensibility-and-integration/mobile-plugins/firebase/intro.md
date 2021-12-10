@@ -87,3 +87,22 @@ To get the target directory, concatenate the **app identifier** and **.firebase*
 | PROD | com.sample.prod.MyApp | `com.sample.prod.MyApp.firebase` |
 
 Use the target directory value in the **Target Directory** property of the **Resource**.
+
+### Additional setup for the Dynamic Links Plugin
+
+The Firebase Dynamic Links Plugin has some additional setup steps that need to be followed for it to work correctly:
+
+* You need to include a global preference in the Extensibility Configurations of the application using the plugin. The value for this preference needs to match the URL prefix you set in the Dynamic Links page in the Firebase console. For example:
+
+    ```
+    {
+        "preferences": {
+            "global": [{
+                "name": "FIREBASE_DOMAIN_URL_PREFIX",
+                "value": "outsystemsfirebase.page.link"
+            }]
+        }
+    }
+    ```
+
+* For iOS, you need to use a provisioning profile from Apple that contains the Associated Domains capability. For more info, see [Configuring an Associated Domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain) by Apple.

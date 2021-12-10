@@ -77,4 +77,4 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
 OutSystems recommends that you create a sample screen from the **Master Detail** Screen Template and check the accessibility settings in a working example.
 
-![Master detail axample](images/master-detail-example-ss.png)
+![Master detail example](images/master-detail-example-ss.png)

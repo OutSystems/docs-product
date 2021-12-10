@@ -37,6 +37,7 @@
         - href: develop/data/query/intro.md
         - topics:
             - href: develop/data/query/fetch-display.md
+            - href: develop/data/query/fetch-data-ib.md
             - href: develop/data/query/filter-results.md
             - href: develop/data/query/sort-aggregate.md
             - href: develop/data/query/group-calculate.md
@@ -468,7 +469,6 @@
     - href: develop/seo/intro.md
     - topics:
         - href: develop/seo/indexing.md
-        - href: develop/seo/troubleshooting.md
     # Testing
     - href: develop/testing/intro.md
     - topics:
@@ -516,6 +516,7 @@
     - href: deliver-mobile/app-shield/intro.md
     - topics:
         - href: deliver-mobile/app-shield/obfuscate-custom-rules.md
+        - href: deliver-mobile/app-shield/ExitOnUrl.md
     - href: deliver-mobile/compliance-with-third-party-licenses.md
 
 # Extensibility and Integration
@@ -663,7 +664,10 @@
             - href: extensibility-and-integration/integration-studio/managing-extensions/resource-define.md
             - href: extensibility-and-integration/integration-studio/managing-extensions/extension-download.md
 
-    - href: extensibility-and-integration/connect-external-db.md
+    - href: extensibility-and-integration/external-database/intro.md
+    - topics:
+        - href: extensibility-and-integration/external-database/integrate-external-db-ib.md
+        - href: extensibility-and-integration/external-database/connect-external-db.md
     - href: extensibility-and-integration/configure-send-emails.md
 
 # Managing the Applications Lifecycle
@@ -1260,6 +1264,7 @@
             - href: ref/errors-and-warnings/errors/concurrent-publishing-error.md
             - href: ref/errors-and-warnings/errors/connection-error.md
             - href: ref/errors-and-warnings/errors/database-upgrade-error.md
+            - href: ref/errors-and-warnings/errors/duplicated-page-name.md
             - href: ref/errors-and-warnings/errors/empty-onexception.md
             - href: ref/errors-and-warnings/errors/empty-widget.md
             - href: ref/errors-and-warnings/errors/environment-fault-error.md
@@ -1269,6 +1274,9 @@
             - href: ref/errors-and-warnings/errors/incompatible-version-error.md
             - href: ref/errors-and-warnings/errors/internal-error.md
             - href: ref/errors-and-warnings/errors/invalid-action-flow-error.md
+            - href: ref/errors-and-warnings/errors/invalid-page-name.md
+            - href: ref/errors-and-warnings/errors/invalid-format-page-name.md
+            - href: ref/errors-and-warnings/errors/invalid-parameter-order.md
             - href: ref/errors-and-warnings/errors/invalid-aggregate-error.md
             - href: ref/errors-and-warnings/errors/invalid-argument-value-error.md
             - href: ref/errors-and-warnings/errors/invalid-attribute-error.md
@@ -1335,6 +1343,7 @@
             - href: ref/errors-and-warnings/errors/required-output-parameter-error.md
             - href: ref/errors-and-warnings/errors/required-permission-error.md
             - href: ref/errors-and-warnings/errors/required-property-value-error.md
+            - href: ref/errors-and-warnings/errors/reserved-page-name.md
             - href: ref/errors-and-warnings/errors/unknown-object.md
             - href: ref/errors-and-warnings/errors/unused-callback-error.md
             - href: ref/errors-and-warnings/errors/unused-input-parameter-error.md   

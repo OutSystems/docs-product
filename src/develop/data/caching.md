@@ -24,7 +24,8 @@ These are the elements that **support** caching:
 Some elements **don't support** caching. These are:
 
 * Screens, as the feature currently does not support this element.
-* Blocks with Submit.
+* Exposed REST
+* Web Blocks with Submit or Ajax Submit.
 
 
 ## Activating the caching feature

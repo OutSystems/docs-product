@@ -53,4 +53,4 @@ Rotation means that:
 
 * The definition of the views in the database, for each log type, is updated to point to the next cycle number.
 * Log writing automatically begins to happen in the tables from the new cycle. This part is made algorithmically in the Deployment Controller Service — no changes to the database happen for this purpose.
-* Old log tables are cleaned after their retention period passes, defined in OutSystems Configuration Tool, preparing them for later use. The retention period configured in OutSystems Cloud is 9 weeks.
+* Old log tables are cleaned after their retention period passes, defined in OutSystems Configuration Tool, inside the Log tab, Advanced settings, preparing them for later use. The retention period configured in OutSystems Cloud is 9 weeks and it cannot be changed.

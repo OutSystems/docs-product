@@ -170,12 +170,14 @@ The use of double-byte characters with DB2 databases is not supported.
 
 To develop your applications using OutSystems, developers need to install Service Studio and Integration Studio development tools on their desktops.
 
+### Service Studio 
+
 Before setting up Service Studio make sure that your computer meets the following requirements:
 
 ### Hardware (minimum requirements)
 
-* 1.8 GHz dual-core processor (or better)
-* 2 GB of RAM (4 GB recommended)
+* 1.8 GHz dual-core processor or better.
+* 2 GB of RAM (4 GB recommended).
 * 1 GB of free disk space
 
 <div class="info" markdown="1">
@@ -184,11 +186,7 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 
 </div>
 
-Limitations:
-
-* The touch feature of touch screen devices is not supported, however, you can use touch screen devices with keyboard and mouse.
-
-### Supported Operating Systems
+#### Operating System
 
 **macOS:**
 
@@ -199,18 +197,10 @@ Limitations:
 
 * Windows 10 (64-bit)
 * Windows 8 (64-bit)
-* Microsoft Windows Server 2019, since Development Environment 11.6.5
+* Microsoft Windows Server 2019
 * Microsoft Windows Server 2016
 
-
-For the versions above, OutSystems only supports Windows editions that are supported by Microsoft and Apple.
-
-
-### Required Software
-
-
-* To integrate with external systems using Integration Studio to edit the source code of Extension Actions:  
-    Visual Studio 2015, Visual Studio 2017, or Visual Studio 2019 (since Development Environment 11.6.7).
+#### Required Software
 
 * To perform client-side debugging in Service Studio using a desktop browser:  
     Google Chrome version 54 or later.
@@ -221,7 +211,42 @@ For the versions above, OutSystems only supports Windows editions that are suppo
 * To perform client-side debugging on an iOS mobile device:  
     iTunes 12.1.3 or later.
 
-### Required Network Connection
+#### Network
+
+You need an internet connection to install Service Studio with a minimum speed of 1 Mbps for both downloading and uploading. You need an internet connection even when installing Service Studio on a virtual machine.
+
+### Integration Studio
+
+Installation requirements for these tools are as follows.
+
+#### Hardware (minimum requirements)
+
+* 1.8 GHz dual-core processor (or better)
+* 2 GB of RAM (4 GB recommended)
+* 1 GB of free disk space
+
+Limitations:
+
+* The touch feature of touch screen devices is not supported, however, you can use touch screen devices with keyboard and mouse.
+
+#### Operating System
+
+* Windows 10 (64-bit)
+* Windows 8 (64-bit)
+* Windows 7 (64-bit)
+* Microsoft Windows Server 2019, since Development Environment 11.6.5
+* Microsoft Windows Server 2016
+
+For the versions above, OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
+
+#### Required Software
+
+* Microsoft .NET Framework 4.7.2 (or higher).
+
+* To integrate with external systems using Integration Studio to edit the source code of Extension Actions:  
+    Visual Studio 2015, Visual Studio 2017, or Visual Studio 2019 (since Development Environment 11.6.7).
+
+#### Required Network Connection
 
 Minimum speed of 1 Mbps for both downloading and uploading.
 

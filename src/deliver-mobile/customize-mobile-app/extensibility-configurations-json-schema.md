@@ -135,11 +135,11 @@ The following section provides more details about the options you can use in the
 
 | Property                          | Platform | Default | Description |
 | --------------------------------- | -------- | ------- | ----------- |
-| `<iosFeature>UsageDescription`    | iOS        | NA       | Adds preferences that match the pattern of UsageDescription to the Info.plist file. For full list, see [Cocoa Keys](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW1) and filter by UsageDescription. For an example, see information about [iOS usage descriptions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service/MABS_Version_7.1#iOS_Usage_Descriptions) in the release notes. |
-| `AddUploadWidgetPermissions`      | Android, iOS        | true       | Set as false to skip adding permissions required by the upload widget to AndroidManifest.xml and/or Info.plist. For an example, see information about [Upload widget permissions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service/MABS_Version_7.1#Upload_Widget_Permissions) in the release notes. |
-| `EnableRefererHeaderCustomScheme` | iOS        | false       | Set to true to inject the `Referer: URL` in the requests of the native app, where `URL` is the app domain.         |
-| `InitLoggerSyncDelay`             | Android        | 0       | Seconds to delay the logger synchronization after the initialization.         |
-| `RemoveUserCertificates`          | Android        | false       | Set to true to remove user certificates from the trust anchors in network_security_config.xml.         |
+| (iOS_FEATURE)UsageDescription    | iOS        | NA       | Adds preferences that match the pattern of UsageDescription to the Info.plist file. For full list, see [Cocoa Keys](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW1) and filter by UsageDescription. For an example, see information about [iOS usage descriptions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service/MABS_Version_7.1#iOS_Usage_Descriptions) in the release notes. |
+| AddUploadWidgetPermissions      | Android, iOS        | true       | Set as false to skip adding permissions required by the upload widget to AndroidManifest.xml and/or Info.plist. For an example, see information about [Upload widget permissions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service/MABS_Version_7.1#Upload_Widget_Permissions) in the release notes. |
+| EnableRefererHeaderCustomScheme | iOS        | false       | Set to true to inject the `Referer: URL` in the requests of the native app, where `URL` is the app domain.         |
+| InitLoggerSyncDelay             | Android        | 0       | Seconds to delay the logger synchronization after the initialization.         |
+| RemoveUserCertificates          | Android        | false       | Set to true to remove user certificates from the trust anchors in network_security_config.xml.         |
 
 ## Constraints
 

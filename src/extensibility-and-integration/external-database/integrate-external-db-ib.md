@@ -107,9 +107,9 @@ You can connect an integration in the following ways:
 
 1. Click **+ Create a connection**.
 
-1. Click **Create connection in Service Center**. 
+1. Click **Create in Service Center**. 
 
-    ![Create a connection in Service Studio](<images/create-connection-ib.png>)
+    ![Create a connection in Service Studio](<images/create-ss-connection-ib.png>)
 
 1. In Service Center, enter the mandatory details and click **Create**.
 
@@ -123,13 +123,13 @@ You can connect an integration in the following ways:
 
 **Option 3**
 
-1. If your credentials do not allow you to create a connection, you can request your OutSystems Administrator to create it by clicking **Request a new connection**.
+1. If your credentials do not allow you to create a connection, you can request your OutSystems Administrator to create it by clicking **Send request by email**.
 
-    ![Request a new connection](<images/create-connection-ib.png>)
+    ![Request a new connection](<images/send-request-ib.png>)
  
- 1. Enter all connection details to allow an OutSystem Administrator to create the connection and click **Send request**.
+ 1. Enter all connection details to allow an OutSystem Administrator to create the connection and click **Send email**.
 
-    ![Send Request](<images/send-request-new-db-ib.png>)
+    ![Send Request](<images/send-request-email-ib.png>)
 
     When your request is approved it will appear in your connection list in Integration Builder. 
 
@@ -165,13 +165,11 @@ You can connect an integration in the following ways:
 
     * Preserve database NULLs - Always write Integration Builder default values as database NULL. Database NULLs are read as Integration Builder default values.
 
-    For more information about default values, see [Platform and Integration Builder default values](#platform-and-integration-builder-default-values).
-
     ![Review default value behavior option](<images/review-default-values-ib.png>)
 
-1. Click **Publish**.
+    For more information about default values, see [Platform and Integration Builder default values](#platform-and-integration-builder-default-values).
 
-    ![Review integration](<images/review-integration-ib.png>)
+1. Click **Publish**.
 
     The published integration is now available in your environment and ready to be used in your OutSystems applications. 
 

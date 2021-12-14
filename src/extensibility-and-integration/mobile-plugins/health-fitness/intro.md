@@ -41,9 +41,9 @@ This sample app shows you how to do the following with the health and fitness da
 
 The following steps show how to design a use case that includes health and fitness data.
 
-1. Create logic to request permission to access heath and fitness data
+1. Create logic to request permission to access health and fitness data
 1. Create a user interface
-1. Create logic to access and store heath and fitness data
+1. Create logic to access and store health and fitness data
 1. Optionally, create logic to write and store new health and fitness data
 
 <div class="info" markdown="1">

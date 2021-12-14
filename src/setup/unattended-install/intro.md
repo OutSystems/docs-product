@@ -306,13 +306,13 @@ Copy the following files from the **controller** machine to the **front-end** ma
 For SQL Server and Azure SQL Database:
 
 ```
-<platform_path>\ConfigurationTool.com /SetupInstall <platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>
+<platform_path>\ConfigurationTool.com /UpgradeInstall
 ```
 
 For Oracle:
 
 ```
-<platform_path>\ConfigurationTool.com /SetupInstall
+<platform_path>\ConfigurationTool.com /UpgradeInstall
 ```
 
 ## Exit Codes and Logging

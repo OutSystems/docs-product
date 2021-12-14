@@ -440,6 +440,7 @@
             - href: develop/security/user-roles/create-a-custom-role.md
             - href: develop/security/user-roles/validate-permissions.md
         - href: develop/security/restrict-access-to-an-internal-network.md
+        - href: develop/security/secure-http-requests.md
         - href: develop/security/secure-the-data-of-your-mobile-apps.md
         
     # Troubleshooting Applications
@@ -1502,7 +1503,6 @@
             - href: ref/apis/charts/chart-json.md
         - href: ref/apis/auto/dbcleaner-api.final.md
         - href: ref/apis/emails-api.md
-        - href: ref/apis/auto/enhancedwebreferences-api.final.md
         - href: ref/apis/auto/epa-taskbox-api.final.md
         - href: ref/apis/auto/httprequesthandler-api.final.md
         - href: ref/apis/auto/includejavascript-api.final.md

@@ -1,6 +1,6 @@
 ---
-summary: Check the hardware and software requirements to install OutSystems on-premises.
-tags: requirements; support-Application_Troubleshooting; support-installation; support-Installation_Configuration; support-Installation_Configuration-overview
+summary: Check the hardware and software requirements to install OutSystems.
+tags: requirements; support-Application_Troubleshooting; support-installation; support-Installation_Configuration; support-Installation_Configuration-overview; article-page
 ---
 
 # OutSystems system requirements
@@ -170,7 +170,7 @@ The use of double-byte characters with DB2 databases is not supported.
 
 To develop your applications using OutSystems, developers need to install Service Studio and Integration Studio development tools on their desktops.
 
-Installation requirements for these tools are as follows.
+Before setting up Service Studio make sure that your computer meets the following requirements:
 
 ### Hardware (minimum requirements)
 
@@ -178,31 +178,36 @@ Installation requirements for these tools are as follows.
 * 2 GB of RAM (4 GB recommended)
 * 1 GB of free disk space
 
+<div class="info" markdown="1">
+
+In Apple devices using Apple Silicon M1 processor, Service Studio runs under the Rosetta 2 emulation.
+
+</div>
+
 Limitations:
 
 * The touch feature of touch screen devices is not supported, however, you can use touch screen devices with keyboard and mouse.
 
 ### Supported Operating Systems
 
+**macOS:**
+
+* macOS Catalina
+* macOS Big Sur
+
+**Windows:**
+
 * Windows 10 (64-bit)
 * Windows 8 (64-bit)
-* Windows 7 (64-bit)
 * Microsoft Windows Server 2019, since Development Environment 11.6.5
 * Microsoft Windows Server 2016
 
-For the versions above, OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
 
-<div class="info" markdown="1">
+For the versions above, OutSystems only supports Windows editions that are supported by Microsoft and Apple.
 
-The 32-bit versions of Windows 10, Windows 8, and Windows 7 are supported up to Development Environment 11.6.7.
-
-Microsoft Windows Server 2008 and Microsoft Windows Server 2012 are supported up to Development Environment 11.6.5.
-
-</div>
 
 ### Required Software
 
-* Microsoft .NET Framework 4.7.2 (or higher).
 
 * To integrate with external systems using Integration Studio to edit the source code of Extension Actions:  
     Visual Studio 2015, Visual Studio 2017, or Visual Studio 2019 (since Development Environment 11.6.7).

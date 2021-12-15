@@ -90,11 +90,11 @@ The app includes the following parameter information in the generated **Exit URL
 
 | Query Parameter | Description                                                                                 |
 | --------------- | ------------------------------------------------------------------------------------------- |
-| %REASON%        | The reason for the shutdown, in decimal. See other tables for explanations of these values. |
-| %MANUFACTURER%  | The manufacturer of the device                                                              |
-| %MODEL%         | The model name of the device                                                                |
-| %ANDROID%       | The Android API level of the device                                                         |
-| %IOS%           | The iOS API level of the device                                                             |
+| %reason%        | The reason for the shutdown, in decimal. See other tables for explanations of these values. |
+| %manufacturer%  | The manufacturer of the device                                                              |
+| %model%         | The model name of the device                                                                |
+| %android%       | The Android API level of the device                                                         |
+| %ios%           | The iOS API level of the device                                                             |
 
 ### Shutdown reasons for iOS
 

@@ -116,7 +116,7 @@ You can add custom Screen URLs in Service Studio. Go to the properties of the Sc
 
 ![Screen URLs settings and properties](images/page-redirects-properties-ss.png?width=350)
 
-If an app passes an empty string as a value for a required parameter, users see an error message. See [Empty string in a required parameter causes an error](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/SEO/Troubleshooting#empty-string-in-a-required-parameter-causes-an-error) for more information.
+If an app passes an empty string as a value for a required parameter, users see an error message. See [Empty string in a required parameter causes an error](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Troubleshooting_and_known_issues_with_SEO-friendly_URLs_for_Reactive_Web_Apps#empty-string-in-a-required-parameter-causes-an-error) for more information.
 
 Here are more details about the properties.
 

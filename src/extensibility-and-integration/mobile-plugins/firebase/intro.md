@@ -12,6 +12,12 @@ Firebase is a Google mobile development platform. It speeds up development of ma
 * [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase)
 * [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
 
+<div class="info" markdown="1">
+
+To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating to the supported Firebase-based mobile plugins](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Migrating_to_the_supported_Firebase-based_mobile_plugins). 
+
+</div>
+
 ## Prerequisites
 
 To use the Firebase plugins you meet the following requirements:

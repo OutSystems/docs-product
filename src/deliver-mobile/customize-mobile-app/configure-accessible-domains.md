@@ -1,5 +1,5 @@
 ---
-summary: Define which domains your mobile app can access.
+summary: Define which domains your mobile app can access. Please note we recently replaced the term whitelist with allowlist across all OutSystems documentation.
 tags: runtime-mobile
 ---
 

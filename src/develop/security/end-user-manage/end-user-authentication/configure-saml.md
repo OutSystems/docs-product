@@ -97,6 +97,14 @@ To enable all the required settings do the following:
 
 1. Enable **Single Sign-On Between App Types**.
 
+1. In **Session Login Settings**, ensure the **Max. Idle Time** has the same value as the **Session Timeout** for Traditional Web Apps (see [here](../../../data/session.md#session-timeout) how to do configure the session timeout for Traditional Web Apps).
+
+    <div class="warning" markdown="1">
+
+    Having different session timeout values for Traditional Web and Reactive Web applications may lead to issues during authentication flows. This is a known issue that will be fixed in a future release. As a workaround, execute Step 7 to make sure both values match, thus preventing authentication issues.
+
+    </div>
+
 1. Click **Save and Apply Settings to the Factory** to apply all the new runtime settings.
 
 For more information on application authentication check [Configure App Authentication](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md).

@@ -33,7 +33,7 @@ Timer Session
 When the end user makes the first request to the server, a new session is created. When this happens the **OnSessionStart** event is fired, and the action that handles it is executed.
 
 
-## Session Timeout
+## Session Timeout { #session-timeout }
 
 The session timeout specifies the period of time that a session can remain idle, without any end user interaction, before the Platform Server ends the session automatically.
 

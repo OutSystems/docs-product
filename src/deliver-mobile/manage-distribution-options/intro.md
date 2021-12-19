@@ -178,7 +178,7 @@ If you're a Service Studio developer or LifeTime administrator, keep in mind the
 
     <div class="warning" markdown="1">
 
-    It's of a paramount importance that you edit the logic so the app works correctly for all users that decide to update the app. OutSystems is preparing more documentation to guide you in creating apps for resilient updates.
+    It's of a paramount importance that you edit the logic so the app works correctly for all users that decide to update the app.
 
     </div>
 

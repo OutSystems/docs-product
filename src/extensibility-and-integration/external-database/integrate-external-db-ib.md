@@ -23,8 +23,6 @@ For more information about the supported databases and the systems that are cert
 
 * External database extensions created in Integration Builder cannot be edited in Integration Studio.
 
-* Currently, integrations with external databases created with Integration Builder can't be deployed to another environment using LifeTime. As a workaround, use Service Center in the development environment to create a solution that includes the integration. Then, connect to the service center of the target environment and publish the solution in that environment.
-
 * An external database integration created in Integration Builder only supports one database, catalog, or schema at a time. If you require various tables from different databases, catalogs, or schemas, you must create several integrations.
 
 * It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description. 

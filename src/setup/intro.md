@@ -27,7 +27,7 @@ OutSystems has the following components:
 
 * **Service Studio:** The visual development tool to create, change, and deploy your applications. This tool is installed in the developers desktop.
 
-* **Integration Studio:** The development tool to create connectors to integrate OutSystems applications with other enterprise systems. This tool is installed in the developers desktop.
+* **Integration Studio:** The development tool to create connectors to integrate OutSystems applications with other enterprise systems. This tool is installed in the developers desktop. See this [online course](https://www.outsystems.com/forums/discussion/45373/integration-studio-external-databases-and-c-code-online-courses/) for information about using **Integration Studio**.
 
 ![](images/intro-1.png)
 

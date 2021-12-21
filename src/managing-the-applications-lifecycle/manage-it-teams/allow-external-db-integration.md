@@ -14,7 +14,7 @@ To do this:
 
     ![create new role in LifeTime](images/external-db-integration-new-role-lt.png?width=500)
 
-1. [Set the developer's default role](create-an-it-role.md#set-the-user-default-role) to the new role. Make sure you edit the user and set the user's **Default Role**. Assigning the new role to the user in a team or for a specific application doesn't grant the necessary permissions.  
+1. [Set the developer's default role](create-an-it-role.md#set-the-user-default-role) to the new role. Make sure you edit the user and set the user's **Default Role**. Setting the **Change and Deploy** role to the user at the Application level can also be applied. Assigning the new role to the user in a team doesn't grant the necessary permissions.  
 
     ![set user default role](images/external-db-integration-set-default-role-lt.png?width=500)
 
@@ -24,7 +24,7 @@ To do this:
 
     ![grant publish security level](images/external-db-integration-connection-security-sc.png?width=600)
 
-Granting the security level **Publish** to the **Integrator** role on the database connection, allows the developers assigned with this role as **Default Role** to publish extensions, through Integration Studio, that use this database connection. This security level doesn't allow the developers to change the settings of the database connection.
+Granting the security level **Publish** to the **Integrator** role on the database connection or setting the **Change and Deploy** role to the developer at the Application level and granting the security level **Publish** on the database connection, allows the developers assigned with these settings to publish extensions, through Integration Studio, that use this database connection. This security level doesn't allow the developers to change the settings of the database connection.
 
 Other developers will then be able to use those extensions to access the data on the external database.
 

@@ -153,6 +153,11 @@
             - href: develop/ui/reuse/block-communicate.md
             - href: develop/ui/reuse/create-a-custom-application-template.md
 
+        # Accelerators
+        - href: develop/ui/accelerators/intro.md
+        - topics:
+            - href: develop/ui/accelerators/accelerator-google.md
+            
         # Patterns
         - href: develop/ui/patterns/intro.md
         - topics:
@@ -328,7 +333,9 @@
                     - href: develop/ui/patterns/web/utilities/iframe.md
                     - href: develop/ui/patterns/web/utilities/separator.md
                     - href: develop/ui/patterns/web/utilities/stackedicon.md
-
+        # Accelerators
+        - href: develop/ui/accelerators/accelerator-google.md
+        
         # Navigation
         - href: develop/ui/navigation/intro.md
         - topics:

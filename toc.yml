@@ -333,8 +333,6 @@
                     - href: develop/ui/patterns/web/utilities/iframe.md
                     - href: develop/ui/patterns/web/utilities/separator.md
                     - href: develop/ui/patterns/web/utilities/stackedicon.md
-        # Accelerators
-        - href: develop/ui/accelerators/accelerator-google.md
         
         # Navigation
         - href: develop/ui/navigation/intro.md

@@ -25,7 +25,7 @@ In Service Studio, open a Screen for editing and follow these steps:
 
 ![How to use an accelerator](images/acc-drag-drop-ss.gif)
 
-Once you've published your app, you can customize it by, for example, [replacing sample data with your own data](#replace-sample-data-with-real-data) and [adapting the UI and logic](#adapt-the-UI-and-logic) to match the user experience you want to achieve. You can also use the [Map](../patterns/mobile/interaction/map.md) and [Login with Google](accelerator-google.md) accelerators in your app.
+Once you've published your app, you can customize it by, for example, [replacing sample data with your own data](#replace-sample-data-with-real-data) and [adapting the UI and logic](#adapt-the-UI-and-logic) to match the user experience you want to achieve. You can also use the [Map](../patterns/mobile/interaction/map/map.md) and [Login with Google](accelerator-google.md) accelerators in your app.
 
 ### Replace sample data with real data
 

@@ -20,7 +20,7 @@ Before enabling or disabling auto-classification in Architecture Dashboard, make
 
 To enable or disable auto-classification, follow these steps:
 
-1. In Architecture Dashboard, click on your username and select **Maintenance**.
+1. Click the **Maintenance** tab.
 
     ![Select Maintenance](images/ad-autoclass-1.png)
 

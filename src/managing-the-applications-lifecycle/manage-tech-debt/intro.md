@@ -1,9 +1,8 @@
 ---
-tags: 
-summary: 
+tags: article-page
+summary: Learn how to manage the technical debt of your applications at every stage of the development lifecycle.
 en_title: Manage technical debt
 ---
-
 
 # Manage technical debt with Architecture Dashboard
 

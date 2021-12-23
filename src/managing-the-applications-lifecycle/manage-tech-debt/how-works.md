@@ -88,7 +88,7 @@ table {min-width: 650px;}
 <tr>
 <th rowspan="2">LifeTime permission</th>
 <th rowspan="2">LifeTime role assignment</th>
-<th colspan="5">Architecture Dashboard permission</th>
+<th colspan="6">Architecture Dashboard permission</th>
 </tr>
 <tr>
 <th>View teams</th>
@@ -96,12 +96,14 @@ table {min-width: 650px;}
 <th>Open findings report</th>
 <th>Export findings report</th>
 <th>Resolve findings</th>
+<th>Overview dashboard</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th rowspan="3">No Access /<br/>Access</th>
 <th>Assigned as default role</th>
+<td>No</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -115,9 +117,11 @@ table {min-width: 650px;}
 <td>No</td>
 <td>No</td>
 <td>No</td>
+<td>No</td>
 </tr>
 <tr>
 <th>Assigned for an app</th>
+<td>No</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -132,6 +136,7 @@ table {min-width: 650px;}
 <td>No</td>
 <td>No</td>
 <td>No</td>
+<td>No</td>
 </tr>
 <tr>
 <th>Assigned for a team</th>
@@ -140,11 +145,13 @@ table {min-width: 650px;}
 <td>No</td>
 <td>No</td>
 <td>No</td>
+<td>No</td>
 </tr>
 <tr>
 <th>Assigned for an app</th>
 <td>No</td>
 <td>Assigned app</td>
+<td>No</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -157,6 +164,7 @@ table {min-width: 650px;}
 <td>All apps<sup>A</sup></td>
 <td>No</td>
 <td>No</td>
+<td>All apps<sup>A</sup></td>
 </tr>
 <tr>
 <th>Assigned for a team</th>
@@ -165,6 +173,7 @@ table {min-width: 650px;}
 <td>Team's apps<sup>B</sup></td>
 <td>No</td>
 <td>No</td>
+<td>Team's apps<sup>B</sup></td>
 </tr>
 <tr>
 <th>Assigned for an app</th>
@@ -173,6 +182,7 @@ table {min-width: 650px;}
 <td>Assigned app</td>
 <td>No</td>
 <td>No</td>
+<td>Assigned app</td>
 </tr>
 <tr>
 <th rowspan="3">Change and Deploy Applications /<br/>Full Control</th>
@@ -182,10 +192,12 @@ table {min-width: 650px;}
 <td>All apps<sup>A</sup></td>
 <td>All apps<sup>A</sup></td>
 <td>All apps<sup>A</sup></td>
+<td>All apps<sup>A</sup></td>
 </tr>
 <tr>
 <th>Assigned for a team</th>
 <td>Assigned team</td>
+<td>Team's apps<sup>B</sup></td>
 <td>Team's apps<sup>B</sup></td>
 <td>Team's apps<sup>B</sup></td>
 <td>Team's apps<sup>B</sup></td>
@@ -198,11 +210,14 @@ table {min-width: 650px;}
 <td>Assigned app</td>
 <td>Assigned app</td>
 <td>Assigned app</td>
+<td>Assigned app</td>
 </tr>
 </tbody>
 </table>
-A- Specific apps may not appear if a lower permission is attributed by a role assigned specifically for those apps or assigned for teams assigned to those apps. ; B- Specific apps may not appear if a lower permission is attributed by a role assigned specifically for those apps.
 
+A- Specific apps may not appear if a lower permission is granted by a role assigned specifically for those apps or assigned for teams assigned to those apps.
+
+B- Specific apps may not appear if a lower permission is granted by a role assigned specifically for those apps.
 
 ### Maintenance and operations permissions { #maint-op-permissions }
 
@@ -289,4 +304,6 @@ A- Specific apps may not appear if a lower permission is attributed by a role as
 </tr>
 </tbody>
 </table>
-A- Specific modules may not appear if a lower permission is attributed by a role assigned specifically for those modules' apps or by a role assigned for teams assigned to those modules' apps. ; B- Specific modules may not appear if a lower permission is attributed by a role assigned specifically for those modules' apps.
+A- Specific modules may not appear if a lower permission is granted by a role assigned specifically for those modules' apps or by a role assigned for teams assigned to those modules' apps.
+
+B- Specific modules may not appear if a lower permission is granted by a role assigned specifically for those modules' apps.

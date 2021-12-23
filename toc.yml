@@ -832,6 +832,7 @@
             - href: managing-the-applications-lifecycle/manage-tech-debt/how-use-architect.md
             - href: managing-the-applications-lifecycle/manage-tech-debt/how-use-team-lead.md
             - href: managing-the-applications-lifecycle/manage-tech-debt/how-use-developer.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/overview-dashboard.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/ref-code-patterns.md
         - topics:
             - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/best-pratices.md

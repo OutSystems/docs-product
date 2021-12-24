@@ -622,6 +622,31 @@
             - href: extensibility-and-integration/rest/expose-rest-apis/patch-method.md
         - href: extensibility-and-integration/rest/troubleshoot-a-rest-api.md
 
+    #SOAP
+    - href: extensibility-and-integration/soap/intro.md
+    - topics:
+        - href: extensibility-and-integration/soap/consume/intro.md
+        - topics:
+            - href: extensibility-and-integration/soap/consume/consume-web-service.md
+            - href: extensibility-and-integration/soap/consume/configure-auth.md
+            - href: extensibility-and-integration/soap/consume/refresh-web-service.md
+            - href: extensibility-and-integration/soap/consume/configure-runtime.md
+            - href: extensibility-and-integration/soap/consume/advanced-extensibility.md
+            - topics:
+                - href: extensibility-and-integration/soap/consume/extensibility-use-cases/endpoint.md
+                - href: extensibility-and-integration/soap/consume/extensibility-use-cases/ws-addressing.md
+                - href: extensibility-and-integration/soap/consume/extensibility-use-cases/http-header.md
+                - href: extensibility-and-integration/soap/consume/extensibility-use-cases/soap-header.md
+                - href: extensibility-and-integration/soap/consume/extensibility-use-cases/certificate.md
+                - href: extensibility-and-integration/soap/consume/extensibility-use-cases/different-encoding.md
+                - href: extensibility-and-integration/soap/consume/extensibility-use-cases/mtom.md
+            - href: extensibility-and-integration/soap/consume/unsupported-use-cases.md
+        - href: extensibility-and-integration/soap/expose/intro.md
+        - topics:
+            - href: extensibility-and-integration/soap/expose/expose-soap-web-service.md
+            - href: extensibility-and-integration/soap/expose/document-exposed-soap-web-service.md
+        - href: extensibility-and-integration/soap/troubleshoot-soap-web-services.md
+
     # Log levels for consumed integrations
     - href: extensibility-and-integration/log-levels-set.md
     - topics:
@@ -906,7 +931,40 @@
                     - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackStructureAttribute.final.md
                     - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlow.final.md
                     - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlowInput.final.md
+            # SOAP Web Services
+            - href: ref/extensibility-and-integration/soap/intro.md
+            - topics:
+                # Consumed SOAP Web Service
+                - href: ref/extensibility-and-integration/soap/consumed-soap/intro.md
+                - topics:
+                    - href: ref/extensibility-and-integration/soap/consumed-soap/mapping-xml-to-outsystems.md
+                    - href: ref/extensibility-and-integration/soap/consumed-soap/consumed-soap-constraints.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPClient.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPAction.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPActionInput.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPActionOutput.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPDynamicUsernameInput.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPDynamicPasswordInput.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPCallbackActionFlow.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPStaticEntity.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPStaticEntityAttribute.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPStructure.final.md
+                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPStructureAttribute.final.md
 
+                    - href: ref/extensibility-and-integration/soap/consumed-soap/legacy/intro.md
+                    - topics:
+                        - href: ref/lang/auto/Class.SOAP Web Service (Deprecated).final.md
+                        - href: ref/lang/auto/Class.Web Service Method (Deprecated SOAP).final.md
+                        - href: ref/lang/auto/Class.Input Parameter (Deprecated SOAP).final.md
+                        - href: ref/lang/auto/Class.Output Parameter (Deprecated SOAP).final.md
+                        - href: ref/lang/auto/Class.Structure (Deprecated SOAP).final.md
+                        - href: ref/lang/auto/Class.Structure Attribute (Deprecated SOAP).final.md
+                # Exposed SOAP Web Service
+                - href: ref/extensibility-and-integration/soap/exposed-soap/intro.md
+                - topics:
+                    - href: ref/extensibility-and-integration/soap/exposed-soap/mapping-outsystems-to-xml.md
+                    - href: ref/lang/auto/Class.SOAP Web Service.final.md
+                    - href: ref/lang/auto/Class.Web Service Method.final.md  
         # Logic
         - href: ref/logic/intro.md
         - topics:
@@ -1329,6 +1387,7 @@
             - href: ref/errors-and-warnings/errors/invalid-request-format-error.md
             - href: ref/errors-and-warnings/errors/invalid-response-format-error.md
             - href: ref/errors-and-warnings/errors/invalid-screen-error.md
+            - href: ref/errors-and-warnings/errors/invalid-soap-static-entity-usage-error.md
             - href: ref/errors-and-warnings/errors/invalid-sql-error.md
             - href: ref/errors-and-warnings/errors/invalid-structure-error.md
             - href: ref/errors-and-warnings/errors/invalid-text-value-error.md
@@ -1549,6 +1608,7 @@
             - href: ref/apis/runtimepublic-db/insert-data-in-the-application-database.md
             - href: ref/apis/runtimepublic-db/query-data-from-an-external-database.md
         - href: ref/apis/auto/sanitization-api.final.md
+        - href: ref/apis/soap-extensibility-api.md
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md

@@ -115,16 +115,18 @@ To check that writing the health or fitness data on the device is working, verif
 
 ### Create logic to define a background job
 
-To define a background job you can use the SetBackgroundJob action. Set the parameters for the type of health or fitness variable you want to keep evaluating, define the notification trigger condition and its frequency, and define the notification content. 
+To define a background job you can use the **SetBackgroundJob** action. Set the parameters for the type of health or fitness variable you want to keep evaluating, define the notification trigger condition and its frequency, and define the notification content. 
 
-See below the parametrization of a background job for two different use cases:
+Parametrization for two different use cases of a background job is shown below:
 
 #### Setting up a daily steps goal
 In the case of a daily steps goal evaluator, you will probably want to issue a single notification per day if the daily steps goal is met. To achieve this you can use the following parametrization:
 ![Screenshot 2021-12-16 at 10 00 23](https://user-images.githubusercontent.com/81437871/146352239-727cc5f4-d8c1-4b35-bb8a-b232c37ff9a2.png)
 
 #### Setting up a heart rate monitoring alarm
-In the case of a heart rate monitoring alarm, you will probably want to issue a notification every time your heart rate goes above or drops below a certain value. However, it can be too intrusive to send out a notification after each evaluation of this variable (e.g., consider you are evaluating the heart rate every 10 seconds). Therefore you want to strike a balance between your job frequency (i.e., the frequency in which you are evaluating your variable) and your notification frequency. Consider the following parametrization for a background job that will notify you if your heart rate is above 190 bpm, with a maximum notification frequency of one notification per minute:
+In the case of a heart rate monitoring alarm, try to strike a balance between job frequency and notification frequency. For example, you may want to check your heart rate every ten seconds. However, you would probably find it intrusive to receive notifications every time your heart rate goes above, or drops below, a certain value.
+
+Consider the following parametrization for a background job that will notify you if your heart rate is above 190 bpm, with a maximum notification frequency of one notification per minute:
 ![Screenshot 2021-12-16 at 10 02 46](https://user-images.githubusercontent.com/81437871/146352389-950a22d7-ccca-40ae-9ead-7cda96434d56.png)
 
 After you have created your background job you can update it or delete it using the **UpdateBackgroundJob** action or the **DeleteBackgroundJob** action, respectively.

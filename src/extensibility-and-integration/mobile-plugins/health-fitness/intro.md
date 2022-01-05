@@ -1,16 +1,4 @@
----
-summary: The Health and Fitness plugin lets you use data from Apple HealthKit and Google Fit and create customized solutions for your users.
-en_title: Health and Fitness Plugin 
-tags: runtime-mobile;
----
-
 # Health & Fitness Plugin
-
-<div class="info" markdown="1">
-
-OutSystems is preparing a Health & Fitness plugin for a general release. The team invites all developers and UX people to submit their feedback. How can the team make the plugin better? For what use cases you need documentation most? Let us know [at this forum topic](https://www.outsystems.com/forums/discussion/73732/health-fitness-plugin-under-development-feedback-wanted/)! 
-
-</div>
 
 The [Health & Fitness plugin](https://www.outsystems.com/forge/component-overview/11715/) enables you to access and use health and fitness data in a mobile app. The plugin provides access to the Apple HealthKit and Google Fit APIs by letting you use data relevant to your health and fitness use cases.
 
@@ -20,13 +8,13 @@ As a good practice, verify the plugin is available in the app and prevent the ap
 
 <div class="info" markdown="1">
 
-To learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app, see [Adding plugins](../intro.md#adding-plugins).
+To learn how to install and reference a plugin in your **OutSystems** apps, and how to install a sample app, see [Adding plugins](../intro.md#adding-plugins).
 
 </div>
 
 ## Sample app
 
-OutSystems provides a sample app that contains logic for common use cases. Install the [Health & Fitness sample app](https://www.outsystems.com/forge/component-overview/11715/) from Forge and then open it in Service Studio.
+**OutSystems** provides a sample app that contains logic for common use cases. Install the [Health & Fitness sample app](https://www.outsystems.com/forge/component-overview/11715/) from Forge and then open it in Service Studio.
 
 This sample app shows you how to do the following with the health and fitness data:
 
@@ -41,10 +29,11 @@ This sample app shows you how to do the following with the health and fitness da
 
 The following steps show how to design a use case that includes health and fitness data.
 
-1. Create logic to request permission to access health and fitness data
-1. Create a user interface
-1. Create logic to access and store health and fitness data
-1. Optionally, create logic to write and store new health and fitness data
+1. Create logic to request permission to access health and fitness data.
+1. Create a user interface.
+1. Create logic to access and store health and fitness data.
+1. Optionally, create logic to write and store new health and fitness data.
+1. Create logic to define a background job.
 
 <div class="info" markdown="1">
 
@@ -123,7 +112,7 @@ Parametrization for two different use cases of a background job is shown below:
 
 In the case of a daily steps goal evaluator, you will probably want to issue a single notification per day if the daily steps goal is met. To achieve this you can use the following parametrization:
 
-![daily steps goal](images/daily-steps-goal-ss.png)
+![Setting up a daily steps goal](images/set-background-job-ss.png)
 
 #### Setting up a heart rate monitoring alarm
 
@@ -131,7 +120,8 @@ In the case of a heart rate monitoring alarm, try to strike a balance between jo
 
 Consider the following parametrization for a background job that will notify you if your heart rate is above 190 bpm, with a maximum notification frequency of one notification per minute:
 
-![heart rate monitoring alarm](images/heart-rate-alarm-ss.png)
+![Setting up a heart rate monitoring alarm](images/set-background-job2-ss.png)
+
 
 After you have created your background job you can update it or delete it using the **UpdateBackgroundJob** action or the **DeleteBackgroundJob** action, respectively.
 

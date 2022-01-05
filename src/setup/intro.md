@@ -121,6 +121,12 @@ Check [Automatic Prerequisites Installation and Configuration Tuning](#prerequis
 
 Download the latest [LifeTime Management Console binaries](https://www.outsystems.com/goto/lifetime-installer) from the downloads area.
 
+<div class="info" markdown="1">
+
+To perform an offline installation of the LifeTime Management Console you might need to download a few additional files. Check [Offline Installation](#offline-installation) for more information.
+
+</div>
+
 ### 4. Install the infrastructure management console
 
 Install LifeTime management console in a **dedicated** environment. **Installing LifeTime in an existing environment isn't a supported scenario**.
@@ -145,13 +151,13 @@ After installing the development tools, [configure them for developing your own 
 
 ## Automatic Prerequisites Installation and Configuration Tuning { #prerequisites }
 
-The OutSystems Platform Server installation package can automatically install most of the prerequisites (as described in the Installation Checklist) when you select the **Install Prerequisites** option in the installer. You may need to reboot your system to finish the installation of some prerequisites.
+The OutSystems Platform Server and LifeTime installation packages can automatically install most of the prerequisites (as described in the Installation Checklist) when you select the **Install Prerequisites** option in the installer. You may need to reboot your system to finish the installation of some prerequisites.
 
-The Platform Server installation package will automatically download the required binaries for installing the prerequisites from the official Microsoft sources. However, you can also perform an [offline installation](<#offline-installation>).
+The installation package will automatically download the required binaries for installing the prerequisites from the official Microsoft sources. However, you can also perform an [offline installation](<#offline-installation>).
 
-Before starting the installation of Platform Server, the installation package will validate if all the prerequisites are available on your system. The installation **will not proceed** if any prerequisites are missing.
+Before starting the installation of the component, the installation package will validate if all the prerequisites are available on your system. The installation **will not proceed** if any prerequisites are missing.
 
-If you select the 'Perform Tuning' option in the installer, and after checking that the prerequisites are correctly installed, the OutSystems Platform Server installation package will also check if it can automatically apply most of the mandatory steps in the **Tuning and Security checklist** section of the Installation Checklist.  
+If you select the **Perform Tuning** option in the installer, and after checking that the prerequisites are correctly installed, the installation package will also check if it can automatically apply most of the mandatory steps in the **Tuning and Security checklist** section of the Installation Checklist.  
 The process will not make any modifications to user-defined configurations; it will only change any default values to the recommended values, as described in the referenced section in the Installation Checklist.
 
 The configuration tuning option is also available as a command-line switch when running the installer in [unattended mode](unattended-install/intro.md): `/DoTuning=<factory_size>`.  
@@ -160,11 +166,15 @@ The available options for `<factory_size>` are `small`, `medium` and `large`. An
 
 ## Offline Installation { #offline-installation }
 
-To perform a fully offline installation you should download some binaries beforehand so that the Platform Server installation package can [automatically install most of the prerequisites](#prerequisites).
+To perform a fully offline installation you should download some binaries beforehand so that the installation package can [automatically install most of the prerequisites](#prerequisites).
 
 Do the following:
 
-1. Create a folder named `bin` at the same folder level as the Platform Server installation package.
+1. Create a folder named `bin` to place the required Microsoft installers:
+
+    * For the **Platform Server** offline installation, create the `bin` folder at the same folder level as the Platform Server installation package.
+
+    * For the **LifeTime Management Console** offline installation, create the `bin` folder inside the Platfor Server installation path. The default path is `C:\Program Files\OutSystems\Platform Server`, but you can use a different one.
 
 1. Download and place the required Microsoft installers in the `bin` folder.
 
@@ -181,7 +191,7 @@ Do the following:
     1\. [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft.  
     2\. Rename the Build Tools Installer to `BuildTools_Full.exe`.
 
-1. Run the Platform Server installer package as usual. The binaries you downloaded from Microsoft will be detected by the installation package.
+1. Run the installation package as usual. The binaries you downloaded from Microsoft will be detected by the installation package.
 
 ## More Information
 

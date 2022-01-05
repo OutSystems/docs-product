@@ -115,13 +115,6 @@ In the case of a daily steps goal evaluator, you will probably want to issue a s
 ![Setting up a daily steps goal](images/set-background-job-ss.png)
 
 #### Setting up a heart rate monitoring alarm
-=======
-
-In the case of a daily steps goal evaluator, you will probably want to issue a single notification per day if the daily steps goal is met. To achieve this you can use the following parametrization:
-
-![daily steps goal](images/daily-steps-goal-ss.png)
-
-#### Setting up a heart rate monitoring alarm
 
 In the case of a heart rate monitoring alarm, try to strike a balance between job frequency and notification frequency. For example, you may want to check your heart rate every ten seconds. However, you would probably find it intrusive to receive notifications every time your heart rate goes above, or drops below, a certain value.
 

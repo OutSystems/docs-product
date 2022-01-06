@@ -5,7 +5,7 @@ en_title: Avoid inline JavaScript or inline style
 ---
 
 
-# Avoid inline JavaScript or inline style
+# Avoid inline JavaScript or inline CSS style
 
 JavaScript code or CSS styles can be defined inline inside Screens and WebBlocks by using unescaped Expressions elements or via the Extended Properties window of Service Studio.
 
@@ -13,7 +13,7 @@ During development cycles developers frequently resort to inline style for a spe
 
 ## Impact
 
-While the usage of inline styles or code can accelerate development, given how easy they can be defined, it can lead to significant impacts in the long run.
+While the usage of inline styles or code can accelerate development, given how easy they can be defined, it can lead to significant impacts in the long run. Having code scattered throughout the application instead of centralized in one place, compromises maintainability and reliability.
 
 The build-up of the inline CSS styles often translates into code duplication, making the project harder to maintain when the same style needs to be changed in several places. The same applies to the inline JavaScript snippets, as they cannot be reused across Screens or Web Blocks.
 

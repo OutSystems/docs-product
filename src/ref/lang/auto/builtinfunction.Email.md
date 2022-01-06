@@ -46,7 +46,7 @@ The display name of the email address which usually is the name of the email add
 
 email
 :    Type: Text. Mandatory.  
-The email address itself, for example, john.smith@worldmail.com.
+The email address itself, for example, john.smith@example.com.
 
 ### Output
 
@@ -55,8 +55,8 @@ Type: Text
 ### Examples
 
 ```
-EmailAddressCreate("John Smith", "john.smith​@​worldmail.com") = "John Smith" <john.smith​@​worlmail.com>
-EmailAddressCreate("Mary Jones", "mary.jones​@​company.com") = "Mary Jones" <mary.jones​@​company.com>
+EmailAddressCreate("John Smith", "john.smith​@​example.com") = "John Smith" <john.smith​@example.com>
+EmailAddressCreate("Mary Jones", "mary.jones​@example.com") = "Mary Jones" <mary.jones​@example.com>
 ```
 
 ## EmailAddressesConcatenate { #EmailAddressesConcatenate }
@@ -87,7 +87,7 @@ Type: Text
 ### Examples
 
 ```
-EmailAddressesConcatenate(EmailAddressCreate("John Smith", "john.smith​@​worldmail.com"), EmailAddressCreate("Mary Adams", "mary.adams​@​adamsinc.com")) = "John Smith" <john.smith​@​worldmail.com>, "Mary Adams" <mary.adams​@​adamsinc.com>
+EmailAddressesConcatenate(EmailAddressCreate("John Smith", "john.smith​@example.com"), EmailAddressCreate("Mary Adams", "mary.adams​@example.com")) = "John Smith" <john.smith​@example.com>, "Mary Adams" <mary.adams​@example.com>
 ```
 
 ## EmailAddressValidate { #EmailAddressValidate }
@@ -115,7 +115,7 @@ Type: Boolean
 ### Examples
 
 ```
-EmailAddressValidate(EmailAddressCreate("John Smith", "john.smith​@​worldmail.com")) = True
+EmailAddressValidate(EmailAddressCreate("John Smith", "john.smith​@example.com")) = True
 EmailAddressValidate("John Smith <john.smith​@​>") = False
 ```
 

@@ -1,3 +1,9 @@
+---
+summary: The Health and Fitness plugin lets you use data from Apple HealthKit and Google Fit and create customized solutions for your users.
+en_title: Health and Fitness Plugin 
+tags: runtime-mobile;
+---
+
 # Health & Fitness Plugin
 
 The [Health & Fitness plugin](https://www.outsystems.com/forge/component-overview/11715/) enables you to access and use health and fitness data in a mobile app. The plugin provides access to the Apple HealthKit and Google Fit APIs by letting you use data relevant to your health and fitness use cases.

@@ -1,9 +1,5 @@
 ---
 summary: This is a quick intro to get you started with OutSystems development.  
-GUID: 93258da1-825d-46c5-be4f-3dc910f3e264
-Version: 11
-Locale: en-US
-HelpsIds: 12345
 tags: support-application_development; support-Mobile_Apps; support-webapps
 ---
 

@@ -7,7 +7,7 @@ summary: Tooltip dynamically displays simple informative content on end user int
 
 You can use the Tooltip UI Pattern to dynamically display informative text when a user hovers over, clicks, or taps an on-screen element.
 
-![](<images/tooltip-1.png>)
+![Example tooltip](<images/tooltip-example.png>)
 
 **How to use the Tooltip UI Pattern**
 

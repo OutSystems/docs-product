@@ -7,7 +7,7 @@ summary: Sidebar shows additional content on the side of the screen.
 
 You can use the Sidebar UI Pattern to display additional information in the margin of the main content. The additional information supports the user's understanding of the main content.
 
-![](<images/sidebar-4.png>)
+![](<images/sidebar-example.png>)
 
 <div class="info" markdown="1">
 

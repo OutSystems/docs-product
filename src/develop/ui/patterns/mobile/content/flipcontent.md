@@ -7,7 +7,7 @@ tags:
 
  You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information.
 
-![](<images/flipcontent-1.gif?width=500>)
+![](<images/flipcontent-example.gif?width=500>)
 
 **How to use the Flip content UI Pattern**
 

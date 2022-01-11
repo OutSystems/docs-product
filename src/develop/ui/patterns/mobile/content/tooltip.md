@@ -5,6 +5,12 @@ summary: Tooltip dynamically displays simple informative content on end user int
 
 # Tooltip
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui-dev.outsystemsenterprise.com/OutSystemsUIWebsite/MigrationOverview).
+                            
+</div>
+
 You can use the Tooltip UI Pattern to dynamically display informative text when a user hovers over, clicks, or taps an on-screen element.
 
 ![Example tooltip](<images/tooltip-example.png>)

@@ -5,6 +5,12 @@ summary: Sidebar shows additional content on the side of the screen.
 
 # Sidebar
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui-dev.outsystemsenterprise.com/OutSystemsUIWebsite/MigrationOverview).
+                            
+</div>
+
 You can use the Sidebar UI Pattern to display additional information in the margin of the main content. The additional information supports the user's understanding of the main content.
 
 ![](<images/sidebar-example.png>)

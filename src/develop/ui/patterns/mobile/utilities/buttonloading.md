@@ -5,6 +5,12 @@ summary: Use the Button Loading pattern to call actions that don't run immediate
 
 # Button Loading
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui-dev.outsystemsenterprise.com/OutSystemsUIWebsite/MigrationOverview).
+                            
+</div>
+
 You can use the Button Loading UI Pattern to call actions that don't run immediately, provide a visual hint, and disable the button from being clicked until it becomes available again.
 
 **How to use the Button Loading UI Pattern**

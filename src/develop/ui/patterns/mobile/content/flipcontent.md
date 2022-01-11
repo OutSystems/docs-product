@@ -5,7 +5,13 @@ tags:
 
 # Flip Content
 
- You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information.
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui-dev.outsystemsenterprise.com/OutSystemsUIWebsite/MigrationOverview).
+                            
+</div>
+
+You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information.
 
 ![](<images/flipcontent-example.gif?width=500>)
 

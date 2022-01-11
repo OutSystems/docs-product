@@ -5,6 +5,12 @@ summary: Submenu is used to create a menu contained within another menu.
 
 # Submenu
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui-dev.outsystemsenterprise.com/OutSystemsUIWebsite/MigrationOverview).
+                            
+</div>
+
 You can use the Submenu UI Pattern to create a menu that is contained within another menu.
 
 ![Example submenu](<images/submenu-example-ss.png>)

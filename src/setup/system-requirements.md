@@ -168,7 +168,8 @@ The use of double-byte characters with DB2 databases is not supported.
 
 ## Development tools
 
-To develop your applications using OutSystems, developers need to install Service Studio and Integration Studio development tools on their desktops.
+To develop your applications using OutSystems, developers need to install **Service Studio** and **Integration Studio** development tools on their desktops.
+The latest version of the development tools are available in the [OutSystems downloads page](https://www.outsystems.com/Downloads/search/Development+Environment/11/).
 
 ### Service Studio 
 

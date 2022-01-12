@@ -9,15 +9,15 @@ To consume a SOAP Web Service in your application, do the following:
 
 1. In the **Logic** tab, open the **Integrations** folder.
 
-1. Right-click the SOAP element and select **Consume SOAP Web Service...**
+1. Right-click the SOAP element and select **Consume SOAP Web Service...**.
 
     ![](images/soap-consume-1.png)
 
-1. In the displayed dialog, specify the location of the Web Service definition (WSDL) and click **OK**.
+1. In the displayed dialog, specify the location of the Web Service definition (WSDL) and click **Consume**.
 
     ![](images/soap-consume-2.png)
 
-    When providing a remote URL, type it exactly the same way as you would type it into your web browser. To import a WSDL from your local file system, click **Choose a File** and select your WSDL.
+    When providing a remote URL, type it exactly the same way as you would type it into your web browser. To import a WSDL from your local file system, click **Upload file** and select your WSDL.
 
 1. If the service supports more than one binding, choose the desired binding and click **Next**.  
     Otherwise, Service Studio skips this step.

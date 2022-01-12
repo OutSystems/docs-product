@@ -15,7 +15,11 @@ The configurations you can define for your app are:
 * Customized application status bar, such as changing  background color or making it transparent 
 * [Create a plugin to extend the capabilities of your mobile apps](<../../extensibility-and-integration/mobile-plugins/using-cordova-plugins.md>)
 
-To define these advanced configurations during development, go to the **Interface** tab, select the app name, and click **…** on the right side of the **Extensibility Configuration** field to open the **Extensibility Configuration** window. The extensibility configuration property is a JSON string where you can indicate the configurations you want. Check its [schema and constraints](<extensibility-configurations-json-schema.md>) for more info.
+To define these advanced configurations during development, go to the **Interface** tab, select the app name, and click **…** on the right side of the **Extensibility Configuration** field to open the **Extensibility Configuration** window. The extensibility configuration property is a JSON object that defines the configurations you want.
+
+Once you have typed in the JSON string click **Close** to save the new extensibility configuration.
+
+See [this file](<extensibility-configurations-json-schema.md>) for information about configuration schema and constraints.
 
 ![Extensibility configuration window](images/customize-mobile-app-1.png)
 

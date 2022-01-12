@@ -5,8 +5,6 @@ helpids: 0
 
 # On Session Start
 
-On Session sStart is an action that executes after logging in, or after the first request to the server, or the first request after logging out.
-
 ## Properties
 
 <table markdown="1">

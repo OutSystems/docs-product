@@ -11,26 +11,25 @@ To consume a SOAP Web Service in your application, do the following:
 
 1. Right-click the SOAP element and select **Consume SOAP Web Service...**.
 
-    ![](images/soap-consume-1.png)
+    ![Add Consume SOAP Web Service](images/soap-consume-add-consume-ss.png)
 
 1. In the displayed dialog, specify the location of the Web Service definition (WSDL) and click **Consume**.
 
-    ![](images/soap-consume-2.png)
+    ![Specify WSDL Location](images/soap-consume-wsdl-ss.png)
 
     When providing a remote URL, type it exactly the same way as you would type it into your web browser. To import a WSDL from your local file system, click **Upload file** and select your WSDL.
 
-1. If the service supports more than one binding, choose the desired binding and click **Next**.  
-    Otherwise, Service Studio skips this step.
+1. If the service supports more than one binding, choose the desired binding and click **Next**. Otherwise, Service Studio skips this step.
 
-    ![](images/soap-consume-bindings.png)
+    ![Choose bindings](images/soap-consume-bindings-ss.png)
 
 1. If the service supports more than one method, choose the methods you wish to consume and click **Finish**. Otherwise, Service Studio skips this step.
 
-    ![](images/soap-consume-methods.png)
+    ![Choose methods](images/soap-consume-methods-ss.png)
 
 Be aware that, for all remote WSDL files, the URL address must be accessible from the machine running **Platform Server** and not directly from Service Studio.
 
-![](<images/soap-get-wsdl-from-ps.png>)
+![URL address accessible from Platform Server machine](<images/soap-get-wsdl-from-ps.png>)
 
 When you consume a SOAP Web Service, OutSystems does the following for you:
 
@@ -39,7 +38,7 @@ When you consume a SOAP Web Service, OutSystems does the following for you:
 * Creates the Structures and Static Entities to hold the complex types defined in the WSDL
 * Maps the [XML data types into OutSystems data types](<../../../ref/extensibility-and-integration/soap/consumed-soap/mapping-xml-to-outsystems.md>)
 
-![](images/soap-consume-result.png)
+![SOAP consume result](images/soap-consume-result.png)
 
 OutSystems doesn't provide direct support for Web Services Enhancements (WSE). Instead, you can use the [SOAP Extensibility API](<../../../ref/apis/soap-extensibility-api.md>) to implement the functionality provided by Web Services Enhancements in your applications.
 

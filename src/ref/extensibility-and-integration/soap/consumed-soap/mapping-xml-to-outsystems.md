@@ -42,6 +42,7 @@ Choices
 Along with this static entity, OutSystems will also create a structure to represent the `choice` element itself. This structure will have the following attributes:
 
     * Choice, the Id of the static entity `Choice_<ElementName>`;
+
     * An attribute for each choice option of the respective type.
 
         ![SOAP choice structure](<images/soap-choice-structure-ss.png>)

@@ -19,6 +19,6 @@ There are some feature differences between this new version and your existing Se
 
 * Configuring apps with multi-language isn't possible yet.
 
-* Integrations: Consuming SOAP web services and SAP Remote Functions isn't supported.
+* Integrations: Consuming SAP Remote Functions isn't supported.
 
 * Interactive tutorials aren't available yet.

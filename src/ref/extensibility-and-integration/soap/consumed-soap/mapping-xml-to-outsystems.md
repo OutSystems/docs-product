@@ -41,11 +41,11 @@ Choices
 :   Choices will also be created as read-only static entities but with a name like `Choice_<ElementName>`. 
 Along with this static entity, OutSystems will also create a structure to represent the `choice` element itself. This structure will have the following attributes:
 
-    * Choice, the Id of the static entity `Choice_<ElementName>`;
+* Choice, the Id of the static entity `Choice_<ElementName>`;
 
-    * An attribute for each choice option of the respective type.
+* An attribute for each choice option of the respective type.
 
-        ![SOAP choice structure](<images/soap-choice-structure-ss.png>)
+![SOAP choice structure](<images/soap-choice-structure-ss.png>)
 
 To set the value of a WSDL element of type choice, set the Choice attribute to the Id of the desired choice, and fill in the corresponding structure attribute according to the "Choice" value.
 

@@ -71,7 +71,7 @@ An Entity Attribute represents a column in a database table.
 </tr>
 <tr>
 <td title="Is Mandatory">Is Mandatory</td>
-<td>Set to Yes to require for a value to be set.</td>
+<td>Set to Yes to require for a value to be set when using Form validations.</td>
 <td>Yes</td>
 <td>No</td>
 <td></td>

@@ -19,7 +19,7 @@ To define these advanced configurations during development, go to the **Interfac
 
 Once you have typed in the JSON string click **Close** to save the new extensibility configuration.
 
-See [this file](<extensibility-configurations-json-schema.md>) for information about configuration schema and constraints.
+See [Extensibility Configurations JSON Schema](<extensibility-configurations-json-schema.md>) for information about configuration schema and constraints.
 
 ![Extensibility configuration window](images/customize-mobile-app-1.png)
 
@@ -27,4 +27,3 @@ You may change these default extensibility configurations when it is necessary t
 
 Using **LifeTime**, you can override the default extensibility configurations for a specific environment, with no need to manually change and deploy the application in that environment.
 
-See [Override extensibility configurations](../../managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md) for complete instructions.

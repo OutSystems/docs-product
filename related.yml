@@ -390,6 +390,13 @@
     - develop/ui/navigation/ui-flow.md
     # Navigate to Another Screen
     - develop/ui/navigation/navigate-to-detail-screen.md
+
+# ------- Web System Events -------
+# On Session Start
+- ref/lang/auto/Class.On Session Start.final.md:
+    # Sessions in Web Applications
+    - develop/data/session.md
+
     
 # ------- Mobile Interfaces -------
 

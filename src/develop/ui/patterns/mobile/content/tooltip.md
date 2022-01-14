@@ -13,11 +13,7 @@ If you are using an OutSystems UI version lower than 2.8.0, please see the [Patt
 
 You can use the Tooltip UI Pattern to dynamically display informative text when a user hovers over, clicks, or taps an on-screen element.
 
-<<<<<<< HEAD
-![](<images/tooltip-example.png>)
-=======
 ![Example tooltip](<images/tooltip-example.png>)
->>>>>>> master
 
 **How to use the Tooltip UI Pattern**
 

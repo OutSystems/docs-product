@@ -91,5 +91,5 @@ Use the following template as a reference for defining a custom behavior for the
 
 Here are some known issues in customizing the status bar.
 
-* In iOS 13, when using dark mode, it's not currently possible to use a status bar text color other than white, even when setting the StatusBarStyle to `default`. This is an [issue in Cordova's Status Bar plugin](https://github.com/apache/cordova-plugin-statusbar/issues/148) and should be fixed in a future release.
+* In iOS 13, when using dark mode, it's not currently possible to use a status bar text color other than white, even when setting the StatusBarStyle to `default`. This is an [issue in Cordova's Status Bar plugin](https://github.com/apache/cordova-plugin-statusbar/issues/148) and should be fixed in a future release (RPM-2015).
 * If your status bar customization doesn't show, you may be using and outdated version of OutSystems UI. Try updating OutSystems UI from Forge.

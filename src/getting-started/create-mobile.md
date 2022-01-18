@@ -56,7 +56,9 @@ To do this, we are going to use an Excel file that already contains the followin
 * Due Date
 * Is Active
 
-In the `ToDo` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel...**, and select the sample file `Tasks.xlsx` available by default in the directory `C:\Program Files\OutSystems\Development Environment 11\Service Studio\TutorialResources`
+Download the [tutorial Excel file](https://www.outsystems.com/home/TutorialResource.aspx) to your computer.
+
+In the **ToDo** module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel**, and select the tutorial Excel file `TutorialResource.xlsx`. Click **Import** in the dialog to confirm.
 
 ![Create a Database Table from an Excel File](images/create-mobile-03.png)
 

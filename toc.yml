@@ -46,7 +46,12 @@
             - href: develop/data/query/calculated-attribute-create.md
             - href: develop/data/query/distinct.md
             - href: develop/data/query/sql.md
-
+        - href: develop/data/hipaa/intro.md
+        - topics:
+            - href: develop/data/hipaa/encrypt-data-hipaa.md
+            - href: develop/data/hipaa/search-encrypted.md
+            - href: develop/data/hipaa/decrypt-data-hipaa.md
+        - href: develop/data/secure-the-data-of-your-mobile-apps.md
         - href: develop/data/download-file-browser.md
         - href: develop/data/excel-bootstrap.md
         - href: develop/data/structure-create-use.md
@@ -458,7 +463,6 @@
             - href: develop/security/user-roles/validate-permissions.md
         - href: develop/security/restrict-access-to-an-internal-network.md
         - href: develop/security/secure-http-requests.md
-        - href: develop/security/secure-the-data-of-your-mobile-apps.md
         
     # Troubleshooting Applications
     - href: develop/troubleshoot/intro.md

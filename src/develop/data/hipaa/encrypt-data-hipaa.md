@@ -114,6 +114,7 @@ For each attribute you want to encrypt, do the following:
 
     You need to save the KeyId mapping to the record identifier and to the salt to ensure you can later decrypt the data.
     If the combination of record identifier and salt already has a mapped KeyId, the mapping is replaced with the new KeyId.
+    
     </div>
 
 1. Publish the module.

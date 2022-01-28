@@ -1,6 +1,6 @@
 # Encrypting entity data at rest
 
-![Encrypting entity data](images/encrypt-diag.png)
+![Encrypting entity data](images/encrypt-data-diag.png)
 
 1. Create a wrapper action to save data
 
@@ -26,15 +26,18 @@ For each entity with attributes you want to encrypt, do the following:
 
 ![Encrypt unsearchable attributes](images/encrypt-no-search-diag.png)
 
-1. Create entity to save key mapping - explain
+1. Create entity to save key mapping - Each entity that has data to be encrypted needs one of these mapping entities. This mapping entity is needed for the decryption of the nonsearchable attribute at a later stage.
 
-1. Encrypt data and save key mapping
+1. Encrypt data and save key mapping - Each nonsearchable attribute needs to be encrypted before saving the data. The key mapping for the attribute and record also needs to be saved for later decryption.
 
 ### Create entity to save key mapping
 
+Start by creating an entity that holds the mapping of KeyIds to Entity Identifiers and Salts. This mapping entity keeps track of the salt and KeyId for each record of an entity, and is needed for the decryption of the nonsearchable attribute.
+You need one of these mapping entities for each entity with nonsearchable attributes to encrypt.
+
 For each entity with attributes you want to encrypt, do the following:
 
-1. Create an entity named `KeyIds<entity>`.
+1. Create an entity named `KeyIds<entity>`, replacing &lt;entity&gt; with the name of the entity with nonsearchable attributes to encrypt.
 
 1. Add the following attributes:
 
@@ -45,6 +48,8 @@ For each entity with attributes you want to encrypt, do the following:
 1. Publish the module.
 
 ### Encrypt data and save key mapping
+
+Now enable the encryption of each nonsearchable attribute before saving the data to an entity, and then save the KeyId mapping.
 
 For each attribute you want to encrypt, do the following:
 
@@ -92,11 +97,13 @@ For each attribute you want to encrypt, do the following:
 
 ![Encrypt searchable attributes](images/encrypt-search-diag.png)
 
-1. Create encryption action
+1. Create encryption action - This reusable action enables the encryption of different searchable attributes. You need one of these actions for each module with entities with attributes to encrypt.
 
-1. Encrypt data
+1. Encrypt data - Each searchable attribute needs to be encrypted before saving the data.
 
 ### Create encryption action
+
+Start by creating a reusable action that enables the encryption of different searchable attributes. You need one of these actions for each module with entities with attributes to encrypt.
 
 To enable the encryption of searchable attribute, do the following:
 
@@ -133,6 +140,7 @@ To enable the encryption of searchable attribute, do the following:
 
 ### Encrypt attributes before saving data
 
+Now call the encryption action for each searchable attribute before saving the data.
 For each searchable attribute you want to encrypt, do the following:
 
 1. In the create or update wrapper, before the **CreateOrUpdate&lt;entity&gt;** action, add the **EncryptSearchableAttribute** action created in the previous section.

@@ -6,12 +6,16 @@ To enable the encryption of data in an entity, do the following:
 
 1. Start by creating a CRUD wrapper action for the creation or updating of records from that entity.
 
-1. Then, for each attribute you need to encrypt, understand if the data must be saved as nonsearchable or as searchable. The previous diagram helps with that decision.
+1. Then, for each attribute you need to encrypt, understand if the data must be saved as unsearchable or as searchable. The previous diagram helps with that decision.
 
-    * If an attribute holds PHI data, like the name or address of a patient, you must encrypt the data as nonsearchable.
-    * For attributes that hold other type of data that can't be used by itself to identify a patient, like the blood type of a patient, decide if you need that attribute to be searchable or unsearchable.
+    * If an attribute holds PHI data, like the name or address of a patient, you must encrypt the data as unsearchable (using EncryptEntityText).
+    * For attributes that hold other type of data that can't be used by itself to identify a patient, like the blood type of a patient, decide if you need that attribute to be searchable (using EncryptIndexText) or unsearchable (using EncryptEntityText).
 
 ## Create a wrapper action to save data
+
+To enable the encryption of data, you must be able to change data before saving it.
+
+Start by creating a action that wraps the create or update actions for your entity, and setting the entity to read-only.
 
 For each entity with attributes you want to encrypt, do the following:
 
@@ -21,7 +25,7 @@ For each entity with attributes you want to encrypt, do the following:
 
 1. Add the following parameter to the action:
 
-    * Add an **Input Parameter**, named `<entity>`, with the **&lt;entity&gt; data type. &lt;entity&gt; is the entity with attributes to encrypt. 
+    * Add an **Input Parameter**, named `<entity>`, with the **&lt;entity&gt; data type. &lt;entity&gt; is the entity with attributes to encrypt.
 
 1. In the action flow, add the **CreateOrUpdate&lt;entity&gt;** action.
 
@@ -29,18 +33,18 @@ For each entity with attributes you want to encrypt, do the following:
 
 ![Encrypt unsearchable attributes](images/encrypt-no-search-diag.png)
 
-1. Create entity to save key mapping - Each entity that has data to be encrypted needs one of these mapping entities. This mapping entity is needed for the decryption of the nonsearchable attribute at a later stage.
+1. Create entity to save key mapping - Each entity that has data to be encrypted needs one of these mapping entities. This mapping entity is needed for the decryption of the unsearchable attribute at a later stage.
 
-1. Encrypt data and save key mapping - Each nonsearchable attribute needs to be encrypted before saving the data. The key mapping for the attribute and record also needs to be saved for later decryption.
+1. Encrypt data and save key mapping - Each unsearchable attribute needs to be encrypted before saving the data. The key mapping for the attribute and record also needs to be saved for later decryption.
 
 ### Create entity to save key mapping
 
-Start by creating an entity that holds the mapping of KeyIds to Entity Identifiers and Salts. This mapping entity keeps track of the salt and KeyId for each record of an entity, and is needed for the decryption of the nonsearchable attribute.
-You need one of these mapping entities for each entity with nonsearchable attributes to encrypt.
+Start by creating an entity that holds the mapping of KeyIds to record identifiers and salts. This mapping entity keeps track of the salt and KeyId for each record of an entity, and is needed for the decryption of the unsearchable attribute.
+You need one of these mapping entities for each entity with unsearchable attributes to encrypt.
 
 For each entity with attributes you want to encrypt, do the following:
 
-1. Create an entity named `KeyIds<entity>`, replacing &lt;entity&gt; with the name of the entity with nonsearchable attributes to encrypt.
+1. Create an entity named `KeyIds<entity>`, replacing &lt;entity&gt; with the name of the entity with unsearchable attributes to encrypt.
 
 1. Add the following attributes:
 
@@ -52,7 +56,7 @@ For each entity with attributes you want to encrypt, do the following:
 
 ### Encrypt data and save key mapping
 
-Now enable the encryption of each nonsearchable attribute before saving the data to an entity, and then save the KeyId mapping.
+Now enable the encryption of each unsearchable attribute before saving the data to an entity, and then save the KeyId mapping.
 
 For each attribute you want to encrypt, do the following:
 
@@ -76,7 +80,7 @@ For each attribute you want to encrypt, do the following:
 
     * Set **PlainText** to `<entity>.<attribute>`, where &lt;entity&gt; is the entity name and &lt;attribute&gt; is the attribute to encrypt.
     * Set **KeyId** to `LocalKeyIds<entity>.KeyId`.
-    * Set **Salt** to `LocalKeyIds<entity>.Salt`.
+    * Set **EntityId** to `LocalKeyIds<entity>.Salt`.
 
 1. After **EncryptEntityText**, assign the encrypted text to the respective attribute of the input parameter. Add an **Assign** with the following assignment: 
 

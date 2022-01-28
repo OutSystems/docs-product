@@ -1,3 +1,7 @@
+---
+summary: Learn how to implement encryption in your apps to ensure HIPAA compliance in the OutSystems Cloud.
+---
+
 # Decrypting entity data at runtime
 
 To enable the decryption of an entity's data, do the following:
@@ -66,7 +70,7 @@ For each encrypted searchable attribute, do the following:
     * Set **Encryptedtext** as `Encrypted<entity>.<attribute>`, where &lt;attribute&gt; is the searchable attribute.
     * Set **KeyId** as the output of GetIndexKey, `GetIndexKey.KeyId`.
 
-1. After **DecryptIndexText**, assign the decrypted text to the respective attribute of the output parameter. Add an **Assign** with the following assignment: 
+1. After **DecryptIndexText**, assign the decrypted text to the respective attribute of the output parameter. Add an **Assign** with the following assignment:
 
     * `Decrypted<entity>.<attribute>` = `DecryptIndexText.PlainText`
 

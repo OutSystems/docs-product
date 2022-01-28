@@ -1,3 +1,7 @@
+---
+summary: Learn how to implement decryption in your apps while ensuring HIPAA compliance in the OutSystems Cloud.
+---
+
 # Encrypting entity data at rest
 
 To enable the encryption of data in an entity, do the following:
@@ -25,11 +29,13 @@ For each entity with attributes you want to encrypt, do the following:
 
 1. Add the following parameter to the action:
 
-    * Add an **Input Parameter**, named `<entity>`, with the **&lt;entity&gt; data type. &lt;entity&gt; is the entity with attributes to encrypt.
+    * Add an **Input Parameter**, named `<entity>`, with the **&lt;entity&gt;** data type. &lt;entity&gt; is the entity with attributes to encrypt.
 
 1. In the action flow, add the **CreateOrUpdate&lt;entity&gt;** action.
 
 ## Encrypt unsearchable attributes
+
+Before encrypting attributes ensure you have [created a wrapper action to save data](#crud-wrapper).
 
 ![Encrypt unsearchable attributes](images/encrypt-no-search-diag.png)
 
@@ -65,7 +71,7 @@ For each attribute you want to encrypt, do the following:
     * From the **Cryptography Services** producer, add the **GetEntityKey** action.
     * From the **Cryptography Services** producer, add the **EncryptEntityText** action.
 
-1. In the create or update wrapper, before the **CreateOrUpdate&lt;entity&gt;** action, add a **GetEntityKey** action. 
+1. In the create or update wrapper, before the **CreateOrUpdate&lt;entity&gt;** action, add a **GetEntityKey** action.
 
     <div class="info" markdown="1">
 
@@ -88,7 +94,7 @@ For each attribute you want to encrypt, do the following:
     * Set **KeyId** to `LocalKeyIds<entity>.KeyId`.
     * Set **EntityId** to `LocalKeyIds<entity>.Salt`.
 
-1. After **EncryptEntityText**, assign the encrypted text to the respective attribute of the input parameter. Add an **Assign** with the following assignment: 
+1. After **EncryptEntityText**, assign the encrypted text to the respective attribute of the input parameter. Add an **Assign** with the following assignment:
 
     * `<entity>.<attribute>` = `EncryptEntityText.EncryptedText`
 
@@ -102,7 +108,7 @@ For each attribute you want to encrypt, do the following:
     * `LocalKeyIds<entity>.<entity>Id` = `CreateOrUpdate&lt;entity&gt;.Id`
     * `LocalKeyIds<entity>.Id` = `GetKeyIdsBy<entity>Id.List.Current.KeyAddress.Id`, where GetKeyIdsBy&lt;entity&gt;Id is the aggregate created on step 7.
 
-1.  After the assign, save the key mapping for the record. Add a **CreateOrUpdateKeyIds&lt;entity&gt;**, and set it's **Source** to `LocalKeyIds<entity>`.
+1. After the assign, save the key mapping for the record. Add a **CreateOrUpdateKeyIds&lt;entity&gt;**, and set it's **Source** to `LocalKeyIds<entity>`.
 
     <div class="info" markdown="1">
 
@@ -137,9 +143,9 @@ To enable the encryption of searchable attribute, do the following:
 
     * Add an **Input Parameter** named `TextToEncrypt`, with **Text** data type, and set as **Mandatory**.
     * Add an **Input Parameter** named`IndexType`, with **Text** data type, and set as **Mandatory**.
-    * Add an **Output Parameter** named `EncryptedText`, with **Text** data type and 
+    * Add an **Output Parameter** named `EncryptedText`, with **Text** data type.
 
-1. In the action flow, add a **GetIndexKey** action, and set it's **IndexType** to the `IndexType` input parameter. 
+1. In the action flow, add a **GetIndexKey** action, and set it's **IndexType** to the `IndexType` input parameter.
 
     <div class="info" markdown="1">
 
@@ -151,7 +157,6 @@ To enable the encryption of searchable attribute, do the following:
 
     * Set **PlainText** as the `TextToEncrypt` input parameter.
     * Set **KeyId** as `GetIndexKey.KeyId`.
-
 
 1. After **EncryptIndexText**, add an **Assign** and map the encrypted text to the output with the following assignment:
 
@@ -169,7 +174,7 @@ For each searchable attribute you want to encrypt, do the following:
     * Set **Text** as `<entity>.<attribute>`, where &lt;entity&gt; is the entity name and &lt;attribute&gt; is the attribute to encrypt.
     * Set **IndexType** as `<index-type>`, replacing `<index-type>` with a string that identifies the attribute. For example, `BloodType`.
 
-1. After **EncryptSearchableAttribute**, assign the encrypted text to the respective attribute of the input parameter. Add an **Assign** with the following assignment: 
+1. After **EncryptSearchableAttribute**, assign the encrypted text to the respective attribute of the input parameter. Add an **Assign** with the following assignment:
 
     * `<entity>.<attribute>` = `EncryptSearchableAttribute.EncryptedText`
 

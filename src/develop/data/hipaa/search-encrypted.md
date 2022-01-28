@@ -20,7 +20,7 @@ To enable the search of an attribute ensure that:
 
 To search an encrypted searchable attribute do the following:
 
-1. In the module where you are doing the search, open the search action, and add the **EncryptSearchableAttribute** action before searching the data. For example, in a search action for a reactive web app's screen, add 
+1. In the module where you are doing the search, open the search action, and add the **EncryptSearchableAttribute** action before searching the data.
 
 1. Set the **EncryptSearchableAttribute** inputs as follows:
 

@@ -4,14 +4,14 @@ To enable the encryption of data in an entity, do the following:
 
 ![Encrypting entity data](images/encrypt-data-diag.png)
 
-1. Start by creating a CRUD wrapper action for the creation or updating of records from that entity.
+1. Start by [creating a CRUD wrapper action for the creation or updating of records from that entity](#crud-wrapper).
 
 1. Then, for each attribute you need to encrypt, understand if the data must be saved as unsearchable or as searchable. The previous diagram helps with that decision.
 
-    * If an attribute holds PHI data, like the name or address of a patient, you must encrypt the data as unsearchable (using EncryptEntityText).
-    * For attributes that hold other type of data that can't be used by itself to identify a patient, like the blood type of a patient, decide if you need that attribute to be searchable (using EncryptIndexText) or unsearchable (using EncryptEntityText).
+    * If an attribute holds PHI data, like the name or address of a patient, you must [encrypt the data as unsearchable (using EncryptEntityText)](#encrypt-no-search).
+    * For attributes that hold other type of data that can't be used by itself to identify a patient, like the blood type of a patient, decide if you need that attribute to be [searchable (using EncryptIndexText)](#encrypt-search) or [unsearchable (using EncryptEntityText)](#encrypt-no-search).
 
-## Create a wrapper action to save data
+## Create a wrapper action to save data { #crud-wrapper }
 
 To enable the encryption of data, you must be able to change data before saving it.
 
@@ -29,7 +29,7 @@ For each entity with attributes you want to encrypt, do the following:
 
 1. In the action flow, add the **CreateOrUpdate&lt;entity&gt;** action.
 
-## Unsearchable attributes
+## Encrypt unsearchable attributes
 
 ![Encrypt unsearchable attributes](images/encrypt-no-search-diag.png)
 
@@ -54,7 +54,7 @@ For each entity with attributes you want to encrypt, do the following:
 
 1. Publish the module.
 
-### Encrypt data and save key mapping
+### Encrypt data and save key mapping { #encrypt-no-search }
 
 Now enable the encryption of each unsearchable attribute before saving the data to an entity, and then save the KeyId mapping.
 
@@ -65,7 +65,13 @@ For each attribute you want to encrypt, do the following:
     * From the **Cryptography Services** producer, add the **GetEntityKey** action.
     * From the **Cryptography Services** producer, add the **EncryptEntityText** action.
 
-1. In the create or update wrapper, before the **CreateOrUpdate&lt;entity&gt;** action, add a **GetEntityKey** action.
+1. In the create or update wrapper, before the **CreateOrUpdate&lt;entity&gt;** action, add a **GetEntityKey** action. 
+
+    <div class="info" markdown="1">
+
+    The **GetEntityKey**  actions gets a KeyId to use for encryption, and that you need to save for later decryption. You won't always get the same KeyId, since the KeyId is rotated automatically.
+
+    </div>
 
 1. Add the following to the action:
 
@@ -86,7 +92,7 @@ For each attribute you want to encrypt, do the following:
 
     * `<entity>.<attribute>` = `EncryptEntityText.EncryptedText`
 
-1. To enable the CRUD wrapper to update records, check if the the record already has a key mapping. After the **CreateOrUpdate&lt;entity&gt;** action, add an **Aggregate** with **KeyIds&lt;entity&gt;** Source, with the following **Filter**:
+1. To enable the CRUD wrapper to update records, check if the record already has a key mapping. After the **CreateOrUpdate&lt;entity&gt;** action, add an **Aggregate** with **KeyIds&lt;entity&gt;** Source, with the following **Filter**:
 
     * `KeyIds<entity>.<entity>Id` = `<entity>.Id`
     * `KeyIds<entity>.Salt` = `LocalKeyIds<entity>.Salt`
@@ -98,9 +104,15 @@ For each attribute you want to encrypt, do the following:
 
 1.  After the assign, save the key mapping for the record. Add a **CreateOrUpdateKeyIds&lt;entity&gt;**, and set it's **Source** to `LocalKeyIds<entity>`.
 
+    <div class="info" markdown="1">
+
+    You need to save the KeyId mapping to the record identifier and to the salt to ensure you can later decrypt the data.
+    If the combination of record identifier and salt already has a mapped KeyId, the mapping is replaced with the new KeyId.
+    </div>
+
 1. Publish the module.
 
-## Searchable attributes
+## Encrypt searchable attributes { #encrypt-search }
 
 ![Encrypt searchable attributes](images/encrypt-search-diag.png)
 

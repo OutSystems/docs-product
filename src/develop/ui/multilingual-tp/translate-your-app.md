@@ -113,13 +113,15 @@ Follow these steps to translate the text in Static Entities and show the transla
 
 1. In the [translation editor](translation-editor.md), search for the text you want to translate and set **Behavior** to **Translate**.
 
+    ![Translation editor](images/static-entity-search-ss.png)
+
+2. While still in the translation editor, enter the translation in the **Translation in (language code)** cell and click **Done**.
+
     ![Translation editor](images/static-entity-translate-ss.png)
 
-2. While still in the translation editor, enter the translation in the **Translation in (language name)** cell.
+3. In the logic, to switch the locale, add **Refresh Data** just after the **SetCurrentLocale** action and select the Static Entity.
 
-3. In the logic to switch the locale, add **Refresh Data** just after the **SetCurrentLocale** action and select the Static Entity.
-
-    ![Refresh of Static Entity](images/static-entity-refresh.png?width=500)
+    ![Refresh of Static Entity](images/static-entity-refresh-ss.png)
 
 ## Switching back to the default language
 

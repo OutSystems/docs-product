@@ -4,7 +4,7 @@ summary: Learn how to search encrypted searchable attributes.
 
 # Search encrypted data
 
-You can enable the search of encrypted data for [encrypted searchable attributes](), by encrypting the search string before querying the database. This isn't possible with unsearchable attributes.
+You can enable the search of encrypted data for [encrypted searchable attributes](encrypt-data-hipaa.md#encrypt-no-search), by encrypting the search string before querying the database. This isn't possible with unsearchable attributes.
 
 ## Prerequisites
 
@@ -12,9 +12,9 @@ To enable the search of an attribute ensure that:
 
 * The attribute is searchable, and you know the **IndexType** used for the encryption of the attribute.
 
-* In the module with the entity you want to search, the [EncryptSearchableAttribute]() has the **Public** property set to **Yes**.
+* In the module with the entity you want to search, the [EncryptSearchableAttribute](encrypt-data-hipaa.md#encrypt-search) has the **Public** property set to **Yes**.
 
-* In the module where you are doing the search, you added the [EncryptSearchableAttribute]() action and the entity with the attribute as a dependency.
+* In the module where you are doing the search, you added the [EncryptSearchableAttribute](encrypt-data-hipaa.md#encrypt-search) action and the entity with the attribute as a dependency.
 
 ## Search an encrypted attribute
 

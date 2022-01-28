@@ -150,7 +150,7 @@ To enable the encryption of searchable attribute, do the following:
 
     <div class="info" markdown="1">
 
-    The **GetIndexKey** action retrieves a new key identifier if the index type doesn't exist. Otherwise it retrieves the existing key identifier for the index type.
+    The **GetIndexKey** action retrieves a new KeyId if the IndexType doesn't exist. Otherwise it retrieves the existing key KeyId for the IndexType.
 
     </div>
 

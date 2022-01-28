@@ -1,12 +1,15 @@
 # Encrypting entity data at rest
 
-![Encrypting entity data](images/encrypt-data-diag.png)
+To enable the encryption of data in an entity, do the following:
 
-1. Create a wrapper action to save data
+1. Start by creating a CRUD wrapper action for the creation or updating of records from that entity.
 
-1. Encrypt unsearchable data
+1. Then, for each attribute you need encrypt, you must understand if the data must be saved as nonsearchable or as searchable. The following diagram helps with that decision:
 
-1. Encrypt searchable data
+    ![Encrypting entity data](images/encrypt-data-diag.png)
+
+    * If an attribute holds PHI data, like the name or address of a patient, you must encrypt the data as nonsearchable.
+    * For attributes that hold other type of data that can't be used by itself to identify a patient, like the blood type of a patient, decide if you need that attribute to be searchable or unsearchable.
 
 ## Create a wrapper action to save data
 

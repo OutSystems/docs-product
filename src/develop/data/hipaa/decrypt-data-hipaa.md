@@ -1,16 +1,18 @@
 # Decrypting entity data at runtime
 
-To enable the decryption of an entity's data, 
+To enable the decryption of an entity's data, do the following:
 
-![Decrypting entity data](images/decrypt-diag.png)
+![Decrypting entity data](images/decrypt-data-diag.png)
 
-1. Create decryption action
+1. Start by creating a decryption action that holds all the decryption logic for the data of an entity.
 
-1. Decrypt nonsearchable attributes
-
-1. Decrypt searchable attributes
+1. Then for each attribute you need to decrypt, add the logic to decrypt the data depending on if it's saved as searchable or nonsearchable.
 
 ## Create decryption action
+
+Start by creating an action that's used to decrypt the attributes of an entity.
+
+For each entity with attributes do decrypt, do the following:
 
 1. In the module with the entity with encrypted attributes, add the following dependencies:
 
@@ -24,6 +26,7 @@ To enable the decryption of an entity's data,
 
 ## Decrypt nonsearchable attributes
 
+Now add the logic to decrypt each of the nonsearchable attributes, and then assign that decrypted data to an output.
 For each encrypted nonsearchable attribute, do the following:
 
 1. In the decryption action, add an **Aggregate** with **KeyIds&lt;entity&gt;** Source, with the following **Filter**:
@@ -37,7 +40,6 @@ For each encrypted nonsearchable attribute, do the following:
     * Set **KeyId** as `GetKeyIdsBy<entity>Id.List.Current.KeyId`, where GetKeyIdsBy&lt;entity&gt;Id is the aggregate created on the previous step.
     * Set **EntityId** as `GetKeyIdsBy<entity>Id.List.Current.Salt`, where GetKeyIdsBy&lt;entity&gt;Id is the aggregate created on the previous step. 
 
-
 1. After **DecryptEntityText**, assign the decrypted text to the respective attribute of the output parameter. Add an **Assign** with the following assignment: 
 
     * `Decrypted<entity>.<attribute>` = `DecryptEntityText.PlainText`
@@ -46,6 +48,7 @@ For each encrypted nonsearchable attribute, do the following:
 
 ## Decrypt searchable attributes
 
+Now add the logic to decrypt each of the searchable attributes, and then assign that decrypted data to an output.
 For each encrypted searchable attribute, do the following:
 
 1. In the decryption action, add a **GetIndexKey** action, and set it's **IndexType** to the string that identifies the attribute used during encryption.

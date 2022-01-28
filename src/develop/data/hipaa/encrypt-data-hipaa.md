@@ -114,7 +114,7 @@ For each attribute you want to encrypt, do the following:
 
     You need to save the KeyId mapping to the record identifier and to the salt to ensure you can later decrypt the data.
     If the combination of record identifier and salt already has a mapped KeyId, the mapping is replaced with the new KeyId.
-    
+
     </div>
 
 1. Publish the module.
@@ -154,7 +154,7 @@ To enable the encryption of searchable attribute, do the following:
 
     </div>
 
-1. After **GetIndexKey**, add an **EncryptIndexText** action , and set it's  inputs as follows:
+1. After **GetIndexKey**, add an **EncryptIndexText** action , and set it's inputs as follows:
 
     * Set **PlainText** as the `TextToEncrypt` input parameter.
     * Set **KeyId** as `GetIndexKey.KeyId`.

@@ -2,7 +2,7 @@
 summary: Learn how to implement decryption in your apps while ensuring HIPAA compliance in the OutSystems Cloud.
 ---
 
-# Encrypting entity data at rest
+# Encrypting data for HIPAA compliance
 
 To enable the encryption of data in an entity, do the following:
 

@@ -55,9 +55,10 @@
             - href: develop/data/query/calculated-attribute-create.md
             - href: develop/data/query/distinct.md
             - href: develop/data/query/sql.md
-        #- href: HIPAA
-        #- topics:
+        - href: develop/data/hipaa/intro.md
+        - topics:
             - href: develop/data/hipaa/encrypt-data-hipaa.md
+            - href: develop/data/hipaa/search-encrypted.md
             - href: develop/data/hipaa/decrypt-data-hipaa.md
         - href: develop/data/secure-the-data-of-your-mobile-apps.md
         - href: develop/data/download-file-browser.md

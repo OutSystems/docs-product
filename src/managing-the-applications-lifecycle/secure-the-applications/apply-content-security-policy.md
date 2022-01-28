@@ -22,12 +22,14 @@ If you have LifeTime installed, set Content Security Policy using this managemen
 
 ### For all environments
 
-To configure the CSP in all environments use LifeTime, the management console of your infrastructure.
+To configure the CSP in all environments in LifeTime:
 
-1. Go to the **Infrastructure** section to see all environments.
+1. In LifeTime, go to the **Infrastructure** section to see all environments.
 1. In an environment, select the **Environment Security** option.
 1. Enable CSP.
 1. Configure directives, with one value per line.
+1. Click **Save**.
+1. Republish all applications using an ["All Components" solution](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Creating_and_using_an_%22All_Components%22_solution).
 
 ### For an app
 
@@ -38,6 +40,8 @@ To configure CSP for an application in LifeTime:
 1. In the drop list, select the environment to which the settings will apply.
 1. Enable CSP.
 1. Configure directives, with one value per line.
+1. Click **Save**.
+1. Republish the application in Service Center.
 
 <div class="warning" markdown="1">
 
@@ -89,9 +93,9 @@ When configuring CSP take into account the following risks of misconfiguration:
 
 ## Directives reference
 
-The list of available directives to configure Content Security Policy in OutSystems is described in the table below.
+The table below describes the list of available directives to configure Content Security Policy in OutSystems. The **Required values** column indicates the values that LifeTime automatically applies to the directive for the applications to work correctly. Those values cannot be removed.
 
-| Directive     | Reason        | Default values  |
+| Directive     | Reason        | Required values  |
 | :------------ |:--------------|:----------------|
 | Base-uri      |The domains which can be used as base URL for applications screens.<br/>The following source expressions are allowed: `self`.|`self`|
 | Child-src     |The domains which applications are allowed to embed framed.<br/>The following source expressions are allowed: `self` and `*`.|`self`<br/>`gap:`|

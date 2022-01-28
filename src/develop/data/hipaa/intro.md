@@ -48,4 +48,8 @@ DecryptEntityText
 :   Decrypts into plain text the cyphered text of unsearchable attributes using a KeyId and a salt (EntityId).
 
 
-Check the following articles for detailed examples of the implementation of encryption for 
+Check the following articles for detailed guides of the implementation of:
+
+* [Encrypting data for HIPAA compliance](encrypt-data-hipaa.md)
+* [Decrypting HIPAA compliant data](decrypt-data-hipaa.md)
+* [Search encrypted data](search-encrypted.md)

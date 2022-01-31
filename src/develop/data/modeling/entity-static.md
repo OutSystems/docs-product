@@ -45,7 +45,7 @@ Service Studio creates the following Attributes automatically:
 
 ## Convert Static Entity to Entity
 
-You can convert existing Entities to Static Entities. To convert a Static Entity to Entity, right-click on the Static Entity, navigate to the **Advanced** help menu and then select **Convert to Entity**. 
+You can convert existing Static Entities to Entities. To convert a Static Entity to Entity, right-click on the Static Entity, navigate to the **Advanced** help menu and then select **Convert to Entity**. 
 
 After converting a Static Entity to an Entity:
 

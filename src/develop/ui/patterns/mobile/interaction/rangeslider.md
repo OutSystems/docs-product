@@ -43,11 +43,7 @@ In this example, we create a Range Slider that allows the user select the number
 
 1. On the **Properties** tab, enter the mandatory minimum, maximum, and starting values. In this example, we add static values.
 
-    ![Add mandatory values](images/rangeslider-addvalues-ss.png)
-
 1. To create a new client action, from the **OnValueChange** drop-down, select **New Client Action**.
-
-    ![](images/rangeslider-newclientaction-ss.png)
 
     By default, the **Value** input parameter is created.  
 

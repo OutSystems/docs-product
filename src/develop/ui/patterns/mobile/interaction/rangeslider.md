@@ -5,9 +5,15 @@ summary: Allows the user select a single value between two range values.
 
 # Range Slider
 
-You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track, increases or decreases the value.  
+You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track increases or decreases the value.  
 
-![](images/rangeslider-1.png)
+![Example of a Range Slider](images/rangeslider-overview.png)
+
+<div class="info" markdown="1">
+
+The Range Slider Pattern is based on the [noUiSlider library](https://refreshless.com/nouislider/) (v15.5.1). For more information about the Range Slider’s behaviors and extensibility methods, see the provider’s documentation.
+
+</div>
 
 ## How to use the Range Slider UI Pattern
 
@@ -17,7 +23,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     The Range Slider widget is displayed.
 
-    ![](images/rangeslider-2-ss.png)
+    ![](images/rangeslider-widget-ss.png)
 
     If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
 
@@ -33,19 +39,19 @@ In this example, we create a Range Slider that allows the user select the number
 
 1. From the Toolbox, drag the Range Slider widget into the Main Content area of your application's screen.
 
-    ![](images/rangeslider-3-ss.png)
+    ![Drag the widget to the application screen](images/rangeslider-dragwidget-ss.png)
 
-1. On the **Properties** tab, enter the minimum, maximum, and  initial values. In this example, we add static values.
+1. On the **Properties** tab, enter the mandatory minimum, maximum, and starting values. In this example, we add static values.
 
-    ![](images/rangeslider-5-ss.png)
+    ![Add mandatory values](images/rangeslider-addvalues-ss.png)
 
-1. To create an **OnChange** event, on the **Properties** tab, from the **Handler** drop-down, select **New Client Action**.
+1. To create a new client action, from the **OnValueChange** drop-down, select **New Client Action**.
 
-    ![](images/rangeslider-4-ss.png)
+    ![](images/rangeslider-newclientaction-ss.png)
 
     By default, the **Value** input parameter is created.  
 
-    ![](images/rangeslider-6-ss.png)
+    ![Value input parameter is created automatically](images/rangeslider-value-input-ss.png)
 
 1. From the Toolbox, drag the Container widget into the Main Content area of your application's screen, and add your content to the Container placeholder. In this example we add some text and an expression.
 
@@ -81,14 +87,14 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-|MinValue (Decimal): Mandatory  |  Slider's minimum value. <p>Examples <ul><li>_1_ - The slider's minimum value is 1.</li> </ul></p> |
-|MaxValue (Decimal): Mandatory  |  Slider's maximum value. <p>Examples <ul><li>_100_ - The slider's maximum value is 100.</li></ul></p> |
-|InitialValue (Decimal): Mandatory  |  Value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>_10_ - Slider's default value when the page is rendered is 10.</li></ul></p> |
-|Step (Decimal): Optional  | The slider moves in increments of steps.<p>Examples <ul><li>_Blank_ - The slider increases in steps of 1. This is the default value. </li><li>_10_ - The slider increases in steps of 10.</li></ul></p> |
-|ShowPips (Boolean): Optional  | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. |
-|PipsStep (Integer): Optional  |  Range interval after which a Pip is drawn (when ShowPips is enabled). If not specified, the component tries to guess what step fits your data. |
-|ChangeEventDuringSlide (Boolean): Optional  | If True, a change event is triggered while the slider is being dragged. This is the default value. If False, the change events are only triggered when the user releases the slider. **Tip**: If you're refreshing a query based on the value of the slider, you probably want to set this to False. |
-|IsDisabled (Boolean): Optional | If True, the slider is disabled. If False, the slider is enabled. This is the default value. |
-|IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. |
-|VerticalHeight (Integer): Optional | If IsVertical is True, use this property to set the height (in px) of the slider. <p>Examples <ul><li>_Blank_ - The slider is 100px high. This is the default value. </li><li>_250_ - The slider is 250px high.</li></ul></p> |
-|AdvancedFormat (Text): Optional  |  Allow for more options beyond what's provided through the input parameters. For more information, visit: <https://kimmobrunfeldt.github.io/progressbar.js/>. Example: `{ easing: 'bounce' }` |
+|MinValue (Decimal): Mandatory | Slider's minimum value. |
+|MaxValue (Decimal): Mandatory | Slider's maximum value. |
+|StartingValue (Decimal): Mandatory | Value selected by default when the page is rendered. Must be between min and max values. |
+|Size (Text): Optional | Sets the Range Slider size. If horizontal, the size is the width. Otherwise (vertical), the size is the height.  Accepts any kind of unit (px, %, vw). Default value is 100%.|
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the myclass style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the myclass1 and myclass2 styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|OptionalConfigs.ShowFloatingLabel (Boolean): Optional |Set to True to add a floating label above the handler. Default value is False. |
+|OptionalConfigs.Step (Decimal): Optional |  Slider moves in increments of steps. If the step is set to 10, the slider increases or decreases in units of 10, for example, 0 to 10, to 20, to 30, and so on. |
+|OptionalConfigs.ShowTickMarks (Boolean): Optional |  Set to True to display tick marks below the slider. Default value is False. |
+|OptionalConfigs.TickMarksInterval (Integer): Optional | Range interval after which a tick mark is displayed (when ShowTickMarks is set to True). For example, if TickMarksInterval = 5, a tick mark is shown for each 5 steps. |
+|OptionalConfigs.IsDisabled (Boolean): Optional | Set as True to disable the Range Slider. Default value is False. |
+

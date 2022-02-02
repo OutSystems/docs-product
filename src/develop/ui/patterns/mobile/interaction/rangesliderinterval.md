@@ -5,7 +5,7 @@ summary: the Range Slider Interval UI Pattern allows users select a single value
 
 # Range Slider Interval
 
-You can use the Range Slider Interval Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content by predetermined intervals and within a chosen range. Moving the slider along the track, increases or decreases the value.
+You can use the Range Slider Interval Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content by predetermined intervals and within a chosen range. Moving the slider along the track increases or decreases the value.
 
 ## How to use the Range Slider Interval UI Pattern
 
@@ -15,7 +15,7 @@ In this example, we create a Range Slider Interval that allows the user select a
 
     The Range Slider Interval widget is displayed.
 
-    ![](images/rangesliderinterval-2-ss.png)
+    ![Range SLider Intrval widget](images/rangesliderinterval-widget-ss.png)
 
     If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
 
@@ -29,13 +29,15 @@ In this example, we create a Range Slider Interval that allows the user select a
     
     e. In Service Studio, in the Toolbox, search for the widget again.
 
-1. From the Toolbox, drag the Range Slider Interval widget into the Main Content area of your application's screen, and on the **Properties** tab, enter the **MinValue**, **MaxValue**, **InitialIntervalStart**, and **InitialIntervalEnd** values. In this example, we add static values.
+1. From the Toolbox, drag the Range Slider Interval widget into the Main Content area of your application's screen, and on the **Properties** tab, enter the **MinValue**, **MaxValue**, **StartingValueStart**, and **StartingValueEnd** values. 
 
-    ![](images/rangesliderinterval-3-ss.png)
+    In this example, we add static values.
 
-1. To create an **OnChange** event, on the **Properties** tab, from the **Handler** drop-down, select **New Client Action**.
+    ![Add mandatory values on the Properties tab](images/rangesliderinterval-3-ss.png)
 
-    ![](images/rangesliderinterval-5-ss.png)
+1. To create a new client action, from the **OnValueChange** drop-down, select **New Client Action**.
+
+    ![Create a new client action](images/rangesliderinterval-5-ss.png)
 
     By default, the **InitialIntervalStart** and **InitialIntervalEnd** input parameters are created.
 
@@ -73,15 +75,18 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| MinValue (Decimal): Mandatory  |  Slider's minimum value. <p>Examples <ul><li>_0_ - The slider's minimum value is 0.</li><li>_12_ - The slider's minimum value is 12</li> </ul></p> |
-| MaxValue (Decimal): Mandatory  |  Slider's maximum value. <p>Examples <ul><li>_100_ - The slider's maximum value is 100.</li></ul></p> |
-| InitialIntervalStart  |  Start value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>_10_ - Slider's default start value when the page is rendered is 10.</li></ul></p> |
-| InitialIntervalEnd  |  End value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>_10_ - Slider's default end value when the page is rendered is 10.</li></ul></p> |
-| Step (Decimal): Optional  | The slider moves in increments of steps.<p>Examples <ul><li>_Blank_ - The slider increases in steps of 1. This is the default value. </li><li>_10_ - The slider increases in steps of 10.</li></ul></p>|
-| ShowPips (Boolean): Optional  | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. |
-| PipsStep (Integer): Optional  |  Range interval after which a Pip is drawn (when ShowPips is enabled). If not specified, the component will try to guess what step fits your data. |
-| ChangeEventDuringSlide (Boolean): Optional |  Trigger Change events while the slider is being dragged. If set to False, the Change events will only be triggered when the user releases the slider. **Tip**: If you're refreshing a query based on the value of the slider, we recommend you set this property to False. |
-|IsDisabled (Boolean): Optional | If True, the slider is disabled. If False, the slider is enabled. This is the default value. |
-|IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. |
-|VerticalHeight (Integer): Optional | If IsVertical is True, use this property to set the height (in px) of the slider. <p>Examples <ul><li>_Blank_ - The slider is 100px high. This is the default value. </li><li>_250_ - The slider is 250px high.</li></ul></p> |
-|AdvancedFormat (Text): Optional  |  Allow for more options beyond what's provided through the input parameters. For more information, visit: <https://kimmobrunfeldt.github.io/progressbar.js/>. Example: `{ easing: 'bounce' }` |
+| MinValue (Decimal): Mandatory  |  Slider's minimum value. <p>Examples <ul><li>0 - The slider's minimum value is 0.</li><li>12 - The slider's minimum value is 12</li> </ul></p> |
+| MaxValue (Decimal): Mandatory  |  Slider's maximum value. <p>Examples <ul><li>100 - The slider's maximum value is 100.</li></ul></p> |
+| StartingValueStart (Decimal): Mandatory | Slider's default start value. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default start value when the page is rendered is 10.</li></ul></p> |
+| StartingValueEnd (Decimal): Mandatory | Slider's default end value. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default end value when the page is rendered is 10.</li></ul></p> |
+|Orientation (Orientation Identifier): Optional|Set the direction of the RangeSliderInterval. By default, horizontal.|
+|Size (Text): Optional|Set the RangeSliderInterval size. If horizontal, the size is the width. Otherwise (vertical), the size is the height.  Accepts any kind of unit (px, %, vw). By default, ‘100%’.|
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the myclass style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the myclass1 and myclass2 styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|OptionalConfigs.ShowFloatingLabel (Boolean): Optional|Set True to add a floating label above the handler.|
+|OptionalConfigs.Step (Decimal): Optional|Slider moves in increments of Step. If Step is 10, the slider will go from 0 to 10, to 20, to 30, etc.|
+|OptionalConfigs.ShowTickMarks
+ (Boolean): Optional
+|Show tick marks below the slider. To generate the tick marks, you will need to set the TickMarksInterval.|
+|---|---|
+|---|---|
+

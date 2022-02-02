@@ -32,14 +32,14 @@ Displays a record and provides swipe behavior.
 <td>Set to Yes to have default action triggered by a full swipe left. Default action is the rightmost right action.</td>
 <td>Yes</td>
 <td>Yes</td>
-<td></td>
+<td>The action will only be available on devices that support touch controls (for example, when accessing application on a tablet).</td>
 </tr>
 <tr>
 <td title="TriggerActionOnFullSwipeRight">Full Swipe Right</td>
 <td>Set to Yes to have default action triggered by a full swipe right. Default action is the leftmost left action.</td>
 <td>Yes</td>
 <td>Yes</td>
-<td></td>
+<td>The action will only be available on devices that support touch controls (for example, when accessing application on a tablet).</td>
 </tr>
 <tr>
 <td title="Style">Style Classes</td>

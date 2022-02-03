@@ -9,7 +9,7 @@ summary: Advanced use cases for the Range Slider UI Pattern
 
 |**Event** | **Output** |  **Description**|
 |---|---|---| 
-|Initialized: Optional| RangeSliderId (Text)| Event triggered after the Ranger Slider is initialized. This event provides you with the element Id that can be used to call methods from the **RangeSliderAPI:OutSystems.OSUI.Patterns.RangeSlider** API. |
+|Initialized: Optional| RangeSliderId (Text)| Event triggered after the Ranger Slider is initialized. This event provides you with the element Id that can be used to call methods from the **RangeSliderAPI:OutSystems.OSUI.Patterns.RangeSliderAPI**. |
 |OnValueChange: Mandatory| Value (Decimal)| Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the Range Slider handler. You can use the SetRangeSliderChangeOnDragEnd to trigger the event only after the user releases it. |
   
 ## Structure 
@@ -63,14 +63,16 @@ By using this action, the change events is only triggered when the user releases
 ### Change the decimal format on the tooltip when using the ShowFloatingLabel parameter as true
 
 1. Create a new action on the **Initialize** event.
-1. Drag a Javascript node to the **Initialize** event flow.
-1. On the Javascript node, create a new input parameter called **RangeSliderId**, of type text.
-1. Set the **RangeSliderId** parameter of the Javascript node to the **RangeSliderId** returned from the initialized event.
-On the Javascript node, paste the following code:
-``OutSystems.OSUI.Patterns.RangeSliderAPI.GetRangeSliderItemById($parameters.RangeSliderId).provider.updateOptions({tooltips: wNumb({decimals: CustomFormat })})``
+1. Drag a JavaScript node to the **Initialize** event flow.
+1. On the JavaScript node, create a new input parameter called **RangeSliderId**, of type text.
+1. Set the **RangeSliderId** parameter of the JavaScript node to the **RangeSliderId** returned from the initialized event.
+On the JavaScript node, paste the following code:
+
+    ``OutSystems.OSUI.Patterns.RangeSliderAPI.GetRangeSliderItemById($parameters.RangeSliderId).provider.updateOptions({tooltips: wNumb({decimals: CustomFormat })})``
+
     **Note:** For the **CustomFormat**, add the desired decimal numbers. In this example we changed it to 2.
 
-
+![Set the code on the JavaScript node](images/rangeslider-format-ss.png)
 
 
 

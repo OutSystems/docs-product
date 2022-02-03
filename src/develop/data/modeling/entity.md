@@ -43,3 +43,13 @@ When you create a new entity attribute, the platform automatically manages the u
 When you set an entity attribute as mandatory it is automatically validated on the user interface by the platform. However, in the database, mandatory attributes are created allowing null values thus, at the database level there's no validation for mandatory attributes.
 
 When you delete an entity or an entity attribute, the platform is permissive and lets you do it whether it is being used or not, but you must fix the elements where it is being used. In the database, the entity or entity attribute is not deleted by the platform.
+
+## Convert Entity to Static Entity
+You can convert existing Entities to Static Entities. To convert an Entity to Static Entity, right-click on the Entity, navigate to the Advanced help menu and then select Convert to Static Entity.
+
+After converting an Entity to a Static Entity:
+
+* The database records from the won't be available through database queries, via Aggregate or SQL Query
+* The records from the database can be imported as static records. To import the database records, right-click on the Entity, access to the Edit Entity menu item and then select "Import from Database"
+
+Note that it's also possible to convert a Static Entity to Entity.

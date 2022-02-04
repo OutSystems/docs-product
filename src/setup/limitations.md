@@ -15,8 +15,6 @@ There are some feature differences between this new version and your existing Se
 
     * Export to an Image.
 
-* Configuring apps with multi-language isn't possible yet.
-
 * Integrations: Consuming SAP Remote Functions isn't supported.
 
 * Interactive tutorials aren't available yet.

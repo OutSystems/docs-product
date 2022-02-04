@@ -47,7 +47,7 @@ The Input with Icon UI Pattern includes an icon and placeholder text that suppor
 
     This variable can be reused throughout your app.
 
-1. Select the Input widget again, and on the **Properties** tab, in the **Prompt** property, enter the text you want displayed in the input box that describes the expected value. In this example, we enter `Username`.
+1. Select the Input widget again, and on the **Properties** tab, in the **Prompt** property, enter the text you want displayed in the input box that describes the expected value. In this example, we enter "Username".
 
     ![](<images/inputwithicon-5-ss.png>)
 

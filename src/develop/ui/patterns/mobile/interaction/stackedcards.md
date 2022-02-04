@@ -65,7 +65,7 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
 1. Repeat step 7 for the OverlayTop (swipe up) and OverLayRight (swipe right) placeholders.
 
-1. From the **Properties** tab, you can change the Range Slider's look and feel by setting the (optional) properties.
+1. From the **Properties** tab, you can change the Stacked cards look and feel by setting the (optional) properties.
 
    ![](images/stackedcards-11-ss.png)
 

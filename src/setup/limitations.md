@@ -11,7 +11,7 @@ There are some feature differences between this new version and your existing Se
 
 * The following features of the flow editor for actions, processes, and UI flows aren't available yet:
 
-    * Zoom.
+    * Zoom using mouse wheel and trackpad.
 
     * Export to an Image.
 

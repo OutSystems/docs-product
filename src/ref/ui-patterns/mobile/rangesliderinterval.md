@@ -64,9 +64,9 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 
 ### Set the onValueChange event to trigger on drag end
 
-1. Create a new action on the Initialized event.
-1. On the Logic tab, inside the Client Actions section, search for the  RangeSliderInterval folder under OutSystemsUI.Drag the SetRangeSliderIntervalChangeOnDragEnd client action to the Initialized event flow.
-1. Set the WidgetId property of the action to the RangeSliderIntervalId returned from the Initialized event.
+1. Create a new action on the **Initialize** event.
+1. On the Logic tab, in the **RangeSliderInitialize** folder, drag the **SetRangeSliderChangeOnDragEnd** client action to the **Initialize** event flow.
+1. Set the **WidgetId** property of the action to the **RangeSliderIntervalId** returned from the initialized event.
 
     ![Set onValue Change event](images/rangesliderinterval-ondragend-ss.png)
 

@@ -55,6 +55,10 @@ This example demonstrates how to get the coordinates of a location when the user
 
     ![Create 2 new variables](<images/map-variables-ss.png>)
 
+1. From the Toolbox, drag the Marker block onto the Drag markers here screen area.
+    
+    On the **Properties** tab, set the **Position** property to Latitude + "," + Longitude
+
 1. Create a handler for the event and assign the new marker coordinates to the variables. 
 
     ![Add an Assign to the event handler](<images/map-handler-ss.png>)

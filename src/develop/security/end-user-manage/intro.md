@@ -14,6 +14,9 @@ In the past, OutSystems subscriptions did not distinguish between internal and e
 ## Anonymous Users
 Anonymous users do not count toward the user limits specified in your subscription. Users who use your app and who don't log in and also don't share any personally-identifiable information (name, email, mobile phone, etc.) are anonymous. For example, people who visit your website (an OutSystems app) and just browse the information without logging in are anonymous end users.
 
+## End User Limits
+OutSystems subscriptions typically include rights to run applications serving up to a specified number of end users, with options for upgrading end user capacity that vary by subscription. You can review your end user limits within the Customer Portal and you can see the current internal and external end user count displayed for each runtime environment within Service Center. If you have multiple production runtime environments, you'll sum the end user counts for each to determine your total end user count. From this, you can subtract any end users who are served by apps in more than one production runtime environment, to avoid counting the same user multiple times. When your end user count exceeds the end user limit specified in your subscription (internal or external), you need to upgrade to remain in compliance with the license terms. Please contact your OutSystems sales representative for assistance.
+
 ## Managing your End Users
 You can [manage the end users](accessing-users.md) of your OutSystems applications through the **Users** console, which is available at `http://<environment address>/Users`.
 

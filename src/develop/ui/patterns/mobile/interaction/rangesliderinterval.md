@@ -21,7 +21,7 @@ In this example, we create a Range Slider Interval that allows the user to selec
 
     The Range Slider Interval widget is displayed.
 
-    ![Range SLider Intrval widget](images/rangesliderinterval-widget-ss.png)
+    ![Range SLider Interval widget](images/rangesliderinterval-widget-ss.png)
 
     If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
 
@@ -35,7 +35,7 @@ In this example, we create a Range Slider Interval that allows the user to selec
     
     e. In Service Studio, in the Toolbox, search for the widget again.
 
-1. From the Toolbox, drag the **Range Slider Interval** widget into the Main Content area of your application's screen, and on the **Properties** tab, enter the **MinValue**, **MaxValue**, **StartingValueStart**, and **StartingValueEnd** values. 
+1. From the Toolbox, drag the **Range Slider Interval** widget into the Main Content area of your application's screen, and on the **Properties** tab, enter the **MinValue**, **MaxValue**, **StartingValueFrom**, and **StartingValueTo** values. 
 
     In this example, we add static values.
 
@@ -75,18 +75,16 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| MinValue (Decimal): Mandatory  |  Slider's minimum value. <p>Examples <ul><li>0 - The slider's minimum value is 0.</li><li>12 - The slider's minimum value is 12</li> </ul></p> |
-| MaxValue (Decimal): Mandatory  |  Slider's maximum value. <p>Examples <ul><li>100 - The slider's maximum value is 100.</li></ul></p> |
-| StartingValueStart (Decimal): Mandatory | Slider's default start value. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default start value when the page is rendered is 10.</li></ul></p> |
-| StartingValueEnd (Decimal): Mandatory | Slider's default end value. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default end value when the page is rendered is 10.</li></ul></p> |
-|Orientation (Orientation Identifier): Optional|Set the direction of the RangeSliderInterval. By default, horizontal.|
-|Size (Text): Optional|Set the RangeSliderInterval size. If horizontal, the size is the width. Otherwise (vertical), the size is the height.  Accepts any kind of unit (px, %, vw). By default, ‘100%’.|
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the myclass style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the myclass1 and myclass2 styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
-|OptionalConfigs.ShowFloatingLabel (Boolean): Optional|Set True to add a floating label above the handler.|
-|OptionalConfigs.Step (Decimal): Optional|Slider moves in increments of Step. If Step is 10, the slider will go from 0 to 10, to 20, to 30, etc.|
-|OptionalConfigs.ShowTickMarks
- (Boolean): Optional
-|Show tick marks below the slider. To generate the tick marks, you will need to set the TickMarksInterval.|
-|---|---|
-|---|---|
+| MinValue (Decimal): Mandatory  |  Slider's minimum value. <br> Examples: <ul><li>0 - The slider's minimum value is 0.</li><li>12 - The slider's minimum value is 12</li> </ul> |
+| MaxValue (Decimal): Mandatory  |  Slider's maximum value. <br>Examples: <ul><li>100 - The slider's maximum value is 100.</li></ul> |
+| StartingValueFrom (Decimal): Mandatory | Slider's default start value. Must be between min and max values. <br>Examples: <ul><li>10 - Slider's default start value when the page is rendered is 10.</li></ul> |
+| StartingValueTo (Decimal): Mandatory | Slider's default end value. Must be between min and max values. <br>Examples: <ul><li>10 - Slider's default end value when the page is rendered is 10.</li></ul> |
+|Orientation (Orientation Identifier): Optional|Set the direction of the Range Slider Interval. Default value is horizontal.|
+|Size (Text): Optional|Set the size of the Range Slider Interval. If the slider's orientation is horizontal, the size you set will be the width of the Range Slider Interval. Otherwise (vertical), the size you set will be the height. Accepts any kind of unit (px, %, vw). Default value is 100% .|
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br>Examples: <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the myclass style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the myclass1 and myclass2 styles to the UI styles being applied.</li></ul><br>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|OptionalConfigs.ShowFloatingLabel (Boolean): Optional|Set to True to add a floating label above the handler.|
+|OptionalConfigs.Step (Decimal): Optional|Slider moves in increments of steps. If the step is set to 10, the slider increases or decreases in units of 10, for example, 0 to 10, to 20, to 30, and so on.|
+|OptionalConfigs.ShowTickMarks (Boolean): Optional|Set to True to display tick marks below the slider. Set to True to display tick marks below the slider. Default value is False. To generate the tick marks, you must set the TickMarksInterval to True.|
+|OptionalConfigs.TickMarksInterval (Integer): Optional|Range interval after which a tick mark is displayed (when ShowTickMarks is set to True). For example, if TickMarksInterval = 5, a tick mark is shown for each 5 steps. The value can not be less than 0 (library restraint).|
+|OptionalConfigs.IsDisabled (Boolean): Optional|Set as True to disable the Range Slider Interval. Default value is True.|
 

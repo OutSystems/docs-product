@@ -64,26 +64,27 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 
 ### Set the onValueChange event to trigger on drag end
 
-1. Create a new action on the **Initialize** event.
-1. On the Logic tab, in the **RangeSliderInitialize** folder, drag the **SetRangeSliderChangeOnDragEnd** client action to the **Initialize** event flow.
-1. Set the **WidgetId** property of the action to the **RangeSliderIntervalId** returned from the initialized event.
+1. Create a new action on the **Initialized** event.
+2. On the **Logic** tab, in the **RangeSliderInterval** folder, drag the **SetRangeSliderChangeOnDragEnd** client action to the **Initialized** event flow.
+3. Set the **WidgetId** property of the action to the **RangeSliderIntervalId** returned from the initialized event.
 
     ![Set onValue Change event](images/rangesliderinterval-ondragend-ss.png)
 
-By using this action, the change events will only be triggered when the user releases the slider.
+By using this action, the change event is only triggered when the user releases the slider.
 
 **Note:** If you're refreshing a query based on the value of the slider, we recommend using this action.
 
 
 ### Change the decimal format on the tooltip when the ShowFloatingLabel parameter is True
 
-1. Create a new action on the Initialized event.
-1. On Initialized event flow drag a JavaScript node.
-1. On the JavaScript node, create a new input parameter called RangeSliderIntervalId, of type text.
-1. Set the RangeSliderIntervalId parameter of the JavaScript node to the RangeSliderIntervalId returned from the Initialized event.
-1. On the JavaScript Node, paste the following code (on the CustomFormat you should add the desired decimal numbers. On our example we changed it to 2)
+1. Create a new action on the **Initialized** event.
+2. Drag a JavaScript node to the **Initialized** event flow.
+3. On the JavaScript node, create a new input parameter called **RangeSliderIntervalId**, of type Text.
+4. Set the **RangeSliderIntervalId** parameter of the JavaScript node to the **RangeSliderIntervalId** returned from the initialized event.
+5. On the JavaScript node, paste the following code:
 
     ``OutSystems.OSUI.Patterns.RangeSliderAPI.GetRangeSliderItemById($parameters.RangeSliderIntervalId).provider.updateOptions({tooltips: wNumb({decimals: CustomFormat })});``
 
+    **Note:** For the **CustomFormat**, add the desired decimal numbers. In this example we changed it to 2.
 
     ![Change Custom Format](images/rangesliderinterval-format-ss.png)

@@ -75,7 +75,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| MinValue (Decimal): Mandatory  |  Slider's minimum value. <br> Examples: <ul><li>0 - The slider's minimum value is 0.</li><li>12 - The slider's minimum value is 12</li> </ul> |
+| MinValue (Decimal): Mandatory | Slider's minimum value. <br>Examples: <ul><li>0 - The slider's minimum value is 0.</li><li>12 - The slider's minimum value is 12</li> </ul> |
 | MaxValue (Decimal): Mandatory  |  Slider's maximum value. <br>Examples: <ul><li>100 - The slider's maximum value is 100.</li></ul> |
 | StartingValueFrom (Decimal): Mandatory | Slider's default start value. Must be between min and max values. <br>Examples: <ul><li>10 - Slider's default start value when the page is rendered is 10.</li></ul> |
 | StartingValueTo (Decimal): Mandatory | Slider's default end value. Must be between min and max values. <br>Examples: <ul><li>10 - Slider's default end value when the page is rendered is 10.</li></ul> |
@@ -86,5 +86,5 @@ After following these steps and publishing the module, you can test the pattern 
 |OptionalConfigs.Step (Decimal): Optional|Slider moves in increments of steps. If the step is set to 10, the slider increases or decreases in units of 10, for example, 0 to 10, to 20, to 30, and so on.|
 |OptionalConfigs.ShowTickMarks (Boolean): Optional|Set to True to display tick marks below the slider. Set to True to display tick marks below the slider. Default value is False. To generate the tick marks, you must set the TickMarksInterval to True.|
 |OptionalConfigs.TickMarksInterval (Integer): Optional|Range interval after which a tick mark is displayed (when ShowTickMarks is set to True). For example, if TickMarksInterval = 5, a tick mark is shown for each 5 steps. The value can not be less than 0 (library restraint).|
-|OptionalConfigs.IsDisabled (Boolean): Optional|Set as True to disable the Range Slider Interval. Default value is True.|
+|OptionalConfigs.IsDisabled (Boolean): Optional|Set as True to disable the Range Slider Interval. Default value is True.build|
 

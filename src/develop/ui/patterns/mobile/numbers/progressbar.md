@@ -7,7 +7,7 @@ summary: Progress Bar displays the progress of a task by incrementing values in 
 
 You can use the Progress Bar to display percentage values by incrementing values in a bar and to show the current progress of a task flow.
 
-![](<images/progressbar-1-ss.png>)
+![](<images/progressbar-example-ss.png>)
 
 **How to use the Progress Bar UI Pattern**
 
@@ -15,7 +15,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     The Progress Bar widget is displayed.
 
-    ![](<images/progressbar-2-ss.png>)
+    ![](<images/progressbar-widget-ss.png>)
 
     If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
 
@@ -29,21 +29,19 @@ You can use the Progress Bar to display percentage values by incrementing values
     
     e. In Service Studio, in the Toolbox, search for the widget again.
 
-1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen. On the **Properties** tab, in the **Progress** property, enter the progress percentage. In this example we enter `60` but you can also use functions or local variables.
 
-    ![](<images/progressbar-3-ss.png>)
+    ![](<images/progressbar-dragwidget-ss.png>)
 
-1. On the **Properties** tab, in the **Progress** property, enter the progress percentage. In this example we enter `55` but you can also use functions or local variables.
+ 1. Add the text you want to appear as the Progress Bar title. 
 
-    ![](<images/progressbar-4-ss.png>)
+    In this example, we add `Ongoing tasks`.
 
-1. Add the text you want to appear as the Progress Bar title. In this example, we add `On Going`.
-
-    ![](<images/progressbar-10-ss.png>)
+    ![](<images/progressbar-text-ss.png>)
 
 1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, and size of the Progress Bar.
 
-    ![](<images/progressbar-9-ss.png>)
+    ![](<images/progressbar-properties-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -30,8 +30,8 @@ In the diagram below, gray denotes the classes added by OutSystems UI and green 
 |**Modifier** | **Attribute** |  **Element**  |
 |---|---|---| 
 |IsVertical | .osui-range-slider–is-vertical | .osui-range-slider | 
-|Orientation|.noUi-horizontal <br>.noUi-vertical|.noUi-target| 
-|Direction|.noUi-ltr <br>.noUi-rtl|.noUi-target| 
+|Orientation|.noUi-horizontal <br/>.noUi-vertical|.noUi-target| 
+|Direction|.noUi-ltr <br/>.noUi-rtl|.noUi-target| 
 |Size| --range-slider-size|.osui-range-slider|
 |Handler Size|--range-slider-handle-size|.osui-range-slider| 
 |Slider Thickness|--range-slider-thickness|| 

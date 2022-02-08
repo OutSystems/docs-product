@@ -26,6 +26,7 @@ In the diagram below, gray denotes the classes added by OutSystems UI and green 
 ![Structure diagram](images/rangeslider-14-diag.png)
 
 ### Modifiers 
+
 |**Modifier** | **Attribute** |  **Element**|
 |---|---|---| 
 |IsVertical| .osui-range-slider–is-vertical| .osui-range-slider |
@@ -36,14 +37,17 @@ In the diagram below, gray denotes the classes added by OutSystems UI and green 
 |Slider Thickness| --range-slider-thickness| .osui-range-slider|
 
 ## Client actions 
+
 |**Client action** | **Description** | **Parameters**|
 |---|---|---| 
 |SetRangeSliderChangeOnDragEnd| You can use this action on the **RangeSliderInitialize** event or on the screen's **OnReady** event. By using this action, the change event is only triggered when the user releases the slider. **Tip:** If you're refreshing a query based on the value of the slider, we recommend using this action.| WidgetId: string|
 
 ## API
+
 If you are an advanced user, you might want to use our Range Slider API (OutSystems.OSUI.Patterns.RangeSliderAPI) for more advanced use cases. 
 
 ### Methods
+
 |**Function**|**Description**|**Parameters**| 
 |---|---|---| 
 |ChangeProperty|Changes the Range Slider’s property.| <li> rangeSliderId: string</li><li>propertyName: string</li><li>propertyValue: any</li>| 

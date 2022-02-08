@@ -71,9 +71,9 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 
     ![Set onValue Change event](images/rangesliderinterval-ondragend-ss.png)
 
-By using this action, the change event is only triggered when the user releases the slider.
+    By using this action, the change event is only triggered when the user releases the slider.
 
-**Note:** If you're refreshing a query based on the value of the slider, we recommend using this action.
+    **Note:** If you're refreshing a query based on the value of the slider, we recommend using this action.
 
 
 ### Change the decimal format on the tooltip when the ShowFloatingLabel parameter is True

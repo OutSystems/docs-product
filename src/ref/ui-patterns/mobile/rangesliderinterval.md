@@ -14,10 +14,10 @@ summary: Advanced use cases for the Range Slider Interval UI Pattern
 
 ## Structure
 
-OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introduction/) for naming CSS classes and structures. 
+OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introduction/) for naming CSS classes and structures: 
 
-``osui-§{pattern-name}__§{pattern-element}``
-``osui-§{pattern-name}__§{pattern-element}--is/has-§{pattern-modifier}``
+* ``osui-§{pattern-name}__§{pattern-element}``
+* ``osui-§{pattern-name}__§{pattern-element}--is/has-§{pattern-modifier}``
 
 These rules don’t apply to Patterns based on providers, as is the case with the Range Slider Interval Pattern. In this case, the HTML created by the provider, follows the provider’s own conventions. 
 
@@ -64,8 +64,10 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 ### Set the onValueChange event to trigger on drag end
 
 1. Create a new action on the **Initialized** event.
-2. On the **Logic** tab, in the **RangeSliderInterval** folder, drag the **SetRangeSliderChangeOnDragEnd** client action to the **Initialized** event flow.
-3. Set the **WidgetId** property of the action to the **RangeSliderIntervalId** returned from the initialized event.
+
+1. On the **Logic** tab, in the **RangeSliderInterval** folder, drag the **SetRangeSliderChangeOnDragEnd** client action to the **Initialized** event flow.
+
+1. Set the **WidgetId** property of the action to the **RangeSliderIntervalId** returned from the initialized event.
 
     ![Set onValue Change event](images/rangesliderinterval-ondragend-ss.png)
 
@@ -77,10 +79,13 @@ By using this action, the change event is only triggered when the user releases 
 ### Change the decimal format on the tooltip when the ShowFloatingLabel parameter is True
 
 1. Create a new action on the **Initialized** event.
-2. Drag a JavaScript node to the **Initialized** event flow.
-3. On the JavaScript node, create a new input parameter called **RangeSliderIntervalId**, of type Text.
-4. Set the **RangeSliderIntervalId** parameter of the JavaScript node to the **RangeSliderIntervalId** returned from the initialized event.
-5. On the JavaScript node, paste the following code:
+
+1. Drag a JavaScript node to the **Initialized** event flow.
+
+1. On the JavaScript node, create a new input parameter called **RangeSliderIntervalId**, of type Text.
+
+1. Set the **RangeSliderIntervalId** parameter of the JavaScript node to the **RangeSliderIntervalId** returned from the initialized event.
+1. On the JavaScript node, paste the following code:
 
     ``OutSystems.OSUI.Patterns.RangeSliderAPI.GetRangeSliderItemById($parameters.RangeSliderIntervalId).provider.updateOptions({tooltips: wNumb({decimals: CustomFormat })});``
 

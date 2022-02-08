@@ -14,6 +14,14 @@ summary: Advanced use cases for the Range Slider UI Pattern
   
 ## Structure 
   
+OutSystems UI Patterns follow the BEM convention for naming CSS classes and structures. 
+
+* osui-§{pattern-name}__§{pattern-element}
+* osui-§{pattern-name}__§{pattern-element}--is/has-§{pattern-modifier}
+
+These rules don’t apply to Patterns based on external libraries/providers, as is the case for the Range Slider Pattern In this case, the HTML is created by the provider, following their conventions. 
+
+In the diagram below, gray denotes the classes added by OutSystems UI and green denotes the classes added by the provider.
 
 
 ### Modifiers 

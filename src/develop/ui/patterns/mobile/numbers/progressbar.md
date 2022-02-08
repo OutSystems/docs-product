@@ -7,7 +7,7 @@ summary: Progress Bar displays the progress of a task by incrementing values in 
 
 You can use the Progress Bar to display percentage values by incrementing values in a bar and to show the current progress of a task flow.
 
-![](<images/progressbar-example-ss.png>)
+![Example of Progress Bar Pattern](<images/progressbar-example-ss.png>)
 
 **How to use the Progress Bar UI Pattern**
 
@@ -15,7 +15,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     The Progress Bar widget is displayed.
 
-    ![](<images/progressbar-widget-ss.png>)
+    ![Progress Bar widget](<images/progressbar-widget-ss.png>)
 
     If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
 
@@ -31,20 +31,19 @@ You can use the Progress Bar to display percentage values by incrementing values
 
 1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen. On the **Properties** tab, in the **Progress** property, enter the progress percentage. In this example we enter `60` but you can also use functions or local variables.
 
-    ![](<images/progressbar-dragwidget-ss.png>)
+    ![Drag widget to screen](<images/progressbar-dragwidget-ss.png>)
 
  1. Add the text you want to appear as the Progress Bar title. 
 
     In this example, we add `Ongoing tasks`.
 
-    ![](<images/progressbar-text-ss.png>)
+    ![Add title to Progress Bar](<images/progressbar-text-ss.png>)
 
-1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, and size of the Progress Bar. 
+1. You can configure the Progress Bar by selecting the pattern, and on the **Properties** tab, for example, the trail color. For more configurations, expand the OptionalConfigs property.
 
     For more configurations, expand the **OptionalConfigs** property.
 
-
-    ![](<images/progressbar-properties-ss.png>)
+    ![Set optional properties](<images/progressbar-prop-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

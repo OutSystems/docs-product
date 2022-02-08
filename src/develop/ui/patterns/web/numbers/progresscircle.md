@@ -1,11 +1,11 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: runtime-traditionalweb
 summary: Displays the current progress of a task using circular or semi-circular progress indicators.
 ---
 
 # Progress Circle
 
-You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge. <!-- You can also show progress in a Progress Bar or Progress Circle Fraction display type.  When using the Progress Circle Pattern, you must be consistent, for example, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. -->
+You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge. 
 
  ![](<images/progresscircle-2-ss.png>)
 

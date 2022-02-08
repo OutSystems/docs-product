@@ -69,6 +69,10 @@ In this example, we create a Range Slider Interval that allows the user to selec
 
     ![Add an assign to the client action](images/rangesliderinterval-assign-ss.png)
 
+1. You can configure the  Range Slider Interval by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, the orientation. For more configurations, expand the **OptionalConfigs** property.   
+
+    ![Set optional properties](images/rangesliderinterval-properties-ss.png)
+
 After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties

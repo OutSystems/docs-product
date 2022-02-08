@@ -39,7 +39,10 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     ![](<images/progressbar-text-ss.png>)
 
-1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, and size of the Progress Bar.
+1. On the **Properties** tab, you can customize Progress Bar's look and feel by setting any of the optional properties, for example, the shape, color, and size of the Progress Bar. 
+
+    For more configurations, expand the **OptionalConfigs** property.
+
 
     ![](<images/progressbar-properties-ss.png>)
 

@@ -60,10 +60,12 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 ### Set the onValueChange event to trigger OnDragEnd
 
 1. Create a new action on the **Initialize** event.
+
 1. On the **Logic** tab, in the **RangeSlider** folder, drag the **SetRangeSliderChangeOnDragEnd** client action to the **Initialize** event flow.
+
 1. Set the **WidgetId** property of the action to the **RangeSliderId** returned from the initialized event.
 
-![Set the onValueChange event to trigger OnDragEnd](images/rangeslider-onenddrag-ss.png)
+    ![Set the onValueChange event to trigger OnDragEnd](images/rangeslider-onenddrag-ss.png)
 
 By using this action, the change events is only triggered when the user releases the slider.
 
@@ -72,8 +74,11 @@ By using this action, the change events is only triggered when the user releases
 ### Change the decimal format on the tooltip when using the ShowFloatingLabel parameter as true
 
 1. Create a new action on the **Initialize** event.
+
 1. Drag a JavaScript node to the **Initialize** event flow.
+
 1. On the JavaScript node, create a new input parameter called **RangeSliderId**, of type text.
+
 1. Set the **RangeSliderId** parameter of the JavaScript node to the **RangeSliderId** returned from the initialized event.
 On the JavaScript node, paste the following code:
 

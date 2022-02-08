@@ -23,6 +23,7 @@ These rules don’t apply to Patterns based on external libraries/providers, as 
 
 In the diagram below, gray denotes the classes added by OutSystems UI and green denotes the classes added by the provider.
 
+![](images/rangeslider-14-diag.png)
 
 ### Modifiers 
 |**Modifier** | **Attribute** |  **Element**|

@@ -7,11 +7,15 @@ summary: Advanced use cases for the Progress Bar
 
 ## Structure
 
-OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introduction/) for naming CSS classes and structures.
-* osui-§{pattern-name}__§{pattern-element}
-* osui-§{pattern-name}__§{pattern-element}-is/has§{pattern-modifier}
+OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introduction/) for naming CSS classes and structures:
 
-**Base Progress Bar block structure**
+* ``osui-§{pattern-name}__§{pattern-element}``
+
+* ``osui-§{pattern-name}__§{pattern-element}-is/has§{pattern-modifier}``
+
+**Progress Bar block structure**
+
+![Progress Bar Structure](images/progressbar-diag.png)
 
 ### Modifiers
 
@@ -27,23 +31,22 @@ OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introductio
 
 |**Client action**|**Description**|**Parameters**|
 |---|---|---|
-|SetProgressBarValue|Use this action to set a value on the progress bar whenever you feel like it. <br/> By using this action, you can set the progress bar’s value without changing the original value of the progress bar.|<li>WidgetId: string </li><li>Progress: integer</li>|
+|SetProgressBarValue|Use this action to set a value on the progress bar. <br/> By using this action, you can set the progress bar’s value without changing the original value of the progress bar.|<li>WidgetId: string </li><li>Progress: integer</li>|
 
 ## API
 
-For advanced users, you can use the  Progress Bar API (OutSystems.OSUI.Patterns.ProgressBarAPI) for more advanced use-cases.
-
+For advanced users, you can use the Progress Bar API (OutSystems.OSUI.Patterns.ProgressBarAPI) for more advanced use cases.
 
 ### Methods
 
 |**Function**|**Description**|**Parameters**|
 |---|---|---|
-|ChangeProperty|Function that will change the property of a given ProgressBar.|<ul><li>progressId: string</li><li> propertyName: string</li><li>propertyValue: any</li></ul>|
-|Create|Create the new Progress instance and add it to the progressMap.| <li>progressId: string</li>
+|ChangeProperty|Changes the property of a given progress bar.|<ul><li>progressId: string</li><li> propertyName: string</li><li>propertyValue: any</li></ul>|
+|Create|Creates the new progress instance and adds it to the ProgressMap.| <li>progressId: string</li>
 configs: string|
-|Destroy|Function that will destroy the instance of the given Progress|<li>progressId: string</li>|
-|GetAllProgressItemsMap|Function that will return the Map with all the Progress instances at the page|<li>Returns array of Ids</li>|
-|GetProgressById|Function that gets the instance of Progress, by a given ID.|<li>progressId: string</li>|
-|Initialize|Function that will initialize the pattern instance.|<li>progressId: string</li>|
-|SetProgressBarValue|Set a value on the progress bar.|<li>progressId: string</li><li>progress: number</li>|
+|Destroy|Destroys the instance of the given Progress.|<li>progressId: string</li>|
+|GetAllProgressItemsMap|FuReturns the Map with all the Progress instances on the page.|<li>Returns array of Ids</li>|
+|GetProgressById|Gets the instance of Progress, by a given ID.|<li>progressId: string</li>|
+|Initialize|Initializes the pattern instance.|<li>progressId: string</li>|
+|SetProgressBarValue|Sets a value on the progress bar.|<li>progressId: string</li><li>progress: number</li>|
 

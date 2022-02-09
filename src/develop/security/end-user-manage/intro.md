@@ -24,6 +24,6 @@ In the past, some OutSystems subscriptions did not distinguish between internal 
 ## Related resources
 - [Classify Users as Internal Users](classify-internal-users.md): includes information on configuring the email domains that will be recognized as your own, for purposes of classifying users as internal or external
 - [End User Authentication](end-user-authentication/intro.md): information on external authentication methods
-- [Managing IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md): managing developers access, administrators, and other roles with access to OutSystems management tools
+- [Managing IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md): manage developer access, administrators, and other roles with access to OutSystems management tools
 - [Group management](groups.md): creating and managing groups of users
 - [Multi-tenant applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/How_to_Build_a_Multi-tenant_Application#Managing_Tenants_and_End-Users): managing different cohorts of users from different tenants

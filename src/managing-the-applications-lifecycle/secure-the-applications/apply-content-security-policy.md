@@ -192,7 +192,7 @@ An example of this behavior is shown below:
 1. An end-user logs into a portal page ([https://portal.example.com](https://portal.example.com)) which has authentication mechanisms to create first-party cookies.
 1. An **OutSystems** app in an HTML iframe ([https://app.example.net](https://app.example.net)), which is on a different domain, attempts to create third-party cookies. The Safari browser blocks all access to the domain/application that is consuming the first party cookies. The content in the iframe is not rendered.
 
-![Safari blocks iframe from 3rd party app](images/safari-blocks-iframe.png)
+![Safari blocks iframe from 3rd party app](images/safari-blocks-iframe-diag.png)
 
 <div class="info" markdown="1">
 
@@ -224,7 +224,7 @@ The following workflow uses Storage Access API as follows:
 1. The user interacts with the **OutSystems** app as the first party. The example shown in the illustration prompts the user to log in and then accept the use of cookies. Once this is done, the browser knows that the user has seen and used the site. 
 1. A first-party cookie is created by the third-party app. This establishes the website in the iframe as visited for the purposes of the underlying Storage Access API cookie policy.
 
-![Safari allows iframe from 3rd party app](images/safari-allows-iframe.png)
+![Safari allows iframe from 3rd party app](images/safari-allows-iframe-diag.png)
 
 
 Designers may use the following guidelines as a basis for designing a natural end-user workflow that presents minimal friction using Storage Access API.

@@ -4,25 +4,25 @@ summary: Learn how to check the technical debt of your team's apps.
 en_title: Getting started as a team lead
 ---
 
-# Getting started as a team lead
+# Getting started as a team lead 
 
-As a team lead, the Architecture Dashboard provides you with an overview of the technical debt of organization's technical debt as well as detailed overview of the technical debt of your teams's apps.
+As a team lead, **Architecture Dashboard** provides you with an overview of the technical debt of organization's technical debt as well as detailed overview of the technical debt of your teams's apps.
 
 From the Apps canvas, you can drill down into the team's problematic modules, and take the necessary steps to reduce the technical debt score for these areas.
 
 This guide assumes the following:
 
-* Your infrastructure is already set up in Architecture Dashboard.
+* Your infrastructure is already set up in **Architecture Dashboard**.
 
-* Your IT user is already associated with Architecture Dashboard.
+* Your IT user is already associated with **Architecture Dashboard**.
 
-After logging in to [Architecture Dashboard](https://architecture.outsystems.com) with your OutSystems account, follow these steps:
+After logging in to [Architecture Dashboard](https://architecture.outsystems.com) with your **OutSystems** account, follow these steps:
 
 ## Check the technical debt of your team apps
 
 The Apps canvas gives you an overview of all the apps on your infrastructure.
 
-To only see apps from your team, from the **Team** dropdown, select your team.
+To only see apps from your team, select your team from the **Team** dropdown.
 
 ![Select your team](images/use-team-ad.png)
 
@@ -73,24 +73,24 @@ The **Findings** section displays all the occurrences of the code pattern. To se
 
 ![Findings](images/use-findings-ad.png)
 
-After checking a finding, you can change it's state to one of the following:
+After checking a finding, you can change its state to one of the following:
 
 * If you fix the finding, set the state to **Resolve as already fixed**. This lets other developers in your team know it's fixed. After the next synchronization, if you have solved the finding correctly, it disappears. Otherwise, the finding reverts to **Open**.
 
-* If the finding is a false positive, set the state to **Resolve as false positive**. After the next synchronization, the finding is not counted towards the total technical debt score.
+* If the finding is a false positive, set the state to **Resolve as false positive**. After the next synchronization, the finding is not counted toward the total technical debt score.
 
-* If the finding isn't a false positive, set the state to **Resolve as won't fix** and detail the reason for not fixing it. After the next synchronization, the finding is not counted towards the total technical debt score.
+* If the finding isn't a false positive, set the state to **Resolve as won't fix** and detail the reason for not fixing it. After the next synchronization, the finding is not counted toward the total technical debt score.
 
-* To temporarily remove the finding from the total debt calculation, set the state to **Remind me later (30 days)**. After the next synchronization, and during the next 30 days, the finding is not counted towards the total technical debt score.
+* To temporarily remove the finding from the total debt calculation, set the state to **Remind me later (30 days)**. After the next synchronization, and during the next 30 days, the finding is not counted toward the total technical debt score.
 
 ## Get an overview of the technical debt of your team apps
 
-The **Infrastructure overview** dashboard gives you an understanding of the current status, distribution and evolution of the technical debt across all the apps of your team.
+The **Infrastructure overview** dashboard gives you an understanding of the current status, distribution, and evolution of the technical debt across all the apps of your team.
 
 ![overview dashboard](images/overview-dashboard-ad.png)
 
-To access the **Infrastructure overview** dashboard, click the **Overview** tab in the Architecture Dashboard.
+To access the **Infrastructure overview** dashboard, click the **Overview** tab in **Architecture Dashboard**.
 
 Filter the analysis data by team, application, code pattern category, or date range, to get the data that you require to do the proper follow up. You can identify, for example, the apps and modules of your team that contribute more to your technical debt.
 
-[See here](overview-dashboard.md) more details about the Infrastructure overview dashboard.
+See this article, [Get an overview of the overall technical debt](overview-dashboard.md), for more details.

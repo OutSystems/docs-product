@@ -46,7 +46,7 @@ Keep in mind that you must use the same flavour of database engine for the 3 dat
 * Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
-* Azure SQL Database V12
+* Azure SQL Database V12 (if OutSystems Platform is Self-Managed in Azure IaaS)
 * Oracle 19c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP3
 * Oracle 18c (Standard Edition or Enterprise Edition), since Platform Server 11 – Release Oct.2019 CP2
 * Oracle 12c (12.1 or 12.2, Standard Edition or Enterprise Edition)

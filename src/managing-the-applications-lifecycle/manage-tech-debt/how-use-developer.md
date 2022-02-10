@@ -38,11 +38,11 @@ Selecting a module highlights the dependencies of the module (if any).
 
 ## Find and understand the causes of technical debt in the module
 
-To see the causes of technical debt in the app, click the **Open module report** button in the side panel.
+To see the causes of technical debt in the module, click the **Open module report** button in the side panel.
 
 ![Open module report](images/use-report-ad.png)
 
-You can filter the report based on a specific app, module, category, when it was analyzed, the findings status, as well as specific users.
+You can filter the report based on your team(s), a specific app, module, category, when it was analyzed, the findings status, as well as specific users.
 
 ![Filters](images/use-filters-ad.png)
 
@@ -66,12 +66,12 @@ To open **Service Studio** and navigate to the element where a code patterns occ
 
 Your browser may ask you to confirm that you want to open **Service Studio**. In Chrome, confirm that you want to open **Service Studio** by clicking **Open Service Studio**.
 
-After checking a specific finding, change the state of the finding depending on your action:
+After checking a specific finding, change the status of the finding depending on your action:
 
-* If you fix the finding, set the state to **Resolve as already fixed**. This lets other developers in your team know it's fixed. After the next synchronization, if you have solved the finding correctly, it disappears. Otherwise, the finding reverts to **Open**.
+* If you fix the finding, set the status to **Resolve as already fixed**. This lets other developers in your team know it's fixed. After the next synchronization, if you have solved the finding correctly, it disappears. Otherwise, the finding reverts to **Open**.
 
-* If you don't fix the finding because the finding is a false positive, set the state to **Resolve as false positive**. After the next synchronization, the finding is not counted toward the total technical debt score.
+* If you don't fix the finding because the finding is a false positive, set the status to **Resolve as false positive**. After the next synchronization, the finding is not counted toward the total technical debt score.
 
-* If you don't fix the finding, but the finding isn't a false positive, set the state to **Resolve as won't fix** and detail the reason for not fixing it. After the next synchronization, the finding is not counted toward the total technical debt score.
+* If you don't fix the finding, but the finding isn't a false positive, set the status to **Resolve as won't fix** and detail the reason for not fixing it. After the next synchronization, the finding is not counted toward the total technical debt score.
 
-* To temporarily remove the finding from the total debt calculation, set the state to **Remind me later (30 days)**. After the next synchronization, and during the next 30 days, the finding is not counted toward the total technical debt score.
+* To temporarily remove the finding from the total debt calculation, set the status to **Remind me later (30 days)**. After the next synchronization, and during the next 30 days, the finding is not counted toward the total technical debt score.

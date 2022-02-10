@@ -279,6 +279,26 @@ Through the **Remove Unused Dependencies**, Service Studio will automatically re
 
 ![](images/tt-unused.gif)
 
+## Work on complex screens with less effort 
+
+Complex screens present lots of information at design time. Many times, blocks are used to build such screens in a modular way. 
+
+Did you know that it’s possible to show or hide all the block’s content with a single toggle? You can use a visibility toggle for blocks that have a placeholder inside a False branch of an IF widget.
+
+![Block within False branch of IF widget](images/tt-toggles-ss.png)
+
+Follow these steps:
+
+1. At the root of the block, add an IF with a False condition.
+
+1. In the False branch, add a placeholder.
+
+1. Put the block inside a screen (Service Studio automatically presents a visibility toggle).
+
+1. To hide the content in the placeholder, select **Show visible placeholders**.
+
+    ![Visibility toggle example](images/tt-toggles-example-ss.gif)
+
 # Create new elements
 
 ## Create an Aggregate from an Entity

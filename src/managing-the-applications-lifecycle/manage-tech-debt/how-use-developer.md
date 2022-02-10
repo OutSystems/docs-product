@@ -16,7 +16,7 @@ This guide assumes the following:
 
 ## Check the technical debt of the modules of an app
 
-The canvas gives you an overview of the apps in the infrastructure that you have access to.
+The apps page gives you an overview of the apps in the infrastructure that you have access to.
 
 Each square is an app. It shows the app name and the app type.
 

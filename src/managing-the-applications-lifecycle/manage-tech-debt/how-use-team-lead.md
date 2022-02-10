@@ -20,7 +20,7 @@ After logging in to [Architecture Dashboard](https://architecture.outsystems.com
 
 ## Check the technical debt of your team apps
 
-The Apps canvas gives you an overview of all the apps on your infrastructure.
+The Apps page gives you an overview of all the apps on your infrastructure.
 
 To only see apps from your team, select your team from the **Team** dropdown.
 

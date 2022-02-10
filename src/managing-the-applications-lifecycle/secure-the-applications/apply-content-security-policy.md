@@ -169,7 +169,7 @@ https://YOUR_APP_URL
 
 ## Common problems with embedded iframes in iOS apps
 
-### iframe content not rendered
+### iframe content is blocked
 
 If iframe content displays as expected on Android on a browser but not on iOS, the most probable cause is that the `outsystems://` scheme is missing.
 
@@ -185,12 +185,14 @@ You can get more information if you notice this behavior from the **Service Cent
 
 ### iframe content is displayed but does not behave as expected
 
-With the [version 2.3](https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/) release of Apple’s Webkit Intelligent Tracking Prevention (ITP) in 2017, the Safari browser blocks all cookies for cross-site resources by default. This means that users of Safari on iOS 13 and iPadOS beta, and Safari 13 on macOS, cannot access a reactive **OutSystems** app  that is hosted on a different domain which is embedded in an iframe element.
+With the [version 2.3](https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/) release of Apple’s Webkit Intelligent Tracking Prevention (ITP) in 2017, Safari on iOS 13 and iPadOS beta, and Safari 13 on macOS, blocks all cookies for cross-site resources by default.
+
+In these browsers iframe content displays correctly when the **frame-ancestors** directive field has been configured properly. However, an app that requires cookies to save/transfer user info will not behave as expected.
 
 An example of this behavior is shown below:
 
-1. An end-user logs into a portal page ([https://portal.example.com](https://portal.example.com)) which has authentication mechanisms to create first-party cookies.
-1. An **OutSystems** app in an HTML iframe ([https://app.example.net](https://app.example.net)), which is on a different domain, attempts to create third-party cookies. The Safari browser blocks all access to the domain/application that is consuming the first party cookies. The content in the iframe is not rendered.
+1. An end-user logs into a portal page (`https://portal.example.com`) which has authentication mechanisms to create first-party cookies.
+1. An **OutSystems** app in an HTML iframe (`https://app.example.net`), which is on a different domain, attempts to create third-party cookies. The Safari browser blocks these cookies and the content in the iframe does not behave as expected.
 
 ![Safari blocks iframe from 3rd party app](images/safari-blocks-iframe-diag.png)
 
@@ -205,7 +207,7 @@ In March 2020, Apple published a blog post ([Full Third-Party Cookie Blocking](h
 
 #### OAuth 2.0 Authorization
 
-One method requires the end-user to authenticate third-party apps (such as [https://app.example.net](https://app.example.net) in an iframe) to forward an authorization token to a hosting website which can then establish a first-party login session.
+One method requires the end-user to authenticate third-party apps (such as `https://app.example.net` in an iframe) to forward an authorization token to a hosting website which can then establish a first-party login session.
 
 For more information about implementing this solution see the following documents:
 
@@ -220,12 +222,14 @@ A second method relies on Apple’s Webkit [Storage Access API](https://webkit.o
 
 The following workflow uses Storage Access API as follows:
 
-1. A navigation/redirect moves users from a portal page ([https://portal.example.com](https://portal.example.com)) to the **OutSystems** app ([https://app.example.net](https://app.example.net)) in the iframe.
-1. The user interacts with the **OutSystems** app as the first party. The example shown in the illustration prompts the user to log in and then accept the use of cookies. Once this is done, the browser knows that the user has seen and used the site. 
-1. A first-party cookie is created by the third-party app. This establishes the website in the iframe as visited for the purposes of the underlying Storage Access API cookie policy.
+1. The user accesses the portal page (`https://portal.example.com`).
+1. If a cookie does not exist `https://portal.example.com` redirects the user to the **OutSystems** app (`https://app.example.net`) in the iframe to handle the user interaction.
+1. The user interacts with the **OutSystems** app as the first party, and establishes the website in the iframe as visited for the purposes of the underlying Storage Access API cookie policy. 
+1. The user is redirected to the portal page (`https://portal.example.com`). The content in the iframe displays correctly and behaves as expected.
 
 ![Safari allows iframe from 3rd party app](images/safari-allows-iframe-diag.png)
 
+During all subsequent visits the content in the iframe displays correctly and behaves as expected.
 
 Designers may use the following guidelines as a basis for designing a natural end-user workflow that presents minimal friction using Storage Access API.
 
@@ -238,7 +242,7 @@ Change URLs in the code snippets to reflect the actual project addresses.
 
 ##### Portal page
 
-Include the following elements on the portal page ([https://portal.example.com](https://portal.example.com)):
+Include the following elements on the portal page (`https://portal.example.com`):
 
 
 * A sandbox within the iframe element. Sample text is shown below: 
@@ -271,14 +275,14 @@ Include the following elements on the portal page ([https://portal.example.com](
 
 ##### iframe app
 
-The hosted **OutSystems** app in the iframe element ([https://app.example.net](https://app.example.net)) should begin with a mechanism for the user to authorize the use of cookies.
+The hosted **OutSystems** app in the iframe element (`https://app.example.net`) should begin with a mechanism for the user to authorize the use of cookies.
 
 
 ##### Workflow using Storage Access API
 
-When the user goes to the portal page ([https://portal.example.com](https://portal.example.com)) the following happens:
+When the user goes to the portal page (`https://portal.example.com`) the following happens:
 
-1. The script checks that the browser supports Storage Access API, meaning that the user is on the Safari browser. Cookie properties are set. The user is then sent to the login screen in the **OutSystems** app ([https://app.example.net](https://app.example.net)) hosted in an iframe of the portal.
+1. The script checks that the browser supports Storage Access API, meaning that the user is on the Safari browser. Cookie properties are set. The user is then sent to the login screen in the **OutSystems** app (`https://app.example.net`) hosted in an iframe of the portal.
 2. If no cookies have been previously created for the app in the iframe the user is asked to give consent. 
 
     <div class="info" markdown="1">

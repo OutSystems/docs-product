@@ -31,7 +31,7 @@ OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introductio
 
 |**Client action**|**Description**|**Parameters**|
 |---|---|---|
-|SetProgressBarValue|Use this action to set a value on the progress bar. <br/> By using this action, you can set the progress bar’s value without changing the original value of the progress bar.|<li>WidgetId: string </li><li>Progress: integer</li>|
+|SetProgressBarValue|Use this action to set a value on the progress bar. By using this action, you can set the progress bar’s value without changing the original value of the progress bar.|<li>WidgetId: string </li><li>Progress: integer</li>|
 
 ## API
 

@@ -5,9 +5,9 @@ summary: Allows users to rate a particular item.
 
 # Rating
 
-You can use the Rating UI Pattern to allow users to rate a particular item. 
+You can use the Rating UI Pattern to allow users rate a particular item. 
 
-![](<images/rating-4-ss.png>)
+![](<images/rating-example-ss.png>)
 
 **How to use the Rating UI Pattern**
 
@@ -35,7 +35,7 @@ You can use the Rating UI Pattern to allow users to rate a particular item.
 
     By default, the pattern is already prepared to work as a 5-Star rating pattern. However, you can change the icons to hearts, smiles, thumbs, or any other content.
 
-1. On the **Properties** tab, from the **RatingValue** dropdown, enter the rating number you want displayed. In this example, we enter `2`.  
+1. On the **Properties** tab, from the **RatingValue** dropdown, enter the rating number you want displayed. In this example, we enter `3`.  
     
     ![](<images/rating-5-ss.png>)
 

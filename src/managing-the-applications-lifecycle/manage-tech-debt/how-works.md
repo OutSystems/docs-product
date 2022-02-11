@@ -88,8 +88,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment
@@ -175,8 +175,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment
@@ -262,8 +262,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment
@@ -349,8 +349,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment
@@ -418,7 +418,6 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
-    </tr>
   </tbody>
 </table>
 
@@ -438,8 +437,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment
@@ -525,8 +524,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment
@@ -615,8 +614,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment
@@ -662,7 +661,7 @@ table {min-width: 650px;}
    <td>Assigned app’s modules
    </td>
   </tr>
-    </tr>
+    </tbody>
 </table>
 
 <div class="info" markdown="1">
@@ -680,8 +679,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment
@@ -727,6 +726,7 @@ table {min-width: 650px;}
    <td>No
    </td>
   </tr>
+    </tbody>
 </table>
 
 
@@ -738,8 +738,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment
@@ -797,8 +797,8 @@ table {min-width: 650px;}
 </pre>
 
 <table>
-  <tr>
   <thead>
+  <tr>
    <th rowspan="2" >LifeTime Permissions
    </th>
    <th colspan="3" >Lifetime Role Assignment

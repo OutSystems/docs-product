@@ -295,6 +295,8 @@ Follow these steps:
 
 1. Put the block inside a screen (Service Studio automatically presents a visibility toggle).
 
+1. Add content to the placeholder.
+
 1. To hide the content in the placeholder, select **Show visible placeholders**.
 
     ![Visibility toggle example](images/tt-toggles-example-ss.gif)

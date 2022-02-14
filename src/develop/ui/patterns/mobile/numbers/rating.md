@@ -29,7 +29,7 @@ You can use the Rating UI Pattern to allow users rate, for example, products and
     
     e. In Service Studio, in the Toolbox, search for the widget again.
 
-1. From the Toolbox, drag the Rating widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the **Rating** widget into the Main Content area of your application's screen.
 
     ![Drag widget onto the screen](<images/rating-dragwidget-ss.png>)
 

@@ -369,11 +369,11 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="2" >No
+   <td rowspan="4" >No
    </td>
-   <td rowspan="2" >No
+   <td rowspan="4" >No
    </td>
-   <td rowspan="2" >No
+   <td rowspan="4" >No
    </td>
   </tr>
   <tr>
@@ -383,12 +383,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>List Application</b>
    </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
+  
   </tr>
   <tr>
    <td><b>Monitor and Add Dependencies</b>
@@ -397,36 +392,34 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications </b>
    </td>
-   <td>All apps
+   <td rowspan="3" >All apps*
    </td>
-   <td>Team apps
+   <td rowspan="3" >Team apps**
    </td>
-   <td>Assigned apps
+   <td rowspan="3" >Assigned apps
    </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td rowspan="2" >All apps
-   </td>
-   <td rowspan="2" >Team apps
-   </td>
-   <td rowspan="2" >Assigned apps
-   </td>
-  </tr>
+    </tr>
   <tr>
    <td><b>Full Control</b>
    </td>
   </tr>
+  <tr>
+  
+  <th colspan="4">
+
+<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
+<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
+
+</th>
+  </tr>
   </tbody>
 </table>
 
-<div class="info" markdown="1">
 
-* **All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
-* **Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
-
-</div>
 
 
 #### Resolve findings

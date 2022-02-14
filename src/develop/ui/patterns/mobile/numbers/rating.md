@@ -7,7 +7,6 @@ summary: Allows users to rate a particular item.
 
 You can use the Rating UI Pattern to allow users rate, for example, products and services.
 
-
 ![Example of Rating pattern](<images/rating-example-ss.png>)
 
 **How to use the Rating UI Pattern**

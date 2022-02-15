@@ -39,9 +39,23 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     ![Add title to Progress Bar](<images/progressbar-text-ss.png>)
 
-1. You can configure the Progress Bar by selecting the pattern, and on the **Properties** tab, for example, the trail color. For more configurations, expand the OptionalConfigs property.
+1. Right-click your screen name, select **Add Local Variable**, and enter a name. In this example, we enter `Count`.
 
-    For more configurations, expand the **OptionalConfigs** property.
+    ![Add local variable](<images/progressbar-var-ss.png>)
+
+1. Select the Progress Bar widget, and on the **Properties** tab, in the Progress property, enter the relevant logic for the progress percentage.
+
+    In this example, we enter the following logic which sets the progress percentage to 4%:
+
+    ``Count / 25 * 100``
+
+1. From the Toolbox, drag the **Button** widget into the Main Content area of your application's screen. In this example, call the button Increment and set the **On Click** property to a **New Client Action** that assigns the **Count** variable to ``Count + 1``.
+
+    ![Add a button](<images/progressbar-button-ss.png>)
+
+    ![Set the assign](<images/progressbar-assign-ss.png>)
+
+1. You can configure the Progress Bar by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 
     ![Set optional properties](<images/progressbar-prop-ss.png>)
 

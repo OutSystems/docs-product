@@ -108,11 +108,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="5" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="7" >No
+   <td rowspan="2" colspan="3">No
    </td>
   </tr>
   <tr>
@@ -122,7 +118,11 @@ table {min-width: 650px;}
   <tr>
    <td><b>List Application</b>
    </td>
-   <td rowspan="5" >Assigned team
+   <td rowspan="3" >No
+   </td>
+   <td rowspan="3" >Assigned team
+   </td>
+   <td rowspan="3" >No
    </td>
   </tr>
   <tr>
@@ -138,18 +138,22 @@ table {min-width: 650px;}
    </td>
    <td rowspan="2" >Team apps*
    </td>
+   <td rowspan="2" >Assigned team
+   </td>
+   <td rowspan="2" >No
+   </td>
   </tr>
   <tr>
    <td><b>Full Control</b>
    </td>
   </tr>
+  <tr>
      <th colspan="4">
 <p style="text-align:left; font-weight: normal;">*<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
 </th>
   </tr>
   </tbody>
 </table>
-
 
 
 #### View apps and modules 
@@ -213,6 +217,7 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
+  <tr>
     <th colspan="4">
 <p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
 <p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
@@ -249,7 +254,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="4" colspan=3">No
+   <td rowspan="4" colspan="3">No
    </td>
   </tr>
   <tr>
@@ -282,6 +287,7 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
+  <tr>
     <th colspan="4">
 <p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
 <p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
@@ -318,11 +324,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="4" >No
-   </td>
-   <td rowspan="4" >No
-   </td>
-   <td rowspan="4" >No
+   <td rowspan="4" colspan="3">No
    </td>
   </tr>
   <tr>
@@ -427,6 +429,7 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
+  <tr>
      <th colspan="4">
 <p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
 <p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
@@ -496,6 +499,7 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
+  <tr>
      <th colspan="4">
 <p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
 <p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
@@ -549,7 +553,6 @@ table {min-width: 650px;}
    </td>
   </tr>
   <tr>
-    </tr>
     <th colspan="4">
 <p style="text-align:left; font-weight: normal;">*<b>All modules</b>: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.</p>
 <p style="text-align:left; font-weight: normal;">**<b>Team modules</b>: Except in cases where the permission level of a specific module is set lower than that assigned to a team.</p>
@@ -650,6 +653,7 @@ table {min-width: 650px;}
    <td colspan="2">No
    </td>
   </tr>
+  <tr>
     <th colspan="4">
 <p style="text-align:left; font-weight: normal;">*<b>All modules</b>: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.</p>
 </th>

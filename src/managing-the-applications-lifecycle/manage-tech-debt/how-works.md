@@ -108,11 +108,11 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="2" >No
+   <td rowspan="5" >No
    </td>
    <td rowspan="2" >No
    </td>
-   <td rowspan="2" >No
+   <td rowspan="7" >No
    </td>
   </tr>
   <tr>
@@ -122,11 +122,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>List Application</b>
    </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >Assigned team
-   </td>
-   <td rowspan="2" >No
+   <td rowspan="5" >Assigned team
    </td>
   </tr>
   <tr>
@@ -136,35 +132,24 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications </b>
    </td>
-   <td>No
-   </td>
-   <td>Assigned team
-   </td>
-   <td>No
-   </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td rowspan="2" >Team apps
-   </td>
-   <td rowspan="2" >Assigned team
-   </td>
-   <td rowspan="2" >No
+   <td rowspan="2" >Team apps*
    </td>
   </tr>
   <tr>
    <td><b>Full Control</b>
    </td>
   </tr>
+     <th colspan="4">
+<p style="text-align:left; font-weight: normal;">*<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
+</th>
+  </tr>
   </tbody>
 </table>
 
-<div class="info" markdown="1">
-
-* **Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
-
-</div>
 
 
 #### View apps and modules 
@@ -195,11 +180,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
+   <td rowspan="2" colspan="3" >No
    </td>
   </tr>
   <tr>
@@ -209,11 +190,11 @@ table {min-width: 650px;}
   <tr>
    <td><b>List Application</b>
    </td>
-   <td rowspan="2" >All apps
+   <td rowspan="5" >All apps*
    </td>
-   <td rowspan="2" >Team apps
+   <td rowspan="5" >Team apps**
    </td>
-   <td rowspan="2" >Assigned apps
+   <td rowspan="5" >Assigned apps
    </td>
   </tr>
   <tr>
@@ -223,36 +204,22 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications </b>
    </td>
-   <td>All apps
-   </td>
-   <td>Team apps
-   </td>
-   <td>Assigned apps
-   </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
-   </td>
-   <td rowspan="2" >All apps
-   </td>
-   <td rowspan="2" >Team apps
-   </td>
-   <td rowspan="2" >Assigned apps
    </td>
   </tr>
   <tr>
    <td><b>Full Control</b>
    </td>
   </tr>
+    <th colspan="4">
+<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
+<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
+</th>
+  </tr>
   </tbody>
 </table>
-
-<div class="info" markdown="1">
-
-* **All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
-* **Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
-
-</div>
 
 #### Open findings report
 
@@ -282,11 +249,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
+   <td rowspan="4" colspan=3">No
    </td>
   </tr>
   <tr>
@@ -296,12 +259,6 @@ table {min-width: 650px;}
   <tr>
    <td><b>List Application</b>
    </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
   </tr>
   <tr>
    <td><b>Monitor and Add Dependencies</b>
@@ -310,36 +267,28 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications </b>
    </td>
-   <td>All apps
+   <td rowspan="3">All apps*
    </td>
-   <td>Team apps
+   <td rowspan="3">Team apps**
    </td>
-   <td>Assigned apps
+   <td rowspan="3">Assigned apps
    </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td rowspan="2" >All apps
-   </td>
-   <td rowspan="2" >Team apps
-   </td>
-   <td rowspan="2" >Assigned apps
-   </td>
-  </tr>
+     </tr>
   <tr>
    <td><b>Full Control</b>
    </td>
   </tr>
-    </tbody>
+    <th colspan="4">
+<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
+<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
+</th>
+  </tr>
+  </tbody>
 </table>
-
-<div class="info" markdown="1">
-
-* **All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
-* **Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
-
-</div>
 
 #### Export findings report
 
@@ -369,11 +318,11 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="2" >No
+   <td rowspan="4" >No
    </td>
-   <td rowspan="2" >No
+   <td rowspan="4" >No
    </td>
-   <td rowspan="2" >No
+   <td rowspan="4" >No
    </td>
   </tr>
   <tr>
@@ -383,12 +332,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>List Application</b>
    </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
+  
   </tr>
   <tr>
    <td><b>Monitor and Add Dependencies</b>
@@ -397,36 +341,29 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications </b>
    </td>
-   <td>All apps
+   <td rowspan="3" >All apps*
    </td>
-   <td>Team apps
+   <td rowspan="3" >Team apps**
    </td>
-   <td>Assigned apps
+   <td rowspan="3" >Assigned apps
    </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td rowspan="2" >All apps
-   </td>
-   <td rowspan="2" >Team apps
-   </td>
-   <td rowspan="2" >Assigned apps
-   </td>
-  </tr>
+    </tr>
   <tr>
    <td><b>Full Control</b>
    </td>
   </tr>
+  <tr>
+    <th colspan="4">
+<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
+<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
+</th>
+  </tr>
   </tbody>
 </table>
-
-<div class="info" markdown="1">
-
-* **All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
-* **Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
-
-</div>
 
 
 #### Resolve findings
@@ -457,26 +394,16 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="2" >No
+   <td rowspan="5" colspan="3" >No
    </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-  </tr>
+   </tr>
   <tr>
    <td><b>Access</b>
    </td>
   </tr>
   <tr>
    <td><b>List Application</b>
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
+   </td>   
   </tr>
   <tr>
    <td><b>Monitor and Add Dependencies</b>
@@ -484,20 +411,14 @@ table {min-width: 650px;}
   </tr>
   <tr>
    <td><b>Open and Debug Applications </b>
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
+   </td>   
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td rowspan="2" >All apps
+   <td rowspan="2" >All apps*
    </td>
-   <td rowspan="2" >Team apps
+   <td rowspan="2" >Team apps*
    </td>
    <td rowspan="2" >Assigned apps
    </td>
@@ -506,15 +427,13 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
-    </tbody>
+     <th colspan="4">
+<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
+<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
+</th>
+  </tr>
+  </tbody>
 </table>
-
-<div class="info" markdown="1">
-
-* **All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
-* **Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
-
-</div>
 
 #### Overview dashboard
 
@@ -544,12 +463,8 @@ table {min-width: 650px;}
   <tr>
    <td><b>No Access</b>
    </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
+   <td rowspan="4" colspan="3">No
+   </td>   
   </tr>
   <tr>
    <td><b>Access</b>
@@ -557,13 +472,7 @@ table {min-width: 650px;}
   </tr>
   <tr>
    <td><b>List Application</b>
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
-   <td rowspan="2" >No
-   </td>
+   </td>  
   </tr>
   <tr>
    <td><b>Monitor and Add Dependencies</b>
@@ -572,36 +481,28 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications </b>
    </td>
-   <td>All apps
+   <td rowspan="3">All apps*
    </td>
-   <td>Team apps
+   <td rowspan="3">Team apps**
    </td>
-   <td>Assigned apps
+   <td rowspan="3">Assigned apps
    </td>
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
-   </td>
-   <td rowspan="2" >All apps
-   </td>
-   <td rowspan="2" >Team apps
-   </td>
-   <td rowspan="2" >Assigned apps
-   </td>
+   </td>  
   </tr>
   <tr>
    <td><b>Full Control</b>
    </td>
   </tr>
-    </tbody>
+     <th colspan="4">
+<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
+<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
+</th>
+  </tr>
+  </tbody>
 </table>
-
-<div class="info" markdown="1">
-
-* **All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
-* **Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
-
-</div>
 
 ### Maintenance and operations permissions { #maint-op-permissions }
 
@@ -634,42 +535,30 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications or lower</b>
    </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
+   <td colspan="3">No
+   </td>   
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td>All modules
+   <td rowspan="2">All modules*
    </td>
-   <td>Team modules
+   <td rowspan="2">Team modules**
    </td>
-   <td>Assigned app’s modules
+   <td rowspan="2">Assigned app’s modules
    </td>
   </tr>
   <tr>
-   <td><b>Full Control</b>
-   </td>
-   <td>All modules
-   </td>
-   <td>Team modules
-   </td>
-   <td>Assigned app’s modules
-   </td>
+    </tr>
+    <th colspan="4">
+<p style="text-align:left; font-weight: normal;">*<b>All modules</b>: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.</p>
+<p style="text-align:left; font-weight: normal;">**<b>Team modules</b>: Except in cases where the permission level of a specific module is set lower than that assigned to a team.</p>
+</th>
   </tr>
-    </tbody>
+  </tbody>
 </table>
 
-<div class="info" markdown="1">
 
-* **All modules**: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.
-* **Team modules**: Except in cases where the permission level of a specific module is set lower than that assigned to a team.
-
-</div>
 
 #### Enable AI auto-classification
 
@@ -699,31 +588,19 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications or lower</b>
    </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
+   <td rowspan="2" colspan="3">No
+   </td>   
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
+   </td>   
   </tr>
   <tr>
    <td><b>Full Control</b>
    </td>
    <td>Yes
    </td>
-   <td>No
-   </td>
-   <td>No
+   <td colspan="2">No
    </td>
   </tr>
     </tbody>
@@ -758,32 +635,24 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications or lower</b>
    </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
+   <td rowspan="2" colspan="3">No
+   </td>   
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
+   </tr>
   <tr>
    <td><b>Full Control</b>
    </td>
-   <td>All modules
+   <td>All modules*
    </td>
-   <td>No
+   <td colspan="2">No
    </td>
-   <td>No
-   </td>
+  </tr>
+    <th colspan="4">
+<p style="text-align:left; font-weight: normal;">*<b>All modules</b>: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.</p>
+</th>
   </tr>
   </tbody>
 </table>
@@ -817,21 +686,11 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications or lower</b>
    </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
+   <td rowspan="2" colspan="3">No
+   </td>   
   </tr>
   <tr>
    <td><b>Change and Deploy Applications</b>
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
    </td>
   </tr>
   <tr>
@@ -839,9 +698,7 @@ table {min-width: 650px;}
    </td>
    <td>Yes
    </td>
-   <td>No
-   </td>
-   <td>No
+   <td colspan="2">No
    </td>
   </tr>
   </tbody>

@@ -179,7 +179,9 @@ These are the values available in the **AppShield** configuration JSON.
 | ios                             | JSON value   | iOS          | The key denoting values that apply to the iOS devices.                                            |
 
 ## Verifying that you've successfully built an app with AppShield
-When you trigger a build with the Appshield enabled and correctly configured, **MABS** will include a **shield phase** in the building process of your mobile package. You can verify that your build passed through the shield phase by looking into your app’s build logs. The shield phase is logged after the build phase.
+When you trigger a build with the Appshield enabled and correctly configured, **MABS** will include a **shield phase** in the process of generating your mobile package. You can verify that your build passed through the shield phase by looking into your app’s build logs (see [here how to download the build log file of your mobile package] (https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App#Download_mobile_app_build_logs)).
+
+The shield phase is logged after the build phase and it's the last phase of the build log file.
 
 ![ShieldPhase_Documentation](https://user-images.githubusercontent.com/81437871/154248765-189314db-2b4e-4585-9b34-c53ac443dc3a.png)
 

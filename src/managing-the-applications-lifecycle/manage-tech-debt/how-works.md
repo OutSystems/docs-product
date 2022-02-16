@@ -136,7 +136,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td rowspan="2" >Team apps*
+   <td rowspan="2" >Team apps<sup>*</sup>
    </td>
    <td rowspan="2" >Assigned team
    </td>
@@ -147,13 +147,10 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
-  <tr>
-     <th colspan="4">
-<p style="text-align:left; font-weight: normal;">*<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
-</th>
-  </tr>
   </tbody>
 </table>
+
+**<sup>*</sup>Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 
 #### View apps and modules 
@@ -194,9 +191,9 @@ table {min-width: 650px;}
   <tr>
    <td><b>List Application</b>
    </td>
-   <td rowspan="5" >All apps*
+   <td rowspan="5" >All apps<sup>1</sup>
    </td>
-   <td rowspan="5" >Team apps**
+   <td rowspan="5" >Team apps<sup>2</sup>
    </td>
    <td rowspan="5" >Assigned apps
    </td>
@@ -217,14 +214,12 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
-  <tr>
-    <th colspan="4">
-<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
-<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
-</th>
-  </tr>
+  
   </tbody>
 </table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Open findings report
 
@@ -272,9 +267,9 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications </b>
    </td>
-   <td rowspan="3">All apps*
+   <td rowspan="3">All apps<sup>1</sup>
    </td>
-   <td rowspan="3">Team apps**
+   <td rowspan="3">Team apps<sup>2</sup>
    </td>
    <td rowspan="3">Assigned apps
    </td>
@@ -287,14 +282,12 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
-  <tr>
-    <th colspan="4">
-<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
-<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
-</th>
-  </tr>
+  
   </tbody>
 </table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Export findings report
 
@@ -343,9 +336,9 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications </b>
    </td>
-   <td rowspan="3" >All apps*
+   <td rowspan="3" >All apps<sup>1</sup>
    </td>
-   <td rowspan="3" >Team apps**
+   <td rowspan="3" >Team apps<sup>2</sup>
    </td>
    <td rowspan="3" >Assigned apps
    </td>
@@ -358,15 +351,11 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
-  <tr>
-    <th colspan="4">
-<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
-<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
-</th>
-  </tr>
   </tbody>
 </table>
 
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Resolve findings
 
@@ -418,9 +407,9 @@ table {min-width: 650px;}
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td rowspan="2" >All apps*
+   <td rowspan="2" >All apps<sup>1</sup>
    </td>
-   <td rowspan="2" >Team apps*
+   <td rowspan="2" >Team apps<sup>2</sup>
    </td>
    <td rowspan="2" >Assigned apps
    </td>
@@ -429,14 +418,12 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
-  <tr>
-     <th colspan="4">
-<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
-<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
-</th>
-  </tr>
+  
   </tbody>
 </table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Overview dashboard
 
@@ -484,9 +471,9 @@ table {min-width: 650px;}
   <tr>
    <td><b>Open and Debug Applications </b>
    </td>
-   <td rowspan="3">All apps*
+   <td rowspan="3">All apps<sup>1</sup>
    </td>
-   <td rowspan="3">Team apps**
+   <td rowspan="3">Team apps<sup>2</sup>
    </td>
    <td rowspan="3">Assigned apps
    </td>
@@ -499,14 +486,12 @@ table {min-width: 650px;}
    <td><b>Full Control</b>
    </td>
   </tr>
-  <tr>
-     <th colspan="4">
-<p style="text-align:left; font-weight: normal;">*<b>All apps</b>: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</p>
-<p style="text-align:left; font-weight: normal;">**<b>Team apps</b>: Except in cases where the permission level of a specific app is set lower than that assigned to a team.</p>
-</th>
-  </tr>
+
   </tbody>
 </table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 ### Maintenance and operations permissions { #maint-op-permissions }
 
@@ -545,23 +530,19 @@ table {min-width: 650px;}
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td rowspan="2">All modules*
+   <td rowspan="2">All modules<sup>1</sup>
    </td>
-   <td rowspan="2">Team modules**
+   <td rowspan="2">Team modules<sup>2</sup>
    </td>
    <td rowspan="2">Assigned app’s modules
    </td>
   </tr>
-  <tr>
-    <th colspan="4">
-<p style="text-align:left; font-weight: normal;">*<b>All modules</b>: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.</p>
-<p style="text-align:left; font-weight: normal;">**<b>Team modules</b>: Except in cases where the permission level of a specific module is set lower than that assigned to a team.</p>
-</th>
-  </tr>
+
   </tbody>
 </table>
 
-
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Enable AI auto-classification
 
@@ -648,19 +629,16 @@ table {min-width: 650px;}
   <tr>
    <td><b>Full Control</b>
    </td>
-   <td>All modules*
+   <td>All modules<sup>*</sup>
    </td>
    <td colspan="2">No
    </td>
   </tr>
-  <tr>
-    <th colspan="4">
-<p style="text-align:left; font-weight: normal;">*<b>All modules</b>: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.</p>
-</th>
-  </tr>
+
   </tbody>
 </table>
 
+<sup>*</sup>**All modules**: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.
 
 #### Update probes
 

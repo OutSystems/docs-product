@@ -13,7 +13,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     The Gallery widget is displayed.
 
-    ![](<images/gallerymob-8-ss.png>)
+    ![](<images/gallery-widget-ss.png>)
 
     If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
 
@@ -29,25 +29,25 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
 1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
 
-    ![](<images/gallerymob-9-ss.png>)
+    ![](<images/gallery-dragwidget-ss.png>)
 
 1. Add the required content to the Gallery widget.
 
     By default, the Gallery widget expects a list.
 
-    ![](<images/gallerymob-13-ss.png>)
+    ![](<images/gallery-list-ss.png>)
 
     To use the Gallery UI Pattern with items from a database, drag a [List](<../../../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md>) into the Gallery widget and create your custom content.
 
     In this example, we delete the list and add local images to the Gallery widget.
 
-    ![](<images/gallerymob-10-ss.png>)
+    ![](<images/gallery-image-ss.png>)
 
 1. On the Element tree, select the Image widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Gallery.
 
     Note: In this example, the image property Type is set to **Local** image. You can also add External and Binary Data images.
 
-    ![](<images/gallerymob-11-ss.png>)
+    ![](<images/gallery-addimage-ss.png>)
   
 1. On the **Properties** tab, set the relevant (optional) properties, for example, the number of items you want to display on each device (see below for examples) and the space between each item (GutterSize).
 

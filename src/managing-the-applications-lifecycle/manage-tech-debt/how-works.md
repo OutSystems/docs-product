@@ -90,9 +90,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>
@@ -163,9 +163,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>
@@ -232,9 +232,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>
@@ -301,9 +301,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>
@@ -370,9 +370,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>
@@ -439,9 +439,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>
@@ -511,9 +511,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>
@@ -560,9 +560,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>
@@ -607,9 +607,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>
@@ -656,9 +656,9 @@ table {min-width: 650px;}
 <table>
   <thead>
   <tr>
-   <th rowspan="2" >LifeTime Permissions
+   <th rowspan="2" >LifeTime permissions
    </th>
-   <th colspan="3" >Lifetime Role Assignment
+   <th colspan="3" >LifeTime role assignment
    </th>
   </tr>
   <tr>

@@ -11,7 +11,7 @@ summary: Advanced use cases for the Rating UI Pattern
 |---|---|---|
 |OnSelect: Optional |Value (Decimal)|  Event that returns the current rating value. |
   
-### Structure
+## Structure
 
 ![Structure diagram](images/rating-diag.png)
 

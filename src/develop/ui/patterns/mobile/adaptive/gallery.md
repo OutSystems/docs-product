@@ -76,6 +76,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Property | Description |
 |---|---|
 |RowItemsDesktop (Integer): Optional |  Number of items displayed simultaneously per row on a desktop. Default value is 4.|
-|RowItemsTablet (Integer):  |  Number of items displayed on a tablet. |
-|RowItemsPhone (Integer):  | Number of items displayed on a desktop.  |
-|ItemsGap(Space Identifier): Optional  | Defines the space between the items. The predefined sizes are:<p><ul><li>None</li><li>Extra Small</li><li>Small</li><li>Base</li><li>Medium</li><li>Large</li><li>Extra Large</li><li>Extra Extra Large</li></ul></p><p>Examples<ul><li>_Blank_ - A space of 16px between each item. This is the default value (_Entities.Space.Base_). </li><li>_Entities.Space.Large_ - A space of 32px between each item.</li></ul></p> |
+|RowItemsTablet (Integer):  |   Number of items displayed simultaneously per row on a tablet. Default value is 3. |
+|RowItemsPhone (Integer):  |  Number of items displayed simultaneously per row on a phone. Default value is 1.  |
+|ItemsGap(Space Identifier): Optional  | Defines the space between the items. The predefined sizes are the following:<p><ul><li>None</li><li>Extra Small</li><li>Small</li><li>Base (default value)</li><li>Medium</li><li>Large</li><li>Extra Large</li><li>Extra Extra Large</li></ul></p>|
+|ExtendedClass (text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|

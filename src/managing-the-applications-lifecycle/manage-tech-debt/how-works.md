@@ -136,7 +136,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>Change and Deploy Applications</b>
    </td>
-   <td rowspan="2" >Team apps<sup>*</sup>
+   <td rowspan="2" >Team apps<sup>1</sup>
    </td>
    <td rowspan="2" >Assigned team
    </td>
@@ -150,7 +150,7 @@ table {min-width: 650px;}
   </tbody>
 </table>
 
-**<sup>*</sup>Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
+**<sup>1</sup>Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 
 #### View apps and modules 
@@ -218,7 +218,8 @@ table {min-width: 650px;}
   </tbody>
 </table>
 
-<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Open findings report
@@ -286,7 +287,8 @@ table {min-width: 650px;}
   </tbody>
 </table>
 
-<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Export findings report
@@ -354,7 +356,8 @@ table {min-width: 650px;}
   </tbody>
 </table>
 
-<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Resolve findings
@@ -422,7 +425,8 @@ table {min-width: 650px;}
   </tbody>
 </table>
 
-<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Overview dashboard
@@ -490,7 +494,8 @@ table {min-width: 650px;}
   </tbody>
 </table>
 
-<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 ### Maintenance and operations permissions { #maint-op-permissions }
@@ -541,7 +546,8 @@ table {min-width: 650px;}
   </tbody>
 </table>
 
-<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.</br>
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Enable AI auto-classification
@@ -629,7 +635,7 @@ table {min-width: 650px;}
   <tr>
    <td><b>Full Control</b>
    </td>
-   <td>All modules<sup>*</sup>
+   <td>All modules<sup>1</sup>
    </td>
    <td colspan="2">No
    </td>
@@ -638,7 +644,7 @@ table {min-width: 650px;}
   </tbody>
 </table>
 
-<sup>*</sup>**All modules**: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.
+<sup>1</sup>**All modules**: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.
 
 #### Update probes
 

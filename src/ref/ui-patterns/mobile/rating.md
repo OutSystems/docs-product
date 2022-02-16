@@ -26,7 +26,7 @@ summary: Advanced use cases for the Rating UI Pattern
 
 ## API
 
-If you are an advanced user, you might want to use our RangeSlider API (OutSystems.OSUI.Patterns.RatingAPI)for more advanced use cases.
+If you are an advanced user, you might want to use our Rating API (OutSystems.OSUI.Patterns.RatingAPI)for more advanced use cases.
 
 ### Methods
 

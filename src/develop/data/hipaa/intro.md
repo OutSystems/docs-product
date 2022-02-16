@@ -1,6 +1,6 @@
 ---
-summary:
-tags:
+summary: 
+tags: article-page
 ---
 
 
@@ -16,7 +16,7 @@ The Cryptography Services app interfaces with the Key Management Service (KMS) a
 
 It exposes actions that work with the KMS to encrypt and decrypt PHI. Those are divided into two groups of actions, depending on whether you need to search on the encrypted data: **actions for searchable attributes** and **actions for unsearchable attributes**.
 
-For example, you may want to both encrypt `email address` and `blood type`, but you only want `blood type` to be searcheable. You may have a screen that filters a search by `blood type` but you won't be to search by `email address`.
+For example, you may want to both encrypt `email address` and `blood type`, but you only want `blood type` to be searcheable. You may have a screen that filters a search by `blood type` but you won't be able to search by `email address`.
 
 ## Actions for searchable attributes
 
@@ -53,3 +53,5 @@ Check the following articles for detailed guides of the implementation of:
 * [Encrypting data for HIPAA compliance](encrypt-data-hipaa.md)
 * [Decrypting HIPAA compliant data](decrypt-data-hipaa.md)
 * [Search encrypted data](search-encrypted.md)
+
+To know more about HIPAA in the OutSystems Cloud check [HIPAA compliant apps in the OutSystems Cloud](https://success.outsystems.com/Support/Security/HIPAA_compliance_-_how_OutSystems_can_help#HIPAA_compliant_apps_in_the_OutSystems_Cloud).

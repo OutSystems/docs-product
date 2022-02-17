@@ -15,7 +15,7 @@ summary: Advanced use cases for the Rating UI Pattern
 
 ![Structure diagram](images/rating-diag.png)
 
-   **Note:** These elements are multiplied by the number of elements in the **Scale** input parameter of the **Rating** block.
+   **Note:** These elements are multiplied by the number of elements in the **RatingScale** input parameter of the **Rating** block.
 
 ### Modifiers
 

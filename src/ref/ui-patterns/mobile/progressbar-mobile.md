@@ -42,8 +42,7 @@ For advanced users, you can use the Progress Bar API (OutSystems.OSUI.Patterns.P
 |**Function**|**Description**|**Parameters**|
 |---|---|---|
 |ChangeProperty|Changes the property of a given progress bar.|<ul><li>progressId: string</li><li> propertyName: string</li><li>propertyValue: any</li></ul>|
-|Create|Creates the new progress instance and adds it to the ProgressMap.| <li>progressId: string</li>
-configs: string|
+|Create|Creates the new progress instance and adds it to the ProgressMap.| <li>progressId: string</li><li>configs: string</li>|
 |Destroy|Destroys the instance of the given Progress.|<li>progressId: string</li>|
 |GetAllProgressItemsMap|FuReturns the Map with all the Progress instances on the page.|<li>Returns array of Ids</li>|
 |GetProgressById|Gets the instance of Progress, by a given ID.|<li>progressId: string</li>|

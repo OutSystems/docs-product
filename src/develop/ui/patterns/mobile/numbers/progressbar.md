@@ -49,7 +49,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     ``Count / 25 * 100``
 
-1. From the Toolbox, drag the **Button** widget into the Main Content area of your application's screen. In this example, call the button Increment and set the **On Click** property to a **New Client Action** that assigns the **Count** variable to ``Count + 1``.
+1. From the Toolbox, drag the **Button** widget into the Main Content area of your application's screen. In this example, call the button **Increment** and set the **On Click** property to a **New Client Action** that assigns the **Count** variable to ``Count + 1``.
 
     ![Add a button](<images/progressbar-button-ss.png>)
 

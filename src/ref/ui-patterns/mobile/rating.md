@@ -15,6 +15,8 @@ summary: Advanced use cases for the Rating UI Pattern
 
 ![Structure diagram](images/rating-diag.png)
 
+   **Note:** These elements are multiplied by the number of elements in the **Scale** input parameter of the **Rating** block.
+
 ### Modifiers
 
 |**Modifier**|**Attribute**|**Element**|
@@ -36,5 +38,5 @@ If you are an advanced user, you might want to use our Rating API (OutSystems.OS
 |Create|Creates a new Rating instance and adds it to the ratingMap.|<li>ratingId: string</li><li>configs: string</li>|
 |Destroy|Destroys the Rating instance.|<li>ratingId: string</li>|
 |GetAllRatings|Returns the Map with all the Rating instances on the screen.|<li>Returns array of Ids</li>|
-|GetRatingById|Gets the Rating instance ID.|<li>ratingId: string</li>|
+|GetRatingById|Gets the Rating instance Id.|<li>ratingId: string</li>|
 |Initialize|Initializes the pattern instance.| <li> ratingId: string</li>|

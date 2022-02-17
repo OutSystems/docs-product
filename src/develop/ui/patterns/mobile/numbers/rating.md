@@ -1,6 +1,6 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Allows users to rate a particular item.
+summary: Allows users to rate a particular item or service.
 ---
 
 # Rating

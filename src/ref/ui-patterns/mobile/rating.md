@@ -33,8 +33,7 @@ If you are an advanced user, you might want to use our Rating API (OutSystems.OS
 |**Function**|**Description**|**Parameters**|
 |---|---|---|
 |ChangeProperty|Changes the Rating property.|<li>ratingId: string</li><li>propertyName: string</li><li>propertyValue: any</li>|
-|Create|Creates a new Rating instance and adds it to the ratingMap.|<li>ratingId: string</li><li>
-configs: string</li>|
+|Create|Creates a new Rating instance and adds it to the ratingMap.|<li>ratingId: string</li><li>configs: string</li>|
 |Destroy|Destroys the Rating instance.|<li>ratingId: string</li>|
 |GetAllRatings|Returns the Map with all the Rating instances on the screen.|<li>Returns array of Ids</li>|
 |GetRatingById|Gets the Rating instance ID.|<li>ratingId: string</li>|

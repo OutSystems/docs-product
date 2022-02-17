@@ -29,7 +29,7 @@ You can use the Progress Bar to display percentage values by incrementing values
     
     e. In Service Studio, in the Toolbox, search for the widget again.
 
-1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen. On the **Properties** tab, in the **Progress** property, enter the progress percentage. In this example we enter `60` but you can also use functions or local variables.
+1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen.
 
     ![Drag widget to screen](<images/progressbar-dragwidget-ss.png>)
 

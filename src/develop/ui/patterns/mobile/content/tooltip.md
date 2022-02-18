@@ -57,7 +57,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Properties | Description |
 |---|---|
-|Position (Position Identifier): Optional | Set the tooltip's position. The predefined options are as follows:<li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li><br/>Examples <li>Entities.Position.Right - The tooltip is displayed to the right of the element.</li><li>Entities.Position.Bottom - The tooltip is displayed underneath the element.</li> |
+|Position (Position Identifier): Optional | Set the tooltip's position, for example, top, right, or left.|
 | StartsOpen (Boolean): Optional | If True, the tooltip is visible when the page is first loaded (without the need for the initial trigger). If False, the tooltip is not visible. This is the default. |
 | Trigger (TriggerIdentifier): Optional | Set how the tooltip is triggered. By default, the tooltip is triggered by hovering over the element.|
 | ExtendedClass (Text): Optional |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>``"myclass"`` - Adds the _myclass_ style to the UI styles being applied.</li><li>``"myclass1 myclass2"`` - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet).|

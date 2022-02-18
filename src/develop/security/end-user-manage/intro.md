@@ -1,3 +1,8 @@
+---
+summary: Learn about basic end user management, such as creating, deleting, deactivating registered user accounts or placing them into User Groups with specific permissions.
+tags: support-Mobile_Apps; support-webapps
+---
+
 # End Users
 An end user is someone who uses your OutSystems application(s). Each non-anonymous end user who interacts with your apps counts toward the user limits established in your subscription. 
 

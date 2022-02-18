@@ -21,7 +21,7 @@ OutSystems subscriptions typically include rights to run applications serving up
 You may periodically de-activate users who you know will not continue to use your applications and these users will no longer count toward your user limits. For example, when an employee quits, you would de-activate this user because they will no longer need access to apps you've built for your employees.
 
 - [Manage end users](accessing-users.md) through the **Users** console, which is available at `http://<environment address>/Users`.
-- Manage end users programmatically using the [Users API](../../../ref/apis/auto/users-api.md) 
+- Manage end users programmatically using the [Users API](../../../ref/apis/auto/users-api.final.md) 
 
 ## Older Subscription Models
 In the past, some OutSystems subscriptions did not distinguish between internal and external end users, the limits were based on the total non-anonymous users. Some customers may still have an active subscription under the prior model. These users were labeled as named or registered users.

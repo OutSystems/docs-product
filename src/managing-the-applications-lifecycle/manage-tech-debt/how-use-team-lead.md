@@ -41,7 +41,7 @@ To get an overview of all the modules of an app, double-click the app.
 
 ![Overview of modules in an app](images/use-overview-app-ad.png)
 
-Selecting a module highlights the dependencies of the module (if any).
+Selecting a module gives you detailed information on on the left panel, as well as access to the module report.
 
 ![](images/use-module-dependencies-ad.png)
 
@@ -57,7 +57,7 @@ To see the causes of technical debt in the app, click the **Open app report** bu
 
 ![Open app report](images/use-open-app-report-ad.png)
 
-You can filter the report based on your team(s), a specific app, module, category, when it was analyzed, the findings status, as well as specific users.
+You can filter the report based on your team(s), a specific app, module, category, when it was analyzed, the findings state, as well as specific users.
 
 ![Filters](images/use-filters-ad.png)
 
@@ -73,19 +73,19 @@ The **Findings** section displays all the occurrences of the code pattern. To se
 
 ![Findings](images/use-findings-ad.png)
 
-After checking a finding, you can change its status to one of the following:
+After checking a finding, you can change its state to one of the following:
 
-* If you fix the finding, set the status to **Resolve as already fixed**. This lets other developers in your team know it's fixed. After the next synchronization, if you have solved the finding correctly, it disappears. Otherwise, the finding reverts to **Open**.
+* If you fix the finding, set the state to **Already fixed**. This lets other developers in your team know it's fixed. After the next synchronization, if you have solved the finding correctly, it disappears. Otherwise, the finding reverts to **Open**.
 
-* If the finding is a false positive, set the status to **Resolve as false positive**. After the next synchronization, the finding is not counted toward the total technical debt score.
+* If the finding is a false positive, set the state to **False positive**. After the next synchronization, the finding is not counted toward the total technical debt score.
 
-* If the finding isn't a false positive, set the status to **Resolve as won't fix** and detail the reason for not fixing it. After the next synchronization, the finding is not counted toward the total technical debt score.
+* If the finding isn't a false positive, set the state to **Won't fix** and detail the reason for not fixing it. After the next synchronization, the finding is not counted toward the total technical debt score.
 
-* To temporarily remove the finding from the total debt calculation, set the status to **Remind me later (30 days)**. After the next synchronization, and during the next 30 days, the finding is not counted toward the total technical debt score.
+* To temporarily remove the finding from the total debt calculation, set the state to **Remind me later**. After the next synchronization, and during the next 30 days, the finding is not counted toward the total technical debt score.
 
 ## Get an overview of the technical debt of your team apps
 
-The **Infrastructure overview** dashboard gives you an understanding of the current status, distribution, and evolution of the technical debt across all the apps of your team.
+The **Infrastructure overview** dashboard gives you an understanding of the current state, distribution, and evolution of the technical debt across all the apps of your team.
 
 ![overview dashboard](images/overview-dashboard-ad.png)
 

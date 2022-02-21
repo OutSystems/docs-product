@@ -186,7 +186,7 @@ When you trigger a build with AppShield enabled and correctly configured, MABS i
 
 The shield phase occurs after the build phase, and a message at the end of the log file lets you know if the shield phase is successful.
 
-![ShieldPhase_Documentation](images/appshield-log.png)
+![Shield phase log](images/appshield-log.png)
 
 ## Obfuscation
 

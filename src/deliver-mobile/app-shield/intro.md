@@ -102,7 +102,7 @@ Protection available for the iOS builds.
 * Screen mirroring detection
 * Screenshot protection
 
-### Configuration
+## Configuration
 
 **AppShield** is on by default when you install the plugin. You can turn it off in one or more environments for testing purposes.
 
@@ -178,6 +178,15 @@ These are the values available in the **AppShield** configuration JSON.
 | global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.                                    |
 | ios                             | JSON value   | iOS          | The key denoting values that apply to the iOS devices.                                            |
 
+## Check if app with AppShield builds sucessfully
+
+To ensure that your build passed the shield phase, check your [app’s build logs](../generate-distribute-mobile-app/intro.md#download-mobile-app-build-logs).  
+
+When you trigger a build with AppShield enabled and correctly configured, MABS includes a **shield phase** while generating the app's mobile package. 
+
+The shield phase occurs after the build phase, and a message at the end of the log file lets you know if the shield phase is successful.
+
+![ShieldPhase_Documentation](https://user-images.githubusercontent.com/81437871/154248765-189314db-2b4e-4585-9b34-c53ac443dc3a.png)
 
 ## Obfuscation
 

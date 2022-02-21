@@ -178,10 +178,13 @@ These are the values available in the **AppShield** configuration JSON.
 | global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.                                    |
 | ios                             | JSON value   | iOS          | The key denoting values that apply to the iOS devices.                                            |
 
-## Verifying that you've successfully built an app with AppShield
-When you trigger a build with the Appshield enabled and correctly configured, **MABS** will include a **shield phase** in the process of generating your mobile package. You can verify that your build passed through the shield phase by looking into your app’s build logs (see [here how to download the build log file of your mobile package] (https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App#Download_mobile_app_build_logs)).
+## Check if app with AppShield builds sucessfully
 
-The shield phase is logged after the build phase and it's the last phase of the build log file.
+To ensure that your build passed the shield phase, check your [app’s build logs](../generate-distribute-mobile-app/intro.md#download-mobile-app-build-logs).  
+
+When you trigger a build with AppShield enabled and correctly configured, MABS includes a **shield phase** while generating the app's mobile package. 
+
+The shield phase occurs after the build phase, and a message at the end of the log file lets you know if the shield phase is successful.
 
 ![ShieldPhase_Documentation](https://user-images.githubusercontent.com/81437871/154248765-189314db-2b4e-4585-9b34-c53ac443dc3a.png)
 

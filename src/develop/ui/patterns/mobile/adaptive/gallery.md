@@ -57,19 +57,19 @@ After following these steps and publishing the module, you can test the pattern 
 
 **4 items per row**
 
-![](<images/gallerymob-14-ss.png>)
+![4 items per row](<images/gallerymob-14-ss.png>)
 
 **3 items per row**
     
-![](<images/gallerymob-15-ss.png>)
+![3 item per row](<images/gallerymob-15-ss.png>)
 
 **2 items per row**
 
-![](<images/gallerymob-16-ss.png>)
+![2 items per row](<images/gallerymob-16-ss.png>)
 
 **1 item per row**
 
-![](<images/gallerymob-17-ss.png>)
+![1 item per row](<images/gallerymob-17-ss.png>)
 
 ## Properties
 

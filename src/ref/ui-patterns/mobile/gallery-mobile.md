@@ -7,7 +7,7 @@ summary: Advanced Use Cases for the Gallery UI Pattern.
 
 ## Structure
 
-![Gallery Structure](images/gallery-diag.png)
+![Gallery Structure](gallery-class-diag/.png)
 
 ### Modifiers
 

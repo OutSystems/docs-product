@@ -35,7 +35,9 @@ In this example, we create a button that increments the progress circle each tim
 
     ![](<images/progresscircle-3-ss.png>)
 
-1. Right-click your screen name, select **Add Local Variable**, and enter a name. In this example, we enter `Count`.
+1. Right-click your screen name, select **Add Local Variable**, and enter a name. 
+
+    In this example, we enter `Count`.
 
     ![](<images/progresscircle-4-ss.png>)
 
@@ -45,7 +47,9 @@ In this example, we create a button that increments the progress circle each tim
 
     `Count / 25 * 100`
 
-1. From the Toolbox, drag the Button widget into the Main Content area of your application's screen. In this example, call the button Increment and set the **On Click** property to a  **New Client Action** that assigns the Count variable to `Count + 1`.
+1. From the Toolbox, drag the Button widget into the Main Content area of your application's screen. 
+
+    In this example, we call the button **Increment** and set the **On Click** property to a  **New Client Action** that assigns the Count variable to `Count + 1`.
 
     ![](<images/progresscircle-6-ss.png>)
 
@@ -70,4 +74,4 @@ After following these steps and publishing the module, you can test the pattern 
 | TextColor (Text): Optional | The color of the text inside the circle. The default value is "#333". |
 | CircleThickness (Integer): Optional | The thickness of the circle that marks the progress. <p>Examples <ul><li>_Blank_ - The circle thickness is 8px. This is the default value.</li><li>_4_ - The circle thickness is 8px.</li></ul></p> |
 | AnimateInitialProgress (Boolean): Optional  | If set to True, the progress from zero to the progress value is animated. This is the default. If set to False, the progress is not animated. |
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>``"myclass"`` - Adds the ``myclass`` style to the UI styles being applied.</li><li>``"myclass1 myclass2"`` - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |

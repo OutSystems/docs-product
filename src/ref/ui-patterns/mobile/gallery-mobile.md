@@ -21,13 +21,13 @@ summary: Advanced Use Cases for the Gallery UI Pattern.
 
 ## API
 
-If you are an advanced user, you might want to use our Gallery API (OutSystems.OSUI.Patterns.GalleryAPI)for more advanced use cases.
+If you are an advanced user, you might want to use our Gallery API (OutSystems.OSUI.Patterns.GalleryAPI) for more advanced use cases.
 
 ### Methods
 
 | **Function** | **Description** | **Parameters** | 
 |---|---|---|
-|ChangeProperty|Changes the Gallery property.|<li>galleryId: string <li>propertyName: string <li>propertyValue: any|
+|ChangeProperty|Changes the Gallery property.|<li>galleryId: string</li> <li>propertyName: string</li> <li>propertyValue: any</li>|
 |Create|Creates a new Gallery instance and adds it to the GalleryMap.|<li>galleryId: string <li>configs: string|
 |Destroy|Destroys the Gallery instance.|<li>galleryId: string|
 |GetAllGalleries|Returns the Map with all the Gallery instances on the screen.|<li>Returns array of Ids|

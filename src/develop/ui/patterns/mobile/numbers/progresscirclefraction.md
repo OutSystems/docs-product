@@ -37,9 +37,6 @@ In this example, we create a button that increments the progress circle fraction
 
 1. Right-click your screen name, select **Add Local Variable**, and enter a name. In this example, we enter `Count`.
 
-    ![](<images/progresscircle-4-ss.png>)
-
-
 1. Select the Progress Circle widget, and on the **Properties** tab, enter values for the **Numerator** and **Denominator** properties.
 
     In this example, we enter the `Count` variable as the numerator value, and `25` as the denominator value.

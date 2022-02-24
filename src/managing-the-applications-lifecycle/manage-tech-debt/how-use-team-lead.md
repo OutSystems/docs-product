@@ -22,7 +22,7 @@ After logging in to [Architecture Dashboard](https://architecture.outsystems.com
 
 The Apps page gives you an overview of all the apps on your infrastructure.
 
-To only see apps from your team, select your team from the **Team** dropdown.
+To only see apps from your team, select your team from the **Teams** dropdown.
 
 ![Select your team](images/use-team-ad.png)
 
@@ -41,7 +41,7 @@ To get an overview of all the modules of an app, double-click the app.
 
 ![Overview of modules in an app](images/use-overview-app-ad.png)
 
-Selecting a module gives you detailed information on on the left panel, as well as access to the module report.
+Selecting a module gives you detailed information on the left panel, as well as access to the module report.
 
 ![](images/use-module-dependencies-ad.png)
 

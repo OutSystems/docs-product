@@ -13,7 +13,7 @@ This example shows how to use a Local Variable to keep the value of a Search wid
 
     ![Adding a new Local Variable to an Input](<images/local-variable-ss.png>)
 
-1. Enter a name for the variable, for example `SearchKeyword`.
+1. Enter a name for the variable, for example `SearchKeyword`. Make sure the **Data Type** is set to `Text`.
 
     ![](<images/variable-searchkeyword-ss.png>)
 
@@ -24,5 +24,5 @@ This example shows how to use a Local Variable to keep the value of a Search wid
 
 Find more about [Local Variables](https://www.outsystems.com/training/lesson/2069/variables?LearningPathId=18).  
 To practice, check these exercises where you can see examples of Local Variables usage:
-* [Using Local Variables for pagination and sorting](https://www.outsystems.com/training/lesson/2045/pagination-and-sorting-exercise?LearningPathId=18)
-* [Data Queries and Widgets II Exercise](https://www.outsystems.com/training/lesson/1766/data-queries-and-widgets-ii-exercise?LearningPathId=2)
+* In Reactive Web development: [Using Local Variables for pagination and sorting](https://www.outsystems.com/training/lesson/2045/pagination-and-sorting-exercise?LearningPathId=18)
+* In Traditional Web development: [Using Local Variables for data queries and widgets](https://www.outsystems.com/training/lesson/1766/data-queries-and-widgets-ii-exercise?LearningPathId=2)

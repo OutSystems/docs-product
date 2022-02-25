@@ -15,11 +15,11 @@ This example shows how to use a Local Variable to keep the value of a Search wid
 
 1. Enter a name for the variable, for example `SearchKeyword`. Make sure the **Data Type** is set to `Text`.
 
-    ![](<images/variable-searchkeyword-ss.png>)
+    ![Entering the name for the Local Variable](<images/variable-searchkeyword-ss.png>)
 
 1. Use the Local Variable to [filter the aggregate](../../../develop/data/query/filter-results.md).
 
-    ![](<images/filtered-aggregate-ss.png>)
+    ![Aggregate with a filter that uses the SearchKeyword Variable to filter the results](<images/filtered-aggregate-ss.png>)
 
 
 Find more about [Local Variables](https://www.outsystems.com/training/lesson/2069/variables?LearningPathId=18).  

@@ -22,7 +22,7 @@ This example shows how to use a Local Variable to keep the value of a Search wid
     ![Aggregate with a filter that uses the SearchKeyword Variable to filter the results](<images/filtered-aggregate-ss.png>)
 
 
-Find more about [Local Variables](https://www.outsystems.com/training/lesson/2069/variables?LearningPathId=18).  
+Learn more in this [lesson about Variables](https://www.outsystems.com/training/lesson/2069/variables?LearningPathId=18).  
 To practice, check these exercises where you can see examples of Local Variables usage:
 * In Reactive Web development: [Using Local Variables for pagination and sorting](https://www.outsystems.com/training/lesson/2045/pagination-and-sorting-exercise?LearningPathId=18)
 * In Traditional Web development: [Using Local Variables for data queries and widgets](https://www.outsystems.com/training/lesson/1766/data-queries-and-widgets-ii-exercise?LearningPathId=2)

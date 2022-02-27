@@ -36,9 +36,13 @@ Selecting a module gives you detailed information on the left panel, as well as 
 
 ![Module dependencies](images/use-module-dependencies-ad.png)
 
+Click **Open Module report** in order to see the causes of technical debt in the module (seen in the next section).
+
+![Open module report](images/open-module-report-ad.png)
+
 ## Find and understand the causes of technical debt in the module
 
-To see the causes of technical debt in the module, click the **Open module report** button in the side panel.
+After clicking **Open Module report** you can examine the causes of technical debt in the module.
 
 ![Open module report](images/use-report-ad.png)
 

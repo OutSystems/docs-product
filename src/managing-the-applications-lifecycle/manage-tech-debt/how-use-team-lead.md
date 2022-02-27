@@ -91,6 +91,8 @@ The **Infrastructure overview** dashboard gives you an understanding of the curr
 
 To access the **Infrastructure overview** dashboard, click the **Overview** tab in **Architecture Dashboard**.
 
+![overview dashboard button](images/overview-dashboard-button-ad.png)
+
 Filter the analysis data by team, application, code pattern category, or date range, to get the data that you require to do the proper follow up. You can identify, for example, the apps and modules of your team that contribute more to your technical debt.
 
 See this article, [Get an overview of the overall technical debt](overview-dashboard.md), for more details.

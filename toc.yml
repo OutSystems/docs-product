@@ -1654,7 +1654,6 @@
             - href: ref/apis/javascript/classes/view.md
         # LifeTime API v2
         - href: ref/apis/auto/lifetime-deployment-api-v2.final.md
-        - href: ref/apis/auto/lifetime-deployment-api-v2-temp.md
         - topics: 
             - href: ref/apis/lifetime-deployment/rest-api-authentication.md
             - href: ref/apis/lifetime-deployment/api-use-cases.md

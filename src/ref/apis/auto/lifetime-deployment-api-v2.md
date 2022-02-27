@@ -60,6 +60,18 @@ Scheme
 </thead>
 <tbody>
 <tr>
+<td><a href="#post-register">POST /environments/</a></td>
+<td>Register the environment in LifeTime.</td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey---get">GET /environments/{EnvironmentKey}/</a></td>
+<td>Returns the details of a given environment.</td>
+</tr>
+<tr>
+<td><a href="#delete-unregister">DELETE /environments/{EnvironmentKey}/</a></td>
+<td>Unregister the environment in LifeTime.</td>
+</tr>
+<tr>
 <td><a href="#operation--environments--get">GET /environments/</a></td>
 <td>Lists all the environments in the infrastructure.</td>
 </tr>
@@ -2198,6 +2210,18 @@ RedeployOutdated
 </section>
 </div>
 </div>
+
+<h3 class="panel-title" id="post-register">POST /environments/ </h3>
+<p>Go to <a href="#tag--environments">/environments</a> <br/> 
+Register the environment in LifeTime.</p>
+
+<p>application/json</p>
+#### 200 OK
+<p style="margin-left: 2em;">Environment registration response. <br/>
+<a  href="#/definitions/Environment">Environment</a></p>    
+
+
+
 <span id="path--environments-"></span>
 <div id="operation--environments--get" class="swagger--panel-operation-get panel">
 <div class="panel-heading">
@@ -2273,6 +2297,16 @@ Go to
 </section>
 </div>
 </div>
+
+<h3 class="panel-title" id="delete-unregister">DELETE /environments/ </h3>
+<p>Go to <a href="#tag--environments">/environments</a> <br/> 
+Unregister the environment in LifeTime.</p>
+
+<p>application/json</p>
+#### 200 OK
+<p style="margin-left: 2em;">True if the method was successful, False otherwise. <br/>
+<a  href="#/definitions/Environment">Environment</a></p>
+
 <span id="path--environments--EnvironmentKey--"></span>
 <div id="operation--environments--EnvironmentKey---get" class="swagger--panel-operation-get panel">
 <div class="panel-heading">

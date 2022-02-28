@@ -7,9 +7,11 @@ A Local Variable exists only in the scope of its parent element, for example, a 
 
 ## How to use
 
-This example shows how to use a Local Variable to keep the value of a Search widget. The value of the variable is then used to filter an aggregate.
+This example shows how to use a Local Variable to keep the value of a Search widget. The value of the Local Variable is then used to filter an Aggregate.
 
-1. Select the Input widget, and on the **Properties** tab, create a local variable by selecting the **Variable** dropdown and selecting **New Local Variable**.
+1. Select the Input widget.
+
+1. On the **Properties** tab, select the **Variable** dropdown and select **New Local Variable**.
 
     ![Adding a new Local Variable to an Input](<images/local-variable-ss.png>)
 

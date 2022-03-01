@@ -69,11 +69,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| Progress (Integer): Mandatory | Progress percentage to display. You can use functions or local variables. Usually a number between 0 and 100. |
-| Text (Text): Optional | Text that displays inside the circle. If no text is specified, the progress percentage is displayed. |
-| ProgressColor (Color Identifier): Optional | The color of the stroke on progress circle. The default value is: "rgba (0,0,0,0.6)".
-| TrailColor (Text): Optional | The color of the empty part of the progress circle. The default value is "rgba (0,0,0,0.2)". |
-
-| Thickness (Integer): Optional | The thickness of the circle that marks the progress. <p>Examples <ul><li>_Blank_ - The circle thickness is 8px. This is the default value.</li><li>_4_ - The circle thickness is 8px.</li></ul></p> |
-| AnimateInitialProgress (Boolean): Optional  | If set to True, the progress from zero to the progress value is animated. This is the default. If set to False, the progress is not animated. |
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>``"myclass"`` - Adds the ``myclass`` style to the UI styles being applied.</li><li>``"myclass1 myclass2"`` - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|Progress (Integer): Mandatory | Progress percentage. Usually a number between 0 and 100. You can also use functions or local variables.|
+|ProgressColor (Color Identifier): Optional | The color that fills the circle, as progress goes up, using the OutSystems UI Color palette.
+|TrailColor (Text): Optional | The color of the empty part of the progress circle, using the OutSystems UI Color palette.  |
+|Thickness (Integer): Optional | The thickness of the circle that marks the progress. |
+|OptionalConfigs.Shape (Shape Identifier): Optional  | Set the progress circle shape.|
+|OptionalConfigs.AnimateInitialProgress (Boolean): Optional  | If True, the progress from zero to the progress value is animated. This is the default.|
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>``"myclass"`` - Adds the ``myclass`` style to the UI styles being applied.</li><li>``"myclass1 myclass2"`` - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

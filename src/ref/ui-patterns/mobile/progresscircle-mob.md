@@ -16,12 +16,11 @@ summary: Advanced use cases for the Progress Circle UI Pattern.
 |ProgressColor|--progress-color|.osui-progress-circle|  
 |TrailColor|--trail-color|.osui-progress-circle|  
 |Thickness|--thickness|.osui-progress-circle|  
-|Size|--circle-size (width and height)|.osui-progress-circlebuild
-|  
+|Size|--circle-size (width and height)|.osui-progress-circle|  
 
 ## API
 
-If you are an advanced user, you might want to use our Progress Circle API (OutSystems.OSUI.Patterns.ProgressCircleAPI)for more advanced use cases. 
+If you are an advanced user, you might want to use our Progress Circle API (OutSystems.OSUI.Patterns.ProgressCircleAPI) for more advanced use cases. 
 
 ### Methods
 

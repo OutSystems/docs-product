@@ -7,7 +7,7 @@ A Local Variable exists only in the scope of its parent element, for example, a 
 
 ## How to use
 
-This example shows how to use a Local Variable to keep the value of a Search widget. The value of the Local Variable is then used to filter an Aggregate.
+This example shows how to use a Local Variable to keep the value of a Search widget. The value of the Local Variable is then used to filter an Aggregate. 
 
 1. Select the Input widget.
 
@@ -19,10 +19,20 @@ This example shows how to use a Local Variable to keep the value of a Search wid
 
     ![Entering the name for the Local Variable](<images/variable-searchkeyword-ss.png>)
 
-1. Use the Local Variable to [filter the aggregate](../../../develop/data/query/filter-results.md).
+1. Double click the aggregate on the source tree to open it.
 
-    ![Aggregate with a filter that uses the SearchKeyword Variable to filter the results](<images/filtered-aggregate-ss.png>)
+1. On the **Filter** tab, click **Add filter**.
 
+1. Insert the filter condition. 
+
+    ```
+    Employee.FirstName like "%" + SearchKeyword + "%"
+    ```
+
+
+1. Click **Close** to save the filter and see the filtered aggregate. 
+
+    ![Aggregate with a filter that uses the SearchKeyword Variable to filter the results](<images/filtered-aggregate-ss.png>) 
 
 Learn more in this [lesson about Variables](https://www.outsystems.com/training/lesson/2069/variables?LearningPathId=18).  
 

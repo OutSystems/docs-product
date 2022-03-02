@@ -31,9 +31,11 @@ This example shows how to use a Local Variable to keep the value of a Search wid
     ```
 
 
-1. Click **Close** to save the filter and see the filtered aggregate. 
+1. Click **Close** to save the filter. 
 
     ![Aggregate with a filter that uses the SearchKeyword Variable to filter the results](<images/filtered-aggregate-ss.png>) 
+
+After you follow these steps and publish your module, you can test the functionality of the filter in your browser. The text inserted in the Input of the Search widget is stored in the defined Local Variable and is then used to filter the aggregate. When you change to another screen or close your browser, the Local Variable is destroyed and the filter no longer applies.   
 
 Learn more in this [lesson about Variables](https://www.outsystems.com/training/lesson/2069/variables?LearningPathId=18).  
 

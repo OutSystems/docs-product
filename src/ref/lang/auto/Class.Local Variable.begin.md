@@ -4,6 +4,7 @@ summary: A Local Variable exists only in the scope of its parent element.
 
 A Local Variable exists only in the scope of its parent element, for example, a Screen or an Action. A Local Variable can only be assigned and used locally inside that scope. Local variables are destroyed when execution leaves the scope of the parent element.  
 
+![Adding a new Local Variable to a Screen](<images/add-local-variable-ss.png>)
 
 ## How to use
 

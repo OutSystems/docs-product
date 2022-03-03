@@ -2217,10 +2217,21 @@ Register the environment in LifeTime.</p>
 
 <p>application/json</p>
 #### 200 OK
-<p style="margin-left: 2em;">Environment registration response. <br/>
-<a  href="#/definitions/Environment">Environment</a></p>    
+<p style="margin-left: 2em;">Environment registration response.</p>
 
+#### 201 Created
+<p style="margin-left: 2em;">Environment created.</p> 
 
+#### 400 Bad Request
+<p style="margin-left: 2em;">Failed to validate environment register because EnvironmentName, EnvironmentAddress, ServiceCenterUsername, ServiceCenterPassword, LifeTimeAddress or EnvironmentPosition is empty.</p>
+<p style="margin-left: 2em;">Failed to register environment because the user has no permissions to manage LT.</p>
+<p style="margin-left: 2em;">Failed to register environment because EnvironmentAddress, SCUsername or SCPassword is empty.</p>
+<p style="margin-left: 2em;">Failed to register environment because could not connect to the environment due to No connection, invalid SC credentials or no permissions on SC.</p> 
+
+#### 500 Internal Server Error
+<p style="margin-left: 2em;">Failed to register environment due to an internal error.
+<br/>
+<a  href="#/definitions/Environment">Environment</a></p>
 
 <span id="path--environments-"></span>
 <div id="operation--environments--get" class="swagger--panel-operation-get panel">
@@ -2304,7 +2315,17 @@ Unregister the environment in LifeTime.</p>
 
 <p>application/json</p>
 #### 200 OK
-<p style="margin-left: 2em;">True if the method was successful, False otherwise. <br/>
+<p style="margin-left: 2em;">True if the method was successful, False otherwise.</p> 
+
+#### 204 Success
+<p style="margin-left: 2em;">Success.</p> 
+
+#### 404 Not Found
+<p style="margin-left: 2em;">Failed to remove environment with key {EnvironmentKey} due to the error: environment not found.</p> 
+
+#### 500 Internal Server Error
+<p style="margin-left: 2em;">Failed to unregister environment due to an internal error.
+<br/>
 <a  href="#/definitions/Environment">Environment</a></p>
 
 <span id="path--environments--EnvironmentKey--"></span>

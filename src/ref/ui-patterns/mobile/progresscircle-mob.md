@@ -7,7 +7,7 @@ summary: Advanced use cases for the Progress Circle UI Pattern.
  
 ## Structure
 
-![Structure diagram](images/progresscircle-diag.png)
+![Structure diagram](images/progress-classes-diag.png)
 
 ### Modifiers
 

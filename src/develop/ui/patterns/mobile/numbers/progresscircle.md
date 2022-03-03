@@ -11,7 +11,7 @@ You can use the Progress Circle UI Pattern to show the current progress of an op
 
 **How to use the Progress Circle UI Pattern**
 
-In this example, we create a button that increments the progress circle each time it's clicked.
+In this example, we create a button that increments the progress circle each time it's clicked and displays the progress as a fraction.
 
 1. In Service Studio, in the Toolbox, search for `Progress Circle`.
 
@@ -35,19 +35,19 @@ In this example, we create a button that increments the progress circle each tim
 
     ![Drag widget to screen](<images/progresscircle-dragwidget-ss.png>)
 
-1. Right-click your screen name, select **Add Local Variable**, and enter a name. 
-
-    In this example, we enter `Count`.
+1. Right-click your screen name, select **Add Local Variable**, and enter a name. for example, `Count`.
 
     ![Add local variable](<images/progresscircle-variable-ss.png>)
 
-1. Select the Progress Circle widget, and on the **Properties** tab, in the **Progress** property, enter the relevant logic for the progress percentage.
-
-    In this example, we enter the following logic which sets the progress percentage to 4%:
-
-    `Count / 25 * 100`
+1. Select the Progress Circle widget, and on the **Properties** tab, in the **Progress** property, enter the **Count** variable. 
 
     ![Add progress logic](<images/progresscircle-logic-ss.png>)
+
+1. Select the **Expression** widget inside the Progress Circle, and on the **Properties** tab, in the **Value** property, enter the relevant logic for the progress. In this example, enter the local variable **Count**. 
+
+1. From the Toolbox, drag the **Separator** widget into the Progress Circle.
+
+1. From the Toolbox, drag an **Expression** widget under the **Separator** widget and enter the relevant logic for the denominator. In this example, enter ``"100"``.
 
 1. From the Toolbox, drag the Button widget into the Main Content area of your application's screen. 
 

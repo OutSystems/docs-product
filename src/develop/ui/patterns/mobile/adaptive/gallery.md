@@ -23,15 +23,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
 
-<<<<<<< HEAD
     1. In the Toolbox, click **Search in other modules**.
-=======
-    a. Go to **Module > Manage dependencies**.
-
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure **Show All** is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure **Show All** is selected.
->>>>>>> update-gallery-pattern
     
     1. In **Search in other Modules**, select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     

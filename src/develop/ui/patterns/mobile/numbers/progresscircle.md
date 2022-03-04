@@ -23,17 +23,10 @@ In this example, we create a button that increments the progress circle each tim
 
     The Progress Circle widget is displayed.
 
-<<<<<<< HEAD
-    ![](<images/progresscircle-2-ss.png>)
-
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
-
-=======
     ![Progress Circle widget](<images/progresscircle-widget-ss.png>)
 
     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
 
->>>>>>> update-progresscircle-pattern
     1. In the Toolbox, click **Search in other modules**.
     
     1. In **Search in other Modules**, select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 

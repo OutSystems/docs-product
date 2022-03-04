@@ -27,11 +27,7 @@ In this example, we create a Range Slider Interval that allows the user to selec
 
     The Range Slider Interval widget is displayed.
 
-<<<<<<< HEAD
-    ![](images/rangesliderinterval-2-ss.png)
-=======
     ![Range SLider Interval widget](images/rangesliderinterval-widget-ss.png)
->>>>>>> update-rangesliderinterval-pattern
 
     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
 

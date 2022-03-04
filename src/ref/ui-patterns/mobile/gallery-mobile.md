@@ -9,7 +9,6 @@ summary: Advanced Use Cases for the Gallery UI Pattern.
 
 ![Gallery Structure](images/gallery-class-diag.png)
 
-
 ### Modifiers
 
 | **Modifier** | **Attribute** | **Element** | 

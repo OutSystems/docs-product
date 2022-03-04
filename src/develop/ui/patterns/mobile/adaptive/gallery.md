@@ -25,9 +25,9 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     a. Go to **Module > Manage dependencies**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure **Show All** is selected. 
 
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    c. On the Public elements for the selected Producer displayed on the right, ensure **Show All** is selected.
     
     d. Search for and select the element you want to add, and click **Apply**. 
     

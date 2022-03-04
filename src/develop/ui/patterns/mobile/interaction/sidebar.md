@@ -7,7 +7,7 @@ summary: Sidebar shows additional content on the side of the screen.
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui-dev.outsystemsenterprise.com/OutSystemsUIWebsite/MigrationOverview).
+If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
                             
 </div>
 

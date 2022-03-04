@@ -5,6 +5,12 @@ summary: Displays content in a specific set of columns, configurable per device 
 
 # Gallery
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.1, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+                            
+</div>
+
 You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end.
 
 ## How to use the Gallery UI Pattern

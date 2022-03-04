@@ -21,7 +21,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     ![Gallery widget](<images/gallery-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
     

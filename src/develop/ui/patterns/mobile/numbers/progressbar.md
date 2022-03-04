@@ -5,6 +5,12 @@ summary: Progress Bar displays the progress of a task by incrementing values in 
 
 # Progress Bar
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.1, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+
+</div>
+
 You can use the Progress Bar to display percentage values by incrementing values in a bar and to show the current progress of a task flow.
 
 ![Example of Progress Bar Pattern](<images/progressbar-example-ss.png>)
@@ -21,9 +27,9 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     a. Go to **Module > Manage dependencies**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure **Show All** is selected. 
 
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    c. On the Public elements for the selected Producer displayed on the right, ensure **Show All** is selected.
     
     d. Search for and select the element you want to add, and click **Apply**. 
     

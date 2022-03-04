@@ -27,11 +27,7 @@ In this example, we create a Range Slider Interval that allows the user to selec
 
     The Range Slider Interval widget is displayed.
 
-<<<<<<< HEAD
-    ![](images/rangesliderinterval-2-ss.png)
-=======
-    ![Range SLider Interval widget](images/rangesliderinterval-widget-ss.png)
->>>>>>> update-rangesliderinterval-pattern
+    ![Range Slider Interval widget](images/rangesliderinterval-widget-ss.png)
 
     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
 
@@ -61,11 +57,7 @@ In this example, we create a Range Slider Interval that allows the user to selec
 
     ![Add container with text and expressions](images/rangesliderinterval-container-ss.png)
 
-<<<<<<< HEAD
-1. To bind the **IntervalStart** variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Close**.
-=======
 1. To create a variable for each of the expressions, right-click your screen name, select **Add Local Variable**, and on the **Properties** tab, enter a name and data type. In this example we create the **LowerPrice** and **HighestPrice** variables with the **Currency** data type.
->>>>>>> master
 
     ![Create local variables](images/rangesliderinterval-locvar-ss.png)
 

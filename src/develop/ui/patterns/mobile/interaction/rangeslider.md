@@ -29,11 +29,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     The Range Slider widget is displayed.
 
-<<<<<<< HEAD
-    ![](images/rangeslider-2-ss.png)
-=======
     ![Range Slider widget](images/rangeslider-widget-ss.png)
->>>>>>> update-rangeslider-pattern
 
     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
 

@@ -5,6 +5,12 @@ summary: Displays the current progress of a task using circular or semi-circular
 
 # Progress Circle
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui-dev.outsystemsenterprise.com/OutSystemsUIWebsite/MigrationOverview).
+                            
+</div>
+
 You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge.
 
 ![Example progress circle](<images/progresscircle-example-ss.png>)
@@ -23,9 +29,9 @@ In this example, we create a button that increments the progress circle each tim
 
     a. Go to **Module > Manage dependencies**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure **Show All** is selected. 
 
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    c. On the Public elements for the selected Producer displayed on the right, ensure **Show All** is selected.
     
     d. Search for and select the element you want to add, and click **Apply**. 
     
@@ -45,9 +51,15 @@ In this example, we create a button that increments the progress circle each tim
 
 1. Select the **Expression** widget inside the Progress Circle, and on the **Properties** tab, in the **Value** property, enter the relevant logic for the progress. In this example, enter the local variable **Count**. 
 
+    ![Add expression logic](<images/progresscircle-expression-ss.png>)
+
 1. From the Toolbox, drag the **Separator** widget into the Progress Circle.
 
+    ![Add the separator widget](<images/progresscircle-separator-ss.png>)
+
 1. From the Toolbox, drag an **Expression** widget under the **Separator** widget and enter the relevant logic for the denominator. In this example, enter ``"100"``.
+
+    ![Add an expression widget for the denominator](<images/progresscircle-denominator-ss.png>)
 
 1. From the Toolbox, drag the Button widget into the Main Content area of your application's screen. 
 

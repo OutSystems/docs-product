@@ -21,9 +21,6 @@ These elements are multiplied by the number of elements in the **RatingScale** i
 
 </div>
 
-
- 
-
 ### Modifiers
 
 |**Modifier**|**Attribute**|**Element**|

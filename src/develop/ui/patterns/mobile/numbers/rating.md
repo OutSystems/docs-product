@@ -25,9 +25,9 @@ You can use the Rating UI Pattern to allow users rate, for example, products and
 
     c. On the Public elements for the selected Producer displayed on the right, ensure **Show All** is selected.
     
-    1. In **Search in other Modules**, select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    d. In **Search in other Modules**, select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     
-    1. In the Toolbox, search for the widget again.
+    e. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the **Rating** widget into the Main Content area of your application's screen.
 

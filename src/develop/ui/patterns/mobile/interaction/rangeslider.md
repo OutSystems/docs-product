@@ -5,6 +5,12 @@ summary: Allows the user select a single value between two range values.
 
 # Range Slider
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version between 2.3.0 and 2.8.1, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+                            
+</div>
+
 You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track increases or decreases the value.  
 
 ![Example of a Range Slider](images/rangeslider-overview.png)
@@ -29,9 +35,9 @@ In this example, we create a Range Slider that allows the user select the number
 
     a. Go to **Module > Manage dependencies**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure **Show All** is selected. 
 
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    c. On the Public elements for the selected Producer displayed on the right, ensure **Show All** is selected.
     
     d. Search for and select the element you want to add, and click **Apply**. 
     

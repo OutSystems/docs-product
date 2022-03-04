@@ -25,15 +25,11 @@ You can use the Flip Content UI Pattern to display information that when, for ex
 
     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
-
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure **Show All** is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure **Show All** is selected.
+    1. In the Toolbox, click **Search in other modules**.
     
-    d. In **Search in other Modules**, select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    1. In **Search in other Modules**, select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     
-    e. In the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Flip Content widget into the Main Content area of your application's screen.
 

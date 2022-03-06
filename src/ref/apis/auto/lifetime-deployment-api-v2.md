@@ -2212,26 +2212,49 @@ RedeployOutdated
 </div>
 
 <h3 class="panel-title" id="post-register">POST /environments/ </h3>
-<p>Go to <a href="#tag--environments">/environments</a> <br/> 
-Register the environment in LifeTime.</p>
+<p>Go to <a href="#tag--environments">/environments</a></p> 
 
+#### DESCRIPTION
+<p>Register the environment in LifeTime.</p>
+
+#### REQUEST BODY
+
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentData
+</td>
+<td><p>An environtment record.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### RESPONSES
 <p>application/json</p>
+
 #### 200 OK
 <p style="margin-left: 2em;">Environment registration response.</p>
 
-#### 201 Created
-<p style="margin-left: 2em;">Environment created.</p> 
 
-#### 400 Bad Request
-<p style="margin-left: 2em;">Failed to validate environment register because EnvironmentName, EnvironmentAddress, ServiceCenterUsername, ServiceCenterPassword, LifeTimeAddress or EnvironmentPosition is empty.</p>
-<p style="margin-left: 2em;">Failed to register environment because the user has no permissions to manage LT.</p>
-<p style="margin-left: 2em;">Failed to register environment because EnvironmentAddress, SCUsername or SCPassword is empty.</p>
-<p style="margin-left: 2em;">Failed to register environment because could not connect to the environment due to No connection, invalid SC credentials or no permissions on SC.</p> 
-
-#### 500 Internal Server Error
-<p style="margin-left: 2em;">Failed to register environment due to an internal error.
-<br/>
-<a  href="#/definitions/Environment">Environment</a></p>
 
 <span id="path--environments-"></span>
 <div id="operation--environments--get" class="swagger--panel-operation-get panel">
@@ -2310,23 +2333,48 @@ Go to
 </div>
 
 <h3 class="panel-title" id="delete-unregister">DELETE /environments/ </h3>
-<p>Go to <a href="#tag--environments">/environments</a> <br/> 
-Unregister the environment in LifeTime.</p>
+<p>Go to <a href="#tag--environments">/environments</a></p> 
 
+#### DESCRIPTION
+<p>Unregister the environment in LifeTime.</p>
+
+#### REQUEST BODY
+
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>An environtment key.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### RESPONSES
 <p>application/json</p>
+
 #### 200 OK
 <p style="margin-left: 2em;">True if the method was successful, False otherwise.</p> 
 
-#### 204 Success
-<p style="margin-left: 2em;">Success.</p> 
-
-#### 404 Not Found
-<p style="margin-left: 2em;">Failed to remove environment with key {EnvironmentKey} due to the error: environment not found.</p> 
-
-#### 500 Internal Server Error
-<p style="margin-left: 2em;">Failed to unregister environment due to an internal error.
-<br/>
-<a  href="#/definitions/Environment">Environment</a></p>
 
 <span id="path--environments--EnvironmentKey--"></span>
 <div id="operation--environments--EnvironmentKey---get" class="swagger--panel-operation-get panel">

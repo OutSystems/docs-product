@@ -50,14 +50,14 @@ If you are an advanced user, you might want to use our Range Slider API (OutSyst
 
 |**Function**|**Description**|**Parameters**| 
 |---|---|---| 
-|ChangeProperty|Changes the Range Slider’s property.| <li> rangeSliderId: string</li><li>propertyName: string</li><li>propertyValue: any</li>| 
-|Create|Creates a new Range Slider instance and adds it to the Range Slider Map.|<li>rangeSliderId: string</li><li>configs: string</li>| 
-|Dispose|Destroys the Range Slider instance.|<li> rangeSliderId: string </li>| 
-|GetAllRangeSliderItemsMap|Returns the map with all the Range Slider instances on the screen.|<li>Returns array of Ids</li>| 
-|GetRangeSliderItemById|Get the Range Slider instance Id.|<li>rangeSliderId: string</li>| 
-|Initialize|Initializes the pattern instance.|<li> rangeSliderId: string </li>| 
-|RegisterProviderCallback|Function to register a provider callback.|<li>rangeSliderId: string</li><li>eventName: string</li><li>callback: OSUIFramework.Callbacks.OSGeneric</li>| 
-|SetRangeIntervalChangeOnDragEnd|Function to change the Range Slider trigger to on DragEnd|<li> rangeSliderId: string</li>| 
+|ChangeProperty|Changes the Range Slider’s property.| <ul><li> rangeSliderId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul>| 
+|Create|Creates a new Range Slider instance and adds it to the Range Slider Map.|<ul><li>rangeSliderId: string</li><li>configs: string</li></ul>| 
+|Dispose|Destroys the Range Slider instance.|<ul><li> rangeSliderId: string </li></ul>| 
+|GetAllRangeSliderItemsMap|Returns the map with all the Range Slider instances on the screen.|<ul><li>Returns array of Ids</li></ul>| 
+|GetRangeSliderItemById|Get the Range Slider instance Id.|<ul><li>rangeSliderId: string</li></ul>| 
+|Initialize|Initializes the pattern instance.|<ul><li> rangeSliderId: string </li></ul>| 
+|RegisterProviderCallback|Function to register a provider callback.|<ul><li>rangeSliderId: string</li><li>eventName: string</li><li>callback: OSUIFramework.Callbacks.OSGeneric</li></ul>| 
+|SetRangeIntervalChangeOnDragEnd|Function to change the Range Slider trigger to on DragEnd|<ul><li> rangeSliderId: string</li></ul>| 
 
 ## Advanced use cases
 

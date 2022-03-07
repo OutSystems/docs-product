@@ -7,7 +7,7 @@ summary: Tooltip dynamically displays simple informative content on end user int
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui-dev.outsystemsenterprise.com/OutSystemsUIWebsite/MigrationOverview).
+If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
                             
 </div>
 
@@ -23,7 +23,7 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 
     ![Tooltip widget](<images/tooltip-widget-ss.png>)
 
-     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
     

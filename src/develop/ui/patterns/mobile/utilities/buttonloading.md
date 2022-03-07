@@ -7,7 +7,7 @@ summary: Use the Button Loading pattern to call actions that don't run immediate
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui-dev.outsystemsenterprise.com/OutSystemsUIWebsite/MigrationOverview).
+If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
                             
 </div>
 
@@ -28,7 +28,7 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
     1. In **Search in other Modules**, select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     
     1. In the Toolbox, search for the widget again.
-
+    
 1. From the Toolbox, drag the Button Loading widget into the Main Content area of your application's screen.
 
     In this example, we drag the widget onto a form that is already in the Main Content area.

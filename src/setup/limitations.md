@@ -9,11 +9,7 @@ There are some feature differences between this new version and your existing Se
 
 * Context menus icons, display and styling are still under development.
 
-* The following features of the flow editor for actions, processes, and UI flows aren't available yet:
-
-    * Zoom using mouse wheel and trackpad.
-
-    * Export to an Image.
+* The **Export to an Image** feature of the flow editor for actions, processes, and UI flows is not available yet.
 
 * Integrations: Consuming SAP Remote Functions isn't supported.
 

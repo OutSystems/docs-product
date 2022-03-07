@@ -60,6 +60,18 @@ Scheme
 </thead>
 <tbody>
 <tr>
+<td><a href="#post-register">POST /environments/</a></td>
+<td>Register the environment in LifeTime.</td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey---get">GET /environments/{EnvironmentKey}/</a></td>
+<td>Returns the details of a given environment.</td>
+</tr>
+<tr>
+<td><a href="#delete-unregister">DELETE /environments/{EnvironmentKey}/</a></td>
+<td>Unregister the environment in LifeTime.</td>
+</tr>
+<tr>
 <td><a href="#operation--environments--get">GET /environments/</a></td>
 <td>Lists all the environments in the infrastructure.</td>
 </tr>
@@ -2198,6 +2210,52 @@ RedeployOutdated
 </section>
 </div>
 </div>
+
+<h3 class="panel-title" id="post-register">POST /environments/ </h3>
+<p>Go to <a href="#tag--environments">/environments</a></p> 
+
+#### DESCRIPTION
+<p>Register the environment in LifeTime.</p>
+
+#### REQUEST BODY
+
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentData
+</td>
+<td><p>An environtment record.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### RESPONSES
+<p>application/json</p>
+
+#### 200 OK
+<p style="margin-left: 2em;">Environment registration response.</p>
+
+
+
 <span id="path--environments-"></span>
 <div id="operation--environments--get" class="swagger--panel-operation-get panel">
 <div class="panel-heading">
@@ -2273,6 +2331,51 @@ Go to
 </section>
 </div>
 </div>
+
+<h3 class="panel-title" id="delete-unregister">DELETE /environments/ </h3>
+<p>Go to <a href="#tag--environments">/environments</a></p> 
+
+#### DESCRIPTION
+<p>Unregister the environment in LifeTime.</p>
+
+#### REQUEST BODY
+
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>An environtment key.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### RESPONSES
+<p>application/json</p>
+
+#### 200 OK
+<p style="margin-left: 2em;">True if the method was successful, False otherwise.</p> 
+
+
 <span id="path--environments--EnvironmentKey--"></span>
 <div id="operation--environments--EnvironmentKey---get" class="swagger--panel-operation-get panel">
 <div class="panel-heading">

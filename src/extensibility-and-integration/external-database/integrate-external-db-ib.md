@@ -5,7 +5,7 @@ tags: external database; integration builder
 
 # Technical Preview - Integrate with an external database using Integration Builder 
 
-You can integrate your applications with external databases including DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
+You can integrate your applications with external databases including DB2 iSeries, PostgreSQL, Aurora PostgreSQL, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
 
 For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup/system-requirements.md).
 

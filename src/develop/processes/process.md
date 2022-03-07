@@ -40,6 +40,8 @@ A process can also be [executed](<../../ref/lang/auto/Class.Execute Process.fina
 
 Service Studio provides you with mechanisms to reuse Processes among modules. You can expose your Processes to other modules or use Processes defined in another module.
 
+If you are using an Oracle, PostgreSQL or DB2 database, commit the transaction before launching a Process instance.
+
 
 ## Process Execution
 

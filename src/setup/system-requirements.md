@@ -148,6 +148,15 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integ
 * MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)
 * MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)
 
+### PostgreSQL Database
+
+* PostgreSQL 12.x.x
+* PostgreSQL 13.x.x
+
+### Aurora PostgreSQL Database
+
+* Aurora PostgreSQL Database available in the cloud running a version compatible with a [supported PostgreSQL database](#postgresql-database)
+
 ### IBM Database
 
 * DB2 for iSeries V6R1 or higher

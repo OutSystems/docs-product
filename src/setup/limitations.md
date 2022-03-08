@@ -5,8 +5,6 @@ summary: Features currently unavailable in the cross-platform Service Studio.
 
 There are some feature differences between this new version and your existing Service Studio.
 
-* In the UI main editor, the toggles for some widgets (for example, List or Table widgets) don't have the final experience.
-
 * Context menus icons, display and styling are still under development.
 
 * The **Export to an Image** feature of the flow editor for actions, processes, and UI flows is not available yet.

@@ -11,7 +11,10 @@ For more information about the supported databases and the systems that are cert
 
 ## Prerequisites
 
-* Platform Server 11.14.0 or later.
+* Depending on the external database you want to integrate with, your environments must use the following Platform Server versions:
+    
+    * For integrations with DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server, you need Platform Server 11.14.0 or later.
+    * For integrations with PostgreSQL and Aurora PostgreSQL, you need Platform Server 11.15.0 or later. 
 
 * All infrastructure servers must be able to connect to the external database.
 

@@ -20,7 +20,7 @@ This example shows how to use a Local Variable to keep the value of a Search wid
 
     ![Entering the name for the Local Variable](<images/variable-searchkeyword-ss.png>)
 
-1. Double click the aggregate on the source tree to open it.
+1. Double-click the aggregate on the Elements tree.
 
 1. On the **Filter** tab, click **Add filter**.
 
@@ -31,7 +31,7 @@ This example shows how to use a Local Variable to keep the value of a Search wid
     ```
 
 
-1. Click **Close** to save the filter. 
+1. To save the filter, click **Close**. 
 
     ![Aggregate with a filter that uses the SearchKeyword Variable to filter the results](<images/filtered-aggregate-ss.png>) 
 

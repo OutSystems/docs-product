@@ -42,7 +42,7 @@ This example shows how to use a Client Variable to keep the value of a Search wi
     Employee.FirstName like "%" + Client.SearchKeyword + "%"
     ```
 
-1. To save the filter, click **Close** . 
+1. To save the filter, click **Close**. 
 
     ![Aggregate with a filter that uses the SearchKeyword Variable to filter the results](<images/client-var-filtered-aggregate-ss.png>) 
 

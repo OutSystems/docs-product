@@ -66,3 +66,4 @@ If you are an advanced user, you might want to use the Carousel API  (OutSystems
 1. Set the **WidgetId** property of the action to the **CarouselId** returned from the **Initialized** event.
 1. Set the **HasDrag** boolean parameter to the desired value. In this example, it is set to False to disable the drag.
 
+    **Note**: You can also use this client action linked to a button or any other trigger to toggle the drag in runtime.

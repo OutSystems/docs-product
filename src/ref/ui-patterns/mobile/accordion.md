@@ -9,7 +9,7 @@ summary: Advanced use cases for the Accordion UI Pattern.
 
 |**Event** |**Description**| 
 |---|---|
-| AccordionCollapseAll: Optional |<ul><li>Function to collapse all the expanded items of a given accordion.</li><li>WidgetId (text): The accordion's ID to perform the action.</li></ul>|
+| AccordionCollapseAll: Optional |<ul><li>Function that collapses all the expanded items of a given accordion.</li><li>WidgetId (text): The accordion's ID to perform the action.</li></ul>|
 | AccordionExpandAll |<ul><li>Function to expand all the collapsed items of a given accordion.</li><li>WidgetId (text): The accordion's ID to perform the action.</li></ul>|
 
 ## Events - Accordion Item
@@ -31,7 +31,7 @@ summary: Advanced use cases for the Accordion UI Pattern.
 
 ## API - Accordion
 
-If you are an advanced user, you might want to use the Accordion API (OutSystems.OSUI.Patterns.AccordionAPI) for more advanced use cases.
+If you are an advanced user, you might want to use the Accordion API (OutSystems.OSUI.Patterns.AccordionAPI) for more complex use cases.
 
 ### Methods
 

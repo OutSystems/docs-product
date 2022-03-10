@@ -27,9 +27,9 @@ You can use the Accordion UI Pattern to allow users expand and hide content when
 
     ![Drag widget to screen](<images/accordion-dragwidget-ss.png>)
 
-    **Note:** By default, the Accordion widget contains 3 Accordion Item widgets. You can add or delete Accordion Items as required.
+    **Note:** By default, the Accordion widget contains 3 **AccordionItem** widgets. You can add or delete Accordion Items as required.
 
-1. Add the relevant content to the Accordion Item placeholders. In this example, some FAQs are.
+1. Add the relevant content to the **AccordionItem **placeholders. In this example, some FAQs are added.
   
     ![Add content to placeholders](<images/accordion-addcontent-ss.png>)
 
@@ -52,9 +52,9 @@ After following these steps and publishing the module, you can test the pattern 
 
 ### Accordion Item
 
-| Property | Description |
+|Property | Description|
 |---|---|
-|StartsExpanded (Boolean): Optional | If set to True, when the page is rendered, the Accordion Item is open. If set to False, the Accordion Item is closed. This is the default value. |
+|StartsExpanded (Boolean): Optional | If set to True, when the page is rendered, the Accordion Item is open. If set to False, the Accordion Item is closed. The default value is False. |
 |Icon (Accordion Icon Type): Optional| Set the icons shown in  the Accordion Item. You can pick between the following: <br/> <ul><li>Carets: Arrow up icon when the item is expanded and arrow down icon when the item is collapsed (this is the default.</li><li> Plus/Minus: Minus icon (-) when the item is expanded and plus icon (+) when the item is collapsed.</li><li>Custom: Advanced option to customize the Accordion icons. To use custom icons, set the Icon property to Custom and drag and drop the Icon widget to the Accordion Item placeholder.</li></ul>| 
 |IconPosition (AccordionIconPosition): Optional | Set the position of the accordion icon. By default, the icon diplays on the right. |
 |IsDisabled (Boolean): Optional | If True, the Accordion item can't be expanded when clicked. Default value is False. |

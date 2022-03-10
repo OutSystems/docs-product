@@ -7,6 +7,8 @@ summary: Displays multiple items in a horizontal slide.
 
 You can use the Carousel UI Pattern to display multiple items in a horizontal slide.  The Carousel Pattern optimizes screen space by displaying only a few images from a larger collection which you can view using the navigation controls. 
 
+![Example Carousel](images/carousel-example.png)
+
 **Note:** The Carousel Pattern is based on the Splide.js library (v3). For more information about the Carousel’s behaviors and extensibility methods, see [Splide.js](https://splidejs.com/).  
 
 ## How to use the Carousel UI Pattern
@@ -35,7 +37,7 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
     In this example, the List is deleted and 3 Image widgets are added.  
 
-     ![Add image widgets](images/carousel-addimages-ss.png) 
+    ![Add image widgets](images/carousel-addimages-ss.png) 
 
 1. Select the **Image** widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Carousel. 
 
@@ -45,10 +47,9 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
 1. Repeat step 4 for each of the images in the Carousel. 
 
-1. You can configure the Carousel by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, **Navigation** or **ItemsPerSlide**.
-For more configurations, expand the **OptionalConfigs** property.
+1. You can configure the Carousel by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, **Navigation** or **ItemsPerSlide**.For more configurations, expand the **OptionalConfigs** property.
 
-    ![](images/carousel-properties-ss.png)  
+    ![Set properties](images/carousel-properties-ss.png)  
 
 After following these steps and publishing the module, you can test the pattern in your app.
 

@@ -44,6 +44,13 @@ Result filtering is available in `Search*` and `Count*` Server Actions. There ar
 BasicFilters (List of BasicFilter)
 :   Define simple criteria for filtering. Each basic filter is defined in the following manner:  
     "Compare entity attribute A of type T with value V, using operator O".  
+    
+    <div class="info" markdown="1">
+    
+    For SharePoint Online, use the `FolderFilter` parameter to filter files by folder instead of `BasicFilters`.
+    
+    </div>
+    
     All basic filter parameters are Static Entities, except for the value to search. The available attributes are the attribute names of the external system entity available in a Static Entity. Check the following examples of entity attribute types and operators:
 
     EntityAttributeType = `DateTime`, `Number`, `Text`, etc.  
@@ -52,8 +59,10 @@ BasicFilters (List of BasicFilter)
     <div class="warning" markdown="1">
 
      Don't use `CaseInsentitve` filter operator with SharePoint Online integrations. Doing so causes an error.
-
+    
     </div>
+    
+    
 
     Combine one or more of these basic filters to produce your final filter condition. For example, consider a Customer entity of the external system with a CustomerName attribute. For example, to search for customers whose name starts with "John" (case insensitive), use the following BasicFilter:
 

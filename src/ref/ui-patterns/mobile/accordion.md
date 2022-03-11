@@ -21,13 +21,13 @@ summary: Advanced use cases for the Accordion UI Pattern.
 
 ## Structure
 
-### Base Accordion structure
+### Accordion base structure
 
-![Base Accordion structure](images/accordion-base-diag.png)
+![Base Accordion structure](images/accordion-base-structure-diag.png)
 
 ### Accordion and List widget
 
-![Accordion and List widget](images/accordion-list-diag.png)
+![Accordion and List widget](images/accordion-list-widget-diag.png)
 
 ## API - Accordion
 

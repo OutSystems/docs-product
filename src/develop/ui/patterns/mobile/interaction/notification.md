@@ -43,7 +43,7 @@ The Notification UI Pattern is a contextual short message that provides importan
 
 1. Define the actions for the **Open** and **Close** buttons, by selecting the button widget, and on the **Properties**, from the **OnClick** dropdown select **New Client Action**.
 
-    In this example, for the **Open** button, the **ShowNotification** variable is set to **True**, and for the **Close** button the **ShowNotification** variable is set to False.
+    In this example, for the **Open** button, the **ShowNotification** variable is set to **True**, and for the **Close** button the **ShowNotification** variable is set to **False**.
 
     ![Define action for Open button](<images/notification-open-ss.png>)
 

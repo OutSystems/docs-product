@@ -7,8 +7,6 @@ summary: The Notification UI Pattern is a contextual short message that provides
 
 The Notification UI Pattern is a contextual short message that provides important information to the user, such as app crashes, new updates, task reminders, and new messages.
 
-![](<images/notification-1-ss.png>)
-
 **How to use the Notification UI Pattern**
 
 1. In Service Studio, in the Toolbox, search for `Notification`.
@@ -17,43 +15,42 @@ The Notification UI Pattern is a contextual short message that provides importan
 
     ![](<images/notification-2-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
+    1. In **Search in other Modules**, select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
 
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
-    
-    d. Search for and select the element you want to add, and click **Apply**. 
-    
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
+
 
 1. From the Toolbox, drag the Animate widget into the Main Content area of your application's screen.
 
-    ![](<images/notification-3-ss.png>)
+    ![Drag the Animate widget to the screen](<images/notification-3-ss.png>)
 
  1. Add the relevant content to the Content placeholder. 
 
     In this example, we add an icon, some text. We also add Show and Close buttons to the Main Content area of the screen.
 
-    ![](<images/notification-4-ss.png>)
+    ![Add content to Content placeholder](<images/notification-4-ss.png>)
 
 1. Select and right-click your screen name, and select **Add Local Variable**. Enter a name for the variable. In this example, we enter ``ShowNotification`` and set the **Default Value** to **False**.
 
-    ![](<images/notification-5-ss.png>)
+    ![Add a local variable](<images/notification-5-ss.png>)
 
 1. Select the Notification widget, and on the **Properties** tab, from the **IsOpen** dropdown, enter the newly created variable. 
 
-    ![](<images/notification-6-ss.png>)
+    ![Set the IsOpen property ](<images/notification-6-ss.png>)
 
-1. Define the actions for the Show and Close buttons, by selecting the button widget, and on the **Properties**, from the **OnClick** dropdown select **New Client Action**.
+1. Define the actions for the **Show** and **Close** buttons, by selecting the button widget, and on the **Properties**, from the **OnClick** dropdown select **New Client Action**.
 
     In this example, for the Show button we assign the ShowNotification variable to True, and for the Close button we assign the ShowNotification variable to False.
 
-    ![](<images/notification-7-ss.png?width=800>)
+    ![Define actions for buttons](<images/notification-7-ss.png?width=800>)
 
-1. After following these steps and publishing the module, you can test the pattern in your app.
+After following these steps and publishing the module, you can test the pattern in your app.
+
+![Notification example](<images/notification-example.png>)
 
 ## Properties
 

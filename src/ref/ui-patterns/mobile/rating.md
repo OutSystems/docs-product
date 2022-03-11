@@ -21,9 +21,6 @@ These elements are multiplied by the number of elements in the **RatingScale** i
 
 </div>
 
-
- 
-
 ### Modifiers
 
 |**Modifier**|**Attribute**|**Element**|
@@ -35,15 +32,15 @@ These elements are multiplied by the number of elements in the **RatingScale** i
 
 ## API
 
-If you are an advanced user, you might want to use our Rating API (OutSystems.OSUI.Patterns.RatingAPI)for more advanced use cases.
+If you are an advanced user, you might want to use our Rating API (OutSystems.OSUI.Patterns.RatingAPI)for more complex use cases.
 
 ### Methods
 
 |**Function**|**Description**|**Parameters**|
 |---|---|---|
-|ChangeProperty|Changes the Rating property.|<li>ratingId: string</li><li>propertyName: string</li><li>propertyValue: any</li>|
-|Create|Creates a new Rating instance and adds it to the ratingMap.|<li>ratingId: string</li><li>configs: string</li>|
-|Destroy|Destroys the Rating instance.|<li>ratingId: string</li>|
-|GetAllRatings|Returns the Map with all the Rating instances on the screen.|<li>Returns array of Ids</li>|
-|GetRatingById|Gets the Rating instance Id.|<li>ratingId: string</li>|
-|Initialize|Initializes the pattern instance.| <li> ratingId: string</li>|
+|ChangeProperty|Changes the Rating property.|<ul><li>ratingId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul>|
+|Create|Creates a new Rating instance and adds it to the ratingMap.|<ul><li>ratingId: string</li><li>configs: string</li></ul>|
+|Destroy|Destroys the Rating instance.|<ul><li>ratingId: string</li></ul>|
+|GetAllRatings|Returns the Map with all the Rating instances on the screen.|<ul><li>Returns array of Ids</li></ul>|
+|GetRatingById|Gets the Rating instance Id.|<ul><li>ratingId: string</li></ul>|
+|Initialize|Initializes the pattern instance.|<ul><li> ratingId: string</li></ul>|

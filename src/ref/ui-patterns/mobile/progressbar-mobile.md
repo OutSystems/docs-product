@@ -31,7 +31,7 @@ OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introductio
 
 |**Client action**|**Description**|**Parameters**|
 |---|---|---|
-|SetProgressBarValue|Sets a value on the Progress Bar. By using this action, you can set the Progress Bar’s value without changing the original value of the Progress Bar.|<li>WidgetId: string </li><li>Progress: integer</li>|
+|SetProgressBarValue|Sets a value on the Progress Bar. By using this action, you can set the Progress Bar’s value without changing the original value of the Progress Bar.|<ul><li>WidgetId: string </li><li>Progress: integer</li></ul>|
 
 ## API
 
@@ -42,10 +42,10 @@ For advanced users, you can use the Progress Bar API (OutSystems.OSUI.Patterns.P
 |**Function**|**Description**|**Parameters**|
 |---|---|---|
 |ChangeProperty|Changes the property of a given progress bar.|<ul><li>progressId: string</li><li> propertyName: string</li><li>propertyValue: any</li></ul>|
-|Create|Creates the new progress instance and adds it to the ProgressMap.| <li>progressId: string</li><li>configs: string</li>|
-|Destroy|Destroys the instance of the given Progress.|<li>progressId: string</li>|
-|GetAllProgressItemsMap|Returns the Map with all the Progress instances on the page.|<li>Returns array of Ids</li>|
-|GetProgressById|Gets the instance of Progress, by a given ID.|<li>progressId: string</li>|
-|Initialize|Initializes the pattern instance.|<li>progressId: string</li>|
-|SetProgressBarValue|Sets a value on the progress bar.|<li>progressId: string</li><li>progress: number</li>|
+|Create|Creates the new progress instance and adds it to the ProgressMap.|<ul> <li>progressId: string</li><li>configs: string</li></ul>|
+|Destroy|Destroys the instance of the given Progress.|<ul><li>progressId: string</li></ul>|
+|GetAllProgressItemsMap|Returns the Map with all the Progress instances on the page.|<ul><li>Returns array of Ids</li></ul>|
+|GetProgressById|Gets the instance of Progress, by a given ID.|<ul><li>progressId: string</li></ul>|
+|Initialize|Initializes the pattern instance.|<ul><li>progressId: string</li></ul>|
+|SetProgressBarValue|Sets a value on the progress bar.|<ul><li>progressId: string</li><li>progress: number</li></ul>|
 

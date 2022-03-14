@@ -60,24 +60,20 @@ Scheme
 </thead>
 <tbody>
 <tr>
-<td><a href="#post-register">POST /environments/</a></td>
-<td>Register the environment in LifeTime.</td>
-</tr>
-<tr>
-<td><a href="#operation--environments--EnvironmentKey---get">GET /environments/{EnvironmentKey}/</a></td>
-<td>Returns the details of a given environment.</td>
-</tr>
-<tr>
-<td><a href="#delete-unregister">DELETE /environments/{EnvironmentKey}/</a></td>
-<td>Unregister the environment in LifeTime.</td>
-</tr>
-<tr>
 <td><a href="#operation--environments--get">GET /environments/</a></td>
 <td>Lists all the environments in the infrastructure.</td>
 </tr>
 <tr>
+<td><a href="#operation--environments--post">POST /environments/</a></td>
+<td>Registers an environment in LifeTime. <strong>This endpoint is available as of LifeTime Management Console 11.11.0.</strong></td>
+</tr>
+<tr>
 <td><a href="#operation--environments--EnvironmentKey---get">GET /environments/{EnvironmentKey}/</a></td>
 <td>Returns the details of a given environment.</td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--delete">DELETE /environments/{EnvironmentKey}/</a></td>
+<td>Unregisters an environment from LifeTime. <strong>This endpoint is available as of LifeTime Management Console 11.11.0.</strong></td>
 </tr>
 <tr>
 <td><a href="#operation--environments--EnvironmentKey--applications--get">GET /environments/{EnvironmentKey}/applications/</a></td>
@@ -2211,51 +2207,6 @@ RedeployOutdated
 </div>
 </div>
 
-<h3 class="panel-title" id="post-register">POST /environments/ </h3>
-<p>Go to <a href="#tag--environments">/environments</a></p> 
-
-#### DESCRIPTION
-<p>Register the environment in LifeTime.</p>
-
-#### REQUEST BODY
-
-<table class="table">
-<thead>
-<tr>
-<th class="sw-param-name"></th>
-<th class="sw-param-description"></th>
-<th class="sw-param-type"></th>
-<th class="sw-param-data-type"></th>
-<th class="sw-param-annotation"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-EnvironmentData
-</td>
-<td><p>An environtment record.</p>
-</td>
-<td>path</td>
-<td>
-<span class="json-property-type">string</span>
-<span class="json-property-range" title="Value limits"></span>
-</td>
-<td>
-<span class="json-property-required"></span>
-</td>
-</tr>
-</tbody>
-</table>
-
-#### RESPONSES
-<p>application/json</p>
-
-#### 200 OK
-<p style="margin-left: 2em;">Environment registration response.</p>
-
-
-
 <span id="path--environments-"></span>
 <div id="operation--environments--get" class="swagger--panel-operation-get panel">
 <div class="panel-heading">
@@ -2332,49 +2283,75 @@ Go to
 </div>
 </div>
 
-<h3 class="panel-title" id="delete-unregister">DELETE /environments/ </h3>
-<p>Go to <a href="#tag--environments">/environments</a></p> 
-
-#### DESCRIPTION
-<p>Unregister the environment in LifeTime.</p>
-
-#### REQUEST BODY
-
-<table class="table">
-<thead>
-<tr>
-<th class="sw-param-name"></th>
-<th class="sw-param-description"></th>
-<th class="sw-param-type"></th>
-<th class="sw-param-data-type"></th>
-<th class="sw-param-annotation"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-EnvironmentKey
-</td>
-<td><p>An environtment key.</p>
-</td>
-<td>path</td>
-<td>
-<span class="json-property-type">string</span>
-<span class="json-property-range" title="Value limits"></span>
-</td>
-<td>
-<span class="json-property-required"></span>
-</td>
-</tr>
-</tbody>
-</table>
-
-#### RESPONSES
-<p>application/json</p>
-
-#### 200 OK
-<p style="margin-left: 2em;">True if the method was successful, False otherwise.</p> 
-
+<div id="operation--environments--post" class="swagger--panel-operation-post panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">POST</span> <strong>/environments/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Registers an environment in LifeTime. <strong>This endpoint is available as of LifeTime Management Console 11.11.0.</strong></p>
+</section>
+<section class="sw-request-body">
+<p><span class="label label-default">application/json</span> 
+</p>
+<div class="rowr">
+<div class="col-md-6">
+<p><p>An EnvironmentRegistration record.</p>
+</p>
+</div>
+<div class="col-md-6 sw-request-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/EnvironmentRegistration">EnvironmentRegistration</a>
+</div>
+</div></div>
+</div>
+</section>        
+<section class="sw-responses">
+<p><span class="label label-default">text/plain</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>Environment registration response</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/TextEnvironmentRegistration_UsersListRecord">TextEnvironmentRegistration_UsersListRecord</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to register enviroment in LifeTime.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
 
 <span id="path--environments--EnvironmentKey--"></span>
 <div id="operation--environments--EnvironmentKey---get" class="swagger--panel-operation-get panel">
@@ -2494,6 +2471,93 @@ EnvironmentKey
 </section>
 </div>
 </div>
+
+<div id="operation--environments--EnvironmentKey---delete" class="swagger--panel-operation-delete panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">DELETE</span> <strong>/environments/{EnvironmentKey}/</strong></h3>
+Go to
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Unregisters an environment from LifeTime. <strong>This endpoint is available as of LifeTime Management Console 11.11.0.</strong></p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment to unregister.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">text/plain</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 No Content
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>Role created with success.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<section class="json-schema-description">
+<p>True if the method was successful, False otherwise.</p>
+</section>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to unregister environment from LifeTime.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+
 <span id="path--environments--EnvironmentKey--applications-"></span>
 <div id="operation--environments--EnvironmentKey--applications--get" class="swagger--panel-operation-get panel">
 <div class="panel-heading">
@@ -10578,3 +10642,265 @@ UserKey
 </section>
 </div>
 </div>
+<div id="definition-EnvironmentRegistration" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/EnvironmentRegistration"></a>EnvironmentRegistration:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Environment information needed for the registration process.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="EnvironmentName">
+<span class="json-property-name">EnvironmentName:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>Name that identifies the environment in LifeTime.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="EnvironmentAddress">
+<span class="json-property-name">EnvironmentAddress:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>Address that LifeTime will use to connect with the environment.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="ServiceCenterUsername">
+<span class="json-property-name">ServiceCenterUsername:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>Username of a Service Center user with administrator privileges.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="ServiceCenterPassword">
+<span class="json-property-name">ServiceCenterPassword:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>Password of the Service Center user with administrator privileges.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="LifeTimeAddress">
+<span class="json-property-name">LifeTimeAddress:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>Address that the environment will use to communicate with LifeTime.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="EnvironmentPosition">
+<span class="json-property-name">EnvironmentPosition:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>The staging position order of the environment in Lifetime.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="OverridePreviousLifetime">
+<span class="json-property-name">OverridePreviousLifetime:</span>
+<span class="json-property-type">boolean</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>If true, the environment registration will override the previous LifeTime of the environment (when the environment is already registered in another LifeTime).</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="EnvironmentRolePermissions">
+<span class="json-property-name">EnvironmentRolePermissions:</span>
+<span class="json-property-type">object[]</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>List of roles and permissions.</p>
+<div class="json-inner-schema">
+<section class="json-schema-array-items">
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/EnviromentRolePermissions">EnviromentRolePermissions</a>
+</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+</div>
+</section>                </div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-EnviromentRolePermissions" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/EnviromentRolePermissions"></a>EnviromentRolePermissions:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Pair of Role and permissions.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="RoleKey">
+<span class="json-property-name">RoleKey:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>Role Key.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="PermissionLevel">
+<span class="json-property-name">PermissionLevel:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>Permission Level.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="CanCreateApplications">
+<span class="json-property-name">CanCreateApplications:</span>
+<span class="json-property-type">boolean</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>True, if the role allows to create applications.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="CanAddDependenciesToSystem">
+<span class="json-property-name">CanAddDependenciesToSystem:</span>
+<span class="json-property-type">boolean</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>True, if the role allows to add dependencies to system.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-EnvironmentRegistration_Users" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/EnvironmentRegistration_Users"></a>EnvironmentRegistration_Users:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>List of imported users</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="Username">
+<span class="json-property-name">Username:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>Username of an IT user.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="Name">
+<span class="json-property-name">Name:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>Name of an IT user.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="Email">
+<span class="json-property-name">Email:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>Email of an IT user.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="definition-TextEnvironmentRegistration_UsersListRecord" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/TextEnvironmentRegistration_UsersListRecord"></a>TextEnvironmentRegistration_UsersListRecord:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="EnvironmentKey">
+<span class="json-property-name">EnvironmentKey:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="ImportedUsers">
+<span class="json-property-name">ImportedUsers:</span>
+<span class="json-property-type">object[]</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+<section class="json-schema-array-items">
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/EnvironmentRegistration_Users">EnvironmentRegistration_Users</a>
+</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+</div>
+</section>                </div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        

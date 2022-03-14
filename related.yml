@@ -1615,7 +1615,15 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
+- develop/ui/patterns/mobile/numbers/progressbar.md:
+    - ref/ui-patterns/mobile/progressbar-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressBar.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=216
 - develop/ui/patterns/mobile/numbers/progresscircle.md:
+    - ref/ui-patterns/mobile/progresscircle-mob.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
@@ -1625,6 +1633,11 @@
     - external:
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=59
+- develop/ui/patterns/mobile/numbers/rating.md:
+    - ref/ui-patterns/mobile/rating.md
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=291
 - develop/ui/patterns/mobile/utilities/aligncenter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 

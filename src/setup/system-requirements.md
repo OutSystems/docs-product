@@ -69,9 +69,9 @@ Future revisions of OutSystems may require the installation of an update within 
 
 OutSystems Cache Invalidation Service requires the following version of RabbitMQ Server:
 
-* RabbitMQ Server 3.8.x with Erlang version 22.x, since Platform Server 11.9.0
-
-Earlier versions of Platform Server require RabbitMQ Server 3.7.x with Erlang version 20.x.
+* RabbitMQ Server 3.9.x with Erlang version 24.x, since Platform Server 11.15.0
+* RabbitMQ Server 3.8.x with Erlang version 22.x, from Platform Server 11.9.0 to 11.14.1
+* RabbitMQ Server 3.7.x with Erlang version 20.x, for earlier versions of Platform Server
 
 During Platform Server installation, OutSystems provides you with a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Alternatively, you can use an existing RabbitMQ Server and Erlang installation, as long as it fulfills the same version requirements.
 
@@ -147,6 +147,15 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integ
 
 * MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)
 * MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)
+
+### PostgreSQL Database
+
+* PostgreSQL 12.x.x
+* PostgreSQL 13.x.x
+
+### Aurora PostgreSQL Database
+
+* Aurora PostgreSQL Database available in the cloud running a version compatible with a [supported PostgreSQL database](#postgresql-database)
 
 ### IBM Database
 

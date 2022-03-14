@@ -2311,13 +2311,13 @@ Go to
 </div>
 </section>        
 <section class="sw-responses">
-<p><span class="label label-default">text/plain</span> 
+<p><span class="label label-default">application/json</span> 
 </p>
 <dl>
-<dt class="sw-response-200">
-200 OK
+<dt class="sw-response-201">
+201 Created
 </dt>
-<dd class="sw-response-200">
+<dd class="sw-response-201">
 <div class="rowr">
 <div class="col-md-12">
 <p>Environment registration response</p>
@@ -2327,7 +2327,58 @@ Go to
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
-<a class="json-schema-ref" href="#/definitions/TextEnvironmentRegistration_UsersListRecord">TextEnvironmentRegistration_UsersListRecord</a>
+<a class="json-schema-ref" href="#/definitions/TextRecord">TextRecord</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to register the environment with key because there are invalid parameters in the request.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-403">
+403 Forbidden
+</dt>
+<dd class="sw-response-403">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to register the environment with key because of invalid permissions.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-405">
+405 Method Not Allowed
+</dt>
+<dd class="sw-response-405">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to register the environment with key because the feature is not enabled.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
 </div>
 </div></div>
 </div>                </dd>
@@ -2337,7 +2388,7 @@ Go to
 <dd class="sw-response-500">
 <div class="rowr">
 <div class="col-md-12">
-<p>Failed to register enviroment in LifeTime.</p>
+<p>	Failed to register the environment with key because of an internal error.</p>
 </div>
 </div>
 <div class="rowr">
@@ -2472,7 +2523,7 @@ EnvironmentKey
 </div>
 </div>
 
-<div id="operation--environments--EnvironmentKey---delete" class="swagger--panel-operation-delete panel">
+<div id="operation--environments--EnvironmentKey--delete" class="swagger--panel-operation-delete panel">
 <div class="panel-heading">
 <div class="operation-summary"></div>
 <h3 class="panel-title"><span class="operation-name">DELETE</span> <strong>/environments/{EnvironmentKey}/</strong></h3>
@@ -2513,29 +2564,65 @@ EnvironmentKey
 </tbody>
 </table>
 </section>
+
 <section class="sw-responses">
 <p><span class="label label-default">text/plain</span> 
 </p>
 <dl>
-<dt class="sw-response-200">
-200 No Content
+<dt class="sw-response-204">
+204
 </dt>
-<dd class="sw-response-200">
+<dd class="sw-response-204">
 <div class="rowr">
 <div class="col-md-12">
-<p>Role created with success.</p>
+<p>Environment deleted with success.</p>
 </div>
 </div>
 <div class="rowr">
 <div class="col-md-6 sw-response-model">
 <div  class="panel panel-definition">
 <div class="panel-body">
-<section class="json-schema-description">
-<p>True if the method was successful, False otherwise.</p>
-</section>
+
 </div>
 </div></div>
 </div>                </dd>
+
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to unregister the environment with key because because it was not found.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+
+<dt class="sw-response-405">
+405  Method Not Allowed
+</dt>
+<dd class="sw-response-405">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to unregister the environment with key because the feature is not enabled.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+
 <dt class="sw-response-500">
 500 Internal Server Error
 </dt>

@@ -2583,9 +2583,6 @@ EnvironmentKey
 <div  class="panel panel-definition">
 <div class="panel-body">
 
-<section class="json-schema-description">
-<p>True if the method was successful, False otherwise.</p>
-</section>
 </div>
 </div></div>
 </div>                </dd>

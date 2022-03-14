@@ -9,7 +9,11 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
 ![Example Carousel](images/carousel-example.png)
 
+<div class="info" markdown="1">
+
 **Note:** The Carousel Pattern is based on the Splide.js library (v3). For more information about the Carousel’s behaviors and extensibility methods, see [Splide.js](https://splidejs.com/).  
+
+</div>
 
 ## How to use the Carousel UI Pattern
 
@@ -43,7 +47,7 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
     **Note:** In this example, the image Type is set to Local image. You can also add External and Binary Data images. In this example, the image property Type is set to **Local** image. You can also add [External and Binary Data](../../../image/display-image.md) images.   
 
-    ![](images/carousel-imagetype-ss.png)   
+    ![Set image type](images/carousel-imagetype-ss.png)   
 
 1. Repeat step 4 for each of the images in the Carousel. 
 

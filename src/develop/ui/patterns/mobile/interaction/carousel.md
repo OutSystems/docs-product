@@ -11,7 +11,7 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
 <div class="info" markdown="1">
 
-**Note:** The Carousel Pattern is based on the Splide.js library (v3). For more information about the Carousel’s behaviors and extensibility methods, see [Splide.js](https://splidejs.com/).  
+The Carousel Pattern is based on the Splide.js library (v3). For more information about the Carousel’s behaviors and extensibility methods, see [Splide.js](https://splidejs.com/).  
 
 </div>
 

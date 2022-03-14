@@ -26,7 +26,11 @@ summary: Advanced use cases for the Carousel UI Pattern.
 
 ![Library added structure with a List widget as content](images/carousel-structure-list-diag.png)
 
-**Note:** The differences between the structure and the Carousel element that receives the .splide main class means you don't have to manipulate the DOM when the Carousel has a List Widget inside. This is because the library expects a specific HTML structure for it to work.
+<div class="info" markdown="1">
+
+The differences between the structure and the Carousel element that receives the .splide main class means you don't have to manipulate the DOM when the Carousel has a List Widget inside. This is because the library expects a specific HTML structure for it to work.
+
+</div>
 
 ## API
 If you are an advanced user, you might want to use the Carousel API  (OutSystems.OSUI.Patterns.CarouselAPI) for more complex use cases.

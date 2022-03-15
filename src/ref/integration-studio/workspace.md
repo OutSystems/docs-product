@@ -4,7 +4,7 @@ summary: Integration Studio is a desktop tool that allows you to create and mana
 
 # Integration Studio
 
-Integration Studio is a desktop tool that allows you to create and manage your [extensions](<../../extensibility-and-integration/integration-studio/getting-started/extension.md>). It is installed, along with Service Studio, as part of your development environment, which is available from the [Development Environment](https://www.outsystems.com/Downloads/) downloads page.
+Integration Studio is a desktop tool that allows you to create and manage your [extensions](<../../extensibility-and-integration/integration-studio/getting-started/extension.md>). It is installed, along with Service Studio, as part of your development environment, which is available from the [Development Environment](https://www.outsystems.com/Downloads/) downloads page. 
 
 The next screenshot presents the workspace for this tool:
 

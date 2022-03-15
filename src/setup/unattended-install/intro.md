@@ -281,6 +281,17 @@ Run the following:
 
 ## Adding a Front-End
 
+<div class="info" markdown="1">
+
+When adding a new front-end server to your environment, make sure that:
+
+* There are no ongoing deployments or solution publishes.
+* There are no prepared deployments to continue, in case you have [two-stage deployments](../../managing-the-applications-lifecycle/deploy-applications/deploy-in-a-short-deployment-window.md) enabled in the environment.
+
+Having ongoing or prepared deployments when adding a new front-end server might prevent the correct deployment of the modules.
+
+</div>
+
 ### 1. Install the Platform Server binaries
 
 Implies execution of the steps described in the **Pre-installation Checklist** (e.g. server roles and features, services options). The OutSystems Platform Server installation package can [automatically install most of the prerequisites](../intro.md#prerequisites).

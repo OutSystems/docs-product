@@ -13,7 +13,7 @@ The Notification UI Pattern is a contextual short message that provides importan
 
     The Notification widget is displayed.
 
-    ![Notifiation widget](<images/notification-widget-ss.png>)
+    ![Notification widget](<images/notification-widget-ss.png>)
 
     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
@@ -39,7 +39,9 @@ The Notification UI Pattern is a contextual short message that provides importan
 
     ![Add Open and Close buttons](<images/notification-buttons-ss.png>)
 
-1. In this example, for the **Open** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationOpen** client action. For the **Close** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationClose** client action.
+1. Define the actions for the buttons and set the **WidgetId** to the Notification widget.
+
+    In this example, for the **Open** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationOpen** client action. For the **Close** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationClose** client action.
 
     ![Define action for Open button](<images/notification-open-ss.png>)
 

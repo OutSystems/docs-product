@@ -13,7 +13,7 @@ The Notification UI Pattern is a contextual short message that provides importan
 
     The Notification widget is displayed.
 
-    ![](<images/notification-widget-ss.png>)
+    ![Notifiation widget](<images/notification-widget-ss.png>)
 
     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
@@ -25,7 +25,7 @@ The Notification UI Pattern is a contextual short message that provides importan
 
     1. In the Toolbox, search for the widget again.
 
-1. From the Toolbox, drag the Notification widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the Notification widget into the Main Content area of your application's screen and on the **Properties** tab, enter a **Name**.
 
     ![Drag the Notification widget to the screen](<images/notification-dragwidget-ss.png>)
 
@@ -39,7 +39,7 @@ The Notification UI Pattern is a contextual short message that provides importan
 
     ![Add Open and Close buttons](<images/notification-buttons-ss.png>)
 
-1. In this example, for the **Open** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationOpen** client action. For the **Close** button, the **On Click** event is set to a **New Client Action** that runs the** NotificationClose** client action.
+1. In this example, for the **Open** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationOpen** client action. For the **Close** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationClose** client action.
 
     ![Define action for Open button](<images/notification-open-ss.png>)
 
@@ -57,7 +57,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property |  Description |
 |---|---|
-|StartsOpen(Boolean): Optional | If True, the notification is immediately visible on screen. If False, the notification is not visible on screen. The default value is False. <br/> Use one of the following actions to change the value afterwards:<ul><li>NotificationOpen</li><li>NotificationClose</li></ul> |
+|StartsOpen(Boolean): Optional | If True, the notification is immediately visible on screen. If False, the notification is not visible on screen. The default value is False. <br/> Use one of the following actions to change the value after :<ul><li>NotificationOpen</li><li>NotificationClose</li></ul> |
 |Width(Text): Optional|Set the Notification width. Accepts any kind of unit (for example, px, %, vw).|
 |Position(Position Identifier): Optional|Set where the notification appears on the screen. The predefined options are as follows:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul><br/>Examples<ul><li>``Entities.Position.Right`` - The notification is displayed on the right side of the screen.</li><li>``Entities.Position.Bottom`` - The notification is displayed on the bottom of the screen.</li>|
 |InteractToClose(Boolean): Optional|If True, the notification closes when the notification is clicked. |

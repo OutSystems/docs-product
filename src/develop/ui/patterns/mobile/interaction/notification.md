@@ -15,35 +15,31 @@ The Notification UI Pattern is a contextual short message that provides importan
 
     ![](<images/notification-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. Make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
+    
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
 
-    1. In **Search in other Modules**, select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
 
     1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Notification widget into the Main Content area of your application's screen.
 
-    ![Drag the Animate widget to the screen](<images/notification-dragwidget-ss.png>)
+    ![Drag the Notification widget to the screen](<images/notification-dragwidget-ss.png>)
 
  1. Add the relevant content to the Content placeholder. 
 
-    In this example, an icon, some text are added. **Open** and **Close** buttons are also added to the Main Content area of the screen.
+    In this example, an icon and some text are added. 
 
     ![Add content to Content placeholder](<images/notification-content-ss.png>)
 
-1. Select and right-click your screen name, and select **Add Local Variable**. Enter a name for the variable, for example, ``ShowNotification`` and set the **Default Value** to **False**.
+1. From the Toolbox, drag 2 **Button** widgets into the Main Content area of your application's screen to **Open** and **Close** the Notification. 
 
-    ![Add a local variable](<images/notification-variable-ss.png>)
+    ![Add Open and Close buttons](<images/notification-buttons-ss.png>)
 
-1. Select the Notification widget, and on the **Properties** tab, from the **StartsOpen** dropdown, enter the newly created variable (``ShowNotification``). 
-
-    ![Set the StartsOpen property ](<images/notification-startopen-ss.png>)
-
-1. Define the actions for the **Open** and **Close** buttons, by selecting the button widget, and on the **Properties**, from the **OnClick** dropdown select **New Client Action**.
-
-    In this example, for the **Open** button, the **ShowNotification** variable is set to **True**, and for the **Close** button the **ShowNotification** variable is set to **False**.
+1. In this example, for the **Open** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationOpen** client action. For the **Close** button, the **On Click** event is set to a **New Client Action** that runs the** NotificationClose** client action.
 
     ![Define action for Open button](<images/notification-open-ss.png>)
 
@@ -61,7 +57,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property |  Description |
 |---|---|
-|StartsOpen(Boolean): Optional | If True, the notification is immediately visible on screen. If False, the notification is not visible on screen. The default value is False. |
+|StartsOpen(Boolean): Optional | If True, the notification is immediately visible on screen. If False, the notification is not visible on screen. The default value is False. <br/> Use one of the following actions to change the value afterwards:<ul><li>NotificationOpen</li><li>NotificationClose</li></ul> |
 |Width(Text): Optional|Set the Notification width. Accepts any kind of unit (for example, px, %, vw).|
 |Position(Position Identifier): Optional|Set where the notification appears on the screen. The predefined options are as follows:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul><br/>Examples<ul><li>``Entities.Position.Right`` - The notification is displayed on the right side of the screen.</li><li>``Entities.Position.Bottom`` - The notification is displayed on the bottom of the screen.</li>|
 |InteractToClose(Boolean): Optional|If True, the notification closes when the notification is clicked. |

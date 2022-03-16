@@ -11,7 +11,9 @@ summary: Advanced use cases for the Notification UI Pattern.
 
 # Structure
 
- ![Notification structure](images/notification-diag.png)
+![Notification structure](images/notification-diag.png)
+
+**Note:** The swipe event is only added on tablet and mobile devices.
 
 ## Modifiers
 |Modifiers|Attribute|Element| 

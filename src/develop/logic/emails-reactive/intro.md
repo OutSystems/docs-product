@@ -13,11 +13,11 @@ Create and send **Emails for Mobile and Reactive** along with **Attachments in M
 
 * You have configured the SMTP server. See [Configure OutSystems to Send Emails](../../../extensibility-and-integration/configure-send-emails.md) for instructions.
 
-* You're using Platform Server 11.14 or later.
+* You're using Platform Server 11.14.0 or later.
 
     <div class="info" markdown="1">
 
-    You can use these features in earlier Platform Server versions as technical preview, by meeting the following requirements:
+    You can use these features as technical preview in earlier Platform Server versions, by meeting the following requirements:
 
     * For Emails and basic widgets, use Platform Server 11.12.0 or later.
 

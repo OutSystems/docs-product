@@ -10,6 +10,12 @@ When designing an app to send emails to your users, you must consider the follow
 * **Sending emails.** This is a generic action. The platform takes an Email you created in Service Studio, renders it as an email, and then sends it to the user inbox.
 * **Triggering emails.** This is an event that initiates the sending of an email. This is usually an automated action, but you can trigger sending an email manually in the UI.
 
+<div class="info" markdown="1">
+
+Before following the guides in this article, make sure you meet the [prerequisites](intro.md#prerequisites).
+
+</div>
+
 ## Creating logic for sending emails
 
 To create logic that sends an email, follow these steps in Service Studio:

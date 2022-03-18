@@ -11,7 +11,7 @@ This example binds the Date Picker widget to an input. When the user selects a d
 
     The Date Picker widget is displayed.
 
-    ![Date Picker widget](<images/datepicker-image-2.png>)
+    ![Date Picker widget](<images/datepicker-widget-ss.png>)
 
     If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
@@ -27,7 +27,7 @@ This example binds the Date Picker widget to an input. When the user selects a d
 
     By default, the Date Picker contains an **Input** widget.
 
-    ![Drag the widget to the screen](<images/datepicker-image-1.png>)
+    ![Drag the widget to the screen](<images/datepicker-drag-ss.png>)
 
 1. Create a variable by selecting the Input widget, and on the Properties tab, select **New Local Variable** from the **Variable** dropdown.
 
@@ -45,8 +45,8 @@ This example binds the Date Picker widget to an input. When the user selects a d
 
     <div class="info" markdown="1">
 
-    The **DateFormat** property only formats the date that appears on the bound input. The date that is thrown on the OnSelect event defaults to the server format and can be customized using the [Data Conversion](<../../../../../../ref/lang/auto/builtinfunction.Data Conversion.final.md>) functions.
-    
+    The **DateFormat** property only formats the date that appears on the bound input. The date that is thrown on the **OnSelect** event defaults to the server format and can be customized using the [Data Conversion](<../../../../../../ref/lang/auto/builtinfunction.Data Conversion.final.md>) functions.
+
     </div>
 
 1. To access the date selected by the user, create an **Assign** and set the **PickedDate** to **SelectedDateTime**.

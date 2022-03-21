@@ -863,7 +863,7 @@
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
-        - href: managing-the-applications-lifecycle/how-exclude-modules.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-exclude-modules.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-module-classification.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-probes-o10.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-update-probes.md

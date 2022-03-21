@@ -566,7 +566,6 @@
             - href: extensibility-and-integration/artificial-intelligence/chatbot/reference.md
         - href: extensibility-and-integration/artificial-intelligence/azure-reference.md
 
-
     - href: extensibility-and-integration/mobile-plugins/intro.md
     - topics:
         - href: extensibility-and-integration/mobile-plugins/barcode/intro.md

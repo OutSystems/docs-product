@@ -65,6 +65,8 @@ In this example, the user selects a date from the calendar, the date is saved in
 
 1. On the **Properties** tab, you can customize the Date Picker's look and feel by setting any of the (optional) properties.
 
+    ![Set properties](<images/datepicker-properties-ss.png>)
+
 After following these steps and publishing the module, you can test the pattern in your app.
 
 **Result**

@@ -2,5 +2,6 @@ build/
 styles/
 rules/
 **/.vscode/
+**/*.final.md
 .vs/*
 config.yml

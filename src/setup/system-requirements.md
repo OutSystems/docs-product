@@ -67,11 +67,14 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ## Cache Invalidation Service
 
-OutSystems Cache Invalidation Service requires the following version of RabbitMQ Server:
+OutSystems Cache Invalidation Service requires the following minimum version of RabbitMQ Server:
 
-* RabbitMQ Server 3.9.x with Erlang version 24.x, since Platform Server 11.15.0
-* RabbitMQ Server 3.8.x with Erlang version 22.x, from Platform Server 11.9.0 to 11.14.1
-* RabbitMQ Server 3.7.x with Erlang version 20.x, for earlier versions of Platform Server
+* RabbitMQ Server 3.9.11 with Erlang version 24.2, since Platform Server 11.15.0
+* RabbitMQ Server 3.8.21 with Erlang version 23.2, from Platform Server 11.13.2 to 11.14.1
+* RabbitMQ Server 3.8.3 with Erlang version 22.3, from Platform Server 11.9.0 to 11.13.1
+* RabbitMQ Server 3.7.7 with Erlang version 20.3, for earlier versions of Platform Server
+
+These versions can be upgraded to the latest minor version compliant with [official documentation](https://www.rabbitmq.com/which-erlang.html).
 
 During Platform Server installation, OutSystems provides you with a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Alternatively, you can use an existing RabbitMQ Server and Erlang installation, as long as it fulfills the same version requirements.
 

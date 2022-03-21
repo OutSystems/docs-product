@@ -5,7 +5,7 @@ summary: Date Picker allows the end user to select a single or a range of dates 
 
 # How to use the Date Picker UI Pattern
 
-This example binds the Date Picker widget to an input. When the user selects a date from the calendar it is displayed in the input widget.
+In this example, the user selects a date from the calendar, the date is saved in a variable and then displayed in an input widget.
 
 1. In Service Studio, in the Toolbox, search for `Date Picker`.
 
@@ -29,19 +29,29 @@ This example binds the Date Picker widget to an input. When the user selects a d
 
     ![Drag the widget to the screen](<images/datepicker-drag-ss.png>)
 
-1. Create a variable by selecting the Input widget, and on the Properties tab, select **New Local Variable** from the **Variable** dropdown.
+1. Create a variable by selecting the **Input** widget, and on the **Properties** tab, select **New Local Variable** from the **Variable** dropdown.
 
     This variable stores any value entered into or received by the Input widget.
 
+    ![Create a new variable](<images/datepicker-var-ss.png>)
+
 1. Enter a name for the variable (in this example **DateTimeVar**) and select **Date Time** as the **Data Type**.
+
+    ![Enter variable name and data type](<images/datepicker-varname-ss.png>)
 
 1. Right-click your main screen and add another local variable.
 
     This variable stores the date selected by the user.
 
+    ![Add another local variable](<images/datepicker-localvar-ss.png>)
+
 1. Enter a name for the variable (in this example **PickedDate**) and select **Date Time** as the **Data Type**.
 
+    ![Enter variable name and data type](<images/datepicker-locvarname-ss.png>)
+
 1. To create an **OnSelect** event for the Date Picker, on the **Properties** tab, from the **Handler** dropdown, select New **Client Action**.
+
+    ![Create onSelect event for Date Picker](<images/datepicker-clientaction-ss.png>)
 
     <div class="info" markdown="1">
 
@@ -50,6 +60,9 @@ This example binds the Date Picker widget to an input. When the user selects a d
     </div>
 
 1. To access the date selected by the user, create an **Assign** and set the **PickedDate** to **SelectedDateTime**.
+
+
+    ![Add assign and variable value](<images/datepicker-assign-ss.png>)
 
 1. On the **Properties** tab, you can customize the Date Picker's look and feel by setting any of the (optional) properties.
 
@@ -63,17 +76,11 @@ After following these steps and publishing the module, you can test the pattern 
 
 |Properties|Description|
 |---|---|
-|DateFormat (Text): Optional| Set the input date format. If empty, the date format will be the same as the server format. When using formats with time, make sure to set the TimeFormat property. Here's some of the examples that you can use:<ul><li>DD/MM/YYYY - 15/05/2020 </li> <li>MM/DD/YYYY - 05/15/2020</li><li>DD MMM YYYY - 15 May 2020</li></ul>If using an input/variable of type **Date** or **DateTime**, due to form validations,the only options available are the following:<ul><li>Server Format</li> <li>YYYY-MM-DDTHH:mm:ss.ssss</li><li>YYYY-MM-DD HH:mm:ss</li><li>YYYY/MM/DD HH:mm:ss</li><li>YYYY.MM.DD HH:mm:ss</li><li>YYYY.MM.DD</li><li>YYYY/MM/DD</li><li>YYYY-MM-DD</li></ul> |
-|ShowTodayButton (Boolean): Optional | If True, the **Today** button is displayed below the Date Picker. This button allows the user pick the current day date. If False, the Today Button is not displayed. The default value is False.|
-|TimeFormat (DatePickerTimeFormat Identifier): Optional|Select the format of the time (12 hours or 24 hours). By default, no time is shown (Disabled).|
-|InitialDate (Date Time): Optional|The initial selected date for the DatePicker. If not set, no initial date is selected.|
+|DateFormat (Text): Optional| Set the input date format. If empty, the date format will be the same as the server format. When using formats with time, make sure to set the **TimeFormat** property. The following are some examples:<ul><li>"DD/MM/YYYY" - 15/05/2022 </li> <li>"MM/DD/YYYY" - 05/15/2022</li><li>"DD MMM YYYY" - 15 May 2022</li><li>"DD-MMM-YYYY" - 15-May-2022</li><li>"DD.MMM.YYYY" - 15.May.2022</li><li>"MMM DDD, YYYY" - May Sun, 2022</li><li>"MMM DDD, YY" - May Sun, 22</li></ul> |
+|ShowTodayButton (Boolean): Optional | If True, the **Today** button is displayed below the Date Picker. This button allows the user pick the current day date. If False, the **Today** Button is not displayed. The default value is False.|
+|TimeFormat (DatePickerTimeFormat Identifier): Optional|Select the time format (12 or 24 hours). By default, no time is shown.|
+|InitialDate (Date Time): Optional|The initial selected date for the Date Picker. If not set, no initial date is selected.|
 |MinDate (Date Time): Optional|Days before this date will be disabled.|
 |MaxDate (Date Time): Optional|Days after this date will be disabled.|
-|FirstWeekDay (DatePickerWeekDay Identifier): Optional|Defines which week day should be displayed first.|
-|ExtendedClass (Text): Optional|Examples
-Blank - No custom styles are added (default value).
-"myclass" - Adds the myclass style to the UI styles being applied.
-"myclass1 myclass2" - Adds the myclass1 and myclass2 styles to the UI styles being applied.
-You can also use the classes available on the OutSystems UI. For more information, see the https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet|
-
-
+|FirstWeekDay (DatePickerWeekDay Identifier): Optional|Defines which week day is displayed first.|
+| ExtendedClass (Text): Optional |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet).|

@@ -45,7 +45,7 @@ In this example, the user selects a date from the calendar, the date is saved in
 
     ![Add another local variable](<images/datepicker-localvar-ss.png>)
 
-1. Enter a name for the variable (in this example **PickedDate**) and select **Date Time** as the **Data Type**.
+1. Enter a name for the variable (in this example **DatePicked**) and select **Date Time** as the **Data Type**.
 
     ![Enter variable name and data type](<images/datepicker-locvarname-ss.png>)
 
@@ -59,8 +59,7 @@ In this example, the user selects a date from the calendar, the date is saved in
 
     </div>
 
-1. To access the date selected by the user, create an **Assign** and set the **PickedDate** to **SelectedDateTime**.
-
+1. To access the date selected by the user, create an **Assign** and set the **DatePicked** to **SelectedDateTime**.
 
     ![Add assign and variable value](<images/datepicker-assign-ss.png>)
 
@@ -80,7 +79,7 @@ After following these steps and publishing the module, you can test the pattern 
 |ShowTodayButton (Boolean): Optional | If True, the **Today** button is displayed below the Date Picker. This button allows the user pick the current day date. If False, the **Today** Button is not displayed. The default value is False.|
 |TimeFormat (DatePickerTimeFormat Identifier): Optional|Select the time format (12 or 24 hours). By default, no time is shown.|
 |InitialDate (Date Time): Optional|The initial selected date for the Date Picker. If not set, no initial date is selected.|
-|MinDate (Date Time): Optional|Days before this date will be disabled.|
-|MaxDate (Date Time): Optional|Days after this date will be disabled.|
+|MinDate (DateTime): Optional|Days before this date will be disabled.|
+|MaxDate (DateTime): Optional|Days after this date will be disabled.|
 |FirstWeekDay (DatePickerWeekDay Identifier): Optional|Defines which week day is displayed first.|
-| ExtendedClass (Text): Optional |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet).|
+|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/><br/>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet).|

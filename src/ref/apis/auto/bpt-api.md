@@ -8,7 +8,7 @@ Action | Description
 ---|---
 [Activity_Discard](<#Activity_Discard>) | Discards an Activity and the execution of the current Process flow stops, that is, none of the following activities in the flow is executed.%%Remarks:%%This action commits the current transaction.
 [Activity_IsValidId](<#Activity_IsValidId>) | Checks whether an Activity Identifier is valid for a Kind of activity.
-[HumanActivity_AssignToUser](<#HumanActivity_AssignToUser>) | Assigns a Human Activity to a User. The human activity is only shown in that user's Taskbox.%%Remarks:%%This action commits the current transaction.
+[HumanActivity_AssignToUser](<#HumanActivity_AssignToUser>) | Assigns a Human Activity to a User and sets the activity status to Ready. The human activity is only shown in that user's Taskbox.%%Remarks:%%This action commits the current transaction.
 [HumanActivity_CheckRole](<#HumanActivity_CheckRole>) | Checks whether a User has the role for executing a Human Activity.
 [HumanActivity_FlushPendingEvents](<#HumanActivity_FlushPendingEvents>) | Forces a Human Activity to handle immediately all its pending events.%%Remarks:%%This action commits the current transaction.
 [HumanActivity_SetDueDate](<#HumanActivity_SetDueDate>) | Sets the due date for a Human Activity.%%Remarks:%%This action commits the current transaction.
@@ -53,7 +53,7 @@ IsValid
 
 ### HumanActivity_AssignToUser { #HumanActivity_AssignToUser }
 
-Assigns a Human Activity to a User. The human activity is only shown in that user's Taskbox.  
+Assigns a Human Activity to a User and sets the activity status to Ready. The human activity is only shown in that user's Taskbox.  
   
 Remarks:  
 This action commits the current transaction.

@@ -78,232 +78,617 @@ The following tables map the Architecture Dashboard permissions to the LifeTime 
 
 ### Main features permissions
 
+
+
+#### View teams
+
 <pre class="script-css">
 th {word-wrap: normal !important;}
 table {min-width: 650px;}
 </pre>
 
 <table>
-<thead>
-<tr>
-<th rowspan="2">LifeTime permission</th>
-<th rowspan="2">LifeTime role assignment</th>
-<th colspan="6">Architecture Dashboard permission</th>
-</tr>
-<tr>
-<th>View teams</th>
-<th>View apps and modules</th>
-<th>Open findings report</th>
-<th>Export findings report</th>
-<th>Resolve findings</th>
-<th>Overview dashboard</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th rowspan="3">No Access /<br/>Access</th>
-<th>Assigned as default role</th>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th>Assigned for a team</th>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th>Assigned for an app</th>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th rowspan="3">List Applications /<br/>Monitor and Add Dependencies</th>
-<th>Assigned as default role</th>
-<td>No</td>
-<td>All apps<sup>A</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th>Assigned for a team</th>
-<td>Assigned team</td>
-<td>Team's apps<sup>B</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th>Assigned for an app</th>
-<td>No</td>
-<td>Assigned app</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th rowspan="3">Open and Debug Applications </th>
-<th>Assigned as default role</th>
-<td>No</td>
-<td>All apps<sup>A</sup></td>
-<td>All apps<sup>A</sup></td>
-<td>No</td>
-<td>No</td>
-<td>All apps<sup>A</sup></td>
-</tr>
-<tr>
-<th>Assigned for a team</th>
-<td>Assigned team</td>
-<td>Team's apps<sup>B</sup></td>
-<td>Team's apps<sup>B</sup></td>
-<td>No</td>
-<td>No</td>
-<td>Team's apps<sup>B</sup></td>
-</tr>
-<tr>
-<th>Assigned for an app</th>
-<td>No</td>
-<td>Assigned app</td>
-<td>Assigned app</td>
-<td>No</td>
-<td>No</td>
-<td>Assigned app</td>
-</tr>
-<tr>
-<th rowspan="3">Change and Deploy Applications /<br/>Full Control</th>
-<th>Assigned as default role</th>
-<td>All teams</td>
-<td>All apps<sup>A</sup></td>
-<td>All apps<sup>A</sup></td>
-<td>All apps<sup>A</sup></td>
-<td>All apps<sup>A</sup></td>
-<td>All apps<sup>A</sup></td>
-</tr>
-<tr>
-<th>Assigned for a team</th>
-<td>Assigned team</td>
-<td>Team's apps<sup>B</sup></td>
-<td>Team's apps<sup>B</sup></td>
-<td>Team's apps<sup>B</sup></td>
-<td>Team's apps<sup>B</sup></td>
-<td>Team's apps<sup>B</sup></td>
-</tr>
-<tr>
-<th>Assigned for an app</th>
-<td>No</td>
-<td>Assigned app</td>
-<td>Assigned app</td>
-<td>Assigned app</td>
-<td>Assigned app</td>
-<td>Assigned app</td>
-</tr>
-</tbody>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>No Access</b>
+   </td>
+   <td rowspan="2" colspan="3">No
+   </td>
+  </tr>
+  <tr>
+   <td><b>Access</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>List Application</b>
+   </td>
+   <td rowspan="3" >No
+   </td>
+   <td rowspan="3" >Assigned team
+   </td>
+   <td rowspan="3" >No
+   </td>
+  </tr>
+  <tr>
+   <td><b>Monitor and Add Dependencies</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Open and Debug Applications </b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+   <td rowspan="2" >Team apps<sup>1</sup>
+   </td>
+   <td rowspan="2" >Assigned team
+   </td>
+   <td rowspan="2" >No
+   </td>
+  </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+  </tr>
+  </tbody>
 </table>
 
-A- Specific apps may not appear if a lower permission is granted by a role assigned specifically for those apps or assigned for teams assigned to those apps.
+**<sup>1</sup>Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
-B- Specific apps may not appear if a lower permission is granted by a role assigned specifically for those apps.
+
+#### View apps and modules 
+
+<pre class="script-css">
+th {word-wrap: normal !important;}
+table {min-width: 650px;}
+</pre>
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>No Access</b>
+   </td>
+   <td rowspan="2" colspan="3" >No
+   </td>
+  </tr>
+  <tr>
+   <td><b>Access</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>List Application</b>
+   </td>
+   <td rowspan="5" >All apps<sup>1</sup>
+   </td>
+   <td rowspan="5" >Team apps<sup>2</sup>
+   </td>
+   <td rowspan="5" >Assigned apps
+   </td>
+  </tr>
+  <tr>
+   <td><b>Monitor and Add Dependencies</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Open and Debug Applications </b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
+
+#### Open findings report
+
+<pre class="script-css">
+th {word-wrap: normal !important;}
+table {min-width: 650px;}
+</pre>
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>No Access</b>
+   </td>
+   <td rowspan="4" colspan="3">No
+   </td>
+  </tr>
+  <tr>
+   <td><b>Access</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>List Application</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Monitor and Add Dependencies</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Open and Debug Applications </b>
+   </td>
+   <td rowspan="3">All apps<sup>1</sup>
+   </td>
+   <td rowspan="3">Team apps<sup>2</sup>
+   </td>
+   <td rowspan="3">Assigned apps
+   </td>
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+     </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
+
+#### Export findings report
+
+<pre class="script-css">
+th {word-wrap: normal !important;}
+table {min-width: 650px;}
+</pre>
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>No Access</b>
+   </td>
+   <td rowspan="4" colspan="3">No
+   </td>
+  </tr>
+  <tr>
+   <td><b>Access</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>List Application</b>
+   </td>
+  
+  </tr>
+  <tr>
+   <td><b>Monitor and Add Dependencies</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Open and Debug Applications </b>
+   </td>
+   <td rowspan="3" >All apps<sup>1</sup>
+   </td>
+   <td rowspan="3" >Team apps<sup>2</sup>
+   </td>
+   <td rowspan="3" >Assigned apps
+   </td>
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+    </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+  </tr>
+  </tbody>
+</table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
+
+#### Resolve findings
+
+<pre class="script-css">
+th {word-wrap: normal !important;}
+table {min-width: 650px;}
+</pre>
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>No Access</b>
+   </td>
+   <td rowspan="5" colspan="3" >No
+   </td>
+   </tr>
+  <tr>
+   <td><b>Access</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>List Application</b>
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Monitor and Add Dependencies</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Open and Debug Applications </b>
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+   <td rowspan="2" >All apps<sup>1</sup>
+   </td>
+   <td rowspan="2" >Team apps<sup>2</sup>
+   </td>
+   <td rowspan="2" >Assigned apps
+   </td>
+  </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
+
+#### Overview dashboard
+
+<pre class="script-css">
+th {word-wrap: normal !important;}
+table {min-width: 650px;}
+</pre>
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>No Access</b>
+   </td>
+   <td rowspan="4" colspan="3">No
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Access</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>List Application</b>
+   </td>  
+  </tr>
+  <tr>
+   <td><b>Monitor and Add Dependencies</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Open and Debug Applications </b>
+   </td>
+   <td rowspan="3">All apps<sup>1</sup>
+   </td>
+   <td rowspan="3">Team apps<sup>2</sup>
+   </td>
+   <td rowspan="3">Assigned apps
+   </td>
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>  
+  </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 ### Maintenance and operations permissions { #maint-op-permissions }
 
-<table>
-<thead>
-<tr>
-<th rowspan="2">LifeTime permission</th>
-<th rowspan="2">LifeTime role assignment</th>
-<th colspan="4">Architecture Dashboard permission</th>
-</tr>
-<tr>
-<th>Ignore modules</th>
-<th>Enable AI auto-classification</th>
-<th>Override module AI auto-classification</th>
-<th>Update probes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th rowspan="3">Open and Debug Applications or lower</th>
-<th>Assigned as default role</th>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th>Assigned for a team</th>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th>Assigned for an app</th>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th rowspan="3">Change and Deploy Applications</th>
-<th>Assigned as default role</th>
-<td>All modules<sup>A</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th>Assigned for a team</th>
-<td>Team's modules<sup>B</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th>Assigned for an app</th>
-<td>Assigned app's modules</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th rowspan="3">Full Control</th>
-<th>Assigned as default role</th>
-<td>All modules<sup>A</sup></td>
-<td>Yes</td>
-<td>All modules</td>
-<td>Yes</td>
-</tr>
-<tr>
-<th>Assigned for a team</th>
-<td>Team's modules<sup>B</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<th>Assigned for an app</th>
-<td>Assigned app's modules</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-A- Specific modules may not appear if a lower permission is granted by a role assigned specifically for those modules' apps or by a role assigned for teams assigned to those modules' apps.
 
-B- Specific modules may not appear if a lower permission is granted by a role assigned specifically for those modules' apps.
+#### Ignore modules
+
+<pre class="script-css">
+th {word-wrap: normal !important;}
+table {min-width: 650px;}
+</pre>
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>Open and Debug Applications or lower</b>
+   </td>
+   <td colspan="3">No
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+   <td rowspan="2">All modules<sup>1</sup>
+   </td>
+   <td rowspan="2">Team modules<sup>2</sup>
+   </td>
+   <td rowspan="2">Assigned app’s modules
+   </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<sup>1</sup>**All apps**: Except in cases where the permission level of a specific app (or teams assigned to that app) is set lower than that assigned to a role or team.
+
+<sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
+
+#### Enable AI auto-classification
+
+<pre class="script-css">
+th {word-wrap: normal !important;}
+table {min-width: 650px;}
+</pre>
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>Open and Debug Applications or lower</b>
+   </td>
+   <td rowspan="2" colspan="3">No
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+   <td>Yes
+   </td>
+   <td colspan="2">No
+   </td>
+  </tr>
+    </tbody>
+</table>
+
+
+#### Override module AI auto-classification
+
+<pre class="script-css">
+th {word-wrap: normal !important;}
+table {min-width: 650px;}
+</pre>
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>Open and Debug Applications or lower</b>
+   </td>
+   <td rowspan="2" colspan="3">No
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+   </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+   <td>All modules<sup>1</sup>
+   </td>
+   <td colspan="2">No
+   </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<sup>1</sup>**All modules**: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.
+
+#### Update probes
+
+<pre class="script-css">
+th {word-wrap: normal !important;}
+table {min-width: 650px;}
+</pre>
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>Open and Debug Applications or lower</b>
+   </td>
+   <td rowspan="2" colspan="3">No
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+   <td>Yes
+   </td>
+   <td colspan="2">No
+   </td>
+  </tr>
+  </tbody>
+</table>
+

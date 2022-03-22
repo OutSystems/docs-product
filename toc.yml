@@ -55,7 +55,12 @@
             - href: develop/data/query/calculated-attribute-create.md
             - href: develop/data/query/distinct.md
             - href: develop/data/query/sql.md
-
+        - href: develop/data/hipaa/intro.md
+        - topics:
+            - href: develop/data/hipaa/encrypt-data-hipaa.md
+            - href: develop/data/hipaa/search-encrypted.md
+            - href: develop/data/hipaa/decrypt-data-hipaa.md
+        - href: develop/data/secure-the-data-of-your-mobile-apps.md
         - href: develop/data/download-file-browser.md
         - href: develop/data/excel-bootstrap.md
         - href: develop/data/structure-create-use.md
@@ -236,7 +241,6 @@
                     - href: develop/ui/patterns/mobile/numbers/iconbadge.md
                     - href: develop/ui/patterns/mobile/numbers/progressbar.md
                     - href: develop/ui/patterns/mobile/numbers/progresscircle.md
-                    - href: develop/ui/patterns/mobile/numbers/progresscirclefraction.md
                     - href: develop/ui/patterns/mobile/numbers/rating.md
             - topics:
                 - href: develop/ui/patterns/mobile/utilities/intro.md
@@ -470,7 +474,6 @@
             - href: develop/security/user-roles/validate-permissions.md
         - href: develop/security/restrict-access-to-an-internal-network.md
         - href: develop/security/secure-http-requests.md
-        - href: develop/security/secure-the-data-of-your-mobile-apps.md
         
     # Troubleshooting Applications
     - href: develop/troubleshoot/intro.md
@@ -572,16 +575,6 @@
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-services.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/reference.md
         - href: extensibility-and-integration/artificial-intelligence/azure-reference.md
-        - href: extensibility-and-integration/artificial-intelligence/ml-builder/intro.md
-        - topics:
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/getting-started.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/creating-model.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/implement-model.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/data-considerations.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/model-performance.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/release-notes.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/compliance-legal-faq.md
-
 
     - href: extensibility-and-integration/mobile-plugins/intro.md
     - topics:
@@ -603,7 +596,6 @@
 
         - href: extensibility-and-integration/javascript/web/intro.md
         - topics:
-            - href: extensibility-and-integration/javascript/web/run-js-code.md
             - href: extensibility-and-integration/javascript/web/handle-errors.md
 
     #Integration Builder
@@ -1137,6 +1129,8 @@
                 - href: ref/ui-patterns/mobile/gallery-mobile.md
                 - href: ref/ui-patterns/mobile/lightboximage.md
                 - href: ref/ui-patterns/mobile/masterdetail-mobile.md
+                - href: ref/ui-patterns/mobile/progressbar-mobile.md
+                - href: ref/ui-patterns/mobile/rating.md
                 - href: ref/ui-patterns/mobile/rangeslider.md
                 - href: ref/ui-patterns/mobile/rangesliderinterval.md
                 - href: ref/ui-patterns/mobile/stackedcards.md

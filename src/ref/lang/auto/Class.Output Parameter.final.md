@@ -47,7 +47,6 @@ The Output Parameters of the following elements have additional properties:
 
 * [Output Parameter](ServiceStudio.Plugin.SOAP.SOAPActionOutput.final.md) of a consumed SOAP Web Service Method
 * [Output Parameter](ServiceStudio.Plugin.RESTService.RestServiceActionOutput.final.md) of an exposed REST API Method
-* [Output Parameter](ServiceStudio.Plugin.SAP.SapActionOutput.final.md) of a SAP Remote Function
 
 Check their reference topics for more information.
 

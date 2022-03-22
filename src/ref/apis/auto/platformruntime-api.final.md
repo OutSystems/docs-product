@@ -1,6 +1,17 @@
+---
+summary: Allows manipulating runtime configurations for the environment.
+tags: 
+---
+
 # PlatformRuntime API
 
-For Platform Version 10.0.0.0. Allows manipulating runtime configurations for the environment.
+
+The OutSystems PlatformRuntime API provides actions to:
+
+* switch the database connection in runtime
+* retrieve the GUID that uniquely identifies the current request
+
+To use this API, add a dependency to your application on the PlatformRuntime_API module.
 
 ## Summary
 

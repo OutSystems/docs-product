@@ -1,6 +1,12 @@
+---
+summary: API that provides methods to help you avoid code injection in HTML, JavaScript, and SQL snippets that need to include untrusted content, for example, content gathered from end users.
+tags: 
+---
+
 # Sanitization API
 
-Starting in Platform Version 9.1.0.21., this API provides methods to avoid code injection in HTML, Javascript and SQL snippets that need to include untrusted content, i.e., content gathered from end users.
+
+API that provides methods to help you avoid code injection in HTML, JavaScript, and SQL snippets that need to include untrusted content, for example, content gathered from end users.
 
 ## Summary
 

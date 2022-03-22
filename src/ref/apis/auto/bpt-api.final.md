@@ -1,6 +1,14 @@
+---
+summary: Low-level API to create custom inboxes for process activities.
+tags: 
+---
+
 # BPT API
 
-For Platform Version 9.0.99.11. Low-level API to create custom inboxes for process activities.
+
+The BPT API provides functionality to manage processes and activities.
+
+To use this API, first reference the **BPT_API** extension by using the **Manage Dependencies** (**Ctrl+Q**) window in Service Studio.
 
 ## Summary
 

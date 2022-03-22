@@ -1,6 +1,12 @@
+---
+summary: A set of SOAP Web Services that allow you to manage the infrastructure made available by OutSystems.
+tags: support-application_development; support-Integrations_Extensions
+---
+
 # LifeTime Services API
 
-For version 10.0.708.100. Provides APIs to LifeTime functionality.
+
+This API, composed of a set of SOAP Web Services, provides functionality to manage the infrastructure made available by OutSystems.
 
 ## Summary
 

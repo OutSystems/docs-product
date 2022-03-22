@@ -1,6 +1,12 @@
+---
+summary: Provides Actions to manipulate BinaryData contents, such as retrieving the length or transforming binary content into Text.
+tags: 
+---
+
 # BinaryData API
 
-For Platform Version 9.0.99.11. Provides Actions to manipulate BinaryData contents, such as retrieving the length or transforming binary content into Text.
+
+Provides Actions to manipulate BinaryData contents, such as retrieving the length or transforming binary content into Text or Base64.
 
 ## Summary
 

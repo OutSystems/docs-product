@@ -1,6 +1,14 @@
+---
+summary: API for including scripts in Web Screens for all web apps running in the environment.
+tags: runtime-traditionalweb
+---
+
 # IncludeJavascript API
 
-For Platform Version 9.0.99.11. API for including scripts in Web Screens for all web apps running in the environment.
+
+API for including scripts in Web Screens for all web apps running in the environment.
+
+To use this API reference the **IncludeJavascript_API extension** using the References Window in Service Studio.
 
 ## Summary
 
@@ -241,3 +249,4 @@ ExcludedApplications
 ExcludedEspaces
 :   Type: RecordList of [ExcludedEspaces](<#Structure_ExcludedEspaces>). Mandatory.  
     The script is not inserted in the Web Screens of these modules.
+

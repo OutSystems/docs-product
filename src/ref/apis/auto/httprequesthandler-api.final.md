@@ -1,6 +1,12 @@
+---
+summary: Provides actions to manipulate HTTP Requests and Responses.
+tags: 
+---
+
 # HTTPRequestHandler API
 
-For Platform Version 9.0.0.0. Provides actions to manipulate HTTP Requests and Responses.
+
+Provides actions to manipulate HTTP Requests and Responses.
 
 ## Summary
 

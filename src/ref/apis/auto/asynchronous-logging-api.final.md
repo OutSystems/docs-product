@@ -1,6 +1,21 @@
+---
+summary: The Asynchronous Logging API provides actions to asynchronously insert records into the database or register request events of your applications in an asynchronous way.
+tags: support-application_development; support-Application_Troubleshooting; support-devOps; support-monitoring
+---
+
 # Asynchronous Logging API
 
-For Platform Version 9.0.99.11. Provides methods to asynchronously insert records or event logs into the database. Records are kept in a message queue and bulk inserted after a short period.
+
+The Asynchronous Logging API provides actions to perform the following asynchronously:
+
+* insert records into the database
+* register request events of your applications
+
+The record or request event gets added to a message queue. Then the OutSystems log service processes it, and adds it to the database.
+
+The message queue is non-persistent. This means that in case of a system failure, pending records and request events get lost.
+
+To use this API, simply reference the AsynchronousLogging module in your application.
 
 ## Summary
 

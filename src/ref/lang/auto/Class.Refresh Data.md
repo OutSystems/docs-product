@@ -7,6 +7,8 @@ helpids: 0
 
 Obtains refreshed data from an existing data source.  
 
+**Note**: This operation is synchronous. This means the execution flow is blocked while the data is being refreshed.
+
 ## Properties
 
 <table markdown="1">

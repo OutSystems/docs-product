@@ -95,7 +95,7 @@ Previous integrations created in Integration Studio must be maintained and evolv
 
     ![Validate your credentials](<images/validate-credentials-ib.png>)
 
-1. If you are creating a MongoDB integration, and don't have Integration Manager MongoDB plugin installed, Integration Builder let's you know.Install the plugin by selecting **Install MongoDB plugin**.
+1. If you are creating a MongoDB integration, and don't have Integration Manager MongoDB plugin installed, Integration Builder let's you know. Install the plugin by selecting **Install MongoDB plugin**, and after the plugin is installed, click **Next**.
 
 1. Follow the wizard steps to configure the integration.
 
@@ -272,4 +272,4 @@ Depending on the type of database you integrated with, follow the steps on one o
 1. Select the integration, then select the server actions you want to use in your application, and finally select **Apply**.
 
 You can now use the Server Actions of the integration to show and manipulate data from the MongoDB database.
-To learn more about how to use MongoDB integration in your app, check the [this article].
+To learn more about how to use MongoDB integration in your app, check the [this article]().

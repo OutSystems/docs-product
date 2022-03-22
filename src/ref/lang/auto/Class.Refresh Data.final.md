@@ -6,7 +6,8 @@ helpids: 0
 # Refresh Data
 
 Use it to get updated data from the existing data source.
-**Note**: This operation is synchronous and so the execution flow is blocked while the data is being refreshed.
+
+**Note**: This operation is synchronous. This means the execution flow is blocked while the data is being refreshed.
 
 ## Properties
 

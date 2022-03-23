@@ -3,32 +3,47 @@ summary: Integrating your applications with external databases using Integration
 tags: external database; integration builder
 ---
 
-# Technical Preview - Integrate with an external database using Integration Builder 
+# Technical Preview - Integrate with an external database using Integration Builder
 
-You can integrate your applications with external databases including DB2 iSeries, PostgreSQL, Aurora PostgreSQL, MySQL, Oracle, Azure SQL, and SQL Server using Integration Builder. Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
+You can use Integration Builder to integrate your apps with the following external databases:
+
+* Relational databases:
+
+    * DB2 iSeries
+    * PostgreSQL and Aurora PostgreSQL
+    * MySQL
+    * Oracle
+    * Azure SQL and SQL Server
+
+* Non-relational databases:
+
+    * MongoDB
+
+Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
 
 For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup/system-requirements.md).
 
 ## Prerequisites
 
 * Depending on the external database you want to integrate with, your environments must use the following Platform Server versions:
-    
+
+    * For integrations with MongoDB your environments must use Platform Server 11.7.2 or later.
     * For integrations with DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server, you need Platform Server 11.14.0 or later.
-    * For integrations with PostgreSQL and Aurora PostgreSQL, you need Platform Server 11.15.0 or later. 
+    * For integrations with PostgreSQL and Aurora PostgreSQL, you need Platform Server 11.15.0 or later.
 
 * All infrastructure servers must be able to connect to the external database.
 
 * If you use the [Internal Network configuration](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup/network-requirements.md#integration-builder).
 
-## Known limitations 
+## Known limitations
 
 * Previous external database extensions created in Integration Studio cannot be edited in Integration Builder.
 
 * External database extensions created in Integration Builder cannot be edited in Integration Studio.
 
-* An external database integration created in Integration Builder only supports one database, catalog, or schema at a time. If you require various tables from different databases, catalogs, or schemas, you must create several integrations.
+* An external database integration created in Integration Builder only supports one database, catalog, or schema at a time. If you require various tables or collections from different databases, catalogs, or schemas, you must create several integrations.
 
-* It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description. 
+* It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description.
 
 * It's not possible to rename entities or attributes.
 
@@ -42,7 +57,7 @@ To integrate with an external database using Integration Builder, follow these s
 
 1. Select a connection or create a new one to allow your integration to access the data in your external database.
 
-1. Select a database and the tables you want the integration to consume.
+1. Select tables or collections you want the integration to consume.
 
 1. Publish the integration to your environment.
 
@@ -54,11 +69,9 @@ Previous integrations created in Integration Studio must be maintained and evolv
 
 ## How to integrate with an external database
 
-The following is an example of an integration with MySQL.
-
 ### Log into Integration Builder
 
-1. Open Integration Builder, available at https://integrationbuilder.outsystems.com.
+1. Open Integration Builder, available at [https://integrationbuilder.outsystems.com](https://integrationbuilder.outsystems.com).
 
 1. In the **Environment** field, enter the address of your OutSystems development environment and click **Next**.
 
@@ -78,90 +91,135 @@ The following is an example of an integration with MySQL.
 
     ![Choose a provider](<images/choose-provider-ib.png>)
 
-1. Validate your credentials and click **Confirm**. 
-
-    **Note:** This step only occurs if you are using a personal environment. 
+1. If you are creating an integration with a relational database and using a Personal Environment, validate your credentials and click **Confirm**.
 
     ![Validate your credentials](<images/validate-credentials-ib.png>)
 
-1. Follow the wizard steps to configure the integration. 
+1. If you are creating a MongoDB integration, and don't have Integration Manager MongoDB plugin installed, Integration Builder let's you know. Install the plugin by selecting **Install MongoDB plugin**, and after the plugin is installed, click **Next**.
+
+1. Follow the wizard steps to configure the integration.
 
 ### Connect integration
 
 You can connect an integration in the following ways:
 
-* [**Option 1**](#option-1): If you already have a database connection, you can **select a connection** from the list of available connections.
+* [**Use an existing connection**](#option-1): If you already have a database connection, you can **select a connection** from the list of available connections.
 
-* [**Option 2**](#option-2): If you need a new database connection and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md), you can **create a new connection**.
+* [**Create a new connection**](#option-2): If you need a new database connection and meet the following requirements, you can **create a connection**:
 
-* [**Option 3**](#option-3): If you need a new connection but don't have the required permissions, you can **request a new connection**. 
+    * You're integrating with a relational database and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
 
-**Option 1**
+    * You're integrating with MongoDB.
 
-1. Select a connection, click **Next**, and then continue with with [selecting a database](#select-database).
+* [**Request a new connection 3**](#option-3): If you need a new connection to a relational database but don't have the required permissions, you can **request a new connection**. This option is only available for integrations with relational databases.
+
+#### Use an existing connection { #option-1 }
+
+If the database connection you want to use already exists, do the following:
+
+1. Select a connection, click **Next**, and then continue with [selecting a database](#select-database).
 
     **Note**: The list of connections only displays connections that you have permissions to view. To select a connection from the list, you must have **Full Control** permissions.
-    
-    ![Select a connection](<images/select-connection-ib.png>) 
 
-**Option 2**
+    ![Select a connection](<images/select-connection-ib.png>)
+
+#### Create a new connection { #option-2 }
+
+You can create a new database connection, if you meet the following requirements, you can **create a connection**:
+
+* You're integrating with a relational database and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
+
+* You're integrating with MongoDB.
+
+Create a new connection by following these steps:
 
 1. Click **+ Create a connection**.
 
-1. Click **Create in Service Center**. 
-
     ![Create a connection in Service Studio](<images/create-ss-connection-ib.png>)
 
-1. In Service Center, enter the mandatory details and click **Create**.
+1. Enter the mandatory details, test your connection, and finally click **Create connection**.
+
+    <div class="info" markdown="1">
+
+    For integrations with relational databases and if your environment uses Platform Server version 11.14.0 or earlier, click **Create in Service Center**. Fill in the mandatory details, test the connection, and then click **Create**.
 
     **Note:** By default, SQL Server/Azure SQL is selected in the DBMS dropdown. Don’t forget to select the correct database.
 
-    ![Create a database connection in Service Center](<images/create-db-connection-sc.png>)
+    After you create the database connection, return to Integration Builder.
 
-    When the database is created, it appears in your connection list in Integration Builder. 
+    </div>
 
-1. Go back to Integration Builder, select a connection, click **Next**, and then continue with [selecting a database](#select-database).
+1. Select the new integration, click **Next**, and continue with [selecting tables or collections](#select-database).
 
-**Option 3**
+#### Request a new connection { #option-3 }
 
-1. If your credentials do not allow you to create a connection, you can request your OutSystems Administrator to create it by clicking **Send request by email**.
+<div class="info" markdown="1">
+
+This options is only available for integrations with relational databases.
+
+</div>
+
+1. If your credentials don't allow you to create a connection, you can request your OutSystems Administrator to create it by clicking **Send request by email**.
 
     ![Request a new connection](<images/send-request-ib.png>)
- 
- 1. Enter all connection details to allow an OutSystem Administrator to create the connection and click **Send email**.
+
+1. Enter all connection details to allow an OutSystem Administrator to create the connection and click **Send email**.
 
     ![Send Request](<images/send-request-email-ib.png>)
 
-    When your request is approved it will appear in your connection list in Integration Builder. 
+    When your request is approved it will appear in your connection list in Integration Builder.
 
 1. Go back to Integration Builder, select a connection, click **Next**, and then continue with [selecting a database](#select-database).
 
-### Select database
+### Select tables or collections
 
-1. Select the database to consume with the integration and click **Next**.
+Depending on the database type, follow the steps for [relational databases](#rel-db) or the steps for [MongoDB](#non-rel-db).
+
+#### Integration with a relational database { #rel-db }
+
+If you are integrating with DB2 iSeries, PostgreSQL, Aurora PostgreSQL, MySQL, Oracle, Azure SQL, or SQL Server, follow these steps:
+
+1. Select the database, catalog, or schema, to consume with the integration and click **Next**.
 
     ![Select database](<images/select-database-ib.png>)
 
-### Add tables
-
 1. Select the tables to consume with the integration and click **Next**.
-    
-    To view the attributes of a table, select the relevant table. 
 
-    When you publish the integration, these tables are represented as entities in Service Studio.
+    To view the attributes of a table, select the relevant table.
+
+    <div class="info" markdown="1">
+
+    Once you select a collection, the **Access Type** option appears. To only allow reading data and prevent writing data for that collection, select the **Read-only** checkbox for the given collection.
+
+    </div>
 
     ![Add tables](<images/add-tables-ib.png>)
 
-   **Note:** You can select more tables later on by editing the published integration in Integration Builder.
+When you publish the integration, the selected tables are represented as entities in Service Studio.
+You can select more tables later on by editing the published integration in Integration Builder.
 
-### Review integration and publish
+After these steps, [review and publish your integration](#review).
 
-1. Review the integration information, update if necessary.
+#### Integration with MongoDB { #non-rel-db }
 
-1. Ensure you have selected the correct **Default value behavior** (by default Overwrite database NULLs is selected). 
+If you are integrating with MongoDB, select the collections to consume with the integration and click **Next**.
+
+<div class="info" markdown="1">
+
+Once you select a collection, the **Access Type** option appears. To only allow reading data and prevent writing data for that collection, select the **Read-only** checkbox for the given collection.
+
+</div>
+
+After this step, [review and publish your integration](#review).
+
+### Review integration and publish { #review }
+
+1. Review the integration information, update it if necessary.
+
+1. If you are creating an integration with a relational database, ensure you have selected the correct **Default value behavior** (by default **Overwrite database NULLs** is selected).
 
     The following are the options for null and default values:
-    
+
     * Overwrite database NULLs - Always writes platform default values to the database. Database NULLs are read as platform default values.
 
     * Preserve database NULLs - Always write Integration Builder default values as database NULL. Database NULLs are read as Integration Builder default values.
@@ -172,12 +230,13 @@ You can connect an integration in the following ways:
 
 1. Click **Publish**.
 
-    The published integration is now available in your environment and ready to be used in your OutSystems applications. 
+After the integration is published in your environment, you can [use it in your OutSystems applications](#use).
 
-To help you decide which default behavior is best for your new integration, the following table outlines the differences between the default values for the platform and Integration builder. 
+#### Platform and Integration Builder default values
 
-#### **Platform and Integration Builder default values**
-|**Type** | **Platform default value** | **Integration Builder default value** | 
+To help you decide which default behavior is best for your new integration with a relational database, the following table outlines the differences between the default values for the platform and Integration Builder.
+
+|Type | Platform default value | Integration Builder default value |
 |---|---|---|
 |Binary Data|Byte array with no elements|Byte array with no elements|N/A|
 |Boolean|False|False|
@@ -192,7 +251,11 @@ To help you decide which default behavior is best for your new integration, the 
 |Phone Number|"" (empty string)|``"<ib>NULL</ib>"``|
 |Text|"" (empty string)|``"<ib>NULL</ib>"``|
 
-### Use the integration in your application
+### Use the integration in your application { #use }
+
+Depending on the type of database you integrated with, follow the steps on one of the following sections.
+
+#### Integration with a relational database
 
 1. In your application, go to **Module** -> **Manage Dependencies**.
 
@@ -201,3 +264,12 @@ To help you decide which default behavior is best for your new integration, the 
     ![Add dependency](<images/add-dependency-ss.png>)
 
     You can now use the entities of the integration to manipulate data on the external databases just like you do with the standard OutSystems entities.
+
+#### Integration with MongoDB
+
+1. In your application, go to **Module** -> **Manage Dependencies**.
+
+1. Select the integration, then select the server actions you want to use in your application, and finally select **Apply**.
+
+You can now use the Server Actions of the integration to show and manipulate data from the MongoDB database.
+To learn more about how to use MongoDB integration in your apps, check the [this article](mongo-db.md).

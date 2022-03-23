@@ -735,6 +735,8 @@
     - href: extensibility-and-integration/external-database/intro.md
     - topics:
         - href: extensibility-and-integration/external-database/integrate-external-db-ib.md
+        - topics:
+               - href: extensibility-and-integration/external-database/mongo-db.md
         - href: extensibility-and-integration/external-database/connect-external-db.md
     - href: extensibility-and-integration/configure-send-emails.md
 

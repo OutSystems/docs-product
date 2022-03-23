@@ -151,7 +151,7 @@ Create a new connection by following these steps:
 
 1. Select the new integration, click **Next**, and continue with [selecting tables or collections](#select-database).
 
-#### Request a new connection 3 { #option-3 }
+#### Request a new connection { #option-3 }
 
 <div class="info" markdown="1">
 
@@ -272,4 +272,4 @@ Depending on the type of database you integrated with, follow the steps on one o
 1. Select the integration, then select the server actions you want to use in your application, and finally select **Apply**.
 
 You can now use the Server Actions of the integration to show and manipulate data from the MongoDB database.
-To learn more about how to use MongoDB integration in your app, check the [this article]().
+To learn more about how to use MongoDB integration in your apps, check the [this article](mongo-db.md).

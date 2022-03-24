@@ -5,8 +5,7 @@ helpids: 0
 
 # Query Parameter
 
-The SQL Tool doesn't have direct access to the outside scope. Query parameters allow you to access data from the outer scope. So to have access to data coming from the outer scope, you need to define the input parameters and their data types.
-
+The SQL Tool doesn't have direct access to the outside scope. Query parameters allow you to access data from the outer scope. 
 
 ## How to use
 

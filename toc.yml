@@ -754,6 +754,8 @@
         - href: managing-the-applications-lifecycle/deploy-applications/deployment-plans.md
         - href: managing-the-applications-lifecycle/deploy-applications/tp-configure-site-properties-during-deploy.md
         - href: managing-the-applications-lifecycle/deploy-applications/configure-application-settings-after-deployment.md
+        - topics:
+            - href: managing-the-applications-lifecycle/deploy-applications/apply-configurations.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-an-application-with-dependencies.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-a-single-module.md
         - href: managing-the-applications-lifecycle/deploy-applications/plan-a-deployment-for-the-operations-team.md

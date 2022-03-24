@@ -12,13 +12,9 @@ The SQL Tool doesn't have direct access to the outside scope. Query parameters a
 
 In this example, there is a data model with an Entity `Employee`. There is also a screen named `Employees`. This screen shows a list of all the employees, and it also contains a text input to filter the list of employees. 
 
-To create a data action with a query that uses the search input as query parameter, follow these steps:
+To create a query that uses the search input as query parameter, follow these steps:
 
-1. On the Elements tree, right-click the screen and select **Fetch Data from Other Sources**.
-
-    ![Select **Fetch Data from Other Sources** when right-clicking the screen.](images/fetch-data-ss.png)
-
-1. From the toolbox, drag an **SQL** and drop it between the **Start** and **End** nodes.
+1. From the toolbox, drag an **SQL** and drop it in the action flow between the **Start** and **End** nodes.
 
     ![Add an SQL node to the flow](images/add-sql-ss.png)
 

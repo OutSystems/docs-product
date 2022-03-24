@@ -83,8 +83,6 @@ In this step you will define the permission level that each LifeTime role will h
 
 Click the dropdown next to each LifeTime role to change the permission that role will have in the environment. If you are installing OutSystems for the first time, this will be straight forward: you will only need to define which permissions you want to grant the Developer role in the environment you are registering.
 
-If you were already managing users and roles in the Service Center console of the environment, check the difference between [Service Center and LifeTime Roles](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Service_Center_and_LifeTime_Roles).
-
 ![](images/lifetime-configure-4.png)
 
 #### Step 4. Import existing users from the environment

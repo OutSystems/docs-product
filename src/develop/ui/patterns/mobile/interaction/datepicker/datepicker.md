@@ -27,7 +27,7 @@ In this example, the user selects a date from the calendar, the date is saved in
 
 1. From the Toolbox, drag the Date Picker widget into the Main Content area of your application's screen.
 
-    By default, the Date Picker contains an **Input** widget.
+    By default, the Date Picker contains an **Input** widget (type Text).
 
     ![Drag the widget to the screen](<images/datepicker-drag-ss.png>)
 

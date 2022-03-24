@@ -5,6 +5,8 @@ summary: Date Picker allows the end user to select a single or a range of dates 
 
 # How to use the Date Picker UI Pattern
 
+You can use the Date Picker UI Pattern to allow users to select a single date using a calendar. The Date Picker Pattern is based on the [flatpickr](https://flatpickr.js.org/) library. For more advanced options, you can refer to this library.
+
 In this example, the user selects a date from the calendar, the date is saved in a variable and then displayed in an input widget.
 
 1. In Service Studio, in the Toolbox, search for `Date Picker`.
@@ -71,7 +73,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 **Result**
 
-![](<images/datepicker-result.png>)
+![Datepicker result](<images/datepicker-result.png>)
 
 ## Properties
 

@@ -9,9 +9,9 @@ The SQL Tool doesn't have direct access to the outside scope. Query parameters a
 
 ## How to use
 
-In this example, there is a data model with an Entity `Employee`. There is also a screen named `Employees`. This screen shows a list of all the employees, and it also contains a text input to filter the list of employees. 
+In this example, there is a data model with an Entity `Employee`. 
 
-To create a query that uses the search input as query parameter, follow these steps:
+To create a query that uses a search input as query parameter, follow these steps:
 
 1. From the toolbox, drag an **SQL** and drop it in the action flow between the **Start** and **End** nodes.
 
@@ -42,7 +42,8 @@ Type** is set to `Text`.
     {Employee}.[FirstName] LIKE '%' + @QuerySearch + '%'
     OR
     {Employee}.[LastName] LIKE '%' + @QuerySearch + '%'
-    ```
+    ```  
+
 1. Double-click the **Output Entities/Structures** to select the output structure of
 the query. In this example, there is already a structure named EmployeeStructure with the attributes Name, Email, Phone and Salary. Select it, and click **Select**.
 

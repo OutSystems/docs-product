@@ -474,6 +474,7 @@
             - href: develop/security/user-roles/validate-permissions.md
         - href: develop/security/restrict-access-to-an-internal-network.md
         - href: develop/security/secure-http-requests.md
+        - href: develop/security/secure-cookies-enable-secure-session.md
         
     # Troubleshooting Applications
     - href: develop/troubleshoot/intro.md

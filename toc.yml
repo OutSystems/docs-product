@@ -503,6 +503,8 @@
     - href: develop/seo/intro.md
     - topics:
         - href: develop/seo/indexing.md
+    # SEO Trad Web
+    - href: develop/seo/seo-friendly-urls.md
     # Testing
     - href: develop/testing/intro.md
     - topics:

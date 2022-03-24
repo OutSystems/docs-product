@@ -151,5 +151,3 @@ Do the following on each **Loaded front-end** server:
 
 1. Launch the Windows Services management console (services.msc).
 1. Configure the **OutSystems Scheduler Service**’s startup type as `Automatic` and then start the service.
-
-Check [here](balanced-app-deploy-java.md) the procedure for other stacks.

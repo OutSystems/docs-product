@@ -5,6 +5,58 @@ helpids: 0
 
 # Query Parameter
 
+The SQL Tool doesn't have direct access to the outside scope. Query parameters allow you to access data from the outer scope. So to have access to data coming from the outer scope, you need to define the input parameters and their data types.
+
+
+## How to use
+
+In this example, there is a data model with an Entity `Employee`. There is also a screen named `Employees`. This screen shows a list of all the employees, and it also contains a text input to filter the list of employees. 
+
+To create a data action with a query that uses the search input as query parameter, follow these steps:
+
+1. On the Elements tree, right-click the screen and select **Fetch Data from Other Sources**.
+
+    ![Select **Fetch Data from Other Sources** when right-clicking the screen.](images/fetch-data-ss.png)
+
+1. From the toolbox, drag an **SQL** and drop it between the **Start** and **End** nodes.
+
+    ![Add an SQL node to the flow](images/add-sql-ss.png)
+
+1. Double-click the newly created **SQL** to open the SQL Editor.
+
+1. Right-click the **Parameters** folder, and select **Add Query Parameter**.
+
+    ![Add Query Parameter in SQL Editor.](images/add-queryparameter-ss.png)
+
+1. Set the **Name** of the Query Parameter to `QuerySearch`, and make sure its **Data
+Type** is set to `Text`.
+
+    ![Query parameter properties.](images/name-queryparameter-ss.png)
+
+1. In the **SQL** tab, enter the following query:
+
+    ```sql
+    SELECT
+    {Employee}.[FirstName] + ' ' + {Employee}.[LastName],
+    {Employee}.[Email],
+    {Employee}.[Phone],
+    {Employee}.[Salary]
+    FROM
+    {Employee}
+    WHERE
+    {Employee}.[FirstName] LIKE '%' + @QuerySearch + '%'
+    OR
+    {Employee}.[LastName] LIKE '%' + @QuerySearch + '%'
+    ```
+1. Double-click the **Output Entities/Structures** to select the output structure of
+the query. In this example, there is already a structure named EmployeeStructure with the attributes Name, Email, Phone and Salary. Select it, and click **Select**.
+
+    ![Select output structure for the query.](images/output-structure-ss.png)
+
+1. Click **Test** to test the query.
+
+1. In the **Test Inputs** tab, set some value for the QuerySearch parameter, then click **Test** again to make sure the filter is working.
+
 
 ## Properties
 

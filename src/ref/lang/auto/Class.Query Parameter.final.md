@@ -42,7 +42,7 @@ Type** is set to `Text`.
     {Employee}.[FirstName] LIKE '%' + @QuerySearch + '%'
     OR
     {Employee}.[LastName] LIKE '%' + @QuerySearch + '%'
-    ```  
+    ```
 
 1. Double-click the **Output Entities/Structures** to select the output structure of
 the query. In this example, there is already a structure named EmployeeStructure with the attributes Name, Email, Phone and Salary. Select it, and click **Select**.

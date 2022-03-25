@@ -812,8 +812,7 @@
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md
-        - topics:
-            - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-env-activity.md
+        - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-env-activity.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-usage-with-audit-logs.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/troubleshoot-the-performance-of-an-application.md

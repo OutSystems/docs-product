@@ -37,7 +37,7 @@ To successfully register an OutSystems environment in LifeTime, make sure the fo
 * The OutSystems environment has a [valid license](http://www.outsystems.com/licensing) (same Activation Code than LifeTime license).
 * The OutSystems environment is not a LifeTime environment.
 * The OutSystems environment is not already registered in your infrastructure.
-* The OutSystems environment is running a [supported Platform Server version](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Which_versions_of_Platform_Server_can_LifeTime_manage%3F).
+* The OutSystems environment is running a supported Platform Server version.
 * You have the credentials of a user with administration privileges on the OutSystems environment.
 
 ### Register an environment
@@ -95,7 +95,6 @@ If you are installing OutSystems for the first time, there are no users in the e
 
 ![](images/lifetime-configure-5.png)
 
-If you were already managing users and roles in the Service Center console of the environment, check the difference between [Service Center and LifeTime Roles](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Service_Center_and_LifeTime_Roles).
 
 The environment users that already exist in LifeTime will not be imported. You can check the list of these users in section **Existing LifeTime Users**.
 

@@ -872,11 +872,19 @@
     - href: setup/default-configurations.md
     - href: setup/environment-config.md
     - href: setup/lifetime-configure.md
+    # Cache Invalidation Service
+    - href: setup/cache-invalidation/intro.md
+    - topics:
+        - href: setup/cache-invalidation/enable-tls.md        
+        - href: setup/cache-invalidation/installation.md     
+        - href: setup/cache-invalidation/high-availability.md                   
+        - href: setup/cache-invalidation/manage-troubleshoot.md
     - href: setup/unattended-install/intro.md
     - topics:
         - href: setup/unattended-install/config-tool-ref.md
         - href: setup/unattended-install/server-hsconf-ref.md
         - href: setup/unattended-install/osp-tool-ref.md
+    
     # OutSystems on Microsoft Azure
     - href: setup/azure/intro.md
     - topics:

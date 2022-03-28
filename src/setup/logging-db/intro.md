@@ -3,10 +3,6 @@ summary: OutSystems 11 allows you to store log data in a log database separate f
 tags: article-page; support-Installation_Configuration; version-11
 ---
 
-<pre class="script">
-template('OutSystems/OSVersionIndicator');
-</pre>
-
 # Keep OutSystems log data in a separate database
 
 Up to version 10, OutSystems used a single database to store two types of data: **application data** and **log data**. Since these types of data have different requirements, you might need to handle each type of data differently.

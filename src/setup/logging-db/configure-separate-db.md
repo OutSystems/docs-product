@@ -3,10 +3,6 @@ summary: How to configure a separate database for log data and apply these confi
 tags: support-Installation_Configuration; version-11
 ---
 
-<pre class="script">
-template('OutSystems/OSVersionIndicator');
-</pre>
-
 # Configure a separate database for log data
 
 Follow the procedure below to configure a separate database for log data and apply these configuration changes to existing OutSystems applications.

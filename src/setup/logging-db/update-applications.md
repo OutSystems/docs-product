@@ -3,13 +3,9 @@ summary: How to update OutSystems applications that became invalid due to the lo
 tags: support-Installation_Configuration; version-11
 ---
 
-<pre class="script">
-template('OutSystems/OSVersionIndicator');
-</pre>
-
 # Update applications that access OutSystems log data
 
-To update any applications that became invalid after upgrading them to OutSystems 11 for having joins with log entities, you should basically take the following approach: get old log data, store it locally and perform any necessary joins to fill in missing data. 
+To update any applications that became invalid after upgrading them to OutSystems 11 for having joins with log entities, you should basically take the following approach: get old log data, store it locally and perform any necessary joins to fill in missing data.
 
 This approach can be summarized in the following steps:
 

@@ -80,7 +80,7 @@ After following these steps and publishing the module, you can test the pattern 
 |Properties|Description|
 |---|---|
 |DateFormat (Text): Optional| Set the input date format. If empty, the date format will be the same as the server format. When using formats with time, make sure to set the **TimeFormat** property. The following are some examples:<ul><li>"DD/MM/YYYY" - 15/05/2022 </li> <li>"MM/DD/YYYY" - 05/15/2022</li><li>"DD MMM YYYY" - 15 May 2022</li><li>"DD-MMM-YYYY" - 15-May-2022</li><li>"DD.MMM.YYYY" - 15.May.2022</li><li>"MMM DDD, YYYY" - May Sun, 2022</li><li>"MMM DDD, YY" - May Sun, 22</li></ul> |
-|ShowTodayButton (Boolean): Optional | If True, the **Today** button is displayed below the Date Picker. This button allows the user pick the current day date. If False, the **Today** Button is not displayed. The default value is False.|
+|ShowTodayButton (Boolean): Optional | If True, the **Today** button is displayed below the Date Picker.  This button allows users to pick the date of the current day. If False, the **Today** Button is not displayed. The default value is False.|
 |TimeFormat (DatePickerTimeFormat Identifier): Optional|Select the time format (12 or 24 hours). By default, no time is shown.|
 |OptionalConfigs.InitialDate (Date Time): Optional|The initial selected date for the Date Picker. If not set, no initial date is selected.|
 |OptionalConfigs.MinDate (DateTime): Optional|All days before this date are disabled.|

@@ -4,9 +4,9 @@ summary: Check the list of currently unsupported use cases when consuming SOAP 1
 
 # Unsupported SOAP Use Cases
 
-While importing a SOAP Web Service in Service Studio, you get immediate feedback on any currently unsupported feature/use case identified by the development environment.
+While importing a SOAP Web Service in **Service Studio**, you get immediate feedback on any currently unsupported feature/use case identified by the development environment.
 
-In this case, you can't import the Web Service immediately using Service Studio. Sometimes you can perform small changes in the WSDL describing the service so that the identified limitations no longer apply, and you can consume the Web Service in OutSystems.
+In this case, you can't import the Web Service immediately using **Service Studio**. Sometimes you can perform small changes in the WSDL describing the service so that the identified limitations no longer apply, and you can consume the Web Service in **OutSystems**.
 
 The current list of unsupported features/use cases is the following:
 
@@ -28,12 +28,39 @@ The current list of unsupported features/use cases is the following:
 
 <div class="info" markdown="1">
 
-Service Studio and the OutSystems platform are being **continuously improved** to support more SOAP 1.2 features and use cases and to have less unsupported scenarios that require WSDL adjustments.  
+**Service Studio** and the **OutSystems** platform are being **continuously improved** to support more SOAP 1.2 features and use cases and to have less unsupported scenarios that require WSDL adjustments.  
 Be sure to visit this page regularly for an updated list of the current limitations.
 
 </div>
 
 In the following sections you can find general instructions to perform the necessary WSDL changes for working around some currently unsupported features/use cases.
+
+## Exporting SOAP definition files 
+
+When you import a SOAP Web Service, you receive immediate feedback if it has an unsupported feature or use case. If the unsupported feature has a workaround, use the **Export Definition Files** feature of **Service Studio** to download the definition files to a local drive so that all relevant files can be easily opened and edited.
+
+1. In the Logic tab, right-click the consumed SOAP service and select **Export Definition Files…** from the context menu.
+
+    ![Export definition files](images/export-definition-files.png)
+
+1. Choose a folder to place the definition files. Aside from the .WSDL file itself, you may see an **XSDs** folder with schema files and an **Imports** folder with imported WSDL files.
+
+    ![WSDL Folder Structure](images/wsdl-folder-structure.png)
+
+    <div class="info" markdown="1">
+    When you export definition files to a local drive all schema locations are converted from URLs to relative paths.    
+    See [Export definition files in a SOAP web service](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Export_definition_files_in_a_SOAP_web_service) for more information.
+    </div>
+
+1. Modify definition files according to the workaround.
+1. Save the file or files and return to **Service Studio**.
+1. Delete the old SOAP web service. 
+1. Right-click SOAP in the Logic tab, and select **Consume SOAP Web Service…** 
+1. Click **Upload file**, navigate to where you saved the exported definition files, select the WSDL file in the root of the folder, and then click **Consume**.
+
+If you do not receive another error message the SOAP web service should work as expected.
+
+
 
 ## Multidimensional arrays
 

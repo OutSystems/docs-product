@@ -867,6 +867,8 @@
         - href: setup/possible-setups/cloud-architecture.md
     - href: setup/system-requirements.md
     - href: setup/network-requirements.md
+    - topics:
+        - href: setup/mobile-builder-connectivity-requirements.md
     - href: setup/default-configurations.md
     - href: setup/environment-config.md
     - href: setup/lifetime-configure.md

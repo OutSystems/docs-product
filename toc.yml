@@ -879,6 +879,12 @@
         - href: setup/cache-invalidation/installation.md     
         - href: setup/cache-invalidation/high-availability.md                   
         - href: setup/cache-invalidation/manage-troubleshoot.md
+    # Log Database Split
+    - href: setup/logging-db/intro.md
+    - topics:
+        - href: setup/logging-db/configure-separate-db.md
+        - href: setup/logging-db/update-applications.md
+        
     - href: setup/unattended-install/intro.md
     - topics:
         - href: setup/unattended-install/config-tool-ref.md

@@ -5,7 +5,7 @@ helpids: 0
 
 # Query Parameter
 
-The SQL Tool doesn't have direct access to the outside scope. Query parameters allow you to access data from the outer scope. 
+The SQL Tool doesn't have direct access to the outside scope. Query parameters allow you to access data from the outer scope. In order to have access to data coming from the outer scope, you need to define the input parameters and their data types.
 
 ## How to use
 
@@ -13,11 +13,11 @@ In this example, there is a data model with an Entity `Employee`.
 
 To create a query that uses a search input as query parameter, follow these steps:
 
-1. From the toolbox, drag an **SQL** and drop it in the action flow between the **Start** and **End** nodes.
+1. From the toolbox, drag an **SQL** widget and drop it in the action flow between the **Start** and **End** nodes.
 
     ![Add an SQL node to the flow](images/add-sql-ss.png)
 
-1. Double-click the newly created **SQL** to open the SQL Editor.
+1. Double-click the newly created **SQL** widget to open the SQL Editor.
 
 1. Right-click the **Parameters** folder, and select **Add Query Parameter**.
 
@@ -44,7 +44,7 @@ Type** is set to `Text`.
     {Employee}.[LastName] LIKE '%' + @QuerySearch + '%'
     ```
 
-1. Double-click the **Output Entities/Structures** to select the output structure of
+1. Double-click **Output Entities/Structures** to select the output structure of
 the query. In this example, there is already a structure named EmployeeStructure with the attributes Name, Email, Phone and Salary. Select it, and click **Select**.
 
     ![Select output structure for the query.](images/output-structure-ss.png)

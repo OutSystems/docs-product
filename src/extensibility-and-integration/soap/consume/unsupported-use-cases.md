@@ -39,6 +39,10 @@ In the following sections you can find general instructions to perform the neces
 
 When you import a SOAP Web Service, you receive immediate feedback if it has an unsupported feature or use case. If the unsupported feature has a workaround, use the **Export Definition Files** feature of **Service Studio** to download the definition files to a local drive so that all relevant files can be easily opened and edited.
 
+<div class="info" markdown="1">
+During the export process the schema location is automatically changed to the relative path on the local drive. There is no need to manually change the schema location attribute in the definition files.
+</div>
+
 1. In the Logic tab, right-click the consumed SOAP service and select **Export Definition Files…** from the context menu.
 
     ![Export definition files](images/export-definition-files.png)

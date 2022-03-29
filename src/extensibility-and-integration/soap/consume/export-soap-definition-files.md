@@ -1,28 +1,30 @@
 # Export definition files in a SOAP web service
 
-Consuming a SOAP Web Service in **Service Studio** is generally a seamless and trouble-free experience. There are cases, however, when developers want more information about a particular web service or need to make some modifications in order to make it conform to **OutSystems** requirements, such as.
+Consuming a SOAP Web Service in **Service Studio** is generally a seamless and trouble-free experience. There are cases, however, when developers want more information about a particular web service or need to make some modifications in order to make it conform to **OutSystems** requirements, such as:
 
 
 * An unsupported SOAP use case in the service definition
 * A pattern that leads to an internal error in **Service Studio** or in the **Platform Server**
 * An XML response that is not compliant with the service definition
 
-A SOAP Web Service is defined by a WSDL, a Web Service Description Language .xml file. A WSDL may reference other WSDL files and schema files (.xsd files). This article describes how to use the SOAP **Export Definition Files** function of **Service Studio** to download all of the files of a consumed SOAP web service.
+A SOAP Web Service is defined by a WSDL, a Web Service Description Language .xml file. A WSDL may reference other WSDL files and schema files (.xsd files). This article describes how to use the SOAP **Export Definition Files** option of **Service Studio** to download all of the files of a consumed SOAP web service.
 
 
 ## Examining local SOAP WSDL files
 
-SOAP web services are generally consumed by specifying the URL of the Web Service definition (WSDL), as explained in [Consume a SOAP Web Service](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Consume_a_SOAP_Web_Service). However, a developer may not have access to the web service for a number of reasons, including
+SOAP web services are generally consumed by specifying the URL of the Web Service definition (WSDL), as explained in [Consume a SOAP Web Service](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Consume_a_SOAP_Web_Service). However, a developer may not have access to the web service for a number of reasons, including:
 
 * The user deleted the files
 * The developer does not have internet access
 * The developer no longer has access to a private network where the service is available 
 
-A developer who doesn’t have access to the web service can use the SOAP **Export Definition Files** function to examine the SOAP service in order get more information about how it works.
+A developer who doesn’t have access to the web service can use the SOAP **Export Definition Files** option to examine the SOAP web service in order get more information about how it works, as described in the section below.
+
+### Exporting definition files { #exportingdefinitionfiles }
 
 1. In the Logic tab, right-click the consumed SOAP service and select **Export Definition Files…** from the context menu.
 
-    ![Export definition files](images/export-definition-files.png)
+    ![Export definition files](images/export-definition-files-ss.png)
 
 1. Choose a folder to place the definition files. Aside from the .WSDL file itself, you may see an XSDs folder with schema files and an Imports folder with imported WSDL files.
 

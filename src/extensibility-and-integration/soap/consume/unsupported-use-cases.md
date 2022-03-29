@@ -35,35 +35,7 @@ Be sure to visit this page regularly for an updated list of the current limitati
 
 In the following sections you can find general instructions to perform the necessary WSDL changes for working around some currently unsupported features/use cases.
 
-## Exporting SOAP definition files 
-
-When you import a SOAP Web Service, you receive immediate feedback if it has an unsupported feature or use case. If the unsupported feature has a workaround, use the **Export Definition Files** feature of **Service Studio** to download the definition files to a local drive so that all relevant files can be easily opened and edited.
-
-<div class="info" markdown="1">
-During the export process the schema location is automatically changed to the relative path on the local drive. There is no need to manually change the schema location attribute in the definition files.
-</div>
-
-1. In the Logic tab, right-click the consumed SOAP service and select **Export Definition Files…** from the context menu.
-
-    ![Export definition files](images/export-definition-files.png)
-
-1. Choose a folder to place the definition files. Aside from the .WSDL file itself, you may see an **XSDs** folder with schema files and an **Imports** folder with imported WSDL files.
-
-    ![WSDL Folder Structure](images/wsdl-folder-structure.png)
-
-    <div class="info" markdown="1">
-    When you export definition files to a local drive all schema locations are converted from URLs to relative paths.    
-    See [Export definition files in a SOAP web service](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Export_definition_files_in_a_SOAP_web_service) for more information.
-    </div>
-
-1. Modify definition files according to the workaround.
-1. Save the file or files and return to **Service Studio**.
-1. Delete the old SOAP web service. 
-1. Right-click SOAP in the Logic tab, and select **Consume SOAP Web Service…** 
-1. Click **Upload file**, navigate to where you saved the exported definition files, select the WSDL file in the root of the folder, and then click **Consume**.
-
-If you do not receive another error message the SOAP web service should work as expected.
-
+To implement a workaround for an unsupported use case begin with the procedure in [Exporting SOAP definition files](#exporting).
 
 
 ## Multidimensional arrays
@@ -410,3 +382,21 @@ In the example above, the `loginIn` and `logoutIn` messages both define a part n
 ### Use case workaround
 
 Currently there is no generic workaround available to overcome this unsupported use case.
+
+## Exporting SOAP definition files  { #exporting }
+
+To implement a workaround first use the **Export Definition Files** feature of **Service Studio** to download the definition files to a local drive so that all relevant files can be easily opened and edited by following the procedure in [Exporting definition files](export-soap-definition-files.md#exportingdefinitionfiles).
+
+<div class="info" markdown="1">
+During the export process the schema location is automatically changed to the relative path on the local drive. There is no need to manually change the schema location attribute in the definition files.
+</div>
+
+When the definition files have been exported continue as follows:
+
+1. Modify definition files according to the workaround.
+1. Save the file or files and return to **Service Studio**.
+1. Delete the old SOAP web service. 
+1. Right-click SOAP in the Logic tab, and select **Consume SOAP Web Service…** 
+1. Click **Upload file**, navigate to where you saved the exported definition files, select the WSDL file in the root of the folder, and then click **Consume**.
+
+If you do not receive another error message the SOAP web service should work as expected.

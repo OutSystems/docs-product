@@ -656,6 +656,7 @@
         - href: extensibility-and-integration/soap/consume/intro.md
         - topics:
             - href: extensibility-and-integration/soap/consume/consume-web-service.md
+            - href: extensibility-and-integration/soap/consume/export-soap-definition-files.md
             - href: extensibility-and-integration/soap/consume/configure-auth.md
             - href: extensibility-and-integration/soap/consume/refresh-web-service.md
             - href: extensibility-and-integration/soap/consume/configure-runtime.md

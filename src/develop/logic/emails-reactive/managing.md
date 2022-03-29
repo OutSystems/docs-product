@@ -7,6 +7,12 @@ tags: support-application_development,
 
 In Service Studio, Email is a UI element that lets you design and manage the content of email messages. Like Screens, you can find and create Emails in the UI Flows. However, unlike Screens that usually use the OutSystems UI, Emails require lightweight styles to follow the industry best standards for email sizes.
 
+<div class="info" markdown="1">
+
+Before following the guides in this article, make sure you meet the [prerequisites](intro.md#prerequisites).
+
+</div>
+
 ## Creating a new Email
 
 To create a new Email in Service Studio, follow these steps:

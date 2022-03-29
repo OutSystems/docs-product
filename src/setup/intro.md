@@ -7,8 +7,7 @@ tags: article-page; support-installation; support-Installation_Configuration-ove
 
 <div class="info" markdown="1">
 
-This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems)&#8195;[9.1](https://success.outsystems.com/Support/Archive/9.1/01_Install_and_set_up_OutSystems_Platform)&#8195;[9.0](https://success.outsystems.com/Support/Archive/9.0/01_Install_and_set_up_OutSystems_Platform)
-
+This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems)
 </div>
 
 This article explains the several components of OutSystems. It also explains how to set up OutSystems on the cloud or on-premises.

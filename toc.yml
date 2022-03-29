@@ -464,6 +464,7 @@
             - href: develop/security/user-roles/validate-permissions.md
         - href: develop/security/restrict-access-to-an-internal-network.md
         - href: develop/security/secure-http-requests.md
+        - href: develop/security/secure-cookies-enable-secure-session.md
         
     # Troubleshooting Applications
     - href: develop/troubleshoot/intro.md
@@ -492,6 +493,8 @@
     - href: develop/seo/intro.md
     - topics:
         - href: develop/seo/indexing.md
+    # SEO Trad Web
+    - href: develop/seo/seo-friendly-urls.md
     # Testing
     - href: develop/testing/intro.md
     - topics:
@@ -565,7 +568,6 @@
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-services.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/reference.md
         - href: extensibility-and-integration/artificial-intelligence/azure-reference.md
-
 
     - href: extensibility-and-integration/mobile-plugins/intro.md
     - topics:
@@ -714,6 +716,8 @@
     - href: extensibility-and-integration/external-database/intro.md
     - topics:
         - href: extensibility-and-integration/external-database/integrate-external-db-ib.md
+        - topics:
+               - href: extensibility-and-integration/external-database/mongo-db.md
         - href: extensibility-and-integration/external-database/connect-external-db.md
     - href: extensibility-and-integration/configure-send-emails.md
 
@@ -730,12 +734,15 @@
         - href: managing-the-applications-lifecycle/deploy-applications/deployment-plans.md
         - href: managing-the-applications-lifecycle/deploy-applications/tp-configure-site-properties-during-deploy.md
         - href: managing-the-applications-lifecycle/deploy-applications/configure-application-settings-after-deployment.md
+        - topics:
+            - href: managing-the-applications-lifecycle/deploy-applications/apply-configurations.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-an-application-with-dependencies.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-a-single-module.md
         - href: managing-the-applications-lifecycle/deploy-applications/plan-a-deployment-for-the-operations-team.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-in-a-short-deployment-window.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-to-an-environment-with-applications-with-errors.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-an-app-externaldb.md
+        - href: managing-the-applications-lifecycle/deploy-applications/balanced-app-deploy.md
         - href: managing-the-applications-lifecycle/deploy-applications/apply-a-hotfix.md
         - href: managing-the-applications-lifecycle/deploy-applications/repair-deployed-applications.md
         - href: managing-the-applications-lifecycle/deploy-applications/refactor-an-application.md
@@ -782,6 +789,7 @@
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md
+        - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-env-activity.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-usage-with-audit-logs.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/troubleshoot-the-performance-of-an-application.md
@@ -838,14 +846,30 @@
     - topics:
         - href: setup/limitations.md
     - href: setup/network-requirements.md
+    - topics:
+        - href: setup/mobile-builder-connectivity-requirements.md
     - href: setup/default-configurations.md
     - href: setup/environment-config.md
     - href: setup/lifetime-configure.md
+    # Cache Invalidation Service
+    - href: setup/cache-invalidation/intro.md
+    - topics:
+        - href: setup/cache-invalidation/enable-tls.md        
+        - href: setup/cache-invalidation/installation.md     
+        - href: setup/cache-invalidation/high-availability.md                   
+        - href: setup/cache-invalidation/manage-troubleshoot.md
+    # Log Database Split
+    - href: setup/logging-db/intro.md
+    - topics:
+        - href: setup/logging-db/configure-separate-db.md
+        - href: setup/logging-db/update-applications.md
+        
     - href: setup/unattended-install/intro.md
     - topics:
         - href: setup/unattended-install/config-tool-ref.md
         - href: setup/unattended-install/server-hsconf-ref.md
         - href: setup/unattended-install/osp-tool-ref.md
+    
     # OutSystems on Microsoft Azure
     - href: setup/azure/intro.md
     - topics:
@@ -1338,6 +1362,7 @@
         - href: ref/configuration-tool/tabs/network.md
         - href: ref/configuration-tool/tabs/scheduler.md
         - href: ref/configuration-tool/create-indexes.md
+        - href: ref/configuration-tool/dotnet-connection-strings-sql-server.md
 
     # Errors and Warnings
     - href: ref/errors-and-warnings/intro-errors-and-warnings.md

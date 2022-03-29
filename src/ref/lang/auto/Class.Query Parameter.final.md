@@ -26,6 +26,7 @@ To create a query that uses a search input as query parameter, follow these step
 1. Set the **Name** of the Query Parameter to `QuerySearch`, and make sure its **Data
 Type** is set to `Text`.
 
+
     ![Query parameter properties.](images/name-queryparameter-ss.png)
 
 1. In the **SQL** tab, enter the following query:

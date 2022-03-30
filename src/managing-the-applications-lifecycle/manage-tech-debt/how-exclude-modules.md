@@ -4,7 +4,7 @@ summary: You can exclude classes of modules from tech-debt analysis in Architect
 en_title: How to exclude modules from tech debt analysis  
 ---
 
-# How to exclude modules from tech debt analysis
+# Excluding modules from tech debt analysis
 
 **Architecture Dashboard** provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment.
 
@@ -37,8 +37,8 @@ You can use the following filters to fine-tune your choices, and then sort the r
 * Teams
 * Apps
 * Modules
-* Type
-* Module status
+* Modules status
+* Types
 
 
 ## Batch selection of modules
@@ -51,32 +51,31 @@ To ignore **Forge** components in technical debt analysis:
 
 1. Go to the **Maintenance** tab.
 1. Click **Ignored Modules**.
-1. Select **Forge components** from the **Type** dropdown.
+1. Select **Forge components** from the **Types** dropdown.
     ![Ignore Forge components](images/ignore-forge-components-ad.png)
 1. Click the select all box in the header. 
     This selects all of the components on the current page.
     ![Ignore Forge components](images/bulk-actions-ad.png)
-1. An information area tells you how many modules have been selected on the current page. Click **Select all &lt;n> items on this list** to add **Forge** components on all pages to the selection.
-1. Click **Change to Ignored**. 
-    (Screen shot showing these elements.)
+1. The information area under the filters tells you how many modules have been selected on the current page. Click **Select all &lt;n> items on this list** to add **Forge** components on all pages to the selection.
+    ![Select all components](images/select-all-ad.png)
+
+1. The information area now tells you that all components on all pages have been selected. Click **Change to Ignored**. 
+    ![Select all components](images/change-to-ignored-ad.png)
 1. Click **Change to Ignored** in the popup window that asks you to confirm that you want to ignore all of the selected components, including those beyond the displayed page.
     ![Confirm Ignore Forge components](images/bulk-actions-confirm-ad.png)
-    (Screen shot showing these elements.)
 
 All of the selected components/modules are marked to be ignored during future technical debt evaluations.
 
 
 ## Excluding individual modules
 
-In some cases you may wish to fine-tune your selections. As one example, you may exclude old or discontinued modules as follows:
+In some cases you may wish to fine-tune your selections. As one example, you may exclude old or discontinued modules, as follows:
 
 1. In the **Maintenance** page click **Clear all** if the **Ignored Modules** page shows the results of a previous search.
-    ![Ignored modules page](images/ignored-modules-main-page-ad.png)
 1. Sort the modules by the **Last analyzed on** column (or the **Status changed on** column, depending on what criteria you wish to use).
 1. Click the specific modules to exclude from analysis.
 1. Click **Change to ignored**.
+    ![Ignored modules page](images/individually-ignored-modules-ad.png)
     <div class="info" markdown="1">
     When all modules in an app are changed to **Ignored**, the app itself is also ignored during analysis. In a like manner, if one or more modules of a previously ignored app is changed to **Analyzed** the app itself will also be analyzed.
     </div>
-
-    (Screen shot showing these elements.)

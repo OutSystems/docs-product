@@ -55,12 +55,6 @@ In this example, the user selects a date from the calendar, the date is saved in
 
     ![Create onSelect event for Date Picker](<images/datepicker-clientaction-ss.png>)
 
-    <div class="info" markdown="1">
-
-    The **DateFormat** property only formats the date that appears on the bound input. The date that is thrown on the **OnSelect** event defaults to the server format and can be customized using the [Data Conversion](<../../../../../../ref/lang/auto/builtinfunction.Data Conversion.final.md>) functions.
-
-    </div>
-
 1. To access the date selected by the user, create an **Assign** and set the **DatePicked** to **SelectedDateTime**.
 
     ![Add assign and variable value](<images/datepicker-assign-ss.png>)

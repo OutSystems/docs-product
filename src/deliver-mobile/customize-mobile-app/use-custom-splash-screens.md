@@ -73,20 +73,20 @@ If you are using MABS 4.0 or later, you must use splash screen sizes [based in l
 
 Width%%(px)|Height%%(px)|Default Filename
 ---|---|---
-2732|2732|Default@2x~universal~anyany
-1278|2732|Default@2x~universal~comany
-1334|750|Default@2x~universal~comcom
-2208|2208|Default@3x~universal~anyany
-2208|1242|Default@3x~universal~anycom
-1242|2208|Default@3x~universal~comany
-1334|1334|Default@2x~iphone~anyany
-750|1334|Default@2x~iphone~comany
-1334|750|Default@2x~iphone~comcom
-2208|2208|Default@3x~iphone~anyany
-2208|1242|Default@3x~iphone~anycom
-1242|2208|Default@3x~iphone~comany
-2732|2732|Default@2x~ipad~anyany
-1278|2732|Default@2x~ipad~comany
+2732|2732|`Default@2x~universal~anyany`
+1278|2732|`Default@2x~universal~comany`
+1334|750|`Default@2x~universal~comcom`
+2208|2208|`Default@3x~universal~anyany`
+2208|1242|`Default@3x~universal~anycom`
+1242|2208|`Default@3x~universal~comany`
+1334|1334|`Default@2x~iphone~anyany`
+750|1334|`Default@2x~iphone~comany`
+1334|750|`Default@2x~iphone~comcom`
+2208|2208|`Default@3x~iphone~anyany`
+2208|1242|`Default@3x~iphone~anycom`
+1242|2208|`Default@3x~iphone~comany`
+2732|2732|`Default@2x~ipad~anyany`
+1278|2732|`Default@2x~ipad~comany`
 
 #### MABS 3.3
 

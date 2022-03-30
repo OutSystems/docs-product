@@ -9,7 +9,7 @@ A **Static Entity** consists of a set of named values. Think of Static Entities 
 
 The only action available for the Static Entities is the **Get&lt;StaticEntity&gt;** action, because OutSystems manages the data persistence for you.
 
-When modeling your data, keep in mind that Static Entities can only contain foreign keys of other Static Entities. For more information check out [Entity Relationships](relationship\intro.md).
+When modeling your data, keep in mind that Static Entities can only contain foreign keys of other Static Entities. For more information check out [Entity Relationships](relationship/intro.md).
 
 
 ## Create a Static Entity

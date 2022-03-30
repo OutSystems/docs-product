@@ -1918,3 +1918,15 @@
             https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/
         - "OutSystems testing guidelines":
             https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines 
+
+# Setting up OutSystems
+
+- setup/cache-invalidation/intro.md:
+    - setup/cache-invalidation/enable-tls.md
+    - setup/cache-invalidation/manage-troubleshoot.md
+    - setup/cache-invalidation/installation.md
+    - setup/cache-invalidation/high-availability.md
+
+- setup/logging-db/intro.md:
+    - setup/logging-db/configure-separate-db.md
+    - setup/logging-db/update-applications.md

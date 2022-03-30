@@ -842,6 +842,7 @@
 - topics:
     - href: setup/possible-setups/intro.md
     - topics:
+        - href: setup/possible-setups/ha-scalability/intro.md
         - href: setup/possible-setups/cloud-architecture.md
     - href: setup/system-requirements.md
     - topics:

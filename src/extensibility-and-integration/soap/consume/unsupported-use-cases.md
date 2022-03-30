@@ -385,7 +385,7 @@ Currently there is no generic workaround available to overcome this unsupported 
 
 ## Exporting SOAP definition files  { #exporting }
 
-To implement a workaround first use the **Export Definition Files** feature of **Service Studio** to download the definition files to a local drive so that all relevant files can be easily opened and edited by following the procedure in [Exporting definition files](export-soap-definition-files.md#exportingdefinitionfiles).
+To implement a workaround first use the **Export Definition Files** feature of **Service Studio** to download the definition files to a local drive so that all relevant files can be easily opened and edited by following the procedure in [Exporting definition files](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Export_definition_files_in_a_SOAP_web_service#Exporting_definition_files).
 
 <div class="info" markdown="1">
 During the export process the schema location is automatically changed to the relative path on the local drive. There is no need to manually change the schema location attribute in the definition files.

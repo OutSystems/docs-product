@@ -41,7 +41,7 @@ Structure used in input or output parameters of consumed SOAP Web Service Method
 <td>No</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

@@ -41,7 +41,7 @@ Consumed Web Service based on the SOAP 1.1/1.2 protocol.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Authentication</th>
 </tr>
 <tr>
@@ -65,7 +65,7 @@ Consumed Web Service based on the SOAP 1.1/1.2 protocol.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

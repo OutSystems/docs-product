@@ -44,7 +44,7 @@ A container that opens when the user taps an element or a region. You can use it
 <td>"popover"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

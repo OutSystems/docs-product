@@ -34,7 +34,7 @@ Exposed Web Service based on the SOAP protocol.
 <td></td>
 <td>Useful for documentation purpose.<br/>The maximum size of this property is 2000 characters.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

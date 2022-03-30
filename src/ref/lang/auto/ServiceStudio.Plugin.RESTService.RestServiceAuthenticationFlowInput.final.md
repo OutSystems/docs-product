@@ -48,7 +48,7 @@ Input parameter of the exposed REST API authentication action (Username or Passw
 <td>Yes</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

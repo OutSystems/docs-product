@@ -58,7 +58,7 @@ Reserves space in your block for filling when the block is used.
 <td>No</td>
 <td>This is useful to understand the placeholders design in the web block regarding refreshing their content.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

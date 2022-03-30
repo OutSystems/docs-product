@@ -78,7 +78,7 @@ Provides a button that users can click or tap to trigger an action, submit data 
 <td>No</td>
 <td>In your web screens or web blocks you can define one default button or link.<br/>When you define a Button or Link widget as default, it means that pressing the <code>ENTER</code> key in an Input, Input Password, Select or Check Box widget has the same effect as pressing the button or the link.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>
@@ -95,7 +95,7 @@ Provides a button that users can click or tap to trigger an action, submit data 
 <td></td>
 <td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">On Click</th>
 </tr>
 <tr>

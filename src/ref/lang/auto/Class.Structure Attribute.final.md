@@ -76,7 +76,7 @@ Stores part of the information that concerns a structure. Examples of attributes
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">JSON Properties</th>
 </tr>
 <tr>

@@ -101,7 +101,7 @@ An exposed entity can have its records protected from modifications by setting t
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

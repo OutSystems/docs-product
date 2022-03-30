@@ -78,7 +78,7 @@ The supported image formats are GIF, JPEG, and PNG. Please note that the images 
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

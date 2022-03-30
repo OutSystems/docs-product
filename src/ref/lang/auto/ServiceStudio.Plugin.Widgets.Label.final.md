@@ -80,7 +80,7 @@ Both Label and Text widgets can be used as a caption for the inputs. However, th
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

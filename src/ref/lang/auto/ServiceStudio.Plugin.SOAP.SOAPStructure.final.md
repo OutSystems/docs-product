@@ -41,7 +41,7 @@ Structure belonging to a consumed SOAP Web Service.
 <td>No</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

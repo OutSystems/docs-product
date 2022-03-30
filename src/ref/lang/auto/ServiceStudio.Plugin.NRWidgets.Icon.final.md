@@ -57,7 +57,7 @@ Shows an icon from a predefined set of icons for common use and content. It allo
 <td>"icon"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

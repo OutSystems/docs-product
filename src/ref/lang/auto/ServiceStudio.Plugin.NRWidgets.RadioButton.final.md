@@ -60,7 +60,7 @@ Check the related topic at the bottom of the page for more guidance.
 <td>"radio-button"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

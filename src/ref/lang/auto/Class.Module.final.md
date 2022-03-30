@@ -69,7 +69,7 @@ Applies to Traditional Web Apps only.
 <td>Default Icon</td>
 <td>The module icon is also displayed in the "Manage Dependencies" dialog box.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Web</th>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ Applies to Traditional Web Apps only.
 <td></td>
 <td>Click on "..." to edit the property value.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Validation Messages</th>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ Applies to Traditional Web Apps only.
 <td>"Email expected!"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Upgrade Messages</th>
 </tr>
 <tr>
@@ -225,7 +225,7 @@ Applies to Traditional Web Apps only.
 <td>"Your application needs to be updated. Unsaved data will be lost. Tap here to update."</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

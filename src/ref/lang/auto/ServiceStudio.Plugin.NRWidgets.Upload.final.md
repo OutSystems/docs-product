@@ -75,7 +75,7 @@ Notes:
 <td>"upload"</td>
 <td>When Accept has the value Image, an additional class 'upload-image-withoverlay' is added to this property.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

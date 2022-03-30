@@ -51,7 +51,7 @@ Two-state toggle control which allows users to select between two options. You c
 <td>"switch"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

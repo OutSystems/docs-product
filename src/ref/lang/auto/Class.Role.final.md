@@ -51,7 +51,7 @@ When an exposed Role is checked, it raises an exception under the **transaction*
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

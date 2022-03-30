@@ -67,7 +67,7 @@ This widget is available in Reactive Web Apps.
 <td>"table-row"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

@@ -137,7 +137,7 @@ All of the registered users are displayed in an editable table. The Editable Tab
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

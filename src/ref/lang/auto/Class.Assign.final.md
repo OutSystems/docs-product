@@ -43,7 +43,7 @@ OutSystems assigns by value, with some exceptions for assignment by reference. T
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Assignments</th>
 </tr>
 <tr>

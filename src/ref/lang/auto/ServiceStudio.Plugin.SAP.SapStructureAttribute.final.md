@@ -76,7 +76,7 @@ Attribute of structure used in input and output arguments of SAP remote function
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

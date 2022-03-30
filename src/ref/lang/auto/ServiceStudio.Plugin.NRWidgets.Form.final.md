@@ -39,7 +39,7 @@ The layout of this widget is flexible, allowing you to organize the widgets insi
 <td>"form card"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

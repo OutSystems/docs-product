@@ -67,7 +67,7 @@ In case the execution of the Producer and Consumer modules are under different U
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

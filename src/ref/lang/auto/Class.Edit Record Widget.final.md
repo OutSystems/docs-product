@@ -100,7 +100,7 @@ Use the [Form widget](<ServiceStudio.Plugin.Widgets.Form.final.md>) instead of t
 <td>"EditRecord_Value"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

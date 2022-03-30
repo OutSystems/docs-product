@@ -67,7 +67,7 @@ If the button belongs to a form with some input fields, the button submits the i
 <td>"btn"</td>
 <td>The first button dragged to the screen or to the form is going to have an additional style class 'btn-primary'.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

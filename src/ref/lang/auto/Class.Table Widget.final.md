@@ -64,7 +64,7 @@ Note that [Row](Class.Row Widget.final.md) and [Cell](Class.Cell Widget.final.md
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

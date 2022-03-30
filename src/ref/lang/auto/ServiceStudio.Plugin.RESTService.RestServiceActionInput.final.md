@@ -48,7 +48,7 @@ Input parameter of an exposed REST API Method.
 <td>Yes</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

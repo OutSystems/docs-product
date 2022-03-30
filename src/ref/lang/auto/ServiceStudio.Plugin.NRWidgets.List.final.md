@@ -75,7 +75,7 @@ When List reaches the scroll threshold value, the app requests new records and t
 <td>"list list-group"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

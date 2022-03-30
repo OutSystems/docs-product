@@ -49,7 +49,7 @@ New Consumed SOAP Web Service elements created in OutSystems 11 modules follow t
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

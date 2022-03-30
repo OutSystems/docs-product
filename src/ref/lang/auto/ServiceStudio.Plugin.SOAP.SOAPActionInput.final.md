@@ -48,7 +48,7 @@ Input parameter of a consumed SOAP Web Service method.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

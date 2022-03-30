@@ -116,7 +116,7 @@ Changing the `Close On` property to listen to events from another entity only ha
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">End-User Information</th>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ Changing the `Close On` property to listen to events from another entity only ha
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>
@@ -157,7 +157,7 @@ Changing the `Close On` property to listen to events from another entity only ha
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Roles</th>
 </tr>
 <tr>

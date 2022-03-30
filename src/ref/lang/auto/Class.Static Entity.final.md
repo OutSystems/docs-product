@@ -90,7 +90,7 @@ A static entity is an entity that has static data associated to it. This static 
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

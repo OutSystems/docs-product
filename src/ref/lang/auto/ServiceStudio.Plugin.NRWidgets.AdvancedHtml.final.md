@@ -37,7 +37,7 @@ Allows you to add a custom HTML element to the screen. You can use nested HTML E
 <td>span</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

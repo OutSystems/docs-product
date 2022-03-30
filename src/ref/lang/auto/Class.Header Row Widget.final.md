@@ -44,7 +44,7 @@ For example, in a Table Records Widget where you added two attributes, this is t
 </tr>
 </thead>
 <tbody>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

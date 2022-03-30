@@ -49,7 +49,7 @@ This value can be customized at runtime in the environment management console.</
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Basic Authentication</th>
 </tr>
 <tr>
@@ -66,7 +66,7 @@ This value can be customized at runtime in the environment management console.</
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

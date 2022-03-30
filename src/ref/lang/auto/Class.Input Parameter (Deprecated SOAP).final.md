@@ -47,7 +47,7 @@ helpids: 7011, 30100
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

@@ -41,7 +41,7 @@ Converts a Record List to an Excel file. You can use the output file for downloa
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

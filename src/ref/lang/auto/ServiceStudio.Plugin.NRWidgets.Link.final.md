@@ -58,7 +58,7 @@ Displays a hyperlink that users can click or tap to trigger an action, submit da
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

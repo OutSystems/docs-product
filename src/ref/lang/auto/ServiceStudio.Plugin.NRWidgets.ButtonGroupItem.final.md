@@ -62,7 +62,7 @@ When you drag the Button Group widget into the Main Content area of your applica
 <td>"button-group-item"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

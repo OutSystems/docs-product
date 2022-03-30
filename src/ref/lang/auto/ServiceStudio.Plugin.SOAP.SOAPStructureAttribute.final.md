@@ -69,7 +69,7 @@ Structure attribute belonging to a consumed SOAP Web Service.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

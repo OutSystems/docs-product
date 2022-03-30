@@ -58,7 +58,7 @@ Set of buttons from which the user can select a single option.
 <td>"button-group"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

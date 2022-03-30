@@ -55,7 +55,7 @@ Input parameter of a consumed REST API Method.
 <td>No</td>
 <td>Check [Redacting information from REST API logs](../../../extensibility-and-integration/rest/consume-rest-apis/redact-info-from-logs.md).</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

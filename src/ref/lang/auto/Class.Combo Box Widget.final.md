@@ -108,7 +108,7 @@ The list of possible values can be an Attribute of an Entity, an Attribute of a 
 <td>Yes</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>
@@ -125,7 +125,7 @@ The list of possible values can be an Attribute of an Entity, an Attribute of a 
 <td></td>
 <td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">On Change</th>
 </tr>
 <tr>
@@ -135,7 +135,7 @@ The list of possible values can be an Attribute of an Entity, an Attribute of a 
 <td></td>
 <td>It might be necessary to specify additional input arguments.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Special List</th>
 </tr>
 <tr>

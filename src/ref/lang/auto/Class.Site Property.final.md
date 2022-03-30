@@ -48,7 +48,7 @@ Global variable that has a constant value, or a value that does not change often
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

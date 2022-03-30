@@ -55,7 +55,7 @@ User interface with which end users interact.
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ User interface with which end users interact.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Events</th>
 </tr>
 <tr>
@@ -103,7 +103,7 @@ User interface with which end users interact.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Required Scripts</th>
 </tr>
 <tr>
@@ -113,7 +113,7 @@ User interface with which end users interact.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Roles</th>
 </tr>
 <tr>

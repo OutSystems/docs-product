@@ -166,7 +166,7 @@ For more information about the Table Records widget properties, see [Table Recor
 <td>"TableRecords_EvenLine"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

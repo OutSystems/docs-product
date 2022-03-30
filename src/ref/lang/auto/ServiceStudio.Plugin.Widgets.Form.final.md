@@ -85,7 +85,7 @@ All enabled inputs inside the form will have the following behaviors:
 <td>True</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

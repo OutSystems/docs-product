@@ -57,7 +57,7 @@ Allows the user to browse and select a local file to be uploaded into the applic
 <td>Yes</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

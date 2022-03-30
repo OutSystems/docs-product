@@ -101,7 +101,7 @@ With the Dropdown Widget you can implement two types of lists:
 <td>"dropdown"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

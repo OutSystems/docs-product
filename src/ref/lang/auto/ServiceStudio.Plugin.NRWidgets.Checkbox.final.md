@@ -51,7 +51,7 @@ Check box field where the user can enable or disable an option. The value must b
 <td>"checkbox"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

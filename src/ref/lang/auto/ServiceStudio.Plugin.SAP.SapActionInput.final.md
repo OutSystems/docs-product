@@ -55,7 +55,7 @@ Input parameter of an imported SAP remote function.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

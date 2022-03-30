@@ -55,7 +55,7 @@ User interface that end users interact with.
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ User interface that end users interact with.
 <td></td>
 <td>Click on "..." to edit the property value.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Roles</th>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ User interface that end users interact with.
 <td>Anonymous (unselected)<br/>Registered<br/>ApplicationUser</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

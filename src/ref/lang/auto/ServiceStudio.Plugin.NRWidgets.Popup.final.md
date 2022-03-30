@@ -44,7 +44,7 @@ A floating container/window above other screen content. Popup is a modal contain
 <td>"popup-dialog"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

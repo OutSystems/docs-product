@@ -91,7 +91,7 @@ A Theme cannot be exposed when:
 <td></td>
 <td>Click on "..." to edit the property value.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Grid</th>
 </tr>
 <tr>
@@ -143,7 +143,7 @@ A Theme cannot be exposed when:
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Web Blocks</th>
 </tr>
 <tr>
@@ -195,7 +195,7 @@ A Theme cannot be exposed when:
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Images</th>
 </tr>
 <tr>

@@ -48,7 +48,7 @@ To insert a new List Action, select the List Item and then click on the toolbar 
 <td>"list-item-action"</td>
 <td>The first list action added to the Right Actions/Left Actions list item placeholder will have an additional style class 'list-item-action-primary'; subsequent list actions will have an additional style class 'list-item-action-default'.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

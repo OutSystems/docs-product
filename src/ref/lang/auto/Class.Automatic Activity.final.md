@@ -68,7 +68,7 @@ When you're editing your automatic activity flow, all of the elements available 
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

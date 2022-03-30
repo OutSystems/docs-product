@@ -114,7 +114,7 @@ To load data when the screen loads in Traditional Web Apps, place an Aggregate i
 <td>At start</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Events</th>
 </tr>
 <tr>

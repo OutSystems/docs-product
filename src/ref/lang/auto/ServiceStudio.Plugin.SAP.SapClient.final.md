@@ -41,7 +41,7 @@ Defines a connection to a SAP system.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Default Connection Settings</th>
 </tr>
 <tr>
@@ -93,7 +93,7 @@ Defines a connection to a SAP system.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

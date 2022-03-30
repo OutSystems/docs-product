@@ -79,7 +79,7 @@ Multi-line field to hold text typed by the user. The value must be stored in a T
 <td>"form-control"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

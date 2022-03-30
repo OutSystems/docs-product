@@ -90,7 +90,7 @@ To create a new in an app, follow these steps in Service Studio:
             <strong>Note:</strong> This icon will <em>not</em> be used as the mobile app icon; 
             to change the app icon check <a href="http://www.outsystems.com/DocRouter/Router.aspx?PlatformToolName=ServiceStudio&amp;PlatformVersionNumber=10.0&amp;HelpId=30112">Modify the App Icon</a>.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Defaults</th>
 </tr>
 <tr>
@@ -135,7 +135,7 @@ To create a new in an app, follow these steps in Service Studio:
 <td>10</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Validation Messages</th>
 </tr>
 <tr>
@@ -208,7 +208,7 @@ To create a new in an app, follow these steps in Service Studio:
 <td>"Email expected!"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Upgrade Messages</th>
 </tr>
 <tr>
@@ -253,7 +253,7 @@ To create a new in an app, follow these steps in Service Studio:
 <td>"Your application needs to be updated. Unsaved data will be lost. Tap here to update."</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>
@@ -277,7 +277,7 @@ To create a new in an app, follow these steps in Service Studio:
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Required Scripts</th>
 </tr>
 <tr>

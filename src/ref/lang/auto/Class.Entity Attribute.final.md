@@ -92,7 +92,7 @@ An Entity Attribute represents a column in a database table.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

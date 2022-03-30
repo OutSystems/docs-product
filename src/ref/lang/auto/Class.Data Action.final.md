@@ -54,7 +54,7 @@ Don't perform login operations in Data Actions expecting to use the GetUserId() 
 <td>At start</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Events</th>
 </tr>
 <tr>

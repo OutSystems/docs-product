@@ -29,7 +29,7 @@ Use the label numbers to arrange the evaluation order (right-click on a connecto
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Conditions</th>
 </tr>
 <tr>

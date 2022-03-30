@@ -53,7 +53,7 @@ You can use it for example to display an entity record.
 <td>"list-item"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

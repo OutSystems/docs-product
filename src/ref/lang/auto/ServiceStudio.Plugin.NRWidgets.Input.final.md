@@ -81,7 +81,7 @@ At runtime, the value typed by the user is validated against the variable data t
 <td>"form-control"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

@@ -117,7 +117,7 @@ The supported image formats are GIF, JPEG, PNG and SVG. Please note that the ima
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

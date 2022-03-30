@@ -34,7 +34,7 @@ Method of a Consumed SOAP Web Service.
 <td></td>
 <td>Useful for documentation purpose.<br/>The maximum size of this property is 2000 characters.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

@@ -24,12 +24,12 @@ To change the default icon and use your own icon image, providing multiple versi
 
 1. In the Extensibility Configurations value window, you must create a JSON object (if not created) where you can specify all the information about the icons to use. If not yet specified, start by indicating the resource file that contains the icons.
 
-    ![](images/image3.PNG)
+    ![](images/image3.png)
 
 1. Add the “icons” tag to the JSON to indicate that you want to use your own icons for your application.
 For each mobile platform, specify the size (iOS) and density (Android) and the correspondent icon location in the ZIP folders. Ensure that you define icons for all size and densities available, otherwise, you'll get an error (the example below is just for reference). Check the [JSON template for the icons](<#icons-json-template>) to avoid mistakes.
 
-    ![](images/image5.PNG)
+    ![](images/image5.png)
 
 1. To make this change available for the users, [publish and generate a new mobile application](<../generate-distribute-mobile-app/intro.md>) and distribute it.
 

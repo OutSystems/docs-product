@@ -60,7 +60,7 @@ Read more about security and compliance in the following FAQ sections:
 
 ## Permissions
 
-The permissions that IT users have while using Architecture Dashboard with an infrastructure, depend on the [role and permissions set in LifeTime](..\manage-it-teams\about-permission-levels.md#permissions) for the **code-analysis environment** of that infrastructure.
+The permissions that IT users have while using Architecture Dashboard with an infrastructure, depend on the [role and permissions set in LifeTime](../manage-it-teams/about-permission-levels.md#permissions) for the **code-analysis environment** of that infrastructure.
 
 <div class="info" markdown="1">
 

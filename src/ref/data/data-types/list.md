@@ -87,7 +87,7 @@ When the FilterProjects action is called, you have to define which list to set a
 
 1. In the **Mapping to Text** section, you have to define which attribute to map. Select the **Name** attribute from the dropdown.
 
-    ![Action 'FilterProjects' properties.](images/FilterProjects-map-ss.png)
+    ![Action 'FilterProjects' properties.](images/filterprojects-map-ss.png)
 
 
 ### How to add an element to a list input parameter
@@ -96,11 +96,11 @@ Instead of mapping from another list, you can add elements manually. Follow thes
 
 1. Click **+** to the left of **NamesList** to create a list with one element.
 
-    ![Action 'FilterProjects' properties, hovering the + to the left of the argument.](images/FilterProjects-plus-ss.png)
+    ![Action 'FilterProjects' properties, hovering the + to the left of the argument.](images/filterprojects-plus-ss.png)
 
 1. In the element field, enter the value for the first element of the list.
 
-    ![Action 'FilterProjects' properties, with element 0 expanded](images/FilterProjects-0arg-ss.png)
+    ![Action 'FilterProjects' properties, with element 0 expanded](images/filterprojects-0arg-ss.png)
 
 1. To add more elements, repeat steps 1 and 2.
 

@@ -646,7 +646,9 @@
         - href: extensibility-and-integration/soap/consume/intro.md
         - topics:
             - href: extensibility-and-integration/soap/consume/consume-web-service.md
+            - href: extensibility-and-integration/soap/consume/export-soap-definition-files.md
             - href: extensibility-and-integration/soap/consume/configure-auth.md
+            - href: extensibility-and-integration/soap/consume/refresh-web-service.md
             - href: extensibility-and-integration/soap/consume/configure-runtime.md
             - href: extensibility-and-integration/soap/consume/advanced-extensibility.md
             - topics:
@@ -788,6 +790,7 @@
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md
+        - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-env-activity.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-usage-with-audit-logs.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/troubleshoot-the-performance-of-an-application.md
@@ -844,14 +847,30 @@
     - topics:
         - href: setup/limitations.md
     - href: setup/network-requirements.md
+    - topics:
+        - href: setup/mobile-builder-connectivity-requirements.md
     - href: setup/default-configurations.md
     - href: setup/environment-config.md
     - href: setup/lifetime-configure.md
+    # Cache Invalidation Service
+    - href: setup/cache-invalidation/intro.md
+    - topics:
+        - href: setup/cache-invalidation/enable-tls.md        
+        - href: setup/cache-invalidation/installation.md     
+        - href: setup/cache-invalidation/high-availability.md                   
+        - href: setup/cache-invalidation/manage-troubleshoot.md
+    # Log Database Split
+    - href: setup/logging-db/intro.md
+    - topics:
+        - href: setup/logging-db/configure-separate-db.md
+        - href: setup/logging-db/update-applications.md
+        
     - href: setup/unattended-install/intro.md
     - topics:
         - href: setup/unattended-install/config-tool-ref.md
         - href: setup/unattended-install/server-hsconf-ref.md
         - href: setup/unattended-install/osp-tool-ref.md
+    
     # OutSystems on Microsoft Azure
     - href: setup/azure/intro.md
     - topics:

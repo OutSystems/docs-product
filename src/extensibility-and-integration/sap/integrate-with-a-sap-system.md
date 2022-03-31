@@ -60,6 +60,8 @@ On the **Logic** tab, go to **Integrations** > **SAP**. OutSystems does the foll
 
 * Creates the Structures to hold the parameters
 
+    ![Imported remote functions](images/sapintegrate-importedfunc-ss.png)
+
 You can now use the newly created actions in your application the same way you use the remaining Server Actions.
 
 ### SAP Remote Functions Flow

@@ -163,6 +163,7 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integ
 ### IBM Database
 
 * DB2 for iSeries V6R1 or higher
+* **OutSystems** supports integration with DB2 databases hosted in iSeries machines only. It does not support integration with DB2 databases hosted in Unix, Linux, or Windows.
 
 <div class="info" markdown="1">
 

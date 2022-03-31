@@ -5,6 +5,12 @@ summary: The Notification UI Pattern is a contextual short message that provides
 
 # Notification
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.2, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+
+</div>
+
 The Notification UI Pattern is a contextual short message that provides important information to the user, such as app crashes, new updates, task reminders, and new messages.
 
 **How to use the Notification UI Pattern**

@@ -37,7 +37,7 @@ You can use the following filters to fine-tune your choices, and then sort the r
 * Teams
 * Apps
 * Modules
-* Modules status
+* Module status
 * Types
 
 

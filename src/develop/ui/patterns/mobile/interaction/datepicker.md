@@ -3,7 +3,13 @@ tags: runtime-mobileandreactiveweb;
 summary: Date Picker allows the end user to select a single or a range of dates using a calendar.
 ---
 
-# How to use the Date Picker UI Pattern
+# Date Picker UI Pattern
+
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.2, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+
+</div>
 
 You can use the Date Picker UI Pattern to allow users to select a single date using a calendar. The Date Picker Pattern is based on the [flatpickr library](https://flatpickr.js.org/). For more advanced options, you can refer to this library.
 

@@ -200,10 +200,7 @@
                     - href: develop/ui/patterns/mobile/interaction/animate.md
                     - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
                     - href: develop/ui/patterns/mobile/interaction/carousel.md
-                    - href: develop/ui/patterns/mobile/interaction/datepicker/intro.md
-                    - topics:
-                        - href: develop/ui/patterns/mobile/interaction/datepicker/datepicker.md
-                        - href: develop/ui/patterns/mobile/interaction/datepicker/datepicker-advanced.md
+                    - href: develop/ui/patterns/mobile/interaction/datepicker/datepicker.md
                     - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
                     - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
                     - href: develop/ui/patterns/mobile/interaction/floatingactions.md

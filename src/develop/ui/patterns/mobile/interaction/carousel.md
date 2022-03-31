@@ -5,6 +5,12 @@ summary: Displays multiple items in a horizontal slide.
 
 # Carousel
 
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.2, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+
+</div>
+
 You can use the Carousel UI Pattern to display multiple items in a horizontal slide.  The Carousel Pattern optimizes screen space by displaying only a few images from a larger collection which you can view using the navigation controls. 
 
 ![Example Carousel](images/carousel-example.png)

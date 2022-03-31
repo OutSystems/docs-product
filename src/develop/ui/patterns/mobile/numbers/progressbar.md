@@ -7,7 +7,7 @@ summary: Progress Bar displays the progress of a task by incrementing values in 
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.1, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+If you are using an OutSystems UI version lower than 2.8.1, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
 
 </div>
 

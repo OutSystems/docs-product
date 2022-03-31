@@ -5,7 +5,7 @@ helpids: 0
 
 # Query Parameter
 
-The SQL tool doesn't have direct access to the outside scope. Query parameters allow you to access data from the outer scope. To have access to data coming from the outer scope, you need to define the input parameters and their data types.
+The SQL tool doesn't have direct access to data from outside its scope. This means that to use input parameters in a SQL query, you need to define query parameters and their data types. 
 
 ## How to use
 
@@ -49,6 +49,15 @@ the query. In this example, there is already a structure named EmployeeStructure
 1. Click **Test** to test the query.
 
 1. In the **Test Inputs** tab, set some value for the QuerySearch parameter, then click **Test** again to make sure the filter is working.
+
+1. Click **Close** to return to the flow. 
+
+1. Select the **SQL** node in the action flow, and in the properties, set the **QuerySearch** to the search input variable. In this example, there is a local variable named SearchFilter, which keeps the value entered by the user in a Search widget.
+
+    ![Set the QuerySearch to the SearchFilter local variable.](images/set-parameter-value-ss.png)
+
+1. Publish the Module using the 1-Click Publish button, then test it in the browser.
+
 
 
 ## Properties

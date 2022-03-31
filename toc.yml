@@ -1637,6 +1637,8 @@
                 - href: ref/apis/lifetime-deployment/examples/api-new-app-version.md
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
                 - href: ref/apis/lifetime-deployment/examples//api-rollback-mobile-app.md
+                - href: ref/apis/lifetime-deployment/examples//api-register-env.md
+                - href: ref/apis/lifetime-deployment/examples//api-unregister-env.md
 
         - href: ref/apis/auto/lifetime-sdk.final.md
         - href: ref/apis/auto/lifetime-services-api.final.md

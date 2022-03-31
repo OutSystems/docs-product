@@ -7,7 +7,7 @@ summary: Tooltip dynamically displays simple informative content on end user int
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+If you are using an OutSystems UI version lower than 2.8.0, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
                             
 </div>
 

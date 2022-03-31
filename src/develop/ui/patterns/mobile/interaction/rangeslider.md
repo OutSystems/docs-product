@@ -7,7 +7,7 @@ summary: Allows the user select a single value between two range values.
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version between 2.3.0 and 2.8.1, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+If you are using an OutSystems UI version between 2.3.0 and 2.8.1, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
                             
 </div>
 

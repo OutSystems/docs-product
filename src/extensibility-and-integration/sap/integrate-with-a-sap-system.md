@@ -42,7 +42,7 @@ OutSystems allows you to fetch or update data in a SAP system and use it in your
 
 Once you've established a connection to SAP, you can now import SAP functions to use in your application. The remote functions are grouped by business use case and SAP functionality. 
 
-1. Select the SAP functions you want to use in your app. 
+1. On the **Select remote functions** screen, select the SAP functions you want to use in your app.
 
     Clicking on the function name displays the description, input, and output parameter details on the right-hand panel. 
 

@@ -7,7 +7,7 @@ summary: Displays content in a specific set of columns, configurable per device 
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.1, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+If you are using an OutSystems UI version lower than 2.8.1, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
                             
 </div>
 

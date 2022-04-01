@@ -39,7 +39,7 @@ To create a custom string, you can set the **disableInputOverride** option to Tr
 
 ![](<images/datepicker-advanced-custom-result.png>)
 
-<div class ="info" markdown="1">
+<div class="info" markdown="1">
 
 When using the **disableInputOverride** as True with a custom Date Format, you must set the data format yourself for the **OnSelect** event using the Data [Conversion functions](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Data_Conversion). Otherwise, it will change to the default server format when selecting a date.
 

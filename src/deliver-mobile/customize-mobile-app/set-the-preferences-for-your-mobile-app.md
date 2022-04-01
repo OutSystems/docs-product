@@ -15,17 +15,17 @@ To specify the preferences for your mobile app:
 
 2. In the Extensibility Configurations value window, you must create a JSON object (if not created) where you can specify the preferences. Add the “preferences” tag to the JSON to indicate that you will set preferences for the app.
 
-    ![](images/image2.PNG)
+    ![](images/image2.png)
 
 3. Introduce the preferences you want from the [available preferences](https://cordova.apache.org/docs/en/latest/config_ref/#preference) in the JSON value: 
 
     1. Each preference you want to define is represented as a name/value pair, where the name is the preference name and the value (specified as a string) is its parameter. The preference name is case-sensitive. Check the  preferences JSON template  to avoid mistakes. 
 
-        ![](images/image4.PNG)
+        ![](images/image4.png)
 
     2. You can set a preference to work only for a target mobile platform or apply it to all. Be aware that some [preferences may not work on every mobile platform](https://cordova.apache.org/docs/en/latest/config_ref/#preference). 
 
-        ![](images/image3_2.PNG)
+        ![](images/image3_2.png)
 
 4. To make this change available for the users, [publish and generate a new mobile application](<../generate-distribute-mobile-app/intro.md>) and distribute it. 
 

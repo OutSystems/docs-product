@@ -55,7 +55,12 @@
             - href: develop/data/query/calculated-attribute-create.md
             - href: develop/data/query/distinct.md
             - href: develop/data/query/sql.md
-
+        - href: develop/data/hipaa/intro.md
+        - topics:
+            - href: develop/data/hipaa/encrypt-data-hipaa.md
+            - href: develop/data/hipaa/search-encrypted.md
+            - href: develop/data/hipaa/decrypt-data-hipaa.md
+        - href: develop/data/secure-the-data-of-your-mobile-apps.md
         - href: develop/data/download-file-browser.md
         - href: develop/data/excel-bootstrap.md
         - href: develop/data/structure-create-use.md
@@ -236,7 +241,6 @@
                     - href: develop/ui/patterns/mobile/numbers/iconbadge.md
                     - href: develop/ui/patterns/mobile/numbers/progressbar.md
                     - href: develop/ui/patterns/mobile/numbers/progresscircle.md
-                    - href: develop/ui/patterns/mobile/numbers/progresscirclefraction.md
                     - href: develop/ui/patterns/mobile/numbers/rating.md
             - topics:
                 - href: develop/ui/patterns/mobile/utilities/intro.md
@@ -470,7 +474,7 @@
             - href: develop/security/user-roles/validate-permissions.md
         - href: develop/security/restrict-access-to-an-internal-network.md
         - href: develop/security/secure-http-requests.md
-        - href: develop/security/secure-the-data-of-your-mobile-apps.md
+        - href: develop/security/secure-cookies-enable-secure-session.md
         
     # Troubleshooting Applications
     - href: develop/troubleshoot/intro.md
@@ -499,6 +503,8 @@
     - href: develop/seo/intro.md
     - topics:
         - href: develop/seo/indexing.md
+    # SEO Trad Web
+    - href: develop/seo/seo-friendly-urls.md
     # Testing
     - href: develop/testing/intro.md
     - topics:
@@ -572,16 +578,6 @@
             - href: extensibility-and-integration/artificial-intelligence/chatbot/guide-azure-services.md
             - href: extensibility-and-integration/artificial-intelligence/chatbot/reference.md
         - href: extensibility-and-integration/artificial-intelligence/azure-reference.md
-        - href: extensibility-and-integration/artificial-intelligence/ml-builder/intro.md
-        - topics:
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/getting-started.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/creating-model.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/implement-model.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/data-considerations.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/model-performance.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/release-notes.md
-            - href: extensibility-and-integration/artificial-intelligence/ml-builder/compliance-legal-faq.md
-
 
     - href: extensibility-and-integration/mobile-plugins/intro.md
     - topics:
@@ -603,7 +599,6 @@
 
         - href: extensibility-and-integration/javascript/web/intro.md
         - topics:
-            - href: extensibility-and-integration/javascript/web/run-js-code.md
             - href: extensibility-and-integration/javascript/web/handle-errors.md
 
     #Integration Builder
@@ -661,6 +656,7 @@
         - href: extensibility-and-integration/soap/consume/intro.md
         - topics:
             - href: extensibility-and-integration/soap/consume/consume-web-service.md
+            - href: extensibility-and-integration/soap/consume/export-soap-definition-files.md
             - href: extensibility-and-integration/soap/consume/configure-auth.md
             - href: extensibility-and-integration/soap/consume/refresh-web-service.md
             - href: extensibility-and-integration/soap/consume/configure-runtime.md
@@ -743,6 +739,8 @@
     - href: extensibility-and-integration/external-database/intro.md
     - topics:
         - href: extensibility-and-integration/external-database/integrate-external-db-ib.md
+        - topics:
+               - href: extensibility-and-integration/external-database/mongo-db.md
         - href: extensibility-and-integration/external-database/connect-external-db.md
     - href: extensibility-and-integration/configure-send-emails.md
 
@@ -759,12 +757,15 @@
         - href: managing-the-applications-lifecycle/deploy-applications/deployment-plans.md
         - href: managing-the-applications-lifecycle/deploy-applications/tp-configure-site-properties-during-deploy.md
         - href: managing-the-applications-lifecycle/deploy-applications/configure-application-settings-after-deployment.md
+        - topics:
+            - href: managing-the-applications-lifecycle/deploy-applications/apply-configurations.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-an-application-with-dependencies.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-a-single-module.md
         - href: managing-the-applications-lifecycle/deploy-applications/plan-a-deployment-for-the-operations-team.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-in-a-short-deployment-window.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-to-an-environment-with-applications-with-errors.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-an-app-externaldb.md
+        - href: managing-the-applications-lifecycle/deploy-applications/balanced-app-deploy.md
         - href: managing-the-applications-lifecycle/deploy-applications/apply-a-hotfix.md
         - href: managing-the-applications-lifecycle/deploy-applications/repair-deployed-applications.md
         - href: managing-the-applications-lifecycle/deploy-applications/refactor-an-application.md
@@ -812,6 +813,7 @@
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md
+        - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-env-activity.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-usage-with-audit-logs.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/troubleshoot-the-performance-of-an-application.md
@@ -863,17 +865,34 @@
 - topics:
     - href: setup/possible-setups/intro.md
     - topics:
+        - href: setup/possible-setups/ha-scalability/intro.md
         - href: setup/possible-setups/cloud-architecture.md
     - href: setup/system-requirements.md
     - href: setup/network-requirements.md
+    - topics:
+        - href: setup/mobile-builder-connectivity-requirements.md
     - href: setup/default-configurations.md
     - href: setup/environment-config.md
     - href: setup/lifetime-configure.md
+    # Cache Invalidation Service
+    - href: setup/cache-invalidation/intro.md
+    - topics:
+        - href: setup/cache-invalidation/enable-tls.md        
+        - href: setup/cache-invalidation/installation.md     
+        - href: setup/cache-invalidation/high-availability.md                   
+        - href: setup/cache-invalidation/manage-troubleshoot.md
+    # Log Database Split
+    - href: setup/logging-db/intro.md
+    - topics:
+        - href: setup/logging-db/configure-separate-db.md
+        - href: setup/logging-db/update-applications.md
+        
     - href: setup/unattended-install/intro.md
     - topics:
         - href: setup/unattended-install/config-tool-ref.md
         - href: setup/unattended-install/server-hsconf-ref.md
         - href: setup/unattended-install/osp-tool-ref.md
+    
     # OutSystems on Microsoft Azure
     - href: setup/azure/intro.md
     - topics:
@@ -1137,6 +1156,8 @@
                 - href: ref/ui-patterns/mobile/gallery-mobile.md
                 - href: ref/ui-patterns/mobile/lightboximage.md
                 - href: ref/ui-patterns/mobile/masterdetail-mobile.md
+                - href: ref/ui-patterns/mobile/progressbar-mobile.md
+                - href: ref/ui-patterns/mobile/rating.md
                 - href: ref/ui-patterns/mobile/rangeslider.md
                 - href: ref/ui-patterns/mobile/rangesliderinterval.md
                 - href: ref/ui-patterns/mobile/stackedcards.md
@@ -1381,6 +1402,7 @@
         - href: ref/configuration-tool/tabs/network.md
         - href: ref/configuration-tool/tabs/scheduler.md
         - href: ref/configuration-tool/create-indexes.md
+        - href: ref/configuration-tool/dotnet-connection-strings-sql-server.md
 
     # Errors and Warnings
     - href: ref/errors-and-warnings/intro-errors-and-warnings.md
@@ -1658,6 +1680,8 @@
                 - href: ref/apis/lifetime-deployment/examples/api-new-app-version.md
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
                 - href: ref/apis/lifetime-deployment/examples//api-rollback-mobile-app.md
+                - href: ref/apis/lifetime-deployment/examples//api-register-env.md
+                - href: ref/apis/lifetime-deployment/examples//api-unregister-env.md
 
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md

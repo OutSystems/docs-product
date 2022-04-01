@@ -50,13 +50,13 @@ Once you've established a connection to SAP, you can now import SAP functions to
 
 1. Click **Complete setup**. 
 
-When you complete the setup, the following is created:
+    When you complete the setup, the following is created:
 
-* Creates the SAP connection you have configured
+    * Creates the SAP connection you have configured
 
-* Creates the actions for the remote functions you have selected
+    * Creates the actions for the remote functions you have selected
 
-* Creates the Structures to hold the parameters
+    * Creates the Structures to hold the parameters
 
     ![Imported remote functions](images/sapintegrate-importedfunc-ss.png)
 

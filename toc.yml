@@ -503,6 +503,36 @@
 
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
+    # Experience Builder
+    - href: develop/experience-builder/intro.md
+    - topics:
+        - href: develop/experience-builder/how-works.md
+        - href: develop/experience-builder/how-setup.md
+        - href: develop/experience-builder/how-use.md
+        - href: develop/experience-builder/ref/error-ref.md
+        - href: develop/experience-builder/extend-app-in-ss.md
+        - href: develop/experience-builder/import-flow/intro-if.md
+        - topics:
+            - href: develop/experience-builder/import-flow/import-if.md
+            - href: develop/experience-builder/import-flow/edit-if.md
+            - href: develop/experience-builder/import-flow/theme-structure-if.md
+            - href: develop/experience-builder/import-flow/metadata-if.md
+            - href: develop/experience-builder/import-flow/error-ref-if.md
+            - href: develop/experience-builder/import-flow/faq-if.md
+        - href: develop/experience-builder/ref/intro.md
+        - topics:
+            - href: develop/experience-builder/ref/ExBuilder_Authentication_MCS.md
+            - href: develop/experience-builder/ref/ExBuilder_Configs_CS.md
+            - href: develop/experience-builder/ref/ExBuilder_Configs_MCS.md
+            - href: develop/experience-builder/ref/ExBuilder_MobileLookups.md
+            - href: develop/experience-builder/ref/ExBuilder_PluginsWrapper_MLib.md
+            - href: develop/experience-builder/ref/ExBuilder_Sync.md
+            - href: develop/experience-builder/ref/ExBuilder_Utils_Lib.md
+            - href: develop/experience-builder/ref/ExBuilder_Utils_MLib.md
+            - href: develop/experience-builder/ref/ExBuilder_MPat.md
+        - href: develop/experience-builder/how-update-dependency.md
+        - href: develop/experience-builder/faq.md
+        - href: develop/experience-builder/troubleshoot.md
     
 # Delivering Mobile Apps
 - href: deliver-mobile/intro.md

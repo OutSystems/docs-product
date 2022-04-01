@@ -666,6 +666,15 @@
             - href: extensibility-and-integration/soap/expose/document-exposed-soap-web-service.md
         - href: extensibility-and-integration/soap/troubleshoot-soap-web-services.md
 
+    #SAP
+    - href: extensibility-and-integration/sap/intro.md
+    - topics:
+        - href: extensibility-and-integration/sap/integrate-with-a-sap-system.md
+        - href: extensibility-and-integration/sap/configure-a-sap-connection-at-runtime.md
+        - href: extensibility-and-integration/sap/execute-sap-stateful-calls.md
+        - href: extensibility-and-integration/sap/execute-sap-stateless-calls.md
+        - href: extensibility-and-integration/sap/troubleshoot-sap-remote-functions.md
+
     # Log levels for consumed integrations
     - href: extensibility-and-integration/log-levels-set.md
     - topics:

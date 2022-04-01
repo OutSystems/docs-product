@@ -27,19 +27,17 @@ In this example, there is a data model with an Entity named Employee. A screen f
 
 1. In the **SQL** tab, enter the following query:
 
-    ```sql
-    SELECT
-    {Employee}.[FirstName] + ' ' + {Employee}.[LastName],
-    {Employee}.[Email],
-    {Employee}.[Phone],
-    {Employee}.[Salary]
-    FROM
-    {Employee}
-    WHERE
-    {Employee}.[FirstName] LIKE '%' + @QuerySearch + '%'
-    OR
-    {Employee}.[LastName] LIKE '%' + @QuerySearch + '%'
-    ```
+        SELECT
+        {Employee}.[FirstName] + ' ' + {Employee}.[LastName],
+        {Employee}.[Email],
+        {Employee}.[Phone],
+        {Employee}.[Salary]
+        FROM
+        {Employee}
+        WHERE
+        {Employee}.[FirstName] LIKE '%' + @QuerySearch + '%'
+        OR
+        {Employee}.[LastName] LIKE '%' + @QuerySearch + '%'
 
 1. Double-click **Output Entities/Structures** to select the output structure of
 the query. In this example, there is already a structure named EmployeeStructure with the attributes Name, Email, Phone and Salary. Select it, and click **Select**.

@@ -51,3 +51,5 @@ Unlike public Server Actions, Service Actions run in the context of the producer
 1. Place breakpoints where you want the execution to stop. The execution will only stop on breakpoints of the producer Module.
 
 1. Start the debugger on the producer Module.
+
+*Note:* Stepping into a service action from a consumer module is not supported.

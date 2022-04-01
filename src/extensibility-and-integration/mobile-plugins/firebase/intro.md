@@ -112,3 +112,14 @@ The Firebase Dynamic Links Plugin has some additional setup steps that need to b
     ```
 
 * For iOS, you need to use a provisioning profile from Apple that contains the Associated Domains capability. For more info, see [Configuring an Associated Domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain) by Apple.
+
+### Ensuring app is compliant with Apple’s Data Use and Sharing guidelines
+
+Starting with iOS 14.5, apps on the App Store must receive the user’s permission to collect tracking data through the  AppTrackingTransparency framework.
+
+![RequestTrackingAuthorization client action parameters on Service Studio](images/firebase-request-tracking-authorization.png)
+
+To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin.
+If you want to present an alert prior to the iOS tracking permission dialog, enable the **ShowInformation** parameter on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
+
+You can use the **RequestTrackingAuthorization** action multiple times in the same app, since iOS remembers users' choice and only prompts users again after they uninstall and then reinstall the app on the device.

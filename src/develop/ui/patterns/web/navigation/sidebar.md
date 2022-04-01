@@ -19,17 +19,15 @@ In this example, we create a button that opens and closes the Sidebar widget.
 
     ![](<images/sidebar-5-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Sidebar widget into the Main Content area of your application's screen.
 

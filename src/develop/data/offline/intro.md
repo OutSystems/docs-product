@@ -25,7 +25,7 @@ In OutSystems you define the data model and manipulate persistent data in the sa
 
 Modeling the local storage can be accelerated by copying just the necessary server entities and attributes with a right-click. When you create a new local storage entity, OutSystems automatically provides entity actions that enable you to handle the entity records, just like for server entities.
 
-If you are considering storing sensitive data in local storage, you should use the best practices to [secure the data of your mobile apps](<../../security/secure-the-data-of-your-mobile-apps.md>).
+If you are considering storing sensitive data in local storage, you should use the best practices to [secure the data of your mobile apps](<../../data/secure-the-data-of-your-mobile-apps.md>).
 
 
 ## Implementing Offline Data Sync

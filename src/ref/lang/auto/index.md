@@ -9,7 +9,6 @@
 
   * ![](../images/ServiceStudio.Framework/Images/DataSet.ico?width=16) [Aggregate](<Class.Aggregate.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/AjaxRefresh.ico?width=16) [Ajax Refresh](<Class.Ajax%20Refresh.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/Entry.ico?width=16) [Application Phone](<Class.Application%20Phone.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Assign.ico?width=16) [Assign](<Class.Assign.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/AttachEmailContent.ico?width=16) [Attach File](<Class.Attach%20File.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/ProcessAutomaticActivity.ico?width=16) [Automatic Activity](<Class.Automatic%20Activity.md>) `1`
@@ -41,35 +40,27 @@
   * ![](../images/ServiceStudio.Framework/Images/ExcelToRecordList.ico?width=16) [Excel To Record List](<Class.Excel%20To%20Record%20List.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/ExceptionHandler.ico?width=16) [Exception Handler](<Class.Exception%20Handler.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Process.ico?width=16) [Execute Process](<Class.Execute%20Process.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/Expression.ico?width=16) [Expression SMS Widget](<Class.Expression%20SMS%20Widget.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Expression.ico?width=16) [Expression Widget](<Class.Expression%20Widget.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/ExternalSite.ico?width=16) [External Site](<Class.External%20Site.md>) `2`
-  * ![](../images/ServiceStudio.Common/Images/ClosedFolder.ico?width=16) [Folder](<Class.Folder.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/ForEach.ico?width=16) [For Each](<Class.For%20Each.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/WebLink.ico?width=16) [Go To Destination](<Class.Go%20To%20Destination.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/SMSLink.ico?width=16) [Go To SMS Destination](<Class.Go%20To%20SMS%20Destination.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Row.ico?width=16) [Header Row Widget](<Class.Header%20Row%20Widget.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/ProcessHumanActivity.ico?width=16) [Human Activity](<Class.Human%20Activity.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/If.ico?width=16) [If](<Class.If.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/If.ico?width=16) [If SMS Widget](<Class.If%20SMS%20Widget.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/If.ico?width=16) [If Widget](<Class.If%20Widget.md>) `4`
   * ![](../images/ServiceStudio.Framework/Images/Image.ico?width=16) [Image](<Class.Image.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/Image.ico?width=16) [Image Widget](<Class.Image%20Widget.md>) `2`
-  * ![](../images/empty.png?width=16) [InitialMetadata](<Class.InitialMetadata.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter](<Class.Input%20Parameter.md>) `11`
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (Deprecated SOAP)](<Class.Input%20Parameter%20(Deprecated%20SOAP).md>) `11`
   * ![](../images/ServiceStudio.Framework/Images/InputPassword.ico?width=16) [Input Password Widget](<Class.Input%20Password%20Widget.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/Input.ico?width=16) [Input Widget](<Class.Input%20Widget.md>) `2`
-  * ![](../images/ServiceStudio.Framework/Images/InteractiveSMS.ico?width=16) [Interactive SMS](<Class.Interactive%20SMS.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/JavascriptNode.ico?width=16) [JavaScript](<Class.JavaScript.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/DeserializeJSON.ico?width=16) [JSON Deserialize](<Class.JSON%20Deserialize.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/SerializeJSON.ico?width=16) [JSON Serialize](<Class.JSON%20Serialize.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Link.ico?width=16) [Link Widget](<Class.Link%20Widget.md>) `4`
   * ![](../images/ServiceStudio.Framework/Images/ListBox.ico?width=16) [List Box Widget](<Class.List%20Box%20Widget.md>) `2`
-  * ![](../images/ServiceStudio.Framework/Images/ListRecords.ico?width=16) [List Records SMS Widget](<Class.List%20Records%20SMS%20Widget.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/ListRecords.ico?width=16) [List Records Widget](<Class.List%20Records%20Widget.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/LocalVariable.ico?width=16) [Local Variable](<Class.Local%20Variable.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/Locale.ico?width=16) [Locale](<Class.Locale.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/LocalizedImage.ico?width=16) [Localized Image](<Class.Localized%20Image.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/MessageInfo.ico?width=16) [Message](<Class.Message.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/OutSystems.ico?width=16) [Mobile Module](<Class.Mobile%20Module.md>) `1`
@@ -78,17 +69,11 @@
   * ![](../images/ServiceStudio.Framework/Images/ClientEvent.ico?width=16) [On Application Ready](<Class.On%20Application%20Ready.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/ClientEvent.ico?width=16) [On Application Resume](<Class.On%20Application%20Resume.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/SystemEvent.ico?width=16) [On Begin Web Request](<Class.On%20Begin%20Web%20Request.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/SystemEvent.ico?width=16) [On Delivery Report](<Class.On%20Delivery%20Report.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/SystemEvent.ico?width=16) [On Exception](<Class.On%20Exception.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/SystemEvent.ico?width=16) [On Mobile Originated Message](<Class.On%20Mobile%20Originated%20Message.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/SystemEvent.ico?width=16) [On Mobile Terminated Message](<Class.On%20Mobile%20Terminated%20Message.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/SystemEvent.ico?width=16) [On Session Start](<Class.On%20Session%20Start.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter](<Class.Output%20Parameter.md>) `10`
   * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter (Deprecated SOAP)](<Class.Output%20Parameter%20(Deprecated%20SOAP).md>) `10`
-  * ![](../images/ServiceStudio.Framework/Images/Paragraph.ico?width=16) [Paragraph SMS Widget](<Class.Paragraph%20SMS%20Widget.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/PlaceholderArgument.ico?width=16) [Placeholder Content Widget](<Class.Placeholder%20Content%20Widget.md>) `4`
   * ![](../images/ServiceStudio.Framework/Images/Placeholder.ico?width=16) [Placeholder Widget](<Class.Placeholder%20Widget.md>) `4`
-  * ![](../images/ServiceStudio.Framework/Images/Preparation.ico?width=16) [Preparation](<Class.Preparation.md>) `4`
   * ![](../images/ServiceStudio.Framework/Images/Process.ico?width=16) [Process](<Class.Process.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/End.ico?width=16) [Process End](<Class.Process%20End.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Start.ico?width=16) [Process Start](<Class.Process%20Start.md>) `2`
@@ -97,9 +82,7 @@
   * ![](../images/ServiceStudio.Framework/Images/RaiseException.ico?width=16) [Raise Exception](<Class.Raise%20Exception.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/RecordListToExcel.ico?width=16) [Record List To Excel](<Class.Record%20List%20To%20Excel.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/OutSystems.ico?width=16) [Reference](<Class.Reference.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [ReferenceDatabaseView](<Class.ReferenceDatabaseView.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/ClientEvent.ico?width=16) [ReferenceFlowExceptionHandlingFlow](<Class.ReferenceFlowExceptionHandlingFlow.md>) `1`
-  * ![](../images/empty.png?width=16) [ReferenceThemeValues](<Class.ReferenceThemeValues.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/DataSetRefresh.ico?width=16) [Refresh Data](<Class.Refresh%20Data.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Resource.ico?width=16) [Resource](<Class.Resource.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/Role.ico?width=16) [Role](<Class.Role.md>) `3`
@@ -111,22 +94,16 @@
   * ![](../images/ServiceStudio.Framework/Images/Screen_Mobile.ico?width=16) [Screen](<Class.Screen.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/Action.ico?width=16) [Screen Action](<Class.Screen%20Action.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/JavaScript.png?width=16) [Script](<Class.Script.md>) `2`
-  * ![](../images/ServiceStudio.Framework/Images/BulkSMS.ico?width=16) [Send Bulk Messages](<Class.Send%20Bulk%20Messages.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/SendEmail.ico?width=16) [Send Email](<Class.Send%20Email.md>) `2`
-  * ![](../images/ServiceStudio.Framework/Images/SMSScreen.ico?width=16) [Send Message](<Class.Send%20Message.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/Action.ico?width=16) [Server Action](<Class.Server%20Action.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/ServiceAPIMethod.ico?width=16) [Service Action](<Class.Service%20Action.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/SessionVariable.ico?width=16) [Session Variable](<Class.Session%20Variable.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/ShowRecord.ico?width=16) [Show Record SMS Widget](<Class.Show%20Record%20SMS%20Widget.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/ShowRecord.ico?width=16) [Show Record Widget](<Class.Show%20Record%20Widget.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/SiteProperty.ico?width=16) [Site Property](<Class.Site%20Property.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/SMSLink.ico?width=16) [SMS Destination](<Class.SMS%20Destination.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/SMSFlow.ico?width=16) [SMS Flow](<Class.SMS%20Flow.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/WebService.ico?width=16) [SOAP Web Service](<Class.SOAP%20Web%20Service.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/WebReference.ico?width=16) [SOAP Web Service (Deprecated)](<Class.SOAP%20Web%20Service%20(Deprecated).md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/AdvancedQuery.ico?width=16) [SQL](<Class.SQL.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Start.ico?width=16) [Start](<Class.Start.md>) `2`
-  * ![](../images/ServiceStudio.Framework/Images/InteractiveSMSLink.ico?width=16) [Start iSMS](<Class.Start%20iSMS.md>) `1`
   * ![](../images/StaticEntity.ico?width=16) [Static Entity](<Class.Static%20Entity.md>) `3`
   * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure](<Class.Structure.md>) `4`
   * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure (Deprecated SOAP)](<Class.Structure%20(Deprecated%20SOAP).md>) `4`
@@ -136,18 +113,14 @@
   * ![](../images/ServiceStudio.Framework/Images/Switch.ico?width=16) [Switch](<Class.Switch.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/TableRecords.ico?width=16) [Table Records Widget](<Class.Table%20Records%20Widget.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/Table.ico?width=16) [Table Widget](<Class.Table%20Widget.md>) `2`
-  * ![](../images/ServiceStudio.Framework/Images/Text.ico?width=16) [Text SMS Widget](<Class.Text%20SMS%20Widget.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Text.ico?width=16) [Text Widget](<Class.Text%20Widget.md>) `4`
   * ![](../images/ServiceStudio.Framework/Images/Theme.ico?width=16) [Theme](<Class.Theme.md>) `4`
-  * ![](../images/empty.png?width=16) [ThemeValues](<Class.ThemeValues.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/Timer.ico?width=16) [Timer](<Class.Timer.md>) `1`
   * ![](../images/empty.png?width=16) [Trigger Event](<Class.Trigger%20Event.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/WebFlow.ico?width=16) [UI Flow](<Class.UI%20Flow.md>) `4`
   * ![](../images/ServiceStudio.Framework/Images/InputFilename.ico?width=16) [Upload Widget](<Class.Upload%20Widget.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/Exception.ico?width=16) [User Exception](<Class.User%20Exception.md>) `1`
-  * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [View](<Class.View.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/ProcessWait.ico?width=16) [Wait](<Class.Wait.md>) `2`
-  * ![](../images/ServiceStudio.Framework/Images/WaitForMessage.ico?width=16) [Wait for Message](<Class.Wait%20for%20Message.md>) `1`
   * ![](../images/ServiceStudio.Framework/Images/WebBlock.ico?width=16) [Web Block](<Class.Web%20Block.md>) `2`
   * ![](../images/ServiceStudio.Framework/Images/WebBlock.ico?width=16) [Web Block Widget](<Class.Web%20Block%20Widget.md>) `4`
   * ![](../images/ServiceStudio.Framework/Images/WebScreen.ico?width=16) [Web Screen](<Class.Web%20Screen.md>) `2`
@@ -165,7 +138,6 @@
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Dropdown.ico"/> [Dropdown](<ServiceStudio.Plugin.NRWidgets.Dropdown.md>) `NRWidgets.Dropdown`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Expression.ico"/> [Expression](<ServiceStudio.Plugin.NRWidgets.Expression.md>) `NRWidgets.Expression`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Form.ico"/> [Form](<ServiceStudio.Plugin.NRWidgets.Form.md>) `NRWidgets.Form`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/CellHeader.ico"/> [Header Cell](<ServiceStudio.Plugin.NRWidgets.HeaderCell.md>) `NRWidgets.HeaderCell`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Icon.ico"/> [Icon](<ServiceStudio.Plugin.NRWidgets.Icon.md>) `NRWidgets.Icon`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Image.ico"/> [Image](<ServiceStudio.Plugin.NRWidgets.Image.md>) `NRWidgets.Image`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Input.ico"/> [Input](<ServiceStudio.Plugin.NRWidgets.Input.md>) `NRWidgets.Input`
@@ -178,7 +150,6 @@
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Popup.ico"/> [Popup](<ServiceStudio.Plugin.NRWidgets.Popup.md>) `NRWidgets.Popup`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/RadioButton.ico"/> [Radio Button](<ServiceStudio.Plugin.NRWidgets.RadioButton.md>) `NRWidgets.RadioButton`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/RadioGroup.ico"/> [Radio Group](<ServiceStudio.Plugin.NRWidgets.RadioGroup.md>) `NRWidgets.RadioGroup`
-  * <img width="16" height="16" src="../images/Plugins/NRWidgets/Cell.ico"/> [Row Cell](<ServiceStudio.Plugin.NRWidgets.RowCell.md>) `NRWidgets.RowCell`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/Switch.ico"/> [Switch](<ServiceStudio.Plugin.NRWidgets.Switch.md>) `NRWidgets.Switch`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/TableRecords.ico"/> [Table](<ServiceStudio.Plugin.NRWidgets.TableRecords.md>) `NRWidgets.TableRecords`
   * <img width="16" height="16" src="../images/Plugins/NRWidgets/TextArea.ico"/> [Text Area](<ServiceStudio.Plugin.NRWidgets.TextArea.md>) `NRWidgets.TextArea`
@@ -192,8 +163,6 @@
   * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter (REST API Callback)](<ServiceStudio.Plugin.REST.RestCallbackActionFlowOutput.md>) `REST.RestCallbackActionFlowOutput`
   * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure (REST API Callback)](<ServiceStudio.Plugin.REST.RestCallbackStructure.md>) `REST.RestCallbackStructure`
   * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute (REST API Callback)](<ServiceStudio.Plugin.REST.RestCallbackStructureAttribute.md>) `REST.RestCallbackStructureAttribute`
-  * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [Static Entity](<ServiceStudio.Plugin.REST.RestStaticEntity.md>) `REST.RestStaticEntity`
-  * ![](../images/ServiceStudio.Framework/Images/EntityAttribute.ico?width=16) [Attribute](<ServiceStudio.Plugin.REST.RestStaticEntityAttribute.md>) `REST.RestStaticEntityAttribute`
   * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure (REST API Method)](<ServiceStudio.Plugin.REST.RestStructure.md>) `REST.RestStructure`
   * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute (REST API Method)](<ServiceStudio.Plugin.REST.RestStructureAttribute.md>) `REST.RestStructureAttribute`
   * <img width="16" height="16" src="../images/Plugins/RESTService/rest-expose.ico"/> [REST API](<ServiceStudio.Plugin.RESTService.RestService.md>) `RESTService.RestService`
@@ -220,23 +189,14 @@
   * <img width="16" height="16" src="../images/Plugins/SOAP/SOAPConsume.ico"/> [SOAP Web Service (Consumed)](<ServiceStudio.Plugin.SOAP.SOAPClient.md>) `SOAP.SOAPClient`
   * ![](../images/ServiceStudio.Framework/Images/Action.ico?width=16) [Web Service Method (Consumed)](<ServiceStudio.Plugin.SOAP.SOAPAction.md>) `SOAP.SOAPAction`
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter (Consumed SOAP Method)](<ServiceStudio.Plugin.SOAP.SOAPActionInput.md>) `SOAP.SOAPActionInput`
-  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter](<ServiceStudio.Plugin.SOAP.SOAPActionInputPolymorphic.md>) `SOAP.SOAPActionInputPolymorphic`
-  * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Input Parameter](<ServiceStudio.Plugin.SOAP.SOAPActionInputWildcard.md>) `SOAP.SOAPActionInputWildcard`
   * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter (Consumed SOAP Method)](<ServiceStudio.Plugin.SOAP.SOAPActionOutput.md>) `SOAP.SOAPActionOutput`
-  * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter](<ServiceStudio.Plugin.SOAP.SOAPActionOutputPolymorphic.md>) `SOAP.SOAPActionOutputPolymorphic`
-  * ![](../images/ServiceStudio.Framework/Images/OutputParameter.ico?width=16) [Output Parameter](<ServiceStudio.Plugin.SOAP.SOAPActionOutputWildcard.md>) `SOAP.SOAPActionOutputWildcard`
   * <img width="16" height="16" src="../images/Plugins/SOAP/Callback.ico"/> [SOAP Callback (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPCallbackActionFlow.md>) `SOAP.SOAPCallbackActionFlow`
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Password Input Parameter (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPDynamicPasswordInput.md>) `SOAP.SOAPDynamicPasswordInput`
   * ![](../images/ServiceStudio.Framework/Images/InputParameter.ico?width=16) [Username Input Parameter (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPDynamicUsernameInput.md>) `SOAP.SOAPDynamicUsernameInput`
   * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [Static Entity (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPStaticEntity.md>) `SOAP.SOAPStaticEntity`
   * ![](../images/ServiceStudio.Framework/Images/EntityAttribute.ico?width=16) [Static Entity Attribute (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPStaticEntityAttribute.md>) `SOAP.SOAPStaticEntityAttribute`
-  * ![](../images/ServiceStudio.Framework/Images/Entity.ico?width=16) [Entity](<ServiceStudio.Plugin.SOAP.SOAPStaticEntityPolymorphic.md>) `SOAP.SOAPStaticEntityPolymorphic`
-  * ![](../images/ServiceStudio.Framework/Images/EntityAttribute.ico?width=16) [Entity Attribute](<ServiceStudio.Plugin.SOAP.SOAPStaticEntityAttributePolymorphic.md>) `SOAP.SOAPStaticEntityAttributePolymorphic`
   * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPStructure.md>) `SOAP.SOAPStructure`
   * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute (Consumed SOAP)](<ServiceStudio.Plugin.SOAP.SOAPStructureAttribute.md>) `SOAP.SOAPStructureAttribute`
-  * ![](../images/ServiceStudio.Framework/Images/Structure.ico?width=16) [Structure](<ServiceStudio.Plugin.SOAP.SOAPStructurePolymorphic.md>) `SOAP.SOAPStructurePolymorphic`
-  * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute](<ServiceStudio.Plugin.SOAP.SOAPStructureAttributePolymorphic.md>) `SOAP.SOAPStructureAttributePolymorphic`
-  * ![](../images/ServiceStudio.Framework/Images/StructureAttribute.ico?width=16) [Structure Attribute](<ServiceStudio.Plugin.SOAP.SOAPStructureAttributeWildcard.md>) `SOAP.SOAPStructureAttributeWildcard`
   * <img width="16" height="16" src="../images/Plugins/Widgets/EditableTable.ico"/> [Editable Table Widget](<ServiceStudio.Plugin.Widgets.EditableTable.md>) `Widgets.EditableTable`
   * <img width="16" height="16" src="../images/Plugins/Widgets/EditableTableCell.ico"/> [Cell Widget](<ServiceStudio.Plugin.Widgets.EditableTableCell.md>) `Widgets.EditableTableCell`
   * <img width="16" height="16" src="../images/Plugins/Widgets/Form.ico"/> [Form Widget](<ServiceStudio.Plugin.Widgets.Form.md>) `Widgets.Form`

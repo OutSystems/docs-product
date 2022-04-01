@@ -1387,6 +1387,7 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51   
 - develop/ui/patterns/mobile/content/accordion.md:
+    - ref/ui-patterns/mobile/accordion.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Accordion.aspx

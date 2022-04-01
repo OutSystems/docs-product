@@ -45,10 +45,10 @@ If you are an advanced user, you might want to use the Carousel API  (OutSystems
 |GetAllCarouselItemsMap|Returns the Map with all the Carousel instances at the page.|<li>Returns array of IDs</li>| 
 |GetCarouselItemById|Gets the Carousel instance ID.|<li>carouselId: string</li>| 
 |Initialize|Initializes the pattern instance.|<li>carouselId: string</li>| 
-|GoTo|Goes to a specific page index.|<ul><li>carouselId: string</li><li>index: number</li>| 
+|GoTo|Goes to a specific page index.|<ul><li>carouselId: string</li><li>index: number</li></ul>| 
 |Next|Goes to the next page.|<li>carouselId: string</li>| 
 |Previous|Goes to the previous page|<li>carouselId: string</li>| 
-|ToggleDrag|Toggles the drag events on the Carousel.|<ul><li>carouselId: string</li><li>hasDrag: boolean</li></li>| 
+|ToggleDrag|Toggles the drag events on the Carousel.|<ul><li>carouselId: string</li><li>hasDrag: boolean</li></ul>| 
 |UpdateOnRender|Updates on DOM changes inside the Carousel.|<li>carouselId: string</li>|  
 
 ## Advanced use cases

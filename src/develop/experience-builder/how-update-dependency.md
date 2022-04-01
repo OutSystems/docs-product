@@ -42,6 +42,6 @@ After completing these steps, Experience Builder re-checks and updates the statu
 
 Repeat the previous steps for each missing or outdated dependency.
 
-Experience Builder apps have dependencies for various apps and components. For more information see, [Extend your Experience Builder app in Service Studio](extend-app-in-SS.md).
+Experience Builder apps have dependencies for various apps and components. For more information see, [Extend your Experience Builder app in Service Studio](extend-app-in-ss.md).
 
 Apps created with Experience Builder use custom UI patterns and actions included the Experience Builder Components package. For more information, see [Experience Builder Components package reference](ref/intro.md).

@@ -11,7 +11,7 @@ To change the services consumed  from a SOAP Web Service or to modify the list o
 
 1. Under **Integrations** > **SOAP**, right-click the SOAP Web Service you want to refresh and select **Refresh SOAP Web Service...**.
 
-    ![Refreshing a SOAP web service from the context menu](images/soap-refresh-menu.png)
+    ![Refreshing a SOAP web service from the context menu](images/soap-refresh-menu-ss.png)
 
 1. Confirm the URL or local file path for the WSDL, and then click **Select methods**. Service Studio re-reads the WSDL and displays a selectable list of available methods to consume.
 

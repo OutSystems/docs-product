@@ -33,7 +33,7 @@ The differences between the structure and the Carousel element that receives the
 </div>
 
 ## API
-If you are an advanced user, you might want to use the Carousel API  (OutSystems.OSUI.Patterns.CarouselAPI) for more complex use cases.
+If you are an advanced user, you might want to use the Carousel API (OutSystems.OSUI.Patterns.CarouselAPI) for more complex use cases.
 
 ### Methods
 

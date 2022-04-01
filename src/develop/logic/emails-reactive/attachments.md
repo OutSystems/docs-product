@@ -15,6 +15,11 @@ In the **Attachments** section of the **Send Email**, you can add:
 
 * A list of attachments. Do this when, for example, you want to send multiple files from a database, such as images from a product catalog. See: [Attaching multiple files](#attaching-multiple-files)
 
+<div class="info" markdown="1">
+
+Before following the guides in this article, make sure you meet the [prerequisites](intro.md#prerequisites).
+
+</div>
 
 ## Attaching a file
 

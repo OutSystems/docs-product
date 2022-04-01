@@ -150,7 +150,7 @@ Follow these steps to check if an app receives store-only updates or hybrid upda
 
 1. Click **Settings** to open the app settings screen.
 
-   ![App details screen in LifeTime](images/app-details-lt.png?width=400)
+    ![App details screen in LifeTime](images/app-details-lt.png?width=400)
 
 1. At the top of the screen, click the name of the environment in **Settings in (ENVIRONMENT)**, and then select the environment from the list.
 

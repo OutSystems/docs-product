@@ -10,6 +10,8 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
 * Use the latest version of any of the following desktop browsers: Edge, Firefox, Google Chrome, or Safari.
 
+* Your environments are associated with any available [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/), inclding Free, Standard, or Enterprise. **You can use your Personal Environment with Integration Builder**.
+
 * All environments, except for the LifeTime environment, must:
 
       * Use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.

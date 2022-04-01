@@ -5,11 +5,11 @@ helpids: 0
 
 # Query Parameter
 
-The SQL tool doesn't have direct access to data from outside its scope. This means that to use input parameters in a SQL query, you need to define query parameters and their data types. 
+The SQL tool doesn't have direct access to variables or parameters defined outside its scope. To use input parameters or local variables in a SQL query, you need to define query parameters. Then, you need to map the input parameters or local variables to the query parameters. 
 
 ## How to use
 
-In this example, there is a data model with an Entity `Employee`. A screen fetches data using a SQL query that uses a search input as query parameter. Follow these steps:
+In this example, there is a data model with an Entity named Employee. A screen fetches data using a SQL query that uses a search input as query parameter. Follow these steps:
 
 1. From the toolbox, drag a **SQL** and drop it in the action flow between the **Start** and **End** nodes.
 
@@ -48,7 +48,7 @@ the query. In this example, there is already a structure named EmployeeStructure
 
 1. Click **Test** to test the query.
 
-1. In the **Test Inputs** tab, set some value for the QuerySearch parameter, then click **Test** again to make sure the filter is working.
+1. In the **Test Inputs** tab, set a value for the QuerySearch parameter, then click **Test** again to make sure the filter is working.
 
 1. Click **Close** to return to the flow. 
 
@@ -57,8 +57,6 @@ the query. In this example, there is already a structure named EmployeeStructure
     ![Set the QuerySearch to the SearchFilter local variable.](images/set-parameter-value-ss.png)
 
 1. Publish the Module using the 1-Click Publish button, then test it in the browser.
-
-
 
 ## Properties
 

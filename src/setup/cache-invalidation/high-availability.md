@@ -3,10 +3,6 @@ summary: Learn how to configure a RabbitMQ cluster and how you can make OutSyste
 tags: version-11; support-Installation_Configuration
 ---
 
-<pre class="script">
-template('OutSystems/OSVersionIndicator');
-</pre>
-
 # OutSystems cache invalidation with high-availability
 
 RabbitMQ can be configured to work as a **cluster**, offering benefits like fault-tolerance, high availability and data replication. If your [application requires that the cache invalidation service is always available](intro.md#when-ha), you should use a RabbitMQ cluster.

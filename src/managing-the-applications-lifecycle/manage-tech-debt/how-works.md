@@ -78,14 +78,7 @@ The following tables map the Architecture Dashboard permissions to the LifeTime 
 
 ### Main features permissions
 
-
-
 #### View teams
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>
@@ -155,11 +148,6 @@ table {min-width: 650px;}
 
 #### View apps and modules 
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -223,11 +211,6 @@ table {min-width: 650px;}
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Open findings report
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>
@@ -293,11 +276,6 @@ table {min-width: 650px;}
 
 #### Export findings report
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -362,11 +340,6 @@ table {min-width: 650px;}
 
 #### Resolve findings
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -430,11 +403,6 @@ table {min-width: 650px;}
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Overview dashboard
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>
@@ -503,11 +471,6 @@ table {min-width: 650px;}
 
 #### Ignore modules
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -552,11 +515,6 @@ table {min-width: 650px;}
 
 #### Enable AI auto-classification
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -598,11 +556,6 @@ table {min-width: 650px;}
 
 
 #### Override module AI auto-classification
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>
@@ -647,11 +600,6 @@ table {min-width: 650px;}
 <sup>1</sup>**All modules**: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.
 
 #### Update probes
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>

@@ -3,10 +3,6 @@ summary: How to install and configure the Cache Invalidation Service using the c
 tags: version-11; support-Installation_Configuration
 ---
 
-<pre class="script">
-template('OutSystems/OSVersionIndicator');
-</pre>
-
 # Install and configure RabbitMQ using the command-line
 
 You can install and configure RabbitMQ via command-line instead of using Configuration Tool.

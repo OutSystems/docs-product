@@ -5,13 +5,6 @@ tags: article-page; support-Installation_Configuration; support-Installation_Con
 
 # Unattended Installation and Upgrade
 
-<pre class="script-css">
-/* HIDE H2, H3, H4 AND H5 FROM TOC */
-#mt-toc-container li li {
-    display:none;
-}
-</pre>
-
 <div class="info" markdown="1">
 
 This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/Unattended_Installation_and_Upgrade)

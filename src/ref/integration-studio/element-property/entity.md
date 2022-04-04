@@ -49,9 +49,9 @@ Mandatory
 <td>
 </td>
 <td>
-In a SQL Server, the full physical table name is:%%
-`[<server>].[<catalog>].[<owner>].<tab_name>`%%
-In Oracle, the full physical name is:%%
+In a SQL Server, the full physical table name is:<br/>
+`[<server>].[<catalog>].[<owner>].<tab_name>`<br/>
+In Oracle, the full physical name is:<br/>
 `[<owner>].<tab_name>@[<server>]`
 </td>
 </tr>
@@ -110,7 +110,7 @@ Default Value behavior
 </td>
 <td>
 Indicates how the default values of the entity's attributes are stored in the database and retrieved from the database:
-`No conversion to/from Database`: all the entity's attributes that have the default value set are stored in and retrieved from the database without any conversion, i.e., it is the default value that is stored in and retrieved from the database.%%
+`No conversion to/from Database`: all the entity's attributes that have the default value set are stored in and retrieved from the database without any conversion, i.e., it is the default value that is stored in and retrieved from the database.<br/>
 `Convert to/from Null value in Database`: all the entity's attributes that have the default value set are stored in the database with the `null` value. When retrieving data from the database, the null value is converted to the attribute's default value. If no default value is defined for the attribute,  the null value is then converted to the Platform default value for the data type.
 </td>
 <td>

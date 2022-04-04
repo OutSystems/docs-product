@@ -8,10 +8,10 @@ Client Action | Description
 ---|---
 [LocalSitePropertiesInsurance_CreateOrUpdate](<#Client_LocalSitePropertiesInsurance_CreateOrUpdate>) | Creates or updates a LocalSitePropertiesInsurance.
 [LocalSitePropertiesInsurance_Get](<#Client_LocalSitePropertiesInsurance_Get>) | Client action that fetches the local site properties for LocalSitePropertiesInsurance.
-[LocalSitePropertiesInsurance_Set](<#Client_LocalSitePropertiesInsurance_Set>) | Client action that stores the local site properties for Insurance for app configuration.%%This method will also add the data to a client variables.
+[LocalSitePropertiesInsurance_Set](<#Client_LocalSitePropertiesInsurance_Set>) | Client action that stores the local site properties for Insurance for app configuration.<br/>This method will also add the data to a client variables.
 [LocalSitePropertiesSupport_CreateOrUpdate](<#Client_LocalSitePropertiesSupport_CreateOrUpdate>) | Creates or updates a LocalSitePropertiesSupport.
 [LocalSitePropertiesSupport_Get](<#Client_LocalSitePropertiesSupport_Get>) | Client action that fetches the local site properties for LocalSitePropertiesSupport.
-[LocalSitePropertiesSupport_Set](<#Client_LocalSitePropertiesSupport_Set>) | Client action that stores the local site properties for app configuration.%%This method will also add the data to a client variables.
+[LocalSitePropertiesSupport_Set](<#Client_LocalSitePropertiesSupport_Set>) | Client action that stores the local site properties for app configuration.<br/>This method will also add the data to a client variables.
 
 ## Client Actions
 

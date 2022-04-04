@@ -12,40 +12,40 @@ Provides actions to manipulate HTTP Requests and Responses.
 
 Action | Description
 ---|---
-[AddAttributeToHtmlTag](<#AddAttributeToHtmlTag>) | Adds an attribute to the outermost HTML tag of the document (e.g. xmlns, manifest...).%%This method has no effect in Ajax Requests.
-[AddFaviconTag](<#AddFaviconTag>) | Allows setting the favicon for the current page. You can use &quot;omlresources&quot; to add an icon file to your oml.%%This method has no effect in Ajax Requests.
-[AddHeader](<#AddHeader>) | Adds a header to the current HTTP response.%%This method has no effect in Ajax Requests.
-[AddJavaScriptTag](<#AddJavaScriptTag>) | Adds a &lt;script&gt; tag to the HTML of the current HTTP response.%%This method has no effect in Ajax Requests.
-[AddLinkTag](<#AddLinkTag>) | Adds a &lt;link&gt; tag to the HTML of the current HTTP response.%%This method has no effect in Ajax Requests.
-[AddMetaHttpEquivTag](<#AddMetaHttpEquivTag>) | Adds a &lt;meta&gt; tag with the http-equiv attribute to the HTML of the current HTTP response.%%This method has no effect in Ajax Requests.
-[AddMetaTag](<#AddMetaTag>) | Adds a &lt;meta&gt; tag to the HTML of the current HTTP response.%%This method has no effect in Ajax Requests.
-[AddPostProcessingFilter](<#AddPostProcessingFilter>) | This method has no effect in Ajax Requests.%%Not implemented in Java.
+[AddAttributeToHtmlTag](<#AddAttributeToHtmlTag>) | Adds an attribute to the outermost HTML tag of the document (e.g. xmlns, manifest...).<br/>This method has no effect in Ajax Requests.
+[AddFaviconTag](<#AddFaviconTag>) | Allows setting the favicon for the current page. You can use &quot;omlresources&quot; to add an icon file to your oml.<br/>This method has no effect in Ajax Requests.
+[AddHeader](<#AddHeader>) | Adds a header to the current HTTP response.<br/>This method has no effect in Ajax Requests.
+[AddJavaScriptTag](<#AddJavaScriptTag>) | Adds a &lt;script&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
+[AddLinkTag](<#AddLinkTag>) | Adds a &lt;link&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
+[AddMetaHttpEquivTag](<#AddMetaHttpEquivTag>) | Adds a &lt;meta&gt; tag with the http-equiv attribute to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
+[AddMetaTag](<#AddMetaTag>) | Adds a &lt;meta&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
+[AddPostProcessingFilter](<#AddPostProcessingFilter>) | This method has no effect in Ajax Requests.<br/>Not implemented in Java.
 [AddSessionToURL](<#AddSessionToURL>) | Adds the current session identifier to a specified URL.
-[AddStyleSheetTag](<#AddStyleSheetTag>) | Adds a &lt;link rel=&quot;stylesheet&quot;&gt; tag to the HTML of the current HTTP response.%%This method has no effect in Ajax Requests.
+[AddStyleSheetTag](<#AddStyleSheetTag>) | Adds a &lt;link rel=&quot;stylesheet&quot;&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
 [GetCookie](<#GetCookie>) | Gets a cookie value.
 [GetEntryURL](<#GetEntryURL>) | Returns the URL of an Entry. Includes the Personal Area and the session identifier if applicable.
-[GetFormValue](<#GetFormValue>) | Gets the value of a form field of the current HTTP request.%%If the field does not exist in the request an empty String will be returned. The same applies when the field exists but has an empty string as a value.
+[GetFormValue](<#GetFormValue>) | Gets the value of a form field of the current HTTP request.<br/>If the field does not exist in the request an empty String will be returned. The same applies when the field exists but has an empty string as a value.
 [GetIP](<#GetIP>) | Gets the IP host address of the remote client (IP of the user machine performing the HTTP request).
 [GetPageExtension](<#GetPageExtension>) | Returns the extension of the physical page that corresponds to the current screen, including the dot. Examples: &quot;.aspx&quot; or &quot;.jsf&quot;.
 [GetPageName](<#GetPageName>) | Returns the name of the physical page that corresponds to the current screen. It is usually the same as the screen name, except when name clashes occur.
-[GetRawURL](<#GetRawURL>) | Returns the current relative requested URL, without the http://[server] part and without the session identifier.%%If SEO rules are being applied, the URL displayed in the user's browser is returned, and not the final URL after the rule is applied.
+[GetRawURL](<#GetRawURL>) | Returns the current relative requested URL, without the http://[server] part and without the session identifier.<br/>If SEO rules are being applied, the URL displayed in the user's browser is returned, and not the final URL after the rule is applied.
 [GetReferrerURL](<#GetReferrerURL>) | 
 [GetRequest_AddArgument](<#GetRequest_AddArgument>) | Builds the arguments string for an HTTP request with method GET, adding a new parameter to the arguments string.
 [GetRequest_Submit](<#GetRequest_Submit>) | Submit an HTTP GET request given the GET arguments and the URL. Returns the response content as a string and as binary data.
 [GetRequestContent](<#GetRequestContent>) | Gets the content of the current HTTP request.
-[GetRequestDomain](<#GetRequestDomain>) | Returns the host part of the current HTTP request as seen by the browser.%%Example: when the browser uses the address &quot;http://support.domain.com/site/welcome.aspx?id=12345&quot;, GetRequestDomain() returns &quot;support.domain.com&quot;.
+[GetRequestDomain](<#GetRequestDomain>) | Returns the host part of the current HTTP request as seen by the browser.<br/>Example: when the browser uses the address &quot;http://support.domain.com/site/welcome.aspx?id=12345&quot;, GetRequestDomain() returns &quot;support.domain.com&quot;.
 [GetRequestFiles](<#GetRequestFiles>) | Returns the list of files submitted in the current HTTP request.
 [GetRequestHeader](<#GetRequestHeader>) | Gets the value of a specific header in the current HTTP request. Returns an empty string if the header is not present or has no value.
 [GetRunningESpaceJQueryVersion](<#GetRunningESpaceJQueryVersion>) | Returns the jQueryVersion of the Running ESpace
 [GetSessionId](<#GetSessionId>) | Gets the session identifier of the current HTTP request.
-[GetURL](<#GetURL>) | Returns the current absolute requested URL, without the session identifier.%%If SEO rules are being applied, the final URL after the rule is applied is returned, and not the URL displayed in the user's browser.
+[GetURL](<#GetURL>) | Returns the current absolute requested URL, without the session identifier.<br/>If SEO rules are being applied, the final URL after the rule is applied is returned, and not the URL displayed in the user's browser.
 [GetURLMethod](<#GetURLMethod>) | Gets the request method (GET or POST) of the current requested URL.
 [GetURLWithSession](<#GetURLWithSession>) | Gets the current requested URL (with the session identifier).
 [GetUserAgent](<#GetUserAgent>) | Gets the user agent of the current HTTP request.
 [GetUserLanguages](<#GetUserLanguages>) | Gets a sorted record list of client language preferences.
 [GetValueFromInputId](<#GetValueFromInputId>) | 
 [GetValueFromInputIdDecoded](<#GetValueFromInputIdDecoded>) | 
-[IsAjaxRequest](<#IsAjaxRequest>) | Returns true if this is running in an AJAX request.%%Not Implemented in Java.
+[IsAjaxRequest](<#IsAjaxRequest>) | Returns true if this is running in an AJAX request.<br/>Not Implemented in Java.
 [IsSecureConnection](<#IsSecureConnection>) | Tells if the current request is being made via HTTPS.
 [MakeAbsoluteURL](<#MakeAbsoluteURL>) | Makes an absolute URL based on the URL provided.
 [PostRequest_AddArgument](<#PostRequest_AddArgument>) | Builds arguments list for a POST HTTP request, adding a new text parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example).
@@ -53,10 +53,10 @@ Action | Description
 [PostRequest_Submit](<#PostRequest_Submit>) | Submit an HTTP POST request given the POST arguments and the URL. Returns the response content as a string and as binary data.
 [ReplaceURLDomain](<#ReplaceURLDomain>) | Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.
 [RunJavaScript](<#RunJavaScript>) | Runs the provided JavaScript code in the browser.
-[SetBaseTag](<#SetBaseTag>) | Sets the base tag of the HTML of the current HTTP response.%%This method has no effect in Ajax Requests.
+[SetBaseTag](<#SetBaseTag>) | Sets the base tag of the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
 [SetCookie](<#SetCookie>) | Sets a cookie.
 [SetLastModified](<#SetLastModified>) | Sets the Last Modified Date HTTP header of the current response.
-[SetPageTitle](<#SetPageTitle>) | Sets the page title of the HTML of the current HTTP response.%%This method has no effect in Ajax Requests.
+[SetPageTitle](<#SetPageTitle>) | Sets the page title of the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
 [SetRequestTimeout](<#SetRequestTimeout>) | Sets the timeout of the current HTTP request.
 [SetStatusCode](<#SetStatusCode>) | Sets the status code of the current HTTP response.
 [URLEncode](<#URLEncode>) | Encodes a URL string for reliable HTTP transmission from the Web server to a client

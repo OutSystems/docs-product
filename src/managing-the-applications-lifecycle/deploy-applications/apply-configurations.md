@@ -97,13 +97,13 @@ Prefetch Resources                | Application detail screen > Operation tab   
 Deployment Zone                   | Application detail screen > Operation tab        | Compile-time
 Server Request Timeout            | Application detail screen > Operation tab        | Runtime
 Security settings                 | Application detail screen > Security tab         | Compile-time
-Mobile Apps Generation settings   | Application detail screen > Native Platforms tab | Operations%%Requires regeneration of mobile apps
+Mobile Apps Generation settings   | Application detail screen > Native Platforms tab | Operations<br/>Requires regeneration of mobile apps
 
 ### Module Settings
 
 Setting                     | Service Center Screen     | Type
 ----------------------------|---------------------------|--------------
-Integration configurations - SOAP, REST and SAP | Module detail screen > Integrations tab | Runtime%%Also applies to all its consumers
+Integration configurations - SOAP, REST and SAP | Module detail screen > Integrations tab | Runtime<br/>Also applies to all its consumers
 Auditing                | Module detail screen > Operation tab       | Runtime
 Remote Stack Display    | Module detail screen > Operation tab       | Runtime
 Debug mode              | Module detail screen > Operation tab       | Compile-time
@@ -122,7 +122,7 @@ Tenants                 | Module detail screen > Tenants tab         | Operation
 
 Setting                     | Service Center Screen     | Type
 ----------------------------|---------------------------|--------------
-Activity Logging | Extension detail screen > Operation tab | Runtime%%Also applies to all its consumers
+Activity Logging | Extension detail screen > Operation tab | Runtime<br/>Also applies to all its consumers
 Logical Database | Extension detail screen > Operation tab | Compile-time
 
 ### Environment Settings
@@ -130,17 +130,17 @@ Logical Database | Extension detail screen > Operation tab | Compile-time
 Setting                     | Service Center Screen     | Type
 ----------------------------|---------------------------|--------------
 Environment Name  | Administration > Environment Configurations | Runtime
-Hostname          | Administration > Environment Configurations | Runtime%%Requires regeneration of mobile apps
+Hostname          | Administration > Environment Configurations | Runtime<br/>Requires regeneration of mobile apps
 Purpose           | Administration > Environment Configurations | Operations
 Debug mode        | Administration > Environment Configurations | Compile-time
 Date Format       | Administration > Environment Configurations | Compile-time
 Administration Email | Administration > Environment Configurations | Runtime
 Show Email on Login Screen | Administration > Environment Configurations | Operations
 Timer Execution Attempts | Administration > Environment Configurations | Runtime
-Enable 2-Stage Deploy | Administration > Environment Configurations | Operations%%Only affects Service Center and LifeTime
-Enable Mobile Apps Build Service | Administration > Environment Configurations | Operations%%Only affects Service Center and LifeTime
-Use Proxy Authentication for Mobile Apps Build Service | Administration > Environment Configurations | Operations%%Only affects Service Center and LifeTime
-Enable Reports    | Administration > Environment Configurations | Operations%%Only affects Service Center and LifeTime
+Enable 2-Stage Deploy | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime
+Enable Mobile Apps Build Service | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime
+Use Proxy Authentication for Mobile Apps Build Service | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime
+Enable Reports    | Administration > Environment Configurations | Operations<br/>Only affects Service Center and LifeTime
 Enable HSTS | Administration > Security > Environment Security | Compile-time
 Force HTTPS Settings | Administration > Security > Environment Security | Runtime
 Cookies Settings | Administration > Security > Environment Security | Runtime
@@ -149,9 +149,9 @@ Network Security  | Administration > Security > Network Security | Runtime
 Applications Authentication | Administration > Security > Applications Authentication | Runtime
 Database Catalogs | Administration > Database Catalogs | Compile-time
 Database Connections – DBMS | Administration > Database Connections | Compile-time
-Database Connections – Other configurations | Administration > Database Connections | Runtime%%Also applies to all its consumers
+Database Connections – Other configurations | Administration > Database Connections | Runtime<br/>Also applies to all its consumers
 Default Sender Email | Administration > Email | Runtime
 Default Sender Name  | Administration > Email | Runtime
 Redirect Emails To Test List | Administration > Email | Runtime
 Test List Addresses  | Administration > Email | Runtime
-Certificates      | Administration > Certificates | Runtime%%Also applies to all its consumers
+Certificates      | Administration > Certificates | Runtime<br/>Also applies to all its consumers

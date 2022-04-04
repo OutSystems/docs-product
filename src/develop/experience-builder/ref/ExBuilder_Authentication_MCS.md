@@ -22,10 +22,10 @@ Client Action | Description
 [User_GetByPhoneNumber](<#Client_User_GetByPhoneNumber>) | Client action to get a user identifier associated with a Phone Number.
 [User_GetSessionInfo](<#Client_User_GetSessionInfo>) | Client action to get user data from client variables.
 [User_GetStatus](<#Client_User_GetStatus>) | Client action to get a resume of the user account status.
-[User_LoginOTP](<#Client_User_LoginOTP>) | Client action to authenticate the user in the system, by using an OTP that is sent.%%If successful, returns the user information.%%For demo purposes we'll expect the code to be always 123456.
-[User_LoginWithPasscode](<#Client_User_LoginWithPasscode>) | Client action to authenticate the user in the system, by using the passcode.%%If successful, returns the user information.
+[User_LoginOTP](<#Client_User_LoginOTP>) | Client action to authenticate the user in the system, by using an OTP that is sent.<br/>If successful, returns the user information.<br/>For demo purposes we'll expect the code to be always 123456.
+[User_LoginWithPasscode](<#Client_User_LoginWithPasscode>) | Client action to authenticate the user in the system, by using the passcode.<br/>If successful, returns the user information.
 [User_LoginWithPassword](<#Client_User_LoginWithPassword>) | Client action to login a user by username and password.
-[User_LoginWithPattern](<#Client_User_LoginWithPattern>) | Client action to authenticate the user in the system, by using the pattern.%%If successful, returns the user information.
+[User_LoginWithPattern](<#Client_User_LoginWithPattern>) | Client action to authenticate the user in the system, by using the pattern.<br/>If successful, returns the user information.
 [User_SetSessionInfo](<#Client_User_SetSessionInfo>) | Client action to set user info in client variables.
 [User_ValidateBasicPersonalDetails](<#Client_User_ValidateBasicPersonalDetails>) | Server action to validate the basic personal details of a user.
 [User_ValidatePhoneNumber](<#Client_User_ValidatePhoneNumber>) | Client action to validate phone for the setup registration.

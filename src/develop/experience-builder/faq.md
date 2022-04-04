@@ -14,7 +14,7 @@ Note that **Empty Screens** aren’t considered flows, and you can add them mult
 
 ## Do the flow/screen names in Experience Builder match the flow/screen you see when you open the generated app in Service Studio?
 
-**Yes**.%%
+**Yes**.<br/>
 This also means that the naming conventions and restrictions that exist in Service Studio also apply to Experience Builder.
 
 Note that the **Empty Screens** are a particular case - since they don’t belong to a flow, they are placed in a flow called **Others**.

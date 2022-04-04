@@ -33,7 +33,7 @@ Mandatory
 `Attribute <n>`
 </td>
 <td>
-You should change the name of the attribute to a suitable value.%%
+You should change the name of the attribute to a suitable value.<br/>
 See [rules for naming elements](<../element-naming.md>).
 </td> </tr>
 <tr>
@@ -49,7 +49,7 @@ Optional
 <td>
 </td>
 <td>
-Automatically filled when introspecting a database.%%If this property is empty, the "Name" property value will be used.%%![](images/warning.gif) If you change this property value in an imported entity attribute, you might have runtime errors.
+Automatically filled when introspecting a database.<br/>If this property is empty, the "Name" property value will be used.<br/>![](images/warning.gif) If you change this property value in an imported entity attribute, you might have runtime errors.
 </td> </tr>
 <tr>
 <td>
@@ -109,8 +109,8 @@ Mandatory
 <td>
 </td>
 <td>
-The possible values are presented in a drop-down list. For more information, see available data types.%%
-Since OutSystems has its own data types, you should check how Database data types are translated into OutSystems' data types. Check the mapping for Oracle or SQL Server.%%
+The possible values are presented in a drop-down list. For more information, see available data types.<br/>
+Since OutSystems has its own data types, you should check how Database data types are translated into OutSystems' data types. Check the mapping for Oracle or SQL Server.<br/>
 If you override an attribute data type (which value was initially defined when importing an entity from a database) by manually selecting a different value, this override value will be kept when you refresh the entity.
 </td> </tr>
 <tr>
@@ -140,7 +140,7 @@ Optional
 <td>
 </td>
 <td>
-This property is only available for `Text` and `Decimal` types. In the `Decimal` type, this property corresponds to the number of digits, including the decimal part. If the values for these data types are not specified, default values are used.%%
+This property is only available for `Text` and `Decimal` types. In the `Decimal` type, this property corresponds to the number of digits, including the decimal part. If the values for these data types are not specified, default values are used.<br/>
 The rest of the data types have a fixed length.
 </td> </tr>
 <tr>
@@ -169,8 +169,8 @@ Indicates if the attribute should be ignored in runtime. Attributes set as ignor
 Mandatory
 </td>
 <td>
-`False` %%
-%%
+`False` <br/>
+<br/>
 (see "Obs.")
 </td>
 <td>

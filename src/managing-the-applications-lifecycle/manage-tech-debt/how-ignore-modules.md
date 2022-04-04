@@ -1,14 +1,14 @@
 ---
 tags: Architecture Dashboard; how-to; manual
-summary: You can exclude classes of modules from tech-debt analysis in Architecture Dashboard.
-en_title: How to exclude modules from tech debt analysis  
+summary: You can ignore classes of modules during tech-debt analysis in Architecture Dashboard.
+en_title: Ignoring modules during tech debt analysis  
 ---
 
-# Excluding modules from tech debt analysis
+# Ignoring modules during tech debt analysis
 
 **Architecture Dashboard** provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment.
 
-However, analyzing every module in a factory can result in a misleading technical debt score. To help your development team get a realistic picture of the portfolio's technical debt, you can ignore certain modules from the analysis.
+However, analyzing every module in a factory can result in a misleading technical debt score. To help your development team get a realistic picture of the portfolio's technical debt, you can ignore certain modules during the analysis.
 
 Modules that might be ignored include:
 
@@ -17,7 +17,7 @@ Modules that might be ignored include:
 * Experimental or preliminary applications that are not meant for production
 * Forge components integrated, as is, into applications
 
-**Architecture Dashboard** gives architects and team leads the ability to ignore individual modules—or to bulk-select whole classes of modules—so they will be excluded from the technical debt evaluation of your factory’s portfolio.
+**Architecture Dashboard** gives architects and team leads the ability to ignore individual modules—or to bulk-select whole classes of modules—so they will be ignored during the technical debt evaluation of your factory’s portfolio.
 
 <div class="info" markdown="1">
 
@@ -25,7 +25,7 @@ For more information about permissions to access this feature, see [How does Arc
 
 </div>
 
-To select modules for exclusion:
+To select modules to ignore:
 
 1. Go to the **Maintenance** tab of **Architecture Dashboard**.
     ![Select Maintenance tab](images/ad-autoclass-1.png)
@@ -43,7 +43,7 @@ You can use the following filters to fine-tune your choices, and then sort the r
 
 ## Batch selection of modules
 
-In some cases, **OutSystems** recommends excluding entire classes of modules from technical debt analysis, such as demo apps that are not meant to be released to production.
+In some cases, **OutSystems** recommends ignoring entire classes of modules during technical debt analysis, such as demo apps that are not meant to be released to production.
 
 Ignoring **[Forge](https://www.outsystems.com/forge/)** components in **Architecture Dashboard** is another good practice. **OutSystems** developers rely on the **Forge** to accelerate the design process. Components that are used as-is do not have to be included when calculating your infrastructure’s technical debt.
 
@@ -67,13 +67,13 @@ To ignore **Forge** components in technical debt analysis:
 All of the selected components/modules are marked to be ignored during future technical debt evaluations.
 
 
-## Excluding individual modules
+## Ignoring individual modules
 
-In some cases you may wish to fine-tune your selections. As one example, you may exclude old or discontinued modules, as follows:
+In some cases you may wish to fine-tune your selections. As one example, you may ignore old or discontinued modules, as follows:
 
 1. In the **Maintenance** page click **Clear all** if the **Ignored Modules** page shows the results of a previous search.
 1. Sort the modules by the **Last analyzed on** column (or the **Status changed on** column, depending on what criteria you wish to use).
-1. Click the specific modules to exclude from analysis.
+1. Click the specific modules to ignore during analysis.
 1. Click **Change to ignored**.
     ![Ignored modules page](images/individually-ignored-modules-ad.png)
     <div class="info" markdown="1">

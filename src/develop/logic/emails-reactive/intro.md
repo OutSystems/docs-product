@@ -42,7 +42,6 @@ Create and send **Emails for Mobile and Reactive** along with **Attachments in M
 * You're using Platform Server 11.13.0 or later.
 
 
-
 ## Getting started
 
 The following are the steps to get you started with creating and sending emails:
@@ -63,7 +62,7 @@ If you want to... | Check out... |
 | See what widgets you can use  | [Widgets available in Emails](widgets.md#widgets-available-in-emails)| 
 | See what data types you can use in inputs  | [Available data types](../../../ref/data/data-types/available-data-types.md), in particular [compound data types](../../../ref/data/data-types/available-data-types.md#compound-data-types)  | 
 | Validate or format email addresses | [Email built-in functions](../../../ref/lang/auto/builtinfunction.Email.final.md)  | 
-| Learn more about security | [Security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices) and [server-to-client data transfer optimization](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_-_Server-to-client_data_transfer_optimization) | 
+| Learn more about security | [Security best practices](../) and [server-to-client data transfer optimization](../client-data-transfer-optimization-tp.md) | 
 
 
 ## About emails in Reactive Web Apps and Mobile Apps

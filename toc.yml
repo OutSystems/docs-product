@@ -368,6 +368,8 @@
         - topics:
             - href: develop/logic/exceptions/analyze-logs.md
             - href: develop/logic/exceptions/handling-mechanism.md
+            
+        - href: develop/logic/client-data-transfer-optimization-tp.md
 
     # Use Processes
     - href: develop/processes/intro.md

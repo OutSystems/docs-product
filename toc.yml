@@ -697,13 +697,13 @@
         - href: extensibility-and-integration/soap/troubleshoot-soap-web-services.md
 
     #SAP
-    - href: extensibility-and-integration/sap/intro.md
-    - topics:
-        - href: extensibility-and-integration/sap/integrate-with-a-sap-system.md
-        - href: extensibility-and-integration/sap/configure-a-sap-connection-at-runtime.md
-        - href: extensibility-and-integration/sap/execute-sap-stateful-calls.md
-        - href: extensibility-and-integration/sap/execute-sap-stateless-calls.md
-        - href: extensibility-and-integration/sap/troubleshoot-sap-remote-functions.md
+    #- href: extensibility-and-integration/sap/intro.md
+    #- topics:
+        #- href: extensibility-and-integration/sap/integrate-with-a-sap-system.md
+        #- href: extensibility-and-integration/sap/configure-a-sap-connection-at-runtime.md
+        #- href: extensibility-and-integration/sap/execute-sap-stateful-calls.md
+        #- href: extensibility-and-integration/sap/execute-sap-stateless-calls.md
+        #- href: extensibility-and-integration/sap/troubleshoot-sap-remote-functions.md
 
     # Log levels for consumed integrations
     - href: extensibility-and-integration/log-levels-set.md
@@ -1014,19 +1014,19 @@
                     - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlowInput.final.md
             
             # SAP
-            - href: ref/extensibility-and-integration/sap/intro.md
-            - topics:
-                - href: ref/extensibility-and-integration/sap/mapping-sap.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapClient.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapAction.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapActionInput.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapActionOutput.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapStructure.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapStructureAttribute.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapCallbackActionFlow.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapCallbackActionFlowInput.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapDynamicLoginInput.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapDynamicPasswordInput.final.md
+            #- href: ref/extensibility-and-integration/sap/intro.md
+            #- topics:
+                #- href: ref/extensibility-and-integration/sap/mapping-sap.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapClient.final.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapAction.final.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapActionInput.final.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapActionOutput.final.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapStructure.final.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapStructureAttribute.final.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapCallbackActionFlow.final.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapCallbackActionFlowInput.final.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapDynamicLoginInput.final.md
+                #- href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapDynamicPasswordInput.final.md
             
             # SOAP Web Services
             - href: ref/extensibility-and-integration/soap/intro.md
@@ -1486,7 +1486,7 @@
             - href: ref/errors-and-warnings/errors/invalid-reference-error.md
             - href: ref/errors-and-warnings/errors/invalid-request-format-error.md
             - href: ref/errors-and-warnings/errors/invalid-response-format-error.md
-            - href: ref/errors-and-warnings/errors/invalid-sap-connection-error.md
+            #- href: ref/errors-and-warnings/errors/invalid-sap-connection-error.md
             - href: ref/errors-and-warnings/errors/invalid-screen-error.md
             - href: ref/errors-and-warnings/errors/invalid-soap-static-entity-usage-error.md
             - href: ref/errors-and-warnings/errors/invalid-sql-error.md
@@ -1712,7 +1712,7 @@
             - href: ref/apis/runtimepublic-db/insert-data-in-the-application-database.md
             - href: ref/apis/runtimepublic-db/query-data-from-an-external-database.md
         - href: ref/apis/auto/sanitization-api.final.md
-        - href: ref/apis/sap-extensibility-api.md
+        #- href: ref/apis/sap-extensibility-api.md
         - href: ref/apis/soap-extensibility-api.md
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md

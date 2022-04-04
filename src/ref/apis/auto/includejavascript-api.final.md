@@ -18,7 +18,7 @@ Action | Description
 [Application_RemoveExclusionRule](<#Application_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified application.
 [Espace_AddExclusionRule](<#Espace_AddExclusionRule>) | Creates exclusion rules for a script. The specified script is not included in the specified module.
 [Espace_RemoveExclusionRule](<#Espace_RemoveExclusionRule>) | Removes a script exclusion rule. The specified script is to be included in the specified module.
-[Script_CreateOrUpdate](<#Script_CreateOrUpdate>) | Creates or updates a javascript. The script is inserted in the HTML of all Web Screens of all modules.%%If the script name already exists, the script is updated, otherwise a new script is created.
+[Script_CreateOrUpdate](<#Script_CreateOrUpdate>) | Creates or updates a javascript. The script is inserted in the HTML of all Web Screens of all modules.<br/>If the script name already exists, the script is updated, otherwise a new script is created.
 [Script_Delete](<#Script_Delete>) | Deletes a script: the script is no longer included in Web Screens.
 [Script_Get](<#Script_Get>) | Returns the information of a script.
 [Script_List](<#Script_List>) | Returns a list of scripts to be included in Web Screens.

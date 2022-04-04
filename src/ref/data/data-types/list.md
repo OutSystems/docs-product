@@ -114,7 +114,7 @@ Property | Type | Access type | Comment
 Current | List element type | Read/write | Allows direct access to the current element.  
 EOF | Boolean | Read only | Indicates whether the end of the list was exceeded. When you are iterating the last element, this property is still FALSE.  
 BOF | Boolean | Read only | Indicates whether you are at the beginning of the list. When you are iterating the first element, this property is True.  
-CurrentRowNumber | Integer | Read only | The index of the current element in the list, starting with 0. %%If the list is empty, this property is 0.  
+CurrentRowNumber | Integer | Read only | The index of the current element in the list, starting with 0. <br/>If the list is empty, this property is 0.  
 Length | Integer | Read only | The number of elements currently in the list.  
 Empty | Boolean | Read only | Indicates whether the list is empty.  
 

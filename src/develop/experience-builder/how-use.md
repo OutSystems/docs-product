@@ -84,7 +84,7 @@ Experience Builder lets you start from pre built app templates or from a blank a
 
 <div class="info" markdown="1">
 
-Fell free to explore the pre built app templates.%% After selecting one of the templates, you can see a short description of the app, and an overview of all the flows and screens included.
+Fell free to explore the pre built app templates.<br/> After selecting one of the templates, you can see a short description of the app, and an overview of all the flows and screens included.
 
 </div>
 

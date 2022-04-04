@@ -16,10 +16,10 @@ Action | Description
 [User_CreateWithExtendedAttributes](<#User_CreateWithExtendedAttributes>) | Server action to create a user with extended attributes.
 [User_GetByEmail](<#User_GetByEmail>) | Server action to get a user identifier  associated with an email.
 [User_GetByPhoneNumber](<#User_GetByPhoneNumber>) | Server action to get a user identifier  associated with a phone number.
-[User_LoginOTP](<#User_LoginOTP>) | Server action to authenticate the user in the system, by using an OTP that is sent.%%If successful, returns the user information.%%For demo purposes we'll expect the code to be always 123456.
-[User_LoginPasscode](<#User_LoginPasscode>) | Server action to authenticate the user in the system, by using the passcode.%%If successful, returns the user information.
-[User_LoginPattern](<#User_LoginPattern>) | Server action to authenticate the user in the system, by using the pattern.%%If successful, returns the user information.
-[User_LoginWithUsernamePassword](<#User_LoginWithUsernamePassword>) | Server action to authenticate the user in the system, by using the username and password.%%If successful, returns the user information.
+[User_LoginOTP](<#User_LoginOTP>) | Server action to authenticate the user in the system, by using an OTP that is sent.<br/>If successful, returns the user information.<br/>For demo purposes we'll expect the code to be always 123456.
+[User_LoginPasscode](<#User_LoginPasscode>) | Server action to authenticate the user in the system, by using the passcode.<br/>If successful, returns the user information.
+[User_LoginPattern](<#User_LoginPattern>) | Server action to authenticate the user in the system, by using the pattern.<br/>If successful, returns the user information.
+[User_LoginWithUsernamePassword](<#User_LoginWithUsernamePassword>) | Server action to authenticate the user in the system, by using the username and password.<br/>If successful, returns the user information.
 [User_SaveLastValidLogin](<#User_SaveLastValidLogin>) | Server action to set the last login date to the current date.
 [User_SetupRegistration](<#User_SetupRegistration>) | Server action to setup a user account registration.
 [User_ValidateBasicInformation](<#User_ValidateBasicInformation>) | Server action to validate all the user data for the setup registration.

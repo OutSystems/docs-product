@@ -7,15 +7,15 @@ Module that contains several common objects and functions used across the mobile
 Client Action | Description
 ---|---
 [AddClassToBody](<#Client_AddClassToBody>) | Client action to add a specific class to the screen body.
-[AnimateScreenElement](<#Client_AnimateScreenElement>) | Client action to animate a specific page element.%%Ex: Error animation on Login passcode elements or Focus on a specific element.
+[AnimateScreenElement](<#Client_AnimateScreenElement>) | Client action to animate a specific page element.<br/>Ex: Error animation on Login passcode elements or Focus on a specific element.
 [BlurActiveElement](<#Client_BlurActiveElement>) | Client action to make the blur on the document active element. Usually useful to close the keyboard.
 [ClearSessionStorage](<#Client_ClearSessionStorage>) | Client action to clear the javascript session storage.
 [Convert24hTo12hFormat](<#Client_Convert24hTo12hFormat>) | Client action to convert 24h format time in 12h format.
 [FeatureNotAvailable](<#Client_FeatureNotAvailable>) | Client action to provide feedback about some plugin not being available on the device.
 [FeatureNotImplemented](<#Client_FeatureNotImplemented>) | Client action to provide feedback about something that is not implemented yet.
 [FocusActiveElement](<#Client_FocusActiveElement>) | Client action to make the focus on the document active element. Usually usefull to close the keyboard.
-[FormatCurrencyVal](<#Client_FormatCurrencyVal>) | Client action to format an inputted currency.%%Ex: $100,00.50
-[FormatDate](<#Client_FormatDate>) | Client action to format an given date.%%Ex:%%Jun 07, 2019 (ShowYear=True)%%Jun 07       (ShowYear=False)
+[FormatCurrencyVal](<#Client_FormatCurrencyVal>) | Client action to format an inputted currency.<br/>Ex: $100,00.50
+[FormatDate](<#Client_FormatDate>) | Client action to format an given date.<br/>Ex:<br/>Jun 07, 2019 (ShowYear=True)<br/>Jun 07       (ShowYear=False)
 [GetDeviceInfo](<#Client_GetDeviceInfo>) | Client action to get the available device information via Cordova methods.
 [GetFullHostname](<#Client_GetFullHostname>) | Client action that returns the hostname of the current page, including the protocol.
 [GetHostName](<#Client_GetHostName>) | Client action to get the hostname of the screen URL.
@@ -32,7 +32,7 @@ Client Action | Description
 [ShowPassword](<#Client_ShowPassword>) | Client action to be used on the Login screen to enable users to show or hide the password characters.
 [StringSplit](<#Client_StringSplit>) | Client action that receives one string and splits it by a delimiter text into a List of Text.
 [ValidateEmail](<#Client_ValidateEmail>) | Client action to checks whether the given value is a valid e-mail.
-[ValidatePhoneNumber](<#Client_ValidatePhoneNumber>) | Client action to validate a given phone number using RegEx.%%Format: XXX-XXX-XXXX
+[ValidatePhoneNumber](<#Client_ValidatePhoneNumber>) | Client action to validate a given phone number using RegEx.<br/>Format: XXX-XXX-XXXX
 
 Structure | Description
 ---|---

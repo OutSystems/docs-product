@@ -33,7 +33,7 @@ Action | Description
 [UseIntegratedAuthentication](<#UseIntegratedAuthentication>) | Returns the Users configuration that determines if the Integrated Authentication is used to login.
 [UseLDAPAuthentication](<#UseLDAPAuthentication>) | Returns the Users configuration that determines if the Active Directory is used for authentication
 [User_CanChangePassword](<#User_CanChangePassword>) | Checks if the User is allowed to change a password. It is false for Active Directory users.
-[User_Create](<#User_Create>) | Create a new user. Requires UserManager role to be invoked.%%Fails when the username is repeated.
+[User_Create](<#User_Create>) | Create a new user. Requires UserManager role to be invoked.<br/>Fails when the username is repeated.
 [User_CreateOrUpdate](<#User_CreateOrUpdate>) | Create or updates a user. Requires UserManager role to be invoked.
 [User_DeleteIfNoRoles](<#User_DeleteIfNoRoles>) | Deletes the User if there are no roles assigned to it.
 [User_GetBlockedStatus](<#User_GetBlockedStatus>) | Returns information regarding the blocking state of the user and the blocking reason, in the specified IP address. If no IP address is given, checks the last IP address from where the user attempted to login.

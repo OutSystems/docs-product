@@ -40,7 +40,7 @@ The following table contains an example in how to design the query with an empty
 
 For All DBMS  |  SQL Server  |  Oracle  |  MySQL  
 ---|---|---|---  
-SELECT {User}.* %%FROM {User} %%WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* %%FROM {User} %%WHERE {User}.Username = ''  |  SELECT {User}.* %%FROM {User} %%WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* %%FROM {User} %%WHERE {User}.Username = ''  
+SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = ''  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = ''  
   
 Note that foreign keys for text attributes are stored with a text value if a reference exists, or NULL if there is no reference to a row in another entity.
 

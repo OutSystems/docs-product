@@ -22,7 +22,7 @@ Client Action | Description
 [SetCenter](<#Client_SetCenter>) | Client action that triggers the map to be centered arround the given latitude and longitude.
 [SpeechRecognition_IsAvailable](<#Client_SpeechRecognition_IsAvailable>) | Client action to check whether the Speech Recognition is available or not.
 [SpeechRecognition_RequestPermission](<#Client_SpeechRecognition_RequestPermission>) | Client action to request access permission to system resources if it was not granted before.
-[SpeechRecognition_StartListening](<#Client_SpeechRecognition_StartListening>) | Client action to start listening.%%There is a difference between Android and iOS platforms. On Android speech recognition stops when the speaker finishes speaking (at end of sentence). On iOS the user has to stop manually the recognition process by calling stopListening() method.
+[SpeechRecognition_StartListening](<#Client_SpeechRecognition_StartListening>) | Client action to start listening.<br/>There is a difference between Android and iOS platforms. On Android speech recognition stops when the speaker finishes speaking (at end of sentence). On iOS the user has to stop manually the recognition process by calling stopListening() method.
 [SpeechRecognition_StopListening](<#Client_SpeechRecognition_StopListening>) | Client action to stop listening. iOS only method. Stop the recognition process.
 
 Structure | Description

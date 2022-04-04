@@ -123,7 +123,7 @@ Here are more details about the properties.
 | Property          | Description                                                                                                                                                                                                             |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Custom URL**    | If you set **Custom URL** to **Yes**, Service Studio activates custom Screen URLs and lets you edit the redirect settings.                                                                                                  |
-| **Page Name**     | The name of the page to show in the URL. Use only alphabetical characters and numbers. You can use the following  special characters, but not at the beginning or at the end of the page name: "\_", "-", "/" , and "~". |
+| **Page Name**     | The name of the page to show in the URL. Use only alphabetical characters and numbers. You can use the following  special characters, but not at the beginning or at the end of the page name: `_`, `-`, `/` , and `~`. |
 | **URL Structure** | Set to **Path** to pass the parameters separated by `/` in the URL (example: `/Product/1`). Set to **Query string** to pass the parameters as a string (example: `Products?Id=1`).                                      |
 | **URL Pattern**   | Preview only. Shows the URL preview as you edit the settings.
 

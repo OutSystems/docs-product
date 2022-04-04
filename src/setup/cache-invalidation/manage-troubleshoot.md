@@ -3,10 +3,6 @@ summary: Instructions for enabling the management plugin and for troubleshooting
 tags: version-11
 ---
 
-<pre class="script">
-template('OutSystems/OSVersionIndicator');
-</pre>
-
 # RabbitMQ management and troubleshooting
 
 The default RabbitMQ batch scripts folder mentioned in the sections below is the following:

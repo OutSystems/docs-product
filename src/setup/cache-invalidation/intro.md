@@ -4,10 +4,6 @@ tags: article-page; version-11
 helpids: 30176
 ---
 
-<pre class="script">
-template('OutSystems/OSVersionIndicator');
-</pre>
-
 # Cache Invalidation in OutSystems 11
 
 Caching lets applications temporarily store a  subset of data making requests for the same data occur faster because reading data from cache is faster than reading the same data again from the database. Cache invalidation is the process where entries in the cache are replaced or removed.

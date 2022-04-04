@@ -4,10 +4,6 @@ tags: version-11; support-Installation_Configuration
 helpids: 30177
 ---
 
-<pre class="script">
-template('OutSystems/OSVersionIndicator');
-</pre>
-
 # Enable TLS communication in RabbitMQ
 
 To enable TLS you must manually configure the port used by the TLS listener as well as its certificate and corresponding key.

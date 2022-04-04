@@ -5,14 +5,6 @@ tags: support-application_development; support-Application_Lifecycle; support-de
 
 # LifeTime API v1
 
-
-<pre class="script-css">
-/* HIDE H3, H4 AND H5 FROM TOC */
-#mt-toc-container li li li {
-    display:none;
-}
-</pre>
-
 <div class="warning" markdown="1">
 
 This version of LifeTime API is **deprecated**. Use [LifeTime API v2](<lifetime-deployment-api-v2.final.md>) instead.

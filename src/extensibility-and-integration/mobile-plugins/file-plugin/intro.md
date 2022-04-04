@@ -9,20 +9,20 @@ File Plugin lets you manage files and folders on a mobile device within the app 
 
 <div class="info" markdown="1">
 
-See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a demo app.
 
 </div>
 
-## Sample app
+## Demo app
 
-Install [File Sample App](https://www.outsystems.com/forge/component-overview/10011/file-sample-app) from Forge and open the app in Service Studio. The sample app contains logic for common use cases, which you can examine and recreate in your apps. For example, the sample app shows how to:
+Install [File Demo App](https://www.outsystems.com/forge/component-overview/10011/file-sample-app) from Forge and open the app in Service Studio. The demo app contains logic for common use cases, which you can examine and recreate in your apps. For example, the demo app shows how to:
 
 * Read a file
 * List files
 * List folders
 * Save text in temporary file
 
-![Sample app](images/sample-app.png?width=300)
+![Demo app](images/sample-app.png?width=300)
 
 ## Working with binary content
 

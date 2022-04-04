@@ -44,7 +44,7 @@ The way you implement a service in OutSystems will be different if your service 
 
 In OutSystems, exposing a **Server Action** generates a [strong dependency](strong-weak-dependencies.md#strong-dependencies) from the consumer to the producer module, in a **tightly-coupled** way.
 
-![](images/services-1.png?width=250)
+![](images/services-1-diag.png)
 
 The Server Action logic is executed just as if it is defined in the consumer module, running in a single process with the same request and transaction.
 
@@ -54,11 +54,11 @@ Each time the implementation of an exposed Server Action changes, the consumer m
 
 In OutSystems, a **Service Action** is a REST based remote call to another process, but its usage is very similar to public Server Actions. 
 
-![](images/services-2.png?width=600)
+![](images/services-2.png)
 
 Exposing a Service Action generates a [weak dependency](strong-weak-dependencies.md#weak-dependencies) from the consumer to the producer module, in a **loosely-coupled** way.
 
-![](images/services-3.png?width=250)
+![](images/services-3-diag.png)
 
 Each time the implementation of an exposed Service Action changes, that change **takes immediate** effect in the consumer modules.
 
@@ -91,10 +91,6 @@ Service Actions mix the advantages of loosely-coupled REST API methods with the 
 **Access governance**
 :   Service Actions follow the same governance model as any other reusable element defined by permissions in LifeTime.
 
-#### Scalability
-
-Due to its loosely-coupled nature, using Service Actions enable you to handle additional load by scaling your service through [container deployment](../../managing-the-applications-lifecycle/containers/intro.md). The requests to the service will then be distributed among the several containers.
-
 #### Dealing with transactionality and networking
 
 Since Service Actions don’t share the same process and transaction with the consumers, implementing fault-tolerant services using Service Actions requires additional logic on the consumer side.
@@ -115,7 +111,6 @@ The table below compares the most relevant differences between Server Actions an
 |   | Server Actions | Service Actions |
 | - | -------------- | --------------- |
 | **Release cycles** | Changes in implementation requires consumers to also be deployed. | Changes in the implementation can be deployed independently from the consumers. |
-| **Scaling through containers** | Each runtime is published with all dependencies. | Loosely coupled elements can be built and published independently.|
 | **Service communication** | Consumer and producer modules run in a single process. | Consumer and producer modules run in different processes. |
 | **DB transactions** | All transactions in a single process. |Multiple processes require multiple transactions. |
 | **Development effort** | Simpler logic and faster development. | Requires additional logic to handle transactionality and networking. |
@@ -129,7 +124,7 @@ OutSystems provides you with a set of features that help you [converting existin
 
 You will probably start having a small service that is used by a single application. Take the example of a Customer service that encapsulates functionality to be reused by a Order Management application from the Sales department:
 
-![](images/services-4.png?width=200)
+![](images/services-4-diag.png)
 
 Using **Server Actions** to expose Customer functionality simplifies the logic of the Order Management application, since the logic runs in a single process with the same request and transaction. However, changes in the Customer service may require the deploy of the Order Management application too.
 
@@ -139,7 +134,7 @@ As long as these modules have the **same release cycle**, keeping these modules 
 
 Then your system evolves and you have more applications using your service, for example a Shipping application, also from the Sales department:
 
-![](images/services-5.png?width=350)
+![](images/services-5-diag.png)
 
 Keeping the modules tightly-coupled, using **Server Actions** to expose Customer functionality, will now require that Order Management and Shipping applications are both deployed together with Customer service whenever this module changes, increasing the deployment effort. On the other hand, the logic of Order Management and Shipping applications is still simple to develop and maintain. 
 
@@ -149,18 +144,12 @@ Since both applications belong to Sales department and have **similar release cy
 
 When you start having services that are reused by several applications, supporting different lines of business with **independent release cycles**, keeping all the modules tightly-coupled starts to be a burden in the deployment phase. Changes in the Customer service will now have negative impact in the release cycles of each consumer, because they may not be ready to be deployed yet.
 
-![](images/services-6.png?width=500)
+![](images/services-6-diag.png)
 
 At this point you should consider exposing the functionality of your service in a loosely-coupled way, using Service Actions:
 
-![](images/services-7.png?width=500)
+![](images/services-7-diag.png)
 
 In this case, using Service Actions to expose functionality will increase business value by enabling several consumers to have **independent release cycles**. On the other hand, you will have additional development effort, since the developer must implement additional logic to handle multiple processes and transactions. 
 
 To decide for using Service Actions to expose functionality, you must evaluate if the additional development effort pays off the increased business value of having independent release cycles.
-
-#### Services with scaling requirements
-
-If you already have a large distributed service with **processor intensive tasks**, using Service Actions will enable you to scale your service through [container deployment](../../managing-the-applications-lifecycle/containers/intro.md).
-
-To decide for using Service Actions to expose functionality, you must evaluate if the additional development effort pays off the capability to scale your service.

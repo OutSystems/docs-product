@@ -255,14 +255,14 @@ D | Duration | The time, in milliseconds, that passed from the moment the user m
 LT | Load Time | The time, in milliseconds, that the browser took to process the response. The load time includes for example the page rendering and the JavaScript execution.  
 TTFB | Time To First Byte | The time, in milliseconds, that passed from the moment the user made the request (for example, user clicked on a link), until the browser received the first byte of the response from the Platform Server.  
 TTLB | Time To Last Byte | The time, in milliseconds, that passed from the moment the user made the request (for example, user clicked on a link), until the browser received the last byte of the response from the Platform Server.  
-DMan | Device Manufacturer | The name of the device manufacturer. The value is collected only when running the application natively on a mobile device.  
-DMod | Device Model | The name of the device model. The value is collected only when running the application natively on a mobile device.  
-DPlat | Device Platform | The operating system running on the device. The value is collected only when running the application natively on a mobile device.  
-DPlatV | Device Platform Version | The version of the device's operating system. The value is collected only when running the application natively on a mobile device.  
-NT | Network Type | The active network type used by the device. This can either be the Carrier Network Type (for example, 3G) or WiFi. The value is collected only when running the application natively on a mobile device.  
-CN | Carrier Name | The name of the communications service provider of the device. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
-CCC | Client Country Code | The ISO-Alpha2 country code associated with the device's carrier. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
-CNT | Carrier Network Type | The active network type provided by the device's carrier, such as 3G or GPRS. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
+DMan | Device Manufacturer | **[Deprecated as of Platform Server 11.12.0]** The name of the device manufacturer. The value is collected only when running the application natively on a mobile device.  
+DMod | Device Model | **[Deprecated as of Platform Server 11.12.0]** The name of the device model. The value is collected only when running the application natively on a mobile device.  
+DPlat | Device Platform | **[Deprecated as of Platform Server 11.12.0]** The operating system running on the device. The value is collected only when running the application natively on a mobile device.  
+DPlatV | Device Platform Version | **[Deprecated as of Platform Server 11.12.0]** The version of the device's operating system. The value is collected only when running the application natively on a mobile device.  
+NT | Network Type | **[Deprecated as of Platform Server 11.12.0]** The active network type used by the device. This can either be the Carrier Network Type (for example, 3G) or WiFi. The value is collected only when running the application natively on a mobile device.  
+CN | Carrier Name | **[Deprecated as of Platform Server 11.12.0]** The name of the communications service provider of the device. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
+CCC | Client Country Code | **[Deprecated as of Platform Server 11.12.0]** The ISO-Alpha2 country code associated with the device's carrier. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
+CNT | Carrier Network Type | **[Deprecated as of Platform Server 11.12.0]** The active network type provided by the device's carrier, such as 3G or GPRS. The value is collected only when running the application natively on a mobile device, and the device supports a carrier-based network service such as 3G or GPRS.  
 
 #### Request event details for WebScreenServerExecuted event { #webscreenserverexecuted-details }
 

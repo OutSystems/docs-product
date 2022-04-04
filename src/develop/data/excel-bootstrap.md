@@ -7,6 +7,10 @@ tags: support-Database; support-database-featured
 
 You can import data from an Excel file to load data to an entity. This is useful when you are developing and testing your application. This way, you can quickly have your data up and running in the application while developing it.
 
+<div class="info" markdown="1">
+If you're using Google Sheets, download your document as an .xlsx file (File > Download > Microsoft Excel), and then bootstrap the data. 
+</div>
+
 ## Validate the Excel file
 
 1. Open the Excel file, check that the Excel sheet has the name of the Entity and the column headers have the names of the entity attributes.
@@ -38,6 +42,6 @@ When you publish the module, it executes the action to bootstrap the data. If th
 
 ## Demo/Sample
 
-Check this demo on how to bootstrap your data from an Excel file, and [download the Sample](resources/BootstrapFromExcel.oml) and the [sample data](resources/SampleData.xls) used in it.
+Check the following demo on how to bootstrap your data from an Excel file, and [download the sample app](resources/Products.oap) and the [sample data](resources/Products.xls) used in it.
 
-<iframe width="750" height="500" src="https://www.youtube.com/embed/-8o-d_xrxbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="750" height="500" src="https://www.youtube.com/embed/pIeuSPahI9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>

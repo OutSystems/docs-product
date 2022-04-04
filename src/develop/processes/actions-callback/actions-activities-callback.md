@@ -5,7 +5,7 @@ When designing the process flow of your process, you can add business rules to v
 
 ## Add an Activity Callback Action
 
-1. In the **eSpace tree**, under the **Process** layer, right-click on the **Process Activity** element and select the callback action.
+1. In the **module tree**, under **Processes**, right-click on the **Process Activity** element and select the callback action.
 
 1. Design the behavior of the action.
 
@@ -49,7 +49,7 @@ The activities callback actions at the process level are identified by the activ
 
 ## Add an Activity Callback Action at Process Level
 
-1. In the **eSpace tree**, under the **Process** layer, right-click on the **Process** element and select the available `On Activity ...` action.
+1. In the **module tree**, under **Processes**, right-click on the **Process** element and select the available `On Activity ...` action.
 1. Design the behavior of the action.
 
 When the process is being executed, the activity callback actions are executed as follows:

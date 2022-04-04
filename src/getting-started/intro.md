@@ -13,7 +13,7 @@ OutSystems lets you build great and secure web and mobile apps. This is what you
 
 <div class="info" markdown="1">
 
-We've been working on this article. Please let us know how useful this new version is by voting.
+We are working on this article. Please let us know how useful this new version is by voting.
 
 </div>
 
@@ -22,11 +22,11 @@ We've been working on this article. Please let us know how useful this new versi
 
 To create your first app in Service Studio you can: 
 
-* Run a **built-in interactive tutorial**. In Service Studio, open the Help menu and select **Build an App in 5 minutes tutorial** to start and interactive tutorial. 
+* Run a **built-in interactive tutorial**. In Service Studio, open the **Help** menu and select **Build an App in 5 minutes tutorial** to start and interactive tutorial. 
 * Follow **step-by-steps tutorials**. Check out the tutorials about [how to create a mobile app](create-mobile.md) or [how to create a web app](create-reactive-web.md).
 * Start from an **existing sample app**. Create a new app in Service Studio and choose **Start from an app** to see the collection of the prebuilt apps.
 
-![Creating a new app in OutSystems](images/getting-started-new-app-ss.png?width=700)
+![Creating a new app in OutSystems](images/getting-started-new-app-ss.png)
 
 ## Creating apps
 
@@ -56,8 +56,6 @@ With Development Environment you also get Integration Studio, for writing extens
 
 OutSystems documentation is here to help you build, publish, maintain, and troubleshoot your apps. The section you're reading now is a good starting point — check the links in the table of content, or use the search to find something specific.
 
-* [OutSystems 11 Docs](https://success.outsystems.com/Documentation/11)
-
 ## Training
 
 There are free online courses that teach how to use OutSystems. There are official workshops as well. If you decide, like many, to pursue a career in OutSystems low-code development, there's a certification program to help you with that.
@@ -65,7 +63,7 @@ There are free online courses that teach how to use OutSystems. There are offici
 * [OutSystems overview](https://www.outsystems.com/learn/courses/173/outsystems-overview/)
 * [All OutSystems training courses](https://www.outsystems.com/learn/courses/)
 
-![Training](images/getting-started-training.png?width=700)
+![Training](images/getting-started-training.png)
 
 ## Community
 
@@ -73,4 +71,4 @@ The OutSystems community welcomes all. Join the community in the Forum, to share
 
 * [OutSystems Forums](https://www.outsystems.com/forums/)
 
-![Community](images/getting-started-community.png?width=700)
+![Community](images/getting-started-community.png)

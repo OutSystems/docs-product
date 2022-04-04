@@ -33,7 +33,7 @@ This object provides access to the SOAP client object implementing the ISOAPClie
 
 Name  |  Description  
 ---|---  
-static %%[ISOAPClient](<#isoapclient-interface>) GetCurrentClient() | Returns the client used for the request. Should only be used inside the On Before Request callback, otherwise it returns `null`.
+static <br/>[ISOAPClient](<#isoapclient-interface>) GetCurrentClient() | Returns the client used for the request. Should only be used inside the On Before Request callback, otherwise it returns `null`.
 static void RegisterEndpointBehavior([IEndpointBehavior](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.iendpointbehavior?view=netframework-4.6.1>) behavior) | Registers a callback to modify the request message or/and response message.
 static string GetActionName() | Returns the name of the SOAP method that invoked the extension. 
 
@@ -46,10 +46,10 @@ ISOAPClient is an OutSystems interface providing an abstraction over Windows Com
 
 Name | Type |  Description  
 ---|---|---  
-ClientCredentials | [ClientCredentials](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.clientcredentials?view=netframework-4.6.1>)%%(from WCF) | Ready-only property that returns an object representing the client credentials used to call an operation.
-Endpoint | [ServiceEndpoint](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.serviceendpoint?view=netframework-4.6.1>)%%(from WCF) | Read-only property that returns the target endpoint for the service to which the WCF client can connect.
-InnerChannel | [IClientChannel](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.iclientchannel?view=netframework-4.6.1>)%%(from WCF) | Read-only property that returns the client channel for the WCF client object.
-State | [CommunicationState](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.communicationstate?view=netframework-4.6.1>)%%(from WCF) | Read-only property that returns the enum value of the current state of the System.ServiceModel.ClientBase object.
+ClientCredentials | [ClientCredentials](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.clientcredentials?view=netframework-4.6.1>)<br/>(from WCF) | Ready-only property that returns an object representing the client credentials used to call an operation.
+Endpoint | [ServiceEndpoint](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.description.serviceendpoint?view=netframework-4.6.1>)<br/>(from WCF) | Read-only property that returns the target endpoint for the service to which the WCF client can connect.
+InnerChannel | [IClientChannel](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.iclientchannel?view=netframework-4.6.1>)<br/>(from WCF) | Read-only property that returns the client channel for the WCF client object.
+State | [CommunicationState](<https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.communicationstate?view=netframework-4.6.1>)<br/>(from WCF) | Read-only property that returns the enum value of the current state of the System.ServiceModel.ClientBase object.
 
 ### Methods
 

@@ -17,7 +17,7 @@ Package of Last Tagged Version
 
     There are two operations available in this column:  
 
-    — **Download App Package**: Allows you to download the APK/IPA file of the displayed package, according to the current mobile platform.  
+    — **Download App Package**: Allows you to download the AAB/APK/IPA file of the displayed package, according to the current mobile platform.  
 
     — **Download Mobile App Build Logs**: Allows you to download the build logs of the displayed package for the current platform. For more information check [Download Mobile App Build Logs](<intro.md#download-mobile-app-build-logs>).
 

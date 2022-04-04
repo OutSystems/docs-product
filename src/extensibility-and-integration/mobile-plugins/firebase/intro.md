@@ -5,11 +5,18 @@ tags: article-page; runtime-mobile; support-application_development; support-Mob
 
 # Firebase Plugins
 
-Firebase is a Google mobile development platform. It speeds up development many of the common development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
+Firebase is a Google mobile development platform. It speeds up development of many development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
 
-* [Analytics Plugin](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)
+* [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)
 * [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)
+* [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase)
 * [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
+
+<div class="info" markdown="1">
+
+To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating to the supported Firebase-based mobile plugins](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Migrating_to_the_supported_Firebase-based_mobile_plugins). 
+
+</div>
 
 ## Prerequisites
 
@@ -21,6 +28,10 @@ To use the Firebase plugins you meet the following requirements:
 
     * **GoogleService-Info.plist** for iOS
     * **google-services.json** for Android
+
+## Demo app
+
+Install [Firebase Mobile Sample App](https://www.outsystems.com/forge/component_overview.aspx?projectid=10707&projectname=firebase-mobile-sample-app) from Forge and open the app in Service Studio. The demo app contains logic for common use cases, which you can examine and recreate in your apps. If you want to build the app and run it, check the prerequisites in the Forge page.
 
 ## Adding and using a Firebase plugin
 
@@ -48,7 +59,7 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
 
 2. Right-click the **Resources** folder and select **Import Resource**. The **Import Resource** dialog opens.
 
-3. Select the [google-services.zip firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
+3. Select the [google-services.zip Firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
 
     ![Resources folder in Service Studio](images/resources-folder-ss.png?width=350)
 
@@ -73,7 +84,7 @@ Add the files **GoogleService-Info.plist** and **google-services.json** in a zip
 
 A Firebase Plugin requires that you supply configuration files in the app file resources. The mobile apps commonly have different identifiers in different environments, so you need to generate target directories for each environment.
 
-To get the target directory, concatenate the **app identifier** and **.fierbase**. Here are examples for three environments with different app identifiers.
+To get the target directory, concatenate the **app identifier** and **.firebase**. Here are examples for three environments with different app identifiers.
 
 | Environment | App identifier | Target directory |
 | - | - | - |
@@ -82,3 +93,33 @@ To get the target directory, concatenate the **app identifier** and **.fierbase*
 | PROD | com.sample.prod.MyApp | `com.sample.prod.MyApp.firebase` |
 
 Use the target directory value in the **Target Directory** property of the **Resource**.
+
+### Additional setup for the Dynamic Links Plugin
+
+The Firebase Dynamic Links Plugin has some additional setup steps that need to be followed for it to work correctly:
+
+* You need to include a global preference in the Extensibility Configurations of the application using the plugin. The value for this preference needs to match the URL prefix you set in the Dynamic Links page in the Firebase console. For example:
+
+    ```
+    {
+        "preferences": {
+            "global": [{
+                "name": "FIREBASE_DOMAIN_URL_PREFIX",
+                "value": "outsystemsfirebase.page.link"
+            }]
+        }
+    }
+    ```
+
+* For iOS, you need to use a provisioning profile from Apple that contains the Associated Domains capability. For more info, see [Configuring an Associated Domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain) by Apple.
+
+### Ensuring app is compliant with Apple’s Data Use and Sharing guidelines
+
+Starting with iOS 14.5, apps on the App Store must receive the user’s permission to collect tracking data through the  AppTrackingTransparency framework.
+
+![RequestTrackingAuthorization client action parameters on Service Studio](images/firebase-request-tracking-authorization.png)
+
+To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin.
+If you want to present an alert prior to the iOS tracking permission dialog, enable the **ShowInformation** parameter on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
+
+You can use the **RequestTrackingAuthorization** action multiple times in the same app, since iOS remembers users' choice and only prompts users again after they uninstall and then reinstall the app on the device.

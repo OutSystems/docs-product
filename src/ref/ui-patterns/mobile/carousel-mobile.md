@@ -5,162 +5,86 @@ summary: Advanced use cases for the Carousel UI Pattern.
 
 # Carousel Reference
 
-## Customizing the dots
-
-You can use CSS to customize the look and feel of the dots.
-
-**Example 1:**
-  
-```css
-.carousel .carousel-dots-container .carousel-dot.active {
-    opacity: 1;
-    width: 16px;
-    height: 2px;
-    margin-top: 2px;
-    transition: opacity 275ms ease-out;
-}
-    
-.carousel .carousel-dots-container .carousel-dot {
-    border-radius: 0;
-    height: 1px;
-    margin: 3px 3px;
-    width: 8px;
-    transition: opacity 275ms ease-out;
-}
-```
-
-![](images/carousel-1-ss.png)
-
-**Example 2:**
-   
-```css
-.carousel-dots-container .carousel-dot {
-    background: #fff;
-    border: 0px solid #fff;
-    height: 4px;
-    margin: 3px;
-    opacity: .5;
-    width: 4px;
-}
-
-.carousel-dots-container .carousel-dot.active {
-    background: transparent;
-    border: 1px solid #fff;
-    opacity: 1;
-}
-```
-
-![](images/carousel-2-ss.png)
-
-## Using the Carousel Pattern inside the Columns Pattern
-
-To use the Carousel Pattern inside any Columns Pattern, you must fix the columns' overflow, by adding the following style to the CSS:
-   
-```css
-.col {
-    overflow: hidden;
-}
-```
-
-## Getting the current position of a Carousel Item
-
-1. Create an **Integer** local variable (for example, Position) on the screen. 
-
-1. In the **OnItemChange** event of the block, create a new client action for the handler (CarouselCurrentPosition).   
-    a. The action receives a variable **Index**, which is the event that indicates the current position in the Carousel.
-
-1. Drag an **Assign** node and set the Position (your local variable) to Index. 
-
-    ![](images/carousel-3-ss.png)
-
-## Creating an onboarding screen using the Carousel Pattern
-
-A typical onboarding screen has a Carousel that takes the full height of the screen, slides for a couple of items and then displays a button to start using the app on the last slide. Follow the steps below to create your own onboarding screen using the Carousel.
-
-### Creating a carousel that occupies the screen height
-
-1. Start with a new Screen using a Blank Layout (Common\LayoutBlank).
-
-1. Drag the **Carousel** pattern into the **Content** placeholder
-(Interaction\Carousel).
-
-1. Add content to the Carousel, either static or dynamic items, from a List.  
-**Note: If you use a List Widget, you need to disable virtualization.**
-
-    Here's what it would look like:
-
-    ![image.png](images/carousel-4-ss.png) 
-
-### Displaying a Button when Viewing the Last Carousel Item
-
-1. Create a **boolean** local variable on the screen called **ShowButton**.
-
-1. Create an action called **OnChange** and add it to the **OnItemChange**
-handler of the Carousel.
-
-1. In this action, we will verify if the current position is equal to the
-total number of elements in the OnBoarding’s Carousel.
-
-    ![](images/carousel-5-ss.png)
-
-1. The logic is: if **“Index = 2”** the local variable is assigned to _True_
-, otherwise it is assigned to _False_ .
-1. The variable **showButton** shows the button to the user.
-
-1. Drag the **FloatingContent** pattern (Content\FloatingContent) into the
-screen.
-
-1. Add a **Container** and in the **Visible** parameter, set the local
-variable **showButton**.  
-a. Drag the “ **Animate** ” block into the container, and set the **Animation
-Type**.  
-b. Add a button into the Content placeholder.  
-  
-1. Publish your app.
-
-## Creating a carousel with navigation buttons
-
-This pattern includes [public actions](../../../develop/ui/patterns/mobile/public-actions.md) that you can use without having to use the Carousel's own
-navigation (Next, Previous or GoTo). In this use case, we will only use
-buttons to navigate in the Carousel:
-
-1. Create an action and drag either one of the public actions Next, Previous
-or GoTo.
-
-1. Create a button to associate the **onClick** event with the created
-action.
-
-1. See the image below with all possible actions.
-
-    ![](images/carousel-6-ss.png)
-
-## Creating a ListRemove in Carousel
-
-This pattern includes the **UpdateCarousel** [public actions](../../../develop/ui/patterns/mobile/public-actions.md) to update all variables and positions in the Pattern:
-
-1. Create an action and drag the **ListRemove** and **CarouselUpdate**
-actions.
-
-1. Create a **ListRemoveOnClick** button and associate the created action.
-
-1. See the example in the image below.
-
-    ![](images/carousel-7-ss.png)
-
 ## Events
 
-**Event Name** |  **Description** |  **Mandatory**  
----|---|---  
- OnItemChange  |  Returns the active item's current position.  |  False  
-  
-## Layout and Classes
+|Event|Output|Description|
+|---|---|---|  
+|OnSlideMoved: Optional|ItemIndex (Integer)|Event triggered when the Carousel is initialized.| 
+|Initialized: Optional|WidgetId (Text)|Event triggered when the carousel slide moves.| 
 
-![](images/carousel-8-diag.png)
+## Structure
 
-## CSS Selectors
+### Base Carousel block structure
 
-**Element** |  **CSS Class** |  **Description**  
----|---|---  
-Carousel Wrapper  |  .carousel  |  Container that wraps all Carousel elements.  
- Navigation Dots  |  .carousel-dot  |  All dots that represent the number of Carousel items.  
- Selected Navigation Dot  |  .carousel-dot.active  |  The dot that represents the currently active item.  
+![Base Carousel block structure](images/carousel-structure-diag.png)
+
+### Library added structure with static content
+
+![Library added structure with static content](images/carousel-structure-static-diag.png)
+
+### Library added structure with a List widget as content
+
+![Library added structure with a List widget as content](images/carousel-structure-list-diag.png)
+
+<div class="info" markdown="1">
+
+The differences between the structure and the Carousel element that receives the .splide main class means you don't have to manipulate the DOM when the Carousel has a List Widget inside. This is because the library expects a specific HTML structure for it to work.
+
+</div>
+
+## API
+If you are an advanced user, you might want to use the Carousel API (OutSystems.OSUI.Patterns.CarouselAPI) for more complex use cases.
+
+### Methods
+
+|Function|Description|Parameters|
+|---|---|---| 
+|ChangeProperty|Changes the property of the Carousel.|<ul><li>carouselId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul>| 
+|Create|Creates the new Carousel instance and adds it to the CarouselsMap.|<ul><li>carouselId: string</li><li>configs: string</li><li>provider: string</li></ul>| 
+|Dispose|Destroys the instance of the given Carousel.|<li>carouselId: string</li>| 
+|GetAllCarouselItemsMap|Returns the Map with all the Carousel instances at the page.|<li>Returns array of IDs</li>| 
+|GetCarouselItemById|Gets the Carousel instance ID.|<li>carouselId: string</li>| 
+|Initialize|Initializes the pattern instance.|<li>carouselId: string</li>| 
+|GoTo|Goes to a specific page index.|<ul><li>carouselId: string</li><li>index: number</li></ul>| 
+|Next|Goes to the next page.|<li>carouselId: string</li>| 
+|Previous|Goes to the previous page|<li>carouselId: string</li>| 
+|ToggleDrag|Toggles the drag events on the Carousel.|<ul><li>carouselId: string</li><li>hasDrag: boolean</li></ul>| 
+|UpdateOnRender|Updates on DOM changes inside the Carousel.|<li>carouselId: string</li>|  
+
+## Advanced use cases
+
+### Add a scale behavior on the active item
+
+1. Add a custom class, for example, ``.has-scale``, to the **ExtendedClass** property.
+
+1. Wrap each Carousel item in a Container. This ensures that the correct item receives the scale transition.
+
+1. Add the following CSS to your application theme:
+
+    ```css
+
+        .has-scale .splide__slide > * {
+            transform: scale(0.8);
+            transition: transform 300ms ease;
+        }
+
+        .has-scale .splide__slide.is-active > * {
+            transform: scale(1);
+        }
+
+    ```
+
+1. (Optional) If using only one item per slide, set custom Padding and Gap values, so the scale effect is noticeable.
+
+    ![Scale behavior](images/carousel-scale-ss.gif)
+
+### Disable the drag on the Carousel
+
+1. Create a new action on the Initialized event.
+1. On the **Logic** tab, in the **PatternsCarousel** folder, drag the **ToggleDrag** client action to the **Initalized** event flow.
+1. Set the **WidgetId** property of the action to the **CarouselId** returned from the **Initialized** event.
+1. Set the **HasDrag** boolean parameter to the desired value. In this example, it is set to False to disable the drag.
+
+    ![Disable drag](images/carousel-disabledrag-ss.png)
+
+    **Note**: You can use this client action linked to a button or any other trigger to toggle the drag in runtime.

@@ -2,7 +2,11 @@
 
 When consuming a SOAP web service you can use your own .NET code to change the connection or to customize the message in the request and/or response.
 
-The general workflow for implementing an advanced extensibility scenario is the following:
+To accelerate this, a Forge component called [SOAP Extensibility](<https://www.outsystems.com/forge/component-overview/5322/soap-extensibility-samples>) contains server actions implementing many SOAP extensibility use cases using the SOAP Extensibility API.
+
+You can use the server actions provided by this component directly in your applications or use them as a starting point for implementing your own specific extensibility use cases.
+
+If your use case, is not covered by the component or you want to create it from scratch, the general workflow for implementing an advanced extensibility scenario is the following:
 
 1\. Set up an OutSystems extension
 :   Create a new extension in Integration Studio and define the actions you need.
@@ -26,14 +30,6 @@ The general workflow for implementing an advanced extensibility scenario is the 
 
     ![](<images/ss-flow-add-callback.png>)
 
-## Example SOAP extensibility use cases { #example-use-cases }
+## SOAP extensibility component use cases { #example-use-cases }
 
-OutSystems provides guidelines on how to implement common use cases of SOAP advanced extensibility. Check the sub-topics of this page for more information.
-
-<div class="info" markdown="1">
-
-OutSystems provides a Forge component called [SOAP Extensibility Samples](<https://www.outsystems.com/forge/component-overview/5322/soap-extensibility-samples>) that contains server actions implementing many SOAP extensibility use cases using the SOAP Extensibility API.
-
-You can use the server actions provided by this component directly in your applications or use them as a starting point for implementing your own specific extensibility use cases.
-
-</div>
+Check this page sub-topics for guidelines on how to implement common use cases of SOAP advanced extensibility.

@@ -76,25 +76,7 @@ The default page title of the log-in page is blank. Navigate to **UI Flows** > *
 
 ### Page language settings for screen readers
 
-The language of a page allows screen readers to switch language profiles which provides the correct accent and pronunciation.
-To set the page language, perform the following steps:
-
-1. Go to **UI Flows** and click on **Layouts**.
-1. Expand the layout you're using.
-1. Double-click the **OnReady** action to open it.
-1. On the **Logic** tab, expand **Client Actions** > **OutSystemsUI** > **Accessibility**.
-1. Select the **SetLang** action in the logic, and drag it into the **OnReady** action, as shown in the figure below.
-1. On the **Properties**, enter an [ISO language code](https://tools.ietf.org/html/bcp47) (for example, "en-EN") in the **Lang** field.
-
-    ![Setting the Language on the OnReady action](images/set-page-language-ss.png)
-
-After following these steps for each of the used layouts and published the module, you can test the page language.
-
-<div class="info" markdown="1">
- 
-Remember to set the language of the log-in page too, as it isn't defined. Navigate to **UI Flows** > **Common** > **Login** to supply the language identifier by using the **SetLang** action as described.
- 
-</div>
+The locale of the app defines the language of the page. For more information see [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md).
 
 ### Image text alternatives
 
@@ -167,6 +149,12 @@ To bind labels with the Forms fields they refer to, perform the following steps:
 ![Associating labels to forms fields](images/form-labels-ss.png)
 
 After following these steps for each input field and published the module, you can test reading the inputs captions using a screen reader.
+
+<div class="info" markdown="1">
+
+Use the `aria-labelledby` attribute for more control when setting up relationships between objects and their text labels. For more information, see [Examples of ARIA](aria-roles-and-attributes.md#examples-of-aria). 
+
+</div>
 
 ### Form validation on screen readers
 

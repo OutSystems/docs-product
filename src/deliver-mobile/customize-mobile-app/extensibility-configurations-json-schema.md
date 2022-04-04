@@ -5,21 +5,11 @@ tags: runtime-mobile
 
 # Extensibility Configurations JSON Schema
 
-The value of the Extensibility Configurations property of a mobile app module is a JSON schema. In order that the mobile app package is correctly generated and there are no unexpected behaviours in runtime, the defined JSON schema must follow a set of constraints.
+The **Extensibility Configurations** field provides additional settings as a JSON string. A number of settings you can change in the user interface of the IDE (for example, the name of the app). Some advanced settings are available in the **Extensibility Configurations** only (for example, adding custom mobile plugins). You can edit **Extensibility Configurations** in the properties of your home module.
 
-## Constraints
+## Property schema
 
-1. The JSON schema and key/value pairs must follow the official structure described in this topic. 
-1. The first-level key/value pairs are optional and the order isn't relevant. 
-1. The developer must write the name of each name/value pair using lower case letters (the JSON is case sensitive). 
-1. Must only be specified one resource key in the JSON. All content used in the app (icons, splashscreens, and plugins) must be inside that file. 
-1. When specifying the resource file for the app, the resource name must end with ".zip". 
-1. The resource file name must be equal to the resource name of the file submitted by the developer. 
-1. The specified path for an asset (e.g. the icon or splash screen) in the JSON must be the same as the path inside the resources ZIP file. 
-
-In case some constraint is not respected, OutSystems might not be able to generate the mobile app package or the application behavior could be unstable.
-
-## Property Schema
+The value of the **Extensibility Configurations** property of a mobile app module is a JSON object. What follows is the JSON schema outlining the most common options. There may be other options applicable in your use case, if the feature you're using provides them. 
 
 ```javascript 
 {
@@ -138,3 +128,45 @@ In case some constraint is not respected, OutSystems might not be able to genera
     ]
 }
 ```
+
+## Preferences
+
+The following section provides more details about the options you can use in the `preferences` top-level property. For a comprehensive list of the available settings, see [preferences in Config.xml](https://cordova.apache.org/docs/en/dev/config_ref/index.html#preference) by Apache Cordova. 
+
+| Property                          | Platform | Default | Description |
+| --------------------------------- | -------- | ------- | ----------- |
+| (iOS_FEATURE)UsageDescription    | iOS        | NA       | Adds preferences that match the pattern of UsageDescription to the Info.plist file. For full list, see [Cocoa Keys](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW1) and filter by UsageDescription. For an example, see information about [iOS usage descriptions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service/MABS_Version_7.1#iOS_Usage_Descriptions) in the release notes. |
+| AddUploadWidgetPermissions      | Android, iOS        | true       | Set as false to skip adding permissions required by the upload widget to AndroidManifest.xml and/or Info.plist. For an example, see information about [Upload widget permissions](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service/MABS_Version_7.1#Upload_Widget_Permissions) in the release notes. |
+| EnableRefererHeaderCustomScheme | iOS        | false       | Set to true to inject the `Referer: URL` in the requests of the native app, where `URL` is the app domain.         |
+| InitLoggerSyncDelay             | Android        | 0       | Seconds to delay the logger synchronization after the initialization.         |
+| RemoveUserCertificates          | Android        | false       | Set to true to remove user certificates from the trust anchors in network_security_config.xml.         |
+| FilterTouchesWhenObscured | Android | false | Defines the value of the filterTouchesWhenObscured property of WebView on Android. Set to true to prevent the app from handling touches while obscured by other apps. Learn more about filterTouchesWhenObscured [here](https://developer.android.com/reference/android/view/View#security).|
+
+## Constraints
+
+To ensure the platform can build your app successfully and that your app works correctly, keep in mind the following restraints for the **Extensibility Configurations** JSON.
+
+### Generic
+
+Generic constants, applicable to all parts of the **Extensibility Configurations** JSON.
+
+* The JSON schema and key/value pairs must follow the structure as described in this topic. 
+* The first-level key/value pairs are optional and the order isn't relevant. 
+* Write the name of each name/value pair using lower case letters, as the JSON is case sensitive. 
+
+### Resources
+
+Constraints related to managing the app resources in the **Extensibility Configurations** JSON.
+
+* You can specify only one resource key in the JSON. All content used in the app must be inside that file (icons, splash screens, and plugins). 
+* When specifying the resource file for the app, the resource name must end with ".zip". 
+* The resource file name must be equal to the resource name of the file you add. 
+* The specified path for an asset (for example, the icon or splash screen) in the JSON must be the same as the path inside the resources ZIP file.
+
+## Additional information
+
+Additional information about the **Extensibility Configurations**.
+
+* For information about **progressive web app (PWA) manifest**, see [Advanced PWA settings and customization](../distribute-pwa/advanced.md).
+* You can **override** the JSON from Service Studio with a JSON in LifeTime. See [Override the default mobile Extensibility Configurations](../../managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md) for more information.
+* If you're using AppShield to **harden your mobile app** and protect it from tampering, see the [AppShield plugin configuration](../app-shield/intro.md#configuration).

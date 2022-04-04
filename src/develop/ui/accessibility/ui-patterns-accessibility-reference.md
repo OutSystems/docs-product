@@ -29,7 +29,7 @@ The Alert pattern further supports changing the ARIA role with the **SetAccessib
 
 When toggling the visibility of the Alert, you must update the **aria-hidden** attribute to guarantee the alert complies with the Accessibility guidelines. You can do this by using the **SetAriaHidden** client action.
 
-![Setting the role of the Alert pattern](images/set-role-alert-pattern-ss.png?width=350)
+![Setting the role of the Alert pattern](images/set-role-alert-pattern-ss.png)
 
 ## MasterDetail pattern
 
@@ -77,4 +77,4 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
 OutSystems recommends that you create a sample screen from the **Master Detail** Screen Template and check the accessibility settings in a working example.
 
-![Master detail axample](images/master-detail-example-ss.png)
+![Master detail example](images/master-detail-example-ss.png)

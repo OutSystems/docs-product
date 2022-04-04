@@ -2,7 +2,7 @@
 summary: How to add support for a different character encoding using the SOAP Extensibility API.
 ---
 
-# Example: Use a different character encoding
+# Use a different character encoding
 
 In this example scenario we will add support for using a different character encoding in the contents of SOAP requests.
 

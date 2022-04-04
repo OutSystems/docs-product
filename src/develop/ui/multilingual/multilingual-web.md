@@ -9,7 +9,7 @@ Besides the language that your Module was designed in (the default language) you
 
 <div class="info" markdown="1">
 
-These instructions are for translating Traditional Web Apps only. For Reactive Web and Mobile Apps see [Technical Preview: Multilingual apps](../multilingual-tp/intro.md).  
+These instructions are for translating Traditional Web Apps only. For Reactive Web and Mobile Apps see [Multilingual apps](../multilingual-tp/intro.md).  
 
 </div>
 
@@ -60,19 +60,19 @@ To export your translatable resources follow these steps:
 
         OutSystems Platform exports all translatable resources to a single Excel file listed in lines and columns as follows:
 
-        **Key**: the key of the translatable resource. It is unique within the eSpace and it does not change. New translatable resources get a different key.
+        **Key**: the key of the translatable resource. It's unique within the module and it doesn't change. New translatable resources get a different key.
         
-        **Location**: the location of the translatable resource in the eSpace.
+        **Location**: the location of the translatable resource in the module.
         
         **Text to be translated**: the text to be translated.
         
-        **Locale(s)**: columns for each language locale in your eSpace. Set the translated text here, however, if you want to keep using the original text just leave the translation text empty.
+        **Locale(s)**: columns for each language locale in your module. Set the translated text here, however, if you want to keep using the original text just leave the translation text empty.
 
     * **.resX (.NET resource format)**
 
         OutSystems exports all translatable resources to .resX files, one file **for each language locale** in your Module and one more file for the Module default language. The translatable resources information is organized in a XML way consisting basically in pairs of `<name, value>`, although a comment is also added:
 
-        **Name**: The name (key) of the translatable resource. It is unique within the eSpace and it does not change. New translatable resources get a different name.
+        **Name**: The name (key) of the translatable resource. It's unique within the module and it doesn't change. New translatable resources get a different name.
         
         **Value**: This is the field where you should put the translated text replacing the existing one.
         
@@ -93,10 +93,10 @@ To export your translatable resources follow these steps:
     Notice that no file name is asked and this is because Service Studio uses fixed names for its language translatable resource files, as follows:
 
     Excel Files
-    :   The name of the Excel file obeys to the following rule: `<eSpace name> + 'Language' + '.' + <Excel extension>`. For example, if your Module name is 'Recruitment' the language translatable resources file name is 'RecruitmentLanguage.xls'.
+    :   The name of the Excel file obeys to the following rule: `<module name> + 'Language' + '.' + <Excel extension>`. For example, if your Module name is 'Recruitment' the language translatable resources file name is 'RecruitmentLanguage.xls'.
 
     .resX Files
-    :   The name of the .resX files obey to the following rule: `<eSpace name> + 'Language' + '.' + <Language locale> + '.resX'`. For example, if your Module name is 'Recruitment' and has the following language locales: 'French (France)' (fr-FR) and 'French (Canada)' (fr-CA). Three files are generated: 'RecruitmentLanguage.fr-FR.resX', 'RecruitmentLanguage.fr-CA.resX, and 'RecruitmentLanguage.resX' (for the default language).
+    :   The name of the .resX files obey to the following rule: `<module name> + 'Language' + '.' + <Language locale> + '.resX'`. For example, if your Module name is 'Recruitment' and has the following language locales: 'French (France)' (fr-FR) and 'French (Canada)' (fr-CA). Three files are generated: 'RecruitmentLanguage.fr-FR.resX', 'RecruitmentLanguage.fr-CA.resX, and 'RecruitmentLanguage.resX' (for the default language).
 
 ### Export the Images for Translation
 

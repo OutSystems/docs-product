@@ -2,7 +2,7 @@
 summary: How to add WS-Addressing elements to SOAP requests using the SOAP Extensibility API.
 ---
 
-# Example: Add WS-Addressing elements to SOAP requests
+# Add WS-Addressing elements to SOAP requests
 
 In this example scenario we will add WS-Addressing related elements to the SOAP header of requests.
 

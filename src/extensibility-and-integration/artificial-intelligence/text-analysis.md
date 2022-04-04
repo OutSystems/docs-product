@@ -124,8 +124,6 @@ The **SpellCheck** Block has server-side logic to analyze text and retrieve sugg
 
 The user can either select a suggestion or ignore it. Once ignored, the suggestion no longer shows.
 
-![Spellcheck in action](images/text-analysis-gif1.gif)
-
 Additionally, you can use the just **RunSpellChecker** Server Action, without the Block. Drag the Server Action to the logic flow and enter the input parameters. Add logic to the flow after receiving the output structure.
 
 ### Speech to text conversion

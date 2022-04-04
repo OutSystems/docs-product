@@ -5,19 +5,25 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 
 # SSL Pinning Plugin
 
-In mobile apps, SSL Pinning or HTTP Public Key Pinning (HPKP) provides an extra layer of security to HTTPS communications to avoid, for example, man-in-the-middle attacks. SSL Pinning works client-side and verifies the server certificate by comparing hashes of public keys that are pre-bundled with the mobile app.
+In native mobile apps, SSL Pinning or HTTP Public Key Pinning (HPKP) provides an extra layer of security to HTTPS communications to avoid, for example, man-in-the-middle attacks. SSL Pinning works client-side and verifies the server certificate by comparing hashes of public keys that are pre-bundled with the mobile app.
 
-Keep in mind that, by design, calls to server actions stop working if there's a hash mismatch. In this case, you need to add a new hash list in the app, build a new version of the app, and distribute it to your users. To anticipate the hash mismatches, you can design the app so that it checks if the certificate is valid or not. For more information, see [Check the hash validity](#check-the-hash-validity) section.
+By design, if there's a hash mismatch, calls to server actions stop working.  If there's a hash mismatch, you must add a new hash list in the app, build a new version of the app, and distribute it to your users. To prevent a  hash mismatch, design the app to verify the certificate is valid. For more information, see [Check the hash validity](#check-the-hash-validity) section.
 
 SSL Pinning uses a customized version of the SSL certificate validation and doesn't rely on deprecated SSL Pinning in browsers.
 
-**Note** Don't use the SSL Pinning plugin in production with the default certificate provided by the OutSystems cloud as your apps won't work when OutSystems renews the certificate. In general, you should always use the certificate for which you have the certificate keys.
-
 <div class="info" markdown="1">
 
-See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app.
+See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a demo app.
 
 </div>
+
+## Important note about certificates
+
+To keep your environments secure, OutSystems continuously updates server certificates for their domains. This is important especially if your environments use OutSystems default domains and certificates.
+
+When certificates change, environments using these certificates in their apps can stop working. To fix this problem, you must generate a new app and distribute the app. If OutSystems is unable to notify you every time there is a change, everyone involved is at risk.
+
+OutSystems no longer supports the generation of the native mobile apps when using SSL Pinning to pin your apps to OutSystems managed certificates. This change affects all environments, production and non-production. If this change affects your environments, get new domains and certificates and provide them to OutSystems.
 
 ## How to implement SSL pinning in OutSystems
 
@@ -26,23 +32,23 @@ To implement SSL Pinning you must have two certificates on the server - one as t
 To implement SSL Pinning, follow these steps:
 
 1. Generate hashes for the public keys of the certificates.
-
 1. Create a configuration file with the hashes.
-
 1. Install the SSL Pinning from Forge.
-
 1. Add the configuration file to your mobile app.
-
 1. Validate that certificates are working only for the hashes in the mobile app.
+
+<div class="info" markdown="1">
+
+If you update the [configuration file](#create-the-configuration-file) of the SSL Pinning plugin in new versions of your app, you need to run the app build creation manually. See: [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
+
+</div>
 
 ### Generate the hashes for public keys
 
 To generate the hash of a public key in a certificate, get the certificate from the server and use [OpenSSL](http://slproweb.com/products/Win32OpenSSL.html) commands to do the following:
 
 1. Obtain the public key from the certificate.
-
 1. Calculate hash of the public key using the SHA-256 algorithm.
-
 1. Encode the hash of the public key in Base64.
 
 Here is an example of the openSSL commands to generate the hash of the certificate public key.
@@ -79,23 +85,23 @@ Create a JSON configuration file and populate it with hashes and the server addr
 
     }
 
-when creating the configuration file, keep the following in mind:
+When creating the configuration file, keep the following in mind:
 
 * The JSON structure must be as provided in this document.
-
 * The file must have a .json extension, for example, pinning.json.
-
 * Insert the full hostname of your server.
-
 * No subdomains are allowed in the host.
-
 * Each host must have at least two hash keys.
-
 * Prefix the hashes with sha256/;
-
 * Only unique hash keys are allowed for iOS.
+  
+If you're using an OutSystems personal environment, use a dummy text for the second hash key, as there’s only one certificate and hash key available for this environment.
 
-If you're using the [OutSystems personal environment](https://success.outsystems.com/Support/Personal_Environment/What's_an_OutSystems_personal_environment.), use a dummy text for the second hash key, as there’s only one certificate and hash key available for this environment.
+<div class="warning" markdown="1">
+
+If you change the SSL Pinning resource file **pinning.json**, you need to run the app build creation manually. See: [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
+
+</div>
 
 ### Add the configuration file to the app
 
@@ -113,7 +119,7 @@ In Service Studio, complete the following steps in the mobile app:
 
 ### Implement additional verification of the server certificate
 
-To add the SSL Pinning verification, you must install the SSL Pinning component from [Forge](https://www.outsystems.com/forge/) in your environment. 
+To add the SSL Pinning verification, you must install the [SSL Pinning Plugin](https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin) from Forge in your environment. 
 
   ![Adding SSL verification](images/sslplugin-1-ss.png)
 

@@ -45,7 +45,6 @@ In some scenarios you need to [debug some functionality exposed by another modul
 
 While developing **Traditional Web apps** you can also [debug modules in your Personal Area](<public-personal-areas.md>). This lets you test your changes separately from other developer's changes in the same module.
 
-
 ## Mobile debugging scenarios { #mobile-debugging-scenarios }
 
 There are different ways of debugging a mobile app that help you discover, understand, and fix issues. You can debug your mobile app in one of the following ways:
@@ -79,3 +78,13 @@ If you need to troubleshoot app crashes, a plugin or check the native code of ap
 See also recommendations in [Solve Common Mobile App Development Issues](<../solve-common-mobile-app-development-issues.md>) and [Best Practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>). These resources have useful tips that might save you some troubleshooting time.
 
 </div>
+
+## Working with dates and times
+
+When debugging an app and checking the values of the Date Time data type, keep in mind the following:
+
+* During debugging, Service Studio shows UTC date and time in the debugger.
+* In the client UI, the date and time are in the timezone of the client.
+* On the server, the date and time are in the timezone of the server.
+
+You can read more about timezones in [Available Data Types](../../../ref/data/data-types/available-data-types.md#date-time-notes).

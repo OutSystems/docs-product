@@ -31,7 +31,7 @@ Each role is defined by a set of permissions that determine which operations the
 :   Can be turned on/off for a specific environment.
 
 **Infrastructure-wide permissions**
-:   Control who can manage the infrastructure, including the environments and IT users.
+:   Control who can manage IT users, teams, and roles across the infrastructure. For self-managed infrastructures, allow managing the environments and its configurations.
 
 ![](images/lt-about-permission-levels-5.png?width=800)
 
@@ -137,7 +137,7 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 
 <table markdown="1">
 <tr>
-<th style="text-align: left" colspan="2">Monitor and Add Dependencies</th>
+<th style="text-align: left" colspan="2">Monitor and Add Dependencies *</th>
 </tr>
 <tr>
 <td>Assigned as **Default Role**</td>
@@ -152,6 +152,8 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <td>From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of this **application**. The user can also monitor the **application**.</td>
 </tr>
 </table>
+
+(*) **Monitor and Add Dependencies** permission level is available for environments with Platform Server Release Oct.2019 or later.
 
 <table markdown="1">
 <tr>
@@ -173,7 +175,7 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 
 <table markdown="1">
 <tr>
-<th style="text-align: left" colspan="2">Access</th>
+<th style="text-align: left" colspan="2">Access *</th>
 </tr>
 <tr>
 <td>Assigned as **Default Role**</td>
@@ -188,6 +190,8 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <td>Same behavior as **No Access** permission level for applications: The user can’t see the **application** listed in LifeTime, Service Center or Service Studio.</td>
 </tr>
 </table>
+
+(*) **Access** permission level is available for environments with Platform Server Release Oct.2019 or later.
 
 <table markdown="1">
 <tr>
@@ -249,7 +253,25 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 
 <table markdown="1">
 <tr>
-<th style="text-align: left" colspan="2">Manage Infrastructure and Users</th>
+<th style="text-align: left" colspan="2">Manage Users and Roles (applies only to OutSystems Cloud)</th>
+</tr>
+<tr>
+<td>Assigned as **Default Role**</td>
+<td>The user can add, edit and remove IT users, roles and teams. The user can also turn on/off features in Technical Preview. Setting this permission ON also sets ON the permission "Manage Teams and Application Roles"."</td>
+</tr>
+<tr>
+<td>Assigned for a **Team**</td>
+<td>Not applicable.</td>
+</tr>
+<tr>
+<td>Assigned for an **Application**</td>
+<td>Not applicable.</td>
+</tr>
+</table>
+
+<table markdown="1">
+<tr>
+<th style="text-align: left" colspan="2">Manage Infrastructure and Users (applies only to self-managed infrastructures)</th>
 </tr>
 <tr>
 <td>Assigned as **Default Role**</td>

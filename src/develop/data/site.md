@@ -21,7 +21,9 @@ Site Properties exist in the server-side of the application. To create and use a
 
 1. Use the Site Property in your server-side code by referring to it as `Site.<SitePropertyName>`.
 
-If you want to use the value of a Site Property in the client-side logic of a mobile application, you must add a Server Action to get the Site Property value and use that Server Action in your client-side logic.
+If you want to use the value of a Site Property in the client-side logic of a mobile application, you must add a Server Action to get the Site Property value and use that Server Action in your client-side logic. 
+
+Site Properties are stored in cache of your application until invalidated.
 
 ## Change the value of a Site Property in Service Center
 
@@ -45,7 +47,7 @@ Follow the steps below.
 1. Select the **GetMovies** Aggregate and set the **Max. Records** property value to `Site.MaxRecords`.
 1. Click the **1-Publish** button to publish your app, and open it on your web browser.
 1. Open a screen that uses the **GetMovies** Aggregate.
-1. Click on the **Module Management** ícon at the top-left side to open Service Center or open Service Studio on your web browser by typing `https://<Hostname>.outsystemscloud.com/ServiceCenter/eSpace_SiteProperty_Edit.aspx`.
+1. Click on the **Module Management** icon at the top-left side to open Service Center.
 1. Click on **Factory** and then **Modules**, and select the module on which you applied the Site Property.
 1. Go to **Site Properties** and check that it lists the **MaxRecords** Site Property.
 1. Change the **MaxRecords** value and refresh the page.

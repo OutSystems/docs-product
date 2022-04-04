@@ -19,6 +19,16 @@ In this example, we create a **NO PHOTOGRAPHY** icon by stacking a ban icon on t
 
     ![](<images/stackedicon-9-ss.png>)
 
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Stacked Icon widget into the Main Content area of your application's screen.
 
     ![](<images/stackedicon-10-ss.png>)
@@ -39,4 +49,4 @@ After following these steps and publishing the module, you can test the pattern 
 | IconBackColor (Color Identifier): Optional | Back Icon color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - Displays a black (Neutral10) icon (default value).</li><li>_Entities.Color.Green_ - Displays a green icon.</li></ul></p> |
 | IconSize (IconSize Identifier): Optional| Sets the icon size. The predefined values are:<p><ul><li>Size_2x</li><li>Size_3x</li><li>Size_4x</li><li>Size_5x</li><li>Percent_33</li></ul></p><p>Examples <ul><li>_Entities.IconSize.Size_2x_ - Increases the font to two times larger relative to the icon container.</li><li>_Entities.IconSize.Size_Percent_33_ - Increases the font to 33% larger relative to the icon container.</li></ul></p> |
 | InvertSize (Boolean): Optional | If True, the icon sizes are swapped. If False, they are not swapped. |
-| ExtendedClass (Text): Optional | Add custom style classes to the Separator UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Stacked Icon UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Stacked Icon UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional | Adds custom style classes to the UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |

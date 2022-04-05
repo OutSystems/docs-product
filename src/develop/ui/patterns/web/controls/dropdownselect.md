@@ -63,9 +63,9 @@ How this pattern behaves depends on the way it is bound.
 | **Property** |  **Description** |
 |---|---|
 | WidgetId (Text): Mandatory |  Element name (Combo Box and List Box) that triggers the element. |  
-| NoResultsText (Text): Optional |  Text to display when there are no results. The default value is _"No results found."_ |  
+| NoResultsText (Text): Optional |  Text to display when there are no results. The default value is "No results found." |  
 | SearchEnabled (Boolean): Optional  | If False, the search functionality is removed. This property does not work with the List Box. If True, the search functionality is enabled. This is the default value. | 
 | SearchResultsLimit (Long Integer): Optional |  Limits the number of results shown. | 
 | AdvancedFormat (Text): Optional   | Enables more options beyond what's provided through the inputs. For more options, go to [Choices library](https://github.com/jshjohnson/Choices). Default value is `{}`<p>Example</p> <li>`{ searchPlaceholderValue: 'Search' }`</li> |
-| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
   

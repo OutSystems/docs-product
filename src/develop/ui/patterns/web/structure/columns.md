@@ -17,6 +17,16 @@ You can use the Columns UI Pattern to split content into separate columns, impro
 
     ![](<images/columns-2-ss.png>)
 
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the required Column widget into the Main Content area of your application's screen. In this example, we drag the Columns 2 widget onto the screen.
 
     ![](<images/columns-3-ss.png>)
@@ -38,7 +48,7 @@ After following these steps and publishing the module, you can test the pattern 
 | GutterSize (GutterSize Identifier): Optional | Set the gutter size. The default Gutter size is large.<p>Examples <ul><li>_Blank_ - A large white space between each column (default value).</li><li>_Entities.GutterSize.Gutter_None_ - No white space between each of the columns</li><li>_Entities.GutterSize.Gutter_XS_ - An extra small white space between each of the columns</li></ul></p> |
 | TabletBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on tablets. The predefined options for the tablet behavior are: <p><ul><li>All</li><li>First</li><li>Last</li><li>Middle</li><li>None (default).</li></ul></p><p>See below for an example of how each setting displays.</p>|
 | PhoneBehavior (BreakColumns Identifier): Optional | Defines how the columns are displayed on phones. The predefined options for the phone behavior are: <p><ul><li>All (default).</li><li>First</li><li>Last</li><li>Middle</li><li>None</li></ul></p><p>See below for an example of how each setting displays.</p>|
-| ExtendedClass (Text): Optional  |Add custom style classes to the Columns UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - Adds the _myclass_ style to the Columns UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Columns UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional  |Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
 
 The following are examples of how the columns are displayed on each of the devices, depending on which property you select.
 

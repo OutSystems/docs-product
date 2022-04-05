@@ -31,9 +31,7 @@ Do the following:
 
     ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog.png)
 
-1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Finish**.
-
-    ![Dialog to choose one of the available server endpoints](images/ss-rest-consume-multiples-server-endpoint-dialog.png?width=582)
+1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Next**.
 
     _Note:_ You can't change the server endpoint after importing the REST API.
 

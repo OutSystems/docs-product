@@ -17,6 +17,16 @@ The Dropdown Select is a pattern that you can apply to other patterns to impleme
 
     ![](<images/dropdownselect-1-ss.png>)
 
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Dropdown Select widget into the Main Content area of your application's screen.
 
     ![](<images/dropdownselect-5-ss.png>)
@@ -57,5 +67,5 @@ How this pattern behaves depends on the way it is bound.
 | SearchEnabled (Boolean): Optional  | If False, the search functionality is removed. This property does not work with the List Box. If True, the search functionality is enabled. This is the default value. | 
 | SearchResultsLimit (Long Integer): Optional |  Limits the number of results shown. | 
 | AdvancedFormat (Text): Optional   | Enables more options beyond what's provided through the inputs. For more options, go to [Choices library](https://github.com/jshjohnson/Choices). Default value is `{}`<p>Example</p> <li>`{ searchPlaceholderValue: 'Search' }`</li> |
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Dropdown Select UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown Select UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown Select UI styles being applied.</li></ul> |
+| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
   

@@ -34,7 +34,7 @@ Mandatory
 `Attribute <n>`
 </td>
 <td>
-You should change the name of the attribute to a suitable value.%%
+You should change the name of the attribute to a suitable value.<br/>
 See [rules for naming elements](<../element-naming.md>).
 </td> </tr>
 <tr>
@@ -58,8 +58,8 @@ To define an attribute as optional, simply un-check this property.
 Data Type
 </td>
 <td>
-Indicates the type of the attribute. You can use basic data types such as `Text` or `Integer`; or you might need more complex data types to handle this attribute. Integration Studio provides the `Record` and `Record List` data types. The definition of these two data types are based on the [structures](<../../../extensibility-and-integration/integration-studio/managing-extensions/structure-define.md>) and [entities](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-define.md>) you have available in your extension.%%
-%%
+Indicates the type of the attribute. You can use basic data types such as `Text` or `Integer`; or you might need more complex data types to handle this attribute. Integration Studio provides the `Record` and `Record List` data types. The definition of these two data types are based on the [structures](<../../../extensibility-and-integration/integration-studio/managing-extensions/structure-define.md>) and [entities](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-define.md>) you have available in your extension.<br/>
+<br/>
 ![](images/warning.gif) OutSystems does not allow recursive structures.
 </td>
 <td>

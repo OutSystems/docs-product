@@ -9,7 +9,7 @@ A **Process** is an element that allows you to integrate your business processes
 
 ## Create a Process
 
-1. In the **eSpace tree**, under the **Processes Layer**, right-click on the **Processes** folder and select **Add Process**.
+1. In the **module tree**, under **Processes**, right-click on the **Processes** folder and select **Add Process**.
 2. Rename it as desired. OutSystems Platform automatically opens the process flow on the flow canvas.
 3. Design the behavior of the process (i.e. the [process flow](<process-flow/intro.md>)) using the [Process Flow Editor](<process-flow/process-flow-editor.md>).
 
@@ -38,9 +38,9 @@ A process can also be [executed](<../../ref/lang/auto/Class.Execute Process.fina
 
 ### Using Process References
 
-Service Studio provides you with mechanisms to reuse Processes among eSpaces. You can expose your Processes to other eSpaces or use Processes defined in another eSpace.
+Service Studio provides you with mechanisms to reuse Processes among modules. You can expose your Processes to other modules or use Processes defined in another module.
 
-If you are using an Oracle or DB2 database, commit the transaction before launching a Process instance.
+If you are using an Oracle, PostgreSQL or DB2 database, commit the transaction before launching a Process instance.
 
 
 ## Process Execution
@@ -58,7 +58,7 @@ Each activity instance has its own life cycle with several states followed from 
 
 ## Upgrading Your Process
 
-To upgrade your process flow, simply edit the process flow and publish your eSpace. OutSystems automatically performs the process flow upgrade for all executing process instances.
+To upgrade your process flow, simply edit the process flow and publish your module. OutSystems automatically performs the process flow upgrade for all executing process instances.
 
 
 ## Using Process Entities

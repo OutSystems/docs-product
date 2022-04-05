@@ -112,7 +112,7 @@ Because they have different User Providers, the user needs to have a different a
 
 **Until Platform Server 11.11.3** these users **are counted as different users** for licensing purposes.
 
-**From Platform Server 11.11.3 onwards**, identical users (same username or same email) in different User Providers **are counted as a single user** for licensing purposes, as long as they are in the [default tenant](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management#tenants).
+**From Platform Server 11.11.3 onwards**, identical users in different User Providers **are counted as a single user** for licensing purposes, as long as they are in the [default tenant](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management#tenants).
 
 Note that any account with the same username or email that exists in another tenant, **that is not the default tenant** of that User Provider, **is counted as a new user**. This happens because different tenants can have users in common that are not the same user. 
 

@@ -5,94 +5,85 @@ summary: Date Picker allows the end user to select a single or a range of dates 
 
 # Date Picker
 
-You can use the Date Picker UI Pattern to allow the user to select a single or a range of dates using a calendar.
+<div class="info" markdown="1">
 
-![](images/datepicker-image-13.png)
+If you are using an OutSystems UI version lower than 2.8.2, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
 
-<!-- The Date Picker pattern provides you with a date and time picker with a flat UI to display inline on the screen. It can receive lists of dates with events and it enables you have a selection within a range of days. The Date Picker was created using the [Pikaday.js
-library](https://github.com/dbushell/Pikaday/blob/master/README.md "https://github.com/dbushell/Pikaday/blob/master/README.md").
+</div>
 
-You can use this pattern to display a list of elements side by side, with a different number of items per row on different devices.-->
+You can use the Date Picker UI Pattern to allow users to select a single date using a calendar. The Date Picker Pattern is based on the [flatpickr library](https://flatpickr.js.org/). For more advanced options, you can refer to this library.
 
-## How to Use the Date Picker UI Pattern
-
-<!--Use static data or a **List** widget inside this block to display items in a gallery pattern.-->
+In this example, the user selects a date from the calendar, the date is saved in a variable and then displayed in an input widget.
 
 1. In Service Studio, in the Toolbox, search for `Date Picker`.
 
-    The Date Picker Image widget is displayed.
+    The Date Picker widget is displayed.
 
-    ![](<images/datepicker-image-2.png>)
+    ![Date Picker widget](<images/datepicker-widget-ss.png>)
+
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Date Picker widget into the Main Content area of your application's screen.
 
-    ![](<images/datepicker-image-1.png>)
-    
-    On the **Properties** tab, you are prompted to create an event.
-    
-    ![](<images/datepicker-image-3.png>)
-      
-1. To have access to the picked date, you need to create an assign to the
-**startDate** (if SelectInterval is False ).
+    By default, the Date Picker contains an **Input** widget (type Text).
 
-    ![](images/datepicker_create_an_event.png?width=500)
+    ![Drag the widget to the screen](<images/datepicker-drag-ss.png>)
 
-1. Set the default value of the variable **PickedDate** as CurrDateTime().
+1. Create a variable by selecting the **Input** widget, and on the **Properties** tab, select **New Local Variable** from the **Variable** dropdown.
 
-    ![](images/datepicker_start.png)
+    This variable stores any value entered into or received by the Input widget.
 
-**Result**
+    ![Create a new variable](<images/datepicker-var-ss.png>)
 
-![](images/datepicker_BasicExample.gif)
+1. Enter a name for the variable (in this example **DateTimeVar**) and select **Date Time** as the **Data Type**.
 
-### Listing Events of a Selected Day
+    ![Enter variable name and data type](<images/datepicker-varname-ss.png>)
 
-1. Set the area where you want to put the list of events.
+1. Right-click your main screen and add another local variable.
 
-    ![](images/add_new_date.png)
+    This variable stores the date selected by the user.
 
-1. Create an entity with a **DateTime** attribute.
+    ![Add another local variable](<images/datepicker-localvar-ss.png>)
 
-1. Set the entity in your **EventList** parameter on eventList, using the
-right attribute to map.
+1. Enter a name for the variable (in this example **DatePicked**) and select **Date Time** as the **Data Type**.
 
-    ![](images/interaction_datepicker.png)  
+    ![Enter variable name and data type](<images/datepicker-locvarname-ss.png>)
 
-1. Add the list to the page.
+1. To create an **OnSelect** event for the Date Picker, on the **Properties** tab, from the **Handler** dropdown, select New **Client Action**.
 
-    ![](images/date_time.png)  
+    ![Create onSelect event for Date Picker](<images/datepicker-clientaction-ss.png>)
 
-1. Create a Local Variable.
+1. To access the date selected by the user, create an **Assign** and set the **DatePicked** to **SelectedDateTime**.
 
-    ![](images/date_local_variable.png)  
+    ![Add assign and variable value](<images/datepicker-assign-ss.png>)
 
-1. Get another Aggregate for the Events and set a filter on the aggregate:  
-DateTimeToDate(Events.DateTime) = Date
+1. You can configure the Datepicker by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 
-    ![](images/datepicker_filter.png)
+    ![Set properties](<images/datepicker-properties-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app.
 
 **Result**
 
-![](images/datepicker_Profit.gif) 
+![Datepicker result](<images/datepicker-result.png>)
 
 ## Properties
 
-| **Properties** | **Description** |
+|Properties|Description|
 |---|---|
-| InputWidgetId (Text): Mandatory  | Input element Id that triggers the element so it is visible.  |
-| ButtonWidgetId (Text): Optional  |  Element name (example: button) that  triggers the element so it is visible. | 
-| EventList (Date Time List): Optional  |  Receives a List of DateTime records that are used to highlight days as event days. |  
-| MinDate (Date Time): Optional  |  Days before this date will be disabled. |  
-| MaxDate (Date Time): Optional  |  Days after this date will be disabled.  |   
-| InitialDate (Date Time): Optional |  The initially selected day for the Date Picker. If not set, it will be the current day by default.  | 
-| ShowWeekNumbers (Boolean): Optional  | If True, the week number is displayed on the left side of the Date Picker. If False, the week number is not dispalyed. This is the default. |  
-| FirstWeekDay (Integer): Optional  |  Defines which weekday is displayed first.<br/><ul><li>0: Sunday</li> <li>1: Monday (default)</li><li>2: Tuesday</li> <li>3: Wednesday</li><li>4: Thursday</li><li>5: Friday</li><li>6: Saturday</li></ul> | 
-| ShowTime (Boolean): Optional  | If True, a time picker is displayed below the Date Picker. If False, there is no time picker displayed. This is the default. |   
-| Show24HourFormat (boolean) | If True, the time picker is displayed in a 24-hour format. This is the default. If False, the time picker is displayed in a 12-hour format. |  
-| DisabledDaysList (Date Time List): Optional  |  Receives a List of DateTime records that will be disabled on the DatePicker. If this parameter is not set, all days between the MinDate and MaxDate are enabled. No default value.  |  
-| DisabledWeekDays (Text): Optional  |  String containing disabled weekdays.<br/><ul><li>0: Sunday </li><li>1: Monday </li><li>2: Tuesday </li><li>3: Wednesday </li><li>4: Thursday</li><li> 5: Friday </li><li>6: Saturday </li></ul>Example<br/><br/><ul><li>_Blank_ - All weekdays are active. </li><li>_"0,5"_ - Sunday and Friday are disabled.</li></ul> | 
-| SelectInterval (Boolean): Optional |  Allows the selection between two dates. If True, the Block Event "On Select" has the values for both parameters.  |   
-| StartEmpty (Boolean): Optional |  Defines whether the input for the Date Picker starts as empty.   | 
-| DateFormat (Text): Optional| Defaults to the date format defined in the server configuration. The default is the server date format.<br/><br/>Examples<br/><br/><ul><li>DD/MM/YYYY - 15/05/2020 </li> <li>MM/DD/YYYY - 05/15/2020</li><li>DD MMM YYYY - 15 May 2020</li></ul> |
-|ShowTodayButton (Boolean): Optional | If True, the Today button is displayed. If False, the Today Button is not displayed. This is the default. |
-|AdvancedFormat (Text): Optional | Allows fors more options beyond what is provided through the inputs. |
+|DateFormat (Text): Optional| Set the input date format. If empty, the date format will be the same as the server format. When using formats with time, make sure to set the **TimeFormat** property. The following are some examples:<ul><li>"DD/MM/YYYY" - 15/05/2022 </li> <li>"MM/DD/YYYY" - 05/15/2022</li><li>"DD MMM YYYY" - 15 May 2022</li><li>"DD-MMM-YYYY" - 15-May-2022</li><li>"DD.MMM.YYYY" - 15.May.2022</li><li>"MMM DDD, YYYY" - May Sun, 2022</li><li>"MMM DDD, YY" - May Sun, 22</li></ul> |
+|ShowTodayButton (Boolean): Optional | If True, the **Today** button is displayed below the Date Picker.  This button allows users to pick the date of the current day. If False, the **Today** Button is not displayed. The default value is False.|
+|TimeFormat (DatePickerTimeFormat Identifier): Optional|Select the time format (12 or 24 hours). By default, no time is shown.|
+|OptionalConfigs.InitialDate (Date Time): Optional|The initial selected date for the Date Picker. If not set, no initial date is selected.|
+|OptionalConfigs.MinDate (DateTime): Optional|All days before this date are disabled.|
+|OptionalConfigs.MaxDate (DateTime): Optional|All days after this date are disabled.|
+|OptionalConfigs.FirstWeekDay (DatePickerWeekDay Identifier): Optional|Defines which week day is displayed first.|
+|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <br/><br/>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet).|

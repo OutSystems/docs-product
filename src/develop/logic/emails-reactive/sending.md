@@ -3,7 +3,7 @@ summary: Use Send Email action on the server to send emails. Trigger manual or a
 tags: support-application_development,
 ---
 
-# Sending Emails
+# Sending emails
 
 When designing an app to send emails to your users, you must consider the following types of actions:
 
@@ -12,7 +12,7 @@ When designing an app to send emails to your users, you must consider the follow
 
 <div class="info" markdown="1">
 
-This content is about a technical preview. See [Technical Preview - Emails in Mobile and Reactive Web Apps](intro.md) for more information.
+Before following the guides in this article, make sure you meet the [prerequisites](intro.md#prerequisites).
 
 </div>
 

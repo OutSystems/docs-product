@@ -5,67 +5,89 @@ summary: The Dropdown Tags UI Pattern offers multiple choice options to the user
 
 # Dropdown Tags
 
-The Dropdown Tags UI Pattern offers multiple choice options to the user when when using a dropdown search.
+<div class="info" markdown="1">
 
-![](<images/dropdowntags-1-ss.png>)
+If you are using an OutSystems UI version lower than 2.8.2, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+
+</div>
+
+The Dropdown Tags UI Pattern offers multiple choice options to the user when when using a dropdown search.
 
 **How to use the Dropdown Tags UI Pattern**
 
-In this example, we create a dropdown tags search for a list of application users and a message that displays the number of selected items.
+In this example, we create a dropdown tags search for a list of employees and a message that displays the number of selected items.
 
 1. In Service Studio, in the Toolbox, search for `Dropdown Tags`.
 
     The Dropdown Tags widget is displayed.
 
-    ![](<images/dropdowntags-2-ss.png>)
+    ![Dropdown Tag widget](<images/dropdowntags-widget-ss.png>)
+
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Dropdown Search widget into the Main Content area of your application's screen.
 
-    ![](<images/dropdowntags-3-ss.png>)
+    ![Drag widget to screen](<images/dropdowntags-drag-ss.png>)
 
 1. Select and right-click your screen name, and select **Fetch Data from Database**.
 
-1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant database entity and click **OK**.
+1. To add a database entity, click the screen, and from the **Select Source** pop-up, select the relevant database entity and click **Select**.
 
-    In this example, we select the User entity. 
+    In this example, the **Sample_Employee** entity is selected. 
 
-    ![](<images/dropdowntags-4-ss.png>)
+    ![Select database entity](<images/dropdowntags-source-ss.png>)
 
-    The **GetUser** aggregate is automatically created.
+    The **GetEmployees** aggregate is automatically created.
 
-    ![](<images/dropdowntags-5-ss.png>)
+    ![Aggregate automatically created](<images/dropdowntags-aggregate-ss.png>)
 
-1. Return to your screen by double-clicking the screen name, select the Dropdown Tags widget, and on the **Properties** tab, set the mandatory properties (ItemList, Value, Text).
+1. Return to your screen by double-clicking the screen name, select the **Dropdown Tags** widget, and on the **Properties** tab, set the mandatory properties (**ItemList**, **Value**, **Text**).
 
-    ![](<images/dropdowntags-6-ss.png>)
+    ![Set mandatory properties](<images/dropdowntags-mandprops-ss.png>)
 
 1. Staying on the **Properties** tab, from the **Handler** dropdown, select **New Client Action**.
 
+    ![Create new client action](<images/dropdowntags-handler-ss.png>)
+
 1. Add the relevant logic to the client action. 
 
-    In this example, we add a Message to the client action and in the Expression Editor enter the following logic and click **DONE**. This will display the the number of items as they are selected.
+    In this example:
+    
+    1. Add a Message to the client action.
+    1. Add the following logic to the expression editor:
 
-    `CurrentList.Length`
+        `CurrentList.Length`
 
-    ![](<images/dropdowntags-7-ss.png>)
+    1. Click Close, we add a Message to the client action and in the Expression Editor enter the following logic and click **Close**. 
+    
+        This displays the number of selected items selected.
 
-1. You can change the Dropdown Search's look and feel by setting the (Optional) properties on the **Properties** tab.
+        ![Add logic](<images/dropdowntags-message-ss.png>)
 
-    ![](<images/dropdowntags-8-ss.png>)
+1. You can configure the Dropdown Tags by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
+
+    ![Set properties](<images/dropdowntags-properties-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app. The result of this example should look something like the following:
 
-![](<images/dropdowntags-9-ss.png>)
+![Dropdown Tag result](<images/dropdowntags-result.png>)
 
 ## Properties
 
-| Property | Description |
+|Property|Description|
 |---|---|
-| ItemList (DropdownItem List): Mandatory |  List of items to show in the dropdown. |  
-| SelectedItemsList (DropdownItem List): Optional | Use this parameter to set preselected items. |  
-| IsRemoveItems (Boolean): Optional | If True, the option to remove items is enabled. This is the default. If False, the option to remove items is disabled. |
-| IsDisabled (Boolean): Optional | If True, the dropdown search option is disabled. If False, the dropdown search is enabled. This is the default. |
-| SearchPrompt (Text): Optional | Text to display on the search prompt/placeholder. "Search" is the default value.|  
-| NoResultsText (Text): Optional | Text to display on the search prompt/placeholder. "No results found" is the default value. |
-| AdvancedFormat (Text): Optional | Allow for more options beyond what's provided through the inputs. Default value is `{}`. <p> Example</p> `{"searchEnabled": false}`. <p> For more information, visit: [Choices library](https://github.com/jshjohnson/Choices). </p><p>You can also use fuse.js options to change the search configuration. For more information about configurations, visit: [Fuse](https://fusejs.io/) </p> |
-| ExtendedClass (Text): Optional | Add custom style classes to the Dropdown Tags UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Dropdown Tags UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Dropdown Tags UI styles being applied.</li></ul> |
+|OptionsList (DropdownTagsOption List): Mandatory |  List of items to show in the dropdown. |  
+|SelectedOptions (DropdownTagsOption List): Optional | Defines preselected items in the dropdown list. |  
+|Prompt (Text): Optional | Text that is displayed when no items are selected. |
+|OptionalConfigs.IsDisabled (Boolean): Optional |Set as True to disable the Dropdown. |
+|OptionalConfigs.NoResultsText (Text): Optional |Text that is displayed when there are no results to show.|
+|OptionalConfigs.SearchPrompt (Text): Prompt text displayed in the search input box.|  
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

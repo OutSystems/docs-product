@@ -16,6 +16,10 @@
   - external:
     - "Data Synchronization Course": 
         https://www.outsystems.com/learn/courses/170/data-synchronization/
+- develop/data/offline/sync-implement.md:
+  - external:
+    - "Data Synchronization Course": 
+        https://www.outsystems.com/learn/courses/170/data-synchronization/
 
 # Expression editor
 - develop/logic/expression-editor.md:
@@ -23,6 +27,7 @@
   - ref/logic/expressions/operators.md
   - ref/logic/expressions/operands.md
   - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md
+  - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 - develop/logic/exceptions/handling-mechanism.md:
     - ref/lang/auto/Class.Exception Handler.final.md
@@ -389,6 +394,13 @@
     - develop/ui/navigation/ui-flow.md
     # Navigate to Another Screen
     - develop/ui/navigation/navigate-to-detail-screen.md
+
+# ------- Web System Events -------
+# On Session Start
+- ref/lang/auto/Class.On Session Start.final.md:
+    # Sessions in Web Applications
+    - develop/data/session.md
+
     
 # ------- Mobile Interfaces -------
 
@@ -470,6 +482,8 @@
     - ref/lang/auto/builtinfunctions.final.md
     # Expressions
     - ref/logic/expressions/intro.md
+    # Invalid Expression Error
+    - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 # Form
 - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Form.final.md:
@@ -704,6 +718,8 @@
     - develop/data/query/calculated-attribute-create.md
     # Available Data Types
     - ref/data/data-types/available-data-types.md
+    # Invalid Expression Error
+    - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 # Operands
 - ref/logic/expressions/operands.md:
@@ -900,19 +916,13 @@
 - connectors/integration-sap.md:
     - extensibility-and-integration/integration-builder/connectors/integration-sap-get-spec.md
 
-# --- Managing the Applications Lifecycle > Containers ---
+# --- Extensibility and Integration --- Extend Logic with Your Own Code (Integration Studio)
 
-- managing-the-applications-lifecycle/containers/intro.md:
-    - managing-the-applications-lifecycle/deploy-applications/zones/intro.md
-
-- managing-the-applications-lifecycle/containers/guide-ecs.md:
-    - one-way: managing-the-applications-lifecycle/containers/intro.md
-    - one-way: managing-the-applications-lifecycle/deploy-applications/zones/intro.md
+- extensibility-and-integration/integration-studio/extension-life-cycle/intro.md:
     - external:
-        - "Development FAQ: How to automate Docker container deployment with Jenkins": 
-            https://success.outsystems.com/Documentation/Development_FAQs/How_to_automate_Docker_container_deployment_with_Jenkins
-        - "Development FAQ: How to automate container deployment by using LifeTime API v2 and Jenkins": 
-            https://success.outsystems.com/Documentation/Development_FAQs/How_to_automate_container_deployment_by_using_LifeTime_API_v2_and_Jenkins
+        - "Server extension recompilation on upgrade":
+            https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Server_extension_recompilation_on_upgrade
+
 
 # --- Developing an Application ---
 
@@ -957,6 +967,12 @@
     - deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
     - managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md
     - deliver-mobile/customize-mobile-app/set-the-preferences-for-your-mobile-app.md
+
+# Harden the protection of mobile apps with AppShield
+- deliver-mobile/app-shield/intro.md:
+    - external:
+        - "Obfuscation and retracing logs of mobile builds":
+            https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Obfuscation_and_retracing_logs_of_mobile_builds
 
 # UI Web Patterns
 - develop/ui/patterns/web/content/accordion/accordion.md:
@@ -1017,7 +1033,7 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Carousel.aspx
         - "OutSystems UI Pattern": 
-            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=17
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=176
 - develop/ui/patterns/web/content/chatmessage.md:
     - ref/ui-patterns/web/chatmessage.md
     - external:
@@ -1383,6 +1399,7 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51   
 - develop/ui/patterns/mobile/content/accordion.md:
+    - ref/ui-patterns/mobile/accordion.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Accordion.aspx
@@ -1519,7 +1536,12 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/LightBoxImage.aspx
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=46
+- develop/ui/patterns/mobile/interaction/map/intro.md:
+    - external:
+        - "Known issue with the Map component for Reactive Web apps": 
+            https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Known_issue_with_the_Map_component_for_Reactive_Web_apps
 - develop/ui/patterns/mobile/interaction/notification.md:
+    - ref/ui-patterns/mobile/notification.md
     - external:
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=53
@@ -1607,7 +1629,15 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
+- develop/ui/patterns/mobile/numbers/progressbar.md:
+    - ref/ui-patterns/mobile/progressbar-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressBar.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=216
 - develop/ui/patterns/mobile/numbers/progresscircle.md:
+    - ref/ui-patterns/mobile/progresscircle-mob.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
@@ -1617,6 +1647,11 @@
     - external:
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=59
+- develop/ui/patterns/mobile/numbers/rating.md:
+    - ref/ui-patterns/mobile/rating.md
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=291
 - develop/ui/patterns/mobile/utilities/aligncenter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1647,8 +1682,18 @@
     - external:
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=78
-# Link to Training
-- extensibility-and-integration/connect-external-db.md:
+
+# Links to Training
+
+# Developing an Application > Troubleshooting Applications > Debugging Applications
+
+- develop/troubleshoot/debug/intro.md:
+    - external:
+        - "Training video - How to Debug Logic in OutSystems":
+            https://www.outsystems.com/training/lesson/2035/how-to-debug-logic-in-outsystems
+
+# Extensibility and Integration
+- extensibility-and-integration/external-database/connect-external-db.md:
     - external:
         - "Demo - Integrating with a SQL Server Database":
             https://www.outsystems.com/learn/lesson/1847/demo-integrating-with-external-databases/
@@ -1869,3 +1914,33 @@
         - "Anatomy of an OutSystems error stack":
             https://www.outsystems.com/forums/discussion/7856/anatomy-of-an-outsystems-error-stack/
             
+# --- Reference > Errors and Warnings > Errors ---
+
+#  Invalid Action Flow Error
+-  ref/errors-and-warnings/errors/invalid-action-flow-error.md:
+    - external:
+        - "A course about Logic in Training":
+            https://www.outsystems.com/learn/courses/125/logic/
+
+# Testing 
+
+- develop/testing/testing-bdd-framework.md:
+    - develop/testing/develop-test.md
+    - managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
+    - external:
+        - "Becoming a Tester in OutSystems":
+            https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/
+        - "OutSystems testing guidelines":
+            https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines 
+
+# Setting up OutSystems
+
+- setup/cache-invalidation/intro.md:
+    - setup/cache-invalidation/enable-tls.md
+    - setup/cache-invalidation/manage-troubleshoot.md
+    - setup/cache-invalidation/installation.md
+    - setup/cache-invalidation/high-availability.md
+
+- setup/logging-db/intro.md:
+    - setup/logging-db/configure-separate-db.md
+    - setup/logging-db/update-applications.md

@@ -19,6 +19,16 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
     ![](<images/gallery-8-ss.png>)
 
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
 
     ![](<images/gallery-9-ss.png>)
@@ -66,7 +76,7 @@ The following are examples of how the items are display depending on how many yo
 | ItemsDesktop (Integer): Optional |  Number of Items displayed per line on a desktop. | 
 | ItemsTablet (Integer): Optional |  Number of Items displayed per line on a tablet. | 
 | ItemsPhone (Integer): Optional|  Number of Items displayed per line on a phone. |
-| ExtendedClass (Text): Optional | Add custom style classes to the Badge UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the myclass style to the Gallery UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Gallery UI styles being applied.</li></ul></p> |  
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the myclass style to the UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |  
 
 
 ## Additional notes

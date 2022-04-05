@@ -77,6 +77,9 @@ After creating an integration you must associate it with a connection before bei
 
 You can create a new connection or use an existing one. Use [Integration Manager](works.md#architecture) to create connections and associate them with integrations.
 
+Creating a connection requires administrator permissions in the external system.<br/>
+If you don't have administration permissions, you need to request some parameters from the external system administrator. Integration Builder can help you during this process by sending an email to the administrator with the all the information they need.
+
 To create a connection do the following:
 
 1. After publishing an integration, click **Go to connections**. The browser navigates to Integration Manager, an app that Integration Builder also deployed to your OutSystems environment along with the integration.
@@ -87,11 +90,27 @@ To create a connection do the following:
 
     ![Selecting a connection in Integration Manager](images/create-connection-im.png)
 
-1. Define the connection name and the basic elements for accessing the external system.
+1. To connect the external system select one the following:
+    
+    * For **SAP OData** **with administrator permissions**, enter a connection name and the basic elements for accessing the external system, then select **Create connection**.
+    
+    * For **Salesforce**, **SharePoint Online**, **Microsoft Dataverse** or **Microsoft Dynamics 365** **with administrator permissions** in the external system, enter a connection name and the basic elements for accessing the external system, then select **Create connection**.
 
-1. Click **Create connection**.
+    * For **Salesforce**, **SharePoint Online**, or **Microsoft Dataverse** **without administrator permissions** in the external system, Integration Builder can send an email to the administrator requesting the information you need. Once you have the information, enter it into Integration Builder, and select **Create connection**.
 
-To associate the connection to the integration do the following:
+    <div class="info" markdown="1">
+
+    For more information on this step, review the articles for each integration:
+
+    *   [Salesforce integration](connectors/integration-salesforce.md#authorize-integration)
+    *   [SharePoint Online integration](connectors/integration-ms-sharepoint.md#authorize-integration)
+    *   [Microsoft Dynamics 365 integration](connectors/integration-ms-dynamics.md#authorize-integration)
+    *   [Microsoft Dataverse integration](connectors/integration-ms-dataverse.md#authorize-integration)
+    *   [SAP OData integration](connectors/integration-sap.md#authorize-integration)
+
+    </div>
+
+After creating a connection, associate it to the integration do the following:
 
 1. In Integration Manager, select the **My integrations** tab.
 
@@ -113,7 +132,9 @@ To associate the connection to the integration do the following:
 
 1. Click **Apply**.
 
-1. Add calls to the Server Actions exposed by the integration module to your application logic. Check [Structure of generated integrations](structure.md) for more information on the available elements in the generated integration.
+After the steps, add calls to the Server Actions exposed by the integration module to your application logic. Check [Structure of generated integrations](structure.md) for more information on the available elements in the generated integration.
+
+If you want to show data in screens, learn how to do it in [this article](../../develop/data/query/fetch-data-ib.md)
 
 ## Configuring your integration after deployment
 

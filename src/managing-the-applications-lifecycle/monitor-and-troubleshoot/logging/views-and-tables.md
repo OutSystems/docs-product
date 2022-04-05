@@ -52,5 +52,7 @@ Logs are stored in a different table every week. The rotation occurs every Frida
 Rotation means that:
 
 * The definition of the views in the database, for each log type, is updated to point to the next cycle number.
+
 * Log writing automatically begins to happen in the tables from the new cycle. This part is made algorithmically in the Deployment Controller Service — no changes to the database happen for this purpose.
-* Old log tables are cleaned after their retention period passes, defined in OutSystems Configuration Tool, preparing them for later use. The retention period configured in OutSystems Cloud is 9 weeks.
+
+* Old log tables are cleaned after their retention period passes, preparing them for later use. For self-managed environments, you configure the retention period in the OutSystems Configuration Tool > Log tab > Advanced settings. For OutSystems Cloud, the retention period is 9 weeks and it cannot be changed.

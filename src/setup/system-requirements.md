@@ -42,6 +42,7 @@ Future revisions of OutSystems may require the installation of an update within 
 
 Keep in mind that you must use the same flavour of database engine for the 3 databases used by the platform (platform and apps, logs, session). Combinations of database engines, for example, using SQL Server for the platform database and Azure SQL database for the logs and or session databases (or any other combination), are not supported.
 
+* Microsoft SQL Server 2019 and compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
 * Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
@@ -60,17 +61,20 @@ Apart from standard Oracle Database setups, OutSystems Platform 8.0 and onwards 
 
 * Microsoft .NET Framework 4.8 (supported since Platform Server 11 – Release Oct.2019 CP2) or Microsoft .NET Framework 4.7.2
 * Microsoft Build Tools 2015
-* .NET Core 2.1 Runtime & Hosting Bundle for Windows
+* .NET Core 3.1 Runtime & Hosting Bundle for Windows
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
 ## Cache Invalidation Service
 
-OutSystems Cache Invalidation Service requires the following version of RabbitMQ Server:
+OutSystems Cache Invalidation Service requires the following minimum version of RabbitMQ Server:
 
-* RabbitMQ Server 3.8.x with Erlang version 22.x, since Platform Server 11.9.0
+* RabbitMQ Server 3.9.11 with Erlang version 24.2, since Platform Server 11.15.0
+* RabbitMQ Server 3.8.21 with Erlang version 23.2, from Platform Server 11.13.2 to 11.14.1
+* RabbitMQ Server 3.8.3 with Erlang version 22.3, from Platform Server 11.9.0 to 11.13.1
+* RabbitMQ Server 3.7.7 with Erlang version 20.3, for earlier versions of Platform Server
 
-Earlier versions of Platform Server require RabbitMQ Server 3.7.x with Erlang version 20.x.
+These versions can be upgraded to the latest minor version compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html).
 
 During Platform Server installation, OutSystems provides you with a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Alternatively, you can use an existing RabbitMQ Server and Erlang installation, as long as it fulfills the same version requirements.
 
@@ -82,9 +86,9 @@ OutSystems can run on Amazon EC2 instances. Each instance must fulfill the follo
 
 For more information on how to enable this service check Amazon's [EC2Config service documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2config-service.html).
 
-## Amazon RDS considerations 
+## Amazon RDS considerations
 
-OutSystems supports Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
+OutSystems supports Microsoft SQL Server 2019 and compatibility level 150 (since Platform Server 11.12.0), Microsoft SQL Server 2016, Microsoft SQL Server 2017, Oracle 12c, Oracle 18c, and Oracle 19c on Amazon RDS. The database instance class must fulfill the following requirements:
 
 * 1 vCPU (virtual central processing unit) or higher
 * 1 ECU (EC2 Compute Unit) or higher
@@ -115,6 +119,7 @@ The following systems are certified to integrate with OutSystems.
 
 ### SQL Server Database
 
+* Microsoft SQL Server 2019 and compatibility level 150, since Platform Server 11.12.0
 * Microsoft SQL Server 2017
 * Microsoft SQL Server 2016
 * Microsoft SQL Server 2014
@@ -137,7 +142,7 @@ The **NLS_CHARACTERSET** must be set to **WE8MSWIN1252** or **AL32UTF8**.
 
 <div class="info" markdown="1">
 
-From OutSystems 11 Platform Server Release Oct.2019 onwards you cannot have integrations with Oracle databases earlier than 11g R2. 
+From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integrations with Oracle databases earlier than 11g R2.
 
 </div>
 
@@ -146,9 +151,19 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you cannot have inte
 * MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)
 * MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)
 
+### PostgreSQL Database
+
+* PostgreSQL 12.x.x
+* PostgreSQL 13.x.x
+
+### Aurora PostgreSQL Database
+
+* Aurora PostgreSQL Database available in the cloud running a version compatible with a [supported PostgreSQL database](#postgresql-database)
+
 ### IBM Database
 
 * DB2 for iSeries V6R1 or higher
+* **OutSystems** supports integration with DB2 databases hosted in iSeries machines only. It does not support integration with DB2 databases hosted in Unix, Linux, or Windows.
 
 <div class="info" markdown="1">
 
@@ -166,7 +181,8 @@ The use of double-byte characters with DB2 databases is not supported.
 
 ## Development tools
 
-To develop your applications using OutSystems, developers need to install Service Studio and Integration Studio development tools on their desktops.
+To develop your applications using OutSystems, developers need to install **Service Studio** and **Integration Studio** development tools on their desktops.
+The latest version of the development tools are available in the [OutSystems downloads page](https://www.outsystems.com/Downloads/search/Development+Environment/11/).
 
 Installation requirements for these tools are as follows.
 
@@ -238,9 +254,7 @@ Running an OutSystems app on a browser continues to be supported for 6 months af
 
 ### Mobile App packages
 
-The minimum requirements depend on the [Mobile Apps Build Service (MABS) version](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) used to generate your Mobile Apps.
-
-Note: Only official Android and iOS ROMs are supported.
+See [Mobile Apps Build Service (MABS)](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for the latest supported Android and iOS platform versions and the minimum requirements to generate your Mobile Apps.
 
 ### Traditional Web Apps
 
@@ -257,91 +271,3 @@ Note: Only official Android and iOS ROMs are supported.
 * Default browser for iOS 7 or higher
 * Default browser for Android 4.1 or higher
 * Default browser for Windows Phone 8 or higher
-
-## Containers considerations
-
-Containers only expose HTTP port 80. HTTPS connections must be ensured by the load balancer, following an SSL offload scenario.
-
-Follow the instructions in [End-to-end SSL and SSL Offloading](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Using_OutSystems_in_Reverse_Proxy_Scenarios/03_OutSystems_configurations_in_reverse_proxy_scenarios#C_-_End-to-end_SSL_and_SSL_Offloading): you **do not** need to follow the step instructing you to insert a record in the `OSSYS_PARAMETER` table, since the platform already performs this task when deploying an application to containers.
-
-### Docker Containers
-
-To deploy OutSystems applications to Docker containers you will need a Docker infrastructure able to run standard Docker Windows Server containers, i.e. Windows Server containers that only use the functionality provided by default in a Docker installation.
- 
-#### Infrastructure
-
-The minimum required Docker infrastructure consists of a Docker Engine installation, i.e. the client-server technology that builds and runs containers using Docker components and services. The engine must support and be able to run Windows Server containers.
-
-The minimum recommended Docker version is the following:
-
-* Docker client/server version 17.10
-
-The machine running Docker must fulfill the following OS requirement:
-
-* Windows Server 2016 (version 1709 or later)
-
-OutSystems also supports the following Docker-based hosting technologies:
-
-* Amazon ECS (Elastic Container Service)
-* Azure Container Service (ACS)
-
-If you are using Amazon please read the [Amazon Elastic Container Service documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_GetStarted.html). If you are using Azure please read the documentation on [Azure for Containers documentation](https://docs.microsoft.com/en-us/azure/containers/).
-
-The Docker Secrets functionality is not supported, since its support on Windows containers is not yet ready for production use.
-
-#### Docker Registries
-
-While having a Docker registry is not mandatory, it is highly recommended. You can use any Docker registry as long as it supports storing and retrieving images for Windows Server containers.
-
-For example, you can use one of the following docker registries (either on-premises or in the cloud):
-
-* Docker Hub
-* Docker Trusted Registry
-
-#### Container Cluster Orchestrators
-
-When deploying an OutSystems application in a Docker container it's necessary to map port 80 exposed by the container to an available port in the container host (usually a high-numbered port selected by the container runtime).
-
-Since this port in the container host may change and each container needs at least port 80 mapped in the container host machine, the recommended approach is to set up a **container cluster**, together with a container cluster manager/orchestrator, that seamlessly handles all the routing to the right container and port.
-
-You can use OutSystems with the following container cluster orchestrators:
-
-* Docker Swarm
-* Google Kubernetes
-* Amazon Elastic Container Service
-
-If you are using Docker Swarm, please read the official [Docker Swarm documentation](https://docs.docker.com/engine/swarm/). If you are using Kubernetes, please read the official Kubernetes documentation that includes detailed instructions on [using Kubernetes with a cluster](https://kubernetes.io/docs/tasks/access-application-cluster/access-cluster/).
-
-The container cluster manager/orchestrator can be installed anywhere as long as it allows you to manage the Docker engine on which you will be running the containers with OutSystems applications.
- 
-#### Base Image Availability
-
-Ensure that all machines that will build/run the application images have the `microsoft/dotnet-framework:4.7.2-runtime` base image present in the machine. If the base image is not in the machine, the first build/run may timeout while the base image is downloaded.
-
-### Pivotal Cloud Foundry
-
-To deploy your OutSystems applications to Pivotal Cloud Foundry (PCF) you will need to have access to a PCF infrastructure. It must be able to run Windows stemcells, i.e. you will need to install a Windows tile in your infrastructure.
-
-#### Infrastructure
-
-The PCF infrastructure must have a Pivotal Application Service for Windows tile installed. To install a Windows tile, follow the instructions provided by Pivotal for the Windows 2016 tile.
-
-Note: The Windows 2012r2 tile is **not supported**.
- 
-#### PCF Internal Routing
-
-You will need to ensure that your PCF internal router can route requests to OutSystems applications both when these come from your internal network, as well as when coming from the outside.
-
-We recommend adding **two domains** to your Pivotal Apps Manager's "org" (organization):
-
-* A subdomain of your main shared domain that will be used as the PCF's deployment zone address. All the modules of each OutSystems application deployed to this zone will be mapped here. Example: If your main shared domain is `apps.pcf.example.com`, add a new domain called `os.apps.pcf.example.com`.
-
-* A domain equal to the public address of your main load balancer and reverse proxy. This lets the PCF internally route requests coming from outside your internal network. Example: If your main load balancer and reverse proxy is publicly accessible using `site.example.com`, add exactly this value as a new domain.
-
-#### Command-line Tools (cf CLI)
-
-The deployment instructions provided by OutSystems use the Cloud Foundry Command Line Interface ("cf CLI") tool provided by Pivotal.
-
-You must [install "cf CLI"](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) on the machine executing the deployment to PCF to be able to run the `cf` command-line executable.
-
-You will also need to [log in to Cloud Foundry using "cf CLI"](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html), specifying an API endpoint and an "org" (organization), before you are able to run commands like `cf push` successfully.

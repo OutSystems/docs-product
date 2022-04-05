@@ -26,6 +26,16 @@ The following example demonstrates how you can create a four step Wizard with na
 
     ![](<images/wizard-2-ss.png>)
 
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Wizard widget into the Main Content area of your application's screen.
 
     ![](<images/wizard-3-ss.png>)
@@ -112,7 +122,7 @@ The following example demonstrates how you can create a four step Wizard with na
 
 1. On the **Properties** tab, in the **Name** property, enter a name for each of the buttons (in this example, Previous and Next).
 
-1. To ensure that all of the information the user enters is passed from step to step, create a [screen action](../../../../logic/action-web.md#screen-actions) by selecting the **Next** button, and on the **Properties** tab, from the **OnClick** drop-down, select **New Client Action**.
+1. To ensure that all of the information the user enters is passed from step to step, create a [action](../../../../logic/actions.md) by selecting the **Next** button, and on the **Properties** tab, from the **OnClick** drop-down, select **New Client Action**.
 
     ![](images/wizard-14-ss.png)
 
@@ -145,7 +155,7 @@ After following all of the steps in each of the sections, you can publish the mo
 | Property | Description |
 |---|---|
 | IsVertical (Boolean): Optional | If True the wizard is displayed vertically. If False, the wizard is displayed horizontally. This is the default.|
-| ExtendedClass (Text): Optional | <p>Add custom style classes to the Wizard UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_"myclass"_ - adds the _myclass_ style to the Wizard UI styles being applied</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Wizard UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional | <p>Adds custom style classes to the Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_"myclass"_ - adds the _myclass_ style to the UI styles being applied</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
 
 ### Wizard Item
 
@@ -153,4 +163,4 @@ After following all of the steps in each of the sections, you can publish the mo
 |---|---|
 | Status (Step Identifier): Mandatory | <p>Set the status of the Wizard Item relative to the current step of the Wizard. You can customize an expression to set the status of the Wizard Item or you can use the predefined values Active, Next, and Past. </p><p>Examples <ul><li>_Entities.Step.Active_ - Sets the Wizard Item to active, that is, the current step the user is on.</li><li>_Entities.Step.Next_ - Sets the Wizard Item to incomplete, that is, a step that is yet to be completed by the user.</li><li>_Entities.Step.Past_ - Sets the step to inactive, that is, a step that has already been completed by the user.</li></ul></p> |
 | UseTopLabel (Boolean): Optional  | If True, the label (text descibing the step) is placed above the icon. If False, the label is placed below the icon. This is the default. |
-| ExtendedClass (Text): Optional | <p>Add custom style classes to the Wizard Item UI Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_"myclass"_ - Adds the myclass style to the Wizard Item UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Wizard Item UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional | <p>Adds custom style classes to the Pattern. You define your custom style classes in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added. This is the default.</li><li>_"myclass"_ - Adds the myclass style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |

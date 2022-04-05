@@ -1,10 +1,7 @@
-# default code owner
-*   @OutSystems/technical-knowledge-group
-
 /src/managing-the-applications-lifecycle/                     @claudiacarpinteiro
 
-/src/deliver-mobile/                                          @rmlos
-/src/extensibility-and-integration/artificial-intelligence/   @rmlos
-/src/extensibility-and-integration/mobile-plugins/            @rmlos
-/src/develop/logic/emails-reactive/                           @rmlos 
-/src/develop/ui/                                              @rmlos
+/src/deliver-mobile/                                          
+/src/extensibility-and-integration/artificial-intelligence/   
+/src/extensibility-and-integration/mobile-plugins/            
+/src/develop/logic/emails-reactive/                            
+/src/develop/ui/                                              

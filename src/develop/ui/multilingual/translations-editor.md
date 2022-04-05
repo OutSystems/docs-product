@@ -5,12 +5,6 @@ tags: runtime-traditionalweb; support-application_development
 
 # Translations Behavior Editor
 
-<div class="info" markdown="1">
-
-These instructions are for translating Traditional Web Apps only. For Reactive Web and Mobile Apps see [Technical Preview: Multilingual apps](../multilingual-tp/intro.md).  
-
-</div>
-
 The **Translations Behavior Editor** allows you to set which [translatable resources](multilingual-web.md) of your application are actually meant to be translated and also to translate individual resources.
 
 To open this editor do the following:

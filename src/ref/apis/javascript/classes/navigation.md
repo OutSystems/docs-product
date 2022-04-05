@@ -15,51 +15,14 @@ The methods below related with BackHandlers ([registerBackNavigationHandler](nav
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Methods</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[navigateBack](navigation.md#navigateback)</td>
-<td>
-Performs a back navigation, using an optional transition animation.
-</td>
-</tr>
-<tr>
-<td>[navigateForward](navigation.md#navigateforward)</td>
-<td>
-Performs a forward navigation, using an optional transition animation.
-</td>
-</tr>
-<tr>
-<td>[navigateTo](navigation.md#navigateto)</td>
-<td>
-Performs a navigation to a provided URL using an optional transition animation.
-</td>
-</tr>
-<tr>
-<td>[navigatedFromHistory](navigation.md#navigatedfromhistory)</td>
-<td>
-Checks if the current screen was loaded from the browser's history.
-</td>
-</tr>
-<tr>
-<td>[registerBackNavigationHandler](navigation.md#registerbacknavigationhandler)</td>
-<td>
-Registers a callback function in a queue to be called when navigating back.
-</td>
-</tr>
-<tr>
-<td>[unregisterBackNavigationHandler](navigation.md#unregisterbacknavigationhandler)</td>
-<td>
-Unregisters a previously registered callback.
-</td>
-</tr>
-</tbody>
-</table>
+|Methods|Description|
+|---|---|
+|[navigateBack](navigation.md#navigateback)|Performs a back navigation, using an optional transition animation.|
+|[navigateForward](navigation.md#navigateforward)|Performs a forward navigation, using an optional transition animation.|
+|[navigateTo](navigation.md#navigateto)|Performs a navigation to a provided URL using an optional transition animation.|
+|[navigatedFromHistory](navigation.md#navigatedfromhistory)|Checks if the current screen was loaded from the browser's history.|
+|[registerBackNavigationHandler](navigation.md#registerbacknavigationhandler)|Registers a callback function in a queue to be called when navigating back.|
+|[unregisterBackNavigationHandler](navigation.md#unregisterbacknavigationhandler)|Unregisters a previously registered callback.|
 
 ## Methods
 

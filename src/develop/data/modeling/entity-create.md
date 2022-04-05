@@ -5,11 +5,11 @@ tags: support-application_development; support-Database; support-webapps
 
 # Create an Entity to Persist Data
   
-In OutSystems, a database table is an ![Entity](../../../shared/icons-service-studio/entity.png) Entity, and the table columns are Entity Attributes.
+In OutSystems, a database table is an Entity, and the table columns are Entity Attributes.
 
 To create an Entity you need to:
 
-1. Open the Entity Diagram created by default in your application. 
+1. Open the Entity Diagram created by default in your application.
 1. Right-click anywhere on the canvas and select 'Add Entity'.
 1. In the window that pops up:
     1. Give a name to the entity.
@@ -37,7 +37,7 @@ We have an application called Go Out, that allows you to read and write reviews 
 
 3. Set the name of the entity to `Place`. OutSystems creates an `Id` attribute with data type `Long Integer`, set as AutoNumber.
 
-4. Use the ![Entity Attribute](../../../shared/icons-service-studio/entity-attribute.png) New button to create the attributes:
+4. Use the **New** button to create the attributes:
 
     ![](images/entity-editor.png)
 

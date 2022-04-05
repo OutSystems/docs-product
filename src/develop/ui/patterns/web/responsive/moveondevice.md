@@ -63,5 +63,5 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Properties |  Description |
 |---|---|
-| PhoneWidgetId (Text): Optional  | Target container that displays this widget on phones. <p>Examples <ul><li>_Container1.Id_ - The content appears in this container when viewed on a phone</li></ul></p>|
-| TabletWidgetId (Text): Optional | Target container that displays this widget on tablets.<p>Examples  <ul><li>_Container2.Id_ - The content appears in this container when viewed on a tablet</li></ul></p>||
+| PhoneWidgetId (Text): Optional  | Target container that displays this widget on phones. <p>Examples <ul><li>Container1.Id - The content appears in this container when viewed on a phone</li></ul></p>|
+| TabletWidgetId (Text): Optional | Target container that displays this widget on tablets.<p>Examples  <ul><li>Container2.Id - The content appears in this container when viewed on a tablet</li></ul></p>|

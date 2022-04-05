@@ -31,4 +31,4 @@ In a scenario of having millions of records in the process entity, consider usin
 
 ## Using Process Entity References
 
-OutSystems provides you with mechanisms to reuse Process Entities among eSpaces. When you expose your Process its Process Entity is automatically exposed or when you use a Process defined in another eSpace its Process Entity can also be used.
+OutSystems provides you with mechanisms to reuse Process Entities among modules. When you expose your Process its Process Entity is automatically exposed or when you use a Process defined in another module its Process Entity can also be used.

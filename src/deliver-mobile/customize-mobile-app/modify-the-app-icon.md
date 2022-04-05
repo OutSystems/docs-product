@@ -24,15 +24,12 @@ To change the default icon and use your own icon image, providing multiple versi
 
 1. In the Extensibility Configurations value window, you must create a JSON object (if not created) where you can specify all the information about the icons to use. If not yet specified, start by indicating the resource file that contains the icons.
 
-    ![](images/image3.PNG)
+    ![](images/image3.png)
 
 1. Add the “icons” tag to the JSON to indicate that you want to use your own icons for your application.
+For each mobile platform, specify the size (iOS) and density (Android) and the correspondent icon location in the ZIP folders. Ensure that you define icons for all size and densities available, otherwise, you'll get an error (the example below is just for reference). Check the [JSON template for the icons](<#icons-json-template>) to avoid mistakes.
 
-    ![](images/image4.PNG)
-
-1. For each mobile platform, specify the size (iOS) and density (Android) and the correspondent icon location in the ZIP folders. Ensure that you define icons for all size and densities available, otherwise, you'll get an error (the example below is just for reference). Check the [JSON template for the icons](<#icons-json-template>) to avoid mistakes.
-
-    ![](images/image5.PNG)
+    ![](images/image5.png)
 
 1. To make this change available for the users, [publish and generate a new mobile application](<../generate-distribute-mobile-app/intro.md>) and distribute it.
 
@@ -45,22 +42,22 @@ To change the default icon and use your own icon image, providing multiple versi
 Width | Height | Displayed on
 :----:|:------:|-------------
 20    | 20     | iPad Notifications (iOS 7–11)
-29    | 29     | iPhone Spotlight (iOS 5, 6) %% iPhone Settings (iOS 5–11) %% iPad Settings (iOS 5–11)
-40    | 40     | iPhone Notifications (iOS 7–11) %% iPad Notifications (iOS 7–11) %% iPad Spotlight (iOS 7–11)
+29    | 29     | iPhone Spotlight (iOS 5, 6) <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
+40    | 40     | iPhone Notifications (iOS 7–11) <br/> iPad Notifications (iOS 7–11) <br/> iPad Spotlight (iOS 7–11)
 48    | 48     | Apple Watch Notification Center
 50    | 50     | iPad Spotlight (iOS 5, 6)
 55    | 55     | Apple Watch Notification Center
 57    | 57     | iPhone App (iOS 5, 6)
-58    | 58     | iPhone Spotlight (iOS 5, 6) %% iPhone Settings (iOS 5–11) %% iPad Settings (iOS 5–11)
+58    | 58     | iPhone Spotlight (iOS 5, 6) <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
 60    | 60     | iPhone Notifications (iOS 7–11)
 72    | 72     | iPad App (iOS 5, 6)
 76    | 76     | iPad App (iOS 7–11)
-80    | 80     | iPhone Spotlight (iOS 7–11) %% iPad Spotlight (iOS 7–11)
-87    | 87     | iPhone Spotlight (iOS 5, 6) %% iPhone Settings (iOS 5–11)
+80    | 80     | iPhone Spotlight (iOS 7–11) <br/> iPad Spotlight (iOS 7–11)
+87    | 87     | iPhone Spotlight (iOS 5, 6) <br/> iPhone Settings (iOS 5–11)
 88    | 88     | Apple Watch Long Look
 100   | 100    | iPad Spotlight (iOS 5, 6)
 114   | 114    | iPhone App (iOS 5, 6)
-120   | 120    | iPhone Spotlight (iOS 7–11) %% iPhone App (iOS 7–11)
+120   | 120    | iPhone Spotlight (iOS 7–11) <br/> iPhone App (iOS 7–11)
 144   | 144    | iPad App (iOS 5, 6)
 152   | 152    | iPad App (iOS 7–11)
 167   | 167    | iPad Pro App (iOS 9–11)
@@ -74,9 +71,9 @@ Width | Height | Displayed on
 Width | Height | Density | Displayed on
 :----:|:------:|:-------:|-------------
 36    | 36     | ldpi    | Notification icons
-48    | 48     | mdpi    | Launcher icons %% Action bar, Dialog and Tab icons %% Small Contextual Icons
-72    | 72     | hdpi    | Launcher icons %% Notification icons
-96    | 96     | xhdpi   | Launcher icons %% Action bar, Dialog and Tab icons %% Notification icons
+48    | 48     | mdpi    | Launcher icons <br/> Action bar, Dialog and Tab icons <br/> Small Contextual Icons
+72    | 72     | hdpi    | Launcher icons <br/> Notification icons
+96    | 96     | xhdpi   | Launcher icons <br/> Action bar, Dialog and Tab icons <br/> Notification icons
 144   | 144    | xxhdpi  | Launcher icons
 192   | 192    | xxxhdpi | Launcher icons
   

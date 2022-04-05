@@ -17,6 +17,16 @@ You can use the Tabs UI Pattern to display large sets of information, which can 
 
     ![](images/tabs-2-ss.png)
 
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Tabs widget into the Main Content area of your application's screen.
 
     ![](images/tabs-3-ss.png)
@@ -46,7 +56,7 @@ After following these steps and publishing the module, you can test the pattern 
 | Orientation (Orientation Identifier): Optional  |  If Vertical, the tabs are displayed vertically. If Horizontal, the tabs are displayed horizontally. This is the default.|
 | IsJustified (Boolean): Optional  | If True, the Tabs are evenly distributed in the space available. If False, the Tabs are left aligned. This is the default.|
 | IsRight (Boolean): Optional  | If True, the Tabs are displayed to the right of the Tab content. If False, the Tabs are displayed to the left of the Tab content. This is the default. **Note**: This setting is only applicable if the **Orientation** property is set to **Vertical**. |
-| ExtendedClass (Text): Optional  |  Add custom style classes to the Tabs UI Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Tabs UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Tabs UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
 
 ### Tabs Header Item
 

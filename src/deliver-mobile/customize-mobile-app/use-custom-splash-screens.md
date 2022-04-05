@@ -48,7 +48,7 @@ To use a custom image as the native splash screen of your app:
 
 ### For Android
 
-Width%%(px)|Height%%(px)|Density
+Width<br/>(px)|Height<br/>(px)|Density
 ---|---|---
 240|360|port-ldpi (120 dpi)
 320|480|port-mdpi (160 dpi)
@@ -71,28 +71,28 @@ For iOS, the splash screen sizes depend on the [Mobile Apps Build Service (MABS)
 
 If you are using MABS 4.0 or later, you must use splash screen sizes [based in launch storyboard images](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/index.html#launch-storyboard-images).
 
-Width%%(px)|Height%%(px)|Default Filename
+Width<br/>(px)|Height<br/>(px)|Default Filename
 ---|---|---
-2732|2732|Default@2x~universal~anyany
-1278|2732|Default@2x~universal~comany
-1334|750|Default@2x~universal~comcom
-2208|2208|Default@3x~universal~anyany
-2208|1242|Default@3x~universal~anycom
-1242|2208|Default@3x~universal~comany
-1334|1334|Default@2x~iphone~anyany
-750|1334|Default@2x~iphone~comany
-1334|750|Default@2x~iphone~comcom
-2208|2208|Default@3x~iphone~anyany
-2208|1242|Default@3x~iphone~anycom
-1242|2208|Default@3x~iphone~comany
-2732|2732|Default@2x~ipad~anyany
-1278|2732|Default@2x~ipad~comany
+2732|2732|`Default@2x~universal~anyany`
+1278|2732|`Default@2x~universal~comany`
+1334|750|`Default@2x~universal~comcom`
+2208|2208|`Default@3x~universal~anyany`
+2208|1242|`Default@3x~universal~anycom`
+1242|2208|`Default@3x~universal~comany`
+1334|1334|`Default@2x~iphone~anyany`
+750|1334|`Default@2x~iphone~comany`
+1334|750|`Default@2x~iphone~comcom`
+2208|2208|`Default@3x~iphone~anyany`
+2208|1242|`Default@3x~iphone~anycom`
+1242|2208|`Default@3x~iphone~comany`
+2732|2732|`Default@2x~ipad~anyany`
+1278|2732|`Default@2x~ipad~comany`
 
 #### MABS 3.3
 
 If you are using MABS 3.3, you must use splash screen sizes [based on the legacy launch images](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/index.html#legacy-launch-images).
 
-Width%%(px)|Height%%(px)|Device
+Width<br/>(px)|Height<br/>(px)|Device
 ---|---|---
 320|480|All non-retina iPhones and iPods
 640|960|iPhone 4/4s (portrait)

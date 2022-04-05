@@ -5,9 +5,13 @@ summary: The Notification UI Pattern is a contextual short message that provides
 
 # Notification
 
-The Notification UI Pattern is a contextual short message that provides important information to the user, such as app crashes, new updates, task reminders, and new messages.
+<div class="info" markdown="1">
 
-![](<images/notification-1-ss.png>)
+If you are using an OutSystems UI version lower than 2.8.2, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+
+</div>
+
+The Notification UI Pattern is a contextual short message that provides important information to the user, such as app crashes, new updates, task reminders, and new messages.
 
 **How to use the Notification UI Pattern**
 
@@ -15,37 +19,55 @@ The Notification UI Pattern is a contextual short message that provides importan
 
     The Notification widget is displayed.
 
-    ![](<images/notification-2-ss.png>)
+    ![Notification widget](<images/notification-widget-ss.png>)
 
-1. From the Toolbox, drag the Animate widget into the Main Content area of your application's screen.
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    ![](<images/notification-3-ss.png>)
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
+
+1. From the Toolbox, drag the Notification widget into the Main Content area of your application's screen and on the **Properties** tab, enter a **Name**.
+
+    ![Drag the Notification widget to the screen](<images/notification-dragwidget-ss.png>)
 
  1. Add the relevant content to the Content placeholder. 
 
-    In this example, we add an icon, some text. We also add Show and Close buttons to the Main Content area of the screen.
+    In this example, an icon and some text are added. 
 
-    ![](<images/notification-4-ss.png>)
+    ![Add content to Content placeholder](<images/notification-content-ss.png>)
 
-1. Select and right-click your screen name, and select **Add Local Variable**. Enter a name for the variable. In this example, we enter ``ShowNotification`` and set the **Default Value** to **False**.
+1. From the Toolbox, drag 2 **Button** widgets into the Main Content area of your application's screen to **Open** and **Close** the Notification. 
 
-    ![](<images/notification-5-ss.png>)
+    ![Add Open and Close buttons](<images/notification-buttons-ss.png>)
 
-1. Select the Notification widget, and on the **Properties** tab, from the **IsOpen** dropdown, enter the newly created variable. 
+1. Define the actions for the buttons and set the **WidgetId** to the Notification widget.
 
-    ![](<images/notification-6-ss.png>)
+    In this example, for the **Open** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationOpen** client action. For the **Close** button, the **On Click** event is set to a **New Client Action** that runs the **NotificationClose** client action.
 
-1. Define the actions for the Show and Close buttons, by selecting the button widget, and on the **Properties**, from the **OnClick** dropdown select **New Client Action**.
+    ![Define action for Open button](<images/notification-open-ss.png>)
 
-    In this example, for the Show button we assign the ShowNotification variable to True, and for the Close button we assign the ShowNotification variable to False.
+    ![Define action for Close button](<images/notification-close-ss.png>)
 
-    ![](<images/notification-7-ss.png?width=800>)
+1. You can configure the Notification by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties. For more configurations, expand the **OptionalConfigs** property.
 
-1. After following these steps and publishing the module, you can test the pattern in your app.
+    ![Define action for Close button](<images/notification-properties-ss.png>)
+
+After following these steps and publishing the module, you can test the pattern in your app.
+
+![Notification example](<images/notification-example.png>)
 
 ## Properties
 
-| Property |  Description |
+|Property|Description|
 |---|---|
-|IsOpen (Boolean): Mandatory | If True, the notification is immediately visible on screen. If False, the notification is not visible on screen. |
-| ExtendedClass (Text): Optional | Add custom style classes to the Notification UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the myclass style to the Notification UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Notification UI styles being applied.</li></ul></p> |
+|StartsOpen(Boolean): Optional|If True, the notification is immediately visible on screen. If False, the notification is not visible on screen. The default value is False. <br/> Use one of the following actions to change the value after the :<ul><li>NotificationOpen</li><li>NotificationClose</li></ul>|
+|Width(Text): Optional|Set the Notification width. Accepts any kind of unit (for example, px, %, vw).|
+|Position(Position Identifier): Optional|Set where the notification appears on the screen. The predefined options are as follows:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul><br/>Examples<ul><li>``Entities.Position.Right`` - The notification is displayed on the right side of the screen.</li><li>``Entities.Position.Bottom`` - The notification is displayed on the bottom of the screen.</li></ul>|
+|OptionalConfigs.InteractToClose(Boolean): Optional|If True, the notification closes when it's clicked. If False, the notification can't be clicked. the default value is True.|
+|OptionalConfigs.CloseAfterTime(Integer): Optional|Set the delay time, in ms, to close the notification.|
+|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|

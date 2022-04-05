@@ -2,7 +2,7 @@
 summary: How to add an HTTP header using the SOAP Extensibility API.
 ---
 
-# Example: Add an HTTP header
+# Add an HTTP header
 
 In this example scenario we will add a new HTTP header to all the requests of a given consumed SOAP web service.
 

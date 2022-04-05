@@ -5,29 +5,34 @@ summary: Advanced Use Cases for the Gallery UI Pattern.
 
 # Gallery Reference
 
-## Layout and classes
+## Structure
 
-![](images/gallerymob-5-diag.png)
+![Gallery Structure](images/gallery-class-diag.png)
 
-## Advanced use case
+### Modifiers
 
-### Using animations inside the Gallery
+| **Modifier** | **Attribute** | **Element** | 
+|---|---|---|  
+|RowItemsDesktop|--gallery-desktop-items <br/>--gallery-list-desktop-items|.osui-gallery|  
+|RowItemsTablet|--gallery-tablet-items <br/>--gallery-list-tablet-items|.osui-gallery|  
+|RowItemsPhone|--gallery-phone-items<br/>--gallery-list-phone-items|.osui-gallery|  
+|ItemsGap|--gallery-gap|.osui-gallery|  
 
-1. Use the **Animate** block as the first element inside the list.
 
-    ![](images/gallerymob-1-ss.png)
+## API
 
-1.  Place your content inside the block.
+If you are an advanced user, you might want to use our Gallery API (OutSystems.OSUI.Patterns.GalleryAPI) for more advanced use cases.
 
-    ![](images/gallerymob-2-ss.png)
+### Methods
 
-1. Define the **Animate** block with your desired type of animation, and set
-the delay with current row number from the list.
+| **Function** | **Description** | **Parameters** | 
+|---|---|---|
+|ChangeProperty|Changes the Gallery property.|<ul><li>galleryId: string </li><li>propertyName: string</li> <li>propertyValue: any</li></ul>|
+|Create|Creates a new Gallery instance and adds it to the GalleryMap.|<ul><li>galleryId: string</li> <li>configs: string</li></ul>|
+|Destroy|Destroys the Gallery instance.|<ul><li>galleryId: string</li></ul>|
+|GetAllGalleries|Returns the Map with all the Gallery instances on the screen.|<ul><li>Returns array of IDs</li></ul>|
+|GetGalleryById|Gets the Gallery instance ID.|<ul><li>galleryId: string</li></ul>|
+|Initialize|Initializes the pattern instance.|<ul><li>galleryId: string</li></ul>|
 
-    ![](images/gallerymob-3-ss.png)
-
-    **Note**: If you are using a List inside a Gallery, you need to disable virtualization.
-
-    ![](images/gallerymob-4-ss.png)
 
 

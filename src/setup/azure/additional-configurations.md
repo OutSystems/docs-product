@@ -13,7 +13,7 @@ Check [OutSystems Documentation](https://success.outsystems.com/Documentation) a
 
 To access the machines remotely through RDF, you need to create a jump server - a dedicated VM with enabled RDP to reach and manage devices inside a network.
 
-1. Create a VM with the RDP activated and connect to the VM. This is your jump server. Check [Quickstart: Create a Windows virtual machine in the Azure portal](<https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal>) for detailed instructions.
+1. Create a VM with the RDP activated and connect to the VM. This is your jump server. Check [Quickstart: Create a Windows virtual machine in the Azure portal](<https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal>) for detailed instructions. You can also use [Azure Bastion](https://azure.microsoft.com/services/azure-bastion).
 
 1. Discover the IP of a machine you want to connect to. Access the machine in the Azure Portal and in the left blade choose **Networking**. The IP shows next to the label **Private IP**.
 

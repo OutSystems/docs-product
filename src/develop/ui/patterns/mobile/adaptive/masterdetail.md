@@ -16,6 +16,16 @@ You can use the Master Detail Pattern to display a master list of items and thei
     The Master Detail widget is displayed.
 
     ![](images/masterdetail-5-ss.png)
+    
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Master Detail widget into the Main Content area of your application's screen.
 

@@ -97,6 +97,18 @@ To enable all the required settings do the following:
 
 1. Enable **Single Sign-On Between App Types**.
 
+    <div class="info" markdown="1">
+
+    Having different session timeout values for Traditional Web and Reactive Web applications may lead to issues during authentication flows.
+
+    If you are running **Platform Server 11.14.1 or later**, the default value of the session timeout for Reactive Web Apps matches the default value of the session timeout for Traditional Web Apps (20m). In this case, if you haven't changed the session timeout default values, you can skip Step 7.
+
+    If you are running **Platform Server 11.14.0 or earlier**, execute Step 7 to make sure both values match, thus preventing authentication issues.
+
+    </div>
+
+1. In **Session Login Settings**, ensure the **Max. Idle Time** has the same value as the **Session Timeout** for Traditional Web Apps (see [here](../../../data/session.md#session-timeout) how to configure the session timeout for Traditional Web Apps).
+
 1. Click **Save and Apply Settings to the Factory** to apply all the new runtime settings.
 
 For more information on application authentication check [Configure App Authentication](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md).

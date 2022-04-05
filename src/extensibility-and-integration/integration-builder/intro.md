@@ -1,21 +1,15 @@
 ---
 summary: Integration Builder allows anyone to implement complex integrations between an OutSystems application and your enterprise Systems of Records like SAP or Salesforce.
-en_title: Early Access Program - Integration Builder
+en_title: Integration Builder
 ---
 
-# Early Access Program - Create connectors with Integration Builder
+# Create connectors with Integration Builder
 
-<div class="info" markdown="1">
-
-Integration Builder is available as an [Early Access Program](https://www.outsystems.com/eap/).
-
-</div>
-
-Integration Builder a Software as a Service (SaaS) that allows you to implement complex integrations between an OutSystems application and your enterprise Systems of Records like SAP or Salesforce. 
+Integration Builder is a Software as a Service (SaaS) that allows you to implement complex integrations between an OutSystems application and your enterprise Systems of Records like SAP or Salesforce.
 
 Allowing business to break enterprise data silos and use them across the enterprise ecosystem (cross-departmental) is fundamental in modern times, where companies want to:
 
-* Increase departmental efficiency, by allowing data to flow seamlessly between different departments, avoiding human intervention, and reducing manual input processes, which eventually lead to data duplication and to errors
+* Increase departmental efficiency, by allowing data to flow seamlessly between different departments, avoiding human intervention, and reducing manual input processes, which eventually lead to data duplication and errors
 
 * Optimize business processes, by allowing them to build complex workflows that leverage data siloed in different systems
 
@@ -35,7 +29,7 @@ The generated integrations have the following features:
 
 * Follow the OutSystems development best practices.
 * Support several authentication methods out-of-the-box (depending on the target system).
-* You can choose to make it editable in Service Studio for further customization.
+* Edit in Service Studio for further customization.
 
 Currently Integration Builder supports:
 
@@ -47,4 +41,4 @@ Currently Integration Builder supports:
 
 ## Start using Integration Builder
 
-Check [how Integration Builder works](works.md) and [how to set up Integration Builder](set-up.md). When everything is ready, check how to [create and use integrations](use.md).
+Check [how Integration Builder works](works.md) and [how to set up Integration Builder](set-up.md). When everything is ready, check out how to [create and use integrations](use.md).

@@ -1,6 +1,6 @@
 ---
 summary: Develop a progressive web app (PWA) by creating a mobile app and toggling on the option to distribute the app as PWA. Try your app in Android and iOS.
-tags: support-application_development, runtime-mobile, article-page
+tags: support-application_development, article-page
 ---
 
 # Distribute as a progressive web app
@@ -10,7 +10,9 @@ A progressive web app (PWA) provides a native-like experience without having to 
 The main benefits of PWAs:
 
 * More efficient to manage, as they don't require app stores like native mobile apps.
-* Based on the web browser technology that doesn't depend on a platform. The same app runs on Android and iOS. Additionally, in OutSystems you can distribute an app as a PWA and as native builds for Android/iOS. 
+* Based on the web browser technology that doesn't depend on a platform:
+    * The same app runs on Android and iOS. Additionally, in OutSystems you can distribute an app as a PWA and as native builds for Android/iOS.
+    * They can run on a web browser with the same offline capabilities of a mobile app.
 * They update the moment you publish changes to your OutSystems environment.
 * Lighter on user devices' systems resources.
 * When you develop PWAs in OutSystems, you get all benefits of the low-code development. It's enough to turn on the PWA distribution of the app.
@@ -164,3 +166,6 @@ Having issues with your PWA? Check out [Troubleshooting and known issues](troubl
 The team would love to hear what you think of this document and if it helps you. Please **leave feedback** in the feedback section. If you want to get a reply, select **Yes, you may contact me about this feedback**.
 
 </div>
+
+______________________________________________________________
+_QR CODE is a registered trademark of Denso Wave Incorporated._

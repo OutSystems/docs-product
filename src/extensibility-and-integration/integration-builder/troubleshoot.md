@@ -1,6 +1,11 @@
+---
+summary: Identify and solve issues that may occur while using Integration Builder.
+---
 # Troubleshooting Integration Builder
 
 Check the list of possible issues you may face when using Integration Builder and their corresponding solutions.
+
+If you receive an error message, check the [Integration Builder error documentation section](<https://success.outsystems.com/Support/Errors/Integration_Builder_errors>) to learn more about the error and how to solve it.
 
 ## Error in "Select Objects" step when creating a Salesforce integration
 

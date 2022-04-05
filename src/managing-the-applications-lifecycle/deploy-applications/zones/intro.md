@@ -26,24 +26,17 @@ When you do one of the following changes, OutSystems deploys the application to 
 
 You can define that a deployment zone should automatically include all front-end servers available in the environment by activating the "Includes all Servers" configuration option. This avoids the manual task of adding a new server to the deployment zone each time you add a new front-end server to the environment.
 
-You can configure deployment zones to perform one of the following kinds of deployments:
-
-* deploying to a regular Internet Information Services (IIS) web server — a hosted technology named "Classic Virtual Machines"
-* deploying to a [container-based infrastructure](<../../containers/app-run.md>), supporting different hosting technologies
-
-When you change the deployment zone of an application to a deployment zone that uses a container-based hosting technology, you must republish your application for the changes to take effect.
-
 <div class="info" markdown="1">
 
 Configuring the deployment zone of individual modules is **deprecated** since Platform Server 11.8. Even though applications with modules in different deployment zones are still supported, OutSystems will stop supporting this option in the future.
 
-If you have applications with modules in different deployment zones, you must refactor and reorganize them to meet this restriction.
+For more information see [Modules and apps in deployments zones](modules-and-apps-in-deployment-zones.md).
 
 </div>
 
 ## Default deployment zone
 
-The **default deployment zone** configuration controls where OutSystems deploys your new modules and applications. OutSystems creates a deployment zone named "Global" on a first install, set as the default deployment zone. You can make any other deployment zone the default one as long as its hosting technology is "Classic Virtual Machines".
+The **default deployment zone** configuration controls where OutSystems deploys your new modules and applications. OutSystems creates a deployment zone named "Global" on a first install, set as the default deployment zone.
 
 As a rule, when you create a new application and publish it for the first time, the platform deploys its modules to the default deployment zone. Once you have published a module or application for the first time, you can select any other deployment zone as its deployment target.
 
@@ -107,7 +100,7 @@ To change the configuration of a web application so that it's only deployed to t
 
 1. Create a new deployment zone (for example, named "Public") containing only the public-facing server.
 
-    Note: The **Deployment Zone Address** configuration parameter, which is mandatory when creating the deployment zone, depends on several factors, like your network architecture and the hosting technology you selected for the deployment zone. Check the [Deployment Zones Reference](reference.md) for more information on this parameter.
+    Note: The **Deployment Zone Address** configuration parameter, which is mandatory when creating the deployment zone, depends on several factors, like your network architecture. See [Deployment Zones Reference](reference.md) for more information on this parameter.
 
 1. Configure the web application to use the new deployment zone.
 
@@ -130,7 +123,7 @@ To change the configuration of the web application so that it's only deployed to
 
 1. Create a new deployment zone (for example, named "Intranet") containing only the internal server.
 
-    Note: The **Deployment Zone Address** configuration parameter, which is mandatory when creating the deployment zone, depends on several factors, like your network architecture and the hosting technology you selected for the deployment zone. Check the [Deployment Zones Reference](reference.md) for more information on this parameter.
+    Note: The **Deployment Zone Address** configuration parameter, which is mandatory when creating the deployment zone, depends on several factors, like your network architecture. See [Deployment Zones Reference](reference.md) for more information on this parameter.
 
 1. Configure the web application to use the new deployment zone.
 
@@ -151,7 +144,7 @@ To correctly deploy a web application to these two public-facing servers and do 
 1. Create a new a deployment zone (for example, named "Public") containing the two public-facing servers to handle requests made to the web application.  
     Set the **Deployment Zone Address** parameter to the Fully Qualified Domain Name (FQDN) of the load balancer.
 
-   Note: The suggested value for the **Deployment Zone Address** parameter is only an example. The exact value depends on your specific network architecture and the hosting technology you selected for the deployment zone. Check the [Deployment Zones Reference](reference.md) for more information.
+   Note: The suggested value for the **Deployment Zone Address** parameter is only an example. The exact value depends on your specific network architecture. See [Deployment Zones Reference](reference.md) for more information.
 
 1. Configure the web application to use the new deployment zone.
 

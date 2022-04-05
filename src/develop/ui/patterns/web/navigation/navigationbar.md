@@ -19,6 +19,16 @@ The following use case adds the Navigation Bar UI Pattern to **one** screen. If 
 
     ![](images/navigationbar-6-ss.png)
 
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
+
 1. From the Toolbox, drag the Navigation Bar widget into the Main Content area of your application's screen.
 
     ![](images/navigationbar-1-ss.png)
@@ -50,7 +60,7 @@ After following these steps and publishing the module, you can test the pattern 
 | IsFixed (Boolean): Optional |  If True, the navigation bar is always in the same position on the screen. This is the default value. If False, the navigation bar scrolls with the page content. |  
 | TopPosition (Integer): Optional  |  Set the top position when the navigation bar is fixed. |  
 | MultipleItems (Boolean): Optional | If True, multiple Navigation Bar Items can be opened at the same time. This is the default value. If False, only one Navigation Bar Item can be opened at a time. |
-| ExtendedClass (Text): Optional | Add custom style classes to the Navigation Bar UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the Navigation Bar UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the Navigation Bar UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
 
 ### Navigation Bar Item
 
@@ -58,7 +68,7 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 | IsActive (Boolean): Optional | If True, when the page is rendered, the Item is selected. If False, the Item is not selected. This is the default value. | 
 | IsOpen (Boolean): Optional  |  If True, when the page is rendered, the Navigation Bar Item is open. If False, the Navigation Bar Item is not open. This is the default.| 
-| ExtendedClass (Text): Optional | Add custom style classes to the Navigation Bar Item UI Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the _myclass_ style to the Navigation Bar Item UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the Navigation Bar Item UI styles being applied.</li></ul></p> | 
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value)</li><li>_''myclass''_ - adds the _myclass_ style to the UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). | 
 
 ### Navigation Bar Sub Item
 

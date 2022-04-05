@@ -66,7 +66,7 @@ On the Azure side, create a new enterprise application from a template and confi
 
     ![Search for OutSystems Azure AD application](images/azuread-search-application.png)
 
-1. A sidebar with options opens at the right side of the page. Define a name for your Azure application in the **Name** field (C) and click **Add** (D).
+1. A sidebar with options opens at the right side of the page. Define a name for your Azure application in the **Name** field (C) and click **Create** (D).
 
     Wait a few seconds while Azure creates your application.
 
@@ -125,6 +125,22 @@ Back in the Users application, upload the XML file you downloaded in the previou
 1. Select the Federation Metadata XML file you downloaded from Azure.
 
 1. Click **Save**.
+
+    **Note**: A warning message about enabling SSO between app types is displayed. **Enabling this functionality is optional.**
+
+    ![SSO warning](images/azuread-warning.png)
+
+    To enable IdP in Reactive Apps, do the following:
+    
+    1. Go to the Service Center management console of your OutSystems environment.
+
+    1. Go to the **Administration** section and select the **Security** tab.
+
+    1. In the **Common Login** section, select the **Single Sign-On Between App Types** checkbox, and click **Apply**.
+
+       ![Applications Authentication](images/azuread-sso.png)
+
+    For more information about application authentication, see [Configure App Authentication](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md). 
 
 ### Assign user or group to Azure application { #assign-user-azure-app }
 

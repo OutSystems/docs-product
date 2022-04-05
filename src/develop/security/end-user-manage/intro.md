@@ -3,72 +3,32 @@ summary: Learn about basic end user management, such as creating, deleting, deac
 tags: support-Mobile_Apps; support-webapps
 ---
 
-# End User management
+# End users
+An end user is someone who uses your OutSystems application(s). Each non-anonymous end user who interacts with your apps counts toward the user limits established in your subscription. 
 
-Applications user management is created around the following core concepts:
+## Internal and external end users
+Each end user of your OutSystems applications is classified as internal or external. Internal is intended for employees and contractors of your organization. External is for your customers, partners, or other external parties whom you serve with the apps you build.
 
- - [Users](#Users)
- - [Groups](#Groups)
- - [User Providers](#user-providers)
- - [Tenants](#tenants)
+Within the OutSystems platform, the classification of internal or external is based on the end user's email address. When the end user's email address uses a domain name that matches a domain that you own (including your parent company and affiliate companies), the user is considered internal. For example if your organization owns `example.com` and the end user's email is `adam@example.com`, then the user will be classified as internal. The user will also be classified as internal in situations where no email address is stored on their profile, such as when you only capture a mobile phone number for the end user, but not an email address. All other users are classified as external.
 
-Through the combination of these concepts you can define all the user management needs required to provide access to your applications to the end users. This section guides you in everything that you need to know about end user management.
+## Anonymous users
+Anonymous users don't count toward the user limits specified in your subscription. Users who use your app and who don't log in and also don't share any personally-identifiable information (name, email, mobile phone, etc.) are anonymous. For example, people who visit your website (an OutSystems app) and just browse the information without logging in or providing personal information are anonymous end users.
 
-## Users
+## End user limits
+OutSystems subscriptions typically include rights to run applications serving up to a specified number of end users, with options for upgrading end user capacity that vary by subscription. You can review your end user limits within the Customer Portal and you can see the current internal and external end user count displayed for each runtime environment within Service Center. If you have multiple production runtime environments, you'll sum the end user counts for each to determine your total end user count. When your end user count exceeds the end user limit specified in your subscription (internal or external), you need to upgrade to remain in compliance with the license terms. Please contact your OutSystems sales representative for assistance.
 
-The end users of your OutSystems applications are considered either **Anonymous Users** or **Named Users** (also called Registered Users) according to the following definitions:
+## Managing your end users
+You may periodically de-activate users who you know will not continue to use your applications and these users will no longer count toward your user limits. For example, when an employee quits, you would de-activate this user because they will no longer need access to apps you've built for your employees.
 
-Anonymous Users
-:   Users that, cumulatively, (i) access an OutSystems application but do not log in, (ii) only access public sections of an OutSystems application, and (iii) whose identity is not known by the OutSystems application. An Anonymous User becomes a Named User when an OutSystems application establishes the identity of that user.
+- [Manage end users](accessing-users.md) through the **Users** console, which is available at `http://<environment address>/Users`.
+- Manage end users programmatically using the [Users API](../../../ref/apis/auto/users-api.final.md) 
 
-Named Users or Registered Users
-:   Users that are registered and can log in to an OutSystems application.  
+## Older subscription models
+In the past, some OutSystems subscriptions didn't distinguish between internal and external end users, the limits were based on the total non-anonymous users. Some customers may still have an active subscription under the prior model. These users were labeled as named or registered users.
 
-You can manage the Registered Users of your OutSystems applications through the **Users** application, available at `http://<environment address>/Users`. Check [Access the Users application](accessing-users.md) for more information on creating and managing Registered Users.
-
-OutSystems also offers the [Users API](<../../../ref/apis/auto/users-api.final.md>) to perform end user management programmatically. Use the API to write your own applications for managing Registered Users or for exposing APIs to external systems through Web Services.
-
-<div class="info" markdown="1">
-
-If you use an external authentication method (for example, Active Directory or SAML 2.0) to authenticate end users, you don't need to create these users manually. Instead, these users are created automatically in the OutSystems database on their first login.  
-Check [End Users Authentication](end-user-authentication/intro.md) for more information on external authentication methods.
-
-</div>
-
-### Internal Users vs. External Users { #internal-external }
-
-<div class="info" markdown="1">
-
-Applies to OutSystems licenses purchased after January 2020.
-
-</div>
-
-Registered Users (or Named Users) are classified in **Internal Users** or **External Users**, for licensing purposes, according to the following definition:
-
-Internal Users
-:   Named users with an email domain belonging to the customer, one of its affiliates or parent company. Any named user with no email associated is also qualified as an Internal User.
-
-External Users
-:   Any Named Users who are not considered Internal Users.
-
-You can classify all Registered Users whose email address contains a specific domain (for example, `mycompany.com`) as Internal Users, while all other Registered Users are considered External Users. Check [Classify Users as Internal Users](classify-internal-users.md) for more information on configuring these domains.
-
-By default, Registered Users are considered **Internal Users**.
-
-<div class="info" markdown="1">
-
-The distinction between Internal Users and External Users is only applicable to the **end users** of your OutSystems applications. [IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md) (for example, OutSystems developers or Administrators) are a separate set of users that don't have this kind of classification.
-
-</div>
-
-## Groups
-
-[Groups](groups.md) help you to group users that have same type of permissions in your applications. With groups you can easily attribute the [same role at a group level](../user-roles/intro.md) instead in doing it per user. For example you can have departmental groups (HR, Marketing, Sales, etc.) for applications used by the entire company.
-
-## User providers
-
-User providers are applications that enable you to manage the end-users that access your applications. OutSystems provides the [Users application](accessing-users.md) out of the box, but other User providers can be developed by your teams.
-
-## Tenants
-
-User providers always have a Default Tenant, but in a scenario, for example of an application accessed by different customers, you can create different tenants for different types of users. [Read this article](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/How_to_Build_a_Multi-tenant_Application#Managing_Tenants_and_End-Users), if you want to learn more about multi-tenancy in OutSystems. 
+## Related resources
+* [Classify Users as Internal Users](classify-internal-users.md): includes information on configuring the email domains that will be recognized as your own, for purposes of classifying users as internal or external
+* [End User Authentication](end-user-authentication/intro.md): information on external authentication methods
+* [Managing IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md): manage developer access, administrators, and other roles with access to OutSystems management tools
+* [Group management](groups.md): creating and managing groups of users
+* [Multi-tenant applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/How_to_Build_a_Multi-tenant_Application#Managing_Tenants_and_End-Users): managing different cohorts of users from different tenants

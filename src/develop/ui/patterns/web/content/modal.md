@@ -19,6 +19,16 @@ For the purposes of this example, our app already contains a form where the user
 
     ![](<images/modal-5-ss.png>)
 
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+
+    1. In the Toolbox, click **Search in other modules**.
+
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
+    
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
+    
+    1. In the Toolbox, search for the widget again.
+
 1. To From the Toolbox, drag the Modal widget into the Main Content area of your application's screen, and on the **Properties** tab, enter a name for the widget. In this example we enter `Confirmation`.
 
     ![](<images/modal-6-ss.png?width=800>)
@@ -67,4 +77,4 @@ The result of this example looks something like the following:
 | HasOverlay (Boolean): Optional | If True, an overlay is enabled behind the modal. This is the default. If False, there is no overlay. |
 | EnterAnimation (EnterAnimation Identifier): Optional | Define from where the animation enters the screen. <p>Examples</p><ul><li>_Blank_ - The animation goes from a small size to its rendered size (_Entities.EnterAnimation.EnterScale_). This is the default.</li><li>_Entities.EnterAnimation.EnterBottom_ - The animation enters from the bottom of the screen.</li></ul> |  
 | LeaveAnimation (LeaveAnimation Identifier ): Optional | Define from where the animation leaves the screen. <p>Examples</p><ul><li>_Blank_ - The animation goes from its rendered size to a small size.(_Entities.LeaveAnimation.EnterScale_). This is the default.</li><li>_Entities.LeaveAnimation.EnterBottom_ - The animation leaves from the bottom of the screen.</li></ul>|
-| ExtendedClass (Text): Optional |  Add custom style classes to the Modal UI Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the Modal UI styles being applied.</li><li>_"myclass1" "myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the Modal UI styles being applied.</li></ul></p> |
+| ExtendedClass (Text): Optional |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |

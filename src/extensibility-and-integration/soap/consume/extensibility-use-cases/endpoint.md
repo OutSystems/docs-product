@@ -2,7 +2,7 @@
 summary: How to change the service endpoint at runtime using the SOAP Extensibility API.
 ---
 
-# Example: Change service endpoint at runtime
+# Change service endpoint at runtime
 
 In this example scenario we will add support for changing the SOAP web service endpoint at runtime.
 

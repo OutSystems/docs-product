@@ -29,7 +29,7 @@ Here is an example, with two sample apps, of how you can reuse a Block from Reac
 1. Create a new Reactive Web App, and add a default Module to it.
 1. In the Module, go to **Interface** > **UI Flows** > right-click **MainFlow** > select **Add Block**. Name the Block **MyBlock**.
 1. Set the **Public** property of Block to **Yes**.
-1. Add some content to the Block. In our example we dragged a Content Widget and entered sample text "Hello from My Reactive App!".
+1. Add some content to the Block. In our example we dragged a Text Widget and entered sample text "Hello from My Reactive App!".
 
     ![Source app with a public Block](<images/block-reuse-source-app.png?width=600>)
 

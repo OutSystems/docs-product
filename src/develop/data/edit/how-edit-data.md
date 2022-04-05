@@ -5,7 +5,9 @@ tags:
 
 # How to edit the data of an entity in Service Studio
 
-Before checking the rest of this article, check out
+Learn how to add a record or row, remove a record or row, and change an attribute or cell in Service Studio.
+
+To understand how editing data on Service Studio works and the prerequisites check the [edit data while developing article](intro.md).
 
 ## Add a record or row { #add }
 
@@ -13,15 +15,19 @@ To add a record or row, follow these steps:
 
 1. In the module where the entity exists, go to the **Data** tab, and double-click the entity to **View or Edit Data**.
 
+    ![Open edit data in Service Studio](images/open-edit-data-ss.png)
+
 1. Select **Add row**.
 
-1. If one or more cells' has a red outline, it probably means they're mandatory attributes. [Define each one of those cells](#modify).
+1. If one or more cells' has a red outline after the previous step, it probably means they're mandatory attributes. [Define each one of those cells](#modify).
+
+    ![Mandatory fields must be set before applying changes](images/mandatory-fields-ss.png)
 
 1. [Optional] [Define each one of the remaining cells](#modify).
 
-1. Check and fix any issues with your pending changes.
+1. After defining each cell, check and fix any issues with cells highlighted with a red outline. Hover over each highlighted cell to understand each issue.
 
-1. Select **Apply**.
+1. You can prepare more than one change to the entity at a time. Once you're done with your changes [apply them](#apply).
 
 ## Remove a record or row { #remove }
 
@@ -29,15 +35,22 @@ To remove a record or row, follow these steps:
 
 1. In the module where the entity exists, go to the **Data** tab, and double-click the entity to **View or Edit Data**.
 
+    ![Open edit data in Service Studio](images/open-edit-data-ss.png)
+
 1. Right-click the row you want to remove, and select **Delete row**.
 
-1. Select **Apply**.
+    ![Delete a row](images/delete-row-ss.png)
+    ![Pending deletion of a row](images/pending-delete-row-ss.png)
+
+1. You can prepare more than one change at a time. Once you're done with your changes [apply them](#apply).
 
 ## Modify a record's attribute { #modify }
 
 To modify a record's attribute or cell, follow these steps:
 
 1. In the module where the entity exists, go to the **Data** tab, and double-click the entity to **View or Edit Data**.
+
+    ![Open edit data in Service Studio](images/open-edit-data-ss.png)
 
 1. Double-click an empty space inside the cell you want to change.
 
@@ -57,4 +70,36 @@ To modify a record's attribute or cell, follow these steps:
 
 1. If the cell has a red outline, hover over the highlighted cell to learn about the issue, and then fix the issue.
 
-1. Select **Apply**.
+    ![Get details on issues with pending changes](images/pedning-changes-validation-ss.png)
+
+1. You can prepare more than one change to the entity to the entity at a time. Once you're done with your changes [apply them](#apply).
+
+## Apply changes { #apply}
+
+Once you're done with your changes, confirm you want to change the data by selecting **Apply**.<br/>
+You won't be able to apply changes if you have cells highlighted in red.
+
+![](images/apply-changes-ss.png)
+
+After trying to apply all your changes in the database, Service Studio lets shows you one of the following messages:
+
+* If all changes are successful, Service Studio shows you a success message.
+
+    ![Changes applied successfully](images/changes-successfully-ss.png)
+
+* If some changes fail Service Studio shows you an error message and highlights the rows with changes that weren't applied.<br/> To understand the causes of the errors, hover over the asterisk, **\***, in the first cell of each highlighted cell, or select **view error report** to generate a text file with all the errors.
+
+    ![Changes failed to be applied](images/changes-failed-ss.png)
+
+## Discard changes { #discard }
+
+You can permanently discard changes in one of the following ways:
+
+* To discard changes to a specific row, right-click the row and select **Discard this change**.
+
+    ![Discard changes for a row](images/discard-row-changes-ss.png)
+
+* To discard all your changes, select **Discard** and then confirm that you really want to permanently discard all the changes.
+
+    ![Confirm you want to discard changes](images/confirm-discard-changes-ss.png)
+

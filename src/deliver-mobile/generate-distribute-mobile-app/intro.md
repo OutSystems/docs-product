@@ -1,23 +1,31 @@
 ---
 summary: You can generate the mobile app package for your mobile app and distribute it for tests purposes or, when you have completed work on your app, generate a production-ready version of your app to distribute to a selected group of end users or to publish in mobile app stores.
-tags: article-section, runtime-mobile
+tags: runtime-mobile, article-page
 ---
 
 # Generate and Distribute Your Mobile App
 
 Before generating your mobile app for the first time, you have to configure specific iOS and/or Android settings. Check the [topics listed at the end of this page](#Articles_in_this_Section) for details about different scenarios, such as development tests, distributing your app to a limited group of end users or publishing your app in Mobile App Stores.
 
-The following sections show how to configure and generate iOS and Android app packages of your mobile apps in Service Studio or in Service Center.
+<div class="info" markdown="1">
 
-For additional information about generating and distributing iOS and Android app packages, see [More Information on Generating and Distributing Mobile Apps](more-information.md).
+To generate Android App Bundle you need to use the following:
 
-<div class="warning">
-
-Don't tamper with the iOS or Android mobile builds once the platform generates them. For example, don't use a third-party tool to add a new functionality like a performance monitoring. If you modify a mobile build, you're risking to have an app that doesn't run correctly and that fails to pass integrity checks. 
+*  Platform Server version 11.12.0 or later
+*  MABS 7 or later
+*  Up-to-date Service Studio
 
 </div>
 
-## Configure and Generate a Mobile App Package in Service Studio { #config-generate-service-studio }
+The following sections show how to configure and generate iOS and Android app packages of your mobile apps in Service Studio or in Service Center. For additional information about generating and distributing iOS and Android app packages, see [More Information on Generating and Distributing Mobile Apps](more-information.md).
+
+<div class="warning">
+
+Don't tamper with the iOS or Android mobile builds once the platform generates them. For example, don't use a third-party tool to add new functionality like performance monitoring. If you modify a mobile build, you're risking having an app that doesn't run correctly and that fails to pass integrity checks. 
+
+</div>
+
+## Configure and generate a mobile app package in Service Studio { #config-generate-service-studio }
 
 To configure or generate your mobile app package (iOS or Android) in Service Studio, do the following:
 
@@ -25,27 +33,28 @@ To configure or generate your mobile app package (iOS or Android) in Service Stu
 
 1. Select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
 
-1. When configuring your mobile app for the first time for a given platform (iOS or Android), click on the **Configure iOS App** or **Configure Android App** button, according to the platform. Follow the configuration steps for your desired scenario, described in the [topics listed at the end of this page](#Articles_in_this_Section). If you have previously defined your mobile app's iOS or Android configuration settings, click on the cog icon for the correct platform to change your configuration. 
+1. When configuring your mobile app for the first time for a given platform (iOS or Android), click the **Configure iOS App** or **Configure Android App** button, according to the platform. Follow the configuration steps for your desired scenario, described in the [topics listed at the end of this page](#Articles_in_this_Section).
 
-1. After defining or changing your mobile app iOS or Android settings, click on the **Generate App** button. 
+1. After defining or changing your mobile app iOS or Android settings, click **Generate App**. 
 
     ![Native app settings in Service Studio](images/native-platforms-tab-ss.png?width=600)
 
-## Configure and Generate a Mobile App Package in Service Center { #config-generate-service-center }
+
+## Configure and generate a mobile app package in Service Center { #config-generate-service-center }
 
 To configure or generate your mobile app package (iOS or Android) in Service Center, do the following:
 
 1. Open the Service Center console of the environment (`https://<environmentdomain>/ServiceCenter`) and navigate to **Factory**.
 
-1. Click on the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
+1. Click the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
 
     ![Native app settings in Service Center](images/sc-native-platforms-tab.png?width=750)
 
-1. To configure your mobile app package for the first time or to change the current configuration for a given platform (iOS or Android), click on the **Configure** link for the iOS or Android entry. Follow the configuration steps for your desired scenario, described in the [topics listed at the end of this page](#Articles_in_this_Section).
+1. To configure your mobile app package for the first time or to change the current configuration for a given platform (iOS or Android), click the **Configure** link for the iOS or Android entry. Follow the configuration steps for your desired scenario, described in the [topics listed at the end of this page](#Articles_in_this_Section).
 
     ![Android settings in Service Center](<images/sc-configure-android-settings.png>)
 
-1. After defining or changing your mobile app iOS or Android settings, click on the **Save** button.
+1. After defining or changing your mobile app iOS or Android settings, click **Save**.
 
 1. At the end of the configuration settings page, select the MABS version you wish to use for generating the mobile app package for the mobile platform you're configuring (iOS or Android) in the current environment.  
 
@@ -59,13 +68,7 @@ To configure or generate your mobile app package (iOS or Android) in Service Cen
 
 Now that you have configured the app, the next time you need to generate a new mobile app package, just click the **Generate** button.
 
-### Customizing the Mobile App Domain Name { #customizing-the-mobile-app-domain-name }
-
-<div class="info" markdown="1">
-
-This feature is only available in OutSystems on-premises installations.
-
-</div>
+### Customizing the mobile app domain name { #customizing-the-mobile-app-domain-name }
 
 For some cases, you might need to change the domain name associated with your mobile app, like when you have internal security policies dictating that different mobile apps should have different associated domain names and SSL certificates.
 
@@ -83,13 +86,13 @@ To define a different domain name for your mobile app, do the following:
 
 1. **Regenerate the mobile app** for the changes to take effect.
 
-### Customizing the Mobile App Version Code { #customizing-the-mobile-app-version-code }
+### Customizing the mobile app version code { #customizing-the-mobile-app-version-code }
 
 The mobile app version code is an internal number associated with the generation of the mobile app package. App stores use this number to determine whether one version is more recent than another. See more detailed information in [Android](https://developer.android.com/studio/publish/versioning) and [iOS](https://help.apple.com/app-store-connect/#/dev82a6a9d79) documentation.
 
 By default, OutSystems **increments the version code by one** every time the MABS generates the mobile app package.
 
-For some cases, you might need to change the default mobile app version code. For example, if you are migrating an existing mobile app from other technology to OutSystems, the current version code of your app in the app store is higher than the first OutSystems app version code. In this case, you can set the version code of your OutSystems mobile app to a different value.
+For some cases, you might need to change the default mobile app version code. For example, if you are migrating an existing mobile app from another technology provider to OutSystems, the current version code of your app in the app store is higher than the first OutSystems app version code. In this case, you can set the version code of your OutSystems mobile app to a different value.
 
 To set a different version code for your mobile app, do the following:
 
@@ -111,9 +114,9 @@ You can select the MABS version used to generate the mobile packages **by mobile
 
 To choose a MABS version do the following:
 
-1. In Service Center, click on the **Applications** tab, open your mobile app from the app list and select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
+1. In Service Center, click the **Applications** tab, open your mobile app from the app list and select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
 
-1. In the **Settings** column, click on the **Configure** link for the iOS or Android entry.
+1. In the **Settings** column, click the **Configure** link for the iOS or Android entry.
 
     ![Mobile app settings screen](images/sc-open-mabs-version-selection.png?width=750)
 
@@ -150,7 +153,7 @@ To obtain a mobile app build log:
 
 ## Updating your mobile app package
 
-In most occasions, the users of your mobile app don't have to update it manually after installing it in their devices, since OutSystems automatically pushes the updates to their devices when you publish a new mobile app version.
+Users usually don't have to update the app manually after installing it, since OutSystems automatically pushes the updates to user devices when you publish a new version of the mobile app.
 
 However, in some specific situations, the users must install a new mobile app package. For more information check [Mobile App Update Scenarios](<../mobile-app-update-scenarios.md>).
 
@@ -164,8 +167,8 @@ To set an app for the PWA distribution in Service Center, do the following:
 
 1. Open the Service Center console of the environment (`https://<environmentdomain>/ServiceCenter`) and navigate to **Factory**.
 
-1. Click on the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The PWA settings are in the **Progressive Web Application (PWA)** section.
+1. Click the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The PWA settings are in the **Progressive Web Application (PWA)** section.
 
     ![PWA settings in Service Center](images/sc-pwa-settings.png?width=750)
 
-1. Select the checkbox **Distribute as PWA**, then click on **Apply**.
+1. Select the checkbox **Distribute as PWA**, then click **Apply**.

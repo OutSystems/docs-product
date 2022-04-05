@@ -46,11 +46,11 @@ Let's create a "master" UI populated by the records from the Aggregate that fetc
 
 1. Drag a Tag Widget to the List Widget. At this point, your Screen should look similar to this:
 
-    ![Load all items in master detail](images/master-detail-load-all.png?width=600)
+    ![Load all items in master detail](images/master-detail-load-all.png)
 
     You can adjust the tag style in the properties:
 
-    ![Properties of the Tag Widget](images/master-detail-tag-props.png?width=250)
+    ![Properties of the Tag Widget](images/master-detail-tag-props.png)
 
 1. Drag an Expression Widget to the Tag Widget. **Expression Value** editor opens. Enter `GetEmployees.List.Current.Sample_Employee.FirstName + " " + GetEmployees.List.Current.Sample_Employee.LastName` and click **Done**. The tags now show the employees' first and last names. Run the app, and you should see a Screen with the list of employees.
 
@@ -62,7 +62,7 @@ Let's now create the "detail" UI that loads and shows data only after a click. T
 
 1. Still in the Aggregate details pane, add a Filter to GetEmployeeDetails Aggregate with the following condition: `Sample_Employee.Id = GetEmployees.List.Current.Sample_Employee.Id`. This forces the Aggregate to return only a single record, a record that matches selection in the list of employees.
 
-    ![Filter that ensures only one record is returned](images/master-detail-filter.png?width=600)
+    ![Filter that ensures only one record is returned](images/master-detail-filter.png)
 
 1. Set the **Fetch** property of the **GetEmployeeDetails** Aggregate to **Only on demand**. With this setting, the Aggregate queries the database only upon a request.
 
@@ -72,7 +72,7 @@ Let's now create the "detail" UI that loads and shows data only after a click. T
 
 1. Drag **GetEmployeeDetails** Aggregate to the False branch of the If Widget. This "scaffolds" an interface with the employee details and picture. At this point you should have a Screen with two Aggregates that update different parts of UI. The screenshot contains additional overlay to show how Aggregates fetch data for different parts of the Screen.
 
-    ![Load all items in master detail](images/master-detail-aggregates.png?width=600)
+    ![Load all items in master detail](images/master-detail-aggregates.png)
 
 1. Publish the app. If you open it in the browser, you should see the message "Select an employee to see the details.". In the next section we implement the logic to refresh the UI asynchronously.
 
@@ -88,13 +88,13 @@ The "detail" UI that loads data only when requested must be triggered. In this e
 
 1. Select the **Expression** within the Tag. In the "Events" section of the properties in the **Events** list, select **onclick**. In the **Handler** list select **New Client Action**. The **OnClick Client Action** opens for editing.
 
-    ![Adding events to trigger async loading](images/master-detail-events-refresh-ui.png?width=400)
+    ![Adding events to trigger async loading](images/master-detail-events-refresh-ui.png)
 
 1. Drag an **Assign** node to the flow. In the **Variable** property, enter `GetEmployeeDetails.List.Current.Sample_Employee.Id`, and in **Value** enter `GetEmployees.List.Current.Sample_Employee.Id`. This tells the app which employee is selected in the list.
 
 1. Drag a **Refresh Data** to the flow below the Assign. When the **Select Data Source** dialog shows, select **GetEmployeeDetails**. This refreshes the UI where the data is used.
 
-    ![Flow with Assign and Refresh Data](images/master-detail-refresh-ui.png?width=400)
+    ![Flow with Assign and Refresh Data](images/master-detail-refresh-ui.png)
 
 1. Publish the app and try clicking on the employee names. You should see the details load on the right side of the screen.
 
@@ -102,8 +102,8 @@ The "detail" UI that loads data only when requested must be triggered. In this e
 
 To see a working example, you can also create a Screen from one of the Screen Templates that are built around the master-detail pattern. 
 
-![Master-Detail Pattern in Screen Template dialog](images/master-detail-template.png?width=600)
+![Master-Detail Pattern in Screen Template dialog](images/master-detail-template.png)
 
 In the created Screen, check the **Fetch** properties of the Aggregates and related logic.
 
-![Master-Detail Pattern in Service Studio](images/master-detail-sample.png?width=400)
+![Master-Detail Pattern in Service Studio](images/master-detail-sample.png)

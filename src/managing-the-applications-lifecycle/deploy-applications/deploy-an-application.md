@@ -11,6 +11,12 @@ Here's an example of deploying applications in LifeTime.
 
 ## Deploy a Web and a Mobile Application
 
+<div class="info" markdown="1">
+
+This example uses Development, Quality, and Production environments. The application environments in your infrastructure may differ.
+
+</div>
+
 In this example, two applications are being developed in the Development environment:
 
 * A mobile app (MyApp)
@@ -23,37 +29,35 @@ A milestone is reached and the applications are ready to be tested by Quality. T
 
 To deploy both applications to Quality, do the following:
 
+1. In your LifeTime console (`https://<lifetime_env>/lifetime`), navigate to the **Applications** area.
+
 1. Click the **Deploy...** button between Development and Quality.
 
     ![](images/deploy-an-application-1.png)
 
-1. Choose **Add Applications** to select the applications to deploy. You can also **Add All Applications** to the deployment plan.
-
-    ![](images/deploy-an-application-2.png)
-
-1. If you chose **Add Applications** in the previous step, search for the applications to deploy. You can filter by applications with differences or search by the application name. 
+1. In the popup window, search for the applications to deploy. You can filter by **Applications with differences** or search by the application name.
 
     ![](images/deploy-an-application-3.png)
 
-1. Select the applications to deploy and click the **Add to Deployment Plan** button.
+1. Select the applications to deploy and click **Add to Deployment Plan**.
 
     ![](images/deploy-an-application-4.png)
 
-1. In the deploy options, select **DEPLOY 0.2** for MyApp and **DEPLOY 0.3** for MyWebApp:
+1. In the deploy options, select **Deploy 0.2** for MyApp and **Deploy 0.3** for MyWebApp.
 
     ![](images/deploy-an-application-5.png)
 
-1. Click **VALIDATE NOW** to validate the deployment in Quality: 
+1. Click **Validate Now** to validate the deployment in Quality.
 
     ![](images/deploy-an-application-6.png)
 
     Note: If LifeTime detects any changes in the applications included in the plan either in the source or in the target environment, it will show a **Refresh Applications** sticker that you can click to [refresh the applications](#refresh) included in the plan.
 
-1. The deploy is OK (all green). Click **CONTINUE** to move on:
+1. The deployment plan is OK (all green). Click **CONTINUE** to move on.
     
     ![](images/deploy-an-application-7.png)
 
-1. Type the Deployment Notes and click the **Deploy Now** button to execute the deployment:
+1. Type the **Deployment Notes** and click the **Deploy Now** button to execute the deployment.
     
     ![](images/deploy-an-application-8.png)
 
@@ -61,17 +65,16 @@ When the deployment finishes, both applications have the same tagged version in 
 
 ![](images/deploy-an-application-9.png)
 
-If the deployment **finishes successfully**, a "Reuse Plan" link appears in the deployment plan progress screen. You can [reuse a deployment plan](deployment-plans.md#reuse) to get faster deployments.
+<div class="info" markdown="1">
 
-![](images/lt-reuse-plan-link.png)
-
-If the deployment is **aborted**, a "Retry Plan" link appears in the deployment plan progress screen. [Retrying the plan](deployment-plans.md#retry) creates a copy of the original plan and allows you to customize it before running it again.
-
-![](images/lt-retry-plan-link.png)
-
-**Note:** If you're deploying a mobile app that is already [configured to generate the mobile app package](<../../deliver-mobile/generate-distribute-mobile-app/intro.md>), be aware that some changes you do in your application might cause the generation of a new application package. For example, changing the icon or the main color of the application.  
+If you're deploying a mobile app that is already [configured to generate the mobile app package](<../../deliver-mobile/generate-distribute-mobile-app/intro.md>), be aware that some changes you do in your application might cause the generation of a new application package. For example, changing the icon or the main color of the application.  
 [Check here](../../deliver-mobile/mobile-app-update-scenarios.md#situations-when-the-user-must-install-a-new-build) all the situations that require the user to install a new application package.
 
+</div>
+
+If the deployment **finishes successfully**, you can [reuse this deployment plan](deployment-plans.md#reuse) to get next deployments faster.
+
+On the other hand, if the deployment is **aborted**, you can [retry this plan](deployment-plans.md#retry) to create a copy of the original plan and customize it before running it again.
 
 ## Deploying to a different target environment { #change-target-environment }
 
@@ -85,18 +88,17 @@ To change the target environment of a deployment do the following:
 
     ![](images/deploy-dev-quality-p1-lt.png)
 
-1. Press **Cancel** when asked to choose one or more applications to deploy. You will select the desired target environment first.
+1. In the popup to choose one or more applications to deploy, press **Cancel**. First, you will select a different target environment.
 
 1. Open the target environment dropdown by clicking its name (**Quality P1** in our example).
 
     ![](images/deploy-choose-target-environment-lt.png)
 
-1. Select the desired target environment in the pop-up menu. In our example, we selected **Change environment to Quality P2**.
+1. Select the desired target environment in the dropdown. In our example, we selected **Change environment to Quality P2**.
 
-1. Proceed as described in the previous section by adding apps to the deployment plan, validating the plan, and starting the deployment.
+1. Proceed as described in the previous section by adding applications to the deployment plan, validating the plan, and starting the deployment.
 
-
-## Refresh Applications in the Deployment Plan { #refresh }
+## Refresh applications in the deployment plan { #refresh }
 
 After creating a deployment plan and adding applications to it, OutSystems notifies you if there are any relevant changes in the source or target environments related to the applications included in the plan.
 

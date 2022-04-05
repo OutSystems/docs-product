@@ -122,8 +122,11 @@ To generate your mobile app in the Service Center, perform the following steps:
 
     ![Service Center Factory Application Download IPA](images/outsystems-service-center-factory-native-platform-download-ios.png)
 
+<div class="info" markdown="1">
 
-Note that the size of your IPA will increase due to the addition of Apple's Swift libraries. This is an expected behaviour in order to increase your application's compatibility across Apple's devices and will not reflect in the final size of the application delivered to the end-user, which will only retrieve the necessary libraries when downloading your application from the store.
+The size of your IPA increases due to the addition of Apple's Swift libraries. This is an expected behavior in order to increase your application's compatibility across Apple devices and is not reflected in the final size of the application delivered to the end-user, who only retrieves the necessary libraries when downloading your application from the store.
+
+</div>
 
 ### Submit the Mobile App to the App Store
 

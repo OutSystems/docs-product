@@ -66,7 +66,7 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
         `CurrentList.Length`
 
-    1. Click Close, we add a Message to the client action and in the Expression Editor enter the following logic and click **Close**. 
+    1. Click **Close**. 
     
         This displays the number of selected items selected.
 

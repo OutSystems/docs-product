@@ -67,11 +67,14 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ## Cache Invalidation Service
 
-OutSystems Cache Invalidation Service requires the following version of RabbitMQ Server:
+OutSystems Cache Invalidation Service requires the following minimum version of RabbitMQ Server:
 
-* RabbitMQ Server 3.8.x with Erlang version 22.x, since Platform Server 11.9.0
+* RabbitMQ Server 3.9.11 with Erlang version 24.2, since Platform Server 11.15.0
+* RabbitMQ Server 3.8.21 with Erlang version 23.2, from Platform Server 11.13.2 to 11.14.1
+* RabbitMQ Server 3.8.3 with Erlang version 22.3, from Platform Server 11.9.0 to 11.13.1
+* RabbitMQ Server 3.7.7 with Erlang version 20.3, for earlier versions of Platform Server
 
-Earlier versions of Platform Server require RabbitMQ Server 3.7.x with Erlang version 20.x.
+These versions can be upgraded to the latest minor version compliant with the [official documentation](https://www.rabbitmq.com/which-erlang.html).
 
 During Platform Server installation, OutSystems provides you with a script that simplifies the local installation of these two components (RabbitMQ Server and Erlang). Alternatively, you can use an existing RabbitMQ Server and Erlang installation, as long as it fulfills the same version requirements.
 
@@ -148,9 +151,19 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integ
 * MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)
 * MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)
 
+### PostgreSQL Database
+
+* PostgreSQL 12.x.x
+* PostgreSQL 13.x.x
+
+### Aurora PostgreSQL Database
+
+* Aurora PostgreSQL Database available in the cloud running a version compatible with a [supported PostgreSQL database](#postgresql-database)
+
 ### IBM Database
 
 * DB2 for iSeries V6R1 or higher
+* **OutSystems** supports integration with DB2 databases hosted in iSeries machines only. It does not support integration with DB2 databases hosted in Unix, Linux, or Windows.
 
 <div class="info" markdown="1">
 
@@ -168,7 +181,8 @@ The use of double-byte characters with DB2 databases is not supported.
 
 ## Development tools
 
-To develop your applications using OutSystems, developers need to install Service Studio and Integration Studio development tools on their desktops.
+To develop your applications using OutSystems, developers need to install **Service Studio** and **Integration Studio** development tools on their desktops.
+The latest version of the development tools are available in the [OutSystems downloads page](https://www.outsystems.com/Downloads/search/Development+Environment/11/).
 
 Installation requirements for these tools are as follows.
 

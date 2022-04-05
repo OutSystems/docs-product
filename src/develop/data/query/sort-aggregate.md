@@ -11,7 +11,7 @@ In OutSystems, aggregates allow sorting the records they return. The sorting can
 
 To sort results in an aggregate with fixed sorting:
 
-1. In the aggregate, click on ![Aggregate Menu](../../../shared/icons-service-studio/aggregate-menu.png) to  open the menu of the attribute to sort.
+1. In the aggregate, click on ![Aggregate Menu](images/aggregate-menu.png) to  open the menu of the attribute to sort.
 1. Select A-Z for ascending order or Z-A for descending order.
 
 To sort results in an aggregate with dynamic sorting:

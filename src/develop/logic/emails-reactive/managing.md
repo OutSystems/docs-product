@@ -9,7 +9,7 @@ In Service Studio, Email is a UI element that lets you design and manage the con
 
 <div class="info" markdown="1">
 
-This content is about a technical preview. See [Technical Preview - Emails in Mobile and Reactive Web Apps](intro.md) for more information.
+Before following the guides in this article, make sure you meet the [prerequisites](intro.md#prerequisites).
 
 </div>
 
@@ -34,9 +34,7 @@ To create a new Email in Service Studio, follow these steps:
 
     ![Email templates in new email window](images/new-email-window-ss.png?width=700)
 
-    If you see a dialog **Add Email to flow with large theme** instead of the **New Email** window, verify that your Service Studio and Platform Server meet the latest [technical preview requirements](intro.md#prerequisites). 
-
-1. Select the Email under the UI Flow, and enter the following details:
+    1. Select the Email under the UI Flow, and enter the following details:
 
     * A name in the **Name** field
     * `"No subject"` as a temporary subject in the **Subject** field
@@ -126,4 +124,4 @@ You can get email templates from Forge. Go to [OutSystems Email Templates](https
 
 You can also create your email templates by following the instructions for [creating screen templates](../ui/../../ui/screen-templates-create/intro.md). The process and user experience for creating email templates is similar to creating screen templates. Due to the intended use, email templates, just like emails, don't support logic or non-email themes.
 
-You can post questions about using email templates [with the **technical preview** tag](https://www.outsystems.com/forums/tag/6875/technical-preview/) in Forums, so the OutSystems developers and community can provide support.
+

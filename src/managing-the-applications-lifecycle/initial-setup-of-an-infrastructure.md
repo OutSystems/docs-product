@@ -28,14 +28,20 @@ To add a new OutSystems environment to your infrastructure, do the following:
 1. Click the **Register an Existing Environment** link.
 1. Register your environment as described in [Configure the infrastructure management console](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/Configure_the_infrastructure_management_console>).
 
-To remove one of your OutSystems environments from the infrastructure, do the following:
+To remove one of your OutSystems environments from the infrastructure:
 
-1. Click the **Edit Environment** link for the environment you want to remove.
-1. Click the **Unregister environment** link.
+* On OutSystems Cloud, contact OutSystems Support to remove or unregister an environment.
+* In a self-managed infraestructure, do the following:
+
+    1. Click the **Edit Environment** link for the environment you want to remove.
+    1. Click the **Unregister environment** link.
 
 ## Switch the environments order
 
-You can switch the order of two environments in the infrastructure using the **Switch Order** icon placed between those environments.
+In an OutSystems Cloud infraestructure, contact OutSystems support and request to change the order of deployment.
+
+In a self-managed infraestructure, you can switch the order of two environments in the infrastructure using the **Switch Order** icon placed between those environments.
+
 
 ![](images/manage-infrastructure-1.png)
 

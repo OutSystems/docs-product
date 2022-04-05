@@ -394,6 +394,13 @@
     - develop/ui/navigation/ui-flow.md
     # Navigate to Another Screen
     - develop/ui/navigation/navigate-to-detail-screen.md
+
+# ------- Web System Events -------
+# On Session Start
+- ref/lang/auto/Class.On Session Start.final.md:
+    # Sessions in Web Applications
+    - develop/data/session.md
+
     
 # ------- Mobile Interfaces -------
 
@@ -909,6 +916,14 @@
 - connectors/integration-sap.md:
     - extensibility-and-integration/integration-builder/connectors/integration-sap-get-spec.md
 
+# --- Extensibility and Integration --- Extend Logic with Your Own Code (Integration Studio)
+
+- extensibility-and-integration/integration-studio/extension-life-cycle/intro.md:
+    - external:
+        - "Server extension recompilation on upgrade":
+            https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Server_extension_recompilation_on_upgrade
+
+
 # --- Developing an Application ---
 
 #     Use Data/Data Modeling/Entity Relationships
@@ -1384,6 +1399,7 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51   
 - develop/ui/patterns/mobile/content/accordion.md:
+    - ref/ui-patterns/mobile/accordion.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Accordion.aspx
@@ -1525,6 +1541,7 @@
         - "Known issue with the Map component for Reactive Web apps": 
             https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Known_issue_with_the_Map_component_for_Reactive_Web_apps
 - develop/ui/patterns/mobile/interaction/notification.md:
+    - ref/ui-patterns/mobile/notification.md
     - external:
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=53
@@ -1612,7 +1629,15 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
+- develop/ui/patterns/mobile/numbers/progressbar.md:
+    - ref/ui-patterns/mobile/progressbar-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressBar.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=216
 - develop/ui/patterns/mobile/numbers/progresscircle.md:
+    - ref/ui-patterns/mobile/progresscircle-mob.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
@@ -1622,6 +1647,11 @@
     - external:
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=59
+- develop/ui/patterns/mobile/numbers/rating.md:
+    - ref/ui-patterns/mobile/rating.md
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=291
 - develop/ui/patterns/mobile/utilities/aligncenter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1663,7 +1693,7 @@
             https://www.outsystems.com/training/lesson/2035/how-to-debug-logic-in-outsystems
 
 # Extensibility and Integration
-- extensibility-and-integration/connect-external-db.md:
+- extensibility-and-integration/external-database/connect-external-db.md:
     - external:
         - "Demo - Integrating with a SQL Server Database":
             https://www.outsystems.com/learn/lesson/1847/demo-integrating-with-external-databases/
@@ -1902,3 +1932,15 @@
             https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/
         - "OutSystems testing guidelines":
             https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines 
+
+# Setting up OutSystems
+
+- setup/cache-invalidation/intro.md:
+    - setup/cache-invalidation/enable-tls.md
+    - setup/cache-invalidation/manage-troubleshoot.md
+    - setup/cache-invalidation/installation.md
+    - setup/cache-invalidation/high-availability.md
+
+- setup/logging-db/intro.md:
+    - setup/logging-db/configure-separate-db.md
+    - setup/logging-db/update-applications.md

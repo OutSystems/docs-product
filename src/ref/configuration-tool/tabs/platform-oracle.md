@@ -21,7 +21,7 @@ TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/
 
 For advanced settings, click on the **Advanced Settings** link.
 
-<table markdown="1">
+<table>
 <thead>
 <tr>
 <th>Configuration</th>
@@ -32,7 +32,7 @@ For advanced settings, click on the **Advanced Settings** link.
 <tbody>
 <tr>
 <td colspan="3">
-**Advanced Connection Settings**
+<strong>Advanced Connection Settings</strong>
 </td>
 </tr>
 <tr>
@@ -56,22 +56,22 @@ For advanced settings, click on the **Advanced Settings** link.
 <td>Allows you to set the NLS_SORT parameter. Choose one of the following values:<br/>
 BINARY_AI – Collation-sensitive SQL operations use a binary sort that is accent-insensitive and case-insensitive.<br/>
 BINARY_CI – Collation-sensitive SQL operations use a binary sort that is case-insensitive, but accent-sensitive. Using this value can help prevent issues in languages where accents are relevant for SQL operations. For example, in Japanese "Seto" (セト) and "Zeto" (ゼト) would both be valid query results for the "セト" search when using the BINARY_AI linguistic sort.</td>
-<td>`BINARY_AI`</td>
+<td><code>BINARY_AI</code></td>
 </tr>
 <tr>
 <td>Default Query Timeout</td>
 <td>Defines the default maximum time (in seconds) the platform waits for query execution (since establishing the database connection).</td>
-<td>`30`</td>
+<td><code>30</code></td>
 </tr>
 <tr>
 <td colspan="3">
-**1-Click Publish**
+<strong>1-Click Publish</strong>
 </td>
 </tr>
 <tr>
 <td>Database Update Query Timeout</td>
 <td>Defines the default maximum time (in seconds) the platform waits for query execution in a 1-Click Publish operation (since establishing the database connection).</td>
-<td>`600`</td>
+<td><code>600</code></td>
 </tr>
 </tbody>
 </table>

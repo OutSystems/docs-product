@@ -88,7 +88,7 @@ You can [download the sample app](files/sitemap-and-robots.oap), install it in y
 When working with the sample app, keep in mind the following:
 
 * You need to activate the technical preview **SEO-friendly URLs for Reactive Web Apps**. See [the prerequisites](intro.md#prerequisites).
-* You can't install the sample app in a Personal Environment, only in the cloud environments managed by OutSystems or properly configured on-premises installations.
+* You can't install the sample app in a Personal Environment, only OutSystems Cloud subscriptions or properly configured self-managed installations.
 * The app uses sample data from the OutSystems UI, a default component in OutSystems installations.
 * You have some feedback? Great! Use the feedback box in the page to send us a message.
 

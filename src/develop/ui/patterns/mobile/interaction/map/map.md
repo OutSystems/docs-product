@@ -25,17 +25,15 @@ This example demonstrates how to highlight OutSystems office locations around th
 
     ![Map in the Service Studio toolbar](<images/map-widget-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Map widget into the Main Content area of your application's screen.
 
@@ -82,6 +80,6 @@ After following these steps and publishing the module, you can test the componen
 | StaticMap (Boolean): Optional | If True, the map is not interactive. If False, the map is interactive. (False is the default.) The static map API has the following limitations:<br/><ul><li>The **AdvancedFormat** property only works when applying a custom style to the map</li><li>The **Offset** property doesn't work when the **StaticMap** property is set to True</li><li>The static map doesn't react in runtime, switching the value on **StaticMap** property</li><li>Google Maps API has a URL Size Restriction (8192 characters)</li></ul><br/>For more information, see [Maps Static API](https://developers.google.com/maps/documentation/maps-static/start).  |
 | ShowTraffic (Boolean): Optional | If True, traffic mode is enabled on the map. If False, traffic mode is not enabled. (False is the default.) |
 | AdvancedFormat (Text): Optional  | Allows for more options beyond what's provided through the input parameters. For more information, see [Google Controls](https://developers.google.com/maps/documentation/javascript/controls). |
-| ExtendedClass | Adds custom style classes to the component. You define your [custom style classes](../../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+| ExtendedClass | Adds custom style classes to the component. You define your [custom style classes](../../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 

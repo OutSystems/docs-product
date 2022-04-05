@@ -21,7 +21,9 @@ Site Properties exist in the server-side of the application. To create and use a
 
 1. Use the Site Property in your server-side code by referring to it as `Site.<SitePropertyName>`.
 
-If you want to use the value of a Site Property in the client-side logic of a mobile application, you must add a Server Action to get the Site Property value and use that Server Action in your client-side logic.
+If you want to use the value of a Site Property in the client-side logic of a mobile application, you must add a Server Action to get the Site Property value and use that Server Action in your client-side logic. 
+
+Site Properties are stored in cache of your application until invalidated.
 
 ## Change the value of a Site Property in Service Center
 

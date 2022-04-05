@@ -35,7 +35,7 @@ The extended actions for the process and process activities are the following:
 
 |Element   |Extended Action   |Description   |
 |:----------|:----------|:----------|
-|![](../../../shared/icons-tools/process.png) Process|![](../../../shared/icons-tools/process-extended-action.png) Launch&lt;Process Name&gt;|Launches an instance of the Process.|
-|![](../../../shared/icons-tools/human-activity.png) Human Activity|![](../../../shared/icons-tools/process-extended-action.png) Close&lt;Human Activity Name&gt;|Closes a Human Activity.|
-|![](../../../shared/icons-tools/wait-activity.png) Wait|![](../../../shared/icons-tools/process-extended-action.png) Close&lt;Wait Name&gt;|Closes a Wait activity.|
-|![](../../../shared/icons-tools/conditional-start.png) Conditional Start|![](../../../shared/icons-tools/process-extended-action.png) Start&lt;Conditional Start Name&gt;|Starts a Conditional Start activity.
+| Process| Launch&lt;Process Name&gt;|Launches an instance of the Process.|
+| Human Activity| Close&lt;Human Activity Name&gt;|Closes a Human Activity.|
+| Wait| Close&lt;Wait Name&gt;|Closes a Wait activity.|
+| Conditional Start| Start&lt;Conditional Start Name&gt;|Starts a Conditional Start activity.

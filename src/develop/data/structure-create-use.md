@@ -7,7 +7,7 @@ tags: support-Mobile_Apps; support-webapps
 
 While developing your application, you may find it interesting to have a variable holding a collection of variables with different data types grouped together and use it in the logic or UI. For example, to assign the values returned by an action where you don't have to create one output for each value.
 
-In OutSystems, you can create structured values by using a ![Structure.png](../../shared/icons-service-studio/structure.png) Structure or a Record. A Structure is a custom data type that you can use in your module. A Record is a custom data type defined for a single variable and cannot be reused in another variable.
+In OutSystems, you can create structured values by using a Structure or a Record. A Structure is a custom data type that you can use in your module. A Record is a custom data type defined for a single variable and cannot be reused in another variable.
 
 To declare and use a Structure:
 

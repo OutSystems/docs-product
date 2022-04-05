@@ -12,6 +12,12 @@ Firebase is a Google mobile development platform. It speeds up development of ma
 * [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase)
 * [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
 
+<div class="info" markdown="1">
+
+To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating to the supported Firebase-based mobile plugins](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Migrating_to_the_supported_Firebase-based_mobile_plugins). 
+
+</div>
+
 ## Prerequisites
 
 To use the Firebase plugins you meet the following requirements:
@@ -87,3 +93,33 @@ To get the target directory, concatenate the **app identifier** and **.firebase*
 | PROD | com.sample.prod.MyApp | `com.sample.prod.MyApp.firebase` |
 
 Use the target directory value in the **Target Directory** property of the **Resource**.
+
+### Additional setup for the Dynamic Links Plugin
+
+The Firebase Dynamic Links Plugin has some additional setup steps that need to be followed for it to work correctly:
+
+* You need to include a global preference in the Extensibility Configurations of the application using the plugin. The value for this preference needs to match the URL prefix you set in the Dynamic Links page in the Firebase console. For example:
+
+    ```
+    {
+        "preferences": {
+            "global": [{
+                "name": "FIREBASE_DOMAIN_URL_PREFIX",
+                "value": "outsystemsfirebase.page.link"
+            }]
+        }
+    }
+    ```
+
+* For iOS, you need to use a provisioning profile from Apple that contains the Associated Domains capability. For more info, see [Configuring an Associated Domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain) by Apple.
+
+### Ensuring app is compliant with Apple’s Data Use and Sharing guidelines
+
+Starting with iOS 14.5, apps on the App Store must receive the user’s permission to collect tracking data through the  AppTrackingTransparency framework.
+
+![RequestTrackingAuthorization client action parameters on Service Studio](images/firebase-request-tracking-authorization.png)
+
+To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin.
+If you want to present an alert prior to the iOS tracking permission dialog, enable the **ShowInformation** parameter on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
+
+You can use the **RequestTrackingAuthorization** action multiple times in the same app, since iOS remembers users' choice and only prompts users again after they uninstall and then reinstall the app on the device.

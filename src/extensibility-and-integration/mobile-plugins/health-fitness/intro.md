@@ -6,12 +6,6 @@ tags: runtime-mobile;
 
 # Health & Fitness Plugin
 
-<div class="info" markdown="1">
-
-OutSystems is preparing a Health & Fitness plugin for a general release. The team invites all developers and UX people to submit their feedback. How can the team make the plugin better? For what use cases you need documentation most? Let us know [at this forum topic](https://www.outsystems.com/forums/discussion/73732/health-fitness-plugin-under-development-feedback-wanted/)! 
-
-</div>
-
 The [Health & Fitness plugin](https://www.outsystems.com/forge/component-overview/11715/) enables you to access and use health and fitness data in a mobile app. The plugin provides access to the Apple HealthKit and Google Fit APIs by letting you use data relevant to your health and fitness use cases.
 
 The plugin is unaware of the provider you use for data, but you always need to request permissions from users to access data. The plugin saves no health and fitness data to the device. In cases where your app writes data to the APIs, the package name is the identifier of the data source. 
@@ -20,13 +14,13 @@ As a good practice, verify the plugin is available in the app and prevent the ap
 
 <div class="info" markdown="1">
 
-To learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app, see [Adding plugins](../intro.md#adding-plugins).
+To learn how to install and reference a plugin in your **OutSystems** apps, and how to install a sample app, see [Adding plugins](../intro.md#adding-plugins).
 
 </div>
 
 ## Sample app
 
-OutSystems provides a sample app that contains logic for common use cases. Install the [Health & Fitness sample app](https://www.outsystems.com/forge/component-overview/11715/) from Forge and then open it in Service Studio.
+**OutSystems** provides a sample app that contains logic for common use cases. Install the [Health & Fitness sample app](https://www.outsystems.com/forge/component-overview/11715/) from Forge and then open it in Service Studio.
 
 This sample app shows you how to do the following with the health and fitness data:
 
@@ -41,10 +35,11 @@ This sample app shows you how to do the following with the health and fitness da
 
 The following steps show how to design a use case that includes health and fitness data.
 
-1. Create logic to request permission to access heath and fitness data
-1. Create a user interface
-1. Create logic to access and store heath and fitness data
-1. Optionally, create logic to write and store new health and fitness data
+1. Create logic to request permission to access health and fitness data.
+1. Create a user interface.
+1. Create logic to access and store health and fitness data.
+1. Optionally, create logic to write and store new health and fitness data.
+1. Create logic to define a background job.
 
 <div class="info" markdown="1">
 
@@ -113,6 +108,31 @@ To write health and fitness data you can use the **WriteData** action. Set the p
 
 To check that writing the health or fitness data on the device is working, verify the value of **WriteData.Success** is **True**.
 
+### Create logic to define a background job
+
+To define a background job you can use the **SetBackgroundJob** action. Set the parameters for the type of health or fitness variable you want to keep evaluating, define the notification trigger condition and its frequency, and define the notification content. 
+
+Parametrization for two different use cases of a background job is shown below:
+
+#### Setting up a daily steps goal
+
+In the case of a daily steps goal evaluator, you will probably want to issue a single notification per day if the daily steps goal is met. To achieve this you can use the following parametrization:
+
+![Setting up a daily steps goal](images/set-background-job-ss.png)
+
+#### Setting up a heart rate monitoring alarm
+
+In the case of a heart rate monitoring alarm, try to strike a balance between job frequency and notification frequency. For example, you may want to check your heart rate every ten seconds. However, you would probably find it intrusive to receive notifications every time your heart rate goes above, or drops below, a certain value.
+
+Consider the following parametrization for a background job that will notify you if your heart rate is above 190 bpm, with a maximum notification frequency of one notification per minute:
+
+![Setting up a heart rate monitoring alarm](images/set-background-job2-ss.png)
+
+
+After you have created your background job you can update it or delete it using the **UpdateBackgroundJob** action or the **DeleteBackgroundJob** action, respectively.
+
+To check that that the background job was successfully created, verify if the value of **SetBackgroundJob.Success** is **True**.
+
 ### Handling errors
 
 The app with the plugin can run on many Android or iOS devices, with different hardware and configurations. To ensure a good user experience and prevent the app from crashing, handle the errors within the app.
@@ -125,5 +145,6 @@ Following is a list of actions you can use to make sure there are no errors:
 | **Success**     | AdvancedQuery            | True if there aren't errors while accessing and storing data.  |
 | **Success**     | GetFitnessData (*)       | True if there aren't errors while accessing and storing  data. |
 | **Success**     | WriteData                | True if there aren't errors while writing data.                |
+| **Success**     | SetBackgroundJob         | True if there aren't errors while creating a background job.   |
 
 (*) There are several actions in the Health & Fitness plugin that begin with **Get** and have a **Success** variable.

@@ -11,8 +11,6 @@ You can use the Icon Badge UI Pattern to display numerical information as a noti
 
 **How to use the Icon Badge UI Pattern**
 
-<!--The Icon Badge UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../../develop/logic/action-web.md). -->
-
 The following example demonstrates how you can display the number of registered users on your platform.
 
 1. In Service Studio, in the Toolbox, search for `Icon Badge`.
@@ -35,7 +33,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/iconbadge-3-ss.png>)
 
-    By default, the Icon Badge contains an Icon placeholder with a pre existing icon.
+    By default, the Icon Badge contains an Icon placeholder with a pre-existing icon.
 
 1. To create an aggregate (in this example to retrieve all the users on the platform), right-click the screen name and select **Fetch Data from Database**.
 
@@ -70,6 +68,6 @@ After following these steps and publishing the module, you can test the pattern 
 | Property | Description |
 |---|---|
 | Number (Integer): Mandatory | The number that appears inside the badge. Set this to a data source that contains the value you want to display. <p>Examples <ul><li>_VariableName_ - Displays the value that the variable "VariableName" holds at that time.</li><li>_ExampleAggregate.Name_ - Displays the names contained in the records returned by the "ExampleAggregate" aggregate execution.</li></ul></p> |
-| Color (Color Identifier): Optional | Set the icon badge's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the icon badge. <p>Examples <ul><li>_Blank_ - Displays the icon badge in the color you chose when creating the app. This is the default.</li><li>_Entities.Color.Red_ - Displays a red icon badge.</li></ul></p> |
-| IsLight (Boolean): Optional | Specify the badge's background and text color. <p>Examples <ul><li>_True_ - A brighter hue of the color is applied to the badge and a darker color to the text.</li><li>_False_ - A darker hue of the color is applied to the badge and a lighter color to the text. This is the default.</li></ul></p> |
-| ExtendedClass (Text):Optional | Adds custom style classes to the Pattern.You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+| Color (Color Identifier): Optional | Set the icon badge's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the icon badge. <p>Examples <ul><li>Blank - Displays the icon badge in the color you chose when creating the app. This is the default.</li><li>Entities.Color.Red - Displays a red icon badge.</li></ul></p> |
+| IsLight (Boolean): Optional | Specify the badge's background and text color. <p>Examples <ul><li>True - A brighter hue of the color is applied to the badge and a darker color to the text.</li><li>False - A darker hue of the color is applied to the badge and a lighter color to the text. This is the default.</li></ul></p> |
+| ExtendedClass (Text):Optional | Adds custom style classes to the Pattern.You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

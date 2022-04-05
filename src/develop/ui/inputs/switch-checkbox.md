@@ -7,8 +7,8 @@ tags:
 
 To gather end user input for a boolean value in a form, OutSystems provides two types of widgets:
 
-* ![](../../../shared/icons-tools/checkbox-widget.png) Check Box
-* ![](../../../shared/icons-tools/switch-widget.png) Switch (for Reactive Web and Mobile only)
+*  Check Box
+*  Switch (for Reactive Web and Mobile only)
 
 To use these widgets, do the following:
 

@@ -33,10 +33,3 @@ Open the aggregate and do the following:
 1. Now you see how many employees are in each city.
 
     ![Employees per city](images/group-calculate-ex2-ss.png)
-
-
-
-
-
-
-

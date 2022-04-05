@@ -5,8 +5,7 @@ tags: support-Database
 
 # SQL Queries
 
-
-The ![SQL](../../../shared/icons-tools/advanced-query.png) **SQL** element lets you run, test, and review SQL queries in your apps. SQL is an all-purpose tool for developers who know SQL language. For a more straightforward and optimized data manipulation use **Aggregates**.
+The **SQL** element lets you run, test, and review SQL queries in your apps. SQL is an all-purpose tool for developers who know SQL language. For a more straightforward and optimized data manipulation use **Aggregates**.
 
 ![SQL in a logic flow](images/sql-in-flow-ss.png?width=350)
 

@@ -5,7 +5,7 @@ tags: support-application_development; support-Database; support-webapps
 
 # Create and Use an Enumerate
 
-Using enumerates allows removing hard-coded values from your applications. This makes your code easier to understand and change, and promotes strong typing, that is less error prone. In OutSystems, we model enumerates as ![Static Entity](../../../shared/icons-service-studio/static-entity.png) Static Entities stored in the database. This allows fetching its records from the database. It also allows modeling foreign keys using the Static Entity Identifier.
+Using enumerates allows removing hard-coded values from your applications. This makes your code easier to understand and change, and promotes strong typing, that is less error prone. In OutSystems, we model enumerates as Static Entities stored in the database. This allows fetching its records from the database. It also allows modeling foreign keys using the Static Entity Identifier.
 
 To create and use a Static Entity do the following:
 

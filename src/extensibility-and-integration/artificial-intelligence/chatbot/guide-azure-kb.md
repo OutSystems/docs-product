@@ -23,107 +23,20 @@ This section explains the format of data for Azure QnA Maker service.
 
 Here is a table with sample questions and answers.
 
-<table>
-<tbody>
-<tr>
-<th >
-<div >1</div>
-</th>
-<td >Question</td>
-<td >Answer</td>
-</tr>
-<tr>
-<th >
-<div >2</div>
-</th>
-<td >
-<div >What are your opening and closing times?</div>
-</td>
-<td >The office is open from 8 AM to 5 PM, Monday to Friday. The office is closed on the weekend.</td>
-</tr>
-<tr>
-<th >
-<div >3</div>
-</th>
-<td >Do you work during the weekend?</td>
-<td >Our office does not work during the weekend.</td>
-</tr>
-<tr>
-<th >
-<div >4</div>
-</th>
-<td >Where can I send my request?</td>
-<td >Our Procurement accepts all your requests 24h a day, at orders@example.com.</td>
-</tr>
-<tr>
-<th >
-<div >5</div>
-</th>
-<td >What is your phone number?</td>
-<td >Our phone is 111-222-333.</td>
-</tr>
-<tr>
-<th >
-<div >6</div>
-</th>
-<td >What is your email?</td>
-<td >Our email is office@example.com</td>
-</tr>
-<tr>
-<th >
-<div >7</div>
-</th>
-<td >What's the minimum order?</td>
-<td >The minimum order quantity (MOQ) is 1000 pieces.</td>
-</tr>
-<tr>
-<th >
-<div >8</div>
-</th>
-<td >How do I file a complaint?</td>
-<td >
-<div >We're sorry to hear there might be issues with your order. Please contact us at support@example.com or call 111-222-333.</div>
-</td>
-</tr>
-<tr>
-<th >
-<div >9</div>
-</th>
-<td >Can I cancel my order?</td>
-<td >You can cancel our order within 30 days.</td>
-</tr>
-<tr>
-<th >
-<div >10</div>
-</th>
-<td >How do I contact you?</td>
-<td >
-<div >For general questions send us an email at office@example.com. For support send an email to support@example.com</div>
-</td>
-</tr>
-<tr>
-<th >
-<div >11</div>
-</th>
-<td >I have a faulty product.</td>
-<td >If you have issues with the order you received, contact us at support@example.com.</td>
-</tr>
-<tr>
-<th >
-<div >12</div>
-</th>
-<td >I want to return a product.</td>
-<td >You can return the product within 90 days from the date of purchase. Contact us at returns@example.com.</td>
-</tr>
-<tr>
-<th >
-<div >13</div>
-</th>
-<td >I have a discount code.</td>
-<td >You can enter your discount code during the order checkout.</td>
-</tr>
-</tbody>
-</table>
+|1|Question|Answer|
+|---|---|---|
+|**2**|What are your opening and closing times?|The office is open from 8 AM to 5 PM, Monday to Friday. The office is closed on the weekend.|
+|**3**|Do you work during the weekend?|Our office does not work during the weekend.|
+|**4**|Where can I send my request?|Our Procurement accepts all your requests 24h a day, at orders@example.com.|
+|**5**|What is your phone number?|Our phone is 111-222-333.|
+|**6**|What is your email?|Our email is office@example.com|
+|**7**|What's the minimum order?|The minimum order quantity (MOQ) is 1000 pieces.|
+|**8**|How do I file a complaint?|We're sorry to hear there might be issues with your order. Please contact us at support@example.com or call 111-222-333.|
+|**9**|Can I cancel my order?|You can cancel our order within 30 days.|
+|**10**|How do I contact you?|For general questions send us an email at office@example.com. For support send an email to support@example.com|
+|**11**|I have a faulty product.|If you have issues with the order you received, contact us at support@example.com.|
+|**12**|I want to return a product.|You can return the product within 90 days from the date of purchase. Contact us at returns@example.com.|
+|**13**|I have a discount code.|You can enter your discount code during the order checkout.|
 
 ## Create a knowledge base { #create-kb }
 

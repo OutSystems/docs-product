@@ -173,11 +173,11 @@ Drag an **Icon** widget from the Toolbox to the Actions placeholder in the top r
 
 ## Test your Mobile App
 
-At this stage we test the mobile app. Click the **![1-Click Publish](../shared/icons-service-studio/publish.png) 1-Click Publish** button to publish the application to your environment.
+At this stage we test the mobile app. Click the **1-Click Publish** button to publish the application to your environment.
 
 ![Publish Your Mobile App](images/create-mobile-17.png)
 
-When the application is deployed, click the **![Open in Browser](../shared/icons-service-studio/open-browser.png) Open in Browser** button to test your application in a browser (Chrome and Safari are supported).
+When the application is deployed, click the **Open in Browser** button to test your application in a browser (Chrome and Safari are supported).
 
 
 To try out the app on your mobile device see [Distribute as a progressive web app (PWA)](../deliver-mobile/distribute-pwa/intro.md).

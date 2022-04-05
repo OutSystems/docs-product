@@ -5,7 +5,7 @@ tags: support-application_development; support-Database; support-webapps
 
 # Create an Entity to Persist Data
   
-In OutSystems, a database table is an ![Entity](../../../shared/icons-service-studio/entity.png) Entity, and the table columns are Entity Attributes.
+In OutSystems, a database table is an Entity, and the table columns are Entity Attributes.
 
 To create an Entity you need to:
 

@@ -17,37 +17,11 @@ Database | The database catalog used for the logging database. | `outsystems_log
 
 For advanced settings, click the **Advanced Settings** link.
 
-<table markdown="1">
-<thead>
-<tr>
-<th>Configuration</th>
-<th>Description</th>
-<th>Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="3">
-**Advanced Connection Settings**
-</td>
-</tr>
-<tr>
-<td>Runtime Applications</td>
-<td>Allows you to use a specific connection string for OutSystems applications.</td>
-<td></td>
-</tr>
-<tr>
-<td>Log Service Port</td>
-<td>The port the log service listens to.</td>
-<td>`12003`</td>
-</tr>
-<tr>
-<td>Log Cycle Period</td>
-<td>Indicates how long to keep the log files (in weeks). After this time, the log tables are rotated and information is lost.</td>
-<td>`4`</td>
-</tr>
-</tbody>
-</table>
+|Configuration | Description | Default value|
+|---|---|---|
+|Runtime Applications|Allows you to use a specific connection string for OutSystems applications.||
+|Log Service Port|The port the log service listens to.|`12003`|
+|Log Cycle Period|Indicates how long to keep the log files (in weeks). After this time, the log tables are rotated and information is lost.|`4`|
 
 ## Administrator section
 

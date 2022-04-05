@@ -1,0 +1,48 @@
+name: Build
+
+on:
+  push
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+      
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        path: docs
+
+    - name: Checkout Tools
+      uses: actions/checkout@v2
+      with:
+        repository: ${{ secrets.TOOLS_REPOSITORY }}
+        ref: master
+        token: ${{ secrets.TOOLS_PAT }}
+        path: toolkit
+
+    - name: Add config.yml
+      working-directory: docs
+      run: |
+        cp config.sample.yml config.yml
+
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.8'
+
+    - name: Install Requirements
+      uses: BSFishy/pip-action@v1
+      with:
+        requirements: ./toolkit/requirements.txt
+    
+#    - name: Assemble Reference
+#      working-directory: docs
+#      run: |
+#        python "../toolkit/assemble-reference_script.py"
+
+    - name: Build
+      working-directory: docs
+      run: |
+        python "../toolkit/build_script.py"

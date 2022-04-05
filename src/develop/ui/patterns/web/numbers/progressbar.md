@@ -19,17 +19,15 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
     ![](<images/progressbar-2-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Progress Bar widget into the Main Content area of your application's screen.
 
@@ -94,9 +92,9 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| Percentage (Integer): Optional  |  Percentage to display. You can use functions or local variables. |
-| Color (Color Identifier): Optional  | Progress bar color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>_Blank_ - The progress bar color  is the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The progress bar color is red.</li></ul></p>  |
-| Shape (Shape Identifier): Optional  |  Set the Progress Bar shape. The predefined options are: <ul><li>Rounded</li><li> Soft Rounded </li> <li>Sharp</li></ul><p>Examples <ul><li>_Blank_ - The Progress Bar has a rounded shape (Entities.Shape.Rounded). This is the default.</li><li>_Entities.Shape.Sharp_ - The Progress Bar has a sharp shape.</li></ul></p> | 
+| Percentage (Integer): Optional | Percentage to display. You can use functions or local variables. |
+| Color (Color Identifier): Optional|Progress bar color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>Blank - The progress bar color  is the color you chose when creating the app (default value).</li><li>Entities.Color.Red - The progress bar color is red.</li></ul></p>  |
+| Shape (Shape Identifier): Optional  |  Set the Progress Bar shape. The predefined options are: <ul><li>Rounded</li><li> Soft Rounded </li> <li>Sharp</li></ul><p>Examples <ul><li>Blank - The Progress Bar has a rounded shape (Entities.Shape.Rounded). This is the default.</li><li>Entities.Shape.Sharp - The Progress Bar has a sharp shape.</li></ul></p> | 
 | Size (ProgressBarSize Identifier): Optional  |  Set the Progress Bar size. The predefined options are: <ul><li>Extra Small</li><li>Small</li> <li>Base (default)</li></ul> |
 | IsInline (Boolean): Optional  | If True, the value placeholder is placed at the end of the line and the label placeholder is hidden. If False, the value and label of the placeholder are placed over the line. This is the default.|
-| ExtendedClass (Text): Optional  | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|

@@ -23,17 +23,15 @@ You can use the Animate UI Pattern to create animations within your app. This UI
 
     ![](<images/animate-11-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Animate widget into the Main Content area of your application's screen.
 
@@ -55,8 +53,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property |  Description |
 |---|---|
-| EnterAnimation (EnterAnimation Identifier): Optional | Set how the animation enters the screen. <p><ul><li>EnterBottom</li> <li>EnterFade (default)</li><li>EnterLeft</li><li>EnterRight</li><li>EnterScale</li><li>EnterTop</li></ul></p> <p>Examples <ul><li>_Entities.EnterAnimation.EnterLeft_ - Enters from the left of the screen</li><li>_Entities.EnterAnimation.EnterTop_ - Enters from the top of the screen</li></ul></p> | 
-| LeaveAnimation (LeaveAnimation Identifier): Optional | Set how the animation leaves the screen. The predefined options available are:<p><ul><li>LeaveBottom</li> <li>LeaveFade (default)</li><li>LeaveLeft</li><li>LeaveRight</li><li>LeaveScale</li><li>LeaveTop</li></ul></p> <p>Examples <ul><li>_Entities.LeaveAnimation.LeaveBottom_ - Leaves from the bottom of the screen</li><li>_Entities.LeaveAnimation.LeaveRight_ - Leaves from the right of the screen</li></ul></p> |
+| EnterAnimation (EnterAnimation Identifier): Optional | Set how the animation enters the screen. <p><ul><li>EnterBottom</li> <li>EnterFade (default)</li><li>EnterLeft</li><li>EnterRight</li><li>EnterScale</li><li>EnterTop</li></ul></p> <p>Examples <ul><li>Entities.EnterAnimation.EnterLeft - Enters from the left of the screen</li><li>Entities.EnterAnimation.EnterTop - Enters from the top of the screen</li></ul></p> | 
+| LeaveAnimation (LeaveAnimation Identifier): Optional | Set how the animation leaves the screen. The predefined options available are:<p><ul><li>LeaveBottom</li> <li>LeaveFade (default)</li><li>LeaveLeft</li><li>LeaveRight</li><li>LeaveScale</li><li>LeaveTop</li></ul></p> <p>Examples <ul><li>Entities.LeaveAnimation.LeaveBottom - Leaves from the bottom of the screen</li><li>Entities.LeaveAnimation.LeaveRight - Leaves from the right of the screen</li></ul></p> |
 | Speed (Speed Identifier): Optional | Animation duration. Fast, normal, and slow are the predefined speeds available for the animation.| 
 | Delay (Integer): Optional | Time to wait before animation starts (in milliseconds). The default value is 0. | 
-| ExtendedClass (Text): Optional  |   Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the myclass style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|

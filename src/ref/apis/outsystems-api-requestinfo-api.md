@@ -26,9 +26,9 @@ getRequestKey() | Returns a GUID that uniquely identifies the current request.
 getSessionKey() | Returns the unique identifier of the session associated with the current request.  
 getTenantKey() | Returns the identifier of the tenant associated with the current request.  
 getTenantName() | Returns the name of the tenant associated with the current request.  
-getUserKey() | If the visitor is logged in during the current request, returns the user identifier associated with the user. %%Otherwise it returns an empty string.  
-getVisitorKey() | Returns the unique identifier of the visitor associated with the current request. %%A visitor is a combination of a device and a browser. %%The key is created at the first time the visitor accesses the website's domain using a given device and browser. %%The same key is used until the browser cookies are cleared.  
-getVisitKey() | Returns the unique identifier of the visit associated with the current request. %%A visit is defined as a series of page requests from the same visitor. A visit is considered ended when no requests have been recorded for 30 minutes.  
+getUserKey() | If the visitor is logged in during the current request, returns the user identifier associated with the user. <br/>Otherwise it returns an empty string.  
+getVisitorKey() | Returns the unique identifier of the visitor associated with the current request. <br/>A visitor is a combination of a device and a browser. <br/>The key is created at the first time the visitor accesses the website's domain using a given device and browser. <br/>The same key is used until the browser cookies are cleared.  
+getVisitKey() | Returns the unique identifier of the visit associated with the current request. <br/>A visit is defined as a series of page requests from the same visitor. A visit is considered ended when no requests have been recorded for 30 minutes.  
 getWebScreenKey() | Returns a unique identifier key for the current web screen. The key is unique to the web screen inside the module, and it is consistent across different environments.  
 getWebScreenName() | Returns the name of the current web screen.  
   

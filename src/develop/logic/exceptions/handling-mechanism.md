@@ -23,7 +23,11 @@ As an example, consider an Action B raising a User Exception named MyUserExcepti
 
 You should have, at least, one Exception Handler in your application flow to inform and allow the end user to continue to navigate.
 
-Note that **OnApplicationReady** is a special callback that is not covered by the Global Exception Handler.
+<div class="info" markdown="1">
+
+**OnApplicationReady** is a special callback that is not covered by the Global Exception Handler.
+
+</div>
 
 ## Handling exceptions raised by integrations
 

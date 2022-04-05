@@ -29,28 +29,10 @@ $public.ApplicationLifecycle.listen({
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Functions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[isUpgradingVersion](applicationlifecycle.md#isupgradingversion)</td>
-<td>
-Returns <code>true</code> if the application version is currently being upgraded.
-Used to determine the kind of feedback to provide when the application is initialized (e.g. splash screen).
-</td>
-</tr>
-<tr>
-<td>[listen](applicationlifecycle.md#listen)</td>
-<td>
-Registers listeners for application load events.
-</td>
-</tr>
-</tbody>
-</table>
+|Functions|Description|
+|---|---|
+|[isUpgradingVersion](applicationlifecycle.md#isupgradingversion)|Returns `true` if the application version is currently being upgraded. Used to determine the kind of feedback to provide when the application is initialized (e.g. splash screen).|
+|[listen](applicationlifecycle.md#listen)|Registers listeners for application load events.|
 
 ## Functions
 

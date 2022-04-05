@@ -9,6 +9,12 @@ OutSystems designed widgets to help you create lightweight emails that most emai
 
 ![widgets for emails](images/email-available-widgets-ss.png?width=700)
 
+<div class="info" markdown="1">
+
+To use this feature, make sure you meet the [prerequisites](intro.md#prerequisites).
+
+</div>
+
 Use the Email widgets like you use the Screen widgets, with the following common differences designed to make the emails light and secure:
 
 * Email widgets don't have features that require handling plenty of data. For example, Table in Emails doesn't show the pagination section.

@@ -5,13 +5,6 @@ tags: article-page; support-Installation_Configuration; support-Installation_Con
 
 # Unattended Installation and Upgrade
 
-<pre class="script-css">
-/* HIDE H2, H3, H4 AND H5 FROM TOC */
-#mt-toc-container li li {
-    display:none;
-}
-</pre>
-
 <div class="info" markdown="1">
 
 This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/Unattended_Installation_and_Upgrade)
@@ -280,6 +273,16 @@ Run the following:
 ```
 
 ## Adding a Front-End
+
+<div class="info" markdown="1">
+
+When adding a new front-end server to your environment, make sure that:
+
+* There are no ongoing deployments or solution publishes, and also no prepared deployments to continue, in case you have [two-stage deployments](../../managing-the-applications-lifecycle/deploy-applications/deploy-in-a-short-deployment-window.md) enabled in the environment. Having ongoing or prepared deployments when adding a new front-end server might prevent the correct deployment of the modules.
+
+* The new front-end server is a clean installation, it doesn't contain settings or deployed applications from a previous OutSystems installation. Otherwise, you might need to republish all the environment modules or the deployment of new applications might fail.
+
+</div>
 
 ### 1. Install the Platform Server binaries
 

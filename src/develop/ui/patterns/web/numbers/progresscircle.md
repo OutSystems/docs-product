@@ -1,11 +1,11 @@
 ---
-tags: runtime-mobileandreactiveweb;
+tags: runtime-traditionalweb
 summary: Displays the current progress of a task using circular or semi-circular progress indicators.
 ---
 
 # Progress Circle
 
-You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge. <!-- You can also show progress in a Progress Bar or Progress Circle Fraction display type.  When using the Progress Circle Pattern, you must be consistent, for example, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. -->
+You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge. 
 
  ![](<images/progresscircle-2-ss.png>)
 
@@ -19,17 +19,15 @@ In this example, we display the percentage of shipped orders from an existing Cu
 
     ![](<images/progresscircle-8-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Progress Circle widget into the Main Content area of your application's screen.
 
@@ -85,10 +83,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| Progress (Integer): Mandatory  |  Percentage to display. You can use functions or local variables.  |
-| ProgressColor (Color Identifier): Optional  |  The color of the stroke on progress circle. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available. <p>Examples <ul><li>_Blank_ - The stroke color displays in the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The stroke color is red.</li></ul></p> |
-| TrailColor (Color Identifier): Optional  |  The color of the empty part of the progress circle. <p>Examples <ul><li>_Blank_ - The empty part of the circle is a light gray (Entities.Color.Neutral5). This is the default value.</li><li>_Entities.Color.Blue_ - The empty part of the progress circle is blue.</li></ul></p> |
-| CircleThickness (Integer): Optional  |  The thickness of the circle that marks the progress. <p>Examples <ul><li>_Blank_ - The circle thickness is 4px. This is the default value.</li><li>_8_ - The circle thickness is 8px.</li></ul></p> |
+| Progress (Integer): Mandatory  |  Percentage to display. You can use functions or local variables. |
+| ProgressColor (Color Identifier): Optional  |  The color of the stroke on progress circle. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available. <p>Examples <ul><li>_Blank_ - The stroke color displays in the color you chose when creating the app (default value).</li><li>Entities.Color.Red - The stroke color is red.</li></ul></p> |
+| TrailColor (Color Identifier): Optional | The color of the empty part of the progress circle. <p>Examples <ul><li>Blank - The empty part of the circle is a light gray (Entities.Color.Neutral5). This is the default value.</li><li>Entities.Color.Blue - The empty part of the progress circle is blue.</li></ul></p> |
+| CircleThickness (Integer): Optional | The thickness of the circle that marks the progress. <p>Examples <ul><li>_lank - The circle thickness is 4px. This is the default value.</li><li>8 - The circle thickness is 8px.</li></ul></p> |
 | AnimateInitialProgress (Boolean): Optional  | If set to True, the progress from zero to the progress value is animated. This is the default value. If set to False, the progress is not animated. |
 | IsSemiCircle (Boolean): Optional  | If True, the Progress Circle is changed from a circle to semi circle. If False, it remains a circle. This is the default value. |
 | AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: <https://kimmobrunfeldt.github.io/progressbar.js/>. Example: `{ easing: 'bounce' }` |

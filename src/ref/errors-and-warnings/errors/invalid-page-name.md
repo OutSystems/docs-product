@@ -7,7 +7,7 @@ tags:
 
 Service Studio shows **Invalid Page Name Error**:
 
-* Page Name in [screen name] screen contains invalid characters. Please use only digits, letters, or any of these special characters: '-', '~', '/'.
+* Page Name in [screen name] screen contains invalid characters. Please use only digits, letters, or any of these special characters: `-`, `~`, `/`.
 
 Some characters in the URLs have special uses and you can't use those characters in the **Page Name** property. To fix the error, remove all characters different from letters, digits, dash (`-`), tilde (`~`), or forward slash (`/`).
 

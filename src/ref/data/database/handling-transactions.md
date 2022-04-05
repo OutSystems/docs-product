@@ -22,13 +22,13 @@ You can manage transactions explicitly through the CommitTransaction and AbortTr
 
 The following table shows the isolation level OutSystems uses in the different databases:
 
-DB2  |  MySQL  |  Oracle  |  SQL Server  
----|---|---|---  
-Read Committed  |  Read Uncommitted  |  Read Committed  | Read Uncommitted  
+DB2  |  MySQL  |  Oracle  |  SQL Server  | PostgreSQL
+---|---|---|---|---  
+Read Committed  |  Read Uncommitted  |  Read Committed  | Read Uncommitted  |  Read Commited
   
 When using a MySQL or SQL Server database, you are working at **Read Uncommitted** isolation level. You have multiple transactions per web request: one for writes, one for each read.
 
-When using a DB2 or Oracle database, you are working at **Read Committed** isolation level. All queries, inserts, updates, etc. happen in the same database transaction. The data is stored to the database only when the transaction is committed.  
+When using a DB2, PostgreSQL or Oracle database, you are working at **Read Committed** isolation level. All queries, inserts, updates, etc. happen in the same database transaction. The data is stored to the database only when the transaction is committed.  
 This means that you are not able to read data that was not yet committed in a transaction. Because of this, before you call a Process instance or a method of a consumed Web Service, you need to commit the database transaction, to see up-to-date data in the process or method.
 
 ## Important Remarks

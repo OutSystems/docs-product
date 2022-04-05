@@ -21,17 +21,15 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
     ![](images/carousel-3-ss.png)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. To From the Toolbox, drag the Carousel widget into the Main Content area of your application's screen. 
 
@@ -65,15 +63,15 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
 | Property | Description |
 |---|---|
-|Margin(Integer): Optional  |  Set the distance between each Carousel item. Default value is 0.<p>Examples<ul><li>_Blank_ - A distance of 16 pixels between each Carousel item.</li><li>_32_ - A distance of 32 pixels between each Carousel item.</li></ul></p>  |
-|Padding(Integer): Optional |  Set the distance between the screen edges and the visible items on the screen. <p>Examples<ul><li>_Blank_ - No distance between the screen edges and the on screen item. This is the default value.</li><li>_5_ - A distance of 5 pixels between the screen edges and the on screen item.</li></ul></p> |
-| Pagination(Boolean): Optional  | Enable or disable navigational dots that represent items on the Carousel.<p>Examples<ul><li>_Blank_ - Navigational dots are displayed. This is the default value.</li><li>_True_ - Navigational dots are displayed.</li><li>_False_ - No navigational dots are displayed.</li></ul></p> |
+|Margin(Integer): Optional  |  Set the distance between each Carousel item. Default value is 0.<p>Examples<ul><li>Blank - A distance of 16 pixels between each Carousel item.</li><li>32 - A distance of 32 pixels between each Carousel item.</li></ul></p>  |
+|Padding(Integer): Optional |  Set the distance between the screen edges and the visible items on the screen. <p>Examples<ul><li>Blank - No distance between the screen edges and the on screen item. This is the default value.</li><li>5 - A distance of 5 pixels between the screen edges and the on screen item.</li></ul></p> |
+| Pagination(Boolean): Optional  | Enable or disable navigational dots that represent items on the Carousel.<p>Examples<ul><li>Blank - Navigational dots are displayed. This is the default value.</li><li>True - Navigational dots are displayed.</li><li>False - No navigational dots are displayed.</li></ul></p> |
 | Autoplay(Boolean): Optional  | If set to True, the items in the Carousel are displayed automatically (with a 5 second time delay between each item). If set to False, the autoplay functionality is disabled. This is the default value.| 
 | Rewind(Boolean): Optional  | If True, a rewind effect is applied when the Carousel reaches the end and the Loop property is enabled. The default behavior is to show the first item without rewinding through the remaining. | 
 | Loop(Boolean): Optional  | If set to True, once the last item in the Carousel is reached, it loops around to the first item and begins displaying the all of the items again. If set to False, the slide of the Carousel items ends when the last item is reached. This is the default value.|
-| InitialPosition(Integer): Optional  |  Set which element you want to show first in the Carousel. <p>Examples <ul><li>_Blank_ - The first element in the Carousel is displayed. This is the default value.</li><li>_3_ - The 4th element in the Carousel is displayed. </li></ul></p>|
-|ItemsDesktop(Integer): Optional  |  Number of Carousel items visible at the same time on a desktop.<p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_4_ - 4 items are displayed.</li></ul></p> |  
-|ItemsTablet(Integer): Optional  | Number of Carousel items visible at the same time on a tablet.<p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_4_ - 4 items are displayed.</li></ul></p>| 
-|ItemsPhone(Integer): Optional  | Number of Carousel items visible at the same time on a phone.<p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_4_ - 4 items are displayed.</li></ul></p> |
-| ExtendedClass (Text): Optional |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+| InitialPosition(Integer): Optional  |  Set which element you want to show first in the Carousel. <p>Examples <ul><li>Blank - The first element in the Carousel is displayed. This is the default value.</li><li>3 - The 4th element in the Carousel is displayed. </li></ul></p>|
+|ItemsDesktop(Integer): Optional  |  Number of Carousel items visible at the same time on a desktop.<p>Examples<ul><li>Blank - 1 item is displayed. This is the default value.</li><li>4 - 4 items are displayed.</li></ul></p> |  
+|ItemsTablet(Integer): Optional  | Number of Carousel items visible at the same time on a tablet.<p>Examples<ul><li>Blank - 1 item is displayed. This is the default value.</li><li>4 - 4 items are displayed.</li></ul></p>| 
+|ItemsPhone(Integer): Optional  | Number of Carousel items visible at the same time on a phone.<p>Examples<ul><li>Blank - 1 item is displayed. This is the default value.</li><li>4 - 4 items are displayed.</li></ul></p> |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
 | AdvancedFormat(Text):Optional  |  Enables you to use more options than what is provided in the properties. For more information, visit: <https://github.com/ganlanyuan/tiny-slider>. <p>Example `{ axis: 'vertical' }`</p> |

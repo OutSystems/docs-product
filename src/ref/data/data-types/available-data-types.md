@@ -46,55 +46,17 @@ If your application needs to store characters defined in higher Unicode ranges, 
 
 ## Compound data types
 
-<table markdown="1">
-<thead>
-<tr>
-<th>Type</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;Entity&gt; or &lt;Structure&gt;</td>
-<td>When an Entity or [Structure](../../../develop/data/structure-create-use.md) is created, a data type is also created with all the attributes of that Entity or Structure. For example, when the Customer entity is created, the Customer data type is created. To create a variable of this data type, simply set its **Data Type** property to `Customer`.  
-To access an attribute of the variable, use the following syntax: `<variable>.<attribute>`, for example `MyCustomerVar.Name`.
-</td>
-</tr>
-<tr>
-<td>Object</td>
-<td>OutSystems supports the Object data type to allow to reuse your own .NET classes. The default value is NullObject().</td>
-</tr>
-<tr>
-<td>Record</td>
-<td>
-A [Record](../../../develop/data/structure-create-use.md) is a data type that's composed of a fixed number of attributes, each one with its own data type. Use a Record to define a compound data type that is used for a single variable. If you need to define more than one variable with the same compound data type, use a Structure instead. Some use cases for using the Record data type are:<br/>
-&#8226; You need to return the result of an Aggregate on a User Action. In this case, you can define the user action output parameter using the record data type.<br/>
-&#8226; You need a user action that returns compound information, but don't want to define a new Structure.
-</td>
-</tr>
-</tbody>
-</table>
+|Type|Comments|
+|--- |--- |
+|`<Entity>` or `<Structure>`|When an Entity or [Structure](../../../develop/data/structure-create-use.md) is created, a data type is also created with all the attributes of that Entity or Structure. For example, when the Customer entity is created, the Customer data type is created. To create a variable of this data type, simply set its **Data Type** property to `Customer`.<br/>To access an attribute of the variable, use the following syntax: `.`, for example `MyCustomerVar.Name`.|
+|Object|OutSystems supports the Object data type to allow to reuse your own .NET classes. The default value is NullObject().|
+|Record|A [Record](../../../develop/data/structure-create-use.md) is a data type that's composed of a fixed number of attributes, each one with its own data type. Use a Record to define a compound data type that is used for a single variable. If you need to define more than one variable with the same compound data type, use a Structure instead. Some use cases for using the Record data type are:<br/>• You need to return the result of an Aggregate on a User Action. In this case, you can define the user action output parameter using the record data type.<br/>• You need a user action that returns compound information, but don't want to define a new Structure.|
   
 ## Collection data types
 
-<table markdown="1">
-<thead>
-<tr>
-<th>Type</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-List
-</td>
-<td>
-A [List](list.md) is a sequence of elements of the same data type, either basic or compound. Elements can be inserted, fetched, and removed from a List.
-</td>
-</tr>
-</tbody>
-</table>  
+|Type|Comments|
+|--- |--- |
+|List|A [List](list.md) is a sequence of elements of the same data type, either basic or compound. Elements can be inserted, fetched, and removed from a List.|
   
 ## Default and null values
 

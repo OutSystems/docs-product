@@ -9,21 +9,9 @@ Provides methods for doing client side role checks. Used to programmatically sho
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Functions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[checkIfCurrentUserHasRole](security.md#checkifcurrentuserhasrole)</td>
-<td>
-Checks if the current user has the given role.
-</td>
-</tr>
-</tbody>
-</table>
+|Functions|Description|
+|---|---|
+|[checkIfCurrentUserHasRole](security.md#checkifcurrentuserhasrole)|Checks if the current user has the given role.|
 
 ## Functions
 

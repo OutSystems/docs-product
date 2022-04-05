@@ -179,56 +179,16 @@ http://outsystemscloud.com/PerformanceProbe/rest/PerformanceMonitoringAPI/Reques
 
 ### RequestEvent
 
-<table markdown="1">
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Instant</td>
-<td>Date and time when the event occurred.</td>
-</tr>
-<tr>
-<td>Request Key</td>
-<td>The GUID that identifies the request.</td>
-</tr>
-<tr>
-<td>Request Event Name</td>
-<td>The name of the event.</td>
-</tr>
-<tr>
-<td>Module Key</td>
-<td>Unique identifier of the module where the event occurred.</td>
-</tr>
-<tr>
-<td>Module Name</td>
-<td>Name of the module where the event occurred.</td>
-</tr>
-<tr>
-<td>Application Key</td>
-<td>Unique identifier of the application where the event occurred.</td>
-</tr>
-<tr>
-<td>Application Name</td>
-<td>Name of the application where the event occurred.</td>
-</tr>
-<tr>
-<td>Request Event Details</td>
-<td>A JSON object with the details about the event. Each built-in request event has its own details:<br/>
-&#8226; [WebScreenClientExecuted](#webscreenclientexecuted-details)<br/>
-&#8226; [WebScreenServerExecuted](#webscreenserverexecuted-details)<br/>
-&#8226; [QueryExecuted](#queryexecuted-details)<br/>
-&#8226; [ConsumedIntegrationExecuted](#consumedintegrationexecuted-details)<br/>
-&#8226; [ExtensionExecuted](#extensionexecuted-details)<br/>
-&#8226; [ScreenServer](#screenserver-details)<br/>
-&#8226; [TimerExecuted](#timerexecuted-details)
-</td>
-</tr>
-</tbody>
-</table>
+|Property|Description|
+|--- |--- |
+|Instant|Date and time when the event occurred.|
+|Request Key|The GUID that identifies the request.|
+|Request Event Name|The name of the event.|
+|Module Key|Unique identifier of the module where the event occurred.|
+|Module Name|Name of the module where the event occurred.|
+|Application Key|Unique identifier of the application where the event occurred.|
+|Application Name|Name of the application where the event occurred.|
+|Request Event Details|A JSON object with the details about the event. Each built-in request event has its own details:<br/>• [WebScreenClientExecuted](#webscreenclientexecuted-details)<br/>• [WebScreenServerExecuted](#webscreenserverexecuted-details)<br/>• [QueryExecuted](#queryexecuted-details)<br/>• [ConsumedIntegrationExecuted](#consumedintegrationexecuted-details)<br/>• [ExtensionExecuted](#extensionexecuted-details)<br/>• [ScreenServer](#screenserver-details)<br/>• [TimerExecuted](#timerexecuted-details)|
 
 #### Request event details for WebScreenClientExecuted event { #webscreenclientexecuted-details }
 

@@ -16,101 +16,25 @@ $public.FeedbackMessage.showFeedbackMessage("Your data has been submitted.", 1);
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Modules</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[ApplicationLifecycle](modules/applicationlifecycle.md)</td>
-<td>
-Provides information about the status of the application's lifecycle.
-Used to protect the app during upgrades, when local model access shouldn't be allowed, and to customize the application loading process.
-</td>
-</tr>
-<tr>
-<td>[Device](modules/device.md)</td>
-<td>
-Provides methods to access native capabilities of the device.
-</td>
-</tr>
-<tr>
-<td>[FeedbackMessage](modules/feedbackmessage.md)</td>
-<td>
-Displays feedback messages to the user.
-Used to display personalized feedback messages, specifying options like custom style and auto-close behavior.
-</td>
-</tr>
-<tr>
-<td>[Logger](modules/logger.md)</td>
-<td>
-Provides methods to log messages or errors. Used as "console.log" but also logs messages in Service Center.
-</td>
-</tr>
-<tr>
-<td>[Security](modules/security.md)</td>
-<td>
-Provides methods for doing client side role checks.
-Used to programmatically show or hide UI elements depending on a given role.
-</td>
-</tr>
-</tbody>
-</table>
+|Modules|Description|
+|---|---|
+|[ApplicationLifecycle](modules/applicationlifecycle.md)|Provides information about the status of the application's lifecycle. Used to protect the app during upgrades, when local model access shouldn't be allowed, and to customize the application loading process.|
+|[Device](modules/device.md)|Provides methods to access native capabilities of the device.|
+|[FeedbackMessage](modules/feedbackmessage.md)|Displays feedback messages to the user. Used to display personalized feedback messages, specifying options like custom style and auto-close behavior.|
+|[Logger](modules/logger.md)|Provides methods to log messages or errors. Used as "console.log" but also logs messages in Service Center.|
+|[Security](modules/security.md)|Provides methods for doing client side role checks. Used to programmatically show or hide UI elements depending on a given role.|
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Classes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[ApplicationContext](classes/applicationcontext.md)</td>
-<td>
-Provides contextual information based on the screen that is being presented.
-Used to identify the screen, module and application that is currently running.
-</td>
-</tr>
-<tr>
-<td>[Navigation](classes/navigation.md)</td>
-<td>
-Provides the ability to perform normal and history navigations, and to override some navigation behaviors (e.g. back).
-Used to create new transition animations instead of overriding the existing ones using CSS.
-</td>
-</tr>
-<tr>
-<td>[Validation](classes/validation.md)</td>
-<td>
-Provides methods to show validation messages on widgets and set their validation values.
-Used when validating widgets inside iterators, since it's not possible to do it in the usual way.
-</td>
-</tr>
-<tr>
-<td>[View](classes/view.md)</td>
-<td>
-Provides methods to deal with active view components and their state.
-</td>
-</tr>
-</tbody>
-</table>
+|Classes|Description|
+|---|---|
+|[ApplicationContext](classes/applicationcontext.md)|Provides contextual information based on the screen that is being presented. Used to identify the screen, module and application that is currently running.|
+|[Navigation](classes/navigation.md)|Provides the ability to perform normal and history navigations, and to override some navigation behaviors (e.g. back). Used to create new transition animations instead of overriding the existing ones using CSS.|
+|[Validation](classes/validation.md)|Provides methods to show validation messages on widgets and set their validation values. Used when validating widgets inside iterators, since it's not possible to do it in the usual way.|
+|[View](classes/view.md)|Provides methods to deal with active view components and their state.|
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Type aliases</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[ApplicationLoadEventHandlers](README.md#applicationloadeventhandlers)</td>
-<td>
-Event handlers called when the status of the application load changes.
-</td>
-</tr>
-</tbody>
-</table>
+|Type aliases|Description|
+|---|---|
+|[ApplicationLoadEventHandlers](README.md#applicationloadeventhandlers)|Event handlers called when the status of the application load changes.|
+
 
 ## Type aliases
 

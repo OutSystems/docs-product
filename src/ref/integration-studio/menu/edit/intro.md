@@ -17,4 +17,4 @@ Menu Item | Description
 ![](images/file-paste.gif) Paste | Insert the element(s) or text in the Clipboard at the insertion point.
 ![](images/edit-find.gif) Find (`Ctrl+F`) | Allows you to search for a string in your extension.
 Find Next (`F3`) | Allows you to continue the search previously defined.
-Options... | Allows you to configure parameters related to the development in Integration Studio.%%For more information, see [Options window](<options.md>).
+Options... | Allows you to configure parameters related to the development in Integration Studio.<br/>For more information, see [Options window](<options.md>).

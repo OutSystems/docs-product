@@ -19,6 +19,7 @@ The current list of unsupported features/use cases is the following:
     * [Any attribute](<#wildcards-any-attribute>)
 * Any types:
     * [AnyType](<#any-types-anytype>)
+    * [No specified type](<#any-types-no-specified-type>)
     * [AnySimpleType and AnyAtomicType](<#any-types-anysimpletype-and-anyatomictype>)
 * [Attribute Groups](<#attribute-groups>)
 * [SOAP Action names with special characters](#special-characters)
@@ -234,6 +235,28 @@ Example:
 ### Use case workaround
 
 Currently there is no generic workaround available to overcome this unsupported use case.
+
+## Any types - no specified type
+
+An element with a `name` attribute and no `type` attribute is treated by default as `anyType` as above.
+
+Example:
+
+```xml
+<xsd:complexType name="GenericInformation">
+    <xsd:sequence>
+        <xsd:element minOccurs="1" name="Name" type="xsd:string" />
+        <xsd:element minOccurs="1" name="Type" type="tns:InformationKind" />
+        <xsd:element minOccurs="1" name="IsActive" type="xsd:boolean" />
+        <xsd:element minOccurs="1" name="SpecificInfo" /> 
+    </xsd:sequence>
+</xsd:complexType>
+```
+
+### Use case workaround
+
+If the element actually represents a property of a simple type then it can always be represented as a string. In this case a possible workaround is to add a `type="xsd:string"` attribute to the element before importing. 
+If the element can represent complex types then there is no generic workaround.
 
 ## Any types - AnySimpleType and AnyAtomicType
 

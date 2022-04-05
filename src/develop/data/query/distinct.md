@@ -10,7 +10,7 @@ Database tables may have columns containing repeated values. There are situation
 To get distinct values of an entity attribute:
 
 1. In an aggregate in the action flow, add the entity.
-1. Hover on the attribute for which you want to obtain distinct values, click ![Aggregate Menu](../../../shared/icons-service-studio/aggregate-menu.png) and choose to group by the attribute.
+1. Hover on the attribute for which you want to obtain distinct values, click ![Aggregate Menu](images/aggregate-menu.png) and choose to group by the attribute.
 
 ![Get Distinct Values From the Database](images/distinct.png)
 

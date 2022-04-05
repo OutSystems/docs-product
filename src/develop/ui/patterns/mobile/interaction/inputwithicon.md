@@ -49,7 +49,7 @@ The Input with Icon UI Pattern includes an icon and placeholder text that suppor
 
     ![](<images/inputwithicon-5-ss.png>)
 
-1. To change the icon, select the Icon widget, and from the **Name** drop-down, select the icon you want to display in the input box. In this example, we select the user icon.
+1. To change the icon, select the Icon widget, and from the **Icon** drop-down, select the icon you want to display in the input box. In this example, we select the user icon.
 
     ![](<images/inputwithicon-6-ss.png>)
 

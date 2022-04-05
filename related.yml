@@ -1399,6 +1399,7 @@
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=51   
 - develop/ui/patterns/mobile/content/accordion.md:
+    - ref/ui-patterns/mobile/accordion.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/Accordion.aspx
@@ -1540,6 +1541,7 @@
         - "Known issue with the Map component for Reactive Web apps": 
             https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Known_issue_with_the_Map_component_for_Reactive_Web_apps
 - develop/ui/patterns/mobile/interaction/notification.md:
+    - ref/ui-patterns/mobile/notification.md
     - external:
         - "OutSystems UI Pattern":
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=53
@@ -1627,7 +1629,15 @@
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/IconBadge.aspx
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=43
+- develop/ui/patterns/mobile/numbers/progressbar.md:
+    - ref/ui-patterns/mobile/progressbar-mobile.md
+    - external:
+        - "OutSystems UI Web Live Style Guide": 
+            https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressBar.aspx
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=216
 - develop/ui/patterns/mobile/numbers/progresscircle.md:
+    - ref/ui-patterns/mobile/progresscircle-mob.md
     - external:
         - "OutSystems UI Web Live Style Guide": 
             https://outsystemsui.outsystems.com/WebStyleGuidePreview/ProgressCircle.aspx
@@ -1637,6 +1647,11 @@
     - external:
         - "OutSystems UI Pattern": 
             https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=59
+- develop/ui/patterns/mobile/numbers/rating.md:
+    - ref/ui-patterns/mobile/rating.md
+    - external:
+        - "OutSystems UI Pattern": 
+            https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternDetail?PatternId=291
 - develop/ui/patterns/mobile/utilities/aligncenter.md:
     - external:
         - "OutSystems UI Web Live Style Guide": 
@@ -1917,3 +1932,15 @@
             https://www.outsystems.com/training/paths/10/becoming-a-tester-in-outsystems/
         - "OutSystems testing guidelines":
             https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines 
+
+# Setting up OutSystems
+
+- setup/cache-invalidation/intro.md:
+    - setup/cache-invalidation/enable-tls.md
+    - setup/cache-invalidation/manage-troubleshoot.md
+    - setup/cache-invalidation/installation.md
+    - setup/cache-invalidation/high-availability.md
+
+- setup/logging-db/intro.md:
+    - setup/logging-db/configure-separate-db.md
+    - setup/logging-db/update-applications.md

@@ -39,8 +39,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Element | Code |
 |---|---| 
-|![](images/JS_hide.png) |  var header = document.querySelector(".header");%%header.classList.add("hide");%%header.classList.add("header-on-scroll"); |
-|![](images/JS_show.png) |  var header = document.querySelector(".header");%%header.classList.remove("hide");%%header.classList.remove("header-on-scroll"); | 
+|![](images/JS_hide.png) |  var header = document.querySelector(".header");<br/>header.classList.add("hide");<br/>header.classList.add("header-on-scroll"); |
+|![](images/JS_show.png) |  var header = document.querySelector(".header");<br/>header.classList.remove("hide");<br/>header.classList.remove("header-on-scroll"); | 
   
 **Result**
 

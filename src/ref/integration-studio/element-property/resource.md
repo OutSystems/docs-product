@@ -58,10 +58,10 @@ Indicates where, in the Platform Server, the resource is stored when the module 
 Mandatory
 </td>
 <td>
-Depends on the type of the resource you are adding:%%
-`Copy to Binaries directory`: default of DLLs or JARs, configuration and compilation files.%%
-`Copy to Application directory`: default of .NET `.aspx` and `.asmx` pages, style sheets and JavaScript files.%%
-`Copy to Images directory`: default of image files.%%
+Depends on the type of the resource you are adding:<br/>
+`Copy to Binaries directory`: default of DLLs or JARs, configuration and compilation files.<br/>
+`Copy to Application directory`: default of .NET `.aspx` and `.asmx` pages, style sheets and JavaScript files.<br/>
+`Copy to Images directory`: default of image files.<br/>
 `Ignore`: when the file is not supposed to be published with the module. Used for help files, source code, etc.
 </td>
 <td>
@@ -80,7 +80,7 @@ Optional
 <td>
 </td>
 <td>
-Useful for documentation and knowledge transfer purposes.%%
+Useful for documentation and knowledge transfer purposes.<br/>
 The maximum size of this property is 255 characters.
 </td> </tr>
 <tr>

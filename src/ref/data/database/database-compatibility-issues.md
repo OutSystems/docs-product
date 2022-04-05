@@ -40,13 +40,13 @@ The following table contains an example in how to design the query with an empty
 
 For All DBMS  |  SQL Server  |  Oracle  |  MySQL  
 ---|---|---|---  
-SELECT {User}.* %%FROM {User} %%WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* %%FROM {User} %%WHERE {User}.Username = ''  |  SELECT {User}.* %%FROM {User} %%WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* %%FROM {User} %%WHERE {User}.Username = ''  
+SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = ''  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = '&lt;single space&gt;'  |  SELECT {User}.* <br/>FROM {User} <br/>WHERE {User}.Username = ''  
   
 Note that foreign keys for text attributes are stored with a text value if a reference exists, or NULL if there is no reference to a row in another entity.
 
 ## Handling Processes and Web Services
 
-When using an Oracle or DB2 database, you are working at Read Committed isolation level, meaning that you are not able to read data that was not committed yet in a transaction. Because of this, if you call a Process instance or a method of a consumed Web Service, the changes made to entity records will only be available in the Process or Method if you commit the database transaction before the call. Learn more about [Handling Transactions](<handling-transactions.md>).
+When using an Oracle, PostgreSQL or DB2 database, you are working at Read Committed isolation level, meaning that you are not able to read data that was not committed yet in a transaction. Because of this, if you call a Process instance or a method of a consumed Web Service, the changes made to entity records will only be available in the Process or Method if you commit the database transaction before the call. Learn more about [Handling Transactions](<handling-transactions.md>).
 
 ## Case and Accent Insensitive Searches in Large Text Objects
 

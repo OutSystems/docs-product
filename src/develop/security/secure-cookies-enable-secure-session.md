@@ -2,7 +2,7 @@
 summary: Check how to configure your OutSystems environment to secure session cookies and how to activate the secure cookie flag while developing the app.
 ---
 
-# Secure Cookies: How to enable secure session cookies and set application cookies as secure
+# Enable secure session cookies and set application cookies as secure
 
 ## Overview
 

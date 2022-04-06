@@ -114,7 +114,7 @@ The **Purpose** you can configure for the environment is subject to the environm
 <td style="align:center;background-color:#dddddd;">No</td>
 </tr>
 <tr>
-<td><a href=https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Debugging_Applications/Public_and_Personal_Areas>Test and debug in Personal Area</a></td>
+<td><a href="https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Debugging_Applications/Public_and_Personal_Areas">Test and debug in Personal Area</a></td>
 <td style="align:center;background-color:#f1c40f;">Yes<sup>B</sup></td>
 <td style="align:center;background-color:#dddddd;">No</td>
 <td style="align:center;background-color:#dddddd;">No</td>

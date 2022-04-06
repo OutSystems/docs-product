@@ -43,11 +43,14 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
 
     ![Create a new local variable](<images/buttonloading-variable-ss.png>)
 
-1. In this example, we also set the **ShowLabelOnLoading** property to **False** so that the spinner doesn't show while the button logic is being executed.
+1. In this example, we also set the **ShowLabelOnLoading** property to **False**. 
+This displays the loading spinner only (not the Button label) while the button logic is being executed.
 
     ![Set the ShowLabelOnLoading property](<images/buttonloading-setprop-ss.png>)
 
-1. Double-click the **Button** widget and add the necessary logic. In this example, the **ButtonOnClick** action creates a new user. We also add **Assign** logic for the **Button Loading** widget. The first Assign has the **CreatingNewUser** set to **False**. This is so the spinner doesn't display. The second Assign has the **CreatingNewUser** set to **True**. (The logic is added between the two Assigns.)
+1. Double-click the **Button** widget and add the necessary logic. 
+
+    In this example, the **ButtonOnClick** action creates a new user. We also add **Assign** logic for the **Button Loading** widget. The first Assign has the **CreatingNewUser** set to **True**. (This is so the spinner shows the loading state.) The second Assign has the **CreatingNewUser** set to **False**. (The logic is added between the two Assigns.)
 
     ![Add the relevant logic](<images/buttonloading-logic-ss.png>)
 

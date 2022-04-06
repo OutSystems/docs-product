@@ -50,7 +50,7 @@ This displays the loading spinner only (not the Button label) while the button l
 
 1. Double-click the **Button** widget and add the necessary logic. 
 
-    In this example, the **ButtonOnClick** action creates a new user. We also add **Assign** logic for the **Button Loading** widget. The first Assign has the **CreatingNewUser** set to **True**. (This is so the spinner shows the loading state.) The second Assign has the **CreatingNewUser** set to False. (The logic is added between the two Assigns.)
+    In this example, the **ButtonOnClick** action creates a new user. We also add **Assign** logic for the **Button Loading** widget. The first Assign has the **CreatingNewUser** set to **True**. (This is so the spinner shows the loading state.) The second Assign has the **CreatingNewUser** set to **False**. (The logic is added between the two Assigns.)
 
     ![Add the relevant logic](<images/buttonloading-logic-ss.png>)
 

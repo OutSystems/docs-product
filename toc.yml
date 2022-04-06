@@ -1179,6 +1179,7 @@
             # Patterns
             - href: ref/interfaces/ui-patterns.md
             - topics:
+                - href: ref/ui-patterns/mobile/accordion.md
                 - href: ref/ui-patterns/mobile/data-grid-api-ref.md
                 - href: ref/ui-patterns/mobile/carousel-mobile.md
                 - href: ref/ui-patterns/mobile/columns.md

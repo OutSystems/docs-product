@@ -184,7 +184,8 @@ Do the following:
     
     * **.NET Core 3.1 Runtime & Hosting Bundle for Windows**  
     1\. [Download the .NET Core 3.1 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-3.1.14-windows-hosting-bundle-installer) from Microsoft.  
-    2\. Rename the .NET Core Installer to `DotNetCore_WindowsHosting.exe`.
+    2\. Rename the .NET Core Installer to `DotNetCore_WindowsHosting_31.exe`.  
+    _Note:_ If you're installing a Platform Server version earlier than 11.14.0, rename the installer to `DotNetCore_WindowsHosting.exe` instead.
     
     * **Build Tools 2015**  
     1\. [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft.  

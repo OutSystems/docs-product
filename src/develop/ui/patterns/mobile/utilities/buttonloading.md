@@ -44,7 +44,8 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
     ![Create a new local variable](<images/buttonloading-variable-ss.png>)
 
 1. In this example, we also set the **ShowLabelOnLoading** property to **False**. 
-This displays the loading spinner only (not the Button label) while the button logic is being executed.
+
+    This displays the loading spinner only (not the Button label) while the button logic is being executed.
 
     ![Set the ShowLabelOnLoading property](<images/buttonloading-setprop-ss.png>)
 

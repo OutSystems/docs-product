@@ -24,7 +24,7 @@ To define a Record:
 
 ## Example using a Record
 
-In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating. The data is stored in the Place an Review entities.
+In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating. The data is stored in the Place and Review entities.
 
 Since the data type that we will need to assign to the output parameter will only be used here, we will use a Record:
 

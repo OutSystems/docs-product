@@ -1,6 +1,6 @@
 ---
 summary: 
-tags: GDPR;
+tags:
 ---
 
 # Lifecycle Management and Data Protection

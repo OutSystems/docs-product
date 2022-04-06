@@ -1,5 +1,5 @@
 ---
-tags: client-side
+tags:
 summary: 
 en_title: Avoid inline JavaScript or inline style
 ---

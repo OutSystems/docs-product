@@ -1,6 +1,6 @@
 ---
 summary: Flip Content prioritizes information display, keeping the interface uncluttered.
-tags:
+tags: runtime-mobileandreactiveweb;
 ---
 
 # Flip Content

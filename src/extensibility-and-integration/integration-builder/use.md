@@ -1,6 +1,6 @@
 ---
 summary: Check how to create an integration using Integration Builder and how to configure it after deployment.
-tags: article-page;doc-procedure
+tags: article-page
 ---
 
 # Use Integration Builder

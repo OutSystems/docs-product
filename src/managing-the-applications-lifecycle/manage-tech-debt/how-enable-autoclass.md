@@ -1,7 +1,6 @@
 ---
-tags: Architecture Dashboard; how-to; manual
+tags: 
 summary: You can change a enable or disable auto-classification of apps in Architecture Dashboard.
-en_title: How to enable or disable auto-classification  
 ---
 
 # How to enable or disable auto-classification

@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; Mobile
+tags:
 summary: Follow this walkthrough to get started using Experience Builder.
 ---
 

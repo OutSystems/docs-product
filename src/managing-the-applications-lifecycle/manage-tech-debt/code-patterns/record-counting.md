@@ -1,7 +1,6 @@
 ---
-tags: database
+tags: 
 summary: 
-en_title: Appropriate record counting
 ---
 
 

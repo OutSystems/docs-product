@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; Mobile.
+tags:
 summary: This area includes the reference documentation of all the actions availabe in the modules of the Experience Builder Components package.
 ---
 

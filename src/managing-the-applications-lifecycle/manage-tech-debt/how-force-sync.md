@@ -1,7 +1,6 @@
 ---
 tags: 
 summary: Learn how to request a synchonization between the probe and Architecture Dashboard.
-en_title: How to request a synchronization
 ---
 
 

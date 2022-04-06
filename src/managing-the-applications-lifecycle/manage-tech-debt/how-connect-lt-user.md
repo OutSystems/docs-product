@@ -1,7 +1,6 @@
 ---
-tags: Architecture Dashboard; how-to; manual
+tags: 
 summary: Before you can see an Infrastructure in Architecture Dashboard, you need to associate your Architecture Dashboard account with that Infrastructure. Learn how to do it here.
-en_title: How to associate an Infrastructure with your Architecture Dashboard account
 ---
 
 

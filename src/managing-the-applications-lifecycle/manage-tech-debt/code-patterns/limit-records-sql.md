@@ -1,7 +1,6 @@
 ---
-tags: database
+tags:
 summary: 
-en_title: Control the number of records fetched from the DB
 ---
 
 

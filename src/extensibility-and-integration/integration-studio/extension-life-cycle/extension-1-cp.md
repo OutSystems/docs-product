@@ -1,6 +1,6 @@
 ---
 summary: The 1-Click Publish executes, in a single step, all the operations necessary to publish an extension in an OutSystems environment.
-tags: tool-integrationstudio, tool-servicecenter
+tags:
 ---
 
 # 1-Click Publish the Extension

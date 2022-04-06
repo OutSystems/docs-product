@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; Mobile.
+tags:
 summary: Learn about the architecture of apps published with Experience Builder and insights on how to extend these apps.
 ---
 

@@ -1,6 +1,6 @@
 ---
 summary: The basics of CSS in OutSystems.
-tags: support-application_development; support-Front_end_Development; css;
+tags: support-application_development; support-Front_end_Development
 ---
 
 # Cascading Style Sheets (CSS)

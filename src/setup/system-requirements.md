@@ -1,6 +1,6 @@
 ---
 summary: Check the hardware and software requirements to install OutSystems on-premises.
-tags: requirements; support-Application_Troubleshooting; support-installation; support-Installation_Configuration; support-Installation_Configuration-overview
+tags: support-Application_Troubleshooting; support-installation; support-Installation_Configuration; support-Installation_Configuration-overview
 ---
 
 # OutSystems system requirements

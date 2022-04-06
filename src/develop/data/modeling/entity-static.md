@@ -1,6 +1,6 @@
 ---
 summary: Use Static Entities for immutable data.
-tags: modeling-data; static-entities
+tags:
 ---
 
 # Static Entities

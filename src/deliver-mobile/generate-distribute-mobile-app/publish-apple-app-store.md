@@ -1,6 +1,6 @@
 ---
 summary: Generate a mobile app package for your mobile app to publish in the Apple App Store.  Distribute your mobile app directly to your company's end users, if you enrolled in the Apple Enterprise Developer Program.
-tags: runtime-mobile; support-mobile; publish-application; apple-app-store; ios-app
+tags: runtime-mobile; support-mobile
 ---
 
 # Publish your Mobile iOS application to the Apple App Store

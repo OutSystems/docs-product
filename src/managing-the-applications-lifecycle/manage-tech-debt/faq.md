@@ -1,7 +1,6 @@
 ---
-tags: Architecture Dashboard; FAQ; manual
+tags:
 summary: 
-en_title: Architecture Dashboard FAQs
 ---
 
 

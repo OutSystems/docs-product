@@ -1,7 +1,6 @@
 ---
-tags: client-side; web server
+tags: 
 summary: 
-en_title: Control image size
 ---
 
 

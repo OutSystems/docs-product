@@ -1,6 +1,6 @@
 ---
 summary: Integrating your applications with external databases using Integration Builder
-tags: external database; integration builder
+tags:
 ---
 
 # Integrate with an external database using Integration Builder

@@ -31,7 +31,7 @@ For advanced settings, click the **Advanced Settings** link.
 <tbody>
 <tr>
 <td colspan="3">
-**Advanced Connection Settings**
+<strong>Advanced Connection Settings</strong>
 </td>
 </tr>
 <tr>

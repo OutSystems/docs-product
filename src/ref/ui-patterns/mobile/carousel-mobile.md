@@ -49,7 +49,7 @@ If you are an advanced user, you might want to use the Carousel API (OutSystems.
 |Next|Goes to the next page.|<ul><li>carouselId: string</li></ul>| 
 |Previous|Goes to the previous page|<ul><li>carouselId: string</li></ul>| 
 |ToggleDrag|Toggles the drag events on the Carousel.|<ul><li>carouselId: string</li><li>hasDrag: boolean</li></ul>| 
-|UpdateOnRender|Updates on DOM changes inside the Carousel.|<ul><li>carouselId: string</li></ul>|  
+|UpdateOnRender|Updates on DOM changes inside the Carousel.|<ul><li>carouselId: string</li></ul>|   
 
 ## Advanced use cases
 

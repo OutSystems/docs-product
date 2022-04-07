@@ -1,7 +1,7 @@
 ---
-tags: Architecture Dashboard;
+tags:
 summary: Learn about pre-requirements and how to setup Architecture Dashboard.
-en_title: How to configure Architecture Dashboard probes in OutSystems 10
+en_title:
 ---
 
 

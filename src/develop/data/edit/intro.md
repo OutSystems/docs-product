@@ -1,7 +1,6 @@
 ---
 summary: Learn how to edit your app's data using Service Studio, to test your app, or to prepare a demo with meaningful data.
 tags:
-en_title: Edit Data
 ---
 
 # Edit data while developing

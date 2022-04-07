@@ -1,9 +1,7 @@
 ---
-tags: database; web server
+tags: 
 summary: 
-en_title: Optimize data preparation
 ---
-
 
 # Optimize data preparation
 

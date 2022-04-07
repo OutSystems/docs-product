@@ -1,6 +1,6 @@
 ---
 summary: Learn how to configure accessibility settings specific to some OutSystems UI patterns.
-tags: accessibility; runtime-reactiveweb; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria; ui-patterns-accessibility-settings
+tags: runtime-reactiveweb
 ---
 
 # UI Patterns accessibility reference

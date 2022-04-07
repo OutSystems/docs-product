@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; Mobile.
+tags: 
 summary: Check the answers to the frequently asked questions about Experience Builder.
 ---
 

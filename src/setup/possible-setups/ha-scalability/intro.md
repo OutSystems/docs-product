@@ -1,6 +1,6 @@
 ---
 summary: Learn how to scale your OutSystems infrastructure and configure it for high availability.
-Tags: 
+tags: 
 ---
 
 # High availability and scalability strategies

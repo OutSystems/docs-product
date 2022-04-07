@@ -1,7 +1,6 @@
 ---
-tags: Architecture Dashboard.
+tags: 
 summary: Learn how to find and fix technical debt in an app.
-en_title: Getting started as a developer
 ---
 
 # Getting started as a developer

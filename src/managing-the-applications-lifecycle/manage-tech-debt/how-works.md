@@ -1,7 +1,6 @@
 ---
-tags: Architecture Dashboard; how-to; manual
+tags:
 summary: Learn how Architecture Dashboard works and how your infrastructure communicates with the SaaS.
-en_title: How does Architecture Dashboard work
 ---
 
 # How does Architecture Dashboard work

@@ -1,7 +1,6 @@
 ---
 tags: 
 summary: When a new Architecture Dashboard probe version is released, users with Full Control of the code analysis environment can update it autonomously. Learn how to update the probes in this topic.
-en_title: How to update the Architecture Dashboard probes
 ---
 
 

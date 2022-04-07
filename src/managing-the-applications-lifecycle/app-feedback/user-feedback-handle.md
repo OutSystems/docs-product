@@ -1,5 +1,5 @@
 ---
-tags: handle-feedback-users; app-feedback; users-feedback
+tags:
 summary: Learn how to handle the feedback submitted by users.
 ---
 

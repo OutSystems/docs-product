@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; Mobile.
+tags:
 summary: OutSystems Experience Builder lets Leaders, Developers, and UX/UI Designers create prototypes of pixel-perfect mobile apps with great UX using a web interface. Experience Builder includes common patterns and flows, such as login, onboarding, and also industry-related screens and flows. The prototypes created follow UX/UI, Code and Architecture best practices, that can continue to be evolved in Service Studio making sure everyone can collaborate in a common platform from design to development.
 ---
 

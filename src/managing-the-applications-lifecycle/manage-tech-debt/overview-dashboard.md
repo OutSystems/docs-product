@@ -1,5 +1,5 @@
 ---
-tags: Architecture Dashboard;
+tags: 
 summary: The Overview dashboard gives Tech Leads and Architects an general overview of the status and evolution of the technical debt in their applications.
 ---
 

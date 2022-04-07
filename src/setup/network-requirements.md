@@ -1,6 +1,6 @@
 ---
 summary: Check OutSystems network requirements before installing it on an environment.
-tags: requirements; support-installation
+tags: support-installation
 ---
 
 # OutSystems network requirements

@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; 
+tags:
 summary: Learn how to install or update Experience Builder dependencies.
 ---
 # How to install or update dependencies

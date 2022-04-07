@@ -1,6 +1,6 @@
 ---
 summary: Learn which are the possible configurations for an OutSystems infrastructure.
-tags: Installation; support-Infrastructure_Architecture; support-Infrastructure_Architecture-overview; support-installation; support-Installation_Configuration; support-Integrations_Extensions
+tags: support-Infrastructure_Architecture; support-Infrastructure_Architecture-overview; support-installation; support-Installation_Configuration; support-Integrations_Extensions
 ---
 
 # Possible setups for an OutSystems infrastructure

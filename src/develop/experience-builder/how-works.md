@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; Mobile;
+tags:
 summary: Learn more about which users can access Experience Builder and how apps are generated and published.
 ---
 

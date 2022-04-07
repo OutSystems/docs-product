@@ -1,6 +1,6 @@
 ---
 summary: Get to know the main areas of the Service Studio interface.
-tags: outsystems; service-studio
+tags:
 ---
 
 # Service Studio overview

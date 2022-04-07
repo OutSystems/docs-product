@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; Troubleshoot
+tags:
 summary: Learn how to troubleshoot and fix common issues you may face while using Experience Builder.
 ---
 

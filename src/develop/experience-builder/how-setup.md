@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; 
+tags:
 summary: Learn how to set up Experience Builder.
 ---
 # How to set up Experience Builder

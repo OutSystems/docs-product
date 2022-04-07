@@ -1,7 +1,6 @@
 ---
-tags: Architecture Dashboard.
+tags:
 summary: Learn how to check the technical debt of your team's apps.
-en_title: Getting started as a team lead
 ---
 
 # Getting started as a team lead 

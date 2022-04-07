@@ -1,6 +1,6 @@
 ---
 summary: Learn what is the right app for your project. Know the difference between web and mobile apps in OutSystems and what to choose for your needs. 
-tags:
+tags: support-application_development; support-Mobile_Apps-overview; support-webapps-overview
 ---
 
 # Choose the right app for your project

@@ -1,7 +1,6 @@
 ---
-tags: Architecture Dashboard.
+tags:
 summary: Learn how to use Architecture Dashboard by following one of the tutorials in this topic.
-en_title: Getting started with Architecture Dashboard
 ---
 # Getting started with Architecture Dashboard
 

@@ -1,7 +1,6 @@
 ---
 summary: 
 tags:
-en_title: Best practices
 ---
 
 

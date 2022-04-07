@@ -1,5 +1,5 @@
 ---
-tags: Experience Builder; Mobile.
+tags:
 summary: Learn more about the issues that can occur while publishin an Experience Builder app. This topic includes a list of all the warning and blockers in Experience Builder.
 ---
 

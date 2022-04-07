@@ -1,6 +1,6 @@
 ---
 summary: Deployment zones allow you to define the distribution of applications by servers on a farm environment. 
-tags: support-Application_Lifecycle; support-Application_Troubleshooting; support-webapps
+tags: support-Application_Lifecycle; support-Application_Troubleshooting
 ---
 
 # Selective Deployment Using Deployment Zones

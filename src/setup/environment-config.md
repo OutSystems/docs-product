@@ -1,6 +1,6 @@
 ---
 summary: Learn how to configure the hostname, purpose and debug mode of your OutSystems environment in Service Center console.
-tags: serverconfigurations; support-Installation_Configuration
+tags: support-Installation_Configuration
 ---
 
 # Configure your OutSystems environment

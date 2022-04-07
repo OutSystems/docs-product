@@ -1,6 +1,6 @@
 ---
 summary: LifeTime is the centralized management console for managing your environments, applications, security, and more. Learn how to configure LifeTime management console.
-tags: lifetime; serverconfigurations; support-Application_Lifecycle; support-Installation_Configuration; version-11
+tags: support-Application_Lifecycle; support-Installation_Configuration; version-11
 ---
 
 # Configure the infrastructure management console

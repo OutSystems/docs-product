@@ -1,8 +1,6 @@
 ---
 summary: Complete reference for the Configuration Tool command line.
 tags: support-Installation_Configuration; support-Installation_Configuration-overview
-locale: en-us
-guid: 7c953aae-e0ef-4034-afcf-84960d18ad3b
 ---
 
 # Configuration Tool Command Line Reference
@@ -64,7 +62,7 @@ ConfigurationTool.com
 
 :   Upgrades the OutSystems platform and logging database models, without validating if the database exists or if the permissions are correct.
 
-    The admin password is optional and is only used for integrated authentication purposes where the password isn't stored in the server configuration file.
+    The `<integrated_auth_admin_password>` parameter corresponds to the password of the Platform Administrator user configured when Integrated Authentication was enabled. This password is optional and is only used for integrated authentication purposes where the password isn't stored in the server configuration file.
     
     If you provide the optional `/SetPlatformServerAdminPassword` parameter with a password, sets the password for the Platform Server `admin` user.
 

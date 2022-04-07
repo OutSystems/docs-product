@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 0e28cb64-765b-4e99-816b-54dca99e4c01
+---
+
 # Potential Incompatible Consumer Warning
 
 <a id="helpid-30182"></a>

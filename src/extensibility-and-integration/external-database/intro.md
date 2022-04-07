@@ -1,6 +1,8 @@
 ---
 summary: 
 tags: 
+locale: en-us
+guid: 3d24ee9a-d0c6-40ce-a2e0-daae72b67327
 ---
 
 # Integrate with an External Database

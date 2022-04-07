@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.NRFlows+DataScreenActionFlow+Kind
 helpids: 0
+locale: en-us
+guid: c1518786-3c7a-4b70-8e10-60eb048fd357
 ---
 
 # Data Action

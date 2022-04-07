@@ -1,5 +1,7 @@
 ---
 summary:  Create Themes according to this Theme structure to attain proper CSS organization and reusability on generated applications.
+locale: en-us
+guid: f13dda82-0e9d-4622-80fd-ba087153904b
 ---
 
 # Theme structure guidelines

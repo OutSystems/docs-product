@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 227269b0-1de7-4179-8b42-40fe86ac8129
+---
+
 # Structure Attribute Properties
 
 The next table presents the properties of the [structure attribute](<../../../extensibility-and-integration/integration-studio/managing-extensions/structure-define.md>) element.  

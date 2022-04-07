@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 1961c6df-66b1-4e5d-a324-b5bd09df1186
+---
+
 # Separate Process Logic from Application Logic
 
 When you design a [Process](../intro.md) that is strongly integrated with your application, it may happen that both the process and the application are changing the same **Entity record** at the same time. This **leads to misbehaviors**, essentially due to:

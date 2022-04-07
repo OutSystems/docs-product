@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: de5bd7ca-83d5-45be-b0b3-ee9f729a9931
+---
+
 # Licensing Error
 
 The `Licensing` error is issued in the following situation:

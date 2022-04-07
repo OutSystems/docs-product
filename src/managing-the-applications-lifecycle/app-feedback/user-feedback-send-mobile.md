@@ -1,6 +1,8 @@
 ---
 summary: Learn how users can send feedback through the mobile app.
 tags: support-Mobile_Apps-featured; runtime-mobile
+locale: en-us
+guid: 9fd4d828-cf50-4d20-9531-e8514aa8a5a3
 ---
 
 # Send feedback in mobile apps

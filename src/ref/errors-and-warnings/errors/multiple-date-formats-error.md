@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 2b8e15da-86d4-42c1-aa9f-9b29a80aab4d
+---
+
 # Multiple Date Formats Error
 
 The `Multiple Date Formats` error is issued in the following situation:

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c1e911aa-f9af-45e6-b0b9-495695392881
+---
+
 # Action Parameter Properties
 
 The next table presents the properties of the [action parameter](<../../../extensibility-and-integration/integration-studio/managing-extensions/action-parameter.md>) element.  

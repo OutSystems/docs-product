@@ -1,6 +1,8 @@
 ---
 summary: Links to additional accessibility resources (evaluation tools, screen readers, color and contrast checkers, practices)
 tags:
+locale: en-us
+guid: ee0ffa43-b179-4214-bcd2-3b692817c51c
 ---
 
 # Links to additional accessibility resources

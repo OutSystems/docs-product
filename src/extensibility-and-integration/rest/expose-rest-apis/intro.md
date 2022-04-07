@@ -1,6 +1,8 @@
 ---
 summary: Exposing REST APIs in your OutSystems applications.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 08e6c830-5f88-4645-b86f-412e1c399a1f
 ---
 
 # Expose REST APIs

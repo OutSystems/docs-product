@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 985d898a-a78b-4cb3-8628-8f9027631d7c
+---
+
 # Update the Extension Source Code
 
 The Update Source Code operation synchronizes the source code you added in the .NET IDE with the definition of the extension elements. This operation involves the following steps:

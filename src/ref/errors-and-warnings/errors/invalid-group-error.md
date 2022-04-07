@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 3a0036d4-b992-4050-a1eb-fccbccdd2e86
+---
+
 # Invalid Group Error
 
 The `Invalid Group` error is issued in the following situations:

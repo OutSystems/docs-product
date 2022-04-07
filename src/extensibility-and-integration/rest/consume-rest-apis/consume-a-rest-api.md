@@ -1,6 +1,8 @@
 ---
 summary: How to consume a REST API or a single API method and use it in your OutSystems applications.
 tags: support-Integrations_Extensions-featured
+locale: en-us
+guid: b7ea1336-4e6b-49a8-8a61-fd56c2ae5f57
 ---
 
 # Consume one or more REST API methods

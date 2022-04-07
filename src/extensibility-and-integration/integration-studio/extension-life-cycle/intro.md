@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 52c8b0c4-1091-41d6-8c68-a19938e1547f
+---
+
 # Extension Life Cycle
 
 The integration process revolves around the extension life cycle. The process steps are executed in both OutSystems  and third party IDE component environments. The illustration below depicts the most significant steps, showing them next to the component where they are executed. 

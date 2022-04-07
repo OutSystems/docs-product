@@ -1,6 +1,8 @@
 ---
 summary: Use Download Tool in a Flow to send file to the browser, so the users can download the file through the browser built-in download feature.
 tags: support-application_development; runtime-traditionalwebandreactiveweb;
+locale: en-us
+guid: c434b127-7855-4ec0-9c5d-e484eff41e63
 ---
 
 # Download a file through browser

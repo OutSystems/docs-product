@@ -1,6 +1,8 @@
 ---
 summary: Create database tables by modeling Entities in OutSystems.
 tags: support-application_development; support-Database; support-webapps
+locale: en-us
+guid: c961514e-d0da-422a-9ec1-2051f82669d8
 ---
 
 # Create an Entity to Persist Data

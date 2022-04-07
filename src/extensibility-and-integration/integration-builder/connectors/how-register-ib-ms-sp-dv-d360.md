@@ -1,5 +1,7 @@
 ---
 summary: Register Integration SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 applications in Azure AD to authenticate and authorize users. 
+locale: en-us
+guid: 50a76d12-73cb-4924-b36f-e76b68a00cb5
 ---
 # How to register SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 apps in the Azure Active Directory
 

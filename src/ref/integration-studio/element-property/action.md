@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: b5a2987a-129b-4bc7-953d-13a6f8ffc2ca
+---
+
 # Action Properties
 
 The next table presents the properties of the [action](<../../../extensibility-and-integration/integration-studio/managing-extensions/action-define.md>) element.  

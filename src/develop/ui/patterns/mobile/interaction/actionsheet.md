@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Option menu, which slides from the bottom of the screen, triggered by a user action.
+locale: en-us
+guid: 54f296bf-249a-425b-b54c-6d446248c228
 ---
 
 # Action Sheet

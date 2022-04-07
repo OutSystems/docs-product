@@ -3,6 +3,8 @@ kinds: ServiceStudio.Model.NRNodes+FeedbackMessage+Kind
 helpids: 0
 summary: Provides a feedback message to the end user.
 tags: runtime-mobileandreactiveweb;
+locale: en-us
+guid: 70ed4ea2-9f23-4c19-b322-11255785072c
 ---
 
 # Message

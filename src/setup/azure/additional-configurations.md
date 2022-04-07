@@ -1,6 +1,8 @@
 ---
 tags: support-Installation_Configuration; support-installation;
 summary: After setting up OutSystems you might want to access additional configurations, such as Remote Desktop access, SSL certificates or the environment scaling.
+locale: en-us
+guid: 465ae50f-349c-4b1f-b082-565b3a653e7d
 ---
 
 # Additional Configurations for OutSystems on Microsoft Azure

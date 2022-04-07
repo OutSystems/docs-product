@@ -1,5 +1,7 @@
 ---
 summary: Use deployment plans to take changes done in applications from one environment to another. Select tagged application stable versions and include release notes.
+locale: en-us
+guid: 13e13cb8-e058-4235-bead-06410a2b8c7d
 ---
 
 # Deployment Plans

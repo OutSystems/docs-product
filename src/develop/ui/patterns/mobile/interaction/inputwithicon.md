@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Input with Icon allows the end user to input data with the help of a hint.
+locale: en-us
+guid: ec5ca995-0a63-4bc9-b5d9-9c22a0f34a5b
 ---
 
 # Input with Icon

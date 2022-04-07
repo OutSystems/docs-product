@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Sidebar shows additional content on the side of the screen.
+locale: en-us
+guid: d948b2a9-574a-43a1-bf6a-9465bdc22dfe
 ---
 
 # Sidebar

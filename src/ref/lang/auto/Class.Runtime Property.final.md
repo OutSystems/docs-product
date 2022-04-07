@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Variables+CustomRuntimeProperty+Kind, ServiceStudio.Model.Variables+ReferenceCustomRuntimeProperty+Kind
 helpids: 0
+locale: en-us
+guid: 5a9cfc54-42b5-408f-8d00-bf66f0f6cabd
 ---
 
 # Runtime Property

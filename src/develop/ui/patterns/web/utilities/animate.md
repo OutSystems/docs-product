@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Animate adds default animations to emphasize elements as they appear on the screen.
+locale: en-us
+guid: 297aaf40-3584-4ed5-b1d4-7bfbbe3bbfaa
 ---
 
 # Animate

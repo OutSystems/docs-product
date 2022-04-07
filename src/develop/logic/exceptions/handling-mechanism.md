@@ -1,6 +1,8 @@
 ---
 summary: Learn about exception handling in OutSystems.
 tags: support-Application_Troubleshooting; support-webapps
+locale: en-us
+guid: aa97807f-3db5-4d86-a746-7fe2506481a6
 ---
 
 # Exception Handling Mechanism

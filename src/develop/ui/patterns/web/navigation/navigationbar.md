@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Organizes content and enables the user to navigate their way around your app using hyperlinks.
+locale: en-us
+guid: 107b5610-cfdd-4186-b3ae-f513af891651
 ---
 
 # Navigation Bar

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c2b5c213-e7d5-4ddf-b8ef-445dd2612288
+---
+
 # Grid Dimensions Overflow Error
 
 The `Grid Dimensions Overflow` error is issued in the following situation:

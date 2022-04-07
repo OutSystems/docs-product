@@ -1,6 +1,8 @@
 ---
 summary: Learn how to create multilingual Reactive Web and Mobile App with OutSystems.
 tags: support-application_development;
+locale: en-us
+guid: d92eca43-e46e-4db0-8445-4dfb51e0b73d
 ---
 
 # Multilingual Reactive Web and Mobile Apps

@@ -1,6 +1,8 @@
 ---
 summary: Create your Screen Templates for all developers in the factory.
 tags: support-Mobile_Apps-featured; support-webapps-featured
+locale: en-us
+guid: 874543f6-0021-47c7-9b10-28853b48d6a3
 ---
 
 # Creating Screen Templates

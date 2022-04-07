@@ -1,6 +1,8 @@
 ---
 tags:
 summary: Learn how to use Architecture Dashboard by following one of the tutorials in this topic.
+locale: en-us
+guid: 115abc7a-0267-4497-868b-d3c09b1e92fa
 ---
 # Getting started with Architecture Dashboard
 

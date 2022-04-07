@@ -1,6 +1,8 @@
 ---
 summary: Learn how OutSystems allows you to take a snapshot of the application and its modules, tag it with a version, and then use it for deploying.
 tags: support-Application_Lifecycle-featured
+locale: en-us
+guid: d97b99fb-75a2-453c-a20d-d4270e09c8ed
 ---
 
 # Tag a Version

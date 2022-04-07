@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Move on Device defines where information is displayed thereby improving the display on different devices.
+locale: en-us
+guid: 504329ab-7245-4b5b-ac7a-17b7fb026663
 ---
 
 # Move on Device

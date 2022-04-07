@@ -1,5 +1,7 @@
 ---
 tags: support-Integrations_Extensions; support-Integrations_Extensions-overview
+locale: en-us
+guid: d74dc607-6024-4733-8a3e-4ce55e37f1cb
 ---
 
 # Integrate with a SAP System

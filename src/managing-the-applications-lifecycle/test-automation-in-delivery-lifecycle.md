@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 49f299a3-b4f6-4ae6-b422-baf45dfe54a6
+---
+
 # Test Automation in the Delivery Lifecycle
 
 Introducing automated testing as part of the development-and-release lifecycles can mean changes in the way the application are developed and delivered. Some of these changes come from DevOps culture, which incorporates vertical teams. Vertical teams participate from the point of the business idea through to application deployment and monitoring in production. Tasks in the release cycle are automated to accelerate lead times. 

@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Badge display numerical information as notification.
+locale: en-us
+guid: 4e5ea285-0422-4cb1-9f36-1e49d7422fb7
 ---
 
 # Badge

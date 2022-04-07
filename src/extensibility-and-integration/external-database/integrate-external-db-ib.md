@@ -1,6 +1,8 @@
 ---
 summary: Integrating your applications with external databases using Integration Builder
 tags:
+locale: en-us
+guid: fcc67384-67da-41a3-b52b-e2491db85b0c
 ---
 
 # Integrate with an external database using Integration Builder

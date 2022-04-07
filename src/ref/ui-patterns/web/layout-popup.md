@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Layout Popup web block.
+locale: en-us
+guid: b363b2eb-6bee-41e0-a0a5-926d6a67f1dd
 ---
 
 # Layout Popup Reference

@@ -1,5 +1,7 @@
 ---
 summary: Check the list of currently unsupported use cases when consuming SOAP 1.2 Web Services and how to overcome some of these situations.
+locale: en-us
+guid: dfd157ac-c6ce-4710-a022-3bd27f5fc8bc
 ---
 
 # Unsupported SOAP Use Cases

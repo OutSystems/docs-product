@@ -1,6 +1,8 @@
 ---
 summary: Follow this tutorial to create and run an example Reactive Web App to manage tasks.
 tags: runtime-reactiveweb;
+locale: en-us
+guid: 795332a5-e1f3-40c0-886d-75b7bddf48af
 ---
 
 # Create Your First Reactive Web App

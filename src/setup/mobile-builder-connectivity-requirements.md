@@ -1,5 +1,7 @@
 ---
 summary: Meeting Mobile Apps Build Service (MABS) requires access to Amazon CloudFront. Check out this document for information on how to use a proxy or firewall to ensure that MABS works correctly.
+locale: en-us
+guid: 9b32edb6-a14d-46d5-b180-10b6bc0eff3f
 ---
 
 # Meeting Mobile Apps Build Service connectivity requirements

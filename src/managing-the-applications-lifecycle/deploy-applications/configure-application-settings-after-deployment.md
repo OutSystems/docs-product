@@ -1,5 +1,7 @@
 ---
 summary: Check how you can define application settings while deploying an application module to an environment, with no downtime to your end users.
+locale: en-us
+guid: a02c9d92-7a07-4ba2-a12a-656d90b5df8f
 ---
 
 # Configure Application Settings After Deployment

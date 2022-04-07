@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 8cac607a-6ba3-4392-825c-59d9eeaae525
+---
+
 # module Name Conflict Error
 
 The `module Name Conflict` error is issued in the following situations:

@@ -1,6 +1,8 @@
 ---
 summary: How to update OutSystems applications that became invalid due to the log model changes in OutSystems 11.
 tags: support-Installation_Configuration; version-11
+locale: en-us
+guid: fb46fada-91f7-45b9-b936-b0310303f4e8
 ---
 
 # Update applications that access OutSystems log data

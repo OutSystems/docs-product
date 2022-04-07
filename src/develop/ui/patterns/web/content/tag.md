@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Tag styles small texts in a colored tag format.
+locale: en-us
+guid: b448e71a-760c-46b3-9fed-b3b97229d351
 ---
 
 # Tag

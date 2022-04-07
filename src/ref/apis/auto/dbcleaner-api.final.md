@@ -1,6 +1,8 @@
 ---
 summary: Allows freeing-up database space.
 tags: support-application_development; support-Database
+locale: en-us
+guid: 9fdba27d-69ca-46b4-9a7b-6dee299c8084
 ---
 
 # DbCleaner API

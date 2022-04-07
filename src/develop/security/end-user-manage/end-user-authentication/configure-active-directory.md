@@ -1,5 +1,7 @@
 ---
 summary: How to configure Active Directory end user authentication for your applications.
+locale: en-us
+guid: b4a590a6-d9e2-4f0a-80c4-d3ac9f3bd14b
 ---
 
 # Configure Active Directory authentication

@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.WebReference+Kind, ServiceStudio.Model.WebService+Kind
 helpids: 11003, 11001
+locale: en-us
+guid: c2e59d22-6ed6-4982-a9fd-5ce8e440d660
 ---
 
 # SOAP Web Service (Deprecated)

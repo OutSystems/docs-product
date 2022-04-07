@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Blank Slate UI Pattern.
+locale: en-us
+guid: 57108c14-9fcd-46a6-9604-489d54277361
 ---
 
 # Blank Slate Reference

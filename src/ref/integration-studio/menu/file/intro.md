@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: f5eb9f11-455a-4bfe-bd0d-2ee4968044bb
+---
+
 # File Menu
 
 The **File menu** on the [menu bar](<../../workspace.md>) contains options dealing with the management of extensions.

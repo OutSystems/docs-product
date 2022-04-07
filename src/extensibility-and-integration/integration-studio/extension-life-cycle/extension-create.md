@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c3a15acb-2ada-4d0b-93f8-e897e74752fb
+---
+
 # Create an Extension
 
 Integration Studio enables you to create an extension — a set of **Actions**, **Entities**, and **Structures** available in Service Studio but implemented in third-party technologies. An extension can be [used in any module](<../extension-life-cycle/extension-use.md>) after it's published in the Platform Server.

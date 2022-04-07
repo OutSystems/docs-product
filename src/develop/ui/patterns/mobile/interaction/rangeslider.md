@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Allows the user select a single value between two range values.
+locale: en-us
+guid: 788ee1a3-fd00-43dc-afc9-1cf6d25a1805
 ---
 
 # Range Slider

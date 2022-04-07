@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;   
 summary: Tooltip dynamically displays simple informative content on end user interaction.
+locale: en-us
+guid: 44f1bcc8-d2bd-4174-ae3d-8813092a4bac
 ---
 
 # Tooltip

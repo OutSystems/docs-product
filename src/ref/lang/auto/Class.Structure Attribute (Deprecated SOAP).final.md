@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.StructureAttribute+Kind, ServiceStudio.Model.SystemActionStructureAttribute+Kind, ServiceStudio.Model.WebReferenceStructureAttribute+Kind, ServiceStudio.Model.ReferenceStructureAttribute+Kind
 helpids: 0
+locale: en-us
+guid: fba19edd-e3b2-4689-a1d9-2d25e0f74852
 ---
 
 # Structure Attribute (Deprecated SOAP)

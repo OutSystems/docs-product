@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 5a27b7c6-3710-4a8b-807b-6b71e26670d1
+---
+
 # Designing Conditional Paths
 
 Use this pattern to design multiple paths where only one of them is followed in the process flow. Use the [Decision](<../../../ref/lang/auto/Class.Decision.final.md>) tool to design this pattern.

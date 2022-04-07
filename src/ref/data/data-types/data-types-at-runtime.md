@@ -1,5 +1,7 @@
 ---
 tags: 
+locale: en-us
+guid: 671a69c4-3fe2-4a6a-9627-2eae9526aece
 ---
 
 # Data Types at Runtime

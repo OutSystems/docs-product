@@ -1,5 +1,7 @@
 ---
 summary: Learn the requirements an external authentication plugin must implement.
+locale: en-us
+guid: cd4618ec-7a4b-400f-a33c-a819571ebbb9
 ---
 
 # Implement an Authentication Plugin

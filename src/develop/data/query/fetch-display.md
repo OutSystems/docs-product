@@ -1,6 +1,8 @@
 ---
 summary: Fetching data from the database using Aggregates.
 tags: support-application_development; support-Database;
+locale: en-us
+guid: c1c2a735-0768-4e33-8e42-73329e7944ae
 ---
 
 # Fetch and display data from the database in OutSystems

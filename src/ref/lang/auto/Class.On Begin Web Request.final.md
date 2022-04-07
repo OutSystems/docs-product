@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.SystemActions+OnBeginWebRequest+Kind
 helpids: 0
+locale: en-us
+guid: d11d552e-fcfc-42b8-8690-a058f4c74dae
 ---
 
 # On Begin Web Request

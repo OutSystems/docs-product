@@ -1,6 +1,8 @@
 ---
 summary: Learn how to be compliant with the licensing requirements of the third party components used by your application.
 tags: runtime-mobile
+locale: en-us
+guid: a1e335a8-d8f0-4039-bd89-67590def7910
 ---
 
 # Compliance with Third Party Licenses

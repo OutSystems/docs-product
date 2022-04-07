@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 3c3744ef-942f-49a1-b868-3f8498598a8e
+---
+
 # Invalid Blocks Error
 
 The `Invalid Blocks` error is issued in the following situations:

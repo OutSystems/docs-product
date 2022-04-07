@@ -1,6 +1,8 @@
 ---
 summary: Learn how to display an icon to help end users identify functionality or information on the screens.
 tags:
+locale: en-us
+guid: ae0d2c36-c50f-4084-b986-d19572b31cc5
 ---
 
 # Use Icons

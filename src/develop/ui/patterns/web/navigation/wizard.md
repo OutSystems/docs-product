@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Wizard splits complex tasks and process into steps.
+locale: en-us
+guid: b535721f-289a-4ad1-825b-ce7271cc0191
 ---
 
 # Wizard 

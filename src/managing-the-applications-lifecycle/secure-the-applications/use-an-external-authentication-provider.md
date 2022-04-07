@@ -1,6 +1,8 @@
 ---
 summary: OutSystems allows your IT users to authenticate using the same account they use in other corporate systems.
 tags: support-Security-overview
+locale: en-us
+guid: f8b008aa-ae75-470a-adc3-5863bf6be8e6
 ---
 
 # Use an External Authentication Provider

@@ -1,5 +1,7 @@
 ---
 summary: Step by step explanation on how to merge differences into your module when there are conflicts.
+locale: en-us
+guid: a0c7450d-ca61-460a-9188-881adb2f40fb
 ---
 
 # Compare and merge example with conflicts

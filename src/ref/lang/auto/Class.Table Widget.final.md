@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+Table+Kind, ServiceStudio.Model.WebWidgets+ReferenceTable+Kind
 helpids: 4015
 tags: runtime-traditionalweb
+locale: en-us
+guid: 3d3bc1b9-9937-4e08-b4ce-f935022fc6dc
 ---
 
 # Table Widget

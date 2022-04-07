@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: The Dropdown Search UI Pattern offers a choice of available options that the user can search.
+locale: en-us
+guid: 5dc860b5-4361-4991-8c3a-4ffba28c55ff
 ---
 
 # Dropdown Search

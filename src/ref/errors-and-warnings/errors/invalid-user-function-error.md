@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: cc89e846-d1a0-41bb-b604-c2ecef4bbf6c
+---
+
 # Invalid User Function Error
 
 The `Invalid User Function` error is issued in the following situations:

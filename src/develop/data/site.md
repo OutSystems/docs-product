@@ -1,6 +1,8 @@
 ---
 summary: Store variables at the environment level and use them to implement application behaviors that are configurable at runtime.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: cab950c5-aaec-4e83-a318-9d74a7e789b4
 ---
 
 # Use Site Properties to Configure Behaviors at Runtime

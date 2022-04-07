@@ -1,6 +1,8 @@
 ---
 summary: Change the services consumed from a REST Web Service; get the latest changes or modify the list of consumed methods in Service Studio.
 tags: support-Integrations_Extensions
+locale: en-us
+guid: 051817d3-80d3-4bdf-bdb7-af69b96f58eb
 ---
 
 # Refresh a REST web service

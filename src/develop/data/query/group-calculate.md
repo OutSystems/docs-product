@@ -1,6 +1,8 @@
 ---
 summary: Use aggregate functions to calculate values based on groups of identical data.
 tags: support-application_development; support-Database; support-webapps
+locale: en-us
+guid: d2578f60-c7a2-40fe-8e74-382aecad9b2f
 ---
 
 # Calculate Values from Grouped Data

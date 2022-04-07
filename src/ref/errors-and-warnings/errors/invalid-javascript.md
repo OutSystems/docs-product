@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: b65a460c-7dd4-4aee-8172-6c22c05a8e14
+---
+
 # Invalid JavaScript
 
 The `Invalid JavaScript` error is issued in the following situations:

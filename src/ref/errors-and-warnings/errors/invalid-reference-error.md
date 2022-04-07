@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 786ff43e-9e5f-4aa7-bda0-bb8693a6510a
+---
+
 # Invalid Reference Error
 
 The `Invalid Reference` error is issued in the following situations:

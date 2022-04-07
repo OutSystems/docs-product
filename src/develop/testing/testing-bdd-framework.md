@@ -1,6 +1,8 @@
 ---
 summary: Introduces component testing using the BDDFramework tools.
 tags: 
+locale: en-us
+guid: b55c5578-ca69-4287-8431-445224d3165f
 ---
 
 # Component testing with BDDFramework tools

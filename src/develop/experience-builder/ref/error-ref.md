@@ -1,6 +1,8 @@
 ---
 tags:
 summary: Learn more about the issues that can occur while publishin an Experience Builder app. This topic includes a list of all the warning and blockers in Experience Builder.
+locale: en-us
+guid: bc1675fa-8742-45a2-bf28-5f5eafd826c0
 ---
 
 # Experience Builder blockers and warnings

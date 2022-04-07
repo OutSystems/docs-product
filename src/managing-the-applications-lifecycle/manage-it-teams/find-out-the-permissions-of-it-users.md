@@ -1,5 +1,7 @@
 ---
 summary: Ensure a strict security policy by checking the permissions IT users have over an application.
+locale: en-us
+guid: ee37b850-be3f-4964-87a3-12800efb3363
 ---
 
 # Find Out the Permissions of IT Users

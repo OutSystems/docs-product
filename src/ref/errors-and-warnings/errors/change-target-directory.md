@@ -1,6 +1,8 @@
 ---
 summary: Fix the target directory of a resource to allow your deployment to complete.
 tags:
+locale: en-us
+guid: 3be20de4-b979-43e3-89a4-c56d7b9ea6f1
 ---
 
 # Change target directory error

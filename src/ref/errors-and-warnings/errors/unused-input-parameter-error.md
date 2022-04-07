@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: d8e4aae9-26ab-4de7-af48-5bd5e2fd9962
+---
+
 # Unused Input Parameter Error
 
 The `Unused Input Parameter` error is issued in the following situation:

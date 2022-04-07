@@ -1,6 +1,8 @@
 ---
 summary: 
 tags:
+locale: en-us
+guid: 9a5711af-7947-4f71-9569-ae016863db49
 ---
 
 # Lifecycle Management and Data Protection

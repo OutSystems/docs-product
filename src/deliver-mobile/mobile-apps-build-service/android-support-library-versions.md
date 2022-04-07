@@ -1,6 +1,8 @@
 ---
 summary: Learn about different Android support library versions, how these versions are handled by MABS and how they should be handled by customers and plugin developers.
 tags: runtime-mobile
+locale: en-us
+guid: 8734c248-e81d-4d5b-a3a2-323a0373c188
 ---
 
 # Android Support Library Versions for MABS

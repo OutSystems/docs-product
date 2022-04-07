@@ -1,6 +1,8 @@
 ---
 summary: How to consume and use a SOAP Web Service in OutSystems.
 tags: support-Integrations_Extensions; support-Integrations_Extensions-overview
+locale: en-us
+guid: 12679c35-25ab-4d32-a6f2-11a3b94ee3d7
 ---
 
 # Consume a SOAP Web Service

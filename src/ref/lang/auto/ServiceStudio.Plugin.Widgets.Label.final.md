@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Plugin.Widgets.LabelDescriptor
 helpids: 17198
 tags: runtime-traditionalweb
+locale: en-us
+guid: c8a95d6b-9e2c-4a22-81c3-19f768410e0e
 ---
 
 # Label Widget

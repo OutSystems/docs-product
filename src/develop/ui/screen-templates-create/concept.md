@@ -1,5 +1,7 @@
 ---
 summary: Learn how Screen Templates work.
+locale: en-us
+guid: 2f31e197-02e9-4f45-ba7b-4329d1828d5a
 ---
 
 # How Screen Templates work

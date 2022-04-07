@@ -3,6 +3,8 @@ kinds: ServiceStudio.Model.WebWidgets+ListBox+Kind, ServiceStudio.Model.WebWidge
 helpids: 4041
 summary: Allows the user to select one or more values from a list of possible values.
 tags: runtime-traditionalweb
+locale: en-us
+guid: 7a819ca9-6e8b-418a-9270-ad6a8546ea1a
 ---
 
 # List Box Widget

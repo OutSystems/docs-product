@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+TableRecordsHeaderRow+Kind, ServiceStudio.Model.WebWidgets+ReferenceTableRecordsHeaderRow+Kind
 helpids: 0
 tags: runtime-traditionalweb
+locale: en-us
+guid: 5f5a5642-dccc-4d7b-beea-773622e175c1
 ---
 
 # Header Row Widget

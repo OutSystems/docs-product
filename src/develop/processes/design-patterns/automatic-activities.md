@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 19cbdea5-0bab-4d93-9e54-aa727f878b4b
+---
+
 # Designing Automatic Activities
 
 Use this pattern to design action flows, adding automated business logic to your processes with the [Automatic Activity](<../../../ref/lang/auto/Class.Automatic Activity.final.md>) as, for example:

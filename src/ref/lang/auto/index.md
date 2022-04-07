@@ -1,4 +1,6 @@
 ---
+locale: en-us
+guid: 90fdddea-a0af-4d39-a56d-dda1bd58ed12
 ---
 
 # OutSystems Language

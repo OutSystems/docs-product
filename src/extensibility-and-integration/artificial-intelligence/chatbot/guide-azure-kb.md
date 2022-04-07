@@ -1,6 +1,8 @@
 ---
 summary: How to create and deploy a knowledge base in Azure.
 tags:
+locale: en-us
+guid: 3d8d6edd-b26e-4f5a-83f4-bfedcf272b68
 ---
 
 # Create and deploy a knowledge base in Azure

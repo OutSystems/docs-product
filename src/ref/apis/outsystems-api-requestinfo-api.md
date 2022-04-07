@@ -1,6 +1,8 @@
 ---
 summary: A JavaScript API that provides methods to get information about the current request and session.
 tags: runtime-traditionalweb; support-application_development; support-webapps
+locale: en-us
+guid: fd316f0d-9003-4b26-a137-96c4b65afd08
 ---
 
 # outsystems.api.requestInfo API

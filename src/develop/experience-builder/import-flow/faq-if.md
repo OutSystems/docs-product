@@ -1,5 +1,7 @@
 ---
 summary: Check the answers to the frequently asked questions about importing Flows to Experience Builder.
+locale: en-us
+guid: c90cf9dd-fbcb-4f66-8bc8-d6bc41a9755e
 ---
 
 # Import Flows FAQ

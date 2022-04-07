@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.ProcessNodes+End+Kind
 helpids: 0
+locale: en-us
+guid: 06bcba70-7ba2-4338-89f5-6a017d85c125
 ---
 
 # Process End

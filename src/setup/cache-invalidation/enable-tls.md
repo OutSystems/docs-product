@@ -2,6 +2,8 @@
 summary: How to enable TLS communication between the Cache Invalidation Service (RabbitMQ) and running OutSystems applications.
 tags: version-11; support-Installation_Configuration
 helpids: 30177
+locale: en-us
+guid: 2027cfb9-111f-43f5-a3fb-cf1581beece6
 ---
 
 # Enable TLS communication in RabbitMQ

@@ -1,5 +1,7 @@
 ---
 summary: Use watches to examine module elements while debugging threads in your module.
+locale: en-us
+guid: de70f6a6-f126-4ebd-85f3-b98d0a5d613c
 ---
 
 # Watches

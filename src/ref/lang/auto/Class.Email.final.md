@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+EmailScreen+Kind
 helpids: 0
+locale: en-us
+guid: 35c72b23-7903-43b0-be96-1e10933d3f17
 ---
 
 # Email

@@ -1,6 +1,8 @@
 ---
 summary: How to use the translation editor to translate your app in Service Studio.
 tags: support-application_development
+locale: en-us
+guid: 507ea92c-761e-4ad0-aeee-ce029328c6b9
 ---
 
 # Translating with the translation editor

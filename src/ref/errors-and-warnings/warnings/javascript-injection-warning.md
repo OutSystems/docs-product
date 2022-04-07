@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 8afc6360-df8d-451d-81cd-fd499fa5bd15
+---
+
 # JavaScript Injection Warning
 
 Message

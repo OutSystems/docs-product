@@ -1,6 +1,8 @@
 ---
 summary: Let users select a single option from a group of choices, with the Radio Group widget.
 tags:
+locale: en-us
+guid: 3eb6105e-2157-472f-972f-f3cc133043a5
 ---
 
 # Pick Only One Option in a Group of Choices

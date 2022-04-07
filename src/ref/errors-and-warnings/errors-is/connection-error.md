@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: d524e7d6-0007-411d-bc48-9bebe979576d
+---
+
 # Connection Error
 
 Message

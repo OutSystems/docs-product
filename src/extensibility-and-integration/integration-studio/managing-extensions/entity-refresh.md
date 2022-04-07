@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: b6fd826d-d92b-4c58-870e-da6c7311fad8
+---
+
 # Refresh an Entity
 
 Once an entity is [added to your extension](<entity-define.md>), the definition of the corresponding table is copied into Integration Studio: columns, data types, and descriptions are imported into the extension. If the table definition changes, for example, if a new column is created, you can refresh the entity definition and retrieve it again from the database.

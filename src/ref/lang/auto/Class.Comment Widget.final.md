@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+Comment+Kind
 helpids: 30083
 tags: runtime-traditionalweb
+locale: en-us
+guid: 59c80eef-8238-406b-b0a4-231ea54d5c4e
 ---
 
 # Comment Widget

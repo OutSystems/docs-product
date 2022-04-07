@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 5d2f3341-b79d-4c02-9546-73d6d0878567
+---
+
 # Connection Error
 
 The `Connection` error is issued in the following situation(s):

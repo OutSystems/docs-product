@@ -1,6 +1,8 @@
 ---
 tags:
 summary: Learn how to handle the feedback submitted by users.
+locale: en-us
+guid: b8db2ed6-0551-41c8-b16d-3063670c0417
 ---
 
 # Handle the submitted feedback

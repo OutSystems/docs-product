@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.RESTService.RestServiceDescriptor
 helpids: 17225
+locale: en-us
+guid: 57616b45-1a96-4752-aa4a-dff3dd159a86
 ---
 
 # REST API

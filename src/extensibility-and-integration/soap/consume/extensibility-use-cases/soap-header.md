@@ -1,5 +1,7 @@
 ---
 summary: How to add a SOAP header element using the SOAP Extensibility API.
+locale: en-us
+guid: fff8ebfb-2aed-4628-ad28-774ac83074bc
 ---
 
 # Add SOAP header

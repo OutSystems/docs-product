@@ -1,6 +1,8 @@
 ---
 summary: API to access logged request events by the OutSystems platform with valuable data for your analytics. You can use it to analyze the user experience of your applications.
 tags: support-devOps; support-monitoring
+locale: en-us
+guid: 0e09d502-6d81-4bdb-a2fa-1194ce483098
 ---
 
 # PerformanceMonitoring API

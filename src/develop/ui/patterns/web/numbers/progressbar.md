@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Progress Bar displays the progress of a task by incrementing values in a bar.
+locale: en-us
+guid: 2a589d5e-0cd8-4dab-b9fa-bc7d12cacf23
 ---
 
 # Progress Bar

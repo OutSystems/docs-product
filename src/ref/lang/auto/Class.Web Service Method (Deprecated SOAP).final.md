@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Flows+WebServiceMethod+Kind, ServiceStudio.Model.WebReferenceMethod+Kind
 helpids: 0
+locale: en-us
+guid: b6f1f703-4aca-4ec5-afa7-6277b63230d6
 ---
 
 # Web Service Method (Deprecated SOAP)

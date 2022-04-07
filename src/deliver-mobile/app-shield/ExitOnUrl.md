@@ -1,6 +1,8 @@
 ---
 summary: Inform app users of the reason why AppShield blocked an app. Define a URL that the app opens once the AppShield closes the app it suspects is modified or tempered with.
 tags: support-application_development; runtime-mobile;
+locale: en-us
+guid: ff593156-92ef-4947-86f1-e3d2dfb58908
 ---
 
 # Configuring an exit URL for a blocked app

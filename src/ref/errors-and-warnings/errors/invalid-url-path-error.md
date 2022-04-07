@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c4e418eb-f299-41a2-a476-80ff44258482
+---
+
 # Invalid URL Path Error
 
 The `Invalid URL Path` error is issued in the following situations:

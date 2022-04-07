@@ -1,6 +1,8 @@
 ---
 summary: Redirect URLs and create site and Screen URLs to to improve user experience and search page ranking.  
 tags: article-page,
+locale: en-us
+guid: 93e2771c-215a-42ec-a3fb-9e3a3e9d1476
 ---
 
 # SEO in Reactive Web Apps

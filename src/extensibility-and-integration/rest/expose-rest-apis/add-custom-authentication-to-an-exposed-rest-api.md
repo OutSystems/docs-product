@@ -1,6 +1,8 @@
 ---
 summary: Improve the security of exposed REST APIs by adding custom authentication logic.
 tags: 
+locale: en-us
+guid: 844a1455-677f-4248-a50f-d6cd12bb4531
 ---
 
 # Add Custom Authentication to an Exposed REST API

@@ -1,5 +1,7 @@
 ---
 summary: Edit previously imported Flows in Experience Builder.
+locale: en-us
+guid: bfe493f7-3801-4266-a435-e2d7b64e395f
 ---
 
 # Editing Flow Templates

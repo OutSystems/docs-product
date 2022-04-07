@@ -1,5 +1,7 @@
 ---
 summary: Learn more about the Microsoft Dataverse (previously known as Microsoft Common Data Service) integration.
+locale: en-us
+guid: ea253851-f067-457e-81e9-8fe3e106decc
 ---
 
 # Microsoft Dataverse integration

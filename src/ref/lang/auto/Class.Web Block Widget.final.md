@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+EmailWebBlockInstance+Kind, ServiceStudio.Model.WebWidgets+WebBlockInstance+Kind, ServiceStudio.Model.WebWidgets+ReferenceEmailWebBlockInstance+Kind, ServiceStudio.Model.WebWidgets+ReferenceWebBlockInstance+Kind
 helpids: 0
 tags: runtime-traditionalweb
+locale: en-us
+guid: 4160f6d7-1bcd-4299-80b7-5ccd8bbc42d2
 ---
 
 # Web Block Widget

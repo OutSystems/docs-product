@@ -1,6 +1,8 @@
 ---
 tags:
 summary: Learn how to install or update Experience Builder dependencies.
+locale: en-us
+guid: 846ff90b-1883-40ce-adcf-ca9eb6004f90
 ---
 # How to install or update dependencies
 

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 998774b6-35c3-4c5b-9284-590d998a302f
+---
+
 # Invalid Structure Error
 
 Message

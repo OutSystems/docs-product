@@ -1,6 +1,8 @@
 ---
 summary: Allow end users to check the details of a record by navigating to another screen.
 tags:
+locale: en-us
+guid: 407dfc26-80f5-440c-b3e1-56d8e7d27ce8
 ---
 
 # Navigate to a Detail Screen

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 8196d55c-6aeb-47d5-a855-02b92e4244f4
+---
+
 # Supported Configurations for Import Actions from .NET Assembly
 
 The following list provides information on the supported configurations and limitations for the **Import Actions from .NET Assembly** wizard in the current Integration Studio version.

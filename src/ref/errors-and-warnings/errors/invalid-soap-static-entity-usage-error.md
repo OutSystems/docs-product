@@ -1,5 +1,7 @@
 ---
 helpids: 30168
+locale: en-us
+guid: 2e53abeb-cf9d-4231-808e-33e9b5c1d17e
 ---
 
 # Invalid SOAP Static Entity Usage Error

@@ -1,5 +1,7 @@
 ---
 summary: Platform tab showing specific configuration settings for the Oracle database provider.
+locale: en-us
+guid: a9efebcd-a811-4f57-ac3d-3ac58e920fe6
 ---
 
 # Platform Tab in Oracle

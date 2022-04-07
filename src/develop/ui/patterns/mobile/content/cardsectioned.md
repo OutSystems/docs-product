@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Card Sectioned groups short pieces of information in sections and highlights them on the screen.
+locale: en-us
+guid: db5e39c5-f5ee-4e18-9754-14fef2f95533
 ---
 
 # Card Sectioned

@@ -1,6 +1,8 @@
 ---
 summary: Reference information on elements available for designing screens.
 tags: outsystems-designing-screens; reference; designing-screens
+locale: en-us
+guid: 9a6e61ee-eaae-442e-bbb6-6edde598b908
 ---
 
 # Designing Screens

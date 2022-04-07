@@ -1,6 +1,8 @@
 ---
 summary: Instructions for enabling the management plugin and for troubleshooting Cache Invalidation Service (RabbitMQ) issues.
 tags: version-11
+locale: en-us
+guid: 4b06ed06-572c-48c9-835c-f38db745052c
 ---
 
 # RabbitMQ management and troubleshooting

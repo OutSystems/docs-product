@@ -1,5 +1,7 @@
 ---
 summary: Check Integration Builder's architecture and learn more about its main components.
+locale: en-us
+guid: 8940670a-b3f2-4f06-af4a-c8eb7785153c
 ---
 
 # How Integration Builder works

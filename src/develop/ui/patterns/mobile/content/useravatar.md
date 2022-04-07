@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: User Avatar displays user information in a circular badge.
+locale: en-us
+guid: ca179aae-31fe-4032-b523-167c3ba531e5
 ---
 
 # User Avatar

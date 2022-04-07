@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Displays the current progress of a task using circular or semi-circular progress indicators.
+locale: en-us
+guid: 1f0827a1-891f-4fe7-a37e-34a66224f7dc
 ---
 
 # Progress Circle

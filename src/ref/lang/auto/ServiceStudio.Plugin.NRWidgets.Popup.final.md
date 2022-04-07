@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.PopupDescriptor
 helpids: 30046
 summary: Reference information on the Popup widget for adding floating container/window (modal container) above other screen content.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; popup-widget
+locale: en-us
+guid: 8815652b-3b2f-47ee-81be-f58165e33a8c
 ---
 
 # Popup

@@ -1,5 +1,7 @@
 ---
 summary: The Network tab allows you to clear the current internal network settings, and allows you to define the IP address the front-end server will register in the deployment controller service.
+locale: en-us
+guid: 8a4e8da5-fdb0-4112-a474-c1781f35d12c
 ---
 
 # Network Tab

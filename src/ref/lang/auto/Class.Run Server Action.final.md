@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.Nodes+ExecuteAction+Kind
 helpids: 30107
 summary: Executes a Server Action, which contains logic that's executed on the server.
+locale: en-us
+guid: f5811e56-3206-4621-a31a-74da90160dd2
 ---
 
 # Run Server Action

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 51019bcc-2daf-4dfe-9df7-856a656a7de5
+---
+
 # Export definition files in a SOAP web service
 
 Consuming a SOAP Web Service in **Service Studio** is generally a seamless and trouble-free experience. There are cases, however, when developers want more information about a particular web service or need to make some modifications in order to make it conform to **OutSystems** requirements, such as:

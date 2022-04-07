@@ -1,6 +1,8 @@
 ---
 summary: Learn how to make elements of your module available for reuse by other modules and how to to use elements exposed by other modules.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: 4b07ffa2-b09c-4ce8-a7b0-7b18aef4ca47
 ---
 
 # Expose and reuse functionality between modules

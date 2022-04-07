@@ -1,6 +1,8 @@
 ---
 summary: Use an aggregate with grouped columns to obtain only the distinct values of entity attributes.
 tags: support-application_development; support-Database; support-webapps
+locale: en-us
+guid: 4ceecc67-9976-48c7-bcdb-fa895a141d81
 ---
 
 # Get Distinct Values from the Database

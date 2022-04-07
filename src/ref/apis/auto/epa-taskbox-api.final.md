@@ -1,6 +1,8 @@
 ---
 summary: The Embedded Process Automation (EPA) shows automatically a floating taskbox in the browser, with all pending activities.
 tags: runtime-traditionalweb
+locale: en-us
+guid: 24b83310-17ec-4eea-a688-89da29816145
 ---
 
 # EPA Taskbox API

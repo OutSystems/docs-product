@@ -1,5 +1,7 @@
 ---
 summary: Learn more about the Microsoft Dynamics 365 integration.
+locale: en-us
+guid: 5c9afbf6-6035-4da8-8d08-77c1503c0dcf
 ---
 
 # Microsoft Dynamics 365 integration

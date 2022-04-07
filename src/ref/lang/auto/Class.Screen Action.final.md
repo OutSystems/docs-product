@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Flows+SMSScreenAction+Kind, ServiceStudio.Model.Flows+WebScreenAction+Kind
 helpids: 0
+locale: en-us
+guid: 4ccf9451-f78a-4c45-8507-2e0fa2f7e4b2
 ---
 
 # Screen Action

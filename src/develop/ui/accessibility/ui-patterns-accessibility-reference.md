@@ -1,6 +1,8 @@
 ---
 summary: Learn how to configure accessibility settings specific to some OutSystems UI patterns.
 tags: runtime-reactiveweb
+locale: en-us
+guid: 41f4db30-ace4-4972-8cad-f954f43cd831
 ---
 
 # UI Patterns accessibility reference

@@ -1,6 +1,8 @@
 ---
 summary: Use aggregate functions on a column to calculate a single value.
 tags: support-application_development; support-Database; support-webapps
+locale: en-us
+guid: 65fc5101-2962-4239-a14a-f1a4f9d19fab
 ---
 
 # Aggregate a Column into a Single Value

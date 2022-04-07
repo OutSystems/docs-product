@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Entity+Kind, ServiceStudio.Model.SyntheticEntity+Kind, ServiceStudio.Model.ReferenceEntity+Kind
 helpids: 15005
+locale: en-us
+guid: 1c756124-6173-4742-a20d-52bb7e0833fc
 ---
 
 # Static Entity

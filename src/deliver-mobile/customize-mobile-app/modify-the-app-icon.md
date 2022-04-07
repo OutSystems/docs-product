@@ -1,6 +1,8 @@
 ---
 summary: Assign custom icons for your mobile app, specifying versions for each screen sizes and densities.
 tags: runtime-mobile; support-Mobile_Apps-featured
+locale: en-us
+guid: 4d07edaa-0b7b-41b8-bd1f-59c4b1bfd103
 ---
 
 # Modify the App Icon

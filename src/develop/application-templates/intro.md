@@ -1,6 +1,8 @@
 ---
 summary: Use application templates to bootstrap an app.
 tags: support-application_development; support-Front_end_Development; support-Front_end_Development-overview; support-Mobile_Apps; support-webapps
+locale: en-us
+guid: 5a669286-c41f-49c6-afe6-00a911f5f162
 ---
 
 # Application Templates

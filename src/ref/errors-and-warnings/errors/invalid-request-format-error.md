@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: cd6419c6-8176-4cba-8788-49eee2196c4a
+---
+
 # Invalid Request Format Error
 
 The `Invalid Request Format` error is issued in the following situation:

@@ -1,5 +1,7 @@
 ---
 summary: Learn how to monitor Timers.
+locale: en-us
+guid: caf9e5cf-7145-41f9-b6e7-af2f0f7f0652
 ---
 
 # Monitor Timers

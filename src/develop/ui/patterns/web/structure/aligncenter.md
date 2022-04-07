@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Align Center places content horizontally or vertically within a container.
+locale: en-us
+guid: 88f0dd67-0dcf-44c3-ad3e-41977550015c
 ---
 
 # Align Center

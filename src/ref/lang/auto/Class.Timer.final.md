@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Timer+Kind
 helpids: 13001
+locale: en-us
+guid: 92beb602-6c17-4991-a42d-c9860a32326f
 ---
 
 # Timer

@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.ESpace+Kind
 helpids: 1011
+locale: en-us
+guid: 1189b6d2-baf6-4b9f-bfc7-e88033ba8e7b
 ---
 
 # Module

@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.SystemClientActions+OnApplicationReady+Kind
 helpids: 0
 tags: runtime-mobileandreactiveweb
+locale: en-us
+guid: b89718c6-8e22-4481-a4ea-6481e349e206
 ---
 
 # On Application Ready

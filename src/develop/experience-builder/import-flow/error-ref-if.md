@@ -1,5 +1,7 @@
 ---
 summary:  Experience Builder validates the flow templates module to provide a flawless experience for developers using custom flows.
+locale: en-us
+guid: 8c89ad30-ff41-497f-81c9-2ec418fde122
 ---
 
 # Validations

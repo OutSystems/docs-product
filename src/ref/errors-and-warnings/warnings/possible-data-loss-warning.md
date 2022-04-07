@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 59ec2532-1c5b-4011-a042-2edd112da5b0
+---
+
 # Possible Data Loss Warning
 
 Message

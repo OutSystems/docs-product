@@ -1,6 +1,8 @@
 ---
 tags: 
 summary: 
+locale: en-us
+guid: f230a3d9-8c51-4b1b-98d9-ada3c647d825
 ---
 
 # Designing Screens

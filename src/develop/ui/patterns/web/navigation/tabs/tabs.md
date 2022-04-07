@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Tabs separate content into flat structure sections.
+locale: en-us
+guid: 61ddaa14-5f08-44b8-95a5-9527a7649449
 ---
 
 # Tabs

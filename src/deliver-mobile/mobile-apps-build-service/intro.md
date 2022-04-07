@@ -1,6 +1,8 @@
 ---
 summary: Learn how to enable and manage the service that generates the mobile application packages of your apps, and how to access app build logs.
 tags: runtime-mobile; support-mobile
+locale: en-us
+guid: a5d92b93-40f7-418b-a2b3-40e81e820760
 ---
 
 # Mobile Apps Build Service

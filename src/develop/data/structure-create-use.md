@@ -1,6 +1,8 @@
 ---
 summary: Learn how to create and use complex data types in your applications.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: eb3ff661-0b92-4f55-9bf3-cceb8dd2c0b9
 ---
 
 # Use Structures and Records to Create Compound Data Types

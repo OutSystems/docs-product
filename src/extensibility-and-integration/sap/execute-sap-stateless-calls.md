@@ -1,5 +1,7 @@
 ---
 tags: support-Integrations_Extensions
+locale: en-us
+guid: 24e5b7ad-48f0-4656-b5d7-c834488bef98
 ---
 
 # Execute SAP Stateless Calls

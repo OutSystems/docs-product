@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Accordion expands vertically-stacked content by clicking on the header.
+locale: en-us
+guid: 4cdf1677-f152-4afc-ac90-75901d2e9055
 ---
 
 # Accordion

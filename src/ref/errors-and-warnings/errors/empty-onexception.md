@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 9428412d-0b04-497d-a0a9-a1eb18d2a797
+---
+
 # Empty 'OnException'
 
 The `Empty 'OnException'` error is issued in the following situations:

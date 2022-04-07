@@ -1,6 +1,8 @@
 ---
 summary: Follow this tutorial to quickly create and test a Traditional Web App example to manage contacts.
 tags: runtime-traditionalweb; support-webapps
+locale: en-us
+guid: f84888af-0987-4ec7-98f7-195f6e493292
 ---
 
 # Create Your First Traditional Web App

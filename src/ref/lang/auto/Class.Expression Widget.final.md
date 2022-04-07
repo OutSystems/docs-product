@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+InlineExpression+Kind, ServiceStudio.Model.WebWidgets+ReferenceInlineExpression+Kind
 helpids: 4020
 tags: runtime-traditionalweb
+locale: en-us
+guid: bc4b0b1b-57cb-49ab-b9de-3d90a5f418c2
 ---
 
 # Expression Widget

@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SOAP.SOAPActionOutputDescriptor
 helpids: -1
+locale: en-us
+guid: 56426f22-13b5-4e4f-a87a-dd37eba728cf
 ---
 
 # Output Parameter (Consumed SOAP Method)

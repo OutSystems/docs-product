@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: a6f3ed0c-94af-4c2a-9083-80ff50ca3083
+---
+
 # Unused Callback Error
 
 The `Unused Callback` error is issued in the following situation:

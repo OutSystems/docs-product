@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 08269e2d-fc6b-49ef-93e0-9f7bce9c2724
+---
+
 # Entity Attribute Properties
 
 The next table presents the properties of the [entity attribute](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-attribute.md>) element.  

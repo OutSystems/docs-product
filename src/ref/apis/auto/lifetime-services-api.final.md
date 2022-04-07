@@ -1,6 +1,8 @@
 ---
 summary: A set of SOAP Web Services that allow you to manage the infrastructure made available by OutSystems.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 49b8897e-c856-4b34-b330-7e8337885450
 ---
 
 # LifeTime Services API

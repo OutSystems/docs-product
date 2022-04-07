@@ -1,6 +1,8 @@
 ---
 summary: Low-level API to create custom inboxes for process activities.
 tags: 
+locale: en-us
+guid: 2dc203a7-a140-4fbc-9ab8-97cdaf1c55f5
 ---
 
 # BPT API

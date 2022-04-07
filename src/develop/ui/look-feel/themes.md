@@ -1,6 +1,8 @@
 ---
 summary: To edit or create a theme you need to know the basics about the theme structure. This document shows how themes integrate into the platform through predefined blocks and placeholders.
 tags: support-application_development; support-Front_end_Development
+locale: en-us
+guid: fa7dc8c3-aea1-4ccb-a2d6-219772a1a7f2
 ---
 
 # Themes

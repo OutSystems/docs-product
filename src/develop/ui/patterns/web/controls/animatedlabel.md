@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: The Animated Label animates a label when there is user input.
+locale: en-us
+guid: cada799f-c2fe-4d0a-98aa-309bf3a4fd16
 ---
 
 # Animated Label

@@ -1,6 +1,8 @@
 ---
 summary: Learn how to test and fix accessibility issues on your OutSystems Reactive Web applications.
 tags: runtime-reactiveweb
+locale: en-us
+guid: 4d847458-cdd8-40ec-848a-aa9af7e1d2ea
 ---
 
 # Testing and fixing accessibility issues

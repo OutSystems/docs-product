@@ -1,6 +1,8 @@
 ---
 tags:
 summary: Follow this walkthrough to get started using Experience Builder.
+locale: en-us
+guid: 742c329a-59a4-4138-867b-46f05b621cb6
 ---
 
 # Use Experience Builder

@@ -1,6 +1,8 @@
 ---
 summary: Develop a progressive web app (PWA) by creating a mobile app and toggling on the option to distribute the app as PWA. Try your app in Android and iOS.
 tags: support-application_development, article-page
+locale: en-us
+guid: 92faa93c-8b74-4d6d-9914-229c3fa33813
 ---
 
 # Distribute as a progressive web app

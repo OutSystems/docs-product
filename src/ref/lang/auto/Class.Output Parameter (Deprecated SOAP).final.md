@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Variables+ActivityOutput+Kind, ServiceStudio.Model.Variables+GenericOutputParameter+Kind, ServiceStudio.Model.Variables+JSOutputParameter+Kind, ServiceStudio.Model.Variables+ProcessOutput+Kind, ServiceStudio.Model.Variables+SerializableOutputParameter+Kind, ServiceStudio.Model.Variables+WebReferenceGenericOutputParameter+Kind, ServiceStudio.Model.Variables+ReferenceActivityOutput+Kind, ServiceStudio.Model.Variables+ReferenceGenericOutputParameter+Kind, ServiceStudio.Model.Variables+ReferenceProcessOutput+Kind, ServiceStudio.Model.Variables+ReferenceSerializableOutputParameter+Kind
 helpids: 7012, 30101
+locale: en-us
+guid: fa9d634f-e1d2-4ea0-a302-37f50b51365e
 ---
 
 # Output Parameter (Deprecated SOAP)

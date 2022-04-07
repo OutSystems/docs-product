@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 8b291081-7322-4558-8b0a-c1ac18ba5218
+---
+
 # Incompatible Date Formats Error
 
 The `Incompatible Date Formats` error is issued in the following situation:

@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: The Dropdown Select UI Pattern allows a search functionality or multiple selection in lists with enhanced UX experience.
+locale: en-us
+guid: da3a1367-e123-420b-8978-da142720ef57
 ---
 
 # Dropdown Select

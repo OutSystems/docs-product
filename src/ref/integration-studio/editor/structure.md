@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 6c99fc79-ab44-4a23-8105-96bded0a842f
+---
+
 # Structure Editor
 
 The Structure Editor allows you to edit the [properties](<../element-property/structure.md>) of a structure that belongs to your extension.

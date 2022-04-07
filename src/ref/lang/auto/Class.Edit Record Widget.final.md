@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+EditRecord+Kind, ServiceStudio.Model.WebWidgets+ReferenceEditRecord+Kind
 helpids: 4021
 tags: runtime-traditionalweb
+locale: en-us
+guid: 74eded7e-7771-4b79-80bd-b047640728e2
 ---
 
 # Edit Record Widget

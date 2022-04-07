@@ -1,5 +1,7 @@
 ---
 summary: The Credentials tab allows you to define or reset the password of the Platform Server admin user.
+locale: en-us
+guid: 065a2e85-acf4-4895-87fd-5f176f406932
 ---
 
 # Credentials Tab

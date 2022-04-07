@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: bf5a417a-a13c-4dc4-b9c8-4800c7f324b3
+---
+
 # ExBuilder_Authentication_MCS
 
 Module with the authentication mobile core services.

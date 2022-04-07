@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: b87b0a9b-ac31-4705-ae8e-87ae97505fb1
+---
+
 # Logging levels reference for integrations
 
 The available logging levels for REST APIs and consumed SOAP Web Services are the following:

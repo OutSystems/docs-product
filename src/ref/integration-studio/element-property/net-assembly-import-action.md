@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 6d427a2f-1395-4386-abde-fe9f074f7e38
+---
+
 # Imported Actions Properties
 
 The Import Actions from .NET Assembly wizard allows you to import action definitions from a .NET assembly. Using introspection of a .NET assembly, this wizard will create an action for each method, property and public field you checked in step 3 of the [Import Actions from .NET Assembly](<../../../extensibility-and-integration/integration-studio/managing-extensions/net-assembly-import-action.md>) wizard. The properties of the imported actions depend on the type of the assembly item you select, as explained below.

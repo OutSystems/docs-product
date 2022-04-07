@@ -1,6 +1,8 @@
 ---
 summary: Overview of options, resources, and tools to implement automated testing in your OutSystems environment .
 tags: 
+locale: en-us
+guid: 319b0b59-b9cc-48d8-a776-ea8c0b564711
 ---
 # Testing your application
 

@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: The Dropdown Tags UI Pattern offers multiple choice options to the user when using a dropdown search.
+locale: en-us
+guid: 6b79cc3c-d89b-40df-ba5f-c04038639d4b
 ---
 
 # Dropdown Tags

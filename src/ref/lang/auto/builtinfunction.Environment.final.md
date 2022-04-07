@@ -1,4 +1,6 @@
 ---
+locale: en-us
+guid: 83ba44be-1320-4def-9741-0cf7e7842b05
 ---
 
 # Environment

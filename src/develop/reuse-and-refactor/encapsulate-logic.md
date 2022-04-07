@@ -1,6 +1,8 @@
 ---
 summary: Learn how to create actions to be reused in your logic. 
 tags: support-application_development; support-webapps-featured
+locale: en-us
+guid: cd22e454-c0cf-4a69-809f-6d6463f67e4c
 ---
 
 # Use Actions to Encapsulate Logic

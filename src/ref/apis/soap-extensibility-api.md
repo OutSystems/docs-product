@@ -1,6 +1,8 @@
 ---
 summary: Enables you to modify the SOAP connection, request and/or response message in an extension.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: a0a29cc4-04dd-4d02-9a65-6a6f9474b45c
 ---
 
 # SOAP Extensibility API

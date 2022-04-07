@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 69801bb7-6818-4061-acb2-4ee403966040
+---
+
 # Expression Should Be Escaped Warning
 
 Message

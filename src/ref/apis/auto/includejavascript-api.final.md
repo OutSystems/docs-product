@@ -1,6 +1,8 @@
 ---
 summary: API for including scripts in Web Screens for all web apps running in the environment.
 tags: runtime-traditionalweb
+locale: en-us
+guid: 46cbaa3a-33a2-4504-b4c2-bb07e9b00940
 ---
 
 # IncludeJavascript API

@@ -1,6 +1,8 @@
 ---
 tags: 
 summary: The Overview dashboard gives Tech Leads and Architects an general overview of the status and evolution of the technical debt in their applications.
+locale: en-us
+guid: 89bd155e-0d22-4262-a952-8f6de556ffda
 ---
 
 # Get an overview of the overall technical debt

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: fd2ef8b2-c684-4f63-9fe8-a3e0e77f0812
+---
+
 # Download Version from Server Window
 
 The Download Version from Server window is launched when you are [downloading an extension from the server](<extension-download-window.md>), in Integration Studio. It allows you to download a specific extension version of the selected extension from the Platform Server you are connected to.

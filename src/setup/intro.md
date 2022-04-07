@@ -1,6 +1,8 @@
 ---
 summary: Learn the several components that are part of OutSystems, and how to set up OutSystems on the cloud or on-premises.
 tags: article-page; support-installation; support-Installation_Configuration-overview; support-Integrations_Extensions
+locale: en-us
+guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
 ---
 
 # Setting Up OutSystems

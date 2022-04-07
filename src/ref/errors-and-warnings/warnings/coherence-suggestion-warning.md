@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: b50e7c6e-1f6a-4ae5-bd3d-5c621d1bd899
+---
+
 # Coherence Suggestion Warning
 
 Message

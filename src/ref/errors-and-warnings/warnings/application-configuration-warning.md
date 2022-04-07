@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 7f61abb9-ec5a-47ae-9e7e-d98dc926e78f
+---
+
 # Application Configuration Warning
 
 Message

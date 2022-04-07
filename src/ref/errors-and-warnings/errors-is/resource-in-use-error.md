@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: b12ff345-5101-4765-997c-97c7150f70a5
+---
+
 # Resource in Use Error
 
 Message

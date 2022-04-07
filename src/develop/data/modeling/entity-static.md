@@ -1,6 +1,8 @@
 ---
 summary: Use Static Entities for immutable data.
 tags:
+locale: en-us
+guid: a0ab595d-66a9-4bee-988a-d12ba224b0e5
 ---
 
 # Static Entities

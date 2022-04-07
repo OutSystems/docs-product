@@ -1,6 +1,8 @@
 ---
 summary: Testing in OutSystems
 tags:
+locale: en-us
+guid: a04eb23a-d3fe-4967-875b-02d15033b8cd
 ---
 
 # Develop for Testability

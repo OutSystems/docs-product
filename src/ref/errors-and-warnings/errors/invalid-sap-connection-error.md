@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 6af39380-3f07-4666-bd86-865b63ed4703
+---
+
 # Invalid SAP Connection Error
 
 The `Invalid SAP Connection` error is issued in the following situation:

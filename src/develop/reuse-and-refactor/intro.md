@@ -1,5 +1,7 @@
 ---
 summary: Reuse functionality from other modules to avoid repeated code and to achieve a modular design.
+locale: en-us
+guid: 33e63dcb-e047-49d9-ad6b-e14efd20ed46
 ---
 
 # Reuse and Refactor

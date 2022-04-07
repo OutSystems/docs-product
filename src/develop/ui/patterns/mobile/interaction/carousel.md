@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Displays multiple items in a horizontal slide.
+locale: en-us
+guid: a2167543-6fcc-4c6e-9ff5-ba4426722ed5
 ---
 
 # Carousel

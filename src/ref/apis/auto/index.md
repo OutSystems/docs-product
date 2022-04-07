@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: fb2fd6a6-56d0-4b27-a119-65eab40c0d45
+---
+
 # Auto-generated API Reference
 
 The following APIs are implemented in OutSystems (OML/XIF) and their reference is generated using an internal tool:

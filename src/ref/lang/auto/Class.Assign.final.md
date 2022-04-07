@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+Assign+Kind
 helpids: 7001
+locale: en-us
+guid: 493e43c0-c626-4ffd-8a99-161132b90261
 ---
 
 # Assign

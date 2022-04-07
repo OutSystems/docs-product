@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.REST.RestCallbackStructureDescriptor
 helpids: 30055
+locale: en-us
+guid: 5fc67999-8f0f-455d-b611-9a4079cbcc0e
 ---
 
 # Structure (REST API Callback)

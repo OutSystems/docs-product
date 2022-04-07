@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SAP.SapStructureAttributeDescriptor
 helpids: 30073
+locale: en-us
+guid: b2bb3ce3-6403-4a1a-80d9-c5d34e509048
 ---
 
 # Structure Attribute (SAP Remote Function)

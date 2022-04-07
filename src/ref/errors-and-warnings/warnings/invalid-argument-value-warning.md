@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 36a6a5c3-e263-4d21-960a-8b7b409ad21f
+---
+
 # Invalid Argument Value Warning
 
 Message

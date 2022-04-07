@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced uses cases for the Stacked Icon UI Pattern. 
+locale: en-us
+guid: fb849376-d199-4131-af7d-fb890d688676
 ---
 
 # Stacked Icon UI Pattern Reference

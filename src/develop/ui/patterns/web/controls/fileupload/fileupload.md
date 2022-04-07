@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: FileUpload allows the end user to transfer a file or add content to the application.
+locale: en-us
+guid: 0a5c3fb1-4677-4fe5-bafd-a63eb787adb1
 ---
 
 # File Upload

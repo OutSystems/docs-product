@@ -1,6 +1,8 @@
 ---
 summary: Invalid page name when working with SEO. 
 tags:
+locale: en-us
+guid: 6237e558-882b-40a4-9276-64dff7b6b16d
 ---
 
 # Invalid Page Name

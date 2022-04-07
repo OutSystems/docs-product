@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.StructureAttribute+Kind, ServiceStudio.Model.SystemActionStructureAttribute+Kind, ServiceStudio.Model.WebReferenceStructureAttribute+Kind, ServiceStudio.Model.ReferenceStructureAttribute+Kind
 helpids: 0
+locale: en-us
+guid: 1f9c9e4e-c7b9-4d27-a293-f7e1b5b40db3
 ---
 
 # Structure Attribute

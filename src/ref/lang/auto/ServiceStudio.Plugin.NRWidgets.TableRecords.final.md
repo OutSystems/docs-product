@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.TableRecordsDescriptor
 helpids: 30198
 summary: Reference information on the Table widget for displaying data in cells distributed in rows and columns. The tables created with Table Widget support automatic pagination, sorting, and dragging Attributes to add columns.
 tags: outsystems-designing-screens; reference; designing-screens; table-widget
+locale: en-us
+guid: 3cbb4a7d-817e-4709-b696-fae09de3d45d
 ---
 
 # Table

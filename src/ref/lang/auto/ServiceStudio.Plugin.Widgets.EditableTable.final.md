@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.Widgets.EditableTableDescriptor
 helpids: 17196
 summary: Displays the records of an Entity or a Structure in a tabular layout and allows the user to create new records, update, or delete existing records.
 tags: runtime-traditionalweb
+locale: en-us
+guid: 7f80f931-e1ac-4e99-a40e-70b31e30a6ce
 ---
 
 # Editable Table Widget

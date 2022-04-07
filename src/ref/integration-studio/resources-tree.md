@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 27ff9512-9516-45cd-9722-feb4690e5caa
+---
+
 # Resources Tree
 
 The **Resources** tree, in the extension [workspace](<workspace.md>), presents the resources associated with the current extension and provides the necessary operations to manage them. In Integration Studio, resources are files that implement the behavior of the extension actions or any files that support other aspects of the extension, such as action icons and help files.

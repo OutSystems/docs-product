@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Displays large sets of information, which can be split into different areas, while always remaining a click away. 
+locale: en-us
+guid: a5e72a7a-870d-46e7-b2be-a15ac6948b97
 ---
 
 # Tabs

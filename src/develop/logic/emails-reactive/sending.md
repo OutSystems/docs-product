@@ -1,6 +1,8 @@
 ---
 summary: Use Send Email action on the server to send emails. Trigger manual or automatic sending of emails.
 tags: support-application_development,
+locale: en-us
+guid: c24bedc2-2f7b-4275-b3af-58b08b4a5b2e
 ---
 
 # Sending emails

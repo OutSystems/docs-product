@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: f80b680e-8d63-4def-bbf0-c3fdf279d3a2
+---
+
 # Consumed Web Service Integrity Warning
 
 Message

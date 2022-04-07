@@ -1,6 +1,8 @@
 ---
 tags: 
 summary: You can change a enable or disable auto-classification of apps in Architecture Dashboard.
+locale: en-us
+guid: 1b423f33-a40a-4659-a633-dad0d32c6432
 ---
 
 # How to enable or disable auto-classification

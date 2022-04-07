@@ -1,6 +1,8 @@
 ---
 summary: APIs provided by OutSystems that you can use to extend the capabilities of your applications.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: f2cb6eb8-b4dc-437a-9838-0fca9cad116b
 ---
 
 # OutSystems APIs

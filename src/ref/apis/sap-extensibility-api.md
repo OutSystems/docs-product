@@ -1,6 +1,8 @@
 ---
 summary: The OutSystems SAP Extensibility API enables you to customize your connection and calls to SAP remote functions through an extension.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 3a9b8612-fe81-4c45-94be-804398a3c28a
 ---
 
 # SAP Extensibility API

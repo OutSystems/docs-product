@@ -1,6 +1,8 @@
 ---
 summary: Add JavaScript code to a Traditional Web App to make it more dynamic, adding custom behavior to pages executed on the user's browser while minimizing the number of calls to the server.
 tags: runtime-traditionalweb
+locale: en-us
+guid: ade87f50-8404-4392-88d0-e33397418fe9
 ---
 
 # Extend Your Traditional Web App Using JavaScript

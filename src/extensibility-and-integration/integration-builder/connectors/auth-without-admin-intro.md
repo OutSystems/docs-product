@@ -1,5 +1,7 @@
 ---
 summary: This section contains insntructions for administrators on how to register an OutSystems Integration Builder app in Salesforce or Azure Active Directory.
+locale: en-us
+guid: 2593fe18-2b20-483f-98ba-d8985048339c
 ---
 
 # Register an OutSystems Integration Builder app in your system

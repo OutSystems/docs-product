@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Video UI Pattern.
+locale: en-us
+guid: cd532674-6556-4684-bdd5-fcff4e6c422e
 ---
 
 # Video Reference

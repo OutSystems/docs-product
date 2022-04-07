@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.NRNodes+WebScreen+Kind, ServiceStudio.Model.NewRuntime.ReferenceWebScreen+Kind
 helpids: 4011, 0
+locale: en-us
+guid: ca24e447-f946-4dd9-87d7-664e6d6ed848
 ---
 
 # Screen

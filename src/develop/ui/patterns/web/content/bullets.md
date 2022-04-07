@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Bullets break up large blocks of text into smaller points that are easier to read.
+locale: en-us
+guid: 0028c775-3531-4d78-b693-124fb9f1c70e
 ---
 
 # Bullets

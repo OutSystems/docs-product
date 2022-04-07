@@ -2,6 +2,8 @@
 tags: 
 summary: You can change a module's classification in the Architecture Dashboard canvas.
 en_title: 
+locale: en-us
+guid: 429d1c51-f248-425b-902e-2af8b6ec8a2e
 ---
 
 # How to change module classifications

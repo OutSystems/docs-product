@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Stacked Icon expands the icon set and creates new graphical representation of concepts.
+locale: en-us
+guid: 163fef6d-6b13-4479-baaa-25c27569832d
 ---
 
 # Stacked Icon

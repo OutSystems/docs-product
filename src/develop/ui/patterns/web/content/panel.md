@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Panel groups short pieces of information in small blocks and highlights them on the screen with a specific structure.
+locale: en-us
+guid: 8cbeefba-ff0a-4f0f-a9ef-eccd63af568b
 ---
 
 # Panel

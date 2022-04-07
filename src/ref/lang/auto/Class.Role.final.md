@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Role+Kind, ServiceStudio.Model.SystemRole+Kind, ServiceStudio.Model.ReferenceRole+Kind
 helpids: 15004
+locale: en-us
+guid: 9fc0da79-a220-4620-bcd5-b69331ec3b0c
 ---
 
 # Role

@@ -1,5 +1,7 @@
 ---
 tags: 
+locale: en-us
+guid: de10147e-75d6-4cc6-a32b-3c92590f27eb
 ---
 
 # Consumed SOAP Web Service

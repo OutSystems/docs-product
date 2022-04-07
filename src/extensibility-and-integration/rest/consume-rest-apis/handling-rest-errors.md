@@ -1,6 +1,8 @@
 ---
 summary: How to handle error responses returned by consumed REST APIs.
 tags: 
+locale: en-us
+guid: 5a815098-ae36-4134-91ac-761a1087c31f
 ---
 
 # Handling REST Errors

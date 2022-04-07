@@ -1,6 +1,8 @@
 ---
 summary: To troubleshoot Service Actions you may need to check Service Action requests logs. Learn where to find these logs, how to change the logging detail level and about a few key points regarding Service Action troubleshooting.
 tags:
+locale: en-us
+guid: e37fa5b3-0517-4c62-a0f6-ab2262e44a09
 ---
 
 # Troubleshoot Service Actions Using Logs

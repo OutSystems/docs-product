@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Advanced use cases for the Swipe Events UI Pattern.
+locale: en-us
+guid: 4cbd7c42-2fd9-4e84-b9c0-091534b608b7
 ---
 
 # Swipe Events Reference

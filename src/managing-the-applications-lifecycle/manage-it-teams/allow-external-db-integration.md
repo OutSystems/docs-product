@@ -1,5 +1,7 @@
 ---
 summary: Learn how to allow developers in the team to create integrations with external databases.
+locale: en-us
+guid: 2bac9add-33d1-4240-8cc7-d23a897f0415
 ---
 
 # Allow Integrations With External Databases

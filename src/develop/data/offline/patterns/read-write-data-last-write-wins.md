@@ -1,6 +1,8 @@
 ---
 summary: Use this synchronization pattern when it is not likely for more than one user to change the same data while the app is offline.
 tags: runtime-mobile
+locale: en-us
+guid: 053acd13-6c13-4849-b496-35631a4ad7f3
 ---
 
 # Read/Write Data Last Write Wins

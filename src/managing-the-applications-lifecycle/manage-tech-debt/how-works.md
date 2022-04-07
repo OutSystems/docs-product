@@ -1,6 +1,8 @@
 ---
 tags:
 summary: Learn how Architecture Dashboard works and how your infrastructure communicates with the SaaS.
+locale: en-us
+guid: f6f9f871-5f0c-4991-a47e-91fa20033627
 ---
 
 # How does Architecture Dashboard work

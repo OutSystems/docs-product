@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 20338e6c-c39c-4b7a-9370-c40a6ebc5b48
+---
+
 # Scalability Suggestion Warning
 
 Message

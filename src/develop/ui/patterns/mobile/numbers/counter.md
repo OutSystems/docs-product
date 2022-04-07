@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Counter shows the total number of occurrences of several values regarding a single topic.
+locale: en-us
+guid: 18443b28-3b50-4e2d-9731-a84aac8cdaf1
 ---
 
 # Counter

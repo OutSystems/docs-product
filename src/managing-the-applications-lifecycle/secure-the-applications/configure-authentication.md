@@ -1,6 +1,8 @@
 ---
 summary: The authentication is configurable per environment to meet different security requirements.
 tags: runtime-mobileandreactiveweb; support-Security-overview
+locale: en-us
+guid: 74fffe9e-d6fa-4ea9-a8ae-aa7a34a37511
 ---
 
 # Configure App Authentication

@@ -1,6 +1,8 @@
 ---
 summary: Learn OutSystems concepts to help you understand the application use case tutorials and how to create your own app. 
 tags:
+locale: en-us
+guid: f30b6d10-f57f-48ac-98e4-1425ae8c72d5
 ---
 
 # Understanding how to create an app

@@ -1,6 +1,8 @@
 ---
 summary: This document guides you through creating the Azure resources for developing a chatbot.
 tags:
+locale: en-us
+guid: 2d4d86ce-b835-4fb6-9af8-ecee723d94a7
 ---
 
 # Create the chatbot resources in Azure

@@ -1,5 +1,7 @@
 ---
 tags: support-Database
+locale: en-us
+guid: cb6c0a9e-1714-484f-90ed-74f2afa98f67
 ---
 
 # Handling Transactions

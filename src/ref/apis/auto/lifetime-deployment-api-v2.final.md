@@ -1,6 +1,8 @@
 ---
 summary: Allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure. Version 2 of the API adds support for deployment zones, users, teams, and roles.
 tags: article-page; support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
+locale: en-us
+guid: 8ebd5215-2960-4071-8a9c-83fe39674ee0
 ---
 
 # LifeTime API v2

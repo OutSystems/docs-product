@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 80726ba6-e316-407f-8bc5-adbf1640b455
+---
+
 # Integration Studio Warnings
 
 The warnings displayed when you are [verifying](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-verify.md>) or [publishing](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-1-cp.md>) an extension are listed below.

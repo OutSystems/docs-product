@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 426b3956-f51e-4d01-a743-33fcb462fce6
+---
+
 # Verify Window
 
 The Verify window ![](images/validate.gif) is launched when you are [verifying](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-verify.md>) your extension.

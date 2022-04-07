@@ -1,6 +1,8 @@
 ---
 summary: Learn how to add attachments to emails.
 tags: support-application_development
+locale: en-us
+guid: 33f25da2-2cd8-4016-a12d-3b6ebfd12fc2
 ---
 
 # Adding email attachments

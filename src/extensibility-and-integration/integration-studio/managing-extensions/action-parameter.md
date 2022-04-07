@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: aa5d5bee-561a-4103-9644-898f9eb7ffc7
+---
+
 # Action Parameters
 
 Once your action is [created](<action-define.md>), you can [add, change, or delete its parameters](<../../../ref/integration-studio/editor/action-parameters.md>) in the Action Parameters Editor.

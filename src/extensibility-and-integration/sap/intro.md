@@ -1,6 +1,8 @@
 ---
 summary: Learn how you can integrate with SAP in OutSystems.
 tags: 
+locale: en-us
+guid: 3c630499-23ad-4947-9600-ad9392538dd6
 ---
 
 # SAP

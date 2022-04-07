@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Counter shows the total number of occurrences of several values regarding a single topic.
+locale: en-us
+guid: 91058e55-ccbb-494d-bc74-9bdeab106742
 ---
 
 # Counter

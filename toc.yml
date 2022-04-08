@@ -930,6 +930,7 @@
         - href: setup/azure/additional-configurations.md
         - href: setup/azure/quick-reference.md
         - href: setup/azure/getting-setup-logs.md
+        - href: setup/azure/plan-associate.md
 # Reference
 - href: ref/intro.md
 - topics:

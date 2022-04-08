@@ -142,7 +142,7 @@ Additionally, when the back-end of one or more OutSystems mobile or reactive app
 * No caching of mobile/reactive app resources in the reverse proxy
 * When using keep-alive/persistent connections, review the connection timeout configuration
 
-For additional information, see [Using OutSystems in Reverse Proxy Scenarios](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Using_OutSystems_in_Reverse_Proxy_Scenarios) guide.
+For additional information, see [Using OutSystems in Reverse Proxy Scenarios](https://success.outsystems.com/Documentation/How-to_Guides/Infrastructure/Using_OutSystems_in_Reverse_Proxy_Scenarios) guide.
 
 ### Application deliver
 

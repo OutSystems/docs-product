@@ -1,5 +1,7 @@
 ---
 summary: Improve platform performance by creating indexes for a specific set of platform tables.
+locale: en-us
+guid: d70c93e7-404e-468d-b405-3711108e5311
 ---
 
 # Creating indexes for platform database tables

@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+EmailScreen+Kind
 helpids: 0
+locale: en-us
+guid: 35c72b23-7903-43b0-be96-1e10933d3f17
 ---
 
 # Email
@@ -41,7 +43,7 @@ Allows defining the content to send by email.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>
@@ -51,7 +53,7 @@ Allows defining the content to send by email.
 <td></td>
 <td>Click on "..." to edit the property value.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

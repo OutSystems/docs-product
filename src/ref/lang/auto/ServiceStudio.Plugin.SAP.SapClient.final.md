@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SAP.SapClientDescriptor
 helpids: 17252
+locale: en-us
+guid: 14b4eecd-c93a-45cd-871d-6f6470945bd1
 ---
 
 # SAP Connection
@@ -41,7 +43,7 @@ Defines a connection to a SAP system.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Default Connection Settings</th>
 </tr>
 <tr>
@@ -93,7 +95,7 @@ Defines a connection to a SAP system.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

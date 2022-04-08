@@ -1,6 +1,8 @@
 ---
 summary: Use Service modules and Service applications to design a service-oriented architecture. Learn the differences between Server Actions and Service Actions, and which of them you should use to expose your service. 
 tags: support-application_architecture-featured
+locale: en-us
+guid: 9fe307cf-1687-41f6-9a5b-b8f1484f57ee
 ---
 
 # Use Services to Expose Functionality

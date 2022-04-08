@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SOAP.SOAPCallbackActionFlowDescriptor
 helpids: 30174
+locale: en-us
+guid: c0e4920c-99f4-41e1-995c-85a9ed120053
 ---
 
 # SOAP Callback (Consumed SOAP)

@@ -3,6 +3,8 @@ kinds: ServiceStudio.Model.WebWidgets+ListBox+Kind, ServiceStudio.Model.WebWidge
 helpids: 4041
 summary: Allows the user to select one or more values from a list of possible values.
 tags: runtime-traditionalweb
+locale: en-us
+guid: 7a819ca9-6e8b-418a-9270-ad6a8546ea1a
 ---
 
 # List Box Widget
@@ -159,7 +161,7 @@ If you're allowing users to select multiple values in a List Box widget, conside
 <td>Yes</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>
@@ -176,7 +178,7 @@ If you're allowing users to select multiple values in a List Box widget, conside
 <td></td>
 <td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">On Change</th>
 </tr>
 <tr>

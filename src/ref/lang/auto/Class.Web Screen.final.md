@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+WebScreen+Kind, ServiceStudio.Model.ReferenceWebScreen+Kind
 helpids: 4011
+locale: en-us
+guid: 333dff4e-a7da-4b66-903f-041625db4010
 ---
 
 # Web Screen
@@ -55,7 +57,7 @@ User interface that end users interact with.
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>
@@ -100,7 +102,7 @@ User interface that end users interact with.
 <td></td>
 <td>Click on "..." to edit the property value.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Roles</th>
 </tr>
 <tr>
@@ -110,7 +112,7 @@ User interface that end users interact with.
 <td>Anonymous (unselected)<br/>Registered<br/>ApplicationUser</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

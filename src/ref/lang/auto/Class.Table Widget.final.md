@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+Table+Kind, ServiceStudio.Model.WebWidgets+ReferenceTable+Kind
 helpids: 4015
 tags: runtime-traditionalweb
+locale: en-us
+guid: 3d3bc1b9-9937-4e08-b4ce-f935022fc6dc
 ---
 
 # Table Widget
@@ -64,7 +66,7 @@ Note that [Row](Class.Row Widget.final.md) and [Cell](Class.Cell Widget.final.md
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

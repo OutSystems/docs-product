@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.StructureAttribute+Kind, ServiceStudio.Model.SystemActionStructureAttribute+Kind, ServiceStudio.Model.WebReferenceStructureAttribute+Kind, ServiceStudio.Model.ReferenceStructureAttribute+Kind
 helpids: 0
+locale: en-us
+guid: fba19edd-e3b2-4689-a1d9-2d25e0f74852
 ---
 
 # Structure Attribute (Deprecated SOAP)
@@ -76,7 +78,7 @@ Attribute of structure used in input or output parameters of consumed SOAP Web S
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">JSON Properties</th>
 </tr>
 <tr>
@@ -86,7 +88,7 @@ Attribute of structure used in input or output parameters of consumed SOAP Web S
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

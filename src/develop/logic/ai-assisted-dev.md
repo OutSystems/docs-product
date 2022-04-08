@@ -1,6 +1,8 @@
 ---
 summary: Create your app logic faster with OutSystems AI-assisted development. Use AI-powered suggestions and add logic nodes automatically to your flow and boost your low-code development.
 tags: support-application_development;
+locale: en-us
+guid: 9ca5abbb-ff2d-4aaf-9437-a6565e9df8f6
 ---
 
 # AI-assisted development

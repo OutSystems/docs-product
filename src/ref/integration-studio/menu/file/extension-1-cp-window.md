@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 7ece2478-a4fe-4f05-8f53-3053d04f30e8
+---
+
 # 1-Click Publish Window
 
 The 1-Click Publish window ![](images/1-click-publish-icon.gif) is launched when you invoke the [1-Click Publish](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-1-cp.md>).

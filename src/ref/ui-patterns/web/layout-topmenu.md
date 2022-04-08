@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb;
 summary: Advanced use cases for the Layout Top Menu web block.
+locale: en-us
+guid: 32bd92fb-5665-45a8-ac9c-69d26270cb75
 ---
 
 # Layout Top Menu Reference

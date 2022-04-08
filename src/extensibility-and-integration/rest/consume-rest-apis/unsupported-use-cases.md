@@ -1,5 +1,7 @@
 ---
 summary: Use cases currently unsupported when consuming REST services using "enums" and how to overcome some of these situations.
+locale: en-us
+guid: 269cf511-27bd-4705-ab9a-1785375f5367
 ---
 
 # Unsupported REST Enum Use Cases

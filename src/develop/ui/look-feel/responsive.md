@@ -1,6 +1,8 @@
 ---
 summary: OutSystems provides a set of adaptive and responsive behaviors that allow developers to easily create applications to work with all browsers, devices, and resolutions. 
 tags: runtime-mobileandreactiveweb;  
+locale: en-us
+guid: 5d91a5b5-b07e-4858-af62-980f6a558b1d
 ---
 
 # Responsive UI 

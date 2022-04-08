@@ -1,5 +1,7 @@
 ---
 summary: Reference of the View menu.
+locale: en-us
+guid: 208451d7-67e3-43f8-bf9d-8250f7d4e78c
 ---
 
 # View Menu

@@ -1,7 +1,8 @@
 ---
 tags: 
 summary: Learn how to use a forward proxy while connecting from the Architecture Dashboard plugin to the Architecture Dashboard Software as a Service (SaaS).
-en_title: How to use a proxy to connect to Architecture Dashboard
+locale: en-us
+guid: 06af3d66-f6c3-4827-aa17-36b1124f321b
 ---
 
 

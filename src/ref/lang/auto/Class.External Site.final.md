@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+WebExternalSite+Kind, ServiceStudio.Model.NRNodes+WebExternalSite+Kind
 helpids: 1003
+locale: en-us
+guid: 45080b5d-e942-4a12-935b-ac0db428c0e2
 ---
 
 # External Site
@@ -43,7 +45,7 @@ Encode the URL by using the [EncodeURL()](<builtinfunction.Text.final.md#EncodeU
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

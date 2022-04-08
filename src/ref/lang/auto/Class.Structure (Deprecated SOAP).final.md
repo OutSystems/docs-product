@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Structure+Kind, ServiceStudio.Model.SystemActionStructure+Kind, ServiceStudio.Model.WebReferenceStructure+Kind, ServiceStudio.Model.ReferenceStructure+Kind
 helpids: 15007, 30102
+locale: en-us
+guid: 459c47a3-0744-4ec6-85b0-af67b81d16d6
 ---
 
 # Structure (Deprecated SOAP)
@@ -41,7 +43,7 @@ Structure used in input or output parameters of consumed SOAP Web Service Method
 <td>No</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

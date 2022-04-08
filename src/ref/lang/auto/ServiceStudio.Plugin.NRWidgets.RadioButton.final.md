@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.RadioButtonDescriptor
 helpids: 30215
 summary: Reference information on the Radio Button widget for representing an option within a Radio Group on a screen.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; radio-button
+locale: en-us
+guid: 9db2cbf8-bc7e-41b7-a94e-9be56ff81f3c
 ---
 
 # Radio Button
@@ -60,7 +62,7 @@ Check the related topic at the bottom of the page for more guidance.
 <td>"radio-button"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

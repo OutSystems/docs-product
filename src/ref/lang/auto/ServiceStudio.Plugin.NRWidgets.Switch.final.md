@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.SwitchDescriptor
 helpids: 30037
 summary: Reference information on the Switch Group widget for adding two-state toggle controls to allow users to select between two options.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; switch-widget
+locale: en-us
+guid: 4479919f-eabb-4cad-97d0-5e8e990d8524
 ---
 
 # Switch
@@ -51,7 +53,7 @@ Two-state toggle control which allows users to select between two options. You c
 <td>"switch"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

@@ -1,6 +1,8 @@
 ---
 summary: Provides actions to manipulate character strings such as joining, splitting, search and replace using regular expressions, and custom formatting of DateTime expressions.
 tags: 
+locale: en-us
+guid: 6892cbf0-85c1-4403-8d32-0e4a89ee1331
 ---
 
 # Text API
@@ -23,7 +25,7 @@ For more information on adding elements from other modules as dependencies, chec
 
 Action | Description
 ---|---
-[Format_DateTime](<#Format_DateTime>) | Formats a DateTime by replacing the allowed keywords with their values.%%Available Keywords:%%[yyyy] - Represents the year as a four-digit number;%%[MM] - Represents the month as a number from 01 through 12;%%[MMM] - Represents the abbreviated name of the month;%%[MMMM] - Represents the full name of the month;%%[dd] - Represents the day of the month as a number from 01 through 31;%%[ddd] - Represents the abbreviated name of the day of the week;%%[dddd] - Represents the full name of the day of the week;%%[hh] - Represents the hour as a number from 01 through 12;%%[HH] - Represents the hour as a number from 00 through 23;%%[mm] - Represents the minute as a number from 0 through 59;%%[ss] - Represents the seconds as a number from 00 through 59;
+[Format_DateTime](<#Format_DateTime>) | Formats a DateTime by replacing the allowed keywords with their values.<br/>Available Keywords:<br/>[yyyy] - Represents the year as a four-digit number;<br/>[MM] - Represents the month as a number from 01 through 12;<br/>[MMM] - Represents the abbreviated name of the month;<br/>[MMMM] - Represents the full name of the month;<br/>[dd] - Represents the day of the month as a number from 01 through 31;<br/>[ddd] - Represents the abbreviated name of the day of the week;<br/>[dddd] - Represents the full name of the day of the week;<br/>[hh] - Represents the hour as a number from 01 through 12;<br/>[HH] - Represents the hour as a number from 00 through 23;<br/>[mm] - Represents the minute as a number from 0 through 59;<br/>[ss] - Represents the seconds as a number from 00 through 59;
 [Regex_Replace](<#Regex_Replace>) | Replaces all occurrences of a specified regular expression pattern with a replacement string.
 [Regex_Search](<#Regex_Search>) | Searches the input string for an occurrence of a regular expression.
 [String_Join](<#String_Join>) | Concatenates all the strings in a List, yielding a single string. The individual elements are separated, in the resulting string, by the string Separator.

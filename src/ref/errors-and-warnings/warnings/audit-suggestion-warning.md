@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: daf2fc35-917d-446f-b1a8-3f821f59dda8
+---
+
 # Audit Suggestion Warning
 
 Message

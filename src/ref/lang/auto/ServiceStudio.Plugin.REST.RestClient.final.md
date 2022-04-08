@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.REST.RestClientDescriptor
 helpids: 17200
+locale: en-us
+guid: 750da14a-1a1d-48fd-bea4-735d992e3d48
 ---
 
 # REST API
@@ -49,7 +51,7 @@ This value can be customized at runtime in the environment management console.</
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Basic Authentication</th>
 </tr>
 <tr>
@@ -66,7 +68,7 @@ This value can be customized at runtime in the environment management console.</
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

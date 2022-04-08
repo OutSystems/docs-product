@@ -1,5 +1,7 @@
 ---
 summary: UI reference for the Debugger Tab in Service Studio.
+locale: en-us
+guid: ed50314c-7355-4233-9466-03fcf751bd1c
 ---
 
 # Debugger Tab Reference
@@ -33,7 +35,7 @@ Icon | Name | Shortcut | Description
 ![](images/toolbar-button-abort.png)    | Abort Running Server Threads | | Aborts the execution of the current server threads in the Platform Server.
 ![](images/toolbar-button-continue.png) | Continue | `F9` | Resumes the execution.
 ![](images/toolbar-button-step-over.png)| Step Over | `F10` | Steps the execution trace to the next element in the same flow or, when in a web application, screen "level".
-![](images/toolbar-button-step-into.png)| Step Into | `F11` | Steps the execution trace to the first element "inside" elements like: %% &#8212; Execute Process elements%% &#8212; Execute Client Action (or Execute Server Action) elements which execute user-defined actions of the same module%% &#8212; User functions of the same module%% &#8212; Assignments of Assign elements%% Trying to step into any other element is the same as doing a ![](images/toolbar-button-step-over.png) Step Over operation.
+![](images/toolbar-button-step-into.png)| Step Into | `F11` | Steps the execution trace to the first element "inside" elements like: <br/> &#8212; Execute Process elements<br/> &#8212; Execute Client Action (or Execute Server Action) elements which execute user-defined actions of the same module<br/> &#8212; User functions of the same module<br/> &#8212; Assignments of Assign elements<br/> Trying to step into any other element is the same as doing a ![](images/toolbar-button-step-over.png) Step Over operation.
 ![](images/toolbar-button-step-out.png) | Step Out | `Shift+F11` | Continues the execution trace to the next element in the outer "level" of the flow or screen, i.e. it "gets out" of the current flow or screen.
 ![](images/toolbar-button-break-on-all-exceptions.png) | Break On All Exceptions | | When active, this toggle button forces the debugger to suspend the execution of threads whenever handled or unhandled exceptions occur.
 

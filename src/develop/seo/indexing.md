@@ -1,6 +1,8 @@
 ---
 summary: How to deploy sitemap.xml and robots.txt.  
 tags:
+locale: en-us
+guid: 7ea79b34-6e91-4e4d-8c94-1318b03f7e22
 ---
 
 # Sitemap.xml and robots.txt

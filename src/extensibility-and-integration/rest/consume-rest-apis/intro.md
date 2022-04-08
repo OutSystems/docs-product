@@ -1,6 +1,8 @@
 ---
 summary: Consume REST APIs in your OutSystems applications.
 tags: support-application_development; support-Integrations_Extensions; support-Integrations_Extensions-overview
+locale: en-us
+guid: 5a949da9-dd60-4ea9-a05b-70c27bc53655
 ---
 
 # Consume REST APIs

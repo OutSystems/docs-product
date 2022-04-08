@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb
 summary: Displays the current progress of a task using circular or semi-circular progress indicators.
+locale: en-us
+guid: 8f2233e3-6e6d-46b0-bdb9-ea3fa1d813b3
 ---
 
 # Progress Circle
@@ -83,10 +85,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| Progress (Integer): Mandatory  |  Percentage to display. You can use functions or local variables.  |
-| ProgressColor (Color Identifier): Optional  |  The color of the stroke on progress circle. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available. <p>Examples <ul><li>_Blank_ - The stroke color displays in the color you chose when creating the app (default value).</li><li>_Entities.Color.Red_ - The stroke color is red.</li></ul></p> |
-| TrailColor (Color Identifier): Optional  |  The color of the empty part of the progress circle. <p>Examples <ul><li>_Blank_ - The empty part of the circle is a light gray (Entities.Color.Neutral5). This is the default value.</li><li>_Entities.Color.Blue_ - The empty part of the progress circle is blue.</li></ul></p> |
-| CircleThickness (Integer): Optional  |  The thickness of the circle that marks the progress. <p>Examples <ul><li>_Blank_ - The circle thickness is 4px. This is the default value.</li><li>_8_ - The circle thickness is 8px.</li></ul></p> |
+| Progress (Integer): Mandatory  |  Percentage to display. You can use functions or local variables. |
+| ProgressColor (Color Identifier): Optional  |  The color of the stroke on progress circle. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available. <p>Examples <ul><li>_Blank_ - The stroke color displays in the color you chose when creating the app (default value).</li><li>Entities.Color.Red - The stroke color is red.</li></ul></p> |
+| TrailColor (Color Identifier): Optional | The color of the empty part of the progress circle. <p>Examples <ul><li>Blank - The empty part of the circle is a light gray (Entities.Color.Neutral5). This is the default value.</li><li>Entities.Color.Blue - The empty part of the progress circle is blue.</li></ul></p> |
+| CircleThickness (Integer): Optional | The thickness of the circle that marks the progress. <p>Examples <ul><li>_lank - The circle thickness is 4px. This is the default value.</li><li>8 - The circle thickness is 8px.</li></ul></p> |
 | AnimateInitialProgress (Boolean): Optional  | If set to True, the progress from zero to the progress value is animated. This is the default value. If set to False, the progress is not animated. |
 | IsSemiCircle (Boolean): Optional  | If True, the Progress Circle is changed from a circle to semi circle. If False, it remains a circle. This is the default value. |
 | AdvancedFormat (Text): Optional  |  Allow for more options beyond what is provided through the input parameters. For more information, visit: <https://kimmobrunfeldt.github.io/progressbar.js/>. Example: `{ easing: 'bounce' }` |

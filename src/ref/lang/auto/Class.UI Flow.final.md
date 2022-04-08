@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Flows+WebFlow+Kind, ServiceStudio.Model.NRFlows+WebFlow+Kind, ServiceStudio.Model.NewRuntime.ReferenceWebFlow+Kind, ServiceStudio.Model.ReferenceWebFlow+Kind
 helpids: 4034, 0
+locale: en-us
+guid: c6a9d058-311b-4564-8685-cd992ed4563f
 ---
 
 # UI Flow
@@ -48,7 +50,7 @@ UI Flows group screens into logical units with common settings.
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

@@ -1,11 +1,13 @@
 ---
 summary: Learn how to create an Entity Index to ensure uniqueness and improve findability.
 tags: support-application_development; support-Database; support-webapps
+locale: en-us
+guid: 0611c8e9-7cba-4812-8495-88165c39e20e
 ---
 
 # Create an Entity Index
   
-You can define a ![](../../../shared/icons-service-studio/entity-index.png) database index in your data model to enforce uniqueness of table attributes across multiple rows or to make searches quicker using those attributes as filters. In OutSystems, you can model a database index in the entity element.
+You can define a database index in your data model to enforce uniqueness of table attributes across multiple rows or to make searches quicker using those attributes as filters. In OutSystems, you can model a database index in the entity element.
 
 To create an  index  for an entity:
 

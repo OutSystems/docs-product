@@ -1,6 +1,8 @@
 ---
 summary: Learn more about how OutSystems can enable you to deliver value. In this article you're guided through the process of creating your first app that fulfills your business initiatives, using your own data.
 tags:
+locale: en-us
+guid: c7315436-17a6-49f5-a395-60b6da7bac46
 ---
 
 # Getting started with your own app use case

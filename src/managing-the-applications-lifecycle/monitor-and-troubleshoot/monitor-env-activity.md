@@ -1,6 +1,8 @@
 ---
 summary: In OutSystems, you can monitor the daily activity of your environment in the Service Center console.
 tags: support-Monitoring;
+locale: en-us
+guid: 5d4aa86a-ec57-46d7-b29f-81c2967bdb0c
 ---
 
 # Monitor the Environment Daily Activity

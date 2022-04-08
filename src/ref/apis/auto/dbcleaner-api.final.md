@@ -1,6 +1,8 @@
 ---
 summary: Allows freeing-up database space.
 tags: support-application_development; support-Database
+locale: en-us
+guid: 9fdba27d-69ca-46b4-9a7b-6dee299c8084
 ---
 
 # DbCleaner API
@@ -30,13 +32,13 @@ When deleting multi-tenant Entities, or Static Entities with translations, the 9
 
 Action | Description
 ---|---
-[Attribute_DropColumn](<#Attribute_DropColumn>) | Physically deletes the database table column associated with the specified entity attribute.  If the entity attribute still exists in a module’s meta model, the delete operation will not be performed.%%The logged user needs to have the 'Administrator' built-in role.
-[Attribute_ListDeleted](<#Attribute_ListDeleted>) | Returns a list of attributes, with their information, that have been deleted from module’s meta model but are still physically present in the database.%%The logged user needs to have the 'Administrator' built-in role.
-[Entity_DropTable](<#Entity_DropTable>) | Physically deletes the database table associated with the specified entity.  If the entity still exists in a module’s meta model, the delete operation will not be performed.%%The logged user needs to have the 'Administrator' built-in role.
-[Entity_ListDeleted](<#Entity_ListDeleted>) | Returns a list of entities, with their information, that have been deleted from module’s meta model but are still physically present in the database.%%The logged user needs to have the 'Administrator' built-in role.
-[ModuleVersion_Delete](<#ModuleVersion_Delete>) | Deletes the specified module version of the specified module from the database.%%The logged user needs to have 'Change & Deploy' permissions.
-[ModuleVersion_DeleteAll](<#ModuleVersion_DeleteAll>) | Deletes module versions that were published before the specified date and time. This action does not delete the module version that is currently published or module versions used in tagged versions of applications or solutions.%%The logged user needs to have 'Change & Deploy' permissions.
-[ModuleVersion_ListOldest](<#ModuleVersion_ListOldest>) | Returns a list of module versions that are stored in the database and that were published before the specified date and time. This action does not return the module version that is currently published or module versions used in tagged versions of applications or solutions.%%The logged user needs to have 'Change & Deploy' permissions.
+[Attribute_DropColumn](<#Attribute_DropColumn>) | Physically deletes the database table column associated with the specified entity attribute.  If the entity attribute still exists in a module’s meta model, the delete operation will not be performed.<br/>The logged user needs to have the 'Administrator' built-in role.
+[Attribute_ListDeleted](<#Attribute_ListDeleted>) | Returns a list of attributes, with their information, that have been deleted from module’s meta model but are still physically present in the database.<br/>The logged user needs to have the 'Administrator' built-in role.
+[Entity_DropTable](<#Entity_DropTable>) | Physically deletes the database table associated with the specified entity.  If the entity still exists in a module’s meta model, the delete operation will not be performed.<br/>The logged user needs to have the 'Administrator' built-in role.
+[Entity_ListDeleted](<#Entity_ListDeleted>) | Returns a list of entities, with their information, that have been deleted from module’s meta model but are still physically present in the database.<br/>The logged user needs to have the 'Administrator' built-in role.
+[ModuleVersion_Delete](<#ModuleVersion_Delete>) | Deletes the specified module version of the specified module from the database.<br/>The logged user needs to have 'Change & Deploy' permissions.
+[ModuleVersion_DeleteAll](<#ModuleVersion_DeleteAll>) | Deletes module versions that were published before the specified date and time. This action does not delete the module version that is currently published or module versions used in tagged versions of applications or solutions.<br/>The logged user needs to have 'Change & Deploy' permissions.
+[ModuleVersion_ListOldest](<#ModuleVersion_ListOldest>) | Returns a list of module versions that are stored in the database and that were published before the specified date and time. This action does not return the module version that is currently published or module versions used in tagged versions of applications or solutions.<br/>The logged user needs to have 'Change & Deploy' permissions.
 
 Structure | Description
 ---|---

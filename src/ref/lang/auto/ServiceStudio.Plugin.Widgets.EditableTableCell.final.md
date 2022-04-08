@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.Widgets.EditableTableCellDescriptor
 helpids: -1
+locale: en-us
+guid: ef21f07a-0b80-4be3-84c6-e99bcc2093ef
 ---
 
 # Cell Widget
@@ -41,7 +43,7 @@ Cell of an editable table.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

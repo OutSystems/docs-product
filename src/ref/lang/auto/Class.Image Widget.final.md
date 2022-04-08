@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+Image+Kind, ServiceStudio.Model.WebWidgets+ReferenceImage+Kind
 helpids: 4044
 tags: runtime-traditionalweb
+locale: en-us
+guid: 4246f32d-ed38-4f0f-9585-653d7247cf8c
 ---
 
 # Image Widget
@@ -117,7 +119,7 @@ The supported image formats are GIF, JPEG, PNG and SVG. Please note that the ima
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

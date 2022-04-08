@@ -1,6 +1,8 @@
 ---
 summary: OutSystems collects metrics of how applications are performing, to allow you to monitor and troubleshoot runtime issues. Learn what metrics are collected and how.
 tags: support-Application_Lifecycle; support-Integrations_Extensions; support-monitoring; support-monitoring-overview; support-monitoring-featured; runtime-traditionalweb
+locale: en-us
+guid: c9bafed1-f783-47d9-9f02-fa30a53c9ae6
 ---
 
 # How Application Performance Is Measured

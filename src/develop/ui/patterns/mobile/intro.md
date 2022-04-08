@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: The list of mobile patterns for fast mobile UI development.
+locale: en-us
+guid: c186083b-0936-47cb-804d-3e5fcad431a0
 ---
 
 # Using Mobile and Reactive Patterns

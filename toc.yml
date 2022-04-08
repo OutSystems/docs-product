@@ -200,10 +200,7 @@
                     - href: develop/ui/patterns/mobile/interaction/animate.md
                     - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
                     - href: develop/ui/patterns/mobile/interaction/carousel.md
-                    - href: develop/ui/patterns/mobile/interaction/datepicker/intro.md
-                    - topics:
-                        - href: develop/ui/patterns/mobile/interaction/datepicker/datepicker.md
-                        - href: develop/ui/patterns/mobile/interaction/datepicker/datepicker-advanced.md
+                    - href: develop/ui/patterns/mobile/interaction/datepicker.md
                     - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
                     - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
                     - href: develop/ui/patterns/mobile/interaction/floatingactions.md
@@ -382,6 +379,9 @@
         - topics:
             - href: develop/logic/exceptions/analyze-logs.md
             - href: develop/logic/exceptions/handling-mechanism.md
+            
+        - href: develop/logic/client-data-transfer-optimization-tp.md
+
     # Use Processes
     - href: develop/processes/intro.md
     - topics: 
@@ -512,6 +512,36 @@
         - href: develop/testing/testing-bdd-framework.md
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
+    # Experience Builder
+    - href: develop/experience-builder/intro.md
+    - topics:
+        - href: develop/experience-builder/how-works.md
+        - href: develop/experience-builder/how-setup.md
+        - href: develop/experience-builder/how-use.md
+        - href: develop/experience-builder/ref/error-ref.md
+        - href: develop/experience-builder/extend-app-in-ss.md
+        - href: develop/experience-builder/import-flow/intro-if.md
+        - topics:
+            - href: develop/experience-builder/import-flow/import-if.md
+            - href: develop/experience-builder/import-flow/edit-if.md
+            - href: develop/experience-builder/import-flow/theme-structure-if.md
+            - href: develop/experience-builder/import-flow/metadata-if.md
+            - href: develop/experience-builder/import-flow/error-ref-if.md
+            - href: develop/experience-builder/import-flow/faq-if.md
+        - href: develop/experience-builder/ref/intro.md
+        - topics:
+            - href: develop/experience-builder/ref/ExBuilder_Authentication_MCS.md
+            - href: develop/experience-builder/ref/ExBuilder_Configs_CS.md
+            - href: develop/experience-builder/ref/ExBuilder_Configs_MCS.md
+            - href: develop/experience-builder/ref/ExBuilder_MobileLookups.md
+            - href: develop/experience-builder/ref/ExBuilder_PluginsWrapper_MLib.md
+            - href: develop/experience-builder/ref/ExBuilder_Sync.md
+            - href: develop/experience-builder/ref/ExBuilder_Utils_Lib.md
+            - href: develop/experience-builder/ref/ExBuilder_Utils_MLib.md
+            - href: develop/experience-builder/ref/ExBuilder_MPat.md
+        - href: develop/experience-builder/how-update-dependency.md
+        - href: develop/experience-builder/faq.md
+        - href: develop/experience-builder/troubleshoot.md
     
 # Delivering Mobile Apps
 - href: deliver-mobile/intro.md
@@ -865,6 +895,7 @@
 - topics:
     - href: setup/possible-setups/intro.md
     - topics:
+        - href: setup/possible-setups/ha-scalability/intro.md
         - href: setup/possible-setups/cloud-architecture.md
     - href: setup/system-requirements.md
     - href: setup/network-requirements.md
@@ -1148,6 +1179,7 @@
             # Patterns
             - href: ref/interfaces/ui-patterns.md
             - topics:
+                - href: ref/ui-patterns/mobile/accordion.md
                 - href: ref/ui-patterns/mobile/data-grid-api-ref.md
                 - href: ref/ui-patterns/mobile/carousel-mobile.md
                 - href: ref/ui-patterns/mobile/columns.md
@@ -1155,7 +1187,9 @@
                 - href: ref/ui-patterns/mobile/gallery-mobile.md
                 - href: ref/ui-patterns/mobile/lightboximage.md
                 - href: ref/ui-patterns/mobile/masterdetail-mobile.md
+                - href: ref/ui-patterns/mobile/notification.md
                 - href: ref/ui-patterns/mobile/progressbar-mobile.md
+                - href: ref/ui-patterns/mobile/progresscircle-mob.md
                 - href: ref/ui-patterns/mobile/rating.md
                 - href: ref/ui-patterns/mobile/rangeslider.md
                 - href: ref/ui-patterns/mobile/rangesliderinterval.md
@@ -1679,6 +1713,8 @@
                 - href: ref/apis/lifetime-deployment/examples/api-new-app-version.md
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
                 - href: ref/apis/lifetime-deployment/examples//api-rollback-mobile-app.md
+                - href: ref/apis/lifetime-deployment/examples//api-register-env.md
+                - href: ref/apis/lifetime-deployment/examples//api-unregister-env.md
 
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: bad56419-c238-4adc-971c-c4b30c9a2af5
+---
+
 # Invalid Screen Error
 
 The `Invalid Screen` error is issued in the following situations:

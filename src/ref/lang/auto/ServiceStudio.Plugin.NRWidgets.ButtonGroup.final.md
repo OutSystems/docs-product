@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.ButtonGroupDescriptor
 helpids: 30039
 summary: Reference information on the Button group widget available for adding a set of buttons for users to select a single option on a screen.
 tags: runtime-mobileandreactiveweb;
+locale: en-us
+guid: 018284ce-ede4-43d4-b85b-189b2d5a86ac
 ---
 
 # Button Group
@@ -58,7 +60,7 @@ Set of buttons from which the user can select a single option.
 <td>"button-group"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

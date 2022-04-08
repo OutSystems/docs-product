@@ -1,6 +1,8 @@
 ---
 summary: Generate a mobile app package for your mobile app to publish in the Apple App Store.  Distribute your mobile app directly to your company's end users, if you enrolled in the Apple Enterprise Developer Program.
-tags: runtime-mobile; support-mobile; publish-application; apple-app-store; ios-app
+tags: runtime-mobile; support-mobile
+locale: en-us
+guid: 3d02e722-3225-47fa-b343-d6188e21d174
 ---
 
 # Publish your Mobile iOS application to the Apple App Store
@@ -122,6 +124,12 @@ To generate your mobile app in the Service Center, perform the following steps:
 1. After the app is generated, click the download icon near the version information to download the iOS app package (IPA).
 
     ![Service Center Factory Application Download IPA](images/outsystems-service-center-factory-native-platform-download-ios.png)
+
+<div class="info" markdown="1">
+
+The size of your IPA increases due to the addition of Apple's Swift libraries. This is an expected behavior in order to increase your application's compatibility across Apple devices and is not reflected in the final size of the application delivered to the end-user, who only retrieves the necessary libraries when downloading your application from the store.
+
+</div>
 
 ### Submit the Mobile App to the App Store
 

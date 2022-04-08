@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.ButtonDescriptor
 helpids: 30040
 summary: Reference information on the Button widget for triggering an action on a screen.
 tags: outsystems-designing-screens; reference; designing-screens; button-widget; trigger-action
+locale: en-us
+guid: 193110a3-2fa3-45ae-9cdb-ae5ba20a7cef
 ---
 
 # Button
@@ -67,7 +69,7 @@ If the button belongs to a form with some input fields, the button submits the i
 <td>"btn"</td>
 <td>The first button dragged to the screen or to the form is going to have an additional style class 'btn-primary'.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

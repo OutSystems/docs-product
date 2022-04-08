@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Flows+WebServiceMethod+Kind, ServiceStudio.Model.WebReferenceMethod+Kind
 helpids: 0
+locale: en-us
+guid: b6f1f703-4aca-4ec5-afa7-6277b63230d6
 ---
 
 # Web Service Method (Deprecated SOAP)
@@ -42,7 +44,7 @@ New Consumed SOAP Web Service elements created in OutSystems 11 modules follow t
 <td></td>
 <td>Useful for documentation purpose.<br/>The maximum size of this property is 2000 characters.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

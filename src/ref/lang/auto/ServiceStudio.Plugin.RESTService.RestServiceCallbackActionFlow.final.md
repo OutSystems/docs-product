@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowDescriptor
 helpids: -1
+locale: en-us
+guid: 253e4815-ffcb-4be1-b218-d45d50d3fcea
 ---
 
 # REST API Callback

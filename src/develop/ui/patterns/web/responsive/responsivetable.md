@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Responsive Table displays information in a logical and organized way that is easy to scan and read.
+locale: en-us
+guid: 4d49cb72-9e20-4d2c-9bc4-d2db032317aa
 ---
 
 # Responsive Table
@@ -55,4 +57,4 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property |  Description |
 |---|---|
-| ResponsiveBehavior (ResponsiveTableRecords Identifier): Mandatory | Define how the table behaves when the user interacts with it. The predefined values are:<p><ul><li>ExpandableRows</li><li>ScrollableRows (default)</li></ul></p> <p>Examples <ul><li>_Entities.RepsonsiveTableRecords.ScrollableRows_ - The table header stays fixed and the user can scroll through the rows in the table. </li><li>_Entities.RepsonsiveTableRecords.ExpandableRows_ - The table header stays fixed and the user can expand each row to view any extra information. </li></ul></p> |
+| ResponsiveBehavior (ResponsiveTableRecords Identifier): Mandatory |Define how the table behaves when the user interacts with it. The predefined values are:<p><ul><li>ExpandableRows</li><li>ScrollableRows (default)</li></ul></p> <p>Examples <ul><li>Entities.RepsonsiveTableRecords.ScrollableRows - The table header stays fixed and the user can scroll through the rows in the table. </li><li>Entities.RepsonsiveTableRecords.ExpandableRows - The table header stays fixed and the user can expand each row to view any extra information. </li></ul></p> |

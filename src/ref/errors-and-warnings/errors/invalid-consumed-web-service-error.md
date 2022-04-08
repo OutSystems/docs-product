@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 36e85bdb-7275-41cf-85eb-6a25b9b89e97
+---
+
 # Invalid Consumed Web Service Error
 
 The `Invalid Consumed Web Service` error is issued in the following situation:

@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.UploadDescriptor
 helpids: 30045
 summary: Reference information on the Upload widget for allowing the users to browse and select a local file to upload into the application.
 tags: outsystems-designing-screens; reference; designing-screens; upload-widget
+locale: en-us
+guid: 2abe40f3-97c8-4405-b758-3baa7e638b72
 ---
 
 # Upload
@@ -75,7 +77,7 @@ Notes:
 <td>"upload"</td>
 <td>When Accept has the value Image, an additional class 'upload-image-withoverlay' is added to this property.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

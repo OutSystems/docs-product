@@ -3,6 +3,8 @@ summary: Reference information on the Button group widget available for adding a
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; button-group; button-selection
 kinds: ServiceStudio.Plugin.NRWidgets.ButtonGroupItemDescriptor
 helpids: 30075
+locale: en-us
+guid: a8b45f04-a2a6-459a-817a-308e933b9d71
 ---
 
 # Button Group Item
@@ -62,7 +64,7 @@ When you drag the Button Group widget into the Main Content area of your applica
 <td>"button-group-item"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

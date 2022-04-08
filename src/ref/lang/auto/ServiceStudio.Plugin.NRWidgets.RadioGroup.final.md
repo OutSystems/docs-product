@@ -3,6 +3,8 @@ summary: Reference information on the Radio Group widget for adding groups of tw
 tags: outsystems-designing-screens; reference; designing-screens; radio-group-widget
 kinds: ServiceStudio.Plugin.NRWidgets.RadioGroupDescriptor
 helpids: 30215
+locale: en-us
+guid: 2f9bd54c-d963-4b3a-8bab-5f6d47dcd0b2
 ---
 
 # Radio Group
@@ -66,7 +68,7 @@ Check the related topic at the bottom of the page for more guidance.
 <td>"radio-group"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

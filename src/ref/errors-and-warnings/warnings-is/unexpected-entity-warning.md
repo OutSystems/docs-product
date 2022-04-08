@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 8af78fca-1b14-4d21-a4c6-560929c22322
+---
+
 # Unexpected Entity Warning
 
 Message

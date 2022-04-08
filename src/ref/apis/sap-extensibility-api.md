@@ -1,6 +1,8 @@
 ---
 summary: The OutSystems SAP Extensibility API enables you to customize your connection and calls to SAP remote functions through an extension.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 3a9b8612-fe81-4c45-94be-804398a3c28a
 ---
 
 # SAP Extensibility API
@@ -58,9 +60,9 @@ To handle the connection configurations, create an extension module, and use its
 
 Method  |  Description  
 ---|---  
-static %%SAPConnection GetCurrent()  |  Returns the object with the configurations used to establish the connection to call an SAP remote function, when invoked inside the 'OnBeforeConnection' callback action of the SAP connection. Otherwise, returns null.  
+static <br/>SAPConnection GetCurrent()  |  Returns the object with the configurations used to establish the connection to call an SAP remote function, when invoked inside the 'OnBeforeConnection' callback action of the SAP connection. Otherwise, returns null.  
 SAP.Middleware.Connector.RfcConfigParameters GetRfcConfigParameters()  | Returns the SAP connector SAP.Middleware.Connector.RfcConfigParameters object, with the configurations used in the connection established to call an SAP remote function.  
-void %%SetRfcConfigParameters(SAP.Middleware.Connector.RfcConfigParameters rfcConfigParameters)  |  Sets the SAP connector object SAP.Middleware.Connector.RfcConfigParameters object, with configurations used in the connection established to call an SAP remote function.  
+void <br/>SetRfcConfigParameters(SAP.Middleware.Connector.RfcConfigParameters rfcConfigParameters)  |  Sets the SAP connector object SAP.Middleware.Connector.RfcConfigParameters object, with configurations used in the connection established to call an SAP remote function.  
   
 #### Example
 
@@ -158,7 +160,7 @@ To handle the remote function parameters, create an extension module, and use it
 
 Method  |  Description  
 ---|---  
-static %%SAPRequest GetCurrent()  |  Returns the object with information about the current SAP remote function call, when invoked inside the 'OnBeforeCall', or 'OnAfterCall' callback actions of the SAP connection. Otherwise, returns null.  
+static <br/>SAPRequest GetCurrent()  |  Returns the object with information about the current SAP remote function call, when invoked inside the 'OnBeforeCall', or 'OnAfterCall' callback actions of the SAP connection. Otherwise, returns null.  
 SAP.Middleware.Connector.IRfcFunction GetIRfcFunction()  |  Returns the SAP connector SAP.Middleware.Connector.IRfcFunction object, with the metadata and the parameters value for the current SAPRequest.  
   
 #### Example

@@ -1,6 +1,8 @@
 ---
 summary: Generate a mobile app package for your mobile app to publish in the Google Play Store. 
-tags: runtime-mobile; support-mobile; publish-application; google-play-store; android-app
+tags: runtime-mobile; support-mobile
+locale: en-us
+guid: 49613761-0f66-4d87-b41a-bf600081e654
 ---
 
 # Publish Your Mobile Android Application to the Google Play Store

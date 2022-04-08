@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Timer+Kind
 helpids: 13001
+locale: en-us
+guid: 92beb602-6c17-4991-a42d-c9860a32326f
 ---
 
 # Timer
@@ -354,7 +356,7 @@ In Service Center, you may look into how Timers execution has been going. For th
 <td></td>
 <td>The value of this property can only be specified using the Timer Schedule Editor. Open it by double-clicking on the property name or by clicking on "...".</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

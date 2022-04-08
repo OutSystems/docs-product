@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced Use Cases for the Sidebar UI Pattern.
+locale: en-us
+guid: 084bb303-c011-405d-adec-710e9227c8ae
 ---
 
 # Sidebar Reference

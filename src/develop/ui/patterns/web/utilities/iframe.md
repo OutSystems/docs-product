@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Iframe displays information from other apps on the screen in small previews.
+locale: en-us
+guid: e334605f-9e05-484e-b50e-5450497c2412
 ---
 
 # Iframe
@@ -49,7 +51,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| SourceURL (Text): Mandatory | The target URL that loads on the Iframe.<p>Examples<ul><li>_"https://www.wikipedia.com"_ - Displays the Wikipedia website in your app as a bite-size preview</li></ul></p> | 
-| Title (Text): Optional | Iframe title.<p>Examples<ul><li>_"Wikipedia Website"_ - Displays _Wikipedia Website_ as the Iframe title</li></ul></p>|
-| Height (Text): Optional  | Iframe height (default is 100%). <p>Examples<ul><li>_"100%"_ - The iframe height is 100% </li><li>_200_ - The iframe is 200 pixels high </li></ul></p>|
-| Width (Text): Optional | Iframe width (default is 100%). <p>Examples<ul><li> _"100%"_ - The iframe width is 100%</li><li>_200_ - The iframe is 200 pixels wide </li></ul></p>|
+| SourceURL (Text): Mandatory | The target URL that loads on the Iframe.<p>Examples<ul><li>"https://www.wikipedia.com" - Displays the Wikipedia website in your app as a bite-size preview</li></ul></p> | 
+| Title (Text): Optional | Iframe title.<p>Examples<ul><li>"Wikipedia Website" - Displays **Wikipedia Website** as the Iframe title</li></ul></p>|
+| Height (Text): Optional  | Iframe height (default is 100%). <p>Examples<ul><li>"100%" - The iframe height is 100% </li><li>200 - The iframe is 200 pixels high </li></ul></p>|
+| Width (Text): Optional | Iframe width (default is 100%). <p>Examples<ul><li> "100%" - The iframe width is 100%</li><li>200 - The iframe is 200 pixels wide </li></ul></p>|

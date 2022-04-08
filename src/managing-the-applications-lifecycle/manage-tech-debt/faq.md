@@ -1,7 +1,8 @@
 ---
-tags: Architecture Dashboard; FAQ; manual
+tags:
 summary: 
-en_title: Architecture Dashboard FAQs
+locale: en-us
+guid: d7db51a1-9917-4baa-a36e-716dc0c75d96
 ---
 
 

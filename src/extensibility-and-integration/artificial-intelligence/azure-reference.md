@@ -1,6 +1,8 @@
 ---
 summary: A list of Azure resources that the OutSystems AI components and connectors use. 
 tags:
+locale: en-us
+guid: bff3062c-8092-4b41-abf7-b315d1035d39
 ---
 
 # The Azure resources reference

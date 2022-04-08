@@ -1,6 +1,8 @@
 ---
 summary: Check how to debug functionality exposed by a producer Module being consumed in a different module.
 tags:
+locale: en-us
+guid: 8876a767-5845-47e4-9c93-bdec76114e0e
 ---
 
 # Debugging Producer Modules
@@ -31,9 +33,13 @@ Your consumer Module must fulfill the following conditions:
 To debug the functionality being exposed in a public Action by the producer Module, follow these steps:
 
 1. Open the **producer Module** and set the entry Module for debugging to be the consumer Module. You can set the entry Module in the Debugger pane or in the Debugger menu, by choosing the "Select Entry Module..." option.
+    
+    <div class="info" markdown="1">
 
-    *Note:* If the desired consumer is not in the list, check the [pre-requisites](<#pre-requisites>) listed above.
-
+    If the desired consumer is not in the list, check the [pre-requisites](<#pre-requisites>) listed above.
+    
+    </div>
+    
 1. Place breakpoints where you want the execution to stop. The execution will only stop on breakpoints of the producer Module.
 
 1. Start the debugger in the producer Module. If the producer Module is part of a mobile app, the **consumer Module** will automatically be opened; if it's part of an application, you can open the **consumer Module** in a browser.
@@ -51,3 +57,9 @@ Unlike public Server Actions, Service Actions run in the context of the producer
 1. Place breakpoints where you want the execution to stop. The execution will only stop on breakpoints of the producer Module.
 
 1. Start the debugger on the producer Module.
+
+    <div class="info" markdown="1">
+    
+    Stepping into a Service Action from a consumer module isn't supported.
+
+    </div>

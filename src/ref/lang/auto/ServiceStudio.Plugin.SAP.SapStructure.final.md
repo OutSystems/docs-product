@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SAP.SapStructureDescriptor
 helpids: 30072
+locale: en-us
+guid: 895732c3-42f6-4e78-87f8-efef7a1de2ef
 ---
 
 # Structure (SAP Remote Function)
@@ -41,7 +43,7 @@ Structure used in input and output arguments of SAP remote functions.
 <td>No</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

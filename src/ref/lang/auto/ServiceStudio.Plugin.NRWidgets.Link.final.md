@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.LinkDescriptor
 helpids: 30041
 summary: Reference information on the Link widget for allowing users to have clickable links on a screen.
 tags: outsystems-designing-screens; reference; designing-screens; link-widget
+locale: en-us
+guid: 21c2bb40-056c-4805-a231-63e5c40492f8
 ---
 
 # Link
@@ -58,7 +60,7 @@ Displays a hyperlink that users can click or tap to trigger an action, submit da
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

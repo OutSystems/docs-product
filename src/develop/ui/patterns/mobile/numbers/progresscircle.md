@@ -1,13 +1,15 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Displays the current progress of a task using circular or semi-circular progress indicators.
+locale: en-us
+guid: 1f0827a1-891f-4fe7-a37e-34a66224f7dc
 ---
 
 # Progress Circle
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.1, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+If you are using an OutSystems UI version lower than 2.8.1, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
                             
 </div>
 
@@ -85,4 +87,4 @@ After following these steps and publishing the module, you can test the pattern 
 |Thickness (Integer): Optional | The thickness of the circle that marks the progress. |
 |OptionalConfigs.Shape (Shape Identifier): Optional  | Set the progress circle shape.|
 |OptionalConfigs.AnimateInitialProgress (Boolean): Optional  | If True, the progress from zero to the progress value is animated. This is the default.|
-|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>``"myclass"`` - Adds the ``myclass`` style to the UI styles being applied.</li><li>``"myclass1 myclass2"`` - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

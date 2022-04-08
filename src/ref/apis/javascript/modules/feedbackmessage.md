@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb
 summary: Displays personalized feedback messages to the user.
+locale: en-us
+guid: 97a72928-f041-46ef-b4c9-2574f67d986e
 ---
 
 # FeedbackMessage
@@ -9,27 +11,10 @@ Displays personalized feedback messages to the user.
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Functions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[closeFeedbackMessage](feedbackmessage.md#closefeedbackmessage)</td>
-<td>
-Closes the FeedbackMessage that is currently open.
-</td>
-</tr>
-<tr>
-<td>[showFeedbackMessage](feedbackmessage.md#showfeedbackmessage)</td>
-<td>
-Shows a FeedbackMessage with a specified message. You can enable HTML encoding, add CSS classes, and set the behavior on click.
-</td>
-</tr>
-</tbody>
-</table>
+|Function|Description|
+|---|---|
+|[closeFeedbackMessage](feedbackmessage.md#closefeedbackmessage)|Closes the FeedbackMessage that is currently open.|
+|[showFeedbackMessage](feedbackmessage.md#showfeedbackmessage)|Shows a FeedbackMessage with a specified message. You can enable HTML encoding, add CSS classes, and set the behavior on click.|
 
 ## Functions
 

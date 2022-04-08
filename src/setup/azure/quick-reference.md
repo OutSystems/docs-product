@@ -1,6 +1,8 @@
 ---
 tags: support-Installation_Configuration; support-installation;
 summary: More information about Azure Resources such as VMs, SQL databases, storage, virtual machine scale sets.
+locale: en-us
+guid: 88d66b58-baee-4c61-9d03-b21e5b4aeac9
 ---
 
 # Quick Reference for OutSystems on Microsoft Azure
@@ -82,7 +84,7 @@ The table below shows examples of some of the Azure resources deployed for each 
 |:------------------:|:-----------------:|:-----------------:|:-----:|
 |Non-production Platform Server|Virtual machine|`<sol_id>-<environment>-vm`|myid-dev-vm|
 |Production Platform Server|Virtual machine|`<sol_id>-prod-vm`|myid-prod-vm|
-|Production front-end server%%(Farm only)|Azure scale set|`<sol_id>-prod-vmss`|myid-prod-vmss|
+|Production front-end server<br/>(Farm only)|Azure scale set|`<sol_id>-prod-vmss`|myid-prod-vmss|
 |Database server|Azure SQL server|`<sol_id>-<environment>-srv<unique_suffix>` (*)|myid-dev-srvbqxs|
 |Platform/Application database|Azure SQL database|`<sol_id>-<environment>-db`|myid-dev-db|
 |Session database|Azure SQL database|`<sol_id>-<environment>session-db`|myid-devsession-db|

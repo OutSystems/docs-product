@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+InlineExpression+Kind, ServiceStudio.Model.WebWidgets+ReferenceInlineExpression+Kind
 helpids: 4020
 tags: runtime-traditionalweb
+locale: en-us
+guid: bc4b0b1b-57cb-49ab-b9de-3d90a5f418c2
 ---
 
 # Expression Widget
@@ -63,7 +65,7 @@ For more information see the [expression widget](../../lang/auto/ServiceStudio.P
 <td>Yes</td>
 <td>Escaping an expression means that all accented and other special characters are replaced by a sequence that does not interfere with the protocols being used. In mobile apps expressions are escaped by default.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

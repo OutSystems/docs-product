@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Animate adds default animations to emphasize elements as they appear on the screen.
+locale: en-us
+guid: 297aaf40-3584-4ed5-b1d4-7bfbbe3bbfaa
 ---
 
 # Animate
@@ -53,8 +55,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property |  Description |
 |---|---|
-| EnterAnimation (EnterAnimation Identifier): Optional | Set how the animation enters the screen. <p><ul><li>EnterBottom</li> <li>EnterFade (default)</li><li>EnterLeft</li><li>EnterRight</li><li>EnterScale</li><li>EnterTop</li></ul></p> <p>Examples <ul><li>_Entities.EnterAnimation.EnterLeft_ - Enters from the left of the screen</li><li>_Entities.EnterAnimation.EnterTop_ - Enters from the top of the screen</li></ul></p> | 
-| LeaveAnimation (LeaveAnimation Identifier): Optional | Set how the animation leaves the screen. The predefined options available are:<p><ul><li>LeaveBottom</li> <li>LeaveFade (default)</li><li>LeaveLeft</li><li>LeaveRight</li><li>LeaveScale</li><li>LeaveTop</li></ul></p> <p>Examples <ul><li>_Entities.LeaveAnimation.LeaveBottom_ - Leaves from the bottom of the screen</li><li>_Entities.LeaveAnimation.LeaveRight_ - Leaves from the right of the screen</li></ul></p> |
+| EnterAnimation (EnterAnimation Identifier): Optional | Set how the animation enters the screen. <p><ul><li>EnterBottom</li> <li>EnterFade (default)</li><li>EnterLeft</li><li>EnterRight</li><li>EnterScale</li><li>EnterTop</li></ul></p> <p>Examples <ul><li>Entities.EnterAnimation.EnterLeft - Enters from the left of the screen</li><li>Entities.EnterAnimation.EnterTop - Enters from the top of the screen</li></ul></p> | 
+| LeaveAnimation (LeaveAnimation Identifier): Optional | Set how the animation leaves the screen. The predefined options available are:<p><ul><li>LeaveBottom</li> <li>LeaveFade (default)</li><li>LeaveLeft</li><li>LeaveRight</li><li>LeaveScale</li><li>LeaveTop</li></ul></p> <p>Examples <ul><li>Entities.LeaveAnimation.LeaveBottom - Leaves from the bottom of the screen</li><li>Entities.LeaveAnimation.LeaveRight - Leaves from the right of the screen</li></ul></p> |
 | Speed (Speed Identifier): Optional | Animation duration. Fast, normal, and slow are the predefined speeds available for the animation.| 
 | Delay (Integer): Optional | Time to wait before animation starts (in milliseconds). The default value is 0. | 
-| ExtendedClass (Text): Optional  |   Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the myclass style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|

@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.Nodes+ErrorHandler+Kind
 helpids: 0
 summary: Use the Exception Handler element to catch an exception and to start a logic flow for handling that exception.
+locale: en-us
+guid: 9d318909-8caa-4f44-85fd-ef3ada5d566c
 ---
 
 # Exception Handler

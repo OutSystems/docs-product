@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Allows users to rate a particular item or service.
+locale: en-us
+guid: f0a35dfd-ff8e-4e04-8a4b-2407efaca4f6
 ---
 
 # Rating
@@ -51,4 +53,4 @@ After following these steps and publishing the module, you can test the pattern 
 |RatingScale (Integer): Optional | The number of items to display. The default is 5 which means the rating is from 0 to 5. If set to 1, the item behaves as a view only element and the **IsEdit** property is automatically set to False. The maximum value is 100. If the value introduced is bigger, only 100 items are displayed.|
 |IsEdit (Boolean): Optional | If True, the user can interact with the pattern. Default value is False. |
 |Size (Size Identifier): Optional | The size of the rating pattern. There are 3 sizes available; small, medium, and base. Default size is Base.  |
-|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>``"myclass"`` - Adds the ``myclass`` style to the UI styles being applied.</li><li>``"myclass1 myclass2"`` - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

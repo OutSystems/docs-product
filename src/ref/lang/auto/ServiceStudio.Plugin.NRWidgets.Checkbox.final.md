@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.CheckboxDescriptor
 helpids: 30038
 summary: Reference information on the Checkbox widget for allowing the user to check or uncheck an option on a screen.
 tags: outsystems-designing-screens; reference; designing-screens; check-box
+locale: en-us
+guid: 4d0eddfa-fe0b-4811-8493-51c59d434c3e
 ---
 
 # Checkbox
@@ -51,7 +53,7 @@ Check box field where the user can enable or disable an option. The value must b
 <td>"checkbox"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

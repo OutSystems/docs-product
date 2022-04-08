@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Flows+Process+Kind, ServiceStudio.Model.ReferenceProcess+Kind
 helpids: 17016
+locale: en-us
+guid: 27d0d6c8-85f1-45aa-adf1-a6333b01c3b9
 ---
 
 # Process
@@ -67,7 +69,7 @@ Process activities that can be exposed are:
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">End-User Information</th>
 </tr>
 <tr>
@@ -85,7 +87,7 @@ Process activities that can be exposed are:
 <td>This property should be defined when the Launch On property is not defined or, if defined, when the Entity referred in it does not have any Text attribute. These properties are used to calculate a default value for the Detail property of Human Activities that don't have that property specified.<br/>
         You can use expressions to build dynamic descriptions, giving more contextual information to the end user.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

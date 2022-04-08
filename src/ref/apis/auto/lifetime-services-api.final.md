@@ -1,6 +1,8 @@
 ---
 summary: A set of SOAP Web Services that allow you to manage the infrastructure made available by OutSystems.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 49b8897e-c856-4b34-b330-7e8337885450
 ---
 
 # LifeTime Services API
@@ -12,12 +14,12 @@ This API, composed of a set of SOAP Web Services, provides functionality to mana
 
 Web Service | Description
 ---|---
-[RoleManagementService](<#RoleManagementService>) | The Platform API to manage IT roles: roles created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.%%To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+[RoleManagementService](<#RoleManagementService>) | The Platform API to manage IT roles: roles created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
 [AuthenticationService](<#AuthenticationService>) | The Platform API to acquire an authentication token to be used when invoking other OutSystems APIs. After 5 minutes, the token expires.
-[TeamManagementService](<#TeamManagementService>) | The Platform API to manage teams in the platform.%%To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
-[SecurityManagementService](<#SecurityManagementService>) | The Platform API for getting security information about users and addresses who login to the platform.%%To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+[TeamManagementService](<#TeamManagementService>) | The Platform API to manage teams in the platform.<br/>To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+[SecurityManagementService](<#SecurityManagementService>) | The Platform API for getting security information about users and addresses who login to the platform.<br/>To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
 [DbConnectionManagementService](<#DbConnectionManagementService>) | This API provides methods to create, change, and delete connections to external databases. It also allows managing users permissions.
-[UserManagementService](<#UserManagementService>) | The Platform API to manage IT users: users created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.%%To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+[UserManagementService](<#UserManagementService>) | The Platform API to manage IT users: users created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
 
 ## RoleManagementService
 
@@ -31,7 +33,7 @@ Action | Description
 ---|---
 [Role_ChangeName](<#Role_ChangeName>) | Updates the name of a platform role.
 [Role_CreateOrUpdate](<#Role_CreateOrUpdate>) | Creates a new platform role or updates a platform role that already exists.
-[Role_Delete](<#Role_Delete>) | Deletes a platform role that already exists. Since the platform requires IT users to have a single platform role, you need to specify a new platform role to grant to the users that are currently set with the role you want to delete.%%
+[Role_Delete](<#Role_Delete>) | Deletes a platform role that already exists. Since the platform requires IT users to have a single platform role, you need to specify a new platform role to grant to the users that are currently set with the role you want to delete.<br/>
 [Role_GetEnvironmentPermissionsLevels](<#Role_GetEnvironmentPermissionsLevels>) | Lists the permission levels that a platform user has over the environments.
 [Role_GetPermissions](<#Role_GetPermissions>) | Returns the list of permissions a platform role has in the environments registered in the platform.
 [Role_List](<#Role_List>) | Returns all platform roles with their information.

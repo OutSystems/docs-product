@@ -1,6 +1,8 @@
 ---
 summary: Reserved page name when working with SEO. 
 tags:
+locale: en-us
+guid: 44bfd373-e10e-44d6-be07-daaaa05e0c98
 ---
 
 # Reserved Page Name

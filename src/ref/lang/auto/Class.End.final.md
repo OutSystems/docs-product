@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+End+Kind, ServiceStudio.Model.Nodes+UpdateScreen+Kind
 helpids: 0
+locale: en-us
+guid: c5b81b52-09ee-4eb6-be4b-b1854f2be1a2
 ---
 
 # End

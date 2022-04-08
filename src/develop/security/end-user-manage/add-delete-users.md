@@ -1,6 +1,8 @@
 ---
 summary: Learn about adding, disabling and deleting end users in the Users application.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: 8b17c8d9-939a-486c-bec9-fe1309df7aed
 ---
 
 # Add and Delete End Users

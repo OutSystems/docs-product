@@ -1,5 +1,7 @@
 ---
 summary: Learn the OutSystems permissions model.
+locale: en-us
+guid: 5a167254-3be6-44df-93ef-0d801e27efbb
 ---
 
 # Understand the Permission Model for IT Users
@@ -86,16 +88,16 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Full Control</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
-<td>The user can manage the **environment settings**, such as the date format, and external database catalogs and connections. The user can also manage the front-end servers for this environment, zones, email and certificate settings, OutSystems licensing, and see auditing information of the changes made to the infrastructure.</td>
+<td>Assigned as <strong>Default Role</strong></td>
+<td>The user can manage the <strong>environment settings</strong>, such as the date format, and external database catalogs and connections. The user can also manage the front-end servers for this environment, zones, email and certificate settings, OutSystems licensing, and see auditing information of the changes made to the infrastructure.</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
-<td>The user is set with **Change and Deploy** permission for the **team’s applications**, which is the highest permission that applies to applications.</td>
+<td>Assigned for a <strong>Team</strong></td>
+<td>The user is set with <strong>Change and Deploy</strong> permission for the <strong>team’s applications</strong>, which is the highest permission that applies to applications.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
-<td>The user is set with **Change and Deploy** permission for the **application**, which is the highest permission that applies to applications.</td>
+<td>Assigned for an <strong>Application</strong></td>
+<td>The user is set with <strong>Change and Deploy</strong> permission for the <strong>application</strong>, which is the highest permission that applies to applications.</td>
 </tr>
 </table>
 
@@ -104,16 +106,16 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Change and Deploy Applications</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
-<td>The user can see all the **environment’s applications** in Service Studio, LifeTime and Service Center, as well as change and deploy them. The user can also change in LifeTime and Service Center the settings of all the **environment’s applications** (such as Site Properties).</td>
+<td>Assigned as <strong>Default Role</strong></td>
+<td>The user can see all the <strong>environment’s applications</strong> in Service Studio, LifeTime and Service Center, as well as change and deploy them. The user can also change in LifeTime and Service Center the settings of all the <strong>environment’s applications</strong> (such as Site Properties).</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
-<td>The user can see the **team’s applications** in Service Studio,  LifeTime and Service Center, as well as change and deploy them. The user can also change in LifeTime and Service Center the settings of the **team’s applications** (such as Site Properties).</td>
+<td>Assigned for a <strong>Team</strong></td>
+<td>The user can see the <strong>team’s applications</strong> in Service Studio,  LifeTime and Service Center, as well as change and deploy them. The user can also change in LifeTime and Service Center the settings of the <strong>team’s applications</strong> (such as Site Properties).</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
-<td>The user can see the **application** in Service Studio, LifeTime and Service Center, as well as change and deploy it. The user can also change in LifeTime and Service Center the settings of the **application** (such as Site Properties).</td>
+<td>Assigned for an <strong>Application</strong></td>
+<td>The user can see the <strong>application</strong> in Service Studio, LifeTime and Service Center, as well as change and deploy it. The user can also change in LifeTime and Service Center the settings of the <strong>application</strong> (such as Site Properties).</td>
 </tr>
 </table>
 
@@ -122,16 +124,16 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Open and Debug Applications</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
-<td>The user can open and debug all the **modules of the environment’s applications** in Service Studio.</td>
+<td>Assigned as <strong>Default Role</strong></td>
+<td>The user can open and debug all the <strong>modules of the environment’s applications</strong> in Service Studio.</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
-<td>The user can open and debug the **modules of the team’s applications** in Service Studio.</td>
+<td>Assigned for a <strong>Team</strong></td>
+<td>The user can open and debug the <strong>modules of the team’s applications</strong> in Service Studio.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
-<td>The user can open and debug the **modules of the application** in Service Studio.</td>
+<td>Assigned for an <strong>Application</strong></td>
+<td>The user can open and debug the <strong>modules of the application</strong> in Service Studio.</td>
 </tr>
 </table>
 
@@ -140,16 +142,16 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Monitor and Add Dependencies *</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
-<td>From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of all the **environment’s applications**. The user can also monitor all the **environment’s applications** and the **environment’s performance**.</td>
+<td>Assigned as <strong>Default Role</strong></td>
+<td>From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of all the <strong>environment’s applications</strong>. The user can also monitor all the <strong>environment’s applications</strong> and the <strong>environment’s performance</strong>.</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
-<td>From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of the **team’s applications**. The user can also monitor the **team’s applications**.</td>
+<td>Assigned for a <strong>Team</strong></td>
+<td>From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of the <strong>team’s applications</strong>. The user can also monitor the <strong>team’s applications</strong>.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
-<td>From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of this **application**. The user can also monitor the **application**.</td>
+<td>Assigned for an <strong>Application</strong></td>
+<td>From the applications for which the user has Change and Deploy permission, the user can add dependencies to the public elements of this <strong>application</strong>. The user can also monitor the <strong>application</strong>.</td>
 </tr>
 </table>
 
@@ -160,16 +162,16 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">List Applications</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
-<td>The user can see all the **environment’s applications** listed in LifeTime and Service Center, but not in Service Studio.</td>
+<td>Assigned as <strong>Default Role</strong></td>
+<td>The user can see all the <strong>environment’s applications</strong> listed in LifeTime and Service Center, but not in Service Studio.</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
-<td>The user can see the **team’s applications** listed in LifeTime and Service Center, but not in Service Studio.</td>
+<td>Assigned for a <strong>Team</strong></td>
+<td>The user can see the <strong>team’s applications</strong> listed in LifeTime and Service Center, but not in Service Studio.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
-<td>The user can see the **application** listed in LifeTime and Service Center, but not in Service Studio.</td>
+<td>Assigned for an <strong>Application</strong></td>
+<td>The user can see the <strong>application</strong> listed in LifeTime and Service Center, but not in Service Studio.</td>
 </tr>
 </table>
 
@@ -178,16 +180,16 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Access *</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
-<td>The user can log in the **environment** but can’t see any of the environment’s applications listed in LifeTime, Service Center or Service Studio.</td>
+<td>Assigned as <strong>Default Role</strong></td>
+<td>The user can log in the <strong>environment</strong> but can’t see any of the environment’s applications listed in LifeTime, Service Center or Service Studio.</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
-<td>Same behavior as **No Access** permission level for teams: The user can’t see the **team’s applications** listed in LifeTime, Service Center or Service Studio.</td>
+<td>Assigned for a <strong>Team</strong></td>
+<td>Same behavior as <strong>No Access</strong> permission level for teams: The user can’t see the <strong>team’s applications</strong> listed in LifeTime, Service Center or Service Studio.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
-<td>Same behavior as **No Access** permission level for applications: The user can’t see the **application** listed in LifeTime, Service Center or Service Studio.</td>
+<td>Assigned for an <strong>Application</strong></td>
+<td>Same behavior as <strong>No Access</strong> permission level for applications: The user can’t see the <strong>application</strong> listed in LifeTime, Service Center or Service Studio.</td>
 </tr>
 </table>
 
@@ -198,16 +200,16 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">No Access</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
-<td>The user can’t log in the **environment**. You can't grant application-specific permissions to users that have this permission level in the default role.</td>
+<td>Assigned as <strong>Default Role</strong></td>
+<td>The user can’t log in the <strong>environment</strong>. You can't grant application-specific permissions to users that have this permission level in the default role.</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
-<td>The user can’t see the **team’s applications** listed in LifeTime, Service Center or Service Studio, although the user can login in the environment.</td>
+<td>Assigned for a <strong>Team</strong></td>
+<td>The user can’t see the <strong>team’s applications</strong> listed in LifeTime, Service Center or Service Studio, although the user can login in the environment.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
-<td>The user can’t see the **application** listed in LifeTime, Service Center or Service Studio, although the user can login in the environment.</td>
+<td>Assigned for an <strong>Application</strong></td>
+<td>The user can’t see the <strong>application</strong> listed in LifeTime, Service Center or Service Studio, although the user can login in the environment.</td>
 </tr>
 </table>
 
@@ -218,15 +220,15 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Create Applications</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
-<td>The user can create new applications in the **environment** through Service Studio and Service Center (by uploading and publishing). The user can also create new applications in **any team** through LifeTime.</td>
+<td>Assigned as <strong>Default Role</strong></td>
+<td>The user can create new applications in the <strong>environment</strong> through Service Studio and Service Center (by uploading and publishing). The user can also create new applications in <strong>any team</strong> through LifeTime.</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
-<td>The user can create new applications in the **team** through LifeTime.</td>
+<td>Assigned for a <strong>Team</strong></td>
+<td>The user can create new applications in the <strong>team</strong> through LifeTime.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
+<td>Assigned for an <strong>Application</strong></td>
 <td>Not applicable.</td>
 </tr>
 </table>
@@ -236,15 +238,15 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Add System Dependencies</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
+<td>Assigned as <strong>Default Role</strong></td>
 <td>In the applications for which the user has Change and Deploy permission, the user can add new dependencies to the public elements of System module.</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
+<td>Assigned for a <strong>Team</strong></td>
 <td>Not applicable.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
+<td>Assigned for an <strong>Application</strong></td>
 <td>Not applicable.</td>
 </tr>
 </table>
@@ -256,15 +258,15 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Manage Users and Roles (applies only to OutSystems Cloud)</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
+<td>Assigned as <strong>Default Role</strong></td>
 <td>The user can add, edit and remove IT users, roles and teams. The user can also turn on/off features in Technical Preview. Setting this permission ON also sets ON the permission "Manage Teams and Application Roles"."</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
+<td>Assigned for a <strong>Team</strong></td>
 <td>Not applicable.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
+<td>Assigned for an <strong>Application</strong></td>
 <td>Not applicable.</td>
 </tr>
 </table>
@@ -274,15 +276,15 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Manage Infrastructure and Users (applies only to self-managed infrastructures)</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
+<td>Assigned as <strong>Default Role</strong></td>
 <td>The user can add, edit, remove and switch infrastructure environments, as well as turn on/off features in Technical Preview. The user can also add, edit and remove IT users, roles and teams. Setting this permission ON also sets ON the permission "Manage Teams and Application Roles".</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
+<td>Assigned for a <strong>Team</strong></td>
 <td>Not applicable.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
+<td>Assigned for an <strong>Application</strong></td>
 <td>Not applicable.</td>
 </tr>
 </table>
@@ -292,15 +294,15 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 <th style="text-align: left" colspan="2">Manage Teams and Application Roles</th>
 </tr>
 <tr>
-<td>Assigned as **Default Role**</td>
-<td>The user can add and remove IT users from all the **environment’s teams**, as well as grant and revoke roles to IT users for all the **environment’s applications** (the user's role must have higher permission levels for the environments than the role being granted). The user can also edit all the **environment’s teams** and access the audit logs.</td>
+<td>Assigned as <strong>Default Role</strong></td>
+<td>The user can add and remove IT users from all the <strong>environment’s teams</strong>, as well as grant and revoke roles to IT users for all the <strong>environment’s applications</strong> (the user's role must have higher permission levels for the environments than the role being granted). The user can also edit all the <strong>environment’s teams</strong> and access the audit logs.</td>
 </tr>
 <tr>
-<td>Assigned for a **Team**</td>
-<td>The user can add and remove IT users from the **team**, as well as grant and revoke roles to IT users for the **team’s applications** (the user's role must have higher permission levels for the environments than the role being granted). The user can also edit the **team** and access the team's audit logs.</td>
+<td>Assigned for a <strong>Team</strong></td>
+<td>The user can add and remove IT users from the <strong>team</strong>, as well as grant and revoke roles to IT users for the <strong>team’s applications</strong> (the user's role must have higher permission levels for the environments than the role being granted). The user can also edit the <strong>team</strong> and access the team's audit logs.</td>
 </tr>
 <tr>
-<td>Assigned for an **Application**</td>
-<td>The user can grant and revoke roles to IT users for the **application** (the user's role must have higher permission levels for the environments than the role being granted). The user can also access the application's audit logs.</td>
+<td>Assigned for an <strong>Application</strong></td>
+<td>The user can grant and revoke roles to IT users for the <strong>application</strong> (the user's role must have higher permission levels for the environments than the role being granted). The user can also access the application's audit logs.</td>
 </tr>
 </table>

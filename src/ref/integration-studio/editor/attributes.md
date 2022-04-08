@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: d569b25f-1cf5-4e32-a006-185fcac10089
+---
+
 # Attributes Editor
 
 The Attributes Editor allows you to edit the properties of the [structure attributes](<../element-property/structure-attribute.md>) and [entity attributes](<../element-property/entity-attribute.md>) that belongs to your extension.

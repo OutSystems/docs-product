@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.WebWidgets+EditRecordCell+Kind, ServiceStudio.Model.WebWidgets+ShowRecordCell+Kind, ServiceStudio.Model.WebWidgets+TableCell+Kind, ServiceStudio.Model.WebWidgets+TableRecordsDataCell+Kind, ServiceStudio.Model.WebWidgets+TableRecordsHeaderCell+Kind, ServiceStudio.Model.WebWidgets+ReferenceEditRecordCell+Kind, ServiceStudio.Model.WebWidgets+ReferenceShowRecordCell+Kind, ServiceStudio.Model.WebWidgets+ReferenceTableCell+Kind, ServiceStudio.Model.WebWidgets+ReferenceTableRecordsDataCell+Kind, ServiceStudio.Model.WebWidgets+ReferenceTableRecordsHeaderCell+Kind
 helpids: 0
+locale: en-us
+guid: c6a8d1ee-69f8-4864-b318-45e927008881
 ---
 
 # Cell Widget
@@ -69,7 +71,7 @@ Cell of a table.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

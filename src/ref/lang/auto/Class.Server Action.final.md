@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Flows+UserAction+Kind, ServiceStudio.Model.ReferenceAction+Kind
 helpids: 17059
+locale: en-us
+guid: a6524deb-a27a-43d3-b958-a22ec97f1f8c
 ---
 
 # Server Action
@@ -71,7 +73,7 @@ In case the execution of the Producer and Consumer modules are under different U
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

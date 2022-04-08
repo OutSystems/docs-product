@@ -1,6 +1,8 @@
 ---
 summary: Learn how to develop a template that you can you use as the starting point of your applications.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: 54d15c8a-e72c-4732-a54e-9f4e0be1fe0e
 ---
 
 # Create a Custom Application Template

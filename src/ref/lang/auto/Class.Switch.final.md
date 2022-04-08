@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+Switch+Kind
 helpids: 0
+locale: en-us
+guid: bbcf3fc3-e6c7-4d65-b941-2a77b0b885d6
 ---
 
 # Switch
@@ -29,7 +31,7 @@ Use the label numbers to arrange the evaluation order (right-click on a connecto
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Conditions</th>
 </tr>
 <tr>

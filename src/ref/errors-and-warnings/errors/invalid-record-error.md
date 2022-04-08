@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: a1d0e4e5-5910-479b-912f-4580537c97d4
+---
+
 # Invalid Record Error 
 
 The `Invalid Record` error is issued in the following situations:

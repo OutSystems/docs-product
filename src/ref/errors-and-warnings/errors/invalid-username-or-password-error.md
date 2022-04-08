@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 7b4eaa43-6615-4829-8e22-b7df71e4f887
+---
+
 # Invalid Username or Password Error
 
 The `Invalid (<property name>)` error is issued in the following situation:

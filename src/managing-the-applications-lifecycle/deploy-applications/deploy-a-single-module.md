@@ -1,6 +1,8 @@
 ---
 summary: Learn how to deploy a single application module, instead of all modules that make up an application.
 tags: runtime-traditionalweb
+locale: en-us
+guid: ee8de340-e9d3-4392-8c8e-a2f3d2c02340
 ---
 
 # Deploy a Single Module

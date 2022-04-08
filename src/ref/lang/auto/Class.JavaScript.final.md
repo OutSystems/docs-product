@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.NRNodes+JavascriptNode+Kind
 helpids: 30111
+locale: en-us
+guid: f4f5a9b7-d123-4438-a900-9ca289c4e339
 ---
 
 # JavaScript

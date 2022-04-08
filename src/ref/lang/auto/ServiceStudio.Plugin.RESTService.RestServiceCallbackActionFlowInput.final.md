@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowInputDescriptor
 helpids: 30062
+locale: en-us
+guid: ae9680b9-818f-483a-ab48-e368e6f97b8c
 ---
 
 # Input Parameter (REST Service API Callback)
@@ -48,7 +50,7 @@ Input parameter of an exposed REST API Callback action (OnRequest or OnResponse)
 <td>Yes</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

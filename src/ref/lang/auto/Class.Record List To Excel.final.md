@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+RecordListToExcel+Kind
 helpids: 10002
+locale: en-us
+guid: d1e3abef-bbf3-4455-87b2-3c19acc594bb
 ---
 
 # Record List To Excel
@@ -41,7 +43,7 @@ Converts a Record List to an Excel file. You can use the output file for downloa
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

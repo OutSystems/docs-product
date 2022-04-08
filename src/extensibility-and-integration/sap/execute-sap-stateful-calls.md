@@ -1,5 +1,7 @@
 ---
 tags: support-Integrations_Extensions
+locale: en-us
+guid: e45e96ca-8a1e-4bb1-b23f-e2306f0157be
 ---
 
 # Execute SAP Stateful Calls

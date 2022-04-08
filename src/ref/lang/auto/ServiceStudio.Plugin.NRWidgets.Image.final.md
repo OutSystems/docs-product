@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.ImageDescriptor
 helpids: 30043
 summary: Reference information on the Image widget for displaying an image on the screen from a defined source.
 tags: outsystems-designing-screens; reference; designing-screens; image-widget; adding-image
+locale: en-us
+guid: 5d499b46-63fa-4200-9a63-19c5bc007744
 ---
 
 # Image
@@ -78,7 +80,7 @@ The supported image formats are GIF, JPEG, and PNG. Please note that the images 
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

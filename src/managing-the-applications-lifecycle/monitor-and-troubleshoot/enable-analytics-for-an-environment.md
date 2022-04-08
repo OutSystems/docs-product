@@ -1,6 +1,8 @@
 ---
 summary: Learn how to turn on monitoring in an environment.
 tags: support-Integrations_Extensions; support-monitoring; support-monitoring-overview; runtime-traditionalweb
+locale: en-us
+guid: 7257acb7-f5f1-46a9-a047-ff5a439ae49c
 ---
 
 # Enable Analytics for an Environment

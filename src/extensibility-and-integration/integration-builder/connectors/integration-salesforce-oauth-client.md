@@ -1,5 +1,7 @@
 ---
 summary: Register Integration Builder app in Salesforce.
+locale: en-us
+guid: 32131311-38a7-41ec-84ca-8bfaf82ec229
 ---
 # How to integrate with Salesforce
 

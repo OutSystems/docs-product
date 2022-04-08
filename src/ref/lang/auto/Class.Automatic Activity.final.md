@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.ProcessNodes+Activity+Kind
 helpids: 0
+locale: en-us
+guid: 2d7ca3ba-dd47-4cbb-9400-2399d1b07d7a
 ---
 
 # Automatic Activity
@@ -68,7 +70,7 @@ When you're editing your automatic activity flow, all of the elements available 
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

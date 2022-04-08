@@ -1,48 +1,20 @@
+---
+locale: en-us
+guid: 83ba44be-1320-4def-9741-0cf7e7842b05
+---
+
 # Environment
 
-
-<table markdown="1">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#GetApplicationServerType">GetApplicationServerType</a>()</td>
-<td>Returns ".Net".</td>
-</tr>
-<tr>
-<td><a href="#GetCurrentLocale">GetCurrentLocale</a>()</td>
-<td>Returns the name of the current language locale of the user session. The name of the language locale is used for presentation purposes and follows the RFC 1766 standard format.</td>
-</tr>
-<tr>
-<td><a href="#GetDatabaseProvider">GetDatabaseProvider</a>()</td>
-<td>Returns the type of the Platform Database (SqlServer or Oracle) where the module is running.</td>
-</tr>
-<tr>
-<td><a href="#GetUserAgent">GetUserAgent</a>()</td>
-<td>Returns the user agent, as indicated by the header of the HTTP message.</td>
-</tr>
-<tr>
-<td><a href="#GetOwnerEspaceIdentifier">GetOwnerEspaceIdentifier</a>()</td>
-<td>Returns the identifier of the module that owns the element that is being processed.</td>
-</tr>
-<tr>
-<td><a href="#GetEntryEspaceName">GetEntryEspaceName</a>()</td>
-<td>Returns the name of the module that is processing the web request.</td>
-</tr>
-<tr>
-<td><a href="#GetEntryEspaceId">GetEntryEspaceId</a>()</td>
-<td>Returns the identifier of the module that is processing the web request.</td>
-</tr>
-<tr>
-<td><a href="#GetObsoleteTenantId">GetObsoleteTenantId</a>()</td>
-<td>Method to return a fake tenant identifier for single-tenant modules in order to mimic Site.TenantId semantic from the 6.0 version</td>
-</tr>
-</tbody>
-</table>
+|Name|Description|
+|--- |--- |
+|[GetApplicationServerType](#getapplicationservertype--getapplicationservertype)()|Returns ".Net".|
+|[GetCurrentLocale](#getcurrentlocale--getcurrentlocale)()|Returns the name of the current language locale of the user session. The name of the language locale is used for presentation purposes and follows the RFC 1766 standard format.|
+|[GetDatabaseProvider](#getdatabaseprovider--getdatabaseprovider)()|Returns the type of the Platform Database (SqlServer or Oracle) where the module is running.|
+|[GetUserAgent](#getuseragent--getuseragent)()|Returns the user agent, as indicated by the header of the HTTP message.|
+|[GetOwnerEspaceIdentifier](#getownerespaceidentifier--getownerespaceidentifier)()|Returns the identifier of the module that owns the element that is being processed.|
+|[GetEntryEspaceName](#getentryespacename--getentryespacename)()|Returns the name of the module that is processing the web request.|
+|[GetEntryEspaceId](#getentryespaceid--getentryespaceid)()|Returns the identifier of the module that is processing the web request.|
+|[GetObsoleteTenantId](#getobsoletetenantid--getobsoletetenantid)()|Method to return a fake tenant identifier for single-tenant modules in order to mimic Site.TenantId semantic from the 6.0 version|
 
 ## GetApplicationServerType { #GetApplicationServerType }
 

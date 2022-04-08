@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: a3688c1a-0d04-4d07-a22e-deb8a36862db
+---
+
 # Action Editor
 
 The Action Editor allows you to edit the [properties](<../element-property/action.md>) of an action that belongs to your extension.

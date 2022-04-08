@@ -1,5 +1,7 @@
 ---
 summary: Log tab showing specific settings for the 'Oracle' database provider.
+locale: en-us
+guid: 4730ef3b-0979-41fb-95dc-b177a430f9e7
 ---
 
 # Log Tab in Oracle
@@ -20,7 +22,7 @@ TNS Name | An address name defined in the `tnsnames.ora` configuration file.<br/
 
 For advanced settings, click the **Advanced Settings** link.
 
-<table markdown="1">
+<table>
 <thead>
 <tr>
 <th>Configuration</th>
@@ -31,7 +33,7 @@ For advanced settings, click the **Advanced Settings** link.
 <tbody>
 <tr>
 <td colspan="3">
-**Advanced Connection Settings**
+<strong>Advanced Connection Settings</strong>
 </td>
 </tr>
 <tr>
@@ -50,17 +52,17 @@ For advanced settings, click the **Advanced Settings** link.
 <td>Allows you to set the NLS_SORT parameter. Choose one of the following values:<br/>
 BINARY_AI – Collation-sensitive SQL operations use a binary sort that is accent-insensitive and case-insensitive.<br/>
 BINARY_CI – Collation-sensitive SQL operations use a binary sort that is case-insensitive, but accent-sensitive. Using this value can help prevent issues in languages where accents are relevant for SQL operations. For example, in Japanese "Seto" (セト) and "Zeto" (ゼト) would both be valid query results for the "セト" search when using the BINARY_AI linguistic sort.</td>
-<td>`BINARY_AI`</td>
+<td><code>BINARY_AI</code></td>
 </tr>
 <tr>
 <td>Log Service Port</td>
 <td>The port the log service listens to.<br/>Note: This setting is not available in fresh installs.</td>
-<td>`12003`</td>
+<td><code>12003</code></td>
 </tr>
 <tr>
 <td>Log Cycle Period</td>
 <td>Indicates for how long (in weeks) the log files are kept. After this time, the log tables are rotated and information is lost.</td>
-<td>`4`</td>
+<td><code>4</code></td>
 </tr>
 </tbody>
 </table>

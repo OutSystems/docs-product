@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.InputDescriptor
 helpids: 30034
 summary: Reference information on the Input widget for allowing users to input data on a screen.
 tags: outsystems-designing-screens; reference; designing-screens; input-widget; input-data
+locale: en-us
+guid: d3d73598-1309-489b-a15a-2b9d518a8226
 ---
 
 # Input
@@ -81,7 +83,7 @@ At runtime, the value typed by the user is validated against the variable data t
 <td>"form-control"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

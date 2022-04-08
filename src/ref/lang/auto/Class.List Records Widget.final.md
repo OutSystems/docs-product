@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+ListRecords+Kind, ServiceStudio.Model.WebWidgets+ReferenceListRecords+Kind
 helpids: 4023
 tags: runtime-traditionalweb
+locale: en-us
+guid: bd15fc86-95cb-4875-a4e6-dd2e4e0e0faf
 ---
 
 # List Records Widget
@@ -87,7 +89,7 @@ Here are some additional notes.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

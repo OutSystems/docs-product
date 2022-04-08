@@ -145,17 +145,8 @@ The default Users app login page is available at the following URL:
 
 `https://<your_server_name>/Users/Login.aspx`
 
-## Common SAML configuration errors
+### Common SAML configuration errors { #common-saml-errors }
 
 ### "Error processing response. Unable to decrypt the assertion."
 
-If you encounter this error during an attempt of authenticating using SAML, it may be a sign that the certificate configuration was not performed correctly. This error means that the Service Provider (SP) was not able to decrypt the assertion created by the Identity Provider (IdP), which causes the authentication process to fail.
-
-**How to fix this?**
-
-1. In the Users module, click on **Auto generate Keystore**
-2. Click on Download Keystore.
-3. Click on Download SP Metadata XML.
-4. Click on save in Users to ensure the new configuration is saved.
-5. Now import the exported SP Metadata XML on the IdP.
-
+* [Error processing SAML response - Unable to decrypt the assertion](https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Error_processing_SAML_response_-_Unable_to_decrypt_the_assertion)

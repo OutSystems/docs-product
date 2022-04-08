@@ -38,15 +38,15 @@ The following steps show how to enable your users to log in to your app using an
 
 ![Diagram of steps to enable social login in your app](images/social-login-diag.png)
 
-1. In Social Login Configurator, set up social login providers for your app.
+1. [In Social Login Configurator, set up social login providers for your app](#set-providers).
 
-1. In your app, create a button and logic to trigger social login flows.
+1. [In your app, create a button and logic to trigger social login flows](#login-flow).
 
-1. In your app, handle authentication response and login scope.
+1. [In your app, handle authentication response and login scope](#auth-response).
 
 1. Optionally, in your app, create logic to use the profile info (including name, email, and profile picture) returned by the provider to create a user or manage a session on the OutSystems Users.
 
-### Set up social login providers for your app
+### Set up social login providers for your app { #set-providers }
 
 Before being able to provide the option for social login in an app, you need to configure a new provider to be used in that app. For that, you can use our Social Login Configurator, a Reactive Web app that lets you set up a new provider to use on your app.
 
@@ -90,7 +90,7 @@ Relevant Information | Description
 Client ID | A public identifier your app on the provider side. It is a string type value available to any registered developer on LinkedIn Developer. You can access the Identifier value on the "Authentication" side navigation link, underneath the header "Authentication Keys".
 Client Secret | A confidential code known only to your app and the authorization server. It is a string type value available to any registered developer on LinkedIn Developer. You can access the Identifier value on the "Authentication" side navigation link, underneath the header "Authentication Keys".
 
-### Create a button and logic to trigger social login flows
+### Create a button and logic to trigger social login flows { #login-flow }
 
 The plugin triggers a social login flow through the **StartLogin** client action.
 
@@ -141,7 +141,7 @@ ReturnURI
 :   An URL type value, necessary for cases where the screen that uses the profile information is different from the screen where the action is being used. You can specify the ReturnURI directly on the StartLogin action.
 --->
 
-### Handle authentication response and login scope
+### Handle authentication response and login scope { #auth-response }
 
 For your app to handle failed login attempts and access the output information of a social login, also known as login scope, you need add an **Authenticate** block to the screen where the StartLogin action occurs. Then you need to create an action to handle the OnAuthenticationCompleted event.
 

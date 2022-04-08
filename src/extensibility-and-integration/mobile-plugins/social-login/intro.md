@@ -67,6 +67,8 @@ Check information on OAuth configuration of Apple login in [Getting Started - Si
 
 #### Google
 
+need to define for 3 app types
+
 Relevant Information | Description
 ---|---
 Client ID | A public identifier your app on the provider side. It is a string type value available to any registered developer on the Google Cloud Platform. You can access the ClientID value on the OAuth Consent tab on your app's Credentials screen.
@@ -75,6 +77,8 @@ Client Secret | A confidential code known only to your app and the authorization
 Check information on OAuth configuration of Google login in [Start Integrating Google Sign-In into Your Android App](https://developers.google.com/identity/sign-in/android/start-integrating).
 
 #### Facebook
+
+need to define for 3 app types
 
 Relevant Information | Description
 ---|---
@@ -100,7 +104,7 @@ To enable social logins in your app's login screen, do the following:
 
 1. For each button you added in the previous step, add an action to handle the **On Click** event. In the properties of each social login button, open the **Events** > **On Click** dropdown and select **New Client Action**.
 
-![Add an action to handle the On Click event of social login button](images/social-new-action-ss.png)
+    ![Add an action to handle the On Click event of social login button](images/social-new-action-ss.png)
 
 1. In the action flow of each action you created in the previous step, check if the plugin is working properly during runtime. After the **Start** node, add a **CheckSocialLoginPlugin** action.
 
@@ -131,7 +135,8 @@ To enable social logins in your app's login screen, do the following:
 
     The Redirect URI is a combination of your environment URL and the **AuthenticationRedirect** URL. Get the **AuthenticationRedirect** URl, by opening the Social Login Configurator app in Service Studio, and then in the **Logic** tab, go to **REST integration** > **SocialLoginAuth**. An example of a RedirectURI is:
 
-    `https://enmobile11-dev.outsystemsenterprise.com/UXTestsSocialLoginCore/rest/SocialLoginAuth/AuthenticateRedirectLinkedIn`
+    `https://<your-environment>/SocialLoginConfigurator/rest/SocialLoginAuth/AuthenticateRedirectLinkedIn`
+`
 
 
 <!---

@@ -36,13 +36,13 @@ The next step in the development of a mobile app is to use the profile info (inc
 
 The following steps show how to enable your users to log in to your app using an existing social media account:
 
-1. Set up social login providers for your app using Social Login Configurator.
+1. In Social Login Configurator, set up social login providers for your app.
 
-1. Create a button and logic to trigger social login flows.
+1. In your app, create a button and logic to trigger social login flows.
 
-1. Handle social login attempt response and login scope.
+1. In your app, handle authentication response and login scope.
 
-1. Optionally, create logic to use the profile info (including name, email, and profile picture) returned by the provider to create a user or manage a session on the OutSystems Users.
+1. Optionally, in your app, create logic to use the profile info (including name, email, and profile picture) returned by the provider to create a user or manage a session on the OutSystems Users.
 
 ### Set up social login providers for your app
 
@@ -98,6 +98,8 @@ To enable social logins in your app's login screen, do the following:
 
 1. For each button you added in the previous step, add an action to handle the **On Click** event. In the properties of each social login button, open the **Events** > **On Click** dropdown and select **New Client Action**.
 
+![Add an action to handle the On Click event of social login button](images/social-new-action-ss.png)
+
 1. In the action flow of each action you created in the previous step, check if the plugin is working properly during runtime. After the **Start** node, add a **CheckSocialLoginPlugin** action.
 
 1. Handle the response from CheckSocialLoginPlugin. After **CheckSocialLoginPlugin**, add an **If**.
@@ -111,6 +113,8 @@ To enable social logins in your app's login screen, do the following:
 1. In the **True** branch of the **If**, add a **StartLogin** action.
 
 1. Connect **StartLogin** to an **End**.
+
+    ![The finished social login flow](images/social-flow-ss.png)
 
 1. In the properties of **StartLogin** action, set the values for the  mandatory inputs:
 
@@ -135,7 +139,7 @@ ReturnURI
 :   An URL type value, necessary for cases where the screen that uses the profile information is different from the screen where the action is being used. You can specify the ReturnURI directly on the StartLogin action.
 --->
 
-### Handle social login attempt response and login scope
+### Handle authentication response and login scope
 
 For your app to handle failed login attempts and access the output information of a social login, also known as login scope, you need add an **Authenticate** block to the screen where the StartLogin action occurs. Then you need to create an action to handle the OnAuthenticationCompleted event.
 

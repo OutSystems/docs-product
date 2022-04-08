@@ -147,6 +147,4 @@ The default Users app login page is available at the following URL:
 
 ### Common SAML configuration errors { #common-saml-errors }
 
-### "Error processing response. Unable to decrypt the assertion."
-
 * [Error processing SAML response - Unable to decrypt the assertion](https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Error_processing_SAML_response_-_Unable_to_decrypt_the_assertion)

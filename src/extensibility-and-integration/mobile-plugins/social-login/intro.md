@@ -36,6 +36,8 @@ The next step in the development of a mobile app is to use the profile info (inc
 
 The following steps show how to enable your users to log in to your app using an existing social media account:
 
+![Diagram of steps to enable social login in your app](images/social-login-diag.png)
+
 1. In Social Login Configurator, set up social login providers for your app.
 
 1. In your app, create a button and logic to trigger social login flows.

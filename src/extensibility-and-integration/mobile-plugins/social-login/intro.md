@@ -129,9 +129,9 @@ To enable social logins in your app's login screen, do the following:
     RedirectURI
     :   A text type value that will send you the authorization result for any backend service you may be using. You can specify the RedirectURI on the settings of your Provider OAuth configuration.
 
-        The Redirect URI is a combination of your environment URL and the **AuthenticationRedirect** URL. Get the **AuthenticationRedirect** URl, by opening the Social Login Configurator app in Service Studio, and then in the **Logic** tab, go to **REST integration** > **SocialLoginAuth**. An example of a RedirectURI is:
+    The Redirect URI is a combination of your environment URL and the **AuthenticationRedirect** URL. Get the **AuthenticationRedirect** URl, by opening the Social Login Configurator app in Service Studio, and then in the **Logic** tab, go to **REST integration** > **SocialLoginAuth**. An example of a RedirectURI is:
 
-        `https://enmobile11-dev.outsystemsenterprise.com/UXTestsSocialLoginCore/rest/SocialLoginAuth/AuthenticateRedirectLinkedIn`
+    `https://enmobile11-dev.outsystemsenterprise.com/UXTestsSocialLoginCore/rest/SocialLoginAuth/AuthenticateRedirectLinkedIn`
 
 
 <!---

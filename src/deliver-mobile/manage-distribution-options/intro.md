@@ -13,8 +13,6 @@ With **mobile apps updates distribution settings**, you can choose how apps upda
 
 **Hybrid updates** are lightweight updates where the app itself downloads only the new app parts, without downloading and updating the native mobile shell. These updates are efficient when you slightly change the UI or logic, and when the app works with the already installed native shell. When the changes require an update of the entire app, you can still publish the app via the app store.
 
-<div class="info" markdown="1">
-
 ## Prerequisites
 
 These are the prerequisites to manage how mobile apps update on user devices.
@@ -39,7 +37,6 @@ You can deactivate this technical preview only after you meet both of these cond
 
 These steps ensure that the deployment in LifeTime works correctly and that the apps continue working for your users.
 
-</div>
 
 ## How LifeTime manages the configuration of mobile apps updates { #about }
 

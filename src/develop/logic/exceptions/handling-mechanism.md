@@ -25,6 +25,12 @@ As an example, consider an Action B raising a User Exception named MyUserExcepti
 
 You should have, at least, one Exception Handler in your application flow to inform and allow the end user to continue to navigate.
 
+<div class="info" markdown="1">
+
+**OnApplicationReady** is a special event handler that is not covered by the Global Exception Handler. For that reason, error handling should be implemented in the action itself.
+
+</div>
+
 ## Handling exceptions raised by integrations
 
 When you are handling exceptions raised by an integration you are consuming (such as an action of an Extension or a method of a REST API) you won't be able to determine the type of exception. In these situations, you should handle the exception with an All Exceptions Handler. Then, you can use the **ExceptionMessage** property of the Exception Handler element to identify the exception.

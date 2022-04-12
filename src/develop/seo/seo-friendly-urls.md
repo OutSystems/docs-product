@@ -196,7 +196,7 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 
     ![ ](images/seo-friendly-urls_13.png)
 
-    * If the 'Root Application' Virtual Path is listed here, double-click it and change the 'Application pool' for the site’s default application to 'OutSystemsApplications';
+    * If the 'Root Application' Virtual Path is listed under **DefaultAppPool**, double-click it and change the 'Application pool' for 'Root Application' to **OutSystemsApplications**.
 
 8. Test accessing a URL in your browser, for example: [http://localhost/ServiceCenter](http://localhost/ServiceCenter). If it's not working, reset your IIS by doing the following:
 

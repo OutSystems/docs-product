@@ -52,7 +52,7 @@ Notes:
 <tr>
 <td title="FileName">File Name</td>
 <td>Holds the name of the file.</td>
-<td></td>
+<td>Yes</td>
 <td></td>
 <td></td>
 </tr>

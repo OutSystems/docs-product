@@ -607,6 +607,7 @@
         - href: extensibility-and-integration/mobile-plugins/file-viewer-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/firebase/intro.md
         - href: extensibility-and-integration/mobile-plugins/health-fitness/intro.md
+        - href: extensibility-and-integration/mobile-plugins/social-login/intro.md
         - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md
         - href: extensibility-and-integration/mobile-plugins/using-cordova-plugins.md
     - href: extensibility-and-integration/javascript/intro.md

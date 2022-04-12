@@ -1,9 +1,17 @@
 ---
 tags: runtime-mobileandreactiveweb;  
-summary: Displays content (such as cards) in a specific set of columns, configurable per device type and orientation. 
+summary: Displays content in a specific set of columns, configurable per device type and orientation. 
+locale: en-us
+guid: 18e4696c-aeb1-4c7f-bb06-40590738797a
 ---
 
 # Gallery
+
+<div class="info" markdown="1">
+
+If you are using an OutSystems UI version lower than 2.8.1, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+                            
+</div>
 
 You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end.
 
@@ -13,69 +21,68 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     The Gallery widget is displayed.
 
-    ![](<images/gallerymob-8-ss.png>)
+    ![Gallery widget](<images/gallery-widget-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Gallery widget into the Main Content area of your application's screen.
 
-    ![](<images/gallerymob-9-ss.png>)
+    ![Drag widget to screen](<images/gallery-dragwidget-ss.png>)
 
 1. Add the required content to the Gallery widget.
 
     By default, the Gallery widget expects a list.
 
-    ![](<images/gallerymob-13-ss.png>)
+    ![Gallery widget placeholders](<images/gallery-list-ss.png>)
 
     To use the Gallery UI Pattern with items from a database, drag a [List](<../../../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md>) into the Gallery widget and create your custom content.
 
     In this example, we delete the list and add local images to the Gallery widget.
 
-    ![](<images/gallerymob-10-ss.png>)
+    ![Add images to Gallery](<images/gallery-image-ss.png>)
 
-1. On the Element tree, select the Image widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Gallery.
+1. On the Element tree, select the **Image** widget, and on the **Properties** tab, from the **Image** drop-down, select or import the image you want in the Gallery.
 
-    Note: In this example, the image property Type is set to **Local** image. You can also add External and Binary Data images.
+    **Note:** In this example, the image property **Type** is set to **Local** image. You can also add External and Binary Data images.
 
-    ![](<images/gallerymob-11-ss.png>)
+    ![Import local images](<images/gallery-localimage-ss.png>)
   
-1. On the **Properties** tab, set the relevant (optional) properties, for example, the number of items you want to display on each device (see below for examples) and the space between each item (GutterSize).
+1. You can configure the Gallery's look and feel by selecting the pattern, and on the **Properties** tab, set the relevant (optional) properties, for example, the number of items you want to display on each device (see below for examples).
 
-    ![](<images/gallerymob-12-ss.png>)
+    ![Set optional properties](<images/gallery-properties-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
 **4 items per row**
 
-![](<images/gallerymob-14-ss.png>)
+![4 items per row](<images/gallerymob-14-ss.png>)
 
 **3 items per row**
     
-![](<images/gallerymob-15-ss.png>)
+![3 item per row](<images/gallerymob-15-ss.png>)
 
 **2 items per row**
 
-![](<images/gallerymob-16-ss.png>)
+![2 items per row](<images/gallerymob-16-ss.png>)
 
 **1 item per row**
 
-![](<images/gallerymob-17-ss.png>)
+![1 item per row](<images/gallerymob-17-ss.png>)
 
 ## Properties
 
 | Property | Description |
 |---|---|
-| ItemInPhone (Integer): Optional |  Number of items displayed on a phone. <p>Examples<ul><li>_Blank_ - 1 item is displayed. This is the default value.</li><li>_2_ - 2 items are displayed.</li></ul></p> |
-| ItemsInTablet (Integer):  |  Number of items displayed on a tablet. <p>Examples<ul><li>_Blank_ - 3 items are displayed. This is the default value.</li><li>_2_ - 1 item is displayed.</li></ul></p> |
-| ItemsInDesktop (Integer):  |  Number of items displayed on a desktop. <p>Examples<ul><li>_Blank_ - 4 items are displayed. This is the default value.</li><li>_3_ - 3 items are displayed.</li></ul></p> |
-| GutterSize (Space Identifier): Optional  | Defines the space between the items. The predefined sizes are:<p><ul><li>None</li><li>Extra Small</li><li>Small</li><li>Base</li><li>Medium</li><li>Large</li><li>Extra Large</li><li>Extra Extra Large</li></ul></p><p>Examples<ul><li>_Blank_ - A space of 16px between each item. This is the default value (_Entities.Space.Base_). </li><li>_Entities.Space.Large_ - A space of 32px between each item.</li></ul></p> |
+|RowItemsDesktop (Integer): Optional |  Number of items displayed simultaneously per row on a desktop. Default value is 4.|
+|RowItemsTablet (Integer):  |   Number of items displayed simultaneously per row on a tablet. Default value is 3. |
+|RowItemsPhone (Integer):  |  Number of items displayed simultaneously per row on a phone. Default value is 1.  |
+|ItemsGap(Space Identifier): Optional  | Defines the space between the items. The predefined sizes are the following:<p><ul><li>None</li><li>Extra Small</li><li>Small</li><li>Base (default value)</li><li>Medium</li><li>Large</li><li>Extra Large</li><li>Extra Extra Large</li></ul></p>|
+|ExtendedClass (text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|

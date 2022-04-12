@@ -1,6 +1,8 @@
 ---
 summary: OutSystems.AI Language Analysis component can detect key phrases, calculate sentiment analysis, translate text to another language, transcribe from audio, and spellcheck a text.
 tags:
+locale: en-us
+guid: 5e2273f8-4fa3-43a4-b0bf-7a177534bca2
 ---
 
 # Use the AI Language Analysis component in your OutSystems apps

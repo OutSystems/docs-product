@@ -1,7 +1,8 @@
 ---
 summary: 
 tags:
-en_title: Best practices
+locale: en-us
+guid: a5d74dfe-4a88-40d9-bf32-d8fd5690318a
 ---
 
 
@@ -9,8 +10,3 @@ en_title: Best practices
 
 This section contains extra information regarding specific code patterns.
 
-<pre class="script">
-template('MindTouch/Controls/PageOverview');</pre>
-
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide');</pre>

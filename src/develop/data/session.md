@@ -1,6 +1,8 @@
 ---
 summary: Learn how OutSystems uses Sessions to maintain information about the previous web requests the end user made.
 tags: runtime-traditionalweb; support-application_development
+locale: en-us
+guid: a6784b12-4617-437f-b5e5-ec8c8b579006
 ---
 
 # Sessions in Web Applications
@@ -33,7 +35,7 @@ Timer Session
 When the end user makes the first request to the server, a new session is created. When this happens the **OnSessionStart** event is fired, and the action that handles it is executed.
 
 
-## Session Timeout
+## Session Timeout { #session-timeout }
 
 The session timeout specifies the period of time that a session can remain idle, without any end user interaction, before the Platform Server ends the session automatically.
 

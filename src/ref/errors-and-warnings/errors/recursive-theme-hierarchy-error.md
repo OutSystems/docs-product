@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 5d3d786b-ebf4-47f0-b289-a207dadd8bb0
+---
+
 # Recursive Theme Hierarchy Error
 
 The `Recursive Theme Hierarchy`error is issued in the following situation:

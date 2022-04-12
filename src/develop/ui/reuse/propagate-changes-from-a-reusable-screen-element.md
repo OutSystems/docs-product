@@ -1,6 +1,8 @@
 ---
 summary: Learn how to use Events to trigger an Action and pass a value from a Block to Blocks or Screens.
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+locale: en-us
+guid: 6140a263-aa35-45e6-92a7-dc4453dae1c6
 ---
 
 # Use Events to Propagate Changes From a Block to the Parent
@@ -26,7 +28,7 @@ Let's first create a Block with "Small", "Medium", and "Large" buttons that, whe
 
 1. Right-click a Flow and select **Add Block**. Name it Sizes.
 1. Right-click the Sizes Block and select **Add Event**. Name it SelectSize.
-1. Right-click the SelectSize Even and select **Add Input Parameter**. Name it SizeName.
+1. Right-click the SelectSize Event and select **Add Input Parameter**. Name it SizeName.
 
     ![Event with a parameter on a Block](images/block-event-properties.png)
 

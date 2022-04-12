@@ -1,6 +1,8 @@
 ---
 summary: Follow this tutorial to create and run an example Reactive Web App to manage tasks.
 tags: runtime-reactiveweb;
+locale: en-us
+guid: 795332a5-e1f3-40c0-886d-75b7bddf48af
 ---
 
 # Create Your First Reactive Web App
@@ -152,4 +154,4 @@ We also want to enable the end users to add new tasks from the screen with all t
 
 ## Test your Reactive Web App
 
-At this stage we test our Reactive Web App. Click the **![1-Click Publish](../shared/icons-service-studio/publish.png) 1-Click Publish** button to publish the application to your environment. When the application is deployed, click the **![Open in Browser](../shared/icons-service-studio/open-browser.png) Open in Browser** button to test your application in a browser.
+At this stage we test our Reactive Web App. Click the **1-Click Publish** button to publish the application to your environment. When the application is deployed, click the **Open in Browser** button to test your application in a browser.

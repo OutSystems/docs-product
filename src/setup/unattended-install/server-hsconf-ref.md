@@ -1,6 +1,8 @@
 ---
 summary: Complete reference for the server.hsconf configuration file.
 tags: support-Installation_Configuration; support-Installation_Configuration-overview
+locale: en-us
+guid: dcc55c5d-8cd5-4850-9e88-fa385badc663
 ---
 
 # server.hsconf Configuration File Reference
@@ -65,7 +67,7 @@ The following are the configurations that are specific to SQL Server and Azure S
 
 |Key|Value|Description|
 |---|-----|-----------|
-|Unicode|"true" or "false".%%**Do not customize this field.** OutSystems only supports non-Unicode in legacy systems.|Defines if the database supports unicode or not.|
+|Unicode|"true" or "false".<br/>**Do not customize this field.** OutSystems only supports non-Unicode in legacy systems.|Defines if the database supports unicode or not.|
 |UsedAuthenticationMode|"Database Authentication" or "Windows Authentication".|Authentication protocol to be used.|
 |Server|Hostname or IP address of the database server.||
 |Catalog|Database catalog to be used by OutSystems.||
@@ -77,14 +79,14 @@ The following are the configurations that are specific to Oracle:
 |Key|Value|Description|
 |---|-----|-----------|
 |IntrospectionMethod|**Internal**, do not customize.||
-|CI_AI|"true" or "false".%%**Internal**, do not customize.|Case insensitive and accent insensitive mode.|
-|DateFunction|Function used to get date.%%**Internal**, do not customize.||
-|DDLLockTimeout|Numeric value.%%**Internal**, do not customize.|Timeout used in DDL lock operations.|
+|CI_AI|"true" or "false".<br/>**Internal**, do not customize.|Case insensitive and accent insensitive mode.|
+|DateFunction|Function used to get date.<br/>**Internal**, do not customize.||
+|DDLLockTimeout|Numeric value.<br/>**Internal**, do not customize.|Timeout used in DDL lock operations.|
 |NamingType|"Service Name" or "TNS Name".|Connection mode used.|
-|TNSName|Address name defined in the `tnsnames.ora` configuration file.|This option is only available when NamingType is set to "TNS Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Host|Hostname or IP address of the database server.|This option is only available when NamingType is set to "Service Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Port|Port where the database service listens.|This option is only available when NamingType is set to "Service Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|ServiceName|Oracle database service name.|This option is only available when NamingType is set to "Service Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|TNSName|Address name defined in the `tnsnames.ora` configuration file.|This option is only available when NamingType is set to "TNS Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|Host|Hostname or IP address of the database server.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|Port|Port where the database service listens.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|ServiceName|Oracle database service name.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
 |NLS_Language|NLS_LANG Language Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
 |NLS_Territory|NLS_LANG Territory Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
 |AdminTablespace|Table space where the system tables are stored.||
@@ -122,7 +124,7 @@ The following are the configurations that are specific to SQL Server and Azure S
 
 |Key|Value|Description|
 |---|-----|-----------|
-|Unicode|"true" or "false".%%**Do not customize this field.** OutSystems only supports non-Unicode in legacy systems.|Defines if the database supports unicode or not.|
+|Unicode|"true" or "false".<br/>**Do not customize this field.** OutSystems only supports non-Unicode in legacy systems.|Defines if the database supports unicode or not.|
 |UsedAuthenticationMode|"Database Authentication" or "Windows Authentication".|Authentication protocol to be used. **Needs to match Platform Database Configuration.**|
 |Server|Hostname or IP address of the database server.||
 |Catalog|Database catalog to be used by Logging.||
@@ -134,14 +136,14 @@ The following are the configurations that are specific to Oracle:
 |Key|Value|Description|
 |---|-----|-----------|
 |IntrospectionMethod|**Internal**, do not customize.||
-|CI_AI|"true" or "false".%%**Internal**, do not customize.|Case insensitive and accent insensitive mode.|
-|DateFunction|Function used to get date.%%**Internal**, do not customize.||
-|DDLLockTimeout|Numeric value.%%**Internal**, do not customize.|Timeout used in DDL lock operations.|
+|CI_AI|"true" or "false".<br/>**Internal**, do not customize.|Case insensitive and accent insensitive mode.|
+|DateFunction|Function used to get date.<br/>**Internal**, do not customize.||
+|DDLLockTimeout|Numeric value.<br/>**Internal**, do not customize.|Timeout used in DDL lock operations.|
 |NamingType|"Service Name" or "TNS Name".|Connection mode used.|
-|TNSName|Address name defined in the `tnsnames.ora` configuration file.|This option is only available when NamingType is set to "TNS Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Host|Hostname or IP address of the database server.|This option is only available when NamingType is set to "Service Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Port|Port where the database service listens.|This option is only available when NamingType is set to "Service Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|ServiceName|Oracle database service name.|This option is only available when NamingType is set to "Service Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|TNSName|Address name defined in the `tnsnames.ora` configuration file.|This option is only available when NamingType is set to "TNS Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|Host|Hostname or IP address of the database server.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|Port|Port where the database service listens.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|ServiceName|Oracle database service name.|This option is only available when NamingType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
 |NLS_Language|NLS_LANG Language Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
 |NLS_Territory|NLS_LANG Territory Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
 |AdminTablespace|Table space where the system tables are stored.||
@@ -171,14 +173,14 @@ The following are the configurations that do not depend on the database manageme
 |SessionUser|Name of the owner of the OutSystems session metamodel tables.||
 |SessionPassword|Password of the owner of the OutSystems session metamodel tables.|Configuration Tool will read the clear text password and save an encrypted version.|
 |SessionAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems applications.|
-|DeleteExpiredSessionsAvoidLockRowCount|Numeric value.%%**Internal**, do not customize.|
+|DeleteExpiredSessionsAvoidLockRowCount|Numeric value.<br/>**Internal**, do not customize.|
 
 ### SQL Server/Azure SQL Database 
 The following are the configurations that are specific to SQL Server and Azure SQL Database:
 
 |Key|Value|Description|
 |---|-----|-----------|
-|UsedAuthenticationMode|"Database Authentication" or "Windows Authentication".|Authentication protocol to be used.%%**Needs to match Platform Database Configuration.**|
+|UsedAuthenticationMode|"Database Authentication" or "Windows Authentication".|Authentication protocol to be used.<br/>**Needs to match Platform Database Configuration.**|
 |Server|Hostname or IP address to the database server.||
 |Catalog|Database catalog to be used by OutSystems.||
 
@@ -189,14 +191,14 @@ The following are the configurations that are specific to Oracle:
 |Key|Value|Description|
 |---|-----|-----------|
 |IntrospectionMethod|**Internal**, do not customize.||
-|CI_AI|"true" or "false".%%**Internal**, do not customize.|Case insensitive and accent insensitive mode.|
-|DateFunction|Function used to get date.%%**Internal**, do not customize.||
-|DDLLockTimeout|Numeric value.%%**Internal**, do not customize.|Timeout used in DDL lock operations.|
+|CI_AI|"true" or "false".<br/>**Internal**, do not customize.|Case insensitive and accent insensitive mode.|
+|DateFunction|Function used to get date.<br/>**Internal**, do not customize.||
+|DDLLockTimeout|Numeric value.<br/>**Internal**, do not customize.|Timeout used in DDL lock operations.|
 |IdType|"Service Name" or "TNS Name".|Connection mode used.|
-|TNSName|Address name defined in the `tnsnames.ora` configuration file.|This option is only available when IdType is set to "TNS Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Host|Hostname or IP address of the database server.|This option is only available when IdType is set to "Service Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|Port|Port where the database service listens.|This option is only available when IdType is set to "Service Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
-|ServiceName|Oracle database service name.|This option is only available when IdType is set to "Service Name".%%More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|TNSName|Address name defined in the `tnsnames.ora` configuration file.|This option is only available when IdType is set to "TNS Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|Host|Hostname or IP address of the database server.|This option is only available when IdType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|Port|Port where the database service listens.|This option is only available when IdType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
+|ServiceName|Oracle database service name.|This option is only available when IdType is set to "Service Name".<br/>More information [here](http://www.outsystems.com/goto/oracle-tns-configuration).|
 |NLS_Language|NLS_LANG Language Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
 |NLS_Territory|NLS_LANG Territory Oracle environment parameter.|Changes the locale of the messages returned by the Oracle driver.|
 |SessionTablespace|Table space where the session tables are stored.||
@@ -220,7 +222,7 @@ The following are the available configurations:
 |CompilerServerPort|Numeric value.|Port used by the Deployment Controller Service, in the Deployment Controller Server.|
 |DeploymentServerPort|Numeric value.|Port used by the Deployment Service, in the Front-End Servers.|
 |SchedulerServerPort|Numeric value.|Port used by the Scheduler Service, in the Front-End Servers.|
-|SupportAsynchronousLog|"true" or "false".%%**Internal**, do not customize.||
+|SupportAsynchronousLog|"true" or "false".<br/>**Internal**, do not customize.||
 |ServiceInitializationTimeoutInSeconds|Numeric value.|Timeout for services to restart. The default value is 180 seconds.|
 
 ## Server Configuration

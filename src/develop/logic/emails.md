@@ -1,6 +1,8 @@
 ---
 summary: Learn how to use built-in emails in your web applications.
 tags: runtime-traditionalweb; support-application_development
+locale: en-us
+guid: fcef1ee7-5f7d-4c00-a92c-14f0a0039ac0
 ---
 
 # Send an Email From a Web Application

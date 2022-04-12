@@ -1,6 +1,8 @@
 ---
 summary: Email widgets are lightweight and let you design emails most emails readers can open. Container, Expressions, If, Image, Link, Table, Text.
 tags: support-application_development,
+locale: en-us
+guid: 3e6b3c93-dee6-4e15-860b-fa9a627825ba
 ---
 
 # Widgets in emails
@@ -8,6 +10,12 @@ tags: support-application_development,
 OutSystems designed widgets to help you create lightweight emails that most email readers can open. When you edit an email, Service Studio shows the [available Email widgets](#widgets-available-in-emails) in the widgets toolbar.
 
 ![widgets for emails](images/email-available-widgets-ss.png?width=700)
+
+<div class="info" markdown="1">
+
+To use this feature, make sure you meet the [prerequisites](intro.md#prerequisites).
+
+</div>
 
 Use the Email widgets like you use the Screen widgets, with the following common differences designed to make the emails light and secure:
 

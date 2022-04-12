@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb
 summary: Provides methods to log messages or errors. Used as "console.log" but also logs messages in Service Center.
+locale: en-us
+guid: a91ff06e-c4fe-4e1b-ab4d-ac67c341c3e5
 ---
 
 # Logger
@@ -11,27 +13,10 @@ This logger will work both as a `console.log` logger and as server logger, sendi
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Functions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[error](logger.md#error)</td>
-<td>
-Logs an error.
-</td>
-</tr>
-<tr>
-<td>[log](logger.md#log)</td>
-<td>
-Logs a message.
-</td>
-</tr>
-</tbody>
-</table>
+|Functions|Description|
+|---|---|
+|[error](logger.md#error)|Logs an error.|
+|[log](logger.md#log)|Logs a message.|
 
 ## Functions
 

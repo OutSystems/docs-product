@@ -1,5 +1,7 @@
 ---
 summary: Service Studio command line reference to execute common development tasks such as opening or merging modules, and creating new applications.
+locale: en-us
+guid: 23c2945f-211b-438d-b8c1-0aae40cd316d
 ---
 
 # Service Studio command line

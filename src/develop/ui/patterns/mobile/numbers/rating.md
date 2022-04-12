@@ -1,13 +1,15 @@
 ---
 tags: runtime-mobileandreactiveweb;
-summary: Allows users to rate a particular item.
+summary: Allows users to rate a particular item or service.
+locale: en-us
+guid: f0a35dfd-ff8e-4e04-8a4b-2407efaca4f6
 ---
 
 # Rating
 
-You can use the Rating UI Pattern to allow users to rate a particular item. 
+You can use the Rating UI Pattern to allow users rate, for example, products and services.
 
-![](<images/rating-4-ss.png>)
+![Example of Rating pattern](<images/rating-example-ss.png>)
 
 **How to use the Rating UI Pattern**
 
@@ -15,33 +17,31 @@ You can use the Rating UI Pattern to allow users to rate a particular item.
 
     The Rating widget is displayed.
 
-    ![](<images/rating-1-ss.png>)
+    ![Rating widget](<images/rating-widget-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
-1. From the Toolbox, drag the Rating widget into the Main Content area of your application's screen.
+1. From the Toolbox, drag the **Rating** widget into the Main Content area of your application's screen.
 
-    ![](<images/rating-2-ss.png>)
+    ![Drag widget onto the screen](<images/rating-dragwidget-ss.png>)
 
     By default, the pattern is already prepared to work as a 5-Star rating pattern. However, you can change the icons to hearts, smiles, thumbs, or any other content.
 
-1. On the **Properties** tab, from the **RatingValue** dropdown, enter the rating number you want displayed. In this example, we enter `2`.  
+1. On the **Properties** tab, from the **RatingValue** dropdown, enter the rating number you want displayed. In this example, we enter `3`.  
     
-    ![](<images/rating-5-ss.png>)
+    ![Set the Rating Value property](<images/rating-value-ss.png>)
 
-1. Additionally, on the **Properties** tab, you can customize the Rating's look and feel by setting any of the optional properties.
+1. You can customize the Rating's look and feel by setting any of the optional properties.
 
-    ![](<images/rating-3-ss.png>)
+    ![Set additional properties](<images/rating-properties-ss.png>)
 
 After following these steps and publishing the module, you can test the pattern in your app.
 
@@ -49,8 +49,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| RatingValue (Decimal): Mandatory | Rating number to display. |
-| RatingScale (Integer): Optional | The number of items to display. The default is 5 which means the rating is from 0 to 5. If set to 1, the item behaves as a view only element and the **IsEdit** property is automatically set to False. |
-| IsEdit (Boolean): Optional | If True, the user can interact with the pattern. If False, the user can't interact with the pattern. This is the default. |
-| Size (Size Identifier): Optional | The size of the rating pattern. There are 3 sizes available; small, medium, and base. Base is the default size.  |
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+|RatingValue (Decimal): Mandatory | Rating number to display. |
+|RatingScale (Integer): Optional | The number of items to display. The default is 5 which means the rating is from 0 to 5. If set to 1, the item behaves as a view only element and the **IsEdit** property is automatically set to False. The maximum value is 100. If the value introduced is bigger, only 100 items are displayed.|
+|IsEdit (Boolean): Optional | If True, the user can interact with the pattern. Default value is False. |
+|Size (Size Identifier): Optional | The size of the rating pattern. There are 3 sizes available; small, medium, and base. Default size is Base.  |
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

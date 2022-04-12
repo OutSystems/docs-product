@@ -1,5 +1,7 @@
 ---
 summary: PATCH method allows a new HTTP method when exposing REST APIs that applies partial modifications to a resource.
+locale: en-us
+guid: f3ab51bb-7226-49f9-a529-a5e485a6952b
 ---
 
 # PATCH method on exposed REST services

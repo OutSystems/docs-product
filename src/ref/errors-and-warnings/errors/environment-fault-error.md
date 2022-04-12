@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 3e5e54ef-a2af-4c15-b331-6f6651f44401
+---
+
 # Environment Fault Error
 
 The `Environment Fault` error is issued in the following situations:

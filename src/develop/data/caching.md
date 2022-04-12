@@ -1,5 +1,7 @@
 ---
 summary: Read about caching in OutSystems Apps.
+locale: en-us
+guid: b1fd3cda-593d-4e77-99db-bfccef52149f
 ---
 
 # Caching
@@ -25,6 +27,7 @@ These are the elements that **support** caching:
 Some elements **don't support** caching. These are:
 
 * Screens, as the feature currently does not support this element.
+* Exposed REST
 * Web Blocks with Submit or Ajax Submit.
 
 ### Notes about SOAP

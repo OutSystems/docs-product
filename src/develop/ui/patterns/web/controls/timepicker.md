@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Time Picker selects a single time from a drop-down list.
+locale: en-us
+guid: 113a390f-c3f6-4ba3-b493-184f75c36227
 ---
 
 # Time Picker 
@@ -18,17 +20,15 @@ You can use the Time Picker UI Pattern to select a single time from a drop-down 
 
     ![](<images/timepicker-image-14.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Time Picker widget into the Main Content area of your application's screen.
 
@@ -53,8 +53,8 @@ You can use the Time Picker UI Pattern to select a single time from a drop-down 
 
 | **Property** |  **Description** |  
 |---|---|
-| StartTime (Time): Optional  |  The first time option that appears in the drop-down. Make sure that the time is set according to the **Interval** property (if set). <!--Default is NewTime(0,0,0) -> 12:00am. Example: If you set the interval as 30, but the Start Time as 10:05:00. Then while it will be the time that it'll appear on the input, the drop down won't scroll down to the hour since it doesn't match the interval. --><br/><br/>Examples<br/><br/><ul><li>_Blank_ - 12:00am is displayed as the first option in the drop-down. This is the default. </li><li>_15:00_ - 15:00 is displayed as the first option in the drop-down.</li></ul> | 
-| Interval (Integer): Optional  |  Interval of time (in minutes) between the drop-down options.<br/><br/>Example<ul><li>_Blank_ - The interval between each option is set to 30 minutes. This is the default.</li><li>_60_ - The interval between each option is set to 60 minutes.</li></ul> |
+| StartTime (Time): Optional  |  The first time option that appears in the drop-down. Make sure that the time is set according to the **Interval** property (if set). <br/><br/>Examples<br/><br/><ul><li>Blank - 12:00am is displayed as the first option in the drop-down. This is the default. </li><li>15:00 - 15:00 is displayed as the first option in the drop-down.</li></ul> | 
+| Interval (Integer): Optional  |  Interval of time (in minutes) between the drop-down options.<br/><br/>Example<ul><li>Blank - The interval between each option is set to 30 minutes. This is the default.</li><li>60 - The interval between each option is set to 60 minutes.</li></ul> |
 | Is24hFormat (Boolean): Optional|  If True, the time format is 24 hour. This is the default. If False, the time format is 12 hour. |
 | AdvancedFormat (TimePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters.<br/><br/>**Inputs**<br/><br/>TimePickerAdvancedFormat<br/><br/><ul><li> DisabledTimes (Time List)</li><li> MinTime (Time)</li> <li>MaxTime (Time)</li> <li>StartEmpty (Boolean)</li></ul> |
   

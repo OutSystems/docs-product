@@ -1,7 +1,9 @@
 ---
-tags: Architecture Dashboard;
+tags:
 summary: Learn about pre-requirements and how to setup Architecture Dashboard.
-en_title: How to configure Architecture Dashboard probes in OutSystems 10
+en_title:
+locale: en-us
+guid: e1303736-5727-4eb9-82a1-dc7039b26731
 ---
 
 
@@ -11,7 +13,7 @@ en_title: How to configure Architecture Dashboard probes in OutSystems 10
 
 1. Select **Plugins** \> **Architecture Dashboard**.
 
-    ![Plugin.PNG](images/setup-plugin-lt.png)
+    ![Architecture Dashboard Plugin](images/setup-plugin-lt.png)
 
     <div class="info" markdown="1">
 
@@ -21,7 +23,7 @@ en_title: How to configure Architecture Dashboard probes in OutSystems 10
 
 1. Select **Configuration**.
 
-    ![Configuration.PNG](images/setup-plugin-configuration-lt.png)
+    ![Configuration](images/setup-plugin-configuration-lt.png)
 
 1. Confirm that **Architecture Dashboard SaaS API URL** is set to `https://architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx`
 
@@ -34,7 +36,7 @@ en_title: How to configure Architecture Dashboard probes in OutSystems 10
 
     1. In the **Environment Configuration** section, select the **Configure** button for **Development** environment.
 
-        ![Env_Configuration.PNG](images/setup-development-probe-01-lt.png)
+        ![Environment Configuration](images/setup-development-probe-01-lt.png)
 
     1. Select **Code Analysis** as the **Environment Type**.
 

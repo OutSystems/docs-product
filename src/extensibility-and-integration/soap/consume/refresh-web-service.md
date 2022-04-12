@@ -1,6 +1,8 @@
 ---
 summary: Refresh the Web Service to get the latest changes in a consumed SOAP Web Service or to modify the list of consumed methods in Service Studio.
 tags: support-Integrations_Extensions
+locale: en-us
+guid: 68e18433-b490-4ba2-9269-0261f6b656fd
 ---
 
 # Refresh a SOAP Web Service

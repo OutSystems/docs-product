@@ -1,5 +1,7 @@
 ---
 summary: You can create Timers at design time and set their running schedule at design or runtime.
+locale: en-us
+guid: 133d8c46-b36b-47de-9ad3-ca8e6460bb20
 ---
 
 # Create and Run Timers
@@ -17,8 +19,7 @@ To create a Timer in your module, do the following:
 
 If the Action you specify has input parameters, when creating the Timer you need to specify the values that are passed as parameters when the Timer wakes. However, if the action has output parameters, there is no way of accessing them after the action is finished executing.
 
-You can set a schedule to run the Timer automatically or you can explicitly run the Timer. 
-
+You can set a schedule to run the Timer automatically or you can force the Timer to run without waiting for the scheduled time.
 
 ## Set the Timer Schedule
 
@@ -37,15 +38,20 @@ You can set the schedule of a Timer in one of the following ways:
 When you define a schedule for your Timer, the Timer will run at the predefined time.
 
 
-## Run the Timer Explicitly
+## Force the Timer to run
 
-There are two ways of explicitly run a Timer:
+There are two ways of forcing a Timer to run without waiting for the scheduled time:
 
 * Using the `Wake<Timer Name>` built-in action
 * Running the Timer in Service Center
 
-Neither of these options changes the timer schedule, so the Timer will continue to run as normally. Also, since the same Timer does not run twice simultaneously, if you run a Timer that is already running, the second execution only starts after the first one has finished.
+Neither of these options changes the timer schedule, so the Timer will continue to run as normally. Also, since the same Timer doesn't run twice simultaneously, if you run a Timer that's already running, the second execution only starts after the first one has finished.
 
+<div class="info" markdown="1">
+
+Forcing the execution of a deactivated Timer that has a schedule defined, sets the Timer to run as soon as possible and activates the Timer again.
+
+</div>
 
 ### Use the WakeTimer Built-in Action
 
@@ -63,7 +69,7 @@ To use the `Wake<Timer Name>` built-in action in your logic, do the following:
 
 ### Run a Timer in Service Center
 
-To explicitly run a Timer in Service Center, do the following:
+To force the execution of a Timer in Service Center, do the following:
 
 1. In the **Factory** tab, choose **Modules** and find your module.
 1. In the module's detail page, choose the **Timers** tab.

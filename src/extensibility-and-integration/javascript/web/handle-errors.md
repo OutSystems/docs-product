@@ -1,6 +1,8 @@
 ---
 summary: Learn how to handle JavaScript errors in thrown in some specific situations within your web application.
 tags: runtime-traditionalweb
+locale: en-us
+guid: d3888e3a-fb8d-44cf-8ec2-b97cd5caa87e
 ---
 
 # Handle JavaScript Errors
@@ -16,7 +18,7 @@ To handle these types of errors you need to define a JavaScript function that wi
 
 By default, OutSystems provides you with a basic error handler function called **OsAlertExceptionHandler** , which displays an alert box with information about the error.
 
-You can use the **OsAlertExceptionHandler** function to handle the JavaScript errors or you can [define your own function](<run-js-code.md>) with the following signature:
+You can use the **OsAlertExceptionHandler** function to handle the JavaScript errors or you can [define your own function](<intro.md>) with the following signature:
 
 `function <ErrorHandlerFunctionName>( event, exception [, errorCode] [, origin] )`
 

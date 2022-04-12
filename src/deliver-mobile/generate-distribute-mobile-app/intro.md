@@ -1,6 +1,8 @@
 ---
 summary: You can generate the mobile app package for your mobile app and distribute it for tests purposes or, when you have completed work on your app, generate a production-ready version of your app to distribute to a selected group of end users or to publish in mobile app stores.
 tags: runtime-mobile, article-page
+locale: en-us
+guid: 1aacc771-f914-4f95-889a-31f1dde06a38
 ---
 
 # Generate and Distribute Your Mobile App

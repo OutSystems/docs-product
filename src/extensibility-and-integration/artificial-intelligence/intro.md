@@ -1,5 +1,7 @@
 ---
 summary: OutSystems helps you build applications that have advanced AI and machine learning functionalities.
+locale: en-us
+guid: bf9332a9-d068-4c72-9de7-704f085a3156
 ---
 
 # Artificial Intelligence

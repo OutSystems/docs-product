@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 659d5361-cb0c-4aff-bab5-f021cc017017
+---
+
 # Invalid Join Error
 
 The `Invalid Join` error is issued in the following situations:

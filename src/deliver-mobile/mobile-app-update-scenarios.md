@@ -1,6 +1,8 @@
 ---
 summary: Understand how automatic updates to mobile apps work when you click on "1-Click Publish".
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
+locale: en-us
+guid: ce4f8a4d-d473-4b92-a448-cf39fde1f64d
 ---
 
 # Mobile App Update Scenarios
@@ -46,7 +48,7 @@ You can find the issue and the cause in the Service Center logs by looking for "
 
 ## Situations when the user must install a new build { #required-new-build }
 
-Even though every time you publish the app the platform makes the changes automatically available to the app, some changes require installation of an updated app package on the user device. If you have the app of the build type **Debug**, uninstall it from the device before installing a new version of an Android. This guarantees the new app features work correctly.
+Even though every time you publish the app the platform makes the changes automatically available to the app, some changes require installation of an updated app package on the user device.
 
 You need a new app build when you **change** one of the following:
 

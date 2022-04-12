@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 42bf68d5-449b-479f-8009-d02639218f6b
+---
+
 # Unused Connector Warning
 
 Message

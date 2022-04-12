@@ -1,5 +1,7 @@
 ---
 summary: Deploy applications in two stages to ensure a deployment fits in your deployment window.
+locale: en-us
+guid: d51c949d-d74e-4754-a9ff-ae8c83013ebb
 ---
 
 # Deploy in a Short Deployment Window

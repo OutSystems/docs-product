@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Panel UI Pattern.
+locale: en-us
+guid: 14257aa5-1da9-4d49-b619-e89a5bd50936
 ---
 
 # Panel Reference

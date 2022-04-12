@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c5e5c6fd-fba7-4be6-ba09-d1b028c8a1c1
+---
+
 # Define Extension Entities
 
 Once you have created your extension, simply define the **entities** exported by the extension. These entities allow you to use database tables that exist outside OutSystems.

@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Adds swipeable cards that can be dragged in multiple directions triggering events, such as deny, approve, and archive.
+locale: en-us
+guid: c4e2edb1-3142-4f82-b34d-dab8d2356155
 ---
 
 # Stacked Cards
@@ -17,17 +19,15 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
     ![](images/stackedcards-2-ss.png)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Swipe Events widget into the Main Content area of your application's screen.
 
@@ -65,7 +65,7 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
 1. Repeat step 7 for the OverlayTop (swipe up) and OverLayRight (swipe right) placeholders.
 
-1. From the **Properties** tab, you can change the Range Slider's look and feel by setting the (optional) properties.
+1. From the **Properties** tab, you can change the Stacked Card's look and feel by setting the (optional) properties.
 
    ![](images/stackedcards-11-ss.png)
 
@@ -75,10 +75,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-|StackedOptions (StackedCardsPosition Identifier): Optional |  Change stacked cards view from bottom, top, or none.  <p>Examples <ul><li>_Entities.StackedCardsPosition.Bottom_ - The stacked cards are positioned on the bottom. This is the default. </li><li>_Entities.StackedCardsPosition.Top_ - The stacked cards are positioned on top. </li></ul></p> |
+|StackedOptions (StackedCardsPosition Identifier): Optional |  Change stacked cards view from bottom, top, or none.  <p>Examples <ul><li>Entities.StackedCardsPosition.Bottom - The stacked cards are positioned on the bottom. This is the default. </li><li>Entities.StackedCardsPosition.Top - The stacked cards are positioned on top. </li></ul></p> |
 |Rotate (Boolean): Optional | If True, the rotation for each move on the stacked cards is activated. This is the default. If False, each move is not activated. |
-|Items (Integer): Optional |  Number of visible elements when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p> |
-|ElementsMargin |  Define the distance between each element when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>_Blank_ - 5 elements are visible. This is the default. </li><li>_3_ - 3 elements are visible. </li></ul></p> |
+|Items (Integer): Optional |  Number of visible elements when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>Blank - 5 elements are visible. This is the default. </li><li>3 - 3 elements are visible. </li></ul></p> |
+|ElementsMargin |  Define the distance between each element when the StackedOptions property is set to bottom or top. <p>Examples <ul><li>Blank - 5 elements are visible. This is the default. </li><li>3 - 3 elements are visible. </li></ul></p> |
 |UseOverlays (Boolean): Optional | If True, overlays for swipe elements are enabled. This is the default. If False, the overlays are disabled. |
   
 ## Compatibility with other patterns

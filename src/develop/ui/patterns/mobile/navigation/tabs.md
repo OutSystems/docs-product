@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Displays large sets of information, which can be split into different areas, while always remaining a click away. 
+locale: en-us
+guid: a5e72a7a-870d-46e7-b2be-a15ac6948b97
 ---
 
 # Tabs
@@ -17,17 +19,15 @@ You can use the Tabs UI Pattern to divide content into meaningful sections. Each
 
     ![](images/tabs-4-ss.png)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Tabs widget into the Main Content area of your application's screen.
 
@@ -80,7 +80,7 @@ All Silk patterns hide `div` HTML elements with no content. If you only need 2 o
 |IsJustified (Boolean): Optional  | If True, the Tabs are evenly distributed in the space available. If set to False, the Tabs are left aligned. This is the default value. |  
 |IsVertical (Boolean): Optional  | If True, the Tabs are displayed vertically. If set to False, the Tabs are displayed horizontally. This is the default value. |  
 |IsRight (Boolean): Optional  | If True, the Tabs are displayed to the right of the Tab content. If set to False, the Tabs are displayed to the left of the Tab content. This is the default value. **Note**: This setting is only applicable if the IsVertical property is set to True. |  
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_''myclass''_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_''myclass1'' ''myclass2''_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1" "myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Device and pattern compatibility
 

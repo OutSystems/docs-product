@@ -1,5 +1,7 @@
 ---
 summary: How to configure LDAP end user authentication for your applications (both LDAP with Active Directory and standard LDAP).
+locale: en-us
+guid: 7b9e403c-8006-43db-902d-21e239f1b25d
 ---
 
 # Configure LDAP Authentication
@@ -28,7 +30,7 @@ To configure the OutSystems end user authentication for LDAP with Active Directo
 
     _Notes:_  
     To use secure LDAP, use the protocol `ldaps://` instead.  
-    You can ommit the `ldap://` prefix in the URL, but must include the `ldaps://` prefix when using secure LDAP.
+    You can omit the `ldap://` prefix in the URL, but must include the `ldaps://` prefix when using secure LDAP.
 
 1. Select **Use AD credentials**.
 

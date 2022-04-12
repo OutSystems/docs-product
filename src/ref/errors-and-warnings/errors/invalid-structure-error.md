@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: e82d1098-ac56-437c-a1db-df2c98d69997
+---
+
 # Invalid Structure Error
 
 The `Invalid Structure` error is issued in the following situations:

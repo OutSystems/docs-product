@@ -1,12 +1,15 @@
 ---
-tags: Architecture Dashboard.
+tags:
 summary: Learn how to Check the technical debt of all the apps in your infrastructure.
-en_title: Getting started as an architect
+locale: en-us
+guid: 5771d1af-cf5a-4e5c-a4c7-79f03a5f99ef
 ---
 
 # Getting started as an architect
 
-As an architect, the Architecture Dashboard provides you with an overview of your organization’s technical debt. From the canvas, you can check the technical debt of all the apps in your infrastructure and take the necessary steps to reduce the technical debt score for problem areas. 
+As an architect, the Architecture Dashboard provides you with an overview of your organization’s technical debt.
+
+From the Apps canvas, you can check the technical debt of all the apps in your infrastructure and take the necessary steps to reduce the technical debt score for problematic areas.
 
 This guide assumes the following:
 
@@ -20,7 +23,7 @@ After logging into [Architecture Dashboard](https://architecture.outsystems.com)
 
 ## Check the technical debt of all your apps
 
-The canvas gives you an overview of all the apps on your infrastructure.
+The Apps canvas gives you an overview of all the apps on your infrastructure.
 
 ![Overview of apps in infrastructure](images/use-overview-infra-ad.png)
 
@@ -70,12 +73,26 @@ You can also select another date range.
 
 ![Change chart time frame](images/use-chart-range-ad.png)
 
+## Get an overview of the technical debt across all factory
+
+The **Infrastructure overview** dashboard gives you an understanding of the current status, distribution and evolution of the technical debt across all the apps in your factory.
+
+![overview dashboard](images/overview-dashboard-ad.png)
+
+To access the **Infrastructure overview** dashboard, click the **Overview** tab in the Architecture Dashboard.
+
+Filter the analysis data by team, application, code pattern category, or date range, to get the data that you require to do the proper follow up. You can see, for example, which code patterns of a specific category contribute more to the technical debt of your factory.
+
+![overview dashboard](images/architect-get-overview-ad.png)
+
+[See here](overview-dashboard.md) more details about the Infrastructure overview dashboard.
+
 ## Remove modules from technical debt score
 
 You can remove specific modules from the technical debt calculation for your infrastructure, by setting them as **Ignored Modules**.  
 To set a module as ignored, follow these steps:
 
-1. In the top bar, click your **user name**, and then select **Maintenance**.
+1. Click the **Maintenance** tab.
 
     ![Select Maintenance](images/use-username-maintenance-ad.png)
 

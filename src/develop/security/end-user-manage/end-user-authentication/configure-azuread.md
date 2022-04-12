@@ -1,6 +1,8 @@
 ---
 summary: How to configure Azure AD end user authentication for your applications.
 tags: runtime-traditionalwebandreactiveweb
+locale: en-us
+guid: dd03208e-8d07-4720-bc69-3ebf9b541290
 ---
 
 # Configure Azure AD Authentication

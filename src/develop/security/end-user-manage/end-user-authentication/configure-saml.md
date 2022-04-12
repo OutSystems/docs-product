@@ -1,6 +1,8 @@
 ---
 summary: How to configure SAML 2.0 end user authentication for your applications.
 tags: runtime-traditionalwebandreactiveweb
+locale: en-us
+guid: 47803c16-1495-4db3-b9e5-10dbd77538a9
 ---
 
 # Configure SAML 2.0 Authentication
@@ -97,6 +99,18 @@ To enable all the required settings do the following:
 
 1. Enable **Single Sign-On Between App Types**.
 
+    <div class="info" markdown="1">
+
+    Having different session timeout values for Traditional Web and Reactive Web applications may lead to issues during authentication flows.
+
+    If you are running **Platform Server 11.14.1 or later**, the default value of the session timeout for Reactive Web Apps matches the default value of the session timeout for Traditional Web Apps (20m). In this case, if you haven't changed the session timeout default values, you can skip Step 7.
+
+    If you are running **Platform Server 11.14.0 or earlier**, execute Step 7 to make sure both values match, thus preventing authentication issues.
+
+    </div>
+
+1. In **Session Login Settings**, ensure the **Max. Idle Time** has the same value as the **Session Timeout** for Traditional Web Apps (see [here](../../../data/session.md#session-timeout) how to configure the session timeout for Traditional Web Apps).
+
 1. Click **Save and Apply Settings to the Factory** to apply all the new runtime settings.
 
 For more information on application authentication check [Configure App Authentication](../../../../managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md).
@@ -132,3 +146,9 @@ If your authentication configuration is incorrect and preventing you from loggin
 The default Users app login page is available at the following URL:
 
 `https://<your_server_name>/Users/Login.aspx`
+
+### Common SAML configuration errors { #common-saml-errors }
+
+See how to solve common SAML configuration errors:
+
+* [Error processing SAML response - Unable to decrypt the assertion](https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Error_processing_SAML_response_-_Unable_to_decrypt_the_assertion)

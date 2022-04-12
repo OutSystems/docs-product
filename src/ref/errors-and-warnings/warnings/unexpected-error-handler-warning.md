@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c8621cd0-b3e5-4521-b4c4-c461639c4f37
+---
+
 # Unexpected Error Handler Warning
 
 Message

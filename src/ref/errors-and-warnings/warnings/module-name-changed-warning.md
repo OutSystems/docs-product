@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 00999f64-7e94-4592-a8e1-a592ae2f677b
+---
+
 # Module Name Changed Warning
 
 Message

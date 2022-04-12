@@ -1,6 +1,8 @@
 ---
 summary: Follow this tutorial to quickly create and test an example mobile app to manage tasks.
 tags: runtime-mobile; support-Mobile_Apps; support-Mobile_Apps-overview
+locale: en-us
+guid: 0ee5a8f6-0c94-4316-818f-49cc25f92283
 ---
 
 # Create Your First Mobile App
@@ -145,11 +147,11 @@ Now let's add the functionality to mark tasks as complete. Let's implement that 
 
 ## Test your Mobile App
 
-At this stage we test the mobile app. Click the **![1-Click Publish](../shared/icons-service-studio/publish.png) 1-Click Publish** button to publish the application to your environment.
+At this stage we test the mobile app. Click the **1-Click Publish** button to publish the application to your environment.
 
 ![Publish Your Mobile App](images/create-mobile-17.png)
 
-When the application is deployed, click the **![Open in Browser](../shared/icons-service-studio/open-browser.png) Open in Browser** button to test your application in a browser (Chrome and Safari are supported).
+When the application is deployed, click the **Open in Browser** button to test your application in a browser (Chrome and Safari are supported).
 
 ![Test Your Mobile App](images/create-mobile-18.png)
 

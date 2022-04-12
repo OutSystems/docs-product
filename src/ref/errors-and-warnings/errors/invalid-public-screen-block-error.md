@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: aae1e0e4-4838-4c23-9387-a7dda68cbb4f
+---
+
 # Invalid Public Screen Block Error
 
 The `Invalid Public Screen Block` error is issued in the following situations:

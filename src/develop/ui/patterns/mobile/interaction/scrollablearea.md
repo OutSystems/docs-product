@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;   
 summary: Simple scrollable Block with a placeholder for content. Ideal to display multiple elements in a single, scrollable row or column.
+locale: en-us
+guid: 3ecfdec5-b135-4faa-8c1f-110595075a02
 ---
 
 # Scrollable Area
@@ -15,17 +17,15 @@ The Scrollable Area Pattern is a simple scrollable block with a placeholder for 
 
     ![Scrollabel Area widget](<images/scrollwidget-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Scrollable Area widget into the Main Content area of your application's screen, 
 
@@ -56,5 +56,5 @@ Example result:
 | Orientation (Orientation Identifier): Optional| Set the orientation to either horizontal or vertical. Note that, when the Orientation is set to vertical, a fixed height value must be added. |
 | Height (Text): Optional | Define the height of the scrollable area. If not defined, the height of the of the parent wrapper is used (100%). |
 | Width (Text): Optional | Define the width of the scrollable area. If not defined, the width of the parent wrapper is used (100%). |
-| ScrollbarType (ScrollbarType Identifier): Optional | Choose between different scrollbar types - _Compact_, _Default_, and _None_. If _None_ is selected, the scrollbar is invisible, but you can still scroll. Horizontal scroll is not enabled with the mouse wheel but can be done with mousepad gestures.|
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+| ScrollbarType (ScrollbarType Identifier): Optional | Choose between different scrollbar types - Compact, Default, and None. If None is selected, the scrollbar is invisible, but you can still scroll. Horizontal scroll is not enabled with the mouse wheel but can be done with mousepad gestures.|
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

@@ -1,5 +1,7 @@
 ---
 tags: support-Installation_Configuration; support-Integrations_Extensions
+locale: en-us
+guid: ef8e199e-6f48-4a7a-8084-6e0cd1d5a532
 ---
 
 # Configure a SAP Connection at Runtime

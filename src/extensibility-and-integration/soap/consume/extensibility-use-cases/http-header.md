@@ -1,5 +1,7 @@
 ---
 summary: How to add an HTTP header using the SOAP Extensibility API.
+locale: en-us
+guid: 2f16774f-ec28-4597-9b56-c19599cb233e
 ---
 
 # Add an HTTP header

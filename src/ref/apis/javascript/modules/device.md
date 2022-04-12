@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb
 summary: Provides methods to access native capabilities of the device.
+locale: en-us
+guid: cb9a46ef-3b0c-48e2-9307-8fa4d00567e3
 ---
 
 # Device
@@ -9,21 +11,9 @@ Provides methods to access native capabilities of the device.
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Functions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[whenReady](device.md#whenready)</td>
-<td>
-Promise that is resolved when the 'deviceready' event is caught.
-</td>
-</tr>
-</tbody>
-</table>
+|Functions|Description|
+|---|---|
+|[whenReady](device.md#whenready)|Promise that is resolved when the 'deviceready' event is caught.|
 
 ## Functions
 

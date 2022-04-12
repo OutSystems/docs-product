@@ -1,20 +1,23 @@
 ---
 summary: Redirect URLs and create site and Screen URLs to to improve user experience and search page ranking.  
 tags: article-page,
+locale: en-us
+guid: 93e2771c-215a-42ec-a3fb-9e3a3e9d1476
 ---
 
-# Technical Preview - SEO in Reactive Web Apps
+# SEO in Reactive Web Apps
 
 As a best practice use **SEO-friendly URLs for Reactive Web Apps**. Friendly URLs provide both humans and machines an indication of the search-engine results. With Service Center you can create the SEO-friendly versions of the URLs, manage Site Rules and Redirects. Edit custom URLs in Service Studio, in the properties of each Screen.
 
 ## Prerequisites
 
-**SEO-friendly URLs for Reactive Web Apps** is a technical preview feature and requires the following:
+**SEO-friendly URLs for Reactive Web Apps** requires the following:
 
-* Platform Server 11.12.0 or later
-* Service Studio 11.11.0 or later
-* [Technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **SEO-friendly URLs for Reactive Web Apps** is active in LifeTime for all environments
+* Platform Server 11.14.0 or later
+* Service Studio 11.13.0 or later
 * OutSystems enterprise cloud offer or a properly configured on-premises installation
+
+For Platform Server versions between 11.12.0 and 11.14.0 you can enable the technical preview and use Service Studio 11.11 and later.
   
 <div class="info" markdown="1">
 
@@ -115,14 +118,14 @@ You can add custom Screen URLs in Service Studio. Go to the properties of the Sc
 
 ![Screen URLs settings and properties](images/page-redirects-properties-ss.png?width=350)
 
-If an app passes an empty string as a value for a required parameter, users see an error message. See [Empty string in a required parameter causes an error](troubleshooting.md#empty-string-in-a-required-parameter-causes-an-error) for more information.
+If an app passes an empty string as a value for a required parameter, users see an error message. See [Empty string in a required parameter causes an error](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Troubleshooting_and_known_issues_with_SEO-friendly_URLs_for_Reactive_Web_Apps#empty-string-in-a-required-parameter-causes-an-error) for more information.
 
 Here are more details about the properties.
 
 | Property          | Description                                                                                                                                                                                                             |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Custom URL**    | If you set **Custom URL** to **Yes**, Service Studio activates custom Screen URLs and lets you edit the redirect settings.                                                                                                  |
-| **Page Name**     | The name of the page to show in the URL. Use only alphabetical characters and numbers. You can use the following  special characters, but not at the beginning or at the end of the page name: "\_", "-", "/" , and "~". |
+| **Page Name**     | The name of the page to show in the URL. Use only alphabetical characters and numbers. You can use the following  special characters, but not at the beginning or at the end of the page name: `_`, `-`, `/` , and `~`. |
 | **URL Structure** | Set to **Path** to pass the parameters separated by `/` in the URL (example: `/Product/1`). Set to **Query string** to pass the parameters as a string (example: `Products?Id=1`).                                      |
 | **URL Pattern**   | Preview only. Shows the URL preview as you edit the settings.
 
@@ -176,7 +179,7 @@ The page titles show in the browser tabs, bookmarks, and results from the search
 
 <div class="warning" markdown="1">
 
-OutSystems strongly recommends that all team members update Service Studio before using dynamic page titles in a collaborative environment.    
+OutSystems strongly recommends that all team members update Service Studio before using dynamic page titles in  acollaborative environment.    
 
 </div>
 
@@ -187,3 +190,13 @@ To set the Screen names dynamically, do the following in Service Studio:
 3. Enter an expression that sets the title value during runtime. For example, `"More about" + ProductTitle`.
 
     ![Dynamic title property](images/dynamic-title-property-ss.png)
+
+## Errors
+
+A list of errors related to  **SEO-friendly URLs for Reactive Web Apps**.
+
+* [Duplicated Page Name](../../ref/errors-and-warnings/errors/duplicated-page-name.md)
+* [Invalid Page Name](../../ref/errors-and-warnings/errors/invalid-page-name.md)
+* [Invalid Format](../../ref/errors-and-warnings/errors/invalid-format-page-name.md)
+* [Invalid Parameter Order](../../ref/errors-and-warnings/errors/invalid-parameter-order.md)
+* [Reserved Page Name](../../ref/errors-and-warnings/errors/reserved-page-name.md)

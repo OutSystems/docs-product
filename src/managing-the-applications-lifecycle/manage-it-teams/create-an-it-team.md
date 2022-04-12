@@ -1,5 +1,7 @@
 ---
 summary: Teams allow you to manage the permissions of a large number of IT users over the applications in your factory.
+locale: en-us
+guid: f2286378-689d-43d2-8bd2-7f21be387c3b
 ---
 
 # Create an IT Team

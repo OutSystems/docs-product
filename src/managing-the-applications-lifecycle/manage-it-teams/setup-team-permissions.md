@@ -1,5 +1,7 @@
 ---
 summary: Using teams you can manage the permissions of several IT users working in the same business team over all the applications they own without having to grant permissions on each application individually.
+locale: en-us
+guid: 4817e9c4-cab5-4d89-ba2a-b7bf0ba260b9
 ---
 
 # Set Up the Permissions in a Team
@@ -8,7 +10,7 @@ Using teams, you can manage the permissions of several IT users working in the s
 
 In this example we want to:
 
-* Allow developers in Team Baking and Team Intranet to see and **work only on the applications of their respective teams**.
+* Allow developers in Team Banking and Team Intranet to see and **work only on the applications of their respective teams**.
 
 * Allow a senior developer of Team Banking to both **debug and add dependencies to the core applications Customers and Services**, but without granting permissions to make changes to those applications. These applications are managed by another team, the Team Core Applications.
 

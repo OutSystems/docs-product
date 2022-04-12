@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 0fa73852-d845-4c80-8b71-0b9c177a4f81
+---
+
 # Impact of Deleting Activities from Process Flows
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic lists some examples of the impact of removed activities on executing process instances.
@@ -15,7 +20,7 @@ In this case, you **avoid having a process instance suspended** if you change th
 
 ![](images/process-upgrade-resolve-remove.png)
 
-1. Use the ![](../../../shared/icons-tools/decision.png) [Decision](<../../../ref/lang/auto/Class.Decision.final.md>) tool to branch the flow in two: **Deprecated** and **New**.
+1. Use the [Decision](<../../../ref/lang/auto/Class.Decision.final.md>) tool to branch the flow in two: **Deprecated** and **New**.
 
 1. Put the activities to be deleted in the **Deprecated** branch.
 

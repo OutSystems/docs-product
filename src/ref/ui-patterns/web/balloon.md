@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Balloon UI Pattern.
+locale: en-us
+guid: d95ffaba-85b3-4152-95f5-71804d0aa12b
 ---
 
 # Balloon Reference

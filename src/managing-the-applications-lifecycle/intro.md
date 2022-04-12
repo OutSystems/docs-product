@@ -1,6 +1,8 @@
 ---
 summary: Learn more about Application Lifecycle Management (ALM) and how you can leverage ALM processes in OutSystems using the LifeTime unified management console.
-tags: support-Application_Lifecycle; support-Application_Lifecycle-overview; LifeTime
+tags: support-Application_Lifecycle; support-Application_Lifecycle-overview
+locale: en-us
+guid: e9f6f711-2df2-42a0-90c1-3b9bc8b3926b
 ---
 
 # Managing the Applications Lifecycle

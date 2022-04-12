@@ -1,7 +1,8 @@
 ---
-tags: web server
+tags: 
 summary: 
-en_title: Avoid site property updates
+locale: en-us
+guid: b50a081a-6a39-46aa-acc6-23909bcf0247
 ---
 
 
@@ -11,7 +12,7 @@ Site properties, loaded by the server and then cached for faster access, are use
 
 ## Impact
 
-Every time you update a site property, the cache of the module and its consumers will be invalidated and reloaded from the database again. This causes unnecessary database overhead for all parts of the application using site variables. 
+Every time you update a site property, the cache of the module and its consumers will be invalidated and reloaded from the database again. This causes unnecessary database overhead for all parts of the application using site properties. 
 
 ## Best practices
 

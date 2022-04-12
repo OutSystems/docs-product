@@ -1,5 +1,7 @@
 ---
 summary: How to add WS-Addressing elements to SOAP requests using the SOAP Extensibility API.
+locale: en-us
+guid: 67a70ca1-1af0-4993-8761-077e1727acda
 ---
 
 # Add WS-Addressing elements to SOAP requests

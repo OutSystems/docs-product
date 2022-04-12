@@ -1,6 +1,8 @@
 ---
 summary: Learn how to make your OutSystems Reactive Web applications accessible to everyone.
-tags: article-page; runtime-mobileandreactiveweb; accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
+tags: article-page; runtime-mobileandreactiveweb
+locale: en-us
+guid: 845ea0d1-6110-4a9f-a4ca-19e53b178825
 ---
 
 # Accessibility
@@ -149,6 +151,12 @@ To bind labels with the Forms fields they refer to, perform the following steps:
 ![Associating labels to forms fields](images/form-labels-ss.png)
 
 After following these steps for each input field and published the module, you can test reading the inputs captions using a screen reader.
+
+<div class="info" markdown="1">
+
+Use the `aria-labelledby` attribute for more control when setting up relationships between objects and their text labels. For more information, see [Examples of ARIA](aria-roles-and-attributes.md#examples-of-aria). 
+
+</div>
 
 ### Form validation on screen readers
 

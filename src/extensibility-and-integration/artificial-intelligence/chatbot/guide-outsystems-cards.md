@@ -1,6 +1,8 @@
 ---
 summary: Learn how to combine OutSystems logic with Azure for advanced chatbot features. See how to use cards in the chatbot responses.
 tags:
+locale: en-us
+guid: 01af56ec-fb0d-44ea-a78f-8323557ee6bf
 ---
 
 # Reply with cards

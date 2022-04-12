@@ -1,6 +1,8 @@
 ---
 summary: Check the causes and recommendations on how to solve an Old Producer error.
 tags:
+locale: en-us
+guid: 0897286f-5a9a-480b-992f-1855920b9ed1
 ---
 
 # Old Producer Error

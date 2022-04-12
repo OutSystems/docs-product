@@ -1,6 +1,8 @@
 ---
 summary: Expose a REST API to allow other systems to retrieve or manipulate information.
 tags: 
+locale: en-us
+guid: 28d56896-53c1-40c0-ac3d-84c757ac71d0
 ---
 
 # Expose a REST API

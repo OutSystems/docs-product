@@ -1,6 +1,8 @@
 ---
 summary: Check how to create and execute processes, which are elements that allow you to integrate your business processes into your applications.
 tags: support-webapps
+locale: en-us
+guid: 7f9ed2cf-c73b-467e-bdfa-cf4ba9655613
 ---
 
 # Processes
@@ -40,7 +42,7 @@ A process can also be [executed](<../../ref/lang/auto/Class.Execute Process.fina
 
 Service Studio provides you with mechanisms to reuse Processes among modules. You can expose your Processes to other modules or use Processes defined in another module.
 
-If you are using an Oracle or DB2 database, commit the transaction before launching a Process instance.
+If you are using an Oracle, PostgreSQL or DB2 database, commit the transaction before launching a Process instance.
 
 
 ## Process Execution

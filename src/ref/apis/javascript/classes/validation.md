@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb
 summary: Provides methods to show validation messages on widgets and set their validation values. Used when validating widgets inside iterators, since it's not possible to do it in the usual way.
+locale: en-us
+guid: 68b5f614-594d-4374-bde6-fc2f815c8b05
 ---
 
 # Validation
@@ -13,33 +15,11 @@ Provides methods to show validation messages on widgets and set their validation
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Methods</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[isWidgetValid](validation.md#iswidgetvalid)</td>
-<td>
-Checks if a given widget is currently valid.
-</td>
-</tr>
-<tr>
-<td>[setWidgetAsInvalid](validation.md#setwidgetasinvalid)</td>
-<td>
-Sets a widget as invalid, with a given validation message.
-</td>
-</tr>
-<tr>
-<td>[setWidgetAsValid](validation.md#setwidgetasvalid)</td>
-<td>
-Sets a widget as valid.
-</td>
-</tr>
-</tbody>
-</table>
+|Methods|Description|
+|---|---|
+|[isWidgetValid](validation.md#iswidgetvalid)|Checks if a given widget is currently valid.|
+|[setWidgetAsInvalid](validation.md#setwidgetasinvalid)|Sets a widget as invalid, with a given validation message.|
+|[setWidgetAsValid](validation.md#setwidgetasvalid)|Sets a widget as valid.|
 
 ## Methods
 

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 76cb90a0-8399-4aab-a5de-279278094c1e
+---
+
 # The log tables and views
 
 The log model is designed to have minimal interference in the application runtime. Because of this the log tables have limited indexes, making them inefficient for querying. Depending on the volume of logs and the intended use, we recommend that you copy data from the log database to a separate location where you can create a model optimized for querying.
@@ -52,5 +57,11 @@ Logs are stored in a different table every week. The rotation occurs every Frida
 Rotation means that:
 
 * The definition of the views in the database, for each log type, is updated to point to the next cycle number.
+
 * Log writing automatically begins to happen in the tables from the new cycle. This part is made algorithmically in the Deployment Controller Service — no changes to the database happen for this purpose.
-* Old log tables are cleaned after their retention period passes, defined in OutSystems Configuration Tool, preparing them for later use. The retention period configured in OutSystems Cloud is 9 weeks.
+
+* Old log tables are cleaned after their retention period passes, preparing them for later use. For self-managed environments, you configure the retention period in the OutSystems Configuration Tool > Log tab > Advanced settings. For OutSystems Cloud, the retention period is 9 weeks and it cannot be changed.
+
+<div class="info" markdown="1">
+You can only view the last two weeks of logs in Service Center. Older logs are available directly in the database within the retention period.
+</div>

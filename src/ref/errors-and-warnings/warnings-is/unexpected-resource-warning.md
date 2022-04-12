@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: a718f5ab-fe6d-4f5f-b176-172ed90c9a0c
+---
+
 # Unexpected Resource Warning
 
 Message

@@ -1,6 +1,8 @@
 ---
 summary: Learn about exception handling in OutSystems.
 tags: support-Application_Troubleshooting; support-webapps
+locale: en-us
+guid: aa97807f-3db5-4d86-a746-7fe2506481a6
 ---
 
 # Exception Handling Mechanism
@@ -22,6 +24,12 @@ As an example, consider an Action B raising a User Exception named MyUserExcepti
 ![Workflow used by the platform to determine the exception handling flow to execute](images/handling-mechanism.png)
 
 You should have, at least, one Exception Handler in your application flow to inform and allow the end user to continue to navigate.
+
+<div class="info" markdown="1">
+
+**OnApplicationReady** is a special event handler that is not covered by the Global Exception Handler. For that reason, error handling should be implemented in the action itself.
+
+</div>
 
 ## Handling exceptions raised by integrations
 

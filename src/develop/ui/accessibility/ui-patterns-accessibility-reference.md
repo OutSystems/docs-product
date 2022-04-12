@@ -1,6 +1,8 @@
 ---
 summary: Learn how to configure accessibility settings specific to some OutSystems UI patterns.
-tags: accessibility; runtime-reactiveweb; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria; ui-patterns-accessibility-settings
+tags: runtime-reactiveweb
+locale: en-us
+guid: 41f4db30-ace4-4972-8cad-f954f43cd831
 ---
 
 # UI Patterns accessibility reference
@@ -77,4 +79,4 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
 OutSystems recommends that you create a sample screen from the **Master Detail** Screen Template and check the accessibility settings in a working example.
 
-![Master detail axample](images/master-detail-example-ss.png)
+![Master detail example](images/master-detail-example-ss.png)

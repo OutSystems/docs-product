@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 272cf76e-1e15-4cd0-8fc8-ea8107d9a8fe
+---
+
 # Import Entities from a Database
 
 OutSystems integrates with external databases, making it possible to use data from those databases in your OutSystems applications.
@@ -6,4 +11,4 @@ For this, you can use the **Connect to External Table or View** wizard in Integr
 
 For the list of supported external databases, check the [System Requirements](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/OutSystems_Platform_system_requirements>).
 
-The import process has several steps done in different tools. Follow the instructions in [Connect to an External Database](<../../connect-external-db.md>) that take you through all the required steps.
+The import process has several steps done in different tools. Follow the instructions in [Connect to an External Database](../../external-database/connect-external-db.md) that take you through all the required steps.

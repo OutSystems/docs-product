@@ -1,6 +1,8 @@
 ---
 summary: How to send a specific HTTP Status Code in the response of an exposed REST API method.
 tags: 
+locale: en-us
+guid: c0c56e61-281f-410c-8fb2-a07561bbca46
 ---
 
 # Change the HTTP Status Code of a REST API

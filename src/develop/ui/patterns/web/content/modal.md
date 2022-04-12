@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Modal is a box with content that interrupts the end user and demands an action.
+locale: en-us
+guid: 64cf2199-6b69-480b-a63e-49b91965e777
 ---
 
 # Modal
@@ -19,17 +21,15 @@ For the purposes of this example, our app already contains a form where the user
 
     ![](<images/modal-5-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. To From the Toolbox, drag the Modal widget into the Main Content area of your application's screen, and on the **Properties** tab, enter a name for the widget. In this example we enter `Confirmation`.
 
@@ -75,8 +75,8 @@ The result of this example looks something like the following:
 
 | **Property** |  **Description** |  
 |---|---|
-| Position (PositionExtended Identifier): Optional| Set the position of the Modal on the screen. <p>Examples</p><ul><li>_Blank_ - The modal is positioned in the center of the screen (_Entities.PositionExtended.Center_). This is the default.</li><li>_Entities.PositionExtended.TopLeft_ - The modal is positioned top-left of the screen.</li></ul>|
+| Position (PositionExtended Identifier): Optional| Set the position of the Modal on the screen. <p>Examples</p><ul><li>Blank - The modal is positioned in the center of the screen (Entities.PositionExtended.Center). This is the default.</li><li>Entities.PositionExtended.TopLeft - The modal is positioned top-left of the screen.</li></ul>|
 | HasOverlay (Boolean): Optional | If True, an overlay is enabled behind the modal. This is the default. If False, there is no overlay. |
-| EnterAnimation (EnterAnimation Identifier): Optional | Define from where the animation enters the screen. <p>Examples</p><ul><li>_Blank_ - The animation goes from a small size to its rendered size (_Entities.EnterAnimation.EnterScale_). This is the default.</li><li>_Entities.EnterAnimation.EnterBottom_ - The animation enters from the bottom of the screen.</li></ul> |  
-| LeaveAnimation (LeaveAnimation Identifier ): Optional | Define from where the animation leaves the screen. <p>Examples</p><ul><li>_Blank_ - The animation goes from its rendered size to a small size.(_Entities.LeaveAnimation.EnterScale_). This is the default.</li><li>_Entities.LeaveAnimation.EnterBottom_ - The animation leaves from the bottom of the screen.</li></ul>|
-| ExtendedClass (Text): Optional |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+| EnterAnimation (EnterAnimation Identifier): Optional | Define from where the animation enters the screen. <p>Examples</p><ul><li>Blank - The animation goes from a small size to its rendered size (Entities.EnterAnimation.EnterScale). This is the default.</li><li>Entities.EnterAnimation.EnterBottom - The animation enters from the bottom of the screen.</li></ul> |  
+| LeaveAnimation (LeaveAnimation Identifier ): Optional | Define from where the animation leaves the screen. <p>Examples</p><ul><li>Blank - The animation goes from its rendered size to a small size.(Entities.LeaveAnimation.EnterScale). This is the default.</li><li>Entities.LeaveAnimation.EnterBottom - The animation leaves from the bottom of the screen.</li></ul>|
+| ExtendedClass (Text): Optional |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|

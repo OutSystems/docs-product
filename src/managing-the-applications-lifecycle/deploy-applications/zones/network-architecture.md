@@ -1,9 +1,17 @@
 ---
 summary: Check the recommended network architecture for using deployment zones.
 tags: support-Application_Lifecycle; support-Infrastuture_Architecture
+locale: en-us
+guid: 74a8ebdd-0c4e-45a1-b39e-51a170a27524
 ---
 
 # Recommended Network Architecture
+
+<div class="info" markdown="1">
+
+Deployment Zones are only available in OutSystems on-premises installations.
+
+</div>
 
 When using deployment zones with more than one front-end server, you must use additional pieces of software (or hardware) to ensure that user requests get to the correct front-end servers where you deployed your OutSystems applications.
 

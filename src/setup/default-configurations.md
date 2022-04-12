@@ -1,6 +1,8 @@
 ---
 summary: To install and run OutSystems, you need permissions to change files in the file system, run services, listen to specific ports, and make changes to the database.
-tags: serverconfigurations; support-application_development; support-Cloud_Platform; support-devOps; support-installation; support-Installation_Configuration; support-Integrations_Extensions
+tags: support-devOps; support-installation; support-Installation_Configuration; support-Integrations_Extensions
+locale: en-us
+guid: e7fb04c6-9cb6-48d9-a4e7-8d4ad3702613
 ---
 
 # Default Platform Server and database configurations

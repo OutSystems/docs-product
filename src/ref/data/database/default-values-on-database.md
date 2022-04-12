@@ -1,5 +1,7 @@
 ---
 tags: support-Database
+locale: en-us
+guid: cbbcab1c-2534-43e7-b734-9fef31683b88
 ---
 
 # Default Values on Database

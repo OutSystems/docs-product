@@ -1,6 +1,8 @@
 ---
 summary: In this article you can find more information about tasks associated with generating and publishing iOS and Android mobile apps.
 tags: runtime-mobile; support-mobile
+locale: en-us
+guid: 952b6539-a884-4fed-bcdd-90d4145d41b7
 ---
 
 # More Information on Generating and Distributing Mobile Apps
@@ -69,7 +71,7 @@ Now that you have created the CSR file, go back to the Apple Developer Portal an
 
 <div class="warning" markdown="1">
 
-Be sure to back-up the CSR and the CER files in a safe place.
+Back up the CSR and the CER files in a safe place.
 
 </div>
 
@@ -87,15 +89,19 @@ where `<privateKey>` is the file generated when creating the CSR file, `<app_pem
 
 You will be asked for a password, create one and remember or store it somewhere &#8212; you'll need to insert it in OutSystems. The P12 file created in the last step is the certificate to generate the iOS app.
 
+If you are creating the P12 file with OpenSSL 3.0, add the flag `-legacy` to the previous command. If OpenSSL is not installed system-wide, the command returns the error "pkcs12: unable to load provider legacy". If that happens, you can either add the flag `-provider-path <openssl_path>/providers` to the previous command or set the environment variable `OPENSSL_MODULES` to point to the directory `<openssl_path>/providers`. The command should look like the following:
+
+    <path_to_openssl_bin>\openssl.exe pkcs12 -legacy -provider-path <openssl_path>/providers -export -inkey <privateKey>.key -in <app_pem>.pem -out <app_p12>.p12
+
 ### Create a Provisioning Profile
 
 A provisioning profile allows your application to be launched on Apple devices and use app services like Apple Pay or push notifications.
 
 The provisioning profiles you can use are:
 
-* **iOS App Development**: this Development Provision Profile allows you to generate a development version (containing debug information) of your mobile app that can be installed and launched in a given set of devices for development tests. Only the devices specified for the provisioning profile will be able install and launch the app. If a given user's device is not authorized to install the app, the user will get a "Unable to Download App" alert message. 
+* **iOS App Development**: this Development Provision Profile allows you to generate a development version (containing debug information) of your mobile app that can be installed and launched in a given set of devices for development tests. Only the devices specified for the provisioning profile will be able install and launch the app. If a given user's device is not authorized to install the app, the user will get an "Unable to Download App" alert message. 
 
-* **Ad Hoc**: this Distribution Provisioning Profile allows you to generate a release version of your mobile app that can only be used in a limited list of devices. Use this profile to distribute your application to a limited group of end users. Only the devices specified for the provisioning profile will be able install and launch the app. If a given user's device is not authorized to install the app, the user will get a "Unable to Download App" alert message. 
+* **Ad Hoc**: this Distribution Provisioning Profile allows you to generate a release version of your mobile app that can only be used in a limited list of devices. Use this profile to distribute your application to a limited group of end users. Only the devices specified for the provisioning profile will be able install and launch the app. If a given user's device is not authorized to install the app, the user will get an "Unable to Download App" alert message. 
 
 * **App Store**: this Distribution Provisioning Profile, available for the Apple Developer Program, allows you to generate a release version of your mobile app that can be published and distributed through the App Store. Use this profile when your application has been thoroughly tested and is ready to be made available to everyone through the App Store. 
 
@@ -161,6 +167,6 @@ After the command executes, a new file named `<keystore_name>.keystore` is going
 
 * Create your keystore with a long validity (in the command example we are extending the validity of the keystore till 2044). If your keystore expires, you can't renew it and so you won't be able to update your app. 
 
-* Keep your keystore file in a safe place. In case third-party has it can sign and distribute apps under your identity. 
+* Keep your keystore file in a safe place. In case a third-party has it can sign and distribute apps under your identity. 
 
 For more information, check the [Android official documentation](https://developer.android.com/studio/publish/app-signing.html#considerations).

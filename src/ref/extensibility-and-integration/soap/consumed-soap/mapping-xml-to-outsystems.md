@@ -1,5 +1,7 @@
 ---
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: ac774bf3-82fc-480e-a633-7652e559d52a
 ---
 
 # Mapping XML Data Types to OutSystems Data Types
@@ -8,27 +10,27 @@ When consuming SOAP Web Services in your module, OutSystems maps the XML Data Ty
 
 XML Data Types  |  OutSystems Data Types  
 ---|---  
-anySimpleType %%anyAtomicType %%anyType %%anyURI  |  Text %%Text %%Text %%Text  
-bool %%boolean %%base64Binary %%byte %%bytev  |  Boolean %%Boolean %%Binary %%Integer %%Integer 
+anySimpleType <br/>anyAtomicType <br/>anyType <br/>anyURI  |  Text <br/>Text <br/>Text <br/>Text  
+bool <br/>boolean <br/>base64Binary <br/>byte <br/>bytev  |  Boolean <br/>Boolean <br/>Binary <br/>Integer <br/>Integer 
 char  |  Integer  
 choice  |  Static Entity + Structure (check Notes)  
-date %%dateTime %%dateTimeStamp %%decimal %%double %%duration %%dayTimeDuration %%yearMonthDuration  |  Date %%Date Time %%Date Time %%Text %%Text %%Text %%Text %%Text
-ENTITY %%ENTITIES %%enum  |  Text %%Text %%Static Entity (check Notes)
+date <br/>dateTime <br/>dateTimeStamp <br/>decimal <br/>double <br/>duration <br/>dayTimeDuration <br/>yearMonthDuration  |  Date <br/>Date Time <br/>Date Time <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text
+ENTITY <br/>ENTITIES <br/>enum  |  Text <br/>Text <br/>Static Entity (check Notes)
 float  |  Text  
-gDay %%gMonth %%gMonthDay %%gYearMonth %%gYear  |  Text %%Text %%Text %%Text %%Text  
+gDay <br/>gMonth <br/>gMonthDay <br/>gYearMonth <br/>gYear  |  Text <br/>Text <br/>Text <br/>Text <br/>Text  
 hexBinary  |  Binary  
-ID %%IDREF %%IDREFS %%int %%integer  |  Text %%Text %%Text %%Integer %%Text  
-language %%long  |  Text %%Long Integer  
+ID <br/>IDREF <br/>IDREFS <br/>int <br/>integer  |  Text <br/>Text <br/>Text <br/>Integer <br/>Text  
+language <br/>long  |  Text <br/>Long Integer  
 Microsoft Datasets  |  Text  
-Name %%NCName %%negativeInteger %%NMTOKEN %%NMTOKENS %%nonNegativeInteger %%nonPositiveInteger %%normalizedString %%NOTATION  |  Text %%Text %%Text %%Text %%Text %%Text %%Text %%Text %%Text  
+Name <br/>NCName <br/>negativeInteger <br/>NMTOKEN <br/>NMTOKENS <br/>nonNegativeInteger <br/>nonPositiveInteger <br/>normalizedString <br/>NOTATION  |  Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text <br/>Text  
 Object  |  Text  
 positiveInteger  |  Text  
 QName  |  Text  
-short %%signed byte %%string  |  Integer %%Integer %%Text  
-time %%token  |  Time %%Text  
-unsignedByte %%unsignedInt %%unsignedLong %%unsignedShort  |  Integer %%Long Integer %%Decimal %%Integer  
+short <br/>signed byte <br/>string  |  Integer <br/>Integer <br/>Text  
+time <br/>token  |  Time <br/>Text  
+unsignedByte <br/>unsignedInt <br/>unsignedLong <br/>unsignedShort  |  Integer <br/>Long Integer <br/>Decimal <br/>Integer  
 XML Element  |  Text  
-XSD Arrays  |  List %%In OutSystems, a List is a sequence of elements of any data type. Therefore, an XSD array is mapped into a list of records which elements are a structure that represents those elements in the XSD array. If you have an XSD array of integers, the mapping in Service Studio is a List of structures with one attribute of type Integer.  
+XSD Arrays  |  List <br/>In OutSystems, a List is a sequence of elements of any data type. Therefore, an XSD array is mapped into a list of records which elements are a structure that represents those elements in the XSD array. If you have an XSD array of integers, the mapping in Service Studio is a List of structures with one attribute of type Integer.  
 XSD Complex data types  |  Record  
 (Other types)  |  Text  
 

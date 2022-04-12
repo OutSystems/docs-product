@@ -1,6 +1,8 @@
 ---
 summary: Learn about Accessible Rich Internet Applications (ARIA) roles and attributes and how to add these in your applications.
-tags: accessibility; runtime-reactiveweb; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
+tags:
+locale: en-us
+guid: e4cd9450-4fe2-4145-8f1b-0852ab8c081d
 ---
 
 # Accessible Rich Internet Applications roles and attributes

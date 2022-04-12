@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: fa3cf5ad-5e7b-4fdd-acc5-7b3f6c43791e
+---
+
 # Resource Editor
 
 The Resource Editor allows you to edit the properties of a resource that belongs to your extension. This editor is displayed when a resource is selected in the [Resources tree](<../resources-tree.md>) or in the [Multi-tab Editor](<../multi-tab-editors.md>).
@@ -5,60 +10,13 @@ The Resource Editor allows you to edit the properties of a resource that belongs
 ## Resource Storage
 
 The value of the Deploy Action property indicates where the resource is stored when the module that added a reference to this extension is published. The next table describes the possible values, their behavior, and in what types of files they should be used.  
-  
-<table markdown="1">  
-<tr>
-<th>
-Deploy Action
-</th>
-<th>
-Description
-</th>
-<th>
-Files extensions
-</th> 
-</tr>
-<tr>
-<td>
-Copy to Binaries directory
-</td>
-<td>
-The resources are copied to the Platform Server where the module is published. The files are stored in the `bin2` directory, under the module directory.  
-![](images/note.gif) Files stored in this directory are not accessible through the Internet browser.
-</td>
-<td>
-dll, config, manifest, jar
-</td> </tr>
-<tr>
-<td>
-Copy to Application directory
-</td>
-<td>
-The resources are copied to the Platform Server where the module is published. The files are stored in the module directory.
-</td>
-<td>
-css, js, asmx, aspx
-</td> </tr>
-<tr>
-<td>
-Copy to Images directory
-</td>
-<td>
-The resources are copied to the Platform Server where the module is published. The files are stored in the `img` directory under the module directory.
-</td>
-<td>
-bmp, eps, jpg, jpeg, gif, tiff, ico and other image format files
-</td> </tr>
-<tr>
-<td>
-Ignore
-</td>
-<td>
-The resources are not copied to the Platform Server. They belong to the extension but are not available in the server.
-</td>
-<td>
-source files, documentation, etc.
-</td> </tr> </table>
+
+|Deploy Action|Description|Files extensions|
+|--- |--- |--- |
+|Copy to Binaries directory|The resources are copied to the Platform Server where the module is published. The files are stored in the `bin2` directory, under the module directory.<br/>![](images/note.gif) Files stored in this directory are not accessible through the Internet browser.|dll, config, manifest, jar|
+|Copy to Application directory|The resources are copied to the Platform Server where the module is published. The files are stored in the module directory.|css, js, asmx, aspx|
+|Copy to Images directory|The resources are copied to the Platform Server where the module is published. The files are stored in the `img` directory under the module directory.|bmp, eps, jpg, jpeg, gif, tiff, ico and other image format files|
+|Ignore|The resources are not copied to the Platform Server. They belong to the extension but are not available in the server.|source files, documentation, etc.|
 
 ![](images/warning.gif) You can change the Deploy Action property but this operation should be done with care because if a DLL or a JAR is not copied to the Binaries directory, the module won't be able to use the actions implemented by that DLL or JAR.
 

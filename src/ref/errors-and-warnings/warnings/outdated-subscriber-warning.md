@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 7fa65fdc-8d24-4c0b-afba-67d556a0bbf9
+---
+
 # Outdated Subscriber Warning
 
 Message

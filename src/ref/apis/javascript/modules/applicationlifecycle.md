@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb
 summary: Provides information about the status of the application's lifecycle. Used to protect the app during upgrades, when local model access shouldn't be allowed, and to customize the application loading process.
+locale: en-us
+guid: 90d5caaf-3d6a-4ddc-b2de-012bbec4c2f3
 ---
 
 # ApplicationLifecycle
@@ -29,28 +31,10 @@ $public.ApplicationLifecycle.listen({
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Functions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[isUpgradingVersion](applicationlifecycle.md#isupgradingversion)</td>
-<td>
-Returns <code>true</code> if the application version is currently being upgraded.
-Used to determine the kind of feedback to provide when the application is initialized (e.g. splash screen).
-</td>
-</tr>
-<tr>
-<td>[listen](applicationlifecycle.md#listen)</td>
-<td>
-Registers listeners for application load events.
-</td>
-</tr>
-</tbody>
-</table>
+|Functions|Description|
+|---|---|
+|[isUpgradingVersion](applicationlifecycle.md#isupgradingversion)|Returns `true` if the application version is currently being upgraded. Used to determine the kind of feedback to provide when the application is initialized (e.g. splash screen).|
+|[listen](applicationlifecycle.md#listen)|Registers listeners for application load events.|
 
 ## Functions
 

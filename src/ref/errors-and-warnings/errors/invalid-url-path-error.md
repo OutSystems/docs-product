@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c4e418eb-f299-41a2-a476-80ff44258482
+---
+
 # Invalid URL Path Error
 
 The `Invalid URL Path` error is issued in the following situations:
@@ -6,7 +11,7 @@ Message
 :   `'URL Path' property must start with '/'.`
 
 Cause
-:   The specified **URL Path** value doesn't start with '/' in the definition of the REST API.
+:   The specified **URL Path** value doesn't start with `/` in the definition of the REST API.
 
 Recommendation
 :   Review the syntax of the URL path.
@@ -17,7 +22,7 @@ Message
 :   `Mismatching braces in property 'URL Path' of the (<method name>) REST API method.`
 
 Cause
-:   The opening and closing curly braces ('{' and '}') don't match in the URL of the REST API.
+:   The opening and closing curly braces (`{` and `}`) don't match in the URL of the REST API.
 
 Recommendation
 :   Review the syntax of the URL path.
@@ -72,15 +77,15 @@ Message
 :   `Invalid URL characters in property 'URL Path' of the (<method name>) REST API method.`
 
 Cause
-:   You used reserved characters like '-', ';', or '?' in the **URL Path** property.
+:   You used reserved characters like `;`, `?`, or `=` in the **URL Path** property.
 
 Recommendation
 :   Review the URL set in the **URL Path** property, removing any reserved characters.
 
     Notes:
 
-    * Even though you can use the '/' character in **URL Path** values, this character is usually reserved for specifying hierarchical structures in REST methods.
-    * OutSystems reserves the '{' and '}' characters for including the value of REST method input parameters in the URL. Check [Customize REST URLs](../../../extensibility-and-integration/rest/expose-rest-apis/customize-rest-urls.md) for more information.
+    * Even though you can use the `/` character in **URL Path** values, this character is usually reserved for specifying hierarchical structures in REST methods.
+    * OutSystems reserves the `{` and `}` characters for including the value of REST method input parameters in the URL. Check [Customize REST URLs](../../../extensibility-and-integration/rest/expose-rest-apis/customize-rest-urls.md) for more information.
 
 <div class="info" markdown="1">
 

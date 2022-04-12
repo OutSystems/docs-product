@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 966c33e2-bdc0-4847-91b3-9fbda9b29d9f
+---
+
 # Redacting information from REST API logs
 
 You can redact sensitive input parameter values from the logs of a consumed REST API, containing information like an employee's salary or health data.

@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Iframe displays information from other apps on the screen in small previews.
+locale: en-us
+guid: e334605f-9e05-484e-b50e-5450497c2412
 ---
 
 # Iframe
@@ -23,17 +25,15 @@ You can use the Iframe UI Pattern to display information from other apps, on you
 
     ![](<images/iframe-6-ss.png>)
 
-    If the UI widget does not display, it may be because you used a ready-made app, which deletes unused widgets from the module. To make additional widgets available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
 
-    a. Go to **Module > Manage dependencies**.
+    1. In the Toolbox, click **Search in other modules**.
 
-    b. Search for and select the relevant Producer, for example OutSystemsUI. Ensure Show All is selected. 
-
-    c. On the Public elements for the selected Producer displayed on the right, ensure Show All is selected.
+    1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    d. Search for and select the element you want to add, and click **Apply**. 
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
     
-    e. In Service Studio, in the Toolbox, search for the widget again.
+    1. In the Toolbox, search for the widget again.
 
 1. From the Toolbox, drag the Iframe widget into the Main Content area of your application's screen.
 
@@ -51,7 +51,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property | Description |
 |---|---|
-| SourceURL (Text): Mandatory | The target URL that loads on the Iframe.<p>Examples<ul><li>_"https://www.wikipedia.com"_ - Displays the Wikipedia website in your app as a bite-size preview</li></ul></p> | 
-| Title (Text): Optional | Iframe title.<p>Examples<ul><li>_"Wikipedia Website"_ - Displays _Wikipedia Website_ as the Iframe title</li></ul></p>|
-| Height (Text): Optional  | Iframe height (default is 100%). <p>Examples<ul><li>_"100%"_ - The iframe height is 100% </li><li>_200_ - The iframe is 200 pixels high </li></ul></p>|
-| Width (Text): Optional | Iframe width (default is 100%). <p>Examples<ul><li> _"100%"_ - The iframe width is 100%</li><li>_200_ - The iframe is 200 pixels wide </li></ul></p>|
+| SourceURL (Text): Mandatory | The target URL that loads on the Iframe.<p>Examples<ul><li>"https://www.wikipedia.com" - Displays the Wikipedia website in your app as a bite-size preview</li></ul></p> | 
+| Title (Text): Optional | Iframe title.<p>Examples<ul><li>"Wikipedia Website" - Displays **Wikipedia Website** as the Iframe title</li></ul></p>|
+| Height (Text): Optional  | Iframe height (default is 100%). <p>Examples<ul><li>"100%" - The iframe height is 100% </li><li>200 - The iframe is 200 pixels high </li></ul></p>|
+| Width (Text): Optional | Iframe width (default is 100%). <p>Examples<ul><li> "100%" - The iframe width is 100%</li><li>200 - The iframe is 200 pixels wide </li></ul></p>|

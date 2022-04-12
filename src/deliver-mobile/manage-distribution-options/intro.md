@@ -1,6 +1,8 @@
 ---
 summary: Mobile apps updates distribution setting lets you control how the apps update on user devices. Select store-only updates or hybrid updates. The store-only updates go through Google Play or the Apple App Store, and always update the native shell. In hybrid updates, apps can update the logic inside the existing native shell automatically, or require an update of native shell.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
+locale: en-us
+guid: c9f2e601-8b4c-4dc7-93d4-e456c058b6f4
 ---
 
 # Technical Preview - Configure mobile apps updates distribution
@@ -10,8 +12,6 @@ With **mobile apps updates distribution settings**, you can choose how apps upda
 **Store-only updates** require the download of the entire native build to the user devices. These are updates through Google Play or the Apple App Store, or a private store. The store updates always bring both the native shell of the app to user devices and the app logic. This a traditional store distribution model.
 
 **Hybrid updates** are lightweight updates where the app itself downloads only the new app parts, without downloading and updating the native mobile shell. These updates are efficient when you slightly change the UI or logic, and when the app works with the already installed native shell. When the changes require an update of the entire app, you can still publish the app via the app store.
-
-<div class="info" markdown="1">
 
 ## Prerequisites
 
@@ -37,7 +37,6 @@ You can deactivate this technical preview only after you meet both of these cond
 
 These steps ensure that the deployment in LifeTime works correctly and that the apps continue working for your users.
 
-</div>
 
 ## How LifeTime manages the configuration of mobile apps updates { #about }
 
@@ -150,7 +149,7 @@ Follow these steps to check if an app receives store-only updates or hybrid upda
 
 1. Click **Settings** to open the app settings screen.
 
-   ![App details screen in LifeTime](images/app-details-lt.png?width=400)
+    ![App details screen in LifeTime](images/app-details-lt.png?width=400)
 
 1. At the top of the screen, click the name of the environment in **Settings in (ENVIRONMENT)**, and then select the environment from the list.
 
@@ -178,7 +177,7 @@ If you're a Service Studio developer or LifeTime administrator, keep in mind the
 
     <div class="warning" markdown="1">
 
-    It's of a paramount importance that you edit the logic so the app works correctly for all users that decide to update the app. OutSystems is preparing more documentation to guide you in creating apps for resilient updates.
+    It's of a paramount importance that you edit the logic so the app works correctly for all users that decide to update the app.
 
     </div>
 

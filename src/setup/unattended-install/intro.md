@@ -1,16 +1,11 @@
 ---
 summary: Learn the unattended or automated processes of installing or updating OutSystems Platform Server, and adding a new front-end server.
 tags: article-page; support-Installation_Configuration; support-Installation_Configuration-overview
+locale: en-us
+guid: 4f39d91e-bc2f-4eac-a4ca-b8c660d97d0e
 ---
 
 # Unattended Installation and Upgrade
-
-<pre class="script-css">
-/* HIDE H2, H3, H4 AND H5 FROM TOC */
-#mt-toc-container li li {
-    display:none;
-}
-</pre>
 
 <div class="info" markdown="1">
 
@@ -18,13 +13,15 @@ This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available
 
 </div>
 
-The goal of this document is to describe the unattended or automated processes of installing or upgrading OutSystems Platform Server in application environments, and adding a new front-end server.
+This document describes the unattended or automated process of installing or upgrading the OutSystems Platform Server in application environments, and adding a new front-end server.
+
+Additionally, it describes how to perform the unattended installation or upgrade of the LifeTime Management Console.
 
 ## Overview
 
-OutSystems allows performing silent or automated Platform Server installations and upgrades, as well as adding a new front-end server.
+OutSystems allows performing silent or automated installations and upgrades of the Platform Server component, as well as adding a new front-end server.
 
-The process for installing or upgrading OutSystems Platform Server in unattended mode involves the following high-level steps:
+The process for installing or upgrading the OutSystems Platform Server component in unattended mode involves the following high-level steps:
 
 1. Install the OutSystems platform prerequisites
 1. Install the Development Environment binaries
@@ -35,9 +32,13 @@ The process for installing or upgrading OutSystems Platform Server in unattended
 1. Upload the license file (requires manual intervention)
 1. Only for upgrades: republish the entire factory
 
-The following sections present detailed instructions on how to install, upgrade, and add front-end servers in unattended mode.
+The following sections present detailed instructions on how to install or upgrade the OutSystems Platform Server component of your application environments in unattended mode, and add front-end servers.
+
+The [last section](#lifetime) explains how to use a similar process to execute the unattended installation or upgrade of the LifeTime Management Console environment.
 
 ## Before you start
+
+* Make sure you are aware of the general process to [upgrade an OutSystems environment](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/01_Upgrade_OutSystems_Platform).
 
 * Download the [Installation Checklist](http://www.outsystems.com/goto/checklist-11) from OutSystems website.
 
@@ -49,7 +50,7 @@ The following sections present detailed instructions on how to install, upgrade,
 
     Adjust them if necessary.
 
-## First install
+## First install { #first-install }
 
 ### 1. Install the OutSystems platform prerequisites
 
@@ -147,7 +148,7 @@ Manually obtain a valid OutSystems platform license from [www.outsystems.com/lic
 <platform_path>\ConfigurationTool.com /UploadLicense <license_file.lic>
 ```
 
-## Upgrade
+## Upgrade { #upgrade }
 
 ### 1. Install the OutSystems platform prerequisites
 
@@ -275,6 +276,16 @@ Run the following:
 
 ## Adding a Front-End
 
+<div class="info" markdown="1">
+
+When adding a new front-end server to your environment, make sure that:
+
+* There are no ongoing deployments or solution publishes, and also no prepared deployments to continue, in case you have [two-stage deployments](../../managing-the-applications-lifecycle/deploy-applications/deploy-in-a-short-deployment-window.md) enabled in the environment. Having ongoing or prepared deployments when adding a new front-end server might prevent the correct deployment of the modules.
+
+* The new front-end server is a clean installation, it doesn't contain settings or deployed applications from a previous OutSystems installation. Otherwise, you might need to republish all the environment modules or the deployment of new applications might fail.
+
+</div>
+
 ### 1. Install the Platform Server binaries
 
 Implies execution of the steps described in the **Pre-installation Checklist** (e.g. server roles and features, services options). The OutSystems Platform Server installation package can [automatically install most of the prerequisites](../intro.md#prerequisites).
@@ -306,16 +317,16 @@ Copy the following files from the **controller** machine to the **front-end** ma
 For SQL Server and Azure SQL Database:
 
 ```
-<platform_path>\ConfigurationTool.com /SetupInstall <platform_db_admin_username> <platform_db_admin_password> <logging_db_admin_username> <logging_db_admin_password>
+<platform_path>\ConfigurationTool.com /UpgradeInstall
 ```
 
 For Oracle:
 
 ```
-<platform_path>\ConfigurationTool.com /SetupInstall
+<platform_path>\ConfigurationTool.com /UpgradeInstall
 ```
 
-## Exit Codes and Logging
+## Exit codes and logging
 
 The OutSystems Platform Server installation package will return different exit codes depending on the install status:
 
@@ -343,3 +354,28 @@ Where `<current_user>` is the user installing the platform. The available log fi
 
 `PerformanceTuning.log`
 :   Lists all the steps done to perform tuning optimizations (if applicable).
+
+## LifeTime unattended installation and upgrade { #lifetime }
+
+The LifeTime Management Console comprises the following parts:
+
+* Platform Server component (the version can be different from your application environments)
+* LifeTime application
+
+Therefore, the unattended installation and upgrade process for the LifeTime environment is very similar to the process described above for your application environments.
+
+Before you start:
+
+* Make sure you are aware of the general process to [upgrade your LifeTime management console](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Upgrade_LifeTime_management_console).
+
+* LifeTime unattended installation and upgrade process doesn't apply to major upgrades (for example, from Platform Server 10 or previous to Platform Server 11).
+
+To perform the unattended installation or upgrade of your LifeTime Management Console, do the following:
+
+1. Execute all the steps described in the [First install](#first-install) section, for installing LifeTime, or in the [Upgrade](#upgrade) section, for upgrading LifeTime, **using the LifeTime installation package**, `LifeTimeWithPlatformServer-<version>.exe`, instead of the Platform Server package, `PlatformServer-<version>.exe`. All the options apply to both installation packages.
+
+1. Run the following command to install the LifeTime application solution:
+
+    ```
+    <outsystems_common_path>\OSPTool.com /Publish "LifeTime.osp" <hostname> <username> <password>
+    ```

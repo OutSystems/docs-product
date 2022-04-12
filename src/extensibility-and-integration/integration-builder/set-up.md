@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 617ec597-a128-4b2a-872f-4a3a5856628c
+---
+
 # How to set up Integration Builder
 
 Integration Builder is a Software as a Service (SaaS) that connects to your OutSystems environment to authenticate and validate user connections. Integration Builder works with Integration Manager to keep the status of your integrations current, so it needs to be able to connect with the environments to which you deploy the integrations. In addition, Integration Builder is available in all OutSystems editions.  
@@ -9,6 +14,8 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 * The [IT user](../../managing-the-applications-lifecycle/manage-it-teams/intro.md) you use to log in to Integration Builder must have the **Change and Deploy Applications** permission level and the **Create Applications** specific permission for the development environment. Check [Understanding the permission model for IT users](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) for more information.
 
 * Use the latest version of any of the following desktop browsers: Edge, Firefox, Google Chrome, or Safari.
+
+* Your environments are associated with any available [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/), inclding Free, Standard, or Enterprise. **You can use your Personal Environment with Integration Builder**.
 
 * All environments, except for the LifeTime environment, must:
 

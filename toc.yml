@@ -532,7 +532,68 @@
         - href: develop/experience-builder/how-update-dependency.md
         - href: develop/experience-builder/faq.md
         - href: develop/experience-builder/troubleshoot.md
-    
+    # Case management and workflow apps
+    - href:  develop/case-management-workflow/intro.md
+    - topics:
+        # Workflow Builder
+        - href: develop/case-management-workflow/workflow-builder/intro.md
+        - topics:
+            - href: develop/case-management-workflow/workflow-builder/how-setup.md
+            - topics:
+                - href: develop/case-management-workflow/workflow-builder/how-setup-governance.md
+                - href: develop/case-management-workflow/workflow-builder/how-setup-end-users-hierarchy.md
+            - href: develop/case-management-workflow/workflow-builder/how-works.md
+            - href: develop/case-management-workflow/workflow-builder/how-use.md
+            - topics:
+                - href: develop/case-management-workflow/workflow-builder/how-workflow-design.md
+                - topics:
+                    - href: develop/case-management-workflow/workflow-builder/how-create-app-from-scratch.md
+                    - href: develop/case-management-workflow/workflow-builder/how-project-request-template.md
+                    - href: develop/case-management-workflow/workflow-builder/how-approval-request-template.md
+                    - href: develop/case-management-workflow/workflow-builder/how-issue-report-template.md
+                - href: develop/case-management-workflow/workflow-builder/publish-test.md
+                - href: develop/case-management-workflow/workflow-builder/app-lifecycle.md
+            - href: develop/case-management-workflow/workflow-builder/how-update-dependency.md
+            - href: develop/case-management-workflow/workflow-builder/how-convert-service-studio.md
+            - href: develop/case-management-workflow/workflow-builder/faq.md
+            - href: develop/case-management-workflow/workflow-builder/troubleshoot.md
+            - href: develop/case-management-workflow/workflow-builder/ref/error-ref.md
+        # Case management framework
+        - href: develop/case-management-workflow/case-management-framework/intro.md
+        - topics:
+            - href: develop/case-management-workflow/case-management-framework/creating-cmfapp.md
+            - href: develop/case-management-workflow/case-management-framework/bootstrap-app.md
+            - href: develop/case-management-workflow/case-management-framework/subcase-intro.md
+            - href: develop/case-management-workflow/case-management-framework/subcase.md
+            - href: develop/case-management-workflow/case-management-framework/case-state.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/case-state-machine.md
+            - href: develop/case-management-workflow/case-management-framework/milestone/intro-ms.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/milestone/how-enable-ms.md
+                - href: develop/case-management-workflow/case-management-framework/milestone/how-use-ms.md
+            - href: develop/case-management-workflow/case-management-framework/sla.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/calendar.md
+            - href: develop/case-management-workflow/case-management-framework/activity.md
+            - href: develop/case-management-workflow/case-management-framework/delegate.md
+            - href: develop/case-management-workflow/case-management-framework/list-activities.md
+            - href: develop/case-management-workflow/case-management-framework/list-cases-requester.md
+            - href: develop/case-management-workflow/case-management-framework/extended-group.md
+            - href: develop/case-management-workflow/case-management-framework/multilingual/intro-multilingualcmf.md
+            - topics: 
+                - href: develop/case-management-workflow/case-management-framework/multilingual/enabling-multilingualcmf.md
+            - href: develop/case-management-workflow/case-management-framework/access-control/intro-ac.md
+            - topics: 
+                - href: develop/case-management-workflow/case-management-framework/access-control/how-enable-ac.md
+                - href: develop/case-management-workflow/case-management-framework/access-control/how-case-definition-ac.md
+                - href: develop/case-management-workflow/case-management-framework/access-control/how-case-instance-ac.md
+                - href: develop/case-management-workflow/case-management-framework/access-control/permission-actions-ac.md
+            - href: develop/case-management-workflow/case-management-framework/ref/intro.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/ref/auto/CaseServices_API.final.md
+                - href: develop/case-management-workflow/case-management-framework/ref/auto/CaseConfigurations_API.final.md
+                - href: develop/case-management-workflow/case-management-framework/ref/auto/CaseProcessConfigurations_API.final.md
 # Delivering Mobile Apps
 - href: deliver-mobile/intro.md
 - topics:

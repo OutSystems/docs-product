@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework;
 summary: Learn how to get a list of cases create by the requester logged in to your app.
+guid: da294998-4af8-4fb5-acf8-939d4d2d5a06
+locale: en-us
 ---
 
 # How to get list of cases for a requester

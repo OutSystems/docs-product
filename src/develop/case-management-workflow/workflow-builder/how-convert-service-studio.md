@@ -1,6 +1,8 @@
 ---
 tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow; service-studio
 summary: Learn how to convert a Workflow Builder app to Service Studio.
+guid: d1b8c5b6-6844-42f6-91cb-0dd183c2eda4
+locale: en-us
 ---
 
 # Converting a Workflow Builder app to Service Studio

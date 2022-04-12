@@ -1,6 +1,8 @@
 ---
 tags: Workflow Builder; Case Management; Business developers; Generting and testing workflow builder apps
 summary: Learn how generate and test apps in Workflow Builder.
+guid: 326f1e4a-f451-480e-9e40-e068521784eb
+locale: en-us
 ---
 
 # Publishing and testing your app

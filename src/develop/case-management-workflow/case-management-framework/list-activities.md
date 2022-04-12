@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework;
 summary: Learn how to get a list of activities assigned to a case worker logged in to your app.
+guid: 826bbac1-ea6d-46e0-9e43-3581d214331c
+locale: en-us
 ---
 
 # How to get list of activities assigned to a case worker

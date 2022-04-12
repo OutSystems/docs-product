@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework;
 summary: Learn about extended groups for case management apps.
+guid: d8d7450e-afb2-4019-95a2-92ffc7a31acf
+locale: en-us
 ---
 
 # Groups for case management apps

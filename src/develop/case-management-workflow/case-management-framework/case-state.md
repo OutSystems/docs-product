@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework;
 summary: Learn about case statuses and how to use case statuses with the Case Management framework.
+guid: fc30b404-7533-4e75-9e88-392cf3f454b6
+locale: en-us
 ---
 
 # Case status

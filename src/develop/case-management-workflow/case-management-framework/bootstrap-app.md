@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework;
 summary: Follow this guide to begin developing a case management app using the Case Management framework.
+guid: 5f7f8979-4c04-41d2-9737-15210d38d660
+locale: en-us
 ---
 
 # Create a case management app

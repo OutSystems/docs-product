@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework;
 summary: Learn about how you can set and enforce service level agreement (SLA) resolution or response times at the case level and activity level.
+guid: e745cd81-f50a-483d-a08d-4279288fceae
+locale: en-us
 ---
 
 # Ensuring resolution times with SLAs

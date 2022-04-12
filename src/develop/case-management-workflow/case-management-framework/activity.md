@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework;
 summary: Learn about the expanded functionality for human activities that the Case Management framework provides.
+guid: 3dd527f3-1678-47ac-bf40-c86b8116b5b3
+locale: en-us
 ---
 
 # Activities

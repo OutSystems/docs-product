@@ -1,3 +1,8 @@
+---
+guid: 576b9623-c10e-489c-b7de-22e36fcf92db
+locale: en-us
+---
+
 # Case Process Configurations API
 
 The Case Process Configurations API includes actions used to configure the underlying BPT process associated with a case. Use this API to configure SLAs associated with a Process or with an Activity from a Process.

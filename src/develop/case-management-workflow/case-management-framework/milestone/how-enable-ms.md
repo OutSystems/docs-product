@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework; CMf;
 summary: Learn how to enable milestones for a case defintion.
+guid: f27173b5-6489-408e-8259-6d429d569cba
+locale: en-us
 ---
 
 # How to enable milestones

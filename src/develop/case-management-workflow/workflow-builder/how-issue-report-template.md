@@ -1,6 +1,8 @@
 ---
 tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow; template; issue-report
 summary: Learn how to create an Issue Report app using a Workflow Builder template.
+guid: 2eb55ee1-3508-4c49-9303-3d968ef6b3a2
+locale: en-us
 ---
 
 # Using the Issue Report template

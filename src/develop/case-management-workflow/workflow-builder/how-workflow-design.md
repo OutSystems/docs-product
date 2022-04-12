@@ -1,6 +1,8 @@
 ---
 tags: workflow-builder; case-management; outsystems; business-users; citizen-developers; citizen-dev; workflow
 summary: Learn how to create a Workflow Builder app.
+guid: e496117e-5c7f-43c8-9cf5-e728365bc531
+locale: en-us
 ---
 
 # Creating a Workflow Builder app

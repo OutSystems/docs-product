@@ -1,3 +1,8 @@
+---
+guid: f5983291-ad80-4f87-955a-aae1180139a8
+locale: en-us
+---
+
 # Case Services API
 
 The Case Services API includes actions used to interact with cases related to a Process.

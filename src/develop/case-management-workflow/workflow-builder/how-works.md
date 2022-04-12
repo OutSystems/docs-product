@@ -1,6 +1,8 @@
 ---
 tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow
 summary: Learn how Workflow Builder works.
+guid: 03a05097-7984-4e88-86f2-c87418286674
+locale: en-us
 ---
 
 # How Workflow Builder works

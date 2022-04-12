@@ -1,6 +1,8 @@
 ---
 tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; FAQ; Business developers
 summary: Frequently Asked Questions about Workflow Builder.
+guid: d6e18346-5ecc-4178-9bf2-15e82ff891f6
+locale: en-us
 ---
 
 # Workflow Builder FAQs

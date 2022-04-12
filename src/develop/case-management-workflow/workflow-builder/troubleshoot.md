@@ -1,6 +1,8 @@
 ---
 tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; Troubleshoot
 summary: Troubleshoot Workflow Builder.
+guid: 33571f0b-996f-47e8-ac9d-e43cbc98c2e4
+locale: en-us
 ---
 
 # Troubleshooting Workflow Builder

@@ -1,6 +1,8 @@
 ---
 tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Developers; Citizen Dev; Workflow; Governance Model; Business developers
 summary: Learn how to set up the users governance model in Workflow Builder.
+guid: b0e9d928-403a-4d65-b5bc-c945f78b8436
+locale: en-us
 ---
 
 # How to set up the users governance model

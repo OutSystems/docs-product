@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework;
 summary: Learn about delegating cases and activities using the Case Management framework.
+guid: 29292c65-0d1c-489c-b7f8-622d282dc021
+locale: en-us
 ---
 # Delegate activities
 

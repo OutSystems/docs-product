@@ -1,6 +1,8 @@
 ---
 tags: Case Management; Case Management framework; Multilingual Case Management framework
 summary: Conceptual introduction to multilingual Case Management framework.
+guid: 2e31ca9c-b4b9-4e3a-9ed3-81172a775fd4
+locale: en-us
 ---
 
 # Introduction to multilingual Case Management framework

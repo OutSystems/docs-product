@@ -1,3 +1,8 @@
+---
+guid: a1e53b88-9aa2-4f25-9f54-f22b9add8907
+locale: en-us
+---
+
 # Case Configurations API
 
 The Case Configurations API includes actions used to configure a case in your app.

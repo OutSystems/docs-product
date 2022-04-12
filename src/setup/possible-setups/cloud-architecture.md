@@ -1,6 +1,8 @@
 ---
 summary: Learn more about the OutSystems Cloud network architecture.
 tags:
+locale: en-us
+guid: b6b4709a-59b4-45e4-b29d-2f78d8bb8f19
 ---
 
 # OutSystems Cloud network architecture

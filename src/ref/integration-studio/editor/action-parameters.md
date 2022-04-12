@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: ef146002-08c3-4bb8-8602-0a48cfa16b7d
+---
+
 # Action Parameters Editor
 
 The Action Parameter Editor allows you to edit the [properties](<../element-property/action-parameter.md>) of the action parameter that belongs to your extension.

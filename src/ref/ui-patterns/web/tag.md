@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Tag UI Pattern.
+locale: en-us
+guid: 98676e02-fc12-46ea-a908-cf04568e7d09
 ---
 
 # Tag Reference

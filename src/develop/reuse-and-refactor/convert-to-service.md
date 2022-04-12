@@ -1,6 +1,8 @@
 ---
 summary: OutSystems gives you the capability to convert existing logic, modules and applications to Services in a systematic way.
 tags: support-application_architecture
+locale: en-us
+guid: a82f9d7f-70bf-43b2-a291-dd56905f35b2
 ---
 
 # Convert to Services

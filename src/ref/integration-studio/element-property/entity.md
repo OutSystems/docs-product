@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 0d31202a-6526-4903-a88d-4ed9b8e73ab2
+---
+
 # Entity Properties
 
 The next table presents the properties of the [entity](<../../../extensibility-and-integration/integration-studio/managing-extensions/entity-define.md>) element.  

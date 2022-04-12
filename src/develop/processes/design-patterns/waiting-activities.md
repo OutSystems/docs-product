@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 6af5d9c9-a99e-4940-bc69-c847ef743f6b
+---
+
 # Designing Waiting Activities
 
 Use this pattern to design flow paths which, at some point, can only proceed the execution after some condition is verified. Use the [Wait](<../../../ref/lang/auto/Class.Wait.final.md>) activity to design this pattern.

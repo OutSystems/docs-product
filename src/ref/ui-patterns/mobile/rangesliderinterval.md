@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb; 
 summary: Advanced use cases for the Range Slider Interval UI Pattern
+locale: en-us
+guid: 0a4c0ebb-4ee1-4443-9ab8-971329ca1541
 ---
 
 # Range Slider Interval Reference

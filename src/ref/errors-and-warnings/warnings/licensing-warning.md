@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 51e508a9-fe2f-4ea2-b545-9772a85628c6
+---
+
 # Licensing Warning
 
 Message

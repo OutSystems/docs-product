@@ -1,5 +1,7 @@
 ---
 summary: Learn how to handle the deployment of applications having incompatible references.
+locale: en-us
+guid: cf9598e3-f6e3-49c7-852d-c126b621afbc
 ---
 
 # Deploy to an Environment with Applications with Errors

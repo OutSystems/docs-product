@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Carousel shows a subset of items in a cyclic view.
+locale: en-us
+guid: a8810d33-7e06-48db-a6a9-f44b601d5e0a
 ---
 
 # Carousel

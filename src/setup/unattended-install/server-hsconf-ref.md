@@ -1,6 +1,8 @@
 ---
 summary: Complete reference for the server.hsconf configuration file.
 tags: support-Installation_Configuration; support-Installation_Configuration-overview
+locale: en-us
+guid: dcc55c5d-8cd5-4850-9e88-fa385badc663
 ---
 
 # server.hsconf Configuration File Reference

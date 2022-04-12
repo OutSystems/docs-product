@@ -1,5 +1,7 @@
 ---
 summary: Available data types in OutSystems, their default values and constraints, and available built-in functions to convert them into another data type.
+locale: en-us
+guid: 811f5c4c-11f5-4998-87c2-d5629a8fe0a2
 ---
 
 # Available Data Types

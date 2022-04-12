@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.ProcessNodes+HumanActivity+Kind, ServiceStudio.Model.ReferenceHumanActivity+Kind
 helpids: 0
+locale: en-us
+guid: b12f9d3c-1906-4055-9d24-7f782397cf09
 ---
 
 # Human Activity

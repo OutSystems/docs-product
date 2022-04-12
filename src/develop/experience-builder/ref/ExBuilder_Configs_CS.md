@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 1233ca21-be96-4571-abab-4b38a30aa237
+---
+
 # ExBuilder_Configs_CS
 
 Module that contains several configuration site properties used across the mobile application.

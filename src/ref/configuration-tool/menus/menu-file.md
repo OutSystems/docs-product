@@ -1,5 +1,7 @@
 ---
 summary: Use these options to import and export the configuration, and export the SQL/PowerShell scripts.
+locale: en-us
+guid: c87ade70-83ff-4ba0-b333-9ce56da5c8f1
 ---
 
 # File Menu

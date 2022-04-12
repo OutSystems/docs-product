@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: f1dd1b03-de58-453d-a537-f17b73c72595
+---
+
 # Required Permission Error
 
 The `Required Permission` error is issued in the following situation:

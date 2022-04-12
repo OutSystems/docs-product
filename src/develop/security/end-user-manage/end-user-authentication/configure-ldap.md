@@ -1,5 +1,7 @@
 ---
 summary: How to configure LDAP end user authentication for your applications (both LDAP with Active Directory and standard LDAP).
+locale: en-us
+guid: 7b9e403c-8006-43db-902d-21e239f1b25d
 ---
 
 # Configure LDAP Authentication

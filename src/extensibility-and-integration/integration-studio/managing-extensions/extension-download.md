@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 2bb10995-f2e7-48a6-a6d5-2fbb248f09e6
+---
+
 # Download an Extension
 
 You can download to your work area any extension previously published in a Platform Server. When this operation is executed, the XIF (Extension and Integration Framework) file that corresponds to this extension will be stored where you specify. Afterwards, you can make the necessary changes in the extension and [publish](<../extension-life-cycle/extension-1-cp.md>) it again when it is ready.

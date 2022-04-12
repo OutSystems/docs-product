@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Image+Kind, ServiceStudio.Model.ReferenceImage+Kind
 helpids: 0
+locale: en-us
+guid: 1d0d90ba-aa79-4e09-ba87-12ce8ce0e4d4
 ---
 
 # Image

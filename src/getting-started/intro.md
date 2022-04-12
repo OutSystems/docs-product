@@ -1,6 +1,8 @@
 ---
 summary: This is a quick intro to get you started with OutSystems development.  
 tags: support-application_development; support-Mobile_Apps; support-webapps
+locale: en-us
+guid: 036994b9-0656-4dc8-8b94-b0c4e9d71a1f
 ---
 
 # Getting started

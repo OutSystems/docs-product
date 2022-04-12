@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary:  The Columns UI Pattern splits content into separate columns.
+locale: en-us
+guid: 1c4edd42-f577-4475-ad7c-72fbe2a849a8
 ---
 
 # Columns

@@ -1,6 +1,8 @@
 ---
 tags: 
 summary: 
+locale: en-us
+guid: 18f3d63b-831f-429c-aac1-7bf9ca65e58a
 ---
 
 # Login with Google Accelerator

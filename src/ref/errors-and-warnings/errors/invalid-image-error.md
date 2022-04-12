@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 286230b7-c011-42bd-9923-7b3ef0a4abbc
+---
+
 # Invalid Image Error
 
 The `Invalid Image` error is issued in the following situations:

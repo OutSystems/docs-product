@@ -1,6 +1,8 @@
 ---
 summary: Learn how to create an Entity Index to ensure uniqueness and improve findability.
 tags: support-application_development; support-Database; support-webapps
+locale: en-us
+guid: 0611c8e9-7cba-4812-8495-88165c39e20e
 ---
 
 # Create an Entity Index

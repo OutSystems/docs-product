@@ -1,5 +1,7 @@
 ---
 summary: Learn how to implement decryption in your apps while ensuring HIPAA compliance in the OutSystems Cloud.
+locale: en-us
+guid: 4b9ff75f-4e89-4a94-85bc-f6c7c3cc3f9c
 ---
 
 # Encrypting data for HIPAA compliance

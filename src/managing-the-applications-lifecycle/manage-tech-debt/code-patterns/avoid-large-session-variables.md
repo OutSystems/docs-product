@@ -1,7 +1,8 @@
 ---
-tags: web server
+tags:
 summary: 
-en_title: Avoid large session variables
+locale: en-us
+guid: 6d74e154-6ca6-4b2b-9fb1-178d4dbff78d
 ---
 
 

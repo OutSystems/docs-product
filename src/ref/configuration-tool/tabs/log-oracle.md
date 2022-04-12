@@ -1,5 +1,7 @@
 ---
 summary: Log tab showing specific settings for the 'Oracle' database provider.
+locale: en-us
+guid: 4730ef3b-0979-41fb-95dc-b177a430f9e7
 ---
 
 # Log Tab in Oracle
@@ -31,7 +33,7 @@ For advanced settings, click the **Advanced Settings** link.
 <tbody>
 <tr>
 <td colspan="3">
-**Advanced Connection Settings**
+<strong>Advanced Connection Settings</strong>
 </td>
 </tr>
 <tr>

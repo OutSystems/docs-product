@@ -1,7 +1,8 @@
 ---
-tags: client-side; network; web server
+tags: 
 summary: 
-en_title: Don't abuse scope information
+locale: en-us
+guid: 4e82f1f2-b9bd-4a92-a033-e9ec9cfb32ee
 ---
 
 # Don't abuse scope information

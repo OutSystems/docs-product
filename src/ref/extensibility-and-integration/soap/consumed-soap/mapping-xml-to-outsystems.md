@@ -1,5 +1,7 @@
 ---
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: ac774bf3-82fc-480e-a633-7652e559d52a
 ---
 
 # Mapping XML Data Types to OutSystems Data Types

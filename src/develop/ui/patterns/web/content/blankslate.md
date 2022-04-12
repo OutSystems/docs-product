@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Blank Slate informs end users when they start using the application, complete a task or when there is no data available for display.
+locale: en-us
+guid: e77f1bd7-6d92-4bdb-b3fe-82f5bd1b2e1b
 ---
 
 # Blank Slate

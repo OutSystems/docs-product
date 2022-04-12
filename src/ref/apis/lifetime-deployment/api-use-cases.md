@@ -1,5 +1,7 @@
 ---
 summary: Learn how to perform common tasks using the LifeTime API.
+locale: en-us
+guid: dcf82210-2b59-420c-9014-81f80f0d907a
 ---
 
 # LifeTime API Examples

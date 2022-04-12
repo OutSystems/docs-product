@@ -1,6 +1,8 @@
 ---
 summary: An overview of how to implement offline sync in your mobile apps.
 tags: support-application_development; support-Mobile_Apps
+locale: en-us
+guid: ff508705-52d0-4d39-a319-fca0f74eb85f
 ---
 
 # Offline

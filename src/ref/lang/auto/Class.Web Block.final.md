@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.Nodes+WebBlock+Kind, ServiceStudio.Model.ReferenceWebBlock+Kind
 helpids: 1006
 tags: runtime-traditionalweb
+locale: en-us
+guid: 5d03bd37-8e91-4c60-8d7f-b550ab56994d
 ---
 
 # Web Block

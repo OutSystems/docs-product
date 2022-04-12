@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.ListDescriptor
 helpids: 30030
 summary: Reference information on the List widget for allowing users to get a list of records on a screen.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; list-widget
+locale: en-us
+guid: 836cb2ad-86f5-4d9a-96ac-b7e34b4e82f7
 ---
 
 # List

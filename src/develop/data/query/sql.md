@@ -1,6 +1,8 @@
 ---
 summary: Use the SQL element to write and execute custom SQL queries.
 tags: support-Database
+locale: en-us
+guid: 17f9fae0-ed62-44a4-befb-788f5206fad0
 ---
 
 # SQL Queries

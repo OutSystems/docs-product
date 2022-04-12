@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SAP.SapStructureDescriptor
 helpids: 30072
+locale: en-us
+guid: 895732c3-42f6-4e78-87f8-efef7a1de2ef
 ---
 
 # Structure (SAP Remote Function)

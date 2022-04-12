@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: f5218ef6-23d9-441f-8003-1789c839edaf
+---
+
 # Expression Overflow Error
 
 The `Expression Overflow` error is issued in the following situations:

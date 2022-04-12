@@ -1,6 +1,8 @@
 ---
 summary: Learn about basic end user management, such as creating, deleting, deactivating registered user accounts or placing them into User Groups with specific permissions.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: 907b0fd3-bc46-4391-aae2-673296d795d9
 ---
 
 # End users

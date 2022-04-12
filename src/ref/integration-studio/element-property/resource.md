@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 0afc82d0-345d-4c7e-b0be-3e7679fbad14
+---
+
 # Resource Properties
 
 The next table presents the properties of the [resource](<../../../extensibility-and-integration/integration-studio/managing-extensions/resource-define.md>) element.  

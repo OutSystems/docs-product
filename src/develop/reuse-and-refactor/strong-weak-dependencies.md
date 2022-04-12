@@ -1,5 +1,7 @@
 ---
 summary: Understand what are strong dependencies and weak dependencies between modules.
+locale: en-us
+guid: 63b2c835-1d5e-4923-a61a-541bd5a16747
 ---
 
 # Understand Strong and Weak Dependencies

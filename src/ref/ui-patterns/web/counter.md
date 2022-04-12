@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Counter UI Pattern.
+locale: en-us
+guid: c41f4255-ed4b-4aae-a934-9eebbcfcc129
 ---
 
 # Counter Reference

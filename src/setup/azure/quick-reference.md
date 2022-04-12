@@ -1,6 +1,8 @@
 ---
 tags: support-Installation_Configuration; support-installation;
 summary: More information about Azure Resources such as VMs, SQL databases, storage, virtual machine scale sets.
+locale: en-us
+guid: 88d66b58-baee-4c61-9d03-b21e5b4aeac9
 ---
 
 # Quick Reference for OutSystems on Microsoft Azure

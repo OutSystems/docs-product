@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: fa3cf5ad-5e7b-4fdd-acc5-7b3f6c43791e
+---
+
 # Resource Editor
 
 The Resource Editor allows you to edit the properties of a resource that belongs to your extension. This editor is displayed when a resource is selected in the [Resources tree](<../resources-tree.md>) or in the [Multi-tab Editor](<../multi-tab-editors.md>).

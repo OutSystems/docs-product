@@ -1,6 +1,8 @@
 ---
 summary: Learn the several components that are part of OutSystems, and how to set up OutSystems on the cloud or on-premises.
 tags: article-page; support-installation; support-Installation_Configuration-overview; support-Integrations_Extensions
+locale: en-us
+guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
 ---
 
 # Setting Up OutSystems
@@ -184,7 +186,8 @@ Do the following:
     
     * **.NET Core 3.1 Runtime & Hosting Bundle for Windows**  
     1\. [Download the .NET Core 3.1 Runtime & Hosting Bundle for Windows](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-3.1.14-windows-hosting-bundle-installer) from Microsoft.  
-    2\. Rename the .NET Core Installer to `DotNetCore_WindowsHosting.exe`.
+    2\. Rename the .NET Core Installer to `DotNetCore_WindowsHosting_31.exe`.  
+    _Note:_ If you're installing a Platform Server version earlier than 11.14.0, rename the installer to `DotNetCore_WindowsHosting.exe` instead.
     
     * **Build Tools 2015**  
     1\. [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft.  

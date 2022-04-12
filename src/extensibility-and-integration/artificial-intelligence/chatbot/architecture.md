@@ -1,6 +1,8 @@
 ---
 summary: Overview of the parts that make a chatbot in OutSystems and how they function together.
 tags:
+locale: en-us
+guid: b7b3693d-5efc-4f7e-bef5-472a07175945
 ---
 
 # The chatbot architecture

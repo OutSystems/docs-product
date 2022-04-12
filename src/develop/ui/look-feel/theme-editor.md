@@ -1,6 +1,8 @@
 ---
 summary: Use Theme Editor to customize the overall style of your app. Each change you make is immediately applied to your app in Service Studio.
 tags: support-application_development; support-Front_end_Development
+locale: en-us
+guid: 5ee100a0-6f04-4289-8f48-5ceff38331e7
 ---
 
 # Customize the look of your app with Theme Editor

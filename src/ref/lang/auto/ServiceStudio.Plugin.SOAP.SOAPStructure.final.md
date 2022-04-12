@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SOAP.SOAPStructureDescriptor
 helpids: -1
+locale: en-us
+guid: e0728a88-129e-4db8-98e2-56bf83c77246
 ---
 
 # Structure (Consumed SOAP)

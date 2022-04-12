@@ -1,6 +1,8 @@
 ---
 summary: Provides Actions to manipulate BinaryData contents, such as retrieving the length or transforming binary content into Text.
 tags: 
+locale: en-us
+guid: 17494f81-67a9-4e24-833a-a4a7713e0255
 ---
 
 # BinaryData API

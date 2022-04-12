@@ -3,6 +3,8 @@ kinds: ServiceStudio.Model.NRWebWidgets+If+Kind, ServiceStudio.Model.WebWidgets+
 helpids: 4029
 summary: Reference information on the If widget for displaying content on the screen based on a condition.
 tags: runtime-traditionalweb; outsystems-designing-screens; reference; designing-screens; if-widget
+locale: en-us
+guid: 0db36704-5f51-4287-8d29-771859e6e7f3
 ---
 
 # If Widget

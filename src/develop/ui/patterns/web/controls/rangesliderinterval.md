@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: RangeSliderInterval selects a single value or a range between two values.
+locale: en-us
+guid: 94ed04bf-3e70-41d6-9d40-713927750c02
 ---
 
 # Range Slider Interval

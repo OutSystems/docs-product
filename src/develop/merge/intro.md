@@ -1,5 +1,7 @@
 ---
 summary: Integrate other developers' changes into your module by using the merge feature. It works with both visual and textual elements.
+locale: en-us
+guid: 1c3fca8d-f369-4aaa-b647-dcc9db705eb1
 ---
 
 # Merge the Work

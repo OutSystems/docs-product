@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+Outcome+Kind
 helpids: 0
+locale: en-us
+guid: ab789a32-fe94-4809-9459-fac3b3a9a999
 ---
 
 # Decision Outcome

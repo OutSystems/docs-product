@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.SystemActions+OnSessionStart+Kind
 helpids: 0
 tags: runtime-traditionalweb
+locale: en-us
+guid: 6b2deaab-c532-4326-9934-c042c42271de
 ---
 
 # On Session Start

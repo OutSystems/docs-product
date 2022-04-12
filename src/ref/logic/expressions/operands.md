@@ -1,6 +1,8 @@
 ---
 summary: Operands, in an expression, tell the platform which data to use. Read more about literals, variables, and functions.
 tags: 
+locale: en-us
+guid: 6f93f5d0-94ad-4ced-bd8c-ea8b7599ca05
 ---
 
 # Operands

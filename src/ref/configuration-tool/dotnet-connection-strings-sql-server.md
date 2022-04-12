@@ -1,5 +1,7 @@
 ---
 summary: Fine-tune the connection strings of OutSystems Platform Server to it's database.
+locale: en-us
+guid: 40be4abc-c505-4c98-a897-40a87c1cd2a0
 ---
 
 # Using custom .NET connection string parameters with the OutSystems Platform on SQL Server

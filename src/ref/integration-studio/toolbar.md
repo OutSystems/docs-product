@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 5395d30e-5e9a-4605-9d92-717fedcfeefb
+---
+
 # Toolbar
 
 The Toolbar is the area of your [workspace](<workspace.md>) where you can execute the following operations:

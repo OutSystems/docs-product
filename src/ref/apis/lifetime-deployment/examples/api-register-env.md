@@ -1,6 +1,8 @@
 ---
 summary: Learn how to register an environment using the LifeTime API.
 tags:
+locale: en-us
+guid: fa3c3a72-304f-4171-b85a-77e614a20326
 ---
 
 # Register an Environment using the LifeTime API

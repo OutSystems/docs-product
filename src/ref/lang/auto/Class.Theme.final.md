@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.NewRuntime.Theme+Kind, ServiceStudio.Model.Theme+Kind, ServiceStudio.Model.NewRuntime.ReferenceTheme+Kind, ServiceStudio.Model.ReferenceTheme+Kind
 helpids: 0, 17140
+locale: en-us
+guid: b29c0bb6-f138-4d20-934f-df01ba3c4e2a
 ---
 
 # Theme

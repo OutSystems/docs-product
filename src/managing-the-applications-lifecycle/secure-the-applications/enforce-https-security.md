@@ -1,6 +1,8 @@
 ---
 summary: Check how IT Managers or Administrators can override and enforce the HTTP security of OutSystems applications that are installed and running.
 tags: runtime-traditionalweb; support-Security-overview
+locale: en-us
+guid: a152ecbb-2419-489f-87c5-000918d502f0
 ---
 
 # Enforce HTTPS Security

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 0f83bb7e-3cc8-4134-938b-9f9194175dc7
+---
+
 # Invalid Error Handler Flow Error
 
 The `Invalid Error Handler Flow` error is issued in the following situation:

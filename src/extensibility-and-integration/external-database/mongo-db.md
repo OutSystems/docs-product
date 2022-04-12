@@ -1,5 +1,7 @@
 ---
 summary: Learn how to use a MongoDB integration in your apps.
+locale: en-us
+guid: 929211ce-87e5-4927-a399-36c6b342d1a8
 ---
 
 # Using MongoDB integration

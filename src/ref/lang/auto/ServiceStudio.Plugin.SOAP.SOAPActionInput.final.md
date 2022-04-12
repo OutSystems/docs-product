@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SOAP.SOAPActionInputDescriptor
 helpids: -1
+locale: en-us
+guid: 249fbacb-2b93-4dd1-8675-e48bcccbd609
 ---
 
 # Input Parameter (Consumed SOAP Method)

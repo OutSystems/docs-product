@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Card groups small pieces of information and highlights them on the screen.
+locale: en-us
+guid: a332f63f-d4ca-400d-ab27-d29455ba5b29
 ---
 
 # Card

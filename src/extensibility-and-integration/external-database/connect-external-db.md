@@ -1,6 +1,8 @@
 ---
 summary: OutSystems allows you to define connections to your existing SQL Server, Azure Server, Oracle or MySQL databases and use data in those databases using visual objects in Service Studio.
 tags: support-application_development; support-Database; support-Integrations_Extensions; support-database-overview; support-Integrations_Extensions-featured
+locale: en-us
+guid: d5fdba1a-e46c-4c92-9d6b-81be94eed163
 ---
 
 # Integrate with an External Database using Integration Studio

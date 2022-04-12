@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb
 summary: Provides methods to show validation messages on widgets and set their validation values. Used when validating widgets inside iterators, since it's not possible to do it in the usual way.
+locale: en-us
+guid: 68b5f614-594d-4374-bde6-fc2f815c8b05
 ---
 
 # Validation

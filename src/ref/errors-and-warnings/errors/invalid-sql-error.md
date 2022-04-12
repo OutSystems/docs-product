@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 87c242a3-2d64-4c38-b1d9-95b761d7290f
+---
+
 # Invalid SQL Error
 
 The `Invalid SQL` error is issued in the following situations:

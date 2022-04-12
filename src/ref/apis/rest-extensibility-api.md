@@ -1,6 +1,8 @@
 ---
 summary: Enables you to access the content of requests and responses used by methods consumed from other REST APIs in .NET.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 03c3a77e-6193-495d-b8c4-cb17a8828384
 ---
 
 # REST Extensibility API

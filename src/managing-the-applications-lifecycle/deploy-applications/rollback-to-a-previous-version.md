@@ -1,6 +1,8 @@
 ---
 summary: Check how to rollback an application to its previous version, in case a critical bug is detected.
 tags: support-Application_Lifecycle-featured
+locale: en-us
+guid: 49b59373-a60e-4d93-8399-41084f083f51
 ---
 
 # Rollback to a Previous Version

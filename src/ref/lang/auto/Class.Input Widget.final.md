@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+Input+Kind, ServiceStudio.Model.WebWidgets+ReferenceInput+Kind
 helpids: 4024
 tags: runtime-traditionalweb
+locale: en-us
+guid: 194c0eca-3e99-4ee0-9ffd-d153e14b2225
 ---
 
 # Input Widget

@@ -1,7 +1,8 @@
 ---
-tags: Architecture Dashboard; FAQ; manual
+tags:
 summary: Troubleshoot Architecture Dashboard
-en_title: Troubleshooting
+locale: en-us
+guid: e2eb38b8-b3b6-42dd-9389-232ef2ba6226
 ---
 
 

@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: User Avatar displays user information in a circular badge.
+locale: en-us
+guid: ca179aae-31fe-4032-b523-167c3ba531e5
 ---
 
 # User Avatar
@@ -11,7 +13,6 @@ You can use the User Avatar UI Pattern to display a user's initials or their ima
 
 **How to use the User Avatar UI Pattern**
 
-<!--The User Avatar UI Pattern usually displays dynamic information. In most cases, prior to using this pattern, you will need [to retrieve or update the Data](../../../../../develop/data/intro.md) that contains the information you want to display onscreen. You do this by using an [Action](../../../../../develop/logic/action-web.md). -->
 
 The following example demonstrates how you can display the initials of the registered users on your platform.
 

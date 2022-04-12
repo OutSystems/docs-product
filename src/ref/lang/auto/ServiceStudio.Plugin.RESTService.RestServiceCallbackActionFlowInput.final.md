@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowInputDescriptor
 helpids: 30062
+locale: en-us
+guid: ae9680b9-818f-483a-ab48-e368e6f97b8c
 ---
 
 # Input Parameter (REST Service API Callback)

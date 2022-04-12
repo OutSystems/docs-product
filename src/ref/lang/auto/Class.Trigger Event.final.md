@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.NRNodes+TriggerEvent+Kind
 helpids: 0
+locale: en-us
+guid: f093d004-0222-44cd-96ac-2f25a94f3acf
 ---
 
 # Trigger Event

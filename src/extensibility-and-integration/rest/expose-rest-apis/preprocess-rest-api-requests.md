@@ -1,6 +1,8 @@
 ---
 summary: How to run logic before executing each request of an exposed REST API.
 tags: 
+locale: en-us
+guid: cf6e96ff-7ea9-4b0b-ace5-c98818996b7b
 ---
 
 # Preprocess REST API Requests

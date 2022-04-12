@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: ce9a0af3-a200-48eb-a9de-46dfb212d35f
+---
+
 # Built-in Functions
 
 When designing the business logic of your application, you can use the following built-in functions, displayed by categories:  

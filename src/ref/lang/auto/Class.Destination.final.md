@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+WebDestination+Kind
 helpids: 0
+locale: en-us
+guid: a9b00968-b707-4dc9-9884-209002577aca
 ---
 
 # Destination

@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Range Slider gives the end users an option to select a value within a configured range by dragging a slider. 
+locale: en-us
+guid: 7e929fe3-3027-4324-9b2a-a7d10e9fe4c6
 ---
 
 # Range Slider

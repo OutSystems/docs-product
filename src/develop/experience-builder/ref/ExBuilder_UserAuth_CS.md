@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 64bdb156-e936-4ec0-855b-9ee3f8934f0e
+---
+
 # ExBuilder_UserAuth_CS
 
 Module with some user extended Entites and Actions, to be used on the remaining Modules and includes authentication methods.

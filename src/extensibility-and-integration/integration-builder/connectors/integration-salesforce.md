@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 2f28086f-7a1a-4330-88d0-061e601593b9
+---
+
 # Salesforce integration
 
 ## Prerequisites

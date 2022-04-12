@@ -1,6 +1,8 @@
 ---
 summary: This article describes the steps to deploy an application into a highly loaded OutSystems farm environment. 
 tags: support-Infrastuture_Architecture; support-maintenance
+locale: en-us
+guid: 525adee0-1259-458e-bc2d-b1f1d178a832
 ---
 
 # Balanced application deployment

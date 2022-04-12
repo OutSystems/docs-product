@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.REST.RestActionInputDescriptor
 helpids: 30080
+locale: en-us
+guid: 32eb391b-601d-4332-9f9b-a6844fd5c034
 ---
 
 # Input Parameter (REST API Method)

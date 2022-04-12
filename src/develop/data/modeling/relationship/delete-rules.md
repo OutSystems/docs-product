@@ -1,5 +1,7 @@
 ---
 summary: Define the referential integrity behavior you wish to have in entity relationships.
+locale: en-us
+guid: f41ec73a-5994-41b4-b069-193fffed5e98
 ---
 
 # Delete Rules

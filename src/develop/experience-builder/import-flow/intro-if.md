@@ -1,5 +1,7 @@
 ---
 summary: OutSystems Experience Builder capabilities can be extended to allow you to import your custom Flow Templates.
+locale: en-us
+guid: a25a16b3-c58f-48cb-9d5f-f2bbeb337eb3
 ---
 
 # Import Flow Templates

@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;   
 summary: Separator distributes content into clear groups and ease visual organization.
+locale: en-us
+guid: 0799a5eb-d6c4-4708-9a2a-895a2434613e
 ---
 
 # Separator

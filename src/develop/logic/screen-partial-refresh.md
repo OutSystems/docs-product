@@ -1,6 +1,8 @@
 ---
 summary: It is possible to update certain parts of the screen without reloading the whole screen, thus improving the end user experience.
 tags: support-Front_end_Development; support-webapps-featured; runtime-traditionalweb
+locale: en-us
+guid: cf447891-96c9-41a7-b624-455c180d4002
 ---
 
 # Use Ajax to Refresh Part of a Screen

@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SOAP.SOAPDynamicUsernameInputDescriptor
 helpids: -1
+locale: en-us
+guid: 21a8934d-1aa2-45a3-b899-b22589dd256f
 ---
 
 # Username Input Parameter (Consumed SOAP)

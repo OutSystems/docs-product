@@ -1,6 +1,8 @@
 ---
 summary: OutSystems logs every task performed by IT users in the infrastructure management and keeps an audit log made available to consult.
 tags: support-Integrations_Extensions; support-monitoring;  support-monitoring-featured
+locale: en-us
+guid: ff41a92e-5717-4a6c-9016-12acdb4de71f
 ---
 
 # Monitor Usage with Audit Logs

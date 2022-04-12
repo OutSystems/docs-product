@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+ShowRecord+Kind, ServiceStudio.Model.WebWidgets+ReferenceShowRecord+Kind
 helpids: 4022
 tags: runtime-traditionalweb
+locale: en-us
+guid: d570d3e9-60ad-40d8-a87b-df968ff67d2a
 ---
 
 # Show Record Widget

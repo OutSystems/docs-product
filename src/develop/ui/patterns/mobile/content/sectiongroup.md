@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Use the Section Group UI Pattern to keep the context of the header while progressively viewing more content by scrolling.
+locale: en-us
+guid: 7a764bd9-b48b-4961-a2b0-594723d02997
 ---
 
 # Section Group

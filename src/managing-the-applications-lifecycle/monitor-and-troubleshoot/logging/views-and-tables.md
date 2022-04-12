@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 76cb90a0-8399-4aab-a5de-279278094c1e
+---
+
 # The log tables and views
 
 The log model is designed to have minimal interference in the application runtime. Because of this the log tables have limited indexes, making them inefficient for querying. Depending on the volume of logs and the intended use, we recommend that you copy data from the log database to a separate location where you can create a model optimized for querying.

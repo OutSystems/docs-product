@@ -1,6 +1,8 @@
 ---
 summary: Use fixed and dynamic sorting in Aggregates to display records on your application screens following a customized sorting the records they return.
 tags: support-application_development; support-webapps
+locale: en-us
+guid: 1a92a987-8550-4f9c-9772-177373a40e2f
 ---
 
 # Sort Results in an Aggregate

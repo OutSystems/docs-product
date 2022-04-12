@@ -1,6 +1,8 @@
 ---
 summary: A JavaScript API that allows you to prefetch static resources (css, js, png, gif. jpg, jpeg, woff) for a list of modules.
 tags: runtime-traditionalweb; support-application_development; support-Front_end_Development; support-webapps
+locale: en-us
+guid: 46d68360-ea42-4078-8bc7-b8f9286e09e6
 ---
 
 # outsystems.api.preloader API

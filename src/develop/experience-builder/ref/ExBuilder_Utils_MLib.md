@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 61ef3e53-5022-4fa2-be4c-5acd839fc949
+---
+
 # ExBuilder_Utils_MLib
 
 Module that contains several common objects and functions used across the mobile application.

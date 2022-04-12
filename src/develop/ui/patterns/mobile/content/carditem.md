@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: The Card Item widget allows you to list items with multiple content types, such as an image or icon, a title and description, and an action to the right.
+locale: en-us
+guid: 434a7ae9-243a-47b8-ae7c-e2f424a5411b
 ---
 
 # Card Item

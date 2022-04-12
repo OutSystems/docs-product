@@ -1,6 +1,8 @@
 ---
 summary: A list of mappings between structures and data types in REST requests.
 tags: 
+locale: en-us
+guid: afc8d9b0-863d-4592-be88-c376d083f49a
 ---
 
 # Mapping REST Data Types to OutSystems Data Types

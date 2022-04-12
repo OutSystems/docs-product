@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 3bb08332-800d-426b-bdf2-2de08f859c9b
+---
+
 # Database Upgrade Error
 
 The `Database Upgrade` error is issued in the following situations:

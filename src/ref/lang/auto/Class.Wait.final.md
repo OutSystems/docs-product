@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.ProcessNodes+WaitActivity+Kind, ServiceStudio.Model.ReferenceWaitActivity+Kind
 helpids: 0
+locale: en-us
+guid: f8be65b0-6cde-4d57-ad19-0f473f662fa0
 ---
 
 # Wait

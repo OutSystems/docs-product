@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+RadioButton+Kind, ServiceStudio.Model.WebWidgets+ReferenceRadioButton+Kind
 helpids: 4045
 tags: runtime-traditionalweb
+locale: en-us
+guid: 5f9dcef2-c781-41b5-bc68-914d4cdaec29
 ---
 
 # Radio Button Widget

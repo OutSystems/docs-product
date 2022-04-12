@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c62b20a1-5cec-4050-9139-e46b4c55395f
+---
+
 # Query log data
 
 This document shows examples on how you can query views associated with the log records. Keep in mind that querying views of a live system negatively affects the runtime performance of the environment, because the logging mechanism is optimized for writing. We recommend that you implement your own mechanism for creating copies of the log data, in models designed for the types of searches you need.

@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Video allows you to embed a native video player.
+locale: en-us
+guid: 48653c19-7ef1-44ca-b625-226ca4af35d0
 ---
 
 # Video

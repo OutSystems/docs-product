@@ -1,6 +1,8 @@
 ---
 summary: Use this synchronization pattern when your users only need to read data while the app is offline and the amount of data to synchronize is small.
 tags: runtime-mobile
+locale: en-us
+guid: b671dd23-9977-4a68-97f4-82cd56bc6b4d
 ---
 
 # Read-Only Data

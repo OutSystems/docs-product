@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: e4f2b751-f68b-4d31-b018-a30bf5a7f61a
+---
+
 # Executing Multiple Instance Activities
 
 Use this pattern to execute multiple instances of the same flow of activities. It is specially useful in situations where the number of executed instances is only known at runtime.

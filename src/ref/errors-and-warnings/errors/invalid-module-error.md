@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: e1f2d221-fa69-4a47-bc46-5052d48ee60a
+---
+
 # Invalid Module Error
 
 The `Invalid module` error is issued in the following situation:

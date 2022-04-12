@@ -1,6 +1,8 @@
 ---
 summary: This technical preview enables you to set application Site Properties in the target environment while performing a deployment in LifeTime.
 tags: support-Application_Lifecycle-featured
+locale: en-us
+guid: 4acf3283-61b0-4409-a357-cb2ef63f1a5e
 ---
 
 # Technical Preview - Configure Site Properties During Deployment

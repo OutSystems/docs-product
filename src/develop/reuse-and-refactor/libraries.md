@@ -1,6 +1,8 @@
 ---
 summary: A Library is a module type that allows you to reduce the number of dependencies in a given environment.
 tags: runtime-mobileandreactiveweb
+locale: en-us
+guid: cc983a8d-46d2-4fad-b6f3-eaf1148dba44
 ---
 
 # Libraries

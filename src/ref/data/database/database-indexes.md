@@ -1,6 +1,8 @@
 ---
 summary: Information for database administrators about database indexes. A preferred way of creating a database index is through Service Studio. You can also create them through SQL, but note that the OSIDX is a reserved prefix for the managed indexes.
 tags: support-Database
+locale: en-us
+guid: d1757e12-d324-45d9-b019-992a4547af24
 ---
 
 # Database Indexes

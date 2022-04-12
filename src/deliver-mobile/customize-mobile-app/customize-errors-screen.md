@@ -1,6 +1,8 @@
 ---
 summary: To customize the unhandled errors screen in mobile applications you need to configure a JSON and edit the CSS. This article explains how.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
+locale: en-us
+guid: bacb4f2b-e04b-4ecf-8ce0-1f9536afa095
 ---
 
 # Customize the Errors Screen

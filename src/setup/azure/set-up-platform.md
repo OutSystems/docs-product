@@ -1,6 +1,8 @@
 ---
 tags: support-Installation_Configuration; support-Installation_Configuration-overview; support-installation;
 summary: Instructions on how to set up OutSystems on Microsoft Azure, from running the solution wizard and registering the environments, to installing the UI components.
+locale: en-us
+guid: 4a33c4a9-87b2-4ce0-9523-93c937f53fdd
 ---
 
 # Set Up OutSystems on Microsoft Azure

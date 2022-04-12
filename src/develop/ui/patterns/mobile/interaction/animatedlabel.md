@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: The Animated Label animates a label when there is user input.
+locale: en-us
+guid: 6b42f314-f637-444d-b908-f0609c1ba46f
 ---
 
 # Animated Label

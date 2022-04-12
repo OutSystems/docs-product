@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.REST.RestActionOutputDescriptor
 helpids: 30081
+locale: en-us
+guid: f27841f8-0506-40bf-a590-427215436a01
 ---
 
 # Output Parameter (REST API Method)

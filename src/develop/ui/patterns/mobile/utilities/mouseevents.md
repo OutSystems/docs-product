@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: The Mouse Events UI Pattern enables click events on a specific widget or pattern.
+locale: en-us
+guid: 95bf7d02-e8a6-4ca9-a080-cc4e80cb1629
 ---
 
 # Mouse Events

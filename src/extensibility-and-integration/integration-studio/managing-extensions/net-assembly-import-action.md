@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 45cc30b7-02ce-49a6-9d9a-9f7d61b6a022
+---
+
 # Import Actions from .NET Assembly
 
 The Import Actions from .NET Assembly wizard allows you to import the actions definitions from a .NET assembly. Using introspection into a .NET assembly, this wizard will create the actions you specified according to the signature of the .NET methods.

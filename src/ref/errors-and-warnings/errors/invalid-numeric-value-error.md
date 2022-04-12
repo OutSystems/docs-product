@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: d53c74cf-c4dd-4756-a069-6751814f6005
+---
+
 # Invalid Numeric Value Error
 
 The `Invalid Numeric Value` error is issued in the following situations:

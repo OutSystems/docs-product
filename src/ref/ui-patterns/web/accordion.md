@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Accordion UI Pattern.
+locale: en-us
+guid: 535efa42-703f-4913-a0e6-d452ac259513
 ---
 
 # Accordion Reference

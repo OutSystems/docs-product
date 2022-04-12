@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Card Sectioned groups short pieces of information in sections and highlights them on the screen.
+locale: en-us
+guid: db5e39c5-f5ee-4e18-9754-14fef2f95533
 ---
 
 # Card Sectioned
@@ -54,4 +56,4 @@ After following these steps and publishing the module, you can test the pattern 
 |UsePadding (Boolean): Optional  | If True, content has padding. This is the default. If False, the content has no padding. |
 |IsVertical (Boolean): Optional  | If True, the Card Sectioned pattern displays vertically. This is the default. If false, the pattern displays horizontally. |
 |ImagePadding (Boolean): Optional  | If True, a padding of 24px is applied to the image. This is the default. If False, no padding is applied to teh image. |
-|ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+|ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<p>Examples</p><ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

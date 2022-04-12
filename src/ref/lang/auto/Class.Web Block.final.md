@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.Nodes+WebBlock+Kind, ServiceStudio.Model.ReferenceWebBlock+Kind
 helpids: 1006
 tags: runtime-traditionalweb
+locale: en-us
+guid: 5d03bd37-8e91-4c60-8d7f-b550ab56994d
 ---
 
 # Web Block
@@ -67,7 +69,7 @@ In case the execution of the Producer and Consumer modules are under different U
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

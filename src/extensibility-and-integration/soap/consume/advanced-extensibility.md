@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 74906504-7e14-40cd-8a55-221155e073a7
+---
+
 # Use Advanced Extensibility
 
 When consuming a SOAP web service you can use your own .NET code to change the connection or to customize the message in the request and/or response.

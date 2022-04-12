@@ -1,6 +1,8 @@
 ---
 summary: Provides functionality to allow you to integrate with your external databases.
 tags: article-page; support-application_development; support-Database; support-Integrations_Extensions
+locale: en-us
+guid: 09f23dc2-a597-49ed-a083-21921deec622
 ---
 
 # RuntimePublic.Db API
@@ -84,8 +86,8 @@ Represents a connection to a database.
 
 Name | Description
 ---|---
-[CommittableTransaction](#committabletransaction) BeginReadUncommittedTransaction() | Creates an [OutSystems.RuntimePublic.Db.CommittableTransaction](#committabletransaction) with the transaction isolation level set to read uncommitted.%%**Warning: This method has been deprecated.**
-[CommittableTransaction](#committabletransaction) BeginTransaction() | Creates an [OutSystems.RuntimePublic.Db.CommittableTransaction](#committabletransaction) with the transaction isolation level set to read committed.%%**Warning: This method has been deprecated.**
+[CommittableTransaction](#committabletransaction) BeginReadUncommittedTransaction() | Creates an [OutSystems.RuntimePublic.Db.CommittableTransaction](#committabletransaction) with the transaction isolation level set to read uncommitted.<br/>**Warning: This method has been deprecated.**
+[CommittableTransaction](#committabletransaction) BeginTransaction() | Creates an [OutSystems.RuntimePublic.Db.CommittableTransaction](#committabletransaction) with the transaction isolation level set to read committed.<br/>**Warning: This method has been deprecated.**
 void Close() | Closes the connection to the database.
 [Command](#command) CreateCommand(string sql) | Creates a command that doesn't have an associated transaction.
 [Command](#command) CreateCommand() | Creates an empty command that doesn't have an associated transaction.
@@ -132,7 +134,7 @@ Represents the query parameters associated with a command.
 
 Name | Description
 ---|---
-IDbDataParameter %%GetDriverParameter() | Returns the native parameter object used by the stack in which the application is running.
+IDbDataParameter <br/>GetDriverParameter() | Returns the native parameter object used by the stack in which the application is running.
 
 #### Members
 

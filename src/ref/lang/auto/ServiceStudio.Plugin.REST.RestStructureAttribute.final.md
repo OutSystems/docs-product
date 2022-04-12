@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.REST.RestStructureAttributeDescriptor
 helpids: 30058
+locale: en-us
+guid: 1d89067b-946a-4832-99ec-81c78cb5ca3f
 ---
 
 # Structure Attribute (REST API Method)
@@ -69,7 +71,7 @@ Attribute of structure used in input and output arguments of REST API Methods.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

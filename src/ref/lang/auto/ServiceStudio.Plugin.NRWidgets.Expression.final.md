@@ -3,6 +3,8 @@ summary: Reference information on the Expression widget for displaying a text li
 tags: outsystems-designing-screens; reference; designing-screens; expression
 kinds: ServiceStudio.Plugin.NRWidgets.ExpressionDescriptor
 helpids: 30028
+locale: en-us
+guid: b5b035e8-ea51-41bb-ab1a-92dcb8db2013
 ---
 
 # Expression
@@ -85,7 +87,7 @@ We've been working on this article. Please let us know how useful this new versi
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

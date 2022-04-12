@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: cfa237a8-7738-48a4-8561-bacf28c6e379
+---
+
 # Invalid Text Value Error
 
 The `Invalid Text Value` error is issued in the following situation:

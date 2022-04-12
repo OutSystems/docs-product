@@ -1,6 +1,8 @@
 ---
 summary: Learn how to configure the hostname, purpose and debug mode of your OutSystems environment in Service Center console.
-tags: serverconfigurations; support-Installation_Configuration
+tags: support-Installation_Configuration
+locale: en-us
+guid: 34e53ab0-1ab2-429a-81c0-dd29cf99a549
 ---
 
 # Configure your OutSystems environment
@@ -114,7 +116,7 @@ The **Purpose** you can configure for the environment is subject to the environm
 <td style="align:center;background-color:#dddddd;">No</td>
 </tr>
 <tr>
-<td>[Test and debug in Personal Area](../develop/troubleshoot/debug/public-personal-areas.md)</td>
+<td><a href="https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Debugging_Applications/Public_and_Personal_Areas">Test and debug in Personal Area</a></td>
 <td style="align:center;background-color:#f1c40f;">Yes<sup>B</sup></td>
 <td style="align:center;background-color:#dddddd;">No</td>
 <td style="align:center;background-color:#dddddd;">No</td>

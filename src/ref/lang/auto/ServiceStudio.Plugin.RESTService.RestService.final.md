@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.RESTService.RestServiceDescriptor
 helpids: 17225
+locale: en-us
+guid: 57616b45-1a96-4752-aa4a-dff3dd159a86
 ---
 
 # REST API
@@ -48,7 +50,7 @@ API exposing methods to allow other systems to retrieve or manipulate informatio
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Security</th>
 </tr>
 <tr>
@@ -72,7 +74,7 @@ API exposing methods to allow other systems to retrieve or manipulate informatio
 <td>No</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

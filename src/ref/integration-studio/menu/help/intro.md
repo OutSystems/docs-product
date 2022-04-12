@@ -1,5 +1,7 @@
 ---
 summary: Reference of the Help menu.
+locale: en-us
+guid: a4e4f590-1c84-40b3-9242-77824221ee46
 ---
 
 # Help Menu

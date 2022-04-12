@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SOAP.SOAPActionDescriptor
 helpids: -1
+locale: en-us
+guid: ed14038d-f827-432d-b5c1-523022d5fea9
 ---
 
 # Web Service Method (Consumed)
@@ -34,7 +36,7 @@ Method of a Consumed SOAP Web Service.
 <td></td>
 <td>Useful for documentation purpose.<br/>The maximum size of this property is 2000 characters.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

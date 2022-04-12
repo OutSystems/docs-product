@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb;
 summary: Advanced use cases for the Toggle Button UI Pattern.
+locale: en-us
+guid: 0a3ed4d0-92d8-42d3-8cb5-076de9b5752a
 ---
 
 # Toggle Button Reference

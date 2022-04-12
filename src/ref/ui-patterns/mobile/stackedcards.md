@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Advanced use cases for the Stacked Cards UI Pattern
+locale: en-us
+guid: 2b2b2437-d9dc-44bf-8d95-a0fb959fa61c
 ---
 
 # Stacked Cards Reference

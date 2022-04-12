@@ -1,6 +1,8 @@
 ---
 summary: How to convert an existing Mobile or Reactive module to a Library.
 tags: runtime-mobileandreactiveweb
+locale: en-us
+guid: 08e6258e-4543-4232-b5dc-1fd3707a0ecf
 ---
 
 # Convert to Library

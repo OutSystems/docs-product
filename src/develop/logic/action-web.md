@@ -1,6 +1,8 @@
 ---
 summary: Learn more about the Actions you can create and use in your web applications.
 tags: runtime-traditionalweb; support-webapps; support-webapps-overview
+locale: en-us
+guid: 8536c396-e702-492a-8a07-ab8c8bc0334c
 ---
 
 # Actions in Web Applications

@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.REST.RestActionInputDescriptor
 helpids: 30080
+locale: en-us
+guid: 32eb391b-601d-4332-9f9b-a6844fd5c034
 ---
 
 # Input Parameter (REST API Method)
@@ -55,7 +57,7 @@ Input parameter of a consumed REST API Method.
 <td>No</td>
 <td>Check [Redacting information from REST API logs](../../../extensibility-and-integration/rest/consume-rest-apis/redact-info-from-logs.md).</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

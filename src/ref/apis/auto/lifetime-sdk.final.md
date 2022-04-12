@@ -1,6 +1,8 @@
 ---
 summary: Core layout components and APIs used by LifeTime and its plugins.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 03fe77b6-1b3d-4114-84da-0bb10e3ead6c
 ---
 
 # LifeTime SDK
@@ -23,11 +25,11 @@ Widget | Description
 ---|---
 [Internal_Layout_LifeTime](<#Internal_Layout_LifeTime>) | The LifeTime layout.
 [Internal_Layout_Popup](<#Internal_Layout_Popup>) | The Popup Layout to be used in a LifeTime plugin. Pressing the popup buttons triggers the OnNotify action containing a LayoutPopupButtonClicked identifier.
-[Layout_LifeTimeSDK](<#Layout_LifeTimeSDK>) | The Web Block to be used as the base layout for a LifeTime plugin. The layout allows you to easily create screens with the look and feel of LifeTime, since it contains LifeTime header and footer.%%%%The layout also contains a stamp for you to customize with the developer or company name, when you register the plugin.
+[Layout_LifeTimeSDK](<#Layout_LifeTimeSDK>) | The Web Block to be used as the base layout for a LifeTime plugin. The layout allows you to easily create screens with the look and feel of LifeTime, since it contains LifeTime header and footer.<br/><br/>The layout also contains a stamp for you to customize with the developer or company name, when you register the plugin.
 
 Action | Description
 ---|---
-[Application_Get](<#Application_Get>) | Returns the information of an application in an environment.%%If the environment is not specified, information of the application across all infrastructure is returned.
+[Application_Get](<#Application_Get>) | Returns the information of an application in an environment.<br/>If the environment is not specified, information of the application across all infrastructure is returned.
 [Application_List](<#Application_List>) | Returns a list of the applications in the specified environment that are visible within LifeTime, with their information, such as name, description, url. If no environment is specified, information of all visible applications across all environments is returned.
 [ApplicationVersion_Get](<#ApplicationVersion_Get>) | Returns information of an application on a specified date.
 [ApplicationVersion_List](<#ApplicationVersion_List>) | Returns the information of all tagged application versions for the specified application.
@@ -38,9 +40,9 @@ Action | Description
 [GetUserSessionToken](<#GetUserSessionToken>) | Returns an authentication token that is valid for 5 minutes, for the session user.
 [ModuleVersion_Get](<#ModuleVersion_Get>) | Returns the information of a module version for the specified module and version.
 [ModuleVersion_List](<#ModuleVersion_List>) | Returns the information of all module versions for the specified module.
-[Plugin_Register](<#Plugin_Register>) | Registers the caller eSpace as a LifeTime plugin: in the LifeTime 'More' menu a new link is created with the specified name that redirects to the entry point provided, or the default entry point if none is provided. All web screens of the plugin are displayed with their owner name.%%Each eSpace can only register a single plugin.%%
+[Plugin_Register](<#Plugin_Register>) | Registers the caller eSpace as a LifeTime plugin: in the LifeTime 'More' menu a new link is created with the specified name that redirects to the entry point provided, or the default entry point if none is provided. All web screens of the plugin are displayed with their owner name.<br/>Each eSpace can only register a single plugin.<br/>
 [Plugin_Unregister](<#Plugin_Unregister>) | Unregisters the caller eSpace as a LifeTime plugin: in the LifeTime 'More' menu there is no longer a link to the plugin.
-[Security_CheckApplicationPermission](<#Security_CheckApplicationPermission>) | Checks if a user has a permission for a specific application running on an environment.%%If no user is specified, the current user is used.
+[Security_CheckApplicationPermission](<#Security_CheckApplicationPermission>) | Checks if a user has a permission for a specific application running on an environment.<br/>If no user is specified, the current user is used.
 [Security_CheckEnvironmentPermission](<#Security_CheckEnvironmentPermission>) | Checks if a user has a permission for a specific environment. If no user is specified, the current user is used.
 [Security_CheckInfrastructurePermission](<#Security_CheckInfrastructurePermission>) | Checks if a user has the 'Configure Infrastructure' permission. If no user is specified, the current user is used.
 [Security_GetApplicationsPermissions](<#Security_GetApplicationsPermissions>) | Returns the permissions the specified user has for each application in the environment. If no user is specified, the current user is used.

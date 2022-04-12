@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.SystemClientActions+OnApplicationResume+Kind
 helpids: 0
 tags: runtime-mobile
+locale: en-us
+guid: bec0793d-a9f6-429b-b6dc-a86e4fdb60d3
 ---
 
 # On Application Resume

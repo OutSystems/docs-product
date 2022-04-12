@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c0adb2a0-b45d-4ffe-b4c6-28a9f5c7484e
+---
+
 # Required Input Parameter Error
 
 The `Required Input Parameter` error is issued in the following situation:

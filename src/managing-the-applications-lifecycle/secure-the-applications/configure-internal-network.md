@@ -1,6 +1,8 @@
 ---
 summary: Configure the range of IP addresses that are considered part of your internal network.
 tags: support-Security-overview
+locale: en-us
+guid: 2326f357-2f2a-4a5c-a05d-fb20edd7be5f
 ---
 
 # Configure an Internal Network

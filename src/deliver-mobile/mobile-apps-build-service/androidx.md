@@ -1,6 +1,8 @@
 ---
 summary: AndroidX replaces the old Android Support Library. In MABS 6, AndroidX is optional and this document shows how to activate the AndroidX support for native mobile apps.
 tags: runtime-mobile
+locale: en-us
+guid: 1544fe43-3dbd-427e-bfd2-69ab0594f2e2
 ---
 
 # Building apps with AndroidX

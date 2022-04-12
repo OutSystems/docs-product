@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.EntityAttribute+Kind, ServiceStudio.Model.ReferenceEntityAttribute+Kind
 helpids: 0
+locale: en-us
+guid: a5293dd0-7718-4b6e-a560-a807edb69083
 ---
 
 # Entity Attribute
@@ -92,7 +94,7 @@ An Entity Attribute represents a column in a database table.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

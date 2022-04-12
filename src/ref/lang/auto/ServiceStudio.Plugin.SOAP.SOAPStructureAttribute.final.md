@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SOAP.SOAPStructureAttributeDescriptor
 helpids: -1
+locale: en-us
+guid: 990d2fb4-4286-477c-9efe-235431ef7833
 ---
 
 # Structure Attribute (Consumed SOAP)
@@ -69,7 +71,7 @@ Structure attribute belonging to a consumed SOAP Web Service.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

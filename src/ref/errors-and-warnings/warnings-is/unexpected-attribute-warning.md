@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 94bc7cd0-af9e-41fe-9b49-cd95a1aa4b13
+---
+
 # Unexpected Attribute Warning
 
 Message

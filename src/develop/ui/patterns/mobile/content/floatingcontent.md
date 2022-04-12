@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Floating Content displays a panel that floats over content (like a map or an image), docked to a screen corner or direction.
+locale: en-us
+guid: 85bf3d51-36e8-4b3f-bebb-3ee59614230f
 ---
 
 # Floating Content
@@ -57,4 +59,4 @@ After following these steps and publishing the module, you can test the pattern 
 | UseFullHeight (Boolean): Optional| If True, the widget takes up the full height of the screen. If False, the widget doesn't take up the full height of the screen. This is the default.   |
 | UseFullWidth (Boolean): Optional| If True, the widget takes up the full width of the screen. If False, the widget doesn't take up the full width of the screen. This is the default. |
 | UseMargin (Boolean): Optional| If True, a margin is applied to the widget. This is the default. If False, there is no margin applied to the widget. |
-| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet]https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

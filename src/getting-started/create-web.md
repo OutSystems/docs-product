@@ -1,6 +1,8 @@
 ---
 summary: Follow this tutorial to quickly create and test a Traditional Web App example to manage contacts.
 tags: runtime-traditionalweb; support-webapps
+locale: en-us
+guid: f84888af-0987-4ec7-98f7-195f6e493292
 ---
 
 # Create Your First Traditional Web App
@@ -86,10 +88,10 @@ OutSystems adds server-side logic to delete the contact record and associates th
 
 ## Publish your Traditional Web App
 
-Now we just need to make the application go live. Click the ![1-Click Publish](../shared/icons-service-studio/publish.png) **1-Click Publish** button to publish the application to your environment.
+Now we just need to make the application go live. Click the **1-Click Publish** button to publish the application to your environment.
 
 ![Publish Your Application](images/create-web-10.png)
 
-When the application is deployed, click the ![Open in Browser](../shared/icons-service-studio/open-browser.png) **Open in Browser** button to test your application in a browser.
+When the application is deployed, click the **Open in Browser** button to test your application in a browser.
 
 ![Open Your Application](images/create-web-11.png)

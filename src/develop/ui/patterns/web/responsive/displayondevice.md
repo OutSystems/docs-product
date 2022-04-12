@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: DisplayOnDevice improves the way information is displayed on different devices.
+locale: en-us
+guid: cb68aaf9-4836-4eeb-b3f2-0a9fcc5164a4
 ---
 
 # Display on Device
@@ -47,4 +49,4 @@ After following these steps and publishing the module, you can test the pattern 
 
 | **Property** |  **Description** |
 |---|---|
-| Behavior (DeviceResponsive Identifier): Mandatory | Select the device types upon which the content is displayed. The following are the predefined options available: <p><ul><li>DesktopOnly</li><li>DesktopAndTablet</li><li>TabletOnly</li><li>TabletAndPhone</li><li>PhoneOnly</li><li>AllDevices</li></ul></p><p>Examples<ul><li>_Entities.DeviceResponsive.DesktopOnly_ - Content is displayed on Desktop browsers only</li><li>_Entities.DeviceResponsive.TabletAndPhone_ - Content is displayed on Tablet and Phone browsers only</li></ul></p> |
+| Behavior (DeviceResponsive Identifier): Mandatory | Select the device types upon which the content is displayed. The following are the predefined options available: <p><ul><li>DesktopOnly</li><li>DesktopAndTablet</li><li>TabletOnly</li><li>TabletAndPhone</li><li>PhoneOnly</li><li>AllDevices</li></ul></p><p>Examples<ul><li>Entities.DeviceResponsive.DesktopOnly - Content is displayed on Desktop browsers only</li><li>Entities.DeviceResponsive.TabletAndPhone - Content is displayed on Tablet and Phone browsers only</li></ul></p> |

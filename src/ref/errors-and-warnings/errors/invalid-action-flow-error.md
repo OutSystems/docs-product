@@ -1,6 +1,8 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Invalid Action Flow TrueChange errors
 tags:
+locale: en-us
+guid: b477089c-5ad9-4310-9978-a7367e20e7de
 ---
 
 # Invalid Action Flow Error

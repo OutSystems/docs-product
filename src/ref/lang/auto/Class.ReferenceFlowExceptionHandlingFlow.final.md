@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.NewRuntime.ReferenceFlowExceptionHandlingFlow+Kind
 helpids: 0
+locale: en-us
+guid: 76f416af-ffea-48be-aa8c-417d130d33d5
 ---
 
 # ReferenceFlowExceptionHandlingFlow

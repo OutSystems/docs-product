@@ -1,12 +1,13 @@
 ---
 summary: Use the SQL element to write and execute custom SQL queries.
 tags: support-Database
+locale: en-us
+guid: 17f9fae0-ed62-44a4-befb-788f5206fad0
 ---
 
 # SQL Queries
 
-
-The ![SQL](../../../shared/icons-tools/advanced-query.png) **SQL** element lets you run, test, and review SQL queries in your apps. SQL is an all-purpose tool for developers who know SQL language. For a more straightforward and optimized data manipulation use **Aggregates**.
+The **SQL** element lets you run, test, and review SQL queries in your apps. SQL is an all-purpose tool for developers who know SQL language. For a more straightforward and optimized data manipulation use **Aggregates**.
 
 ![SQL in a logic flow](images/sql-in-flow-ss.png?width=350)
 

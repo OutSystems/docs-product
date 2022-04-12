@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+AttachEmailContent+Kind
 helpids: 0
+locale: en-us
+guid: 05294b82-4021-4992-abe8-41d7d285b55b
 ---
 
 # Attach File

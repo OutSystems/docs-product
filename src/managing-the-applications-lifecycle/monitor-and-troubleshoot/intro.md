@@ -1,6 +1,8 @@
 ---
 summary: Understand the current state of an environment and monitor problems impacting end users.
 tags: support-devOps; support-monitoring
+locale: en-us
+guid: 636a2bea-478d-4703-aaf8-e2f8ee514f2c
 ---
 
 # Monitor and Troubleshoot

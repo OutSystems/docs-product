@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+JSONSerialize+Kind
 helpids: 30002
+locale: en-us
+guid: a1cf5074-f5ba-48cf-a229-206358fd55c0
 ---
 
 # JSON Serialize

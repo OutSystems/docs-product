@@ -1,6 +1,8 @@
 ---
 summary: Check the causes and recommendations on how to solve the different SQL Injection TrueChange warnings.
 tags:
+locale: en-us
+guid: fb90dea0-5413-4871-8e16-ee2b0ce89a73
 ---
 
 # SQL Injection Warning

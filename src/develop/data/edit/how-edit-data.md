@@ -1,6 +1,8 @@
 ---
 summary: Learn how to add a record or row, remove a record or row, and change an attribute or cell in Service Studio.
 tags: 
+locale: en-us
+guid: f83e9afb-de9b-4b5e-9564-24490bc762e5
 ---
 
 # How to edit the data of an entity in Service Studio

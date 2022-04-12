@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+RadioButton+Kind, ServiceStudio.Model.WebWidgets+ReferenceRadioButton+Kind
 helpids: 4045
 tags: runtime-traditionalweb
+locale: en-us
+guid: 5f9dcef2-c781-41b5-bc68-914d4cdaec29
 ---
 
 # Radio Button Widget
@@ -73,7 +75,7 @@ To define a radio button group, each Radio Button widget must be bound to the sa
 <td>Yes</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>
@@ -90,7 +92,7 @@ To define a radio button group, each Radio Button widget must be bound to the sa
 <td></td>
 <td>You can type the value directly or write expressions using the Expression Editor.<br/><br/>If the Value is empty, the corresponding HTML tag is created as property="property". For example, the nowrap property does not require a value, therefore nowrap="nowrap" is added.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">On Change</th>
 </tr>
 <tr>

@@ -1,7 +1,8 @@
 ---
-tags: client-side; web server
+tags: 
 summary: 
-en_title: Control image size
+locale: en-us
+guid: ea0f4bea-2a44-4d6d-bd9b-1ec11f8beffa
 ---
 
 

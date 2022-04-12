@@ -1,5 +1,7 @@
 ---
 summary: Learn how to grant users with permissions for specific applications.
+locale: en-us
+guid: 00796575-6a6e-40dc-a4a8-88ff5d4a549a
 ---
 
 # Grant Permissions for Specific Applications

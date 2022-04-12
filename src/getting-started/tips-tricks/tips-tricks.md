@@ -1,6 +1,8 @@
 ---
 summary: 
 tags: 
+locale: en-us
+guid: 0a003300-3e48-41de-8b77-f08d464a9eb4
 ---
 # Service Studio Tips and Tricks
 
@@ -240,7 +242,7 @@ Speed up your Entity/Structure creation by helping Service Studio automatically 
 
 Name your Attribute/Variable according to the following rules and Service Studio will set the Data Type for you.
 
-Attribute/Variable%%Data Type | Attribute/Variable%%Name | Example
+Attribute/Variable<br/>Data Type | Attribute/Variable<br/>Name | Example
 ---|---|---
 Integer|`x`, `y`, `z`, `*Count`, `*Number`| `HeadCount`, `Number`
 Date|`*Date`|`BirthDate`

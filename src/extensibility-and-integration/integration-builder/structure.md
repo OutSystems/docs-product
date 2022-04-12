@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 597ab495-4b31-4d7f-8c36-a8998c5d4070
+---
+
 # Structure of generated integrations
 
 Integration Builder generates and publishes integrations, which are OutSystems applications composed of two modules:

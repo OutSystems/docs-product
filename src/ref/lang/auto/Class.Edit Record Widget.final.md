@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+EditRecord+Kind, ServiceStudio.Model.WebWidgets+ReferenceEditRecord+Kind
 helpids: 4021
 tags: runtime-traditionalweb
+locale: en-us
+guid: 74eded7e-7771-4b79-80bd-b047640728e2
 ---
 
 # Edit Record Widget
@@ -100,7 +102,7 @@ Use the [Form widget](<ServiceStudio.Plugin.Widgets.Form.final.md>) instead of t
 <td>"EditRecord_Value"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

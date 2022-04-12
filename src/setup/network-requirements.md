@@ -1,6 +1,8 @@
 ---
 summary: Check OutSystems network requirements before installing it on an environment.
-tags: requirements; support-installation
+tags: support-installation
+locale: en-us
+guid: 6238ecb9-6eaf-4406-a421-f4b01322052d
 ---
 
 # OutSystems network requirements

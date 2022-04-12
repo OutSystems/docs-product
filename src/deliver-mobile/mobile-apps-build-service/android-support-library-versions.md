@@ -1,6 +1,8 @@
 ---
 summary: Learn about different Android support library versions, how these versions are handled by MABS and how they should be handled by customers and plugin developers.
 tags: runtime-mobile
+locale: en-us
+guid: 8734c248-e81d-4d5b-a3a2-323a0373c188
 ---
 
 # Android Support Library Versions for MABS
@@ -52,38 +54,13 @@ However it is recommended to update these plugins to the newer versions. Using o
 
 The following table provides information about the recommended versions for plugins that use support libraries.
 
-<table>
-<tr>
-<th style="text-align: center">Plugin Name</th>
-<th style="text-align: center">Version for MABS 4</th>
-<th style="text-align: center">Version for MABS 5</th>
-</tr>
-<tr>
-<th>Barcode Plugin</th>
-<td style="text-align: center">3.0.1</td>
-<td style="text-align: center">4.0.0</td>
-</tr>
-<tr>
-<th>Camera Plugin</th>
-<td style="text-align: center">4.0.0</td>
-<td style="text-align: center">5.0.0</td>
-</tr>
-<tr>
-<th>Local Notifications Plugin</th>
-<td style="text-align: center">5.0.0</td>
-<td style="text-align: center">6.0.0</td>
-</tr>
-<tr>
-<th>OneSignal Plugin</th>
-<td style="text-align: center">2.1.0</td>
-<td style="text-align: center">3.0.0</td>
-</tr>
-<tr>
-<th>PushWoosh Plugin</th>
-<td style="text-align: center">3.1.0</td>
-<td style="text-align: center">4.0.0</td>
-</tr>
-</table>
+|Plugin Name|Version for MABS 4	|Version for MABS 5|
+|---|---|---|
+|**Barcode Plugin**|3.0.1|4.0.0|
+|**Camera Plugin**|4.0.0|5.0.0|
+|**Local Notifications Plugin**|5.0.0|6.0.0|
+|**OneSignal Plugin**|2.1.0|3.0.0|
+|**PushWoosh Plugin**|3.1.0|4.0.0|
 
 ### Third-party plugins
 

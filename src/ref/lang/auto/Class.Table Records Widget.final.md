@@ -3,6 +3,8 @@ kinds: ServiceStudio.Model.WebWidgets+TableRecords+Kind, ServiceStudio.Model.Web
 helpids: 4042
 summary: Learn how to use the Table Records widget to display the records of an entity or a structure in a tabular layout. Reference.
 tags: runtime-traditionalweb
+locale: en-us
+guid: 8d4c86cd-8f7b-4c79-8dcd-6d4152036b1e
 ---
 
 # Table Records Widget
@@ -166,7 +168,7 @@ For more information about the Table Records widget properties, see [Table Recor
 <td>"TableRecords_EvenLine"</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Plugin.Widgets.FormDescriptor
 helpids: 17194
 tags: runtime-traditionalweb
+locale: en-us
+guid: 0e4bedbe-6a83-44f4-8c55-969878cb2fc4
 ---
 
 # Form Widget
@@ -85,7 +87,7 @@ All enabled inputs inside the form will have the following behaviors:
 <td>True</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

@@ -1,6 +1,8 @@
 ---
 summary: Learn about the available authentication methods for end users in OutSystems.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: eaa92f05-a00d-4e75-a937-8c100b81d6df
 ---
 
 # End Users Authentication

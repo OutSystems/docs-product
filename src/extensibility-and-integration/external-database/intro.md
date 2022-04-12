@@ -1,6 +1,8 @@
 ---
 summary: 
 tags: 
+locale: en-us
+guid: 3d24ee9a-d0c6-40ce-a2e0-daae72b67327
 ---
 
 # Integrate with an External Database
@@ -9,7 +11,6 @@ OutSystems integrates with your existing databases. This allows you to develop a
 
 You can integrate with an external database in the following ways:
 
-[Integrate with an external database using Integration Studio](connect-external-db.md)
+* [Integrate with an external database using Integration Builder](integrate-external-db-ib.md)
 
-[Technical Preview - Integrate with an external database using Integration Builder](integrate-external-db-ib.md)
-
+* [Integrate with an external database using Integration Studio](connect-external-db.md)

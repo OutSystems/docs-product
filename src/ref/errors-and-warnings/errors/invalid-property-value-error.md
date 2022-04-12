@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c2e98fc6-f0da-45e4-bc1b-7707f98220db
+---
+
 # Invalid Property Value Error
 
 The `Invalid Property Value` error is issued in the following situations:

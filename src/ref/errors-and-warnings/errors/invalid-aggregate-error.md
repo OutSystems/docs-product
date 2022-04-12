@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: a69b71e6-0e42-4f5c-9452-a60e5432cd93
+---
+
 # Invalid Aggregate Error
 
 The `Invalid Aggregate` error is issued in the following situations:

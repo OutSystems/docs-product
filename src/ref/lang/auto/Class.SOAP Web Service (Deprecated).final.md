@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.WebReference+Kind, ServiceStudio.Model.WebService+Kind
 helpids: 11003, 11001
+locale: en-us
+guid: c2e59d22-6ed6-4982-a9fd-5ce8e440d660
 ---
 
 # SOAP Web Service (Deprecated)
@@ -49,7 +51,7 @@ New Consumed SOAP Web Service elements created in OutSystems 11 modules follow t
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

@@ -1,13 +1,15 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Use the Button Loading pattern to call actions that don't run immediately.
+locale: en-us
+guid: 9117e011-39f7-442f-b00b-9ac846acab63
 ---
 
 # Button Loading
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.0, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+If you are using an OutSystems UI version lower than 2.8.0, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
                             
 </div>
 
@@ -43,11 +45,14 @@ You can use the Button Loading UI Pattern to call actions that don't run immedia
 
     ![Create a new local variable](<images/buttonloading-variable-ss.png>)
 
-1. In this example, we also set the **ShowLabelOnLoading** property to **False** so that the spinner doesn't show while the button logic is being executed.
+1. In this example, we also set the **ShowLabelOnLoading** property to **False**. 
+This displays the loading spinner only (not the Button label) while the button logic is being executed.
 
     ![Set the ShowLabelOnLoading property](<images/buttonloading-setprop-ss.png>)
 
-1. Double-click the **Button** widget and add the necessary logic. In this example, the **ButtonOnClick** action creates a new user. We also add **Assign** logic for the **Button Loading** widget. The first Assign has the **CreatingNewUser** set to **False**. This is so the spinner doesn't display. The second Assign has the **CreatingNewUser** set to **True**. (The logic is added between the two Assigns.)
+1. Double-click the **Button** widget and add the necessary logic. 
+
+    In this example, the **ButtonOnClick** action creates a new user. We also add **Assign** logic for the **Button Loading** widget. The first Assign has the **CreatingNewUser** set to **True**. (This is so the spinner shows the loading state.) The second Assign has the **CreatingNewUser** set to **False**. (The logic is added between the two Assigns.)
 
     ![Add the relevant logic](<images/buttonloading-logic-ss.png>)
 
@@ -62,5 +67,5 @@ After following these steps and publishing the module, you can test the pattern 
 | Property | Description |
 |---|---|
 | IsLoading (Boolean): Mandatory | If True, the button shows the loading spinner. If False, the button doesn't show the loading spinner. |
-| ShowLabelOnLoading (Boolean): Optional | If True, the loading spinner displays beside the label. If False, the loading spinner displays underneath the label. This is the default. |
-| ExtendedClass (Text): Optional | <p>Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet). |
+| ShowLabelOnLoading (Boolean): Optional | If True, the loading spinner displays beside the label. If False, the only the loading spinner is displayed. This is the default. |
+| ExtendedClass (Text): Optional | <p>Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet). |

@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+InputFilename+Kind, ServiceStudio.Model.WebWidgets+ReferenceInputFilename+Kind
 helpids: 4040
 tags: runtime-traditionalweb
+locale: en-us
+guid: d4e8f882-7eb3-4476-a056-c0f4017ea78f
 ---
 
 # Upload Widget
@@ -57,7 +59,7 @@ Allows the user to browse and select a local file to be uploaded into the applic
 <td>Yes</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

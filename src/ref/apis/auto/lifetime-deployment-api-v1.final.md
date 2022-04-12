@@ -1,17 +1,11 @@
 ---
 summary: Allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure.
 tags: support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
+locale: en-us
+guid: 12a00b35-9fbb-497f-a3f1-4e0017f401bd
 ---
 
 # LifeTime API v1
-
-
-<pre class="script-css">
-/* HIDE H3, H4 AND H5 FROM TOC */
-#mt-toc-container li li li {
-    display:none;
-}
-</pre>
 
 <div class="warning" markdown="1">
 

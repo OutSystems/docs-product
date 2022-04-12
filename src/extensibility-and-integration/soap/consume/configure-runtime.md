@@ -1,5 +1,7 @@
 ---
 summary: Customize the SOAP Web Service endpoint URL and user credentials per environment in Service Center.
+locale: en-us
+guid: 8f587c50-8581-49eb-a959-fb72411a00de
 ---
 
 # Configure a SOAP Web Service at Runtime

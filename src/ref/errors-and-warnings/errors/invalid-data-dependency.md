@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: bdac6bb2-8fa2-4c3b-b006-d30a08fa4566
+---
+
 # Invalid Data Dependency
 
 The Invalid Data Dependency error is issued in the following situations:

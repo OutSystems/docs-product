@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.REST.RestStructureDescriptor
 helpids: 30057
+locale: en-us
+guid: 87d9f1db-bf3a-40ac-a5a8-562243e035f2
 ---
 
 # Structure (REST API Method)

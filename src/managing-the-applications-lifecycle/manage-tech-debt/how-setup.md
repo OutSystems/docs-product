@@ -1,7 +1,8 @@
 ---
-tags: Architecture Dashboard;
+tags: 
 summary: Learn about pre-requirements and how to setup Architecture Dashboard.
-en_title: How to set up Architecture Dashboard
+locale: en-us
+guid: c9fd26ba-85ea-406d-834a-df6c0399d11a
 ---
 
 

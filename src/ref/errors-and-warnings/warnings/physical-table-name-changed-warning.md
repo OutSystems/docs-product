@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 7e812677-ceb0-4d0d-8e79-b56f14a7a28b
+---
+
 # Physical Table Name Changed Warning
 
 Message

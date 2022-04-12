@@ -1,6 +1,8 @@
 ---
 summary: Inform app users of the reason why AppShield blocked an app. Define a URL that the app opens once the AppShield closes the app it suspects is modified or tempered with.
 tags: support-application_development; runtime-mobile;
+locale: en-us
+guid: ff593156-92ef-4947-86f1-e3d2dfb58908
 ---
 
 # Configuring an exit URL for a blocked app
@@ -120,8 +122,6 @@ A list of reasons for app shutdown in Android devices.
 | 1       | Application is modified or repackaged                                     |
 | 2       | Application is being run in an emulator                                   |
 | 3       | Java debugger attached to app                                             |
-| 4       | Untrusted keyboard found                                                  |
-| 5       | Untrusted screen reader found                                             |
 | 6       | Native code hooks, possibly inserted by malicious app                     |
 | 8       | Shield could not read configuration file                                  |
 | 9       | Problem with Native Debugger Protection                                   |
@@ -130,7 +130,3 @@ A list of reasons for app shutdown in Android devices.
 | 15      | Application crashed outside of Java-code, either native library or Shield |
 | 16      | Hooking frameworks detected                                               |
 | 17      | Native debugger prevention not possible on this device                    |
-| 18      | Screen Mirroring in use                                                   |
-| 1A      | Developer Options enabled on device                                       |
-| 1B      | Untrusted Installer found on device                                       |
-| 1C      | Android Developer Bridge active on device                                 |

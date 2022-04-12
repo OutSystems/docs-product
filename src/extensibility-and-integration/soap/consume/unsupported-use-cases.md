@@ -1,5 +1,7 @@
 ---
 summary: Check the list of currently unsupported use cases when consuming SOAP 1.2 Web Services and how to overcome some of these situations.
+locale: en-us
+guid: dfd157ac-c6ce-4710-a022-3bd27f5fc8bc
 ---
 
 # Unsupported SOAP Use Cases
@@ -19,6 +21,7 @@ The current list of unsupported features/use cases is the following:
     * [Any attribute](<#wildcards-any-attribute>)
 * Any types:
     * [AnyType](<#any-types-anytype>)
+    * [No specified type](<#any-types-no-specified-type>)
     * [AnySimpleType and AnyAtomicType](<#any-types-anysimpletype-and-anyatomictype>)
 * [Attribute Groups](<#attribute-groups>)
 * [SOAP Action names with special characters](#special-characters)
@@ -235,6 +238,28 @@ Example:
 
 Currently there is no generic workaround available to overcome this unsupported use case.
 
+## Any types - no specified type
+
+An element with a `name` attribute and no `type` attribute is treated by default as `anyType` as above.
+
+Example:
+
+```xml
+<xsd:complexType name="GenericInformation">
+    <xsd:sequence>
+        <xsd:element minOccurs="1" name="Name" type="xsd:string" />
+        <xsd:element minOccurs="1" name="Type" type="tns:InformationKind" />
+        <xsd:element minOccurs="1" name="IsActive" type="xsd:boolean" />
+        <xsd:element minOccurs="1" name="SpecificInfo" /> 
+    </xsd:sequence>
+</xsd:complexType>
+```
+
+### Use case workaround
+
+If the element actually represents a property of a simple type then it can always be represented as a string. In this case a possible workaround is to add a `type="xsd:string"` attribute to the element before importing. 
+If the element can represent complex types then there is no generic workaround.
+
 ## Any types - AnySimpleType and AnyAtomicType
 
 The `xsd:anySimpleType` and `xsd:anyAtomicType` types represent all simple (not composed) types. You can use them in a declaration as a placeholder. At runtime the placeholder is replaced with a value of a specific type.
@@ -385,7 +410,7 @@ Currently there is no generic workaround available to overcome this unsupported 
 
 ## Exporting SOAP definition files  { #exporting }
 
-To implement a workaround first use the **Export Definition Files** feature of **Service Studio** to download the definition files to a local drive so that all relevant files can be easily opened and edited by following the procedure in [Exporting definition files](export-soap-definition-files.md#exportingdefinitionfiles).
+To implement a workaround first use the **Export Definition Files** feature of **Service Studio** to download the definition files to a local drive so that all relevant files can be easily opened and edited by following the procedure in [Exporting definition files](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Export_definition_files_in_a_SOAP_web_service#Exporting_definition_files).
 
 <div class="info" markdown="1">
 During the export process the schema location is automatically changed to the relative path on the local drive. There is no need to manually change the schema location attribute in the definition files.

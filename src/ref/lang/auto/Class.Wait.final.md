@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.ProcessNodes+WaitActivity+Kind, ServiceStudio.Model.ReferenceWaitActivity+Kind
 helpids: 0
+locale: en-us
+guid: f8be65b0-6cde-4d57-ad19-0f473f662fa0
 ---
 
 # Wait
@@ -87,7 +89,7 @@ Changing the `Close On` property to listen to events from another entity only ha
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

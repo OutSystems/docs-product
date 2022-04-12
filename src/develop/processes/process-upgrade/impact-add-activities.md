@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: b51a153e-2fe4-4721-ac98-8de123fdf804
+---
+
 # Impact of Adding Activities to Process Flows
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic lists some examples of the impact of newly added activities on executing process instances.

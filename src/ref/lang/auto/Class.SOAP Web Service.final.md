@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.WebReference+Kind, ServiceStudio.Model.WebService+Kind
 helpids: 11003, 11001
+locale: en-us
+guid: b3443ec2-7cb3-43e7-a8b9-1651890a5985
 ---
 
 # SOAP Web Service
@@ -34,7 +36,7 @@ Exposed Web Service based on the SOAP protocol.
 <td></td>
 <td>Useful for documentation purpose.<br/>The maximum size of this property is 2000 characters.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

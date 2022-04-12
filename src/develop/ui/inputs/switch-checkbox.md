@@ -1,14 +1,16 @@
 ---
 summary: Use Switch or Check Box widgets to change the value of boolean variables.
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+locale: en-us
+guid: dc284a2a-904b-4d90-84c0-43cbd7dcd7a0
 ---
 
 # Switch or Toggle a Boolean Value
 
 To gather end user input for a boolean value in a form, OutSystems provides two types of widgets:
 
-* ![](../../../shared/icons-tools/checkbox-widget.png) Check Box
-* ![](../../../shared/icons-tools/switch-widget.png) Switch (for Reactive Web and Mobile only)
+*  Check Box
+*  Switch (for Reactive Web and Mobile only)
 
 To use these widgets, do the following:
 

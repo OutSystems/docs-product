@@ -1,6 +1,8 @@
 ---
 summary: See how to create a custom user interface for the chatbot. 
 tags:
+locale: en-us
+guid: 4a9fac26-25aa-4c53-a0fa-bb76b640c5e2
 ---
 
 # Create custom chatbot UI

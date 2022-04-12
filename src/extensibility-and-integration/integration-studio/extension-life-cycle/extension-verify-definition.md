@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 6d5862f0-19e2-409e-a555-d4ab04d1a164
+---
+
 # Verify the Extension Definition
 
 The Verify the Extension Definition operation checks whether the extension is valid. An extension is valid if it does not have any errors, although warnings are allowed.

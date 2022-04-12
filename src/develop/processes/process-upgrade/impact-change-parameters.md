@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: b41e47d0-4d8d-4c37-84fb-b49af5783548
+---
+
 # Impact of Changing Parameters
 
 When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic describes which changes to input and output parameters may suspend process instances.

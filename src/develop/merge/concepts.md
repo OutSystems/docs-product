@@ -1,6 +1,8 @@
 ---
 summary: Read about the merge feature, conflict resolution, and the module comparison.
 tags:
+locale: en-us
+guid: f48625c7-2bc5-42d9-b6aa-435630cf9b22
 ---
 
 # The merge feature and team collaboration

@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Counter shows the total number of occurrences of several values regarding a single topic.
+locale: en-us
+guid: 91058e55-ccbb-494d-bc74-9bdeab106742
 ---
 
 # Counter
@@ -83,6 +85,6 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property |  Description |
 |---|---|
-| Orientation (Orientation Identifier): Optional  | Set the counter orientation. By default the counter is displayed horizontally. <p> Examples <ul><li>_Entities.Orientation.Horizontal_ - The counter displays horizontally </li><li>_Entities.Orientation.Vertical_ - The counter displays vertically</li></ul></p> |
+| Orientation (Orientation Identifier): Optional  | Set the counter orientation. By default the counter is displayed horizontally. <p> Examples <ul><li>Entities.Orientation.Horizontal - The counter displays horizontally </li><li>Entities.Orientation.Vertical - The counter displays vertically</li></ul></p> |
 | Height (Text): Optional  | Set the counter height. By default the counter height is 100 (pixel units). | 
-| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>_"myclass"_ - Adds the _myclass_ style to the UI styles being applied.</li><li>_"myclass1 myclass2"_ - Adds the _myclass1_ and _myclass2_ styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Live Style Guide](https://outsystemsui.outsystems.com/StyleGuidePreview/Styles). |
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|

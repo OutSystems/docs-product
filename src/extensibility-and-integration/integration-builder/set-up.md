@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 617ec597-a128-4b2a-872f-4a3a5856628c
+---
+
 # How to set up Integration Builder
 
 Integration Builder is a Software as a Service (SaaS) that connects to your OutSystems environment to authenticate and validate user connections. Integration Builder works with Integration Manager to keep the status of your integrations current, so it needs to be able to connect with the environments to which you deploy the integrations. In addition, Integration Builder is available in all OutSystems editions.  

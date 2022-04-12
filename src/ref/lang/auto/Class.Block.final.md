@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.NRNodes+WebBlock+Kind, ServiceStudio.Model.NewRuntime.ReferenceWebBlock+Kind
 helpids: 1006
+locale: en-us
+guid: fc28dd21-c51c-429f-a88d-61824267676a
 ---
 
 # Block
@@ -55,7 +57,7 @@ Reusable screen part that can implement its own logic.
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>
@@ -65,7 +67,7 @@ Reusable screen part that can implement its own logic.
 <td></td>
 <td>Click on "..." to edit the property value.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Events</th>
 </tr>
 <tr>
@@ -103,7 +105,7 @@ Reusable screen part that can implement its own logic.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Required Scripts</th>
 </tr>
 <tr>

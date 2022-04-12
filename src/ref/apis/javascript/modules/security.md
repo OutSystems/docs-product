@@ -1,6 +1,8 @@
 ---
 tags: runtime-mobileandreactiveweb
 summary: Provides methods for doing client side role checks. Used to programmatically show or hide UI elements depending on a given role.
+locale: en-us
+guid: efe75497-2f0f-4bbe-9f97-e65c2b345210
 ---
 
 # Security
@@ -9,21 +11,9 @@ Provides methods for doing client side role checks. Used to programmatically sho
 
 ## Summary
 
-<table markdown="1">
-<thead>
-<tr>
-<th colspan="2">Functions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[checkIfCurrentUserHasRole](security.md#checkifcurrentuserhasrole)</td>
-<td>
-Checks if the current user has the given role.
-</td>
-</tr>
-</tbody>
-</table>
+|Functions|Description|
+|---|---|
+|[checkIfCurrentUserHasRole](security.md#checkifcurrentuserhasrole)|Checks if the current user has the given role.|
 
 ## Functions
 

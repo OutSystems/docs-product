@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Model.WebWidgets+EmailLink+Kind, ServiceStudio.Model.WebWidgets+Link+Kind, ServiceStudio.Model.WebWidgets+ReferenceEmailLink+Kind, ServiceStudio.Model.WebWidgets+ReferenceLink+Kind
 helpids: 4028
 tags: runtime-traditionalweb
+locale: en-us
+guid: ecc756d6-3965-4b19-a3e8-309fd3b87b0d
 ---
 
 # Link Widget
@@ -71,7 +73,7 @@ Displays a hyperlink that users can click or tap to trigger an action, submit da
 <td>No</td>
 <td>In your web screens or web blocks you can define one default button or link.<br/>When you define a Button or Link widget as default, it means that pressing the <code>ENTER</code> key in an Input, Input Password, Select or Check Box widget has the same effect as pressing the button or the link.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">On Click</th>
 </tr>
 <tr>
@@ -108,7 +110,7 @@ Displays a hyperlink that users can click or tap to trigger an action, submit da
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

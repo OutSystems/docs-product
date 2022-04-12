@@ -1,13 +1,15 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Progress Bar displays the progress of a task by incrementing values in a bar.
+locale: en-us
+guid: 024aef71-32e0-490d-8bb9-3e2a45845b91
 ---
 
 # Progress Bar
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.1, please see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+If you are using an OutSystems UI version lower than 2.8.1, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
 
 </div>
 
@@ -73,6 +75,6 @@ After following these steps and publishing the module, you can test the pattern 
 |ProgressColor (Color Identifier): Optional |The background color of the progress bar. By default, the progress color is the primary color you chose when creating the app. |
 |TrailColor (Color Identifier): Optional|The color of the empty part of the bar. By default, the trail color is Neutral 4 (#DEE2E6). |
 |Thickness (Integer): Optional|The height of the progress bar, in pixels, for example 20.|
-|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>``''myclass''`` - Adds the ``myclass`` style to the UI styles being applied.</li><li>``''myclass1'' ''myclass2'' ``- Adds the ``myclass1 ``and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1" "myclass2"- Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 |OptionalConfigs.Shape (Shape Identifier): Optional|Set the progress shape. The predefined options are SoftRounded, Rounded, and Sharp. |
 |OptionalConfigs.AnimateInitialProgress (Boolean): Optional|If True, the progress bar will show an animation going from zero to its initial progress.|

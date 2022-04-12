@@ -1,5 +1,7 @@
 ---
 summary: Styles Editor is a panel for editing look and feel of widgets, such as color, size, alignment, borders. You can save styles as CSS classes and apply them elsewhere in your app.
+locale: en-us
+guid: 17ffefde-81fc-4aff-af1e-b99a12347194
 ---
 
 # Change the look of widgets with Styles Editor

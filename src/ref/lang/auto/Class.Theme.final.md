@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.NewRuntime.Theme+Kind, ServiceStudio.Model.Theme+Kind, ServiceStudio.Model.NewRuntime.ReferenceTheme+Kind, ServiceStudio.Model.ReferenceTheme+Kind
 helpids: 0, 17140
+locale: en-us
+guid: b29c0bb6-f138-4d20-934f-df01ba3c4e2a
 ---
 
 # Theme
@@ -91,7 +93,7 @@ A Theme cannot be exposed when:
 <td></td>
 <td>Click on "..." to edit the property value.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Grid</th>
 </tr>
 <tr>
@@ -143,7 +145,7 @@ A Theme cannot be exposed when:
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Web Blocks</th>
 </tr>
 <tr>
@@ -195,7 +197,7 @@ A Theme cannot be exposed when:
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Images</th>
 </tr>
 <tr>

@@ -2,6 +2,8 @@
 kinds: ServiceStudio.Plugin.Widgets.LabelDescriptor
 helpids: 17198
 tags: runtime-traditionalweb
+locale: en-us
+guid: c8a95d6b-9e2c-4a22-81c3-19f768410e0e
 ---
 
 # Label Widget
@@ -80,7 +82,7 @@ Both Label and Text widgets can be used as a caption for the inputs. However, th
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Extended Properties</th>
 </tr>
 <tr>

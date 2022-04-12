@@ -1,7 +1,8 @@
 ---
-tags: Architecture Dashboard.
+tags:
 summary: Learn how to Check the technical debt of all the apps in your infrastructure.
-en_title: Getting started as an architect
+locale: en-us
+guid: 5771d1af-cf5a-4e5c-a4c7-79f03a5f99ef
 ---
 
 # Getting started as an architect

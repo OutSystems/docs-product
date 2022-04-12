@@ -1,5 +1,7 @@
 ---
 summary: You can create Timers at design time and set their running schedule at design or runtime.
+locale: en-us
+guid: 133d8c46-b36b-47de-9ad3-ca8e6460bb20
 ---
 
 # Create and Run Timers

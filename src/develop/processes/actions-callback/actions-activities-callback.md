@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: da852258-d018-4628-b2bb-aec5fcc78c0b
+---
+
 # Using Process Activities Callback Actions
 
 When designing the process flow of your process, you can add business rules to validate the execution of your process activities at some stage of their life cycle. This allows you to block or quit the activity instance execution if a specified condition is not verified. This behavior is implemented through **Activity Callback actions**.
@@ -23,17 +28,17 @@ The business rules can be designed for the following available activity callback
 
 Below is a table containing a summary of which callback actions are executed by the activities:
 
-|Tool   |![](../../../shared/icons-tools/action.png) On Ready   |![](../../../shared/icons-tools/action.png) On Open   |![](../../../shared/icons-tools/action.png) On Start   |![](../../../shared/icons-tools/action.png) On Close   |![](../../../shared/icons-tools/action.png) On Skip   |
+|Tool   | On Ready   | On Open   | On Start   | On Close   | On Skip   |
 |----------|----------|----------|----------|----------|----------|
-|![](../../../shared/icons-tools/start-process.png) Start|-|-|-|-|-|
-|![](../../../shared/icons-tools/conditional-start.png) Conditional Start|Yes|-|Yes|-|-|
-|![](../../../shared/icons-tools/human-activity.png) Human Activity|Yes|Yes|-|Yes|Yes|
-|![](../../../shared/icons-tools/email-send.png) Send Email|-|-|-|-|-|
-|![](../../../shared/icons-tools/automatic-activity.png) Automatic Activity|-|-|-|-|-|
-|![](../../../shared/icons-tools/process.png) Execute Process|-|-|-|-|-|
-|![](../../../shared/icons-tools/wait-activity.png) Wait|Yes|-|-|Yes|Yes|
-|![](../../../shared/icons-tools/decision.png) Decision|-|-|-|-|-|
-|![](../../../shared/icons-tools/end-process.png) End|-|-|-|-|-|
+| Start|-|-|-|-|-|
+| Conditional Start|Yes|-|Yes|-|-|
+| Human Activity|Yes|Yes|-|Yes|Yes|
+| Send Email|-|-|-|-|-|
+| Automatic Activity|-|-|-|-|-|
+| Execute Process|-|-|-|-|-|
+| Wait|Yes|-|-|Yes|Yes|
+| Decision|-|-|-|-|-|
+| End|-|-|-|-|-|
 
 
 ## Designing Activities Callback Actions at Process Level

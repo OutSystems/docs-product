@@ -1,6 +1,8 @@
 ---
 summary: How to add the UI chatbot component to an app. This is a quick solution that covers many use cases.
 tags:
+locale: en-us
+guid: 4d218bfe-d4ed-474f-bc58-2b4573911a31
 ---
 
 # Add a chatbot UI block to your app

@@ -1,6 +1,8 @@
 ---
 summary: OutSystems generates documentation for an exposed SOAP Web Service when you publish its application module.
 tags: 
+locale: en-us
+guid: 07a471e4-c784-44ba-b868-8c90605481c0
 ---
 
 # Document an Exposed SOAP Web Service

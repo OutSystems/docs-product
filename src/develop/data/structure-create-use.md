@@ -1,13 +1,15 @@
 ---
 summary: Learn how to create and use complex data types in your applications.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: eb3ff661-0b92-4f55-9bf3-cceb8dd2c0b9
 ---
 
 # Use Structures and Records to Create Compound Data Types
 
 While developing your application, you may find it interesting to have a variable holding a collection of variables with different data types grouped together and use it in the logic or UI. For example, to assign the values returned by an action where you don't have to create one output for each value.
 
-In OutSystems, you can create structured values by using a ![Structure.png](../../shared/icons-service-studio/structure.png) Structure or a Record. A Structure is a custom data type that you can use in your module. A Record is a custom data type defined for a single variable and cannot be reused in another variable.
+In OutSystems, you can create structured values by using a Structure or a Record. A Structure is a custom data type that you can use in your module. A Record is a custom data type defined for a single variable and cannot be reused in another variable.
 
 To declare and use a Structure:
 
@@ -24,7 +26,7 @@ To define a Record:
 
 ## Example using a Record
 
-In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating. The data is stored in the Place an Review entities.
+In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating. The data is stored in the Place and Review entities.
 
 Since the data type that we will need to assign to the output parameter will only be used here, we will use a Record:
 

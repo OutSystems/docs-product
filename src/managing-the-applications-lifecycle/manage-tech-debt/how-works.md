@@ -1,7 +1,8 @@
 ---
-tags: Architecture Dashboard; how-to; manual
+tags:
 summary: Learn how Architecture Dashboard works and how your infrastructure communicates with the SaaS.
-en_title: How does Architecture Dashboard work
+locale: en-us
+guid: f6f9f871-5f0c-4991-a47e-91fa20033627
 ---
 
 # How does Architecture Dashboard work
@@ -60,7 +61,7 @@ Read more about security and compliance in the following FAQ sections:
 
 ## Permissions
 
-The permissions that IT users have while using Architecture Dashboard with an infrastructure, depend on the [role and permissions set in LifeTime](..\manage-it-teams\about-permission-levels.md#permissions) for the **code-analysis environment** of that infrastructure.
+The permissions that IT users have while using Architecture Dashboard with an infrastructure, depend on the [role and permissions set in LifeTime](../manage-it-teams/about-permission-levels.md#permissions) for the **code-analysis environment** of that infrastructure.
 
 <div class="info" markdown="1">
 
@@ -78,14 +79,7 @@ The following tables map the Architecture Dashboard permissions to the LifeTime 
 
 ### Main features permissions
 
-
-
 #### View teams
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>
@@ -155,11 +149,6 @@ table {min-width: 650px;}
 
 #### View apps and modules 
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -223,11 +212,6 @@ table {min-width: 650px;}
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Open findings report
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>
@@ -293,11 +277,6 @@ table {min-width: 650px;}
 
 #### Export findings report
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -362,11 +341,6 @@ table {min-width: 650px;}
 
 #### Resolve findings
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -430,11 +404,6 @@ table {min-width: 650px;}
 <sup>2</sup>**Team apps**: Except in cases where the permission level of a specific app is set lower than that assigned to a team.
 
 #### Overview dashboard
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>
@@ -503,11 +472,6 @@ table {min-width: 650px;}
 
 #### Ignore modules
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -552,11 +516,6 @@ table {min-width: 650px;}
 
 #### Enable AI auto-classification
 
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
-
 <table>
   <thead>
   <tr>
@@ -598,11 +557,6 @@ table {min-width: 650px;}
 
 
 #### Override module AI auto-classification
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>
@@ -647,11 +601,6 @@ table {min-width: 650px;}
 <sup>1</sup>**All modules**: Except in cases where the permission level of a specific module (or teams assigned to that module) is set lower than that assigned to a role or team.
 
 #### Update probes
-
-<pre class="script-css">
-th {word-wrap: normal !important;}
-table {min-width: 650px;}
-</pre>
 
 <table>
   <thead>

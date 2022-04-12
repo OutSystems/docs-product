@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Entity+Kind, ServiceStudio.Model.SyntheticEntity+Kind, ServiceStudio.Model.ReferenceEntity+Kind
 helpids: 15005
+locale: en-us
+guid: 9c912e20-4808-41f2-93e8-6e83a3654ab7
 ---
 
 # Entity
@@ -101,7 +103,7 @@ An exposed entity can have its records protected from modifications by setting t
 <td></td>
 <td>This property is only visible for referenced elements.</td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

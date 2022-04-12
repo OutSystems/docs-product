@@ -1,5 +1,7 @@
 ---
 tags: 
+locale: en-us
+guid: 6b99f36b-866b-47e6-858f-3b360413fcd7
 ---
 
 # Consumed SOAP Web Services Constraints

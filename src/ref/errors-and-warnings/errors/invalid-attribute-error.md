@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: aa586167-cd4f-46aa-bd1b-1ddb48969923
+---
+
 # Invalid Attribute Error
 
 The `Invalid Attribute` error is issued in the following situations:

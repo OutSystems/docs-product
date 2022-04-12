@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+Assign+Kind
 helpids: 7001
+locale: en-us
+guid: 493e43c0-c626-4ffd-8a99-161132b90261
 ---
 
 # Assign
@@ -11,13 +13,13 @@ To select a **Variable**, do any of the following in the field of Assign Tool wi
 
 * Select the name of **Variable** in the drop-down list.
 * Enter the variable name (or start typing for a suggestion).
-* Double-click the field, click the equal sign icon (![](../../../shared/icons-service-studio/assign.png)), or select **(Select Variable...)** in the drop-down to open the Assign Value window.
+* Double-click the field, click the equal sign icon, or select **(Select Variable...)** in the drop-down to open the Assign Value window.
 
 Similarly, to assign a value or variable to a **Value** field, you can:
 
 * Select the name of a variable in the drop-down list.
 * Enter the value.
-* Double-click the field, click the formula icon (![](../../../shared/icons-service-studio/expression.png)) or select **(Expression Editor...)** in the drop-down to open the Expression Editor.
+* Double-click the field, click the formula icon or select **(Expression Editor...)** in the drop-down to open the Expression Editor.
 
 When assigning values for Record data type, Service Studio can offer to assign the values of attributes automatically if you set an initial assignment of the attributes which identifies the record. If automatic assignment is available, you will see **(Auto Assign &lt;Record&gt;.&lt;Attribute&gt;)** in the drop-down list.
 
@@ -43,7 +45,7 @@ OutSystems assigns by value, with some exceptions for assignment by reference. T
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Assignments</th>
 </tr>
 <tr>

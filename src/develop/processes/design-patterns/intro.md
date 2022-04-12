@@ -1,5 +1,7 @@
 ---
 tags: support-application_development; support-webapps
+locale: en-us
+guid: 6bb2ff5a-25b3-4d09-8863-08fc0896b4c8
 ---
 
 # Patterns for Designing Processes

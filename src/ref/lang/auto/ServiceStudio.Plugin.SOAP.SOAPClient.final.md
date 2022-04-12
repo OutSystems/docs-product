@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SOAP.SOAPClientDescriptor
 helpids: -1
+locale: en-us
+guid: 2744cd5d-761e-45d7-a18c-7db6ffe1d7fb
 ---
 
 # SOAP Web Service (Consumed)
@@ -41,7 +43,7 @@ Consumed Web Service based on the SOAP 1.1/1.2 protocol.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Authentication</th>
 </tr>
 <tr>
@@ -65,7 +67,7 @@ Consumed Web Service based on the SOAP 1.1/1.2 protocol.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

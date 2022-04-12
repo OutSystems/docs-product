@@ -1,6 +1,8 @@
 ---
 summary: Component with widgets for plotting charts in web apps.
 tags: article-page; support-application_development; support-Front_end_Development
+locale: en-us
+guid: 868f8412-a29e-4c0b-9e37-3c75830502eb
 ---
 
 # Charts API
@@ -17,7 +19,7 @@ OutSystems uses Highcharts 9.1.2 to generate the charts, and you should consult 
 Widget | Description
 ---|---
 [AreaChart](<#AreaChart>) | Area charts illustrate the contribution of values to a total over time.
-[BarChart](<#BarChart>) | Bar charts compare multiple values using horizontal bars.%%In this chart, the X-axis runs vertically and the Y-axis runs horizontally.
+[BarChart](<#BarChart>) | Bar charts compare multiple values using horizontal bars.<br/>In this chart, the X-axis runs vertically and the Y-axis runs horizontally.
 [ColumnChart](<#ColumnChart>) | Column charts compare multiple values using vertical bars.
 [LineChart](<#LineChart>) | Line charts illustrate trends of values over time.
 [PieChart](<#PieChart>) | Pie charts illustrate proportions of values.
@@ -26,7 +28,7 @@ Action | Description
 ---|---
 [AdvancedFormat_Init](<#AdvancedFormat_Init>) | Initializes an AdvancedFormat record with the values passed as arguments. The record is returned by the action.
 [ChartFormat_Init](<#ChartFormat_Init>) | Initializes a ChartFormat record with the values passed as arguments. The record is returned by the action.
-[DataPoint_GetClicked](<#DataPoint_GetClicked>) | Returns the data point that was clicked on the chart.%%Execute this action in the On Click action of a chart.
+[DataPoint_GetClicked](<#DataPoint_GetClicked>) | Returns the data point that was clicked on the chart.<br/>Execute this action in the On Click action of a chart.
 [DataPoint_Init](<#DataPoint_Init>) | Initializes a DataPoint record with the values passed as arguments. The record is returned by the action.
 [DataPoint_InitMissing](<#DataPoint_InitMissing>) | Initializes a DataPoint to plot a gap on the chart. The record is returned by the action.
 [XAxisFormat_Init](<#XAxisFormat_Init>) | Initializes an XAxisFormat record with the values passed as arguments. The record is returned by the action.
@@ -45,8 +47,8 @@ Structure | Description
 Static Entity | Description
 ---|---
 [LegendPosition](<#StaticEntity_LegendPosition>) | The position where the legend is displayed on charts.
-[StackingType](<#StaticEntity_StackingType>) | The way to plot multiple data series on Area, Bar, or Column charts:%%- ‘NoStacking’: plot data series side by side to compare them;%%- ‘Stacked’: plot data series stacked to show their contribution to a total;%%- ‘Stacked100Percent’: plot data series stacked to show their percentage in a total.
-[XAxisValuesType](<#StaticEntity_XAxisValuesType>) | The data type of labels displayed on the X-axis to format them.%%Using ‘Auto’ means the type is inferred from the label of the first data point.
+[StackingType](<#StaticEntity_StackingType>) | The way to plot multiple data series on Area, Bar, or Column charts:<br/>- ‘NoStacking’: plot data series side by side to compare them;<br/>- ‘Stacked’: plot data series stacked to show their contribution to a total;<br/>- ‘Stacked100Percent’: plot data series stacked to show their percentage in a total.
+[XAxisValuesType](<#StaticEntity_XAxisValuesType>) | The data type of labels displayed on the X-axis to format them.<br/>Using ‘Auto’ means the type is inferred from the label of the first data point.
 
 ## Widgets
 

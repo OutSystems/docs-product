@@ -1,6 +1,8 @@
 ---
 summary: To edit or create a theme you need to know the basics about the theme structure. This document shows how themes integrate into the platform through predefined blocks and placeholders.
 tags: support-application_development; support-Front_end_Development
+locale: en-us
+guid: fa7dc8c3-aea1-4ccb-a2d6-219772a1a7f2
 ---
 
 # Themes
@@ -257,75 +259,14 @@ The mobile Themes have the block-specific events and actions, which are later co
 
 What placeholders to use depends on the type of screen. Here is an overview for the web applications:
 
-<table markdown="1">
-<thead>
-<tr>
-    <th>Type of Screen / Placeholder</th>
-    <th>Title</th>
-    <th>MainContent</th>
-    <th>Actions</th>
-    <th>Header</th>
-    <th>Menu</th>
-    <th>Footer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>Blank Screen</th>
-<td></td>
-<td>Required</td>
-<td></td>
-<td>Optional</td>
-<td>Optional</td>
-<td>Optional</td>
-</tr>
-<tr>
-<th>List Screen</th>
-<td>Required</td>
-<td>Required</td>
-<td>Optional</td>
-<td>Optional</td>
-<td>Optional</td>
-<td>Optional</td>
-</tr>
-<tr>
-<th>Edit Screen</th>
-<td>Required</td>
-<td>Required</td>
-<td>Optional</td>
-<td>Optional</td>
-<td>Optional</td>
-<td>Optional</td>
-</tr>
-<tr>
-<th>Info Balloon</th>
-<td></td>
-<td>Required</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<th>Pop-up Editor</th>
-<td></td>
-<td>Required</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<th>Email</th>
-<td>Optional</td>
-<td>Required</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+|Type of Screen/<br/> Placeholder|Title|MainContent	|Actions|Header|Menu|Footer|
+|---|---|---|---|---|---|---|
+|**Blank Screen**||Required||Optional|Optional|Optional|
+|**List Screen**|Required|Required|Optional|Optional|Optional|Optional|
+|**Edit Screen**|Required|Required|Optional|Optional|Optional|Optional|
+|**Info Balloon**||Required|||||
+|**Pop-up Editor**||Required|||||
+|**Email**|Optional|Required|||||
 
 Some examples:
 

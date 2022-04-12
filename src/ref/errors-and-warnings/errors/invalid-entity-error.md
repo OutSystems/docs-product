@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: bd6833c9-7995-4089-94a9-4eead9f5b6b3
+---
+
 # Invalid Entity Error
 
 The `Invalid Entity` error is issued in the following situations:

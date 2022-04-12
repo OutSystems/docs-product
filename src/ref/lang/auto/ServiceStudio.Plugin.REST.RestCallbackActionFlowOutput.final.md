@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.REST.RestCallbackActionFlowOutputDescriptor
 helpids: 30054
+locale: en-us
+guid: 9eaec8da-b414-45eb-b2cb-f41c10fa3241
 ---
 
 # Output Parameter (REST API Callback)

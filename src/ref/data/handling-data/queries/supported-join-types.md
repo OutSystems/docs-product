@@ -1,5 +1,7 @@
 ---
 tags: 
+locale: en-us
+guid: d2ac8884-a37b-423d-9655-b235291485cd
 ---
 
 # Supported Join Types

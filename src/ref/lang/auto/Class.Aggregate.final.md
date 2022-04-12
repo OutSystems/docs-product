@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+DataSet+Kind, ServiceStudio.Model.NRNodes+WebScreenDataSet+Kind
 helpids: 17203
+locale: en-us
+guid: aa5d2ae3-56f3-40e8-8c10-75573d80424c
 ---
 
 # Aggregate
@@ -114,7 +116,7 @@ To load data when the screen loads in Traditional Web Apps, place an Aggregate i
 <td>At start</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Events</th>
 </tr>
 <tr>

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: ca17ad44-8f4c-4e6f-8744-8fb87aff9244
+---
+
 # Invalid Client Function
 
 The `Invalid Client Function` error is issued in the following situations:

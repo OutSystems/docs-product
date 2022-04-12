@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb;
 summary: Advanced use cases for the Carousel UI Pattern.
+locale: en-us
+guid: d0b2bc8d-6a37-424d-8399-56e586304c93
 ---
 
 # Carousel Reference

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 27ff9512-9516-45cd-9722-feb4690e5caa
+---
+
 # Resources Tree
 
 The **Resources** tree, in the extension [workspace](<workspace.md>), presents the resources associated with the current extension and provides the necessary operations to manage them. In Integration Studio, resources are files that implement the behavior of the extension actions or any files that support other aspects of the extension, such as action icons and help files.
@@ -38,7 +43,7 @@ In the Resources tree, the following operations are available to handle your res
 
 Operation | Description
 :--------:|:-----------
-![](images/resource-include.gif) Include in Extension | Adds the resource to the extension.%%For more information, see [Add a Resource](<../../extensibility-and-integration/integration-studio/managing-extensions/resource-define.md>).
+![](images/resource-include.gif) Include in Extension | Adds the resource to the extension.<br/>For more information, see [Add a Resource](<../../extensibility-and-integration/integration-studio/managing-extensions/resource-define.md>).
 ![](images/resource-exclude.gif) Exclude from Extension | Removes the resource from the extension. The next time the extension is saved, this resource file is not packed in the XIF file.
-Open | Opens the item you selected on the Resources tree.%%If a folder is selected, then Windows Explorer is launched in the corresponding folder.%%If a file is selected, the default program associated with that file type is launched and the file is opened.
-![](images/resource-compare.gif) Compare with Template | Allows you to compare the differences between the resource file, stored in the file systems, and the template file.%%For more information, see [Resources Editor](<editor/resource.md>).
+Open | Opens the item you selected on the Resources tree.<br/>If a folder is selected, then Windows Explorer is launched in the corresponding folder.<br/>If a file is selected, the default program associated with that file type is launched and the file is opened.
+![](images/resource-compare.gif) Compare with Template | Allows you to compare the differences between the resource file, stored in the file systems, and the template file.<br/>For more information, see [Resources Editor](<editor/resource.md>).

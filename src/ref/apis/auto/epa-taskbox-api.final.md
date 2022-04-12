@@ -1,6 +1,8 @@
 ---
 summary: The Embedded Process Automation (EPA) shows automatically a floating taskbox in the browser, with all pending activities.
 tags: runtime-traditionalweb
+locale: en-us
+guid: 24b83310-17ec-4eea-a688-89da29816145
 ---
 
 # EPA Taskbox API
@@ -19,7 +21,7 @@ See [Using Taskbox in Reactive Web Apps](https://success.outsystems.com/Document
 
 Action | Description
 ---|---
-[API_GetActivities](<#API_GetActivities>) | Returns the activities of a user.%%Activity filtering and pagination are allowed.
+[API_GetActivities](<#API_GetActivities>) | Returns the activities of a user.<br/>Activity filtering and pagination are allowed.
 [API_GetActivityGuidanceHtml](<#API_GetActivityGuidanceHtml>) | Encodes the activity guidance instructions in HTML format.
 [API_GetActivityPagination](<#API_GetActivityPagination>) | Returns the pagination information of all activities currently displayed in the Taskbox of the user.
 [API_GetActivityVisualization](<#API_GetActivityVisualization>) | Returns information on how an open activity is displayed in the Taskbox.

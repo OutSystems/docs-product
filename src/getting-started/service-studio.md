@@ -1,6 +1,8 @@
 ---
 summary: Get to know the main areas of the Service Studio interface.
-tags: outsystems; service-studio
+tags:
+locale: en-us
+guid: 23af05a7-9a06-4b73-ad98-3a9edee4ca0d
 ---
 
 # Service Studio Overview

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 7fe4a4ad-7c65-4fce-9c54-8720bede33b1
+---
+
 # Use the Extension in a Module
 
 Service Studio developers can use all the extensions [published](<extension-1-cp.md>) in Platform Server to expand the functionality or extend the database model of their modules.

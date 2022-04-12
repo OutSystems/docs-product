@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 072552a6-e5f9-42cf-9335-aa58681bea15
+---
+
 # Invalid Entity Index Error
 
 The `Invalid Entity Index` error is issued in the following situations:

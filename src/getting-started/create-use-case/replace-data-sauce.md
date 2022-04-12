@@ -1,6 +1,8 @@
 ---
 summary: Learn more about using your own data in the UI of your use-case app.
 tags:
+locale: en-us
+guid: efe8b43b-19cd-460b-951a-d6af460a1474
 ---
 
 # Using your data in the UI

@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 90a4dbc8-4410-4801-87ad-9a93ad6609b0
+---
+
 # Invalid Receive In Error
 
 The `Invalid Receive In` error is issued in the following situation:

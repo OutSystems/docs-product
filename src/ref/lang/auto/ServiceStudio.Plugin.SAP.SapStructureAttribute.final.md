@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.SAP.SapStructureAttributeDescriptor
 helpids: 30073
+locale: en-us
+guid: b2bb3ce3-6403-4a1a-80d9-c5d34e509048
 ---
 
 # Structure Attribute (SAP Remote Function)
@@ -76,7 +78,7 @@ Attribute of structure used in input and output arguments of SAP remote function
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

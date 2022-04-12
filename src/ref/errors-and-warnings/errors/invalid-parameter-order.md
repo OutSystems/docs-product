@@ -1,6 +1,8 @@
 ---
 summary: Invalid parameter order in a page name when working with SEO. 
 tags:
+locale: en-us
+guid: b7f0d19c-a092-4b06-9cf1-56d3fd23ab88
 ---
 
 # Invalid Parameter Order

@@ -1,6 +1,8 @@
 ---
 summary: Learn how to configure the Deployment Zone for an application during the deployment.
 tags: support-Application_Lifecycle; support-Infrastuture_Architecture
+locale: en-us
+guid: 69803bfd-3ebf-465a-b0cb-ee83e61cc233
 ---
 
 # Configure the Deployment Zone during the deployment

@@ -1,6 +1,8 @@
 ---
 summary: Use the logging features of OutSystems, adjusting the logging level of SOAP web services if necessary, to troubleshoot SOAP web wervices.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: ddb0cd62-4de7-48c2-9f44-3a9240a4ae66
 ---
 
 # Troubleshoot a SOAP Web Service

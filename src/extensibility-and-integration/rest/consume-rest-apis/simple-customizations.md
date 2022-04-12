@@ -1,6 +1,8 @@
 ---
 summary: Add logic to customize the information sent in requests or received in responses of consumed REST APIs.
 tags: 
+locale: en-us
+guid: 21574391-c5b3-4831-a7b2-8aaf94df2230
 ---
 
 # Simple Customizations

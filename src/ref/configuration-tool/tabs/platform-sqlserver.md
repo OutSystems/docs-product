@@ -1,5 +1,7 @@
 ---
 summary: Platform tab showing specific configuration settings for the Azure SQL Database / SQL Server database provider.
+locale: en-us
+guid: 50bd26cf-d24f-4027-b172-46a02e30c0d6
 ---
 
 # Platform Tab in Azure SQL Database / SQL Server database
@@ -18,7 +20,7 @@ Authentication | Authentication protocol to use. | `Database Authentication`
 
 For advanced settings, click on the **Advanced Settings** link.
 
-<table markdown="1">
+<table>
 <thead>
 <tr>
 <th>Configuration</th>
@@ -29,7 +31,7 @@ For advanced settings, click on the **Advanced Settings** link.
 <tbody>
 <tr>
 <td colspan="3">
-**Advanced Connection Settings**
+<strong>Advanced Connection Settings</strong>
 </td>
 </tr>
 <tr>
@@ -49,7 +51,7 @@ For advanced settings, click on the **Advanced Settings** link.
 </tr>
 <tr>
 <td colspan="3">
-**1-Click Publish**
+<strong>1-Click Publish</strong>
 </td>
 </tr>
 <tr>

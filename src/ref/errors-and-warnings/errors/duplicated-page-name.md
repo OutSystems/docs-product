@@ -1,6 +1,8 @@
 ---
 summary: Duplicated page name when working with SEO. 
 tags:
+locale: en-us
+guid: 727d5c78-614c-42bd-b064-794e956c88fe
 ---
 
 # Duplicated Page Name

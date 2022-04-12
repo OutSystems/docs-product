@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: c28f7649-b364-4139-86ae-5b71089813ac
+---
+
 # Invalid Argument Value Error
 
 The `Invalid Argument Value` error is issued in the following situations:

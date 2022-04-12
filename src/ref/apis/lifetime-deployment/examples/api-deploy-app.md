@@ -1,5 +1,7 @@
 ---
 summary: Learn how to deploy an application using the LifeTime API.
+locale: en-us
+guid: e243c532-467c-428e-aa5a-79915621e280
 ---
 
 # Deploy an Application using the LifeTime API

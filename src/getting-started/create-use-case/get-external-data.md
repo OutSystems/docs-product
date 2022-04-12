@@ -1,6 +1,8 @@
 ---
 summary: Learn more about how to get external data in your OutSystems applications. This article summarizes ways to use external data with OutSystems.
 tags:
+locale: en-us
+guid: 4430e635-ef3e-45e4-a2f6-39c74300518d
 ---
 
 # Get external data in your app

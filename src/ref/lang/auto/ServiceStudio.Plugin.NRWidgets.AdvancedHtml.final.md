@@ -3,6 +3,8 @@ kinds: ServiceStudio.Plugin.NRWidgets.AdvancedHtmlDescriptor
 helpids: 30048
 summary: Reference information on the HTML Element widget for adding a custom HTML element to the screen.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; html-element
+locale: en-us
+guid: b9f2d2f5-39f6-4709-936c-7518ac9d960a
 ---
 
 # HTML Element
@@ -37,7 +39,7 @@ Allows you to add a custom HTML element to the screen. You can use nested HTML E
 <td>span</td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Attributes</th>
 </tr>
 <tr>

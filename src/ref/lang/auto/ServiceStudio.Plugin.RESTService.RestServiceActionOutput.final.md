@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Plugin.RESTService.RestServiceActionOutputDescriptor
 helpids: 30060
+locale: en-us
+guid: 887a371e-106f-46cc-b419-92d929de0dd1
 ---
 
 # Output Parameter (REST API Method)
@@ -41,7 +43,7 @@ Output parameter of an exposed REST API Method.
 <td></td>
 <td></td>
 </tr>
-<tr class="separator">
+<tr >
 <th colspan="5">Advanced</th>
 </tr>
 <tr>

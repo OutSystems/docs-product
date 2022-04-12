@@ -1,6 +1,8 @@
 ---
 summary: Check the hardware and software requirements to install OutSystems on-premises.
-tags: requirements; support-Application_Troubleshooting; support-installation; support-Installation_Configuration; support-Installation_Configuration-overview
+tags: support-Application_Troubleshooting; support-installation; support-Installation_Configuration; support-Installation_Configuration-overview
+locale: en-us
+guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
 ---
 
 # OutSystems system requirements
@@ -163,6 +165,7 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integ
 ### IBM Database
 
 * DB2 for iSeries V6R1 or higher
+* **OutSystems** supports integration with DB2 databases hosted in iSeries machines only. It does not support integration with DB2 databases hosted in Unix, Linux, or Windows.
 
 <div class="info" markdown="1">
 

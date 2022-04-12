@@ -1,3 +1,8 @@
+---
+locale: en-us
+guid: 96d4337d-0dad-46e5-893f-2addc141287a
+---
+
 # 1-Click Publish Required Error
 
 The `1-Click Publish Required` error is issued in the following situation:

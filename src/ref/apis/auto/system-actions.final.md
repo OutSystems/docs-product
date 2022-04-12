@@ -1,6 +1,8 @@
 ---
 summary: List of System Actions (both server actions and client actions) available in OutSystems, including list operations.
 tags: support-application_development; support-Mobile_Apps; support-webapps
+locale: en-us
+guid: 15b8a38f-a4cc-4bb7-b496-520824990340
 ---
 
 # System Actions
@@ -32,19 +34,19 @@ Only a subset of the System Actions is by default available in your module. You 
 Server Action | Description | Is Function?
 ---|---|---
 [AbortTransaction](<#AbortTransaction>) | Issues a database ROLLBACK command that undoes all changes performed on the database since the last commit. | 
-[ActivityClose](<#ActivityClose>) | Explicitly closes a Human Activity or a Wait Activity ending the execution.%%The the id of the next Human Activity in sequence is returned, if determined. | 
+[ActivityClose](<#ActivityClose>) | Explicitly closes a Human Activity or a Wait Activity ending the execution.<br/>The the id of the next Human Activity in sequence is returned, if determined. | 
 [ActivityGetUrl](<#ActivityGetUrl>) | Returns the URL of the web screen where an activity will be carried out, once opened. | Yes
 [ActivityOpen](<#ActivityOpen>) | Explicitly forces a Human Activity instance to be opened in an end user's Taskbox. | 
 [ActivityReset](<#ActivityReset>) | Releases the Human Activity leaving it to be opened and carried out by another end user. | 
 [ActivitySchedule](<#ActivitySchedule>) | Schedules a date for the Human Activity to be available in the Taskbox. | 
 [ActivitySetGroup](<#ActivitySetGroup>) | Limit a Human Activity visibility and handling to end users who belong to a specific group. | 
-[ActivitySkip](<#ActivitySkip>) | Explicitly skips the execution of a Human Activity or a Wait Activity.%%The the id of the next Human Activity in sequence is returned, if determined. | 
+[ActivitySkip](<#ActivitySkip>) | Explicitly skips the execution of a Human Activity or a Wait Activity.<br/>The the id of the next Human Activity in sequence is returned, if determined. | 
 [ActivityStart](<#ActivityStart>) | Explicitly starts the execution of a ConditionalStart Activity. | 
 [ClientCertificateGetDetails](<#ClientCertificateGetDetails>) | Gets the relevant information for the current request client certificate from the .NET framework. | 
 [ClientCertificateValue](<#ClientCertificateValue>) | Gets the value of a specific property of the client certificate in the .NET framework. | 
 [CommitTransaction](<#CommitTransaction>) | Issues a database COMMIT command that makes effective all changes done on the database since the last commit. | 
-[Deprecated_Notify](<#Deprecated_Notify>) | DEPRECATED: This action is deprecated because Events are now available for Web Blocks. Use Events in Web Blocks to propagate changes from a Web Block to the parent block.%%%%The way a web block has to notify a screen or web block using it. They handle the notification through the action set in their On Notify property. To retrieve a message sent with the notification, use the NotifyGetMessage function. | 
-[Deprecated_NotifyGetMessage](<#Deprecated_NotifyGetMessage>) | DEPRECATED: This action is deprecated because Events are now available for Web Blocks. Use Input Parameters in block Events to send information to the parent block when the Event is triggered.%%%%Returns the notification message sent by the Notify action. | Yes
+[Deprecated_Notify](<#Deprecated_Notify>) | DEPRECATED: This action is deprecated because Events are now available for Web Blocks. Use Events in Web Blocks to propagate changes from a Web Block to the parent block.<br/><br/>The way a web block has to notify a screen or web block using it. They handle the notification through the action set in their On Notify property. To retrieve a message sent with the notification, use the NotifyGetMessage function. | 
+[Deprecated_NotifyGetMessage](<#Deprecated_NotifyGetMessage>) | DEPRECATED: This action is deprecated because Events are now available for Web Blocks. Use Input Parameters in block Events to send information to the parent block when the Event is triggered.<br/><br/>Returns the notification message sent by the Notify action. | Yes
 [Deprecated_NotifyWidget](<#Deprecated_NotifyWidget>) | The way a web block has to notify a screen or web block using it. They handle the notification through the action set in their On Notify property. To retrieve a message sent with the notification, use the NotifyGetMessage function. | 
 [EspaceInvalidateCache](<#EspaceInvalidateCache>) | Invalidates eSpace's specific caches across all Front-end servers and consumer eSpaces. Limit the invalidation to a single tenant by setting the tenant identifier. | 
 [GenerateGuid](<#GenerateGuid>) | Generates and returns a new GUID. | Yes
@@ -63,10 +65,10 @@ Server Action | Description | Is Function?
 [ListInsert](<#ListInsert>) | Inserts an element in a specific position of a list. | 
 [ListRemove](<#ListRemove>) | Removes an element from a specific position of a list. | 
 [ListSort](<#ListSort>) | Sorts the elements of the List parameter by the given criteria. Note that ListSort is different from the dynamic sorting in Aggregates. Multiple attributes having different data types (such as Text and Integer) in the criteria may not sort the list correctly. | 
-[Login](<#Login>) | Logs a specified user in the application.%%In case of success, 'UserId' and 'Username' session variables are filled with the user data. | 
-[LoginPassword](<#LoginPassword>) | Logs a specified user in the application using a password.%%In case of success, 'UserId' and 'Username' session variables are filled with the user data. | 
+[Login](<#Login>) | Logs a specified user in the application.<br/>In case of success, 'UserId' and 'Username' session variables are filled with the user data. | 
+[LoginPassword](<#LoginPassword>) | Logs a specified user in the application using a password.<br/>In case of success, 'UserId' and 'Username' session variables are filled with the user data. | 
 [LogMessage](<#LogMessage>) | Registers information that can be presented in Service Center in the module general log. | 
-[Logout](<#Logout>) | Logs out a specific user from the application.%%The 'UserId' and 'Username' session variables are cleared. | 
+[Logout](<#Logout>) | Logs out a specific user from the application.<br/>The 'UserId' and 'Username' session variables are cleared. | 
 [ProcessTerminate](<#ProcessTerminate>) | Explicitly forces a Process to terminate its execution. | 
 [SetCurrentLocale](<#SetCurrentLocale>) | Sets the language locale of the user session to change the application presentation language. | 
 [TenantCreate](<#TenantCreate>) | Creates a new tenant and associates it with the provisioning site. | 

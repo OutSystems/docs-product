@@ -1,6 +1,8 @@
 ---
 kinds: ServiceStudio.Model.Nodes+AjaxRefresh+Kind
 helpids: 0
+locale: en-us
+guid: 7b8ee1bd-6f84-4af0-b6a4-ea2ff8aaa6e4
 ---
 
 # Ajax Refresh

@@ -1,5 +1,7 @@
 ---
 summary: Screen Templates contain sample data, which you can manage in a back-office. You can view, reset and add your own data.
+locale: en-us
+guid: 075fbf61-e674-4e7e-bda6-612dbd61fc44
 ---
 
 # Sample data

@@ -8,6 +8,7 @@ guid: eaf6fefe-684a-42aa-b27f-a3ab234e8aac
 # High availability and scalability strategies
 
 <div class="info" markdown="1">
+
 Download the whitepaper version of this document by clicking [here](images/availability-scalability.pdf).
 </div>
 

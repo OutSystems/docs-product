@@ -47,6 +47,7 @@
         - topics:
             - href: develop/data/query/fetch-display.md
             - href: develop/data/query/fetch-data-ib.md
+            - href: develop/data/query/fetch-data-nl.md
             - href: develop/data/query/filter-results.md
             - href: develop/data/query/sort-aggregate.md
             - href: develop/data/query/group-calculate.md

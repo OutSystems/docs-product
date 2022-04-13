@@ -20,10 +20,10 @@ In scenarios where LifeTime is not available, Service Center is the one responsi
 
 In order to manage IT Users, both Service Center and LifeTime store the following information for each user in the **User** system entity (physical table name: **ossys\_User**):
 
-* Name (eg. Joel Grant)
-* Username (eg. Firwass)
-* Mobile Phone [only in Service Center] (eg. 414-382-6132)
-* Email (eg. JoelGrant@rhyta.com)
+* Name (for example, Amos Tesen)
+* Username (for example, amos.tesen)
+* Mobile Phone [only in Service Center] (for example, +1-800-555-0000)
+* Email (for example, amos.tesen@example.com)
 
 ### Protection against brute force attacks
 
@@ -31,8 +31,8 @@ Service Center and LifeTime have a system that protects against brute force atta
 
 This system offers protection against two levels of attacks, user-level attacks and IP-level attacks (more details [here](secure-the-applications/protection-against-brute-force-attacks.md)); and needs to store some personal user data in order to be functional. The personal information stored in **LoginAttempt** system entity (physical table name: **OSSYS\_LOGIN\_ATTEMPT**) is:
 
-* Username (for example, Firwass)
-* IP Address (for example, 69.89.31.226)
+* Username (for example, Amos Tesen)
+* IP Address (for example, 192.0.2.0)
 
 ### LifeTime audit events
 
@@ -67,21 +67,21 @@ This information may be present in all General log tables (**oslog\_General\_0**
 
 **Users** is the application used by default to manage end users. It contains the same information related with users already referred to in the [Service Center and LifeTime section](#service-center-and-lifetime), namely:
 
-* Name (for example, Joel Grant)
-* Username (for example, Firwass)
-* Mobile Phone (for example, 414-382-6132)
-* Email (for example, JoelGrant@rhyta.com)
+* Name (for example, Amos Tesen)
+* Username (for example, amos.tesen)
+* Mobile Phone (for example, +1-800-555-0000)
+* Email (for example, amos.tesen@example.com)
 
 The entity where this information is stored is the same entity used by Service Center and LifeTime (**User** system entity), but uses a different tenant identifier.
 
 Also, **Users** uses the previously described brute force attack protection system. This system stores some personal user information:
 
-* Username (for example, Firwass)
-* IP Address (for example, 69.89.31.226)
+* Username (for example, amos.tesen)
+* IP Address (for example, 192.0.2.0)
 
 **Users** uses a different entity to store this information, the **LoginAttempt** entity of the **Users** module (physical table name: **OSUSR\_&lt;PREFIX&gt;\_LOGINATTEMPT**).
 
-Note: If you created a new user provider by cloning **Users** the same mechanisms may be in place in your user provider.
+**Note:** If you created a new user provider by cloning **Users** the same mechanisms may be in place in your user provider.
 
 ## App Feedback
 
@@ -98,7 +98,7 @@ This data may be stored in the following Attributes of the following entities of
 * **WebpageContent** entity
     * `Content` (used in Web Applications) – All the resources referenced in HTML when the user submitted the feedback.
 * **FeedbackScreenshot** entity
-    * `ImageBinary` (used in Mobile Applications) – A screenshot of the users's screen when the feedback was provided.
+    * `ImageBinary` (used in Mobile Applications) – A screenshot of the users screen when the feedback was provided.
 * **FeedbackSoundMessage** entity
     * `SoundBinary` (used in Mobile Applications) – Sound recorded when the feedback was provided.
 

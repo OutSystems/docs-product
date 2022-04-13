@@ -11,7 +11,7 @@ This article describes how to install and start using the BDDFramework tools to 
 
 Component testing in OutSystems includes the following standard test types:
 
-* Unit Tests, which developers maintain, focus on individual units of code or components that are owned by a single team
+* Unit Tests, which developers maintain, focus on individual units of code or components that a single team owns 
 * Integration Tests, which test whether two or more components work together; these touch a broader application scope than unit testing and the tested code usually belongs to two or more teams
 * API Tests, which verify the contract between consumer and provider and the behavior of your application's existing API endpoints
 
@@ -23,9 +23,9 @@ Separate BDDFramework tools exist for server-side and client-side testing:
 Both tools provide a similar user experience and the following features:
 
 * Tests use Gherkin-like syntax and offer a visual representation of test execution
-* You create the test structure using Web Blocks that the tool provides
-* Test code is implemented through actions that are bound to each used Web Block
-* Test Web Blocks are organized into normal screens called Test Suites
+* You create the test structure using UI Blocks that the tool provides
+* Test code is implemented through actions that are bound to each Block
+* Test Blocks are organized into screens called Test Suites
 
 ## Installing the BDDFramework
 
@@ -42,36 +42,37 @@ Once you complete the installation, it's time to start implementing tests.
 
 ## Getting started 
 
-Suppose you have an OutSystems application named **ACME Services** that you want to test. The following tasks walk you through creating a test application for ACME Services.
+The following steps walk through creating a test application.
 
 ### Create a test application and module
 
 1. In Service Studio on the Development tab, click **New Application**.
-2. Select **Start from scratch**, and click **Next**.
-3. Select **BDD Framework** as the application type, and click **Next**.
-4. Type **ACME Services Tests** as the application name and click **Next**.
-5. On the **ACME Service** page, change the module name to **ACMEServices_Tests**, and leave the module type as **BDDFramework**.
+1. Select **Start from scratch**, and click **Next**.
+1. Select **BDD Framework Client Side** as the application type, and click **Next**.
+1. Type the app name, for example, **App-Name-1** and click **Create App**.
+1. On the **App-Name-1** page, under **Modules**, change the module name to **AppName1-TESTS**, and leave the module type as **BDD Framework Client Side**.
 
-![](images/create-bdd-module.png)
+    ![](images/create-bdd-module-xplat.png)
 
-6. Click **Create module**. The module imports all the building blocks you need.
+1. Click **Create module**. The module imports all the building blocks you need, and the test module is connected to the app you created.
 
 ## Add a test to your test module
 
-1. On the **Interface** tab menu on the right, go to **ACMEServices_Test** > **UI Flows** > **TestFlow**.  
+1. On the **Interface** tab menu on the right, go to **AppName1TESTS** > **UI Flows** > **TestFlow**.  
 
-2. Right-click **TestFlow** and select **Add Web Screen**.
-    ![](images/testflow-1.png)
+1. Right-click **TestFlow** and select **Add Screen**.
 
-3. You may see a message that new templates are loading. When loading completes, click **Refresh** to update the list of templates. New templates for the BDDFramework appear in the list.
+    ![](images/testflow-1-xplat.png) 
 
-4. Select **New Test Suite**, type **MyFirst_TestSuite** in the name field, and click **Create Screen.**
+    You may see a message that new templates are loading.
+
+1. Select **New Test Suite**, type **MyFirst_TestSuite** in the name field, and click **Create Screen.**
  
-     ![](images/new-test-suite.png)
+    ![](images/new-test-suite-xplat.png)
 
     The screen contains a test structure that's added to the UI Flow.
 
-12. Start implementing the code for your test. See [Your Complete Guide to BDD Testing in OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) for more information on creating specific tests.
+1. Start implementing the code for your test. See [Your Complete Guide to BDD Testing in OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) for more information on creating specific tests.
 
 ## Learn more about component testing
 

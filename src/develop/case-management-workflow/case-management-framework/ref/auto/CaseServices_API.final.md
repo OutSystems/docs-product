@@ -48,8 +48,8 @@ Action | Description
 [Case_CheckActivityAccess](<#Case_CheckActivityAccess>) | Check if a user has access (directly assigned) to an activity (open or closed)
 [Case_CheckActivityIsActive](<#Case_CheckActivityIsActive>) | Checks if the given activity belongs to the current OutSystems BPT process that is active for this Case, and if the activity itself is also active.
 [Case_CheckProcessIsActive](<#Case_CheckProcessIsActive>) | Checks if the current associated bpt process  is active for this Case
-[Case_CloseActivity](<#Case_CloseActivity>) | Close an activity and validates that only the correct user can close it. Will try to close it in a synchronous way (bpt default behaviour) so it performs a COMMIT in the current transition.
-[Case_CloseActivityAsync](<#Case_CloseActivityAsync>) | Close an activity and validates that only the correct user can close it (will try to close the activity in an asynchronous way). Enhanced activity close funtionality in opposing the default syncronous bpt close behaviour).
+[Case_CloseActivity](<#Case_CloseActivity>) | Close an activity and validates that only the correct user can close it. Will try to close it in a synchronous way (bpt default behavior) so it performs a COMMIT in the current transition.
+[Case_CloseActivityAsync](<#Case_CloseActivityAsync>) | Close an activity and validates that only the correct user can close it (will try to close the activity in an asynchronous way). Enhanced activity close funtionality in opposing the default syncronous bpt close behavior).
 [Case_Complete](<#Case_Complete>) | Enables to close an existing case instance based on an existing process identifier
 [Case_Delete](<#Case_Delete>) | Deletes a case instance
 [Case_Discard](<#Case_Discard>) | Discard a case instance%%%%Note: All associated running processes/activities will be terminated.
@@ -737,7 +737,7 @@ IsActive
 
 ### Case_CloseActivity { #Case_CloseActivity }
 
-Close an activity and validates that only the correct user can close it. Will try to close it in a synchronous way (bpt default behaviour) so it performs a COMMIT in the current transition.
+Close an activity and validates that only the correct user can close it. Will try to close it in a synchronous way (bpt default behavior) so it performs a COMMIT in the current transition.
 
 *Inputs*
 
@@ -771,7 +771,7 @@ IsVisibleToRequester
 
 ### Case_CloseActivityAsync { #Case_CloseActivityAsync }
 
-Close an activity and validates that only the correct user can close it (will try to close the activity in an asynchronous way). Enhanced activity close funtionality in opposing the default syncronous bpt close behaviour).
+Close an activity and validates that only the correct user can close it (will try to close the activity in an asynchronous way). Enhanced activity close funtionality in opposing the default syncronous bpt close behavior).
 
 *Inputs*
 

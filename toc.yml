@@ -578,6 +578,7 @@
             - href: develop/case-management-workflow/case-management-framework/case-state.md
             - topics:
                 - href: develop/case-management-workflow/case-management-framework/case-state-machine.md
+            - href: develop/case-management-workflow/case-management-framework/rules-engine.md
             - href: develop/case-management-workflow/case-management-framework/milestone/intro-ms.md
             - topics:
                 - href: develop/case-management-workflow/case-management-framework/milestone/how-enable-ms.md

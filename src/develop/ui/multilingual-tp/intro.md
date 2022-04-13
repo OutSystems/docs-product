@@ -28,7 +28,7 @@ Here's how to get started:
 
 * For instructions on how to translate your app directly in Service Studio, see [Translate your app](translate-your-app.md).
 * If you want to extract text for sending it to a translation service, see [Translation management](translation-management.md).
-* For instructions on how to translate older, Traditional Web Apps, see [this section](../multilingual/intro.md).
+* For instructions on how to translate Traditional Web Apps, see [this section](../multilingual/intro.md).
 
 You can translate the following elements of your app:
 
@@ -41,7 +41,7 @@ You can translate the following elements of your app:
 
 ## Translating systems components
 
-You can translate systems components. See the forum blog post [System Components Translations](https://www.outsystems.com/forums/discussion/10760/system-components-translations/) for instructions. 
+You can translate systems components. See the forum blog post [System Components Translations](https://www.outsystems.com/forums/discussion/10760/system-components-translations/) for instructions.
 
 <div class="info" markdown="">
 

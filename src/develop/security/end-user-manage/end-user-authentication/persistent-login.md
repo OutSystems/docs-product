@@ -7,14 +7,14 @@ guid: 36803dc8-3459-4e8b-957e-3b3519453e58
 
 # Persistent Login
 
-When authenticating the end users, you can choose to use a persistent login. After logging in for the first time in the application the end user will not have to provide the credentials again, unless:
+When authenticating the end users, you can choose to use a persistent login. After logging into the application for the first time, the end user will not have to provide the credentials again, unless:
 
 * The end user explicitly logs out through the [User_Logout](<../../../../ref/apis/auto/users-api.final.md#User_Logout>) action.
 * The persistent login times out because the end user does not access the application for a certain amount of days.
 
-In Web Applications persistent login will only work if the end user has enabled the use of cookies in the browser. It keeps independent sessions in different browsers allowing end users to have different persistent login sessions for the same application in different browsers and devices.
+In Web Applications, persistent login only works if the end user has enabled the use of cookies in the browser. It keeps independent sessions in different browsers allowing end users to have different persistent login sessions for the same application in different browsers and devices.
 
-To use persistent login the `RememberLogin` input from the [User_Login](<../../../../ref/apis/auto/users-api.final.md#User_Login>) action has to be set to `True`.
+To use persistent login, the `RememberLogin` input from the [User_Login](<../../../../ref/apis/auto/users-api.final.md#User_Login>) action must be set to `True`.
 
 The default duration of a persistent login session is 10 days in Traditional Web apps, and 30 days in Reactive Web and Mobile apps.  
 For Traditional Web apps you can customize this duration by using the supported Forge Component [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) and changing the `Remember Login(days)` parameter in the Platform Configurations Tab.  

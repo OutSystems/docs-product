@@ -16,9 +16,10 @@ Configure Basic Authentication in Service Studio
 
 Use Dynamic Login in Service Studio
 :   Specify the authentication credentials at runtime in your application logic. After setting up Dynamic Login in your SOAP Web Service in Service Studio, all its methods have input parameters for specifying user credentials (username and password).  
-    To add dynamic login capabilities to your consumed SOAP Web Service, select "Add Dynamic Login" from the context menu of the SOAP Web Service element. This option is only available when the SOAP Web Service's "Authentication Type" property value is different than `(None)`.
 
-    ![](<images/soap-add-dynamic-login.png>)
+   To add dynamic login capabilities to your consumed SOAP Web Service, select "Add Dynamic Login" from the context menu of the SOAP Web Service element. This option is only available when the SOAP Web Service's "Authentication Type" property value is different than `(None)`.
+
+   ![Add dynamic login](<images/soap-add-dynamic-login.png>)
 
 Configure a different endpoint by environment in Service Center
 :   In Service Center you can [configure a different endpoint URL or user credentials at runtime](<configure-runtime.md>) for each consumed SOAP Web Service in your module, overriding the default endpoint and user credentials defined in Service Studio.  

@@ -249,14 +249,6 @@ Limitations:
 
 For the versions above, OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
 
-<div class="info" markdown="1">
-
-The 32-bit versions of Windows 10, Windows 8, and Windows 7 are supported up to Development Environment 11.6.7.
-
-Microsoft Windows Server 2008 and Microsoft Windows Server 2012 are supported up to Development Environment 11.6.5.
-
-</div>
-
 #### Required Software
 
 * Microsoft .NET Framework 4.7.2 (or higher).

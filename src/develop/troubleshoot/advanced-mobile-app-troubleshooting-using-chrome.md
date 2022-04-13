@@ -13,11 +13,6 @@ You can troubleshoot issues in your mobile app using [Google Chrome's Developer 
 
 There are a few tips that can streamline your troubleshooting process while using Chrome Developer Tools. Check the  [Troubleshooting tips](#tips) section for more information.
 
-<div class="warning" markdown="1">
-
-Parts of this document are out of date. The documentation team is working on an update. Thank you for your understanding.
-
-</div>
 
 ## Troubleshoot using Chrome
 

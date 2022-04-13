@@ -42,6 +42,6 @@ When the process is executed the following occurs:
 
 2. One instance of the [Conditional Start](<../../../ref/lang/auto/Class.Conditional Start.final.md>) is executed per scheduled interview (it is configured that way in its `Start On` property).
 
-3. The **WaitForAllFeedback** wait activity holds the execution of the process.
+3. The **WaitForInterview** wait activity holds the execution of the process.
 
 4. Every time an interview is updated, the **Wait** activity is tentatively ended by executing the **OnClose** callback action: it only ends when all interviews have the feedback filled in.

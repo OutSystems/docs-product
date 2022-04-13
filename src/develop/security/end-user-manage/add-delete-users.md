@@ -7,11 +7,6 @@ guid: 8b17c8d9-939a-486c-bec9-fe1309df7aed
 
 # Add and Delete End Users
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 In the Users application, click the **Users** tab to view the list of all the end users currently active in your environment.
 

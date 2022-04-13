@@ -7,11 +7,6 @@ guid: 9a6e61ee-eaae-442e-bbb6-6edde598b908
 
 # Designing Screens
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 This page contains an overview of widgets. It also links to pages that provide additional information about the widgets available to help you design Screens.
 

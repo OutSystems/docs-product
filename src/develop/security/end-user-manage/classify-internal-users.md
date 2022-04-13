@@ -6,11 +6,6 @@ guid: 8cb73d92-a60d-4133-9f95-67ef4505932d
 
 # Classify Users as Internal Users
 
-<div class="info" markdown="1">
-
-Applies to OutSystems licenses purchased after January 2020.
-
-</div>
 
 OutSystems identifies two different types of registered end users for licensing purposes: [**Internal Users** and **External Users**](intro.md#internal-external).
 

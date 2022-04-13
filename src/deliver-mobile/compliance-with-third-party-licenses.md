@@ -14,19 +14,19 @@ If you are using other custom plug-ins or components in your app, you must also 
 
 ## Include the Third Party Licenses Used by OutSystems
 
-The **MobilePatterns** module from OutSystems UI Mobile Framework provides you a block with the text of the licenses and copyright notices of the third party components used by OutSystems that you must include in your mobile app.
+OutSystems UI provides you a block with the text of the licenses and copyright notices of the third party components used by OutSystems that you must include in your mobile app.
 
-If your app is not using the **MobilePatterns** module, you must add that dependency first:
+If your app is not using the **OutSystems UI** module, you must add that dependency first:
 
 1. Go to **Manage Dependencies…**. 
-1. Find the module **MobilePatterns** and add the block **Licenses** from the flow **Licenses**.   
+1. Find the module **OutSystems UI** and add the block **Licenses** from the flow **Licenses**.   
   
     ![](images/license-block-in-references-window.png)  
 
 Then, you will be able to use the block **Licenses** in your app:
 
 1. Create a new screen in your app to display the licensing information. 
-1. Expand the module **MobilePatterns** and the flow **Licenses**.
+1. Expand the module **OutSystems UI** and the flow **Licenses**.
 1. Drag and drop the block **Licenses** to the Content placeholder of your new screen.   
   
     ![](images/image03.png)  
@@ -47,7 +47,7 @@ The plug-ins supported by OutSystems, which you can install from OutSystems Forg
 You can add the licensing information of an OutSystems plug-in by doing the following:
 
 1. Go to the screen you previously created to display the OutSystems third party licensing information.
-1. Within the **Licenses\Licenses** block of the **MobilePatterns** module, locate the placeholder **CustomLicenses**. 
+1. Within the **Licenses\Licenses** block of the **OutSystems UI** module, locate the placeholder **CustomLicenses**. 
 1. Drag and drop the block **License** from the OutSystems plug-in to the placeholder **CustomLicenses**. 
 
     ![](images/image01.png)
@@ -58,5 +58,5 @@ For other plug-ins or components that don’t provide a block with the licensing
 
 1. In the plug-in or component you are using, create your own block with the text of the licenses that need to be available to the end user. 
 1. In your app, go to the screen you created to display the licensing information.
-1. Within the **Licenses\Licenses** block of the **MobilePatterns** module, locate the placeholder **CustomLicenses**. 
+1. Within the **Licenses\Licenses** block of the **OutSystems UI** module, locate the placeholder **CustomLicenses**. 
 1. Drag and drop your block to the placeholder **CustomLicenses**. 

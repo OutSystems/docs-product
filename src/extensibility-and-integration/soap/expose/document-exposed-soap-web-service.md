@@ -20,7 +20,7 @@ After publishing, the documentation is available under the module URL at `<Modul
 
 To open the SOAP Web Service documentation, right-click the tree element of your SOAP Web Service in Service Studio and select **Open Documentation**.
 
-![](images/ss-soap-open-documentation.png)
+![Select Open documentation](images/soap-open-documentation-ss.png)
 
 Note: The description of the Input and Output Parameters of the Web Service Methods is not used for documentation purposes.
 

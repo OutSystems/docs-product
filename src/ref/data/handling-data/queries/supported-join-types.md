@@ -17,13 +17,13 @@ To do this, just drag the entities into your aggregate. They are automatically j
 
 In the examples below we will combine the following two entities:
 
-![](images/originaltables.jpg)
+![](images/originaltables.png)
 
 ## Only fetch records with a match
 
 To only retrieve Issues that have an Engineer assigned, use **Only With**.
 
-![](images/onlywith-example.jpg)
+![](images/onlywith-example.png)
 
 Notice how Issues that have no Engineer assigned yet are not returned.
 
@@ -33,7 +33,7 @@ To retrieve all Issues regardless of whether they have an Engineer assigned to t
 
 In this join type the order of the Entities in the join condition makes a difference in the returned rows. The idea is to retrieve all records from the first entity, and combine the rows of the second entity to them. So if you swap the order of the Entities, you will get a different result.
 
-![](images/withorwithout-difference.jpg)
+![](images/withorwithout-difference.png)
 
 Notice that for the Issues that have no Engineer assigned, the columns with the Engineer information contain the default values.
 
@@ -41,7 +41,7 @@ Notice that for the Issues that have no Engineer assigned, the columns with the 
 
 To fetch all Issues and all Engineers, even if there is no match between them, use **With**.
 
-![](images/with-example.jpg)
+![](images/with-example.png)
 
 Notice that for Issues without an engineer assigned, the columns with the engineer information contain the default values.
 
@@ -55,6 +55,6 @@ To combine each record from an entity with all records of a second entity (for e
 
 To pair each team with their adversaries, add the Team entity twice to your aggregate.
 
-![](images/crossjoin-example.jpg)
+![](images/crossjoin-example.png)
 
 Then filter the aggregate to ensure that a team is not paired up with itself.

@@ -249,9 +249,9 @@ To help you decide which default behavior is best for your new integration with 
 |Integer|0|-1999999991|
 |Long Integer|0|-8999999999999998|
 |Decimal|0.0|99999993.14159356|
-|Email|"" (empty string)|``"<ib>NULL</ib>"``|
-|Phone Number|"" (empty string)|``"<ib>NULL</ib>"``|
-|Text|"" (empty string)|``"<ib>NULL</ib>"``|
+|Email|"" (empty string)|`"<ib>NULL</ib>"`|
+|Phone Number|"" (empty string)|`"<ib>NULL</ib>"`|
+|Text|"" (empty string)|`"<ib>NULL</ib>"`|
 
 ### Use the integration in your application { #use }
 

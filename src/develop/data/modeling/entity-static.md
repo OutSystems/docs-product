@@ -13,11 +13,6 @@ The only action available for the Static Entities is the **Get&lt;StaticEntity&g
 
 When modeling your data, keep in mind that Static Entities can only contain foreign keys of other Static Entities. For more information check out [Entity Relationships](relationship/intro.md).
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## Create a Static Entity
 

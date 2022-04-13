@@ -25,11 +25,6 @@ Here is how you can edit expressions and show the expression values.
 
     ![Expression widget](images/expression-widget-ss.png?width=400)
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## Notes
 

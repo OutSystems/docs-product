@@ -7,12 +7,6 @@ guid: a15c9cd8-b90c-4c9a-aed5-9cfffd0e1b04
 
 # Single Sign-On
 
-<div class="info" markdown="1">
-
-We’ve been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
-
 OutSystems provides single sign-on capabilities by default: after authenticating in one of the applications, the end users can access all other applications without having to provide the credentials. Single Sign-On is supported only on modules that are enabled to use cookies.
 
 ## Using Single Sign-On

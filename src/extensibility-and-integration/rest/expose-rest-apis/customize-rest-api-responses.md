@@ -7,11 +7,6 @@ guid: e8e058c7-435f-4c70-8073-afd4ac5b451a
 
 # Customize REST API Responses
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 OutSystems allows you to customize the information sent in responses when exposing a REST API.
 

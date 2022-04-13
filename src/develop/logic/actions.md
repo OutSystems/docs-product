@@ -9,11 +9,6 @@ guid: ce518c93-363b-485e-91b3-b4a402ec4579
 
 When developing Apps you create logic that runs on the **server** and logic that runs on the **client** device, like a smartphone or a tablet.
 
-The logic flows of Server Actions and Client Actions are presented differently in Service Studio. The upper-left corner of the canvas shows either the **cloud** or the **tablet and smartphone** indicator icon to remind you where the current action runs - on the server or on the mobile device, respectively.
-
-The toolbox icons for the same tools are also slightly different for server and client.
-
-![Toolbox and a flow](images/web-or-mobile.png)
 
 You can create the following Actions:
 

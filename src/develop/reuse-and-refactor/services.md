@@ -20,7 +20,7 @@ Depending on the size of your services portfolio, you can also create a **Servic
 In a Service module you define the elements that compose your core services:
 
 * The service logic, using Server Actions and Service Actions.
-* Integrations (SOAP, REST and SAP).
+* Integrations such as REST.
 * Processes and Timers.
 * Database Entities.
 

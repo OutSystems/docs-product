@@ -9,7 +9,7 @@ guid: 795332a5-e1f3-40c0-886d-75b7bddf48af
 
 <div class="info" markdown="1">
 
-Check our training [Becoming a Reactive Web Developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer/) for a guided introduction into Reactive Web App. To read more about this new type of app in OutSystems, we invite you to read the forum post <a href="https://www.outsystems.com/forums/discussion/52761/reactive-web-the-next-generation-of-web-apps/">The Next Generation of Web Apps</a>.
+Check our training [Becoming a Reactive Web Developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer/) for a guided introduction into Reactive Web App. To read more about this type of app in OutSystems, we invite you to read the forum post <a href="https://www.outsystems.com/forums/discussion/52761/reactive-web-the-next-generation-of-web-apps/">The Next Generation of Web Apps</a>.
 
 </div>
 
@@ -68,7 +68,9 @@ To do this, we are going to use an Excel file that already contains the followin
 * Due Date
 * Is Active
 
-In the `ToDo` module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel**, and select the sample file `Tasks.xlsx` available by default in the directory `C:\Program Files\OutSystems\Development Environment 11\Service Studio\TutorialResources`. Click **Import** in the dialog to confirm.
+Download the [tutorial Excel file](https://www.outsystems.com/home/TutorialResource.aspx) to your computer.
+
+In the **ToDo** module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel**, and select the tutorial Excel file `TutorialResource.xlsx`. Click **Import** in the dialog to confirm.
 
 ![Create a Database Table from an Excel File](images/reactive-new-app-import-excel.png)
 
@@ -106,7 +108,7 @@ This links the title of the tasks to a newly created screen. We will use this ne
 
     ![Drag a Form](images/reactive-new-app-form-created.png)
 
-2. Drag the **Task** entity from the **Data** tab to the previously created Form.
+1. Drag the **Task** entity from the **Data** tab to the previously created Form.
 
     ![Create a Screen to Edit Tasks](images/reactive-new-app-entity-in-form.png)
 
@@ -114,7 +116,21 @@ Now we will define the logic that runs when the end users press the Save button:
 
 1. Double-click an empty area of the **Save** button to define the logic associated with the button. This will create a new screen action named **SaveOnClick**.
 
-1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the **True** branch of the **If**. Set the **Source** property to `GetTaskById.List.Current`.
+1. In the Logic tab create a server action named **TaskCreateOrUpdate**.
+
+1. Add an input parameter and set it's name to **Task**. Set the data type to **Task**.
+
+1. Add an output parameter and set it's name to **TaskId**. Set the data type to **Task Identifier**. This will be the task id returned by the CreateOrUpdateTask that we'll need to pass on to the **SaveOnClick** action.
+
+1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action. Set the **Source** to the input parameter **Task**.
+
+1. Next, we'll need to assign value of the output parameter **TaskId** to the **CreateOrUpdateTask**. Drag an **Assign** node to the flow and set the **Variable** to **TaskId**, and the **Value** to `CreateOrUpdateTask.Id`.
+
+    ![](images/wrapper-create-ss.png)
+
+1. Navigate to the **Interface** tab and double click the **SaveOnClick** action.
+
+1. In the **Logic** tab and drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If**. Set the **Task** property to `GetTaskById.List.Current.task`.
 
 1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task. 
 
@@ -124,7 +140,7 @@ Now we will define the logic that runs when the end users press the Save button:
 
 Now let's add the functionality to mark tasks as complete. We can implement that by adding a feature to delete the completed task:
 
-1. In the **Interface** tab, click on the "tasks" screen. Right click on the checkbox in the **Is Active** column and select **Delete**.
+1. In the **Interface** tab, click on the "Task" screen. Right click on the checkbox in the **Is Active** column and select **Delete**.
 
     ![Allow Completing Tasks](images/Create-first-WebApp-Task-tab-del-ss.png)
 
@@ -132,9 +148,18 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
 1. Double-click an empty area of the button to define the logic associated with the click.
 
-1. In the **Data** tab, expand the **Task** entity and drag **DeleteTask** entity to the flow of the DoneOnClick Action. Set the **Id** property  to `GetTasks.List.Current.Task.Id`.
+1. Click the **Logic** tab and add a a Server Action. Name it *TaskDelete*. 
 
-1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **DeleteTask** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
+1. Add an input parameter to the *TaskDelete* to receive the Task identifier. Set it's name to *TaskId* and the Data Type to *Task Identifier*.
+
+1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the property *Id* to the input parameter *TaskId*.
+
+    ![](images/wrapper-delete-ss.png)
+
+
+1. Go back to the **Interface** tab and double click the action **DeleteTask**. Drag the **TaskDelete** server action to the flow. and set the TaskId to the input parameter *TaskId*.
+
+1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
 
     ![Allow Completing Tasks](images/reactive-new-app-delete-refresh.png)
 

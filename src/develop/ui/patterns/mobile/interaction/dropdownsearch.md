@@ -71,7 +71,7 @@ In this example, we create a dropdown search for a list of employees. When the u
 
     1. Click **Close**. 
     
-        This  displays the selected employee's name and their ID.
+        This displays the selected employee's name and their ID.
 
         ![Add message logic](<images/dropdownsearch-message-ss.png>)
 

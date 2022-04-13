@@ -69,7 +69,7 @@ In this example, we create a Range Slider that allows the user select the number
 
 1. To create a variable for the expression, right-click your screen name, select **Add Local Variable**, and on the **Properties** tab, enter a name and data type (in this example, we use **Decimal**).
 
-    ![Create a local v  ariable of type decimal](images/rangeslider-locvar-ss.png)
+    ![Create a local variable of type decimal](images/rangeslider-locvar-ss.png)
 
 1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
 

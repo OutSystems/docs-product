@@ -179,7 +179,7 @@ The page titles show in the browser tabs, bookmarks, and results from the search
 
 <div class="warning" markdown="1">
 
-OutSystems strongly recommends that all team members update Service Studio before using dynamic page titles in  acollaborative environment.    
+OutSystems strongly recommends that all team members update Service Studio before using dynamic page titles in a collaborative environment.    
 
 </div>
 

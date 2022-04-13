@@ -1179,8 +1179,8 @@
                     - href: ref/lang/auto/Class.Run Client Action.final.md
                     - href: ref/lang/auto/Class.Run Server Action.final.md
                     - href: ref/lang/auto/Class.Refresh Data.final.md
-                    - href: ref/lang/auto/Class.Aggregate.final.md
-                    - href: ref/lang/auto/Class.SQL.final.md
+                    #- href: ref/lang/auto/Class.Aggregate.final.md
+                    #- href: ref/lang/auto/Class.SQL.final.md
                     - href: ref/lang/auto/Class.If.final.md
                     - href: ref/lang/auto/Class.Switch.final.md
                     - href: ref/lang/auto/Class.For Each.final.md
@@ -1205,8 +1205,8 @@
             # Adding Data and Logic
             - href: ref/interfaces/adding-data-and-logic.md
             - topics:
-                - href: ref/lang/auto/Class.Aggregate.final.md
-                - href: ref/lang/auto/Class.Client Action.final.md
+                #- href: ref/lang/auto/Class.Aggregate.final.md
+                #- href: ref/lang/auto/Class.Client Action.final.md
                 - href: ref/lang/auto/Class.Data Action.final.md
                 - href: ref/lang/auto/Class.Script.final.md
             # Designing Screens
@@ -1273,7 +1273,7 @@
             - href: ref/interfaces/navigating-in-the-application.md
             - topics:
                 - href: ref/lang/auto/Class.Block.final.md
-                - href: ref/lang/auto/Class.Comment.final.md
+                #- href: ref/lang/auto/Class.Comment.final.md
                 - href: ref/lang/auto/Class.Event.final.md
                 - href: ref/lang/auto/Class.External Site.final.md
                 - href: ref/lang/auto/Class.Screen.final.md
@@ -1326,7 +1326,7 @@
                 # Adding Data and Logic
                 - href: ref/traditional-web/web-interfaces/adding-data-and-logic.md
                 - topics:
-                    - href: ref/lang/auto/Class.Screen Action.final.md
+                    #- href: ref/lang/auto/Class.Screen Action.final.md
                 # Designing Screens
                 - href: ref/traditional-web/web-interfaces/designing-screens/intro.md
                 - topics:
@@ -1341,7 +1341,7 @@
                     - href: ref/lang/auto/Class.Expression Widget.final.md
                     - href: ref/lang/auto/ServiceStudio.Plugin.Widgets.Form.final.md
                     - href: ref/lang/auto/Class.Header Row Widget.final.md
-                    - href: ref/lang/auto/Class.If Widget.final.md
+                    #- href: ref/lang/auto/Class.If Widget.final.md
                     - href: ref/lang/auto/Class.Image Widget.final.md
                     - href: ref/lang/auto/Class.Input Password Widget.final.md
                     - href: ref/lang/auto/Class.Input Widget.final.md
@@ -1349,13 +1349,13 @@
                     - href: ref/lang/auto/Class.Link Widget.final.md
                     - href: ref/lang/auto/Class.List Box Widget.final.md
                     - href: ref/lang/auto/Class.List Records Widget.final.md
-                    - href: ref/lang/auto/Class.Placeholder Widget.final.md
+                    #- href: ref/lang/auto/Class.Placeholder Widget.final.md
                     - href: ref/lang/auto/Class.Radio Button Widget.final.md
                     - href: ref/lang/auto/Class.Row Widget.final.md
                     - href: ref/lang/auto/Class.Show Record Widget.final.md
                     - href: ref/lang/auto/Class.Table Records Widget.final.md
                     - href: ref/lang/auto/Class.Table Widget.final.md
-                    - href: ref/lang/auto/Class.Text Widget.final.md
+                    #- href: ref/lang/auto/Class.Text Widget.final.md
                     - href: ref/lang/auto/Class.Upload Widget.final.md
                     - href: ref/lang/auto/Class.Web Block Widget.final.md
                 # Patterns
@@ -1426,17 +1426,17 @@
                 # Designing the Layout
                 - href: ref/traditional-web/web-interfaces/designing-the-layout/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Image.final.md
-                    - href: ref/lang/auto/Class.Localized Image.final.md
+                    #- href: ref/lang/auto/Class.Image.final.md
+                    #- href: ref/lang/auto/Class.Localized Image.final.md
                     - href: ref/lang/auto/Class.Theme.final.md
-                    - href: ref/lang/auto/Class.UI Flow.final.md
+                    #- href: ref/lang/auto/Class.UI Flow.final.md
                 # Navigating in the Application
                 - href: ref/traditional-web/web-interfaces/navigating-in-the-application/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Comment.final.md
+                    #- href: ref/lang/auto/Class.Comment.final.md
                     - href: ref/lang/auto/Class.Email.final.md
                     - href: ref/lang/auto/Class.Entry.final.md
-                    - href: ref/lang/auto/Class.External Site.final.md
+                    #- href: ref/lang/auto/Class.External Site.final.md
                     - href: ref/lang/auto/Class.Go To Destination.final.md
                     - href: ref/lang/auto/Class.Web Block.final.md
                     - href: ref/lang/auto/Class.Web Screen.final.md
@@ -1444,28 +1444,28 @@
             # Web Logic Tools
             - href: ref/traditional-web/web-logic-tools/intro.md 
             - topics:
-                - href: ref/lang/auto/Class.Aggregate.final.md
-                - href: ref/lang/auto/Class.Assign.final.md
-                - href: ref/lang/auto/Class.Run Server Action.final.md
-                - href: ref/lang/auto/Class.SQL.final.md
-                - href: ref/lang/auto/Class.Excel To Record List.final.md
-                - href: ref/lang/auto/Class.JSON Deserialize.final.md
-                - href: ref/lang/auto/Class.JSON Serialize.final.md
+                #- href: ref/lang/auto/Class.Aggregate.final.md
+                #- href: ref/lang/auto/Class.Assign.final.md
+                #- href: ref/lang/auto/Class.Run Server Action.final.md
+                #- href: ref/lang/auto/Class.SQL.final.md
+                #- href: ref/lang/auto/Class.Excel To Record List.final.md
+                #- href: ref/lang/auto/Class.JSON Deserialize.final.md
+                #- href: ref/lang/auto/Class.JSON Serialize.final.md
                 - href: ref/lang/auto/Class.Ajax Refresh.final.md
-                - href: ref/lang/auto/Class.Record List To Excel.final.md
-                - href: ref/lang/auto/Class.Refresh Data.final.md
+                #- href: ref/lang/auto/Class.Record List To Excel.final.md
+                #- href: ref/lang/auto/Class.Refresh Data.final.md
                 - href: ref/lang/auto/Class.Attach File.final.md
-                - href: ref/lang/auto/Class.Download.final.md
-                - href: ref/lang/auto/Class.Send Email.final.md
-                - href: ref/lang/auto/Class.Destination.final.md
-                - href: ref/lang/auto/Class.If.final.md
-                - href: ref/lang/auto/Class.For Each.final.md
-                - href: ref/lang/auto/Class.Switch.final.md
-                - href: ref/lang/auto/Class.Comment.final.md
-                - href: ref/lang/auto/Class.Exception Handler.final.md
-                - href: ref/lang/auto/Class.Raise Exception.final.md
-                - href: ref/lang/auto/Class.End.final.md
-                - href: ref/lang/auto/Class.Start.final.md
+                #- href: ref/lang/auto/Class.Download.final.md
+                #- href: ref/lang/auto/Class.Send Email.final.md
+                #- href: ref/lang/auto/Class.Destination.final.md
+                #- href: ref/lang/auto/Class.If.final.md
+                #- href: ref/lang/auto/Class.For Each.final.md
+                #- href: ref/lang/auto/Class.Switch.final.md
+                #- href: ref/lang/auto/Class.Comment.final.md
+                #- href: ref/lang/auto/Class.Exception Handler.final.md
+                #- href: ref/lang/auto/Class.Raise Exception.final.md
+                #- href: ref/lang/auto/Class.End.final.md
+                #- href: ref/lang/auto/Class.Start.final.md
 
             # Web System Events
             - href: ref/traditional-web/web-system-events/intro.md

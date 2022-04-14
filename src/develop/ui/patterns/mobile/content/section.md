@@ -7,6 +7,12 @@ guid: f8eb7c31-9003-4675-85a1-8c09a8aeafd8
 
 # Section
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Section UI Pattern to organize on-screen content into different sections. This pattern can also be used with the Section Index UI Pattern to create anchors for each section.
 
 ![](<images/section-5-ss.png>)

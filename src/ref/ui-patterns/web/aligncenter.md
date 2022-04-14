@@ -7,6 +7,12 @@ guid: b4a62bda-9298-473c-bc03-c0acc4de20f3
 
 # Align Center Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/aligncenter-8-diag.png>)

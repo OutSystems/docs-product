@@ -7,6 +7,12 @@ guid: fe14ee83-cb5a-428d-bc6f-16d3857bf3ca
 
 # Map
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 The OutSystems **Map** component allows you to add maps to your applications with single or multiple locations. The Map component is fully customizable, allowing you to, for example, change map behaviors, search for locations, and plan your route.
 
 For more information on how to use the Map component, see [How to use the Map component](map.md).

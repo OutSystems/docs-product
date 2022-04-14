@@ -7,6 +7,12 @@ guid: 0488b53b-190d-4467-83a4-76bae70bf4c2
 
 # Columns
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Columns UI Pattern to split content into separate columns, improving the way information is displayed on screen.
 
 ![](<images/columns-1.png>)

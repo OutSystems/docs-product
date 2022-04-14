@@ -7,6 +7,12 @@ guid: ca179aae-31fe-4032-b523-167c3ba531e5
 
 # User Avatar
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the User Avatar UI Pattern to display a user's initials or their image in a circular badge.
 
 ![](<images/useravatar-4-ss.png>)

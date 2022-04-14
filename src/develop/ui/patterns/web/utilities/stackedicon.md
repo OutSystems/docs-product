@@ -7,6 +7,12 @@ guid: 163fef6d-6b13-4479-baaa-25c27569832d
 
 # Stacked Icon
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Stacked Icon UI Pattern to stack one icon on top of another, thus creating a new icon with its own distinctive meaning.
 
 ![](<images/stackedicon-8-ss.png>)

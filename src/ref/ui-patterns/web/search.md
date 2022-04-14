@@ -7,6 +7,12 @@ guid: cfd34720-b1a4-452c-ab75-0af83bed2963
 
 # Search Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/search-3-diag.png>)

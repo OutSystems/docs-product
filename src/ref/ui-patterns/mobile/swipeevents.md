@@ -7,6 +7,12 @@ guid: 4cbd7c42-2fd9-4e84-b9c0-091534b608b7
 
 # Swipe Events Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Events
 
 **Event Name** |  **Description** |  **Mandatory**  

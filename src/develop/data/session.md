@@ -7,6 +7,12 @@ guid: a6784b12-4617-437f-b5e5-ec8c8b579006
 
 # Sessions in Web Applications
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 OutSystems web applications are stateless: each request an end user makes to the server is not aware of the previous requests.
 
 To overcome the limitations of these stateless requests, OutSystems uses several mechanisms that allow the server to maintain information about the previous requests the end user made. One of the mechanisms are **Sessions**.

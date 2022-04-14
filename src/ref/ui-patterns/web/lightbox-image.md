@@ -7,6 +7,12 @@ guid: 6b8b6bad-949d-4561-9cd9-a062b11fc20b
 
 # Light Box Image Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/lightboximage-3-diag.png>) 

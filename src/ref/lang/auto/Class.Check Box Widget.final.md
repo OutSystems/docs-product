@@ -8,6 +8,11 @@ guid: 3facb0e8-ae9c-4efa-95ea-27bacf9806fa
 
 # Check Box Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Check box field where the user can enable or disable an option. The value must be stored in a Boolean variable.
 

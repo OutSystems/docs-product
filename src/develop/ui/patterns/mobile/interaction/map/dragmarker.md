@@ -7,6 +7,12 @@ guid: b7dce067-3d75-4c88-8a92-9de144f97896
 
 # How to get draggable marker coordinates  
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 **Prerequisites**
 
 * Download and install the [OutSystems Map component](https://www.outsystems.com/forge/component-overview/9909/outsystems-maps) from Forge.

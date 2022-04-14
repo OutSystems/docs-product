@@ -7,6 +7,12 @@ guid: fa8125c1-ec09-4d4f-8c84-41be51e007b8
 
 # Gallery
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end. 
 
 ![](<images/gallery-7-ss.png>)

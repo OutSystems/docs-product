@@ -7,6 +7,12 @@ guid: f8dfa815-8c3e-4906-9378-e9d91ad6b4a4
 
 # Use Custom Splash Screens
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 By default, mobile applications have a custom splash screen displaying the main color defined in the app creation wizard. This splash screen is displayed after the Operating System loads your app (black screen) and after the WebView finishes loading the content (white screen). 
 
 It is possible to change the look of your app even before it is fully loaded by customizing the native splash screen. This way you make sure that the end user has a fluid experience from the moment they open your app by replacing the black to white screen transition with an image of your choice.

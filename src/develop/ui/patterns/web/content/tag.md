@@ -7,6 +7,12 @@ guid: b448e71a-760c-46b3-9fed-b3b97229d351
 
 # Tag
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Tag UI Pattern to style small texts in a colored tag format. Use the Tags UI Pattern to display statuses, labels, or categories thus providing great user experience.
 
 **How to use the Tag UI Pattern**

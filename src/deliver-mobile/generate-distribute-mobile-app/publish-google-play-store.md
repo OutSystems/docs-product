@@ -7,6 +7,12 @@ guid: 49613761-0f66-4d87-b41a-bf600081e654
 
 # Publish Your Mobile Android Application to the Google Play Store
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 This article describes the process you must follow to publish your application to the Google Play Store. Before you proceed, ensure your app fulfills the general [pre-requirements](publish-app-stores.md).
 
 To publish your app to the Google Play store you must have a developer account. If you don't, [create a new Google Developer Account here](https://developer.android.com/distribute/googleplay/start.html).

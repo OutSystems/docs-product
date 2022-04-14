@@ -7,6 +7,12 @@ guid: cb68aaf9-4836-4eeb-b3f2-0a9fcc5164a4
 
 # Display on Device
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Display on Device UI pattern to select what elements are displayed on which device types. With this pattern you can improve the way information is displayed on different devices - computers, tablets, and phones - by specifically specifying which elements display on each of them.
 
 ![](<images/displayondevice-1.png>)

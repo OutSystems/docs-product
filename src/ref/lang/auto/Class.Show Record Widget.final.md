@@ -8,6 +8,11 @@ guid: d570d3e9-60ad-40d8-a87b-df968ff67d2a
 
 # Show Record Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Displays a single record of an Entity or a Structure.
 

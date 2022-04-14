@@ -7,6 +7,12 @@ guid: 188c9757-ce29-4f78-9717-4e42226e0a4d
 
 # Firebase Plugins
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 Firebase is a Google mobile development platform. It speeds up development of many development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
 
 * [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)

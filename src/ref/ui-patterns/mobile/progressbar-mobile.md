@@ -7,6 +7,12 @@ guid: fdef91ac-b3e1-4e49-a652-7921c46c9b35
 
 # Progress Bar Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Structure
 
 OutSystems UI Patterns follow the [BEM convention](http://getbem.com/introduction/) for naming CSS classes and structures:

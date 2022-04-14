@@ -7,6 +7,12 @@ guid: 64cf2199-6b69-480b-a63e-49b91965e777
 
 # Modal
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Modal UI Pattern to interrupt the end user and demand an action. It is implemented to direct an end user’s attention to important information. Ideal for when the end user is requested to enter information critical to continuing the current process.
 
 ![](<images/modal-1.png?width=800>)

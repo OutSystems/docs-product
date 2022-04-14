@@ -7,6 +7,12 @@ guid: f33d65af-6f6e-4425-9db3-7c8a206a71c3
 
 # Generate and Publish Your Mobile App to the Mobile App Stores
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 At some point your mobile app is ready for production and so, to be used by end users. One of the ways you can distribute your production-ready mobile app is by providing it in the mobile stores for the general public.
 
 In OutSystems, you can generate a mobile application package to publish your mobile app in the App Store and Google Play stores.

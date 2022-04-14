@@ -7,6 +7,12 @@ guid: 113a390f-c3f6-4ba3-b493-184f75c36227
 
 # Time Picker 
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Time Picker UI Pattern to select a single time from a drop-down list.
 
   ![](<images/timepicker-gif-1.gif>)

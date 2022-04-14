@@ -8,6 +8,11 @@ guid: ecc756d6-3965-4b19-a3e8-309fd3b87b0d
 
 # Link Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Displays a hyperlink that users can click or tap to trigger an action, submit data or navigate to another screen.
 

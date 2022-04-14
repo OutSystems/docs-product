@@ -7,6 +7,12 @@ guid: 23431108-d3aa-4c10-9307-c8ad925dc9f1
 
 # Video
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Video UI pattern to embed a native video player into your application.
 
 ![](<images/video-image-2.png>)

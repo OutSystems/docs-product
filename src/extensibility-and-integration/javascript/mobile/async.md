@@ -7,6 +7,12 @@ guid: 38ba49e3-f93e-45b2-9e51-83e8b52b353e
 
 # Defining Asynchronous JavaScript Code
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 JavaScript is, in most cases, single-threaded: in the browser, the thread executing JavaScript code will block the rendering process and any user interactions.
 
 To avoid this blocking behavior, JavaScript calls that are expected to take some time, like doing server requests or capturing a photo through a mobile app plugin, have **asynchronous APIs**. This allows the code calling the API to get (and act upon) the result of the call later in time, when the result is available.

@@ -7,10 +7,15 @@ guid: a1e335a8-d8f0-4039-bd89-67590def7910
 
 # Compliance with Third Party Licenses
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 OutSystems apps use several great third party components, whose licenses require publishing a copy of the license itself and/or copyright notices. Your apps must have the copies of these licenses available to the end users to be compliant with those requirements.
 
 If you are using other custom plug-ins or components in your app, you must also check their licenses to verify if they have the same requirements and ensure that your mobile apps are compliant with them.
-
 
 ## Include the Third Party Licenses Used by OutSystems
 

@@ -9,6 +9,12 @@ guid: 70ed4ea2-9f23-4c19-b322-11255785072c
 
 # Message
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can provide a feedback message to the end user by using the Message logic tool within a Client Action flow.
 
 ## Using the Message logic tool

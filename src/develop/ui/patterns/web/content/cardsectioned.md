@@ -7,6 +7,12 @@ guid: 1ba59808-a9ca-45c3-8f9c-3b68edccaef4
 
 # Card Sectioned
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 Groups information in a small block organized with different sections for title, image and content that can be easily noticeable in the screen.
 
 Use the Card Sectioned pattern to group short pieces of information and highlight them on the screen.

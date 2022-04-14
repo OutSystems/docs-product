@@ -7,6 +7,12 @@ guid: ff593156-92ef-4947-86f1-e3d2dfb58908
 
 # Configuring an exit URL for a blocked app
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 If an app with the AppShield security plugin detects modification or tempering, the app shuts down. You can use the AppShield **ExitOnURL** configuration to inform the user of the reason. The **ExitOnURL** lets you to define an **Exit URL** that the app opens in the default browser. It also lets you explain the issue to the app users.
 
 ## Prerequisites

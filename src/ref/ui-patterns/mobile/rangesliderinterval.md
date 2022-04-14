@@ -7,6 +7,12 @@ guid: 0a4c0ebb-4ee1-4443-9ab8-971329ca1541
 
 # Range Slider Interval Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Events
 
 |**Event Name** |  **Output** |  **Description**  |

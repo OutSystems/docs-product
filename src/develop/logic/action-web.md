@@ -7,6 +7,12 @@ guid: 8536c396-e702-492a-8a07-ab8c8bc0334c
 
 # Actions in Web Applications
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 In OutSystems web applications you can create the following Actions:
 
 * Preparation

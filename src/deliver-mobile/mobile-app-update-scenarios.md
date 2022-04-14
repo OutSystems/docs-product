@@ -7,6 +7,12 @@ guid: ce4f8a4d-d473-4b92-a448-cf39fde1f64d
 
 # Mobile App Update Scenarios
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 After you click the **1-Click Publish** button, the updates to the mobile app that you deploy to a production environment automatically become available to the users with no need to install a new app version. The mobile app running on the user devices detect the updates when the app connects to the server. Only mobile app packages generated from an environment receive the new developments and changes published in that same environment.
 
 ## Detecting a new app version

@@ -9,7 +9,7 @@ guid: 4e759186-e8a8-416a-a1fc-505d2cdc8de8
 
 <div class="info" markdown="1">
 
-We've been working on this article. Please let us know how useful this new version is by voting.
+Applies only to Mobile Apps and Reactive Web Apps
 
 </div>
 

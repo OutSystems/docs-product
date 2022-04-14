@@ -7,6 +7,12 @@ guid: c434b127-7855-4ec0-9c5d-e484eff41e63
 
 # Download a file through browser
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps and Reactive Web Apps.
+
+</div>
+
 You can send binary content to the browser, which makes the browser initiate the download. In some browsers or devices the download may begin immediately, while some first open a save dialog.
 
 To send the file to the browser, use the **Download Tool**, and pass it the values for:

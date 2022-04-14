@@ -7,6 +7,12 @@ guid: 0134e6e2-5319-4f34-9f72-5a137e9971a4
 
 # Date Picker Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Events
 
 | **Event Name** |  **Description** |  **Mandatory**  |

@@ -7,6 +7,12 @@ guid: 583538cf-ffe1-4c39-9fe5-60667fd05f26
 
 # Search
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Search UI Pattern to provide users with a search field. Use the Search UI Pattern to allow users find pieces of content by entering queries. Unlike navigation, knowledge of the content's location isn't required and searching is often the primary means of finding content.
 
 ![](<images/search-5-ss.png>)

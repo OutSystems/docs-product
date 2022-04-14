@@ -7,6 +7,11 @@ guid: 2bea2ff9-7655-4952-a00c-2a3f1e3316e9
 
 # Inspect the HTTP requests in Mobile Apps for iOS
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Use the network inspector to see the network activity of your iOS app. The user interface of the network inspector consists of a toolbar and a button that opens the screen with the network traffic details. 
 

@@ -7,6 +7,12 @@ guid: b48f442d-6ab3-47c9-96ad-2bae75f24bc8
 
 # Gallery Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Structure
 
 ![Gallery Structure](images/gallery-class-diag.png)

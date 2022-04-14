@@ -7,6 +7,12 @@ guid: 14009e9a-16b3-4d0a-ae41-859c15a3ea5d
 
 # Animate
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Animate UI Pattern to create animations within your app. This UI pattern allows you to emphasize elements as they appear on screen which enhances the overall usability of the app.
 
 ![](images/animation.gif)

@@ -9,6 +9,12 @@ guid: fcef1ee7-5f7d-4c00-a92c-14f0a0039ac0
 
 <div class="info" markdown="1">
 
+Applies only to Traditional Web Apps.
+
+</div>
+
+<div class="info" markdown="1">
+
 This article is about emails in Traditional Web Apps. For Reactive Web Apps, see [Emails in Mobile and Reactive Web Apps](emails-reactive/intro.md).
 
 </div>

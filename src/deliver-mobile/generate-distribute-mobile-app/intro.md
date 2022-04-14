@@ -7,6 +7,12 @@ guid: 1aacc771-f914-4f95-889a-31f1dde06a38
 
 # Generate and Distribute Your Mobile App
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 Before generating your mobile app for the first time, you have to configure specific iOS and/or Android settings. Check the [topics listed at the end of this page](#Articles_in_this_Section) for details about different scenarios, such as development tests, distributing your app to a limited group of end users or publishing your app in Mobile App Stores.
 
 <div class="info" markdown="1">

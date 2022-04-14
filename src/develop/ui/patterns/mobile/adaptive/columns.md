@@ -7,6 +7,12 @@ guid: 1c4edd42-f577-4475-ad7c-72fbe2a849a8
 
 # Columns
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Columns UI Pattern to split content into separate columns, improving the way information is displayed on-screen.
 
 ## How to use the Columns UI Pattern

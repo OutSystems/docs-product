@@ -8,6 +8,11 @@ guid: 73d29c1b-5be0-4ebc-9828-0c0aaaff142b
 
 # Send Email
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Use the Send Email Tool within the web flow to send an email. The content of the email is based on your predefined Email screens, which you can specify in the **Email** field of the Properties Pane. The email is sent asynchronously, after OutSystems Scheduler Service checks the sending queue.
 

@@ -7,6 +7,12 @@ guid: f0fe14e4-6f11-4000-aa5b-81344f784447
 
 # Date Picker Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and Classes
 
 ![](<images/datepicker-image-3.png?width=600>)

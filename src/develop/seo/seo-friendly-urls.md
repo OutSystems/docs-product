@@ -8,6 +8,12 @@ guid: 641c106a-d688-42a3-9b73-8fd9791a673b
 
 # Customize or redirect the application URL
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 <!-- Help id 30374 links to this document. -->
 
 The URLs that are easy to read, memorize, and type contribute to great user experience (UX) and search engine optimization (SEO). OutSystems lets you configure the app URLs for UX and SEO. This guide describes the available techniques to simplify the URLs of the Traditional Web Apps.

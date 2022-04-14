@@ -7,6 +7,12 @@ guid: fe0f0d5b-bd63-4ddd-a18c-16d9df1e200f
 
 # Carousel Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Events
 
 |Event|Output|Description|

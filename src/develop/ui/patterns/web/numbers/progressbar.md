@@ -7,6 +7,12 @@ guid: 2a589d5e-0cd8-4dab-b9fa-bc7d12cacf23
 
 # Progress Bar
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Progress Bar to display percentage values by incrementing values in a bar, and to show the current progress of a task flow. <!--You can also show progress in a Progress Circle or a Progress Circle Fraction. When using the Progress Bar UI Pattern, be consistent, for example, if an action displays a linear indicator on one screen, that same action should not use a circular indicator elsewhere in the app. -->
 
 ![](<images/progressbar-1-ss.png>)

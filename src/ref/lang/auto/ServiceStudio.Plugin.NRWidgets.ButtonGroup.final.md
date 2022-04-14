@@ -9,6 +9,11 @@ guid: 018284ce-ede4-43d4-b85b-189b2d5a86ac
 
 # Button Group
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 Set of buttons from which the user can select a single option.
 

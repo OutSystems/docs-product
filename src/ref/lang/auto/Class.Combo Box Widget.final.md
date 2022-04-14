@@ -8,6 +8,11 @@ guid: 2ad09f6b-4508-4db2-b84a-3ce248492fc3
 
 # Combo Box Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Allows the user to select a specific value within a list of possible values.
 

@@ -7,6 +7,12 @@ guid: f0a35dfd-ff8e-4e04-8a4b-2407efaca4f6
 
 # Rating
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Rating UI Pattern to allow users rate, for example, products and services.
 
 ![Example of Rating pattern](<images/rating-example-ss.png>)

@@ -7,6 +7,12 @@ guid: 26092480-0d4f-441c-aeca-c82f31a3df51
 
 # Progress Circle Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/progresscircle-3-diag.png?width=650>)

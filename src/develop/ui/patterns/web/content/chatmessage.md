@@ -7,6 +7,12 @@ guid: 2ee63ee6-02cf-4a5a-a348-92e5b46b3946
 
 # Chat Message
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Chat Message UI Pattern to display conversational posts in notifications or chat screens. It can be used to display content such as photos, text, images, delivery times, and statuses.
 
 ![](<images/chatmessage-3.png>)

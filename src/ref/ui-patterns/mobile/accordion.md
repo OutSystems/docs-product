@@ -7,6 +7,12 @@ guid: e1c30cdd-a7f1-4ce5-aae5-2dddb7a845b9
 
 # Accordion Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Events - Accordion
 
 |**Event** |**Description**| 

@@ -7,6 +7,12 @@ guid: a152ecbb-2419-489f-87c5-000918d502f0
 
 # Enforce HTTPS Security
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 OutSystems provides developers with the ability of deciding at design time the HTTP security used in applications. They can do it by [defining which pages and integrations](<../../develop/security/secure-http-requests.md>) are available over HTTP and HTTPS.
 
 IT Managers or Administrators can override and enforce the HTTPS security of applications that are installed and running. They can do it for a **whole environment**, which affects all applications running there, or **application by application**.

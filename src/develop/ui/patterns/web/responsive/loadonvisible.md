@@ -7,6 +7,12 @@ guid: 768c98ad-bb82-496b-a311-1f577e2e221f
 
 # Load on Visible 
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Load on Visible UI Pattern to enhance the speed of your application as well as improve user experience. Using this UI pattern, information is loaded onto the page only when it is visible to the user. For example, instead of loading all text and images onto a page at once, they only appear when the user scrolls down the page and the information/image becomes visible.
 
 **How to use the Load on Visible UI Pattern**

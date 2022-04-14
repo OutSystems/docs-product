@@ -7,6 +7,12 @@ guid: b6da547f-4ef6-4bd3-bffc-365d5630da64
 
 # Delivering Mobile Apps
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 Once your mobile app has reached a stable state, you should distribute it to your users.  
   
 In OutSystems, there are two ways to distribute a mobile app:

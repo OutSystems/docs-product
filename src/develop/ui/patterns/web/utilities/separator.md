@@ -7,6 +7,12 @@ guid: c2f627d5-7dbf-4c75-a18e-43635917c6e6
 
 # Separator
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Separator UI Pattern to separate content clearly and ease visual organization.
 
   ![](<images/separator-1.png>)

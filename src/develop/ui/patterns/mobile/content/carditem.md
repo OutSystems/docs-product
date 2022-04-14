@@ -7,6 +7,12 @@ guid: 434a7ae9-243a-47b8-ae7c-e2f424a5411b
 
 # Card Item
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Card Item UI Pattern to list items with multiple content types, such as image or icon (to the left), a title and description, and an action to the right.
 
 ![](<images/carditem-1.png>)

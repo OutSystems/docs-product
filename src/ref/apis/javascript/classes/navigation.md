@@ -7,6 +7,12 @@ guid: c274f0ef-e0b8-4093-bd87-049cda15248d
 
 # Navigation
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 Provides the ability to perform normal and history navigations, and to override some navigation behaviors (e.g. back). Used to create new transition animations instead of overriding the existing ones using CSS.
 
 The methods below related with BackHandlers ([registerBackNavigationHandler](navigation.md#registerbacknavigationhandler) and [unregisterBackNavigationHandler](navigation.md#unregisterbacknavigationhandler)) are used to manipulate the behavior of back actions, e.g. pressing the 'Back' button in Android. A common use case is when the 'Back' button is pressed just to close a menu instead of navigating to the previous screen.

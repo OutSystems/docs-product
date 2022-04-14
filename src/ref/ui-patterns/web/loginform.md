@@ -7,6 +7,12 @@ guid: bf2c05bb-2a29-4a57-903b-98007af0401b
 
 # Login Form Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/loginform-1-diag.png>)

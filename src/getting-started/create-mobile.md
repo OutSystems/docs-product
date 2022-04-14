@@ -7,6 +7,12 @@ guid: 0ee5a8f6-0c94-4316-818f-49cc25f92283
 
 # Create Your First Mobile App
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 Developing mobile apps with OutSystems is easy. If you have an Excel file containing your data, you can import it into a database and quickly create a mobile app that enables you to check and manage your data on the go.
 
 To create a mobile app with data that's imported from an Excel file, you need to:

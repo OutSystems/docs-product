@@ -7,6 +7,12 @@ guid: 5d91a5b5-b07e-4858-af62-980f6a558b1d
 
 # Responsive UI 
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 On the OutSystems UI, everything is responsive — themes, layouts, and patterns. By default, OutSystems provides a set of adaptive and responsive behaviors that allow developers to easily create applications to work with all browsers, devices, and resolutions. 
 
 ## Device Detection

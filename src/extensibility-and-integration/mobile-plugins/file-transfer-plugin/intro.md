@@ -7,6 +7,12 @@ guid: 0bb071a1-f602-4d6b-9b4e-ca0c9c044c06
 
 # File Transfer Plugin
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 File Transfer Plugin lets you download and upload files in your mobile app. The plugin provides advanced file transfer that runs in the background, and continues even when the user closes or suspends the app.
 
 File Transfer Plugin also has a progress update for transfers that take longer, for example video, music, and large images.

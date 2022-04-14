@@ -7,6 +7,12 @@ guid: f2455c53-89bf-4a8e-89c5-3fd31f5fadb7
 
 # Balloon Search Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](images/searchballoon-2-diag.png?width=800)

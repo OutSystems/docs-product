@@ -7,6 +7,12 @@ guid: e0731879-d8a5-406c-b5a8-7b08cc36caee
 
 # Search
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Search UI Pattern to provide users with a search field.
 
 **How to use the Search UI Pattern**

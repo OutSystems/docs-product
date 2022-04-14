@@ -7,6 +7,11 @@ guid: 4e6390a2-3d56-4b65-aabe-aa7588ff2253
 
 # Breadcrumbs Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

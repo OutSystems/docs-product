@@ -7,8 +7,13 @@ guid: 5b81d4aa-2da0-4e88-9d14-c17a753a79fa
 
 # Secure the Data of your Mobile Apps
 
-This document presents a set of best practices and solutions for securing data in your mobile apps built with OutSystems.
+<div class="info" markdown="1">
 
+Applies only to Mobile Apps.
+
+</div>
+
+This document presents a set of best practices and solutions for securing data in your mobile apps built with OutSystems.
 
 ## Avoid storing sensitive data on the device
 

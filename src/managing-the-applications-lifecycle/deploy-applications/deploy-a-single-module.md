@@ -7,6 +7,12 @@ guid: ee8de340-e9d3-4392-8c8e-a2f3d2c02340
 
 # Deploy a Single Module
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 To decrease the deployment time, it is sometimes useful to deploy a single module of an application, instead of [deploying the entire application](<deploy-an-application.md>). This feature is only available for Web applications.
 
 Here's an example of how to do it.

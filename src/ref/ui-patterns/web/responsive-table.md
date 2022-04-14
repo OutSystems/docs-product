@@ -7,6 +7,12 @@ guid: 7b507cb7-8c2c-4705-a564-69e0bda38397
 
 # Responsive Table Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/responsivetable-4-diag.png>)

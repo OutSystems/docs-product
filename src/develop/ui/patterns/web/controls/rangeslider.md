@@ -7,6 +7,12 @@ guid: 7e929fe3-3027-4324-9b2a-a7d10e9fe4c6
 
 # Range Slider
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Range Slider UI Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content within a predetermined range. Moving the slider along the track, increases or decreases the value.  
 
 **How to use the Range Slider UI Pattern**

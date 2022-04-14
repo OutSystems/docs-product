@@ -7,6 +7,12 @@ guid: 97a72928-f041-46ef-b4c9-2574f67d986e
 
 # FeedbackMessage
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 Displays personalized feedback messages to the user.
 
 ## Summary

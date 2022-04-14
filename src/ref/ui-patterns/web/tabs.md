@@ -7,6 +7,12 @@ guid: 1acd4b94-2c08-48ab-9ad6-9c64bcf4d5de
 
 # Tabs Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](images/tabs-5-diag.png?width=750)

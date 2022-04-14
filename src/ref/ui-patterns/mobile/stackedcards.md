@@ -7,6 +7,12 @@ guid: 2b2b2437-d9dc-44bf-8d95-a0fb959fa61c
 
 # Stacked Cards Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Adding styles to elements
 
 This example shows you how to add styles to elements in the Pattern:

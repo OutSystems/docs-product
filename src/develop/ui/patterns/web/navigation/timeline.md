@@ -7,6 +7,12 @@ guid: 045e94bb-45ae-4672-8c58-c9f2bd07a485
 
 # Timeline
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Timeline UI Pattern to show related events in a chronological order, such as a user’s upcoming, current, and past activities.
 
 ![](<images/timeline-1.png>)

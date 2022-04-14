@@ -7,6 +7,12 @@ guid: b50125b9-419e-42f0-a55e-1deb3cfe5fc9
 
 # Search Balloon
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Search Balloon UI Pattern to provide users with a search field and while the user searches for content, the results are simultaneously updated in a results list.
 
 ![](images/search-balloon-demo-browser.png?width=500)

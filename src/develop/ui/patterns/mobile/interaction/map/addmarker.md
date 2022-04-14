@@ -7,6 +7,12 @@ guid: 64103ccc-9190-4483-8145-3f063dd1b823
 
 # How to add a marker on map click 
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 **Prerequisites**
 
 * Download and install the [OutSystems Map component](https://www.outsystems.com/forge/component-overview/9909/outsystems-maps) from Forge.

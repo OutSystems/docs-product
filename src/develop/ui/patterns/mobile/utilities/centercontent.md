@@ -7,6 +7,12 @@ guid: 050c3c6c-4147-474f-b78b-eb143ef5ebb8
 
 # Center Content
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Center Content UI Pattern to vertically align content to the center of its container.
 
 ![](<images/centercontent-1.png>)

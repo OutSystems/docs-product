@@ -8,6 +8,11 @@ guid: 194c0eca-3e99-4ee0-9ffd-d153e14b2225
 
 # Input Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Field that holds the data typed by the user.
 

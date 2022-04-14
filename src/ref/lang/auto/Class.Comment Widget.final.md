@@ -8,6 +8,11 @@ guid: 59c80eef-8238-406b-b0a4-231ea54d5c4e
 
 # Comment Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Allows you to add a comment to the design of your screen, which is displayed only at development time.
 

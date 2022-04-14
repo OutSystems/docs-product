@@ -8,6 +8,11 @@ guid: c8a95d6b-9e2c-4a22-81c3-19f768410e0e
 
 # Label Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Provides a caption to the input fields describing the information that is being requested from the user.
 

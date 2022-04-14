@@ -8,6 +8,11 @@ guid: 3d3bc1b9-9937-4e08-b4ce-f935022fc6dc
 
 # Table Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Table lets you organize the content of the screen in a table. You can also drag other widgets to the cells of the table.
 

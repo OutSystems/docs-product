@@ -7,6 +7,12 @@ guid: 8d9cef20-3f8a-440f-b229-bc8b3ced3e51
 
 # Generate and Distribute Your Mobile App for Development Tests
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 While you are developing a mobile app, there are times when you complete some development work that you want to test on the device and, share it with others for testing.
 
 In OutSystems, you can build and generate a mobile application package for your mobile app for test purposes and install it on the device. You can then share the package with other users following the iOS/Android distribution process.

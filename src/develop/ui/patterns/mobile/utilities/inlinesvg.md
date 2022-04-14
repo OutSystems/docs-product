@@ -1,12 +1,17 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Inline SVG changes fill and stroke properties or animates the SVG paths.
-
 locale: en-us
 guid: e79dc731-c258-4920-8ec4-6d4245cfc24a
 ---
 
 # Inline SVG
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 You can use the Inline SVG UI Pattern to change fill and stroke properties or animate the SVG paths.
 

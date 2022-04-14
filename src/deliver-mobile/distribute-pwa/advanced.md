@@ -7,6 +7,12 @@ guid: 418aac4c-1cdc-40b2-9b69-ba4fd68527f7
 
 # Advanced settings and customizations
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 Progressive web app (PWA) is an evolving and open technology. This document is about settings and techniques that go beyond the built-in capabilities of the OutSystems PWAs.
 
 <div class="info" markdown="1">

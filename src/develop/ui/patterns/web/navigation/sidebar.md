@@ -7,6 +7,12 @@ guid: e04f67a0-6c80-4d32-b519-55fb5ff7a04b
 
 # Sidebar
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Sidebar UI Pattern to display additional information in the margin of the main content. The additional information supports the user's understanding of the main content.
 
 ![](<images/sidebar-4.png>)

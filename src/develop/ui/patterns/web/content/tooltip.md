@@ -7,6 +7,12 @@ guid: 0e075d6f-21b5-4929-a591-d27832d9b40a
 
 # Tooltip
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Tooltip UI Pattern to dynamically display informative text when a user hovers over, clicks, or taps an on-screen element.
 
 ![](<images/tooltip-1.png>)

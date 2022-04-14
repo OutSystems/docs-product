@@ -7,6 +7,12 @@ guid: 804f282e-4480-4c8c-ba5a-4bc376436caa
 
 # Layout Login Split Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/layout-loginsplit-1-diag.png>)

@@ -7,6 +7,12 @@ guid: 7a764bd9-b48b-4961-a2b0-594723d02997
 
 # Section Group
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Section Group UI Pattern to keep the context of the header while scrolling through content.
 
 **How to use the Section Group UI Pattern**

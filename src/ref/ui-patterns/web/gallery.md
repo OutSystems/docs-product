@@ -7,6 +7,11 @@ guid: ff855320-4a19-426d-8fcb-a1fd47809f29
 
 # Gallery Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

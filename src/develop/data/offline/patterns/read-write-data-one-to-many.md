@@ -7,6 +7,12 @@ guid: 26530521-14df-4bb6-82d4-e087f6566a05
 
 # Read/Write Data One-to-Many
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 This data synchronization pattern is recommended for mobile apps with entities that follow a one-to-many relationship and where it is not likely for multiple end users to change the same data while the apps are offline, as follows:
 
 * The server database holds the master data that can change over time.

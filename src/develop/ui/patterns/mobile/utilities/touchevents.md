@@ -7,6 +7,12 @@ guid: 543a0aea-546e-48ce-92e6-dcc08e9fd2be
 
 # Touch Events
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Touch Events UI Pattern to enable touch events on a specific widget.
 
 ![](images/touch_events_utilities.png)

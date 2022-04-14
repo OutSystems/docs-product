@@ -7,6 +7,12 @@ guid: efe75497-2f0f-4bbe-9f97-e65c2b345210
 
 # Security
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 Provides methods for doing client side role checks. Used to programmatically show or hide UI elements depending on a given role.
 
 ## Summary

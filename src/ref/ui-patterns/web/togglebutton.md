@@ -7,6 +7,12 @@ guid: 0a3ed4d0-92d8-42d3-8cb5-076de9b5752a
 
 # Toggle Button Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/togglebutton-3-diag.png>)

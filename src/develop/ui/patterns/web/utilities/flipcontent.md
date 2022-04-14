@@ -7,6 +7,12 @@ guid: 859c44ea-109c-48e5-bddd-579f1b21e789
 
 # Flip Content
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
  You can use the Flip Content UI Pattern to display information that when, for example, is clicked, flips and displays different information.
 
 ![](<images/flipcontent-1.gif?width=500>)

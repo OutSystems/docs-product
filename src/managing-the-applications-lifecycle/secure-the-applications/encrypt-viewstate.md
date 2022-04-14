@@ -5,8 +5,13 @@ locale: en-us
 guid: a07b13f4-d8a9-4d32-8c52-57544422ce46
 ---
 
-
 # Encrypt web apps view state
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 The view state is used by the OutSystems underlying technology for traditional web applications (ASP.NET). This mechanism is used to preserve the client-side state of a web page when a postback occurs. The view state stores the values and controls of the page between requests.
  

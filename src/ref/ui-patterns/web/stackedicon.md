@@ -7,6 +7,12 @@ guid: fb849376-d199-4131-af7d-fb890d688676
 
 # Stacked Icon UI Pattern Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/stackedicon-3-diag.png>)

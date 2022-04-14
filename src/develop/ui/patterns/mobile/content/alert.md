@@ -7,6 +7,12 @@ guid: 19bf61bf-cf92-4e5f-b0d1-44f667b32bc7
 
 # Alert
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Alert UI Pattern to highlight and display important information, errors, or warnings.
 
 ![](<images/alert-1.png>)

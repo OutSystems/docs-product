@@ -9,6 +9,12 @@ guid: 63d6ab36-1403-4f8f-9ba8-ee4450833e39
 
 <div class="info" markdown="1">
 
+Applies only to Traditional Web Apps.
+
+</div>
+
+<div class="info" markdown="1">
+
 These instructions are for translating Traditional Web Apps only. For Reactive Web and Mobile Apps see [Multilingual apps](../multilingual-tp/intro.md).  
 
 </div>

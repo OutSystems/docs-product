@@ -7,6 +7,12 @@ guid: fd1fc012-8659-4cd2-861e-220cfa3090ec
 
 # Section Index Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/sectionindex-4-diag.png>)

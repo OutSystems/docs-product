@@ -9,6 +9,11 @@ guid: 7378bd28-e563-4ca9-bede-731dca5fa49f
 
 # List Item
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 Displays a list item with full swipe behavior capability, containing a [List Action widget](<ServiceStudio.Plugin.NRWidgets.ListItemAction.final.md>) to define the swiping behavior.
 

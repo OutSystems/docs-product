@@ -7,6 +7,12 @@ guid: 388d64de-604e-47a8-b533-8f2900ed21d9
 
 # Swipe Events
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Swipe Events UI Pattern to enable swiping on a specific widget.
 
 ## How to use the Swipe Events UI Pattern

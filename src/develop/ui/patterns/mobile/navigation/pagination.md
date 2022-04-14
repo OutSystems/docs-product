@@ -7,6 +7,12 @@ guid: 20819218-aa75-441f-b2e6-6796dc14f1d8
 
 # Pagination
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Pagination UI pattern to help users find a specific item on long listings. This pattern is typically used on listings, such as e-commerce category pages, search engines, and article archives.
 
 ![](<images/pagination-5-ss.png>)

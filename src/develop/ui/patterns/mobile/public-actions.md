@@ -7,6 +7,12 @@ guid: e4899a53-ca9e-4c13-b021-06518a34fba2
 
 # Public Actions
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Carousel
 
 You can use the [Carousel](<interaction/carousel.md>) actions described below anywhere in OutSystems.

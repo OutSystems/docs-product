@@ -7,6 +7,12 @@ guid: 085bea26-5d10-41b4-a31b-9e840315b759
 
 # Icon Badge
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Icon Badge UI Pattern to display numerical information as a notification. For example, the Icon Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
 ![](<images/iconbadge-1-ss.png>)

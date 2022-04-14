@@ -7,6 +7,12 @@ guid: 68ecb55f-4372-4f1f-910e-46129f456bf8
 
 # Bottom Bar Item
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Bottom Bar Item UI Pattern to provide access to a bottom navigation drawer and up to four actions, including the floating action button. Main pieces of core functionality are made available with one tap while allowing rapid switching between features.
 
 ![](<images/bottombaritem-1-ss.png>)

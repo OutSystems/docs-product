@@ -7,6 +7,12 @@ guid: 421bf73a-44ad-44ee-ba61-b2d234472c54
 
 # Tooltip Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/tooltip-3-diag.png>)

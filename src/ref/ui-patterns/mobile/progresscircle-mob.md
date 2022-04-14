@@ -7,6 +7,12 @@ guid: 7541fb66-768c-42c8-9d92-636b17d9f2f1
 
 # Progress Circle Reference
  
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Structure
 
 ![Structure diagram](images/progress-classes-diag.png)

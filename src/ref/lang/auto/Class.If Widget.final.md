@@ -9,6 +9,11 @@ guid: 0db36704-5f51-4287-8d29-771859e6e7f3
 
 # If Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Allows you to control the content that is displayed in the screen based on a condition.
 

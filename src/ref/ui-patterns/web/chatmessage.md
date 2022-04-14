@@ -7,6 +7,12 @@ guid: 6a62f636-ac37-4f02-8dde-b125bbb18919
 
 # Chat Message Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](images/chatmessage-2-diag.png?width=600)

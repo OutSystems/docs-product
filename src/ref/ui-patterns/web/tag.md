@@ -7,6 +7,12 @@ guid: 98676e02-fc12-46ea-a908-cf04568e7d09
 
 # Tag Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and Classes
 
 ![](<images/tag-3-diag.png>)

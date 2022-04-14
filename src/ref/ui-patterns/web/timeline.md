@@ -7,6 +7,12 @@ guid: c0cdbad2-39c2-434e-afc5-6f05acf4901d
 
 # Timeline Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](images/timeline-5-diag.png?width=750)

@@ -7,6 +7,12 @@ guid: 8b7fa781-fd52-47d6-a24a-1f0ffa05b99b
 
 # Alert
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Alert UI Pattern to highlight and display important information, errors, or warnings.
 
 ![](<images/alert-image-1.png>)

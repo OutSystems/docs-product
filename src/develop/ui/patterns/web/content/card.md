@@ -7,6 +7,12 @@ guid: a332f63f-d4ca-400d-ab27-d29455ba5b29
 
 # Card
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Cards UI Pattern to group small pieces of information and highlight them on the screen. The information is grouped into a small block that is easily noticeable on-screen.
 
 ![](<images/card-1.png>)

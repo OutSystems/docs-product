@@ -7,6 +7,12 @@ guid: 8cbeefba-ff0a-4f0f-a9ef-eccd63af568b
 
 # Panel
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Panel UI Pattern to group information in a small block, organized in different sections for title, actions, content, and a small footer that is easily noticeable.
 
 Use a panel to group short pieces of information and highlight them on the screen with a specific structure.

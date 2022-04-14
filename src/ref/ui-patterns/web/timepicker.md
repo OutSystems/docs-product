@@ -7,6 +7,12 @@ guid: 19d186e8-664b-4066-9e83-e866c45cbba7
 
 # Time Picker Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and Classes
 
 ![](<images/timepicker-image-2.png>)

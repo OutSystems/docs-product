@@ -7,6 +7,12 @@ guid: f2009318-b804-4f98-88b9-3a654a6835b7
 
 # Section Index
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Section Index UI Pattern to organize the content of a screen, enabling quick navigation within the page.
 
 ![](<images/sectionindex-7-ss.png>)

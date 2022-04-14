@@ -9,6 +9,12 @@ guid: cf447891-96c9-41a7-b624-455c180d4002
 
 <div class="info" markdown="1">
 
+Applies only to Traditional Web Apps.
+
+</div>
+
+<div class="info" markdown="1">
+
 Are you developing a Reactive Web App? Keep in mind that Ajax Refresh does not exist in Reactive App, because the interface updates automatically when the data bound to it updates. Check the topic [Implement asynchronous data fetching using Aggregates](../data/query/async-fetch-aggregates.md) to see how to update the interface with the Refresh Data node.
 
 </div>

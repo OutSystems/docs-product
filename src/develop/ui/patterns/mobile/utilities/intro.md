@@ -6,3 +6,9 @@ guid: 40cc0cb9-22c3-43eb-a930-106067fda21c
 ---
 
 # Utilities
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>

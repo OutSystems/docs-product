@@ -6,3 +6,9 @@ guid: 00aca302-9aa1-4fd7-a887-b99bb764dd82
 ---
 
 # Web Interfaces
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>

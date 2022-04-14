@@ -9,6 +9,11 @@ guid: 7f80f931-e1ac-4e99-a40e-70b31e30a6ce
 
 # Editable Table Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 The Editable Table widget displays the records of an Entity or a Structure in a tabular layout and allows the user to create new records, update, or delete existing records.
 

@@ -8,6 +8,11 @@ guid: 6b2deaab-c532-4326-9934-c042c42271de
 
 # On Session Start
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 The OnSessionStart action is triggered by the On Session Start system event when the Session is created or cleared. This occurs in the following situations:
 

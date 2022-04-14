@@ -7,6 +7,12 @@ guid: 32bd92fb-5665-45a8-ac9c-69d26270cb75
 
 # Layout Top Menu Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/layout-tm-1-diag.png>)

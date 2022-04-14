@@ -6,6 +6,12 @@ guid: 191c6d17-5089-4d2e-9848-19e81f69476a
 
 # Extend Your Mobile and Reactive Apps Using JavaScript
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 JavaScript code can be used in client actions of Reactive and Mobile apps through the **JavaScript element**, which you can drag from the Toolbox to the action flow.
 
 ![javascript element](images/js-element-ss.png)

@@ -7,6 +7,12 @@ guid: 053acd13-6c13-4849-b496-35631a4ad7f3
 
 # Read/Write Data Last Write Wins
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 This data synchronization pattern is recommended for mobile apps where it is not likely for multiple end users to change the same data while the apps are offline, as follows:
 
 * The server database holds the master data that can change over time.

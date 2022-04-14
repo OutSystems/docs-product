@@ -9,7 +9,7 @@ guid: a8810d33-7e06-48db-a6a9-f44b601d5e0a
 
 <div class="info" markdown="1">
 
-We’ve been working on this article. Please let us know how useful this new version is by voting.
+Applies only to Traditional Web Apps.
 
 </div>
 

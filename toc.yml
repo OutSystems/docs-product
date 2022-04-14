@@ -953,48 +953,56 @@
     - href: managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
     - href: managing-the-applications-lifecycle/data-protection.md
 
-                        
-# Setting Up OutSystems
-- href: setup/intro.md
+# Setup and mantain your OutSystems infraestructure
+- href: setup-maintain/intro.md
 - topics:
-    - href: setup/possible-setups/intro.md
+    # Setting Up OutSystems
+    - href: setup-maintain/setup/intro.md
     - topics:
-        - href: setup/possible-setups/ha-scalability/intro.md
-        - href: setup/possible-setups/cloud-architecture.md
-    - href: setup/system-requirements.md
-    - href: setup/network-requirements.md
-    - topics:
-        - href: setup/mobile-builder-connectivity-requirements.md
-    - href: setup/default-configurations.md
-    - href: setup/environment-config.md
-    - href: setup/lifetime-configure.md
-    # Cache Invalidation Service
-    - href: setup/cache-invalidation/intro.md
-    - topics:
-        - href: setup/cache-invalidation/enable-tls.md        
-        - href: setup/cache-invalidation/installation.md     
-        - href: setup/cache-invalidation/high-availability.md                   
-        - href: setup/cache-invalidation/manage-troubleshoot.md
-    # Log Database Split
-    - href: setup/logging-db/intro.md
-    - topics:
-        - href: setup/logging-db/configure-separate-db.md
-        - href: setup/logging-db/update-applications.md
+        - href: setup-maintain/setup/possible-setups/intro.md
+        - topics:
+            - href: setup-maintain/setup/possible-setups/ha-scalability/intro.md
+            - href: setup-maintain/setup/possible-setups/cloud-architecture.md
+        - href: setup-maintain/setup/system-requirements.md
+        - href: setup-maintain/setup/network-requirements.md
+        - topics:
+            - href: setup-maintain/setup/mobile-builder-connectivity-requirements.md
+        - href: setup-maintain/setup/default-configurations.md
+        - href: setup-maintain/setup/environment-config.md
+        - href: setup-maintain/setup/lifetime-configure.md
+        # Cache Invalidation Service
+        - href: setup-maintain/setup/cache-invalidation/intro.md
+        - topics:
+            - href: setup-maintain/setup/cache-invalidation/enable-tls.md        
+            - href: setup-maintain/setup/cache-invalidation/installation.md     
+            - href: setup-maintain/setup/cache-invalidation/high-availability.md                   
+            - href: setup-maintain/setup/cache-invalidation/manage-troubleshoot.md
+        # Log Database Split
+        - href: setup-maintain/setup/logging-db/intro.md
+        - topics:
+            - href: setup-maintain/setup/logging-db/configure-separate-db.md
+            - href: setup-maintain/setup/logging-db/update-applications.md
+            
+        - href: setup-maintain/setup/unattended-install/intro.md
+        - topics:
+            - href: setup-maintain/setup/unattended-install/config-tool-ref.md
+            - href: setup-maintain/setup/unattended-install/server-hsconf-ref.md
+            - href: setup-maintain/setup/unattended-install/osp-tool-ref.md
         
-    - href: setup/unattended-install/intro.md
-    - topics:
-        - href: setup/unattended-install/config-tool-ref.md
-        - href: setup/unattended-install/server-hsconf-ref.md
-        - href: setup/unattended-install/osp-tool-ref.md
-    
-    # OutSystems on Microsoft Azure
-    - href: setup/azure/intro.md
-    - topics:
-        - href: setup/azure/set-up-platform.md
-        - href: setup/azure/additional-configurations.md
-        - href: setup/azure/quick-reference.md
-        - href: setup/azure/getting-setup-logs.md
-        - href: setup/azure/plan-associate.md
+        # OutSystems on Microsoft Azure
+        - href: setup-maintain/setup/azure/intro.md
+        - topics:
+            - href: setup-maintain/setup/azure/set-up-platform.md
+            - href: setup-maintain/setup/azure/additional-configurations.md
+            - href: setup-maintain/setup/azure/quick-reference.md
+            - href: setup-maintain/setup/azure/getting-setup-logs.md
+            - href: setup-maintain/setup/azure/plan-associate.md
+
+    # Upgrading OutSystems
+
+    # Mantain your OutSystems infraestructure
+
+
 # Reference
 - href: ref/intro.md
 - topics:

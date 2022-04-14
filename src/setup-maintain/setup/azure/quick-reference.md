@@ -7,7 +7,7 @@ guid: 88d66b58-baee-4c61-9d03-b21e5b4aeac9
 
 # Quick Reference for OutSystems on Microsoft Azure
 
-This article describes the Azure resources deployed by [OutSystems on Microsoft Azure](intro.md "OutSystems on Microsoft Azure Overview") solution template, which contains the OutSystems Development, Test, Production, and [LifeTime deployment management console](../../managing-the-applications-lifecycle/intro.md) environments.
+This article describes the Azure resources deployed by [OutSystems on Microsoft Azure](intro.md "OutSystems on Microsoft Azure Overview") solution template, which contains the OutSystems Development, Test, Production, and [LifeTime deployment management console](../../../managing-the-applications-lifecycle/intro.md) environments.
 
 ## Azure Resources
 

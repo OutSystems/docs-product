@@ -152,7 +152,7 @@ Your queries run in the database using the runtime user specified in the [Config
 ### Check for data support
 
 Service Studio checks if the SQL statement can run in the databases set in the **Database** property of the module. If the query can't run in the databases, Service Studio shows a warning.
-If the **Database** property is set as **All**, Service Studio checks the queries to ensure [all supported databases](../../../setup/system-requirements.md#database-management-system) can run the query.
+If the **Database** property is set as **All**, Service Studio checks the queries to ensure [all supported databases](../../../setup-maintain/setup/system-requirements.md#database-management-system) can run the query.
 
 ### Avoid Expand Inline property of query parameters
 

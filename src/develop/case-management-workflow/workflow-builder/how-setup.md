@@ -19,7 +19,7 @@ To use Workflow Builder, make sure you meet the following prerequisites:
 
 * Your development environment must use Platform Server 11.7.2 (January 2020) or later to run Workflow Builder. To allow your users to reuse OutSystems Entities from your environment, the minimum version of Platform Server is 11.9 (July 2020). Refer to the [release notes](https://success.outsystems.com/Support/Release_Notes/Workflow_Builder) for more information.
 
-* Ensure your development environment allows inbound traffic from `https://workflowbuilder.outsystems.com` in port **443** to communicate with Workflow Builder. The Workflow Builder will use the environment's public DNS hostname to communicate. Refer to the [Workflow Builder network requirements](../../../setup/network-requirements.md#workflow-builder) for detailed information.
+* Ensure your development environment allows inbound traffic from `https://workflowbuilder.outsystems.com` in port **443** to communicate with Workflow Builder. The Workflow Builder will use the environment's public DNS hostname to communicate. Refer to the [Workflow Builder network requirements](../../../setup-maintain/setup/network-requirements.md#workflow-builder) for detailed information.
 
 <div class="info" markdown="1">
 

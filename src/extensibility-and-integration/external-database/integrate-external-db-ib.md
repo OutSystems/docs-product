@@ -23,7 +23,7 @@ You can use Integration Builder to integrate your apps with the following extern
 
 Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
 
-For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup/system-requirements.md).
+For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup-maintain/setup/system-requirements.md).
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ For more information about the supported databases and the systems that are cert
 
 * All infrastructure servers must be able to connect to the external database.
 
-* If you use the [Internal Network configuration](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup/network-requirements.md#integration-builder).
+* If you use the [Internal Network configuration](../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md), you must add the [Integration Builder IPs](../../setup-maintain/setup/network-requirements.md#integration-builder).
 
 ## Known limitations
 

@@ -30,7 +30,7 @@ Depending on the [OutSystems Cloud edition](https://success.outsystems.com/Suppo
 
 ### Communications with OutSystems tools
 
-Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../deliver-mobile/mobile-apps-build-service/intro.md), [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard), [Workflow Builder](https://success.outsystems.com/Documentation/Workflow_Builder), and [Experience Builder](https://success.outsystems.com/Documentation/Experience_Builder):
+Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deliver-mobile/mobile-apps-build-service/intro.md), [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard), [Workflow Builder](https://success.outsystems.com/Documentation/Workflow_Builder), and [Experience Builder](https://success.outsystems.com/Documentation/Experience_Builder):
 
 ![OutSystems cloud diagram tools](images/cloud-architecture-tools-diag.png)
 

@@ -7,6 +7,12 @@ guid: f30b6d10-f57f-48ac-98e4-1425ae8c72d5
 
 # Understanding how to create an app
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 ## Overview
 
 No prior OutSystems knowledge is needed to get started. But, you must have:

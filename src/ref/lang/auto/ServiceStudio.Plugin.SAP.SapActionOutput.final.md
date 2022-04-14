@@ -7,6 +7,12 @@ guid: 4ce0e5f5-6bad-48f9-9685-88693679ab22
 
 # Output Parameter (SAP Remote Function)
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Output parameter of an imported SAP remote function.  
 
 ## Properties

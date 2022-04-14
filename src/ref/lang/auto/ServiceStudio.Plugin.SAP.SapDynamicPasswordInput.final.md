@@ -7,6 +7,12 @@ guid: 05055421-befe-428c-8f14-17ef09fe3126
 
 # Input Parameter (SAP Password)
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Input parameter for the SAP password. This parameter is added automatically by Service Studio to every SAP remote function when Dynamic Login is added to the SAP Connection.  
 
 ## Properties

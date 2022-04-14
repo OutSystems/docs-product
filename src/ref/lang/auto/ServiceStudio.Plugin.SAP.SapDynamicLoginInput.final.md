@@ -7,6 +7,12 @@ guid: 831bea2d-593d-47b1-a5f0-00862c4232ea
 
 # Input Parameter (SAP Username)
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Input parameter for the SAP username. This parameter is added automatically by Service Studio to every SAP remote function when Dynamic Login is added to the SAP Connection.  
 
 ## Properties

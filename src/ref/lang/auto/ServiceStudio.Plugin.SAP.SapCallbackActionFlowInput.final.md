@@ -7,6 +7,12 @@ guid: 03cdc256-d569-4d64-b280-eea6b54e24bb
 
 # Input Parameter (SAP Callback)
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Input parameter of a SAP Callback action (named FunctionName). Added automatically by Service Studio to the OnAfterCall and OnBeforeCall SAP Callback actions.  
 
 ## Properties

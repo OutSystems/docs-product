@@ -152,7 +152,7 @@ $(function() {
 
 <div class="info" markdown="1">
 
-Applies only to cross-platform Service Studio.
+Only applies to cross-platform Service Studio.
 
 </div>
 

@@ -1657,7 +1657,8 @@
             - href: ref/errors-and-warnings/warnings/unused-element-warning.md
             - href: ref/errors-and-warnings/warnings/unused-user-action-warning.md
             - href: ref/errors-and-warnings/warnings/upgrade-information-warning.md
-            - href: ref/errors-and-warnings/warnings/usability-suggestion-warning.md                
+            - href: ref/errors-and-warnings/warnings/usability-suggestion-warning.md
+            - href: ref/errors-and-warnings/warnings/incomplete-upgrade-warning.md           
         # Integration Studio Errors
         - href: ref/errors-and-warnings/errors-is/intro.md
         - topics:

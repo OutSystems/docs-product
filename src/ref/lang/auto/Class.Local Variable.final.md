@@ -94,10 +94,3 @@ To practice, check these exercises where you can see examples of Local Variables
 </tr>
 </tbody>
 </table>
-
-<script>
-var meta = document.createElement('meta');
-meta.name = "application_types";
-meta.content = "traditional web apps, mobile apps, reactive web apps";
-document.getElementsByTagName('head')[0].appendChild(meta);
-</script>

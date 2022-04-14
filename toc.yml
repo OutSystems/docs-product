@@ -962,6 +962,8 @@
             - href: setup-maintain/setup/possible-setups/ha-scalability/intro.md
             - href: setup-maintain/setup/possible-setups/cloud-architecture.md
         - href: setup-maintain/setup/system-requirements.md
+        - topics:
+            - href: setup-maintain/setup/limitations.md
         - href: setup-maintain/setup/network-requirements.md
         - topics:
             - href: setup-maintain/setup/mobile-builder-connectivity-requirements.md

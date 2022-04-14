@@ -1,5 +1,3 @@
-- placeholder: New in OutSystems 11
-
 # Getting Started
 - href: getting-started/intro.md
 - topics:
@@ -342,7 +340,7 @@
             - href: develop/ui/navigation/navigate-to-detail-screen.md
             - href: develop/ui/navigation/pass-information-between-screens.md
             - href: develop/ui/navigation/ui-flow.md
-
+            
         # Multilingual UI
         - href: develop/ui/multilingual/intro.md
         - topics:
@@ -511,6 +509,7 @@
     - topics:
         - href: develop/testing/develop-test.md
         - href: develop/testing/testing-bdd-framework.md
+
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
     # Experience Builder
@@ -624,7 +623,6 @@
         - href: deliver-mobile/generate-distribute-mobile-app/limited-group-end-users.md
 
         # Generate and Publish Your Mobile App to the Mobile App Stores
-       
         - href: deliver-mobile/generate-distribute-mobile-app/publish-app-stores.md
         - topics:
             - href: deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
@@ -962,6 +960,8 @@
         - href: setup/possible-setups/ha-scalability/intro.md
         - href: setup/possible-setups/cloud-architecture.md
     - href: setup/system-requirements.md
+    - topics:
+        - href: setup/limitations.md
     - href: setup/network-requirements.md
     - topics:
         - href: setup/mobile-builder-connectivity-requirements.md

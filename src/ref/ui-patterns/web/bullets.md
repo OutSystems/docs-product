@@ -7,6 +7,12 @@ guid: 9fe6a555-54b5-4521-a880-36846463903d
 
 # Bullets Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/bullets-2-diag.png>)

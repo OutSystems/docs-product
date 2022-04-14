@@ -7,6 +7,12 @@ guid: 8b2184cf-f3d0-4bbc-a6f8-b78509902cf0
 
 # Tabs Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Events
 
 **Event Name** |  **Description** |  **Mandatory**  

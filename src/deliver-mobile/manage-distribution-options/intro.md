@@ -7,6 +7,12 @@ guid: c9f2e601-8b4c-4dc7-93d4-e456c058b6f4
 
 # Technical Preview - Configure mobile apps updates distribution
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 With **mobile apps updates distribution settings**, you can choose how apps update on user devices. This technical preview introduces store-only updates, as an addition to the existing hybrid updates. Here is an overview of the two models for updating mobile apps:
 
 **Store-only updates** require the download of the entire native build to the user devices. These are updates through Google Play or the Apple App Store, or a private store. The store updates always bring both the native shell of the app to user devices and the app logic. This a traditional store distribution model.

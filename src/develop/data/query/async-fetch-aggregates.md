@@ -7,6 +7,12 @@ guid: dddc4580-fe09-42b7-8795-9fc35f3fd803
 
 # Implement asynchronous data fetching using Aggregates
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 Sometimes you want to update only a part of the Screen, and you can do it by loading data in chunks. For example, you may have a list with employees where clicking an employee name loads the details.
 
 This is often called a master-detail pattern, and you can implement it by using two Aggregates with different **Fetch** properties, where the first "master" Aggregate fetches data immediately, and the second "detail" Aggregate only when needed. The "details" are loaded asynchronously, as the request takes place in the background and updates the UI when the data is received.

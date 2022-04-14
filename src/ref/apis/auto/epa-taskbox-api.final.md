@@ -7,6 +7,11 @@ guid: 24b83310-17ec-4eea-a688-89da29816145
 
 # EPA Taskbox API
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 The Embedded Process Automation (EPA) shows automatically a floating taskbox in the browser, with all pending activities. Each item includes instructions and a link that opens the activity page, so the user can work on the activity. Mobile apps require a custom UI solution.
 

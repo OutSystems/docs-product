@@ -7,6 +7,12 @@ guid: 0a5c3fb1-4677-4fe5-bafd-a63eb787adb1
 
 # File Upload
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the File Upload UI Pattern to allow users upload files to the app.
 
 The File Upload pattern is commonly used in a form, but it can also be used as a stand-alone element.

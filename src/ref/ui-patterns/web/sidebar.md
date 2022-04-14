@@ -7,6 +7,12 @@ guid: 084bb303-c011-405d-adec-710e9227c8ae
 
 # Sidebar Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/sidebar-3-diag.png>)

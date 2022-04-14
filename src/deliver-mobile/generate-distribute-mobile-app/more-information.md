@@ -7,6 +7,12 @@ guid: 952b6539-a884-4fed-bcdd-90d4145d41b7
 
 # More Information on Generating and Distributing Mobile Apps
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 In this article you can find more information about tasks associated with generating and publishing iOS and Android mobile apps:
 
 * For iOS, check how you can enroll as an Apple Developer, and learn more about creating certificates and provisioning profiles. 

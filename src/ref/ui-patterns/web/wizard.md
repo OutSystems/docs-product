@@ -7,6 +7,12 @@ guid: 40d6949b-644d-4bc3-8ed9-83bdbe79fba2
 
 # Wizard Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](images/wizard-3-diag.png?width=750)

@@ -9,6 +9,11 @@ guid: 0cfabe1b-7274-404a-901d-e334b007fb26
 
 # List Action
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 Defines the behavior when swiping the correspondent [List Item](ServiceStudio.Plugin.NRWidgets.ListItem.final.md), which can be executing a screen action or navigating to another screen.
 

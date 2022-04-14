@@ -7,6 +7,12 @@ guid: a9618344-1b9f-4aa8-892b-456d7d7a75eb
 
 # Modal Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/modal-5-diag.png>)

@@ -7,6 +7,12 @@ guid: 77270b71-d3f8-4ae7-93a2-92dd501e7d21
 
 # Toggle Button
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Toggle Button UI Pattern to provide users with a stand-alone control that allows them to choose between two states, for example, a Yes/No value.
 
 ![](<images/togglebutton-2-ss.png>)

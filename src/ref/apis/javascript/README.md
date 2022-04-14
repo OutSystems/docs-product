@@ -4,6 +4,12 @@ tags: article-page; runtime-mobileandreactiveweb
 
 # JavaScript API
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 The OutSystems JavaScript API allows you to call OutSystems specific actions and act upon mobile app events in your JavaScript code, to tweak and customize the mobile app experience of the final user using the [JavaScript flow element](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/JavaScript). For example, to show and hide feedback messages in JavaScript, or handle application upgrade/load events in a specific way.
 
 The available API modules can be accessed through the predefined object “$public”. This object contains references to each supported JavaScript API.

@@ -7,6 +7,12 @@ guid: 535efa42-703f-4913-a0e6-d452ac259513
 
 # Accordion Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and Classes
 
 ![](<images/accordion-image-3.png>)

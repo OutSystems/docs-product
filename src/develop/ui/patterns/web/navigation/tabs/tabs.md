@@ -7,6 +7,12 @@ guid: 61ddaa14-5f08-44b8-95a5-9527a7649449
 
 # Tabs
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Tabs UI Pattern to display large sets of information, which can be split into different areas, while always remaining a click away.
 
 ![](images/tabs-1.gif?width=650)

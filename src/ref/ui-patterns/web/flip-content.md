@@ -7,6 +7,12 @@ guid: 478229ef-fead-4fea-be67-f0fdd66c7209
 
 # Flip Content Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/flipcontent-6-diag.png?width=600>)

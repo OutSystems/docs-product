@@ -7,6 +7,12 @@ guid: 232410a7-d16f-4258-9742-d9b6f294c600
 
 # Extensibility Configurations JSON Schema
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 The **Extensibility Configurations** field provides additional settings as a JSON string. A number of settings you can change in the user interface of the IDE (for example, the name of the app). Some advanced settings are available in the **Extensibility Configurations** only (for example, adding custom mobile plugins). You can edit **Extensibility Configurations** in the properties of your home module.
 
 ## Property schema

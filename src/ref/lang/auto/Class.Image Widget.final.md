@@ -8,6 +8,11 @@ guid: 4246f32d-ed38-4f0f-9585-653d7247cf8c
 
 # Image Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Displays an image in the screen or block. The image source can be one of the following:
 

@@ -9,6 +9,11 @@ guid: 7a819ca9-6e8b-418a-9270-ad6a8546ea1a
 
 # List Box Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 <div class="info" markdown="1">
 

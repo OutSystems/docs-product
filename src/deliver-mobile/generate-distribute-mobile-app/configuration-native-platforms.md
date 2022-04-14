@@ -7,6 +7,12 @@ guid: 1ad36b43-1e0e-4efb-a701-651bf0b97e06
 
 # Native Platforms Configuration
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 The **Distribute** tab in Service Center, section **Native Platforms**, presents the following information:
 
 ![](<images/sc-native-platforms-table.png>)

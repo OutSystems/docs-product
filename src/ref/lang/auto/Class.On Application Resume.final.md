@@ -8,6 +8,11 @@ guid: bec0793d-a9f6-429b-b6dc-a86e4fdb60d3
 
 # On Application Resume
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Action to be executed when the application is returning from background to foreground (in the home module only). Can be used for validating application state when resuming (e.g. checking for network availability).  
 

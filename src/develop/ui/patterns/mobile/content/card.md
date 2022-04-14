@@ -7,6 +7,12 @@ guid: a44ab647-aef4-44ba-b68b-d7a0d421a92c
 
 # Card
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Cards UI Pattern to group small pieces of information and highlight them on the screen. The information is grouped into a small block that is easily noticeable on-screen.
 
 ![](<images/card-1.png>)

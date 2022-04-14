@@ -7,6 +7,12 @@ guid: 36e4b86b-db80-4a29-9c79-86cc1c4f7f66
 
 # Set the Preferences for Your Mobile App
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 You may want your mobile application to have some configurations and preferences that allow you to better guarantee behavior requirements and improve the user experience. For example, define mobile app preferences when the app should only work in a specific orientation (portrait or landscape), or when it should only be available on devices holding, at least, a specific minimum mobile platform version to ensure a great experience to your users.
 
 To specify the preferences for your mobile app:

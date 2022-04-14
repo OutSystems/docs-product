@@ -7,6 +7,12 @@ guid: fb3e8080-28b4-44a2-89dd-0c5c940c7e5a
 
 # Separator Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/separator-2-diag.png>)

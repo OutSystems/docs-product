@@ -7,6 +7,12 @@ guid: 7eec386c-a22e-4f3a-a6cd-2509360fadfc
 
 # Navigation Bar Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 

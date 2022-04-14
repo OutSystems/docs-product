@@ -951,50 +951,56 @@
     - href: managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
     - href: managing-the-applications-lifecycle/data-protection.md
 
-                        
-# Setting Up OutSystems
-- href: setup/intro.md
+# Setup and mantain your OutSystems infraestructure
+- href: setup-maintain/intro.md
 - topics:
-    - href: setup/possible-setups/intro.md
+    # Setting Up OutSystems
+    - href: setup-maintain/setup/intro.md
     - topics:
-        - href: setup/possible-setups/ha-scalability/intro.md
-        - href: setup/possible-setups/cloud-architecture.md
-    - href: setup/system-requirements.md
-    - topics:
-        - href: setup/limitations.md
-    - href: setup/network-requirements.md
-    - topics:
-        - href: setup/mobile-builder-connectivity-requirements.md
-    - href: setup/default-configurations.md
-    - href: setup/environment-config.md
-    - href: setup/lifetime-configure.md
-    # Cache Invalidation Service
-    - href: setup/cache-invalidation/intro.md
-    - topics:
-        - href: setup/cache-invalidation/enable-tls.md        
-        - href: setup/cache-invalidation/installation.md     
-        - href: setup/cache-invalidation/high-availability.md                   
-        - href: setup/cache-invalidation/manage-troubleshoot.md
-    # Log Database Split
-    - href: setup/logging-db/intro.md
-    - topics:
-        - href: setup/logging-db/configure-separate-db.md
-        - href: setup/logging-db/update-applications.md
+        - href: setup-maintain/setup/possible-setups/intro.md
+        - topics:
+            - href: setup-maintain/setup/possible-setups/ha-scalability/intro.md
+            - href: setup-maintain/setup/possible-setups/cloud-architecture.md
+        - href: setup-maintain/setup/system-requirements.md
+        - href: setup-maintain/setup/network-requirements.md
+        - topics:
+            - href: setup-maintain/setup/mobile-builder-connectivity-requirements.md
+        - href: setup-maintain/setup/default-configurations.md
+        - href: setup-maintain/setup/environment-config.md
+        - href: setup-maintain/setup/lifetime-configure.md
+        # Cache Invalidation Service
+        - href: setup-maintain/setup/cache-invalidation/intro.md
+        - topics:
+            - href: setup-maintain/setup/cache-invalidation/enable-tls.md        
+            - href: setup-maintain/setup/cache-invalidation/installation.md     
+            - href: setup-maintain/setup/cache-invalidation/high-availability.md                   
+            - href: setup-maintain/setup/cache-invalidation/manage-troubleshoot.md
+        # Log Database Split
+        - href: setup-maintain/setup/logging-db/intro.md
+        - topics:
+            - href: setup-maintain/setup/logging-db/configure-separate-db.md
+            - href: setup-maintain/setup/logging-db/update-applications.md
+            
+        - href: setup-maintain/setup/unattended-install/intro.md
+        - topics:
+            - href: setup-maintain/setup/unattended-install/config-tool-ref.md
+            - href: setup-maintain/setup/unattended-install/server-hsconf-ref.md
+            - href: setup-maintain/setup/unattended-install/osp-tool-ref.md
         
-    - href: setup/unattended-install/intro.md
-    - topics:
-        - href: setup/unattended-install/config-tool-ref.md
-        - href: setup/unattended-install/server-hsconf-ref.md
-        - href: setup/unattended-install/osp-tool-ref.md
-    
-    # OutSystems on Microsoft Azure
-    - href: setup/azure/intro.md
-    - topics:
-        - href: setup/azure/set-up-platform.md
-        - href: setup/azure/additional-configurations.md
-        - href: setup/azure/quick-reference.md
-        - href: setup/azure/getting-setup-logs.md
-        - href: setup/azure/plan-associate.md
+        # OutSystems on Microsoft Azure
+        - href: setup-maintain/setup/azure/intro.md
+        - topics:
+            - href: setup-maintain/setup/azure/set-up-platform.md
+            - href: setup-maintain/setup/azure/additional-configurations.md
+            - href: setup-maintain/setup/azure/quick-reference.md
+            - href: setup-maintain/setup/azure/getting-setup-logs.md
+            - href: setup-maintain/setup/azure/plan-associate.md
+
+    # Upgrading OutSystems
+
+    # Mantain your OutSystems infraestructure
+
+
 # Reference
 - href: ref/intro.md
 - topics:
@@ -1179,8 +1185,8 @@
                     - href: ref/lang/auto/Class.Run Client Action.final.md
                     - href: ref/lang/auto/Class.Run Server Action.final.md
                     - href: ref/lang/auto/Class.Refresh Data.final.md
-                    - href: ref/lang/auto/Class.Aggregate.final.md
-                    - href: ref/lang/auto/Class.SQL.final.md
+                    #- href: ref/lang/auto/Class.Aggregate.final.md
+                    #- href: ref/lang/auto/Class.SQL.final.md
                     - href: ref/lang/auto/Class.If.final.md
                     - href: ref/lang/auto/Class.Switch.final.md
                     - href: ref/lang/auto/Class.For Each.final.md
@@ -1205,8 +1211,8 @@
             # Adding Data and Logic
             - href: ref/interfaces/adding-data-and-logic.md
             - topics:
-                - href: ref/lang/auto/Class.Aggregate.final.md
-                - href: ref/lang/auto/Class.Client Action.final.md
+                #- href: ref/lang/auto/Class.Aggregate.final.md
+                #- href: ref/lang/auto/Class.Client Action.final.md
                 - href: ref/lang/auto/Class.Data Action.final.md
                 - href: ref/lang/auto/Class.Script.final.md
             # Designing Screens
@@ -1273,7 +1279,7 @@
             - href: ref/interfaces/navigating-in-the-application.md
             - topics:
                 - href: ref/lang/auto/Class.Block.final.md
-                - href: ref/lang/auto/Class.Comment.final.md
+                #- href: ref/lang/auto/Class.Comment.final.md
                 - href: ref/lang/auto/Class.Event.final.md
                 - href: ref/lang/auto/Class.External Site.final.md
                 - href: ref/lang/auto/Class.Screen.final.md
@@ -1325,8 +1331,8 @@
             - topics:
                 # Adding Data and Logic
                 - href: ref/traditional-web/web-interfaces/adding-data-and-logic.md
-                - topics:
-                    - href: ref/lang/auto/Class.Screen Action.final.md
+                #- topics: 
+                    #- href: ref/lang/auto/Class.Screen Action.final.md
                 # Designing Screens
                 - href: ref/traditional-web/web-interfaces/designing-screens/intro.md
                 - topics:
@@ -1341,7 +1347,7 @@
                     - href: ref/lang/auto/Class.Expression Widget.final.md
                     - href: ref/lang/auto/ServiceStudio.Plugin.Widgets.Form.final.md
                     - href: ref/lang/auto/Class.Header Row Widget.final.md
-                    - href: ref/lang/auto/Class.If Widget.final.md
+                    #- href: ref/lang/auto/Class.If Widget.final.md
                     - href: ref/lang/auto/Class.Image Widget.final.md
                     - href: ref/lang/auto/Class.Input Password Widget.final.md
                     - href: ref/lang/auto/Class.Input Widget.final.md
@@ -1349,13 +1355,13 @@
                     - href: ref/lang/auto/Class.Link Widget.final.md
                     - href: ref/lang/auto/Class.List Box Widget.final.md
                     - href: ref/lang/auto/Class.List Records Widget.final.md
-                    - href: ref/lang/auto/Class.Placeholder Widget.final.md
+                    #- href: ref/lang/auto/Class.Placeholder Widget.final.md
                     - href: ref/lang/auto/Class.Radio Button Widget.final.md
                     - href: ref/lang/auto/Class.Row Widget.final.md
                     - href: ref/lang/auto/Class.Show Record Widget.final.md
                     - href: ref/lang/auto/Class.Table Records Widget.final.md
                     - href: ref/lang/auto/Class.Table Widget.final.md
-                    - href: ref/lang/auto/Class.Text Widget.final.md
+                    #- href: ref/lang/auto/Class.Text Widget.final.md
                     - href: ref/lang/auto/Class.Upload Widget.final.md
                     - href: ref/lang/auto/Class.Web Block Widget.final.md
                 # Patterns
@@ -1426,17 +1432,17 @@
                 # Designing the Layout
                 - href: ref/traditional-web/web-interfaces/designing-the-layout/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Image.final.md
-                    - href: ref/lang/auto/Class.Localized Image.final.md
+                    #- href: ref/lang/auto/Class.Image.final.md
+                    #- href: ref/lang/auto/Class.Localized Image.final.md
                     - href: ref/lang/auto/Class.Theme.final.md
-                    - href: ref/lang/auto/Class.UI Flow.final.md
+                    #- href: ref/lang/auto/Class.UI Flow.final.md
                 # Navigating in the Application
                 - href: ref/traditional-web/web-interfaces/navigating-in-the-application/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Comment.final.md
+                    #- href: ref/lang/auto/Class.Comment.final.md
                     - href: ref/lang/auto/Class.Email.final.md
                     - href: ref/lang/auto/Class.Entry.final.md
-                    - href: ref/lang/auto/Class.External Site.final.md
+                    #- href: ref/lang/auto/Class.External Site.final.md
                     - href: ref/lang/auto/Class.Go To Destination.final.md
                     - href: ref/lang/auto/Class.Web Block.final.md
                     - href: ref/lang/auto/Class.Web Screen.final.md
@@ -1444,28 +1450,28 @@
             # Web Logic Tools
             - href: ref/traditional-web/web-logic-tools/intro.md 
             - topics:
-                - href: ref/lang/auto/Class.Aggregate.final.md
-                - href: ref/lang/auto/Class.Assign.final.md
-                - href: ref/lang/auto/Class.Run Server Action.final.md
-                - href: ref/lang/auto/Class.SQL.final.md
-                - href: ref/lang/auto/Class.Excel To Record List.final.md
-                - href: ref/lang/auto/Class.JSON Deserialize.final.md
-                - href: ref/lang/auto/Class.JSON Serialize.final.md
+                #- href: ref/lang/auto/Class.Aggregate.final.md
+                #- href: ref/lang/auto/Class.Assign.final.md
+                #- href: ref/lang/auto/Class.Run Server Action.final.md
+                #- href: ref/lang/auto/Class.SQL.final.md
+                #- href: ref/lang/auto/Class.Excel To Record List.final.md
+                #- href: ref/lang/auto/Class.JSON Deserialize.final.md
+                #- href: ref/lang/auto/Class.JSON Serialize.final.md
                 - href: ref/lang/auto/Class.Ajax Refresh.final.md
-                - href: ref/lang/auto/Class.Record List To Excel.final.md
-                - href: ref/lang/auto/Class.Refresh Data.final.md
+                #- href: ref/lang/auto/Class.Record List To Excel.final.md
+                #- href: ref/lang/auto/Class.Refresh Data.final.md
                 - href: ref/lang/auto/Class.Attach File.final.md
-                - href: ref/lang/auto/Class.Download.final.md
-                - href: ref/lang/auto/Class.Send Email.final.md
-                - href: ref/lang/auto/Class.Destination.final.md
-                - href: ref/lang/auto/Class.If.final.md
-                - href: ref/lang/auto/Class.For Each.final.md
-                - href: ref/lang/auto/Class.Switch.final.md
-                - href: ref/lang/auto/Class.Comment.final.md
-                - href: ref/lang/auto/Class.Exception Handler.final.md
-                - href: ref/lang/auto/Class.Raise Exception.final.md
-                - href: ref/lang/auto/Class.End.final.md
-                - href: ref/lang/auto/Class.Start.final.md
+                #- href: ref/lang/auto/Class.Download.final.md
+                #- href: ref/lang/auto/Class.Send Email.final.md
+                #- href: ref/lang/auto/Class.Destination.final.md
+                #- href: ref/lang/auto/Class.If.final.md
+                #- href: ref/lang/auto/Class.For Each.final.md
+                #- href: ref/lang/auto/Class.Switch.final.md
+                #- href: ref/lang/auto/Class.Comment.final.md
+                #- href: ref/lang/auto/Class.Exception Handler.final.md
+                #- href: ref/lang/auto/Class.Raise Exception.final.md
+                #- href: ref/lang/auto/Class.End.final.md
+                #- href: ref/lang/auto/Class.Start.final.md
 
             # Web System Events
             - href: ref/traditional-web/web-system-events/intro.md
@@ -1657,7 +1663,8 @@
             - href: ref/errors-and-warnings/warnings/unused-element-warning.md
             - href: ref/errors-and-warnings/warnings/unused-user-action-warning.md
             - href: ref/errors-and-warnings/warnings/upgrade-information-warning.md
-            - href: ref/errors-and-warnings/warnings/usability-suggestion-warning.md                
+            - href: ref/errors-and-warnings/warnings/usability-suggestion-warning.md
+            - href: ref/errors-and-warnings/warnings/incomplete-upgrade-warning.md           
         # Integration Studio Errors
         - href: ref/errors-and-warnings/errors-is/intro.md
         - topics:

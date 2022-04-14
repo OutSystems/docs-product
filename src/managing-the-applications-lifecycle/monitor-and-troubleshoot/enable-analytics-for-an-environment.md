@@ -7,6 +7,12 @@ guid: 7257acb7-f5f1-46a9-a047-ff5a439ae49c
 
 # Enable Analytics for an Environment
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 OutSystems collects analytics about the end-user experience of all applications running in the Production environment. However, you can turn on monitoring in other environments too. This article describes how.
 
 <div class="info" markdown="1">

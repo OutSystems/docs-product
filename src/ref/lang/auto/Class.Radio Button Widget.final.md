@@ -8,6 +8,11 @@ guid: 5f9dcef2-c781-41b5-bc68-914d4cdaec29
 
 # Radio Button Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Allows the user to select an option from a group of possible options that are mutually exclusive.
 

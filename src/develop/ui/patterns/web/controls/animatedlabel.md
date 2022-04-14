@@ -7,6 +7,12 @@ guid: cada799f-c2fe-4d0a-98aa-309bf3a4fd16
 
 # Animated Label
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Animated Label UI Pattern to animate a label when there is a user input.
 
  ![](<images/animatedlabel-10-ss.png>)

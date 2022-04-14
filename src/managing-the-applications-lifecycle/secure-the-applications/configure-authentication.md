@@ -7,6 +7,12 @@ guid: 74fffe9e-d6fa-4ea9-a8ae-aa7a34a37511
 
 # Configure App Authentication
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 The document is about configuring app authentication in the environment. There's also information about the authentication mechanism, including the explanation about cookies.
 
 ## Configure App Authentication Settings

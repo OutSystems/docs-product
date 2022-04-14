@@ -8,6 +8,11 @@ guid: 0e4bedbe-6a83-44f4-8c55-969878cb2fc4
 
 # Form Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Groups a set of input widgets sharing the same validation context. A common usage for this widget is to group the several inputs of an Entity or Structure record in a screen to create or update that record.
 

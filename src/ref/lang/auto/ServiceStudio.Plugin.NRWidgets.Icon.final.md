@@ -8,6 +8,11 @@ guid: 46d19d6d-4088-4950-805d-c07e75825805
 
 # Icon
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 Shows an icon from a predefined set of icons for common use and content. It allows you to add a visual reference to an action, for example.
 

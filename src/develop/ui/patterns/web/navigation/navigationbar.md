@@ -7,6 +7,12 @@ guid: 107b5610-cfdd-4186-b3ae-f513af891651
 
 # Navigation Bar
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Navigation Bar UI Pattern to organize content and enable the user to navigate their way around your app using hyperlinks. You use this pattern when the user needs to navigate through an application's main sections while maintaining the ability to browse to another subsection.
 
 ![](images/navigationbar-7-ss.png)

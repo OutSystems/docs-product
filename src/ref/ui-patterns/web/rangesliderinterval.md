@@ -7,6 +7,12 @@ guid: 3c86ec87-d4c6-441b-adf1-bdb30f056a62
 
 # Range Slider Interval Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Events
 
 | **Event Name** |  **Description** |  **Mandatory**  |

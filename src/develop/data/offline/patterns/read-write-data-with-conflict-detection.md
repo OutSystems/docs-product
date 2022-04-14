@@ -7,6 +7,12 @@ guid: 9440e4f9-b77c-44ab-9b9a-f5cc985fbfbb
 
 # Read/Write Data with Conflict Detection
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 This data synchronization pattern is recommended for advanced scenarios where multiple end users will change the same data while the apps are offline, as follows:
 
 * The server database holds the master data that can change over time.

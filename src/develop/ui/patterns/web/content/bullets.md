@@ -7,6 +7,12 @@ guid: 0028c775-3531-4d78-b693-124fb9f1c70e
 
 # Bullets
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Bullets UI Pattern to organize topics into separate bullet points.
 
 **How to use the Bullets UI Pattern**

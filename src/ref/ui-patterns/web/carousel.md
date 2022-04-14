@@ -7,6 +7,12 @@ guid: d0b2bc8d-6a37-424d-8399-56e586304c93
 
 # Carousel Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/carousel-3-diag.png?width=600>)

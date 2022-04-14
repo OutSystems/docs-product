@@ -7,6 +7,12 @@ guid: a5e72a7a-870d-46e7-b2be-a15ac6948b97
 
 # Tabs
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Tabs UI Pattern to divide content into meaningful sections. Each section is viewable at one time. You use this pattern when you want the user to be able to between sections within the same context, not to navigate to different areas.
 
 ![](images/tabs-gif1.gif?width=600)

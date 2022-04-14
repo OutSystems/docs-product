@@ -7,6 +7,12 @@ guid: cc983a8d-46d2-4fad-b6f3-eaf1148dba44
 
 # Libraries
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 A Library is a module type that helps you lay the foundations of your application. Libraries have a direct fit in the **Foundation Layer** of the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) architecture tool and allow you to reduce the number of dependencies in a given environment.
 
 <div class="info" markdown="1">

@@ -7,6 +7,12 @@ guid: 971050ab-ea28-4490-8698-433ce02974de
 
 # Lightbox Image
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Lightbox Image UI Pattern to open smaller thumbnail images in full screen mode. This UI pattern is often used when creating an image gallery, allowing you to navigate through each of the images and view them in more detail.
 
 ## How to Use the Lightbox Image UI Pattern

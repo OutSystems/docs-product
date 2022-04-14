@@ -7,6 +7,12 @@ guid: 872dd221-b71e-4780-b7f0-141d2ab55db5
 
 # Balloon
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Balloon UI Pattern to display content in a pop-up on the UI. The Balloon UI Pattern is useful when you need to display additional information related to a small on-screen element.
 
 ![](<images/balloon-image-6.png>)

@@ -1,10 +1,17 @@
 ---
 summary: Enable a login experience that uses an external provider, namely Google, Apple, Facebook, or LinkedIn, in your mobile app.
+tags: runtime-mobile
 locale: en-us
 guid: 834dcc40-0b87-4161-bcd0-db32053044c7
 ---
 
 # Social login plugin
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 The Social Login plugin lets you set a login experience that uses an external provider, namely Google, Apple, Facebook, or LinkedIn. The plugin enables you to request access to a subset of your user's data stored by the provider, such as name, email, and profile picture. You can then use this information to create or start a user session on your app.
 

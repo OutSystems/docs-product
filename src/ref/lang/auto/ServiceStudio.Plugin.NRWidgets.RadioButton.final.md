@@ -9,6 +9,11 @@ guid: 9db2cbf8-bc7e-41b7-a94e-9be56ff81f3c
 
 # Radio Button
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 Radio Button is a widget that represents an option within a Radio Group. The value you set in the **Value** property of a Radio Button is assigned to the **Variable** of the Radio Group. For each Radio Button you can also set a label. 
 

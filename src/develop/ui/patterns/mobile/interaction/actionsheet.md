@@ -7,6 +7,12 @@ guid: 54f296bf-249a-425b-b54c-6d446248c228
 
 # Action Sheet
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Action Sheet UI Patterns to add a menu that slides from the bottom of the screen when triggered by a user action.
 
 ![](<images/actionsheet-1-ss.png>)

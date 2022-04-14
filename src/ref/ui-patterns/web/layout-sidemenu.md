@@ -7,6 +7,12 @@ guid: 4d5d4869-2345-4646-a8b0-5c24c0f6a8cd
 
 # Layout Side Menu Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/layout-sm-1-diag.png?width=600>)

@@ -7,6 +7,12 @@ guid: 02ba4227-0341-4645-8202-58dcb3119d8d
 
 # User Initials Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/userinitials-2-diag.png>)

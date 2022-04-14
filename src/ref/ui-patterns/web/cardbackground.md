@@ -7,6 +7,12 @@ guid: 1c3ead1f-e810-47d0-993a-743656d4d4f1
 
 # Card Background Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/cardbackground-6-diag.png>)

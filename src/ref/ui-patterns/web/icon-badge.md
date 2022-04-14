@@ -7,6 +7,12 @@ guid: 0cc65bfa-e4c1-4ac9-bc04-979b6506c7ed
 
 # Icon Badge Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/iconbadge-2-diag.png?width=650>)

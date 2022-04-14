@@ -7,6 +7,12 @@ guid: 77c53fcc-d787-4377-895f-90390ee33f3f
 
 # File Plugin
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 File Plugin lets you manage files and folders on a mobile device within the app sandbox.
 
 <div class="info" markdown="1">

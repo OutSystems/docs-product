@@ -9,6 +9,11 @@ guid: 8815652b-3b2f-47ee-81be-f58165e33a8c
 
 # Popup
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 A floating container/window above other screen content. Popup is a modal container, and therefore must be closed before the user can interact with the main screen again.
 

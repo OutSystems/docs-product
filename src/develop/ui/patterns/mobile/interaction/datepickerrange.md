@@ -7,6 +7,12 @@ guid: f130d36f-74c0-450f-99b8-6f5e986c555c
 
 # Date Picker Range
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Date Picker Range UI Pattern to allow users select a range date using a calendar. The Date Picker Range Pattern is based on the [flatpickr library](https://flatpickr.js.org/). For more advanced options, you can refer to this library.
 
 In this example, the user selects a range of dates from the calendar. The dates are saved in a variable and then displayed in an input widget.

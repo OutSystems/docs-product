@@ -7,6 +7,12 @@ guid: 42dbee79-dfe8-4f57-8fb7-d5a19e8bf87d
 
 # Button Group Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and Classes
 
 ![](<images/buttongroup-image-3.png>)

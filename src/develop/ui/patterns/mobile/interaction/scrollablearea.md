@@ -7,6 +7,12 @@ guid: 3ecfdec5-b135-4faa-8c1f-110595075a02
 
 # Scrollable Area
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 The Scrollable Area Pattern is a simple scrollable block with a placeholder for content. You can use this pattern to display multiple elements in a single, scrollable row or column.
 
 **How to use the Separator UI Pattern**

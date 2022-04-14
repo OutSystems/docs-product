@@ -9,6 +9,11 @@ guid: 4479919f-eabb-4cad-97d0-5e8e990d8524
 
 # Switch
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 Two-state toggle control which allows users to select between two options. You can assign only a boolean variable to Switch.
 

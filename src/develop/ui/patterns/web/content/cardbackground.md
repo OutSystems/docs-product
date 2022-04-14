@@ -7,6 +7,12 @@ guid: 516d476b-42fc-4ed1-a26c-22b941906121
 
 # Card Background
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Card Background UI Pattern to group small pieces of information and highlight them on the screen using a background image. The information is grouped into a small block that is easily noticeable on-screen. 
 
 ![](<images/cardbackground-1-ss.png>)

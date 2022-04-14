@@ -7,6 +7,12 @@ guid: 6ce39ef3-220e-4cc8-ac81-a96b73b8d259
 
 # Columns Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/columns-3-diag.png>)

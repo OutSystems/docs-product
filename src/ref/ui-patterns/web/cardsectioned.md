@@ -7,6 +7,12 @@ guid: 31a87c67-318b-4a23-8ce5-f46cdca4a0ab
 
 # Card Sectioned Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/cardsectioned-2-diag.png>)

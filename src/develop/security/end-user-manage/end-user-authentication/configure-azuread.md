@@ -9,6 +9,12 @@ guid: dd03208e-8d07-4720-bc69-3ebf9b541290
 
 <div class="info" markdown="1">
 
+Applies only to Traditional Web Apps and Reactive Web Apps.
+
+</div>
+
+<div class="info" markdown="1">
+
 Requires Platform Server Release Jul.2019 CP2 (11.0.542.0) or later.
 
 </div>

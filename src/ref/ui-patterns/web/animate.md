@@ -7,6 +7,12 @@ guid: 1aad8f7f-9da7-417a-9cfd-3c159905fc99
 
 # Animate Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/animate-3-diag.png>)

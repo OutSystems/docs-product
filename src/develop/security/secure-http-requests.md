@@ -7,6 +7,12 @@ guid: 825d2aff-000b-4b0e-89ab-de54c816beb6
 
 # Secure HTTP Requests
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can increase the security of your Traditional Web app by increasing the security level of HTTP requests. You can configure the security level of HTTP requests in the following elements:
 
 * UI Flows (OutSystems uses the value specified for the flow as the default for all the flow Web Screens)

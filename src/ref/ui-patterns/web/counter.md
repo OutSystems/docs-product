@@ -7,6 +7,12 @@ guid: c41f4255-ed4b-4aae-a934-9eebbcfcc129
 
 # Counter Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/counter-2-diag.png>)

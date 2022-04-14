@@ -7,6 +7,12 @@ guid: e77f1bd7-6d92-4bdb-b3fe-82f5bd1b2e1b
 
 # Blank Slate
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Blank State UI Pattern to inform end users, for example, to complete a task or when there is no data available for display etc.
 
 ![](<images/blankslate-1-ss.png>)

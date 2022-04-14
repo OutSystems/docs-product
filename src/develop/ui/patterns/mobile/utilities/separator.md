@@ -7,6 +7,12 @@ guid: 0799a5eb-d6c4-4708-9a2a-895a2434613e
 
 # Separator
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Separator UI Pattern to separate content clearly and ease visual organization.
 
   ![Separator widget example](<images/separator-example.png>)

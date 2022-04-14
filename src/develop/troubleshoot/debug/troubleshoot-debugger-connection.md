@@ -9,6 +9,12 @@ guid: dc4e00b1-34e4-4bf0-9fa6-b63c6d4f6719
 
 <div class="info" markdown="1">
 
+Applies only to Mobile Apps.
+
+</div>
+
+<div class="info" markdown="1">
+
 Use Service Studio 11.5.44.2557 or later to debug the mobile apps if you generate them with MABS 6.
 
 </div>

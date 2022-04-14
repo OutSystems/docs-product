@@ -7,6 +7,12 @@ guid: 88f0dd67-0dcf-44c3-ad3e-41977550015c
 
 # Align Center
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use Align Center UI Pattern to center content horizontally or vertically on the screen. 
 
 ![](<images/aligncenter-1.png>)

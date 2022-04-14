@@ -50,7 +50,7 @@ Before registering and setting up your infrastructure in Architecture Dashboard,
 
 * For infrastructures using **OutSystems 10**, your environments use **Platform Server - 10.0.200.0 (.NET)** or later.
 
-* Allow outbound HTTPS communication (port 443) from the  **LifeTime environment** to `https://architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard`. Check [Architecture Dashboard network requirements for detailed information](../../setup/network-requirements.md#architecture-dashboard).
+* Allow outbound HTTPS communication (port 443) from the  **LifeTime environment** to `https://architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard`. Check [Architecture Dashboard network requirements for detailed information](../../setup-maintain/setup/network-requirements.md#architecture-dashboard).
 * You have the **Administrator** role in your infrastructure.
 
 ### Register and set up your infrastructure

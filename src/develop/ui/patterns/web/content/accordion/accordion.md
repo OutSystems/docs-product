@@ -7,6 +7,12 @@ guid: 6f52287b-c093-4b03-84f9-ac1e7ea57152
 
 # Accordion
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Accordion UI Pattern to allow users expand and hide content when clicked.
 
  ![](<images/accordion-image-2.png>)

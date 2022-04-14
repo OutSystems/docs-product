@@ -7,6 +7,12 @@ guid: da3a1367-e123-420b-8978-da142720ef57
 
 # Dropdown Select
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 The Dropdown Select is a pattern that you can apply to other patterns to implement a search functionality or multiple selection in lists. You can use the Dropdown Select UI Pattern when you need an enhanced combo box or list box in forms, as it offers a richer user experience than the list.
 
 ![](<images/dropdownselect-6-ss.png>)

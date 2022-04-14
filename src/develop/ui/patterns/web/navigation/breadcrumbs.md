@@ -7,6 +7,12 @@ guid: 44158133-1d56-47d6-9a5b-f204828c0024
 
 # Breadcrumbs
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Breadcrumbs UI Pattern as a navigational aid that helps users keep track of their location within the app.
 
 ![](<images/breadcrumbs-2-ss.png>)

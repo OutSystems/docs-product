@@ -94,4 +94,3 @@ To practice, check these exercises where you can see examples of Local Variables
 </tr>
 </tbody>
 </table>
-

@@ -8,6 +8,11 @@ guid: bd15fc86-95cb-4875-a4e6-dd2e4e0e0faf
 
 # List Records Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 List Records widget displays the records in a list layout. After you drag this widget to the Screen, you need to supply data to it and set up how records show. 
 

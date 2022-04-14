@@ -7,6 +7,12 @@ guid: b6452069-3868-4dde-8e33-9a2392e8d548
 
 # Touch Events Reference
  
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Events
 
 **Event Name** |  **Description** |  **Mandatory**  

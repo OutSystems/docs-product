@@ -7,6 +7,12 @@ guid: 1c561d9b-7797-4365-b605-9c56261bfe04
 
 # List Item Content
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the List Item Content UI Pattern to quickly organize critical content in a readable way, helping the user understand the content. The List Item Content pattern is often used to organize content such as icons, text, and actions inside a list in a readable way.
 
 ![](<images/listitemcontent-1-ss.png>)

@@ -7,6 +7,12 @@ guid: b671dd23-9977-4a68-97f4-82cd56bc6b4d
 
 # Read-Only Data
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 This data synchronization pattern is recommended for mobile apps where the end users only need to read data while the apps are offline and the amount of data is small, as follows:
 
 * The server database holds the master data which can change over time. 

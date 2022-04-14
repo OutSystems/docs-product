@@ -9,6 +9,12 @@ guid: 69f1f6e5-318f-4da2-aa8f-912a7b8e66c2
 
 <div class="info" markdown="1">
 
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
+<div class="info" markdown="1">
+
 If you are using an OutSystems UI version between 2.3.0 and 2.8.1, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
 
 </div>

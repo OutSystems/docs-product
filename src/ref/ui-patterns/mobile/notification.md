@@ -7,6 +7,12 @@ guid: 7505a6aa-329a-4f60-a1a6-e7d3bd727943
 
 # Events
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 |Event|Output|Description| 
 |---|---|---| 
 |OnToggle: Optional|IsOpen (Boolean)|Triggers when the Notification is toggled.| 

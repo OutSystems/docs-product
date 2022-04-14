@@ -7,6 +7,12 @@ guid: d2e2b815-ef17-438b-b200-fe7ec9c1cd23
 
 # Iframe Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/iframe-3-diag.png>)

@@ -7,6 +7,12 @@ guid: ce518c93-363b-485e-91b3-b4a402ec4579
 
 # Actions in Reactive Web and Mobile Apps
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 When developing Apps you create logic that runs on the **server** and logic that runs on the **client** device, like a smartphone or a tablet.
 
 

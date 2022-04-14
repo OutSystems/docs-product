@@ -7,6 +7,12 @@ guid: 08e6258e-4543-4232-b5dc-1fd3707a0ecf
 
 # Convert to Library
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can convert an existing **Mobile** or **Reactive** module to a Library. Note that there are specific constraints in Libraries that might imply some changes to the modules before the conversion can take place.
 
 1. In the module that you wish to convert, open the **Module** menu and select **Convert** > **Convert to Library Module...**.

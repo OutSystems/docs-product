@@ -7,6 +7,12 @@ guid: 53de8e92-e178-4967-a3cc-e36407f71669
 
 # Dropdown Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and Classes
 
 ![](<images/dropdown-image-2.png>)

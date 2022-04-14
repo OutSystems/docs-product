@@ -7,6 +7,12 @@ guid: ada89c16-a9f3-45b5-b488-1dec777600c5
 
 # Floating Actions Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/floatingactions-2-diag.png>)

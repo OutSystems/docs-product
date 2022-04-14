@@ -7,6 +7,12 @@ guid: cde868f5-0402-49de-8c91-0754724634cc
 
 # Rating
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Events
 
 |**Event** |**Output**|**Description**|

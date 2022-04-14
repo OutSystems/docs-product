@@ -8,6 +8,11 @@ guid: c73e5bb5-95f4-42ab-a835-0542339b02f8
 
 # Button Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Provides a button that users can click or tap to trigger an action, submit data or navigate to another screen.
 

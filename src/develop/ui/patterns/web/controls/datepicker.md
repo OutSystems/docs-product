@@ -7,6 +7,12 @@ guid: 0eaaa700-8f98-4d1e-b478-5df2d45101ff
 
 # Date Picker 
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Date Picker UI Pattern to allow the user to select a single or a range of dates using a calendar.
 
 ![](<images/datepicker-image-13.png>)

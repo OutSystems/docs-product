@@ -7,6 +7,12 @@ guid: 9fd4d828-cf50-4d20-9531-e8514aa8a5a3
 
 # Send feedback in mobile apps
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 Users can send feedback from mobile apps by long-pressing two fingers. [View the user feedback](user-feedback-handle.md) in the App Feedback app. Note that you first need to [activate the feedback feature in the environment](user-feedback-enable.md).
 
 ![Two-fingers gesture](images/app-feedback-send-mobile-1.png?width=300)

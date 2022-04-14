@@ -7,6 +7,12 @@ guid: bacb4f2b-e04b-4ecf-8ce0-1f9536afa095
 
 # Customize the Errors Screen
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 You can customize the error screen that your mobile app displays when there is an unhandled exception. Do it by editing a JSON configuration file in Service Studio. Note that, according to best practices, an error screen should have as less dependencies as possible. That is why the theme CSS is not applied in the error screens (error screens use CSS in the HTML head element instead). The images are base64 encoded.
 
 Changing the looks of error pages and changing the messages are both done in the same JSON.

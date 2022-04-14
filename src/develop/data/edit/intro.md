@@ -29,7 +29,7 @@ To edit entity's data in Service Studio, ensure the following:
 
 * You're connected to an environment that uses **Platform Server release 11.11.1** or later.
 
-* You're connected to an environment with [Purpose](../../../setup/environment-config.md#purpose) set as **Development** or **Non-Production**.
+* You're connected to an environment with [Purpose](../../../setup-maintain/setup/environment-config.md#purpose) set as **Development** or **Non-Production**.
 
 * Your IT user has [**Change and Deploy Applications**](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) or higher for the module that contains the entity you are editing.
 

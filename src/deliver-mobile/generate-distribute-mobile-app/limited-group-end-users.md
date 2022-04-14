@@ -7,6 +7,12 @@ guid: bc8c19e3-512c-4be4-b900-f8f5c1880832
 
 # Generate and Distribute Your Mobile App to a Limited Group of End Users
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 A way of to start the distribution of your production-ready mobile app is by making it initially available to a limited group of users.
 
 In OutSystems, you can generate a mobile application package for your mobile app to be installed by the selected end users.

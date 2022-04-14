@@ -7,6 +7,12 @@ guid: b0e2b293-97b8-47b4-abfe-d5b99df4bc3c
 
 # Lightbox Image Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Adding a Filter to an Open Image
 
 ![](images/light_box_add_filter.png)

@@ -7,6 +7,12 @@ guid: 73bcc3f2-fbce-4e53-b0c3-a3501d2dc2ff
 
 # Master Detail Reference
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 ## Phone landscape with the same behavior as a tablet
 
 You can have your phone in landscape to work the same way as a tablet:

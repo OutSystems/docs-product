@@ -9,6 +9,11 @@ guid: 52c47131-75d8-4e4b-92c7-00b226933bbb
 
 # Text Area
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 Multi-line field to hold text typed by the user. The value must be stored in a Text variable.
 

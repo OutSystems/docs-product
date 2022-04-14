@@ -6,7 +6,13 @@ locale: en-us
 guid: 58915a48-1778-4182-b55f-77b91d6abb05
 ---
 
-# Health & Fitness Plugin
+# Health and Fitness Plugin
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 The [Health & Fitness plugin](https://www.outsystems.com/forge/component-overview/11715/) enables you to access and use health and fitness data in a mobile app. The plugin provides access to the Apple HealthKit and Google Fit APIs by letting you use data relevant to your health and fitness use cases.
 

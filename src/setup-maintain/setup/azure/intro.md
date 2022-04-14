@@ -7,7 +7,7 @@ guid: 5a889483-823a-4502-8899-7c5bc94082a9
 
 # OutSystems on Microsoft Azure
 
-OutSystems solution template for Microsoft Azure Marketplace provides you with an OutSystems 11 infrastructure with four environments: Development, Test, Production, and [LifeTime deployment management console](../../managing-the-applications-lifecycle/intro.md). At the end of the [setup process](set-up-platform.md "Set Up OutSystems on Microsoft Azure"), you will have an OutSystems infrastructure running on Azure configured according to OutSystems best practices.
+OutSystems solution template for Microsoft Azure Marketplace provides you with an OutSystems 11 infrastructure with four environments: Development, Test, Production, and [LifeTime deployment management console](../../../managing-the-applications-lifecycle/intro.md). At the end of the [setup process](set-up-platform.md "Set Up OutSystems on Microsoft Azure"), you will have an OutSystems infrastructure running on Azure configured according to OutSystems best practices.
 
 ## OutSystems Infrastructure
 

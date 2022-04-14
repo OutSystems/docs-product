@@ -7,6 +7,12 @@ guid: 4d07edaa-0b7b-41b8-bd1f-59c4b1bfd103
 
 # Modify the App Icon
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 When you create a mobile application, the icon for the app is generated automatically in the app creation wizard. This icon is then used to identify the app in the devices, being automatically adapted to all aspects of the device or context as the density or screen size of the device’s screen or the size of the place where the icon is displayed.
 
 

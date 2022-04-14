@@ -7,6 +7,12 @@ guid: 8099782f-c5ac-4a8f-a70a-fa9946d834a3
 
 # Margin Container
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Margin Container UI Pattern to add symmetrical padding around a container.
 
 ![](<images/margincontainer-1-ss.png>)

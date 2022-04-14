@@ -7,6 +7,12 @@ guid: 61a76744-2261-4ea2-9b6a-a4de711177a7
 
 # Layout Login Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/layoutlogin-1-diag.png>)

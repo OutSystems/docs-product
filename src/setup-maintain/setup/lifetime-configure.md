@@ -17,7 +17,7 @@ LifeTime is the centralized console for managing the infrastructure, environment
 
 Given its requirements, this application must run in a **dedicated** environment. **Installing LifeTime in an environment that already has a different role in the infrastructure (such as the development or the production environment) is not a supported scenario.** To remove LifeTime from a shared environment and install it in a new dedicated environment, follow the procedure in [Reinstall the infrastructure management console in a dedicated environment](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Reinstall_the_infrastructure_management_console_in_a_dedicated_environment).
 
-This article describes the steps to configure LifeTime after you have installed it. For further information on how to manage your infrastructure in LifeTime, check how to [Manage Your OutSystems Infrastructure](../managing-the-applications-lifecycle/initial-setup-of-an-infrastructure.md).
+This article describes the steps to configure LifeTime after you have installed it. For further information on how to manage your infrastructure in LifeTime, check how to [Manage Your OutSystems Infrastructure](../../managing-the-applications-lifecycle/initial-setup-of-an-infrastructure.md).
 
 ## Logging in LifeTime for the first time
 

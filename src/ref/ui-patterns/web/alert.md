@@ -7,6 +7,12 @@ guid: 252cc44d-c1de-4848-869b-55f9c33c3430
 
 # Alert Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and Classes
 
 ![](<images/alert-image-2.png>)

@@ -7,6 +7,12 @@ guid: c7493358-7bab-4ebf-ada6-2f101c53db4e
 
 # Section Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/section-2-diag.png>)

@@ -7,6 +7,12 @@ guid: 57108c14-9fcd-46a6-9604-489d54277361
 
 # Blank Slate Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/blankslate-2-diag.png>)

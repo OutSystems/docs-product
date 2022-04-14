@@ -7,6 +7,12 @@ guid: d56de308-6a6f-4003-8573-ba69db403011
 
 # Offline Sync Checklist
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 What follows is a checklist for implementing sync in mobile devices with OutSystems. If you follow the checklist you will greatly improve synchronization of data between the mobile device and the server, as well as ensure there are no performance issues in the overall experience.
 
 ## Avoid

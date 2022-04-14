@@ -7,6 +7,12 @@ guid: d6387a11-92d7-4075-874c-7f538bb21e32
 
 # Master Detail
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Master Detail Pattern to display a master list of items and their related details, for example, a list of employees and their corresponding details.
 
 ![](images/masterdetail-2.png)

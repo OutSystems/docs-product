@@ -7,6 +7,12 @@ guid: 158347bc-c312-4499-9912-1f1dfeac7d50
 
 # Camera Plugin
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 Use the Camera Plugin to let users take pictures with their mobile device. This plugin works with both native mobile apps and progressive web apps (PWAs). The plugin lets you select options like image quality, orientation, and the file format.
 
 <div class="info" markdown="1">

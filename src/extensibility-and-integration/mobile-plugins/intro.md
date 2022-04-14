@@ -7,6 +7,12 @@ guid: 5543e1d8-095e-45d1-aef6-d3c054649421
 
 # Mobile Plugins
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 Plugins provide important functionalities to native mobile apps, letting you use many of the hardware capabilities of mobile devices. You can add notifications, use camera or global positioning services, read QR codes, and more.
  
 ## The list of supported mobile plugins 

@@ -6,3 +6,9 @@ guid: b26525c6-b5d0-47c6-bd58-179ce4c8434a
 ---
 
 # Traditional Web
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>

@@ -9,6 +9,11 @@ guid: b9f2d2f5-39f6-4709-936c-7518ac9d960a
 
 # HTML Element
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 Allows you to add a custom HTML element to the screen. You can use nested HTML Element widgets.
 

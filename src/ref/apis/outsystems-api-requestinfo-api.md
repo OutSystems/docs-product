@@ -7,6 +7,12 @@ guid: fd316f0d-9003-4b26-a137-96c4b65afd08
 
 # outsystems.api.requestInfo API
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 A JavaScript API that provides methods to get information about the current request and session.
 
 The outsystems.api.requestInfo global object is defined for all OutSystems applications.

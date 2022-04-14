@@ -7,6 +7,12 @@ guid: ae0bd8db-c13e-4c6d-83f8-dabc43562bb6
 
 # Timeline Item
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Timeline Item UI Pattern to show related events in a chronological order, such as a user's upcoming, current, and past activities.
 
 ![](<images/timelineitem-1-ss.png>)

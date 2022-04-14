@@ -7,6 +7,12 @@ guid: 4e759186-e8a8-416a-a1fc-505d2cdc8de8
 
 # Badge
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Badge UI Pattern to display numerical information as a notification. For example, the Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
 ![](<images/badge-image-7.png>)

@@ -7,6 +7,12 @@ guid: bacbf600-bd10-4caf-820a-205c16a58691
 
 # Harden the protection of mobile apps with AppShield
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 **OutSystems** **AppShield** is a licensed plugin available from the **Forge**. **AppShield** lets you harden the protection of your native Android and iOS apps. **AppShield** integrates with the Mobile Apps Build Service (MABS version 6.3 or later) and adds app protection at runtime and at rest.
 
 <div class="info" markdown="1">

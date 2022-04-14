@@ -7,6 +7,12 @@ guid: 64b922a7-ca05-4d8f-bb40-2c75539b0bc2
 
 # Card Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/card-2-diag.png>)

@@ -7,6 +7,12 @@ guid: d3888e3a-fb8d-44cf-8ec2-b97cd5caa87e
 
 # Handle JavaScript Errors
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can handle the JavaScript errors occurring in the following specific situations:
 
 * During the Ajax refresh of an unescaped Expression with '&lt;script&gt;' tags

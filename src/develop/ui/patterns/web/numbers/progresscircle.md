@@ -7,6 +7,12 @@ guid: 8f2233e3-6e6d-46b0-bdb9-ea3fa1d813b3
 
 # Progress Circle
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Progress Circle UI Pattern to show the current progress of an operation flow. The progress is incremented in fractions of the circular badge. 
 
  ![](<images/progresscircle-2-ss.png>)

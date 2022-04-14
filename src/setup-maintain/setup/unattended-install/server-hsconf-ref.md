@@ -13,7 +13,7 @@ This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available
 
 </div>
 
-The `server.hsconf` is an XML file with all necessary configurations for the OutSystems platform. The settings in the `server.hsconf` configuration file correspond to the settings that are available on the [user interface of the Configuration Tool](../../ref/configuration-tool/intro.md).
+The `server.hsconf` is an XML file with all necessary configurations for the OutSystems platform. The settings in the `server.hsconf` configuration file correspond to the settings that are available on the [user interface of the Configuration Tool](../../../ref/configuration-tool/intro.md).
 
 To generate templates for the `server.hsconf` configuration file use the following [Configuration Tool command line](config-tool-ref.md) and choose the template that corresponds to your database management system:
 

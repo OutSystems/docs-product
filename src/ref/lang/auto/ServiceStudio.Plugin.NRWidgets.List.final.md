@@ -9,6 +9,11 @@ guid: 836cb2ad-86f5-4d9a-96ac-b7e34b4e82f7
 
 # List
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
 
 Use the List widget to display a simple list, for example a list of Expressions, or to display more complex items by adding a [List Item widget](ServiceStudio.Plugin.NRWidgets.ListItem.final.md). The List widget requires a source to populate the items.
 

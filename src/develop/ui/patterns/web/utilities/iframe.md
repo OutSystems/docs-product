@@ -6,10 +6,10 @@ guid: e334605f-9e05-484e-b50e-5450497c2412
 ---
 
 # Iframe
- 
+
 <div class="info" markdown="1">
 
-We’ve been working on this article. Please let us know how useful this new version is by voting.
+Applies only to Traditional Web Apps.
 
 </div>
 

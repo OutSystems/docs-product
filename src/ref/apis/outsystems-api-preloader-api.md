@@ -7,6 +7,12 @@ guid: 46d68360-ea42-4078-8bc7-b8f9286e09e6
 
 # outsystems.api.preloader API
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 A JavaScript API that allows you to prefetch static resources (css, js, png, gif. jpg, jpeg, woff) for a list of modules. This way, when the page needs a resource, it can be already in the browser's cache.
 
 <div class="info" markdown="1">

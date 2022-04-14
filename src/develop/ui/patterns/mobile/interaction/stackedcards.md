@@ -7,6 +7,12 @@ guid: c4e2edb1-3142-4f82-b34d-dab8d2356155
 
 # Stacked Cards
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged in multiple directions triggering events, such as deny, approve, and archive. This pattern is ideal when you want to individually scan multiple cards.
 
    ![](images/stackedcards-1.png)

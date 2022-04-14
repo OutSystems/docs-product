@@ -7,6 +7,12 @@ guid: a42977e0-825d-49b5-bc9b-49025bac70cb
 
 # Button Group
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 You can use the Button Group UI Pattern to display radio button choices to the user. This pattern is ideal when you have between two to four options. To show a larger number of options, consider using a the Dropdown UI Pattern.
 
 **How to use the Button Group UI Pattern**

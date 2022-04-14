@@ -7,6 +7,12 @@ guid: 85bf3d51-36e8-4b3f-bebb-3ee59614230f
 
 # Floating Content
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Floating Content UI Pattern to display content on top of other screen elements, such as a map with navigation instructions.
 
 ![](<images/floatingcontent-1-ss.png>)

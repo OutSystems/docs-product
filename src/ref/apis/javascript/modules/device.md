@@ -7,6 +7,12 @@ guid: cb9a46ef-3b0c-48e2-9307-8fa4d00567e3
 
 # Device
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 Provides methods to access native capabilities of the device.
 
 ## Summary

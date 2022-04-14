@@ -7,6 +7,12 @@ guid: 0b12a757-5043-40ae-ac5f-4f009d2d5c5c
 
 # Configure Accessible Domains for Your Mobile App
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 To enhance your mobile app's security, you can create a allowlist of domains that your mobile app can access. The `access` extended configuration entry allows you to define the allowlist. After this, when using HTTP connections, all non-allowlisted domains will be blocked. 
 
 To define the list of accessible domains for your mobile app do the following:

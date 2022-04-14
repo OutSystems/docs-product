@@ -7,6 +7,12 @@ guid: eb80a9ee-c99a-4136-85b4-ec06d6b8e8d4
 
 # Animated Label Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
   
 ![](<images/animatedlabel-4-diag.png>)

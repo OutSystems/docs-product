@@ -7,6 +7,12 @@ guid: da4d09df-8c2f-4c23-9a16-837f5e3206f6
 
 # Send feedback in web apps
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps and Reactive Web Apps.
+
+</div>
+
 When sending feedback is active for a Reactive Web App or Traditional Web App, a glowing circle shows on the app screens, close to the bottom-right corner. Note that you first need to [activate the feedback feature in the environment](user-feedback-enable.md).
 
 ![App Feedback button](images/send-feedback-in-web-applications-1.png?width=800)

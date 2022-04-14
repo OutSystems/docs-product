@@ -7,6 +7,12 @@ guid: e574e089-b093-408e-9ed1-6850d664a81d
 
 # Progress Bar Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and classes
 
 ![](<images/progressbar-6-diag.png?width=650>)

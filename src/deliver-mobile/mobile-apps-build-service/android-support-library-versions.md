@@ -7,6 +7,12 @@ guid: 8734c248-e81d-4d5b-a3a2-323a0373c188
 
 # Android Support Library Versions for MABS
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 Whenever the target Android SDK is changed for a version of MABS, the version for the support libraries reflect this change as well. This affects the core and supported mobile plugins as well as the third-party plugins available in the Forge. For instance, with MABS 5, the target Android SDK has been raised to 28.
 
 ## Scenarios of plugins using different versions of support libraries

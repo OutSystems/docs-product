@@ -7,6 +7,12 @@ guid: cd532674-6556-4684-bdd5-fcff4e6c422e
 
 # Video Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 ## Layout and Classes
 
 ![](<images/video-image-1.png>)

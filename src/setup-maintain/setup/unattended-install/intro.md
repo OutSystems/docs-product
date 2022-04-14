@@ -280,7 +280,7 @@ Run the following:
 
 When adding a new front-end server to your environment, make sure that:
 
-* There are no ongoing deployments or solution publishes, and also no prepared deployments to continue, in case you have [two-stage deployments](../../managing-the-applications-lifecycle/deploy-applications/deploy-in-a-short-deployment-window.md) enabled in the environment. Having ongoing or prepared deployments when adding a new front-end server might prevent the correct deployment of the modules.
+* There are no ongoing deployments or solution publishes, and also no prepared deployments to continue, in case you have [two-stage deployments](../../../managing-the-applications-lifecycle/deploy-applications/deploy-in-a-short-deployment-window.md) enabled in the environment. Having ongoing or prepared deployments when adding a new front-end server might prevent the correct deployment of the modules.
 
 * The new front-end server is a clean installation, it doesn't contain settings or deployed applications from a previous OutSystems installation. Otherwise, you might need to republish all the environment modules or the deployment of new applications might fail.
 

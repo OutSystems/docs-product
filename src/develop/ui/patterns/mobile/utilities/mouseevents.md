@@ -7,6 +7,12 @@ guid: 95bf7d02-e8a6-4ca9-a080-cc4e80cb1629
 
 # Mouse Events
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Mouse Events UI Pattern when the user needs to select elements on the interface with high precision.
 
 ## How to Use the Mouse Events UI Pattern

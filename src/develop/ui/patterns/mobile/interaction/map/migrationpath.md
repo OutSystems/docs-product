@@ -7,6 +7,12 @@ guid: fda9408b-4043-4e53-aff2-96e241be9716
 
 # Migration Path
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 OutSystems Maps version 1.1.0 introduces some changes in the component structure. This page aims to help you migrate deprecated functionalities to new ones.
 
 <div class = "info" markdown = "1" >

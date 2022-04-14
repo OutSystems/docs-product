@@ -7,6 +7,12 @@ guid: 3a9110d2-7128-413c-a6a4-3b2deed94d87
 
 # Customize the Application Status Bar
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 The app status bar in mobile apps is black by default and it's always visible. This behavior is customizable without using any plugin by following the instructions presented in the next section.
 
 ## Customizing the Status Bar

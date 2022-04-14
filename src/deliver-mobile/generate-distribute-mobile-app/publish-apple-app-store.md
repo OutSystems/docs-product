@@ -7,6 +7,12 @@ guid: 3d02e722-3225-47fa-b343-d6188e21d174
 
 # Publish your Mobile iOS application to the Apple App Store
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 This article describes the process you must follow to publish your application to the Apple App Store. Before you proceed, ensure your app fulfills the general [pre-requirements](publish-app-stores.md).
 
 ## Application preparation

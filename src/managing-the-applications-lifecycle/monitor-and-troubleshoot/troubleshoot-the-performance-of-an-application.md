@@ -7,6 +7,12 @@ guid: 8b6d4c19-e002-4a96-b043-766b1b7e4024
 
 # Troubleshoot the Performance of an Application
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 OutSystems collects analytics about the performance of your applications, so that you can easily pinpoint and fix performance bottlenecks.
 
 ![](images/troubleshoot-the-performance-of-an-application-1.png)

@@ -7,6 +7,12 @@ guid: 8fe53ff7-6928-4fa2-b80d-cef17d9da254
 
 # Creating custom obfuscation rules
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
+
 This article is for developers who are familiar with mobile development and AppShield and are responsible for securing their apps from tampering. Code obfuscation is a protection feature that makes learning about how an app works difficult for people and systems.
 
 In this article learn about obfuscating code and logs of non-OutSystems plugins. Since obfuscating non-supported plugins isn't fully automatic in OutSystems, you need to configure obfuscation inclusion/exclusion rules.

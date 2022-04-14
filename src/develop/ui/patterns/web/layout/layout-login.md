@@ -7,6 +7,12 @@ guid: 77b92b70-0fe1-4f35-a776-22f98fd1365e
 
 # Layout Login
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 The Layout Login is a pre-existing web block for a login screen. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app.
 
 ![](<images/layoutlogin-1-ss.png?width=800>)

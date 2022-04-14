@@ -6,3 +6,9 @@ guid: 0b88f2d8-66ae-4d01-9952-cc513a548a22
 ---
 
 # Mobile
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>

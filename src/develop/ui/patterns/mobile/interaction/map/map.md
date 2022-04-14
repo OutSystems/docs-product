@@ -7,6 +7,12 @@ guid: 3193c9d8-9711-4d4c-bf24-839f22a8052f
 
 # How to use the Map component
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 **Prerequisites**
 
 * Download and install the [OutSystems Map component](https://www.outsystems.com/forge/component-overview/9909/outsystems-maps) from Forge.

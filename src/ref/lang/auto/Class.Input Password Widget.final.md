@@ -8,6 +8,11 @@ guid: e908d4d2-b3df-4e78-baf9-c105f9732869
 
 # Input Password Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Field that holds the data typed by the user masking its content.
 

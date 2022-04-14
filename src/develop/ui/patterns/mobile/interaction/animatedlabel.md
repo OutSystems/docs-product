@@ -7,6 +7,12 @@ guid: 6b42f314-f637-444d-b908-f0609c1ba46f
 
 # Animated Label
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Animated Label UI Pattern to animate a label when there is a user input.
 
  ![](<images/animatedlabel-example-ss.png>)

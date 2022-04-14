@@ -7,6 +7,12 @@ guid: a91ff06e-c4fe-4e1b-ab4d-ac67c341c3e5
 
 # Logger
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 Provides methods to log messages or errors. Used as "console.log" but also logs messages in Service Center.
 
 This logger will work both as a `console.log` logger and as server logger, sending the log messages to Service Center. When offline, the log messages will be temporarily saved in local storage; when online, they will be sent to Service Center.

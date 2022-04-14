@@ -8,6 +8,11 @@ guid: d4e8f882-7eb3-4476-a056-c0f4017ea78f
 
 # Upload Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Allows the user to browse and select a local file to be uploaded into the application.
 

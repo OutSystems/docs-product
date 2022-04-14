@@ -7,6 +7,12 @@ guid: ec5ca995-0a63-4bc9-b5d9-9c22a0f34a5b
 
 # Input with Icon
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 You can use the Input with Icon UI Pattern to allow the end user input data with the help of a hint in the form of an icon.
 
 The Input with Icon UI Pattern includes an icon and placeholder text that supports the user when entering data. Is assists the user's comprehension by providing an example of the type of input required.  

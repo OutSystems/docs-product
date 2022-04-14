@@ -7,6 +7,12 @@ guid: 68b5f614-594d-4374-bde6-fc2f815c8b05
 
 # Validation
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 Provides methods to show validation messages on widgets and set their validation values. Used when validating widgets inside iterators, since it's not possible to do it in the usual way.
 
 ## Hierarchy

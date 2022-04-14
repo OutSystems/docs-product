@@ -25,7 +25,7 @@ When you try to publish a new app with Workflow Builder and get a message saying
 
 * Ensure your development environment uses Platform Server 11.7.2 (January 2020) or later. Refer to the [release notes](https://success.outsystems.com/Support/Release_Notes/Workflow_Builder).
 
-* Ensure your development environment allows inbound traffic from `https://workflowbuilder.outsystems.com` in port **443** to communicate with Workflow Builder. Refer to the [Workflow Builder network requirements](../../../setup/network-requirements.md#workflow-builder) for detailed information.
+* Ensure your development environment allows inbound traffic from `https://workflowbuilder.outsystems.com` in port **443** to communicate with Workflow Builder. Refer to the [Workflow Builder network requirements](../../../setup-maintain/setup/network-requirements.md#workflow-builder) for detailed information.
 
 ### Workflow Builder can't publish
 

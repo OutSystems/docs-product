@@ -7,6 +7,12 @@ guid: 9205fe77-5e90-402b-ba73-45cdc745515a
 
 # Screen and Block Lifecycle Events
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps and Reactive Web Apps
+
+</div>
+
 In OutSystems Mobile and Reactive Web Apps, the Screens and Blocks follow a lifecycle composed by a set of stages. Some of those stages are when you open the app and enter the default screen, navigate to another screen, or change the data of the screen or block.
 
 The data of a screen or block are the following:

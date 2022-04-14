@@ -9,8 +9,7 @@ guid: 65fc5101-2962-4239-a14a-f1a4f9d19fab
 
 Sometimes displaying a single aggregated value can be more meaningful than displaying the full list of records available in the database.
 
-To aggregate a column into a single value, hover on the column, click
-![Aggregate Menu](images/aggregate-menu.png), and choose one of the available aggregate functions:
+To aggregate a column into a single value, hover on the column, right-click, and select one of the aggregate functions:
 
 * Sum: sums all the values in the column
 * Average: calculates the average of the values in the column

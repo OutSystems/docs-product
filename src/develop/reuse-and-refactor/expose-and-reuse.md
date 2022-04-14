@@ -45,7 +45,7 @@ To reuse elements from other modules, do the following:
 
     ![Manage Dependencies window](images/expose-and-reuse-4.png?width=600)
 
-1. Press **OK** to make the element available in your module.
+1. Press **Apply** to make the element available in your module.
 
     ![Element in the tree defined in a producer module](images/expose-and-reuse-5.png?width=300)
 

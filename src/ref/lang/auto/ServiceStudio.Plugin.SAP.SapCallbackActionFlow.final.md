@@ -7,6 +7,12 @@ guid: 447f9880-e68f-4858-94ca-8d0b24de4c15
 
 # SAP Callback
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Action that allows the customization of the calls to SAP remote functions. Once defined, they are executed on every call to any SAP remote functions under the connection. There are three available action flows for implementing these customizations: OnBeforeConnection, OnBeforeCall, OnAfterCall (defined in the SAP Connection element).  
 
 ## Properties

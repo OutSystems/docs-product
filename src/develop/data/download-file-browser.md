@@ -20,6 +20,6 @@ To send the file to the browser, use the **Download Tool**, and pass it the valu
 * **File Content** - the binary content of the file
 * **File Name** - the name of the file that will be downloaded
 
-For example, you can create a DownloadImageOnClick Action that takes the image binary and file name as the input parameters, and then pass those parameters to the Download Tool at the end of the Flow:
+For example, you can create a **DownloadImageOnClick** action that takes the image binary and file name as the input parameters, and then pass those parameters to the Download Tool at the end of the Flow:
 
 ![Adding link](<images/download-binary-example.png?width=600>)

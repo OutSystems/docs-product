@@ -89,7 +89,7 @@ To generate your mobile app in the Service Studio, perform the following steps:
 
 1. Provide a provisioning profile of the correct type (see the [Before You Start](#before-you-start) section). The provisioning profile should have a **.mobileprovision** extension.
 
-1. Click the **GENERATE APP** button.
+1. Click the **Generate iOS app** button.
 
     ![Configure iOS App Settings](images/ss-native_platforms-configure-ios-app.png?width=500)
 

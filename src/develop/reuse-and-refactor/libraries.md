@@ -53,7 +53,7 @@ Libraries can contain most kinds of elements:
 * Scripts
 * Data Actions
 * Server Actions and Client Actions
-* Consumed Integrations (SOAP, REST and SAP)
+* Consumed Integrations
 * Exceptions
 * Structures
 * Resources
@@ -70,7 +70,7 @@ Considering the architectural philosophy behind Libraries, some concepts must be
     * Screens
     * Service Actions
     * Entities (both Server and Client Entities)
-    * Exposed integrations (SOAP and REST)
+    * Exposed integrations
     * Processes and Timers
     * Roles
 * Static Entities can be created and referenced in Libraries but cannot be used in queries, as dropdown sources or as foreign keys for entities. However, you cannot reference Static Entities from (System) in Libraries.

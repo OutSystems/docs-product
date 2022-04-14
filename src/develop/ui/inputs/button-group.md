@@ -1,6 +1,6 @@
 ---
 summary: Let users select a single option from a group of choices, with the Radio Group widget.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
 locale: en-us
 guid: 3eb6105e-2157-472f-972f-f3cc133043a5
 ---

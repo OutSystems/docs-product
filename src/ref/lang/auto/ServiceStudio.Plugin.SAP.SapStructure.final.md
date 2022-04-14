@@ -7,6 +7,12 @@ guid: 895732c3-42f6-4e78-87f8-efef7a1de2ef
 
 # Structure (SAP Remote Function)
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Structure used in input and output arguments of SAP remote functions.  
 
 ## Properties

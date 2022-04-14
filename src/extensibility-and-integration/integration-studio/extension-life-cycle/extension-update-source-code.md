@@ -37,7 +37,6 @@ The Update Source Code operation is also executed when you [edit source code](<e
 
 </div>
 
-
 ## Merge Algorithm
 
 The merge algorithm is responsible for updating the source code with the changes made in the extension definition. The next steps describe the merge algorithm:

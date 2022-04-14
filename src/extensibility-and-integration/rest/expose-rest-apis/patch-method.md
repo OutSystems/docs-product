@@ -48,9 +48,9 @@ To implement a correct PATCH, define default values in your structure attribute 
 
 1. Go to the intended structure and define a Default Value that won't be sent in runtime to each attribute. 
 
-1. Use, for example, -999999999 to Integer, Long Integer data types or "zzzzzzzzz" to Text, Email data types:
+1. Use, for example, -999999999 to Integer, Long Integer data types or "undefined" to Text, Email data types:
 
-    ![](images/ss-patch-data-types.png?width=900)
+    ![](images/ss-patch-data-types.png)
 
 #### Boolean data type
 
@@ -58,7 +58,7 @@ Booleans are a special case, since there are only two possible values, making it
 
 1. Map Booleans directly to Text. Set the same Default Value as used in the Text data type and set the attribute to isActive:
 
-    ![](images/ss-patch-boolean.png?width=450)
+    ![](images/ss-patch-boolean.png)
 
 1. When checking the condition of a boolean, you need to check if the text values are “false” or “true”.
 

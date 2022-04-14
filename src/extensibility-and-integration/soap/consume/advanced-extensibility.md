@@ -25,15 +25,16 @@ If your use case, is not covered by the component or you want to create it from 
 
 3\. Use the extension
 :   In Service Studio, add a dependency to the actions you need from the extension.  
-    Select your SOAP Web Service element in the element tree and create a new SOAP callback in the OnBeforeRequest property (the callback's name is "OnBeforeRequestAdvanced").  
-
-    ![](<images/ss-soap-properties-beforerequest.png>)    
-
-    Open the callback flow and drag the desired extension action(s) to the flow according to your use case.  
     
-    **Note:** Extension actions using the SOAP Extensibility API can only be used in the context of a SOAP callback flow.
+   Select your SOAP Web Service element in the element tree and create a new SOAP callback in the OnBeforeRequest property (the callback's name is "OnBeforeRequestAdvanced").  
 
-    ![](<images/ss-flow-add-callback.png>)
+   ![Create a new SOAP callback](<images/soap-properties-beforerequest-ss.png>)    
+
+   Open the callback flow and drag the desired extension action(s) to the flow according to your use case.  
+    
+   **Note:** Extension actions using the SOAP Extensibility API can only be used in the context of a SOAP callback flow.
+
+   ![SOAP extenibility API](<images/flow-add-callback-ss.png>)
 
 ## SOAP extensibility component use cases { #example-use-cases }
 

@@ -7,6 +7,12 @@ guid: 602fe7e6-6a83-449a-8d9f-4dff8831755b
 
 # SAP Remote Function
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Imported SAP remote function used to retrieve data.  
 
 ## Properties

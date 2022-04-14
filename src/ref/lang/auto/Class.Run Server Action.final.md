@@ -41,7 +41,7 @@ In the following example, we used the **Valid** output parameter of the **Valida
 
     ![Drag Server Action to action flow](images/run-server-action-drag-2-ss.png)
 
-1. In the pop-up window, select the Server Action that you want to run from the **Server Actions** folder in the tree, and click **OK**.
+1. In the pop-up window, select the Server Action that you want to run from the **Server Actions** folder in the tree, and click **Select**.
 
     ![Select Server Action to run](images/run-server-action-select-ss.png)
 

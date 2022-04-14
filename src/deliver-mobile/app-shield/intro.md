@@ -234,7 +234,7 @@ Applies to apps for Google Play Store that have app signing feature enabled.
 
 One of the security features of **AppShield** is repackaging detection. This protection prevents re-signing of the app package, but also causes incompatibility with the Google Play App Signing. You can fix this by providing information about the certificate in the **AppShield** settings.
 
-In the **Android section** of the Extensibility Configurations JSON, add a preference item with `GooglePlayAppSigningCertificate` as its **name** and the public key as its **value**. Here is an example:
+In the **Android section** of the Extensibility Configurations JSON, add **name** with `GooglePlayAppSigningCertificate` and the **value** with the public key. Here is an example:
 
 
 ```

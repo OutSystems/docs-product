@@ -6,6 +6,12 @@ guid: 23c2945f-211b-438d-b8c1-0aae40cd316d
 
 # Service Studio command line
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 OutSystems visual development environment, Service Studio, makes available a set of commands that can be used in the command line interface (CLI) of your choice such as Windows command prompt or Powershell.
 
 These commands can be used to execute common development tasks such as opening or merging modules, and creating new applications.

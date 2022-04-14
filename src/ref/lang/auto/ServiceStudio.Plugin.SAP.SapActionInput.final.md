@@ -7,6 +7,12 @@ guid: 0c2f28f8-e4c4-4b13-9139-fba94b1a2774
 
 # Input Parameter (SAP Remote Function)
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Input parameter of an imported SAP remote function.  
 
 ## Properties

@@ -9,7 +9,7 @@ guid: 507ea92c-761e-4ad0-aeee-ce029328c6b9
 
 The **translation editor** lets you translate text and manage your translation directly from Service Studio. To open the editor go to the **Data** > right-click the **Multilingual Locales** folder > click **Edit Translations**.
 
-![Menu to open translation editor](images/opening-translation-editor-ss.png?width=550)
+![Menu to open translation editor](images/opening-translation-editor-ss.png)
 
 Translation editor also opens when you [add a new translation language](translate-your-app.md).
 
@@ -17,13 +17,13 @@ Translation editor also opens when you [add a new translation language](translat
 Once you open the translation editor, you can:
 
 * **Translate** text by entering the translation in the **Translation in (language code)** column (1).
-* **Switch languages for translation** by selecting the language code in the heading of the **Translation in (language code)** column (2).
-* **Set text as translatable/non-translatable** by selecting one of the options in the **Behavior** list (3). 
+* **Switch languages for translation** by selecting the language code in the **Locale (language code)** dropdown (2).
+* **Set text as translatable/non-translatable** by selecting one of the options in the **Behavior** list column (3). 
 * **Filter and search** the text by using the tools in the **Filter** section of the translation editor (4). With the translation window open, select an element in the screen, and then click the button with the arrow icon to show that element in the editor.
 * **Navigate to a text in the module** by double-clicking a **Text** field to see the text in context.
 * **See the translation progress**, as it shows in the **Statistics** section (5).
 
-![Translation editor overview](images/translation-editor-overview.png?width=690)
+![Translation editor overview](images/translation-editor-overview-ss.png)
 
 <div class="info" markdown="1">
 

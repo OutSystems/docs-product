@@ -7,7 +7,7 @@ guid: 9ca5abbb-ff2d-4aaf-9437-a6565e9df8f6
 
 # AI-assisted development
 
-![Artificial intelligence gives development suggestions for a low-code logic](images/ai-flow-service-studio.gif?width=500)
+![Artificial intelligence gives development suggestions for a low-code logic](images/ai-flow-service-studio.gif)
 
 Create app logic in a smart way, with AI-assisted development. This feature helps you develop faster and better with the use of artificial intelligence and machine learning algorithms that analyze millions of anonymized samples of logic. AI-assisted development predicts what you need next and shows the suggestions in the flow connectors when you click the AI radar (the blue circle).
 
@@ -30,18 +30,18 @@ There are two ways you can get suggestions.
 
 * Click the AI radar (blue circle) on the flow connectors  
 
-    ![Suggestions show after clicking](images/ai-flow-node-click.png?width=600)
+    ![Suggestions show after clicking](images/ai-flow-node-click.png)
 
 * Drag and drop a connector in the flow window  
     
-    ![Suggestions show after dragging the connector](images/ai-flow-node-drag.gif?width=600)
+    ![Suggestions show after dragging the connector](images/ai-flow-node-drag.gif)
 
 
 ### Enabling and disabling the feature
 
 To enable or disable the feature, go to the **Edit** menu in Service Studio and select **Preferences**. In the Preferences window, locate the **AI-Assisted Development** section and check the status of the option **Enable inline flow suggestions**.
 
-![Setting to turn AI suggestions on or off](images/ai-flow-settings.png?width=400)
+![Setting to turn AI suggestions on or off](images/ai-flow-settings.png)
 
 <div class="info" markdown="1">
 
@@ -75,7 +75,7 @@ To ensure the best suggestions from the assistant, you should fill in the missin
 
 Once you open the assistant menu, move the suggestion selection with the keyboard arrow keys. Select the highlighted suggestion with the ENTER key.
 
-![AI suggestions selected with the keyboard](images/ai-flow-node-suggestion.gif?width=600)
+![AI suggestions selected with the keyboard](images/ai-flow-node-suggestion.gif)
 
 ### High-confidence suggestions
 
@@ -93,13 +93,13 @@ If you only want to select the connector, and not activate the suggestions, clic
 
 When there's nothing more to add, and it's not the end of the flow, you can edit your flow manually.
 
-![AI shows message about the end of logic](images/ai-flow-ts-no-suggestions.png?width=400)
+![AI shows message about the end of logic](images/ai-flow-ts-no-suggestions.png)
 
 ### Why do I have to click again to get suggestions?
 
 If this keeps happening, check your internet connection and try again.
 
-![AI show message to try again](images/ai-flow-ts-tryagain.png?width=600)
+![AI show message to try again](images/ai-flow-ts-tryagain.png)
 
 ### Why isn't the AI radar showing up?
 

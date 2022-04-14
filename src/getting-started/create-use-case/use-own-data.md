@@ -7,6 +7,12 @@ guid: 26564166-8c97-4176-a172-1a16703d86d7
 
 # Using your own data in your app
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Learn more about how you can customize your app by replacing the sample data in your use-case app with your own data.
 
 ## Prerequisites

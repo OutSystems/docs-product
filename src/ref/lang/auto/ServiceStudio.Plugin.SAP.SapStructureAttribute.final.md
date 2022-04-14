@@ -7,6 +7,12 @@ guid: b2bb3ce3-6403-4a1a-80d9-c5d34e509048
 
 # Structure Attribute (SAP Remote Function)
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Attribute of structure used in input and output arguments of SAP remote functions.  
 
 ## Properties

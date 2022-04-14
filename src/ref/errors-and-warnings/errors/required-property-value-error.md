@@ -25,7 +25,7 @@ For an [Expression](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expres
 
 ![Location of Expression value](images/required-property-value-error.png?width=400)
 
-For a [Button Group](../../../develop/ui/patterns/web/controls/buttongroup.md), set a valid value for the Value property of each of the options. 
+For a [Button Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md), set a valid value for the Value property of each of the options. 
 
 ![Location of Button Group value](images/required-property-value-error-03.png?width=300)
 
@@ -71,7 +71,7 @@ For a [Radio Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioG
 
 ![Location of Radio Group variable](images/required-property-value-error-02.png?width=300)
 
-For an [Input](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md), [Text Area](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md), [Switch](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md), [Checkbox](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md), [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md), or [Button Group](../../../develop/ui/patterns/web/controls/buttongroup.md), set a valid value for the Variable property.
+For an [Input](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md), [Text Area](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md), [Switch](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md), [Checkbox](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md), [Dropdown](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md), or [Button Group](../../lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md), set a valid value for the Variable property.
 
 ## List must be set
 
@@ -81,7 +81,7 @@ You added a Dropdown widget and did not set a value for the List property.
 
 **Recommended action**
 
-You need to set a valid value for the List property of the [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md).
+You need to set a valid value for the List property of the [Dropdown](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md).
 
 ## Options Value must be set
 
@@ -91,7 +91,7 @@ You added a Dropdown widget and did not set a value for the Options Value proper
 
 **Recommended action**
 
-You need to set a valid value for the Options Value property of the [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md).
+You need to set a valid value for the Options Value property of the [Dropdown](../../lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md).
 
 ## File Content must be set
 
@@ -101,7 +101,7 @@ You added an [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Uplo
 
 **Recommended action**
 
-You need to set a valid value for the File Content property of the [Upload](../../../ref/lang/auto/Class.Upload%20Widget.final.md).
+You need to set a valid value for the File Content property of the [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md).
 
 ## File Name must be set
 
@@ -111,7 +111,7 @@ You added an [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Uplo
 
 **Recommended action**
 
-You need to set a valid value for the File Name property of the [Upload](../../../ref/lang/auto/Class.Upload%20Widget.final.md).
+You need to set a valid value for the File Name property of the [Upload](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md).
 
 ## Show Popup must be set
 
@@ -141,7 +141,7 @@ You added an If widget and did not set a value for the Condition.
 
 **Recommended action**
 
-You need to set a valid value for the Condition property of the [If](../../../ref/lang/auto/Class.If%20Widget.final.md).
+You need to set a valid value for the Condition property of the [If](../../../ref/lang/auto/Class.If Widget.final.md).
 
 ## Unknown &lt;entity_name> &lt;property> in &lt;element> &lt;element_type>
 

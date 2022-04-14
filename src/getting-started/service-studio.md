@@ -5,7 +5,7 @@ locale: en-us
 guid: 23af05a7-9a06-4b73-ad98-3a9edee4ca0d
 ---
 
-# Service Studio Overview
+# Service Studio overview
 
 <div class="info" markdown="1">
 

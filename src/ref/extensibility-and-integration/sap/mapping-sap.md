@@ -6,6 +6,12 @@ guid: b494a3d0-48d5-4988-ac70-8e7df29cc0ce
 
 # Mapping SAP Data Types to OutSystems Data Types
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 When integrating with a SAP System in your module, OutSystems maps the SAP Data Types into OutSystems Data Types as follows:
 
 SAP Data Type | OutSystems Data Type | Comments  

@@ -1,17 +1,11 @@
 ---
 summary: Blocks use events to communicate changes to the parent screen/block or to another block.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps; support-webapps-featured
+tags:
 locale: en-us
 guid: 77d2313f-f484-4581-825e-c198e4756a11
 ---
 
 # Pass Data Between Blocks
-
-<div class="info" markdown="1">
-
-We’ve been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 In a screen or block with child blocks, it can happen that an event in a child block requires updating another block. For example, a block containing a date picker that, when changed, requires updating a chart plotted by another block. 
 

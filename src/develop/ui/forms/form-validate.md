@@ -1,6 +1,6 @@
 ---
 summary: Learn how to validate the information users enter in forms. Use the built-in validation for email, currency, numbers, text — or create custom validators. Customize the feedback messages that show next to the invalid values.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
 locale: en-us
 guid: 5a4706ab-9f44-405a-a6fc-758b86c29d30
 ---

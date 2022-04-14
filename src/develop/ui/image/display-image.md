@@ -1,6 +1,6 @@
 ---
 summary: Display an image stored in the database in both web and mobile applications.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
 locale: en-us
 guid: 0e4fc725-6ba9-4e5e-8834-71ca8b4aa180
 ---
@@ -17,36 +17,27 @@ To display a database image in Reactive Web and Mobile:
 
     ![](images/open-screen-ss.png)
 
- 
 
-2. Check if there is an aggregate fetching the image from the database. Add the aggregate if needed. 
+1. Check if there is an aggregate fetching the image from the database. Add the aggregate if needed. 
 
     ![](images/add-aggregate-ss.png)
 
-   
 
-
-3. Drag the Image widget from the toolbox to the screen. 
+1. Drag the Image widget from the toolbox to the screen. 
 
     ![](images/drag-image-widget-ss.png)
 
-   
+    
 
-
-4. Set the property Type to `Binary Data`. 
+1. Set the property Type to `Binary Data`. 
 
     ![](images/set-property-type.png)
 
   
 
-
-5. Set the property Image Content to the entity attribute that stores the image.
-
+1. Set the property Image Content to the entity attribute that stores the image.
 
     ![](images/set-property-image-content.png)
-
-   
-
 
 ## In Traditional Web
 

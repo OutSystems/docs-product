@@ -7,6 +7,12 @@ guid: 14b4eecd-c93a-45cd-871d-6f6470945bd1
 
 # SAP Connection
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 Defines a connection to a SAP system.  
 
 ## Properties

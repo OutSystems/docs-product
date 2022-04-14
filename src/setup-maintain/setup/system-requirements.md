@@ -7,12 +7,6 @@ guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
 
 # OutSystems system requirements
 
-<div class="info" markdown="1">
-
-This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_system_requirements)&#8195;[9.1](https://success.outsystems.com/Support/Archive/9.1/OutSystems_Platform_system_requirements)&#8195;[9.0](https://success.outsystems.com/Support/Archive/9.0/OutSystems_Platform_system_requirements)
-
-</div>
-
 Before installing OutSystems on-premises, check its hardware and software requirements. Once you're ready to start the installation, head to [Setting Up OutSystems](intro.md).
 
 ## Platform Server
@@ -186,42 +180,37 @@ The use of double-byte characters with DB2 databases is not supported.
 To develop your applications using OutSystems, developers need to install **Service Studio** and **Integration Studio** development tools on their desktops.
 The latest version of the development tools are available in the [OutSystems downloads page](https://www.outsystems.com/Downloads/search/Development+Environment/11/).
 
-Installation requirements for these tools are as follows.
+### Service Studio 
+
+Before setting up Service Studio make sure that your computer meets the following requirements:
 
 ### Hardware (minimum requirements)
 
-* 1.8 GHz dual-core processor (or better)
-* 2 GB of RAM (4 GB recommended)
+* 1.8 GHz dual-core processor or better.
+* 2 GB of RAM (4 GB recommended).
 * 1 GB of free disk space
-
-Limitations:
-
-* The touch feature of touch screen devices is not supported, however, you can use touch screen devices with keyboard and mouse.
-
-### Supported Operating Systems
-
-* Windows 10 (64-bit)
-* Windows 8 (64-bit)
-* Windows 7 (64-bit)
-* Microsoft Windows Server 2019, since Development Environment 11.6.5
-* Microsoft Windows Server 2016
-
-For the versions above, OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
 
 <div class="info" markdown="1">
 
-The 32-bit versions of Windows 10, Windows 8, and Windows 7 are supported up to Development Environment 11.6.7.
-
-Microsoft Windows Server 2008 and Microsoft Windows Server 2012 are supported up to Development Environment 11.6.5.
+In Apple devices using Apple Silicon M1 processor, Service Studio runs under the Rosetta 2 emulation.
 
 </div>
 
-### Required Software
+#### Operating System
 
-* Microsoft .NET Framework 4.7.2 (or higher).
+**macOS (cross-platform Service Studio only):**
 
-* To integrate with external systems using Integration Studio to edit the source code of Extension Actions:  
-    Visual Studio 2015, Visual Studio 2017, or Visual Studio 2019 (since Development Environment 11.6.7).
+* macOS Catalina
+* macOS Big Sur
+
+**Windows:**
+
+* Windows 10 (64-bit)
+* Windows 8 (64-bit)
+* Microsoft Windows Server 2019
+* Microsoft Windows Server 2016
+
+#### Required Software
 
 * To perform client-side debugging in Service Studio using a desktop browser:  
     Google Chrome version 54 or later.
@@ -232,7 +221,42 @@ Microsoft Windows Server 2008 and Microsoft Windows Server 2012 are supported up
 * To perform client-side debugging on an iOS mobile device:  
     iTunes 12.1.3 or later.
 
-### Required Network Connection
+#### Network
+
+You need an internet connection to install Service Studio with a minimum speed of 1 Mbps for both downloading and uploading. You need an internet connection even when installing Service Studio on a virtual machine.
+
+### Integration Studio
+
+Installation requirements are as follows.
+
+#### Hardware (minimum requirements)
+
+* 1.8 GHz dual-core processor (or better)
+* 2 GB of RAM (4 GB recommended)
+* 1 GB of free disk space
+
+Limitations:
+
+* The touch feature of touch screen devices is not supported, however, you can use touch screen devices with keyboard and mouse.
+
+#### Operating System
+
+* Windows 10 (64-bit)
+* Windows 8 (64-bit)
+* Windows 7 (64-bit)
+* Microsoft Windows Server 2019, since Development Environment 11.6.5
+* Microsoft Windows Server 2016
+
+For the versions above, OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
+
+#### Required Software
+
+* Microsoft .NET Framework 4.7.2 (or higher).
+
+* To integrate with external systems using Integration Studio to edit the source code of Extension Actions:  
+    Visual Studio 2015, Visual Studio 2017, or Visual Studio 2019 (since Development Environment 11.6.7).
+
+#### Required Network Connection
 
 Minimum speed of 1 Mbps for both downloading and uploading.
 

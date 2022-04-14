@@ -5,6 +5,12 @@ guid: 6af39380-3f07-4666-bd86-865b63ed4703
 
 # Invalid SAP Connection Error
 
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
+
 The `Invalid SAP Connection` error is issued in the following situation:
 
 * `(<connection name>) must have at least one remote function`

@@ -95,3 +95,4 @@ To practice, check these exercises where you can see examples of Local Variables
 </tbody>
 </table>
 
+<meta name="application_types" content="traditional web apps, mobile apps, reactive web apps" />

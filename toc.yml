@@ -959,6 +959,8 @@
     - topics:
         - href: setup-maintain/setup/possible-setups/intro.md
         - topics:
+            - href: setup-maintain/setup/possible-setups/infra-architecture/infra-architecture.md
+            - href: setup-maintain/setup/possible-setups/infra-architecture/deploy-cloud.md
             - href: setup-maintain/setup/possible-setups/ha-scalability/intro.md
             - href: setup-maintain/setup/possible-setups/cloud-architecture.md
         - href: setup-maintain/setup/system-requirements.md

@@ -96,6 +96,8 @@
             - href: develop/ui/accessibility/aria-roles-and-attributes.md
             - href: develop/ui/accessibility/ui-patterns-accessibility-reference.md
             - href: develop/ui/accessibility/additional-accessibility-resources.md
+            - href: develop/ui/accessibility/accessibility-web/accessibility-web.md
+            - href: develop/ui/accessibility/accessibility-web/vpat-template.md
 
         # How to use Screen Templates
         - href: develop/ui/screen-templates-use/intro.md

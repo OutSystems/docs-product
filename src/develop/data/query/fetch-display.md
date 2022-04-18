@@ -32,7 +32,7 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
     ![New screen window](images/new-screen-ss.png)
    
-1. Add data sources to your app by referencing some Entities in the **Manage Dependencies** window (**Ctrl+Q**). This example app [references OutSystems sample data](../../../develop/ui/screen-templates-create/sample-data.md#Referencing_sample data_in_apps). Once you reference Entities, they're available in Service Studio under **Data** > **Entities** > **Database**.
+1. Add data sources to your app by referencing some Entities in the **Manage Dependencies** window (**Ctrl+Q**). This example app [references OutSystems sample data](../../../develop/ui/screen-templates-create/sample-data.md#referencing-sample-data-in-apps). Once you reference Entities, they're available in Service Studio under **Data** > **Entities** > **Database**.
 
     ![Database Entities in Service Studio](images/database-entities-ss.png)
 

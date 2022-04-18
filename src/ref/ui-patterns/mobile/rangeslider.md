@@ -6,7 +6,7 @@ guid: e4c1bddc-985a-4895-b74e-9fb7e406c8a9
 app_type: mobile apps, reactive web apps
 ---
 
-# Range Slider reference
+# Range Slider Reference
 
 <div class="info" markdown="1">
 

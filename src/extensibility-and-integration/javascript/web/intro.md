@@ -6,7 +6,7 @@ guid: ade87f50-8404-4392-88d0-e33397418fe9
 app_type: traditional web apps
 ---
 
-# Extend Your Traditional Web App Using JavaScript
+# Extend your Traditional Web App using JavaScript
 
 <div class="info" markdown="1">
 

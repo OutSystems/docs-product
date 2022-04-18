@@ -6,7 +6,7 @@ guid: 3d02e722-3225-47fa-b343-d6188e21d174
 app_type: mobile apps
 ---
 
-# Publish your Mobile iOS application to the Apple App Store
+# Publish Your Mobile iOS Application to the Apple App Store
 
 <div class="info" markdown="1">
 

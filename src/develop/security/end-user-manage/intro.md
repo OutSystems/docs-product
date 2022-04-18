@@ -6,7 +6,7 @@ guid: 907b0fd3-bc46-4391-aae2-673296d795d9
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# End users
+# End Users
 An end user is someone who uses your OutSystems application(s). Each non-anonymous end user who interacts with your apps counts toward the user limits established in your subscription. 
 
 ## Internal and external end users

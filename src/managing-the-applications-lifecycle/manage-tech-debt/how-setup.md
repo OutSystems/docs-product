@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 # How to set up Architecture Dashboard
 
 Learn how to configure Architecture Dashboard so you can start using it.  
-This topic shows you how to add an infrastructure and what the prerequisites are, and how to associate an IT user with Architecture Dashboard.
+This topic shows you how to add an infrastructure and what the prerequisites are, and how to associate an IT user with Architecture Dashboard. 
 
 <div class="info" markdown="1">
 

@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How does Architecture Dashboard work
 
-Architecture Dashboard includes the following pieces:
+Architecture Dashboard includes the following pieces: 
 
 Architecture Dashboard SaaS
 :   A "Software as a Service" that processes and shows all data collected by the Architecture Dashboard LifeTime Plugin.

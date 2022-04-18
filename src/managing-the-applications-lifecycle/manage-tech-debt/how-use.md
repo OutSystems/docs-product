@@ -7,7 +7,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Getting started with Architecture Dashboard
 
-After [setting up Architecture Dashboard](how-setup.md) and after the first data synchronization occurs, you are ready to use Architecture Dashboard.
+After [setting up Architecture Dashboard](how-setup.md) and after the first data synchronization occurs, you are ready to use Architecture Dashboard. 
 
 The following guides help you get started on your journey as an Architecture Dashboard user:
 

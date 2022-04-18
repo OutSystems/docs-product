@@ -9,7 +9,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to use a proxy to connect to Architecture Dashboard
 
-The Architecture Dashboard plugin can use a forward proxy while connecting to the Architecture Dashboard Software as a Service (SaaS).
+The Architecture Dashboard plugin can use a forward proxy while connecting to the Architecture Dashboard Software as a Service (SaaS). 
 
 ## Prerequisites
 

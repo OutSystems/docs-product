@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Optimize data preparation
 
-Data preparation for a screen should be very efficient. This ensures a pleasant experience for the user.
+Data preparation for a screen should be very efficient. This ensures a pleasant experience for the user. 
 
 Data preparation is usually inefficient when:
 

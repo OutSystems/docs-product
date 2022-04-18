@@ -9,7 +9,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Control image size
 
-The images in web or mobile applications are often produced by design agencies whose primary goal is to achieve high definition and many details. This produces big image files. Other typical situation is the use of existing images from a database, originally collected for a purpose different than mobile/web application.
+The images in web or mobile applications are often produced by design agencies whose primary goal is to achieve high definition and many details. This produces big image files. Other typical situation is the use of existing images from a database, originally collected for a purpose different than mobile/web application. 
 
 These result in images that are too large for the target display size. Developers tend to resolve this by simply controlling the width and height of the HTML attributes of an image. However, they should prepare the images for optimized load times.
 

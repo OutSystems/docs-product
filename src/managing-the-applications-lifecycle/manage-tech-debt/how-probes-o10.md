@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to configure Architecture Dashboard probes in OutSystems 10
 
-1. Go to **LifeTime** (`https://<lifetime_environment>/lifetime`).
+1. Go to **LifeTime** (`https://<lifetime_environment>/lifetime`). 
 
 1. Select **Plugins** \> **Architecture Dashboard**.
 

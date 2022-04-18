@@ -9,7 +9,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Appropriate record counting
 
-Use `.Count` property to get the number of rows returned by an Aggregate or a SQL query.
+Use `.Count` property to get the number of rows returned by an Aggregate or a SQL query. 
 
 When the `.Count` property is evoked, the compiler generates a second query to perform the counting without Maxrecords limitation. The original query is usually designed for retrieving data, not for counting.
 

@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to enable or disable auto-classification
 
-AI auto-classification allows you to onboard factories into the Architecture Dashboard and classify each module so that it fits into the right architecture layer.
+AI auto-classification allows you to onboard infrastructures into the Architecture Dashboard and classify each module so that it fits into the right architecture layer.
 
 ## Prerequisites
 

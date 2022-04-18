@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 As a team lead, **Architecture Dashboard** provides you with an overview of the technical debt of organization's technical debt as well as detailed overview of the technical debt of your teams's apps.
 
-From the Apps canvas, you can drill down into the team's problematic modules, and take the necessary steps to reduce the technical debt score for these areas.
+From the Apps canvas, you can drill down into the team's problematic modules, and take the necessary steps to reduce the technical debt score for these areas. 
 
 This guide assumes the following:
 

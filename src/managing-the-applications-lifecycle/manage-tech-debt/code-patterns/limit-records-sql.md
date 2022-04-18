@@ -9,7 +9,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Control the number of records fetched from the DB
 
-In an app usually only a fixed set of rows is returned when listing information. Additional records are fetched with the use of pagination or infinite scroll mechanism. Your Aggregates or SQL queries should always take into account the required number of records.
+In an app usually only a fixed set of rows is returned when listing information. Additional records are fetched with the use of pagination or infinite scroll mechanism. Your Aggregates or SQL queries should always take into account the required number of records. 
 
 ## Impact
 

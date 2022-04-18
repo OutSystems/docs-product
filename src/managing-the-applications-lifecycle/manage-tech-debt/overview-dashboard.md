@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Get an overview of the overall technical debt
 
-The **Infrastructure overview** dashboard gives architects and development team leaders a better understanding of the technical debt across their factory:
+The **Infrastructure overview** dashboard gives architects and development team leaders a better understanding of the technical debt across their factory: 
 
 * What is the current status
 * How is the technical debt distributed

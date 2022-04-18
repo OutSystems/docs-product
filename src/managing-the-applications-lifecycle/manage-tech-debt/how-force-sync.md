@@ -9,7 +9,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to request a synchronization
 
-Synchronization of data between the Architecture Dashboard LifeTime probe and the Architecture Dashboard SaaS occurs every 12 hours, but you may also request unscheduled synchronizations.
+Synchronization of data between the Architecture Dashboard LifeTime probe and the Architecture Dashboard SaaS occurs every 12 hours, but you may also request unscheduled synchronizations. 
 
 <div class="info" markdown="1">
 

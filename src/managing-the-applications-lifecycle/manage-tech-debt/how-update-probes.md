@@ -9,7 +9,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to update the Architecture Dashboard probes
 
-If you have [**Full Control** permission assigned as default role](how-works.md#maint-op-permissions) for the code analysis environment, you see the following message when an updated versions of the probes is available:
+If you have [**Full Control** permission assigned as default role](how-works.md#maint-op-permissions) for the code analysis environment, you see the following message when an updated versions of the probes is available: 
 
 ![](images/probes-update-message-ad.png)
 

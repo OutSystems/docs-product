@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 As an architect, the Architecture Dashboard provides you with an overview of your organization’s technical debt.
 
-From the Apps canvas, you can check the technical debt of all the apps in your infrastructure and take the necessary steps to reduce the technical debt score for problematic areas.
+From the Apps canvas, you can check the technical debt of all the apps in your infrastructure and take the necessary steps to reduce the technical debt score for problematic areas. 
 
 This guide assumes the following:
 

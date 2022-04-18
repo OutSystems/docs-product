@@ -11,7 +11,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 # Code Analysis Patterns
 
 This topic includes the list of code patterns analyzed by the current version of Architecture Dashboard.
-The patterns that only apply to a subset of the type of apps, include that information.
+The patterns that only apply to a subset of the type of apps, include that information. 
 
 ## Architecture
 

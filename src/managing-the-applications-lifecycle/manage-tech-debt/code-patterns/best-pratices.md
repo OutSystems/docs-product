@@ -9,5 +9,5 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Best practices
 
-This section contains extra information regarding specific code patterns.
+This section contains extra information regarding specific code patterns. 
 

@@ -5,6 +5,7 @@ summary: Reference information on the Checkbox widget for allowing the user to c
 tags: outsystems-designing-screens; reference; designing-screens; check-box
 locale: en-us
 guid: 4d0eddfa-fe0b-4811-8493-51c59d434c3e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Checkbox

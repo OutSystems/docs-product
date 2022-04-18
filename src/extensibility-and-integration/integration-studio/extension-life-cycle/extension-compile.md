@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 4e4db0cf-3fc9-4646-b737-a4563bc7a9c6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Compile the Extension

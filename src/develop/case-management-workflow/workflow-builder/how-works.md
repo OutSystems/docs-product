@@ -3,6 +3,7 @@ tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Dev
 summary: Learn how Workflow Builder works.
 guid: 03a05097-7984-4e88-86f2-c87418286674
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How Workflow Builder works

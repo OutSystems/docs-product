@@ -3,6 +3,7 @@ summary: Overview of the parts that make a chatbot in OutSystems and how they fu
 tags:
 locale: en-us
 guid: b7b3693d-5efc-4f7e-bef5-472a07175945
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # The chatbot architecture

@@ -3,6 +3,7 @@ summary: Use the Firebase-based plugins Analytics, Crashlytics, and Performance 
 tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
 locale: en-us
 guid: 188c9757-ce29-4f78-9717-4e42226e0a4d
+app_type: mobile apps
 ---
 
 # Firebase Plugins

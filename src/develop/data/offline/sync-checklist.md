@@ -3,6 +3,7 @@ summary: A checklist with tips and advice for creating mobile apps that synchron
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: d56de308-6a6f-4003-8573-ba69db403011
+app_type: mobile apps
 ---
 
 # Offline Sync Checklist

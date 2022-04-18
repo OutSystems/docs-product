@@ -3,6 +3,7 @@ summary: Learn how to access the Users application, where you can create, update
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 2cbb2e7d-9936-4bb4-8791-240ade1d1ad6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Access the Users application

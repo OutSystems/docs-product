@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 00999f64-7e94-4592-a8e1-a592ae2f677b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Module Name Changed Warning

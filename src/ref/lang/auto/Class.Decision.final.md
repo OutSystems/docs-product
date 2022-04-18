@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.ProcessNodes+Decision+Kind
 helpids: 0
 locale: en-us
 guid: 87b4ecb6-b6c3-4c7b-b2ab-603bd95f36e2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Decision

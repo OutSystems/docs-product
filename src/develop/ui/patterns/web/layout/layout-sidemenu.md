@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Layout Side Menu uses the space available on the side to improve navigation. 
 locale: en-us
 guid: a2d35777-96f1-42e8-b9b6-760eb59d24cd
+app_type: traditional web apps
 ---
 
 # Layout Side Menu

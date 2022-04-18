@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 9ecd6d17-54b0-4f53-9fcc-b6c9cee561e5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Designing Parallel Activities

@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: daf2fc35-917d-446f-b1a8-3f821f59dda8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Audit Suggestion Warning

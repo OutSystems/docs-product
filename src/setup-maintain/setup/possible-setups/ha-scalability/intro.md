@@ -3,6 +3,7 @@ summary: Learn how to scale your OutSystems infrastructure and configure it for 
 tags: 
 locale: en-us
 guid: eaf6fefe-684a-42aa-b27f-a3ab234e8aac
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # High availability and scalability strategies

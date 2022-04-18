@@ -2,6 +2,7 @@
 tags: support-Integrations_Extensions; support-Integrations_Extensions-overview
 locale: en-us
 guid: d74dc607-6024-4733-8a3e-4ce55e37f1cb
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Integrate with a SAP System

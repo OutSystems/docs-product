@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: fa3cf5ad-5e7b-4fdd-acc5-7b3f6c43791e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Resource Editor

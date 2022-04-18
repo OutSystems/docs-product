@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Tooltip dynamically displays simple informative content on end user interaction.
 locale: en-us
 guid: 0e075d6f-21b5-4929-a591-d27832d9b40a
+app_type: traditional web apps
 ---
 
 # Tooltip

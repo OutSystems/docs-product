@@ -3,6 +3,7 @@ summary: Learn the best way to handle immediate corrective development situation
 tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: e79dfbfc-4c0b-4239-ae8d-824f5da95d2d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Apply a Hotfix

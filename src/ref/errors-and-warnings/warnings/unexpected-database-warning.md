@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: dc568697-e3e5-4dae-9f80-7c4663228e68
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Unexpected Database Warning

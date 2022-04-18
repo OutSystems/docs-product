@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 69801bb7-6818-4061-acb2-4ee403966040
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Expression Should Be Escaped Warning

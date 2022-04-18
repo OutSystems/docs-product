@@ -3,6 +3,7 @@ summary: Assign custom icons for your mobile app, specifying versions for each s
 tags: runtime-mobile; support-Mobile_Apps-featured
 locale: en-us
 guid: 4d07edaa-0b7b-41b8-bd1f-59c4b1bfd103
+app_type: mobile apps
 ---
 
 # Modify the App Icon

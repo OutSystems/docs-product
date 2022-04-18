@@ -3,6 +3,7 @@ summary: Learn how to enable and manage the service that generates the mobile ap
 tags: runtime-mobile; support-mobile
 locale: en-us
 guid: a5d92b93-40f7-418b-a2b3-40e81e820760
+app_type: mobile apps
 ---
 
 # Mobile Apps Build Service

@@ -4,6 +4,7 @@ summary: Reference information on the Icon widget for adding a scalable vector p
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; icon
 locale: en-us
 guid: 46d19d6d-4088-4950-805d-c07e75825805
+app_type: mobile apps, reactive web apps
 ---
 
 # Icon

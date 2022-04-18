@@ -4,6 +4,7 @@ helpids: 4026
 tags: runtime-traditionalweb
 locale: en-us
 guid: 3facb0e8-ae9c-4efa-95ea-27bacf9806fa
+app_type: traditional web apps
 ---
 
 # Check Box Widget

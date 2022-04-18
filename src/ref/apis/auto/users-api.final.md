@@ -3,6 +3,7 @@ summary: API to manage End Users and Groups.
 tags: support-devOps; support-Security
 locale: en-us
 guid: ce2ac90a-1911-4fcf-8c8d-016110b3f8e2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Users API

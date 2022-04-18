@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced use cases for the Touch Events UI Pattern.
 locale: en-us
 guid: b6452069-3868-4dde-8e33-9a2392e8d548
+app_type: mobile apps, reactive web apps
 ---
 
 # Touch Events Reference

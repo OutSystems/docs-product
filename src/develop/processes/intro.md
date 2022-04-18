@@ -3,6 +3,7 @@ summary: Use OutSystems Business Process Technology (BPT) to design and manage y
 tags: support-webapps-featured
 locale: en-us
 guid: ce023611-1cbc-4c61-a778-2a66167bc7ba
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Processes (BPT)

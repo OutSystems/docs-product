@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 helpids: 30374
 locale: en-us
 guid: 641c106a-d688-42a3-9b73-8fd9791a673b
+app_type: traditional web apps
 ---
 
 # Customize or redirect the application URL

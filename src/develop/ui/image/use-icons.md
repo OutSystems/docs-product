@@ -3,6 +3,7 @@ summary: Learn how to display an icon to help end users identify functionality o
 tags:
 locale: en-us
 guid: ae0d2c36-c50f-4084-b986-d19572b31cc5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Icons

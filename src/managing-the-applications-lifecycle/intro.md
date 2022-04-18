@@ -3,6 +3,7 @@ summary: Learn more about Application Lifecycle Management (ALM) and how you can
 tags: support-Application_Lifecycle; support-Application_Lifecycle-overview
 locale: en-us
 guid: e9f6f711-2df2-42a0-90c1-3b9bc8b3926b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Managing the Applications Lifecycle

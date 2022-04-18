@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced Use Cases for the Navigation Bar UI Pattern.
 locale: en-us
 guid: 7eec386c-a22e-4f3a-a6cd-2509360fadfc
+app_type: traditional web apps
 ---
 
 # Navigation Bar Reference

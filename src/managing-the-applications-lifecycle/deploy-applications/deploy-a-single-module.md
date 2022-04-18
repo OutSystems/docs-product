@@ -3,6 +3,7 @@ summary: Learn how to deploy a single application module, instead of all modules
 tags: runtime-traditionalweb
 locale: en-us
 guid: ee8de340-e9d3-4392-8c8e-a2f3d2c02340
+app_type: traditional web apps
 ---
 
 # Deploy a Single Module

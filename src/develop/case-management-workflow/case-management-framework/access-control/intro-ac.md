@@ -3,6 +3,7 @@ tags:
 summary: Learn about access control and how to do it with the Case Management framework.
 guid: a598b60e-9acb-4e15-994b-36901873f2ee
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Managing access to cases

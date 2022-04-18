@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Section Index organizes the content of a screen, enabling quick navigation within the page.
 locale: en-us
 guid: f2009318-b804-4f98-88b9-3a654a6835b7
+app_type: mobile apps, reactive web apps
 ---
 
 # Section Index

@@ -3,6 +3,7 @@ summary: Handle and raise exceptions in OutSystems applications.
 tags: article-page; support-Application_Troubleshooting; support-webapps
 locale: en-us
 guid: 7215bc5b-f7dd-4da9-9c09-c4be569b9992
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Handle Exceptions

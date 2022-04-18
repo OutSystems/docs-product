@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 9b85a078-cdb8-467d-8fca-001f5f88b4a0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Close Wait Action

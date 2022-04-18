@@ -3,6 +3,7 @@ summary: Create your app logic faster with OutSystems AI-assisted development. U
 tags: support-application_development;
 locale: en-us
 guid: 9ca5abbb-ff2d-4aaf-9437-a6565e9df8f6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # AI-assisted development

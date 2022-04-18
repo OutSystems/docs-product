@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Light Box Image displays an image thumbnail that is clicked to open a fullscreen image.
 locale: en-us
 guid: 615116df-3bdc-4500-9451-9815ef342240
+app_type: traditional web apps
 ---
 
 # Light Box Image

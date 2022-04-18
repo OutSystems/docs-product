@@ -2,6 +2,7 @@
 summary: How to add support for a different character encoding using the SOAP Extensibility API.
 locale: en-us
 guid: 14fef923-0b13-45f6-b7f3-d5a676ba5565
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use a different character encoding

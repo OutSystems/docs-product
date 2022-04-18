@@ -2,6 +2,7 @@
 summary: UI reference for the Debugger Tab in Service Studio.
 locale: en-us
 guid: ed50314c-7355-4233-9466-03fcf751bd1c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Debugger Tab Reference

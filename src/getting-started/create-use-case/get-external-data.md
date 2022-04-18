@@ -3,6 +3,7 @@ summary: Learn more about how to get external data in your OutSystems applicatio
 tags:
 locale: en-us
 guid: 4430e635-ef3e-45e4-a2f6-39c74300518d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Get external data in your app

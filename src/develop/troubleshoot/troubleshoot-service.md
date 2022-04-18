@@ -3,6 +3,7 @@ summary: To troubleshoot Service Actions you may need to check Service Action re
 tags:
 locale: en-us
 guid: e37fa5b3-0517-4c62-a0f6-ab2262e44a09
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Troubleshoot Service Actions Using Logs

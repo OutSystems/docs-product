@@ -3,6 +3,7 @@ summary: Learn how to make your OutSystems Reactive Web applications accessible 
 tags: article-page; runtime-mobileandreactiveweb
 locale: en-us
 guid: 845ea0d1-6110-4a9f-a4ca-19e53b178825
+app_type: mobile apps, reactive web apps
 ---
 
 # Accessibility

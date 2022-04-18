@@ -3,6 +3,7 @@ tags:
 summary: Learn about the architecture of apps published with Experience Builder and insights on how to extend these apps.
 locale: en-us
 guid: 5e52f2fd-36e6-4ebb-b75d-5d3e2158cd35
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Extend your Experience Builder app in Service Studio

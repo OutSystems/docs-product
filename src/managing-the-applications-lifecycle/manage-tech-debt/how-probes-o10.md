@@ -4,6 +4,7 @@ summary: Learn about pre-requirements and how to setup Architecture Dashboard.
 en_title:
 locale: en-us
 guid: e1303736-5727-4eb9-82a1-dc7039b26731
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 

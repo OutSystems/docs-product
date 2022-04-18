@@ -2,6 +2,7 @@
 tags: 
 locale: en-us
 guid: 9ad139dd-e6af-4245-8dba-9185b2317192
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Built-in HTTP Status Codes

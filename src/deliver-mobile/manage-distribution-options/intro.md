@@ -3,6 +3,7 @@ summary: Mobile apps updates distribution setting lets you control how the apps 
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: c9f2e601-8b4c-4dc7-93d4-e456c058b6f4
+app_type: mobile apps
 ---
 
 # Technical Preview - Configure mobile apps updates distribution

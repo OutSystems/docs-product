@@ -3,6 +3,7 @@ summary: The Emails API allows you to get information from the OutSystems data m
 tags: runtime-traditionalweb
 locale: en-us
 guid: 7ae6fb7d-03dc-4f79-aaf5-3756bf26ecbe
+app_type: traditional web apps
 ---
 
 # Emails API

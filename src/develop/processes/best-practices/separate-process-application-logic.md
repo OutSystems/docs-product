@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 1961c6df-66b1-4e5d-a324-b5bd09df1186
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Separate Process Logic from Application Logic

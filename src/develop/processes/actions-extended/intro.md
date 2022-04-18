@@ -2,6 +2,7 @@
 tags: support-application_development; support-webapps
 locale: en-us
 guid: 50d5de82-d7fb-48ed-9e26-41eccd0373b1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Process Extended Actions

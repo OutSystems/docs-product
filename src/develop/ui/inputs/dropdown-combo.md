@@ -3,6 +3,7 @@ summary: Implement a drop-down list with a native look and feel. To do this, use
 tags:
 locale: en-us
 guid: bc593b2b-0d5d-45ea-9f3d-4fb99df6dedb
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Choose One Value from a List

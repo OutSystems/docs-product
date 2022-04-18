@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced uses cases for the Align Center UI Pattern.
 locale: en-us
 guid: b4a62bda-9298-473c-bc03-c0acc4de20f3
+app_type: traditional web apps
 ---
 
 # Align Center Reference

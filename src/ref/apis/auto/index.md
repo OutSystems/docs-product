@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: fb2fd6a6-56d0-4b27-a119-65eab40c0d45
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Auto-generated API Reference

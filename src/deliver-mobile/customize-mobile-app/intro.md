@@ -3,6 +3,7 @@ summary: Customize your mobile app regarding device characteristics and mobile p
 tags: runtime-mobile
 locale: en-us
 guid: 8e510d45-a9d0-44c9-b2c1-5f676be38a25
+app_type: mobile apps
 ---
 
 # Customize Your Mobile App

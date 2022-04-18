@@ -3,6 +3,7 @@ summary: OutSystems.AI Language Analysis component can detect key phrases, calcu
 tags:
 locale: en-us
 guid: 5e2273f8-4fa3-43a4-b0bf-7a177534bca2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use the AI Language Analysis component in your OutSystems apps

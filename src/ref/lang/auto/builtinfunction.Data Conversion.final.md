@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 97603ff0-1f23-42e0-aaad-0e566af8eeec
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Data Conversion

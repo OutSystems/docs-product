@@ -3,6 +3,7 @@ tags:
 summary: Learn how to check the version of Platform Server of an Environment.
 guid: 375789e9-8e68-42e9-abf8-731bc1fdc1c1
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to publish a Solution in an Environment

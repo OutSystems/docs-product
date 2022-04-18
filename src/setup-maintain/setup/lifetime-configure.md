@@ -3,6 +3,7 @@ summary: LifeTime is the centralized management console for managing your enviro
 tags: support-Application_Lifecycle; support-Installation_Configuration; version-11
 locale: en-us
 guid: 581ba434-6216-4005-8974-44c44285d933
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configure the infrastructure management console

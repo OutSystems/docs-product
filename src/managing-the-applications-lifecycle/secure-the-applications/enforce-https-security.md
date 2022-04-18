@@ -3,6 +3,7 @@ summary: Check how IT Managers or Administrators can override and enforce the HT
 tags: support-Security-overview
 locale: en-us
 guid: a152ecbb-2419-489f-87c5-000918d502f0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Enforce HTTPS Security

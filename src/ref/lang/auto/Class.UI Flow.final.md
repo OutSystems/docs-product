@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Flows+WebFlow+Kind, ServiceStudio.Model.NRFlows+WebFl
 helpids: 4034, 0
 locale: en-us
 guid: c6a9d058-311b-4564-8685-cd992ed4563f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # UI Flow

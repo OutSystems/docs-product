@@ -3,6 +3,7 @@ summary: Use this synchronization pattern when your users only need to read data
 tags: runtime-mobile
 locale: en-us
 guid: b671dd23-9977-4a68-97f4-82cd56bc6b4d
+app_type: mobile apps
 ---
 
 # Read-Only Data

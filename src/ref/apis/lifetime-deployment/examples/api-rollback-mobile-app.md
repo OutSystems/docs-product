@@ -2,6 +2,7 @@
 summary: Learn how to rollback a mobile app using the LifeTime API.
 locale: en-us
 guid: 9e68edab-dc6e-4606-b3b8-ceb4f1c2d406
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Rollback a Mobile App using the LifeTime API

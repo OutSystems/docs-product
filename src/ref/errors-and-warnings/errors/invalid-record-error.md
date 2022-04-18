@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: a1d0e4e5-5910-479b-912f-4580537c97d4
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Record Error 

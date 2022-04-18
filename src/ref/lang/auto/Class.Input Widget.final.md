@@ -4,6 +4,7 @@ helpids: 4024
 tags: runtime-traditionalweb
 locale: en-us
 guid: 194c0eca-3e99-4ee0-9ffd-d153e14b2225
+app_type: traditional web apps
 ---
 
 # Input Widget

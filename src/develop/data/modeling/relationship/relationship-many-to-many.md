@@ -3,6 +3,7 @@ summary: How to implement a many-to-many relationship using a junction table in 
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 9a7e1290-8439-4b9b-8471-ee1114d03024
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create a Many-to-Many Relationship

@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Columns split content into multiple columns with responsive capabilities to improve the way information is displayed.
 locale: en-us
 guid: 0488b53b-190d-4467-83a4-76bae70bf4c2
+app_type: traditional web apps
 ---
 
 # Columns

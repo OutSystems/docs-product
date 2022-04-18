@@ -3,6 +3,7 @@ summary: Fix the target directory of a resource to allow your deployment to comp
 tags:
 locale: en-us
 guid: 3be20de4-b979-43e3-89a4-c56d7b9ea6f1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Change target directory error

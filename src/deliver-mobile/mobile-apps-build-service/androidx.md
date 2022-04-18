@@ -3,6 +3,7 @@ summary: AndroidX replaces the old Android Support Library. In MABS 6, AndroidX 
 tags: runtime-mobile
 locale: en-us
 guid: 1544fe43-3dbd-427e-bfd2-69ab0594f2e2
+app_type: mobile apps
 ---
 
 # Building apps with AndroidX

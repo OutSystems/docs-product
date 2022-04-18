@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Nodes+GoToWebDestination+Kind
 helpids: 0
 locale: en-us
 guid: cf74bb79-fd4f-4dd9-8e41-36bfb60cedab
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Go To Destination

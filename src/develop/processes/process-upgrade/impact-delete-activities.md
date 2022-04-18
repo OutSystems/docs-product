@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 0fa73852-d845-4c80-8b71-0b9c177a4f81
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Impact of Deleting Activities from Process Flows

@@ -5,6 +5,7 @@ summary: Reference information on the Button group widget available for adding a
 tags: runtime-mobileandreactiveweb;
 locale: en-us
 guid: 018284ce-ede4-43d4-b85b-189b2d5a86ac
+app_type: mobile apps, reactive web apps
 ---
 
 # Button Group

@@ -3,6 +3,7 @@ tags: Workflow Builder; Case Management; OutSystems; Business Users; Citizen Dev
 summary: Get an explanation of errors in Workflow Builder
 guid: 71f53a62-0c7d-499b-8772-7990c58ee9d2
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Workflow Builder error reference

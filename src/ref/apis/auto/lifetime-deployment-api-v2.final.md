@@ -3,6 +3,7 @@ summary: Allows you to manage applications, modules, environments and deployment
 tags: article-page; support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
 locale: en-us
 guid: 8ebd5215-2960-4071-8a9c-83fe39674ee0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # LifeTime API v2

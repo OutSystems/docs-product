@@ -3,6 +3,7 @@ summary: Check how to solve some issues you might find while developing your mob
 tags: runtime-mobile; support-application_development; support-Application_Troubleshooting; support-Application_Troubleshooting-overview; support-Mobile_Apps; support-Mobile_Apps-overview
 locale: en-us
 guid: 2e4ff1b0-9813-4931-9a9e-c265df4c74f9
+app_type: mobile apps
 ---
 
 # Solve Common Mobile App Development Issues

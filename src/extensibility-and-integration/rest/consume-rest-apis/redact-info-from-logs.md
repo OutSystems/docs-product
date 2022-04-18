@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 966c33e2-bdc0-4847-91b3-9fbda9b29d9f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Redacting information from REST API logs

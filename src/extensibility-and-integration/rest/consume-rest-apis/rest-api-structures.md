@@ -3,6 +3,7 @@ summary: Check how OutSystems creates and reuses Structures for consumed REST AP
 tags: 
 locale: en-us
 guid: 3bd954b8-a2db-4065-bac1-a7068aa6f538
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # REST API Structures

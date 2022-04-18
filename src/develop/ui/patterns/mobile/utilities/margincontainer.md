@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Use the Margin Container and easily add symmetrical padding around a container.
 locale: en-us
 guid: 8099782f-c5ac-4a8f-a70a-fa9946d834a3
+app_type: mobile apps, reactive web apps
 ---
 
 # Margin Container

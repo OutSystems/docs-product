@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Icon Badge displays numerical information as notification.
 locale: en-us
 guid: 085bea26-5d10-41b4-a31b-9e840315b759
+app_type: mobile apps, reactive web apps
 ---
 
 # Icon Badge

@@ -3,6 +3,7 @@ summary: Check the causes and recomendations on how to solve the different Inval
 tags:
 locale: en-us
 guid: cc8e619d-18de-4b4a-a62a-d4058ce5e528
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Data Type Error

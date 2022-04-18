@@ -3,6 +3,7 @@ summary: Translate your app directly from Service Studio by translating the modu
 tags: support-application_development
 locale: en-us
 guid: e664c563-cb0f-491c-bd05-8f1684d4a5a3
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Translate your app

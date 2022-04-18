@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Entity+Kind, ServiceStudio.Model.SyntheticEntity+Kind
 helpids: 15005
 locale: en-us
 guid: 9c912e20-4808-41f2-93e8-6e83a3654ab7
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Entity

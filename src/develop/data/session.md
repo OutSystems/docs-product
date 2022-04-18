@@ -3,6 +3,7 @@ summary: Learn how OutSystems uses Sessions to maintain information about the pr
 tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: a6784b12-4617-437f-b5e5-ec8c8b579006
+app_type: traditional web apps
 ---
 
 # Sessions in Web Applications

@@ -2,6 +2,7 @@
 summary: Extensions, defined in Integration Studio, allow you to increment OutSystems functionality and integrate with external systems.
 locale: en-us
 guid: 84e1a2bb-ddb5-40d3-9419-17be22398c15
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Extensions

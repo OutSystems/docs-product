@@ -3,6 +3,7 @@ tags:
 summary: Follow this walkthrough to get started using Experience Builder.
 locale: en-us
 guid: 742c329a-59a4-4138-867b-46f05b621cb6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Experience Builder

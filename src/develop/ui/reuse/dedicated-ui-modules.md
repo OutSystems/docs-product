@@ -3,6 +3,7 @@ summary: Reuse Screens and Blocks between Apps to increase team efficiency and f
 tags: support-application_development; support-Front_end_Development; runtime-reactiveweb;
 locale: en-us
 guid: 04f7cedb-d02b-42e9-b9f4-f7cbf2cb8506
+app_type: reactive web apps
 ---
 
 # Maintain UI in dedicated modules

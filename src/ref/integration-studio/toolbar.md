@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 5395d30e-5e9a-4605-9d92-717fedcfeefb
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Toolbar

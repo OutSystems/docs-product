@@ -3,6 +3,7 @@ summary: Use the logging features of OutSystems, adjusting the logging level of 
 tags: support-application_development; support-Integrations_Extensions
 locale: en-us
 guid: ddb0cd62-4de7-48c2-9f44-3a9240a4ae66
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Troubleshoot a SOAP Web Service

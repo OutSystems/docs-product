@@ -3,6 +3,7 @@ summary: Learn about creating groups, assigning roles to them and managing group
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 17e0082a-7169-482d-a383-89eeab15b9df
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Manage End Users and Organize Roles using Groups

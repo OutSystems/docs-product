@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Search UI Pattern.
 locale: en-us
 guid: cfd34720-b1a4-452c-ab75-0af83bed2963
+app_type: traditional web apps
 ---
 
 # Search Reference

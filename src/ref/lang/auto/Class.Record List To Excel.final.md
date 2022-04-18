@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Nodes+RecordListToExcel+Kind
 helpids: 10002
 locale: en-us
 guid: d1e3abef-bbf3-4455-87b2-3c19acc594bb
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Record List To Excel

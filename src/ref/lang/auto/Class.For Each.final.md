@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Nodes+ForEach+Kind
 helpids: 7004
 locale: en-us
 guid: 6a3422fb-fc3c-429b-9a52-cd0054520ac5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # For Each

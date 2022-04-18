@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Button Group displays available choices to the user.
 locale: en-us
 guid: a42977e0-825d-49b5-bc9b-49025bac70cb
+app_type: traditional web apps
 ---
 
 # Button Group

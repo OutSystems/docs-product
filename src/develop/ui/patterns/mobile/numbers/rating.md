@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Allows users to rate a particular item or service.
 locale: en-us
 guid: f0a35dfd-ff8e-4e04-8a4b-2407efaca4f6
+app_type: mobile apps, reactive web apps
 ---
 
 # Rating

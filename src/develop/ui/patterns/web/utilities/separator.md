@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Separator distributes content into clear groups and ease visual organization.
 locale: en-us
 guid: c2f627d5-7dbf-4c75-a18e-43635917c6e6
+app_type: traditional web apps
 ---
 
 # Separator

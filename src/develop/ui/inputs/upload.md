@@ -3,6 +3,7 @@ summary: Learn how to enable end users to upload files using your application.
 tags:
 locale: en-us
 guid: cf21f903-1b6f-4fe9-b0a0-622c45bac166
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Enable End Users to Upload Files

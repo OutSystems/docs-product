@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: da7b5b2a-a5d9-4e03-b998-7a492a31d304
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Multi-tree Navigator

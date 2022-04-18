@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: dcd74051-5eb0-49fd-af03-3a2553dc978e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Resource Error

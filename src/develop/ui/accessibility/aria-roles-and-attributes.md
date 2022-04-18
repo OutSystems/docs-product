@@ -3,6 +3,7 @@ summary: Learn about Accessible Rich Internet Applications (ARIA) roles and attr
 tags:
 locale: en-us
 guid: e4cd9450-4fe2-4145-8f1b-0852ab8c081d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Accessible Rich Internet Applications roles and attributes

@@ -2,6 +2,7 @@
 summary: How to change the service endpoint at runtime using the SOAP Extensibility API.
 locale: en-us
 guid: a6bf6200-5b57-4941-8d06-1b29a1985d7d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Change service endpoint at runtime

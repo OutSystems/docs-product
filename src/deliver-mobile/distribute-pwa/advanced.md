@@ -3,6 +3,7 @@ summary: Edit the PWA manifest and create a custom service worker.
 tags: support-application_development; runtime-mobile;
 locale: en-us
 guid: 418aac4c-1cdc-40b2-9b69-ba4fd68527f7
+app_type: mobile apps
 ---
 
 # Advanced settings and customizations

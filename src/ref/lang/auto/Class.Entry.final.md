@@ -4,6 +4,7 @@ helpids: 4001
 tags: runtime-traditionalweb
 locale: en-us
 guid: 0acbcb54-7356-46f3-9d36-90d30914abf4
+app_type: traditional web apps
 ---
 
 # Entry

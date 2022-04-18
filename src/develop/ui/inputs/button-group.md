@@ -3,6 +3,7 @@ summary: Let users select a single option from a group of choices, with the Radi
 tags:
 locale: en-us
 guid: 3eb6105e-2157-472f-972f-f3cc133043a5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Pick Only One Option in a Group of Choices

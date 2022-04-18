@@ -3,6 +3,7 @@ summary: Server-to-client data transfer optimization reduces the data the client
 tags:
 locale: en-us
 guid: cad64443-6400-41a9-98e4-154162e790fa
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Server-to-client data transfer optimization

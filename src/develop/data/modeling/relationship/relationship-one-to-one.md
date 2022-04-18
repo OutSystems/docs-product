@@ -3,6 +3,7 @@ summary: How to define a one-to-one relationship between data entities.
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 31531e0f-7653-48b1-810e-027d4586bef3
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create a One-to-One Relationship

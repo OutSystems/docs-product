@@ -3,6 +3,7 @@ summary: The authentication is configurable per environment to meet different se
 tags: runtime-mobileandreactiveweb; support-Security-overview
 locale: en-us
 guid: 74fffe9e-d6fa-4ea9-a8ae-aa7a34a37511
+app_type: mobile apps, reactive web apps
 ---
 
 # Configure App Authentication

@@ -2,6 +2,7 @@
 summary: Fetch data in your apps using human language.
 locale: en-us
 guid: A2F9928D-5F44-4DA0-B567-EDC9191E4A7B
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Early Access Program - Fetch data using human language

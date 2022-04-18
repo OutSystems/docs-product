@@ -2,6 +2,7 @@
 summary: Adding information about the query origin to executed SQL queries allows you to trace underperforming queries back to your OutSystems applications.
 locale: en-us
 guid: 179d378b-8fcb-4446-b8c6-b67abeb1e608
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Trace Executed Queries Back to Your OutSystems Applications

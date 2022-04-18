@@ -3,6 +3,7 @@ summary: The 1-Click Publish executes, in a single step, all the operations nece
 tags:
 locale: en-us
 guid: 7e94a033-566b-43ff-a90a-2f462dd41e60
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # 1-Click Publish the Extension

@@ -3,6 +3,7 @@ summary: Flip Content prioritizes information display, keeping the interface unc
 tags: runtime-mobileandreactiveweb;
 locale: en-us
 guid: 714b1496-4c20-47fd-afcb-a0f2007ad984
+app_type: mobile apps, reactive web apps
 ---
 
 # Flip Content

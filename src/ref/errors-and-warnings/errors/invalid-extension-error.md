@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 0b8a546c-b037-4bc9-a9f0-ae936c88c951
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Extension Error

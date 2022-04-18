@@ -3,6 +3,7 @@ tags:
 summary: This area includes the reference documentation of all the actions availabe in the modules of the Experience Builder Components package.
 locale: en-us
 guid: ffa6668d-ea00-4881-9955-9109d4658bf6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Experience Builder Components package reference

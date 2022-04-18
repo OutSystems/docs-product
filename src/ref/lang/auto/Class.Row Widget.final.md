@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.WebWidgets+EditRecordRow+Kind, ServiceStudio.Model.We
 helpids: 0
 locale: en-us
 guid: 1d16cf24-1073-46b4-9564-b4f35396b46c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Row Widget

@@ -3,6 +3,7 @@ summary: JSON Schema and values expected for the Extensibility Configurations pr
 tags: runtime-mobile
 locale: en-us
 guid: 232410a7-d16f-4258-9742-d9b6f294c600
+app_type: mobile apps
 ---
 
 # Extensibility Configurations JSON Schema

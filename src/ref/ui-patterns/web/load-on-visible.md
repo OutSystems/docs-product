@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Load on Visible UI Pattern
 locale: en-us
 guid: 40fe6f1a-a08c-4b79-b2b4-6961d1a18a42
+app_type: traditional web apps
 ---
 
 # Load on Visible Reference

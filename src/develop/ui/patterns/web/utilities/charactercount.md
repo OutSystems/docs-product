@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Character Count displays the number of characters left to be entered in a target input field.
 locale: en-us
 guid: 35ae7f29-b021-4f09-a081-66c668b816e4
+app_type: traditional web apps
 ---
 
 # Character Count

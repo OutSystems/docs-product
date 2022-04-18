@@ -3,6 +3,7 @@ summary: Learn how to combine OutSystems logic with Azure for advanced chatbot f
 tags:
 locale: en-us
 guid: 01af56ec-fb0d-44ea-a78f-8323557ee6bf
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Reply with cards

@@ -3,6 +3,7 @@ summary: Use the Azure Machine Learning Connector to communicate with an Azure M
 tags:
 locale: en-us
 guid: e59aad71-2eea-41aa-ae91-0aa531532cc1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use the Azure ML Connector in your OutSystems applications

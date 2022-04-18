@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 6af5d9c9-a99e-4940-bc69-c847ef743f6b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Designing Waiting Activities

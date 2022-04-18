@@ -3,6 +3,7 @@ summary: Follow this tutorial to quickly create and test a Traditional Web App e
 tags: runtime-traditionalweb; support-webapps
 locale: en-us
 guid: f84888af-0987-4ec7-98f7-195f6e493292
+app_type: traditional web apps
 ---
 
 # Create Your First Traditional Web App

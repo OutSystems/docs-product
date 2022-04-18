@@ -3,6 +3,7 @@ summary: Check how to create an integration using Integration Builder and how to
 tags: article-page
 locale: en-us
 guid: 6c59c61d-f34b-4ef4-8875-0ea760341cd5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Integration Builder

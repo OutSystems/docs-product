@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 2bb10995-f2e7-48a6-a6d5-2fbb248f09e6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Download an Extension

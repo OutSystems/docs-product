@@ -4,6 +4,7 @@ summary: Learn how to manage the technical debt of your applications at every st
 en_title: Manage technical debt
 locale: en-us
 guid: 7aa53270-fb01-4543-90e4-57907dcc68fe
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Manage technical debt with Architecture Dashboard

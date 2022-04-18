@@ -3,6 +3,7 @@ summary: Learn how to be compliant with the licensing requirements of the third 
 tags: runtime-mobile
 locale: en-us
 guid: a1e335a8-d8f0-4039-bd89-67590def7910
+app_type: mobile apps
 ---
 
 # Compliance with Third Party Licenses

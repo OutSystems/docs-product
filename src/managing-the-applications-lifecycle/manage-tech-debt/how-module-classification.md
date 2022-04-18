@@ -4,6 +4,7 @@ summary: You can change a module's classification in the Architecture Dashboard 
 en_title: 
 locale: en-us
 guid: 429d1c51-f248-425b-902e-2af8b6ec8a2e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to change module classifications

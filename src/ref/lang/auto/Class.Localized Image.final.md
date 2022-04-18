@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.LocalizedImage+Kind, ServiceStudio.Model.ReferenceLoc
 helpids: 0
 locale: en-us
 guid: c29cf435-579e-4912-aed4-af8d6d55f93e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Localized Image

@@ -3,6 +3,7 @@ tags: workflow-builder; case-management; outsystems; business-users; citizen-dev
 summary: Learn how to create an app from scratch in Workflow Builder.
 guid: 23eb1fab-8030-4857-ab70-2e96e1735bc6
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Creating a Workflow Builder app from scratch

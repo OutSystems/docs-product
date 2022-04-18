@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: cfc99287-9b0a-46d6-9daf-b62d281dcbef
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Log data reference

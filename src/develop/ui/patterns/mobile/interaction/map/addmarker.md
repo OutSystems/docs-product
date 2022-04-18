@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: A marker is added to the Map component when the user clicks the map. 
 locale: en-us
 guid: 64103ccc-9190-4483-8145-3f063dd1b823
+app_type: mobile apps, reactive web apps
 ---
 
 # How to add a marker on map click 

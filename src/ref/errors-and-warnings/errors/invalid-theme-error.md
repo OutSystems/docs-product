@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 3b85b1ca-c60b-4109-8b41-64d006328f17
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Theme Error

@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: f5a9f990-3540-4ad7-8623-ca43a8cbf201
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Unused Action Warning

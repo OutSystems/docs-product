@@ -3,6 +3,7 @@ summary: A list of Azure resources that the OutSystems AI components and connect
 tags:
 locale: en-us
 guid: bff3062c-8092-4b41-abf7-b315d1035d39
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # The Azure resources reference

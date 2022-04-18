@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: bd6833c9-7995-4089-94a9-4eead9f5b6b3
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Entity Error

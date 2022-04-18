@@ -3,6 +3,7 @@ summary: Learn what is the right app for your project. Know the difference betwe
 tags: support-application_development; support-Mobile_Apps-overview; support-webapps-overview
 locale: en-us
 guid: 1945689d-cfc3-497f-b313-a8cf051a18d9
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Choose the right app for your project

@@ -5,6 +5,7 @@ summary: Reference information on the Button widget for triggering an action on 
 tags: outsystems-designing-screens; reference; designing-screens; button-widget; trigger-action
 locale: en-us
 guid: 193110a3-2fa3-45ae-9cdb-ae5ba20a7cef
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Button

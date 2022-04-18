@@ -3,6 +3,7 @@ summary: Operands, in an expression, tell the platform which data to use. Read m
 tags: 
 locale: en-us
 guid: 6f93f5d0-94ad-4ced-bd8c-ea8b7599ca05
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Operands

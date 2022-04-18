@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: c4e418eb-f299-41a2-a476-80ff44258482
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid URL Path Error

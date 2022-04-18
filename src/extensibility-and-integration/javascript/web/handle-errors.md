@@ -3,6 +3,7 @@ summary: Learn how to handle JavaScript errors in thrown in some specific situat
 tags: runtime-traditionalweb
 locale: en-us
 guid: d3888e3a-fb8d-44cf-8ec2-b97cd5caa87e
+app_type: traditional web apps
 ---
 
 # Handle JavaScript Errors

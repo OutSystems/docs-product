@@ -3,6 +3,7 @@ summary: Learn how to create an Entity Index to ensure uniqueness and improve fi
 tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 0611c8e9-7cba-4812-8495-88165c39e20e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create an Entity Index

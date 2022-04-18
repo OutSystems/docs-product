@@ -3,6 +3,7 @@ summary: Learn how to use the debug features provided by OutSystems to easily fi
 tags: support-application_development; support-Application_Troubleshooting; support-Application_Troubleshooting-featured
 locale: en-us
 guid: 78def0b5-863d-4d58-8ea0-bb9f28bf1ef8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Debugging Applications

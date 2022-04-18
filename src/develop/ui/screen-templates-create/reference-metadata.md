@@ -2,6 +2,7 @@
 summary: Enter the metadata when creating Screen Templates, to enable the developers to choose the best Screen Template for the Screen they are creating.
 locale: en-us
 guid: e888ea09-ae0e-4632-9631-5b9abfd1acaf
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Metadata reference

@@ -3,6 +3,7 @@ summary: Check OutSystems network requirements before installing it on an enviro
 tags: support-installation
 locale: en-us
 guid: 6238ecb9-6eaf-4406-a421-f4b01322052d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # OutSystems network requirements

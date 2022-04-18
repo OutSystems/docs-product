@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced use cases for the Carousel UI Pattern. 
 locale: en-us
 guid: fe0f0d5b-bd63-4ddd-a18c-16d9df1e200f
+app_type: mobile apps, reactive web apps
 ---
 
 # Carousel Reference

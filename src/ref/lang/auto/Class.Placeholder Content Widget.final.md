@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.NRWebWidgets+PlaceholderArgument+Kind, ServiceStudio.
 helpids: 0
 locale: en-us
 guid: 6f377072-2328-421d-a04a-ff437c518a8a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Placeholder Content Widget

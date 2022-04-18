@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 64eb9856-d396-4d2b-8df4-a0b23f520787
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Impact of Moving Activities in Process Flows

@@ -4,6 +4,7 @@ helpids: 4009
 tags: runtime-traditionalweb
 locale: en-us
 guid: c73e5bb5-95f4-42ab-a835-0542339b02f8
+app_type: traditional web apps
 ---
 
 # Button Widget

@@ -3,6 +3,7 @@ summary: You can generate the mobile app package for your mobile app and distrib
 tags: runtime-mobile, article-page
 locale: en-us
 guid: 1aacc771-f914-4f95-889a-31f1dde06a38
+app_type: mobile apps
 ---
 
 # Generate and Distribute Your Mobile App

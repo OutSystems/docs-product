@@ -3,6 +3,7 @@ summary: Follow this tutorial to quickly create and test an example mobile app t
 tags: runtime-mobile; support-Mobile_Apps; support-Mobile_Apps-overview
 locale: en-us
 guid: 0ee5a8f6-0c94-4316-818f-49cc25f92283
+app_type: mobile apps
 ---
 
 # Create Your First Mobile App

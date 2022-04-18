@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Displays a master list and the details for the currently selected item.
 locale: en-us
 guid: d6387a11-92d7-4075-874c-7f538bb21e32
+app_type: mobile apps, reactive web apps
 ---
 
 # Master Detail

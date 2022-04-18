@@ -3,6 +3,7 @@ summary: Using OutSystems service account tokens to authenticate REST API method
 tags: support-application_development; support-Integrations_Extensions
 locale: en-us
 guid: 1f0c3b37-45b9-4a4d-b640-016dac5f5d6b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # REST API Authentication

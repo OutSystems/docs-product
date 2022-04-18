@@ -2,6 +2,7 @@
 tags: support-Application_Lifecycle; support-application_development; support-Integrations_Extensions; support-Application_Lifecycle-overview
 locale: en-us
 guid: 594c9e1f-93d8-41f6-8b30-18a257bd6ea0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Deploy Applications

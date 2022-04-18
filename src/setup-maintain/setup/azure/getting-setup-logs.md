@@ -3,6 +3,7 @@ tags: support-Installation_Configuration; support-installation;
 summary:  Access the Setup Logs of an OutSystems installation on Microsoft Azure.
 locale: en-us
 guid: 1e5925fb-8700-4998-a2b4-7a149caeb17d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to Get the Setup Logs of OutSystems on Microsoft Azure

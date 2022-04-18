@@ -3,6 +3,7 @@ summary: Check the causes and recommendations on how to solve the different SQL 
 tags:
 locale: en-us
 guid: fb90dea0-5413-4871-8e16-ee2b0ce89a73
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # SQL Injection Warning

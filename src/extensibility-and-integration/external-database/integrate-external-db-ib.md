@@ -3,6 +3,7 @@ summary: Integrating your applications with external databases using Integration
 tags:
 locale: en-us
 guid: fcc67384-67da-41a3-b52b-e2491db85b0c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Integrate with an external database using Integration Builder

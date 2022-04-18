@@ -2,6 +2,7 @@
 summary: Integration Studio is a desktop tool that allows you to create and manage your extensions.
 locale: en-us
 guid: 0a549110-5a84-4c90-ae2a-adc8fd30b31d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Integration Studio

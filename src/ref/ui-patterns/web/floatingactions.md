@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Floating Actions UI Pattern.
 locale: en-us
 guid: ada89c16-a9f3-45b5-b488-1dec777600c5
+app_type: traditional web apps
 ---
 
 # Floating Actions Reference

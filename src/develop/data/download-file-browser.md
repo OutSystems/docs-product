@@ -3,6 +3,7 @@ summary: Use Download Tool in a Flow to send file to the browser, so the users c
 tags: support-application_development; runtime-traditionalwebandreactiveweb;
 locale: en-us
 guid: c434b127-7855-4ec0-9c5d-e484eff41e63
+app_type: traditional web apps, reactive web apps
 ---
 
 # Download a file through browser

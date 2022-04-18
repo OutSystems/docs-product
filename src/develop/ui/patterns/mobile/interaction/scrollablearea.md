@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Simple scrollable Block with a placeholder for content. Ideal to display multiple elements in a single, scrollable row or column.
 locale: en-us
 guid: 3ecfdec5-b135-4faa-8c1f-110595075a02
+app_type: mobile apps, reactive web apps
 ---
 
 # Scrollable Area

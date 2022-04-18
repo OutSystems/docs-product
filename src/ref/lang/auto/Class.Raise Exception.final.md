@@ -4,6 +4,7 @@ helpids: 0
 summary: Use Raise Exception to throw an exception and stop the currently running action flow.
 locale: en-us
 guid: 28c483f0-bb37-4212-848b-dca6d34dad5c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Raise Exception

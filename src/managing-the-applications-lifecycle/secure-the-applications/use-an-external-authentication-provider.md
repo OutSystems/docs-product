@@ -3,6 +3,7 @@ summary: OutSystems allows your IT users to authenticate using the same account 
 tags: support-Security-overview
 locale: en-us
 guid: f8b008aa-ae75-470a-adc3-5863bf6be8e6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use an External Authentication Provider

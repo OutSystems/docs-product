@@ -3,6 +3,7 @@ summary: It is possible to update certain parts of the screen without reloading 
 tags: support-Front_end_Development; support-webapps-featured; runtime-traditionalweb
 locale: en-us
 guid: cf447891-96c9-41a7-b624-455c180d4002
+app_type: traditional web apps
 ---
 
 # Use Ajax to Refresh Part of a Screen

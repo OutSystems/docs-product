@@ -3,6 +3,7 @@ summary: Check how to create and execute processes, which are elements that allo
 tags: support-webapps
 locale: en-us
 guid: 7f9ed2cf-c73b-467e-bdfa-cf4ba9655613
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Processes

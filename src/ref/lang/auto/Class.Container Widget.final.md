@@ -4,6 +4,7 @@ helpids: 4047
 tags: runtime-traditionalweb
 locale: en-us
 guid: f018d411-b8b9-4c20-9744-4807528f9255
+app_type: traditional web apps
 ---
 
 # Container Widget

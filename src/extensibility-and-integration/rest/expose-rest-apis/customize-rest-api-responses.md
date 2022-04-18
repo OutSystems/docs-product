@@ -3,6 +3,7 @@ summary: Customize the information sent in responses when exposing a REST API.
 tags: 
 locale: en-us
 guid: e8e058c7-435f-4c70-8073-afd4ac5b451a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Customize REST API Responses

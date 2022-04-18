@@ -3,6 +3,7 @@ summary: Build apps that can understand what your users write. Create smart conv
 tags: 
 locale: en-us
 guid: 958cb80b-87a3-4501-ad60-437b9cc71e8d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use the Azure LUIS Connector in OutSystems apps

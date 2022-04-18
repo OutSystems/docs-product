@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Accordion expands vertically-stacked content by clicking on the header.
 locale: en-us
 guid: 6f52287b-c093-4b03-84f9-ac1e7ea57152
+app_type: traditional web apps
 ---
 
 # Accordion

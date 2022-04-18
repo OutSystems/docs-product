@@ -3,6 +3,7 @@ summary: APIs provided by OutSystems that you can use to extend the capabilities
 tags: support-application_development; support-Integrations_Extensions
 locale: en-us
 guid: f2cb6eb8-b4dc-437a-9838-0fca9cad116b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # OutSystems APIs

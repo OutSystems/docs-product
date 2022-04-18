@@ -3,6 +3,7 @@ summary: Testing in OutSystems
 tags:
 locale: en-us
 guid: a04eb23a-d3fe-4967-875b-02d15033b8cd
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Develop for Testability

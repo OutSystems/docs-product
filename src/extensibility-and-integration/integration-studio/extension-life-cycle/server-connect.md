@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 191e1ae6-bb41-460f-b5b4-a94474e514b2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Connect to an environment

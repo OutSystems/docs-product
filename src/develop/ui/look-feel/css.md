@@ -3,6 +3,7 @@ summary: The basics of CSS in OutSystems.
 tags: support-application_development; support-Front_end_Development
 locale: en-us
 guid: d9c9539a-bb5f-4775-9abc-86c9ba2c36ad
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Cascading Style Sheets (CSS)

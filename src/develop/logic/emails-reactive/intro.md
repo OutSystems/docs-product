@@ -3,6 +3,7 @@ summary: Send emails from Reactive Web Apps and Mobile Apps. Learn more about ho
 tags: support-application_development, article-page
 locale: en-us
 guid: e08ac080-d0c3-469c-baad-39526af24ded
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Emails in Mobile and Reactive Web Apps

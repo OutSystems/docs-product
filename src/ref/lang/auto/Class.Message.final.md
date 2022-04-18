@@ -5,6 +5,7 @@ summary: Provides a feedback message to the end user.
 tags: runtime-mobileandreactiveweb;
 locale: en-us
 guid: 70ed4ea2-9f23-4c19-b322-11255785072c
+app_type: mobile apps, reactive web apps
 ---
 
 # Message

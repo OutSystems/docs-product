@@ -2,6 +2,7 @@
 summary: Learn more about the different tools available for when designing the process flow of your processes.
 locale: en-us
 guid: ce9e1f95-ff93-4bb2-95be-92752f3df2ce
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Process Flow Toolbox

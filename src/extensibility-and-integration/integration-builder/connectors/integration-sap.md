@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: de265ad3-910f-42ad-b395-551ce6e83e4b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # SAP OData integration

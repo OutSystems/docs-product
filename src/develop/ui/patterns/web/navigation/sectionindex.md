@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Section Index organizes the content of a screen, enabling quick navigation within the page.
 locale: en-us
 guid: f3a3a460-60ea-4f88-9eb2-0fda7bce73b3
+app_type: traditional web apps
 ---
 
 # Section Index

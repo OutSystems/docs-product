@@ -3,6 +3,7 @@ summary: Learn more about implementing and reuse actions, iterating lists, and h
 tags:
 locale: en-us
 guid: 1eef31a3-6807-412e-98e1-0e3b93fc6050
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Implement Application Logic

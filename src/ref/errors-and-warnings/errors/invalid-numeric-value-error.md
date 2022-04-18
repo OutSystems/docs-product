@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: d53c74cf-c4dd-4756-a069-6751814f6005
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Numeric Value Error

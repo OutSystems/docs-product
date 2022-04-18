@@ -3,6 +3,7 @@ summary: Learn how to define the security model for your applications. Use roles
 tags: support-Security-featured
 locale: en-us
 guid: b84f5da2-64c0-4efe-a51e-0990d3279bc5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Secure the Application

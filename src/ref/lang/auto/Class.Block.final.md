@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.NRNodes+WebBlock+Kind, ServiceStudio.Model.NewRuntime
 helpids: 1006
 locale: en-us
 guid: fc28dd21-c51c-429f-a88d-61824267676a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Block

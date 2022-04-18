@@ -3,6 +3,7 @@ summary: OutSystems 11 allows you to store log data in a log database separate f
 tags: article-page; support-Installation_Configuration; version-11
 locale: en-us
 guid: 1e5deb19-1e3e-4f3d-8036-ec5f4ade1a5c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Keep OutSystems log data in a separate database

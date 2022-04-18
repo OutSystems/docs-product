@@ -3,6 +3,7 @@ summary: Blocks use events to communicate changes to the parent screen/block or 
 tags:
 locale: en-us
 guid: 77d2313f-f484-4581-825e-c198e4756a11
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Pass Data Between Blocks

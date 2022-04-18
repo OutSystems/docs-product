@@ -3,6 +3,7 @@ summary: An expression is composed of operands and operators. Edit the expressio
 tags: 
 locale: en-us
 guid: 7d9ef917-ff30-4562-a5c6-9a21bd4318d8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Expressions

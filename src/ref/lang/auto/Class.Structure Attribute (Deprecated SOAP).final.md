@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.StructureAttribute+Kind, ServiceStudio.Model.SystemAc
 helpids: 0
 locale: en-us
 guid: fba19edd-e3b2-4689-a1d9-2d25e0f74852
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Structure Attribute (Deprecated SOAP)

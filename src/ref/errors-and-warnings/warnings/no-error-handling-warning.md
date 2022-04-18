@@ -3,6 +3,7 @@ summary: Check the causes and recomendations on how to solve the different No Er
 tags:
 locale: en-us
 guid: 1515b96c-fb4b-463c-836b-976a822b00fa
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # No Error Handling Warning

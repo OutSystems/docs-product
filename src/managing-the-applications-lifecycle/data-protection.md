@@ -3,6 +3,7 @@ summary:
 tags:
 locale: en-us
 guid: 9a5711af-7947-4f71-9569-ae016863db49
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Lifecycle Management and Data Protection

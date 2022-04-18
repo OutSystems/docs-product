@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 10b4220e-09b6-4e8f-a60a-424800889615
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Submit Feedback Window

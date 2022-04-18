@@ -3,6 +3,7 @@ summary: Learn about different Android support library versions, how these versi
 tags: runtime-mobile
 locale: en-us
 guid: 8734c248-e81d-4d5b-a3a2-323a0373c188
+app_type: mobile apps
 ---
 
 # Android Support Library Versions for MABS

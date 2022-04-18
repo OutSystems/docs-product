@@ -3,6 +3,7 @@ summary: Use the QnA Maker connector to query your Azure knowledge bases directl
 tags: 
 locale: en-us
 guid: ab7eb739-c72b-4177-979b-bfe9d58a9334
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use the Azure QnA Maker Connector in OutSystems apps

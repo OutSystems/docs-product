@@ -3,6 +3,7 @@ kinds: ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowOutputDescr
 helpids: 30063
 locale: en-us
 guid: 4afad349-3ae5-41cd-8a13-f9eb9efa20af
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Output Parameter (REST Service API Callback)

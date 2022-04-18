@@ -3,6 +3,7 @@ summary: Learn how to make your OutSystems web applications more accessible.
 tags: runtime-traditionalweb
 locale: en-us
 guid: b5635533-5774-4a83-b2ed-6c207d5d8db8
+app_type: traditional web apps
 ---
 
 # Accessibility in OutSystems Traditional Web Applications

@@ -3,6 +3,7 @@ summary:
 tags: 
 locale: en-us
 guid: 0a003300-3e48-41de-8b77-f08d464a9eb4
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Service Studio Tips and Tricks
 

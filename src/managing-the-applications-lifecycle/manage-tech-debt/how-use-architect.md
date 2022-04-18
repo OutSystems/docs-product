@@ -3,6 +3,7 @@ tags:
 summary: Learn how to Check the technical debt of all the apps in your infrastructure.
 locale: en-us
 guid: 5771d1af-cf5a-4e5c-a4c7-79f03a5f99ef
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Getting started as an architect

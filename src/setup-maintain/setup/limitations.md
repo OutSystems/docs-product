@@ -1,5 +1,6 @@
 ---
 summary: Features currently unavailable in the cross-platform Service Studio.  
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Features currently unavailable in the cross-platform Service Studio
 

@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Timeline Item indicates related events in chronological order.
 locale: en-us
 guid: ae0bd8db-c13e-4c6d-83f8-dabc43562bb6
+app_type: mobile apps, reactive web apps
 ---
 
 # Timeline Item

@@ -5,6 +5,7 @@ summary: Reference information on the Placeholder widget for reserving space in 
 tags: outsystems-designing-screens; reference; designing-screens; placeholder-widget
 locale: en-us
 guid: 5d21e0a3-fe0a-40cd-827b-a2a1ea1aa5ac
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Placeholder Widget

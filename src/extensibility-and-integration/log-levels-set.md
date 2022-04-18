@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: c215f526-4e79-416f-a7ae-4789e0a26a8c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Set the logging level of REST and SOAP integrations

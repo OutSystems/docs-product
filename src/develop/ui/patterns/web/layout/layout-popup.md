@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Layout Popup is the layout used to display additional off-canvas information.
 locale: en-us
 guid: 6e0a8f5c-f734-4478-913e-21c6e81e8f1e
+app_type: traditional web apps
 ---
 
 # Layout Popup

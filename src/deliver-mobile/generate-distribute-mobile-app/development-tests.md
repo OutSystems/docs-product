@@ -3,6 +3,7 @@ summary: Learn how to generate a mobile app package for test purposes and also h
 tags: runtime-mobile; support-mobile; support-Mobile_Apps
 locale: en-us
 guid: 8d9cef20-3f8a-440f-b229-bc8b3ced3e51
+app_type: mobile apps
 ---
 
 # Generate and Distribute Your Mobile App for Development Tests

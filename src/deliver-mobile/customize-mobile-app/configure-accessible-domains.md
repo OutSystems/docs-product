@@ -3,6 +3,7 @@ summary: Define which domains your mobile app can access. Please note we recentl
 tags: runtime-mobile
 locale: en-us
 guid: 0b12a757-5043-40ae-ac5f-4f009d2d5c5c
+app_type: mobile apps
 ---
 
 # Configure Accessible Domains for Your Mobile App

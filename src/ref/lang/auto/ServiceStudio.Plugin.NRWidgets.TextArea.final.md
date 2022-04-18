@@ -5,6 +5,7 @@ summary: Reference information on the Text widget for adding a multi-line field 
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; text-area-widget
 locale: en-us
 guid: 52c47131-75d8-4e4b-92c7-00b226933bbb
+app_type: mobile apps, reactive web apps
 ---
 
 # Text Area

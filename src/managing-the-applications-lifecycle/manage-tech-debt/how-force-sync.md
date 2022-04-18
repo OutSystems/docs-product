@@ -3,6 +3,7 @@ tags:
 summary: Learn how to request a synchonization between the probe and Architecture Dashboard.
 locale: en-us
 guid: b67d9ffc-b28f-4e00-8ffc-6544f9d66812
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 

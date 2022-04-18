@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Button Group UI Pattern.
 locale: en-us
 guid: 42dbee79-dfe8-4f57-8fb7-d5a19e8bf87d
+app_type: traditional web apps
 ---
 
 # Button Group Reference

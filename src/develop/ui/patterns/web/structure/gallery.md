@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Gallery enables the users to sequentially browse the content when there are many cards grouped into one or more collections.
 locale: en-us
 guid: fa8125c1-ec09-4d4f-8c84-41be51e007b8
+app_type: traditional web apps
 ---
 
 # Gallery

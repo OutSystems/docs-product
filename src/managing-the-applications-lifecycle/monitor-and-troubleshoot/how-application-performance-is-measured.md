@@ -3,6 +3,7 @@ summary: OutSystems collects metrics of how applications are performing, to allo
 tags: support-Application_Lifecycle; support-Integrations_Extensions; support-monitoring; support-monitoring-overview; support-monitoring-featured; runtime-traditionalweb
 locale: en-us
 guid: c9bafed1-f783-47d9-9f02-fa30a53c9ae6
+app_type: traditional web apps
 ---
 
 # How Application Performance Is Measured

@@ -3,6 +3,7 @@ summary: The purpose of the Voluntary Product Accessibility Template, or VPATTM,
 tags: runtime-traditionalweb
 locale: en-us
 guid: c61481b5-bfd8-4d06-9024-e3185659b455
+app_type: traditional web apps
 ---
 
 # VPAT - Voluntary Product Accessibility Template

@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Nodes+If+Kind
 helpids: 0
 locale: en-us
 guid: cc607302-6a99-4463-9756-adab0f7e2ccd
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # If

@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: e4f2b751-f68b-4d31-b018-a30bf5a7f61a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Executing Multiple Instance Activities

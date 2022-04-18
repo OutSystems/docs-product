@@ -3,6 +3,7 @@ summary: Check the causes and recomendations on how to solve the different Inval
 tags:
 locale: en-us
 guid: b477089c-5ad9-4310-9978-a7367e20e7de
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Action Flow Error

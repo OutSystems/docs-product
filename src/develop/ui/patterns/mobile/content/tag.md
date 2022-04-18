@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Tag styles small texts in a colored tag format.
 locale: en-us
 guid: ad4f4ddf-d346-4347-b78d-8741dea7cb94
+app_type: mobile apps, reactive web apps
 ---
 
 # Tag

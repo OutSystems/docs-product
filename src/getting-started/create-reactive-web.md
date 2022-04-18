@@ -3,6 +3,7 @@ summary: Follow this tutorial to create and run an example Reactive Web App to m
 tags: runtime-reactiveweb;
 locale: en-us
 guid: 795332a5-e1f3-40c0-886d-75b7bddf48af
+app_type: reactive web apps
 ---
 
 # Create Your First Reactive Web App

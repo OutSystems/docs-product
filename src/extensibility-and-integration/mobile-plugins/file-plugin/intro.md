@@ -3,6 +3,7 @@ summary: Manage files and folders on a mobile device within the app sandbox.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 77c53fcc-d787-4377-895f-90390ee33f3f
+app_type: mobile apps
 ---
 
 # File Plugin

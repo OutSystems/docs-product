@@ -5,6 +5,7 @@ summary: Reference information on the Input widget for allowing users to input d
 tags: outsystems-designing-screens; reference; designing-screens; input-widget; input-data
 locale: en-us
 guid: d3d73598-1309-489b-a15a-2b9d518a8226
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Input

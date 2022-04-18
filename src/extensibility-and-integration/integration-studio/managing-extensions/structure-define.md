@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 64abe2b1-809c-4f5c-8dcd-b24547c83ee8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Define Extension Structures

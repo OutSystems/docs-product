@@ -5,6 +5,7 @@ summary: Reference information on the Table widget for displaying data in cells 
 tags: outsystems-designing-screens; reference; designing-screens; table-widget
 locale: en-us
 guid: 3cbb4a7d-817e-4709-b696-fae09de3d45d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Table

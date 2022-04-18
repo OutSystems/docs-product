@@ -3,6 +3,7 @@ kinds: ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlowDescriptor
 helpids: 17261
 locale: en-us
 guid: d57b2c7c-1238-4d6b-b1a7-3afc4ffba82d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # REST API Callback (Authentication)

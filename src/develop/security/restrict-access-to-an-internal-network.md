@@ -2,6 +2,7 @@
 tags: support-devOps; support-Security; support-Security-featured
 locale: en-us
 guid: 110c2416-65b4-404d-8adc-e02219af4207
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Restrict Access to an Internal Network

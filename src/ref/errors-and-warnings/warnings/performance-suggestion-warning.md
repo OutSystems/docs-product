@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: a63209c4-0f36-4c07-9a7a-e5c217b2b4d0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Performance Suggestion Warning

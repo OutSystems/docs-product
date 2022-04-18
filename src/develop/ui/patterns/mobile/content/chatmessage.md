@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Chat Message displays conversation posts in notifications or chat screens.
 locale: en-us
 guid: 6d975212-eb39-4891-83ba-9306ba78b2cd
+app_type: mobile apps, reactive web apps
 ---
 
 # Chat Message

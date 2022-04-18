@@ -3,6 +3,7 @@ summary: To customize the unhandled errors screen in mobile applications you nee
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: bacb4f2b-e04b-4ecf-8ce0-1f9536afa095
+app_type: mobile apps
 ---
 
 # Customize the Errors Screen

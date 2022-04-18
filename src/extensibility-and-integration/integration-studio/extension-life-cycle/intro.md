@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 52c8b0c4-1091-41d6-8c68-a19938e1547f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Extension Life Cycle

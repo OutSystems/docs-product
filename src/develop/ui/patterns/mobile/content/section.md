@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Section separates content into groups, easing visual organization.
 locale: en-us
 guid: f8eb7c31-9003-4675-85a1-8c09a8aeafd8
+app_type: mobile apps, reactive web apps
 ---
 
 # Section

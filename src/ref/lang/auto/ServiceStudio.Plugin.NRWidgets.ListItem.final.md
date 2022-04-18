@@ -5,6 +5,7 @@ summary: Reference information on the List Item widget for allowing you to displ
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; list-item-widget; list-item-swipe
 locale: en-us
 guid: 7378bd28-e563-4ca9-bede-731dca5fa49f
+app_type: mobile apps, reactive web apps
 ---
 
 # List Item

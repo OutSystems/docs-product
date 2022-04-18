@@ -2,6 +2,7 @@
 tags: 
 locale: en-us
 guid: de10147e-75d6-4cc6-a32b-3c92590f27eb
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Consumed SOAP Web Service

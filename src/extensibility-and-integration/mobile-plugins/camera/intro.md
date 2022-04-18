@@ -3,6 +3,7 @@ summary: Let your users take pictures in native mobile apps and PWAs. Adjust the
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 158347bc-c312-4499-9912-1f1dfeac7d50
+app_type: mobile apps
 ---
 
 # Camera Plugin

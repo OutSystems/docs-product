@@ -3,6 +3,7 @@ summary: Learn how to create a multilingual web application.
 tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: e4525653-9e57-4bb3-8426-a74a898addd0
+app_type: traditional web apps
 ---
 
 # Multilingual Web Applications

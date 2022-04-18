@@ -3,6 +3,7 @@ summary: Import data from Excel files to quickly have your data up and running i
 tags: support-Database; support-database-featured
 locale: en-us
 guid: b9f11658-2807-4efb-92ed-0413be0f2c63
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Bootstrap an Entity Using an Excel File

@@ -3,6 +3,7 @@ summary: Display an image stored in the database in both web and mobile applicat
 tags:
 locale: en-us
 guid: 0e4fc725-6ba9-4e5e-8834-71ca8b4aa180
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Display an Image Stored in the Database

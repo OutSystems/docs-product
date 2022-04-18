@@ -3,6 +3,7 @@ summary: Troubleshooting tips and notes. Know issues.
 tags: support-application_development; runtime-mobile;
 locale: en-us
 guid: 894f3950-7424-4995-9f8b-4e7e9c2645d7
+app_type: mobile apps
 ---
 
 # Troubleshooting and known issues

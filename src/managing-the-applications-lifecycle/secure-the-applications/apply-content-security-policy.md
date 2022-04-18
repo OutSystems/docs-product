@@ -3,6 +3,7 @@ summary: Use the Content Security Policy (CSP) against code injection attacks in
 tags: support-Security-overview
 locale: en-us
 guid: e59d9233-7c2d-43ae-b8a2-f55d75263c68
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Apply Content Security Policy

@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: c8ac04ea-7e81-44be-b645-bf003af44f25
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Combo Box Widget Error

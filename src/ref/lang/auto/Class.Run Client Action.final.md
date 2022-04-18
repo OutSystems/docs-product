@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.NRNodes+ExecuteClientAction+Kind
 helpids: 30110
 locale: en-us
 guid: 3be54d9f-15c8-4e78-8a14-350f5d1f2845
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Run Client Action

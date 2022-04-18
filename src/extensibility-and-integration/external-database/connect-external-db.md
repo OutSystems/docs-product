@@ -3,6 +3,7 @@ summary: OutSystems allows you to define connections to your existing SQL Server
 tags: support-application_development; support-Database; support-Integrations_Extensions; support-database-overview; support-Integrations_Extensions-featured
 locale: en-us
 guid: d5fdba1a-e46c-4c92-9d6b-81be94eed163
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Integrate with an External Database using Integration Studio

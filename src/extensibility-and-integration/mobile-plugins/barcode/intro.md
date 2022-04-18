@@ -3,6 +3,7 @@ summary: Learn how to use the Barcode Plugin to scan barcodes and QR codes.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 22ea5600-8b2b-4ad3-8e64-06e512155c58
+app_type: mobile apps
 ---
 
 # Barcode Plugin

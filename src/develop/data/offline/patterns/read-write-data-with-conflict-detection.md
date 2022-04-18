@@ -3,6 +3,7 @@ summary: Use this synchronization pattern when for advanced scenarios where more
 tags: runtime-mobile
 locale: en-us
 guid: 9440e4f9-b77c-44ab-9b9a-f5cc985fbfbb
+app_type: mobile apps
 ---
 
 # Read/Write Data with Conflict Detection

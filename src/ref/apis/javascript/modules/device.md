@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb
 summary: Provides methods to access native capabilities of the device.
 locale: en-us
 guid: cb9a46ef-3b0c-48e2-9307-8fa4d00567e3
+app_type: mobile apps, reactive web apps
 ---
 
 # Device

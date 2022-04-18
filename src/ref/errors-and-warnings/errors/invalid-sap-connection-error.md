@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 6af39380-3f07-4666-bd86-865b63ed4703
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid SAP Connection Error

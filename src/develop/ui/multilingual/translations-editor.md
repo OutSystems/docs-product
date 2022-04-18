@@ -3,6 +3,7 @@ summary: Use this editor to set how translatable resources behave and to set tra
 tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: 5b9787c8-9b67-4d45-8f6b-7d5a1c964beb
+app_type: traditional web apps
 ---
 
 # Translations Behavior Editor

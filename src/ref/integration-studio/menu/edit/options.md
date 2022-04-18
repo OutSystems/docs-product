@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 19f255a3-4d7e-4bf4-91d7-74c191a42399
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Options Window

@@ -3,6 +3,7 @@ summary: Redirect URLs and create site and Screen URLs to to improve user experi
 tags: article-page,
 locale: en-us
 guid: 93e2771c-215a-42ec-a3fb-9e3a3e9d1476
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # SEO in Reactive Web Apps

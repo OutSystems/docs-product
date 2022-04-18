@@ -2,6 +2,7 @@
 tags: support-Database
 locale: en-us
 guid: 5008ac01-e236-474f-a0ec-0b7169c31e2d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How Data Model Changes are Handled

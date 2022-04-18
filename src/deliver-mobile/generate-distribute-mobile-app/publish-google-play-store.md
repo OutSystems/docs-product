@@ -3,6 +3,7 @@ summary: Generate a mobile app package for your mobile app to publish in the Goo
 tags: runtime-mobile; support-mobile
 locale: en-us
 guid: 49613761-0f66-4d87-b41a-bf600081e654
+app_type: mobile apps
 ---
 
 # Publish Your Mobile Android Application to the Google Play Store

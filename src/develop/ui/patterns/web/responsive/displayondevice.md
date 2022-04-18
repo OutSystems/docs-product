@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: DisplayOnDevice improves the way information is displayed on different devices.
 locale: en-us
 guid: cb68aaf9-4836-4eeb-b3f2-0a9fcc5164a4
+app_type: traditional web apps
 ---
 
 # Display on Device

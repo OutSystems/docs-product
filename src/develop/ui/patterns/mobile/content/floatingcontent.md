@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Floating Content displays a panel that floats over content (like a map or an image), docked to a screen corner or direction.
 locale: en-us
 guid: 85bf3d51-36e8-4b3f-bebb-3ee59614230f
+app_type: mobile apps, reactive web apps
 ---
 
 # Floating Content

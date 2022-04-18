@@ -2,6 +2,7 @@
 summary: The Session tab allows you to configure the database used by OutSystems to store the end user persistent sessions.
 locale: en-us
 guid: edfd47cf-ac05-450b-8823-ebc389345dc8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Session Tab

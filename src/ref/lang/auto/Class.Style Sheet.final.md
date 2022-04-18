@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.WebStyleSheet+Kind, ServiceStudio.Model.ReferenceWebS
 helpids: 0
 locale: en-us
 guid: 9ed427f3-4532-4aa3-877d-db5314031864
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Style Sheet

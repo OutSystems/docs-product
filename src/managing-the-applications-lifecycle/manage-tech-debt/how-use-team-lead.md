@@ -3,6 +3,7 @@ tags:
 summary: Learn how to check the technical debt of your team's apps.
 locale: en-us
 guid: efc039d9-67e7-4824-a8fb-5e65418db58c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Getting started as a team lead 

@@ -2,6 +2,7 @@
 summary: Read about caching in OutSystems Apps.
 locale: en-us
 guid: b1fd3cda-593d-4e77-99db-bfccef52149f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Caching

@@ -3,6 +3,7 @@ summary: Configure the range of IP addresses that are considered part of your in
 tags: support-Security-overview
 locale: en-us
 guid: 2326f357-2f2a-4a5c-a05d-fb20edd7be5f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configure an Internal Network

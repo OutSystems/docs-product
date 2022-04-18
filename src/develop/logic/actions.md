@@ -3,6 +3,7 @@ summary: Learn more about the Actions you can create in your Reactive Web and Mo
 tags: runtime-mobileandreactiveweb; support-Mobile_Apps; support-Mobile_Apps-overview
 locale: en-us
 guid: ce518c93-363b-485e-91b3-b4a402ec4579
+app_type: mobile apps, reactive web apps
 ---
 
 # Actions in Reactive Web and Mobile Apps

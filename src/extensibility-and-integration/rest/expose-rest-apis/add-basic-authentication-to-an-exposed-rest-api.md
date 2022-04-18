@@ -3,6 +3,7 @@ summary: Add basic authentication to the requests made to the REST APIs you are 
 tags: 
 locale: en-us
 guid: fa99306b-0261-47c1-821f-80262d8dd45b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Add Basic Authentication to an Exposed REST API

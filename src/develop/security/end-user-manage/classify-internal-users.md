@@ -2,6 +2,7 @@
 summary: How to define user classification rules for identifying Internal Users.
 locale: en-us
 guid: 8cb73d92-a60d-4133-9f95-67ef4505932d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Classify Users as Internal Users

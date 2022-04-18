@@ -3,6 +3,7 @@ summary: You can view the logs and other useful information to monitor your OutS
 tags: support-Integrations_Extensions; support-monitoring; support-monitoring-overview
 locale: en-us
 guid: 70ae67ba-01d3-4434-aa0c-c4dd0a18a337
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # View the Environment Logs and Status

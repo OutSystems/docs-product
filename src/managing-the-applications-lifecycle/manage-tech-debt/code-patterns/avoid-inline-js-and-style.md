@@ -4,6 +4,7 @@ summary:
 en_title: Avoid inline JavaScript or inline style
 locale: en-us
 guid: db93a6af-6f3d-45a6-b57a-ec7fbba596c3
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 

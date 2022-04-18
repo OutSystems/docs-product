@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: de5bd7ca-83d5-45be-b0b3-ee9f729a9931
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Licensing Error

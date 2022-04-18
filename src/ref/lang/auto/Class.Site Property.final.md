@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Variables+SiteProperty+Kind
 helpids: 15003
 locale: en-us
 guid: dc811245-bcef-4579-bcee-3530a997eecd
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Site Property

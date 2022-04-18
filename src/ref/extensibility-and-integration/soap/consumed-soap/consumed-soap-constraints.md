@@ -2,6 +2,7 @@
 tags: 
 locale: en-us
 guid: 6b99f36b-866b-47e6-858f-3b360413fcd7
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Consumed SOAP Web Services Constraints

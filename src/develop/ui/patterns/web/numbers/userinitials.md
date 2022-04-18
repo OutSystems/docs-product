@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: User Initials display user information in a circular badge.
 locale: en-us
 guid: 079fe985-0d1e-435c-984a-cbd125908f13
+app_type: traditional web apps
 ---
 
 # User Initials

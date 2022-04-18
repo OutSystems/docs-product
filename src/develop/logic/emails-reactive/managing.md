@@ -3,6 +3,7 @@ summary: Use Emails under UI Flows to design and add available widgets. Add data
 tags: support-application_development,
 locale: en-us
 guid: 455d5651-9b51-4de7-8f8a-5888ab78d78e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Managing emails

@@ -3,6 +3,7 @@ tags: support-Installation_Configuration; support-Installation_Configuration-ove
 summary: OutSystems on Microsoft Azure is a versatile platform ready for scaling.
 locale: en-us
 guid: 5a889483-823a-4502-8899-7c5bc94082a9
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # OutSystems on Microsoft Azure

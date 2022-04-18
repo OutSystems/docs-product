@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Dropdown allows end users to make a choice from several options.
 locale: en-us
 guid: b4792689-6d10-4819-9a92-609ddbbd0365
+app_type: traditional web apps
 ---
 
 # Dropdown

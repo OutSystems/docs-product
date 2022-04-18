@@ -3,6 +3,7 @@ summary: Use Service modules and Service applications to design a service-orient
 tags: support-application_architecture-featured
 locale: en-us
 guid: 9fe307cf-1687-41f6-9a5b-b8f1484f57ee
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Services to Expose Functionality

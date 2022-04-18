@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Search Balloon lets the users search a list while showing the results simultaneously.
 locale: en-us
 guid: b50125b9-419e-42f0-a55e-1deb3cfe5fc9
+app_type: traditional web apps
 ---
 
 # Search Balloon

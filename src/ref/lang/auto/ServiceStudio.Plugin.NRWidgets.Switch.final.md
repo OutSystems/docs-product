@@ -5,6 +5,7 @@ summary: Reference information on the Switch Group widget for adding two-state t
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; switch-widget
 locale: en-us
 guid: 4479919f-eabb-4cad-97d0-5e8e990d8524
+app_type: mobile apps, reactive web apps
 ---
 
 # Switch

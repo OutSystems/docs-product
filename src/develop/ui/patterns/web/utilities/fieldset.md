@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Fieldset labels groups of related interface elements and fields.
 locale: en-us
 guid: b22dd0ca-8b9a-4d0f-a848-384bec9e6bc9
+app_type: traditional web apps
 ---
 
 # Fieldset

@@ -3,6 +3,7 @@ summary: This data synchronization pattern is recommended for mobile apps with e
 tags: runtime-mobile
 locale: en-us
 guid: 26530521-14df-4bb6-82d4-e087f6566a05
+app_type: mobile apps
 ---
 
 # Read/Write Data One-to-Many

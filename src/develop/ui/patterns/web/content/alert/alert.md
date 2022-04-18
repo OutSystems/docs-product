@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Alert gets the end user's attention and highlights important information, errors or warnings on the screen.
 locale: en-us
 guid: 8b7fa781-fd52-47d6-a24a-1f0ffa05b99b
+app_type: traditional web apps
 ---
 
 # Alert

@@ -3,6 +3,7 @@ summary: Check how to debug functionality exposed by a producer Module being con
 tags:
 locale: en-us
 guid: 8876a767-5845-47e4-9c93-bdec76114e0e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Debugging Producer Modules

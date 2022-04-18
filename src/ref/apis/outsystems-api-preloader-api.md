@@ -3,6 +3,7 @@ summary: A JavaScript API that allows you to prefetch static resources (css, js,
 tags: runtime-traditionalweb; support-application_development; support-Front_end_Development; support-webapps
 locale: en-us
 guid: 46d68360-ea42-4078-8bc7-b8f9286e09e6
+app_type: traditional web apps
 ---
 
 # outsystems.api.preloader API

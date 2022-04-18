@@ -3,6 +3,7 @@ kinds: ServiceStudio.Plugin.SOAP.SOAPStaticEntityAttributeDescriptor
 helpids: -1
 locale: en-us
 guid: 0c7eda5f-bb0f-4514-9add-a0fcd23b364e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Static Entity Attribute (Consumed SOAP)

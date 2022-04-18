@@ -3,6 +3,7 @@ summary: Blocks are interface parts that can be reused in screens and other bloc
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps; support-Front_end_Development-overview
 locale: en-us
 guid: 3c67d197-93c9-4620-8f3d-719e15405278
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Reuse UI

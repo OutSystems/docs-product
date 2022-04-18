@@ -3,6 +3,7 @@ kinds: ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlowInputDescri
 helpids: 30061
 locale: en-us
 guid: 7fbaa379-bf8c-43e8-8352-f320768a330d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Input Parameter (REST Authentication)

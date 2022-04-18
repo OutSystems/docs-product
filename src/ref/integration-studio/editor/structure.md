@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 6c99fc79-ab44-4a23-8105-96bded0a842f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Structure Editor

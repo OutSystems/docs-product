@@ -4,6 +4,7 @@ helpids: 0
 tags: runtime-mobile
 locale: en-us
 guid: bec0793d-a9f6-429b-b6dc-a86e4fdb60d3
+app_type: mobile apps
 ---
 
 # On Application Resume

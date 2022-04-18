@@ -3,6 +3,7 @@ summary: Learn about granting roles to end users and revoking them in the Users 
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 0aa8f19f-5429-4b1d-bd3e-48575eb4ffc7
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Grant and Revoke End User Roles

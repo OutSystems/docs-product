@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: c5e5c6fd-fba7-4be6-ba09-d1b028c8a1c1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Define Extension Entities

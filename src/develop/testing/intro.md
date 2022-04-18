@@ -3,6 +3,7 @@ summary: Overview of options, resources, and tools to implement automated testin
 tags: 
 locale: en-us
 guid: 319b0b59-b9cc-48d8-a776-ea8c0b564711
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Testing your application
 

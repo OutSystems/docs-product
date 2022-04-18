@@ -3,6 +3,7 @@ summary: Use Aggregates with Fetch properties set to On Start and Only on demand
 tags: support-application_development; support-Database; runtime-mobileandreactiveweb;
 locale: en-us
 guid: dddc4580-fe09-42b7-8795-9fc35f3fd803
+app_type: mobile apps, reactive web apps
 ---
 
 # Implement asynchronous data fetching using Aggregates

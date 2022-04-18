@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: e630e6c0-7ef7-4d66-9ac6-3c9b4fb090ad
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Extensibility Configurations

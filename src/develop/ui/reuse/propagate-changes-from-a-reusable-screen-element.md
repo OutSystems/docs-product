@@ -3,6 +3,7 @@ summary: Learn how to use Events to trigger an Action and pass a value from a Bl
 tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 6140a263-aa35-45e6-92a7-dc4453dae1c6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Events to Propagate Changes From a Block to the Parent

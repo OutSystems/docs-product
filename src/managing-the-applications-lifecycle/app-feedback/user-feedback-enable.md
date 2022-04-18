@@ -2,6 +2,7 @@
 summary: Let users to send feedback while from an app.
 locale: en-us
 guid: 7679b3a4-2a80-4ddf-9e85-e470c8af8428
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Enable user feedback for apps

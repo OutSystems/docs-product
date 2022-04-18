@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 4a3be3da-ce0d-4940-a534-60a2c22468cf
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Designing Polling of External Systems

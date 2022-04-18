@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Card Sectioned groups short pieces of information in sections and highlights them on the screen.
 locale: en-us
 guid: 1ba59808-a9ca-45c3-8f9c-3b68edccaef4
+app_type: traditional web apps
 ---
 
 # Card Sectioned

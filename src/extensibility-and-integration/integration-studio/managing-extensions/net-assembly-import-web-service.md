@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: cdffaa83-59f9-4c88-a3f1-4168fd023051
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Import Web Services from a .NET Assembly

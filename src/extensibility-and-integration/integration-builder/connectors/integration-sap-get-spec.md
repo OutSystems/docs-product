@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: dc751f41-faba-4421-be15-a595e5bd4a55
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Obtaining the SAP service specification

@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 5a27b7c6-3710-4a8b-807b-6b71e26670d1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Designing Conditional Paths

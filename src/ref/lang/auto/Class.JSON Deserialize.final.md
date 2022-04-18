@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Nodes+JSONDeserialize+Kind
 helpids: 30004
 locale: en-us
 guid: ed1575d2-e5b5-41a1-be11-e638b406fbb4
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # JSON Deserialize

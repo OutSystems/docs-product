@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: bc60f1be-f48a-4645-90f2-f2bda185d36a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Missing Process Detail Warning

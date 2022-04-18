@@ -3,6 +3,7 @@ summary: A Library is a module type that allows you to reduce the number of depe
 tags: runtime-mobileandreactiveweb
 locale: en-us
 guid: cc983a8d-46d2-4fad-b6f3-eaf1148dba44
+app_type: mobile apps, reactive web apps
 ---
 
 # Libraries

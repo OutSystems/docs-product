@@ -3,6 +3,7 @@ summary: Improve the security of exposed REST APIs by adding custom authenticati
 tags: 
 locale: en-us
 guid: 844a1455-677f-4248-a50f-d6cd12bb4531
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Add Custom Authentication to an Exposed REST API

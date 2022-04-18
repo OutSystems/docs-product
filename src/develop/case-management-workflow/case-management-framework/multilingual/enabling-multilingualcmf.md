@@ -3,6 +3,7 @@ tags: Case Management; Case Management framework; Multilingual Case Management f
 summary: Follow this guide to set up and enable multilingual Case Management framework.
 guid: c882b8c5-8154-4465-ac69-968f5194050d
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Enable multilingual Case Management framework

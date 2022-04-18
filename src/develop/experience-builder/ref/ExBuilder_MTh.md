@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 6de96302-8aec-4a57-a9f2-8a7fede81b07
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # ExBuilder_MTh

@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 2dd8aae1-92e8-4901-a1d4-95e98c968ae7
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Security Warning

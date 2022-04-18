@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Floating Actions displays an action that floats in the bottom right corner of the screen.
 locale: en-us
 guid: 2d4b31df-c2f5-46c6-945b-8fd711f22542
+app_type: traditional web apps
 ---
 
 # Floating Actions

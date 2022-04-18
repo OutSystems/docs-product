@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Iframe displays information from other apps on the screen in small previews.
 locale: en-us
 guid: e334605f-9e05-484e-b50e-5450497c2412
+app_type: traditional web apps
 ---
 
 # Iframe

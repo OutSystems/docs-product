@@ -3,6 +3,7 @@ summary: Protect your mobile apps against tampering. OutSystems let's you create
 tags: support-application_development; runtime-mobile; 
 locale: en-us
 guid: 8fe53ff7-6928-4fa2-b80d-cef17d9da254
+app_type: mobile apps
 ---
 
 # Creating custom obfuscation rules

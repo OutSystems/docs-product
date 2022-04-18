@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Login Form is used to accelerate the creation of a custom login page.
 locale: en-us
 guid: 57c2167c-5a87-43c7-aa6d-69c1d8d4c82b
+app_type: traditional web apps
 ---
 
 # Login Form

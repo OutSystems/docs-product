@@ -3,6 +3,7 @@ tags:
 summary: Learn more about which users can access Experience Builder and how apps are generated and published.
 locale: en-us
 guid: 043fef18-091f-4d30-b347-29aeda65ed38
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How Experience Builder works

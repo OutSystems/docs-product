@@ -3,6 +3,7 @@ summary: Learn more about Single Sign-On, and how the end users can authenticate
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: a15c9cd8-b90c-4c9a-aed5-9cfffd0e1b04
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Single Sign-On

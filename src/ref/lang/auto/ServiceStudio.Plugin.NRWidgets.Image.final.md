@@ -5,6 +5,7 @@ summary: Reference information on the Image widget for displaying an image on th
 tags: outsystems-designing-screens; reference; designing-screens; image-widget; adding-image
 locale: en-us
 guid: 5d499b46-63fa-4200-9a63-19c5bc007744
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Image

@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Flows+SMSScreenAction+Kind, ServiceStudio.Model.Flows
 helpids: 0
 locale: en-us
 guid: 4ccf9451-f78a-4c45-8507-2e0fa2f7e4b2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Screen Action

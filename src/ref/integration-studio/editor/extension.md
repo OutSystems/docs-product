@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: f2a87d3e-f871-4e2d-86dc-c089888f7391
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Extension Editor

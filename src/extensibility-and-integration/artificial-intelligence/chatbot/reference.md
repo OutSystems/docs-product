@@ -3,6 +3,7 @@ summary: Additional information about settings for Azure and OutSystems.
 tags:
 locale: en-us
 guid: 1368591d-1ec5-40e1-b9a1-60064fa6726b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Reference

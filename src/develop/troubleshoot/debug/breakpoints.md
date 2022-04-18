@@ -2,6 +2,7 @@
 summary: Breakpoints are used to suspend the execution of your application while troubleshooting and debugging issues.
 locale: en-us
 guid: 9f051835-5900-4113-aedd-9ac7a5b4d4fa
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Breakpoints

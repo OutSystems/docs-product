@@ -3,6 +3,7 @@ summary: Learn how to deploy your integration with an external database from you
 tags: 
 locale: en-us
 guid: 33c27796-6e3d-4507-bdd3-27cc71036ee5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Deploy an Integration With an External Database

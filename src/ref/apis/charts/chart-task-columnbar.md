@@ -3,6 +3,7 @@ tags:
 summary: Learn how to create a simple Column or Bar chart in OutSystems.
 locale: en-us
 guid: 7115204b-9a1e-42f8-87f8-d1d771608667
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Create Column and Bar Charts
 

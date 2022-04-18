@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: da852258-d018-4628-b2bb-aec5fcc78c0b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Using Process Activities Callback Actions

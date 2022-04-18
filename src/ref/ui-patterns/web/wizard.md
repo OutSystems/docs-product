@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Wizard UI Pattern.
 locale: en-us
 guid: 40d6949b-644d-4bc3-8ed9-83bdbe79fba2
+app_type: traditional web apps
 ---
 
 # Wizard Reference

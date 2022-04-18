@@ -2,6 +2,7 @@
 summary: Learn more about the two areas where modules can be executed and debugged.
 locale: en-us
 guid: 4c1e3298-79aa-4d28-83d1-36c9b4b27cd7
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Public and Personal Areas

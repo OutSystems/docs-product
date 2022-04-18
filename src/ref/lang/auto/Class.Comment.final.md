@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Nodes+Comment+Kind
 helpids: 30082
 locale: en-us
 guid: f6eaf671-e183-45ce-8034-d3e16656b3b2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Comment

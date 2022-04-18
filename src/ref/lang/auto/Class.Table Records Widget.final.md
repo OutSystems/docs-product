@@ -5,6 +5,7 @@ summary: Learn how to use the Table Records widget to display the records of an 
 tags: runtime-traditionalweb
 locale: en-us
 guid: 8d4c86cd-8f7b-4c79-8dcd-6d4152036b1e
+app_type: traditional web apps
 ---
 
 # Table Records Widget

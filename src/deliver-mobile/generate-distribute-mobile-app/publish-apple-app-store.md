@@ -3,6 +3,7 @@ summary: Generate a mobile app package for your mobile app to publish in the App
 tags: runtime-mobile; support-mobile
 locale: en-us
 guid: 3d02e722-3225-47fa-b343-d6188e21d174
+app_type: mobile apps
 ---
 
 # Publish your Mobile iOS application to the Apple App Store

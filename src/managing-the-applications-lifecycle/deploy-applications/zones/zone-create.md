@@ -2,6 +2,7 @@
 summary: How to create a new deployment zone in Service Center.
 locale: en-us
 guid: bcb24adb-f56c-4be3-afcc-6305fe0f0e4e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create a New Deployment Zone

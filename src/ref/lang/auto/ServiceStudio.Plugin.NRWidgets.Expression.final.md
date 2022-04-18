@@ -5,6 +5,7 @@ kinds: ServiceStudio.Plugin.NRWidgets.ExpressionDescriptor
 helpids: 30028
 locale: en-us
 guid: b5b035e8-ea51-41bb-ab1a-92dcb8db2013
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Expression

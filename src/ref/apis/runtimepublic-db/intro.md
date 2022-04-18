@@ -3,6 +3,7 @@ summary: Provides functionality to allow you to integrate with your external dat
 tags: article-page; support-application_development; support-Database; support-Integrations_Extensions
 locale: en-us
 guid: 09f23dc2-a597-49ed-a083-21921deec622
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # RuntimePublic.Db API

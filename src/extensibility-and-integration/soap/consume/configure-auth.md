@@ -3,6 +3,7 @@ summary: Configure the desired Web Service authentication method using basic aut
 tags: support-Integrations_Extensions
 locale: en-us
 guid: 5ea726ad-7fb5-476b-ac3a-7c808b0692ef
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configure Web Service Authentication

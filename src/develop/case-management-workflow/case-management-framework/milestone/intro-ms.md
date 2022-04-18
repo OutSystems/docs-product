@@ -3,6 +3,7 @@ tags: Case Management; Case Management framework; CMf;
 summary: Learn about defining intermediate goals with milestones. Milestones provide modularity by helping define phases for dynamic cases. 
 guid: 31c89686-510e-4586-ad31-d04f21c21154
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Defining intermediate goals with milestones

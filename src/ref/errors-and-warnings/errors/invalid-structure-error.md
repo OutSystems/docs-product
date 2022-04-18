@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: e82d1098-ac56-437c-a1db-df2c98d69997
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Structure Error

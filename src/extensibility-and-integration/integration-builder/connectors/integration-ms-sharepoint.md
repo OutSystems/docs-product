@@ -2,6 +2,7 @@
 summary: Learn more about the SharePoint Online integration.
 locale: en-us
 guid: db18157f-d949-4143-ab29-29376e8a2d77
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # SharePoint Online integration

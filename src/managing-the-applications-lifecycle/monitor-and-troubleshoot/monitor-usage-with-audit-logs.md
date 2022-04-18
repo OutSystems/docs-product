@@ -3,6 +3,7 @@ summary: OutSystems logs every task performed by IT users in the infrastructure 
 tags: support-Integrations_Extensions; support-monitoring;  support-monitoring-featured
 locale: en-us
 guid: ff41a92e-5717-4a6c-9016-12acdb4de71f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Monitor Usage with Audit Logs

@@ -4,6 +4,7 @@ helpids: 7011, 30100
 summary: An Input Parameter allows you to provide data to an element for further use.
 locale: en-us
 guid: 6b4c779a-b8ce-482d-a842-1b2eedc84785
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Input Parameter

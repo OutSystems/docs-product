@@ -3,6 +3,7 @@ kinds: ServiceStudio.Model.Nodes+DataSet+Kind, ServiceStudio.Model.NRNodes+WebSc
 helpids: 17203
 locale: en-us
 guid: aa5d2ae3-56f3-40e8-8c10-75573d80424c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Aggregate

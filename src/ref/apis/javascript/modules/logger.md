@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb
 summary: Provides methods to log messages or errors. Used as "console.log" but also logs messages in Service Center.
 locale: en-us
 guid: a91ff06e-c4fe-4e1b-ab4d-ac67c341c3e5
+app_type: mobile apps, reactive web apps
 ---
 
 # Logger

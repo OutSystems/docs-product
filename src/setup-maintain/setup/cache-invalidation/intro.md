@@ -4,6 +4,7 @@ tags: article-page; version-11
 helpids: 30176
 locale: en-us
 guid: b3c02281-82f0-4f57-95f9-e357da5114db
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Cache Invalidation in OutSystems 11

@@ -3,6 +3,7 @@ summary: Complete reference for the Configuration Tool command line.
 tags: support-Installation_Configuration; support-Installation_Configuration-overview
 locale: en-us
 guid: 7c953aae-e0ef-4034-afcf-84960d18ad3b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configuration Tool Command Line Reference

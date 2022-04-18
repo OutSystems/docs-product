@@ -3,6 +3,7 @@ kinds: ServiceStudio.Plugin.SOAP.SOAPDynamicPasswordInputDescriptor
 helpids: -1
 locale: en-us
 guid: 457bae02-6d3f-4670-8876-8f882abb258f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Password Input Parameter (Consumed SOAP)

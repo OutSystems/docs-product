@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced Use Cases for the Tabs UI Pattern.
 locale: en-us
 guid: 8b2184cf-f3d0-4bbc-a6f8-b78509902cf0
+app_type: mobile apps, reactive web apps
 ---
 
 # Tabs Reference

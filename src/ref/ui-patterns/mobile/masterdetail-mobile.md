@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Advanced Use Cases dor the Master Detail UI Pattern.
 locale: en-us
 guid: 73bcc3f2-fbce-4e53-b0c3-a3501d2dc2ff
+app_type: mobile apps, reactive web apps
 ---
 
 # Master Detail Reference

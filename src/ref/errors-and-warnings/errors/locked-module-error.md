@@ -3,6 +3,7 @@ summary: Check the causes and recommendations on how to solve the different Lock
 tags:
 locale: en-us
 guid: abc85ab7-84f6-4409-8e23-527447edf15b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Locked Module Error

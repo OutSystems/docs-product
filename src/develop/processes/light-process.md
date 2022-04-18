@@ -3,6 +3,7 @@ summary: Use light process execution for large scale batch processing scenarios,
 tags: support-webapps;
 locale: en-us
 guid: 99aedeaf-deb9-440c-b1e7-258b60875e00
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Design Scalable Database Queueing Using Light Processes

@@ -4,6 +4,7 @@ helpids: 4022
 tags: runtime-traditionalweb
 locale: en-us
 guid: d570d3e9-60ad-40d8-a87b-df968ff67d2a
+app_type: traditional web apps
 ---
 
 # Show Record Widget

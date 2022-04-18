@@ -3,6 +3,7 @@ summary:  Check the causes and recomendations on how to solve the different Inva
 tags:
 locale: en-us
 guid: 0eb3292f-592a-4301-a9ee-7ac3c598e70a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Variable Error

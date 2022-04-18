@@ -3,6 +3,7 @@ summary: Learn how to test and fix accessibility issues on your OutSystems React
 tags: runtime-reactiveweb
 locale: en-us
 guid: 4d847458-cdd8-40ec-848a-aa9af7e1d2ea
+app_type: reactive web apps
 ---
 
 # Testing and fixing accessibility issues

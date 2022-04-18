@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 7345c24f-b77e-4e34-b8d0-4b0efc8562db
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # ExBuilder_Configs_MCS

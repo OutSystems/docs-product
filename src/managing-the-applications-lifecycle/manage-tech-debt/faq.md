@@ -3,6 +3,7 @@ tags:
 summary: 
 locale: en-us
 guid: d7db51a1-9917-4baa-a36e-716dc0c75d96
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 

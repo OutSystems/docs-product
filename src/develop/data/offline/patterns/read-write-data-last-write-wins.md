@@ -3,6 +3,7 @@ summary: Use this synchronization pattern when it is not likely for more than on
 tags: runtime-mobile
 locale: en-us
 guid: 053acd13-6c13-4849-b496-35631a4ad7f3
+app_type: mobile apps
 ---
 
 # Read/Write Data Last Write Wins

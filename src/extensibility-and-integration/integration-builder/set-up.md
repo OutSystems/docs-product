@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 617ec597-a128-4b2a-872f-4a3a5856628c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to set up Integration Builder

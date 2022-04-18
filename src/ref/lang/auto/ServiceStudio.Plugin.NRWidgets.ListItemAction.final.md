@@ -5,6 +5,7 @@ summary: Reference information on the List Action widget for allowing you to def
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; list-action-widget; list-item-swipe
 locale: en-us
 guid: 0cfabe1b-7274-404a-901d-e334b007fb26
+app_type: mobile apps, reactive web apps
 ---
 
 # List Action

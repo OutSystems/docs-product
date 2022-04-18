@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Adds swipeable cards that can be dragged in multiple directions triggering events, such as deny, approve, and archive.
 locale: en-us
 guid: c4e2edb1-3142-4f82-b34d-dab8d2356155
+app_type: mobile apps, reactive web apps
 ---
 
 # Stacked Cards

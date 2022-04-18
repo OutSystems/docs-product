@@ -2,6 +2,7 @@
 tags: 
 locale: en-us
 guid: d2ac8884-a37b-423d-9655-b235291485cd
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Supported Join Types

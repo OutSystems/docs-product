@@ -2,6 +2,7 @@
 tags: 
 locale: en-us
 guid: 223d6f3f-6f3f-4204-a5f0-f135ca1a76a4
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Supported Media Types in REST API Requests

@@ -5,6 +5,7 @@ summary: Reference information on the Container widget for grouping widgets and 
 tags: outsystems-designing-screens; reference; designing-screens; container
 locale: en-us
 guid: 71a7768d-6ce0-4e61-96b6-7bc5acaea194
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Container

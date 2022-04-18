@@ -3,6 +3,7 @@ summary: Learn how to use Resources to display a PDF document or to play a video
 tags: support-application_development
 locale: en-us
 guid: a27b2277-218f-4439-8ea7-6884e0d1eaa3
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Resources

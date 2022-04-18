@@ -3,6 +3,7 @@ summary: Learn how to configure the hostname, purpose and debug mode of your Out
 tags: support-Installation_Configuration
 locale: en-us
 guid: 34e53ab0-1ab2-429a-81c0-dd29cf99a549
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configure your OutSystems environment

@@ -3,6 +3,7 @@ tags: runtime-traditionalweb;
 summary: Advanced use cases for the Bullets UI Pattern.
 locale: en-us
 guid: 9fe6a555-54b5-4521-a880-36846463903d
+app_type: traditional web apps
 ---
 
 # Bullets Reference

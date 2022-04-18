@@ -3,6 +3,7 @@ tags:
 summary: Learn how to find and fix technical debt in an app.
 locale: en-us
 guid: 8b0d91f3-f1ee-48c2-8b7e-8a82aeb27ae3
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Getting started as a developer

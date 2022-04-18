@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: d569b25f-1cf5-4e32-a006-185fcac10089
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Attributes Editor

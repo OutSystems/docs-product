@@ -3,6 +3,7 @@ summary: Learn how OutSystems allows you to take a snapshot of the application a
 tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: d97b99fb-75a2-453c-a20d-d4270e09c8ed
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Tag a Version

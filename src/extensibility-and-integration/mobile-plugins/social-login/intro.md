@@ -3,6 +3,7 @@ summary: Enable a login experience that uses an external provider, namely Google
 tags: runtime-mobile
 locale: en-us
 guid: 834dcc40-0b87-4161-bcd0-db32053044c7
+app_type: mobile apps
 ---
 
 # Social login plugin

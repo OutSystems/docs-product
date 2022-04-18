@@ -3,6 +3,7 @@ summary: Refresh the Web Service to get the latest changes in a consumed SOAP We
 tags: support-Integrations_Extensions
 locale: en-us
 guid: 68e18433-b490-4ba2-9269-0261f6b656fd
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Refresh a SOAP Web Service

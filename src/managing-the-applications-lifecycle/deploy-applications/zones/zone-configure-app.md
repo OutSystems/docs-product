@@ -3,6 +3,7 @@ summary: How to configure an application in Service Center to use a specific dep
 tags: support-Application_Lifecycle; support-Infrastuture_Architecture
 locale: en-us
 guid: eed19a98-c672-43ac-90c9-70b9f33d921a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configure an Application to Use a Deployment Zone

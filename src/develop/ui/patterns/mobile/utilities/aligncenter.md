@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Align Center places content horizontally or vertically within a container.
 locale: en-us
 guid: 911674fa-b1b7-42e4-8e72-eb103d0294e4
+app_type: mobile apps, reactive web apps
 ---
 
 # Align Center

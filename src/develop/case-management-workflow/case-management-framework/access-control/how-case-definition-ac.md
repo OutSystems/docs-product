@@ -3,6 +3,7 @@ tags: Case Management; Case Management framework; Access control; CMf; AC;
 summary: After enabling access control for a case definition, you can grant access to all cases of that case definition. Learn how to grant or remove access to a case definition for a user or a group of users.
 guid: 32f3c433-fd1e-4bd3-861b-32e13f5d157d
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to grant or revoke access to a case definition

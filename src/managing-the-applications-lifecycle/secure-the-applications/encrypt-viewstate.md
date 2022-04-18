@@ -3,6 +3,7 @@ summary: Secure the runtime of web application by encrypting the viewstate to pr
 tags: runtime-traditionalweb
 locale: en-us
 guid: a07b13f4-d8a9-4d32-8c52-57544422ce46
+app_type: traditional web apps
 ---
 
 # Encrypt web apps view state

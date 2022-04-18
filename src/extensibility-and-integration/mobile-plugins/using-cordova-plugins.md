@@ -3,6 +3,7 @@ summary: Create your own mobile plugin by wrapping an Apache Cordova plugin into
 tags: runtime-mobile; support-Integrations_Extensions; support-Mobile_Apps
 locale: en-us
 guid: 2d86818a-afda-4680-9090-8966faa38be9
+app_type: mobile apps
 ---
 
 # Using Cordova Plugins

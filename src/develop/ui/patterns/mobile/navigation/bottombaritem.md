@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: The Bottom Bar Item provides access to a bottom navigation drawer
 locale: en-us
 guid: 68ecb55f-4372-4f1f-910e-46129f456bf8
+app_type: mobile apps, reactive web apps
 ---
 
 # Bottom Bar Item

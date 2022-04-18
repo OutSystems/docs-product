@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 143a03ee-a51c-4c5b-b28c-45266ccd9926
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Start Conditional Start Action

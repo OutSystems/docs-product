@@ -3,6 +3,7 @@ summary: Learn more about persistent login, to enable end users not having to lo
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 36803dc8-3459-4e8b-957e-3b3519453e58
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Persistent Login

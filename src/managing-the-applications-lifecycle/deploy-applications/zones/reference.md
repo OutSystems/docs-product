@@ -2,6 +2,7 @@
 summary: Reference information on deployment zone parameters.
 locale: en-us
 guid: 73511ea5-c2d6-493a-9d84-bbc699e84fc5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Deployment Zones Reference

@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: b51a153e-2fe4-4721-ac98-8de123fdf804
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Impact of Adding Activities to Process Flows

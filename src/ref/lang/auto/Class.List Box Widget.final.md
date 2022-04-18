@@ -5,6 +5,7 @@ summary: Allows the user to select one or more values from a list of possible va
 tags: runtime-traditionalweb
 locale: en-us
 guid: 7a819ca9-6e8b-418a-9270-ad6a8546ea1a
+app_type: traditional web apps
 ---
 
 # List Box Widget

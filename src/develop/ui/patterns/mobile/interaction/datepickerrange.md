@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Date Picker Range allows the end user to select a range of dates using a calendar.
 locale: en-us
 guid: f130d36f-74c0-450f-99b8-6f5e986c555c
+app_type: mobile apps, reactive web apps
 ---
 
 # Date Picker Range

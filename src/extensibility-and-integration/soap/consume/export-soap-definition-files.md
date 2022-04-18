@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 51019bcc-2daf-4dfe-9df7-856a656a7de5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Export definition files in a SOAP web service

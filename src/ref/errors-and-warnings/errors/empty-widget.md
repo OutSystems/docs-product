@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: d8955d06-9233-4ded-a916-e748837e3bfb
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Empty Widget

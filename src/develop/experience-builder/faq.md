@@ -3,6 +3,7 @@ tags:
 summary: Check the answers to the frequently asked questions about Experience Builder.
 locale: en-us
 guid: cd113946-442f-4263-b30e-40a48caba5a1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Experience Builder FAQ

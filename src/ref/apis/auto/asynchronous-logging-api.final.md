@@ -3,6 +3,7 @@ summary: The Asynchronous Logging API provides actions to asynchronously insert 
 tags: support-application_development; support-Application_Troubleshooting; support-devOps; support-monitoring
 locale: en-us
 guid: 3f292aa4-1be7-4699-8231-0d465c90297d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Asynchronous Logging API

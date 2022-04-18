@@ -2,6 +2,7 @@
 tags: support-Database
 locale: en-us
 guid: ee918919-4249-4a56-9ac3-a2ccedd30e54
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Database Data Types

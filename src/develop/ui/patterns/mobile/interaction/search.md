@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb;
 summary: Search allows the user to find pieces of content without the use of navigation.
 locale: en-us
 guid: 583538cf-ffe1-4c39-9fe5-60667fd05f26
+app_type: mobile apps, reactive web apps
 ---
 
 # Search

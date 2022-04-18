@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 0d31202a-6526-4903-a88d-4ed9b8e73ab2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Entity Properties

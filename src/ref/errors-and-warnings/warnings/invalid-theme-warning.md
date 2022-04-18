@@ -3,6 +3,7 @@ summary: Check the causes and recomendations on how to solve the different Inval
 tags:
 locale: en-us
 guid: 0b9c59a1-505b-4139-9567-c0f219b62ac8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Theme Warning

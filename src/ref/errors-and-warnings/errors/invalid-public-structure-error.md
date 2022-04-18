@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 6c059ca7-c68d-44de-9352-267cde943cff
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Public Structure Error

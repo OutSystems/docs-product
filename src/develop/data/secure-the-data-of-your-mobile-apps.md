@@ -3,6 +3,7 @@ summary: Set of best practices and solutions for securing data in your mobile ap
 tags: runtime-mobile; support-Security; support-Security-featured
 locale: en-us
 guid: 5b81d4aa-2da0-4e88-9d14-c17a753a79fa
+app_type: mobile apps
 ---
 
 # Secure the Data of your Mobile Apps

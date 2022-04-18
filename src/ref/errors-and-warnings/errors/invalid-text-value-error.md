@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: cfa237a8-7738-48a4-8561-bacf28c6e379
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Text Value Error

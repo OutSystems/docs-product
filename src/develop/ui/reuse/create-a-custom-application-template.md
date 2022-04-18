@@ -3,6 +3,7 @@ summary: Learn how to develop a template that you can you use as the starting po
 tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 54d15c8a-e72c-4732-a54e-9f4e0be1fe0e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create a Custom Application Template

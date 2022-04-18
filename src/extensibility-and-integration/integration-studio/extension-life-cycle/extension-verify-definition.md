@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 6d5862f0-19e2-409e-a555-d4ab04d1a164
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Verify the Extension Definition

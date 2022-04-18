@@ -1,6 +1,7 @@
 ---
 locale: en-us
 guid: 8df1dab2-62e4-4d27-aa62-05c7a2fe8612
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Usability Suggestion Warning

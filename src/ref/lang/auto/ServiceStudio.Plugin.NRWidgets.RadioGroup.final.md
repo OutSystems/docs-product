@@ -5,6 +5,7 @@ kinds: ServiceStudio.Plugin.NRWidgets.RadioGroupDescriptor
 helpids: 30215
 locale: en-us
 guid: 2f9bd54c-d963-4b3a-8bab-5f6d47dcd0b2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Radio Group

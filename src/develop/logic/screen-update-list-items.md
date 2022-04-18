@@ -3,6 +3,7 @@ summary: Learn how to manipulate a list and update it right away on the screen.
 tags: support-application_development; support-Front_end_Development;
 locale: en-us
 guid: 540f72cb-fa35-4bdb-8af4-c7637699eb3c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Update List Items on a Screen

@@ -3,6 +3,7 @@ summary: This technical preview enables you to set application Site Properties i
 tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: 4acf3283-61b0-4409-a357-cb2ef63f1a5e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Technical Preview - Configure Site Properties During Deployment

@@ -6,7 +6,7 @@ guid: 0aa8f19f-5429-4b1d-bd3e-48575eb4ffc7
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Grant and Revoke End User Roles
+# Grant and revoke End user roles
 
 User roles allow you to grant access to applications and specific screens or tasks. You create roles during development in Service Studio. When you deploy the application, the roles are automatically available in the Users application. [Learn more about roles definition](../user-roles/intro.md).
 

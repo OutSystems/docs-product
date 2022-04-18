@@ -28,7 +28,7 @@ To specify the preferences for your mobile app:
 
 3. Introduce the preferences you want from the [available preferences](https://cordova.apache.org/docs/en/latest/config_ref/#preference) in the JSON value: 
 
-    1. Each preference you want to define is represented as a name/value pair, where the name is the preference name and the value (specified as a string) is its parameter. The preference name is case-sensitive. Check the  preferences JSON template  to avoid mistakes. 
+    1. Each preference you want to define is represented as a name/value pair, where the name is the preference name and the value is its parameter specified as a string (surrounded by double quotes), a boolean or a number. The preference name is case-sensitive. Check the  preferences JSON template  to avoid mistakes. 
 
         ![](images/image4.png)
 

@@ -7,7 +7,7 @@ guid: 7aa53270-fb01-4543-90e4-57907dcc68fe
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Manage technical debt with Architecture Dashboard
+# Manage technical debt
 
 Architecture Dashboard (https://architecture.outsystems.com/) is the OutSystems technical debt monitoring tool. It enables IT leaders to visualize complex cross-portfolio architectures and identify problems while also helping developers follow best practices and avoid common pitfalls.
 

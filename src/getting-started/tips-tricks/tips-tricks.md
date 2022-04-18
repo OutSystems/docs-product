@@ -7,9 +7,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Service Studio Tips and Tricks
 
-# Basics
+## Basics
 
-## Dark theme
+### Dark theme
 
 <div class="info" markdown="1">
 
@@ -19,11 +19,11 @@ Only applies to cross-platform Service Studio.
 
 You can switch Service Studio to the dark theme (or dark mode). On the **Edit** menu, chose **Preferences...** then, under **Theme** switch on **Dark theme**.
 
-## Would you like to know more? Hit F1
+### Would you like to know more? Hit F1
 
 You can always access relevant documentation and find more about any element/flow/tab by selecting it and pressing <span class="keyboard"> F1 </span> from within Service Studio.
 
-## Keyboard shortcuts
+### Keyboard shortcuts
 
 You can consult the list of keyboard shortcuts in two ways:
 
@@ -33,7 +33,7 @@ You can consult the list of keyboard shortcuts in two ways:
 
 * Check [the shortcuts list](../../ref/lang/auto/shortcutkeys.md) in the documentation
 
-## Open multiple files simultaneously
+### Open multiple files simultaneously
 
 Whether you are opening files from your Environment or from a local source, you can always do it faster by selecting and opening them all at once in one of three different ways:
 
@@ -47,7 +47,7 @@ Whether you are opening files from your Environment or from a local source, you 
     * Use <span class="keyboard"> Shift </span>+<span class="lclick">Left-Click</span> to select all files between the last file you previously selected and the clicked file
     * Use <span class="keyboard"> Cmd </span>+<span class="keyboard"> Shift </span>+<span class="lclick">Left-Click</span> to add to your previous selection all files from the last file you previously selected to the clicked file
 
-## Edit the Properties of several elements in one go
+### Edit the Properties of several elements in one go
 
 Do you want to make every Screen of a Module accessible to anonymous users? Or maybe it's changing the Data Type of several Variables that you need? You'll be happy to know that you won't have to go through them one by one!
 
@@ -57,7 +57,7 @@ Start by selecting the elements for which you want to change the Properties and 
 
 Then, you'll be able to see where their Properties differ and where they share common values. All you have to do now is adjust them according to your needs. Any change made within your current selection will be applied to all selected elements.
 
-## Closing and moving Modules
+### Closing and moving Modules
 
 Do you have way too many Modules open? Quickly close any number of them by right-clicking a Module tab and selecting **Close**, **Close other modules**, **Close modules to the right**, or **Close all modules**.
 
@@ -67,13 +67,13 @@ If closing modules is not an option, you can rearrange them by clicking and drag
 
 ![Reorder modules](images/tt-reordertabs-ss.gif)
 
-## Open a Screen in browser
+### Open a Screen in browser
 
 To open a Screen in a browser open the **Interface** tab, right-click that Screen and choose **Open in Browser**. There is no need to create additional Entry Points.
 
 ![](images/tt-open-in-browser-00.png)
 
-## Expanding and collapsing trees
+### Expanding and collapsing trees
 
 With just a few clicks, you can keep your development environment neat and tidy at all times.
 In any tree, collapse or expand all items and subitems:
@@ -83,7 +83,7 @@ In any tree, collapse or expand all items and subitems:
 
 ![](images/tt-tree-02.png)
 
-## Use the Widget Tree when designing UI
+### Use the Widget Tree when designing UI
 
 Are you having trouble placing a Widget exactly where you want it? Make your life easier by using the Widget Tree!
 
@@ -93,7 +93,7 @@ With it you can confidently place or move widgets around through a hierarchical 
 
 The Widget Tree automatically appears whenever you drag a Widget to a Screen or Block, but you can also access it by clicking the **Widget Tree** button.
 
-## Edit basic CSS properties with Styles Editor
+### Edit basic CSS properties with Styles Editor
 
 No more CSS stress! Use **Styles Editor** to edit basic visual properties of widgets with the aid of a visual interface. Leave all complexity behind and use it in one of two ways:
 
@@ -105,9 +105,9 @@ No more CSS stress! Use **Styles Editor** to edit basic visual properties of wid
 
     ![](images/tt-styles-editor-01.png)
 
-# Boost Performance
+## Boost Performance
 
-## Easily create Entity Diagrams
+### Easily create Entity Diagrams
 
 Select the target Entities and then either drag them to an open Entity Diagram canvas or right-click and select **Add to New Entity Diagram**.
 
@@ -115,7 +115,7 @@ Select the target Entities and then either drag them to an open Entity Diagram c
 
 When added, the **Entity Diagram** is automatically arranged. However, if an Entity is already present in the target diagram, it will not be added again.
 
-## Guess my Attribute/Variable Data Type
+### Guess my Attribute/Variable Data Type
 
 Speed up your Entity/Structure creation by helping Service Studio automatically choose the correct Data Type of each Attribute or Variable.
 
@@ -136,7 +136,7 @@ Entity Identifier|`<Entity>Id`|`CustomerId`
 Entity Record|`<Entity>`|`Customer`
 Entity Record List|`<Entity>s`,`<Entity>es`,`<Entity>ies`|`Customers`
 
-## Quickly add a dependency in any module
+### Quickly add a dependency in any module
 
 Cut the search time to a minimum and quickly add dependencies by searching across all modules with no need to go through **Manage Dependencies** to check one by one.
 
@@ -149,7 +149,7 @@ Click **Search in other Modules** in the dropdown menu to open a window that'll 
 
 Just select the element you're looking for and click **Add Dependency**.
 
-## Make sure you Remove Unused Dependencies
+### Make sure you Remove Unused Dependencies
 
 Having more dependencies increases the size of your Module and increases the duration of 1-Click Publish.
 
@@ -157,7 +157,7 @@ Through the **Remove Unused Dependencies**, Service Studio will automatically re
 
 ![](images/tt-unused.gif)
 
-## Work on complex screens with less effort
+### Work on complex screens with less effort
 
 Complex screens present lots of information at design time. Many times, blocks are used to build such screens in a modular way.
 
@@ -179,9 +179,9 @@ Follow these steps:
 
     ![Visibility toggle example](images/tt-toggles-example-ss.gif)
 
-# Create new elements
+## Create new elements
 
-## Create an Aggregate from an Entity
+### Create an Aggregate from an Entity
 
 Drag an Entity to an Action Flow to create an aggregate.
 
@@ -191,33 +191,33 @@ If you set the `Is Active Attribute` of the Entity - choose **More...** in the E
 
 ![](images/tt-drag-agg-unf-05.png?width=500)
 
-## Create a Button from an Action
+### Create a Button from an Action
 
 Drag an Action and drop it to the Screen. This creates a Button and a binding to the Action.
 
 ![Demo of creating a Button from an Action](images/tt-create-button-from-action.gif?width=500)
 
-## Create a filtered Aggregate from an Identifier
+### Create a filtered Aggregate from an Identifier
 
 Drag a Variable of the Identifier data type to an Action Flow to create an Aggregate filtered by that variable.
 
 ![](images/tt-drag-agg-filt.gif)
 
-## Create an If from a Boolean
+### Create an If from a Boolean
 
 Drag a Boolean Variable to a Flow to create an If condition.
 
 ![](images/tt-drag-bool-if-03.gif)
 
-## Create an Assignment from a Variable
+### Create an Assignment from a Variable
 
 In a Flow, drag a Variable to an Assign element to create an `Assignment` for that Variable.
  
 ![](images/tt-drag-assign-00.gif)
 
-# Reuse elements
+## Reuse elements
 
-## Reuse logic with Extract to Action 
+### Reuse logic with Extract to Action 
 
 When you want to Extract the logic inside an Action to a different one, you can select the target flow elements, right-click and choose **Extract to Action** to create a new Action with that logic.
 
@@ -225,9 +225,9 @@ When you want to Extract the logic inside an Action to a different one, you can 
 
 A new action will be created with the selected logic and with all the necessary Input and Output Parameters.
 
-# Convert Elements
+## Convert Elements
 
-## Convert Variables
+### Convert Variables
 
 You can easily change the type of a Variable. Right-click the target Variable and select **Convert to Local Variable/Input Parameter/Output Parameter**.
 
@@ -235,7 +235,7 @@ You can easily change the type of a Variable. Right-click the target Variable an
 
 Keep in mind that not all Actions may use Output Parameters.
 
-## Convert a Text Widget to an Expression Widget
+### Convert a Text Widget to an Expression Widget
 
 Right-click the target Text Widget and select **Convert to Expression**.
 
@@ -243,19 +243,19 @@ Right-click the target Text Widget and select **Convert to Expression**.
 
 The original text from the Text widget will be automatically included as the example of the new Expression widget.
 
-## Convert Entities/Static Entities
+### Convert Entities/Static Entities
 
 Just right-click the target Entity/Static Entity and under **Advanced** select **Convert to Static Entity/Entity**.
 
 ![](images/tt-conv-ent-staent-00.png)
 
-## Convert an Entity to a Structure
+### Convert an Entity to a Structure
 
 Converting an Entity to a Structure is as easy as opening  the Data tab and dragging the target Entity to the Structure Folder.
 
 ![](images/tt-conv-str-ent-04.gif)
 
-## Swap If Connectors
+### Swap If Connectors
 
 When you need to change a True branch to a False branch or a False branch to a True branch, right-click the target If and select **Swap Connectors** to swap the True/False condition branches.
 

@@ -19,7 +19,9 @@ Also available: [Log data reference in OutSystems 10](https://success.outsystems
 You can access the log data in Service Studio, by using the PlatformLogs extension. Each entry has the corresponding _Previous entry. For example, for the oslog_General view you have both oslog_General_Previous in the database views and Log_General_Previous in the Entity list.
 
 <div class="info" markdown="1">
-See [The log tables and views](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture/The_log_tables_and_views) for more information about the database model.
+
+See [The log tables and views](views-and-tables.md) for more information about the database model.
+
 </div>
 
 Database view | Entity

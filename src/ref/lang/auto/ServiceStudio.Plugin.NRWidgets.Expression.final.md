@@ -41,12 +41,6 @@ The expression widget displays text or the result of an expression at runtime. I
     * **THIS IS TEXT IN UPPERCASE**
 
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
-
 ## Properties
 
 <table markdown="1">

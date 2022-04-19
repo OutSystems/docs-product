@@ -10,12 +10,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 Aggregates allow you to fetch data using an optimized query, tailored to your usage. Aggregates automatically absorb changes in the data model, and can load data from the server of the local database. They support combining several entities and advanced filtering, and bring only the attributes that are used on the screen or action. Attributes also abstract the underlying model for the developer, allowing attribute renaming and changes to data type.
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
-
 ## Client-side Aggregates
 
 Client-side Aggregates run in the client logic. Use them to get data for your widgets when a Screen or a Block loads. Follow the steps: 

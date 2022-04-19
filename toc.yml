@@ -1753,7 +1753,7 @@
             - href: ref/integration-studio/element-property/resource.md
         - href: ref/integration-studio/element-naming.md
 
-    # OutSystems APIs
+    # OutSystems APIs 
     - href: ref/apis/intro.md
     - topics:
         - href: ref/apis/auto/asynchronous-logging-api.final.md

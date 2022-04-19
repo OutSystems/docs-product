@@ -77,6 +77,9 @@ In some cases you may wish to fine-tune your selections. As one example, you may
 1. Click the specific modules to ignore during analysis.
 1. Click **Change to Ignored**.
     ![Ignored modules page](images/individually-ignored-modules-ad.png)
+
     <div class="info" markdown="1">
+
     When all modules in an app are changed to **Ignored**, the app itself is also ignored during analysis. In a like manner, if one or more modules of a previously ignored app is changed to **Analyzed** the app itself will also be analyzed.
+    
     </div>

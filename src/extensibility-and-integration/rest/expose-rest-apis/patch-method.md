@@ -8,7 +8,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 # PATCH method on exposed REST services
 
 <div class="info" markdown="1">
-This feature is in [Technical Preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features).
+
+This feature is in [Technical Preview](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features).
+
 </div>
 
 The PATCH method is part of the HTTP protocol and contemplated in REST specifications since the start. 

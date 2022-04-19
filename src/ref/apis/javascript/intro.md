@@ -39,7 +39,7 @@ $public.FeedbackMessage.showFeedbackMessage("Your data has been submitted.", 1);
 
 |Type aliases|Description|
 |---|---|
-|[ApplicationLoadEventHandlers](README.md#applicationloadeventhandlers)|Event handlers called when the status of the application load changes.|
+|[ApplicationLoadEventHandlers](intro.md#applicationloadeventhandlers)|Event handlers called when the status of the application load changes.|
 
 
 ## Type aliases

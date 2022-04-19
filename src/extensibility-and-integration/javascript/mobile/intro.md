@@ -80,7 +80,7 @@ The example below shows a feedback message to users stating that their data have
 $public.FeedbackMessage.showFeedbackMessage("Your data has been submitted.", 1);
 ```
 
-For more information about the available OutSystems APIs check the [OutSystems JavaScript API Reference](<../../../ref/apis/javascript/README.md>).
+For more information about the available OutSystems APIs check the [OutSystems JavaScript API Reference](<../../../ref/apis/javascript/intro.md>).
 
 ### Available objects in each JavaScript element
 
@@ -92,6 +92,6 @@ sign:
 * **$parameters** – Contains the input and output parameters defined for the current JavaScript element. 
 * **$actions** – Contains references to client actions callable from the current JavaScript element scope (client actions either defined in the current module or referenced from another module, like system actions). 
 * **$roles** – Contains all the custom-defined roles for the current module. 
-* **$public** – Contains objects instantiating all public JavaScript API classes and modules. Check the [JavaScript API Reference](<../../../ref/apis/javascript/README.md>) to find all the available modules and functions. 
+* **$public** – Contains objects instantiating all public JavaScript API classes and modules. Check the [JavaScript API Reference](<../../../ref/apis/javascript/intro.md>) to find all the available modules and functions. 
 
 Other objects commonly available in JavaScript in a browser context can also be used, such as "window", "document", "JSON" and "RegExp" objects.

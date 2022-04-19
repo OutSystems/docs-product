@@ -1772,7 +1772,7 @@
         - href: ref/apis/auto/epa-taskbox-api.final.md
         - href: ref/apis/auto/httprequesthandler-api.final.md
         - href: ref/apis/auto/includejavascript-api.final.md
-        - href: ref/apis/javascript/README.md
+        - href: ref/apis/javascript/intro.md
         - topics:
             - href: ref/apis/javascript/classes/applicationcontext.md
             - href: ref/apis/javascript/modules/applicationlifecycle.md

@@ -975,6 +975,7 @@
         - href: setup-maintain/setup/default-configurations.md
         - href: setup-maintain/setup/environment-config.md
         - href: setup-maintain/setup/lifetime-configure.md
+        - href: setup-maintain/setup/ssl-domain-cloud/ssl-domain-cloud.md
         # Cache Invalidation Service
         - href: setup-maintain/setup/cache-invalidation/intro.md
         - topics:

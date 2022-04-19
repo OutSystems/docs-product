@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Aggregate
 
-Fetch data using an optimized query. Aggregates can load data from the server of the local database, and they support combining several Entities and advanced filtering.
+Aggregates allow you to fetch data using an optimized query, tailored to your usage. Aggregates automatically absorb changes in the data model, and can load data from the server of the local database. They support combining several entities and advanced filtering, and bring only the attributes that are used on the screen or action. Attributes also abstract the underlying model for the developer, allowing attribute renaming and changes to data type.
 
 <div class="info" markdown="1">
 

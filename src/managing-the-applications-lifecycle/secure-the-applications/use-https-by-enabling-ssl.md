@@ -25,8 +25,8 @@ You can enable SSL in your infrastructure in one of the following ways, dependin
 
 SSL in OutSystems Cloud
 :   Your cloud environment is automatically rolled out with a valid SSL certificate for the `outsystemsenterprise.com` domain.  
-    However, you can customize both the hostname of your environment and its SSL domain certificate by following the steps outlined in [Enable a Custom SSL Domain in OutSystems PaaS](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/Enable_Custom_SSL_Domain_In_OutSystems_PaaS>).
+    However, you can customize both the hostname of your environment and its SSL domain certificate by following the steps outlined in [Use your SSL domain in OutSystems Cloud](../../setup-maintain/setup/ssl-domain-cloud/ssl-domain-cloud.md).
 
 SSL in an On-Premises Infrastructure
 :   In on-premises infrastructures you need to acquire and install an SSL domain certificate to add HTTPS support to your OutSystems applications.  
-    Check [How to install an SSL certificate for the OutSystems platform](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/How_to_install_an_SSL_Certificate_for_the_OutSystems_platform>) in the Support Knowledge Base.
+    Check [How to install an SSL Certificate in self-managed environments](../../setup-maintain/setup/install-ssl-platform.md) in the Support Knowledge Base.

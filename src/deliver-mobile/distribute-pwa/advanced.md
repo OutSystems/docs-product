@@ -16,12 +16,6 @@ Applies only to Mobile Apps.
 
 Progressive web app (PWA) is an evolving and open technology. This document is about settings and techniques that go beyond the built-in capabilities of the OutSystems PWAs.
 
-<div class="info" markdown="1">
-
-The team would love to hear what you think of this document and if it helps you. Please **leave feedback** in the feedback section. If you want to get a reply, select **Yes, you may contact me about this feedback**.
-
-</div>
-
 ## Working with the PWA manifest
 
 Service Studio generates the [PWA manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest). You can edit the following manifest options from the Service Studio UI.

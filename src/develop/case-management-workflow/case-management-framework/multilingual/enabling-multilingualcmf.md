@@ -34,7 +34,7 @@ Translate only the attributes that need translation. The Id attributes, which ar
 
     </div>
 
-1.  Carry out the translations. Translations can either be done manually or by exporting to Excel, both accessed by right-clicking the **Multilingual Locales** folder in the **Data** tab. For the UI and front-end translations, as well as the static entities listed below follow [this guide for Traditional Web apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Translating_the_app_UI/Multilingual_Web_Applications) and [this one for Reactive Web apps and Mobile apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Multilingual_Reactive_Web_and_Mobile_Apps). 
+1.  Carry out the translations. Translations can either be done manually or by exporting to Excel, both accessed by right-clicking the **Multilingual Locales** folder in the **Data** tab. For the UI and front-end translations, as well as the static entities listed below follow [this guide for Traditional Web apps](../../../ui/multilingual/multilingual-web.md) and [this one for Reactive Web apps and Mobile apps](../../../ui/multilingual-tp/intro.md). 
 
 Below is a list of setup CMf static entities that you have to translate. Note that these names apply to the example described in this article.
 

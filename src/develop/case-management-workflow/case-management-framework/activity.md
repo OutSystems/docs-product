@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Activities
 
-When you need the end user to make a decision or to act before a case advances, you use [Human Activities](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Processes/Process_Tools/Human_Activity). In the context of the Case Management framework,  Human Activities are referred to as **activities**.
+When you need the end user to make a decision or to act before a case advances, you use [Human Activities](../../../ref/lang/auto/Class.Human Activity.final.md). In the context of the Case Management framework,  Human Activities are referred to as **activities**.
 
 The Case Management framework includes a set of API actions in the [Case Services API](./ref/auto/CaseServices_API.final.md) module that expand the functionality of activities.
 
@@ -83,4 +83,4 @@ Validate a user's access to an activity using the following actions:
 
 ## Assign multiple users to an activity
 
-Assigning multiple users to an activity enables you to launch the same activity multiple times to different assigned users. You can select if all or a selection of those assigned users tasks are completed before the process can advance. The process of assigning multiple users is described in the [Executing multiple instance activities](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Processes_(BPT)/Patterns_for_Designing_Processes/Executing_Multiple_Instance_Activities) article.
+Assigning multiple users to an activity enables you to launch the same activity multiple times to different assigned users. You can select if all or a selection of those assigned users tasks are completed before the process can advance. The process of assigning multiple users is described in the [Executing multiple instance activities](../../processes/design-patterns/multiple-instance-activities.md) article.

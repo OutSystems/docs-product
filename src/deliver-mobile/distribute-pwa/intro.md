@@ -70,7 +70,7 @@ Create a mobile app and turn on the toggle **Distribute as PWA** in the app deta
 
 <div class="warning" markdown="1">
 
-Mobile best practices apply for PWA development as well, particularly about [designing lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage).
+Mobile best practices apply for PWA development as well, particularly about [designing lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#lightweight-local-storage).
 
 </div>
 

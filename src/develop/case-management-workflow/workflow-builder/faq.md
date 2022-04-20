@@ -70,7 +70,7 @@ Workflow Builder does not have access or process sensitive data.
 
 ### What are the backup/restore procedures?
 
-Workflow Builder follows the same backup/restore procedures as other OutSystems cloud Customers. Procedure and timeframes can be found [here - OutSystems cloud access to database backup](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Access_the_database_of_your_PaaS/Temporary_Access_to_Database_Backup).
+Workflow Builder follows the same backup/restore procedures as other OutSystems cloud Customers. Procedure and timeframes can be found [here - OutSystems cloud access to database backup](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Access_the_database_of_your_OutSystems_Cloud/Temporary_OutSystems_Cloud_database_backup).
 
 In the event that a database restore is necessary, there will be some data loss.
 

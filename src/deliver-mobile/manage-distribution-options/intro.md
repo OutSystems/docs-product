@@ -31,7 +31,7 @@ To manage how mobile apps update on user devices, you need to meet the following
 * Platform Server 11.10 or later.
 * LifeTime 11.6.0 or later.
 * MABS 6.2 or later.
-* You activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Configure Mobile application updates distribution** in LifeTime in **all environments**. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
+* You activated the [technical preview](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features) **Configure Mobile application updates distribution** in LifeTime in **all environments**. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
 * You create and distribute the native mobile builds of your apps to submit them to the app stores. This means you created and app based on **Phone App** or **Tablet App** in Service Studio. 
 * Ensure you can follow the steps in [How to develop an app that updates only through the app stores](#how-to-develop-an-app-that-updates-only-through-the-app-stores).
 
@@ -40,7 +40,7 @@ To manage how mobile apps update on user devices, you need to meet the following
 You can deactivate this technical preview only after you meet both of these conditions:
 
 1. You turned off the store-only updates **for all apps**. You can do this with [a new deployment plan that activates the hybrid updates](#set-hybrid-updates).
-1. You turned off the store-only updates **in all environments**. You can do this in the [Technical Preview settings](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features).
+1. You turned off the store-only updates **in all environments**. You can do this in the [Technical Preview settings](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features).
 
 These steps ensure that the deployment in LifeTime works correctly and that the apps continue working for your users.
 

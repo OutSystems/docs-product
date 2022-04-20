@@ -11,6 +11,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 You can import data from an Excel file to load data to an entity. This is useful when you are developing and testing your application. This way, you can quickly have your data up and running in the application while developing it.
 
 <div class="info" markdown="1">
+
 If you're using Google Sheets, download your document as an .xlsx file (File > Download > Microsoft Excel), and then bootstrap the data. 
 </div>
 

@@ -14,7 +14,7 @@ Applies only to Mobile Apps and Reactive Web Apps
 
 </div>
 
-Display personalized feedback messages when using the [JavaScript flow element](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/JavaScript).
+Display personalized feedback messages when using the [JavaScript element](../../../../extensibility-and-integration/javascript/mobile/intro.md).
 
 ## Summary
 

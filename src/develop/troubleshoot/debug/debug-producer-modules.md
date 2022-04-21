@@ -33,6 +33,7 @@ Your consumer Module must fulfill the following conditions:
 
 To debug the functionality being exposed in a public Action by the producer Module, follow these steps:
 
+1. Start a debug session in the consumer Module, if it includes breakpoints, so that they will not be ignored when you debug the producer Module.
 1. Open the **producer Module** and set the entry Module for debugging to be the consumer Module. You can set the entry Module in the Debugger pane or in the Debugger menu, by choosing the "Select Entry Module..." option.
     
     <div class="info" markdown="1">

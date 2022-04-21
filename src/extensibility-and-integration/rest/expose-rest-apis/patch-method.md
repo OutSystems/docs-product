@@ -23,6 +23,13 @@ By definition, the PATCH method applies partial modifications to a resource, mak
 
 PUT inserts or updates a resource, while PATCH applies a partial update to the resource. Therefore, in terms of usage, PATCH only requires sending the fields to update without affecting or modifying the remaining ones.
 
+## Prerequisites
+
+The following are the prerequisites for the PATCH method on exposed REST services:
+
+* Platform Server 11.12.0  or later.
+* You've activated the [technical preview](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features) PATCH method on exposed REST services in LifeTime in all environments. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
+
 ## Create a PATCH Method
 
 To create a PATCH method, do the following:

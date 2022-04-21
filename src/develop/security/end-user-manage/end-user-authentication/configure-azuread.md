@@ -199,6 +199,33 @@ Do the following:
 
 You now have permissions to grant OutSystems roles to users. Check [Grant a role to an end user](../end-user-roles.md#grant-role) for detailed instructions.
 
+### Configure group roles 
+
+If you want to leverage the AD groups that exist in Azure AD to assign OutSystems roles and control the permissions in your OutSystems apps, you first need to configure AD so that the security roles are sent in the SAML response. 
+
+Follow the procedure below:
+
+1. Access the Azure AD single sign-on configurations.
+1. Add the security groups as a Group Claim.
+    
+    ![User attributes and claims screen](images/user-attributes-and-claims.png)
+
+1. Access the configurations on the Users app and make sure that the Group information is mapped according to the response received from Azure AD.
+
+    ![Claims Screen](images/claims-screen.png)
+    
+This should enable Azure AD to send the group ids (object id in Azure), which is created upon user authentication (if they don't already exist).
+
+Because group names in Azure AD are not unique, they cannot be sent for mapping. However, a relevant description can be added to the group name in the Users app.
+
+<div class="info" markdown="1">
+
+Azure AD limits the number of groups it will emit in a token to 150 for SAML assertions. The [IdP Forge component](https://www.outsystems.com/forge/component-overview/599/idp) can be used for installations with more than 150 groups. 
+
+</div>
+
+After having the groups synchronized you should be able to access the OutSystems groups in the Users app and assign the desired OutSystems roles accordingly.
+
 ### Perform some final checks and configurations
 
 Just like when using SAML 2.0 authentication, you must perform these two final tasks:

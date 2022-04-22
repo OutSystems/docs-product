@@ -8,9 +8,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 # Balanced Platform Upgrade on Highly Loaded OutSystems Farms
 
 <div class="warning" markdown="1">
+
 **This guide applies exclusively to Platform Server upgrades/updates**. If you are also deploying application changes while performing a Platform Server upgrade/update, you will need to take extra steps which are outside the scope of this guide. For more information, see [Balanced Application Deployment on Highly Loaded OutSystems Farms](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Balanced_application_deployment).
 
 To follow this procedure the servers must be running at least OutSystems Platform Server version 4.2 or, if you are running the J2EE stack, the servers must be running at least OutSystems Platform Server version 4.2.4.79.
+
 </div>
 
 **This guide presents the steps required to successfully upgrade Platform Server in an existing highly loaded OutSystems farm environment. The upgrade and deployment process is balanced throughout the existing front-ends, guaranteeing no downtime for the applications.**

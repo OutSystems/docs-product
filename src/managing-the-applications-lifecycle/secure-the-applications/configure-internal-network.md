@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Configure an Internal Network
 
-OutSystems applications can set the access to specific elements (Web UI Flows, exposed SOAP services, and exposed REST APIs) to be available only within an internal network, while other parts of the application are kept available to the general public.
+OutSystems applications can set the access to specific elements (Web UI Flows (**traditional web apps only**), exposed SOAP services, and exposed REST APIs) to be available only within an internal network, while other parts of the application are kept available to the general public.
 
 <div class="info" markdown="1">
 

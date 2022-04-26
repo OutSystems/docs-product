@@ -7,7 +7,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Encrypting data for HIPAA compliance
 
-To enable the encryption of data in an entity, do the following:
+After subscribing to the OutSystems Cloud HIPAA offering, you can enable the encryption of data in an entity, as described below:
 
 ![Encrypting entity data](images/encrypt-data-diag.png)
 
@@ -140,6 +140,12 @@ To enable the encryption of searchable attribute, do the following:
 
     * From the **Cryptography Services** producer, add the **GetIndexKey** action.
     * From the **Cryptography Services** producer, add the **EncryptIndexText** action.
+
+    <div class="info" markdown="1">
+
+    These dependencies are available after subscribing to the OutSystems Cloud HIPAA offering.
+
+    </div>
 
 1. Create a **Server Action**, named `EncryptSearchableAttribute`.
 

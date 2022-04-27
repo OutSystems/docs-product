@@ -5,12 +5,14 @@ guid: EEA4F145-FC25-4184-9A9D-725C853F2537
 ---
 There are some feature differences between this new version and your existing Service Studio. The following features are currently unavailable in the cross-platform Service Studio:
 
-* In the Entity Editor, the “Is Multitenant” property is not available.
+
+* In the Entity Editor, the **Is Multitenant** property is not available.
 
 * The Export to an Image feature of the flow editor for actions, processes, and UI flows is not available.
 
 * In the Data Editor, when renaming a data type in a structure, the data type is not automatically updated. 
-In the Expression Editor, when an autocomplete item is selected, the Scope Tree selection is not synchronized with the selected item. 
+
+* In the Expression Editor, when an autocomplete item is selected, the Scope Tree selection is not synchronized with the selected item. 
 
 * Right-click menu, double-click, and drag and drop functionality is not available for the Breadcrumb widget.
 

@@ -126,15 +126,15 @@ Except for the lowest one, "No Access", each permission level is cumulative with
 </tr>
 <tr>
 <td>Assigned as <strong>Default Role</strong></td>
-<td>The user can open and debug all the <strong>modules of the environment’s applications</strong> in Service Studio.</td>
+<td>The user can open and debug all the <strong>modules of the environment’s applications</strong> in Service Studio by using the <strong>Environment > Open in Environment</strong> menu.</td>
 </tr>
 <tr>
 <td>Assigned for a <strong>Team</strong></td>
-<td>The user can open and debug the <strong>modules of the team’s applications</strong> in Service Studio.</td>
+<td>The user can open and debug the <strong>modules of the team’s applications</strong> in Service Studio by using the <strong>Environment > Open in Environment</strong> menu.</td>
 </tr>
 <tr>
 <td>Assigned for an <strong>Application</strong></td>
-<td>The user can open and debug the <strong>modules of the application</strong> in Service Studio.</td>
+<td>The user can open and debug the <strong>modules of the application</strong> in Service Studio by using the <strong>Environment > Open in Environment</strong> menu.</td>
 </tr>
 </table>
 

@@ -150,6 +150,7 @@ The following section provides more details about the options you can use in the
 | InitLoggerSyncDelay             | Android        | 0       | Seconds to delay the logger synchronization after the initialization.         |
 | RemoveUserCertificates          | Android        | false       | Set to true to remove user certificates from the trust anchors in network_security_config.xml.         |
 | FilterTouchesWhenObscured | Android | false | Defines the value of the filterTouchesWhenObscured property of WebView on Android. Set to true to prevent the app from handling touches while obscured by other apps. Learn more about filterTouchesWhenObscured [here](https://developer.android.com/reference/android/view/View#security).|
+| DisableInspectorNotification | iOS | false | Set to true to remove the notification from the [Network inspector](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Inspect_the_HTTP_requests_in_Mobile_Apps_for_iOS) plugin in iOS debug builds. |
 
 ## Constraints
 

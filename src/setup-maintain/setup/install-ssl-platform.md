@@ -48,7 +48,7 @@ There are two ways to obtain a certificate:
 
 **Important Note:**
 
-Self-signed certificates shouldn't be used for production systems with OutSystems 11.
+Self-signed certificates shouldn't be used with OutSystems 11.
 
 Check the [OutSystems System Requirements](system-requirements.md) for more information about the supported configurations.
 
@@ -61,7 +61,7 @@ Check the [OutSystems System Requirements](system-requirements.md) for more info
 
 **Important Note:**
 Certificates have a chain comprised of the following:
-* Root + Intermediate + Final server (domain) certificate
+* Root > Intermediate > Final server (domain) certificate
 
 ​​Some Certificate Authorities issue the certificate with the complete chain, and others issue the final server (domain) certificate only, instructing the users to create the remaining parts of the chain.
 Before proceeding with the installation, check the integrity of your certificate, for example, using [SSL Checker](https://www.sslshopper.com/ssl-checker.html).

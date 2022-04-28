@@ -27,7 +27,7 @@ Is Default for new modules
 :   Boolean parameter that, when active, states that the current deployment zone is the [default deployment zone](<intro.md#default-deployment-zone>). You can set a deployment zone as the default one by clicking "Set as Default".
 
 Deployment Zone Address
-:   Address for all applications living in the deployment zone, intended for internal communications. When applications in other deployment zones need to refer applications living in this deployment zone and do not want to use the environment URL, they will use this address.
+:   Address for all applications living in the deployment zone, intended for internal communications. When applications in other deployment zones need to refer applications living in this deployment zone and do not want to use the environment URL, they will use this address. If you enabled **Use HTTPS for internal communications** in a Deployment Zone, make sure that the address defined in the **Deployment Zone Address** field is covered by the certificate.
 
     <div class="info" markdown="1">
 

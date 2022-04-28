@@ -55,13 +55,13 @@ Returns: boolean
 
 ### listen
 
-**listen(eventHandlers: [ApplicationLoadEventHandlers](../README.md#applicationloadeventhandlers)): void**
+**listen(eventHandlers: [ApplicationLoadEventHandlers](../intro.md#applicationloadeventhandlers)): void**
 
 Registers listeners for application load events.
 
 Parameters:
 
-* **eventHandlers**: [ApplicationLoadEventHandlers](../README.md#applicationloadeventhandlers)<br/> Object containing callbacks for the application loading events you want to listen to.
+* **eventHandlers**: [ApplicationLoadEventHandlers](../intro.md#applicationloadeventhandlers)<br/> Object containing callbacks for the application loading events you want to listen to.
 
 Returns: void
 

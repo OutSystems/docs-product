@@ -147,6 +147,8 @@ Now let's add the functionality to mark tasks as complete. We can implement that
 
 1. Drag a Button Widget and enter "Done" in the Text property of the button.
 
+1. Select **GetTasks.List.Current.Task.Id** as the TaskId parameter.
+
 1. Double-click an empty area of the button to define the logic associated with the click.
 
 1. Click the **Logic** tab and add a a Server Action. Name it *TaskDelete*. 

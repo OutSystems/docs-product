@@ -29,7 +29,7 @@ The following table lists the OutSystems elements that relate to Timers:
 | **Runtime database**| The runtime database contains all System entities for managing Timers, such as:<br/> - The record of all existing Timers.<br/> - The schedule for executing Timers.<br/> - Current execution of Timers: when started, their timeout, or next execution.|
 | **Log database** | When a Timer is executed, an entry is created in the Log database.|
 | **Configuration Tool** | This is the tool that allows configuring the maximum number of Timers that may execute at the same time in each front-end server node.|
-| **OutSystems Log service** | In Service Center, it's possible to have access the information about Timers. The Log Service has the responsibility of writing this data in the Log database.|
+| **OutSystems Logs** | In Service Center you can access Timer logs for individual applications or all apps in your environment.|
 | **Deployed module (Application)** | The deployed application contains the code for the Timer. It has the application logic designed in the Action executed by the Timer, and also some stub code needed to get the system database up-to-date about the state of the Timer. |
 
 ### Runtime and Log databases

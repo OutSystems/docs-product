@@ -15,6 +15,12 @@ The Wait process activity allows you to put your process flow execution on hold 
 * **A timeout**: a specified timeout date is reached.
 * **An entity action**: when an Entity Action that **creates** or **updates** an entity is executed and it matches the conditions to close the wait activity.
 
+    <div class="info" markdown="1">
+
+    When the timeout occurs, the Wait activity is tentatively ended by executing the **OnClose** callback action. If the entity action has not been executed, waiting continues until the next timeout.
+
+    </div>
+
 A Wait process activity can have input parameters, output parameters and [callback actions](<../../../develop/processes/actions-callback/actions-activities-callback.md>).
 
 ## End the Activity on Entity Events

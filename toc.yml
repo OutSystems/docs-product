@@ -464,6 +464,9 @@
                 - href: develop/security/end-user-manage/end-user-authentication/configure-active-directory.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-ldap.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-saml.md
+                - topics:
+                    - href: develop/security/end-user-manage/end-user-authentication/saml-update-auth-flows/update-reactive-app-flows.md
+                    - href: develop/security/end-user-manage/end-user-authentication/saml-update-auth-flows/update-trad-web-app-flows.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-azuread.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-okta.md
                 - href: develop/security/end-user-manage/end-user-authentication/integrated-authentication.md
@@ -942,6 +945,7 @@
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-ignore-modules.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-module-classification.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-probes-o10.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-update-probes.md
@@ -956,7 +960,7 @@
 # Setup and mantain your OutSystems infraestructure
 - href: setup-maintain/intro.md
 - topics:
-    # Setting Up OutSystems
+    # Setting Up OutSystems 
     - href: setup-maintain/setup/intro.md
     - topics:
         - href: setup-maintain/setup/possible-setups/intro.md
@@ -974,6 +978,10 @@
         - href: setup-maintain/setup/default-configurations.md
         - href: setup-maintain/setup/environment-config.md
         - href: setup-maintain/setup/lifetime-configure.md
+        - href: setup-maintain/setup/ssl-domain-cloud/ssl-domain-cloud.md
+        - href: setup-maintain/setup/install-ssl-platform.md
+        - href: setup-maintain/setup/load-balancing-apps/recommended-configs-load-balancing.md
+
         # Cache Invalidation Service
         - href: setup-maintain/setup/cache-invalidation/intro.md
         - topics:
@@ -1002,7 +1010,13 @@
             - href: setup-maintain/setup/azure/getting-setup-logs.md
             - href: setup-maintain/setup/azure/plan-associate.md
 
-    # Upgrading OutSystems
+    # Upgrading
+    - href: setup-maintain/upgrade/upgrade-platform.md
+    - topics:
+        - href: setup-maintain/upgrade/upgrade-lifetime.md
+        - href: setup-maintain/upgrade/balanced-upgrade-highly-loaded-farms.md
+        - href: setup-maintain/upgrade/upgrade-platform-module-prep.md
+        - href: setup-maintain/upgrade/upgrade-platform-errors.md
 
     # Mantain your OutSystems infraestructure
 
@@ -1335,10 +1349,6 @@
             # Web Interfaces
             - href: ref/traditional-web/web-interfaces/intro.md
             - topics:
-                # Adding Data and Logic
-                - href: ref/traditional-web/web-interfaces/adding-data-and-logic.md
-                #- topics: 
-                    #- href: ref/lang/auto/Class.Screen Action.final.md
                 # Designing Screens
                 - href: ref/traditional-web/web-interfaces/designing-screens/intro.md
                 - topics:
@@ -1752,7 +1762,7 @@
             - href: ref/integration-studio/element-property/resource.md
         - href: ref/integration-studio/element-naming.md
 
-    # OutSystems APIs
+    # OutSystems APIs 
     - href: ref/apis/intro.md
     - topics:
         - href: ref/apis/auto/asynchronous-logging-api.final.md
@@ -1771,7 +1781,7 @@
         - href: ref/apis/auto/epa-taskbox-api.final.md
         - href: ref/apis/auto/httprequesthandler-api.final.md
         - href: ref/apis/auto/includejavascript-api.final.md
-        - href: ref/apis/javascript/README.md
+        - href: ref/apis/javascript/intro.md
         - topics:
             - href: ref/apis/javascript/classes/applicationcontext.md
             - href: ref/apis/javascript/modules/applicationlifecycle.md

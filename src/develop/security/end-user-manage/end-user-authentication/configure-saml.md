@@ -80,8 +80,8 @@ Depending on the version of OutSystems UI Web (for Traditional Web Apps) or OutS
 
 For more information, check the following topics according to your application type:
 
-* For **Reactive Web Apps** check [Updating the login/logout flows of your Reactive Web App to support SAML 2.0](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Updating_the_login%2F%2Flogout_flows_of_your_Reactive_Web_App_to_support_SAML_2.0).
-* For **Traditional Web Apps** check [Updating the logout flow of your Traditional Web App to support SAML 2.0](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Updating_the_logout_flow_of_your_Traditional_Web_App_to_support_SAML_2.0). 
+* For **Reactive Web Apps** check [Updating the login and logout flows of your Reactive Web App to support SAML 2.0](saml-update-auth-flows/update-reactive-app-flows.md).
+* For **Traditional Web Apps** check [Updating the logout flow of your Traditional Web App to support SAML 2.0](saml-update-auth-flows/update-trad-web-app-flows.md). 
 
 ### Enable single sign-on between app types to use SAML 2.0 in Reactive Web Apps { #enable-sso-between-app-types }
 

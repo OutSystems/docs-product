@@ -20,11 +20,6 @@ You can use the Table Records widget to display the records of an entity or a st
 
 ![Overview of Table Records widget in use](<images/tablerecords-1-ss.png>)
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## How to use the Table Records widget
 

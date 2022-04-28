@@ -84,7 +84,7 @@ API Name | Available As | Description
 API Name | Available As | Description
 ---|---|---
 [IncludeJavaScript API](auto/includejavascript-api.final.md) | Referenced extension | Allows you to programmatically include JavaScript snippets in all Web Screens.
-[JavaScript API](javascript/README.md) | Predefined JavaScript objects | Allows you to call OutSystems specific actions and act upon mobile app events in your JavaScript code, to tweak and customize the mobile app experience of the final user.
+[JavaScript API](javascript/intro.md) | Predefined JavaScript objects | Allows you to call OutSystems specific actions and act upon mobile app events in your JavaScript code, to tweak and customize the mobile app experience of the final user.
 
 ## System Actions
 

@@ -1,5 +1,5 @@
 ---
-summary: Learn the several components that are part of OutSystems, and how to set up OutSystems on the cloud or on-premises.
+summary: Learn the several components that are part of OutSystems, and how to set up OutSystems on the cloud or as self-managed.
 tags: article-page; support-installation; support-Installation_Configuration-overview; support-Integrations_Extensions
 locale: en-us
 guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
@@ -11,9 +11,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 <div class="info" markdown="1">
 
 This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems)
+
 </div>
 
-This article explains the several components of OutSystems. It also explains how to set up OutSystems on the cloud or on-premises.
+This article explains the several components of OutSystems. It also explains how to set up OutSystems on the cloud or as self-managed.
 
 ## OutSystems Overview
 
@@ -29,7 +30,7 @@ OutSystems has the following components:
 
 * **Service Studio:** The visual development tool to create, change, and deploy your applications. This tool is installed in the developers desktop.
 
-* **Integration Studio:** The development tool to create connectors to integrate OutSystems applications with other enterprise systems. This tool is installed in the developers desktop. See this [online course](https://www.outsystems.com/forums/discussion/45373/integration-studio-external-databases-and-c-code-online-courses/) for information about using **Integration Studio**.
+* **Integration Studio:** The development tool to create connectors to integrate OutSystems applications with other enterprise systems. This tool is installed in the developers desktop. See this [online course](https://www.outsystems.com/training/courses/118/integration-studio-overview/) for information about using **Integration Studio**.
 
 ![](images/intro-1.png)
 
@@ -45,13 +46,13 @@ OutSystems covers the full application lifecycle, from development to deployment
 
 * **Management Environment:** The environment that hosts LifeTime application, which is the infrastructure management console. Given its requirements, LifeTime application must run in a **dedicated** environment. **Installing LifeTime in an existing environment is not a supported scenario.** Learn how to [size an environment for the infrastructure management console](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Size_an_environment_to_run_the_infrastructure_management_console).
 
-You can have your infrastructure on the cloud or on-premises. [Learn more about the possible OutSystems infrastructure configurations.](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure)
+You can have your infrastructure on the cloud or as self-managed. [Learn more about the possible OutSystems infrastructure configurations.](./possible-setups/intro.md)
 
 ### Licensing
 
 If you're using OutSystems Cloud, you don't need to worry about installing or licensing your infrastructure. Once you receive your OutSystems Cloud, it is ready for you to develop your apps.
 
-If you're installing OutSystems on-premises, be sure you have a valid activation code, or license files. Without them you won't be able to deploy applications to your environments. So be sure to [check how OutSystems licensing works.](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Overview/01_How_OutSystems_Platform_licensing_works)
+If you're installing OutSystems as self-managed, be sure you have a valid activation code, or license files. Without them you won't be able to deploy applications to your environments. So be sure to [check how OutSystems licensing works.](https://success.outsystems.com/Support/Licensing/Identify_OutSystems_infrastructure_and_runtime_environments)
 
 ## Installation alternatives
 
@@ -61,7 +62,7 @@ If you selected to setup OutSystems infrastructure using our Cloud offering you 
 
 Nevertheless, when managing a single environment or infrastructure on the OutSystems cloud, you should take into account the following considerations:
 
-* Currently, our cloud provider (Amazon) does not support customizing the time zone. The timezone is always UTC. Conversions need to be done programmatically from UTC to the desired time zone.
+* Currently, it's not possible to customize the time zone. The timezone is always UTC. Conversions need to be done programmatically from UTC to the desired time zone.
 
 * Custom database objects such as stored procedures are not supported. You can either implement the same logic using "Advanced Queries" (standard SQL) or through Extensions (by implementing your own C# code).
 
@@ -69,28 +70,28 @@ Nevertheless, when managing a single environment or infrastructure on the OutSys
 
 * The Zones feature is not available. All applications running on an environment are available in all front-end servers of that environment. However, applications can be set up to only be accessible from the internal network.
 
-* Using the built-in SMS mechanism is not supported. You can send SMS’s by using Extensions available in OutSystems Forge.
+* Using the built-in SMS mechanism is not supported. You can send SMS’s by using webservices or extensions available in OutSystems Forge.
 
-### On-Premises
+### Self-managed
 
-An on-premises OutSystems infrastructure is located on the customer’s datacenter and is managed by the customer.
+A self-managed OutSystems infrastructure is located on the customer’s datacenter and is managed by the customer.
 
 ## Installation prerequisites
 
 Before installing any component of OutSystems, make sure your hardware and software comply with the minimum requirements. For this, be sure to check:
 
-* [System requirements](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_system_requirements): the supported hardware and software for installing OutSystems.
+* [System requirements](./system-requirements.md): the supported hardware and software for installing OutSystems.
 
-* [Network requirements](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_network_requirements): the network requirements for an environment where OutSystems is installed.
+* [Network requirements](./network-requirements.md): the network requirements for an environment where OutSystems is installed.
 
-* [Default Platform Server and database configurations](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Default_Platform_Server_and_database_configurations): to install and run OutSystems, you need permission to change files in the file system, run services, and make changes to the database.
+* [Default Platform Server and database configurations](./default-configurations.md): to install and run OutSystems, you need permission to change files in the file system, run services, and make changes to the database.
 
 ## Installation steps
 
 To install OutSystems in your infrastructure:
 
 1. Download the Platform Server installation binaries.
-1. Install the Platform Server in each environment that will host your applications (eg. Development, Quality and Production).
+1. Install the Platform Server in each environment that will host your applications (for example, Development, Quality and Production).
 1. Download the infrastructure management console (LifeTime) installation binaries.
 1. Install the infrastructure management console in a dedicated environment.
 1. Configure the infrastructure management console.
@@ -98,7 +99,7 @@ To install OutSystems in your infrastructure:
 
 ### 1. Download the Platform Server installation binaries
 
-Download the latest [Platform Server installation binaries](https://www.outsystems.com/goto/Platform-Server-NET-Installer) from the downloads area. To download, you need an OutSystems account. If you don't have one, register for free at [www.outsystems.com](http://www.outsystems.com).
+Download the latest [Platform Server installation binaries](https://www.outsystems.com/Downloads/search/Platform-Server/11/) from the downloads area. To download, you need an OutSystems account. If you don't have one, register for free at [www.outsystems.com](http://www.outsystems.com).
 
 If you're looking for a specific OutSystems version, be sure to [check the Downloads repository](https://www.outsystems.com/Downloads/search/).
 
@@ -110,7 +111,7 @@ To perform an offline installation of Platform Server you might need to download
 
 ### 2. Install the Platform Server { #install-the-platform-server }
 
-Install the Platform Server in each environment of your infrastructure that will host your applications (eg. Development, Quality and Production). For this, follow the [Platform Server installation checklist](http://www.outsystems.com/goto/checklist-11) that is launched when you run the Platform Server installation binary.
+Install the Platform Server in each environment of your infrastructure that will host your applications (eg. Development, Quality and Production). For this, follow the Platform Server installation checklist that is launched when you run the Platform Server installation binary.
 
 <div class="info" markdown="1">
 
@@ -121,7 +122,7 @@ Check [Automatic Prerequisites Installation and Configuration Tuning](#prerequis
 
 ### 3. Download the infrastructure management console installation binaries
 
-Download the latest [LifeTime Management Console binaries](https://www.outsystems.com/goto/lifetime-installer) from the downloads area.
+Download the latest [LifeTime Management Console binaries](https://www.outsystems.com/Downloads/search/LifeTime) from the downloads area.
 
 <div class="info" markdown="1">
 
@@ -133,7 +134,7 @@ To perform an offline installation of the LifeTime Management Console you might 
 
 Install LifeTime management console in a **dedicated** environment. **Installing LifeTime in an existing environment isn't a supported scenario**.
 
-For this, follow the [LifeTime installation checklist](https://www.outsystems.com/goto/checklist-lifetime) launched when you run the LifeTime installation binary. As LifeTime **doesn't support farm configuration**, you must select the combination "Deployment Controller + Server" in the checklist to install a single server with both roles.
+For this, follow the LifeTime installation checklist launched when you run the LifeTime installation binary. As LifeTime **doesn't support farm configuration**, you must select the combination "Deployment Controller + Server" in the checklist to install a single server with both roles.
 
 The OutSystems Scheduler service must be running in the LifeTime environment.
 
@@ -198,4 +199,4 @@ Do the following:
 
 ## More Information
 
-If you are having trouble installing or setting up OutSystems, check the [OutSystems Community](http://www.outsystems.com/forums/) for help, or reach out to the [OutSystems technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support).
+If you are having trouble installing or setting up OutSystems, check the [OutSystems Community](http://www.outsystems.com/forums/) for help, or reach out to the [OutSystems technical support](https://www.outsystems.com/legal/success/contact-outsystems-technical-support/).

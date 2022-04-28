@@ -8,7 +8,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 # PATCH method on exposed REST services
 
 <div class="info" markdown="1">
-This feature is in [Technical Preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features).
+
+This feature is in [Technical Preview](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features).
+
 </div>
 
 The PATCH method is part of the HTTP protocol and contemplated in REST specifications since the start. 
@@ -20,6 +22,13 @@ This capability allows a new HTTP method when exposing REST APIs, adding to the 
 By definition, the PATCH method applies partial modifications to a resource, making it a lightweight option to PUT. Both methods are equivalent, but semantically, they are different.  
 
 PUT inserts or updates a resource, while PATCH applies a partial update to the resource. Therefore, in terms of usage, PATCH only requires sending the fields to update without affecting or modifying the remaining ones.
+
+## Prerequisites
+
+The following are the prerequisites for the PATCH method on exposed REST services:
+
+* Platform Server 11.12.0  or later.
+* You've activated the [technical preview](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features) PATCH method on exposed REST services in LifeTime in all environments. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
 
 ## Create a PATCH Method
 

@@ -13,9 +13,15 @@ You can use **Timers** to execute asynchronous logic in your OutSystems applicat
 
 Timers are handled by the OutSystems Scheduler Service. This service checks for Timers that are ready to run and executes their actions. A Timer is ready to run when the current time is greater or equal to the Timer runtime property `NextRun`.
 
-Since Timers usually invoke actions that take a while to run and are processor intensive, the OutSystems Scheduler Service only runs a fixed number of Timers at the same time. By default only 3 Timers can run at the same time per front-end server, but this number can be customized in the OutSystems Configuration Tool.
+Since Timers usually invoke actions that take a while to run and are processor intensive, the OutSystems Scheduler Service only runs a fixed number of Timers at the same time. By default only three Timers can run at the same time per front-end server.
 
-When more than 3 Timers are scheduled to run at the same time, the Timers with higher priority run first.
+<div class="info" markdown="1">
+
+For self-managed installations, the default number of Timers can be customized by using the OutSystems Configuration Tool.
+
+</div>
+
+When more than three Timers are scheduled to run at the same time, the Timers with higher priority run first.
 
 When the Timer action ends successfully, the `NextRun` property of the Timer is updated to the next time that it should run. This time is computed according to the Schedule property of the Timer.
 

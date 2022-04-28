@@ -111,7 +111,7 @@ To use OutSystems Entities in Workflow Builder apps, your development environmen
 
 </div>
 
-To learn about OutSystems Database Entities, read the [Entities](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Data_Modeling/Entities) document, and watch the [Database Entities](https://www.outsystems.com/learn/lesson/1774/database-entities) lesson from the OutSystems Training.
+To learn about OutSystems Database Entities, read the [Entities](../../data/modeling/entity.md) document, and watch the [Database Entities](https://www.outsystems.com/learn/lesson/1774/database-entities) lesson from the OutSystems Training.
 
 To use an Entity in a form field, follow these steps:
 

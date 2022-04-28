@@ -14,7 +14,7 @@ Applies only to Mobile Apps and Reactive Web Apps
 
 </div>
 
-Displays personalized feedback messages to the user.
+Display personalized feedback messages when using the [JavaScript element](../../../../extensibility-and-integration/javascript/mobile/intro.md).
 
 ## Summary
 

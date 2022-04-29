@@ -11,6 +11,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 The connection between OutSystems and SAP relies on sapnco **SAP Connector for Microsoft.NET 3.0.x for Windows 64bit (Compiled with .NET Framework 4.0)** which is fully documented **[here](http://logosworld.com/docs/SAP/Connector/SAP%20Connector%20for%20Microsoft%20.NET%20%20NCo_30_ProgrammingGuide.pdf)**. Therefore, it uses the regular username and password in the connection string. 
 
 <div class="info" markdown="1">
+
 The Exact version of SAP connector can be find in the [Platform Server installation checklist](https://www.outsystems.com/Downloads/search/Platform-Server/11/).
 </div>
 

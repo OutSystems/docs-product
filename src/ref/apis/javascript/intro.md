@@ -10,7 +10,7 @@ app_type: mobile apps, reactive web apps
 
 <div class="info" markdown="1">
 
-Applies only to Mobile Apps and Reactive Web Apps
+Applies only to Mobile Apps and Reactive Web Apps.
 
 </div>
 

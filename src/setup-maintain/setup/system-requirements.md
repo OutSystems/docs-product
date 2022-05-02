@@ -170,6 +170,12 @@ The use of double-byte characters with DB2 databases is not supported.
 
 </div>
 
+### MongoDB Database
+
+* MongoDB Atlas and on-premises
+* MongoDB 4.X
+* MongoDB 5.X
+
 ### SAP
 
 * SAP ERP R/3 4.6 or higher

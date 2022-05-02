@@ -1,18 +1,18 @@
 ---
 summary: OutSystems allows you to define connections to your existing SQL Server, Azure Server, Oracle or MySQL databases and use data in those databases using visual objects in Service Studio.
-tags: support-application_development; support-Database; support-Integrations_Extensions; support-database-overview; support-Integrations_Extensions-featured
+tags:
 locale: en-us
 guid: d5fdba1a-e46c-4c92-9d6b-81be94eed163
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Integrate with an External Database using Integration Studio
+# Integrate with an external database using Integration Studio
 
-OutSystems integrates with your existing databases. This allows you to develop applications that access data on external databases using OutSystems entities in Service Studio and without having to worry about data migration. For a list of supported external database engines and their supported versions check the [System Requirements](../../setup-maintain/setup/system-requirements.md#integration-with-external-systems).
+OutSystems integrates with your existing databases. This allows you to develop apps that access data on external databases using OutSystems entities in Service Studio and without having to worry about data migration. For a list of supported external database engines and their supported versions check the [System Requirements](../../setup-maintain/setup/system-requirements.md#integration-with-external-systems).
 
 <div class="info" markdown="1">
- 
-When you are done developing your integration with an external database and you want to deploy the application to another Environment (e.g. quality assurance environment) check out [this step by step guide](../../managing-the-applications-lifecycle/deploy-applications/deploy-an-app-externaldb.md).
+
+When you're done developing your integration with an external database and you want to deploy the app to another Environment (for example, the quality assurance environment) check out [this step by step guide](../../managing-the-apps-lifecycle/deploy-apps/deploy-an-app-externaldb.md).
 
 </div>
 
@@ -22,11 +22,11 @@ The creation of an integration with an external database involves the following 
 1. In Service Center, define a connection to the external database.
 1. In Integration Studio, create an extension module to map tables or views in the external database to OutSystems entities.
 1. In Service Center, configure the extension to use a database connection.
-1. In Service Studio, reference and use the extension in your application.
+1. In Service Studio, reference and use the extension in your app.
 
 The following sections go throught each one of these general steps in detail.
 
-## Define a Connection to the External Database
+## Define a connection to the external database
 
 To use tables and views from external databases, create a database connection: 
 
@@ -57,13 +57,13 @@ To use tables and views from external databases, create a database connection:
 
     </div>
 
-1. Click **Create** to create the Database Connection.
+1. Click **Create** to create the database connection.
 
-## Map Tables or Views to Entities in an Extension Module
+## Map tables or views to Entities in an extension module
 
 After configuring a database connection in Service Center, use Integration Studio to create an extension that maps the tables or views in the external database to OutSystems entities:
 
-1. Go back to **Service Studio**, open your Application, select **New Module** and create a new **Extension** Module.
+1. Go back to **Service Studio**, open your app, select **New Module** and create a new **Extension** Module.
 
     ![](images/connect-external-db-03.png?width=800)
 
@@ -99,7 +99,7 @@ After configuring a database connection in Service Center, use Integration Studi
 
     ![](images/connect-external-db-5.png?width=600)  
 
-## Configure the Extension to Use a Database Connection
+## Configure the extension to use a database connection
 
 After mapping the tables or views, use Service Center to configure which database connection the extension will use:
 
@@ -114,13 +114,13 @@ In some cases you need to select the database based on runtime data. Typically, 
 In these scenarios, you can use the action [DatabaseConnection_SetConnectionStringForSession](<../../ref/apis/auto/platformruntime-api.final.md#DatabaseConnection_SetConnectionStringForSession>) of the [PlatformRuntime API](<../../ref/apis/auto/platformruntime-api.final.md>).
 
 
-## Use the Extension in your application
+## Use the extension in your app
 
-The Extension is now ready to be used in OutSystems applications:
+The Extension is now ready to be used in OutSystems apps:
 
-1. In your application, click **Manage Dependencies...**.
+1. In your app, click **Manage Dependencies...**.
 
-1. Add a dependency to the Extension and select the Entities that you will use in your application.  
+1. Add a dependency to the Extension and select the Entities that you will use in your app.  
 
     ![](images/connect-external-db-7.png?width=600)
 

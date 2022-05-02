@@ -203,6 +203,7 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 
 * macOS Catalina
 * macOS Big Sur
+* macOS Monterrey
 
 **Windows:**
 

@@ -55,6 +55,12 @@ On your first login, Integration Builder greets you with an onboarding guide. To
 
     ![Choosing a provider in Integration Builder](images/choose-provider-ib.png)
 
+    <div class="info" markdown="1">
+
+    If you are integrating with a **external database**, check out [how to Integrate with an external database using Integration Builder ](../external-database/integrate-external-db-ib.md)
+
+    </div>
+
 1. Follow the wizard steps to configure the integration. These steps vary according to the integration you're creating. They can be the following:
 
     * Authorize Integration Builder to access the external system (Salesforce) or provide a service specification (SAP OData).

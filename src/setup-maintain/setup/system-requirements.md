@@ -8,6 +8,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # OutSystems system requirements
 
+<div class="info" markdown="1">
+
+This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_system_requirements)&#8195;[9.1](https://www.outsystems.com/Downloads/ScreenDetails.aspx?MajorVersion=9&ReleaseId=18346&ComponentName=Platform+Server)&#8195;[9.0](https://www.outsystems.com/Downloads/ScreenDetails.aspx?MajorVersion=9&ReleaseId=19270&ComponentName=Platform+Server)
+
+</div>
+
 Before installing OutSystems on-premises, check its hardware and software requirements. Once you're ready to start the installation, head to [Setting Up OutSystems](intro.md).
 
 ## Platform Server

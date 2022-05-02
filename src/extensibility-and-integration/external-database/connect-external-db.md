@@ -12,7 +12,7 @@ OutSystems integrates with your existing databases. This allows you to develop a
 
 <div class="info" markdown="1">
 
-When you're done developing your integration with an external database and you want to deploy the app to another Environment (for example, the quality assurance environment) check out [this step by step guide](../../managing-the-apps-lifecycle/deploy-apps/deploy-an-app-externaldb.md).
+When you're done developing your integration with an external database and you want to deploy the app to another Environment (for example, the quality assurance environment) check out [this step by step guide](../../managing-the-applications-lifecycle/deploy-applications/deploy-an-app-externaldb.md).
 
 </div>
 

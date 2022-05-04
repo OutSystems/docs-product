@@ -48,6 +48,8 @@ For more information about the supported databases and the systems that are cert
 
 * It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description.
 
+* It's not possible to manually define identifiers.
+
 * It's not possible to rename entities or attributes.
 
 ## Process overview

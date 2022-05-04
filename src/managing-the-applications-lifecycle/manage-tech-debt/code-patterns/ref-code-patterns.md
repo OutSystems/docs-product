@@ -225,6 +225,28 @@ Impact
 How to fix
 :   Use `ROWNUM` (for Oracle) or `TOP` (for MS SQL Server) in the SQL query to limit the number of records to the required amount. Note that in SQL queries the Max. Records parameter only limits the number of records displayed, and not the number of records fetched.
 
+### Aggregate or SQL query inside a cycle
+
+An Aggregate or SQL query is being executed inside a For Each cycle.
+
+Impact
+:   Executing Aggregates and SQL queries inside a cycle can have severe performance impact due to database communication overhead repeated at each iteration. The impact can be greatly worsened when iterating through a list with a high number of elements or when having nested cycles.
+
+How to fix
+:   Avoid executing Aggregates or SQL queries inside a For Each cycle. Instead, replace that Aggregate or SQL query by a more complex one that gets all the related information and execute it before the cycle.
+
+    In case you have an Aggregate to fetch the master entity before the cycle followed by another Aggregate inside the cycle to fetch the details, consider eliminating the inner Aggregate by [adding a join](../../../ref/data/handling-data/queries/supported-join-types.md) to the outer Aggregate.
+
+### Sequence of connected Aggregates
+
+Sequence of Aggregates that reference one another.
+
+Impact
+:   A sequence of Aggregates that reference one another usually leads to unnecessary data fetching. Considering that each Aggregate executes a request to the database, this results in unnecessary database communication overhead.
+
+How to fix
+:   Merge the sequence of Aggregates into a single Aggregate [using a join](../../../ref/data/handling-data/queries/supported-join-types.md) to retrieve all the needed data.
+
 ### Query data in ViewState
 
 <div class="info" markdown="1">
@@ -653,6 +675,26 @@ How to fix
     * Use the SanitizeHtml() function from the Sanitization extension module to ensure that the value entered by the end-user does not contain any malicious content.
     * Use the EncodeUrl() built-in function to replace all URL invalid characters by their percent-encoded counterpart."
 
+### Insecure usage of GetUserId function on client context
+
+<div class="info" markdown="1">
+
+Applies to **Reactive Web** and **Mobile** apps only.
+
+</div>
+
+Avoid passing identity information from the client side to the server side as an action parameter.
+
+Impact
+:   Passing identity information as a server action parameter is extremely insecure. Identity is obtained in the client context and passed to server functions (exposed as REST APIs) as a parameter. Since execution of GetUserId on reactive client components depends on client cookies, parameters can be easily changed by any user, either by manipulating server calls or changing client session ID identifiers. Malicious users can exploit the ability to change identity-related parameters and impersonate other users, access sensitive data, and even bypass role checks which, though done on the server, become vulnerable due to insecure parameters received from the client.
+
+How to fix
+:   Identity information should be obtained on server calls, using functions like GetUserId, executed on the server, and never sent as a regular action parameter. GetUserId executed on the server ensures proper identity flow, is secure and cannot be manipulated. 
+
+    Remove any usages of GetUserId on the client side, and replace them with the same function on the server side. In this way, you’ll avoid passing identity information from the client side to the server side as an action parameter.
+
+For more information refer to [Reactive web security best practices: Securing server calls](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices#Securing_server_calls). 
+
 ## Maintainability
 
 ### Duplicated Code
@@ -660,14 +702,14 @@ How to fix
 The same logic is duplicated in different action flows.
 
 Impact
-:   Repeating the same logic in different action flows makes it more difficult to maintain your code.<br/>
-    This means that to change the duplicated logic, you'll need to find that logic and then change it in all the different action flows.
+:   Repeating the same logic in different action flows makes it more difficult to maintain your code. This means that to change the duplicated logic, you'll need to find that logic and then change it in all the different action flows.
 
 How to fix
-:   For each pattern found, select the magnifying glass to get more details.<br/>
-    In the details' dialog, check the list of actions that include duplicated logic on the left side, and check the representation of the duplicated logic on the right side. The duplicated logic is highlighted and shown in the context of each action flow.<br/>    
-    If possible, refactor the actions where the duplicated logic exists by extracting the duplicated logic into a single action that can be reused.
+:   For each pattern found, select the magnifying glass to get more details.
 
+    In the details' dialog, check the list of actions that include duplicated logic on the left side, and check the representation of the duplicated logic on the right side. The duplicated logic is highlighted and shown in the context of each action flow.
+    
+    If possible, refactor the actions where the duplicated logic exists by extracting the duplicated logic into a single action that can be reused.
 
 ### Missing description on public element
 
@@ -708,5 +750,4 @@ Impact
 
 How to fix
 :   Remove the code if it has been disabled for a while or the app is in production, and behaving correctly.
-
 

@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Input Parameter (SAP Username)
 
-<div class="info" markdown="1">
-
-Only applies to Windows-only Service Studio.
-
-</div>
-
 Input parameter for the SAP username. This parameter is added automatically by Service Studio to every SAP remote function when Dynamic Login is added to the SAP Connection.  
 
 ## Properties

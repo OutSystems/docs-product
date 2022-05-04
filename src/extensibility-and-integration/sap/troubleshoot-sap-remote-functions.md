@@ -18,10 +18,10 @@ You can troubleshoot your SAP Remote Functions calls by:
 
 If a call to a SAP Remote Function results in an exception, do the following to access the logs:
 
-1. Go to the management console of your OutSystems environment (Service Center). 
-2. Go to Monitoring section and select Integrations.
-3. In Type, select `SAP`.
-4. Click Filter. 
+1. Go to the management console of your OutSystems environment (Service Center).
+1. Go to Monitoring section and select Integrations.
+1. In Type, select `SAP`.
+1. Click Filter.
 
 This logging shows all requests made to SAP.
 
@@ -30,11 +30,11 @@ This logging shows all requests made to SAP.
 If you need more details on what is sent and received from SAP, change the logging level of the SAP connection:
 
 1. Go to the management console of your OutSystems environment (Service Center).
-1. Go to Factory section and open your application. 
-1. Open the module containing your SAP integration. 
+1. Go to Factory section and open your application.
+1. Open the module containing your SAP integration.
 1. Select the Integrations tab and click on the SAP connection name to edit it. 
-1. Set the Logging Level to `Full`. 
-1. Click Apply. 
+1. Set the Logging Level to `Full`.
+1. Click Apply.
 
 Requests and responses are now fully logged and new logs for calls to SAP always have a link:
 

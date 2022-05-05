@@ -171,6 +171,10 @@ To enable social logins in your app's login screen, do the following:
     Facebook | Android, iOS
     LinkedIn | Android, iOS
 
+    * Note that the **Target Directory** parameter of the **Resource** must be filled with `json-config`.
+    
+    ![SocialLoginsConfigurations.json resource with Target Directory set as json-config](images/social-config-ss.png)
+
     * Get the JSON configuration file, **SocialLoginsConfigurations.json**, from the **App Details** on your **Social Login Configurator**.
 
 ### Handle authentication response and login scope { #auth-response }

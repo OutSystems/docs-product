@@ -82,7 +82,13 @@ When setting the image quality, consider the use case for your app. Check the fo
 | Example use case | Image quality        | Notes                                                     |
 | ---------------- | -------------------- | --------------------------------------------------------- |
 | Profile image    | JPEG 60% (default)   | Sufficient quality for a profile image.                   |
-| Insurance claims | JPEG 85% - 100%, PNG | High quality lets users examine all details in the image. |
+| Insurance claims | JPEG 85% - 100% or PNG | High quality lets users examine all details in the image. |
+
+<div class="info" markdown="1">
+
+Changing the image quality setting applies only to .JPEG files.
+
+</div>
 
 ## Handling errors
 

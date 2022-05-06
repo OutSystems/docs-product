@@ -1765,6 +1765,10 @@
     # OutSystems APIs 
     - href: ref/apis/intro.md
     - topics:
+        # Architecture Dashboard API
+        - href: ref/apis/auto/architecture-dashboard-api.final.md
+        - topics:
+            - href: ref/apis/architecture-dashboard/ad-api-authentication.md
         - href: ref/apis/auto/asynchronous-logging-api.final.md
         - href: ref/apis/auto/binarydata-api.final.md
         - href: ref/apis/auto/bpt-api.final.md

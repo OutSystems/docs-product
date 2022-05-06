@@ -27,9 +27,9 @@ In Architecture Dashboard, for each Activation Code, you are allowed to have one
 
 No, this isn't currently planned.
 
-### Are there APIs to integrate Architecture Dashboard with deployment processes (LifeTime or external CI/CD)?
+### Are there APIs to integrate Architecture Dashboard with third-party tools?
 
-No, this isn't currently planned.
+Yes, you can use [Architecture Dashboard API](../../ref/apis/auto/architecture-dashboard-api.final.md) to integrate technical debt data with other technical debt and BI tools you already use. 
 
 ### Do I need to give access to the developers in LifeTime so they can associate their users with Architecture Dashboard?
 

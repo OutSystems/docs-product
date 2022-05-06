@@ -227,6 +227,12 @@ How to fix
 
 ### Aggregate or SQL query inside a cycle
 
+<div class="info" markdown="1">
+
+Available with **Architecture Dashboard probes 4.0 onwards**.
+
+</div>
+
 An Aggregate or SQL query is being executed inside a For Each cycle.
 
 Impact
@@ -238,6 +244,12 @@ How to fix
     In case you have an Aggregate to fetch the master entity before the cycle followed by another Aggregate inside the cycle to fetch the details, consider eliminating the inner Aggregate by [adding a join](../../../ref/data/handling-data/queries/supported-join-types.md) to the outer Aggregate.
 
 ### Sequence of connected Aggregates
+
+<div class="info" markdown="1">
+
+Available with **Architecture Dashboard probes 4.0 onwards**.
+
+</div>
 
 Sequence of Aggregates that reference one another.
 
@@ -680,6 +692,8 @@ How to fix
 <div class="info" markdown="1">
 
 Applies to **Reactive Web** and **Mobile** apps only.
+
+Available with **Architecture Dashboard probes 4.0 onwards**.
 
 </div>
 

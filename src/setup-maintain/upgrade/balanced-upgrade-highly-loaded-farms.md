@@ -9,9 +9,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 <div class="warning" markdown="1">
 
-**This guide applies exclusively to Platform Server upgrades/updates**. If you are also deploying application changes while performing a Platform Server upgrade/update, you will need to take extra steps which are outside the scope of this guide. For more information, see [Balanced Application Deployment on Highly Loaded OutSystems Farms](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Balanced_application_deployment).
-
-To follow this procedure the servers must be running at least OutSystems Platform Server version 4.2 or, if you are running the J2EE stack, the servers must be running at least OutSystems Platform Server version 4.2.4.79.
+**This guide applies exclusively to Platform Server upgrades**. If you are also deploying application changes while performing a Platform Server upgrade, you will need to take extra steps which are outside the scope of this guide. For more information, see [Balanced Application Deployment on Highly Loaded OutSystems Farms](../../managing-the-applications-lifecycle/deploy-applications/balanced-app-deploy.md).
 
 </div>
 
@@ -24,7 +22,9 @@ When the upgrade process is finished, the load balancer is configured to only re
 Once all front-ends are running the new version of the OutSystems Platform, the load balancer is configured to redirect traffic among all of them. By performing an incremental deployment, this process ensures no downtime.
 
 <div class="info" markdown="1">
+
 This procedure requires operations to be executed in Service Center and at Operating System level (in the services management console). Additionally, it also assumes the existence of a network load balancing mechanism for distributing the application traffic between the front-ends.
+
 </div>
 
 In order to identify the several server profiles in the farm environment, please consider the following diagram, where the users access the applications through a load balancing mechanism. During the deploy procedure we will identify each of the front-end as **updating** or **loaded**:
@@ -57,5 +57,5 @@ To execute the upgrade, use the following steps:
 
 ## More information
 
-Check the [OutSystems Platform installation guide](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems) to learn more about the requirements and recommended steps to install the OutSystems platform.
+Check the [OutSystems Platform installation guide](../setup/intro.md) to learn more about the requirements and recommended steps to install OutSystems.
 

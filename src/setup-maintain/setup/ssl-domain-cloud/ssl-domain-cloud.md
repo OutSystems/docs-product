@@ -201,9 +201,15 @@ An example :
 
 <div class="warning" markdown="1">
 
+The DNS of the OutSystems servers redirects to a load balancer, with an address like *.elb.amazonaws.com. But the address of the load balancer is subject to change. You can't use the load balancer address in your DNS records.
+
 You should never create on your DNS an A record pointing to an OutSystems Cloud server's IP address.
 
 </div>
+
+The diagram below shows the correct configuration in green:
+
+![](images/custom-dns-name-cloud_0.png)
 
 ## Renew the certificate
 

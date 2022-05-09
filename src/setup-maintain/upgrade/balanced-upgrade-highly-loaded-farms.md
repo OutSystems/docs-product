@@ -5,7 +5,7 @@ guid: 99c574cd-7d20-4b50-8059-34a22f27cda4
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Balanced Platform Upgrade on Highly Loaded OutSystems Farms
+# Balanced Platform upgrade on highly loaded OutSystems farms
 
 <div class="warning" markdown="1">
 

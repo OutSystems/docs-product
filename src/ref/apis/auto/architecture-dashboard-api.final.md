@@ -603,9 +603,7 @@ https
 <td>
 <a href="#operation--TechnicalDebt_Application-get">GET</a>
 </td>
-<td>
-
-</td>
+<td>Retrieves a list of applications and modules, with technical debt information.</td>
 </tr>
 <tr>
 <td class="swagger--summary-path" rowspan="1">
@@ -614,9 +612,7 @@ https
 <td>
 <a href="#operation--TechnicalDebt_Category-get">GET</a>
 </td>
-<td>
-
-</td>
+<td>Retrieves the list of pattern categories, to be used as reference in other methods.</td>
 </tr>
 <tr>
 <td class="swagger--summary-path" rowspan="1">
@@ -625,9 +621,7 @@ https
 <td>
 <a href="#operation--TechnicalDebt_LastAnalysisDate-get">GET</a>
 </td>
-<td>
-
-</td>
+<td>Retrieves the date and time when the last analysis was performed.</td>
 </tr>
 <tr>
 <td class="swagger--summary-path" rowspan="1">
@@ -636,9 +630,7 @@ https
 <td>
 <a href="#operation--TechnicalDebt_Level-get">GET</a>
 </td>
-<td>
-
-</td>
+<td>Retrieves the list of technical debt levels, to be used as reference in other methods.</td>
 </tr>
 <tr>
 <td class="swagger--summary-path" rowspan="1">
@@ -647,9 +639,7 @@ https
 <td>
 <a href="#operation--TechnicalDebt_Team-get">GET</a>
 </td>
-<td>
-
-</td>
+<td>Retrieves a list of teams and their associated applications, to be used as reference in other methods.</td>
 </tr>
 </tbody>
 </table>
@@ -684,7 +674,7 @@ Tags:
 <tbody>
 <tr>
 <td>
-Application
+ApplicationGUID
 </td>
 <td><p>Optional filter by application guid.</p>
 </td>
@@ -699,7 +689,7 @@ Application
 </tr>
 <tr>
 <td>
-Module
+ModuleGUID
 </td>
 <td><p>Optional filter by module guid.</p>
 </td>
@@ -2052,8 +2042,8 @@ Team
 
 </div>
 </dd>
-<dt data-property-name="LastAnalysisDate">
-<span class="json-property-name">LastAnalysisDate:</span>
+<dt data-property-name="LastAnalyzedOn">
+<span class="json-property-name">LastAnalyzedOn:</span>
 
 <span class="json-property-type">string</span>    <span class="json-property-format">(date-time)</span>
 <span class="json-property-range" title="Value limits"></span>

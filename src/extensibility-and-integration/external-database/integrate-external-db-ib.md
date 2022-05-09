@@ -227,9 +227,9 @@ If you are integrating with MongoDB, follow these steps:
 
     After selecting Structure, you see the structure of the selected collection. Fields are displayed in the right side of the screen and are presented with the same hierarchy as in the database.
 
-    By default, Integration Builder generates the structure by looking at the five most recent documents available in the collection. You can change the sample selecting **Most recent** or **Evenly spread**, changing the number of documents to be analyzed, and then slecting **Update structure**.
+    By default, Integration Builder generates the structure by looking at the five most recent documents available in the collection. You can change the sample selecting **Most recent** or **Evenly spread**, changing the number of documents to be analyzed, and then selecting **Update structure**.
 
-    When a field has different data types in different documents, Integration Builder can’t determine the final data type to show in the structure. In this case, the field is selectable and in case you need the field in your integration, you will have to select the JSON format for that collection.
+    When a field has different data types in different documents, Integration Builder can’t determine the final data type to show in the structure. In this case, the field is unselectable. If you need that field in your integration, you must use the JSON format for that collection.
 
     Structure format isn't available for empty collections.
 

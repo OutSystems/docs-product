@@ -109,7 +109,7 @@ The Firebase Dynamic Links Plugin has some additional setup steps that need to b
 
 * You need to include a global preference in the Extensibility Configurations of the application using the plugin. The value for this preference needs to match the URL prefix you set in the Dynamic Links page in the Firebase console. For example:
 
-    ```
+    ```JSON
     {
         "preferences": {
             "global": [{
@@ -128,7 +128,35 @@ Starting with iOS 14.5, apps on the App Store must receive the user’s permissi
 
 ![RequestTrackingAuthorization client action parameters on Service Studio](images/firebase-request-tracking-authorization.png)
 
-To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin.
+To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin. Apple reccomends triggering this prompt as soon as the app loads.
 If you want to present an alert prior to the iOS tracking permission dialog, enable the **ShowInformation** parameter on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
 
+By default, the **NSUserTrackingUsageDescription** field is set to `AppName needs your attention.`. You can set your custom description by including an iOS-specific preference (`USER_TRACKING_DESCRIPTION_IOS`) in the Extensibility Configurations of the application, as follows:
+    
+```JSON   
+{
+    "preferences": {
+        "ios": [{
+            "name": "USER_TRACKING_DESCRIPTION_IOS",
+            "value": "This is an example of a description."
+        }]
+    }
+}
+```
+
 You can use the **RequestTrackingAuthorization** action multiple times in the same app, since iOS remembers users' choice and only prompts users again after they uninstall and then reinstall the app on the device.
+    
+By default, an app using the Firebase Analytics plugin is able to trigger the native AppTrackingTransparency framework. It also contains the **NSUserTrackingUsageDescription** field in the app's **\*-Info.plist** file. If you don't want to trigger the framework, and don't want to include the description field in the **.plist** file, you can disable this through the Extensibility Configurations like this:
+    
+```JSON   
+{
+    "preferences": {
+        "ios": [{
+            "name": "EnableAppTrackingTransparencyPrompt",
+            "value": "false"
+        }]
+    }
+}
+```
+
+It is important to note that if your app collects user data for adversiting purposes, also know as Attribution within Firebase Analytics context, it should prompt the AppTrackingTransparency framework.

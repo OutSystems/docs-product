@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 In this example we will perform the following generic steps using API calls:
 
-1. Get the **environment key** of the environment to unregister from LifeTime _(optional if you already have this information)_;
+1. Get the **environment key** of the environment to unregister from LifeTime _(optional if you already have this information)_.
 
 1. Unregister the **environment** from LifeTime.
 

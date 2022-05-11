@@ -109,9 +109,10 @@ Check [Amazon's DB Instance Class](https://docs.aws.amazon.com/AmazonRDS/latest/
 
 OutSystems supports Microsoft Azure SQL Database V12 with the following considerations:
 
+* The database service tier must be at least "S3".
 * The MDC (Multiple Database Catalogs) feature is not supported.
 * Connecting to Azure SQL Database using Windows Authentication is not supported.
-* The database service tier must be at least "S3".
+* Private endpoints are not supported, due to a limitation on how Microsoft implements them.
 * Currently, Azure SQL Database does not support customizing the timezone from UTC.
 
 OutSystems also supports SQL Server running on an Azure Virtual Machine.

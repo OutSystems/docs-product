@@ -26,7 +26,7 @@ You can use the Section Index UI Pattern to organize the content of a screen, en
 
     ![](<images/sectionindex-8-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -66,7 +66,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property** |  **Description** |
+| **Property** | **Description** |
 |---|---|
 | IsSmooth (Boolean): Optional  |  If True, the navigation to the destination is animated. This is the default. If False, the navigation is instant. |
 | IsFixed (Text): Optional  | If True, the Section Index Pattern is always in the same position on the screen. This is the default. If False, the Section Index Pattern scrolls with the page content. |

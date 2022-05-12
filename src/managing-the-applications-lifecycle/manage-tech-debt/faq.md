@@ -35,7 +35,7 @@ Yes, you can use [Architecture Dashboard API](../../ref/apis/auto/architecture-d
 
 All developers have access to LifeTime, therefore the customer isn't "giving access just to use Architecture Dashboard". The reason why all developers always have to access LifeTime is that it's where the IT users are set up.
 
-The Architecture Dashboard Plugin doesn't require the user to have any particular permissions on LifeTime. So, any user that can login to LifeTime (all active users), can see and open Architecture Dashboard Plugin to associate his infrastructure user with Architecture Dashboard.
+The Architecture Dashboard Plugin doesn't require the user to have any particular permissions on LifeTime. So, any user that can login to LifeTime (all active users), can see and open Architecture Dashboard Plugin to associate their infrastructure user with Architecture Dashboard.
 
 ### Why can't I see any findings after selecting a specific team?
 

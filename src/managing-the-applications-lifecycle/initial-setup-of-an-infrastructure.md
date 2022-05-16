@@ -20,7 +20,7 @@ You can manage your OutSystems infrastructure in the **INFRASTRUCTURE** tab of L
 
 ## Set up the infrastructure
 
-To execute the initial setup of your OutSystems infrastructure in LifeTime, follow the instructions in [Configure the infrastructure management console](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/Configure_the_infrastructure_management_console>).
+To execute the initial setup of your OutSystems infrastructure in LifeTime, follow the instructions in [Configure the infrastructure management console](../setup-maintain/setup/lifetime-configure.md).
 
 ## Add or remove environments
 
@@ -29,7 +29,7 @@ At any time, you can add or remove environments to your OutSystems infrastructur
 To add a new OutSystems environment to your infrastructure, do the following:
 
 1. Click the **Register an Existing Environment** link.
-1. Register your environment as described in [Configure the infrastructure management console](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/Configure_the_infrastructure_management_console>).
+1. Register your environment as described in [Configure the infrastructure management console](../setup-maintain/setup/lifetime-configure.md).
 
 To remove one of your OutSystems environments from the infrastructure:
 

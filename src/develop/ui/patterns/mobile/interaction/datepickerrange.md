@@ -10,7 +10,7 @@ app_type: mobile apps, reactive web apps
 
 <div class="info" markdown="1">
 
-Applies only to Mobile Apps and Reactive Web Apps
+Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
@@ -59,7 +59,8 @@ In this example, the user selects a range of dates from the calendar. The dates 
 1. Enter a name for the variables (in this example **PickedStartDate** and **PickedEndDate**) and select **Date** as the **Data Type**.
 
     ![Enter variable name and data type](<images/datepickerrange-pickedstart-pickedend-ss.png>)
-  
+   
+
 1. To create an **OnSelect** event for the Date Picker Range, on the **Properties** tab, from the **Handler** dropdown, select New **Client Action**.
 
     ![Create onSelect event for Date Picker Range](<images/datepickerrange-handler-ss.png>)
@@ -89,6 +90,4 @@ After following these steps and publishing the module, you can test the pattern 
 |OptionalConfigs.MinDate (DateTime): Optional|All days before this date are disabled. |
 |OptionalConfigs.MaxDate (DateTime): Optional|All days before this date are disabled. |
 |OptionalConfigs.FirstWeekDay (DatePickerWeekDay Identifier): Optional|Defines which week day is displayed first.|
-|OptionalConfigs.ShowWeekNumbers (Boolean): Optional|If True, the week number is displayed. The default value is False. |
 |ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <br/><br/>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet).|
-

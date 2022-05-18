@@ -362,6 +362,8 @@
     - topics: 
         - href: develop/logic/expression-editor.md
         - href: develop/logic/ai-assisted-dev.md
+        - topics:
+            - href: develop/logic/ai-create-action.md
         - href: develop/logic/actions.md
         - href: develop/logic/action-web.md
         - href: develop/logic/screen-block-lifecycle-events.md

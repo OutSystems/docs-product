@@ -8,108 +8,140 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # AI-assisted development
 
-![Artificial intelligence gives development suggestions for a low-code logic](images/ai-flow-service-studio.gif)
+Speed up your app development with AI-assisted development for logic.
+By analyzing millions of anonymized code samples using artificial intelligence and machine learning algorithms, AI-assisted development predicts and suggests next steps for your logic.
+Use its suggestions to develop logic faster, with less repetition, while following best practices.
 
-Create app logic in a smart way, with AI-assisted development. This feature helps you develop faster and better with the use of artificial intelligence and machine learning algorithms that analyze millions of anonymized samples of logic. AI-assisted development predicts what you need next and shows the suggestions in the flow connectors when you click the AI radar (the blue circle).
+The AI-assisted development suggestions appear in flow connectors when you click the AI radar, shown as a pulsing blue circle.
 
-With this feature, you have an AI co-developer available in any flow kind throughout Service Studio. The AI-assisted development also attempts to automatically fill in the properties for the newly created nodes (for example, parameters in a Server Action). When this happens, you'll see the star animation.
-
-The number of provided suggestions varies from one to six, depending on the confidence level of the assistant. When the confidence level about the next element in the flow is high, you see only one suggestion in the list, and you can press the Enter key to insert it immediately.
-
-AI-assisted development can increase your focus and productivity by helping you create logic flows faster and with more confidence, even for complex tasks. Use this feature to create better logic, that is less error-prone and aligned with development best practices. The feature fits well in the low-code paradigm of building OutSystems apps and helps you unlock your development creativity.
-
-## Prerequisites
-
-These are the requirements for using the AI-assisted development feature.
-
-* Service Studio version 11.6.9 or later
-* Service Studio can reach the URL `https://api.outsystems.com`
-
-## Using AI-assisted development
-
-There are two ways you can get suggestions.
-
-* Click the AI radar (blue circle) on the flow connectors  
-
-    ![Suggestions show after clicking](images/ai-flow-node-click.png)
-
-* Drag and drop a connector in the flow window  
-    
-    ![Suggestions show after dragging the connector](images/ai-flow-node-drag.gif)
-
-
-### Enabling and disabling the feature
-
-To enable or disable the feature, go to the **Edit** menu in Service Studio and select **Preferences**. In the Preferences window, locate the **AI-Assisted Development** section and check the status of the option **Enable inline flow suggestions**.
-
-![Setting to turn AI suggestions on or off](images/ai-flow-settings.png)
+![Artificial intelligence gives development suggestions for a low-code logic](images/ai-flow-service-studio-ss.gif)
 
 <div class="info" markdown="1">
 
-When the properties of the selected suggestion are auto-filled you can see the Service Studio stars popping. Check the properties to validate that everything is as you need.
+**Guided Example:** Check how you can [implement logic for a Client Action using AI-assisted development](ai-create-action.md).
 
 </div>
 
-### What kind of suggestions does AI-assisted development give me?
+## Prerequisites { #prerequisites }
 
-The AI assistant tries to guess what you need next in your flow, based on all the available context and all it has learned from millions of anonymized action flow patterns. When you click on the AI radar, you can expect the following suggestions:
+These are the requirements for using the AI-assisted development feature:
 
-* Specific suggestions - they enable you to add nodes to the flow with pre-filled business context (for example, an Action with populated Source field).
-* Generic suggestions - to add nodes that fit the current position in the flow, but they don't contain any business context (for example, a Message node for you to enter text).    
+* The feature [is enabled](#enable-disable) in Service Studio.
+* You're using:
+    * Windows-only Service Studio version 11.6.9 or later.
+    * Any version of cross-platform Service Studio.
+* Service Studio can reach the URL `https://api.outsystems.com`.
+* Your operating system supports the Transport Layer Security (TLS) 1.2 protocol.
 
-In total, you get between one and six suggestions. If the AI assistant is very confident about what you might need in your next step - it gives you just one suggestion. In general, the number of options varies depending on the assistant's confidence and the information it can extract from the context: the more specific information you add to Actions, the more precise the suggestions are.
+## Using AI-assisted development
+
+### Starting the flow
+
+Depending on how you name your action flow, the AI-assistant behaves differently:
+
+* In a flow with a default name (for example, **Action1**), when you hover your mouse over the connector, the blue radar starts blinking where you can click to choose suggestions.
+
+* In a flow with a custom meaningful name to it (for example, **DoLogin**), the blue radar automatically starts blinking with a plus sign where you can click to choose suggestions.
+
+### Getting suggestions
+
+AI-assisted development provides up to six suggestions, depending on the confidence level of the assistant. When the confidence level about the next element in the flow is high, you get only one suggestion.
+
+There are several ways to get suggestions:
+
+* Click the AI radar (blue circle) on the flow connectors.
+
+    ![Suggestions show after clicking](images/ai-flow-node-click-ss.png)
+
+* Drag a connector from an existing element and drop it in the flow window.
+
+    ![Suggestions show after dragging the connector](images/ai-flow-node-drag-ss.gif)
+
+* Accept a suggestion from the AI assistant whose required properties are already filled in for you. In most situations, this presents new suggestions for the next step of the flow.
+
+### Accepting a suggestion
+
+You can accept a suggestion presented by the assistant by clicking on it or by selecting it with the arrow keys and pressing `Enter`.
+
+![AI suggestions selected with the keyboard](images/ai-flow-node-suggestion-ss.gif)
+
+Service Studio creates a new element in the flow according to the selected suggestion.
+
+Depending on the context, it may also autofill some properties of the new element. When Service Studio autofills the properties of the selected suggestion you can see the Service Studio stars popping.  
+
+When Service Studio autofills all the required properties of the new element, you can immediately get new suggestions from the AI assistant for implementing the next step in your logic.
+
+### Types of suggestions
+
+The AI assistant tries to guess what you need next in your flow, based on all the available context and all it has learned from millions of anonymized action flow patterns.
+
+When you click on the AI radar, you can get the following types of suggestions:
+
+Specific suggestions
+:   These suggestions add elements to the flow with pre-filled business context. For example, an **Action** with a prepopulated **Source** field.
+
+Generic suggestions
+:   These suggestions add elements that fit the current position in the flow, but without any business context. For example, a **Message** element for you to enter text.
+
+The suggestions you get depend on the confidence of the assistant about what you might need in your next step and the information it can extract from the context. The more specific information you add to Actions, the more precise the suggestions are.
 
 <div class="info" markdown="1">
-	
+
 The suggested nodes have different names than what you might be used to. As an example, Aggregates show as Get Data. This gives a more natural and conversational interface.
 
 </div>
 
-### Maximizing the assistant's accuracy
+### Tips to get better suggestions
 
-To ensure the best suggestions from the assistant, you should fill in the missing information and context in your action flows to inform it better. In particular:
+To ensure the best suggestions from the assistant, fill in the missing information and context in your action flows to inform the assistant better. In particular:
 
-* The name of your Action flow is relevant for the suggestions, so try to enter it before you start creating the flow. Using a descriptive name can help.
-* By creating the variables you believe you need, the input, output and local, you give a valuable context to the assistant and enable it to autofill the parameters.
+* Give a meaningful name to your Action flow. Try to enter it before you start creating the flow, since this is relevant information for the suggestions. Using a descriptive name can help.  
+When you give a custom name to an Action, the AI radar becomes more visible with a white **+** (plus sign) inside.
+
+* Create the Local Variables, Input Parameters, and Output Parameters you believe you need. They give valuable context to the assistant and enable it to autofill the parameters.
+
+### Intelligent Quick Search
+
+When the assistant suggestions don’t fit your needs or you reach a dead-end, you have the ability to search for other elements, that can be used in your flow.
+To use the feature simply start typing what you want to add to the flow, and the results show up immediately.
 
 ### Using the keyboard
 
-Once you open the assistant menu, move the suggestion selection with the keyboard arrow keys. Select the highlighted suggestion with the ENTER key.
+Once you open the assistant menu, instead of using the mouse, you can move the suggestion selection with the keyboard arrow keys, or you can start typing to retrieve other elements. Select and insert the highlighted suggestion by pressing the Enter key.
 
-![AI suggestions selected with the keyboard](images/ai-flow-node-suggestion.gif)
+## Enabling and disabling the feature { #enable-disable }
 
-### High-confidence suggestions
+To enable or disable the feature, do the following:
 
-When the certainty level is high, it focuses on the suggestion, so you can press ENTER to add it to the flow.
+1. In Service Studio, go to **Preferences**. Depending on your operating system do the following:
+
+    * If you're using Windows, go to the **Edit** menu and select **Preferences**.
+
+    * If you're using macOS, go to the **Service Studio** menu and select **Preferences**.
+
+1. In the Preferences window, locate the **AI-Assisted Development** section.
+
+    ![Setting to turn AI suggestions on or off](images/ai-flow-settings-ss.png)
+
+1. Check the status of the option **Enable inline flow suggestions**.
 
 ## Troubleshooting
 
 Here are some troubleshooting tips to help you.
 
-### How can I prevent accidental activations?
-
-If you only want to select the connector, and not activate the suggestions, click outside the connector's center. If the connector is too small (less than two spaces), you can click anywhere in the connector.
-
 ### What does it mean when there are no more suggestions?
 
-When there's nothing more to add, and it's not the end of the flow, you can edit your flow manually.
-
-![AI shows message about the end of logic](images/ai-flow-ts-no-suggestions.png)
+When the assistant thinks there's nothing more to add, but you wish to continue the flow, you can still take advantage of the Intelligent Quick Search to search for other elements, or manually edit the flow.
 
 ### Why do I have to click again to get suggestions?
 
-If this keeps happening, check your internet connection and try again.
+If this keeps happening, check your internet connection and try again. You can still use the Intelligent Quick Search to search for other elements.
 
-![AI show message to try again](images/ai-flow-ts-tryagain.png)
+![AI show message to try again](images/ai-flow-ts-tryagain-ss.png)
 
 ### Why isn't the AI radar showing up?
 
-The AI suggestion node may not show because:
-
-* Your Service Studio version is not up to date
-* There's no working internet connection or there are temporary connection issues
-* You deactivated the feature in the Service Studio preferences
-* Your operating system does not use the TLS 1.2 protocol.
+The AI suggestion node may not show because some prerequisites are missing. Check [Prerequisites](#prerequisites) for more information.
 
 ### Why does the AI radar disappear?
 

@@ -79,7 +79,7 @@ After following these steps and publishing the module, you can test the pattern 
 |**Property**|**Description**|
 |---|---|
 |Navigation (CarouselNavigation Identifier): Optional | Sets the navigation behavior:<ul><li>Dots</li><li>Arrows</li><li>Both (dots and arrows)</li><li>None</li></ul>|
-|Height (Text): Optional|Set a custom height for the Carousel. The parameter accepts any CSS format, except percentage (library constraint). The default value is Auto (he height of the items inside Carousel).|
+|Height (Text): Optional|Set a custom height for the Carousel. The parameter accepts any CSS format, except percentage (library constraint). The default value is Auto (the height of the items inside Carousel).|
 |ItemsPerSlide (CarouselItems): Optional|Number of Carousel items simultaneously visible on each slide.<ul><li>DesktopItems (Integer)</li><li>TabletItems (Integer)</li><li>PhoneItems (Integer)</li></ul>|
 |ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul><br/>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 |OptionalConfigs.AutoPlay (Boolean)|If True, the Carousel slides change automatically. If False, slides must be changed manually. The default value is True.|

@@ -38,7 +38,7 @@ Action | Description
 Structure | Description
 ---|---
 [Result](<#Structure_Result>) | Structure to handle a result.
-[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in his session.
+[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in their session.
 [ValidationResult](<#Structure_ValidationResult>) | Structure to handle a validation result.
 
 Static Entity | Description
@@ -649,7 +649,7 @@ ErrorMessage
 
 ### UserSessionInfo { #Structure_UserSessionInfo }
 
-Structure to handle the user information in his session.
+Structure to handle the user information in their session.
 
 *Attributes*
 

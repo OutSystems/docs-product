@@ -20,7 +20,7 @@ The purpose of the Voluntary Product Accessibility Template, or VPAT™, is to a
 
 The scope of this VPAT includes the ability to create applications that are Section 508 compliant using OutSystems technology. This applies to the custom applications delivered by OutSystems customers and developers, not to the development toolset (e.g. the visual integrated development environment).
 
-Considering that ultimately every application will be designed, developed and delivered by a specific OutSystems customer, all applicable standards in this VPAT are noted as Supports – meaning OutSystems, as a development platform, fully meets the letter and intent of criteria. Responsibility is left to the developer to use the required constructs, configurations, and design patterns of her/his choice, while abiding to the accessibility compliance requirements. 
+Considering that ultimately every application will be designed, developed and delivered by a specific OutSystems customer, all applicable standards in this VPAT are noted as Supports – meaning OutSystems, as a development platform, fully meets the letter and intent of criteria. Responsibility is left to the developer to use the required constructs, configurations, and design patterns of their choice, while abiding to the accessibility compliance requirements. 
 
 | Criteria                                                        | Supporting Features | Remarks and explanations                                                                 |
 |-----------------------------------------------------------------|---------------------|------------------------------------------------------------------------------------------|

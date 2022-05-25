@@ -116,7 +116,7 @@ Note that any account with the same username or email that exists in another ten
 
 To better understand this, picture a scenario where you have a company providing a SaaS solution to two insurance companies.
 
-In this scenario, one person can be a customer of both insurance companies and have insurance products in both companies and be using the exact same email address in his contact details in both companies also.
+In this scenario, one person can be a customer of both insurance companies and have insurance products in both companies and be using the exact same email address in their contact details in both companies also.
 
 So, although the user exists in both tenants, it is not a shared account, counting that way as a different user for each company.
 

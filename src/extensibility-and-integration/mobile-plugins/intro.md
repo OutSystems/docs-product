@@ -36,6 +36,7 @@ Plugin | Description | Supported in PWA
 [File Transfer](<https://www.outsystems.com/forge/component-overview/1409/file-transfer-plugin>) | Lets users upload and download files in the background. | —
 [File Viewer](<https://www.outsystems.com/forge/component-overview/1606/file-viewer-plugin>) | Lets users view remote or app resource files. | —
 [File](<https://www.outsystems.com/forge/component-overview/1633/file-plugin>) | Lets you manage files and folders on a mobile device within the app sandbox. | —
+[Health & Fitness](<https://www.outsystems.com/forge/component-overview/11715/health-fitness-plugin>) | Provides access to health and fitness data. Uses HealthKit API for iOS and Google Fit API for Android. | —
 [InApp Browser](<https://www.outsystems.com/forge/component/1558/inappbrowser-plugin/>) | Open external URLs directly in your application. | —
 [Key Store](<https://www.outsystems.com/forge/component/1550/Key+Store+Plugin/>) | Store small amounts of sensitive information on your device. Key Store secures data by encrypting the data before storing it, and the platform itself carefully controls access to stored items. | —
 [Local Notifications](<http://www.outsystems.com/forge/component/1541/local-notifications-plugin/>) | Send app notifications to the device when the application isn't running in the foreground. | —
@@ -43,6 +44,7 @@ Plugin | Description | Supported in PWA
 [OneSignal Notifications](<http://www.outsystems.com/forge/component/2119/onesignal-plugin/>) | Push notifications using OneSignal, with deep-linking and actions. | —
 [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706) | Firebase-based plugin that lets you understand how you can improve the performance of your app.  | —
 [QR/Barcode scanner](<https://www.outsystems.com/forge/component/1403/barcode-plugin/>) | Scan barcodes and QR codes. | —
+[Social Login Mobile](<https://www.outsystems.com/forge/component-overview/7895/social-login-mobile>) | Lets you set a login experience that resorts to an external provider, namely Google, Apple, Facebook, or LinkedIn. | Yes
 [SSL Pinning](<https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin>) | Provide an extra layer of security to HTTPS communications by adding a verification of the server certificate against hashes of public keys. | —
 [Touch ID](<https://www.outsystems.com/forge/component-details/1431/Touch+ID+Plugin/>) | Use authentication with Touch ID in your application. | —
 

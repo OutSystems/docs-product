@@ -716,6 +716,7 @@ BinaryContentType
 ### ReplaceURLDomain { #ReplaceURLDomain }
 
 Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.
+If the URL starts with the protocol (`http:` or `https:`), the host is removed from the URL and the remaining part is concatenated with the domain of the current request. Otherwise, the URL is considered as relative and it's concatenated with the one from the current request.
 
 *Inputs*
 

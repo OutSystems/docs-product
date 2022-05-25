@@ -214,3 +214,4 @@ For more information, see the [How To Create Calculated Attributes in Aggregates
 </tr>
 </tbody>
 </table>
+

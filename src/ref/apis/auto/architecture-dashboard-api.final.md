@@ -562,9 +562,15 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 Architecture Dashboard API helps you manage technical debt, allowing you to use its data in third-party tools. This enables you to:
 
-* Integrate technical debt data from Architecture Dashboard with other technical debt and BI tools you already use.
+* Integrate technical debt data from [Architecture Dashboard](../../../managing-the-applications-lifecycle/manage-tech-debt/intro.md) with other technical debt and BI tools you already use.
 
-* Use technical debt data as a quality gate of an automated CI/CD pipeline. This ensures that deploys meet a predefined technical debt value. Note: New findings are only processed every 12 hours.  
+* Use technical debt data as a quality gate of an automated CI/CD pipeline. This ensures that deploys meet a predefined technical debt value.   
+
+<div class="info" markdown="1">
+
+Note: New findings are only processed every 12 hours.
+
+</div>
 
 To authenticate your API requests, follow the guidelines in the [Architecture Dashboard API authentication](../architecture-dashboard/ad-api-authentication.md) article.
 

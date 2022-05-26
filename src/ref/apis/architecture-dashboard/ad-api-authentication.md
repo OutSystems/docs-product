@@ -32,6 +32,9 @@ When using Architecture Dashboard REST API, take the following security consider
 
 * All communication between API consumers and the API server must be done over HTTPS.
 
+## Prerequisites
+
+To be able to use the Architecture Dashboard API, you need to have [full control permissions assigned as a default role](../../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md#manage-architecture-dashboard-api).
 
 ## How to obtain a key { #obtain-key }
 

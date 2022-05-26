@@ -63,7 +63,7 @@ Breakpoints Tab
 :   Lists all breakpoints defined in the module.
 
 Users Tab
-:   Lists all the other users that are also debugging server threads in your module. You may expand each user to see the list of threads being debugged by him.
+:   Lists all the other users that are also debugging server threads in your module. You may expand each user to see the list of threads being debugged by them.
 
 ### Unpublished Changes
 

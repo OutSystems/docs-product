@@ -35,7 +35,7 @@ Yes, you can use [Architecture Dashboard API](../../ref/apis/auto/architecture-d
 
 All developers have access to LifeTime, therefore the customer isn't "giving access just to use Architecture Dashboard". The reason why all developers always have to access LifeTime is that it's where the IT users are set up.
 
-The Architecture Dashboard Plugin doesn't require the user to have any particular permissions on LifeTime. So, any user that can login to LifeTime (all active users), can see and open Architecture Dashboard Plugin to associate his infrastructure user with Architecture Dashboard.
+The Architecture Dashboard Plugin doesn't require the user to have any particular permissions on LifeTime. So, any user that can login to LifeTime (all active users), can see and open Architecture Dashboard Plugin to associate their infrastructure user with Architecture Dashboard.
 
 ### Why can't I see any findings after selecting a specific team?
 
@@ -116,7 +116,7 @@ In the event that a database restore is necessary, there will be some data loss.
  
 ## Security, legal and compliance - personal information {#personal-data-faq}
 
-### When a user agrees to share personal information is he doing it on behalf of all users of that infrastructure?
+### When a user agrees to share personal information are they doing it on behalf of all users of that infrastructure?
 
 No. Each user that wants to have access to Architecture Dashboard to manage the technical debt of their OutSystems infrastructure, will be required to give consent for OutSystems to collect the personal information that is described in the acceptance form, which includes name, username, and email address.
 

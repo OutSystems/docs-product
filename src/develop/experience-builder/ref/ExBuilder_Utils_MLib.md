@@ -44,7 +44,7 @@ Structure | Description
 ---|---
 [DeviceInfo](<#Structure_DeviceInfo>) | Structure to handle the device information.
 [Result](<#Structure_Result>) | Result structure.
-[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in his session.
+[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in their session.
 
 ## Client Actions
 
@@ -458,7 +458,7 @@ ErrorMessage
 
 ### UserSessionInfo { #Structure_UserSessionInfo }
 
-Structure to handle the user information in his session.
+Structure to handle the user information in their session.
 
 *Attributes*
 

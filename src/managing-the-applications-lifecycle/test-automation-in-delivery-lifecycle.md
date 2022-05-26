@@ -20,7 +20,7 @@ What we're saying is that you must bring Testing and QA processes to the table f
 
 ## The Three Roles Involved in the Process
 
-If you don't team up the way we just proposed, the following workflow is what usually happens.The PO or BA adds the acceptance criteria when he first writes the user story and hands it over to developers.
+If you don't team up the way we just proposed, the following workflow is what usually happens.The PO or BA adds the acceptance criteria when they first write the user story and hands it over to developers.
 
 When developers pick it up, they have a lot of questions about eventual behaviors that are not strictly described. So they hand the user story back to clarify their questions and possibly translate them into new acceptance criteria scenarios.
 

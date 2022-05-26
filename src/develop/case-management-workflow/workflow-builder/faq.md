@@ -76,7 +76,7 @@ In the event that a database restore is necessary, there will be some data loss.
 
 ## Security, legal and compliance - personal information {#personal-data-faq}
 
-### When a user agrees to share personal data is he doing it on behalf of all users of that infrastructure?
+### When a user agrees to share personal data are they doing it on behalf of all users of that infrastructure?
 
 No. Each user will be required to give consent to OutSystems for the collection of the personal data, that is described in the acceptance form, which only includes name, username and email address.
 

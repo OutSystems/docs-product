@@ -10,6 +10,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 You can tighten the security of your applications, or part of them, by only allowing the access to end users who have authenticated themselves in an IP belonging to an internal network.
 
+<div class="info" markdown="1">
+
+You will first need to define the IP range of your Internal Network. See [Configure an Internal Network](<../../managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md>).
+
+</div>
+
 You can restrict internal network access to the following elements:
 
 * UI Flows of a Web application (restricts the access of the Web Screens within the Flow). This is only available for Traditional Web apps.

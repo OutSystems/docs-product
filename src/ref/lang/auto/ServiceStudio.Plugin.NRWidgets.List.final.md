@@ -28,7 +28,7 @@ To further enhance the scrolling experience, it’s possible to configure the vi
 
 ![Virtualization treshold before](<images/virtualization-before-ss.png>)![Virtualization treshold after](<images/virtualization-after-ss.png>)
 
-``Virtualization-threshold-before`` renders the elements before the first visible element, even if they are not visible and ``virtualization-threshold-after`` renders the elements after the first visible element, even if they are not visible. 
+``Virtualization-threshold-before`` renders the elements before the first visible element, even if they are not visible. ``virtualization-threshold-after`` renders the elements after the last visible element, even if they are not visible. 
 
 You can also deactivate the virtualization by setting the List attribute value to ``disable-virtualization=True``.
 

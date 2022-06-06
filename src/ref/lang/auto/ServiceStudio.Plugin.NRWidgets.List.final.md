@@ -26,7 +26,7 @@ The List widget uses virtualization to render elements that are visible on the s
 
 To further enhance the scrolling experience, it’s possible to configure the viewport threshold to render extra elements (at the top or at the bottom of the list in the DOM), so when the user is scrolling, those elements are ready to be displayed on screen. Having elements rendered before they are visible on screen improves the scrolling experience. The extra elements are not visible because they are outside of the list’s viewport window. You can configure the viewport window thresholds by setting the ``virtualization-threshold-before`` or ``virtualization-threshold-after`` value (in pixels) in the **Attributes** of the List.
 
-![Virtualization treshold before](<images/virtualization-before-ss.png>)![Virtualization treshold after](<images/virtualization-after-ss.png>)
+![Virtualization treshold before and after](<images/virtualization-before-after-ss.png>)
 
 ``Virtualization-threshold-before`` renders the elements before the first visible element, even if they are not visible. ``virtualization-threshold-after`` renders the elements after the last visible element, even if they are not visible. 
 

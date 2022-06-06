@@ -14,7 +14,7 @@ Applies only to Traditional Web Apps
 
 </div>
 
-OutSystems is committed to allowing the development of enterprise-grade applications that meet the highest accessibility standards and guidelines. With OutSystems 11, you can build WCAG 2.1 AAA, Section 508 and ADA compliant web applications faster, by leveraging a set of accessible UI components. You also have full freedom to extend the language and create the custom rich, accessible patterns and interfaces you need, by editing HTML markup and ARIA Roles using pure low code or traditional HTML and CSS.
+OutSystems is committed to allowing the development of enterprise-grade applications that meet the highest accessibility standards and guidelines. You also have full freedom to extend the language and create the custom rich, accessible patterns and interfaces you need, by editing HTML markup and ARIA Roles using pure low code or traditional HTML and CSS.
 
 While the accessibility of any application built with OutSystems ultimately depends on the developers and how they implement images, links, forms, headings and all other instances of content, this article shows you some best practices and guidelines you can follow as well as how you can leverage the accessible development accelerators OutSystems provides.
 

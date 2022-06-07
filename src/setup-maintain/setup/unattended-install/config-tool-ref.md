@@ -42,8 +42,6 @@ ConfigurationTool.com
     | /GetDeploymentZones
     | /ModifyDeploymentZone <deployment_zone_name> <deployment_zone_address> [<enable_https>]
     | /CreateUpgradeCacheInvalidationService
-    | /EnableServerAPI
-    | /DisableServerAPI
     | /UpgradeEnvironment
     | /UpgradePublishedApplications
     | /ApplySettingsFactory
@@ -127,14 +125,6 @@ ConfigurationTool.com
 
 :   Installs cache invalidation service or reconfigures the service given in the configuration file (`server.hsconf`).
     
-`/EnableServerAPI`
-
-:   Enables Server.API and Server.Identity on this machine. (Server.API and Server.Identity are enabled by default).
-
-`/DisableServerAPI`
-
-:   Disables Server.API and Server.Identity on this machine. Beware, Service Center will not work without them.
-
 `/UpgradeEnvironment`
 
 :   Installs the core components (Service Center and the System Components), and starts [preparing your modules](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Modules_preparation_step_during_Platform_Server_upgrade) for the new Platform Server version. Skips any of these steps if they were previously executed.
@@ -194,20 +184,6 @@ Modify the Address and/or Enable HTTPS settings of the "Global" deployment zone:
 ```
 ConfigurationTool.com
     /ModifyDeploymentZone "Global" <deployment_zone_address> [<enable_https>]
-```
-
-Disable Server.API and Server.Identity:
-
-```
-ConfigurationTool.com
-    /DisableServerAPI
-```
-
-Enable Server.API and Server.Identity:
-
-```
-ConfigurationTool.com
-    /EnableServerAPI
 ```
 
 ## Logging

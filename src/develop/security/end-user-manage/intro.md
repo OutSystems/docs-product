@@ -31,7 +31,7 @@ You may periodically de-activate users who you know will not continue to use you
 - Manage end users programmatically using the [Users API](../../../ref/apis/auto/users-api.final.md) 
 
 ## Older subscription models
-In the past, some OutSystems subscriptions didn't distinguish between internal and external end users, the limits were based on the total non-anonymous users. Some customers may still have an active subscription under the prior model. These users were labeled as named or registered users.
+In the past, some OutSystems subscriptions didn't distinguish between internal and external end users, the limits were based on the total non-anonymous users. Some customers may still have an active subscription under the prior model. These users were labeled as named users. Only customers who are using version 11.7 or later of the OutSystems platform will be able to see internal and external user counts in the Customer Portal; versions prior to this show only named users.
 
 ## Related resources
 * [Classify Users as Internal Users](classify-internal-users.md): includes information on configuring the email domains that will be recognized as your own, for purposes of classifying users as internal or external

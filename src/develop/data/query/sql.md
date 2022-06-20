@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 The **SQL** element lets you run, test, and review SQL queries in your apps. SQL is an all-purpose tool for developers who know SQL language. For a more straightforward and optimized data manipulation use **Aggregates**.
 
-![SQL in a logic flow](images/sql-in-flow-ss.png?width=350)
+![SQL in a logic flow](images/sql-in-flow-ss.png)
 
 
 ## Accessing data
@@ -78,7 +78,7 @@ You can test your work by clicking the `TEST` button located at the bottom of th
 
 1. Click **TEST**.
 
-![Test Your SQL Query](images/test-sql.gif)
+![Test Your SQL Query](images/test-sql-ss.gif)
 
 ## Convert an Aggregate to SQL
 
@@ -110,7 +110,7 @@ To convert an existing Aggregate to a SQL element follow these steps:
 
 1. Click **PROCEED**.
 
-![Convert an Aggregate to SQL](images/convert-to-sql.gif)
+![Convert an Aggregate to SQL](images/convert-to-sql-ss.gif)
 
 Your action flow now includes a **SQL** element based on the original Aggregate. Service Studio disables and keeps the original Aggregate in the action flow. After you validate the query results of the new **SQL** element, delete the Aggregate.
 

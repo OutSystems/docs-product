@@ -42,4 +42,3 @@ For instructions on how to secure your integrations with client side certificate
 
 [SOAP: Authenticate using a client certificate](../../extensibility-and-integration/soap/consume/extensibility-use-cases/certificate.md)
 
-

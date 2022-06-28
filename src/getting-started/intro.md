@@ -15,7 +15,7 @@ OutSystems lets you build great and secure web and mobile apps. This is what you
 3. Start **Service Studio** and see the section about [your first app](#your-first-app).
 
 
-## Your first app
+## Your first app 
 
 To create your first app in Service Studio you can: 
 

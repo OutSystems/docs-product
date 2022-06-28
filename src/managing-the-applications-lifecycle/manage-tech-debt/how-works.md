@@ -642,3 +642,43 @@ The following tables map the Architecture Dashboard permissions to the LifeTime 
   </tbody>
 </table>
 
+#### Manage Architecture Dashboard API
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>Open and Debug Applications or lower</b>
+   </td>
+   <td rowspan="2" colspan="3">No
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+   <td>Yes
+   </td>
+   <td colspan="2">No
+   </td>
+  </tr>
+  </tbody>
+</table>

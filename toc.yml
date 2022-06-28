@@ -1814,8 +1814,7 @@
                 - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
 
         # LifeTime API v1
-        - href: ref/apis/auto/lifetime-deployment-api-v1.final.md
-        
+        - href: ref/apis/auto/lifetime-deployment-api-v1.final.md        
         - href: ref/apis/auto/lifetime-sdk.final.md
         - href: ref/apis/auto/lifetime-services-api.final.md
         - href: ref/apis/outsystems-api-preloader-api.md
@@ -1837,3 +1836,4 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
+

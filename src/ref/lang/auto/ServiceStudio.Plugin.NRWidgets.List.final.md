@@ -18,15 +18,32 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 Use the List widget to display a simple list, for example a list of Expressions, or to display more complex items by adding a [List Item widget](ServiceStudio.Plugin.NRWidgets.ListItem.final.md). The List widget requires a source to populate the items.
 
-## Virtualization
+## List virtualization
 
-The List widget uses virtualization to render only those elements that are visible in the screen. You can set the value for virtualized pixels with `virtualization-threshold-before` and `virtualization-threshold-after` in the **Attributes** of List. Adjust the threshold values to tweak the scroll behavior.
+The List widget uses virtualization to render elements that are visible on the screen. Virtualization optimizes performance when rendering lists with a large number of list items, as only the visible items are added to the DOM. Controlling the list items in the DOM reduces the memory footprint of OutSystems applications, which is important for older devices with less resources. Having fewer list items in the DOM improves the initial screen rendering as well as the scrolling experience.
 
-You can also deactivate the virtualization with `disable-virtualization=True`. 
+## Viewport threshold
+
+To further enhance the scrolling experience, it’s possible to configure the viewport threshold to render extra elements (at the top or at the bottom of the list in the DOM), so when the user is scrolling, those elements are ready to be displayed on screen. Having elements rendered before they are visible on screen improves the scrolling experience. The extra elements are not visible because they are outside of the list’s viewport window. You can configure the viewport window thresholds by setting the ``virtualization-threshold-before`` or ``virtualization-threshold-after`` value (in pixels) in the **Attributes** of the List.
+
+![Virtualization treshold before and after](<images/virtualization-before-after-ss.png>)
+
+``Virtualization-threshold-before`` renders the elements before the first visible element, even if they are not visible. ``virtualization-threshold-after`` renders the elements after the last visible element, even if they are not visible. 
+
+You can also deactivate the virtualization by setting the List attribute value to ``disable-virtualization=True``.
+
+![Disable virtualization](<images/virtualization-disable-ss.png>)
 
 ## Scroll threshold
+When the List reaches the scroll threshold value, the list triggers the OnScrollEnding event. You can configure this event to load more data into the list which allows the user to keep scrolling continuously. The scroll threshold default value is 2000 pixels. To change the scroll ending threshold, set the ``infinite-scroll-threshold`` in the **Attributes** of the List.
 
-When List reaches the scroll threshold value, the app requests new records and then adds them to the list of items. The default value is 2000 pixels. Set the scroll threshold with `infinite-scroll-threshold` in the **Attributes** of List.
+![Disable virtualization](<images/virtualization-infinite-ss.png>)
+
+## Known Issues
+You should avoid using list virtualization when your list items have complex blocks with built-in aggregates or you are using custom or third-party JavaScript that interacts with the list items. Since virtualization adds and removes elements from the DOM, and the aggregates of a block run automatically when they are added to the DOM, scrolling a List whose items contain blocks with aggregates will constantly trigger their execution, which may result in a significant amount of server requests that can hinder server performance. 
+
+To prevent this issue, you can either disable the list virtualization or fetch all the data on the screen and pass it as parameters to the blocks. If you encounter any other UI/UX issues when using the List widget (for example, scrolling or list item visibility), a possible workaround is disabling list virtualization. For more details on how to disable list virtualization, see the [List virtualization](#list-virtualization). 
+
 
 ## Properties
 

@@ -41,3 +41,4 @@ For instructions on how to secure your integrations with client side certificate
 [Secure Rest APIs with client side authentication](https://success.outsystems.com/Support/Security/Secure_Rest_APIs_with_client_side_authentication)
 
 [SOAP: Authenticate using a client certificate](../../extensibility-and-integration/soap/consume/extensibility-use-cases/certificate.md)
+

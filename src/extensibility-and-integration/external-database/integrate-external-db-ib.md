@@ -20,7 +20,7 @@ You can use Integration Builder to integrate your apps with the following extern
 
 * Non-relational databases:
 
-    * MongoDB - Technical Preview
+    * MongoDB
 
 Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
 

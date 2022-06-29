@@ -96,3 +96,4 @@ When working with the sample app, keep in mind the following:
 * You have some feedback? Great! Use the feedback box in the page to send us a message.
 
 ![REST logic to generate the URLs](images/rest-sitemap-ss.png?width=800)
+

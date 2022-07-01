@@ -51,11 +51,9 @@ Snooze it with the "False Positive" reason and explain in the comments why you b
 
 ## Probes
 
-### How do I know if I need to update the Architecture Dashboard Probes?
+### How do I know if the Architecture Dashboard Probes need to be updated?
 
-If an environment has outdated probes, users with Full Control of the code analysis environment can update it autonomously see a warning message in Architecture Dashboard with a link to download the latest version.
-
-![](images/probes-update-message-ad.png)
+If an environment has outdated probes, Architecture Dashboard displays a warning message and users with [**Full Control** permissions assigned as a default role](how-works.md#update-probes) can update them autonomously. Users without Full Control permissions must contact their infrastructure administrator to update the Architecture Dashboard's probes. 
 
 Check out [how to update the Architecture Dashboard probes](how-update-probes.md).
 

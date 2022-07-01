@@ -11,7 +11,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 JSON Deserialize converts JSON string to one of the following data types:
 
 * Entity or Static Entity
-* Structure or Record
+* Structure
 * List
 
 ## Properties
@@ -50,7 +50,7 @@ JSON Deserialize converts JSON string to one of the following data types:
 </tr>
 <tr>
 <td title="Data Type">Data Type</td>
-<td>Record or List representing the structure of the data in the JSON string.</td>
+<td>List or Structure of the data in the JSON string. If you want to add a Record composed of Attributes of several Entities, create a Structure first.</td>
 <td>Yes</td>
 <td></td>
 <td></td>

@@ -113,6 +113,16 @@ You have to provide the following information:
     * your contacts;
     * The URL of your privacy policy, if any;
 
+* Provide information for [Google Play's Data safety section](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en#types&zippy=%2Cdata-types).
+    * By default, OutSystems apps collect the following data:
+
+        | Category | Data Type | Description |
+        |---|---|---| 
+        | App info and performance | Crash logs | Crash logs are collected in the Service center for troubleshoot purposes|
+        | Device or other IDs | Device or other IDs | We’re using the DeviceUUID which is solely respective to the current application installation and we're collecting it for troubleshoot purposes |
+
+    * In this form, you must also add entries for any data that you are collecting on top of the above mentioned ones, leveraged by either custom or supported plugins.
+
 At the final steps, you need to release the app to Beta Testing or Production, according to your choice, confirm the version and the build (APK/AAB), and start the rollout.
 
 After completing this process your application is published and available for download at the Google Play Store.

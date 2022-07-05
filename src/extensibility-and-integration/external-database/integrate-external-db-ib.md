@@ -110,9 +110,9 @@ You can connect an integration in the following ways:
 
 * [**Use an existing connection**](#option-1): If you already have a database connection, you can **select a connection** from the list of available connections.
 
-* [**Create a new connection**](#option-2): If you need a new database connection and meet the following requirements, you can **create a connection**:
+* [**Create a new connection**](#option-2): If you need a new database connection and you meet one of the following scenarios, you can **create a connection**:
 
-    * You're integrating with a relational database and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
+    * You're integrating with a relational database and you have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
 
     * You're integrating with MongoDB.
 
@@ -130,9 +130,9 @@ If the database connection you want to use already exists, do the following:
 
 #### Create a new connection { #option-2 }
 
-You can create a new database connection, if you meet the following requirements, you can **create a connection**:
+If you meet one of the following scenarios, you can **create a connection**:
 
-* You're integrating with a relational database and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
+* You're integrating with a relational database and you have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
 
 * You're integrating with MongoDB.
 
@@ -146,7 +146,16 @@ Create a new connection by following these steps:
 
     <div class="info" markdown="1">
 
-    For integrations with relational databases and if your environment uses Platform Server version 11.14.0 or earlier, click **Create in Service Center**. Fill in the mandatory details, test the connection, and then click **Create**.
+    If you are creating a connection to an external Oracle database which NLS_LANGUAGE parameter is different from `AMERICAN`, make sure you set the **NLS_LANGUAGE** field to the same value set in the database. This will prevent runtime issues related to date and number formats.
+
+    To get the value of the NLS_LANGUAGE parameter set in your external Oracle database you can run the following script:
+        `select value from nls_database_parameters where parameter = 'NLS_LANGUAGE';`
+
+    </div>
+
+    <div class="info" markdown="1">
+
+    For integrations with relational databases and if your environment uses Platform Server version 11.14.0 or earlier, click **Create in Service Center** and follow [this procedure](connect-external-db.md#define-connection) to create the database connection in Service Center.
 
     **Note:** By default, SQL Server/Azure SQL is selected in the DBMS dropdown. Don’t forget to select the correct database.
 

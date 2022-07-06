@@ -986,6 +986,7 @@
         - href: setup-maintain/setup/install-ssl-platform.md
         - href: setup-maintain/setup/install-client-side-certificate-paas.md
         - href: setup-maintain/setup/install-client-side-cert-on-premise.md
+        - href: setup-maintain/setup/change-db-authentication.md
         - href: setup-maintain/setup/load-balancing-apps/recommended-configs-load-balancing.md
 
         # Cache Invalidation Service

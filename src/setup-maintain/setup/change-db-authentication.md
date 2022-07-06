@@ -9,7 +9,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 # Change SQL Server database authentication mode 
 
 <div class="info" markdown="1">
+
 This article applies only to self-managed environments using SQL Server databases (not applicable to Azure SQL databases).
+
 </div>
 
 This article describes how to change the SQL Server database authentication to Windows Authentication or Database Authentication. If you want to update an existing OutSystems platform installation to start using a different authentication mode in the database, you need to follow these steps to avoid undesired behaviors.  
@@ -21,7 +23,9 @@ Find below the steps you need to follow for standalone or farm installations.
 For standalone installations, follow the steps below.
 
 <div class="info" markdown="1">
+
 To reduce downtime during the process, you can previously execute the steps of the Database Catalogs (step 9), though you won’t be able to test the connections in Service Center.
+
 </div>
 
 1. Open the Configuration Tool in the OutSystems Server.
@@ -53,11 +57,13 @@ A message to publish the latest version of Service Center is displayed. Click **
         * The Runtime user requires the roles: db_datareader and db_datawriter.
 
         <div class="info" markdown="1">
+
         Notes:   
         <ul>
         <li> If the Catalog was configured before Platform Server 7.0 with a specific Runtime user, we recommend to change it to the same user configured in the Configuration Tool. </li>
         <li> Using specific users is only allowed for backward compatibility. </li>
         </ul>
+        
         </div>
 
     1. Test the connection of each database catalog using a tool like SQL Server Management Studio.
@@ -68,11 +74,13 @@ A message to publish the latest version of Service Center is displayed. Click **
 For Farm installations, follow the steps below.
 
 <div class="info" markdown="1">
+
 Notes:
 <ul>
 <li>In Farm Installations there can be a temporary problem contacting the Session database between the step to grant permissions in each front-end (step 7.3), and the step in which you apply the configurations on the controller (step 10).</li>
 <li>To reduce downtime during the process, you can previously execute the steps of the Database Catalogs (step 13), though you won’t be able to test the connections in Service Center.</li>
 </ul>
+
 </div>
 
 1. Open the Configuration Tool in the controller machine.
@@ -108,7 +116,9 @@ A message to publish the latest version of Service Center is displayed. Click **
 1. On each front-end, click **Apply and Exit**.
 
     <div class="info" markdown="1">
+
     In case you have multiple front-end servers, you can avoid downtime by performing this operation one front-end at a time and leaving at least one front-end untouched until you are sure that all applications have been republished.
+
     </div>
 
 1. On the Configuration Tool in the controller machine, click **Apply and Exit**.  
@@ -123,11 +133,13 @@ A message to publish the latest version of Service Center is displayed. Click **
         * The Log role requires: db_datareader and db_datawiter.
 
         <div class="info" markdown="1">
+
         Notes:   
         <ul>
         <li> If the catalog was configured before Platform Server 7.0 with a specific Runtime user, we recommend to change it to the same user configured in the Configuration Tool. </li>
         <li> Using specific users is only allowed for backward compatibility. </li>
         </ul>
+
         </div>
 
     1. Test the connection of each database catalog using a tool like SQL Server Management Studio.
@@ -158,7 +170,9 @@ Application Pool identities are changed according to the following:
 (*) Administrator and Runtime are Windows users configured in the Configuration Tool.
 
 <div class="info" markdown="1">
+
 When reverting to Database Authentication the changes done on Application Pools identities and OutSystems Windows services Log On accounts are not reverted.
+
 </div>
 
 

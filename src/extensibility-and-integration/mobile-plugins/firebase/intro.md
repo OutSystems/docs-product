@@ -20,6 +20,7 @@ Firebase is a Google mobile development platform. It speeds up development of ma
 * [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)
 * [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase)
 * [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
+* [Firebase Cloud Messaging](https://www.outsystems.com/forge/component-overview/13299)
 
 <div class="info" markdown="1">
 
@@ -48,7 +49,7 @@ To add a Firebase plugin to your module, follow these steps:
 
 1. Install the plugin and reference it in your module. See [Adding plugins](../intro.md#adding-plugins) for detailed instructions.
 
-2. Add the [Google services configuration file](#adding-google-services-configuration-file) to the module.
+1. Add the [Google services configuration file](#adding-google-services-configuration-file) to the module.
 
     <div class="info" markdown="1">
 
@@ -56,9 +57,15 @@ To add a Firebase plugin to your module, follow these steps:
 
     </div>
 
-3. In Service Studio, go to **Logic** > **Client Action** > **your Firebase plugin** and use the actions in your logic.
+1. In Service Studio, go to **Logic** > **Client Action** > **your Firebase plugin** and use the actions in your logic.
 
     ![Firebase actions in the logic tab of Service Studio](images/plugin-logic-tab-ss.png)
+
+    <div class="info" markdown="1">
+
+    To learn how to use the **Firebase Cloud Messaging plugin**, check this [article](firebase-messaging.md).
+
+    </div>
 
 ## Adding Google services configuration file
 
@@ -66,20 +73,20 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
 
 1. In Service Studio, go to the **Data** tab.
 
-2. Right-click the **Resources** folder and select **Import Resource**. The **Import Resource** dialog opens.
+1. Right-click the **Resources** folder and select **Import Resource**. The **Import Resource** dialog opens.
 
-3. Select the [google-services.zip firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
+1. Select the [google-services.zip firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
 
     ![Resources folder in Service Studio](images/resources-folder-ss.png)
 
-4. Select the **google-services.zip** resource and configure the following:
+1. Select the **google-services.zip** resource and configure the following:
    
     * In the **Deploy Action** list, select **Deploy to Target Directory**.
     * In the Target Directory, enter the [target directory for your environment](#generating-target-directories-for-configuration-files).
 
     ![Resource settings for Firebase](images/firebase-resource-properties-single-ss.png)
 
-5. Repeat steps two and four for each environment, each time using a different configuration and [target directory](#generating-target-directories-for-configuration-files).
+1. Repeat steps two and four for each environment, each time using a different configuration and [target directory](#generating-target-directories-for-configuration-files).
 
     ![Resource settings for Firebase](images/firebase-resource-properties-multiple-ss.png)
 
@@ -124,7 +131,7 @@ The Firebase Dynamic Links Plugin has some additional setup steps that need to b
 
 ### Ensuring app is compliant with Apple’s Data Use and Sharing guidelines
 
-Starting with iOS 14.5, apps on the App Store must receive the user’s permission to collect tracking data through the  AppTrackingTransparency framework.
+Starting with iOS 14.5, apps on the App Store must receive the user’s permission to collect tracking data through the AppTrackingTransparency framework.
 
 ![RequestTrackingAuthorization client action parameters on Service Studio](images/firebase-request-tracking-authorization.png)
 

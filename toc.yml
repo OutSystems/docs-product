@@ -687,6 +687,8 @@
         - href: extensibility-and-integration/mobile-plugins/file-transfer-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/file-viewer-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/firebase/intro.md
+        - topics:
+            - href: extensibility-and-integration/mobile-plugins/firebase/firebase-messaging.md
         - href: extensibility-and-integration/mobile-plugins/health-fitness/intro.md
         - href: extensibility-and-integration/mobile-plugins/social-login/intro.md
         - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md

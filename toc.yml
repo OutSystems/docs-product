@@ -704,7 +704,7 @@
         - topics:
             - href: extensibility-and-integration/javascript/web/handle-errors.md
 
-    #Integration Builder
+    #Integration Builder 
     - href: extensibility-and-integration/integration-builder/intro.md
     - topics:
         - href: extensibility-and-integration/integration-builder/works.md

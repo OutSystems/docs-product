@@ -104,7 +104,7 @@ To convert an existing Aggregate to a SQL element follow these steps:
 
     <div class="info" markdown="1">
 
-    The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed above](#limitations).
+    The **CONVERT AGGREGATE TO SQL** button is only enabled if your Aggregate doesn't include any of the [limitations listed below](#limitations).
 
     </div>
 

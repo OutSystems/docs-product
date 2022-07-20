@@ -131,6 +131,8 @@ Action | Description
 [User_GetIdByUsername](<#User_GetIdByUsername>) | Gets the user identifier from the username.
 [UserExtended_GetById](<#UserExtended_GetById>) | Gets an user extended details
 
+\
+&nbsp;
 Service Action | Description
 ---|---
 [Activity_GetActionList](<#Service_Activity_GetActionList>) | Returns the list of available actions for an existing activity based on its current details
@@ -164,6 +166,8 @@ Service Action | Description
 [DEPRECATED_Case_GetCasesCounters](<#Service_DEPRECATED_Case_GetCasesCounters>) | Get requests (Case) count by each case filter type
 [Tag_GetAllByLabel](<#Service_Tag_GetAllByLabel>) | Gets all Tags for a given Case Definition that match the specified label. If no label is specified all tags are returned up to the MaxResults input parameter value
 
+\
+&nbsp;
 Structure | Description
 ---|---
 [Activity_AssignDetails](<#Structure_Activity_AssignDetails>) | Details about activity assignment details
@@ -247,6 +251,8 @@ Structure | Description
 [User_SearchResults](<#Structure_User_SearchResults>) | Public structure to return the search results for Group extended
 [UserExtended_Details](<#Structure_UserExtended_Details>) | Details about user
 
+\
+&nbsp;
 ## Actions
 
 ### Activity_AddComments { #Activity_AddComments }

@@ -73,6 +73,7 @@ In this example, the user selects a date from the calendar, the date is saved in
 1. To access the date selected by the user, create an **Assign** and set the **DatePicked** to **SelectedDateTime**.
 
     ![Add assign and variable value](<images/datepicker-assign-ss.png>)
+    
 
 1. You can configure the Datepicker by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 

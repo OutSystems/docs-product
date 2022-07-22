@@ -10,6 +10,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
   
 You can define a database index in your data model to enforce uniqueness of table attributes across multiple rows or to make searches quicker using those attributes as filters. In OutSystems, you can model a database index in the entity element.
 
+<div class="info" markdown="1">
+
+See [Database Indexes](<../../../ref/data/database/database-indexes.md>) for more information about creating database indexes.
+
+</div>
+
 To create an index for an entity:
 
 1. Open the entity by double-clicking on it or selecting the Indexes property.

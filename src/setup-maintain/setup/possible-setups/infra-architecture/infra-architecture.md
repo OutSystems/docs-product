@@ -107,8 +107,9 @@ database servers in production environments:
 
 #### Integration with external databases
 
-To build your apps on top of existing data, OutSystems integrates with major
-database systems:
+To build applications using existing data sources, use OutSystems [Integration
+Builder](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Create_connectors_with_Integration_Builder).
+Supported databases are:
 
 * SQL Server
 * SQL Azure
@@ -117,8 +118,6 @@ database systems:
 * PostgreSQL
 * DB2 iSeries
 
-using [Integration
-Builder](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Create_connectors_with_Integration_Builder).
 Developers can combine local and external data sources without spending
 unnecessary time on complex integration projects.
 

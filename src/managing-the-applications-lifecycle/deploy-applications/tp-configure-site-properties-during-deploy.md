@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 You can configure your applications' Site Properties in the target environment during the deployment plan.
 
-![](images/configure-settings-during-deploy-1.gif)
+![Configure your applications' Site Properties](images/configure-settings-during-deploy-1.gif)
 
 <div class="info" markdown="1">
 
@@ -20,13 +20,13 @@ Make sure the user executing the deployment has the "Change & Deploy Application
 
 The deployment plan wizard enables you to configure the Site Properties of the applications being deployed during the step **Configure application settings**.
 
-![](images/configure-settings-during-deploy-2.png?width=800)
+![Configure applications settings step](images/configure-settings-during-deploy-2.png)
 
 When deploying applications, after adding the applications to your deployment plan, the deployment plan wizard takes you to the step **Configure application settings**.
 
 If there are application modules in the plan with new Site Properties that were never set in the target environment, you can define in this step the **Effective value** for those Site Properties in the target environment.
 
-![](images/configure-site-settings-during-deploy-3.png?width=800)
+![Define the Effective value for Site Properties](images/configure-site-settings-during-deploy-3.png)
 
 In the deployment plan wizard, you can also see and change the existing settings of the applications to deploy. Click the button **All settings** to see the existing settings.
 
@@ -36,7 +36,7 @@ There are some situations when this step is **skipped** or **disabled**:
 
 * The step is **skipped** when there are no new settings to configure. However, if you need to change any existing setting, you can manually go back to **Configure application settings** by clicking the step in the wizard.
 
-    ![](images/configure-settings-during-deploy-4.png?width=800)
+    ![Configure applications settings step skipped](images/configure-settings-during-deploy-4.png)
 
 * The step is **disabled** when there aren't any settings to configure or the user executing the deployment doesn't have the required permissions.
 

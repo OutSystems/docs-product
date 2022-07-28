@@ -10,7 +10,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 You can configure your applications' Site Properties in the target environment during the deployment plan.
 
-![Configure your applications' Site Properties](images/configure-settings-during-deploy-1.gif)
+<iframe src="https://player.vimeo.com/video/734417155?h=793863e41d" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+
 
 <div class="info" markdown="1">
 

@@ -1,5 +1,5 @@
 ---
-summary: Learn about the OutSystems infrastructure architecture and it's deployment options. Includes details about the underlying technologies, components and services. Displays infrastructure examples with different levels of complexity, including multiple OutSystems pipelines.
+summary: Learn about the OutSystems infrastructure architecture and its deployment options. Includes details about the underlying technologies, components, and services. Displays infrastructure examples with different levels of complexity, including multiple OutSystems pipelines.
 tags: article-page
 locale: en-us
 guid: 59f6b703-30bd-4143-8af8-aac2f6e82ae0
@@ -20,7 +20,7 @@ Underpinning this architecture, are services for automating complex change
 management and architectural review processes, removing repetitive tasks and
 guesswork involved in application development, security, code generation, and
 logging. The runtime layer offers the option of deployment either in the
-OutSystems Cloud or on your own systems.
+OutSystems Cloud or on your systems.
 
 
 ## Standard, reliable technologies
@@ -31,7 +31,7 @@ generates a fully standard, and optimized set of server (.NET) and client
 components (HTML, CSS, JavaScript) deployable to standard application servers.
 
 OutSystems implements standard server architecture for deployment on the
-OutSystems Cloud, on your own on-premises servers, or on public clouds such as
+OutSystems Cloud, on your on-premises servers, or public clouds such as
 AWS or Azure.
 
 * App deployment is on IIS application servers running Microsoft Windows
@@ -39,8 +39,8 @@ Server.
 
 * Standard relational databases store application data and Platform Server
 metadata that your applications use. The currently supported database
-management systems are Microsoft SQL Server, Azure SQL Database and Oracle. You
-can also integrate with other databases.
+management systems are Microsoft SQL Server, Azure SQL Database, and Oracle.
+You can also integrate with other databases.
 
 For more information about the supported software versions, check [OutSystems
 system
@@ -52,7 +52,7 @@ requirements](https://success.outsystems.com/Documentation/11/Setting_Up_OutSyst
 An OutSystems environment provides all the necessary infrastructure to allow
 you to develop and deliver applications. The [available
 editions](https://www.outsystems.com/pricing-and-editions) provide at least
-three environments suited for development, test and, production.
+three environments suited for development, test, and production.
 
 An environment includes a fully functional set of components that allow you to:
 
@@ -84,7 +84,7 @@ application domains run in a worker process.
 ### Database
 
 You can choose to deploy your environment databases on Microsoft SQL Server,
-Azure SQL Database or Oracle. For SQL and Azure databases you need to configure
+Azure SQL Database, or Oracle. For SQL and Azure databases you need to configure
 three catalogs, for Oracle, three schemas:
 
 * Platform database
@@ -96,11 +96,11 @@ Distinct environments have distinct catalogs or schemas. Frequently,
 non-production environments share the same database server so this helps
 maintain separation between the environments.
 
-![Non production database environment](images/infra-options-db-non-prod.png)
+![Non-production database environment](images/infra-options-db-non-prod.png)
 
 You have the flexibility to choose which environments should have dedicated
-database servers. As best practice you should deploy dedicated
-database servers in production environments:
+database servers. As the best practice you should deploy dedicated database
+servers in production environments:
 
 ![Production database environment](images/infra-options-db-prod.png)
 
@@ -133,7 +133,7 @@ application servers that compose an environment.
 
 The Platform Server installs specific OutSystems services that deliver the
 platform’s core functionality. They can either run as a Windows service, a .NET
-Core app managed by IIS or as a library included in the applications
+Core app managed by IIS, or as a library included in the applications
 themselves.
 
 * **Deployment controller service:** Enables the compilation of OutSystems
@@ -143,7 +143,7 @@ applications and the automated deployment of the code to multiple servers.
 the current server.
 
 * **Scheduler service:** is responsible for triggering asynchronous processes
-and manages timers, business processes and emails.
+and manages timers, business processes, and emails.
 
 * **Server.API:** responsible for exposing some platform functionality
 as services.
@@ -158,12 +158,12 @@ As load increases and high availability needs become apparent, it’s possible t
 add application servers (also referred to as front ends) to horizontally scale
 an environment.
 
-A distributed environment architecture allows you to balance costs in non
-production environments with a minimum set of servers while allowing you to
+A distributed environment architecture allows you to balance costs in
+non-production environments with a minimum set of servers while allowing you to
 horizontally scale up highly loaded production environments. On the top access
 layer support for load balancing removes single points of failure.
 
-To accommodate differing needs of each of the environments there are two
+To accommodate the differing needs of each of the environments there are two
 configurations, standalone and server farm.
 
 
@@ -176,22 +176,22 @@ configuration:
 
 * A single queue serves all requests.
 
-* The database installation can reside on the same physical server or it’s
-own server.
+* The database installation can reside on the same physical server or a
+dedicated server.
 
 
 #### Server farm
 
 The server farm uses automated resource optimization and management to ensure
-an application consumes few resources, while freeing unused resources. This is
+an application consumes few resources while freeing unused resources. This is
 the typical configuration for production environments and possibly large
 non-production environments. In a server farm:
 
-* Provisioning of multiple front ends deals with increased load and high
+* Provisioning of multiple front-ends deals with increased load and high
 availability requirements.
 
 * The OutSystems Deployment Controller service automatically ensures that
-applications are consistently installed across all front end servers.
+applications are consistently installed across all front-end servers.
 
 * Multiple queues handle service requests.
 
@@ -200,7 +200,9 @@ applications are consistently installed across all front end servers.
 * The requirements of the apps it hosts would typically imply a dedicated
 database server.
 
-For more in depth information about OutSystems scalability and availability options, visit [this page](https://success.outsystems.com/Support/Enterprise_Customers/Availability_and_scalability).
+For more in-depth information about OutSystems scalability and availability
+options, visit [this
+page](https://success.outsystems.com/Support/Enterprise_Customers/Availability_and_scalability).
 
 
 ## Infrastructure architecture
@@ -215,8 +217,8 @@ infrastructure with a separate environment for each phase: development,
 functional testing, user acceptance testing (UAT), and production.
 
 * **LifeTime management console** - manages the infrastructure, environments,
-applications, IT users, and security. A LifeTime deployment has its own
-environment with its own server, database catalogs, and a central console.
+applications, IT users, and security. A LifeTime deployment has a dedicated
+environment with a dedicated server, database catalogs, and a central console.
 
 * **Pipelines** - to isolate applications based on common characteristics.
 
@@ -234,7 +236,7 @@ With OutSystems you have the option to deploy additional pipelines that allow
 you to isolate a portfolio of applications that have the same characteristics.
 
 They include a set of environments to enable independent development and
-release. Pipelines can help you with governance, compliance and maintaining
+release. Pipelines can help you with governance, compliance, and maintaining
 quality standards by allowing you to:
 
 * Isolate lines of **apps with different lifecycle stages** into pipelines.
@@ -247,7 +249,7 @@ additional environment for an extra stage, such as mobile device testing.
 for more sensitive data.
 
 * **Isolate mission-critical apps**. Pipelines help isolate your
-mission-critical applications, catering for data isolation and additional
+mission-critical applications, catering to data isolation and additional
 lifecycle stages (perhaps, additional testing).
 
 All while **maintaining the reusability** of your components across an entire
@@ -255,7 +257,7 @@ portfolio.
 
 ### OutSystems SaaS tools
 
-OutSystems provides several tools served as SaaS that can be optionally used.
+OutSystems provides several SaaS tools that can be optionally used.
 Installation of the tools isn't on your own servers and requires connectivity
 to your OutSystems infrastructure. On OutSystems Cloud, connectivity is always
 ensured but on your self-managed infrastructure you’ll need to be aware of
@@ -268,7 +270,7 @@ generates mobile packages for installation on mobile devices.
 * [Architecture
 Dashboard](https://www.outsystems.com/platform/architecture-dashboard/):
 technical debt monitoring tool that enables you to visualize complex
-cross-portfolio architectures, identify problems and help developers follow
+cross-portfolio architectures, identify problems, and help developers follow
 best practices.
 
 * [Workflow
@@ -287,16 +289,16 @@ The complete OutSystems network requirements are
 
 ### Infrastructure architecture examples { #infra-examples }
 
-OutSystems provides the flexibility to start with a simple infrastructure.
-Edition upgrades and scale ups are available to accommodate growing needs. The
-following examples shows different infrastructure architectures compositions,
-from simple to a complex.
+OutSystems provides the flexibility to start with simple infrastructure.
+Edition upgrades and scale-ups are available to accommodate growing needs. The
+following examples show different infrastructure architectures compositions,
+from simple to complex.
 
 Read more about OutSystems editions and pricing
 [here](https://www.outsystems.com/pricing-and-editions/).
 
 Addons are available in addition to the default configurations. Information on
-addons is available here
+addons is available
 [here](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/Cloud_services_catalog).
 
 
@@ -316,11 +318,11 @@ For this setup, use these underlying servers:
 **Two database servers:**
 
 * A shared database server or instance that carries all the catalogs for the
-LifeTime, Development and Test environments.
+LifeTime, Development, and Test environments.
 
 * A dedicated database server for the Production environment.
 
-**Four front end servers:**
+**Four front-end servers:**
 
 * 1 for LifeTime
 * 1 for Development
@@ -332,14 +334,14 @@ LifeTime, Development and Test environments.
 
 In this scenario, apart from **departmental apps** (like a sales representative
 tablet app and productivity apps), this infrastructure is also capable of
-delivering a **mission critical mobile banking app**.
+delivering a **mission-critical mobile banking app**.
 
 The lifecycle of this portfolio requires a stage for device testing so an
 **additional UAT environment** supports it.
 
 The mobile banking app requires **additional front ends** to support a B2C
-expected usage. A mission critical application translates to a high
-availability infrastructure, so distribution of front-ends is between two
+expected usage. A mission-critical application translates to a high
+availability infrastructure, so the distribution of front-ends is between two
 data centers and the database has a stand-by replica.
 
 ![Standard infrastructure options diagram](images/infra-options-standard.png)
@@ -351,13 +353,13 @@ As a result, this factory required:
 * A shared database server or instance with all the catalogs of LifeTime,
 Development, and Test.
 
-* One dedicated for UAT.
+* One dedicated to UAT.
 
 * A database server for the Production environment.
 
 * A standby database replica of the Production database
 
-**Eight front end servers:**
+**Eight front-end servers:**
 
 * 1 for LifeTime
 * 1 for Development
@@ -368,14 +370,14 @@ Development, and Test.
 
 #### Enterprise edition infrastructure
 
-With this edition it's possible to have **multiple pipelines**.
+With this edition, it's possible to have **multiple pipelines**.
 
 This scenario has a portfolio of departmental applications and another of
 external facing applications that have **different scaling needs**. The
 portfolio of external apps also handles **sensitive data with strict policies**
 and requires high availability.
 
-Due to the fundamental differences between the two portfolios they're split
+Due to the fundamental differences between the two portfolios, they're split
 into 2 pipelines. One of the pipelines needs 2 front ends in Production and the
 other needs 4 front ends. The pipelines may require **further scaling** in the
 future. Any **specific data access rules** take place in one of the pipelines.
@@ -391,12 +393,12 @@ Development.
 
 * 2 databases for the 2 Test environments of both pipelines.
 
-* 1 database server for the Production environment of the pipeline on the left.
+* 1 database server for the Production environment of the pipeline is on the left.
 
 * 2 database servers (primary and replica) for the Production environment of
 the pipeline on the right
 
-**Ten front end servers:**
+**Ten front-end servers:**
 
 * 1 for LifeTime.
 
@@ -406,22 +408,22 @@ the pipeline on the right
 
 * 2 in the Production environment that hosts the departmental applications.
 
-* 4 for the Production environment comprising the mission critical external
+* 4 for the Production environment comprising the mission-critical external
 facing apps.
 
 
 ## Deployment options
 
-OutSystems builds on reliable technologies and it's scalable architecture
-allows adjustments of infrastructure configurations to your needs. OutSystems
-supports the infrastructure provider of your choice such as AWS and Azure.
-Application code and data are always under the customer’s control.
+OutSystems builds on reliable technologies and its scalable architecture allows
+adjustments of infrastructure configurations to your needs. OutSystems supports
+your infrastructure provider such as AWS and Azure. Application code and data
+are always under the customer’s control.
 
 In the OutSystems Cloud, managed infrastructure frees developers to focus on
 developing applications on the OutSystems platform.
 
-There’s also the option to deploy in a self-managed infrastructure, on your own
-data center or on a public cloud. In these two self managed options, the
+There’s also the option to deploy in a self-managed infrastructure, on your
+data center or, a public cloud. In these two self-managed options, the
 runtime application server (IIS) and the operating system are always managed by
 you.
 

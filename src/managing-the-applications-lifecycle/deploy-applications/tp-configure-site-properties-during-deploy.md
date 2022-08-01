@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 You can configure your applications' Site Properties in the target environment during the deployment plan.
 
-<iframe src="https://player.vimeo.com/video/734417155?h=793863e41d" width="750" height="375" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+<iframe src="https://player.vimeo.com/video/734417155?h=793863e41d" width="650" height="325" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
 
 
 <div class="info" markdown="1">
@@ -50,3 +50,4 @@ To update the Site Properties' value in the target environment after the deploym
 This feature doesn't apply to multi-tenant Site Properties.
 
 </div>
+

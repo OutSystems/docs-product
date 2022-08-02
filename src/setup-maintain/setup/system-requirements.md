@@ -64,7 +64,7 @@ Apart from standard Oracle Database setups, OutSystems Platform 8.0 and onwards 
 
 * Microsoft .NET Framework 4.8 (supported since Platform Server 11 – Release Oct.2019 CP2) or Microsoft .NET Framework 4.7.2
 * Microsoft Build Tools 2015
-* .NET Core 3.1 Runtime & Hosting Bundle for Windows
+* .NET 6.0 Runtime & Hosting Bundle for Windows
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 

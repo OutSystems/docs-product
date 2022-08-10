@@ -20,7 +20,7 @@ Firebase is a Google mobile development platform. It speeds up development of ma
 * [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)
 * [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase)
 * [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
-* [Firebase Cloud Messaging](https://www.outsystems.com/forge/component-overview/13299)
+* [Firebase Cloud Messaging](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase)
 
 <div class="info" markdown="1">
 

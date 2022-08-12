@@ -176,6 +176,3 @@ Reverting to Database Authentication doesn’t revert the changes done to Applic
 </div>
 
 
-
-
-

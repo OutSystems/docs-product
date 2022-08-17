@@ -1,10 +1,10 @@
 ---
 summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
-tag:
+tags:
 locale: en-us
 guid: DA5BA9CA-066E-49E2-92C8-674CB644C370
 app_type: traditional web apps, mobile apps, reactive web apps
-----
+---
 
 # Configuring Microsoft Azure AD authentication
 
@@ -20,7 +20,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. [Configure permissions](#configure-permissions)
 
-## Register an application 
+## Register an application
 
 1. Access the Microsoft Azure portal.
 
@@ -104,35 +104,35 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
         * ``https://<YOUR_ENV>/OsIntegrationManager/OIDC_Callback``
 
-1. Click **Save**. 
+1. Click **Save**.
 
 ## Configure the client secret
 
 1. Go to the **Certificates & Secrets** > **Client  secrets** and click **+ New client secret**.
 
     ![Add new client secret](images/add-secret-az.png)
-        
+
 1. On the **Add a client secret** screen, enter the following details:
 
     * **Description**: Platform Consoles
 
     * **Expires**: Recommended: 6 months
 
-    ![Enter secret details](images/secret-details-az.png)    
+    ![Enter secret details](images/secret-details-az.png)
 
 1. Click **Add**.
 
 1. On the **Client secrets** tab, copy the secret in the **Value** column and store it somewhere safe.
-   
+
     <div class="warning" markdown="1">
 
-     You need this information when configuring the provider in LifeTime. This value will not be displayed again, so ensure you save it now. 
+     You need this information when configuring the provider in LifeTime. This value will not be displayed again, so ensure you save it now.
 
     </div>
 
     ![Enter secret details](images/secret-value-az.png)
 
-## Configure permissions 
+## Configure permissions
 
 1. Go to **API Permissions** and click **+ Add a permission**.
 
@@ -152,7 +152,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. Click **Add Permissions**.
 
-1. Go to the **Overview** screen and copy the **Application (client) ID.** 
+1. Go to the **Overview** screen and copy the **Application (client) ID.**
 
     **Note**: You need this information when configuring the provider in Lifetime
 

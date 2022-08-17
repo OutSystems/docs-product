@@ -1,10 +1,10 @@
 ---
 summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
-tag:
+tags:
 locale: en-us
 guid: 5F1E1CC1-A4E7-497F-A176-7A8671CC5D8B
 app_type: traditional web apps, mobile apps, reactive web apps
-----
+---
 
 # Configuring Okta authentication
 
@@ -27,7 +27,7 @@ To configure Okta authentication, follow these steps:
 1. On the **Create a new app integration** screen, select the following options and click **Next**.
 
     * **Sign-in method**: OIDC - OpenID Connect
-    * **Application type**: Web Application 
+    * **Application type**: Web Application
 
     ![Click sign-in method and app type](images/select-app-type-ok.png)
 
@@ -39,7 +39,7 @@ To configure Okta authentication, follow these steps:
 
     * **Sign-in redirect URIs**:
 
-        * For each of the environments on your infrastructure (including Lifetime), add  a new URI for the Service Center login page:        
+        * For each of the environments on your infrastructure (including Lifetime), add  a new URI for the Service Center login page:
         ``https://<YOUR_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
     * **Sign-out redirect URIs**:
@@ -52,11 +52,11 @@ To configure Okta authentication, follow these steps:
 
         ![Enter configuration details](images/config-consoles-ok.png)
 
-1. From the **OutSystems Consoles** application integration screen, copy the **Client ID** and the **Client Secret** details. 
+1. From the **OutSystems Consoles** application integration screen, copy the **Client ID** and the **Client Secret** details.
 
     <div class="warning" markdown="1">
 
-     You need this information when configuring the provider in LifeTime. The client secret will not be displayed again, so ensure you save it now. 
+     You need this information when configuring the provider in LifeTime. The client secret will not be displayed again, so ensure you save it now.
 
     </div>
 
@@ -66,7 +66,7 @@ To configure Okta authentication, follow these steps:
 
 1. Go back to the **Applications** screen and click **Create App Integration**.
 
-1. On the **Create a new app integration** screen, select the following options and click **Next**: 
+1. On the **Create a new app integration** screen, select the following options and click **Next**:
 
     * **Sign-in method**: OIDC - OpenID Connect
 
@@ -112,7 +112,7 @@ To configure Okta authentication, follow these steps:
 
     ![Enter configuration details](images/config-tools-ok.png)
 
-1. From the **OutSystems Development Tools** app integration screen copy the **Client ID**. 
+1. From the **OutSystems Development Tools** app integration screen copy the **Client ID**.
 
     **Note**: You’ll need this information later when you configure the provider in Lifetime.
 
@@ -122,7 +122,7 @@ To configure Okta authentication, follow these steps:
 
 To finalize and activate the Okta configuration for both Consoles and Development Tools, follow these steps:
 
-1. Go to **Security** > **API**, and from the default **Authorization Servers** tab, click your authorization server name. 
+1. Go to **Security** > **API**, and from the default **Authorization Servers** tab, click your authorization server name.
 
     The server settings are displayed.
 
@@ -143,7 +143,7 @@ To finalize and activate the Okta configuration for both Consoles and Developmen
         * **Client Id for Web tools**: OutSystems Consoles Client ID
 
         * **Client Secret**: OutSystems Consoles Client Secret
-        
+
         * **Client Id for Desktop tools**: OutSystems Development Tools Client ID
 
 

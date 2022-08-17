@@ -1,10 +1,10 @@
 ---
 summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
-tag:
+tags:
 locale: en-us
 guid: 1730AE44-3570-4CA9-81BE-032CCF2D12B5
 app_type: traditional web apps, mobile apps, reactive web apps
-----
+---
 
 # Configuring LifeTime authentication
 
@@ -12,7 +12,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 Before you can configure the external IdP in LifeTime, the feature must be activated. For more information on how to activate the feature, see [Technical Preview features](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features).
 
-</div>   
+</div>
 
 To configure the external provider (OIDC) in LifeTime, follow these steps:
 
@@ -34,10 +34,10 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
     1. If using Okta, click the **Use a different Client Ids for Desktop and Web tools** link and enter the following:
 
         1. **Client Id for Web tools**: Web Application’s Client ID
-        
+
         1. **Client Id for Desktop tools**: Native Application’s Client ID
 
-        1. **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is prefered_username. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims). 
+        1. **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is prefered_username. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
 
 
         ![Click Try the new OpenId Connect](images/authentication-lt.png)
@@ -61,7 +61,7 @@ To deactivate the external IdP, select the active IdP and click **Deactivate**.
 
 ![Click Disactivate](images/deactivate-lt.png)
 
-By deactivating the external IdP, the **IT Users Authentication with External IdP (OIDC)** feature is unavailable and the only way to login is by using the previously configured authentication mechanism. 
+By deactivating the external IdP, the **IT Users Authentication with External IdP (OIDC)** feature is unavailable and the only way to login is by using the previously configured authentication mechanism.
 
 ## Managing Users
 
@@ -73,9 +73,9 @@ When creating a new user in LifeTime, if an external IdP configuration is active
 
 If the external IdP is unavailable or the **IT Users Authentication with External IdP (OIDC)** configuration has errors, you can configure a password for a user. This ensures that there is always a fallback authentication option for the user to log into the platform.
 
-Because the **IT Users Authentication with External IdP (OIDC)** authentication mode is an add-on, you can add built-in credentials so that there is a fallback mechanism set up. 
+Because the **IT Users Authentication with External IdP (OIDC)** authentication mode is an add-on, you can add built-in credentials so that there is a fallback mechanism set up.
 
-**Note**: We highly recommend that you use this approach, although it's not mandatory. 
+**Note**: We highly recommend that you use this approach, although it's not mandatory.
 
 To add built-in credentials to a user, follow these steps:
 
@@ -89,7 +89,7 @@ To add built-in credentials to a user, follow these steps:
 
     ![Click Add OutSystems built-in credentials](images/builtin-credentials-lt.png)
 
-1. Enter the **Password** and **Confirm Password** details. 
+1. Enter the **Password** and **Confirm Password** details.
 
 1. Click **Save**.
 
@@ -104,7 +104,7 @@ You can clear a user’s built-in credentials. Doing this prevents the users fro
 1. On the **Users** screen, locate and click on the user you want to update.
 
 1. Click **Clear built-in password**.
- 
+
     ![Enter password details](images/clear-password-lt.png)
 
 **Note**: If the existing [External Authentication Provider](../use-an-external-authentication-provider.md)  is not configured to use OutSystems built-in authentication, the options to set up the password are not available. However, the fallback mechanism will work with the configured provider.

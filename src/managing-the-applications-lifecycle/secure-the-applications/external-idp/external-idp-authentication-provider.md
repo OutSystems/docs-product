@@ -1,16 +1,16 @@
 ---
 summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
-tag:
+tags:
 locale: en-us
 guid: 722169AB-BF65-4357-89F3-0AF7D7D49264
 app_type: traditional web apps, mobile apps, reactive web apps
-----
+---
 
 # Authentication using an external identity provider
 
 ## Logging into OutSystems management consoles
 
-When accessing any OutSystems management console (Service Center and LifeTime) without a valid session, the login screen displays  two options to login, **Login with SSO** or **Login with Username and Password**. 
+When accessing any OutSystems management console (Service Center and LifeTime) without a valid session, the login screen displays  two options to login, **Login with SSO** or **Login with Username and Password**.
 
 ![Options to login to LifeTime](images/login-lt.png)
 
@@ -31,7 +31,7 @@ When a user, authenticated using the IdP, attempts to log out, the platform logs
 When a user logs into a Service Studio environment, they are redirected to a browser to complete the login instead of entering  a username and password.
 
 To log into Service Studio using an IdP,  follow these steps:
- 
+
 1. Open **Service Studio**.
 
 1. Click **Connect to Environment**.
@@ -46,7 +46,7 @@ To log into Service Studio using an IdP,  follow these steps:
 
     ![Waiting to log into browser](images/waiting-ss.png)
 
-    At the same time, a new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a popup asking the user to **Open Service Studio**. 
+    At the same time, a new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a popup asking the user to **Open Service Studio**.
 
     ![Open Service Studio](images/open-ss.png)
 
@@ -74,5 +74,5 @@ To log into Integration Studio using an IdP,  follow these steps:
 
    At the same time, a new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a popup asking the user to **Open Integration Studio**.
 
-1. Click **Open Integration Studio** and complete the login process. 
+1. Click **Open Integration Studio** and complete the login process.
 

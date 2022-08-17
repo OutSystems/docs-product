@@ -1,10 +1,10 @@
 ---
 summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
-tag:
+tags:
 locale: en-us
 guid: 6AE899A4-F0F6-4977-AE00-2DBEFD989E69
 app_type: traditional web apps, mobile apps, reactive web apps
-----
+---
 
 # Troubleshooting
 
@@ -32,14 +32,14 @@ Errors might differ depending on the external IdP provider.
 
 ### 400 Bad Request
 
-When starting a login flow, the IdP displays a 400 Bad Request error. This can happen for one of the following reasons: 
+When starting a login flow, the IdP displays a 400 Bad Request error. This can happen for one of the following reasons:
 * URL for the service is incorrectly configured
 * Client Ids are incorrect
 * Redirect URIs are not configured correctly on the IdP side
 
 #### Issue with Client ID configuration
 
-When there's an issue with the Client ID configuration, the **Application with identifier app id was not found in the directory** error can occur. 
+When there's an issue with the Client ID configuration, the **Application with identifier app id was not found in the directory** error can occur.
 
 This error occurs when connecting through Service Studio and the client ID (or the Client Id for Desktop Tools) is incorrectly set.
 

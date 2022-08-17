@@ -1,10 +1,10 @@
 ---
 summary: OutSystems allows your IT users to authenticate an external IdP via OpenID Connect.
-tag:
+tags:
 locale: en-us
 guid: 7486CF76-C3FC-41E0-B2E9-F6C6512FAB44
 app_type: traditional web apps, mobile apps, reactive web apps
-----
+---
 
 # Generic external identity provider supporting OIDC
 

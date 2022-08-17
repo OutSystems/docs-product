@@ -66,7 +66,7 @@ Environment deployment uses several underlying infrastructure components.
 * A database to store metadata and app data.
 * An OutSystems Platform Server installation.
 
-![Environment architecture](images/infra-options-environment.png)
+![Environment architecture](images/outsystems-environment-architecture-diag.png)
 
 
 ### Application Server
@@ -74,7 +74,7 @@ Environment deployment uses several underlying infrastructure components.
 Each environment has dedicated application servers running multiple
 applications. App deployment is on Microsoft IIS and Windows Server.
 
-![IIS Manager screen](images/infra-options-IIS.png)
+![IIS Manager screen](images/infra-options-diag.png)
 
 At runtime, virtual directories map onto application domains. Multiple
 application domains run in a worker process.
@@ -95,13 +95,13 @@ Distinct environments have distinct catalogs or schemas. Non-production
 environments often share the same database server, so the different schemas
 help maintain separation between them.
 
-![Non-production database environment](images/infra-options-db-non-prod.png)
+![Non-production database environment](images/distinct-environments-catalogs-schemas-diag.png)
 
 You have the flexibility to choose which environments should have dedicated
 database servers. As the best practice, you should deploy dedicated database
 servers in production environments:
 
-![Production database environment](images/infra-options-db-prod.png)
+![Production database environment](images/environment-dedicated-database-diag.png)
 
 
 #### Integration with external databases
@@ -223,7 +223,7 @@ environment with a dedicated server, database catalogs, and a central console.
 * **OutSystems SaaS tools** - that support optional functionality and
 accelerate app development.
 
-![Infrastructure options diagram](images/infra-options-infra.png)
+![Infrastructure options diagram](images/outsystems-infrastructure-architecture-diag.png)
 
 ### Pipelines
 
@@ -277,7 +277,7 @@ creates workflows to build apps for task management and automation.
 Builder](https://www.outsystems.com/platform/experience-builder/): prototype
 pixel-perfect mobile applications and turn them into production-ready apps.
 
-![Optional infrastructure tools diagrams](images/infra-options-tools.png)
+![Optional infrastructure tools diagrams](images/outsystems-saas-tools-diag.png)
 
 The complete OutSystems network requirements are
 [here](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_network_requirements).
@@ -307,7 +307,7 @@ These apps **share a simple life cycle**, so three environments and a single
 pipeline suit the needs. They aren’t mission-critical, so a high-availability
 setup is unnecessary.
 
-![Basic infrastructure options diagrams](images/infra-options-basic.png)
+![Basic infrastructure options diagrams](images/basic-edition-infrastructure-diag.png)
 
 For this setup, use these underlying servers:
 
@@ -339,7 +339,7 @@ expected usage. A mission-critical application translates to a high
 availability infrastructure, so the distribution of front-ends is between two
 data centers, and the database has a stand-by replica.
 
-![Standard infrastructure options diagram](images/infra-options-standard.png)
+![Standard infrastructure options diagram](images/standard-edition-infrastructure-diag.png)
 
 As a result, this factory required:
 
@@ -374,7 +374,7 @@ pipelines. One of the pipelines needs two front ends in Production, the other
 four front ends. The pipelines may require **further scaling** in the future.
 Any **specific data access rules** execute in one of the pipelines.
 
-![Enterprise infrastructure options diagram](images/infra-options-enterprise1.png)
+![Enterprise infrastructure options diagram](images/enterprise-edition-infrastructure-diag.png)
 
 For this infrastructure, two pipelines are necessary:
 
@@ -419,7 +419,7 @@ Deployment can be in a self-managed infrastructure, your data center, or a
 public cloud. You manage the runtime application server (IIS), and the operating
 system in these scenarios.
 
-![Deployment options responsibilities](images/infra-options-deploy.png)
+![Deployment options responsibilities](images/deployment-options-diag.png)
 
 Both OutSystems Cloud and self-managed environments build on the same reliable
 technology and components described in this document.
@@ -427,3 +427,4 @@ technology and components described in this document.
 Learn more about deploying infrastructure on OutSystems Cloud here:
 
 [![OutSystems Cloud](images/infra-options-cloud.png)](https://success.outsystems.com/Support/Enterprise_Customers/Infrastructure_architecture_and_deployment_options/Deploy_an_infrastructure_on_OutSystems_Cloud)
+

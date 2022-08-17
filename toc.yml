@@ -902,7 +902,7 @@
         - href: managing-the-applications-lifecycle/manage-it-teams/allow-managers-to-handle-permissions-of-it-teams.md
         - href: managing-the-applications-lifecycle/manage-it-teams/allow-external-db-integration.md
         - href: managing-the-applications-lifecycle/manage-it-teams/find-out-the-permissions-of-it-users.md
-        
+               
     - href: managing-the-applications-lifecycle/secure-the-applications/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md
@@ -912,6 +912,16 @@
         - href: managing-the-applications-lifecycle/secure-the-applications/protection-against-brute-force-attacks.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-https-by-enabling-ssl.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md
+        - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/intro.md
+        - topics:
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-activate.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-configure.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-azure.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-okta.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-lifetime.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-general.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-authentication-provider.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-errors.md
         - href: managing-the-applications-lifecycle/secure-the-applications/implement-an-authentication-plugin.md
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md

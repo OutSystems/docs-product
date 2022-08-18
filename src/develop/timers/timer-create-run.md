@@ -67,6 +67,7 @@ To use the `Wake<Timer Name>` built-in action in your logic, do the following:
 1. In the Process tab, expand the Timer element.
 1. Drag the `Wake<Timer Name>` action and use it in your logic.
 
+![use wake timer action](images/wake-timer-ss.png)
 
 ### Run a Timer in Service Center
 

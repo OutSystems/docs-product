@@ -162,7 +162,7 @@ Set of buttons from which the user can select a single option.
 </tbody>
 </table>
 
-## Notes
+## Note
 
 <p>When used inside List Records or Table Records, you must manually add the attribute Name for each radio button that is part of a Button Group so that the platform binds them correctly:</p> 
 <br/>

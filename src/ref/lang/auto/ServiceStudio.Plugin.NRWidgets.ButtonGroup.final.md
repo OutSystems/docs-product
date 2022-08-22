@@ -164,7 +164,7 @@ Set of buttons from which the user can select a single option.
 
 ## Note
 
-<p>When used inside List Records or Table Records, you must manually add the attribute Name for each radio button that is part of a Button Group so that the platform binds them correctly:</p> 
+<p>When used inside List Records or Table Records, you must manually add the attribute name for each radio button that is part of a Button Group so that the platform binds them correctly:</p> 
 <br/>
 
 ![RadioButton2022-08-01_17-45-57](https://user-images.githubusercontent.com/29493222/182202878-60b13063-fa8b-4c14-b61f-8447b1f1e9bd.png)

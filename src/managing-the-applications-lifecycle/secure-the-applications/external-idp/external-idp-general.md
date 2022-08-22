@@ -55,6 +55,16 @@ To integrate OutSystems Development Tools, follow these steps:
 
     * ``servicestudiox11://auth``
 
+    * ``https://experiencebuilder.outsystems.com/Authentication/OIDC_Callback``
+
+    * ``https://workflowbuilder.outsystems.com/Authentication/OIDC_Callback``
+
+    * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback`` 
+
+    * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager’s URI:
+        *   ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``
+
+
 1. **Sign-out redirect URIs**:
 
     * ``servicestudio://auth``

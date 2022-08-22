@@ -46,7 +46,7 @@ For more information about the supported databases and the systems that are cert
 
 * An external database integration created in Integration Builder only supports one database, catalog, or schema at a time. If you require various tables or collections from different databases, catalogs, or schemas, you must create several integrations.
 
-* It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description.
+* It's not possible to define the following fields at attribute level: data types, length, mandatory, autonumber, delete rule, and description.
 
 * It's not possible to manually define identifiers.
 

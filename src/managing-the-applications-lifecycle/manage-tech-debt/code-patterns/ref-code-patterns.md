@@ -381,18 +381,6 @@ CSS and HTML should be kept separate. Inline styles are inefficient, harder to m
 
 CSS should be centrally managed in the application style guide to avoid loading a large number of CSS files. If the CSS is specific to one screen or web block, define your CSS at the screen/web block level instead of in extended properties.
 
-### Dynamic inline parameter
-
-Dynamic expression used in an inline expanded Query Parameter of a SQL Query.
-
-**Impact**  
-
-Query Parameters that are expanded inline and change too often don't allow the database to optimize execution plans since it keeps generating new queries
-
-**How to fix**  
-
-Change query to remove the frequently changing inline parameters. Consider selecting specialized queries depending on the parameter or using sub-queries or temporary tables.
-
 ### Site Property update
 
 Site Property is being updated using Application logic.
@@ -704,13 +692,13 @@ Avoid enabling the Expand Inline property of a SQL Query Parameter since it coul
 
 OutSystems uses prepared statements by default to execute the SQL queries that you define in SQL elements. These prepared statements contain SQL parameters or placeholders, for which you define values before executing the SQL statement. These parameters can only store a value of a given type and not arbitrary SQL fragments.
 
-If you enable the Expand Inline property for a Query Parameter, its value will no longer be handled as a SQL parameter value. Instead, the Query Parameter value will be included in the SQL statement without first being evaluated and turned into a literal by the SQL engine. This means that you can use the Query Parameter to insert SQL fragments in the full SQL statement dynamically, but it also means that your end-users may be able to exploit this fact if you do not take the necessary precautions.
+If you enable the Expand Inline property for a Query Parameter, its value will no longer be handled as a SQL parameter value. Instead, the Query Parameter value will be included in the SQL statement without first being evaluated and turned into a literal by the SQL engine. This means that you can use the Query Parameter to insert SQL fragments in the full SQL statement dynamically, but it also means that your end-users may be able to exploit this fact if you don't take the necessary precautions.
 
-OutSystems will use an SQL parameter for every Query Parameter that has the Expand Inline property disabled. This property is disabled by default, providing you default protection against SQL injection attacks.
-
-It's difficult to use properly expanded parameters inline since you need to make sure that any user input is properly escaped before using it in an SQL statement. If you can, avoid enabling this property altogether.
+The use of expanded inline parameters that change too often also increases your technical debt, as it doesn’t allow the database to optimize execution plans. The database keeps generating new queries, bringing the performance down.
 
 **How to fix**  
+
+OutSystems will use a SQL parameter for every Query Parameter that has the Expand Inline property disabled. This property is disabled by default, providing you default protection against SQL injection attacks. It's difficult to use properly expanded parameters inline since you need to make sure that any user input is properly escaped before using it in a SQL statement. If you can, avoid enabling this property altogether.  
 
 OutSystems provides ways of implementing common use cases without enabling the Expand Inline property and provides recommendations when using the Expand Inline. For more information, see [SQL Injection Warning ](../../../ref/errors-and-warnings/warnings/sql-injection-warning.md).
 

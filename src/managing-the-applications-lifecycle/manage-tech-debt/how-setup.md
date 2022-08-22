@@ -65,7 +65,9 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
     ![](images/setup-infrastructure-activation-code.png)
 
     <div class="info" markdown="1">
+
     If the infrastructure is already registered in Architecture Dashboard, a message lets you know and you are asked to **Associate your IT user to a registered infrastructure**.
+
     </div>
 
 1. Check the information and select **Register**.
@@ -103,7 +105,9 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 1. After you are redirected to LifeTime, log in with your IT user.
 
     <div class="info" markdown="1">
+
     If your infrastructure uses **OutSystems 10**, go to [How to configure Architecture Dashboard probes in OutSystems 10](how-probes-o10.md) and follow the procedure.
+
     </div>
 
 1. Configure the **Code analysis** probe by selecting the development environment as the **Target environment**. 
@@ -111,7 +115,9 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
     ![](images/setup-probes-configure-lt.png)
 
     <div class="info" markdown="1">
+
     To change the target environment of a code analysis probe, contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data from Architecture Dashboard. Do this before installing probes in a new environment or deleting probes from an existing environment to avoid data inconsistencies. Once existing data is deleted from Architecture Dashboard, follow the setup procedure in this article to configure a new target environment.
+    
     </div>
 
 1. Optional: If you want the Architecture Dashboard plugin to use a forward proxy while connecting to the Architecture Dashboard SaaS, in the **Proxy configuration** section, select **show request information**, and enter the proxy URL and the credentials.

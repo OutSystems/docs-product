@@ -126,7 +126,7 @@ To finalize and activate the Okta configuration for both Consoles and Developmen
 
     The server settings are displayed.
 
-    ![URI metadata](images/metadata-ok.png)
+    ![URI metadata](images/metadata-ok.png) 
 
 1. Copy the **Metadata URI** link.
 

@@ -11,7 +11,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 Applications secured with authentication can be subject to brute force attacks that systematically try to guess user passwords. OutSystems provides a built-in protection mechanism that allows taking countermeasures against these attacks: 
 
 User-level Attack
-:   The attack is perpetrated with a user from a specific IP address. In this case, that user is blocked from logging in from the attacker IP address. The legitimate user can still login from the original IP address that was not used for the attack. 
+:   The attack is perpetrated with a user from a specific IP address. In this case, that user is blocked from logging in from the attacker IP address. The legitimate user can still login from an IP address that was not used for the attack. 
 
 IP-level Attack
 :   The attacker has a list of users and tries to guess their passwords from a specific IP address. In this case, the attacker IP address is blocked.  

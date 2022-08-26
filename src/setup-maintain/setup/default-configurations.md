@@ -40,10 +40,8 @@ During the installation, OutSystems registers a set of services on the server. Y
 
 |Service|Executable C:\Program Files\OutSystems\Platform Server|Configuration C:\Program Files\OutSystems\Platform Server|Account|
 |-------|-------|-------|-------|
-|SMS Connector|SmsConnector.exe|SmsConnector.exe.config|Local System account|
 |Compiler|CompilerService.exe|CompilerService.exe.config|OSControllerUser|
 |DeployService|DeployService.exe|DeployService.exe.config|Local System account|
-|Log|LogServer.exe|LogServer.exe.config|Local System account|
 |Scheduler|Scheduler.exe|Scheduler.exe.config|OSSchedulerUser|
 
 Note: When using SQL Server as the platform database with Windows Authentication, OutSystems services (OutSystems Deployment Controller Service, OutSystems Deployment Service, OutSystems Scheduler Service) run under the configured Windows account.

@@ -41,4 +41,4 @@ If the action associated with a Timer does not end within a pre-defined time, th
 
 ## Sessions in Timers
 
-Asynchronous logic, such as Timers and Process Activities, run in a separate session. All session variables will keep their default value when executing an action associated with a timer or process activity.
+Asynchronous logic, such as Timers and Process Activities, run in a separate session. All session variables will start with their default value when executing an action associated with a timer or process activity.

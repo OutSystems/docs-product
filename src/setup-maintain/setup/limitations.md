@@ -8,9 +8,9 @@ locale: en-us
 
 There are some feature differences between the cross-platform and Windows-only versions of Service Studio. The following features are currently unavailable in the cross-platform Service Studio:
 
-* **Top tabs navigation** using the keyboard is not possible in macOS.
+* **Top tabs navigation** using the keyboard is not possible in Mac OS.
 
-* The **Manage Dependencies** keyboard shortcut is not available (Mac OS only).
+* The **Manage Dependencies** keyboard shortcut is not available in Mac OS.
 
 * In the Expression Editor, when an autocomplete item is selected, the **Scope Tree selection is not synchronized** with the selected item. 
 
@@ -29,6 +29,4 @@ There are some feature differences between the cross-platform and Windows-only v
     * Navigation between widgets and text widgets using the arrow keys is not possible.
     * When editing Blocks, there is no artificial gray padding around them to visually differentiate them from Screens. 
     * When editing screen templates, there is no information banner available.    
-   
-
-
+ 

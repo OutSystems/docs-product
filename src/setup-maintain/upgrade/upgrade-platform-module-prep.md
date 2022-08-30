@@ -148,4 +148,4 @@ After the modules preparation finishes, you can access the latest preparation re
 
 # Known issues with Progressive Upgrades { #known-issues }
 
-If you are directly upgrading from a version prior to Platform Server 11.10 to a version that includes the Progressive Upgrades feature, we recommend that you perform a Publish All instead. This is due to an issue found when running applications compiled in previous versions and that are using new configurations added in Platform Server 11.10. This combination is proven to cause High CPU usage. To prevent this from happening, a Publish All is recommended.
+If you are directly upgrading from a version prior to Platform Server 11.10 to a version that includes the Progressive Upgrades feature, we recommend that you perform a Publish All instead. This is due to an issue found when running applications compiled in previous versions and that are using new configurations added in Platform Server 11.10. This combination has proven to cause High CPU usage. As a workaround, a Publish All is recommended.

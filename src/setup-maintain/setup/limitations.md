@@ -12,6 +12,8 @@ There are some feature differences between the cross-platform and Windows-only v
 
 * The **Manage Dependencies** keyboard shortcut is not available in Mac OS.
 
+*  The Multilingual option to Export Language Resources to resX is not available.
+
 * In the Expression Editor, when an autocomplete item is selected, the **Scope Tree selection is not synchronized** with the selected item. 
 
 * On the Widget tree, **the Style class property value is not used as the default name** when there’s no widget name defined.

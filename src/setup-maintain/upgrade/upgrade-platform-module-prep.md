@@ -146,6 +146,8 @@ If the new progressive modules preparation hasn’t been enabled in your environ
 After the modules preparation finishes, you can access the latest preparation report going to the Service Center's screen `https://<your_environment>/ServiceCenter/PrepareModules.aspx`.
 
 
-## Known issues with Progressive Upgrades { #known-issues }
+## Known issues with Modules Preparation { #known-issues }
 
-If you are directly upgrading from a version prior to Platform Server 11.10 to a version that includes the Progressive Upgrades feature, we recommend that you perform a Publish All instead. This is due to an issue found when running applications compiled in previous versions and that are using new configurations added in Platform Server 11.10. This combination has proven to cause High CPU usage. As a workaround, a Publish All is recommended.
+If you are directly upgrading from a Platform Server version prior to 11.10 to a version that includes the Flexible Upgrades feature (from Platform Server 11.12.0 onwards), we recommend that you perform a Publish All instead. 
+
+This is due to an issue found when running applications compiled in previous versions and that are using new configurations added in Platform Server 11.10. This combination has proven to cause High CPU usage. As a workaround, a Publish All is recommended.

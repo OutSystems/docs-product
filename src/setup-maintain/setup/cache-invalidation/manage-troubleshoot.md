@@ -121,6 +121,22 @@ If this doesn’t solve the issue, follow the next steps in order:
 
 1. Retry the "Upgrade cache invalidation service" operation.
 
+### High availability issues
+
+Check the issues listed below if you find any issues while creating or upgrading Cache Invalidation Service with high availability. See if one matches your current problem and follow the troubleshooting steps in order:
+
+#### ERLANG_HOME not set correctly
+
+When upgrading RabbitMQ and Erlang, when you try to start the node you may encounter this error.
+
+   A) Make sure the system variable “ERLANG_HOME” is setted correctly. The path should lead you to a directory that contains the bin folder. If it does not, please fix the path.
+
+    If it is, do the following:
+
+    1. Restart your machine.
+
+    1. Try to start the node again.
+    
 
 ### Common issues
 

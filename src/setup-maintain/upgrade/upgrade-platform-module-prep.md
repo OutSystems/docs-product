@@ -148,8 +148,8 @@ After the modules preparation finishes, you can access the latest preparation re
 
 ## Known issues with Modules Preparation { #known-issues }
 
-If you are directly upgrading from a Platform Server version prior or equal to 11.10 to a version that includes the Flexible Upgrades feature (from Platform Server 11.12.0 onwards), we recommend that you publish all your applications instead. 
+If you are directly upgrading from a Platform Server version prior or equal to 11.10.0 to a version that includes the Flexible Upgrades feature (from Platform Server 11.12.0 onwards), we recommend that you publish all your applications instead. 
 
-This is due to an issue found when running applications compiled in previous versions and are using new configurations added in Platform Server 11.10. This combination has proven to cause High CPU usage on Frontends until all the applications are republished in the new version.
+This is due to an issue found when running applications compiled in previous versions and are using new configurations added in Platform Server 11.10.0. This combination has proven to cause High CPU usage on Frontends until all the applications are republished in the new version.
 
 As a workaround, publishing all your applications is recommended.

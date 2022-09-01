@@ -13,7 +13,7 @@ You can use Integration Builder to integrate your apps with the following extern
 * Relational databases:
 
     * DB2 iSeries
-    * PostgreSQL and Aurora PostgreSQL
+    * PostgreSQL, Aurora PostgreSQL and Azure PostgreSQL
     * MySQL
     * Oracle
     * Azure SQL and SQL Server
@@ -32,7 +32,7 @@ For more information about the supported databases and the systems that are cert
 
     * For integrations with MongoDB your environments must use Platform Server 11.7.2 or later.
     * For integrations with DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server, you need Platform Server 11.14.0 or later.
-    * For integrations with PostgreSQL and Aurora PostgreSQL, you need Platform Server 11.15.0 or later.
+    * For integrations with PostgreSQL, Aurora PostgreSQL and Azure PostgreSQL you need Platform Server 11.15.0 or later.
 
 * All infrastructure servers must be able to connect to the external database.
 

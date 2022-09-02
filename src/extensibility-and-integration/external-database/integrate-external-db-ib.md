@@ -22,9 +22,13 @@ You can use Integration Builder to integrate your apps with the following extern
 
     * MongoDB
 
-Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
+<div class="info" markdown="1">
 
-For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup-maintain/setup/system-requirements.md).
+For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems in the system requirements article](../../setup-maintain/setup/system-requirements.md).
+
+</div>
+
+Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
 
 ## Prerequisites
 

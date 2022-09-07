@@ -32,7 +32,7 @@ To edit entity's data in Service Studio, ensure the following:
 
 * You're connected to an environment with [Purpose](../../../setup-maintain/setup/environment-config.md#purpose) set as **Development** or **Non-Production**.
 
-* Your IT user has [**Change and Deploy Applications**](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) or higher for the module that contains the entity you are editing.
+* Your IT user has [**Change and Deploy Applications**](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md) or higher for the module that contains the entity you are editing. This does not apply to **Platform Server release 11.14.1** or later.
 
 *  If your environment uses [Multiple Database Catalogs and Schemas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Multiple_Database_Catalogs_and_Schemas), the entity must belong to a module published to the **(Main)** database catalog.
 

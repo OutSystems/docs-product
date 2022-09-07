@@ -65,7 +65,7 @@ The following changes made in the producer do not have impact on the consumer mo
 
 |**Scenario**|**Elements**|
 |------------|------------|
-|Add an optional Input Parameter<br/>Change a mandatory Input Parameter to optional<br/>Delete an Input Parameter<br/>Reorder Input Parameters|Server Action, Service Action, Web Block (Traditional Web only), Web Screen (Traditional Web only).<br/>:warning:This scenario **doesn't apply to Blocks and Screens in Mobile and Reactive Web Apps**. When performing one of the listed operations over an Input Parameter of a Block or a Screen in a Mobile or Reactive Web App, the element’s signature is **incompatible** with the information known by the consumer module.|
+|Add an optional Input Parameter<br/>Change a mandatory Input Parameter to optional<br/>Delete an Input Parameter<br/>Reorder Input Parameters|Server Action, Service Action, Web Block (Traditional Web only), Web Screen (Traditional Web only).<br/>**Note:** This scenario **doesn't apply to Blocks and Screens in Mobile and Reactive Web Apps**. When performing one of the listed operations over an Input Parameter of a Block or a Screen in a Mobile or Reactive Web App, the element’s signature is **incompatible** with the information known by the consumer module.|
 |Add an Output Parameter<br/>Delete an unused Output Parameter|Server Action, Service Action|
 |Change a mandatory Attribute to optional<br/>Delete an unused Attribute<br/>Reorder Attributes|Entity (Database and Local Storage), Static Entity, Structure|
 |Add an optional Attribute (any data type)|Entity (Database and Local Storage), Static Entity|

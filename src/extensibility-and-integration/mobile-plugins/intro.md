@@ -15,8 +15,8 @@ Applies only to Mobile Apps.
 </div>
 
 Plugins provide important functionalities to native mobile apps, letting you use many of the hardware capabilities of mobile devices. You can add notifications, use camera or global positioning services, read QR codes, and more.
- 
-## The list of supported mobile plugins 
+
+## The list of supported mobile plugins
 
 The table shows the OutSystems-supported mobile plugins that you can find in the Forge repository. Some of them are already supported when distributing your app as a Progressive Web App (PWA).
 
@@ -42,6 +42,7 @@ Plugin | Description | Supported in PWA
 [Local Notifications](<http://www.outsystems.com/forge/component/1541/local-notifications-plugin/>) | Send app notifications to the device when the application isn't running in the foreground. | —
 [Location](<https://www.outsystems.com/forge/component/1395/location-plugin/>) | Access the GPS capabilities of the user's device to show, for example, the present latitude, longitude, and  altitude. | Yes
 [OneSignal Notifications](<http://www.outsystems.com/forge/component/2119/onesignal-plugin/>) | Push notifications using OneSignal, with deep-linking and actions. | —
+[Payments](https://www.outsystems.com/forge/component-overview/13678/payments-plugin) | Allows addition of payments experience using Apple Pay and Google Pay | —
 [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706) | Firebase-based plugin that lets you understand how you can improve the performance of your app.  | —
 [QR/Barcode scanner](<https://www.outsystems.com/forge/component/1403/barcode-plugin/>) | Scan barcodes and QR codes. | —
 [Social Login Mobile](<https://www.outsystems.com/forge/component-overview/7895/social-login-mobile>) | Lets you set a login experience that resorts to an external provider, namely Google, Apple, Facebook, or LinkedIn. | Yes
@@ -52,7 +53,7 @@ Plugin | Description | Supported in PWA
 
 When working with the plugins:
 
-* Use the plugin that supports iOS or Android, depending on your target platform. The app generation fails if you use a plugin that isn't supported on the target platform. 
+* Use the plugin that supports iOS or Android, depending on your target platform. The app generation fails if you use a plugin that isn't supported on the target platform.
 * Each time you add, remove, or modify the plugin in an app, OutSystems [rebuilds the native shell](<../../deliver-mobile/mobile-app-update-scenarios.md#Situations_When_the_User_Must_Install_a_New_Build>) which you then have to distribute to the end users for installation.
 * [Include the plugin license](<../../deliver-mobile/compliance-with-third-party-licenses.md#Include_the_Third_Party_Licenses_Used_by_Plug-ins_or_Components>) in your app to respect the license agreements of that plugin. These license agreements are usually placed in the About page of the app that uses them.
 
@@ -72,7 +73,7 @@ To install a supported plugin from Forge:
 
     ![Install plugin from Forge](images/forge-install.png?width=700)
 
-1. Once the installation finishes, [reference the plugin in your module](#referencing-a-plugin). 
+1. Once the installation finishes, [reference the plugin in your module](#referencing-a-plugin).
 
 <div class="info" markdown="1">
 
@@ -84,9 +85,9 @@ Find the plugin documentation in the table of content next to this page, or chec
 
 Referencing an [installed plugin](#installing-a-plugin) lets you use the plugin functionalities in the app logic. Follow these steps to reference a mobile plugin:
 
-1. In Service Studio, open **Manage Dependencies** (**Ctrl+Q**). 
-   
-1. Enter the plugin name in the **Search producers** field. If the plugin name is **Camera Plugin**, try searching for `CameraPlugin`. 
+1. In Service Studio, open **Manage Dependencies** (**Ctrl+Q**).
+
+1. Enter the plugin name in the **Search producers** field. If the plugin name is **Camera Plugin**, try searching for `CameraPlugin`.
 
 1. In the results, in the producers list, select the plugin.
 

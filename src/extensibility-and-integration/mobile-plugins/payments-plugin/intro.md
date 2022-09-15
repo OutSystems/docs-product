@@ -14,10 +14,11 @@ Applies only to Mobile Apps.
 
 </div>
 
-Use the Payments Plugin to let users complete payments using Apple Pay and
-Google Pay. The plugin allows users to provide details of the payment, the
-merchant's information, the amount and currency of the transaction, and billing
-contacts.
+Use the [Payments
+Plugin](https://www.outsystems.com/forge/component-overview/13678/payments-plugin)
+to let users complete payments using Apple Pay and Google Pay. The plugin
+allows users to provide details of the payment, the merchant's information, the
+amount and currency of the transaction, and billing contacts.
 
 After adding the plugin to your app, your logic should verify if the plugin is
 available, in your app, at run time. Use the

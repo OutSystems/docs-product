@@ -255,6 +255,11 @@
                     - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                     - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md
+            - topics:
+                - href: develop/ui/patterns/mobile/ui-pattern-extensibility/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/ui-pattern-extensibility/ext-provider-client-actions.md
+                    - href: develop/ui/patterns/mobile/ui-pattern-extensibility/ext-provider-instance-java.md
             - href: develop/ui/patterns/web/intro.md
             - topics:
                 - href: develop/ui/patterns/web/content/intro.md

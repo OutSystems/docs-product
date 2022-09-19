@@ -85,7 +85,7 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
     * **Handler** to the callback of type **Object** created in the JavaScript node.
 
-    ![Set the client action properties](<images/clientaction-props-ss.png>)
+        ![Set the client action properties](<images/clientaction-properties-ss.png>)
 
 1. Click **1-Click Publish**.
 

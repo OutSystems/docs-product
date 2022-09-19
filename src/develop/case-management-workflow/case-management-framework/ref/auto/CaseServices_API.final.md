@@ -21,7 +21,7 @@ You can also use this API to check information for a case, for example:
 * Check available Statuses.
 * Check Activity Counters.
 
-## Summary
+## Summary 
 
 Action | Description
 ---|---

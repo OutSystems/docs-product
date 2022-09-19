@@ -582,7 +582,7 @@
             - href: develop/case-management-workflow/workflow-builder/faq.md
             - href: develop/case-management-workflow/workflow-builder/troubleshoot.md
             - href: develop/case-management-workflow/workflow-builder/ref/error-ref.md
-        # Case management framework
+        # Case management framework 
         - href: develop/case-management-workflow/case-management-framework/intro.md
         - topics:
             - href: develop/case-management-workflow/case-management-framework/creating-cmfapp.md

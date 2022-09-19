@@ -16,7 +16,7 @@ For example, this API is used to configure the following entities related to the
 * StateMachine.
 * Rules.
 
-## Summary 
+## Summary
 
 Action | Description
 ---|---

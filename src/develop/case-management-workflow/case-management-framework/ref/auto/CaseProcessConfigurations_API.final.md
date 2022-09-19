@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 The Case Process Configurations API includes actions used to configure the underlying BPT process associated with a case. Use this API to configure SLAs associated with a Process or with an Activity from a Process.
 
-## Summary 
+## Summary
 
 Action | Description
 ---|---

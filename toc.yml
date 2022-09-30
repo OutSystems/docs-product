@@ -967,6 +967,7 @@
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/tech-debt-formula.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-ignore-modules.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-module-classification.md

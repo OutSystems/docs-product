@@ -1,9 +1,18 @@
 ---
 summary: This article describes the steps to deploy an application into a highly loaded OutSystems farm environment. 
 tags: support-Infrastuture_Architecture; support-maintenance
+locale: en-us
+guid: 525adee0-1259-458e-bc2d-b1f1d178a832
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Balanced application deployment
+
+<div class="info" markdown="1">
+
+This guide applies only to self-managed installations. It doesn't apply to OutSystems Cloud, where OutSystems provides the load balancing mechanism.
+
+</div>
 
 OutSystems hot-deploys the new versions of your applications with no downtime. At any time, it's possible to [rollback to a previous version](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Rollback_to_a_Previous_Version) if, for example, critical bugs are detected.
 
@@ -75,8 +84,7 @@ Do the following on each front-end server:
 
 <div class="info" markdown="1">
  
-Don’t start the OutSystems Scheduler Service until instructed to do so.
- 
+Don’t start the OutSystems Scheduler Service until instructed to do so. 
 </div>
 
 **Step 2. In the Load Balancer, set the traffic to the Loaded front-ends**

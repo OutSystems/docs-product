@@ -1,6 +1,9 @@
 ---
 summary: Refresh the Web Service to get the latest changes in a consumed SOAP Web Service or to modify the list of consumed methods in Service Studio.
 tags: support-Integrations_Extensions
+locale: en-us
+guid: 68e18433-b490-4ba2-9269-0261f6b656fd
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Refresh a SOAP Web Service
@@ -9,25 +12,17 @@ To change the services consumed  from a SOAP Web Service or to modify the list o
 
 1. In the **Logic** tab, open the **Integrations** folder.
 
-1. Under **Integrations** > **SOAP**, right-click the SOAP Web Service you want to refresh and select **Refresh SOAP Web Service**. In this example, the Web Service name is **SoccerTeam**.
+1. Under **Integrations** > **SOAP**, right-click the SOAP Web Service you want to refresh and select **Refresh SOAP Web Service...**.
 
-    ![](images/soap-refresh-menu.png)
+    ![Refreshing a SOAP web service from the context menu](images/soap-refresh-menu-ss.png)
 
-1. In the Refresh SOAP Web Service popup, click **Yes**. 
-
-    ![](images/soap-refresh-confirm.png)
-
-1. Type or confirm the URL or local file path for the WSDL, and then click **Consume**. Service Studio re-reads the WSDL and displays a selectable list of available methods to consume.
-
-    ![](images/soap-refresh-WSDL.png)
+1. Confirm the URL or local file path for the WSDL, and then click **Select methods**. Service Studio re-reads the WSDL and displays a selectable list of available methods to consume.
 
 1. Select all methods you want to consume. Note that:
 
     * The list of methods you select replaces the list you consumed previously; be sure to select all methods you want to consume, even if they haven't changed. 
-    * Refreshing does NOT wipe out authentication and On Before Request settings. These settings are not impacted when.       
-    * Methods no longer in the WSDL have an **(outdated)** label; these will no longer exist in the service.  
-    * New methods include a **(new)** label. 
+    * Refreshing does NOT wipe out authentication and On Before Request settings. These settings are not impacted when.
+    * Methods no longer in the WSDL have an **(Deleted)** label; these will no longer exist in the service.  
+    * New methods include a **(New)** label. 
 
-    ![](images/soap-refresh-methods.png)
-
-1. Click **Finish** to consume the selected methods. In this example, only the **AllPlayersNames** method is consumed. 
+1. Click **Confirm** to consume the selected methods.

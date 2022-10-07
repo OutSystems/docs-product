@@ -1,6 +1,9 @@
 ---
 summary: Check how to create an integration using Integration Builder and how to configure it after deployment.
-tags: article-page;doc-procedure
+tags: article-page
+locale: en-us
+guid: 6c59c61d-f34b-4ef4-8875-0ea760341cd5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Integration Builder
@@ -51,6 +54,12 @@ On your first login, Integration Builder greets you with an onboarding guide. To
 1. Select the service provider that's the data source of your integration (for example, SAP).
 
     ![Choosing a provider in Integration Builder](images/choose-provider-ib.png)
+
+    <div class="info" markdown="1">
+
+    If you are integrating with a **external database**, check out [how to Integrate with an external database using Integration Builder ](../external-database/integrate-external-db-ib.md)
+
+    </div>
 
 1. Follow the wizard steps to configure the integration. These steps vary according to the integration you're creating. They can be the following:
 

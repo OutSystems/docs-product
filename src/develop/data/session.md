@@ -1,9 +1,18 @@
 ---
 summary: Learn how OutSystems uses Sessions to maintain information about the previous web requests the end user made.
 tags: runtime-traditionalweb; support-application_development
+locale: en-us
+guid: a6784b12-4617-437f-b5e5-ec8c8b579006
+app_type: traditional web apps
 ---
 
 # Sessions in Web Applications
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 OutSystems web applications are stateless: each request an end user makes to the server is not aware of the previous requests.
 

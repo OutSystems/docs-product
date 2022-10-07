@@ -1,9 +1,18 @@
 ---
 summary: OutSystems collects metrics of how applications are performing, to allow you to monitor and troubleshoot runtime issues. Learn what metrics are collected and how.
 tags: support-Application_Lifecycle; support-Integrations_Extensions; support-monitoring; support-monitoring-overview; support-monitoring-featured; runtime-traditionalweb
+locale: en-us
+guid: c9bafed1-f783-47d9-9f02-fa30a53c9ae6
+app_type: traditional web apps
 ---
 
 # How Application Performance Is Measured
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 OutSystems collects metrics of how applications are performing to allow you to monitor and troubleshoot runtime issues. The Outsystems Platform uses [LifeTime Analytics](troubleshoot-the-performance-of-an-application.md) to measure the end user experience based on industry-standard indicators and identify bottlenecks at different levels: client (eg. operating systems), network (eg. network types) and server (eg. business logic elements). This article describes what is collected and how.
 

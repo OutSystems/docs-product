@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Displays a master list and the details for the currently selected item.
+locale: en-us
+guid: d6387a11-92d7-4075-874c-7f538bb21e32
+app_type: mobile apps, reactive web apps
 ---
 
 # Master Detail
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 You can use the Master Detail Pattern to display a master list of items and their related details, for example, a list of employees and their corresponding details.
 
@@ -17,7 +26,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
     ![](images/masterdetail-5-ss.png)
     
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -61,7 +70,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
     ![](images/masterdetail-7-ss.png)
 
-1. From the Toolbox, add the **Assign** logic to the client action, and from the  **Value** drop-down, select the Expression Editor. Navigate to and double-click the current user Id and click **Done**.
+1. From the Toolbox, add the **Assign** logic to the client action, and from the  **Value** drop-down, select the Expression Editor. Navigate to and double-click the current user Id and click **Close**.
 
     ![](images/masterdetail-8-ss.png)
 
@@ -79,7 +88,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
     ![](images/masterdetail-11-ss.png)
 
-1. To add a database entity, click on the screen, select the relevant entity, and click **OK**. In this example, we use the **User** entity.
+1. To add a database entity, click on the screen, select the relevant entity, and click **Select**. In this example, we use the **User** entity.
 
 1. On the **GetUserDetails** screen, click **Filters**, then click **Add Filter**.
 
@@ -101,11 +110,11 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property | Description |
-|---|---|
-| LeftPercentage (Decimal): Optional | Set the LeftContent width using a percentage. Default value is 50%. |
-| OpenedOnPhone (Boolean): Optional |  Variable to hold if the detail is opened on a phone. Default value is False. |
-| Height (Text): Optional | Set the height of the widget (in pixels or %). By default, it is the height of the window, minus the title and header. |
+| Property                           | Description                                                                                                            |
+|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| LeftPercentage (Decimal): Optional | Set the LeftContent width using a percentage. Default value is 50%.                                                    |
+| OpenedOnPhone (Boolean): Optional  | Variable to hold if the detail is opened on a phone. Default value is False.                                           |
+| Height (Text): Optional            | Set the height of the widget (in pixels or %). By default, it is the height of the window, minus the title and header. |
 
 ## Compatibility with other patterns
 

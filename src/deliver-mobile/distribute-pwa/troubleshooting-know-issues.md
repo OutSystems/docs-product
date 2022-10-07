@@ -1,17 +1,20 @@
 ---
 summary: Troubleshooting tips and notes. Know issues.
 tags: support-application_development; runtime-mobile;
+locale: en-us
+guid: 894f3950-7424-4995-9f8b-4e7e9c2645d7
+app_type: mobile apps
 ---
 
 # Troubleshooting and known issues
 
-This document contains information about troubleshooting and known issues.
-
 <div class="info" markdown="1">
 
-The team would love to hear what you think of this document and if it helps you. Please **leave feedback** in the feedback section. If you want to get a reply, select **Yes, you may contact me about this feedback**.
+Applies only to Mobile Apps.
 
 </div>
+
+This document contains information about troubleshooting and known issues.
 
 ## Known issues
 
@@ -67,7 +70,7 @@ There's an iOS bug that prevents PWAs from running correctly in the iOS versions
 
 ### PWA is slow and queries take too long to execute
 
-If your PWA performs poorly and queries take too long to execute, your local storage model might be too complex or the amount of data that the app needs to handle is too high. See [Design a lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage) for recommendations.
+If your PWA performs poorly and queries take too long to execute, your local storage model might be too complex or the amount of data that the app needs to handle is too high. See [Design a lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#lightweight-local-storage) for recommendations.
 
 ### I'm getting "not connected to the environment" error when I enable the PWA
 

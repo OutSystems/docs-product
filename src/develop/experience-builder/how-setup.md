@@ -1,6 +1,9 @@
 ---
-tags: Experience Builder; 
+tags:
 summary: Learn how to set up Experience Builder.
+locale: en-us
+guid: 0d73e561-eeae-4755-af4c-eb4a6a92f6df
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # How to set up Experience Builder
 
@@ -18,7 +21,7 @@ To set up and use Experience Builder your environment must comply with the follo
 
 * Your development environment uses [Platform Server release 11.7.2](https://www.outsystems.com/Downloads/ScreenDetails.aspx?MajorVersion=11&ReleaseId=19414&ComponentName=Platform+Server) or later.
 
-* Your development environment allows communication with Experience Builder by allowing inbound traffic from `https://experiencebuilder.outsystems.com` in **port 443**. The Experience Builder will use the environment's public DNS hostname to communicate. Check [Experience Builder network requirements](../../setup/network-requirements.md#experience-builder) for detailed information.
+* Your development environment allows communication with Experience Builder by allowing inbound traffic from `https://experiencebuilder.outsystems.com` in **port 443**. The Experience Builder will use the environment's public DNS hostname to communicate. Check [Experience Builder network requirements](../../setup-maintain/setup/network-requirements.md#experience-builder) for detailed information.
 
     <div class="info" markdown="1">
 

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 8af78fca-1b14-4d21-a4c6-560929c22322
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Unexpected Entity Warning
 
 Message

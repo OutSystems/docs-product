@@ -1,11 +1,16 @@
 ---
 summary: PATCH method allows a new HTTP method when exposing REST APIs that applies partial modifications to a resource.
+locale: en-us
+guid: f3ab51bb-7226-49f9-a529-a5e485a6952b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # PATCH method on exposed REST services
 
 <div class="info" markdown="1">
-This feature is in [Technical Preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features).
+
+This feature is in [Technical Preview](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features).
+
 </div>
 
 The PATCH method is part of the HTTP protocol and contemplated in REST specifications since the start. 
@@ -17,6 +22,13 @@ This capability allows a new HTTP method when exposing REST APIs, adding to the 
 By definition, the PATCH method applies partial modifications to a resource, making it a lightweight option to PUT. Both methods are equivalent, but semantically, they are different.  
 
 PUT inserts or updates a resource, while PATCH applies a partial update to the resource. Therefore, in terms of usage, PATCH only requires sending the fields to update without affecting or modifying the remaining ones.
+
+## Prerequisites
+
+The following are the prerequisites for the PATCH method on exposed REST services:
+
+* Platform Server 11.12.0  or later.
+* You've activated the [technical preview](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features) PATCH method on exposed REST services in LifeTime in all environments. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
 
 ## Create a PATCH Method
 
@@ -46,9 +58,9 @@ To implement a correct PATCH, define default values in your structure attribute 
 
 1. Go to the intended structure and define a Default Value that won't be sent in runtime to each attribute. 
 
-1. Use, for example, -999999999 to Integer, Long Integer data types or "zzzzzzzzz" to Text, Email data types:
+1. Use, for example, -999999999 to Integer, Long Integer data types or "undefined" to Text, Email data types:
 
-    ![](images/ss-patch-data-types.png?width=900)
+    ![](images/ss-patch-data-types.png)
 
 #### Boolean data type
 
@@ -56,7 +68,7 @@ Booleans are a special case, since there are only two possible values, making it
 
 1. Map Booleans directly to Text. Set the same Default Value as used in the Text data type and set the attribute to isActive:
 
-    ![](images/ss-patch-boolean.png?width=450)
+    ![](images/ss-patch-boolean.png)
 
 1. When checking the condition of a boolean, you need to check if the text values are “false” or “true”.
 

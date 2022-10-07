@@ -1,6 +1,9 @@
 ---
 summary: Deploy an application that depends on other applications to work, thus requiring them to be also deployed in the same environment.
 tags: support-Application_Lifecycle-featured
+locale: en-us
+guid: 3bd09323-cb2b-454a-90b7-341f7c47936e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Deploy an Application with Dependencies

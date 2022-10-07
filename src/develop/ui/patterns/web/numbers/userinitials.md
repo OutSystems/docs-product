@@ -1,13 +1,16 @@
 ---
 tags: runtime-traditionalweb; 
 summary: User Initials display user information in a circular badge.
+locale: en-us
+guid: 079fe985-0d1e-435c-984a-cbd125908f13
+app_type: traditional web apps
 ---
 
 # User Initials
 
 <div class="info" markdown="1">
 
-We’ve been working on this article. Please let us know how useful this new version is by voting.
+Applies only to Traditional Web Apps.
 
 </div>
 
@@ -27,7 +30,7 @@ The following example demonstrates how you can display the initials of the regis
 
     ![](<images/userinitials-11-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -75,11 +78,11 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property |  Description |
-|---|---|
-| Name (Text): Optional  |  The initials that appear inside the badge. Set this to a Data source that contains the value that the badge will display. Common use cases include displaying a value contained in a Variable or the result of an Aggregate (for instance, querying a 'Messages' table for the current user to return the count of new messages). <p>Examples <ul><li>Blank - displays the initials JJ (default value)</li><li>VariableName - displays the value that the variable "VariableName" holds at that time </li><li>ExampleAggregate.Name - displays the names contained in the records returned by the "ExampleAggregate" aggregate execution</li></ul></p> | 
-| Color (Color Identifier): Optional  | Set the badge color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>Blank - displays the badge in the color you chose when creating the app (default value)</li><li>Entities.Color.Red - displays a red badge</li></ul></p> | 
-| Shape (Shape Identifier): Optional| Set the badge shape. Rounded, soft rounded, and sharp are the predefined shapes available for the badge. <p>Examples <ul><li>Blank - displays a rounded badge (default value)</li><li>Entities.Shape.Sharp - displays a square badge</li></ul></p>| 
+| Property                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name (Text): Optional              | The initials that appear inside the badge. Set this to a Data source that contains the value that the badge will display. Common use cases include displaying a value contained in a Variable or the result of an Aggregate (for instance, querying a 'Messages' table for the current user to return the count of new messages). <p>Examples <ul><li>Blank - displays the initials JJ (default value)</li><li>VariableName - displays the value that the variable "VariableName" holds at that time </li><li>ExampleAggregate.Name - displays the names contained in the records returned by the "ExampleAggregate" aggregate execution</li></ul></p> |
+| Color (Color Identifier): Optional | Set the badge color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the badge. <p>Examples <ul><li>Blank - displays the badge in the color you chose when creating the app (default value)</li><li>Entities.Color.Red - displays a red badge</li></ul></p>                                                                                                                                                                                                                                                                                                                                  |
+| Shape (Shape Identifier): Optional | Set the badge shape. Rounded, soft rounded, and sharp are the predefined shapes available for the badge. <p>Examples <ul><li>Blank - displays a rounded badge (default value)</li><li>Entities.Shape.Sharp - displays a square badge</li></ul></p>                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Size (Size Identifier): Optional  | Set the badge size. Small and medium are the predefined sizes available for the badge. <p>Examples <ul><li>Blank - displays a medium sized badge (default value)</li><li>Entities.Size.Small - displays a small sized badge</li></ul></p> | |
 | IsLight (Boolean): Optional | Specify the badge's background color. <p>Examples <ul><li>Blank - A darker hue of the color is applied to the badge and a lighter color to the text (default value)</li><li>True - A brighter hue of the color is applied to the badge and a darker color to the text.</li><li>False - A darker hue of the color is applied to the badge and a lighter color to the text</li></ul></p> |
 |ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|

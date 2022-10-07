@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: b4ed741a-bff5-4277-a115-fafac9e14903
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Structure Properties
 
 The next table presents the properties of the [structure](<../../../extensibility-and-integration/integration-studio/managing-extensions/structure-define.md>) element.  

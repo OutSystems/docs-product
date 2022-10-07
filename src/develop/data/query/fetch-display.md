@@ -1,6 +1,9 @@
 ---
 summary: Fetching data from the database using Aggregates.
 tags: support-application_development; support-Database;
+locale: en-us
+guid: c1c2a735-0768-4e33-8e42-73329e7944ae
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Fetch and display data from the database in OutSystems
@@ -12,11 +15,6 @@ This document guides you through two steps:
 1. Getting data. You first need to load some data from your database. The example uses Entities from OutSystems sample data, but you can use your Entities as well. 
 1. Showing data. Once your app has data, you can show all records or just some. The example uses the List widget, but you can add a Table or some other widget.
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## Fetch data from a database
 
@@ -30,11 +28,11 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
 1. Start by [creating a new app](../../../getting-started/create-reactive-web.md#new-app).
 
-1. Add a Screen to your app. Go to **Interface** > **UI Flows**, right-click **MainFlow** and select **Add Screen**. In the **New Screen** window select **Empty**, enter **Home** as the Screen name, then click **CREATE SCREEN**. Service Studio adds an empty Screen to your app.
+1. Add a Screen to your app. Go to **Interface** > **UI Flows**, right-click **MainFlow** and select **Add Screen**. In the **New Screen** window select **Empty** (1), enter **Home** as the Screen name (2), then click **CREATE SCREEN** (3). Service Studio adds an empty Screen to your app.
 
     ![New screen window](images/new-screen-ss.png)
    
-1. Add data sources to your app by referencing some Entities in the **Manage Dependencies** window (**Ctrl+Q**). This example app [references OutSystems sample data](../../../develop/ui/screen-templates-create/sample-data.md#Referencing_sample data_in_apps). Once you reference Entities, they're available in Service Studio under **Data** > **Entities** > **Database**.
+1. Add data sources to your app by referencing some Entities in the **Manage Dependencies** window (**Ctrl+Q**). This example app [references OutSystems sample data](../../../develop/ui/screen-templates-create/sample-data.md#referencing-sample-data-in-apps). Once you reference Entities, they're available in Service Studio under **Data** > **Entities** > **Database**.
 
     ![Database Entities in Service Studio](images/database-entities-ss.png)
 

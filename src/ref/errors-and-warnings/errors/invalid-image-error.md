@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 286230b7-c011-42bd-9923-7b3ef0a4abbc
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Image Error
 
 The `Invalid Image` error is issued in the following situations:

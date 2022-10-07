@@ -1,6 +1,9 @@
 ---
 summary: How to override the Base URL and the Basic Authentication credentials of a consumed REST API for a given environment.
 tags: 
+locale: en-us
+guid: bab48957-3b44-44a9-9996-d705c67a2dd6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configure a Consumed REST API at Runtime

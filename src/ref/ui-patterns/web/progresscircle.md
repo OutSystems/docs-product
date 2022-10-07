@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Progress Circle UI Pattern
+locale: en-us
+guid: 26092480-0d4f-441c-aeca-c82f31a3df51
+app_type: traditional web apps
 ---
 
 # Progress Circle Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

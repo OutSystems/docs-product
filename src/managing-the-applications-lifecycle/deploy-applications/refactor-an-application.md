@@ -1,5 +1,8 @@
 ---
 summary: Refactor your application by moving some modules to a new application.
+locale: en-us
+guid: f478be22-a3db-44cc-958b-acb906542ba5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Refactor an Application

@@ -1,6 +1,9 @@
 ---
 summary: Use Service modules and Service applications to design a service-oriented architecture. Learn the differences between Server Actions and Service Actions, and which of them you should use to expose your service. 
 tags: support-application_architecture-featured
+locale: en-us
+guid: 9fe307cf-1687-41f6-9a5b-b8f1484f57ee
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Services to Expose Functionality
@@ -18,7 +21,7 @@ Depending on the size of your services portfolio, you can also create a **Servic
 In a Service module you define the elements that compose your core services:
 
 * The service logic, using Server Actions and Service Actions.
-* Integrations (SOAP, REST and SAP).
+* Integrations such as REST.
 * Processes and Timers.
 * Database Entities.
 

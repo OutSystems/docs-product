@@ -1,11 +1,14 @@
 ---
 summary: Learn how to create and use complex data types in your applications.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: eb3ff661-0b92-4f55-9bf3-cceb8dd2c0b9
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Structures and Records to Create Compound Data Types
 
-While developing your application, you may find it interesting to have a variable holding a collection of variables with different data types grouped together and use it in the logic or UI. For example, to assign the values returned by an action where you don't have to create one output for each value.
+While developing your application, you may find it interesting to have a variable holding a collection of variables with different data types grouped together and use it in the logic. For example, to assign the values returned by an action where you don't have to create one output for each value.
 
 In OutSystems, you can create structured values by using a Structure or a Record. A Structure is a custom data type that you can use in your module. A Record is a custom data type defined for a single variable and cannot be reused in another variable.
 
@@ -16,15 +19,23 @@ To declare and use a Structure:
 1. Create a new variable.
 1. Set the variable's data type to the Structure you've created.
 
-To define a Record:
+In the cross-platform Service Studio, to create a Record for a variable, you need to:
 
-1. Create a new variable.
-1. Change the data type of the variable to Record.
+1. Create a new variable in the element where the Record is to be used.
+1. Select the variable and change its **Data Type** to **Record...**. A Text attribute is added to the variable.
+1. Optionally, change the **Data Type** and the **Name** of the attribute.
+1. In the variable context menu you can add more attributes to the Record.
+
+    ![Create a record for a variable](images/structure-create-use-7-ss.gif)
+
+In the Windows-only Service Studio, to create a Record for a variable, you need to:
+1. Create a new variable in the element where the Record is to be used.
+1. Select the variable and change its **Data Type** to **Record...**.
 1. On the pop-up window, add attributes to the record and define the data types of the attributes.
 
 ## Example using a Record
 
-In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating. The data is stored in the Place an Review entities.
+In an application where we want to find and review places of interest, we want to return basic information about a Place using a REST API method. The information to return about each place is the Id, the name, and the average rating. The data is stored in the Place and Review entities.
 
 Since the data type that we will need to assign to the output parameter will only be used here, we will use a Record:
 
@@ -54,19 +65,17 @@ Since the data type that we will need to assign to the output parameter will onl
 
     </div>
 
-
-1. In the GetPlace method flow, assign the result of the aggregate to the output parameter. 
+1. In the GetPlace method flow, assign the result of the aggregate to the output parameter.
     1. From the toolbox, drag an Assign after the aggregate.
     1. Add an assignment by setting the **Variable** to `PlaceInformation` and the **Value** to `GetPlaceById.List.Current`.
 
     ![Assign values to the output parameter](images/structure-create-use-6-ss.png)
 
-
 ## Example using a Structure
 
-In the application GoOutWeb, a Web application to find and review places of interest, we are developing a REST API method to expose basic information about a registered end user of the application. The  information we are returning is the Id, the name, and the profile picture of an end user.
+In an application to find and review places of interest, we are developing a REST API method to expose basic information about a registered end user of the application. The information we are returning is the Id, the name, and the profile picture of an end user.
 
-Since we are going to reuse the user information in another action of the application, we will create a Structure to hold this information thus allowing us to reuse the data type:
+Since we're going to reuse the user information in another action of the application, we'll create a Structure to hold this information thus allowing us to reuse the data type:
 
 1. On the Data layer, right-click the folder Structures and add a new structure named `UserInfo`.
 

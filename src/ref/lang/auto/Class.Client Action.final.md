@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.NRFlows+ClientActionFlow+Kind, ServiceStudio.Model.NRFlows+ClientScreenActionFlow+Kind, ServiceStudio.Model.ReferenceClientAction+Kind
 helpids: 30098
+locale: en-us
+guid: a079b872-4f63-411e-ae37-751b3a81e591
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Client Action

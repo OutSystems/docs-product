@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: The Dropdown Search UI Pattern offers a choice of available options that the user can search.
+locale: en-us
+guid: 5dc860b5-4361-4991-8c3a-4ffba28c55ff
+app_type: mobile apps, reactive web apps
 ---
 
 # Dropdown Search
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -23,7 +32,7 @@ In this example, we create a dropdown search for a list of employees. When the u
 
     ![Dropdown Search widget](<images/dropdownsearch-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -65,11 +74,11 @@ In this example, we create a dropdown search for a list of employees. When the u
     1. Add a **Message** to the client action.
     1. Add the following logic to the expression editor:
 
-        `SelectedItem.Text + "(Employee ID: " + SelectedItem.Value + ")"`
+        `SelectedItem.Text + "(Employee ID: " + SelectedItem.Value + ")`
 
     1. Click **Close**. 
     
-        This  displays the selected employee's name and their ID.
+        This displays the selected employee's name and their ID.
 
         ![Add message logic](<images/dropdownsearch-message-ss.png>)
 
@@ -83,13 +92,13 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-|Property|Description|
-|---|---|
-|OptionsList (DropdownSearchOptionList): Mandatory | List of items to show in the dropdown. |
-|SelectedOptions (DropdownSearchOption List): Optional| Defines preselected items in the dropdown list.|
-|Prompt (Text): Optional|Text that is displayed when no items are selected and serves as an empty value.|
-|OptionalConfigs.AllowMultipleSelection (Boolean): Optional|Set to True to allow the selection of multiple options. Default value is False.|
-|OptionalConfigs.IsDisabled (Boolean): Optional|Set to True to disable the dropdown.|
-|OptionalConfigs.NoResultsText (Text): Optional|Text that is displayed when there are no results to show.|
-|OptionalConfigs.SearchPrompt (Text): Optional|Prompt text displayed in the search input box.|
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| Property                                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| OptionsList (DropdownSearchOptionList): Mandatory          | List of items to show in the dropdown.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| SelectedOptions (DropdownSearchOption List): Optional      | Defines preselected items in the dropdown list.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Prompt (Text): Optional                                    | Text that is displayed when no items are selected and serves as an empty value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| OptionalConfigs.AllowMultipleSelection (Boolean): Optional | Set to True to allow the selection of multiple options. Default value is False.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| OptionalConfigs.IsDisabled (Boolean): Optional             | Set to True to disable the dropdown.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| OptionalConfigs.NoResultsText (Text): Optional             | Text that is displayed when there are no results to show.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| OptionalConfigs.SearchPrompt (Text): Optional              | Prompt text displayed in the search input box.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ExtendedClass (Text): Optional                             | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

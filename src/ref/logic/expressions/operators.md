@@ -1,6 +1,9 @@
 ---
 summary: OutSystems operators reference.
 tags: 
+locale: en-us
+guid: bdb4b4a6-820c-47c3-8ade-fd593c7f6ef4
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Operators

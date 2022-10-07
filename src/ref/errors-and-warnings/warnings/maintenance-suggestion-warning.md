@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: d9b03ed2-6a7e-4674-8c03-fec66386a573
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Maintenance Suggestion Warning
 
 Message

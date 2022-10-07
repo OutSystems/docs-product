@@ -1,6 +1,9 @@
 ---
 summary: Check how you can troubleshoot REST APIs by temporarily setting higher logging levels.
 tags: 
+locale: en-us
+guid: 60a9bcc9-9841-40ba-b6be-95dc14831c47
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Troubleshoot a REST API

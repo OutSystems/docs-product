@@ -1,6 +1,9 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Concurrent Publishing TrueChange errors.
 tags:
+locale: en-us
+guid: d16fc208-4a45-4e8e-a4d1-d271d33f00a4
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Concurrent Publishing Error

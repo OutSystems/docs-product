@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: cb5587c1-009b-4ef4-bf65-297a48c62902
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Format
 
 

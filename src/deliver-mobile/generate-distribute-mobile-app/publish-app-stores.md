@@ -1,9 +1,18 @@
 ---
 summary: Generate a mobile app package for your mobile app to publish in the App Store and Google Play stores. Distribute your mobile app directly to your company's end users, if you enrolled in the Apple Enterprise Developer Program.
-tags: runtime-mobile; support-mobile; publish-application; google-play-store; android-app; apple-app-store; ios-app
+tags: runtime-mobile; support-mobile
+locale: en-us
+guid: f33d65af-6f6e-4425-9db3-7c8a206a71c3
+app_type: mobile apps
 ---
 
 # Generate and Publish Your Mobile App to the Mobile App Stores
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 At some point your mobile app is ready for production and so, to be used by end users. One of the ways you can distribute your production-ready mobile app is by providing it in the mobile stores for the general public.
 

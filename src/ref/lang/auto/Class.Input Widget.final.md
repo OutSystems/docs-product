@@ -2,10 +2,18 @@
 kinds: ServiceStudio.Model.WebWidgets+Input+Kind, ServiceStudio.Model.WebWidgets+ReferenceInput+Kind
 helpids: 4024
 tags: runtime-traditionalweb
+locale: en-us
+guid: 194c0eca-3e99-4ee0-9ffd-d153e14b2225
+app_type: traditional web apps
 ---
 
 # Input Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Field that holds the data typed by the user.
 

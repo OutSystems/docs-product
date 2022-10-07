@@ -1,9 +1,18 @@
 ---
 summary: A Library is a module type that allows you to reduce the number of dependencies in a given environment.
 tags: runtime-mobileandreactiveweb
+locale: en-us
+guid: cc983a8d-46d2-4fad-b6f3-eaf1148dba44
+app_type: mobile apps, reactive web apps
 ---
 
 # Libraries
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 A Library is a module type that helps you lay the foundations of your application. Libraries have a direct fit in the **Foundation Layer** of the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) architecture tool and allow you to reduce the number of dependencies in a given environment.
 
@@ -45,7 +54,7 @@ Libraries can contain most kinds of elements:
 * Scripts
 * Data Actions
 * Server Actions and Client Actions
-* Consumed Integrations (SOAP, REST and SAP)
+* Consumed Integrations
 * Exceptions
 * Structures
 * Resources
@@ -62,7 +71,7 @@ Considering the architectural philosophy behind Libraries, some concepts must be
     * Screens
     * Service Actions
     * Entities (both Server and Client Entities)
-    * Exposed integrations (SOAP and REST)
+    * Exposed integrations
     * Processes and Timers
     * Roles
 * Static Entities can be created and referenced in Libraries but cannot be used in queries, as dropdown sources or as foreign keys for entities. However, you cannot reference Static Entities from (System) in Libraries.

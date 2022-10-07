@@ -2,9 +2,12 @@
 tags: article-page
 summary: Learn how to manage the technical debt of your applications at every stage of the development lifecycle.
 en_title: Manage technical debt
+locale: en-us
+guid: 7aa53270-fb01-4543-90e4-57907dcc68fe
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Manage technical debt with Architecture Dashboard
+# Manage technical debt
 
 Architecture Dashboard (https://architecture.outsystems.com/) is the OutSystems technical debt monitoring tool. It enables IT leaders to visualize complex cross-portfolio architectures and identify problems while also helping developers follow best practices and avoid common pitfalls.
 
@@ -13,6 +16,8 @@ As organizations strive to expedite time-to-market and empower non-professional 
 With Architecture Dashboard, technical debt can be effectively managed at every stage of the development lifecycle so that when departmental applications evolve to become enterprise-wide solutions, nothing needs to be rewritten.
 
 For architects and development team leaders, it provides an integrated, bird’s eye view of their organization’s technical debt to identify problem areas and prioritize accordingly. Developers can view detailed reports on what best practices are being violated, their impact, and how to fix them.
+
+To integrate Architecture Dashboard's data with third-party tools, use the [Architecture Dashboard API](../../ref/apis/auto/architecture-dashboard-api.final.md). 
 
 ## What Architecture Dashboard analyzes
 

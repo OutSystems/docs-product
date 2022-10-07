@@ -1,6 +1,9 @@
 ---
 summary: Steps for creating an FAQ chatbot with the OutSystems component and Azure resources.
 tags:
+locale: en-us
+guid: f48545b1-eda8-4c71-80a0-53b79a4e8d08
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Get started: create an FAQ chatbot for your app

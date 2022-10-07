@@ -2,6 +2,9 @@
 kinds: ServiceStudio.Model.RoleException+Kind
 helpids: 0
 summary: Role Exception is a custom exception created automatically by OutSystems from each role available in your module.
+locale: en-us
+guid: eba380ac-388a-493d-b166-f806e40a09f1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Role Exception

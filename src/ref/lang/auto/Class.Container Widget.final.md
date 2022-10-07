@@ -2,10 +2,18 @@
 kinds: ServiceStudio.Model.WebWidgets+Container+Kind, ServiceStudio.Model.WebWidgets+EmailContainer+Kind, ServiceStudio.Model.WebWidgets+ReferenceContainer+Kind, ServiceStudio.Model.WebWidgets+ReferenceEmailContainer+Kind
 helpids: 4047
 tags: runtime-traditionalweb
+locale: en-us
+guid: f018d411-b8b9-4c20-9744-4807528f9255
+app_type: traditional web apps
 ---
 
 # Container Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Container "box" where you can drag and drop other widgets, including other containers, to organize the layout of the screen.
 

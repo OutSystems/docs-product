@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: The Touch Events UI Pattern enables touch events on a specific widget.
+locale: en-us
+guid: 543a0aea-546e-48ce-92e6-dcc08e9fd2be
+app_type: mobile apps, reactive web apps
 ---
 
 # Touch Events
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 You can use the Touch Events UI Pattern to enable touch events on a specific widget.
 

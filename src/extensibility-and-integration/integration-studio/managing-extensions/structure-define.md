@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 64abe2b1-809c-4f5c-8dcd-b24547c83ee8
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Define Extension Structures
 
 Integration Studio provides some base data types, such as Integer or Text, but you can define more complex data types using Structures. Once structures are defined, they can be used in the data type definition of parameters and attributes. In such cases, you should use the Record data type or the Record List data type.

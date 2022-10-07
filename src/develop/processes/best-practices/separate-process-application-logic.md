@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 1961c6df-66b1-4e5d-a324-b5bd09df1186
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Separate Process Logic from Application Logic
 
 When you design a [Process](../intro.md) that is strongly integrated with your application, it may happen that both the process and the application are changing the same **Entity record** at the same time. This **leads to misbehaviors**, essentially due to:
@@ -24,7 +30,7 @@ In this case we recommend that you do the following:
 
 As an example, imagine an application and process to handle candidates that apply for a job. At some point, on the candidate edit screen, there is a button to Dismiss the candidate.
 
-![](images/separate-logic-1.png)
+![Candidate Record](images/separate-logic-1-diag.png)
 
 When the Dismiss button is pressed, the following happens:
 
@@ -38,7 +44,7 @@ When the Dismiss button is pressed, the following happens:
 
 Let's identify which attributes are changed either by the application or by the process. The **StatusId** is only changed by the process. So, let's create the **CandidateProcess** entity to have it isolated there.
 
-![](images/separate-logic-2.png)
+![Candidate Record Option 1](images/separate-logic-2-diag.png)
 
 Now, when the Dismiss button is pressed, the following happens:
 
@@ -46,13 +52,13 @@ Now, when the Dismiss button is pressed, the following happens:
 
 2. The application closes the **ScheduleInterviews** activity in the process and the **On Close** callback action is executed.
 
-3. The On Close call back action updates the ProcessCandidate record.
+3. The **On Close** callback action updates the **CandidateProcess** record.
 
 ### Using Option 2
 
 The **CloseScheduleInterviews** is already at the end of the flow. So, let's add the a **CommitTransaction** before it to commit the changes in the database and end the lock.
 
-![](images/separate-logic-3.png)
+![Candidate Record Option 2](images/separate-logic-3-diag.png)
 
 Now, when the Dismiss button is pressed, the following happens:
 
@@ -62,4 +68,4 @@ Now, when the Dismiss button is pressed, the following happens:
 
 3. The application closes the **ScheduleInterviews** activity in the process and the **On Close** callback action is executed.
 
-4. The **On Close** callback action updates the **ProcessCandidate** record.
+4. The **On Close** callback action updates the **Candidate** record.

@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.Reference+Kind
 helpids: 0
+locale: en-us
+guid: 766100da-d59c-466d-ab09-c95e11cb7d17
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Reference

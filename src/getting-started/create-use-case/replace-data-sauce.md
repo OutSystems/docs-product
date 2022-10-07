@@ -1,9 +1,18 @@
 ---
 summary: Learn more about using your own data in the UI of your use-case app.
 tags:
+locale: en-us
+guid: efe8b43b-19cd-460b-951a-d6af460a1474
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Using your data in the UI
+
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
 
 Learn more about how you can customize your app by replacing the sample data in your use-case app with your own data.
 

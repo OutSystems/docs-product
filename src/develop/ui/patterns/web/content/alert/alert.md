@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Alert gets the end user's attention and highlights important information, errors or warnings on the screen.
+locale: en-us
+guid: 8b7fa781-fd52-47d6-a24a-1f0ffa05b99b
+app_type: traditional web apps
 ---
 
 # Alert
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 You can use the Alert UI Pattern to highlight and display important information, errors, or warnings.
 
@@ -17,7 +26,7 @@ You can use the Alert UI Pattern to highlight and display important information,
 
     ![](<images/alert-image-7.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -50,8 +59,8 @@ You can use the Alert UI Pattern to highlight and display important information,
 
 ## Properties
 
-| **Property** |  **Description** | 
-|---|---|
-| AlertType (Alert Identifer): Mandatory  | Select the type of alert. the predefined options are:<br/><br/><ul><li>Error</li><li>Info</li><li>Success</li><li>Warning</li></ul><br/>Examples<br/><br/><ul><li>Entities.Alert.Warning - Displays a yellow warning message.</li><li>Entities.Alert.Info - Displays a blue information message.</li></ul> | 
-| ShowCloseButton (Boolean): Optional  | Enable a **Close** button for the Alert.<br/><br/>Examples<br/><br/><ul><li>True - A **Close** button is enabled.</li><li>False - No **Close** button. This is the default value.</li></ul> |
-| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>Blank No custom styles are added (default value).</li><li>"myclass" Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied. </li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
+| **Property**                           | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AlertType (Alert Identifer): Mandatory | Select the type of alert. the predefined options are:<br/><br/><ul><li>Error</li><li>Info</li><li>Success</li><li>Warning</li></ul><br/>Examples<br/><br/><ul><li>Entities.Alert.Warning - Displays a yellow warning message.</li><li>Entities.Alert.Info - Displays a blue information message.</li></ul>                                                                                                                                                                                                                                                                                                                                         |
+| ShowCloseButton (Boolean): Optional    | Enable a **Close** button for the Alert.<br/><br/>Examples<br/><br/><ul><li>True - A **Close** button is enabled.</li><li>False - No **Close** button. This is the default value.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ExtendedClass (Text): Optional         | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>Blank No custom styles are added (default value).</li><li>"myclass" Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied. </li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

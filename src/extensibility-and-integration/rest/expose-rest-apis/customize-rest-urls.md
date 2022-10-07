@@ -1,15 +1,13 @@
 ---
 summary: Customize the URL of your exposed REST API methods according to your needs.
 tags: 
+locale: en-us
+guid: 3e4b997b-6c2c-4ccb-ae1a-31d4ed3ad0a8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Customize REST URLs
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 OutSystems allows you to customize the URL of your REST API methods according to your needs.  
 For example, you could customize this URL:

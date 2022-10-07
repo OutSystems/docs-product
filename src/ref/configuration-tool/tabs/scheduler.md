@@ -1,5 +1,8 @@
 ---
 summary: The Scheduler tab allows you to configure the OutSystems Scheduler Service.
+locale: en-us
+guid: 311b549c-496e-40b8-9d2b-4cf8bfe87d1e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Scheduler Tab

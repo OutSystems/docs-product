@@ -960,7 +960,7 @@
     - deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
     - deliver-mobile/generate-distribute-mobile-app/publish-apple-app-store.md
     - deliver-mobile/generate-distribute-mobile-app/development-tests.md
-    - one-way: setup/possible-setups/intro.md
+    - one-way: setup-maintain/setup/possible-setups/intro.md
 
 # Building apps with AndroidX
 - deliver-mobile/mobile-apps-build-service/androidx.md:
@@ -1935,12 +1935,12 @@
 
 # Setting up OutSystems
 
-- setup/cache-invalidation/intro.md:
-    - setup/cache-invalidation/enable-tls.md
-    - setup/cache-invalidation/manage-troubleshoot.md
-    - setup/cache-invalidation/installation.md
-    - setup/cache-invalidation/high-availability.md
+- setup-maintain/setup/cache-invalidation/intro.md:
+    - setup-maintain/setup/cache-invalidation/enable-tls.md
+    - setup-maintain/setup/cache-invalidation/manage-troubleshoot.md
+    - setup-maintain/setup/cache-invalidation/installation.md
+    - setup-maintain/setup/cache-invalidation/high-availability.md
 
-- setup/logging-db/intro.md:
-    - setup/logging-db/configure-separate-db.md
-    - setup/logging-db/update-applications.md
+- setup-maintain/setup/logging-db/intro.md:
+    - setup-maintain/setup/logging-db/configure-separate-db.md
+    - setup-maintain/setup/logging-db/update-applications.md

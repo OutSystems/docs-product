@@ -1,6 +1,9 @@
 ---
 summary: Import data from Excel files to quickly have your data up and running in the application while developing it.
 tags: support-Database; support-database-featured
+locale: en-us
+guid: b9f11658-2807-4efb-92ed-0413be0f2c63
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Bootstrap an Entity Using an Excel File
@@ -8,6 +11,7 @@ tags: support-Database; support-database-featured
 You can import data from an Excel file to load data to an entity. This is useful when you are developing and testing your application. This way, you can quickly have your data up and running in the application while developing it.
 
 <div class="info" markdown="1">
+
 If you're using Google Sheets, download your document as an .xlsx file (File > Download > Microsoft Excel), and then bootstrap the data. 
 </div>
 
@@ -42,6 +46,6 @@ When you publish the module, it executes the action to bootstrap the data. If th
 
 ## Demo/Sample
 
-Check the following demo on how to bootstrap your data from an Excel file, and [download the sample app](resources/Products.oap) and the [sample data](resources/Products.xls) used in it.
+Check this demo on how to bootstrap your data from an Excel file, and [download the Sample](resources/BootstrapFromExcel.oml) and the [sample data](resources/SampleData.xls) used in it.
 
-<iframe width="750" height="500" src="https://www.youtube.com/embed/pIeuSPahI9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="750" height="500" src="https://www.youtube.com/embed/-8o-d_xrxbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>

@@ -1,5 +1,8 @@
 ---
 summary: Improve platform performance by creating indexes for a specific set of platform tables.
+locale: en-us
+guid: d70c93e7-404e-468d-b405-3711108e5311
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Creating indexes for platform database tables
@@ -22,7 +25,7 @@ The index creation operation has a defined timeout of **10 minutes**. Index crea
 
 ## Creating indexes at a later time
 
-If the provided 10-minute window isn't enough for creating the indexes, your operations team should provide your DBA with the index creation SQL script that Configuration Tool uses. After his approval, run Configuration Tool in command-line mode to create the indexes with an increased timeout.
+If the provided 10-minute window isn't enough for creating the indexes, your operations team should provide your DBA with the index creation SQL script that Configuration Tool uses. After their approval, run Configuration Tool in command-line mode to create the indexes with an increased timeout.
 
 Do the following:
 

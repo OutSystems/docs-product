@@ -1,9 +1,18 @@
 ---
 summary: Use the Firebase-based plugins Analytics, Crashlytics, and Performance to implement common development patterns in your mobile apps. 
 tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
+locale: en-us
+guid: 188c9757-ce29-4f78-9717-4e42226e0a4d
+app_type: mobile apps
 ---
 
 # Firebase Plugins
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Firebase is a Google mobile development platform. It speeds up development of many development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
 
@@ -11,6 +20,7 @@ Firebase is a Google mobile development platform. It speeds up development of ma
 * [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)
 * [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase)
 * [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706)
+* [Firebase Cloud Messaging](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase)
 
 <div class="info" markdown="1">
 
@@ -39,7 +49,7 @@ To add a Firebase plugin to your module, follow these steps:
 
 1. Install the plugin and reference it in your module. See [Adding plugins](../intro.md#adding-plugins) for detailed instructions.
 
-2. Add the [Google services configuration file](#adding-google-services-configuration-file) to the module.
+1. Add the [Google services configuration file](#adding-google-services-configuration-file) to the module.
 
     <div class="info" markdown="1">
 
@@ -47,9 +57,15 @@ To add a Firebase plugin to your module, follow these steps:
 
     </div>
 
-3. In Service Studio, go to **Logic** > **Client Action** > **your Firebase plugin** and use the actions in your logic.
+1. In Service Studio, go to **Logic** > **Client Action** > **your Firebase plugin** and use the actions in your logic.
 
-    ![Firebase actions in the logic tab of Service Studio](images/plugin-logic-tab-ss.png?width=350)
+    ![Firebase actions in the logic tab of Service Studio](images/plugin-logic-tab-ss.png)
+
+    <div class="info" markdown="1">
+
+    To learn how to use the **Firebase Cloud Messaging plugin**, check this [article](firebase-messaging.md).
+
+    </div>
 
 ## Adding Google services configuration file
 
@@ -57,28 +73,28 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
 
 1. In Service Studio, go to the **Data** tab.
 
-2. Right-click the **Resources** folder and select **Import Resource**. The **Import Resource** dialog opens.
+1. Right-click the **Resources** folder and select **Import Resource**. The **Import Resource** dialog opens.
 
-3. Select the [google-services.zip Firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
+1. Select the [google-services.zip firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
 
-    ![Resources folder in Service Studio](images/resources-folder-ss.png?width=350)
+    ![Resources folder in Service Studio](images/resources-folder-ss.png)
 
-4. Select the **google-services.zip** resource and configure the following:
+1. Select the **google-services.zip** resource and configure the following:
    
     * In the **Deploy Action** list, select **Deploy to Target Directory**.
     * In the Target Directory, enter the [target directory for your environment](#generating-target-directories-for-configuration-files).
 
-    ![Resource settings for Firebase](images/firebase-resource-properties-single-ss.png?width=350)
+    ![Resource settings for Firebase](images/firebase-resource-properties-single-ss.png)
 
-5. Repeat steps two and four for each environment, each time using a different configuration and [target directory](#generating-target-directories-for-configuration-files).
+1. Repeat steps two and four for each environment, each time using a different configuration and [target directory](#generating-target-directories-for-configuration-files).
 
-    ![Resource settings for Firebase](images/firebase-resource-properties-multiple-ss.png?width=350)
+    ![Resource settings for Firebase](images/firebase-resource-properties-multiple-ss.png)
 
 ### Preparing Firebase configuration file
 
 Add the files **GoogleService-Info.plist** and **google-services.json** in a zip file and name the zip file **google-services.zip**. 
 
-![Configuration files in a zip archive](images/zipped-configs.png?width=500)
+![Configuration files in a zip archive](images/zipped-configs.png)
 
 ### Generating target directories for configuration files
 
@@ -100,7 +116,7 @@ The Firebase Dynamic Links Plugin has some additional setup steps that need to b
 
 * You need to include a global preference in the Extensibility Configurations of the application using the plugin. The value for this preference needs to match the URL prefix you set in the Dynamic Links page in the Firebase console. For example:
 
-    ```
+    ```JSON
     {
         "preferences": {
             "global": [{
@@ -115,11 +131,39 @@ The Firebase Dynamic Links Plugin has some additional setup steps that need to b
 
 ### Ensuring app is compliant with Apple’s Data Use and Sharing guidelines
 
-Starting with iOS 14.5, apps on the App Store must receive the user’s permission to collect tracking data through the  AppTrackingTransparency framework.
+Starting with iOS 14.5, apps on the App Store must receive the user’s permission to collect tracking data through the AppTrackingTransparency framework.
 
 ![RequestTrackingAuthorization client action parameters on Service Studio](images/firebase-request-tracking-authorization.png)
 
-To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin.
+To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin. Apple reccomends triggering this prompt as soon as the app loads.
 If you want to present an alert prior to the iOS tracking permission dialog, enable the **ShowInformation** parameter on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
 
+By default, the **NSUserTrackingUsageDescription** field is set to `AppName needs your attention.`. You can set your custom description by including an iOS-specific preference (`USER_TRACKING_DESCRIPTION_IOS`) in the Extensibility Configurations of the application, as follows:
+    
+```JSON   
+{
+    "preferences": {
+        "ios": [{
+            "name": "USER_TRACKING_DESCRIPTION_IOS",
+            "value": "This is an example of a description."
+        }]
+    }
+}
+```
+
 You can use the **RequestTrackingAuthorization** action multiple times in the same app, since iOS remembers users' choice and only prompts users again after they uninstall and then reinstall the app on the device.
+    
+By default, an app using the Firebase Analytics plugin is able to trigger the native AppTrackingTransparency framework. It also contains the **NSUserTrackingUsageDescription** field in the app's **\*-Info.plist** file. If you don't want to trigger the framework, and don't want to include the description field in the **.plist** file, you can disable this through the Extensibility Configurations like this:
+    
+```JSON   
+{
+    "preferences": {
+        "ios": [{
+            "name": "EnableAppTrackingTransparencyPrompt",
+            "value": "false"
+        }]
+    }
+}
+```
+
+It is important to note that if your app collects user data for adversiting purposes, also know as Attribution within Firebase Analytics context, it should prompt the AppTrackingTransparency framework.

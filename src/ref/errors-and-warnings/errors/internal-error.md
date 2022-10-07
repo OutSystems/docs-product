@@ -1,6 +1,9 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Internal TrueChange errors.
 tags:
+locale: en-us
+guid: b206df3a-c286-4468-aa80-a70e9af8b0f7
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Internal Error

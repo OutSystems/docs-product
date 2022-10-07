@@ -1,6 +1,9 @@
 ---
 summary: Learn the best way to handle immediate corrective development situations, also known as Hotfix.
 tags: support-Application_Lifecycle-featured
+locale: en-us
+guid: e79dfbfc-4c0b-4239-ae8d-824f5da95d2d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Apply a Hotfix
@@ -42,15 +45,13 @@ To solve an hotfix, all changes made to the application have to be propagated ba
 
 1. Merge all the modules with the hotfix changes in Pre-Production to Quality Assurance: click on the compare button (the difference sign) between the environments and select the specific changes you have done to implement the hotfix.
 
-    ![](images/apply-a-hotfix-4.png)
+1. In Service Studio select the hotfix changes and click **Merge**.
 
-3. In Service Studio select the hotfix changes and click **Merge**.
+1. In Service Studio publish the new versions of the modules to Quality Assurance.
 
-4. In Service Studio publish the new versions of the modules to Quality Assurance.
+1. Repeat steps 2, 3 and 4 from Quality Assurance to Development.
 
-5. Repeat steps 2, 3 and 4 from Quality Assurance to Development.
-
-6. When the fix is propagated through all environments, click the **Mark Hotfix as Solved** button on the application details screen, to signal that the fix is now implemented across all infrastructure.
+1. When the fix is propagated through all environments, click the **Mark Hotfix as Solved** button on the application details screen, to signal that the fix is now implemented across all infrastructure.
 
 The hotfix is solved and there are no more application versions marked in red.
 

@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.Variables+SessionVariable+Kind
 helpids: 15001
+locale: en-us
+guid: ee806cae-33e4-4751-b49f-ddbd4aa5164c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Session Variable

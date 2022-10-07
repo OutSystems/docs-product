@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 8d848bc2-1057-4692-8e94-9ba8c4212806
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # ExBuilder_MPat
 
 To learn more about the custom UI patterns, check out the [live style guide](https://experiencebuilder.outsystems.com/ExBuilder_CustomPatterns_Samples/CustomPatternsList)

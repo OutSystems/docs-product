@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Displays multiple items in a horizontal slide.
+locale: en-us
+guid: a2167543-6fcc-4c6e-9ff5-ba4426722ed5
+app_type: mobile apps, reactive web apps
 ---
 
 # Carousel
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -29,7 +38,7 @@ The Carousel Pattern is based on the Splide.js library (v3). For more informatio
 
     ![Carousel widget](images/carousel-widget-ss.png)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -67,17 +76,17 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-|**Property**|**Description**|
-|---|---|
-|Navigation (CarouselNavigation Identifier): Optional | Sets the navigation behavior:<ul><li>Dots</li><li>Arrows</li><li>Both (dots and arrows)</li><li>None</li></ul>|
-|Height (Text): Optional|Set a custom height for the Carousel. The parameter accepts any CSS format, except percentage (library constraint). The default value is Auto (he height of the items inside Carousel).|
-|ItemsPerSlide (CarouselItems): Optional|Number of Carousel items simultaneously visible on each slide.<ul><li>DesktopItems (Integer)</li><li>TabletItems (Integer)</li><li>PhoneItems (Integer)</li></ul>|
-|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul><br/>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
-|OptionalConfigs.AutoPlay (Boolean)|If True, the Carousel slides change automatically. If False, slides must be changed manually. The default value is True.|
-|OptionalConfigs.Loop (Boolean)|If True, once the last item in the Carousel is reached, it loops around to the first item and begins displaying all of the items again. If False, the Carousel does not loop; it ends when the last item is reached. The default value is True.|
-|OptionalConfigs.Padding (Text)|Distance between the Carousel edges and the visible items on each slide. Accepts any CSS size unit (such as, px, vw, %) or  CSS variables, for example, "100px".|
-|OptionalConfigs.ItemsGap (Text) |Distance between each Carousel item. Accepts any CSS size unit (lsuch as px, vw, %) or CSS variables, for example, "var(--space-base)".|
-|OptionalConfigs.StartingPosition (Integer)|Set the first item to display first in the Carousel.|
+| **Property**                                         | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Navigation (CarouselNavigation Identifier): Optional | Sets the navigation behavior:<ul><li>Dots</li><li>Arrows</li><li>Both (dots and arrows)</li><li>None</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Height (Text): Optional                              | Set a custom height for the Carousel. The parameter accepts any CSS format, except percentage (library constraint). The default value is Auto (the height of the items inside Carousel).                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ItemsPerSlide (CarouselItems): Optional              | Number of Carousel items simultaneously visible on each slide.<ul><li>DesktopItems (Integer)</li><li>TabletItems (Integer)</li><li>PhoneItems (Integer)</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ExtendedClass (Text): Optional                       | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul><br/>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| OptionalConfigs.AutoPlay (Boolean)                   | If True, the Carousel slides change automatically. If False, slides must be changed manually. The default value is True.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| OptionalConfigs.Loop (Boolean)                       | If True, once the last item in the Carousel is reached, it loops around to the first item and begins displaying all of the items again. If False, the Carousel does not loop; it ends when the last item is reached. The default value is True.                                                                                                                                                                                                                                                                                                                                                                                            |
+| OptionalConfigs.Padding (Text)                       | Distance between the Carousel edges and the visible items on each slide. Accepts any CSS size unit (such as, px, vw, %) or  CSS variables, for example, "100px".                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| OptionalConfigs.ItemsGap (Text)                      | Distance between each Carousel item. Accepts any CSS size unit (lsuch as px, vw, %) or CSS variables, for example, "var(--space-base)".                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| OptionalConfigs.StartingPosition (Integer)           | Set the first item to display first in the Carousel.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
   
 ## Compatibility with other patterns
 

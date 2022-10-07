@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: de265ad3-910f-42ad-b395-551ce6e83e4b
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # SAP OData integration
 
 The SAP OData integration allows you to perform operations on SAP entities and call SAP actions from your OutSystems applications.

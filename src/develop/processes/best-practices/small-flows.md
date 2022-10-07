@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: ea9128f4-23b8-4eb6-9e6e-c9970f610634
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Design Processes with Small Flows
 
 When you design a [Process](../intro.md) with too many activities, it may **reveal hard to maintain and with impact on the deployment of applications**. This is essentially due to:

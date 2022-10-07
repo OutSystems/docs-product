@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Progress Bar displays the progress of a task by incrementing values in a bar.
+locale: en-us
+guid: 024aef71-32e0-490d-8bb9-3e2a45845b91
+app_type: mobile apps, reactive web apps
 ---
 
 # Progress Bar
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -23,7 +32,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     ![Progress Bar widget](<images/progressbar-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -67,12 +76,12 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property | Description |
-|---|---|
-|Progress (Integer): Mandatory | Progress percentage. Usually a number (integer) between 0 and 100. You can also use functions and local variables.|
-|ProgressColor (Color Identifier): Optional |The background color of the progress bar. By default, the progress color is the primary color you chose when creating the app. |
-|TrailColor (Color Identifier): Optional|The color of the empty part of the bar. By default, the trail color is Neutral 4 (#DEE2E6). |
-|Thickness (Integer): Optional|The height of the progress bar, in pixels, for example 20.|
-|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1" "myclass2"- Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
-|OptionalConfigs.Shape (Shape Identifier): Optional|Set the progress shape. The predefined options are SoftRounded, Rounded, and Sharp. |
-|OptionalConfigs.AnimateInitialProgress (Boolean): Optional|If True, the progress bar will show an animation going from zero to its initial progress.|
+| Property                                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Progress (Integer): Mandatory                              | Progress percentage. Usually a number (integer) between 0 and 100. You can also use functions and local variables.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ProgressColor (Color Identifier): Optional                 | The background color of the progress bar. By default, the progress color is the primary color you chose when creating the app.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| TrailColor (Color Identifier): Optional                    | The color of the empty part of the bar. By default, the trail color is Neutral 4 (#DEE2E6).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Thickness (Integer): Optional                              | The height of the progress bar, in pixels, for example 20.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ExtendedClass (Text): Optional                             | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1" "myclass2"- Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| OptionalConfigs.Shape (Shape Identifier): Optional         | Set the progress shape. The predefined options are SoftRounded, Rounded, and Sharp.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| OptionalConfigs.AnimateInitialProgress (Boolean): Optional | If True, the progress bar will show an animation going from zero to its initial progress.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |

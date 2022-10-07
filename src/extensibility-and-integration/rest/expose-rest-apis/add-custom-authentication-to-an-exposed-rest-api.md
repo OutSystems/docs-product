@@ -1,15 +1,13 @@
 ---
 summary: Improve the security of exposed REST APIs by adding custom authentication logic.
 tags: 
+locale: en-us
+guid: 844a1455-677f-4248-a50f-d6cd12bb4531
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Add Custom Authentication to an Exposed REST API
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 OutSystems allows you to customize the authentication logic used in your exposed REST APIs.
 

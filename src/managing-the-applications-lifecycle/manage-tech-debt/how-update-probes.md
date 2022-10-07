@@ -1,29 +1,36 @@
 ---
 tags: 
 summary: When a new Architecture Dashboard probe version is released, users with Full Control of the code analysis environment can update it autonomously. Learn how to update the probes in this topic.
-en_title: How to update the Architecture Dashboard probes
+locale: en-us
+guid: d11dd771-148b-49fd-8bfd-dfe0800620c5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 
 # How to update the Architecture Dashboard probes
 
-If you have [**Full Control** permission assigned as default role](how-works.md#maint-op-permissions) for the code analysis environment, you see the following message when an updated versions of the probes is available:
+If you have [**Full Control** permissions assigned as a default role](how-works.md#update-probes) for the code analysis environment, the following message is displayed when an updated version of the probes is available: 
 
-![](images/probes-update-message-ad.png)
+![Architecture Dashboard's Apps area showing a message that an updated version of the probes is available.](images/probes-update-full-ad.png)
 
-After selecting **Click here to download them** (the probes) you go to the **Probes download and update** screen, where you can download the new probes.
+After selecting **How to download and update probes**, you go to the **Probes download and update** screen, where you can download the new probes.
 
-![](images/probes-procedure.png)
+![**Probes download and update** screen.](images/probes-procedure-ad.png)
+
+If you have a different permissions level, the following message is displayed when an updated version of the probes is available:
+
+![Architecture Dashboard's Apps area showing a message that an updated version of the probes is available.](images/probes-update-listapp-ad.png)
+
+To install the new probes for Architecture Dashboard, contact your infrastructure administrator.
 
 ## Prerequisites
 
-Before configuring the proxy in Architecture Dashboard, make sure you met the following requirement:
-
-* You have [**Full Control** permission assigned as default role](how-works.md#maint-op-permissions) for the code analysis environment.
+Before configuring the proxy in Architecture Dashboard, make sure you have [**Full Control** permissions assigned as a default role](how-works.md#update-probes) for the code analysis environment.
 
 ## Update probes
 
-To update the Architecture Dashboard Probes, follow these steps:
+If you have a previous version of the probes installed there's no need to uninstall it prior to installing the new version of the probes.  
+To update the Architecture Dashboard's probes, follow these steps:
 
 1. In the **Probes download and update** screen, select **Download Development probe**.
 
@@ -36,7 +43,7 @@ To update the Architecture Dashboard Probes, follow these steps:
     1. Select **1-Click Publish**.
     1. Validate if the Solution is successfully published by checking for a `Done: The solution was successfully published message`.
 
-    ![](images/setup-install-probes-sc.png)
+    ![Install probes in Service Center](images/setup-install-probes-sc.png)
 
 1. In the **Probes download and update** screen, select **Download LifeTime probe**.
 
@@ -48,3 +55,4 @@ To update the Architecture Dashboard Probes, follow these steps:
     1. Select **Choose File** and select the Probe file.
     1. Select **1-Click Publish**.
     1. Validate if the Solution is successfully published by checking for a `Done: The solution was successfully published message`.
+

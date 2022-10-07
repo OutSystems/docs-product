@@ -1,9 +1,18 @@
 ---
 summary: Protect your mobile apps against tampering. OutSystems AppShield hardens the native mobile build, enabling the app to detect attempts of modification and misuse. Check out notes about Google Play app signing.
 tags: support-application_development; runtime-mobile;
+locale: en-us
+guid: bacbf600-bd10-4caf-820a-205c16a58691
+app_type: mobile apps
 ---
 
 # Harden the protection of mobile apps with AppShield
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 **OutSystems** **AppShield** is a licensed plugin available from the **Forge**. **AppShield** lets you harden the protection of your native Android and iOS apps. **AppShield** integrates with the Mobile Apps Build Service (MABS version 6.3 or later) and adds app protection at runtime and at rest.
 
@@ -174,6 +183,7 @@ These are the values available in the **AppShield** configuration JSON.
 | DisableAppShielding             | boolean      | iOS, Android | Activates or deactivates App Shield. 
  | ExitOnURL | URL value | iOS, Android|If an app feature is blocked due to a configured policy of the **AppShield** plugin, the default browser will open the URL which may explain the problem to the user. See ExitOnURL for additional information.                                                           |
 | GooglePlayAppSigningCertificate | Text(Base64) | iOS, Android | Google Play App Signing certificate.                                                              |
+| RemoveQueryAllPackagesPermission | boolean | Android | If set to true, it removes the app ability to check other installed applications. See more information [here](query-all-packages.md).                                                              |
 | android                         | JSON value   | Android      | The key denoting values that apply to the Android devices.                                        |
 | global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.                                    |
 | ios                             | JSON value   | iOS          | The key denoting values that apply to the iOS devices.                                            |
@@ -226,7 +236,7 @@ Applies to apps for Google Play Store that have app signing feature enabled.
 
 One of the security features of **AppShield** is repackaging detection. This protection prevents re-signing of the app package, but also causes incompatibility with the Google Play App Signing. You can fix this by providing information about the certificate in the **AppShield** settings.
 
-In the **Android section** of the Extensibility Configurations JSON, add a preference item with `GooglePlayAppSigningCertificate` as its **name** and the public key as its **value**. Here is an example:
+In the **Android section** of the Extensibility Configurations JSON, add **name** with `GooglePlayAppSigningCertificate` and the **value** with the public key. Here is an example:
 
 
 ```

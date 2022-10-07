@@ -1,9 +1,18 @@
 ---
 summary: Screens and Blocks follow a lifecycle composed by a set of stages. Learn what those stages are and you what can do at each one.
 tags: runtime-mobileandreactiveweb; support-application_development; support-Application_Troubleshooting-featured; support-Mobile_Apps
+locale: en-us
+guid: 9205fe77-5e90-402b-ba73-45cdc745515a
+app_type: mobile apps, reactive web apps
 ---
 
 # Screen and Block Lifecycle Events
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 In OutSystems Mobile and Reactive Web Apps, the Screens and Blocks follow a lifecycle composed by a set of stages. Some of those stages are when you open the app and enter the default screen, navigate to another screen, or change the data of the screen or block.
 

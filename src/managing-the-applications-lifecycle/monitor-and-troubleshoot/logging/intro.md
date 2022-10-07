@@ -1,5 +1,8 @@
 ---
 summary: Overview of the log architecture.
+locale: en-us
+guid: 08c5585e-6eef-4467-98a7-5fe02a6d6d53
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Logging database and architecture

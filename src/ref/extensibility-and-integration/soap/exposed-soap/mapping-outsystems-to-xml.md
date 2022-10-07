@@ -1,5 +1,8 @@
 ---
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 34ff136f-22c7-46a3-a32d-3725943ce880
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Mapping OutSystems Data Types to XML Data Types

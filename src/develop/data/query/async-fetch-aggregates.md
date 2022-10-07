@@ -1,9 +1,18 @@
 ---
 summary: Use Aggregates with Fetch properties set to On Start and Only on demand, to implement asynchronous calls to the database. This creates a fast UI.
 tags: support-application_development; support-Database; runtime-mobileandreactiveweb;
+locale: en-us
+guid: dddc4580-fe09-42b7-8795-9fc35f3fd803
+app_type: mobile apps, reactive web apps
 ---
 
 # Implement asynchronous data fetching using Aggregates
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 Sometimes you want to update only a part of the Screen, and you can do it by loading data in chunks. For example, you may have a list with employees where clicking an employee name loads the details.
 

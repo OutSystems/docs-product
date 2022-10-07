@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Layout Popup is the layout used to display additional off-canvas information.
+locale: en-us
+guid: 6e0a8f5c-f734-4478-913e-21c6e81e8f1e
+app_type: traditional web apps
 ---
 
 # Layout Popup
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 The Layout Popup is a pre-existing web block useful for displaying additional off-canvas information. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app. 
 

@@ -1,8 +1,17 @@
 ---
 tags: runtime-mobileandreactiveweb; article-page
+locale: en-us
+guid: 191c6d17-5089-4d2e-9848-19e81f69476a
+app_type: mobile apps, reactive web apps
 ---
 
 # Extend Your Mobile and Reactive Apps Using JavaScript
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 JavaScript code can be used in client actions of Reactive and Mobile apps through the **JavaScript element**, which you can drag from the Toolbox to the action flow.
 
@@ -71,7 +80,7 @@ The example below shows a feedback message to users stating that their data have
 $public.FeedbackMessage.showFeedbackMessage("Your data has been submitted.", 1);
 ```
 
-For more information about the available OutSystems APIs check the [OutSystems JavaScript API Reference](<../../../ref/apis/javascript/README.md>).
+For more information about the available OutSystems APIs check the [OutSystems JavaScript API Reference](<../../../ref/apis/javascript/intro.md>).
 
 ### Available objects in each JavaScript element
 
@@ -83,6 +92,6 @@ sign:
 * **$parameters** – Contains the input and output parameters defined for the current JavaScript element. 
 * **$actions** – Contains references to client actions callable from the current JavaScript element scope (client actions either defined in the current module or referenced from another module, like system actions). 
 * **$roles** – Contains all the custom-defined roles for the current module. 
-* **$public** – Contains objects instantiating all public JavaScript API classes and modules. Check the [JavaScript API Reference](<../../../ref/apis/javascript/README.md>) to find all the available modules and functions. 
+* **$public** – Contains objects instantiating all public JavaScript API classes and modules. Check the [JavaScript API Reference](<../../../ref/apis/javascript/intro.md>) to find all the available modules and functions. 
 
 Other objects commonly available in JavaScript in a browser context can also be used, such as "window", "document", "JSON" and "RegExp" objects.

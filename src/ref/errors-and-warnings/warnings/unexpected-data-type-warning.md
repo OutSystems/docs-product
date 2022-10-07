@@ -1,6 +1,9 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Unexpected Data Type TrueChange warnings.
 tags:
+locale: en-us
+guid: 7b112440-68dd-47c3-926d-b59e83cf0327
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Unexpected Data Type Warning

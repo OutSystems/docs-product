@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.WebReference+Kind, ServiceStudio.Model.WebService+Kind
 helpids: 11003, 11001
+locale: en-us
+guid: b3443ec2-7cb3-43e7-a8b9-1651890a5985
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # SOAP Web Service

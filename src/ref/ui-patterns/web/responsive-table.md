@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb;
 summary: Advanced use cases for the Responsive Table UI Pattern.
+locale: en-us
+guid: 7b507cb7-8c2c-4705-a564-69e0bda38397
+app_type: traditional web apps
 ---
 
 # Responsive Table Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

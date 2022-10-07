@@ -1,5 +1,8 @@
 ---
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: ac774bf3-82fc-480e-a633-7652e559d52a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Mapping XML Data Types to OutSystems Data Types
@@ -41,12 +44,13 @@ Choices
 :   Choices will also be created as read-only static entities but with a name like `Choice_<ElementName>`. 
 Along with this static entity, OutSystems will also create a structure to represent the `choice` element itself. This structure will have the following attributes:
 
-    * Choice, the Id of the static entity `Choice_<ElementName>`;
-    * An attribute for each choice option of the respective type.
+* Choice, the Id of the static entity `Choice_<ElementName>`;
 
-    ![](<images/soap-choice-structure.png>)
+* An attribute for each choice option of the respective type.
 
-    To set the value of a WSDL element of type choice, set the Choice attribute to the Id of the desired choice, and fill in the corresponding structure attribute according to the "Choice" value.
+![SOAP choice structure](<images/soap-choice-structure-ss.png>)
+
+To set the value of a WSDL element of type choice, set the Choice attribute to the Id of the desired choice, and fill in the corresponding structure attribute according to the "Choice" value.
 
 
 ## Mapping Limitations

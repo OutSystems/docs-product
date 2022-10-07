@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: e4f2b751-f68b-4d31-b018-a30bf5a7f61a
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Executing Multiple Instance Activities
 
 Use this pattern to execute multiple instances of the same flow of activities. It is specially useful in situations where the number of executed instances is only known at runtime.
@@ -37,6 +43,6 @@ When the process is executed the following occurs:
 
 2. One instance of the [Conditional Start](<../../../ref/lang/auto/Class.Conditional Start.final.md>) is executed per scheduled interview (it is configured that way in its `Start On` property).
 
-3. The **WaitForAllFeedback** wait activity holds the execution of the process.
+3. The **WaitForInterview** wait activity holds the execution of the process.
 
 4. Every time an interview is updated, the **Wait** activity is tentatively ended by executing the **OnClose** callback action: it only ends when all interviews have the feedback filled in.

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: c4c94c54-f617-401a-9074-4a9a058761f6
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Entities Change Management
 
 If the table definition changes or is not consistent with the entity definition, you have to update the entity definition.  

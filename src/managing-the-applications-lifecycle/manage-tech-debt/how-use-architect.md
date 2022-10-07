@@ -1,14 +1,16 @@
 ---
-tags: Architecture Dashboard.
+tags:
 summary: Learn how to Check the technical debt of all the apps in your infrastructure.
-en_title: Getting started as an architect
+locale: en-us
+guid: 5771d1af-cf5a-4e5c-a4c7-79f03a5f99ef
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Getting started as an architect
 
 As an architect, the Architecture Dashboard provides you with an overview of your organization’s technical debt.
 
-From the Apps canvas, you can check the technical debt of all the apps in your infrastructure and take the necessary steps to reduce the technical debt score for problematic areas.
+From the Apps canvas, you can check the technical debt of all the apps in your infrastructure and take the necessary steps to reduce the technical debt score for problematic areas. 
 
 This guide assumes the following:
 

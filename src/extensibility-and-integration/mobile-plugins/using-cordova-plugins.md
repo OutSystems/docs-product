@@ -1,9 +1,18 @@
 ---
 summary: Create your own mobile plugin by wrapping an Apache Cordova plugin into an OutSystems module. Reference the plugin from the npm registry or git repository, or write it from zero.
 tags: runtime-mobile; support-Integrations_Extensions; support-Mobile_Apps
+locale: en-us
+guid: 2d86818a-afda-4680-9090-8966faa38be9
+app_type: mobile apps
 ---
 
 # Using Cordova Plugins
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Use Apache Cordova plugins by wrapping them into modules which you can then reference in your mobile apps. To get started, you can clone the [Template Plugin from Forge](<https://www.outsystems.com/forge/component-overview/1676/template-plugin/>) which has the groundwork for all custom Cordova plugins. You must wrap each plugin in its own dedicated module and application, meaning that if you want to use several plugins you must create an application for each plugin, each containing a single wrapper module. The relevant actions and entities of the wrapper module must be public. The wrapper module should have a meaningful name (for example, "SamplePlugin"). A module that wraps a Cordova plugin should not reference another module that also wraps a Cordova plugin.
 

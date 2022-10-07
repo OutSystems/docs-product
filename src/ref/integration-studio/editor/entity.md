@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: cf34b4c6-2dc9-4ea3-82d0-f77dcc9f68ca
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Entity Editor
 
 The Entity Editor allows you to edit the [properties](<../element-property/entity.md>) of an entity that belongs to your extension.

@@ -1,9 +1,18 @@
 ---
 summary: Assign custom icons for your mobile app, specifying versions for each screen sizes and densities.
 tags: runtime-mobile; support-Mobile_Apps-featured
+locale: en-us
+guid: 4d07edaa-0b7b-41b8-bd1f-59c4b1bfd103
+app_type: mobile apps
 ---
 
 # Modify the App Icon
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 When you create a mobile application, the icon for the app is generated automatically in the app creation wizard. This icon is then used to identify the app in the devices, being automatically adapted to all aspects of the device or context as the density or screen size of the device’s screen or the size of the place where the icon is displayed.
 

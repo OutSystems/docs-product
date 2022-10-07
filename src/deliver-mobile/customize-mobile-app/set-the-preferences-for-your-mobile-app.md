@@ -1,9 +1,18 @@
 ---
 summary: Learn how to set the preferences for your mobile application.
 tags: runtime-mobile
+locale: en-us
+guid: 36e4b86b-db80-4a29-9c79-86cc1c4f7f66
+app_type: mobile apps
 ---
 
 # Set the Preferences for Your Mobile App
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 You may want your mobile application to have some configurations and preferences that allow you to better guarantee behavior requirements and improve the user experience. For example, define mobile app preferences when the app should only work in a specific orientation (portrait or landscape), or when it should only be available on devices holding, at least, a specific minimum mobile platform version to ensure a great experience to your users.
 
@@ -19,7 +28,7 @@ To specify the preferences for your mobile app:
 
 3. Introduce the preferences you want from the [available preferences](https://cordova.apache.org/docs/en/latest/config_ref/#preference) in the JSON value: 
 
-    1. Each preference you want to define is represented as a name/value pair, where the name is the preference name and the value (specified as a string) is its parameter. The preference name is case-sensitive. Check the  preferences JSON template  to avoid mistakes. 
+    1. Each preference you want to define is represented as a name/value pair, where the name is the preference name and the value is its parameter specified as a string (enclosed in double quotes), a boolean, or a number. The preference name is case-sensitive. Check the [preferences JSON template](#preferences-json-template) to avoid mistakes. 
 
         ![](images/image4.png)
 
@@ -31,7 +40,7 @@ To specify the preferences for your mobile app:
 
     ![](images/image02.png)
 
-## Preferences JSON Template
+## Preferences JSON Template { #preferences-json-template }
 
 ```javascript    
 {

@@ -1,6 +1,9 @@
 ---
 summary: Core layout components and APIs used by LifeTime and its plugins.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 03fe77b6-1b3d-4114-84da-0bb10e3ead6c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # LifeTime SDK

@@ -1,6 +1,9 @@
 ---
 summary: OutSystems generates documentation for an exposed SOAP Web Service when you publish its application module.
 tags: 
+locale: en-us
+guid: 07a471e4-c784-44ba-b868-8c90605481c0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Document an Exposed SOAP Web Service
@@ -18,7 +21,7 @@ After publishing, the documentation is available under the module URL at `<Modul
 
 To open the SOAP Web Service documentation, right-click the tree element of your SOAP Web Service in Service Studio and select **Open Documentation**.
 
-![](images/ss-soap-open-documentation.png)
+![Select Open documentation](images/soap-open-documentation-ss.png)
 
 Note: The description of the Input and Output Parameters of the Web Service Methods is not used for documentation purposes.
 

@@ -1,10 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Badge UI Pattern.
+locale: en-us
+guid: f677e159-79fd-4270-adad-fc16e1c49bf4
+app_type: traditional web apps
 ---
 
 # Badge Reference
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

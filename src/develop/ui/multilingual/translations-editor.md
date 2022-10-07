@@ -1,9 +1,18 @@
 ---
 summary: Use this editor to set how translatable resources behave and to set translated texts.
 tags: runtime-traditionalweb; support-application_development
+locale: en-us
+guid: 5b9787c8-9b67-4d45-8f6b-7d5a1c964beb
+app_type: traditional web apps
 ---
 
 # Translations Behavior Editor
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 The **Translations Behavior Editor** allows you to set which [translatable resources](multilingual-web.md) of your application are actually meant to be translated and also to translate individual resources.
 

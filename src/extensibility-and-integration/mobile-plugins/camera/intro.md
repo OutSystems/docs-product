@@ -1,9 +1,18 @@
 ---
 summary: Let your users take pictures in native mobile apps and PWAs. Adjust the picture properties in the native mobile apps. Demo app available to see the plugin in action.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+locale: en-us
+guid: 158347bc-c312-4499-9912-1f1dfeac7d50
+app_type: mobile apps
 ---
 
 # Camera Plugin
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Use the Camera Plugin to let users take pictures with their mobile device. This plugin works with both native mobile apps and progressive web apps (PWAs). The plugin lets you select options like image quality, orientation, and the file format.
 
@@ -73,7 +82,13 @@ When setting the image quality, consider the use case for your app. Check the fo
 | Example use case | Image quality        | Notes                                                     |
 | ---------------- | -------------------- | --------------------------------------------------------- |
 | Profile image    | JPEG 60% (default)   | Sufficient quality for a profile image.                   |
-| Insurance claims | JPEG 85% - 100%, PNG | High quality lets users examine all details in the image. |
+| Insurance claims | JPEG 85% - 100% or PNG | High quality lets users examine all details in the image. |
+
+<div class="info" markdown="1">
+
+Changing the image quality setting applies only to .JPEG files.
+
+</div>
 
 ## Handling errors
 

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 1b37d2df-87ea-4a65-a8c1-82b41ede7e07
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Verify the Extension
 
 The Verify operation checks whether the extension is valid and ready to be published in a Platform Server. This operation involves the following steps:

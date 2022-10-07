@@ -1,9 +1,18 @@
 ---
 summary: Use File Viewer Plugin to let users of your mobile app to view remote or app resource files.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+locale: en-us
+guid: 8f00b7c4-754a-4afd-86ac-740c255458b1
+app_type: mobile apps
 ---
 
 # File Viewer Plugin
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Use File Viewer Plugin to create logic that lets users to open remote or app resource files. In Android users select an app to open the file. iOS provides a native preview for supported file types.
 

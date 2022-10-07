@@ -1,6 +1,9 @@
 ---
 summary: Check how you can send meaningful errors when a REST API method runs into an error.
 tags: 
+locale: en-us
+guid: b8d6dc5c-a55e-4cf2-8215-127ab53ce0db
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Throw a Custom Error in an Exposed REST API

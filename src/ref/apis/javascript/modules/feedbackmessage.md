@@ -1,11 +1,20 @@
 ---
 tags: runtime-mobileandreactiveweb
 summary: Displays personalized feedback messages to the user.
+locale: en-us
+guid: 97a72928-f041-46ef-b4c9-2574f67d986e
+app_type: mobile apps, reactive web apps
 ---
 
 # FeedbackMessage
 
-Displays personalized feedback messages to the user.
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
+
+Display personalized feedback messages when using the [JavaScript element](../../../../extensibility-and-integration/javascript/mobile/intro.md).
 
 ## Summary
 

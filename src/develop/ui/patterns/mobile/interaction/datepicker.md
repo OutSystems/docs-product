@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Date Picker allows the end user to select a single or a range of dates using a calendar.
+locale: en-us
+guid: 1037b7a1-61e2-4f92-a78c-c132cee67995
+app_type: mobile apps, reactive web apps
 ---
 
 # Date Picker
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -21,7 +30,7 @@ In this example, the user selects a date from the calendar, the date is saved in
 
     ![Date Picker widget](<images/datepicker-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -64,6 +73,7 @@ In this example, the user selects a date from the calendar, the date is saved in
 1. To access the date selected by the user, create an **Assign** and set the **DatePicked** to **SelectedDateTime**.
 
     ![Add assign and variable value](<images/datepicker-assign-ss.png>)
+    
 
 1. You can configure the Datepicker by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 
@@ -77,13 +87,13 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-|Properties|Description|
-|---|---|
-|DateFormat (Text): Optional| Set the input date format. If empty, the date format will be the same as the server format. When using formats with time, make sure to set the **TimeFormat** property. The following are some examples:<ul><li>"DD/MM/YYYY" - 15/05/2022 </li> <li>"MM/DD/YYYY" - 05/15/2022</li><li>"DD MMM YYYY" - 15 May 2022</li><li>"DD-MMM-YYYY" - 15-May-2022</li><li>"DD.MMM.YYYY" - 15.May.2022</li><li>"MMM DDD, YYYY" - May Sun, 2022</li><li>"MMM DDD, YY" - May Sun, 22</li></ul> |
-|ShowTodayButton (Boolean): Optional | If True, the **Today** button is displayed below the Date Picker.  This button allows users to pick the date of the current day. If False, the **Today** Button is not displayed. The default value is False.|
-|TimeFormat (DatePickerTimeFormat Identifier): Optional|Select the time format (12 or 24 hours). By default, no time is shown.|
-|OptionalConfigs.InitialDate (Date Time): Optional|The initial selected date for the Date Picker. If not set, no initial date is selected.|
-|OptionalConfigs.MinDate (DateTime): Optional|All days before this date are disabled.|
-|OptionalConfigs.MaxDate (DateTime): Optional|All days after this date are disabled.|
-|OptionalConfigs.FirstWeekDay (DatePickerWeekDay Identifier): Optional|Defines which week day is displayed first.|
-|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <br/><br/>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet).|
+| Properties                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DateFormat (Text): Optional                                           | Set the input date format. If empty, the date format will be the same as the server format. When using formats with time, make sure to set the **TimeFormat** property. The following are some examples:<ul><li>"DD/MM/YYYY" - 15/05/2022 </li> <li>"MM/DD/YYYY" - 05/15/2022</li><li>"DD MMM YYYY" - 15 May 2022</li><li>"DD-MMM-YYYY" - 15-May-2022</li><li>"DD.MMM.YYYY" - 15.May.2022</li><li>"MMM DDD, YYYY" - May Sun, 2022</li><li>"MMM DDD, YY" - May Sun, 22</li></ul>                                                                                                                                                       |
+| ShowTodayButton (Boolean): Optional                                   | If True, the **Today** button is displayed below the Date Picker.  This button allows users to pick the date of the current day. If False, the **Today** Button is not displayed. The default value is False.                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| TimeFormat (DatePickerTimeFormat Identifier): Optional                | Select the time format (12 or 24 hours). By default, no time is shown.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| OptionalConfigs.InitialDate (Date Time): Optional                     | The initial selected date for the Date Picker. If not set, no initial date is selected.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| OptionalConfigs.MinDate (DateTime): Optional                          | All days before this date are disabled.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| OptionalConfigs.MaxDate (DateTime): Optional                          | All days after this date are disabled.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| OptionalConfigs.FirstWeekDay (DatePickerWeekDay Identifier): Optional | Defines which week day is displayed first.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ExtendedClass (Text): Optional                                        | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <br/><br/>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet). |

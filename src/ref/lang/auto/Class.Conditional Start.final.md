@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.ProcessNodes+ConditionalStart+Kind, ServiceStudio.Model.ReferenceConditionalStart+Kind
 helpids: 0
+locale: en-us
+guid: af6bd145-bc87-4f22-b917-dfff49c8691e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Conditional Start

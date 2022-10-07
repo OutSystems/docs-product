@@ -1,15 +1,13 @@
 ---
 summary: Learn how to create and use a popup in your application.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
+locale: en-us
+guid: f43cd1e1-13d3-4960-b025-4f75f9383ee8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create and use a Popup
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 You can use a popup to show information to users or ask them to enter information. Correctly used popups help you create a good user experience, because the users remain on the same page.
 

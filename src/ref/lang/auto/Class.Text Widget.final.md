@@ -3,6 +3,9 @@ kinds: ServiceStudio.Model.NRWebWidgets+Text+Kind, ServiceStudio.Model.WebWidget
 helpids: 17064
 summary: Reference information on the Text widget for enclosing the text that users type in your screen or block.
 tags: outsystems-designing-screens; reference; designing-screens; text-widget
+locale: en-us
+guid: 5886405f-8490-4b2c-8eff-06f95ceec41d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Text Widget

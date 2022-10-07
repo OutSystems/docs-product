@@ -1,17 +1,20 @@
 ---
 summary: Edit the PWA manifest and create a custom service worker.
 tags: support-application_development; runtime-mobile;
+locale: en-us
+guid: 418aac4c-1cdc-40b2-9b69-ba4fd68527f7
+app_type: mobile apps
 ---
 
 # Advanced settings and customizations
 
-Progressive web app (PWA) is an evolving and open technology. This document is about settings and techniques that go beyond the built-in capabilities of the OutSystems PWAs.
-
 <div class="info" markdown="1">
 
-The team would love to hear what you think of this document and if it helps you. Please **leave feedback** in the feedback section. If you want to get a reply, select **Yes, you may contact me about this feedback**.
+Applies only to Mobile Apps.
 
 </div>
+
+Progressive web app (PWA) is an evolving and open technology. This document is about settings and techniques that go beyond the built-in capabilities of the OutSystems PWAs.
 
 ## Working with the PWA manifest
 

@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Icon Badge displays numerical information as notification.
+locale: en-us
+guid: 085bea26-5d10-41b4-a31b-9e840315b759
+app_type: mobile apps, reactive web apps
 ---
 
 # Icon Badge
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 You can use the Icon Badge UI Pattern to display numerical information as a notification. For example, the Icon Badge UI pattern is frequently used to notify users about the number of unread emails, unopened messages, or new tasks they may have.
 
@@ -19,7 +28,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/iconbadge-2-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -65,9 +74,9 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property | Description |
-|---|---|
-| Number (Integer): Mandatory | The number that appears inside the badge. Set this to a data source that contains the value you want to display. <p>Examples <ul><li>_VariableName_ - Displays the value that the variable "VariableName" holds at that time.</li><li>_ExampleAggregate.Name_ - Displays the names contained in the records returned by the "ExampleAggregate" aggregate execution.</li></ul></p> |
-| Color (Color Identifier): Optional | Set the icon badge's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the icon badge. <p>Examples <ul><li>Blank - Displays the icon badge in the color you chose when creating the app. This is the default.</li><li>Entities.Color.Red - Displays a red icon badge.</li></ul></p> |
-| IsLight (Boolean): Optional | Specify the badge's background and text color. <p>Examples <ul><li>True - A brighter hue of the color is applied to the badge and a darker color to the text.</li><li>False - A darker hue of the color is applied to the badge and a lighter color to the text. This is the default.</li></ul></p> |
-| ExtendedClass (Text):Optional | Adds custom style classes to the Pattern.You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| Property                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Number (Integer): Mandatory        | The number that appears inside the badge. Set this to a data source that contains the value you want to display. <p>Examples <ul><li>_VariableName_ - Displays the value that the variable "VariableName" holds at that time.</li><li>_ExampleAggregate.Name_ - Displays the names contained in the records returned by the "ExampleAggregate" aggregate execution.</li></ul></p>                                                                                                                                                                                                                                     |
+| Color (Color Identifier): Optional | Set the icon badge's background color. Red, orange, yellow, lime, green, blue, violet, and pink are just some of predefined colors available for the icon badge. <p>Examples <ul><li>Blank - Displays the icon badge in the color you chose when creating the app. This is the default.</li><li>Entities.Color.Red - Displays a red icon badge.</li></ul></p>                                                                                                                                                                                                                                                         |
+| IsLight (Boolean): Optional        | Specify the badge's background and text color. <p>Examples <ul><li>True - A brighter hue of the color is applied to the badge and a darker color to the text.</li><li>False - A darker hue of the color is applied to the badge and a lighter color to the text. This is the default.</li></ul></p>                                                                                                                                                                                                                                                                                                                   |
+| ExtendedClass (Text):Optional      | Adds custom style classes to the Pattern.You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: ae415dc5-20df-4cc4-9726-f02f47645ce8
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Add an Action
 
 Once you have created your extension you may manually add the actions that you want to expose in the extension.

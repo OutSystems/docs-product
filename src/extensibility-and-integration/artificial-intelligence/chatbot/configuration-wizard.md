@@ -1,6 +1,9 @@
 ---
 summary: Chatbot Configurator is a cloud wizard that helps you set up you chatbot backend in Azure.
 tags:
+locale: en-us
+guid: a812ce9d-d668-4fc8-9d12-aab9f5f111f3
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Chatbot configuration wizard

@@ -1,9 +1,18 @@
 ---
 summary: Specify custom splash screens for your mobile app adapted to all screen sizes and densities.
 tags: runtime-mobile; support-Front_end_Development-featured
+locale: en-us
+guid: f8dfa815-8c3e-4906-9378-e9d91ad6b4a4
+app_type: mobile apps
 ---
 
 # Use Custom Splash Screens
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 By default, mobile applications have a custom splash screen displaying the main color defined in the app creation wizard. This splash screen is displayed after the Operating System loads your app (black screen) and after the WebView finishes loading the content (white screen). 
 

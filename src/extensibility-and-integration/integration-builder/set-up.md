@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 617ec597-a128-4b2a-872f-4a3a5856628c
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # How to set up Integration Builder
 
 Integration Builder is a Software as a Service (SaaS) that connects to your OutSystems environment to authenticate and validate user connections. Integration Builder works with Integration Manager to keep the status of your integrations current, so it needs to be able to connect with the environments to which you deploy the integrations. In addition, Integration Builder is available in all OutSystems editions.  
@@ -14,9 +20,9 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
 * All environments, except for the LifeTime environment, must:
 
-      * Use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.
+    * Use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.
 
-      * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. The Integration Builder will use the environment's public DNS hostname to communicate. Check [Integration Builder network requirements](../../setup/network-requirements.md#integration-builder) for detailed information.
+    * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. The Integration Builder will use the environment's public DNS hostname to communicate. Check [Integration Builder network requirements](../../setup-maintain/setup/network-requirements.md#integration-builder) for detailed information.
 
 <div class="info" markdown="1">
 

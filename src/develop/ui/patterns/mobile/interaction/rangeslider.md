@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Allows the user select a single value between two range values.
+locale: en-us
+guid: 788ee1a3-fd00-43dc-afc9-1cf6d25a1805
+app_type: mobile apps, reactive web apps
 ---
 
 # Range Slider
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -31,7 +40,7 @@ In this example, we create a Range Slider that allows the user select the number
 
     ![Range Slider widget](images/rangeslider-widget-ss.png)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -67,7 +76,7 @@ In this example, we create a Range Slider that allows the user select the number
 
 1. To create a variable for the expression, right-click your screen name, select **Add Local Variable**, and on the **Properties** tab, enter a name and data type (in this example, we use **Decimal**).
 
-    ![Create a local v  ariable of type decimal](images/rangeslider-locvar-ss.png)
+    ![Create a local variable of type decimal](images/rangeslider-locvar-ss.png)
 
 1. To bind the new variable to the expression, double-click the expression widget, and in the **Expression Value** editor, select the variable you just have created, and click **Done**.
 
@@ -85,17 +94,17 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property | Description |
-|---|---|
-|MinValue (Decimal): Mandatory | Slider's minimum value. |
-|MaxValue (Decimal): Mandatory | Slider's maximum value. |
-|StartingValue (Decimal): Mandatory | Value selected by default when the page is rendered. Must be between min and max values. |
-|Orientation (Orientation Identifier): Optional|Sets the Range Slider direction. Default value is horizontal.|
-|Size (Text): Optional | Sets the Range Slider size. If horizontal, the size is the width. Otherwise (vertical), the size is the height.  Accepts any kind of unit (px, %, vw). Default value is 100%.|
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
-|OptionalConfigs.ShowFloatingLabel (Boolean): Optional |Set to True to add a floating label above the handler. Default value is False. |
-|OptionalConfigs.Step (Decimal): Optional |  Slider moves in increments of steps. If the step is set to 10, the slider increases or decreases in units of 10, for example, 0 to 10, to 20, to 30, and so on. |
-|OptionalConfigs.ShowTickMarks (Boolean): Optional |  Set to True to display tick marks below the slider. Default value is False. To generate the tick marks, you must set the TickMarksInterval to True.|
-|OptionalConfigs.TickMarksInterval (Integer): Optional | Range interval after which a tick mark is displayed (when ShowTickMarks is set to True). For example, if TickMarksInterval = 5, a tick mark is shown for each 5 steps. The value cannot be less than 0 (library restraint).|
-|OptionalConfigs.IsDisabled (Boolean): Optional | Set as True to disable the Range Slider. Default value is False. |
+| Property                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MinValue (Decimal): Mandatory                         | Slider's minimum value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| MaxValue (Decimal): Mandatory                         | Slider's maximum value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| StartingValue (Decimal): Mandatory                    | Value selected by default when the page is rendered. Must be between min and max values.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Orientation (Orientation Identifier): Optional        | Sets the Range Slider direction. Default value is horizontal.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Size (Text): Optional                                 | Sets the Range Slider size. If horizontal, the size is the width. Otherwise (vertical), the size is the height.  Accepts any kind of unit (px, %, vw). Default value is 100%.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ExtendedClass (Text): Optional                        | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| OptionalConfigs.ShowFloatingLabel (Boolean): Optional | Set to True to add a floating label above the handler. Default value is False.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| OptionalConfigs.Step (Decimal): Optional              | Slider moves in increments of steps. If the step is set to 10, the slider increases or decreases in units of 10, for example, 0 to 10, to 20, to 30, and so on.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| OptionalConfigs.ShowTickMarks (Boolean): Optional     | Set to True to display tick marks below the slider. Default value is False. To generate the tick marks, you must set the TickMarksInterval to True.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| OptionalConfigs.TickMarksInterval (Integer): Optional | Range interval after which a tick mark is displayed (when ShowTickMarks is set to True). For example, if TickMarksInterval = 5, a tick mark is shown for each 5 steps. The value cannot be less than 0 (library restraint).                                                                                                                                                                                                                                                                                                                                                                                                             |
+| OptionalConfigs.IsDisabled (Boolean): Optional        | Set as True to disable the Range Slider. Default value is False.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 

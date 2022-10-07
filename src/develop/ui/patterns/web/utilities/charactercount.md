@@ -1,13 +1,16 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Character Count displays the number of characters left to be entered in a target input field.
+locale: en-us
+guid: 35ae7f29-b021-4f09-a081-66c668b816e4
+app_type: traditional web apps
 ---
 
 # Character Count
 
 <div class="info" markdown="1">
 
-We’ve been working on this article. Please let us know how useful this new version is by voting.
+Applies only to Traditional Web Apps.
 
 </div>
 
@@ -25,7 +28,7 @@ You can use the Character Count UI Pattern to display the number of characters a
 
     ![](<images/charactercount-7-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -53,8 +56,8 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property |  Description |
-|---|---|
-| InputWidgetId (Text): Mandatory | The Input widget name that counts the characters. <p> Examples <ul><li>MyInput.Id - Counts the characters in the MyInput input widget.</li></ul> </p>|
-| Limit (Integer): Mandatory  | Character count limit. This value should be the same as the maximum length of the Input widget. <p> Examples <ul><li>180 - Sets the maximum number of characters a user can enter into the Input widget to 180</li></ul> </p>|
-| IsDescending (Boolean): Optional  | Defines whether the count is ascending or descending. <p> Examples <ul><li>_False_ - The count goes from 0 to the value set for the **Limit** property</li><li>_True_ - The count goes from the value set in the **Limit** property to 0. This is the default setting.</li></ul></p> |
+| Property                         | Description                                                                                                                                                                                                                                                                          |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWidgetId (Text): Mandatory  | The Input widget name that counts the characters. <p> Examples <ul><li>MyInput.Id - Counts the characters in the MyInput input widget.</li></ul> </p>                                                                                                                                |
+| Limit (Integer): Mandatory       | Character count limit. This value should be the same as the maximum length of the Input widget. <p> Examples <ul><li>180 - Sets the maximum number of characters a user can enter into the Input widget to 180</li></ul> </p>                                                        |
+| IsDescending (Boolean): Optional | Defines whether the count is ascending or descending. <p> Examples <ul><li>_False_ - The count goes from 0 to the value set for the **Limit** property</li><li>_True_ - The count goes from the value set in the **Limit** property to 0. This is the default setting.</li></ul></p> |

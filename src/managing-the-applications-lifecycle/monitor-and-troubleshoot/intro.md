@@ -1,6 +1,9 @@
 ---
 summary: Understand the current state of an environment and monitor problems impacting end users.
 tags: support-devOps; support-monitoring
+locale: en-us
+guid: 636a2bea-478d-4703-aaf8-e2f8ee514f2c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Monitor and Troubleshoot
@@ -47,7 +50,7 @@ Also, OutSystems exposes the collected data and shares monitoring points that en
 
 ## Monitoring Responsibilities
 
-The scope of your monitoring responsibility depends on the [setup of your OutSystems infrastructure](../../setup/possible-setups/intro.md) - **cloud** or **on-premises**.
+The scope of your monitoring responsibility depends on the [setup of your OutSystems infrastructure](../../setup-maintain/setup/possible-setups/intro.md) - **cloud** or **on-premises**.
 
 OutSystems Cloud
 :   OutSystems guarantees the monitoring of the infrastructure layer components (servers and networking) and the platform main services in the middleware layer (web servers, deployment controllers, database). The customer is responsible for monitoring application usage (errors and performance), external integrations, end user experience, and business outcomes.

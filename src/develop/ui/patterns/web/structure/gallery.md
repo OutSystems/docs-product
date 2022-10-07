@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Gallery enables the users to sequentially browse the content when there are many cards grouped into one or more collections.
+locale: en-us
+guid: fa8125c1-ec09-4d4f-8c84-41be51e007b8
+app_type: traditional web apps
 ---
 
 # Gallery
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 You can use the Gallery UI Pattern to display groups of content. This UI pattern allows users to sequentially browse images, with the notion of a beginning and an end. 
 
@@ -19,7 +28,7 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
     ![](<images/gallery-8-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -71,12 +80,12 @@ The following are examples of how the items are display depending on how many yo
 
 ## Properties
 
-| **Property** |  **Description** |
-|---|---|
-| ItemsDesktop (Integer): Optional |  Number of Items displayed per line on a desktop. | 
-| ItemsTablet (Integer): Optional |  Number of Items displayed per line on a tablet. | 
-| ItemsPhone (Integer): Optional|  Number of Items displayed per line on a phone. |
-|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
+| **Property**                     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ItemsDesktop (Integer): Optional | Number of Items displayed per line on a desktop.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ItemsTablet (Integer): Optional  | Number of Items displayed per line on a tablet.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ItemsPhone (Integer): Optional   | Number of Items displayed per line on a phone.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ExtendedClass (Text): Optional   | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Additional notes
 

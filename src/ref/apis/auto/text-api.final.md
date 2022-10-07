@@ -1,6 +1,9 @@
 ---
 summary: Provides actions to manipulate character strings such as joining, splitting, search and replace using regular expressions, and custom formatting of DateTime expressions.
 tags: 
+locale: en-us
+guid: 6892cbf0-85c1-4403-8d32-0e4a89ee1331
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Text API

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 348c38a2-17f0-4443-a0b2-9d9bce14397e
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # ExBuilder_PluginsWrapper_MLib
 
 Module that contains several common objects and functions used across the mobile application related with plugins. This includes wrappers for methods that we use at the components level or some methods where we added some extra logic.

@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Layout Top Menu uses the space available on the top for navigation.
+locale: en-us
+guid: a4be094e-5543-4200-8b86-4a6b834f7cc6
+app_type: traditional web apps
 ---
 
 # Layout Top Menu
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 The Layout Top Menu is a pre-existing web block for a fixed top menu and is useful for simple apps, without a complex navigation structure. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app.
 

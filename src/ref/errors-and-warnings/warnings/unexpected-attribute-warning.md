@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 16902581-2d4e-4919-b101-7db15909734f
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Unexpected Attribute Warning
 
 Message

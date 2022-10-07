@@ -1,5 +1,8 @@
 ---
 summary: Import your flow templates to Experience Builder.
+locale: en-us
+guid: c306701e-60ed-4267-9514-2d9834a9523f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Creating and Importing Flow Templates

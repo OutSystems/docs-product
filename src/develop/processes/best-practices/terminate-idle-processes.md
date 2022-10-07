@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 129863e4-4a6a-4315-8954-d07138692d0c
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Terminate Idle Processes
 
 When you design a [Process](../intro.md) that stays idle for a long time, it may have a negative impact on the deployment of applications. This is essentially due to:

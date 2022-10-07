@@ -1,15 +1,13 @@
 ---
-tags: handle-feedback-users; app-feedback; users-feedback
+tags:
 summary: Learn how to handle the feedback submitted by users.
+locale: en-us
+guid: b8db2ed6-0551-41c8-b16d-3063670c0417
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Handle the submitted feedback
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 When you [enable user feedback for your apps](user-feedback-enable.md), the App Feedback application collects all the feedback your users send for each app. To act upon the feedback received, follow the steps below.
 

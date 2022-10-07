@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Layout Login Split is a custom page layout for the login screen that divides the page into 2 columns.
+locale: en-us
+guid: 361243bd-b558-4b00-80b4-5f6bc67aaa79
+app_type: traditional web apps
 ---
 
 # Layout Login Split
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 The Layout Login Split is a pre-existing web block for a login screen that divides the page into 2 columns. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app.
 

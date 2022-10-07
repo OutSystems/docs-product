@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.EntityAttribute+Kind, ServiceStudio.Model.ReferenceEntityAttribute+Kind
 helpids: 0
+locale: en-us
+guid: a5293dd0-7718-4b6e-a560-a807edb69083
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Entity Attribute

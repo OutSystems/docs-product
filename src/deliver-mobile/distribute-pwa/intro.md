@@ -1,6 +1,9 @@
 ---
 summary: Develop a progressive web app (PWA) by creating a mobile app and toggling on the option to distribute the app as PWA. Try your app in Android and iOS.
 tags: support-application_development, article-page
+locale: en-us
+guid: 92faa93c-8b74-4d6d-9914-229c3fa33813
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Distribute as a progressive web app
@@ -67,7 +70,7 @@ Create a mobile app and turn on the toggle **Distribute as PWA** in the app deta
 
 <div class="warning" markdown="1">
 
-Mobile best practices apply for PWA development as well, particularly about [designing lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#Design_a_Lightweight_Local_Storage).
+Mobile best practices apply for PWA development as well, particularly about [designing lightweight local storage](https://success.outsystems.com/Documentation/Best_Practices/Development/OutSystems_Mobile_Best_Practices#lightweight-local-storage).
 
 </div>
 
@@ -161,11 +164,6 @@ Having issues with your PWA? Check out [Troubleshooting and known issues](troubl
 
 * [PWAs overview and best practices](https://www.outsystems.com/training/courses/164/pwa-overview-and-best-practices/) is an intermediate course about progressive web apps in OutSystems. Learn more about differences between PWAs and native apps, advantages and challenges, installation and desktop support.
 
-<div class="info" markdown="1">
-
-The team would love to hear what you think of this document and if it helps you. Please **leave feedback** in the feedback section. If you want to get a reply, select **Yes, you may contact me about this feedback**.
-
-</div>
 
 ______________________________________________________________
 _QR CODE is a registered trademark of Denso Wave Incorporated._

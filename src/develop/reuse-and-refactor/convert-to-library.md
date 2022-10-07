@@ -1,9 +1,18 @@
 ---
 summary: How to convert an existing Mobile or Reactive module to a Library.
 tags: runtime-mobileandreactiveweb
+locale: en-us
+guid: 08e6258e-4543-4232-b5dc-1fd3707a0ecf
+app_type: mobile apps, reactive web apps
 ---
 
 # Convert to Library
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 You can convert an existing **Mobile** or **Reactive** module to a Library. Note that there are specific constraints in Libraries that might imply some changes to the modules before the conversion can take place.
 

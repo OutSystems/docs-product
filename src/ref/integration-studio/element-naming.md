@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 17d3cb2c-81bd-4784-aacf-7c382295c1a0
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Naming Elements in Integration Studio
 
 An **element name** is a sequence of characters [Aa-Zz], numbers, and/or the character "\_"; spaces are not allowed. The name of the element must start with a character [Aa-Zz]. Any character that is not allowed, for example "space" or "ç", is automatically translated, by Integration Studio, to "\_".

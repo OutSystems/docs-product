@@ -1,6 +1,9 @@
 ---
 summary: Use Static Entities for immutable data.
-tags: modeling-data; static-entities
+tags:
+locale: en-us
+guid: a0ab595d-66a9-4bee-988a-d12ba224b0e5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Static Entities
@@ -11,11 +14,6 @@ The only action available for the Static Entities is the **Get&lt;StaticEntity&g
 
 When modeling your data, keep in mind that Static Entities can only contain foreign keys of other Static Entities. For more information check out [Entity Relationships](relationship/intro.md).
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## Create a Static Entity
 

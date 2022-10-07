@@ -3,10 +3,18 @@ kinds: ServiceStudio.Plugin.NRWidgets.ListItemDescriptor
 helpids: 30031
 summary: Reference information on the List Item widget for allowing you to displays a list item with full swipe behavior capability, containing a List Action widget to define the swiping behavior.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; list-item-widget; list-item-swipe
+locale: en-us
+guid: 7378bd28-e563-4ca9-bede-731dca5fa49f
+app_type: mobile apps, reactive web apps
 ---
 
 # List Item
 
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 Displays a list item with full swipe behavior capability, containing a [List Action widget](<ServiceStudio.Plugin.NRWidgets.ListItemAction.final.md>) to define the swiping behavior.
 

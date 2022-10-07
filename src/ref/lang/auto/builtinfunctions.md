@@ -1,4 +1,7 @@
 ---
+locale: en-us
+guid: f0205fd6-02d8-41e2-b681-29947882b41b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Built-in Functions

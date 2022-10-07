@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Progress Bar UI Pattern.
+locale: en-us
+guid: e574e089-b093-408e-9ed1-6850d664a81d
+app_type: traditional web apps
 ---
 
 # Progress Bar Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

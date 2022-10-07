@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Time Picker UI Pattern.
+locale: en-us
+guid: 19d186e8-664b-4066-9e83-e866c45cbba7
+app_type: traditional web apps
 ---
 
 # Time Picker Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and Classes
 

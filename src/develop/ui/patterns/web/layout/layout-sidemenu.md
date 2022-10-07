@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Layout Side Menu uses the space available on the side to improve navigation. 
+locale: en-us
+guid: a2d35777-96f1-42e8-b9b6-760eb59d24cd
+app_type: traditional web apps
 ---
 
 # Layout Side Menu
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 The Layout Side Menu is a pre-existing web block for a side menu. The web block is located in **UI Flows > OutSystemsUIWeb > Layouts**, and contains various placeholders and widgets that you can customize. You can then reuse and apply the web block to any of the screens in your app.
 

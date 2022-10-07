@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: f55fcb70-f968-4223-9b1c-8f9136349e41
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Public Action Error
 
 The `Invalid Public Action` error is issued in the following situations:

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 00000ca7-49ce-4972-b801-0f992f61c16a
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Integration Studio Errors
 
 The errors displayed when you are [verifying](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-verify.md>) or [publishing](<../../../extensibility-and-integration/integration-studio/extension-life-cycle/extension-1-cp.md>) an extension are listed below.

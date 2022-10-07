@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: c2ae03b0-1005-4a66-a5c6-72b8387e779c
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Error Handler Error
 
 The `Invalid Error Handler` error is issued in the following situations:

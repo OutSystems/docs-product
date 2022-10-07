@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 5f57c113-47fb-4a99-b6f6-377b71ff2227
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # HTML Injection Warning
 
 Message

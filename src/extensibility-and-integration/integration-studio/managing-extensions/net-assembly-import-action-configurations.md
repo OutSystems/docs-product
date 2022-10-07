@@ -1,8 +1,14 @@
+---
+locale: en-us
+guid: 8196d55c-6aeb-47d5-a855-02b92e4244f4
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Supported Configurations for Import Actions from .NET Assembly
 
 The following list provides information on the supported configurations and limitations for the **Import Actions from .NET Assembly** wizard in the current Integration Studio version.
 
-For the supported assembly versions please check the [System Requirements](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/OutSystems_Platform_system_requirements>).  
+For the supported assembly versions please check the [System Requirements](../../../setup-maintain/setup/system-requirements.md#integration-studio).  
   
 
 ## Imported Elements

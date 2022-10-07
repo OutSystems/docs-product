@@ -1,6 +1,9 @@
 ---
 summary: Use your own .NET code to customize the information that is sent in requests or received in responses of consumed REST APIs.
 tags: 
+locale: en-us
+guid: 79eee8b9-b6ae-43e0-8127-9d6004f24ec4
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Advanced Customizations

@@ -1,6 +1,9 @@
 ---
 summary: Links to additional accessibility resources (evaluation tools, screen readers, color and contrast checkers, practices)
-tags: accessibility; accessible-apps; accessible-applications; reactive-web-accessibility; outsystems-accessibility; outsystems-accessible-apps; outsystems-accessible-applications; reactive-web-accessibility; outsystems-wcag; outsystems-aria; wcag; aria;
+tags:
+locale: en-us
+guid: ee0ffa43-b179-4214-bcd2-3b692817c51c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Links to additional accessibility resources

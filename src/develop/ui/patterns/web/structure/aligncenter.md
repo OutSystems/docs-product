@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Align Center places content horizontally or vertically within a container.
+locale: en-us
+guid: 88f0dd67-0dcf-44c3-ad3e-41977550015c
+app_type: traditional web apps
 ---
 
 # Align Center
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 You can use Align Center UI Pattern to center content horizontally or vertically on the screen. 
 
@@ -19,7 +28,7 @@ This example shows you how to center align a user's name and initials.
 
     ![](<images/aligncenter-2-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -59,10 +68,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property** |  **Description** |  
-|---|---|
-| Orientation (Orientation Identifier): Optional | Set the content orientation, either horizontal or vertical. | 
-|ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
+| **Property**                                   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Orientation (Orientation Identifier): Optional | Set the content orientation, either horizontal or vertical.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ExtendedClass (Text): Optional                 | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 
 

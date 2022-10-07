@@ -3,6 +3,9 @@ kinds: ServiceStudio.Plugin.NRWidgets.UploadDescriptor
 helpids: 30045
 summary: Reference information on the Upload widget for allowing the users to browse and select a local file to upload into the application.
 tags: outsystems-designing-screens; reference; designing-screens; upload-widget
+locale: en-us
+guid: 2abe40f3-97c8-4405-b758-3baa7e638b72
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Upload
@@ -50,7 +53,7 @@ Notes:
 <tr>
 <td title="FileName">File Name</td>
 <td>Holds the name of the file.</td>
-<td></td>
+<td>Yes</td>
 <td></td>
 <td></td>
 </tr>

@@ -1,6 +1,9 @@
 ---
 summary: Provides actions to manipulate HTTP Requests and Responses.
 tags: 
+locale: en-us
+guid: 762585b4-510c-4749-b5d9-646e1c46f2e0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # HTTPRequestHandler API
@@ -51,7 +54,7 @@ Action | Description
 [PostRequest_AddArgument](<#PostRequest_AddArgument>) | Builds arguments list for a POST HTTP request, adding a new text parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example).
 [PostRequest_AddBinaryArgument](<#PostRequest_AddBinaryArgument>) | Builds arguments list for an HTTP request, adding a new binary parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example).
 [PostRequest_Submit](<#PostRequest_Submit>) | Submit an HTTP POST request given the POST arguments and the URL. Returns the response content as a string and as binary data.
-[ReplaceURLDomain](<#ReplaceURLDomain>) | Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.
+[ReplaceURLDomain](<#ReplaceURLDomain>) | Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.<br/>If the URL starts with the protocol (`http:` or `https:`), the host is removed from the URL and the remaining part is concatenated with the domain of the current request. Otherwise, the URL is considered as relative and it's concatenated with the one from the current request.
 [RunJavaScript](<#RunJavaScript>) | Runs the provided JavaScript code in the browser.
 [SetBaseTag](<#SetBaseTag>) | Sets the base tag of the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
 [SetCookie](<#SetCookie>) | Sets a cookie.
@@ -712,7 +715,8 @@ BinaryContentType
 
 ### ReplaceURLDomain { #ReplaceURLDomain }
 
-Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.
+Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.  
+If the URL starts with the protocol (`http:` or `https:`), the host is removed from the URL and the remaining part is concatenated with the domain of the current request. Otherwise, the URL is considered as relative and it's concatenated with the one from the current request.
 
 *Inputs*
 

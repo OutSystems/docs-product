@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 731fa171-3e4d-40e0-add4-8d9b16ed0d08
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Code the Extension
 
 After [defining your extension](<extension-define.md>) in Integration Studio, you have to code the extension and develop it using a .NET IDE. You can specify the IDE to be used in the [Options Window](<../../../ref/integration-studio/menu/edit/options.md>). Learn more on how to [Configure Integration Studio](<https://www.outsystems.com/goto/howto-configure-integration-studio>).

@@ -1,6 +1,9 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Invalid Expression TrueChange errors
 tags:
+locale: en-us
+guid: b1d6acd4-90d9-40e2-b650-e954003abd71
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Expression Error

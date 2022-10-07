@@ -1,14 +1,12 @@
 ---
 summary: How to define user classification rules for identifying Internal Users.
+locale: en-us
+guid: 8cb73d92-a60d-4133-9f95-67ef4505932d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Classify Users as Internal Users
 
-<div class="info" markdown="1">
-
-Applies to OutSystems licenses purchased after January 2020.
-
-</div>
 
 OutSystems identifies two different types of registered end users for licensing purposes: [**Internal Users** and **External Users**](intro.md#internal-external).
 
@@ -118,7 +116,7 @@ Note that any account with the same username or email that exists in another ten
 
 To better understand this, picture a scenario where you have a company providing a SaaS solution to two insurance companies.
 
-In this scenario, one person can be a customer of both insurance companies and have insurance products in both companies and be using the exact same email address in his contact details in both companies also.
+In this scenario, one person can be a customer of both insurance companies and have insurance products in both companies and be using the exact same email address in their contact details in both companies also.
 
 So, although the user exists in both tenants, it is not a shared account, counting that way as a different user for each company.
 

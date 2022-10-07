@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 49f299a3-b4f6-4ae6-b422-baf45dfe54a6
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Test Automation in the Delivery Lifecycle
 
 Introducing automated testing as part of the development-and-release lifecycles can mean changes in the way the application are developed and delivered. Some of these changes come from DevOps culture, which incorporates vertical teams. Vertical teams participate from the point of the business idea through to application deployment and monitoring in production. Tasks in the release cycle are automated to accelerate lead times. 
@@ -14,7 +20,7 @@ What we're saying is that you must bring Testing and QA processes to the table f
 
 ## The Three Roles Involved in the Process
 
-If you don't team up the way we just proposed, the following workflow is what usually happens.The PO or BA adds the acceptance criteria when he first writes the user story and hands it over to developers.
+If you don't team up the way we just proposed, the following workflow is what usually happens.The PO or BA adds the acceptance criteria when they first write the user story and hands it over to developers.
 
 When developers pick it up, they have a lot of questions about eventual behaviors that are not strictly described. So they hand the user story back to clarify their questions and possibly translate them into new acceptance criteria scenarios.
 

@@ -1,6 +1,9 @@
 ---
 summary: Allows manipulating runtime configurations for the environment.
 tags: 
+locale: en-us
+guid: 66bc7e5d-11fc-4670-a85e-4ac5e0defd1c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # PlatformRuntime API

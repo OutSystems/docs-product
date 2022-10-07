@@ -1,6 +1,9 @@
 ---
 summary: Use the RuntimePublic.Db API to insert data in the application database.
 tags: 
+locale: en-us
+guid: 58b8df19-233a-40bb-ac4a-e5936cdcbd81
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Insert data in the application database

@@ -1,6 +1,9 @@
 ---
 summary: Allow end users to check the details of a record by navigating to another screen.
-tags: support-application_development; support-Mobile_Apps; support-webapps
+tags:
+locale: en-us
+guid: 407dfc26-80f5-440c-b3e1-56d8e7d27ce8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Navigate to a Detail Screen

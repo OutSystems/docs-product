@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Advanced use cases for the Lightbox Image UI Pattern.
+locale: en-us
+guid: b0e2b293-97b8-47b4-abfe-d5b99df4bc3c
+app_type: mobile apps, reactive web apps
 ---
 
 # Lightbox Image Reference
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 ## Adding a Filter to an Open Image
 

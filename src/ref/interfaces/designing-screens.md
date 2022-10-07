@@ -1,15 +1,13 @@
 ---
 summary: Reference information on elements available for designing screens.
 tags: outsystems-designing-screens; reference; designing-screens
+locale: en-us
+guid: 9a6e61ee-eaae-442e-bbb6-6edde598b908
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Designing Screens
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 This page contains an overview of widgets. It also links to pages that provide additional information about the widgets available to help you design Screens.
 

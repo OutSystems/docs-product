@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced Use Cases for the Sidebar UI Pattern.
+locale: en-us
+guid: 084bb303-c011-405d-adec-710e9227c8ae
+app_type: traditional web apps
 ---
 
 # Sidebar Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

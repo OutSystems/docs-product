@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: b710c30e-e103-430c-8646-2488f414a422
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Launch Process Action
 
 Use the **Launch&lt;Process Name&gt;** [process extended action](intro.md) in an action flow to launch the execution of a **Process**. This process is **executed asynchronously**, that is, it is launched and executed independently from the action flow execution, which immediately steps to the next element in the flow.

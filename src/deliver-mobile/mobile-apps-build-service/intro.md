@@ -1,9 +1,18 @@
 ---
 summary: Learn how to enable and manage the service that generates the mobile application packages of your apps, and how to access app build logs.
 tags: runtime-mobile; support-mobile
+locale: en-us
+guid: a5d92b93-40f7-418b-a2b3-40e81e820760
+app_type: mobile apps
 ---
 
 # Mobile Apps Build Service
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 OutSystems allows you to generate mobile application packages for iOS and Android without having to install any mobile platform SDK. To accomplish it, after a request of a new application package OutSystems calls the Mobile Apps Build Service, a **cloud service** developed by OutSystems that generates a new mobile application package.
 

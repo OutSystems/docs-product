@@ -1,5 +1,8 @@
 ---
 summary: UI reference for the Debugger Tab in Service Studio.
+locale: en-us
+guid: ed50314c-7355-4233-9466-03fcf751bd1c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Debugger Tab Reference
@@ -60,7 +63,7 @@ Breakpoints Tab
 :   Lists all breakpoints defined in the module.
 
 Users Tab
-:   Lists all the other users that are also debugging server threads in your module. You may expand each user to see the list of threads being debugged by him.
+:   Lists all the other users that are also debugging server threads in your module. You may expand each user to see the list of threads being debugged by them.
 
 ### Unpublished Changes
 

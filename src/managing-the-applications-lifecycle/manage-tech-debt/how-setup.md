@@ -1,14 +1,16 @@
 ---
-tags: Architecture Dashboard;
+tags: 
 summary: Learn about pre-requirements and how to setup Architecture Dashboard.
-en_title: How to set up Architecture Dashboard
+locale: en-us
+guid: c9fd26ba-85ea-406d-834a-df6c0399d11a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 
 # How to set up Architecture Dashboard
 
 Learn how to configure Architecture Dashboard so you can start using it.  
-This topic shows you how to add an infrastructure and what the prerequisites are, and how to associate an IT user with Architecture Dashboard.
+This topic shows you how to add an infrastructure and what the prerequisites are, and how to associate an IT user with Architecture Dashboard. 
 
 <div class="info" markdown="1">
 
@@ -49,7 +51,7 @@ Before registering and setting up your infrastructure in Architecture Dashboard,
 
 * For infrastructures using **OutSystems 10**, your environments use **Platform Server - 10.0.200.0 (.NET)** or later.
 
-* Allow outbound HTTPS communication (port 443) from the  **LifeTime environment** to `https://architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard`. Check [Architecture Dashboard network requirements for detailed information](../../setup/network-requirements.md#architecture-dashboard).
+* Allow outbound HTTPS communication (port 443) from the  **LifeTime environment** to `https://architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard`. Check [Architecture Dashboard network requirements for detailed information](../../setup-maintain/setup/network-requirements.md#architecture-dashboard).
 * You have the **Administrator** role in your infrastructure.
 
 ### Register and set up your infrastructure
@@ -60,21 +62,23 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 
 1. Enter your **Activation Code**.
 
-    ![](images/setup-infrastructure-activation-code.png)
+    ![Enter your Activation Code](images/setup-infrastructure-activation-code.png)
 
     <div class="info" markdown="1">
+
     If the infrastructure is already registered in Architecture Dashboard, a message lets you know and you are asked to **Associate your IT user to a registered infrastructure**.
+
     </div>
 
 1. Check the information and select **Register**.
 
-    ![](images/setup-infrastructure-activation-code-more.png)
+    ![Register infrastructure](images/setup-infrastructure-activation-code-more.png)
 
 1. Read the **Architecture Dashboard disclaimer** with the terms and conditions. If you agree select **Accept and continue**.
 
 1. Enter the address of your development environment.
 
-    ![](images/setup-infrastructure-dev-probe-address.png)
+    ![Enter your development environment address](images/setup-infrastructure-dev-probe-address.png)
 
 1. Follow the procedure shown in Architecture Dashboard to install the Development probe:
 
@@ -86,11 +90,11 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 
 1. Enter the address of your LifeTime environment.
 
-    ![](images/setup-infrastructure-lifetime-probe-address.png)
+    ![Enter LifeTime environment address](images/setup-infrastructure-lifetime-probe-address.png)
 
 1. Follow the procedure shown in Architecture Dashboard to install the LifeTime probe:
 
-    ![](images/setup-infrastructure-lifetime-probe-steps.png)
+    ![Follow steps to install the LifeTime probe](images/setup-infrastructure-lifetime-probe-steps-ad.png)
 
     1. Select **Download LifeTime probe** to download the probe.
 
@@ -101,15 +105,19 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 1. After you are redirected to LifeTime, log in with your IT user.
 
     <div class="info" markdown="1">
+
     If your infrastructure uses **OutSystems 10**, go to [How to configure Architecture Dashboard probes in OutSystems 10](how-probes-o10.md) and follow the procedure.
+
     </div>
 
 1. Configure the **Code analysis** probe by selecting the development environment as the **Target environment**. 
 
-    ![](images/setup-probes-configure-lt.png)
+    ![Configure the Code analysis](images/setup-probes-configure-lt.png)
 
     <div class="info" markdown="1">
+
     To change the target environment of a code analysis probe, contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data from Architecture Dashboard. Do this before installing probes in a new environment or deleting probes from an existing environment to avoid data inconsistencies. Once existing data is deleted from Architecture Dashboard, follow the setup procedure in this article to configure a new target environment.
+    
     </div>
 
 1. Optional: If you want the Architecture Dashboard plugin to use a forward proxy while connecting to the Architecture Dashboard SaaS, in the **Proxy configuration** section, select **show request information**, and enter the proxy URL and the credentials.
@@ -118,7 +126,7 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 
 1. After you are redirected to Architecture Dashboard, associate your IT user with Architecture Dashboard:
 
-    ![](images/setup-associate-accept.png)
+    ![Associate your IT user with Architecture Dashboard](images/setup-associate-accept.png)
 
     1. Check the **Installation details** and read the **privacy policy** carefully.
 
@@ -136,7 +144,7 @@ After completing these steps you are able to see your infrastructure listed but 
 
 1. Select **Plugins** \> **Architecture Dashboard**.
 
-    ![](images/setup-plugin-lt.png)
+    ![Select Architecture Dashboard plugin](images/setup-plugin-lt.png)
 
     <div class="info" markdown="1">
 
@@ -146,7 +154,7 @@ After completing these steps you are able to see your infrastructure listed but 
 
 1. Select **Go to Architecture Dashboard**.
 
-    ![](images/setup-plugin-go-to-lt.png)
+    ![Setup Architecture Dashboard plugin](images/setup-plugin-go-to-lt.png)
 
 1. After you are redirected to Architecture Dashboard, associate your IT user with Architecture Dashboard:
 

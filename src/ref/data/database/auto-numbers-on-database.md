@@ -1,5 +1,8 @@
 ---
 tags: 
+locale: en-us
+guid: 3a57d1cf-1b4f-4a9b-b1c3-29214eb15c14
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Auto Numbers on Database

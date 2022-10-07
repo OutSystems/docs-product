@@ -3,6 +3,9 @@ kinds: ServiceStudio.Plugin.NRWidgets.DropdownDescriptor
 helpids: 30036
 summary: Reference information on the Dropdown widget for showing a dropdown list for the users to select a value on the screen.
 tags: outsystems-designing-screens; reference; designing-screens; drop-down
+locale: en-us
+guid: 15a7a421-2257-46eb-b995-caff2bf6404f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Dropdown
@@ -56,7 +59,7 @@ With the Dropdown Widget you can implement two types of lists:
 <td title="DropdownMode">Options Content</td>
 <td>'Text (Default)' content provides a native experience for selecting textual values (uses the select HTML tag). 'Custom' provides richer content with non-textual widgets (for example, images) inside the dropdown (uses the div HTML tag).</td>
 <td>Yes</td>
-<td>Custom</td>
+<td>Text</td>
 <td></td>
 </tr>
 <tr>

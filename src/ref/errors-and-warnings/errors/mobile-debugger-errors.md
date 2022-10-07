@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 960f029e-c1fc-444c-bb46-ac92fdda5916
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Mobile Debugger Related Errors
 
 The mobile debugging feature of Service Studio works through a connection to a specific Google Chrome instance which is launched by Service Studio when you start [debugging a mobile app](<../../../develop/troubleshoot/debug/intro.md#mobile-debugging-scenarios>).

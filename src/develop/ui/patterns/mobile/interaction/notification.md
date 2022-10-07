@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: The Notification UI Pattern is a contextual short message that provides important information to the user. 
+locale: en-us
+guid: 90ae661d-b0d0-4001-b2b1-efe5c50bb056
+app_type: mobile apps, reactive web apps
 ---
 
 # Notification
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -21,7 +30,7 @@ The Notification UI Pattern is a contextual short message that provides importan
 
     ![Notification widget](<images/notification-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -63,11 +72,11 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-|Property|Description|
-|---|---|
-|StartsOpen(Boolean): Optional|If True, the notification is immediately visible on screen. If False, the notification is not visible on screen. The default value is False. <br/> Use one of the following actions to change the value after the :<ul><li>NotificationOpen</li><li>NotificationClose</li></ul>|
-|Width(Text): Optional|Set the Notification width. Accepts any kind of unit (for example, px, %, vw).|
-|Position(Position Identifier): Optional|Set where the notification appears on the screen. The predefined options are as follows:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul><br/>Examples<ul><li>``Entities.Position.Right`` - The notification is displayed on the right side of the screen.</li><li>``Entities.Position.Bottom`` - The notification is displayed on the bottom of the screen.</li></ul>|
-|OptionalConfigs.InteractToClose(Boolean): Optional|If True, the notification closes when it's clicked. If False, the notification can't be clicked. the default value is True.|
-|OptionalConfigs.CloseAfterTime(Integer): Optional|Set the delay time, in ms, to close the notification.|
-|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
+| Property                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| StartsOpen(Boolean): Optional                      | If True, the notification is immediately visible on screen. If False, the notification is not visible on screen. The default value is False. <br/> Use one of the following actions to change the value after the :<ul><li>NotificationOpen</li><li>NotificationClose</li></ul>                                                                                                                                                                                                                                                                                                                                                        |
+| Width(Text): Optional                              | Set the Notification width. Accepts any kind of unit (for example, px, %, vw).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Position(Position Identifier): Optional            | Set where the notification appears on the screen. The predefined options are as follows:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul><br/>Examples<ul><li>``Entities.Position.Right`` - The notification is displayed on the right side of the screen.</li><li>``Entities.Position.Bottom`` - The notification is displayed on the bottom of the screen.</li></ul>                                                                                                                                                            |
+| OptionalConfigs.InteractToClose(Boolean): Optional | If True, the notification closes when it's clicked. If False, the notification can't be clicked. the default value is True.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| OptionalConfigs.CloseAfterTime(Integer): Optional  | Set the delay time, in ms, to close the notification.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ExtendedClass (Text): Optional                     | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

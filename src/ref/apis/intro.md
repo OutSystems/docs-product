@@ -1,6 +1,9 @@
 ---
 summary: APIs provided by OutSystems that you can use to extend the capabilities of your applications.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: f2cb6eb8-b4dc-437a-9838-0fca9cad116b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # OutSystems APIs
@@ -81,13 +84,13 @@ API Name | Available As | Description
 API Name | Available As | Description
 ---|---|---
 [IncludeJavaScript API](auto/includejavascript-api.final.md) | Referenced extension | Allows you to programmatically include JavaScript snippets in all Web Screens.
-[JavaScript API](javascript/README.md) | Predefined JavaScript objects | Allows you to call OutSystems specific actions and act upon mobile app events in your JavaScript code, to tweak and customize the mobile app experience of the final user.
+[JavaScript API](javascript/intro.md) | Predefined JavaScript objects | Allows you to call OutSystems specific actions and act upon mobile app events in your JavaScript code, to tweak and customize the mobile app experience of the final user.
 
 ## System Actions
 
 API Name | Available As | Description
 ---|---|---
-[System Actions](auto/system-actions.final.md) | Referenced system module | Contains client and server actions that allow you to operate on system elements like lists and activities.
+[System Actions](auto/system-actions.final.md) | Referenced system module | Contains client and server actions that allow you to operate on system elements like lists and activities. 
 
 ## Security and Cryptography
 

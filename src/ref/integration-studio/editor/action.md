@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: a3688c1a-0d04-4d07-a22e-deb8a36862db
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Action Editor
 
 The Action Editor allows you to edit the [properties](<../element-property/action.md>) of an action that belongs to your extension.

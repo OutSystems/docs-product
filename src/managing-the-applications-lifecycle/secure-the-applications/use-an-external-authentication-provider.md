@@ -1,6 +1,9 @@
 ---
 summary: OutSystems allows your IT users to authenticate using the same account they use in other corporate systems.
 tags: support-Security-overview
+locale: en-us
+guid: f8b008aa-ae75-470a-adc3-5863bf6be8e6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use an External Authentication Provider
@@ -47,7 +50,7 @@ In this example we'll change the platform to authenticate IT users through Activ
 
 Before changing the authentication provider, you need to ensure that each IT user that exists on the external directory service has a corresponding OutSystems user.
 
-You can either create the IT users manually, using the infrastructure management console, or use the [LifeTime Services API](../../ref/apis/auto/lifetime-services-api.final.md).
+You can either create the IT users manually, using the infrastructure management console, or use the [LifeTime Services API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2).
 
 Notice that when creating new IT users in OutSystems you'll have to specify the user password. Since you'll be using an external authentication provider, you can simply use a dummy password when creating OutSystems users, because it will not be used in the authentication process.
 

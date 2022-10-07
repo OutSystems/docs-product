@@ -1,5 +1,8 @@
 ---
 summary: Keep the control of the users and teams that are created, but delegate the permission management to the team manager.
+locale: en-us
+guid: e666aa10-a5dd-41c4-856d-52a7b2ff5474
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Allow Managers to Handle Permissions of IT Teams

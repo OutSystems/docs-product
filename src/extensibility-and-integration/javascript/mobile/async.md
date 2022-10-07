@@ -1,9 +1,18 @@
 ---
 summary: Use asynchronous JavaScript code to act upon actions expected to take some time.
 tags: runtime-mobileandreactiveweb
+locale: en-us
+guid: 38ba49e3-f93e-45b2-9e51-83e8b52b353e
+app_type: mobile apps, reactive web apps
 ---
 
 # Defining Asynchronous JavaScript Code
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 JavaScript is, in most cases, single-threaded: in the browser, the thread executing JavaScript code will block the rendering process and any user interactions.
 

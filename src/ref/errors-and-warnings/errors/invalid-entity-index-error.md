@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 072552a6-e5f9-42cf-9335-aa58681bea15
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Entity Index Error
 
 The `Invalid Entity Index` error is issued in the following situations:

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 00c4300a-4dd9-4770-a540-ddec24bc8d79
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Outdated Consumer Info
 
 <a id="helpid-30181"></a>

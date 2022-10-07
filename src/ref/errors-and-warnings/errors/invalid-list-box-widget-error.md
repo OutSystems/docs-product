@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 90d52a8c-e67e-4d5b-9c1f-77a1da4087a4
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid List Box Widget Error
 
 The `Invalid List Box` widget error is issued in the following situations:

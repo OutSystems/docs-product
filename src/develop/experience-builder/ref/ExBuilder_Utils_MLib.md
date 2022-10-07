@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 61ef3e53-5022-4fa2-be4c-5acd839fc949
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # ExBuilder_Utils_MLib
 
 Module that contains several common objects and functions used across the mobile application.
@@ -38,7 +44,7 @@ Structure | Description
 ---|---
 [DeviceInfo](<#Structure_DeviceInfo>) | Structure to handle the device information.
 [Result](<#Structure_Result>) | Result structure.
-[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in his session.
+[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in their session.
 
 ## Client Actions
 
@@ -452,7 +458,7 @@ ErrorMessage
 
 ### UserSessionInfo { #Structure_UserSessionInfo }
 
-Structure to handle the user information in his session.
+Structure to handle the user information in their session.
 
 *Attributes*
 

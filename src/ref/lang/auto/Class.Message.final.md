@@ -3,9 +3,18 @@ kinds: ServiceStudio.Model.NRNodes+FeedbackMessage+Kind
 helpids: 0
 summary: Provides a feedback message to the end user.
 tags: runtime-mobileandreactiveweb;
+locale: en-us
+guid: 70ed4ea2-9f23-4c19-b322-11255785072c
+app_type: mobile apps, reactive web apps
 ---
 
 # Message
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 You can provide a feedback message to the end user by using the Message logic tool within a Client Action flow.
 

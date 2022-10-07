@@ -2,6 +2,9 @@
 kinds: ServiceStudio.Model.UserException+Kind
 helpids: 0
 summary: User Exception is a custom exception that you can raise in your logic flows.
+locale: en-us
+guid: 86c93d94-6b0e-4e83-8797-8b0bebe9f170
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # User Exception

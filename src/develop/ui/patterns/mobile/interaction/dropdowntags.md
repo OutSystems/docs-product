@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: The Dropdown Tags UI Pattern offers multiple choice options to the user when using a dropdown search.
+locale: en-us
+guid: 6b79cc3c-d89b-40df-ba5f-c04038639d4b
+app_type: mobile apps, reactive web apps
 ---
 
 # Dropdown Tags
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -23,7 +32,7 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
     ![Dropdown Tag widget](<images/dropdowntags-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -66,7 +75,7 @@ In this example, we create a dropdown tags search for a list of employees and a 
 
         `CurrentList.Length`
 
-    1. Click Close, we add a Message to the client action and in the Expression Editor enter the following logic and click **Close**. 
+    1. Click **Close**. 
     
         This displays the number of selected items selected.
 
@@ -82,12 +91,12 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-|Property|Description|
-|---|---|
-|OptionsList (DropdownTagsOption List): Mandatory |  List of items to show in the dropdown. |  
-|SelectedOptions (DropdownTagsOption List): Optional | Defines preselected items in the dropdown list. |  
-|Prompt (Text): Optional | Text that is displayed when no items are selected. |
-|OptionalConfigs.IsDisabled (Boolean): Optional |Set as True to disable the Dropdown. |
-|OptionalConfigs.NoResultsText (Text): Optional |Text that is displayed when there are no results to show.|
+| Property                                            | Description                                               |
+|-----------------------------------------------------|-----------------------------------------------------------|
+| OptionsList (DropdownTagsOption List): Mandatory    | List of items to show in the dropdown.                    |
+| SelectedOptions (DropdownTagsOption List): Optional | Defines preselected items in the dropdown list.           |
+| Prompt (Text): Optional                             | Text that is displayed when no items are selected.        |
+| OptionalConfigs.IsDisabled (Boolean): Optional      | Set as True to disable the Dropdown.                      |
+| OptionalConfigs.NoResultsText (Text): Optional      | Text that is displayed when there are no results to show. |
 |OptionalConfigs.SearchPrompt (Text): Prompt text displayed in the search input box.|  
 |ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

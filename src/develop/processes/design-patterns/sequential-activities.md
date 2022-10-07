@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 8545c13f-4722-4075-954a-8790ebc8e683
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Designing Sequential Activities
 
 To design activities which are to be executed in sequence, simply place those activities in the flow path connected by their execution order.

@@ -1,9 +1,18 @@
 ---
 summary: How to call externally defined JavaScript code in OutSystems.
 tags: runtime-mobileandreactiveweb
+locale: en-us
+guid: 8a9bb94e-0720-4c91-ae99-8ed14c8ed6cc
+app_type: mobile apps, reactive web apps
 ---
 
 # Use JavaScript Code from an External Library
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 <div class="info" markdown="1">
 

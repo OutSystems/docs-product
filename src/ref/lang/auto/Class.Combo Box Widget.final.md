@@ -2,10 +2,18 @@
 kinds: ServiceStudio.Model.WebWidgets+ComboBox+Kind, ServiceStudio.Model.WebWidgets+ReferenceComboBox+Kind
 helpids: 4027
 tags: runtime-traditionalweb
+locale: en-us
+guid: 2ad09f6b-4508-4db2-b84a-3ce248492fc3
+app_type: traditional web apps
 ---
 
 # Combo Box Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Allows the user to select a specific value within a list of possible values.
 

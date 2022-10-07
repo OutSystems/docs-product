@@ -1,6 +1,9 @@
 ---
 summary: Use a Forge Component made by the community in your applications and accelerate your development process while adding functionality to your apps.
 tags: support-Integrations_Extensions
+locale: en-us
+guid: 8dd13cd7-723f-456c-ac0d-e8981a266e2e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use a Forge Component Made by the Community

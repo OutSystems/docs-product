@@ -1,6 +1,9 @@
 ---
 summary: Applications secured with authentication can be subject to brute force attacks that systematically try to guess user passwords. OutSystems provides a built-in protection mechanism that allows taking countermeasures against these attacks.
 tags: support-Security-overview
+locale: en-us
+guid: 12783fed-7ac1-41f3-8d46-544892ff8b58
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Protection against Brute Force Attacks

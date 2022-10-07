@@ -1,6 +1,9 @@
 ---
 summary: Use the Content Security Policy (CSP) against code injection attacks in applications developed with OutSystems to protect against a growing number of attacks on the Web.
 tags: support-Security-overview
+locale: en-us
+guid: e59d9233-7c2d-43ae-b8a2-f55d75263c68
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Apply Content Security Policy
@@ -98,6 +101,12 @@ When configuring CSP take the following risks of misconfiguration into account:
 ## Directives reference
 
 The table below describes the list of available directives to configure Content Security Policy in **OutSystems**. The **Required values** column indicates the values that **LifeTime** automatically applies to the directive for the applications to work correctly. Those values cannot be removed.
+
+<div class="info" markdown="1">
+
+When adding multiple domains, insert 1 domain per line without any separators after each line.
+
+</div>
 
 | Directive     | Reason        | Required values  |
 | :------------ |:--------------|:----------------|

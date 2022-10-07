@@ -3,10 +3,18 @@ kinds: ServiceStudio.Plugin.NRWidgets.AdvancedHtmlDescriptor
 helpids: 30048
 summary: Reference information on the HTML Element widget for adding a custom HTML element to the screen.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; html-element
+locale: en-us
+guid: b9f2d2f5-39f6-4709-936c-7518ac9d960a
+app_type: mobile apps, reactive web apps
 ---
 
 # HTML Element
 
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 Allows you to add a custom HTML element to the screen. You can use nested HTML Element widgets.
 

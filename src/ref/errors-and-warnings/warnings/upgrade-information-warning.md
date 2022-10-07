@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: ac6e349e-376b-4975-aac4-491d09f1a7a7
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Upgrade Information Warning
 
 Message

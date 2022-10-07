@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Plugin.SAP.SapClientDescriptor
 helpids: 17252
+locale: en-us
+guid: 14b4eecd-c93a-45cd-871d-6f6470945bd1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # SAP Connection

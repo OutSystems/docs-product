@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: d844068c-7299-46e1-80e4-6f7a6a0d8942
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Transition
 
 The `Invalid Transition` error is issued in the following situations:

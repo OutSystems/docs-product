@@ -1,6 +1,9 @@
 ---
 summary: Store the variable values and share them across apps.
 tags: support-application_development;
+locale: en-us
+guid: e45b6e4c-0b32-4934-ad0b-c74a014df878
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Share a Client Variable between apps

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: f5eb9f11-455a-4bfe-bd0d-2ee4968044bb
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # File Menu
 
 The **File menu** on the [menu bar](<../../workspace.md>) contains options dealing with the management of extensions.

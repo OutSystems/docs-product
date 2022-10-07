@@ -2,6 +2,9 @@
 kinds: ServiceStudio.Model.Nodes+ExcelToRecordList+Kind
 helpids: 10001
 summary: Use Excel To Record List when you need to load data from an Excel file in your app at runtime.
+locale: en-us
+guid: 65e7dfbe-2def-4858-85fb-adaf71d7c774
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Excel To Record List
@@ -9,13 +12,8 @@ summary: Use Excel To Record List when you need to load data from an Excel file 
 
 Converts an Excel object to a Record List. Use this logic tool when you need to load data from an Excel file in your app at runtime.
 
-<div class="info" markdown="1">
 
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
-
-To use Excel To Record List you need an Entity or Structure that matches the Excel file content you want to import. OutSystems matches the attributes of the Entity/Structure specified in the **Record Definition** property with column headings in the Excel file.
+To use Excel To Record List you need an Entity or Structure that matches the Excel (xlsx) file content you want to import. OutSystems matches the attributes of the Entity/Structure specified in the **Record Definition** property with column headings in the Excel file.
 
 Check the following example of an Entity named Address and a valid Excel file containing data to import:
 
@@ -23,7 +21,7 @@ Check the following example of an Entity named Address and a valid Excel file co
 
 Entity attributes without a corresponding column in the Excel file get the default value of their data type (for example, `""` for a Text attribute).
 
-To use the tool, provide the content of the Excel file to import in the **File Content** property as binary data. To import data from a specific sheet in the Excel file, specify the sheet name in the **Sheet Name** property. OutSystems imports data from the first sheet, by default.
+To use the tool, provide the content of the Excel file to import in the **File Content** property as binary data (xlsb). To import data from a specific sheet in the Excel file, specify the sheet name in the **Sheet Name** property. OutSystems imports data from the first sheet, by default.
 
 To iterate over the successfully imported records, use a For Each and set the **Record List** property of the For Each to the name of the Excel to Record List element.
 

@@ -1,6 +1,9 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Incompatible Version TrueChange errors.
 tags:
+locale: en-us
+guid: 8c03c1ee-0f03-402a-af76-b40b7209060b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Incompatible Version Error

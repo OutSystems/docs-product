@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Modal UI Pattern.
+locale: en-us
+guid: a9618344-1b9f-4aa8-892b-456d7d7a75eb
+app_type: traditional web apps
 ---
 
 # Modal Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

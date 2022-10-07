@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 8afc6360-df8d-451d-81cd-fd499fa5bd15
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # JavaScript Injection Warning
 
 Message

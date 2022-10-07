@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Plugin.SAP.SapCallbackActionFlowInputDescriptor
 helpids: 30069
+locale: en-us
+guid: 03cdc256-d569-4d64-b280-eea6b54e24bb
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Input Parameter (SAP Callback)

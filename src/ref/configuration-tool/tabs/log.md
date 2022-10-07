@@ -1,5 +1,8 @@
 ---
 summary: The Log tab allows you to configure the logging database and some advanced log settings.
+locale: en-us
+guid: 1522f7b9-bb8e-4ef3-b4c5-25e110e89a68
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Log Tab

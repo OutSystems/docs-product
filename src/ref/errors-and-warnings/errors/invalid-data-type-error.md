@@ -1,6 +1,9 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Invalid Data Type TrueChange errors.
 tags:
+locale: en-us
+guid: cc8e619d-18de-4b4a-a62a-d4058ce5e528
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Data Type Error
@@ -37,7 +40,7 @@ You are using a Null Value property which is incompatible with the Variable assi
 
 **Recommended action**
 
-Set the Null Value property to a value of the same [data type](../../../ref/data/data-types/available-data-types.md) as the Variable assigned to the [Input widget](../../../ref/lang/auto/Class.Input%20Widget.final.md). For example, if you assigned a Boolean variable to the Input, set Null Value as `False`.
+Set the Null Value property to a value of the same [data type](../../../ref/data/data-types/available-data-types.md) as the Variable assigned to the [Input widget](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md). For example, if you assigned a Boolean variable to the Input, set Null Value as `False`.
 
 ## Cannot send a 'Binary Data' parameter in the request &lt;send in> of a method with &lt;request format> request format. Change the parameter data type or the method request format.
 

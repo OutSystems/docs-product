@@ -1,7 +1,9 @@
 ---
-tags: Architecture Dashboard; how-to; manual
-summary: Before you can see an Infrastructure in Architecture Dashboard, you need to associate your Architecture Dashboard account with that Infrastructure. Learn how to do it here.
-en_title: How to associate an Infrastructure with your Architecture Dashboard account
+tags: 
+summary: Before you can see an Infrastructure in Architecture Dashboard, you need to associate your Architecture Dashboard account with that infrastructure. Learn how to do it here.
+locale: en-us
+guid: c44b61cc-efb4-4829-b08c-93e520c0804e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 

@@ -1,9 +1,18 @@
 ---
 summary: More information on the data presented in the "Native Platforms" tab of Service Center.
 tags: runtime-mobile
+locale: en-us
+guid: 1ad36b43-1e0e-4efb-a701-651bf0b97e06
+app_type: mobile apps
 ---
 
 # Native Platforms Configuration
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 The **Distribute** tab in Service Center, section **Native Platforms**, presents the following information:
 

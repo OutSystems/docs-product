@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: c311f5c1-54b9-417e-9561-c39db45ac706
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Debugger Not Started Warning
 
 Message

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 5d5ceec8-9d14-44c9-b289-57ae396f7409
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Unexpected SQL Warning
 
 Message:

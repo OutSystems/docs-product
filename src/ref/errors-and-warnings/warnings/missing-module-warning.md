@@ -1,6 +1,9 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Missing Module TrueChange warnings.
 tags:
+locale: en-us
+guid: f6effa12-876e-460a-a0a2-7e366645038e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Missing Module Warning

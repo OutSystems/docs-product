@@ -1,12 +1,14 @@
 ---
-tags: client-side; network; web server
+tags: 
 summary: 
-en_title: Don't abuse scope information
+locale: en-us
+guid: 4e82f1f2-b9bd-4a92-a033-e9ec9cfb32ee
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Don't abuse scope information
 
-All the local variables of a screen and the results of queries or actions from the preparation are kept in the scope of the entire screen. You can reference Local variables in the Preparation, in the screen itself and in  screen actions.
+All the local variables of a screen and the results of queries or actions from the preparation are kept in the scope of the entire screen. You can reference Local variables in the Preparation, in the screen itself and in  screen actions. 
 
 ## Impact - think Viewstate
 

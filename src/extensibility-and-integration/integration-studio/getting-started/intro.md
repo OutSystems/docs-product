@@ -1,5 +1,8 @@
 ---
 summary: Integration Studio allows you to develop extensions in advanced integration scenarios between existing enterprise systems and OutSystems.
+locale: en-us
+guid: ab847837-20ab-4643-8541-63482f518aac
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Extend Logic with Your Own Code

@@ -2,6 +2,9 @@
 kinds: ServiceStudio.Model.Nodes+ExecuteAction+Kind
 helpids: 30107
 summary: Executes a Server Action, which contains logic that's executed on the server.
+locale: en-us
+guid: f5811e56-3206-4621-a31a-74da90160dd2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Run Server Action
@@ -39,7 +42,7 @@ In the following example, we used the **Valid** output parameter of the **Valida
 
     ![Drag Server Action to action flow](images/run-server-action-drag-2-ss.png)
 
-1. In the pop-up window, select the Server Action that you want to run from the **Server Actions** folder in the tree, and click **OK**.
+1. In the pop-up window, select the Server Action that you want to run from the **Server Actions** folder in the tree, and click **Select**.
 
     ![Select Server Action to run](images/run-server-action-select-ss.png)
 

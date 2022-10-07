@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Advanced use cases for the Stacked Cards UI Pattern
+locale: en-us
+guid: 2b2b2437-d9dc-44bf-8d95-a0fb959fa61c
+app_type: mobile apps, reactive web apps
 ---
 
 # Stacked Cards Reference
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 ## Adding styles to elements
 

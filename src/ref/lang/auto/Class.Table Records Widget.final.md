@@ -3,20 +3,23 @@ kinds: ServiceStudio.Model.WebWidgets+TableRecords+Kind, ServiceStudio.Model.Web
 helpids: 4042
 summary: Learn how to use the Table Records widget to display the records of an entity or a structure in a tabular layout. Reference.
 tags: runtime-traditionalweb
+locale: en-us
+guid: 8d4c86cd-8f7b-4c79-8dcd-6d4152036b1e
+app_type: traditional web apps
 ---
 
 # Table Records Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 You can use the Table Records widget to display the records of an entity or a structure in a tabular layout. You can define the table records as sortable making it easier for the user to read or find information faster. Record sorting can be fixed or dynamic, meaning that it can change during runtime. You can change the emphasis of a table row by changing its height and increase users' ability to read and interpret data in a table record by using zebra stripping. You can also use pagination to divide content and present it in a limited and digestible manner.
 
 ![Overview of Table Records widget in use](<images/tablerecords-1-ss.png>)
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## How to use the Table Records widget
 

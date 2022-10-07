@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.WebWidgets+EditRecordRow+Kind, ServiceStudio.Model.WebWidgets+ShowRecordRow+Kind, ServiceStudio.Model.WebWidgets+TableRecordsDataRow+Kind, ServiceStudio.Model.WebWidgets+TableRow+Kind, ServiceStudio.Model.WebWidgets+ReferenceEditRecordRow+Kind, ServiceStudio.Model.WebWidgets+ReferenceShowRecordRow+Kind, ServiceStudio.Model.WebWidgets+ReferenceTableRecordsDataRow+Kind, ServiceStudio.Model.WebWidgets+ReferenceTableRow+Kind
 helpids: 0
+locale: en-us
+guid: 1d16cf24-1073-46b4-9564-b4f35396b46c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Row Widget

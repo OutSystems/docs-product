@@ -3,10 +3,18 @@ kinds: ServiceStudio.Plugin.NRWidgets.SwitchDescriptor
 helpids: 30037
 summary: Reference information on the Switch Group widget for adding two-state toggle controls to allow users to select between two options.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; switch-widget
+locale: en-us
+guid: 4479919f-eabb-4cad-97d0-5e8e990d8524
+app_type: mobile apps, reactive web apps
 ---
 
 # Switch
 
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 Two-state toggle control which allows users to select between two options. You can assign only a boolean variable to Switch.
 

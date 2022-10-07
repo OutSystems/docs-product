@@ -1,6 +1,9 @@
 ---
 summary: Reserved page name when working with SEO. 
 tags:
+locale: en-us
+guid: 44bfd373-e10e-44d6-be07-daaaa05e0c98
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Reserved Page Name

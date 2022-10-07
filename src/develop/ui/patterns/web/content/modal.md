@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Modal is a box with content that interrupts the end user and demands an action.
+locale: en-us
+guid: 64cf2199-6b69-480b-a63e-49b91965e777
+app_type: traditional web apps
 ---
 
 # Modal
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 You can use the Modal UI Pattern to interrupt the end user and demand an action. It is implemented to direct an end user’s attention to important information. Ideal for when the end user is requested to enter information critical to continuing the current process.
 
@@ -19,7 +28,7 @@ For the purposes of this example, our app already contains a form where the user
 
     ![](<images/modal-5-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -71,10 +80,10 @@ The result of this example looks something like the following:
 
 ## Properties
 
-| **Property** |  **Description** |  
-|---|---|
-| Position (PositionExtended Identifier): Optional| Set the position of the Modal on the screen. <p>Examples</p><ul><li>Blank - The modal is positioned in the center of the screen (Entities.PositionExtended.Center). This is the default.</li><li>Entities.PositionExtended.TopLeft - The modal is positioned top-left of the screen.</li></ul>|
-| HasOverlay (Boolean): Optional | If True, an overlay is enabled behind the modal. This is the default. If False, there is no overlay. |
-| EnterAnimation (EnterAnimation Identifier): Optional | Define from where the animation enters the screen. <p>Examples</p><ul><li>Blank - The animation goes from a small size to its rendered size (Entities.EnterAnimation.EnterScale). This is the default.</li><li>Entities.EnterAnimation.EnterBottom - The animation enters from the bottom of the screen.</li></ul> |  
-| LeaveAnimation (LeaveAnimation Identifier ): Optional | Define from where the animation leaves the screen. <p>Examples</p><ul><li>Blank - The animation goes from its rendered size to a small size.(Entities.LeaveAnimation.EnterScale). This is the default.</li><li>Entities.LeaveAnimation.EnterBottom - The animation leaves from the bottom of the screen.</li></ul>|
-| ExtendedClass (Text): Optional |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
+| **Property**                                          | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Position (PositionExtended Identifier): Optional      | Set the position of the Modal on the screen. <p>Examples</p><ul><li>Blank - The modal is positioned in the center of the screen (Entities.PositionExtended.Center). This is the default.</li><li>Entities.PositionExtended.TopLeft - The modal is positioned top-left of the screen.</li></ul>                                                                                                                                                                                                                                                                                                                                          |
+| HasOverlay (Boolean): Optional                        | If True, an overlay is enabled behind the modal. This is the default. If False, there is no overlay.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| EnterAnimation (EnterAnimation Identifier): Optional  | Define from where the animation enters the screen. <p>Examples</p><ul><li>Blank - The animation goes from a small size to its rendered size (Entities.EnterAnimation.EnterScale). This is the default.</li><li>Entities.EnterAnimation.EnterBottom - The animation enters from the bottom of the screen.</li></ul>                                                                                                                                                                                                                                                                                                                      |
+| LeaveAnimation (LeaveAnimation Identifier ): Optional | Define from where the animation leaves the screen. <p>Examples</p><ul><li>Blank - The animation goes from its rendered size to a small size.(Entities.LeaveAnimation.EnterScale). This is the default.</li><li>Entities.LeaveAnimation.EnterBottom - The animation leaves from the bottom of the screen.</li></ul>                                                                                                                                                                                                                                                                                                                      |
+| ExtendedClass (Text): Optional                        | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

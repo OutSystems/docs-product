@@ -1,14 +1,16 @@
 ---
-tags: Architecture Dashboard.
+tags:
 summary: Learn how to check the technical debt of your team's apps.
-en_title: Getting started as a team lead
+locale: en-us
+guid: efc039d9-67e7-4824-a8fb-5e65418db58c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Getting started as a team lead 
 
 As a team lead, **Architecture Dashboard** provides you with an overview of the technical debt of organization's technical debt as well as detailed overview of the technical debt of your teams's apps.
 
-From the Apps canvas, you can drill down into the team's problematic modules, and take the necessary steps to reduce the technical debt score for these areas.
+From the Apps canvas, you can drill down into the team's problematic modules, and take the necessary steps to reduce the technical debt score for these areas. 
 
 This guide assumes the following:
 

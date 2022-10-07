@@ -1,6 +1,9 @@
 ---
 summary: How to configure SMTP in OutSystems.
 tags: support-Installation_Configuration
+locale: en-us
+guid: 85879015-1e65-424a-85cb-3405be3dafe9
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configure OutSystems to Send Emails

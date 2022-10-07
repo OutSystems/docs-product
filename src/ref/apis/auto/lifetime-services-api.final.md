@@ -1,10 +1,18 @@
 ---
 summary: A set of SOAP Web Services that allow you to manage the infrastructure made available by OutSystems.
 tags: support-application_development; support-Integrations_Extensions
+locale: en-us
+guid: 49b8897e-c856-4b34-b330-7e8337885450
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # LifeTime Services API
 
+<div class="warning" markdown="1">
+
+The LifeTime Services API is **deprecated**. Use [LifeTime API v2](<lifetime-deployment-api-v2.final.md>) instead.
+
+</div>
 
 This API, composed of a set of SOAP Web Services, provides functionality to manage the infrastructure made available by OutSystems.
 
@@ -12,17 +20,21 @@ This API, composed of a set of SOAP Web Services, provides functionality to mana
 
 Web Service | Description
 ---|---
-[RoleManagementService](<#RoleManagementService>) | The Platform API to manage IT roles: roles created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
-[AuthenticationService](<#AuthenticationService>) | The Platform API to acquire an authentication token to be used when invoking other OutSystems APIs. After 5 minutes, the token expires.
-[TeamManagementService](<#TeamManagementService>) | The Platform API to manage teams in the platform.<br/>To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
-[SecurityManagementService](<#SecurityManagementService>) | The Platform API for getting security information about users and addresses who login to the platform.<br/>To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+[RoleManagementService](<#RoleManagementService>) | The API to manage IT roles: roles created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul>
+[AuthenticationService](<#AuthenticationService>) | The API to acquire an authentication token to be used when invoking other OutSystems APIs. After 5 minutes, the token expires.
+[TeamManagementService](<#TeamManagementService>) | The API to manage teams in the platform.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul>
+[SecurityManagementService](<#SecurityManagementService>) | The API for getting security information about users and addresses who login to the platform.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul>
 [DbConnectionManagementService](<#DbConnectionManagementService>) | This API provides methods to create, change, and delete connections to external databases. It also allows managing users permissions.
-[UserManagementService](<#UserManagementService>) | The Platform API to manage IT users: users created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+[UserManagementService](<#UserManagementService>) | The API to manage IT users: users created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.<br/>To use this API, authenticate in one of the following ways:<ul><li>Specify a valid platform username and password.</li><li>Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.</li><li>Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.</li></ul>
 
 ## RoleManagementService
 
-The Platform API to manage IT roles: roles created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.  
-To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+The API to manage IT roles: roles created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.  
+To use this API, authenticate in one of the following ways:
+
+* Specify a valid platform username and password.
+* Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+* Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/RoleManagementService.asmx?WSDL`
@@ -47,7 +59,11 @@ Updates the name of a platform role.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 OldRoleName
 :   Type: mandatory, Text.  
@@ -75,7 +91,11 @@ Creates a new platform role or updates a platform role that already exists.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 RoleName
 :   Type: mandatory, Text.  
@@ -113,7 +133,11 @@ Deletes a platform role that already exists. Since the platform requires IT user
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 RoleName
 :   Type: mandatory, Text.  
@@ -145,7 +169,11 @@ Lists the permission levels that a platform user has over the environments.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 *Outputs*
 
@@ -169,7 +197,11 @@ Returns the list of permissions a platform role has in the environments register
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 RoleName
 :   Type: mandatory, Text.  
@@ -197,7 +229,11 @@ Returns all platform roles with their information.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 *Outputs*
 
@@ -222,7 +258,11 @@ Updates the permissions a platform role has in a specified environment.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 RoleName
 :   Type: mandatory, Text.  
@@ -249,7 +289,7 @@ Status
 
 ## AuthenticationService
 
-The Platform API to acquire an authentication token to be used when invoking other OutSystems APIs. After 5 minutes, the token expires.
+The API to acquire an authentication token to be used when invoking other OutSystems APIs. After 5 minutes, the token expires.
 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/AuthenticationService.asmx?WSDL`
@@ -292,8 +332,12 @@ Token
 
 ## TeamManagementService
 
-The Platform API to manage teams in the platform.  
-To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+The API to manage teams in the platform.  
+To use this API, authenticate in one of the following ways:
+
+* Specify a valid platform username and password.
+* Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+* Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/TeamManagementService.asmx?WSDL`
@@ -319,7 +363,11 @@ Adds a user to a team with a specified role.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 TeamName
 :   Type: mandatory, Text.  
@@ -351,7 +399,11 @@ Assigns an application to a team, replacing a previous assignment, if any. An ap
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 TeamName
 :   Type: mandatory, Text.  
@@ -379,7 +431,11 @@ Creates a new team or updates an already existent team.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 TeamName
 :   Type: mandatory, Text.  
@@ -411,7 +467,11 @@ Deletes a team.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 TeamName
 :   Type: mandatory, Text.  
@@ -435,7 +495,11 @@ Returns the details of a team, with its users and applications.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 TeamName
 :   Type: mandatory, Text.  
@@ -463,7 +527,11 @@ Returns a list of the teams.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 *Outputs*
 
@@ -487,7 +555,11 @@ Removes an application from a team.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 TeamName
 :   Type: mandatory, Text.  
@@ -515,7 +587,11 @@ Removes a user from a team.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 TeamName
 :   Type: mandatory, Text.  
@@ -538,8 +614,12 @@ Status
 
 ## SecurityManagementService
 
-The Platform API for getting security information about users and addresses who login to the platform.  
-To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+The API for getting security information about users and addresses who login to the platform.  
+To use this API, authenticate in one of the following ways:
+
+* Specify a valid platform username and password.
+* Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+* Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/SecurityManagementService.asmx?WSDL`
@@ -561,7 +641,11 @@ Action | Description
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 IPAddress
 :   Type: optional, Text.  
@@ -593,7 +677,11 @@ PlatformLoginAttempts
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 IPAddress
 :   Type: mandatory, Text.  
@@ -621,7 +709,11 @@ Status
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -653,7 +745,11 @@ PlatformLoginAttempts
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -713,7 +809,11 @@ Creates a new database connection.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid Platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -769,7 +869,11 @@ Deletes the database connection given by the name.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -797,7 +901,11 @@ Updates the configuration of the database connection.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -849,7 +957,11 @@ Returns the database connection.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -881,7 +993,11 @@ Returns the role permissions to use a database connection.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -917,7 +1033,11 @@ Returns the user permissions to use a database connection.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -953,7 +1073,11 @@ Grants a role with a permission level to use the database connection.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -989,7 +1113,11 @@ Grants a user with a permission level to use the database connection.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -1025,7 +1153,11 @@ Returns a list with all database connections.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -1053,7 +1185,11 @@ The list of database providers that a user can associate to a database connectio
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid Platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 *Outputs*
 
@@ -1077,7 +1213,11 @@ Returns the list of permission levels.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 *Outputs*
 
@@ -1101,7 +1241,11 @@ Renames an database connection. This may have impact on all running application 
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -1133,7 +1277,11 @@ Revokes the role permissions to use the database connection.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -1165,7 +1313,11 @@ Revokes the user permissions to use the database connection.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -1197,7 +1349,11 @@ Tests a database connection with the given parameters.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid Platform username and password, or use the LoginService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 EnvironmentKey
 :   Type: mandatory, Text.  
@@ -1232,8 +1388,12 @@ Status
 
 ## UserManagementService
 
-The Platform API to manage IT users: users created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.  
-To use this API you need to send an authentication argument with username/password, or use the AuthenticationService Web Service API to acquire a session token to send as argument.
+The API to manage IT users: users created in the platform. The authenticated user needs to have 'Manage Infrastructure' permissions in the platform to use this API.  
+To use this API, authenticate in one of the following ways:
+
+* Specify a valid platform username and password.
+* Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+* Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 This API is exposed as a Web Service, made available at:  
 `http://<InfrastructureManagementEnvironment>/LifeTimeServices/UserManagementService.asmx?WSDL`
@@ -1261,7 +1421,11 @@ Changes the password of a platform user.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -1294,7 +1458,11 @@ Changes the username of a platform user.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 OldUsername
 :   Type: mandatory, Text.  
@@ -1322,7 +1490,11 @@ Creates a new platform user or updates an existing one. The operation activates 
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -1371,7 +1543,11 @@ Deletes the permission a platform user has for a specific application. After exe
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -1399,7 +1575,11 @@ Returns the permissions a platform user has over each existing application and t
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -1433,7 +1613,11 @@ Returns the permissions a platform user has over an application, in each environ
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -1470,8 +1654,11 @@ Returns the list of platform users, with their information, such as username, em
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.  
-    
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.  
 
 ShowInactive
 :   Type: mandatory, Boolean.  
@@ -1500,7 +1687,11 @@ Activates a user in the platform, restoring all permissions the platform user ha
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -1525,7 +1716,11 @@ Updates the role a platform user has for an application with the given key.
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -1557,7 +1752,11 @@ Deactivates a user in the platform. The user stops having access to all operatio
 
 Authentication
 :   Type: mandatory, [WebServiceSimpleAuthentication](<#Structure_WebServiceSimpleAuthentication>).  
-    The authentication required to use this API. Specify a valid platform username and password, or use the AuthenticationService API to acquire a session token.
+    The authentication required to use this API. You can authenticate in one of the following ways:
+
+    * Specify a valid platform username and password.
+    * Use the [AuthenticationService API](<#AuthenticationService>) to acquire a session token.
+    * Use a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 Username
 :   Type: mandatory, Text.  
@@ -1807,7 +2006,11 @@ RoleName
 
 ### WebServiceSimpleAuthentication { #Structure_WebServiceSimpleAuthentication }
 
-Represents the fields to authenticate an OutSystems IT user. Specify a username/password combination to authenticate, or use the AuthenticationService Web Service API to acquire a session token.
+Represents the fields to authenticate an OutSystems IT user. You can do one of the following:
+
+* Specify a valid platform Username and Password.
+* Set the Token to a session token acquired with the [AuthenticationService API](<#AuthenticationService>).
+* Set the Token to a [Service Account token](../lifetime-deployment/rest-api-authentication.md). Requires LifeTime Management Console 11.13.0 or later.
 
 *Attributes*
 

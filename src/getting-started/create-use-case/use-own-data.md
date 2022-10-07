@@ -1,9 +1,18 @@
 ---
 summary: Learn more about how to use external data in your OutSystems applications. This article summarizes ways to use external data with OutSystems.
 tags:
+locale: en-us
+guid: 26564166-8c97-4176-a172-1a16703d86d7
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Using your own data in your app
+
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
 
 Learn more about how you can customize your app by replacing the sample data in your use-case app with your own data.
 

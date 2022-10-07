@@ -1,6 +1,9 @@
 ---
 summary: Define and manage the user interface, data model, logic and security of your OutSystems applications.
 tags: support-application_development; support-Mobile_Apps; support-webapps; support-webapps-overview
+locale: en-us
+guid: 42cf7257-546c-4760-b0b2-cb5c46dfa63e
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Developing an Application

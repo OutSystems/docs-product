@@ -1,5 +1,8 @@
 ---
 tags: support-Database
+locale: en-us
+guid: 5008ac01-e236-474f-a0ec-0b7169c31e2d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How Data Model Changes are Handled
@@ -45,7 +48,7 @@ Check the [Changing the Data Type of an Attribute](<#changing-the-data-type-of-a
 
 ## Renaming an Entity or Attribute
 
-If you rename an Entity, OutSystems renames the association in the database but the phyiscal name stays the same. The table with all its data remains in the database untouched.
+If you rename an Entity, OutSystems renames the association in the database but the physical name stays the same. The table with all its data remains in the database untouched.
 
 If you rename an Attribute, OutSystems creates a new column with the new name in the database. The old column with all its data remains in the database untouched, but it won’t be available in the development environment.
 

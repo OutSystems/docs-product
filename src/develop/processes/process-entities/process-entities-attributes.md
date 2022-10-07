@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 1af83292-a0c9-4a25-b525-9fbfa59105d1
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Process Entities Attributes
 
 A **Process Entity** is defined by a set of fixed attributes and another set of dynamic attributes.

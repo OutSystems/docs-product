@@ -1,13 +1,16 @@
 ---
-tags: client-side
+tags:
 summary: 
 en_title: Avoid inline JavaScript or inline style
+locale: en-us
+guid: db93a6af-6f3d-45a6-b57a-ec7fbba596c3
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 
 # Avoid inline JavaScript or inline CSS style
 
-JavaScript code or CSS styles can be defined inline inside Screens and WebBlocks by using unescaped Expressions elements or via the Extended Properties window of Service Studio.
+JavaScript code or CSS styles can be defined inline inside Screens and WebBlocks by using unescaped Expressions elements or via the Extended Properties window of Service Studio. 
 
 During development cycles developers frequently resort to inline style for a specific Screen or Block (for example, to quickly adjust the padding of an element or to define a small on-click JavaScript function).
 

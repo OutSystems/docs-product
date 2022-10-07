@@ -1,6 +1,9 @@
 ---
 summary: Learn more about typical security policies for OutSystems infrastructures. Check how to define a simple security policy for small teams or large teams, and how to set up enterprise-grade security policies.
 tags: support-Security; support-Application_Lifecycle
+locale: en-us
+guid: be9622e0-f844-42a6-8ca2-b4a486cfc4e0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Manage IT Users
@@ -12,8 +15,9 @@ To learn more about managing the **end users** of your OutSystems applications, 
 
 </div>
 
-OutSystems allows you to define the permissions of IT users using a [role-based permission model](about-permission-levels.md). This model enables you to set up the permissions of your IT users for simple to complex security policy needs, as you can:
+OutSystems allows you to define the permissions of IT users using a [role-based permission model](about-permission-levels.md). This model enables you to set up the permissions of your IT users for simple or complex security policy needs. You can:
 
+* Configure authentication across systems for IT users by using an [external authenticator provider](../secure-the-applications/use-an-external-authentication-provider.md).
 * Set up the permissions of a small team using only the built-in default roles, Developer and Administrator.
 * [Create additional roles](create-an-it-role.md#create-a-new-role) to better control the different permission levels of a larger team.
 * [Use teams](create-an-it-team.md) to manage an enterprise-grade security policy, where you have many applications and users.

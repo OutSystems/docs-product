@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb
 summary: Provides methods for doing client side role checks. Used to programmatically show or hide UI elements depending on a given role.
+locale: en-us
+guid: efe75497-2f0f-4bbe-9f97-e65c2b345210
+app_type: mobile apps, reactive web apps
 ---
 
 # Security
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 Provides methods for doing client side role checks. Used to programmatically show or hide UI elements depending on a given role.
 

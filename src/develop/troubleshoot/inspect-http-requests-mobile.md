@@ -1,10 +1,18 @@
 ---
 summary: Learn how to inspect the HTTP requests for mobile apps built for iOS.
 tags: support-application_development; support-Application_Troubleshooting; support-Mobile_Apps; runtime-mobile;
+locale: en-us
+guid: 2bea2ff9-7655-4952-a00c-2a3f1e3316e9
+app_type: mobile apps
 ---
 
 # Inspect the HTTP requests in Mobile Apps for iOS
 
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Use the network inspector to see the network activity of your iOS app. The user interface of the network inspector consists of a toolbar and a button that opens the screen with the network traffic details. 
 

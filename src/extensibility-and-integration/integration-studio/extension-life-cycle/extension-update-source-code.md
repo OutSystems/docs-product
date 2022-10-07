@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 985d898a-a78b-4cb3-8628-8f9027631d7c
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Update the Extension Source Code
 
 The Update Source Code operation synchronizes the source code you added in the .NET IDE with the definition of the extension elements. This operation involves the following steps:
@@ -31,7 +37,6 @@ In the **File** menu or in the toolbar, click ![](images/update-source-code.png)
 The Update Source Code operation is also executed when you [edit source code](<extension-code-edit.md>) or [verify](<extension-verify.md>) the extension.
 
 </div>
-
 
 ## Merge Algorithm
 

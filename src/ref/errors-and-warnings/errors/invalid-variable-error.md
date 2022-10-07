@@ -1,6 +1,9 @@
 ---
 summary:  Check the causes and recomendations on how to solve the different Invalid Variable TrueChange errors.
 tags:
+locale: en-us
+guid: 0eb3292f-592a-4301-a9ee-7ac3c598e70a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Variable Error
@@ -37,7 +40,7 @@ For example, for an [Input](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidget
 
 ![Location of Variable property of Input](images/invalid-variable-error.png?width=300)
 
-For a [Radio Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioGroup.final.md), [Text Area](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md), [Switch](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md), [Checkbox](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md), [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md), or [Button Group](../../../develop/ui/patterns/web/controls/buttongroup.md), set a valid value for the Variable property.
+For a [Radio Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioGroup.final.md), [Text Area](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md), [Switch](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md), [Checkbox](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md), [Dropdown](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md), or [Button Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md), set a valid value for the Variable property.
 
 ##  Unknown variable in Assign
 

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 55fca69d-c374-4057-b2f5-6872d5673d34
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Date and Time
 
 
@@ -59,19 +65,19 @@
 </tr>
 <tr>
 <td><a href="#DiffDays">DiffDays</a>(&#8203;DateTime, DateTime)</td>
-<td>Returns the difference in days between 'dt1' and 'dt2'; i.e. how many days have passed between these two dates:<br/><br/>- Returns a positive number if 'dt1' is smaller than 'dt2';<br/>- Returns a negative number if 'dt1' is bigger than 'dt2';<br/>- Returns 0 if the two dates are equal.<br/><br/>The Time component you provide in the parameters is ignored. The DiffDays function receives two Date Time parameters, and then replaces the Time component with 00:00:00. It calculates the elapsed time in milliseconds from the first date at 00:00:00 to the second date at 00:00:00, and then converts the difference in milliseconds into days.<br/><br/>Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.<br/><br/>The maximum supported value is (2^31)-1 days. This corresponds to approximately 5879489.8 years. If DiffDays(dt1, dt2) is bigger than (2^31)-1, you will get an unexpected value.</td>
+<td>Returns the difference in days between 'dt1' and 'dt2'; i.e. how many days have passed between these two dates:<br/><br/>- Returns a positive number if 'dt1' is smaller than 'dt2';<br/>- Returns a negative number if 'dt1' is bigger than 'dt2';<br/>- Returns 0 if the two dates are equal.<br/><br/>The Time component you provide in the parameters is ignored. The DiffDays function receives two Date Time parameters, and then replaces the Time component with 00:00:00. It calculates the elapsed time in milliseconds from the first date at 00:00:00 to the second date at 00:00:00, and then converts the difference in milliseconds into days.<br/><br/>Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.<br/><br/>The maximum supported value is (2<sup>31</sup>)-1 days. This corresponds to approximately 5879489.8 years. If DiffDays(dt1, dt2) is bigger than (2<sup>31</sup>)-1, you will get an unexpected value.</td>
 </tr>
 <tr>
 <td><a href="#DiffHours">DiffHours</a>(&#8203;DateTime, DateTime)</td>
-<td>Returns the difference in hours between 'dt1' and 'dt2'; i.e. how many hours have passed between these two dates:<br/><br/>- Returns a positive number if 'dt1' is smaller than 'dt2';<br/>- Returns a negative number if 'dt1' is bigger than 'dt2'.<br/>- Returns 0 if the two dates are equal.<br/><br/>Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.<br/><br/>The maximum supported value is (2^31)-1 hours. This corresponds to approximately 244978.74 years. If DiffHours(dt1, dt2) is bigger than (2^31)-1, you will get an unexpected value.</td>
+<td>Returns the difference in hours between 'dt1' and 'dt2'; i.e. how many hours have passed between these two dates:<br/><br/>- Returns a positive number if 'dt1' is smaller than 'dt2';<br/>- Returns a negative number if 'dt1' is bigger than 'dt2'.<br/>- Returns 0 if the two dates are equal.<br/><br/>Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.<br/><br/>The maximum supported value is (2<sup>31</sup>)-1 hours. This corresponds to approximately 244978.74 years. If DiffHours(dt1, dt2) is bigger than (2<sup>31</sup>)-1, you will get an unexpected value.</td>
 </tr>
 <tr>
 <td><a href="#DiffMinutes">DiffMinutes</a>(&#8203;DateTime, DateTime)</td>
-<td>Returns the difference in minutes between 'dt1' and 'dt2'; i.e. how many minutes have passed between these two dates:<br/><br/>- Returns a positive number if 'dt1' is smaller than 'dt2';<br/>- Returns a negative number if 'dt1' is bigger than 'dt2'.<br/>- Returns 0 if the two dates are equal.<br/><br/>Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.<br/><br/>The maximum supported value is (2^31)-1 minutes. This corresponds to approximately 4085.78 years. If DiffMinutes(dt1, dt2) is bigger than (2^31)-1, you will get an unexpected value.</td>
+<td>Returns the difference in minutes between 'dt1' and 'dt2'; i.e. how many minutes have passed between these two dates:<br/><br/>- Returns a positive number if 'dt1' is smaller than 'dt2';<br/>- Returns a negative number if 'dt1' is bigger than 'dt2'.<br/>- Returns 0 if the two dates are equal.<br/><br/>Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.<br/><br/>The maximum supported value is (2<sup>31</sup>)-1 minutes. This corresponds to approximately 4085.78 years. If DiffMinutes(dt1, dt2) is bigger than (2<sup>31</sup>)-1, you will get an unexpected value.</td>
 </tr>
 <tr>
 <td><a href="#DiffSeconds">DiffSeconds</a>(&#8203;DateTime, DateTime)</td>
-<td>Returns the difference in seconds between 'dt1' and 'dt2'; i.e. how many seconds have passed between these two dates:<br/><br/>- Returns a positive number if 'dt1' is smaller than 'dt2';<br/>- Returns a negative number if 'dt1' is bigger than 'dt2'.<br/>- Returns 0 if the two dates are equal.<br/><br/>Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.<br/><br/>The maximum supported value is (2^31)-1 seconds. This corresponds to approximately 68.10 years. If DiffSeconds(dt1, dt2) is bigger than (2^31)-1, you will get an unexpected value.</td>
+<td>Returns the difference in seconds between 'dt1' and 'dt2'; i.e. how many seconds have passed between these two dates:<br/><br/>- Returns a positive number if 'dt1' is smaller than 'dt2';<br/>- Returns a negative number if 'dt1' is bigger than 'dt2'.<br/>- Returns 0 if the two dates are equal.<br/><br/>Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.<br/><br/>The maximum supported value is (2<sup>31</sup>)-1 seconds. This corresponds to approximately 68.10 years. If DiffSeconds(dt1, dt2) is bigger than (2<sup>31</sup>)-1, you will get an unexpected value.</td>
 </tr>
 <tr>
 <td><a href="#Hour">Hour</a>(&#8203;DateTime)</td>
@@ -456,7 +462,7 @@ The Time component you provide in the parameters is ignored. The DiffDays functi
   
 Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.  
   
-The maximum supported value is (2^31)-1 days. This corresponds to approximately 5879489.8 years. If DiffDays(dt1, dt2) is bigger than (2^31)-1, you will get an unexpected value.  
+The maximum supported value is (2<sup>31</sup>)-1 days. This corresponds to approximately 5879489.8 years. If DiffDays(dt1, dt2) is bigger than (2<sup>31</sup>)-1, you will get an unexpected value.  
 
 Available in:  
 
@@ -502,7 +508,7 @@ Returns the difference in hours between 'dt1' and 'dt2'; i.e. how many hours hav
   
 Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.  
   
-The maximum supported value is (2^31)-1 hours. This corresponds to approximately 244978.74 years. If DiffHours(dt1, dt2) is bigger than (2^31)-1, you will get an unexpected value.  
+The maximum supported value is (2<sup>31</sup>)-1 hours. This corresponds to approximately 244978.74 years. If DiffHours(dt1, dt2) is bigger than (2<sup>31</sup>)-1, you will get an unexpected value.  
 
 Available in:  
 
@@ -547,7 +553,7 @@ Returns the difference in minutes between 'dt1' and 'dt2'; i.e. how many minutes
   
 Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.  
   
-The maximum supported value is (2^31)-1 minutes. This corresponds to approximately 4085.78 years. If DiffMinutes(dt1, dt2) is bigger than (2^31)-1, you will get an unexpected value.  
+The maximum supported value is (2<sup>31</sup>)-1 minutes. This corresponds to approximately 4085.78 years. If DiffMinutes(dt1, dt2) is bigger than (2<sup>31</sup>)-1, you will get an unexpected value.  
 
 Available in:  
 
@@ -593,7 +599,7 @@ Returns the difference in seconds between 'dt1' and 'dt2'; i.e. how many seconds
   
 Daylight Saving Time (DST) is ignored. The time zone considered for evaluating this function is always the time zone of the Platform Server, regardless of the regional settings of the end user.  
   
-The maximum supported value is (2^31)-1 seconds. This corresponds to approximately 68.10 years. If DiffSeconds(dt1, dt2) is bigger than (2^31)-1, you will get an unexpected value.  
+The maximum supported value is (2<sup>31</sup>)-1 seconds. This corresponds to approximately 68.10 years. If DiffSeconds(dt1, dt2) is bigger than (2<sup>31</sup>)-1, you will get an unexpected value.  
 
 Available in:  
 
@@ -719,6 +725,12 @@ Available in:
   * Local Storage: Can be used with attributes in aggregates.
 
 ### Parameters
+
+<div class="warning" markdown="1">
+
+Built-in functions don't generate exceptions. If the input parameters are incorrect, the built-in functions return the **default** value for the associated data type. For example, NewDate(1,1,2021) returns the default #1900-01-01#.
+
+</div>
 
 y
 :    Type: Integer. Mandatory.  

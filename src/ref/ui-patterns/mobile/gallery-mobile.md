@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Advanced Use Cases for the Gallery UI Pattern.
+locale: en-us
+guid: b48f442d-6ab3-47c9-96ad-2bae75f24bc8
+app_type: mobile apps, reactive web apps
 ---
 
 # Gallery Reference
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 ## Structure
 

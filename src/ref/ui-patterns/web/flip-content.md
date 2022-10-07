@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Flip Content UI Pattern.
+locale: en-us
+guid: 478229ef-fead-4fea-be67-f0fdd66c7209
+app_type: traditional web apps
 ---
 
 # Flip Content Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

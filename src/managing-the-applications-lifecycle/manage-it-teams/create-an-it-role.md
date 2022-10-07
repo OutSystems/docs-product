@@ -1,5 +1,8 @@
 ---
 summary: Grant your IT users permissions by assigning them roles.
+locale: en-us
+guid: 23c1ff9e-cfa0-4efc-9406-f7bec7187f24
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create and Assign Roles

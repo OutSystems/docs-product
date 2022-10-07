@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 9b85a078-cdb8-467d-8fca-001f5f88b4a0
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Close Wait Action
 
 Use the **Close&lt;Wait Name&gt;** [process activity extended action](intro.md) in an action flow to close a **Wait** activity. Once closed, the Wait activity ends its execution.

@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Displays the current progress of a task using circular or semi-circular progress indicators.
+locale: en-us
+guid: 1f0827a1-891f-4fe7-a37e-34a66224f7dc
+app_type: mobile apps, reactive web apps
 ---
 
 # Progress Circle
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -25,7 +34,7 @@ In this example, we create a button that increments the progress circle each tim
 
     ![Progress Circle widget](<images/progresscircle-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -77,9 +86,9 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property | Description |
-|---|---|
-|Progress (Integer): Mandatory | Progress percentage. Usually a number between 0 and 100. You can also use functions or local variables.|
+| Property                      | Description                                                                                             |
+|-------------------------------|---------------------------------------------------------------------------------------------------------|
+| Progress (Integer): Mandatory | Progress percentage. Usually a number between 0 and 100. You can also use functions or local variables. |
 |ProgressColor (Color Identifier): Optional | The color that fills the circle, as progress goes up, using the OutSystems UI Color palette.
 |TrailColor (Text): Optional | The color of the empty part of the progress circle, using the OutSystems UI Color palette.  |
 |Thickness (Integer): Optional | The thickness of the circle that marks the progress. |

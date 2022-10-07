@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: da852258-d018-4628-b2bb-aec5fcc78c0b
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Using Process Activities Callback Actions
 
 When designing the process flow of your process, you can add business rules to validate the execution of your process activities at some stage of their life cycle. This allows you to block or quit the activity instance execution if a specified condition is not verified. This behavior is implemented through **Activity Callback actions**.

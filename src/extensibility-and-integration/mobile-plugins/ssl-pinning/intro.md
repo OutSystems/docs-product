@@ -1,9 +1,18 @@
 ---
 summary: Provides an extra layer of security to HTTPS communications.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
+locale: en-us
+guid: fec62d79-033b-4a5a-a7e1-806b0a591daf
+app_type: mobile apps
 ---
 
 # SSL Pinning Plugin
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 In native mobile apps, SSL Pinning or HTTP Public Key Pinning (HPKP) provides an extra layer of security to HTTPS communications to avoid, for example, man-in-the-middle attacks. SSL Pinning works client-side and verifies the server certificate by comparing hashes of public keys that are pre-bundled with the mobile app.
 

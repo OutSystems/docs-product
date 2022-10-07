@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb;
 summary: Advanced use cases for the Layout Login Split web block.
+locale: en-us
+guid: 804f282e-4480-4c8c-ba5a-4bc376436caa
+app_type: traditional web apps
 ---
 
 # Layout Login Split Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

@@ -1,13 +1,15 @@
 ---
-tags: web server
+tags:
 summary: 
-en_title: Avoid large session variables
+locale: en-us
+guid: 6d74e154-6ca6-4b2b-9fb1-178d4dbff78d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 
 # Avoid large session variables
 
-Session variables are designed to store information across requests in an application. They typically keep small amounts of information that help customize the application’s behavior, serialized and stored as a binary in the database. The session is loaded each time a request is made, so storing large data structures or large amounts of information in the session can cause performance problems.
+Session variables are designed to store information across requests in an application. They typically keep small amounts of information that help customize the application’s behavior, serialized and stored as a binary in the database. The session is loaded each time a request is made, so storing large data structures or large amounts of information in the session can cause performance problems. 
 
 Here is an example:
 

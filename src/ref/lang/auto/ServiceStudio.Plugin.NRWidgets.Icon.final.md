@@ -2,10 +2,18 @@
 helpids: 30044
 summary: Reference information on the Icon widget for adding a scalable vector picture as an icon to the screen.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; icon
+locale: en-us
+guid: 46d19d6d-4088-4950-805d-c07e75825805
+app_type: mobile apps, reactive web apps
 ---
 
 # Icon
 
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 Shows an icon from a predefined set of icons for common use and content. It allows you to add a visual reference to an action, for example.
 

@@ -1,6 +1,9 @@
 ---
 tags: 
 summary: 
+locale: en-us
+guid: f230a3d9-8c51-4b1b-98d9-ada3c647d825
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Designing Screens

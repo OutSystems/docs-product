@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: How to change the location of a map marker on the Map component. 
+locale: en-us
+guid: b7dce067-3d75-4c88-8a92-9de144f97896
+app_type: mobile apps, reactive web apps
 ---
 
 # How to get draggable marker coordinates  
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 **Prerequisites**
 
@@ -17,7 +26,7 @@ This example demonstrates how to change the location of a map marker and get the
 
     ![Map in the Service Studio toolbar](<images/map-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 

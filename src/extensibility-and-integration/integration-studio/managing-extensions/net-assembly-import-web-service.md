@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: cdffaa83-59f9-4c88-a3f1-4168fd023051
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Import Web Services from a .NET Assembly
 
 To provide support for a wider range of Web Services, Integration Studio allows you to import the definition of Web Service clients, known as Web References in OutSystems terminology. The Web Reference is encapsulated within an extension which you can then use in Service Studio.

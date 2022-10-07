@@ -3,6 +3,9 @@ kinds: ServiceStudio.Plugin.NRWidgets.LinkDescriptor
 helpids: 30041
 summary: Reference information on the Link widget for allowing users to have clickable links on a screen.
 tags: outsystems-designing-screens; reference; designing-screens; link-widget
+locale: en-us
+guid: 21c2bb40-056c-4805-a231-63e5c40492f8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Link

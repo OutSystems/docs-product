@@ -1,6 +1,9 @@
 ---
 summary: See how to implement accelerators
 tags: 
+locale: en-us
+guid: fc130f38-3ed2-46f5-a1d1-4319f3e37dfb
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Accelerators

@@ -1,12 +1,20 @@
 ---
 summary: Descriptions of the elements in the offline sync framework. 
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
+locale: en-us
+guid: 4bdbcec9-3e7a-4701-a2e8-4bd6166e7bb0
+app_type: mobile apps
 ---
 
 # Sync Framework Reference
 
-These are the elements belonging to the framework for syncing data between the server and the application. For an implementation overview you can check [Implementing Offline Synchronization](<sync-implement.md>).
+<div class="info" markdown="1">
 
+Applies only to Mobile Apps.
+
+</div>
+
+These are the elements belonging to the framework for syncing data between the server and the application. For an implementation overview you can check [Implementing Offline Synchronization](<sync-implement.md>).
 
 ## Logic tab > Client Actions > OfflineDataSync folder
 

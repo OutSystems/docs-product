@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: f9c4bf6c-a906-4df6-9272-a29b3d26466e
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Excel Import Error
 
 The `Invalid Excel Import` error is issued in the following situations:

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 9ecd6d17-54b0-4f53-9fcc-b6c9cee561e5
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Designing Parallel Activities
 
 Use this pattern to design multiple paths with activities executed in parallel: simply add outgoing connectors from the activity where the path splits into multiple paths.

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: cfc99287-9b0a-46d6-9daf-b62d281dcbef
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Log data reference
 
 This document lists the fields and descriptions of the database views associated with the platform log records. The views are built on top of the database tables.
@@ -12,6 +18,11 @@ Also available: [Log data reference in OutSystems 10](https://success.outsystems
 
 You can access the log data in Service Studio, by using the PlatformLogs extension. Each entry has the corresponding _Previous entry. For example, for the oslog_General view you have both oslog_General_Previous in the database views and Log_General_Previous in the Entity list.
 
+<div class="info" markdown="1">
+
+See [The log tables and views](views-and-tables.md) for more information about the database model.
+
+</div>
 
 Database view | Entity
 ---|---

@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.ProcessNodes+ExecuteProcess+Kind
 helpids: 0
+locale: en-us
+guid: c895ee72-9869-47c1-a51d-5189df376351
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Execute Process

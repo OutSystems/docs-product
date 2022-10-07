@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: Use the Map pattern to add Google Maps to your app.
+locale: en-us
+guid: fe14ee83-cb5a-428d-bc6f-16d3857bf3ca
+app_type: mobile apps, reactive web apps
 ---
 
 # Map
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 The OutSystems **Map** component allows you to add maps to your applications with single or multiple locations. The Map component is fully customizable, allowing you to, for example, change map behaviors, search for locations, and plan your route.
 

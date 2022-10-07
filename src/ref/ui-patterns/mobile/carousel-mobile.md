@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Advanced use cases for the Carousel UI Pattern. 
+locale: en-us
+guid: fe0f0d5b-bd63-4ddd-a18c-16d9df1e200f
+app_type: mobile apps, reactive web apps
 ---
 
 # Carousel Reference
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 ## Events
 
@@ -41,15 +50,15 @@ If you are an advanced user, you might want to use the Carousel API (OutSystems.
 |---|---|---| 
 |ChangeProperty|Changes the property of the Carousel.|<ul><li>carouselId: string</li><li>propertyName: string</li><li>propertyValue: any</li></ul>| 
 |Create|Creates the new Carousel instance and adds it to the CarouselsMap.|<ul><li>carouselId: string</li><li>configs: string</li><li>provider: string</li></ul>| 
-|Dispose|Destroys the instance of the given Carousel.|<li>carouselId: string</li>| 
-|GetAllCarouselItemsMap|Returns the Map with all the Carousel instances at the page.|<li>Returns array of IDs</li>| 
-|GetCarouselItemById|Gets the Carousel instance ID.|<li>carouselId: string</li>| 
-|Initialize|Initializes the pattern instance.|<li>carouselId: string</li>| 
+|Dispose|Destroys the instance of the given Carousel.|<ul><li>carouselId: string</li></ul>| 
+|GetAllCarouselItemsMap|Returns the Map with all the Carousel instances at the page.|<ul><li>Returns array of IDs</li></ul>| 
+|GetCarouselItemById|Gets the Carousel instance ID.|<ul><li>carouselId: string</li></ul>| 
+|Initialize|Initializes the pattern instance.|<ul><li>carouselId: string</li></ul>| 
 |GoTo|Goes to a specific page index.|<ul><li>carouselId: string</li><li>index: number</li></ul>| 
-|Next|Goes to the next page.|<li>carouselId: string</li>| 
-|Previous|Goes to the previous page|<li>carouselId: string</li>| 
+|Next|Goes to the next page.|<ul><li>carouselId: string</li></ul>| 
+|Previous|Goes to the previous page|<ul><li>carouselId: string</li></ul>| 
 |ToggleDrag|Toggles the drag events on the Carousel.|<ul><li>carouselId: string</li><li>hasDrag: boolean</li></ul>| 
-|UpdateOnRender|Updates on DOM changes inside the Carousel.|<li>carouselId: string</li>|  
+|UpdateOnRender|Updates on DOM changes inside the Carousel.|<ul><li>carouselId: string</li></ul>|   
 
 ## Advanced use cases
 

@@ -1,6 +1,9 @@
 ---
 summary: API to dynamically change Web Service and Web Reference URLs, SOAP headers, credentials, and proxies.
 tags: 
+locale: en-us
+guid: aa9f7cd6-bf5d-4cd6-8079-df516cd3277c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # EnhancedWebReferences API

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: c903f266-1cdc-45fb-9609-188a79440359
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Using Process Callback Actions
 
 When designing the process flow of your process, you can add business rules to validate the execution of your process. This allows you to block or quit the process execution if a specified condition is not verified. This behavior is implemented through **Process Callback actions**.

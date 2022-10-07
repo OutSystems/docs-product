@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: bdac6bb2-8fa2-4c3b-b006-d30a08fa4566
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Data Dependency
 
 The Invalid Data Dependency error is issued in the following situations:

@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;
 summary: Advanced use cases for the Notification UI Pattern. 
+locale: en-us
+guid: 7505a6aa-329a-4f60-a1a6-e7d3bd727943
+app_type: mobile apps, reactive web apps
 ---
 
 # Events
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 |Event|Output|Description| 
 |---|---|---| 

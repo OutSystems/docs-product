@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 2d0f78ae-6d89-437a-ab38-cf89125d8036
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Outdated Producer Warning
 
 Message

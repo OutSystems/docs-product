@@ -1,6 +1,9 @@
 ---
 summary: Use the LogMessage System Action when debugging action flows or to register some kind of information that you wish to examine at runtime.
 tags: support-application_development; support-Application_Troubleshooting
+locale: en-us
+guid: 2ebf3be6-b46a-4276-94f6-af76e4b07ff0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Log Information in Action Flows

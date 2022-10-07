@@ -1,11 +1,13 @@
 ---
-tags: Architecture Dashboard.
+tags:
 summary: Learn how to use Architecture Dashboard by following one of the tutorials in this topic.
-en_title: Getting started with Architecture Dashboard
+locale: en-us
+guid: 115abc7a-0267-4497-868b-d3c09b1e92fa
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Getting started with Architecture Dashboard
 
-After [setting up Architecture Dashboard](how-setup.md) and after the first data synchronization occurs, you are ready to use Architecture Dashboard.
+After [setting up Architecture Dashboard](how-setup.md) and after the first data synchronization occurs, you are ready to use Architecture Dashboard. 
 
 The following guides help you get started on your journey as an Architecture Dashboard user:
 

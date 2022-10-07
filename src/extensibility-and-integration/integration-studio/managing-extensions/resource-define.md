@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: e7143ce0-e179-48f5-a85c-91a174f36eba
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Define Resources
 
 Once you have created your extension, you can define the resources that your extension requires. Integration Studio displayes the resources of your extension in the [Resources tree](<../../../ref/integration-studio/resources-tree.md>).

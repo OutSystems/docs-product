@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Alert UI Pattern.
+locale: en-us
+guid: 252cc44d-c1de-4848-869b-55f9c33c3430
+app_type: traditional web apps
 ---
 
 # Alert Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and Classes
 

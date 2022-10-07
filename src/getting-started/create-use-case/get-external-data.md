@@ -1,9 +1,18 @@
 ---
 summary: Learn more about how to get external data in your OutSystems applications. This article summarizes ways to use external data with OutSystems.
 tags:
+locale: en-us
+guid: 4430e635-ef3e-45e4-a2f6-39c74300518d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Get external data in your app
+
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
 
 OutSystems provides a number of ways to access external data and use it in your apps. It provides native support for integrations with standard databases and systems of record (SoRs). You can also import data from Excel. 
 

@@ -1,6 +1,9 @@
 ---
 summary: Check the causes and recomendations on how to solve the different Invalid Action Flow TrueChange errors
 tags:
+locale: en-us
+guid: b477089c-5ad9-4310-9978-a7367e20e7de
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Invalid Action Flow Error
@@ -23,7 +26,7 @@ For example, for a [list](../../../develop/logic/list-iterate.md), you need to c
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Web Applications](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
 
 ## Ambiguous paths to &lt;element> in &lt;action>
 
@@ -48,7 +51,7 @@ Check [Exception Handler](../../../ref/lang/auto/Class.Exception%20Handler.final
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Web Applications](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
 
 Check [Exception Handling Mechanism](../../../develop/logic/exceptions/handling-mechanism.md) for additional information about Exception Handler flows.
 
@@ -64,7 +67,7 @@ Update the [If](../../../ref/lang/auto/Class.If.final.md) element in the Action 
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Web Applications](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
 
 ## Switch condition for &lt;path> connector must return a 'Boolean' value
   
@@ -78,7 +81,7 @@ Update the [Switch](../../../ref/lang/auto/Class.Switch.final.md) element in the
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Web Applications](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
 
 ## &lt;switch> must have an otherwise optional connector in &lt;action>
   
@@ -92,7 +95,7 @@ Update the [Switch](../../../ref/lang/auto/Class.Switch.final.md) element in the
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Web Applications](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
 
 ## Start is required in &lt;action>
 
@@ -106,7 +109,7 @@ Edit the Action and add a Start element. An Action flow must have only one Start
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Web Applications](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).
 
 ## More than one Start found in &lt;action>
 
@@ -120,4 +123,4 @@ Edit the Action and remove the additional Start elements.
 
 **More info**
 
-For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Web Applications](../../../develop/logic/action-web.md).
+For information about creating [Screen](../../../ref/lang/auto/Class.Screen%20Action.final.md), [Client](../../../ref/lang/auto/Class.Client%20Action.final.md), [Server](../../../ref/lang/auto/Class.Server%20Action.final.md), and [Data](../../../ref/lang/auto/Class.Data%20Action.final.md) Actions, see [Actions in Reactive Web and Mobile Apps](../../../develop/logic/actions.md) and [Actions in Traditional Web Apps](../../../develop/logic/action-web.md).

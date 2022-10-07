@@ -1,13 +1,16 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Responsive Table displays information in a logical and organized way that is easy to scan and read.
+locale: en-us
+guid: 4d49cb72-9e20-4d2c-9bc4-d2db032317aa
+app_type: traditional web apps
 ---
 
 # Responsive Table
 
 <div class="info" markdown="1">
 
-We’ve been working on this article. Please let us know how useful this new version is by voting.
+Applies only to Traditional Web Apps.
 
 </div>
 
@@ -25,7 +28,7 @@ The following example demonstrates how you can display the registered users on y
 
     ![](<images/responsivetable-8-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -53,6 +56,6 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property |  Description |
-|---|---|
-| ResponsiveBehavior (ResponsiveTableRecords Identifier): Mandatory |Define how the table behaves when the user interacts with it. The predefined values are:<p><ul><li>ExpandableRows</li><li>ScrollableRows (default)</li></ul></p> <p>Examples <ul><li>Entities.RepsonsiveTableRecords.ScrollableRows - The table header stays fixed and the user can scroll through the rows in the table. </li><li>Entities.RepsonsiveTableRecords.ExpandableRows - The table header stays fixed and the user can expand each row to view any extra information. </li></ul></p> |
+| Property                                                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ResponsiveBehavior (ResponsiveTableRecords Identifier): Mandatory | Define how the table behaves when the user interacts with it. The predefined values are:<p><ul><li>ExpandableRows</li><li>ScrollableRows (default)</li></ul></p> <p>Examples <ul><li>Entities.RepsonsiveTableRecords.ScrollableRows - The table header stays fixed and the user can scroll through the rows in the table. </li><li>Entities.RepsonsiveTableRecords.ExpandableRows - The table header stays fixed and the user can expand each row to view any extra information. </li></ul></p> |

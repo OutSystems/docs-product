@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 0306c69d-0c0d-440f-9016-34367cda685d
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Missing Entity Filter Warning
 
 Message

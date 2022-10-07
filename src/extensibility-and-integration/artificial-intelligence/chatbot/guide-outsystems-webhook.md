@@ -1,6 +1,9 @@
 ---
 summary: Add a webhook chat module to your app to create advanced chatbot logic. 
 tags:
+locale: en-us
+guid: 15102520-e5ff-4487-bc3d-14f757ccab88
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create and configure the chatbot webhook module

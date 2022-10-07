@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: b45e7737-81b3-441d-9baf-641f310c262d
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Extension Source Files
 
 Once the extension is [created](<../extension-life-cycle/extension-create.md>), Integration Studio automatically generates, according to the [definition](<../extension-life-cycle/extension-define.md>) of the extension elements, the necessary template files for the development bootstrap of that extension. Once these templates are generated, the source files listed below are added as resources of your extension and you can start coding the behavior of your extension actions.

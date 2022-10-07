@@ -1,9 +1,18 @@
 ---
 summary: Customize your mobile app regarding device characteristics and mobile platform, thus fulfilling business requirements or improve the experience of your users.
 tags: runtime-mobile
+locale: en-us
+guid: 8e510d45-a9d0-44c9-b2c1-5f676be38a25
+app_type: mobile apps
 ---
 
 # Customize Your Mobile App
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Mobile apps can be customized, allowing you to define global or mobile platform specific configurations, fulfill business requirements, or improve the experience of your users for all different screen sizes.
 

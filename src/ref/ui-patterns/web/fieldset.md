@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Fieldset UI Pattern.
+locale: en-us
+guid: 6a58d000-dd26-489f-ae56-94a4ad3dd6a2
+app_type: traditional web apps
 ---
 
 # Fieldset Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

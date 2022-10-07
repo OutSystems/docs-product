@@ -1,6 +1,9 @@
 ---
 summary: Learn how to create an input parameter to pass information to the destination screen.
 tags: support-application_development; support-Mobile_Apps; support-webapps
+locale: en-us
+guid: abc236ca-9b9d-41ea-9694-7a0148c216b1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Pass Data Between Screens With Input Parameters

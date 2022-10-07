@@ -1,5 +1,8 @@
 ---
 tags: 
+locale: en-us
+guid: 9ae75fbb-3c7b-4307-9b9a-9e18bcb16017
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Database Compatibility Issues

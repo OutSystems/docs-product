@@ -1,6 +1,9 @@
 ---
 tags: support-Installation_Configuration
 summary: Use Configuration Tool for configuring you Platform server for on-premises installations.
+locale: en-us
+guid: 3ccedde9-7f7c-4d04-8992-703b00953c15
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configuration Tool

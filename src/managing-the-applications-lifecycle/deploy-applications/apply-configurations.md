@@ -1,6 +1,9 @@
 ---
 summary: There are several types of configurations in Service Center. Learn more about them and how they can be applied.
 tags: support-Installation_Configuration; version-11
+locale: en-us
+guid: fd03d085-fcb8-4b45-939e-1931252ade2c
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Applying Configurations in Service Center

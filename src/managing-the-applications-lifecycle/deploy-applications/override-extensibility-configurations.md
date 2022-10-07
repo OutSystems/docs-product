@@ -1,9 +1,18 @@
 ---
 summary: Override the default Extensibility Configurations of a mobile app for a specific environment.
 tags: runtime-mobile
+locale: en-us
+guid: 09207082-720b-48a1-980b-e8937925e461
+app_type: mobile apps
 ---
 
 # Override the Default Mobile Extensibility Configurations
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 The [default Extensibility configurations](../../deliver-mobile/customize-mobile-app/intro.md) of an OutSystems mobile app are defined at design time in the application home module. However, there are some situations when it is necessary to have different extensibility configurations for different environments.
 

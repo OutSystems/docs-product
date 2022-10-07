@@ -2,10 +2,18 @@
 kinds: ServiceStudio.Model.WebWidgets+InlineExpression+Kind, ServiceStudio.Model.WebWidgets+ReferenceInlineExpression+Kind
 helpids: 4020
 tags: runtime-traditionalweb
+locale: en-us
+guid: bc4b0b1b-57cb-49ab-b9de-3d90a5f418c2
+app_type: traditional web apps
 ---
 
 # Expression Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Displays a text literal or an expression evaluation at runtime. For example, the expression can be a combination of values and operators or the result of a function call.
 

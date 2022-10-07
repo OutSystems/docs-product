@@ -1,6 +1,9 @@
 ---
 summary: If you need to restrict end user access to specific areas or operations in an application, you must validate their permissions.
 tags: support-Security; support-Security-featured
+locale: en-us
+guid: 68463867-fb0c-4e54-9fe5-d0e117dbf9bb
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Validate End User Permissions in the Application

@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Animate UI Pattern.
+locale: en-us
+guid: 1aad8f7f-9da7-417a-9cfd-3c159905fc99
+app_type: traditional web apps
 ---
 
 # Animate Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

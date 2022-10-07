@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: a3d00b4b-8f79-4136-9b52-bc9052faaa8d
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Roles
 
 Besides the functions listed below, you also have another built-in function available for each existing role. This function, which is automatically defined by the platform, is the following:

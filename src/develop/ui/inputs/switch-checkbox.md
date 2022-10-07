@@ -1,6 +1,9 @@
 ---
 summary: Use Switch or Check Box widgets to change the value of boolean variables.
-tags: support-application_development; support-Front_end_Development; support-Mobile_Apps; support-webapps
+tags:
+locale: en-us
+guid: dc284a2a-904b-4d90-84c0-43cbd7dcd7a0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Switch or Toggle a Boolean Value

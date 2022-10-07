@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 1233ca21-be96-4571-abab-4b38a30aa237
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # ExBuilder_Configs_CS
 
 Module that contains several configuration site properties used across the mobile application.

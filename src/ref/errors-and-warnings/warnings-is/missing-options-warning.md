@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 61e49a79-f5b5-40e1-a9c9-64e28f262cef
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Missing Options Warning
 
 Message

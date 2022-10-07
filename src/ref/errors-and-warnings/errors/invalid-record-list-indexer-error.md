@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: c16aaff5-3030-44bf-bae7-1c2a0960dd00
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Record List Indexer Error
 
 The `Invalid Record List Indexer` error is issued in the following situations:

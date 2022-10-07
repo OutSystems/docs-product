@@ -1,6 +1,9 @@
 ---
 summary: LifeTime is the centralized console for managing the infrastructure, environments, applications, IT users, and security.
 tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps; support-Infrastuture_Architecture-overview
+locale: en-us
+guid: 5f21d5c6-f612-4ac0-835d-3a468b82c45b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Manage Your OutSystems Infrastructure
@@ -17,7 +20,7 @@ You can manage your OutSystems infrastructure in the **INFRASTRUCTURE** tab of L
 
 ## Set up the infrastructure
 
-To execute the initial setup of your OutSystems infrastructure in LifeTime, follow the instructions in [Configure the infrastructure management console](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/Configure_the_infrastructure_management_console>).
+To execute the initial setup of your OutSystems infrastructure in LifeTime, follow the instructions in [Configure the infrastructure management console](../setup-maintain/setup/lifetime-configure.md).
 
 ## Add or remove environments
 
@@ -26,21 +29,21 @@ At any time, you can add or remove environments to your OutSystems infrastructur
 To add a new OutSystems environment to your infrastructure, do the following:
 
 1. Click the **Register an Existing Environment** link.
-1. Register your environment as described in [Configure the infrastructure management console](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/Configure_the_infrastructure_management_console>).
+1. Register your environment as described in [Configure the infrastructure management console](../setup-maintain/setup/lifetime-configure.md).
 
 To remove one of your OutSystems environments from the infrastructure:
 
 * On OutSystems Cloud, contact OutSystems Support to remove or unregister an environment.
-* In a self-managed infraestructure, do the following:
+* In a self-managed infrastructure, do the following:
 
     1. Click the **Edit Environment** link for the environment you want to remove.
     1. Click the **Unregister environment** link.
 
 ## Switch the environments order
 
-In an OutSystems Cloud infraestructure, contact OutSystems support and request to change the order of deployment.
+In an OutSystems Cloud infrastructure, contact OutSystems support and request to change the order of deployment.
 
-In a self-managed infraestructure, you can switch the order of two environments in the infrastructure using the **Switch Order** icon placed between those environments.
+In a self-managed infrastructure, you can switch the order of two environments in the infrastructure using the **Switch Order** icon placed between those environments.
 
 
 ![](images/manage-infrastructure-1.png)

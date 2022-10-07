@@ -1,13 +1,16 @@
 ---
-tags: Architecture Dashboard;
+tags:
 summary: Learn about pre-requirements and how to setup Architecture Dashboard.
-en_title: How to configure Architecture Dashboard probes in OutSystems 10
+en_title:
+locale: en-us
+guid: e1303736-5727-4eb9-82a1-dc7039b26731
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 
 # How to configure Architecture Dashboard probes in OutSystems 10
 
-1. Go to **LifeTime** (`https://<lifetime_environment>/lifetime`).
+1. Go to **LifeTime** (`https://<lifetime_environment>/lifetime`). 
 
 1. Select **Plugins** \> **Architecture Dashboard**.
 

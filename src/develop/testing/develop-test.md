@@ -1,6 +1,9 @@
 ---
 summary: Testing in OutSystems
 tags:
+locale: en-us
+guid: a04eb23a-d3fe-4967-875b-02d15033b8cd
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Develop for Testability
@@ -72,12 +75,12 @@ This decision about whether to directly reference Public entities between domain
 
 There are a couple of things you can do to sort it out. If cross-domain entities are referenced directly, that means there’s no possibility to mock data from the other domain. As a result, it is acceptable for test setup activities in the local domain to create any required data directly in the external domain.
 
-However, if those entities are only referenced through REST/SOAP APIs or Service Actions, that opens up the possibility to use mock services to simulate data from the external domain. This approach promotes test independence and reliability. In this scenario, it isn’t acceptable for test setup activities in the local domain to directly create any required data in the external domain. Instead, use mock services to get the data.
+However, if those entities are only referenced through APIs or Service Actions, that opens up the possibility to use mock services to simulate data from the external domain. This approach promotes test independence and reliability. In this scenario, it isn’t acceptable for test setup activities in the local domain to directly create any required data in the external domain. Instead, use mock services to get the data.
 ## Service API Isolation
 
-Whenever a REST/SOAP API service external to the current domain needs to be consumed, it should be done so in a wrapper module. This wrapper module should then expose a set of public actions to use that REST API, and all modules needing to access the API must go through the wrapper module.
+Whenever an API service external to the current domain needs to be consumed, it should be done so in a wrapper module. This wrapper module should then expose a set of public actions to use that API, and all modules needing to access the API must go through the wrapper module.
 
-Available since OutSystems 11, Service Actions are essentially REST remote calls available only to other OutSystems applications running in the same environment. They are used to create loosely coupled dependencies between applications, allowing them to break monoliths inside the OutSystems context. Because at runtime they are REST services, it also makes sense to apply this isolation for Service Actions that are referenced across different domains.
+Available since OutSystems 11, Service Actions are essentially remote calls available only to other OutSystems applications running in the same environment. They are used to create loosely coupled dependencies between applications, allowing them to break monoliths inside the OutSystems context. Because at runtime they are services, it also makes sense to apply this isolation for Service Actions that are referenced across different domains.
 
 In this section, we will use API to refer to REST, SOAP, or service actions.
 
@@ -87,7 +90,7 @@ In an OutSystems environment, there are multiple modules that consume the same A
 
 ![Anti-Pattern #4 - Same API consumed in multiple Modules](images/test-consume-api-several-modules-diag.png?width=500)
 
-The best solution for you is to isolate the API consumption in a wrapper module that exposes the API methods through public actions. Core modules needing access to the API do it through the wrapper module. Later, in the scope of a test execution, when we need to point it to a mock service, that is done in one place only — the wrapper module
+The best solution for you is to isolate the API consumption in a wrapper module that exposes the API methods through public actions. Core modules needing access to the API do it through the wrapper module. Later, in the scope of a test execution, when we need to point it to a mock service, that is done in one place only — the wrapper module.
 
 In the case of REST APIs, the OnBeforeRequest event action available at the consumed REST definition can be used.
 
@@ -95,15 +98,15 @@ In the case of REST APIs, the OnBeforeRequest event action available at the cons
 
 * For service actions, because they behave like public actions at development time, the wrapper should implement logic to return the output expected for the test instead of executing the service action call.
 
-For more detail on mocking strategies, read [Mock Services for Integration Points](https://success.outsystems.com/Documentation/Best_Practices/Automated_Testing_Strategy#Mocking_Services_for_Integrations_Points).
+For more detail on mocking strategies, read [Mock Services for Integration Points](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Automated_Testing_Strategy#mocking-services-for-integrations-points).
 
-## Web UI Simulation
+## UI Simulation
 
 ### Widget Naming
 
-The way automated UI testing works in web applications is by simulating the user interaction through application screens in order to fulfill a specific user journey or functionality provided by the application. This simulation is done through scripting the various steps a user needs to perform on the screen elements. An example would be: Follow the home menu link; Click on the submit button; Enter the `email@example.com` into the email input.
+The way automated UI testing works in applications is by simulating the user interaction through application screens in order to fulfill a specific user journey or functionality provided by the application. This simulation is done through scripting the various steps a user needs to perform on the screen elements. An example would be: Follow the home menu link; Click on the submit button; Enter the `email@example.com` into the email input.
 
-This means that the UI test script needs to uniquely identify the elements that the user is interacting with. The easiest way to uniquely identify an element in a screen is through its ID property. As such, and in the scope of OutSystems application screens, it implies that those widgets need to be properly identified in Service Studio.
+This means that the UI script needs to uniquely identify the elements that the user is interacting with. The easiest way to uniquely identify an element in a screen is through its ID property. As such, and in the scope of OutSystems application screens, it implies that those widgets need to be properly identified in Service Studio.
 
 When developing a screen, the developer should ensure that all elements that have some degree of user interaction, such as inputs, buttons, and links, have the name property assigned with a meaningful value. This facilitates the element identification in the generated screen code, since the element’s ID attribute will always terminate with the widget’s name property value. This will also avoid additional effort later on if a UI test finds that a specific element on the screen is not properly identified.
 
@@ -111,9 +114,9 @@ Eventually, it may be the case that a specific UI test will require additional e
 
 Using the name as the basis of the selector also allows the platform to detect name collision inside the same screen. This is an added benefit. It does not allow two different widgets to have the same Name property, and so the second will add the suffix of "2", and so on.
 
-Still, because OutSystems allows composing a screen with multiple Web Blocks, if we use the same name in two different Web Blocks for the same screen, this name collision will not be automatically addressed by Service Studio. Taking that into account, we recommend that when naming a widget in a block, developers should include the web block name as a prefix to the name of the UI widget. This ensures that names will still be unique when a screen is composed by multiple, different Web Blocks.
+Still, because OutSystems allows composing a screen with multiple Blocks, if we use the same name in two different Blocks for the same screen, this name collision will not be automatically addressed by Service Studio. Taking that into account, we recommend that when naming a widget in a block, developers should include the block name as a prefix to the name of the UI widget. This ensures that names will still be unique when a screen is composed by multiple, different Blocks.
 
-And what if there is a need to have multiple instances of the same web block on the same screen? In these scenarios, developers should wrap each web block in a container with a specific ID for the screen, and then use that container ID to anchor each specific web block instance in a unique way for that screen.
+And what if there is a need to have multiple instances of the same block on the same screen? In these scenarios, developers should wrap each block in a container with a specific ID for the screen, and then use that container ID to anchor each specific block instance in a unique way for that screen.
 
 Testing tools usually use XPath or CSS selectors to identify each UI element. When following the approach mentioned above for UI element identification, these UI widgets will all have IDs, but the OutSystems platform will generate a "composed" ID that will only end with the actual name given to the widget inside Service Studio.
 

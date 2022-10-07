@@ -1,6 +1,9 @@
 ---
 summary: Find information on how to define your data model, query the database and manipulate query results.
 tags: support-application_development; support-Mobile_Apps-overview; support-webapps
+locale: en-us
+guid: bca4c88f-38d9-4f5f-93a6-bffca22d7278
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use Data

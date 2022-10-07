@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb;
 summary: Advanced use cases for the Layout Side Menu web block.
+locale: en-us
+guid: 4d5d4869-2345-4646-a8b0-5c24c0f6a8cd
+app_type: traditional web apps
 ---
 
 # Layout Side Menu Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

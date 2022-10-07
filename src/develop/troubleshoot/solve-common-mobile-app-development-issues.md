@@ -1,9 +1,18 @@
 ---
 summary: Check how to solve some issues you might find while developing your mobile app.
 tags: runtime-mobile; support-application_development; support-Application_Troubleshooting; support-Application_Troubleshooting-overview; support-Mobile_Apps; support-Mobile_Apps-overview
+locale: en-us
+guid: 2e4ff1b0-9813-4931-9a9e-c265df4c74f9
+app_type: mobile apps
 ---
 
 # Solve Common Mobile App Development Issues
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 While developing mobile apps you might need some help troubleshooting a problem in your app. Check below for some common issues that you may encounter, as well as their possible solutions.
 

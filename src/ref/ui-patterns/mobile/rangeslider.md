@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb; 
 summary: Advanced use cases for the Range Slider UI Pattern
+locale: en-us
+guid: e4c1bddc-985a-4895-b74e-9fb7e406c8a9
+app_type: mobile apps, reactive web apps
 ---
 
-# Range Slider reference
+# Range Slider Reference
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 ## Events
 

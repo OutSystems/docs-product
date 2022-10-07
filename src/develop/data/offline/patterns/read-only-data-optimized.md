@@ -1,9 +1,18 @@
 ---
 summary: Use this synchronization pattern when your users only need to read data while the app is offline and there are large amounts of data to synchronize.
 tags: runtime-mobile
+locale: en-us
+guid: 1a81a250-78b5-4d79-b161-3b501049e46c
+app_type: mobile apps
 ---
 
 # Read-Only Data Optimized
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 This data synchronization pattern is recommended for mobile apps where end users only need to read data while the apps are offline and there are large amounts of data, as follows:
 

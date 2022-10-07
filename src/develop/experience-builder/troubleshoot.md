@@ -1,6 +1,9 @@
 ---
-tags: Experience Builder; Troubleshoot
+tags:
 summary: Learn how to troubleshoot and fix common issues you may face while using Experience Builder.
+locale: en-us
+guid: 5fbcd20a-ae06-4818-a497-2ac6596506ce
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Troubleshooting Experience Builder

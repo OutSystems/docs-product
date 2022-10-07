@@ -1,6 +1,9 @@
 ---
 summary: How to export text for translation and import back translated text.
 tags: support-application_development
+locale: en-us
+guid: f5ec781d-b346-4f47-b4cc-1ccb94a50312
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Translation management

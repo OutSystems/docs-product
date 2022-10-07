@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: RangeSliderInterval selects a single value or a range between two values.
+locale: en-us
+guid: 94ed04bf-3e70-41d6-9d40-713927750c02
+app_type: traditional web apps
 ---
 
 # Range Slider Interval
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 You can use the Range Slider Interval Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content by predetermined intervals and within a chosen range. Moving the slider along the track, increases or decreases the value. 
 
@@ -17,7 +26,7 @@ In this example, we create a Range Slider Interval that allows the user select a
 
     ![](images/rangesliderinterval-2-ss.png)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -69,10 +78,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property** |  **Description** |  
-|---|---|
-|MinValue (Decimal): Mandatory  |  Slider's minimum value. <p>Examples <ul><li>0 - The slider's minimum value is 0.</li><li>12 - The slider's minimum value is 12</li> </ul></p> |
-|MaxValue (Decimal): Mandatory  |  Slider's maximum value. <p>Examples <ul><li>100 - The slider's maximum value is 100.</li></ul></p> |
+| **Property**                  | **Description**                                                                                                                               |
+|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| MinValue (Decimal): Mandatory | Slider's minimum value. <p>Examples <ul><li>0 - The slider's minimum value is 0.</li><li>12 - The slider's minimum value is 12</li> </ul></p> |
+| MaxValue (Decimal): Mandatory | Slider's maximum value. <p>Examples <ul><li>100 - The slider's maximum value is 100.</li></ul></p>                                            |
 |InitialIntervalStart  |  Start value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default start value when the page is rendered is 10.</li></ul></p> 
 |InitialIntervalEnd | End value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default end value when the page is rendered is 10.</li></ul></p> 
 |Step (Decimal): Optional  | The slider moves in increments of steps.<p>Examples <ul><li>Blank - The slider increases in steps of 1. This is the default value. </li><li>10 - The slider increases in steps of 10.</li></ul></p>

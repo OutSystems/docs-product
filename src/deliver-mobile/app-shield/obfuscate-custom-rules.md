@@ -1,9 +1,18 @@
 ---
 summary: Protect your mobile apps against tampering. OutSystems let's you create custom obfuscation rules to protect your apps against modification and misuse.
 tags: support-application_development; runtime-mobile; 
+locale: en-us
+guid: 8fe53ff7-6928-4fa2-b80d-cef17d9da254
+app_type: mobile apps
 ---
 
 # Creating custom obfuscation rules
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 This article is for developers who are familiar with mobile development and AppShield and are responsible for securing their apps from tampering. Code obfuscation is a protection feature that makes learning about how an app works difficult for people and systems.
 
@@ -33,7 +42,8 @@ At a high-level, you:
 
 To begin, use your favorite editor to create your rules. Or try our editor which has a validation feature for custom obfuscation rules. For more information, see the [Obfuscation Helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/).
 
-Be sure to include [OutSystems obfuscation base rules](files/default-obfuscation-rules.txt). Base rules are a set of mandatory obfuscation rules that guarantee that the obfuscation process correctly obfuscates native code from the shell and OS-Supported plugins. When you're defining custom rules for non-supported plugins, you must include OutSystems Obfuscation rules.
+Be sure to include [OutSystems obfuscation base rules](
+resources/default-obfuscation-rules.txt). Base rules are a set of mandatory obfuscation rules that guarantee that the obfuscation process correctly obfuscates native code from the shell and OS-Supported plugins. When you're defining custom rules for non-supported plugins, you must include OutSystems Obfuscation rules.
 
 ### OutSystems syntax for custom obfuscation rules
 

@@ -3,6 +3,9 @@ summary: Reference information on the Expression widget for displaying a text li
 tags: outsystems-designing-screens; reference; designing-screens; expression
 kinds: ServiceStudio.Plugin.NRWidgets.ExpressionDescriptor
 helpids: 30028
+locale: en-us
+guid: b5b035e8-ea51-41bb-ab1a-92dcb8db2013
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Expression
@@ -37,12 +40,6 @@ The expression widget displays text or the result of an expression at runtime. I
     * **Today is 2020-10-08!!** 
     * **THIS IS TEXT IN UPPERCASE**
 
-
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
 
 ## Properties
 

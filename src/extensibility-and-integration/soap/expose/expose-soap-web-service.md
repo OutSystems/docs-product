@@ -1,5 +1,8 @@
 ---
 tags: support-Integrations_Extensions
+locale: en-us
+guid: ad3eafdc-ad10-415d-bcd6-21a2ef277cd1
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Expose a SOAP Web Service
@@ -10,7 +13,7 @@ To expose a SOAP Web Service, do the following:
 
 1. Right-click the SOAP element and select **Expose SOAP Web Service**. 
 
-    ![](images/soap-expose.png) 
+    ![Add expose SOAP web service](images/soap-expose-add-web-service.png) 
 
 1. Set the name of your SOAP Web Service and the remaining properties. 
 
@@ -18,7 +21,7 @@ To expose a SOAP Web Service, do the following:
 
 1. Right-click your new SOAP Web Service and select **Add Web Service Method**. 
 
-    ![](images/ss-soap-add-method.png)
+    ![Add web service method](images/soap-add-method-ss.png)
 
 1. Set the name of your method. 
 

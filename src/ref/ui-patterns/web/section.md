@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Section UI Pattern.
+locale: en-us
+guid: c7493358-7bab-4ebf-ada6-2f101c53db4e
+app_type: traditional web apps
 ---
 
 # Section Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

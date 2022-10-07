@@ -1,7 +1,9 @@
 ---
-tags: Architecture Dashboard; FAQ; manual
+tags:
 summary: Troubleshoot Architecture Dashboard
-en_title: Troubleshooting
+locale: en-us
+guid: e2eb38b8-b3b6-42dd-9389-232ef2ba6226
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 
@@ -9,7 +11,7 @@ en_title: Troubleshooting
 
 ## Apps aren't showing up in Architecture Dashboard
 
-If Architecture Dashboard doesn't shown any apps, this can mean that there are synchronization issues between Architecture Dashboard and Discovery.
+If Architecture Dashboard doesn't shown any apps, this can mean that there are synchronization issues between Architecture Dashboard and Discovery. 
 
 Ensure that you installed the latest Discovery version.
 

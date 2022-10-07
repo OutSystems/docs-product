@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.Variables+ConstantDBInputParameter+Kind, ServiceStudio.Model.Variables+GenericInputParameter+Kind, ServiceStudio.Model.Variables+JSInputParameter+Kind, ServiceStudio.Model.Variables+ProcessInput+Kind, ServiceStudio.Model.Variables+SerializableInputParameter+Kind, ServiceStudio.Model.Variables+SyntheticInputParameter+Kind, ServiceStudio.Model.Variables+URLSerializableInputParameter+Kind, ServiceStudio.Model.Variables+WebReferenceGenericInputParameter+Kind, ServiceStudio.Model.Variables+ReferenceGenericInputParameter+Kind, ServiceStudio.Model.Variables+ReferenceProcessInput+Kind, ServiceStudio.Model.Variables+ReferenceSerializableInputParameter+Kind
 helpids: 7011, 30100
+locale: en-us
+guid: 33570868-4b24-4ec0-92f5-0d2a93d6bc4d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Input Parameter (Deprecated SOAP)

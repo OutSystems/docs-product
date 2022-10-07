@@ -1,6 +1,9 @@
 ---
 summary: How to deploy sitemap.xml and robots.txt.  
 tags:
+locale: en-us
+guid: 7ea79b34-6e91-4e4d-8c94-1318b03f7e22
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Sitemap.xml and robots.txt
@@ -83,7 +86,7 @@ To generate the list of URLs, create a REST endpoint that outputs the list as te
 
 ## Sample app
 
-You can [download the sample app](files/sitemap-and-robots.oap), install it in your environment, and open it in Service Studio. The app contains examples of how to deploy and generate **sitemap.xml** and **robots.txt**.
+You can [download the sample app](resources/sitemap-and-robots.oap), install it in your environment, and open it in Service Studio. The app contains examples of how to deploy and generate **sitemap.xml** and **robots.txt**.
 
 When working with the sample app, keep in mind the following:
 
@@ -93,3 +96,4 @@ When working with the sample app, keep in mind the following:
 * You have some feedback? Great! Use the feedback box in the page to send us a message.
 
 ![REST logic to generate the URLs](images/rest-sitemap-ss.png?width=800)
+

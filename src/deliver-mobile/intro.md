@@ -1,9 +1,18 @@
 ---
 summary: Generate iOS and Android mobile app packages to test mobile apps or distribute them to the app stores. You can also enable the (progressive web app) PWA distribution. 
 tags: runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-overview
+locale: en-us
+guid: b6da547f-4ef6-4bd3-bffc-365d5630da64
+app_type: mobile apps
 ---
 
 # Delivering Mobile Apps
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Once your mobile app has reached a stable state, you should distribute it to your users.  
   

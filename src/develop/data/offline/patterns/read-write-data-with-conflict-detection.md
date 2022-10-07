@@ -1,9 +1,18 @@
 ---
 summary: Use this synchronization pattern when for advanced scenarios where more than one user will change the same data while the app is offline.
 tags: runtime-mobile
+locale: en-us
+guid: 9440e4f9-b77c-44ab-9b9a-f5cc985fbfbb
+app_type: mobile apps
 ---
 
 # Read/Write Data with Conflict Detection
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 This data synchronization pattern is recommended for advanced scenarios where multiple end users will change the same data while the apps are offline, as follows:
 

@@ -1,6 +1,9 @@
 ---
 summary: Learn about the available authentication methods for end users in OutSystems.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: eaa92f05-a00d-4e75-a937-8c100b81d6df
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # End Users Authentication
@@ -59,7 +62,7 @@ To configure how the platform authenticates end users do the following:
 
 When the end user uses the application for the first time and the accessed screen allows only authenticated end users to see it, the platform raises a security exception. OutSystems does the following:
 
-1. If the platform is configured to use SAML 2.0, Azure AD or Okta authentication, the end user is redirected to a web page where he must enter his enterprise credentials (username and password). Upon successful authentication, the end user is redirected back to the OutSystems application.
+1. If the platform is configured to use SAML 2.0, Azure AD or Okta authentication, the end user is redirected to a web page where they must enter their enterprise credentials (username and password). Upon successful authentication, the end user is redirected back to the OutSystems application.
 
 1. If the platform is [configured to use Integrated Windows Authentication](<integrated-authentication.md>) and the end user is in the same domain as the platform server, the end user is authenticated using Integrated Windows Authentication.
 

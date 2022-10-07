@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 9ecbb8d4-3888-4d93-b72d-b34aef107a1e
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # ExBuilder_Utils_Lib
 
 Module that contains several common objects and functions used across the mobile application.

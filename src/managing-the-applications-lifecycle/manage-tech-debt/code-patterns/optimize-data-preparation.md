@@ -1,13 +1,14 @@
 ---
-tags: database; web server
+tags: 
 summary: 
-en_title: Optimize data preparation
+locale: en-us
+guid: 9508496b-0e5a-4373-a0df-1c3dba6e9f5b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
-
 
 # Optimize data preparation
 
-Data preparation for a screen should be very efficient. This ensures a pleasant experience for the user.
+Data preparation for a screen should be very efficient. This ensures a pleasant experience for the user. 
 
 Data preparation is usually inefficient when:
 

@@ -1,5 +1,3 @@
-- placeholder: New in OutSystems 11
-
 # Getting Started
 - href: getting-started/intro.md
 - topics:
@@ -8,7 +6,7 @@
     - href: getting-started/create-reactive-web.md
     - href: getting-started/create-mobile.md
     - href: getting-started/create-use-case/intro.md
-    - topics: 
+    - topics:
         - href: getting-started/create-use-case/understand-create-app.md
         - href: getting-started/create-use-case/use-own-data.md
         - topics:
@@ -41,12 +39,13 @@
                 - href: develop/data/modeling/relationship/delete-rules.md
             - href: develop/data/modeling/index-create.md
         - href: develop/data/edit/intro.md
-        - topics: 
+        - topics:
             - href: develop/data/edit/how-edit-data.md
         - href: develop/data/query/intro.md
         - topics:
             - href: develop/data/query/fetch-display.md
             - href: develop/data/query/fetch-data-ib.md
+            - href: develop/data/query/fetch-data-nl.md
             - href: develop/data/query/filter-results.md
             - href: develop/data/query/sort-aggregate.md
             - href: develop/data/query/group-calculate.md
@@ -97,6 +96,8 @@
             - href: develop/ui/accessibility/aria-roles-and-attributes.md
             - href: develop/ui/accessibility/ui-patterns-accessibility-reference.md
             - href: develop/ui/accessibility/additional-accessibility-resources.md
+            - href: develop/ui/accessibility/accessibility-web/accessibility-web.md
+            - href: develop/ui/accessibility/accessibility-web/vpat-template.md
 
         # How to use Screen Templates
         - href: develop/ui/screen-templates-use/intro.md
@@ -111,12 +112,12 @@
             - href: develop/ui/screen-templates-create/guidelines.md
             - href: develop/ui/screen-templates-create/reference-metadata.md
             - href: develop/ui/screen-templates-create/sample-data.md
-        
+
         # Table
         - href: develop/ui/table/intro.md
         - topics:
             - href: develop/ui/table/pagination-sorting.md
-  
+
         # Inputs
         - href: develop/ui/inputs/intro.md
         - topics:
@@ -137,7 +138,7 @@
         - topics:
             - href: develop/ui/image/use-icons.md
             - href: develop/ui/image/display-image.md
-            
+
         # Look and Feel
         - href: develop/ui/look-feel/intro.md
         - topics:
@@ -162,7 +163,7 @@
         - href: develop/ui/accelerators/intro.md
         - topics:
             - href: develop/ui/accelerators/accelerator-google.md
-            
+
         # Patterns
         - href: develop/ui/patterns/intro.md
         - topics:
@@ -199,8 +200,10 @@
                     - href: develop/ui/patterns/mobile/interaction/actionsheet.md
                     - href: develop/ui/patterns/mobile/interaction/animate.md
                     - href: develop/ui/patterns/mobile/interaction/animatedlabel.md
+                    - href: develop/ui/patterns/mobile/interaction/bottomsheet.md
                     - href: develop/ui/patterns/mobile/interaction/carousel.md
                     - href: develop/ui/patterns/mobile/interaction/datepicker.md
+                    - href: develop/ui/patterns/mobile/interaction/datepickerrange.md
                     - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
                     - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
                     - href: develop/ui/patterns/mobile/interaction/floatingactions.md
@@ -251,7 +254,12 @@
                     - href: develop/ui/patterns/mobile/utilities/separator.md
                     - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                     - href: develop/ui/patterns/mobile/utilities/touchevents.md
-                - href: develop/ui/patterns/mobile/public-actions.md             
+                - href: develop/ui/patterns/mobile/public-actions.md
+            - topics:
+                - href: develop/ui/patterns/mobile/ui-pattern-extensibility/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/ui-pattern-extensibility/ext-provider-client-actions.md
+                    - href: develop/ui/patterns/mobile/ui-pattern-extensibility/ext-provider-instance-java.md
             - href: develop/ui/patterns/web/intro.md
             - topics:
                 - href: develop/ui/patterns/web/content/intro.md
@@ -334,7 +342,7 @@
                     - href: develop/ui/patterns/web/utilities/iframe.md
                     - href: develop/ui/patterns/web/utilities/separator.md
                     - href: develop/ui/patterns/web/utilities/stackedicon.md
-        
+
         # Navigation
         - href: develop/ui/navigation/intro.md
         - topics:
@@ -354,12 +362,14 @@
             - href: develop/ui/multilingual-tp/translate-your-app.md
             - href: develop/ui/multilingual-tp/translation-editor.md
             - href: develop/ui/multilingual-tp/translation-management.md
-        
+
     # Implement Application Logic
     - href: develop/logic/intro.md
-    - topics: 
+    - topics:
         - href: develop/logic/expression-editor.md
         - href: develop/logic/ai-assisted-dev.md
+        - topics:
+            - href: develop/logic/ai-create-action.md
         - href: develop/logic/actions.md
         - href: develop/logic/action-web.md
         - href: develop/logic/screen-block-lifecycle-events.md
@@ -373,18 +383,18 @@
             - href: develop/logic/emails-reactive/sending.md
             - href: develop/logic/emails-reactive/widgets.md
             - href: develop/logic/emails-reactive/attachments.md
-        
+
 
         - href: develop/logic/exceptions/intro.md
         - topics:
             - href: develop/logic/exceptions/analyze-logs.md
             - href: develop/logic/exceptions/handling-mechanism.md
-            
+
         - href: develop/logic/client-data-transfer-optimization-tp.md
 
     # Use Processes
     - href: develop/processes/intro.md
-    - topics: 
+    - topics:
         - href: develop/processes/process.md
         - href: develop/processes/process-flow/intro.md
         - topics:
@@ -400,7 +410,7 @@
             - href: develop/processes/actions-extended/launch-process-action.md
             - href: develop/processes/actions-extended/close-human-activity-action.md
             - href: develop/processes/actions-extended/close-wait-action.md
-            - href: develop/processes/actions-extended/start-conditional-start-action.md        
+            - href: develop/processes/actions-extended/start-conditional-start-action.md
         - href: develop/processes/process-entities/intro.md
         - topics:
             - href: develop/processes/process-entities/process-entities-attributes.md
@@ -463,19 +473,22 @@
                 - href: develop/security/end-user-manage/end-user-authentication/configure-active-directory.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-ldap.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-saml.md
+                - topics:
+                    - href: develop/security/end-user-manage/end-user-authentication/saml-update-auth-flows/update-reactive-app-flows.md
+                    - href: develop/security/end-user-manage/end-user-authentication/saml-update-auth-flows/update-trad-web-app-flows.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-azuread.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-okta.md
                 - href: develop/security/end-user-manage/end-user-authentication/integrated-authentication.md
                 - href: develop/security/end-user-manage/end-user-authentication/persistent-login.md
                 - href: develop/security/end-user-manage/end-user-authentication/single-sign-on.md
         - href: develop/security/user-roles/intro.md
-        - topics: 
+        - topics:
             - href: develop/security/user-roles/create-a-custom-role.md
             - href: develop/security/user-roles/validate-permissions.md
         - href: develop/security/restrict-access-to-an-internal-network.md
         - href: develop/security/secure-http-requests.md
         - href: develop/security/secure-cookies-enable-secure-session.md
-        
+
     # Troubleshooting Applications
     - href: develop/troubleshoot/intro.md
     - topics:
@@ -491,10 +504,10 @@
         - href: develop/troubleshoot/log-information-in-action-flows.md
         - href: develop/troubleshoot/troubleshoot-service.md
         - href: develop/troubleshoot/trace-executed-queries.md
-        - href: develop/troubleshoot/solve-common-mobile-app-development-issues.md 
+        - href: develop/troubleshoot/solve-common-mobile-app-development-issues.md
         - href: develop/troubleshoot/advanced-mobile-app-troubleshooting-using-chrome.md
         - href: develop/troubleshoot/inspect-http-requests-mobile.md
-    # Merge the Work 
+    # Merge the Work
     - href: develop/merge/intro.md
     - topics:
         - href: develop/merge/concepts.md
@@ -510,6 +523,7 @@
     - topics:
         - href: develop/testing/develop-test.md
         - href: develop/testing/testing-bdd-framework.md
+
     # Shortcuts
     - href: ref/lang/auto/shortcutkeys.md
     # Experience Builder
@@ -542,7 +556,69 @@
         - href: develop/experience-builder/how-update-dependency.md
         - href: develop/experience-builder/faq.md
         - href: develop/experience-builder/troubleshoot.md
-    
+    # Case management and workflow apps
+    - href:  develop/case-management-workflow/intro.md
+    - topics:
+        # Workflow Builder
+        - href: develop/case-management-workflow/workflow-builder/intro.md
+        - topics:
+            - href: develop/case-management-workflow/workflow-builder/how-setup.md
+            - topics:
+                - href: develop/case-management-workflow/workflow-builder/how-setup-governance.md
+                - href: develop/case-management-workflow/workflow-builder/how-setup-end-users-hierarchy.md
+            - href: develop/case-management-workflow/workflow-builder/how-works.md
+            - href: develop/case-management-workflow/workflow-builder/how-use.md
+            - topics:
+                - href: develop/case-management-workflow/workflow-builder/how-workflow-design.md
+                - topics:
+                    - href: develop/case-management-workflow/workflow-builder/how-create-app-from-scratch.md
+                    - href: develop/case-management-workflow/workflow-builder/how-project-request-template.md
+                    - href: develop/case-management-workflow/workflow-builder/how-approval-request-template.md
+                    - href: develop/case-management-workflow/workflow-builder/how-issue-report-template.md
+                - href: develop/case-management-workflow/workflow-builder/publish-test.md
+                - href: develop/case-management-workflow/workflow-builder/app-lifecycle.md
+            - href: develop/case-management-workflow/workflow-builder/how-update-dependency.md
+            - href: develop/case-management-workflow/workflow-builder/how-convert-service-studio.md
+            - href: develop/case-management-workflow/workflow-builder/faq.md
+            - href: develop/case-management-workflow/workflow-builder/troubleshoot.md
+            - href: develop/case-management-workflow/workflow-builder/ref/error-ref.md
+        # Case management framework
+        - href: develop/case-management-workflow/case-management-framework/intro.md
+        - topics:
+            - href: develop/case-management-workflow/case-management-framework/creating-cmfapp.md
+            - href: develop/case-management-workflow/case-management-framework/bootstrap-app.md
+            - href: develop/case-management-workflow/case-management-framework/subcase-intro.md
+            - href: develop/case-management-workflow/case-management-framework/subcase.md
+            - href: develop/case-management-workflow/case-management-framework/case-state.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/case-state-machine.md
+            - href: develop/case-management-workflow/case-management-framework/rules-engine.md
+            - href: develop/case-management-workflow/case-management-framework/milestone/intro-ms.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/milestone/how-enable-ms.md
+                - href: develop/case-management-workflow/case-management-framework/milestone/how-use-ms.md
+            - href: develop/case-management-workflow/case-management-framework/sla.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/calendar.md
+            - href: develop/case-management-workflow/case-management-framework/activity.md
+            - href: develop/case-management-workflow/case-management-framework/delegate.md
+            - href: develop/case-management-workflow/case-management-framework/list-activities.md
+            - href: develop/case-management-workflow/case-management-framework/list-cases-requester.md
+            - href: develop/case-management-workflow/case-management-framework/extended-group.md
+            - href: develop/case-management-workflow/case-management-framework/multilingual/intro-multilingualcmf.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/multilingual/enabling-multilingualcmf.md
+            - href: develop/case-management-workflow/case-management-framework/access-control/intro-ac.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/access-control/how-enable-ac.md
+                - href: develop/case-management-workflow/case-management-framework/access-control/how-case-definition-ac.md
+                - href: develop/case-management-workflow/case-management-framework/access-control/how-case-instance-ac.md
+                - href: develop/case-management-workflow/case-management-framework/access-control/permission-actions-ac.md
+            - href: develop/case-management-workflow/case-management-framework/ref/intro.md
+            - topics:
+                - href: develop/case-management-workflow/case-management-framework/ref/auto/CaseServices_API.final.md
+                - href: develop/case-management-workflow/case-management-framework/ref/auto/CaseConfigurations_API.final.md
+                - href: develop/case-management-workflow/case-management-framework/ref/auto/CaseProcessConfigurations_API.final.md
 # Delivering Mobile Apps
 - href: deliver-mobile/intro.md
 - topics:
@@ -561,7 +637,6 @@
         - href: deliver-mobile/generate-distribute-mobile-app/limited-group-end-users.md
 
         # Generate and Publish Your Mobile App to the Mobile App Stores
-       
         - href: deliver-mobile/generate-distribute-mobile-app/publish-app-stores.md
         - topics:
             - href: deliver-mobile/generate-distribute-mobile-app/publish-google-play-store.md
@@ -583,6 +658,7 @@
     - topics:
         - href: deliver-mobile/app-shield/obfuscate-custom-rules.md
         - href: deliver-mobile/app-shield/ExitOnUrl.md
+        - href: deliver-mobile/app-shield/query-all-packages.md
     - href: deliver-mobile/compliance-with-third-party-licenses.md
 
 # Extensibility and Integration
@@ -617,8 +693,12 @@
         - href: extensibility-and-integration/mobile-plugins/file-transfer-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/file-viewer-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/firebase/intro.md
+        - topics:
+            - href: extensibility-and-integration/mobile-plugins/firebase/firebase-messaging.md
         - href: extensibility-and-integration/mobile-plugins/health-fitness/intro.md
+        - href: extensibility-and-integration/mobile-plugins/social-login/intro.md
         - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md
+        - href: extensibility-and-integration/mobile-plugins/payments-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/using-cordova-plugins.md
     - href: extensibility-and-integration/javascript/intro.md
     - topics:
@@ -678,6 +758,7 @@
             - href: extensibility-and-integration/rest/expose-rest-apis/throw-a-custom-error-in-an-exposed-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/document-an-exposed-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/patch-method.md
+            - href: extensibility-and-integration/rest/expose-rest-apis/redact-info-from-logs.md
         - href: extensibility-and-integration/rest/troubleshoot-a-rest-api.md
 
     #SOAP
@@ -725,7 +806,7 @@
     - topics:
         - href: extensibility-and-integration/integration-studio/getting-started/extension.md
         - href: extensibility-and-integration/integration-studio/getting-started/extension-source-files.md
-        
+
         - href: extensibility-and-integration/integration-studio/extension-life-cycle/intro.md
         - topics:
             - href: extensibility-and-integration/integration-studio/extension-life-cycle/extension-create.md
@@ -749,7 +830,7 @@
                 - href: extensibility-and-integration/integration-studio/managing-extensions/action-parameter.md
                 - href: extensibility-and-integration/integration-studio/managing-extensions/net-assembly-import-action.md
                 - href: extensibility-and-integration/integration-studio/managing-extensions/net-assembly-import-action-configurations.md
-                
+
             - href: extensibility-and-integration/integration-studio/managing-extensions/structure-define.md
 
             - href: extensibility-and-integration/integration-studio/managing-extensions/entity-define.md
@@ -776,12 +857,12 @@
 
 # Managing the Applications Lifecycle
 - href: managing-the-applications-lifecycle/intro.md
-- topics: 
+- topics:
     - href: managing-the-applications-lifecycle/initial-setup-of-an-infrastructure.md
-    - topics: 
+    - topics:
         - href: managing-the-applications-lifecycle/maintenance-mode.md
     - href: managing-the-applications-lifecycle/deploy-applications/intro.md
-    - topics: 
+    - topics:
         - href: managing-the-applications-lifecycle/deploy-applications/tag-a-version.md
         - href: managing-the-applications-lifecycle/deploy-applications/deploy-an-application.md
         - href: managing-the-applications-lifecycle/deploy-applications/deployment-plans.md
@@ -828,16 +909,26 @@
         - href: managing-the-applications-lifecycle/manage-it-teams/allow-managers-to-handle-permissions-of-it-teams.md
         - href: managing-the-applications-lifecycle/manage-it-teams/allow-external-db-integration.md
         - href: managing-the-applications-lifecycle/manage-it-teams/find-out-the-permissions-of-it-users.md
-        
+
     - href: managing-the-applications-lifecycle/secure-the-applications/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md
         - href: managing-the-applications-lifecycle/secure-the-applications/apply-content-security-policy.md
         - href: managing-the-applications-lifecycle/secure-the-applications/enforce-https-security.md
-        - href: managing-the-applications-lifecycle/secure-the-applications/encrypt-viewstate.md 
+        - href: managing-the-applications-lifecycle/secure-the-applications/encrypt-viewstate.md
         - href: managing-the-applications-lifecycle/secure-the-applications/protection-against-brute-force-attacks.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-https-by-enabling-ssl.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md
+        - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/intro.md
+        - topics:
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-activate.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-configure.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-azure.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-okta.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-lifetime.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-general.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-authentication-provider.md
+            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-errors.md
         - href: managing-the-applications-lifecycle/secure-the-applications/implement-an-authentication-plugin.md
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md
@@ -868,7 +959,7 @@
         - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/ref-code-patterns.md
         - topics:
             - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/best-pratices.md
-            - topics:            
+            - topics:
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-inline-js-and-style.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-large-session-variables.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-site-property-updates.md
@@ -877,7 +968,9 @@
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/tech-debt-formula.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/how-ignore-modules.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-module-classification.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-probes-o10.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-update-probes.md
@@ -889,58 +982,85 @@
     - href: managing-the-applications-lifecycle/test-automation-in-delivery-lifecycle.md
     - href: managing-the-applications-lifecycle/data-protection.md
 
-                        
-# Setting Up OutSystems
-- href: setup/intro.md
+# Setup and mantain your OutSystems infraestructure
+- href: setup-maintain/intro.md
 - topics:
-    - href: setup/possible-setups/intro.md
+    # Setting Up OutSystems
+    - href: setup-maintain/setup/intro.md
     - topics:
-        - href: setup/possible-setups/ha-scalability/intro.md
-        - href: setup/possible-setups/cloud-architecture.md
-    - href: setup/system-requirements.md
-    - href: setup/network-requirements.md
+        - href: setup-maintain/setup/possible-setups/intro.md
+        - topics:
+            - href: setup-maintain/setup/possible-setups/infra-architecture/infra-architecture.md
+            - href: setup-maintain/setup/possible-setups/infra-architecture/deploy-cloud.md
+            - href: setup-maintain/setup/possible-setups/ha-scalability/intro.md
+            - href: setup-maintain/setup/possible-setups/cloud-architecture.md
+        - href: setup-maintain/setup/system-requirements.md
+        - topics:
+            - href: setup-maintain/setup/limitations.md
+        - href: setup-maintain/setup/network-requirements.md
+        - topics:
+            - href: setup-maintain/setup/mobile-builder-connectivity-requirements.md
+        - href: setup-maintain/setup/default-configurations.md
+        - href: setup-maintain/setup/environment-config.md
+        - href: setup-maintain/setup/lifetime-configure.md
+        - href: setup-maintain/setup/ssl-domain-cloud/ssl-domain-cloud.md
+        - href: setup-maintain/setup/install-ssl-platform.md
+        - href: setup-maintain/setup/install-client-side-certificate-paas.md
+        - href: setup-maintain/setup/install-client-side-cert-on-premise.md
+        - href: setup-maintain/setup/change-db-authentication.md
+        - href: setup-maintain/setup/load-balancing-apps/recommended-configs-load-balancing.md
+
+        # Cache Invalidation Service
+        - href: setup-maintain/setup/cache-invalidation/intro.md
+        - topics:
+            - href: setup-maintain/setup/cache-invalidation/enable-tls.md
+            - href: setup-maintain/setup/cache-invalidation/installation.md
+            - href: setup-maintain/setup/cache-invalidation/high-availability.md
+            - href: setup-maintain/setup/cache-invalidation/high-availability-upgrade.md
+            - href: setup-maintain/setup/cache-invalidation/manage-troubleshoot.md
+        # Log Database Split
+        - href: setup-maintain/setup/logging-db/intro.md
+        - topics:
+            - href: setup-maintain/setup/logging-db/configure-separate-db.md
+            - href: setup-maintain/setup/logging-db/update-applications.md
+
+        - href: setup-maintain/setup/unattended-install/intro.md
+        - topics:
+            - href: setup-maintain/setup/unattended-install/config-tool-ref.md
+            - href: setup-maintain/setup/unattended-install/server-hsconf-ref.md
+            - href: setup-maintain/setup/unattended-install/osp-tool-ref.md
+
+        # OutSystems on Microsoft Azure
+        - href: setup-maintain/setup/azure/intro.md
+        - topics:
+            - href: setup-maintain/setup/azure/set-up-platform.md
+            - href: setup-maintain/setup/azure/additional-configurations.md
+            - href: setup-maintain/setup/azure/quick-reference.md
+            - href: setup-maintain/setup/azure/getting-setup-logs.md
+            - href: setup-maintain/setup/azure/plan-associate.md
+
+    # Upgrading
+    - href: setup-maintain/upgrade/upgrade-platform.md
     - topics:
-        - href: setup/mobile-builder-connectivity-requirements.md
-    - href: setup/default-configurations.md
-    - href: setup/environment-config.md
-    - href: setup/lifetime-configure.md
-    # Cache Invalidation Service
-    - href: setup/cache-invalidation/intro.md
-    - topics:
-        - href: setup/cache-invalidation/enable-tls.md        
-        - href: setup/cache-invalidation/installation.md     
-        - href: setup/cache-invalidation/high-availability.md                   
-        - href: setup/cache-invalidation/manage-troubleshoot.md
-    # Log Database Split
-    - href: setup/logging-db/intro.md
-    - topics:
-        - href: setup/logging-db/configure-separate-db.md
-        - href: setup/logging-db/update-applications.md
-        
-    - href: setup/unattended-install/intro.md
-    - topics:
-        - href: setup/unattended-install/config-tool-ref.md
-        - href: setup/unattended-install/server-hsconf-ref.md
-        - href: setup/unattended-install/osp-tool-ref.md
-    
-    # OutSystems on Microsoft Azure
-    - href: setup/azure/intro.md
-    - topics:
-        - href: setup/azure/set-up-platform.md
-        - href: setup/azure/additional-configurations.md
-        - href: setup/azure/quick-reference.md
-        - href: setup/azure/getting-setup-logs.md
+        - href: setup-maintain/upgrade/upgrade-lifetime.md
+        - href: setup-maintain/upgrade/balanced-upgrade-highly-loaded-farms.md
+        - href: setup-maintain/upgrade/upgrade-platform-module-prep.md
+        - href: setup-maintain/upgrade/upgrade-platform-errors.md
+
+    # Mantain your OutSystems infraestructure
+
+
 # Reference
 - href: ref/intro.md
 - topics:
     # OutSystems Language (reference)
     - href: ref/os-language-intro.md
-    - topics: 
+    - topics:
         # Data
         - href: ref/data/intro.md
         - topics:
             # Database Reference
-            - href: ref/data/database/intro.md 
+            - href: ref/data/database/intro.md
             - topics:
                 - href: ref/data/database/auto-numbers-on-database.md
                 - href: ref/data/database/database-compatibility-issues.md
@@ -1071,7 +1191,7 @@
                 - topics:
                     - href: ref/extensibility-and-integration/soap/exposed-soap/mapping-outsystems-to-xml.md
                     - href: ref/lang/auto/Class.SOAP Web Service.final.md
-                    - href: ref/lang/auto/Class.Web Service Method.final.md  
+                    - href: ref/lang/auto/Class.Web Service Method.final.md
         # Logic
         - href: ref/logic/intro.md
         - topics:
@@ -1098,7 +1218,7 @@
             - href: ref/logic/implementing-logic/intro.md
             - topics:
                 # Logic Elements
-                - href: ref/logic/implementing-logic/logic-elements.md 
+                - href: ref/logic/implementing-logic/logic-elements.md
                 - topics:
                     - href: ref/lang/auto/Class.Client Action.final.md
                     - href: ref/lang/auto/Class.Screen Action.final.md
@@ -1108,14 +1228,14 @@
                     - href: ref/lang/auto/Class.User Exception.final.md
                     - href: ref/lang/auto/Class.Role Exception.final.md
                 # Logic Tools
-                - href: ref/logic/implementing-logic/logic-tools/intro.md 
+                - href: ref/logic/implementing-logic/logic-tools/intro.md
                 - topics:
                     - href: ref/lang/auto/Class.Start.final.md
                     - href: ref/lang/auto/Class.Run Client Action.final.md
                     - href: ref/lang/auto/Class.Run Server Action.final.md
                     - href: ref/lang/auto/Class.Refresh Data.final.md
-                    - href: ref/lang/auto/Class.Aggregate.final.md
-                    - href: ref/lang/auto/Class.SQL.final.md
+                    #- href: ref/lang/auto/Class.Aggregate.final.md
+                    #- href: ref/lang/auto/Class.SQL.final.md
                     - href: ref/lang/auto/Class.If.final.md
                     - href: ref/lang/auto/Class.Switch.final.md
                     - href: ref/lang/auto/Class.For Each.final.md
@@ -1126,22 +1246,22 @@
                     - href: ref/lang/auto/Class.JSON Serialize.final.md
                     - href: ref/lang/auto/Class.Exception Handler.final.md
                     - href: ref/lang/auto/Class.Raise Exception.final.md
-                    - href: ref/lang/auto/Class.Comment.final.md             
+                    - href: ref/lang/auto/Class.Comment.final.md
                     - href: ref/lang/auto/Class.Message.final.md
                     - href: ref/lang/auto/Class.Destination.final.md
                     - href: ref/lang/auto/Class.Download.final.md
-                    - href: ref/lang/auto/Class.JavaScript.final.md 
+                    - href: ref/lang/auto/Class.JavaScript.final.md
                     - href: ref/lang/auto/Class.Trigger Event.final.md
-                    - href: ref/lang/auto/Class.End.final.md  
-                
+                    - href: ref/lang/auto/Class.End.final.md
+
         # Interfaces
         - href: ref/interfaces/intro.md
         - topics:
             # Adding Data and Logic
             - href: ref/interfaces/adding-data-and-logic.md
             - topics:
-                - href: ref/lang/auto/Class.Aggregate.final.md
-                - href: ref/lang/auto/Class.Client Action.final.md
+                #- href: ref/lang/auto/Class.Aggregate.final.md
+                #- href: ref/lang/auto/Class.Client Action.final.md
                 - href: ref/lang/auto/Class.Data Action.final.md
                 - href: ref/lang/auto/Class.Script.final.md
             # Designing Screens
@@ -1179,6 +1299,7 @@
             # Patterns
             - href: ref/interfaces/ui-patterns.md
             - topics:
+                - href: ref/ui-patterns/mobile/accordion.md
                 - href: ref/ui-patterns/mobile/data-grid-api-ref.md
                 - href: ref/ui-patterns/mobile/carousel-mobile.md
                 - href: ref/ui-patterns/mobile/columns.md
@@ -1186,7 +1307,9 @@
                 - href: ref/ui-patterns/mobile/gallery-mobile.md
                 - href: ref/ui-patterns/mobile/lightboximage.md
                 - href: ref/ui-patterns/mobile/masterdetail-mobile.md
+                - href: ref/ui-patterns/mobile/notification.md
                 - href: ref/ui-patterns/mobile/progressbar-mobile.md
+                - href: ref/ui-patterns/mobile/progresscircle-mob.md
                 - href: ref/ui-patterns/mobile/rating.md
                 - href: ref/ui-patterns/mobile/rangeslider.md
                 - href: ref/ui-patterns/mobile/rangesliderinterval.md
@@ -1205,11 +1328,11 @@
             - href: ref/interfaces/navigating-in-the-application.md
             - topics:
                 - href: ref/lang/auto/Class.Block.final.md
-                - href: ref/lang/auto/Class.Comment.final.md
+                #- href: ref/lang/auto/Class.Comment.final.md
                 - href: ref/lang/auto/Class.Event.final.md
                 - href: ref/lang/auto/Class.External Site.final.md
                 - href: ref/lang/auto/Class.Screen.final.md
-        # Platform Utilities 
+        # Platform Utilities
         - href: ref/platform/intro.md
         - topics:
             # System Events
@@ -1255,10 +1378,6 @@
             # Web Interfaces
             - href: ref/traditional-web/web-interfaces/intro.md
             - topics:
-                # Adding Data and Logic
-                - href: ref/traditional-web/web-interfaces/adding-data-and-logic.md
-                - topics:
-                    - href: ref/lang/auto/Class.Screen Action.final.md
                 # Designing Screens
                 - href: ref/traditional-web/web-interfaces/designing-screens/intro.md
                 - topics:
@@ -1273,7 +1392,7 @@
                     - href: ref/lang/auto/Class.Expression Widget.final.md
                     - href: ref/lang/auto/ServiceStudio.Plugin.Widgets.Form.final.md
                     - href: ref/lang/auto/Class.Header Row Widget.final.md
-                    - href: ref/lang/auto/Class.If Widget.final.md
+                    #- href: ref/lang/auto/Class.If Widget.final.md
                     - href: ref/lang/auto/Class.Image Widget.final.md
                     - href: ref/lang/auto/Class.Input Password Widget.final.md
                     - href: ref/lang/auto/Class.Input Widget.final.md
@@ -1281,13 +1400,13 @@
                     - href: ref/lang/auto/Class.Link Widget.final.md
                     - href: ref/lang/auto/Class.List Box Widget.final.md
                     - href: ref/lang/auto/Class.List Records Widget.final.md
-                    - href: ref/lang/auto/Class.Placeholder Widget.final.md
+                    #- href: ref/lang/auto/Class.Placeholder Widget.final.md
                     - href: ref/lang/auto/Class.Radio Button Widget.final.md
                     - href: ref/lang/auto/Class.Row Widget.final.md
                     - href: ref/lang/auto/Class.Show Record Widget.final.md
                     - href: ref/lang/auto/Class.Table Records Widget.final.md
                     - href: ref/lang/auto/Class.Table Widget.final.md
-                    - href: ref/lang/auto/Class.Text Widget.final.md
+                    #- href: ref/lang/auto/Class.Text Widget.final.md
                     - href: ref/lang/auto/Class.Upload Widget.final.md
                     - href: ref/lang/auto/Class.Web Block Widget.final.md
                 # Patterns
@@ -1358,55 +1477,55 @@
                 # Designing the Layout
                 - href: ref/traditional-web/web-interfaces/designing-the-layout/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Image.final.md
-                    - href: ref/lang/auto/Class.Localized Image.final.md
+                    #- href: ref/lang/auto/Class.Image.final.md
+                    #- href: ref/lang/auto/Class.Localized Image.final.md
                     - href: ref/lang/auto/Class.Theme.final.md
-                    - href: ref/lang/auto/Class.UI Flow.final.md
+                    #- href: ref/lang/auto/Class.UI Flow.final.md
                 # Navigating in the Application
                 - href: ref/traditional-web/web-interfaces/navigating-in-the-application/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Comment.final.md
+                    #- href: ref/lang/auto/Class.Comment.final.md
                     - href: ref/lang/auto/Class.Email.final.md
                     - href: ref/lang/auto/Class.Entry.final.md
-                    - href: ref/lang/auto/Class.External Site.final.md
+                    #- href: ref/lang/auto/Class.External Site.final.md
                     - href: ref/lang/auto/Class.Go To Destination.final.md
                     - href: ref/lang/auto/Class.Web Block.final.md
                     - href: ref/lang/auto/Class.Web Screen.final.md
 
             # Web Logic Tools
-            - href: ref/traditional-web/web-logic-tools/intro.md 
+            - href: ref/traditional-web/web-logic-tools/intro.md
             - topics:
-                - href: ref/lang/auto/Class.Aggregate.final.md
-                - href: ref/lang/auto/Class.Assign.final.md
-                - href: ref/lang/auto/Class.Run Server Action.final.md
-                - href: ref/lang/auto/Class.SQL.final.md
-                - href: ref/lang/auto/Class.Excel To Record List.final.md
-                - href: ref/lang/auto/Class.JSON Deserialize.final.md
-                - href: ref/lang/auto/Class.JSON Serialize.final.md
+                #- href: ref/lang/auto/Class.Aggregate.final.md
+                #- href: ref/lang/auto/Class.Assign.final.md
+                #- href: ref/lang/auto/Class.Run Server Action.final.md
+                #- href: ref/lang/auto/Class.SQL.final.md
+                #- href: ref/lang/auto/Class.Excel To Record List.final.md
+                #- href: ref/lang/auto/Class.JSON Deserialize.final.md
+                #- href: ref/lang/auto/Class.JSON Serialize.final.md
                 - href: ref/lang/auto/Class.Ajax Refresh.final.md
-                - href: ref/lang/auto/Class.Record List To Excel.final.md
-                - href: ref/lang/auto/Class.Refresh Data.final.md
+                #- href: ref/lang/auto/Class.Record List To Excel.final.md
+                #- href: ref/lang/auto/Class.Refresh Data.final.md
                 - href: ref/lang/auto/Class.Attach File.final.md
-                - href: ref/lang/auto/Class.Download.final.md
-                - href: ref/lang/auto/Class.Send Email.final.md
-                - href: ref/lang/auto/Class.Destination.final.md
-                - href: ref/lang/auto/Class.If.final.md
-                - href: ref/lang/auto/Class.For Each.final.md
-                - href: ref/lang/auto/Class.Switch.final.md
-                - href: ref/lang/auto/Class.Comment.final.md
-                - href: ref/lang/auto/Class.Exception Handler.final.md
-                - href: ref/lang/auto/Class.Raise Exception.final.md
-                - href: ref/lang/auto/Class.End.final.md
-                - href: ref/lang/auto/Class.Start.final.md
+                #- href: ref/lang/auto/Class.Download.final.md
+                #- href: ref/lang/auto/Class.Send Email.final.md
+                #- href: ref/lang/auto/Class.Destination.final.md
+                #- href: ref/lang/auto/Class.If.final.md
+                #- href: ref/lang/auto/Class.For Each.final.md
+                #- href: ref/lang/auto/Class.Switch.final.md
+                #- href: ref/lang/auto/Class.Comment.final.md
+                #- href: ref/lang/auto/Class.Exception Handler.final.md
+                #- href: ref/lang/auto/Class.Raise Exception.final.md
+                #- href: ref/lang/auto/Class.End.final.md
+                #- href: ref/lang/auto/Class.Start.final.md
 
             # Web System Events
             - href: ref/traditional-web/web-system-events/intro.md
             - topics:
                 - href: ref/lang/auto/Class.On Begin Web Request.final.md
                 - href: ref/lang/auto/Class.On Session Start.final.md
-        
+
             - href: ref/lang/auto/Class.Module.final.md
-    
+
     # Service Studio command line
     - href: ref/ss-command/ss-command-line.md
 
@@ -1531,7 +1650,7 @@
             - href: ref/errors-and-warnings/errors/unknown-object.md
             - href: ref/errors-and-warnings/errors/unsupported-consumed-web-service-error.md
             - href: ref/errors-and-warnings/errors/unused-callback-error.md
-            - href: ref/errors-and-warnings/errors/unused-input-parameter-error.md   
+            - href: ref/errors-and-warnings/errors/unused-input-parameter-error.md
         - href: ref/errors-and-warnings/warnings/intro-warnings.md
         - topics:
             - href: ref/errors-and-warnings/warnings/application-configuration-warning.md
@@ -1589,7 +1708,8 @@
             - href: ref/errors-and-warnings/warnings/unused-element-warning.md
             - href: ref/errors-and-warnings/warnings/unused-user-action-warning.md
             - href: ref/errors-and-warnings/warnings/upgrade-information-warning.md
-            - href: ref/errors-and-warnings/warnings/usability-suggestion-warning.md                
+            - href: ref/errors-and-warnings/warnings/usability-suggestion-warning.md
+            - href: ref/errors-and-warnings/warnings/incomplete-upgrade-warning.md
         # Integration Studio Errors
         - href: ref/errors-and-warnings/errors-is/intro.md
         - topics:
@@ -1657,7 +1777,7 @@
             - href: ref/integration-studio/editor/entity.md
             - href: ref/integration-studio/editor/attributes.md
             - href: ref/integration-studio/editor/resource.md
-        #Element Properties Reference    
+        #Element Properties Reference
         - href: ref/integration-studio/element-property/intro.md
         - topics:
             - href: ref/integration-studio/element-property/extension.md
@@ -1674,6 +1794,10 @@
     # OutSystems APIs
     - href: ref/apis/intro.md
     - topics:
+        # Architecture Dashboard API
+        - href: ref/apis/auto/architecture-dashboard-api.final.md
+        - topics:
+            - href: ref/apis/architecture-dashboard/ad-api-authentication.md
         - href: ref/apis/auto/asynchronous-logging-api.final.md
         - href: ref/apis/auto/binarydata-api.final.md
         - href: ref/apis/auto/bpt-api.final.md
@@ -1690,7 +1814,7 @@
         - href: ref/apis/auto/epa-taskbox-api.final.md
         - href: ref/apis/auto/httprequesthandler-api.final.md
         - href: ref/apis/auto/includejavascript-api.final.md
-        - href: ref/apis/javascript/README.md
+        - href: ref/apis/javascript/intro.md
         - topics:
             - href: ref/apis/javascript/classes/applicationcontext.md
             - href: ref/apis/javascript/modules/applicationlifecycle.md
@@ -1703,19 +1827,18 @@
             - href: ref/apis/javascript/classes/view.md
         # LifeTime API v2
         - href: ref/apis/auto/lifetime-deployment-api-v2.final.md
-        - topics: 
+        - topics:
             - href: ref/apis/lifetime-deployment/rest-api-authentication.md
             - href: ref/apis/lifetime-deployment/api-use-cases.md
             - topics:
                 - href: ref/apis/lifetime-deployment/examples/api-new-app-version.md
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
-                - href: ref/apis/lifetime-deployment/examples//api-rollback-mobile-app.md
-                - href: ref/apis/lifetime-deployment/examples//api-register-env.md
-                - href: ref/apis/lifetime-deployment/examples//api-unregister-env.md
+                - href: ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md
+                - href: ref/apis/lifetime-deployment/examples/api-register-env.md
+                - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
 
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md
-        
         - href: ref/apis/auto/lifetime-sdk.final.md
         - href: ref/apis/auto/lifetime-services-api.final.md
         - href: ref/apis/outsystems-api-preloader-api.md
@@ -1727,7 +1850,7 @@
         - href: ref/apis/rest-extensibility-api.md
         # RuntimePublic.Db API
         - href: ref/apis/runtimepublic-db/intro.md
-        - topics: 
+        - topics:
             - href: ref/apis/runtimepublic-db/call-a-stored-procedure.md
             - href: ref/apis/runtimepublic-db/insert-data-in-the-application-database.md
             - href: ref/apis/runtimepublic-db/query-data-from-an-external-database.md
@@ -1737,3 +1860,4 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
+

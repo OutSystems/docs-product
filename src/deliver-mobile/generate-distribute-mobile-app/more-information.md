@@ -1,9 +1,18 @@
 ---
 summary: In this article you can find more information about tasks associated with generating and publishing iOS and Android mobile apps.
 tags: runtime-mobile; support-mobile
+locale: en-us
+guid: 952b6539-a884-4fed-bcdd-90d4145d41b7
+app_type: mobile apps
 ---
 
 # More Information on Generating and Distributing Mobile Apps
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 In this article you can find more information about tasks associated with generating and publishing iOS and Android mobile apps:
 

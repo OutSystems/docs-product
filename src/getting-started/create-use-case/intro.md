@@ -1,9 +1,18 @@
 ---
 summary: Learn more about how OutSystems can enable you to deliver value. In this article you're guided through the process of creating your first app that fulfills your business initiatives, using your own data.
 tags:
+locale: en-us
+guid: c7315436-17a6-49f5-a395-60b6da7bac46
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Getting started with your own app use case
+
+<div class="info" markdown="1">
+
+Only applies to Windows-only Service Studio.
+
+</div>
 
 Learn more about how OutSystems enables you to deliver value right from the start.
 Use tutorials and development accelerators tailored to several application use cases to create your first app that fulfills your business initiatives.

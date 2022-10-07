@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: f62c6f07-cf7c-4ccd-b3a4-61d72b1f062a
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Use of Grid Units Error
 
 The `Invalid Use Of Grid Units` error is issued in the following situation:

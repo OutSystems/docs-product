@@ -1,9 +1,18 @@
 ---
 summary: Learn about different Android support library versions, how these versions are handled by MABS and how they should be handled by customers and plugin developers.
 tags: runtime-mobile
+locale: en-us
+guid: 8734c248-e81d-4d5b-a3a2-323a0373c188
+app_type: mobile apps
 ---
 
 # Android Support Library Versions for MABS
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 Whenever the target Android SDK is changed for a version of MABS, the version for the support libraries reflect this change as well. This affects the core and supported mobile plugins as well as the third-party plugins available in the Forge. For instance, with MABS 5, the target Android SDK has been raised to 28.
 

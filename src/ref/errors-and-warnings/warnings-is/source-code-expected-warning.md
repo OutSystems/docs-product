@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 0131cdff-f588-45e9-8b7a-720cb79a2399
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Source Code Expected Warning
 
 Message

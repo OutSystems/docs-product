@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: b3d0a226-12a9-4e71-8d5e-059cf703bf99
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Data Action
 
 The `Invalid Data Action` error is issued in the following situations:

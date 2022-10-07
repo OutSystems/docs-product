@@ -1,19 +1,28 @@
 ---
 summary: A checklist with tips and advice for creating mobile apps that synchronize data with the server.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
+locale: en-us
+guid: d56de308-6a6f-4003-8573-ba69db403011
+app_type: mobile apps
 ---
 
 # Offline Sync Checklist
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 What follows is a checklist for implementing sync in mobile devices with OutSystems. If you follow the checklist you will greatly improve synchronization of data between the mobile device and the server, as well as ensure there are no performance issues in the overall experience.
 
 ## Avoid
 
 Have you called EndOfflineDataSync multiple times?
-: Calling EndOfflineDataSync multiple times triggers several synchronizations simultaneously, which might cause your data to be incorrectly synchronized.
+:   Calling EndOfflineDataSync multiple times triggers several synchronizations simultaneously, which might cause your data to be incorrectly synchronized.
 
 Have you called a TriggerOfflineDataSync inside a OnSyncComplete action?
-: If you are using OnSyncComplete to trigger multiple syncs, don't call TriggerOfflineDataSync inside the OnSyncComplete, since this creates a synchronization loop.
+:   If you are using OnSyncComplete to trigger multiple syncs, don't call TriggerOfflineDataSync inside the OnSyncComplete, since this creates a synchronization loop.
 Instead, if you want to synchronize sequentially, call OnSyncComplete one after the other, as they get queued and processed sequentially.
 
 
@@ -55,6 +64,10 @@ Do all synced local entities have their own action in OfflineDataSync folder?
 
 Does the app clear the pending sync requests when needed?
 :   The syncs started by TriggerOfflineDataSync wait in a queue until they run. There are some instances where a sync must run with a higher priority or you no longer need the currently queued syncs to run. To do this, call TriggerOfflineDataSync with the input DiscardPendingSyncUnits set to True to clear the sync queue.
+
+Have you received the  syncWrapper is not a function error?
+:   The TriggerOfflineDataSync action calls the OfflineDataSyncEvents web block, which is required to be on the same screen. OutSystems templates include OfflineDataSyncEvents by default on the layout blocks. However, if this error occurs, ensure that the OfflineDataSyncEvents web block in the same screen where the TriggerOfflineDataSync action is called.
+
 
 
 ## End User Experience

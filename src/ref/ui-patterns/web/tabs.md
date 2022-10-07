@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; 
 summary: Advanced use cases for the Tabs UI Pattern.
+locale: en-us
+guid: 1acd4b94-2c08-48ab-9ad6-9c64bcf4d5de
+app_type: traditional web apps
 ---
 
 # Tabs Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

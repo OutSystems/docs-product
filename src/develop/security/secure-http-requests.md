@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb; support-devOps; support-Security; support-Security-featured
 summary: Increase the security of your Traditional Web app by increasing the security level of HTTP requests.
+locale: en-us
+guid: 825d2aff-000b-4b0e-89ab-de54c816beb6
+app_type: traditional web apps
 ---
 
 # Secure HTTP Requests
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 You can increase the security of your Traditional Web app by increasing the security level of HTTP requests. You can configure the security level of HTTP requests in the following elements:
 

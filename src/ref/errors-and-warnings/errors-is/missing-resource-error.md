@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: cca76fc3-0b0e-45b7-8ce8-f3184592ed95
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Missing Resource Error
 
 Message

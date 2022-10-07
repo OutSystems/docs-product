@@ -3,10 +3,18 @@ summary: Reference information on the Button group widget available for adding a
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; button-group; button-selection
 kinds: ServiceStudio.Plugin.NRWidgets.ButtonGroupItemDescriptor
 helpids: 30075
+locale: en-us
+guid: a8b45f04-a2a6-459a-817a-308e933b9d71
+app_type: mobile apps, reactive web apps
 ---
 
 # Button Group Item
 
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 The ButtonGroupItem is an individual button that represents an option within a [Button Group widget](ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md). The Button Group Item must be used with a Button Group widget (unlike the Button widget, which is an interface element on its own).
 

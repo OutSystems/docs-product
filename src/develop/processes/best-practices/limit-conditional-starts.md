@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 812f03f1-00fa-4d03-b4af-7b7e580a5fc5
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Limit the Use of Conditional Starts
 
 When you add [Conditional Starts](<../../../ref/lang/auto/Class.Conditional Start.final.md>) to a [Process](../intro.md) you should consider well the business case you are addressing, or else you may be **introducing unnecessary complexity to the deployment of applications**. This is essentially due to:

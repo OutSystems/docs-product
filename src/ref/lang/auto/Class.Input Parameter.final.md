@@ -2,6 +2,9 @@
 kinds: ServiceStudio.Model.Variables+ConstantDBInputParameter+Kind, ServiceStudio.Model.Variables+GenericInputParameter+Kind, ServiceStudio.Model.Variables+JSInputParameter+Kind, ServiceStudio.Model.Variables+ProcessInput+Kind, ServiceStudio.Model.Variables+SerializableInputParameter+Kind, ServiceStudio.Model.Variables+SyntheticInputParameter+Kind, ServiceStudio.Model.Variables+URLSerializableInputParameter+Kind, ServiceStudio.Model.Variables+WebReferenceGenericInputParameter+Kind, ServiceStudio.Model.Variables+ReferenceGenericInputParameter+Kind, ServiceStudio.Model.Variables+ReferenceProcessInput+Kind, ServiceStudio.Model.Variables+ReferenceSerializableInputParameter+Kind
 helpids: 7011, 30100
 summary: An Input Parameter allows you to provide data to an element for further use.
+locale: en-us
+guid: 6b4c779a-b8ce-482d-a842-1b2eedc84785
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Input Parameter

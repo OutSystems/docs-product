@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Model.Structure+Kind, ServiceStudio.Model.SystemActionStructure+Kind, ServiceStudio.Model.WebReferenceStructure+Kind, ServiceStudio.Model.ReferenceStructure+Kind
 helpids: 15007, 30102
+locale: en-us
+guid: 459c47a3-0744-4ec6-85b0-af67b81d16d6
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Structure (Deprecated SOAP)

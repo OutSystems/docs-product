@@ -1,9 +1,18 @@
 ---
 summary: How to configure SAML 2.0 end user authentication for your applications.
 tags: runtime-traditionalwebandreactiveweb
+locale: en-us
+guid: 47803c16-1495-4db3-b9e5-10dbd77538a9
+app_type: traditional web apps, reactive web apps
 ---
 
 # Configure SAML 2.0 Authentication
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps and Reactive Web Apps.
+
+</div>
 
 <div class="info" markdown="1">
 
@@ -71,8 +80,8 @@ Depending on the version of OutSystems UI Web (for Traditional Web Apps) or OutS
 
 For more information, check the following topics according to your application type:
 
-* For **Reactive Web Apps** check [Updating the login/logout flows of your Reactive Web App to support SAML 2.0](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Updating_the_login%2F%2Flogout_flows_of_your_Reactive_Web_App_to_support_SAML_2.0).
-* For **Traditional Web Apps** check [Updating the logout flow of your Traditional Web App to support SAML 2.0](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Updating_the_logout_flow_of_your_Traditional_Web_App_to_support_SAML_2.0). 
+* For **Reactive Web Apps** check [Updating the login and logout flows of your Reactive Web App to support SAML 2.0](saml-update-auth-flows/update-reactive-app-flows.md).
+* For **Traditional Web Apps** check [Updating the logout flow of your Traditional Web App to support SAML 2.0](saml-update-auth-flows/update-trad-web-app-flows.md). 
 
 ### Enable single sign-on between app types to use SAML 2.0 in Reactive Web Apps { #enable-sso-between-app-types }
 
@@ -88,8 +97,8 @@ To enable all the required settings do the following:
 
 1. Enable the following settings:
 
-    – Secure Connections > **Enable HTTP Strict Transport Security (HSTS)**  
-    – Cookies > **Secure**
+    * Secure Connections > **Enable HTTP Strict Transport Security (HSTS)**  
+    * Cookies > **Secure**
 
 1. Click **Save**.
 
@@ -144,3 +153,9 @@ If your authentication configuration is incorrect and preventing you from loggin
 The default Users app login page is available at the following URL:
 
 `https://<your_server_name>/Users/Login.aspx`
+
+### Common SAML configuration errors { #common-saml-errors }
+
+See how to solve common SAML configuration errors:
+
+* [Error processing SAML response - Unable to decrypt the assertion](https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Error_processing_SAML_response_-_Unable_to_decrypt_the_assertion)

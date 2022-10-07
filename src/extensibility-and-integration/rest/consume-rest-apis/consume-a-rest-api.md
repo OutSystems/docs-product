@@ -1,6 +1,9 @@
 ---
 summary: How to consume a REST API or a single API method and use it in your OutSystems applications.
 tags: support-Integrations_Extensions-featured
+locale: en-us
+guid: b7ea1336-4e6b-49a8-8a61-fd56c2ae5f57
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Consume one or more REST API methods
@@ -29,7 +32,7 @@ Do the following:
 
 1. In the displayed dialog, choose **Add Multiple Methods**.
 
-    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog.png)
+    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog-multiple.png)
 
 1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Next**.
 
@@ -64,7 +67,7 @@ Do the following:
 
 1. In the displayed dialog, choose **Add Single Method**.
 
-    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog.png)
+    ![Consume REST API dialog - add single or multiple methods](images/ss-rest-consume-dialog-single.png)
 
 1. Fill the information about the **Method URL**. You can include parameters between braces in the URL for the method's input parameters.
 

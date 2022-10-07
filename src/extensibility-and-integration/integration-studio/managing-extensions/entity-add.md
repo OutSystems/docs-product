@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 16186793-9357-420f-a833-2c5e0d3c47b5
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Add an Entity
 
 You can manually [add an entity](<entity-define.md>) to your extension as explained below. Integration Studio also provides you the [Import Entities from Database wizard](<entity-import-from-database.md>), which, through introspection, allows you to add several entities with less effort.  

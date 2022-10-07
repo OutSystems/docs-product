@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 72128f41-26f1-43f5-b5be-fd06451c1624
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Download from Server Window
 
 The ![](images/download-icon.gif) Download from server window is launched when you are [downloading an extension](<../../../../extensibility-and-integration/integration-studio/managing-extensions/extension-download.md>), in Integration Studio and allows you to download the latest extension version of a given extension.

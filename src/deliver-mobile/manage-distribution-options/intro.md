@@ -1,17 +1,24 @@
 ---
 summary: Mobile apps updates distribution setting lets you control how the apps update on user devices. Select store-only updates or hybrid updates. The store-only updates go through Google Play or the Apple App Store, and always update the native shell. In hybrid updates, apps can update the logic inside the existing native shell automatically, or require an update of native shell.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
+locale: en-us
+guid: c9f2e601-8b4c-4dc7-93d4-e456c058b6f4
+app_type: mobile apps
 ---
 
 # Technical Preview - Configure mobile apps updates distribution
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 With **mobile apps updates distribution settings**, you can choose how apps update on user devices. This technical preview introduces store-only updates, as an addition to the existing hybrid updates. Here is an overview of the two models for updating mobile apps:
 
 **Store-only updates** require the download of the entire native build to the user devices. These are updates through Google Play or the Apple App Store, or a private store. The store updates always bring both the native shell of the app to user devices and the app logic. This a traditional store distribution model.
 
 **Hybrid updates** are lightweight updates where the app itself downloads only the new app parts, without downloading and updating the native mobile shell. These updates are efficient when you slightly change the UI or logic, and when the app works with the already installed native shell. When the changes require an update of the entire app, you can still publish the app via the app store.
-
-<div class="info" markdown="1">
 
 ## Prerequisites
 
@@ -24,7 +31,7 @@ To manage how mobile apps update on user devices, you need to meet the following
 * Platform Server 11.10 or later.
 * LifeTime 11.6.0 or later.
 * MABS 6.2 or later.
-* You activated the [technical preview](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) **Configure Mobile application updates distribution** in LifeTime in **all environments**. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
+* You activated the [technical preview](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features) **Configure Mobile application updates distribution** in LifeTime in **all environments**. You need to activate this option for each new environment you add afterward. If the option is off for any of the environments in the Technical Preview settings screen, it's turned off in all deployment plans you create.
 * You create and distribute the native mobile builds of your apps to submit them to the app stores. This means you created and app based on **Phone App** or **Tablet App** in Service Studio. 
 * Ensure you can follow the steps in [How to develop an app that updates only through the app stores](#how-to-develop-an-app-that-updates-only-through-the-app-stores).
 
@@ -33,11 +40,10 @@ To manage how mobile apps update on user devices, you need to meet the following
 You can deactivate this technical preview only after you meet both of these conditions:
 
 1. You turned off the store-only updates **for all apps**. You can do this with [a new deployment plan that activates the hybrid updates](#set-hybrid-updates).
-1. You turned off the store-only updates **in all environments**. You can do this in the [Technical Preview settings](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features).
+1. You turned off the store-only updates **in all environments**. You can do this in the [Technical Preview settings](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features).
 
 These steps ensure that the deployment in LifeTime works correctly and that the apps continue working for your users.
 
-</div>
 
 ## How LifeTime manages the configuration of mobile apps updates { #about }
 

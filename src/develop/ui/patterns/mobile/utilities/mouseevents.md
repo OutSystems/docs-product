@@ -1,9 +1,18 @@
 ---
 tags: runtime-mobileandreactiveweb;  
 summary: The Mouse Events UI Pattern enables click events on a specific widget or pattern.
+locale: en-us
+guid: 95bf7d02-e8a6-4ca9-a080-cc4e80cb1629
+app_type: mobile apps, reactive web apps
 ---
 
 # Mouse Events
+
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 You can use the Mouse Events UI Pattern when the user needs to select elements on the interface with high precision.
 
@@ -17,7 +26,7 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
     ![](images/mouseevents-1-ss.png)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -81,7 +90,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-|**Property** |  **Description** |
-|---|---| 
-| WidgetId (Text): Mandatory  |  The element that responds to the mouse event you configure.|
-| PreventDefaults (Boolean): Optional | If True, events propagation to the screen and other widgets is stopped. This is the default. If False, event propagation to the screen and other widgets is enabled.  |
+| **Property**                        | **Description**                                                                                                                                                      |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| WidgetId (Text): Mandatory          | The element that responds to the mouse event you configure.                                                                                                          |
+| PreventDefaults (Boolean): Optional | If True, events propagation to the screen and other widgets is stopped. This is the default. If False, event propagation to the screen and other widgets is enabled. |

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 2bcfc8f0-9630-4a74-a218-fcd00359bdb2
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid HTTP Method Error
 
 The `Invalid HTTP Method` error is issued in the following situation:

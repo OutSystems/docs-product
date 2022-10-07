@@ -1,11 +1,14 @@
 ---
 kinds: ServiceStudio.Plugin.REST.RestActionOutputDescriptor
 helpids: 30081
+locale: en-us
+guid: f27841f8-0506-40bf-a590-427215436a01
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Output Parameter (REST API Method)
 
-Output parameter of a consumed REST API Method.  
+Output parameter of a consumed REST API Method.
 
 ## Properties
 
@@ -46,14 +49,14 @@ Output parameter of a consumed REST API Method.
 </tr>
 <tr>
 <td title="OutputPlacement">Receive In</td>
-<td>Indicates whether the output parameter is found in the HTTP Header or Body.</td>
+<td>Indicates whether the output parameter is in the HTTP Header or Body.</td>
 <td>Yes</td>
 <td>Body</td>
 <td></td>
 </tr>
 <tr>
 <td title="Original Name">Name in Response</td>
-<td>Original name of the output parameter that is used in the HTTP response.
+<td>Original name of the output parameter used in the HTTP response.
 If not specified, it has the same value as the Name.</td>
 <td></td>
 <td></td>
@@ -66,6 +69,12 @@ If not specified, it has the same value as the Name.</td>
 <td></td>
 <td></td>
 </tr>
+<tr>
+<td title="LogRedaction">Log Redaction</td>
+<td>Set to Yes to hide sensitive information (for example, salary information) in integration logs.</td>
+<td>Yes</td>
+<td>No</td>
+<td>Check <a href="https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/REST/Expose_REST_APIs/Redacting_information_from_REST_API_logs">Redacting information from REST API logs</a>.</td>
+</tr>
 </tbody>
 </table>
-

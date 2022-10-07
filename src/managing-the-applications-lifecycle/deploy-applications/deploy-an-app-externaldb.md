@@ -1,6 +1,9 @@
 ---
 summary: Learn how to deploy your integration with an external database from your Development environment to another environment.
 tags: 
+locale: en-us
+guid: 33c27796-6e3d-4507-bdd3-27cc71036ee5
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Deploy an Integration With an External Database
@@ -34,6 +37,17 @@ In the Quality environment, define a Database Connection:
 1. Click **New Database Connection** and fill in the fields to set up the connection to the external database.
 
     ![](images/ext-db-06.png?width=800)
+
+    If you need to fine-tune the database connection, choose the option **Advanced configuration**. This allows you to define your own connection string.
+
+    <div class="info" markdown="1">
+
+    If you are defining a connection to an external Oracle database which NLS_LANGUAGE parameter is different from `AMERICAN`, make sure you set the **NLS_LANGUAGE** field to the same value set in the database. This will prevent runtime issues related to date and number formats.
+
+    To get the value of the NLS_LANGUAGE parameter set in your external Oracle database you can run the following script:
+        `select value from nls_database_parameters where parameter = 'NLS_LANGUAGE';`
+
+    </div>
 
 1. Click **Test** to check if the connection is working correctly.
 

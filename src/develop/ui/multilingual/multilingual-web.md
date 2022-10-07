@@ -1,9 +1,18 @@
 ---
 summary: Learn how to create a multilingual web application.
 tags: runtime-traditionalweb; support-application_development
+locale: en-us
+guid: e4525653-9e57-4bb3-8426-a74a898addd0
+app_type: traditional web apps
 ---
 
 # Multilingual Web Applications
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Besides the language that your Module was designed in (the default language) you may add other languages for which your Module is translated and executed. Each language is specified by its **Locale** which is defined by the **primary language** or the **primary language and the region**, as some languages vary from region to region.
 

@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: b13b8d21-4c7b-4c3d-a928-00112c210227
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Property Error
 
 The `Invalid Property` error is issued in the following situations:

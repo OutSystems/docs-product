@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: ed240efa-1b90-4ce9-9263-a9bbfee1c90b
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Invalid Column Reference Error
 
 The `Invalid Column Reference` error is issued in the following situations:

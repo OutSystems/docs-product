@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: bf5a417a-a13c-4dc4-b9c8-4800c7f324b3
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # ExBuilder_Authentication_MCS
 
 Module with the authentication mobile core services.
@@ -34,7 +40,7 @@ Structure | Description
 ---|---
 [BiometricAuthSignature](<#Structure_BiometricAuthSignature>) | Structure used to store the users touch id configuration in keystore.
 [Result](<#Structure_Result>) | Result structure.
-[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in his session.
+[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in their session.
 [ValidationResult](<#Structure_ValidationResult>) | Structure to handle a validation result.
 
 ## Client Actions
@@ -624,7 +630,7 @@ ErrorMessage
 
 ### UserSessionInfo { #Structure_UserSessionInfo }
 
-Structure to handle the user information in his session.
+Structure to handle the user information in their session.
 
 *Attributes*
 

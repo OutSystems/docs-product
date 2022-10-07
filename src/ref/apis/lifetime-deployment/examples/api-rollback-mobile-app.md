@@ -1,5 +1,8 @@
 ---
 summary: Learn how to rollback a mobile app using the LifeTime API.
+locale: en-us
+guid: 9e68edab-dc6e-4606-b3b8-ceb4f1c2d406
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Rollback a Mobile App using the LifeTime API
@@ -8,7 +11,7 @@ In this example we will rollback a mobile application deployed between the **Qua
 
 1. Get the **environment keys** of the source (Quality) and target (Production) environments _(optional if you already have this information)_.
 
-1. Get the **application key** of the application to rollback _(optional if you already have this information)_.
+1. Get the **application key** of the application to rollback _(optional if you already have this information)_. 
 
 1. Get the **application version key** of the application version to deploy, which is the mobile application previous version.
 

@@ -1,6 +1,9 @@
 ---
 summary: Build fully functional Screens, with built-in logic, styles, and sample data.
 tags: support-Mobile_Apps-featured; support-webapps-featured
+locale: en-us
+guid: ca291da3-9cc0-496c-bc37-018488602df9
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Screen Templates

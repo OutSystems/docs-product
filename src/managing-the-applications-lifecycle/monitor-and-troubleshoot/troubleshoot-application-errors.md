@@ -1,6 +1,9 @@
 ---
 summary: Troubleshoot the runtime errors that happen in your application by checking the error logs in the environment management console.
 tags: support-Application_Lifecycle; support-application_development; support-Application_Troubleshooting; support-devOps; support-Integrations_Extensions; support-monitoring
+locale: en-us
+guid: 6f940cff-b41b-4f7d-aef5-abdf4afd7ed7
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Troubleshoot Application Errors

@@ -1,6 +1,9 @@
 ---
 summary: Use the QnA Maker connector to query your Azure knowledge bases directly in the OutSystems app. QnA Maker is often part of the chatbot logic. 
 tags: 
+locale: en-us
+guid: ab7eb739-c72b-4177-979b-bfe9d58a9334
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Use the Azure QnA Maker Connector in OutSystems apps
@@ -121,12 +124,12 @@ Here is how you can test getting replies with the QnA Maker connector.
 
 1. Add the **GenerateAnswer** action from **Logic** > **Server Actions** > **AzureQnAMakerConnector** > **QnAMakerAPI_GenerateAnswer** to the flow. Enter the values in the action properties:
 
-    * **QnAResourceName**
+    * **QnAMakerResourceName**
     * **KnowledgeBaseId**
     * **Authorization**
     * **Question**
 
-    Check the reference section to learn how to get **QnAResourceName**, **KnowledgeBaseId**, and **Authorization**. You defined **Question** earlier, and it's the parameter of the **QuestionDTO** data type.
+    Check the reference section to learn how to get **QnAMakerResourceName**, **KnowledgeBaseId**, and **Authorization**. You defined **Question** earlier, and it's the parameter of the **QuestionDTO** data type.
 
 1. Store the value the knowledge base sends back in a variable. The reply message is the textual value of **GenerateAnswer.Answer.Answers.Current.Answer**.
 
@@ -147,7 +150,7 @@ Here are some QnA Maker connector settings and corresponding values in Azure.
 | Property   |      Location      |  Description |
 |----------| ------------- |------|
 | **KbId**, **KnowledgebaseId** |  QnA Maker connector server actions |  The knowledge base identifier (id). Get the identifier from the QnA Maker portal, from the **Deployment details** in the knowledge base settings. It's the randomized value of the POST URL. |
-| **QnAResourceName** |  QnA Maker connector server actions | The name of the service running the QnA Maker in Azure. You can get it from the **Deployment details** in the QnA Maker portal. Check the Host line and grab the first part of the URL. For example, if the Host line is `Host: https://my-example-service.azurewebsites.net/qnamaker`, the resource name is **my-example-service**. You can get the resource name from the service endpoint URL in Azure as well. |
+| **QnAMakerResourceName** |  QnA Maker connector server actions | The name of the service running the QnA Maker in Azure. You can get it from the **Deployment details** in the QnA Maker portal. Check the Host line and grab the first part of the URL. For example, if the Host line is `Host: https://my-example-service.azurewebsites.net/qnamaker`, the resource name is **my-example-service**. You can get the resource name from the service endpoint URL in Azure as well. |
 | **Authorization** |  QnA Maker connector server actions | The endpoint key from the **Deployment details** in the knowledge base settings, in the QnA Maker portal. For example, if the Authorization line is `Authorization: EndpointKey abcd123456`, the value you need is **abcd123456**.  |
 
 ### Data structures

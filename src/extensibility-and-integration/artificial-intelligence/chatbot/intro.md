@@ -1,6 +1,9 @@
 ---
 summary: Let your users interact with your app through a chat interface. This is an introduction to creating a chatbot with the OutSystems chatbot component and Microsoft Azure.
 tags:
+locale: en-us
+guid: c9733003-eb20-49b3-93af-47e313315e30
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create AI-powered chatbots 

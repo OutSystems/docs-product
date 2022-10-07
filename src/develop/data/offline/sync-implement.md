@@ -1,9 +1,18 @@
 ---
 summary: An overview of the steps for implementing the logic for client and server data exchange and the ways to tap into the sync framework.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps
+locale: en-us
+guid: 8680eeb4-f6ec-4c12-ae1d-1b228ed5de5b
+app_type: mobile apps
 ---
 
 # Implementing Offline Sync
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 OutSystems provides a [framework for syncing data](<sync-reference.md>) between your mobile application and server. The framework consists of a set of actions and blocks available in the OutSystems Mobile UI Framework app templates and enables you to create the business logic, trigger the sync and react to sync outcomes and changes in network status. You can use the framework to create a mechanism to sync only the data you need, making the sync lightweight.
 

@@ -1,5 +1,8 @@
 ---
 summary: Screen is a building block of an app. You can create empty Screens or with some predefined content.
+locale: en-us
+guid: a864addf-9175-49f9-905e-e90013c7d238
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Screen
@@ -33,14 +36,3 @@ To create a Screen, follow these steps in Service Studio:
 1. Optionally, enter a name in the **Screen name** field.
 
 1. Click **Create Screen**.
-
-<div class="info" markdown="1">
-
-Do you prefer keyboard shortcuts? Select a UI Flow, for example MainFlow, and use the following shortcuts to create a Screen:
-
-* **Ctrl + N**. Opens a New Screen window.
-* **Ctrl + Shift + N**. Creates a new blank Screen.
-
-See [Service Studio Shortcuts](../../../ref/lang/auto/shortcutkeys.md) for a more complete list of the shortcuts.
-
-</div>

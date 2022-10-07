@@ -3,10 +3,18 @@ kinds: ServiceStudio.Plugin.NRWidgets.ListItemActionDescriptor
 helpids: 30077
 summary: Reference information on the List Action widget for allowing you to define the behavior when swiping the correspondent List Item, which can be executing a screen action or navigating to another screen.
 tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; list-action-widget; list-item-swipe
+locale: en-us
+guid: 0cfabe1b-7274-404a-901d-e334b007fb26
+app_type: mobile apps, reactive web apps
 ---
 
 # List Action
 
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 Defines the behavior when swiping the correspondent [List Item](ServiceStudio.Plugin.NRWidgets.ListItem.final.md), which can be executing a screen action or navigating to another screen.
 

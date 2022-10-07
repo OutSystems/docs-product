@@ -1,8 +1,11 @@
 ---
 summary: Log tab showing specific settings for the 'Azure SQL Database / SQL Server' database provider.
+locale: en-us
+guid: 09712708-bd45-4271-9005-9b19e43d29dc
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Log Tab in SQL Server / Azure SQL Database
+# Log tab in SQL Server and Azure SQL Database
 
 The following configurations are available in the **Log** tab when the **Database Provider** property is set to `SQL Server / Azure SQL`.
 

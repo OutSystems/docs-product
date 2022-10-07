@@ -1,5 +1,8 @@
 ---
 summary: Replace data in screens created from screen templates or accelerators with your data. 
+locale: en-us
+guid: 434dc1fc-9589-4251-a23b-11c52ace8f69
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Replace data in screens

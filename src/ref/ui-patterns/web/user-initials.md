@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb;
 summary: Advanced use cases for the User Initials UI Pattern.
+locale: en-us
+guid: 02ba4227-0341-4645-8202-58dcb3119d8d
+app_type: traditional web apps
 ---
 
 # User Initials Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

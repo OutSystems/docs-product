@@ -2,10 +2,18 @@
 kinds: ServiceStudio.Model.WebWidgets+InputPassword+Kind, ServiceStudio.Model.WebWidgets+ReferenceInputPassword+Kind
 helpids: 4025
 tags: runtime-traditionalweb
+locale: en-us
+guid: e908d4d2-b3df-4e78-baf9-c105f9732869
+app_type: traditional web apps
 ---
 
 # Input Password Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Field that holds the data typed by the user masking its content.
 

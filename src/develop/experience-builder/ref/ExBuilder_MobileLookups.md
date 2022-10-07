@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 20b75e5b-44cc-46b5-8448-8b5b87e9ebf4
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # ExBuilder_MobileLookups
 
 Module with a set of mobile specific lookups.

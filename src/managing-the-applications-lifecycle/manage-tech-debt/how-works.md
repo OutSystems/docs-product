@@ -1,12 +1,14 @@
 ---
-tags: Architecture Dashboard; how-to; manual
+tags:
 summary: Learn how Architecture Dashboard works and how your infrastructure communicates with the SaaS.
-en_title: How does Architecture Dashboard work
+locale: en-us
+guid: f6f9f871-5f0c-4991-a47e-91fa20033627
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How does Architecture Dashboard work
 
-Architecture Dashboard includes the following pieces:
+Architecture Dashboard includes the following pieces: 
 
 Architecture Dashboard SaaS
 :   A "Software as a Service" that processes and shows all data collected by the Architecture Dashboard LifeTime Plugin.
@@ -640,3 +642,43 @@ The following tables map the Architecture Dashboard permissions to the LifeTime 
   </tbody>
 </table>
 
+#### Manage Architecture Dashboard API
+
+<table>
+  <thead>
+  <tr>
+   <th rowspan="2" >LifeTime permissions
+   </th>
+   <th colspan="3" >LifeTime role assignment
+   </th>
+  </tr>
+  <tr>
+   <th>Default role
+   </th>
+   <th>Assigned to a team
+   </th>
+   <th>Assigned to an app
+   </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td><b>Open and Debug Applications or lower</b>
+   </td>
+   <td rowspan="2" colspan="3">No
+   </td>   
+  </tr>
+  <tr>
+   <td><b>Change and Deploy Applications</b>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Full Control</b>
+   </td>
+   <td>Yes
+   </td>
+   <td colspan="2">No
+   </td>
+  </tr>
+  </tbody>
+</table>

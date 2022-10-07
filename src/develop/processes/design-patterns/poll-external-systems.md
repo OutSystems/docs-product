@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 4a3be3da-ce0d-4940-a534-60a2c22468cf
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Designing Polling of External Systems
 
 Use this pattern to poll an external system, that is, to periodically request data from an external system and take an action when some condition is met with the returned data.

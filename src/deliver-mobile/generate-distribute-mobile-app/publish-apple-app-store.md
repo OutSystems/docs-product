@@ -1,9 +1,18 @@
 ---
 summary: Generate a mobile app package for your mobile app to publish in the Apple App Store.  Distribute your mobile app directly to your company's end users, if you enrolled in the Apple Enterprise Developer Program.
-tags: runtime-mobile; support-mobile; publish-application; apple-app-store; ios-app
+tags: runtime-mobile; support-mobile
+locale: en-us
+guid: 3d02e722-3225-47fa-b343-d6188e21d174
+app_type: mobile apps
 ---
 
-# Publish your Mobile iOS application to the Apple App Store
+# Publish Your Mobile iOS Application to the Apple App Store
+
+<div class="info" markdown="1">
+
+Applies only to Mobile Apps.
+
+</div>
 
 This article describes the process you must follow to publish your application to the Apple App Store. Before you proceed, ensure your app fulfills the general [pre-requirements](publish-app-stores.md).
 
@@ -52,7 +61,7 @@ You can generate a release version of your app (without debug information) using
 
 If the application requires users to sign in, you must [provide Apple with a test or demo account](https://help.apple.com/app-store-connect/#/devbef8ace74) to make sure that the review team can immediately sign in and use your application without the need to sign up for an account. You must also understand how the certificates work. You can find information about how to enroll as an Apple developer, create a certificate, and create a provisioning profile here. Read it carefully to make sure you have everything in place.
 
-Additionally, you need to run **Application Loader**, an application only available for Mac, to submit the app to the App Store for distribution. This application is available for Mac running OS X 10.9 or later and can be obtained by installing the latest [Xcode](https://developer.apple.com/xcode/) development IDE from Apple.
+Additionally, you need to run **Transporter**, an application only available for Mac, to submit the app to the App Store for distribution. This application is available for Mac running macOS 10.13.6 or later and can be obtained by downloading the [Transporter](https://apps.apple.com/us/app/transporter/id1450874784?mt=12) app from App Store.
 
 ### Generate the iOS App Package (IPA)
 
@@ -81,7 +90,7 @@ To generate your mobile app in the Service Studio, perform the following steps:
 
 1. Provide a provisioning profile of the correct type (see the [Before You Start](#before-you-start) section). The provisioning profile should have a **.mobileprovision** extension.
 
-1. Click the **GENERATE APP** button.
+1. Click the **Generate iOS app** button.
 
     ![Configure iOS App Settings](images/ss-native_platforms-configure-ios-app.png?width=500)
 

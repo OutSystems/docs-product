@@ -1,5 +1,8 @@
 ---
 tags: support-Database
+locale: en-us
+guid: cbbcab1c-2534-43e7-b734-9fef31683b88
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Default Values on Database

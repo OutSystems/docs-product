@@ -2,10 +2,18 @@
 kinds: ServiceStudio.Model.SystemClientActions+OnApplicationReady+Kind
 helpids: 0
 tags: runtime-mobileandreactiveweb
+locale: en-us
+guid: b89718c6-8e22-4481-a4ea-6481e349e206
+app_type: mobile apps, reactive web apps
 ---
 
 # On Application Ready
 
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
 
 You app runs the **On Application Ready** during the loading of the home module. Use **On Application Ready** to set up the app, for example, to initialize variables and mobile plugins.
 

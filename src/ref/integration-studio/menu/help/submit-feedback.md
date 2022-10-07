@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 10b4220e-09b6-4e8f-a60a-424800889615
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Submit Feedback Window
 
 In the Help menu, on the Menu bar, you have the ![](images/submit-feedback.gif) Submit Feedback operation, which allows you to submit feedback, posting your comments or suggestions about Integration Studio or about the platform itself, directly to OutSystems. You just have to be connected to the Internet.

@@ -1,9 +1,19 @@
 ---
 summary: The URLs that are easy to read, memorize, and type contribute to great user experience (UX) and search engine optimization (SEO). OutSystems lets you configure the app URLs for UX and SEO. This guide describes the available techniques to simplify the URLs of the Traditional Web Apps.
 tags: runtime-traditionalweb
+helpids: 30374
+locale: en-us
+guid: 641c106a-d688-42a3-9b73-8fd9791a673b
+app_type: traditional web apps
 ---
 
 # Customize or redirect the application URL
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 <!-- Help id 30374 links to this document. -->
 
@@ -154,7 +164,7 @@ You need to follow the instructions in this section if you're installing the pla
 
 To start using the SEO Friendly URLs on OutSystems on-premises environments, you have to install ISAPI Filters in your Internet Information Services (IIS). For that, follow the steps described in the ‘Installing ISAPI Filters’ section. Regarding logging, useful for you to detect errors or malfunctions, check the ‘Logging’ section to see how to turn logging on (and off).
 
-If you are using the OutSystems PaaS, the necessary configurations are already active by default.
+If you are using the OutSystems Cloud, the necessary configurations are already active by default.
 
 ### Installing ISAPI Filters 
 
@@ -193,7 +203,7 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 
     ![ ](images/seo-friendly-urls_13.png)
 
-    * If the 'Root Application' Virtual Path is listed here, double-click it and change the 'Application pool' for the site’s default application to 'OutSystemsApplications';
+    * If the 'Root Application' Virtual Path is listed under **DefaultAppPool**, double-click it and change the 'Application pool' for 'Root Application' to **OutSystemsApplications**.
 
 8. Test accessing a URL in your browser, for example: [http://localhost/ServiceCenter](http://localhost/ServiceCenter). If it's not working, reset your IIS by doing the following:
 

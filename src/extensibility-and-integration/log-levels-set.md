@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: c215f526-4e79-416f-a7ae-4789e0a26a8c
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Set the logging level of REST and SOAP integrations
 
 You can customize the logging level for consumed/exposed REST APIs and consumed SOAP Web Services to adjust the amount of stored information about requests/responses.

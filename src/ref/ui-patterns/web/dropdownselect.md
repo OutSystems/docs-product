@@ -1,9 +1,18 @@
 ---
 tags: runtime-traditionalweb;
 summary: Advanced use cases for the Dropdown Select UI Pattern.
+locale: en-us
+guid: 4d9ccb38-173c-42fa-9f2f-6ea73e338b52
+app_type: traditional web apps
 ---
 
 # Dropdown Select Reference
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 ## Layout and classes
 

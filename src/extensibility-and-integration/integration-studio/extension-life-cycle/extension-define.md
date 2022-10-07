@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 0deb5983-3f9e-4a35-bbba-65396634c860
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Define the Extension Elements
 
 Once your extension is [created](<extension-create.md>), you have to create or update the definition of its elements:

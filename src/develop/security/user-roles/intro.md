@@ -1,6 +1,9 @@
 ---
 summary: Learn how to define Roles to set the security of your applications.
 tags: 
+locale: en-us
+guid: d3fe610b-9bf9-4695-b516-01820a33abba
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # User Roles

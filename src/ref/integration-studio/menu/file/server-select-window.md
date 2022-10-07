@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 99378b9c-3cd1-4b75-a0d0-189ad54153a1
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Select Server Window
 
 The Select Server... window ![](images/connect-server.gif) allows you to [connect to a specific Platform Server](<../../../../extensibility-and-integration/integration-studio/extension-life-cycle/server-connect.md>). This window is launched automatically whenever necessary, or you can explicitly invoke it in the File menu or in the Toolbar.

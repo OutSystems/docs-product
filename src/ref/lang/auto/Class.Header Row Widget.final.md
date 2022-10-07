@@ -2,14 +2,16 @@
 kinds: ServiceStudio.Model.WebWidgets+TableRecordsHeaderRow+Kind, ServiceStudio.Model.WebWidgets+ReferenceTableRecordsHeaderRow+Kind
 helpids: 0
 tags: runtime-traditionalweb
+locale: en-us
+guid: 5f5a5642-dccc-4d7b-beea-773622e175c1
+app_type: traditional web apps
 ---
 
 # Header Row Widget
 
-
 <div class="info" markdown="1">
 
-We've been working on this article. Please let us know how useful this new version is by voting.
+Applies only to Traditional Web Apps.
 
 </div>
 

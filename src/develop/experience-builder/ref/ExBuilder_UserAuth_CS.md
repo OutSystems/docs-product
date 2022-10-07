@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 64bdb156-e936-4ec0-855b-9ee3f8934f0e
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # ExBuilder_UserAuth_CS
 
 Module with some user extended Entites and Actions, to be used on the remaining Modules and includes authentication methods.
@@ -32,7 +38,7 @@ Action | Description
 Structure | Description
 ---|---
 [Result](<#Structure_Result>) | Structure to handle a result.
-[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in his session.
+[UserSessionInfo](<#Structure_UserSessionInfo>) | Structure to handle the user information in their session.
 [ValidationResult](<#Structure_ValidationResult>) | Structure to handle a validation result.
 
 Static Entity | Description
@@ -643,7 +649,7 @@ ErrorMessage
 
 ### UserSessionInfo { #Structure_UserSessionInfo }
 
-Structure to handle the user information in his session.
+Structure to handle the user information in their session.
 
 *Attributes*
 

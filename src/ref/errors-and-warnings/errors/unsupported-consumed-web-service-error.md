@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 03541b11-4b74-423c-8148-e3efaa1d8efd
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Unsupported Consumed Web Service Error
 
 Service Studio provides extensive support for consuming SOAP Web Services. However, due to the OutSystems language expressiveness, there are scenarios that are only supported through the use of extensions. In these scenarios, when trying to consume a SOAP Web Service in Service Studio, an Unsupported Consumed Web Service error is issued.

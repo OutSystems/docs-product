@@ -2,10 +2,18 @@
 kinds: ServiceStudio.Model.WebWidgets+EmailWebBlockInstance+Kind, ServiceStudio.Model.WebWidgets+WebBlockInstance+Kind, ServiceStudio.Model.WebWidgets+ReferenceEmailWebBlockInstance+Kind, ServiceStudio.Model.WebWidgets+ReferenceWebBlockInstance+Kind
 helpids: 0
 tags: runtime-traditionalweb
+locale: en-us
+guid: 4160f6d7-1bcd-4299-80b7-5ccd8bbc42d2
+app_type: traditional web apps
 ---
 
 # Web Block Widget
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 Allows you to use a Web Block in your screen. If the Web Block is designed with input parameters, you must specify the value for those parameters.
 

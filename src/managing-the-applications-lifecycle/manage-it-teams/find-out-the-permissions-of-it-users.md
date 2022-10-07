@@ -1,5 +1,8 @@
 ---
 summary: Ensure a strict security policy by checking the permissions IT users have over an application.
+locale: en-us
+guid: ee37b850-be3f-4964-87a3-12800efb3363
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Find Out the Permissions of IT Users
@@ -36,8 +39,8 @@ In this example we want to understand the permissions that a specific user has, 
 
 On this page, we can see that:
 
-* The **default role** of the user grants him access to the Development environment, but no access to any application. Also, it grants No Access to Quality and Production environments.
+* The **default role** of the user grants them access to the Development environment, but no access to any application. Also, it grants No Access to Quality and Production environments.
 
-* The user has Architect **role in the team** Intranet, which grants him Change and Deploy permission in the Development environment over the applications that the team manages, Directory and Fleet Management. Over the same applications, the user has Monitor and Add Dependencies permission in the Quality environment and No Access in the Production environment.
+* The user has Architect **role in the team** Intranet, which grants them Change and Deploy permission in the Development environment over the applications that the team manages, Directory and Fleet Management. Over the same applications, the user has Monitor and Add Dependencies permission in the Quality environment and No Access in the Production environment.
 
 * The user has been given **specific access** to Mobile Banking application with role Business Monitoring, which grants the user Monitor and Add Dependencies permission over this application in the Development and Quality environments, but No Access to the application in the Production environment.

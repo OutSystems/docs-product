@@ -1,6 +1,9 @@
 ---
 summary: These are the instructions for implementing your own pagination and sorting.
 tags: runtime-reactiveweb;
+locale: en-us
+guid: c85c1a3d-327a-49e1-af6d-bd99a67b4ebc
+app_type: reactive web apps
 ---
 
 # Table pagination and sorting

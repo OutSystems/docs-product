@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: 191e1ae6-bb41-460f-b5b4-a94474e514b2
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Connect to an environment
 
 When you launch **Integration Studio** you must connect to an environment before you can you execute the following operations: [1-Click Publish](<extension-1-cp.md>), [Download an Extension](<../managing-extensions/extension-download.md>), and [Import Entities from a Database](<../managing-extensions/entity-import-from-database.md>).

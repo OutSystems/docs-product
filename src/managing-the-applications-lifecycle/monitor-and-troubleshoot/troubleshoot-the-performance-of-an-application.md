@@ -1,9 +1,18 @@
 ---
 summary: OutSystems allows you to pinpoint and fix performance bottlenecks by exploring the performance of your applications in the infrastructure management console.
 tags: support-application_development; support-Application_Troubleshooting; support-devOps; support-monitoring;  support-monitoring-featured; runtime-traditionalweb
+locale: en-us
+guid: 8b6d4c19-e002-4a96-b043-766b1b7e4024
+app_type: traditional web apps
 ---
 
 # Troubleshoot the Performance of an Application
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 OutSystems collects analytics about the performance of your applications, so that you can easily pinpoint and fix performance bottlenecks.
 

@@ -1,17 +1,21 @@
 ---
 summary: Learn more about the Actions you can create in your Reactive Web and Mobile apps.
 tags: runtime-mobileandreactiveweb; support-Mobile_Apps; support-Mobile_Apps-overview
+locale: en-us
+guid: ce518c93-363b-485e-91b3-b4a402ec4579
+app_type: mobile apps, reactive web apps
 ---
 
 # Actions in Reactive Web and Mobile Apps
 
+<div class="info" markdown="1">
+
+Applies to Mobile Apps and Reactive Web Apps only
+
+</div>
+
 When developing Apps you create logic that runs on the **server** and logic that runs on the **client** device, like a smartphone or a tablet.
 
-The logic flows of Server Actions and Client Actions are presented differently in Service Studio. The upper-left corner of the canvas shows either the **cloud** or the **tablet and smartphone** indicator icon to remind you where the current action runs - on the server or on the mobile device, respectively.
-
-The toolbox icons for the same tools are also slightly different for server and client.
-
-![Toolbox and a flow](images/web-or-mobile.png)
 
 You can create the following Actions:
 

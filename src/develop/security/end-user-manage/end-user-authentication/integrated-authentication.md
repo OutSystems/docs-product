@@ -1,9 +1,18 @@
 ---
 summary: Learn more about Integrated Windows Authentication in OutSystems.
 tags: runtime-traditionalweb
+locale: en-us
+guid: 7cfdce45-42ed-4217-9e4b-fdd3bd671f6b
+app_type: traditional web apps
 ---
 
 # Integrated Authentication
+
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
 
 OutSystems natively supports Integrated Windows Authentication (NTLM or Kerberos) so you can use a centralized management of the end users and have automatic authentication in your applications. Integrated authentication allows the end users to access applications using their domain credentials.
 

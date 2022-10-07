@@ -1,3 +1,9 @@
+---
+locale: en-us
+guid: e3eef60b-0694-4c49-9666-5f4749d6cf32
+app_type: traditional web apps, mobile apps, reactive web apps
+---
+
 # Edit Extension Source Code
 
 You can open the .NET IDE directly from Integration Studio, with the advantage of synchronizing the elements definition with the extension source code. In fact, before launching the IDE, Integration Studio updates the source code. Learn more about [Update Source Code](<extension-update-source-code.md>).  

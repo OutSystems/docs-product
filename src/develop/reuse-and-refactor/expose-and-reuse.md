@@ -1,6 +1,9 @@
 ---
 summary: Learn how to make elements of your module available for reuse by other modules and how to to use elements exposed by other modules.
 tags: support-Mobile_Apps; support-webapps
+locale: en-us
+guid: 4b07ffa2-b09c-4ce8-a7b0-7b18aef4ca47
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Expose and reuse functionality between modules
@@ -43,7 +46,7 @@ To reuse elements from other modules, do the following:
 
     ![Manage Dependencies window](images/expose-and-reuse-4.png?width=600)
 
-1. Press **OK** to make the element available in your module.
+1. Press **Apply** to make the element available in your module.
 
     ![Element in the tree defined in a producer module](images/expose-and-reuse-5.png?width=300)
 

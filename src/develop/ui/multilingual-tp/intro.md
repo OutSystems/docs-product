@@ -1,6 +1,9 @@
 ---
 summary: Learn how to create multilingual Reactive Web and Mobile App with OutSystems.
 tags: support-application_development;
+locale: en-us
+guid: d92eca43-e46e-4db0-8445-4dfb51e0b73d
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Multilingual Reactive Web and Mobile Apps
@@ -26,7 +29,7 @@ Here's how to get started:
 
 * For instructions on how to translate your app directly in Service Studio, see [Translate your app](translate-your-app.md).
 * If you want to extract text for sending it to a translation service, see [Translation management](translation-management.md).
-* For instructions on how to translate older, Traditional Web Apps, see [this section](../multilingual/intro.md).
+* For instructions on how to translate Traditional Web Apps, see [this section](../multilingual/intro.md).
 
 You can translate the following elements of your app:
 
@@ -39,7 +42,7 @@ You can translate the following elements of your app:
 
 ## Translating systems components
 
-You can translate systems components. See the forum blog post [System Components Translations](https://www.outsystems.com/forums/discussion/10760/system-components-translations/) for instructions. 
+You can translate systems components. See the forum blog post [System Components Translations](https://www.outsystems.com/forums/discussion/10760/system-components-translations/) for instructions.
 
 <div class="info" markdown="">
 

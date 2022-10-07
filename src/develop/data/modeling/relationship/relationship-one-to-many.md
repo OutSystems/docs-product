@@ -1,6 +1,9 @@
 ---
 summary: How to create one-to-many relationships between entities in OutSystems.
 tags: support-application_development; support-Database; support-webapps
+locale: en-us
+guid: b6ccd0f3-6d0c-4628-bb6a-b9c9e40bc3a0
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Create a One-to-Many Relationship

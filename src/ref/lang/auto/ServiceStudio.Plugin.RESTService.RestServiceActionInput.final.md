@@ -1,6 +1,9 @@
 ---
 kinds: ServiceStudio.Plugin.RESTService.RestServiceActionInputDescriptor
 helpids: 30059
+locale: en-us
+guid: b9efcc46-e86d-4ca7-b9f2-73d1f9a361db
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Input Parameter (REST API Method)

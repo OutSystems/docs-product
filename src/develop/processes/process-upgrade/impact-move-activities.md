@@ -15,7 +15,7 @@ In this case the execution of the process instance has not executed the moved ac
 
 In case the process instance is suspended it has to be analyzed in Service Center to decide whether it can continue or should be stopped.
 
-![(images/process-upgrade-move-future-to-past.png)
+![](images/process-upgrade-move-future-to-past.png)
 
 
 ## Process Instance is Executing After the Moved Activity (Case 1)

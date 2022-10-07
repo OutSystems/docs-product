@@ -6,7 +6,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Impact of Moving Activities in Process Flows
 
-When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all of the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic lists some examples of the impact of moved activities on executing process instances.
+When you publish a module containing modified [process flows](../process-flow/process-flow-editor.md), all the executing process instances that were based on the former process flows are automatically upgraded by OutSystems. This topic lists some examples of the impact of moved activities on executing process instances.
 
 
 ## Process Instance is Executing Before the Moved Activity
@@ -15,7 +15,7 @@ In this case the execution of the process instance has not executed the moved ac
 
 In case the process instance is suspended it has to be analyzed in Service Center to decide whether it can continue or should be stopped.
 
-![](images/process-upgrade-move-future-to-past.png)
+![(images/process-upgrade-move-future-to-past.png)
 
 
 ## Process Instance is Executing After the Moved Activity (Case 1)

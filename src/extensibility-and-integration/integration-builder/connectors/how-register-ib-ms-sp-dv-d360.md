@@ -99,6 +99,34 @@ To add and request application permissions for your environment, choose either t
 
     ![Grant permission](images/ms-azure-grant-permissions.png)
 
+#### Adding Application Users in Power Apps
+
+After registering your application in Azure Active Directory, you must add Application Users for the same application in Power Apps.
+This step is mandatory in order to have Dataverse and Dynamics connections working in Integration Builder. This is not required for SharePoint connections.
+
+1. Sign into the [Microsoft Power Apps](https://make.powerapps.com/).
+
+1. From the top bar, click **Settings** > **Admin Center**.
+
+1. From the menu, click **Environments**.
+
+1. From the list of **Environments**, select your environment.
+
+1. From the top menu, click **Settings**.
+
+1. Expand **Users + permissions** and click **Application** users.
+
+1. From the top menu, click **+ New App User**.
+
+1. From the right panel, click **+ Add an app**.
+
+1. Search for the application that you have previously created in Azure Active Directory, select it and click **Add**.
+
+1. Still in the right panel, select the **Business Unit**.
+
+1. In **Security Roles**, select **System Administrator** and click **Save**.
+    System Administrator role ensures that you are providing the required permissions. But other permissions may work as well.
+
 ## Managing certificates and secrets
 
 <div class="info" markdown="1">

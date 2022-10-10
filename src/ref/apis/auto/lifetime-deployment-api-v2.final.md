@@ -687,6 +687,70 @@ Scheme
 <td><a href="#operation--environments--EnvironmentKey--content_security_policies--put">PUT /environments/{EnvironmentKey}/content_security_policies/</a></td>
 <td>Sets the Content Security Policies for a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.10.3.</strong></td>
 </tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--get">GET /environments/{EnvironmentKey}/dbconnections/</a></td>
+<td>Returns all the DB connections of a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--post">POST /environments/{EnvironmentKey}/dbconnections/</a></td>
+<td>Creates a new DB connection for an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--DbConnectionName--get">GET /environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/</a></td>
+<td>Returns the detail of a DB Connection for a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--DbConnectionName--put">PUT /environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/</a></td>
+<td>Updates a DB connection for an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--DbConnectionName--delete">DELETE /environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/</a></td>
+<td>Deletes a DB connection for an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--DbConnectionName--rolepermissionlevel--put">PUT /environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/rolepermissionlevel/</a></td>
+<td>Sets the DB connection permission levels for a Role in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--DbConnectionName--rolepermissionlevel--delete">DELETE /environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/rolepermissionlevel/</a></td>
+<td>Revokes the DB connection permissions for a Role in an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--DbConnectionName--rolepermissionlevel--Role--get">GET /environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/rolepermissionlevel/{Role}/</a></td>
+<td>Returns the DB connection permission level of a Role for a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--DbConnectionName--userpermissionlevel--put">PUT /environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/userpermissionlevel/</a></td>
+<td>Sets the DB connection permission levels for a User in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--DbConnectionName--userpermissionlevel--delete">DELETE /environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/userpermissionlevel/</a></td>
+<td>Revokes the DB connection permissions for a User in an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnections--DbConnectionName--userpermissionlevel--Username--get">GET /environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/userpermissionlevel/{Username}/</a></td>
+<td>Returns the DB connection permission level of a User for a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--dbconnection--dbproviders--get">GET /environments/{EnvironmentKey}/dbconnection/dbproviders/</a></td>
+<td>Returns the list of providers for all the DB connections in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--dbconnection--permissionlevels--get">GET /environments/dbconnection/permissionlevels/</a></td>
+<td>Returns the permission levels for the DB connections. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--EnvironmentKey--testdbconnection--post">POST /environments/{EnvironmentKey}/testdbconnection/</a></td>
+<td>Tests the DB connection. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--blockedipaddresses--get">GET /environments/blockedipaddresses/</a></td>
+<td>Gets the IP Addresses blocked login attempts. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--environments--blockedipaddresses--IPAddress--delete">DELETE /environments/blockedipaddresses/{IPAddress}/</a></td>
+<td>Unblocks a given IP Address. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
 </tbody>
 </table>
 <h3 id="tag--deployments" class="swagger-summary-tag">/deployments</h3>
@@ -887,6 +951,14 @@ Scheme
 <tr>
 <td><a href="#operation--users--UserKey--applications--ApplicationKey---delete">DELETE /users/{UserKey}/applications/{ApplicationKey}/</a></td>
 <td>Revokes user's role in application permission.</td>
+</tr>
+<tr>
+<td><a href="#operation--users--UserKey--blockedlogins--get">GET /users/{UserKey}/blockedlogins/</a></td>
+<td>Gets the users blocked login attempts. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
+</tr>
+<tr>
+<td><a href="#operation--users--UserKey--blockedlogins--delete">DELETE /users/{UserKey}/blockedlogins/</a></td>
+<td>Unblocks a given user. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></td>
 </tr>
 </tbody>
 </table>
@@ -4657,6 +4729,2147 @@ EnvironmentKey
 </section>
 </div>
 </div>
+<span id="path--environments--EnvironmentKey--dbconnections-"></span>
+<div id="operation--environments--EnvironmentKey--dbconnections--get" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/{EnvironmentKey}/dbconnections/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Returns all the DB connections of a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>The list of DB conenctions for an environment.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<section class="json-schema-description">
+<p>A list of DBConnection_Response records.</p>
+</section>
+<section class="json-schema-array-items">
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/DBConnection_Response">DBConnection_Response</a>
+</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+</div>
+</section>    </div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve DB Connections due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve DB Connections due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve DB Connections due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="operation--environments--EnvironmentKey--dbconnections--post" class="swagger--panel-operation-post panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">POST</span> <strong>/environments/{EnvironmentKey}/dbconnections/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Creates a new DB connection for an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-body">
+<p><span class="label label-default">application/json</span> 
+</p>
+<div class="rowr">
+<div class="col-md-6">
+<p><p>A structure holding the data for the DB connection.</p>
+</p>
+</div>
+<div class="col-md-6 sw-request-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnection_Request_POST">DBConnection_Request_POST</a>
+</div>
+</div></div>
+</div>
+</section>        
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-201">
+201 Created
+</dt>
+<dd class="sw-response-201">
+<div class="rowr">
+<div class="col-md-12">
+<p>DB connection creation response.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnection_Response">DBConnection_Response</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to create DBConnections due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to create DBConnections due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to create DBConnections due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--EnvironmentKey--dbconnections--DbConnectionName-"></span>
+<div id="operation--environments--EnvironmentKey--dbconnections--DbConnectionName--get" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Returns the details of a DB Connection for a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+DbConnectionName
+</td>
+<td><p>The name of the DB connection.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>DB connection for an environment.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnection_Response">DBConnection_Response</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve DBConnection due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve DBConnection due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve DBConnection due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="operation--environments--EnvironmentKey--dbconnections--DbConnectionName--put" class="swagger--panel-operation-put panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">PUT</span> <strong>/environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Updates a DB connection for an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-body">
+<p><span class="label label-default">application/json</span> 
+</p>
+<div class="rowr">
+<div class="col-md-6">
+<p><p>A structure holding the data for the DB connection.</p>
+</p>
+</div>
+<div class="col-md-6 sw-request-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnection_Request_POST">DBConnection_Request_POST</a>
+</div>
+</div></div>
+</div>
+</section>        
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+DbConnectionName
+</td>
+<td><p>The name of the DB connection.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>DB connection updated successfully.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+</div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to update DBConnection due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to update DBConnection due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to update DBConnection due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="operation--environments--EnvironmentKey--dbconnections--DbConnectionName--delete" class="swagger--panel-operation-delete panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">DELETE</span> <strong>/environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Deletes a DB connection for an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+DbConnectionName
+</td>
+<td><p>The name of the DB connection.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<dl>
+<dt class="sw-response-204">
+204 No Content
+</dt>
+<dd class="sw-response-204">
+<div class="rowr">
+<div class="col-md-12">
+<p>DBConnection deleted successfully.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+</div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to delete DBConnection due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to delete DBConnection due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to delete DBConnection due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--EnvironmentKey--dbconnections--DbConnectionName--rolepermissionlevel-"></span>
+<div id="operation--environments--EnvironmentKey--dbconnections--DbConnectionName--rolepermissionlevel--put" class="swagger--panel-operation-put panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">PUT</span> <strong>/environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/rolepermissionlevel/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Sets the DB connection permission levels for a Role in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-body">
+<p><span class="label label-default">application/json</span> 
+</p>
+<div class="rowr">
+<div class="col-md-6">
+<p><p>The value of the permission level: Full Control, No Access, Read-Only</p>
+</p>
+</div>
+<div class="col-md-6 sw-request-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnection_RolePermissionLevel">DBConnection_RolePermissionLevel</a>
+</div>
+</div></div>
+</div>
+</section>        
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+DbConnectionName
+</td>
+<td><p>The name of the DB connection.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>Permission level successfully set.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+</div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to update the permission level due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to update the permission level due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to update the permission level due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="operation--environments--EnvironmentKey--dbconnections--DbConnectionName--rolepermissionlevel--delete" class="swagger--panel-operation-delete panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">DELETE</span> <strong>/environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/rolepermissionlevel/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Revokes the DB connection permissions for a Role in an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-body">
+<p><span class="label label-default">application/json</span> 
+</p>
+<div class="rowr">
+<div class="col-md-6">
+<p><p>The name of the role.</p>
+</p>
+</div>
+<div class="col-md-6 sw-request-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnectionRole">DBConnectionRole</a>
+</div>
+</div></div>
+</div>
+</section>        
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+DbConnectionName
+</td>
+<td><p>The name of the DB connection.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>Permission level revoked successfully.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+</div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to revoke the permission level due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to revoke the permission level due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to revoke the permission level due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--EnvironmentKey--dbconnections--DbConnectionName--rolepermissionlevel--Role-"></span>
+<div id="operation--environments--EnvironmentKey--dbconnections--DbConnectionName--rolepermissionlevel--Role--get" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/rolepermissionlevel/{Role}/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Returns the DB connection permission level of a Role for a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+DbConnectionName
+</td>
+<td><p>The name of the DB connection.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+Role
+</td>
+<td><p>The name of the role for which the permission levels will be checked.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>The permission level for a role.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DbConnectionPermissionLevel">DbConnectionPermissionLevel</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve permission level due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve permission level due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve permission level due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--EnvironmentKey--dbconnections--DbConnectionName--userpermissionlevel-"></span>
+<div id="operation--environments--EnvironmentKey--dbconnections--DbConnectionName--userpermissionlevel--put" class="swagger--panel-operation-put panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">PUT</span> <strong>/environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/userpermissionlevel/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Sets the DB connection permission levels for a User in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-body">
+<p><span class="label label-default">application/json</span> 
+</p>
+<div class="rowr">
+<div class="col-md-6">
+<p><p>The value of the permission level: Full Control, No Access, Read-Only</p>
+</p>
+</div>
+<div class="col-md-6 sw-request-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnection_UserPermissionLevel">DBConnection_UserPermissionLevel</a>
+</div>
+</div></div>
+</div>
+</section>        
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+DbConnectionName
+</td>
+<td><p>The name of the DB connection.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>Permission level successfully set.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+</div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to update the permission level due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to update the permission level due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to update the permission level due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="operation--environments--EnvironmentKey--dbconnections--DbConnectionName--userpermissionlevel--delete" class="swagger--panel-operation-delete panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">DELETE</span> <strong>/environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/userpermissionlevel/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Revokes the DB connection permissions for a User in an environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-body">
+<p><span class="label label-default">application/json</span> 
+</p>
+<div class="rowr">
+<div class="col-md-6">
+<p><p>The username of the user.</p>
+</p>
+</div>
+<div class="col-md-6 sw-request-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnectionUser">DBConnectionUser</a>
+</div>
+</div></div>
+</div>
+</section>        
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+DbConnectionName
+</td>
+<td><p>The name of the DB connection.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>Permission level revoked successfully.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+</div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to revoke the permission level due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to revoke the permission level due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to revoke the permission level due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--EnvironmentKey--dbconnections--DbConnectionName--userpermissionlevel--Username-"></span>
+<div id="operation--environments--EnvironmentKey--dbconnections--DbConnectionName--userpermissionlevel--Username--get" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/{EnvironmentKey}/dbconnections/{DbConnectionName}/userpermissionlevel/{Username}/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Returns the DB connection permission level of a User for a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+DbConnectionName
+</td>
+<td><p>The name of the DB connection.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+Username
+</td>
+<td><p>The username of the user for whom the permission levels will be checked.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>The permission level for a user.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DbConnectionPermissionLevel">DbConnectionPermissionLevel</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve permission level due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve permission level due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve permission level due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--EnvironmentKey--dbconnection--dbproviders-"></span>
+<div id="operation--environments--EnvironmentKey--dbconnection--dbproviders--get" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/{EnvironmentKey}/dbconnection/dbproviders/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Returns the list of providers for all the DB connections in a given environment. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>The list of providers for the environment's DB connections.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<section class="json-schema-description">
+<p>A list of DbProvider records.</p>
+</section>
+<section class="json-schema-array-items">
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/DbProvider">DbProvider</a>
+</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+</div>
+</section>    </div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve the providers due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve the providers due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve the providers due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--dbconnection--permissionlevels-"></span>
+<div id="operation--environments--dbconnection--permissionlevels--get" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/dbconnection/permissionlevels/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Returns the permission levels for the DB connections.</p>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>The list of permission levels for the DB connection.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<section class="json-schema-description">
+<p>A list of DbConnectionPermissionLevel records.</p>
+</section>
+<section class="json-schema-array-items">
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/DbConnectionPermissionLevel">DbConnectionPermissionLevel</a>
+</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+</div>
+</section>    </div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve permission levels due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--EnvironmentKey--testdbconnection-"></span>
+<div id="operation--environments--EnvironmentKey--testdbconnection--post" class="swagger--panel-operation-post panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">POST</span> <strong>/environments/{EnvironmentKey}/testdbconnection/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Tests the DB connection. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-body">
+<p><span class="label label-default">application/json</span> 
+</p>
+<div class="rowr">
+<div class="col-md-6">
+<p><p>A structure holding the data for the DB connection.</p>
+</p>
+</div>
+<div class="col-md-6 sw-request-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnection_Request_POST">DBConnection_Request_POST</a>
+</div>
+</div></div>
+</div>
+</section>        
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>The key of the environment.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>DB connection tested successfully.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/DBConnection_Response">DBConnection_Response</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-400">
+400 Bad Request
+</dt>
+<dd class="sw-response-400">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to test DB Connection due to missing parameters.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to test DB Connection due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to test DB Connection due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--blockedipaddresses-"></span>
+<div id="operation--environments--blockedipaddresses--get" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/environments/blockedipaddresses/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Gets the IP Addresses blocked login attempts.</p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>Key for the environment to unblock, if empty all environments are unblocked.</p>
+</td>
+<td>query</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>A list of login attempts for an IP address.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<section class="json-schema-description">
+<p>A list of PlatformLoginAttempt records.</p>
+</section>
+<section class="json-schema-array-items">
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/PlatformLoginAttempt">PlatformLoginAttempt</a>
+</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+</div>
+</section>    </div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-403">
+403 Forbidden
+</dt>
+<dd class="sw-response-403">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve login attempts.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve login attempts due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve login attempts due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-501">
+501 Not Supported
+</dt>
+<dd class="sw-response-501">
+<div class="rowr">
+<div class="col-md-12">
+<p>Feature not supported.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<span id="path--environments--blockedipaddresses--IPAddress-"></span>
+<div id="operation--environments--blockedipaddresses--IPAddress--delete" class="swagger--panel-operation-delete panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">DELETE</span> <strong>/environments/blockedipaddresses/{IPAddress}/</strong></h3>
+Go to 
+<a href="#tag--environments">/environments</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Unblocks a given IP Address. <strong>This endpoint is available as of LifeTime Management Console 11.13.0.</strong></p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+IPAddress
+</td>
+<td><p>IP Address to be unblocked.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>Key for the environment to unblock, if empty all environments are unblocked.</p>
+</td>
+<td>query</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>IP Address unblocked successfully.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+</div>
+</div>                </dd>
+<dt class="sw-response-403">
+403 Forbidden
+</dt>
+<dd class="sw-response-403">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to delete login attempts.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to delete login attempts due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to delete login attempts due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-501">
+501 Not Supported
+</dt>
+<dd class="sw-response-501">
+<div class="rowr">
+<div class="col-md-12">
+<p>Feature not supported.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+
+
 <span id="path--modules-"></span>
 <div id="operation--modules--get" class="swagger--panel-operation-get panel">
 <div class="panel-heading">
@@ -8086,6 +10299,325 @@ UserKey
 </section>
 </div>
 </div>
+
+<span id="path--users--UserKey--blockedlogins-"></span>
+<div id="operation--users--UserKey--blockedlogins--get" class="swagger--panel-operation-get panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">GET</span> <strong>/users/{UserKey}/blockedlogins/</strong></h3>
+Go to 
+<a href="#tag--users">/users</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Gets the users blocked login attempts.</p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+UserKey
+</td>
+<td><p>The key of the User to retrieve.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>Key for the environment to check, if empty all environments are returned.</p>
+</td>
+<td>query</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>Blocked login attempts retrieved successfully.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<section class="json-schema-description">
+<p>A list of PlatformLoginAttempt records.</p>
+</section>
+<section class="json-schema-array-items">
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/PlatformLoginAttempt">PlatformLoginAttempt</a>
+</span>
+<span class="json-property-range" title="Value limits"></span>
+<div class="json-inner-schema">
+</div>
+</section>    </div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-403">
+403 Forbidden
+</dt>
+<dd class="sw-response-403">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve login attempts.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve login attempts due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to retrieve login attempts due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-501">
+501 Not Supported
+</dt>
+<dd class="sw-response-501">
+<div class="rowr">
+<div class="col-md-12">
+<p>Feature not supported.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+<div id="operation--users--UserKey--blockedlogins--delete" class="swagger--panel-operation-delete panel">
+<div class="panel-heading">
+<div class="operation-summary"></div>
+<h3 class="panel-title"><span class="operation-name">DELETE</span> <strong>/users/{UserKey}/blockedlogins/</strong></h3>
+Go to 
+<a href="#tag--users">/users</a>
+</div>
+<div class="panel-body">
+<section class="sw-operation-description">
+<p>Unblocks a given user.</p>
+</section>
+<section class="sw-request-params">
+<table class="table">
+<thead>
+<tr>
+<th class="sw-param-name"></th>
+<th class="sw-param-description"></th>
+<th class="sw-param-type"></th>
+<th class="sw-param-data-type"></th>
+<th class="sw-param-annotation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+UserKey
+</td>
+<td><p>The key of the User to unblock.</p>
+</td>
+<td>path</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+<span class="json-property-required"></span>
+</td>
+</tr>
+<tr>
+<td>
+EnvironmentKey
+</td>
+<td><p>Key for the environment to unblock, if empty all environments are unblocked.</p>
+</td>
+<td>query</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+IpAddress
+</td>
+<td><p>IP Address to unblock the user. All if no IP is passed.</p>
+</td>
+<td>query</td>
+<td>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sw-responses">
+<p><span class="label label-default">application/json</span> 
+</p>
+<dl>
+<dt class="sw-response-200">
+200 OK
+</dt>
+<dd class="sw-response-200">
+<div class="rowr">
+<div class="col-md-12">
+<p>User unblocked successfully.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+</div>
+</div>                </dd>
+<dt class="sw-response-403">
+403 Forbidden
+</dt>
+<dd class="sw-response-403">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to delete login attempts.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-404">
+404 Not Found
+</dt>
+<dd class="sw-response-404">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to delete login attempts due to invalid environment key.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-500">
+500 Internal Server Error
+</dt>
+<dd class="sw-response-500">
+<div class="rowr">
+<div class="col-md-12">
+<p>Failed to delete login attempts due to internal error.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+<dt class="sw-response-501">
+501 Not Supported
+</dt>
+<dd class="sw-response-501">
+<div class="rowr">
+<div class="col-md-12">
+<p>Feature not supported.</p>
+</div>
+</div>
+<div class="rowr">
+<div class="col-md-6 sw-response-model">
+<div  class="panel panel-definition">
+<div class="panel-body">
+<a class="json-schema-ref" href="#/definitions/Exception">Exception</a>
+</div>
+</div></div>
+</div>                </dd>
+</dl>
+</section>
+</div>
+</div>
+
+
+
 <h2>Structures</h2>
 <div id="definition-Application" class="panel panel-definition">
 <div class="panel-heading">
@@ -10418,6 +12950,153 @@ UserKey
 </section>
 </div>
 </div>        
+<div id="definition-PlatformLoginAttempt" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/PlatformLoginAttempt"></a>PlatformLoginAttempt:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Login attempts information.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="userId">
+<span class="json-property-name">userId:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="username">
+<span class="json-property-name">username:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="success">
+<span class="json-property-name">success:</span>
+<span class="json-property-type">boolean</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="instant">
+<span class="json-property-name">instant:</span>
+<span class="json-property-type">string</span>    <span class="json-property-format">(date-time)</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="ipAddress">
+<span class="json-property-name">ipAddress:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="usernameFailureCount">
+<span class="json-property-name">usernameFailureCount:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="originAddressFailureCount">
+<span class="json-property-name">originAddressFailureCount:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="userAgent">
+<span class="json-property-name">userAgent:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="visitor">
+<span class="json-property-name">visitor:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="requestKey">
+<span class="json-property-name">requestKey:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="result">
+<span class="json-property-name">result:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="environmentId">
+<span class="json-property-name">environmentId:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="environmentName">
+<span class="json-property-name">environmentName:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
 <div id="definition-Role" class="panel panel-definition">
 <div class="panel-heading">
 <h3 class="panel-title"><a name="/definitions/Role"></a>Role:
@@ -10794,9 +13473,9 @@ UserKey
 <span class="json-property-name">Key:</span>
 <span class="json-property-type">string</span>
 <span class="json-property-range" title="Value limits"></span>
+<span class="json-property-read-only"></span>
 </dt>
 <dd>
-<p><span class="json-property-read-only">readonly</span></p>
 <div class="json-inner-schema">
 </div>
 </dd>
@@ -10850,9 +13529,8 @@ UserKey
 <span class="json-property-name">RoleName:</span>
 <span class="json-property-type">string</span>
 <span class="json-property-range" title="Value limits"></span>
-</dt>
+<span class="json-property-read-only"></span></dt>
 <dd>
-<p><span class="json-property-read-only">readonly</span></p>
 <div class="json-inner-schema">
 </div>
 </dd>
@@ -11567,4 +14245,424 @@ UserKey
 </section>
 </div>
 </div>        
-
+<div id="definition-DBConnection_Request_POST" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/DBConnection_Request_POST"></a>DBConnection_Request_POST:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Body of the request to create a new DB connection.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="dbConnectionName">
+<span class="json-property-name">dbConnectionName:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The name of the DB connection.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="providerKey">
+<span class="json-property-name">providerKey:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The key of the provider for the DB connection.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="description">
+<span class="json-property-name">description:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The description of the DB connection.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="dbUsername">
+<span class="json-property-name">dbUsername:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The username for the DB connection.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="dbPassword">
+<span class="json-property-name">dbPassword:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The password for the DB connection.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="dbConfigParams">
+<span class="json-property-name">dbConfigParams:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>DB connection configuration parameters. Configuration parameters must be separated by a semi-colon ';'.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-DBConnection_Response" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/DBConnection_Response"></a>DBConnection_Response:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Body of the responde of the Get, List and Create methods for a DB Connection.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="dbConnectionName">
+<span class="json-property-name">dbConnectionName:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The name of the DB connection.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="description">
+<span class="json-property-name">description:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The description of the DB connection.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="providerName">
+<span class="json-property-name">providerName:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The name of the provider for the DB connection.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="isAdvancedConfiguration">
+<span class="json-property-name">isAdvancedConfiguration:</span>
+<span class="json-property-type">boolean</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>Boolean to define if it is an advanced configuration for the DB connection. True when the DB configuration parameters are set in the request.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="databaseConfiguration">
+<span class="json-property-name">databaseConfiguration:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The DB configuration values when setting an advanced configuration.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-DBConnection_RolePermissionLevel" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/DBConnection_RolePermissionLevel"></a>DBConnection_RolePermissionLevel:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Structure that holds the data to manipulate the permission level for DB connections for a role.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="role">
+<span class="json-property-name">role:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>Role name.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="permissionLevel">
+<span class="json-property-name">permissionLevel:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>Identifier of the permission level. Permission levels: Full Control, No Access, Read-Only</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-DBConnection_UserPermissionLevel" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/DBConnection_UserPermissionLevel"></a>DBConnection_UserPermissionLevel:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Structure that holds the data to manipulate the permission level for DB connections for a user.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="username">
+<span class="json-property-name">username:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>Username of the user.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="permissionLevel">
+<span class="json-property-name">permissionLevel:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>Identifier of the permission level. Permission levels: Full Control, No Access, Read-Only</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-DbConnectionPermissionLevel" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/DbConnectionPermissionLevel"></a>DbConnectionPermissionLevel:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Structure that holds the data to manipulate the permission level for DB connections.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="Id">
+<span class="json-property-name">Id:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>The identifier of the permission level.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="Label">
+<span class="json-property-name">Label:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>The label of the environment permission level.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="ShortLabel">
+<span class="json-property-name">ShortLabel:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>A shorter label of the permission level.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="Description">
+<span class="json-property-name">Description:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>The full description of the permission level.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="Level">
+<span class="json-property-name">Level:</span>
+<span class="json-property-type">integer</span>    <span class="json-property-format">(int32)</span>
+<span class="json-property-range" title="Value limits"></span>
+<span class="json-property-required"></span>
+</dt>
+<dd>
+<p>An integer representing the permission level.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-DbConnectionPermissionLevelRecord" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/DbConnectionPermissionLevelRecord"></a>DbConnectionPermissionLevelRecord:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Structure that holds DBConnectionPermissionLevel records.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="DbConnectionPermissionLevel">
+<span class="json-property-name">DbConnectionPermissionLevel:</span>
+<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/DbConnectionPermissionLevel">DbConnectionPermissionLevel</a></span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-DBConnectionRole" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/DBConnectionRole"></a>DBConnectionRole:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Structure that describes a Role for a DBConnection.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="role">
+<span class="json-property-name">role:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>Name of the role.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-DBConnectionUser" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/DBConnectionUser"></a>DBConnectionUser:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Structure that describes a User for a DBConnection.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="username">
+<span class="json-property-name">username:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<p>Username of the user.</p>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        
+<div id="definition-DbProvider" class="panel panel-definition">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="/definitions/DbProvider"></a>DbProvider:
+<span class="json-property-type">
+<span class="json-property-type">object</span>
+<span class="json-property-range" title="Value limits"></span>
+</span>
+</h3>
+</div>
+<div class="panel-body">
+<section class="json-schema-description">
+<p>Structure that describes a DB Provider.</p>
+</section>
+<section class="json-schema-properties">
+<dl>
+<dt data-property-name="DisplayName">
+<span class="json-property-name">DisplayName:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+<dt data-property-name="ProviderKey">
+<span class="json-property-name">ProviderKey:</span>
+<span class="json-property-type">string</span>
+<span class="json-property-range" title="Value limits"></span>
+</dt>
+<dd>
+<div class="json-inner-schema">
+</div>
+</dd>
+</dl>
+</section>
+</div>
+</div>        

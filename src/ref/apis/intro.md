@@ -90,7 +90,7 @@ API Name | Available As | Description
 
 API Name | Available As | Description
 ---|---|---
-[System Actions](auto/system-actions.final.md) | Referenced system module | Contains client and server actions that allow you to operate on system elements like lists and activities.
+[System Actions](auto/system-actions.final.md) | Referenced system module | Contains client and server actions that allow you to operate on system elements like lists and activities. 
 
 ## Security and Cryptography
 

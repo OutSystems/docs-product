@@ -13,18 +13,22 @@ You can use Integration Builder to integrate your apps with the following extern
 * Relational databases:
 
     * DB2 iSeries
-    * PostgreSQL and Aurora PostgreSQL
+    * PostgreSQL, Aurora PostgreSQL and Azure PostgreSQL
     * MySQL
     * Oracle
     * Azure SQL and SQL Server
 
 * Non-relational databases:
 
-    * MongoDB - Technical Preview
+    * MongoDB
+
+<div class="info" markdown="1">
+
+For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems in the system requirements article](../../setup-maintain/setup/system-requirements.md).
+
+</div>
 
 Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
-
-For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup-maintain/setup/system-requirements.md).
 
 ## Prerequisites
 
@@ -32,7 +36,7 @@ For more information about the supported databases and the systems that are cert
 
     * For integrations with MongoDB your environments must use Platform Server 11.7.2 or later.
     * For integrations with DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server, you need Platform Server 11.14.0 or later.
-    * For integrations with PostgreSQL and Aurora PostgreSQL, you need Platform Server 11.15.0 or later.
+    * For integrations with PostgreSQL, Aurora PostgreSQL and Azure PostgreSQL you need Platform Server 11.15.0 or later.
 
 * All infrastructure servers must be able to connect to the external database.
 
@@ -46,7 +50,9 @@ For more information about the supported databases and the systems that are cert
 
 * An external database integration created in Integration Builder only supports one database, catalog, or schema at a time. If you require various tables or collections from different databases, catalogs, or schemas, you must create several integrations.
 
-* It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description.
+* It's not possible to define the following fields at attribute level: data types, length, mandatory, autonumber, delete rule, and description.
+
+* It's not possible to manually define identifiers.
 
 * It's not possible to rename entities or attributes.
 
@@ -108,9 +114,9 @@ You can connect an integration in the following ways:
 
 * [**Use an existing connection**](#option-1): If you already have a database connection, you can **select a connection** from the list of available connections.
 
-* [**Create a new connection**](#option-2): If you need a new database connection and meet the following requirements, you can **create a connection**:
+* [**Create a new connection**](#option-2): If you need a new database connection and you meet one of the following scenarios, you can **create a connection**:
 
-    * You're integrating with a relational database and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
+    * You're integrating with a relational database and you have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
 
     * You're integrating with MongoDB.
 
@@ -128,9 +134,9 @@ If the database connection you want to use already exists, do the following:
 
 #### Create a new connection { #option-2 }
 
-You can create a new database connection, if you meet the following requirements, you can **create a connection**:
+If you meet one of the following scenarios, you can **create a connection**:
 
-* You're integrating with a relational database and have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
+* You're integrating with a relational database and you have the required [permissions](../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md).
 
 * You're integrating with MongoDB.
 
@@ -144,7 +150,16 @@ Create a new connection by following these steps:
 
     <div class="info" markdown="1">
 
-    For integrations with relational databases and if your environment uses Platform Server version 11.14.0 or earlier, click **Create in Service Center**. Fill in the mandatory details, test the connection, and then click **Create**.
+    If you are creating a connection to an external Oracle database which NLS_LANGUAGE parameter is different from `AMERICAN`, make sure you set the **NLS_LANGUAGE** field to the same value set in the database. This will prevent runtime issues related to date and number formats.
+
+    To get the value of the NLS_LANGUAGE parameter set in your external Oracle database you can run the following script:
+        `select value from nls_database_parameters where parameter = 'NLS_LANGUAGE';`
+
+    </div>
+
+    <div class="info" markdown="1">
+
+    For integrations with relational databases and if your environment uses Platform Server version 11.14.0 or earlier, click **Create in Service Center** and follow [this procedure](connect-external-db.md#define-connection) to create the database connection in Service Center.
 
     **Note:** By default, SQL Server/Azure SQL is selected in the DBMS dropdown. Don’t forget to select the correct database.
 
@@ -205,7 +220,37 @@ After these steps, [review and publish your integration](#review).
 
 #### Integration with MongoDB { #non-rel-db }
 
-If you are integrating with MongoDB, select the collections to consume with the integration and click **Next**.
+If you are integrating with MongoDB, follow these steps:
+
+1. Select the collections to consume with the integration.
+
+1. For each collection to consume, set the following fields:
+
+    * In the **Access Type**, to only allow reading data and prevent writing data for that collection, set the **Read-only** checkbox for the given collection.
+
+    * In **Format**, set the output format of the collection to one of the following:
+
+        * **Structure** - The content of the documents in that collection are represented as Structures. OutSystems generate each Structure based on the document's structure. This means that in Service Studio, the data type of Input and Output Parameters of the generated Server Actions are set to the relevant Structures. Furthemore, you don't need to serialize and deserialize JSON data.
+
+        * **JSON** - The content of the documents in that collection are represented in JSON format. This means that in Service Studio, the Input and Output Parameters of the generated Server Action will be in JSON format (text type). You can serialize and deserialize the JSON from and to OutSystems Structures. Those Structures are not generated by Integration Builder, and you must created them.
+
+1. For collections with **Format** set as **Structure**, de-select the fields you don't want to use in your integration.
+
+    <div class="info" markdown="1">
+
+    After selecting Structure, you see the structure of the selected collection. Fields are displayed in the right side of the screen and are presented with the same hierarchy as in the database.
+
+    By default, Integration Builder generates the structure by looking at the five most recent documents available in the collection. You can change the sample selecting **Most recent** or **Evenly spread**, changing the number of documents to be analyzed, and then selecting **Update structure**.
+
+    When a field has different data types in different documents, Integration Builder can’t determine the final data type to show in the structure. In this case, the field is unselectable. If you need that field in your integration, you must use the JSON format for that collection.
+
+    Structure format isn't available for empty collections.
+
+    </div>
+
+
+
+1. Click **Next**.
 
 <div class="info" markdown="1">
 

@@ -6,12 +6,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Invalid SAP Connection Error
 
-<div class="info" markdown="1">
-
-Only applies to Windows-only Service Studio.
-
-</div>
-
 The `Invalid SAP Connection` error is issued in the following situation:
 
 * `(<connection name>) must have at least one remote function`

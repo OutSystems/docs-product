@@ -24,14 +24,14 @@ The diagram below shows the **network architecture** of the base setup for an Ou
 
 ![OutSystems cloud diagram](images/cloud-architecture-standard-diag.png)
 
-Depending on the [OutSystems Cloud edition](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/Cloud_services_catalog), customers can expand their base setup with the following:
+Depending on the [OutSystems Cloud edition](https://www.outsystems.com/legal/success/cloud-services-catalog/), customers can expand their base setup with the following:
 
 * Additional non-production environments, with a dedicated database.
 * Additional pipelines, that enable the independent release of one or more related applications.
 
 ### Communications with OutSystems tools
 
-Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deliver-mobile/mobile-apps-build-service/intro.md), [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard), [Workflow Builder](https://success.outsystems.com/Documentation/Workflow_Builder), and [Experience Builder](https://success.outsystems.com/Documentation/Experience_Builder):
+Besides the communication flow shown in the above diagram, there are specific communications between the **environments** within the OutSystems Cloud and the several **OutSystems tools**. The diagram below shows the communication flow to the [Mobile Apps Build Service](../../../deliver-mobile/mobile-apps-build-service/intro.md), [Architecture Dashboard](../../../managing-the-applications-lifecycle/manage-tech-debt/intro.md), [Integration Builder](../../../extensibility-and-integration/integration-builder/intro.md),[Workflow Builder](../../../develop/case-management-workflow/workflow-builder/intro.md), and [Experience Builder](../../../develop/experience-builder/intro.md):
 
 ![OutSystems cloud diagram tools](images/cloud-architecture-tools-diag.png)
 
@@ -47,17 +47,17 @@ The administration of the OutSystems Cloud technology stack also requires direct
 
 ## Additional network restriction
 
-On top of VPC specific network architecture, customers can restrict access by IP address to the OutSystems management consoles and connections from the development tools. Customers must submit a request to [OutSystems Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to set this configuration, indicating the internal range of IP addresses allowed to have that access.
+On top of VPC specific network architecture, customers can restrict access by IP address to the OutSystems management consoles and connections from the development tools. Customers must submit a request to [OutSystems Support](https://www.outsystems.com/legal/success/contact-outsystems-technical-support/) to set this configuration, indicating the internal range of IP addresses allowed to have that access.
 
 ## Communication with on-premise systems
 
-Depending on the [OutSystems Cloud edition](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/Cloud_services_catalog), customers can set up secure connections between OutSystems Cloud environments and their on-premises systems, enabling teams to integrate and expose core system data in a secure way.
+Depending on the [OutSystems Cloud edition](https://www.outsystems.com/legal/success/cloud-services-catalog/), customers can set up secure connections between OutSystems Cloud environments and their on-premises systems, enabling teams to integrate and expose core system data in a secure way.
 
 The most common option is to [set up a site-to-site Virtual Private Network (VPN) connection](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Set_Up_a_VPN_to_your_OutSystems_Cloud) between the on-premises network and OutSystems Cloud using Internet Protocol security (IPSec):
 
 ![OutSystems cloud diagram vpn](images/cloud-architecture-vpn-diag.png)
 
-To accommodate more advanced integration scenarios and troubleshooting needs, customers can [request direct access to the application databases](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Access_the_database_of_your_PaaS) and use database client tools to perform the needed operations.
+To accommodate more advanced integration scenarios and troubleshooting needs, customers can [request direct access to the application databases](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Access_the_database_of_your_OutSystems_Cloud) and use database client tools to perform the needed operations.
 
 For scenarios that require the use of high bandwidth and a steady connection without network congestion, it’s also possible to [set up AWS Direct Connect](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/AWS_Direct_Connect_on_OutSystems_Cloud) linking the customer’s private network with OutSystems Cloud over a dedicated line.
 
@@ -78,3 +78,4 @@ Additionally, customers who need extra layers of compliance have the option to u
 The diagram below shows the architecture of the base setup for a Standard Edition with high-availability option in a high-compliance OutSystems Cloud:
 
 ![OutSystems cloud high availability and compliance](images/cloud-architecture-ha-diag.png)
+

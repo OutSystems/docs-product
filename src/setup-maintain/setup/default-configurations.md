@@ -38,15 +38,26 @@ Also, the OutSystems installers creates registry entries to store some configura
 
 During the installation, OutSystems registers a set of services on the server. You can start and stop these services using the Windows Management Console.
 
-|Service|Executable C:\Program Files\OutSystems\Platform Server|Configuration C:\Program Files\OutSystems\Platform Server|
-|-------|-------|-------|
-|SMS Connector|SmsConnector.exe|SmsConnector.exe.config|
-|Compiler|CompilerService.exe|CompilerService.exe.config|
-|DeployService|DeployService.exe|DeployService.exe.config|
-|Log|LogServer.exe|LogServer.exe.config|
-|Scheduler|Scheduler.exe|Scheduler.exe.config|
+### For platform versions prior to 11.18:
 
-_Note:_ All OutSystems services must run with the **Local System account**.
+|Service|Executable C:\Program Files\OutSystems\Platform Server|Configuration C:\Program Files\OutSystems\Platform Server|Account|
+|-------|-------|-------|-------|
+|Compiler|CompilerService.exe|CompilerService.exe.config|OSControllerUser|
+|DeployService|DeployService.exe|DeployService.exe.config|Local System account|
+|Scheduler|Scheduler.exe|Scheduler.exe.config|OSSchedulerUser|
+
+
+### For platform versions 11.18 or later:
+
+|Service|Executable C:\Program Files\OutSystems\Platform Server|Configuration C:\Program Files\OutSystems\Platform Server|Account|
+|-------|-------|-------|-------|
+|SMS Connector|SmsConnector.exe|SmsConnector.exe.config|Local System account|
+|Compiler|CompilerService.exe|CompilerService.exe.config|NT Service\OutSystems Deployment Controller Service|
+|DeployService|DeployService.exe|DeployService.exe.config|Local System account|
+|Log|LogServer.exe|LogServer.exe.config|Local System account|
+|Scheduler|Scheduler.exe|Scheduler.exe.config|NT Service\OutSystems Scheduler Service|
+
+Note: When using SQL Server as the platform database with Windows Authentication, OutSystems services (OutSystems Deployment Controller Service, OutSystems Deployment Service, OutSystems Scheduler Service) run under the configured Windows account.
 
 The logs of these services are stored in Windows Event Viewer.
 

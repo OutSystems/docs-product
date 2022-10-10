@@ -57,7 +57,7 @@ The service module includes the following server actions:
 
 ### Converting data to and from JSON { #convert }
 
-The server actions retrieve and receive MongoDB data as JSON, so you need to create Structures to represent the JSON structure in your apps.
+For collections with **Format** set as **JSON**, the server actions retrieve and receive MongoDB data as JSON, so you need to create Structures to represent the JSON structure in your apps.
 
 ![Example of a structure that represents a Student MongoDB document](images/structure-ss.png)
 
@@ -83,9 +83,29 @@ To reduce potential attack vectors in your production environments, in the same 
 
 Before you start, ensure you created an app with a module and [added the integration as a dependency to your module in Service Studio](integrate-external-db-ib.md#use).
 
-## Add a record
+## Collection with Structure Format { #structure-format }
 
-Adding a record, known as a document in MongoDB, includes the following key steps:
+Check the following sections if the collection uses a Structure Format.
+
+### Add a record to a collection with Structure Format
+
+To add a record, known as a document in MongoDB, to a collection with Structure Format, use the **Create&lt;collection-name&gt;Document** action.
+
+### Fetch a record from a collection with Structure Format
+
+To fetch a record, known as a document in MongoDB, to a collection with Structure Format follow the steps in [Fetch a single record](../../develop/data/query/fetch-data-ib.md#fetch-record).
+
+### Fetch a list of records from a collection with Structure Format
+
+To fetch a list of records, known as a document in MongoDB, to a collection with Structure Format follow the steps in [Fetch a single record](../../develop/data/query/fetch-data-ib.md#fetch-list).
+
+## Collection with JSON Format { #json-format }
+
+Check the following sections if the collection uses a JSON Format.
+
+### Add a record to a collection with JSON Format
+
+Adding a record, known as a document in MongoDB, to a collection with JSON Format includes the following key steps:
 
 ![Key steps to add a record using a MongoDB integration](images/add-record-diag.png)
 
@@ -97,7 +117,7 @@ Adding a record, known as a document in MongoDB, includes the following key step
 
 1. [Save the data in MongoDB using the **Create&lt;collection-name&gt;Document** action](#fetch-record).
 
-### Create structure
+#### Create structure
 
 Start by creating a Structure that represents the JSON structure of the document you want your app to interact with.
 
@@ -105,7 +125,7 @@ Don’t include the document identifier if you want Integration Builder to gener
 
 Check the [converting data to and from JSON](#convert) to learn more about creating the Structure.
 
-### Create a local variable or input parameter
+#### Create a local variable or input parameter
 
 Now in the action where you want to add data, create a Local Variable or input parameter to hold the data before sending it to the MongoDB database. Do the following:
 
@@ -115,7 +135,7 @@ Now in the action where you want to add data, create a Local Variable or input p
 
 1. If you are creating an action in a screen, ensure that the **Variable** of each input UI element uses the correct attributes of **Local Variable**.
 
-### Serialize data
+#### Serialize data
 
 Now in the action where you want to add data, do the following:
 
@@ -123,7 +143,7 @@ Now in the action where you want to add data, do the following:
 
 1. In the properties of **Serialize JSON**, set **Data** as the **Local Variable** or **Input Parameter** you created previously.
 
-### Save data
+#### Save data
 
 Save the serialized JSON data to your MongoDB database, by doing the following:
 
@@ -131,9 +151,9 @@ Save the serialized JSON data to your MongoDB database, by doing the following:
 
 1. In the properties of **Create&lt;collection-name&gt;Document**, set **Documentjson** as the JSON output of the Serialize JSON action
 
-## Fetch a record
+### Fetch a record from a collection with JSON Format
 
-Fetching a record, known as a document in MongoDB, includes the following key steps:
+Fetching a record, known as a document in MongoDB, from a collection with JSON Format includes the following key steps:
 
 ![Key steps to fetch a record using a MongoDB integration](images/fetch-record-diag.png)
 
@@ -145,13 +165,13 @@ Fetching a record, known as a document in MongoDB, includes the following key st
 
 1. [Assign the data to the output of the action](#assign-record)
 
-### Create structure { #structure-record }
+#### Create structure { #structure-record }
 
 Start by creating a Structure that represents the JSON structure of the document you want your app to interact with.
 
 Check the [converting data to and from JSON](#convert) to learn more about creating the Structure.
 
-### Fetch data { #fetch-record }
+#### Fetch data { #fetch-record }
 
 Now in the action where you want to fetch data, do the following:
 
@@ -165,7 +185,7 @@ Check the [section with the list of actions in the service module](#actions) to 
 
 </div>
 
-### Deserialize data { #deserialize-record }
+#### Deserialize data { #deserialize-record }
 
 Deserialize the record and assign it to the output parameter by doing the following:
 
@@ -176,7 +196,7 @@ Deserialize the record and assign it to the output parameter by doing the follow
     * Set **JSON String** as the output of the **Get&lt;collection-name&gt;Document** action, `Get<collection-name>Document.DocumentJson`.
     * Set **Data Type** as the structure you previously created.
 
-### Assign data to output parameter { #assign-record }
+#### Assign data to output parameter { #assign-record }
 
 Assign the deserialize data to the output parameter by doing the following:
 
@@ -190,9 +210,9 @@ Assign the deserialize data to the output parameter by doing the following:
 
 If you completed the previous steps in the **Data Action** of a screen, you can [show the record in a screen](../../develop/data/query/fetch-data-ib.md#show-a-single-record--show-record).
 
-## Fetch a list of records
+### Fetch a list of records from a collection with JSON Format
 
-Fetching a list of records, known as documents in MongoDB, includes the following key steps:
+Fetching a list of records, known as documents in MongoDB, from a collection with JSON Format includes the following key steps:
 
 ![Key steps to fetch a list of records using a MongoDB integration](images/fetch-list-diag.png)
 
@@ -202,13 +222,13 @@ Fetching a list of records, known as documents in MongoDB, includes the followin
 
 1. [Deserialize the data received and append it to the output of the action](#deserialize-list).
 
-### Create structure { #structure-list }
+#### Create structure { #structure-list }
 
 Start by creating a Structure that represents the JSON structure of the document you want your app to interact with.
 
 Check the [converting data to and from JSON](#convert) to learn more about creating the Structure.
 
-### Fetch data { #fetch-list }
+#### Fetch data { #fetch-list }
 
 To fetch data, in the flow of an action, add the **Search&lt;collection-name&gt;Documents** action.
 
@@ -220,7 +240,7 @@ Check the [section with the list of actions in the service module](#actions) to 
 
 </div>
 
-### Deserialize and assign data { #deserialize-list }
+#### Deserialize and assign data { #deserialize-list }
 
 Now deserialize the list of records and append the records to the output parameter by doing the following:
 

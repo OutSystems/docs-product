@@ -41,6 +41,7 @@ Currently Integration Builder supports:
 * [Microsoft Dataverse integrations](connectors/integration-ms-dataverse.md)
 * [Microsoft Dynamics 365 integrations](connectors/integration-ms-dynamics.md)
 * [SharePoint Online integration](connectors/integration-ms-sharepoint.md)
+* External databases, check [Integrate with an external database using Integration Builder](../external-database/integrate-external-db-ib.md) for a list of supported databases.
 
 ## Start using Integration Builder
 

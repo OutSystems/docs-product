@@ -27,15 +27,15 @@ In Architecture Dashboard, for each Activation Code, you are allowed to have one
 
 No, this isn't currently planned.
 
-### Are there APIs to integrate Architecture Dashboard with deployment processes (LifeTime or external CI/CD)?
+### Are there APIs to integrate Architecture Dashboard with third-party tools?
 
-No, this isn't currently planned.
+Yes, you can use [Architecture Dashboard API](../../ref/apis/auto/architecture-dashboard-api.final.md) to integrate technical debt data with other technical debt and BI tools you already use. 
 
 ### Do I need to give access to the developers in LifeTime so they can associate their users with Architecture Dashboard?
 
 All developers have access to LifeTime, therefore the customer isn't "giving access just to use Architecture Dashboard". The reason why all developers always have to access LifeTime is that it's where the IT users are set up.
 
-The Architecture Dashboard Plugin doesn't require the user to have any particular permissions on LifeTime. So, any user that can login to LifeTime (all active users), can see and open Architecture Dashboard Plugin to associate his infrastructure user with Architecture Dashboard.
+The Architecture Dashboard Plugin doesn't require the user to have any particular permissions on LifeTime. So, any user that can login to LifeTime (all active users), can see and open Architecture Dashboard Plugin to associate their infrastructure user with Architecture Dashboard.
 
 ### Why can't I see any findings after selecting a specific team?
 
@@ -51,11 +51,9 @@ Snooze it with the "False Positive" reason and explain in the comments why you b
 
 ## Probes
 
-### How do I know if I need to update the Architecture Dashboard Probes?
+### How do I know if the Architecture Dashboard Probes need to be updated?
 
-If an environment has outdated probes, users with Full Control of the code analysis environment can update it autonomously see a warning message in Architecture Dashboard with a link to download the latest version.
-
-![](images/probes-update-message-ad.png)
+If an environment has outdated probes, Architecture Dashboard displays a warning message and users with [**Full Control** permissions assigned as a default role](how-works.md#update-probes) can update them autonomously. Users without Full Control permissions must contact their infrastructure administrator to update the Architecture Dashboard's probes. 
 
 Check out [how to update the Architecture Dashboard probes](how-update-probes.md).
 
@@ -116,7 +114,7 @@ In the event that a database restore is necessary, there will be some data loss.
  
 ## Security, legal and compliance - personal information {#personal-data-faq}
 
-### When a user agrees to share personal information is he doing it on behalf of all users of that infrastructure?
+### When a user agrees to share personal information are they doing it on behalf of all users of that infrastructure?
 
 No. Each user that wants to have access to Architecture Dashboard to manage the technical debt of their OutSystems infrastructure, will be required to give consent for OutSystems to collect the personal information that is described in the acceptance form, which includes name, username, and email address.
 

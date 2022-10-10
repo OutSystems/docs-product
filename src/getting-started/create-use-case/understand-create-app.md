@@ -42,7 +42,7 @@ The tutorials use the following common features to speed up the development of y
 
 * **Accelerators** - are building blocks that can combine widgets, OutSystems UI patterns, sample data, and logic. Accelerators help you quickly build an app. You can use these accelerators in other apps. Kep in mind that most accelerators are application use case specific.
   
-* **Screen Templates** - OutSystems provides built-in Screen Templates and sample data that enables you to view what your users see when using the app. he screens show you one way of solving a business problem using the sample data and logic. As you progress in this journey OutSystems teaches you how to create your own templates. To learn more about Screen Templates, click [here](../../develop/ui/screen-templates-create/intro.md).
+* **Screen Templates** - OutSystems provides built-in Screen Templates and sample data that enables you to view what your users see when using the app. The screens show you one way of solving a business problem using the sample data and logic. As you progress in this journey OutSystems teaches you how to create your own templates. To learn more about Screen Templates, click [here](../../develop/ui/screen-templates-create/intro.md).
 
 * **UI Patterns** - OutSystems has pre-built patterns you can use to implement common UI components. Patterns help you create a consistent look. To preview all the OutSystems UI Patterns, click [here](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternOverview). Widgets are also used in the UI and have a variety of uses such as input fields, radio buttons, and check boxes.
 

@@ -68,7 +68,7 @@ The **Purpose** you can configure for the environment is subject to the environm
 </caption>
 <tbody>
 <tr>
-<th style="width:450px;font-weight:bold;align:center;vertical-align:middle;">Feature / Purpose</th>
+<th style="font-weight:bold;align:center;vertical-align:middle;">Feature / Purpose</th>
 <th style="font-weight:bold;align:center;vertical-align:middle;">Development</th>
 <th style="font-weight:bold;align:center;vertical-align:middle;">Non-Production</th>
 <th style="font-weight:bold;align:center;vertical-align:middle;">Production</th>

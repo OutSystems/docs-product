@@ -18,7 +18,7 @@ The steps of setting up your environments with your company domain include:
 
 Setting up a different SSL domain changes the endpoint URL of the web services exposed by the environment, that will include the new domain instead. This change requires consumer applications to start using the new endpoint URLs.
 
-OutSystems applications consuming your [REST APIs](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/REST/Consume_REST_APIs/Configure_a_Consumed_REST_API_at_Runtime) or [SOAP Web Services](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Configure_a_SOAP_Web_Service_at_Runtime) can configure the new endpoint URLs at runtime in the Service Center console.
+OutSystems applications consuming your [REST APIs](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/REST/Consume_REST_APIs/Configure_a_Consumed_REST_API_at_Runtime) or [SOAP Web Services](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Configure_a_SOAP_Web_Service_at_Runtime) can configure the new endpoint URLs at runtime in Service Center.
 
 </div>
 
@@ -201,12 +201,15 @@ An example :
 
 <div class="warning" markdown="1">
 
+The DNS of the OutSystems servers redirects to a load balancer, with an address like *.elb.amazonaws.com. But the address of the load balancer is subject to change. You can't use the load balancer address in your DNS records.
+
 You should never create on your DNS an A record pointing to an OutSystems Cloud server's IP address.
 
 </div>
 
+The diagram below shows the correct configuration in green:
 
-
+![](images/custom-dns-name-cloud_0.png)
 
 ## Renew the certificate
 

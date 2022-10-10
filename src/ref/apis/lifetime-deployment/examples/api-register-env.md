@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 In this example we will perform the following generic steps using API calls:
 
-1. Get the **roles** defined in LifeTime _(optional if you already have this information)_;
+1. Get the **roles** defined in LifeTime _(optional if you already have this information)_.
 
 1. Register a new **environment** in LifeTime, defining the permission levels that each role will have over that environment.
 

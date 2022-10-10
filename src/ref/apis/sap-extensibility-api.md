@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # SAP Extensibility API
 
-<div class="info" markdown="1">
-
-Only applies to Windows-only Service Studio.
-
-</div>
-
 The OutSystems SAP Extensibility API is a .NET API that enables you to customize your connection and calls to SAP remote functions through an extension. See more about [how to develop an OutSystems extension](<../../extensibility-and-integration/integration-studio/getting-started/intro.md>).
 
 ## Required Files

@@ -10,7 +10,7 @@ app_type: mobile apps, reactive web apps
 
 <div class="info" markdown="1">
 
-Applies only to Mobile Apps and Reactive Web Apps
+Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
@@ -26,7 +26,7 @@ You can use the Master Detail Pattern to display a master list of items and thei
 
     ![](images/masterdetail-5-ss.png)
     
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -110,11 +110,11 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property | Description |
-|---|---|
-| LeftPercentage (Decimal): Optional | Set the LeftContent width using a percentage. Default value is 50%. |
-| OpenedOnPhone (Boolean): Optional |  Variable to hold if the detail is opened on a phone. Default value is False. |
-| Height (Text): Optional | Set the height of the widget (in pixels or %). By default, it is the height of the window, minus the title and header. |
+| Property                           | Description                                                                                                            |
+|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| LeftPercentage (Decimal): Optional | Set the LeftContent width using a percentage. Default value is 50%.                                                    |
+| OpenedOnPhone (Boolean): Optional  | Variable to hold if the detail is opened on a phone. Default value is False.                                           |
+| Height (Text): Optional            | Set the height of the widget (in pixels or %). By default, it is the height of the window, minus the title and header. |
 
 ## Compatibility with other patterns
 

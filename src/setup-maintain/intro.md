@@ -13,3 +13,4 @@ Find under this section articles about:
 * Setting up your OutSystems platform: for when you're installing a brand new infrastructure, adding more environments or front-end servers.
 * Upgrading the Platform Server to a new version.
 * Performing maintenance operations: For common operations during the lifecycle of an infrastructure.
+

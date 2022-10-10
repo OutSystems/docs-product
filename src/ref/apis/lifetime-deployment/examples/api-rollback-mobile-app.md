@@ -11,7 +11,7 @@ In this example we will rollback a mobile application deployed between the **Qua
 
 1. Get the **environment keys** of the source (Quality) and target (Production) environments _(optional if you already have this information)_.
 
-1. Get the **application key** of the application to rollback _(optional if you already have this information)_.
+1. Get the **application key** of the application to rollback _(optional if you already have this information)_. 
 
 1. Get the **application version key** of the application version to deploy, which is the mobile application previous version.
 

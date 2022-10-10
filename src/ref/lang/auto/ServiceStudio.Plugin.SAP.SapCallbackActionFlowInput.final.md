@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Input Parameter (SAP Callback)
 
-<div class="info" markdown="1">
-
-Only applies to Windows-only Service Studio.
-
-</div>
-
 Input parameter of a SAP Callback action (named FunctionName). Added automatically by Service Studio to the OnAfterCall and OnBeforeCall SAP Callback actions.  
 
 ## Properties

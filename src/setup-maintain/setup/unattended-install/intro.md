@@ -14,7 +14,7 @@ This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available
 
 </div>
 
-This document describes the unattended or automated process of installing or upgrading the OutSystems Platform Server in application environments, and adding a new front-end server.
+This document describes the unattended or automated process of installing or upgrading the OutSystems Platform Server in application environments and adding a new front-end server.
 
 Additionally, it describes how to perform the unattended installation or upgrade of the LifeTime Management Console.
 
@@ -25,7 +25,7 @@ OutSystems allows performing silent or automated installations and upgrades of t
 The process for installing or upgrading the OutSystems Platform Server component in unattended mode involves the following high-level steps:
 
 1. Install the OutSystems platform prerequisites
-1. Install the Development Environment binaries
+1. Install Service Studio and Integration Studio binaries
 1. Install or upgrade the Platform Server binaries
 1. Only for Oracle on first install: create the database users
 1. Update the `server.hsconf` configuration file
@@ -35,7 +35,7 @@ The process for installing or upgrading the OutSystems Platform Server component
 
 The following sections present detailed instructions on how to install or upgrade the OutSystems Platform Server component of your application environments in unattended mode, and add front-end servers.
 
-The [last section](#lifetime) explains how to use a similar process to execute the unattended installation or upgrade of the LifeTime Management Console environment.
+The [LifeTime unattended installation and upgrade](#lifetime) explains how to use a similar process to execute the unattended installation or upgrade of the LifeTime Management Console environment.
 
 ## Before you start
 
@@ -43,13 +43,20 @@ The [last section](#lifetime) explains how to use a similar process to execute t
 
 * Download the [Installation Checklist](http://www.outsystems.com/goto/checklist-11) from OutSystems website.
 
-* The default paths used in the procedures below are the following:
+* If you are installing or upgrading to OutSystems Platform Server 11.7.1, use the following default paths:
 
-    * `<development_environment_path>`= C:\Program Files\OutSystems\Development Environment 11
-    * `<platform_path>`= C:\Program Files\OutSystems\Platform Server
-    * `<outsystems_common_path>`= C:\Program Files\Common Files\OutSystems\11.0
+    * ``<service_studio_path>= C:\Program Files\OutSystems\Service Studio 11``
+    * ``<integration_studio_path>= C:\Program Files\OutSystems\Integration Studio``
+    * ``<platform_path>= C:\Program Files\OutSystems\Platform Serve``
+    * ``<outsystems_common_path>= C:\Program Files\Common Files\OutSystems\11.0``
 
-    Adjust them if necessary.
+    **Note** :If you previously had a Development Environment installed (in C:\Program Files\OutSystems\Development Environment 11), uninstall it to avoid installing Service Studio and Integration under the ``development_environment_path``.
+
+* If you are installing or upgrading to  OutSystems Platform Server earlier than version 11.17.0, use the following default paths:
+
+    * ``<development_environment_path>= C:\Program Files\OutSystems\Development Environment 11``
+    * ``<platform_path>= C:\Program Files\OutSystems\Platform Server``
+    * ``<outsystems_common_path>= C:\Program Files\Common Files\OutSystems\11.0``
 
 ## First install { #first-install }
 
@@ -69,15 +76,19 @@ The automatic prerequisites installation has a timeout of 15 minutes. This ensur
 
 </div>
 
-### 2. Install the Development Environment binaries
+### 2. Install the Service Studio and Integration Studio binaries
 
-Run the OutSystems Development Environment installation package as follows:
+* If you are installing or upgrading to OutSystems Platform Server 11.17.1 or later:
 
-```
-DevelopmentEnvironment-<version>.exe /S [/D=<development_environment_path>]
-```
+    * Run the OutSystems Service Studio installation executable as follows: ``ServiceStudio-<version>.exe /S [/D=<Service_Studio_path>]``
 
-The optional `/D` switch specifies the path where the Development Environment is installed. If this switch is provided, it must be the last one in the command line and the provided path must not contain quotes (`""`) even if the path contains spaces.
+    * Run the OutSystems Integration Studio installation executable as follows: ``IntegrationStudio-<version>.exe/S[/D=<Integration_Studio_path>]``
+
+* If you are installing or upgrading to OutSystems Platform Server 11.7.0 or earlier,  run the OutSystems Development Environment installation package as follows:
+
+    * ``DevelopmentEnvironment-<version>.exe /S [/D=<development_environment_path>]``
+
+The optional `/D` switch specifies the path where the Service Studio and Integration Studio is installed. If this switch is provided, it must be the last one in the command line and the provided path must not contain quotes (`""`) even if the path contains spaces.
 
 ### 3. Install the Platform Server binaries
 
@@ -163,19 +174,25 @@ If you prefer to install the prerequisites manually, follow the instructions in 
 
 The installation package, by default, automatically downloads the required binaries for installing the prerequisites from the official Microsoft sources. However, you can also perform a fully [offline installation](<../intro.md#offline-installation>).
 
-The automatic prerequisites installation has a timeout of 15 minutes. This ensures that any unexpected occurrences during this process (e.g. downloading the prerequisites binaries taking a very long time) do not lock an automated unattended installation indefinitely.
+The automatic prerequisites installation has a timeout of 15 minutes. This ensures that any unexpected occurrences during this process (for example, downloading the prerequisites binaries taking a very long time) do not lock an automated unattended installation indefinitely.
 
 </div>
 
-### 2. Install the Development Environment binaries
+### 2. Install Service Studio and Integration Studio binaries
 
-If your Development Environment is no longer compatible with the Platform Server you are about to install, run the OutSystems Development Environment installation package as follows:
+* If you are installing or upgrading to OutSystems Platform Server 11.17.1 or later:
 
-```
-DevelopmentEnvironment-<version>.exe /S [/D=<development_environment_path>]
-```
+    * Run the OutSystems Service Studio installation executable as follows: ``ServiceStudio-<version>.exe /S [/D=<Service_Studio_path>]``
+    * Run the OutSystems Integration Studio installation executable as follows: ``IntegrationStudio-<version>.exe /S [/D=<Integration_Studio_path>``
 
-The optional `/D` switch specifies the path where the Development Environment is installed. If this switch is provided, it must be the last one in the command line and the provided path must not contain quotes (`""`) even if the path contains spaces.
+    **Note**: If you previously had a Development Environment installed (in C:\Program Files\OutSystems\Development Environment 11),  uninstall it to avoid installing Service Studio and Integration under the ``development_environment_path``.
+
+* If you are installing or upgrading to OutSystems Platform Server 11.17.0 or earlier, run the OutSystems Development Environment installation package as follows:
+
+
+    * ``DevelopmentEnvironment-<version>.exe /S [/D=<development_environment_path>]``
+
+    The optional `/D` switch specifies the path where the  Service Studio and Integration Studio is installed. If this switch is provided, it must be the last one in the command line and the provided path must not contain quotes (`""`) even if the path contains spaces.
 
 ### 3. Upgrade the Platform Server binaries
 

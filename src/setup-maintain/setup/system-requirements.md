@@ -8,6 +8,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # OutSystems system requirements
 
+<div class="info" markdown="1">
+
+This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/OutSystems_system_requirements)&#8195;[9.1](https://www.outsystems.com/Downloads/ScreenDetails.aspx?MajorVersion=9&ReleaseId=18346&ComponentName=Platform+Server)&#8195;[9.0](https://www.outsystems.com/Downloads/ScreenDetails.aspx?MajorVersion=9&ReleaseId=19270&ComponentName=Platform+Server)
+
+</div>
+
 Before installing OutSystems on-premises, check its hardware and software requirements. Once you're ready to start the installation, head to [Setting Up OutSystems](intro.md).
 
 ## Platform Server
@@ -37,7 +43,7 @@ Future revisions of OutSystems may require the installation of an update within 
 
 ### Database Management System
 
-Keep in mind that you must use the same flavour of database engine for the 3 databases used by the platform (platform and apps, logs, session). Combinations of database engines, for example, using SQL Server for the platform database and Azure SQL database for the logs and or session databases (or any other combination), are not supported.
+Keep in mind that you must use the same flavor of database engine for the 3 databases used by the platform (platform and apps, logs, session). Combinations of database engines, for example, using SQL Server for the platform database and Azure SQL database for the logs and or session databases (or any other combination), are not supported.
 
 * Microsoft SQL Server 2019 and compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
 * Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
@@ -58,7 +64,7 @@ Apart from standard Oracle Database setups, OutSystems Platform 8.0 and onwards 
 
 * Microsoft .NET Framework 4.8 (supported since Platform Server 11 – Release Oct.2019 CP2) or Microsoft .NET Framework 4.7.2
 * Microsoft Build Tools 2015
-* .NET Core 3.1 Runtime & Hosting Bundle for Windows
+* .NET 6.0 Runtime & Hosting Bundle for Windows
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 
@@ -94,7 +100,7 @@ OutSystems supports Microsoft SQL Server 2019 and compatibility level 150 (since
 
 Example of a DB instance class fulfilling these requirements: "db.t2.medium".
 
-Oracle 18c on Amazon RDS is supported since Platform Server 11 – Release Oct.2019 CP2.  
+Oracle 18c on Amazon RDS is supported since Platform Server 11 – Release Oct.2019 CP2.
 Oracle 19c on Amazon RDS is supported since Platform Server 11 – Release Oct.2019 CP3.
 
 Check [Amazon's DB Instance Class](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html) topic for more information on the available DB instance classes. Be sure to also check [Amazon RDS System Requirements](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) to learn about Amazon RDS limitations.
@@ -103,9 +109,10 @@ Check [Amazon's DB Instance Class](https://docs.aws.amazon.com/AmazonRDS/latest/
 
 OutSystems supports Microsoft Azure SQL Database V12 with the following considerations:
 
+* The database service tier must be at least "S3".
 * The MDC (Multiple Database Catalogs) feature is not supported.
 * Connecting to Azure SQL Database using Windows Authentication is not supported.
-* The database service tier must be at least "S3".
+* Private endpoints are not supported, due to a limitation on how Microsoft implements them.
 * Currently, Azure SQL Database does not support customizing the timezone from UTC.
 
 OutSystems also supports SQL Server running on an Azure Virtual Machine.
@@ -170,6 +177,12 @@ The use of double-byte characters with DB2 databases is not supported.
 
 </div>
 
+### MongoDB Database
+
+* MongoDB Atlas and on-premises
+* MongoDB 4.X
+* MongoDB 5.X
+
 ### SAP
 
 * SAP ERP R/3 4.6 or higher
@@ -181,7 +194,7 @@ The use of double-byte characters with DB2 databases is not supported.
 To develop your applications using OutSystems, developers need to install **Service Studio** and **Integration Studio** development tools on their desktops.
 The latest version of the development tools are available in the [OutSystems downloads page](https://www.outsystems.com/Downloads/search/Development+Environment/11/).
 
-### Service Studio 
+### Service Studio
 
 Before setting up Service Studio make sure that your computer meets the following requirements:
 
@@ -203,6 +216,7 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 
 * macOS Catalina
 * macOS Big Sur
+* macOS Monterrey
 
 **Windows:**
 
@@ -213,18 +227,14 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 
 #### Required Software
 
-* To perform client-side debugging in Service Studio using a desktop browser:  
+* To perform client-side debugging in Service Studio using a desktop browser:
     Google Chrome version 54 or later.
 
-* To perform client-side debugging on an Android mobile device:  
+* To perform client-side debugging on an Android mobile device:
     Android device drivers, if the device is not recognized automatically.
 
-* To perform client-side debugging on an iOS mobile device:  
+* To perform client-side debugging on an iOS mobile device:
     iTunes 12.1.3 or later.
-
-#### Network
-
-You need an internet connection to install Service Studio with a minimum speed of 1 Mbps for both downloading and uploading. You need an internet connection even when installing Service Studio on a virtual machine.
 
 ### Integration Studio
 
@@ -254,14 +264,8 @@ For the versions above, OutSystems only supports Windows editions that are [supp
 
 * Microsoft .NET Framework 4.7.2 (or higher).
 
-* To integrate with external systems using Integration Studio to edit the source code of Extension Actions:  
+* To integrate with external systems using Integration Studio to edit the source code of Extension Actions:
     Visual Studio 2015, Visual Studio 2017, or Visual Studio 2019 (since Development Environment 11.6.7).
-
-#### Required Network Connection
-
-Minimum speed of 1 Mbps for both downloading and uploading.
-
-These requirements apply, even when installing the development tools on a virtual machine.
 
 ## End User Requirements
 

@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # SAP Connection
 
-<div class="info" markdown="1">
-
-Only applies to Windows-only Service Studio.
-
-</div>
-
 Defines a connection to a SAP system.  
 
 ## Properties

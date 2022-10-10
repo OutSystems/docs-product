@@ -10,7 +10,7 @@ app_type: mobile apps, reactive web apps
 
 <div class="info" markdown="1">
 
-Applies only to Mobile Apps and Reactive Web Apps
+Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
@@ -26,7 +26,7 @@ You can use the Floating Content UI Pattern to display content on top of other s
 
     ![](<images/floatingcontent-2-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -60,10 +60,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 ### Floating Content
 
-| **Property** |  **Description** |
-|---|---|
-| Position (Position Identifier): Mandatory | The position the floating content is displayed on screen. |
-| UseFullHeight (Boolean): Optional| If True, the widget takes up the full height of the screen. If False, the widget doesn't take up the full height of the screen. This is the default.   |
-| UseFullWidth (Boolean): Optional| If True, the widget takes up the full width of the screen. If False, the widget doesn't take up the full width of the screen. This is the default. |
-| UseMargin (Boolean): Optional| If True, a margin is applied to the widget. This is the default. If False, there is no margin applied to the widget. |
-| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet]https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| **Property**                              | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Position (Position Identifier): Mandatory | The position the floating content is displayed on screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| UseFullHeight (Boolean): Optional         | If True, the widget takes up the full height of the screen. If False, the widget doesn't take up the full height of the screen. This is the default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| UseFullWidth (Boolean): Optional          | If True, the widget takes up the full width of the screen. If False, the widget doesn't take up the full width of the screen. This is the default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| UseMargin (Boolean): Optional             | If True, a margin is applied to the widget. This is the default. If False, there is no margin applied to the widget.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ExtendedClass (Text): Optional            | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet]https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

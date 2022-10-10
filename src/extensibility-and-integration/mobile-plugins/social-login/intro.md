@@ -6,7 +6,7 @@ guid: 834dcc40-0b87-4161-bcd0-db32053044c7
 app_type: mobile apps
 ---
 
-# Social login plugin
+# Social login Plugin
 
 <div class="info" markdown="1">
 
@@ -170,6 +170,10 @@ To enable social logins in your app's login screen, do the following:
     Google | iOS
     Facebook | Android, iOS
     LinkedIn | Android, iOS
+
+    * Note that the **Target Directory** parameter of the **Resource** must be filled with `json-config`.
+    
+    ![SocialLoginsConfigurations.json resource with Target Directory set as json-config](images/social-config-ss.png)
 
     * Get the JSON configuration file, **SocialLoginsConfigurations.json**, from the **App Details** on your **Social Login Configurator**.
 

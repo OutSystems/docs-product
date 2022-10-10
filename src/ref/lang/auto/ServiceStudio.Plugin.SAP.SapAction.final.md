@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # SAP Remote Function
 
-<div class="info" markdown="1">
-
-Only applies to Windows-only Service Studio.
-
-</div>
-
 Imported SAP remote function used to retrieve data.  
 
 ## Properties

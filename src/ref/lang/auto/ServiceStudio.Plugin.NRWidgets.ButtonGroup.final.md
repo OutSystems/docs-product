@@ -12,7 +12,7 @@ app_type: mobile apps, reactive web apps
 
 <div class="info" markdown="1">
 
-Applies only to Mobile Apps and Reactive Web Apps
+Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
@@ -161,4 +161,13 @@ Set of buttons from which the user can select a single option.
 </tr>
 </tbody>
 </table>
+
+## Note
+
+<p>When used inside List Records or Table Records, you must manually add the attribute name for each radio button that is part of a Button Group so that the platform binds them correctly:</p> 
+<br/>
+
+![RadioButton2022-08-01_17-45-57](https://user-images.githubusercontent.com/29493222/182202878-60b13063-fa8b-4c14-b61f-8447b1f1e9bd.png)
+
+
 

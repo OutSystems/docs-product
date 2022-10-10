@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Output Parameter (SAP Remote Function)
 
-<div class="info" markdown="1">
-
-Only applies to Windows-only Service Studio.
-
-</div>
-
 Output parameter of an imported SAP remote function.  
 
 ## Properties

@@ -98,7 +98,7 @@ In the case of REST APIs, the OnBeforeRequest event action available at the cons
 
 * For service actions, because they behave like public actions at development time, the wrapper should implement logic to return the output expected for the test instead of executing the service action call.
 
-For more detail on mocking strategies, read [Mock Services for Integration Points](https://success.outsystems.com/Documentation/Best_Practices/Automated_Testing_Strategy#Mocking_Services_for_Integrations_Points).
+For more detail on mocking strategies, read [Mock Services for Integration Points](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Automated_Testing_Strategy#mocking-services-for-integrations-points).
 
 ## UI Simulation
 

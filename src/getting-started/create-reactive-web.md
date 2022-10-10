@@ -19,11 +19,11 @@ Developing Reactive Web Apps with OutSystems is fast. In this example, we will u
 This is the overview of what we are about to do:
 
 1. Create a Reactive Web App, name it, and choose the primary color.
-2. Automatically create a database model by importing data from Excel.
-3. Create a Screen that lists the data from the database.
-4. Create a Screen to add and update records.
-5. Implement functionality to delete records.
-6. Test the application in a browser.
+1. Automatically create a database model by importing data from Excel.
+1. Create a Screen that lists the data from the database.
+1. Create a Screen to add and update records.
+1. Implement functionality to delete records.
+1. Test the application in a browser.
 
 ## Create a Reactive Web App { #new-app }
 

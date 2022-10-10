@@ -56,11 +56,13 @@ The following are the configurations that do not depend on the database manageme
 |Key|Value|Description|
 |---|-----|-----------|
 |AdminUser|Name of the owner of the OutSystems metamodel tables.||
-|AdminPassword|Password of the owner of the OutSystems metamodel tables.|Configuration Tool will read the clear text password and save an encrypted version.|
+|AdminPassword*|Password of the owner of the OutSystems metamodel tables.|Configuration Tool will read the clear text password and save an encrypted version.|
 |RuntimeUser|Name of the owner of the tables created in the Development Environment.||
-|RuntimePassword|Password of the owner of the tables created in the Development Environment.|Configuration Tool will read the clear text password and save an encrypted version.|
+|RuntimePassword*|Password of the owner of the tables created in the Development Environment.|Configuration Tool will read the clear text password and save an encrypted version.|
 |RuntimeAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems applications.|
 |ServicesAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems services.|
+
+(*) Ignored for systems configured with SQL Server as the platform database, when using Windows Authentication.
 
 ### SQL Server/Azure SQL Database
 
@@ -114,10 +116,12 @@ The following are the configurations that do not depend on the database manageme
 |Key|Value|Description|
 |---|-----|-----------|
 |AdminUser|Name of the owner of the OutSystems Logging metamodel tables.||
-|AdminPassword|Password of the owner of the OutSystems Logging metamodel tables.|Configuration Tool will read the clear text password and save an encrypted version.|
+|AdminPassword*|Password of the owner of the OutSystems Logging metamodel tables.|Configuration Tool will read the clear text password and save an encrypted version.|
 |RuntimeUser|Name of the user used to access logs at applications runtime.||
-|RuntimePassword|Password of the user used to access logs at applications runtime.|Configuration Tool will read the clear text password and save an encrypted version.|
+|RuntimePassword*|Password of the user used to access logs at applications runtime.|Configuration Tool will read the clear text password and save an encrypted version.|
 |RuntimeAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems applications.|
+
+(*) Ignored for systems configured with SQL Server as the platform database, when using Windows Authentication.
 
 ### SQL Server/Azure SQL Database
 
@@ -172,9 +176,11 @@ The following are the configurations that do not depend on the database manageme
 |Key|Value|Description|
 |---|-----|-----------|
 |SessionUser|Name of the owner of the OutSystems session metamodel tables.||
-|SessionPassword|Password of the owner of the OutSystems session metamodel tables.|Configuration Tool will read the clear text password and save an encrypted version.|
+|SessionPassword*|Password of the owner of the OutSystems session metamodel tables.|Configuration Tool will read the clear text password and save an encrypted version.|
 |SessionAdvancedSettings|Settings in ADO.NET format to be appended to the connection string for OutSystems services.|Allows you to use a specific connection string for the OutSystems applications.|
 |DeleteExpiredSessionsAvoidLockRowCount|Numeric value.<br/>**Internal**, do not customize.|
+
+(*) Ignored for systems configured with SQL Server as the platform database, when using Windows Authentication.
 
 ### SQL Server/Azure SQL Database 
 The following are the configurations that are specific to SQL Server and Azure SQL Database:

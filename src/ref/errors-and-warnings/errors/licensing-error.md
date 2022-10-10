@@ -42,7 +42,7 @@ The `Licensing` error is issued in the following situation:
 
     The Platform server you're using has exceeded the licensed limit of one or more features. You won't be able to use any of the licensed features until the situation is solved.
 
-    Check with your Service Center administrator for information about which feature(s) exceeded their licensed usage limit. This may help you to do your share in cleaning up old or obsolete information like users or modules. Otherwise, ask him/her to change the license contract.
+    Check with your Service Center administrator for information about which feature(s) exceeded their licensed usage limit. This may help you to do your share in cleaning up old or obsolete information like users or modules. Otherwise, ask them to change the license contract.
 
 * `Cannot perform the operation. Either this server license has expired or it is consuming more resources than allowed`
 
@@ -51,7 +51,7 @@ The `Licensing` error is issued in the following situation:
     Contact your Platform Server administrator to do one of the following:
     
     * Request a new license from OutSystems.
-    * Check for information about which feature(s) exceeded their licensed usage limit. This may help you to do your share in cleaning up old or obsolete information like users or modules. Otherwise, ask him/her to change the license contract.
+    * Check for information about which feature(s) exceeded their licensed usage limit. This may help you to do your share in cleaning up old or obsolete information like users or modules. Otherwise, ask them to change the license contract.
 
 * `You cannot publish more modules because you reached the limit of <number> Software Units that this server license allows`
 

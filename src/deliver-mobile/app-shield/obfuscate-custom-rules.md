@@ -42,7 +42,8 @@ At a high-level, you:
 
 To begin, use your favorite editor to create your rules. Or try our editor which has a validation feature for custom obfuscation rules. For more information, see the [Obfuscation Helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/).
 
-Be sure to include [OutSystems obfuscation base rules](files/default-obfuscation-rules.txt). Base rules are a set of mandatory obfuscation rules that guarantee that the obfuscation process correctly obfuscates native code from the shell and OS-Supported plugins. When you're defining custom rules for non-supported plugins, you must include OutSystems Obfuscation rules.
+Be sure to include [OutSystems obfuscation base rules](
+resources/default-obfuscation-rules.txt). Base rules are a set of mandatory obfuscation rules that guarantee that the obfuscation process correctly obfuscates native code from the shell and OS-Supported plugins. When you're defining custom rules for non-supported plugins, you must include OutSystems Obfuscation rules.
 
 ### OutSystems syntax for custom obfuscation rules
 

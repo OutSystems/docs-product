@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Structure (SAP Remote Function)
 
-<div class="info" markdown="1">
-
-Only applies to Windows-only Service Studio.
-
-</div>
-
 Structure used in input and output arguments of SAP remote functions.  
 
 ## Properties

@@ -6,7 +6,7 @@ guid: 834dcc40-0b87-4161-bcd0-db32053044c7
 app_type: mobile apps
 ---
 
-# Social login plugin
+# Social login Plugin
 
 <div class="info" markdown="1">
 

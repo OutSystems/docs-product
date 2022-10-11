@@ -70,7 +70,13 @@ With the 2-stage deployment active, we can safely start deploying the applicatio
 
 1. Choose **Continue Later** to finish the first stage of the deployment.  
 
-    ![](images/deploy-in-a-short-deployment-window-7.png)
+    ![](images/deploy-in-a-short-deployment-window-7.png)  
+
+<div class="warning" markdown="1">
+
+The solution will automatically be deleted if it's been created for longer than 96h. This can lead to errors when trying to continue the deployment.
+
+</div>
 
 ### Do the Second Stage of the Deployment
 

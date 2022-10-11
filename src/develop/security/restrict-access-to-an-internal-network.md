@@ -7,6 +7,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Restrict Access to an Internal Network
 
+<div class="info" markdown="1">
+
+To effectively use this feature, you need to [configure your environment Internal Network](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Secure_the_Applications/Configure_an_Internal_Network) in Service Center.
+</div>
 
 You can tighten the security of your applications, or part of them, by only allowing the access to end users who have authenticated themselves in an IP belonging to an internal network.
 

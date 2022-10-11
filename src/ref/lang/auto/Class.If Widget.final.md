@@ -2,19 +2,13 @@
 kinds: ServiceStudio.Model.NRWebWidgets+If+Kind, ServiceStudio.Model.WebWidgets+If+Kind, ServiceStudio.Model.NRWebWidgets+ReferenceIf+Kind, ServiceStudio.Model.WebWidgets+ReferenceIf+Kind
 helpids: 4029
 summary: Reference information on the If widget for displaying content on the screen based on a condition.
-tags: runtime-traditionalweb; outsystems-designing-screens; reference; designing-screens; if-widget
+tags: outsystems-designing-screens; reference; designing-screens; if-widget
 locale: en-us
 guid: 0db36704-5f51-4287-8d29-771859e6e7f3
-app_type: traditional web apps
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # If Widget
-
-<div class="info" markdown="1">
-
-Applies only to Traditional Web Apps.
-
-</div>
 
 Allows you to control the content that is displayed in the screen based on a condition.
 

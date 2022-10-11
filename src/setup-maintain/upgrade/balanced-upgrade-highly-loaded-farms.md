@@ -7,6 +7,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Balanced Platform upgrade on highly loaded OutSystems farms
 
+<div class="info" markdown="1">
+
+This guide applies only to self-managed installations. It doesn't apply to OutSystems Cloud, where OutSystems provides the load balancing mechanism. 
+
+</div>
+
 <div class="warning" markdown="1">
 
 **This guide applies exclusively to Platform Server upgrades**. If you are also deploying application changes while performing a Platform Server upgrade, you will need to take extra steps which are outside the scope of this guide. For more information, see [Balanced Application Deployment on Highly Loaded OutSystems Farms](../../managing-the-applications-lifecycle/deploy-applications/balanced-app-deploy.md).

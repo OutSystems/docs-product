@@ -26,7 +26,7 @@ The creation of an integration with an external database involves the following 
 
 The following sections go throught each one of these general steps in detail.
 
-## Define a connection to the external database
+## Define a connection to the external database { #define-connection }
 
 To use tables and views from external databases, create a database connection: 
 
@@ -45,6 +45,15 @@ To use tables and views from external databases, create a database connection:
     ![](images/connect-external-db-create-connection-sc.png?width=1000)
 
     If you need to fine-tune the database connection, choose the option **Advanced configuration**. This allows you to define your own connection string.
+
+    <div class="info" markdown="1">
+
+    If you are defining a connection to an external Oracle database which NLS_LANGUAGE parameter is different from `AMERICAN`, make sure you set the **NLS_LANGUAGE** field to the same value set in the database. This will prevent runtime issues related to date and number formats.
+
+    To get the value of the NLS_LANGUAGE parameter set in your external Oracle database you can run the following script:
+        `select value from nls_database_parameters where parameter = 'NLS_LANGUAGE';`
+
+    </div>
 
 1. Click **Test Connection** to check if the connection is working correctly.
 

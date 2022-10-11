@@ -5,6 +5,7 @@ locale: en-us
 guid: 617e2ef6-9fca-4cf0-9840-a0277670083e
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
+
 # Upgrade OutSystems platform
 
 <div class="info" markdown="1">
@@ -217,7 +218,7 @@ Once the modules preparation step finishes, you are able to [publish your applic
 
 ### Step 2. Upgrade the development tools { #upgrade-dev-tools }
 
-If you haven't already, download and install the correspondent version of the [Development Environment](http://www.outsystems.com/home/downloads/) (Service Studio and Integration Studio) in the workstations of the developers publishing applications in the environment.
+If you haven't already, download and install the corresponding version of the [Service Studio and Integration Studio](http://www.outsystems.com/home/downloads/) (Service Studio and Integration Studio) in the workstations of the developers publishing applications in the environment.
 
 ### Step 3. Upgrade applications to the new version { #upgrade-apps }
 

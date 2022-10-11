@@ -255,6 +255,11 @@
                     - href: develop/ui/patterns/mobile/utilities/swipeevents.md
                     - href: develop/ui/patterns/mobile/utilities/touchevents.md
                 - href: develop/ui/patterns/mobile/public-actions.md
+            - topics:
+                - href: develop/ui/patterns/mobile/ui-pattern-extensibility/intro.md
+                - topics:
+                    - href: develop/ui/patterns/mobile/ui-pattern-extensibility/ext-provider-client-actions.md
+                    - href: develop/ui/patterns/mobile/ui-pattern-extensibility/ext-provider-instance-java.md
             - href: develop/ui/patterns/web/intro.md
             - topics:
                 - href: develop/ui/patterns/web/content/intro.md
@@ -753,6 +758,7 @@
             - href: extensibility-and-integration/rest/expose-rest-apis/throw-a-custom-error-in-an-exposed-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/document-an-exposed-rest-api.md
             - href: extensibility-and-integration/rest/expose-rest-apis/patch-method.md
+            - href: extensibility-and-integration/rest/expose-rest-apis/redact-info-from-logs.md
         - href: extensibility-and-integration/rest/troubleshoot-a-rest-api.md
 
     #SOAP
@@ -962,6 +968,7 @@
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
                 - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/tech-debt-formula.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-ignore-modules.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-module-classification.md

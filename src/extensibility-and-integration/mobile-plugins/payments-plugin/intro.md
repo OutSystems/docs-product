@@ -6,7 +6,7 @@ guid: 4a79c8ee-2a07-11ed-882b-00155da4f25e
 app_type: mobile apps
 ---
 
-# Payments plugin
+# Payments Plugin
 
 <div class="info" markdown="1">
 

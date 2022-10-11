@@ -14,7 +14,6 @@ OutSystems lets you build great and secure web and mobile apps. This is what you
 2. Install [Development Environment](https://www.outsystems.com/home/downloads).
 3. Start **Service Studio** and see the section about [your first app](#your-first-app).
 
-
 ## Your first app 
 
 To create your first app in Service Studio you can: 
@@ -44,7 +43,7 @@ You can also use OutSystems builder to prototype the front end of mobile apps or
 
 ## Extensions
 
-With Development Environment you also get Integration Studio for writing extensions in C#. This lets you expand the functionality of your apps and to work with any existing systems you may have.
+With Integration Studio you can write extensions in C#. This lets you expand the functionality of your apps and to work with any existing systems you may have.
 
 * [Integration Studio](../ref/integration-studio/workspace.md)
 * [Writing extensions](../extensibility-and-integration/integration-studio/getting-started/intro.md)

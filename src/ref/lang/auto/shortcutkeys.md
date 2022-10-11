@@ -37,12 +37,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 |Windows|macOS|Description|
 |---|---|---|
 |F5|1-Click Publish|
-|Ctrl+H|F5|Hide/show warning in TrueChange tab|
+|Ctrl+H|Shift+Cmd+H|ide/show warning in TrueChange tab|
 |Ctrl+J||Enable/disable Styles Editor|
 |Ctrl+L|Cmd+R|Refresh Aggregate's data preview|
-|Ctrl+M||Compare and Merge module with published version|
+|Ctrl+M|Shift+Cmd+M|Compare and Merge module with published version|
 |Ctrl+N|Cmd+N|Create new element|
-|Ctrl+Q||Open Manage Dependencies window|
+|Ctrl+Q|Cmd+D|Open Manage Dependencies window|
 |Ctrl+Shift+K||Open list of shortcuts|
 |Ctrl+D||Delete Extended Property|
 
@@ -59,9 +59,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 |Ctrl+3|Cmd+3|Move to the Logic tab|
 |Ctrl+4|Cmd+4|Move to the Data tab|
 |Ctrl+Shift+T|Shift+Cmd+T|Open the last closed window tab|
-|Ctrl+G||Show/hide development tabs|
-|Ctrl+W|Show Widget Tree|
-|Ctrl+Period|Ctrl+Period|Select the active element in the elements tree|
+|Ctrl+G|Shift+Cmd+D|Show/hide development tabs|
+|Ctrl+W|Cmd+T|Show Widget Tree|
+|Ctrl+Period|Cmd.|Select the active element in the elements tree|
 |Ctrl+Click|Cmd+Click|Navigate to the target element in the Expression Editor|
 
 ## Search
@@ -73,10 +73,10 @@ app_type: traditional web apps, mobile apps, reactive web apps
 |Ctrl+R|Alt+Cmd+F|Open Find and Replace window|
 |F12|Cmd+E|Find usages of the selected element|
 |Ctrl+F12|Alt+Cmd+E|Find usages of the selected element in all modules|
-|Ctrl+H||Replace all text occurrences or element usages|
+|Ctrl+H|Shift+Cmd+H|Replace all text occurrences or element usages|
 |F3|Cmd+G or F3|Go to next text occurrence or element usage|
 |Shift+F3|Shift+Cmd+G or Shift+F3|Go to previous text occurrence or element usage|
-|Ctrl+E||Search widgets or blocks in the Toolbox|
+|Ctrl+E|Shift+Cmd+E|Search widgets or blocks in the Toolbox|
 
 ## Screen Editor
 

@@ -144,3 +144,11 @@ When the preparation of a group completes, you can resume the development for th
 If the new progressive modules preparation hasn’t been enabled in your environment yet, you must wait until the whole preparation step finishes to start using the modules.
 
 After the modules preparation finishes, you can access the latest preparation report going to the Service Center's screen `https://<your_environment>/ServiceCenter/PrepareModules.aspx`.
+
+## Known issues with Modules Preparation { #known-issues }
+
+If you are directly upgrading from Platform Server 11.10.0 or earlier to a version that includes the Flexible Upgrades feature (from version 11.12.0 onwards), we recommend that you publish all your applications instead. 
+
+This is due to an issue found when running applications compiled in previous versions and are using new configurations added in Platform Server 11.10.0. This combination has proven to cause High CPU usage on Frontends until all the applications are republished in the new version.
+
+As a workaround, publishing all your applications is recommended.

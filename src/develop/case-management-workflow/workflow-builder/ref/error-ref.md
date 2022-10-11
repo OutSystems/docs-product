@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 This document contains a reference to errors that users may face in [Workflow Builder](http://workflowbuilder.outsystems.com/).
 
-## Personal environment error
+## Personal environment error 
 
 This error occurs if you try to connect Workflow Builder to a Personal Environment.
 
@@ -18,7 +18,7 @@ You need to use the OutSystems **Basic**, **Standard**, or **Enterprise** editio
 
 For more information, refer to the [Workflow Builder Prerequisites](../how-setup.md#prerequisites).
 
-![Platform environment error](../images/wfb-error-environment.png)
+![Platform environment error](images/wfb-error-environment.png)
 
 ## Platform version error
 
@@ -28,7 +28,7 @@ Refer to the [Workflow Builder Prerequisites](../how-setup.md#prerequisites) for
 
 Learn how to check the [Platform Server version of an Environment](https://success.outsystems.com/Documentation/Case_Management/How_to_check_the_Platform_Server_version_installed_in_an_Environment).
 
-![Platform version error](../images/wfb-error-platform.png)
+![Platform version error](images/wfb-error-platform.png)
 
 ## Publish errors
 
@@ -44,24 +44,24 @@ If your environment uses multiple database catalogs and schemas, you won't be ab
 If you are an IT administrator, you can see a link provided to download the application package (.OAP). Click it, and then open and install the application package in Service Studio.
 After that, you are able to publish new versions of the app in Workflow Builder.
 
-![Publish failed error with download link](../images/wfb-error-publish-failed-download-oap.png)
+![Publish failed error with download link](images/wfb-error-publish-failed-download-oap.png)
 
 </div>
 
-![Publish failed error](../images/wfb-error-publish.png)
+![Publish failed error](images/wfb-error-publish.png)
 
 ### Publish failed error - issue with the app generation
 
 You may get this error because there was an error with the app generation that OutSystems must solve. Report the issue to the OutSystems support.
 
-![Publish failed error](../images/wfb-error-publish-failed.png)
+![Publish failed error](images/wfb-error-publish-failed.png)
 
 ### No permission to publish error
 
 This error occurs if you don’t have permissions to publish a specific module used by an OutSystems Entity, Case Management Framework, or system modules.
 An IT Administrator needs to grant you permission to publish the modules displayed in the error message.
 
-![No permission to publish error](../images/wfb-error-pubish-permission.png)
+![No permission to publish error](images/wfb-error-pubish-permission.png)
 
 ### Publish failed - module not found
 
@@ -69,7 +69,7 @@ This error occurs if Workflow Builder can't find a module used in one or more fi
 
 To avoid this error, delete the fields that use the module displayed in the error message, or ask IT to make that module available or to let you know its new location, providing them with the name of the fields and module displayed in the error message.
 
-![Publish failed error - module not found error](../images/wfb-error-module-not-found.png)
+![Publish failed error - module not found error](images/wfb-error-module-not-found.png)
 
 ### Publish failed - entity not found
 
@@ -77,7 +77,7 @@ This error occurs if Workflow Builder can't find a module used in one or more fi
 
 Delete the fields that use the entity displayed in the error message, or ask IT to make that module available or to let you know its new location, providing them with the name of the fields displayed in the error message, path, and names: `module` > `entity`.
 
-![Publish failed error - entity not found error](../images/wfb-error-entity-not-found.png)
+![Publish failed error - entity not found error](images/wfb-error-entity-not-found.png)
 
 ### Publish failed - attribute not found
 
@@ -85,7 +85,7 @@ This error occurs if Workflow Builder can't find an attribute used in one or mor
 
 Change or delete the fields that use the attribute displayed in the error message, or ask IT to put it back or to provide you a new path, providing the name of the fields displayed in the error message, path, and names: `module` > `entity` > `attribute`.
 
-![Publish failed error - entity not found error](../images/wfb-error-attribute-not-found.png)
+![Publish failed error - entity not found error](images/wfb-error-attribute-not-found.png)
 
 ## VPN/firewall error
 
@@ -93,7 +93,7 @@ This error occurs if your Internet connection is down or if your network require
 
 To avoid this error, ensure your development environment allows inbound traffic from `https://workflowbuilder.outsystems.com` in port **443** to communicate with Workflow Builder. For more information see [Workflow Builder network requirements](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_network_requirements#workflow-builder) for detailed information.
 
-![Platform VPN/Firewall error](../images/wfb-error-vpn-firewall.png)
+![Platform VPN/Firewall error](images/wfb-error-vpn-firewall.png)
 
 ## Workflow Builder can't publish
 

@@ -6,7 +6,7 @@ guid: a941e1f8-94f8-400c-8e44-fa969cce59d8
 app_type: mobile apps
 ---
 
-# Firebase Cloud Messaging plugin
+# Firebase Cloud Messaging Plugin
 
 The [Firebase Cloud Messaging plugin](https://www.outsystems.com/forge/component-overview/13299) lets you set a notification experience that resorts to Firebase cross-platform messaging solution. Using this plugin you can to send normal and silent notifications to your mobile app end-users.
 

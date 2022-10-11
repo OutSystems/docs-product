@@ -39,6 +39,8 @@ For more information on registering devices on your Apple Developer account,chec
 
 You can configure, generate, and download an iOS mobile app package of your app for development tests in Service Studio or in Service Center.
 
+To run on iOS devices apps that were generated using the Build Types `Ad-Hoc` or `Development`, **Development Mode** needs to be enabled on mobile devices. Please check the official documentation [here](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device).
+
 To use Service Studio, do the following:
 
 1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#config-generate-service-studio>) tab and check out the section **Native Platforms**.
@@ -55,7 +57,7 @@ To use Service Center, do the following:
 1. Access Service Center of the environment (`https://<environmentdomain>/ServiceCenter`).
 1. Go to **Factory**, click on the **Applications** tab and open your application from the applications list.
 1. Select the [Distribute](<intro.md#config-generate-service-center>) tab and click on the **Configure** link for the iOS entry in the **Native Platforms** section.
-1. In the **Build type** dropdown, select the `Development` option.
+1. In the **Build type** dropdown, select the **Development** option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname` ).
 1. Provide a certificate of type `iOS App Development` and its password. The certificate should have a `.p12` file extension.
 1. Provide an `iOS App Development` provisioning profile that matches the certificate you provided. The provisioning profile should have a `.mobileprovision` extension.
@@ -88,9 +90,9 @@ To use Service Studio, do the following:
 
 1. Go to the app detail screen of the mobile application for which you want to generate the mobile application package. Open the [Distribute](<intro.md#config-generate-service-studio>) tab and check out the **Native Platforms** section.
 1. Click on the **Configure Android App** button or the Android cog icon button if you've already generated a previous Android app.
-1. In the "Build type" dropdown, select the `Debug` option.
+1. In the **Build type** dropdown, select the **Debug** option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`).
-1. _(Optional step)_ If you want to use a custom keystore to sign the debug version of your app:
+1. [Optional step] If you want to use a custom keystore to sign the debug version of your app:
     1. Expand the **>Configure Keystore** section in the **Native Platforms** section of the **Distribute** tab.
     1. Select the keystore and introduce the passwords.
     1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
@@ -105,7 +107,7 @@ To use Service Center, do the following:
 1. Select the [Distribute](<intro.md#config-generate-service-center>) tab, locate the **Native Platforms** section, and click on the **Configure** link for the Android entry.
 1. In the **Build type** dropdown, select the `Debug` option.
 1. Keep the default app identifier assigned by the platform or write your own (matching reverse domain name notation, for example, `com.domain.appname`).
-1. _(Optional step)_ If you want to use a custom keystore to sign the debug version of your app:
+1. [Optional step] If you want to use a custom keystore to sign the debug version of your app:
     1. Select the keystore and introduce the passwords.
     1. Fill in the alias name and password of the private/public key pair to use. The alias you must use is the one generated when creating the keystore.
 1. Click **Save** to save your settings.

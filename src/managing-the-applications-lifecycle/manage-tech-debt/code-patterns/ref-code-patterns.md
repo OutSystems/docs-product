@@ -199,7 +199,7 @@ Identify the granular concepts inside the monolithic module and design a concept
 
 <div class="info" markdown="1">
 
-Applies to **Traditional Web** apps only.
+Applies to **Traditional Web** and **Reactive Web** apps only.
 
 </div>
 

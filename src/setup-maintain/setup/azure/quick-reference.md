@@ -60,7 +60,7 @@ Each **solution template** deployment has an associated storage account. This st
 
 ### Application Gateways and Public IP Addresses
 
-Each environment has an **application gateway** with an associated **public IP address**. This public IP Address is the entry point to the environment. Note that configurations envolving private IP addresses, private-links and private endpoints are not part of the **OutSystems on Microsoft Azure Overview** solution template.
+Each environment has an **application gateway** with an associated **public IP address**. This public IP Address is the entry point to the environment. Note that configurations involving private IP addresses, private-links and private endpoints are not part of the **OutSystems on Microsoft Azure Overview** solution template.
 
 For example, if you have two front-end servers in your production environment, the entry point of the environment is the public IP address associated with the production application gateway.
 

@@ -1,12 +1,12 @@
 ---
 locale: en-us
-guid: 966c33e2-bdc0-4847-91b3-9fbda9b29d9f
+guid: 3fcf9d96-a766-4578-9e76-3798201cca0e
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Redacting information from REST API logs
 
-You can redact sensitive input parameter values from the logs of a consumed
+You can redact sensitive input parameter values from the logs of an exposed
 REST API, containing information like an employee's salary or health data.
 
 To redact the values of a given Input Parameter from the logs, do the
@@ -21,4 +21,4 @@ following:
 1. Select the input parameter you wish to redact, and set its **Log Redaction**
    property to **Yes**.
 
-    ![Activating the Log Redaction property of an input parameter](images/redact-logs-property-ss.png)
+    ![Activating the Log Redaction property of an input parameter](images/log-redaction-output-parameter-ss.png)

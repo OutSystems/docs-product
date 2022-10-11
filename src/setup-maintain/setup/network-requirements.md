@@ -18,18 +18,6 @@ This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available
 
 ### Open ports
 
-The OutSystems services use the following ports:
-
-* 12000 - OutSystems Deployment Controller Service
-
-* 12001 - OutSystems Deployment Service
-
-* 12002 - OutSystems Scheduler Service
-
-> **Security Tips**: Those ports shouldn't be open to the internet.
-
-
-
 For each server of an OutSystems environment, `localhost`:
 
 * must resolve to 127.0.0.1 (IPv4)
@@ -48,6 +36,11 @@ The following table lists the ports that should be open to make your application
 |End Users/Internet|Front-End|443|TCP|Applications HTTPS access (always required for Mobile and Reactive Web apps)|
 
 The table below details the ports that need to be accessible in each server of an OutSystems environment for **publication and runtime connectivity**. If a server has both roles (Controller and Front-End), then consider the ports for both profiles on that server.
+
+<div class="info" markdown="1">
+
+Security Tip: TCP Ports 12000,12001 and 12002 shouldn't be open to the internet
+</div>
 
 |Source|Destination|Port|Protocol|Notes|
 |------|-----------|----|--------|-----|

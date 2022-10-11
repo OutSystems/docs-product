@@ -26,7 +26,7 @@ This example demonstrates how to get the coordinates of a location when the user
 
     ![Map in the Service Studio toolbar](<images/map-widget-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 

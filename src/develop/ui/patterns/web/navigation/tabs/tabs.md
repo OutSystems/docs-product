@@ -26,7 +26,7 @@ You can use the Tabs UI Pattern to display large sets of information, which can 
 
     ![](images/tabs-2-ss.png)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -59,22 +59,22 @@ After following these steps and publishing the module, you can test the pattern 
 
 ### Tabs
 
-| **Property** |  **Description** |
-|---|---|
-| ActiveTab (Text): Optional  |  Defines which tab is active when the page loads. <p>Examples</p><ul><li>Blank - The first tab is the active tab.</li><li>"tab-two" - The second tab is the active tab. </li></ul> | 
-| Orientation (Orientation Identifier): Optional  | If Vertical, the tabs are displayed vertically. If Horizontal, the tabs are displayed horizontally. This is the default.|
-| IsJustified (Boolean): Optional  | If True, the Tabs are evenly distributed in the space available. If False, the Tabs are left aligned. This is the default.|
-| IsRight (Boolean): Optional  | If True, the Tabs are displayed to the right of the Tab content. If False, the Tabs are displayed to the left of the Tab content. This is the default. **Note**: This setting is only applicable if the **Orientation** property is set to **Vertical**. |
-| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| **Property**                                   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ActiveTab (Text): Optional                     | Defines which tab is active when the page loads. <p>Examples</p><ul><li>Blank - The first tab is the active tab.</li><li>"tab-two" - The second tab is the active tab. </li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Orientation (Orientation Identifier): Optional | If Vertical, the tabs are displayed vertically. If Horizontal, the tabs are displayed horizontally. This is the default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| IsJustified (Boolean): Optional                | If True, the Tabs are evenly distributed in the space available. If False, the Tabs are left aligned. This is the default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| IsRight (Boolean): Optional                    | If True, the Tabs are displayed to the right of the Tab content. If False, the Tabs are displayed to the left of the Tab content. This is the default. **Note**: This setting is only applicable if the **Orientation** property is set to **Vertical**.                                                                                                                                                                                                                                                                                                                                                                                               |
+| ExtendedClass (Text): Optional                 | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ### Tabs Header Item
 
-| **Property** |  **Description** |
-|---|---|
-| DataTab (Text): Mandatory  |  Sets the name to connect to the Tabs Content Item. Should be the same as the paired Header Item and unique. |  
+| **Property**              | **Description**                                                                                             |
+|---------------------------|-------------------------------------------------------------------------------------------------------------|
+| DataTab (Text): Mandatory | Sets the name to connect to the Tabs Content Item. Should be the same as the paired Header Item and unique. |
 
 ### Tabs Content Item
 
-| **Property** |  **Description** |  
-|---|---|
-| DataTab (Text): Mandatory  |  Value that connects with the Tabs Header Item. Should be the same as the paired Content Item and unique. |
+| **Property**              | **Description**                                                                                          |
+|---------------------------|----------------------------------------------------------------------------------------------------------|
+| DataTab (Text): Mandatory | Value that connects with the Tabs Header Item. Should be the same as the paired Content Item and unique. |

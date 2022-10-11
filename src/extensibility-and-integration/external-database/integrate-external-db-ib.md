@@ -13,7 +13,7 @@ You can use Integration Builder to integrate your apps with the following extern
 * Relational databases:
 
     * DB2 iSeries
-    * PostgreSQL and Aurora PostgreSQL
+    * PostgreSQL, Aurora PostgreSQL and Azure PostgreSQL
     * MySQL
     * Oracle
     * Azure SQL and SQL Server
@@ -22,9 +22,13 @@ You can use Integration Builder to integrate your apps with the following extern
 
     * MongoDB
 
-Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
+<div class="info" markdown="1">
 
-For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems](../../setup-maintain/setup/system-requirements.md).
+For more information about the supported databases and the systems that are certified to integrate with OutSystems, see [Integration with external systems in the system requirements article](../../setup-maintain/setup/system-requirements.md).
+
+</div>
+
+Once you establish a database connection, you can develop apps in Service Studio that query and aggregate data that resides in the external database. Your app can create, read, update, and delete data from the external database.
 
 ## Prerequisites
 
@@ -32,7 +36,7 @@ For more information about the supported databases and the systems that are cert
 
     * For integrations with MongoDB your environments must use Platform Server 11.7.2 or later.
     * For integrations with DB2 iSeries, MySQL, Oracle, Azure SQL, and SQL Server, you need Platform Server 11.14.0 or later.
-    * For integrations with PostgreSQL and Aurora PostgreSQL, you need Platform Server 11.15.0 or later.
+    * For integrations with PostgreSQL, Aurora PostgreSQL and Azure PostgreSQL you need Platform Server 11.15.0 or later.
 
 * All infrastructure servers must be able to connect to the external database.
 
@@ -46,7 +50,7 @@ For more information about the supported databases and the systems that are cert
 
 * An external database integration created in Integration Builder only supports one database, catalog, or schema at a time. If you require various tables or collections from different databases, catalogs, or schemas, you must create several integrations.
 
-* It's not possible to define the following fields at attribute level: data types, length, ignore, mandatory, autonumber, delete rule, and description.
+* It's not possible to define the following fields at attribute level: data types, length, mandatory, autonumber, delete rule, and description.
 
 * It's not possible to manually define identifiers.
 

@@ -84,23 +84,33 @@ When you mouse hover a code pattern, you can see the corresponding number of fin
 
 ### Check the variation of the technical debt and corresponding findings { #variation }
 
-The **Technical debt variation vs. findings variation** graph shows a progress view on a daily basis of the variation of technical debt and number of findings.
+The **Technical debt variation vs. number of findings** chart shows a progress view of the variation of technical debt and the number of findings on a daily basis. The technical debt variation shows how much the technical debt has increased or decreased compared to the previous day. For each day, you can see the number of open, new, and solved findings.
 
-This graph enables you to:
+This chart enables you to:
 
 * Quickly identify the highest and lowest data points.
 
-* Check, on a daily basis, for sudden raises of your technical debt and act upon it.
+* Check, on a daily basis, for sudden increases in your technical debt and act upon it.
 
-* Identify when there are huge differences between both variations, and analyze its relation.
+* Identify the number of Open findings per day, by category, and the changes in solved and new findings. This way you can easily identify what findings you added to your tech debt (New), or the findings you managed to solve (Solved), and correlate this with the technical debt variation.
 
-![technical debt and findings variation](images/overview-variation-ad.png)
+![Technical debt variation vs. findings chart](images/overview-variation-ad.png)
+
+<div class="info" markdown="1">
+
+You can enable or disable the Open, New, and Solved findings view individually. The Open findings view is disabled by default.
+
+</div>
+
+Note that if the number of new findings is greater than the number of solved findings, the tendency is to see the technical debt variation increasing. The weight of each finding contributes directly to the technical debt, meaning that patterns with less weight represent subtle spikes, while patterns with a lot of weight spike your technical debt.
 
 For example, for a specific date:
 
 * If the technical debt variation is much higher than the number of findings, it means that those findings have a big weight on the overall technical debt.
 
-* If the number of findings is much higher than the technical debt for the same date, it means that those findings have low weight on the overall technical debt.
+* If the number of findings is much higher than the technical debt for the same date, it means that those findings have a low weight on the overall technical debt.
+
+* A technical debt variation with values around 0% doesn’t mean that you don’t have technical debt. It means that it didn’t vary from the previous day. 
 
 ### Check the applications with the highest technical debt { #highest-apps }
 

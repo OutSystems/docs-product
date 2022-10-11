@@ -24,19 +24,19 @@ Output parameters
 :   **SQL** in OutSystems queries always have two output parameters, even when the query executed doesn't return a result:
 
     * **List**: The list with the result returned by the query. The list is empty if there are no results.
-    
+
     * **Count**: The number of records returned by the query without considering the SQL Max Records property.
 
 Output Structure
 :   Output Structure is mandatory. You need to define the structure (data types of the columns) that your query returns. You can use any combination of Entities, Structures or both, but the attribute order/data type must match your Select. Output Structure is needed even if your SQL statement doesn't return any results.
 
-    * Example 1: When selecting all attributes of the Employee Entity (with `Id`, `Name`, `Email`, and `PhoneNumber` attributes), 
-    specify the Employee Entity as the Output Structure. This enforces that List output parameter of the SQL 
+    * Example 1: When selecting all attributes of the Employee Entity (with `Id`, `Name`, `Email`, and `PhoneNumber` attributes),
+    specify the Employee Entity as the Output Structure. This enforces that List output parameter of the SQL
     query returns Employee List data type.
-    
-    * Example 2: When selecting only the `Name` and `Email` of the same Employee Entity, create a Structure 
-    (named EmployeeInfo) to hold the attributes you need and use it as the Output Structure. The data type and order of the attributes in the SELECT statement must match the data type and order of the attributes of the EmployeeInfo Structure. This 
-    enforces that List output parameter of the SQL query returns EmployeeInfo List data type. 
+
+    * Example 2: When selecting only the `Name` and `Email` of the same Employee Entity, create a Structure
+    (named EmployeeInfo) to hold the attributes you need and use it as the Output Structure. The data type and order of the attributes in the SELECT statement must match the data type and order of the attributes of the EmployeeInfo Structure. This
+    enforces that List output parameter of the SQL query returns EmployeeInfo List data type.
 
 To reference an entity in your SQL query write it between curly brackets (for example, `{User}`) and to reference an entity attribute write it between square brackets (for example, `[PhoneNumber]`).
 
@@ -62,7 +62,7 @@ Do the following:
 
 <div class="info" markdown="1">
 
-In Reactive Web Apps and Mobile Apps you can use the SQL element in **server-side logic**, like Server Actions. 
+In Reactive Web Apps and Mobile Apps you can use the SQL element in **server-side logic**, like Server Actions.
 
 </div>
 
@@ -153,3 +153,7 @@ If the **Database** property is set as **All**, Service Studio checks the querie
 ### Avoid Expand Inline property of query parameters
 
 Expanding inline parameters can be challenging since you need to make sure that any user input is properly escaped. If possible, avoid enabling this property altogether. OutSystems provides ways of implementing common use cases without enabling this property. Check [Building dynamic SQL statements the right way](<https://success.outsystems.com/Documentation/Best_Practices/Building_dynamic_SQL_statements_the_right_way>).
+
+### SLOWSQL log messages
+
+You may notice your application is logging SLOWSQL log messages in `Service Center` > `Monitoring` > `General` logs. This [SLOWSQL troubleshooting](https://success.outsystems.com/Support/Troubleshooting/Application_runtime/SLOWSQL_log_messages) guide explains these messages.

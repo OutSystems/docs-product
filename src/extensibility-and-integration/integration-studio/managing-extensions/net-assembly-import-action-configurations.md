@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 The following list provides information on the supported configurations and limitations for the **Import Actions from .NET Assembly** wizard in the current Integration Studio version.
 
-For the supported assembly versions please check the [System Requirements](<https://success.outsystems.com/Support/Enterprise_Customers/Installation/OutSystems_Platform_system_requirements>).  
+For the supported assembly versions please check the [System Requirements](../../../setup-maintain/setup/system-requirements.md#integration-studio).  
   
 
 ## Imported Elements

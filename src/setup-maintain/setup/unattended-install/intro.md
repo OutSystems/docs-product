@@ -43,7 +43,7 @@ The [LifeTime unattended installation and upgrade](#lifetime) explains how to us
 
 * Download the [Installation Checklist](http://www.outsystems.com/goto/checklist-11) from OutSystems website.
 
-* If you are installing or upgrading to OutSystems Platform Server 11.7.1, use the following default paths:
+* If you are installing or upgrading to OutSystems Platform Server 11.17.1, use the following default paths:
 
     * ``<service_studio_path>= C:\Program Files\OutSystems\Service Studio 11``
     * ``<integration_studio_path>= C:\Program Files\OutSystems\Integration Studio``
@@ -84,7 +84,7 @@ The automatic prerequisites installation has a timeout of 15 minutes. This ensur
 
     * Run the OutSystems Integration Studio installation executable as follows: ``IntegrationStudio-<version>.exe/S[/D=<Integration_Studio_path>]``
 
-* If you are installing or upgrading to OutSystems Platform Server 11.7.0 or earlier,  run the OutSystems Development Environment installation package as follows:
+* If you are installing or upgrading to OutSystems Platform Server 11.17.0 or earlier, run the OutSystems Development Environment installation package as follows:
 
     * ``DevelopmentEnvironment-<version>.exe /S [/D=<development_environment_path>]``
 

@@ -27,7 +27,7 @@ You can use the Time Picker UI Pattern to select a single time from a drop-down 
 
     ![](<images/timepicker-image-14.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -58,10 +58,10 @@ You can use the Time Picker UI Pattern to select a single time from a drop-down 
 
 ## Properties
 
-| **Property** |  **Description** |  
-|---|---|
-| StartTime (Time): Optional  |  The first time option that appears in the drop-down. Make sure that the time is set according to the **Interval** property (if set). <br/><br/>Examples<br/><br/><ul><li>Blank - 12:00am is displayed as the first option in the drop-down. This is the default. </li><li>15:00 - 15:00 is displayed as the first option in the drop-down.</li></ul> | 
-| Interval (Integer): Optional  |  Interval of time (in minutes) between the drop-down options.<br/><br/>Example<ul><li>Blank - The interval between each option is set to 30 minutes. This is the default.</li><li>60 - The interval between each option is set to 60 minutes.</li></ul> |
-| Is24hFormat (Boolean): Optional|  If True, the time format is 24 hour. This is the default. If False, the time format is 12 hour. |
-| AdvancedFormat (TimePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters.<br/><br/>**Inputs**<br/><br/>TimePickerAdvancedFormat<br/><br/><ul><li> DisabledTimes (Time List)</li><li> MinTime (Time)</li> <li>MaxTime (Time)</li> <li>StartEmpty (Boolean)</li></ul> |
+| **Property**                                        | **Description**                                                                                                                                                                                                                                                                                                                                      |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| StartTime (Time): Optional                          | The first time option that appears in the drop-down. Make sure that the time is set according to the **Interval** property (if set). <br/><br/>Examples<br/><br/><ul><li>Blank - 12:00am is displayed as the first option in the drop-down. This is the default. </li><li>15:00 - 15:00 is displayed as the first option in the drop-down.</li></ul> |
+| Interval (Integer): Optional                        | Interval of time (in minutes) between the drop-down options.<br/><br/>Example<ul><li>Blank - The interval between each option is set to 30 minutes. This is the default.</li><li>60 - The interval between each option is set to 60 minutes.</li></ul>                                                                                               |
+| Is24hFormat (Boolean): Optional                     | If True, the time format is 24 hour. This is the default. If False, the time format is 12 hour.                                                                                                                                                                                                                                                      |
+| AdvancedFormat (TimePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters.<br/><br/>**Inputs**<br/><br/>TimePickerAdvancedFormat<br/><br/><ul><li> DisabledTimes (Time List)</li><li> MinTime (Time)</li> <li>MaxTime (Time)</li> <li>StartEmpty (Boolean)</li></ul>                                                                                       |
   

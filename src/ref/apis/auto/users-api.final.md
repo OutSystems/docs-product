@@ -45,7 +45,7 @@ Action | Description
 [User_GetName](<#User_GetName>) | Returns the name of the logged user.
 [User_GetUnifiedLoginUrl](<#User_GetUnifiedLoginUrl>) | Returns the Url used for custom unified login patterns. Includes Windows Integrated Authentication pattern.
 [User_GetUnifiedLogoutUrl](<#User_GetUnifiedLogoutUrl>) | Returns the Url used for custom unified logout patterns. Includes Windows Integrated Authentication pattern.
-[User_IsExternalUser](<#User_IsExternalUser>) | 
+[User_IsExternalUser](<#User_IsExternalUser>) | Checks if the user was synched from an external system.
 [User_Login](<#User_Login>) | Action to login using username and password as credentials.
 [User_Logout](<#User_Logout>) | Logs out the current user. Session variables are cleared during the logout process.
 [User_Unblock](<#User_Unblock>) | Ends the blocking period for the specified user, allowing the user to login in all IP addresses where the user was blocked.
@@ -379,7 +379,7 @@ Url
 
 ### User_IsExternalUser { #User_IsExternalUser }
 
-
+Checks if the user was synched from an external system.
 
 *Inputs*
 

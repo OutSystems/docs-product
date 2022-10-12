@@ -102,6 +102,12 @@ When configuring CSP take the following risks of misconfiguration into account:
 
 The table below describes the list of available directives to configure Content Security Policy in **OutSystems**. The **Required values** column indicates the values that **LifeTime** automatically applies to the directive for the applications to work correctly. Those values cannot be removed.
 
+<div class="info" markdown="1">
+
+When adding multiple domains, insert 1 domain per line without any separators after each line.
+
+</div>
+
 | Directive     | Reason        | Required values  |
 | :------------ |:--------------|:----------------|
 | Base-uri      |The domains which can be used as base URL for applications screens.<br/>The following source expressions are allowed: `self`.|`self`|

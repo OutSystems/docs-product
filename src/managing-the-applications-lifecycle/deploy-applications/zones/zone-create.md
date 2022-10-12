@@ -36,3 +36,11 @@ After creating the zone, define which front-end servers belong to it. Do the fol
 1. Click the **Add Server(s)** button to associate the entered front-end server names with the zone.
 
 Note: Instead of defining the servers belonging to the deployment zone, you can check the "Includes all Servers" setting when creating the deployment zone. In this case, the platform automatically includes all servers in the deployment zone, including those added later.
+
+<div class="info" markdown="1">
+
+Configuring the deployment zone of individual modules is **deprecated** since Platform Server 11.8. Even though applications with modules in different deployment zones are still supported, OutSystems will stop supporting this option in the future.
+
+For more information see [Modules and apps in deployments zones](modules-and-apps-in-deployment-zones.md).
+
+</div>

@@ -26,7 +26,7 @@ You can use the Display on Device UI pattern to select what elements are display
 
     ![](<images/displayondevice-2-ss.png>)
 
-    If the UI widget doesn't display, it's because the dependency isn't added. For example, if you are using a ready-made app, it deletes unused widgets from the module. To make the widget available in your app:
+    If the UI widget doesn't display, it's because the dependency isn't added. This happens because the Remove unused references setting is enabled. To make the widget available in your app:
 
     1. In the Toolbox, click **Search in other modules**.
 
@@ -54,6 +54,6 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property** |  **Description** |
-|---|---|
+| **Property**                                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Behavior (DeviceResponsive Identifier): Mandatory | Select the device types upon which the content is displayed. The following are the predefined options available: <p><ul><li>DesktopOnly</li><li>DesktopAndTablet</li><li>TabletOnly</li><li>TabletAndPhone</li><li>PhoneOnly</li><li>AllDevices</li></ul></p><p>Examples<ul><li>Entities.DeviceResponsive.DesktopOnly - Content is displayed on Desktop browsers only</li><li>Entities.DeviceResponsive.TabletAndPhone - Content is displayed on Tablet and Phone browsers only</li></ul></p> |

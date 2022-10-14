@@ -18,7 +18,7 @@ To create a many-to-many relationship, follow these steps:
 1. Add an attribute and set the data type to the identifier of the first entity.
 1. Add another attribute and set the data type to the identifier of the second entity.
 
-If you want to ensure that the new entity has unique records (like an `Author` can only write the same `Book` once), then add a unique index to the two foreign keys.
+If you want to ensure that an entity has unique records (like a `Book` can only have one `Publisher`), then add a [unique index](../index-create.md) to the two foreign keys.
 
 
 ## Example

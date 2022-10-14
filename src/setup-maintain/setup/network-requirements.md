@@ -28,6 +28,7 @@ For each server of an OutSystems environment, `localhost`:
 It's possible to configure some of the ports used. Check the [Configuration Tool documentation](../../ref/configuration-tool/intro.md) to learn more.
 
 </div>
+
 The following table lists the ports that should be open to make your applications to be accessible **outside** of your local network (WAN) or **inside** of your local network (LAN).
 
 |Source|Destination|Port|Protocol|Notes|
@@ -39,7 +40,8 @@ The table below details the ports that need to be accessible in each server of a
 
 <div class="info" markdown="1">
 
-Security Tip: TCP Ports 12000,12001 and 12002 shouldn't be open to the internet
+Security Tip: TCP Ports 12000,12001 and 12002 shouldn't be open to the internet.
+
 </div>
 
 |Source|Destination|Port|Protocol|Notes|

@@ -8,17 +8,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Getting started as a team lead 
 
-As a team lead, **Architecture Dashboard** provides you with an overview of the technical debt of organization's technical debt as well as detailed overview of the technical debt of your teams's apps.
+As a team lead, **AI Mentor Studio** provides you with an overview of the technical debt of organization's technical debt as well as detailed overview of the technical debt of your teams's apps.
 
 From the Apps canvas, you can drill down into the team's problematic modules, and take the necessary steps to reduce the technical debt score for these areas. 
 
 This guide assumes the following:
 
-* Your infrastructure is already set up in **Architecture Dashboard**.
+* Your infrastructure is already set up in **AI Mentor Studio**.
 
-* Your IT user is already associated with **Architecture Dashboard**.
+* Your IT user is already associated with **AI Mentor Studio**.
 
-After logging in to [Architecture Dashboard](https://architecture.outsystems.com) with your **OutSystems** account, follow these steps:
+After logging in to [AI Mentor Studio](https://architecture.outsystems.com) with your **OutSystems** account, follow these steps:
 
 ## Check the technical debt of your team apps
 
@@ -89,11 +89,11 @@ After checking a finding, you can change its status to one of the following:
 
 The **Infrastructure overview** dashboard gives you an understanding of the current state, distribution, and evolution of the technical debt across all the apps of your team.
 
-![overview dashboard](images/overview-dashboard-ad.png)
+![Overview dashboard](images/overview-dashboard-ad.png)
 
-To access the **Infrastructure overview** dashboard, click the **Overview** tab in **Architecture Dashboard**.
+To access the **Infrastructure overview** dashboard, click the **Overview** tab in **AI Mentor Studio**.
 
-![overview dashboard button](images/overview-dashboard-button-ad.png)
+![Overview dashboard button](images/overview-dashboard-button-ad.png)
 
 Filter the analysis data by team, application, code pattern category, or date range, to get the data that you require to do the proper follow up. You can identify, for example, the apps and modules of your team that contribute more to your technical debt.
 

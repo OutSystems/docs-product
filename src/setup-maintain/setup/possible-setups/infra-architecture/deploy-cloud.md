@@ -1,5 +1,5 @@
 ---
-summary: An OutSystems Cloud infrastructure provides enterprise-class cloud computing without the hassle of managing physical software infrastructure. 
+summary: An OutSystems Cloud infrastructure provides enterprise-class cloud computing without the hassle of managing physical software infrastructure.
 locale: en-us
 guid: de7c085b-1c0b-4a1f-9d36-4a7e3f1c3ebc
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -7,7 +7,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Deploy an infrastructure on OutSystems Cloud
 
-An OutSystems Cloud infrastructure, also known as Platform as a Service (PaaS), provides enterprise-class cloud computing without the hassle of managing physical software infrastructure. 
+An OutSystems Cloud infrastructure, also known as Platform as a Service (PaaS), provides enterprise-class cloud computing without the hassle of managing physical software infrastructure.
 
 The OutSystems Cloud provides you:
 
@@ -19,7 +19,7 @@ The OutSystems Cloud provides you:
 * database storage, backup and restore
 * additional environments for elastic release management
 
-OutSystems handles all server and database maintenance, server and system upgrades and  patches for you. 
+OutSystems handles all server and database maintenance, server and system upgrades and  patches for you.
 
 In the OutSystems Cloud deployment, all servers, physical infrastructure, and data are hosted in the secure data centers of Amazon Web Services (AWS). AWS is the market leader and the most mature public cloud infrastructure as a service (IaaS). It has enterprise-grade availability with guaranteed service levels of 99.9%, and it is the IaaS technology that has been accredited by the largest number of security compliance standards.
 
@@ -43,9 +43,9 @@ The available add ons include:
 But you won’t be locked in an initial configuration, as needs evolve, so can your infrastructure. And in every step of the way, OutSystems automatic provisioning takes care of the full setup.
 
 Several deployment regions are available to adjust to needs such as data compliance, integration performance, and application performance for end users. Rather than choosing only one region, global organizations can choose a different region for each pipeline.
-Pipelines in different regions have independent databases for each environment. 
+Pipelines in different regions have independent databases for each environment.
 
-OutSystems automatically deploys the infrastructure according to the specifications. This is achieved through and orchestrated provisioning based on infrastructure-as-code principles that ensure: 
+OutSystems automatically deploys the infrastructure according to the specifications. This is achieved through and orchestrated provisioning based on infrastructure-as-code principles that ensure:
 
 * an up to date operating system and database management system
 * hardened images that benefit from continuous improvement
@@ -93,14 +93,37 @@ OutSystems keeps customer data in the region selected by the customer, enabling 
 Within the OutSystems organization, access to customer data is restricted to the support team, and used only when necessary to provide services to the customer.
 Even though OutSystems protects customer data, customers are still responsible for developing applications that follow best practices for data security.
 
-OutSystems Cloud automatically backs up production databases. Customers can request a database restore to any point-in-time in the last 15 days. As an example, if a developer introduces a bug that corrupts or deletes data, by restoring to a point-in-time, the customer can avoid or minimize data loss. 
+#### Database backup
 
-OutSystems encrypts data-at-rest in production databases. Encryption is always enabled with OutSystems Sentry, and activated upon request for other customers. Encrypted databases provide an additional layer of data protection, securing data in the event of unauthorized access to the underlying storage. Encryption increases data protection of applications deployed in the OutSystems Cloud, and can fulfill specific compliance requirements.
+OutSystems Cloud automatically backs up production databases. Customers can request a database restore to any point-in-time in the last 15 days. As an example, if a developer introduces a bug that corrupts or deletes data, by restoring to a point-in-time, the customer can avoid or minimize data loss.
 
-Encryption of data-at-rest includes the underlying storage for a DB instance and its automated backups. Encrypted databases use the industry standard AES-256 encryption algorithm to encrypt data on the server that hosts customer databases. Once the data is encrypted, authentication of access and decryption of the data is handled transparently with a minimal impact on performance. Customers don't need to modify their applications to use encryption. 
+#### Database encryption
 
-OutSystems recommends that customers configure their OutSystems Cloud environments to encrypt all data communication between OutSystems Cloud and third-party systems, to prevent eavesdropping. 
-The data communication between the OutSystems application servers and the databases is encrypted by default.
+OutSystems encrypts data-at-rest (stored on disk) in production databases.
+Encrypted databases provide an additional layer of data protection, securing
+data in the event of unauthorized access to the underlying storage. Encryption
+increases the data protection of applications deployed in the OutSystems Cloud
+and can fulfill specific compliance requirements.
+
+Default encryption of data-at-rest in databases has been active by default
+since July 2021. Prior to this date, only data hosted by OutSystems Sentry was
+encrypted by default, though customers could request database encryption.
+
+Any unencrypted databases can be encrypted on request. A request is necessary
+as the process involves database downtime, requiring scheduling. To request
+database encryption on an older database, contact support.
+
+Encryption of data-at-rest includes the underlying storage for a DB instance
+and its automated backups. Encrypted databases use the industry standard
+AES-256 encryption algorithm to encrypt data on the server that hosts customer
+databases. Once the data is encrypted, authentication of access and decryption
+of the data is handled transparently with a minimal impact on performance.
+Customers don't need to modify their applications to use encryption.
+
+OutSystems recommends that customers configure their OutSystems Cloud
+environments to encrypt all data communication between OutSystems Cloud and
+third-party systems, to prevent eavesdropping. The data communication between
+the OutSystems application servers and the databases is encrypted by default.
 
 ### Access control
 
@@ -108,7 +131,7 @@ OutSystems follows a formal Logical Access Procedure to limit access to those em
 
 ### Protection from malicious software
 
-The OutSystems Cloud servers are provisioned automatically from malware-free virtual machine images, with strict access permissions that block any malware contamination attempts. The OutSystems Cloud virtual machine images are regularly patched and hardened (including the removal of unnecessary services). 
+The OutSystems Cloud servers are provisioned automatically from malware-free virtual machine images, with strict access permissions that block any malware contamination attempts. The OutSystems Cloud virtual machine images are regularly patched and hardened (including the removal of unnecessary services).
 
 The OutSystems Cloud servers are managed from OutSystems employee computers with centrally managed and regularly updated antivirus software. Only OutSystems support engineers have operating system access to the OutSystems Cloud servers; malware protection at their computers effectively protects the OutSystems Cloud servers as well.
 OutSystems Cloud is hosted on Amazon AWS, which implements additional malware defense mechanisms at the network layer.
@@ -117,9 +140,9 @@ OutSystems Cloud is hosted on Amazon AWS, which implements additional malware de
 
 The OutSystems Cloud dedicates a Virtual Private Cloud (VPC) to each Enterprise customer, ensuring complete isolation of each tenant’s environment from each other. Each tenant has a dedicated set of virtual machines and a dedicated database instance, both running on the dedicated Virtual Private Cloud.
 
-The OutSystems design isolates the different product lifecycle environments (e.g. development, test, production, other non-production environments). Developers stage their applications in the various environments using the OutSystems console. The OutSystems console runs in its own separate environment, and communicates with the other environments using HTTPS only. 
+The OutSystems design isolates the different product lifecycle environments (e.g. development, test, production, other non-production environments). Developers stage their applications in the various environments using the OutSystems console. The OutSystems console runs in its own separate environment, and communicates with the other environments using HTTPS only.
 
-Each customer has a dedicated set of virtual machines and database instances protected inside a dedicated Virtual Private Cloud (VPC), which is logically isolated from the internet and other virtual networks in the AWS cloud. OutSystems Cloud provides segregated environments for product lifecycle environments running on different virtual server instances. 
+Each customer has a dedicated set of virtual machines and database instances protected inside a dedicated Virtual Private Cloud (VPC), which is logically isolated from the internet and other virtual networks in the AWS cloud. OutSystems Cloud provides segregated environments for product lifecycle environments running on different virtual server instances.
 A layer of AWS Security Groups, acting as firewalls, control the traffic between the environments and the internet. Security Groups define a granular access control per environment and per asset.
 OutSystems shields each environment using a Web Application Firewall (WAF), which blocks malicious traffic from reaching the running web applications. To ensure that OutSystems keeps full flexibility on the reaction to evolving security threats, maximum availability, and compatibility with OutSystems product evolution, the same WAF's policies apply to all customers.
 
@@ -131,5 +154,5 @@ Read [here](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystem
 To integrate with the existing ecosystems, there are several options to securely connect OutSystems Cloud to external databases, and other systems such as web services and identity management systems, for example:
 
 * **VPN** - customers can set up an IPsec VPN connection between their data center and the OutSystems Cloud VPC. VPN connections use industry-standard IPsec tunnel mode (with IKEPSK, AES-128, HMAC-SHA-1, PFS) to authenticate the two sides of the VPN connection and to protect the data in transit from eavesdropping and tampering.
-* **Transit gateway** - a service that enables you to connect your multiple AWS accounts, Virtual Private Clouds (VPCs), and your on-premises networks to a single gateway. For seamless integration with your corporate systems, OutSystems allows you to connect to your OutSystems Cloud VPC using your own AWS Transit Gateway. 
+* **Transit gateway** - a service that enables you to connect your multiple AWS accounts, Virtual Private Clouds (VPCs), and your on-premises networks to a single gateway. For seamless integration with your corporate systems, OutSystems allows you to connect to your OutSystems Cloud VPC using your own AWS Transit Gateway.
 * **Direct connection** - For scenarios which require the use of high bandwidth and a steady connection without network congestion, you can use AWS Direct Connect to link your private AWS network to your OutSystems Cloud over a dedicated line.

@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 This article describes the Azure resources deployed by [OutSystems on Microsoft Azure](intro.md "OutSystems on Microsoft Azure Overview") solution template, which contains the OutSystems Development, Test, Production, and [LifeTime deployment management console](../../../managing-the-applications-lifecycle/intro.md) environments.
 
-## Azure Resources
+## Azure Resources 
 
 The Azure resources that the OutSystems on Microsoft Azure solution template deploys follow naming conventions based on the general [Azure naming conventions](https://docs.microsoft.com/en-us/azure/architecture/best-practices/naming-conventions). You can identify the deployed resources by the following:
 

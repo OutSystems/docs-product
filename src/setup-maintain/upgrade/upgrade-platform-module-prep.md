@@ -12,7 +12,7 @@ Starting from **Platform Server 11.12.0**, the upgrade process includes a new **
 
 When [upgrading your OutSystems environment](upgrade-platform.md#upgrade-ps) from **Platform Server 11.x** to **Platform Server 11.12.0 or later**, the Platform Server installation starts **preparing your modules** for the new version.
 
-During this step, the Platform Server performs a **background compilation** of all your modules using the new platform version, but it doesn't deploy them. Your running applications aren't changed during the upgrade.
+During this step, the Platform Server performs a **background compilation** of all your modules using the new platform version, but it doesn't deploy them. Your running applications aren't changed during the upgrade, until a deployment takes place. In other words, existing modules continue to run using the previous system components version. The compilation process updates all module dependencies, including the new system components version, and then compiles the module. To use the latest system components you must deploy the module.
 
 This enables you to **publish your applications gradually**, following your teams' pace, after the Platform Server upgrade.
 

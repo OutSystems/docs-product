@@ -1,27 +1,27 @@
 ---
 tags: 
-summary: Learn how to use a forward proxy while connecting from the Architecture Dashboard plugin to the Architecture Dashboard Software as a Service (SaaS).
+summary: Learn how to use a forward proxy while connecting from the AI Mentor Studio plugin to the AI Mentor Studio Software as a Service (SaaS).
 locale: en-us
 guid: 06af3d66-f6c3-4827-aa17-36b1124f321b
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 
-# How to use a proxy to connect to Architecture Dashboard
+# How to use a proxy to connect to AI Mentor Studio
 
-The Architecture Dashboard plugin can use a forward proxy while connecting to the Architecture Dashboard Software as a Service (SaaS). 
+The AI Mentor Studio plugin can use a forward proxy while connecting to the AI Mentor Studio Software as a Service (SaaS). 
 
 ## Prerequisites
 
-Before configuring the proxy in Architecture Dashboard, make sure that the following requirements are met:
+Before configuring the proxy in AI Mentor Studio, make sure that the following requirements are met:
 
-* Your infrastructure uses **version 4.0 or higher** of the **Architecture Dashboard probes**.
+* Your infrastructure uses **version 4.0 or higher** of the **AI Mentor Studio probes**.
 
 ## Configure the forward proxy
 
 To configure the proxy, follow these steps:
 
-1. Go to the Architecture Dashboard LifeTime plugin (`https://<lifetime_environment>/ArchitectureDashboardProbe/`) and select **Configuration**.
+1. Go to the AI Mentor Studio LifeTime plugin (`https://<lifetime_environment>/ArchitectureDashboardProbe/`) and select **Configuration**.
 
     ![Go to the plugin configuration](images/proxy-config-ad.png)
 
@@ -35,4 +35,4 @@ To configure the proxy, follow these steps:
 
     ![Enter proxy information and save changes](images/proxy-info-ad.png)
 
-After these steps the Architecture Dashboard plugin uses the proxy you configured when connecting to the Architecture Dashboard SaaS.
+After these steps the AI Mentor Studio plugin uses the proxy you configured when connecting to the AI Mentor Studio SaaS.

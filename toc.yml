@@ -515,9 +515,13 @@
     # SEO
     - href: develop/seo/intro.md
     - topics:
-        - href: develop/seo/indexing.md
-    # SEO Trad Web
-    - href: develop/seo/seo-friendly-urls.md
+        - href: develop/seo/content-technical-seo.md
+        - href: develop/seo/traditional-vs-reactive-seo.md
+        - topics:
+            - href: develop/seo/seo-friendly-url-reactive.md
+            - href: develop/seo/improved-crawl-reactive.md
+            - href: develop/seo/seo-friendly-url-traditional.md
+            - href: develop/seo/errors-troubleshooting-seo.md
     # Testing
     - href: develop/testing/intro.md
     - topics:

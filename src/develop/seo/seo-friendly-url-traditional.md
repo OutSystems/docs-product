@@ -7,7 +7,7 @@ guid: 641c106a-d688-42a3-9b73-8fd9791a673b
 app_type: traditional web apps
 ---
 
-# Customize or redirect the application URL
+# SEO-Friendly URLs for Traditional Apps
 
 <div class="info" markdown="1">
 
@@ -21,11 +21,9 @@ The URLs that are easy to read, memorize, and type contribute to great user expe
 
 Applying these techniques promotes SEO because the search engines (and users) give more relevance to friendly URLs. Furthermore, you're allowed to configure URLs for duplicate content across different domains, and to handle broken links from former indexed results when your URLs change.
 
-**This feature is only available for the .NET stack.**
-
 <div class="info" markdown="1">
 
-This document applies to Traditional Web Apps. For Reactive Web Apps, see [SEO in Reactive Web Apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/SEO_in_Reactive_Web_Apps).
+This document applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive Apps](seo-friendly-url-reactive.md).
 
 </div>
 
@@ -41,7 +39,7 @@ At runtime, when clicking on a link on a page of your application, OutSystems op
 
 <div class="info" markdown="1">
 
-This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO in Reactive Web Apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/SEO_in_Reactive_Web_Apps).
+This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive Apps](seo-friendly-url-reactive.md).
 
 </div>
 
@@ -88,7 +86,7 @@ http://www.example.com/InsterstateBuses/To-Faro
 
 <div class="info" markdown="1">
 
-This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO in Reactive Web Apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/SEO_in_Reactive_Web_Apps).
+This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive Apps](seo-friendly-url-reactive.md).
 
 </div>
 

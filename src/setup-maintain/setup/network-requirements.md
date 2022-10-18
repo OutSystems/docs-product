@@ -18,14 +18,6 @@ This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available
 
 ### Open ports
 
-The OutSystems services use the following ports:
-
-* 12000 - OutSystems Deployment Controller Service
-
-* 12001 - OutSystems Deployment Service
-
-* 12002 - OutSystems Scheduler Service
-
 For each server of an OutSystems environment, `localhost`:
 
 * must resolve to 127.0.0.1 (IPv4)
@@ -37,13 +29,24 @@ It's possible to configure some of the ports used. Check the [Configuration Tool
 
 </div>
 
+The following table lists the ports that should be open to make your applications to be accessible **outside** of your local network (WAN) or **inside** of your local network (LAN).
+
+|Source|Destination|Port|Protocol|Notes|
+|------|-----------|----|--------|-----|
+|End Users/Internet|Front-End|80|TCP|Applications HTTP access|
+|End Users/Internet|Front-End|443|TCP|Applications HTTPS access (always required for Mobile and Reactive Web apps)|
+
 The table below details the ports that need to be accessible in each server of an OutSystems environment for **publication and runtime connectivity**. If a server has both roles (Controller and Front-End), then consider the ports for both profiles on that server.
+
+<div class="info" markdown="1">
+
+Security Tip: TCP Ports 12000,12001 and 12002 shouldn't be open to the internet.
+
+</div>
 
 |Source|Destination|Port|Protocol|Notes|
 |------|-----------|----|--------|-----|
 |SysOps|Server|22/3389|TCP|Access the server through SSH or Remote Desktop|
-|End Users|Front-End|80|TCP|Applications HTTP access|
-|End Users|Front-End|443|TCP|Applications HTTPS access (always required for Mobile and Reactive Web apps)|
 |Front-End|nativebuilder.api.outsystems.com|443|TCP|Generate Mobile apps ([more info](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Mobile_App_Builder_Service_connectivity_requirements))|
 |Front-End|Controller (by default)<br/>— Depends on where the Cache Invalidation Service/RabbitMQ is installed.|5672|TCP|Cache Invalidation Service connection|
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service connection|
@@ -135,14 +138,14 @@ You need to have bidirectional secure communication between the front-end of the
 |LifeTime Front-End|Environment Front-End|443|TCP|
 |Environment Front-End|LifeTime Front-End|443|TCP|
 
-### Architecture Dashboard
+### AI Mentor Studio
 
-To use [Architecture Dashboard](https://architecture.outsystems.com), the Architecture Dashboard LifeTime plugin must be able to communicate with the Architecture Dashboard SaaS. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work). 
+To use [AI Mentor Studio](https://architecture.outsystems.com), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work). 
 
-Depending on the version of the Architecture Dashboard probe, ensure that one of the following destination endpoints is reachable:
+Depending on the version of the AI Mentor Studio probe, ensure that one of the following destination endpoints is reachable:
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or higher** of the Architecture Dashboard LifeTime probes.
-LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the Architecture Dashboard LifeTime probes.
+LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or higher** of the AI Mentor Studio LifeTime probes.
+LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the AI Mentor Studio LifeTime probes.
  

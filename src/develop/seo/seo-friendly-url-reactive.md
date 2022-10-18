@@ -6,7 +6,7 @@ guid: 294F6709-2351-4992-832F-4DAE431D3E5F
 app_type: traditional web apps, reactive web apps
 ---
 
-# SEO-friendly URLs for Reactive apps  
+# SEO-friendly URLs for Reactive Web apps  
 
 ## Prerequisites  
 

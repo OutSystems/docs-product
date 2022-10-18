@@ -7,7 +7,7 @@ guid: 641c106a-d688-42a3-9b73-8fd9791a673b
 app_type: traditional web apps
 ---
 
-# SEO-Friendly URLs for Traditional Apps
+# SEO-Friendly URLs for Traditional Web Apps
 
 <div class="info" markdown="1">
 
@@ -39,7 +39,7 @@ At runtime, when clicking on a link on a page of your application, OutSystems op
 
 <div class="info" markdown="1">
 
-This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive Apps](seo-friendly-url-reactive.md).
+This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive Web Apps](seo-friendly-url-reactive.md).
 
 </div>
 

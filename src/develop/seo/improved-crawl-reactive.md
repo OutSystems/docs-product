@@ -6,7 +6,7 @@ guid: 7D2154CF-186A-4671-89FA-88C7C25FBBC8
 app_type: traditional web apps, reactive web apps
 ---
 
-# Improved crawlability for Reactive apps  
+# Improved crawlability for Reactive Web apps  
 
 While there are several strategies to improve the ranking of your domain in search results, SEO starts with indexing your pages. To do this, you need to ensure that your pages are crawler-friendly.  
 

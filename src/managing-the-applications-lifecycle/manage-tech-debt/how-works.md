@@ -1,38 +1,38 @@
 ---
 tags:
-summary: Learn how Architecture Dashboard works and how your infrastructure communicates with the SaaS.
+summary: Learn how AI Mentor Studio works and how your infrastructure communicates with the SaaS.
 locale: en-us
 guid: f6f9f871-5f0c-4991-a47e-91fa20033627
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# How does Architecture Dashboard work
+# How does AI Mentor Studio work
 
-Architecture Dashboard includes the following pieces: 
+AI Mentor Studio includes the following pieces: 
 
-Architecture Dashboard SaaS
-:   A "Software as a Service" that processes and shows all data collected by the Architecture Dashboard LifeTime Plugin.
+AI Mentor Studio SaaS
+:   A "Software as a Service" that processes and shows all data collected by the AI Mentor Studio LifeTime Plugin.
 
-Architecture Dashboard LifeTime Plugin
-:   A LifeTime plugin that's published in a platform installation (on-premises or cloud) with **environment probes** to collect data and communicate with the Architecture Dashboard SaaS.
+AI Mentor Studio LifeTime Plugin
+:   A LifeTime plugin that's published in a platform installation (on-premises or cloud) with **environment probes** to collect data and communicate with the AI Mentor Studio SaaS.
 
-![Architecture Dashboard diagram](images/how-works-diag.png)
+![AI Mentor Studio diagram](images/how-works-diag.png)
 
 ## Communication
 
-Communications between the Architecture Dashboard plugin and the Architecture Dashboard SaaS are always initiated by the plugin. This reduces connectivity requirements on your side since all that needs to be ensured is connectivity from the Plugin in the LifeTime environment to the Architecture Dashboard SaaS endpoint.
+Communications between the AI Mentor Studio plugin and the AAI Mentor Studio SaaS are always initiated by the plugin. This reduces connectivity requirements on your side since all that needs to be ensured is connectivity from the Plugin in the LifeTime environment to theAI Mentor Studio SaaS endpoint.
 
-The plugin can use a forward proxy to connect to the Architecture Dashboard SaaS endpoint.
+The plugin can use a forward proxy to connect to the AI Mentor Studio SaaS endpoint.
 
 ### Data collected in plugin and sent to SaaS
 
-Architecture Dashboard collects the following data from your infrastructure:
+AI Mentor Studio collects the following data from your infrastructure:
 
 * Platform metamodel data, including infrastructure activation code, environments information (name and Platform Server version), teams, list of apps and modules (including name and identifier), and platform configurations.
 
 * Modules and dependency information for code analysis.
 
-* Upon acceptance of the agreement, during Architecture Dashboard set up: users information (name, username, email address, user creation date, last login date) and LifeTime permissions.
+* Upon acceptance of the agreement, during AI Mentor Studio set up: users information (name, username, email address, user creation date, last login date) and LifeTime permissions.
 
 * Optionally: Discovery snapshot data (architectural references, applications, and modules) for architecture analysis.
 
@@ -44,9 +44,9 @@ Data of each installation is kept in the OutSystems cloud and isolated from all 
 
 * IP or DNS addresses aren't transmitted.
 
-* No ports besides the defaults need to be open for the correct use of Architecture Dashboard Probes.
+* No ports besides the defaults need to be open for the correct use of AI Mentor Studio Probes.
 
-* No firewall issues should arise, although you need to be able to access the endpoint detailed in [How to set up Architecture Dashboard](how-setup.md).
+* No firewall issues should arise, although you need to be able to access the endpoint detailed in [How to set up AI Mentor Studio](how-setup.md).
 
 ### Data at rest in SaaS
 
@@ -56,13 +56,13 @@ Data of each installation is kept in the OutSystems cloud and isolated from all 
 
 Read more about security and compliance in the following FAQ sections:
 
-* [Security, legal and compliance - registration in Architecture Dashboard](faq.md#data-faq)
+* [Security, legal and compliance - registration in AI Mentor Studio](faq.md#data-faq)
 
 * [Security, legal and compliance - personal information](faq.md#personal-data-faq)
 
 ## Permissions
 
-The permissions that IT users have while using Architecture Dashboard with an infrastructure, depend on the [role and permissions set in LifeTime](../manage-it-teams/about-permission-levels.md#permissions) for the **code-analysis environment** of that infrastructure.
+The permissions that IT users have while using AI Mentor Studio with an infrastructure, depend on the [role and permissions set in LifeTime](../manage-it-teams/about-permission-levels.md#permissions) for the **code-analysis environment** of that infrastructure.
 
 <div class="info" markdown="1">
 
@@ -76,7 +76,7 @@ The permissions of a role assigned for an app override the permissions for the s
 
 </div>
 
-The following tables map the Architecture Dashboard permissions to the LifeTime permissions and to the way the roles are assigned to IT users.
+The following tables map the AI Mentor Studio permissions to the LifeTime permissions and to the way the roles are assigned to IT users.
 
 ### Main features permissions
 
@@ -642,7 +642,7 @@ The following tables map the Architecture Dashboard permissions to the LifeTime 
   </tbody>
 </table>
 
-#### Manage Architecture Dashboard API
+#### Manage AI Mentor Studio API
 
 <table>
   <thead>

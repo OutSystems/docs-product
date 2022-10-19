@@ -274,3 +274,5 @@ The **developer** and **deployer** collaborate to generate a sitemap.
 1. In **LifeTime**, the deployer marks the hotfix as solved, and then submits the sitemap to search engines.
 
     **Note**: This occurs only when the changes are in the Production environment (must be a public facing environment).
+
+

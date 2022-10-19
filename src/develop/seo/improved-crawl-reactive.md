@@ -20,7 +20,7 @@ The sitemap.xml and robots.txt files let you control website crawlers and index 
 
 This diagram explains the connection between crawlers, sitemaps, and robots:
 
-![Diagram showing the connection between crawlers, sitemaps, and robots](images/add-filename-diag.png)
+![Diagram showing the connection between crawlers, sitemaps, and robots](images/connection-between-crawlers-sitemaps-robots-diag.png)
 
 ### Sitemap.xml 
 

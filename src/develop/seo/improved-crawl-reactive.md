@@ -95,7 +95,7 @@ To see an example of an app with a REST endpoint implemented, you can download t
             <?xml version='1.0' encoding='UTF-8'?>
                 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
                     <url>
-                     <loc>https://example.com/Home</loc>
+                        <loc>https://example.com/Home</loc>
                     </url>
     	            <url>
                         <loc>https://example.com/Login</loc>

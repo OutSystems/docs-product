@@ -6,7 +6,7 @@ guid: efe75497-2f0f-4bbe-9f97-e65c2b345210
 app_type: mobile apps, reactive web apps
 ---
 
-# Security
+# Role Check
 
 <div class="info" markdown="1">
 
@@ -16,11 +16,13 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 Provides methods for doing client side role checks. Used to programmatically show or hide UI elements depending on a given role.
 
+**IMPORTANT** This API should not be used for security checks, but only for purposes of convenience. Developers should always verify the user's role(s) on the server side before querying or storing any sensitive data.
+
 ## Summary
 
 |Functions|Description|
 |---|---|
-|[checkIfCurrentUserHasRole](security.md#checkifcurrentuserhasrole)|Checks if the current user has the given role.|
+|[checkIfCurrentUserHasRole](rolecheck.md#checkifcurrentuserhasrole)|Checks if the current user has the given role.|
 
 ## Functions
 
@@ -46,4 +48,3 @@ Parameters:
 Returns: boolean
 
 Returns `true` if the current user has the given role, `false` otherwise.
-

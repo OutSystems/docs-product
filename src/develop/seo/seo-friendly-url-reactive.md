@@ -124,7 +124,7 @@ The following table includes more examples of custom screen URLs:
 
 Consider the following when working with custom screen URLs:  
 * You can add custom URLs to all screens except for the Default Screen.  
-* When copying screens with custom URLs from a Reactive Web app module to a Mobile app module, **Service Studio** removes the custom URL configurations in the Mobile App module because SEO works differently for mobile apps.  
+* When copying screens with custom URLs from a Reactive Web app module to a Mobile app module, **Service Studio** removes the custom URL configurations in the Mobile app module because SEO works differently for mobile apps.  
  
 
 </div>  

@@ -7,23 +7,23 @@ guid: 641c106a-d688-42a3-9b73-8fd9791a673b
 app_type: traditional web apps
 ---
 
-# SEO-Friendly URLs for Traditional Web Apps
+# SEO-Friendly URLs for Traditional Web apps
 
 <div class="info" markdown="1">
 
-Applies only to Traditional Web Apps.
+Applies only to Traditional Web apps.
 
 </div>
 
 <!-- Help id 30374 links to this document. -->
 
-The URLs that are easy to read, memorize, and type contribute to great user experience (UX) and search engine optimization (SEO). OutSystems lets you configure the app URLs for UX and SEO. This guide describes the available techniques to simplify the URLs of the Traditional Web Apps.
+The URLs that are easy to read, memorize, and type contribute to great user experience (UX) and search engine optimization (SEO). OutSystems lets you configure the app URLs for UX and SEO. This guide describes the available techniques to simplify the URLs of the Traditional Web apps.
 
 Applying these techniques promotes SEO because the search engines (and users) give more relevance to friendly URLs. Furthermore, you're allowed to configure URLs for duplicate content across different domains, and to handle broken links from former indexed results when your URLs change.
 
 <div class="info" markdown="1">
 
-This document applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive Apps](seo-friendly-url-reactive.md).
+This document applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive apps](seo-friendly-url-reactive.md).
 
 </div>
 
@@ -39,7 +39,7 @@ At runtime, when clicking on a link on a page of your application, OutSystems op
 
 <div class="info" markdown="1">
 
-This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive Web Apps](seo-friendly-url-reactive.md).
+This section applies to Traditional Web apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive Web apps](seo-friendly-url-reactive.md).
 
 </div>
 
@@ -86,7 +86,7 @@ http://www.example.com/InsterstateBuses/To-Faro
 
 <div class="info" markdown="1">
 
-This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive Apps](seo-friendly-url-reactive.md).
+This section applies to Traditional Web Apps. For Reactive Web Apps, see [SEO-Friendly URLs for Reactive apps](seo-friendly-url-reactive.md).
 
 </div>
 
@@ -172,22 +172,22 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 
 1. Make sure you have followed all the steps in the OutSystems Platform Server installation checklist;
 
-2. Grant write and modify permissions to the ‘logs’ directory (located under your OutSystems Platform Server installation directory) for the IIS_IUSRS group.
+1. Grant write and modify permissions to the ‘logs’ directory (located under your OutSystems Platform Server installation directory) for the IIS_IUSRS group.
 
-3. Launch Internet Information Services (IIS) Manager. In the Windows Start Menu, select **Server Manager**, select **Tools**, and then select the **Internet Information Services (IIS) Manager’ application**.
+1. Launch Internet Information Services (IIS) Manager. In the Windows Start Menu, select **Server Manager**, select **Tools**, and then select the **Internet Information Services (IIS) Manager’ application**.
 
     ![ ](images/seo-friendly-urls_12.png)
 
 
-4. In the IIS Manager tree, under the **Sites** folder, select **Default Web Site**;
+1. In the IIS Manager tree, under the **Sites** folder, select **Default Web Site**;
 
     ![ ](images/seo-friendly-urls_8.png)
 
-5. Double-click on **ISAPI Filters** icon to open it, and then click on the **Add** link on the **Actions** pane;
+1. Double-click on **ISAPI Filters** icon to open it, and then click on the **Add** link on the **Actions** pane;
 
     ![ ](images/seo-friendly-urls_9.png)
 
-6. Set the **Filter Name** to 'OutSystems ISAPI Filter', and the 'Executable' to:
+1. Set the **Filter Name** to 'OutSystems ISAPI Filter', and the 'Executable' to:
 
     * 32-bit Operating Systems: `<your_OutSystems_Installation_Directory>\OutSystems\Platform Server\OsISAPIFilter.dll`
 
@@ -197,23 +197,23 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 
     * Press ‘OK’ button to finish adding the 'OutSystems ISAPI Filter'
 
-7. In the IIS Manager tree, under the **Application Pools** folder, select the **DefaultAppPool** pool and then click on **View Applications** on the **Actions** pane on the right side:
+1. In the IIS Manager tree, under the **Application Pools** folder, select the **DefaultAppPool** pool and then click on **View Applications** on the **Actions** pane on the right side:
 
     ![ ](images/seo-friendly-urls_13.png)
 
     * If the 'Root Application' Virtual Path is listed under **DefaultAppPool**, double-click it and change the 'Application pool' for 'Root Application' to **OutSystemsApplications**.
 
-8. Test accessing a URL in your browser, for example: [http://localhost/ServiceCenter](http://localhost/ServiceCenter). If it's not working, reset your IIS by doing the following:
+1. Test accessing a URL in your browser, for example: [http://localhost/ServiceCenter](http://localhost/ServiceCenter). If it's not working, reset your IIS by doing the following:
 
     1. Open a Command Line window;
 
-    2. Execute the IISReset command.
+    1. Execute the IISReset command.
 
-    3. After the reset is complete, try accessing the URL again to be sure everything is working. 
+    1. After the reset is complete, try accessing the URL again to be sure everything is working. 
 
-9. Finally, check that the ISAPI Filter is working properly: open Windows Event Viewer, in the Application logs look for entries with ‘OutSystems ISAPI Filter’ as Source, and check that no errors occurred;
+1. Finally, check that the ISAPI Filter is working properly: open Windows Event Viewer, in the Application logs look for entries with ‘OutSystems ISAPI Filter’ as Source, and check that no errors occurred;
 
-10. The ISAPI Filter is set up and ready for use.
+1. The ISAPI Filter is set up and ready for use.
 
 ### Logging
 

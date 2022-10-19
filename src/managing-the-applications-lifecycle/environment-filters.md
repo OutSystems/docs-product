@@ -21,9 +21,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 </div>
 
-The landing page of the **LifeTime Management Console** (**Applications** list screen) gives IT users a high-level view of the state of their application portfolio. It provides information on the state of existing applications across the different environments that compose the infrastructure and it is the starting point for many  business needs, such as checking application details, staging application versions across environments up to managing user permissions, and infrastructure-level configurations.
-
-Using the filters feature allows you to create a custom view to suit your business needs, such as checking application details, staging application versions across environments up to managing user permissions, and infrastructure-level configurations.
+The landing page of the **LifeTime Management Console** (**Applications** list screen) gives IT users a high-level view of the state of their application portfolio. It provides information on the state of existing applications across the different environments that compose the infrastructure and it's the starting point for many  business needs, such as checking application details, staging application versions across environments up to managing user permissions, and infrastructure-level configurations.
 
 ![Applications screen](images/applications-lt.png)
 

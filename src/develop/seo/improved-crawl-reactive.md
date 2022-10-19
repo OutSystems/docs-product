@@ -51,7 +51,7 @@ To create a static sitemap, follow these steps:
 
 <div class="info" markdown="1">
 
- If you use [custom URLs](seo-friendly-url-reactive.md#custom-screen-urls) on any of the screens in your app, you must adapt the Assigns in the REST method to reflect the custom URL pattern.
+If you use [custom URLs](seo-friendly-url-reactive.md#custom-screen-urls) on any of the screens in your app, you must adapt the Assigns in the REST method to reflect the custom URL pattern.
 </div>
 
 <div class="info" markdown="1">
@@ -61,7 +61,8 @@ To see an example of an app with a REST endpoint implemented, you can download t
 **Note**: The sample app is a reference only and is not to be used to generate a REST endpoint. You can copy and paste the REST logic and adapt it in your app.
 
 </div>
-  
+
+
 1. In **Service Studio**, go to the **Logic** tab and expand the **Integrations** folder.
 
     ![Navigate to the Integrations folder](images/integrations-ss.png)
@@ -70,7 +71,7 @@ To see an example of an app with a REST endpoint implemented, you can download t
 
     ![Select expose REST API](images/expose-rest-ss.png)
 
-1. Enter a nae for the API.
+1. Enter a name for the API.
 
     ![Enter a name for the API](images/location-ss.png)
 
@@ -103,7 +104,7 @@ To see an example of an app with a REST endpoint implemented, you can download t
 
     ```
      
-    To achieve the XML formatted list that includes all URL endpoints, there must be a hostname that is the same for all URLs. Consider having a local variable to easily reuse this hostname across every screen.
+    To achieve the XML formatted list that includes all URL endpoints, there must be a hostname that's the same for all URLs. Consider having a local variable to easily reuse this hostname across every screen.
 
 1. Add URLs for screens without input parameters (static screens).
 
@@ -111,7 +112,7 @@ To see an example of an app with a REST endpoint implemented, you can download t
 
 1. To validate the sitemap output, go to the method URL, right-click the REST API and select **Open documentation**. Then click **GET**, copy the **Request URL** and paste it in a new browser tab.
 
-    A list of URLs for your app’s screens are displayed. Validate if new URLs appear in the REST endpoint, verify that the number of URLs does not exceed 50,000 and that the filesize of the generated xml is below 50 mb.
+    A list of URLs for your app’s screens are displayed. Validate if new URLs appear in the REST endpoint, verify that the number of URLs doesn't exceed 50,000 and that the filesize of the generated xml is below 50 mb.
 
 ##### Add sitemap.xml to the root directory of a domain
 

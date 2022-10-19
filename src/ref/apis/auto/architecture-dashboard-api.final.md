@@ -6,7 +6,7 @@ guid: 29A5FD23-8A6E-4B2B-853F-58AD0A34C560
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# AI Mentor Studio API
+# Architecture Dashboard API
 
 <style>
 
@@ -560,9 +560,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
         }
 </style>
 
-AI Mentor Studio API helps you manage technical debt, allowing you to use its data in third-party tools. This enables you to:
+Architecture Dashboard API helps you manage technical debt, allowing you to use its data in third-party tools. This enables you to:
 
-* Integrate technical debt data from [AI Mentor Studio](../../../managing-the-applications-lifecycle/manage-tech-debt/intro.md) with other technical debt and BI tools you already use.
+* Integrate technical debt data from [Architecture Dashboard](../../../managing-the-applications-lifecycle/manage-tech-debt/intro.md) with other technical debt and BI tools you already use.
 
 * Use technical debt data as a quality gate of an automated CI/CD pipeline. This ensures that deploys meet a predefined technical debt value.   
 
@@ -572,11 +572,11 @@ Note: New findings are only processed every 12 hours.
 
 </div>
 
-To authenticate your API requests, follow the guidelines in the [AI Mentor Studio API authentication](../architecture-dashboard/ad-api-authentication.md) article.
+To authenticate your API requests, follow the guidelines in the [Architecture Dashboard API authentication](../architecture-dashboard/ad-api-authentication.md) article.
 
-You can access the Swagger file from the [AI Mentor Studio API page](https://architecture.outsystems.com/ArchitectureDashboardAPI/rest/V1/):
+You can access the Swagger file from the [Architecture Dashboard API page](https://architecture.outsystems.com/ArchitectureDashboardAPI/rest/V1/):
 
-![AI Mentor Studio API page, where you can download the swagger by clicking **swagger.json**.](images/api-swagger-ad.png)
+![Architecture Dashboard API page, where you can download the swagger by clicking **swagger.json**.](images/api-swagger-ad.png)
 
 <div class="container">
 <h1>V1</h1>
@@ -841,7 +841,7 @@ Offset
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Architecture Dashboard API feature isn't licensed.</p>
 
 </div>
 </div>
@@ -1054,7 +1054,7 @@ Tags:
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Architecture Dashboard API feature isn't licensed.</p>
 
 </div>
 </div>
@@ -1218,7 +1218,7 @@ Tags:
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Architecture Dashboard API feature isn't licensed.</p>
 
 </div>
 </div>
@@ -1382,7 +1382,7 @@ Tags:
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Architecture Dashboard API feature isn't licensed.</p>
 
 </div>
 </div>
@@ -1577,7 +1577,7 @@ Team
 <dd class="sw-response-403">
 <div class="row">
 <div class="col-md-12">
-<p>Infrastructure is inactive, or the AI Mentor Studio API feature isn't licensed.</p>
+<p>Infrastructure is inactive, or the Architecture Dashboard API feature isn't licensed.</p>
 
 </div>
 </div>

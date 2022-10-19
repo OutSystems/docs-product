@@ -1,6 +1,6 @@
 ---
 tags: article-page
-summary: Up to date list of code patterns analyzed by the current version of AI Mentor Studio.
+summary: Up to date list of code patterns analyzed by the current version of Architecture Dashboard.
 en_title: Code Patterns
 locale: en-us
 guid: a7187cf7-6f1d-4f7c-8141-03f856639f08
@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Code Analysis Patterns
 
-This topic includes the list of code patterns analyzed by the current version of AI Mentor Studio.
+This topic includes the list of code patterns analyzed by the current version of Architecture Dashboard.
 The patterns that only apply to a subset of the type of apps, include that information. 
 
 ## Architecture
@@ -267,7 +267,7 @@ Use `ROWNUM` (for Oracle) or `TOP` (for MS SQL Server) in the SQL query to limit
 
 <div class="info" markdown="1">
 
-Available with **AI Mentor Studio probes 4.0 onwards**.
+Available with **Architecture Dashboard probes 4.0 onwards**.
 
 </div>
 
@@ -287,7 +287,7 @@ In case you have an Aggregate to fetch the master entity before the cycle follow
 
 <div class="info" markdown="1">
 
-Available with **AI Mentor Studio probes 4.0 onwards**.
+Available with **Architecture Dashboard probes 4.0 onwards**.
 
 </div>
 
@@ -799,7 +799,7 @@ Do one of the following:
 
 Applies to **Reactive Web** and **Mobile** apps only.
 
-Available with **AI Mentor Studio probes 4.0 onwards**.
+Available with **Architecture Dashboard probes 4.0 onwards**.
 
 </div>
 

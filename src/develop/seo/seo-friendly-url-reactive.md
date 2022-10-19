@@ -195,10 +195,12 @@ Choosing a redirect depends on how long you expect the redirect to be in place a
 
 To use a redirect rule, you should consider the following redirect rules used by the OutSystems platform:  
 1. HTTP 301 (permanent):  
-* A 301 redirect signals a permanent redirect from one URL to another, meaning all users who request an old URL are automatically sent to a new URL. A 301 redirect passes all ranking power from the old URL to the new URL, and is most commonly used when a page has been permanently moved or removed from a website. While a 301 redirect can load the new URL faster on the next visit, if you want to revert this redirect, it may take months for the search engines to recognize the changes.   
+
+    A 301 redirect signals a permanent redirect from one URL to another, meaning all users who request an old URL are automatically sent to a new URL. A 301 redirect passes all ranking power from the old URL to the new URL, and is most commonly used when a page has been permanently moved or removed from a website. While a 301 redirect can load the new URL faster on the next visit, if you want to revert this redirect, it may take months for the search engines to recognize the changes.   
 
 1. HTTP 302 (temporary):  
-* A 302 redirect ensures that changes to a forwarding address are quick, so traffic moves to your new location rapidly. The original page remains indexed in the search engine and no value is transferred to the new URL because the search engine knows this is just temporary. Temporary redirects are useful when you want to perform tests, for example.  
+
+    A 302 redirect ensures that changes to a forwarding address are quick, so traffic moves to your new location rapidly. The original page remains indexed in the search engine and no value is transferred to the new URL because the search engine knows this is just temporary. Temporary redirects are useful when you want to perform tests, for example.  
 
 ### Managing redirect rules  
 

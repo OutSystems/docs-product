@@ -1,3 +1,7 @@
 {
     "git.rebaseWhenSync": true,
+    "spellchecker.ignoreWordsList": [
+        "prioritization",
+        "Prioritization"
+    ],
 }

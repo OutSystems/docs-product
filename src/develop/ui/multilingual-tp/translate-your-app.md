@@ -121,6 +121,13 @@ Follow these steps to translate the text in Static Entities and show the transla
 2. While still in the translation editor, enter the translation in the **Translation in (language code)** cell and click **Done**.
 
     ![Translation editor](images/static-entity-translate-ss.png)
+    
+    <div class="info" markdown="1">
+
+    Translations for static entity records are defined in the same module as the static entity 
+    records. The static entity records and the translations can then be referenced in a UI module.
+    
+    </div>
 
 3. In the logic, to switch the locale, add **Refresh Data** just after the **SetCurrentLocale** action and select the Static Entity.
 

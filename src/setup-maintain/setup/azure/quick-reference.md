@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 This article describes the Azure resources deployed by [OutSystems on Microsoft Azure](intro.md "OutSystems on Microsoft Azure Overview") solution template, which contains the OutSystems Development, Test, Production, and [LifeTime deployment management console](../../../managing-the-applications-lifecycle/intro.md) environments.
 
-## Azure Resources
+## Azure Resources 
 
 The Azure resources that the OutSystems on Microsoft Azure solution template deploys follow naming conventions based on the general [Azure naming conventions](https://docs.microsoft.com/en-us/azure/architecture/best-practices/naming-conventions). You can identify the deployed resources by the following:
 
@@ -60,7 +60,7 @@ Each **solution template** deployment has an associated storage account. This st
 
 ### Application Gateways and Public IP Addresses
 
-Each environment has an **application gateway** with an associated **public IP address**. This public IP Address is the entry point to the environment.
+Each environment has an **application gateway** with an associated **public IP address**. This public IP Address is the entry point to the environment. Note that configurations involving private IP addresses, private-links and private endpoints are not part of the **OutSystems on Microsoft Azure Overview** solution template.
 
 For example, if you have two front-end servers in your production environment, the entry point of the environment is the public IP address associated with the production application gateway.
 

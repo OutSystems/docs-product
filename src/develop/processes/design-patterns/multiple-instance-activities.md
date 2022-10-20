@@ -25,7 +25,7 @@ As an example, think of a recruitment process for candidates who apply for a job
 
 When the **CandidateSelection** process is executed the following occurs:
 
-1. In the [Human Activity](<../../../ref/lang/auto/Class.Human Activity.final.md>) interviews are scheduled (created).
+1. In the [Human Activity](<../../../ref/lang/auto/Class.Human_Activity.final.md>) interviews are scheduled (created).
 
 2. One instance of the **CandidateInterview** process is executed per scheduled interview (the process is configured that way in its `Launch On` property).
 
@@ -39,7 +39,7 @@ When the **CandidateSelection** process is executed the following occurs:
 
 When the process is executed the following occurs:
 
-1. In the [ScheduleInterviews](<../../../ref/lang/auto/Class.Human Activity.final.md>) human activity interviews are scheduled (created).
+1. In the [ScheduleInterviews](<../../../ref/lang/auto/Class.Human_Activity.final.md>) human activity interviews are scheduled (created).
 
 2. One instance of the [Conditional Start](<../../../ref/lang/auto/Class.Conditional Start.final.md>) is executed per scheduled interview (it is configured that way in its `Start On` property).
 

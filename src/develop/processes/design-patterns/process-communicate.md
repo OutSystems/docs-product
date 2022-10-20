@@ -36,7 +36,7 @@ One way of ending the execution of an activity in a process is through the **Act
 
 The other way is to use extended actions, which are directly bound to the activity:
 
-* [Close&lt;Human Activity&gt;](../actions-extended/close-human-activity-action.md): Ends the execution of a [Human Activity](<../../../ref/lang/auto/Class.Human Activity.final.md>) in a process. You may use it for, for example, explicitly end the execution of a human activity that is no longer necessary.
+* [Close&lt;Human Activity&gt;](../actions-extended/close-human-activity-action.md): Ends the execution of a [Human Activity](<../../../ref/lang/auto/Class.Human_Activity.final.md>) in a process. You may use it for, for example, explicitly end the execution of a human activity that is no longer necessary.
 
 * [Close&lt;Wait&gt;](../actions-extended/close-wait-action.md): Ends the execution of a [Wait](<../../../ref/lang/auto/Class.Wait.final.md>) in a process. You may use it for, for example, to explicitly end a wait activity in a process when another process reaches a certain point in its flow.
 
@@ -61,7 +61,7 @@ Design the flow in a [Conditional Start](<../../../ref/lang/auto/Class.Condition
 
 Use the `Close On` property of activities to implicitly end their execution when an entity is either created or updated:
 
-* [Human Activity](<../../../ref/lang/auto/Class.Human Activity.final.md>): for example, end the execution of a human activity when an entity is updated with a specific value;
+* [Human Activity](<../../../ref/lang/auto/Class.Human_Activity.final.md>): for example, end the execution of a human activity when an entity is updated with a specific value;
 
 * [Wait](<../../../ref/lang/auto/Class.Wait.final.md>): for example, implement a waiting activity in a process that waits until another process updates an entity with a specific value.
 

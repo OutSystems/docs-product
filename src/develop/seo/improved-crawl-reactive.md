@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: 
+summary: SEO strategies to improve the ranking of your domain in search results begins with indexing your pages. To do this, you need to ensure that your pages are crawler-friendly.  
+tags: runtime-traditionalweb
 locale: en-us
 guid: 7D2154CF-186A-4671-89FA-88C7C25FBBC8
 app_type: traditional web apps, reactive web apps

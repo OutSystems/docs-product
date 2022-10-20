@@ -61,13 +61,17 @@ If there's a previous version of the probes installed there's no need to uninsta
 
 ### How do I uninstall Architecture Dashboard Probes?
 
-Removing the probes from the infrastructure (both LifeTime and code analysis environments) is the only necessary step to uninstall Architecture Dashboard. Delete the following applications from both environments:
+To uninstall Architecture Dashboard Probes, delete the following applications from both the LifeTime and code analysis environments:
 
 * **Architecture Dashboard Environment Probe**
 * **Architecture Dashboard LifeTime Probe**
 * **Architecture Dashboard Shared**
 
-By doing this, the LifeTime Plugin is removed and the infrastructure will be deactivated on Architecture Dashboard, revoking the user's access.
+<div class="info" markdown="1">
+
+Uninstalling Architecture Dashboard Probes doesn’t unregister your infrastructure from Architecture Dashboard. Your infrastructure remains registered, although there are no more syncs between your infrastructure and Architecture Dashboard. If you want to unregister your infrastructure or make a new registration, [contact OutSystems Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support).
+
+</div>
 
 ### Can I change the target environment of a code analysis probe?
 

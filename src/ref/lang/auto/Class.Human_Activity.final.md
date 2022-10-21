@@ -6,7 +6,7 @@ guid: b12f9d3c-1906-4055-9d24-7f782397cf09
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Human Activity
+# Human Activity 
 
 When designing the process flow of your process, you can add work to be carried out by the end user. This behavior is implemented through the **Human Activity** process activity, which you can drag onto your canvas from the [Process Flow Toolbox](<../../../develop/processes/process-flow/process-flow-toolbox.md>).
 

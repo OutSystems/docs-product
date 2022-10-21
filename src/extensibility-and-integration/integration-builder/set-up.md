@@ -6,7 +6,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to set up Integration Builder
 
-Integration Builder is a Software as a Service (SaaS) that connects to your OutSystems environment to authenticate and validate user connections. Integration Builder works with Integration Manager to keep the status of your integrations current, so it needs to be able to connect with the environments to which you deploy the integrations. In addition, Integration Builder is available in all OutSystems editions.  
+Integration Builder is a Software as a Service (SaaS) that connects to your OutSystems environment to authenticate and validate user connections. Integration Builder works with Integration Manager to keep the status of your integrations current, so it needs to be able to connect with the environments to which you deploy the integrations. In addition, Integration Builder is available in all OutSystems editions.
 
 ![Integration Builder connects to your environments](images/architecture-ib-setup-diag.png.png)
 
@@ -16,13 +16,32 @@ Integration Builder is a Software as a Service (SaaS) that connects to your OutS
 
 * Use the latest version of any of the following desktop browsers: Edge, Firefox, Google Chrome, or Safari.
 
-* Your environments are associated with any available [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/), inclding Free, Standard, or Enterprise. **You can use your Personal Environment with Integration Builder**.
+* Your environments are associated with any available [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/), including Free, Standard, or Enterprise. **You can use your Personal Environment with Integration Builder**.
 
 * All environments, except for the LifeTime environment, must:
 
     * Use [Platform Server 11.7.2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#Platform_Server_11.7.2) or later.
 
     * Allow inbound and outbound HTTPS communication (port 443) with `https://integrationbuilder.outsystems.com`. The Integration Builder will use the environment's public DNS hostname to communicate. Check [Integration Builder network requirements](../../setup-maintain/setup/network-requirements.md#integration-builder) for detailed information.
+
+<div class="info" markdown="1">
+
+* It's unnecessary to connect Integration Builder to all your environments,
+  although a connection to the development environment is mandatory. If you
+  want to block Integration Builder from connecting to other environments,
+  there are a few limitations:
+
+    * Development Connections (created automatically by Integration Builder in
+      a Dev environment for testing purposes) won't work. It's necessary to
+      define your own connection.
+
+    * Sending emails through Integration Manager to administrators to
+      request new connections or assistants won't work.
+
+    * Automatic creation of connections in Integration Manager won't work. Manual creation is still possible.
+
+</div>
+
 
 <div class="info" markdown="1">
 

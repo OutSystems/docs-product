@@ -14,9 +14,9 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
-Provides methods for doing client side role checks. Used to programmatically show or hide UI elements depending on a given role.
+Provides methods for performing client side role checks. Used to programmatically show or hide UI elements depending on a given role.
 
-**IMPORTANT** This API should not be used for security checks, but only for purposes of convenience. Developers should always verify the user's role(s) on the server side before querying or storing any sensitive data.
+**Note:** This API is not intended to be used for security checks, but solely as a convenient means of making UI decisions (for example, showing or hiding UI elements) on the client side. As a best practice, OutSystems recommends to always check the user's role on the server side before any sensitive operations (for example, saving data) are restricted based on the user's role.
 
 ## Summary
 
@@ -32,7 +32,7 @@ Provides methods for doing client side role checks. Used to programmatically sho
 
 Checks if the current user has the given role.
 
-Tip: module roles are available through the `$roles` pre-defined object.
+Tip: Module roles are available through the `$roles` pre-defined object.
 
 Example:
 

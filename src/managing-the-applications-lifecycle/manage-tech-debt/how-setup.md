@@ -16,7 +16,7 @@ This topic shows you how to add an infrastructure and what the prerequisites are
 
 To change the language of Architecture Dashboard select your user name, then select a language under **Language**.
 
-![Change language](images/setup-language.png)
+![Change language](images/setup-language-ad.png)
 
 </div>
 
@@ -24,14 +24,14 @@ To change the language of Architecture Dashboard select your user name, then sel
 
 When you log in to [Architecture Dashboard](https://architecture.outsystems.com/) for the first time you are shown a welcome screen.
 
-![Welcome screen](images/setup-choose.png?width=600)
+![Welcome screen](images/setup-choose-ad.png)
 
 Select one of the options shown in the welcome screen:
 
 [Register and set up my infrastructure](#register)
 :   Choose this option if your infrastructure isn't registered in Architecture Dashboard. You must be an Administrator in LifeTime.
 
-[Associate your IT user with Architecture Dashboard](#associate).
+[Associate my IT user with Architecture Dashboard](#associate)
 :   Choose this option if your infrastructure is already registered in Architecture Dashboard.
 
 ## Register and set up your infrastructure in Architecture Dashboard {#register}
@@ -44,14 +44,14 @@ Before registering and setting up your infrastructure in Architecture Dashboard,
 
 * **LifeTime** is deployed in a **dedicated environment**.
 
-* For infrastructures using **OutSystems 11**:
+* Your infrastructure uses **OutSystems 11**.
 
-    * Your development environment uses **Platform Server Release Apr.2019** or later.
-    * Your LifeTime environment uses **LifeTime Management Console Release Jul.2019** or later.	
+* Your development environment uses **Platform Server Release Apr.2019** or later.
 
-* For infrastructures using **OutSystems 10**, your environments use **Platform Server - 10.0.200.0 (.NET)** or later.
+* Your LifeTime environment uses **LifeTime Management Console Release Jul.2019** or later.	
 
 * Allow outbound HTTPS communication (port 443) from the  **LifeTime environment** to `https://architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard`. Check [Architecture Dashboard network requirements for detailed information](../../setup-maintain/setup/network-requirements.md#architecture-dashboard).
+
 * You have the **Administrator** role in your infrastructure.
 
 ### Register and set up your infrastructure
@@ -62,7 +62,7 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 
 1. Enter your **Activation Code**.
 
-    ![Enter your Activation Code](images/setup-infrastructure-activation-code.png)
+    ![Activation Code](images/setup-infrastructure-activation-code-ad.png)
 
     <div class="info" markdown="1">
 
@@ -72,13 +72,13 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 
 1. Check the information and select **Register**.
 
-    ![Register infrastructure](images/setup-infrastructure-activation-code-more.png)
+    ![Register infrastructure step](images/setup-code-names-ad.png)
 
 1. Read the **Architecture Dashboard disclaimer** with the terms and conditions. If you agree select **Accept and continue**.
 
 1. Enter the address of your development environment.
 
-    ![Enter your development environment address](images/setup-infrastructure-dev-probe-address.png)
+    ![Enter your development environment address](images/setup-infrastructure-dev-probe-address-ad.png)
 
 1. Follow the procedure shown in Architecture Dashboard to install the Development probe:
 
@@ -90,7 +90,7 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 
 1. Enter the address of your LifeTime environment.
 
-    ![Enter LifeTime environment address](images/setup-infrastructure-lifetime-probe-address.png)
+    ![Enter LifeTime environment address](images/setup-infrastructure-lifetime-probe-address-ad.png)
 
 1. Follow the procedure shown in Architecture Dashboard to install the LifeTime probe:
 
@@ -103,12 +103,6 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 1. After completing the previous steps, select the **I confirm I completed all the steps above.** check box and select **Next**.
 
 1. After you are redirected to LifeTime, log in with your IT user.
-
-    <div class="info" markdown="1">
-
-    If your infrastructure uses **OutSystems 10**, go to [How to configure Architecture Dashboard probes in OutSystems 10](how-probes-o10.md) and follow the procedure.
-
-    </div>
 
 1. Configure the **Code analysis** probe by selecting the development environment as the **Target environment**. 
 
@@ -126,7 +120,7 @@ To set up your infrastructure in Architecture Dashboard, follow these steps:
 
 1. After you are redirected to Architecture Dashboard, associate your IT user with Architecture Dashboard:
 
-    ![Associate your IT user with Architecture Dashboard](images/setup-associate-accept.png)
+    ![Associate your IT user with Architecture Dashboard](images/setup-associate-accept-ad.png)
 
     1. Check the **Installation details** and read the **privacy policy** carefully.
 

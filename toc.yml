@@ -215,12 +215,14 @@
                         - href: develop/ui/patterns/mobile/interaction/map/map.md
                         - href: develop/ui/patterns/mobile/interaction/map/addmarker.md
                         - href: develop/ui/patterns/mobile/interaction/map/dragmarker.md
+                    - href: develop/ui/patterns/mobile/interaction/monthpicker.md
                     - href: develop/ui/patterns/mobile/interaction/rangeslider.md
                     - href: develop/ui/patterns/mobile/interaction/rangesliderinterval.md
                     - href: develop/ui/patterns/mobile/interaction/scrollablearea.md
                     - href: develop/ui/patterns/mobile/interaction/search.md
                     - href: develop/ui/patterns/mobile/interaction/sidebar.md
                     - href: develop/ui/patterns/mobile/interaction/stackedcards.md
+                    - href: develop/ui/patterns/mobile/interaction/timepicker.md
                     - href: develop/ui/patterns/mobile/interaction/video.md
             - topics:
                 - href: develop/ui/patterns/mobile/navigation/intro.md

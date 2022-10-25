@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: 
+summary: Search engine optimization (SEO) is the process of improving a website’s content and technical configuration to increase its ranking in search engine results pages (SERPs).
+tags: runtime-traditionalweb
 locale: en-us
 guid: C07BCA11-7DB2-49FD-B01B-97EBFBDCF36F
 app_type: traditional web apps, reactive web apps

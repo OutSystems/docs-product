@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: 
+summary: SEO strategies to improve the ranking of your domain in search results begins with indexing your pages. To do this, you need to ensure that your pages are crawler-friendly.  
+tags: runtime-traditionalweb
 locale: en-us
 guid: 7D2154CF-186A-4671-89FA-88C7C25FBBC8
 app_type: traditional web apps, reactive web apps
@@ -20,7 +20,7 @@ The sitemap.xml and robots.txt files let you control website crawlers and index 
 
 This diagram explains the connection between crawlers, sitemaps, and robots:
 
-![Diagram showing the connection between crawlers, sitemaps, and robots](images/add-filename-diag.png)
+![Diagram showing the connection between crawlers, sitemaps, and robots](images/connection-between-crawlers-sitemaps-robots-diag.png)
 
 ### Sitemap.xml 
 
@@ -274,3 +274,5 @@ The **developer** and **deployer** collaborate to generate a sitemap.
 1. In **LifeTime**, the deployer marks the hotfix as solved, and then submits the sitemap to search engines.
 
     **Note**: This occurs only when the changes are in the Production environment (must be a public facing environment).
+
+

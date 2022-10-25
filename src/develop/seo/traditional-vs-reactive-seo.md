@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: 
+summary: The SEO behavior between Reactive and Traditional Web apps is broadly similar, with the exception of module aliases which are not supported for Reactive web apps but can be achieved through site rules instead.
+tags: runtime-traditionalweb
 locale: en-us
 guid: 74EB0BCA-31AD-4EA8-8892-6FA2A2011664
 app_type: traditional web apps, reactive web apps

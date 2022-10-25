@@ -46,7 +46,6 @@ Group, Status and User
 :   This will return a list of one of the selected types of identifiers if the rule conditions are met. Note that for these specific items, there is currently no extra validations included in the API to guarantee that you are really returning those types of items. This means that the correct definition of data needs to be guaranteed by the developer.
 
 You will also need to identify which **Case Definition Id** is related to this rule and you are set to go.
-We will be covering the external rules and URL in a future document.
 
 ### Step 2 - Rule Group
 

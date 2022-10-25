@@ -102,7 +102,7 @@ experiencebuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)
 
 ### Integration Builder
 
-[Integration Builder](https://integrationbuilder.outsystems.com/) must be able to connect to the environments where you deploy integrations. Ensure that the front ends of the environments accept inbound connections from the **Source** address. For example, for a standard infrastructure, Integration Builder must be able to connect to the development, quality assurance, and production environments but doesn't need to connect to the LifeTime.
+[Integration Builder](https://integrationbuilder.outsystems.com/) should be able to connect to the environments where you deploy integrations*. When connecting Integration Builder to all your environments, ensure that the front ends of the environments accept inbound connections from the **Source** address. For example, for a standard infrastructure, Integration Builder should be able to connect to the development, quality assurance, and production environments but doesn't need to connect to LifeTime.
 
 Alternatively, ensure that the front ends of the environments used with Integration Builder accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
@@ -112,6 +112,18 @@ Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
 integrationbuilder.outsystems.com|Environment Front-End<br/>(public DNS hostname)|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
 Environment Front-End|integrationbuilder.outsystems.com|443|HTTPS|52.51.203.1<br/>108.128.2.246<br/>54.228.47.100<br/>63.33.151.194<br/>34.241.56.16<br/>54.75.124.221
+
+It's not mandatory to have Integration Builder connected to **all your environments**. Only a development environment is mandatory. However, there are a few limitations on environments that are not connected to Integration Builder:
+
+* Development Connections (created automatically by Integration Builder in a
+  Dev environment for testing purposes) won't work. It's necessary to define
+  your own connection.
+
+* Sending emails through Integration Manager to administrators to request new
+  connections or assistants won't work.
+
+* Automatic creation of connections in Integration Manager won't work. Manual
+  creation is still possible.
 
 ### Workflow Builder
 
@@ -140,7 +152,7 @@ You need to have bidirectional secure communication between the front-end of the
 
 ### Architecture Dashboard
 
-To use [Architecture Dashboard](https://architecture.outsystems.com), the Architecture Dashboard LifeTime plugin must be able to communicate with the Architecture Dashboard SaaS. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work). 
+To use [Architecture Dashboard](https://architecture.outsystems.com), the Architecture Dashboard LifeTime plugin must be able to communicate with the Architecture Dashboard SaaS. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work).
 
 Depending on the version of the Architecture Dashboard probe, ensure that one of the following destination endpoints is reachable:
 
@@ -148,4 +160,4 @@ Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
 LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or higher** of the Architecture Dashboard LifeTime probes.
 LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the Architecture Dashboard LifeTime probes.
- 
+

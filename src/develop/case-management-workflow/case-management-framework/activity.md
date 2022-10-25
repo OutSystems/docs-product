@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Activities
 
-When you need the end user to make a decision or to act before a case advances, you use [Human Activities](../../../ref/lang/auto/Class.Human Activity.final.md). In the context of the Case Management framework,  Human Activities are referred to as **activities**.
+When you need the end user to make a decision or to act before a case advances, you use [Human Activities](../../../ref/lang/auto/Class.Human_Activity.final.md) . In the context of the Case Management framework,  Human Activities are referred to as **activities**.
 
 The Case Management framework includes a set of API actions in the [Case Services API](./ref/auto/CaseServices_API.final.md) module that expand the functionality of activities.
 

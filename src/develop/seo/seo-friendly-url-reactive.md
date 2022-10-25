@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: 
+summary: SEO-friendly URLs for Reactive Web apps 
+tags: runtime-traditionalweb
 locale: en-us
 guid: 294F6709-2351-4992-832F-4DAE431D3E5F
 app_type: traditional web apps, reactive web apps
@@ -73,16 +73,16 @@ To create a site rule, follow these steps:
 
 1. Go to **Service Center** > **Administration** > **SEO URLs** > **Site Rules List**.  
 
-    ![Creating site rules](images/create-site-rules-1-ss.png)  
+    ![Creating site rules](images/create-site-rules-1-sc.png)  
 
 
 1. Select **New Site Rule**.  
 
-    ![Creating site rules](images/Create_Site_Rules_2_ss.png)  
+    ![Creating site rules](images/create-site-rules-2-sc.png)  
 
 1. Enter the **Base URL** and the **Root Application**, and select **Create**.  
 
-    ![Creating site rules](images/Create_Site_Rules_3_ss.png)  
+    ![Creating site rules](images/create-site-rules-3-sc.png)  
 
     As a result, you've enabled a new site rule.  
     You also have the option to select a site rule and edit, delete, or disable the **Base URL**.  
@@ -210,7 +210,7 @@ To manage redirect rules you need to know the following:
 
 To create, edit, delete, or disable redirect rules go to **Service Center** > **Administration** > **SEO URLs** > **Redirect Rules List**.  
 
-![Managing redirect rules](images/Manage_Redirect_Rules_ss.png)  
+![Managing redirect rules](images/manage-redirect-rules-sc.png)  
 
 ## URL prioritization  
 

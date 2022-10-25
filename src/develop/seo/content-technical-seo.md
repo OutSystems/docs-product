@@ -1,6 +1,6 @@
 ---
-summary: 
-tags: 
+summary: SEO can be categorized into two major categories, content SEO and technical SEO. These categories are both equally important when it comes to your website ranking high in search engine result pages
+tags: runtime-traditionalweb
 locale: en-us
 guid: E0CB30E3-30B2-4593-AACF-97765EB80D45
 app_type: traditional web apps, reactive web apps

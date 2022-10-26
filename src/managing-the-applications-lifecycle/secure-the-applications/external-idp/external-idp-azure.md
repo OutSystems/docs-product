@@ -102,7 +102,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
     * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager’s URI:
 
-        * ``https://<YOUR_ENV>/OsIntegrationManager/OIDC_Callback``
+        * ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``
 
 1. Click **Save**.
 

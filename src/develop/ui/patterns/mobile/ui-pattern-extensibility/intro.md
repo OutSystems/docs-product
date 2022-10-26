@@ -16,7 +16,7 @@ This article refers to the latest version of each UI Pattern only. Some deprecat
 
 Some of  OutSystems UI Patterns are based on external providers. Although these providers have many different extensibility options available, OutSystems only offers a curated list of them using input parameters and client actions.
 
-However, you can access all of the extensibility options offered by the providers by using the following OutSystems extensibility features:
+However, you can access all of the extensibility options offered by the providers by using the following OutSystems extensibility features: 
 
 * [Provider client actions](ext-provider-client-actions.md)
 * [Provider instance and JavaScript](ext-provider-instance-java.md)

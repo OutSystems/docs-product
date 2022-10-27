@@ -36,7 +36,7 @@ Plugin | Description | Supported in PWA
 [File Transfer](<https://www.outsystems.com/forge/component-overview/1409/file-transfer-plugin>) | Lets users upload and download files in the background. | —
 [File Viewer](<https://www.outsystems.com/forge/component-overview/1606/file-viewer-plugin>) | Lets users view remote or app resource files. | —
 [File](<https://www.outsystems.com/forge/component-overview/1633/file-plugin>) | Lets you manage files and folders on a mobile device within the app sandbox. | —
-[Firebase Cloud Messaging](https://www.outsystems.com/forge/component-overview/13299) |  Lets you set a notification experience that resorts to Firebase cross-platform messaging solution. | —
+[Cloud Messaging Plugin (Firebase)](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) |  Give your app users a state-of-the-art notifications experience. | —
 [Health & Fitness](<https://www.outsystems.com/forge/component-overview/11715/health-fitness-plugin>) | Provides access to health and fitness data. Uses HealthKit API for iOS and Google Fit API for Android. | —
 [InApp Browser](<https://www.outsystems.com/forge/component/1558/inappbrowser-plugin/>) | Open external URLs directly in your application. | —
 [Key Store](<https://www.outsystems.com/forge/component/1550/Key+Store+Plugin/>) | Store small amounts of sensitive information on your device. Key Store secures data by encrypting the data before storing it, and the platform itself carefully controls access to stored items. | —

@@ -18,38 +18,20 @@ See [Database Indexes](<../../../ref/data/database/database-indexes.md>) for mor
 
 To create an index for an entity:
 
-1. Open the entity by double-clicking on it or selecting the Indexes property.
-1. Go to the Indexes tab and create a new index.
+1. Right-click the Entity, or click the **Indexes and more** button in the Entity properties.
+
+    ![Edit Entity](./images/create-database-index-edit-entity.png)
+
+1. Click the **New** button to create an index, then set its name on the right pane.
+
+1. If you want this index to restrict records to be unique, change the **Unique** property to **Yes**.
+
+    ![Unique property](./images/create-database-index-unique.png)
+
 1. Add the attributes you want to include in the index.
-1. If you want to have unique values for the selected attributes, set the  Unique property to `Yes`.
-1. To apply the index created in the database, publish the application.
 
+    ![Add Index Attribute](./images/create-database-index-add-attribute.png)
 
-## Example
+1. To apply the index created in the database, publish the module.
 
-This example is based on a simple app that manages customers and orders. 
-
-1. Double-click the **OrderProduct** entity.
-
-1. Open the Review entity by right-clicking on the entity and then **Edit Entity**.
-
-1. On the **Indexes** tab, add a new index by clicking **New** and set the **Name** property.
-
-    In this example, the **Name** property is set to `UniqueProductPerOrder`
-
-1. Set the **Unique** property to **Yes**.
-
-    This ensures the index is unique.
-
-1. From the **(AddAttributes)** dropdown, select the attributes you want to add to the index. 
-
-    In this example, the following are added:
-
-    * OrderId
-    * ProductId
-    
-    This ensures that the same value for these attributes cannot be repeated in other records of **OrderProduct** table.
-
-1. Publish the module. While publishing, OutSystems creates the index in the database. 
-
-Now, when a user tries to add the same product to an order more than once, OutSystems raises a database exception.
+    During the publishing process, OutSystems will create the corresponding database index as defined in the Entity properties.

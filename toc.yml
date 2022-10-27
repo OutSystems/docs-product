@@ -1828,7 +1828,7 @@
             - href: ref/apis/javascript/modules/feedbackmessage.md
             - href: ref/apis/javascript/modules/logger.md
             - href: ref/apis/javascript/classes/navigation.md
-            - href: ref/apis/javascript/modules/security.md
+            - href: ref/apis/javascript/modules/rolecheck.md
             - href: ref/apis/javascript/classes/validation.md
             - href: ref/apis/javascript/classes/view.md
         # LifeTime API v2

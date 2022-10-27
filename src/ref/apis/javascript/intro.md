@@ -32,7 +32,7 @@ $public.FeedbackMessage.showFeedbackMessage("Your data has been submitted.", 1);
 |[Device](modules/device.md)|Provides methods to access native capabilities of the device.|
 |[FeedbackMessage](modules/feedbackmessage.md)|Displays feedback messages to the user. Used to display personalized feedback messages, specifying options like custom style and auto-close behavior.|
 |[Logger](modules/logger.md)|Provides methods to log messages or errors. Used as "console.log" but also logs messages in Service Center.|
-|[Security](modules/security.md)|Provides methods for doing client side role checks. Used to programmatically show or hide UI elements depending on a given role.|
+|[Role Check](modules/rolecheck.md)|Provides methods for doing client side role checks. Used to programmatically show or hide UI elements depending on a given role.|
 
 |Classes|Description|
 |---|---|

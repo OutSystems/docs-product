@@ -245,11 +245,11 @@ Having the Platform Server upgraded in the environment, consider the following s
 
 * On the **Development environment**, the fastest way to upgrade all your applications is by [creating a Solution with all modules](https://success.outsystems.com/Documentation/How-to_Guides/DevOps/Creating_and_using_an_All_Components_solution) and publish the "Current Running Version". If you get any errors publishing the solution, use the appropriate development tool to open the correspondent module and fix the problems. In the end, you can publish the whole solution again to make sure all issues and dependencies are properly resolved.
 
-* For all **non-development environments** (for example, Testing, Production, etc.), it’s recommended to stage the application modules from a previously upgraded environment. Using Service Center (`https://<your_environment>/ServiceCenter`), download the solution and publish it in the new environment, ensuring you don't overwrite the System Components. You can also use the LifeTime management console to stage upgraded applications, when the lifecycle of the applications is perfectly aligned with the upgrade.
+* For all **non-development environments** (for example, Testing, Production, etc.), it’s recommended to stage the application modules from a previously upgraded environment. Use the LifeTime management console to stage applications, when the lifecycle of the applications is perfectly aligned with the upgrade.
 
     <div class="info" markdown="1">
 
-    Keep in mind that this approach for non-development environments is only applicable when the version of the applications on the previous environment is stable and ready to be staged to the next environment (upgrade must be aligned with your release cycle). If that’s not the case, you should perform a code-based upgrade, doing all the fixing and testing directly in each environment.
+    Keep in mind that this approach for non-development environments is only applicable when the version of the applications on the previous environment is stable and ready to be staged to the next environment (upgrade must be aligned with your release cycle). If that’s not the case, you should perform a code-based upgrade, doing all the fixing and testing directly in each environment, following the same procedure as in the **Development environment**.
 
     </div>
 

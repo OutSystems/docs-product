@@ -18,20 +18,25 @@ See [Database Indexes](<../../../ref/data/database/database-indexes.md>) for mor
 
 To create an index for an entity:
 
-1. Right-click the Entity, or click the **Indexes and more** button in the Entity properties.
+1. Right-click the Entity and select **Edit Entity**, or click the **Indexes and more** button in the Entity properties.
 
-    ![Edit Entity](./images/create-database-index-edit-entity.png)
+    ![Edit Entity](<images/create-database-index-edit-entity.png>)
 
-1. Click the **New** button to create an index, then set its name on the right pane.
+1. Click the **New index** button to create an index.
 
-1. If you want this index to restrict records to be unique, change the **Unique** property to **Yes**.
+1. Enter a name for the index.
+    In this example, **OrderProductUnique** is added.
 
-    ![Unique property](./images/create-database-index-unique.png)
+1. If you want this index to be restricted to restrict records only, change the **Unique** property to **Yes**.
+
+    ![Unique property](<images/create-database-index-unique.png>)
 
 1. Add the attributes you want to include in the index.
 
-    ![Add Index Attribute](./images/create-database-index-add-attribute.png)
+    ![Add Index Attribute](<images/create-database-index-add-attribute.png>)
+
+1. Click **Close**.
 
 1. To apply the index created in the database, publish the module.
 
-    During the publishing process, OutSystems will create the corresponding database index as defined in the Entity properties.
+    During the publishing process, OutSystems creates the corresponding database index as defined in the Entity properties.

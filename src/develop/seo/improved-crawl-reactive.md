@@ -56,7 +56,7 @@ If you use [custom URLs](seo-friendly-url-reactive.md#custom-screen-urls) on any
 
 <div class="info" markdown="1">
 
-To see an example of an app with a REST endpoint implemented, you can download the [Sitemap-and-robots sample app](https://files.slack.com/files-pri/T041063TZ-F044A4AU3L2/download/sitemap-and-robots.oap?origin_team=T041063TZ). 
+To see an example of an app with a REST endpoint implemented, you can download the [Sitemap-and-robots sample app](resources/sitemap-and-robots.oap). 
 
 **Note**: The sample app is a reference only and is not to be used to generate a REST endpoint. You can copy and paste the REST logic and adapt it in your app.
 

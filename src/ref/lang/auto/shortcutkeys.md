@@ -26,7 +26,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 |Ctrl+Space|Ctrl+Space|Auto-complete|
 |Ctrl+A|Cmd+A|Select all elements|
 |Ctrl+F4|Cmd+W|Close module|
-|Esc|Esc|Ccancel and close the current pop-up window|
+|Esc|Esc|Cancel and close the current pop-up window|
 |F1||Look for help, by telling us what you want to do|
 |F2||Rename selected element|
 |F4|F4|Open selected dropdwon|
@@ -37,7 +37,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 |Windows|macOS|Description|
 |---|---|---|
 |F5|1-Click Publish|
-|Ctrl+H|Shift+Cmd+H|ide/show warning in TrueChange tab|
+|Ctrl+H|Shift+Cmd+H|Hide/show warning in TrueChange tab|
 |Ctrl+J||Enable/disable Styles Editor|
 |Ctrl+L|Cmd+R|Refresh Aggregate's data preview|
 |Ctrl+M|Shift+Cmd+M|Compare and Merge module with published version|

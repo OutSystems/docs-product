@@ -10,14 +10,17 @@ app_type: traditional web apps, reactive web apps
 
 ## Prerequisites  
 
-SEO-friendly URLs for Reactive Web apps require the following:  
+SEO-friendly URLs for Reactive Web apps require the following: 
+
 * Platform Server 11.14.0 or later.  
+
 * Service Studio 11.13.0 or later.  
-* OutSystems enterprise cloud offer or a self-managed installation configured appropriately. 
+
+* OutSystems enterprise cloud offer or a self-managed installation with [ISAPI filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) activated. 
 
 <div class="info" markdown="1">
 
-For **Platform Server** versions 11.12.0 to 11.14.0 enable the technical preview and use **Service Studio** 11.11 and later. Self-managed installations must have [ISAPI Filters](<https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Customize_or_redirect_the_application_URL#Installing_ISAPI_Filters_and_Logging>) active.
+For **Platform Server** versions 11.12.0 to 11.14.0 enable the technical preview and use **Service Studio** 11.11 and later. Self-managed installations must have [ISAPI Filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) active.
 
 </div>  
 
@@ -224,7 +227,7 @@ Here are some considerations for URL prioritization:
 
 <div class="info" markdown="1">
 
-To create and manage dynamic page titles, go to **Service Studio**. OutSystems introduced dynamic page titles in **Platform Server 11.13.0** and **Service Studio 11.12.0**. OutSystems strongly recommends that you update **Service Studio** before using dynamic page titles in a collaborative environment.
+To create and manage dynamic page titles, go to **Service Studio**. OutSystems introduced dynamic page titles in **Platform Server 11.13.0** and **Service Studio 11.12.0**. OutSystems strongly recommends that you update **Service Studio** before using dynamic page titles, otherwise you won't be able to open modules that use dynamic page titles.
 
 </div>  
 

@@ -5,13 +5,7 @@ guid: A2F9928D-5F44-4DA0-B567-EDC9191E4A7B
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Early Access Program - Fetch data using human language
-
-<div class="info" markdown="1">
-
-This capability is only available for participants in the private Early Access Program (EAP). Request access to the private EAP [here](https://docs.google.com/forms/d/e/1FAIpQLScqvL2IIBTvJ8sklUS8pz7FeayuR8YYPr-YDwtidA8YEou5kw/viewform).
-
-</div>
+# Fetch data using human language
 
 Fetch data in your apps by using everyday language to create queries.
 Ask for data in similar way that you would ask another person, and Service Studio creates an Aggregate to get you that data.
@@ -29,8 +23,6 @@ Fetching data using human language includes the following steps:
 ## Prerequisites
 
 To use this capability ensure the following:
-
-* You're enrolled in the private Early Access Program.
 
 * You're using cross-platform Service Studio version 11.51.9 or later.
 
@@ -66,7 +58,7 @@ You want | You ask
 You want | You ask
 ---|---
 **Employees who live in London** | `Find employees who live in London`
-**Sales managers in London** | `Employees who live in London and whose title is sales manager`  
+**Sales managers in London** | `Employees who live in London and whose title is sales manager`
 **Orders and their descriptions that ship to London** | `Show Details for orders that ship to London`
 **Orders that cost more than $10** | `Show orders with a minimum price of $10`
 **Open orders** | `Get open orders`

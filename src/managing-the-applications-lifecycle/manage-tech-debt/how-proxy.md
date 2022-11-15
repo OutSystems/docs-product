@@ -6,6 +6,11 @@ guid: 06af3d66-f6c3-4827-aa17-36b1124f321b
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
 
 # How to use a proxy to connect to AI Mentor Studio
 

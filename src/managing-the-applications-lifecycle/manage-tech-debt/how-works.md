@@ -6,6 +6,12 @@ guid: f6f9f871-5f0c-4991-a47e-91fa20033627
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
 # How does AI Mentor Studio work
 
 AI Mentor Studio includes the following pieces: 

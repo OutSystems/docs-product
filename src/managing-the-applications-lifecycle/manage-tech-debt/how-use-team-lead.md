@@ -6,6 +6,12 @@ guid: efc039d9-67e7-4824-a8fb-5e65418db58c
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
 # Getting started as a team lead 
 
 As a team lead, **AI Mentor Studio** provides you with an overview of the technical debt of organization's technical debt as well as detailed overview of the technical debt of your teams's apps.

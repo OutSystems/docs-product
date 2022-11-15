@@ -6,6 +6,11 @@ guid: b67d9ffc-b28f-4e00-8ffc-6544f9d66812
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
 
 # How to request a synchronization
 

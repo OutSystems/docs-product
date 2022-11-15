@@ -7,6 +7,12 @@ guid: 429d1c51-f248-425b-902e-2af8b6ec8a2e
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
 # How to change module classifications
 
 You can change a module's classification in the canvas. However, by changing the classification of a module, the classification of the app may be affected. OutSystems AI model receives this reclassification. 

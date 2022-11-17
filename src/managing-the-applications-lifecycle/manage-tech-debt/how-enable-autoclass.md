@@ -6,13 +6,13 @@ guid: 1b423f33-a40a-4659-a633-dad0d32c6432
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+# How to enable or disable auto-classification
+
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
-
-# How to enable or disable auto-classification
 
 AI auto-classification allows you to onboard infrastructures into the AI Mentor Studio and classify each module so that it fits into the right architecture layer.
 

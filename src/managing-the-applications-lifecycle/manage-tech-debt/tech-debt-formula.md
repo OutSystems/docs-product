@@ -6,13 +6,13 @@ guid: 521CF7BD-3CE7-4448-8DDE-B5A751B08B82
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+# How AI Mentor Studio calculates and shows technical debt
+
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
-
-# How AI Mentor Studio calculates and shows technical debt
 
 This article explains how AI Mentor Studio calculates and displays technical debt.  
 

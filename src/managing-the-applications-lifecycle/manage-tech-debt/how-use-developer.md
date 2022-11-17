@@ -6,13 +6,13 @@ guid: 8b0d91f3-f1ee-48c2-8b7e-8a82aeb27ae3
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+# Getting started as a developer
+
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
-
-# Getting started as a developer
 
 As a developer, **AI Mentor Studio** provides you with an overview of the organization's technical debt. It also provides you with a detailed overview of the technical debt of the apps in the infrastructure that need to be fixed so that the overall technical debt score is reduced.
 

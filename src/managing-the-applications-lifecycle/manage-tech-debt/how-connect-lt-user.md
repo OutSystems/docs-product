@@ -6,13 +6,13 @@ guid: c44b61cc-efb4-4829-b08c-93e520c0804e
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+# How to associate an Infrastructure with your AI Mentor Studio account
+
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
-
-# How to associate an Infrastructure with your AI Mentor Studio account
 
 Before you can see an Infrastructure in AI Mentor Studio, you need to associate your AI Mentor Studio account with that Infrastructure.
 

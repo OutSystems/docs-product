@@ -6,13 +6,13 @@ guid: b67d9ffc-b28f-4e00-8ffc-6544f9d66812
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+# How to request a synchronization
+
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
-
-# How to request a synchronization
 
 Synchronization of data between the AI Mentor Studio LifeTime probe and the AI Mentor Studio SaaS occurs every 12 hours, but you may also request unscheduled synchronizations. 
 

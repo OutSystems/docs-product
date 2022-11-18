@@ -5,13 +5,13 @@ guid: 70460AD8-7C84-4D86-9E83-2274E9802B93
 locale: en-us
 ---
 
+# Ignoring modules during tech debt analysis
+
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
-
-# Ignoring modules during tech debt analysis
 
 **AI Mentor Studio** provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment.
 

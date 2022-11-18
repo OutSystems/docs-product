@@ -6,13 +6,13 @@ guid: 115abc7a-0267-4497-868b-d3c09b1e92fa
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+# Getting started with AI Mentor Studio
+
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
-
-# Getting started with AI Mentor Studio
 
 After [Setting up AI Mentor Studio](how-setup.md) and after the first data synchronization occurs, you are ready to use AI Mentor Studio. 
 

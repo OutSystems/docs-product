@@ -6,13 +6,13 @@ guid: 89bd155e-0d22-4262-a952-8f6de556ffda
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+# Get an overview of the overall technical debt
+
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
-
-# Get an overview of the overall technical debt
 
 The **Infrastructure overview** dashboard gives architects and development team leaders a better understanding of the technical debt across their factory: 
 

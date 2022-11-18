@@ -6,13 +6,13 @@ guid: c9fd26ba-85ea-406d-834a-df6c0399d11a
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
+# How to set up AI Mentor Studio
+
 <div class="info" markdown="1">
 
 Architecture Dashboard is now AI Mentor Studio.
 
 </div>
-
-# How to set up AI Mentor Studio
 
 Learn how to configure AI Mentor Studio so you can start using it.  
 This topic shows you how to add an infrastructure and what the prerequisites are, and how to associate an IT user with AI Mentor Studio. 

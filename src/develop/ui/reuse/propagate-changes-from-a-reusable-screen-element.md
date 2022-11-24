@@ -16,7 +16,7 @@ You can notify a parent Block or Screen about an event in a Block. You do that b
 Here is an overview:
 
 1. Create a Block and add an Event to it. You can also add Input Parameters to the Event, if you want to pass values to the parent element.
-1. Drag the Block to a Screen or another Block. Because the Block has an Event, you need to define an Action in the parent element that is triggered by the Event. If the Event has parameters, you need to pass them to the Action as well.
+1. Drag the Block to a Screen or another Block. Once this block has an event defined and the mandatory property set as YES, you need to define an Action in the parent element that is triggered by the Event. If the Event has parameters, you need to pass them to the Action as well.
 1. Once the app is running, the Block triggers the Actions in its parent Screen and passes the parameters.
 
 ## Example: Buttons with size labels

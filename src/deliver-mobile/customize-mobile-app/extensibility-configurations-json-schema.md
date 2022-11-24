@@ -18,9 +18,9 @@ The **Extensibility Configurations** field provides additional settings as a JSO
 
 ## Property schema
 
-The value of the **Extensibility Configurations** property of a mobile app module is a JSON object. What follows is the JSON schema outlining the most common options. There may be other options applicable in your use case, if the feature you're using provides them. 
+The value of the **Extensibility Configurations** property of a mobile app module is a JSON object. What follows is the JSON schema outlining the most common options. There may be other options applicable in your use case, if the feature you're using provides them.
 
-```javascript 
+```javascript
 {
     "plugin": {
         // Use only one the following ways to reference a plugin
@@ -140,7 +140,7 @@ The value of the **Extensibility Configurations** property of a mobile app modul
 
 ## Preferences
 
-The following section provides more details about the options you can use in the `preferences` top-level property. For a comprehensive list of the available settings, see [preferences in Config.xml](https://cordova.apache.org/docs/en/dev/config_ref/index.html#preference) by Apache Cordova. 
+The following section provides more details about the options you can use in the `preferences` top-level property. For a comprehensive list of the available settings, see [preferences in Config.xml](https://cordova.apache.org/docs/en/dev/config_ref/index.html#preference) by Apache Cordova.
 
 | Property                          | Platform | Default | Description |
 | --------------------------------- | -------- | ------- | ----------- |
@@ -161,17 +161,22 @@ To ensure the platform can build your app successfully and that your app works c
 
 Generic constants, applicable to all parts of the **Extensibility Configurations** JSON.
 
-* The JSON schema and key/value pairs must follow the structure as described in this topic. 
-* The first-level key/value pairs are optional and the order isn't relevant. 
-* Write the name of each name/value pair using lower case letters, as the JSON is case sensitive. 
+* The JSON schema and key/value pairs must follow the structure as described in this topic.
+
+* The first-level key/value pairs are optional and the order isn't relevant.
+
+* Write the name of each name/value pair using lower case letters, as the JSON is case sensitive.
 
 ### Resources
 
 Constraints related to managing the app resources in the **Extensibility Configurations** JSON.
 
-* You can specify only one resource key in the JSON. All content used in the app must be inside that file (icons, splash screens, and plugins). 
-* When specifying the resource file for the app, the resource name must end with ".zip". 
-* The resource file name must be equal to the resource name of the file you add. 
+* You can specify only one resource key in the JSON. All content used in the app must be inside that file (icons, splash screens, and plugins).
+
+* When specifying the resource file for the app, the resource name must end with ".zip".
+
+* The resource file name must be equal to the resource name of the file you add.
+
 * The specified path for an asset (for example, the icon or splash screen) in the JSON must be the same as the path inside the resources ZIP file.
 
 ## Additional information
@@ -179,5 +184,7 @@ Constraints related to managing the app resources in the **Extensibility Configu
 Additional information about the **Extensibility Configurations**.
 
 * For information about **progressive web app (PWA) manifest**, see [Advanced PWA settings and customization](../distribute-pwa/advanced.md).
+
 * You can **override** the JSON from Service Studio with a JSON in LifeTime. See [Override the default mobile Extensibility Configurations](../../managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md) for more information.
+
 * If you're using AppShield to **harden your mobile app** and protect it from tampering, see the [AppShield plugin configuration](../app-shield/intro.md#configuration).

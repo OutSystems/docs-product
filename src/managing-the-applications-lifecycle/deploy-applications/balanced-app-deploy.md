@@ -96,17 +96,18 @@ Don’t start the OutSystems Scheduler Service until instructed to do so.
 
 **Step 3. Disable deployment in the Loaded front-ends**
 
-1. Access the **environment’s Service Center** (eg. `https://<dev_environment>/ServiceCenter`).
+1. Access the **environment’s Service Center** (eg. `https://<front-end-server>/ServiceCenter`).
 1. Log in with administrative privileges.
 1. Go to **Administration » Servers**. For each **Loaded front-end**, access its details and press the **Disable** button. This action disables the deployment service, while the IIS keeps running and the applications are available to the end-users.
 
 **Step 4. Publish your application to the Updating front-ends**
 
-1. Access the **Service Center** console directly through one of the **Updating front-ends** (eg. `https://<front-end server>/ServiceCenter`).
-1. Log in with publishing privileges.
-1. Go to the **Factory** section and choose **Applications** / **Modules** / **Solutions**, depending on the file you want to publish (.oap, .oml or .osp).
-1. Upload and publish your file.
-1. Wait until the publishing finishes successfully.
+*[Using LifeTime]*
+1. Access the **LifeTime** console directly through its URL (eg. `https://<LifeTime-server>/lifetime`)
+1. Log in with deployment privileges.
+1. Create or reuse a **deployment plan** including your applications and deploy it.
+1. Wait until the deployment finishes successfully.
+
 
 Any updates in the database caused by the new application version are executed during this publishing. The updated code will be automatically deployed to the remaining **Updating front-ends**.
 
@@ -114,7 +115,7 @@ Any updates in the database caused by the new application version are executed d
 
 Do the following on each **Updating front-end** server:
 
-1. Access the application directly through the **Updating front-end** (eg. `https://<front-end server>/<Application>`).
+1. Access the application directly through the **Updating front-end** (eg. `https://<front-end-server>/<Application>`).
 1. Confirm the application is available and updated.
 
 **Step 6. In the Load Balancer, set the traffic to the Updating front-ends**
@@ -124,6 +125,8 @@ Do the following on each **Updating front-end** server:
 1. Remove the application traffic from the **Loaded front-ends**. This time, the **Updating front-ends** must be the only ones receiving traffic from end-users.
 
 ![Set traffic to updating front-ends](images/balanced-app-deploy-5.png?width=700)
+
+Now your end-users will start seeing the new application version.
 
 **Step 7. Start the OutSystems Scheduler Service in the Updating front-ends**
 
@@ -143,7 +146,7 @@ Do the following on each **Loaded front-end** server:
 
 **Step 9. Check the deployment process status**
 
-1. Access the **environment’s Service Center** (eg. `https://<dev_environment>/ServiceCenter`).
+1. Access the **environment’s Service Center** (eg. `https://<front-end-server>/ServiceCenter`).
 1. Log in with administrative privileges.
 1. Go to **Monitoring » Environment Health**.
 1. For each **Loaded front-end**, click the detail link for the **Deployment** service to check the status of its threads. Wait until the status of all threads is `Idle` or `Sleeping`. When this happens, the deployment process to the **Loaded front-ends** has finished.

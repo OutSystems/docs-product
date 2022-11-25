@@ -636,6 +636,7 @@
         - href: deliver-mobile/customize-mobile-app/customize-the-application-status-bar.md
         - href: deliver-mobile/customize-mobile-app/customize-errors-screen.md
         - href: deliver-mobile/customize-mobile-app/configure-accessible-domains.md
+        - href: deliver-mobile/customize-mobile-app/customize-deeplink-behavior.md
         - href: deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
     - href: deliver-mobile/generate-distribute-mobile-app/intro.md
     - topics:

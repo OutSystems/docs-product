@@ -85,6 +85,7 @@ Do the following on each front-end server:
 <div class="info" markdown="1">
  
 Don’t start the OutSystems Scheduler Service until instructed to do so. 
+
 </div>
 
 **Step 2. In the Load Balancer, set the traffic to the Loaded front-ends**

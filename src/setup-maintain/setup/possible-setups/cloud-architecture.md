@@ -77,5 +77,5 @@ Additionally, customers who need extra layers of compliance have the option to u
 
 The diagram below shows the architecture of the base setup for a Standard Edition with high-availability option in a high-compliance OutSystems Cloud:
 
-![OutSystems cloud high availability and compliance](images/cloud-architecture-ha-diag.png)
+![OutSystems cloud high availability and compliance](images/cloud-architecture-high-availability-diag.png)
 

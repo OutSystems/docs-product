@@ -33,7 +33,7 @@ Errors might differ depending on the external IdP provider.
 ### 400 Bad Request
 
 When starting a login flow, the IdP displays a 400 Bad Request error. This can happen for one of the following reasons:
-* URL for the service is incorrectly configured
+* URL for the service is configured incorrectly
 * Client Ids are incorrect
 * Redirect URIs are not configured correctly on the IdP side
 

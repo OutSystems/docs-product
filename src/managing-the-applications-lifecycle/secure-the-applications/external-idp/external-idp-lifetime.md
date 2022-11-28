@@ -8,103 +8,108 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Configuring LifeTime authentication
 
-<div class="info" markdown="1">
-
-Before you can configure the external IdP in LifeTime, the feature must be activated. For more information on how to activate the feature, see [Technical Preview features](https://success.outsystems.com/Support/Release_Notes/Technical_Preview_features).
-
-</div>
-
 To configure the external provider (OIDC) in LifeTime, follow these steps:
 
 1. Access the Lifetime console.
 
-1. Go to **User Management** > **Authentication Mode** and click **Try the new OpenId Connect**.
+1. Go to **User Management** > **Authentication Settings** and click **Add OpenId Connect Provider**.
 
-    ![Click Try the new OpenId Connect](images/try-openid-lt.png)
+    ![Click Add OpenId Connect Provider](images/add-provider-lt.png)
 
-1. On the **Authentication Settings** screen, click **New OpenID Provider**.
+    If there’s no local administrator configured, a warning pop-up displays advising you to add a local administrator account before configuring the external provider. With the external provider activated, if the SSO login method fails, the local administrator can help unblock users by configuring the username and password for them.
+
+1. Check the **Set administrator as local administrator** checkbox and click **Configure Provider**.
+
+    ![Add local administrator account](images/add-local-admin-lt.png)
+
+    The existing administrator is migrated and a local administrator is automatically created. For more information about creating a local administrator account, see [Adding a local administrator](#adding-a-local-administrator). 
 
 1. Enter the following details according to the OIDC provider you are using:
+
     1. **Name**: ID Provider
 
-    1. **OpenID Connect metadata document**: OpenID Connect metadata document URI
+    1. **Well-known Configuration URL**: OpenID Connect metadata document URI
 
-    1. **Client Id**: Client ID
+        You can validate the URL using the **Test configuration** link. 
 
-    1. If using Okta, click the **Use a different Client Ids for Desktop and Web tools** link and enter the following:
+    1. **Client ID Type**: Select one of the following:
 
-        1. **Client Id for Web tools**: Web Application’s Client ID
+        * Single Client ID for Desktop and Web tools
 
-        1. **Client Id for Desktop tools**: Native Application’s Client ID
+        * Different Client ID for Desktop and Web tools
 
-        1. **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is prefered_username. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
+            If you choose the **Use a different Client Ids for Desktop and Web tools** option, enter the following:
 
+            * **Client ID for Desktop tools**: Native Application’s Client ID
+           
+            * **Client ID for Web tools**: Web Application’s Client ID
 
-        ![Click Try the new OpenId Connect](images/authentication-lt.png)
+    1. **Client ID**: Client ID for both desktop and web tools.
+        
+    1. **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is ``email``. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
+
+    ![Enter authentication settings](images/authentication-settings-lt.png)
 
 1. Click **Save Changes**.
 
-1. Enter the client secret in the **Client Secret (only persisted when configuration is activated)** field.
+1. Click **Activate**
 
-1. Click **Activate**.
+    The **Activate OpenID Connect provider** pop-up is displayed. 
+
+    ![Activate provider](images/activate-provider-lt.png)
+
+1. Enter the **Client Secret**.
+
+1. Select the **Clear all local user’s passwords now (Recommended)** checkbox.
+
+    For more information about clearing user’s passwords, see [Clearing built-in password credentials](#clearing-built-in-password-credentials).
+
+1. Click **Proceed**. 
+
+    ![Click Proceed](images/client-secret-lt.png)
 
 ## Deactivating the external identity provider
 
-To deactivate the external IdP, select the active IdP and click **Deactivate**.
-
-
-<div class="warning" markdown="1">
-
- Before deactivating the external IdP, make sure that you have an IT user with built-in credentials (username/password) or a configured authentication plugin to avoid getting locked out of LifeTime.
-
-</div>
-
-![Click Disactivate](images/deactivate-lt.png)
-
-By deactivating the external IdP, the **IT Users Authentication with External IdP (OIDC)** feature is unavailable and the only way to login is by using the previously configured authentication mechanism.
+Only one external identity provider method can be active at a time. When you activate one authentication mechanism, you automatically deactivate the currently active external identity provider.
 
 ## Managing Users
 
-The auto-provisioning of IT Users is not available, therefore, users must be manually created even though OIDC providers can authenticate users regardless of their presence in LifeTime. The platform still requires that users exist in LifeTime so that they can be identified correctly once they successfully login using the external IdP
+The auto-provisioning of IT Users is not available. Therefore, you must create users manually even though OIDC providers can authenticate users regardless of their presence in LifeTime. The platform still requires that users exist in LifeTime so that they can be identified correctly when they successfully log in using the external IdP.
 
-When creating a new user in LifeTime, if an external IdP configuration is active, it’s not necessary to enter a password. This is because the authentication happens on the external IdP side. This way, users are forced to use the IdP authentication. Apart from basic user information,  such as name, email, and role, the user is identified by matching the LifeTime **username** with the **username claim** value of the external Idp.
+When creating a new user in LifeTime, if an external IdP configuration is active, it’s not necessary to enter a password. This is because the authentication happens on the external IdP side. This way, users are forced to use the IdP authentication. Apart from basic user information, such as name, email, and role, the user is identified by matching the LifeTime **username** with the **username claim** value of the external Idp.
 
-### Adding built-in credentials
+![Create a new user](images/newuser-lt.png)
 
-If the external IdP is unavailable or the **IT Users Authentication with External IdP (OIDC)** configuration has errors, you can configure a password for a user. This ensures that there is always a fallback authentication option for the user to log into the platform.
+### Adding a local administrator
 
-Because the **IT Users Authentication with External IdP (OIDC)** authentication mode is an add-on, you can add built-in credentials so that there is a fallback mechanism set up.
+If the external IdP is unavailable or has configuration errors, the local administrator is responsible for configuring user profiles. With the external IDP activated, only the local administrator can log into the platform using a username and password. 
 
-**Note**: We highly recommend that you use this approach, although it's not mandatory.
+You can create a local administrator before or after adding a new OIDC connection. It is recommended that you add at least one local administrator before activating an OIDC provider. This ensures that there is always a fallback authentication option for the user to log into the platform.
 
-To add built-in credentials to a user, follow these steps:
+To add a local administrator, follow these steps:
 
-1. Go to **User Management**.
+1. Access the LifeTime console.
 
-1. On the **Users** screen, locate and click the user you want to update.
+1. Go to **User Management** > **Authentication Settings** and click **Add local administrator**.
 
-1. Click **Edit**.
+    ![Add local administrator](images/add-localadmin-lt.png)
 
-1. On the **Edit User** screen, click the **Add OutSystems built-in credentials** link.
+1. Add the relevant details and click **Create**. 
 
-    ![Click Add OutSystems built-in credentials](images/builtin-credentials-lt.png)
+    ![New local administrator](images/new-localadmin-lt.png)
 
-1. Enter the **Password** and **Confirm Password** details.
+### Clearing built-in password credentials
 
-1. Click **Save**.
+You can clear a user’s built-in password credentials in one of the following ways. Doing this prevents users from using the fallback authentication. 
 
-    ![Enter password details](images/password-lt.png)
+* **Option 1**
 
-### Clearing built-in credentials
+    When activating the OIDC provider, in the **Activate OpenID Connect provider** pop-up, select the **Clear all local users passwords now (Recommended)** checkbox and click **Proceed**.
 
-You can clear a user’s built-in credentials. Doing this prevents the users from using the fallback authentication.
+    ![Activate provider](images/activate-provider-lt.png)
 
-1. Go to **User Management**.
+* **Option 2**
 
-1. On the **Users** screen, locate and click on the user you want to update.
+    If you don't clear the passwords when activating the OIDC provider, a warning message displays on the **Authentication Settings** screen. Click **Clear passwords now**.
 
-1. Click **Clear built-in password**.
-
-    ![Enter password details](images/clear-password-lt.png)
-
-**Note**: If the existing [External Authentication Provider](../use-an-external-authentication-provider.md)  is not configured to use OutSystems built-in authentication, the options to set up the password are not available. However, the fallback mechanism will work with the configured provider.
+    ![Clear passwords](images/clear-pass-lt.png)

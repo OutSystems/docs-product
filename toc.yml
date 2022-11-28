@@ -929,7 +929,6 @@
         - href: managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md
         - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/intro.md
         - topics:
-            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-activate.md
             - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-configure.md
             - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-azure.md
             - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-okta.md

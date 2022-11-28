@@ -10,8 +10,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 To allow you to analyze the user experience of your applications, OutSystems logs [request events](#requestevent) with valuable data for your analytics. To give you access to request events, the PerformanceMonitoring API provides REST API methods to:
 
-* retrieve a list of request events that occurred in your application
-* register your own request related events
+* Retrieve a list of request events that occurred in your application
+* Register your own request related events
 
 The server only stores data for the last two days. Learn [how application performance is measured](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md).
 
@@ -32,7 +32,9 @@ Resources | Description
 
 Returns a list of request events, filtered by event names and time interval you specify in the parameters.
 
-This method requires basic authentication. You need to provide the credentials of a LifeTime user. It returns request events only for those applications to which the user has 'Reuse & Monitor' permission in the environment. Learn more about how to [configure security for an infrastructure](../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
+Authentication can be basic authentication that provides the credentials of a LifeTime user or it can be authentication that uses service account tokens as [described in LifeTime API documentation](lifetime-deployment/rest-api-authentication.md). 
+
+The API only returns request events for the applications for which the user has *Reuse & Monitor* permissions in the environment. Learn more about how to [configure security for an infrastructure](../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
 
 To use it in an application, make sure that [monitoring is turned on](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment and also for the application module. Otherwise, the API responds with a status code of '200 - OK' but doesn't retrieve any events.
 

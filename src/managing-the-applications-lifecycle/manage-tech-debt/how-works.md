@@ -22,7 +22,7 @@ AI Mentor Studio SaaS
 AI Mentor Studio LifeTime Plugin
 :   A LifeTime plugin that's published in a platform installation (on-premises or cloud) with **environment probes** to collect data and communicate with the AI Mentor Studio SaaS.
 
-![AI Mentor Studio diagram](images/how-works-diag.png)
+![AI Mentor Studio diagram](images/ai-mentor-studio-lifetime-plugin-diag.png)
 
 ## Communication
 

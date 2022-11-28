@@ -21,7 +21,7 @@ This topic shows you how to add an infrastructure and what the prerequisites are
 
 To change the language of AI Mentor Studio select your user name, then select a language under **Language**.
 
-![Change language](images/setup-language-ad.png)
+![Change language](images/setup-language-ams.png)
 
 </div>
 
@@ -29,7 +29,7 @@ To change the language of AI Mentor Studio select your user name, then select a 
 
 When you log in to [AI Mentor Studio](https://aimentorstudio.outsystems.com/) for the first time you are shown a welcome screen.
 
-![Welcome screen](images/setup-choose-ad.png)
+![Welcome screen](images/setup-choose-ams.png)
 
 Select one of the options shown in the welcome screen:
 
@@ -67,7 +67,7 @@ To set up your infrastructure in AI Mentor Studio, follow these steps:
 
 1. Enter your **Activation Code**.
 
-    ![Activation Code](images/setup-infrastructure-activation-code-ad.png)
+    ![Activation Code](images/setup-infrastructure-activation-code-ams.png)
 
     <div class="info" markdown="1">
 
@@ -77,13 +77,13 @@ To set up your infrastructure in AI Mentor Studio, follow these steps:
 
 1. Check the information and select **Register**.
 
-    ![Register infrastructure step](images/setup-code-names-ad.png)
+    ![Register infrastructure step](images/setup-code-names-ams.png)
 
 1. Read the **AI Mentor Studio disclaimer** with the terms and conditions. If you agree select **Accept and continue**.
 
-1. Enter the address of your development environment.
+1. Enter the address of your code analysis environment.
 
-    ![Enter your development environment address](images/setup-infrastructure-dev-probe-address-ad.png)
+    ![Enter your development environment address](images/setup-infrastructure-dev-probe-address-ams.png)
 
 1. Follow the procedure shown in AI Mentor Studio to install the Development probe:
 
@@ -95,11 +95,11 @@ To set up your infrastructure in AI Mentor Studio, follow these steps:
 
 1. Enter the address of your LifeTime environment.
 
-    ![Enter LifeTime environment address](images/setup-infrastructure-lifetime-probe-address-ad.png)
+    ![Enter LifeTime environment address](images/setup-infrastructure-lifetime-probe-address-ams.png)
 
 1. Follow the procedure shown in AI Mentor Studio to install the LifeTime probe:
 
-    ![Follow steps to install the LifeTime probe](images/setup-infrastructure-lifetime-probe-steps-ad.png)
+    ![Follow steps to install the LifeTime probe](images/setup-infrastructure-lifetime-probe-steps-ams.png)
 
     1. Select **Download LifeTime probe** to download the probe.
 
@@ -111,7 +111,7 @@ To set up your infrastructure in AI Mentor Studio, follow these steps:
 
 1. Configure the **Code analysis** probe by selecting the development environment as the **Target environment**. 
 
-    ![Configure the Code analysis](images/setup-probes-configure-lt.png)
+    ![Configure the Code analysis](images/setup-probe-environment-lt.png)
 
     <div class="info" markdown="1">
 
@@ -125,7 +125,7 @@ To set up your infrastructure in AI Mentor Studio, follow these steps:
 
 1. After you are redirected to AI Mentor Studio, associate your IT user with AI Mentor Studio:
 
-    ![Associate your IT user with AI Mentor Studio](images/setup-associate-accept-ad.png)
+    ![Associate your IT user with AI Mentor Studio](images/setup-associate-accept-ams.png)
 
     1. Check the **Installation details** and read the **privacy policy** carefully.
 
@@ -143,7 +143,7 @@ After completing these steps you are able to see your infrastructure listed but 
 
 1. Select **Plugins** \> **AI Mentor Studio**.
 
-    ![Select AI Mentor Studio plugin](images/setup-plugin-lt.png)
+    ![Select AI Mentor Studio plugin](images/select-plugin-lt.png)
 
     <div class="info" markdown="1">
 
@@ -153,7 +153,7 @@ After completing these steps you are able to see your infrastructure listed but 
 
 1. Select **Go to AI Mentor Studio**.
 
-    ![Setup AI Mentor Studioplugin](images/setup-plugin-go-to-lt.png)
+    ![Setup AI Mentor Studioplugin](images/go-to-ai-mentor-studio-lt.png)
 
 1. After you are redirected to AI Mentor Studio, associate your IT user with AI Mentor Studio:
 

@@ -32,49 +32,49 @@ The color of each app shows you how high or low the technical debt is in that ap
 
 Technical debt tells you how difficult or easy it is to change and maintain an app or module.
 
-![Technical debt and agility color scale](images/use-debt-scale-ad.png)
+![Technical debt and agility color scale](images/use-debt-scale-ams.png)
 
 Red means the app has high technical debt.
 
 To get an overview of the modules of an app, double-click the app.  
 
-![Overview of modules in an app](images/use-overview-app-ad.png)
+![Overview of modules in an app](images/use-overview-app-ams.png)
 
 Selecting a module gives you detailed information on the left panel, as well as access to the module report.
 
-![Module dependencies](images/use-module-dependencies-ad.png)
+![Module dependencies](images/use-module-dependencies-ams.png)
 
 Click **Open Module report** in order to see the causes of technical debt in the module (seen in the next section).
 
-![Open module report](images/open-module-report-ad.png)
+![Open module report](images/open-module-report-ams.png)
 
 ## Find and understand the causes of technical debt in the module
 
 After clicking **Open Module report** you can examine the causes of technical debt in the module.
 
-![Open module report](images/use-report-ad.png)
+![Open module report](images/use-report-ams.png)
 
 You can filter the report based on your team(s), a specific app, module, category, when it was analyzed, the findings status, as well as specific users.
 
-![Filters](images/use-filters-ad.png)
+![Filters](images/use-filters-ams.png)
 
 To see details about a code pattern that causes technical debt, click **Impact**. The **Impact** information details why a code pattern creates technical debt.
 
-![Impact information](images/use-report-impact-ad.png)
+![Impact information](images/use-report-impact-ams.png)
 
 To check how to fix the code pattern, click **How to fix**. You can also use this information to understand the effort involved in fixing a code pattern.
 
-![How to fix](images/use-report-fix-ad.png)
+![How to fix](images/use-report-fix-ams.png)
 
 ## Fix and resolve technical debt findings
 
 The **Findings** section displays all of the occurrences of the code pattern. To see in which module and element each finding occurs, click the path icon.
 
-![Findings](images/use-findings-ad.png)
+![Findings](images/use-findings-ams.png)
 
 To open **Service Studio** and navigate to the element where a code patterns occurs, click the **Open in Service Studio** icon.
 
-![Open in Service Studio](images/use-finding-open-ad.png)
+![Open in Service Studio](images/use-finding-open-ams.png)
 
 Your browser may ask you to confirm that you want to open **Service Studio**. In Chrome, confirm that you want to open **Service Studio** by clicking **Open Service Studio**.
 

@@ -10,25 +10,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 ## Logging into OutSystems management consoles
 
-When accessing any OutSystems management console (Service Center and LifeTime) without a valid session, the login screen displays  two options to login, **Login with SSO** or **Login with Username and Password**.
+When accessing any Outsystems management console (Service Center and Lifetime) without a valid session, the user is redirected to the external IdP login screen. When the authentication flow finishes on the IdP, it redirects back to the platform and performs a successful login (if the user exists in the platform).
 
-![Options to login to LifeTime](images/login-lt.png)
+![Login](images/login.png)
 
-To login using SSO, follow these steps:
-
-1. Click **Login with SSO**.
-
-    The **Login** screen redirects the user to the IdP authentication flow.
-
-    When the authentication flow finishes on the IdP, it redirects back to the platform, and performs a successful login (if the user exists in the platform).
-
-### Logging out from OutSystems management consoles
+## Logging out from OutSystems management consoles
 
 When a user, authenticated using the IdP, attempts to log out, the platform logs the user out and redirects to the logout flow in the IdP.
 
 ## Logging into Service Studio
 
-When a user logs into a Service Studio environment, they are redirected to a browser to complete the login instead of entering  a username and password.
+When a user logs into a Service Studio environment, they are redirected to a browser to complete the login instead of entering a username and password.
 
 To log into Service Studio using an IdP,  follow these steps:
 
@@ -46,7 +38,7 @@ To log into Service Studio using an IdP,  follow these steps:
 
     ![Waiting to log into browser](images/waiting-ss.png)
 
-    At the same time, a new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a popup asking the user to **Open Service Studio**.
+    A new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a pop-up asking the user to **Open Service Studio**.
 
     ![Open Service Studio](images/open-ss.png)
 
@@ -68,11 +60,11 @@ To log into Integration Studio using an IdP,  follow these steps:
 
     ![Enter environment and click Next](images/environment-is.png)
 
-    A message informing you to **Use the Identity Service website to complete the login process** is displayed.
+    A message displays informing you to **Use the Identity Service website to complete the login process**.
 
     ![Use identity service website](images/identity-service-is.png)
 
-   At the same time, a new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a popup asking the user to **Open Integration Studio**.
+   A new browser window opens to perform the IdP authentication flow. When the flow finishes, the browser displays a pop-up asking the user to **Open Integration Studio**.
 
 1. Click **Open Integration Studio** and complete the login process.
 

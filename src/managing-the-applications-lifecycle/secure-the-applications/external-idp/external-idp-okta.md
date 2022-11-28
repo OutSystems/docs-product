@@ -56,7 +56,7 @@ To configure Okta authentication, follow these steps:
 
     <div class="warning" markdown="1">
 
-     You need this information when configuring the provider in LifeTime. The client secret will not be displayed again, so ensure you save it now.
+     You need this information when configuring the provider in LifeTime. **The client secret won't be displayed again, so ensure you save it now.**
 
     </div>
 

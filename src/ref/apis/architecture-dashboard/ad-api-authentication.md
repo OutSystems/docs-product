@@ -1,18 +1,18 @@
 ---
-summary: Authenticating Architecture Dashboard API requests.
+summary: Authenticating AI Mentor StudioAPI requests.
 tags: article-page; support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
 locale: en-us
 guid: FDBC3311-C94C-4C9C-8CC1-E7F26FC76F02
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Architecture Dashboard API authentication
+# AI Mentor Studio API authentication
 
-The **Architecture Dashboard API** uses an API key to authenticate requests. All API requests must be made over a secure connection using HTTPS protocol. Calls made over plain HTTP fail. API requests without authentication also fail.  
+The **AI Mentor Studio API** uses an API key to authenticate requests. All API requests must be made over a secure connection using HTTPS protocol. Calls made over plain HTTP fail. API requests without authentication also fail.  
 
-Your API key provides access to your Architecture Dashboard information, so be sure to keep it secure. Don't share your API key in public areas such as GitHub or client-side code.  
+Your API key provides access to your AI Mentor Studio information, so be sure to keep it secure. Don't share your API key in public areas such as GitHub or client-side code.  
 
-You can generate and manage your API keys using Architecture Dashboard’s Maintenance menu.  
+You can generate and manage your API keys using AI Mentor Studio’s Maintenance menu.  
 
 For authentication, you must include the following HTTP headers in your requests:
 
@@ -26,28 +26,28 @@ The following is an example of Postman with both headers in use:
 
 ## Security considerations
 
-When using Architecture Dashboard REST API, take the following security considerations into account:
+When using AI Mentor Studio REST API, take the following security considerations into account:
 
-* Architecture Dashboard doesn't store your API key. Consumer applications must store the API key securely. If a third party gets access to your API key, they have access to your infrastructure’s data.
+* AI Mentor Studio doesn't store your API key. Consumer applications must store the API key securely. If a third party gets access to your API key, they have access to your infrastructure’s data.
 
 * All communication between API consumers and the API server must be done over HTTPS.
 
 ## Prerequisites
 
-To be able to use the Architecture Dashboard API, you need to have [full control permissions assigned as a default role](../../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md#manage-architecture-dashboard-api).
+To be able to use the AI Mentor Studio API, you need to have [full control permissions assigned as a default role](../../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md#manage-architecture-dashboard-api).
 
 ## How to obtain a key { #obtain-key }
 
 To generate your API key, follow these steps:
 
-1. In **Architecture Dashboard**, navigate to the **Maintenance** tab and select **Configurations**.
+1. In **AI Mentor Studio**, navigate to the **Maintenance** tab and select **Configurations**.
 
-1. In the **Architecture Dashboard API** section, click **Generate API key**.
+1. In the **AI Mentor Studio API** section, click **Generate API key**.
 
-    ![Architecture Dashboard's Maintenance menu showing the Configurations.](images/generate-key-ad.png)
+    ![AI Mentor Studio's Maintenance menu showing the Configurations.](images/generate-key-ad.png)
 
 1. Copy the API key.  
-The **Copy API key** button changes to **Copied!** to inform you that you have successfully retrieved the key. Make sure to save your key in a safe location as you can’t access it again in Architecture Dashboard.
+The **Copy API key** button changes to **Copied!** to inform you that you have successfully retrieved the key. Make sure to save your key in a safe location as you can’t access it again in AI Mentor Studio.
 
     ![Window showing the generated API key.](images/copy-key-ad.png)
 
@@ -60,11 +60,11 @@ The **Copy API key** button changes to **Copied!** to inform you that you have s
 
 If you lost your API key, or if you have some security issues, you might need to replace your key. Follow these steps:
 
-1. In **Architecture Dashboard**, navigate to the **Maintenance** tab and select **Configurations**.
+1. In **AI Mentor Studio**, navigate to the **Maintenance** tab and select **Configurations**.
 
-1. In the **Architecture Dashboard API** section, click **Replace API key**. 
+1. In the **AI Mentor Studio API** section, click **Replace API key**. 
 
-    ![Architecture Dashboard's Maintenance menu showing the Configurations.](images/replace-key-ad.png)
+    ![AI Mentor Studio's Maintenance menu showing the Configurations.](images/replace-key-ad.png)
 
     A window warns you that replacing your API Key takes immediate effect.
 
@@ -81,13 +81,13 @@ The **Copy API key** button changes to **Copied!** to inform you that you have s
 
 To revoke your API key, follow these steps:
 
-1. In **Architecture Dashboard**, navigate to the **Maintenance** tab and select **Configurations**.
+1. In **AI Mentor Studio**, navigate to the **Maintenance** tab and select **Configurations**.
 
-1. In the **Architecture Dashboard API** section, click **Revoke API key**.
+1. In the **AI Mentor Studio API** section, click **Revoke API key**.
 
-    ![Architecture Dashboard's Maintenance menu showing the Configurations.](images/revoke-key-ad.png)
+    ![AI Mentor Studio's Maintenance menu showing the Configurations.](images/revoke-key-ad.png)
 
-    A window warns you that revoking the API key immediately disables access to the Architecture Dashboard API, so any requests made after this, will be rejected.
+    A window warns you that revoking the API key immediately disables access to the AI Mentor Studio API, so any requests made after this, will be rejected.
 
 1. Click **Revoke API key**.
 

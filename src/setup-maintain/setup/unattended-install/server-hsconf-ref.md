@@ -71,7 +71,7 @@ The following are the configurations that are specific to SQL Server and Azure S
 |Key|Value|Description|
 |---|-----|-----------|
 |Unicode|"true" or "false".<br/>**Do not customize this field.** OutSystems only supports non-Unicode in legacy systems.|Defines if the database supports unicode or not.|
-|UsedAuthenticationMode|"Database Authentication" or "Windows Authentication".|Authentication protocol to be used.|
+|UsedAuthenticationMode|"Database Authentication" (SQL Server and Azure SQL) or "Windows Authentication" (only SQL Server).|Authentication protocol to be used.|
 |Server|Hostname or IP address of the database server.||
 |Catalog|Database catalog to be used by OutSystems.||
 

@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: You can change a enable or disable auto-classification of apps in Architecture Dashboard.
+summary: You can change a enable or disable auto-classification of apps in AI Mentor Studio.
 locale: en-us
 guid: 1b423f33-a40a-4659-a633-dad0d32c6432
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -8,13 +8,19 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to enable or disable auto-classification
 
-AI auto-classification allows you to onboard infrastructures into the Architecture Dashboard and classify each module so that it fits into the right architecture layer.
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
+AI auto-classification allows you to onboard infrastructures into the AI Mentor Studio and classify each module so that it fits into the right architecture layer.
 
 ## Prerequisites
 
-Before enabling or disabling auto-classification in Architecture Dashboard, make sure that the following requirements are met:
+Before enabling or disabling auto-classification in AI Mentor Studio, make sure that the following requirements are met:
 
-* Your infrastructure uses version 3.0 (or higher) of the Architecture Dashboard probes.
+* Your infrastructure uses version 3.0 (or higher) of the AI Mentor Studio probes.
 
 * You have [full control permissions assigned as a default role](how-works.md#maintenance-and-operations-permissions)
 

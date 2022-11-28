@@ -132,8 +132,8 @@ A list of reasons for app shutdown in Android devices.
 | 6       | Native code hooks, possibly inserted by malicious app                     |
 | 8       | Shield could not read configuration file                                  |
 | 9       | Problem with Native Debugger Protection                                   |
-| 13      | Problem initializing Shield                                               |
-| 14      | App received termination signal                                           |
-| 15      | Application crashed outside of Java-code, either native library or Shield |
-| 16      | Hooking frameworks detected                                               |
-| 17      | Native debugger prevention not possible on this device                    |
+| 19      | Problem initializing Shield                                               |
+| 20      | App received termination signal                                           |
+| 21      | Application crashed outside of Java-code, either native library or Shield |
+| 22      | Hooking frameworks detected                                               |
+| 23      | Native debugger prevention not possible on this device                    |

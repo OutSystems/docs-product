@@ -1,4 +1,4 @@
-# Getting Started 
+# Getting Started
 - href: getting-started/intro.md
 - topics:
     - href: getting-started/right-app.md
@@ -636,6 +636,7 @@
         - href: deliver-mobile/customize-mobile-app/customize-the-application-status-bar.md
         - href: deliver-mobile/customize-mobile-app/customize-errors-screen.md
         - href: deliver-mobile/customize-mobile-app/configure-accessible-domains.md
+        - href: deliver-mobile/customize-mobile-app/customize-deeplink-behavior.md
         - href: deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md
     - href: deliver-mobile/generate-distribute-mobile-app/intro.md
     - topics:
@@ -928,7 +929,6 @@
         - href: managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md
         - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/intro.md
         - topics:
-            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-activate.md
             - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-configure.md
             - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-azure.md
             - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-okta.md

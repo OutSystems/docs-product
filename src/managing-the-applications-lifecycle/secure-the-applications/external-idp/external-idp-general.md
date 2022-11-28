@@ -18,9 +18,9 @@ The external IdP must support the following scopes:
 * profile
 * offline_access
 
-Authorization and refresh tokens must be configured in the external IdP. By default the **prefered_username** claim is used to match the **username** field of the user configured in LifeTime.
+You must configure the authorization and refresh tokens in the external IdP. By default, the **prefered_username** claim matches the **username** field of the user configured in LifeTime.
 
-The redirect URIs configuration is split into Web Applications (Consoles) and Native Application (Development Tools), but depending on the external provider, the redirects configuration can be configured together, like on Azure AD, or separate, like on Okta.
+The redirect URIs configuration is split into Web Applications (Consoles) and Native Application (Development Tools), but depending on the external provider, the redirects configuration can be configured together, like on Azure AD, or separately, like on Okta.
 
 
 ##  Integrating with OutSystems Consoles

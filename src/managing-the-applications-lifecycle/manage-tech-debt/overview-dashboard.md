@@ -8,6 +8,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Get an overview of the overall technical debt
 
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
 The **Infrastructure overview** dashboard gives architects and development team leaders a better understanding of the technical debt across their factory: 
 
 * What is the current status
@@ -24,7 +30,7 @@ Architects and team leads can use the information obtained from this dashboard:
 
 * As a tool to better communicate their technical debt strategies with the development teams.
 
-To access the **Infrastructure overview** dashboard, click the **Overview** tab in the Architecture Dashboard.
+To access the **Infrastructure overview** dashboard, click the **Overview** tab in the AI Mentor Studio.
 
 ## Get the most relevant data to define your strategy
 
@@ -38,11 +44,11 @@ As an architect or a team lead, you can apply several filters to get the most re
 
 For example, team leads can check for their own team impact, or analyze a specific application, while architects might want to validate the technical debt distribution by category across all applications.
 
-The data displayed in the **Infrastructure overview** dashboard depends on the permissions of the IT user accessing the Architecture Dashboard. Each user sees the data corresponding to the applications and teams to which they have permissions. See the [main features permissions](how-works.md#Permissions) for further details.
+The data displayed in the **Infrastructure overview** dashboard depends on the permissions of the IT user accessing the AI Mentor Studio. Each user sees the data corresponding to the applications and teams to which they have permissions. See the [main features permissions](how-works.md#Permissions) for further details.
 
 <div class="info" markdown="1">
 
-You can set the analysis date range since the factory first started to use the Architecture Dashboard, until the last sync from the previous day. The data from the current day is collected during that day, and it will be available on the next day.
+You can set the analysis date range since the factory first started to use the AI Mentor Studio, until the last sync from the previous day. The data from the current day is collected during that day, and it will be available on the next day.
 
 </div>
 
@@ -94,7 +100,7 @@ This chart enables you to:
 
 * Identify the number of Open findings per day, by category, and the changes in solved and new findings. This way you can easily identify what findings you added to your tech debt (New), or the findings you managed to solve (Solved), and correlate this with the technical debt variation.
 
-![Technical debt variation vs. findings chart](images/overview-variation-ad.png)
+![AI Mentor Studio variation vs. findings chart](images/overview-variation-ad.png)
 
 <div class="info" markdown="1">
 

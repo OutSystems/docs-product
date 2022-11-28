@@ -65,6 +65,7 @@ The following table lists the ports that should be open to correctly **monitor**
 |Controller|Front-End|80|TCP|IIS Monitoring|
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
 |Controller|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
+|Front-End and Controller|\*.outsystems.com<br/>outsystems.com|443|TCP|Telemetry|
 
 In case you are using a hybrid infrastructure where some part is in OutSystems Cloud and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
 
@@ -150,14 +151,15 @@ You need to have bidirectional secure communication between the front-end of the
 |LifeTime Front-End|Environment Front-End|443|TCP|
 |Environment Front-End|LifeTime Front-End|443|TCP|
 
-### Architecture Dashboard
+### AI Mentor Studio
 
-To use [Architecture Dashboard](https://architecture.outsystems.com), the Architecture Dashboard LifeTime plugin must be able to communicate with the Architecture Dashboard SaaS. Check out [how Architecture Dashboard works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work).
+To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work). 
 
-Depending on the version of the Architecture Dashboard probe, ensure that one of the following destination endpoints is reachable:
+Depending on the version of the AI Mentor Studio probe, ensure that one of the following destination endpoints is reachable:
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or higher** of the Architecture Dashboard LifeTime probes.
-LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the Architecture Dashboard LifeTime probes.
+LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP| **Version 4.2 or higher** of the AI Mentor Studio LifeTime probes.
+LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or 4.1** of the AI Mentor Studio LifeTime probes.
+LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the AI Mentor Studio LifeTime probes.
 

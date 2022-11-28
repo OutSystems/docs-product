@@ -1,13 +1,19 @@
 ---
 tags:
-summary: You can ignore classes of modules during tech-debt analysis in Architecture Dashboard.
+summary: You can ignore classes of modules during tech-debt analysis in AI Mentor Studio.
 guid: 70460AD8-7C84-4D86-9E83-2274E9802B93
 locale: en-us
 ---
 
 # Ignoring modules during tech debt analysis
 
-**Architecture Dashboard** provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment.
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
+**AI Mentor Studio** provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment.
 
 However, analyzing every module in a factory can result in a misleading technical debt score. To help your development team get a realistic picture of the portfolio's technical debt, you can ignore certain modules during the analysis.
 
@@ -18,17 +24,17 @@ Modules that might be ignored include:
 * Experimental or preliminary applications that are not meant for production
 * Forge components integrated, as is, into applications
 
-**Architecture Dashboard** gives architects and team leads the ability to ignore individual modules—or to bulk-select whole classes of modules—so they will be ignored during the technical debt evaluation of your factory’s portfolio.
+**AI Mentor Studio** gives architects and team leads the ability to ignore individual modules—or to bulk-select whole classes of modules—so they will be ignored during the technical debt evaluation of your factory’s portfolio.
 
 <div class="info" markdown="1">
 
-For more information about permissions to access this feature, see [How does Architecture Dashboard work](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_technical_debt/How_does_Architecture_Dashboard_work#Permissions).
+For more information about permissions to access this feature, see [How does AI Mentor Studio work](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_technical_debt/How_does_Architecture_Dashboard_work#Permissions).
 
 </div>
 
 To select modules to ignore:
 
-1. Go to the **Maintenance** tab of **Architecture Dashboard**.
+1. Go to the **Maintenance** tab of **AI Mentor Studio**.
     ![Select Maintenance tab](images/ad-autoclass-1.png)
 1. On the **Maintenance** page, click **Ignored Modules** to get a list of all modules in your infrastructure, which includes filtering options for finding specific modules to ignore.
     ![Ignored modules page](images/ignored-modules-main-page-ad.png)
@@ -41,12 +47,11 @@ You can use the following filters to fine-tune your choices, and then sort the r
 * Module status
 * Types
 
-
 ## Batch selection of modules
 
 In some cases, **OutSystems** recommends ignoring entire classes of modules during technical debt analysis, such as demo apps that are not meant to be released to production.
 
-Ignoring **[Forge](https://www.outsystems.com/forge/)** components in **Architecture Dashboard** is another good practice. **OutSystems** developers rely on the **Forge** to accelerate the design process. Components that are used as-is do not have to be included when calculating your infrastructure’s technical debt.
+Ignoring **[Forge](https://www.outsystems.com/forge/)** components in **AI Mentor Studio** is another good practice. **OutSystems** developers rely on the **Forge** to accelerate the design process. Components that are used as-is do not have to be included when calculating your infrastructure’s technical debt.
 
 To ignore **Forge** components in technical debt analysis:
 
@@ -66,7 +71,6 @@ To ignore **Forge** components in technical debt analysis:
     ![Confirm Ignore Forge components](images/bulk-actions-confirm-ad.png)
 
 All of the selected components/modules are marked to be ignored during future technical debt evaluations.
-
 
 ## Ignoring individual modules
 

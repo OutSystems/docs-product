@@ -8,19 +8,25 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Getting started as an architect
 
-As an architect, the Architecture Dashboard provides you with an overview of your organization’s technical debt.
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
+As an architect, the AI Mentor Studio provides you with an overview of your organization’s technical debt.
 
 From the Apps canvas, you can check the technical debt of all the apps in your infrastructure and take the necessary steps to reduce the technical debt score for problematic areas. 
 
 This guide assumes the following:
 
-* Your infrastructure is already set up in Architecture Dashboard.
+* Your infrastructure is already set up in AI Mentor Studio.
 
-* Your IT user is already associated with Architecture Dashboard.
+* Your IT user is already associated with AI Mentor Studio.
 
 * You have the **Administrator** role in LifeTime.
 
-After logging into [Architecture Dashboard](https://architecture.outsystems.com) with your OutSystems account, follow these steps:
+After logging into [AI Mentor Studio](https://aimentorstudio.outsystems.com/) with your OutSystems account, follow these steps:
 
 ## Check the technical debt of all your apps
 
@@ -80,7 +86,7 @@ The **Infrastructure overview** dashboard gives you an understanding of the curr
 
 ![overview dashboard](images/overview-dashboard-ad.png)
 
-To access the **Infrastructure overview** dashboard, click the **Overview** tab in the Architecture Dashboard.
+To access the **Infrastructure overview** dashboard, click the **Overview** tab in the AI Mentor Studio.
 
 Filter the analysis data by team, application, code pattern category, or date range, to get the data that you require to do the proper follow up. You can see, for example, which code patterns of a specific category contribute more to the technical debt of your factory.
 

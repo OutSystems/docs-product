@@ -8,13 +8,19 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Getting started as a developer
 
-As a developer, **Architecture Dashboard** provides you with an overview of the organization's technical debt. It also provides you with a detailed overview of the technical debt of the apps in the infrastructure that need to be fixed so that the overall technical debt score is reduced.
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
+As a developer, **AI Mentor Studio** provides you with an overview of the organization's technical debt. It also provides you with a detailed overview of the technical debt of the apps in the infrastructure that need to be fixed so that the overall technical debt score is reduced.
 
 This guide assumes the following:
 
-* Your infrastructure is already set up in **Architecture Dashboard**.
+* Your infrastructure is already set up in **AI Mentor Studio**.
 
-* Your IT user is already associated with **Architecture Dashboard**.
+* Your IT user is already associated with **AI Mentor Studio**.
 
 ## Check the technical debt of the modules of an app
 

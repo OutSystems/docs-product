@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: You can change a module's classification in the Architecture Dashboard canvas.
+summary: You can change a module's classification in the AI Mentor Studio canvas.
 en_title: 
 locale: en-us
 guid: 429d1c51-f248-425b-902e-2af8b6ec8a2e
@@ -9,11 +9,17 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to change module classifications
 
+<div class="info" markdown="1">
+
+Architecture Dashboard is now AI Mentor Studio.
+
+</div>
+
 You can change a module's classification in the canvas. However, by changing the classification of a module, the classification of the app may be affected. OutSystems AI model receives this reclassification. 
 
 ## Prerequisites
 
-Before changing a module’s classification in Architecture Dashboard, make sure that the following requirements are met:
+Before changing a module’s classification in AI Mentor Studio, make sure that the following requirements are met:
 
 * You have [enabled AI auto-classification](how-enable-autoclass.md).
 
@@ -23,7 +29,7 @@ Before changing a module’s classification in Architecture Dashboard, make sure
 
 To change a module’s classification, follow these steps:
 
-1. In the Architecture Dashboard canvas, double-click the app that contains the module you want to reclassify.
+1. In the AI Mentor Studio canvas, double-click the app that contains the module you want to reclassify.
 
     ![Double-click app](images/ad-module-1.png)
 

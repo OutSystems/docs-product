@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 <div class="warning" markdown="1">
 
-The LifeTime Services API is **deprecated**. Use [LifeTime API v2](<lifetime-deployment-api-v2.final.md>) instead.
+The LifeTime Services API is **deprecated** and is no longer supported from LifeTime version 11.16.0 onwards. Use [LifeTime API v2](<lifetime-deployment-api-v2.final.md>) instead.
 
 </div>
 

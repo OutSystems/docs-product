@@ -126,7 +126,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
     <div class="warning" markdown="1">
 
-     You need this information when configuring the provider in LifeTime. This value will not be displayed again, so ensure you save it now.
+     You need this information when configuring the provider in LifeTime. **This value won't be displayed again, so ensure you save it now.**
 
     </div>
 

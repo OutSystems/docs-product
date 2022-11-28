@@ -67,6 +67,8 @@ To configure CSP for all apps in an environment in Service Center:
 1. In the **Administration** section, select the **Security** option.
 1. Enable CSP.
 1. Configure directives, with one value per line.
+1. Click **Save**.
+1. Republish the application in Service Center.
 
 ### For an app
 
@@ -76,6 +78,8 @@ To configure CSP for an application in **Service Center**:
 1. Select the **Security** tab.
 1. Enable CSP.
 1. Configure directives, with one value per line.
+1. Click **Save**.
+1. Republish the application.
 
 <div class="info" markdown="1">
 

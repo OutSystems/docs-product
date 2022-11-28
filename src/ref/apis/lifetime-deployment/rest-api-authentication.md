@@ -12,8 +12,9 @@ To invoke the REST methods of [LifeTime API](<../auto/lifetime-deployment-api-v2
 
 A service account is a special account created in LifeTime used in machine-to-machine interactions with OutSystems. Service accounts follow the same permission model of regular user accounts, using roles and teams to define access privileges.
 
-After creating a service account, LifeTime provides you an **authentication token** string that you will need to include in all REST API requests. Each authentication token contains all the information needed to authenticate a specific service account.
+After creating a service account, LifeTime provides you with an **authentication token** string that you need to include in all REST API requests. Each authentication token contains all the required information to authenticate a specific service account. 
 
+From LifeTime 11.16.0 and Platform Server 11.18.0 onwards, service accounts can also be used in [Performance Monitoring API](<../performancemonitoring-api.md>).
 
 ## Security Considerations
 
@@ -22,7 +23,8 @@ All REST API method calls are audited and can be traced back to the service acco
 Take the following security considerations into account when using OutSystems REST APIs:
 
 * Authentication tokens are not stored in the platform, and consumers must store the authentication tokens securely. If a third-party gets access to an authentication token, it will have access to your infrastructure.
-* All communications between API consumers and the API server must be done over HTTPS. 
+* All communication between API consumers and the API server must be done over HTTPS.
+* Service Account tokens are valid for a duration of 6, 12, or 24 months, after which they become invalid.
 
 The following sections show how to manage service accounts and tokens and how to authenticate REST API calls.
 
@@ -34,13 +36,15 @@ To create a service account in LifeTime, do the following:
 
     ![](images/lt_service_accounts.png)
 
-2. Select **New Service Account**. Fill in the service account username and description, select the desired role, and click the **Create** button. 
+1. Select **New Service Account**. 
 
-After creating the service account, you will be provided with the authentication token that you will have to include in each REST API method call to authenticate the request.
+1. Enter the service account username and description, select the desired role, select the duration for the token, and click the **Create** button. 
 
-![](images/lt_auth_token_blurred.png)
+    After creating the service account, you are provided with the authentication token that you must include in each REST API method call to authenticate the request.
+
+    ![](images/lt_auth_token_blurred.png)
     
-**As a security measure, the authentication token will be shown only once.** If you lose the token, you will have to generate a new one, and the previous token will no longer be valid.
+    **Note**: As a security measure, the authentication token is only shown once.If you lose the token, you must generate a new one, and the previous token is no           longer valid.
 
 ## Authenticating REST API calls
 
@@ -63,4 +67,4 @@ If you need to revoke or deprecate a given authentication token, you should gene
 
 1. Click **Continue** to confirm that you want to generate a new token, and that you’re fully aware that the previous token will be revoked/deprecated and will no longer work. 
 
-A new token will be generated and displayed for the current service account. Take note of the generated token, since it will not be shown again.
+A new token is generated and displayed for the current service account. Take note of the generated token as it will not be shown again.

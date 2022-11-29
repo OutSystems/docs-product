@@ -30,14 +30,14 @@ To enable or disable auto-classification, follow these steps:
 
 1. Click the **Maintenance** tab.
 
-    ![Select Maintenance](images/ad-autoclass-1.png)
+    ![Select Maintenance](images/select-maintenance-ams.png)
 
-1. On the **Maintenance** screen, do one of the following: 
+1. On the **Maintenance** screen click **Configurations** and, do one of the following: 
 
     * To enable the AI auto-classification, turn the **AI auto-classification** toggle on, and in the **Enable AI auto-classification** popup, click **Yes, enable it**. 
 
-        ![Enable auto-classification](images/ad-autoclass-2.png)
+        ![Enable auto-classification](images/enable-ai-auto-classification-ams.png)
 
     * To disable AI auto-classification, turn the **AI auto-classification** toggle off, and in the **Disable AI auto-classification** popup, click **Yes, disable it**.
 
-        ![Disable auto-classification](images/ad-autoclass-3.png)
+        ![Disable auto-classification](images/disable-ai-auto-classification-ams.png)

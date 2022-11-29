@@ -31,15 +31,15 @@ To change a module’s classification, follow these steps:
 
 1. In the AI Mentor Studio canvas, double-click the app that contains the module you want to reclassify.
 
-    ![Double-click app](images/ad-module-1.png)
+    ![Double-click app](images/module-classification-ams.png)
 
 1. Select the module you want to reclassify, and in the module details area, from the dropdown, select the new architecture layer. 
 
-    ![Select new architecture layer](images/ad-module-2.png)
+    ![Select new architecture layer](images/select-module-to-reclassifiy-ams.png)
 
     When you reclassify the module classification, the **Change module classification** popup is displayed letting you know that all auto-classification for the module will be overridden.
 
-      ![Change module classification popup](images/ad-module-3.png)
+      ![Change module classification popup](images/change-module-classification-ams.png)
 
 1. Click **Yes, change it**. 
 

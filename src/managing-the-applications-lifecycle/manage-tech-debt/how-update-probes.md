@@ -16,15 +16,15 @@ Architecture Dashboard is now AI Mentor Studio.
 
 If you have [**Full Control** permissions assigned as a default role](how-works.md#update-probes) for the code analysis environment, the following message is displayed when an updated version of the probes is available: 
 
-![AI Mentor Studio's Apps area showing a message that an updated version of the probes is available.](images/probes-update-full-ad.png)
+![AI Mentor Studio's Apps area showing a message that an updated version of the probes is available.](images/probes-update-full-ams.png)
 
 After selecting **How to download and update probes**, you go to the **Probes download and update** screen, where you can download the new probes.
 
-![**Probes download and update** screen.](images/probes-procedure-ad.png)
+![**Probes download and update** screen.](images/probes-procedure-ams.png)
 
 If you have a different permissions level, the following message is displayed when an updated version of the probes is available:
 
-![AI Mentor Studio's Apps area showing a message that an updated version of the probes is available.](images/probes-update-listapp-ad.png)
+![AI Mentor Studio's Apps area showing a message that an updated version of the probes is available.](images/probes-update-listapp-ams.png)
 
 To install the new probes for AI Mentor Studio, contact your infrastructure administrator.
 

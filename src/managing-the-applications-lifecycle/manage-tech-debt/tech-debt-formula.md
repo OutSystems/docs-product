@@ -20,7 +20,7 @@ Technical debt measures the cost of reworking a solution. Technical debt increas
 
 AI Mentor Studio uses a color code to help you visualize technical debt. Apps with the lowest technical debt display as pale green. Apps with the highest technical debt display as red.
 
-![Apps area of AI Mentor Studio showing the technical debt levels.](images/apps-colors-ad.png)
+![Apps area of AI Mentor Studio showing the technical debt levels.](images/apps-colors-ams.png)
 
 
 ## Technical debt formula
@@ -31,9 +31,9 @@ To translate the technical debt into the color code, the technical debt value mu
 
 The calculation results in an absolute value that is then compared with defined thresholds to provide the technical debt level represented in a color code and as a percentage.  
 
-For instance, the **Public Entities aren’t read-only** pattern shows a technical debt of 25.6%. This value results from multiplying the 70 findings by the pattern weight itself, which is determined by an [internal process](#pattern-weight). The value is then turned into a percentage, meaning that the **Public Entities aren’t read-only** pattern represents 25.6% of the total technical debt.
+For instance, the **Public Entities aren’t read-only** pattern shows a technical debt of 11.3%. This value results from multiplying the 69 findings by the pattern weight itself, which is determined by an [internal process](#pattern-weight). The value is then turned into a percentage, meaning that the **Public Entities aren’t read-only** pattern represents 11.3% of the total technical debt.
 
-![Report area of AI Mentor Studio with the list of patterns.](images/report-ad.png)
+![Report area of AI Mentor Studio with the list of patterns.](images/report-ams.png)
 
 ### Pattern weight
 
@@ -47,13 +47,13 @@ Not all code patterns have the same impact on technical debt. In addition to giv
 
 AI Mentor Studio’s Apps area has a birds-eye view of your factory that shows all the apps with the technical debt level attributed to it during the last analysis. This enables you to understand which app, at a higher level, should be your primary focus. For more information on how to interpret this data, check the articles under [Getting started with AI Mentor Studio](how-use.md).
 
-![Apps area of AI Mentor Studio](images/apps-ad.png)
+![Apps area of AI Mentor Studio](images/apps-ams.png)
 
 ### Report area
 
 In the Report area, you see each app’s technical debt level when filtering by app. This helps you focus on the apps that have the highest technical debt. 
 
-![Report are of AI Mentor Studio showing the apps filtering](images/report-apps-color-ad.png)
+![Report are of AI Mentor Studio showing the apps filtering](images/report-apps-color-ams.png)
 
 You can also sort the code patterns list by technical debt to keep the highest technical debt on the top of your list, or by findings number, if you wish to have a more quantitative approach. Always remember the technical debt formula. Having a high number of findings doesn’t mean that a specific pattern contributes more to your technical debt across the factory. The weight of the pattern also [plays a role](#technical-debt-formula).
 

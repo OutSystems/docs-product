@@ -26,11 +26,11 @@ To force a synchronization, follow these steps:
 
 1. Go to theAI Mentor Studio LifeTime plugin (`https://<lifetime_environment>/ArchitectureDashboardProbe/`) and select **Monitor**.
 
-    ![](images/sync-plugin-monitor.png?width=575)
+    ![Select Monitor](images/sync-plugin-monitor-lt.png)
 
 1. Select **Request Synchronization**.
 
-    ![](images/sync-plugin-request.png?width=575)
+    ![Request synchronization](images/sync-plugin-request-lt.png)
 
 After these steps, the synchronization request enters the **Outbound Queue** as **SyncRequest**.
 

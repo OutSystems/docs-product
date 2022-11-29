@@ -21,7 +21,7 @@ This topic shows you how to add an infrastructure and what the prerequisites are
 
 To change the language of AI Mentor Studio select your user name, then select a language under **Language**.
 
-![Change language](images/setup-language-ams.png)
+![Change language](images/select-language-ams.png)
 
 </div>
 

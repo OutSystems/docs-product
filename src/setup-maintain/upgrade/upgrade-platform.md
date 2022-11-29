@@ -239,6 +239,8 @@ In the following upgrade scenarios, you must **publish all your applications** a
 
 For **mobile apps**, upon a Platform Server version upgrade in your **Production environment**, it's expected that many of the mobile app resources carry differences, which will trigger over-the-air (OTA) upgrades to all the end users. **Generating and distributing a new build** eliminates the need for OTA upgrades so it's an advisable practice that improves the end-user experience.
 
+Starting from Platform Server 11.18.0, you can use the [Deploy All](upgrade-platform-module-deploy.md) functionality. The **Deploy All** lets you deploy all modules successfully compiled in the last modules preparation, instead of publishing your modules right after preparing them. Unlike the **Publish All** functionality, when using **Deploy All**, you can choose when it's more convenient for you to deploy the newly prepared modules. Find out more in [Deploy All](upgrade-platform-module-deploy.md).
+
 #### Publish all applications { #publish-all }
 
 Having the Platform Server upgraded in the environment, consider the following scenarios when publishing all the modules in the new version:

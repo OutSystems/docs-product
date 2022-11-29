@@ -263,6 +263,24 @@ If you are upgrading from **Platform Server 10 or previous** to **Platform Serve
 
 In major upgrades, the module preparation is skipped, thus you are required to republish all applications right after the upgrade ([Step 7](#upgrade-step-7)).
 
+#### 5.3 Deployment { #deployment }
+
+Starting from Platform Server 11.18.0, after the modules are prepared, you can use the [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) functionality, to deploy all previously successfully compiled modules.
+
+If you want to deploy your modules, run the Configuration Tool as follows:
+
+```
+<platform_path>\ConfigurationTool.com /DeployPreparedApplications
+```
+
+The /DeployPreparedApplications can also be chained with other operations. For example, if you plan to do an environment upgrade, including modules preparation, and afterwards deploy all the prepared modules. See the example below:
+
+```
+<platform_path>\ConfigurationTool.com /UpgradeEnvironment /DeployPreparedApplications
+```
+
+Note that the Deploy All operation is synchronous. To learn more about the **Deploy All** feature, check [Deploy All](../../upgrade/upgrade-platform-module-deploy.md).
+
 ### 6. Upload the license file (requires manual intervention)
 
 Skip this step if the existing license is valid for the OutSystems version you're upgrading to.
@@ -291,6 +309,9 @@ Run the following:
 ```
 <outsystems_common_path>\OSPTool.com /PublishFactory <hostname> <username> <password>
 ```
+Starting from Platform Server 11.18.0, after the modules are prepared, you can use the [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) functionality to deploy all previously successfully compiled modules when it's more convenient to your team. You don't need to republish the entire factory in minor upgrades as the publish of the entire factory is equivalent to the preparation step followed by using the new **Deploy All** feature.
+Find out more in the [deployment section](#deployment).
+
 
 ## Adding a Front-End
 

@@ -109,6 +109,8 @@ Once the modules preparation finishes successfully, your environment is ready an
 
 When you publish a module after the modules preparation, the Platform Server uses the producers compilation generated during the preparation phase. This ensures all the code is updated, even if you haven't published those producers since the upgrade.
 
+Starting from Platform Server 11.18.0, you can use the [Deploy All](upgrade-platform-module-deploy.md) functionality. The **Deploy All** lets you deploy all modules compiled in the last modules preparation, instead of manually publishing your modules after preparation ends. Unlike the **Publish All** functionality, when using **Deploy All**, you can choose when it's more convenient for you to deploy the newly prepared modules. Find out more in [Deploy All](upgrade-platform-module-deploy.md).
+
 To see the upgrades report, click the **go to Upgrades** link on the banner.
 
 ![Modules preparation finished successfully (Service Center)](images/module-preparation-success-sc.png)

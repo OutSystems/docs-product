@@ -1051,6 +1051,7 @@
         - href: setup-maintain/upgrade/upgrade-lifetime.md
         - href: setup-maintain/upgrade/balanced-upgrade-highly-loaded-farms.md
         - href: setup-maintain/upgrade/upgrade-platform-module-prep.md
+        - href: setup-maintain/upgrade/upgrade-platform-module-deploy.md
         - href: setup-maintain/upgrade/upgrade-platform-errors.md
 
     # Mantain your OutSystems infraestructure

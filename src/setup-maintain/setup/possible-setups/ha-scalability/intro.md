@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 <div class="info" markdown="1">
 
-Download the whitepaper version of this document by clicking [here](resources/availability-scalability.pdf).
+Download the whitepaper version of this document [here](https://www.outsystems.com/1/high-availability-scalability/).
 </div>
 
 

@@ -13,7 +13,7 @@ The OutSystems **Users** application lets you create, update, and delete end use
 
 To access the Users application for a specific OutSystems environment, go to:
 
-`https://<environment_address>/Users`.
+`https://<environment_address>/Users`
 
 To log in to the Users application, you must have an account with administrator privileges.
 

@@ -19,9 +19,9 @@ Currency | 0.0 | 545870.025 | See Decimal type.
 Date | #1900-01-01# | #1988-08-28# | The  supported range is [#1900-01-01#, #3000-12-31#]
 Time | #00:00:00# | #12:20:56# | Minimum value: #00:00:00# <br/><br/>Maximum value: #23:59:59#
 Date Time | #1900-01-01 00:00:00# | #1988-08-28 23:59:59# | The supported range is [#1900-01-01 00:00:00#, #3000-12-31 23:59:59#]<br/><br/>Refer to the [additional notes](<#date-time-notes>) about the time zone conversions.
-Integer | 0 | 2147483600 | Minimum value: -2^31^, which is -2147483648.<br/><br/>Maximum value: 2^31-1, which is 2147483647.
+Integer | 0 | 2147483600 | Minimum value: -2^31^, which is -2147483648.<br/><br/>Maximum value: 2^31^-1, which is 2147483647.
 Long Integer | 0 | 5645245584135987412 | Minimum value: -2^63^<br/>Maximum value: 2^63^-1
-Decimal | 0.0 | -158121.025 <br/>4000.0 | Integer and decimal parts must be separated by a period. <br/><br/>Minimum value: -2^96 <br/><br/>Maximum value: 2^96^-1<br/><br/>The maximum number of digits in the decimal part is 8.
+Decimal | 0.0 | -158121.025 <br/>4000.0 | Integer and decimal parts must be separated by a period. <br/><br/>Minimum value: -2^96^ <br/><br/>Maximum value: 2^96^-1<br/><br/>The maximum number of digits in the decimal part is 8.
 Email | "" (empty string) | "fran.wilson@example.com" |
 Phone Number | "" (empty string) | "+1 555 565 3730" |
 Text | "" (empty string) | "My name is Christina Sharp." |

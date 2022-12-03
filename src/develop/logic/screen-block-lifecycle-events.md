@@ -112,7 +112,7 @@ Use cases you can implement with this event handler:
 
 ### On Ready
 
-The On Ready event handler runs when the Screen or Block is ready, i.e. when the DOM is ready, after the first render. In Blocks, this event happens before the same event of the parent Screen or Block. To ensure a fast and smooth Screen or Block render, this event is triggered even before the transition to the Screen ends.
+The On Ready event handler runs when the Screen or Block is ready, i.e. when the DOM is ready, before the first render. In Blocks, this event happens before the same event of the parent Screen or Block. To ensure a fast and smooth Screen or Block render, this event is triggered even before the transition to the Screen ends.
 
 Notes:
 

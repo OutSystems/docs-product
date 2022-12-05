@@ -15,14 +15,16 @@ The authentication of **end users**, i.e. the users of your OutSystems applicati
 
 </div>
 
-OutSystems allows you to manage IT users (developers, testers, operators). By default, when these users access OutSystems, they are authenticated using the built-in authentication mechanism. 
+OutSystems allows you to manage IT users (developers, testers, operators). By default, when these users access OutSystems, they're authenticated using the built-in authentication mechanism. 
 
 Usually you have other systems and you want your users to only have one account to authenticate in all of them. OutSystems allows this by enabling you to authenticate IT users using an authentication provider of your choice.
 
 To ensure everything is secure, only IT users with permissions to manage the infrastructure are allowed to make these changes.
 
 <div class="info" markdown="1">
- The AD External Authentication plugin that is available in on-premises infrastructures is not compatible with cloud environments. As such, it can not be configured in PaaS infrastructures.
+
+ Active Directory (AD) authentication as set up in **ADAuthprovider** requires that both the AD and OutSystems are in the same domain. Therefore, it's not compatible with OutSystems Cloud. LDAP authentication can be used with OutSystems Cloud.
+
 </div>
 
 ## How OutSystems Authenticates IT Users
@@ -52,7 +54,7 @@ Before changing the authentication provider, you need to ensure that each IT use
 
 You can either create the IT users manually, using the infrastructure management console, or use the [LifeTime Services API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2).
 
-Notice that when creating new IT users in OutSystems you'll have to specify the user password. Since you'll be using an external authentication provider, you can simply use a dummy password when creating OutSystems users, because it will not be used in the authentication process.
+Notice that when creating new IT users in OutSystems you'll have to specify the user password. Since you'll be using an external authentication provider, you can simply use a dummy password when creating OutSystems users, because it won't be used in the authentication process.
 
 
 ### Change the Authentication Plugin
@@ -103,7 +105,7 @@ After all necessary configuration settings have been defined and before propagat
 
     <div class="info" markdown="1">
 
-    If you get an error while propagating your changes to all environments, it's possible that the version of the plugin you're using does not support the new configuration API methods yet.
+    If you get an error while propagating your changes to all environments, it's possible that the version of the plugin you're using doesn't support the new configuration API methods yet.
 
     In this case, you will need to configure each environment separately by opening its configuration page:  
 

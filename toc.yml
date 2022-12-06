@@ -477,6 +477,7 @@
                 - href: develop/security/end-user-manage/end-user-authentication/configure-saml.md
                 - topics:
                     - href: develop/security/end-user-manage/end-user-authentication/saml-update-auth-flows/update-reactive-app-flows.md
+                    - href: develop/security/end-user-manage/end-user-authentication/saml-update-auth-flows/update-mobile-app-flows.md
                     - href: develop/security/end-user-manage/end-user-authentication/saml-update-auth-flows/update-trad-web-app-flows.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-azuread.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-okta.md

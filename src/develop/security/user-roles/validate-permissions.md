@@ -16,6 +16,8 @@ By validating their user ID or Roles you can control access to screens, screen e
 
 To restrict access to a screen of an app, in the **Roles** property of the screen select the end user Roles that can view the screen.
 
+**Note**: **Anonymous screens** generate public endpoints which is a  security risk as it can lead to cross-site request forgery attacks. For more information, see [Security Warning](../../../ref/errors-and-warnings/warnings/security-warning.md). 
+
 ![Restrict access to a screen using Roles](images/valdiate-screen-ss.png)
 
 To restrict access to screen elements or actions of a screen, use the **Check&lt;Role_name&gt;Role** action or function to determine if the end user has the necessary Role.
@@ -33,7 +35,6 @@ To restrict the displayed data by Role, use **Check&lt;Role_name&gt;Role** in an
 In this next example, we're checking for the OrderManagerRole to restrict visibility over inactive opportunities. When the **Check&lt;Role_name&gt;Role** evaluates to false, only active opportunities are shown:
 
 ![Restrict access to data by Role](images/validate-role-ss.png)
-
 
 ## In Traditional Web
 

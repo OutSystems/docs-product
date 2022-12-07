@@ -16,7 +16,6 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 When developing Apps you create logic that runs on the **server** and logic that runs on the **client** device, like a smartphone or a tablet.
 
-
 You can create the following Actions:
 
 * Data Actions
@@ -58,3 +57,5 @@ You can also create **Server Actions** in your apps to encapsulate the logic and
 ![Server Action in Service Studio](images/server-action-ss.png?width=600)
 
 You can set a **Server Action** as a function and use it directly in Expressions of the server-side logic.
+
+**Note**: **Anonymous screens** generate public endpoints which is a  security risk as it can lead to cross-site request forgery attacks. For more information, see [Security Warning](../../ref/errors-and-warnings/warnings/security-warning.md).

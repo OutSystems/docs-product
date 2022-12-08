@@ -18,13 +18,15 @@ SAML 2.0 Authentication in Mobile Apps requires:
 
 * MABS 9.0 or later.
 
+* Configure SAML 2.0 to add your identity provider (check [the documentation](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_Users/End_Users_Authentication/Configure_SAML_2.0_Authentication) for more information)
+
 * Activating the **Single Sign-On Between App Types** setting in Service Center (check [Configure App Authentication](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Secure_the_Applications/Configure_App_Authentication#configure-app-authentication-settings) for more information)
 
 ## Updating the login/logout flows
 
 The procedure consists of the following general steps:
 
-1. Install the **Single Sign-On Mobile** plugin and add its dependencies in the home module of your app.
+1. Install the [**Single Sign-On Mobile**](https://www.outsystems.com/forge/component-overview/14284/single-sign-on-mobile) plugin and add its dependencies in the home module of your app.
 
 1. **Create UI** for an SSO Mobile experience.
 

@@ -16,12 +16,6 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 ## Events - Notification
 
-<div class="info" markdown="1">
-
-Applies to Mobile Apps and Reactive Web Apps only
-
-</div>
-
 |Event|Output|Description| 
 |---|---|---| 
 |OnToggle: Optional|IsOpen (Boolean)|Triggers when the Notification is toggled.| 

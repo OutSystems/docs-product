@@ -98,5 +98,6 @@ After following these steps and publishing the module, you can test the pattern 
 | Prompt (Text): Optional                             | Text that is displayed when no items are selected.        |
 | OptionalConfigs.IsDisabled (Boolean): Optional      | Set as True to disable the Dropdown.                      |
 | OptionalConfigs.NoResultsText (Text): Optional      | Text that is displayed when there are no results to show. |
-|OptionalConfigs.SearchPrompt (Text): Prompt text displayed in the search input box.|  
+| OptionalConfigs.SearchPrompt (Text): Optional       | Prompt text displayed in the search input box.            |
+| OptionalConfigs.NoOptionsText (Text): Optional      | Set the message that is displayed in the Dropdown list when there are no options available.<br/><br/>The default message is: **There are no options to show.** |
 |ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

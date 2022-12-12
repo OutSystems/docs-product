@@ -242,6 +242,23 @@ An incorrect abstraction of concepts may lead to unmanageable dependencies. The 
 
 Check Discovery for the producer module. If the producer is supposed to provide services to its current consumers move it to a lower sublayer. If not, reevaluate the inclusion of the consumed elements in the producer module, and move the consumed elements to a lower sublayer module.
 
+### Team strongly coupled with another team
+
+Apps owned by a team with strong dependencies on apps owned by other teams.
+
+**Impact**
+
+Using strong dependencies across different teams makes their apps' life cycles also dependent.  
+
+**How to fix**
+
+To promote team autonomy, OutSystems recommends you use loose coupling to consume elements across teams. To get more details on each finding, select the magnifying glass icon to open the **Consumed elements**. Identify those consumed elements that can be provided in a loosely coupled way.  
+
+If loose coupling isn’t an option, check the nature of the consumed elements and move them to the appropriate app. For example, move business-agnostic modules to a foundation app, and business-related modules to a core app.  
+
+Foundation apps are stable and rarely modified. They are allowed to expose elements through tight coupling to other teams' apps, enabling the reusability of business-agnostic elements. To allow foundation apps to expose elements to other teams, select the magnifying glass icon to open the **Consumed elements** and switch the toggle; In the same window, select **Allow all apps** to allow all apps from a team to expose elements to other teams. This sets the status of the findings as "Won't fix".
+
+
 ## Performance
 
 ### Unlimited records in Aggregate

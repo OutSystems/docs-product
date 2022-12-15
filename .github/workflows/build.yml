@@ -10,12 +10,12 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: docs
 
     - name: Checkout Tools
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: ${{ secrets.TOOLS_REPOSITORY }}
         ref: master

@@ -50,10 +50,6 @@ The window **Waiting for application** stays open, and nothing happens when you 
 
 To fix this issue, set the debugger to **Emulate using Chrome** before you click **Start debugging**. Note that the options **Android device** and **iOS device** of the debugger work only when you distribute your app as a native build, and can't work with an app you distribute as PWA.
 
-### Extensibility Configurations override isn't working when applied in LifeTime
-
-There's an issue with applying Extensibility Configurations from LifeTime to override the manifest. The team is working on the fix. Note that you can still use Extensibility Configurations in Service Studio.
-
 ### PWA doesn't install in iOS
 
 If you're using Platform Server 11.7 or earlier **and** iOS 13 and later, you should **either**:

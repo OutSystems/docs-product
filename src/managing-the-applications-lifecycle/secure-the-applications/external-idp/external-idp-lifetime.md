@@ -98,6 +98,8 @@ To add a local administrator, follow these steps:
 
     ![New local administrator](images/new-localadmin-lt.png)
 
+Once you add the local administrator, you can log in using `<domain>/LifeTimeSDK/Internal_Login.aspx?`. 
+
 ### Clearing built-in password credentials
 
 You can clear a user’s built-in password credentials in one of the following ways. Doing this prevents users from using the fallback authentication. 

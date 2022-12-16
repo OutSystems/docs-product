@@ -14,7 +14,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-The Social Login plugin lets you set a login experience that uses an external provider, namely Google, Apple, Facebook, or LinkedIn. The plugin enables you to request access to a subset of your user's data stored by the provider, such as name, email, and profile picture. You can then use this information to create or start a user session on your app.
+The [Social Login plugin](https://www.outsystems.com/forge/component-overview/7895/social-login-mobile) lets you set a login experience that uses an external provider, namely Google, Apple, Facebook, or LinkedIn. The plugin enables you to request access to a subset of your user's data stored by the provider, such as name, email, and profile picture. You can then use this information to create or start a user session on your app.
 
 As a good practice, verify the plugin is available during runtime in your app to prevent the app from crashing. Use the **Logic** > **Client Actions** > **SocialLoginPlugin** > **CheckSocialLoginPlugin** action to check for the plugin availability. If the plugin isn't available to the app, display an error to your users.
 

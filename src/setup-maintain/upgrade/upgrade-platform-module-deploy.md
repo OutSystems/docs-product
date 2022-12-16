@@ -10,6 +10,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 Starting from Platform Server 11.18.0, the environment upgrade process includes a new optional modules deployment step.
 
+<div class="warning" markdown="1">
+
+Self-managed infrastructures that make use of **Multiple Database Catalogs** either shouldn't use **Deploy All**. Instead, use all content solutions or deploy via LifeTime. Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. This issue will be fixed in the next release. 
+
+</div>
+
 When upgrading your OutSystems environment from your current version to Platform Server 11.18.0 (or later), after the Platform Server installation ends preparing your modules for the new version, you can now use the Deploy All feature to deploy all the previously prepared modules.
 
 This step enables you to deploy the latest successful compilation in the current platform version, as long as that module hasn't been deployed yet.

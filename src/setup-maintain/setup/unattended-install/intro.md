@@ -320,9 +320,9 @@ Run the following:
 
 <div class="warning" markdown="1">
 
-Starting from Platform Server 11.18.0, a new [Deploy All](upgrade-platform-module-deploy.md) feature is available.
+Starting from Platform Server 11.18.0, a new [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) feature is available.
 
-Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** the [Deploy All](upgrade-platform-module-deploy.md) feature.
+Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** the [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) feature.
 
 Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. These issues will be fixed in the next release.
 

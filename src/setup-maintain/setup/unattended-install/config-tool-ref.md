@@ -136,7 +136,15 @@ ConfigurationTool.com
 
 `/DeployPreparedApplications`
 
-:   Deploys all the successfully prepared modules from your current Platform Server version to Platform Server 11.18.0 or later, except for those modules already deployed in the latest version. Read more about this feature in [Modules deployment step during Platform Server upgrade](https://success.outsystems.com/Documentation/11/Setup_and_maintain_your_OutSystems_infrastructure/Upgrade_OutSystems_platform/Modules_deployment_step_during_Platform_Server_upgrade).
+:   <div class="warning" markdown="1">
+
+       Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** the **/DeployPreparedApplications** parameter, which is related to the [Deploy All](upgrade-platform-module-deploy.md) feature.
+
+    Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. These issues will be fixed in the next release.
+
+    </div>
+
+    Deploys all the successfully prepared modules from your current Platform Server version to Platform Server 11.18.0 or later, except for those modules already deployed in the latest version. Read more about this feature in [Modules deployment step during Platform Server upgrade](https://success.outsystems.com/Documentation/11/Setup_and_maintain_your_OutSystems_infrastructure/Upgrade_OutSystems_platform/Modules_deployment_step_during_Platform_Server_upgrade).
 
 `/ApplySettingsFactory`
 

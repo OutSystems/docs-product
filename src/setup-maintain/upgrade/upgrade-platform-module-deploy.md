@@ -12,7 +12,9 @@ Starting from Platform Server 11.18.0, the environment upgrade process includes 
 
 <div class="warning" markdown="1">
 
-Self-managed infrastructures that make use of **Multiple Database Catalogs** shouldn't use **Deploy All**. Instead, use all content solutions or deploy via LifeTime. Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. This issue will be fixed in the next release. 
+Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** this feature. In the OutSystems Cloud, we've made this feature unavailable.
+
+Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. These issues will be fixed in the next release.
 
 </div>
 

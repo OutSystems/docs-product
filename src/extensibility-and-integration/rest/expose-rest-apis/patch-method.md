@@ -27,7 +27,7 @@ The following are the prerequisites for the PATCH method on exposed REST service
 
 ## Create a PATCH Method
 
-For illustration purposes, an exposed REST API that contains a PATCH method, called "UpdateContact", was created. This method, which is meant to update a "Contact" that is stored in the database, allows the partial update of a "Contact", by updating some entity's attributes and preserving the others. In this example "Contact" is the entity and the "ContactInput" is the structure parameter used as an input parameter of the "UpdateContact" method. This input parameter can be seen as a DTO (Data Transfer Object) of type "ContactDTO" (with the same attributes as the "Contact" entity), which will carry the data that will update the entity.
+To understand how to create a PATCH Method, let's use an example, where we start by creating an exposed REST API that contains a PATCH method, called "UpdateContact". This method, which is meant to update a "Contact" that is stored in the database, allows the partial update of a "Contact", by updating some entity's attributes and preserving the others. In this example "Contact" is the entity and the "ContactInput" is the structure parameter used as an input parameter of the "UpdateContact" method. This input parameter can be seen as a DTO (Data Transfer Object) of type "ContactDTO" (with the same attributes as the "Contact" entity), which will carry the data that will update the entity.
 
 As you'll see, the "UpdateContact" action needs to identify which attributes of the "ContactDTO" were really sent to the API, in order to partially update a record of the "Contact" entity with the new values of the sent attributes.
 
@@ -43,7 +43,7 @@ To create a PATCH method, do the following:
 
 1. Design the method as an action that receives a resource (in our case "ContactDTO") and edits a record that is stored in the database. In our example, the received structure is called "ContactDTO", which is similar to the Entity "Contact".
 
-    ![](images/ss-patch-add.png?width=750)
+    ![](images/patch-add-ss.png?width=750)
 
 ## Constraint with the PATCH method
 Due to the simplification and abstraction provided by OutSystems to accelerate development, there's a constraint in the PATCH semantics that may result in patterns that are not supported by OutSystems language, like null values or dynamic structures. The following sections help you overcome this constraint if you need to do it.
@@ -63,9 +63,14 @@ To implement a correct PATCH, define default values in your structure attribute 
 
 1. Go to the intended structure (in our example "ContactDTO) and set Default Values highly improbable to be sent in runtime to each attribute of the structure.
 
-1. Use, for example, -999999999 to Integer, Long Integer data types or "undefined" to Text, Email data types:
+    1. For Integers and Long Interger data types, use `-999999999`:
 
-    ![](images/ss-patch-data-types.png)
+        ![](images/add-filename-1-ss.png)
+    
+    1. For Text and Email data types:
+
+        ![](images/add-filename-2-ss.png)
+    
 	
 #### Boolean data type
 
@@ -73,7 +78,7 @@ Booleans are a particular case, since there are only two possible values, making
 
 1. Map Booleans directly to Text. Set the same Default Value as used in the Text data type and set the attribute to "isActive":
 
-    ![](images/ss-patch-boolean.png)
+    ![](images/add-filename-4-ss.png)
 
 1. When checking the condition of a boolean, you need to check if the text values are “false” or “true”.
 

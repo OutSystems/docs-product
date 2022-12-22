@@ -21,7 +21,7 @@ The Cache Invalidation Service is the OutSystems component responsible for notif
 
 This service uses a publish/subscribe pattern: applications subscribe to queues that represent modules and tenants where data can come from. The underlying technology used by the Cache Invalidation Service is called **RabbitMQ**, a distributed message queue service that implements the publish/subscribe pattern.
 
-You must configure the platform so applications can reach this service. You can install and configure a RabbitMQ instance using OutSystems Configuration Tool. Performing this operation installs RabbitMQ in the same machine that's running the Configuration Tool. Check the [Platform Server 11 Installation Checklist](<https://www.outsystems.com/goto/checklist-11>) for more information on how to install and configure the Cache Invalidation Service.
+You must configure the platform so applications can reach this service. You can install and configure a RabbitMQ instance using OutSystems Configuration Tool. Performing this operation installs RabbitMQ in the same machine that's running the Configuration Tool. For more information on how to install and configure the Cache Invalidation Service, check the Platform Server 11 Installation Checklist in the downloads detail page of your [Platform Server version](https://www.outsystems.com/Downloads/search/Platform-Server/).
 
 ## When do I need High Availability? { #when-ha }
 

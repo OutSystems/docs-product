@@ -65,11 +65,11 @@ To implement a correct PATCH, define default values in your structure attribute 
 
     1. For Integers and Long Interger data types, use `-999999999`:
 
-        ![](images/add-filename-1-ss.png)
+        ![](images/add-filename-1-ss.png?width=750)
     
-    1. For Text and Email data types:
+    1. For Text and Email data types use `"undefined"`:
 
-        ![](images/add-filename-2-ss.png)
+        ![](images/add-filename-2-ss.png?width=750)
     
 	
 #### Boolean data type

@@ -20,8 +20,6 @@ There are some feature differences between the cross-platform and Windows-only v
 
 * **Interactive tutorials** are not available.
 
-* The **Export to an Image** feature of the flow editor for actions, processes, and UI flows is not available.
-
 * The **tooltip preview of an image** on the Elements Tree is not available. 
 
 * **UI Editor**:

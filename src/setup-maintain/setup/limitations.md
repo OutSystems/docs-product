@@ -27,6 +27,5 @@ There are some feature differences between the cross-platform and Windows-only v
     * It is not possible to apply different font styles to a Text widget substring. Additionally, you cannot split the Text widget using the Enter key.  
     * When hovering over a widget's adorner stack, the corresponding widgets are not highlighted.
     * Navigation between widgets and text widgets using the arrow keys is not possible.
-    * When editing Blocks, there is no artificial gray padding around them to visually differentiate them from Screens. 
-    * When editing screen templates, there is no information banner available.    
+    * When editing Blocks, there is no artificial gray padding around them to visually differentiate them from Screens.     
  

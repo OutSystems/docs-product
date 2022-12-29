@@ -20,11 +20,11 @@ Do the following:
 
 1. In Integration Studio, create an extension to map the .NET code into Service Studio actions. Define actions and their input/output parameters.
 
-    ![](images/is-rest-actions.png)
+    ![Create an extension to map the .NET](images/rest-actions-is.png)
 
 1. Click **Edit Source Code .NET** in the toolbar to open the extension solution in Microsoft Visual Studio. Use the [REST Extensibility API](../../../ref/apis/rest-extensibility-api.md) in your .NET code to obtain and manipulate requests/responses.  
 
-    ![](images/vs-rest-edit-code.png)
+    ![Edit source code .NET](images/rest-edit-code-usr.png)
 
     To see examples of how to use the REST Extensibility API, [search for modules that use REST APIs](https://www.outsystems.com/forge/list?q=REST%20API&t=&o=&tr=False&oss=False&c=&a=&v=11&hd=False&tn=&scat=forge) in the Components category of [OutSystems Forge](https://www.outsystems.com/forge/).
 
@@ -32,17 +32,17 @@ Do the following:
 
 1. In Service Studio, add a dependency on the extension actions you will use by opening the **Manage Dependencies** dialog.
 
-    ![](images/ss-rest-manage-dependencies.png)
+    ![Add a dependency on the extension actions](images/rest-manage-dependencies-ss.png)
 
 1. In the REST API, use the following properties:
 
     * **On Before Request** property: set to `New OnBeforeRequest (Advanced)` to create a "OnBeforeRequestAdvanced" callback under the REST API tree element. Use it to customize the request before it is sent.
 
-        ![](images/ss-rest-new-onbeforerequest.png)
+        ![Create a OnBeforeRequest](images/rest-new-onbeforerequest-ss.png)
 
     * **On After Response** property: set to `New OnAfterResponse (Advanced)` to create a "OnAfterResponseAdvanced" callback under the REST API tree element. Use it to customize the response after it has arrived.
 
-        ![](images/ss-rest-new-onafterresponse.png)
+        ![reate a OnAfterResponse](images/rest-new-onafterresponse-ss.png)
 
     After setting the value, you will have an action named "OnBeforeRequestAdvanced" or "OnAfterResponseAdvanced" under the REST API.
 
@@ -50,4 +50,4 @@ Do the following:
 
 1. Use the referenced extension actions in the action flow to customize the request or response.
 
-![](images/ss-rest-use-extension-action.png)
+    ![Customize the request or response](images/rest-use-extension-action-ss.png)

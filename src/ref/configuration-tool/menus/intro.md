@@ -6,3 +6,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Configuration Tool Menus
+
+The Configuration Tool has 2 menus:
+
+* The [File menu](menu-file.md) provides the functionality to import and export settings and configurations scripts. 
+
+* The [Help menu](menu-help.md) provides help and information about the Configuration Tool.

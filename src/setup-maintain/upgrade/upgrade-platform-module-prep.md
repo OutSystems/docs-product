@@ -109,7 +109,15 @@ Once the modules preparation finishes successfully, your environment is ready an
 
 When you publish a module after the modules preparation, the Platform Server uses the producers compilation generated during the preparation phase. This ensures all the code is updated, even if you haven't published those producers since the upgrade.
 
-Starting from Platform Server 11.18.0, you can use the [Deploy All](upgrade-platform-module-deploy.md) functionality. The **Deploy All** lets you deploy all modules compiled in the last modules preparation, instead of manually publishing your modules after preparation ends. Unlike the **Publish All** functionality, when using **Deploy All**, you can choose when it's more convenient for you to deploy the newly prepared modules. Find out more in [Deploy All](upgrade-platform-module-deploy.md).
+<div class="warning" markdown="1">
+
+Starting from Platform Server 11.18.0, a new [Deploy All](upgrade-platform-module-deploy.md) feature is available.
+
+Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** the [Deploy All](upgrade-platform-module-deploy.md) feature. In the OutSystems Cloud, we've made this feature unavailable.
+
+Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. These issues will be fixed in the next release.
+
+</div>
 
 To see the upgrades report, click the **go to Upgrades** link on the banner.
 

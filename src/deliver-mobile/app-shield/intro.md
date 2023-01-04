@@ -109,7 +109,7 @@ Protection available for the iOS builds.
 * Code injection protection
 * Debugger protection
 * Screen mirroring detection
-* Screenshot protection
+* Screenshot protection ([see limitation](#general))
 
 ## Configuration
 
@@ -219,8 +219,6 @@ We know how important obfuscation of JavaScript is to our customers. Our develop
 **AppShield** has the following limitations. 
 
 ### General
-
-Non-specific limitations.
 
 * On iOS the plugin doesn't block user-initiated screenshots, it only notifies the app that a screenshot was taken. **OutSystems** currently doesn't support this event. However, **AppShield** blocks taking screenshots of the iOS App Switcher.
 

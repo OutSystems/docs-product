@@ -1,0 +1,19 @@
+name: Trigger Translations
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    name: "Trigger Translations"
+    steps:
+    - uses: passeidireto/trigger-external-workflow-action@main
+      with:
+        repository: OutSystems/tk-translation-automation
+        event: docs-product
+        github_pat: ${{ secrets.TOOLS_PAT }}

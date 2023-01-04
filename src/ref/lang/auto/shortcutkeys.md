@@ -61,7 +61,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 |Ctrl+Shift+T|Shift+Cmd+T|Open the last closed window tab|
 |Ctrl+G|Shift+Cmd+D|Show/hide development tabs|
 |Ctrl+W|Cmd+T|Show Widget Tree|
-|Ctrl+Period|Cmd.|Select the active element in the elements tree|
+|Ctrl+Period|Cmd+Period|Select the active element in the elements tree|
 |Ctrl+Click|Cmd+Click|Navigate to the target element in the Expression Editor|
 
 ## Search

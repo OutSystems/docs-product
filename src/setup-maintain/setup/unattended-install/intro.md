@@ -265,6 +265,14 @@ In major upgrades, the module preparation is skipped, thus you are required to r
 
 #### 5.3 Deployment { #deployment }
 
+<div class="warning" markdown="1">
+
+Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** the **/DeployPreparedApplications** parameter nor the **[Deploy All](../../upgrade/upgrade-platform-module-deploy.md)** feature.
+
+Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. These issues will be fixed in the next release.
+
+</div>
+
 Starting from Platform Server 11.18.0, after the modules are prepared, you can use the [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) functionality, to deploy all previously successfully compiled modules.
 
 If you want to deploy your modules, run the Configuration Tool as follows:
@@ -309,8 +317,16 @@ Run the following:
 ```
 <outsystems_common_path>\OSPTool.com /PublishFactory <hostname> <username> <password>
 ```
-Starting from Platform Server 11.18.0, after the modules are prepared, you can use the [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) functionality to deploy all previously successfully compiled modules when it's more convenient to your team. You don't need to republish the entire factory in minor upgrades as the publish of the entire factory is equivalent to the preparation step followed by using the new **Deploy All** feature.
-Find out more in the [deployment section](#deployment).
+
+<div class="warning" markdown="1">
+
+Starting from Platform Server 11.18.0, a new [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) feature is available.
+
+Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** the [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) feature.
+
+Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. These issues will be fixed in the next release.
+
+</div>
 
 
 ## Adding a Front-End

@@ -1,12 +1,14 @@
 ---
-summary: Instructions for enabling the management plugin and for troubleshooting Cache Invalidation Service (RabbitMQ) issues.
+summary: Learn in OutSystems 11 the instructions for enabling the management plugin and for troubleshooting Cache Invalidation Service (RabbitMQ) issues.
 tags: version-11
 locale: en-us
 guid: 4b06ed06-572c-48c9-835c-f38db745052c
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# RabbitMQ management and troubleshooting
+# Troubleshoot OutSystems cache invalidation service
+
+This article gives you an overview on how to troubleshoot [cache invalidadtion](intro.md) service issues, in OutSystems 11.
 
 The default RabbitMQ batch scripts folder mentioned in the sections below is the following:
 

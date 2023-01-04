@@ -10,6 +10,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 In LifeTime, deployment of an application's [tagged version](<tag-a-version.md>) takes a version of the application from one environment and deploys it in another. Just select the tagged version of the application and LifeTime deploys it in the exact development state in which it was tagged.
 
+**Note:** Application and module names must be unique within each environment and that as you stage, name changes are propagated to the target environments. It is important to keep all environments up to date when changing application or module names to avoid the following scenarios:
+
+- [LifeTime staging aborts after renaming an app or module](https://success.outsystems.com/Support/Troubleshooting/Application_lifecycle/LifeTime_staging_aborts_after_renaming_an_app_or_module)
+
+- [Application renamed unexpectedly after staging](https://success.outsystems.com/Support/Troubleshooting/Application_lifecycle/Application_renamed_unexpectedly_after_staging)
+
 Here's an example of deploying applications in LifeTime.
 
 ## Deploy a Web and a Mobile Application

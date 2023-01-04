@@ -1868,4 +1868,7 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
-
+# Errors Package Manager Service 
+- href: error/intro.md
+- topics:
+  - href: error/PKGS-40001.md

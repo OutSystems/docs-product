@@ -109,7 +109,7 @@ Protection available for the iOS builds.
 * Code injection protection
 * Debugger protection
 * Screen mirroring detection
-* Screenshot protection ([see limitation](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Harden_the_protection_of_mobile_apps_with_AppShield#general))
+* Screenshot protection ([see limitation](#general))
 
 ## Configuration
 

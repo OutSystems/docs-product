@@ -29,7 +29,7 @@ When a developer publishes a module to their Personal Area they can test and deb
 
 You can publish a module to your Personal Area using the command "Run and Debug in *[user name]* Personal Area" from the Debugger menu. Besides publishing the module in your Personal Area, this command will also attach the debugger to both your Personal Area and the Public Area. This means that, from this moment on, you will be able to debug threads executing in both areas. When testing a module in the Personal Area, links to screens that are referenced from other modules automatically redirect to the Public Area.
 
-You must publish a module in the Public Area at least once before publishing it to your Personal Area. We are removing some of these limitations, but currently changes to the following elements also require the module to be published to the Public Area to ensure the consistency between the Public and the Personal Areas:
+You must publish a module in the Public Area at least once before publishing it to your Personal Area. Changes to the following elements also require the module to be published to the Public Area to ensure the consistency between the Public and the Personal Areas:
 
 * Entities
 * Site Properties

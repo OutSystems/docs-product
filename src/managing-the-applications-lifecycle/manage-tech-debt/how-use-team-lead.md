@@ -82,11 +82,10 @@ The **Findings** section displays all the occurrences of the code pattern. To se
 ![Findings](images/use-findings-ams.png)
 
 You can change the status of the findings individually or in bulk. 
-You can change the status of the findings individually or in bulk.
 
 ![Change bulk findings](images/bulk-selection-ams.png) 
 
-After checking a finding, you can change its status to one of the following:
+After selecting one or multiple findings, you can change the status of the findings depending on your action:
 
 * If you fix the finding, set the status to **Already fixed**. This lets other developers in your team know it's fixed. After the next synchronization, if you have solved the finding correctly, it disappears. Otherwise, the finding reverts to **Open**.
 

@@ -30,11 +30,11 @@ OutSystems provides a demo app to help you learn how to use this plugin. Install
 * Use the a predefined UI block
 * Create a settings page
 
-    ![demo app main screen](images/sample-app-main.png)
+    ![demo app main screen](images/sample-app-main-ss.png)
 
     Here is the settings screen:
 
-    ![demo app settings screen](images/sample-app-settings.png)
+    ![demo app settings screen](images/sample-app-settings-ss.png)
 
 ## Creating a user interface
 

@@ -27,11 +27,11 @@ Open the aggregate and do the following:
 
 1. On the `City` attribute, right-click, and choose **Group By City**.
   
-    ![Group by city](images/group-calculate-ex-ss.png)
+    ![Group by city](images/group-attribute-ss.png)
 
 1. On the `Employee Id` attribute, right-click, and choose **count**.
 
-    ![Count employees](images/group-calculate-ex1-ss.png)
+    ![Count employees](images/select-aggregate-function-ss.png)
 
 1. Now you see how many employees are in each city.
 

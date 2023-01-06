@@ -1871,4 +1871,21 @@
 # Errors Package Manager Service 
 - href: error/intro.md
 - topics:
-  - href: error/PKGS-40001.md
+  - href: error/PKGS-40003.md
+  - href: error/PKGS-40004.md
+  - href: error/PKGS-40005.md
+  - href: error/PKGS-40007.md
+  - href: error/PKGS-40008.md
+  - href: error/PKGS-40010.md
+  - href: error/PKGS-40011.md
+  - href: error/PKGS-40012.md
+  - href: error/PKGS-40014.md
+  - href: error/PKGS-40015.md
+  - href: error/PKGS-40016.md
+  - href: error/PKGS-40017.md
+  - href: error/PKGS-40101.md
+  - href: error/PKGS-40102.md
+  - href: error/PKGS-50002.md
+  - href: error/PKGS-50003.md
+  - href: error/PKGS-50004.md
+  - href: error/PKGS-50005.md

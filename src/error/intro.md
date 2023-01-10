@@ -1,9 +1,9 @@
 ---
 summary: Error Messages for Package Manager Service
-tags: OutSystems
+tags:
 guid: 2d844fa0-2d5a-4ff5-a9ba-cd718084181a
 locale: en-us
-app_type: web api
+app_type: mobile apps, reactive web apps
 ---
 
 # Package Manager Service 

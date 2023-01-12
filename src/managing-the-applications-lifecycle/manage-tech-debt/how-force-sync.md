@@ -24,7 +24,7 @@ There's a daily limit to the number of unscheduled synchronization requests that
 
 To force a synchronization, follow these steps:
 
-1. Go to theAI Mentor Studio LifeTime plugin (`https://<lifetime_environment>/ArchitectureDashboardProbe/`) and select **Monitor**.
+1. Go to theAI Mentor Studio LifeTime plugin (`https://<lifetime_environment>/AIMentorStudioProbe/`) and select **Monitor**.
 
     ![Select Monitor](images/sync-plugin-monitor-lt.png)
 

@@ -12,7 +12,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 A Local Variable exists only in the scope of its parent element, for example, a Screen or an Action. A Local Variable can only be assigned and used locally inside that scope. Local variables are destroyed when execution leaves the scope of the parent element. The image below shows how to add a Local Variable inside a Screen.  
 
-![Adding a new Local Variable to a Screen](<images/add-local-variable-ss.png>)
+![Adding a new Local Variable to a Screen](<images/add-local-variable-inside-screen-ss.png>)
 
 ## How to use
 

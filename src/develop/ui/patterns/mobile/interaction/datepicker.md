@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 **This pattern is deprecated for versions of OutSystems UI lower than 2.8.2.** For more information on how to migrate old versions, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
 
-To find out what version of OutSystems UI you are using, see [OutSystems UI version](#outsystems-ui-version).
+To find out what version of OutSystems UI you are using, see [OutSystems UI version](../../intro.md#outsystems-ui-version).
 
 </div>
 
@@ -99,15 +99,3 @@ After following these steps and publishing the module, you can test the pattern 
 | OptionalConfigs.MaxDate (DateTime): Optional                          | All days after this date are disabled.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | OptionalConfigs.FirstWeekDay (DatePickerWeekDay Identifier): Optional | Defines which week day is displayed first.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ExtendedClass (Text): Optional                                        | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <br/><br/>Examples <ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet). |
-
-### OutSystems UI version
-
-To find out what version of OutSystems UI you are using:
-
-1. Click the **Dependencies** icon
-
-1. Click **In Use**.
-
-1. Select **OutSystemsUI**.
-
-![OutSystems UI version](<images/os-version-ss.png>)

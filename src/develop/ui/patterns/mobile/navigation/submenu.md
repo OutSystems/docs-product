@@ -16,10 +16,11 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 <div class="info" markdown="1">
 
-If you are using an OutSystems UI version lower than 2.8.0, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
-                            
-</div>
+**This component is deprecated for versions of OutSystems UI lower than 2.8.1.** For more information on how to migrate old versions, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
 
+To find out what version of OutSystems UI you are using, see [OutSystems UI version](../../intro.md#outsystems-ui-version).
+
+</div>
 You can use the Submenu UI Pattern to create a menu that is contained within another menu.
 
 ![Example submenu](<images/submenu-example-ss.png>)

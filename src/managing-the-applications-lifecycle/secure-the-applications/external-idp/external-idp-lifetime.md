@@ -54,11 +54,11 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
 1. Click **Save Changes**.
 
-1. Click **Activate**
+1. Click **Activate**.
 
     The **Activate OpenID Connect provider** pop-up is displayed. 
 
-    ![Activate provider](images/activate-provider-lt.png)
+    ![Activate provider](images/activate-openid-provider-lt.png)
 
 1. Enter the **Client Secret**.
 
@@ -68,7 +68,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
 1. Click **Activate and Log Out**. 
 
-    ![Click Proceed](images/client-secret-lt.png)
+    ![Click Activate and Log Out](images/log-out-lt.png)
 
 Once activated, you are logged out of the current session and redirected to the login page of the currently active OIDC provider login page.
 
@@ -114,7 +114,7 @@ Once the OpenID Connect provider is activated, the fallback of using the built-i
 
     When activating the OIDC provider, in the **Activate OpenID Connect provider** pop-up, select the **Clear all local users passwords now (Recommended)** checkbox and click **Activate and Log Out**.
 
-    ![Activate provider](images/client-secret-lt.png)
+    ![Activate provider](images/log-out-lt.png)
 
 * **Option 2**
 

@@ -48,6 +48,8 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
         
     1. **Username Claim**: Claim used to match the username field of the user configured in LifeTime. By default, the claim is ``email``. For more information, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
 
+        **Note**: For Azure and OKTA use ``preferred_username`` as the **Username Claim** value.
+
     ![Enter authentication settings](images/authentication-settings-lt.png)
 
 1. Click **Save Changes**.
@@ -64,9 +66,14 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
     For more information about clearing user’s passwords, see [Clearing built-in password credentials](#clearing-built-in-password-credentials).
 
-1. Click **Proceed**. 
+1. Click **Activate and Log Out**. 
 
     ![Click Proceed](images/client-secret-lt.png)
+
+Once activated, you are logged out of the current session and redirected to the login page of the currently active OIDC provider login page.
+
+**Note**: Once the OpenId Connect provider is activated, users  can no longer use the fallback built-in authentication mechanism. In the case of any issues with the external IdP, designated break-glass users, also known as local admins, can login using a username and password to deactivate the OpenID Connect provider and enable any alternative authentication mechanism.
+
 
 ## Deactivating the external identity provider
 
@@ -102,13 +109,13 @@ Once you add the local administrator, you can log in using `<domain>/LifeTimeSDK
 
 ### Clearing built-in password credentials
 
-You can clear a user’s built-in password credentials in one of the following ways. Doing this prevents users from using the fallback authentication. 
+Once the OpenID Connect provider is activated, the fallback of using the built-in provider is no longer available. As the built-in user credentials are not going to be used, we recommend clearing the built-in user passwords. In the case of any issues with the external IdP, designated break-glass users, also known as local admins, can login using a username and password to deactivate the OpenID Connect provider and enable any alternative authentication mechanism.
 
 * **Option 1**
 
-    When activating the OIDC provider, in the **Activate OpenID Connect provider** pop-up, select the **Clear all local users passwords now (Recommended)** checkbox and click **Proceed**.
+    When activating the OIDC provider, in the **Activate OpenID Connect provider** pop-up, select the **Clear all local users passwords now (Recommended)** checkbox and click **Activate and Log Out**.
 
-    ![Activate provider](images/activate-provider-lt.png)
+    ![Activate provider](images/client-secret-lt.png)
 
 * **Option 2**
 

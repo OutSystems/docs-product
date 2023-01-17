@@ -25,10 +25,10 @@ The following table shows the list of OutSystems UI Patterns that use external p
 
 UI Pattern |  Provider | Library version  
 ---|---|---
-Carousel | [Splide](https://splidejs.com/) | 4.0  
+Carousel | [Splide](https://splidejs.com/) | 4.1.3  
 Date Picker | [Flatpickr](https://flatpickr.js.org/)| 4.6.13
 Date Picker Range | [Flatpickr](https://flatpickr.js.org/)| 4.6.13 
-Dropdown Search | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.31
-Dropdown Tags | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.31 
-Range Slider | [noUiSlider](https://refreshless.com/nouislider/) | 15.6.0  
-Range Slider Interval | [noUiSlider](https://refreshless.com/nouislider/)| 15.6.0  
+Dropdown Search | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.37
+Dropdown Tags | [VirtualSelect](https://sa-si-dev.github.io/virtual-select/#/) | 1.0.37 
+Range Slider | [noUiSlider](https://refreshless.com/nouislider/) | 15.6.1  
+Range Slider Interval | [noUiSlider](https://refreshless.com/nouislider/)| 15.6.1  

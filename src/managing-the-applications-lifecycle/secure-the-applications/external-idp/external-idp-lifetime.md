@@ -74,7 +74,6 @@ Once activated, you are logged out of the current session and redirected to the 
 
 **Note**: Once the OpenId Connect provider is activated, users  can no longer use the fallback built-in authentication mechanism. In the case of any issues with the external IdP, designated break-glass users, also known as local admins, can login using a username and password to deactivate the OpenID Connect provider and enable any alternative authentication mechanism.
 
-
 ## Deactivating the external identity provider
 
 Only one external identity provider method can be active at a time. When you activate one authentication mechanism, you automatically deactivate the currently active external identity provider.

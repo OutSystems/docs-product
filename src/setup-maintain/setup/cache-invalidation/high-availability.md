@@ -36,7 +36,7 @@ By default RabbitMQ will use a strategy of `ignore` in order to recover from a n
 
 Before you join nodes together it's important to configure a partition handling strategy by updating the `rabbitmq.conf` configuration file on each server.
 
-If you installed RabbitMQ via Configuration Tool, the location of the `rabbitmq.conf` file to create or edit will be `%ALLUSERSPROFILE%\RabbitMQ\rabbitmq.conf`. 
+If you installed RabbitMQ via Configuration Tool, by default no configuration files exist. You'll need to manually create or edit `rabbitmq.conf` that should reside within `%ALLUSERSPROFILE%\RabbitMQ\`.
 
 Check the official RabbitMQ documentation [default configuration locations](<https://www.rabbitmq.com/configure.html#config-location>) to determine the location of this file if RabbitMQ was manually installed.
 

@@ -54,7 +54,7 @@ To start editing an entity's data, open the module where the entity exists. Then
 
 <div class="info" markdown="1">
 
-Even thought it seems like you're editing data in a spreadsheet, you're actually preparing changes to data in a relational database.<br/>
+Even though it seems like you're editing data in a spreadsheet, you're actually preparing changes to data in a relational database.<br/>
 Rows represent entity records, and cells represent attributes.
 
 </div>

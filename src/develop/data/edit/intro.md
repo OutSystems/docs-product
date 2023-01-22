@@ -20,7 +20,7 @@ Add, remove, and change records of **entities** during app development, enables 
 
 <div class="info" markdown="1">
 
-This topics relates to editing data of **Entities**, to learn how to edit data in **Static Entities**, check [Static Entities](../modeling/entity-static.md) and [Create and Use an Enumerate](../modeling/enumerate-create.md) topics.
+This topic relates to editing data of **Entities**, to learn how to edit data in **Static Entities**, check [Static Entities](../modeling/entity-static.md) and [Create and Use an Enumerate](../modeling/enumerate-create.md) topics.
 
 </div>
 
@@ -72,7 +72,7 @@ Check the issue by hovering over the highlighted cell. Fix these issues before a
 
 ![Get details on issues with pending changes](images/pedning-changes-validation-ss.png)
 
-If needed, you can [discard your changes](how-edit-data.md#discard) all at once, or one row at time.
+If needed, you can [discard your changes](how-edit-data.md#discard) all at once, or one row at a time.
 
 Once you [apply your changes](how-edit-data.md#apply), Service Studio creates and sends SQL statements to your platform database, changing one record at a time.
 

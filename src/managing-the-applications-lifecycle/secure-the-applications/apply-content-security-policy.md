@@ -92,7 +92,7 @@ By design, the Content Security Policy on the app level overrides the same polic
 Once you set CSP, monitor the blocked resources using the management console of the environment in **Service Center**:
 
 1. Go to the **Monitoring** section and select the **Errors** option.
-1. Set the eSpace filter to SecurityUtils to only see the resources blocked by CSP.
+1. Set the eSpace filter to CSPReport to only see the resources blocked by CSP.
 
 When configuring CSP take the following risks of misconfiguration into account:
 

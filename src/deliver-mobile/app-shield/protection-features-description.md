@@ -47,12 +47,6 @@ Protection available for both iOS and Android apps.
 * **What happens:** On positive detections blocks the app from running. If **ExitOnURL** is configured, an URL, which the app developer can use to inform the app end-user, is opened upon blocking the app. See [Configuring an exit URL for a blocked app](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Harden_the_protection_of_mobile_apps_with_AppShield/Configuring_an_exit_URL_for_a_blocked_app) 
 * **Is it configurable?:** No.
 
-### Screenshot protection
-
-* **What it does:** Blocks the creation of both user and system screenshots.
-* **What happens:** For Android, when trying to mirror the screen or trying to take screenshots of the application, a black screen is shown instead. For iOS, On positive detections blocks system screenshots.
-* **Is it configurable?:** Yes, this protection feature can be disabled. See [AppShield Configuration](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Harden_the_protection_of_mobile_apps_with_AppShield#configuration)
-
 ## Android
 
 Protection available specific to Android apps.
@@ -92,6 +86,13 @@ After activating this feature you will block all screen readers (other than the 
 * **What happens:** On positive detections blocks the app from running. If **ExitOnURL** is configured, an URL, which the app developer can use to inform the app end-user, is opened upon blocking the app. See [Configuring an exit URL for a blocked app](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Harden_the_protection_of_mobile_apps_with_AppShield/Configuring_an_exit_URL_for_a_blocked_app) 
 * **Is it configurable?:** No.
 
+### Screenshot protection
+
+* **What it does:** Blocks the creation of both user and system screenshots.
+* **What happens:** When trying to mirror the screen or trying to take screenshots of the application, a black screen is shown instead.
+* **Is it configurable?:** Yes, this protection feature can be disabled. See [AppShield Configuration](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Harden_the_protection_of_mobile_apps_with_AppShield#configuration)
+
+
 ## iOS
 
 Protection available specific to iOS apps.
@@ -103,6 +104,12 @@ Protection available specific to iOS apps.
 * **What happens:** On positive detections blocks the screen mirroring functionality.
 * **Is it configurable?:** No.
 
+
+### Screenshot protection
+
+* **What it does:** Blocks the creation of system screenshots.
+* **What happens:** On positive detections blocks system screenshots.
+* **Is it configurable?:** Yes, this protection feature can be disabled. See [AppShield Configuration](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Harden_the_protection_of_mobile_apps_with_AppShield#configuration)
 
 
 

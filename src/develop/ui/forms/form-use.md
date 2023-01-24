@@ -20,7 +20,7 @@ To use a form to group input widgets in Reactive Web and Mobile:
 
 1. Drag the aggregate/variable to the form to create the inputs. A Save button is automatically added. 
 
-    ![](images/form-use-mobile.png?width=750)
+    ![Drag the aggregate or variable to the form](images/form-use-mobile.png)
 
 1. Associate a client action to the Save button that calls a server action to store the aggregate/variable record in the database. 
 
@@ -32,7 +32,7 @@ To use a form to group input widgets in Traditional Web:
 
 1. Add the Form widget to the screen and set Source Record to the aggregate/variable.
 
-    ![](images/form-use-web.png?width=750) 
+    ![Add the Form widget to the screen](images/form-use-web.png) 
 
 1. Add inputs to the form and bind them to the attributes of the form record.
 

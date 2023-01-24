@@ -31,10 +31,14 @@ Depending on what version of OutSystems UI you are using, some patterns may be d
 
 1. In Service Studio, click the **Dependencies** icon.
 
+    ![Manage dependencies button](images/select-manage-dependencies-ss.png)
+
 1. Click **In Use**.
+   
+    ![In use button](images/select-in-use-button-ss.png)
 
 1. Select **OutSystemsUI**.
 
-![OutSystems UI version](<images/os-version-ss.png>)
+    ![OutSystems UI version](images/select-outsystems-ui-ss.png)
 
 For more information on how to migrate old versions, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).

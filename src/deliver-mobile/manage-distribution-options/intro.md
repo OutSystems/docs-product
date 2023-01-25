@@ -52,12 +52,6 @@ Deployment plans in LifeTime let you configure how apps update on the user devic
 * **Per app**. LifeTime stores the updates deployment setting of each app in the deployment plan. When you create a deployment plan, LifeTime by default configures all apps in the plan to receive hybrid updates until you change the plan setting to store-only updates **for one or more apps**.
 * **Per target environment**. LifeTime stores the deployment setting of an app for the target environment. LifeTime applies the default hybrid update setting for all environments until you change the deployment setting for the app and **for the target environment**.
 
-<div class="info" markdown="1">
-
-This document is a work in progress.
-
-</div>
-
 Here is an example. There are three environments in LifeTime: DEV, TEST, and PROD. The team is developing MyApp in DEV. Your goal is to create a native app build in PROD, so you can submit the app to the app stores. You also want to test the native build in TEST.
 
 You need to run the following deployment plans **when your first deploy** MyApp across all environments:

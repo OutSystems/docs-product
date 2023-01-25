@@ -14,6 +14,14 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
+<div class="info" markdown="1">
+
+**This component is deprecated for versions of OutSystems UI lower than 2.10.0** For more information on how to migrate old versions, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
+
+To find out what version of OutSystems UI you are using, see [OutSystems UI version](../../intro.md#outsystems-ui-version).
+
+</div>
+
 You can use the Tabs UI Pattern to divide content into meaningful sections. This pattern is useful when you want the user to be able to switch between sections within the same context while not having to not to navigate to different areas.
 
 ![Tabs example](images/tab-gif1.gif?width=600)

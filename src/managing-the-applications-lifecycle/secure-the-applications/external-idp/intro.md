@@ -62,9 +62,9 @@ Tools that **don’t** enforce the external IdP flow use the username and passwo
 
 The **IT Users Authentication with External IdP (OIDC)** feature requires the following versions of OutSystems components:
 
-* Platform Server 11.18.0 
+* Platform Server 11.18.1 
 
-* LifeTime 11.16.0
+* LifeTime 11.16.1
 
 * Service Studio 11.53.13
 

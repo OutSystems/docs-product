@@ -8,7 +8,7 @@ app_type: mobile apps
 
 # Firebase Cloud Messaging Plugin
 
-The [Firebase Cloud Messaging plugin](https://www.outsystems.com/forge/component-overview/13299) lets you set a notification experience that resorts to Firebase cross-platform messaging solution. Using this plugin you can to send normal and silent notifications to your mobile app end-users.
+The [Firebase Cloud Messaging plugin](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) lets you set a notification experience that resorts to Firebase cross-platform messaging solution. Using this plugin you can to send normal and silent notifications to your mobile app end-users.
 
 While normal notifications have an associated UI with visual and auditory cues and are displayed in the notifications center or in the scope of your app, silent notifications are notifications that have no UI representation. Despite being silent, these notifications can deliver a data package to the app (called extra data), in the form of a list of key-value pairs.
 

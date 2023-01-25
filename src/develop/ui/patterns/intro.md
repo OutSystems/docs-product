@@ -25,3 +25,20 @@ Changing the structure of a pattern by, for instance, adding a couple of tabs, r
 
 **Note:** From OutSystems 10 onward, it's not possible to directly change modules that are part of the UI framework. If you need to change a specific pattern, copy it and make the necessary changes in your cloned version.
 
+## OutSystems UI version
+
+Depending on what version of OutSystems UI you are using, some patterns may be deprecated. To find out what version of OutSystems UI you are using:
+
+1. In Service Studio, click the **Dependencies** icon.
+
+    ![Manage dependencies button](images/select-manage-dependencies-ss.png)
+
+1. Click **In Use**.
+   
+    ![In use button](images/select-in-use-button-ss.png)
+
+1. Select **OutSystemsUI**.
+
+    ![OutSystems UI version](images/select-outsystems-ui-ss.png)
+
+For more information on how to migrate old versions, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).

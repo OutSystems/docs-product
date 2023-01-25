@@ -205,6 +205,7 @@
                     - href: develop/ui/patterns/mobile/interaction/datepicker.md
                     - href: develop/ui/patterns/mobile/interaction/datepickerrange.md
                     - href: develop/ui/patterns/mobile/interaction/dropdownsearch.md
+                    - href: develop/ui/patterns/mobile/interaction/dropdownserver.md
                     - href: develop/ui/patterns/mobile/interaction/dropdowntags.md
                     - href: develop/ui/patterns/mobile/interaction/floatingactions.md
                     - href: develop/ui/patterns/mobile/interaction/inputwithicon.md
@@ -440,11 +441,13 @@
             - href: develop/processes/best-practices/separate-process-application-logic.md
             - href: develop/processes/best-practices/scale-queries.md
         - href: develop/processes/light-process.md
+        
     # Use Timers
     - href: develop/timers/intro.md
     - topics:
         - href: develop/timers/timer-create-run.md
         - href: develop/timers/timer-monitor.md
+        
     # Reuse and Refactor
     - href: develop/reuse-and-refactor/intro.md
     - topics:
@@ -664,6 +667,7 @@
         - href: deliver-mobile/distribute-pwa/troubleshooting-know-issues.md
     - href: deliver-mobile/app-shield/intro.md
     - topics:
+        - href: deliver-mobile/app-shield/protection-features-description.md
         - href: deliver-mobile/app-shield/obfuscate-custom-rules.md
         - href: deliver-mobile/app-shield/ExitOnUrl.md
         - href: deliver-mobile/app-shield/query-all-packages.md

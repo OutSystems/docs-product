@@ -78,7 +78,11 @@ To open **Service Studio** and navigate to the element where a code patterns occ
 
 Your browser may ask you to confirm that you want to open **Service Studio**. In Chrome, confirm that you want to open **Service Studio** by clicking **Open Service Studio**.
 
-After checking a specific finding, change the status of the finding depending on your action:
+You can change the status of the findings individually or in bulk.
+
+![Change bulk findings](images/bulk-selection-ams.png) 
+
+After selecting one or multiple findings, you can change the status of the findings depending on your action:
 
 * If you fix the finding, set the status to **Already fixed**. This lets other developers in your team know it's fixed. After the next synchronization, if you have solved the finding correctly, it disappears. Otherwise, the finding reverts to **Open**.
 

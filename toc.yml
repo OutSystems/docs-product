@@ -667,6 +667,7 @@
         - href: deliver-mobile/distribute-pwa/troubleshooting-know-issues.md
     - href: deliver-mobile/app-shield/intro.md
     - topics:
+        - href: deliver-mobile/app-shield/protection-features-description.md
         - href: deliver-mobile/app-shield/obfuscate-custom-rules.md
         - href: deliver-mobile/app-shield/ExitOnUrl.md
         - href: deliver-mobile/app-shield/query-all-packages.md

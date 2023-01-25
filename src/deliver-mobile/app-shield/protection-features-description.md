@@ -5,7 +5,7 @@ guid: 7696c5bc-71ab-4eeb-ac4c-2805bd79f5b1
 app_type: mobile apps
 ---
 
-# AppShield protection features
+# AppShield protection features 
 
 <div class="info" markdown="1">
 

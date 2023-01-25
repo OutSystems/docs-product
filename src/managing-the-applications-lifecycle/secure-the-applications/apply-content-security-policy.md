@@ -1,6 +1,6 @@
 ---
 summary: Use the Content Security Policy (CSP) against code injection attacks in applications developed with OutSystems to protect against a growing number of attacks on the Web.
-tags: support-Security-overview
+tags:
 locale: en-us
 guid: e59d9233-7c2d-43ae-b8a2-f55d75263c68
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -13,7 +13,7 @@ Content Security Policy (CSP) lets you define rules that help protect your users
 
 CSP is configured using directives that are sent to browsers in [specific HTTP headers](<https://en.wikipedia.org/wiki/Content_Security_Policy#Status>). This way, when browsers run pages of your applications, they know from which location and/or which type of resources to load.
 
-It is advisable that you configure the CSP in every environment. Start with the allowed sources in an environment, for all its applications. Then, specify the sources per application, as needed, to override the general configuration.
+It's advisable that you configure the CSP in every environment. Start with the allowed sources in an environment, for all its applications. Then, specify the sources per application, as needed, to override the general configuration.
 
 The CSP configuration works for both web and mobile applications developed with OutSystems.
 
@@ -34,7 +34,7 @@ To configure the CSP in all environments in **LifeTime**:
 1. Enable CSP.
 1. Configure directives, with one value per line.
 1. Click **Save**.
-1. Republish all applications using an ["All Components" solution](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Creating_and_using_an_%22All_Components%22_solution).
+1. Republish all applications using an ["All Components" solution](https://success.outsystems.com/Documentation/How-to_Guides/DevOps/Creating_and_using_an_All_Components_solution).
 
 ### For an app
 
@@ -58,7 +58,6 @@ By design, the Content Security Policy on the app level overrides the same polic
 
 If you don’t have **LifeTime** installed, configure CSP in each environment using the environment management console, **Service Center**.
 
-![Environment Security in Service Center](images/environment-security-sc.png)
 
 ### For an environment
 
@@ -92,11 +91,11 @@ By design, the Content Security Policy on the app level overrides the same polic
 Once you set CSP, monitor the blocked resources using the management console of the environment in **Service Center**:
 
 1. Go to the **Monitoring** section and select the **Errors** option.
-1. Set the eSpace filter to SecurityUtils to only see the resources blocked by CSP.
+1. Set the **Source** filter to CSPReport to see the resources blocked by CSP.
 
 When configuring CSP take the following risks of misconfiguration into account:
 
-* **Missing policies**: Make sure that you configure policies that allow all sources used in your applications. Otherwise, users may stumble upon things like videos that are not shown, or CSS that is not applied.
+* **Missing policies**: Make sure that you configure policies that allow all sources used in your applications. Otherwise, users may stumble upon issues like videos that aren't shown, or CSS that's not applied.
 
 * **Too permissive policies**: Be especially cautious when allowing resources to be loaded from everywhere (by using `*` in the domain list). Hackers may take advantage of links, scripts, or other resources in your applications to redirect users to malicious pages.
 
@@ -104,7 +103,7 @@ When configuring CSP take the following risks of misconfiguration into account:
 
 ## Directives reference
 
-The table below describes the list of available directives to configure Content Security Policy in **OutSystems**. The **Required values** column indicates the values that **LifeTime** automatically applies to the directive for the applications to work correctly. Those values cannot be removed.
+The table below describes the list of available directives to configure Content Security Policy in **OutSystems**. The **Required values** column indicates the values that **LifeTime** automatically applies to the directive for the applications to work correctly. Those values can't be removed.
 
 <div class="info" markdown="1">
 
@@ -117,7 +116,7 @@ When adding multiple domains, insert 1 domain per line without any separators af
 | Base-uri      |The domains which can be used as base URL for applications screens.<br/>The following source expressions are allowed: `self`.|`self`|
 | Child-src     |The domains which applications are allowed to embed framed.<br/>The following source expressions are allowed: `self` and `*`.|`self`<br/>`gap:`|
 | Connect-src   |The domains from which applications are allowed to load resources using script interfaces.<br/>The following source expressions are allowed: `self` and `*`.|`self`|
-| Default-src   |The domains from which applications are allowed to load resources, by default.<br/>Any resource type dedicated directive (like object-src or img-src) that is not defined will inherit this configuration.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/>`gap:`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'`<br/>`'unsafe-eval'`|
+| Default-src   |The domains from which applications are allowed to load resources, by default.<br/>Any resource type dedicated directive (like object-src or img-src) that's not defined will inherit this configuration.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/>`gap:`<br/><br/>Values added at runtime:<br/>`'unsafe-inline'`<br/>`'unsafe-eval'`|
 | Font-src      |The domains from which applications are allowed to load fonts.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/>`data:`|
 | Img-src       |The domains from which applications are allowed to load images.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|`self`<br/>`data:`<br/><br/>Values added at runtime:<br/>`blob:`|
 | Media-src     |The domains from which applications are allowed to load media files.<br/>The following source expressions are allowed: `self`, `data:` and `*`.|-|
@@ -159,6 +158,7 @@ If you want to use both CSP directives and iframes in your iOS apps, add the fol
 ```
 outsystems://YOUR_APP_URL
 https://YOUR_APP_URL
+
 ```
 
 Failure to do so prevents content from rendering. You can identify the issue by searching for the **Interrupting main resource load due to CSP frame-ancestors or X-Frame-Options** error log.

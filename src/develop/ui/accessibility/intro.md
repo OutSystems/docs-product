@@ -38,6 +38,7 @@ Before you proceed with developing accessible apps according to the instructions
 
 * Service Studio, the latest version
 
+
 <div class="info" markdown="1">
  
 OutSystems UI is often updated to support more accessibility features. For more information, refer to the OutSystems UI release notes in Forge.
@@ -76,6 +77,7 @@ Screen readers use page titles to tell the users the name of the page they're on
 1. Select the screen to add the title from the list of screens
 1. On the **Properties**, enter the screen title (for example, "Main page") in the **Title** field.
 1. The procedure is complete.
+
 
 <div class="info" markdown="1">
  
@@ -217,6 +219,7 @@ The default content Container is the **MainContentWrapper**. To find it, go to *
 To find the  **SkipToContent** action, go to **Logic** > **OutSystemsUI** > **Accessibility**.
 
 ## Modal dialogs
+
 
 <div class="info" markdown="1">
 

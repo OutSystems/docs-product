@@ -119,15 +119,6 @@ To set the text headings, perform the following steps:
 
     ![Setting text headings](images/text-headings-ss.png)
 
-<div class="os-hotspot">
-  <img class="os-hotspot__img" src="images/text-headings-ss.png" alt="Setting text headings" />
-  <div class="os-hotspot__item" data-left="10" data-top="20">
-    <div class="os-hotspot__content">
-	<!-- Drag it to the screen -->
-    </div>
-  </div>
-</div>
-
 After following these steps, for each of the headings, and published the module, you can test them using a screen reader.
 
 ### Text color contrast

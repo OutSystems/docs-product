@@ -38,7 +38,7 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
     <div class="info" markdown="1">
 
-    Instead of referencing existing Entities, you can [importing data from Excel](../excel-bootstrap.md) and create new Entities.
+    Instead of referencing existing Entities, you can [import data from Excel](../excel-bootstrap.md) and create new Entities.
 
     </div>
 
@@ -87,7 +87,7 @@ Once you fetch data from the database, use one of many OutSystems widgets to sho
 
     ![Drag an Entity Attribute to the widget](images/fetch-data-drag-attribute-ss.png)
 
-1. Publish your ap and load it in the browser. There's a list widget listing the last names of the employees.
+1. Publish your app and load it in the browser. There's a list widget listing the last names of the employees.
 
     ![App running in the browser](images/fetch-data-browser.png)
 

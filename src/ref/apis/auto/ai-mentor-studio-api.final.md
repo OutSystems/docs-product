@@ -576,7 +576,7 @@ To authenticate your API requests, follow the guidelines in the [AI Mentor Studi
 
 ## Access the Swagger file
 
-You can access the Swagger file from the [AI Mentor Studio API page](https://architecture.outsystems.com/ArchitectureDashboardAPI/rest/V1/):
+You can access the **Swagger file** from the [AI Mentor Studio API page](https://architecture.outsystems.com/ArchitectureDashboardAPI/rest/V1/):
 
 ![AI Mentor Studio API page, where you can download the swagger by clicking **swagger.json**.](images/api-swagger-ad.png)
 

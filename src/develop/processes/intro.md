@@ -6,7 +6,7 @@ guid: ce023611-1cbc-4c61-a778-2a66167bc7ba
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Use Processes (BPT)
+# Use Processes - BPT
 
 OutSystems allows you to design and manage your business processes and integrate them into your applications. A business process is simply called a **Process** in OutSystems and is understood as the way that a particular task is carried out in your organization, such as handling invoices, processing orders, or handling complaints. Processes are also known as BPT (Business Process Technology).
 

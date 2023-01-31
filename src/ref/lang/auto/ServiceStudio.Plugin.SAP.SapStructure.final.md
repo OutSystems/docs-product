@@ -6,7 +6,7 @@ guid: 895732c3-42f6-4e78-87f8-efef7a1de2ef
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Structure (SAP Remote Function)
+# Structure - SAP Remote Function
 
 Structure used in input and output arguments of SAP remote functions.  
 

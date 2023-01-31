@@ -6,7 +6,7 @@ guid: 33570868-4b24-4ec0-92f5-0d2a93d6bc4d
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Input Parameter (Deprecated SOAP)
+# Input Parameter - Deprecated SOAP
 
 
 ## Properties

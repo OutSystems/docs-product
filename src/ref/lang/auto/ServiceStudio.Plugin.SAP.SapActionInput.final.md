@@ -6,7 +6,7 @@ guid: 0c2f28f8-e4c4-4b13-9139-fba94b1a2774
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Input Parameter (SAP Remote Function)
+# Input Parameter - SAP Remote Function
 
 Input parameter of an imported SAP remote function.  
 

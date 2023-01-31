@@ -6,7 +6,7 @@ guid: f27841f8-0506-40bf-a590-427215436a01
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Output Parameter (REST API Method)
+# Output Parameter - REST API Method
 
 Output parameter of a consumed REST API Method.
 

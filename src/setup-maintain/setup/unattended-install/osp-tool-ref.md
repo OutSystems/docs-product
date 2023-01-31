@@ -6,7 +6,7 @@ guid: dee8f358-e76a-4277-af9f-c18bd1a05616
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Solution Pack Tool (OSPTool) Command Line Reference
+# Solution Pack Tool Command Line Reference - OSPTool
 
 <div class="info" markdown="1">
 

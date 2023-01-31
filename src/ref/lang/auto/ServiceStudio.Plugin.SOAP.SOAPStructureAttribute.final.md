@@ -6,7 +6,7 @@ guid: 990d2fb4-4286-477c-9efe-235431ef7833
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Structure Attribute (Consumed SOAP)
+# Structure Attribute - Consumed SOAP
 
 Structure attribute belonging to a consumed SOAP Web Service.
 

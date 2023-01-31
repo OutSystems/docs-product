@@ -6,7 +6,7 @@ guid: 2744cd5d-761e-45d7-a18c-7db6ffe1d7fb
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# SOAP Web Service (Consumed)
+# SOAP Web Service - Consumed
 
 Consumed Web Service based on the SOAP 1.1/1.2 protocol.
 

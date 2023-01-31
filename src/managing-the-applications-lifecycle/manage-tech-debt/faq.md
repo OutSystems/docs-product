@@ -34,7 +34,7 @@ No, this isn't currently planned.
 
 ### Are there APIs to integrate AI Mentor Studio with third-party tools?
 
-Yes, you can use [AI Mentor Studio API](../../ref/apis/auto/architecture-dashboard-api.final.md) to integrate technical debt data with other technical debt and BI tools you already use. 
+Yes, you can use [AI Mentor Studio API](../../ref/apis/auto/ai-mentor-studio-api.final.md) to integrate technical debt data with other technical debt and BI tools you already use. 
 
 ### Do I need to give access to the developers in LifeTime so they can associate their users with AI Mentor Studio?
 

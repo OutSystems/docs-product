@@ -75,7 +75,6 @@ The following table lists the necessary connectivity between the developers work
 
 |Source|Destination|Port|Protocol|Notes|
 |------|-----------|----|--------|-----|
-|Service Studio and Integration Studio|Front-End|80|TCP|<ul>Deploy applications to the environment</ul>|
 |Service Studio and Integration Studio|Front-End|443|TCP|<ul>Deploy applications to the environment</ul>|
 |Service Studio|\*.outsystems.com<br/>outsystems.com|443|TCP| Service Studio connects to `outsystems.com` and several sub-domains to achieve the following: <ul><li>[AI-Assisted Development](../../develop/logic/ai-assisted-dev.md) </li><li> What's New! - The What's New dialog shows you the latest features added.</li> <li>Update Service Studio automatically</li><li>Telemetry</li><li>Submit feedback and errors via Service Studio</li> <li>Forge - The Forge bell icon lets you know if there are updates for installed components. </li><li>Application creation when creating from an existing sample app</li><li>Shows related documentation links when using help.</li></ul>|
 |Service Studio|s3.amazonaws.com |443|TCP|<ul><li>Forge components - To install Forge components from the Forge tab or from the Forge website.</li><li>Access app templates while creating apps from scratch.</li></ul>|

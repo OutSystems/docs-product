@@ -6,7 +6,7 @@ guid: 457bae02-6d3f-4670-8876-8f882abb258f
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Password Input Parameter (Consumed SOAP)
+# Password Input Parameter - Consumed SOAP
 
 Input parameter that allows you to define the password for authenticating the current SOAP Web Service method invocation.
 

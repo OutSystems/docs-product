@@ -6,7 +6,7 @@ guid: 32eb391b-601d-4332-9f9b-a6844fd5c034
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Input Parameter (REST API Method)
+# Input Parameter - REST API Method
 
 Input parameter of a consumed REST API Method.
 

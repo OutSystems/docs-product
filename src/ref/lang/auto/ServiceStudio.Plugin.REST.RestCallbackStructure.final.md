@@ -6,7 +6,7 @@ guid: 5fc67999-8f0f-455d-b611-9a4079cbcc0e
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Structure (REST API Callback)
+# Structure - REST API Callback
 
 Structure used in input and output arguments of REST API Callbacks.  
 

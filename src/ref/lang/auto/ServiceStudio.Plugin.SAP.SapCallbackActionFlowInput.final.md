@@ -6,7 +6,7 @@ guid: 03cdc256-d569-4d64-b280-eea6b54e24bb
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Input Parameter (SAP Callback)
+# Input Parameter - SAP Callback
 
 Input parameter of a SAP Callback action (named FunctionName). Added automatically by Service Studio to the OnAfterCall and OnBeforeCall SAP Callback actions.  
 

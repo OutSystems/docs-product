@@ -44,12 +44,12 @@ To generate your API key, follow these steps:
 
 1. In the **AI Mentor Studio API** section, click **Generate API key**.
 
-    ![AI Mentor Studio's Maintenance menu showing the Configurations.](images/generate-key-ad.png)
+    ![AI Mentor Studio's Maintenance menu showing the Configurations.](images/generate-key-ams.png)
 
 1. Copy the API key.  
-The **Copy API key** button changes to **Copied!** to inform you that you have successfully retrieved the key. Make sure to save your key in a safe location as you can’t access it again in AI Mentor Studio.
+    The **Copy API key** button changes to **Copied!** to inform you that you have successfully retrieved the key. Make sure to save your key in a safe location as you can’t access it again in AI Mentor Studio.
 
-    ![Window showing the generated API key.](images/copy-key-ad.png)
+    ![Window showing the generated API key.](images/copy-key-ams.png)
 
 1. Click **Done**.
 
@@ -64,18 +64,18 @@ If you lost your API key, or if you have some security issues, you might need to
 
 1. In the **AI Mentor Studio API** section, click **Replace API key**. 
 
-    ![AI Mentor Studio's Maintenance menu showing the Configurations.](images/replace-key-ad.png)
+    ![AI Mentor Studio's Maintenance menu showing the Configurations.](images/replace-key-ams.png)
 
     A window warns you that replacing your API Key takes immediate effect.
 
 1. Click **Replace API key**.
 
-    ![Window asking for confirmation to replace API key.](images/replace-key-window-ad.png)
+    ![Window asking for confirmation to replace API key.](images/replace-key-window-ams.png)
 
 1. Copy the API key.  
-The **Copy API key** button changes to **Copied!** to inform you that you have successfully retrieved the key. Make sure to save your key in a safe location as it will not be shown again, and then click **Done**.
+    The **Copy API key** button changes to **Copied!** to inform you that you have successfully retrieved the key. Make sure to save your key in a safe location as it will not be shown again, and then click **Done**.
 
-    ![Window showing the generated API key.](images/copy-key-ad.png)
+    ![Window showing the generated API key.](images/copy-key-ams.png)
 
 ## How to revoke a key
 
@@ -85,12 +85,12 @@ To revoke your API key, follow these steps:
 
 1. In the **AI Mentor Studio API** section, click **Revoke API key**.
 
-    ![AI Mentor Studio's Maintenance menu showing the Configurations.](images/revoke-key-ad.png)
+    ![AI Mentor Studio's Maintenance menu showing the Configurations.](images/revoke-key-ams.png)
 
     A window warns you that revoking the API key immediately disables access to the AI Mentor Studio API, so any requests made after this, will be rejected.
 
 1. Click **Revoke API key**.
 
-    ![Window asking for confirmation to revoke API key.](images/revoke-key-window-ad.png)
+    ![Window asking for confirmation to revoke API key.](images/revoke-key-window-ams.png)
 
     Your API key is revoked. To obtain a new one, see the [How to obtain a key](#obtain-key) section.

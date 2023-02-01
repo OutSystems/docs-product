@@ -6,7 +6,7 @@ guid: c0e4920c-99f4-41e1-995c-85a9ed120053
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# SOAP Callback (Consumed SOAP)
+# SOAP Callback - Consumed SOAP
 
 Callback action that allows you to modify the SOAP connection, request and/or response message by using extension methods that leverage the [SOAP Extensibility API](<../../apis/soap-extensibility-api.md>).
 

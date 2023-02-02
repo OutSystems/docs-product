@@ -1,6 +1,6 @@
 ---
 summary: The Health and Fitness plugin lets you use data from Apple HealthKit and Google Fit and create customized solutions for your users.
-en_title: Health and Fitness Plugin 
+en_title: Health and Fitness Plugin
 tags: runtime-mobile;
 locale: en-us
 guid: 58915a48-1778-4182-b55f-77b91d6abb05
@@ -17,9 +17,9 @@ Applies only to Mobile Apps.
 
 The [Health & Fitness plugin](https://www.outsystems.com/forge/component-overview/11715/) enables you to access and use health and fitness data in a mobile app. The plugin provides access to the Apple HealthKit and Google Fit APIs by letting you use data relevant to your health and fitness use cases.
 
-The plugin is unaware of the provider you use for data, but you always need to request permissions from users to access data. The plugin saves no health and fitness data to the device. In cases where your app writes data to the APIs, the package name is the identifier of the data source. 
+The plugin is unaware of the provider you use for data, but you always need to request permissions from users to access data. The plugin saves no health and fitness data to the device. In cases where your app writes data to the APIs, the package name is the identifier of the data source.
 
-As a good practice, verify the plugin is available in the app and prevent the app from crashing. Use the **Logic** > **Client Actions** > **HealthFitnessPlugin** > **CheckHealthFitnessPlugin** action for check for the plugin availability. If the plugin isn't available to the app, display an error to your users.
+As a good practice, verify the plugin is available in the app and prevent the app from crashing. Use the **Logic** > **Client Actions** > **HealthFitnessPlugin** > **CheckHealthFitnessPlugin** action to check for the plugin availability. If the plugin isn't available to the app, display an error to your users.
 
 <div class="info" markdown="1">
 
@@ -36,9 +36,10 @@ This sample app shows you how to do the following with the health and fitness da
 * Request permission to access
 * Do simple queries that return the last logged value
 * Do advanced queries for a specific period that return a list of values
-* Use the data in user interface, such as cards, tables, and graphs
+* Retrieve raw data related to workouts, for a specific period. This is currently available on iOS only.
+* Use the data in user interface components, such as cards, tables, and graphs
 
-![Sample app home screen](images/sample-app.png) 
+![Sample app home screen](images/sample-app.png)
 
 ## Enabling your users to track their health and fitness data
 
@@ -47,6 +48,7 @@ The following steps show how to design a use case that includes health and fitne
 1. Create logic to request permission to access health and fitness data.
 1. Create a user interface.
 1. Create logic to access and store health and fitness data.
+1. Create logic to access and use workout data (iOS only).
 1. Optionally, create logic to write and store new health and fitness data.
 1. Create logic to define a background job.
 
@@ -58,7 +60,7 @@ Refer to the sample app for examples.
 
 ### Requesting access to health and fitness data
 
-Before your app can access data, request permission from the users to access their health and fitness data. From Service Studio, select the **Logic** > **Client Actions** > **HealthFitnessPlugin** and use the **RequestPermission** action.
+Before your app can access data, request permission from the users to access their health and fitness data. From Service Studio, select **Logic** > **Client Actions** > **HealthFitnessPlugin** and use the **RequestPermission** action.
 
 You can define the variables and the following permissions access types:
 
@@ -66,7 +68,7 @@ You can define the variables and the following permissions access types:
 * Write
 * Read and write
 
-In the screen logic, request the permissions from the app users, in an action that's triggered by **On Initialize** event.
+In the screen logic, request the permissions from the app users, in an action that's triggered by the **On Initialize** event.
 
 The plugin comes with groups of permissions. Use the groups of permissions as accelerators to check for access when you request data.
 
@@ -76,6 +78,7 @@ The plugin has groups of default variables in **Data** > **Entities** > **Health
 * FitnessVariables
 * ProfileVariables
 * SummaryVariables
+* WorkoutVariables
 
 ![Using permission variables to check for data availability](images/get-permissions-by-group-ss.png)
 
@@ -89,7 +92,7 @@ Refer to the sample app for more examples.
 
 Start, for example, by defining a variable that corresponds to the type of output you want to show. Create a variable that holds the data so that you can access, store, and display the number of steps taken in a day (1).
 
-![Sample interface to show steps](images/sample-interface-ss.png) 
+![Sample interface to show steps](images/sample-interface-ss.png)
 
 To show the step count for the day, you can use an **Expression** and customize the look and feel of the parent widget (2).
 
@@ -97,17 +100,37 @@ To show the step count for the day, you can use an **Expression** and customize 
 
 The plugin reads and writes the data through the **AdvancedQuery** client action. In the **AdvancedQuery** action, set the values for the predefined variables.
 
-The health or fitness query parameters might include:  
+The health or fitness query parameters might include:
 
 * period: start, end
 * time unit: second, minute, hour, day, week, month, year
-* operation type: sum, min, max, average 
-  
-![Getting data in AdvancedQuery from Google Fit and Apple HealthKit](images/get-fitness-data-ss.png) 
+* operation type: sum, min, max, average
+
+![Getting data in AdvancedQuery from Google Fit and Apple HealthKit](images/get-fitness-data-ss.png)
 
 <div class="info" markdown="1">
 
 Verify that access and storage of health or fitness data on the device works. Check the value of **AdvancedQuery**. If **Success** is True, handle the data in **AdvancedQuery.** by assigning it to a variable of the same data type. Refer to the sample app for an example.
+
+</div>
+
+### Create logic to access and use workouts data (iOS only)
+
+To enrich the data that the developer can already obtain from the **AdvancedQuery**, there's also a **GetWorkoutsData** client action that retrieves data related to workouts. To achieve that, it's required to set the values for the input parameters, including:
+
+* period: start, end
+* workout type and variable map: list of a structure that relates a Workout Type and a list of Variables to query on.
+
+For the Workout Type and Variable map structure, the plugin already provides a couple of convenient default values to use:
+
+* If no list is provided or it's empty, the plugin considers all workout types available and applies two variables to each: **Heart Rate** and **Active Energy Burned**.
+* If the list contains an item that has a workout type set but with no variable list associated (or an empty one), the plugin considers two variables: **Heart Rate** and **Active Energy Burned**.
+
+![Getting data in GetWorkoutsData from Apple's HealthKit](images/get-workouts-data-ss.png)
+
+<div class="info" markdown="1">
+
+Verify that access and storage of health or fitness workout data on the device works. Check the value of **GetWorkoutsData**. If **Success** is True, handle the data in **GetWorkoutsData.** by assigning it to a variable of the same data type.
 
 </div>
 
@@ -119,13 +142,13 @@ To check that writing the health or fitness data on the device is working, verif
 
 ### Create logic to define a background job
 
-To define a background job you can use the **SetBackgroundJob** action. Set the parameters for the type of health or fitness variable you want to keep evaluating, define the notification trigger condition and its frequency, and define the notification content. 
+To define a background job you can use the **SetBackgroundJob** action. Set the parameters for the type of health or fitness variable you want to monitor, define the notification trigger condition and its frequency, and define the notification content.
 
-Parametrization for two different use cases of a background job is shown below:
+Parameterization for two different use cases of a background job is shown below:
 
 #### Setting up a daily steps goal
 
-In the case of a daily steps goal evaluator, you will probably want to issue a single notification per day if the daily steps goal is met. To achieve this you can use the following parametrization:
+In the case of a daily steps goal evaluator, you will probably want to issue a single notification per day if the daily steps goal is met. To achieve this you can use the following parameterization:
 
 ![Setting up a daily steps goal](images/set-background-job-ss.png)
 
@@ -133,18 +156,17 @@ In the case of a daily steps goal evaluator, you will probably want to issue a s
 
 In the case of a heart rate monitoring alarm, try to strike a balance between job frequency and notification frequency. For example, you may want to check your heart rate every ten seconds. However, you would probably find it intrusive to receive notifications every time your heart rate goes above, or drops below, a certain value.
 
-Consider the following parametrization for a background job that will notify you if your heart rate is above 190 bpm, with a maximum notification frequency of one notification per minute:
+Consider the following parameterization for a background job that notifies you if your heart rate is above 190 bpm, with a maximum notification frequency of one notification per minute:
 
 ![Setting up a heart rate monitoring alarm](images/set-background-job2-ss.png)
 
+After you have created your background job you can update or delete it using the **UpdateBackgroundJob** action and the **DeleteBackgroundJob** action, respectively.
 
-After you have created your background job you can update it or delete it using the **UpdateBackgroundJob** action or the **DeleteBackgroundJob** action, respectively.
-
-To check that that the background job was successfully created, verify if the value of **SetBackgroundJob.Success** is **True**.
+To check that the background job was successfully created, verify the value of **SetBackgroundJob.Success** is **True**.
 
 ### Handling errors
 
-The app with the plugin can run on many Android or iOS devices, with different hardware and configurations. To ensure a good user experience and prevent the app from crashing, handle the errors within the app.
+An app with the health and fitness plugin can run on many Android or iOS devices, with different hardware and software configurations. To ensure a good user experience and prevent the app from crashing, handle the errors within the app.
 
 Following is a list of actions you can use to make sure there are no errors:
 
@@ -152,7 +174,8 @@ Following is a list of actions you can use to make sure there are no errors:
 | --------------- | ------------------------ | -------------------------------------------------------------- |
 | **IsAvailable** | CheckHealthFitnessPlugin | True if the plugin is available in the app.                    |
 | **Success**     | AdvancedQuery            | True if there aren't errors while accessing and storing data.  |
-| **Success**     | GetFitnessData (*)       | True if there aren't errors while accessing and storing  data. |
+| **Success**     | GetWorkoutsData          | True if there aren't errors while accessing and storing data.  |
+| **Success**     | GetFitnessData (*)       | True if there aren't errors while accessing and storing data.  |
 | **Success**     | WriteData                | True if there aren't errors while writing data.                |
 | **Success**     | SetBackgroundJob         | True if there aren't errors while creating a background job.   |
 

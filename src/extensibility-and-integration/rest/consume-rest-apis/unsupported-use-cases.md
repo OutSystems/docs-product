@@ -5,7 +5,7 @@ guid: 269cf511-27bd-4705-ab9a-1785375f5367
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Unsupported REST Enum Use Cases
+# Unsupported REST Use Cases
 
 Service Studio can import "enum" (enumerate) elements when consuming REST services. Service Studio represents these elements as Static Entities and each value of the "enum" corresponds to a Static Entity Record.
 

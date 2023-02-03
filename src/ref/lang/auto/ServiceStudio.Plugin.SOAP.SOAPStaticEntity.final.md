@@ -6,7 +6,7 @@ guid: 6d4ae983-ef46-42d6-a080-89084a034d14
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Static Entity (Consumed SOAP)
+# Static Entity - Consumed SOAP
 
 Static entity belonging to a consumed SOAP Web Service. It can be related with a "choice" or an "enum" element in the service definition.
 

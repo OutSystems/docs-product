@@ -6,7 +6,7 @@ guid: 87d9f1db-bf3a-40ac-a5a8-562243e035f2
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Structure (REST API Method)
+# Structure - REST API Method
 
 Structure used in input and output arguments of REST API Methods.  
 

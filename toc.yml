@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started 
 - href: getting-started/intro.md
 - topics:
     - href: getting-started/right-app.md
@@ -957,7 +957,7 @@
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/views-and-tables.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/query-log-data.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md
-    #Architecture Dashboard
+    # AI Mentor Studio
     - href: managing-the-applications-lifecycle/manage-tech-debt/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-works.md
@@ -1806,10 +1806,10 @@
     # OutSystems APIs
     - href: ref/apis/intro.md
     - topics:
-        # Architecture Dashboard API
-        - href: ref/apis/auto/architecture-dashboard-api.final.md
+        # AI Mentor Studio API
+        - href: ref/apis/auto/ai-mentor-studio-api.final.md
         - topics:
-            - href: ref/apis/architecture-dashboard/ad-api-authentication.md
+            - href: ref/apis/ai-mentor-studio/aims-api-authentication.md
         - href: ref/apis/auto/asynchronous-logging-api.final.md
         - href: ref/apis/auto/binarydata-api.final.md
         - href: ref/apis/auto/bpt-api.final.md

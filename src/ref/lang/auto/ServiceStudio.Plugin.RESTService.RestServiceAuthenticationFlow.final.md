@@ -6,7 +6,7 @@ guid: d57b2c7c-1238-4d6b-b1a7-3afc4ffba82d
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# REST API Callback (Authentication)
+# REST API Callback - Authentication
 
 Action called while authenticating a client that is invoking the exposed REST API. An action named OnAuthentication is automatically created by Service Studio when the exposed REST API's Authentication is set to Basic or Custom.  
 

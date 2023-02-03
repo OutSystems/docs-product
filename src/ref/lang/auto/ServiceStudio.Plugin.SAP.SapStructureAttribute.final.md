@@ -6,7 +6,7 @@ guid: b2bb3ce3-6403-4a1a-80d9-c5d34e509048
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Structure Attribute (SAP Remote Function)
+# Structure Attribute - SAP Remote Function
 
 Attribute of structure used in input and output arguments of SAP remote functions.  
 

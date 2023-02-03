@@ -6,7 +6,7 @@ guid: d9c9539a-bb5f-4775-9abc-86c9ba2c36ad
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Cascading Style Sheets (CSS)
+# Cascading Style Sheets - CSS
 
 Cascading Style Sheets (CSS) is a language for describing how HTML content should look in a browser. OutSystems apps use the OutSystems UI framework that comes with the base Theme and CSS. You can add new styles and modify the existing ones by copying them from the base Theme.
 

@@ -1,5 +1,5 @@
 ---
-summary: Follow this tutorial to create and run an example Reactive Web App to manage tasks.
+summary: Follow this tutorial to learn how to create a Reactive Web App to manage tasks.
 tags: runtime-reactiveweb;
 locale: en-us
 guid: 795332a5-e1f3-40c0-886d-75b7bddf48af
@@ -10,11 +10,11 @@ app_type: reactive web apps
 
 <div class="info" markdown="1">
 
-Check our training [Becoming a Reactive Web Developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer/) for a guided introduction into Reactive Web App. To read more about this type of app in OutSystems, we invite you to read the forum post <a href="https://www.outsystems.com/forums/discussion/52761/reactive-web-the-next-generation-of-web-apps/">The Next Generation of Web Apps</a>.
+Check our training [Becoming a Reactive Web Developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer/) for a guided introduction into Reactive Web App. 
 
 </div>
 
-Developing Reactive Web Apps with OutSystems is fast. In this example, we will use a spreadsheet you got with OutSystems installation to create some database entries and then add user interface and logic to connect everything - into a ToDo app.
+Developing Reactive Web Apps with OutSystems is fast. In this example, we will use a spreadsheet to create some database entries and then add user interface and logic to connect everything - into a ToDo app.
 
 This is the overview of what we are about to do:
 
@@ -25,13 +25,11 @@ This is the overview of what we are about to do:
 1. Implement functionality to delete records.
 1. Test the application in a browser.
 
-## Create a Reactive Web App { #new-app }
-
-<div class="info" markdown="1">
+## Pre-requisites
 
 You should satisfy the following requirements to develop, run, and deploy a Reactive App.
 
-* Service Studio* 11.6.1 or later
+* Service Studio 11.53.7 or later
 * Platform Server 11 - Release Oct.2019.CP1 or later
 * LifeTime Management Console - Release Sep.2019 version 11.0.321.0 or later 
 
@@ -40,28 +38,44 @@ We also recommend that you update the following components:
 * OutSystems UI
 * OutSystems UI Templates Reactive
 
-(*) Service Studio comes with the installation of Development Environment.
+## Create a Reactive Web App { #new-app }
 
-</div>
+Let's create a sample "ToDo" app.
 
-Let's create a sample "todo" app.
+1. In Service Studio, select **New Application**.
 
-1. In Service Studio, click **New Application** and choose **Reactive Web App**. Click **Next**.
+    ![Select New Application in Service Studio](images/select-new-application-ss.png)
+
+1. In the **New Application** window, choose **From scratch**, then click **Next**.
+
+    ![Select Reactive Web App](images/start-from-scracth-ss.png)
+
+1. Choose **Reactive Web App**, then click **Next**.
+
+    ![Create a Reactive Web App](images/select-reactive-web-app-ss.png)
+
+1. In the properties for your new app, set up the following: 
     
-    ![Create a Reactive Web App](images/reactive-new-app-window.png)
+    1. Name your app "ToDo".  
+    
+    1. Add a description.
+    
+    1. Change the primary color of your app by picking one of the suggested colors, or using the color picker.
+    
+    1. Upload an icon by clicking **Upload icon**.
+    
+    1. Click **Create App** to advance to the next step.
 
-2. In the properties for your new app, we will set up quite a few interesting things. Upload an icon (1) by clicking **Upload icon**. Then, name your app (2) "ToDo", add some description (3) and change the primary color (4) by selecting one of the colors. Click **Create app** to advance to the next step.
+    ![New App properties](images/app-info-ss.png)
 
-    ![New App properties](images/new-app-properties.png)
+1. In the application properties screen, make sure **Reactive Web App** is selected in the **Choose module type** dropdown. Click **Create Module** to create the first module and open it for editing.
 
-3. In the application properties screen, make sure **Reactive Web App** is selected in **Choose module type**. Click **Create module** to create the module and open it for editing.
-
-    ![New App properties](images/reactive-new-module.png)
+    ![New App properties](images/module-type-ss.png)
 
 
 ## Create a database table from an Excel file { #create-entity-from-excel }
 
-OutSystems stores your application data in a relational database. This means that the first step in creating an app is defining the data model.
+In OutSystems, application data can be stored in a relational database. This means that the first step in creating an app is defining the data model.
 
 To do this, we are going to use an Excel file that already contains the following task information:
 
@@ -69,117 +83,167 @@ To do this, we are going to use an Excel file that already contains the followin
 * Due Date
 * Is Active
 
-Download the [tutorial Excel file](https://www.outsystems.com/home/TutorialResource.aspx) to your computer.
+Download the [tutorial Excel file](resources/TutorialResource.xlsx) to your computer.
 
-In the **ToDo** module, open the **Data** tab on the top right-hand corner, right-click the **Entities** folder, choose **Import New Entities from Excel**, and select the tutorial Excel file `TutorialResource.xlsx`. Click **Import** in the dialog to confirm.
+In the **ToDo** module, open the **Data** tab on the top right-hand corner, right-click the **Database** folder, choose **Import New Entities from Excel**, and select the `TutorialResource.xlsx` Excel file. Click **Import** in the dialog to confirm.
 
-![Create a Database Table from an Excel File](images/reactive-new-app-import-excel.png)
+![Create a Database Table from an Excel File](images/import-entities-excel-ss.png)
 
 When importing an Excel file, OutSystems creates a database table (called an Entity in OutSystems) with the necessary columns (called Attributes in OutSystems) to store the data in the database.
 
-Behind the scenes, OutSystems also creates logic to import each row in the Excel file into a corresponding database record. After publishing your application, the background logic populates your database with the data from the Excel file. In this tutorial we're only storing the data in the server database.
+Behind the scenes, OutSystems also creates logic to import each row in the Excel file into a corresponding database record. After publishing your application, the background logic populates (bootstraps) your database with the data from the Excel file. In this tutorial, we're only storing the data in the server database.
 
-## Create a screen to show tasks
+## Create a Screen to show tasks
 
-Now we can create a screen that shows all of the tasks.
+Now we can create a Screen that shows all of the tasks.
 
-Open the **Interface** tab on the top right-hand corner, and double-click **MainFlow** under **UI Flows**. Then, drag a **Screen** from the Toolbox to an empty area in the Main Editor window. Choose the **Empty** template, name your screen `Tasks` and click **Create Screen**.
+1. Switch to the **Interface** tab on the top right-hand corner, and double-click **MainFlow** under **UI Flows**. 
 
-![Create a new empty screen](images/reactive-new-app-screen-template-selection.png)
+    ![Open the MainFlow](images/click-mainflow-ss.png)
 
-Drag the **Task** entity from the **Data** tab to the Content placeholder of the screen in the Main Editor window.
+1. Drag a **Screen** from the Toolbox to an empty area in the Main Editor window. 
 
-![Data tab and Task Entity](images/reactive-new-app-data-imported.png)
+    ![Drag a Screen to the MainFlow](images/drag-screen-widget-ss.png)
 
-This automatically creates a table with the pagination support.
+1. Choose the **Empty** template (1), name your screen `Task` (2) and click **Create Screen** (3).
 
-![Tasks Screen](images/reactive-new-app-table.png)
+    ![Create a new empty screen](images/select-empty-screen-ss.png)
 
-## Create a screen to edit tasks
+1. Drag the **Task** Entity from the **Data** tab to the Content placeholder of the screen.
 
-Creating a screen to edit the records is as fast as creating a table.
+    ![Data tab and Task Entity](images/drag-task-entity-ss.png)
 
-Right-click the title of the first task in the row, click **Link to** > **(New Screen)**, choose the **Empty** template, name your screen `TaskDetail` and click **Create Screen**.
+    This automatically creates a Table with pagination support.
 
-![Create a Screen to Edit Tasks](images/reactive-new-app-link-to-new-window.png)
+    ![Tasks Screen](images/table-ss.png)
 
-This links the title of the tasks to a newly created screen. We will use this new screen to edit the tasks, but for that we will need a form:
+## Create a Screen to edit tasks
+
+Creating a Screen to edit the records is as fast as creating a Table. Follow these steps:
+
+1. Right-click the title of the first task in the row and select **Link to** > **(New Screen)**.
+
+    ![Create a Screen to Edit Tasks](images/create-link-new-screen-ss.png)
+
+1. Choose the **Empty** template, name your screen `TaskDetail` and click **Create Screen**.
+
+    This links the title of the tasks to a newly created screen. We will use this new screen to edit the tasks. For that, we will need a form.
 
 1. Drag a **Form** widget from the Toolbox to the Content placeholder in the **TaskDetail** screen.
 
-    ![Drag a Form](images/reactive-new-app-form-created.png)
+    ![Drag a Form](images/drag-form-widget-ss.png)
 
 1. Drag the **Task** entity from the **Data** tab to the previously created Form.
 
-    ![Create a Screen to Edit Tasks](images/reactive-new-app-entity-in-form.png)
+    ![Create a Screen to Edit Tasks](images/drag-task-entity-into-form-ss.png)
 
-Now we will define the logic that runs when the end users press the Save button:
+    Now we will define the logic that runs when the end users press the **Save** button:
 
 1. Double-click an empty area of the **Save** button to define the logic associated with the button. This will create a new screen action named **SaveOnClick**.
 
-1. In the Logic tab create a server action named **TaskCreateOrUpdate**.
+    ![Define the save button logic](images/double-click-save-button-ss.png)
 
-1. Add an input parameter and set it's name to **Task**. Set the data type to **Task**.
+1. In the **Logic** tab, right-click **Server Actions** and select **Add Server Action**. Set its name to **TaskCreateOrUpdate**. 
 
-1. Add an output parameter and set it's name to **TaskId**. Set the data type to **Task Identifier**. This will be the task id returned by the CreateOrUpdateTask that we'll need to pass on to the **SaveOnClick** action.
+    ![Add Server Action](images/create-server-action-ss.png)
+    
+1. Right-click the newly created action and select **Add Input Parameter**. Set its name to **Task**.
 
-1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action. Set the **Source** to the input parameter **Task**.
+    ![Add input parameter](images/add-input-parameter-ss.png)
 
-1. Next, we'll need to assign value of the output parameter **TaskId** to the **CreateOrUpdateTask**. Drag an **Assign** node to the flow and set the **Variable** to **TaskId**, and the **Value** to `CreateOrUpdateTask.Id`.
+1. In the Input Parameter properties, set the Data Type to **Task**.
 
-    ![](images/wrapper-create-ss.png)
+    ![Set data type](images/input-data-type-ss.png)
 
-1. Navigate to the **Interface** tab and double click the **SaveOnClick** action.
+1. Right-click the **TaskCreateOrUpdate** action and select **Add Output Parameter**. Set its name to **TaskId**.
 
-1. In the **Logic** tab and drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If**. Set the **Task** property to `GetTaskById.List.Current.task`.
 
-1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task. 
+1. In the Output Parameter properties, set the Data Type to **Task Identifier**. This will be the task ID returned by the **CreateOrUpdateTask** that we'll need to pass on to the **SaveOnClick** action.
 
-    ![Create a Screen to Edit Tasks](images/reactive-new-app-redirect-to-task.png)
+    ![Set data type](images/output-data-type-ss.png)
+
+1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action. 
+
+    ![Drag entity action to the flow of the server action](images/drag-entity-action-ss.png)
+
+1. Set the **Source** to the Input Parameter **Task**.
+
+    ![Set the source](images/action-source-ss.png)
+
+1. Next, we'll need to assign the value of the Output Parameter **TaskId** to the **CreateOrUpdateTask**. Drag an **Assign** node from the toolbox to the flow (1) and set the **Variable** to **TaskId**, and the **Value** to `CreateOrUpdateTask.Id` (2).
+
+    ![Drag Assign node](images/drag-assign-set-variable-ss.png)
+
+1. In the **Interface** tab, double-click the **SaveOnClick** action.
+
+1. Navigate to the **Logic** tab and drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If** (1). Set the **Task** property to `GetTaskById.List.Current.task` (2).
+
+    ![Drag Server Action to the True branch](images/drag-server-action-ss.png)
+
+1. Drag the **Task** Screen from the **Interface** tab to the **End** node so that the user is redirected back to the main screen after saving a task. 
+
+    ![Create a Screen to Edit Tasks](images/drag-task-screen-to-end-node-ss.png)
 
 ## Allow completing tasks
 
 Now let's add the functionality to mark tasks as complete. We can implement that by adding a feature to delete the completed task:
 
-1. In the **Interface** tab, click on the "Task" screen. Right click on the checkbox in the **Is Active** column and select **Delete**.
+1. In the **Interface** tab, double-click the **Task** Screen. 
 
-    ![Allow Completing Tasks](images/Create-first-WebApp-Task-tab-del-ss.png)
+1. Right-click the Checkbox in the **Is Active** column and select **Delete**.
 
-1. Drag a Button Widget and enter "Done" in the Text property of the button.
+    ![Allow Completing Tasks](images/delete-checkbox-icon-ss.png)
 
-1. Select **GetTasks.List.Current.Task.Id** as the TaskId parameter.
+1. Drag a **Button** widget to the same Container where the Checkbox was, and enter `Done` in the Text property of the button.
+
+    ![Drag button](images/drag-button-widget-ss.png)
 
 1. Double-click an empty area of the button to define the logic associated with the click.
 
-1. Click the **Logic** tab and add a a Server Action. Name it *TaskDelete*. 
+    ![Drag button](images/define-button-logic-ss.png)
 
-1. Add an input parameter to the *TaskDelete* to receive the Task identifier. Set it's name to *TaskId* and the Data Type to *Task Identifier*.
+1. In the **Logic** tab, right-click the **Server Actions** and select **Add Server Action**. Name it **TaskDelete**. 
 
-1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the property *Id* to the input parameter *TaskId*.
+1. Add an Input Parameter to the **TaskDelete** to receive the Task identifier. Set its name to **TaskId** and the Data Type to **Task Identifier**.
 
-    ![](images/wrapper-delete-ss.png)
+    ![Add Input Parameter](images/add-an-input-parameter-ss.png)
 
+1. In the **Data** tab, expand the **Task** Entity. Drag the **DeleteTask** Entity Action to the flow. 
 
-1. Go back to the **Interface** tab and double click the action **DeleteTask**. Drag the **TaskDelete** server action to the flow. and set the TaskId to the input parameter *TaskId*.
+    ![Drag entity action to the flow](images/drag-entity-action-to-flow-ss.png)
 
-1. Drag **Refresh Data** from the Toolbox to the action Flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks in the screen.
+1. Set the **Id** property to the Input Parameter **TaskId**.
 
-    ![Allow Completing Tasks](images/reactive-new-app-delete-refresh.png)
+    ![Set Id property](images/set-id-property-ss.png)
+
+1. Go back to the **Interface** tab and double-click the **DoneOnClick** action under the **Task** screen. 
+
+    ![Open the DoneOnClick action](images/click-button-on-click-ss.png)
+
+1. Select the **Logic** tab and drag the **TaskDelete** server action to the flow of the **DoneOnClick** action. Set the **TaskId** property to `GetTasks.List.Current.Task.Id`.
+
+    ![Drag server action](images/drag-server-action-set-property-ss.png)
+
+1. Drag **Refresh Data** from the Toolbox to the action flow, after the **TaskDelete** action, and select the aggregate **GetTasks** to refresh the available tasks on the screen.
+
+    ![Drag Refresh Data to thr action flow](images/drag-refresh-data-widget-ss.png)
 
 ## Allow adding tasks
 
 We also want to enable the end users to add new tasks from the screen with all tasks by linking to the screen that is already used to edit tasks:
 
-1. Go the **Interface** tab > **UI Flows** > **MainFlow**, and double-click the "Tasks" Screen to open the screen with all tasks in the main editor.  
+1. Go to the **Interface** tab > **UI Flows** > **MainFlow**, and double-click the "Task" Screen to open the screen with all tasks in the main editor.  
 
-1. Drag a Button Widget from the Toolbox to the Actions placeholder in the top right-hand corner of the screen. Change the label of the button to "Add".
+1. Drag a **Button** widget from the toolbox to the Actions placeholder in the top right-hand corner of the screen. Change the label of the button to **Add Task**.
 
-    ![Add plus icon to Actions placeholder](images/reactive-new-app-add-button.png)
+    ![Add button to Actions placeholder](images/drag-button-widget-from-toolbox-ss.png)
 
-1. Right-click the button selector and choose **Link** > **MainFlow\TaskDetail**.
+1. Right-click an empty area of the button and choose **Link** > **MainFlow\TaskDetail**.
 
-    ![Allow Adding Tasks](images/reactive-new-button-linkto.png)
+    ![Allow Adding Tasks](images/link-to-screen-ss.png)
 
 ## Test your Reactive Web App
 
-At this stage we test our Reactive Web App. Click the **1-Click Publish** button to publish the application to your environment. When the application is deployed, click the **Open in Browser** button to test your application in a browser.
+At this stage, you can test your Reactive Web App. Click the **1-Click Publish** button to publish the application to your environment. When the application is deployed, click the **Open in Browser** button to test your application in a browser.
+
+![Reactive Web App](images/your-reactive-web-app-ss.png)

@@ -6,7 +6,7 @@ guid: 0c7eda5f-bb0f-4514-9add-a0fcd23b364e
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Static Entity Attribute (Consumed SOAP)
+# Static Entity Attribute - Consumed SOAP
 
 Attribute of a static entity that belongs to a consumed SOAP Web Service.
 

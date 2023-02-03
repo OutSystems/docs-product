@@ -6,7 +6,7 @@ guid: 05055421-befe-428c-8f14-17ef09fe3126
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Input Parameter (SAP Password)
+# Input Parameter - SAP Password
 
 Input parameter for the SAP password. This parameter is added automatically by Service Studio to every SAP remote function when Dynamic Login is added to the SAP Connection.  
 

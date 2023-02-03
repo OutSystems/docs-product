@@ -572,9 +572,11 @@ Note: New findings are only processed every 12 hours.
 
 </div>
 
-To authenticate your API requests, follow the guidelines in the [AI Mentor Studio API authentication](../architecture-dashboard/ad-api-authentication.md) article.
+To authenticate your API requests, follow the guidelines in the [AI Mentor Studio API authentication](../ai-mentor-studio/aims-api-authentication.md) article.
 
-You can access the Swagger file from the [AI Mentor Studio API page](https://architecture.outsystems.com/ArchitectureDashboardAPI/rest/V1/):
+## Access the Swagger file
+
+You can access the **Swagger file** from the [AI Mentor Studio API page](https://architecture.outsystems.com/ArchitectureDashboardAPI/rest/V1/):
 
 ![AI Mentor Studio API page, where you can download the swagger by clicking **swagger.json**.](images/api-swagger-ad.png)
 

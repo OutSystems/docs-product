@@ -6,7 +6,7 @@ guid: 1d89067b-946a-4832-99ec-81c78cb5ca3f
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Structure Attribute (REST API Method)
+# Structure Attribute - REST API Method
 
 Attribute of structure used in input and output arguments of REST API Methods.  
 

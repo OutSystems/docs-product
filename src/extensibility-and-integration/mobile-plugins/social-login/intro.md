@@ -84,7 +84,13 @@ Relevant Information | Description
 Client ID | A public identifier your app on the provider side. It is a string type value available to any registered developer on the Google Cloud Platform. You can access the ClientID value on the OAuth Consent tab on your app's Credentials screen.
 Client Secret | A confidential code known only to your app and the authorization server. It is a string type value type value available to any registered developer on the Google Cloud Platform. You can access the ClientSecret value on the OAuth Consent tab on your app's Credentials screen.
 
-Check information on OAuth configuration of Google login in [Start Integrating Google Sign-In into Your Android App](https://developers.google.com/identity/sign-in/android/start-integrating).
+While developing and testing your app, you can use the debug certificate fingerprint (SHA-1) that you obtain from your debug keystore file, and then use it for the Android OAuth client configuration on the Google Cloud Console. 
+
+For Android apps in production, you must obtain the release certificate fingerprint (SHA-1 hash) using your production Keystore file (.jks), and update the Android OAuth client configuration on the Google Cloud Console to use it.  
+
+Find out how to obtain debug and release certificates [here](https://developers.google.com/android/guides/client-auth#self-signing_your_application).
+
+Find more information on OAuth configuration of Google login in [Start Integrating Google Sign-In into Your Android App](https://developers.google.com/identity/sign-in/android/start-integrating).
 
 #### Facebook
 

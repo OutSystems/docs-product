@@ -91,7 +91,7 @@ After following these steps and publishing the module, you can test the pattern 
 |OptionalConfigs.MinDate (DateTime): Optional | All days before this date are disabled.|
 |OptionalConfigs.MaxDate (DateTime): Optional| All days before this date are disabled.|
 |OptionalConfigs.FirstWeekDay (DatePickerWeekDay Identifier): Optional | Defines which weekday is displayed first.|
-|OptionalConfigs.ShowWeekNumbers (Boolean): Optional| Displays the week number on the left side of the Date Picker Range.|
+|OptionalConfigs.ShowWeekNumbers (Boolean): Optional| If True, the week numbers are displayed on the left side of the Date Picker Range.|
 |ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <br/><br/>Examples:<ul><li>_Blank_ - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Framework Cheat Sheet](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/CheatSheet). |
 
 ## Events

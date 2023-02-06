@@ -18,7 +18,7 @@ You can use the Blank Slate UI Pattern to inform end users, for example, to comp
 
 ![Blank Slate UI Pattern](images/blankslate-1-ss.png)
 
-## How to use the Blank State UI Pattern
+## How to use the Blank Slate UI Pattern
 
 1. In Service Studio, in the Toolbox, search for `Blank Slate`.
 

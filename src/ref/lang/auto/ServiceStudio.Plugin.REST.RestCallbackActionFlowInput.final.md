@@ -6,7 +6,7 @@ guid: acb357eb-4100-486a-a9ba-e610ce1b52b2
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Input Parameter (REST API Callback)
+# Input Parameter - REST API Callback
 
 Input parameter of a consumed REST API Callback action.  
 

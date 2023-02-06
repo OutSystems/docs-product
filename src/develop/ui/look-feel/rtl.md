@@ -1,14 +1,14 @@
 ---
-summary: Creating apps that display content right-to-left (RTL) 
+summary: Creating apps that display content right-to-left (RTL).
 tags: 
 locale: en-us
 guid: f7a12f2e-55b0-4a1a-8a50-a7b2e7fff65e
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Right-to-Left (RTL)
+# Right-to-Left
 
-Most applications are designed and created with all content displaying from left to right (LTR). However, to accommodate languages from the Middle East, for example, Arabic, the written content and layout must be swapped so that it displays from right to left. All patterns on the OutSystems UI framework support RTL by default. 
+Most applications are designed and created with all content displaying from left to right (LTR). However, to accommodate languages from the Middle East, for example, Arabic, the written content and layout must be swapped so that it displays from right to left (RTL). All patterns on the OutSystems UI framework support RTL by default. 
 
 ## Using the Multilingual feature
 

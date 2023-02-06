@@ -1,7 +1,11 @@
 name: Build
 
 on:
-  [push, pull_request]
+  push:
+    branches:
+    - master
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
 
 jobs:
   Build:
@@ -14,13 +18,10 @@ jobs:
       with:
         path: docs
 
-    - name: Checkout Tools
-      uses: actions/checkout@v3
-      with:
-        repository: ${{ secrets.TOOLS_REPOSITORY }}
-        ref: master
-        token: ${{ secrets.TOOLS_PAT }}
-        path: toolkit
+    - name: Download Tools
+      run: |
+        curl ${{ secrets.TOOLS_URL }} --output toolkit.zip
+        unzip toolkit.zip -d toolkit
 
     - name: Add config.yml
       working-directory: docs

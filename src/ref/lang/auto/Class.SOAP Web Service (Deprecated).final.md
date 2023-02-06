@@ -6,7 +6,7 @@ guid: c2e59d22-6ed6-4982-a9fd-5ce8e440d660
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# SOAP Web Service (Deprecated)
+# SOAP Web Service - Deprecated
 
 Consumed SOAP Web Service based on the SOAP 1.1 protocol.  
 

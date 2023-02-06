@@ -6,7 +6,7 @@ guid: 7fbaa379-bf8c-43e8-8352-f320768a330d
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Input Parameter (REST Authentication)
+# Input Parameter - REST Authentication
 
 Input parameter of the exposed REST API authentication action (Username or Password). Both Username and Password input parameters are added/removed automatically by Service Studio when configuring the REST API to use Basic authentication/Custom authentication, respectively.  
 

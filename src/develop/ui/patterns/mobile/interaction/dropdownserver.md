@@ -124,16 +124,16 @@ After following these steps and publishing the module, you can test the pattern 
 
 | Property  | Description  | 
 |---|---|
-|AllowMultipleSelection (Boolean): Optional| Set to True to allow users to select more than one option.| 
-|IsDisabled (Boolean): Optional| Set to True to allow users to select more than one option.| 
-|ExtendedClass (Text): Optional  | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
+|AllowMultipleSelection (Boolean): Optional|If true, users can select multiple options. If False, users can only select one option. This is the default. </br>If AllowMultipleSelection is False, the dropdown automatically closes after the user picks an option, otherwise it remains open.| 
+|IsDisabled (Boolean): Optional|Set as True to disable the Dropdown. False is the default value (the dropdown is active).| 
+|ExtendedClass (Text): Optional|Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
 
 ### Dropdown Server Side Item
 
 |Property| Description| 
 |---|---|
-|ItemId (Text): Mandatory| Item identifier.| 
-|IsSelected (Boolean): Optional| Set to True to allow users to select more than one option.| 
+|ItemId (Text): Mandatory|DropdownServerSide item identifier. | 
+|IsSelected (Boolean): Optional| Set to True to allow users to select more than one option.  | 
 |ExtendedClass (Text): Optional  | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet).|
 
 ## Events
@@ -142,15 +142,15 @@ After following these steps and publishing the module, you can test the pattern 
 
 |Event| Description  | 
 |---|---|
-|Initialized: Optional| Event triggered after the pattern instance is ready.| 
-|OnToggle: Optional| Event triggered each time the Dropdown is opened or closed.| 
+|Initialized: Optional| Event triggered after the DropdownServerSide instance is ready. | 
+|OnToggle: Optional| Event triggered each time the DropdownServerSide opens or closes.| 
 
 ### Dropdown Server Side Item
 
 |Event| Description  | 
 |---|---|
-|Initialized: Optional| Event triggered after the pattern instance is ready.| 
-|OnToggle: Optional| Event triggered each time the Dropdown is opened or closed.| 
+|OnSelected: Mandatory| Event triggered each time the item is clicked. | 
+
 
 ## API - Dropdown Server Side
 
@@ -191,5 +191,5 @@ If you are an advanced user, you might want to use the Accordion API (OutSystems
 |GetAllDropDownItemsInScreen|Returns the map with all the DropdownServerSideItem instances on the page.|<li>Returns array of Ids</li>|
 |GetDropdownServerSideItemItemById|Gets the instance of DropdownServerSideItem by a specific ID.|<li>dropdownServerSideItemId: string</li>|
 |Initialize|Initializes the pattern instance.|<li>dropdownId: string</li>|
-|Initialize|Initializes the pattern instance.|<li>dropdownServerSideId: string</li><li>eventName: string</li><li>callback:OSUIFramework.Callbacks.OSGeneric</li>|
+|Initialize|Initializes the pattern instance.|<li>dropdownServerSideId: string</li><li>eventName: string</li><li>callback: OSUIFramework.Callbacks.OSGeneric</li>|
 

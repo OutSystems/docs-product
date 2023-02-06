@@ -6,7 +6,7 @@ guid: fba19edd-e3b2-4689-a1d9-2d25e0f74852
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Structure Attribute (Deprecated SOAP)
+# Structure Attribute - Deprecated SOAP
 
 Attribute of structure used in input or output parameters of consumed SOAP Web Service Methods.  
 

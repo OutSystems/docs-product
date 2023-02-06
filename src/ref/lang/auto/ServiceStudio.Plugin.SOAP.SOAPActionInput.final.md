@@ -6,7 +6,7 @@ guid: 249fbacb-2b93-4dd1-8675-e48bcccbd609
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Input Parameter (Consumed SOAP Method)
+# Input Parameter - Consumed SOAP Method
 
 Input parameter of a consumed SOAP Web Service method.
 

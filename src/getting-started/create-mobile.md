@@ -14,7 +14,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-Developing mobile apps with OutSystems is easy. If you have an Excel file containing your data, you can import it into a database and quickly create a mobile app that enables you to check and manage your data on the go.
+Developing mobile apps with OutSystems is fast. If you have an Excel file containing your data, you can import it into a database and quickly create a mobile app that enables you to check and manage your data on the go.
 
 To create a mobile app with data that's imported from an Excel file, you need to:
 
@@ -59,7 +59,7 @@ Let's create a new task management mobile app. Do the following in Service Studi
 
 OutSystems stores your application data in a relational database. This means that the first step in creating an application is defining the data model.
 
-To do this, we are going to use an Excel file that already contains the following task information:
+To do this, we're going to use an Excel file that already contains the following task information:
 
 * Description
 * Due Date
@@ -113,15 +113,13 @@ This links the title of the tasks to a newly created screen. We will use this ne
 
 Now we will define the logic that runs when the end users press the Save button:
 
-1. Click an empty area of the **Save** button and select **GetTasks.List.Current.Task.Id** as the TaskId parameter.
-
 1. Double-click an empty area of the **Save** button to define the logic associated with the button. This will create a new screen action named **SaveOnClick**.
 
 1. In the Logic tab create a server action named **TaskCreateOrUpdate**.
 
-1. Add an input parameter and set it's name to **Task**. Set the data type to **Task**.
+1. Add an input parameter and set its name to **Task**. Set the data type to **Task**.
 
-1. Add an output parameter and set it's name to **TaskId**. Set the data type to **Task Identifier**. This will be the task id returned by the CreateOrUpdateTask that we'll need to pass on to the **SaveOnClick** action.
+1. Add an output parameter and set its name to **TaskId**. Set the data type to **Task Identifier**. This will be the task id returned by the CreateOrUpdateTask that we'll need to pass on to the **SaveOnClick** action.
 
 1. In the **Data** tab, expand the **Task** entity and drag the **CreateOrUpdateTask** entity action to the flow of the **TaskCreateOrUpdate** server action. Set the **Source** to the input parameter **Task**.
 
@@ -133,9 +131,9 @@ Now we will define the logic that runs when the end users press the Save button:
 
 1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task.-->
 
-1. Navigate to the **Interface** tab and double click the **SaveOnClick** action.
+1. Navigate to the **Interface** tab and double-click the **SaveOnClick** action.
 
-1. In the **Logic** tab and drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If**. Set the **Task** property to `GetTaskById.List.Current.task`.
+1. In the **Logic** tab, drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If**. Set the **Task** property to `GetTaskById.List.Current.task`.
 
 1. Drag the screen **Tasks** from the **Interface** tab to the End node so that the user is redirected back to the main screen after saving a task. 
 
@@ -155,7 +153,7 @@ Now let's add the functionality to mark tasks as complete. Let's implement that 
 
 1. Click the **Logic** tab and add a a Server Action. Name it *TaskDelete*. 
 
-1. Add an input parameter to the *TaskDelete* to receive the Task identifier. Set it's name to *TaskId* and the Data Type to *Task Identifier*.
+1. Add an input parameter to the *TaskDelete* to receive the Task identifier. Set its name to *TaskId* and the Data Type to *Task Identifier*.
 
 1. Go to the **Data** tab and expand the **Task** Entity and drag the **DeleteTask** entity action to the flow. Set the property *Id* to the input parameter *TaskId*.
 

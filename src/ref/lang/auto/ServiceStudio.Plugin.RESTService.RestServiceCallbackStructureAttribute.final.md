@@ -6,7 +6,7 @@ guid: 44c5ae3d-131d-422d-b71b-a5e6598490f1
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Structure Attribute (REST Service API Callback)
+# Structure Attribute - REST API Callback
 
 Attribute of structure used in input and output arguments of REST API Callbacks.  
 

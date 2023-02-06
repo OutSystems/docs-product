@@ -6,7 +6,7 @@ guid: ed14038d-f827-432d-b5c1-523022d5fea9
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Web Service Method (Consumed)
+# Web Service Method - Consumed
 
 Method of a Consumed SOAP Web Service.
 

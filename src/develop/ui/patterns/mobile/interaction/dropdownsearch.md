@@ -99,15 +99,15 @@ After following these steps and publishing the module, you can test the pattern 
 |OptionsList (DropdownOption List): Mandatory|Defines the list of options to show in dropdown.|
 |OptionsList.Value (Text): Mandatory|Defines the items's value.|
 |OptionsList.Label (Text): Mandatory |Defines the items's text.|
-|OptionsList.ImageUrlOrIconClass (Text): Optional|Define an image URL or a CSS class. If you define a URL, an image is added, otherwise the information is used as a class selector and an icon is added.|
-|OptionsList.GroupName (Text): Optional|Defines the name of the group where the item belongs.</br>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
-|OptionsList.Description (Text): Optional|Defines the text that displays below the option value in the Dropdown options list.</br>Use this property to give more details about the option.|
-|StartingSelection (DropdownOption List): Optional| Defines the list of options that appear pre-selected in the Dropdown Search.</br>The property is static and is only valid for the initial Dropdown Search state and is not  updated dynamically.|
+|OptionsList.ImageUrlOrIconClass (Text): Optional|Defines an image URL or a CSS class. If you define a URL, an image is added, otherwise the information is used as a class selector and an icon is added.|
+|OptionsList.GroupName (Text): Optional|Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
+|OptionsList.Description (Text): Optional|Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option.|
+|StartingSelection (DropdownOption List): Optional| Defines the list of options that appear pre-selected in the Dropdown Search.<br/>The property is static and is only valid for the initial Dropdown Search state and is not  updated dynamically.|
 |StartingSelection.Value (Text): Mandatory|Defines the items's value.|
 |StartingSelection.Label (Text): Mandatory|Defines the items's text.|
 |StartingSelection.ImageUrlOrIconClass (Text): Optional |Define an image URL or a CSS class. If you define a URL, an image is added, otherwise the information is used as a class selector and an icon is added.|
-|StartingSelection.GroupName (Text): Optional|Define the name of the group where the item belongs.</br>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
-|StartingSelection.Description (Text): Optional| Defines the text that displays below the option value in the Dropdown options list.</br>Use this property to give more details about the option.|
+|StartingSelection.GroupName (Text): Optional|Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
+|StartingSelection.Description (Text): Optional| Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option.|
 |Prompt (Text): Optional| Defines the text that is displayed when no items are selected and serves as an empty value.<br/><br/>The default message is: **Select...** |
 |OptionalConfigs (DropdownOptionalConfigs): Optional |Extra configurations.|
 |OptionalConfigs.AllowMultipleSelection (Boolean): Optional|Defines if multiple options can be selected. If True, multiple options can be selected. If False, only one option can be selected. The default value is False.|

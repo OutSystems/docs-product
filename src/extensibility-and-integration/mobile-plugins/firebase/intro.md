@@ -1,5 +1,5 @@
 ---
-summary: Use the Firebase-based plugins Analytics, Crashlytics, and Performance to implement common development patterns in your mobile apps. 
+summary: Use the Firebase-based plugins Analytics, Crashlytics, and Performance to implement common development patterns in your mobile apps.
 tags: article-page; runtime-mobile; support-application_development; support-Mobile_Apps; support-Mobile_Apps-featured
 locale: en-us
 guid: 188c9757-ce29-4f78-9717-4e42226e0a4d
@@ -7,7 +7,7 @@ app_type: mobile apps
 platform-version: o11
 ---
 
-# Firebase Plugins
+# Firebase plugins
 
 <div class="info" markdown="1">
 
@@ -15,7 +15,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-Firebase is a Google mobile development platform. It speeds up development of many development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
+Firebase is a Google mobile development platform. It speeds up the development of many development patterns for mobile apps. You can use Firebase in the OutSystems mobile through the following Firebase-based plugins:
 
 * [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)
 * [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)
@@ -25,7 +25,7 @@ Firebase is a Google mobile development platform. It speeds up development of ma
 
 <div class="info" markdown="1">
 
-To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating to the supported Firebase-based mobile plugins](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Migrating_to_the_supported_Firebase-based_mobile_plugins). 
+To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating to the supported Firebase-based mobile plugins](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Migrating_to_the_supported_Firebase-based_mobile_plugins).
 
 </div>
 
@@ -34,7 +34,7 @@ To migrate your app from the unsupported Firebase Mobile plugin, see [Migrating 
 To use the Firebase plugins you meet the following requirements:
 
 * You set up a Firebase project in the [Google Firebase console](https://console.firebase.google.com/).
-  
+
 * You [added an Android and an iOS app in Firebase](https://support.google.com/firebase/answer/9326094?hl=en) and downloaded the configuration files:
 
     * **GoogleService-Info.plist** for iOS
@@ -42,7 +42,7 @@ To use the Firebase plugins you meet the following requirements:
 
 ## Demo app
 
-Install [Firebase Mobile Sample App](https://www.outsystems.com/forge/component_overview.aspx?projectid=10707&projectname=firebase-mobile-sample-app) from Forge and open the app in Service Studio. The demo app contains logic for common use cases, which you can examine and recreate in your apps. If you want to build the app and run it, check the prerequisites in the Forge page.
+Install [Firebase Mobile Sample App](https://www.outsystems.com/forge/component_overview.aspx?projectid=10707&projectname=firebase-mobile-sample-app) from Forge and open the app in Service Studio. The demo app contains logic for common use cases, which you can examine and recreate in your apps. If you want to build the app and run it, check the prerequisites on the Forge page.
 
 ## Adding and using a Firebase plugin
 
@@ -54,7 +54,7 @@ To add a Firebase plugin to your module, follow these steps:
 
     <div class="info" markdown="1">
 
-    You need to add Google services configuration file only for the first Firebase plugin in your module. The next Firebase plugin you add uses the same configuration files. 
+    You need to add Google services configuration file only for the first Firebase plugin in your module. The next Firebase plugin you add uses the same configuration files.
 
     </div>
 
@@ -81,7 +81,7 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
     ![Resources folder in Service Studio](images/resources-folder-ss.png)
 
 1. Select the **google-services.zip** resource and configure the following:
-   
+
     * In the **Deploy Action** list, select **Deploy to Target Directory**.
     * In the Target Directory, enter the [target directory for your environment](#generating-target-directories-for-configuration-files).
 
@@ -93,15 +93,15 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
 
 ### Preparing Firebase configuration file
 
-Add the files **GoogleService-Info.plist** and **google-services.json** in a zip file and name the zip file **google-services.zip**. 
+Add the files **GoogleService-Info.plist** and **google-services.json** in a zip file and name the zip file **google-services.zip**.
 
 ![Configuration files in a zip archive](images/zipped-configs.png)
 
 ### Generating target directories for configuration files
 
-A Firebase Plugin requires that you supply configuration files in the app file resources. The mobile apps commonly have different identifiers in different environments, so you need to generate target directories for each environment.
+A Firebase Plugin requires that you supply configuration files in the app file resources. Mobile apps commonly have different identifiers in different environments, so you need to generate target directories for each environment.
 
-To get the target directory, concatenate the **app identifier** and **.firebase**. Here are examples for three environments with different app identifiers.
+To get the target directory, concatenate the **app identifier** and **.firebase**. Here are examples of three environments with different app identifiers.
 
 | Environment | App identifier | Target directory |
 | - | - | - |
@@ -111,9 +111,9 @@ To get the target directory, concatenate the **app identifier** and **.firebase*
 
 Use the target directory value in the **Target Directory** property of the **Resource**.
 
-### Additional setup for the Dynamic Links Plugin
+### Additional setup for the Dynamic Links plugin
 
-The Firebase Dynamic Links Plugin has some additional setup steps that need to be followed for it to work correctly:
+The Firebase Dynamic Links Plugin has additional setup steps required for it to work correctly:
 
 * You need to include a global preference in the Extensibility Configurations of the application using the plugin. The value for this preference needs to match the URL prefix you set in the Dynamic Links page in the Firebase console. For example:
 
@@ -128,20 +128,18 @@ The Firebase Dynamic Links Plugin has some additional setup steps that need to b
     }
     ```
 
-* For iOS, you need to use a provisioning profile from Apple that contains the Associated Domains capability. For more info, see [Configuring an Associated Domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain) by Apple.
+* For iOS, you need to use a provisioning profile from Apple that contains the Associated Domains capability. For more info, see [Configuring an Associated Domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain) by Apple. Ensuring the app is compliant with Apple’s Data Use and Sharing guidelines
 
-### Ensuring app is compliant with Apple’s Data Use and Sharing guidelines
-
-Starting with iOS 14.5, apps on the App Store must receive the user’s permission to collect tracking data through the AppTrackingTransparency framework.
+Starting with iOS 14.5, apps on the App Store must receive the user’s permission to collect tracking data through the AppTrackingTransparency framework. You can find more info regarding this requirement [here](https://developer.apple.com/documentation/apptrackingtransparency).
 
 ![RequestTrackingAuthorization client action parameters on Service Studio](images/firebase-request-tracking-authorization.png)
 
-To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin. Apple reccomends triggering this prompt as soon as the app loads.
-If you want to present an alert prior to the iOS tracking permission dialog, enable the **ShowInformation** parameter on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
+To trigger the native AppTrackingTransparency framework, use the **RequestTrackingAuthorization** client action from the Firebase Analytics Plugin. Apple recommends triggering this prompt as soon as the app loads.
+If you want to present an alert before the iOS tracking permission dialog, enable the **ShowInformation** parameter on the action. To provide more context to app users in the dialog, set a **Title** and **Message**.
 
-By default, the **NSUserTrackingUsageDescription** field is set to `AppName needs your attention.`. You can set your custom description by including an iOS-specific preference (`USER_TRACKING_DESCRIPTION_IOS`) in the Extensibility Configurations of the application, as follows:
-    
-```JSON   
+By default, the **NSUserTrackingUsageDescription** field is set to `AppName needs your attention.`. As explained by Apple [here](https://developer.apple.com/documentation/apptrackingtransparency), this property should contain "a message that informs the user why an app is requesting permission to use data for tracking the user or the device.". You can set your custom description by including an iOS-specific preference (`USER_TRACKING_DESCRIPTION_IOS`) in the Extensibility Configurations of the application, as follows:
+
+```JSON
 {
     "preferences": {
         "ios": [{
@@ -152,11 +150,11 @@ By default, the **NSUserTrackingUsageDescription** field is set to `AppName need
 }
 ```
 
-You can use the **RequestTrackingAuthorization** action multiple times in the same app, since iOS remembers users' choice and only prompts users again after they uninstall and then reinstall the app on the device.
-    
-By default, an app using the Firebase Analytics plugin is able to trigger the native AppTrackingTransparency framework. It also contains the **NSUserTrackingUsageDescription** field in the app's **\*-Info.plist** file. If you don't want to trigger the framework, and don't want to include the description field in the **.plist** file, you can disable this through the Extensibility Configurations like this:
-    
-```JSON   
+You can use the **RequestTrackingAuthorization** action multiple times in the same app since iOS remembers a user's choice and only prompts users again after they uninstall and then reinstall the app on the device.
+
+By default, an app using the Firebase Analytics plugin is able to trigger the native AppTrackingTransparency framework. It also contains the **NSUserTrackingUsageDescription** field in the app's **\*-Info.plist** file. If you don't want to trigger the framework and don't want to include the description field in the **.plist** file, you can disable this through the Extensibility Configurations like this:
+
+```JSON
 {
     "preferences": {
         "ios": [{
@@ -167,4 +165,4 @@ By default, an app using the Firebase Analytics plugin is able to trigger the na
 }
 ```
 
-It is important to note that if your app collects user data for adversiting purposes, also know as Attribution within Firebase Analytics context, it should prompt the AppTrackingTransparency framework.
+It's important to note that if your app collects user data for advertising purposes, also known as Attribution, within Firebase Analytics context, it should prompt the AppTrackingTransparency framework.

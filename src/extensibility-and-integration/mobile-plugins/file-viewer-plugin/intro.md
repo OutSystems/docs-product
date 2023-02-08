@@ -85,7 +85,7 @@ More information about parts of the plugin.
 
 ### Actions
 
-Here is the reference of the actions you can use from the File Plugin. File Plugin uses a Cordova plugin, and for more information check out [File-Viewer-Plugin](https://github.com/OutSystemsExperts/File-Viewer-Plugin).
+Here is the reference of the actions you can use from the File Plugin. File Plugin uses a Cordova plugin, and for more information check out [cordova-outsystems-file-viewer](https://github.com/OutSystems/cordova-outsystems-fileviewer)
 
 | Action                  | Description                                                                          |
 | ----------------------- | ------------------------------------------------------------------------------------ |

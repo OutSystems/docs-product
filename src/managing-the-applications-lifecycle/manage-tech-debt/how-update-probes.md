@@ -4,6 +4,7 @@ summary: When a new AI Mentor Studio probe version is released, users with Full 
 locale: en-us
 guid: d11dd771-148b-49fd-8bfd-dfe0800620c5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to update the AI Mentor Studio probes

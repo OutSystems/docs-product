@@ -4,6 +4,7 @@ summary: Date Picker allows the end user to select a single or a range of dates 
 locale: en-us
 guid: 0eaaa700-8f98-4d1e-b478-5df2d45101ff
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Date Picker 

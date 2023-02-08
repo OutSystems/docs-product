@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: 053acd13-6c13-4849-b496-35631a4ad7f3
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Read/Write Data Last Write Wins

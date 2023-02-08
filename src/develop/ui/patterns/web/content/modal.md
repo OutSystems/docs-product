@@ -4,6 +4,7 @@ summary: Modal is a box with content that interrupts the end user and demands an
 locale: en-us
 guid: 64cf2199-6b69-480b-a63e-49b91965e777
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Modal

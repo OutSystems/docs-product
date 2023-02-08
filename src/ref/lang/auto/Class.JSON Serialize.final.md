@@ -6,6 +6,7 @@ helpids: 30002
 locale: en-us
 guid: a1cf5074-f5ba-48cf-a229-206358fd55c0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # JSON Serialize

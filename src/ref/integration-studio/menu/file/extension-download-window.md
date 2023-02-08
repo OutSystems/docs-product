@@ -2,6 +2,7 @@
 locale: en-us
 guid: 72128f41-26f1-43f5-b5be-fd06451c1624
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Download from Server Window

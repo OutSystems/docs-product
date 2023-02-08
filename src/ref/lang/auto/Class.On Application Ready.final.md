@@ -5,6 +5,7 @@ tags: runtime-mobileandreactiveweb
 locale: en-us
 guid: b89718c6-8e22-4481-a4ea-6481e349e206
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # On Application Ready

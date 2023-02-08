@@ -4,6 +4,7 @@ helpids: 30071
 locale: en-us
 guid: 05055421-befe-428c-8f14-17ef09fe3126
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Input Parameter - SAP Password

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: fa3c3a72-304f-4171-b85a-77e614a20326
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Register an Environment using the LifeTime API

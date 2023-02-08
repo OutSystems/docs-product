@@ -6,6 +6,7 @@ tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; des
 locale: en-us
 guid: 0cfabe1b-7274-404a-901d-e334b007fb26
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # List Action

@@ -4,6 +4,7 @@ helpids: 30062
 locale: en-us
 guid: ae9680b9-818f-483a-ab48-e368e6f97b8c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Input Parameter - REST API Callback

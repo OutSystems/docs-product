@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 104aade7-8bf2-4e15-9871-f05e91e008f6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Required Property Value Error

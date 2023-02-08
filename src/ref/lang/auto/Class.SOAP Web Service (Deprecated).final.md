@@ -4,6 +4,7 @@ helpids: 11003, 11001
 locale: en-us
 guid: c2e59d22-6ed6-4982-a9fd-5ce8e440d660
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # SOAP Web Service - Deprecated

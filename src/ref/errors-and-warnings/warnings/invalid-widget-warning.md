@@ -2,6 +2,7 @@
 locale: en-us
 guid: 04f0e0bf-0ef7-4abe-b596-bfb4a48393a2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Widget Warning

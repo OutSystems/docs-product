@@ -4,6 +4,7 @@ summary: Card groups small pieces of information and highlights them on the scre
 locale: en-us
 guid: a44ab647-aef4-44ba-b68b-d7a0d421a92c
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Card

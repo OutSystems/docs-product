@@ -4,6 +4,7 @@ summary: More information about Azure Resources such as VMs, SQL databases, stor
 locale: en-us
 guid: 88d66b58-baee-4c61-9d03-b21e5b4aeac9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Quick Reference for OutSystems on Microsoft Azure

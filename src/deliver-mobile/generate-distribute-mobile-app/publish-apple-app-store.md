@@ -4,6 +4,7 @@ tags: runtime-mobile; support-mobile
 locale: en-us
 guid: 3d02e722-3225-47fa-b343-d6188e21d174
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Publish Your Mobile iOS Application to the Apple App Store

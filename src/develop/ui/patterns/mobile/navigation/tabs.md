@@ -4,6 +4,7 @@ summary: Displays large sets of information, which can be split into different a
 locale: en-us
 guid: a5e72a7a-870d-46e7-b2be-a15ac6948b97
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Tabs

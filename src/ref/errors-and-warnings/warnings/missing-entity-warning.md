@@ -2,6 +2,7 @@
 locale: en-us
 guid: 714e8e95-4ada-4a81-9929-e392e5ae55dd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Missing Entity Warning

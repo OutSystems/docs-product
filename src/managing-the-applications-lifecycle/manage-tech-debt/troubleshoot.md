@@ -4,6 +4,7 @@ summary: Troubleshoot AI Mentor Studio
 locale: en-us
 guid: e2eb38b8-b3b6-42dd-9389-232ef2ba6226
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Troubleshooting

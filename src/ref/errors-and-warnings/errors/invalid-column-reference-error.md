@@ -2,6 +2,7 @@
 locale: en-us
 guid: ed240efa-1b90-4ce9-9263-a9bbfee1c90b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Column Reference Error

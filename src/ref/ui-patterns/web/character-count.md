@@ -4,6 +4,7 @@ summary: Advanced use cases for the Character Count UI Pattern.
 locale: en-us
 guid: 0aff7fc0-9c0e-4ff5-9736-588beddc3335
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Character Count Reference

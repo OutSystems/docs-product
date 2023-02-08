@@ -4,6 +4,7 @@ summary: Learn about defining intermediate goals with milestones. Milestones pro
 guid: 31c89686-510e-4586-ad31-d04f21c21154
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Defining intermediate goals with milestones

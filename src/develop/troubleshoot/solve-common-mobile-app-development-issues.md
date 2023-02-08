@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Application_Troub
 locale: en-us
 guid: 2e4ff1b0-9813-4931-9a9e-c265df4c74f9
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Solve Common Mobile App Development Issues

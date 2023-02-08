@@ -5,6 +5,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: e908d4d2-b3df-4e78-baf9-c105f9732869
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Input Password Widget

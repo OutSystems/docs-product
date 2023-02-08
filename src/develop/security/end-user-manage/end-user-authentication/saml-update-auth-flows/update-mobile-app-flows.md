@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: 8b7802cb-bd7b-47e4-a3d1-bc8124ca4856
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Updating the login and logout flows of your Mobile App to support SAML 2.0

@@ -4,6 +4,7 @@ summary: Progress Bar displays the progress of a task by incrementing values in 
 locale: en-us
 guid: 024aef71-32e0-490d-8bb9-3e2a45845b91
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Progress Bar

@@ -4,6 +4,7 @@ tags: support-application_development; support-Database
 locale: en-us
 guid: 9fdba27d-69ca-46b4-9a7b-6dee299c8084
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # DbCleaner API

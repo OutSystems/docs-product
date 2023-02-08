@@ -4,6 +4,7 @@ summary: Simple scrollable Block with a placeholder for content. Ideal to displa
 locale: en-us
 guid: 3ecfdec5-b135-4faa-8c1f-110595075a02
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Scrollable Area

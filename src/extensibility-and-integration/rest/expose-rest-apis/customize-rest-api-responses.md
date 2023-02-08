@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: e8e058c7-435f-4c70-8073-afd4ac5b451a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Customize REST API Responses

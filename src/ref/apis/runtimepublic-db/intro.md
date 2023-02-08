@@ -4,6 +4,7 @@ tags: article-page; support-application_development; support-Database; support-I
 locale: en-us
 guid: 09f23dc2-a597-49ed-a083-21921deec622
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # RuntimePublic.Db API

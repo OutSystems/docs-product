@@ -4,6 +4,7 @@ helpids: 0
 locale: en-us
 guid: bbcf3fc3-e6c7-4d65-b941-2a77b0b885d6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Switch

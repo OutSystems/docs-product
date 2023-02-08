@@ -4,6 +4,7 @@ summary: Search allows the user to find pieces of content without the use of nav
 locale: en-us
 guid: e0731879-d8a5-406c-b5a8-7b08cc36caee
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Search

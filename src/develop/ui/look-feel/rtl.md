@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: f7a12f2e-55b0-4a1a-8a50-a7b2e7fff65e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Right-to-Left

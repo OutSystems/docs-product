@@ -4,6 +4,7 @@ summary: Learn about app lifecycle management in Workflow Builder.
 guid: 816ecd33-ab29-49d0-ae42-648840ac1251
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # App lifecycle management

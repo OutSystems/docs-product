@@ -4,6 +4,7 @@ summary: Allow users to input a time of day in either a 24-hour or AM/PM format.
 locale: en-us
 guid: F51B0186-5CEB-4D5F-880D-A85C6E0AB6DF
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Time Picker

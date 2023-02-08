@@ -4,6 +4,7 @@ tags: runtime-traditionalwebandreactiveweb
 locale: en-us
 guid: acab4979-21b8-47ef-8618-48af0944b3a6
 app_type: traditional web apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure Okta Authentication

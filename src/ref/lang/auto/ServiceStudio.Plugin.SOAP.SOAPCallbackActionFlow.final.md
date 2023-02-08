@@ -4,6 +4,7 @@ helpids: 30174
 locale: en-us
 guid: c0e4920c-99f4-41e1-995c-85a9ed120053
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # SOAP Callback - Consumed SOAP

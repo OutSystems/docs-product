@@ -5,6 +5,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 59c80eef-8238-406b-b0a4-231ea54d5c4e
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Comment Widget

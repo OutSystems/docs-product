@@ -5,6 +5,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 0e4bedbe-6a83-44f4-8c55-969878cb2fc4
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Form Widget

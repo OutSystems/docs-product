@@ -4,6 +4,7 @@ summary: Balloon shows a content overlay to users, without forcing them to lose 
 locale: en-us
 guid: 872dd221-b71e-4780-b7f0-141d2ab55db5
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Balloon

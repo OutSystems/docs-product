@@ -6,6 +6,7 @@ tags: outsystems-designing-screens; reference; designing-screens; link-widget
 locale: en-us
 guid: 21c2bb40-056c-4805-a231-63e5c40492f8
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Link

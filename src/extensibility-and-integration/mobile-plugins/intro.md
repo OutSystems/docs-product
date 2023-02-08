@@ -4,6 +4,7 @@ tags: article-page; runtime-mobile; support-application_development; support-Mob
 locale: en-us
 guid: 5543e1d8-095e-45d1-aef6-d3c054649421
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Mobile Plugins

@@ -2,6 +2,7 @@
 locale: en-us
 guid: 48f45f69-61b9-4d67-a298-9d06151b4b34
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Compiler Error

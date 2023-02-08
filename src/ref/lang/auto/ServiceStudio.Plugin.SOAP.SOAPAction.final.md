@@ -4,6 +4,7 @@ helpids: -1
 locale: en-us
 guid: ed14038d-f827-432d-b5c1-523022d5fea9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Web Service Method - Consumed

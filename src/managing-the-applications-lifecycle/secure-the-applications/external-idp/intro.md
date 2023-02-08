@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 595C5E6F-7C59-4314-9BDE-4EF1400A670F
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # IT Users Integration with External IdP via OpenId Connect

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: DA5BA9CA-066E-49E2-92C8-674CB644C370
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configuring Microsoft Azure AD authentication

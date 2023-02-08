@@ -3,6 +3,7 @@ summary: Use deployment plans to take changes done in applications from one envi
 locale: en-us
 guid: 13e13cb8-e058-4235-bead-06410a2b8c7d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Deployment Plans

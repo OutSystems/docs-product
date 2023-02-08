@@ -3,6 +3,7 @@ summary: Learn how to solve the situation of an application that depends on func
 locale: en-us
 guid: cb9abf07-67bd-427a-b9c6-4c4b608f4980
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Repair Deployed Applications

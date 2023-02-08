@@ -4,6 +4,7 @@ helpids: 9002
 locale: en-us
 guid: a77df642-bdb0-4789-8b7f-2f5dbe74e999
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # SQL

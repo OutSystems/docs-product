@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: 8734c248-e81d-4d5b-a3a2-323a0373c188
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Android Support Library Versions for MABS

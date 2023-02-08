@@ -4,6 +4,7 @@ tags: support-webapps
 locale: en-us
 guid: 15a9d0fc-aef0-4d69-bfaa-edeefbecad36
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use a For Each to Iterate a List

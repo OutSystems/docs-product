@@ -4,6 +4,7 @@ summary: Submenu is used to create a menu contained within another menu.
 locale: en-us
 guid: a4d2d0a7-47cf-4816-a3a4-c0861a5b59d7
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Submenu

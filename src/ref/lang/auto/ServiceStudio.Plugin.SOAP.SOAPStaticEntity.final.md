@@ -4,6 +4,7 @@ helpids: -1
 locale: en-us
 guid: 6d4ae983-ef46-42d6-a080-89084a034d14
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Static Entity - Consumed SOAP

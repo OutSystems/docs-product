@@ -4,6 +4,7 @@ tags: runtime-mobile; support-mobile
 locale: en-us
 guid: f33d65af-6f6e-4425-9db3-7c8a206a71c3
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Generate and Publish Your Mobile App to the Mobile App Stores

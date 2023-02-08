@@ -4,6 +4,7 @@ summary: Learn how to request a synchonization between the probe and AI Mentor S
 locale: en-us
 guid: b67d9ffc-b28f-4e00-8ffc-6544f9d66812
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to request a synchronization

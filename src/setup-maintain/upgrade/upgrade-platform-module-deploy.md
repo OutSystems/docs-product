@@ -4,6 +4,7 @@ tags: support-devOps; support-upgrade
 locale: en-us
 guid: 510C5CED-6AC6-4FD1-B26F-02BAEDF8E3DD
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Modules deployment step during Platform Server upgrade

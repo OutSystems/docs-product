@@ -4,6 +4,7 @@ summary: Learn how to set up the users governance model in Workflow Builder.
 guid: b0e9d928-403a-4d65-b5bc-c945f78b8436
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to set up the users governance model

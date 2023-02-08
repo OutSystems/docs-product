@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 0eb3292f-592a-4301-a9ee-7ac3c598e70a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Variable Error

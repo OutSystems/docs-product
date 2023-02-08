@@ -5,6 +5,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 3d3bc1b9-9937-4e08-b4ce-f935022fc6dc
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Table Widget

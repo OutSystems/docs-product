@@ -4,6 +4,7 @@ tags: support-Installation_Configuration; support-Installation_Configuration-ove
 locale: en-us
 guid: 7c953aae-e0ef-4034-afcf-84960d18ad3b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configuration Tool Command Line Reference

@@ -3,6 +3,7 @@ summary: In the Cache tab you define the configuration settings of the Cache Inv
 locale: en-us
 guid: f224026f-76d6-4b2b-b750-a0d2f52f609a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Cache Tab

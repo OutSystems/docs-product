@@ -2,6 +2,7 @@
 locale: en-us
 guid: 0da9d6af-49d3-4ddf-a728-5984516ccf04
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Environment Fault Error

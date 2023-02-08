@@ -2,6 +2,7 @@
 locale: en-us
 guid: a2b93961-e935-4710-9afe-8727e23b0b99
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Miscellaneous

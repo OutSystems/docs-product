@@ -4,6 +4,7 @@ tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: e4525653-9e57-4bb3-8426-a74a898addd0
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Multilingual Web Applications

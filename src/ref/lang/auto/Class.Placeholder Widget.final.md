@@ -6,6 +6,7 @@ tags: outsystems-designing-screens; reference; designing-screens; placeholder-wi
 locale: en-us
 guid: 5d21e0a3-fe0a-40cd-827b-a2a1ea1aa5ac
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Placeholder Widget

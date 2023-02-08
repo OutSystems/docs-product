@@ -2,6 +2,7 @@
 locale: en-us
 guid: 286230b7-c011-42bd-9923-7b3ef0a4abbc
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Image Error

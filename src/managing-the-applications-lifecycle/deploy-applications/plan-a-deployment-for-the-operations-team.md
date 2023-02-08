@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: 89d88d9f-f70a-491a-9265-e02c5b93b85a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Plan a Deployment for the Operations Team

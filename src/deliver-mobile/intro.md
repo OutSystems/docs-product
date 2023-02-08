@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps; supp
 locale: en-us
 guid: b6da547f-4ef6-4bd3-bffc-365d5630da64
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Delivering Mobile Apps

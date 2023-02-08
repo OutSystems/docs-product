@@ -2,6 +2,7 @@
 locale: en-us
 guid: 16bec1bb-e5d0-4920-823c-278166f38a8f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Database Integrity Suggestion Warning

@@ -4,6 +4,7 @@ tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: fcef1ee7-5f7d-4c00-a92c-14f0a0039ac0
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Send an Email From a Web Application

@@ -4,6 +4,7 @@ helpids: -1
 locale: en-us
 guid: ef21f07a-0b80-4be3-84c6-e99bcc2093ef
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Cell Widget

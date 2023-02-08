@@ -4,6 +4,7 @@ summary: The Notification UI Pattern is a contextual short message that provides
 locale: en-us
 guid: 90ae661d-b0d0-4001-b2b1-efe5c50bb056
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Notification

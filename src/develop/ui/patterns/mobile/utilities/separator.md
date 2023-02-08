@@ -4,6 +4,7 @@ summary: Separator distributes content into clear groups and ease visual organiz
 locale: en-us
 guid: 0799a5eb-d6c4-4708-9a2a-895a2434613e
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Separator

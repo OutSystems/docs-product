@@ -4,6 +4,7 @@ summary: The Toggle Button UI Pattern prompts end users to choose between two st
 locale: en-us
 guid: 77270b71-d3f8-4ae7-93a2-92dd501e7d21
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Toggle Button

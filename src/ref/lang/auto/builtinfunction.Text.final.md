@@ -2,6 +2,7 @@
 locale: en-us
 guid: 6ebdb9db-f7cd-44bd-a2c8-48fa22272dba
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Text

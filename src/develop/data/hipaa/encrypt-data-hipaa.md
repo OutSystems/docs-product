@@ -3,6 +3,7 @@ summary: Learn how to implement decryption in your apps while ensuring HIPAA com
 locale: en-us
 guid: 4b9ff75f-4e89-4a94-85bc-f6c7c3cc3f9c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Encrypting data for HIPAA compliance

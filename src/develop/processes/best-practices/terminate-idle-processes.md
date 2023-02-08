@@ -2,6 +2,7 @@
 locale: en-us
 guid: 129863e4-4a6a-4315-8954-d07138692d0c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Terminate Idle Processes

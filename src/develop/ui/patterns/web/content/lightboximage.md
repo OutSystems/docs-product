@@ -4,6 +4,7 @@ summary: Light Box Image displays an image thumbnail that is clicked to open a f
 locale: en-us
 guid: 615116df-3bdc-4500-9451-9815ef342240
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Light Box Image

@@ -4,6 +4,7 @@ helpids: 15007, 30102
 locale: en-us
 guid: 459c47a3-0744-4ec6-85b0-af67b81d16d6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Structure - Deprecated SOAP

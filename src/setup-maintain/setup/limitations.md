@@ -3,6 +3,7 @@ summary: Features currently unavailable in the cross-platform Service Studio.
 app_type: traditional web apps, mobile apps, reactive web apps
 guid: 7f64b9e0-7746-416e-b32d-c770f1322f02
 locale: en-us
+platform-version: o11
 ---
 # Features currently unavailable in the cross-platform Service Studio
 

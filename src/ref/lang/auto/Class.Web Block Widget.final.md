@@ -5,6 +5,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 4160f6d7-1bcd-4299-80b7-5ccd8bbc42d2
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Web Block Widget

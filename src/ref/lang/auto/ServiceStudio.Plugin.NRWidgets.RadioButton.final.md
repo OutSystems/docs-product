@@ -6,6 +6,7 @@ tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; des
 locale: en-us
 guid: 9db2cbf8-bc7e-41b7-a94e-9be56ff81f3c
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Radio Button

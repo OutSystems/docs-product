@@ -4,6 +4,7 @@ helpids: 0
 locale: en-us
 guid: 6cabc6e6-e10d-4777-96ef-894020476cd1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Refresh Data

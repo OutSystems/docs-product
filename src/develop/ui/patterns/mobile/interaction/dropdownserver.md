@@ -4,6 +4,7 @@ summary: The Dropdown Server Side UI Pattern offers a choice of available option
 locale: en-us
 guid: 8B9A073C-74E8-4019-84DE-C686AAFAC59A
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Dropdown Server Side

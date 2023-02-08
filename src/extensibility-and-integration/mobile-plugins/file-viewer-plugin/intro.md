@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 8f00b7c4-754a-4afd-86ac-740c255458b1
 app_type: mobile apps
+platform-version: o11
 ---
 
 # File Viewer Plugin

@@ -4,6 +4,7 @@ helpids: 17225
 locale: en-us
 guid: 57616b45-1a96-4752-aa4a-dff3dd159a86
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # REST API

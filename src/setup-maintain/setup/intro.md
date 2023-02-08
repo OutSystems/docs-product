@@ -4,6 +4,7 @@ tags: article-page; support-installation; support-Installation_Configuration-ove
 locale: en-us
 guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Setting Up OutSystems

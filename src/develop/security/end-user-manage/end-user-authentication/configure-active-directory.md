@@ -3,6 +3,7 @@ summary: How to configure Active Directory end user authentication for your appl
 locale: en-us
 guid: b4a590a6-d9e2-4f0a-80c4-d3ac9f3bd14b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure Active Directory authentication

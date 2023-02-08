@@ -4,6 +4,7 @@ tags: support-application_development; runtime-mobile;
 locale: en-us
 guid: ff593156-92ef-4947-86f1-e3d2dfb58908
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Configuring an exit URL for a blocked app

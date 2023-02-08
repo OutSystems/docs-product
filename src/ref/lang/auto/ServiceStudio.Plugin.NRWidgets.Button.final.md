@@ -6,6 +6,7 @@ tags: outsystems-designing-screens; reference; designing-screens; button-widget;
 locale: en-us
 guid: 193110a3-2fa3-45ae-9cdb-ae5ba20a7cef
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Button

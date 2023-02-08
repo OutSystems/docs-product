@@ -3,6 +3,7 @@ summary: OutSystems helps you build applications that have advanced AI and machi
 locale: en-us
 guid: bf9332a9-d068-4c72-9de7-704f085a3156
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Artificial Intelligence

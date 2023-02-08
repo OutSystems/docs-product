@@ -4,6 +4,7 @@ helpids: 17059
 locale: en-us
 guid: a6524deb-a27a-43d3-b958-a22ec97f1f8c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Server Action

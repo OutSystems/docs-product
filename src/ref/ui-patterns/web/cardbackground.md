@@ -4,6 +4,7 @@ summary: Advanced use cases for the Card Background UI Pattern.
 locale: en-us
 guid: 1c3ead1f-e810-47d0-993a-743656d4d4f1
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Card Background Reference

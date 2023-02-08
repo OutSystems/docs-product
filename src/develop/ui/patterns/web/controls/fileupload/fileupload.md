@@ -4,6 +4,7 @@ summary: FileUpload allows the end user to transfer a file or add content to the
 locale: en-us
 guid: 0a5c3fb1-4677-4fe5-bafd-a63eb787adb1
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # File Upload

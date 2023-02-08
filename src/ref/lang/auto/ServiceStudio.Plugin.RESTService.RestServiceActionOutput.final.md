@@ -4,6 +4,7 @@ helpids: 30060
 locale: en-us
 guid: 887a371e-106f-46cc-b419-92d929de0dd1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Output Parameter - REST API Method

@@ -2,6 +2,7 @@
 locale: en-us
 guid: 60fb83ac-27ce-42b4-b803-654731710f4d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Deprecated Implementation

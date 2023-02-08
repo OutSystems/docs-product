@@ -4,6 +4,7 @@ summary: Inline SVG changes fill and stroke properties or animates the SVG paths
 locale: en-us
 guid: e79dc731-c258-4920-8ec4-6d4245cfc24a
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Inline SVG

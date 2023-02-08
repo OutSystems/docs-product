@@ -5,6 +5,7 @@ summary: A Local Variable exists only in the scope of its parent element.
 locale: en-us
 guid: d36d267e-97d6-4a18-ad83-08f8bd1e76a3
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Local Variable

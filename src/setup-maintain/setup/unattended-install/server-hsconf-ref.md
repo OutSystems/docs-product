@@ -4,6 +4,7 @@ tags: support-Installation_Configuration; support-Installation_Configuration-ove
 locale: en-us
 guid: dcc55c5d-8cd5-4850-9e88-fa385badc663
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # server.hsconf Configuration File Reference

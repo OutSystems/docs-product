@@ -4,6 +4,7 @@ tags: support-application_development; runtime-mobile;
 locale: en-us
 guid: bacbf600-bd10-4caf-820a-205c16a58691
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Harden the protection of mobile apps with AppShield

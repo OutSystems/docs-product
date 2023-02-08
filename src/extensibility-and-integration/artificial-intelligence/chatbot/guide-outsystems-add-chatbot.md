@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 4d218bfe-d4ed-474f-bc58-2b4573911a31
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Add a chatbot UI block to your app

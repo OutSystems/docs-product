@@ -4,6 +4,7 @@ tags: runtime-mobileandreactiveweb; support-Security-overview
 locale: en-us
 guid: 74fffe9e-d6fa-4ea9-a8ae-aa7a34a37511
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure App Authentication

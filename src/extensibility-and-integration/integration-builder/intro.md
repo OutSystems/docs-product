@@ -4,6 +4,7 @@ en_title: Integration Builder
 locale: en-us
 guid: 7d1ada04-3931-44d4-9dc1-654ed40f16f2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create connectors with Integration Builder

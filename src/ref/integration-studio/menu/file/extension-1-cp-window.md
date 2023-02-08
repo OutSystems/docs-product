@@ -2,6 +2,7 @@
 locale: en-us
 guid: 7ece2478-a4fe-4f05-8f53-3053d04f30e8
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # 1-Click Publish Window

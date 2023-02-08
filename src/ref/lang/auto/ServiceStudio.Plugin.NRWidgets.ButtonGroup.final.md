@@ -6,6 +6,7 @@ tags: runtime-mobileandreactiveweb;
 locale: en-us
 guid: 018284ce-ede4-43d4-b85b-189b2d5a86ac
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Button Group

@@ -4,6 +4,7 @@ summary: Allow users to input a month of the year.
 locale: en-us
 guid: 81E3194C-9817-4A14-81C5-5E3F3CDDE4E3
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Month Picker

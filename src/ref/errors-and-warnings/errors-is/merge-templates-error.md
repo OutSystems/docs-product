@@ -2,6 +2,7 @@
 locale: en-us
 guid: e57cbb8d-0e91-4934-8226-59778a5f4b13
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Merge Templates Error

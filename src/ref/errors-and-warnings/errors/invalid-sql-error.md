@@ -2,6 +2,7 @@
 locale: en-us
 guid: 87c242a3-2d64-4c38-b1d9-95b761d7290f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid SQL Error

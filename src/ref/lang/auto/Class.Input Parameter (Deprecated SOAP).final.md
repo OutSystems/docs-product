@@ -4,6 +4,7 @@ helpids: 7011, 30100
 locale: en-us
 guid: 33570868-4b24-4ec0-92f5-0d2a93d6bc4d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Input Parameter - Deprecated SOAP

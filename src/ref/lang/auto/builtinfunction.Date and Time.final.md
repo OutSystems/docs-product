@@ -2,6 +2,7 @@
 locale: en-us
 guid: 55fca69d-c374-4057-b2f5-6872d5673d34
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Date and Time

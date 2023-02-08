@@ -4,6 +4,7 @@ tags: support-application_development; support-Application_Troubleshooting; supp
 locale: en-us
 guid: 6ed28129-28b9-4c02-bc06-8faa173e2b54
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Troubleshooting Applications

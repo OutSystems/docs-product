@@ -4,6 +4,7 @@ helpids: 0
 locale: en-us
 guid: 5bbf3ba9-4d58-4cb3-9a6e-3634d2e01c31
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Query Parameter

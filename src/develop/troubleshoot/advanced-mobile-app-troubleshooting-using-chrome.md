@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Application_Troub
 locale: en-us
 guid: 682f52f0-969b-4524-b291-2f73f2f029ce
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Advanced Mobile App Troubleshooting Using Chrome

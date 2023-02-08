@@ -4,6 +4,7 @@ summary: Displays content in a specific set of columns, configurable per device 
 locale: en-us
 guid: 18e4696c-aeb1-4c7f-bb06-40590738797a
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Gallery 

@@ -4,6 +4,7 @@ tags: support-application_development; support-Application_Troubleshooting; supp
 locale: en-us
 guid: 8b6d4c19-e002-4a96-b043-766b1b7e4024
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Troubleshoot the Performance of an Application

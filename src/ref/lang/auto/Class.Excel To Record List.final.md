@@ -5,6 +5,7 @@ summary: Use Excel To Record List when you need to load data from an Excel file 
 locale: en-us
 guid: 65e7dfbe-2def-4858-85fb-adaf71d7c774
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Excel To Record List

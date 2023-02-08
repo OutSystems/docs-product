@@ -4,6 +4,7 @@ helpids: -1
 locale: en-us
 guid: 990d2fb4-4286-477c-9efe-235431ef7833
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Structure Attribute - Consumed SOAP

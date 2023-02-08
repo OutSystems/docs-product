@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle; support-Infrastuture_Architecture
 locale: en-us
 guid: 5db23ee5-6b68-46f6-b6d4-dc771ebd3fcd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Modules and apps in deployment zones

@@ -4,6 +4,7 @@ helpids: 17016
 locale: en-us
 guid: 27d0d6c8-85f1-45aa-adf1-a6333b01c3b9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Process

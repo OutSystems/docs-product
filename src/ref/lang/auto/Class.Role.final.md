@@ -4,6 +4,7 @@ helpids: 15004
 locale: en-us
 guid: 9fc0da79-a220-4620-bcd5-b69331ec3b0c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Role

@@ -4,6 +4,7 @@ summary: Blank Slate informs end users when they start using the application, co
 locale: en-us
 guid: e77f1bd7-6d92-4bdb-b3fe-82f5bd1b2e1b
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Blank Slate

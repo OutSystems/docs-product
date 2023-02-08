@@ -6,6 +6,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 7f80f931-e1ac-4e99-a40e-70b31e30a6ce
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Editable Table Widget

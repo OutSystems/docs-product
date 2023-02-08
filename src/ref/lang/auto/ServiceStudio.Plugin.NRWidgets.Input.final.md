@@ -6,6 +6,7 @@ tags: outsystems-designing-screens; reference; designing-screens; input-widget; 
 locale: en-us
 guid: d3d73598-1309-489b-a15a-2b9d518a8226
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Input

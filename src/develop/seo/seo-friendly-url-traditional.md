@@ -5,6 +5,7 @@ helpids: 30374
 locale: en-us
 guid: 641c106a-d688-42a3-9b73-8fd9791a673b
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # SEO-Friendly URLs for Traditional Web apps

@@ -4,6 +4,7 @@ summary: The Pagination UI Pattern helps users find a specific item on long list
 locale: en-us
 guid: 20819218-aa75-441f-b2e6-6796dc14f1d8
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Pagination

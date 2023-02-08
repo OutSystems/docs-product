@@ -4,6 +4,7 @@ tags: support-Security;
 locale: en-us
 guid: 53e7e31f-233a-4495-8d3c-5f931cb35ccd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create and Use Roles

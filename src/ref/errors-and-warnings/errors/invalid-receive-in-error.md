@@ -2,6 +2,7 @@
 locale: en-us
 guid: 90a4dbc8-4410-4801-87ad-9a93ad6609b0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Receive In Error

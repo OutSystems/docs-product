@@ -4,6 +4,7 @@ summary: The Touch Events UI Pattern enables touch events on a specific widget.
 locale: en-us
 guid: 543a0aea-546e-48ce-92e6-dcc08e9fd2be
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Touch Events

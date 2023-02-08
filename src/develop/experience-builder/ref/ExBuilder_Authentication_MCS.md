@@ -2,6 +2,7 @@
 locale: en-us
 guid: bf5a417a-a13c-4dc4-b9c8-4800c7f324b3
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # ExBuilder_Authentication_MCS

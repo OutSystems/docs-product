@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 3c630499-23ad-4947-9600-ad9392538dd6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # SAP

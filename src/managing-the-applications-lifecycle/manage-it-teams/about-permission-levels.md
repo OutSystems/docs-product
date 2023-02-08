@@ -3,6 +3,7 @@ summary: Learn the OutSystems permissions model.
 locale: en-us
 guid: 5a167254-3be6-44df-93ef-0d801e27efbb
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Understand the Permission Model for IT Users

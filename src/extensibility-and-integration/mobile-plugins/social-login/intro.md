@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: 834dcc40-0b87-4161-bcd0-db32053044c7
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Social login Plugin

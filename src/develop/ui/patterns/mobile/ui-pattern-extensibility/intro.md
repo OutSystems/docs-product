@@ -4,6 +4,7 @@ summary:
 locale: en-us
 guid: E9183915-DC47-4192-ACE3-AE04472EFCB2
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems UI Pattern extensibility

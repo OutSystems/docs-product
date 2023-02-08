@@ -2,6 +2,7 @@
 locale: en-us
 guid: 8e3aa9ec-bcb4-4d64-b16c-1a0a77110b8b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Open Redirect Warning

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: fcc67384-67da-41a3-b52b-e2491db85b0c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Integrate with an external database using Integration Builder

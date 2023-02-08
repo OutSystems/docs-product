@@ -2,6 +2,7 @@
 locale: en-us
 guid: ce9a0af3-a200-48eb-a9de-46dfb212d35f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Built-in Functions

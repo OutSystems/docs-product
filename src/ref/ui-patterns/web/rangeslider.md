@@ -4,6 +4,7 @@ summary: Advanced use cases for the Range Slider UI Pattern.
 locale: en-us
 guid: 6b1ad133-79fa-4894-8d51-26e0c33f8f39
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Range Slider Reference

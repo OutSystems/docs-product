@@ -4,6 +4,7 @@ summary: Panel groups short pieces of information in small blocks and highlights
 locale: en-us
 guid: 8cbeefba-ff0a-4f0f-a9ef-eccd63af568b
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Panel

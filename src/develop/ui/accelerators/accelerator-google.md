@@ -4,6 +4,7 @@ summary:
 locale: en-us
 guid: 18f3d63b-831f-429c-aac1-7bf9ca65e58a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Login with Google Accelerator

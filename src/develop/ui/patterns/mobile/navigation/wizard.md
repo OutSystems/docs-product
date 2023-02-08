@@ -4,6 +4,7 @@ summary: Wizard splits complex tasks and process into steps.
 locale: en-us
 guid: 133fb7c1-4365-4a44-85d0-a81abe22458e
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Wizard

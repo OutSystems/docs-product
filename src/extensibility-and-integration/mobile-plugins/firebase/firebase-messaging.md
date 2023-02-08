@@ -4,6 +4,7 @@ tags: article-page; runtime-mobile; support-application_development; support-Mob
 locale: en-us
 guid: a941e1f8-94f8-400c-8e44-fa969cce59d8
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Firebase Cloud Messaging Plugin

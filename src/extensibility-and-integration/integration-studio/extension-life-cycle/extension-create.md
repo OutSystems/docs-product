@@ -2,6 +2,7 @@
 locale: en-us
 guid: c3a15acb-2ada-4d0b-93f8-e897e74752fb
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create an Extension

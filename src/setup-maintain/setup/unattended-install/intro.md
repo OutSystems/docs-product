@@ -4,6 +4,7 @@ tags: article-page; support-Installation_Configuration; support-Installation_Con
 locale: en-us
 guid: 4f39d91e-bc2f-4eac-a4ca-b8c660d97d0e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Unattended Installation and Upgrade

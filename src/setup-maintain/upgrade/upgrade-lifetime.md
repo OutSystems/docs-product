@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 1dd579f8-20ca-4af9-89fa-40697272f8bc
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # Upgrade LifeTime management console
 

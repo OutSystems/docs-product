@@ -4,6 +4,7 @@ helpids: 1011
 locale: en-us
 guid: d3a9dc9a-5e49-43c2-9d77-fc4e9f1778a8
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Mobile Module

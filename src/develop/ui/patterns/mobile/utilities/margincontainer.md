@@ -4,6 +4,7 @@ summary: Use the Margin Container and easily add symmetrical padding around a co
 locale: en-us
 guid: 8099782f-c5ac-4a8f-a70a-fa9946d834a3
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Margin Container

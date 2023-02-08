@@ -4,6 +4,7 @@ summary: Learn how AI Mentor Studio calculates and displays the technical debt o
 locale: en-us
 guid: 521CF7BD-3CE7-4448-8DDE-B5A751B08B82
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How AI Mentor Studio calculates and shows technical debt

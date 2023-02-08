@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 312AB9E8-0BED-4552-9A4F-DE948ED9A20B
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Setup and maintain your OutSystems infrastructure

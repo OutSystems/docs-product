@@ -6,6 +6,7 @@ helpids: 30075
 locale: en-us
 guid: a8b45f04-a2a6-459a-817a-308e933b9d71
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Button Group Item

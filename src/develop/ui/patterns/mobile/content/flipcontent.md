@@ -4,6 +4,7 @@ tags: runtime-mobileandreactiveweb;
 locale: en-us
 guid: 714b1496-4c20-47fd-afcb-a0f2007ad984
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Flip Content

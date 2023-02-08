@@ -2,6 +2,7 @@
 locale: en-us
 guid: ea9128f4-23b8-4eb6-9e6e-c9970f610634
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Design Processes with Small Flows

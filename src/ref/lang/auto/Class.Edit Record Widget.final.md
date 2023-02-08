@@ -5,6 +5,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 74eded7e-7771-4b79-80bd-b047640728e2
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Edit Record Widget

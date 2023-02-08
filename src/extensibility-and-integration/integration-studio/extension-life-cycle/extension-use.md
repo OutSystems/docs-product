@@ -2,6 +2,7 @@
 locale: en-us
 guid: 7fe4a4ad-7c65-4fce-9c54-8720bede33b1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use the Extension in a Module

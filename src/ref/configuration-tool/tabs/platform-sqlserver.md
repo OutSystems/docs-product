@@ -3,6 +3,7 @@ summary: Platform tab showing specific configuration settings for the Azure SQL 
 locale: en-us
 guid: 50bd26cf-d24f-4027-b172-46a02e30c0d6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Platform Tab in Azure SQL Database / SQL Server database

@@ -4,6 +4,7 @@ summary: Section separates content into groups, easing visual organization.
 locale: en-us
 guid: 838dea96-eace-422c-8430-3a86522d2449
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Section

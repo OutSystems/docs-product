@@ -4,6 +4,7 @@ helpids: 0, 17140
 locale: en-us
 guid: f2ef48f5-3cab-43e9-b6af-cd355e10abab
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Mobile Theme

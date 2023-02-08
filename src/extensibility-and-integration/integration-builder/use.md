@@ -4,6 +4,7 @@ tags: article-page
 locale: en-us
 guid: 6c59c61d-f34b-4ef4-8875-0ea760341cd5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use Integration Builder

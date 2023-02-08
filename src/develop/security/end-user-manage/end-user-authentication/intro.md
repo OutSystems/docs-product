@@ -4,6 +4,7 @@ tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: eaa92f05-a00d-4e75-a937-8c100b81d6df
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # End Users Authentication

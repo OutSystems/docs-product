@@ -4,6 +4,7 @@ tags: article-page
 locale: en-us
 guid: 59f6b703-30bd-4143-8af8-aac2f6e82ae0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Infrastructure architecture and deployment options

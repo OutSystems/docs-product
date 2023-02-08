@@ -4,6 +4,7 @@ tags: support-Application_Troubleshooting; support-webapps
 locale: en-us
 guid: aa97807f-3db5-4d86-a746-7fe2506481a6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Exception Handling Mechanism

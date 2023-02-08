@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: b477089c-5ad9-4310-9978-a7367e20e7de
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Action Flow Error

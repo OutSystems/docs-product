@@ -4,6 +4,7 @@ tags: support-application_development; support-Database;
 locale: en-us
 guid: c1c2a735-0768-4e33-8e42-73329e7944ae
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Fetch and display data from the database in OutSystems

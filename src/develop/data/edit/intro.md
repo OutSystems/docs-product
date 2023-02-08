@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: ebbc32e6-d57f-43c2-a62b-5ce779c4dad2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Edit data while developing

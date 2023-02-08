@@ -4,6 +4,7 @@ tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: a15c9cd8-b90c-4c9a-aed5-9cfffd0e1b04
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Single Sign-On

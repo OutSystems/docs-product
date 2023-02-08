@@ -4,6 +4,7 @@ tags: support-application_architecture-featured
 locale: en-us
 guid: 9fe307cf-1687-41f6-9a5b-b8f1484f57ee
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use Services to Expose Functionality

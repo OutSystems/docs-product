@@ -2,6 +2,7 @@
 locale: en-us
 guid: c4c94c54-f617-401a-9074-4a9a058761f6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Entities Change Management

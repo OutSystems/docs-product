@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: cc8e619d-18de-4b4a-a62a-d4058ce5e528
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Data Type Error

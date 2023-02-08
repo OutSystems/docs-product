@@ -2,6 +2,7 @@
 locale: en-us
 guid: cd6419c6-8176-4cba-8788-49eee2196c4a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Request Format Error

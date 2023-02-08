@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: eaf6fefe-684a-42aa-b27f-a3ab234e8aac
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # High availability and scalability strategies

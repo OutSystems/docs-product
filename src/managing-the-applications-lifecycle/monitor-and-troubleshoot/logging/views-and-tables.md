@@ -2,6 +2,7 @@
 locale: en-us
 guid: 76cb90a0-8399-4aab-a5de-279278094c1e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # The log tables and views

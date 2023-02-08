@@ -4,6 +4,7 @@ helpids: 0
 locale: en-us
 guid: c5b81b52-09ee-4eb6-be4b-b1854f2be1a2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # End

@@ -4,6 +4,7 @@ helpids: 30064
 locale: en-us
 guid: 1fca3393-4baa-49e0-90d6-5a798e18ff94
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Structure - REST API Callback

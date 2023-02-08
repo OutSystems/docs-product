@@ -4,6 +4,7 @@ helpids: 0
 locale: en-us
 guid: c2a33934-e55d-483c-979d-713835b61f38
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Web Service Method

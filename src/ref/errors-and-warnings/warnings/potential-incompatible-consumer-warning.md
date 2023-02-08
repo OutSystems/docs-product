@@ -2,6 +2,7 @@
 locale: en-us
 guid: 0e28cb64-765b-4e99-816b-54dca99e4c01
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Potential Incompatible Consumer Warning

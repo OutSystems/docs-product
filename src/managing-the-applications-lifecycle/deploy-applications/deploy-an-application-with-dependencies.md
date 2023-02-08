@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: 3bd09323-cb2b-454a-90b7-341f7c47936e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Deploy an Application with Dependencies

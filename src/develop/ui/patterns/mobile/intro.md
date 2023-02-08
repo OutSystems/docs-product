@@ -4,6 +4,7 @@ summary: The list of mobile patterns for fast mobile UI development.
 locale: en-us
 guid: c186083b-0936-47cb-804d-3e5fcad431a0
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Using Mobile and Reactive Patterns

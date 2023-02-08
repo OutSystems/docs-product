@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle; support-Infrastuture_Architecture
 locale: en-us
 guid: eed19a98-c672-43ac-90c9-70b9f33d921a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure an Application to Use a Deployment Zone

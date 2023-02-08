@@ -4,6 +4,7 @@ summary: Advanced use cases for the Date Picker UI Pattern.
 locale: en-us
 guid: 0134e6e2-5319-4f34-9f72-5a137e9971a4
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Date Picker Reference

@@ -4,6 +4,7 @@ summary: Card Background groups short pieces of information and highlights them 
 locale: en-us
 guid: 516d476b-42fc-4ed1-a26c-22b941906121
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Card Background

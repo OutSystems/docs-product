@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: b1d6acd4-90d9-40e2-b650-e954003abd71
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Expression Error

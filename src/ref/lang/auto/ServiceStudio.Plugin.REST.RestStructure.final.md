@@ -4,6 +4,7 @@ helpids: 30057
 locale: en-us
 guid: 87d9f1db-bf3a-40ac-a5a8-562243e035f2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Structure - REST API Method

@@ -3,6 +3,7 @@ summary: Use output parameters to your process activity to return information to
 locale: en-us
 guid: 88f8d860-47a8-4529-b137-e3d7e832b5b7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # About Output Parameters in a Process Flow

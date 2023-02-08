@@ -4,6 +4,7 @@ summary: Frequently Asked Questions about Workflow Builder.
 guid: d6e18346-5ecc-4178-9bf2-15e82ff891f6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Workflow Builder FAQs

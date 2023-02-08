@@ -4,6 +4,7 @@ tags: support-devOps; support-upgrade
 locale: en-us
 guid: 617e2ef6-9fca-4cf0-9840-a0277670083e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Upgrade OutSystems platform

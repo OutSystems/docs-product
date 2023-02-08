@@ -2,6 +2,7 @@
 locale: en-us
 guid: b41e47d0-4d8d-4c37-84fb-b49af5783548
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Impact of Changing Parameters

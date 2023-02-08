@@ -4,6 +4,7 @@ summary: Troubleshoot Workflow Builder.
 guid: 33571f0b-996f-47e8-ac9d-e43cbc98c2e4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Troubleshooting Workflow Builder

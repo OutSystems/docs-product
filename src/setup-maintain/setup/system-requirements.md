@@ -4,6 +4,7 @@ tags: support-Application_Troubleshooting; support-installation; support-Install
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems system requirements

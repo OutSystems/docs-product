@@ -4,6 +4,7 @@ tags: support-Integrations_Extensions
 locale: en-us
 guid: 68e18433-b490-4ba2-9269-0261f6b656fd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Refresh a SOAP Web Service

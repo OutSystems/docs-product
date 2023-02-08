@@ -2,6 +2,7 @@
 locale: en-us
 guid: 2f28086f-7a1a-4330-88d0-061e601593b9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Salesforce integration

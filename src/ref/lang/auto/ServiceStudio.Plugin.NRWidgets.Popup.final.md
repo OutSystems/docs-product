@@ -6,6 +6,7 @@ tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; des
 locale: en-us
 guid: 8815652b-3b2f-47ee-81be-f58165e33a8c
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Popup

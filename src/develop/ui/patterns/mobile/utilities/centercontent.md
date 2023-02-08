@@ -4,6 +4,7 @@ summary: Use the Center Content pattern to align the content to the center of it
 locale: en-us
 guid: 050c3c6c-4147-474f-b78b-eb143ef5ebb8
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Center Content

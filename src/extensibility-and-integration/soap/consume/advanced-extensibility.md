@@ -2,6 +2,7 @@
 locale: en-us
 guid: 74906504-7e14-40cd-8a55-221155e073a7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use Advanced Extensibility

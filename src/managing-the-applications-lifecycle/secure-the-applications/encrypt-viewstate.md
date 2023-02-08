@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: a07b13f4-d8a9-4d32-8c52-57544422ce46
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Encrypt web apps view state

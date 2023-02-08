@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle; support-Installation_Configuration; version
 locale: en-us
 guid: 581ba434-6216-4005-8974-44c44285d933
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure the infrastructure management console

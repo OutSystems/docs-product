@@ -5,6 +5,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 5f9dcef2-c781-41b5-bc68-914d4cdaec29
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Radio Button Widget

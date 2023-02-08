@@ -2,6 +2,7 @@
 locale: en-us
 guid: b28e1b36-ce34-4cae-b7e9-75fa23cb70ec
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Expression Overflow error

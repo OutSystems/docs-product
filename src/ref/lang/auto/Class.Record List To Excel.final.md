@@ -4,6 +4,7 @@ helpids: 10002
 locale: en-us
 guid: d1e3abef-bbf3-4455-87b2-3c19acc594bb
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Record List To Excel

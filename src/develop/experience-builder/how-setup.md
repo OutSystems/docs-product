@@ -4,6 +4,7 @@ summary: Learn how to set up Experience Builder.
 locale: en-us
 guid: 0d73e561-eeae-4755-af4c-eb4a6a92f6df
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # How to set up Experience Builder
 

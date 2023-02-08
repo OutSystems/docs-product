@@ -4,6 +4,7 @@ summary: Selecting when to build case management apps with the Case Management f
 guid: 464c3478-171b-4f7f-bad6-2e11c4252e5b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # Create case management and workflow apps
 

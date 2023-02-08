@@ -6,6 +6,7 @@ tags: outsystems-designing-screens; reference; designing-screens; label; text-la
 locale: en-us
 guid: 58db2c1b-53a2-48ef-b635-9f7e1f762b65
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Label

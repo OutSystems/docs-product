@@ -4,6 +4,7 @@ summary:
 locale: en-us
 guid: 6265028A-3331-417B-80BC-3E91A1E7B12C
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Provider client actions

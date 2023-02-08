@@ -2,6 +2,7 @@
 locale: en-us
 guid: d508b2f0-f667-4a03-8117-20292875c195
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Service Studio Shortcuts

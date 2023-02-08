@@ -4,6 +4,7 @@ tags: support-Installation_Configuration
 locale: en-us
 guid: 34e53ab0-1ab2-429a-81c0-dd29cf99a549
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure your OutSystems environment

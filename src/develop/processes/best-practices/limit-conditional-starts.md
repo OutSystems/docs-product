@@ -2,6 +2,7 @@
 locale: en-us
 guid: 812f03f1-00fa-4d03-b4af-7b7e580a5fc5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Limit the Use of Conditional Starts

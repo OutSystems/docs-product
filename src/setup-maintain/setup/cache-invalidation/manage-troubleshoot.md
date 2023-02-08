@@ -4,6 +4,7 @@ tags: version-11
 locale: en-us
 guid: 4b06ed06-572c-48c9-835c-f38db745052c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Troubleshoot OutSystems cache invalidation service

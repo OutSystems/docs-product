@@ -4,6 +4,7 @@ tags: runtime-mobileandreactiveweb; support-application_development; support-App
 locale: en-us
 guid: 9205fe77-5e90-402b-ba73-45cdc745515a
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Screen and Block Lifecycle Events

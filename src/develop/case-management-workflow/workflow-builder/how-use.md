@@ -4,6 +4,7 @@ summary: Learn how to use Workflow Builder.
 guid: 2168edce-7134-45ba-8219-a46c2a26f131
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Using Workflow Builder

@@ -4,6 +4,7 @@ tags: article-page; support-application_development; support-Application_Lifecyc
 locale: en-us
 guid: FDBC3311-C94C-4C9C-8CC1-E7F26FC76F02
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # AI Mentor Studio API authentication

@@ -2,6 +2,7 @@
 locale: en-us
 guid: 7fa65fdc-8d24-4c0b-afba-67d556a0bbf9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Outdated Subscriber Warning

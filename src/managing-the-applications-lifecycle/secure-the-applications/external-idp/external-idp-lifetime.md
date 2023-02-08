@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 1730AE44-3570-4CA9-81BE-032CCF2D12B5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configuring LifeTime authentication

@@ -4,6 +4,7 @@ helpids: 7001
 locale: en-us
 guid: 493e43c0-c626-4ffd-8a99-161132b90261
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Assign

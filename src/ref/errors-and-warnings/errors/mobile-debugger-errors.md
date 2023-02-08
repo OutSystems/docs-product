@@ -2,6 +2,7 @@
 locale: en-us
 guid: 960f029e-c1fc-444c-bb46-ac92fdda5916
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Mobile Debugger Related Errors

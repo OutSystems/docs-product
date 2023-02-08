@@ -4,6 +4,7 @@ summary: Floating Actions displays an action that floats in the bottom right cor
 locale: en-us
 guid: 2d4b31df-c2f5-46c6-945b-8fd711f22542
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Floating Actions

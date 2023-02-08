@@ -4,6 +4,7 @@ summary: Advanced use cases for the Tabs UI Pattern.
 locale: en-us
 guid: 1acd4b94-2c08-48ab-9ad6-9c64bcf4d5de
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Tabs Reference

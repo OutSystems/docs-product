@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: ade87f50-8404-4392-88d0-e33397418fe9
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Extend your Traditional Web App using JavaScript

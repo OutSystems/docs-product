@@ -4,6 +4,7 @@ summary: Range Slider gives the end users an option to select a value within a c
 locale: en-us
 guid: 7e929fe3-3027-4324-9b2a-a7d10e9fe4c6
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Range Slider

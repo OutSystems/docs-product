@@ -3,6 +3,7 @@ summary: How to add support for Message Transmission Optimization Mechanism (MTO
 locale: en-us
 guid: 37ee4b4e-0cfb-471e-aa97-6fb0bb427ff4
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use MTOM

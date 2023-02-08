@@ -4,6 +4,7 @@ tags: support-Front_end_Development; support-webapps-featured; runtime-tradition
 locale: en-us
 guid: cf447891-96c9-41a7-b624-455c180d4002
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Use Ajax to Refresh Part of a Screen

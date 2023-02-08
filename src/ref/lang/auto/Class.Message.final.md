@@ -6,6 +6,7 @@ tags: runtime-mobileandreactiveweb;
 locale: en-us
 guid: 70ed4ea2-9f23-4c19-b322-11255785072c
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Message

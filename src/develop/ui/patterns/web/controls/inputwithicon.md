@@ -4,6 +4,7 @@ summary: Input with Icon allows the end user to input data with the help of a hi
 locale: en-us
 guid: 28c2a35c-1fad-450b-bb5f-a31926f49c1a
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Input with Icon

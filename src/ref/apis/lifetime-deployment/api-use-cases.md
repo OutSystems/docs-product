@@ -3,6 +3,7 @@ summary: Learn how to perform common tasks using the LifeTime API.
 locale: en-us
 guid: dcf82210-2b59-420c-9014-81f80f0d907a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # LifeTime API Examples

@@ -3,6 +3,7 @@ summary: Handle the impact on modifications to elements that are being reused be
 locale: en-us
 guid: 359c1979-6708-47f4-a628-4f66bb4ef56d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Handle Changes in Exposed Functionality

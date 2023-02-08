@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 0897286f-5a9a-480b-992f-1855920b9ed1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Old Producer Error

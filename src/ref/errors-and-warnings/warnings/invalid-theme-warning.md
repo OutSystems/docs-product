@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 0b9c59a1-505b-4139-9567-c0f219b62ac8
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Theme Warning

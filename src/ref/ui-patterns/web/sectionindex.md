@@ -4,6 +4,7 @@ summary: Advanced use cases for the Section Index UI Pattern.
 locale: en-us
 guid: fd1fc012-8659-4cd2-861e-220cfa3090ec
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Section Index Reference

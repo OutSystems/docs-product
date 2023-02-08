@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: 26530521-14df-4bb6-82d4-e087f6566a05
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Read/Write Data One-to-Many

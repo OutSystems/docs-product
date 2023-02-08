@@ -4,6 +4,7 @@ tags: support-Security-overview
 locale: en-us
 guid: a152ecbb-2419-489f-87c5-000918d502f0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Enforce HTTPS Security

@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: d97b99fb-75a2-453c-a20d-d4270e09c8ed
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Tag a Version

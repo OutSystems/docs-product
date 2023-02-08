@@ -4,6 +4,7 @@ helpids: 0
 locale: en-us
 guid: 2e8ca3cb-cfae-41a3-bbd0-c6b14ca14258
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Event

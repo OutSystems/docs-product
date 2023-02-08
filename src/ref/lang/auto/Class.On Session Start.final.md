@@ -5,6 +5,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 6b2deaab-c532-4326-9934-c042c42271de
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # On Session Start

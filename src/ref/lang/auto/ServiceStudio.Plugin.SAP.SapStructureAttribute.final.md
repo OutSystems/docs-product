@@ -4,6 +4,7 @@ helpids: 30073
 locale: en-us
 guid: b2bb3ce3-6403-4a1a-80d9-c5d34e509048
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Structure Attribute - SAP Remote Function

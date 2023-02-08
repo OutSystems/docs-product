@@ -5,6 +5,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 5f5a5642-dccc-4d7b-beea-773622e175c1
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Header Row Widget

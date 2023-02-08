@@ -2,6 +2,7 @@
 locale: en-us
 guid: f4d76631-b342-403c-bbfc-516c9b53f250
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Email

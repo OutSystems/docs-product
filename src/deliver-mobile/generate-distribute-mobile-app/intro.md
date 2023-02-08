@@ -4,6 +4,7 @@ tags: runtime-mobile, article-page
 locale: en-us
 guid: 1aacc771-f914-4f95-889a-31f1dde06a38
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Generate and Distribute Your Mobile App

@@ -4,6 +4,7 @@ helpids: 0
 locale: en-us
 guid: 76f416af-ffea-48be-aa8c-417d130d33d5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # ReferenceFlowExceptionHandlingFlow

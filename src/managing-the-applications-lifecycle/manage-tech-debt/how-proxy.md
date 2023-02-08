@@ -4,6 +4,7 @@ summary: Learn how to use a forward proxy while connecting from the AI Mentor St
 locale: en-us
 guid: 06af3d66-f6c3-4827-aa17-36b1124f321b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to use a proxy to connect to AI Mentor Studio

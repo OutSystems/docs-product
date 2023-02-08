@@ -4,6 +4,7 @@ helpids: 4011, 0
 locale: en-us
 guid: ca24e447-f946-4dd9-87d7-664e6d6ed848
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Screen

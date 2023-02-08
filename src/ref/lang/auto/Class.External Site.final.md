@@ -4,6 +4,7 @@ helpids: 1003
 locale: en-us
 guid: 45080b5d-e942-4a12-935b-ac0db428c0e2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # External Site

@@ -4,6 +4,7 @@ summary: Bullets break up large blocks of text into smaller points that are easi
 locale: en-us
 guid: 0028c775-3531-4d78-b693-124fb9f1c70e
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Bullets

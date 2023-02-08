@@ -2,6 +2,7 @@
 locale: en-us
 guid: a3d00b4b-8f79-4136-9b52-bc9052faaa8d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Roles

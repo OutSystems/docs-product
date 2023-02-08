@@ -4,6 +4,7 @@ tags: support-Infrastuture_Architecture; support-maintenance
 locale: en-us
 guid: 525adee0-1259-458e-bc2d-b1f1d178a832
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Balanced application deployment

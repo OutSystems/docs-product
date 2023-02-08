@@ -4,6 +4,7 @@ tags: support-Database
 locale: en-us
 guid: d1757e12-d324-45d9-b019-992a4547af24
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Database Indexes

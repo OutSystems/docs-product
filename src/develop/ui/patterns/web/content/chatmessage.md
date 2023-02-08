@@ -4,6 +4,7 @@ summary: Chat Message displays conversation posts in notifications or chat scree
 locale: en-us
 guid: 2ee63ee6-02cf-4a5a-a348-92e5b46b3946
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Chat Message

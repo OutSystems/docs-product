@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: c9733003-eb20-49b3-93af-47e313315e30
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create AI-powered chatbots 

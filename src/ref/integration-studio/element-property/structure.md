@@ -2,6 +2,7 @@
 locale: en-us
 guid: b4ed741a-bff5-4277-a115-fafac9e14903
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Structure Properties

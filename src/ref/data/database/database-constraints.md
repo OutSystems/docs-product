@@ -3,6 +3,7 @@ tags: support-Database
 locale: en-us
 guid: dcf4b1f6-3561-4cf7-b2ee-4b0caca4130b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Database Constraints

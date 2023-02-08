@@ -120,12 +120,12 @@ Here is the reference of the actions you can use from the plugin. Camera Plugin 
 | ------------------------ | --------------------------------------------- | ---------------- |
 | **CheckCameraPlugin**    | Checks if the plugin is available in the app. | Yes*             |
 | **TakePicture**          | Opens the camera on the user device.          | Yes*             |
-| **ChooseGalleryPicture** | Opens the gallery on the user device.         | No**             |
-| **EditPicture**          | Opens an edit interface to edit the picture.  | No**             |
+| **ChooseGalleryPicture** | Opens the gallery on the user device.         | Yes             |
+| **EditPicture**          | Opens an edit interface to edit the picture.  | Yes**             |
 
 (*) Camera Plugin works in progressive web apps (PWAs) from version 6.0.0 and later, in **mobile devices only**. See [OutSystems system requirements](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_system_requirements) for more information about the supported devices and browsers versions.
 
-(**) Under development.
+(**) Make sure you import the theme CameraPlugin as a dependency. Keep the theme as a dependency even when the IDE reports it as not used by the app. 
 
 ## Picture options
 
@@ -162,6 +162,14 @@ The table shows the compatibility of the Camera Plugin with the Mobile Apps Buil
 ## Known issues and workarounds
 
 A list of known issues and possible workarounds.
+
+### Taking multiple pictures not working in PWAs
+
+In PWA, taking multiple pictures requires use of the browser stream capabilities. To ensure the app has access to the stream, add the theme **CameraPlugin** as an element to your app. **Keep the theme as dependency even when the IDE reports it as not used by the app**.
+
+### In PWA, taking multiple pictures is not working in some devices
+
+In some devices, the workaround mentioned above shows a defective UI. There is, currently, no workaround to this issue.
 
 ### Crashes on iOS 13.2 and 13.3 
 

@@ -7,7 +7,7 @@ app_type: mobile apps
 platform-version: o11
 ---
 
-# Payments Plugin
+# Payments plugin
 
 <div class="info" markdown="1">
 
@@ -57,11 +57,21 @@ This sample app shows you how to do the following:
 The following steps show how to enable your users to pay with Apple Pay or
 Google Pay:
 
+1. In case you want to use a Payment Service Provider (PSP) to process the payments, configure your account in the provider's dashboard.
+
 1. In Payments Configurator, configure a mobile payment service for your app.
 
-1. In your app, create logic to set up the plugin and to check if payment is possible.
+1. In your app, create logic to set up the plugin and check if payment is possible.
 
 1. In your app, create a button and logic to trigger the payment.
+
+### Configure your account in the provider's dashboard.
+
+Currently, the Payments Plugin only offers an end-to-end experience to process payments with Stripe. For other providers (for example, Adyen, WorldPay), you can configure an account in their dashboard and implement the payment process with the provider on your side.
+
+If you want to create a Stripe account, click [here](https://stripe.com/). After creating your account, you have access to the Stripe Dashboard where you can click the Developers tab. Inside you can find the `publishable key` and `secret key` fields. These fields are necessary to properly process payments using Stripe with the Payments Plugin.
+
+When using the built-in Stripe integration, please note that enabling `PAN_ONLY` capabilities may increase card compatibility, but it's not guaranteed to work with every bank. This is due to the lack of `3DS` support for this configuration.
 
 ### Configure a mobile payment service for your app
 
@@ -91,17 +101,22 @@ add the following information (depending on the provider):
 | Allowed countries to ship (Google Pay only) | The supported countries the merchant ships to. (Google Pay only) |
 | Required contacts for shipping | The shipping contact information that you require from the user to execute the payment (name, email, phone number and postal address). |
 | Required contacts for billing | The billing contact information that you require from the user to execute the payment (name, email, phone number and postal address). |
-| Payment Service Provider (PSP) | The identification of the Payment Service Provider (PSP) that you are going to use to process the payment. (GooglePay only) |
+| Payment Service Provider (PSP) | The identification of the Payment Service Provider (PSP) that you are going to use to process the payment. |
 
 <div class="info" markdown="1">
 
-Notice that the Payment Service Provider in the Payments Configurator is just
-to identify the PSP that you are going to use on your application. You should
-still integrate and configure the Payment Service Provider API that you want to
-use on Service Studio. Don’t forget you need a PSP license for the plugin to
+Notice that the Payment Service Provider in the Payments Configurator identifies the PSP that you are going to use on your application. Should you want to integrate with a PSP other than Stripe then you need
+to integrate and configure the Payment Service Provider API to
+Service Studio. Don’t forget you need a PSP license for the plugin to
 work.
 
 </div>
+
+To process payments with Stripe using an OutSystems implementation:
+
+1. Open the `Payments Configurator` application on Service Studio and navigate to `Logic` > `Integrations` > `REST` > `Stripe`.
+
+1. In the `Basic Authentication` section, fill the `Username` field with the `secret key` you obtained from the Stripe dashboard.
 
 ### Create logic to set up the plugin
 
@@ -165,7 +180,7 @@ the following:
 
 1. Add a **PaymentsPluginConfiguration.json** file in the Resources folder of
    your app (note that the Target Directory parameter of the Resource must be
-   filled with json-config). You shouldn’t edit the generated json file.
+   filled with json-config). You shouldn’t edit the generated JSON file.
 
     ![Screenshot](images/JsonConfig.png)
 
@@ -209,27 +224,33 @@ To trigger the payment on your app's screen, do the following:
    Pay](https://developers.google.com/pay/api/android/guides/ux-best-practices)
    guidelines).
 
-2. For each button you added in the previous step, add an action to handle the
+1. For each button you added in the previous step, add an action to handle the
    **OnClick** event. In the properties of the payment button open the
    **Events** > **OnClick** dropdown and select the
    **New Client Action**.**OnClick** event.
 
     ![Screenshot](images/NewClientAction.png)
 
-3. In the action flow of each action, you created in the previous step, check if
+1. In the action flow of each action, you created in the previous step, check if
    the plugin is working properly during runtime. After the Start node, add the
    **TriggerPayment** action.
 
     ![Screenshot](images/CheckOutOnClick.png)
 
-4. Handle the response from **TriggerPayment**. After **TriggerPayment**, add
+1. Handle the response from **TriggerPayment**. After **TriggerPayment**, add
    an **If** node.
 
-5. In the **False** branch of the **If** node, add a **Message**, set the
-   payment process fails.
+1. In the **False** branch of the **If** node, add a **Message** indicating that the
+   payment process failed.
 
-6. In the **True** branch of the **If**, you can create a logic to redirect for
+1. In the **True** branch of the **If**, you can create a logic to redirect for
    a confirmation screen, as in the sample app.
+
+<div class="info" markdown="1">
+
+Notice that the **TriggerPayment** client action has the optional parameters `PSP`, `ClientID`, and `ClientSecret`. If you want to process payments with Stripe using the Payments Plugin, you should set `PSP` to `Entities.PaymentServiceProvider.Stripe`. Obtain the `ClientID`and `ClientSecret` fields from the Payments Configurator dashboard, inside your app's configuration. Don't pass the `ClientSecret` as a literal to the **TriggerPayment** client action. Instead, it's recommended you save this value securely, by creating an Aggregate to obtain it and pass it to the client action. It's suggested you save the `ClientSecret` in a Site Property. Find more info on Site Properties [here](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Site_Property). Note that if the `PSP` parameter of the **TriggerPayment** client action is set to `Entities.PaymentServiceProvider.None`, no PSP payment processing takes place.
+
+</div>
 
 ## Known issues and workarounds
 

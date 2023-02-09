@@ -77,7 +77,7 @@ In this example, we create a dropdown search for a list of employees. When the u
     1. Add a **Message** to the client action.
     1. Add the following logic to the expression editor:
 
-        `SelectedItem.Text + "(Employee ID: " + SelectedItem.Value + ")`
+        `SelectedOptionList.Current.Label + "(Employee ID: " + SelectedOptionList.Current.Value + ")"`
 
     1. Click **Close**. 
     

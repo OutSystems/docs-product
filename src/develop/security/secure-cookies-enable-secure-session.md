@@ -28,7 +28,7 @@ After installing Factory Configuration, access the application and, in the *Plat
 
 <div class="info" markdown="1">
 
-After you change the settings using Factory Configuration, make sure you **apply new configurations to you environment**.
+After you change the settings using Factory Configuration, make sure you **apply new configurations to your environment**.
 
 </div>
 

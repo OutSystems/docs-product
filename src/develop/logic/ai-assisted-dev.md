@@ -24,7 +24,7 @@ logic](images/ai-flow-service-studio-ss.gif)
 <div class="info" markdown="1">
 
 **Guided Example:** Check how you can [implement logic for a Client Action
-using Code Mentor](ai-create-action.md).
+using Code Mentor](https://extranetinternalapps-prd.outsystems.net/Documentation_UI_Staging/documentation/11/developing_an_application/implement_application_logic/code_mentor_logic_suggestions/create_a_client_action_with_code_mentor/).
 
 </div>
 

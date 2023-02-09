@@ -9,7 +9,7 @@ platform-version: o11
 
 Use this pattern to execute multiple instances of the same flow of activities. It is specially useful in situations where the number of executed instances is only known at runtime.
 
-To execute multiple instances of a flow of activities, either place those activities in a new [Process](../process.md)) or in a flow of a [Conditional Start](../../../ref/lang/auto/Class.Conditional Start.final.md).
+To execute multiple instances of a flow of activities, either place those activities in a new [Process](../process.md)) or in a flow of a [Conditional Start](<../../../ref/lang/auto/Class.Conditional Start.final.md>).
 
 The **advantage** of using a new **Process** is that it **clarifies the structure** of the process and **improves scalability**, even if the number of process instances grows to millions. It also helps you [limit the use of conditional starts](../best-practices/limit-conditional-starts.md).
 

@@ -103,7 +103,7 @@ To create flows templates from scratch, follow these steps:
     Experience Builder interprets an element as an **Exit Point** (the blue circles used by developers to connect flows) when it fulfills the following criteria:
  
     * The element is a [button](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md), a [link](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md), or an [action destination](../../../ref/lang/auto/Class.Destination.final.md) 
-    * The element's **Destination** property is set to an [external site](../../../ref/lang/auto/Class.External Site.final.md) or to a [screen](../../../ref/lang/auto/Class.Screen.final.md) from another flow.
+    * The element's **Destination** property is set to an [external site](<../../../ref/lang/auto/Class.External Site.final.md>) or to a [screen](../../../ref/lang/auto/Class.Screen.final.md) from another flow.
 
         ![Edit exit point metadata](images/edit-exit-point-metadata-ss.png)
 
@@ -138,7 +138,7 @@ To use mobile flows from an existing module, follow these steps:
     Experience Builder interprets an element as an **Exit Point** (the blue circles used by developers to connect flows) when it fulfills the following criteria:
  
     * The element is a [button](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md), a [link](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md), or an [action destination](../../../ref/lang/auto/Class.Destination.final.md) 
-    * The element's **Destination** property is set to an [external site](../../../ref/lang/auto/Class.External Site.final.md) or to a [screen](../../../ref/lang/auto/Class.Screen.final.md) from another flow.
+    * The element's **Destination** property is set to an [external site](<../../../ref/lang/auto/Class.External Site.final.md>) or to a [screen](../../../ref/lang/auto/Class.Screen.final.md) from another flow.
 
         ![Edit exit point metadata](images/edit-exit-point-metadata-ss.png)
 

@@ -24,7 +24,7 @@ logic](images/ai-flow-service-studio-ss.gif)
 <div class="info" markdown="1">
 
 **Guided Example:** Check how you can [implement logic for a Client Action
-using Code Mentor](ai-create-action.md).
+using Code Mentor](ai-create-action.md) .
 
 </div>
 

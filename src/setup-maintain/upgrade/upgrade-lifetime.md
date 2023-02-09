@@ -41,9 +41,9 @@ If you have **LifeTime plugins** deployed in your LifeTime environment or **othe
 * Make the necessary changes in your plugins and integrations before LifeTime upgrade takes place, to ensure that they will work correctly after the upgrade.
 
 <div class="info" markdown="1">
- 
+
 If you are running an OutSystems version that's not supported anymore, you first need to [upgrade to a supported OutSystems version](upgrade-platform.md).
- 
+
 </div>
 
 ## LifeTime upgrade process

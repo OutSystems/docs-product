@@ -49,47 +49,12 @@ In Reactive Web and Mobile apps, the **Abort Transaction** property isn't availa
 
 ## Properties
 
-<table markdown="1">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Mandatory</th>
-<th>Default value</th>
-<th>Observations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td title="Name">Name</td>
-<td>Identifies an element in the scope where it is defined, like a screen, action, or module.</td>
-<td>Yes</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td title="Exception">Exception</td>
-<td>Type of exception to handle.</td>
-<td>Yes</td>
-<td></td>
-<td>There is a call hierarchy for exceptions that determines the error handler behavior. For more info see [Exception Handling Mechanism](../../../develop/logic/exceptions/handling-mechanism.md).</td>
-</tr>
-<tr>
-<td title="Abort Transaction">Abort Transaction</td>
-<td>Set to Yes to abort the transaction and rollback changes.</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>This property is only available in Traditional Web Apps or in a server-side context (for all apps).</td>
-</tr>
-<tr>
-<td title="Log Error">Log Error</td>
-<td>Set to Yes to log an error when the exception occurs.</td>
-<td>Yes</td>
-<td>Yes</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Name | Description | Mandatory | Default value | Observations |
+|---|---|---|---|---|
+| Name | Identifies an element in the scope where it is defined, like a screen, action, or module. | Yes |
+| Exception | Type of exception to handle. | Yes | There is a call hierarchy for exceptions that determines the error handler behavior. For more info see [Exception Handling Mechanism](../../../develop/logic/exceptions/handling-mechanism.md). |
+| Abort Transaction | Set to Yes to abort the transaction and rollback changes. | Yes | Yes | This property is only available in Traditional Web Apps or in a server-side context (for all apps). |
+| Log Error | Set to Yes to log an error when the exception occurs. | Yes | Yes |
 
 ## Runtime Properties
 

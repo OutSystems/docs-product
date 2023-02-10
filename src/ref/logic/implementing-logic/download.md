@@ -11,6 +11,11 @@ Use the Download Tool to send a file to a user. This is an element that ends the
 
 This Tool is available in Reactive Web Apps only.
 
+<div class="info" markdown="1">
+
+This element is processed on the client-side (browser) and it uses the browser's memory to receive the data (from the server) before it creates the file to be downloaded. This may fail depending on the size of the file and on how the browser manages its memory. For very large files (bigger than 250 MB) the likelihood of a failure increases, but the results vary significantly between browsers. The behavior of each browser is not controlled by the OutSystems Platform.
+
+</div>
 
 ## Properties
 
@@ -20,8 +25,3 @@ This Tool is available in Reactive Web Apps only.
 |File Name|Text literal or expression with the name of the file, including the extension.|Yes|||
 
 
-## Remarks
-
-This element is processed on the Client-Side (Browser) and it will use the browser's memory to receive the data (from the server) before it creates the File to be downloaded.
-This may fail depending on the size of the File and on how the browser manages its memory.
-For very large Files (250Mb+) the likelihood of a failure increases, but the results vary significantly between Browsers. The behavior of each browser is not controlled by the OutSystems Platform.

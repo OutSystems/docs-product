@@ -23,7 +23,9 @@ OutSystems classifies registered users according to the following rules:
 Classification rules are configured per environment using Service Center, and you can have different classification rules in different environments. 
 
 <div class="info" markdown="1">
+
 Note that when adding a new environment, all your users are internal by default.
+
 </div>
 
 OutSystems checks for registered [active users](add-delete-users.md#activate-deactivate) when determining the number of Internal/External Users in an environment. Also, user classification in Internal Users or External Users applies only to **Registered Users** (or Named Users). 

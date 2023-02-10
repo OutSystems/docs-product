@@ -115,8 +115,8 @@ To create a new in an app, follow these steps in Service Studio:
 <td title="Splash Screen">Splash Screen</td>
 <td>Splash screen of the application.</td>
 <td></td>
-<td>Common\Splash</td>
-<td></td>
+<td>Common\Splash (for Mobile)</td>
+<td>Having a screen configured will cause all resources associated with the dependencies of the application to be loaded in this screen, regardless if they are used or not.</td>
 </tr>
 <tr>
 <td title="Global Exception Handler">Global Exception Handler</td>

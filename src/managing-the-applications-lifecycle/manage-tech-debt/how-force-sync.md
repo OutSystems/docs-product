@@ -25,8 +25,7 @@ There's a daily limit to the number of unscheduled synchronization requests that
 
 To request an unscheduled synchronization, follow these steps:
 
- 1. Go to the AI Mentor Studio LifeTime plugin (`https://<lifetime_environment>/AIMentorStudioProbe/`) and select **Monitor**.
-
+1. Go to the AI Mentor Studio LifeTime plugin (`https://<lifetime_environment>/AIMentorStudioProbe/`) and select **Monitor**.
 
     ![Select Monitor](images/sync-plugin-monitor-lt.png)
 

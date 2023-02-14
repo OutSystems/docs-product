@@ -750,8 +750,6 @@
         - href: extensibility-and-integration/rest/consume-rest-apis/intro.md
         - topics:
             - href: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
-            - topics:
-                - href: extensibility-and-integration/rest/consume-rest-apis/consume-multipart-form-data.md
             - href: extensibility-and-integration/rest/consume-rest-apis/refresh-rest-service.md
             - href: extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
             - href: extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md
@@ -1142,8 +1140,6 @@
                     - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlowOutput.final.md
                     - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackStructure.final.md
                     - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackStructureAttribute.final.md
-                    - href: ref/extensibility-and-integration/rest-apis/consumed-rest-api/structure-multipart-request.md
-                    - href: ref/extensibility-and-integration/rest-apis/consumed-rest-api/structure-attribute-multipart-request.md
                 # Exposed REST API
                 - href: ref/extensibility-and-integration/rest-apis/exposed-rest-api/intro.md
                 - topics:
@@ -1852,7 +1848,6 @@
                 - href: ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md
                 - href: ref/apis/lifetime-deployment/examples/api-register-env.md
                 - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
-                - href: ref/apis/lifetime-deployment/examples/api-request-code.md
                 
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md

@@ -10,7 +10,7 @@ platform-version: o11
 
 Service Studio can import "enum" (enumerate) elements when consuming REST services. Service Studio represents these elements as Static Entities and each value of the "enum" corresponds to a Static Entity Record.
 
-Importing a REST API in Service Studio can create parameters/properties with Text data type instead of the "enum" defined in the OpenAPI specification file describing the REST API.
+Importing a REST API in Service Studio can create parameters/properties with Text data type instead of the "enum" defined in the Swagger specification file describing the REST API.
 
 Sometimes you can do some small changes to the specification file so that the identified limitations no longer apply, and you can effectively consume the REST API in OutSystems.
 
@@ -23,7 +23,7 @@ The current list of unsupported use cases is the following:
 
 In general, OutSystems supports "enums" in consumed REST services when they're defined inside a "schema" field or referenced using "$ref"; otherwise, they're not currently supported in OutSystems.
 
-In the following sections you can find instructions on adjusting the OpenAPI specification file to work around some currently unsupported use cases.
+In the following sections you can find instructions on adjusting the Swagger specification file to work around some currently unsupported use cases.
 
 ## Enums or array of enums with a type other than Integer or Text { #enum-types }
 

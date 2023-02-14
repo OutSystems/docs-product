@@ -43,16 +43,6 @@ To customize the request before it is sent:
 
 1. Add your own logic to customize the request. 
 
-### Customize the parts of a multipart/form-data request { #multipart}
-
-To customize specific parts of a [multipart/form-data request](consume-multipart-form-data.md) inside the **OnBeforeRequest** callback, such as adding, removing, or editing parts, you can use the **RequestParts** attribute that represents a **RequestPart** list.
-
-![List of HTTPRequest attributes](images/requestparts-ss.png)
-
-The following example shows the logic flow of an **OnBeforeRequest** callback that appends, removes, and edits a part from the request. In this example, we edit the **Request.RequestParts** list. 
-
-![Action flow of the OnBeforeRequest callback](images/requestparts-action-ss.png)
-
 ### Example use case: Adding a header for token-based authentication
 
 Consider a REST API that uses token-based HTTP authentication, requiring consumers to include an authorization token in an HTTP header. After importing this REST API to your OutSystems application, use the "OnBeforeRequest" callback to add a new header with the token.

@@ -77,26 +77,6 @@ To manually update a REST method:
 
 1. Click **Finish**. 
 
-### Manually update a multipart/form-data REST API method
-
-When updating a [multipart/form-data method](consume-multipart-form-data.md), consider the following regarding how parameters specified as lists are represented:
-
-* **Non-binary lists:** since everything is sent in the same part, the **Request Sample** field has its content encapsulated with [].
-
-    ![Request sample with a non-binary list](images/non-binary-list-ss.png)
-
-    The data type is set to **Integer List**:
-
-    ![Data type set to **Integer List**](images/int-list-ss.png)
-
-* **Binary lists or a dynamic number of parts:** There are as many parts as elements in the list. Therefore, the part representing a dynamic number of parts inside the **Request Sample** field has its name encapsulated in {}, since the name of each item of the part will be a variable.
-
-    ![Request sample with a binary list](images/binary-list-ss.png)
-
-    The data type is set to **RequestPart List**:
-
-    ![Data type set to **RequestPart List**](images/requestpart-list-ss.png)
-
 ## Adapt your application to the changes
 
 When you change the definition of the REST API method, OutSystems automatically updates the REST API Method and the associated structures according to your changes:

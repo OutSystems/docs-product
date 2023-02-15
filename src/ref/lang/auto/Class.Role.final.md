@@ -60,7 +60,7 @@ When an exposed Role is checked, it raises an exception under the **transaction*
 </tr>
 <tr>
 <td title="Is Persistent">Is Persistent</td>
-<td>If Yes, the association between the user and the role is stored in the database and is persistent across multiple sessions. If No, the role is only associated with the user for a single session. This property is read-only in mobile apps.</td>
+<td>If set to Yes, the association between the user and the role is stored in the database and is persistent across multiple sessions. If set to No, the role is only associated with the user for a single session. In Reactive Web and Mobile modules, this property is read-only and set to Yes by default.</td>
 <td>Yes</td>
 <td>Yes</td>
 <td></td>

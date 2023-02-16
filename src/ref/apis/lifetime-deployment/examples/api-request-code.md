@@ -22,6 +22,7 @@ The code shared in the API will be as much as possible the same as the one runni
 
 
 ## Prerequisites
+
 * Platform Server version 11.19.0
 * LifeTime version 11.16.0
 * [LifeTime Service Account](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication)
@@ -43,12 +44,10 @@ Read the example API calls (requests and responses) below for each of the presen
 
 We start by calling the API method that returns all the environments available on your infrastructure (only necessary if we don't know the environment key yet):
 
-Request: 
-`GET /lifetimeapi/rest/v2/environments/`
+Request: `GET /lifetimeapi/rest/v2/environments/`
 
 
-Example of the response body:
-
+Response body:
 
 ```
 [
@@ -80,10 +79,10 @@ Example of an environment key: **849515f2-b4ff-4aca-a9d6-9407bea655f4**
 
 Next, we call the API method that returns all the available applications in the infrastructure to get the application key. You can skip this step if you already have the application key. 
 
-Request:
-`GET /lifetimeapi/rest/v2/applications/`
+Request: `GET /lifetimeapi/rest/v2/applications/`
 
 Response body:
+
 ```
 [
   {...},
@@ -119,7 +118,7 @@ We then change the `{EnvironmentKey}` and `{ApplicationKey}` placeholders to the
 `POST /lifetimeapi/rest/v2/environments/849515f2-b4ff-4aca-a9d6-9407bea655f4/applications/c9a7a82e-0eee-4a3d-8e22-2a19c69c766f/sourcecodeaccess`
 
 
-Example response body:
+Response body:
 
 ```
 {
@@ -134,6 +133,7 @@ The request for the platform to package the source code of the application "Empl
 Example package key: **bc354abb-6691-41ee-9ed3-9454747e2d4d**
 
 ## 4 - Check status
+
 We start by taking the API method "template" URL used to get the status of the application source code packaging.
 
 `GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess/{PackageKey}/status`
@@ -182,7 +182,7 @@ We then change the `{EnvironmentKey}`, `{ApplicationKey}` and `{PackageKey}` pla
 
 `GET /lifetimeapi/rest/v2/environments/849515f2-b4ff-4aca-a9d6-9407bea655f4/applications/c9a7a82e-0eee-4a3d-8e22-2a19c69c766f/sourcecodeaccess/bc354abb-6691-41ee-9ed3-9454747e2d4d/download`
 
-Example response body:
+Response body:
 
 ```
 {
@@ -195,6 +195,7 @@ The response contains the link to download the source code package of the applic
 Source Code [Package Link](https://hostname.outsystems.com/lifetimeapi/rest/v2/downloads/f4ee541b-5791-4997-a56d-360d80c24821)
 
 ## 6 - Download package
+
 Use the link obtained from the previous step and get the source code package of the application requested.
 
-If you are unable to download source code of the application, refer to this article. 
+If you are unable to download source code of the application, refer to [this article](https://success.outsystems.com/support/troubleshooting/application_lifecycle/unable_to_download_the_source_code_of_an_application/). 

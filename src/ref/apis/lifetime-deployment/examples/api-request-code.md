@@ -6,11 +6,11 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# Get source code of an application
+# Get the source code of an application
 
 For OutSystems customers security is an important aspect of an application development cycle. A common security best practice recommends that the code should be analyzed statically (SAST).
 
-OutSystems platform provides an API that enables our customers to download the generated code for the current running apps. The source code package returned by the API contains the **server-side code** and the **native code**, if it’s a mobile application.
+OutSystems platform provides an API that enables our customers to download the generated code for the current running apps. The source code package returned by the API contains the server-side code and the native code, if it’s a mobile application.
 
 This will leverage the customers' ability to request the source code of an OutSystems application and run-it against one of the SAST tools they might use in-house.
 
@@ -134,7 +134,7 @@ Example package key: **bc354abb-6691-41ee-9ed3-9454747e2d4d**
 
 ## 4 - Check status
 
-We start by taking the API method "template" URL used to get the status of the application source code packaging.
+We start by taking the API method "template" URL used to get the status of the application source code packaging. Perform the following request:
 
 `GET /environments/{EnvironmentKey}/applications/{ApplicationKey}/sourcecodeaccess/{PackageKey}/status`
 

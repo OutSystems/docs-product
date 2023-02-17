@@ -23,12 +23,17 @@ The code shared in the API will be as much as possible the same as the one runni
 
 ## Prerequisites
 
-* Platform Server version 11.19.0
-* LifeTime version 11.16.0
+To download the source code of an app, ensure that you have the following:
+
+* Environment from where you want to get the source code must comply with the following:
+    * Platform Server version 11.19.0 or higher
+    * Only available on non-production environments
+* LifeTime version 11.16.0 or higher
 * [LifeTime Service Account](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication)
-* Only available on non-production environments
 
  
+## Process Overview 
+
 To request the source code of an application, follow these steps:
 
 1. Get the **environment key** of the environment where you want to request the application source code (move ahead if you already have this information).
@@ -40,12 +45,11 @@ To request the source code of an application, follow these steps:
 
 Read the example API calls (requests and responses) below for each of the presented steps.
 
-## 1 - Get the environment key
+### 1 - Get the environment key
 
 We start by calling the API method that returns all the environments available on your infrastructure (only necessary if we don't know the environment key yet):
 
 Request: `GET /lifetimeapi/rest/v2/environments/`
-
 
 Response body:
 
@@ -75,7 +79,7 @@ Since we want to request the source code of an application in our environment of
 
 Example of an environment key: **849515f2-b4ff-4aca-a9d6-9407bea655f4**
 
-## 2 - Get the application key
+### 2 - Get the application key
 
 Next, we call the API method that returns all the available applications in the infrastructure to get the application key. You can skip this step if you already have the application key. 
 
@@ -106,7 +110,7 @@ We want to request the application source code for the "EmployeeBackoffice" appl
 
 Example "EmployeeBackoffice" application key: **c9a7a82e-0eee-4a3d-8e22-2a19c69c766f**
 
-## 3 - Get the package key
+### 3 - Get the package key
 
 We start by taking the API method "template" URL used to get the source code package key for an application on a given environment.
 
@@ -132,7 +136,8 @@ The request for the platform to package the source code of the application "Empl
 
 Example package key: **bc354abb-6691-41ee-9ed3-9454747e2d4d**
 
-## 4 - Check status
+
+### 4 - Check status
 
 We start by taking the API method "template" URL used to get the status of the application source code packaging. Perform the following request:
 
@@ -172,7 +177,7 @@ Example response body:
 }
 ```
 
-## 5 - Get download link
+### 5 - Get download link
 
 Start by taking the API method "template" URL used to get the download link of the application source code package.
 
@@ -194,7 +199,8 @@ The response contains the link to download the source code package of the applic
 
 Source Code [Package Link](https://hostname.outsystems.com/lifetimeapi/rest/v2/downloads/f4ee541b-5791-4997-a56d-360d80c24821)
 
-## 6 - Download package
+
+### 6 - Download package
 
 Use the link obtained from the previous step and get the source code package of the application requested.
 

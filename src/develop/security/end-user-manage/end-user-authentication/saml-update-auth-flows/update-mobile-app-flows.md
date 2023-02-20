@@ -167,7 +167,7 @@ We suggest you do the following:
 
 1. Add the IsNative client action and upon checking that it returns TRUE:
 
-    1. Run the **GetCallbackURL **client action. This action will return a URL;
+    1. Run the **GetCallbackURL** client action. This action will return a URL;
 
     1. Add the **User_GetUnifiedLoginURL** server action, setting the OriginalUrl parameter as: GetCallbackUrl.Url;
 

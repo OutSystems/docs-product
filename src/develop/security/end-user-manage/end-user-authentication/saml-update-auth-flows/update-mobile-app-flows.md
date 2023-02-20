@@ -123,8 +123,7 @@ Do the following:
 
     1. If you’re running a PWA application, add the **User_GetUnifiedLoginUrl** server action, verify if an URL was returned and if so redirect to that url.
 
-
-![Logic to verify if you are running a PWA.](images/update-mobile-app-flows-pwa-ss.png)
+        ![Logic to verify if you are running a PWA.](images/update-mobile-app-flows-pwa-ss.png)
 
     1. If you’re running a native application, see point 2.
 
@@ -162,7 +161,7 @@ We suggest you do the following:
 
     1. If you’re running a PWA application, add the **User_GetUnifiedLogoutUrl** server action, verify if an URL was returned and if so redirect to that url (if not, run the **DoLogout** server action).
 
-![Logic to verify if you are running a PWA.](images/update-mobile-app-flows-pwa-logout-ss.png)
+        ![Logic to verify if you are running a PWA.](images/update-mobile-app-flows-pwa-logout-ss.png)
 
     1. If you’re running a native application, see point 2.
 

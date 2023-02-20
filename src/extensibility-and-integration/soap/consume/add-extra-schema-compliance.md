@@ -30,9 +30,13 @@ Enabling extra schema compliance validations impacts performance. We recommend t
 </div>
 
 To enable these validations, follow these steps:
+
 1. Install the [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) from Outsystems Forge.
+
 1. Access the **Factory Configuration** application (available in **https://your-domain/FactoryConfiguration/**).
+
 1. Go the **Platform Configurations** tab.  
+
 1. Under the **Runtime** section, select the **Add Extra Schema Compliance Validations in SOAP** checkbox and click **Apply**.   
 
     ![Factory Configuration Runtime settings with option to enable extra schema compliance in SOAP.](images/enable-schema-compliance-sc.png)
@@ -44,6 +48,7 @@ To enable these validations, follow these steps:
     If you want another message to be displayed to the end-user, you may choose to catch this thrown exception with an [Exception Handler](../../../develop/logic/exceptions/intro.md) on Service Studio.
 
 1. After you change the settings using **Factory Configuration**, make sure you apply new configurations to your environment.
+
 1. When you finish troubleshooting, clear the **Add Extra Schema Compliance Validations in SOAP** checkbox, click **Apply** and Apply the Configurations to your environment.
 
 Note that this is an environment configuration, which will impact all applications that are published after enabling the setting.

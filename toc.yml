@@ -786,7 +786,7 @@
             - href: extensibility-and-integration/soap/consume/configure-auth.md
             - href: extensibility-and-integration/soap/consume/refresh-web-service.md
             - href: extensibility-and-integration/soap/consume/configure-runtime.md
-            - href: extensibility-and-integration/soap/consume/add-extra-schema-compliance.md
+            
             - href: extensibility-and-integration/soap/consume/advanced-extensibility.md
             - topics:
                 - href: extensibility-and-integration/soap/consume/extensibility-use-cases/endpoint.md

@@ -46,11 +46,11 @@ If a part is specified as a **Binary dynamic list**, there are as many parts as 
 
 If no content-type is specified for a part, the **Content-Type in Multipart** field is populated based on the type of schema properties. For example, if the specification contains a list of integers without the content-type defined, the field is automatically populated based on the type of the schema properties.
 
-![List of integers data type](images/list-integers-ss.png) 
+![List of integers data type](images/list-integers-ss.png)  
 
 **Note**: You can set the data type of each input, **overriding** whatever value was originally there. This means that, in the case of a multipart/form-data method, you can, for example, change the data type of an input from **Integer** to **RequestPart**.
 
-The **Content-Disposition** header associated with each part specifies  the name of the form field and the name of the file (if a file is being uploaded). Its format is **Content-Disposition: form-data; name="field_name"; filename="file_name"**. To avoid interoperability issues, both **"field_name"** and **"file_name"** must be in the ASCII encoding. Non-ASCII characters in headers are encoded using the MIME encoded-word syntax,  This format allows for the use of non-ASCII characters in headers if necessary. For more information, see the [TCP/IP Guide](http://www.tcpipguide.com/free/t_MIMEExtensionforNonASCIIMailMessageHeaders-2.htm).
+The **Content-Disposition** header associated with each part specifies  the name of the form field and the name of the file (if a file is being uploaded). Its format is **Content-Disposition: form-data; name="field_name"; filename="file_name"**. To avoid interoperability issues, both **"field_name"** and **"file_name"** must be in the ASCII encoding. Non-ASCII characters in headers are encoded using the MIME encoded-word syntax,  This format allows for the use of non-ASCII characters in headers if necessary. For more information, see the [TCP/IP Guide](http://www.tcpipguide.com/free/t_MIMEExtensionforNonASCIIMailMessageHeaders-2.htm). 
 
 ## RequestPart data structure
 

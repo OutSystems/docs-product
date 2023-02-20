@@ -183,4 +183,4 @@ We suggest you do the following:
 
 Below you can find a overview of the complete Logic:
 
-![Logout logic of the UserInfo block.](images/update-mobile-app-flows-end-ss.png)
+![Logout logic of the UserInfo block.](images/update-mobile-app-flows-logout-full-ss.png)

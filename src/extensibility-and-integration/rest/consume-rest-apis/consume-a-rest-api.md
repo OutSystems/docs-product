@@ -13,15 +13,15 @@ Make sure you gather all the information you need from the REST API documentatio
 
 In Service Studio you can:
 
-* consume several REST API methods (all methods or just the methods you select) described in a Swagger specification file, provided either by entering a URL or by selecting a specification file from the local file system.
+* consume several REST API methods (all methods or just the methods you select) described in a OpenAPI specification file, provided either by entering a URL or by selecting a specification file from the local file system.
 
 * Consume a single REST API method.
 
 ## Consume several methods of a REST API { #all-methods }
 
-You can consume several methods of a REST API (all API methods or just the methods you select) if that API is compliant with the [Swagger specification](https://swagger.io/specification/). REST APIs exposed by OutSystems are compliant with this specification.  
+You can consume several methods of a REST API (all API methods or just the methods you select) if that API is compliant with the [OpenAPI specification](https://swagger.io/resources/open-api/). REST APIs exposed by OutSystems are compliant with this specification.  
 
-You can import Swagger specifications either by providing a URL or by selecting a specification file from the local file system.
+You can import OpenAPI specifications either by providing a URL or by selecting a specification file from the local file system.
 
 Do the following:
 
@@ -37,7 +37,7 @@ Do the following:
 
 1. If you're importing an OpenAPI 3.0 specification file and the specification includes more than one server endpoint, choose the desired endpoint and click **Next**.
 
-    _Note:_ You can't change the server endpoint after importing the REST API.
+    **Note:** You can't change the server endpoint after importing the REST API.
 
 1. Choose the REST API methods you want to import (by default, all methods) and click **Finish**.
 

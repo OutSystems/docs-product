@@ -35,13 +35,23 @@ To customize the request before it is sent:
 
 1. Set the **On Before Request** property of the REST API to `New OnBeforeRequest`.
   
-    ![](images/ss-rest-new-onbeforerequest.png)    
+    ![Select New OneBeforeRequest](images/rest-new-onbeforerequest-ss.png)    
 
     An "OnBeforeRequest" action is made available under the REST API.   
 
 1. Double-click the newly created action to edit it. 
 
 1. Add your own logic to customize the request. 
+
+### Customize the parts of a multipart/form-data request { #multipart}
+
+To customize specific parts of a [multipart/form-data request](consume-multipart-form-data.md) inside the **OnBeforeRequest** callback, such as adding, removing, or editing parts, you can use the **RequestParts** attribute that represents a **RequestPart** list.
+
+![List of HTTPRequest attributes](images/requestparts-ss.png)
+
+The following example shows the logic flow of an **OnBeforeRequest** callback that appends, removes, and edits a part from the request. In this example, the **Request.RequestParts** list is edited. 
+
+![Action flow of the OnBeforeRequest callback](images/requestparts-action-ss.png)
 
 ### Example use case: Adding a header for token-based authentication
 
@@ -62,7 +72,7 @@ To build this example implementation we added the following steps in the callbac
 
 1. Set the "CustomizedRequest" output parameter to our changed "Request" using an Assign element.
 
-![](images/ss-rest-example-onbeforerequest.png)
+![Set output parameter](images/rest-example-onbeforerequest-ss.png)
 
 ## Customize the response
 
@@ -70,7 +80,7 @@ To customize the response after it has arrived:
 
 1. Set the **On After Response** property of the REST API to `New OnAfterResponse` action.
 
-    ![](images/ss-rest-new-onafterresponse.png)
+    ![Select NewAfterResponse](images/rest-new-onafterresponse-ss.png)
 
     An "OnAfterResponse" action is made available under the REST API.
 

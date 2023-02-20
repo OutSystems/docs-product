@@ -174,7 +174,7 @@ We suggest you do the following:
     1. Verify that the URL exists. You can use the condition:
 
         ```
-        Length(UserGetUnifiedLoginURL2.Url > 0)
+        Length(User_GetUnifiedLogoutUrl2.Url) > 0
         ```
 
     1. If the URL exists add the **StartSSOAuthentication** client action and verify if it runs successfully;

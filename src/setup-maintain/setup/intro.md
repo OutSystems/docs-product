@@ -187,10 +187,17 @@ Do the following:
     2\. Rename the Microsot .NET Framework Installer to `DotNet.exe`.  
     _Note:_ If you're installing a Platform Server version earlier than 11.9, rename the installer to `NDP472-KB4054530-x86-x64-AllOS-ENU.exe` instead.
     
-        * **.NET 6.0 Runtime & Hosting Bundle for Windows**  
+    * **.NET 6.0 Runtime & Hosting Bundle for Windows**  
     1\. [Download the .NET 6.0 Runtime & Hosting Bundle for Windows](https://download.visualstudio.microsoft.com/download/pr/0d000d1b-89a4-4593-9708-eb5177777c64/cfb3d74447ac78defb1b66fd9b3f38e0/dotnet-hosting-6.0.6-win.exe) from Microsoft.  
-    2\. Rename the .NET Core Installer to `DotNet_WindowsHosting_6.exe`.
-    
+    2\. Rename the .NET Installer to `DotNet_WindowsHosting_6.exe`
+
+    * **.NET Uninstall Tool v1.5.255402 (Optional)** 
+
+        1\. [Download the .NET Uninstall Tool v1.5.255402](https://github.com/dotnet/cli-lab/releases/download/1.5.255402/dotnet-core-uninstall-1.5.255402.msi) from Microsoft.  
+        2\. Rename the .NET Uninstall Tool Installer to `DotNetCore_Uninstall_15.msi`.
+
+
+
     * **Build Tools 2015**  
     1\. [Download the Installer](https://www.microsoft.com/en-us/download/details.aspx?id=48159) from Microsoft.  
     2\. Rename the Build Tools Installer to `BuildTools_Full.exe`.

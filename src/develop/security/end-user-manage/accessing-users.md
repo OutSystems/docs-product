@@ -9,7 +9,6 @@ platform-version: o11
 
 # Access the Users application
 
-
 The OutSystems **Users** application lets you create, update, and delete end users (the users of your applications) and their roles. You can also manage user roles individually or in bulk using groups.
 
 To access the Users application for a specific OutSystems environment, go to:
@@ -34,21 +33,25 @@ Configuring the Administrator user of the Users application sets the user passwo
 
 ### Prerequisites
 
-To perform this operation, your administrator users must have the [Change and Deploy Applications permission](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md#env-permission-levels), which means they must have one of the following:
+To perform this operation ensure the following:
 
-* A role assigned to them with the **Change and Deploy Applications** permission level (or higher) as default role.
-* A role assigned to them with the **Change and Deploy Applications** permission level (or higher) for the Users application.
+* Your environments use **OutSystems 11 Platform Server Release Jul.2019** or later.
 
-For environments that aren't managed by LifeTime, users accessing Service Center must have one of the following:
+* If your environments are managed by LifeTime, you must have the [Change and Deploy Applications permission](../../../managing-the-applications-lifecycle/manage-it-teams/about-permission-levels.md#env-permission-levels). This means you must have one of the following:
 
-* A role assigned to them that has **Full Control** over the Users module.
-* A role assigned to them that has  **Full Control** directly over the Users module.
+    * A role assigned to your user with the **Change and Deploy Applications** permission level (or higher) as default role.
+    * A role assigned to your user with the **Change and Deploy Applications** permission level (or higher) for the Users app.
+
+* If your environments aren't managed by LifeTime, you must have one of the following:
+
+    * A role assigned to your user has **Full Control** over the Users module.
+    * A role assigned to your user has  **Full Control** directly over the Users module.
 
 ### Configure the Administrator user
 
 To configure the Administrator user for the Users application, do the following:
 
-1. Log in to Service Center (`http://<environment_address>/ServiceCenter`). Make sure your user meets the prerequisites to perform the operation.
+1. Log in to Service Center (`http://<environment_address>/ServiceCenter`). Make sure your user meets the [prerequisites](#prerequisites) to perform the operation.
 
 1. Go to **Factory** > **Modules**.
 
@@ -65,3 +68,5 @@ To configure the Administrator user for the Users application, do the following:
 1. Click **Apply**.
 
 OutSystems saves the password you entered for the Administrator user ("admin") of the Users application, and grants the Administrator user with all the available Roles.
+
+To reset the password of the Administrator of User, repeat the previous procedure.

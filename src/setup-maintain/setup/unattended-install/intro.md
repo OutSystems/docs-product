@@ -96,10 +96,11 @@ The optional `/D` switch specifies the path where the Service Studio and Integra
 Run the OutSystems Platform Server installation package as follows:
 
 ```
-PlatformServer-<version>.exe /S [/InstallPrerequisites=True] [/DoTuning=<factory_size>] [/D=<platform_path>]
+PlatformServer-<version>.exe /S [/InstallPrerequisites=True] [/RemovePreviousHostingBundlePackages=True] [/DoTuning=<factory_size>] [/D=<platform_path>]
 ```
 
-The optional `/InstallPrerequisites=True` switch specifies if the prerequisites will be automatically installed.  
+The optional `/InstallPrerequisites=True` switch specifies if the prerequisites will be automatically installed.
+The optional `/RemovePreviousHostingBundlePackages=True` switch specifies if during the installation of the prerequisites, when the Hosting Bundle is being installed, the installer should remove previous installations of Hosting Bundles, .NET and ASP.NET Runtime packages. The default value is `False`.
 The optional `/DoTuning=<factory_size>` switch specifies if the tuning should be automatically performed.  
 The optional `/D` switch specifies the path where the OutSystems Platform Server is installed. If this switch is provided, it must be the last one in the command line and the provided path must not contain quotes (`""`) even if the path contains spaces.
 

@@ -13,11 +13,13 @@ platform-version: o11
 
 SEO-friendly URLs for Reactive Web apps require the following: 
 
-* Platform Server 11.14.0 or later.  
+* Your environments must use Platform Server 11.14.0 or later.  
 
 * Service Studio 11.13.0 or later.  
 
-* OutSystems enterprise cloud offer or a self-managed installation with [ISAPI filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) activated. 
+* Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition. **You can't use a Personal Environment with SEO-friendly URLs for Reactive Web apps**.
+
+* For self-managed infrastructures, [ISAPI filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) must be enabled.
 
 <div class="info" markdown="1">
 

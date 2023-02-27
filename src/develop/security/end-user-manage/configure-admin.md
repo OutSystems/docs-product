@@ -47,7 +47,7 @@ To configure the Administrator user for the Users app, do the following:
 
 1. Click the **Configure Administrator user** button.
 
-    ![Configure the Administrator user of the Users application](images/users-configure-admin-sc.png)
+    ![Configure the Administrator user of the Users application](images/configure-admin-user-sc.png)
 
 1. Set the password for the Administrator user.
 

@@ -56,3 +56,4 @@ To configure the Administrator user for the Users app, do the following:
 OutSystems saves the password you entered for the Administrator user ("admin") of the Users application, and grants the Administrator user with all the available Roles.
 
 To reset the password of the Administrator of User, repeat the previous procedure.
+

@@ -3,13 +3,12 @@ summary: Fetch data in your apps using human language.
 locale: en-us
 guid: A2F9928D-5F44-4DA0-B567-EDC9191E4A7B
 app_type: traditional web apps, mobile apps, reactive web apps
-platform-version: o11
+platform-version: O11, ODC
 ---
 
 # Fetch data using human language
 
-Fetch data in your apps by using everyday language to create queries.
-Ask for data in similar way that you would ask another person, and Service Studio creates an Aggregate to get you that data.
+Fetch data in your apps by using everyday language to create queries. Ask for data similarly to how you would ask another person, and Service Studio creates an aggregate to retrieve that data.
 
 Fetching data using human language includes the following steps:
 
@@ -21,13 +20,17 @@ Fetching data using human language includes the following steps:
 
 1. You validate the aggregate's result to ensure it's getting the correct data.
 
+<iframe src="https://player.vimeo.com/video/803095782" width="650" height="325" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating using human language to fetch data</iframe>
+
+The video shows a developer asking for data using everyday language and then checking the aggregate source and filter to ensure relevance.
+
+Download the video [here](resources/NL2Agg_MainDemo.mp4)
+
 ## Prerequisites
 
-To use this capability ensure the following:
+To use this capability check the following:
 
-* You're using cross-platform Service Studio version 11.51.9 or later.
-
-* Your Service Studio can reach `https://api.outsystems.com`.
+* You're using cross-platform Service Studio version ≥ 11.53.13 or ODC version ≥ 1.0.31.
 
 ## Ask for data
 
@@ -35,15 +38,15 @@ In an aggregate, add your data request in the text input, and click **Get Data**
 
 ![Ask for data using human language](images/nl-get-data-ss.png)
 
-While you write your request, Service Studio provides suggestions based on context for the name of entities, attributes, and variables.
+While you write your request, Service Studio provides suggestions based on context for the name of entities, attributes, variables, and functions.
 
-Use these suggestions to become more productive and to ensure you get the most reliable results. For example, if you have multiple attributes with the same name, use the right sugestion to quickly and accurately define the correct attribute.
+Use these suggestions to become more productive and to ensure you get the most reliable results. For example, if you have multiple attributes with the same name, use the right suggestion to quickly and accurately define the correct attribute.
 
 ![Dropdown with suggestions for entity name](images/nl-suggestion-ss.png)
 
-### Examples
+### Use cases
 
-Since this capability is still under development, the way you ask for data is important.
+The clarity with which you ask for data is important.
 Check the following examples on the best way to ask for data, depending on your use case.
 
 #### Get all data
@@ -51,8 +54,7 @@ Check the following examples on the best way to ask for data, depending on your 
 You want | You ask
 ---|---
 **All employees** | `Find employees`
-**All orders** | `Show orders`
-**All orders and their descriptions**.<br/>Here, orders and their descriptions are kept in two different entities, Order and Order Details. | `Get Order and Order Details for orders that ship to ShippingLocation`
+**All orders and their descriptions**.<br/>Here, orders and their descriptions are in two different entities, Order and Order Details. | `Show Order and Order Details`
 
 #### Get filtered data
 
@@ -60,26 +62,26 @@ You want | You ask
 ---|---
 **Employees who live in London** | `Find employees who live in London`
 **Sales managers in London** | `Employees who live in London and whose title is sales manager`
-**Orders and their descriptions that ship to London** | `Show Details for orders that ship to London`
 **Orders that cost more than $10** | `Show orders with a minimum price of $10`
 **Open orders** | `Get open orders`
-**Orders over a variable minimum price.**<br/>Here, the minimum price is kept in a MinOrderPrice variable. | `Show orders over MinOrderPrice`
-**Orders and their descriptions that ship to a variable shipping location.**<br/>Here, the shipping location is kept in a ShippingLocation variable. | `Show Order and Order Details for orders that ship to ShippingLocation`
+**Orders over a variable minimum price.**<br/>The minimum price is in the OrderPriceVar variable. | `Show Order with a TotalAmount (in Order) bigger than OrderPriceVar`
+**Total number of Orders shipped until the current day.** | `How many Orders were delivered until today?`
+**Show the Employee name that is currently logged in the application.** | `Show Employee with GetUserId()`
 
 #### Get sorted data
 
 You want | You ask
 ---|---
-**Employees ordered by the city they live in** | `Get employees ordered by city`
-**Orders sorted by price from highest to lowest** | `Show orders sorted by price from high to low`
+**Employees ordered by the city they live in** | `Get employees ordered by City (in Employee)`
+**Orders sorted by price from highest to lowest** | `Show orders sorted by Price (in Order) from high to low`
 
 #### Get grouped data
 
 You want | You ask
 ---|---
-**All employees grouped by the city they live in** | `Get employees grouped by city`
+**All employees grouped by the city they live in** | `Get Employee grouped by CityName (in City)`
 
-#### Get count or average
+#### Get the count or average
 
 You want | You ask
 ---|---
@@ -90,7 +92,6 @@ You want | You ask
 
 ## Validate data
 
-Since this capability is still under development you need to always validate both the query results as well as the generated aggregate.
 Start by checking the aggregate results, ensuring you got the data you expected.
 Then check the sources, filters, and sorts tabs of the generated aggregate to ensure the aggregate is valid and makes sense for your data request.
 
@@ -98,7 +99,7 @@ To improve your aggregate, tweak your sentence and ask for data again. Alternati
 
 ## Limitations
 
-This capability is under development, check the current limitations in the following sections.
+Check the current limitations in the following sections.
 
 ### Data model
 
@@ -110,18 +111,12 @@ This capability is under development, check the current limitations in the follo
 
 * Typos in the name of entities, attributes, and variables may cause errors in the generated aggregate.
 
-* You can't ask for data filtered with **Functions**. For example, **GetUserId()** or data type conversion functions like **TextToIdentifier()**.
+* You can't ask for data filtered with advanced **Functions**. For example, **AddDays()** or data type conversion functions like **TextToIdentifier()**.
 
-* You can't ask for data filtered using variables with **List** or **Record** complex data types.
-
-* You can't ask for data that include **calculated attributes**. For example, a new attribute joining attributes, like `User.FirstName + " " + User.LastName`
+* You can't ask for data that includes **calculated attributes**. For example, a new attribute that joins attributes, like `User.FirstName + " " + User.LastName`
 
 * You can't ask for data ordered using **dynamic sorts**.
 
 ### Generated aggregates { #limitation-aggregate }
 
-* The generated aggregate always have **Max Records** set to **50**.
-
-* The generated aggregate isn't renamed automatically.
-
-* Generated aggregates with several source only use left joins and inner joins.
+* Generated aggregates with several sources only use left joins and inner joins.

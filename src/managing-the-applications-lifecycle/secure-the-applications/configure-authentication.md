@@ -35,7 +35,7 @@ The following setting applies to both persistent and session authentication:
 
 * **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web Apps, and Mobile Apps distributed as Progressive Web Apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
 
-**Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshooting SSO with Traditional Web Apps](). 
+**Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/). 
 
 <div class="info" markdown="1">
 

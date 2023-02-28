@@ -22,9 +22,7 @@ Fetching data using human language includes the following steps:
 
 <iframe src="https://player.vimeo.com/video/803095782" width="650" height="325" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating using human language to fetch data</iframe>
 
-The video shows a developer asking for data using everyday language and then checking the aggregate source and filter to ensure relevance.
-
-Download the video [here](resources/NL2Agg_MainDemo.mp4)
+The video shows a developer asking for data using everyday language and then checking the aggregate source and filter to ensure relevance. Download the video [here](resources/NL2Agg_MainDemo.mp4).
 
 ## Prerequisites
 
@@ -46,7 +44,7 @@ Use these suggestions to become more productive and to ensure you get the most r
 
 ### Use cases
 
-The clarity with which you ask for data is important.
+The clarity with which you ask for data is important to make the most of the feature.
 Check the following examples on the best way to ask for data, depending on your use case.
 
 #### Get all data
@@ -116,7 +114,3 @@ Check the current limitations in the following sections.
 * You can't ask for data that includes **calculated attributes**. For example, a new attribute that joins attributes, like `User.FirstName + " " + User.LastName`
 
 * You can't ask for data ordered using **dynamic sorts**.
-
-### Generated aggregates { #limitation-aggregate }
-
-* Generated aggregates with several sources only use left joins and inner joins.

@@ -49,11 +49,11 @@ You can access Experience Builder with the **latest versions** of the following 
 
 When you log in to [Experience Builder](https://experiencebuilder.outsystems.com/) for the first time you enter the following welcome screen:
 
-![](images/login-page-eb.png)
+![](images/login-eb.png)
 
 To log in to Experience Builder, perform the following steps.
 
-1. Enter the address of your OutSystems **development environment** in the **Environment** field.
+1. Enter the address of your OutSystems **development environment** in the **Environment** field. Then, click **Next**.
 
     <div class="warning" markdown="1">
 

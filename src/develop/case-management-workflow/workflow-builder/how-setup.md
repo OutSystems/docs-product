@@ -48,11 +48,11 @@ Before logging in for the first time, make sure you have IT user accounts for yo
 
 When you log in to [Workflow Builder](http://workflowbuilder.outsystems.com/) for the first time you enter the following welcome screen:
 
-![Workflow Builder login page](images/wfb-login-page.png)
+![Workflow Builder login page](images/login-wfb.png)
 
 To log in to Workflow Builder, perform the following steps.
 
-1. Enter the address of your OutSystems development environment in the **Environment** field.
+1. Enter the address of your OutSystems development environment in the **Environment** field. Then, click **Next**.
 
     <div class="warning" markdown="1">
 

@@ -32,9 +32,9 @@ To log in to Integration Builder do the following:
 
 1. Open Integration Builder, available at <https://integrationbuilder.outsystems.com>.
 
-    ![Integration Builder login page](images/login-page-ib.png)
+    ![Integration Builder login page](images/login-ib.png)
 
-1. In the **Environment** field, enter the address of your OutSystems development environment.
+1. In the **Environment** field, enter the address of your OutSystems development environment. Then, click **Next**.
 
     <div class="info" markdown="1">
 

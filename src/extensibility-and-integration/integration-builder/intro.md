@@ -19,7 +19,7 @@ Allowing business to break enterprise data silos and use them across the enterpr
 
 * Increase business agility, by allowing businesses to quickly adjust IT systems based on new market trends and demand
 
-![Integration Builder login page](images/login-page-ib.png)
+![Integration Builder login page](images/login-ib.png)
 
 Integration Builder removes the complexity of integrating with existing systems while allowing developers to quickly link their apps to data stored in those systems. It allows you to reduce development time and address complex integration scenarios with ease.
 

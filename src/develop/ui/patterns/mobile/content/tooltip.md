@@ -29,6 +29,12 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 
 **How to use the Tooltip UI Pattern**
 
+<div class="info" markdown="1">
+
+**Prerequities** To use the Tooltip UI Pattern, you must use an OutSystems Layout. If you are using a Custom Layout, you must add the Layout CSS class.
+
+</div>
+
 1. In Service Studio, in the Toolbox, search for `Tooltip`.
   
     The Tooltip widget is displayed.

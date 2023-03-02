@@ -99,6 +99,12 @@ If the external IdP is unavailable or has configuration errors, the local admini
 
 You can create a local administrator before or after adding a new OIDC connection. It is recommended that you add at least one local administrator before activating an OIDC provider. This ensures that there is always a fallback authentication option for the user to log into the platform.
 
+<div class="info" markdown="1">
+
+Local administrators are only able to log in to LifeTime.
+
+</div>
+
 To add a local administrator, follow these steps:
 
 1. Access the LifeTime console.

@@ -12,7 +12,7 @@ Fetch data in your apps by using everyday language to create queries. Ask for da
 
 Fetching data using human language includes the following steps:
 
-![Main steps of fetching data using human language](images/nl-process-diag.png)
+![Main steps of fetching data using human language](images/fetching-data-using-human-language-diag.png)
 
 1. In an aggregate, you ask for data using human language.
 
@@ -20,7 +20,7 @@ Fetching data using human language includes the following steps:
 
 1. You validate the aggregate's result to ensure it's getting the correct data.
 
-<iframe src="https://player.vimeo.com/video/803095782" width="650" height="325" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating using human language to fetch data</iframe>
+<iframe src="https://player.vimeo.com/video/803095782" width="650" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating using human language to fetch data</iframe>
 
 The video shows a developer asking for data using everyday language and then checking the aggregate source and filter to ensure relevance. Download the video [here](resources/NL2Agg_MainDemo.mp4).
 
@@ -34,13 +34,13 @@ To use this capability check the following:
 
 In an aggregate, add your data request in the text input, and click **Get Data**.
 
-![Ask for data using human language](images/nl-get-data-ss.png)
+![Ask for data using human language](images/add-your-data-request-ss.png)
 
 While you write your request, Service Studio provides suggestions based on context for the name of entities, attributes, variables, and functions.
 
 Use these suggestions to become more productive and to ensure you get the most reliable results. For example, if you have multiple attributes with the same name, use the right suggestion to quickly and accurately define the correct attribute.
 
-![Dropdown with suggestions for entity name](images/nl-suggestion-ss.png)
+![Dropdown with suggestions for entity name](images/data-suggestions-ss.png)
 
 ### Use cases
 

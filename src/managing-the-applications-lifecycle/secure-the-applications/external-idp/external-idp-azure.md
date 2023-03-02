@@ -25,7 +25,9 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. Access the Microsoft Azure portal.
 
-1. Go to **App registrations** and click  **+ New registration**.
+1. Go to **Azure Active Directory** -> **App registrations**.
+
+1. Click  **+ New registration**.
 
     ![URI metadata](images/new-reg-az.png)
 

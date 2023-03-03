@@ -3,6 +3,7 @@ summary: Learn more about the Actions you can create in your Reactive Web and Mo
 tags: runtime-mobileandreactiveweb; support-Mobile_Apps; support-Mobile_Apps-overview
 locale: en-us
 guid: ce518c93-363b-485e-91b3-b4a402ec4579
+helpids: 30110
 app_type: mobile apps, reactive web apps
 platform-version: o11
 ---
@@ -11,7 +12,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies to Mobile Apps and Reactive Web Apps only
+Applies to Mobile Apps and Reactive Web Apps only.
 
 </div>
 
@@ -23,7 +24,7 @@ You can create the following Actions:
 * Client Actions
 * Server Actions
 
-## Data Actions
+## Data Actions { #data-actions }
 
 Some Screens may require fetching complex information from the database or other external systems, for example a home banking dashboard. In Mobile and Reactive Web apps you do this in a **Data Action**:
 
@@ -35,7 +36,7 @@ Some Screens may require fetching complex information from the database or other
 
 You can also create **Data Actions** in your Blocks.
 
-## Client Actions
+## Client Actions { #client-actions}
 
 **Client Actions** run logic in the user device. You can create **Client Actions** in two different scopes: in the scope of a **Screen** and in the **client logic**.
 
@@ -51,7 +52,7 @@ You can also create **Client Actions** in your Blocks.
 
 You can set a **Client Action** as a function and use it directly in Expressions of the client-side logic.
 
-## Server Actions
+## Server Actions { #server-actions }
 
 You can also create **Server Actions** in your apps to encapsulate the logic and reuse it in other Actions, such as other Server Actions, Data Actions or Client Actions. **Server Actions** run logic on the server.
 

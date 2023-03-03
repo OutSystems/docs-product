@@ -65,5 +65,7 @@ Rotation means that:
 * Old log tables are cleaned after their retention period passes, preparing them for later use. For self-managed environments, you configure the retention period in the OutSystems Configuration Tool > Log tab > Advanced settings. For OutSystems Cloud, the retention period is 9 weeks and it cannot be changed.
 
 <div class="info" markdown="1">
+
 You can only view the last two weeks of logs in Service Center. Older logs are available directly in the database within the retention period.
+
 </div>

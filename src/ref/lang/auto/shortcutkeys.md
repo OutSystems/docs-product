@@ -27,6 +27,7 @@ platform-version: o11
 |Ctrl+Space|Ctrl+Space|Auto-complete|
 |Ctrl+A|Cmd+A|Select all elements|
 |Ctrl+F4|Cmd+W|Close module|
+|Ctrl+Enter|Cmd+Enter|Apply the primary action on the current pop-up window|
 |Esc|Esc|Cancel and close the current pop-up window|
 |F1||Look for help, by telling us what you want to do|
 |F2||Rename selected element|
@@ -100,7 +101,8 @@ platform-version: o11
 |Ctrl+Shift+Click|Shift+Cmd+Click|Select all following elements|
 |Ctrl+D||Delete Assignment row within an Assign|
 |Ctrl+Up|Alt+Cmd+Up|Move Assignment up within an Assign|
-|Ctrl+Down|Alt+Cmd+Down|Move Assignment down within an Assign|
+|Ctrl+Up|Alt+Cmd+Up|Test SQL in the SQL editor|
+|Ctrl+T|Opt+CMD+T|Move Assignment down within an Assign|
 
 ## Debug
 

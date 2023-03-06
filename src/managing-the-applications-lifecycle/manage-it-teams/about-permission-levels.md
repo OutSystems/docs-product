@@ -69,6 +69,8 @@ The role assigned to users for teams **overrides the default role** of the users
 
 This allows granting permissions for all applications that the team manages, without having to grant permissions on each application individually.
 
+For more information about team roles and permissions, see [Set Up the Permissions in a Team](setup-team-permissions.md)
+
 ### Role assigned to users for a specific application { #role-assigned-to-users-for-a-specific-application }
 
 It's also possible to [assign a role directly to one user for a specific application](create-an-it-role.md#assign-a-role-to-a-user-for-a-specific-application). This provides flexibility for more exceptional situations where it may be useful to either **grant or revoke the permissions of users for particular applications** without using teams.

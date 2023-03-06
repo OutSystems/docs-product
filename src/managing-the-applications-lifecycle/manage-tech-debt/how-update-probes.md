@@ -11,7 +11,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Architecture Dashboard is now AI Mentor Studio.
+To check the current version of your AI Mentor Studio probes, click the **Help** icon on the top-right corner of AI Mentor Studio and then select **About AI Mentor Studio**.
 
 </div>
 

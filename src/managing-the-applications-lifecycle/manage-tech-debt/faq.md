@@ -57,7 +57,11 @@ Snooze it with the "False Positive" reason and explain in the comments why you b
 
 ## Probes
 
-### How do I know if the AI Mentor Studio Probes need to be updated?
+### How do I check the current version of my AI Mentor Studio probes?
+
+To check the version of your probes, click the **Help** icon on the top-right corner of AI Mentor Studio and then select **About AI Mentor Studio**. 
+
+### How do I know if the AI Mentor Studio probes need to be updated?
 
 If an environment has outdated probes, AI Mentor Studio displays a warning message and users with [**Full Control** permissions assigned as a default role](how-works.md#update-probes) can update them autonomously. Users without Full Control permissions must contact their infrastructure administrator to update the AI Mentor Studio's probes. 
 
@@ -65,9 +69,9 @@ Check out [how to update the AI Mentor Studio probes](how-update-probes.md).
 
 If there's a previous version of the probes installed there's no need to uninstall them prior to installing the new version of the probes.
 
-### How do I uninstall AI Mentor Studio Probes?
+### How do I uninstall AI Mentor Studio probes?
 
-To uninstall AI Mentor Studio Probes, delete the following applications from both the LifeTime and code analysis environments:
+To uninstall AI Mentor Studio probes, delete the following applications from both the LifeTime and code analysis environments:
 
 * **AI Mentor Studio Environment Probe**
 * **AI Mentor Studio LifeTime Probe**
@@ -75,7 +79,7 @@ To uninstall AI Mentor Studio Probes, delete the following applications from bot
 
 <div class="info" markdown="1">
 
-Uninstalling AI Mentor Studio Probes doesn’t unregister your infrastructure from AI Mentor Studio. Your infrastructure remains registered, although there are no more syncs between your infrastructure and AI Mentor Studio. If you want to unregister your infrastructure or make a new registration, [contact OutSystems Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support).
+Uninstalling AI Mentor Studio probes doesn’t unregister your infrastructure from AI Mentor Studio. Your infrastructure remains registered, although there are no more syncs between your infrastructure and AI Mentor Studio. If you want to unregister your infrastructure or make a new registration, [contact OutSystems Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support).
 
 </div>
 

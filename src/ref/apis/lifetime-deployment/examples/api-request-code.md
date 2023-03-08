@@ -28,7 +28,7 @@ To download the source code of an app, ensure that you have the following:
 * Environment from where you want to get the source code must comply with the following:
     * Platform Server version 11.19.0 or higher
     * Only available on non-production environments
-* LifeTime version 11.16.0 or higher
+* LifeTime version 11.16.1 or higher
 * [LifeTime Service Account](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication)
 
  

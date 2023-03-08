@@ -1,6 +1,7 @@
 ---
 tags: support-Integrations_Extensions; support-Integrations_Extensions-overview
 locale: en-us
+helpids: 30084
 guid: d74dc607-6024-4733-8a3e-4ce55e37f1cb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
@@ -8,13 +9,14 @@ platform-version: o11
 
 # Integrate with a SAP System
 
-<div class="info" markdown="1">
-
-Only customers with an enterprise platform version can create SAP connections.
-
-</div>
 
 OutSystems allows you to fetch or update data in a SAP system and use it in your applications.
+
+## Prerequisites
+
+* Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition. 
+* For self-managed infrastructures, SAP Connector Libraries must be installed. See the installation checklist of your [Platform Server version](https://www.outsystems.com/Downloads/search/Platform+Server/11/) for further instructions.
+
 
 ## Create a connection to an SAP system from your application
 

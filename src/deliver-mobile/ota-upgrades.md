@@ -45,4 +45,4 @@ There is a set of situations that require you to generate a new Build and redist
 
 ## Common issues and how to troubleshoot them
 
-For any issues you encounter during the OTA upgrade process, see the [Troubleshooting over-the-air upgrades articles]().
+For any issues you encounter during the OTA upgrade process, see the [Troubleshooting over-the-air upgrades articles](https://success.outsystems.com/support/troubleshooting/application_runtime/troubleshooting_over_the_air_upgrades/).

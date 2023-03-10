@@ -28,7 +28,7 @@ To download the source code of an app, ensure that you have the following:
 * Environment from where you want to get the source code must comply with the following:
     * Platform Server version 11.19.0 or higher
     * Only available on non-production environments
-* LifeTime version 11.16.0 or higher
+* LifeTime version 11.16.1 or higher
 * [LifeTime Service Account](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication)
 
  
@@ -197,11 +197,28 @@ Response body:
 ```
 The response contains the link to download the source code package of the application.
 
-Source Code [Package Link](https://hostname.outsystems.com/lifetimeapi/rest/v2/downloads/f4ee541b-5791-4997-a56d-360d80c24821)
-
-
 ### 6 - Download package
 
-Use the link obtained from the previous step and get the source code package of the application requested.
+Use the URL obtained from the previous step and get the source code package of the application requested. The download link is a call to a Lifetime API. The authentication token is mandatory for the request. The API method "template" URL used to download the application source code package is:
+
+`GET /lifetimeapi/rest/v2/downloads/{DownloadKey}`
+
+We then can change the `{DownloadKey}` with the value on the recieved URL or call the full value of the URL received from the previous step, performing the following request:
+
+`GET /lifetimeapi/rest/v2/downloads/f4ee541b-5791-4997-a56d-360d80c24821`
+
+Response body:
+
+```
+{
+    "fileContents":"UEsDBC0AAAgIAJRNaFaAfAsH//////////8VABQAVGVzdFNvdXJjZUNvZGUud[...]2aNVw2umzbtm3btm3btm3AAAAA=",
+    "contentType":"application/zip",
+    "fileDownloadName":"",
+    "lastModified":null,
+    "entityTag":null,
+    "enableRangeProcessing":false
+}
+```
+The response contains the source code package of the application in base 64 string form and the property `fileContents`. The string needs to be decoded to binary to be unpacked.
 
 If you are unable to download source code of the application, refer to [this article](https://success.outsystems.com/support/troubleshooting/application_lifecycle/unable_to_download_the_source_code_of_an_application/). 

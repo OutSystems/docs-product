@@ -227,7 +227,7 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 * Microsoft Windows Server 2019
 * Microsoft Windows Server 2016
 
-For these Operating System versions, OutSystems only supports Windows and MacOS editions that are supported by [Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple respectively.
+For these Operating System versions, OutSystems only supports Windows and macOS editions that are supported by [Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple respectively.
 
 #### Required Software
 

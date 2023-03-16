@@ -9,7 +9,7 @@ platform-version: o11
 
 # Expressions
 
-An expression consists of operands and operators, or just one operand. For example, **n + 1** is an expression with two operands, **n** and **1**, joined by the addition operator +. 
+An expression consists of [operands](../../../ref/logic/expressions/operands.md) and [operators](../../../ref/logic/expressions/operators.md), or just one operand. For example, **n + 1** is an expression with two operands, **n** and **1**, joined by the addition operator +. 
 
 If you are creating an expression and encounter errors, check [here](../../../ref/errors-and-warnings/errors/invalid-expression-error.md) for the causes and the actions you can take to resolve them. 
 

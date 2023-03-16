@@ -19,33 +19,7 @@ Create and send **Emails for Mobile and Reactive** along with **Attachments in M
 
 * You're using Platform Server 11.14.0 or later.
 
-    <div class="info" markdown="1">
-
-    You can use these features as technical preview in earlier Platform Server versions, by meeting the following requirements:
-
-    * For Emails and basic widgets, use Platform Server 11.12.0 or later.
-
-    * For Email templates, Image with binary content, List, Table, If,and Attachments, use Platform Server 11.13.0 or later
-
-    </div>
-
-**Emails for Mobile and Reactive** along with **Attachments in Mobile and Reactive emails** are generally available in Platform Server 11.14. You can use these features in earlier versions as technical preview, by meeting the following requirements:
-
-**Emails and basic widgets**
-
-* You're using Platform Server 11.12.0 or later.
-
-**Email templates, Image with binary content, List, Table, If**,
-
-* You're using Service Studio 11.11.12 or later.
-* You're using Platform Server 11.13.0 or later.
-
-**Attachments** 
-
-* You're using Service Studio 11.11.12 or later.
-* You're using Platform Server 11.13.0 or later.
-
-
+**Emails for Mobile and Reactive** along with **Attachments in Mobile and Reactive emails** are generally available in Platform Server 11.14.
 
 ## Getting started
 
@@ -94,7 +68,7 @@ There are many email clients and there's no consistent support for CSS. OutSyste
 
 ### CSS from producers
 
-In this technical preview, when your Email modules (consumers) use CSS from other modules (producers), the emails show the latest styles that you published in the environment. When you publish the producer, continue using the consumer to get the latest styles from the producer. There's no need to republish the producer.
+When your Email modules (consumers) use CSS from other modules (producers), the emails show the latest styles that you published in the environment. When you publish the producer, continue using the consumer to get the latest styles from the producer. There's no need to republish the producer.
 
 ### Clipped content in Gmail
 

@@ -71,15 +71,26 @@ Protection available specific to Android apps.
 ### Screen Reader detection { #android-screen-reader }
 
 * **What it does:** Blocks screen readers which are commonly used by malware trying to abuse the accessibility permissions of a device.
-* **What happens:** On positive detections blocks screen readers.
-* **Is it configurable?:** Yes. Currently, this feature is disabled by default. This is due to the fact that activating Screen Reader detection might affect apps using accessibility features. To activate this feature you will need to add the extensibility AppShield_blockUntrustedScreenreaders with the value “1”, see example below:
+* **What happens:** On positive detections blocks screen readers. If for some reason the screen reader could not be blocked, it blocks the app from running. If **ExitOnURL** is configured, an URL, which the app developer can use to inform the app end-user, is opened upon blocking the app. See [Configuring an exit URL for a blocked app](ExitOnUrl.md) 
+* **Is it configurable?:** Yes. Currently, this feature is disabled by default. This is due to the fact that activating Screen Reader detection might affect apps using accessibility features. To activate this feature you will need to add the extensibility BlockUntrustedScreenreaders with the value “true”, see example below:
 
 {
-    "name": "AppShield_blockUntrustedScreenreaders",
-    "value": "1"
+    "name": "BlockUntrustedScreenreaders",
+    "value": "true"
 },
 
 After activating this feature you will block all screen readers (other than the system ones);
+
+### Untrusted keyboard detection { #android-untrusted-keyboard }
+
+* **What it does:** Determines whether to exit the application when the currently used software keyboard is untrusted. All system installed keyboards are trusted if the device's firmware is trusted (i.e. the device is not rooted).
+* **What happens:** On positive detections blocks the app from running. If **ExitOnURL** is configured, an URL, which the app developer can use to inform the app end-user, is opened upon blocking the app. See [Configuring an exit URL for a blocked app](ExitOnUrl.md) 
+* **Is it configurable?:** Yes. Currently, this feature is disabled by default. To activate this feature you will need to add the extensibility BlockUntrustedKeyboards with the value “true”, see example below:
+
+{
+    "name": "BlockUntrustedKeyboards",
+    "value": "true"
+},
 
 ### Task hijacking protection
 

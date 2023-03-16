@@ -126,9 +126,9 @@ A list of reasons for app shutdown in Android devices.
 
 | Decimal | Explanation                                                               |
 | ------- | ------------------------------------------------------------------------- |
-| 0       | Device is rooted                                                          |
-| 1       | Application is modified or repackaged                                     |
-| 2       | Application is being run in an emulator                                   |
+| 0       | Device is rooted.                                                         |
+| 1       | Application is modified or repackaged<br />Note: This reason was removed from AppShield version 1.6.0 because it was not guaranteed to be triggered.                                                                            |
+| 2       | Application is being run in an emulator<br />Note: This reason was removed from AppShield version 1.6.0 because it was not guaranteed to be triggered.                                                                            |
 | 3       | Java debugger attached to app                                             |
 | 4       | Untrusted keyboard found                                                  |
 | 5       | Untrusted screen reader found                                             |

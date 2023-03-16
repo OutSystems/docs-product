@@ -130,6 +130,8 @@ A list of reasons for app shutdown in Android devices.
 | 1       | Application is modified or repackaged                                     |
 | 2       | Application is being run in an emulator                                   |
 | 3       | Java debugger attached to app                                             |
+| 4       | Untrusted keyboard found                                                  |
+| 5       | Untrusted screen reader found                                             |
 | 6       | Native code hooks, possibly inserted by malicious app                     |
 | 8       | Shield could not read configuration file                                  |
 | 9       | Problem with Native Debugger Protection                                   |

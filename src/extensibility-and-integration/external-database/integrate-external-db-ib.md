@@ -55,8 +55,6 @@ Once you establish a database connection, you can develop apps in Service Studio
 
 * It's not possible to manually define identifiers.
 
-* It's not possible to rename entities or attributes.
-
 ## Process overview
 
 To integrate with an external database using Integration Builder, follow these steps:

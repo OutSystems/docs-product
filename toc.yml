@@ -977,16 +977,14 @@
         - href: managing-the-applications-lifecycle/manage-tech-debt/overview-dashboard.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/ref-code-patterns.md
         - topics:
-            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/best-pratices.md
-            - topics:
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-inline-js-and-style.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-large-session-variables.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-site-property-updates.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/control-image-size.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/limit-records-sql.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-inline-js-and-style.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-large-session-variables.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-site-property-updates.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/control-image-size.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/limit-records-sql.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/tech-debt-formula.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-ignore-modules.md

@@ -411,7 +411,7 @@
     - develop/data/query/fetch-display.md
     
 # Client Action
-- ref/lang/auto/Class.Client Action.final.md:
+- ref/lang/auto/class.client.action.md:
     # Client Actions
     - develop/logic/actions.md#client-actions
     
@@ -440,7 +440,7 @@
     # Link
     - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md
     # Client Action
-    - ref/lang/auto/Class.Client Action.final.md
+    - ref/lang/auto/class.client.action.md
     # Screen
     - ref/lang/auto/Class.Screen.final.md
     # External Site
@@ -550,7 +550,7 @@
     # Navigate to Another Screen
     - develop/ui/navigation/navigate-to-detail-screen.md
     # Client Action
-    - ref/lang/auto/Class.Client Action.final.md
+    - ref/lang/auto/class.client.action.md
     # Screen
     - ref/lang/auto/Class.Screen.final.md
     # External Site
@@ -728,7 +728,7 @@
     - ref/lang/auto/builtinfunctions.final.md
 
 #     Client Action
--  ref/lang/auto/Class.Client Action.final.md:
+-  ref/lang/auto/class.client.action.md:
     - ref/lang/auto/Class.Run Client Action.final.md
 
 #     Server Action

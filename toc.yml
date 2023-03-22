@@ -1239,7 +1239,7 @@
                 # Logic Elements
                 - href: ref/logic/implementing-logic/logic-elements.md
                 - topics:
-                    - href: ref/lang/auto/Class.Client Action.final.md
+                    - href: ref/lang/auto/class.client.action.md
                     - href: ref/lang/auto/Class.Screen Action.final.md
                     - href: ref/lang/auto/Class.Server Action.final.md
                     - href: ref/logic/implementing-logic/download.md
@@ -1280,7 +1280,7 @@
             - href: ref/interfaces/adding-data-and-logic.md
             - topics:
                 #- href: ref/lang/auto/Class.Aggregate.final.md
-                #- href: ref/lang/auto/Class.Client Action.final.md
+                #- href: ref/lang/auto/class.client.action.md
                 - href: ref/lang/auto/Class.Data Action.final.md
                 - href: ref/lang/auto/Class.Script.final.md
             # Designing Screens

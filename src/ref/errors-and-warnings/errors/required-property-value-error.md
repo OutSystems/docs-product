@@ -211,6 +211,6 @@ It can also occur, for example, if you add a Client Action, add an input paramet
 
 **Recommended action**
 
-You need to set a [valid expression](../../../ref/logic/expressions/intro.md) for the [input parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md) of the [Client Action](../../../ref/lang/auto/Class.Client%20Action.final.md) in the logic. 
+You need to set a [valid expression](../../../ref/logic/expressions/intro.md) for the [input parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md) of the [Client Action](../../../ref/lang/auto/class.client.action.md) in the logic. 
 
 Alternatively, to add a Client Action to the logic and have the parameter automatically set to itself, select AI-Assisted Development in the logic and choose the Client Action.    

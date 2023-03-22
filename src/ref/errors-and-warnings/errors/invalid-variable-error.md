@@ -73,5 +73,5 @@ The error is also issued if you set the Variable property of the Assign to a [Si
 
 **Recommended action**
 
-You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Assign](../../../ref/lang/auto/Class.Assign.final.md) in the [Client Action](../../../ref/lang/auto/Class.Client%20Action.final.md).
+You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Assign](../../../ref/lang/auto/Class.Assign.final.md) in the [Client Action](../../../ref/lang/auto/class.client.action.md).
 

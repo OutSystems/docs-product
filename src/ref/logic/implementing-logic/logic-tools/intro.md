@@ -11,7 +11,7 @@ platform-version: o11
 The Service Studio toolbox contains a range of logic tools that help you build comprehensive apps. The logic tools allow you to, for example, run server actions that implement the business rules of your app, retrieve updated data from data sources, and assign values to variables. For more information about each of the logic tools, see:
 
 * [Start](../../../lang/auto/Class.Start.final.md)
-* [Client Action](<../../../lang/auto/Class.Client%20Action.final.md>)
+* [Client Action](<../../../lang/auto/Class.Client Action.final.md>)
 * [Server Action](<../../../lang/auto/Class.Server%20Action.final.md>)
 * [Refresh Data](<../../../lang/auto/Class.Refresh%20Data.final.md>)
 * [If](../../../lang/auto/Class.If.final.md)

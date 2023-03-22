@@ -8,7 +8,7 @@ platform-version: o11
 
 # Logic Tools
 
-The Service Studio toolbox contains a range of logic tools that help you build a comprehensive app. The logic tools allow you to, for example, run server actions that implement the business rules of your app, retrieve updated data from data sources, and assign values to variables. For more information about each of the logic tools, see:
+The Service Studio toolbox contains a range of logic tools that help you build comprehensive apps. The logic tools allow you to, for example, run server actions that implement the business rules of your app, retrieve updated data from data sources, and assign values to variables. For more information about each of the logic tools, see:
 
 * [Start](../../../lang/auto/Class.Start.final.md)
 * [Client Action](<../../../lang/auto/Class.Client%20Action.final.md>)

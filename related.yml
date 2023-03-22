@@ -30,8 +30,8 @@
   - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 - develop/logic/exceptions/handling-mechanism.md:
-    - ref/lang/auto/Class.Exception Handler.final.md
-    - ref/lang/auto/Class.Raise Exception.final.md
+    - ref/lang/auto/class.exception.handler.md
+    - ref/lang/auto/class.raise.exception.md
 
 # Caching
 - develop/data/caching.md:
@@ -69,7 +69,7 @@
 
 # Share a Client Variable between apps
 - develop/data/share-client-var-between-app.md:
-  - ref/lang/auto/Class.Client Variable.final.md
+  - ref/lang/auto/class.client.variable.md
   - external:
     - "How to maintain the state of a mobile screen": 
         https://success.outsystems.com/Documentation/Development_FAQs/How_to_maintain_the_state_of_a_mobile_screen
@@ -138,7 +138,7 @@
     - ref/lang/auto/Class.Radio Button Widget.final.md
 
 # Combo Box Widget
-- ref/lang/auto/Class.Combo Box Widget.final.md:
+- ref/lang/auto/class.combo.box.widget.md:
     # Choose One Value from a List
     - develop/ui/inputs/dropdown-combo.md
 
@@ -174,7 +174,7 @@
     # Check Box Widget
     - ref/lang/auto/Class.Check Box Widget.final.md
     # Combo Box Widget
-    - ref/lang/auto/Class.Combo Box Widget.final.md
+    - ref/lang/auto/class.combo.box.widget.md
     # Input Password Widget
     - ref/lang/auto/Class.Input Password Widget.final.md
     # Input Widget
@@ -227,7 +227,7 @@
     # Check Box Widget
     - ref/lang/auto/Class.Check Box Widget.final.md
     # Combo Box Widget
-    - ref/lang/auto/Class.Combo Box Widget.final.md
+    - ref/lang/auto/class.combo.box.widget.md
     # Input Password Widget
     - ref/lang/auto/Class.Input Password Widget.final.md
     # Input Widget
@@ -253,7 +253,7 @@
     - ref/lang/auto/Class.Web Screen.final.md
 
 - ref/lang/auto/Class.List Box Widget.final.md:
-    - ref/lang/auto/Class.Combo Box Widget.final.md
+    - ref/lang/auto/class.combo.box.widget.md
     - develop/ui/patterns/web/controls/dropdown.md
     - develop/ui/patterns/web/controls/dropdownselect.md
 
@@ -644,7 +644,7 @@
     - one-way: develop/logic/screen-block-lifecycle-events.md
 
 # Client Variable
-- ref/lang/auto/Class.Client Variable.final.md:
+- ref/lang/auto/class.client.variable.md:
     # Session Variables
     - ref/lang/auto/Class.Session Variable.final.md
 
@@ -675,14 +675,14 @@
     - ref/logic/expressions/intro.md
 
 #   Data Conversion
-- ref/lang/auto/builtinfunction.Data Conversion.final.md:
+- ref/lang/auto/builtinfunction.data.conversion.md:
     # Available Data Types
     - ref/data/data-types/available-data-types.md#explicit-conversion-functions
     # Expressions
     - ref/logic/expressions/intro.md
 
 #   Date and Time
-- ref/lang/auto/builtinfunction.Date and Time.final.md:
+- ref/lang/auto/builtinfunction.date.and.time.md:
     # Available Data Types
     - ref/data/data-types/available-data-types.md
     # Expressions
@@ -732,7 +732,7 @@
     - ref/lang/auto/Class.Run Client Action.final.md
 
 #     Server Action
--  ref/lang/auto/Class.Server Action.final.md:
+-  ref/lang/auto/class.server.action.md:
     - develop/logic/actions.md#server-actions
     - develop/logic/action-web.md#server-actions
     - ref/lang/auto/Class.Run Server Action.final.md
@@ -773,8 +773,8 @@
     - extensibility-and-integration/javascript/mobile/intro.md
 
 #     JSON Deserialize
--  ref/lang/auto/Class.JSON Deserialize.final.md:
-    - ref/lang/auto/Class.JSON Serialize.final.md
+-  ref/lang/auto/class.json.deserialize.md:
+    - ref/lang/auto/class.json.serialize.md
 
 #     Destination
 -  ref/lang/auto/Class.Destination.final.md:
@@ -785,23 +785,23 @@
     -  ref/lang/auto/Class.Switch.final.md
 
 #     For Each
--  ref/lang/auto/Class.For Each.final.md:
+-  ref/lang/auto/class.for.each.md:
     - develop/logic/list-iterate.md
 
 #     Exception Handler
--  ref/lang/auto/Class.Exception Handler.final.md:
+-  ref/lang/auto/class.exception.handler.md:
     - develop/logic/exceptions/intro.md
     - ref/lang/auto/Class.User Exception.final.md
     - ref/lang/auto/Class.Role Exception.final.md
 
 #     Raise Exception
--  ref/lang/auto/Class.Raise Exception.final.md:
+-  ref/lang/auto/class.raise.exception.final.md:
     - develop/logic/exceptions/intro.md
     - ref/lang/auto/Class.User Exception.final.md
     - ref/lang/auto/Class.Role Exception.final.md
 
 #     Trigger Event
--  ref/lang/auto/Class.Trigger Event.final.md:
+-  ref/lang/auto/class.trigger.event.md:
     - develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md
 
 #     SQL
@@ -809,18 +809,18 @@
     - develop/data/query/sql.md
 
 #     Excel To Record List
--  ref/lang/auto/Class.Excel To Record List.final.md:
-    - ref/lang/auto/Class.Record List To Excel.final.md
+-  ref/lang/auto/class.excel.to.record.list.md:
+    - ref/lang/auto/class.record.list.to.excel.md
     - one-way: getting-started/create-reactive-web.md
     - one-way: develop/data/excel-bootstrap.md
     - one-way: develop/ui/inputs/upload.md
 
 #     Ajax Refresh
--  ref/lang/auto/Class.Ajax Refresh.final.md:
+-  ref/lang/auto/class.ajax.refresh.md:
     - develop/logic/screen-partial-refresh.md
 
 #     Attach File
--  ref/lang/auto/Class.Attach File.final.md:
+-  ref/lang/auto/class.attach.file.md:
     - develop/logic/emails.md
     - ref/lang/auto/Class.Email.final.md
 
@@ -1798,12 +1798,12 @@
 
 # JSON
 
-- ref/lang/auto/Class.JSON Serialize.final.md:
+- ref/lang/auto/class.json.serialize.md:
     - external:
         - "Demo - Handling JSON data":
             https://www.outsystems.com/learn/lesson/1881/handling-json-data/
 
-- ref/lang/auto/Class.JSON Deserialize.final.md:   
+- ref/lang/auto/class.json.deserialize.md:   
     - external:
         - "Demo - Handling JSON data":
             https://www.outsystems.com/learn/lesson/1881/handling-json-data/

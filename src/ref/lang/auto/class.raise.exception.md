@@ -23,7 +23,7 @@ Make sure that an exception message doesn't contain internal information before 
 
 </div>
 
-The Raise Exception element ends an action flow. Therefore, it's not possible to include any elements in the flow after it. The execution continues from the [Exception Handler](<Class.Exception Handler.final.md>) that handles the exception raised by the Raise Exception element.
+The Raise Exception element ends an action flow. Therefore, it's not possible to include any elements in the flow after it. The execution continues from the [Exception Handler](<class.exception.handler.md>) that handles the exception raised by the Raise Exception element.
 
 When you raise an exception, OutSystems follows an algorithm to determine what's the Exception Handler that it should execute. Check [Exception Handling Mechanism](../../../develop/logic/exceptions/handling-mechanism.md) to learn more about the chain of Exception Handlers that the platform looks for and executes when you raise an exception.
 

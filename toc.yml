@@ -1108,7 +1108,7 @@
                 - href: ref/lang/auto/Class.Resource.final.md
                 - href: ref/lang/auto/Class.Runtime Property.final.md
                 - href: ref/lang/auto/Class.Session Variable.final.md
-                - href: ref/lang/auto/Class.Client Variable.final.md
+                - href: ref/lang/auto/class.client.variable.md
                 - href: ref/lang/auto/Class.Site Property.final.md
                 # Variables
                 - href: ref/data/handling-data/variables/intro.md
@@ -1220,8 +1220,8 @@
                 - href: ref/lang/auto/builtinfunction.Math.final.md
                 - href: ref/lang/auto/builtinfunction.Numeric.final.md
                 - href: ref/lang/auto/builtinfunction.Text.final.md
-                - href: ref/lang/auto/builtinfunction.Date and Time.final.md
-                - href: ref/lang/auto/builtinfunction.Data Conversion.final.md
+                - href: ref/lang/auto/builtinfunction.date.and.time.md
+                - href: ref/lang/auto/builtinfunction.data.conversion.md
                 - href: ref/lang/auto/builtinfunction.Format.final.md
                 - href: ref/lang/auto/builtinfunction.Email.final.md
                 - href: ref/lang/auto/builtinfunction.Environment.final.md
@@ -1241,7 +1241,7 @@
                 - topics:
                     - href: ref/lang/auto/class.client.action.md
                     - href: ref/lang/auto/Class.Screen Action.final.md
-                    - href: ref/lang/auto/Class.Server Action.final.md
+                    - href: ref/lang/auto/class.server.action.md
                     - href: ref/logic/implementing-logic/download.md
                     - href: ref/lang/auto/Class.Role.final.md
                     - href: ref/lang/auto/Class.User Exception.final.md
@@ -1252,25 +1252,25 @@
                     - href: ref/lang/auto/Class.Start.final.md
                     - href: ref/lang/auto/Class.Run Client Action.final.md
                     - href: ref/lang/auto/Class.Run Server Action.final.md
-                    - href: ref/lang/auto/Class.Refresh Data.final.md
+                    - href: ref/lang/auto/class.refresh.data.md
                     #- href: ref/lang/auto/Class.Aggregate.final.md
                     #- href: ref/lang/auto/Class.SQL.final.md
                     - href: ref/lang/auto/Class.If.final.md
                     - href: ref/lang/auto/Class.Switch.final.md
-                    - href: ref/lang/auto/Class.For Each.final.md
+                    - href: ref/lang/auto/class.for.each.md
                     - href: ref/lang/auto/Class.Assign.final.md
-                    - href: ref/lang/auto/Class.Record List To Excel.final.md
-                    - href: ref/lang/auto/Class.Excel To Record List.final.md
-                    - href: ref/lang/auto/Class.JSON Deserialize.final.md
-                    - href: ref/lang/auto/Class.JSON Serialize.final.md
-                    - href: ref/lang/auto/Class.Exception Handler.final.md
-                    - href: ref/lang/auto/Class.Raise Exception.final.md
+                    - href: ref/lang/auto/class.record.list.to.excel.md
+                    - href: ref/lang/auto/class.excel.to.record.list.md
+                    - href: ref/lang/auto/class.json.deserialize.md
+                    - href: ref/lang/auto/class.json.serialize.md
+                    - href: ref/lang/auto/class.exception.handler.md
+                    - href: ref/lang/auto/class.raise.exception.md
                     - href: ref/lang/auto/Class.Comment.final.md
                     - href: ref/lang/auto/Class.Message.final.md
                     - href: ref/lang/auto/Class.Destination.final.md
                     - href: ref/lang/auto/Class.Download.final.md
                     - href: ref/lang/auto/Class.JavaScript.final.md
-                    - href: ref/lang/auto/Class.Trigger Event.final.md
+                    - href: ref/lang/auto/class.trigger.event.md
                     - href: ref/lang/auto/Class.End.final.md
 
         # Interfaces
@@ -1403,8 +1403,8 @@
                     - href: ref/lang/auto/Class.Button Widget.final.md
                     - href: ref/lang/auto/Class.Cell Widget.final.md
                     - href: ref/lang/auto/Class.Check Box Widget.final.md
-                    - href: ref/lang/auto/Class.Combo Box Widget.final.md
-                    - href: ref/lang/auto/Class.Comment Widget.final.md
+                    - href: ref/lang/auto/class.combo.box.widget.md
+                    - href: ref/lang/auto/class.comment.widget.md
                     - href: ref/lang/auto/Class.Container Widget.final.md
                     - href: ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md
                     - href: ref/lang/auto/Class.Edit Record Widget.final.md
@@ -1518,22 +1518,22 @@
                 #- href: ref/lang/auto/Class.Assign.final.md
                 #- href: ref/lang/auto/Class.Run Server Action.final.md
                 #- href: ref/lang/auto/Class.SQL.final.md
-                #- href: ref/lang/auto/Class.Excel To Record List.final.md
-                #- href: ref/lang/auto/Class.JSON Deserialize.final.md
-                #- href: ref/lang/auto/Class.JSON Serialize.final.md
-                - href: ref/lang/auto/Class.Ajax Refresh.final.md
-                #- href: ref/lang/auto/Class.Record List To Excel.final.md
-                #- href: ref/lang/auto/Class.Refresh Data.final.md
-                - href: ref/lang/auto/Class.Attach File.final.md
+                #- href: ref/lang/auto/class.excel.to.record.list.md
+                #- href: ref/lang/auto/class.json.deserialize.md
+                #- href: ref/lang/auto/class.json.serialize.md
+                - href: ref/lang/auto/class.ajax.refresh.md
+                #- href: ref/lang/auto/class.record.list.to.excel.md
+                #- href: ref/lang/auto/class.refresh.data.md
+                - href: ref/lang/auto/class.attach.file.md
                 #- href: ref/lang/auto/Class.Download.final.md
                 #- href: ref/lang/auto/Class.Send Email.final.md
                 #- href: ref/lang/auto/Class.Destination.final.md
                 #- href: ref/lang/auto/Class.If.final.md
-                #- href: ref/lang/auto/Class.For Each.final.md
+                #- href: ref/lang/auto/class.for.each.md
                 #- href: ref/lang/auto/Class.Switch.final.md
                 #- href: ref/lang/auto/Class.Comment.final.md
-                #- href: ref/lang/auto/Class.Exception Handler.final.md
-                #- href: ref/lang/auto/Class.Raise Exception.final.md
+                #- href: ref/lang/auto/class.exception.handler.md
+                #- href: ref/lang/auto/classraise.exception.md
                 #- href: ref/lang/auto/Class.End.final.md
                 #- href: ref/lang/auto/Class.Start.final.md
 

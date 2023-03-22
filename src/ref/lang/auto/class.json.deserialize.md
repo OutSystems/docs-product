@@ -91,5 +91,5 @@ JSON Deserialize converts JSON string to one of the following data types:
 
 ## Additional notes
 
-Check [JSON Serialize](<Class.JSON Serialize.final.md#notes>) for additional remarks on the JSON Deserialize/Serialize operations.
+Check [JSON Serialize](<class.json.serialize.md#notes>) for additional remarks on the JSON Deserialize/Serialize operations.
 

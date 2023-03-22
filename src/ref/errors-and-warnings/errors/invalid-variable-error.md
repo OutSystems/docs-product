@@ -51,7 +51,7 @@ You added a Server Action and added logic to the flow by selecting Set variable.
 
 **Recommended action**
 
-You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Assign](../../../ref/lang/auto/Class.Assign.final.md) in the [Server Action](../../../ref/lang/auto/Class.Server%20Action.final.md). 
+You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Assign](../../../ref/lang/auto/Class.Assign.final.md) in the [Server Action](../../../ref/lang/auto/class.server.action.md). 
 
 ##  Unknown variable in  &lt;Input_widget_name> Input
 
@@ -67,7 +67,7 @@ You need to set a valid value for the [Variable](../../../ref/data/handling-data
 
 **Cause**
 
-You added a Client Action and added logic to the flow by selecting Set variable. Then, in the Assign, you set the Variable property to an [input parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md), [output parameter](../../../ref/lang/auto/Class.Output%20Parameter.final.md), [local variable](../../../ref/lang/auto/Class.Local%20Variable.final.md), or [client variable](../../../ref/lang/auto/Class.Client%20Variable.final.md). The parameter or variable was subsequently deleted. 
+You added a Client Action and added logic to the flow by selecting Set variable. Then, in the Assign, you set the Variable property to an [input parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md), [output parameter](../../../ref/lang/auto/Class.Output%20Parameter.final.md), [local variable](../../../ref/lang/auto/Class.Local%20Variable.final.md), or [client variable](../../../ref/lang/auto/class.client.variable.md). The parameter or variable was subsequently deleted. 
 
 The error is also issued if you set the Variable property of the Assign to a [Site Property](../../../ref/lang/auto/Class.Site%20Property.final.md).
 

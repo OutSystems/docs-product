@@ -1250,8 +1250,8 @@
                 - href: ref/logic/implementing-logic/logic-tools/intro.md
                 - topics:
                     - href: ref/lang/auto/Class.Start.final.md
-                    - href: ref/lang/auto/Class.Run Client Action.final.md
-                    - href: ref/lang/auto/Class.Run Server Action.final.md
+                    - href: ref/lang/auto/class.run.client.action.md
+                    - href: ref/lang/auto/class.run.server.action.md
                     - href: ref/lang/auto/class.refresh.data.md
                     #- href: ref/lang/auto/Class.Aggregate.final.md
                     #- href: ref/lang/auto/Class.SQL.final.md
@@ -1516,7 +1516,7 @@
             - topics:
                 #- href: ref/lang/auto/Class.Aggregate.final.md
                 #- href: ref/lang/auto/Class.Assign.final.md
-                #- href: ref/lang/auto/Class.Run Server Action.final.md
+                #- href: ref/lang/auto/class.run.server.action.md
                 #- href: ref/lang/auto/Class.SQL.final.md
                 #- href: ref/lang/auto/class.excel.to.record.list.md
                 #- href: ref/lang/auto/class.json.deserialize.md

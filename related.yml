@@ -729,13 +729,13 @@
 
 #     Client Action
 -  ref/lang/auto/class.client.action.md:
-    - ref/lang/auto/Class.Run Client Action.final.md
+    - ref/lang/auto/class.run.client.action.md
 
 #     Server Action
 -  ref/lang/auto/class.server.action.md:
     - develop/logic/actions.md#server-actions
     - develop/logic/action-web.md#server-actions
-    - ref/lang/auto/Class.Run Server Action.final.md
+    - ref/lang/auto/class.run.server.action.md
     - develop/reuse-and-refactor/encapsulate-logic.md
     - external:
         - "A course about Logic in Training":
@@ -747,8 +747,8 @@
     - develop/security/user-roles/intro.md
 
 # Run Server Action
-- ref/lang/auto/Class.Run Server Action.final.md:
-    - ref/lang/auto/Class.Run Client Action.final.md
+- ref/lang/auto/class.run.server.action.md:
+    - ref/lang/auto/class.run.client.action.md
     - develop/reuse-and-refactor/encapsulate-logic.md
 
 #     User Exception

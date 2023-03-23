@@ -27,4 +27,3 @@ OutSystems offers the following adaptive patterns:
 * [Display on Device](displayondevice.md)
 * [Gallery](gallery.md) 
 * [Master Detail](masterdetail.md)
-

@@ -19,5 +19,5 @@ Your module has a reference to a producer module that was not found.
 
 Do one of the following:
 
-* Check with the producer module's owner to determine what the cause might be for the missing [module](../../../ref/lang/auto/Class.Module.final.md).
+* Check with the producer module's owner to determine what the cause might be for the missing [module](../../../ref/lang/auto/class-module.md).
 * Check with the Platform Server administrator.

@@ -50,5 +50,5 @@ An expression is what you edit in the expression editor. An expression consists 
 
 To quickly display the result of an expression, use the expression widget. To see how to use the expression widget, with examples, see:
 
-* [Expression widget](../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md)
+* [Expression widget](../../ref/lang/auto/servicestudio-plugin-nrwidgets-expression.md)
 

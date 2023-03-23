@@ -1,15 +1,15 @@
 ---
-kinds: ServiceStudio.Plugin.NRWidgets.ListItemDescriptor
-helpids: 30031
-summary: Reference information on the List Item widget for allowing you to displays a list item with full swipe behavior capability, containing a List Action widget to define the swiping behavior.
-tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; list-item-widget; list-item-swipe
+kinds: ServiceStudio.Plugin.NRWidgets.ListItemActionDescriptor
+helpids: 30077
+summary: Reference information on the List Action widget for allowing you to define the behavior when swiping the correspondent List Item, which can be executing a screen action or navigating to another screen.
+tags: runtime-mobileandreactiveweb; outsystems-designing-screens; reference; designing-screens; list-action-widget; list-item-swipe
 locale: en-us
-guid: 7378bd28-e563-4ca9-bede-731dca5fa49f
+guid: 0cfabe1b-7274-404a-901d-e334b007fb26
 app_type: mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# List Item
+# List Action
 
 <div class="info" markdown="1">
 
@@ -17,9 +17,11 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
-Displays a list item with full swipe behavior capability, containing a [List Action widget](<ServiceStudio.Plugin.NRWidgets.ListItemAction.final.md>) to define the swiping behavior.
+Defines the behavior when swiping the correspondent [List Item](servicestudio-plugin-nrwidgets-listitem.md), which can be executing a screen action or navigating to another screen.
 
-You can use it for example to display an entity record.
+To insert a new List Action, select the List Item and then click on the toolbar button according to the desired swipe direction for your List Action &#8212; "Swipe Right Action" or "Swipe Left Action":
+
+![](<images/list-action-toolbar-buttons.png>)
 
 ## Properties
 
@@ -42,25 +44,18 @@ You can use it for example to display an entity record.
 <td></td>
 </tr>
 <tr>
-<td title="TriggerActionOnFullSwipeLeft">Full Swipe Left</td>
-<td>Set to Yes to have default action triggered by a full swipe left. Default action is the rightmost right action.</td>
+<td title="Visible">Visible</td>
+<td>Boolean literal or expression that defines if the widget is displayed.</td>
 <td>Yes</td>
-<td>Yes</td>
-<td>The action will only be available on devices that support touch controls (for example, when accessing application on a tablet).</td>
-</tr>
-<tr>
-<td title="TriggerActionOnFullSwipeRight">Full Swipe Right</td>
-<td>Set to Yes to have default action triggered by a full swipe right. Default action is the leftmost left action.</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>The action will only be available on devices that support touch controls (for example, when accessing application on a tablet).</td>
+<td>True</td>
+<td></td>
 </tr>
 <tr>
 <td title="Style">Style Classes</td>
 <td>Specifies one or more style classes to apply to the widget. Separate multiple values with spaces.</td>
 <td></td>
-<td>"list-item"</td>
-<td></td>
+<td>"list-item-action"</td>
+<td>The first list action added to the Right Actions/Left Actions list item placeholder will have an additional style class 'list-item-action-primary'; subsequent list actions will have an additional style class 'list-item-action-default'.</td>
 </tr>
 <tr >
 <th colspan="5">Attributes</th>
@@ -97,7 +92,7 @@ You can use it for example to display an entity record.
 <tr>
 <td title="OnClick">On Click</td>
 <td>Screen action to be executed or a screen to navigate to when the widget is clicked.</td>
-<td></td>
+<td>Yes</td>
 <td></td>
 </tr>
 <tr>

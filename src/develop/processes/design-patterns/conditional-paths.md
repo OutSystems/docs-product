@@ -7,7 +7,7 @@ platform-version: o11
 
 # Designing Conditional Paths
 
-Use this pattern to design multiple paths where only one of them is followed in the process flow. Use the [Decision](<../../../ref/lang/auto/Class.Decision.final.md>) tool to design this pattern.
+Use this pattern to design multiple paths where only one of them is followed in the process flow. Use the [Decision](<../../../ref/lang/auto/class-decision.md>) tool to design this pattern.
 
 When the process is executed, it follows the path of the connector corresponding to the **Outcome** of the **Decision**.
 

@@ -53,7 +53,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     ![Gallery widget placeholders](<images/gallery-list-ss.png>)
 
-    To use the Gallery UI Pattern with items from a database, drag a [List](<../../../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md>) into the Gallery widget and create your custom content.
+    To use the Gallery UI Pattern with items from a database, drag a [List](<../../../../../ref/lang/auto/servicestudio-plugin-nrwidgets-list.md>) into the Gallery widget and create your custom content.
 
     In this example, we delete the list and add local images to the Gallery widget.
 

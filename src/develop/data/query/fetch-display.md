@@ -23,7 +23,7 @@ Here is how you can fetch data in your app by using an Aggregate. Aggregates are
 
 <div class="info" markdown="1">
 
-This is an example of getting data with an Aggregate to a Screen. Both Aggregate and Screen run in the **client**. For more information about creating Aggregates in the **server** logic, see [Server-side Aggregates](../../../ref/lang/auto/Class.Aggregate.final.md#server-side-aggregates).
+This is an example of getting data with an Aggregate to a Screen. Both Aggregate and Screen run in the **client**. For more information about creating Aggregates in the **server** logic, see [Server-side Aggregates](../../../ref/lang/auto/class-aggregate.md#server-side-aggregates).
 
 </div>
 
@@ -94,4 +94,4 @@ Once you fetch data from the database, use one of many OutSystems widgets to sho
 
 ## Traditional Web App
 
-For more information on how to add an Aggregate in Traditional Web App, see [Aggregates in Traditional Web Apps](../../../ref/lang/auto/Class.Aggregate.final.md#traditional-web-apps).
+For more information on how to add an Aggregate in Traditional Web App, see [Aggregates in Traditional Web Apps](../../../ref/lang/auto/class-aggregate.md#traditional-web-apps).

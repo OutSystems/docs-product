@@ -41,7 +41,7 @@ You can use the Light Box Image UI Pattern to open smaller thumbnail images in f
 
     ![](<images/lightboximage-13-ss.png>)
 
-1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget. This is a thumbnail image.
+1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/class-image-widget.md>) into the Light Box Image widget. This is a thumbnail image.
 
     The **Select Image** pop-up is displayed.
 

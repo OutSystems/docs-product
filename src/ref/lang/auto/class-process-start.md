@@ -15,7 +15,7 @@ However, when designing the process flow of your process, you can start specific
 
 ## Starting Alternative Flows
 
-Whenever an entity record is **created** or **updated** with an Entity Action you may use the [Conditional Start](<Class.Conditional Start.final.md>) process activity to start alternative flows to your normal process flow. A typical usage is to handle exceptions to the normal process flow.
+Whenever an entity record is **created** or **updated** with an Entity Action you may use the [Conditional Start](<class-conditional-start.md>) process activity to start alternative flows to your normal process flow. A typical usage is to handle exceptions to the normal process flow.
 
 ### Example
 

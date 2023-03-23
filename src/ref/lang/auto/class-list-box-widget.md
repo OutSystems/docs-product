@@ -26,7 +26,7 @@ Allows the user to select one or more values from a list of possible values.
 
 Consider the following alternatives if your users need to select only **one value** from a list:
 
-* [Combo Box Widget](<class.combo.box.widget.md>)
+* [Combo Box Widget](<class-combo-box-widget.md>)
 * [Dropdown](../../../develop/ui/patterns/web/controls/dropdown.md) UI Pattern
 
 </div>

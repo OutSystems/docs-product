@@ -7,7 +7,7 @@ platform-version: o11
 
 # Designing Waiting Activities
 
-Use this pattern to design flow paths which, at some point, can only proceed the execution after some condition is verified. Use the [Wait](<../../../ref/lang/auto/Class.Wait.final.md>) activity to design this pattern.
+Use this pattern to design flow paths which, at some point, can only proceed the execution after some condition is verified. Use the [Wait](<../../../ref/lang/auto/class-wait.md>) activity to design this pattern.
 
 The Wait activity holds the process execution until an event occurs, a timeout or database event, or if explicitly closed, using the **ActivityClose** action in an action flow.
 

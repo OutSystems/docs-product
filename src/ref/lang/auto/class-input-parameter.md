@@ -56,10 +56,10 @@ The following elements displayed in the element tree can have Input Parameters:
 
 The Input Parameters of the following elements have additional properties:
 
-* [Input Parameter](ServiceStudio.Plugin.SOAP.SOAPActionInput.final.md) of a consumed SOAP Web Service Method
-* [Input Parameter](ServiceStudio.Plugin.RESTService.RestServiceActionInput.final.md) of an exposed REST API Method
-* [Input Parameter](ServiceStudio.Plugin.SAP.SapActionInput.final.md) of a SAP Remote Function
-* [Query Parameter](<Class.Query Parameter.final.md>) of a SQL element
+* [Input Parameter](servicestudio-plugin-soap-soapactioninput.md) of a consumed SOAP Web Service Method
+* [Input Parameter](servicestudio-plugin-restservice-restserviceactioninput.md) of an exposed REST API Method
+* [Input Parameter](servicestudio-plugin-sap-sapactioninput.md) of a SAP Remote Function
+* [Query Parameter](<class-query-parameter.md>) of a SQL element
 
 Check their reference topics for more information.
 

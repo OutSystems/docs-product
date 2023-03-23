@@ -7,7 +7,7 @@ platform-version: o11
 
 # Designing Automatic Activities
 
-Use this pattern to design action flows, adding automated business logic to your processes with the [Automatic Activity](<../../../ref/lang/auto/Class.Automatic Activity.final.md>) as, for example:
+Use this pattern to design action flows, adding automated business logic to your processes with the [Automatic Activity](<../../../ref/lang/auto/class-automatic-activity.md>) as, for example:
 
 * Integrate with external systems through extensions. See an example in [Designing Polling of External Systems](poll-external-systems.md).
 

@@ -53,7 +53,7 @@ To check end user Roles in your expressions, OutSystems provides the following b
 
 This function is available in the Scope Tree of the Expression Editor, under the **Roles** folder. It's only applicable to **active users**.
 
-Besides this function for each role, there are other built-in functions related to Roles. Check the [Roles built-in functions](../../../ref/lang/auto/builtinfunction.Roles.final.md).
+Besides this function for each role, there are other built-in functions related to Roles. Check the [Roles built-in functions](../../../ref/lang/auto/builtinfunction-roles.md).
 
 ### Role Exceptions
 

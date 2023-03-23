@@ -19,7 +19,7 @@ In the following example, the `GetWeatherData` Client Action has two Input Param
 
 ## How to use
 
-To return a value from inside an action flow or from a Process, you can use an [Assign](Class.Assign.final.md) element to set the Output Parameter to the value you wish to return.
+To return a value from inside an action flow or from a Process, you can use an [Assign](class-assign.md) element to set the Output Parameter to the value you wish to return.
 
 For example, consider the `GetWeatherData` Client Action presented previously. You can use an Assign to set the value of the `WeatherInfo` Output Parameter to the `Data` Output Parameter value returned by the `API_GetWeatherData` Server Action:
 
@@ -49,9 +49,9 @@ External integrations like consumed REST APIs, consumed SOAP Web Services, and S
 
 The Output Parameters of the following elements have additional properties:
 
-* [Output Parameter](ServiceStudio.Plugin.SOAP.SOAPActionOutput.final.md) of a consumed SOAP Web Service Method
-* [Output Parameter](ServiceStudio.Plugin.RESTService.RestServiceActionOutput.final.md) of an exposed REST API Method
-* [Output Parameter](ServiceStudio.Plugin.SAP.SapActionOutput.final.md) of a SAP Remote Function
+* [Output Parameter](servicestudio-plugin-soap-soapactionoutput.md) of a consumed SOAP Web Service Method
+* [Output Parameter](servicestudio-plugin-restservice-restserviceactionoutput.md) of an exposed REST API Method
+* [Output Parameter](servicestudio-plugin-sap-sapactionoutput.md) of a SAP Remote Function
 
 Check their reference topics for more information.
 

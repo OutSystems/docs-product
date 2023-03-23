@@ -41,7 +41,7 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
 1. Place the content you want to appear in the Carousel into the Items placeholder. (In this example we use images.) 
 
-1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget. This is a thumbnail image. 
+1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/class-image-widget.md>) into the Light Box Image widget. This is a thumbnail image. 
 
     The **Select Image** pop-up is displayed.
 
@@ -51,7 +51,7 @@ You can use the Carousel UI Pattern to display multiple items in a horizontal sl
 
     Note: In this example, the image property Type is set to **Static**. You can also choose [External URL or Database](../../../../../develop/ui/image/display-image.md).
 
-    To use a Carousel with items from a database, drag a [ListRecords widget](<../../../../../ref/lang/auto/Class.List Records Widget.final.md>) into Items placeholder and create your custom content.
+    To use a Carousel with items from a database, drag a [ListRecords widget](<../../../../../ref/lang/auto/class-list-records-widget.md>) into Items placeholder and create your custom content.
 
     ![](<images/carousel-2-ss.png>)
 

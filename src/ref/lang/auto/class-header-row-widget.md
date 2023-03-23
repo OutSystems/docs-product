@@ -16,13 +16,13 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-Widget containing the cells that are part of the header row of a [Table Records Widget](<Class.Table Records Widget.final.md>).
+Widget containing the cells that are part of the header row of a [Table Records Widget](<class-table-records-widget.md>).
 
 ![Header Row widget selected in Service Studio](images/header-row-example-ss.png)
 
 When you add a Table Records Widget to a screen, the table gets a Header Row Widget automatically. To hide the header row of the table, set the **Show Header** property of the Table Records Widget to `No`.
 
-Each time you add or remove a new attribute to the Table Records Widget, Service Studio adds or removes a table [Cell](<Class.Cell Widget.final.md>) to/from both the Header Row and the regular table [Rows](<Class.Row Widget.final.md>) used to display data.
+Each time you add or remove a new attribute to the Table Records Widget, Service Studio adds or removes a table [Cell](<class-cell-widget.md>) to/from both the Header Row and the regular table [Rows](<class-row-widget.md>) used to display data.
 
 For example, in a Table Records Widget where you added two attributes, this is the result in the widget tree, with one Header Row and one Row (at design time), each containing two Cells:
 

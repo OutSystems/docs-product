@@ -1,14 +1,14 @@
 ---
-kinds: ServiceStudio.Model.WebWidgets+EditRecord+Kind, ServiceStudio.Model.WebWidgets+ReferenceEditRecord+Kind
-helpids: 4021
+kinds: ServiceStudio.Model.WebWidgets+ShowRecord+Kind, ServiceStudio.Model.WebWidgets+ReferenceShowRecord+Kind
+helpids: 4022
 tags: runtime-traditionalweb
 locale: en-us
-guid: 74eded7e-7771-4b79-80bd-b047640728e2
+guid: d570d3e9-60ad-40d8-a87b-df968ff67d2a
 app_type: traditional web apps
 platform-version: o11
 ---
 
-# Edit Record Widget
+# Show Record Widget
 
 <div class="info" markdown="1">
 
@@ -16,13 +16,13 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-Allows the user to create or edit a single record of an Entity or a Structure.
+Displays a single record of an Entity or a Structure.
 
 <div class="info" markdown="1">
 
-The layout of the Edit Record widget is implemented in a tabular way, which limits the organization of the inputs and its captions. The [Form widget](<ServiceStudio.Plugin.Widgets.Form.final.md>) implements the same functionality with a more flexible layout.
+The layout of the Show Record widget is implemented in a tabular way, which limits the organization of the inputs and its captions. The [Form widget](<servicestudio-plugin-widgets-form.md>) implements the same functionality with a more flexible layout.
 
-Use the [Form widget](<ServiceStudio.Plugin.Widgets.Form.final.md>) instead of the Edit Record widget to create or edit a single record of an Entity or a Structure.
+Use the [Form widget](<servicestudio-plugin-widgets-form.md>) instead of the Show Record widget to display a single record of an Entity or a Structure.
 
 </div>
 
@@ -49,13 +49,6 @@ Use the [Form widget](<ServiceStudio.Plugin.Widgets.Form.final.md>) instead of t
 <tr>
 <td title="Source Record">Source Record</td>
 <td>Current record being edited in the widget.</td>
-<td></td>
-<td></td>
-<td>The expression used in this property (if present) is evaluated only when the web screen is loading, immediately after the Screen Preparation.<br/>This property is always evaluated, even when the widget is inside an If widget.</td>
-</tr>
-<tr>
-<td title="Record Definition">Record Definition</td>
-<td>Entity or structure that defines the internal values of the widget.</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -92,21 +85,21 @@ Use the [Form widget](<ServiceStudio.Plugin.Widgets.Form.final.md>) instead of t
 <td title="Style Classes">Style Classes</td>
 <td>Specifies one or more style classes to apply to the widget. Separate multiple values with spaces.</td>
 <td></td>
-<td>"EditRecord"</td>
+<td>"ShowRecord"</td>
 <td></td>
 </tr>
 <tr>
 <td title="Label Style">Label Style</td>
 <td>Specifies one or more style classes to apply to labels. Separate multiple values with spaces.</td>
 <td></td>
-<td>"EditRecord_Caption"</td>
+<td>"ShowRecord_Caption"</td>
 <td></td>
 </tr>
 <tr>
 <td title="Value Style">Value Style</td>
 <td>Specifies one or more style classes to apply to values. Separate multiple values with spaces.</td>
 <td></td>
-<td>"EditRecord_Value"</td>
+<td>"ShowRecord_Value"</td>
 <td></td>
 </tr>
 <tr >
@@ -144,16 +137,9 @@ Use the [Form widget](<ServiceStudio.Plugin.Widgets.Form.final.md>) instead of t
 <tbody>
 <tr>
 <td>Record</td>
-<td>Current record being edited in the widget.</td>
-<td></td>
-<td>Record</td>
-<td></td>
-</tr>
-<tr>
-<td>Valid</td>
-<td>False when the Valid runtime property of one or more widgets grouped by the Edit Record is False.</td>
+<td>Current record being displayed in the widget.</td>
 <td>Yes</td>
-<td>Boolean</td>
+<td>Record</td>
 <td></td>
 </tr>
 <tr>

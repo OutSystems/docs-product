@@ -40,7 +40,7 @@ If you want to... | Check out... |
 | Create logic to send emails | [Sending Emails](sending.md)| 
 | See what widgets you can use  | [Widgets available in Emails](widgets.md#widgets-available-in-emails)| 
 | See what data types you can use in inputs  | [Available data types](../../../ref/data/data-types/available-data-types.md), in particular [compound data types](../../../ref/data/data-types/available-data-types.md#compound-data-types)  | 
-| Validate or format email addresses | [Email built-in functions](../../../ref/lang/auto/builtinfunction.Email.final.md)  | 
+| Validate or format email addresses | [Email built-in functions](../../../ref/lang/auto/builtinfunction-email.md)  | 
 | Learn more about security | [Security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices) and [server-to-client data transfer optimization](../client-data-transfer-optimization-tp.md) | 
 
 

@@ -17,7 +17,7 @@ As an example, think of an integration with SAP, where a process submits an invo
 
 When the process is executed the following occurs:
 
-1. The [Automatic Activity](<../../../ref/lang/auto/Class.Automatic Activity.final.md>) submits the invoice to SAP.
+1. The [Automatic Activity](<../../../ref/lang/auto/class-automatic-activity.md>) submits the invoice to SAP.
 
 2. The **Wait** activity holds the execution of the process.
 

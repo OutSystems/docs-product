@@ -51,7 +51,7 @@ In this example, we create a toggle button to activate a widget that can is acti
 
     ![](<images/togglebutton-9-ss.png>)
 
-1. In this example, we add some text and a button. We enter a name for the [button](<../../../../../ref/lang/auto/Class.Button Widget.final.md>) (SubmitButton), and set the **Enabled** property to the local variable we created earlier (IsToggled).
+1. In this example, we add some text and a button. We enter a name for the [button](<../../../../../ref/lang/auto/class-button-widget.md>) (SubmitButton), and set the **Enabled** property to the local variable we created earlier (IsToggled).
 
     ![](images/togglebutton-11-ss.png?width=800)
 

@@ -7,7 +7,7 @@ platform-version: o11
 
 # Limit the Use of Conditional Starts
 
-When you add [Conditional Starts](<../../../ref/lang/auto/Class.Conditional Start.final.md>) to a [Process](../intro.md) you should consider well the business case you are addressing, or else you may be **introducing unnecessary complexity to the deployment of applications**. This is essentially due to:
+When you add [Conditional Starts](<../../../ref/lang/auto/class-conditional-start.md>) to a [Process](../intro.md) you should consider well the business case you are addressing, or else you may be **introducing unnecessary complexity to the deployment of applications**. This is essentially due to:
 
 1. Each conditional start has its own life cycle and it keeps an activity instance permanently active and listening to events. On each event, a new execution of the flow is launched, meaning that, multiple events launch multiple executions growing the amount of information. When deploying an application, the [impact analysis](../process-upgrade/intro.md) goes over all this information;
 
@@ -15,7 +15,7 @@ When you add [Conditional Starts](<../../../ref/lang/auto/Class.Conditional Star
 
 In this case, we recommend that you do one of the following:
 
-* Analyze processes to identify conditional starts that are only necessary after a specific point in the process flow. Use the [dependency connector](<../../../ref/lang/auto/Class.Conditional Start.final.md>) to postpone the listening activity of a conditional start to only when it is really necessary. This way, the validation during deployment has less conditional starts to analyze.
+* Analyze processes to identify conditional starts that are only necessary after a specific point in the process flow. Use the [dependency connector](<../../../ref/lang/auto/class-conditional-start.md>) to postpone the listening activity of a conditional start to only when it is really necessary. This way, the validation during deployment has less conditional starts to analyze.
 
 ## Example
 
@@ -45,4 +45,4 @@ This way, there are less conditional starts. Furthermore, the new process for th
 
 To **reduce the upgrade impact** of deleting the flow of the conditional start, consider the recommendation explained in topic [Impact of Deleting Activities from Process Flows](../process-upgrade/impact-delete-activities.md).
 
-Finally, validate situations in which the main process may be [Terminated](<../../../ref/lang/auto/Class.Process End.final.md>). In this case, all processes replacing conditional starts have also to be terminated to keep the same behavior of the conditional start. Consider implementing this logic using the **ProcessTerminate** Action.
+Finally, validate situations in which the main process may be [Terminated](<../../../ref/lang/auto/class-process-end.md>). In this case, all processes replacing conditional starts have also to be terminated to keep the same behavior of the conditional start. Consider implementing this logic using the **ProcessTerminate** Action.

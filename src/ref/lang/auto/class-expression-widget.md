@@ -1,14 +1,14 @@
 ---
-kinds: ServiceStudio.Model.WebWidgets+Table+Kind, ServiceStudio.Model.WebWidgets+ReferenceTable+Kind
-helpids: 4015
+kinds: ServiceStudio.Model.WebWidgets+InlineExpression+Kind, ServiceStudio.Model.WebWidgets+ReferenceInlineExpression+Kind
+helpids: 4020
 tags: runtime-traditionalweb
 locale: en-us
-guid: 3d3bc1b9-9937-4e08-b4ce-f935022fc6dc
+guid: bc4b0b1b-57cb-49ab-b9de-3d90a5f418c2
 app_type: traditional web apps
 platform-version: o11
 ---
 
-# Table Widget
+# Expression Widget
 
 <div class="info" markdown="1">
 
@@ -16,14 +16,13 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-Table lets you organize the content of the screen in a table. You can also drag other widgets to the cells of the table.
+Displays a text literal or an expression evaluation at runtime. For example, the expression can be a combination of values and operators or the result of a function call.
 
-Edit the table layout by these actions from the table toolbox bar: 
+<div class="info" markdown="1">
 
-* Insert, delete and order rows or columns
-* Merge and split table cells
+For more information see the [expression widget](../../lang/auto/servicestudio-plugin-nrwidgets-expression.md) for Mobile and Reactive Web Apps.
 
-Note that [Row](Class.Row Widget.final.md) and [Cell](Class.Cell Widget.final.md) are part of the Table Widget, but they're different widgets with own properties.
+</div>
 
 ## Properties
 
@@ -46,9 +45,16 @@ Note that [Row](Class.Row Widget.final.md) and [Cell](Class.Cell Widget.final.md
 <td></td>
 </tr>
 <tr>
-<td title="Align">Align</td>
-<td>Specifies the horizontal alignment of the widget within its parent.</td>
+<td title="Value">Value</td>
+<td>Combination of values, operands, operators and variables or the result of a function whose value is computed at runtime.</td>
 <td>Yes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td title="Example">Example</td>
+<td>Text to display in Preview and Design modes.</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -60,18 +66,11 @@ Note that [Row](Class.Row Widget.final.md) and [Cell](Class.Cell Widget.final.md
 <td></td>
 </tr>
 <tr>
-<td title="Cell Height">Cell Height</td>
-<td>Height of cells in the table in pixels. Other accepted units are points(pt) or percentage(%). Overrides the style sheet definition.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td title="Cell Spacing">Cell Spacing</td>
-<td>Space between cells in pixels. Overrides the style sheet definition.</td>
-<td></td>
-<td></td>
-<td></td>
+<td title="Escape Content">Escape Content</td>
+<td>Set as No to display directly the results of your expression in the screen content or set to Yes to perform escaping.</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Escaping an expression means that all accented and other special characters are replaced by a sequence that does not interfere with the protocols being used. In mobile apps expressions are escaped by default.</td>
 </tr>
 <tr >
 <th colspan="5">Extended Properties</th>

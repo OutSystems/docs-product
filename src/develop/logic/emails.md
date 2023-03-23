@@ -69,7 +69,7 @@ To send an email within the logic of your action or process, do the following:
 
 <div class="info" markdown="1">
 
-Use [email built-in functions](<../../ref/lang/auto/builtinfunction.Email.final.md>) to help you handle email addresses.
+Use [email built-in functions](<../../ref/lang/auto/builtinfunction-email.md>) to help you handle email addresses.
 
 </div>
 

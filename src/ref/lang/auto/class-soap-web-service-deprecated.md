@@ -15,7 +15,7 @@ Consumed SOAP Web Service based on the SOAP 1.1 protocol.
 
 This consumed SOAP Web Service implementation is **deprecated** and it's only available in modules that have been upgraded to OutSystems 11. 
 
-New Consumed SOAP Web Service elements created in OutSystems 11 modules follow the [new SOAP implementation](<ServiceStudio.Plugin.SOAP.SOAPClient.final.md>) supporting up to SOAP 1.2.
+New Consumed SOAP Web Service elements created in OutSystems 11 modules follow the [new SOAP implementation](<servicestudio-plugin-soap-soapclient.md>) supporting up to SOAP 1.2.
 
 </div>
 

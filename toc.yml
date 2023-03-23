@@ -1242,6 +1242,7 @@
                     - href: ref/lang/auto/class-client-action.md
                     - href: ref/lang/auto/class-screen-action.md
                     - href: ref/lang/auto/class-server-action.md
+                    - href: ref/lang/auto/class-service-action.md
                     - href: ref/logic/implementing-logic/download.md
                     - href: ref/lang/auto/class-role.md
                     - href: ref/lang/auto/class-user-exception.md

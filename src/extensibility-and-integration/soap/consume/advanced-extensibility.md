@@ -20,7 +20,7 @@ If your use case, is not covered by the component or you want to create it from 
 
 2\. Implement the .NET code
 :   Open Visual Studio .NET for editing the extension source code by clicking 'Edit Source Code .NET'.  
-    Edit the project properties setting the project target framework to '.NET Framework 4.6.1'.  
+    Edit the project properties and set the project target framework to '.NET Framework 4.7.2' or greater, according to the version you're using.  
     Add any necessary assembly references.  
     Still in Visual Studio, implement the logic of the actions using the functionality you need from the [SOAP Extensibility API](<../../../ref/apis/soap-extensibility-api.md>). When you finish, close Visual Studio.  
     In Integration Studio, publish the extension.

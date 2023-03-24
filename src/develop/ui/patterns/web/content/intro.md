@@ -7,10 +7,12 @@ platform-version: o11
 
 # Content
 
-Content patterns allow you to highlight and display important information to users in different ways, such as warnings, errors, and tooltips. Content patterns also allow you to organize information into sections and lists, making the on-screen content more easily readable for users. The available content patterns include the following:
+Content patterns allow you to highlight and display important information to users in different ways, such as warnings, errors, and tooltips. Content patterns also allow you to organize information into sections and lists, making the on-screen content more easily readable for users.
 
 ![Traditional web content patterns](<images/content-traditional-web-patterns-diag.png>)
 
+ The available content patterns include the following:
+ 
 * [Accordion](../content/accordion/accordion.md)
 * [Alert](../content/alert/alert.md)
 * [Balloon](../content/balloon/balloon.md)

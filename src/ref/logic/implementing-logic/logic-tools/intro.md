@@ -10,6 +10,8 @@ platform-version: o11
 
 The Service Studio toolbox contains a range of logic tools that help you build comprehensive apps. The logic tools allow you to, for example, run server actions that implement the business rules of your app, retrieve updated data from data sources, and assign values to variables. For more information about each of the logic tools, see:
 
+![OutSystems logic tools](images/logic-tools-diag.png)
+
 * [Start](../../../lang/auto/class-start.md)
 * [Run Client Action](../../../lang/auto/class-run-client-action.md)
 * [Run Server Action](../../../lang/auto/class-run-server-action.md)

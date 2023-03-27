@@ -93,6 +93,7 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 |Progress (Integer): Mandatory |Defines the progress percentage. Usually a number between 0 and 100. You can also use functions or local variables. |
 |ProgressColor (Color Identifier): Optional|Defines the color that fills the circle as progress increases. By default, the progress color is the primary color you choose when creating the app.<br/><br/>To use an RGB color, use: TextToIdentifier("rgb(0,0,0)")<br/>To use a HEX color, use: TextToIdentifier("#000000").|
+|Size (Text): Optional | Defines the Progress Circle diameter (height and width). Accepts any kind of unit (px, %, vw). By default, "auto". |
 |TrailColor (Color Identifier): Optional | Defines the color of the empty part of the circle. By default, the trail color is Neutral 4 (#DEE2E6).<br/><br/>To use an RGB color, use: TextToIdentifier("rgb(0,0,0)")<br/>To use a HEX color, use: TextToIdentifier("#000000") |
 |Thickness (Integer): Optional| Defines the thickness of the circle that marks the progress, in pixels. By default, the thickness is 8 pixels. |
 |OptionalConfigs (ProgressCircleOptionalConfigs): Optional|Defines additional parameters to customize the Progress Circle behavior and functionality. |

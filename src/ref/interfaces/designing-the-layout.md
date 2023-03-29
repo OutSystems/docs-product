@@ -6,4 +6,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# Designing the Layout
+# Designing the layout
+
+The following articles provide you with information that can be helpful when you’re designing the layout of your app: 
+
+* [Image](../lang/auto/class-image.md)
+* [Localized Image](../lang/auto/class-localized-image.md)
+* [Mobile Theme](../lang/auto/class-mobile-theme.md)
+* [UI Flow](../lang/auto/class-ui-flow.md)
+

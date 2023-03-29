@@ -21,5 +21,6 @@ following:
 
 1. Select the input parameter you wish to redact, and set its **Log Redaction**
    property to **Yes**.
+Note: Authorization input parameter will always be redacted for security measure.
 
     ![Activating the Log Redaction property of an input parameter](images/redact-logs-property-ss.png)

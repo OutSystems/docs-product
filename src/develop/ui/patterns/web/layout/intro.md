@@ -9,6 +9,8 @@ platform-version: o11
 
 The Layout web block helps you define the look and feel of your app. Layout blocks can contains pre-existing web blocks common to multiple screens. Designing an app with Screens that share elements provides users with a more consistent app.
 
+![Layout web block](images/layout-weblock-diag.png)
+
 You can add the following pre-existing web blocks to the Layout block:
 
 * [Layout Login](layout-login.md) - web block for a login screen

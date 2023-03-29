@@ -37,12 +37,12 @@ If it's encrypted, **Encrypt Viewstate** will be ticked. If it's not, follow the
 
 1. For an extra level of protection, it's also possible to enable the **Use Session Token to Encrypt View State** option. This will include an extra session generated token in the encrypted view state. This token changes after a login to a different user, and ensures every requested page is only valid in the context of that same user session. 
 
-<div class="warning" markdown="1">
+    <div class="warning" markdown="1">
 
-There are multiple use cases that are broken by this extra protection. Make sure to read the consequences that are explained in the Factory Configuration contextual help of this option.
+    There are multiple use cases that are broken by this extra protection. Make sure to read the consequences that are explained in the Factory Configuration contextual help of this option.
 
-</div>
+    </div>
 
     ![Factory Configuration](images/encrypt-viewstate-FC.png)
 
-1. [Apply the settings](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Applying_Configurations_in_Service_Center#Apply_Pending_Settings_to_a_Set_of_Modules) to all modules.
+1. [Apply the settings](../deploy-applications/apply-configurations.md#apply-pending-settings-to-a-set-of-modules) to all modules.

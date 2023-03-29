@@ -33,7 +33,8 @@ It’s possible to encrypt the view state using the supported Forge component [F
 
 1. Open it on the browser and login using your LifeTime/Service Center credentials.
 
-1. Navigate to the **Platform Configurations** tab and make sure **Encrypt Viewstate** is ticked. For an extra level of protection, the option **Use Session Token to Encrypt View State** will include the value of the session cookie **osVisitor** in the encrypted view state. This ensures that, in each user session, every requested page is only valid in the context of that same user session.
+1. Navigate to the **Platform Configurations** tab and make sure **Encrypt Viewstate** is ticked. 
+    1. For an extra level of protection, it's also possible to enable the **Use Session Token to Encrypt View State** option. This will include an extra session generated token in the encrypted view state. This token changes after a login to a different user, and ensures every requested page is only valid in the context of that same user session. There are multiple use cases that are broken by this extra protection, so make sure to read the consequences that are explained in the Factory Configuration contextual help of this option.
 
     ![Factory Configuration](images/encrypt-viewstate-FC.png)
 

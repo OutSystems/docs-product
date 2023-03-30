@@ -18,7 +18,7 @@ From version 11.14.17, Integration Studio is distributed independently from Serv
 
 The next screenshot presents the workspace for this tool:
 
-![](images/workspace.gif)
+![Integration Studio workspace](images/workspace-is.png)
 
 The workspace is divided into the following areas:
 

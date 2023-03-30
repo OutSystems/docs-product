@@ -1546,6 +1546,9 @@
 
             - href: ref/lang/auto/class-module.md
 
+    # Publishing and deploying
+    - href: ref/publish-deploy/publish-deploy.md
+
     # Service Studio command line
     - href: ref/ss-command/ss-command-line.md
 
@@ -1881,5 +1884,4 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
-
 

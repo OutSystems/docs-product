@@ -72,7 +72,7 @@ Timers
     It allows troubleshooting asynchronous logic that relies on Timers for its execution.
 
 Emails
-: This screen displays all emails sent, and if they were successfully delivered or are still pending. When developing your applications, it's also possible to choose if the content of the email is logged or not.
+:   This screen displays all emails sent, and if they were successfully delivered or are still pending. When developing your applications, it's also possible to choose if the content of the email is logged or not.
 
     It allows you to troubleshoot application logic and understand if emails are being correctly sent.
 
@@ -82,7 +82,7 @@ Processes
     It's also possible to see if a business process instance has executed successfully or with errors, and suspend or terminate it.
 
 Mobile Apps
-: This screen displays the list of mobile app packages requested per application, including the native platform for which the package was generated and the status.
+:   This screen displays the list of mobile app packages requested per application, including the native platform for which the package was generated and the status.
 
 Environment Health
 :   Displays the status of the [OutSystems services](#outsystems-services), including the services running on each front-end. It also displays the status of asynchronous tasks, such as processes, emails, and Timers. It provides an overview of the status of your environment.

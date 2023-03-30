@@ -23,6 +23,18 @@ To find out what version of OutSystems UI you are using, see [OutSystems UI vers
 
 </div>
 
+<div class="info" markdown="1">
+
+**This component doesn't facilitate push notifications**. For more information about push notifcations, see the following articles:
+
+* [Firebase Cloud Messaging Plugin](../../../../../extensibility-and-integration/mobile-plugins/firebase/firebase-messaging.md)
+
+* [How to Use Push Notifications with OneSignal](https://success.outsystems.com/documentation/how_to_guides/integrations/how_to_use_push_notifications_with_onesignal/)
+
+* [How to Use Push Notifications with Pushwoosh](https://success.outsystems.com/documentation/how_to_guides/integrations/how_to_use_push_notifications_with_pushwoosh/)
+
+</div>
+
 The Notification UI Pattern is a contextual short message that provides important information to the user, such as app crashes, new updates, task reminders, and new messages.
 
 **How to use the Notification UI Pattern**
@@ -91,3 +103,8 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 |Initialized: Optional  | Event triggered when the Notification instance is ready. | 
 |OnToggle: Optional  | Triggered when the Notification is toggled.  | 
+
+
+
+
+

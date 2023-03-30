@@ -45,7 +45,7 @@ Do the following:
 
     `If(GetExceptionURL()="", GetOwnerURLPath(), GetExceptionURL())`
 
-1. if the logout URL is empty, redirect the user to that URL. Otherwise, log out the user, terminating the session, by calling the **User_Logout** server action.
+1. If the logout URL isn't empty, redirect the user to that URL. Otherwise, log out the user, terminating the session, by calling the **User_Logout** server action.
 
 1. After the Server Action call, redirect the user to the IdP's login URL. Get this URL by calling the **User_GetUnifiedLoginUrl** Server Action, using the following value in the **OriginalUrl** input parameter of this action:
 

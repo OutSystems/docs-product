@@ -9,7 +9,11 @@ platform-version: o11
 
 # Inputs
 
-When designing your UI, OutSystems provides you with various different ways to allow users input information. The following is a list of the different input options available:
+When designing your UI, OutSystems provides you with various different ways to allow users input information. 
+
+![Inputs diagram](images/inputs-diag.png)
+
+The following is a list of the different input options available:
 
 * [Choose One Value from a List](dropdown-combo.md) - Allows users to choose a value from a list of values by implementing a Dropdown Widget ( Reactive Web and Mobile) or a Combo Box Widget (in Traditional Web).
 * [Pick Only One Option in a Group of Choices](button-group.md): Allows users to select a single option from a group of choices using radio buttons.

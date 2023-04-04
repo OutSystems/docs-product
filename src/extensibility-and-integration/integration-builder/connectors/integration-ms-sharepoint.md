@@ -23,13 +23,15 @@ Verify the following:
 
 Follow the instructions provided in [Creating and using an integration](../use.md#create-use). You must authorize Integration Builder to access your data in SharePoint Online through your Microsoft account.
 
-![Authorizing Integration Builder to access your Microsoft account data](images/ms-authorization-1.png)
+![Authorizing Integration Builder to access your Microsoft account data](images/sharepoint-ib-authorization.png)
 
-Integration Builder uses this authorization to obtain the available objects for building a SharePoint Online integration.
-
-Additionally, when you're creating a connection, Integration Manager connects to Integration Builder, requesting the creation of an Azure app and other related objects. This operation uses the same authorization, since only Integration Builder has the access tokens for this authorization.
+Integration Builder uses this authorization to retrieve the metadata from the SharePoint Online server (Sites, Lists and respective columns), as well as to enable you to test a newly created integration in the development environment.
 
 ## Authorizing a SharePoint Online connection { #authorize-integration }
+
+When you're creating a connection, Integration Manager connects to Integration Builder, requesting the creation of an Azure app and other related objects. This operation requires authorization.
+
+![Authorizing Integration Manager to access your Microsoft account data](images/sharepoint-im-authorization.png)
 
 SharePoint Online integrations generated with Integration Builder use a certificate to authenticate requests done at runtime, using the connection you configured.
 

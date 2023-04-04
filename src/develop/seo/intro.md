@@ -57,6 +57,6 @@ Having a high number (more than 1000) of SEO Rules configured in Service Center 
 * Change the SEO URL Rules (Page, Path, Site, and Redirect): Create / Edit / Delete
 * Publish a module (via Service Center or Service Studio)
 * Perform the **Update Status** step when deploying a solution
-* Uploade an OutSystems license  
+* Upload an OutSystems license  
 
 This performance degradation occurs while the ISAPIFilter synchronizes the SEO Rules, after performing one of the operations above.

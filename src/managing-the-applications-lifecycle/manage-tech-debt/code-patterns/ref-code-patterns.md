@@ -905,3 +905,27 @@ Keeping a large amount of disabled code leaves clutter and makes it difficult to
 **How to fix**  
 
 Remove the code if it has been disabled for a while or the app is in production, and behaving correctly.
+
+### Unreachable logic
+
+Unreachable logic caused by hard-coded True/False conditions.
+
+**Impact**  
+
+Some parts of your logic will never run due to hard-coded True/False conditions. This can result in dead code, for example, forgotten feature flags or incorrect/unexpected behavior in your actions. Unreachable logic can also take the team's time to test, maintain and document code that is never used.  
+
+**How to fix**
+
+Revise the affected True/False conditions and consider removing/changing the unreachable logic.
+
+### Unused Actions in Module
+
+An action that isn’t used in the module and is also not exposed to other modules (non-public action).
+
+**Impact**  
+
+Unused actions can bloat your code base, make maintenance difficult, and increase security risks.  
+
+**How to fix**  
+
+Check whether the action is necessary and consider deleting it from the module.  

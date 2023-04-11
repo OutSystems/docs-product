@@ -51,7 +51,6 @@ You can use the Button Group UI Pattern to display radio button choices to the u
 
 ## Properties
 
-| **Property**                    | **Description**                                                                                                                                        |
-|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Property** | **Description** |
+|---|---|
 | IsJustified (Boolean): Optional | If True, the Button Group items are evenly distributed in the space available. If False, the Button Group items are left aligned. This is the default. |
-

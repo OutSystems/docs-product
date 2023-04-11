@@ -17,4 +17,4 @@ The web flow does not have error handlers, and the Theme does not have a web flo
 
 **Recommended action**
 
-Change the web flow to implement [error handlers](../../../ref/lang/auto/Class.Exception%20Handler.final.md), or change the [error handling](../../../develop/logic/exceptions/handling-mechanism.md) Flow property of the [Theme](../../../develop/ui/look-feel/themes.md) to use a web flow that already implements error handling.
+Change the web flow to implement [error handlers](../../../ref/lang/auto/class-exception-handler.md), or change the [error handling](../../../develop/logic/exceptions/handling-mechanism.md) Flow property of the [Theme](../../../develop/ui/look-feel/themes.md) to use a web flow that already implements error handling.

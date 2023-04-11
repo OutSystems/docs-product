@@ -46,7 +46,7 @@ You can use functions as operands. The following are some examples:
 * In `Sqrt(9) + 3`, **Sqrt()** is one of the built-in functions. 
 * In `MyFunction(1000) * 100`, **MyFunction()** is a user-defined function. 
 
-See [Built-in Functions](<../../lang/auto/builtinfunctions.final.md>) for more information.
+See [Built-in Functions](<../../lang/auto/builtinfunctions.md>) for more information.
 
 ## Example
 

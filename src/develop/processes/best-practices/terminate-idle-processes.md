@@ -17,7 +17,7 @@ In this case, we recommend that you do the following:
 
   1. Analyze the process flow and identify points where the process stays idle for a long time.
   
-  2. Use the [Decision](<../../../ref/lang/auto/Class.Decision.final.md>) tool to control the process execution at these points:
+  2. Use the [Decision](<../../../ref/lang/auto/class-decision.md>) tool to control the process execution at these points:
 
       * **First Execution**: end the process, and save information for resuming it like, for example, the date and time for it to be resumed and information to know where to resume.
 

@@ -87,6 +87,6 @@ To show a list of records from an integration, do the following:
 
 To show a single record from an integration in the [screen where you fetched the data](#fetch-record), use the **Out1** output parameter from the data action in one of the following widgets:
 
-* If you want to show text or number values, use **Out1** in the **Expression Value** property of [**Expression** widgets](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md).
+* If you want to show text or number values, use **Out1** in the **Expression Value** property of [**Expression** widgets](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-expression.md).
 
-* If you want to show an image, use **Out1** in **URL** or **Image Content** properties of [**Image** widgets](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Image.final.md).
+* If you want to show an image, use **Out1** in **URL** or **Image Content** properties of [**Image** widgets](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-image.md).

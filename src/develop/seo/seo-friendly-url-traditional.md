@@ -218,7 +218,7 @@ The OutSystems Platform works with ISAPI Filters installed in Microsoft Internet
 
 ### Logging
 
-Turn on detailed logging of your SEO Friendly URLs to keep track of detailed information about URLs transformations and ISAPI Filters status. The log information is written into a file named **‘OsISAPI.log’** that is located under the ‘logs’ directory on each of your Front-end servers. The ‘logs’ directory can be found inside the **Platform Server **installation folder (e.g.: *C:\Program Files\OutSystems\Platform Server\***_logs_**).
+Turn on detailed logging of your SEO Friendly URLs to keep track of detailed information about URLs transformations and ISAPI Filters status. The log information is written into a file named **‘OsISAPI.log’** that is located under the ‘logs’ directory on each of your Front-end servers. The ‘logs’ directory can be found inside the **Platform Server** installation folder (for example, *C:\Program Files\OutSystems\Platform Server\***_logs_**).
 
 Depending on your ISAPI Filters configuration and the number of accesses to transformed URLs, logging may involve writing large amounts of data into the log file, and it may lead to degradation of your Platform Server’s performance. As such, before turning on the logging, try to evaluate the impact on your Platform Server’s performance.
 

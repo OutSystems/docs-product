@@ -41,7 +41,7 @@ You are using a Null Value property which is incompatible with the Variable assi
 
 **Recommended action**
 
-Set the Null Value property to a value of the same [data type](../../../ref/data/data-types/available-data-types.md) as the Variable assigned to the [Input widget](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md). For example, if you assigned a Boolean variable to the Input, set Null Value as `False`.
+Set the Null Value property to a value of the same [data type](../../../ref/data/data-types/available-data-types.md) as the Variable assigned to the [Input widget](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-input.md). For example, if you assigned a Boolean variable to the Input, set Null Value as `False`.
 
 ## Cannot send a 'Binary Data' parameter in the request &lt;send in> of a method with &lt;request format> request format. Change the parameter data type or the method request format.
 
@@ -51,4 +51,4 @@ In a REST API method request, you are defining a parameter and setting it to the
 
 **Recommended action**
 
-Change the [data type](../../../ref/data/data-types/available-data-types.md) of the [parameter](../../../ref/lang/auto/ServiceStudio.Plugin.REST.RestActionInput.final.md) or the request format of the [REST API method](../../../ref/lang/auto/ServiceStudio.Plugin.REST.RestAction.final.md).
+Change the [data type](../../../ref/data/data-types/available-data-types.md) of the [parameter](../../../ref/lang/auto/servicestudio-plugin-rest-restactioninput.md) or the request format of the [REST API method](../../../ref/lang/auto/servicestudio-plugin-rest-restaction.md).

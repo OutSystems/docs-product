@@ -29,6 +29,7 @@ This section summarizes the requirements for installing the Platform Server in y
 
 ### Operating System
 
+* Microsoft Windows Server 2022 (Standard Edition or higher edition), since Platform Server 11.20.0
 * Microsoft Windows Server 2019 (Standard Edition or higher edition), since Platform Server Release Jul.2019
 * Microsoft Windows Server 2016 (Standard Edition or higher edition)
 
@@ -217,7 +218,6 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 
 **macOS (cross-platform Service Studio only):**
 
-* macOS Catalina
 * macOS Big Sur
 * macOS Monterrey
 
@@ -227,6 +227,8 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 * Windows 8 (64-bit)
 * Microsoft Windows Server 2019
 * Microsoft Windows Server 2016
+
+For these Operating System versions, OutSystems only supports Windows and macOS editions that are supported by [Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple respectively.
 
 #### Required Software
 

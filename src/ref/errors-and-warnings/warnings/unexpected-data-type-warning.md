@@ -27,7 +27,7 @@ You are using the incorrect data types in an expression or in a Built-in functio
 
 **Recommended action**
 
-Check the [data types](../../data/data-types/available-data-types.md) managed in your [expression](../../logic/expressions/intro.md) or used in the [Built-in function](../../../ref/lang/auto/builtinfunctions.final.md).
+Check the [data types](../../data/data-types/available-data-types.md) managed in your [expression](../../logic/expressions/intro.md) or used in the [Built-in function](../../../ref/lang/auto/builtinfunctions.md).
 
 ## &lt;Type&gt; data type expected instead of &lt;Type&gt; for &lt;Record&gt; record. Consider changing the data type to &lt;Type&gt; in attribute &lt;Attribute Name&gt; on Static Entity &lt;Static Entity Name&gt;.
 

@@ -175,7 +175,7 @@ Each flag has a link that, when pressed, invokes a screen action that changes th
 
 ## Display the Current Language to End User
 
-You can obtain your application current language locale using the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction.Environment.final.md#GetCurrentLocale>).
+You can obtain your application current language locale using the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction-environment.md#GetCurrentLocale>).
 
 As an example, you may display to the end user a flag and the locale code (in [RFC 1766](<https://tools.ietf.org/html/rfc1766>) format) of the language which the application is operating:
 

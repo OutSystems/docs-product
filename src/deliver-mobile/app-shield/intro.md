@@ -98,6 +98,7 @@ Protection available for the Android builds.
 * Emulator detection
 * Key logger protection
 * Screen reader detection
+* Untrusted keyboard detection
 * Screenshot protection
 * Task hijacking protection
 

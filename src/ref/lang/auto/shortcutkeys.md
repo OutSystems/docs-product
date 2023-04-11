@@ -45,6 +45,7 @@ platform-version: o11
 |Ctrl+M|Shift+Cmd+M|Compare and Merge module with published version|
 |Ctrl+N|Cmd+N|Create new element|
 |Ctrl+Q|Cmd+D|Open Manage Dependencies window|
+|Ctrl+R|Cmd+R|Refresh all in Manage Dependencies window|
 |Ctrl+Shift+K||Open list of shortcuts|
 |Ctrl+D||Delete Extended Property|
 

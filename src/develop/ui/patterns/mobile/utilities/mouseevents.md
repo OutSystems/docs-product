@@ -61,11 +61,11 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
    ![](images/mouseevents-6-ss.png)
 
-   Each of the expressions are set to the local variables respectively (**Drag** and **Distance**). 
+   Each of the expressions are set to the local variables respectively (**Drag** and **Distance**).
 
    ![](images/mouseevents-7-ss.png)
 
-1. Add a client action by right-clicking your screen name and selecting **Add Client Action**. 
+1. Add a client action by right-clicking your screen name and selecting **Add Client Action**.
 
 1. Enter a name for the client action. In this example, we enter `MouseEventsMove`.
 
@@ -81,7 +81,7 @@ The following example shows how you can use the Mouse Events UI pattern to displ
 
     ![](images/mouseevents-10-ss.png)
 
-  1. Select the Mouse Events widget and set the **WidgetId**, **PreventDefaults**, and the **Handler** properties. 
+1. Select the Mouse Events widget and set the **WidgetId**, **PreventDefaults**, and the **Handler** properties. 
 
     In this example, the **WidgetId** is set to **card.Id**, the **PreventDefaults** to **False**, **OfFsetX** to **OffsetX**, and **OffsetY** to **OffsetY**.
 
@@ -91,7 +91,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property**                        | **Description**                                                                                                                                                      |
-|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WidgetId (Text): Mandatory          | The element that responds to the mouse event you configure.                                                                                                          |
+| **Property** | **Description** |
+|---|---|
+| WidgetId (Text): Mandatory | The element that responds to the mouse event you configure. |
 | PreventDefaults (Boolean): Optional | If True, events propagation to the screen and other widgets is stopped. This is the default. If False, event propagation to the screen and other widgets is enabled. |

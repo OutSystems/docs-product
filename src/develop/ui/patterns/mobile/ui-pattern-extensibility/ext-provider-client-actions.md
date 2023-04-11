@@ -13,9 +13,9 @@ The following extensibility client actions are available for UI Patterns:
 
 * [Provider events](#provider-events)
 
-* [Provider configuration](#provider-configuration-provider-configuration)
+* [Provider configuration](#provider-configuration)
 
-### Provider events (#provider-events)
+### Provider events
 
 To add further events beyond the ones the Patterns have by default, there’s a set of two client actions per provider that can be used to add or remove a new event and an associated callback.
 
@@ -92,7 +92,7 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
     ![Result](<images/result-ss.png>)
 
-## Provider configuration (#provider-configuration)
+## Provider configuration
 
 To add further configuration beyond the ones the Patterns have by default, there is  a specific client action per provider.
 
@@ -106,10 +106,10 @@ The following table shows each provider based UI Pattern with its associated con
 
 |UI Pattern | Client action | Parameters | Provider events|
 |---|---|---|---|
-|Carousel |SetSplideConfigs | <ul><li> WidgetId (string)</li><li>ProviderConfigs </li>(structure)<li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul>| [Splide options](https://splidejs.com/guides/options/)|
-|<ul><li>Date Picker</li><li>Date Picker Range</li></ul>|SetFlatpickrConfigs| <ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul>|[Flatpickr options](https://flatpickr.js.org/options/)|
-|<ul><li>Dropdown Search</li><li>Dropdown Tags</li></ul>|SetVirtualSelectConfigs | <ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul> | [VirtualSelect options](https://sa-si-dev.github.io/virtual-select/#/properties)|
-|<ul><li>Range Slider</li><li>Range Slider Interval</li></ul>|SetNoUISliderConfigs|<ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul>|[noUiSlider options](https://refreshless.com/nouislider/slider-options/)|
+|Carousel |SetSplideConfigs | <ul><li> WidgetId (string)</li><li>ProviderConfigs </li>(structure)<li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul> | [Splide options](https://splidejs.com/guides/options/) |
+|<ul><li>Date Picker</li><li>Date Picker Range</li></ul> |SetFlatpickrConfigs| <ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul>|[Flatpickr options](https://flatpickr.js.org/options/)|
+|<ul><li>Dropdown Search</li><li>Dropdown Tags</li></ul> |SetVirtualSelectConfigs | <ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul> | [VirtualSelect options](https://sa-si-dev.github.io/virtual-select/#/properties) |
+|<ul><li>Range Slider</li><li>Range Slider Interval</li></ul> |SetNoUISliderConfigs|<ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul> | [noUiSlider options](https://refreshless.com/nouislider/slider-options/) |
 
 ### How to set a provider configuration
 

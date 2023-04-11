@@ -37,11 +37,11 @@ For example, you added an Input, Text Area, Switch, Checkbox, Radio Group, Dropd
 
 You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property. 
 
-For example, for an [Input](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md), set a valid value for the Variable property.
+For example, for an [Input](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-input.md), set a valid value for the Variable property.
 
 ![Location of Variable property of Input](images/invalid-variable-error.png?width=300)
 
-For a [Radio Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioGroup.final.md), [Text Area](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md), [Switch](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md), [Checkbox](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md), [Dropdown](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md), or [Button Group](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md), set a valid value for the Variable property.
+For a [Radio Group](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-radiogroup.md), [Text Area](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-textarea.md), [Switch](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md), [Checkbox](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-checkbox.md), [Dropdown](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-dropdown.md), or [Button Group](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-buttongroup.md), set a valid value for the Variable property.
 
 ##  Unknown variable in Assign
 
@@ -51,27 +51,27 @@ You added a Server Action and added logic to the flow by selecting Set variable.
 
 **Recommended action**
 
-You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Assign](../../../ref/lang/auto/Class.Assign.final.md) in the [Server Action](../../../ref/lang/auto/Class.Server%20Action.final.md). 
+You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Assign](../../../ref/lang/auto/class-assign.md) in the [Server Action](../../../ref/lang/auto/class-server-action.md). 
 
 ##  Unknown variable in  &lt;Input_widget_name> Input
 
 **Cause**
 
-You added an Input widget and set the Variable property to a [local variable](../../../ref/lang/auto/Class.Local%20Variable.final.md). The local variable was subsequently deleted.
+You added an Input widget and set the Variable property to a [local variable](../../../ref/lang/auto/class-local-variable.md). The local variable was subsequently deleted.
 
 **Recommended action**
 
-You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Input](../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md).
+You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Input](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-input.md).
 
 ##  Unknown object &lt;Variable_name> in variable
 
 **Cause**
 
-You added a Client Action and added logic to the flow by selecting Set variable. Then, in the Assign, you set the Variable property to an [input parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md), [output parameter](../../../ref/lang/auto/Class.Output%20Parameter.final.md), [local variable](../../../ref/lang/auto/Class.Local%20Variable.final.md), or [client variable](../../../ref/lang/auto/Class.Client%20Variable.final.md). The parameter or variable was subsequently deleted. 
+You added a Client Action and added logic to the flow by selecting Set variable. Then, in the Assign, you set the Variable property to an [input parameter](../../../ref/lang/auto/class-input-parameter.md), [output parameter](../../../ref/lang/auto/class-output-parameter.md), [local variable](../../../ref/lang/auto/class-local-variable.md), or [client variable](../../../ref/lang/auto/class-client-variable.md). The parameter or variable was subsequently deleted. 
 
-The error is also issued if you set the Variable property of the Assign to a [Site Property](../../../ref/lang/auto/Class.Site%20Property.final.md).
+The error is also issued if you set the Variable property of the Assign to a [Site Property](../../../ref/lang/auto/class-site-property.md).
 
 **Recommended action**
 
-You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Assign](../../../ref/lang/auto/Class.Assign.final.md) in the [Client Action](../../../ref/lang/auto/Class.Client%20Action.final.md).
+You need to set a valid value for the [Variable](../../../ref/data/handling-data/variables/intro.md) property of the [Assign](../../../ref/lang/auto/class-assign.md) in the [Client Action](../../../ref/lang/auto/class-client-action.md).
 

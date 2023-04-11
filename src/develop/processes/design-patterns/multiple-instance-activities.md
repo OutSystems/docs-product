@@ -9,7 +9,7 @@ platform-version: o11
 
 Use this pattern to execute multiple instances of the same flow of activities. It is specially useful in situations where the number of executed instances is only known at runtime.
 
-To execute multiple instances of a flow of activities, either place those activities in a new [Process](../process.md)) or in a flow of a [Conditional Start](<../../../ref/lang/auto/Class.Conditional Start.final.md>).
+To execute multiple instances of a flow of activities, either place those activities in a new [Process](../process.md)) or in a flow of a [Conditional Start](<../../../ref/lang/auto/class-conditional-start.md>).
 
 The **advantage** of using a new **Process** is that it **clarifies the structure** of the process and **improves scalability**, even if the number of process instances grows to millions. It also helps you [limit the use of conditional starts](../best-practices/limit-conditional-starts.md).
 
@@ -26,7 +26,7 @@ As an example, think of a recruitment process for candidates who apply for a job
 
 When the **CandidateSelection** process is executed the following occurs:
 
-1. In the [Human Activity](<../../../ref/lang/auto/Class.Human_Activity.final.md>) interviews are scheduled (created).
+1. In the [Human Activity](<../../../ref/lang/auto/class-human_activity.md>) interviews are scheduled (created).
 
 2. One instance of the **CandidateInterview** process is executed per scheduled interview (the process is configured that way in its `Launch On` property).
 
@@ -40,9 +40,9 @@ When the **CandidateSelection** process is executed the following occurs:
 
 When the process is executed the following occurs:
 
-1. In the [ScheduleInterviews](<../../../ref/lang/auto/Class.Human_Activity.final.md>) human activity interviews are scheduled (created).
+1. In the [ScheduleInterviews](<../../../ref/lang/auto/class-human_activity.md>) human activity interviews are scheduled (created).
 
-2. One instance of the [Conditional Start](<../../../ref/lang/auto/Class.Conditional Start.final.md>) is executed per scheduled interview (it is configured that way in its `Start On` property).
+2. One instance of the [Conditional Start](<../../../ref/lang/auto/class-conditional-start.md>) is executed per scheduled interview (it is configured that way in its `Start On` property).
 
 3. The **WaitForInterview** wait activity holds the execution of the process.
 

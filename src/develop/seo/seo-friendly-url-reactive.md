@@ -93,10 +93,10 @@ To create a site rule, follow these steps:
     As a result, you've enabled a new site rule.  
     You also have the option to select a site rule and edit, delete, or disable the **Base URL**.  
 
-<div class="warning" markdown="1">
+<div class="info" markdown="1">
 
-Consider the following when working with site rules:  
-* You can have only one site rule per root application for domains with sub-paths.  
+Remember the following when working with site rules:  
+* You can only have only one site rule per root application for domains with sub-paths.  
 * Creating or editing a site rule can temporarily slow down the app because the platform needs to reload its configuration.  
 
 </div>  
@@ -126,13 +126,12 @@ The following table includes more examples of custom screen URLs:
 | `/Order?Id=1`             | `/Buy/1`      | `/Buy?Id=1`             |
 | `/Order?Id=1&Quantity=10` | `/Buy/1/10`   | `/Buy?Id=1&Quantity=10` |
 
-<div class="warning" markdown="1">
+<div class="info" markdown="1">
 
-Consider the following when working with custom screen URLs:  
+Remember the following when working with custom screen URLs:  
 * You can add custom URLs to all screens except for the Default Screen.  
 * When copying screens with custom URLs from a Reactive Web app module to a Mobile app module, **Service Studio** removes the custom URL configurations in the Mobile app module because SEO works differently for mobile apps.  
  
-
 </div>  
 
 ### Managing custom screen URLs  

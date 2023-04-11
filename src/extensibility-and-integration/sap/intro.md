@@ -16,7 +16,7 @@ The connection between OutSystems and SAP relies on sapnco **SAP Connector for M
 The Exact version of SAP connector can be find in the [Platform Server installation checklist](https://www.outsystems.com/Downloads/search/Platform-Server/11/).
 </div>
 
-If you need an alternative authentication mechanism you can find more information **[here](../../ref/lang/auto/ServiceStudio.Plugin.SAP.SapClient.final.md)**.
+If you need an alternative authentication mechanism you can find more information **[here](../../ref/lang/auto/servicestudio-plugin-sap-sapclient.md)**.
 
 Furthermore, this connection assumes that you are using a secure network is, which means it doesn’t use a secure protocol (communication is performed through HTTP).
 

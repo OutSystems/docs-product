@@ -23,7 +23,7 @@ However, the execution **is not suspended** if modifications were only made to t
 
 ## Impact of Modified Input/Output Parameters of a Process
 
-The modification of input/output parameters of a process suspends other process instances that are executing it through a [Execute Process](<../../../ref/lang/auto/Class.Execute Process.final.md>) activity.
+The modification of input/output parameters of a process suspends other process instances that are executing it through a [Execute Process](<../../../ref/lang/auto/class-execute-process.md>) activity.
 
 However, the execution **is not suspended** if modifications were only made to the type of the input/output parameters and types can be automatically converted.
 

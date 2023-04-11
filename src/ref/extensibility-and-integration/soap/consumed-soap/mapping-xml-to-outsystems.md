@@ -57,7 +57,6 @@ To set the value of a WSDL element of type choice, set the Choice attribute to t
 ## Mapping Limitations
 
 * Types created via "restriction" over another type are usually the same as the original type. Only the `maxLength` and `fractionDigits` restrictions are considered when creating the appropriate data types, but these restrictions are not enforced at runtime.
-* Type `element` having subtype `schema` (i.e. dynamic schemas) is interpreted as a simple Text item.
 * Type `simpleType` having subtype that is not "restriction" (such as `list`, a space-separated sequence of text atoms) is interpreted as a simple Text item.
 * Type `complexType` having subtype that is not `sequence`, `all` or `complexContent` is interpreted as a simple Text item.
 * Subtype `complexContent` that is not "restriction" or "extension" is interpreted as a simple Text item.

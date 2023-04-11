@@ -7,3 +7,9 @@ platform-version: o11
 ---
 
 # Variables
+
+When developing your app, you can use variables to store different types of values, for example, numbers, phrases, or the results of a calculation. These values can be used anywhere within the app or in a specific page.
+
+![OutSystems variables](images/variables-diag.png)
+
+For more information about the different types of variables, see [Input Parameters](../../../lang/auto/class-input-parameter.md), [Local Variables](../../../lang/auto/class-local-variable.md) and [Output Parameters](../../../lang/auto/class-output-parameter.md).

@@ -58,15 +58,21 @@ Start by selecting the elements for which you want to change the Properties and 
 
 Then, you'll be able to see where their Properties differ and where they share common values. All you have to do now is adjust them according to your needs. Any change made within your current selection will be applied to all selected elements.
 
-### Closing and moving Modules
+### Closing Modules
 
 Do you have way too many Modules open? Quickly close any number of them by right-clicking a Module tab and selecting **Close**, **Close other modules**, **Close modules to the right**, or **Close all modules**.
 
 ![Close multiple modules](images/tt-close-modules-ss.gif)
 
-If closing modules is not an option, you can rearrange them by clicking and dragging the module left or right in your list of open modules. Additionally, you can drag a module off the current Service Studio window which opens a new Service Studio window.
+### Moving Modules
+
+You can rearrange Modules by clicking and dragging the module left or right in your list of open modules. Additionally, you can drag a module off the current Service Studio window which opens a new Service Studio window.
 
 ![Reorder modules](images/tt-reordertabs-ss.gif)
+
+You can also drag a module off the current Service Studio and attach it to an existing Service Studio window. 
+
+![Move modules](images/tt-movetabs-ss.gif)
 
 ### Open a Screen in browser
 

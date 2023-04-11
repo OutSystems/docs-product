@@ -107,7 +107,7 @@ Use the [translation editor](translation-editor.md) to edit existing translation
 
 ## Getting the identifier of the current language
 
-You can get information about the current language with the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction.Environment.final.md#GetCurrentLocale>).
+You can get information about the current language with the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction-environment.md#GetCurrentLocale>).
 
 ![GetCurrentLocale function in the expression editor](images/get-current-locale-language-ss.png)
 

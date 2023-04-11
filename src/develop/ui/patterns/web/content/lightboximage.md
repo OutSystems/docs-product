@@ -15,7 +15,7 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-You can use the Lightbox Image UI Pattern to open smaller thumbnail images in full screen mode. This UI pattern is often used when creating an image gallery, allowing you to navigate through each of the images and view them in more detail.  
+You can use the Light Box Image UI Pattern to open smaller thumbnail images in full screen mode. This UI pattern is often used when creating an image gallery, allowing you to navigate through each of the images and view them in more detail.  
 
 ![](<images/lightboximage-15-ss.png>)
 
@@ -41,7 +41,7 @@ You can use the Lightbox Image UI Pattern to open smaller thumbnail images in fu
 
     ![](<images/lightboximage-13-ss.png>)
 
-1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/Class.Image Widget.final.md>) into the Light Box Image widget. This is a thumbnail image.
+1. From the Toolbox, drag the [Image widget](<../../../../../ref/lang/auto/class-image-widget.md>) into the Light Box Image widget. This is a thumbnail image.
 
     The **Select Image** pop-up is displayed.
 
@@ -65,10 +65,10 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Title (Text): Optional         | Image title that is displayed when previewing the image in full screen mode. <p>Examples<ul><li>"Image 1" - Displays **Image 1** as the image title. </li></ul></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Group (Text): Optional         | Name of the group of images. Similar to the concept of a picture album. You can navigate through pictures with the same group name when viewing them in full screen mode.<p>Examples<ul><li>Gallery 1 - Adds this image to the Gallery 1 group</li></ul></p>                                                                                                                                                                                                                                                                                                                                                                            |
-| ImageURL (Text): Optional      | URL for the image you want to show in full screen mode. If empty, a zoomed version of the thumbnail is displayed. Use this if you want to load a lower quality image as a thumbnail and display a higher quality version in full screen mode.                                                                                                                                                                                                                                                                                                                                                                                           |
-| ImageZoom (Decimal): Optional  | Defines the size of the image that opens in full screen mode (based on the thumbnail size).<p>To avoid rendering problems, try to use images with the same ratio.<p>Examples</p><ul><li>2 - A thumbnail with 100x100, and zoom 2 opens with 200x200.</li><li> 0.5 - A thumbnail with 500x500, and zoom 0.5 opens with 250x250.</li></ul></p>                                                                                                                                                                                                                                                                                            |
+| Property | Description |
+|---|---|
+| Title (Text): Optional | Image title that is displayed when previewing the image in full screen mode. <p>Examples<ul><li>"Image 1" - Displays **Image 1** as the image title. </li></ul></p> |
+| Group (Text): Optional | Name of the group of images. Similar to the concept of a picture album. You can navigate through pictures with the same group name when viewing them in full screen mode.<p>Examples<ul><li>Gallery 1 - Adds this image to the Gallery 1 group</li></ul></p> |
+| ImageURL (Text): Optional | URL for the image you want to show in full screen mode. If empty, a zoomed version of the thumbnail is displayed. Use this if you want to load a lower quality image as a thumbnail and display a higher quality version in full screen mode. |
+| ImageZoom (Decimal): Optional | Defines the size of the image that opens in full screen mode (based on the thumbnail size).<p>To avoid rendering problems, try to use images with the same ratio.<p>Examples</p><ul><li>2 - A thumbnail with 100x100, and zoom 2 opens with 200x200.</li><li> 0.5 - A thumbnail with 500x500, and zoom 0.5 opens with 250x250.</li></ul></p> |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

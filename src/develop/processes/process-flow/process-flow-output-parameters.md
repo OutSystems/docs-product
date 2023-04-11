@@ -14,7 +14,7 @@ The process for which you are designing the process flow may also have output pa
 
 * **Process Flow**: you have privileges to **read** and **write** the process output parameters while manipulating them in the process flow.
 
-* **Execute Process**: in the case where you have an [Execute Process](<../../../ref/lang/auto/Class.Execute Process.final.md>) activity in the process flow, the output parameters of this process activity are those of the executed process for which you have **read-only** privileges.
+* **Execute Process**: in the case where you have an [Execute Process](<../../../ref/lang/auto/class-execute-process.md>) activity in the process flow, the output parameters of this process activity are those of the executed process for which you have **read-only** privileges.
 
 ## Output Parameters Default Value
 

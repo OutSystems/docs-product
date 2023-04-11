@@ -55,7 +55,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/badge-13-ss.png>)
 
-    This creates an [aggregate](../../../../../ref/lang/auto/Class.Aggregate.final.md) that retrieves all of the users on your platform.
+    This creates an [aggregate](../../../../../ref/lang/auto/class-aggregate.md) that retrieves all of the users on your platform.
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
 

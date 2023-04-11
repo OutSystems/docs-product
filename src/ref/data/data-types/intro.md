@@ -17,5 +17,5 @@ For more information about how OutSystems maps its data types to .NET at runtime
 
 A List is a sequence of elements of the same data type, which may contain duplicate values. Elements can be inserted, fetched and removed from a list. For more information, see [Lists](list.md).
 
-A Structure is a compound data type used to encapsulate groups of related attributes. For more information, see [Structures](../../lang/auto/Class.Structure.final.md) and [Structure attributes](../../lang/auto/Class.Structure%20Attribute.final.md).
+A Structure is a compound data type used to encapsulate groups of related attributes. For more information, see [Structures](../../lang/auto/class-structure.md) and [Structure attributes](../../lang/auto/class-structure-attribute.md).
 

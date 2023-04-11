@@ -76,5 +76,5 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | **Property** | **Description** |
-|---|---| 
-| WidgetId (Text): Mandatory |  Element that's swipeable.  |
+|---|---|
+| WidgetId (Text): Mandatory | Element that's swipeable. |

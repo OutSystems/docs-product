@@ -106,10 +106,10 @@ The following table shows each provider based UI Pattern with its associated con
 
 |UI Pattern | Client action | Parameters | Provider events|
 |---|---|---|---|
-|Carousel |SetSplideConfigs | <ul><li> WidgetId (string)</li><li>ProviderConfigs </li>(structure)<li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul>| [Splide options](https://splidejs.com/guides/options/)|
-|<ul><li>Date Picker</li><li>Date Picker Range</li></ul>|SetFlatpickrConfigs| <ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul>|[Flatpickr options](https://flatpickr.js.org/options/)|
-|<ul><li>Dropdown Search</li><li>Dropdown Tags</li></ul>|SetVirtualSelectConfigs | <ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul> | [VirtualSelect options](https://sa-si-dev.github.io/virtual-select/#/properties)|
-|<ul><li>Range Slider</li><li>Range Slider Interval</li></ul>|SetNoUISliderConfigs|<ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul>|[noUiSlider options](https://refreshless.com/nouislider/slider-options/)|
+|Carousel |SetSplideConfigs | <ul><li> WidgetId (string)</li><li>ProviderConfigs </li>(structure)<li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul> | [Splide options](https://splidejs.com/guides/options/) |
+|<ul><li>Date Picker</li><li>Date Picker Range</li></ul> |SetFlatpickrConfigs| <ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul>|[Flatpickr options](https://flatpickr.js.org/options/)|
+|<ul><li>Dropdown Search</li><li>Dropdown Tags</li></ul> |SetVirtualSelectConfigs | <ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul> | [VirtualSelect options](https://sa-si-dev.github.io/virtual-select/#/properties) |
+|<ul><li>Range Slider</li><li>Range Slider Interval</li></ul> |SetNoUISliderConfigs|<ul><li>WidgetId (string)</li><li>ProviderConfigs (structure)</li><li>Success (boolean)</li><li>ErrorMessage (structure)</li></ul> | [noUiSlider options](https://refreshless.com/nouislider/slider-options/) |
 
 ### How to set a provider configuration
 

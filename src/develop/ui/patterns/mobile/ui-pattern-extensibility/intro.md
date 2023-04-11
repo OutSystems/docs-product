@@ -24,7 +24,7 @@ However, you can access all of the extensibility options offered by the provider
 
 The following table shows the list of OutSystems UI Patterns that use external providers:
 
-UI Pattern |  Provider | Library version  
+UI Pattern | Provider | Library version  
 ---|---|---
 Carousel | [Splide](https://splidejs.com/) | 4.1.3  
 Date Picker | [Flatpickr](https://flatpickr.js.org/)| 4.6.13

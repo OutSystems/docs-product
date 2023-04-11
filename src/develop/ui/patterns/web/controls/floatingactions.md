@@ -33,7 +33,7 @@ Use the Floating Action UI Pattern to show the primary action on a screen. Choos
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**. 
+    1. Select the widget you want to add from the **OutSystemsUIWeb** module, and click **Add Dependency**.
     
     1. In the Toolbox, search for the widget again.
 
@@ -41,19 +41,19 @@ Use the Floating Action UI Pattern to show the primary action on a screen. Choos
 
     ![](<images/floatingactions-3-ss.png>)
 
-After following these steps and publishing the module, you can test the pattern in your app. 
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
 ### Floating Actions
 
-| **Property**                           | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Trigger (Trigger Identifier): Optional | Set the type of trigger for the button. the predefined values are: <p><ul><li>Click</li><li>Hover</li><li>Manual</li></ul></p><p>Examples</p><p><ul><li>Entities.Trigger.Click - Clicking the button triggers the button. This is the default.</li><li>Entities.Trigger.Hover - Hovering over the button triggers the button.</li></ul></p>                                                                                                                                                                                                                                                                                        |
-| ExtendedClass (Text): Optional         | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| **Property** | **Description** |
+|---|---|
+| Trigger (Trigger Identifier): Optional | Set the type of trigger for the button. the predefined values are: <p><ul><li>Click</li><li>Hover</li><li>Manual</li></ul></p><p>Examples</p><p><ul><li>Entities.Trigger.Click - Clicking the button triggers the button. This is the default.</li><li>Entities.Trigger.Hover - Hovering over the button triggers the button.</li></ul></p> |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ### Floating Actions Item
 
-| **Property**                   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Property** | **Description** |
+|---|---|
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

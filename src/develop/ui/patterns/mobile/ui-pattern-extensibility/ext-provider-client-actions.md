@@ -13,7 +13,7 @@ The following extensibility client actions are available for UI Patterns:
 
 * [Provider events](#provider-events)
 
-* [Provider configuration](#provider-configuration-provider-configuration)
+* [Provider configuration](#provider-configuration)
 
 ### Provider events
 

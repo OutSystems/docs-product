@@ -15,7 +15,7 @@ The following extensibility client actions are available for UI Patterns:
 
 * [Provider configuration](#provider-configuration-provider-configuration)
 
-### Provider events (#provider-events)
+### Provider events
 
 To add further events beyond the ones the Patterns have by default, there’s a set of two client actions per provider that can be used to add or remove a new event and an associated callback.
 
@@ -92,7 +92,7 @@ In the following example, the **noUiSlider** provider event is added to the Rang
 
     ![Result](<images/result-ss.png>)
 
-## Provider configuration (#provider-configuration)
+## Provider configuration
 
 To add further configuration beyond the ones the Patterns have by default, there is  a specific client action per provider.
 

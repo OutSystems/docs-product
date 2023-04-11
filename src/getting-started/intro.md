@@ -25,6 +25,66 @@ To create your first app in Service Studio you can:
 
 ![Creating a new app in OutSystems](images/getting-started-new-app-ss.png)
 
+The below image has hot spots on it. Click on the plus icons ![h:800px](images/hotspot-icon.png)  to learn more about what all you can access from the ODC Portal:
+<div class="os-hotspot">
+  <img class="os-hotspot__img" src="images/getting-started-new-app-ss.png" alt=""/>
+  <div class="os-hotspot__item" data-left="10" data-top="10">
+    <div class="os-hotspot__content">
+    Apps - use to access all your apps and libraries
+    </div>
+  </div>
+  <div class="os-hotspot__item" data-left="20" data-top="20">
+    <div class="os-hotspot__content">
+    Delivery - use to deploy apps, view apps deployed to a specific stage, and their delivery status
+    </div>
+  </div>
+  <div class="os-hotspot__item" data-left="30" data-top="30">
+    <div class="os-hotspot__content">
+    Monitoring - use to view all logs and activities
+    </div>
+  </div>
+  <div class="os-hotspot__item" data-left="40" data-top="40">
+    <div class="os-hotspot__content">
+    Users & access - use to invite users, view a list of user, or delete, and deactivate users
+    </div>
+  </div>
+  <div class="os-hotspot__item" data-left="50" data-top="50">
+    <div class="os-hotspot__content">
+    Forge - use to access a repository of apps and components developed by a community of ODC developers or to  publish your own apps.
+    </div>
+  </div>
+  <div class="os-hotspot__item" data-left="60" data-top="60">
+    <div class="os-hotspot__content">
+    App Draw - Lists all the apps the user has access to
+    </div>
+  </div>
+  <div class="os-hotspot__item" data-left="70" data-top="70">
+    <div class="os-hotspot__content">
+    Download ODC Studio- helps you download the ODC IDE.
+    </div>
+  </div>
+   <div class="os-hotspot__item" data-left="80" data-top="80">
+    <div class="os-hotspot__content">
+    Delivery - use to deploy apps, view apps deployed to a specific stage, and their delivery status
+    </div>
+  </div>
+   <div class="os-hotspot__item" data-left="90" data-top="90">
+    <div class="os-hotspot__content">
+    Delivery - use to deploy apps, view apps deployed to a specific stage, and their delivery status
+    </div>
+  </div>
+   <div class="os-hotspot__item" data-left="100" data-top="100">
+    <div class="os-hotspot__content">
+    Delivery - use to deploy apps, view apps deployed to a specific stage, and their delivery status
+    </div>
+  </div>
+   <div class="os-hotspot__item" data-left="15" data-top="82">
+    <div class="os-hotspot__content">
+    Delivery - use to deploy apps, view apps deployed to a specific stage, and their delivery status
+    </div>
+  </div>
+</div>
+
 ## Creating apps
 
 You build, edit, and debug your apps in Service Studio, using OutSystems visual language. Once you're happy with how your app looks and works, publish it as a web app, progressive web app, or native mobile app. For an overview, see [Choose the right app for your project](right-app.md).

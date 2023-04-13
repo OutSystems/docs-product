@@ -36,7 +36,7 @@ For each Role in your module, OutSystems provides the following Actions:
     Note: This function is only applicable to **active users**. When you use it for an inactive user, the result is always "False", even if the user has been granted the role.
 
 `Grant<role_name>Role`
-:   Provides access for a specific end user to a specific role. You can use it both for active and inactive users.  
+:   Provides access for a specific end user to a specific role. You can use it both for active and inactive users. The role granted to the end user persists until it's revoked.
     This action is not available for the System Roles **Anonymous** and **Registered**.
 
 `Revoke<role_name>Role`

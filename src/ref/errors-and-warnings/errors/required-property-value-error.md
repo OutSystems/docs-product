@@ -55,7 +55,12 @@ You added a List Item, Button, or Link widget, and did not set a value for the O
 
 **Recommended action**
 
-You need to set a valid value for the On Click property for the Event. 
+You need to set a valid value for the On Click property for the Event.
+This value sets the behavior after a click on the element, and you must set it to one of the following:
+
+* An Action that is triggered on click.
+* A Screen to which the user is redirect on click.
+* A RedirectToURL, with an URL to which the user is redirect on click.
 
 For a [List Item](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-listitem.md), [Button](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-button.md), or [Link](../../../ref/lang/auto/servicestudio-plugin-nrwidgets-link.md), set a valid value for the On Click property of the Event.
 

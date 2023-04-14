@@ -33,11 +33,7 @@ These are the requirements for using Code Mentor feature:
 
 * The feature [is enabled](#enable-disable) in Service Studio.
 
-* You're using:
-
-    * Windows-only Service Studio version 11.53.27 or later.
-
-    * Cross-platform Service Studio version 1.0.28 or later.
+* You're using Service Studio version 11.53.27 or later.
 
 * Service Studio can reach the URL `https://api.outsystems.com`.
 

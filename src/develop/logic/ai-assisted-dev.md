@@ -35,9 +35,9 @@ These are the requirements for using Code Mentor feature:
 
 * You're using:
 
-    * Windows-only Service Studio version 11.6.9 or later.
+    * Windows-only Service Studio version 11.53.27 or later.
 
-    * Any version of cross-platform Service Studio.
+    * Cross-platform Service Studio version 1.0.28 or later.
 
 * Service Studio can reach the URL `https://api.outsystems.com`.
 

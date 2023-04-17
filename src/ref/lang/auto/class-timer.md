@@ -307,7 +307,7 @@ Pressing the **Run Now** button for a deactivated Timer that has a schedule defi
 
 #### Deactivating/Activating a Timer
 
-To stop a Timer from being executed (fetched by the Scheduler Service and consume resources), press the **Deactivate** button at the bottom of the page. The Timer will no longer be fetched by the Scheduler Service.
+To stop a Timer from being executed (fetched by the Scheduler Service and consume resources), press the **Deactivate** button at the bottom of the page. The Timer will no longer be fetched by the Scheduler Service. This won't stop a running timer, it will only stop further executions.
 
 If the Timer is deactivated, the button shows **Activate** and you should press it to get the Timer back to work again.
 

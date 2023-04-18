@@ -4,6 +4,7 @@ summary: Displays multiple items in a horizontal slide.
 locale: en-us
 guid: a2167543-6fcc-4c6e-9ff5-ba4426722ed5
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Carousel
@@ -86,8 +87,8 @@ After following these steps and publishing the module, you can test the pattern 
 |OptionalConfigs (CarouselOptionalConfigs): Optional| Defines additional parameters to customize the Carousel behavior and functionality.|
 |OptionalConfigs.AutoPlay (Boolean): Optional| If set to True, the Carousel changes slides automatically. This is the default value. |
 |OptionalConfigs.Loop (Boolean): Optional|Enables the continuous slide of the Carousel even after it reaches the end.|
-|OptionalConfigs.Padding (Text): Optional|Defines the distance between the Carousel edges and the visible items on each slide.</br>Accepts any css size unit (such as px, vw, %) or even css variables.</br>Example: "100px" |
-|OptionalConfigs.ItemsGap (Text): Optional| Defines the distance between each Carousel item.</br>Accepts any css size unit (such as px, vw, %) or even css variables.</br>Example: "var(--space-base)".|
+|OptionalConfigs.Padding (Text): Optional|Defines the distance between the Carousel edges and the visible items on each slide.<br/>Accepts any css size unit (such as px, vw, %) or even css variables.<br/>Example: "100px" |
+|OptionalConfigs.ItemsGap (Text): Optional| Defines the distance between each Carousel item.<br/>Accepts any css size unit (such as px, vw, %) or even css variables.<br/>Example: "var(--space-base)".|
 |OptionalConfigs.StartingPosition (Integer): Optional| Defines the first element to show in the Carousel.|
 |ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul><br/>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 

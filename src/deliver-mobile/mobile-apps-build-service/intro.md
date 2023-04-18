@@ -4,6 +4,7 @@ tags: runtime-mobile; support-mobile
 locale: en-us
 guid: a5d92b93-40f7-418b-a2b3-40e81e820760
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Mobile Apps Build Service

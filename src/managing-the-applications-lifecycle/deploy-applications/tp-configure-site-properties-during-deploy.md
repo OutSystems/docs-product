@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: 4acf3283-61b0-4409-a357-cb2ef63f1a5e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure Site Properties During Deployment

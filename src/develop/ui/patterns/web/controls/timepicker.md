@@ -4,6 +4,7 @@ summary: Time Picker selects a single time from a drop-down list.
 locale: en-us
 guid: 113a390f-c3f6-4ba3-b493-184f75c36227
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Time Picker 
@@ -17,7 +18,6 @@ Applies only to Traditional Web Apps.
 You can use the Time Picker UI Pattern to select a single time from a drop-down list.
 
   ![](<images/timepicker-gif-1.gif>)
-
 
 **How to use the Time Picker UI Pattern**
 
@@ -53,15 +53,14 @@ You can use the Time Picker UI Pattern to select a single time from a drop-down 
 
     ![](<images/timepicker-image-18.png>)
 
-1. After following these steps and publishing the module, you can test the pattern in your app. 
-
+1. After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
-| **Property**                                        | **Description**                                                                                                                                                                                                                                                                                                                                      |
-|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| StartTime (Time): Optional                          | The first time option that appears in the drop-down. Make sure that the time is set according to the **Interval** property (if set). <br/><br/>Examples<br/><br/><ul><li>Blank - 12:00am is displayed as the first option in the drop-down. This is the default. </li><li>15:00 - 15:00 is displayed as the first option in the drop-down.</li></ul> |
-| Interval (Integer): Optional                        | Interval of time (in minutes) between the drop-down options.<br/><br/>Example<ul><li>Blank - The interval between each option is set to 30 minutes. This is the default.</li><li>60 - The interval between each option is set to 60 minutes.</li></ul>                                                                                               |
-| Is24hFormat (Boolean): Optional                     | If True, the time format is 24 hour. This is the default. If False, the time format is 12 hour.                                                                                                                                                                                                                                                      |
-| AdvancedFormat (TimePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters.<br/><br/>**Inputs**<br/><br/>TimePickerAdvancedFormat<br/><br/><ul><li> DisabledTimes (Time List)</li><li> MinTime (Time)</li> <li>MaxTime (Time)</li> <li>StartEmpty (Boolean)</li></ul>                                                                                       |
+| **Property** | **Description** |
+|---|---|
+| StartTime (Time): Optional | The first time option that appears in the drop-down. Make sure that the time is set according to the **Interval** property (if set). <br/><br/>Examples<br/><br/><ul><li>Blank - 12:00am is displayed as the first option in the drop-down. This is the default. </li><li>15:00 - 15:00 is displayed as the first option in the drop-down.</li></ul> |
+| Interval (Integer): Optional | Interval of time (in minutes) between the drop-down options.<br/><br/>Example<ul><li>Blank - The interval between each option is set to 30 minutes. This is the default.</li><li>60 - The interval between each option is set to 60 minutes.</li></ul> |
+| Is24hFormat (Boolean): Optional | If True, the time format is 24 hour. This is the default. If False, the time format is 12 hour. |
+| AdvancedFormat (TimePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters.<br/><br/>**Inputs**<br/><br/>TimePickerAdvancedFormat<br/><br/><ul><li> DisabledTimes (Time List)</li><li> MinTime (Time)</li> <li>MaxTime (Time)</li> <li>StartEmpty (Boolean)</li></ul> |
   

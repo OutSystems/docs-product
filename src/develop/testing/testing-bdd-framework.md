@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: b55c5578-ca69-4287-8431-445224d3165f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Component testing with BDDFramework tools

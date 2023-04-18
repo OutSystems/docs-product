@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 7b112440-68dd-47c3-926d-b59e83cf0327
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Unexpected Data Type Warning
@@ -26,7 +27,7 @@ You are using the incorrect data types in an expression or in a Built-in functio
 
 **Recommended action**
 
-Check the [data types](../../data/data-types/available-data-types.md) managed in your [expression](../../logic/expressions/intro.md) or used in the [Built-in function](../../../ref/lang/auto/builtinfunctions.final.md).
+Check the [data types](../../data/data-types/available-data-types.md) managed in your [expression](../../logic/expressions/intro.md) or used in the [Built-in function](../../../ref/lang/auto/builtinfunctions.md).
 
 ## &lt;Type&gt; data type expected instead of &lt;Type&gt; for &lt;Record&gt; record. Consider changing the data type to &lt;Type&gt; in attribute &lt;Attribute Name&gt; on Static Entity &lt;Static Entity Name&gt;.
 

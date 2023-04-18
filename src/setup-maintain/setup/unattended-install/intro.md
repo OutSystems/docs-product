@@ -4,6 +4,7 @@ tags: article-page; support-Installation_Configuration; support-Installation_Con
 locale: en-us
 guid: 4f39d91e-bc2f-4eac-a4ca-b8c660d97d0e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Unattended Installation and Upgrade
@@ -95,10 +96,11 @@ The optional `/D` switch specifies the path where the Service Studio and Integra
 Run the OutSystems Platform Server installation package as follows:
 
 ```
-PlatformServer-<version>.exe /S [/InstallPrerequisites=True] [/DoTuning=<factory_size>] [/D=<platform_path>]
+PlatformServer-<version>.exe /S [/InstallPrerequisites=True] [/RemovePreviousHostingBundlePackages=True] [/DoTuning=<factory_size>] [/D=<platform_path>]
 ```
 
-The optional `/InstallPrerequisites=True` switch specifies if the prerequisites will be automatically installed.  
+The optional `/InstallPrerequisites=True` switch specifies if the prerequisites will be automatically installed.
+The optional `/RemovePreviousHostingBundlePackages=True` switch specifies if during the installation of the prerequisites, when the Hosting Bundle is being installed, the installer should remove previous installations of Hosting Bundles, .NET and ASP.NET Runtime packages. The default value is `False`.
 The optional `/DoTuning=<factory_size>` switch specifies if the tuning should be automatically performed.  
 The optional `/D` switch specifies the path where the OutSystems Platform Server is installed. If this switch is provided, it must be the last one in the command line and the provided path must not contain quotes (`""`) even if the path contains spaces.
 
@@ -265,14 +267,6 @@ In major upgrades, the module preparation is skipped, thus you are required to r
 
 #### 5.3 Deployment { #deployment }
 
-<div class="warning" markdown="1">
-
-Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** the **/DeployPreparedApplications** parameter nor the **[Deploy All](../../upgrade/upgrade-platform-module-deploy.md)** feature.
-
-Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. In Platform Server 11.18.1 we've turned off this feature. These issues will be fixed in a next release and the feature will be again available for use.
-
-
-</div>
 
 Starting from Platform Server 11.18.0, after the modules are prepared, you can use the [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) functionality, to deploy all previously successfully compiled modules.
 
@@ -321,11 +315,7 @@ Run the following:
 
 <div class="warning" markdown="1">
 
-Starting from Platform Server 11.18.0, a new [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) feature is available.
-
-Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** the [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) feature.
-
-Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. In Platform Server 11.18.1 we've turned off this feature. These issues will be fixed in a next release and the feature will be again available for use.
+Starting from Platform Server 11.19.0, a new [Deploy All](../../upgrade/upgrade-platform-module-deploy.md) feature is available.
 
 </div>
 

@@ -4,6 +4,7 @@ summary: Advanced use cases for the Video UI Pattern.
 locale: en-us
 guid: cd532674-6556-4684-bdd5-fcff4e6c422e
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Video Reference

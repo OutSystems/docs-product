@@ -4,6 +4,7 @@ tags: support-Installation_Configuration; version-11
 locale: en-us
 guid: fd03d085-fcb8-4b45-939e-1931252ade2c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Applying Configurations in Service Center

@@ -2,6 +2,7 @@
 locale: en-us
 guid: 00000ca7-49ce-4972-b801-0f992f61c16a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Integration Studio Errors

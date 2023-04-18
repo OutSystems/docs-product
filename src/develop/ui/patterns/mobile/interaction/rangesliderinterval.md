@@ -4,6 +4,7 @@ summary: the Range Slider Interval UI Pattern allows users select a single value
 locale: en-us
 guid: 69f1f6e5-318f-4da2-aa8f-912a7b8e66c2
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Range Slider Interval
@@ -26,7 +27,7 @@ You can use the Range Slider Interval Pattern to allow users select a single val
 
 <div class="info" markdown="1">
  
-The Range Slider Interval Pattern is based on the [noUiSlider library](https://refreshless.com/nouislider/) (v15.5.1). For more information about the Range Slider Interval’s behaviors and extensibility methods, see the provider’s documentation.  
+The Range Slider Interval Pattern is based on v15.5.1 of the [noUiSlider library](https://refreshless.com/nouislider/). For more information about the Range Slider Interval’s behaviors and extensibility methods, see the provider’s documentation.  
  
 </div>
 
@@ -96,21 +97,21 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 | MinValue (Decimal): Mandatory| Defines the slider's minimum value.|
 | MaxValue (Decimal): Mandatory| Defines the slider's maximum value.|
-| StartingValueFrom (Decimal): Mandatory |Define the default value for the interval's start. Must be between min and max values. |
-| StartingValueTo (Decimal): Mandatory| Define the default value for the interval's end. Must be between min and max values. |
+| StartingValueFrom (Decimal): Mandatory |Defines the default value for the interval's start. Must be between min and max values. |
+| StartingValueTo (Decimal): Mandatory| Defines the default value for the interval's end. Must be between min and max values. |
 | Orientation (Orientation Identifier): Optional| Defines the Range Slider direction. The default direction is horizontal. |
 | Size (Text): Optional| Defines the size of the Range Slider Interval. If the slider's orientation is horizontal, the size you set will be the width of the Range Slider Interval. Otherwise (vertical), the size you set will be the height. Accepts any kind of unit (px, %, vw). Default value is 100%. |
-| OptionalConfigs (RangeSliderOptionalConfigs): Optional | Define additional parameters to customize the RangeSlider behavior and functionality. |
+| OptionalConfigs (RangeSliderOptionalConfigs): Optional | Defines additional parameters to customize the RangeSlider behavior and functionality. |
 | OptionalConfigs.ShowFloatingLabel (Boolean): Optional | Set to True to add a floating label above the handler. The default value is False.|
 | OptionalConfigs.Step (Decimal): Optional|Slider moves in increments of Step. If Step is 10, the slider will go from 0 to 10, to 20, to 30, etc. Default value is 1.|
 | OptionalConfigs.ShowTickMarks (Boolean): Optional | Show tick marks below the slider. To generate the tick marks, you must set the TickMarksInterval. The default value is True.|
-| OptionalConfigs.TickMarksInterval (Integer): Optional | Define the range interval after which a tick mark is drawn (when ShowTickMarks is enabled).</br>Example: If TickMarksInterval = 5, a tick mark is shown for every 5 steps.</br>The value can not be less than 0 (library restraint).</br>If you do not want the tick marks to show, set the ShowTickMarks parameter to False.  |
+| OptionalConfigs.TickMarksInterval (Integer): Optional | Defines the range interval after which a tick mark is drawn (when ShowTickMarks is enabled).<br/>Example: If TickMarksInterval = 5, a tick mark is shown for every 5 steps.<br/>The value can not be less than 0 (library restraint).<br/>If you do not want the tick marks to show, set the ShowTickMarks parameter to False.  |
 | OptionalConfigs.IsDisabled (Boolean): Optional| Set as True to disable the Range Slider. The default value is False.|
-| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</br></br>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events
 
 |Event| Description  | 
 |---|---|
-|Initialized: Optional  | Event triggered after the RangerSliderInterval instance is ready.</br>With this event, you get the element Id that can be used to call methods from the RangeSliderAPI:</br>``OutSystems.OSUI.Patterns.RangeSliderAPI`` | 
+|Initialized: Optional  | Event triggered after the RangerSliderInterval instance is ready.<br/>With this event, you get the element Id that can be used to call methods from the RangeSliderAPI:<br/>``OutSystems.OSUI.Patterns.RangeSliderAPI`` | 
 |OnValueChange: Mandatory  | Event triggered after selecting a new value on the slider. By default, the event is triggered while the user is dragging the RangeSliderInterval handler. You can use the SetRangeSliderIntervalChangeOnDragEnd to trigger the event only after the user releases it.  | 

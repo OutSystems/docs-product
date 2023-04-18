@@ -2,6 +2,7 @@
 locale: en-us
 guid: cf34b4c6-2dc9-4ea3-82d0-f77dcc9f68ca
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Entity Editor

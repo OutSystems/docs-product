@@ -4,6 +4,7 @@ summary: The Card Item widget allows you to list items with multiple content typ
 locale: en-us
 guid: 434a7ae9-243a-47b8-ae7c-e2f424a5411b
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Card Item

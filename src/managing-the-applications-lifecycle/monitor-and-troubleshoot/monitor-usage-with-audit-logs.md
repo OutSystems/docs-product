@@ -4,6 +4,7 @@ tags: support-Integrations_Extensions; support-monitoring;  support-monitoring-f
 locale: en-us
 guid: ff41a92e-5717-4a6c-9016-12acdb4de71f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Monitor Usage with Audit Logs

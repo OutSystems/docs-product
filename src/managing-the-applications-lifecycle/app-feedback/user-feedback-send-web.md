@@ -4,6 +4,7 @@ tags: runtime-traditionalwebandreactiveweb
 locale: en-us
 guid: da4d09df-8c2f-4c23-9a16-837f5e3206f6
 app_type: traditional web apps, reactive web apps
+platform-version: o11
 ---
 
 # Send feedback in web apps

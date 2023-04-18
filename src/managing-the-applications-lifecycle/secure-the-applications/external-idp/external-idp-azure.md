@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: DA5BA9CA-066E-49E2-92C8-674CB644C370
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configuring Microsoft Azure AD authentication
@@ -24,7 +25,9 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. Access the Microsoft Azure portal.
 
-1. Go to **App registrations** and click  **+ New registration**.
+1. Go to **Azure Active Directory** -> **App registrations**.
+
+1. Click  **+ New registration**.
 
     ![URI metadata](images/new-reg-az.png)
 

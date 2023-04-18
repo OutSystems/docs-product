@@ -4,6 +4,7 @@ tags: support-Mobile_Apps-featured; support-webapps-featured
 locale: en-us
 guid: 874543f6-0021-47c7-9b10-28853b48d6a3
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Creating Screen Templates

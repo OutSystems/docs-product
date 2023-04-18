@@ -4,6 +4,7 @@ Tags:
 locale: en-us
 guid: 1fd17ee2-6c15-4f5b-8b37-94113a71eafc
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Installing client side certificates on self-managed environments

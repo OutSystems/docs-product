@@ -3,6 +3,7 @@ summary: Allow users to access your applications over HTTPS by enabling SSL in y
 locale: en-us
 guid: 089b0bf9-4ff6-462f-b6ec-43c2d10472e1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use HTTPS by Enabling SSL

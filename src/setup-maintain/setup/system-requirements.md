@@ -4,6 +4,7 @@ tags: support-Application_Troubleshooting; support-installation; support-Install
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems system requirements
@@ -28,6 +29,7 @@ This section summarizes the requirements for installing the Platform Server in y
 
 ### Operating System
 
+* Microsoft Windows Server 2022 (Standard Edition or higher edition), since Platform Server 11.20.0
 * Microsoft Windows Server 2019 (Standard Edition or higher edition), since Platform Server Release Jul.2019
 * Microsoft Windows Server 2016 (Standard Edition or higher edition)
 
@@ -72,7 +74,8 @@ Future revisions of OutSystems may require the installation of an update within 
 
 OutSystems Cache Invalidation Service requires the following minimum version of RabbitMQ Server:
 
-* RabbitMQ Server 3.9.11 with Erlang version 24.2, since Platform Server 11.15.0
+* RabbitMQ Server 3.10.14 with Erlang version 25.1.2, since Platform Server 11.19.0
+* RabbitMQ Server 3.9.11 with Erlang version 24.2, from Platform Server 11.15.0 to 11.18.1
 * RabbitMQ Server 3.8.21 with Erlang version 23.2, from Platform Server 11.13.2 to 11.14.1
 * RabbitMQ Server 3.8.3 with Erlang version 22.3, from Platform Server 11.9.0 to 11.13.1
 * RabbitMQ Server 3.7.7 with Erlang version 20.3, for earlier versions of Platform Server
@@ -154,6 +157,7 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integ
 
 * MySQL 5.6 (5.6.5 or later within the 5.6 version, all editions)
 * MySQL 5.7 (5.7.22 or later within the 5.7 version, all editions)
+* MySQL 8.0 (8.0.28 or later within the 8.0 version, all editions), since Platform Server 11.19.0
 
 ### PostgreSQL Database
 
@@ -214,7 +218,6 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 
 **macOS (cross-platform Service Studio only):**
 
-* macOS Catalina
 * macOS Big Sur
 * macOS Monterrey
 
@@ -224,6 +227,8 @@ In Apple devices using Apple Silicon M1 processor, Service Studio runs under the
 * Windows 8 (64-bit)
 * Microsoft Windows Server 2019
 * Microsoft Windows Server 2016
+
+For these Operating System versions, OutSystems only supports Windows and macOS editions that are supported by [Microsoft](https://support.microsoft.com/en-us/lifecycle/search) and Apple respectively.
 
 #### Required Software
 

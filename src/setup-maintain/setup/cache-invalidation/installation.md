@@ -4,6 +4,7 @@ tags: version-11; support-Installation_Configuration
 locale: en-us
 guid: 7f15fedf-010b-4271-8630-86ab785d618a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Install and configure RabbitMQ using the command-line

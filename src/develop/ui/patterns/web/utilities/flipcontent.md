@@ -4,6 +4,7 @@ summary: Flip Content prioritizes information display, keeping the interface unc
 locale: en-us
 guid: 859c44ea-109c-48e5-bddd-579f1b21e789
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Flip Content

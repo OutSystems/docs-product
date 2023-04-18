@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 7b30a0ca-ff76-47b2-8183-6f0974bbf2d1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Call a stored procedure

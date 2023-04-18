@@ -4,6 +4,7 @@ summary: Advanced use cases for the Flip Content UI Pattern.
 locale: en-us
 guid: 478229ef-fead-4fea-be67-f0fdd66c7209
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Flip Content Reference

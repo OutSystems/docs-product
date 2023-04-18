@@ -4,6 +4,7 @@ summary: Learn about pre-requirements and how to setup AI Mentor Studio.
 locale: en-us
 guid: c9fd26ba-85ea-406d-834a-df6c0399d11a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to set up AI Mentor Studio

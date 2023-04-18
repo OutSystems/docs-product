@@ -4,6 +4,7 @@ summary: Search Balloon lets the users search a list while showing the results s
 locale: en-us
 guid: b50125b9-419e-42f0-a55e-1deb3cfe5fc9
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Search Balloon
@@ -102,8 +103,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property**                    | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ExtendedClass (Text): Optional  | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
-| AdvancedFormat (Text): Optional | Allows you to use more options than what is provided in the input parameters. <p>Example <ul><li> `{ arrow: false,   showOnInit: true }`</li></ul></p> For more information, see <https://atomiks.github.io/tippyjs/>.                                                                                                                                                                                                                                                                                                                                                                                                             |
-
+| **Property** | **Description** |
+|---|---|
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| AdvancedFormat (Text): Optional | Allows you to use more options than what is provided in the input parameters. <p>Example <ul><li> `{ arrow: false,   showOnInit: true }`</li></ul></p> For more information, see <https://atomiks.github.io/tippyjs/>. |

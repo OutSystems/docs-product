@@ -2,6 +2,7 @@
 locale: en-us
 guid: 3a0036d4-b992-4050-a1eb-fccbccdd2e86
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Group Error

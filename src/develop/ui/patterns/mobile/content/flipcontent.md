@@ -4,6 +4,7 @@ tags: runtime-mobileandreactiveweb;
 locale: en-us
 guid: 714b1496-4c20-47fd-afcb-a0f2007ad984
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Flip Content
@@ -64,9 +65,9 @@ You can use the Flip Content UI Pattern to display information that when, for ex
 
 | Property| Description|
 |---|---|
-|StartsFlipped (Boolean): Optional | Defines the initial state of the pattern. If True, the Card Front content is displayed first before flipping. If False, the Card Back content is displayed first before flipping. This is the default.</br></br>Use one of the following actions to change the value afterwards: <ul><li>FlipContentBack</li><li>FlipContentFront</li><li>FlipContentToggle</li></ul> |
+|StartsFlipped (Boolean): Optional | Defines the initial state of the pattern. If True, the Card Front content is displayed first before flipping. If False, the Card Back content is displayed first before flipping. This is the default.<br/><br/>Use one of the following actions to change the value afterwards: <ul><li>FlipContentBack</li><li>FlipContentFront</li><li>FlipContentToggle</li></ul> |
 |FlipOnClick (Boolean): Optional| If True, the flip event is triggered when the Flip Content card (front or back) is clicked. This is the default. If False, you can define the action that triggers the flip event.|
-|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</br></br>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events
 

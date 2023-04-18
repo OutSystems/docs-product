@@ -3,6 +3,7 @@ summary: How to add an HTTP header using the SOAP Extensibility API.
 locale: en-us
 guid: 2f16774f-ec28-4597-9b56-c19599cb233e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Add an HTTP header

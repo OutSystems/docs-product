@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: 1a81a250-78b5-4d79-b161-3b501049e46c
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Read-Only Data Optimized

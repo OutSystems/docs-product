@@ -4,6 +4,7 @@ summary: Learn how to use Workflow Builder.
 guid: 2168edce-7134-45ba-8219-a46c2a26f131
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Using Workflow Builder
@@ -15,9 +16,9 @@ To access Workflow Builder, [follow this link](http://workflowbuilder.outsystems
 
 To build apps with the Workflow Builder, you need to have an IT user in your infrastructure, with permissions to publish apps to your development environment. In OutSystems language, "publishing an app" means installing the generated app in the destination environment.
 
-When logging in the Workflow Builder, you need to provide the **development environment** address and the login credentials, as depicted in the image below. If you don't know your IT user or don't have one yet, you need to request it to your IT department. They're able to assist with this step. The same applies to the requested environment address.
+When logging in the Workflow Builder, you need to provide the **development environment** address, and then the login credentials. If you don't know your IT user or don't have one yet, you need to request it to your IT department. They're able to assist with this step. The same applies to the requested environment address.
 
-![Workflow Builder login page](images/wfb-login-page.png)
+![Workflow Builder login page](images/login-wfb.png)
 
 <div class="info" markdown="1">
 

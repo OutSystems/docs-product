@@ -4,6 +4,7 @@ summary:
 locale: en-us
 guid: 4CCAE716-CF2A-4601-9F03-D6ACF603F01A
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Bottom Sheet
@@ -86,7 +87,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 |Property|Description|
 |---|---|
-|Shape (Shape Identifier): Optional|Defines the Bottom Sheet shape.</br>The predefined options are: SoftRounded, Rounded, and Sharp.</br></br>For example, Entities.Shape.Rounded inherits the rounded style. This is the default shape.|
+|Shape (Shape Identifier): Optional|Defines the Bottom Sheet shape.<br/>The predefined options are: SoftRounded, Rounded, and Sharp.<br/><br/>For example, Entities.Shape.Rounded inherits the rounded style. This is the default shape.|
 |ShowHandler (Boolean): Optional|If set to True, a handler is displayed on top of the Bottom Sheet. The default value is True. If set to False, no handler is displaed.|
 | ExtendedClass (Text): Optional|Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS. <br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 

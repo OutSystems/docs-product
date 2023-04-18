@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 00aca302-9aa1-4fd7-a887-b99bb764dd82
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Web Interfaces

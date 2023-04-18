@@ -4,6 +4,7 @@ summary: Advanced use cases for the Progress Bar
 locale: en-us
 guid: fdef91ac-b3e1-4e49-a652-7921c46c9b35
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Progress Bar Reference

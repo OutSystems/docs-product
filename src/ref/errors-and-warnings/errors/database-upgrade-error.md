@@ -2,6 +2,7 @@
 locale: en-us
 guid: 3bb08332-800d-426b-bdf2-2de08f859c9b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Database Upgrade Error

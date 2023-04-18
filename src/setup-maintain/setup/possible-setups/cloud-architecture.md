@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: b6b4709a-59b4-45e4-b29d-2f78d8bb8f19
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems Cloud network architecture

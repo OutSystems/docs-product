@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: 09207082-720b-48a1-980b-e8937925e461
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Override the Default Mobile Extensibility Configurations

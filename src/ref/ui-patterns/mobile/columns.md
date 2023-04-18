@@ -4,6 +4,7 @@ summary: Advanced use cases for the Columns UI Pattern.
 locale: en-us
 guid: eea3c672-9d43-448e-bb20-021cde37af18
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Columns Reference

@@ -1,4 +1,4 @@
-# Getting Started 
+# Getting Started
 - href: getting-started/intro.md
 - topics:
     - href: getting-started/right-app.md
@@ -467,6 +467,7 @@
         - href: develop/security/end-user-manage/intro.md
         - topics:
             - href: develop/security/end-user-manage/accessing-users.md
+            - href: develop/security/end-user-manage/configure-admin.md
             - href: develop/security/end-user-manage/classify-internal-users.md
             - href: develop/security/end-user-manage/add-delete-users.md
             - href: develop/security/end-user-manage/end-user-roles.md
@@ -656,6 +657,8 @@
         - href: deliver-mobile/generate-distribute-mobile-app/more-information.md
         - href: deliver-mobile/generate-distribute-mobile-app/configuration-native-platforms.md
     - href: deliver-mobile/mobile-app-update-scenarios.md
+    - topics:
+        - href: deliver-mobile/ota-upgrades.md
     - href: deliver-mobile/manage-distribution-options/intro.md
     - href: deliver-mobile/mobile-apps-build-service/intro.md
     - topics:
@@ -750,6 +753,9 @@
         - href: extensibility-and-integration/rest/consume-rest-apis/intro.md
         - topics:
             - href: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
+            - topics:
+                - href: extensibility-and-integration/rest/consume-rest-apis/consume-multipart-form-data.md
+                - href: extensibility-and-integration/rest/consume-rest-apis/consume-rest-payload-examples.md
             - href: extensibility-and-integration/rest/consume-rest-apis/refresh-rest-service.md
             - href: extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
             - href: extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md
@@ -783,6 +789,7 @@
             - href: extensibility-and-integration/soap/consume/configure-auth.md
             - href: extensibility-and-integration/soap/consume/refresh-web-service.md
             - href: extensibility-and-integration/soap/consume/configure-runtime.md
+            - href: extensibility-and-integration/soap/consume/add-extra-schema-compliance.md
             - href: extensibility-and-integration/soap/consume/advanced-extensibility.md
             - topics:
                 - href: extensibility-and-integration/soap/consume/extensibility-use-cases/endpoint.md
@@ -970,16 +977,14 @@
         - href: managing-the-applications-lifecycle/manage-tech-debt/overview-dashboard.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/ref-code-patterns.md
         - topics:
-            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/best-pratices.md
-            - topics:
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-inline-js-and-style.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-large-session-variables.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-site-property-updates.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/control-image-size.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/limit-records-sql.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
-                - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-inline-js-and-style.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-large-session-variables.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/avoid-site-property-updates.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/control-image-size.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/limit-records-sql.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/optimize-data-preparation.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
+            - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/tech-debt-formula.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-ignore-modules.md
@@ -1088,36 +1093,36 @@
                 - href: ref/data/data-types/available-data-types.md
                 - href: ref/data/data-types/data-types-at-runtime.md
                 - href: ref/data/data-types/list.md
-                - href: ref/lang/auto/Class.Structure.final.md
-                - href: ref/lang/auto/Class.Structure Attribute.final.md
+                - href: ref/lang/auto/class-structure.md
+                - href: ref/lang/auto/class-structure-attribute.md
             # Handling Data
             - href: ref/data/handling-data/intro.md
             - topics:
                 # Queries
                 - href: ref/data/handling-data/queries/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Aggregate.final.md
-                    - href: ref/lang/auto/Class.Query Parameter.final.md
-                    - href: ref/lang/auto/Class.SQL.final.md
+                    - href: ref/lang/auto/class-aggregate.md
+                    - href: ref/lang/auto/class-query-parameter.md
+                    - href: ref/lang/auto/class-sql.md
                     - href: ref/data/handling-data/queries/supported-join-types.md
-                - href: ref/lang/auto/Class.Resource.final.md
-                - href: ref/lang/auto/Class.Runtime Property.final.md
-                - href: ref/lang/auto/Class.Session Variable.final.md
-                - href: ref/lang/auto/Class.Client Variable.final.md
-                - href: ref/lang/auto/Class.Site Property.final.md
+                - href: ref/lang/auto/class-resource.md
+                - href: ref/lang/auto/class-runtime-property.md
+                - href: ref/lang/auto/class-session-variable.md
+                - href: ref/lang/auto/class-client-variable.md
+                - href: ref/lang/auto/class-site-property.md
                 # Variables
                 - href: ref/data/handling-data/variables/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Input Parameter.final.md
-                    - href: ref/lang/auto/Class.Local Variable.final.md
-                    - href: ref/lang/auto/Class.Output Parameter.final.md
+                    - href: ref/lang/auto/class-input-parameter.md
+                    - href: ref/lang/auto/class-local-variable.md
+                    - href: ref/lang/auto/class-output-parameter.md
             # Modeling Data
             - href: ref/data/modeling-data/intro.md
             - topics:
-                - href: ref/lang/auto/Class.Entity.final.md
-                - href: ref/lang/auto/Class.Entity Attribute.final.md
-                - href: ref/lang/auto/Class.Entity Diagram.final.md
-                - href: ref/lang/auto/Class.Static Entity.final.md
+                - href: ref/lang/auto/class-entity.md
+                - href: ref/lang/auto/class-entity-attribute.md
+                - href: ref/lang/auto/class-entity-diagram.md
+                - href: ref/lang/auto/class-static-entity.md
         # Extensibility and Integration
         - href: ref/extensibility-and-integration/intro.md
         - topics:
@@ -1129,47 +1134,49 @@
                 - href: ref/extensibility-and-integration/rest-apis/consumed-rest-api/intro.md
                 - topics:
                     - href: ref/extensibility-and-integration/rest-apis/consumed-rest-api/mapping.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestClient.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestAction.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestActionInput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestActionOutput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestStructure.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestStructureAttribute.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlow.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlowInput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlowOutput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackStructure.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackStructureAttribute.final.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-restclient.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-restaction.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-restactioninput.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-restactionoutput.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-reststructure.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-reststructureattribute.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-restcallbackactionflow.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-restcallbackactionflowinput.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-restcallbackactionflowoutput.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-restcallbackstructure.md
+                    - href: ref/lang/auto/servicestudio-plugin-rest-restcallbackstructureattribute.md
+                    - href: ref/extensibility-and-integration/rest-apis/consumed-rest-api/structure-multipart-request.md
+                    - href: ref/extensibility-and-integration/rest-apis/consumed-rest-api/structure-attribute-multipart-request.md
                 # Exposed REST API
                 - href: ref/extensibility-and-integration/rest-apis/exposed-rest-api/intro.md
                 - topics:
                     - href: ref/extensibility-and-integration/rest-apis/exposed-rest-api/built-in-http-status-codes.md
                     - href: ref/extensibility-and-integration/rest-apis/exposed-rest-api/supported-media.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestService.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAction.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceActionInput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceActionOutput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlow.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowInput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowOutput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackStructure.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackStructureAttribute.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlow.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlowInput.final.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restservice.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restserviceaction.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restserviceactioninput.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restserviceactionoutput.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackactionflow.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackactionflowinput.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackactionflowoutput.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackstructure.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackstructureattribute.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restserviceauthenticationflow.md
+                    - href: ref/lang/auto/servicestudio-plugin-restservice-restserviceauthenticationflowinput.md
             # SAP
             - href: ref/extensibility-and-integration/sap/intro.md
             - topics:
                 - href: ref/extensibility-and-integration/sap/mapping-sap.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapClient.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapAction.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapActionInput.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapActionOutput.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapStructure.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapStructureAttribute.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapCallbackActionFlow.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapCallbackActionFlowInput.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapDynamicLoginInput.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.SAP.SapDynamicPasswordInput.final.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapclient.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapaction.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapactioninput.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapactionoutput.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapstructure.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapstructureattribute.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapcallbackactionflow.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapcallbackactionflowinput.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapdynamiclogininput.md
+                - href: ref/lang/auto/servicestudio-plugin-sap-sapdynamicpasswordinput.md
             # SOAP Web Services
             - href: ref/extensibility-and-integration/soap/intro.md
             - topics:
@@ -1178,49 +1185,49 @@
                 - topics:
                     - href: ref/extensibility-and-integration/soap/consumed-soap/mapping-xml-to-outsystems.md
                     - href: ref/extensibility-and-integration/soap/consumed-soap/consumed-soap-constraints.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPClient.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPAction.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPActionInput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPActionOutput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPDynamicUsernameInput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPDynamicPasswordInput.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPCallbackActionFlow.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPStaticEntity.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPStaticEntityAttribute.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPStructure.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.SOAP.SOAPStructureAttribute.final.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapclient.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapaction.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapactioninput.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapactionoutput.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapdynamicusernameinput.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapdynamicpasswordinput.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapcallbackactionflow.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapstaticentity.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapstaticentityattribute.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapstructure.md
+                    - href: ref/lang/auto/servicestudio-plugin-soap-soapstructureattribute.md
 
                     - href: ref/extensibility-and-integration/soap/consumed-soap/legacy/intro.md
                     - topics:
-                        - href: ref/lang/auto/Class.SOAP Web Service (Deprecated).final.md
-                        - href: ref/lang/auto/Class.Web Service Method (Deprecated SOAP).final.md
-                        - href: ref/lang/auto/Class.Input Parameter (Deprecated SOAP).final.md
-                        - href: ref/lang/auto/Class.Output Parameter (Deprecated SOAP).final.md
-                        - href: ref/lang/auto/Class.Structure (Deprecated SOAP).final.md
-                        - href: ref/lang/auto/Class.Structure Attribute (Deprecated SOAP).final.md
+                        - href: ref/lang/auto/class-soap-web-service-deprecated.md
+                        - href: ref/lang/auto/class-web-service-method-deprecated-soap.md
+                        - href: ref/lang/auto/class-input-parameter-deprecated-soap.md
+                        - href: ref/lang/auto/class-output-parameter-deprecated-soap.md
+                        - href: ref/lang/auto/class-structure-deprecated-soap.md
+                        - href: ref/lang/auto/class-structure-attribute-deprecated-soap.md
                 # Exposed SOAP Web Service
                 - href: ref/extensibility-and-integration/soap/exposed-soap/intro.md
                 - topics:
                     - href: ref/extensibility-and-integration/soap/exposed-soap/mapping-outsystems-to-xml.md
-                    - href: ref/lang/auto/Class.SOAP Web Service.final.md
-                    - href: ref/lang/auto/Class.Web Service Method.final.md
+                    - href: ref/lang/auto/class-soap-web-service.md
+                    - href: ref/lang/auto/class-web-service-method.md
         # Logic
         - href: ref/logic/intro.md
         - topics:
             # Built-in Functions
-            - href: ref/lang/auto/builtinfunctions.final.md
+            - href: ref/lang/auto/builtinfunctions.md
             - topics:
-                - href: ref/lang/auto/builtinfunction.Math.final.md
-                - href: ref/lang/auto/builtinfunction.Numeric.final.md
-                - href: ref/lang/auto/builtinfunction.Text.final.md
-                - href: ref/lang/auto/builtinfunction.Date and Time.final.md
-                - href: ref/lang/auto/builtinfunction.Data Conversion.final.md
-                - href: ref/lang/auto/builtinfunction.Format.final.md
-                - href: ref/lang/auto/builtinfunction.Email.final.md
-                - href: ref/lang/auto/builtinfunction.Environment.final.md
-                - href: ref/lang/auto/builtinfunction.URL.final.md
-                - href: ref/lang/auto/builtinfunction.Miscellaneous.final.md
-                - href: ref/lang/auto/builtinfunction.Roles.final.md
+                - href: ref/lang/auto/builtinfunction-math.md
+                - href: ref/lang/auto/builtinfunction-numeric.md
+                - href: ref/lang/auto/builtinfunction-text.md
+                - href: ref/lang/auto/builtinfunction-date-and-time.md
+                - href: ref/lang/auto/builtinfunction-data-conversion.md
+                - href: ref/lang/auto/builtinfunction-format.md
+                - href: ref/lang/auto/builtinfunction-email.md
+                - href: ref/lang/auto/builtinfunction-environment.md
+                - href: ref/lang/auto/builtinfunction-url.md
+                - href: ref/lang/auto/builtinfunction-miscellaneous.md
+                - href: ref/lang/auto/builtinfunction-roles.md
             # Expressions
             - href: ref/logic/expressions/intro.md
             - topics:
@@ -1232,39 +1239,40 @@
                 # Logic Elements
                 - href: ref/logic/implementing-logic/logic-elements.md
                 - topics:
-                    - href: ref/lang/auto/Class.Client Action.final.md
-                    - href: ref/lang/auto/Class.Screen Action.final.md
-                    - href: ref/lang/auto/Class.Server Action.final.md
+                    - href: ref/lang/auto/class-client-action.md
+                    - href: ref/lang/auto/class-screen-action.md
+                    - href: ref/lang/auto/class-server-action.md
+                    - href: ref/lang/auto/class-service-action.md
                     - href: ref/logic/implementing-logic/download.md
-                    - href: ref/lang/auto/Class.Role.final.md
-                    - href: ref/lang/auto/Class.User Exception.final.md
-                    - href: ref/lang/auto/Class.Role Exception.final.md
+                    - href: ref/lang/auto/class-role.md
+                    - href: ref/lang/auto/class-user-exception.md
+                    - href: ref/lang/auto/class-role-exception.md
                 # Logic Tools
                 - href: ref/logic/implementing-logic/logic-tools/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Start.final.md
-                    - href: ref/lang/auto/Class.Run Client Action.final.md
-                    - href: ref/lang/auto/Class.Run Server Action.final.md
-                    - href: ref/lang/auto/Class.Refresh Data.final.md
-                    #- href: ref/lang/auto/Class.Aggregate.final.md
-                    #- href: ref/lang/auto/Class.SQL.final.md
-                    - href: ref/lang/auto/Class.If.final.md
-                    - href: ref/lang/auto/Class.Switch.final.md
-                    - href: ref/lang/auto/Class.For Each.final.md
-                    - href: ref/lang/auto/Class.Assign.final.md
-                    - href: ref/lang/auto/Class.Record List To Excel.final.md
-                    - href: ref/lang/auto/Class.Excel To Record List.final.md
-                    - href: ref/lang/auto/Class.JSON Deserialize.final.md
-                    - href: ref/lang/auto/Class.JSON Serialize.final.md
-                    - href: ref/lang/auto/Class.Exception Handler.final.md
-                    - href: ref/lang/auto/Class.Raise Exception.final.md
-                    - href: ref/lang/auto/Class.Comment.final.md
-                    - href: ref/lang/auto/Class.Message.final.md
-                    - href: ref/lang/auto/Class.Destination.final.md
-                    - href: ref/lang/auto/Class.Download.final.md
-                    - href: ref/lang/auto/Class.JavaScript.final.md
-                    - href: ref/lang/auto/Class.Trigger Event.final.md
-                    - href: ref/lang/auto/Class.End.final.md
+                    - href: ref/lang/auto/class-start.md
+                    - href: ref/lang/auto/class-run-client-action.md
+                    - href: ref/lang/auto/class-run-server-action.md
+                    - href: ref/lang/auto/class-refresh-data.md
+                    #- href: ref/lang/auto/class-aggregate.md
+                    #- href: ref/lang/auto/class-sql.md
+                    - href: ref/lang/auto/class-if.md
+                    - href: ref/lang/auto/class-switch.md
+                    - href: ref/lang/auto/class-for-each.md
+                    - href: ref/lang/auto/class-assign.md
+                    - href: ref/lang/auto/class-record-list-to-excel.md
+                    - href: ref/lang/auto/class-excel-to-record-list.md
+                    - href: ref/lang/auto/class-json-deserialize.md
+                    - href: ref/lang/auto/class-json-serialize.md
+                    - href: ref/lang/auto/class-exception-handler.md
+                    - href: ref/lang/auto/class-raise-exception.md
+                    - href: ref/lang/auto/class-comment.md
+                    - href: ref/lang/auto/class-message.md
+                    - href: ref/lang/auto/class-destination.md
+                    - href: ref/lang/auto/class-download.md
+                    - href: ref/lang/auto/class-javascript.md
+                    - href: ref/lang/auto/class-trigger-event.md
+                    - href: ref/lang/auto/class-end.md
 
         # Interfaces
         - href: ref/interfaces/intro.md
@@ -1272,42 +1280,42 @@
             # Adding Data and Logic
             - href: ref/interfaces/adding-data-and-logic.md
             - topics:
-                #- href: ref/lang/auto/Class.Aggregate.final.md
-                #- href: ref/lang/auto/Class.Client Action.final.md
-                - href: ref/lang/auto/Class.Data Action.final.md
-                - href: ref/lang/auto/Class.Script.final.md
+                #- href: ref/lang/auto/class-aggregate.md
+                #- href: ref/lang/auto/class-client-action.md
+                - href: ref/lang/auto/class-data-action.md
+                - href: ref/lang/auto/class-script.md
             # Designing Screens
             - href: ref/interfaces/designing-screens.md
             - topics:
-                - href: ref/lang/auto/Class.Block Widget.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroupItem.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Container.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Form.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.AdvancedHtml.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Icon.final.md
-                - href: ref/lang/auto/Class.If Widget.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Image.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Label.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ListItemAction.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ListItem.final.md
-                - href: ref/lang/auto/Class.Placeholder Widget.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popover.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popup.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioButton.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioGroup.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TableRecords.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md
-                - href: ref/lang/auto/Class.Text Widget.final.md
-                - href: ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md
+                - href: ref/lang/auto/class-block-widget.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-button.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-buttongroup.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-buttongroupitem.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-checkbox.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-container.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-dropdown.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-expression.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-form.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-advancedhtml.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-icon.md
+                - href: ref/lang/auto/class-if-widget.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-image.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-input.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-label.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-link.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-list.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-listitemaction.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-listitem.md
+                - href: ref/lang/auto/class-placeholder-widget.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-popover.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-popup.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-radiobutton.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-radiogroup.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-tablerecords.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-textarea.md
+                - href: ref/lang/auto/class-text-widget.md
+                - href: ref/lang/auto/servicestudio-plugin-nrwidgets-upload.md
             # Patterns
             - href: ref/interfaces/ui-patterns.md
             - topics:
@@ -1332,18 +1340,18 @@
             # Designing the Layout
             - href: ref/interfaces/designing-the-layout.md
             - topics:
-                - href: ref/lang/auto/Class.Image.final.md
-                - href: ref/lang/auto/Class.Localized Image.final.md
-                - href: ref/lang/auto/Class.Mobile Theme.final.md
-                - href: ref/lang/auto/Class.UI Flow.final.md
+                - href: ref/lang/auto/class-image.md
+                - href: ref/lang/auto/class-localized-image.md
+                - href: ref/lang/auto/class-mobile-theme.md
+                - href: ref/lang/auto/class-ui-flow.md
             # Navigating in the Application
             - href: ref/interfaces/navigating-in-the-application.md
             - topics:
-                - href: ref/lang/auto/Class.Block.final.md
-                #- href: ref/lang/auto/Class.Comment.final.md
-                - href: ref/lang/auto/Class.Event.final.md
-                - href: ref/lang/auto/Class.External Site.final.md
-                - href: ref/lang/auto/Class.Screen.final.md
+                - href: ref/lang/auto/class-block.md
+                #- href: ref/lang/auto/class-comment.md
+                - href: ref/lang/auto/class-event.md
+                - href: ref/lang/auto/class-external-site.md
+                - href: ref/lang/auto/class-screen.md
         # Platform Utilities
         - href: ref/platform/intro.md
         - topics:
@@ -1353,8 +1361,8 @@
                 # Mobile
                 - href: ref/platform/system-events/mobile.md
                 - topics:
-                    - href: ref/lang/auto/Class.On Application Ready.final.md
-                    - href: ref/lang/auto/Class.On Application Resume.final.md
+                    - href: ref/lang/auto/class-on-application-ready.md
+                    - href: ref/lang/auto/class-on-application-resume.md
 
         # Processes
         - href: ref/processes/intro.md
@@ -1362,27 +1370,27 @@
             # Process Elements
             - href: ref/processes/process-elements.md
             - topics:
-                - href: ref/lang/auto/Class.Process.final.md
+                - href: ref/lang/auto/class-process.md
             # Process Tools
             - href: ref/processes/process-tools.md
             - topics:
-                - href: ref/lang/auto/Class.Automatic Activity.final.md
-                - href: ref/lang/auto/Class.Conditional Start.final.md
-                - href: ref/lang/auto/Class.Decision.final.md
-                - href: ref/lang/auto/Class.Decision Outcome.final.md
-                - href: ref/lang/auto/Class.Execute Process.final.md
-                - href: ref/lang/auto/Class.Human_Activity.final.md
-                - href: ref/lang/auto/Class.Process Start.final.md
-                - href: ref/lang/auto/Class.Process End.final.md
-                - href: ref/lang/auto/Class.Send Email.final.md
-                - href: ref/lang/auto/Class.Wait.final.md
-            - href: ref/lang/auto/Class.Timer.final.md
+                - href: ref/lang/auto/class-automatic-activity.md
+                - href: ref/lang/auto/class-conditional-start.md
+                - href: ref/lang/auto/class-decision.md
+                - href: ref/lang/auto/class-decision-outcome.md
+                - href: ref/lang/auto/class-execute-process.md
+                - href: ref/lang/auto/class-human_activity.md
+                - href: ref/lang/auto/class-process-start.md
+                - href: ref/lang/auto/class-process-end.md
+                - href: ref/lang/auto/class-send-email.md
+                - href: ref/lang/auto/class-wait.md
+            - href: ref/lang/auto/class-timer.md
 
         # Workspace
         - href: ref/workspace/intro.md
         - topics:
-            - href: ref/lang/auto/Class.Mobile Module.final.md
-            - href: ref/lang/auto/Class.Reference.final.md
+            - href: ref/lang/auto/class-mobile-module.md
+            - href: ref/lang/auto/class-reference.md
 
         # Traditional Web
         - href: ref/traditional-web/intro.md
@@ -1393,34 +1401,34 @@
                 # Designing Screens
                 - href: ref/traditional-web/web-interfaces/designing-screens/intro.md
                 - topics:
-                    - href: ref/lang/auto/Class.Button Widget.final.md
-                    - href: ref/lang/auto/Class.Cell Widget.final.md
-                    - href: ref/lang/auto/Class.Check Box Widget.final.md
-                    - href: ref/lang/auto/Class.Combo Box Widget.final.md
-                    - href: ref/lang/auto/Class.Comment Widget.final.md
-                    - href: ref/lang/auto/Class.Container Widget.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md
-                    - href: ref/lang/auto/Class.Edit Record Widget.final.md
-                    - href: ref/lang/auto/Class.Expression Widget.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.Widgets.Form.final.md
-                    - href: ref/lang/auto/Class.Header Row Widget.final.md
-                    #- href: ref/lang/auto/Class.If Widget.final.md
-                    - href: ref/lang/auto/Class.Image Widget.final.md
-                    - href: ref/lang/auto/Class.Input Password Widget.final.md
-                    - href: ref/lang/auto/Class.Input Widget.final.md
-                    - href: ref/lang/auto/ServiceStudio.Plugin.Widgets.Label.final.md
-                    - href: ref/lang/auto/Class.Link Widget.final.md
-                    - href: ref/lang/auto/Class.List Box Widget.final.md
-                    - href: ref/lang/auto/Class.List Records Widget.final.md
-                    #- href: ref/lang/auto/Class.Placeholder Widget.final.md
-                    - href: ref/lang/auto/Class.Radio Button Widget.final.md
-                    - href: ref/lang/auto/Class.Row Widget.final.md
-                    - href: ref/lang/auto/Class.Show Record Widget.final.md
-                    - href: ref/lang/auto/Class.Table Records Widget.final.md
-                    - href: ref/lang/auto/Class.Table Widget.final.md
-                    #- href: ref/lang/auto/Class.Text Widget.final.md
-                    - href: ref/lang/auto/Class.Upload Widget.final.md
-                    - href: ref/lang/auto/Class.Web Block Widget.final.md
+                    - href: ref/lang/auto/class-button-widget.md
+                    - href: ref/lang/auto/class-cell-widget.md
+                    - href: ref/lang/auto/class-check-box-widget.md
+                    - href: ref/lang/auto/class-combo-box-widget.md
+                    - href: ref/lang/auto/class-comment-widget.md
+                    - href: ref/lang/auto/class-container-widget.md
+                    - href: ref/lang/auto/servicestudio-plugin-widgets-editabletable.md
+                    - href: ref/lang/auto/class-edit-record-widget.md
+                    - href: ref/lang/auto/class-expression-widget.md
+                    - href: ref/lang/auto/servicestudio-plugin-widgets-form.md
+                    - href: ref/lang/auto/class-header-row-widget.md
+                    #- href: ref/lang/auto/class-if-widget.md
+                    - href: ref/lang/auto/class-image-widget.md
+                    - href: ref/lang/auto/class-input-password-widget.md
+                    - href: ref/lang/auto/class-input-widget.md
+                    - href: ref/lang/auto/servicestudio-plugin-widgets-label.md
+                    - href: ref/lang/auto/class-link-widget.md
+                    - href: ref/lang/auto/class-list-box-widget.md
+                    - href: ref/lang/auto/class-list-records-widget.md
+                    #- href: ref/lang/auto/class-placeholder-widget.md
+                    - href: ref/lang/auto/class-radio-button-widget.md
+                    - href: ref/lang/auto/class-row-widget.md
+                    - href: ref/lang/auto/class-show-record-widget.md
+                    - href: ref/lang/auto/class-table-records-widget.md
+                    - href: ref/lang/auto/class-table-widget.md
+                    #- href: ref/lang/auto/class-text-widget.md
+                    - href: ref/lang/auto/class-upload-widget.md
+                    - href: ref/lang/auto/class-web-block-widget.md
                 # Patterns
                 - href: ref/traditional-web/web-interfaces/ui-patterns.md
                 - topics:
@@ -1489,54 +1497,57 @@
                 # Designing the Layout
                 - href: ref/traditional-web/web-interfaces/designing-the-layout/intro.md
                 - topics:
-                    #- href: ref/lang/auto/Class.Image.final.md
-                    #- href: ref/lang/auto/Class.Localized Image.final.md
-                    - href: ref/lang/auto/Class.Theme.final.md
-                    #- href: ref/lang/auto/Class.UI Flow.final.md
+                    #- href: ref/lang/auto/class-image.md
+                    #- href: ref/lang/auto/class-localized-image.md
+                    - href: ref/lang/auto/class-theme.md
+                    #- href: ref/lang/auto/class-ui-flow.md
                 # Navigating in the Application
                 - href: ref/traditional-web/web-interfaces/navigating-in-the-application/intro.md
                 - topics:
-                    #- href: ref/lang/auto/Class.Comment.final.md
-                    - href: ref/lang/auto/Class.Email.final.md
-                    - href: ref/lang/auto/Class.Entry.final.md
-                    #- href: ref/lang/auto/Class.External Site.final.md
-                    - href: ref/lang/auto/Class.Go To Destination.final.md
-                    - href: ref/lang/auto/Class.Web Block.final.md
-                    - href: ref/lang/auto/Class.Web Screen.final.md
+                    #- href: ref/lang/auto/class-comment.md
+                    - href: ref/lang/auto/class-email.md
+                    - href: ref/lang/auto/class-entry.md
+                    #- href: ref/lang/auto/class-external-site.md
+                    - href: ref/lang/auto/class-go-to-destination.md
+                    - href: ref/lang/auto/class-web-block.md
+                    - href: ref/lang/auto/class-web-screen.md
 
             # Web Logic Tools
             - href: ref/traditional-web/web-logic-tools/intro.md
             - topics:
-                #- href: ref/lang/auto/Class.Aggregate.final.md
-                #- href: ref/lang/auto/Class.Assign.final.md
-                #- href: ref/lang/auto/Class.Run Server Action.final.md
-                #- href: ref/lang/auto/Class.SQL.final.md
-                #- href: ref/lang/auto/Class.Excel To Record List.final.md
-                #- href: ref/lang/auto/Class.JSON Deserialize.final.md
-                #- href: ref/lang/auto/Class.JSON Serialize.final.md
-                - href: ref/lang/auto/Class.Ajax Refresh.final.md
-                #- href: ref/lang/auto/Class.Record List To Excel.final.md
-                #- href: ref/lang/auto/Class.Refresh Data.final.md
-                - href: ref/lang/auto/Class.Attach File.final.md
-                #- href: ref/lang/auto/Class.Download.final.md
-                #- href: ref/lang/auto/Class.Send Email.final.md
-                #- href: ref/lang/auto/Class.Destination.final.md
-                #- href: ref/lang/auto/Class.If.final.md
-                #- href: ref/lang/auto/Class.For Each.final.md
-                #- href: ref/lang/auto/Class.Switch.final.md
-                #- href: ref/lang/auto/Class.Comment.final.md
-                #- href: ref/lang/auto/Class.Exception Handler.final.md
-                #- href: ref/lang/auto/Class.Raise Exception.final.md
-                #- href: ref/lang/auto/Class.End.final.md
-                #- href: ref/lang/auto/Class.Start.final.md
+                #- href: ref/lang/auto/class-aggregate.md
+                #- href: ref/lang/auto/class-assign.md
+                #- href: ref/lang/auto/class-run-server-action.md
+                #- href: ref/lang/auto/class-sql.md
+                #- href: ref/lang/auto/class-excel-to-record-list.md
+                #- href: ref/lang/auto/class-json-deserialize.md
+                #- href: ref/lang/auto/class-json-serialize.md
+                - href: ref/lang/auto/class-ajax-refresh.md
+                #- href: ref/lang/auto/class-record-list-to-excel.md
+                #- href: ref/lang/auto/class-refresh-data.md
+                - href: ref/lang/auto/class-attach-file.md
+                #- href: ref/lang/auto/class-download.md
+                #- href: ref/lang/auto/class-send-email.md
+                #- href: ref/lang/auto/class-destination.md
+                #- href: ref/lang/auto/class-if.md
+                #- href: ref/lang/auto/class-for-each.md
+                #- href: ref/lang/auto/class-switch.md
+                #- href: ref/lang/auto/class-comment.md
+                #- href: ref/lang/auto/class-exception-handler.md
+                #- href: ref/lang/auto/class-raise-exception.md
+                #- href: ref/lang/auto/class-end.md
+                #- href: ref/lang/auto/class-start.md
 
             # Web System Events
             - href: ref/traditional-web/web-system-events/intro.md
             - topics:
-                - href: ref/lang/auto/Class.On Begin Web Request.final.md
-                - href: ref/lang/auto/Class.On Session Start.final.md
+                - href: ref/lang/auto/class-on-begin-web-request.md
+                - href: ref/lang/auto/class-on-session-start.md
 
-            - href: ref/lang/auto/Class.Module.final.md
+            - href: ref/lang/auto/class-module.md
+
+    # Publishing and deploying
+    - href: ref/publish-deploy/publish-deploy.md
 
     # Service Studio command line
     - href: ref/ss-command/ss-command-line.md
@@ -1846,6 +1857,7 @@
                 - href: ref/apis/lifetime-deployment/examples/api-new-app-version.md
                 - href: ref/apis/lifetime-deployment/examples/api-deploy-app.md
                 - href: ref/apis/lifetime-deployment/examples/api-rollback-mobile-app.md
+                - href: ref/apis/lifetime-deployment/examples/api-request-code.md
                 - href: ref/apis/lifetime-deployment/examples/api-register-env.md
                 - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
                 

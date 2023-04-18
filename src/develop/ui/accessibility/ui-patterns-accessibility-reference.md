@@ -4,6 +4,7 @@ tags: runtime-reactiveweb
 locale: en-us
 guid: 41f4db30-ace4-4972-8cad-f954f43cd831
 app_type: reactive web apps
+platform-version: o11
 ---
 
 # UI Patterns accessibility reference

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 77d2313f-f484-4581-825e-c198e4756a11
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Pass Data Between Blocks

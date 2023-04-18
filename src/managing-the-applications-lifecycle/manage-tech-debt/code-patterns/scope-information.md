@@ -4,6 +4,7 @@ summary:
 locale: en-us
 guid: 4e82f1f2-b9bd-4a92-a033-e9ec9cfb32ee
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Don't abuse scope information

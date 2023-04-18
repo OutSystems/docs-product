@@ -3,6 +3,7 @@ summary: Reference of the View menu.
 locale: en-us
 guid: 208451d7-67e3-43f8-bf9d-8250f7d4e78c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # View Menu

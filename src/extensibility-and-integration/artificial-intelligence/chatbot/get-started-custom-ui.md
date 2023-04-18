@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 4a9fac26-25aa-4c53-a0fa-bb76b640c5e2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create custom chatbot UI

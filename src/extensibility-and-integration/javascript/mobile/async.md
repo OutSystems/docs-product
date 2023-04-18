@@ -4,6 +4,7 @@ tags: runtime-mobileandreactiveweb
 locale: en-us
 guid: 38ba49e3-f93e-45b2-9e51-83e8b52b353e
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Defining Asynchronous JavaScript Code

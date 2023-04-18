@@ -4,6 +4,7 @@ summary: Advanced use cases for the Timeline UI Pattern.
 locale: en-us
 guid: c0cdbad2-39c2-434e-afc5-6f05acf4901d
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Timeline Reference

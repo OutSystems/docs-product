@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: CC9FE733-B03A-4600-B966-0E622A638756
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configuring IT Users Authentication with External IdP via OpenId Connect

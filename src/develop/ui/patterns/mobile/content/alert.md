@@ -4,6 +4,7 @@ summary: Alert gets the end user's attention and highlights important informatio
 locale: en-us
 guid: 19bf61bf-cf92-4e5f-b0d1-44f667b32bc7
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Alert

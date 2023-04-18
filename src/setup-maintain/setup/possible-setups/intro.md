@@ -4,6 +4,7 @@ tags: support-Infrastructure_Architecture; support-Infrastructure_Architecture-o
 locale: en-us
 guid: e0be06cb-e6e3-4a67-8442-6cb74e246378
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Possible setups for an OutSystems infrastructure
@@ -16,7 +17,7 @@ This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available
 
 OutSystems allows delivering enterprise web and mobile applications that run in the cloud or on-premises environments. Since it covers the full application lifecycle, from development to deployment, a typical OutSystems installation is comprised of an infrastructure with four environments:
 
-* **Development Environment:** In development you create accounts for all developers and development managers of the Development Team.
+* **Development Environment:** In development is where developers and development managers build and debug apps.
 
 * **Quality Environment:** In quality environment is where testers and business users experiment the production candidate applications or the application versions resulting from (agile) sprints. There are usually few scalability and redundancy requirements for this environment.
 

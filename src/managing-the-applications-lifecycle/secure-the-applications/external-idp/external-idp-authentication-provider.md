@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 722169AB-BF65-4357-89F3-0AF7D7D49264
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Authentication using an external identity provider

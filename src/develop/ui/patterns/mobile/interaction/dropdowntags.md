@@ -4,6 +4,7 @@ summary: The Dropdown Tags UI Pattern offers multiple choice options to the user
 locale: en-us
 guid: 6b79cc3c-d89b-40df-ba5f-c04038639d4b
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Dropdown Tags
@@ -99,15 +100,15 @@ After following these steps and publishing the module, you can test the pattern 
 |OptionsList.Value (Text): Mandatory|Defines the items's value.|
 |OptionsList.Label (Text): Mandatory|Defines the items's text.|
 |OptionsList.ImageUrlOrIconClass (Text): Optional|Defines an image URL or a CSS class. If you define a an image URL, an image is added, otherwise the information is used as a class selector and an icon is added.|
-|OptionsList.GroupName (Text): Optional|Defines the name of the group where the item belongs.</br>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
-|OptionsList.Description (Text): Optional|Defines the text that displays below the option value in the Dropdown options list.</br>Use this property to give more details about the option.|
-|StartingSelection (DropdownOption List): Optional|Defines the list of options that appears pre-selected in the Dropdown Tags.</br>The property is static. It is only valid for the initial Dropdown Tags state and is not updated dynamically.|
+|OptionsList.GroupName (Text): Optional|Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
+|OptionsList.Description (Text): Optional|Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option.|
+|StartingSelection (DropdownOption List): Optional|Defines the list of options that appears pre-selected in the Dropdown Tags.<br/>The property is static. It is only valid for the initial Dropdown Tags state and is not updated dynamically.|
 |StartingSelection.Value (Text): Mandatory|Defines the items's value.|
 |StartingSelection.Label (Text): Mandatory|Defines the items's text.|
 |StartingSelection.ImageUrlOrIconClass (Text): Optional|Defines an image URL or a CSS class. If you define a an image URL, an image is added, otherwise the information is used as a class selector and an icon is added.|
-|StartingSelection.GroupName (Text): Optional|Defines the name of the group where the item belongs.</br>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
-|StartingSelection.Description (Text): Optional| Defines the text that displays below the option value in the Dropdown options list.</br>Use this property to give more details about the option.|
-|Prompt (Text): Optional|Define the text to display when there are no items selected and to serve as an empty value.<br/><br/>The default message is: **Select...** |
+|StartingSelection.GroupName (Text): Optional|Defines the name of the group where the item belongs.<br/>Use this property to divide the dropdown options into groups. The Group Name appears in the heading of the group.|
+|StartingSelection.Description (Text): Optional| Defines the text that displays below the option value in the Dropdown options list.<br/>Use this property to give more details about the option.|
+|Prompt (Text): Optional|Defines the text to display when there are no items selected and to serve as an empty value.<br/><br/>The default message is: **Select...** |
 |OptionalConfigs (DropdownTagsOptionalConfigs): Optional | Extra configurations.|
 |OptionalConfigs.IsDisabled (Boolean): Optional | Set as True to disable the Dropdown. the default value is False.| 
 |OptionalConfigs.NoResultsText (Text): Optional|Defines the text that is displayed when there are no results to show.<br/><br/>The default message is: **There are no options to show.**|

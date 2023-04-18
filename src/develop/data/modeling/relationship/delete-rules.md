@@ -3,6 +3,7 @@ summary: Define the referential integrity behavior you wish to have in entity re
 locale: en-us
 guid: f41ec73a-5994-41b4-b069-193fffed5e98
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Delete Rules

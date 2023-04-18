@@ -4,6 +4,7 @@ summary: LoadOnVisible improves both the actual and perceived speed of your appl
 locale: en-us
 guid: 768c98ad-bb82-496b-a311-1f577e2e221f
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Load on Visible 

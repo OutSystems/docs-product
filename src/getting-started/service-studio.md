@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 23af05a7-9a06-4b73-ad98-3a9edee4ca0d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Service Studio Overview

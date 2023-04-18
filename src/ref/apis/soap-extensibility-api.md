@@ -4,6 +4,7 @@ tags: support-application_development; support-Integrations_Extensions
 locale: en-us
 guid: a0a29cc4-04dd-4d02-9a65-6a6f9474b45c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # SOAP Extensibility API
@@ -17,7 +18,7 @@ This API can only be used to extend and customize the behavior of consumed SOAP 
 The OutSystems SOAP Extensibility API enables you to modify the SOAP connection, request and/or response message using .NET code. It is automatically imported to your environment at installation.
 
 To manipulate the connection, request and/or response message, create an extension module and use its methods in the On Before Request callback action of the consumed SOAP Web Service.  
-Check how to [use the advanced SOAP extensibility in your application](<../../extensibility-and-integration/soap/consume/advanced-extensibility.md>). This topic also contains examples of using the API for address common use cases.
+Check how to [use the advanced SOAP extensibility in your application](<../../extensibility-and-integration/soap/consume/advanced-extensibility.md>). This topic also contains examples of using the API for address common use cases. You can also use the [SOAP Extensibility](https://www.outsystems.com/forge/component-overview/5322/soap-extensibility) Forge component that contains [server actions](https://www.outsystems.com/forge/component-documentation/5322/soap-extensibility/0) implementing many SOAP extensibility use cases using the SOAP Extensibility API.
 
 <div class="info" markdown="1">
 

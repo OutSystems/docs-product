@@ -4,6 +4,7 @@ summary: Learn how to customize Charts with JSON.
 locale: en-us
 guid: 92266737-d5de-4683-9446-57c1aff419f3
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # Advanced Charts customization with JSON
 

@@ -4,6 +4,7 @@ summary: Advanced use cases for the Rating UI Pattern
 locale: en-us
 guid: cde868f5-0402-49de-8c91-0754724634cc
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Rating

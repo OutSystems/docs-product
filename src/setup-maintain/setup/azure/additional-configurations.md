@@ -4,6 +4,7 @@ summary: After setting up OutSystems you might want to access additional configu
 locale: en-us
 guid: 465ae50f-349c-4b1f-b082-565b3a653e7d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Additional Configurations for OutSystems on Microsoft Azure

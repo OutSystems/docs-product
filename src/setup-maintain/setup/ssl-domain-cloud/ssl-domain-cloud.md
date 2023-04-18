@@ -4,6 +4,7 @@ tags: support-Application_Troubleshooting; support-Cloud_Platform; support-Cloud
 locale: en-us
 guid: 75f71e55-19e7-4a6a-bd44-f730385acf52
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use your SSL domain in OutSystems Cloud

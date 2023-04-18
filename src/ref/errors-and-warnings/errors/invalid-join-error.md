@@ -2,6 +2,7 @@
 locale: en-us
 guid: 659d5361-cb0c-4aff-bab5-f021cc017017
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Join Error

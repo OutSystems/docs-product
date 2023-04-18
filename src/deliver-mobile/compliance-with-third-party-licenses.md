@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: a1e335a8-d8f0-4039-bd89-67590def7910
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Compliance with Third Party Licenses

@@ -4,6 +4,7 @@ summary: Learn how to get a list of cases create by the requester logged in to y
 guid: da294998-4af8-4fb5-acf8-939d4d2d5a06
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to get list of cases for a requester

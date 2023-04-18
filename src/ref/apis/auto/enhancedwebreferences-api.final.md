@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: aa9f7cd6-bf5d-4cd6-8079-df516cd3277c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # EnhancedWebReferences API
@@ -18,7 +19,7 @@ Use this API to customize requests of:
 
 <div class="warning" style="overflow: hidden" markdown="1">
 
-This API is **deprecated** and it will not work with the new implementation of **consumed** SOAP web services which supports up to SOAP 1.2. This applies to consumed SOAP web services that were created in OutSystems 11.
+This API is **deprecated** and it will not work with the new implementation of **consumed** SOAP web services which supports up to SOAP 1.2.
 
 To customize requests of consumed SOAP web services that were created in OutSystems 11 you must use the [SOAP Extensibility API](<../soap-extensibility-api.md>).
 

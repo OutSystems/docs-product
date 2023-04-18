@@ -4,6 +4,7 @@ tags: runtime-mobile; support-Front_end_Development-featured
 locale: en-us
 guid: f8dfa815-8c3e-4906-9378-e9d91ad6b4a4
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Use Custom Splash Screens

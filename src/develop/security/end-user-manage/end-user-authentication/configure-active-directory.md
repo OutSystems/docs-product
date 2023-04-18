@@ -3,6 +3,7 @@ summary: How to configure Active Directory end user authentication for your appl
 locale: en-us
 guid: b4a590a6-d9e2-4f0a-80c4-d3ac9f3bd14b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure Active Directory authentication
@@ -32,3 +33,12 @@ To use Active Directory domain authentication:
     <div class="info" markdown="1">
     Security best practices strongly advise that you avoid using the Windows Integrated Authentication when a workstation is shared between several users.
     </div>
+
+## Unsupported scenarios 
+
+### One-Way Forest Trust
+
+Active Directory authentication in OutSystems requires bidirectional trust and access between all Active Directory domains in case multiple domains are used.  
+OutSystems doesn't support using Active Directory in a [One-Way Forest Trust](https://learn.microsoft.com/en-us/azure/active-directory-domain-services/concepts-forest-trust#one-way-and-two-way-trusts) context when the child domain (with restricted access) is the one configured as “Default Domain”,  as this Forest will have restricted access to user details and metadata. 
+
+

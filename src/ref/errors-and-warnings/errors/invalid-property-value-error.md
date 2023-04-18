@@ -2,6 +2,7 @@
 locale: en-us
 guid: c2e98fc6-f0da-45e4-bc1b-7707f98220db
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Property Value Error

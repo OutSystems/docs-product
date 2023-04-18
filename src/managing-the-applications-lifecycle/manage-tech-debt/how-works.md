@@ -4,6 +4,7 @@ summary: Learn how AI Mentor Studio works and how your infrastructure communicat
 locale: en-us
 guid: f6f9f871-5f0c-4991-a47e-91fa20033627
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How does AI Mentor Studio work

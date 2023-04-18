@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: 8e510d45-a9d0-44c9-b2c1-5f676be38a25
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Customize Your Mobile App

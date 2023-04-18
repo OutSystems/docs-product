@@ -4,6 +4,7 @@ summary: Icon Badge displays numerical information as notification.
 locale: en-us
 guid: fa1815e9-06e0-4a60-bd56-135abbf03e0b
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Icon Badge

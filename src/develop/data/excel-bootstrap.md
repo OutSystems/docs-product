@@ -4,6 +4,7 @@ tags: support-Database; support-database-featured
 locale: en-us
 guid: b9f11658-2807-4efb-92ed-0413be0f2c63
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Bootstrap an Entity Using an Excel File

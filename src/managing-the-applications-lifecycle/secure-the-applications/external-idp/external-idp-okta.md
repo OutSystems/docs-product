@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 5F1E1CC1-A4E7-497F-A176-7A8671CC5D8B
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configuring Okta authentication

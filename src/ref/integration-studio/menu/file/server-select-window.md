@@ -2,6 +2,7 @@
 locale: en-us
 guid: 99378b9c-3cd1-4b75-a0d0-189ad54153a1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Select Server Window

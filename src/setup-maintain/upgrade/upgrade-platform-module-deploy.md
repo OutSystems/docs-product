@@ -4,25 +4,18 @@ tags: support-devOps; support-upgrade
 locale: en-us
 guid: 510C5CED-6AC6-4FD1-B26F-02BAEDF8E3DD
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Modules deployment step during Platform Server upgrade
 
-Starting from Platform Server 11.18.0, the environment upgrade process includes a new optional modules deployment step.
+Starting from Platform Server 11.19.0, the environment upgrade process includes a new optional modules deployment step.
 
-<div class="warning" markdown="1">
-
-Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** this feature. In the OutSystems Cloud, we've made this feature unavailable.
-
-Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. In Platform Server 11.18.1 we've turned off this feature. These issues will be fixed in a next release and the feature will be again available for use.
-
-</div>
-
-When upgrading your OutSystems environment from your current version to Platform Server 11.18.0 (or later), after the Platform Server installation ends preparing your modules for the new version, you can now use the Deploy All feature to deploy all the previously prepared modules.
+When upgrading your OutSystems environment from your current version to Platform Server 11.19.0 (or later), after the Platform Server installation ends preparing your modules for the new version, you can now use the Deploy All feature to deploy all the previously prepared modules.
 
 This step enables you to deploy the latest successful compilation in the current platform version, as long as that module hasn't been deployed yet.
 
-However, if the compilation of a module in the current platform version is not successful, or if the latest version of a module is already deployed in the current platform version, that module is skipped from the Deploy All process.
+However, if the compilation of a module in the current platform version isn't successful, or if the latest version of a module is already deployed in the current platform version, that module is skipped from the **Deploy All** process.
 
 If you have modules ready for deployment, you can use the Deploy All feature in Service Center. To do so, go to **Factory** > **Upgrades**, and select **Deploy**.
 
@@ -31,7 +24,7 @@ If you have modules ready for deployment, you can use the Deploy All feature in 
 
 ## Modules deployment improvements
 
-After upgrading to Platform Server 11.18.0 or later, you have the option to  use the Deploy All feature, which includes the following key improvements:
+After upgrading to Platform Server 11.19.0 or later, you have the option to  use the Deploy All feature, which includes the following key improvements:
 
 * You decide when to deploy your modules; if the time isn't right, you can skip it and do it when it's more convenient, or not  use it at all and deploy modules or apps one at a time, based on your  needs.
 

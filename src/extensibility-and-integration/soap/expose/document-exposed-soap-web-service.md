@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 07a471e4-c784-44ba-b868-8c90605481c0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Document an Exposed SOAP Web Service

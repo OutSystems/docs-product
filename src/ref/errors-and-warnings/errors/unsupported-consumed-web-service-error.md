@@ -2,6 +2,7 @@
 locale: en-us
 guid: 03541b11-4b74-423c-8148-e3efaa1d8efd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Unsupported Consumed Web Service Error

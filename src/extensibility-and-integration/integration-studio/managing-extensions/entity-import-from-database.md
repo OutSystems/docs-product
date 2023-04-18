@@ -2,6 +2,7 @@
 locale: en-us
 guid: 272cf76e-1e15-4cd0-8fc8-ea8107d9a8fe
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Import Entities from a Database

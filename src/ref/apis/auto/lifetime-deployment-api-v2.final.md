@@ -4,6 +4,7 @@ tags: article-page; support-application_development; support-Application_Lifecyc
 locale: en-us
 guid: 8ebd5215-2960-4071-8a9c-83fe39674ee0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # LifeTime API v2

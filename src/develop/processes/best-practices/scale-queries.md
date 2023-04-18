@@ -2,6 +2,7 @@
 locale: en-us
 guid: c50b149e-e4f0-4399-a941-b5e2a9bd86d5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Scale Queries over Process Entities

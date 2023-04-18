@@ -2,24 +2,25 @@
 locale: en-us
 guid: 74906504-7e14-40cd-8a55-221155e073a7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use Advanced Extensibility
 
 When consuming a SOAP web service you can use your own .NET code to change the connection or to customize the message in the request and/or response.
 
-To accelerate this, a Forge component called [SOAP Extensibility](<https://www.outsystems.com/forge/component-overview/5322/soap-extensibility-samples>) contains server actions implementing many SOAP extensibility use cases using the SOAP Extensibility API.
+To accelerate this, a Forge component called [SOAP Extensibility](<https://www.outsystems.com/forge/component-overview/5322/soap-extensibility-samples>) contains [server actions](https://www.outsystems.com/forge/component-documentation/5322/soap-extensibility/0) implementing many SOAP extensibility use cases using the [SOAP Extensibility API](../../../ref/apis/soap-extensibility-api.md).
 
-You can use the server actions provided by this component directly in your applications or use them as a starting point for implementing your own specific extensibility use cases.
+You can use the [server actions](https://www.outsystems.com/forge/component-documentation/5322/soap-extensibility/0) provided by this component directly in your applications or use them as a starting point for implementing your own specific extensibility use cases.
 
-If your use case, is not covered by the component or you want to create it from scratch, the general workflow for implementing an advanced extensibility scenario is the following:
+If your use case is not covered by the component or you want to create it from scratch, the general workflow for implementing an advanced extensibility scenario is the following:
 
 1\. Set up an OutSystems extension
 :   Create a new extension in Integration Studio and define the actions you need.
 
 2\. Implement the .NET code
 :   Open Visual Studio .NET for editing the extension source code by clicking 'Edit Source Code .NET'.  
-    Edit the project properties setting the project target framework to '.NET Framework 4.6.1'.  
+    Edit the project properties and set the project target framework to '.NET Framework 4.7.2' or greater, according to the version you're using.  
     Add any necessary assembly references.  
     Still in Visual Studio, implement the logic of the actions using the functionality you need from the [SOAP Extensibility API](<../../../ref/apis/soap-extensibility-api.md>). When you finish, close Visual Studio.  
     In Integration Studio, publish the extension.

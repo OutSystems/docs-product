@@ -3,6 +3,7 @@ tags:
 locale: en-us
 guid: b494a3d0-48d5-4988-ac70-8e7df29cc0ce
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Mapping SAP Data Types to OutSystems Data Types

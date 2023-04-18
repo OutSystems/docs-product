@@ -4,6 +4,7 @@ summary: Displays personalized feedback messages to the user.
 locale: en-us
 guid: 97a72928-f041-46ef-b4c9-2574f67d986e
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # FeedbackMessage

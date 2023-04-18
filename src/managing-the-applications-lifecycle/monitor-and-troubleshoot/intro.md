@@ -4,6 +4,7 @@ tags: support-devOps; support-monitoring
 locale: en-us
 guid: 636a2bea-478d-4703-aaf8-e2f8ee514f2c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Monitor and Troubleshoot

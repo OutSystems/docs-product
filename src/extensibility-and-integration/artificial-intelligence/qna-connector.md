@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: ab7eb739-c72b-4177-979b-bfe9d58a9334
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use the Azure QnA Maker Connector in OutSystems apps

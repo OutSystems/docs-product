@@ -3,6 +3,7 @@ summary: Service Studio command line reference to execute common development tas
 locale: en-us
 guid: 23c2945f-211b-438d-b8c1-0aae40cd316d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Service Studio command line

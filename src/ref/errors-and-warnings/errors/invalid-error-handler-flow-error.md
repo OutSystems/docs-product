@@ -2,6 +2,7 @@
 locale: en-us
 guid: 0f83bb7e-3cc8-4134-938b-9f9194175dc7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Error Handler Flow Error

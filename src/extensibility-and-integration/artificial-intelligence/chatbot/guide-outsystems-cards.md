@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 01af56ec-fb0d-44ea-a78f-8323557ee6bf
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Reply with cards

@@ -4,6 +4,7 @@ tags: support-application_development
 locale: en-us
 guid: 33f25da2-2cd8-4016-a12d-3b6ebfd12fc2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Adding email attachments

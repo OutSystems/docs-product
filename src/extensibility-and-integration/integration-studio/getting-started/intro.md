@@ -3,6 +3,7 @@ summary: Integration Studio allows you to develop extensions in advanced integra
 locale: en-us
 guid: ab847837-20ab-4643-8541-63482f518aac
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Extend Logic with Your Own Code

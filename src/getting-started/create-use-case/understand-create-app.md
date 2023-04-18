@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: f30b6d10-f57f-48ac-98e4-1425ae8c72d5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Understanding how to create an app

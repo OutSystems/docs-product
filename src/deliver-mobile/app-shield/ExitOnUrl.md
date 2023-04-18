@@ -1,9 +1,10 @@
 ---
-summary: Inform app users of the reason why AppShield blocked an app. Define a URL that the app opens once the AppShield closes the app it suspects is modified or tempered with.
+summary: Inform app users of the reason why AppShield blocked an app. Define a URL that the app opens once the AppShield closes the app it suspects is modified or tampered with.
 tags: support-application_development; runtime-mobile;
 locale: en-us
 guid: ff593156-92ef-4947-86f1-e3d2dfb58908
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Configuring an exit URL for a blocked app
@@ -14,7 +15,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-If an app with the AppShield security plugin detects modification or tempering, the app shuts down. You can use the AppShield **ExitOnURL** configuration to inform the user of the reason. The **ExitOnURL** lets you to define an **Exit URL** that the app opens in the default browser. It also lets you explain the issue to the app users.
+If an app with the AppShield security plugin detects modification or tempering, the app shuts down. You can use the AppShield **ExitOnURL** configuration to inform the user of the reason. The **ExitOnURL** lets you define an **Exit URL** that the app opens in the default browser. It also lets you explain the issue to the app users.
 
 ## Prerequisites
 
@@ -41,7 +42,7 @@ To enable the `ExitOnURL` feature, first copy the JSON code snippet below and co
         "global": [
             {
                 "name": "ExitOnURL",
-                "value": "https://example.com/protectionblocker/landing-page" 
+                "value": "https://example.com/protectionblocker/landing-page"
             }
         ]
     }
@@ -62,12 +63,11 @@ To enable the `ExitOnURL` feature, first copy the JSON code snippet below and co
 
 1. Design your landing page to display an informative message, such as the following example for a bank app:
 
-    _Sorry to see that your app shut down. It's a security feature designed to protect your data and money. We suggest scanning your phone, and, in the meantime, please use our web portal._
+    _Your app shut down. It's a security feature designed to protect your data and money. We suggest scanning your phone, and, in the meantime, please use our web portal._
 
+## Enhance the Exit URL experience for your users
 
-## Enhance the Exit URL experience for your users 
-
-When AppShield blocks an app it generates query parameters that you may use to present the user with a comprehensive explanation for why the app closed.
+When AppShield blocks an app it generates query parameters that you may use to present the user with a comprehensive explanation as to why the app closed.
 
 For example, a landing page for a blocked Android device might be something like the following:
 
@@ -80,9 +80,13 @@ _We're sorry! We had to shut your app down because we detected native code hooks
 
 ## Considerations
 
-AppShield can't guarantee that the **Exit URL** page will load in all instances if an attacker is probing the app's defenses. For example, attempting to attach a debugger to the application causes AppShield to shut the application down and open the configured **Exit URL**. There are, however, a number of ways that the attacker can  prevent this page from opening in the main browser, such as putting the device in flight mode. If this happens, the users may not be aware of what is happening, and you can't presume that such hacking attempts will always be reported and seen on the server.
+AppShield can't guarantee that the **Exit URL** page loads in all instances if an attacker is probing the app's defenses.
+For example, attempting to attach a debugger to the application causes AppShield to shut the application down and open the configured **Exit URL**.
+There are, however, several ways that the attacker can prevent this page from opening in the main browser, such as putting the device in flight mode. If this happens, the users may not be aware of what's happening.
+So you can't assume that such hacking attempts are reported and seen on the server.
 
-The **Exit URL** event doesn't provide precise metrics of security issue events, since a single user can trigger multiple **Exit URL** events. This feature is primarily designed to provide useful feedback to the end user about why the application stopped working, rather than a reliable reporting mechanism for the app owner.
+The **Exit URL** event doesn't provide precise metrics of security issue events, since a single user can trigger multiple **Exit URL** events.
+This feature is primarily designed to provide useful feedback to the end user about why the application stopped working, rather than a reliable reporting mechanism for the app owner.
 
 The app loads **Exit URL** in the default browser and may remain in an open tab or window until the user closes it. This may cause a number of effects, including the following:
 
@@ -126,11 +130,13 @@ A list of reasons for app shutdown in Android devices.
 | Decimal | Explanation                                                               |
 | ------- | ------------------------------------------------------------------------- |
 | 0       | Device is rooted                                                          |
-| 1       | Application is modified or repackaged                                     |
-| 2       | Application is being run in an emulator                                   |
+| 1       | Application is modified or repackaged<br />Note: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered.                                                                            |
+| 2       | Application is being run in an emulator<br />Note: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered.                                                                            |
 | 3       | Java debugger attached to app                                             |
+| 4       | Untrusted keyboard detected                                                  |
+| 5       | Untrusted screen reader detected                                             |
 | 6       | Native code hooks, possibly inserted by malicious app                     |
-| 8       | Shield could not read configuration file                                  |
+| 8       | Shield could not read configuration file                                    |
 | 9       | Problem with Native Debugger Protection                                   |
 | 19      | Problem initializing Shield                                               |
 | 20      | App received termination signal                                           |

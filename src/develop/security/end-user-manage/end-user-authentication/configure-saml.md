@@ -4,6 +4,7 @@ tags: runtime-traditionalwebandreactiveweb
 locale: en-us
 guid: 47803c16-1495-4db3-b9e5-10dbd77538a9
 app_type: traditional web apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure SAML 2.0 Authentication

@@ -3,6 +3,7 @@ summary: Use watches to examine module elements while debugging threads in your 
 locale: en-us
 guid: de70f6a6-f126-4ebd-85f3-b98d0a5d613c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Watches

@@ -4,9 +4,10 @@ summary: Displays content in a specific set of columns, configurable per device 
 locale: en-us
 guid: 18e4696c-aeb1-4c7f-bb06-40590738797a
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
-# Gallery
+# Gallery 
 
 <div class="info" markdown="1">
 
@@ -52,7 +53,7 @@ You can use the Gallery UI Pattern to display groups of content. This UI pattern
 
     ![Gallery widget placeholders](<images/gallery-list-ss.png>)
 
-    To use the Gallery UI Pattern with items from a database, drag a [List](<../../../../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md>) into the Gallery widget and create your custom content.
+    To use the Gallery UI Pattern with items from a database, drag a [List](<../../../../../ref/lang/auto/servicestudio-plugin-nrwidgets-list.md>) into the Gallery widget and create your custom content.
 
     In this example, we delete the list and add local images to the Gallery widget.
 
@@ -93,5 +94,5 @@ After following these steps and publishing the module, you can test the pattern 
 |RowItemsDesktop (Integer): Optional|Defines the number of items that are shown simultaneously per row on a desktop. The number must be greater than 0. The default value is 4.|
 |RowItemsTablet (Integer): Optional|Defines the number of items that are shown simultaneously per row on a tablet. The number must be greater than 0. The default value is 3.|
 |RowItemsPhone (Integer): Optional|Defines the number of items that are shown simultaneously per row on a phone. The number must be greater than 0. The default value is 1.|
-|ItemsGap(Space Identifier): Optional |Defines the space between the Gallery items.</br></br>The predefined sizes are the following:<ul><li>None</li><li>Extra Small</li><li>Small</li><li>Base (default value)</li><li>Medium</li><li>Large</li><li>Extra Large</li><li>Extra Extra Large</li></ul>|
-|ExtendedClass (Text): Optional|Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</br></br>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|ItemsGap(Space Identifier): Optional |Defines the space between the Gallery items. <br/><br/> The predefined sizes are the following:<ul><li>None</li><li>Extra Small</li><li>Small</li><li>Base (default value)</li><li>Medium</li><li>Large</li><li>Extra Large</li><li>Extra Extra Large</li></ul>|
+|ExtendedClass (Text): Optional|Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/> Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

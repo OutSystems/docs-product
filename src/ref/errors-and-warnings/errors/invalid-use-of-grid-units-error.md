@@ -2,6 +2,7 @@
 locale: en-us
 guid: f62c6f07-cf7c-4ccd-b3a4-61d72b1f062a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Use of Grid Units Error

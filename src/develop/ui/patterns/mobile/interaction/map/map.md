@@ -4,6 +4,7 @@ summary: Use the Map pattern to add Google Maps to your app.
 locale: en-us
 guid: 3193c9d8-9711-4d4c-bf24-839f22a8052f
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to use the Map component

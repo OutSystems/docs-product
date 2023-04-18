@@ -4,6 +4,7 @@ summary: Card Sectioned groups short pieces of information in sections and highl
 locale: en-us
 guid: db5e39c5-f5ee-4e18-9754-14fef2f95533
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Card Sectioned

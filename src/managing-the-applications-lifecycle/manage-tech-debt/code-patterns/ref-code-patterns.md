@@ -5,6 +5,7 @@ en_title: Code Patterns
 locale: en-us
 guid: a7187cf7-6f1d-4f7c-8141-03f856639f08
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Code Analysis Patterns
@@ -839,6 +840,44 @@ Remove any usages of GetUserId on the client side, and replace them with the sam
 
 For more information refer to [Reactive web security best practices: Securing server calls](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices#Securing_server_calls). 
 
+### Screen Aggregates exposing System Entities on Anonymous screens
+
+<div class="info" markdown="1">
+
+Applies to **Reactive Web** and **Mobile** apps only.
+
+</div>
+
+A Screen Aggregate exposes System Entity data on a screen using the Anonymous Role.  
+
+**Impact**
+
+If the screen can be accessed by the Anonymous role, any end user, including users that are not logged in, can access sensitive system data (for example, user data).  
+
+**How to fix** 
+
+Remove the exposed information or use a more restricted custom role for the screen.   
+
+### Screen Aggregates exposing System Entities on Registered screens
+
+<div class="info" markdown="1">
+
+Applies to **Reactive Web** and **Mobile** apps only.  
+
+</div>
+
+A Screen Aggregate exposes System Entity data on a screen using the Registered Role.  
+
+**Impact**
+
+If the screen can be accessed by the Registered role, any user with a valid OutSystems session, that is, any user that has logged into an app running in the same Platform Server, can access sensitive system data (for example, user data).  
+
+**How to fix** 
+
+Remove the exposed information or use a more restricted custom role for the screen.  
+
+Use a secure criteria with GetUserId inside the Aggregate filter if you’re filtering information based on user context.  
+
 ## Maintainability
 
 ### Duplicated Code
@@ -904,3 +943,27 @@ Keeping a large amount of disabled code leaves clutter and makes it difficult to
 **How to fix**  
 
 Remove the code if it has been disabled for a while or the app is in production, and behaving correctly.
+
+### Unreachable logic
+
+Unreachable logic caused by hard-coded True/False conditions.
+
+**Impact**  
+
+Some parts of your logic will never run due to hard-coded True/False conditions. This can result in dead code, for example, forgotten feature flags or incorrect/unexpected behavior in your actions. Unreachable logic can also take the team's time to test, maintain and document code that is never used.  
+
+**How to fix**
+
+Revise the affected True/False conditions and consider removing/changing the unreachable logic.
+
+### Unused Actions in Module
+
+An action that isn’t used in the module and is also not exposed to other modules (non-public action).
+
+**Impact**  
+
+Unused actions can bloat your code base, make maintenance difficult, and increase security risks.  
+
+**How to fix**  
+
+Check whether the action is necessary and consider deleting it from the module.  

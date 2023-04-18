@@ -4,6 +4,7 @@ summary: Advanced use cases for the Card Sectioned UI Pattern.
 locale: en-us
 guid: 31a87c67-318b-4a23-8ce5-f46cdca4a0ab
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Card Sectioned Reference

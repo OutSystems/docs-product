@@ -2,6 +2,7 @@
 locale: en-us
 guid: 49f299a3-b4f6-4ae6-b422-baf45dfe54a6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Test Automation in the Delivery Lifecycle

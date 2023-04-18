@@ -4,6 +4,7 @@ tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: d2578f60-c7a2-40fe-8e74-382aecad9b2f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Calculate Values from Grouped Data

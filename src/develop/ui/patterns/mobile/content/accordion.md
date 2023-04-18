@@ -4,6 +4,7 @@ summary: Accordion expands vertically-stacked content by clicking on the header.
 locale: en-us
 guid: 4cdf1677-f152-4afc-ac90-75901d2e9055
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Accordion
@@ -64,20 +65,20 @@ After following these steps and publishing the module, you can test the pattern 
 
 ### Accordion
 
-| Property                          | Description                   |
-|-----------------------------------|------------------------------ |
+| Property | Description  |
+|---|--- |
 | MultipleItems (Boolean): Optional | Set to True to allow multiple Accordion items to be expanded simultaneously. By default, False. |
-| ExtendedClass (Text): Optional                        | Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</br></br>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ### Accordion Item
 
 |Property|Description|
 |---|---|
 |StartsExpanded (Boolean): Optional| Defines the initial state of the block. If set to True, when the page is rendered, the Accordion Item is open. If set to False, the Accordion Item is closed. The default value is False.|
-|Icon (AccordionIconType Identifier): Optional|Defines the icons shown in the Accordion Item.</br></br>You can choose between the following:<ul><li>Carets - Arrow up icon when the item is expanded and arrow down icon when the item is collapsed. This is the default.</li><li> Plus/Minus - Minus icon (-) when the item is expanded and plus icon (+) when the item is collapsed.</li><li>Custom - Advanced option to customize the Accordion icons. To use custom icons, set the Icon property to Custom and drag and drop the Icon widget to the Accordion Item placeholder.</li></ul>|
+|Icon (AccordionIconType Identifier): Optional|Defines the icons shown in the Accordion Item.<br/><br/>You can choose between the following:<ul><li>Carets - Arrow up icon when the item is expanded and arrow down icon when the item is collapsed. This is the default.</li><li> Plus/Minus - Minus icon (-) when the item is expanded and plus icon (+) when the item is collapsed.</li><li>Custom - Advanced option to customize the Accordion icons. To use custom icons, set the Icon property to Custom and drag and drop the Icon widget to the Accordion Item placeholder.</li></ul>|
 |IconPosition (AccordionIconPosition): Optional|Defines the position of the accordion icon. By default, the icon appears on the right.|
 |IsDisabled (Boolean): Optional| Prevents the Accordion Item from being clickable. If set to True, the Accordion Item is not clickable. If set to False, the Accordion Item is clickable. The default value is False.|
-|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</br></br>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events
 

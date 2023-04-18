@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 5debccff-1599-4aa2-9c84-3b2732758e6a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
  
 # Invalid Link Error
@@ -12,7 +13,7 @@ Message
 :   `'Destination' must be a screen or a screen reference in links with 'Method' set to 'Navigate'`
 
 Cause
-:   You have a [Link widget](../../lang/auto/Class.Link Widget.final.md) with the **Method** property set to `Navigate` but you set the **Destination** property to an action. If you set the **Method** property to `Navigate` because you want to navigate between screens, you must set the **Destination** property to the target Screen.
+:   You have a [Link widget](../../lang/auto/class-link-widget.md) with the **Method** property set to `Navigate` but you set the **Destination** property to an action. If you set the **Method** property to `Navigate` because you want to navigate between screens, you must set the **Destination** property to the target Screen.
 
 Recommendation
 :   Edit the **Method** and **Destination** properties of the Link widget according to the desired behavior:
@@ -29,7 +30,7 @@ Message
 :  `Arguments of '<type>' data type are not allowed in links with 'Method' property set to 'Navigate'`
 
 Cause
-:   You have a [Link widget](../../lang/auto/Class.Link Widget.final.md) with the **Method** property set to `Navigate` having a **Destination** argument set to a parameter of Binary Data, Record, or List data type.
+:   You have a [Link widget](../../lang/auto/class-link-widget.md) with the **Method** property set to `Navigate` having a **Destination** argument set to a parameter of Binary Data, Record, or List data type.
 
 Recommendation
 :   Edit the Link widget and do one of the following:

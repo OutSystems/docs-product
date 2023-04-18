@@ -2,6 +2,7 @@
 locale: en-us
 guid: 9ecd6d17-54b0-4f53-9fcc-b6c9cee561e5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Designing Parallel Activities
@@ -18,7 +19,7 @@ As an example, think of a process to handle orders that starts provisioning the 
 
 ## Joining with Synchronization
 
-To join parallel paths back into a single path, that is executed only when all parallel paths are finished, simply move the parallel paths into a new [Process](../process.md) and use a [Execute Process](<../../../ref/lang/auto/Class.Execute Process.final.md>) to execute that process.
+To join parallel paths back into a single path, that is executed only when all parallel paths are finished, simply move the parallel paths into a new [Process](../process.md) and use a [Execute Process](<../../../ref/lang/auto/class-execute-process.md>) to execute that process.
 
 When the process is executed, the Execute Process activity executes another process containing the parallel activities: this process is only finished when all of its parallel activities are finished.
 
@@ -30,7 +31,7 @@ As an example, think of a process to handle orders: provision materials, invoice
 
 ## Joining with Forced Termination
 
-To join parallel paths back into a single path, that is executed once one of the parallel paths is finished, simply move the parallel paths into a [Process](../process.md) and use a [Execute Process](<../../../ref/lang/auto/Class.Execute Process.final.md>) to execute that process. And, in the new process, set the `Terminate` property of **End** elements to 'Yes' to ensure it terminates once a path ends.
+To join parallel paths back into a single path, that is executed once one of the parallel paths is finished, simply move the parallel paths into a [Process](../process.md) and use a [Execute Process](<../../../ref/lang/auto/class-execute-process.md>) to execute that process. And, in the new process, set the `Terminate` property of **End** elements to 'Yes' to ensure it terminates once a path ends.
 
 When the process is executed, the Execute Process activity executes another process containing the parallel activities: this process terminates once one of its parallel activities finishes.
 

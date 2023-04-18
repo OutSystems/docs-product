@@ -3,6 +3,7 @@ summary: Learn more about the Microsoft Dataverse (previously known as Microsoft
 locale: en-us
 guid: ea253851-f067-457e-81e9-8fe3e106decc
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Microsoft Dataverse integration

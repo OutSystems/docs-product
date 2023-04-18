@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 1dd579f8-20ca-4af9-89fa-40697272f8bc
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # Upgrade LifeTime management console
 
@@ -40,9 +41,9 @@ If you have **LifeTime plugins** deployed in your LifeTime environment or **othe
 * Make the necessary changes in your plugins and integrations before LifeTime upgrade takes place, to ensure that they will work correctly after the upgrade.
 
 <div class="info" markdown="1">
- 
+
 If you are running an OutSystems version that's not supported anymore, you first need to [upgrade to a supported OutSystems version](upgrade-platform.md).
- 
+
 </div>
 
 ## LifeTime upgrade process

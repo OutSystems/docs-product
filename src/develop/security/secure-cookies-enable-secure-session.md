@@ -3,6 +3,7 @@ summary: Check how to configure your OutSystems environment to secure session co
 locale: en-us
 guid: e65820c4-3550-4a5d-be8d-54531bada121
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Enable secure session cookies and set application cookies as secure
@@ -27,7 +28,7 @@ After installing Factory Configuration, access the application and, in the *Plat
 
 <div class="info" markdown="1">
 
-After you change the settings using Factory Configuration, make sure you **apply new configurations to you environment**.
+After you change the settings using Factory Configuration, make sure you **apply new configurations to your environment**.
 
 </div>
 

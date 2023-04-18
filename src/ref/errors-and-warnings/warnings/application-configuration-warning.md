@@ -2,6 +2,7 @@
 locale: en-us
 guid: 7f61abb9-ec5a-47ae-9e7e-d98dc926e78f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Application Configuration Warning

@@ -4,6 +4,7 @@ summary: Increase the security of your Traditional Web app by increasing the sec
 locale: en-us
 guid: 825d2aff-000b-4b0e-89ab-de54c816beb6
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Secure HTTP Requests

@@ -4,6 +4,7 @@ summary: Sidebar shows additional content on the side of the screen.
 locale: en-us
 guid: d948b2a9-574a-43a1-bf6a-9465bdc22dfe
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Sidebar
@@ -117,10 +118,10 @@ After following these steps and publishing the module, you can test the pattern 
 | Property | Description |
 |---|---|
 |StartsOpen (Boolean): Optional| Set to True to display the Sidebar. The default value is False.|
-|Direction (Direction Entity): Optional | Set the position where the Sidebar appears on the screen.</br>The predefined options are Left and Right.</br></br>Examples:<ul><li>Entities.Direction.Right - The sidebar is displayed on the right side of the screen.</li><li>Entities.Direction.Left - The sidebar is displayed on the left side of the screen. </li></ul>  |
+|Direction (Direction Entity): Optional | Set the position where the Sidebar appears on the screen.<br/>The predefined options are Left and Right.<br/><br/>Examples:<ul><li>Entities.Direction.Right - The sidebar is displayed on the right side of the screen.</li><li>Entities.Direction.Left - The sidebar is displayed on the left side of the screen. </li></ul>  |
 |HasOverlay (Boolean): Optional| Set to True, to show an overlay when the Sidebar is open. When you click on the overlay, the Sidebar is closed.|
-|Width (String): Optional| Define the Sidebar width. Accepts any kind of unit (px, %, vw). Default value is 500px. |
-|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.</br></br>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+|Width (String): Optional| Defines the Sidebar width. Accepts any kind of unit (px, %, vw). Default value is 500px. |
+|ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events
 

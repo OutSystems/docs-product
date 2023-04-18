@@ -2,6 +2,7 @@
 locale: en-us
 guid: 8196d55c-6aeb-47d5-a855-02b92e4244f4
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Supported Configurations for Import Actions from .NET Assembly

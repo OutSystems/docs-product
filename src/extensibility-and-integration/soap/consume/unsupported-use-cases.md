@@ -3,6 +3,7 @@ summary: Check the list of currently unsupported use cases when consuming SOAP 1
 locale: en-us
 guid: dfd157ac-c6ce-4710-a022-3bd27f5fc8bc
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Unsupported SOAP Use Cases
@@ -426,3 +427,39 @@ When the definition files have been exported continue as follows:
 1. Click **Upload file**, navigate to where you saved the exported definition files, select the WSDL file in the root of the folder, and then click **Consume**.
 
 If you do not receive another error message the SOAP web service should work as expected.
+
+## Dynamic schemas
+
+Currently, OutSystems doesn't support dynamic schemas usages.
+
+Example:
+
+```xml
+<xsd:complexType>
+    <xsd:sequence>
+        <xsd:element ref="xsd:schema"/>
+    <xsd:sequence>
+</xsd:complexType>
+```
+
+### Use case workaround
+
+To overcome this limitation, you can replace the problematic element by an array of `xsd:any` elements in the service definition.
+
+Following the previous example, this would be the workaround:
+
+```xml
+<xsd:complexType>
+    <xsd:sequence>
+        <xsd:any minOccurs="0" maxOccurs="unbounded"/>
+    <xsd:sequence>
+</xsd:complexType>
+```
+
+When using a dynamic schema element, the element content needs to be encapsulated between schema nodes. Thus, the input/output text list must have one element that follows this semantics:
+
+```xml
+<schema>
+    <string>Hello!</string>
+</schema>
+```

@@ -3,6 +3,7 @@ summary: This article describes how to ensure your OutSystems Installation on Az
 locale: en-us
 guid: fc966397-ce73-4217-bc1d-7a048bd65347
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Plan to Associate your OutSystems Installation on Azure with OutSystems

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 26564166-8c97-4176-a172-1a16703d86d7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Using your own data in your app

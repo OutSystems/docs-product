@@ -5,6 +5,7 @@ helpids: 30220
 locale: en-us
 guid: E5F5D75D-ABCE-4BAF-956E-30F5E6111B05
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Incomplete upgrade warning

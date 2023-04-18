@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 1730AE44-3570-4CA9-81BE-032CCF2D12B5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configuring LifeTime authentication
@@ -74,6 +75,12 @@ Once activated, you are logged out of the current session and redirected to the 
 
 **Note**: Once the OpenId Connect provider is activated, users  can no longer use the fallback built-in authentication mechanism. In the case of any issues with the external IdP, designated break-glass users, also known as local admins, can login using a username and password to deactivate the OpenID Connect provider and enable any alternative authentication mechanism.
 
+<div class="warning" markdown="1">
+
+If an OpenId Connect provider is activated before the LifeTime upgrade, to gain access to the complete feature set, you must deactivate and reactivate the provider again. OutSystems recommends having at least one [local administrator added](#adding-a-local-administrator) before activating OIDC. To deactivate the existing OpenId Connect provider, the built-in authentication mechanism must be activated and then OpenId Connect provider must be reactivated. Note that the client secret is required when you activate the OpenId Connect provider.
+
+</div>
+
 ## Deactivating the external identity provider
 
 Only one external identity provider method can be active at a time. When you activate one authentication mechanism, you automatically deactivate the currently active external identity provider.
@@ -91,6 +98,12 @@ When creating a new user in LifeTime, if an external IdP configuration is active
 If the external IdP is unavailable or has configuration errors, the local administrator is responsible for configuring user profiles. With the external IDP activated, only the local administrator can log into the platform using a username and password. 
 
 You can create a local administrator before or after adding a new OIDC connection. It is recommended that you add at least one local administrator before activating an OIDC provider. This ensures that there is always a fallback authentication option for the user to log into the platform.
+
+<div class="info" markdown="1">
+
+Local administrators are only able to log in to LifeTime.
+
+</div>
 
 To add a local administrator, follow these steps:
 

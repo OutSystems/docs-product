@@ -4,6 +4,7 @@ tags: runtime-mobile; support-mobile
 locale: en-us
 guid: bc8c19e3-512c-4be4-b900-f8f5c1880832
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Generate and Distribute Your Mobile App to a Limited Group of End Users

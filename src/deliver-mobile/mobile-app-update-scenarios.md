@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: ce4f8a4d-d473-4b92-a448-cf39fde1f64d
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Mobile App Update Scenarios

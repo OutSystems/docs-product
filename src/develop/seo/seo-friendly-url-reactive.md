@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 294F6709-2351-4992-832F-4DAE431D3E5F
 app_type: traditional web apps, reactive web apps
+platform-version: o11
 ---
 
 # SEO-friendly URLs for Reactive Web apps  
@@ -12,11 +13,13 @@ app_type: traditional web apps, reactive web apps
 
 SEO-friendly URLs for Reactive Web apps require the following: 
 
-* Platform Server 11.14.0 or later.  
+* Your environments must use Platform Server 11.14.0 or later.  
 
 * Service Studio 11.13.0 or later.  
 
-* OutSystems enterprise cloud offer or a self-managed installation with [ISAPI filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) activated. 
+* Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition. **You can't use a Personal Environment with SEO-friendly URLs for Reactive Web apps**.
+
+* For self-managed infrastructures, [ISAPI filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) must be enabled.
 
 <div class="info" markdown="1">
 
@@ -90,10 +93,10 @@ To create a site rule, follow these steps:
     As a result, you've enabled a new site rule.  
     You also have the option to select a site rule and edit, delete, or disable the **Base URL**.  
 
-<div class="warning" markdown="1">
+<div class="info" markdown="1">
 
-Consider the following when working with site rules:  
-* You can have only one site rule per root application for domains with sub-paths.  
+Remember the following when working with site rules:  
+* You can only have only one site rule per root application for domains with sub-paths.  
 * Creating or editing a site rule can temporarily slow down the app because the platform needs to reload its configuration.  
 
 </div>  
@@ -123,13 +126,12 @@ The following table includes more examples of custom screen URLs:
 | `/Order?Id=1`             | `/Buy/1`      | `/Buy?Id=1`             |
 | `/Order?Id=1&Quantity=10` | `/Buy/1/10`   | `/Buy?Id=1&Quantity=10` |
 
-<div class="warning" markdown="1">
+<div class="info" markdown="1">
 
-Consider the following when working with custom screen URLs:  
+Remember the following when working with custom screen URLs:  
 * You can add custom URLs to all screens except for the Default Screen.  
 * When copying screens with custom URLs from a Reactive Web app module to a Mobile app module, **Service Studio** removes the custom URL configurations in the Mobile app module because SEO works differently for mobile apps.  
  
-
 </div>  
 
 ### Managing custom screen URLs  

@@ -4,6 +4,7 @@ tags: support-devOps; support-upgrade
 locale: en-us
 guid: 5d1eb0f2-08dd-49d7-8937-32287cb489c4
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Modules preparation step during Platform Server upgrade
@@ -111,11 +112,7 @@ When you publish a module after the modules preparation, the Platform Server use
 
 <div class="warning" markdown="1">
 
-Starting from Platform Server 11.18.0, a new [Deploy All](upgrade-platform-module-deploy.md) feature is available.
-
-Due to known issues found in Platform Server 11.18.0, we advise all customers **not to use** the [Deploy All](upgrade-platform-module-deploy.md) feature. In the OutSystems Cloud, we've made this feature unavailable.
-
-Check [Platform Server 11.18.0 release notes and known issues](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server#platform_server_11.18.0) for more details. In Platform Server 11.18.1 we've turned off this feature. These issues will be fixed in a next release and the feature will be again available for use.
+Starting from Platform Server 11.19.0, a new [Deploy All](upgrade-platform-module-deploy.md) feature is available.
 
 </div>
 

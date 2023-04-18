@@ -3,6 +3,7 @@ tags: support-Database
 locale: en-us
 guid: cb6c0a9e-1714-484f-90ed-74f2afa98f67
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Handling Transactions
@@ -11,7 +12,7 @@ While processing a web request, OutSystems begins a database transaction on its 
 
 If an exception occurs and it's left uncaught, the transaction is rolled back. This means that changes made to the database within the transaction are all reverted, this way ensuring that your data remains consistent.
 
-If an exception occurs and there's an Exception Handler that handles that exception, you can configure what happens to the currently open transaction in the Exception Handler's **Abort Transaction** property. Check [Aborting database transactions](<../../lang/auto/Class.Exception Handler.final.md#aborting>) for more information.
+If an exception occurs and there's an Exception Handler that handles that exception, you can configure what happens to the currently open transaction in the Exception Handler's **Abort Transaction** property. Check [Aborting database transactions](<../../lang/auto/class-exception-handler.md#aborting>) for more information.
 
 ## Ending Transactions Explicitly
 

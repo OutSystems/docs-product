@@ -21,6 +21,8 @@ SEO-friendly URLs for Reactive Web apps require the following:
 
 * For self-managed infrastructures, [ISAPI filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) must be enabled.
 
+* The domains used in the SEO rules should correspond to domains are effective in the environment. For more information about assigning domains check [Use your SSL domain in OutSystems Cloud](../../setup-maintain/setup/ssl-domain-cloud/ssl-domain-cloud.md) or [Install an SSL Certificate in self-managed environments](../../setup-maintain/setup/install-ssl-platform.md).
+
 <div class="info" markdown="1">
 
 For **Platform Server** versions 11.12.0 to 11.14.0 enable the technical preview and use **Service Studio** 11.11 and later. Self-managed installations must have [ISAPI Filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) active.

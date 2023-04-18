@@ -30,6 +30,7 @@ To download the source code of an app, ensure that you have the following:
     * Only available on non-production environments
 * LifeTime version 11.16.1 or higher
 * [LifeTime Service Account](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication)
+    * Service Account needs Full Control on the environment
 
  
 ## Process Overview 
@@ -57,7 +58,7 @@ Response body:
 [
     {...},
     {
-        "Key": "87356b89-4694-4fd1-aa5f-0a23f40233c4",
+        "Key": "849515f2-b4ff-4aca-a9d6-9407bea655f4",
         "Name": "Testing",
         "OSVersion": "11.18.1.0",
         "Order": 2,

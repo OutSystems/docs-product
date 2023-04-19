@@ -73,7 +73,7 @@ The **IT Users Authentication with External IdP (OIDC)** feature requires the fo
 
 * Factory Configuration 11.1.1
 
-To use an IT User as an End User in an OutSystems Reactive app, you must [configure the single sign-on between app types](../configure-authentication.md).
+To use an IT User as an End User in an OutSystems Reactive app, you must [configure the single sign-on between app types](../../secure-the-applications/configure-authentication.md).
 
 **Note**: This only applies to custom apps that use Service Center as a user provider. 
 

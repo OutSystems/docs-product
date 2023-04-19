@@ -12,7 +12,7 @@ platform-version: o11
 <div class="info" markdown="1">
 
 This section applies only to the authentication of **end users** — the users of your OutSystems applications.  
-The authentication of **IT users**, like Developers and IT Administrators, is [configured in LifeTime](../../../../managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md).
+The authentication of **IT users**, like Developers and IT Administrators, is [configured in LifeTime](../../../../managing-the-applications-lifecycle/manage-it-teams/use-an-external-authentication-provider.md).
 
 </div>
 

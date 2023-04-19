@@ -20,7 +20,6 @@ The SOAP web service needs to be called 'OSPlatformAuthentication'.
 
 The 'OSPlatformAuthentication' SOAP web service needs to expose the following methods.  
 
-
 Name     | Description
 ---------|------------
 [Plugin_GetAllConfigurations](<#plugin_getallconfigurations>)() | Method invoked synchronously to get all configurations needed by the plugin and their current values.

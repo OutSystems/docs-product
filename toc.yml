@@ -938,8 +938,8 @@
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-general.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-authentication-provider.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-errors.md
-    - href: managing-the-applications-lifecycle/manage-it-teams/use-an-external-authentication-provider.md
-    - href: managing-the-applications-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
+        - href: managing-the-applications-lifecycle/manage-it-teams/use-an-external-authentication-provider.md
+        - href: managing-the-applications-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
     - href: managing-the-applications-lifecycle/secure-the-applications/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md

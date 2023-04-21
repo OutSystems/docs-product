@@ -571,7 +571,7 @@ Follow the guidelines presented in [REST API Authentication](<../lifetime-deploy
 
 Check [LifeTime API Examples](<../lifetime-deployment/api-use-cases.md>) to learn how to perform common tasks using the LifeTime API.
 
-</div>
+</div> 
 
 You can download the Swagger file for the LifeTime API v2 in the download page of LifeTime Management Console binaries (available from LifeTime Management Console 11.5.0). Go to the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), and select your LifeTime Management Console version:
 
@@ -10160,7 +10160,7 @@ Go to
 <div  class="panel panel-definition">
 <div class="panel-body">
 <a class="json-schema-ref" href="#/definitions/Password">Password</a>
-<p>Passwords must meet the password complexity rules which means that the password must have at least 12 characters, including at least one number, one lowercase letter, and one uppercase letter.</p>
+<p>Passwords must meet the password complexity rules. This means that the password must have at least 12 characters, including at least one number, one lowercase letter, and one uppercase letter.</p>
 </div>
 </div></div>
 </div>

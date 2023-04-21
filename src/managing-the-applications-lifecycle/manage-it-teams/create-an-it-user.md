@@ -22,7 +22,7 @@ For example, a new developer just joined the company. To create the new IT user,
 
     You must set the **Default Role** of the user. Afterward, you can grant the user with additional permissions through teams or for specific applications. While selecting the user's **Default Role**, you get a preview of the default permissions that will be granted to the user by assigning that role.  
 
-    Note: Note: The password must meet the password complexity rules. It must have at least 12 characters including at least one number, one lowercase letter, and one uppercase letter. The password complexity rule is applicable only when a new password is created or an existing password is updated.
+    **Note**: The password must meet the password complexity rules. It must have at least 12 characters including at least one number, one lowercase letter, and one uppercase letter. The password complexity rule is applicable only when a new password is created or an existing password is updated.
 
     ![](images/user-create-lt.png)
 

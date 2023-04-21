@@ -11,7 +11,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies only to Reactive Web apps only.
+Applies to Reactive Web apps only. 
 
 </div>
 

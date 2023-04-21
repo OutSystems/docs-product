@@ -10160,6 +10160,7 @@ Go to
 <div  class="panel panel-definition">
 <div class="panel-body">
 <a class="json-schema-ref" href="#/definitions/Password">Password</a>
+<p>Passwords must meet the password complexity rules which means that the password must have at least 12 characters, including at least one number, one lowercase letter, and one uppercase letter.</p>
 </div>
 </div></div>
 </div>
@@ -10217,7 +10218,7 @@ UserKey
 <dd class="sw-response-400">
 <div class="rowr">
 <div class="col-md-12">
-<p>Failed to change password because password is invalid.</p>
+<p> Failed to change password because the password is invalid.</p>
 </div>
 </div>
 <div class="rowr">

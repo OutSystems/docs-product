@@ -9,6 +9,18 @@ platform-version: o11
 
 # Login with Google Accelerator
 
+<div class="info" markdown="1">
+
+Applies only to Reactive Web apps only.
+
+</div>
+
+<div class="warning" markdown="1">
+
+ The support of Google Sign-In JavaScript platform library for Web was  [deprecated](https://developers.googleblog.com/2021/08/gsi-jsweb-deprecation.html) on  March 31, 2023. This article is based on this library. Therefore, if you created and configured ClientID credentials in your app before March 31st, 2023, the Google accelerator will work.  However, it will not work for any ClientID credentials created and configured after March 31st, 2023.
+
+</div>
+
 This guide presents a detailed list of all the necessary steps to use the Login with Google accelerator. There are two main steps to implement this accelerator:
 
 1. Configuring OAuth 2.0 on the Google API Console

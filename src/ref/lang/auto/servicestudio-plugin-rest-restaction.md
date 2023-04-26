@@ -57,14 +57,14 @@ Method of a consumed REST API.
 <td>Content format of the body request. Mandatory for POST, PUT and PATCH HTTP methods.</td>
 <td>Yes</td>
 <td></td>
-<td>The possible values are:<br/>JSON: for JSON content;<br/>Form URL Encoded; for URL-encoded form data;<br/>Binary: for binary content;<br/>Plain Text: for other content like, for example, XML.</td>
+<td>The possible values are:<br/>JSON: for JSON content;<br/>Form URL Encoded; for URL-encoded form data;<br/>Binary: for binary content;<br/>Text/plain: for other content like, for example, XML.</td>
 </tr>
 <tr>
 <td title="ResponseFormat">Response Format</td>
 <td>Content format of the body response.</td>
 <td>Yes</td>
 <td></td>
-<td>The possible values are:<br/>JSON: for JSON content;<br/>Binary: for binary content;<br/>Plain Text: for other content like, for example, XML.</td>
+<td>The possible values are:<br/>JSON: for JSON content;<br/>Binary: for binary content;<br/>Text/plain: for other content like, for example, XML.</td>
 </tr>
 <tr>
 <td title="Timeout in Seconds">Timeout in Seconds</td>

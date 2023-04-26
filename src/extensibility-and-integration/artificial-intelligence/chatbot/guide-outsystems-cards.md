@@ -9,7 +9,7 @@ platform-version: o11
 
 # Reply with cards
 
-Cards are UI elements that usually have images, buttons, and links to download attachments. They provide a richer experience than the plain text in chatbot conversations. The data structures in OutSystems OutSystems.AI Chatbot component follow the required structure of the Azure Bot Framework cards.
+Cards are UI elements that usually have images, buttons, and links to download attachments. They provide a richer experience than the text/plain in chatbot conversations. The data structures in OutSystems OutSystems.AI Chatbot component follow the required structure of the Azure Bot Framework cards.
 
 <div class="info" markdown="1">
 

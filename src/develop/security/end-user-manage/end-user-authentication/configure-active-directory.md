@@ -10,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Only available in OutSystems on-premises installations.
+Only available in OutSystems self-managed installations. In the OutSystems Cloud you can use [LDAP](configure-ldap.md), [Azure AD](configure-azuread.md), [Okta](configure-okta.md), or [SAML 2.0](configure-saml.md).
 
 </div>
 

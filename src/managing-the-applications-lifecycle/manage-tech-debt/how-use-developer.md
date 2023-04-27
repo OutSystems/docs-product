@@ -19,9 +19,9 @@ As a developer, **AI Mentor Studio** provides you with an overview of the organi
 
 This guide assumes the following:
 
-* Your infrastructure is already set up in **AI Mentor Studio**.
+* Your infrastructure is already set up in AI Mentor Studio.
 
-* Your IT user is already associated with **AI Mentor Studio**.
+* Your IT user is already associated with AI Mentor Studio.
 
 ## Check the technical debt of the modules of an app
 

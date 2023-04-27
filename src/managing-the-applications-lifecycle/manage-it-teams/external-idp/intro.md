@@ -45,6 +45,8 @@ You can integrate an external IdP by configuring the OIDC protocol in LifeTime. 
 
 * Workato
 
+* AI Mentor Studio
+
 Applications that use Service Center as a user provider and that implement the regular authentication flow using the [User_GetUnifiedLoginUrl](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/Users_API#User_GetUnifiedLoginUrl) API are also covered by this feature.
 
 The following diagram shows the flow for the IT Users Integration with External IdP (OIDC) feature when you activate it.

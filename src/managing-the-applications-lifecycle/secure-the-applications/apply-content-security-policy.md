@@ -166,3 +166,12 @@ Failure to do so prevents content from rendering. You can identify the issue by 
 
 See [Troubleshooting OutSystems apps on iOS devices](https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Troubleshooting_OutSystems_apps_on_iOS_devices) for additional information about using iframes on iOS devices.
 
+## Troubleshooting missing or incorrect CSPs
+To confirm if the CSP headers are being applied, one can use the browser's developer tools to check the headers sent by the OutSystems application. To accomplish that, navigate to the application URL with the Developer Tools opened on the Network tab and check the response headers of the request (document type). Example below:
+
+![](images/csp_headers-dev_tools.png)
+
+If the headers are either not present or are different from what you expected, we recommend checking the following:
+* Confirm that the application and its dependencies were published after the configuration of the Content Security Policies. Otherwise, the settings are not made effective;
+* Validate if the CSP configurations set at the application level are not different than the ones set for the whole environment. CSP headers at application level will overwrite the environment level configurations;
+* Confirm that no Factory Configurations' Shared Configuration is manipulating the CSP headers. If the is an existing Shared Configuration adding custom headers which is associated to existing modules, it will overwrite the CSP configurations defined in LifeTime. We recommend managing CSP headers only via Lifetime.

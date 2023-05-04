@@ -169,7 +169,7 @@ See [Troubleshooting OutSystems apps on iOS devices](https://success.outsystems.
 ## Troubleshooting missing or incorrect CSPs
 To confirm if the CSP headers are being applied, one can use the browser's developer tools to check the headers sent by the OutSystems application. To accomplish that, navigate to the application URL with the Developer Tools opened on the Network tab and check the response headers of the request (document type). Example below:
 
-<SCREENSHOT TO BE INSERTED HERE. REACH OUT TO ME (RÚBEN CAPITAO) TO PASS THE IMAGE>
+![](images/csp_headers-dev_tools.png)
 
 If the headers are either not present or are different from what you expected, we recommend checking the following:
 * Confirm that the application and its dependencies were published after the configuration of the Content Security Policies. Otherwise, the settings are not made effective;

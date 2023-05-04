@@ -20,7 +20,9 @@ To enable light process execution, a process must meet all the following conditi
 * The process flow includes only one **Automatic Activity**, having a simple **Start** > **Automatic Activity** > **End** flow.
 
 * The **Launch On** property of the process is set with a database event.
-    * Only entities with the "Expose Process Events" enabled are allowed to be chosen
+    * Only entities with the "Expose Process Events" enabled are allowed to be chosen in the process:
+
+        ![](images/expose-process-events-checkbox-ss.png)
 
 * The **Expose Process Entity** property of the process is set to **No**.
 

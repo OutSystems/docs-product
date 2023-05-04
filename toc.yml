@@ -717,6 +717,7 @@
         - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md
         - href: extensibility-and-integration/mobile-plugins/payments-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/using-cordova-plugins.md
+        - href: extensibility-and-integration/mobile-plugins/keystore-plugin/intro.md
     - href: extensibility-and-integration/javascript/intro.md
     - topics:
         - href: extensibility-and-integration/javascript/mobile/intro.md

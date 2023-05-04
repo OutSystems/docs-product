@@ -59,4 +59,4 @@ To enable light process execution for a process, do the following:
     ![](images/light-process-3.png)
 
 After these steps and after publishing your module, the process is enabled for light process execution.  
-Keep in mind that only the creation of an entity record (the event configured in the "Launch On" of the process) triggers the process to execute as a light process. Launching the process using the Launch Process action executes the process as a regular process.
+Keep in mind that only the creation of an entity record (the event configured in the **Launch On** of the process) triggers the process to execute as a light process. Launching the process using the Launch Process action executes the process as a regular process.

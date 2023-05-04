@@ -32,4 +32,11 @@ The solution is to control the number of rows inside the query:
 
 ![](images/limit-rows-sql.png)
 
-With this change you no longer rely on the  **&lt;Query&gt;.Count** property to get the correct count of rows complying with the original query conditions and joins.
+The SQL Version only works if you set the @maxrows input parameter to be an **Expand Inline** one. And that oblies you to change the data type of the query input parameter to text.
+**Expand Inline** parameters on your queries are not recommended, may be exploited and you may have findings on AI Mentor Studio:
+
+* [Learn more about AI Mentor Studio Findings](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/).
+
+In this particular case make sure to pass what you are passing to the query input @maxrows, if it's a variable or an input, through the **VerifySqlLiteral** function provided by the **Sanitization** extension.
+With this change you no longer rely on the **&lt;Query&gt;.Count** property to get the correct count of rows complying with the original query conditions and joins.
+You need to make a separated query just to do the count if you need it.

@@ -175,3 +175,4 @@ If the headers are either not present or are different from what you expected, w
 * Confirm that the application and its dependencies were published after the configuration of the Content Security Policies. Otherwise, the settings are not made effective;
 * Validate if the CSP configurations set at the application level are not different than the ones set for the whole environment. CSP headers at application level will overwrite the environment level configurations;
 * Confirm that no Factory Configurations' Shared Configuration is manipulating the CSP headers. If the is an existing Shared Configuration adding custom headers which is associated to existing modules, it will overwrite the CSP configurations defined in LifeTime. We recommend managing CSP headers only via Lifetime.
+

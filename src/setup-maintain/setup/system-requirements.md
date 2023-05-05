@@ -161,12 +161,12 @@ From OutSystems 11 Platform Server Release Oct.2019 onwards you can't have integ
 
 ### PostgreSQL Database
 
-* PostgreSQL 12.x.x
-* PostgreSQL 13.x.x
+* PostgreSQL 12.x.x, since Platform Server 11.15.0
+* PostgreSQL 13.x.x, since Platform Server 11.15.0
 
 ### Aurora PostgreSQL Database
 
-* Aurora PostgreSQL Database available in the cloud running a version compatible with a [supported PostgreSQL database](#postgresql-database)
+* Aurora PostgreSQL Database available in the cloud running a version compatible with a [supported PostgreSQL database](#postgresql-database), since Platform Server 11.15.0
 
 ### IBM Database
 

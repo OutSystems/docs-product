@@ -1028,6 +1028,7 @@
         - href: setup-maintain/setup/install-client-side-cert-on-premise.md
         - href: setup-maintain/setup/change-db-authentication.md
         - href: setup-maintain/setup/load-balancing-apps/recommended-configs-load-balancing.md
+        - href: setup-maintain/setup/cdn-setup.md
 
         # Cache Invalidation Service
         - href: setup-maintain/setup/cache-invalidation/intro.md

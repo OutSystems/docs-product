@@ -45,6 +45,8 @@ You can integrate an external IdP by configuring the OIDC protocol in LifeTime. 
 
 * Workato
 
+* AI Mentor Studio
+
 Applications that use Service Center as a user provider and that implement the regular authentication flow using the [User_GetUnifiedLoginUrl](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/Users_API#User_GetUnifiedLoginUrl) API are also covered by this feature.
 
 The following diagram shows the flow for the IT Users Integration with External IdP (OIDC) feature when you activate it.
@@ -73,7 +75,7 @@ The **IT Users Authentication with External IdP (OIDC)** feature requires the fo
 
 * Factory Configuration 11.1.1
 
-To use an IT User as an End User in an OutSystems Reactive app, you must [configure the single sign-on between app types](../configure-authentication.md).
+To use an IT User as an End User in an OutSystems Reactive app, you must [configure the single sign-on between app types](../../secure-the-applications/configure-authentication.md).
 
 **Note**: This only applies to custom apps that use Service Center as a user provider. 
 

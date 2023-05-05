@@ -13,9 +13,9 @@ When you consume a REST method through the **Add Single Method** option, with in
 
 Service Studio uses the text you add in the **Request** field of the **Body** tab to infer the properties, parameters, and content type of the method.
 
-The format of the request example can be JSON, form URL Encoded, Multipart/form-data, or plain text. This article provides examples of each request format. For more information about consuming a single method API, see [Consume a single method of a REST API](consume-a-rest-api.md#single-method).
+The format of the request example can be JSON, form URL Encoded, multipart/form-data, or text/plain. This article provides examples of each request format. For more information about consuming a single method API, see [Consume a single method of a REST API](consume-a-rest-api.md#single-method).
 
-![View request examples](images/view-request-examples-ss.png) 
+![View request examples](images/request-examples-ss.png) 
 
 ## JSON 
 
@@ -57,7 +57,7 @@ To create a valid request with different parts, the following rules must be adhe
 
 * Each part of the payload must include its own **Content-Disposition** header. The header  specifies the name of the part and its type.
 
-* After every part header, an empty line must  be added. This distinguishes the real payload of every part. Otherwise, the payload is interpreted as plain/text.
+* After every part header, an empty line must  be added. This distinguishes the real payload of every part. Otherwise, the payload is interpreted as text/plain.
 
 * If a part of the payload is binary data (such as a file), it must also include a **Content-Type** header that specifies the type of the data (for example, image/jpeg).
 
@@ -91,14 +91,14 @@ Using this payload example, the system can infer the data structures involved. T
 
 For more information about multipart/form-data structure, see the [standard specifications (RFC 2388)](https://www.ietf.org/rfc/rfc2388.txt).
 
-## Plain text 
+## Text/plain
 
-When systems can’t recognize the payload request format, Plain Text request is the default option used.
+When systems can’t recognize the payload request format, text/plain request is the default option used.
 
-In the following payload request example, the payload is simply the string "Hello World!" encoded as plain text. 
+In the following payload request example, the payload is simply the string "Hello World!" encoded as text/plain. 
 
 **Hello World!**
 
 The system creates an input parameter of data type Text.
 
-![Plain text](images/plain-text-ss.png)
+![Text Plain](images/plain-text-ss.png)

@@ -18,7 +18,7 @@ To learn more about managing the **end users** of your OutSystems applications, 
 
 OutSystems allows you to define the permissions of IT users using a [role-based permission model](about-permission-levels.md). This model enables you to set up the permissions of your IT users for simple or complex security policy needs. You can:
 
-* Configure authentication across systems for IT users by using an [external authenticator provider](../secure-the-applications/use-an-external-authentication-provider.md).
+* Configure authentication across systems for IT users by using an [external authenticator provider](use-an-external-authentication-provider.md).
 * Set up the permissions of a small team using only the built-in default roles, Developer and Administrator.
 * [Create additional roles](create-an-it-role.md#create-a-new-role) to better control the different permission levels of a larger team.
 * [Use teams](create-an-it-team.md) to manage an enterprise-grade security policy, where you have many applications and users.

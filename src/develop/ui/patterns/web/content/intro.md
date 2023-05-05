@@ -11,8 +11,8 @@ Content patterns allow you to highlight and display important information to use
 
 ![Traditional web content patterns](<images/content-traditional-web-patterns-diag.png>)
 
- The available content patterns include the following:
- 
+The available content patterns include the following:
+
 * [Accordion](../content/accordion/accordion.md)
 * [Alert](../content/alert/alert.md)
 * [Balloon](../content/balloon/balloon.md)

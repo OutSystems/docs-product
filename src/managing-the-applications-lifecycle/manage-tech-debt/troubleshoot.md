@@ -31,6 +31,33 @@ If the issue persists, open a ticket in the [Support Portal](https://www.outsyst
 
 ## Duplicated code findings mismatch  
 
-The number of issues listed in AI Mentor Studiois inconsistent across views. For example, the number of duplicate code instances in the report view differs from the number listed in the detailed view.
+The number of issues listed in AI Mentor Studio is inconsistent across views. For example, the number of duplicate code instances in the report view differs from the number listed in the detailed view.
 
 This may occur if you change the target environment of the code analysis probe without first deleting data from AI Mentor Studio. Before you change the target environment, contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data. Then follow the [setup procedure](how-setup.md) to configure the new target environment.
+
+## Login issues
+
+When attempting to log into AI Mentor Studio, you might get the following error message:
+
+`It was not possible to sign into AI Mentor Studio. Check here for the solutions.`
+
+### Cause
+
+The credentials provided to log in aren't valid or the user is blocked. The possible reasons are:
+
+* The username doesn't exist
+
+* The password is incorrect
+
+* The user is blocked due to many failed attempts
+
+### Recommended action
+
+* Verify that you used the correct username and password or request an administrator to reset your password.
+
+* With your **LifeTime** administrator, confirm that the username exists.
+
+* Ask your **LifeTime** administrator to unblock your username.
+
+For more information, check also [Protection against brute force attacks](../secure-the-applications/protection-against-brute-force-attacks.md).
+

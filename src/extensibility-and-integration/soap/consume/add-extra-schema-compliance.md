@@ -37,9 +37,9 @@ To enable these validations, follow these steps:
 
 1. Go the **Platform Configurations** tab.  
 
-1. Under the **Runtime** section, select the **Add Extra Schema Compliance Validations in SOAP** checkbox and click **Apply**.   
+1. Under the **Runtime** section, select the **Enable extra schema compliance in SOAP** checkbox and click **Apply**.   
 
-    ![Factory Configuration Runtime settings with option to enable extra schema compliance in SOAP.](images/enable-schema-compliance-fc.png)
+    ![Factory Configuration Runtime settings with option to enable extra schema compliance in SOAP.](images/enable-extra-schema-compliance-fc.png)
     
     With this option enabled, whenever a response message is non-compliant, an exception is thrown and logged, and the following error message displays at runtime:
 

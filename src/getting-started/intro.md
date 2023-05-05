@@ -25,6 +25,7 @@ To create your first app in Service Studio you can:
 
 ![Creating a new app in OutSystems](images/getting-started-new-app-ss.png)
 
+
 ## Creating apps
 
 You build, edit, and debug your apps in Service Studio, using OutSystems visual language. Once you're happy with how your app looks and works, publish it as a web app, progressive web app, or native mobile app. For an overview, see [Choose the right app for your project](right-app.md).

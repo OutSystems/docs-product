@@ -95,6 +95,8 @@ To configure Okta authentication, follow these steps:
 
         * ``https://integrationbuilder.outsystems.com/Authentication/OIDC_Callback``
 
+        * ``https://aimentorstudio.outsystems.com/Authentication/OIDC_Callback``
+
         * For each OutSystems environment in your infrastructure (excluding LifeTime), add an Integration Manager’s URI:
 
             * ``https://<YOUR_ENV>/OSIntegrationManager/OIDC_Callback``

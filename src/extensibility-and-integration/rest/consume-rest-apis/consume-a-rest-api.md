@@ -91,7 +91,7 @@ Do the following:
 
 1. Fill the information about the Request and the Response. The easiest way to do this is to perform a test to the API and use the test result.
 
-    Alternatively, you can add the JSON structure or plain text example directly in the **Request** and **Response** fields in the **Body** tab. Open the **Test** tab. If you have parameters in your **Method URL**, you need to insert the parameter values to execute the test:
+    Alternatively, you can add the JSON structure or text/plain example directly in the **Request** and **Response** fields in the **Body** tab. Open the **Test** tab. If you have parameters in your **Method URL**, you need to insert the parameter values to execute the test:
 
     ![Consume REST API Method - Test tab](images/ss-rest-consume-test.png)
 

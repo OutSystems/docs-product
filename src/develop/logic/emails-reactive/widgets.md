@@ -37,4 +37,4 @@ You can use the following widgets in Emails.
 | Link        | Adds a navigational element.                        |                                                                |
 | List        | Shows records as items in a list.                   | To quickly create a list in a Mobile App, drag an Entity to Email.                                                                |
 | Table       | Shows records in columns and rows.                  | To quickly create a table in a Reactive Web App, drag an Entity to Email. See also: [Creating and editing tables](../../ui/table/intro.md).                                                               |
-| Text        | Adds plain text.                                    |                                                                |
+| Text        | Adds text/plain.                                    |                                                                |

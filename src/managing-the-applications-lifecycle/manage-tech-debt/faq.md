@@ -39,6 +39,12 @@ Yes, you can use [AI Mentor Studio API](../../ref/apis/auto/ai-mentor-studio-api
 
 ### Do I need to give access to the developers in LifeTime so they can associate their users with AI Mentor Studio?
 
+<div class="info" markdown="1">
+
+Applies only to probes version 4.2 or below.
+
+</div>
+
 All developers have access to LifeTime, therefore the customer isn't "giving access just to use AI Mentor Studio". The reason why all developers always have to access LifeTime is that it's where the IT users are set up.
 
 The AI Mentor Studio Plugin doesn't require the user to have any particular permissions on LifeTime. So, any user that can login to LifeTime (all active users), can see and open AI Mentor Studio Plugin to associate their infrastructure user with AI Mentor Studio.

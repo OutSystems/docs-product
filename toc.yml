@@ -441,13 +441,13 @@
             - href: develop/processes/best-practices/separate-process-application-logic.md
             - href: develop/processes/best-practices/scale-queries.md
         - href: develop/processes/light-process.md
-        
+
     # Use Timers
     - href: develop/timers/intro.md
     - topics:
         - href: develop/timers/timer-create-run.md
         - href: develop/timers/timer-monitor.md
-        
+
     # Reuse and Refactor
     - href: develop/reuse-and-refactor/intro.md
     - topics:
@@ -712,9 +712,12 @@
             - href: extensibility-and-integration/mobile-plugins/firebase/firebase-messaging.md
         - href: extensibility-and-integration/mobile-plugins/health-fitness/intro.md
         - href: extensibility-and-integration/mobile-plugins/social-login/intro.md
+        - topics:
+            - href: extensibility-and-integration/mobile-plugins/social-login/social-login-ref.md
         - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md
         - href: extensibility-and-integration/mobile-plugins/payments-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/using-cordova-plugins.md
+        - href: extensibility-and-integration/mobile-plugins/keystore-plugin/intro.md
     - href: extensibility-and-integration/javascript/intro.md
     - topics:
         - href: extensibility-and-integration/javascript/mobile/intro.md
@@ -929,7 +932,17 @@
         - href: managing-the-applications-lifecycle/manage-it-teams/allow-managers-to-handle-permissions-of-it-teams.md
         - href: managing-the-applications-lifecycle/manage-it-teams/allow-external-db-integration.md
         - href: managing-the-applications-lifecycle/manage-it-teams/find-out-the-permissions-of-it-users.md
-
+        - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/intro.md
+        - topics:
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-configure.md
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-azure.md
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-okta.md
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-lifetime.md
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-general.md
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-authentication-provider.md
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-errors.md
+        - href: managing-the-applications-lifecycle/manage-it-teams/use-an-external-authentication-provider.md
+        - href: managing-the-applications-lifecycle/manage-it-teams/implement-an-authentication-plugin.md
     - href: managing-the-applications-lifecycle/secure-the-applications/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-internal-network.md
@@ -938,17 +951,7 @@
         - href: managing-the-applications-lifecycle/secure-the-applications/encrypt-viewstate.md
         - href: managing-the-applications-lifecycle/secure-the-applications/protection-against-brute-force-attacks.md
         - href: managing-the-applications-lifecycle/secure-the-applications/use-https-by-enabling-ssl.md
-        - href: managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md
-        - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/intro.md
-        - topics:
-            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-configure.md
-            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-azure.md
-            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-okta.md
-            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-lifetime.md
-            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-general.md
-            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-authentication-provider.md
-            - href: managing-the-applications-lifecycle/secure-the-applications/external-idp/external-idp-errors.md
-        - href: managing-the-applications-lifecycle/secure-the-applications/implement-an-authentication-plugin.md
+
         - href: managing-the-applications-lifecycle/secure-the-applications/configure-authentication.md
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md
     - topics:
@@ -1025,6 +1028,7 @@
         - href: setup-maintain/setup/install-client-side-cert-on-premise.md
         - href: setup-maintain/setup/change-db-authentication.md
         - href: setup-maintain/setup/load-balancing-apps/recommended-configs-load-balancing.md
+        - href: setup-maintain/setup/cdn-setup.md
 
         # Cache Invalidation Service
         - href: setup-maintain/setup/cache-invalidation/intro.md
@@ -1860,7 +1864,7 @@
                 - href: ref/apis/lifetime-deployment/examples/api-request-code.md
                 - href: ref/apis/lifetime-deployment/examples/api-register-env.md
                 - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
-                
+
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md
         - href: ref/apis/auto/lifetime-sdk.final.md
@@ -1884,4 +1888,3 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
-

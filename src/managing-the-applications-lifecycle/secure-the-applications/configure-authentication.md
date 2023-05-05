@@ -119,6 +119,6 @@ When the end user logs out of an application, all sessions are terminated. This 
 
 <div class="info" markdown="1">
 
-If the application contains [elements with caching enabled](../../develop/data/caching.md) (using the Cache in Minutes property), the cached content might still be displayed for a small period of time, until the cache is invalidated. After that period, the authentication information must be fetched again from the database, as it's no longer valid.
+If the Cache Time In Minutes is not set to 0 and if the user logs out from the application, other sessions associated with the same user will be valid until that period of time has passed. After that period, the authentication information must be fetched again from the database and, as it is no longer valid, the remaining sessions will be invalidated as well.
 
 </div>

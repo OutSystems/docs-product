@@ -573,18 +573,18 @@ Note: New findings are only processed every 12 hours.
 
 </div>
 
-To authenticate your API requests, follow the guidelines in the [AI Mentor Studio API authentication](../ai-mentor-studio/aims-api-authentication.md) article.
+To authenticate your API requests, follow the guidelines in the [AI Mentor Studio API authentication](../ai-mentor-studio/aims-api-authentication.md) article. 
 
 ## Access the Swagger file
 
-You can access the **Swagger file** from the [AI Mentor Studio API page](https://architecture.outsystems.com/ArchitectureDashboardAPI/rest/V1/):
+You can access the **Swagger file** from the [AI Mentor Studio API page](https://aimentorstudio.outsystems.com/AIMentorStudioAPI/rest/V1/):
 
-![AI Mentor Studio API page, where you can download the swagger by clicking **swagger.json**.](images/api-swagger-ad.png)
+![AI Mentor Studio API page, where you can download the swagger by clicking **swagger.json**.](images/api-swagger-aims.png) 
 
 <div class="container">
 <h1>V1</h1>
 <p class="sw-info">
-Base URL: <span class="sw-info-basePath">/ArchitectureDashboardAPI/rest/V1</span>,
+Base URL: <span class="sw-info-basePath">/AIMentorStudioAPI/rest/V1/</span>,
 Version: <span class="sw-info-version">1</span>
 </p>
 <p><p>Provides technical debt details of an OutSystems infrastructure.</p>

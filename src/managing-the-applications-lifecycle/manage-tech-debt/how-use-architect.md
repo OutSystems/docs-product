@@ -27,7 +27,7 @@ This guide assumes the following:
 
 * You have the **Administrator** role in LifeTime.
 
-After logging into [AI Mentor Studio](https://aimentorstudio.outsystems.com/) with your OutSystems account, follow these steps:
+After logging into [AI Mentor Studio](https://aimentorstudio.outsystems.com/), follow these steps:
 
 ## Check the technical debt of all your apps
 

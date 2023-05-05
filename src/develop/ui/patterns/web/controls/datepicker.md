@@ -7,7 +7,7 @@ app_type: traditional web apps
 platform-version: o11
 ---
 
-# Date Picker 
+# Date Picker
 
 <div class="info" markdown="1">
 
@@ -61,31 +61,28 @@ You can use the Date Picker UI Pattern to allow the user to select a single or a
 
 1. Publish and test.
 
-
 For advanced options, you can check the official documentation of the [Pikaday library](https://github.com/dbushell/Pikaday).
 
 ## Properties
 
-| **Property**                                        | **Description**                                                                                                         |
-|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| InputWidgetId (Text): Mandatory                     | Input element Id that triggers the element so it is visible.                                                            |
-| ButtonWidgetId (Text): Optional                     | Element name (example: button) that  triggers the element so it is visible.                                             |
-| DisabledDates (Date List):Optional                  | List of dates for the disabled days.                                                                                    |
-| MinDate (Date): Optional                            | Dates from this date onwards are enabled and  dates before this date are disabled.                                      |
-| MaxDate (Date): Optional                            | Dates before this date are enabled and dates after this date are disabled.                                              |
-| InitialDate (Date Time): Optional                   | If set, the calendar will initially display the set date, otherwise it will display the current Date (default).         |
-| DateFormat (Text): Optional                         | Defaults to the date format defined in the server configuration. The default is the server date format.                 |
-| SelectInterval (Boolean): Optional                  | Allows the selection between two dates. If set to True, the Block Event "On Select" has the values for both parameters. |
+| **Property** | **Description** |
+|---|---|
+| InputWidgetId (Text): Mandatory | Input element Id that triggers the element so it is visible. |
+| ButtonWidgetId (Text): Optional | Element name (example: button) that  triggers the element so it is visible. |
+| DisabledDates (Date List):Optional | List of dates for the disabled days. |
+| MinDate (Date): Optional | Dates from this date onwards are enabled and  dates before this date are disabled. |
+| MaxDate (Date): Optional | Dates before this date are enabled and dates after this date are disabled. |
+| InitialDate (Date Time): Optional | If set, the calendar will initially display the set date, otherwise it will display the current Date (default). |
+| DateFormat (Text): Optional | Defaults to the date format defined in the server configuration. The default is the server date format. |
+| SelectInterval (Boolean): Optional | Allows the selection between two dates. If set to True, the Block Event "On Select" has the values for both parameters. |
 | AdvancedFormat (DatePickerAdvancedFormat): Optional | Allows for more options than the ones given in the input parameters.                                                    |
- 
 
 ### Date Picker advanced format information
 
-| **Property**                                 | **Description**                                                                                                                                                                  |
-|----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| EventsList (DateTime List): Optional         | A list of events (type Date Time)                                                                                                                                                |
+| **Property** | **Description** |
+|---|---
+| EventsList (DateTime List): Optional | A list of events (type Date Time) |
 | AdvancedFormatJSON (DateTime List): Optional | A string with options such as: `{ disableWeekends: true,  BeginEmpty: true }`. For more advanced options, read the official documentation: <https://github.com/dbushell/Pikaday> |
-
 
 ![](<images/datepicker-gif-1.gif>)
 

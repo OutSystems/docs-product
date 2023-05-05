@@ -10,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Only available in OutSystems on-premises installations.
+Only available in OutSystems self-managed installations. In the OutSystems Cloud you can use [LDAP](configure-ldap.md), [Azure AD](configure-azuread.md), [Okta](configure-okta.md), or [SAML 2.0](configure-saml.md).
 
 </div>
 
@@ -33,3 +33,12 @@ To use Active Directory domain authentication:
     <div class="info" markdown="1">
     Security best practices strongly advise that you avoid using the Windows Integrated Authentication when a workstation is shared between several users.
     </div>
+
+## Unsupported scenarios 
+
+### One-Way Forest Trust
+
+Active Directory authentication in OutSystems requires bidirectional trust and access between all Active Directory domains in case multiple domains are used.  
+OutSystems doesn't support using Active Directory in a [One-Way Forest Trust](https://learn.microsoft.com/en-us/azure/active-directory-domain-services/concepts-forest-trust#one-way-and-two-way-trusts) context when the child domain (with restricted access) is the one configured as “Default Domain”,  as this Forest will have restricted access to user details and metadata. 
+
+

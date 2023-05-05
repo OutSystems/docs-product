@@ -41,7 +41,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
     
     1. In the Toolbox, search for the widget again.
 
@@ -49,7 +49,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     ![Drag widget to screen](<images/progressbar-dragwidget-ss.png>)
 
-1. Add the text you want to appear as the Progress Bar title. 
+1. Add the text you want to appear as the Progress Bar title.
 
     In this example, we add `Ongoing tasks`.
 

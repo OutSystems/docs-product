@@ -44,6 +44,7 @@ This sample app shows you how to do the following:
 
 <div class="info" markdown="1">
 
+
 The next step in the development of a mobile app is to use the profile information (name, email, and profile picture) returned by the provider.
 Use these to create a user or manage a session on the OutSystems Users service.
 This isn't shown in the sample app but is possible by using the User systems database and its entity actions.
@@ -65,6 +66,7 @@ The following steps show how to enable your users to log in to your app using an
 1. [In your app, create logic to map users to OutSystems end users](#map-users).
 
 ### Set up social login providers for your app { #set-providers }
+
 
 Before being able to provide the option for social login in an app, you need to configure the providers used in that app.
 For that, you **must** use the Social Login Configurator, a Reactive Web app that lets you set up a new provider to use with your app.

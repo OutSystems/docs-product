@@ -49,7 +49,7 @@ EncryptEntityText
 :   Encrypts the text of unsearchable attributes using a KeyId and a salt (EntityId).
 
 DecryptEntityText
-:   Decrypts into plain text the cyphered text of unsearchable attributes using a KeyId and a salt (EntityId).
+:   Decrypts into text/plain the cyphered text of unsearchable attributes using a KeyId and a salt (EntityId).
 
 
 Check the following articles for detailed guides of the implementation of:

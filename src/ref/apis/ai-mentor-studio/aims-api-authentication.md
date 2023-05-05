@@ -35,7 +35,7 @@ When using AI Mentor Studio REST API, take the following security considerations
 
 ## Prerequisites
 
-To be able to use the AI Mentor Studio API, you need to have [full control permissions assigned as a default role](../../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md#manage-architecture-dashboard-api).
+To use the AI Mentor Studio API, you must have [full control permissions assigned as a default role](../../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md#manage-architecture-dashboard-api).
 
 ## How to obtain a key { #obtain-key }
 

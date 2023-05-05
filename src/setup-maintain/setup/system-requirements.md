@@ -29,6 +29,7 @@ This section summarizes the requirements for installing the Platform Server in y
 
 ### Operating System
 
+* Microsoft Windows Server 2022 (Standard Edition or higher edition), since Platform Server 11.20.0
 * Microsoft Windows Server 2019 (Standard Edition or higher edition), since Platform Server Release Jul.2019
 * Microsoft Windows Server 2016 (Standard Edition or higher edition)
 

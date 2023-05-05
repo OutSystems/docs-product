@@ -68,7 +68,7 @@ Validates a password against the expected salted password hash.
 
 PlainTextPassword
 :   Type: Text. Mandatory.  
-    The password in plain text.
+    The password in text/plain.
 
 SaltedHashedPassword
 :   Type: Text. Mandatory.  

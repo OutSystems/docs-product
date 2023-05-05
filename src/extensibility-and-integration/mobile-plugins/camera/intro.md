@@ -297,3 +297,10 @@ Users can change the camera direction (back or front) once the camera app opens.
 When you change the resolution or quality setting, the plugin applies it only to the image the app uses.
 The device ignores the settings when saving the images in the device gallery.
 This means that the size of the image in the gallery depends on the device's hardware.
+
+### Choose from gallery wont allow for items to be selected
+
+**Applies to Android only.**
+
+In Android 13, when using "ChooseFromGallery", users are unable to select content from device's gallery.
+When targeting Android 13, users should build their apps using MABS9 or later.

@@ -260,25 +260,21 @@ isn't on your servers and requires connectivity to your OutSystems
 infrastructure. Connectivity is assured when using OutSystems Cloud, but on
 your self-managed infrastructure, you’ll need to be aware of this:
 
-* [Mobile Apps Build
-Service](https://www.outsystems.com/blog/posts/how-mobile-apps-build-service-works/):
+* [Mobile Apps Build Service](https://www.outsystems.com/blog/posts/how-mobile-apps-build-service-works/):
 generates mobile packages for installation on mobile devices.
 
-* [Architecture
-Dashboard](https://www.outsystems.com/platform/architecture-dashboard/):
+* [AI Mentor Studio](https://www.outsystems.com/platform/architecture-dashboard/):
 technical debt monitoring tool that enables you to visualize complex
 cross-portfolio architectures, identify problems, and help developers follow
 best practices.
 
-* [Workflow
-Builder](https://www.outsystems.com/blog/posts/workflow-builder-workflow-app-minutes/):
+* [Workflow Builder](https://www.outsystems.com/blog/posts/workflow-builder-workflow-app-minutes/):
 creates workflows to build apps for task management and automation.
 
-* [Experience
-Builder](https://www.outsystems.com/platform/experience-builder/): prototype
+* [Experience Builder](https://www.outsystems.com/platform/experience-builder/): prototype
 pixel-perfect mobile applications and turn them into production-ready apps.
 
-![Optional infrastructure tools diagrams](images/outsystems-saas-tools-diag.png)
+![Optional infrastructure tools diagrams](images/outsystems-saas-diag.png)
 
 The complete OutSystems network requirements are
 [here](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_network_requirements).

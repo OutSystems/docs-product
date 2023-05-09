@@ -41,7 +41,7 @@ The table below details the ports that need to be accessible in each server of a
 
 <div class="info" markdown="1">
 
-Security Tip: TCP Ports 12000,12001 and 12002 shouldn't be open to the internet.
+Security Tip: TCP Ports 12000,12001, 12002 and 12102 shouldn't be open to the internet.
 
 </div>
 
@@ -63,9 +63,11 @@ The following table lists the ports that should be open to correctly **monitor**
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service Monitoring|
 |Front-End|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
 |Front-End|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
+|Front-End|Front-End|12102|TCP|OutSystems Scheduler Service Monitoring|
 |Controller|Front-End|80|TCP|IIS Monitoring|
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
 |Controller|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
+|Controller|Front-End|12102|TCP|OutSystems Scheduler Service Monitoring|
 |Front-End and Controller|\*.outsystems.com<br/>outsystems.com|443|TCP|Telemetry|
 
 In case you are using a hybrid infrastructure where some part is in OutSystems Cloud and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).

@@ -14,3 +14,4 @@ Configuration | Description | Default value
 ---|---|---  
 Max. Concurrent Timers | Maximum number of Timers (asynchronous jobs) that can be executed at the same time in each Front-end Server. | `3`  
 Scheduler Service Port | The port the scheduler service listens to. | `12002`
+Scheduler Service REST Port | The port the scheduler service listens to when using the REST communication protocol. | `12102`

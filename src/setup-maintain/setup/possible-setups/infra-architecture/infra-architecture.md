@@ -274,7 +274,7 @@ creates workflows to build apps for task management and automation.
 * [Experience Builder](https://www.outsystems.com/platform/experience-builder/): prototype
 pixel-perfect mobile applications and turn them into production-ready apps.
 
-![Optional infrastructure tools diagrams](images/outsystems-saas-diag.png)
+![Optional infrastructure tools diagrams](images/outsystems-saas-tools-diag.png)
 
 The complete OutSystems network requirements are
 [here](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_network_requirements).

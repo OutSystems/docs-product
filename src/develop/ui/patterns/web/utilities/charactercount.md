@@ -4,6 +4,7 @@ summary: Character Count displays the number of characters left to be entered in
 locale: en-us
 guid: 35ae7f29-b021-4f09-a081-66c668b816e4
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Character Count
@@ -20,7 +21,7 @@ You can use the Character Count UI Pattern to display the number of characters a
 
 **How to use the Character Count UI Pattern**
 
-**Prerequisites:** You have created an [Input widget](<../../../../../ref/lang/auto/Class.Input Widget.final.md>) called MyInput and created a Local Variable called MyInputVariable with its Data Type set to Text.
+**Prerequisites:** You have created an [Input widget](<../../../../../ref/lang/auto/class-input-widget.md>) called MyInput and created a Local Variable called MyInputVariable with its Data Type set to Text.
 
 1. In Service Studio, in the Toolbox, search for `Character Count`.
 

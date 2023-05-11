@@ -4,6 +4,7 @@ summary: Advanced use cases for the Progress Circle UI Pattern.
 locale: en-us
 guid: 7541fb66-768c-42c8-9d92-636b17d9f2f1
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Progress Circle Reference

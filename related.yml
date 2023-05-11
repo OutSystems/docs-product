@@ -26,12 +26,12 @@
   - ref/logic/expressions/intro.md
   - ref/logic/expressions/operators.md
   - ref/logic/expressions/operands.md
-  - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md
+  - ref/lang/auto/servicestudio-plugin-nrwidgets-expression.md
   - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 - develop/logic/exceptions/handling-mechanism.md:
-    - ref/lang/auto/Class.Exception Handler.final.md
-    - ref/lang/auto/Class.Raise Exception.final.md
+    - ref/lang/auto/class-exception-handler.md
+    - ref/lang/auto/class-raise-exception.md
 
 # Caching
 - develop/data/caching.md:
@@ -48,7 +48,7 @@
 
 # Validate Form Inputs
 - develop/ui/forms/form-validate.md:
-  - ref/lang/auto/Class.Mobile Module.final.md
+  - ref/lang/auto/class-mobile-module.md
   - develop/logic/actions.md
 
 # Table
@@ -69,7 +69,7 @@
 
 # Share a Client Variable between apps
 - develop/data/share-client-var-between-app.md:
-  - ref/lang/auto/Class.Client Variable.final.md
+  - ref/lang/auto/class-client-variable.md
   - external:
     - "How to maintain the state of a mobile screen": 
         https://success.outsystems.com/Documentation/Development_FAQs/How_to_maintain_the_state_of_a_mobile_screen
@@ -99,249 +99,249 @@
 
 #   Adding Data and Logic
 #     Screen Action
-- ref/lang/auto/Class.Screen Action.final.md:
+- ref/lang/auto/class-screen-action.md:
     # Actions in Web Applications
     - develop/logic/action-web.md#screen-actions
     # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md
+    - ref/lang/auto/class-web-screen.md
     # Web Block
-    - ref/lang/auto/Class.Web Block.final.md
+    - ref/lang/auto/class-web-block.md
 
 #  Designing Screens
 #    Button Widget
-- ref/lang/auto/Class.Button Widget.final.md:
+- ref/lang/auto/class-button-widget.md:
     # Link Widget
-    - ref/lang/auto/Class.Link Widget.final.md
+    - ref/lang/auto/class-link-widget.md
     # Navigate to Another Screen
     - develop/ui/navigation/navigate-to-detail-screen.md
     # Screen Action
-    - ref/lang/auto/Class.Screen Action.final.md
+    - ref/lang/auto/class-screen-action.md
     # External Site
-    - ref/lang/auto/Class.External Site.final.md
+    - ref/lang/auto/class-external-site.md
     # Go To Destination
-    - ref/lang/auto/Class.Go To Destination.final.md
+    - ref/lang/auto/class-go-to-destination.md
     # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md        
+    - ref/lang/auto/class-web-screen.md        
     
 # Cell Widget            
-- ref/lang/auto/Class.Cell Widget.final.md:
+- ref/lang/auto/class-cell-widget.md:
     # Header Row Widget
-    - ref/lang/auto/Class.Header Row Widget.final.md
+    - ref/lang/auto/class-header-row-widget.md
     # Row Widget
-    - ref/lang/auto/Class.Row Widget.final.md
+    - ref/lang/auto/class-row-widget.md
 
 # Check Box Widget
-- ref/lang/auto/Class.Check Box Widget.final.md:
+- ref/lang/auto/class-check-box-widget.md:
     # Switch or Toggle a Boolean Value
     - develop/ui/inputs/switch-checkbox.md
     # Radio Button Widget
-    - ref/lang/auto/Class.Radio Button Widget.final.md
+    - ref/lang/auto/class-radio-button-widget.md
 
 # Combo Box Widget
-- ref/lang/auto/Class.Combo Box Widget.final.md:
+- ref/lang/auto/class-combo-box-widget.md:
     # Choose One Value from a List
     - develop/ui/inputs/dropdown-combo.md
 
 # Editable Table Widget
-- ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md:
+- ref/lang/auto/servicestudio-plugin-widgets-editabletable.md:
     # Table Records Widget
-    - ref/lang/auto/Class.Table Records Widget.final.md
+    - ref/lang/auto/class-table-records-widget.md
     # Aggregate
-    - ref/lang/auto/Class.Aggregate.final.md
+    - ref/lang/auto/class-aggregate.md
     # SQL
-    - ref/lang/auto/Class.SQL.final.md
+    - ref/lang/auto/class-sql.md
 
 # Edit Record Widget
-- ref/lang/auto/Class.Edit Record Widget.final.md:
+- ref/lang/auto/class-edit-record-widget.md:
     # Show Record Widget
-    - ref/lang/auto/Class.Show Record Widget.final.md
+    - ref/lang/auto/class-show-record-widget.md
     # List
     - ref/data/data-types/list.md
 
 # Expression Widget
-- ref/lang/auto/Class.Expression Widget.final.md:
+- ref/lang/auto/class-expression-widget.md:
     # Built-in Functions
-    - ref/lang/auto/builtinfunctions.final.md
+    - ref/lang/auto/builtinfunctions.md
     # Expressions
     - ref/logic/expressions/intro.md
 
 # Form Widget
-- ref/lang/auto/ServiceStudio.Plugin.Widgets.Form.final.md:
+- ref/lang/auto/servicestudio-plugin-widgets-form.md:
     # Use a Form to Enter Data
     - develop/ui/forms/form-use.md
     # Button Widget
-    - ref/lang/auto/Class.Button Widget.final.md
+    - ref/lang/auto/class-button-widget.md
     # Check Box Widget
-    - ref/lang/auto/Class.Check Box Widget.final.md
+    - ref/lang/auto/class-check-box-widget.md
     # Combo Box Widget
-    - ref/lang/auto/Class.Combo Box Widget.final.md
+    - ref/lang/auto/class-combo-box-widget.md
     # Input Password Widget
-    - ref/lang/auto/Class.Input Password Widget.final.md
+    - ref/lang/auto/class-input-password-widget.md
     # Input Widget
-    - ref/lang/auto/Class.Input Widget.final.md
+    - ref/lang/auto/class-input-widget.md
     # Label Widget
-    - ref/lang/auto/ServiceStudio.Plugin.Widgets.Label.final.md
+    - ref/lang/auto/servicestudio-plugin-widgets-label.md
     # Link Widget
-    - ref/lang/auto/Class.Link Widget.final.md
+    - ref/lang/auto/class-link-widget.md
     # List Box Widget
-    - ref/lang/auto/Class.List Box Widget.final.md
+    - ref/lang/auto/class-list-box-widget.md
     # Radio Button Widget
-    - ref/lang/auto/Class.Radio Button Widget.final.md
+    - ref/lang/auto/class-radio-button-widget.md
     # Upload Widget
-    - ref/lang/auto/Class.Upload Widget.final.md
+    - ref/lang/auto/class-upload-widget.md
 
 # Header Row Widget
-- ref/lang/auto/Class.Header Row Widget.final.md:
+- ref/lang/auto/class-header-row-widget.md:
     # Editable Table Widget
-    - ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md
+    - ref/lang/auto/servicestudio-plugin-widgets-editabletable.md
     # Row Widget
-    - ref/lang/auto/Class.Row Widget.final.md
+    - ref/lang/auto/class-row-widget.md
     # Table Records Widget
-    - ref/lang/auto/Class.Table Records Widget.final.md
+    - ref/lang/auto/class-table-records-widget.md
     # Table Widget
-    - ref/lang/auto/Class.Table Widget.final.md
+    - ref/lang/auto/class-table-widget.md
     - external:
         - "How to scroll records in a table with a fixed header":
             https://success.outsystems.com/Documentation/How-to_Guides/Front-End/How_to_scroll_records_in_a_table_with_a_fixed_header
       
 # Image Widget
-- ref/lang/auto/Class.Image Widget.final.md:
+- ref/lang/auto/class-image-widget.md:
     # Display an Image
     - develop/ui/image/display-image.md
     # Use Resources
     - develop/data/resources.md
     # Image
-    - ref/lang/auto/Class.Image.final.md
+    - ref/lang/auto/class-image.md
     # Localized Image
-    - ref/lang/auto/Class.Localized Image.final.md
+    - ref/lang/auto/class-localized-image.md
       
 # Input Password Widget
-- ref/lang/auto/Class.Input Password Widget.final.md:
+- ref/lang/auto/class-input-password-widget.md:
     # Input Widget
-    - ref/lang/auto/Class.Input Widget.final.md
+    - ref/lang/auto/class-input-widget.md
     
 # Label Widget
-- ref/lang/auto/ServiceStudio.Plugin.Widgets.Label.final.md:
+- ref/lang/auto/servicestudio-plugin-widgets-label.md:
     # Button Widget
-    - ref/lang/auto/Class.Button Widget.final.md
+    - ref/lang/auto/class-button-widget.md
     # Check Box Widget
-    - ref/lang/auto/Class.Check Box Widget.final.md
+    - ref/lang/auto/class-check-box-widget.md
     # Combo Box Widget
-    - ref/lang/auto/Class.Combo Box Widget.final.md
+    - ref/lang/auto/class-combo-box-widget.md
     # Input Password Widget
-    - ref/lang/auto/Class.Input Password Widget.final.md
+    - ref/lang/auto/class-input-password-widget.md
     # Input Widget
-    - ref/lang/auto/Class.Input Widget.final.md
+    - ref/lang/auto/class-input-widget.md
     # List Box Widget
-    - ref/lang/auto/Class.List Box Widget.final.md
+    - ref/lang/auto/class-list-box-widget.md
     # Radio Button Widget
-    - ref/lang/auto/Class.Radio Button Widget.final.md
+    - ref/lang/auto/class-radio-button-widget.md
     # Upload Widget
-    - ref/lang/auto/Class.Upload Widget.final.md
+    - ref/lang/auto/class-upload-widget.md
       
 # Link Widget
-- ref/lang/auto/Class.Link Widget.final.md:
+- ref/lang/auto/class-link-widget.md:
     # Navigate to Another Screen
     - develop/ui/navigation/navigate-to-detail-screen.md
     # Screen Action
-    - ref/lang/auto/Class.Screen Action.final.md
+    - ref/lang/auto/class-screen-action.md
     # External Site
-    - ref/lang/auto/Class.External Site.final.md
+    - ref/lang/auto/class-external-site.md
     # Go To Destination
-    - ref/lang/auto/Class.Go To Destination.final.md
+    - ref/lang/auto/class-go-to-destination.md
     # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md
+    - ref/lang/auto/class-web-screen.md
 
-- ref/lang/auto/Class.List Box Widget.final.md:
-    - ref/lang/auto/Class.Combo Box Widget.final.md
+- ref/lang/auto/class-list-box-widget.md:
+    - ref/lang/auto/class-combo-box-widget.md
     - develop/ui/patterns/web/controls/dropdown.md
     - develop/ui/patterns/web/controls/dropdownselect.md
 
 # List Records Widget
-- ref/lang/auto/Class.List Records Widget.final.md:
+- ref/lang/auto/class-list-records-widget.md:
     # Table Records Widget
-    - ref/lang/auto/Class.Table Records Widget.final.md
+    - ref/lang/auto/class-table-records-widget.md
     # List
     - ref/data/data-types/list.md
 
 # Placeholder Widget
-- ref/lang/auto/Class.Placeholder Widget.final.md:
+- ref/lang/auto/class-placeholder-widget.md:
     # Design the Layout of Screens
     - develop/ui/look-feel/design-screens-layout.md
     # Placeholders
     - develop/ui/look-feel/themes.md#placeholders
     # Web Block
-    - ref/lang/auto/Class.Web Block.final.md
+    - ref/lang/auto/class-web-block.md
 
 # Radio Button Widget
-- ref/lang/auto/Class.Radio Button Widget.final.md:
+- ref/lang/auto/class-radio-button-widget.md:
     # Pick Only One Option in a Group of Choices
     - develop/ui/inputs/button-group.md
       
 # Row Widget
-- ref/lang/auto/Class.Row Widget.final.md:
+- ref/lang/auto/class-row-widget.md:
     # Editable Table Widget
-    - ref/lang/auto/ServiceStudio.Plugin.Widgets.EditableTable.final.md
+    - ref/lang/auto/servicestudio-plugin-widgets-editabletable.md
     # Edit Record Widget
-    - ref/lang/auto/Class.Edit Record Widget.final.md
+    - ref/lang/auto/class-edit-record-widget.md
     # Show Record Widget
-    - ref/lang/auto/Class.Show Record Widget.final.md
+    - ref/lang/auto/class-show-record-widget.md
     # Table Records Widget
-    - ref/lang/auto/Class.Table Records Widget.final.md
+    - ref/lang/auto/class-table-records-widget.md
     # Table Widget
-    - ref/lang/auto/Class.Table Widget.final.md
+    - ref/lang/auto/class-table-widget.md
       
 # Show Record Widget
-- ref/lang/auto/Class.Show Record Widget.final.md:
+- ref/lang/auto/class-show-record-widget.md:
     # Aggregate
-    - ref/lang/auto/Class.Aggregate.final.md
+    - ref/lang/auto/class-aggregate.md
     # SQL
-    - ref/lang/auto/Class.SQL.final.md
+    - ref/lang/auto/class-sql.md
       
 # Table Records Widget
-- ref/lang/auto/Class.Table Records Widget.final.md:
+- ref/lang/auto/class-table-records-widget.md:
     # List
     - ref/data/data-types/list.md
       
 # Upload Widget
-- ref/lang/auto/Class.Upload Widget.final.md:
+- ref/lang/auto/class-upload-widget.md:
     # Upload Files
     - develop/ui/inputs/upload.md
       
 # Web Block Widget
-- ref/lang/auto/Class.Web Block Widget.final.md:
+- ref/lang/auto/class-web-block-widget.md:
     # Web Block
-    - ref/lang/auto/Class.Web Block.final.md 
+    - ref/lang/auto/class-web-block.md 
   
 # Designing the Layout
 #   Image
-- ref/lang/auto/Class.Image.final.md:
+- ref/lang/auto/class-image.md:
     #Localized Image
-    - ref/lang/auto/Class.Localized Image.final.md
+    - ref/lang/auto/class-localized-image.md
     
 # Localized Image
-- ref/lang/auto/Class.Localized Image.final.md:
+- ref/lang/auto/class-localized-image.md:
     # Multilingual Web Applications
     - develop/ui/multilingual/multilingual-web.md
     
 # Theme
-- ref/lang/auto/Class.Theme.final.md:
+- ref/lang/auto/class-theme.md:
     # Themes
     - develop/ui/look-feel/themes.md
     
 # UI Flow
-- ref/lang/auto/Class.UI Flow.final.md:
+- ref/lang/auto/class-ui-flow.md:
     # UI Flow
     - develop/ui/navigation/ui-flow.md
     
 # Navigating in the Application
 #   Comment
-- ref/lang/auto/Class.Comment.final.md:
+- ref/lang/auto/class-comment.md:
     # UI Flow
     - develop/ui/navigation/ui-flow.md
     
 # Email
-- ref/lang/auto/Class.Email.final.md:
+- ref/lang/auto/class-email.md:
     # Send an Email From a Web Application
     - one-way: develop/logic/emails-reactive/intro.md
     # Configure OutSystems to Send Emails
@@ -349,37 +349,37 @@
     # UI Flow
     - develop/ui/navigation/ui-flow.md
     # Send Email
-    - ref/lang/auto/Class.Send Email.final.md
+    - ref/lang/auto/class-send-email.md
     # Email
-    - ref/lang/auto/builtinfunction.Email.final.md
+    - ref/lang/auto/builtinfunction-email.md
   
 #Entry
-- ref/lang/auto/Class.Entry.final.md:
+- ref/lang/auto/class-entry.md:
     # UI Flow
     - develop/ui/navigation/ui-flow.md
     # External Site
-    - ref/lang/auto/Class.External Site.final.md
+    - ref/lang/auto/class-external-site.md
     # Go To Destination
-    - ref/lang/auto/Class.Go To Destination.final.md
+    - ref/lang/auto/class-go-to-destination.md
     # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md
+    - ref/lang/auto/class-web-screen.md
     
 # External Site
-- ref/lang/auto/Class.External Site.final.md:
+- ref/lang/auto/class-external-site.md:
     # UI Flow
     - develop/ui/navigation/ui-flow.md
     
 # Go To Destination
-- ref/lang/auto/Class.Go To Destination.final.md:
+- ref/lang/auto/class-go-to-destination.md:
     # UI Flow
     - develop/ui/navigation/ui-flow.md
     # External Site
-    - ref/lang/auto/Class.External Site.final.md
+    - ref/lang/auto/class-external-site.md
     # Web Screen
-    - ref/lang/auto/Class.Web Screen.final.md
+    - ref/lang/auto/class-web-screen.md
     
 #Web Block
-- ref/lang/auto/Class.Web Block.final.md:
+- ref/lang/auto/class-web-block.md:
     # Blocks in Themes
     - develop/ui/look-feel/themes.md#blocks
     # UI Flow
@@ -389,7 +389,7 @@
     - develop/ui/reuse/block-create-reuse.md
     
 # Web Screen
-- ref/lang/auto/Class.Web Screen.final.md:
+- ref/lang/auto/class-web-screen.md:
     # UI Flow
     - develop/ui/navigation/ui-flow.md
     # Navigate to Another Screen
@@ -397,7 +397,7 @@
 
 # ------- Web System Events -------
 # On Session Start
-- ref/lang/auto/Class.On Session Start.final.md:
+- ref/lang/auto/class-on-session-start.md:
     # Sessions in Web Applications
     - develop/data/session.md
 
@@ -406,233 +406,233 @@
 
 # Adding Data and Logic
 # Aggregate
-- ref/lang/auto/Class.Aggregate.final.md:
+- ref/lang/auto/class-aggregate.md:
     # Fetch and Display Data from the Database
     - develop/data/query/fetch-display.md
     
 # Client Action
-- ref/lang/auto/Class.Client Action.final.md:
+- ref/lang/auto/class-client-action.md:
     # Client Actions
     - develop/logic/actions.md#client-actions
     
 # Data Action
-- ref/lang/auto/Class.Data Action.final.md:
+- ref/lang/auto/class-data-action.md:
     # Data Actions
     - develop/logic/actions.md#data-actions
     # Aggregate
-    - ref/lang/auto/Class.Aggregate.final.md
+    - ref/lang/auto/class-aggregate.md
     # SQL
-    - ref/lang/auto/Class.SQL.final.md
+    - ref/lang/auto/class-sql.md
     
 # Script
-- ref/lang/auto/Class.Script.final.md:
+- ref/lang/auto/class-script.md:
     # Use JavaScript Code from an External Library
     - extensibility-and-integration/javascript/mobile/use-external-lib.md
 
 # Designing Screens
 #   Block Widget
-- ref/lang/auto/Class.Block Widget.final.md:
+- ref/lang/auto/class-block-widget.md:
     # Block
-    - ref/lang/auto/Class.Block.final.md     
+    - ref/lang/auto/class-block.md     
     
 # Button            
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-button.md:
     # Link
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-link.md
     # Client Action
-    - ref/lang/auto/Class.Client Action.final.md
+    - ref/lang/auto/class-client-action.md
     # Screen
-    - ref/lang/auto/Class.Screen.final.md
+    - ref/lang/auto/class-screen.md
     # External Site
-    - ref/lang/auto/Class.External Site.final.md
+    - ref/lang/auto/class-external-site.md
 
 # ButtonGroup
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-buttongroup.md:
     # Pick Only One Option in a Group of Choices
     - develop/ui/inputs/button-group.md
     # Button            
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-button.md
     # Switch
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md
 
 # ButtonGroupItem
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroupItem.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-buttongroupitem.md:
     # ButtonGroup
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-buttongroup.md
     # Button Group Pattern
     - develop/ui/patterns/web/controls/buttongroup.md
 # Checkbox
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-checkbox.md:
     # Switch
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md
     
 # Container
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Container.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-container.md:
     # AdvancedHtml
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.AdvancedHtml.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-advancedhtml.md
 
 # Dropdown
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-dropdown.md:
     # Choose One Value from a List
     - develop/ui/inputs/dropdown-combo.md
 
 # Expression
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-expression.md:
     # Built-in Functions
-    - ref/lang/auto/builtinfunctions.final.md
+    - ref/lang/auto/builtinfunctions.md
     # Expressions
     - ref/logic/expressions/intro.md
     # Invalid Expression Error
     - ref/errors-and-warnings/errors/invalid-expression-error.md
 
 # Form
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Form.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-form.md:
     # Use a Form to Enter Data
     - develop/ui/forms/form-use.md
     # Validate Form Inputs
     - develop/ui/forms/form-validate.md
     # Button            
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Button.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-button.md
     # ButtonGroup
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ButtonGroup.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-buttongroup.md
     # Checkbox
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-checkbox.md
     # Dropdown
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-dropdown.md
     # Input
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-input.md
     # Label
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Label.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-label.md
     # Link
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-link.md
     # Switch
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md
     # TextArea
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-textarea.md
     # Text
-    - ref/lang/auto/Class.Text Widget.final.md
+    - ref/lang/auto/class-text-widget.md
     # Upload
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-upload.md
 
 # Icon
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Icon.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-icon.md:
     # Use Icons
     - develop/ui/image/use-icons.md
       
 # Image
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Image.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-image.md:
     # Display an Image
     - develop/ui/image/display-image.md
     # Use Resources
     - develop/data/resources.md
     # Image
-    - ref/lang/auto/Class.Image.final.md
+    - ref/lang/auto/class-image.md
     # Localized Image
-    - ref/lang/auto/Class.Localized Image.final.md
+    - ref/lang/auto/class-localized-image.md
         
 # Label
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Label.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-label.md:
     # Checkbox
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Checkbox.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-checkbox.md
     # Dropdown
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-dropdown.md
     # Input
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Input.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-input.md
     # Switch
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md
     # TextArea
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-textarea.md
     # Upload
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-upload.md
       
 # Link
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Link.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-link.md:
     # Navigate to Another Screen
     - develop/ui/navigation/navigate-to-detail-screen.md
     # Client Action
-    - ref/lang/auto/Class.Client Action.final.md
+    - ref/lang/auto/class-client-action.md
     # Screen
-    - ref/lang/auto/Class.Screen.final.md
+    - ref/lang/auto/class-screen.md
     # External Site
-    - ref/lang/auto/Class.External Site.final.md
+    - ref/lang/auto/class-external-site.md
       
 # List
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-list.md:
     # Fetch and Display Data from the Database
     - develop/data/query/fetch-display.md
       
 # List Item Action
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ListItemAction.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-listitemaction.md:
     # List Item
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ListItem.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-listitem.md
       
 # List Item
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.ListItem.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-listitem.md:
     # List
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.List.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-list.md
 
 # Placeholder
-- ref/lang/auto/Class.Placeholder Widget.final.md:
+- ref/lang/auto/class-placeholder-widget.md:
     # Block
-    - ref/lang/auto/Class.Block.final.md
+    - ref/lang/auto/class-block.md
 
 # Popover Menu
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popover.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-popover.md:
     # Dropdown
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Dropdown.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-dropdown.md
       
 #Popup
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popup.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-popup.md:
     # Create and Use a Popup
     - develop/ui/inputs/popup.md
     # Popover Menu
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Popover.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-popover.md
 
 # Radio Group
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioGroup.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-radiogroup.md:
     # Create and Use a Popup
     - develop/ui/inputs/button-group.md
     # Radio Button
-    - ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioButton.final.md
+    - ref/lang/auto/servicestudio-plugin-nrwidgets-radiobutton.md
 
 # Radio Button
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.RadioButton.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-radiobutton.md:
     # Create and Use a Popup
     - develop/ui/inputs/button-group.md
 
       
 # Switch
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Switch.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-switch.md:
     # Switch or Toggle a Boolean Value
     - develop/ui/inputs/switch-checkbox.md
       
 # TextArea
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TextArea.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-textarea.md:
     # Text
-    - ref/lang/auto/Class.Text Widget.final.md
+    - ref/lang/auto/class-text-widget.md
 
 # Table Widget
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.TableRecords.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-tablerecords.md:
     # Table - intro
     - develop/ui/table/intro.md
     # Table pagination and sorting
     - develop/ui/table/pagination-sorting.md
       
 # Upload
-- ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Upload.final.md:
+- ref/lang/auto/servicestudio-plugin-nrwidgets-upload.md:
     # Upload Files
     - develop/ui/inputs/upload.md
     
 # Mobile Theme
-- ref/lang/auto/Class.Mobile Theme.final.md:
+- ref/lang/auto/class-mobile-theme.md:
     # Themes
     - develop/ui/look-feel/themes.md
     
 # Navigating in the Application
 #   Block
-- ref/lang/auto/Class.Block.final.md:
+- ref/lang/auto/class-block.md:
     # Event
-    - ref/lang/auto/Class.Event.final.md
+    - ref/lang/auto/class-event.md
     # UI Flow
     - develop/ui/navigation/ui-flow.md
     # Reuse UI
@@ -644,23 +644,23 @@
     - one-way: develop/logic/screen-block-lifecycle-events.md
 
 # Client Variable
-- ref/lang/auto/Class.Client Variable.final.md:
+- ref/lang/auto/class-client-variable.md:
     # Session Variables
-    - ref/lang/auto/Class.Session Variable.final.md
+    - ref/lang/auto/class-session-variable.md
 
 # Session Variable
-- ref/lang/auto/Class.Session Variable.final.md:
+- ref/lang/auto/class-session-variable.md:
     # Sessions in Web Applications
     - develop/data/session.md
 
 # Event
-- ref/lang/auto/Class.Event.final.md:
+- ref/lang/auto/class-event.md:
     # Screen and Block Lifecycle Events
     - develop/logic/screen-block-lifecycle-events.md
     - develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md
     
 # Screen
-- ref/lang/auto/Class.Screen.final.md:
+- ref/lang/auto/class-screen.md:
     # UI Flow
     - develop/ui/navigation/ui-flow.md
     # Navigate to Another Screen
@@ -670,41 +670,41 @@
 
 # -------- Logic ---------
 # Built-in Functions
-- ref/lang/auto/builtinfunctions.final.md:
+- ref/lang/auto/builtinfunctions.md:
     # Expressions
     - ref/logic/expressions/intro.md
 
 #   Data Conversion
-- ref/lang/auto/builtinfunction.Data Conversion.final.md:
+- ref/lang/auto/builtinfunction-data-conversion.md:
     # Available Data Types
     - ref/data/data-types/available-data-types.md#explicit-conversion-functions
     # Expressions
     - ref/logic/expressions/intro.md
 
 #   Date and Time
-- ref/lang/auto/builtinfunction.Date and Time.final.md:
+- ref/lang/auto/builtinfunction-date-and-time.md:
     # Available Data Types
     - ref/data/data-types/available-data-types.md
     # Expressions
     - ref/logic/expressions/intro.md
 
 #   Email
-- ref/lang/auto/builtinfunction.Email.final.md:
+- ref/lang/auto/builtinfunction-email.md:
     #Send an Email From a Web Application
     - one-way: develop/logic/emails-reactive/intro.md
 
 #   Math
-- ref/lang/auto/builtinfunction.Math.final.md:
+- ref/lang/auto/builtinfunction-math.md:
     # Available Data Types
     - ref/data/data-types/available-data-types.md
 
 #   Numeric
-- ref/lang/auto/builtinfunction.Numeric.final.md:
+- ref/lang/auto/builtinfunction-numeric.md:
     # Available Data Types
     - ref/data/data-types/available-data-types.md
 
 #   Roles
-- ref/lang/auto/builtinfunction.Roles.final.md:
+- ref/lang/auto/builtinfunction-roles.md:
     #Validate End-User Permissions in the Application
     - develop/security/user-roles/validate-permissions.md
     #Create and User Roles-Use the Role in your Application’s Logic-Role Functions 
@@ -725,17 +725,17 @@
 - ref/logic/expressions/operands.md:
     # Available Data Types
     - ref/data/data-types/available-data-types.md
-    - ref/lang/auto/builtinfunctions.final.md
+    - ref/lang/auto/builtinfunctions.md
 
 #     Client Action
--  ref/lang/auto/Class.Client Action.final.md:
-    - ref/lang/auto/Class.Run Client Action.final.md
+-  ref/lang/auto/class-client-action.md:
+    - ref/lang/auto/class-run-client-action.md
 
 #     Server Action
--  ref/lang/auto/Class.Server Action.final.md:
+-  ref/lang/auto/class-server-action.md:
     - develop/logic/actions.md#server-actions
     - develop/logic/action-web.md#server-actions
-    - ref/lang/auto/Class.Run Server Action.final.md
+    - ref/lang/auto/class-run-server-action.md
     - develop/reuse-and-refactor/encapsulate-logic.md
     - external:
         - "A course about Logic in Training":
@@ -743,24 +743,24 @@
 
 
 #     Role
--  ref/lang/auto/Class.Role.final.md:
+-  ref/lang/auto/class-role.md:
     - develop/security/user-roles/intro.md
 
 # Run Server Action
-- ref/lang/auto/Class.Run Server Action.final.md:
-    - ref/lang/auto/Class.Run Client Action.final.md
+- ref/lang/auto/class-run-server-action.md:
+    - ref/lang/auto/class-run-client-action.md
     - develop/reuse-and-refactor/encapsulate-logic.md
 
 #     User Exception
--  ref/lang/auto/Class.User Exception.final.md:
+-  ref/lang/auto/class-user-exception.md:
     - develop/logic/exceptions/intro.md#user-exception
 
 #     Role Exception
--  ref/lang/auto/Class.Role Exception.final.md:
+-  ref/lang/auto/class-role-exception.md:
     - develop/logic/exceptions/intro.md#security-exception
 
 #     Aggregate
--  ref/lang/auto/Class.Aggregate.final.md:
+-  ref/lang/auto/class-aggregate.md:
     - develop/data/query/filter-results.md
     - develop/data/query/sort-aggregate.md
     - develop/data/query/group-calculate.md
@@ -769,68 +769,68 @@
     - develop/data/query/distinct.md
 
 #     JavaScript
--  ref/lang/auto/Class.JavaScript.final.md:
+-  ref/lang/auto/class-javascript.md:
     - extensibility-and-integration/javascript/mobile/intro.md
 
 #     JSON Deserialize
--  ref/lang/auto/Class.JSON Deserialize.final.md:
-    - ref/lang/auto/Class.JSON Serialize.final.md
+-  ref/lang/auto/class-json-deserialize.md:
+    - ref/lang/auto/class-json-serialize.md
 
 #     Destination
--  ref/lang/auto/Class.Destination.final.md:
-    - ref/lang/auto/Class.Go To Destination.final.md
+-  ref/lang/auto/class-destination.md:
+    - ref/lang/auto/class-go-to-destination.md
 
 #     If
--  ref/lang/auto/Class.If.final.md:
-    -  ref/lang/auto/Class.Switch.final.md
+-  ref/lang/auto/class-if.md:
+    -  ref/lang/auto/class-switch.md
 
 #     For Each
--  ref/lang/auto/Class.For Each.final.md:
+-  ref/lang/auto/class-for-each.md:
     - develop/logic/list-iterate.md
 
 #     Exception Handler
--  ref/lang/auto/Class.Exception Handler.final.md:
+-  ref/lang/auto/class-exception-handler.md:
     - develop/logic/exceptions/intro.md
-    - ref/lang/auto/Class.User Exception.final.md
-    - ref/lang/auto/Class.Role Exception.final.md
+    - ref/lang/auto/class-user-exception.md
+    - ref/lang/auto/class-role-exception.md
 
 #     Raise Exception
--  ref/lang/auto/Class.Raise Exception.final.md:
+-  ref/lang/auto/class-raise-exception.md:
     - develop/logic/exceptions/intro.md
-    - ref/lang/auto/Class.User Exception.final.md
-    - ref/lang/auto/Class.Role Exception.final.md
+    - ref/lang/auto/class-user-exception.md
+    - ref/lang/auto/class-role-exception.md
 
 #     Trigger Event
--  ref/lang/auto/Class.Trigger Event.final.md:
+-  ref/lang/auto/class-trigger-event.md:
     - develop/ui/reuse/propagate-changes-from-a-reusable-screen-element.md
 
 #     SQL
--  ref/lang/auto/Class.SQL.final.md:
+-  ref/lang/auto/class-sql.md:
     - develop/data/query/sql.md
 
 #     Excel To Record List
--  ref/lang/auto/Class.Excel To Record List.final.md:
-    - ref/lang/auto/Class.Record List To Excel.final.md
+-  ref/lang/auto/class-excel-to-record-list.md:
+    - ref/lang/auto/class-record-list-to-excel.md
     - one-way: getting-started/create-reactive-web.md
     - one-way: develop/data/excel-bootstrap.md
     - one-way: develop/ui/inputs/upload.md
 
 #     Ajax Refresh
--  ref/lang/auto/Class.Ajax Refresh.final.md:
+-  ref/lang/auto/class-ajax-refresh.md:
     - develop/logic/screen-partial-refresh.md
 
 #     Attach File
--  ref/lang/auto/Class.Attach File.final.md:
+-  ref/lang/auto/class-attach-file.md:
     - develop/logic/emails.md
-    - ref/lang/auto/Class.Email.final.md
+    - ref/lang/auto/class-email.md
 
 #     Send Email
--  ref/lang/auto/Class.Send Email.final.md:
+-  ref/lang/auto/class-send-email.md:
     - one-way: develop/logic/emails-reactive/intro.md
 
 #  Invalid Link Error
 -  ref/errors-and-warnings/errors/invalid-link-error.md:
-    - one-way: ref/lang/auto/Class.Link Widget.final.md
+    - one-way: ref/lang/auto/class-link-widget.md
     
 # Configuration Tool
 
@@ -929,7 +929,7 @@
 #     Use Data/Data Modeling/Entity Relationships
 
 -  develop/data/modeling/relationship/delete-rules.md:
-    - one-way: ref/lang/auto/Class.Entity Attribute.final.md
+    - one-way: ref/lang/auto/class-entity-attribute.md
 
 #     Security
 -  develop/security/restrict-access-to-an-internal-network.md:
@@ -1737,73 +1737,73 @@
 
 # Consumed REST
 
-- ref/lang/auto/ServiceStudio.Plugin.REST.RestClient.final.md:
+- ref/lang/auto/servicestudio-plugin-rest-restclient.md:
     - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
 
-- ref/lang/auto/ServiceStudio.Plugin.REST.RestAction.final.md:
+- ref/lang/auto/servicestudio-plugin-rest-restaction.md:
     - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
 
-- ref/lang/auto/ServiceStudio.Plugin.REST.RestActionInput.final.md:
+- ref/lang/auto/servicestudio-plugin-rest-restactioninput.md:
     - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
     - one-way: extensibility-and-integration/log-levels-reference.md
 
-- ref/lang/auto/ServiceStudio.Plugin.REST.RestActionOutput.final.md:
+- ref/lang/auto/servicestudio-plugin-rest-restactionoutput.md:
     - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
 
-- ref/lang/auto/ServiceStudio.Plugin.REST.RestStructure.final.md:
+- ref/lang/auto/servicestudio-plugin-rest-reststructure.md:
     - extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
     - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
 
-- ref/lang/auto/ServiceStudio.Plugin.REST.RestStructureAttribute.final.md:
+- ref/lang/auto/servicestudio-plugin-rest-reststructureattribute.md:
     - extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
     - one-way: extensibility-and-integration/rest/consume-rest-apis/consume-a-rest-api.md
 
-- ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlow.final.md:
+- ref/lang/auto/servicestudio-plugin-rest-restcallbackactionflow.md:
     - one-way: extensibility-and-integration/rest/consume-rest-apis/simple-customizations.md
     - one-way: extensibility-and-integration/rest/consume-rest-apis/advanced-customizations.md
-    - ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlowInput.final.md
-    - ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackActionFlowOutput.final.md
-    - ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackStructure.final.md
-    - ref/lang/auto/ServiceStudio.Plugin.REST.RestCallbackStructureAttribute.final.md
+    - ref/lang/auto/servicestudio-plugin-rest-restcallbackactionflowinput.md
+    - ref/lang/auto/servicestudio-plugin-rest-restcallbackactionflowoutput.md
+    - ref/lang/auto/servicestudio-plugin-rest-restcallbackstructure.md
+    - ref/lang/auto/servicestudio-plugin-rest-restcallbackstructureattribute.md
 
 # Exposed REST
 
-- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestService.final.md:
+- ref/lang/auto/servicestudio-plugin-restservice-restservice.md:
     - one-way: extensibility-and-integration/rest/expose-rest-apis/expose-a-rest-api.md
 
-- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAction.final.md:
+- ref/lang/auto/servicestudio-plugin-restservice-restserviceaction.md:
     - one-way: extensibility-and-integration/rest/expose-rest-apis/expose-a-rest-api.md
 
-- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceActionInput.final.md:
-    - one-way: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAction.final.md
+- ref/lang/auto/servicestudio-plugin-restservice-restserviceactioninput.md:
+    - one-way: ref/lang/auto/servicestudio-plugin-restservice-restserviceaction.md
 
-- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceActionOutput.final.md:
-    - one-way: ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAction.final.md
+- ref/lang/auto/servicestudio-plugin-restservice-restserviceactionoutput.md:
+    - one-way: ref/lang/auto/servicestudio-plugin-restservice-restserviceaction.md
 
-- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlow.final.md:
+- ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackactionflow.md:
     - one-way: extensibility-and-integration/rest/expose-rest-apis/preprocess-rest-api-requests.md
     - one-way: extensibility-and-integration/rest/expose-rest-apis/customize-rest-api-responses.md
-    - ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowInput.final.md
-    - ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackActionFlowOutput.final.md
-    - ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackStructure.final.md
-    - ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceCallbackStructureAttribute.final.md
+    - ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackactionflowinput.md
+    - ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackactionflowoutput.md
+    - ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackstructure.md
+    - ref/lang/auto/servicestudio-plugin-restservice-restservicecallbackstructureattribute.md
 
-- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlow.final.md:
+- ref/lang/auto/servicestudio-plugin-restservice-restserviceauthenticationflow.md:
     - one-way: extensibility-and-integration/rest/expose-rest-apis/add-basic-authentication-to-an-exposed-rest-api.md
     - one-way: extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md
 
-- ref/lang/auto/ServiceStudio.Plugin.RESTService.RestServiceAuthenticationFlowInput.final.md:
+- ref/lang/auto/servicestudio-plugin-restservice-restserviceauthenticationflowinput.md:
     - one-way: extensibility-and-integration/rest/expose-rest-apis/add-basic-authentication-to-an-exposed-rest-api.md
     - one-way: extensibility-and-integration/rest/expose-rest-apis/add-custom-authentication-to-an-exposed-rest-api.md
 
 # JSON
 
-- ref/lang/auto/Class.JSON Serialize.final.md:
+- ref/lang/auto/class-json-serialize.md:
     - external:
         - "Demo - Handling JSON data":
             https://www.outsystems.com/learn/lesson/1881/handling-json-data/
 
-- ref/lang/auto/Class.JSON Deserialize.final.md:   
+- ref/lang/auto/class-json-deserialize.md:   
     - external:
         - "Demo - Handling JSON data":
             https://www.outsystems.com/learn/lesson/1881/handling-json-data/

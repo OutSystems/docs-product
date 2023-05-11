@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: ade87f50-8404-4392-88d0-e33397418fe9
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Extend your Traditional Web App using JavaScript
@@ -16,7 +17,7 @@ Applies only to Traditional Web Apps.
 
 You can add JavaScript code to Traditional Web Apps to make them more dynamic, adding custom behavior to pages executed on the user's browser while minimizing the number of calls to the server. You can use JavaScript code defined in your OutSystems app or in an external location.
 
-Tools like [Ajax Refresh](<../../../ref/lang/auto/Class.Ajax Refresh.final.md>) already allow you to refresh parts of your screen in an action flow without forcing a page reload. However, you may want to define some custom behavior using JavaScript in your app, or use an existing JavaScript library to improve the user experience.
+Tools like [Ajax Refresh](<../../../ref/lang/auto/class-ajax-refresh.md>) already allow you to refresh parts of your screen in an action flow without forcing a page reload. However, you may want to define some custom behavior using JavaScript in your app, or use an existing JavaScript library to improve the user experience.
 
 To run JavaScript code in your Traditional Web App do the following:
 

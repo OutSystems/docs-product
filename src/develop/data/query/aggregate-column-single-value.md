@@ -4,6 +4,7 @@ tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 65fc5101-2962-4239-a14a-f1a4f9d19fab
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Aggregate a Column into a Single Value

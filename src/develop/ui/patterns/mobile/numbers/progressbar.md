@@ -4,6 +4,7 @@ summary: Progress Bar displays the progress of a task by incrementing values in 
 locale: en-us
 guid: 024aef71-32e0-490d-8bb9-3e2a45845b91
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Progress Bar
@@ -40,7 +41,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**.
     
     1. In the Toolbox, search for the widget again.
 
@@ -48,7 +49,7 @@ You can use the Progress Bar to display percentage values by incrementing values
 
     ![Drag widget to screen](<images/progressbar-dragwidget-ss.png>)
 
-1. Add the text you want to appear as the Progress Bar title. 
+1. Add the text you want to appear as the Progress Bar title.
 
     In this example, we add `Ongoing tasks`.
 

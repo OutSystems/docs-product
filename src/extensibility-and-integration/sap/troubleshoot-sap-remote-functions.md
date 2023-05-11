@@ -3,6 +3,7 @@ tags: support-Integrations_Extensions
 locale: en-us
 guid: 5d7d9c99-085a-4e8e-9bf3-8f73c6da6b16
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Troubleshoot SAP Remote Functions

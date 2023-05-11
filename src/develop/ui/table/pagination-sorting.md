@@ -4,6 +4,7 @@ tags: runtime-reactiveweb;
 locale: en-us
 guid: c85c1a3d-327a-49e1-af6d-bd99a67b4ebc
 app_type: reactive web apps
+platform-version: o11
 ---
 
 # Table pagination and sorting

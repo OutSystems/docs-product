@@ -2,6 +2,7 @@
 locale: en-us
 guid: ef146002-08c3-4bb8-8602-0a48cfa16b7d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Action Parameters Editor

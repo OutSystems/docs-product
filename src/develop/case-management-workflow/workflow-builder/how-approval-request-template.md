@@ -4,6 +4,7 @@ summary: Learn how to create an Approval Request app using a Workflow Builder te
 guid: ee2f7324-b677-427b-9e70-c60c4b1e9e9b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Using the Approval Request template

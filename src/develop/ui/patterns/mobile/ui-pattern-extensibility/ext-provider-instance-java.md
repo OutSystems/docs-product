@@ -4,6 +4,7 @@ summary:
 locale: en-us
 guid: CD21A754-068E-4DA7-9B74-A5122B1AEC7D
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Provider instance and JavaScript

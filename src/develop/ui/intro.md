@@ -4,6 +4,7 @@ tags: support-Front_end_Development-overview;OutSystems_UI; OutSystems_Style_Gui
 locale: en-us
 guid: 5fa4c8b3-0ab5-4ac3-8696-40b0a55d340d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Design UI

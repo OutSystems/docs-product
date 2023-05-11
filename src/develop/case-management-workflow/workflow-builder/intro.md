@@ -4,6 +4,7 @@ summary: Learn about Workflow Builder.
 guid: a0f60d57-4ae7-4c6b-a6db-1f180513b9bd
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create workflow apps with Workflow Builder
@@ -14,7 +15,7 @@ All users need to have their development environment registered in Workflow Buil
 
 Creating low-code Reactive Web Apps with Workflow Builder makes the app creation process simpler, faster, and more collaborative, where multidisciplinary teams work together reducing the time-to-business outcome.
 
-![Workflow Builder login page](images/wfb-login-page.png)
+![Workflow Builder login page](images/login-wfb.png)
 
 With Workflow Builder you can create apps that automate processes, improve efficiency, and get better outcomes on your daily work. Even if you have no previous experience developing apps.  
 

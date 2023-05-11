@@ -4,6 +4,7 @@ tags: runtime-mobile
 locale: en-us
 guid: 9440e4f9-b77c-44ab-9b9a-f5cc985fbfbb
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Read/Write Data with Conflict Detection

@@ -4,6 +4,7 @@ tags: support-Security; support-Security-featured
 locale: en-us
 guid: 68463867-fb0c-4e54-9fe5-d0e117dbf9bb
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Validate End User Permissions in the Application

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: f204ca02-f2d1-4783-bc88-90934bc968b9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use a Form to Group Input Widgets

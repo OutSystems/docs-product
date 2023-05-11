@@ -2,6 +2,7 @@
 locale: en-us
 guid: 5d2f3341-b79d-4c02-9546-73d6d0878567
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Connection Error

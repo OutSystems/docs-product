@@ -4,6 +4,7 @@ tags: support-Integrations_Extensions; support-monitoring; support-monitoring-ov
 locale: en-us
 guid: 70ae67ba-01d3-4434-aa0c-c4dd0a18a337
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # View the Environment Logs and Status
@@ -71,7 +72,7 @@ Timers
     It allows troubleshooting asynchronous logic that relies on Timers for its execution.
 
 Emails
-: This screen displays all emails sent, and if they were successfully delivered or are still pending. When developing your applications, it's also possible to choose if the content of the email is logged or not.
+:   This screen displays all emails sent, and if they were successfully delivered or are still pending. When developing your applications, it's also possible to choose if the content of the email is logged or not.
 
     It allows you to troubleshoot application logic and understand if emails are being correctly sent.
 
@@ -81,10 +82,12 @@ Processes
     It's also possible to see if a business process instance has executed successfully or with errors, and suspend or terminate it.
 
 Mobile Apps
-: This screen displays the list of mobile app packages requested per application, including the native platform for which the package was generated and the status.
+:   This screen displays the list of mobile app packages requested per application, including the native platform for which the package was generated and the status.
+
 
 Environment Health
 :   Displays the status of the [OutSystems services](#outsystems-services), including the services running on each front-end. It also displays the status of asynchronous tasks, such as processes, emails, and Timers. It provides an overview of the status of your environment.
+
 
 Security
 :   Displays the IP addresses that were [blocked by the Platform Server](../secure-the-applications/protection-against-brute-force-attacks.md) due to multiple failed login attempts. You can unblock these IP addresses.

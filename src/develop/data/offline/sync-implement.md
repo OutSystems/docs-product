@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: 8680eeb4-f6ec-4c12-ae1d-1b228ed5de5b
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Implementing Offline Sync

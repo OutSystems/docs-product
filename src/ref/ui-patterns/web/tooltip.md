@@ -4,6 +4,7 @@ summary: Advanced use cases for the Tooltip UI Pattern.
 locale: en-us
 guid: 421bf73a-44ad-44ee-ba61-b2d234472c54
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Tooltip Reference

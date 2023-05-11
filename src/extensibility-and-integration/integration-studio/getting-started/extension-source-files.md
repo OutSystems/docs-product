@@ -2,6 +2,7 @@
 locale: en-us
 guid: b45e7737-81b3-441d-9baf-641f310c262d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Extension Source Files

@@ -4,6 +4,7 @@ summary: The Animated Label animates a label when there is user input.
 locale: en-us
 guid: cada799f-c2fe-4d0a-98aa-309bf3a4fd16
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Animated Label
@@ -62,7 +63,7 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property**                   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IsInline (Boolean): Optional   | If False, the Animated Input is displayed in a white input box. If True, there is no white input box. This is the default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Property** | **Description** |
+|---|---|
+| IsInline (Boolean): Optional | If False, the Animated Input is displayed in a white input box. If True, there is no white input box. This is the default. |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

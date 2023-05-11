@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 21dbc0f4-e74a-47aa-91fb-c2acc5252916
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Query data from an external database

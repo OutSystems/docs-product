@@ -2,6 +2,7 @@
 locale: en-us
 guid: 426b3956-f51e-4d01-a743-33fcb462fce6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Verify Window

@@ -4,6 +4,7 @@ tags: runtime-mobileandreactiveweb; support-Security-overview
 locale: en-us
 guid: 74fffe9e-d6fa-4ea9-a8ae-aa7a34a37511
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure App Authentication
@@ -32,7 +33,9 @@ The following setting applies to both persistent and session authentication:
 
 * **Cache Time In Minutes** – Number of minutes the authentication information sent by the device is considered valid by the server without the need to fetch it from the database. After this time, the server validates the authentication tokens against the information stored in the database and supplies new authentication tokens. If set to 0, the authentication cache mechanism is disabled.
 
-* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web Apps, and Mobile Apps distributed as Progressive Web Apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they are signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you need to have HTTPS enabled in the environment.
+* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web Apps, and Mobile Apps distributed as Progressive Web Apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
+
+**Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/). 
 
 <div class="info" markdown="1">
 
@@ -116,6 +119,6 @@ When the end user logs out of an application, all sessions are terminated. This 
 
 <div class="info" markdown="1">
 
-If the application contains [elements with caching enabled](../../develop/data/caching.md) (using the Cache in Minutes property), the cached content might still be displayed for a small period of time, until the cache is invalidated. After that period, the authentication information must be fetched again from the database, as it's no longer valid.
+If the Cache Time In Minutes is not set to 0 and if the user logs out from the application, other sessions associated with the same user will be valid until that period of time has passed. After that period, the authentication information must be fetched again from the database and, as it is no longer valid, the remaining sessions will be invalidated as well.
 
 </div>

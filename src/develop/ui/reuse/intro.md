@@ -4,6 +4,7 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 locale: en-us
 guid: 3c67d197-93c9-4620-8f3d-719e15405278
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Reuse UI

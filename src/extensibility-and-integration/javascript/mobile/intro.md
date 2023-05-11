@@ -3,6 +3,7 @@ tags: runtime-mobileandreactiveweb; article-page
 locale: en-us
 guid: 191c6d17-5089-4d2e-9848-19e81f69476a
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Extend Your Mobile and Reactive Apps Using JavaScript

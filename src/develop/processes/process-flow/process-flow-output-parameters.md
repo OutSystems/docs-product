@@ -3,6 +3,7 @@ summary: Use output parameters to your process activity to return information to
 locale: en-us
 guid: 88f8d860-47a8-4529-b137-e3d7e832b5b7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # About Output Parameters in a Process Flow
@@ -13,7 +14,7 @@ The process for which you are designing the process flow may also have output pa
 
 * **Process Flow**: you have privileges to **read** and **write** the process output parameters while manipulating them in the process flow.
 
-* **Execute Process**: in the case where you have an [Execute Process](<../../../ref/lang/auto/Class.Execute Process.final.md>) activity in the process flow, the output parameters of this process activity are those of the executed process for which you have **read-only** privileges.
+* **Execute Process**: in the case where you have an [Execute Process](<../../../ref/lang/auto/class-execute-process.md>) activity in the process flow, the output parameters of this process activity are those of the executed process for which you have **read-only** privileges.
 
 ## Output Parameters Default Value
 

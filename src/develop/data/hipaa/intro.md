@@ -4,6 +4,7 @@ tags: article-page
 locale: en-us
 guid: 259aca31-dc2a-4eb1-8d5c-e322cefe5e66
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 
@@ -48,7 +49,7 @@ EncryptEntityText
 :   Encrypts the text of unsearchable attributes using a KeyId and a salt (EntityId).
 
 DecryptEntityText
-:   Decrypts into plain text the cyphered text of unsearchable attributes using a KeyId and a salt (EntityId).
+:   Decrypts into text/plain the cyphered text of unsearchable attributes using a KeyId and a salt (EntityId).
 
 
 Check the following articles for detailed guides of the implementation of:

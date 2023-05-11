@@ -4,6 +4,7 @@ tags: support-Installation_Configuration; version-11
 locale: en-us
 guid: 5e138471-327c-410a-a2ea-104fdad2d68c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure a separate database for log data

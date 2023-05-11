@@ -3,6 +3,7 @@ summary: Using teams you can manage the permissions of several IT users working 
 locale: en-us
 guid: 4817e9c4-cab5-4d89-ba2a-b7bf0ba260b9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Set Up the Permissions in a Team

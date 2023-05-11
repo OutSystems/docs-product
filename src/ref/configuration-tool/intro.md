@@ -4,6 +4,7 @@ summary: Use Configuration Tool for configuring you Platform server for on-premi
 locale: en-us
 guid: 3ccedde9-7f7c-4d04-8992-703b00953c15
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configuration Tool

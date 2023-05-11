@@ -4,6 +4,7 @@ summary: Learn how to use AI Mentor Studio by following one of the tutorials in 
 locale: en-us
 guid: 115abc7a-0267-4497-868b-d3c09b1e92fa
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Getting started with AI Mentor Studio

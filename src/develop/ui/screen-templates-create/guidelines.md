@@ -3,6 +3,7 @@ summary: Follow these guidelines to create stable and useful Screen Templates, w
 locale: en-us
 guid: 9e509393-0c73-45c5-ba35-499c06c29a49
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Guidelines for creating Screen Templates

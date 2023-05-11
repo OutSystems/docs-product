@@ -3,6 +3,7 @@ summary: This guide presents the steps required to successfully upgrade Platform
 locale: en-us
 guid: 99c574cd-7d20-4b50-8059-34a22f27cda4
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Balanced Platform upgrade on highly loaded OutSystems farms

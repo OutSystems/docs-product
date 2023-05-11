@@ -4,6 +4,7 @@ summary: Use the Margin Container and easily add symmetrical padding around a co
 locale: en-us
 guid: 8099782f-c5ac-4a8f-a70a-fa9946d834a3
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Margin Container
@@ -52,6 +53,6 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Property | Description |
+|---|---|
 | ExtendedClass (Text): Optional | <p>Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.</p> <p>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul></p>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

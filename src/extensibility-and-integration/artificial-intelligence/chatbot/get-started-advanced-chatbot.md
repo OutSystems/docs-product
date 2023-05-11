@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: ff14d9bc-d70c-453d-a510-e6ee2e0874d9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create advanced logic for more AI functionalities

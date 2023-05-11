@@ -2,6 +2,7 @@
 locale: en-us
 guid: 27ff9512-9516-45cd-9722-feb4690e5caa
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Resources Tree

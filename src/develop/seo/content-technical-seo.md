@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: E0CB30E3-30B2-4593-AACF-97765EB80D45
 app_type: traditional web apps, reactive web apps
+platform-version: o11
 ---
 
 # Content and technical SEO

@@ -4,6 +4,7 @@ summary: Instructions on how to set up OutSystems on Microsoft Azure, from runni
 locale: en-us
 guid: 4a33c4a9-87b2-4ce0-9523-93c937f53fdd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Set Up OutSystems on Microsoft Azure

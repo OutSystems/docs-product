@@ -4,6 +4,7 @@ summary: The Notification UI Pattern is a contextual short message that provides
 locale: en-us
 guid: 90ae661d-b0d0-4001-b2b1-efe5c50bb056
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Notification
@@ -19,6 +20,18 @@ Applies to Mobile Apps and Reactive Web Apps only
 **This component is deprecated for versions of OutSystems UI lower than 2.8.3.** For more information on how to migrate old versions, see the [Patterns and Versions Overview](https://outsystemsui.outsystems.com/OutsystemsUiWebsite/MigrationOverview).
 
 To find out what version of OutSystems UI you are using, see [OutSystems UI version](../../intro.md#outsystems-ui-version).
+
+</div>
+
+<div class="info" markdown="1">
+
+**This component doesn't facilitate push notifications**. For more information about push notifcations, see the following articles:
+
+* [Firebase Cloud Messaging Plugin](../../../../../extensibility-and-integration/mobile-plugins/firebase/firebase-messaging.md)
+
+* [How to Use Push Notifications with OneSignal](https://success.outsystems.com/documentation/how_to_guides/integrations/how_to_use_push_notifications_with_onesignal/)
+
+* [How to Use Push Notifications with Pushwoosh](https://success.outsystems.com/documentation/how_to_guides/integrations/how_to_use_push_notifications_with_pushwoosh/)
 
 </div>
 
@@ -90,3 +103,8 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 |Initialized: Optional  | Event triggered when the Notification instance is ready. | 
 |OnToggle: Optional  | Triggered when the Notification is toggled.  | 
+
+
+
+
+

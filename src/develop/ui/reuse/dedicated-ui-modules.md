@@ -4,6 +4,7 @@ tags: support-application_development; support-Front_end_Development; runtime-re
 locale: en-us
 guid: 04f7cedb-d02b-42e9-b9f4-f7cbf2cb8506
 app_type: reactive web apps
+platform-version: o11
 ---
 
 # Maintain UI in dedicated modules

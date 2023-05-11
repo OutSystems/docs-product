@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 6f93f5d0-94ad-4ced-bd8c-ea8b7599ca05
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Operands
@@ -45,7 +46,7 @@ You can use functions as operands. The following are some examples:
 * In `Sqrt(9) + 3`, **Sqrt()** is one of the built-in functions. 
 * In `MyFunction(1000) * 100`, **MyFunction()** is a user-defined function. 
 
-See [Built-in Functions](<../../lang/auto/builtinfunctions.final.md>) for more information.
+See [Built-in Functions](<../../lang/auto/builtinfunctions.md>) for more information.
 
 ## Example
 

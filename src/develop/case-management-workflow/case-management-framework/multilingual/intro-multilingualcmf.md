@@ -4,6 +4,7 @@ summary: Conceptual introduction to multilingual Case Management framework.
 guid: 2e31ca9c-b4b9-4e3a-9ed3-81172a775fd4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Introduction to multilingual Case Management framework

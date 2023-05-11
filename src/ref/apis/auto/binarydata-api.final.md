@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 17494f81-67a9-4e24-833a-a4a7713e0255
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # BinaryData API

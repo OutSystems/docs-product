@@ -4,6 +4,7 @@ tags: runtime-mobile; support-Integrations_Extensions; support-Mobile_Apps
 locale: en-us
 guid: 2d86818a-afda-4680-9090-8966faa38be9
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Using Cordova Plugins

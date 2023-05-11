@@ -4,6 +4,7 @@ summary: Learn how to embed a native video player in your app.
 locale: en-us
 guid: 23431108-d3aa-4c10-9307-c8ad925dc9f1
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Video
@@ -19,9 +20,9 @@ You can use the Video UI pattern to embed a native video player into your applic
 ![](<images/video-image-2.png>)
 
 <div class="info" markdown="1">
- 
-Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How to Add Video to Your Applications](https://success.outsystems.com/Documentation/Development_FAQs/How_to_Add_Video_to_Your_Applications) article. 
- 
+
+Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How to Add Video to Your Applications](https://success.outsystems.com/documentation/how_to_guides/front_end/how_to_add_video_to_your_applications/) article. 
+
 </div>
 
 **How to use the Video UI Pattern**
@@ -76,18 +77,18 @@ Note: If you want to stream videos from YouTube, Vimeo, or others, see the [How 
 1. On the Video **Properties** tab, you can also define (optional) properties, such as the height and width of the video and the audio settings.
 
 1. After following these steps and publishing the module, you can test the pattern in your app. 
-       
+
 ## Properties
 
-| **Property**                   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SourceFile (Text): Mandatory   | The video file URL or the runtime path of the resource video file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Width (Text): Optional         | Width (in pixel or percentage) of the video.<br/><br/>Examples<br/><br/><ul><li>Blank - The video is 100% wide. This is the default value.</li><li>150 - The video is 150px wide.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Height (Text): Optional        | Height (in pixel or percentage) of the video.<br/><br/>Examples<br/><br/><ul><li>Blank - The video is 100% high. This is the default value.</li><li>150 - The video is 150px high.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Autoplay (Boolean): Optional   | If True, the video starts playing as soon as the page is rendered. If False, the video doesn't play until the Play video control is clicked. This is the default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Loop (Boolean): Optional       | If True, the video restarts playing as soon as it ends. If False, it does not replay. This is the default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Muted (Boolean): Optional      | If True, the audio of the video is disabled. If False, the audio is enabled. This is the default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Controls (Boolean): Optional   | If False, the video controls are disabled. If True, the video controls are enabled. This is the default.<br/>**Note** In the case of mobile apps, the controls are always enabled.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Property** | **Description** |
+|---|---|
+| SourceFile (Text): Mandatory | The video file URL or the runtime path of the resource video file. |
+| Width (Text): Optional | Width (in pixel or percentage) of the video.<br/><br/>Examples<br/><br/><ul><li>Blank - The video is 100% wide. This is the default value.</li><li>150 - The video is 150px wide.</li></ul> |
+| Height (Text): Optional | Height (in pixel or percentage) of the video.<br/><br/>Examples<br/><br/><ul><li>Blank - The video is 100% high. This is the default value.</li><li>150 - The video is 150px high.</li></ul> |
+| Autoplay (Boolean): Optional | If True, the video starts playing as soon as the page is rendered. If False, the video doesn't play until the Play video control is clicked. This is the default. |
+| Loop (Boolean): Optional | If True, the video restarts playing as soon as it ends. If False, it does not replay. This is the default. |
+| Muted (Boolean): Optional | If True, the audio of the video is disabled. If False, the audio is enabled. This is the default. |
+| Controls (Boolean): Optional | If False, the video controls are disabled. If True, the video controls are enabled. This is the default.<br/>**Note** In the case of mobile apps, the controls are always enabled. |
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Notes

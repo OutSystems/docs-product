@@ -4,6 +4,7 @@ tags: article-page; support-application_development; support-Application_Lifecyc
 locale: en-us
 guid: FDBC3311-C94C-4C9C-8CC1-E7F26FC76F02
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # AI Mentor Studio API authentication
@@ -34,7 +35,7 @@ When using AI Mentor Studio REST API, take the following security considerations
 
 ## Prerequisites
 
-To be able to use the AI Mentor Studio API, you need to have [full control permissions assigned as a default role](../../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md#manage-architecture-dashboard-api).
+To use the AI Mentor Studio API, you must have [full control permissions assigned as a default role](../../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md#manage-architecture-dashboard-api).
 
 ## How to obtain a key { #obtain-key }
 

@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: 4bdbcec9-3e7a-4701-a2e8-4bd6166e7bb0
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Sync Framework Reference

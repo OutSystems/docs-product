@@ -3,6 +3,7 @@ summary:  Create Themes according to this Theme structure to attain proper CSS o
 locale: en-us
 guid: f13dda82-0e9d-4622-80fd-ba087153904b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Theme structure guidelines

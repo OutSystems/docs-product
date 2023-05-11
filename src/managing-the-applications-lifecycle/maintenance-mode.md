@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps
 locale: en-us
 guid: 373a27f2-990b-4257-bc8d-4d6d33c41ff0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Environment in maintenance mode

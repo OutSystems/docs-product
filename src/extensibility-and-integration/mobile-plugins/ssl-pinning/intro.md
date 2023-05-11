@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: fec62d79-033b-4a5a-a7e1-806b0a591daf
 app_type: mobile apps
+platform-version: o11
 ---
 
 # SSL Pinning Plugin

@@ -4,6 +4,7 @@ tags: support-Installation_Configuration; support-Installation_Configuration-ove
 locale: en-us
 guid: dee8f358-e76a-4277-af9f-c18bd1a05616
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Solution Pack Tool Command Line Reference - OSPTool

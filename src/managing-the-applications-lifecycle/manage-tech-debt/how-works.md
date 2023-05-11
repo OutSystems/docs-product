@@ -4,6 +4,7 @@ summary: Learn how AI Mentor Studio works and how your infrastructure communicat
 locale: en-us
 guid: f6f9f871-5f0c-4991-a47e-91fa20033627
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How does AI Mentor Studio work
@@ -22,10 +23,11 @@ AI Mentor Studio SaaS
 AI Mentor Studio LifeTime Plugin
 :   A LifeTime plugin that's published in a platform installation (on-premises or cloud) with **environment probes** to collect data and communicate with the AI Mentor Studio SaaS.
 
-![AI Mentor Studio diagram](images/ai-mentor-studio-lifetime-plugin-diag.png)
+![AI Mentor Studio diagram](images/ai-mentor-studio-communication-diag.png)
 
 ## Communication
 
+AI Mentor Studio needs to be able to connect with the customers' infrastructures to ensure the correct login of users.
 Communications between the AI Mentor Studio plugin and the AI Mentor Studio SaaS are always initiated by the plugin. This reduces connectivity requirements on your side since all that needs to be ensured is connectivity from the Plugin in the LifeTime environment to the AI Mentor Studio SaaS endpoint.
 
 The plugin can use a forward proxy to connect to the AI Mentor Studio SaaS endpoint.
@@ -686,3 +688,4 @@ The following tables map the AI Mentor Studio permissions to the LifeTime permis
   </tr>
   </tbody>
 </table>
+

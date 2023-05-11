@@ -4,6 +4,7 @@ summary: Learn how to define a case state machine to control what case status tr
 guid: 9afd417a-9688-49f3-a968-06dd8c96bfd9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Defining allowed case status transitions with a case state machine

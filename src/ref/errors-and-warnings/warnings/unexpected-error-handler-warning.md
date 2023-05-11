@@ -2,6 +2,7 @@
 locale: en-us
 guid: c8621cd0-b3e5-4521-b4c4-c461639c4f37
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Unexpected Error Handler Warning

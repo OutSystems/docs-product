@@ -4,6 +4,7 @@ summary: Advanced use cases for the Chat Message UI Pattern.
 locale: en-us
 guid: 6a62f636-ac37-4f02-8dde-b125bbb18919
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Chat Message Reference

@@ -4,6 +4,7 @@ summary:
 locale: en-us
 guid: 1aecc52f-daef-42a3-ab1b-12e31f086dcb
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 

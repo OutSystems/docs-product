@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: b1d6acd4-90d9-40e2-b650-e954003abd71
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Expression Error
@@ -107,17 +108,17 @@ You are invoking a function with no argument for a mandatory parameter.
 
 **Recommended action**
 
-Check the [Built-in function](../../../ref/lang/auto/builtinfunctions.final.md) or the User function definition to validate which [input parameters](../../../ref/lang/auto/Class.Input%20Parameter.final.md) are mandatory.
+Check the [Built-in function](../../../ref/lang/auto/builtinfunctions.md) or the User function definition to validate which [input parameters](../../../ref/lang/auto/class-input-parameter.md) are mandatory.
 
 ## Too many arguments specified for function &lt;function>
   
 **Cause**
 
-You have mapped more arguments in the function you're using than the number of parameters that it has. Or, you're using at least one named [parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md) that _advanced_ the position of the corresponding argument, so the continuous arguments exceed the available number of parameters in the function.
+You have mapped more arguments in the function you're using than the number of parameters that it has. Or, you're using at least one named [parameter](../../../ref/lang/auto/class-input-parameter.md) that _advanced_ the position of the corresponding argument, so the continuous arguments exceed the available number of parameters in the function.
 
 **Recommended action**
 
-Check the [Built-in function](../../../ref/lang/auto/builtinfunctions.final.md) or the User function definition to validate its arguments and the function calls syntax.
+Check the [Built-in function](../../../ref/lang/auto/builtinfunctions.md) or the User function definition to validate its arguments and the function calls syntax.
 
 ## Too many levels of nested function calls
 
@@ -137,9 +138,9 @@ The syntax of the expression is correct, but it has an argument for a parameter 
 
 **Recommended action**
 
-Check the [Built-in function](../../../ref/lang/auto/builtinfunctions.final.md) or the User function definition to validate its arguments. 
+Check the [Built-in function](../../../ref/lang/auto/builtinfunctions.md) or the User function definition to validate its arguments. 
 
-If you deleted a [parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md), update the [expression](../../../develop/logic/expression-editor.md) to remove the errors. Right-click the error line to see the fixing suggestions OutSystems provides you for this error:
+If you deleted a [parameter](../../../ref/lang/auto/class-input-parameter.md), update the [expression](../../../develop/logic/expression-editor.md) to remove the errors. Right-click the error line to see the fixing suggestions OutSystems provides you for this error:
     
 * `Create <function> Input Parameter`  
     Creates the argument in the function.
@@ -152,7 +153,7 @@ If you deleted a [parameter](../../../ref/lang/auto/Class.Input%20Parameter.fina
   
 **Cause**
 
-You have more than one argument in the function call to the same [parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md).
+You have more than one argument in the function call to the same [parameter](../../../ref/lang/auto/class-input-parameter.md).
 
 **Recommended action**
 
@@ -162,11 +163,11 @@ Check whether you're using the same name more than once or if you already mapped
 
 **Cause**
 
-You are using a User function or [Built-in function](../../../ref/lang/auto/builtinfunctions.final.md) that does not exist in the database.
+You are using a User function or [Built-in function](../../../ref/lang/auto/builtinfunctions.md) that does not exist in the database.
 
 **Recommended action**
 
-Change the function to use a [parameter](../../../ref/lang/auto/Class.Input%20Parameter.final.md) from outside the [Aggregate](../../../ref/lang/auto/Class.Aggregate.final.md).
+Change the function to use a [parameter](../../../ref/lang/auto/class-input-parameter.md) from outside the [Aggregate](../../../ref/lang/auto/class-aggregate.md).
 
 ## Cannot apply &lt;operator_name> operator to Integer together with Integer
 

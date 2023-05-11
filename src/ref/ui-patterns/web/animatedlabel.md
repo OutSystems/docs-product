@@ -4,6 +4,7 @@ summary: Advanced use cases for the Animated Label UI Pattern.
 locale: en-us
 guid: eb80a9ee-c99a-4136-85b4-ec06d6b8e8d4
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Animated Label Reference

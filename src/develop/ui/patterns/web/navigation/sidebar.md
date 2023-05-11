@@ -4,6 +4,7 @@ summary: Sidebar shows additional content on the side of the screen.
 locale: en-us
 guid: e04f67a0-6c80-4d32-b519-55fb5ff7a04b
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Sidebar

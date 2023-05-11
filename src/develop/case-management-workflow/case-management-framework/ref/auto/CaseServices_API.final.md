@@ -2,6 +2,7 @@
 guid: f5983291-ad80-4f87-955a-aae1180139a8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Case Services API

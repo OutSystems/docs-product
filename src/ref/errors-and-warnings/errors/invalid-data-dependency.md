@@ -2,6 +2,7 @@
 locale: en-us
 guid: bdac6bb2-8fa2-4c3b-b006-d30a08fa4566
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Data Dependency

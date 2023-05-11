@@ -2,6 +2,7 @@
 locale: en-us
 guid: 985d898a-a78b-4cb3-8628-8f9027631d7c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Update the Extension Source Code

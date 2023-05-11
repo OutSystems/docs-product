@@ -4,6 +4,7 @@ summary: Displays the current progress of a task using circular or semi-circular
 locale: en-us
 guid: 8f2233e3-6e6d-46b0-bdb9-ea3fa1d813b3
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Progress Circle

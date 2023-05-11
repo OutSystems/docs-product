@@ -4,6 +4,7 @@ tags: version-11; support-Installation_Configuration
 locale: en-us
 guid: a86cf4a3-e053-46a4-b873-373624fda83d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems cache invalidation with high-availability

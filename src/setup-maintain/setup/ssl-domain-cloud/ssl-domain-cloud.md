@@ -4,11 +4,12 @@ tags: support-Application_Troubleshooting; support-Cloud_Platform; support-Cloud
 locale: en-us
 guid: 75f71e55-19e7-4a6a-bd44-f730385acf52
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use your SSL domain in OutSystems Cloud
 
-Your OutSystems cloud environments include a valid SSL certificates with the `outsystemsenterprise.com domain`. It's also possible to use your own domain by assigning your SSL certificate to the environments.
+Your OutSystems cloud environments include a valid SSL certificates with the `outsystemsenterprise.com` domain. It's also possible to use your own domain by assigning your SSL certificate to the environments. To use your own domain, you need to upload your SSL certificate that will replace the `outsystemsenterprise.com` default certificate.
 
 The steps of setting up your environments with your company domain include:
 
@@ -16,9 +17,7 @@ The steps of setting up your environments with your company domain include:
 
 <div class="info" markdown="1">
 
-Setting up a different SSL domain changes the endpoint URL of the web services exposed by the environment, that will include the new domain instead. This change requires consumer applications to start using the new endpoint URLs.
-
-OutSystems applications consuming your [REST APIs](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/REST/Consume_REST_APIs/Configure_a_Consumed_REST_API_at_Runtime) or [SOAP Web Services](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Configure_a_SOAP_Web_Service_at_Runtime) can configure the new endpoint URLs at runtime in Service Center.
+Setting up a different SSL domain changes the endpoint URL of the web services exposed by the environment, that will include the new domain instead. This change requires consumer applications to start using the new endpoint URLs. OutSystems applications consuming your [REST APIs](../../../extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md) or [SOAP Web Services](../../../extensibility-and-integration/soap/consume/configure-runtime.md) can configure the new endpoint URLs at runtime in Service Center.
 
 </div>
 

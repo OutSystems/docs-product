@@ -4,6 +4,7 @@ summary: Advanced use cases for the Layout Side Menu web block.
 locale: en-us
 guid: 4d5d4869-2345-4646-a8b0-5c24c0f6a8cd
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Layout Side Menu Reference

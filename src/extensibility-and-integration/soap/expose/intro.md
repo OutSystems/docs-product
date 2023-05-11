@@ -2,6 +2,7 @@
 locale: en-us
 guid: 42dd7521-9093-4ac8-a073-987adf622d7e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Exposing SOAP Web Services

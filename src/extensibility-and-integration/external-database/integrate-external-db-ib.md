@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: fcc67384-67da-41a3-b52b-e2491db85b0c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Integrate with an external database using Integration Builder
@@ -53,8 +54,6 @@ Once you establish a database connection, you can develop apps in Service Studio
 * It's not possible to define the following fields at attribute level: data types, length, mandatory, autonumber, delete rule, and description.
 
 * It's not possible to manually define identifiers.
-
-* It's not possible to rename entities or attributes.
 
 ## Process overview
 

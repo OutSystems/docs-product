@@ -4,6 +4,7 @@ summary: Adds swipeable cards that can be dragged in multiple directions trigger
 locale: en-us
 guid: c4e2edb1-3142-4f82-b34d-dab8d2356155
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Stacked Cards

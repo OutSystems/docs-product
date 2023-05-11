@@ -4,6 +4,7 @@ summary: Advanced use cases for the Separator UI Pattern.
 locale: en-us
 guid: fb3e8080-28b4-44a2-89dd-0c5c940c7e5a
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Separator Reference

@@ -3,6 +3,7 @@ summary: Register Integration SharePoint Online, Microsoft Dataverse, or Microso
 locale: en-us
 guid: 50a76d12-73cb-4924-b36f-e76b68a00cb5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # How to register SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 apps in the Azure Active Directory
 

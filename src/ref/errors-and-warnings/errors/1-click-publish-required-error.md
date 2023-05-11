@@ -2,6 +2,7 @@
 locale: en-us
 guid: 96d4337d-0dad-46e5-893f-2addc141287a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # 1-Click Publish Required Error

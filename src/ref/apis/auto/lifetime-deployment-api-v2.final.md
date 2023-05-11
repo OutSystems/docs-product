@@ -4,6 +4,7 @@ tags: article-page; support-application_development; support-Application_Lifecyc
 locale: en-us
 guid: 8ebd5215-2960-4071-8a9c-83fe39674ee0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # LifeTime API v2
@@ -570,7 +571,7 @@ Follow the guidelines presented in [REST API Authentication](<../lifetime-deploy
 
 Check [LifeTime API Examples](<../lifetime-deployment/api-use-cases.md>) to learn how to perform common tasks using the LifeTime API.
 
-</div>
+</div> 
 
 You can download the Swagger file for the LifeTime API v2 in the download page of LifeTime Management Console binaries (available from LifeTime Management Console 11.5.0). Go to the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), and select your LifeTime Management Console version:
 
@@ -10159,6 +10160,7 @@ Go to
 <div  class="panel panel-definition">
 <div class="panel-body">
 <a class="json-schema-ref" href="#/definitions/Password">Password</a>
+<p>Passwords must meet the password complexity rules. This means that the password must have at least 12 characters, including at least one number, one lowercase letter, and one uppercase letter.</p>
 </div>
 </div></div>
 </div>
@@ -10216,7 +10218,7 @@ UserKey
 <dd class="sw-response-400">
 <div class="rowr">
 <div class="col-md-12">
-<p>Failed to change password because password is invalid.</p>
+<p> Failed to change password because the password is invalid.</p>
 </div>
 </div>
 <div class="rowr">

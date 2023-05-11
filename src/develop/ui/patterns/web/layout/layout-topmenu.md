@@ -4,6 +4,7 @@ summary: Layout Top Menu uses the space available on the top for navigation.
 locale: en-us
 guid: a4be094e-5543-4200-8b86-4a6b834f7cc6
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Layout Top Menu

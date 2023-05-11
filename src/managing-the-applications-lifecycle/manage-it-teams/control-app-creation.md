@@ -3,6 +3,7 @@ summary: OutSystems permission model allows you to limit the creation of new app
 locale: en-us
 guid: f5ba93ec-ca75-43eb-a9ab-e0e83596927d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Control Who Creates Applications

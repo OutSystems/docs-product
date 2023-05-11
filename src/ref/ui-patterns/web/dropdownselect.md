@@ -4,6 +4,7 @@ summary: Advanced use cases for the Dropdown Select UI Pattern.
 locale: en-us
 guid: 4d9ccb38-173c-42fa-9f2f-6ea73e338b52
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Dropdown Select Reference

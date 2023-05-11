@@ -4,6 +4,7 @@ tags: runtime-mobile; support-mobile
 locale: en-us
 guid: 3d02e722-3225-47fa-b343-d6188e21d174
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Publish Your Mobile iOS Application to the Apple App Store
@@ -24,8 +25,8 @@ You need to prepare your application for publishing. This means that you have to
 
 iOS has graphics assets and app package requirements. Ensure you meet these pre-requirements by checking the following links:
 
-* [App preview specifications](https://help.apple.com/app-store-connect/#/dev4e413fcb8)
-* [Screenshot specifications](https://help.apple.com/app-store-connect/#/devd274dd925)
+* [App preview specifications](https://developer.apple.com/help/app-store-connect/reference/app-preview-specifications)
+* [Screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications)
 * App package: [signed IPA file with the App Store build type](#Generate_the_iOS_App_Package_(IPA)).   
 
 ### Preparation checklist
@@ -59,7 +60,7 @@ A provisioning profile allows your application to be launched on Apple devices a
 
 You can generate a release version of your app (without debug information) using an In-House provisioning profile, but you have to handle the app distribution on your own, outside the App Store to your company's end users by sending the installation link or the app package (IPA) itself, or by using an internal enterprise store or an MDM (Mobile Device Management) solution.
 
-If the application requires users to sign in, you must [provide Apple with a test or demo account](https://help.apple.com/app-store-connect/#/devbef8ace74) to make sure that the review team can immediately sign in and use your application without the need to sign up for an account. You must also understand how the certificates work. You can find information about how to enroll as an Apple developer, create a certificate, and create a provisioning profile here. Read it carefully to make sure you have everything in place.
+If the application requires users to sign in, you must [provide Apple with a test or demo account](https://developer.apple.com/help/app-store-connect/reference/app-review-information) to make sure that the review team can immediately sign in and use your application without the need to sign up for an account. You must also understand how the certificates work. You can find information about how to enroll as an Apple developer, create a certificate, and create a provisioning profile here. Read it carefully to make sure you have everything in place.
 
 Additionally, you need to run **Transporter**, an application only available for Mac, to submit the app to the App Store for distribution. This application is available for Mac running macOS 10.13.6 or later and can be obtained by downloading the [Transporter](https://apps.apple.com/us/app/transporter/id1450874784?mt=12) app from App Store.
 
@@ -142,7 +143,7 @@ The size of your IPA increases due to the addition of Apple's Swift libraries. T
 
 Only available if you enrolled in the [Apple Developer Program](https://developer.apple.com/programs/).
 
-Now that [your application is prepared](#Application-Preparation) and the IPA file generated you can now [submit your application for review](https://help.apple.com/app-store-connect/#/dev301cb2b3e). Apple is going to review your application before making it available in the App Store.
+Now that [your application is prepared](#Application-Preparation) and the IPA file generated you can now [submit your application for review](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-for-review). Apple is going to review your application before making it available in the App Store.
 
 The process is complete. You'll receive feedback from Apple about your application submission.
 

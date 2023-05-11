@@ -4,6 +4,7 @@ tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: eaa92f05-a00d-4e75-a937-8c100b81d6df
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # End Users Authentication
@@ -11,7 +12,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 <div class="info" markdown="1">
 
 This section applies only to the authentication of **end users** — the users of your OutSystems applications.  
-The authentication of **IT users**, like Developers and IT Administrators, is [configured in LifeTime](../../../../managing-the-applications-lifecycle/secure-the-applications/use-an-external-authentication-provider.md).
+The authentication of **IT users**, like Developers and IT Administrators, is [configured in LifeTime](../../../../managing-the-applications-lifecycle/manage-it-teams/use-an-external-authentication-provider.md).
 
 </div>
 

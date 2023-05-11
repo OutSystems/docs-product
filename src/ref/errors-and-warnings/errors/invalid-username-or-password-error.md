@@ -2,6 +2,7 @@
 locale: en-us
 guid: 7b4eaa43-6615-4829-8e22-b7df71e4f887
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid Username or Password Error

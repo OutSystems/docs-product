@@ -4,6 +4,7 @@ summary: Provides methods to log messages or errors. Used as "console.log" but a
 locale: en-us
 guid: a91ff06e-c4fe-4e1b-ab4d-ac67c341c3e5
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Logger

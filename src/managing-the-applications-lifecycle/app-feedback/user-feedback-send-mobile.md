@@ -4,6 +4,7 @@ tags: support-Mobile_Apps-featured; runtime-mobile
 locale: en-us
 guid: 9fd4d828-cf50-4d20-9531-e8514aa8a5a3
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Send feedback in mobile apps

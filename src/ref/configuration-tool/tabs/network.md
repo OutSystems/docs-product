@@ -3,6 +3,7 @@ summary: The Network tab allows you to clear the current internal network settin
 locale: en-us
 guid: 8a4e8da5-fdb0-4112-a474-c1781f35d12c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Network Tab

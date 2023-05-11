@@ -4,6 +4,7 @@ summary: Learn about access control and how to do it with the Case Management fr
 guid: 6b9969e1-6771-4e7a-9c5b-d639b0d08d62
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to enable access control

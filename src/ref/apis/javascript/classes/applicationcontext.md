@@ -4,6 +4,7 @@ summary: Provides contextual information based on the screen that is being prese
 locale: en-us
 guid: 1441aa35-5b4b-44f1-81de-52be529e2583
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # ApplicationContext

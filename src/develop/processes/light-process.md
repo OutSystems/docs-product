@@ -4,6 +4,7 @@ tags: support-webapps;
 locale: en-us
 guid: 99aedeaf-deb9-440c-b1e7-258b60875e00
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Design Scalable Database Queueing Using Light Processes
@@ -19,6 +20,9 @@ To enable light process execution, a process must meet all the following conditi
 * The process flow includes only one **Automatic Activity**, having a simple **Start** > **Automatic Activity** > **End** flow.
 
 * The **Launch On** property of the process is set with a database event.
+    * Only entities with the **Expose Process Events** enabled are allowed to be chosen in the process:
+
+        ![](images/expose-process-events-checkbox-ss.png)
 
 * The **Expose Process Entity** property of the process is set to **No**.
 
@@ -55,4 +59,4 @@ To enable light process execution for a process, do the following:
     ![](images/light-process-3.png)
 
 After these steps and after publishing your module, the process is enabled for light process execution.  
-Keep in mind that only a trigger by a database event executes the process as a light process. Launching the process using the **Launch Process** action executes the process as a regular process.
+Keep in mind that only the creation of an entity record (the event configured in the **Launch On** of the process) triggers the process to execute as a light process. Launching the process using the Launch Process action executes the process as a regular process.

@@ -3,6 +3,7 @@ summary: Learn how to allow developers in the team to create integrations with e
 locale: en-us
 guid: 2bac9add-33d1-4240-8cc7-d23a897f0415
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Allow Integrations With External Databases

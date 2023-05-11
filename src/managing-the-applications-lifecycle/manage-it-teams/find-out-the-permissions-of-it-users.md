@@ -3,6 +3,7 @@ summary: Ensure a strict security policy by checking the permissions IT users ha
 locale: en-us
 guid: ee37b850-be3f-4964-87a3-12800efb3363
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Find Out the Permissions of IT Users

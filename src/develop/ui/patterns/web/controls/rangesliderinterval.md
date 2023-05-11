@@ -4,6 +4,7 @@ summary: RangeSliderInterval selects a single value or a range between two value
 locale: en-us
 guid: 94ed04bf-3e70-41d6-9d40-713927750c02
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Range Slider Interval
@@ -14,7 +15,7 @@ Applies only to Traditional Web Apps.
 
 </div>
 
-You can use the Range Slider Interval Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content by predetermined intervals and within a chosen range. Moving the slider along the track, increases or decreases the value. 
+You can use the Range Slider Interval Pattern to allow users select a single value between two range values. This pattern enables the adjustment of content by predetermined intervals and within a chosen range. Moving the slider along the track, increases or decreases the value.
 
 ## How to use the Range Slider Interval UI Pattern
 
@@ -78,17 +79,17 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| **Property**                  | **Description**                                                                                                                               |
-|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| **Property** | **Description** |
+|---|---|
 | MinValue (Decimal): Mandatory | Slider's minimum value. <p>Examples <ul><li>0 - The slider's minimum value is 0.</li><li>12 - The slider's minimum value is 12</li> </ul></p> |
-| MaxValue (Decimal): Mandatory | Slider's maximum value. <p>Examples <ul><li>100 - The slider's maximum value is 100.</li></ul></p>                                            |
-|InitialIntervalStart  |  Start value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default start value when the page is rendered is 10.</li></ul></p> 
+| MaxValue (Decimal): Mandatory | Slider's maximum value. <p>Examples <ul><li>100 - The slider's maximum value is 100.</li></ul></p> |
+|InitialIntervalStart | Start value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default start value when the page is rendered is 10.</li></ul></p> 
 |InitialIntervalEnd | End value selected by default when the page is rendered. Must be between min and max values. <p>Examples <ul><li>10 - Slider's default end value when the page is rendered is 10.</li></ul></p> 
-|Step (Decimal): Optional  | The slider moves in increments of steps.<p>Examples <ul><li>Blank - The slider increases in steps of 1. This is the default value. </li><li>10 - The slider increases in steps of 10.</li></ul></p>
-|ShowPips (Boolean): Optional  | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. |
-|PipsStepNumber (Integer): Optional  | Sets the number of Pip steps. This property is only applicable if the ShowPips property is set to True. |
+|Step (Decimal): Optional | The slider moves in increments of steps.<p>Examples <ul><li>Blank - The slider increases in steps of 1. This is the default value. </li><li>10 - The slider increases in steps of 10.</li></ul></p>
+|ShowPips (Boolean): Optional | If True, pips are shown below the slider. This is the default value. If False, no pips are shown. |
+|PipsStepNumber (Integer): Optional | Sets the number of Pip steps. This property is only applicable if the ShowPips property is set to True. |
 |IsVertical (Boolean): Optional | If True, the slider orientation is vertical. If False, the slider orientation is horizontal. |
 |VerticalHeight (Integer): Optional | If IsVertical is True, use this property to set the height (in px) of the slider. <p>Examples <ul><li>Blank - The slider is 100px high. This is the default value. </li><li>250 - The slider is 250px high.</li></ul></p> |
 |IsDisabled (Boolean): Optional | If True, the slider is disabled. If False, the slider is enabled. This is the default value. |
-| ExtendedClass (Text): Optional  |  Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
+| ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/> <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 |AdvancedFormat (Text): Optional | Allows you to use more options than what is provided in the input parameters. For more information, see [noUiSlider library](https://refreshless.com/nouislider/). <p> Example <ul><li> `{ pips: { density: 1 } }` </li></ul></p> |

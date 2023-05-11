@@ -3,6 +3,7 @@ tags: support-Integrations_Extensions
 locale: en-us
 guid: ad3eafdc-ad10-415d-bcd6-21a2ef277cd1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Expose a SOAP Web Service

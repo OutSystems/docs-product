@@ -4,6 +4,7 @@ summary: Provides methods to deal with active view components and their state.
 locale: en-us
 guid: 5d68d556-eca2-4dad-a0e5-ba6decc5f22b
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # View

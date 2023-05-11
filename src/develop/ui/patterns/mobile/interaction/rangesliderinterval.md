@@ -4,6 +4,7 @@ summary: the Range Slider Interval UI Pattern allows users select a single value
 locale: en-us
 guid: 69f1f6e5-318f-4da2-aa8f-912a7b8e66c2
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Range Slider Interval
@@ -26,7 +27,7 @@ You can use the Range Slider Interval Pattern to allow users select a single val
 
 <div class="info" markdown="1">
  
-The Range Slider Interval Pattern is based on the [noUiSlider library](https://refreshless.com/nouislider/) (v15.5.1). For more information about the Range Slider Interval’s behaviors and extensibility methods, see the provider’s documentation.  
+The Range Slider Interval Pattern is based on v15.5.1 of the [noUiSlider library](https://refreshless.com/nouislider/). For more information about the Range Slider Interval’s behaviors and extensibility methods, see the provider’s documentation.  
  
 </div>
 

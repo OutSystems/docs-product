@@ -4,6 +4,7 @@ tags: support-installation
 locale: en-us
 guid: 6238ecb9-6eaf-4406-a421-f4b01322052d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems network requirements
@@ -154,11 +155,31 @@ You need to have bidirectional secure communication between the front-end of the
 
 To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work). 
 
-Depending on the version of the AI Mentor Studio probe, ensure that one of the following destination endpoints is reachable:
+#### Version 4.3 of the AI Mentor Studio LifeTime probes
+
+From version 4.3 of the AI Mentor Studio LifeTime probes, [AI Mentor Studio](https://aimentorstudio.outsystems.com/) must be able to connect to the environment where you want to perform code analysis. Hence, besides ensuring the destination endpoint (LifeTime Front-End) is reachable, you also need to ensure that the front ends of the environment where you want to perform code analysis accept inbound connections from `aimentorstudio.outsystems.com`.
+
+Alternatively, ensure that the front ends of the environment used with AI Mentor Studio accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP| **Version 4.2 or higher** of the AI Mentor Studio LifeTime probes.
-LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or 4.1** of the AI Mentor Studio LifeTime probes.
-LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the AI Mentor Studio LifeTime probes.
+LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP| **Outbound communication** 
+aimentorstudio.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
+aimentorstudio.outsystems.com|LifeTime Front-End|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
+
+#### Version 4.2 of the AI Mentor Studio LifeTime probes
+
+Ensure the following destination endpoint is reachable:
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP|
+
+#### Versions 4.0 and 4.1 of the AI Mentor Studio LifeTime probes
+
+Ensure the following destination endpoint is reachable:
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP|
 

@@ -3,6 +3,7 @@ summary: Improve platform performance by creating indexes for a specific set of 
 locale: en-us
 guid: d70c93e7-404e-468d-b405-3711108e5311
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Creating indexes for platform database tables

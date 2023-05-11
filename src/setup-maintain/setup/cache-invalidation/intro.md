@@ -5,6 +5,7 @@ helpids: 30176
 locale: en-us
 guid: b3c02281-82f0-4f57-95f9-e357da5114db
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Cache Invalidation in OutSystems 11

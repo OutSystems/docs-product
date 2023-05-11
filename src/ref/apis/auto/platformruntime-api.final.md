@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 66bc7e5d-11fc-4670-a85e-4ac5e0defd1c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # PlatformRuntime API
@@ -21,7 +22,7 @@ To use this API, add a dependency to your application on the PlatformRuntime_API
 Action | Description
 ---|---
 [Audit_CreateAuditLog](<#Audit_CreateAuditLog>) | Creates an audit log record in a secure auditing storage. This action waits until the audit log is successfully stored, otherwise an exception is raised.<br/>If the secure auditing storage is unsupported or not configured in the current environment, the creation of the audit log record is skipped.
-[Database_WriteInParallelTransaction](<#Database_WriteInParallelTransaction>) | Write a record converted to an object using other transaction besides the main transaction of the request.
+[Database_WriteInParallelTransaction](<#Database_WriteInParallelTransaction>) | Write a record as a generic object that uses a different transaction of the original request. A parallel transaction that runs asynchronously and independently of the original transaction.
 [DatabaseConnection_SetConnectionStringForSession](<#DatabaseConnection_SetConnectionStringForSession>) | Switches a Database Connection from one database to another at runtime and in the current Session.<br/>There are some conditions to which you have to pay attention to when using this action:<br/>\- The Connection String must connect to a database with the same type (e.g. Oracle, SQL Server, MySQL) as the one configured in Service Center for the Database Connection.<br/>\- For Traditional Web apps, if you run any Aggregate or SQL using the Database Connection with the previous database before executing this action, the switch to the new database becomes effective only in the next request.<br/>\- For Mobile and Reactive Web apps, you need to execute this action in the beginning of a Data Action, before running any Aggregate or SQL to fetch the records. As the session is not persistent between server requests, this needs to be done for each server request that you need to switch the database connection string.<br/>\- Your license must include the Platform Extensibility APIs feature.
 [Request_GetKey](<#Request_GetKey>) | Provides the RequestKey that uniquely identifies the current request.<br/>If there is no RequestKey available in the current context, an empty string is returned.
 [Session_GetMobileAppLoginId](<#Session_GetMobileAppLoginId>) | Gets the token that uniquely identifies the authenticated session for a Mobile Application.<br/>This method can be used in when managing server side session stores where you need to uniquely identify a user authenticated session.
@@ -51,7 +52,7 @@ Extra
 
 ### Database_WriteInParallelTransaction { #Database_WriteInParallelTransaction }
 
-Write a record converted to an object using other transaction besides the main transaction of the request.
+Write a record as a generic object that uses a different transaction of the original request. A parallel transaction that runs asynchronously and independently of the original transaction.
 
 *Inputs*
 

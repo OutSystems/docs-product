@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps; sup
 locale: en-us
 guid: 5f21d5c6-f612-4ac0-835d-3a468b82c45b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Manage Your OutSystems Infrastructure

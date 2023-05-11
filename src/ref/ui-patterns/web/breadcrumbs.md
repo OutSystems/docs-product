@@ -4,6 +4,7 @@ summary: Advanced use cases for the Breadcrumbs UI Pattern
 locale: en-us
 guid: 4e6390a2-3d56-4b65-aabe-aa7588ff2253
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Breadcrumbs Reference

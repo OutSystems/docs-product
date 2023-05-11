@@ -4,6 +4,7 @@ tags: support-Application_Troubleshooting; support-webapps
 locale: en-us
 guid: aa97807f-3db5-4d86-a746-7fe2506481a6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Exception Handling Mechanism
@@ -12,7 +13,7 @@ The exceptions raised in your module are handled in a flow starting with an Exce
 
 An exception can be raised by OutSystems or in your logic at any point of your module. For typical UI requests, you can handle the raised exceptions by:
 
-* Adding an [Exception Handler](<../../../ref/lang/auto/Class.Exception Handler.final.md>) element and its logic in your action's flow.
+* Adding an [Exception Handler](<../../../ref/lang/auto/class-exception-handler.md>) element and its logic in your action's flow.
 * Adding an On Exception action in your UI Flows.
 * Let the Global Exception Handler of your module do the work. By default, Global Exception Handler property of your module is set to the On Exception action of the "Common" UI Flow.
 

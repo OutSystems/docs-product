@@ -3,6 +3,7 @@ summary: How to add support for authenticating SOAP requests with a client certi
 locale: en-us
 guid: c3df3d40-fd98-48f6-8c63-0ec22f08f516
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Authenticate using a client certificate

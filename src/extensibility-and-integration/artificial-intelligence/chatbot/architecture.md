@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: b7b3693d-5efc-4f7e-bef5-472a07175945
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # The chatbot architecture

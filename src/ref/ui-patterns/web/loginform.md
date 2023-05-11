@@ -4,6 +4,7 @@ summary: Advanced use cases for the Login Form web block.
 locale: en-us
 guid: bf2c05bb-2a29-4a57-903b-98007af0401b
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Login Form Reference

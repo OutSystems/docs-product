@@ -4,6 +4,7 @@ summary: Learn about how you can set and enforce service level agreement (SLA) r
 guid: e745cd81-f50a-483d-a08d-4279288fceae
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Ensuring resolution times with SLAs

@@ -2,6 +2,7 @@
 locale: en-us
 guid: 42bf68d5-449b-479f-8009-d02639218f6b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Unused Connector Warning

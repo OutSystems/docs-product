@@ -4,13 +4,14 @@ tags: support-Database
 locale: en-us
 guid: d1757e12-d324-45d9-b019-992a4547af24
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Database Indexes
 
 <div class="warning" markdown="1">
 
-We recommend that you don’t add indexes directly to the database. Outsystems only manages its own indexes automatically, and not the ones you create directly in the database. However, if you decide to create an index manually, remember to manually recreate that index when you migrate the application or perform a significant change to its Entity.
+We recommend that you don’t add indexes directly to the database. OutSystems only manages its own indexes automatically, and not the ones you create directly in the database. However, if you decide to create an index manually, remember to manually recreate that index when you migrate the application or perform a significant change to its Entity.
 
 </div>
 

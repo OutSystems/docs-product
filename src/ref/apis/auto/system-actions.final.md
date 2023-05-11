@@ -4,6 +4,7 @@ tags: support-application_development; support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 15b8a38f-a4cc-4bb7-b496-520824990340
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # System Actions

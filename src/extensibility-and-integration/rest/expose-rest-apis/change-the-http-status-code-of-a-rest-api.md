@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: c0c56e61-281f-410c-8fb2-a07561bbca46
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Change the HTTP Status Code of a REST API

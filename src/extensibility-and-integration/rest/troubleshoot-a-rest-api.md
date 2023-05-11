@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 60a9bcc9-9841-40ba-b6be-95dc14831c47
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Troubleshoot a REST API

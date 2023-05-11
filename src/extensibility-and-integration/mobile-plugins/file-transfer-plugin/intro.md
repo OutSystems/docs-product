@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 0bb071a1-f602-4d6b-9b4e-ca0c9c044c06
 app_type: mobile apps
+platform-version: o11
 ---
 
 # File Transfer Plugin

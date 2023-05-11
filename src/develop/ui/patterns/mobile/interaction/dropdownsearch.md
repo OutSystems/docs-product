@@ -4,6 +4,7 @@ summary: The Dropdown Search UI Pattern offers a choice of available options tha
 locale: en-us
 guid: 5dc860b5-4361-4991-8c3a-4ffba28c55ff
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Dropdown Search
@@ -76,7 +77,7 @@ In this example, we create a dropdown search for a list of employees. When the u
     1. Add a **Message** to the client action.
     1. Add the following logic to the expression editor:
 
-        `SelectedItem.Text + "(Employee ID: " + SelectedItem.Value + ")`
+        `SelectedOptionList.Current.Label + "(Employee ID: " + SelectedOptionList.Current.Value + ")"`
 
     1. Click **Close**. 
     

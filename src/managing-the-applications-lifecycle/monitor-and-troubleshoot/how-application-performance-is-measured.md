@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle; support-Integrations_Extensions; support-mo
 locale: en-us
 guid: c9bafed1-f783-47d9-9f02-fa30a53c9ae6
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # How Application Performance Is Measured

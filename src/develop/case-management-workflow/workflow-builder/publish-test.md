@@ -4,6 +4,7 @@ summary: Learn how generate and test apps in Workflow Builder.
 guid: 326f1e4a-f451-480e-9e40-e068521784eb
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Publishing and testing your app

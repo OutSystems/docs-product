@@ -4,6 +4,7 @@ summary: Gallery enables the users to sequentially browse the content when there
 locale: en-us
 guid: fa8125c1-ec09-4d4f-8c84-41be51e007b8
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Gallery
@@ -48,7 +49,7 @@ The Gallery UI Pattern usually displays dynamic information. In most cases, prio
 
     ![](<images/gallery-1-ss.png>)
 
-     To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/Class.List Records Widget.final.md>) into the Gallery widget and create your custom content. 
+     To use the Gallery UI Pattern with items from a database, drag a [List Record](<../../../../../ref/lang/auto/class-list-records-widget.md>) into the Gallery widget and create your custom content. 
 
     In this example, we delete the list and add images by dragging the Image widget into the Gallery widget and selecting an image from the OutSystems UI images. You can add as many as required.
 

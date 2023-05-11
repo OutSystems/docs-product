@@ -2,6 +2,7 @@
 locale: en-us
 guid: 32ee8b26-1d86-43d2-b0c0-069a77358e01
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Publishing Error

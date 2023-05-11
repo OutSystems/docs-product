@@ -5,6 +5,7 @@ en_title: Manage technical debt
 locale: en-us
 guid: 7aa53270-fb01-4543-90e4-57907dcc68fe
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Manage technical debt

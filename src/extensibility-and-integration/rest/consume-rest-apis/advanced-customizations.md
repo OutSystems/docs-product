@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 79eee8b9-b6ae-43e0-8127-9d6004f24ec4
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Advanced Customizations

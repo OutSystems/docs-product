@@ -2,6 +2,7 @@
 locale: en-us
 guid: d508b2f0-f667-4a03-8117-20292875c195
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Service Studio Shortcuts
@@ -26,6 +27,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 |Ctrl+Space|Ctrl+Space|Auto-complete|
 |Ctrl+A|Cmd+A|Select all elements|
 |Ctrl+F4|Cmd+W|Close module|
+|Ctrl+Enter|Cmd+Enter|Apply the primary action on the current pop-up window|
 |Esc|Esc|Cancel and close the current pop-up window|
 |F1||Look for help, by telling us what you want to do|
 |F2||Rename selected element|
@@ -43,6 +45,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 |Ctrl+M|Shift+Cmd+M|Compare and Merge module with published version|
 |Ctrl+N|Cmd+N|Create new element|
 |Ctrl+Q|Cmd+D|Open Manage Dependencies window|
+|Ctrl+R|Cmd+R|Refresh all in Manage Dependencies window|
 |Ctrl+Shift+K||Open list of shortcuts|
 |Ctrl+D||Delete Extended Property|
 
@@ -99,7 +102,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 |Ctrl+Shift+Click|Shift+Cmd+Click|Select all following elements|
 |Ctrl+D||Delete Assignment row within an Assign|
 |Ctrl+Up|Alt+Cmd+Up|Move Assignment up within an Assign|
-|Ctrl+Down|Alt+Cmd+Down|Move Assignment down within an Assign|
+|Ctrl+Up|Alt+Cmd+Up|Test SQL in the SQL editor|
+|Ctrl+T|Opt+CMD+T|Move Assignment down within an Assign|
 
 ## Debug
 

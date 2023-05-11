@@ -3,6 +3,7 @@ summary: Register Integration Builder app in Salesforce.
 locale: en-us
 guid: 32131311-38a7-41ec-84ca-8bfaf82ec229
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # How to integrate with Salesforce
 

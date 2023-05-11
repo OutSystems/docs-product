@@ -2,6 +2,7 @@
 locale: en-us
 guid: c6d53c58-5032-4598-b03f-a5b8e4f3d6c1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Unknown Object

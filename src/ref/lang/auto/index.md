@@ -2,6 +2,7 @@
 locale: en-us
 guid: 90fdddea-a0af-4d39-a56d-dda1bd58ed12
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems Language

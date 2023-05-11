@@ -4,6 +4,7 @@ summary: Tooltip dynamically displays simple informative content on end user int
 locale: en-us
 guid: 44f1bcc8-d2bd-4174-ae3d-8813092a4bac
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Tooltip
@@ -27,6 +28,12 @@ You can use the Tooltip UI Pattern to dynamically display informative text when 
 ![Example tooltip](<images/tooltip-example.png>)
 
 **How to use the Tooltip UI Pattern**
+
+<div class="info" markdown="1">
+
+**Prerequities** To use the Tooltip UI Pattern, you must use an OutSystems Layout. If you are using a Custom Layout, you must add the Layout CSS class.
+
+</div>
 
 1. In Service Studio, in the Toolbox, search for `Tooltip`.
   
@@ -72,7 +79,7 @@ After following these steps and publishing the module, you can test the pattern 
 |---|---|
 |Position (Position Identifier): Optional | Defines the Tooltip's position. The default position is right.<br/><br/>The predefined options are the following:<ul><li>Bottom</li><li>BottomLeft</li><li>BottomRight</li><li>Center</li><li>Left</li><li>Right</li><li>Top</li><li>TopLeft</li><li>TopRight</li></ul> Examples:<ul><li>Entities.Position.Right - The Tooltip is displayed to the right of the element.</li><li>Entities.Position.Bottom - The Tooltip is displayed underneath the element.</li></ul> |
 |StartsOpen (Boolean): Optional| If True, the Tooltip is displayed when the page is first loaded (without the need for the initial trigger). If False, the tooltip is not visible. This is the default.|
-|Trigger (Trigger Identifier): Optional| Defines how the tooltip is triggered. By default, the tooltip is shown on hover.|
+|Trigger (Trigger Identifier): Optional| Defines how the tooltip is triggered. The available trigger options are OnClick and OnHover. By default, the tooltip is shown OnHover.|
 |ExtendedClass (Text): Optional| Adds custom style classes to the Pattern. You define your [custom style classes](../../../../../develop/ui/look-feel/css.md) in your application using CSS.<br/><br/>Examples <ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |
 
 ## Events

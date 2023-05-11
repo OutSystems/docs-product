@@ -3,6 +3,7 @@ summary: Learn how to request and install an SSL certificate in your application
 locale: en-us
 guid: 1bf76fe2-d9c9-47cc-ad7a-9a65a18b55c3
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to install an SSL Certificate in self-managed environments

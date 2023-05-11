@@ -3,6 +3,7 @@ summary: Check how you can define application settings while deploying an applic
 locale: en-us
 guid: a02c9d92-7a07-4ba2-a12a-656d90b5df8f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure Application Settings After Deployment

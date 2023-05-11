@@ -4,6 +4,7 @@ summary: Learn how to Check the technical debt of all the apps in your infrastru
 locale: en-us
 guid: 5771d1af-cf5a-4e5c-a4c7-79f03a5f99ef
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Getting started as an architect
@@ -26,7 +27,7 @@ This guide assumes the following:
 
 * You have the **Administrator** role in LifeTime.
 
-After logging into [AI Mentor Studio](https://aimentorstudio.outsystems.com/) with your OutSystems account, follow these steps:
+After logging into [AI Mentor Studio](https://aimentorstudio.outsystems.com/), follow these steps:
 
 ## Check the technical debt of all your apps
 

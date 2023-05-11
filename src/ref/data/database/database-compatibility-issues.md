@@ -3,11 +3,12 @@ tags:
 locale: en-us
 guid: 9ae75fbb-3c7b-4307-9b9a-9e18bcb16017
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Database Compatibility Issues
 
-Whenever the DBMS type is set to `(all)` in the [properties of the Module](<../../lang/auto/Class.Module.final.md>), it means that queries are expected to be compatible with all database servers supported by OutSystems.
+Whenever the DBMS type is set to `(all)` in the [properties of the Module](<../../lang/auto/class-module.md>), it means that queries are expected to be compatible with all database servers supported by OutSystems.
 
 If you are not concerned with compatibility issues, you can use SQL statements specific to your database server.
 
@@ -33,7 +34,7 @@ For All DBMS  |  SQL Server  |  Oracle
 ---|---|---
 SELECT getdate() FROM Dual  |  SELECT getdate()  |  SELECT sysdate FROM Dual
   
-The result of this query can be handled as a Date Time, so you can use [Format built-in functions](<../../lang/auto/builtinfunction.Format.final.md#FormatDateTime>) to format the result.
+The result of this query can be handled as a Date Time, so you can use [Format built-in functions](<../../lang/auto/builtinfunction-format.md#FormatDateTime>) to format the result.
 
 ## Using Empty Strings in Query Conditions
 

@@ -2,6 +2,7 @@
 locale: en-us
 guid: 8e1138a1-e294-4b9a-a0f6-79ff3f8b9865
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Invalid External Site Error

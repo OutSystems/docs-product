@@ -3,12 +3,13 @@ tags: support-Database
 locale: en-us
 guid: cbbcab1c-2534-43e7-b734-9fef31683b88
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Default Values on Database
 
 The following table represents the default values of the OutSystems data types, and the respective values stored in the database.
-If an [Entity Attribute](<../../lang/auto/Class.Entity%20Attribute.final.md>) does not have a default value defined, the following default values will be used:
+If an [Entity Attribute](<../../lang/auto/class-entity-attribute.md>) does not have a default value defined, the following default values will be used:
 
 Data Type  |  OutSystems  |  SQL Server  |  Oracle  |  MySQL  
 ---|---|---|---|---  

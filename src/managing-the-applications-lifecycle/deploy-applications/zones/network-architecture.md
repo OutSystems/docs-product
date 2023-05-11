@@ -4,6 +4,7 @@ tags: support-Application_Lifecycle; support-Infrastuture_Architecture
 locale: en-us
 guid: 74a8ebdd-0c4e-45a1-b39e-51a170a27524
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Recommended Network Architecture

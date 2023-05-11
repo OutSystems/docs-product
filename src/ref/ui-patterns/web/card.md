@@ -4,6 +4,7 @@ summary: Advanced use cases for the Card UI Pattern.
 locale: en-us
 guid: 64b922a7-ca05-4d8f-bb40-2c75539b0bc2
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Card Reference

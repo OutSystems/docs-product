@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 708e1290-d4e0-4877-96fa-19876fd8b685
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Missing User Provider Warning
@@ -19,4 +20,4 @@ Your module has a User Provider module that does not exist in the Platform Serve
 Do one of the following:
 
 * Check with the Platform Server administrator or with the User Provider's owner to determine what the cause might be for this situation.
-* Change the User Provider [module](../../../ref/lang/auto/Class.Module.final.md) property of your module.
+* Change the User Provider [module](../../../ref/lang/auto/class-module.md) property of your module.

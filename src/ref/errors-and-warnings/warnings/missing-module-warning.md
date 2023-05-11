@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: f6effa12-876e-460a-a0a2-7e366645038e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Missing Module Warning
@@ -18,5 +19,5 @@ Your module has a reference to a producer module that was not found.
 
 Do one of the following:
 
-* Check with the producer module's owner to determine what the cause might be for the missing [module](../../../ref/lang/auto/Class.Module.final.md).
+* Check with the producer module's owner to determine what the cause might be for the missing [module](../../../ref/lang/auto/class-module.md).
 * Check with the Platform Server administrator.

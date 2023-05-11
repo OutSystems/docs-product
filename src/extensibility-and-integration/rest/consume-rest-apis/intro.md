@@ -4,6 +4,7 @@ tags: support-application_development; support-Integrations_Extensions; support-
 locale: en-us
 guid: 5a949da9-dd60-4ea9-a05b-70c27bc53655
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Consume REST APIs

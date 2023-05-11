@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 7D2154CF-186A-4671-89FA-88C7C25FBBC8
 app_type: traditional web apps, reactive web apps
+platform-version: o11
 ---
 
 # Improved crawlability for Reactive Web apps  

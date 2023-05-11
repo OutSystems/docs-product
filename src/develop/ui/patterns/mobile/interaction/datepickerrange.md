@@ -4,6 +4,7 @@ summary: Date Picker Range allows the end user to select a range of dates using 
 locale: en-us
 guid: f130d36f-74c0-450f-99b8-6f5e986c555c
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Date Picker Range
@@ -14,7 +15,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
-You can use the Date Picker Range UI Pattern to allow users select a range date using a calendar. The Date Picker Range Pattern is based on the [flatpickr library](https://flatpickr.js.org/). For more advanced options, you can refer to this library.
+The Date Picker Range UI Pattern allows users select a range date using a calendar. The Date Picker Range Pattern is based on the [flatpickr library](https://flatpickr.js.org/). For more advanced options, you can refer to this library.
 
 In this example, the user selects a range of dates from the calendar. The dates are saved in a variable and then displayed in an input widget.
 
@@ -30,7 +31,7 @@ In this example, the user selects a range of dates from the calendar. The dates 
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module and click **Add Dependency**. 
 
     1. In the Toolbox, search for the widget again.
 
@@ -65,9 +66,9 @@ In this example, the user selects a range of dates from the calendar. The dates 
 
     ![Create onSelect event for Date Picker Range](<images/datepickerrange-handler-ss.png>)
 
-1. To access the date range selected by the user, create an **Assign** and set the **PickedStartDate** to **Start Date** and **PickedEndDate** to **EndDate**.
+1. To access the date range selected by the user, create an **Assign** and set the **PickedStartDate** to **SelectedStartDate** and **PickedEndDate** to **SelectedEndDate**.
 
-    ![Add assign and variable value](<images/datepickerrange-assign-ss.png>)
+    ![Add assign and variable value](<images/datepickerrange-assigndate-ss.png>)
 
 1. You can configure the Date Picker Range by selecting the pattern, and on the **Properties** tab, set the relevant optional properties. For more configurations, expand the **OptionalConfigs** property.
 

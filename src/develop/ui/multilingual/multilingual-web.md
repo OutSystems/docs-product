@@ -4,6 +4,7 @@ tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: e4525653-9e57-4bb3-8426-a74a898addd0
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Multilingual Web Applications
@@ -174,7 +175,7 @@ Each flag has a link that, when pressed, invokes a screen action that changes th
 
 ## Display the Current Language to End User
 
-You can obtain your application current language locale using the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction.Environment.final.md#GetCurrentLocale>).
+You can obtain your application current language locale using the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction-environment.md#GetCurrentLocale>).
 
 As an example, you may display to the end user a flag and the locale code (in [RFC 1766](<https://tools.ietf.org/html/rfc1766>) format) of the language which the application is operating:
 

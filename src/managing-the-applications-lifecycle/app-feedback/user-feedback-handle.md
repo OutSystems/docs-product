@@ -4,6 +4,7 @@ summary: Learn how to handle the feedback submitted by users.
 locale: en-us
 guid: b8db2ed6-0551-41c8-b16d-3063670c0417
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Handle the submitted feedback

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: f48625c7-2bc5-42d9-b6aa-435630cf9b22
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # The merge feature and team collaboration

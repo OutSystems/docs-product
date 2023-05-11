@@ -4,6 +4,7 @@ tags: support-webapps
 locale: en-us
 guid: 7f9ed2cf-c73b-467e-bdfa-cf4ba9655613
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Processes
@@ -37,7 +38,7 @@ When a process is automatically launched as result of a Create entity action, an
 
 To explicitly launch the process in your application use the [process extended actions](actions-extended/intro.md).
 
-A process can also be [executed](<../../ref/lang/auto/Class.Execute Process.final.md>) in another process flow. 
+A process can also be [executed](<../../ref/lang/auto/class-execute-process.md>) in another process flow. 
 
 ### Using Process References
 

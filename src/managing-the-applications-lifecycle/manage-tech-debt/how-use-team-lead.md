@@ -4,6 +4,7 @@ summary: Learn how to check the technical debt of your team's apps.
 locale: en-us
 guid: efc039d9-67e7-4824-a8fb-5e65418db58c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Getting started as a team lead 
@@ -20,11 +21,13 @@ From the Apps canvas, you can drill down into the team's problematic modules, an
 
 This guide assumes the following:
 
-* Your infrastructure is already set up in **AI Mentor Studio**.
+* Your infrastructure is already set up in AI Mentor Studio.
 
-* Your IT user is already associated with **AI Mentor Studio**.
+* Your IT user is already associated with AI Mentor Studio.
 
-After logging in to [AI Mentor Studio](https://aimentorstudio.outsystems.com/) with your **OutSystems** account, follow these steps:
+* You have the **Administrator** role in LifeTime.
+
+After logging into [AI Mentor Studio](https://aimentorstudio.outsystems.com/), follow these steps:
 
 ## Check the technical debt of your team apps
 

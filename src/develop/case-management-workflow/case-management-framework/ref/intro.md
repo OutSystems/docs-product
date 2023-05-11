@@ -4,6 +4,7 @@ summary: The Case Management framework accelerates the creation of custom-fit bu
 guid: 8149ad32-7c20-458b-92d4-2e2dac78f781
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Case Management framework reference

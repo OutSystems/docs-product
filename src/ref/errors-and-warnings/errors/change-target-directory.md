@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 3be20de4-b979-43e3-89a4-c56d7b9ea6f1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Change target directory error

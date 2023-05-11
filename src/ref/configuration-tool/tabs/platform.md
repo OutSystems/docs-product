@@ -3,6 +3,7 @@ summary: The Platform tab allows you to configure the database used by the platf
 locale: en-us
 guid: 8bd79c83-b59c-4dbe-894a-f12b24415318
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Platform Tab

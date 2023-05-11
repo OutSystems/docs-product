@@ -4,6 +4,7 @@ tags: article-page; support-application_development; support-Front_end_Developme
 locale: en-us
 guid: 868f8412-a29e-4c0b-9e37-3c75830502eb
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Charts API

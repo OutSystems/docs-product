@@ -236,8 +236,8 @@ OS-PLUG-CAMR-0011|iOS, Android|Couldn’t capture picture.
 OS-PLUG-CAMR-0012|iOS, Android|Couldn’t get image from the gallery.
 OS-PLUG-CAMR-0013|iOS, Android|Couldn’t process image.
 OS-PLUG-CAMR-0014|iOS, Android, PWA|Couldn’t edit picture because the process was canceled.
-OS-PLUG-CAMR-0015 **NEW**|iOS|Couldn’t decode the 'Take Picture' action parameters.
-OS-PLUG-CAMR-0016 **NEW**|iOS|Couldn’t capture picture because the process was canceled.
+OS-PLUG-CAMR-0015 _NEW_|iOS|Couldn’t decode the 'Take Picture' action parameters.
+OS-PLUG-CAMR-0016 _NEW_|iOS|Couldn’t capture picture because the process was canceled.
 OS-PLUG-CAMR-0017 **NEW**|iOS, Android, PWA|The plugin is not available.
 OS-PLUG-CAMR-0018 **NEW**|iOS, Android|Couldn’t capture video.
 OS-PLUG-CAMR-0019 **NEW**|iOS, Android|Couldn’t capture video because the process was canceled.

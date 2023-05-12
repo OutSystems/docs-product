@@ -213,7 +213,7 @@ Type|Static|Indicates if the media selected is a picture or a video.
 URI|Text (If Video)|Returns the file path of the media.
 Thumbnail|Binary Data (if Picture)|Returns the thumbnail of the media.
 Size|Long Integer|Returns the file size of the media in bytes.
-Duration **OPTIONAL**|Long Integer|If a video, returns the duration of the media.
+Duration (OPTIONAL)|Long Integer|If a video, returns the duration of the media.
 Format|Format Static Entity|Returns the format of the media.
 Resolution|Resolution Static Entity|Returns the duration of the media in seconds.
 CreationDate|Date Time|Returns the creation date of the media.
@@ -236,18 +236,19 @@ OS-PLUG-CAMR-0011|iOS, Android|Couldn’t capture picture.
 OS-PLUG-CAMR-0012|iOS, Android|Couldn’t get image from the gallery.
 OS-PLUG-CAMR-0013|iOS, Android|Couldn’t process image.
 OS-PLUG-CAMR-0014|iOS, Android, PWA|Couldn’t edit picture because the process was canceled.
-OS-PLUG-CAMR-0015 _NEW_|iOS|Couldn’t decode the 'Take Picture' action parameters.
-OS-PLUG-CAMR-0016 _NEW_|iOS|Couldn’t capture picture because the process was canceled.
-OS-PLUG-CAMR-0017 **NEW**|iOS, Android, PWA|The plugin is not available.
-OS-PLUG-CAMR-0018 **NEW**|iOS, Android|Couldn’t capture video.
-OS-PLUG-CAMR-0019 **NEW**|iOS, Android|Couldn’t capture video because the process was canceled.
-OS-PLUG-CAMR-0020 **NEW**|iOS|Couldn’t choose picture because the process was canceled.
-OS-PLUG-CAMR-0021 **NEW**|iOS, Android|Couldn’t choose media from the gallery
-OS-PLUG-CAMR-0022 **NEW**|iOS|Couldn't encode media result.
-OS-PLUG-CAMR-0023 **NEW**|iOS, Android|Couldn’t choose media from the gallery because the process was canceled.
-OS-PLUG-CAMR-0024 **NEW**|Android|Couldn't get media file path.
-OS-PLUG-CAMR-0025 **NEW**|iOS, Android|Cordova is not available.
-OS-PLUG-CAMR-0026 **NEW**|iOS, Android|Couldn’t play video.
-OS-PLUG-CAMR-0027 **NEW**|Android|The selected file doesn’t exist.
-OS-PLUG-CAMR-0028 **NEW**|iOS|Couldn’t get video from the gallery.
-OS-PLUG-CAMR-0029 **NEW**|iOS|There's an issue with the plugin.
+OS-PLUG-CAMR-0015 (NEW)|iOS|Couldn’t decode the 'Take Picture' action parameters.
+OS-PLUG-CAMR-0016 (NEW)|iOS|Couldn’t capture picture because the process was canceled.
+OS-PLUG-CAMR-0017 (NEW)|iOS, Android, PWA|The plugin is not available.
+OS-PLUG-CAMR-0018 (NEW)|iOS, Android|Couldn’t capture video.
+OS-PLUG-CAMR-0019 (NEW)|iOS, Android|Couldn’t capture video because the process was canceled.
+OS-PLUG-CAMR-0020 (NEW)|iOS|Couldn’t choose picture because the process was canceled.
+OS-PLUG-CAMR-0021 (NEW)|iOS, Android|Couldn’t choose media from the gallery
+OS-PLUG-CAMR-0022 (NEW)|iOS|Couldn't encode media result.
+OS-PLUG-CAMR-0023 (NEW)|iOS, Android|Couldn’t choose media from the gallery because the process was canceled.
+OS-PLUG-CAMR-0024 (NEW)|Android|Couldn't get media file path.
+OS-PLUG-CAMR-0025 (NEW)|iOS, Android|Cordova is not available.
+OS-PLUG-CAMR-0026 (NEW)|iOS, Android|Couldn’t play video.
+OS-PLUG-CAMR-0027 (NEW)|Android|The selected file doesn’t exist.
+OS-PLUG-CAMR-0028 (NEW)|iOS|Couldn’t get video from the gallery.
+OS-PLUG-CAMR-0029 (NEW)|iOS|There's an issue with the plugin.
+

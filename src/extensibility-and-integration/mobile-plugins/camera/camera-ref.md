@@ -55,15 +55,13 @@ Opens the device's camera and allows the user to take a picture.
 
 Parameter|Type|Data Type|Description
 -|-|-|-
-Quality|Input|Integer|Sets the picture quality, in percentage (100% means full device quality). By default, the quality is 60%.
-Applies only to .JPEG EncodingType.
+Quality|Input|Integer|Sets the picture quality, in percentage (100% means full device quality). By default, the quality is 60%. Applies only to .JPEG EncodingType.
 Width|Input|Integer|Sets the picture width, in pixels.
 Height|Input|Integer|Sets the picture height, in pixels.
 CorrectOrientation|Input|Boolean|Sets if the captured media orientation should be automatically fixed when the device is rotated.
 EncodingType|Input|Structure|Sets the captured media format: JPEG or PNG. By default, the media format is JPEG.
 SaveToPhotoAlbum|Input|Boolean|Sets if the media captured can be saved in the device’s gallery.
-CameraDirection|Input|Structure|Select the front or back camera as default when taking a new picture.
-Default value: BackCamera.
+CameraDirection|Input|Structure|Select the front or back camera as default when taking a new picture. Default value: BackCamera.
 AllowEdit|Input|Boolean|Sets if the media captured must be sent to an edit screen right after the capturing.
 AllowMultiplePictures|Input|Boolean|Sets if the user can select multiple pictures.
 ImageCaptured|Output|Structure|Returns the captured image and its information.

@@ -51,7 +51,7 @@ Applications that use Service Center as a user provider and that implement the r
 
 The following diagram shows the flow for the IT Users Integration with External IdP (OIDC) feature when you activate it.
 
-![External IdP flow](images/add-filename-diag.png)
+![External IdP flow](images/it-users-integration-external-idp-diag.png)
 
 ## Limitations
 

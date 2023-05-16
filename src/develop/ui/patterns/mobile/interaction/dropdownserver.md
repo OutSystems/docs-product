@@ -99,8 +99,6 @@ For this example:
     
         * SelectedValue.Value = ItemId
 
-        ![Add assign to client action](<images/dropdownserver-assign-ss.png>)
-
    1. Add a **Message** to the client action.
 
    1. Add the following logic to the expression editor:

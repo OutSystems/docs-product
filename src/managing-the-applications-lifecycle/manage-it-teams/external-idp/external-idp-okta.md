@@ -15,7 +15,7 @@ To configure Okta authentication, follow these steps:
 
 1. [Create an application in the Okta portal for the OutSystems Development Tool (Service Studio and Integration Studio)](#create-an-application-in-the-okta-portal-for-the-outsystems-development-tools-service-studio-and-integration-studio)
 
-1. [Activate Okta configuration](#activate-okta-configuration)
+1. [Configure Okta as OutSystems' Identity Provider](#configure-okta-as-outsystems-identity-provider)
 
 ## Create an application in the Okta portal for the OutSystems Consoles
 
@@ -121,54 +121,38 @@ To configure Okta authentication, follow these steps:
 
     ![Copy Client Id](images/client-id-ok.png)
 
-## Activate Okta configuration
+## Configure Okta as OutSystems' Identity Provider
 
 To finalize and activate the Okta configuration for both Consoles and Development Tools, follow these steps:
 
-1. Go to **Security** > **API**, and from the default **Authorization Servers** tab, click your authorization server name.
+1. Access the Lifetime console.
 
-    The server settings are displayed.
+1. Go to **User Management** > **Authentication Settings** and click **Add OpenId Connect Provider**.
 
-    ![URI metadata](images/metadata-ok.png) 
+1. Enter the following details according to the OIDC provider you are using:
 
-1. Copy the **Metadata URI** link.
+    1. **Name**: ID Provider (e.g., OKTA OIDC)
 
-    **Note**: You need this information when configuring the provider in LifeTime.
+    1. **Well-known Configuration URL**: OpenID Connect metadata document URI.
+    
+        **Note** This URI can be found in OKTA's portal by navigating to **Security** > **API**, and from the default **Authorization Servers** tab, click your authorization server name.
 
-1. To configure and activate the provider, follow the steps in the [LifeTime](#lifetime) section using the following details for for the OIDC provider information:
+        ![URI metadata](images/metadata-ok.png) 
 
-    1. Click the **Use a different Client Ids for Desktop and Web tools** link and add both Application IDs using the following details:
+    1. **Client ID Type**: Select the option **Different Client ID for Desktop and Web tools**.
 
-        * **Name**: Okta
+    1. **Client ID dor Desktop Tools**: Fill in with the ID of the application used in section [Create an application in the Okta portal for the OutSystems Development Tool (Service Studio and Integration Studio)](#create-an-application-in-the-okta-portal-for-the-outsystems-development-tools-service-studio-and-integration-studio)
+    
+    1. **Client ID for Web Tools**: Fill in with the ID of the application used in section [Create an application in the Okta portal for the OutSystems Consoles](#create-an-application-in-the-okta-portal-for-the-outsystems-consoles)
+        
+    1. **Username Claim**: The claim used to match the username field of the user configured in LifeTime which will need to be  ``preferred_username`` for OKTA. For more information about claims, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
 
-        * **OpenID Connect metadata document**: Metadata URI
+1. Click **Save Changes**.
 
-        * **Client Id for Web tools**: OutSystems Consoles Client ID
+1. Before make Okta as the effective IdP, make sure to test the configuration and ensure that the Okta's users have a corresponding user created in the OutSystems platform first.
 
-        * **Client Secret**: OutSystems Consoles Client Secret
+1. Click **Activate**.
 
-        * **Client Id for Desktop tools**: OutSystems Development Tools Client ID
+1. In the pop-up window that will appear, fill in the **Client Secret** stored earlier.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. Click the **Activate and Logout** button to start using Okta as the external Identity Provider of the OutSystems platform.

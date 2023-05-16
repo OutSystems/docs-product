@@ -230,7 +230,7 @@ The following are the available configurations:
 |CompilerServerPort|Numeric value.|Port used by the Deployment Controller Service, in the Deployment Controller Server.|
 |DeploymentServerPort|Numeric value.|Port used by the Deployment Service, in the Front-End Servers.|
 |SchedulerServerPort|Numeric value.|Port used by the Scheduler Service, in the Front-End Servers.|
-|SchedulerRESTPort|Numeric value.|Port used by the Scheduler Service, in the Front-End Servers when using the REST communication protocol.|
+|SchedulerRESTPort|Numeric value.|Port used by the Scheduler Service, in the Front-End Servers when using the REST communication protocol. Applies to Platform Server version 11.21.0 and above.|
 |SupportAsynchronousLog|"true" or "false".<br/>**Internal**, do not customize.||
 |ServiceInitializationTimeoutInSeconds|Numeric value.|Timeout for services to restart. The default value is 180 seconds.|
 

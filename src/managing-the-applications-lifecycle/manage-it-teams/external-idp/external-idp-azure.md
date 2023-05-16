@@ -19,7 +19,9 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. [Configure the client secret](#configure-the-client-secret)
 
-1. [Configure permissions](#configure-permissions)
+1. [Configure Azure AD Open ID permissions](#configure-azure-ad-open-id-permissions)
+
+1. [Configure Azure AD as OutSystems' Identity Provider](#configure-azure-ad-as-outsystems-identity-provider)
 
 ## Register an application
 
@@ -137,7 +139,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
     ![Enter secret details](images/secret-value-az.png)
 
-## Configure permissions
+## Configure Azure AD Open ID permissions
 
 1. Go to **API Permissions** and click **+ Add a permission**.
 
@@ -157,33 +159,38 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 1. Click **Add Permissions**.
 
-1. Go to the **Overview** screen and copy the **Application (client) ID.**
+## Configure Azure AD as OutSystems' Identity Provider
 
-    **Note**: You need this information when configuring the provider in Lifetime
+To finalize and activate the Azure AD configuration for both Consoles and Development Tools, follow these steps:
 
-    ![Copy application client id](images/app-client-id-az.png)
+1. Access the Lifetime console.
 
-1. Go to **Endpoints** and copy the **OpenID Connect metadata document** URI.
+1. Go to **User Management** > **Authentication Settings**, and click **Add OpenId Connect Provider**.
 
-    ![Copy OpenId metadata document](images/endpoint-az.png)
+1. Enter the following Azure AD details in the form:
 
-1. To configure and activate the provider, follow the steps in the [LifeTime](external-idp-lifetime.md) section using following details for the OIDC provider information:
+    1. **Name**: ID Provider (e.g., Azure AD OIDC)
 
-    * **Name:** Azure AD
+    1. **Well-known Configuration URL**: OpenID Connect metadata document URI.
 
-    * **OpenID Connect metadata document**: OpenID Connect metadata document URI
+        **Note** This URI can be found in the Azure Portal by navigating to the **Azure Active Directory** > **App Registrations** > **Endpoints**, and copying the **OpenID Connect metadata document** link.
 
-    * **Client Id**: Application (client) ID
+        ![Copy OpenId metadata document](images/endpoint-az.png)
 
-    * **Client Secret**: Platform Consoles Client Secret
+    1. **Client ID Type**: Select the option **Single Client ID for Desktop and Web tools**.
 
+    1. **Client ID**: Fill in with the **Application (client) ID** that is found in the Azure Portal's **Azure Active Directory** service and **Overview** tab.
 
+        ![Copy application client id](images/app-client-id-az.png)
 
+    1. **Username Claim**: The claim used to match the username field of the user configured in LifeTime which will need to be  ``preferred_username`` for Azure AD. For more information about claims, see [Standard Claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
 
+1. Click **Save Changes**.
 
+1. Before making Azure AD as the effective IdP, make sure to test the configuration and ensure that the Azure AD users have a corresponding user created in the OutSystems platform first.
 
+1. Click **Activate**.
 
+1. In the pop-up window that will appear, fill in the **Client Secret** stored earlier.
 
-
-
-
+1. Click the **Activate and Logout** button to start using Okta as the external Identity Provider of the OutSystems platform.

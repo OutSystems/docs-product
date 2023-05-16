@@ -19,8 +19,8 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 |Event|Output|Description|
 |---|---|---|  
-|OnSlideMoved: Optional|ItemIndex (Integer)|Event triggered when the Carousel is initialized.| 
-|Initialized: Optional|WidgetId (Text)|Event triggered when the carousel slide moves.| 
+|OnSlideMoved: Optional|ItemIndex (Integer)|Event triggered when the carousel slide moves.| 
+|Initialized: Optional|WidgetId (Text)|Event triggered when the Carousel is initialized.| 
 
 ## Structure
 

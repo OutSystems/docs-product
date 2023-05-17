@@ -15,9 +15,16 @@ The SharePoint Online integration allows you to perform operations on entities a
 Verify the following:
 
 * You meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).
+
 * The SharePoint Online integration deployed in your OutSystems development environment can make HTTPS outbound requests (port 443) to your SharePoint Online service.
+
 * The number of items or documents in your SharePoint List View don't exceed the 5000 limit. Otherwise, SharePoint displays an error message. To learn more about this error, see [Living Large with Large Lists and Large Libraries](https://docs.microsoft.com/en-us/microsoft-365/community/large-lists-large-libraries-in-sharepoint#what-is-the-list-view-threshold).
+
 * You have a Microsoft account with Administrator role permissions in Microsoft Azure Active Directory (AD). These Administrator role permissions are required to access your Azure AD tenant and to create security roles.
+
+* You have a connection already created in Integration Manager, as shown below:
+
+    ![Connection in Integration Manager](images/connection-ib.png)
 
 ## Authorizing Integration Builder in your Microsoft account
 

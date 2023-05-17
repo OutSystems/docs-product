@@ -223,3 +223,9 @@ Response body:
 The response contains the source code package of the application in base 64 string form and the property `fileContents`. The string needs to be decoded to binary to be unpacked.
 
 If you are unable to download source code of the application, refer to [this article](https://success.outsystems.com/support/troubleshooting/application_lifecycle/unable_to_download_the_source_code_of_an_application/). 
+
+## Reviewing results
+
+When reviewing static code analysis results, it's important to keep in mind that each static code analysis tool will report on findings without a proper context. These findings must be reviewed to detect false positives and experts in OutSystems development shall be consulted to help on understanding those findings in the proper context.
+
+Follow the [link](https://success.outsystems.com/support/security/static_application_security_testing/#review-results) for some examples of such findings and why they should be considered false positives.

@@ -39,7 +39,7 @@ However, you can replace this sample data by dragging and dropping your entities
 
 ### Adapt the UI and logic
 
-You can change and adapt the UI and logic to suit your app. To help you with this, OutSystems provide you with plenty of different UI patterns in Service Studio. You can find an overview of all available patterns on the [OutSystems UI website](https://www.outsystems.com/OutSystemsUIWebsite/PatternOverview).
+You can change and adapt the UI and logic to suit your app. To help you with this, OutSystems provide you with plenty of different UI patterns in Service Studio. You can find an overview of all available patterns on the [OutSystems UI website](https://outsystemsui.outsystems.com/outsystemsUiWebsite/PatternsOverview).
 
 ### Screen templates
 

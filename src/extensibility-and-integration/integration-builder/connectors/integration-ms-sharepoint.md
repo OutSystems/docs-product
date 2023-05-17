@@ -20,8 +20,6 @@ Verify the following:
 
 * The number of items or documents in your SharePoint List View don't exceed the 5000 limit. Otherwise, SharePoint displays an error message. To learn more about this error, see [Living Large with Large Lists and Large Libraries](https://docs.microsoft.com/en-us/microsoft-365/community/large-lists-large-libraries-in-sharepoint#what-is-the-list-view-threshold).
 
-* You have a Microsoft account with Administrator role permissions in Microsoft Azure Active Directory (AD). These Administrator role permissions are required to access your Azure AD tenant and to create security roles.
-
 * You have a connection already created in Integration Manager, as shown below:
 
     ![Connection in Integration Manager](images/connection-ib.png)
@@ -42,11 +40,14 @@ Request authentication is handled transparently when you call Server Actions exp
 
 ### If you have administrator permissions in Azure Active Directory
 
-Integration Builder registers an app with Azure AD at the request of Integration Manager. When you create a connection, Integration Manager requests Integration Builder to create and associate a certificate with this app, saving the certificate details in an encrypted way as part of the connection information. This operation requires authorization.
+You can select the "Create automatically" option to have Integration Manager create the connection on your behalf.
+Integration Manager generates a certificate and connects to Integration Builder, which requests the creation of an Azure AD app that uses the certificate for authentication and authorization.
 
 ![Authorizing Integration Manager to access your Microsoft account data](images/sharepoint-im-authorization.png)
 
 ### If you don't have administrator permissions in Azure Active Directory
+
+If you don't have administrator permission in Azure AD, or if you prefer not to grant Integration Builder permission to create apps in Azure AD, then you should select the "Create manually" option.
 
 Creating a connection without administrator credentials requires parameters from the Azure AD platform. The Azure AD account administrator needs to create a new Azure app to obtain these parameters.
 

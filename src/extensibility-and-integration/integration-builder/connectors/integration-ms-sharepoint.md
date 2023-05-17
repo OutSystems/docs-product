@@ -29,17 +29,15 @@ Integration Builder uses this authorization to retrieve the metadata from the Sh
 
 ## Authorizing a SharePoint Online connection { #authorize-integration }
 
-When you're creating a connection, Integration Manager connects to Integration Builder, requesting the creation of an Azure app and other related objects. This operation requires authorization.
-
-![Authorizing Integration Manager to access your Microsoft account data](images/sharepoint-im-authorization.png)
-
 SharePoint Online integrations generated with Integration Builder use a certificate to authenticate requests done at runtime, using the connection you configured.
 
 Request authentication is handled transparently when you call Server Actions exposed by the service module (the module with a "_IS" suffix, by default). The Server Actions obtain the certificate info from the connection that you previously associated with the integration in Integration Manager. Therefore, you don't need to provide any authentication information as input parameters.
 
 ### If you have administrator permissions in Azure Active Directory
 
-Integration Builder registers an app with Azure AD at the request of Integration Manager. When you create a connection, Integration Manager requests Integration Builder to create and associate a certificate with this app, saving the certificate details in an encrypted way as part of the connection information.
+Integration Builder registers an app with Azure AD at the request of Integration Manager. When you create a connection, Integration Manager requests Integration Builder to create and associate a certificate with this app, saving the certificate details in an encrypted way as part of the connection information. This operation requires authorization.
+
+![Authorizing Integration Manager to access your Microsoft account data](images/sharepoint-im-authorization.png)
 
 ### If you don't have administrator permissions in Azure Active Directory
 

@@ -704,6 +704,8 @@
     - topics:
         - href: extensibility-and-integration/mobile-plugins/barcode/intro.md
         - href: extensibility-and-integration/mobile-plugins/camera/intro.md
+        - topics:
+            - href: extensibility-and-integration/mobile-plugins/camera/camera-ref.md
         - href: extensibility-and-integration/mobile-plugins/file-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/file-transfer-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/file-viewer-plugin/intro.md
@@ -717,6 +719,7 @@
         - href: extensibility-and-integration/mobile-plugins/ssl-pinning/intro.md
         - href: extensibility-and-integration/mobile-plugins/payments-plugin/intro.md
         - href: extensibility-and-integration/mobile-plugins/using-cordova-plugins.md
+        - href: extensibility-and-integration/mobile-plugins/keystore-plugin/intro.md
     - href: extensibility-and-integration/javascript/intro.md
     - topics:
         - href: extensibility-and-integration/javascript/mobile/intro.md
@@ -1027,6 +1030,7 @@
         - href: setup-maintain/setup/install-client-side-cert-on-premise.md
         - href: setup-maintain/setup/change-db-authentication.md
         - href: setup-maintain/setup/load-balancing-apps/recommended-configs-load-balancing.md
+        - href: setup-maintain/setup/cdn-setup.md
 
         # Cache Invalidation Service
         - href: setup-maintain/setup/cache-invalidation/intro.md
@@ -1833,6 +1837,14 @@
             - href: ref/apis/charts/chart-task-columnbar.md
             - href: ref/apis/charts/chart-task-linearea.md
             - href: ref/apis/charts/chart-json.md
+        # Charts API 2
+        - href: ref/apis/charts-v2/chart-charts-v2.md
+        - topics:
+            - href: ref/apis/charts-v2/chart-data-v2.md
+            - href: ref/apis/charts-v2/chart-intro-v2.md
+            - topics:
+                - href: ref/apis/charts-v2/chart-areachart-v2.md
+                - href: ref/apis/charts-v2/chart-linechart-v2.md
         - href: ref/apis/auto/dbcleaner-api.final.md
         - href: ref/apis/emails-api.md
         - href: ref/apis/auto/enhancedwebreferences-api.final.md
@@ -1886,4 +1898,3 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
-

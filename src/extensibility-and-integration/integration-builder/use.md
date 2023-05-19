@@ -50,11 +50,11 @@ On your first login, Integration Builder greets you with an onboarding guide. To
 
 ### Create and configure a new integration { #create-configure-integration }
 
-1. In the Integration Builder homepage, click **New integration**.
+1. In the Integration Builder homepage, click **Create integration**.
 
 1. Select the service provider that's the data source of your integration (for example, SAP).
 
-    ![Choosing a provider in Integration Builder](images/choose-provider-ib.png)
+    ![Choosing a provider in Integration Builder](images/choose-a-provider-ib.png)
 
     <div class="info" markdown="1">
 

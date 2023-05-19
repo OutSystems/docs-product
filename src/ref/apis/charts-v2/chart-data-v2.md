@@ -9,11 +9,11 @@ platform-version: o11
 
 # Data
 
-Learn how to populate your chart with data. To add data to your chart you must input **DataPoint** labels and values for the **DataPointList** property.
+To add data to your chart you must input **DataPoint** labels and values for the **DataPointList** property.
 
 There are two different ways to add data to the **DataPointList** property: **Fixed data** and **Variable data**.
 
-## Populate your chart with fixed data{#populate-your-chart-with-fixed-data} 
+## Populate your chart with fixed data {#populate-your-chart-with-fixed-data} 
 
 1. From the Toolbox, drag a Chart to the Screen. 
 
@@ -37,7 +37,7 @@ After following these steps, you can publish your module.
 
 ![Example chart with fixed data](images/chartline-result-data.png)
 
-## Populate your chart with variable data{#populate-your-chart-with-variable-data} 
+## Populate your chart with variable data {#populate-your-chart-with-variable-data} 
 
 Before you start, make sure you have a List of data points to use in your chart. Each data point must include a label and a numerical value.
 

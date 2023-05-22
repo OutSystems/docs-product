@@ -27,7 +27,11 @@ This example shows how to create a simple Column Chart with data labels.
 
     ![Add more data points](images/chartcolumn-extradatapoints-ss.png)
 
+1. To show the values of each data point, click on the **SeriesStyling** in the **AddOns** placeholder, and on the **Properties** tab, set the **ShowDataPointValues** property to **True**.
 
+    Since the **SeriesName** property was not set, this property will be applied to all series.
+
+    ![Show data point values](images/chartcolumn-showdatapoint-ss.png)
 
 After following these steps, you can publish your module:
 

@@ -24,7 +24,7 @@ OutSystems provides a collection of charts that allow you to build your screens 
 
 |Widget|Description |
 |---|---|
-|AreaChart|The Area Chart is composed of data points plotted and connected by a line with a colored area below the line.|
+|Area Chart|The Area Chart is composed of data points plotted and connected by a line with a colored area below the line.|
 |Bar Chart|The Bar Chart is a simple, two-dimensional chart where rectangular bars are placed along the X Axis with bar length representing the value for a specific category.|
 |Column Chart|The Column Chart is a two-dimensional chart where rectangular bars are placed along the Y Axis with bar height representing the value for a specific category.|
 |Donut Chart|The Donut Chart is a circular graph that displays data in rings, where each ring represents a category and the size of the ring corresponds to the value of the data being presented.|
@@ -38,18 +38,18 @@ You can enrich your charts with addons to customize their elements, such as axes
 
 |Widget|Description|
 |---|---|
-|ChartXAxis|Chart addon used to customize the horizontal axis of the chart, though if the chart is inverted this is the vertical axis (for example, the Bar Chart).|
-|ChartYAxis|Chart addon used to customize the vertical axis of the chart, though if the chart is inverted this is the horizontal axis (for example, the Bar Chart).|
+|ChartXAxis|Chart addon used to customize the horizontal axis of the chart. However, if the chart is inverted, this is the vertical axis (for example, the Bar Chart).|
+|ChartYAxis|Chart addon used to customize the vertical axis of the chart. However, if the chart is inverted, this is the horizontal axis (for example, the Bar Chart).|
 |ChartLegend|Chart addon used to customize the box containing a symbol and a name for each series or data point in the chart.|
 |ChartSeriesStyling|Chart addon used to customize the styling of the chart series. You can bind it to a specific series or apply the styles to all of them.|
 
 ## APIs
 
-Collection of all client actions that will trigger the API methods to customize and extend the charts and addon blocks.
+Collection of all client actions that trigger the API methods to customize and extend the charts and addon blocks.
 
 |Widget|Description|
 |---|---|
-|SetHighchartsChartConfigs|Extend the chart block properties with additional Highcharts configurations.|
+|SetHighchartsChartConfigs|Extend the chart block properties with additional Highcharts configurations. You can find all Highcharts chart properties [here](https://api.highcharts.com/highcharts/).|
 |SetHighchartsXAxisConfigs|Extend the x-axis properties with additional Highcharts configurations. You can find all Highcharts chart properties [here](https://api.highcharts.com/highcharts/xAxis).|
 |SetHighchartsYAxisConfigs|Extend the y-axis properties with additional Highcharts configurations. You can find all Highcharts chart properties [here](https://api.highcharts.com/highcharts/yAxis).|
-|SetHighchartsSeriesConfigs|Extend the series properties with additional Highcharts configurations.|
+|SetHighchartsSeriesConfigs|Extend the series properties with additional Highcharts configurations. You can find all Highcharts chart properties [here](https://api.highcharts.com/highcharts/series).|

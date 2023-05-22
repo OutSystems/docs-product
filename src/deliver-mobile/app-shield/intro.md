@@ -194,7 +194,7 @@ These are the values available in the **AppShield** configuration JSON.
 | BlockUntrustedScreenreaders     | boolean      | Android      | If set to true, detects and blocks untrusted screen readers.                                      |
 | DisableAppShielding             | boolean      | iOS, Android | Activates or deactivates App Shield.
  | ExitOnURL | URL value | iOS, Android|If an app feature is blocked due to a configured policy of the **AppShield** plugin, the default browser will open the URL which may explain the problem to the user. See ExitOnURL for additional information.                                                           |
-| GooglePlayAppSigningCertificate | Text(Base64) | iOS, Android | Google Play App Signing certificate.                                                              |
+| GooglePlayAppSigningCertificate | Text(Base64) | Android | Google Play App Signing certificate.                                                              |
 | RemoveQueryAllPackagesPermission | boolean | Android | If set to true, it removes the app ability to check other installed applications. See more information [here](query-all-packages.md).                                                              |
 | android                         | JSON value   | Android      | The key denoting values that apply to the Android devices.                                        |
 | global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.                                    |

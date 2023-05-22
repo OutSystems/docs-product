@@ -33,12 +33,11 @@ In this example, we create a Dropdown Server Side for a list of employees. When 
 
 1. From the Toolbox, drag the Dropdown Server Side widget into the Main Content area of your application's screen.
 
-    ![Drag widget to screen](<images/dropdownserver-drag-ss.png>)
+    ![Drag widget to the screen](<images/dropdownserver-drag-ss.png>)
 
 1. Select and right-click your screen name, and select **Fetch Data from Database**.
 
     ![Fetch database](<images/dropdownserver-db-ss.png>)
-
 
 1. To add a database entity, click the **Aggregate editor** window, and from the **Select Source** pop-up, select the relevant database entity and click **Select**.
 
@@ -50,7 +49,7 @@ In this example, we create a Dropdown Server Side for a list of employees. When 
 
     ![Get Employee Aggregate](<images/dropdownserver-getemployee-ss.png>)
 
-1. Return to your screen by double-clicking the screen name. Select the D**ropdown Server Side** widget, go to the **Widget Tree** tab, expand **Balloon Content** and select **List**. 
+1. Return to your screen by double-clicking the screen name. Select the **Dropdown Server Side** widget, go to the **Widget Tree** tab, expand **Balloon Content**, and select **List**. 
 
     ![Navigate to List](<images/dropdownserver-list-ss.png>)
 
@@ -60,7 +59,7 @@ In this example, we create a Dropdown Server Side for a list of employees. When 
 
     ![Enter the List source](<images/dropdownserver-source-ss.png>)
 
-1. Staying on the **Widget Tree** tab, expand the **List** and select the **DropdownServerSideItem**. In the **ItemId** field, enter **GetEmployees.List.Current.Sample_Employee.Id.**
+1. Staying on the **Widget Tree** tab, expand the **List**, and select the **DropdownServerSideItem**. In the **ItemId** field, enter **GetEmployees.List.Current.Sample_Employee.Id.**
 
     ![Enter ItemId](<images/dropdownserver-itemid-ss.png>)
 
@@ -74,13 +73,11 @@ In this example, we create a Dropdown Server Side for a list of employees. When 
 
     ![New client action ](<images/dropdownserver-clientaction-ss.png>)
 
-1. Return to your main screen, add a local variable called **SelectedValue** and set the **Data Type** to **DropdownItem**. 
+1. Return to your main screen, add a local variable called **SelectedValue**, and set the **Data Type** to **DropdownItem**. 
 
-1. Add an expression (``SelectedValue.Text``) to the **SelectedValue** local variable. 
+1. Select the expression inside of the **True** node of the **If** statement inside the **SelectedValues** placeholder and change the **Value** to the **SelectedValue.Text** variable.
 
-    This variable will pass the **SelectedValue** value to the input parameter (created in the next step).
-
-    ![Add expression to Selected Value variable](<images/dropdownserver-selectedvalue-ss.png>)
+    ![Add expression to Selected Value variable](<images/dropdownserver-selectedvalues-ss.png>)
 
 1. Add the relevant logic to the client action.
 
@@ -90,19 +87,17 @@ For this example:
 
        ![Add input parameter to client action](<images/dropdownserver-inputpar-ss.png>)
    
-   1. Add the following logic the expression editor: 
+   1. Select the expression inside the **DropDownItem** placeholder and add the following logic in the expression editor: 
 
         ``GetEmployees.List.Current.Sample_Employee.FirstName + " " + GetEmployees.List.Current.Sample_Employee.LastName``
 
-       ![Add logic to input parameter](<images/dropdownserver-logic-ss.png>)
+       ![Add logic to input parameter](<images/dropdownserver-logic-exp-ss.png>)
 
    1. Add an **Assign** node to the client action and assign the following values:
 
-        * SelectedValue.Text = ItemValue
+        * SelectedValue.Text = EmployeeName
     
         * SelectedValue.Value = ItemId
-
-        ![Add assign to client action](<images/dropdownserver-assign-ss.png>)
 
    1. Add a **Message** to the client action.
 
@@ -110,14 +105,21 @@ For this example:
 
         ``SelectedValue.Text + "(Employee ID: " + SelectedValue.Value + ")"``
 
-        This displays the selected employee's name and their ID.
+        This displays the selected employee's name and ID.
 
-        ![Add amessage to client action](<images/dropdownserver-message-ss.png>)
-
+        ![Add a message to the client action](<images/dropdownserver-message-ss.png>)
     
+   1. Set the **If** statement inside the **BalloonContent** to **GetEmployees.List.Empty**.
+
+        ![Set Balloon Content If condition](<images/dropdownserver-ballooncontent-ss.png>)
+
+   1. Set the remaining properties for the **DropdownServerSide** placeholders. In this example, they are deleted as they are not needed.
+
+        ![Set remaining properties in placeholders](<images/dropdownserver-placeholders-ss.png>)
+
    1. Click **Close**.
 
-After following these steps and publishing the module, you can test the pattern in your app. The results from this example should look something like the following:
+After following these steps and publishing the module, you can test the pattern in your app.
 
 ## Properties
 
@@ -193,4 +195,3 @@ If you are an advanced user, you might want to use the Accordion API (OutSystems
 |GetDropdownServerSideItemItemById|Gets the instance of DropdownServerSideItem by a specific ID.|<li>dropdownServerSideItemId: string</li>|
 |Initialize|Initializes the pattern instance.|<li>dropdownId: string</li>|
 |Initialize|Initializes the pattern instance.|<li>dropdownServerSideId: string</li><li>eventName: string</li><li>callback: OSUIFramework.Callbacks.OSGeneric</li>|
-

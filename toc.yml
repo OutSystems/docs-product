@@ -1837,6 +1837,14 @@
             - href: ref/apis/charts/chart-task-columnbar.md
             - href: ref/apis/charts/chart-task-linearea.md
             - href: ref/apis/charts/chart-json.md
+        # Charts API 2
+        - href: ref/apis/charts-v2/chart-charts-v2.md
+        - topics:
+            - href: ref/apis/charts-v2/chart-data-v2.md
+            - href: ref/apis/charts-v2/chart-intro-v2.md
+            - topics:
+                - href: ref/apis/charts-v2/chart-areachart-v2.md
+                - href: ref/apis/charts-v2/chart-linechart-v2.md
         - href: ref/apis/auto/dbcleaner-api.final.md
         - href: ref/apis/emails-api.md
         - href: ref/apis/auto/enhancedwebreferences-api.final.md

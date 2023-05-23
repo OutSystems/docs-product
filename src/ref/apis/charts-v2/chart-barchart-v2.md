@@ -41,5 +41,6 @@ This example shows how you can create a simple Bar Chart with a customized legen
 
 After following these steps, you can publish your module:
 
-![Example Line Chart](images/chartline-result.png)
+![Example Bar Chart](images/chartbar-result.png)
+
 

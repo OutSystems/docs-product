@@ -15,7 +15,13 @@ This example shows how to create a simple Column Chart with data labels.
 
     ![Drag the Column Chart widget to the screen ](images/chartcolumn-drag-ss.png)
 
-1. On the **Property** tab, expand the **DataPointList** -> **[0]** property and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the column chart. 
+1. On the **Properties** tab, click **[+]** to expand the **DataPointList** property.
+
+    ![Expand the Data Point List property](images/chartcolumn-expand-ss.png)
+
+1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
+
+    This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the column chart. 
 
     ![Set datapoint](images/chartcolumn-datapointlist-ss.png)
 

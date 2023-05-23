@@ -1844,6 +1844,7 @@
             - href: ref/apis/charts-v2/chart-intro-v2.md
             - topics:
                 - href: ref/apis/charts-v2/chart-areachart-v2.md
+                - href: ref/apis/charts-v2/chart-columnchart-v2.md
                 - href: ref/apis/charts-v2/chart-linechart-v2.md
         - href: ref/apis/auto/dbcleaner-api.final.md
         - href: ref/apis/emails-api.md

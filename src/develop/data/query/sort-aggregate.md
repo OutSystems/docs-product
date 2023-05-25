@@ -30,7 +30,7 @@ While defining expressions as values for your variable, you can specify:
 
 ## Example
 
-In the following Sorting Example, a reactive application displays a list of employees, with details about each employee. Users should be able sort by the name of the employee in either ascending or descending order.
+In the following Sorting Example, a reactive application displays a list of employees, with details about each employee. Users should be able to sort by the name of the employee in either ascending or descending order.
 
 1. Open Service Studio, create a new Reactive Web App named SortingExample.
 

@@ -30,6 +30,6 @@ To limit the number of rows, to the rows required in a SQL query, it isn't enoug
 
 The solution is to control the number of rows inside the query:
 
-![](images/limit-rows-sql.png)
+![](images/limit-rows-sql-diag.png)
 
-With this change you no longer rely on the  **&lt;Query&gt;.Count** property to get the correct count of rows complying with the original query conditions and joins.
+By changing your queries to limit the number of retrieved rows, you no longer rely on the **&lt;Query&gt;.Count** property to get the correct count of rows complying with the original query conditions and joins. If you need the total number of rows, you must make a separate query to do that count.

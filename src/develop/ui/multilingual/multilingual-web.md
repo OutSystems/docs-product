@@ -38,6 +38,12 @@ You can translate the following elements of your Module:
 
 From the translation process view, these elements will be considered **translatable resources**. You can select how each translatable resource in your Module is handled - whether it should effectively be translated (text or images that should be different in different languages) or not (for instance, a brand name that is the same across different languages) - using the [Translations Behavior Editor](./translations-editor.md). 
 
+<div class="info" markdown="1">
+
+Starting from Platform Server 11.21.0, default values in consumed REST, SOAP and SAP methods cannot be translated. Check [here](https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#bc-11210-1) for more details.
+
+</div>
+
 ## Add Other Languages
 
 All the Locales are expressed according to the [RFC 1766](https://tools.ietf.org/html/rfc1766) standard format. Here are some examples:

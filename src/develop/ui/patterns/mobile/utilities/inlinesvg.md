@@ -17,6 +17,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 You can use the Inline SVG UI Pattern to change fill and stroke properties or animate the SVG paths.
 
+
 **How to use the Inline SVG UI Pattern**
 
 1. In Service Studio, in the Toolbox, search for `Inline SVG`.
@@ -58,6 +59,43 @@ After following these steps and publishing the module, you can test the pattern 
 Using the example above, the results are as follows:
 
 ![](<images/inlinesvg-1-ss.png>)
+
+**How to make your SVG code accessible**
+
+The following are some guidelines to help ensure your SVG code is accessible:
+
+1. Add **`` <title> ``** and **`` <desc> ``** tags to your code describing the SVG image. You must add the **`` <title> ``** and **`` <desc> ``** tags after the opening **`` <svg> ``** tag and before the **`` <path> ``** tag.
+
+    ```html
+    <svg>
+        <title id="my-title">Descriptive title of the SVG</title>
+        <desc id="my-description">More detailed description of the SVG content</desc>
+         <!-- SVG content goes here -->
+    </svg>
+    ```
+    
+1. Add the **`` aria-describedby ``** attribute to the **`` <svg> ``** tag. 
+
+    ```html
+    <svg aria-describedby="my-title my-description">
+        <title id="my-title">Descriptive title of the SVG</title>
+        <desc id="my-description">More detailed description of the SVG content</desc>
+         <!-- SVG content goes here -->
+    </svg>
+    ```
+    
+1. To define the role of the SVG as an image within the accessibility context, add the **`` role=”img” ``** attribute to the **`` <svg> ``** tag.
+
+   ```html
+    <svg aria-describedby="my-title my-description" role="img">
+        <title id="my-title">Descriptive title of the SVG</title>
+        <desc id="my-description">More detailed description of the SVG content</desc>
+         <!-- SVG content goes here -->
+    </svg>
+    ```
+
+After completing these steps, set your SVG code to the SVGCode property on the InlineSVG pattern.
+
 
 ## Properties
 

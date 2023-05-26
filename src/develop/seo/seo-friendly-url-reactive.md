@@ -231,20 +231,20 @@ The file used to import the redirect rules must comply with the following:
 
 * Each line must have the following attributes in each column:
 
-    Column 1: _Old URL_
+    Column 1: `Old URL`
     : The URL that will be matched with this rule
     : Mandatory: Yes
 
-    Column 2: _New URL_
+    Column 2: `New URL`
     : The URL that will result in the redirection using this rule
     : Mandatory: Yes
 
-    Column 3: _HTTP Status Code_
+    Column 3: `HTTP Status Code`
     : This defines if the redirect is permanent (301) or temporary (302). If the value is numeric but different from 301 or 302, or if it is not defined, it is set as 301 by default.
     : Mandatory: No
     : Expected values: 301 or 302
 
-    Column 4: _IsActive_
+    Column 4: `IsActive`
     : This defines if the rule is active after the import or not. If the value is not defined, it is set as False by default.
     : Mandatory: No
     : Expected values: True or False

@@ -229,19 +229,11 @@ In PWAs, the app takes pictures with the default camera settings that depend on 
 
 ## Video options
 
-Change the properties of the **RecordVideo** action to adjust how the app handles the images.
+Change the properties of the **RecordVideo** action to adjust how the app handles the video.
 
 |Property|Description|
 |-|-|
 |**SaveToGallery**|If **True**, the app saves the video to the device.|
-|**AllowEdit**|If **True**, an Edit step is added after the take or choose picture step.|
-
-<div class="info" markdown="1">
-
-The properties of the **RecordVideo** action apply to native mobile apps only.
-In PWAs, the app takes video with the default camera settings that depend on the device's browser.
-
-</div>
 
 ### MABS compatibility
 

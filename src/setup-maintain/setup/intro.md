@@ -202,7 +202,7 @@ Do the following:
 
 1. Additionally, for Platform Server version 11.21.0 or above, you need to manually install the following binary in the server to ensure the correct behavior of the SEO feature:
     
-    **Microsoft Visual C++ 2015-2019 Redistributable (x64) - v14.26.28720** ([Download the Installer](https://aka.ms/vs/16/release/14.26.28720/VC_Redist.x64.exe) from Microsoft)
+    **Microsoft Visual C++ 2015-2022 Redistributable (x64)** ([Download the Installer](https://aka.ms/vs/17/release/vc_redist.x64.exe) from Microsoft)
 
 1. Run the installation package as usual. The binaries you downloaded from Microsoft will be detected by the installation package.
 

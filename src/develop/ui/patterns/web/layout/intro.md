@@ -18,4 +18,4 @@ You can add the following pre-existing web blocks to the Layout block:
 * [Layout Popup](layout-popup.md) - web block useful for displaying additional off-canvas information
 * [Layout Side Menu](layout-sidemenu.md) - web block for a side menu
 * [Layout Top Menu](layout-topmenu.md) - web block for a fixed top menu and is useful for simple apps, without a complex navigation structure
-* [Login Form](layout-loginsplit.md) - web block that can be used to accelerate the creation of a custom login page
+* [Login Form](loginform.md) - web block that can be used to accelerate the creation of a custom login page

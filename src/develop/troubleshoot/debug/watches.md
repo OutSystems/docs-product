@@ -8,9 +8,9 @@ platform-version: o11
 
 # Watches
 
-Watches allow you to examine module elements in Service Studio while debugging your module. These elements are always displayed in the Watches Tab, regardless of being in or out of scope of the element being debugged. This behavior contrasts with the rest of the [scope tabs](<debugger-ui-reference.md#scope-tabs-area>), where the displayed content depends on the current scope.
+Watches allow you to examine module elements in Service Studio while debugging your module. These elements are always displayed in the **Watches** tab, regardless of being in or out of the scope of the element being debugged. This behavior contrasts with the rest of the [scope tabs](<debugger-ui-reference.md#scope-tabs-area>), where the displayed content depends on the current scope.
 
-Using watches you can inspect:
+Using watches, you can inspect the following:
 
 * Parameter values
 * Variables
@@ -19,29 +19,36 @@ Using watches you can inspect:
 
 ## Add a Watch
 
-To watch a module element do the following:
+To watch a module element, follow these steps:
 
 1. Run the module in Debug mode.
-1. Right-click the element to watch, either in the Scope tabs or in the module tree.
-1. Select the "Add To Debug Watches" option in the pop-up menu. 
+1. Right-click the element you want to watch.
+1. Select the **Add To Debug Watches** option. 
 
-All watched module elements are alphabetically listed in the Watches Tab. 
+    ![Add a watch](images/watches-add-ss.png)
 
+All watched module elements are alphabetically listed in the **Watches** tab. 
+
+![Watches tab](images/watches-tab-ss.png)
 
 ## Remove a Watch
 
-To remove a watch from a module element do the following:
+To remove a watch from a module element, follow these steps:
 
-1. Right-click on the watched element in the Watches Tab.
-1. Select the option "Remove Watch" in the pop-up menu.
+1. In the **Watches** tab, right-click the watched element you want to remove.
+1. Select the **Remove Watch** option.
+
+    ![Remove a watch](images/watches-remove-ss.png)
 
 
 ## Remove All Watches
 
-To remove all watches do the following:
+To remove all watches, follow these steps:
 
-1. Right-click anywhere on the Watches Tab area.
-1. Select the "Remove All Watches" option in the pop-up menu. 
+1. Right-click anywhere in the **Watches** tab area.
+1. Select the **Remove All Watches** option. 
 
-Alternatively, select the "Remove All Watches" option available in the Debugger menu.
+    ![Remove all watches](images/watches-removeall-ss.png)
+
+Alternatively, you can select the **Remove All Watches** option available in the **Debugger** menu.
 

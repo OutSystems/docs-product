@@ -41,6 +41,6 @@ This example shows how you can create a simple Radar Chart with multiple series 
 
     ![Set the Series type](images/chartradar-series-type-ss.png)
 
-After following these steps you can publish your module:
+After following these steps, you can publish your module:
 
 ![Result](images/chartradar-result.png)

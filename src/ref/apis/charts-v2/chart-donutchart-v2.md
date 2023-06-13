@@ -35,6 +35,6 @@ This example shows how you can create a simple Donut Chart.
 
     ![Set inner size of donut](images/chartdonut-innersize-ss.png)
 
-After following these steps you can publish your module:
+After following these steps, you can publish your module:
 
 ![Result](images/chartdonut-result.png)

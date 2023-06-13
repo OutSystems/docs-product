@@ -39,7 +39,6 @@ This example shows how you can create a simple Pie Chart showing the labels of t
 
     ![Delete legend](images/chartpie-delete-legend-ss.png)
 
-After following these steps you can publish your module:
+After following these steps, you can publish your module:
 
-
-![DResult](images/chartpie-result.png)
+![Result](images/chartpie-result.png)

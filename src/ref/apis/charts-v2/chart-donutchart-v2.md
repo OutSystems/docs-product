@@ -1,9 +1,8 @@
 ---
 tags:
 summary: Learn how to create a simple Donut Chart.
-
 locale: en-us
-guid: C623895D-2A0A-4259-9B65-88C68142E2C9
+guid: 728922B7-1DEF-4E55-AB59-7641DAA85C21
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---

@@ -1,6 +1,6 @@
 ---
 tags:
-summary: 
+summary: Learn how to create a simple Pie Chart showing the labels of the data points.
 locale: en-us
 guid: 58AC97D9-F40C-4B66-825B-4E0D3F6CD41E
 app_type: traditional web apps, mobile apps, reactive web apps

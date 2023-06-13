@@ -11,8 +11,6 @@ platform-version: o11
 
 This example shows how you can create a simple Radar Chart with multiple series types.
 
-
-
 1. From the Toolbox, drag the **Radar Chart** widget to the Screen.
 
     ![Drag the Radar Chart widget to the screen ](images/chartradardrag-ss.png)

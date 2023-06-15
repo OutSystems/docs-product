@@ -7,3 +7,15 @@ platform-version: o11
 ---
 
 # Element Properties Reference
+
+For more information about the Element properties, see the following articles:
+
+* [Extension Properties](extension.md)
+* [Action Properties](action.md)
+* [Imported Actions Properties](net-assembly-import-action.md)
+* [Action Parameter Properties](action-parameter.md)
+* [Structure Properties](structure.md)
+* [Structure Attribute Properties]()
+* [Entity Properties](entity.md)
+* [Entity Attribute Properties](entity-attribute.md)
+* [Resource Properties](resource.md)

@@ -10,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Check <a href="https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternOverview" title="Demos and previews of the patterns">UI Patterns</a> on the OutSystems UI website for the list of patterns and their previews.
+Check <a href="https://outsystemsui.outsystems.com/OutsystemsUiWebsite/PatternsOverview" title="Demos and previews of the patterns">UI Patterns</a> on the OutSystems UI website for the list of patterns and their previews.
 
 </div>
 

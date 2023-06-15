@@ -1844,7 +1844,12 @@
             - href: ref/apis/charts-v2/chart-intro-v2.md
             - topics:
                 - href: ref/apis/charts-v2/chart-areachart-v2.md
+                - href: ref/apis/charts-v2/chart-barchart-v2.md
+                - href: ref/apis/charts-v2/chart-columnchart-v2.md
+                - href: ref/apis/charts-v2/chart-donutchart-v2.md
                 - href: ref/apis/charts-v2/chart-linechart-v2.md
+                - href: ref/apis/charts-v2/chart-piechart-v2.md
+                - href: ref/apis/charts-v2/chart-radarchart-v2.md
         - href: ref/apis/auto/dbcleaner-api.final.md
         - href: ref/apis/emails-api.md
         - href: ref/apis/auto/enhancedwebreferences-api.final.md
@@ -1874,7 +1879,6 @@
                 - href: ref/apis/lifetime-deployment/examples/api-request-code.md
                 - href: ref/apis/lifetime-deployment/examples/api-register-env.md
                 - href: ref/apis/lifetime-deployment/examples/api-unregister-env.md
-
         # LifeTime API v1
         - href: ref/apis/auto/lifetime-deployment-api-v1.final.md
         - href: ref/apis/auto/lifetime-sdk.final.md

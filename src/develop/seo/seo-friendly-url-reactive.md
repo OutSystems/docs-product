@@ -212,12 +212,45 @@ To use a redirect rule, you should consider the following redirect rules used by
 ### Managing redirect rules  
 
 To manage redirect rules you need to know the following:  
-* **Base URL**, which is the string to match the rule (for example, `old.example.com`).
-* **Replace With**, which is the replacement string for the URL (for example, `new.example.com`).
+* **Old URL**, which is the string to match the rule (for example, `old.example.com`).
+* **New URL**, which is the replacement string for the URL (for example, `new.example.com`).
 
 To create, edit, delete, or disable redirect rules go to **Service Center** > **Administration** > **SEO URLs** > **Redirect Rules List**.  
 
 ![Managing redirect rules](images/manage-redirect-rules-sc.png)  
+
+You can import or export redirect rules using Excel files. To import redirect rules using an Excel file, select **Import from Excel**.
+
+![Import from excel](images/import-excel-sc.png)
+
+The file used to import the redirect rules must comply with the following:
+
+* The file extension must be `.XLS` or `.XLSX`
+
+* One SEO redirect rule per line
+
+* Each line must have the following attributes in each column:
+
+    Column 1: `Old URL`
+    : The URL that will be matched with this rule
+    : Mandatory: Yes
+
+    Column 2: `New URL`
+    : The URL that will result in the redirection using this rule
+    : Mandatory: Yes
+
+    Column 3: `HTTP Status Code`
+    : This defines if the redirect is permanent (301) or temporary (302). If the value is numeric but different from 301 or 302, or if it is not defined, it is set as 301 by default.
+    : Mandatory: No
+    : Expected values: 301 or 302
+
+    Column 4: `IsActive`
+    : This defines if the rule is active after the import or not. If the value is not defined, it is set as False by default.
+    : Mandatory: No
+    : Expected values: True or False
+
+If an import succeeds, all previous existent redirect rules in Service Center are replaced with the new ones imported.
+If the import fails, no redirect rules are deleted or added. In this scenario, Service Center shows a custom error message, pointing to the cause of the error.
 
 ## URL prioritization  
 

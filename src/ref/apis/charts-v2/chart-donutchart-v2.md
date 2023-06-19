@@ -38,3 +38,4 @@ This example shows how you can create a simple Donut Chart.
 After following these steps, you can publish your module:
 
 ![Result](images/chartdonut-result.png)
+

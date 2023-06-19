@@ -44,3 +44,4 @@ This example shows how you can create a simple Radar Chart with multiple series 
 After following these steps, you can publish your module:
 
 ![Result](images/chartradar-result.png)
+

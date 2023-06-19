@@ -42,3 +42,4 @@ This example shows how you can create a simple Pie Chart showing the labels of t
 After following these steps, you can publish your module:
 
 ![Result](images/chartpie-result.png)
+

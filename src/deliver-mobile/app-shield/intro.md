@@ -65,14 +65,22 @@ To keep your apps and data secure, OutSystems recommends that you always use the
 
 To ensure the integrity and protection of your apps with **AppShield**, you must meet the following requirements.
 
-* You installed the **AppShield** plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge.
 * You have a license for **AppShield**.
 * You're using MABS 6.3 or later. Check out [MABS and mobile operating systems life cycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for more information about the supported operating systems.
 * The OutSystems Platform Server is running on version 11.
 
+## How to enable AppShield on your mobile apps
+
+To protect your mobile app using the AppShield plugin, you should follow these steps:
+
+1. **Install the AppShield** plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge.
+2. **Add the dependencies for AppShield** plugin on each mobile app you want to protect.
+3. **Generate and distribute a new mobile package** protected with AppShield.
+
 Note the following:
 
-* You need to rebuild and redistribute the mobile apps protected with **AppShield**.
+* All AppShield capabilities, except [Screen reader](https://success.outsystems.com/documentation/11/delivering_mobile_apps/harden_the_protection_of_mobile_apps_with_appshield/appshield_protection_features/#android-screen-reader) and [Keylogger](https://success.outsystems.com/documentation/11/delivering_mobile_apps/harden_the_protection_of_mobile_apps_with_appshield/appshield_protection_features/#keylogger-protection) detection, are enabled by default.
+* If any additional configuration is needed, please check the [Configuration](#configuration) section.
 * The app file size increases after hardening the security.
 * MABS takes more time to create a hardened build.
 

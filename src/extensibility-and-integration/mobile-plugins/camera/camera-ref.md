@@ -23,19 +23,6 @@ IsAvailable|Output|Boolean|Indicates if the plugin is available ('True') or not 
 IsPWA|Output|Boolean|Indicates if the browser is available for running Progress Web Apps ('True') or not ('False').
 Error|Output|Error|Displays detailed information of an error, if applicable.
 
-#### CaptureMedia
-
-Opens the device's camera and allows the user to record a video, capture a picture, or both.
-
-Parameter|Type|Data Type|Description
--|-|-|-
-CameraMode|Input|[MediaType Entity](#mediatype-static-entity)|Sets which camera mode will be available, if photo mode, video mode, or both.
-SaveToGallery|Input|Boolean|Sets if the captured media will be saved automatically in the device’s gallery.
-AllowEdit|Input|Boolean|Sets if the media can be edited just after being captured. If 'True', the end-user will be redirected to an edit screen.
-MediaResult|Output|[MediaResult Structure](#mediaresult-data-structure)|Returns the captured media information.
-Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
-Error|Output|Error|Displays detailed information of an error, if applicable.
-
 #### RecordVideo
 
 Opens the device's camera and allows the user to record a video.
@@ -100,16 +87,6 @@ Parameter|Type|Data Type|Description
 -|-|-|-
 AllowEdit|Input|Boolean|Sets if the media captured must be sent to an edit screen right after the capturing.
 ImageCaptured|Output|Structure|Returns the captured image and its information.
-Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
-Error|Output|Error|Displays detailed information of an error, if applicable.
-
-#### EditVideo
-Opens a screen to edit a given video.
-
-Parameter|Type|Data Type|Description
--|-|-|-
-VideoURI|Input|Text|Sets the URI of the video' to be edited.
-MediaResult|Output|[MediaResult Structure](#mediaresult-data-structure)|Returns the edited video and its information.
 Success|Output|Boolean|Indicates if the action was successful ('True') or not ('False').
 Error|Output|Error|Displays detailed information of an error, if applicable.
 

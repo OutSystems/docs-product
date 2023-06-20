@@ -12,9 +12,9 @@ platform-version: o11
 OutSystems offers the following charts:
 
 * [Area Chart](chart-areachart-v2.md)
-* Bar Chart
-* Column Chart
-* Donut Chart
+* [Bar Chart](chart-barchart-v2.md)
+* [Column Chart](chart-columnchart-v2.md)
+* [Donut Chart](chart-donutchart-v2.md)
 * [Line Chart](chart-linechart-v2.md)
-* Pie Chart
-* Radar Chart
+* [Pie Chart](chart-piechart-v2.md)
+* [Radar Chart](chart-radarchart-v2.md)

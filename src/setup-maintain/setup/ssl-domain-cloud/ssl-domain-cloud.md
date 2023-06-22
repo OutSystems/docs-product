@@ -25,7 +25,7 @@ Setting up a different SSL domain changes the endpoint URL of the web services e
 
 You'll first need a valid SSL certificate for your chosen domain, this allows your end users to access apps using HTTPS. To acquire a valid certificate, you must own the desired domain address (for example, www.example.com) and:
 
-1. Obtain an SSL certificate from a trusted Certificate Authority with the desired domain. The supported formats are either **PEM** or **PFX** with a maximum private key size of 4096 bits. Contact your Certificate Authority if none of these formats are supplied.
+1. Obtain an SSL certificate from a trusted Certificate Authority with the desired domain. Refer to [How to generate a CSR](https://success.outsystems.com/Support/Enterprise_Customers/Installation/How_to_generate_a_CSR) for more information. The supported formats are either **PEM** or **PFX** with a maximum private key size of 4096 bits. Contact your Certificate Authority if none of these formats are supplied.
 
 1. Create a CNAME Record for the domain address that points directly to the OutSystems Enterprise address your environment uses. An example is acme.outsystemsenterprise.com.
 

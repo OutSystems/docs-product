@@ -159,7 +159,7 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 1. Right-click the **TaskCreateOrUpdate** action and select **Add Output Parameter**. Set its name to **TaskId**.
 
 
-1. In the Output Parameter properties, set the Data Type to **Task Identifier**. This will be the task ID returned by the **CreateOrUpdateTask** that we'll need to pass on to the **SaveOnClick** action.
+1. In the Output Parameter properties, set the Data Type to **Task Identifier**. 
 
     ![Set data type](images/output-data-type-ss.png)
 

@@ -155,11 +155,15 @@ You need to have bidirectional secure communication between the front-end of the
 
 ### AI Mentor Studio
 
-To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work). 
+To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md). 
 
-#### Version 4.3 of the AI Mentor Studio LifeTime probes
+#### Versions 4.2 and 4.3 of the AI Mentor Studio LifeTime probes
 
-From version 4.3 of the AI Mentor Studio LifeTime probes, [AI Mentor Studio](https://aimentorstudio.outsystems.com/) must be able to connect to the environment where you want to perform code analysis. Hence, besides ensuring the destination endpoint (LifeTime Front-End) is reachable, you also need to ensure that the front ends of the environment where you want to perform code analysis accept inbound connections from `aimentorstudio.outsystems.com`.
+If the version of your AI Mentor Studio LifeTime probes is 4.2 or 4.3, the network requirements depend on the authentication method you use to access AI Mentor Studio.
+
+**IT User authentication**  
+
+If you access AI Mentor Studio using IT User authentication, AI Mentor Studio must be able to connect to the environment where you want to perform code analysis. Hence, besides ensuring the destination endpoint (LifeTime Front-End) is reachable, you also need to ensure that the front ends of the environment where you want to perform code analysis accept inbound connections from `aimentorstudio.outsystems.com`.  
 
 Alternatively, ensure that the front ends of the environment used with AI Mentor Studio accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
@@ -169,9 +173,9 @@ LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/
 aimentorstudio.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
 aimentorstudio.outsystems.com|LifeTime Front-End|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
 
-#### Version 4.2 of the AI Mentor Studio LifeTime probes
+**OutSystems account authentication**
 
-Ensure the following destination endpoint is reachable:
+If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable:
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---

@@ -157,9 +157,17 @@ You need to have bidirectional secure communication between the front-end of the
 
 To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md). 
 
-#### Versions 4.2 and 4.3 of the AI Mentor Studio LifeTime probes
+#### Version 4.3 of the AI Mentor Studio LifeTime probes
 
-If the version of your AI Mentor Studio LifeTime probes is 4.2 or 4.3, the network requirements depend on the authentication method you use to access AI Mentor Studio.
+If your AI Mentor Studio LifeTime probes version is 4.3, the network requirements depend on the authentication method you use to access AI Mentor Studio.
+
+**OutSystems account authentication**
+
+If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable:
+
+Source|Destination|Port|Protocol|Notes
+---|---|---|---|---
+LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP|
 
 **IT User authentication**  
 
@@ -173,9 +181,9 @@ LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/
 aimentorstudio.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
 aimentorstudio.outsystems.com|LifeTime Front-End|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
 
-**OutSystems account authentication**
+#### Version 4.2 of the AI Mentor Studio LifeTime probes
 
-If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable:
+Ensure the following destination endpoint is reachable:  
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---

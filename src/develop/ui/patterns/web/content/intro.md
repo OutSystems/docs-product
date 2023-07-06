@@ -1,4 +1,5 @@
 ---
+summary: Content patterns allow you to highlight and display important information to users in different ways, such as warnings, errors, and tooltips.
 locale: en-us
 guid: 0b158172-2203-468c-8242-f48fcccc023c
 app_type: traditional web apps

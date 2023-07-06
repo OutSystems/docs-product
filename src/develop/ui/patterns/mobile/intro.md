@@ -19,4 +19,3 @@ The following components and UI patterns are specially designed to address commo
 
 ![](images/UI_Mobile_Patterns_1.png)
 
-OutSystems UI Mobile Framework offers you different patterns that you can drag and drop to the screen for a great mobile experience.

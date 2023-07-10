@@ -90,11 +90,11 @@ To set up a notification back-end service, do the following:
 
 At this point, you can start to create the UI for your notification back-end service. For example, associate a **SendNotifcationToUsers** method to a button to send a notification to all users on the associated Firebase project (using an app with the Cloud Messaging plugin).
 
-![Create the UI for your notification](images/fcm-rest-call.png)
+![Create the UI for your notification](images/fcm-key-sender-config-ss.png)
 
 You can get the values for the **FCMServerKey** and **SenderID** parameters from the Firebase Console in the **Cloud Messaging** tab of the **Project Settings** page.
 
-![Get parameter values](images/fcm-key-sender-config-ss.png)
+![Get parameter values](images/fcm-rest-call.png)
 
 Other methods available are **SendNotificationToTopics**, **SendSilentNotificationToUsers**, and **SendSilentNotificationToTopics**.
 

@@ -80,7 +80,18 @@ Protection available specific to Android apps.
     "value": "true"
 },
 
-After activating this feature you will block all screen readers (other than the system ones);
+When you activate this feature, all screen readers, except system ones, are blocked. To allow the use of some specific screen reader software, you must add the  "AddTrustedScreenReaderSigner" extensibility with the hash value of the screen reader software that you want to allow. You can allow multiple screen reader software by adding "AddTrustedScreenReaderSigner" as many times as needed. See the following example:
+
+{
+    "name": "AddTrustedScreenReaderSigner",
+    "value": "16a14259f274eaafc190a0fcffa3a59c822b99d09f259e0ed3147c01e24b0179"
+},
+{
+    "name": "AddTrustedScreenReaderSigner",
+    "value": "b6bf61861c71c93ad26d84fc3e5e2c1ddb662ffb9f871904be8f5697adb0c5e0"
+},
+
+For more information, see [how to get the applicaiton hash](#how-to-get-the-applicaiton-hash)
 
 ### Untrusted keyboard detection { #android-untrusted-keyboard }
 
@@ -92,6 +103,19 @@ After activating this feature you will block all screen readers (other than the 
     "name": "BlockUntrustedKeyboards",
     "value": "true"
 },
+
+To allow the use of some specific keyboard software, you must add the "AddTrustedKeyboardSigner" extensibility with the hash value of the  keyboard software that you want to allow. You can allow multiple keyboard software by adding "AddTrustedKeyboardSigner" as many times as needed. See the following example:
+
+{
+    "name": "AddTrustedKeyboardSigner",
+    "value": "ea43e0f05f6ef9e5d16283d90504749d4e03630de7ea792c70f72b9be6c02e5e"
+},
+{
+    "name": "AddTrustedKeyboardSigner",
+    "value": "9ac6ca814a945e5aaed450614a99427912f4d2751fb044ea2250e940e1e95e46"
+},
+
+For more information, see [how to get the applicaiton hash](#how-to-get-the-applicaiton-hash)
 
 ### Task hijacking protection
 
@@ -124,6 +148,26 @@ Protection available specific to iOS apps.
 * **What happens:** On positive detections blocks system screenshots.
 * **Is it configurable?:** Yes, this protection feature can be disabled. See [AppShield Configuration](intro.md#configuration)
 
+## How to get the application hash
 
+To get the hash of the application that you want to allow, follow these steps:
+- Download the [PubkeyHash.jar here](resources/PubkeyHash.jar)
+- Run the PubkeyHash.jar in the terminal with the software apk that you want to allow as a parameter
+```sh
+> java -jar PubkeyHash.jar app.apk
+ea43e0f05f6ef9e5d16283d90504749d4e03630de7ea792c70f72b9be6c02e5e
+```
 
+### Obtain the apk from Android phone
 
+One way to get the apk is by downloading it directly from an Android phone.
+- On an Android phone, download the software that you want.
+- Use the ```adb shell pm list packages -f -3``` command to find the software path (To filter the list, you can use ```| grep <package>```, replacing ```<package>``` with the package you are looking for).
+```sh
+> adb shell pm list packages -f -3 | grep swiftkey
+package:/data/app/~~wY5boYcbiuH6YBc4e8RL9A==/com.touchtype.swiftkey-CSxEcewNZB_BuMgQV55l8A==/base.apk=com.touchtype.swiftkey
+```
+- Select the full package path out of the list, which is ```package:/data/app/~~wY5boYcbiuH6YBc4e8RL9A==/com.touchtype.swiftkey-CSxEcewNZB_BuMgQV55l8A==/base.apk``` in this example and use the following command to download the apk to your computer.
+```sh
+> adb pull /data/app/~~wY5boYcbiuH6YBc4e8RL9A==/com.touchtype.swiftkey-CSxEcewNZB_BuMgQV55l8A==/base.apk output.apk
+```

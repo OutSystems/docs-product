@@ -27,7 +27,7 @@ The Dropdown Search UI Pattern offers a choice of available options that the use
 
 **How to use the Dropdown Search UI Pattern**
 
-In this example, we create a dropdown search for a list of employees. When the user selects an employee, a message displays the employee's  name and ID.
+In this example, we create a dropdown search for a list of employees. When the user selects an employee, a message displays the employee's name and ID.
 
 1. In Service Studio, in the Toolbox, search for `Dropdown Search`.
 
@@ -41,7 +41,7 @@ In this example, we create a dropdown search for a list of employees. When the u
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    1. Select the widget you want to add from the **OutSystemsUI** module and click **Add Dependency**. 
     
     1. In the Toolbox, search for the widget again.
 
@@ -71,6 +71,10 @@ In this example, we create a dropdown search for a list of employees. When the u
 
     ![Create a new client action](<images/dropdownsearch-handler-ss.png>)
 
+    The **DropdownWidgetId** and **SelectedOptionList** input parameters are automatically generated. 
+
+    ![Create a new client action](<images/dropdownsearch-inputparams-ss.png>)
+
 1. Add the relevant logic to the client action. 
 
     For this example:
@@ -81,7 +85,7 @@ In this example, we create a dropdown search for a list of employees. When the u
 
     1. Click **Close**. 
     
-        This displays the selected employee's name and their ID.
+        This displays the selected employee's name and ID.
 
         ![Add message logic](<images/dropdownsearch-message-ss.png>)
 

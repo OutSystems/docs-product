@@ -15,13 +15,13 @@ All the accelerators are represented by the accelerator icon in the widget toolb
 
 ![Accelerator widget](images/acc-widget-ss.png)
 
-![Accelerator icon](images/acc-icon-ss.png)
+![Accelerators available](images/acc-acclist-ss.png)
 
 ## How to use Accelerators
 
 In Service Studio, open a Screen for editing and follow these steps:
 
-1. Browse or search for Accelerators in the widgets toolbox, for example, the Employees List.
+1. In the Toolbox, browse or search for the Accelerator you want to use in your app, for example, the Check Balance.
 
 1. Drag and drop the Accelerator to your Screen.
 
@@ -39,7 +39,7 @@ However, you can replace this sample data by dragging and dropping your entities
 
 ### Adapt the UI and logic
 
-You can change and adapt the UI and logic to suit your app. To help you with this, OutSystems provide you with plenty of different UI patterns in Service Studio. You can find an overview of all available patterns on the [OutSystems UI website](https://outsystemsui.outsystems.com/outsystemsUiWebsite/PatternsOverview).
+You can change and adapt the UI and logic to suit your app. To help you with this, OutSystems provides you with plenty of different UI patterns in Service Studio. You can find an overview of all available patterns on the [OutSystems UI website](https://outsystemsui.outsystems.com/outsystemsUiWebsite/PatternsOverview).
 
 ### Screen templates
 

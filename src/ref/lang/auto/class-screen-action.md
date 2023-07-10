@@ -9,6 +9,7 @@ platform-version: o11
 
 # Screen Action
 
+Screen Actions allow you to run logic when the user interacts with the screen. Check some examples of outsystems actions, [here](../../../develop/logic/action-web.md#screen-actions).
 
 ## Properties
 

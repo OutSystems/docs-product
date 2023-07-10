@@ -71,12 +71,6 @@ Available in:
   * Database: Function is evaluated before the aggregate is executed.
   * Local Storage: Function is evaluated before the aggregate is executed.
 
-<div class="info" markdown="1">
-
-Don't use the GetUserId() function in the On After Fetch event of Data Actions or client-side Agreggates. The parallel execution of Data Actions and client-side Agreggates in a Screen overrides the session authentication cookie. Therefore, using the GetUserId() function in the On After Fetch event might return an empty value.
-
-</div>
-
 ### Output
 
 Type: UserId  

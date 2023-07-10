@@ -47,7 +47,7 @@ Future revisions of OutSystems may require the installation of an update within 
 
 Keep in mind that you must use the same flavor of database engine for the 3 databases used by the platform (platform and apps, logs, session). Combinations of database engines, for example, using SQL Server for the platform database and Azure SQL database for the logs and or session databases (or any other combination), are not supported.
 
-* Microsoft SQL Server 2019 and compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
+* Microsoft SQL Server 2019 or higher, with compatibility level 150, since Platform Server 11.12.0 <sup>1</sup>
 * Microsoft SQL Server 2017 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2016 (Web Edition or higher edition)<sup>1</sup>
 * Microsoft SQL Server 2014 (Web Edition or higher edition)<sup>1</sup>
@@ -67,6 +67,7 @@ Apart from standard Oracle Database setups, OutSystems Platform 8.0 and onwards 
 * Microsoft .NET Framework 4.8 (supported since Platform Server 11 – Release Oct.2019 CP2) or Microsoft .NET Framework 4.7.2
 * Microsoft Build Tools 2015
 * .NET 6.0 Runtime & Hosting Bundle for Windows
+* Microsoft Visual C++ 2015-2022 Redistributable (x64) (only for Platform Server version 11.21.0 or above)
 
 Future revisions of OutSystems may require the installation of an update within the major versions mentioned in the previous list.
 

@@ -35,15 +35,15 @@ The number of issues listed in AI Mentor Studio is inconsistent across views. Fo
 
 This may occur if you change the target environment of the code analysis probe without first deleting data from AI Mentor Studio. Before you change the target environment, contact [technical support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) to delete existing data. Then follow the [setup procedure](how-setup.md) to configure the new target environment.
 
-## Login issues
+## IT User login issues
 
-When attempting to log into AI Mentor Studio, you might get the following error message:
+When attempting to log into AI Mentor Studio using your IT User account, you might get the following error message:
 
 `It was not possible to sign into AI Mentor Studio. Check here for the solutions.`
 
 ### Cause
 
-The credentials provided to log in aren't valid or the user is blocked. The possible reasons are:
+The credentials provided to log in aren't valid, or the user is blocked. The possible reasons are:
 
 * The username doesn't exist
 

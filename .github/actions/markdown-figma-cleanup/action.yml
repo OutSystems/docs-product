@@ -1,0 +1,10 @@
+name: 'markdown-figma-cleanup'
+
+runs:
+  using: "composite"
+  steps:
+
+  - name: Delete markdown-figma
+    run: rm markdown-figma
+    shell: bash
+

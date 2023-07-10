@@ -1,7 +1,7 @@
 ---
 tags:
 summary: Learn how to create a simple Line Chart with a Spline line and custom markers in OutSystems.
-locale: en-us
+locale: en-uscolumnline
 guid: 0A9D1277-D008-4B96-8BCF-F559BEE3374C
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
@@ -15,7 +15,13 @@ This example shows how you can create a simple Line Chart with a Spline line and
 
     ![Drag the Line Chart widget to the screen ](images/chartline-drag-ss.png)
 
-1. On the **Property** tab, expand the **DataPointList** -> **[0]** property and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the line chart. 
+1. On the **Properties** tab, click **[+]** to expand the **DataPointList** property.
+
+    ![Expand the Data Point List property](images/chartline-expand-ss.png)
+
+1. Click **+[0]** and set the **Label** and **Value** properties using [fixed data](chart-data-v2.md#populate-your-chart-with-fixed-data) or [variable data](chart-data-v2.md#populate-your-chart-with-variable-data). 
+
+    This example uses fixed data. These properties define the first data point. Each data point corresponds to a point on the line chart. 
 
     ![Set datapoint](images/chartline-datapoint-ss.png)
 
@@ -37,7 +43,7 @@ This example shows how you can create a simple Line Chart with a Spline line and
 
 1. Expand the **Marker** property and set the extra configurations to customize the marker.
 
-    ![SSet marker properties](images/chartline-marker-ss.png)
+    ![Set marker properties](images/chartline-marker-ss.png)
 
 After following these steps, you can publish your module:
 

@@ -19,6 +19,10 @@ In **Service Studio**, click the **1 Publish** button to compile the code and pu
 
 ![1-Click publish in Service Studio](images/1-publish-ss.png)
 
+In **Service Center**, click the **Publish** button. 
+
+![Publish in Service Center](images/publish-sc.png)
+
 ## Deploy
 
 Deploying an app takes a version of the app from one environment and makes it available to a defined target environment, such as Quality or Production.  

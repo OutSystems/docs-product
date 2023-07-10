@@ -9,7 +9,7 @@ platform-version: o11
 
 # Troubleshoot OutSystems cache invalidation service
 
-This article gives you an overview on how to troubleshoot [cache invalidadtion](intro.md) service issues, in OutSystems 11.
+This article gives you an overview on how to troubleshoot [cache invalidation](intro.md) service issues, in OutSystems 11.
 
 The default RabbitMQ batch scripts folder mentioned in the sections below is the following:
 

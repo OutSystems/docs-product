@@ -15,12 +15,6 @@ platform-version: o11
 
 * Service Studio 11.53.40 
 
-    <div class="info" markdown="1">
-
-    Service Center log redaction is currently not supported for inputs that belong to multipart/form-data requests.
-
-    </div>
-
 Multipart/form-data allows you to submit binary data and multiple data types in a single request. For example, you can use these requests for file uploads and transferring a file with a JSON object. 
 
 **Note**: To upload large files to your applications (not just when using REST APIs), you may need to increase the maximum request length allowed by the application server.
@@ -96,3 +90,9 @@ In case one of these verifications fails, an error displays on the **TrueChange*
 ## Callbacks
 
 When consuming a REST API with callbacks, you can add logic to customize the information sent in requests or received in responses. Use the **OnBeforeRequest** callback to modify the information of the original request, such as the URL, request text, or headers. The callback receives an **HTTPRequest** structure representing the original request and produces a customized request. For more information on how to customize specific parts of a multipart/form-data request, see [Simple Customizations](simple-customizations.md#multipart).
+
+<div class="info" markdown="1">
+
+Service Center log redaction is not supported when the request text property is changed inside the **OnBeforeRequest** callback.
+
+</div>

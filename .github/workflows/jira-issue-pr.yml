@@ -1,0 +1,59 @@
+name: JIRA
+
+on:
+  workflow_call:
+    inputs:
+      pull-request:
+        description: "The Pull Request number"
+        type: string
+        required: true
+      pull-request-title:
+        description: "The Pull Request title"
+        type: string
+        required: true
+      ignore:
+        description: "Skip check"
+        type: boolean
+        required: true
+
+concurrency: 
+  group: jira-pr-${{ github.ref }}
+  cancel-in-progress: true
+
+run-name: "Validate JIRA issue in ${{ github.ref_name }}"
+
+jobs:
+  find-jira-issue:
+    name: Find JIRA issue
+
+    if: inputs.pull-request != ''
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Skip JIRA check'
+      if: inputs.ignore != false
+      run: |
+        echo "::warning title=JIRA::JIRA issue check skipped for Pull Request https://github.com/${{ github.repository }}/pull/${{ inputs.pull-request }}." 
+
+    - name: JIRA
+      id: jira
+      if: inputs.ignore == false
+      uses: phorest/regex-action@v1.0.3
+      with:
+        regex_pattern: ${{ vars.JIRA_REGEX_PATTERN }}
+        regex_flags: 'gim'
+        search_string: ${{ inputs.pull-request-title }}
+
+    - name: 'Print JIRA issue'
+      if: steps.jira.outputs.first_match != ''
+      run: |
+        echo "::notice title=JIRA issue ${{ steps.jira.outputs.first_match }}::${{ vars.JIRA_URL }}${{ steps.jira.outputs.first_match }}" 
+
+    - name: 'Missing JIRA issue'
+      uses: actions/github-script@v6
+      if: inputs.ignore == false && steps.jira.outputs.first_match == ''
+      with:
+        script: |
+            core.setFailed('Pull Request #${{ inputs.pull-request }} title does not contain a JIRA issue.');
+  

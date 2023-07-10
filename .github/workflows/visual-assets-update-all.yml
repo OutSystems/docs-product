@@ -1,0 +1,130 @@
+name: Update ALL Visual Assets
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+     - 'master'
+     - 'main'
+  schedule:
+    - cron: "0 0 * * 3"
+  issue_comment:
+    types: [created]
+
+concurrency:
+  group: visual-assets-all-${{ github.ref }}
+  cancel-in-progress: true
+
+run-name: "Update ALL visual assets in ${{ github.ref_name }}"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest  
+
+    steps:
+    - name: Acknowledge Comment - Start
+      id: check
+      uses: khan/pull-request-comment-trigger@v1.1.0
+      if: github.event_name == 'issue_comment'
+      with:
+        trigger: 'Update'
+        reaction: eyes
+      env:
+        GITHUB_TOKEN: '${{ secrets.TOOLS_PAT }}'
+
+    - name: Checkout
+      if: (github.event_name == 'issue_comment' && steps.check.outputs.triggered == 'true') || github.event_name != 'issue_comment'
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 1
+  
+    - name: 'Download markdown-figma'
+      if: (github.event_name == 'issue_comment' && steps.check.outputs.triggered == 'true') || github.event_name != 'issue_comment'
+      uses: ./.github/actions/markdown-figma-download
+
+    - name: 'Update visual assets'
+      if: (github.event_name == 'issue_comment' && steps.check.outputs.triggered == 'true') || github.event_name != 'issue_comment'
+      uses: ./.github/actions/markdown-figma
+      with:
+        max-updates: ${{ vars.FIGMA_EXPORT_FILES_LIMIT }}
+        figma-token: ${{ secrets.FIGMA_API_TOKEN }}
+        input-path: src/
+        similarity: ${{ vars.FIGMA_SIMILARITY_THRESHOLD }}
+        report-file: report.md
+
+    - name: 'Cleanup markdown-figma'
+      if: (github.event_name == 'issue_comment' && steps.check.outputs.triggered == 'true') || github.event_name != 'issue_comment'
+      uses: ./.github/actions/markdown-figma-cleanup
+
+    - name: 'Generate PR body'
+      id: get-pr-body
+      if: (github.event_name == 'issue_comment' && steps.check.outputs.triggered == 'true') || github.event_name != 'issue_comment'
+      run: |
+        body=$(cat report.md)
+        delimiter="$(openssl rand -hex 8)"
+        echo "report<<$delimiter" >> $GITHUB_OUTPUT
+        echo "Validate each of the visual assets in this Pull Request." >> $GITHUB_OUTPUT
+        echo "If **ALL** changed files are valid, approve and **merge** the pull request, then delete the branch." >> $GITHUB_OUTPUT
+        echo "A new execution of the workflow will be executed afterwards." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "Otherwise, if at least one of the files is **NOT** valid then:" >> $GITHUB_OUTPUT
+        echo "1. If the issue can be fixed in Figma, open the corresponding Figma file and fix it." >> $GITHUB_OUTPUT
+        echo "1. If the issue requires changes to the repository, then fix the issue in '${{ github.ref }}' (via a separate Pull Request if necessary)." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "After all issues are fixed, add a comment to this pull request with 'Update'. This will trigger a new execution of the workflow." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "On the next execution of this workflow, the updated visuals will be exported from Figma and the Pull Request will be created/updated." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "---" >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "Each visual asset is identified with a tag." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Delete** - No export defined in Figma, and not used in the corresponding Markdown file. Might be used elsewhere." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Missing in Figma** - Used in markdown, and exists in the repository, but there is no asset with an export defined in Figma." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Not used** - Export defined in Figma but the asset is not used in the corresponding Markdown file." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Not at top-level** - The export defined in Figma is from an element defined inside another one." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Duplicated** - There are multiple elements with the same name. Only one allowed." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Hidden** - Element has exports defined but it is hidden." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Similarity @ NN %** - Visual mismatch between Figma and the current file in the repository." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "Below is a report of the changes in this Pull Request." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "---" >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "$body" >> $GITHUB_OUTPUT
+        echo "$delimiter" >> $GITHUB_OUTPUT
+
+      
+    - name: Create Pull Request
+      if: (github.event_name == 'issue_comment' && steps.check.outputs.triggered == 'true') || github.event_name != 'issue_comment'
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.TOOLS_PAT }}
+        commit-message: Update visual assets in ${{ github.ref_name }}
+        signoff: false
+        branch: pr-${{ github.ref_name }}-figma
+        delete-branch: false
+        title: Update visual assets
+        reviewers: ${{ github.actor	}}
+        body: ${{ steps.get-pr-body.outputs.report }}
+        draft: true
+        labels: figma
+        add-paths: |
+          **.svg
+          **.png
+          **.gif
+
+    - name: Acknowledge Comment - Finish
+      uses: khan/pull-request-comment-trigger@v1.1.0
+      if: github.event_name == 'issue_comment'
+      with:
+        trigger: 'Update'
+        reaction: rocket
+      env:
+        GITHUB_TOKEN: '${{ secrets.TOOLS_PAT }}'

@@ -41,13 +41,15 @@ You can use the Button Group UI Pattern to display radio button choices to the u
 
     By default, the pattern contains 3 Button Group Items. You can add or delete as many Button Group Items as required.
 
-1. From the Widget Tree, select the **radio-button** element, and on the **Properties** tab, set the **Variable** and **Value** properties.
+1. From the Widget Tree, select the **radio-button** element, and on the **Properties** tab, set the **Variable** and **Value** properties. 
 
     ![](<images/buttongroup-image-3.png>)
 
 1. Repeat step 3 for each of the **radio-button** elements.
 
 1. Change the **Label** text for each of the Button Group Items.
+
+See [Variables](../../../../../ref/data/handling-data/variables/intro.md) for more infomation on variables.
 
 ## Properties
 

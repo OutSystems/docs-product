@@ -137,6 +137,19 @@ After users select the image, the binary data of the image is in the variable **
 
 ![Open from gallery](images/camera-flow-choose-from-gallery-ss.png)
 
+## Uploading media assets from URIs
+
+You can use the video and picture URIs returned in the **MediaResult** variable, in conjunction with the **FileTransfer** plugin, to upload media files to a server. You can then use the hosted URLs to view the media files in your app.
+
+In the following example, the **UploadFileWithHeaders** client action uploads a video file to the app’s rest endpoint `rest/tickets/video`.
+
+![Upload with headers](images/upload-with-headers-ss.png)
+
+You can upload the video file to an S3 bucket inside the rest endpoint and then use the video's presigned URL with the **Video** widget to play the uploaded video.
+
+![S3 Object Put](images/object-put-ss.png)
+![S3 Object Get PreSignedUrl](images/get-url-ss.png)
+
 ## Image quality and app responsiveness
 
 When you set **100%** image **Quality** or use the **PNG** format, your app handles a large amount of image data.
@@ -193,7 +206,7 @@ The Camera plugin uses a Cordova plugin, for more information check [cordova-plu
 |**TakePicture**|Opens the camera on the user device.|Yes*|
 |**RecordVideo*****|Opens the camera on the user device.|No|
 |**ChooseFromGallery**|Opens the gallery on the user device.|No**|
-|**EditPicture**|Opens an edit interface to edit the picture.|No**|
+|**EditPicture**|Opens an edit interface to edit the picture.|Yes|
 |**PlayVideo**|Opens a native video player to play local files.|No|
 |**ChooseGalleryPicture**|Opens the gallery on the user device.|Yes|
 
@@ -219,6 +232,7 @@ See also the [notes about Quality](#image-quality-and-app-responsiveness).|
 |**SaveToPhotoAlbum**|If **True**, the app saves the image to the device.|
 |**CameraDirection**|Select the front or back camera as the default when taking a new picture.|
 |**AllowEdit**|If **True**, an Edit step is added after the take or choose picture step.|
+|**AllowMultiplePictures**| PWA only. Allows multiple pictures to be taken. To ensure this feature works, add the **CameraPlugin** theme to your app.|      
 
 <div class="info" markdown="1">
 
@@ -229,19 +243,11 @@ In PWAs, the app takes pictures with the default camera settings that depend on 
 
 ## Video options
 
-Change the properties of the **RecordVideo** action to adjust how the app handles the images.
+Change the properties of the **RecordVideo** action to adjust how the app handles the video.
 
 |Property|Description|
 |-|-|
 |**SaveToGallery**|If **True**, the app saves the video to the device.|
-|**AllowEdit**|If **True**, an Edit step is added after the take or choose picture step.|
-
-<div class="info" markdown="1">
-
-The properties of the **RecordVideo** action apply to native mobile apps only.
-In PWAs, the app takes video with the default camera settings that depend on the device's browser.
-
-</div>
 
 ### MABS compatibility
 

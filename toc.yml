@@ -1021,6 +1021,7 @@
         - href: setup-maintain/setup/network-requirements.md
         - topics:
             - href: setup-maintain/setup/mobile-builder-connectivity-requirements.md
+            - href: setup-maintain/setup/configure-http-proxy.md
         - href: setup-maintain/setup/default-configurations.md
         - href: setup-maintain/setup/environment-config.md
         - href: setup-maintain/setup/lifetime-configure.md

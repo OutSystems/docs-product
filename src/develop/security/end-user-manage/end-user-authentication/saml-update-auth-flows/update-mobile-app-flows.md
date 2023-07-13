@@ -71,9 +71,9 @@ Go to Forge and install the [**Single Sign-On Mobile**](https://www.outsystems.c
 
         * IsPWA
 
-1. Click **Apply**.
+         ![Public elements to use from SingleSignOnMobile.](images/update-mobile-app-flows-dependencies-ss.png)
 
-    ![Public elements to use from SingleSignOnMobile.](images/update-mobile-app-flows-dependencies-ss.png)
+1. Click **Apply**.
 
 Verify you are working on a Platform Server version 11.18 or later as you will need to use the following server actions available on the Users folder:
 

@@ -16,7 +16,7 @@ To configure a HTTP proxy server:
 1. [Configure the proxy server in the operating system](#configure-the-proxy-server-in-the-operating-system)
 1. [Configure the proxy authentication in Service Studio](#how-to-configure-a-http-proxy-server-in-service-studio)
 
-## Configure the proxy server in the operating system
+## Configure the proxy server in the operating system {#configure-the-proxy-server-in-the-operating-system}
 
 Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in the operating system (Windows or MacOS) when connecting to an OutSystems environment. This means the configuration steps depend on the operating system.
 
@@ -72,7 +72,7 @@ Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in 
 
 1. Click **Ok**.
 
-## Configure the proxy authentication in Service Studio
+## Configure the proxy authentication in Service Studio {#configure-the-proxy-authentication-in-service-studio}
 
 Some proxy servers require user authentication. In this case, you must provide the proxy credentials in the Service Studio Preferences dialog.
 

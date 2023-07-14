@@ -52,14 +52,6 @@ Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in 
 
     ![Enter proxy configurations](images/mac-http-proxy-search.png)
 
-1. Click **Advanced**.
-
-    ![Enter proxy configurations](images/mac-http-proxy-advanced.png)
-
-1. Select **Proxies**.
-
-    ![Enter proxy configurations](images/mac-http-proxy-proxies.png)
-
 1. In the **Select a protocol to configure** section, choose **Web Proxy (HTTP)**.
 
     1. In the **Web proxy server** field, enter the proxy server name or IP address and port. In the example below, the proxy server is ``example.net`` and the proxy port is ``9090``.

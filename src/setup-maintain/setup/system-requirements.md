@@ -29,9 +29,11 @@ This section summarizes the requirements for installing the Platform Server in y
 
 ### Operating System
 
-* Microsoft Windows Server 2022 (Standard Edition or higher edition), since Platform Server 11.20.0
+* Microsoft Windows Server 2022 (Standard Edition or higher edition), since Platform Server 11.20.0<sup>1</sup>
 * Microsoft Windows Server 2019 (Standard Edition or higher edition), since Platform Server Release Jul.2019
 * Microsoft Windows Server 2016 (Standard Edition or higher edition)
+
+<sup>1</sup> When installing the platform server on Windows Server 2022, or upgrading an existing installation to Windows Server 2022, consider increasing the CPU and memory of the machines as the Operating System itself requires more resources.
 
 For these Operating System versions, OutSystems only supports Windows editions that are [supported by Microsoft](https://support.microsoft.com/en-us/lifecycle/search).
 

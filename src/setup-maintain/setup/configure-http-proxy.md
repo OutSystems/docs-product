@@ -1,22 +1,22 @@
 ---
-summary: OutSystems on-premises.
+summary: Learn how to configure an HTTP proxy server on your local computer to be used by Service Studio.
 tags: 
 locale: en-us
 guid: b367660c-65e1-45d5-a6c2-c4ea29a9c8ab
-app_type: mobile apps, reactive web apps
+app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2252%3A3570&mode=design&t=iLJvc2VqD06T9g7F-1
 ---
 
 # How to configure a HTTP proxy server in Service Studio
 
-This article explains how to configure a HTTP proxy server on your local computer so you can deploy your Service Studio apps in an OutSystems environment.
+This article explains how to configure a HTTP proxy server on your local computer to be used by Service Studio. This applies when developers are working on a network where communications to the Internet need to go through an HTTP proxy.
 
 To configure a HTTP proxy server:
-1. [Configure the proxy server in the operating system](#configure-the-proxy-server-in-the-operating-system)
-1. [Configure the proxy authentication in Service Studio](#configure-the-proxy-authentication-in-service-studio)
+1. [Configure the proxy server in the operating system](#configure-proxy-OS)
+1. [Configure the proxy authentication in Service Studio](#configure-proxy-ss)
 
-## Configure the proxy server in the operating system 
+## Configure the proxy server in the operating system { #configure-proxy-OS }
 
 Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in the operating system (Windows or MacOS) when connecting to an OutSystems environment. This means the configuration steps depend on the operating system.
 
@@ -64,13 +64,13 @@ Service Studio relies on the proxy servers (HTTP and HTTPS) that are defined in 
 
 1. Click **Ok**.
 
-## Configure the proxy authentication in Service Studio 
+## Configure the proxy authentication in Service Studio { #configure-proxy-ss }
 
 Some proxy servers require user authentication. In this case, you must provide the proxy credentials in the Service Studio Preferences dialog.
 
 1. Open Service Studio.
 
-1. Open the **Preferences** dialog.
+1. Open the **Edit** > **Preferences...** dialog.
 
 1. Enable the **Use proxy authentication** option.
 

@@ -74,6 +74,12 @@ In case you are using a hybrid infrastructure where some part is in OutSystems C
 
 ### Development tools
 
+<div class="info" markdown="1">
+
+Check [here](configure-http-proxy.md) the necessary configurations if you're working on a network where communications to the Internet need to go through an HTTP proxy.
+
+</div>
+
 The following table lists the necessary connectivity between the developers workstations and the several endpoints that support the full experience of Service Studio and Integration Studio.
 
 |Source|Destination|Port|Protocol|Notes|

@@ -838,7 +838,7 @@ Identity information should be obtained on server calls, using functions like Ge
 
 Remove any usages of GetUserId on the client side, and replace them with the same function on the server side. In this way, you’ll avoid passing identity information from the client side to the server side as an action parameter.
 
-For more information refer to [Reactive web security best practices: Securing server calls](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices#Securing_server_calls). 
+For more information, refer to [Reactive web security best practices: Securing server calls](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices#Securing_server_calls). 
 
 ### Screen Aggregates exposing System Entities on Anonymous screens
 
@@ -876,7 +876,31 @@ If the screen can be accessed by the Registered role, any user with a valid OutS
 
 Remove the exposed information or use a more restricted custom role for the screen.  
 
-Use a secure criteria with GetUserId inside the Aggregate filter if you’re filtering information based on user context.  
+Use a secure criteria with GetUserId inside the Aggregate filter if you’re filtering information based on user context.
+
+### Insecure Usage of GetUserId in client Block parameters
+
+<div class="info" markdown="1">
+
+Applies to **Reactive Web** and **Mobile** apps only.  
+
+</div>
+
+Avoid passing identity information in a Block widget parameter.  
+
+**Impact**
+
+Passing identity information through a Block widget parameter allows manipulating that identity information at client side. This creates an insecure identity flow to any existing backend server actions or queries using this parameter, meaning that the authenticated user might be manipulated at any time.  
+
+Since the execution of GetUserId on reactive client components depends on client cookies, any user can easily change parameters by manipulating server calls or changing client session ID identifiers. Malicious users can exploit the ability to change identity-related parameters and impersonate other users and access sensitive data. Users can also bypass role checks, which, even though done on the server, become vulnerable due to insecure parameters received from the client.    
+
+**How to fix** 
+
+Get identity information only on server calls, using functions like GetUserId, executed on the server, and never sent as a Block widget parameter. Executing GetUserId on the server ensures the identity flow is secure and cannot be manipulated.  
+
+Remove any usages of GetUserId in Block widget parameters, and replace them with the same function on the server side. In this way, you avoid passing identity information from the client side to the server side as a Block parameter.  
+
+For more information, refer to [Reactive web security best practices: Securing server calls](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices#Securing_server_calls).
 
 ## Maintainability
 
@@ -967,3 +991,15 @@ Unused actions can bloat your code base, make maintenance difficult, and increas
 **How to fix**  
 
 Check whether the action is necessary and consider deleting it from the module.  
+
+### Unused Aggregate or SQL Query
+
+An Aggregate or SQL query isn’t used.
+
+**Impact**  
+
+Unused data queries (Aggregates or SQL queries) can waste resources and degrade performance, as they might run even if not referenced. Unused data queries also bloat your code base, making maintenance and debugging difficult.   
+
+**How to fix**  
+
+Check whether the Aggregate or the SQL query is necessary and consider deleting it.  

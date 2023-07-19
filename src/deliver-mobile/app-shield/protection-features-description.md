@@ -91,7 +91,7 @@ When you activate this feature, all screen readers, except system ones, are bloc
     "value": "b6bf61861c71c93ad26d84fc3e5e2c1ddb662ffb9f871904be8f5697adb0c5e0"
 },
 
-For more information, see [how to get the applicaiton hash](#how-to-get-the-applicaiton-hash)
+For more information, see [how to get the application hash](#how-to-get-the-application-hash)
 
 ### Untrusted keyboard detection { #android-untrusted-keyboard }
 
@@ -115,7 +115,7 @@ To allow the use of some specific keyboard software, you must add the "AddTruste
     "value": "9ac6ca814a945e5aaed450614a99427912f4d2751fb044ea2250e940e1e95e46"
 },
 
-For more information, see [how to get the applicaiton hash](#how-to-get-the-applicaiton-hash)
+For more information, see [how to get the application hash](#how-to-get-the-application-hash)
 
 ### Task hijacking protection
 

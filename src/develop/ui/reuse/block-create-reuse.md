@@ -25,8 +25,9 @@ Here are notes about reusing Block across **different apps**:
 1. Set the Block as public if you want to reuse it across apps.
 1. Drag it the Block to the Screen where you want to use it. If you want to use the Block in another App, you first need to reference the Block.
 
-#### Advanced use cases to pass data between blocks
-For more advanced use cases to pass data between blocks and using block events, please get more info on [Pass Data Between Blocks](https://success.outsystems.com/documentation/11/developing_an_application/design_ui/reuse_ui/pass_data_between_blocks/). This documentation wil explain how can create a blocks to comunicate between thems and pass data, for example, a block containing a date picker that, when changed, requires updating a chart plotted by another block.
+### Advanced use cases to pass data between blocks
+
+For more advanced use cases to pass data between blocks and using block events, please get more info on [Pass Data Between Blocks](block-communicate.md). This article explains how to create a block that communicate between them and pass data. For example, a block containing a date picker that, when changed, requires updating a chart plotted by another block.
 
 ## Example
 

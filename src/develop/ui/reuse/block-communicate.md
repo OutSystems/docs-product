@@ -9,7 +9,7 @@ platform-version: o11
 
 # Pass Data Between Blocks
 
-In a screen or block with child blocks, it can happen that an event in a child block requires updating another block. For example, a block containing a date picker that, when changed, requires updating a chart plotted by another block. 
+In a screen or block with child blocks, it can happen that an event in a child block requires updating another block. For example, a block containing a date picker that, when changed, requires updating a chart plotted by another block. To learn more about creating reusable blocks, go to [Create and Reuse Screen Blocks](https://success.outsystems.com/documentation/11/developing_an_application/design_ui/reuse_ui/create_and_reuse_screen_blocks/) documentation. This article, explains how can you create a reusable block and is extremely useful before creating an use case that will use events to pass data or communicate between blocks.
 
 For example, suppose there is a screen that is the parent of two blocks:
 

@@ -233,4 +233,4 @@ Use the [Popup widget](../../ui/inputs/popup.md) to create accessible modal dial
 * `role="dialog"`
 * `aria-modal="true"`
 
-Additionally, the class `"has-accessible-features"` needs to be added manually in the Style Classes of the Popup Widget to enable the accessibility features mentioned before in this document.
+Additionally, the class `"has-accessible-features"` needs to be added manually in the Style Classes of the Popup Widget to enable the accessibility features.

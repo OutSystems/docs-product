@@ -1,7 +1,7 @@
 ---
 summary: Disable "Registered Role Required" error logs.
 locale: en-us
-guid: 7679b3a4-2a80-4ddf-9e85-e470c8af8428
+guid: 5dd12904-f8a2-429c-9220-01d1e0d4143d
 app_type: mobile apps, reactive web apps
 platform-version: o11
 ---

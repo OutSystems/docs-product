@@ -1,0 +1,32 @@
+---
+summary: Disable "Registered Role Required" error logs.
+locale: en-us
+guid: c8d0f733-064b-46e0-b765-13aba38eec6b
+app_type: mobile apps, reactive web apps
+platform-version: o11
+---
+
+# Disable "Registered Role Required" error logs
+
+It is common to find the error "Registered Role Required" in the platform logs. This error occurs in Reactive and Mobile apps and is related to the asynchronous nature of these types of apps. Sometimes, OutSystems developers consider these messages not relevant and prefer to disable them. This article gives a brief context about these error messages and how to disable them.
+
+## Context
+
+On Reactive and Mobile apps, the session expires if it is idle for more than the time defined in [Max. Idle Time](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/secure_the_applications/configure_app_authentication/) (20 minutes by default). The client-side (browser) can only validate the session by contacting the server. This means that the next time the user interacts with the app and it generates one or more server requests (through the execution of Server Actions, Service Actions, Data Actions, or Aggregates), the server will validate if the session is still valid or not. When processing the request, the server will detect that the session is no longer valid and will reject it throwing and logging a "Registered role required" exception (NotRegistered Exception). As a result, the server will invalidate the session by invalidating the session cookies.
+
+The app logic is usually prepared to receive a NotRegistered Exception (or Security Exception) on an exception handler in order to redirect the user to a login or invalid permissions screen. These handlers might have the option Log Error set to "Yes", which will log a second error on the Error Logs.
+
+However, these apps might have a large number of actions that are executed asynchronously. For example, if a screen contains more than 5 Data Actions and the screen is refreshed, each of these requests will generate 2 errors in the logs. This might lead to some log pollution.
+
+## How to disable the errors
+
+This feature is only available in PS 11.21.0 and newer. When it is enabled, it will affect all Reactive and Mobile applications after being re-published. 
+
+To disable these logs, please follow these steps:
+1. Install Factory Configuration (version X or newer);
+2. Check the option X and Y to disable the server and client-side errors, respectively;
+3. In order to make the feature effective, one needs to restart the Deployment Controller Service. For Cloud environments, one can submit a Support Case in order to request a restart of the service or, alternatively, one can [restart services in LifeTime](https://success.outsystems.com/support/troubleshooting/infrastructure_management/restart_services_on_outsystems_cloud/) (keep in mind that this second option is more disruptive as it also restarts IIS);
+4. Create a solution in Service Center, including all Reactive and Mobile apps with corresponding dependencies, check the option "Publish with full compilations", and publish the solution. Not checking that option might not guarantee that the changes will take effect. 
+
+Toggle X will disable the creation of these error logs when requests reach the server. 
+Toggle Y disables the logging of the errors by exception handlers. For additional context, as mentioned before, one can disable the client-side errors by setting Log Error = No in all exception handlers that might catch NotRegistered exceptions. But this is not an elegant solution because it's a handy task and you might suppress information about other relevant exceptions. Therefore, we implemented this alternative solution to turn off the logging of "Registered role required" errors only, even when Log Error is set to "Yes". If a NotRegistered exception is caught by a NotRegistered, SecurityException, or AllException handler, the error is not logged. Every other types of errors are still logged.

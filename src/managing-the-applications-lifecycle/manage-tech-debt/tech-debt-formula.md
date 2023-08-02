@@ -4,6 +4,7 @@ summary: Learn how AI Mentor Studio calculates and displays the technical debt o
 locale: en-us
 guid: 521CF7BD-3CE7-4448-8DDE-B5A751B08B82
 app_type: traditional web apps, mobile apps, reactive web apps
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=928%3A724&mode=design&t=fIZClNOE2XF93rMW-1
 platform-version: o11
 ---
 
@@ -26,19 +27,19 @@ AI Mentor Studio uses a color code to help you visualize technical debt. Apps wi
 
 ## Technical debt formula
 
-To translate the technical debt into the color code, the technical debt value must be calculated first. The technical debt value for each module, app, and the overall Factory Application Portfolio is calculated by summing up the number of findings per pattern, taking their predefined weight into account. AI Mentor Studio uses the following formula to calculate the technical debt value:
+To translate the technical debt into the color code, the technical debt value must be calculated first. The technical debt value for each module, app, and the overall Factory Application Portfolio is calculated by summing up the number of findings per pattern, taking their defined weight into account. AI Mentor Studio uses the following formula to calculate the technical debt value:
 
 <p style="text-align: center;">Technical debt = &#8721; (#Findings per pattern &#215; pattern weight)</p>
 
 The calculation results in an absolute value that is then compared with defined thresholds to provide the technical debt level represented in a color code and as a percentage.  
 
-For instance, the **Public Entities aren’t read-only** pattern shows a technical debt of 11.3%. This value results from multiplying the 69 findings by the pattern weight itself, which is determined by an [internal process](#pattern-weight). The value is then turned into a percentage, meaning that the **Public Entities aren’t read-only** pattern represents 11.3% of the total technical debt.
+For instance, the **Public Entities aren’t read-only** pattern shows a technical debt of 11.3%. This value results from multiplying the 69 findings by the [pattern weight](#pattern-weight) itself. The value is then turned into a percentage, meaning that the **Public Entities aren’t read-only** pattern represents 11.3% of the total technical debt.
 
 ![Report area of AI Mentor Studio with the list of patterns.](images/report-ams.png)
 
 ### Pattern weight
 
-The weight attributed to each code pattern is determined by an **Impact** variable, which describes the foreseen risk for the architecture, maintenance, performance, and security of the factory. The **Impact** is assessed based on a qualitative scale, ranging from low to high impact, which is then translated into an absolute weight used in the technical debt formula.
+The weight attributed to each code pattern is determined by an **Impact** level, which describes the foreseen risk for the architecture, maintenance, performance, and security of the factory. The impact level goes from None to Highest, which is then translated into an absolute weight used in the technical debt formula. AI Mentor Studio attributes a default impact level to each code pattern, but you can customize this in the **Maintenance** area of AI Mentor Studio. For more information, see [how to change the impact level of a code pattern on your technical debt](change-pattern-impact.md).
 
 ## How AI Mentor Studio shows technical debt
 

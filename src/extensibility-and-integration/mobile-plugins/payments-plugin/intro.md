@@ -41,7 +41,7 @@ reference a plugin in your OutSystems apps and how to install a demo app.
 ## Sample app
 
 OutSystems provides a sample app that contains logic for common use cases.
-Install the Payments sample app from Forge and open it in Service Studio.
+Install the [Payments sample app](https://www.outsystems.com/forge/component-overview/13678/payments-plugin) from Forge and open it in Service Studio.
 
 This sample app shows you how to do the following:
 

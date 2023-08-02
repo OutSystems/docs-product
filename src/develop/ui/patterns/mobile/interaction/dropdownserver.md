@@ -75,7 +75,7 @@ In this example, we create a Dropdown Server Side for a list of employees. When 
 
 1. Return to your main screen, add a local variable called **SelectedValue**, and set the **Data Type** to **DropdownItem**. 
 
-1. Select the expression inside of the **True** node of the **If** statement inside the **SelectedValues** placeholder and change the **Value** to the **SelectedValue.Text** variable.
+1. On the **Widget Tree** tab, select the expression inside of the **True** node of the **If** statement inside the **SelectedValues** placeholder and change the **Value** to the **SelectedValue.Text** variable.
 
     ![Add expression to Selected Value variable](<images/dropdownserver-selectedvalues-ss.png>)
 
@@ -87,7 +87,7 @@ For this example:
 
        ![Add input parameter to client action](<images/dropdownserver-inputpar-ss.png>)
    
-   1. Select the expression inside the **DropDownItem** placeholder and add the following logic in the expression editor: 
+   1. On the **Widget Tree** tab, Select the expression inside the **DropDownItem** placeholder and add the following logic in the expression editor: 
 
         ``GetEmployees.List.Current.Sample_Employee.FirstName + " " + GetEmployees.List.Current.Sample_Employee.LastName``
 
@@ -95,13 +95,14 @@ For this example:
 
    1. Add an **Assign** node to the client action and assign the following values:
 
-        * SelectedValue.Text = EmployeeName
+        * **SelectedValue.Text** to **EmployeeName**
     
-        * SelectedValue.Value = ItemId
+        * **SelectedValue.Value** to **GetEmployees.List.Current.Sample_Employee.Id**
 
-   1. Add a **Message** to the client action.
+            ![Add logic to Assign](<images/dropdownserver-assign-ss.png>)
 
-   1. Add the following logic to the expression editor:
+
+   1. Add a **Message** to the client action and add the following logic to the expression editor:
 
         ``SelectedValue.Text + "(Employee ID: " + SelectedValue.Value + ")"``
 

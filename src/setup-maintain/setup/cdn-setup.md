@@ -8,13 +8,14 @@ platform-version: o11
 
 # Using a CDN with OutSystems
 
-Content Delivery Network (CDN) is a cache mechanism that uses the fact of being a service with multiple servers spread over multiple reagions around the world that work in delivering static content.
+Content Delivery Network (CDN) is a cache mechanism that leverages a service with multiple servers spread over multiple regions around the world that work in delivering static content.
 
-Mobile and React apps usually have a lot of static content, for example, css, js, and jpeg, which means that they only change when a new version of the app is deployed.
-
-The fact that the CDN server can be spread around the world the lantency of the clients to the CDN is lower than to the fornt-end servers. **Resulting in an improved loading experience to the end user**.
+Mobile and Reactive apps can have a lot of static content, for example, CSS, js, and jpeg, which means that they only change when a new version of the app is deployed.
 
 With a CDN on your infrastructure, static content is served to users by the CDN instead of the front-end servers. This **removes load from your servers allowing you to save hardware resources and improve performance**. 
+
+Because CDN servers can be spread around the world, the latency of the clients to the CDN is lower than to the front-end servers. **This results in an improved loading experience to end-users**.
+
 
 OutSystems advises using CDN for:
 

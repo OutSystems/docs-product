@@ -23,7 +23,7 @@ You can consume several methods of a REST API (all API methods or just the metho
 
 You can import OpenAPI specifications either by providing a URL or by selecting a specification file from the local file system.
 
-Do the following:
+Do the following
 
 1. In the **Logic** tab, open the **Integrations** folder.
 

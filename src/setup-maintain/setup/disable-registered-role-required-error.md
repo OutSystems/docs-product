@@ -30,11 +30,10 @@ To disable these logs, please follow these steps:
 
 1. Install Factory Configuration (version X or newer);
 
-1. Check the option X and Y to disable the server and client-side errors, respectively;
+1. Check the option X to disable the "Registered role required" errors;
 
 1. In order to make the feature effective, one needs to restart the Deployment Controller Service. For Cloud environments, one can submit a Support Case in order to request a restart of the service or, alternatively, one can [restart services in LifeTime](https://success.outsystems.com/support/troubleshooting/infrastructure_management/restart_services_on_outsystems_cloud/) (keep in mind that this second option is more disruptive as it also restarts IIS);
 
 1. Create a solution in Service Center, including all Reactive and Mobile apps with corresponding dependencies, check the option "Publish with full compilations", and publish the solution. Not checking that option might not guarantee that the changes will take effect. 
 
-Toggle X will disable the creation of these error logs when requests reach the server. 
-Toggle Y disables the logging of the errors by exception handlers. For additional context, as mentioned before, one can disable the client-side errors by setting Log Error = No in all exception handlers that might catch NotRegistered exceptions. But this is not an elegant solution because it's a handy task and you might suppress information about other relevant exceptions. Therefore, we implemented this alternative solution to turn off the logging of "Registered role required" errors only, even when Log Error is set to "Yes". If a NotRegistered exception is caught by a NotRegistered, SecurityException, or AllException handler, the error is not logged. Every other types of errors are still logged.
+This toggle will disable the creation of these error logs when requests reach the server. It also disables the logging of these errors by exception handlers. For additional context, as mentioned before, one can disable the client-side errors by setting Log Error = No in all exception handlers that might catch NotRegistered exceptions. But this is not an elegant solution because it's a handy task and you might suppress information about other relevant exceptions. Therefore, we implemented this alternative solution to turn off the logging of "Registered role required" errors only, even when Log Error is set to "Yes". If a NotRegistered exception is caught by a NotRegistered, SecurityException, or AllException handler, the error is not logged. Every other type of error is still logged.

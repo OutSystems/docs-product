@@ -144,7 +144,7 @@ Set the authentication logic to get the values of the HTTP headers and then chec
 
 <div class="info" markdown="1">
 
-Tip: Raising an exception in the "OnAuthentication" callback action sets an HTTP 500 status code in the response sent to the client. Instead, you can use a custom HTTP status code by calling the "SetStatusCode" Server Action from the [HTTPRequestHandler](../../../ref/apis/auto/httprequesthandler-api.final.md) extension before raising the exception.
+Tip: Raising an exception in the "OnAuthentication" callback action sets an HTTP 401 status code in the response sent to the client. Instead, you can use a custom HTTP status code by calling the "SetStatusCode" Server Action from the [HTTPRequestHandler](../../../ref/apis/auto/httprequesthandler-api.final.md) extension before raising the exception.
 
 </div>
 

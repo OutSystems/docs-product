@@ -28,9 +28,9 @@ This feature is only available in PS 11.21.0 and newer. When it is enabled, it w
 
 To disable these logs, please follow these steps:
 
-1. Install Factory Configuration (version X or newer);
+1. Install [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration) (version 11.1.5 or newer);
 
-1. Check the option X to disable the "Registered role required" errors;
+1. In the Platform Configurations tab, uncheck the option *Enable "Registered Role Required" error logs*;
 
 1. In order to make the feature effective, one needs to restart the Deployment Controller Service. For Cloud environments, one can submit a Support Case in order to request a restart of the service or, alternatively, one can [restart services in LifeTime](https://success.outsystems.com/support/troubleshooting/infrastructure_management/restart_services_on_outsystems_cloud/) (keep in mind that this second option is more disruptive as it also restarts IIS);
 

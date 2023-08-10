@@ -147,6 +147,7 @@
             - href: develop/ui/look-feel/design-screens-layout.md
             - href: develop/ui/look-feel/themes.md
             - href: develop/ui/look-feel/theme-editor.md
+            - href: develop/ui/look-feel/layer-system.md
             - href: develop/ui/look-feel/responsive.md
             - href: develop/ui/look-feel/rtl.md
 
@@ -991,6 +992,7 @@
             - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/record-counting.md
             - href: managing-the-applications-lifecycle/manage-tech-debt/code-patterns/scope-information.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/tech-debt-formula.md
+        - href: managing-the-applications-lifecycle/manage-tech-debt/change-pattern-impact.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-enable-autoclass.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-ignore-modules.md
         - href: managing-the-applications-lifecycle/manage-tech-debt/how-module-classification.md
@@ -1903,3 +1905,4 @@
         - href: ref/apis/auto/system-actions.final.md
         - href: ref/apis/auto/text-api.final.md
         - href: ref/apis/auto/users-api.final.md
+        

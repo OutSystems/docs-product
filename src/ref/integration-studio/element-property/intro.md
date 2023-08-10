@@ -15,7 +15,7 @@ For more information about the Element properties, see the following articles:
 * [Imported Actions Properties](net-assembly-import-action.md)
 * [Action Parameter Properties](action-parameter.md)
 * [Structure Properties](structure.md)
-* [Structure Attribute Properties]()
+* [Structure Attribute Properties](structure-attribute.md)
 * [Entity Properties](entity.md)
 * [Entity Attribute Properties](entity-attribute.md)
 * [Resource Properties](resource.md)

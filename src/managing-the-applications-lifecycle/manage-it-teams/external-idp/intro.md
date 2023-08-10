@@ -29,7 +29,7 @@ You can integrate an external IdP by configuring the OIDC protocol in LifeTime. 
 
 * Service Center (SC)
 
-* Lifetime (LT)
+* LifeTime (LT)
 
 * Service Studio (SS)
 

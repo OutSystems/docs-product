@@ -69,6 +69,10 @@ To use tables and views from external databases, create a database connection:
 
 1. Click **Create** to create the database connection.
 
+If your extension to an external database includes the fully qualified table name, such as database.schema.table, changing the database connection in Service Center does not impact your extension. 
+
+If the extension entities display `Northwind.dbo.customers` using the logical database Integration1, and you change the logical database to `Northwind_test`, your extension still points to `Northwind` unless you change every entity in the Effective Physical Table name field. 
+
 ## Map tables or views to Entities in an extension module
 
 After configuring a database connection in Service Center, use Integration Studio to create an extension that maps the tables or views in the external database to OutSystems entities:

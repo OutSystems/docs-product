@@ -75,7 +75,7 @@ Use the `@import` CSS at-rule in Style Sheet Editor to import style rules from o
 OutSystems development tools do not support the use of CSS preprocessors (such as Sass or LESS) in apps.
 
 ## CSS Best Practices:
-1. Avoid Inline Styles: Inline styles can quickly become hard to manage and maintain, especially in large and complex projects. When styling is scattered throughout the HTML elements, it becomes challenging to track and modify styles, leading to code duplication and potential errors.
-2. Avoid using ID selector: Id of each element are managed by the platform, and given depending on its scope, and could be changed anytime. To avoid unexpected behaviors, use CSS Classes instead.
-3. Centralize CSS in theme: Adding styles in blocks, screen stylesheets are can lead into maintainability issues and hinders scalability, may lead to style duplication and it may have some impact on performance because it increases the file requests to the server.
-4. Use CSS variables: CSS variables allow you to define reusable values that can be used across your entire stylesheet. This makes it easy to maintain consistent styles throughout your application. 
+1. **Avoid Inline Styles**: Inline styles can quickly become hard to manage and maintain, especially in large and complex projects. When styling is scattered throughout the HTML elements, it becomes challenging to track and modify styles, leading to code duplication and potential errors.
+2. **Avoid using ID selector**: Id of each element is managed by the platform, given depending on its scope, and could be changed anytime. To avoid unexpected behaviors, use CSS Classes instead.
+3. **Centralize CSS in theme**: Adding styles in blocks and screen stylesheets can lead into maintainability and scalability issues. It lead to style duplication and also may have some impact on performance because it increases the file requests to the server.
+4. **Use CSS variables**: CSS variables allow you to define reusable values that can be used across your entire stylesheet. This makes it easy to maintain consistent styles throughout your application. 

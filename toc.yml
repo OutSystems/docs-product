@@ -530,6 +530,9 @@
             - href: develop/seo/improved-crawl-reactive.md
             - href: develop/seo/seo-friendly-url-traditional.md
             - href: develop/seo/errors-troubleshooting-seo.md
+    - topics:
+        - href: develop/seo/improve-SEO-with-prerendering.md
+        - href: develop/seo/prerender-io-usage-and-configuration.md
     # Testing
     - href: develop/testing/intro.md
     - topics:

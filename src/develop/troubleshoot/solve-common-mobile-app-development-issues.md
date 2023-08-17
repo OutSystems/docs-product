@@ -17,7 +17,7 @@ Applies only to Mobile Apps.
 
 While developing mobile apps you might need some help troubleshooting a problem in your app. Check below for some common issues that you may encounter, as well as their possible solutions.
 
-We also recommend that you watch the "[Mobile Apps in Trouble](https://www.outsystems.com/learn/lesson/1197/mobile-apps-in-trouble/)" webinar, if you haven't done so. It addresses some of the common problems presented in this topic and the steps taken to overcome them.
+We also recommend that you watch the "[Mobile Apps in Trouble](https://learn.outsystems.com/training/journeys/front-end-performance-and-troubleshoot-529/mobile-apps-in-trouble/o11/2447)" webinar, if you haven't done so. It addresses some of the common problems presented in this topic and the steps taken to overcome them.
 
 ## Common Issues
 

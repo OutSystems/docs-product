@@ -11,18 +11,21 @@ platform-version: o11, ODC
 
 OutSystems’ reactive applications are Single Page Applications (SPAs). These are web apps that load a single page and update content dynamically. They offer benefits like dynamic content, smooth navigation, improved performance, offline capabilities, and development simplicity.
 When a user accesses the app, the server returns a pretty bare HTML file and some JavaScript (JS) that executes on the client side to render the UI. This also allows fetching data asynchronously in parallel with page rendering.
-However, when you have very complex logic or data takes longer to be retrieved, you might experience longer initial loading times due to reliance on client-side rendering (CSR). This can present SEO challenges as search engine bots need to render the page in order to index it. In these situations, you’ll benefit from using the pre-render technology.
+However, when you have very complex logic or you retrieve a big amount of data, you might experience longer initial loading times due to reliance on client-side rendering (CSR). This can present SEO challenges as search engine bots need to render the page in order to index it. 
+
+In these situations, you’ll benefit from using the pre-render technology.
+
 In this article, we describe how you can integrate the OutSystems platform with a third-party pre-rendering solution called [prerender.io](https://prerender.io/). 
 
 <div class="info" markdown="1">
 
-There are other pre-render solutions in the market, and you are free to choose a different one that fits your needs. OutSystems recommends [Prerender.io](https://prerender.io/) as one of your pre-rendering options due to its significant SEO improvements. 
+There are other pre-render solutions in the market and you are free to choose a different one that fits your needs. OutSystems recommends [Prerender.io](https://prerender.io/) as one of your pre-rendering options due to its significant SEO improvements. 
 
 </div>
 
 <div class="info" markdown="1">
 
-OutSystems is not affiliated with or sponsored by Prerender.io, and does not receive any economic or financial benefit from customers subscribing to their services
+OutSystems is not affiliated with or sponsored by Prerender.io, and does not receive any economic or financial benefit from customers subscribing to their services. 
 
 </div>
 
@@ -31,13 +34,14 @@ OutSystems is not affiliated with or sponsored by Prerender.io, and does not rec
 ### Prerender.io account
 
 To configure your pre-render solution, you need an account with Prerender.io. Select a [plan](https://prerender.io/pricing/) that meets your budget and requirements.
-This article describes the important criteria that you must consider when choosing a plan.
+
+You may refer to [this article](prerender-io-usage-and-configuration.md) which describes the important criteria that you must consider when choosing a plan.
 
 ### CDN
 
 Prerender.io offers several options to integrate with your application. The best way to integrate with the OutSystems platform is by using a CDN. In this article, we’ll describe how to use a CloudFront CDN, but you can choose the [CDN](https://docs.prerender.io/docs/integrations-1) that works best for you. 
 
-For more information on using CDN with OutSystems, see [Using a CDN with OutSystems](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/using_a_cdn_with_outsystems/)
+For more information on using CDN with OutSystems, see [Using a CDN with OutSystems](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/using_a_cdn_with_outsystems/).
 
 
 ## Integrating prerender.io with CloudFront CDN
@@ -64,9 +68,9 @@ For more information, see [Using AWS Lambda with CloudFront Lambda@Edge](https:/
 
 You need to intercept both the viewer and the origin requests:
 
-* In the **viewer request**, your code checks if the request comes from a bot. If yes, it adds headers required by Prerender.io, including the user token.
+* In the **viewer request**, your code checks if the request comes from a bot. If it does, it adds headers required by Prerender.io, including the user token.
 
-* In the **origin request**, your code checks if the Prerender.io headers are in place. If yes, it forwards the request to Prerender.io servers that contains the prerendered copy of the site. If not, it sends the request to the actual server.
+* In the **origin request**, your code checks if the Prerender.io headers are in place. If it does, it forwards the request to Prerender.io servers that contains the prerendered copy of the site. If not, it sends the request to the actual server.
 
 
 ## CloudFront integration
@@ -75,15 +79,10 @@ Prerender.io provides [instructions](https://docs.prerender.io/v1/docs/cloudfron
 You can select which bots that are sent to the pre-rendered version of your pages. To select the bots, modify the yaml file. Look for the following line of code:
 
 
-```
-Javascript
+        var prerender = /googlebot|adsbot\-google|Feedfetcher\-Google|bingbot|yandex|baiduspider|Facebot|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora link preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|redditbot|applebot|whatsapp|flipboard|tumblr|bitlybot|skypeuripreview|nuzzel|discordbot|google page speed|qwantify|pinterestbot|bitrix link preview|xing\-contenttabreceiver|chrome\-lighthouse|telegrambot/i.test(user_agent[0].value); 
 
-var prerender = /googlebot|adsbot\-google|Feedfetcher\-Google|bingbot|yandex|baiduspider|Facebot|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora link 
-preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|redditbot|applebot|whatsapp|flipboard|tumblr|bitlybot|skypeuripreview|nuzzel|discordbot|google page 
-speed|qwantify|pinterestbot|bitrix link preview|xing\-contenttabreceiver|chrome\-lighthouse|telegrambot/i.test(user_agent[0].value);
 
-```
-Modify the regex leaving only the bots you care about. You can find more details on why this is important in this article.
+Modify the regex leaving only the bots you care about. You can find more details on why this is important in [this article](prerender-io-usage-and-configuration.md).
 
 ## Testing your implementation
 
@@ -96,7 +95,7 @@ When logging in to the prerender.io dashboard for the first time, it shows a mod
 1. Select other integrations.
 1. Paste the url of your application (it has to be exposed to the world).
 1. Click **Test**
-1. Go to the bottom of the dashboard and check the section called **Recent Crawler Visits**.
+1. Go to the bottom of the dashboard and check the **Recent Crawler Visits** section. 
 
 You can see all the websites that got redirected to the prerendered version of your application. 
 
@@ -116,13 +115,10 @@ With this command you are mimicking the call of the crawler of Google to your we
 
 Run a similar command to the one you executed before, also replacing the placeholders with the right values.
 
-`curl (https://{yourserver.com}/{YourReactiveApp}/`
+`curl https://{yourserver.com}/{YourReactiveApp}/`
 
 The result will look something like this:
 ![](images/prerender-ss.png)
 
 Note that instead of showing the full HTML for your rendered page, you call different JavaScript files. These are the files that render the content of your application to the final users when they open it.
 
-For more information on Prerender.io best practices, see [best practices](https://docs.prerender.io/docs/11-best-practices)
-
-If you want to learn more about the basics of working of prerendering, please read this article. 

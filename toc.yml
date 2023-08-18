@@ -532,7 +532,9 @@
             - href: develop/seo/errors-troubleshooting-seo.md
     - topics:
         - href: develop/seo/improve-SEO-with-prerendering.md
-        - href: develop/seo/prerender-io-usage-and-configuration.md
+        - topics:
+            - href: develop/seo/prerender-io-usage-and-configuration.md
+
     # Testing
     - href: develop/testing/intro.md
     - topics:

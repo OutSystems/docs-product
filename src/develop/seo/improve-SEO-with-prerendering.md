@@ -41,8 +41,14 @@ You may refer to [this article](prerender-io-usage-and-configuration.md) which d
 
 Prerender.io offers several options to integrate with your application. The best way to integrate with the OutSystems platform is by using a CDN. In this article, we’ll describe how to use a CloudFront CDN, but you can choose the [CDN](https://docs.prerender.io/docs/integrations-1) that works best for you. 
 
+
+<div class="info" markdown="1">
+
 For more information on using CDN with OutSystems, see [Using a CDN with OutSystems](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/using_a_cdn_with_outsystems/).
 
+Note that this guidance is not applicable for OutSystems cloud customers. 
+
+</div>
 
 ## Integrating prerender.io with CloudFront CDN
 
@@ -93,8 +99,11 @@ You can test your implementation using the Prerender.io dashboard and by using a
 When logging in to the prerender.io dashboard for the first time, it shows a modal window to allow you to test your integration. Follow these steps:
 
 1. Select other integrations.
+
 1. Paste the url of your application (it has to be exposed to the world).
-1. Click **Test**
+
+1. Click **Test**.
+
 1. Go to the bottom of the dashboard and check the **Recent Crawler Visits** section. 
 
 You can see all the websites that got redirected to the prerendered version of your application. 

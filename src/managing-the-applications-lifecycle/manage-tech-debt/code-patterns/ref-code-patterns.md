@@ -920,9 +920,9 @@ In the details' dialog, check the list of actions that include duplicated logic 
     
 If possible, refactor the actions where the duplicated logic exists by extracting the duplicated logic into a single action that can be reused.
 
-### Missing description on public element
+### Missing descriptions on public element or parameter
 
-Required description on public elements.
+Required descriptions on modules, modules' public elements and their related input/output parameters.
 
 **Impact**  
 
@@ -930,7 +930,7 @@ Meaningful descriptions in modules, public elements, entities, and input/output 
 
 **How to fix**  
 
-Add a description to the module that explains the purpose and identifies the concepts it contains. Add meaningful descriptions to all module's public elements, and their related parameters. The only exceptions are Entities and Structures attributes which descriptions are optional. A parameter name that already follows well-established naming conventions doesn't require a description (e.g. Id, Name, Label, Description, CreatedBy, UpdatedBy, CreatedOn, UpdatedOn).
+Add a description to the module that explains the purpose and identifies the concepts it contains. To have the finding solved, add meaningful descriptions to all modules' public elements and their related entities and parameters. The only exceptions are Entities and Structures attributes whose descriptions are optional and parameters whose names already follow well-established naming conventions (e.g. Id, Name, Label, Description, CreatedBy, UpdatedBy, CreatedOn, UpdatedOn).
 
 ### Unidentified public action managing transaction
 

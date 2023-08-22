@@ -52,7 +52,6 @@ Note that this guidance is not applicable for OutSystems cloud customers.
 
 ## Integrating prerender.io with CloudFront CDN
 
-
 When a page is requested by a search engine or a social media bot, Prerender.io provides the response. If the requested page is already cached, a cached version is served. If not, Prerender.io fetches the page from your OutSystems app, renders its JavaScript, and serves the fully rendered page to the bot.
 
 <div class="info" markdown="1">
@@ -77,7 +76,6 @@ You need to intercept both the viewer and the origin requests:
 * In the **viewer request**, your code checks if the request comes from a bot. If it does, it adds headers required by Prerender.io, including the user token.
 
 * In the **origin request**, your code checks if the Prerender.io headers are in place. If it does, it forwards the request to Prerender.io servers that contains the prerendered copy of the site. If not, it sends the request to the actual server.
-
 
 ## CloudFront integration
 

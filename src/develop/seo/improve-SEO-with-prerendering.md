@@ -41,7 +41,6 @@ You may refer to [this article](prerender-io-usage-and-configuration.md) which d
 
 Prerender.io offers several options to integrate with your application. The best way to integrate with the OutSystems platform is by using a CDN. In this article, we’ll describe how to use a CloudFront CDN, but you can choose the [CDN](https://docs.prerender.io/docs/integrations-1) that works best for you. 
 
-
 <div class="info" markdown="1">
 
 For more information on using CDN with OutSystems, see [Using a CDN with OutSystems](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/using_a_cdn_with_outsystems/).
@@ -49,6 +48,8 @@ For more information on using CDN with OutSystems, see [Using a CDN with OutSyst
 Note that this guidance is not applicable for OutSystems cloud customers. 
 
 </div>
+
+
 
 ## Integrating prerender.io with CloudFront CDN
 
@@ -76,6 +77,7 @@ You need to intercept both the viewer and the origin requests:
 * In the **viewer request**, your code checks if the request comes from a bot. If it does, it adds headers required by Prerender.io, including the user token.
 
 * In the **origin request**, your code checks if the Prerender.io headers are in place. If it does, it forwards the request to Prerender.io servers that contains the prerendered copy of the site. If not, it sends the request to the actual server.
+
 
 ## CloudFront integration
 

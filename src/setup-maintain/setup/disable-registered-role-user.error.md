@@ -30,7 +30,7 @@ This feature is only available in PS 11.21.0 and newer versions. When it is enab
 
 </div>
 
-Please follow these steps to disable the **Registered Role Required** error logs:
+Please follow these steps to disable the **Registered Role Required** error logs.
 
 1. Install [Factory Configuration](https://www.outsystems.com/forge/component-overview/25/factory-configuration) (version 11.1.5 or newer).
 
@@ -44,7 +44,9 @@ Note that this second option is more disruptive as it also restarts IIS.
 1. Create a solution in Service Center, including all Reactive and Mobile apps with corresponding dependencies. Check the option **Publish with full compilations** and publish the solution. 
 
 <div class="warning" markdown="1">
+
 Not checking that option might not guarantee that the changes take effect. 
+
 </div>
 
 

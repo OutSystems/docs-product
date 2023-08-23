@@ -41,7 +41,6 @@ You may refer to [this article](prerender-io-usage-and-configuration.md) which d
 
 Prerender.io offers several options to integrate with your application. The best way to integrate with the OutSystems platform is by using a CDN. In this article, we’ll describe how to use a CloudFront CDN, but you can choose the [CDN](https://docs.prerender.io/docs/integrations-1) that works best for you. 
 
-
 <div class="info" markdown="1">
 
 For more information on using CDN with OutSystems, see [Using a CDN with OutSystems](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/using_a_cdn_with_outsystems/).
@@ -50,8 +49,8 @@ Note that this guidance is not applicable for OutSystems cloud customers.
 
 </div>
 
-## Integrating prerender.io with CloudFront CDN
 
+## Integrating prerender.io with CloudFront CDN
 
 When a page is requested by a search engine or a social media bot, Prerender.io provides the response. If the requested page is already cached, a cached version is served. If not, Prerender.io fetches the page from your OutSystems app, renders its JavaScript, and serves the fully rendered page to the bot.
 
@@ -84,9 +83,9 @@ You need to intercept both the viewer and the origin requests:
 Prerender.io provides [instructions](https://docs.prerender.io/v1/docs/cloudfront) on how to configure their product with a CloudFront CDN. The solution consists of executing a yaml file on your cloud formation, which creates both functions for you.
 You can select which bots that are sent to the pre-rendered version of your pages. To select the bots, modify the yaml file. Look for the following line of code:
 
-
-        var prerender = /googlebot|adsbot\-google|Feedfetcher\-Google|bingbot|yandex|baiduspider|Facebot|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora link preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|redditbot|applebot|whatsapp|flipboard|tumblr|bitlybot|skypeuripreview|nuzzel|discordbot|google page speed|qwantify|pinterestbot|bitrix link preview|xing\-contenttabreceiver|chrome\-lighthouse|telegrambot/i.test(user_agent[0].value); 
-
+```
+var prerender = /googlebot|adsbot\-google|Feedfetcher\-Google|bingbot|yandex|baiduspider|Facebot|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora link preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|redditbot|applebot|whatsapp|flipboard|tumblr|bitlybot|skypeuripreview|nuzzel|discordbot|google page speed|qwantify|pinterestbot|bitrix link preview|xing\-contenttabreceiver|chrome\-lighthouse|telegrambot/i.test(user_agent[0].value); 
+```
 
 Modify the regex leaving only the bots you care about. You can find more details on why this is important in [this article](prerender-io-usage-and-configuration.md).
 

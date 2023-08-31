@@ -21,7 +21,8 @@ The **IT Users Authentication with External IdP (OIDC)** feature enables:
 * Secure the authentication of IT users, making sure that only authorized users have access to OutSystems tools and management consoles across environments.
 * Secure access to OutSystems management consoles and tools by following customer compliance policies integrated with external IdPs, which use authentication best practices, for example, multi-factor authentication, password complexity, expiration, and rotation.
 * Efficient authentication by using SSO across the company, which avoids users having to recall different credentials for different systems.
-* External IdP login practices; creating users without a password forces them to log in using the external IdP. **Note**: It's also possible to add or remove the password for any existing users previously created after you enable the OIDC feature.
+* Efficient external IdP login practices. You can create users without a password which forces them to log in using the external IdP.
+      **Note**: Once the OIDC feature is activated, it’s not possible to add or change passwords for any new or existing users. Passwords can be added/changed only for Local admin users.
 
 ## Login flow 
 

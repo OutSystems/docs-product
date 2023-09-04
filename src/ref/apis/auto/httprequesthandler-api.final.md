@@ -33,7 +33,7 @@ Action | Description | App type
 [GetPageExtension](<#GetPageExtension>) | Returns the extension of the physical page that corresponds to the current screen, including the dot. Examples: &quot;.aspx&quot; or &quot;.jsf&quot;. | Applies to Traditional Web apps only.  
 [GetPageName](<#GetPageName>) | Returns the name of the physical page that corresponds to the current screen. It is usually the same as the screen name, except when name clashes occur. | Applies to Traditional Web apps only.
 [GetRawURL](<#GetRawURL>) | Returns the current relative requested URL, without the http://[server] part and without the session identifier.<br/>If SEO rules are being applied, the URL displayed in the user's browser is returned, and not the final URL after the rule is applied. | Applies to all app types.
-[GetReferrerURL](<#GetReferrerURL>) | Applies to all app types.
+[GetReferrerURL](<#GetReferrerURL>) | |Applies to all app types.
 [GetRequest_AddArgument](<#GetRequest_AddArgument>) | Builds the arguments string for an HTTP request with method GET, adding a new parameter to the arguments string. | Applies to all app types.
 [GetRequest_Submit](<#GetRequest_Submit>) | Submit an HTTP GET request given the GET arguments and the URL. Returns the response content as a string and as binary data. | Applies to all app types.
 [GetRequestContent](<#GetRequestContent>) | Gets the content of the current HTTP request. | Applies to all app types.

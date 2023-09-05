@@ -34,7 +34,7 @@ Below is an example of a typical architecture:
 
 <div class="info" markdown="1">
 
-Note that this configuration is not applicable for OutSystems Cloud customers. 
+Note that this configuration is not applicable to OutSystems Cloud. 
 
 </div>
 

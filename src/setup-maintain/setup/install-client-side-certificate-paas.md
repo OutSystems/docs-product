@@ -25,7 +25,7 @@ This option is available depending on your subscription, check here for more det
 You’ll need to [open a support case](https://success.outsystems.com/Support/OutSystems_community/Opening_a_support_case_with_OutSystems) and:
 
 * Provide the client-side certificate:
-    * In .PFX format, with password and TripleDES-SHA1 encryption type (AES256-SHA256 encryption is not supported).
+    * In .PFX format, with password and TripleDES-SHA1 encryption type (AES256-SHA256 encryption is not currently supported).
     * Any other required root certificates, in .CER format, if not yet included in the .PFX.
 
 * Make sure to be clear about what environments should the certificate be installed in.

@@ -39,7 +39,7 @@ jobs:
 
     - name: Checkout
       if: inputs.files == '' || steps.count.outputs.number > 0
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 1
         ref: ${{ github.event.pull_request.head.ref || github.ref_name }}

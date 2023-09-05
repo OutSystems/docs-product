@@ -89,22 +89,22 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
 
 1. In your app's Extensibility Configurations, add the following:
 
-{
-   "resources": {
-        "android": {
-            "AndroidResource": {
-                "src": "www/google-services.json",
-                "target": "app/google-services.json"
-            }
-        },
-        "ios": {
-            "IosResource": {
-                "src": "www/GoogleService-Info.plist",
-                "target": "GoogleService-Info.plist"
+        {
+            "resources": {
+                "android": {
+                    "AndroidResource": {
+                        "src": "www/google-services.json",
+                        "target": "app/google-services.json"
+                    }
+                },
+                "ios": {
+                    "IosResource": {
+                        "src": "www/GoogleService-Info.plist",
+                        "target": "GoogleService-Info.plist"
+                    }
+                }
             }
         }
-    }
-}
 
 1. (Optional) If you want to use different configurations for each environment, repeat steps 2 to 6 for each one.
 

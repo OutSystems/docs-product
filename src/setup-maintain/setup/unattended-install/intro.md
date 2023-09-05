@@ -83,7 +83,7 @@ The automatic prerequisites installation has a timeout of 15 minutes. This ensur
 
     * Run the OutSystems Service Studio installation executable as follows: ``ServiceStudio-<version>.exe /S [/D=<Service_Studio_path>]``
 
-    * Run the OutSystems Integration Studio installation executable as follows: ``IntegrationStudio-<version>.exe/S[/D=<Integration_Studio_path>]``
+    * Run the OutSystems Integration Studio installation executable as follows: ``IntegrationStudio-<version>.exe /S [/D=<Integration_Studio_path>]``
 
 * If you are installing or upgrading to OutSystems Platform Server 11.17.0 or earlier, run the OutSystems Development Environment installation package as follows:
 

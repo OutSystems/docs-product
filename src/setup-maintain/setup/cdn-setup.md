@@ -32,6 +32,12 @@ Below is an example of a typical architecture:
 
 ## Configurations
 
+<div class="info" markdown="1">
+
+Note that this configuration is not applicable to OutSystems Cloud. 
+
+</div>
+
 To configure a CDN, the following configurations must be executed both on the CDN side and on the OutSystems side.
 
 ### CDN-specific configurations

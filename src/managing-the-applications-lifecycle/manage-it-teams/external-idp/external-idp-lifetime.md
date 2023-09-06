@@ -33,10 +33,10 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
         You can validate the URL using the **Test configuration** link.
        
-    1. **Scopes**: Once the well-known configuration URL is entered, all the scopes supported and enabled in the identity provider are fetched and listed for selection. Any required scope for the user authentication process can then be selected and saved for the configuration.
+    1. **Scopes**: Clicking the **Test** button after you enter the well-known configuration URL fetches all the scopes supported and enabled in the identity provider. The scopes are displayed on the **Configuration details** section. Any required scope for the user authentication process can be added and saved for the configuration.
        
           **Default Selected Scopes**:
-           By default, the following scopes are pre-selected for all identity providers:
+           By default, the following scopes are added for all identity providers and cannot be removed:
        
         * openid
        
@@ -44,19 +44,21 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
        
         * profile
        
-         These scopes provide basic user information that is necessary for authentication and initial authorization.
+         **Note**: If **offline_access** is supported and enabled in the Identity provider, this is also added by default. However, this scope can be removed if not needed.
+
+       These scopes provide basic user information that is necessary for authentication and initial authorization.
 
        **Additional Scope Selection**:
-                    In addition to the default selected scopes, users can choose any other required scopes based on the settings of their identity provider. The additional scopes serve various purposes, such as obtaining a refresh token or accessing specific claim values used to uniquely identify users.
+                    In addition to the default selected scopes, users can add any other required scopes based on the settings of their identity provider. The additional scopes serve various purposes, such as obtaining a refresh token or accessing specific claim values used to uniquely identify users.
 
         **Recommended Additional Scopes**:
                     The following are some recommendations for additional scope selection based on commonly used identity providers:
 
          *  **Azure AD**:
-                    For Azure AD, it is recommended to select the **offline_access** scope. This scope allows the application to request a refresh token, allowing it to obtain new access tokens without requiring user interaction.
+                    For Azure AD, it is recommended to add the **offline_access** scope. This scope allows the application to request a refresh token, allowing it to obtain new access tokens without requiring user interaction.
 
          *  **Okta**:
-                    For Okta, it is recommended to select the **offline_access** scope. This scope grants the application the ability to acquire a refresh token, ensuring seamless access token renewal without user involvement.
+                    For Okta, it is recommended to add the **offline_access** scope. This scope grants the application the ability to acquire a refresh token, ensuring seamless access token renewal without user involvement.
 
           **Note**: The recommended additional scopes mentioned above are not exhaustive, and users should consult their identity provider's documentation for specific scope requirements.
 

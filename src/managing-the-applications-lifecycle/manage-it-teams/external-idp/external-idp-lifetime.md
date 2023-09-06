@@ -163,3 +163,6 @@ Once the OpenID Connect provider is activated, the fallback of using the built-i
     If you don't clear the passwords when activating the OIDC provider, a warning message displays on the **Authentication Settings** screen. Click **Clear passwords now**.
 
     ![Clear passwords](images/clear-pass-lt.png)
+  
+
+

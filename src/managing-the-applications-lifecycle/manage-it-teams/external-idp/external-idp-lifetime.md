@@ -80,7 +80,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
         **Note**: For Azure and OKTA use ``preferred_username`` as the **Username Claim** value.
 
-    ![Enter authentication settings](images/authentication-settings-scope-lt.png)
+    ![Enter authentication settings](images/auth-settings-scope-lt.png)
 
 1. Click **Save Changes**.
 

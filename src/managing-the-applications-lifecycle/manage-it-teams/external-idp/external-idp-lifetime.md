@@ -34,9 +34,20 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
         You can validate the URL using the **Test configuration** link.
        
     1. **Scopes**: Clicking the **Test** button after you enter the well-known configuration URL fetches all the scopes supported and enabled in the identity provider. The scopes are displayed on the **Configuration details** section. Any required scope for the user authentication process can be added and saved for the configuration.
+  
+          
+       **Note:** Please follow these guidelines when selecting values for scopes:
        
-          **Default Selected Scopes**:
-           By default, the following scopes are added for all identity providers and cannot be removed:
+       * Select your value from the provided list of acceptable values in Configuration details section, ensuring that it matches exactly.
+       
+       * Avoid entering values that are not included in the provided list.
+       
+       * Pay attention to letter case (uppercase/lowercase) and formatting requirements if specified.
+       
+       Selecting values outside the provided list may result in errors or data inconsistencies.
+       
+        **Default Selected Scopes**:
+          By default, the following scopes are added for all identity providers and cannot be removed:
        
         * openid
        

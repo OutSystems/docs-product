@@ -1,6 +1,6 @@
 ---
-summary: Learn the several components that are part of OutSystems, and how to set up in the OutSystems Cloud or as self-managed.
-tags: 
+summary: Learn the several components that are part of OutSystems, and how to set up OutSystems on the cloud or as self-managed.
+tags: article-page; support-installation; support-Installation_Configuration-overview; support-Integrations_Extensions
 locale: en-us
 guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -45,7 +45,7 @@ OutSystems covers the full application lifecycle, from development to deployment
 
 * **Production Environment:** The environment that hosts the application version end users are interacting with. Usually, this environment is only accessible by the operations team.
 
-* **Management Environment:** The environment that hosts LifeTime application, which is the infrastructure management console. Learn how to [size an environment for the infrastructure management console](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Size_an_environment_to_run_the_infrastructure_management_console).
+* **Management Environment:** The environment that hosts LifeTime application, which is the infrastructure management console. Given its requirements, LifeTime application must run in a **dedicated** environment. **Installing LifeTime in an existing environment is not a supported scenario.** Learn how to [size an environment for the infrastructure management console](https://success.outsystems.com/Support/Enterprise_Customers/Installation/Size_an_environment_to_run_the_infrastructure_management_console).
 
 You can have your infrastructure on the cloud or as self-managed. [Learn more about the possible OutSystems infrastructure configurations.](./possible-setups/intro.md)
 
@@ -92,7 +92,7 @@ Before installing any component of OutSystems, make sure your hardware and softw
 To install OutSystems in your infrastructure:
 
 1. Download the Platform Server installation binaries.
-1. Install the Platform Server in each environment that will host your applications (for example, Development, Quality, and Production).
+1. Install the Platform Server in each environment that will host your applications (for example, Development, Quality and Production).
 1. Download the infrastructure management console (LifeTime) installation binaries.
 1. Install the infrastructure management console in a dedicated environment.
 1. Configure the infrastructure management console.
@@ -112,7 +112,7 @@ To perform an offline installation of Platform Server you might need to download
 
 ### 2. Install the Platform Server { #install-the-platform-server }
 
-Install the Platform Server in each environment of your infrastructure that will host your applications (eg. Development, Quality, and Production). For this, follow the Platform Server installation checklist that is launched when you run the Platform Server installation binary.
+Install the Platform Server in each environment of your infrastructure that will host your applications (eg. Development, Quality and Production). For this, follow the Platform Server installation checklist that is launched when you run the Platform Server installation binary.
 
 <div class="info" markdown="1">
 
@@ -166,7 +166,7 @@ The process will not make any modifications to user-defined configurations; it w
 
 The configuration tuning option is also available as a command-line switch when running the installer in [unattended mode](unattended-install/intro.md): `/DoTuning=<factory_size>`.  
 When you provide this switch, the installer will change any default values to the ones recommended for the specified `<factory_size>`. These recommended values for each factory size are described in the subsections **Tuning .NET Framework Runtime** and **Tuning Internet Information Services** in the Installation Checklist.  
-The available options for `<factory_size>` are `small`, `medium`, and `large`. Any other option text will map to the `small` option.
+The available options for `<factory_size>` are `small`, `medium` and `large`. Any other option text will map to the `small` option.
 
 ## Offline Installation { #offline-installation }
 
@@ -178,7 +178,7 @@ Do the following:
 
     * For the **Platform Server** offline installation, create the `bin` folder at the same folder level as the Platform Server installation package.
 
-    * For the **LifeTime Management Console** offline installation, create the `bin` folder inside the Platform Server installation path. The default path is `C:\Program Files\OutSystems\Platform Server`, but you can use a different one.
+    * For the **LifeTime Management Console** offline installation, create the `bin` folder inside the Platfor Server installation path. The default path is `C:\Program Files\OutSystems\Platform Server`, but you can use a different one.
 
 1. Download and place the required Microsoft installers in the `bin` folder.
 

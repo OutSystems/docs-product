@@ -71,7 +71,7 @@ _Note:_ There are alternatives to the `autoheal` strategy and you have the abili
 RabbitMQ nodes and CLI Tools use a cookie to determine whether they are allowed to communicate with each other. 
 For a CLI tool and a node to be able to communicate they must have the same shared secret called the Erlang cookie. Therefore before you aggregate the nodes into a single cluster it is necessary to have the same secret across all the nodes in the cluster. 
 For more information on the Erlang cookie and file location check RabbitMQ [official documentation](<https://www.rabbitmq.com/cli.html#erlang-cookie>).
-Make sure all machines can communicate with each other. If not, please add entries in the respective host files which are located at `<C:\Windows\System32\drivers\etc>`.
+Make sure all machines can communicate with each other by confirming the correct DNS resolution of the hostnames used and that the TCP ports required for RabbitMQ clustering are open in each node. More information about these requirements is available in official RabbitMQ documentation at [Networking and RabbitMQ](https://www.rabbitmq.com/networking.html#epmd-port).
 
 <div class="info" markdown="1">
 

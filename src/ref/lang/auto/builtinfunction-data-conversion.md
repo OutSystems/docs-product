@@ -7,6 +7,8 @@ platform-version: o11
 
 # Data Conversion
 
+This article lists the data conversion functions.
+
 |Name|Description|
 |--- |--- |
 |[BooleanToInteger](#booleantointeger--booleantointeger)|Converts Boolean 'b' to an Integer value, either 1 if 'b' is True or 0 if 'b' is False.|

@@ -62,7 +62,7 @@ In Traditional Web you can create inline CSS by adding `style` in the **Extended
 
 ![Inline CSS in Traditional Web app](images/css-properties.png)
 
-## OutSystems Grid
+## OutSystems grid
 
 OutSystems uses a high-level grid system. If you specify the number of columns in the Theme grid settings, the width of elements can be expressed in columns. In **Margin Left** you can use the `(Auto)` property to have the values calculated automatically.
 
@@ -72,4 +72,11 @@ Use the `@import` CSS at-rule in Style Sheet Editor to import style rules from o
 
 ## Preprocessors
 
-OutSystems development tools do not support the use of CSS preprocessors (such as Sass or LESS) in apps.
+OutSystems development tools don't support the use of CSS preprocessors (such as Sass or LESS) in apps.
+
+## CSS Best Practices:
+
+1. **Avoid Inline Styles**: Inline styles can quickly become hard to manage and maintain, especially in large and complex projects. When styling is scattered throughout the HTML elements, it becomes challenging to track and modify styles, leading to code duplication and potential errors.
+1. **Avoid using ID selector**: The Id of each element is managed by the platform depending on its scope and could be changed anytime. To avoid unexpected behaviors, use CSS classes instead.
+1. **Centralize CSS in theme**: Adding styles in blocks and screen stylesheets can lead to maintainability and scalability issues. It leads to style duplication and also may have some impact on performance because it increases the file requests to the server.
+1. **Use CSS variables**: CSS variables allow you to define reusable values that can be used across your entire stylesheet. This makes it easy to maintain consistent styles throughout your application. 

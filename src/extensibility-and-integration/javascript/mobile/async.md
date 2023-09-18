@@ -25,7 +25,7 @@ For more information on using promises, check the [Mozilla Developer Network doc
 
 ## Define an Asynchronous Client Action
 
-In an JavaScript element there are two predefined functions available for use: "$resolve()" and "$reject()". These functions are very similar to the usual "resolve()" and "reject()" functions used together with promises, but "$resolve()" doesn't take any arguments; output values should be set through the "$parameters" predefined object.
+In a JavaScript element there are two predefined functions available for use: "$resolve()" and "$reject()". These functions are very similar to the usual "resolve()" and "reject()" functions used together with promises, but "$resolve()" doesn't take any arguments; output values should be set through the "$parameters" predefined object.
 
 When one of "$resolve()" or "$reject()" predefined functions is used in a given JavaScript element, the client action the element belongs to will be considered **asynchronous**. In addition, if a given client action contains server calls, like executing server actions or refreshing aggregates, this will also make the client action to be considered asynchronous.
 

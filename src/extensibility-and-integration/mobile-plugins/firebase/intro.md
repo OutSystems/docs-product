@@ -50,11 +50,11 @@ To add a Firebase plugin to your module, follow these steps:
 
 1. Install the plugin and reference it in your module. See [Adding plugins](../intro.md#adding-plugins) for detailed instructions.
 
-1. Add the [Google services configuration file](#adding-google-services-configuration-file) to the module.
+1. Add the [Google services configuration files](#adding-google-services-configuration-files) to the module.
 
     <div class="info" markdown="1">
 
-    You need to add Google services configuration file only for the first Firebase plugin in your module. The next Firebase plugin you add uses the same configuration files.
+    You need to add the Google services configuration files only for the first Firebase plugin in your module. The next Firebase plugin you add uses the same configuration files.
 
     </div>
 
@@ -68,7 +68,7 @@ To add a Firebase plugin to your module, follow these steps:
 
     </div>
 
-## Adding Google services configuration file
+## Adding Google services configuration files
 
 An app with a Firebase Plugin requires the plugin configuration files in the app file resources. Follow the steps to add the Firebase configuration to your module:
 
@@ -76,40 +76,39 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
 
 1. Right-click the **Resources** folder and select **Import Resource**. The **Import Resource** dialog opens.
 
-1. Select the [google-services.zip firebase configuration file](#preparing-firebase-configuration-file) and confirm the selection. Service Studio adds the file under the **Resources** folder.
-
     ![Resources folder in Service Studio](images/resources-folder-ss.png)
 
-1. Select the **google-services.zip** resource and configure the following:
+1. Select the **google-services.json** file and confirm the selection. Service Studio adds the file under the **Resources** folder.
 
-    * In the **Deploy Action** list, select **Deploy to Target Directory**.
-    * In the Target Directory, enter the [target directory for your environment](#generating-target-directories-for-configuration-files).
+1. Do the same for the **GoogleService-Info.plist** file.
 
-    ![Resource settings for Firebase](images/firebase-resource-properties-single-ss.png)
+1. In the **Deploy Action** list, select **Deploy to Target Directory**. Leave the **Target Directory** field empty.
 
-1. Repeat steps two and four for each environment, each time using a different configuration and [target directory](#generating-target-directories-for-configuration-files).
+    ![Resource settings for Firebase](images/firebase-resources-ss.png)
 
-    ![Resource settings for Firebase](images/firebase-resource-properties-multiple-ss.png)
 
-### Preparing Firebase configuration file
+1. In your app's Extensibility Configurations, add the following:
 
-Add the files **GoogleService-Info.plist** and **google-services.json** in a zip file and name the zip file **google-services.zip**.
+        {
+            "resources": {
+                "android": {
+                    "AndroidResource": {
+                        "src": "www/google-services.json",
+                        "target": "app/google-services.json"
+                    }
+                },
+                "ios": {
+                    "IosResource": {
+                        "src": "www/GoogleService-Info.plist",
+                        "target": "GoogleService-Info.plist"
+                    }
+                }
+            }
+        }
 
-![Configuration files in a zip archive](images/zipped-configs.png)
+1. (Optional) If you want to use different configurations for each environment, repeat steps 2 to 6 for each one. Check how to [Override Mobile Extensibility Configurations](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/deploy_applications/override_the_default_mobile_extensibility_configurations) in order for the mobile application to point to the correct configuration files in each environment.
 
-### Generating target directories for configuration files
-
-A Firebase Plugin requires that you supply configuration files in the app file resources. Mobile apps commonly have different identifiers in different environments, so you need to generate target directories for each environment.
-
-To get the target directory, concatenate the **app identifier** and **.firebase**. Here are examples of three environments with different app identifiers.
-
-| Environment | App identifier | Target directory |
-| - | - | - |
-| DEV | com.sample.dev.MyApp | `com.sample.dev.MyApp.firebase` |
-| QA | com.sample.qa.MyApp | `com.sample.qa.MyApp.firebase` |
-| PROD | com.sample.prod.MyApp | `com.sample.prod.MyApp.firebase` |
-
-Use the target directory value in the **Target Directory** property of the **Resource**.
+    ![Resource settings for Firebase](images/firebase-multiple-configurations-ss.png)
 
 ### Additional setup for the Dynamic Links plugin
 
@@ -117,16 +116,14 @@ The Firebase Dynamic Links Plugin has additional setup steps required for it to 
 
 * You need to include a global preference in the Extensibility Configurations of the application using the plugin. The value for this preference needs to match the URL prefix you set in the Dynamic Links page in the Firebase console. For example:
 
-    ```JSON
-    {
-        "preferences": {
-            "global": [{
-                "name": "FIREBASE_DOMAIN_URL_PREFIX",
-                "value": "outsystemsfirebase.page.link"
-            }]
+        {
+            "preferences": {
+                "global": [{
+                    "name": "FIREBASE_DOMAIN_URL_PREFIX",
+                    "value": "outsystemsfirebase.page.link"
+                }]
+            }
         }
-    }
-    ```
 
 * For iOS, you need to use a provisioning profile from Apple that contains the Associated Domains capability. For more info, see [Configuring an Associated Domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain) by Apple. Ensuring the app is compliant with Apple’s Data Use and Sharing guidelines
 

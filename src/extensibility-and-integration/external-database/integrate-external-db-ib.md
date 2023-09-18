@@ -298,6 +298,13 @@ To help you decide which default behavior is best for your new integration with 
 |Phone Number|"" (empty string)|`"<ib>NULL</ib>"`|
 |Text|"" (empty string)|`"<ib>NULL</ib>"`|
 
+### Structure of generated integrations
+
+For integrations with external databases, Integration Builder generates and publishes integrations, which are OutSystems applications composed of two modules:
+
+* An extension that exposes Entities with Entity actions to interact with external databases. By default, the extension name has a "_DRV" suffix, meaning "Driver".
+* One service module that's used to register the integration in Integration Manager. It's an internal module that is required for Integration Builder to work. It's protected to prevent changes. By default, the module name has a "_IS" suffix, meaning "Integration Service".
+
 ### Use the integration in your application { #use }
 
 Depending on the type of database you integrated with, follow the steps on one of the following sections.

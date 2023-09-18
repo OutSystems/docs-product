@@ -5,6 +5,7 @@ locale: en-us
 guid: 595C5E6F-7C59-4314-9BDE-4EF1400A670F
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=1913%3A2347&mode=design&t=A3NsKzxFUYzrHxmx-1
 ---
 
 # IT Users Integration with External IdP via OpenId Connect
@@ -21,7 +22,8 @@ The **IT Users Authentication with External IdP (OIDC)** feature enables:
 * Secure the authentication of IT users, making sure that only authorized users have access to OutSystems tools and management consoles across environments.
 * Secure access to OutSystems management consoles and tools by following customer compliance policies integrated with external IdPs, which use authentication best practices, for example, multi-factor authentication, password complexity, expiration, and rotation.
 * Efficient authentication by using SSO across the company, which avoids users having to recall different credentials for different systems.
-* External IdP login practices; creating users without a password forces them to log in using the external IdP. **Note**: It's also possible to add or remove the password for any existing users previously created after you enable the OIDC feature.
+* Efficient external IdP login practices. You can create users without a password which forces them to log in using the external IdP.
+      **Note**: Once the OIDC feature is activated, it’s not possible to add or change passwords for any new or existing users. Passwords can be added/changed only for Local admin users.
 
 ## Login flow 
 
@@ -29,7 +31,7 @@ You can integrate an external IdP by configuring the OIDC protocol in LifeTime. 
 
 * Service Center (SC)
 
-* Lifetime (LT)
+* LifeTime (LT)
 
 * Service Studio (SS)
 
@@ -52,6 +54,14 @@ Applications that use Service Center as a user provider and that implement the r
 The following diagram shows the flow for the IT Users Integration with External IdP (OIDC) feature when you activate it.
 
 ![External IdP flow](images/it-users-integration-external-idp-diag.png)
+
+The following diagram shows the communication flow between Service Studio, AI Mentor Studio, Integration, Experience, and Workflow Builder with External IdP (OIDC).
+
+![Service Studio IdP](images/Service-Studio.png)
+
+The following diagram shows the communication flow between LifeTime with External IdP (OIDC).
+
+![LifeTime IdP](images/LifeTime.png)
 
 ## Limitations
 

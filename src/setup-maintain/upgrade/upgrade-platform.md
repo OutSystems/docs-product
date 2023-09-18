@@ -17,7 +17,7 @@ If you are using a personal environment and you would like to upgrade it to the 
 
 ## Overview { #overview }
 
-The OutSystems ecosystem is divided into components with different [release cycles](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/OutSystems_Release_Cycle): Platform Server, Development Environment (Service Studio and Integration Studio) and LifeTime Management Console. This article focuses on the upgrade of the core server part of OutSystems product, the **Platform Server**.
+The OutSystems ecosystem is divided into components with different [release cycles](https://success.outsystems.com/support/release_notes/outsystems_product_releases/): Platform Server, Development Environment (Service Studio and Integration Studio) and LifeTime Management Console. This article focuses on the upgrade of the core server part of OutSystems product, the **Platform Server**.
 
 Upgrading your OutSystems environments to a new Platform Server version is a four-step process that requires preparation, as it may impact your applications (all your applications will have a new version after the upgrade). The steps for this process are:
 
@@ -36,13 +36,13 @@ This information is also available offline, see the [Upgrade datasheet](resource
 
 Up to version **OutSystems 10**, upgrading OutSystems to a new major version means upgrading all the infrastructure - LifeTime management console and the application environments.
 
-From version **OutSystems 11 onwards**, [LifeTime is distributed independently](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/OutSystems_Release_Cycle#Release_cycles) from the Platform Server, which enables both components to have different upgrading paces. For further details on the LifeTime upgrade process, see [this article](upgrade-lifetime.md).
+From version **OutSystems 11 onwards**, [LifeTime is distributed independently](https://success.outsystems.com/support/release_notes/outsystems_product_releases/#release-cycles) from the Platform Server, which enables both components to have different upgrading paces. For further details on the LifeTime upgrade process, see [this article](upgrade-lifetime.md).
 
-**When upgrading your infrastructure, make sure that LifeTime is the most up-to-date environment.** If you’re running OutSystems 11, LifeTime's [continuous release cycle](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/OutSystems_Release_Cycle#Release_cycles) enables you to benefit quicker from the latest features and fixes. If you are running OutSystems 10 or previous, first you must [upgrade your LifeTime Management console](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Upgrade_LifeTime_management_console) to the latest version.
+**When upgrading your infrastructure, make sure that LifeTime is the most up-to-date environment.** If you’re running OutSystems 11, LifeTime's [continuous release cycle](https://success.outsystems.com/support/release_notes/outsystems_product_releases/#release-cycles) enables you to benefit quicker from the latest features and fixes. If you are running OutSystems 10 or previous, first you must [upgrade your LifeTime Management console](upgrade-lifetime.md) to the latest version.
 
 <div class="info" markdown="1">
 
-Starting on version 11, LifeTime is only supported when installed in a dedicated environment. If you still have it installed in an application environment, see [how to reinstall LifeTime in a dedicated environment](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Reinstall_the_infrastructure_management_console_in_a_dedicated_environment).
+Starting on version 11, LifeTime is only supported when installed in a dedicated environment. If you still have it installed in an application environment, see [how to reinstall LifeTime in a dedicated environment](https://success.outsystems.com/support/enterprise_customers/maintenance_and_operations/reinstall_the_infrastructure_management_console_in_a_dedicated_environment/).
 
 </div>
 
@@ -50,8 +50,8 @@ Starting on version 11, LifeTime is only supported when installed in a dedicated
 
 Before you start the upgrade of your OutSystems infrastructure, you should consider the new features, improvements, security, and bug fixes of that release:
 
-* [What's new (OutSystems 11)](https://success.outsystems.com/Documentation/11/New_in_OutSystems_11)
-* [Release Notes](https://success.outsystems.com/Support/Release_Notes)
+* [What's new (OutSystems 11)](https://www.outsystems.com/product-updates/)
+* [Release Notes](https://success.outsystems.com/support/release_notes/)
 
 You should also assess the impact that the upgrade may have in your applications, checking the Side Effects and Breaking Changes documents:
 
@@ -149,8 +149,8 @@ In the OutSystems Cloud, the process of upgrading the Platform Server is handled
 
 1. Make your upgrade request by opening a support ticket using [any of the available mechanisms](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) and provide the following:
 
-    * An [infrastructure admin's](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/Managing_your_company_permissions_on_outsystems.com#Infra_Admin) approval. If you're an infrastructure admin, your request is authorized. If you're not an admin either ask your admin to submit the ticket or to leave a reply on the ticket stating the approval.
-    * What are the **environments** you want to upgrade and to what **version**. You can check [OutSystems release notes](https://success.outsystems.com/Support/Release_Notes) for a list of available versions for Platform Server and LifeTime. We advise you to choose the latest version.
+    * An [infrastructure admin's](https://success.outsystems.com/support/outsystems_community/managing_your_company_permissions_on_outsystems_customer_portal/#infra-admin) approval. If you're an infrastructure admin, your request is authorized. If you're not an admin either ask your admin to submit the ticket or to leave a reply on the ticket stating the approval.
+    * What are the **environments** you want to upgrade and to what **version**. You can check [OutSystems release notes](https://success.outsystems.com/support/release_notes/) for a list of available versions for Platform Server and LifeTime. We advise you to choose the latest version.
     * Let us know **when** (date and time) you wish to upgrade each environment, make sure to refer the time zone. We advise to allow at least a day between the schedule of each environment to accommodate for testing. If you have any special needs, let us know.
 
 1. OutSystems will promptly contact you to discuss the schedule and plan for the upgrade.
@@ -184,9 +184,9 @@ In the OutSystems Cloud, the process of upgrading the Platform Server is handled
 
 #### Self-managed (private cloud / on-premises) { #upgrade-premises }
 
-If the environment is self-managed (running in your own private cloud or on-premises) the upgrade process is fully managed by you, without the direct involvement of OutSystems. However, you can [contact OutSystems Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) at any time for assistance.​
+If the environment is self-managed (running in your own private cloud or on-premises) the upgrade process is fully managed by you, without the direct involvement of OutSystems. However, you can [contact OutSystems Support](https://www.outsystems.com/legal/success/support-terms-and-service-level-agreements-sla-of-the-outsystems-software/#contact-channels) at any time for assistance.​
 
-While upgrading the Platform Server component, consider [enabling maintenance mode in the environment](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_Your_OutSystems_Infrastructure/Environment_in_maintenance_mode) to avoid unnecessary communication attempts from the LifeTime console.
+While upgrading the Platform Server component, consider [enabling maintenance mode in the environment](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_your_outsystems_infrastructure/environment_in_maintenance_mode/) to avoid unnecessary communication attempts from the LifeTime console.
 
 The process is the following:
 
@@ -251,7 +251,7 @@ Starting from Platform Server 11.19.0, a new [Deploy All](upgrade-platform-modul
 
 Having the Platform Server upgraded in the environment, consider the following scenarios when publishing all the modules in the new version:
 
-* On the **Development environment**, the fastest way to upgrade all your applications is by [creating a Solution with all modules](https://success.outsystems.com/Documentation/How-to_Guides/DevOps/Creating_and_using_an_All_Components_solution) and publish the "Current Running Version". If you get any errors publishing the solution, use the appropriate development tool to open the correspondent module and fix the problems. In the end, you can publish the whole solution again to make sure all issues and dependencies are properly resolved.
+* On the **Development environment**, the fastest way to upgrade all your applications is by [creating a Solution with all modules](https://success.outsystems.com/documentation/how_to_guides/devops/creating_and_using_an_all_components_solution/) and publish the "Current Running Version". If you get any errors publishing the solution, use the appropriate development tool to open the correspondent module and fix the problems. In the end, you can publish the whole solution again to make sure all issues and dependencies are properly resolved.
 
 * For all **non-development environments** (for example, Testing, Production, etc.), it’s recommended to stage the application modules from a previously upgraded environment. Use the LifeTime management console to stage applications, when the lifecycle of the applications is perfectly aligned with the upgrade.
 
@@ -267,7 +267,7 @@ For **Forge components**, it's a good practice to take the opportunity to upgrad
 
 ## Testing { #testing }
 
-After publishing your applications in the new version, create and run tests to ensure that your applications hot-points aren't affected by the upgrade. Test your applications (screens, workflows, operations, etc.), and check for application errors or background issues in [Service Center's Error Log](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/View_the_Environment_Logs_and_Status), to guarantee that all applications are running as expected.
+After publishing your applications in the new version, create and run tests to ensure that your applications hot-points aren't affected by the upgrade. Test your applications (screens, workflows, operations, etc.), and check for application errors or background issues in [Service Center's Error Log](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md), to guarantee that all applications are running as expected.
 
 ## Doing maintenance while upgrading environments { #maintenance }
 

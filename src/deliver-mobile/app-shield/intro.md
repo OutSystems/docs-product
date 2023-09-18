@@ -65,14 +65,36 @@ To keep your apps and data secure, OutSystems recommends that you always use the
 
 To ensure the integrity and protection of your apps with **AppShield**, you must meet the following requirements.
 
-* You installed the **AppShield** plugin in your environment. To download the plugin, check out [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge.
 * You have a license for **AppShield**.
-* You're using MABS 6.3 or later. Check out [MABS and mobile operating systems life cycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions) for more information about the supported operating systems.
+
+* You're using MABS 6.3 or later. 
+
+    For more information about the supported operating systems, see [MABS and mobile operating systems life cycles](https://success.outsystems.com/Support/Release_Notes/Mobile_Apps_Build_Service_Versions).
+
 * The OutSystems Platform Server is running on version 11.
+
+## How to enable AppShield on your mobile apps
+
+To protect your mobile app using the AppShield plugin, follow these steps:
+
+1. **Install the AppShield** plugin in your environment.
+    
+    To download the plugin, go to [OutSystems AppShield](https://www.outsystems.com/forge/component-overview/9379/) in Forge.
+
+    ![Install Appshield plugin](images/install-appshield.png)
+
+1. **Add the dependencies for AppShield** plugin on each mobile app you want to protect.
+
+    ![Add dependencies](images/add-dependencies-ss.png)
+
+1. **Generate and distribute a new mobile package** protected with AppShield.
+
+    ![Generate and distribute mobile package](images/distribute-app.png)
 
 Note the following:
 
-* You need to rebuild and redistribute the mobile apps protected with **AppShield**.
+* All AppShield capabilities, except [Screen reader](https://success.outsystems.com/documentation/11/delivering_mobile_apps/harden_the_protection_of_mobile_apps_with_appshield/appshield_protection_features/#android-screen-reader) and [Keylogger](https://success.outsystems.com/documentation/11/delivering_mobile_apps/harden_the_protection_of_mobile_apps_with_appshield/appshield_protection_features/#keylogger-protection) detection are enabled by default.
+* If any additional configuration is needed, go to the [Configuration](#configuration) section.
 * The app file size increases after hardening the security.
 * MABS takes more time to create a hardened build.
 
@@ -187,15 +209,17 @@ These are the values available in the **AppShield** configuration JSON.
 
 | Value                           | Type         | OS           | Description                                                                                       |
 | ------------------------------- | ------------ | ------------ | ------------------------------------------------------------------------------------------------- |
-| AllowJailbrokenRootedDevices    | boolean      | iOS, Android | If set to true, allows users to run the app on the jailbroken devices.                            |
-| AllowScreenshot                 | boolean      | iOS, Android | If set to true, allows users to take screenshots of the app.                                      |
-| AppShieldObfuscationRules       | Text(base46) | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
-| BlockUntrustedKeyboards         | boolean      | Android      | If set to true, detects and blocks untrusted keyboards.                                           |
-| BlockUntrustedScreenreaders     | boolean      | Android      | If set to true, detects and blocks untrusted screen readers.                                      |
-| DisableAppShielding             | boolean      | iOS, Android | Activates or deactivates App Shield.
+| AddTrustedKeyboardSigner        | Text         | Android      | If BlockUntrustedKeyboards is set to True, this option can whitelist a third party keyboard. This option must be added for each keyboard software that you want to add to the whitelist. |
+| AddTrustedScreenReaderSigner    | Text         | Android      | If BlockUntrustedScreenreaders is set to True, this option can whitelist a third party screen reader. This option must be added for each screen reader software that you want to add to the whitelist. |
+| AllowJailbrokenRootedDevices    | Boolean      | iOS, Android | If set to True, users can run the app on the jailbroken devices.                            |
+| AllowScreenshot                 | Boolean      | iOS, Android | If set to True, users can take screenshots of the app.                                      |
+| AppShieldObfuscationRules       | Text(base64) | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
+| BlockUntrustedKeyboards         | Boolean      | Android      | If set to True, untrusted keyboards are detected and blocked.                                           |
+| BlockUntrustedScreenreaders     | Boolean      | Android      | If set to True, untrusted screen readers are detected and blocked.                                      |
+| DisableAppShielding             | Boolean      | iOS, Android | Activates or deactivates App Shield.
  | ExitOnURL | URL value | iOS, Android|If an app feature is blocked due to a configured policy of the **AppShield** plugin, the default browser will open the URL which may explain the problem to the user. See ExitOnURL for additional information.                                                           |
 | GooglePlayAppSigningCertificate | Text(Base64) | Android | Google Play App Signing certificate.                                                              |
-| RemoveQueryAllPackagesPermission | boolean | Android | If set to true, it removes the app ability to check other installed applications. See more information [here](query-all-packages.md).                                                              |
+| RemoveQueryAllPackagesPermission | Boolean | Android | If set to True, it removes the app ability to check other installed applications. For more information, see [here](query-all-packages.md).                                                              |
 | android                         | JSON value   | Android      | The key denoting values that apply to the Android devices.                                        |
 | global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.                                    |
 | ios                             | JSON value   | iOS          | The key denoting values that apply to the iOS devices.                                            |

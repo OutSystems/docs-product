@@ -126,6 +126,4 @@ The compiled applications are stored at:
 
 ### Logging
 
-OutSystems has built-in logic capabilities to monitor the applications during runtime. To ensure the performance of the applications is not compromised, the logs are performed asynchronously, using a message queue. For this, the OutSystems installer creates several queues in the Microsoft Message Queue, and configures them to not be persisted in secondary memory.
-
-The LogServer process is then responsible to consume the messages in these queues and insert them in the OutSystems' Log tables. You can then use Service Center (the environment monitoring console) to consult the logs.
+OutSystems has built-in logic capabilities to monitor the applications during runtime. To ensure the performance of the applications is not compromised, the logs generated are first stored to memory buffers and then written asynchronously to the Log tables in the database. You can then use Service Center (the environment monitoring console) to consult the logs.

@@ -23,7 +23,7 @@ You can use the Map component to provide an interactive satellite map to your us
 
 <div class="info" markdown="1" >
 
-Currently, only Google Maps is supported. Google Maps isn’t free. You must always buy an API key. For more info on getting an API Key, see [Using API Keys](https://developers.google.com/maps/documentation/javascript/get-api-key).
+Currently, Google Maps and Leaflet are supported. Google Maps isn’t free. You must always buy an API key. For more info on getting an API Key, see [Using API Keys](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
 </div>
 

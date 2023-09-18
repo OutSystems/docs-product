@@ -15,22 +15,27 @@ Architecture Dashboard is now AI Mentor Studio.
 
 </div>
 
-AI Mentor Studio includes the following pieces: 
+AI Mentor Studio includes the following components: 
 
 AI Mentor Studio SaaS
 :   A "Software as a Service" that processes and shows all data collected by the AI Mentor Studio LifeTime Plugin.
 
 AI Mentor Studio LifeTime Plugin
-:   A LifeTime plugin that's published in a platform installation (on-premises or cloud) with **environment probes** to collect data and communicate with the AI Mentor Studio SaaS.
+:   A LifeTime plugin that's published in a platform installation (on-premises or cloud) with **environment probes** to collect data and communicate with the AI Mentor Studio SaaS.  
 
-![AI Mentor Studio diagram](images/ai-mentor-studio-communication-diag.png)
+## Communication 
 
-## Communication
+The communication between AI Mentor Studio's components differs depending on your authentication method.
 
-AI Mentor Studio needs to be able to connect with the customers' infrastructures to ensure the correct login of users.
-Communications between the AI Mentor Studio plugin and the AI Mentor Studio SaaS are always initiated by the plugin. This reduces connectivity requirements on your side since all that needs to be ensured is connectivity from the Plugin in the LifeTime environment to the AI Mentor Studio SaaS endpoint.
+If you authenticate with your **OutSystems account**, communications between the AI Mentor Studio plugin and the AI Mentor Studio SaaS are always initiated by the plugin. This reduces connectivity requirements on your side since all that needs to be ensured is connectivity from the Plugin in the LifeTime environment to the AI Mentor Studio SaaS endpoint.  
 
-The plugin can use a forward proxy to connect to the AI Mentor Studio SaaS endpoint.
+![AI Mentor Studio communication when using OutSystems account authentication](images/os-auth-communication-diag.png)
+
+If you authenticate with your **IT User account**, AI Mentor Studio needs to be able to connect with your infrastructure to ensure the login is correct. When a user authenticates or accepts the privacy policy, the AI Mentor Studio SaaS needs to communicate with the AI Mentor Studio plugin. To send data from the LifeTime probe to the AI Mentor Studio SaaS endpoint, the AI Mentor Studio plugin needs to communicate with the AI Mentor Studio SaaS. Thus, when using IT User authentication, the communication between the AI Mentor Studio SaaS and the AI Mentor Studio plugin is bidirectional.  
+
+![AI Mentor Studio communication when using IT User authentication](images/it-user-auth-communication-diag.png)
+
+With either authentication method, the plugin can use a forward proxy to connect to the AI Mentor Studio SaaS endpoint.
 
 ### Data collected in plugin and sent to SaaS
 

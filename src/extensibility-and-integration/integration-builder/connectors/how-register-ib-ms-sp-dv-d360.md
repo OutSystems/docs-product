@@ -102,8 +102,7 @@ To add and request application permissions for your environment, choose either t
 
 #### Adding Application Users in Power Apps
 
-After registering your application in Azure Active Directory, you must add Application Users for the same application in Power Apps.
-This step is mandatory in order to have Dataverse and Dynamics connections working in Integration Builder. This is not required for SharePoint connections.
+After registering your application in Azure Active Directory, you must add Application Users for the same application in Power Apps. This step is mandatory in order to have Dataverse and Dynamics connections working in Integration Builder. This is not required for SharePoint connections.
 
 1. Sign into the [Microsoft Power Apps](https://make.powerapps.com/).
 

@@ -39,26 +39,29 @@ IT administrators can enforce IT User authentication in a specific environment. 
 
 If you log in with your **OutSystems account**, AI Mentor Studio shows you the following welcome screen:
 
-![Welcome screen for OutSystems login](images/welcome-os-login-ams.png)
+![Welcome screen for OutSystems login](images/welcome-os-ams.png)
 
 Select one of the options shown on the welcome screen:
 
-[Log in with IT user account](#it-user-login)
-:   Choose this option if you want to access an infrastructure that uses IT user authentication or if your infrastructure isn't registered in AI Mentor Studio yet. You can only register a new infrastructure if you log in with your IT user account. When selecting this option, you’re redirected to the login page again to log in with your IT user account.
+[Register and set up my infrastructure](#register)
+:   Choose this option if your infrastructure isn't registered in AI Mentor Studio. You must have a LifeTime administrator role. If you don't have a LifeTime administrator role, you won't have this option available and you must ask your administrator to complete the setup.    
 
 [Associate my IT user](#associate-os-login)
-:   Choose this option if your infrastructure is already registered in AI Mentor Studio.
+:   Choose this option if your infrastructure is already registered in AI Mentor Studio.  
+
+[Use your IT user account](#it-user-login)
+:   Choose this option if your administrator activated IT user authentication for your infrastructure.  
 
 ### Log in with IT user account {#it-user-login}
 
 If you log in with your **IT user account** and your infrastructure isn’t registered yet, AI Mentor Studio shows you the following welcome screen:
 
-![Welcome screen for IT user login](images/welcome-it-login-ams.png)
+![Welcome screen for IT user login](images/welcome-it-user-ams.png)
 
 AI Mentor Studio shows you the option:
 
-[Set up AI Mentor Studio](#register)
-:   Choose this option if your infrastructure isn't registered in AI Mentor Studio. You must have a LifeTime administrator role. If you don't have a LifeTime administrator role, you won't have this option available and you must ask your administrator to complete the setup.
+[Register and set up my infrastructure](#register)
+:   Choose this option if your infrastructure isn't registered in AI Mentor Studio. You must have a LifeTime administrator role. If you don't have a LifeTime administrator role, you won't have this option available and you must ask your administrator to complete the setup.  
 
 If you log in with your **IT user account** and your infrastructure is already registered, you’ll have to [associate your IT user](#associate-it-user-login).
 
@@ -76,25 +79,42 @@ Before registering and setting up your infrastructure in AI Mentor Studio, make 
 
 * Your development environment uses **Platform Server 11.7.2** or later.
 
-* Your LifeTime environment uses **LifeTime Management Console Release Jul.2019** or later.	
-
-* Allow inbound and outbound HTTPS communication (port 443) with `https://aimentorstudio.outsystems.com`. The AI Mentor Studio will use the environment's public DNS hostname to communicate. Check [AI Mentor Studio network requirements for detailed information](../../setup-maintain/setup/network-requirements.md#ai-mentor-studio).
+* Your LifeTime environment uses **LifeTime Management Console Release Jul.2019** or later.
 
 * You have the **Administrator** role in your infrastructure.
+
+* Communication requirements:
+
+    * When using **OutSystems account** authentication:
+
+        Allow outbound HTTPS communication (port 443) with `https://aimentorstudio.outsystems.com`.
+
+    * When using **IT User account** authentication:
+    
+        Allow inbound and outbound HTTPS communication (port 443) with `https://aimentorstudio.outsystems.com`.
+
+    AI Mentor Studio will use the environment's public DNS hostname to communicate. Check [AI Mentor Studio network requirements](../../setup-maintain/setup/network-requirements.md#ai-mentor-studio) for detailed information.
+
 
 ### Register and set up your infrastructure
 
 To set up your infrastructure in AI Mentor Studio, follow these steps:
 
-1. After logging into [AI Mentor Studio](https://aimentorstudio.outsystems.com/) with your IT user account, select **Set up AI Mentor Studio**.
+<div class="info" markdown="1">
 
-1. Your infrastructure information is already pre-filled. Confirm your infrastructure name and your time zone, and then click **Register**.
+Depending on your authentication method, the interface might differ slightly from what you see in these screenshots.  
+
+</div>
+
+1. After logging into [AI Mentor Studio](https://aimentorstudio.outsystems.com/), select **Register and set up my infrastructure**.
+
+1. Fill in your infrastructure information, or confirm it is correct in case it's already pre-filled. Then, click **Register**.
 
     ![Register infrastructure step](images/infra-setup-ams.png)
 
 1. Read the **AI Mentor Studio disclaimer** with the terms and conditions. If you agree, select **Accept and continue**.
 
-1. Your code analysis environment address is already pre-filled. Follow the procedure shown in AI Mentor Studio to install the code analysis probe:
+1. Fill in your code analysis environment address, or confirm it is correct in case it's already pre-filled. Follow the procedure shown in AI Mentor Studio to install the code analysis probe:
 
     <div class="info" markdown="1">
 
@@ -102,17 +122,17 @@ To set up your infrastructure in AI Mentor Studio, follow these steps:
 
     </div>
 
-    ![Install code analysis probe](images/code-analysis-probe-ams.png)
+    ![Install code analysis probe](images/install-code-analysis-probe-ams.png)
 
     1. Select **Download code analysis probe** to download the probe.
 
-    1. In the Service Center of the **code analysis environment** (`https://<development_environment>/ServiceCenter`), go to **Factory**>**Solutions** and install the **code analysis probe**.
+    1. In the Service Center of the **code analysis environment** (`https://<code_analysis_environment>/ServiceCenter`), go to **Factory**>**Solutions** and install the **code analysis probe**.
 
 1. After completing the previous steps, select the **I confirm I completed all the steps above.** checkbox and select **Next**.
 
-1. Your LifeTime environment address is already pre-filled. Follow the procedure shown in AI Mentor Studio to install the LifeTime probe:
+1. Fill in your LifeTime environment address, or confirm it is correct in case it's already pre-filled. Follow the procedure shown in AI Mentor Studio to install the LifeTime probe:
 
-    ![Install the LifeTime probe](images/lifetime-probe-ams.png)
+    ![Install the LifeTime probe](images/install-lifetime-probe-ams.png)
 
     1. Select **Download LifeTime probe** to download the probe.
 
@@ -134,7 +154,7 @@ To set up your infrastructure in AI Mentor Studio, follow these steps:
 
 1. Optional: If you want the AI Mentor Studio plugin to use a forward proxy while connecting to the AI Mentor Studio SaaS, in the **Proxy configuration** section, select **show request information**, and enter the proxy URL and the credentials.
 
-1. Select **Save and activate probes**.
+1. Select **Save and activate**.
 
 1. After being redirected to AI Mentor Studio:
 

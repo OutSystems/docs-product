@@ -1,0 +1,137 @@
+name: Validate Visual Assets
+
+on:
+  workflow_call:
+    inputs:
+      files:
+        description: "List of files to validate"
+        type: string
+        required: true
+    outputs:
+      report:
+        description: "Mardown report containing changes"
+        value: ${{ jobs.check.outputs.report }}
+
+concurrency: visual-assets-${{ github.ref }}
+
+run-name: "Validate visual assets in ${{ github.ref_name }}"
+
+
+jobs:
+  check:
+    name: "Validate"
+
+    runs-on: ubuntu-latest
+      
+    steps:
+    - name: Count files
+      id: count
+      run:
+        echo "number=$(echo "${{ inputs.files }}" | grep -v "^translated" | grep -v "^.github" | wc -l)" >> $GITHUB_OUTPUT
+
+    - name: Trim paths
+      if: steps.count.outputs.number > 0
+      id: paths
+      run: |
+       echo "files<<EOF" >> $GITHUB_OUTPUT
+       echo "${{ inputs.files }}" | grep -v "^translated" | grep -v "^.github" >> $GITHUB_OUTPUT
+       echo "EOF" >> $GITHUB_OUTPUT
+
+    - name: Checkout
+      if: inputs.files == '' || steps.count.outputs.number > 0
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+        ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+
+    - name: 'Download markdown-figma'
+      if: inputs.files == '' || steps.count.outputs.number > 0
+      uses: ./.github/actions/markdown-figma-download
+
+    - name: 'Validate visual assets for changed files'
+      if: steps.count.outputs.number > 0
+      run: |
+        while IFS= read -r file; do
+        if [ -f "${file}" ]; then
+          echo "Run markdown-figma on ${file}.";
+          ./markdown-figma --input "${file}" --no-delete --api-token ${{ secrets.FIGMA_API_TOKEN }} --export "images" --similarity ${{ vars.FIGMA_SIMILARITY_THRESHOLD }} --svg-visual-check-only --report report.md --report-append --parse-html;
+        else 
+          echo "${file} does not exist."
+        fi
+        done <<< cat << EOF
+        ${{ steps.paths.outputs.files }}
+        EOF
+
+    - name: 'Validate all visual assets'
+      if: steps.paths.outputs.files == 'dummy-file'
+      uses: ./.github/actions/markdown-figma
+      with:
+        max-updates: ${{ vars.FIGMA_EXPORT_FILES_LIMIT }}
+        figma-token: ${{ secrets.FIGMA_API_TOKEN }}
+        input-path: src/
+        similarity: ${{ vars.FIGMA_SIMILARITY_THRESHOLD }}
+        report-file: report.md
+
+    - name: 'Cleanup markdown-figma'
+      if: inputs.files == '' || steps.count.outputs.number > 0
+      uses: ./.github/actions/markdown-figma-cleanup
+
+    - name: Check if report exists
+      if: inputs.files == '' || steps.count.outputs.number > 0
+      id: check_files
+      uses: andstor/file-existence-action@v2
+      with:
+        files: 'report.md'
+
+    - name: Read report.md
+      if: steps.check_files.outcome == 'success' && steps.check_files.outputs.files_exists == 'true'
+      id: get-report
+      uses: juliangruber/read-file-action@v1
+      with:
+        path: ./report.md
+        trim: true
+        
+    - name: 'Generate Report'
+      if: steps.check_files.outcome == 'success' && steps.check_files.outputs.files_exists == 'true' && steps.get-report.outputs.content != ''
+      id: generate-report
+      run: |
+        delimiter="$(openssl rand -hex 8)"
+        echo "body<<$delimiter" >> $GITHUB_OUTPUT
+        echo "Some issues have been identified." >> $GITHUB_OUTPUT
+        echo "Below is a report of the issues found." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "Ignore previous comments flagging visual assets. Only consider the last one." >> $GITHUB_OUTPUT
+        echo " You can Hide them to reduce clutter in the Pull Request." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "${{ steps.get-report.outputs.content }}" >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "---" >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "Each visual asset is classified according to the list below:" >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Delete** - No export defined in Figma, and not used in the corresponding Markdown file. Might be used elsewhere." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Missing in Figma** - Used in markdown, and exists in the repository, but there is no asset with an export defined in Figma." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Not used** - Export defined in Figma but the asset is not used in the corresponding Markdown file." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Not at top-level** - The export defined in Figma is from an element defined inside another one." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Duplicated** - There are multiple elements with the same name. Only one allowed." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Hidden** - Element has exports defined but it is hidden." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "* **Similarity @ NN %** - Visual mismatch between Figma and the current file in the repository." >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "" >> $GITHUB_OUTPUT
+        echo "$delimiter" >> $GITHUB_OUTPUT
+      
+    - name: 'Visual assets validation failed'
+      if: steps.check_files.outcome == 'success' && steps.check_files.outputs.files_exists == 'true' && steps.get-report.outputs.content != ''
+      uses: actions/github-script@v6
+      with:
+        script: |
+            core.setFailed('Validation of visual assets failed.');
+  
+    outputs:
+      report: ${{ steps.generate-report.outputs.body || ''}}

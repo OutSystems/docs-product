@@ -40,8 +40,8 @@ There are several prebuilt elements that you can use to build your apps faster. 
 
 You can also use OutSystems builder to prototype the front end of mobile apps or create workflows, if your product license includes these tools. With the builders you can start creating your apps without Service Studio.
 
-* [Workflow Builder](https://success.outsystems.com/Documentation/Workflow_Builder) lets you create fully functional web apps to automate and manage simple workflows.
-* [Experience Builder](https://success.outsystems.com/Documentation/Experience_Builder) lets you create the front end of mobile apps, that you can test right away, and then continue developing in Service Studio.
+* [Workflow Builder](../develop/case-management-workflow/workflow-builder/intro.md) lets you create fully functional web apps to automate and manage simple workflows.
+* [Experience Builder](../develop/experience-builder/intro.md) lets you create the front end of mobile apps, that you can test right away, and then continue developing in Service Studio.
 
 ## Extensions
 

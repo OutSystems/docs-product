@@ -5,6 +5,7 @@ locale: en-us
 guid: acab4979-21b8-47ef-8618-48af0944b3a6
 app_type: traditional web apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=280%3A92&mode=design&t=uqSYxgNx69rQxp19-1
 ---
 
 # Configure Okta Authentication
@@ -202,7 +203,7 @@ Do the following:
 
 1. Open the following URL:
 
-    `https://<your_server_name>/Users`
+    `https://<your_server_name>/Users/Login.aspx`
 
     Using this specific URL allows you to log in to the Users app skipping the external authentication method that's currently configured (Okta).
 

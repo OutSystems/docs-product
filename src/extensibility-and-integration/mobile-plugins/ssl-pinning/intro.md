@@ -179,6 +179,12 @@ To see SSL Pinning reject a certificate, complete the following steps:
 
 ## SSL pinning for multiple servers
 
+<div class="warning" markdown="1">
+
+When dealing with multiple servers, version 7.0.0 of the SSL Pinning Plugin introduces a breaking change for **Android Applications**. This means that any android apps built with previous versions of the plugin may work but won't work on this new version. We recommend you update to version 7.0.0.
+
+</div>
+
 If you want your mobile app to perform SSL Pinning validations while connecting to multiple servers, complete the following steps:
 
 1. For each server, get its two certificates and generate their hashes.

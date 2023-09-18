@@ -86,7 +86,7 @@ To add and request application permissions for your environment, choose either t
 
    ![add a permission](images/ms-azure-dynamics-crm.png)
 
-1. Under Permissions, select **user-impersonation**.
+1. Under Permissions, select **user_impersonation**.
 
 1. Scroll to the bottom of the list and click the **Add permissions** button again.
 

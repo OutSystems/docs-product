@@ -21,7 +21,7 @@ To define the list of accessible domains for your mobile app do the following:
 
 1. In Service Studio, select the module element (root item in the module tree), next in the properties editor, double-click on Extensibility Configurations. This opens the property editor window: 
 
-    ![](images/ss_extensibility_in_module_properties.png)
+    ![](images/extensibility-configurations-ss.png)
 
 1. Add new entries following the [JSON template](<#accessible-domains-json-template>) to configure the allowed domains and sub-domains for your mobile app. If you have already defined extensibility configurations previously, make any necessary adjustments. Each entry must have at least an `origin` field containing the allowed URL schema and the allowed domain or sub-domains, you can use wildcards.
 

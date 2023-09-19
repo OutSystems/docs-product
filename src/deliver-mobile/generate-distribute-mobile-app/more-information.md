@@ -5,6 +5,7 @@ locale: en-us
 guid: 952b6539-a884-4fed-bcdd-90d4145d41b7
 app_type: mobile apps
 platform-version: o11
+figma:
 ---
 
 # More Information on Generating and Distributing Mobile Apps

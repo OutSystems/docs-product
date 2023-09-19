@@ -5,6 +5,7 @@ locale: en-us
 guid: 8fe53ff7-6928-4fa2-b80d-cef17d9da254
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=1809:280
 ---
 
 # Creating custom obfuscation rules

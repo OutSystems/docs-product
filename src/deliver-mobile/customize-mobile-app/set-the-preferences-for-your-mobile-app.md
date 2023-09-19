@@ -5,6 +5,7 @@ locale: en-us
 guid: 36e4b86b-db80-4a29-9c79-86cc1c4f7f66
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:214
 ---
 
 # Set the Preferences for Your Mobile App

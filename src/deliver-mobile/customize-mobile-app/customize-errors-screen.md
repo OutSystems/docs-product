@@ -5,6 +5,7 @@ locale: en-us
 guid: bacb4f2b-e04b-4ecf-8ce0-1f9536afa095
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:228
 ---
 
 # Customize the Errors Screen

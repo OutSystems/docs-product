@@ -5,6 +5,7 @@ locale: en-us
 guid: 418aac4c-1cdc-40b2-9b69-ba4fd68527f7
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=1818:838
 ---
 
 # Advanced settings and customizations

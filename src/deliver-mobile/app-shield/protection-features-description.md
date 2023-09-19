@@ -4,6 +4,7 @@ locale: en-us
 guid: 7696c5bc-71ab-4eeb-ac4c-2805bd79f5b1
 app_type: mobile apps
 platform-version: o11
+figma:
 ---
 
 # AppShield protection features

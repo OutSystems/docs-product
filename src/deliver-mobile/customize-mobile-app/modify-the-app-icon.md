@@ -5,6 +5,7 @@ locale: en-us
 guid: 4d07edaa-0b7b-41b8-bd1f-59c4b1bfd103
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:207
 ---
 
 # Modify the App Icon

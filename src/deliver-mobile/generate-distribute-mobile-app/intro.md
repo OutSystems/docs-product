@@ -5,6 +5,7 @@ locale: en-us
 guid: 1aacc771-f914-4f95-889a-31f1dde06a38
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:232
 ---
 
 # Generate and distribute your mobile app

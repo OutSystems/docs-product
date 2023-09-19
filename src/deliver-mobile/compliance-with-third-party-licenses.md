@@ -5,6 +5,7 @@ locale: en-us
 guid: a1e335a8-d8f0-4039-bd89-67590def7910
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:25
 ---
 
 # Compliance with Third Party Licenses

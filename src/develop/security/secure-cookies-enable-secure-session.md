@@ -22,7 +22,7 @@ Session cookies store information about a user session after the user logs in to
 
 You can configure an OutSystems environment to have secure session cookies. Service Studio and LifeTime have options that enable you to configure your security settings, such as [SameSite and Secure](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Upcoming_changes_in_cookie_handling_in_Google_Chrome#patch). For example, activating the **Secure option** adds the `Secure` attribute to all cookies the platform generates. In LifeTime, you do this by enabling the configuration **Secure Cookies** in the Environment Security of each environment:
 
-![Configuration screen to turn secure session cookies in LifeTime](images/secure-cookies-lifetime.png)
+![Configuration screen to turn secure session cookies in LifeTime](images/secure-cookies-lifetime-ss.png)
 
 Alternatively, you can configure these security settings by installing [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) from the OutSystems Forge.
 

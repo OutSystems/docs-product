@@ -98,7 +98,7 @@ To add and request application permissions for your environment, choose either t
 
 1. Optionally, to grant permission, click the **Grant admin consent for `<your organization name>`** link.
 
-    ![Grant permission](images/ms-azure-grant-permissions.png)
+    ![Grant permission](images/ms-azure-grant-permission.png)
 
 #### Adding Application Users in Power Apps
 

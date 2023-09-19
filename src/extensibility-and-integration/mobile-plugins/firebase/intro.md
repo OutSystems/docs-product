@@ -106,7 +106,7 @@ An app with a Firebase Plugin requires the plugin configuration files in the app
             }
         }
 
-1. (Optional) If you want to use different configurations for each environment, repeat steps 2 to 6 for each one. Check how to [Override Mobile Extensibility Configurations](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/deploy_applications/override_the_default_mobile_extensibility_configurations) in order for the mobile application to point to the correct configuration files in each environment.
+1. (Optional) If you want to use different configurations for each environment, repeat steps 2 to 6 for each environment. See [Override Mobile Extensibility Configurations](../../../managing-the-applications-lifecycle/deploy-applications/override-extensibility-configurations.md) for details on pointing the mobile application to the correct configuration files in each environment.
 
     ![Resource settings for Firebase](images/firebase-multiple-configurations-ss.png)
 

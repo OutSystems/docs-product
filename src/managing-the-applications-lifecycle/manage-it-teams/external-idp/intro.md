@@ -57,11 +57,29 @@ The following diagram shows the flow for the IT Users Integration with External 
 
 The following diagram shows the communication flow between Service Studio, AI Mentor Studio, Integration, Experience, and Workflow Builder with External IdP (OIDC).
 
-![Service Studio IdP](images/Service-Studio.png)
+![Service Studio IdP](images/ss-aims-builders-external-idp-integration-diag.png)
+
+For example, consider using Service Studio with an External IdP,
+
+1. User logs into Service Studio. 
+1. Service Studio requests External IdP configuration metadata from the Server API. <br/>Server API returns External IdP configuration metadata.
+1. Service Studio requests endpoints from the IdP config.<br/>IdP config returns endpoints for External IdP login.
+1. Service Studio displays browser login for external IdP provider. User credentials get validated at IdP Authorize.<br/>IdP returns an authorization token to Service Studio.
+1. Service Studio requests access tokens using PKCE from IdP Tokens.<br/>IdP Tokens return JSON Web Tokens(JWT) to Service Studio.
+1. Service Studio validates the received token and keeps updating the token while you continue to work.
 
 The following diagram shows the communication flow between LifeTime with External IdP (OIDC).
 
-![LifeTime IdP](images/LifeTime.png)
+![LifeTime IdP](images/lifetime-external-idp-integration-diag.png)
+
+For example, consider using LifeTime with an External IdP,
+
+1. User logs into LifeTime. 
+1. LifeTime requests endpoints from the IdP config.<br/>IdP config returns endpoints for External IdP login.
+1. LifeTime displays browser login for external IdP provider. User credentials get validated at IdP Authorize.<br/>IdP 
+returns an authorization token to Service Studio.
+1. LifeTime requests access tokens from IdP Tokens.<br/>IdP Tokens return JSON Web Tokens(JWT) to LifeTime.
+1. LifeTime validates the received token and keeps updating the token while you continue to work.
 
 ## Limitations
 

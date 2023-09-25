@@ -135,7 +135,7 @@ To perform an offline installation of the LifeTime Management Console you might 
 
 Install LifeTime management console in a **dedicated** environment. **Installing LifeTime in an existing environment isn't a supported scenario**.
 
-For this, follow the LifeTime installation checklist launched when you run the LifeTime installation binary. As LifeTime **doesn't support farm configuration**, you must select the combination "Deployment Controller + Server" in the checklist to install a single server with both roles.
+For this, follow the LifeTime installation checklist launched when you run the LifeTime installation binary. You must select the combination "Deployment Controller + Server" in the checklist to install a single server with both roles.
 
 The OutSystems Scheduler service must be running in the LifeTime environment.
 

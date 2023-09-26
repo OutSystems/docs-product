@@ -50,7 +50,7 @@ Before you get started make sure that:
 
 The key steps for creating a working use-case app that uses your data are the following:
 
-![Process overview for creating and customizing your use case app](images/create-app-use-case-diag.png)
+![Process overview for creating and customizing your use case app](images/create-your-app-use-case-diag.png)
 
 1. Create and test the first version of your app by following the Service Studio tutorial for your use case. The first version of your app is functional and includes sample data. Check [this article to learn more about the first version of your app and about relevant OutSystems concepts](understand-create-app.md).
 

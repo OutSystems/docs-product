@@ -29,7 +29,7 @@ For now, use-case specific tutorials and accelerators are available only for the
 
 </div>
 
-![Process overview for creating your use case app](images/tutorial-diag.png)
+![Process overview for creating your use case app](images/follow-tutorial-diag.png)
 
 This article explains concepts to help you understand the application use case tutorials and how you create your own app.
 

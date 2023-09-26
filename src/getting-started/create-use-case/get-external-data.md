@@ -19,7 +19,7 @@ OutSystems provides a number of ways to access external data and use it in your 
 
 Connecting to an external database or System of Record (SoR) allows you to leverage your investment in existing systems and to avoid data migration.
 
-![Process overview and options for getting your own external data in your app](images/get-data-diag.png)
+![Process overview and options for getting your own external data in your app](images/get-your-data-diag.png)
 
 ## Connect to an external database
 

@@ -5,6 +5,7 @@ locale: en-us
 guid: 1945689d-cfc3-497f-b313-a8cf051a18d9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=1:89
 ---
 
 # Choose the right app for your project

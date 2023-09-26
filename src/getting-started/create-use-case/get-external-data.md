@@ -5,6 +5,7 @@ locale: en-us
 guid: 4430e635-ef3e-45e4-a2f6-39c74300518d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=2318:1868
 ---
 
 # Get external data in your app

@@ -5,6 +5,7 @@ locale: en-us
 guid: 0ee5a8f6-0c94-4316-818f-49cc25f92283
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=67:19
 ---
 
 # Create Your First Mobile App

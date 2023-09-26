@@ -5,6 +5,7 @@ locale: en-us
 guid: 3e8ca8cc-4c36-4948-8fdb-2ac789698b01
 app_type: mobile apps
 platform-version: o11
+figma:
 ---
 # Query All Packages permission in Android apps using AppShield
 

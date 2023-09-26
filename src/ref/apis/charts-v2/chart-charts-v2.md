@@ -15,7 +15,7 @@ Available from OutSystems Charts v3.0.0. For more information on how to use the 
 
 </div>
 
-The Charts API v2 allows you to create, populate, and customize charts. OutSystems uses Highcharts 11.0.0 to generate the charts. For more information about implementation and the API, see the [Highcharts documentation](https://api.highcharts.com/highcharts/).
+The Charts API v2 allows you to create, populate, and customize charts. OutSystems uses Highcharts 11.1.0 to generate the charts. For more information about implementation and the API, see the [Highcharts documentation](https://api.highcharts.com/highcharts/).
 
 ## Charts
 
@@ -24,8 +24,8 @@ OutSystems provides a collection of charts that allow you to build your screens 
 |Widget|Description |
 |---|---|
 |Area Chart|The Area Chart is composed of data points plotted and connected by a line with a colored area below the line.|
-|Bar Chart|The Bar Chart is a simple, two-dimensional chart where rectangular bars are placed along the X Axis with bar length representing the value for a specific category.|
-|Column Chart|The Column Chart is a two-dimensional chart where rectangular bars are placed along the Y Axis with bar height representing the value for a specific category.|
+|Bar Chart|The Bar Chart is a simple, two-dimensional chart where rectangular bars are placed along the X-Axis with bar length representing the value for a specific category.|
+|Column Chart|The Column Chart is a two-dimensional chart where rectangular bars are placed along the Y-Axis with bar height representing the value for a specific category.|
 |Donut Chart|The Donut Chart is a circular graph that displays data in rings, where each ring represents a category and the size of the ring corresponds to the value of the data being presented.|
 |Line Chart|The Line Chart is a simple, two-dimensional chart where each point represents a single value. The data points are joined by a line to depict a trend, usually a period of time.
 |Pie Chart|The Pie Chart is a circular graph that displays data in sections, where each section represents a category and the size of the section corresponds to the value of the data being presented.|
@@ -33,7 +33,7 @@ OutSystems provides a collection of charts that allow you to build your screens 
 
 ## Addons
 
-You can enrich your charts with addons to customize their elements, such as axes, legends, and series styles.
+You can enrich your charts with add-ons to customize their elements, such as axes, legends, and series styles.
 
 |Widget|Description|
 |---|---|
@@ -41,6 +41,13 @@ You can enrich your charts with addons to customize their elements, such as axes
 |ChartYAxis|Chart addon used to customize the vertical axis of the chart. However, if the chart is inverted, this is the horizontal axis (for example, the Bar Chart).|
 |ChartLegend|Chart addon used to customize the box containing a symbol and a name for each series or data point in the chart.|
 |ChartSeriesStyling|Chart addon used to customize the styling of the chart series. You can bind it to a specific series or apply the styles to all of them.|
+|ChartExport|Chart addon used to add the exporting functionality to the chart. It allows users to: view the chart in full screen, print, and download as png, jpeg, pdf,svg, csv and xls.|
+
+## Advanced
+
+|Widget|Description|
+|---|---|
+|HighchartsModules|Extends charts by adding additional Highcharts scripts to the page. Drag-and-drop to a screen to add additional scripts to it. This element will not appear in runtime.|
 
 ## APIs
 
@@ -48,7 +55,8 @@ Collection of all client actions that trigger the API methods to customize and e
 
 |Widget|Description|
 |---|---|
-|SetHighchartsChartConfigs|Extend the chart block properties with additional Highcharts configurations. You can find all Highcharts chart properties [here](https://api.highcharts.com/highcharts/).|
-|SetHighchartsXAxisConfigs|Extend the x-axis properties with additional Highcharts configurations. You can find all Highcharts chart properties [here](https://api.highcharts.com/highcharts/xAxis).|
-|SetHighchartsYAxisConfigs|Extend the y-axis properties with additional Highcharts configurations. You can find all Highcharts chart properties [here](https://api.highcharts.com/highcharts/yAxis).|
-|SetHighchartsSeriesConfigs|Extend the series properties with additional Highcharts configurations. You can find all Highcharts chart properties [here](https://api.highcharts.com/highcharts/series).|
+|SetHighchartsChartConfigs|Extend the chart block properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/).|
+|SetHighchartsXAxisConfigs|Extend the x-axis properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/xAxis).|
+|SetHighchartsYAxisConfigs|Extend the y-axis properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/yAxis).|
+|SetHighchartsSeriesConfigs|Extend the series properties with additional Highcharts configurations. You can find all the Highcharts chart properties [here](https://api.highcharts.com/highcharts/series).|
+|UpdateChartColorScheme|A list of color values to use for the chart. Some of the formats accepted are: HTML, rgb, rgba and hex. |

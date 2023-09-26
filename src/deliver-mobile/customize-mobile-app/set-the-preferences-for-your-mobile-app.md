@@ -5,6 +5,7 @@ locale: en-us
 guid: 36e4b86b-db80-4a29-9c79-86cc1c4f7f66
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:214
 ---
 
 # Set the Preferences for Your Mobile App
@@ -21,25 +22,25 @@ To specify the preferences for your mobile app:
 
 1. Select the application module, go to its properties and open the Extensibility Configurations property. 
 
-    ![](images/image06_2.png)
+    ![Extensibility Configuration property](images/extensibility-configurations-ss.png)
 
 2. In the Extensibility Configurations value window, you must create a JSON object (if not created) where you can specify the preferences. Add the “preferences” tag to the JSON to indicate that you will set preferences for the app.
 
-    ![](images/image2.png)
+    ![Extensibility preferences](images/extensibility-preferences-ss.png)
 
 3. Introduce the preferences you want from the [available preferences](https://cordova.apache.org/docs/en/latest/config_ref/#preference) in the JSON value: 
 
     1. Each preference you want to define is represented as a name/value pair, where the name is the preference name and the value is its parameter specified as a string (enclosed in double quotes), a boolean, or a number. The preference name is case-sensitive. Check the [preferences JSON template](#preferences-json-template) to avoid mistakes. 
 
-        ![](images/image4.png)
+        ![Define global preferences](images/extensibility-preferences-global-ss.png)
 
     2. You can set a preference to work only for a target mobile platform or apply it to all. Be aware that some [preferences may not work on every mobile platform](https://cordova.apache.org/docs/en/latest/config_ref/#preference). 
 
-        ![](images/image3_2.png)
+        ![Define global, android and ios, preferences](images/extensibility-preferences-global-android-ios-ss.png)
 
 4. To make this change available for the users, [publish and generate a new mobile application](<../generate-distribute-mobile-app/intro.md>) and distribute it. 
 
-    ![](images/image02.png)
+    ![Generate mobile app to publish](images/generate-mobile-app-ss.png)
 
 ## Preferences JSON Template { #preferences-json-template }
 

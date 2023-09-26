@@ -1,0 +1,89 @@
+name: Run
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - master
+    - main
+  pull_request:
+    types: [opened, edited, synchronize, reopened, labeled, unlabeled]
+
+concurrency:
+  group: run-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  pr-info:
+    name: Pull Request / Info
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+    - name: Find Pull Request
+      if: github.ref_name != github.event.repository.default_branch
+      id: PR
+      uses: 8BitJonny/gh-get-current-pr@2.2.0
+      with:
+        filterOutClosed: true
+        sha: ${{ github.event.pull_request.head.sha }}
+
+    - name: 'Pull Request'
+      if: steps.PR.outputs.number != ''
+      run: |
+        echo "::notice title=Pull Request ${{ '#' }}${{ steps.PR.outputs.number }}::This workflow execution is related to the Pull Request https://github.com/${{ github.repository }}/pull/${{ steps.PR.outputs.number }}" 
+
+    - name: Changed files
+      id: changed-files
+      if: github.ref_name != github.event.repository.default_branch && steps.PR.outputs.number != ''
+      run: |
+        echo "files<<EOF" >> $GITHUB_OUTPUT
+        gh pr diff ${{ steps.PR.outputs.number }} --repo ${{ github.repository }} --name-only >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    outputs:
+      changed-files: ${{ steps.changed-files.outputs.files }}
+      pull-request: ${{ steps.PR.outputs.number }}
+      pull-request-title: ${{ steps.PR.outputs.pr_title }}
+      skip-jira: ${{ github.ref_name != github.event.repository.default_branch && contains(steps.PR.outputs.pr_labels, 'skip-jira') }}
+
+  jira:
+    name: "JIRA"
+
+    needs: [pr-info]
+
+    if: needs.pr-info.outputs.pull-request != ''
+
+    uses: ./.github/workflows/jira-issue-pr.yml
+    secrets: inherit
+    with:
+      pull-request: ${{ needs.pr-info.outputs.pull-request }}
+      pull-request-title: ${{ needs.pr-info.outputs.pull-request-title }}
+      ignore: ${{ needs.pr-info.outputs.skip-jira == 'true' }}
+    
+  visual-assets:
+    name: "Visual Assets"
+
+    needs: [pr-info]
+
+    if: needs.pr-info.outputs.pull-request != ''
+
+    uses: ./.github/workflows/visual-assets-pr.yml
+    secrets: inherit
+    with:
+      pull-request: ${{ needs.pr-info.outputs.pull-request }}
+      files: ${{ needs.pr-info.outputs.changed-files }}
+
+  tools:
+    name: Tools
+    
+    needs: [pr-info]
+
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
+
+  

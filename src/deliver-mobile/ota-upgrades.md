@@ -5,6 +5,7 @@ locale: en-us
 guid: BBD8AF1F-9BF0-4162-8619-4DA257F12A72
 app_type: mobile apps
 platform-version: o11
+figma:
 ---
 
 # Over-the-air upgrades

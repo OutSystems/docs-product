@@ -5,6 +5,7 @@ locale: en-us
 guid: 1544fe43-3dbd-427e-bfd2-69ab0594f2e2
 app_type: mobile apps
 platform-version: o11
+figma:
 ---
 
 # Building apps with AndroidX

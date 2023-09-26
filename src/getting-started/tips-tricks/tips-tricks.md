@@ -196,13 +196,13 @@ Drag an Entity to an Action Flow to create an aggregate.
 
 If you set the `Is Active Attribute` of the Entity - choose **More...** in the Entity properties, then expand **More options** - the new Aggregate is created with the filter `<Entity>.<Is Active Attribute> = True`. Otherwise, the new aggregate is created without filters.
 
-![](images/tt-drag-agg-unf-05.png?width=500)
+![](images/tt-drag-agg-unf-05.png)
 
 ### Create a Button from an Action
 
 Drag an Action and drop it to the Screen. This creates a Button and a binding to the Action.
 
-![Demo of creating a Button from an Action](images/tt-create-button-from-action.gif?width=500)
+![Demo of creating a Button from an Action](images/tt-create-button-from-action.gif)
 
 ### Create a filtered Aggregate from an Identifier
 
@@ -266,4 +266,5 @@ Converting an Entity to a Structure is as easy as opening  the Data tab and drag
 
 When you need to change a True branch to a False branch or a False branch to a True branch, right-click the target If and select **Swap Connectors** to swap the True/False condition branches.
 
-![](images/tt-conv-if-02.png?width=600)
+![](images/tt-conv-if-02.png)
+

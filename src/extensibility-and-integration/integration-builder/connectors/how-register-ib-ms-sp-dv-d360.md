@@ -72,7 +72,7 @@ To add and request application permissions for your environment, choose either t
 
     </div>
 
-1. Optionally, to grant permission, click the **Grant admin consent for OutSystems Integrations Team** link.
+1. Click the **Grant admin consent for `<your organization name>`** link.
 
 ### Adding Microsoft Dataverse or Microsoft Dynamics 365 permissions
 
@@ -80,13 +80,13 @@ To add and request application permissions for your environment, choose either t
 
 1. Below Configured permissions, click **Add a permission** to open the Request API permissions window.
 
- ![add a permission](images/ms-azure-permission-selected.png)
+   ![add a permission](images/ms-azure-permission-selected.png)
 
 1. Under Request API permission, click in the **Dynamics CRM** box.
 
    ![add a permission](images/ms-azure-dynamics-crm.png)
 
-1. Under Permissions, select **user-impersonations**.
+1. Under Permissions, select **user_impersonation**.
 
 1. Scroll to the bottom of the list and click the **Add permissions** button again.
 
@@ -96,14 +96,13 @@ To add and request application permissions for your environment, choose either t
 
     </div>
 
-1. Optionally, to grant permission, click the **Grant admin consent for OutSystems Integrations Team** link.
+1. Optionally, to grant permission, click the **Grant admin consent for `<your organization name>`** link.
 
-    ![Grant permission](images/ms-azure-grant-permissions.png)
+    ![Grant permission](images/ms-azure-grant-permission.png)
 
 #### Adding Application Users in Power Apps
 
-After registering your application in Azure Active Directory, you must add Application Users for the same application in Power Apps.
-This step is mandatory in order to have Dataverse and Dynamics connections working in Integration Builder. This is not required for SharePoint connections.
+After registering your application in Azure Active Directory, you must add Application Users for the same application in Power Apps. This step is mandatory in order to have Dataverse and Dynamics connections working in Integration Builder. This is not required for SharePoint connections.
 
 1. Sign into the [Microsoft Power Apps](https://make.powerapps.com/).
 

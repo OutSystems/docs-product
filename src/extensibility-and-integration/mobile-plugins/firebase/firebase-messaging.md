@@ -88,7 +88,13 @@ To set up a notification back-end service, do the following:
 
     * `X-Send-Key` = `<your-key>`,, replacing `<your-key>` with the **Key** defined in step 3.
 
-At this point you can start to create the UI for your notification back-end service. For example, associate a **SendNotifcationToUsers** method to a button to send a notification to all users on the associated Firebase project (using an app with the Cloud Messaging plugin).
+At this point, you can start to create the UI for your notification back-end service. For example, associate a **SendNotifcationToUsers** method to a button to send a notification to all users on the associated Firebase project (using an app with the Cloud Messaging plugin).
+
+![Create the UI for your notification](images/fcm-key-sender-config-ss.png)
+
+You can get the values for the **FCMServerKey** and **SenderID** parameters from the Firebase Console in the **Cloud Messaging** tab of the **Project Settings** page.
+
+![Get parameter values](images/fcm-rest-call.png)
 
 Other methods available are **SendNotificationToTopics**, **SendSilentNotificationToUsers**, and **SendSilentNotificationToTopics**.
 
@@ -141,18 +147,19 @@ We have 3 types of custom actions:
 
 3. **App route** - Opens a route in an external app.
 
-4. **Reply field** - Opens a text field that allows the user to send a text directly. to the app.
+4. **Reply field** - Opens a text field that allows the user to send a text directly to the app.
 
 ## Enable notifications with custom sound { #custom-sounds }
 
-To enhance your notification with custom sounds you must upload the .wav file you want to use as the notification sound to the app’s Resources folder. Additionaly, you must use the **v2 REST API**, using the *Sound* parameter inside the *Notification* parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** methods.
+To enhance your notification with custom sounds, you must put the .wav files you want to use as notification sounds into a .zip file called **sounds.zip**. Then, upload the .zip file to the app’s Resources folder. Additionally, you must use the **v2 REST API**, using the *Sound* parameter inside the *Notification* parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** methods.
 
 It is important to note the following requirements for custom sounds:
+
 * Only .wav files are supported.
 
 * There are some limitations to the name of the sound file (.wav) to include in the Resources folder: it can only contain lowercase letters, numbers, and underscores. If it has a character that doesn’t match this rule else, the Android build won’t work.
 
-* The sound file should be included with the “Deploy Action” set to “Deploy to Target Directory”.
+* The **sounds.zip** file should be included with the “Deploy Action” set to “Deploy to Target Directory”.
 
 <div class="info" markdown="1">
 

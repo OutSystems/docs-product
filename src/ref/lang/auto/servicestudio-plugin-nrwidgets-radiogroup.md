@@ -20,8 +20,6 @@ The Radio Group widget is supported in **Platform Server** version 11.8.0 or hig
 
 </div>
 
-Check the related topic at the bottom of the page for more guidance.
-
 ## Properties
 
 <table markdown="1">

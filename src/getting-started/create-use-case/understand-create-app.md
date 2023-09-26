@@ -79,3 +79,4 @@ Following is a list of application use cases including a short description of th
 ## Next step
 
 After creating your app by following the tutorial, make the app your own, by using your own data from an Excel file, an external database, or an external system of record (SoR). Check [this article describes the main external data sources you can use in your app](use-own-data.md).
+

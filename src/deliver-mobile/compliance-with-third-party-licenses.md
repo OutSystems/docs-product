@@ -5,6 +5,7 @@ locale: en-us
 guid: a1e335a8-d8f0-4039-bd89-67590def7910
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:25
 ---
 
 # Compliance with Third Party Licenses
@@ -36,7 +37,7 @@ Then, you will be able to use the block **Licenses** in your app:
 1. Expand the module **OutSystems UI** and the flow **Licenses**.
 1. Drag and drop the block **Licenses** to the Content placeholder of your new screen.   
   
-    ![](images/image03.png)  
+    ![](images/drad-drop-licenses-block-ss.png)  
 
 Make the screen available in your app, so the end users can access the licensing information.
 
@@ -49,7 +50,7 @@ If you are using additional plug-ins or components in your app with the same lic
 
 The plug-ins supported by OutSystems, which you can install from OutSystems Forge, provide you a block named License with the text of the licenses and copyright notices that you must include in your mobile app.
 
-![](images/image02.png)
+![](images/license-block-ss.png)
 
 You can add the licensing information of an OutSystems plug-in by doing the following:
 
@@ -57,7 +58,7 @@ You can add the licensing information of an OutSystems plug-in by doing the foll
 1. Within the **Licenses\Licenses** block of the **OutSystems UI** module, locate the placeholder **CustomLicenses**. 
 1. Drag and drop the block **License** from the OutSystems plug-in to the placeholder **CustomLicenses**. 
 
-    ![](images/image01.png)
+    ![](images/customlicenses-placeholder-ss.png)
 
 ### Other Plug-ins or Components
 

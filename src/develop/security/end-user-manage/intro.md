@@ -28,7 +28,7 @@ OutSystems subscriptions typically include rights to run applications serving up
 Some customers have more than one production runtime in the same OutSystems 11 infrastructure where their apps are hosted and delivered to end users. Each production runtime in OutSystems 11 has its own independent database that tracks the end users who access apps hosted on that runtime. When the same individual accesses apps hosted on multiple runtimes, this individual is tracked as an end user in each and contributes to the reported end user count in each. Nonetheless, customers only need to license end user capacities sufficient to cover the *unique* end users accessing apps within the same OutSystems 11 infrastructure.
 
 ## Managing your end users
-You may periodically de-activate end users who you know will not continue to use your applications and these users will no longer count toward your licensed end user capacities. For example, when an employee quits, you would de-activate this user because they will no longer need access to apps you've built for your employees.
+You may periodically de-activate end users who you know will not continue to use your applications and these users, upon de-activation, will going forward no longer count toward your licensed end user capacities. For example, when an employee quits, you would de-activate this user because they will no longer need access to apps you've built for your employees.
 
 For OutSystems 11:
 - [Manage end users](accessing-users.md) through the **Users** console, which is available at `http://<environment address>/Users`.

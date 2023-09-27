@@ -26,7 +26,7 @@ Anonymous users don't count toward the user limits specified in your subscriptio
 OutSystems subscriptions typically include rights to run applications serving up to a specified number of end users, with options for upgrading end user capacity that vary by subscription. You can review your end user limits within the Customer Portal and you can see the current internal and external end user count displayed for each runtime environment within Service Center. If you have multiple production runtime environments, you'll sum the end user counts for each to determine your total end user count. When your end user count exceeds the end user limit specified in your subscription (internal or external), you need to upgrade to remain in compliance with the license terms. Please contact your OutSystems sales representative for assistance.
 
 ## Managing your end users
-You may periodically de-activate users who you know will not continue to use your applications and these users will no longer count toward your user limits. For example, when an employee quits, you would de-activate this user because they will no longer need access to apps you've built for your employees.
+You may periodically de-activate users who you know will not continue to use your applications and these users will no longer count going forward toward your user limits. For example, when an employee quits, you would de-activate this user because they will no longer need access to apps you've built for your employees.
 
 - [Manage end users](accessing-users.md) through the **Users** console, which is available at `http://<environment address>/Users`.
 - Manage end users programmatically using the [Users API](../../../ref/apis/auto/users-api.final.md) 

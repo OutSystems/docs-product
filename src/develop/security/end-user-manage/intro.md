@@ -17,7 +17,7 @@ By default in OutSystems, all end users are classified as internal until you con
 
 In OutSystems 11, when an end user has no email address stored on their profile, such as when you only capture a mobile phone number for the end user, this is counted as an internal end user. All users in OutSystems Developer Cloud must have an email address.
 
-Independent Software Vendors (ISVs) and Managed Services Providers (MSPs) delivering apps to their clients should configure the domains of their clients (rather than the domains of their own company) as internal within Service Center or the ODC Portal. Internal and external end users are from the perspective of the client that is licensing usage from the ISV or MSP, not from the perspective of the ISV or MSP that is licensing the OutSystems software.
+Independent Software Vendors (ISVs) and Managed Services Providers (MSPs) delivering apps to their clients should configure the domains of their clients (rather than the domains of their own company) as internal within Service Center or the ODC Portal. Internal and external end users are from the perspective of the client that is licensing usage of apps from the ISV or MSP, not from the perspective of the ISV or MSP that is licensing the OutSystems platform.
 
 ## Anonymous end users
 Anonymous end users don't count toward the end user capacities specified in your subscription. Users who use your apps and who don't log in and also don't share any personally-identifiable information (name, email, mobile phone, etc.) are anonymous. For example, people who visit your website (that is an OutSystems app) and just browse the information without logging in or providing personal information are anonymous end users.

@@ -17,13 +17,13 @@ By default in OutSystems, all end users are classified as internal until you con
 
 In OutSystems 11, when an end user has no email address stored on their profile, such as when you only capture a mobile phone number for the end user, this is counted as an internal end user. All users in OutSystems Developer Cloud must have an email address.
 
-Independent Software Vendors (ISVs) and Managed Services Providers (MSPs) delivering apps to their clients should configure the domains of their clients (rather than the domains of their own company) as internal within Service Center or the ODC Portal. Internal and external end users are from the perspective of the client that is licensing usage from the ISV or MSP, not from the perspective of the ISV or MSP that is licensing the software from OutSystems.
+Independent Software Vendors (ISVs) and Managed Services Providers (MSPs) delivering apps to their clients should configure the domains of their clients (rather than the domains of their own company) as internal within Service Center or the ODC Portal. Internal and external end users are from the perspective of the client that is licensing usage from the ISV or MSP, not from the perspective of the ISV or MSP that is licensing the OutSystems software.
 
 ## Anonymous end users
-Anonymous end users don't count toward the end user capacities specified in your subscription. Users who use your apps and who don't log in and also don't share any personally-identifiable information (name, email, mobile phone, etc.) are anonymous. For example, people who visit your website (an OutSystems app) and just browse the information without logging in or providing personal information are anonymous end users.
+Anonymous end users don't count toward the end user capacities specified in your subscription. Users who use your apps and who don't log in and also don't share any personally-identifiable information (name, email, mobile phone, etc.) are anonymous. For example, people who visit your website (that is an OutSystems app) and just browse the information without logging in or providing personal information are anonymous end users.
 
 ## End user limits
-OutSystems subscriptions typically include rights to run applications serving up to a specific number of internal end users and a specific number of external end users, with options for upgrading end user capacities that vary by subscription. When you exceed the internal or external end user capacities specified on your subscription, you need to upgrade to remain in compliance with the license terms. Please contact your OutSystems sales representative for assistance.
+OutSystems subscriptions typically include rights to run applications serving up to a specific number of internal end users and a specific number of external end users, with options for upgrading these end user capacities that vary by subscription. When you exceed the internal or external end user capacities specified on your subscription, you need to upgrade to remain in compliance with the license terms. Please contact your OutSystems sales representative for assistance.
 
 Some customers have more than one production runtime in the same OutSystems 11 infrastructure where their apps are hosted and delivered to end users. Each production runtime in OutSystems 11 has its own independent database that tracks the end users who access apps hosted on that runtime. When the same individual accesses apps hosted on multiple runtimes, this individual is tracked as an end user in each and contributes to the reported end user count in each. Nonetheless, customers only need to license end user capacities sufficient to cover the *unique* end users accessing apps within the same OutSystems 11 infrastructure.
 
@@ -41,7 +41,7 @@ For OutSystems Developer Cloud:
 Installations of OutSystems 11.6 and earlier do not support classifying internal vs. external end users, so customers should update to the latest version to take advantage of this. Also, in the past, some OutSystems subscriptions only licensed "named" users which did not require end users to be classified as internal or external.
 
 ## Related resources
-* [Classify Users as Internal Users](classify-internal-users.md): includes information on configuring the email domains that will be recognized as your own, for purposes of classifying users as internal or external
+* [Classify Users as Internal Users](classify-internal-users.md): includes information on configuring your email domains, for purposes of classifying users as internal or external
 * [End User Authentication](end-user-authentication/intro.md): information on external authentication methods
 * [Managing IT users](../../../managing-the-applications-lifecycle/manage-it-teams/intro.md): manage developer access, administrators, and other roles with access to OutSystems management tools
 * [Group management](groups.md): creating and managing groups of users

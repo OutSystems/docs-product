@@ -163,7 +163,7 @@ To enable custom code obfuscation, follow these steps to add a property to the E
 
 1. From Service Studio, select **your module name**, go to the properties, and double-click **Extensibility Configuration**.
 
-    ![extend-configuration-field.png](images/extensibility-configurations-ss.png)
+    ![extend-configuration-field.png](images/extensibility-configurations-option-ss.png)
 
 1. In the **Extensibility Configuration** field, enter the obfuscation property as a new global preference. Call the new property in the Extensibility Configuration JSON **AppShieldObfuscationRules**, and its value is a base64 encoding of your custom obfuscation rules. The following code snippet is an example of the JSON implementation.
 

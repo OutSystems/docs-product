@@ -30,12 +30,7 @@ Some customers have more than one production runtime in the same OutSystems 11 i
 ## Managing your end users
 You may periodically deactivate end users who you know won't continue to use your applications and these users, once deactivated, will no longer count toward your licensed end user capacities. For example, when an employee leaves, you would deactivate this user because they no longer need access to apps you've built for your employees.
 
-For OutSystems 11:
-- [Manage end users](accessing-users.md) through the **Users** console, which is available at `http://<environment address>/Users`.
-- Manage end users programmatically using the [Users API](../../../ref/apis/auto/users-api.final.md)
-
-For OutSystems Developer Cloud:
-- [User management](https://success.outsystems.com/documentation/outsystems_developer_cloud/user_management/)
+You can [manage end users](accessing-users.md) through the **Users** console, which is available at `http://<environment address>/Users` or manage end users programmatically using the [Users API](../../../ref/apis/auto/users-api.final.md).
 
 ## Older subscription models
 Versions prior to Platform Server 11.7.0 don't support classifying internal vs. external end users, so customers should update to the latest version to take advantage of this. Older licensing models only licensed "named" users which didn't require end users to be classified as internal or external.

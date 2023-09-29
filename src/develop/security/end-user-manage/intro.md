@@ -15,7 +15,7 @@ You license internal and external end user capacities separately on your subscri
 
 By default in OutSystems, all end users are classified as internal until you configure the domains that you own. You only need to configure your domains when you license external end user capacity on your subscription, because doing so allows you to track the internal and external end user counts separately. Within Service Center (for OutSystems 11) you can configure domains that you own. When you do this, all end users with email addresses belonging to these domains are classified as internal, and all end users with email addresses outside these domains are classified as external. For example, if your organization owns `example.com` and the end user's email is `adam@example.com`, then the end user will be classified as internal. Make sure to configure all the email domains used by employees who use your apps, including domains owned by your parent or affiliate organizations.  
 
-In OutSystems 11, when an end user has no email address stored on their profile, such as when you only capture a mobile phone number for the end user, this is counted as an internal end user. All users in OutSystems Developer Cloud must have an email address.
+In OutSystems 11, when an end user has no email address stored on their profile, such as when you only capture a mobile phone number for the end user, this is counted as an internal end user.
 
 Independent Software Vendors (ISVs) and Managed Services Providers (MSPs) delivering apps to their clients should configure the domains of their clients (rather than the domains of their own company) as internal within Service Center. Internal and external end users are from the perspective of the client that is licensing usage of apps from the ISV or MSP, not from the perspective of the ISV or MSP that is licensing the OutSystems platform.
 
@@ -33,7 +33,7 @@ You may periodically deactivate end users who you know won't continue to use you
 You can [manage end users](accessing-users.md) through the **Users** console, which is available at `http://<environment address>/Users` or manage end users programmatically using the [Users API](../../../ref/apis/auto/users-api.final.md).
 
 ## Older subscription models
-Versions prior to Platform Server 11.7.0 don't support classifying internal vs. external end users, so customers should update to the latest version to take advantage of this. Older licensing models only licensed "named" users which didn't require end users to be classified as internal or external.
+Versions prior to Platform Server 11.7.0 don't support classifying end users as internal or external, so customers should update to the latest version to take advantage of this. Older licensing models licensed "named" users which didn't require end users to be classified as internal or external.
 
 ## Related resources
 * [Classify Users as Internal Users](classify-internal-users.md): includes information on configuring your email domains, for purposes of classifying users as internal or external.

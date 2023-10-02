@@ -35,13 +35,13 @@ To customize the request before it is sent:
 
 1. Set the **On Before Request** property of the REST API to `New OnBeforeRequest`.
   
-    ![Select New OneBeforeRequest](images/rest-new-onbeforerequest-ss.png)    
+    ![Select New OneBeforeRequest](images/rest-new-onbeforerequest-ss.png)
 
-    An "OnBeforeRequest" action is made available under the REST API.   
+    An "OnBeforeRequest" action is made available under the REST API.
 
-1. Double-click the newly created action to edit it. 
+1. Double-click the newly created action to edit it.
 
-1. Add your own logic to customize the request. 
+1. Add your own logic to customize the request.
 
 ### Customize the parts of a multipart/form-data request { #multipart}
 
@@ -55,9 +55,15 @@ The following example shows the logic flow of an **OnBeforeRequest** callback th
 
 ### Example use case: Adding a header for token-based authentication
 
+<div class="info" markdown="1">
+
+Consider using [OAuth client credentials flow](rest-oauth2-authorization.md) as a straightforward method to access remote resources in your app.
+
+</div>
+
 Consider a REST API that uses token-based HTTP authentication, requiring consumers to include an authorization token in an HTTP header. After importing this REST API to your OutSystems application, use the "OnBeforeRequest" callback to add a new header with the token.
 
-To build this example implementation we added the following steps in the callback logic flow:
+You can add the following steps to the callback logic flow, as an example:
 
 1. Add a local variable with "HTTPHeader" data type to the OnBeforeRequest callback action.
 

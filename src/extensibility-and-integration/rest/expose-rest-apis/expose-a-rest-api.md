@@ -59,4 +59,4 @@ You can test your REST API Method using several available tools, such as [curl](
 
 For manipulation methods where the input parameter is a Record (such as `POST` or `PUT`), you must add the **Content-Type** header to the request with the value `application/json`.
 
-Exposed REST APIs are CORS-enabled, which means that they support cross-origin requests. Specifically, when a request with an **Origin** header is received, the server responds with an **Allow-Access-Control-Header: “*”** header in the response. The astrix in the header denotes **all domains** and therefore allows you to load resources to every domain.
+Exposed REST APIs are CORS-enabled, which means that they support cross-origin requests. Specifically, when a request with an **Origin** header is received, the server responds with an **Access-Control-Allow-Origin: “*”** header in the response. The astrix in the header denotes **all domains** and therefore allows you to load resources to every domain.

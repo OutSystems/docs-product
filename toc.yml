@@ -1121,6 +1121,7 @@
                     - href: ref/lang/auto/class-query-parameter.md
                     - href: ref/lang/auto/class-sql.md
                     - href: ref/data/handling-data/queries/supported-join-types.md
+                    - href: ref/data/handling-data/queries/handle-complicated-search-pages.md
                 - href: ref/lang/auto/class-resource.md
                 - href: ref/lang/auto/class-runtime-property.md
                 - href: ref/lang/auto/class-session-variable.md

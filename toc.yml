@@ -231,6 +231,7 @@
                 - topics:
                     - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
                     - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
+                    - href: develop/ui/patterns/mobile/navigation/overflowmenu.md
                     - href: develop/ui/patterns/mobile/navigation/pagination.md
                     - href: develop/ui/patterns/mobile/navigation/sectionindex.md
                     - href: develop/ui/patterns/mobile/navigation/submenu.md

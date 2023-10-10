@@ -51,7 +51,7 @@ You can use the Overflow Menu pattern to show additional options when there is a
 
 1. Right-click the last header cell and select **Add New Column Right**.
 
-    ![Add a new column to the table](<images/overflow-dragaggregate-ss.png>)
+    ![Add a new column to the table](<images/overflow-addcolumn-ss.png>)
 
 1. Go back to the Toolbox and search for the **Overflow Menu**.
 

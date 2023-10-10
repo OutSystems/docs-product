@@ -161,17 +161,16 @@ You need to have bidirectional secure communication between the front-end of the
 
 To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md). 
 
-#### Version 4.3 of the AI Mentor Studio LifeTime probes
-
-If your AI Mentor Studio LifeTime probes version is 4.3, the network requirements depend on the authentication method you use to access AI Mentor Studio.
+The network requirements depend on the authentication method and Probe version you use to access AI Mentor Studio.
 
 **OutSystems account authentication**
 
-If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable:
+If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable, depending on the Probe version:
 
-Source|Destination|Port|Protocol|Notes
+Probe version|Source|Destination|Port|Protocol
 ---|---|---|---|---
-LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP|
+Probes 4.2 and above | LifeTime Front-End | aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP|
+Probes 4.0 and 4.1 | LifeTime Front-End | architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard |443 | TCP|
 
 **IT User authentication**  
 
@@ -184,20 +183,4 @@ Source|Destination|Port|Protocol|Notes
 LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP| **Outbound communication** 
 aimentorstudio.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
 aimentorstudio.outsystems.com|LifeTime Front-End|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
-
-#### Version 4.2 of the AI Mentor Studio LifeTime probes
-
-Ensure the following destination endpoint is reachable:  
-
-Source|Destination|Port|Protocol|Notes
----|---|---|---|---
-LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP|
-
-#### Versions 4.0 and 4.1 of the AI Mentor Studio LifeTime probes
-
-Ensure the following destination endpoint is reachable:
-
-Source|Destination|Port|Protocol|Notes
----|---|---|---|---
-LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP|
 

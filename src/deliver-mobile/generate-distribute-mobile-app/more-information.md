@@ -98,9 +98,13 @@ where `<privateKey>` is the file generated when creating the CSR file, `<app_pem
 
 You will be asked for a password, create one and remember or store it somewhere &#8212; you'll need to insert it in OutSystems. The P12 file created in the last step is the certificate to generate the iOS app.
 
-If you are creating the P12 file with OpenSSL 3.0, add the flag `-legacy` to the previous command. If OpenSSL is not installed system-wide, the command returns the error "pkcs12: unable to load provider legacy". If that happens, you can either add the flag `-provider-path <openssl_path>/providers` to the previous command or set the environment variable `OPENSSL_MODULES` to point to the directory `<openssl_path>/providers`. The command should look like the following:
+<div class="info" markdown="1">
+
+If you are creating the P12 file with OpenSSL 3.0 or higher, add the flag `-legacy` to the previous command. If OpenSSL is not installed system-wide, the command returns the error "pkcs12: unable to load provider legacy". If that happens, you can either add the flag `-provider-path <openssl_path>/providers` to the previous command or set the environment variable `OPENSSL_MODULES` to point to the directory `<openssl_path>/providers`. The command should look like the following:
 
     <path_to_openssl_bin>\openssl.exe pkcs12 -legacy -provider-path <openssl_path>/providers -export -inkey <privateKey>.key -in <app_pem>.pem -out <app_p12>.p12
+
+</div>
 
 ### Create a Provisioning Profile
 

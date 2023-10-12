@@ -5,6 +5,7 @@ locale: en-us
 guid: bff3062c-8092-4b41-abf7-b315d1035d39
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # The Azure resources reference

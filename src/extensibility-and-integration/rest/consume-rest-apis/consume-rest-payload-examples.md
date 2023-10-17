@@ -5,6 +5,7 @@ locale: en-us
 guid: E7A21ACC-EC04-4FB8-A3CC-D121EF8A9963
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=2881%3A15271&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
 # Payload request examples when consuming a single REST method

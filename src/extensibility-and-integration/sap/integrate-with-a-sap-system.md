@@ -5,6 +5,7 @@ helpids: 30084
 guid: d74dc607-6024-4733-8a3e-4ce55e37f1cb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:49
 ---
 
 # Integrate with a SAP System

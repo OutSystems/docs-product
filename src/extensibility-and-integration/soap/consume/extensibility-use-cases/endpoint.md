@@ -4,6 +4,7 @@ locale: en-us
 guid: a6bf6200-5b57-4941-8d06-1b29a1985d7d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A20&mode=design&t=8a1ub9syb4QKHbuk-1
 ---
 
 # Change service endpoint at runtime

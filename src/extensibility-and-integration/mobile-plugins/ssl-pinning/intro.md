@@ -4,8 +4,8 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: fec62d79-033b-4a5a-a7e1-806b0a591daf
 app_type: mobile apps
-figma: 
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=612:330
 ---
 
 # SSL Pinning Plugin

@@ -4,6 +4,7 @@ locale: en-us
 guid: 8f587c50-8581-49eb-a959-fb72411a00de
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Configure a SOAP Web Service at Runtime

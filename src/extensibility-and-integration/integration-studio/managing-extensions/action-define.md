@@ -3,6 +3,7 @@ locale: en-us
 guid: 13eaeec1-6665-471b-8891-18bb8d1241a8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Define Extension Actions

@@ -3,6 +3,7 @@ locale: en-us
 guid: e3eef60b-0694-4c49-9666-5f4749d6cf32
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Edit Extension Source Code

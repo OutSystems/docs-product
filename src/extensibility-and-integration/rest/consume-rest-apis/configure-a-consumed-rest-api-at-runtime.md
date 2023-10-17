@@ -5,6 +5,7 @@ locale: en-us
 guid: bab48957-3b44-44a9-9996-d705c67a2dd6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:83
 ---
 
 # Configure a Consumed REST API at Runtime

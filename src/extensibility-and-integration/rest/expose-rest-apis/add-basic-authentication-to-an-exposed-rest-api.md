@@ -5,6 +5,7 @@ locale: en-us
 guid: fa99306b-0261-47c1-821f-80262d8dd45b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:102
 ---
 
 # Add Basic Authentication to an Exposed REST API

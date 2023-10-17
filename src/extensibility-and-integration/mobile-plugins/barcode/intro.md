@@ -5,6 +5,7 @@ locale: en-us
 guid: 22ea5600-8b2b-4ad3-8e64-06e512155c58
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=807:385
 ---
 
 # Barcode Plugin

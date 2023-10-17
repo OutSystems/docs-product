@@ -4,8 +4,8 @@ tags: article-page; runtime-mobile; support-application_development; support-Mob
 locale: en-us
 guid: 188c9757-ce29-4f78-9717-4e42226e0a4d
 app_type: mobile apps
-figma: 
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1092%3A5184&mode=design&t=VFCa3RHG3vFTaPWn-1
 ---
 
 # Firebase plugins

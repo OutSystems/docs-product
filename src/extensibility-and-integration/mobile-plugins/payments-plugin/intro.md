@@ -4,8 +4,8 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: 4a79c8ee-2a07-11ed-882b-00155da4f25e
 app_type: mobile apps
-figma: 
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2407:15058
 ---
 
 # Payments plugin

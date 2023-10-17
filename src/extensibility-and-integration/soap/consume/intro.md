@@ -5,6 +5,7 @@ locale: en-us
 guid: 1a1bdabb-5cc0-4600-9c5b-6c2604145da0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Consuming SOAP Web Services

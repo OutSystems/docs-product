@@ -4,6 +4,7 @@ tags: support-Installation_Configuration; version-11
 locale: en-us
 guid: 1062467B-0DCE-446E-B31C-584119C941A2
 app_type: traditional web apps, mobile apps, reactive web apps
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2220:14984
 ---
 
 # Add extra schema compliance validations

@@ -5,6 +5,7 @@ locale: en-us
 guid: 21574391-c5b3-4831-a7b2-8aaf94df2230
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:85
 ---
 
 # Simple Customizations

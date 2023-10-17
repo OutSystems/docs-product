@@ -4,6 +4,7 @@ locale: en-us
 guid: e45e96ca-8a1e-4bb1-b23f-e2306f0157be
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Execute SAP Stateful Calls

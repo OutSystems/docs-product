@@ -5,6 +5,7 @@ locale: en-us
 guid: ddb0cd62-4de7-48c2-9f44-3a9240a4ae66
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:40
 ---
 
 # Troubleshoot a SOAP Web Service

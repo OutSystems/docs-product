@@ -4,8 +4,8 @@ tags: support-Integrations_Extensions-featured
 locale: en-us
 guid: beb761a2-ef08-44e6-aa0c-ee11bada5baa
 app_type: traditional web apps, mobile apps, reactive web apps
-figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410-79&mode=design
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A79&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
 # Use OAuth 2.0 client flow authorization in consumed REST API web services

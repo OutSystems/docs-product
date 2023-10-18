@@ -5,6 +5,7 @@ locale: en-us
 guid: 158347bc-c312-4499-9912-1f1dfeac7d50
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1088:5164
 ---
 
 # Camera plugin

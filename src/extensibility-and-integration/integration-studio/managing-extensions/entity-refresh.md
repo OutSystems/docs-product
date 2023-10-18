@@ -3,6 +3,7 @@ locale: en-us
 guid: b6fd826d-d92b-4c58-870e-da6c7311fad8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Refresh an Entity

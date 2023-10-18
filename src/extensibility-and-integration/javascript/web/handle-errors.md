@@ -5,6 +5,7 @@ locale: en-us
 guid: d3888e3a-fb8d-44cf-8ec2-b97cd5caa87e
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3387%3A2245&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
 # Handle JavaScript Errors

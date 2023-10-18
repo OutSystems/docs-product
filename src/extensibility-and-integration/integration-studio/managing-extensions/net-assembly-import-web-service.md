@@ -3,6 +3,7 @@ locale: en-us
 guid: cdffaa83-59f9-4c88-a3f1-4168fd023051
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:63
 ---
 
 # Import Web Services from a .NET Assembly

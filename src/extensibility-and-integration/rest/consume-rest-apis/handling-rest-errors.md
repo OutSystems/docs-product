@@ -5,6 +5,7 @@ locale: en-us
 guid: 5a815098-ae36-4134-91ac-761a1087c31f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:96
 ---
 
 # Handling REST Errors

@@ -52,30 +52,24 @@ For each mobile platform, specify the size (iOS) and density (Android) and the c
 
 Width | Height | Displayed on
 :----:|:------:|-------------
-20    | 20     | iPad Notifications (iOS 7–11)
-29    | 29     | iPhone Spotlight (iOS 5, 6) <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
-40    | 40     | iPhone Notifications (iOS 7–11) <br/> iPad Notifications (iOS 7–11) <br/> iPad Spotlight (iOS 7–11)
 48    | 48     | Apple Watch Notification Center
-50    | 50     | iPad Spotlight (iOS 5, 6)
 55    | 55     | Apple Watch Notification Center
-57    | 57     | iPhone App (iOS 5, 6)
-58    | 58     | iPhone Spotlight (iOS 5, 6) <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
-60    | 60     | iPhone Notifications (iOS 7–11)
-72    | 72     | iPad App (iOS 5, 6)
-76    | 76     | iPad App (iOS 7–11)
+58    | 58     | iPhone Spotlight <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
+76    | 76     | iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
 80    | 80     | iPhone Spotlight (iOS 7–11) <br/> iPad Spotlight (iOS 7–11)
-87    | 87     | iPhone Spotlight (iOS 5, 6) <br/> iPhone Settings (iOS 5–11)
+87    | 87     | iPhone Spotlight <br/> iPhone Settings (iOS 5–11)
 88    | 88     | Apple Watch Long Look
-100   | 100    | iPad Spotlight (iOS 5, 6)
-114   | 114    | iPhone App (iOS 5, 6)
+100   | 100    | iPad Spotlight 
+114   | 114    | iPhone App 
 120   | 120    | iPhone Spotlight (iOS 7–11) <br/> iPhone App (iOS 7–11)
-144   | 144    | iPad App (iOS 5, 6)
 152   | 152    | iPad App (iOS 7–11)
 167   | 167    | iPad Pro App (iOS 9–11)
 172   | 172    | Apple Watch Short Look
 180   | 180    | iPhone App (iOS 7–11)
 196   | 196    | Apple Watch Short Look
 1024  | 1024   | App Store iOS
+
+To know more about icon sizes and densities for iOS, refer to [App icon sizes](https://developer.apple.com/design/human-interface-guidelines/app-icons#App-icon-sizes).
 
 ### For Android
 

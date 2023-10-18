@@ -5,6 +5,7 @@ locale: en-us
 guid: F6D1AF42-2DF2-43D8-9700-75335D0A7302
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Consuming a REST API with a multipart or form data method

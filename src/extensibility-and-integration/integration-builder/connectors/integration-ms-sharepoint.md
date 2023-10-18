@@ -4,6 +4,7 @@ locale: en-us
 guid: db18157f-d949-4143-ab29-29376e8a2d77
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6374
 ---
 
 # SharePoint Online integration

@@ -36,7 +36,7 @@ You can install both BDDFramework tools in your OutSystems infrastructure, just 
 1. To install the BDDFramework, log in to **Service Studio**.
 2. Click the **Forge** tab in the top left of Service Studio.
 3. In the search box, type BDDFramework. You should see both the server-side and client-side tools.
-4. Select **BDDFramework** from the results, which brings you to the sever-side tool's page.
+4. Select **BDDFramework** from the results, which brings you to the server-side tool's page.
 5. Click **Install**. If you see a confirmation request, confirm the installation.
 6. Repeat these steps to install the client-side tool.
 

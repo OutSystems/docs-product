@@ -4,6 +4,7 @@ locale: en-us
 guid: dfd157ac-c6ce-4710-a022-3bd27f5fc8bc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Unsupported SOAP Use Cases

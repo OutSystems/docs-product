@@ -3,6 +3,7 @@ locale: en-us
 guid: 1b37d2df-87ea-4a65-a8c1-82b41ede7e07
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=3387%3A2064&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
 # Verify the Extension

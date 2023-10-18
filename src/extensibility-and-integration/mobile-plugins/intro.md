@@ -5,6 +5,7 @@ locale: en-us
 guid: 5543e1d8-095e-45d1-aef6-d3c054649421
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:31
 ---
 
 # Mobile Plugins

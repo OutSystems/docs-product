@@ -3797,7 +3797,7 @@ Go to
 </div>
 <div class="panel-body">
 <section class="sw-operation-description">
-<p>Returns a link where the binary file for a given application can be downloaded. The link will expire in 60 minutes.</p>
+<p>Returns a link where the binary file for a given application can be downloaded. The content of the download can be the Application Package for all kinds of application or the mobile application package for mobile applications that are generated correctly. The link will expire in 60 minutes.</p>
 </section>
 <section class="sw-request-params">
 <table class="table">
@@ -3910,7 +3910,7 @@ Expires</td>
 <dd class="sw-response-204">
 <div class="rowr">
 <div class="col-md-12">
-<p>No binary available for given type and keys.</p>
+<p>No binary available for given type and keys. When using type "apk" or "ipa", the error means the application is not a mobile application or the mobile application is not generated.</p>
 </div>
 </div>
 <div class="rowr">

@@ -35,7 +35,7 @@ In this example, we create a dropdown containing a list of employee names from a
 
     ![](<images/dropdown-2-ss.png?width=800>)
 
-1. On the **Properties** tab, in the enter a name for the Dropdown widget.
+1. On the **Properties** tab, enter a name for the Dropdown widget.
 
     In this example, we enter `EmployeeDropdown`.
 

@@ -103,7 +103,7 @@ The server validates the request by checking the following conditions:
 3. Cookies information is authentic and was not forged.
 4. Login expiration period has not been reached.
 
-If all conditions apply, the server authenticates the request as coming from the user identified in the cookies, otherwise the server processes the request as if it was coming from an anonymous user.
+If all conditions apply, the server authenticates the request as coming from the user identified in the cookies, otherwise the server processes the request as if it was coming from an anonymous user or fails in case of tampering.
 
 ![Authentication flow](images/authentication-1.png)
 

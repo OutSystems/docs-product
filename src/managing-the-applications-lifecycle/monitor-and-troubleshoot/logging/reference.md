@@ -7,7 +7,7 @@ platform-version: o11
 
 # Log data reference
 
-This document lists the fields and descriptions of the database views associated with the platform log records. The views are built on top of the database tables.
+This document lists the fields and descriptions of the database views associated with the platform log records. The views are built on top of the database tables. 
 
 <div class="info" markdown="1">
 

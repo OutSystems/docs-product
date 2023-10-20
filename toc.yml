@@ -1056,7 +1056,6 @@
         - topics:
             - href: setup-maintain/setup/logging-db/configure-separate-db.md
             - href: setup-maintain/setup/logging-db/update-applications.md
-
         - href: setup-maintain/setup/unattended-install/intro.md
         - topics:
             - href: setup-maintain/setup/unattended-install/config-tool-ref.md

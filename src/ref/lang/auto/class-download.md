@@ -9,7 +9,7 @@ platform-version: o11
 
 # Download
 
-Use the Download Tool to send a file to a user. This is an element that ends the action flow, so it is not possible to define new actions after it. If the Ajax Submit method is used to trigger the download, the download will not work.
+Use the Download Tool to send a file to a user. This is an element that ends the action flow, so it is not possible to define new actions after it. If the Ajax Submit method is used to trigger the download, the download will not work. This includes Links and Buttons with the method type Ajax Submit, or On Click events of other element types, such as Containers.
 
 ## Properties
 

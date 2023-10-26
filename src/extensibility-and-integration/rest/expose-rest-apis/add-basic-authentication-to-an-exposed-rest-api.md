@@ -38,14 +38,14 @@ For that, do the following:
 
 1. Select the exposed REST API you want to change and set its "Authentication" property to `Basic`.
 
-![](images/ss-rest-authentication-options.png)
+    ![Select authentication property to basic](images/rest-authentication-options-ss.png)
 
 As a result, OutSystems creates the "OnAuthentication" action in your REST API to handle basic authentication with:
 
 * The "Username" and "Password" input parameters holding the credentials passed in the request (they're automatically decoded from the "Authorization" HTTP header)
 * The "User_Login" action to validate the credentials and identify the user
 
-![](images/ss-rest-onauthentication-basic-flow.png)
+![OnAuthentication action](images/ss-rest-onauthentication-basic-flow.png)
 
 All methods in the REST API now require Basic Authentication. Manage user credentials in your end user management application (by default, the [Users application](../../../develop/security/end-user-manage/accessing-users.md)).
 

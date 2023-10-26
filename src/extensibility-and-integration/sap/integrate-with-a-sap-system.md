@@ -73,7 +73,7 @@ On the **Logic** tab, go to **Integrations** > **SAP**. You can now use the newl
 
 When a SAP Remote Function is called from your OutSystems application, the following flow is executed:
 
-![SAP remote function flow](images/SAP_Remote_Function_Flow.png)
+![SAP remote function flow](images/sap-remote-function-flow-diag.png)
 
 1. **OnBeforeConnection():** This callback allows you to implement different SAP authentication methods using the [SAP Extensibility API](<../../ref/apis/sap-extensibility-api.md>), such as Logon Tickets or certificates. 
 1. **Connect to SAP & Begin Context:** The connection to SAP is established using the default credentials (if no different authentication is defined), and a context for calling the SAP remote function is started in SAP. 

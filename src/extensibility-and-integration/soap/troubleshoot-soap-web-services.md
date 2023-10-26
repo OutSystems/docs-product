@@ -19,9 +19,15 @@ You can configure the detail level of the logs that OutSystems keeps for each co
 To access the logs of your SOAP Web Service, do the following:
 
 1. Go to the Service Center management console of your OutSystems environment.
+
 1. Go to the **Monitoring** section and select **Integrations**.
+
 1. In **Type**, filter the logging you want to see: `SOAP (Consume)` or `SOAP (Expose)`.
+
+    ![Select SOAP type](<images/select-type-sc.png>)
+
 1. Click **Filter**.
+
 1. To see the details of a log entry click on the **Detail** link (or, if there was an error, on the **Error** link) displayed on the right to get detailed information.
 
-![Integration Log screen in Service Center](<images/integrations-log-screen.png>)
+    ![Integration Log screen in Service Center](<images/integrations-log-screen-sc.png>)

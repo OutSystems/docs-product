@@ -18,7 +18,11 @@ It's advisable that you configure the CSP in every environment. Start with the a
 
 The CSP configuration works for both web and mobile applications developed with OutSystems.
 
+<div class="info" markdown="1">
 
+From LifeTime 11.13.0 and Platform Server 11.15.0 versions and onwards, the Service Center and LifeTime management consoles have CSP enabled. Their directives can't be changed and they don't depend on the directives you define.
+
+</div>
 
 ## Configure CSP in LifeTime
 

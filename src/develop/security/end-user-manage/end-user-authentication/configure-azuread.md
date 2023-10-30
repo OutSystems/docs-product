@@ -11,17 +11,22 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies only to Traditional Web Apps and Reactive Web Apps.
+**Note**: Azure Active Directory (Azure AD) has been renamed to **Microsoft Entra ID**.
 
 </div>
 
 <div class="info" markdown="1">
 
-Requires Platform Server Release Jul.2019 CP2 (11.0.542.0) or later.
+Applies only to Traditional Web Apps and Reactive Web Apps.
 
 </div>
 
-The configuration of the Azure Active Directory (AD) authentication method is quite similar to the [SAML 2.0](configure-saml.md) one, but in this case the "Claims" settings are already filled in with Azure AD default values.
+## Prerequisites
+Requires Platform Server Release Jul.2019 CP2 (11.0.542.0) or later.
+
+## Configuring Azure Active Directory
+
+The configuration of the Azure Active Directory (AD) authentication method is quite similar to the [SAML 2.0](configure-saml.md) one, but in this case the **Claims** settings are already filled in with Azure AD default values.
 
 Additionally, you can fill in the configuration settings for Azure AD authentication by uploading/downloading files with metadata, which helps avoid human errors.
 
@@ -30,8 +35,6 @@ Additionally, you can fill in the configuration settings for Azure AD authentica
 Check the [limitations of the current SAML 2.0 implementation](configure-saml.md#current-limitations) which also apply to the Azure AD authentication method.
 
 </div>
-
-## Configuring Azure Active Directory
 
 To configure Azure AD authentication you must take these general steps:
 

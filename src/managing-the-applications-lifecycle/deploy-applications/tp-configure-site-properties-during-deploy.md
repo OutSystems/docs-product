@@ -5,6 +5,7 @@ locale: en-us
 guid: 4acf3283-61b0-4409-a357-cb2ef63f1a5e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A33&mode=design&t=98kL4vRdGIKpuwQm-1
 ---
 
 # Configure Site Properties During Deployment

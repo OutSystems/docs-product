@@ -5,6 +5,7 @@ locale: en-us
 guid: f8b008aa-ae75-470a-adc3-5863bf6be8e6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:104
 ---
 
 # Use an External Authentication Provider

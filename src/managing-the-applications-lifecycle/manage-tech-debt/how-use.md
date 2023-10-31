@@ -5,6 +5,7 @@ locale: en-us
 guid: 115abc7a-0267-4497-868b-d3c09b1e92fa
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Getting started with AI Mentor Studio

@@ -6,6 +6,7 @@ locale: en-us
 guid: a7187cf7-6f1d-4f7c-8141-03f856639f08
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Code Analysis Patterns

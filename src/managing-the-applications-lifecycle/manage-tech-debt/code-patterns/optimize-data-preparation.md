@@ -5,6 +5,7 @@ locale: en-us
 guid: 9508496b-0e5a-4373-a0df-1c3dba6e9f5b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Optimize data preparation

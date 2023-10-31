@@ -5,6 +5,7 @@ locale: en-us
 guid: 7486CF76-C3FC-41E0-B2E9-F6C6512FAB44
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Generic external identity provider supporting OIDC

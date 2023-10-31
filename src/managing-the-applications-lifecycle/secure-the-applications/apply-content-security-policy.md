@@ -5,6 +5,7 @@ locale: en-us
 guid: e59d9233-7c2d-43ae-b8a2-f55d75263c68
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:95
 ---
 
 # Apply Content Security Policy

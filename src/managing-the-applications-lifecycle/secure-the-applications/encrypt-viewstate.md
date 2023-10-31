@@ -5,6 +5,7 @@ locale: en-us
 guid: a07b13f4-d8a9-4d32-8c52-57544422ce46
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3212%3A4950&mode=design&t=rzWSTBJIapfhmERp-1
 ---
 
 # Encrypt web apps view state

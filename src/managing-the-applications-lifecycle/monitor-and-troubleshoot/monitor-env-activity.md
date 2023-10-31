@@ -5,6 +5,7 @@ locale: en-us
 guid: 5d4aa86a-ec57-46d7-b29f-81c2967bdb0c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=3200:4027
 ---
 
 # Monitor the Environment Daily Activity

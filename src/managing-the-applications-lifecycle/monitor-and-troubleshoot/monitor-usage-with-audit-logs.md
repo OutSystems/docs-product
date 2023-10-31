@@ -5,6 +5,7 @@ locale: en-us
 guid: ff41a92e-5717-4a6c-9016-12acdb4de71f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:120
 ---
 
 # Monitor Usage with Audit Logs

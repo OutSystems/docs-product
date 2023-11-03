@@ -5,6 +5,7 @@ locale: en-us
 guid: fb46fada-91f7-45b9-b936-b0310303f4e8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Update applications that access OutSystems log data

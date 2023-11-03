@@ -5,6 +5,7 @@ locale: en-us
 guid: 4b06ed06-572c-48c9-835c-f38db745052c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2569%3A872&mode=design&t=kfTANqFRrMacskax-1
 ---
 
 # Troubleshoot OutSystems cache invalidation service

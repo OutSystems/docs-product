@@ -4,7 +4,7 @@ locale: en-us
 guid: FFD30107-AFEA-4113-A1EE-05E9EC46987C
 app_type: mobile apps, reactive web apps
 platform-version: o11
-
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2635%3A724&mode=design&t=PPL7U8XyNSIpuC5w-1
 ---
 
 # Disable Registered Role Required error logs

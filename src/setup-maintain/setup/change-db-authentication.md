@@ -5,6 +5,7 @@ locale: en-us
 guid: 34EF8749-5F32-456F-965D-5FF41037B82C
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: 
 ---
 
 # Change SQL Server database authentication mode 

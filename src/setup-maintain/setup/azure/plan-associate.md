@@ -4,6 +4,7 @@ locale: en-us
 guid: fc966397-ce73-4217-bc1d-7a048bd65347
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Plan to Associate your OutSystems Installation on Azure with OutSystems

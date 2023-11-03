@@ -5,6 +5,7 @@ locale: en-us
 guid: 54a92414-2911-11ed-b1a1-00155d847f89
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Upgrade OutSystems cache invalidation with high-availability

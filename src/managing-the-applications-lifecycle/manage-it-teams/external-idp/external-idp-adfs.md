@@ -7,8 +7,7 @@ app_type: traditional web apps, reactive web apps
 platform-version: o11
 ---
 
-
-# Configure Active Directory Federation Services as external identity provider
+# Configuring Active Directory Federation Services as external identity provider
 
 To configure Active Directory Federation Services (AD FS) as an external IdP, follow these steps:
 
@@ -38,11 +37,11 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
 1. Add the Redirect URI to Service Center login and logout page from the Lifetime environment:
 
-* ``https://<LT_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
+    * ``https://<LT_ENV>/ServiceCenter/CentralizedLogin_AuthCodeFlow_TokenPart.aspx``
 
-* ``https://<LT_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
+    * ``https://<LT_ENV>/ServiceCenter/CentralizedLogout_CallbackEndpoint.aspx``
 
-    ![Add redirect URIs](images/redirect-uri-usr.png)
+        ![Add redirect URIs](images/redirect-uri-usr.png)
 
 1. Copy the **Client Identifier** (required in later steps) and click **Next**.
 
@@ -108,7 +107,7 @@ To log into web tools such as LifeTime and Service Center using an external IdP,
 
 1. Click **Add application** to add a new Web API to map the native application and click **Next**.
 
-1. Set the **Identifier** as the native **Client Identifier** that was copied in step 4. Click **Next**. 
+1. Set the **Identifier** as the native **Client Identifier** that was copied in step 5 of [Create a native app](#create-a-native-app). Click **Next**. 
 
     Repeat step 7 to step 10 of the [Create a server app](#create-a-server-app) for this newly created Web API application.
 
@@ -136,7 +135,7 @@ You can configure AD FS as an external IdP by navigating to **Lifetime** > **Use
 * **Well-known Configuration URL**: ``https://<ADFShostname>/adfs/.well-known/openid-configuration``
 * **Client ID Type**: Different Client ID for Desktop and Web tools
 * **Client ID for Web tools**: Copied in step 4 of [Create a server app](#create-a-server-app)
-* **Client ID for Desktop tools**: Copied in step 4 of [Create a native app](#create-a-native-app)
+* **Client ID for Desktop tools**: Copied in step 5 of [Create a native app](#create-a-native-app)
 * **Username Claim**: email (or whatever has been configured at the time of setting up AD FS)
 * **Scopes**: Click the Test button next to the well-known configuration URl. It recommendeds scopes.
 * Click **Save Provider** then **Activate provider**. Enter the  client secret and select **Activate and Log Out**.

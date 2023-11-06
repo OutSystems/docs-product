@@ -487,7 +487,6 @@
                     - href: develop/security/end-user-manage/end-user-authentication/saml-update-auth-flows/update-trad-web-app-flows.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-azuread.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-okta.md
-                - href: develop/security/end-user-manage/end-user-authentication/configure-adfs.md
                 - href: develop/security/end-user-manage/end-user-authentication/integrated-authentication.md
                 - href: develop/security/end-user-manage/end-user-authentication/persistent-login.md
                 - href: develop/security/end-user-manage/end-user-authentication/single-sign-on.md
@@ -948,6 +947,7 @@
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-configure.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-azure.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-okta.md
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-adfs.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-lifetime.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-general.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-authentication-provider.md

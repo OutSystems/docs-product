@@ -487,6 +487,7 @@
                     - href: develop/security/end-user-manage/end-user-authentication/saml-update-auth-flows/update-trad-web-app-flows.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-azuread.md
                 - href: develop/security/end-user-manage/end-user-authentication/configure-okta.md
+                - href: develop/security/end-user-manage/end-user-authentication/configure-adfs.md
                 - href: develop/security/end-user-manage/end-user-authentication/integrated-authentication.md
                 - href: develop/security/end-user-manage/end-user-authentication/persistent-login.md
                 - href: develop/security/end-user-manage/end-user-authentication/single-sign-on.md

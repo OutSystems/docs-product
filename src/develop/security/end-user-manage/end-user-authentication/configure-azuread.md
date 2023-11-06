@@ -242,3 +242,21 @@ Since the Azure AD authentication method is very similar to the SAML 2.0 authent
 * Check the [SAML Message Logs page](configure-saml.md#logs) for detailed information on Azure AD messages exchanged for end user authentication.
 
 * Use the same method for [accessing the Users application when you're locked out](configure-saml.md#locked-access) due to incorrect configuration settings in end user authentication.
+
+## Renew Azure AD Certificate
+
+To renew a SAML signing certificate that is about to expire, complete the following steps: 
+
+1. Create the new signing certificate or upload your own in **Azure AD Admin Center**.
+1. Update the **Certificate** field on the Users page.
+1. Set the new certificate as **Active** in **Azure AD Admin Center**.
+
+For more information about renewing SAML signing certificates, refer to the [Tutorial: Manage certificates for federated single sign-on](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/tutorial-manage-certificates-for-federated-single-sign-on#create-a-new-certificate). 
+
+[!NOTE] 
+Restarting the service is unnecessary once you renew the SAML signing certificate.
+
+When updating a SAML signing certificate, there is always some downtime. This happens because there are two simultaneously **active** signing certificates. From the moment you upload the new certificate to the Users page and set the new certificate as **Active** in **Azure AD Admin Center**, there will be a short period when SAML requests fail due to an invalid signature. However, you can significantly minimize downtime if you already have the new certificate in **Azure AD Admin Center**. This only applies if you upload your own certificate. If you use an Azure AD certificate, this does not apply as you create the certificate in **Azure AD Admin Center**.
+
+
+

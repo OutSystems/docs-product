@@ -253,8 +253,11 @@ To renew a SAML signing certificate that is about to expire, complete the follow
 
 For more information about renewing SAML signing certificates, refer to the [Tutorial: Manage certificates for federated single sign-on](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/tutorial-manage-certificates-for-federated-single-sign-on#create-a-new-certificate). 
 
-[!NOTE] 
+<div class="info" markdown="1">
+
 Restarting the service is unnecessary once you renew the SAML signing certificate.
+
+</div>
 
 When updating a SAML signing certificate, there is always some downtime. This happens because there are two simultaneously **active** signing certificates. From the moment you upload the new certificate to the Users page and set the new certificate as **Active** in **Azure AD Admin Center**, there will be a short period when SAML requests fail due to an invalid signature. However, you can significantly minimize downtime if you already have the new certificate in **Azure AD Admin Center**. This only applies if you upload your own certificate. If you use an Azure AD certificate, this does not apply as you create the certificate in **Azure AD Admin Center**.
 

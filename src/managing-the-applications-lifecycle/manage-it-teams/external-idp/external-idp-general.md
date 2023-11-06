@@ -18,7 +18,6 @@ The external IdP must support the following scopes:
 * email
 * openid
 * profile
-* offline_access
 
 You must configure the authorization and refresh tokens in the external IdP. By default, the **prefered_username** claim matches the **username** field of the user configured in LifeTime.
 

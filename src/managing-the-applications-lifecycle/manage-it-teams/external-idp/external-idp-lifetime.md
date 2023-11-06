@@ -71,6 +71,9 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
          *  **Okta**:
                     For Okta, it is recommended to add the **offline_access** scope. This scope grants the application the ability to acquire a refresh token, ensuring seamless access token renewal without user involvement.
+                        
+         *   **AD FS**:
+                    For AD FS, it is recommended to add the **allatclaims** scope. This scope requests the access token claims in the identity token.
 
           **Note**: The recommended additional scopes mentioned above are not exhaustive, and users should consult their identity provider's documentation for specific scope requirements.
 

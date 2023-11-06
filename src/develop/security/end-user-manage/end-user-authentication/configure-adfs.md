@@ -7,7 +7,8 @@ app_type: traditional web apps, reactive web apps
 platform-version: o11
 ---
 
-# Configuring Active Directory Federation Services as external identity provider
+
+# Configure Active Directory Federation Services as external identity provider
 
 To configure Active Directory Federation Services (AD FS) as an external IdP, follow these steps:
 

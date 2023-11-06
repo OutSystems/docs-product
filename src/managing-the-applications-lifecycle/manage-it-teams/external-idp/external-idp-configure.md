@@ -20,6 +20,6 @@ See the following articles for configuration instructions:
 
 * [Configuring Okta authentication](external-idp-okta.md)
 
-* [Configuring Active Directory Federation Services as external identity provider](external-idp-adfs.md)
+* [Configuring Active Directory Federation Services](external-idp-adfs.md)
 
 Step 2. [Configuring LifeTime authentication](external-idp-lifetime.md)

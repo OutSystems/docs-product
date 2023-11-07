@@ -4,8 +4,8 @@ summary: Learn how to change the impact level a code pattern has on your total t
 locale: en-us
 guid: EB77F9BF-FA60-4B26-9E19-FA17C6B70EF1
 app_type: traditional web apps, mobile apps, reactive web apps
-figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3052%3A321&mode=design&t=fIZClNOE2XF93rMW-1
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=3052:321
 ---
 
 # Change the impact level of a code pattern on your technical debt

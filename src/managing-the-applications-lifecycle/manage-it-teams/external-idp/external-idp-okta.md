@@ -5,6 +5,7 @@ locale: en-us
 guid: 5F1E1CC1-A4E7-497F-A176-7A8671CC5D8B
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1914:6837
 ---
 
 # Configuring Okta authentication

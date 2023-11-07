@@ -16,5 +16,4 @@ For more information about handling data using queries, see:
 * [Query Parameter](../../../lang/auto/class-query-parameter.md)
 * [SQL](../../../lang/auto/class-sql.md)
 * [Supported Join Types](supported-join-types.md)
-
-
+* [Handle complicated search pages](handle-complicated-search-pages.md)

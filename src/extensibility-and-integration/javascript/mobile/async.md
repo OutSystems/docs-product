@@ -5,6 +5,7 @@ locale: en-us
 guid: 38ba49e3-f93e-45b2-9e51-83e8b52b353e
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:43
 ---
 
 # Defining Asynchronous JavaScript Code

@@ -4,8 +4,8 @@ summary: Learn how AI Mentor Studio calculates and displays the technical debt o
 locale: en-us
 guid: 521CF7BD-3CE7-4448-8DDE-B5A751B08B82
 app_type: traditional web apps, mobile apps, reactive web apps
-figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=928%3A724&mode=design&t=fIZClNOE2XF93rMW-1
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:724
 ---
 
 # How AI Mentor Studio calculates and shows technical debt

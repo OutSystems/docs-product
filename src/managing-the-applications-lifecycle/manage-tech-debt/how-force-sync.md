@@ -5,6 +5,7 @@ locale: en-us
 guid: b67d9ffc-b28f-4e00-8ffc-6544f9d66812
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:744
 ---
 
 # How to request a synchronization

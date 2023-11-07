@@ -5,6 +5,7 @@ locale: en-us
 guid: 75f71e55-19e7-4a6a-bd44-f730385acf52
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2580%3A4785&mode=design&t=uPq3qCZl7kqIKVy0-1
 ---
 
 # Use your SSL domain in OutSystems Cloud

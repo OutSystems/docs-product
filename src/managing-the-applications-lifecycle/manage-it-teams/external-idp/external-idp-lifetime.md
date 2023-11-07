@@ -5,6 +5,7 @@ locale: en-us
 guid: 1730AE44-3570-4CA9-81BE-032CCF2D12B5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1914:7765
 ---
 
 # Configuring LifeTime authentication
@@ -70,6 +71,9 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
          *  **Okta**:
                     For Okta, it is recommended to add the **offline_access** scope. This scope grants the application the ability to acquire a refresh token, ensuring seamless access token renewal without user involvement.
+                        
+         *   **AD FS**:
+                    For AD FS, it is recommended to add the **allatclaims** scope. This scope requests the access token claims in the identity token.
 
           **Note**: The recommended additional scopes mentioned above are not exhaustive, and users should consult their identity provider's documentation for specific scope requirements.
 

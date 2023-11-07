@@ -5,6 +5,7 @@ locale: en-us
 guid: 15102520-e5ff-4487-bc3d-14f757ccab88
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=409:26
 ---
 
 # Create and configure the chatbot webhook module

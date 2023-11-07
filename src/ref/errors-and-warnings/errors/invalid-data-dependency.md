@@ -15,7 +15,7 @@ The Invalid Data Dependency error is issued in the following situations:
 
 * `'{0}' can depend on single data source only. Remove the references to other data sources.`
   
-    You can create direct data dependencies between two data sources. Using more than two data sources causes this error. 
+    A data source can only depend on another data source. One data source cannot depend on two, or more, data sources. 
 
 * `Loop detected in '{0}'. Edit the data source references to remove circular dependency.`
   

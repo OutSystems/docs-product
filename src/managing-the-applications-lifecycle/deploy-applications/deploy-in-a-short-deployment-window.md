@@ -4,6 +4,7 @@ locale: en-us
 guid: d51c949d-d74e-4754-a9ff-ae8c83013ebb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:65
 ---
 
 # Deploy in a Short Deployment Window

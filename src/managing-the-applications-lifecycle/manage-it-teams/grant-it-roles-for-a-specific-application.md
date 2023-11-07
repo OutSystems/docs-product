@@ -4,6 +4,7 @@ locale: en-us
 guid: 00796575-6a6e-40dc-a4a8-88ff5d4a549a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:68
 ---
 
 # Grant Permissions for Specific Applications

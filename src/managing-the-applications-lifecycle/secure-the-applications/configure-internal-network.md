@@ -5,6 +5,7 @@ locale: en-us
 guid: 2326f357-2f2a-4a5c-a05d-fb20edd7be5f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:93
 ---
 
 # Configure an Internal Network

@@ -5,6 +5,7 @@ locale: en-us
 guid: 6c59c61d-f34b-4ef4-8875-0ea760341cd5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6300
 ---
 
 # Use Integration Builder

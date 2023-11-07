@@ -5,6 +5,7 @@ locale: en-us
 guid: 9e51b5d1-a279-4923-9a79-89d8d47152eb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=1561:965
 ---
 
 # Possible errors related to modules preparation

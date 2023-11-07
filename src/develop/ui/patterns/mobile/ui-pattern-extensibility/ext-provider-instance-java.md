@@ -78,3 +78,4 @@ The API method receives the configuration and passes them to the provider which 
 This is a direct communication between the developer and the provider, so from this step on, OutSystems does not support any issues or features and the developer should be conscious of the code it produces.
 
 </div>
+

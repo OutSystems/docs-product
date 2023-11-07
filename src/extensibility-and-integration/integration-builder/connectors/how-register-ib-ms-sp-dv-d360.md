@@ -4,6 +4,7 @@ locale: en-us
 guid: 50a76d12-73cb-4924-b36f-e76b68a00cb5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1019%3A6377&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 # How to register SharePoint Online, Microsoft Dataverse, or Microsoft Dynamics 365 apps in the Azure Active Directory
 

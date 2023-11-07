@@ -1,10 +1,11 @@
 ---
-summary: Provides an extra layer of security to HTTPS communications.
+summary: Learn how to use the SSL Pinning Plugin to provide an extra layer of security to HTTPS communications.
 tags: runtime-mobile; support-application_development; support-Mobile_Apps;
 locale: en-us
 guid: fec62d79-033b-4a5a-a7e1-806b0a591daf
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=612:330
 ---
 
 # SSL Pinning Plugin
@@ -15,15 +16,15 @@ Applies only to Mobile Apps.
 
 </div>
 
-In native mobile apps, SSL Pinning or HTTP Public Key Pinning (HPKP) provides an extra layer of security to HTTPS communications to avoid, for example, man-in-the-middle attacks. SSL Pinning works client-side and verifies the server certificate by comparing hashes of public keys that are pre-bundled with the mobile app.
+In native mobile apps, SSL Pinning or HTTP Public Key Pinning (HPKP) provides an extra layer of security to HTTPS communications to avoid, for example, man-in-the-middle attacks. SSL Pinning works on the client-side. SSL Pinning verifies the client-server certificate by comparing hashes of the public keys of the pre-bundled mobile app.
 
-By design, if there's a hash mismatch, calls to server actions stop working.  If there's a hash mismatch, you must add a new hash list in the app, build a new version of the app, and distribute it to your users. To prevent a  hash mismatch, design the app to verify the certificate is valid. For more information, see [Check the hash validity](#check-the-hash-validity) section.
+By design, if there's a hash mismatch, calls to server actions stop working.  When there's a hash mismatch, you must add a new hash list in your app, build a new version of the app, and distribute it to your users. To prevent a hash mismatch, design the app to verify the certificate validity. To learn more about hash validity, see [Check the hash validity](#check-the-hash-validity) section.
 
-SSL Pinning uses a customized version of the SSL certificate validation and doesn't rely on deprecated SSL Pinning in browsers.
+OutSystems SSL Pinning Plugin uses a customized version of the SSL certificate validation and doesn't rely on the older SSL Pinning versions that may be in your browsers.
 
 <div class="info" markdown="1">
 
-See [Adding plugins](../intro.md#adding-plugins) to learn how to install and reference a plugin in your OutSystems apps, and how to install a demo app.
+To learn how to install and reference a plugin in your OutSystems mobile apps, and how to install a demo app, see [Adding plugins](../intro.md#adding-plugins).
 
 </div>
 
@@ -31,43 +32,43 @@ See [Adding plugins](../intro.md#adding-plugins) to learn how to install and ref
 
 To keep your environments secure, OutSystems continuously updates server certificates for their domains. This is important especially if your environments use OutSystems default domains and certificates.
 
-When certificates change, environments using these certificates in their apps can stop working. To fix this problem, you must generate a new app and distribute the app. If OutSystems is unable to notify you every time there is a change, everyone involved is at risk.
+When certificates change, the environments using these certificates in their apps may stop working. To fix this problem, you must generate a new app and distribute the app. If OutSystems, due to any unforeseen circumstances, is unable to notify you every time there is a change, everyone involved is at risk.
 
-OutSystems no longer supports the generation of the native mobile apps when using SSL Pinning to pin your apps to OutSystems managed certificates. This change affects all environments, production and non-production. If this change affects your environments, get new domains and certificates and provide them to OutSystems.
+OutSystems no longer supports the native Mobile apps generation when using SSL Pinning to pin your apps to OutSystems managed certificates. This change affects all environments, production and non-production. If this change affects your environments, get new domains and certificates, and provide their details to OutSystems.
 
 ## How to implement SSL pinning in OutSystems
 
-To implement SSL Pinning you must have two certificates on the server - one as the primary certificate and the second as backup (in case the primary certificate gets compromised).
+To implement SSL Pinning, you must have two certificates on the server - one as the primary certificate and the second as a backup (if the primary certificate gets compromised).
 
-To implement SSL Pinning, follow these steps:
+To implement SSL Pinning in OutSystems, follow these steps:
 
 1. Generate hashes for the public keys of the certificates.
 1. Create a configuration file with the hashes.
-1. Install the SSL Pinning from Forge.
+1. Install the SSL Pinning plugin from Forge.
 1. Add the configuration file to your mobile app.
-1. Validate that certificates are working only for the hashes in the mobile app.
+1. Validate that the certificates are working only for the hashes in the mobile app.
 
 <div class="info" markdown="1">
 
-If you update the [configuration file](#create-the-configuration-file) of the SSL Pinning plugin in new versions of your app, you need to run the app build creation manually. See: [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
+If you update the [configuration file](#create-the-configuration-file) of the SSL Pinning plugin in new versions of your app, you need to manually run the app build creation. To learn more about when you must install a new build, see [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
 
 </div>
 
 ### Generate the hashes for public keys
 
-To generate the hash of a public key in a certificate, get the certificate from the server and use [OpenSSL](http://slproweb.com/products/Win32OpenSSL.html) commands to do the following:
+To generate the hash of a public key in a certificate, get the certificate from server and use [OpenSSL](http://slproweb.com/products/Win32OpenSSL.html) commands to do the following:
 
 1. Obtain the public key from the certificate.
 1. Calculate hash of the public key using the SHA-256 algorithm.
-1. Encode the hash of the public key in Base64.
+1. Encode hash of the public key in Base64.
 
-Here is an example of the openSSL commands to generate the hash of the certificate public key.
+The following is an example of the openSSL commands to generate the hash of the certificate public key.
 
 `openssl x509 -in my-certificate.crt -pubkey -noout | openssl rsa -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64`
 
 <div class="info" markdown="1">
 
-To generate a hash with **openssl**, you should use Command Prompt on Windows or a console on Linux. Avoid using PowerShell, as it can generate a different hash value.
+To generate a hash with **openssl**, use Command Prompt on Windows or a console on Linux. Use PowerShell with caution as it may generate a different hash value.
 
 </div>
 
@@ -75,7 +76,7 @@ For more examples of the openSSL commands, check out this [Mozilla](https://deve
 
 ### Create the configuration file
 
-Create a JSON configuration file and populate it with hashes and the server addresses. Use the following format:
+To create a JSON configuration file and populate it with hashes and the server addresses, use the following format:
 
     {
 
@@ -95,21 +96,21 @@ Create a JSON configuration file and populate it with hashes and the server addr
 
     }
 
-When creating the configuration file, keep the following in mind:
+When creating the JSON configuration file, verify your file adheres to the following requirements:
 
-* The JSON structure must be as provided in this document.
-* The file must have a .json extension, for example, pinning.json.
-* Insert the full hostname of your server.
-* No subdomains are allowed in the host.
-* Each host must have at least two hash keys.
-* Prefix the hashes with sha256/;
-* Only unique hash keys are allowed for iOS.
+* The JSON structure as provided above.
+* The file has a .json extension, for example, pinning.json.
+* Include the full hostname of your server.
+* Doesn't have any subdomains in the host.
+* Each host has at least two hash keys.
+* Hashes have the prefix `sha256/.`
+* For iOS, only unique hash keys are allowed.
   
 If you're using an OutSystems personal environment, use a dummy text for the second hash key, as there’s only one certificate and hash key available for this environment.
 
 <div class="warning" markdown="1">
 
-If you change the SSL Pinning resource file **pinning.json**, you need to run the app build creation manually. See: [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
+If you change the SSL Pinning resource file **pinning.json**, you need to manually run the app build creation. To learn more about when you must install a new build, see [Situations when the user must install a new build](../../../deliver-mobile/mobile-app-update-scenarios.md#required-new-build)
 
 </div>
 
@@ -125,43 +126,47 @@ In Service Studio, complete the following steps in the mobile app:
 
 1. Set the **Target Directory** property to pinning (no quotes).
 
-    ![Setting target directory to pinning](images/sslplugin-2-ss.png)
+    ![Screenshot of setting target directory to pinning](images/sslplugin-2-ss.png)
 
 ### Implement additional verification of the server certificate
 
 To add the SSL Pinning verification, you must install the [SSL Pinning Plugin](https://www.outsystems.com/forge/component-overview/1873/ssl-pinning-plugin) from Forge in your environment. 
 
-  ![Adding SSL verification](images/sslplugin-1-ss.png)
+  ![Screenshot of adding SSL verification](images/sslplugin-1-ss.png)
 
-In Service Studio, complete the following steps in the mobile app:
+In Service Studio, complete the following steps in your mobile app:
 
-1. Go to Manage Dependencies (Ctrl+Q) and add the reference to SSLPinningPlugin.
+1. Go to **Manage dependencies** (Ctrl+Q) and add the reference to SSLPinningPlugin.
 
-1. Drag the RequireSSLPinning block to one of your screens. SSL Pinning works for all HTTPS requests in the mobile app. The **Splash** screen is a good place to add the block.
+1. Drag the **RequireSSLPinning** block to one of your screens. SSL Pinning works for all HTTPS requests in the mobile app. 
+
+    You can add the block in the **Splash** screen.
 
 ### Check the hash validity
 
-Calls to server actions stop working if there's a hash mismatch. It's good practice to check for hash validity, and if there's a mismatch, tell the users they need to get the new version of the app. Use the client action **CheckCertificateForUrl** to check if a hash from the configuration list is valid or not. If the check doesn't pass, display a notification telling users to install a new version of the app.
+Calls to server actions stop working if there's a hash mismatch. It's a good practice to check for hash validity. If there's a mismatch, inform users that they must get the new version of the app. Use the client action **CheckCertificateForUrl** to check if a hash from the configuration list is valid or not. If the check doesn't pass, display a notification informing the users to install a new version of the app.
 
-By default, the **CheckCertificateForUrl** action evaluates the URL of the current environment. You can optionally enter a value for the URL parameter. 
+By default, the **CheckCertificateForUrl** action evaluates the current environment URL. Optionally, you can enter a value for the URL parameter. 
 
-The action returns the following 2 values:
+The action returns the following two values:
 
-* Success. Boolean. True if the connection to the server was successful.
+* Success: Boolean.
+  True if the connection to the server was successful.
 
-* Error. Error Structure. Optional, available if there's an error during the request to the server. The values are "SSLPinning found an issue with the configured certificate for the url!" (when there's a problem with the configured hash value) and "Message: SSLPinning found some problem with the request!" (a generic error that requires troubleshooting).
+* Error: Error_structure.
+  Optional, available if there's an error during the request to the server. The values are "SSLPinning found an issue with the configured certificate for the url!" (when there's a problem with the configured hash value) and "Message: SSLPinning found some problem with the request!" (a generic error that requires troubleshooting).
 
 ### Test the SSL Pinning
 
-To test the mobile app with SSL Pinning, complete the following steps:
+To test the mobile app with SSL Pinning, do the following:
 
-1. Publish and generate the new version of your mobile app with SSL Pinning.
+1. Publish and generate the new version of your Mobile app with SSL Pinning.
 
 1. Install and run the app on your smartphone. 
 
 1. Verify that the app works (it has the right certificate and hash keys).
 
-To see SSL Pinning reject a certificate, complete the following steps:
+To test that the SSL Pinning rejects a certificate, do the following:
 
 1. Edit the configuration file and tamper with the hashes, for example, change one character in each hash.
 
@@ -169,13 +174,13 @@ To see SSL Pinning reject a certificate, complete the following steps:
 
     * Remove the resource with the old configuration file.
 
-    * Add a resource with the new configuration file (don’t forget to set the properties).
+    * Add a resource with the new configuration file (remember to set the properties).
 
     * Publish and generate the new version.
 
 1. Install and run the new version on your smartphone.
 
-1. The mobile app won’t work because the SSL Pinning raises an error due to an invalid certificate.
+1. The Mobile app won’t work because the SSL Pinning displays an error due to an invalid certificate.
 
 ## SSL pinning for multiple servers
 
@@ -230,15 +235,11 @@ If you want your mobile app to perform SSL Pinning validations while connecting 
 
 ## Plan for the certificate renewal
 
-If you're planning to update your certificate soon, release a new version of the app with the JSON configuration that contains the hash values for both the current certificate and the new certificate. Do this before you update the certificate to give enough time for your users to update the app. This way, once you update the certificate, the app continues to work.
+If you're planning to update your certificate soon, release a new version of the app with the JSON configuration containing the hash values for both the current certificate and the new certificate. Do this before you update the certificate to give users enough time to update the app. This ensures that when you update the certificate, the app continues to work.
 
-## Limitations
+### Information about using a Blob object and an Android phone
 
-This section is about limitations of the plugin.
-
-### Blob object and Android
-
-When working with [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob), keep in mind the following:
+When working with [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob), remember the following:
 
 * Blob works with apps generated for Android 7 and later if you use SSL Pinning 6.0.0 and later. 
 * Blob doesn't work in the Android apps with SSL Pinning 5.1.1 and earlier.

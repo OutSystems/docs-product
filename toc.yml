@@ -231,6 +231,7 @@
                 - topics:
                     - href: develop/ui/patterns/mobile/navigation/bottombaritem.md
                     - href: develop/ui/patterns/mobile/navigation/breadcrumbs.md
+                    - href: develop/ui/patterns/mobile/navigation/overflowmenu.md
                     - href: develop/ui/patterns/mobile/navigation/pagination.md
                     - href: develop/ui/patterns/mobile/navigation/sectionindex.md
                     - href: develop/ui/patterns/mobile/navigation/submenu.md
@@ -767,6 +768,7 @@
             - topics:
                 - href: extensibility-and-integration/rest/consume-rest-apis/consume-multipart-form-data.md
                 - href: extensibility-and-integration/rest/consume-rest-apis/consume-rest-payload-examples.md
+            - href: extensibility-and-integration/rest/consume-rest-apis/rest-oauth2-authorization.md
             - href: extensibility-and-integration/rest/consume-rest-apis/refresh-rest-service.md
             - href: extensibility-and-integration/rest/consume-rest-apis/rest-api-structures.md
             - href: extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md
@@ -945,6 +947,7 @@
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-configure.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-azure.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-okta.md
+            - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-adfs.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-lifetime.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-general.md
             - href: managing-the-applications-lifecycle/manage-it-teams/external-idp/external-idp-authentication-provider.md
@@ -1054,7 +1057,6 @@
         - topics:
             - href: setup-maintain/setup/logging-db/configure-separate-db.md
             - href: setup-maintain/setup/logging-db/update-applications.md
-
         - href: setup-maintain/setup/unattended-install/intro.md
         - topics:
             - href: setup-maintain/setup/unattended-install/config-tool-ref.md
@@ -1120,6 +1122,7 @@
                     - href: ref/lang/auto/class-query-parameter.md
                     - href: ref/lang/auto/class-sql.md
                     - href: ref/data/handling-data/queries/supported-join-types.md
+                    - href: ref/data/handling-data/queries/handle-complicated-search-pages.md
                 - href: ref/lang/auto/class-resource.md
                 - href: ref/lang/auto/class-runtime-property.md
                 - href: ref/lang/auto/class-session-variable.md
@@ -1863,6 +1866,7 @@
         - href: ref/apis/emails-api.md
         - href: ref/apis/auto/enhancedwebreferences-api.final.md
         - href: ref/apis/auto/epa-taskbox-api.final.md
+        - href: ref/apis/firebase-cloud-api-v1-v2.md
         - href: ref/apis/auto/httprequesthandler-api.final.md
         - href: ref/apis/auto/includejavascript-api.final.md
         - href: ref/apis/javascript/intro.md

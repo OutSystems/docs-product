@@ -3,11 +3,12 @@ locale: en-us
 guid: cfc99287-9b0a-46d6-9daf-b62d281dcbef
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Log data reference
 
-This document lists the fields and descriptions of the database views associated with the platform log records. The views are built on top of the database tables.
+This document lists the fields and descriptions of the database views associated with the platform log records. The views are built on top of the database tables. 
 
 <div class="info" markdown="1">
 

@@ -4,6 +4,7 @@ locale: en-us
 guid: 671a69c4-3fe2-4a6a-9627-2eae9526aece
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Data Types at Runtime

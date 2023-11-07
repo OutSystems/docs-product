@@ -4,6 +4,7 @@ locale: en-us
 guid: edfd47cf-ac05-450b-8823-ebc389345dc8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Session Tab

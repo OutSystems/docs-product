@@ -5,6 +5,7 @@ locale: en-us
 guid: BA3C3E2A-BFD3-454E-B527-00AAE44DEA8F
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2411:4149
 ---
 
 # Area Chart

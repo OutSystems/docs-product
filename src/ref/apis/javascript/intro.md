@@ -5,6 +5,7 @@ guid: f676f015-823b-4e39-8a35-23ec3973bbde
 locale: en-us
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # JavaScript API

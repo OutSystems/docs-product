@@ -5,6 +5,7 @@ locale: en-us
 guid: 0e09d502-6d81-4bdb-a2fa-1194ce483098
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # PerformanceMonitoring API

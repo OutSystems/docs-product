@@ -5,6 +5,7 @@ locale: en-us
 guid: 7115204b-9a1e-42f8-87f8-d1d771608667
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:478
 ---
 # Create Column and Bar Charts
 

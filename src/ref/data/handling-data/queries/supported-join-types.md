@@ -4,6 +4,7 @@ locale: en-us
 guid: d2ac8884-a37b-423d-9655-b235291485cd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=843:1507
 ---
 
 # Supported Join Types

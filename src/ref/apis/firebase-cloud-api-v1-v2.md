@@ -4,8 +4,8 @@ tags: article-page; runtime-mobile; support-application_development; support-Mob
 locale: en-us
 guid: 612389e2-3fb0-455c-8506-eebc7627615b
 app_type: mobile apps
-figma:
 platform-version: o11
+figma:
 ---
 
 # Cloud Messaging Configurator APIs

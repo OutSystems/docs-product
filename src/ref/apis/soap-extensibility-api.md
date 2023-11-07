@@ -5,6 +5,7 @@ locale: en-us
 guid: a0a29cc4-04dd-4d02-9a65-6a6f9474b45c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # SOAP Extensibility API

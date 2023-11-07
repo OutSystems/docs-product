@@ -5,6 +5,7 @@ locale: en-us
 guid: CA58D796-3D68-4221-8DD8-33049ACEA9E5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Charts API v2

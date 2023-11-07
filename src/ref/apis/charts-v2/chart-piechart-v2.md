@@ -5,6 +5,7 @@ locale: en-us
 guid: 58AC97D9-F40C-4B66-825B-4E0D3F6CD41E
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2526:4533
 ---
 
 # Pie Chart

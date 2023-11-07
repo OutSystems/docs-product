@@ -5,6 +5,7 @@ locale: en-us
 guid: 49b8897e-c856-4b34-b330-7e8337885450
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # LifeTime Services API

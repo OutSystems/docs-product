@@ -5,6 +5,7 @@ locale: en-us
 guid: 7fbaa379-bf8c-43e8-8352-f320768a330d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Input Parameter - REST Authentication

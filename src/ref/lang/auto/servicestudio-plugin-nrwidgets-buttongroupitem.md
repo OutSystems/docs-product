@@ -7,6 +7,7 @@ locale: en-us
 guid: a8b45f04-a2a6-459a-817a-308e933b9d71
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:339
 ---
 
 # Button Group Item

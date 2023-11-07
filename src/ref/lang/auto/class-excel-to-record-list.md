@@ -6,6 +6,7 @@ locale: en-us
 guid: 65e7dfbe-2def-4858-85fb-adaf71d7c774
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1477
 ---
 
 # Excel To Record List

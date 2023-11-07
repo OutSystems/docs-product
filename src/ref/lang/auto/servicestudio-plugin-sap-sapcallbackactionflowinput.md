@@ -5,6 +5,7 @@ locale: en-us
 guid: 03cdc256-d569-4d64-b280-eea6b54e24bb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Input Parameter - SAP Callback

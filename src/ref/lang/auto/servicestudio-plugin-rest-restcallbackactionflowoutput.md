@@ -5,6 +5,7 @@ locale: en-us
 guid: 9eaec8da-b414-45eb-b2cb-f41c10fa3241
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Output Parameter - REST API Callback

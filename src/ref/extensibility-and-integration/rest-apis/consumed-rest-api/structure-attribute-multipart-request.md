@@ -6,6 +6,7 @@ guid: DE3E8594-E1DF-416D-969A-91C522B637B8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 helpids: 30452
+figma:
 ---
 
 # Structure Attribute - REST API Multipart Request

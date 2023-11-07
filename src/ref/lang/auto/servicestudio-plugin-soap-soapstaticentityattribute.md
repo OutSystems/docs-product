@@ -5,6 +5,7 @@ locale: en-us
 guid: 0c7eda5f-bb0f-4514-9add-a0fcd23b364e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Static Entity Attribute - Consumed SOAP

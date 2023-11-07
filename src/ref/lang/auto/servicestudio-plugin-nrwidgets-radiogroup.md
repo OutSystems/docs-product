@@ -7,6 +7,7 @@ locale: en-us
 guid: 2f9bd54c-d963-4b3a-8bab-5f6d47dcd0b2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Radio Group

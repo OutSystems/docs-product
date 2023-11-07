@@ -5,6 +5,7 @@ locale: en-us
 guid: 5bbf3ba9-4d58-4cb3-9a6e-3634d2e01c31
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1469:2187
 ---
 
 # Query Parameter

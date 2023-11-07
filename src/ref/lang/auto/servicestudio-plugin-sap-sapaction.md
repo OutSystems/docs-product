@@ -5,6 +5,7 @@ locale: en-us
 guid: 602fe7e6-6a83-449a-8d9f-4dff8831755b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # SAP Remote Function

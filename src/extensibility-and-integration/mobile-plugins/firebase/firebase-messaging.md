@@ -95,6 +95,12 @@ To set up a back-end notification service, do the following:
 
     ![Screenshot of the Base URL](images/firebase-messaging-base-url-ss.png)
 
+    <div class="info" markdown="1">
+
+    OutSystems offers two versions for Cloud Messaging Configurator REST APIs based on the features you want to use. See the [reference page](../../../ref/apis/firebase-cloud-api-v1-v2.md) to learn more about the versions.
+
+    </div>
+
 1. Then use the AppId and Key you defined in step 3 to authenticate your REST calls. In the consumed REST API properties, add the following **HTTP headers**:
 
     * `X-Send-AppId` = `<your-appid>`, replacing `<your-appid>` with the **AppId** defined in step 3.
@@ -151,6 +157,12 @@ Finally, you might want to give the opportunity to your user to clear all app's 
 
 To enhance your notification with custom actions you must use the **v2 REST API**, using the **ActionList** parameter inside the Notification parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** REST API methods.
 
+<div class="info" markdown="1">
+
+OutSystems offers two versions for Cloud Messaging Configurator REST APIs based on the features you want to use. See the [reference page](../../../ref/apis/firebase-cloud-api-v1-v2.md) to learn more about the versions.
+
+</div>
+
 We have 3 types of custom actions:
 
 1. **Internal route** - Sends an event to be handled by the app, similar to a basic notification click.
@@ -176,7 +188,9 @@ It is important to note the following requirements for custom sounds:
 
 <div class="info" markdown="1">
 
-Check [our documentation](https://success.outsystems.com/documentation/11/developing_an_application/use_data/use_resources/) to learn more about how to use resources.
+* Check [our documentation](https://success.outsystems.com/documentation/11/developing_an_application/use_data/use_resources/) to learn more about how to use resources.
+
+* OutSystems offers two versions for Cloud Messaging Configurator REST APIs based on the features you want to use. See the [reference page](../../../ref/apis/firebase-cloud-api-v1-v2.md) to learn more about the versions.
 
 </div>
 

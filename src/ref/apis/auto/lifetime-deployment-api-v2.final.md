@@ -578,10 +578,15 @@ You can download the Swagger file for the LifeTime API v2 in the download page o
 
 ![download LifeTime](images/lifetime-api-downloads.png)
 
+
 ## Summary {#swagger--summary-tags}
 
+The LifeTime API is hosted within your LifeTime environment, and its base URL corresponds to your LifeTime domain. For instance, if your LifeTime address is 'example-lt.outsystemsenteprise.com/lifetime,' then the LifeTime API base URL is 'example-lt.outsystemsenteprise.com/lifetimeapi/rest/v2'.
+
+You can also find and test [LifeTime API v2 in Postman](https://www.postman.com/outsystems-official). 
+
 Base URL
-:    `/lifetimeapi/rest/v2`
+:    `<environment-lifetimelurl>/lifetimeapi/rest/v2`
 
 Version
 :    v2

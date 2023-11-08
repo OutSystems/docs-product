@@ -5,6 +5,7 @@ locale: en-us
 guid: 1c3ead1f-e810-47d0-993a-743656d4d4f1
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:410
 ---
 
 # Card Background Reference

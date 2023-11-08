@@ -5,6 +5,7 @@ locale: en-us
 guid: 3c86ec87-d4c6-441b-adf1-bdb30f056a62
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A549&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Range Slider Interval Reference

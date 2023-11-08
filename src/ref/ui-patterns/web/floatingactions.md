@@ -5,6 +5,7 @@ locale: en-us
 guid: ada89c16-a9f3-45b5-b488-1dec777600c5
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A478&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Floating Actions Reference

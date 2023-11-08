@@ -5,6 +5,7 @@ locale: en-us
 guid: 4cbd7c42-2fd9-4e84-b9c0-091534b608b7
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Swipe Events Reference

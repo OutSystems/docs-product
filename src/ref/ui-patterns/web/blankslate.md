@@ -5,6 +5,7 @@ locale: en-us
 guid: 57108c14-9fcd-46a6-9604-489d54277361
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A391&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Blank Slate Reference

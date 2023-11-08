@@ -5,6 +5,7 @@ locale: en-us
 guid: 478229ef-fead-4fea-be67-f0fdd66c7209
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:466
 ---
 
 # Flip Content Reference

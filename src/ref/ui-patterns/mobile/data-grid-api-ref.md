@@ -5,6 +5,7 @@ locale: en-us
 guid: 1bd5d5c4-98f6-4b5f-a463-865bfccb7339
 app_type: reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Data Grid Reactive APIs

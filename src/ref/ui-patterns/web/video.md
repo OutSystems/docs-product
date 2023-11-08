@@ -5,6 +5,7 @@ locale: en-us
 guid: cd532674-6556-4684-bdd5-fcff4e6c422e
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:625
 ---
 
 # Video Reference

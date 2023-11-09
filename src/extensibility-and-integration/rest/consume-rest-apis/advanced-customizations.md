@@ -40,11 +40,11 @@ Do the following:
 
     * **On Before Request** property: set to `New OnBeforeRequest (Advanced)` to create a "OnBeforeRequestAdvanced" callback under the REST API tree element. Use it to customize the request before it is sent.
 
-        ![Create a OnBeforeRequest](images/rest-new-onbeforerequest-ss.png)
+        ![Create a OnBeforeRequest](images/rest-new-onbeforerequest-advanced-ss.png)
 
     * **On After Response** property: set to `New OnAfterResponse (Advanced)` to create a "OnAfterResponseAdvanced" callback under the REST API tree element. Use it to customize the response after it has arrived.
 
-        ![reate a OnAfterResponse](images/rest-new-onafterresponse-ss.png)
+        ![reate a OnAfterResponse](images/rest-new-onafterresponse-advanced-ss.png)
 
     After setting the value, you will have an action named "OnBeforeRequestAdvanced" or "OnAfterResponseAdvanced" under the REST API.
 

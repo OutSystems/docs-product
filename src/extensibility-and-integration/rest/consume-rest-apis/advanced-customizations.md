@@ -53,3 +53,4 @@ Do the following:
 1. Use the referenced extension actions in the action flow to customize the request or response.
 
     ![Customize the request or response](images/rest-use-extension-action-ss.png)
+    

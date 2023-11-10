@@ -19,7 +19,7 @@ Closing [Wait](<../../../ref/lang/auto/class-wait.md>) activities demands advanc
 
 * **ActivityId**: id of the activity instance. (Type: Activity Identifier; Mandatory)
 
-* **Wait Input Parameters**: one parameter for each input parameter in the Wait activity definition.
+* **Wait Output Parameters**: one input parameter for each output parameter in the Wait activity definition, if any.
 
 <div class="warning" markdown="1">
 

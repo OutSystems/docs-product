@@ -5,6 +5,7 @@ guid: 46c46161-b83a-491d-89a2-0bff10c4e5f6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:911
 ---
 
 # Use Case Management framework

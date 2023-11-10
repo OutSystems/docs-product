@@ -5,6 +5,7 @@ guid: b0e9d928-403a-4d65-b5bc-c945f78b8436
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:912
 ---
 
 # How to set up the users governance model

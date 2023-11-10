@@ -5,6 +5,7 @@ guid: a2fd36f7-6635-4e07-a09e-a46b2e64987b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # How to grant or revoke access to a case instance

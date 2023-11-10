@@ -4,6 +4,7 @@ summary: The list of web patterns for web UI development.
 locale: en-us
 guid: 9439a883-2009-4f3f-b253-1c84a2e3407f
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Using Traditional Web Patterns

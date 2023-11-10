@@ -4,6 +4,8 @@ summary: Advanced use cases for the Range Slider Interval UI Pattern
 locale: en-us
 guid: 0a4c0ebb-4ee1-4443-9ab8-971329ca1541
 app_type: mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=612%3A381&mode=design&t=xOFe93sVU3cU3chE-1
 ---
 
 # Range Slider Interval Reference

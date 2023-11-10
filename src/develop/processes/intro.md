@@ -4,6 +4,7 @@ tags: support-webapps-featured
 locale: en-us
 guid: ce023611-1cbc-4c61-a778-2a66167bc7ba
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use Processes - BPT

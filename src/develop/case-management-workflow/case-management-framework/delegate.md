@@ -4,6 +4,7 @@ summary: Learn about delegating cases and activities using the Case Management f
 guid: 29292c65-0d1c-489c-b7f8-622d282dc021
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # Delegate activities
 

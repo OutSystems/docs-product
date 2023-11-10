@@ -4,6 +4,7 @@ summary: Learn more about the issues that can occur while publishin an Experienc
 locale: en-us
 guid: bc1675fa-8742-45a2-bf28-5f5eafd826c0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Experience Builder blockers and warnings

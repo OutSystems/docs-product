@@ -3,6 +3,8 @@ tags: runtime-mobileandreactiveweb; article-page
 locale: en-us
 guid: 191c6d17-5089-4d2e-9848-19e81f69476a
 app_type: mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A38&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
 # Extend Your Mobile and Reactive Apps Using JavaScript

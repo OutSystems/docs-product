@@ -3,6 +3,7 @@ tags: runtime-mobile; support-application_development; support-Application_Troub
 locale: en-us
 guid: ed285ef6-c4cc-4d6b-925a-fddb12c4205d
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Offline Data Sync Patterns

@@ -4,6 +4,7 @@ tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 4ceecc67-9976-48c7-bcdb-fa895a141d81
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Get Distinct Values from the Database

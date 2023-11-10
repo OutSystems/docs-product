@@ -1,0 +1,16 @@
+name: 'markdown-figma-download'
+
+runs:
+  using: "composite"
+  steps:
+  - name: Download markdown-figma
+    run: |
+      if [ ! -f "markdown-figma" ]
+      then
+      wget --no-verbose https://github.com/MiguelDomingues/markdown-figma/releases/download/v0.9.0/markdown-figma-linux -O ./markdown-figma
+      fi
+    shell: bash
+
+  - name: Set figma-export permissions
+    run: chmod +x ./markdown-figma
+    shell: bash

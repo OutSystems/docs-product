@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: efe8b43b-19cd-460b-951a-d6af460a1474
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Using your data in the UI

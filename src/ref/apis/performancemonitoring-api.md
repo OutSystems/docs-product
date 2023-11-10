@@ -4,6 +4,8 @@ tags: support-devOps; support-monitoring
 locale: en-us
 guid: 0e09d502-6d81-4bdb-a2fa-1194ce483098
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # PerformanceMonitoring API
@@ -34,7 +36,7 @@ Returns a list of request events, filtered by event names and time interval you 
 
 Authentication can be basic authentication that provides the credentials of a LifeTime user or it can be authentication that uses service account tokens as [described in LifeTime API documentation](lifetime-deployment/rest-api-authentication.md). 
 
-The API only returns request events for the applications for which the user has *Reuse & Monitor* permissions in the environment. Learn more about how to [configure security for an infrastructure](../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
+The API only returns request events for the applications for which the user has *Open and Debug Applications* permissions in the environment. Learn more about how to [configure security for an infrastructure](../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
 
 To use it in an application, make sure that [monitoring is turned on](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment and also for the application module. Otherwise, the API responds with a status code of '200 - OK' but doesn't retrieve any events.
 

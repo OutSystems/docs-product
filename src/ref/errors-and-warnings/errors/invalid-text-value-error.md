@@ -2,6 +2,8 @@
 locale: en-us
 guid: cfa237a8-7738-48a4-8561-bacf28c6e379
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Invalid Text Value Error

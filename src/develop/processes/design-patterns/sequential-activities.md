@@ -2,6 +2,7 @@
 locale: en-us
 guid: 8545c13f-4722-4075-954a-8790ebc8e683
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Designing Sequential Activities

@@ -4,6 +4,7 @@ tags: support-application_development
 locale: en-us
 guid: e664c563-cb0f-491c-bd05-8f1684d4a5a3
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Translate your app
@@ -106,7 +107,7 @@ Use the [translation editor](translation-editor.md) to edit existing translation
 
 ## Getting the identifier of the current language
 
-You can get information about the current language with the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction.Environment.final.md#GetCurrentLocale>).
+You can get information about the current language with the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction-environment.md#GetCurrentLocale>).
 
 ![GetCurrentLocale function in the expression editor](images/get-current-locale-language-ss.png)
 

@@ -4,6 +4,8 @@ summary: Learn how to use a forward proxy while connecting from the AI Mentor St
 locale: en-us
 guid: 06af3d66-f6c3-4827-aa17-36b1124f321b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=929%3A747&mode=design&t=rzWSTBJIapfhmERp-1
 ---
 
 # How to use a proxy to connect to AI Mentor Studio

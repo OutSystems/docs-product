@@ -4,11 +4,13 @@ tags:
 locale: en-us
 guid: 01af56ec-fb0d-44ea-a78f-8323557ee6bf
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=409:15
 ---
 
 # Reply with cards
 
-Cards are UI elements that usually have images, buttons, and links to download attachments. They provide a richer experience than the plain text in chatbot conversations. The data structures in OutSystems OutSystems.AI Chatbot component follow the required structure of the Azure Bot Framework cards.
+Cards are UI elements that usually have images, buttons, and links to download attachments. They provide a richer experience than the text/plain in chatbot conversations. The data structures in OutSystems OutSystems.AI Chatbot component follow the required structure of the Azure Bot Framework cards.
 
 <div class="info" markdown="1">
 

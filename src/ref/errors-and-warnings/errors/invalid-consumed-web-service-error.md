@@ -2,6 +2,8 @@
 locale: en-us
 guid: 36e85bdb-7275-41cf-85eb-6a25b9b89e97
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Invalid Consumed Web Service Error

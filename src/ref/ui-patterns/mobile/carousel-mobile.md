@@ -4,6 +4,8 @@ summary: Advanced use cases for the Carousel UI Pattern.
 locale: en-us
 guid: fe0f0d5b-bd63-4ddd-a18c-16d9df1e200f
 app_type: mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:394
 ---
 
 # Carousel Reference
@@ -18,8 +20,8 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 |Event|Output|Description|
 |---|---|---|  
-|OnSlideMoved: Optional|ItemIndex (Integer)|Event triggered when the Carousel is initialized.| 
-|Initialized: Optional|WidgetId (Text)|Event triggered when the carousel slide moves.| 
+|OnSlideMoved: Optional|ItemIndex (Integer)|Event triggered when the carousel slide moves.| 
+|Initialized: Optional|WidgetId (Text)|Event triggered when the Carousel is initialized.| 
 
 ## Structure
 

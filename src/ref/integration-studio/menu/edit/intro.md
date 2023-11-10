@@ -3,6 +3,8 @@ summary: Reference for the Edit menu.
 locale: en-us
 guid: 9b0eabe2-5eb5-4e6b-bb17-b77edc2bb68f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 # Edit Menu
 

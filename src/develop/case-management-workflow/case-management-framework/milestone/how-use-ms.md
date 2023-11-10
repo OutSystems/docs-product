@@ -4,6 +4,7 @@ summary: Learn how to use milestone instances in your case management app.
 guid: 34bb2be4-ccf7-4cff-81ee-b517dc31f5d0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to use milestones

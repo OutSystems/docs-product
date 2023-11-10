@@ -3,6 +3,7 @@ summary: Integrate other developers' changes into your module by using the merge
 locale: en-us
 guid: 1c3fca8d-f369-4aaa-b647-dcc9db705eb1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Merge the Work

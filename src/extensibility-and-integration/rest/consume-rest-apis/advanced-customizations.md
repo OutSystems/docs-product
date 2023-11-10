@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: 79eee8b9-b6ae-43e0-8127-9d6004f24ec4
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A89&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
 # Advanced Customizations
@@ -38,11 +40,11 @@ Do the following:
 
     * **On Before Request** property: set to `New OnBeforeRequest (Advanced)` to create a "OnBeforeRequestAdvanced" callback under the REST API tree element. Use it to customize the request before it is sent.
 
-        ![Create a OnBeforeRequest](images/rest-new-onbeforerequest-ss.png)
+        ![Create a OnBeforeRequest](images/rest-new-onbeforerequest-advanced-ss.png)
 
     * **On After Response** property: set to `New OnAfterResponse (Advanced)` to create a "OnAfterResponseAdvanced" callback under the REST API tree element. Use it to customize the response after it has arrived.
 
-        ![reate a OnAfterResponse](images/rest-new-onafterresponse-ss.png)
+        ![reate a OnAfterResponse](images/rest-new-onafterresponse-advanced-ss.png)
 
     After setting the value, you will have an action named "OnBeforeRequestAdvanced" or "OnAfterResponseAdvanced" under the REST API.
 
@@ -51,3 +53,4 @@ Do the following:
 1. Use the referenced extension actions in the action flow to customize the request or response.
 
     ![Customize the request or response](images/rest-use-extension-action-ss.png)
+    

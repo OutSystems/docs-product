@@ -4,6 +4,8 @@ tags: runtime-mobile; support-Front_end_Development-featured
 locale: en-us
 guid: 3a9110d2-7128-413c-a6a4-3b2deed94d87
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:224
 ---
 
 # Customize the Application Status Bar

@@ -3,6 +3,7 @@ summary: Learn how to use Timers to execute asynchronous logic.
 locale: en-us
 guid: 7b104f5a-3077-4eab-9dd0-90c28ade4b67
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use Timers

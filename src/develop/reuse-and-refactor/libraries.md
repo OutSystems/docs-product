@@ -4,6 +4,7 @@ tags: runtime-mobileandreactiveweb
 locale: en-us
 guid: cc983a8d-46d2-4fad-b6f3-eaf1148dba44
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Libraries

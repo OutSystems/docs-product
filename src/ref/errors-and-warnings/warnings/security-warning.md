@@ -2,6 +2,8 @@
 locale: en-us
 guid: 2dd8aae1-92e8-4901-a1d4-95e98c968ae7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=846%3A1646&mode=design&t=Ix2yojgoXorQvo4C-1
 ---
 
 # Security Warning

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 5a4706ab-9f44-405a-a6fc-758b86c29d30
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Validate the fields of a form

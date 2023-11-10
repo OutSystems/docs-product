@@ -4,6 +4,7 @@ tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 108f5fa9-feae-4eb4-805e-7c49be5b1e98
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Entity relationships

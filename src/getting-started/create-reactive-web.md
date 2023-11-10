@@ -4,6 +4,8 @@ tags: runtime-reactiveweb;
 locale: en-us
 guid: 795332a5-e1f3-40c0-886d-75b7bddf48af
 app_type: reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=67:2
 ---
 
 # Create Your First Reactive Web App
@@ -158,7 +160,7 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
 1. Right-click the **TaskCreateOrUpdate** action and select **Add Output Parameter**. Set its name to **TaskId**.
 
 
-1. In the Output Parameter properties, set the Data Type to **Task Identifier**. This will be the task ID returned by the **CreateOrUpdateTask** that we'll need to pass on to the **SaveOnClick** action.
+1. In the Output Parameter properties, set the Data Type to **Task Identifier**. 
 
     ![Set data type](images/output-data-type-ss.png)
 
@@ -175,6 +177,8 @@ Creating a Screen to edit the records is as fast as creating a Table. Follow the
     ![Drag Assign node](images/drag-assign-set-variable-ss.png)
 
 1. In the **Interface** tab, double-click the **SaveOnClick** action.
+
+     ![Select SaveOnClick client action](images/save-on-click-ss.png)
 
 1. Navigate to the **Logic** tab and drag the **TaskCreateOrUpdate** server action to the **True** branch of the **If** (1). Set the **Task** property to `GetTaskById.List.Current.task` (2).
 

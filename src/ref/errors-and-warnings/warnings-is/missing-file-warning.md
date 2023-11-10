@@ -2,6 +2,8 @@
 locale: en-us
 guid: 7b6384db-c1de-4732-a61f-e6afe49c9e3d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Missing File Warning

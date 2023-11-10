@@ -4,6 +4,7 @@ tags: support-application_development; support-Front_end_Development; support-Fr
 locale: en-us
 guid: 5a669286-c41f-49c6-afe6-00a911f5f162
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Application Templates

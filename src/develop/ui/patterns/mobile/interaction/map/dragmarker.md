@@ -4,6 +4,7 @@ summary: How to change the location of a map marker on the Map component.
 locale: en-us
 guid: b7dce067-3d75-4c88-8a92-9de144f97896
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to get draggable marker coordinates  

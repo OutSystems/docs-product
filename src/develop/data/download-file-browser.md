@@ -4,6 +4,7 @@ tags: support-application_development; runtime-traditionalwebandreactiveweb;
 locale: en-us
 guid: c434b127-7855-4ec0-9c5d-e484eff41e63
 app_type: traditional web apps, reactive web apps
+platform-version: o11
 ---
 
 # Download a file through browser

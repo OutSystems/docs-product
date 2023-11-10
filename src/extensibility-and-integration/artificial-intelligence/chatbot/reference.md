@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: 1368591d-1ec5-40e1-b9a1-60064fa6726b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A17&mode=design&t=FkbdYRavup74pIRn-1
 ---
 
 # Reference

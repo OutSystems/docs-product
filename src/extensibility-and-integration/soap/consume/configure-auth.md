@@ -4,6 +4,8 @@ tags: support-Integrations_Extensions
 locale: en-us
 guid: 5ea726ad-7fb5-476b-ac3a-7c808b0692ef
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A12&mode=design&t=8a1ub9syb4QKHbuk-1
 ---
 
 # Configure Web Service Authentication

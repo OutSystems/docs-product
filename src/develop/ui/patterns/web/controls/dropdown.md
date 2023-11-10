@@ -4,6 +4,7 @@ summary: Dropdown allows end users to make a choice from several options.
 locale: en-us
 guid: b4792689-6d10-4819-9a92-609ddbbd0365
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Dropdown
@@ -34,7 +35,7 @@ In this example, we create a dropdown containing a list of employee names from a
 
     ![](<images/dropdown-2-ss.png?width=800>)
 
-1. On the **Properties** tab, in the enter a name for the Dropdown widget.
+1. On the **Properties** tab, enter a name for the Dropdown widget.
 
     In this example, we enter `EmployeeDropdown`.
 
@@ -116,6 +117,6 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-| Property                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Property | Description |
+|---|---|
 | ExtendedClass (Text): Optional | Adds custom style classes to the Pattern. You define your [custom style classes](../../../look-feel/css.md) in your application using CSS.<br/><br/>Examples<br/><br/><ul><li>Blank - No custom styles are added (default value).</li><li>"myclass" - Adds the ``myclass`` style to the UI styles being applied.</li><li>"myclass1 myclass2" - Adds the ``myclass1`` and ``myclass2`` styles to the UI styles being applied.</li></ul>You can also use the classes available on the OutSystems UI. For more information, see the [OutSystems UI Cheat Sheet](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet). |

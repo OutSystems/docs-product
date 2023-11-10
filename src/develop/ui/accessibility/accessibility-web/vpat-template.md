@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: c61481b5-bfd8-4d06-9024-e3185659b455
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # VPAT - Voluntary Product Accessibility Template

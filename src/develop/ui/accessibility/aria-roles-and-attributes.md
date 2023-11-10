@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: e4cd9450-4fe2-4145-8f1b-0852ab8c081d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Accessible Rich Internet Applications roles and attributes

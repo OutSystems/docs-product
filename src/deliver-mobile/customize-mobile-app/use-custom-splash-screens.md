@@ -4,6 +4,8 @@ tags: runtime-mobile; support-Front_end_Development-featured
 locale: en-us
 guid: f8dfa815-8c3e-4906-9378-e9d91ad6b4a4
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:220
 ---
 
 # Use Custom Splash Screens
@@ -31,17 +33,17 @@ To use a custom image as the native splash screen of your app:
 
 1. In the Data tab of the main Module of your app, right-click the Resources folder and import the ZIP file as a Resource. 
 
-    ![](images/splash-02.png)
+    ![](images/res-folder-ss.png)
 
     Leave the `Deploy Action` property as `Do Nothing`.
 
 1. In the properties of the app module add the [Splash Screens JSON template](#splash-screens-json-templates) to the **Extensibility Configurations** property:
 
-    ![](images/splash-03.png)
+    ![](images/splash-screens-ss.png)
 
 1. In the JSON template that you added to the **Extensibility Configurations** property, replace `<path_to_resources_file>` with the name of the ZIP file and replace each one of the `<path_to_splash_screen_image>.png` with the corresponding splash screen PNG image location inside the ZIP file. After this step, you should get a JSON similar to the following:
 
-    ![](images/splash-00.png?width=700)
+    ![](images/extensibility-splashsreens-ss.png)
 
     <div class="warning" markdown="1">
     
@@ -51,7 +53,7 @@ To use a custom image as the native splash screen of your app:
 
 1. To make this change available to users, [publish and generate a new mobile application package](<../generate-distribute-mobile-app/intro.md>) and distribute it. 
 
-    ![](images/image02.png)
+    ![](images/generate-mobile-app-ss.png)
 
 ## Devices screen sizes and densities { #devices-screen-sizes-and-densities }
 

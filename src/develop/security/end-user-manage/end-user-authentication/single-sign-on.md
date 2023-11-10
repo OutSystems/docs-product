@@ -4,11 +4,14 @@ tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: a15c9cd8-b90c-4c9a-aed5-9cfffd0e1b04
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Single Sign-On
 
-OutSystems provides single sign-on capabilities by default: after authenticating in one of the applications, the end users can access all other applications without having to provide the credentials. Single Sign-On is supported only on modules that are enabled to use cookies.
+By default, OutSystems provides single sign-on capabilities for apps that have cookies enabled. After users are authenticated in one application, they can access all other applications without having to log in again. 
+
+**Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/).
 
 ## Using Single Sign-On
 

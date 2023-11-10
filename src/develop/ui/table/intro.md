@@ -4,6 +4,7 @@ tags: runtime-reactiveweb;
 locale: en-us
 guid: 4fbaf92c-a4a3-4acd-9453-c8502ee36d8f
 app_type: reactive web apps
+platform-version: o11
 ---
 
 # Creating and editing tables

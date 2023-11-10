@@ -4,6 +4,7 @@ summary: Check the answers to the frequently asked questions about Experience Bu
 locale: en-us
 guid: cd113946-442f-4263-b30e-40a48caba5a1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Experience Builder FAQ

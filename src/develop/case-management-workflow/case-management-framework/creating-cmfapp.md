@@ -4,6 +4,7 @@ summary: Follow this guide to begin developing a case management app using the C
 guid: 00c3322e-e53f-480d-977a-005b69f94549
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Creating a case management app with App Starter

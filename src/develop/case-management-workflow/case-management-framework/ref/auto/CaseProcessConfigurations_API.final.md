@@ -2,6 +2,7 @@
 guid: 576b9623-c10e-489c-b7de-22e36fcf92db
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Case Process Configurations API

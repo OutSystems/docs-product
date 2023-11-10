@@ -4,6 +4,8 @@ tags: runtime-mobile
 locale: en-us
 guid: 0b12a757-5043-40ae-ac5f-4f009d2d5c5c
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:230
 ---
 
 # Configure Accessible Domains for Your Mobile App
@@ -20,7 +22,7 @@ To define the list of accessible domains for your mobile app do the following:
 
 1. In Service Studio, select the module element (root item in the module tree), next in the properties editor, double-click on Extensibility Configurations. This opens the property editor window: 
 
-    ![](images/ss_extensibility_in_module_properties.png)
+    ![](images/extensibility-configurations-ss.png)
 
 1. Add new entries following the [JSON template](<#accessible-domains-json-template>) to configure the allowed domains and sub-domains for your mobile app. If you have already defined extensibility configurations previously, make any necessary adjustments. Each entry must have at least an `origin` field containing the allowed URL schema and the allowed domain or sub-domains, you can use wildcards.
 

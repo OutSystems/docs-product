@@ -2,6 +2,8 @@
 locale: en-us
 guid: 2f28086f-7a1a-4330-88d0-061e601593b9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:59
 ---
 
 # Salesforce integration

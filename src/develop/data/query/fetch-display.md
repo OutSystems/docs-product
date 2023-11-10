@@ -1,9 +1,10 @@
 ---
 summary: Fetching data from the database using Aggregates.
-tags: support-application_development; support-Database;
+tags:
 locale: en-us
 guid: c1c2a735-0768-4e33-8e42-73329e7944ae
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Fetch and display data from the database in OutSystems
@@ -22,7 +23,7 @@ Here is how you can fetch data in your app by using an Aggregate. Aggregates are
 
 <div class="info" markdown="1">
 
-This is an example of getting data with an Aggregate to a Screen. Both Aggregate and Screen run in the **client**. For more information about creating Aggregates in the **server** logic, see [Server-side Aggregates](../../../ref/lang/auto/Class.Aggregate.final.md#server-side-aggregates).
+This is an example of getting data with an Aggregate to a Screen. Both Aggregate and Screen run in the **client**. For more information about creating Aggregates in the **server** logic, see [Server-side Aggregates](../../../ref/lang/auto/class-aggregate.md#server-side-aggregates).
 
 </div>
 
@@ -91,6 +92,3 @@ Once you fetch data from the database, use one of many OutSystems widgets to sho
 
     ![App running in the browser](images/fetch-data-browser.png)
 
-## Traditional Web App
-
-For more information on how to add an Aggregate in Traditional Web App, see [Aggregates in Traditional Web Apps](../../../ref/lang/auto/Class.Aggregate.final.md#traditional-web-apps).

@@ -3,6 +3,8 @@ summary: Integration Studio allows you to develop extensions in advanced integra
 locale: en-us
 guid: ab847837-20ab-4643-8541-63482f518aac
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A54&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
 # Extend Logic with Your Own Code

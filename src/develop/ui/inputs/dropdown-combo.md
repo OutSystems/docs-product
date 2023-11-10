@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: bc593b2b-0d5d-45ea-9f3d-4fb99df6dedb
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Choose One Value from a List

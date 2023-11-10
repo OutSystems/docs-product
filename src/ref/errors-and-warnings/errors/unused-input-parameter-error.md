@@ -2,6 +2,8 @@
 locale: en-us
 guid: d8e4aae9-26ab-4de7-af48-5bd5e2fd9962
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Unused Input Parameter Error

@@ -2,6 +2,7 @@
 locale: en-us
 guid: 64eb9856-d396-4d2b-8df4-a0b23f520787
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Impact of Moving Activities in Process Flows
@@ -26,7 +27,7 @@ In case the process instance is suspended it has to be analyzed in Service Cente
 
 ## Process Instance is Executing After the Moved Activity (Case 2)
 
-In this case the execution of the process instance has already executed the moved activity in a [Conditional Start](<../../../ref/lang/auto/Class.Conditional Start.final.md>) and it is going to execute it again: **the execution is suspended**.
+In this case the execution of the process instance has already executed the moved activity in a [Conditional Start](<../../../ref/lang/auto/class-conditional-start.md>) and it is going to execute it again: **the execution is suspended**.
 
 In case the process instance is suspended it has to be analyzed in Service Center to decide whether it can continue or should be stopped.
 

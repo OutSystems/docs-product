@@ -4,6 +4,7 @@ tags: support-application_development;
 locale: en-us
 guid: 9ca5abbb-ff2d-4aaf-9437-a6565e9df8f6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Code Mentor - Logic suggestions
@@ -22,8 +23,7 @@ logic](images/ai-flow-service-studio-ss.gif)
 
 <div class="info" markdown="1">
 
-**Guided Example:** Check how you can [implement logic for a Client Action
-using Code Mentor](ai-create-action.md).
+**Guided Example:** Check how you can [implement logic for a Client Action using Code Mentor](ai-create-action.md).
 
 </div>
 
@@ -33,11 +33,7 @@ These are the requirements for using Code Mentor feature:
 
 * The feature [is enabled](#enable-disable) in Service Studio.
 
-* You're using:
-
-    * Windows-only Service Studio version 11.6.9 or later.
-
-    * Any version of cross-platform Service Studio.
+* You're using Service Studio version 11.53.27 or later.
 
 * Service Studio can reach the URL `https://api.outsystems.com`.
 

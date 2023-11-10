@@ -4,6 +4,8 @@ summary: Advanced use cases for the Progress Circle UI Pattern
 locale: en-us
 guid: 26092480-0d4f-441c-aeca-c82f31a3df51
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A541&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Progress Circle Reference

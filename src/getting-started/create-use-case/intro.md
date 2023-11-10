@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: c7315436-17a6-49f5-a395-60b6da7bac46
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=2318:1865
 ---
 
 # Getting started with your own app use case
@@ -49,10 +51,11 @@ Before you get started make sure that:
 
 The key steps for creating a working use-case app that uses your data are the following:
 
-![Process overview for creating and customizing your use case app](images/create-app-use-case-diag.png)
+![Process overview for creating and customizing your use case app](images/create-your-app-use-case-diag.png)
 
 1. Create and test the first version of your app by following the Service Studio tutorial for your use case. The first version of your app is functional and includes sample data. Check [this article to learn more about the first version of your app and about relevant OutSystems concepts](understand-create-app.md).
 
 1. Next, make the app your own, by using your own data from an Excel file, an external database, or an external system of record (SoR). Check [this article describes the main external data sources you can use in your app](use-own-data.md).
 
 1. Evolve your app by adding more screens using development accelerators specific to your app's use case.
+

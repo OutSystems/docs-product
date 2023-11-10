@@ -4,17 +4,19 @@ tags: runtime-mobile
 locale: en-us
 guid: 1544fe43-3dbd-427e-bfd2-69ab0594f2e2
 app_type: mobile apps
+platform-version: o11
+figma:
 ---
 
 # Building apps with AndroidX
 
 <div class="info" markdown="1">
 
-Applies only to Mobile Apps.
+Applies only to Mobile Apps using MABS 6.3 to MABS 9.
 
 </div>
 
-AndroidX is a new and much improved Android support library. The Android developers no longer maintain Support Library after Android 9.0 (API level 28). This document shows how to create native builds with AndroidX.
+AndroidX is an improved Android support library. The Android developers no longer maintain Support Library after Android 9.0 (API level 28). This document shows how to create native builds with AndroidX.
 
 <div class="info" markdown="1">
 
@@ -38,7 +40,7 @@ The content in this document applies only to the native Android apps.
 
 <div class="info" markdown="1">
 
-You need to enable AndoridX if you're using MABS 6.3 Beta. AndoridX is **enabled by default in MABS 7 Beta**.  
+You need to enable AndoridX if you're using MABS 6.3 Beta. AndroidX is **enabled by default in MABS 7 Beta**.  
 
 </div>
 
@@ -48,7 +50,7 @@ To build a mobile app with AndroidX enabled, do the following:
    
 1. Open the **main module** of the app. You need to open the main module because MABS ignores the AndroidX setting in a dependency module.
 
-1. Go to the mobile properties and edit the **Extensibility Configurations**. Add a new key-value pair in the android section, and set **AndroidXEnabled** to **true**. 
+1. Go to the mobile properties and edit the **Extensibility Configurations**. Add a new key-value pair in the Android section, and set **AndroidXEnabled** to **true**. 
 
         {
             "preferences": {

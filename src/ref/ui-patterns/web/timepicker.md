@@ -4,6 +4,8 @@ summary: Advanced use cases for the Time Picker UI Pattern.
 locale: en-us
 guid: 19d186e8-664b-4066-9e83-e866c45cbba7
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:592
 ---
 
 # Time Picker Reference

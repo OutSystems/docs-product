@@ -3,6 +3,7 @@ summary: Check how to configure your OutSystems environment to secure session co
 locale: en-us
 guid: e65820c4-3550-4a5d-be8d-54531bada121
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Enable secure session cookies and set application cookies as secure
@@ -19,7 +20,11 @@ The unsecure cookies issue is commonly raised in penetration test reports perfor
 
 Session cookies store information about a user session after the user logs in to an application. This information is very sensitive, since an attacker can use a session cookie to impersonate the victim (see more about [Session Hijacking](https://en.wikipedia.org/wiki/Session_hijacking)).
 
-You can configure an OutSystems environment to have secure session cookies. Service Studio and LifeTime have options that enable you to configure your security settings, such as [SameSite and Secure](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Upcoming_changes_in_cookie_handling_in_Google_Chrome#patch). For example, activating the **Secure option** adds the `Secure` attribute to all cookies that the platform generates. Alternatively, you can configure these security settings by installing [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) from Outsystems Forge.
+You can configure an OutSystems environment to have secure session cookies. Service Studio and LifeTime have options that enable you to configure your security settings, such as [SameSite and Secure](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Upcoming_changes_in_cookie_handling_in_Google_Chrome#patch). For example, activating the **Secure option** adds the `Secure` attribute to all cookies the platform generates. In LifeTime, you do this by enabling the configuration **Secure Cookies** in the Environment Security of each environment:
+
+![Configuration screen to turn secure session cookies in LifeTime](images/secure-cookies-lifetime-ss.png)
+
+Alternatively, you can configure these security settings by installing [Factory Configuration](https://www.outsystems.com/forge/component/25/factory-configuration/) from the OutSystems Forge.
 
 After installing Factory Configuration, access the application and, in the *Platform Configurations* tab, find the option to enable secure session cookies:
 
@@ -27,7 +32,7 @@ After installing Factory Configuration, access the application and, in the *Plat
 
 <div class="info" markdown="1">
 
-After you change the settings using Factory Configuration, make sure you **apply new configurations to you environment**.
+After you change the settings using Factory Configuration, make sure you **apply new configurations to your environment**.
 
 </div>
 

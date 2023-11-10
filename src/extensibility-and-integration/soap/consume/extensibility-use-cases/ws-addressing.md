@@ -3,6 +3,8 @@ summary: How to add WS-Addressing elements to SOAP requests using the SOAP Exten
 locale: en-us
 guid: 67a70ca1-1af0-4993-8761-077e1727acda
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A22&mode=design&t=8a1ub9syb4QKHbuk-1
 ---
 
 # Add WS-Addressing elements to SOAP requests

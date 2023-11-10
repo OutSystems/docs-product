@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: dc284a2a-904b-4d90-84c0-43cbd7dcd7a0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Switch or Toggle a Boolean Value

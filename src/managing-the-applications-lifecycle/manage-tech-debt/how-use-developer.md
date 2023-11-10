@@ -4,6 +4,8 @@ summary: Learn how to find and fix technical debt in an app.
 locale: en-us
 guid: 8b0d91f3-f1ee-48c2-8b7e-8a82aeb27ae3
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:596
 ---
 
 # Getting started as a developer
@@ -18,9 +20,9 @@ As a developer, **AI Mentor Studio** provides you with an overview of the organi
 
 This guide assumes the following:
 
-* Your infrastructure is already set up in **AI Mentor Studio**.
+* Your infrastructure is already set up in AI Mentor Studio.
 
-* Your IT user is already associated with **AI Mentor Studio**.
+* Your IT user is already associated with AI Mentor Studio.
 
 ## Check the technical debt of the modules of an app
 

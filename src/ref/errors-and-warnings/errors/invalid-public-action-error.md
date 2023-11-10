@@ -2,6 +2,8 @@
 locale: en-us
 guid: f55fcb70-f968-4223-9b1c-8f9136349e41
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Invalid Public Action Error

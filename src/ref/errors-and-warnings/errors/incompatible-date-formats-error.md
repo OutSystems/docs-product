@@ -2,6 +2,8 @@
 locale: en-us
 guid: 8b291081-7322-4558-8b0a-c1ac18ba5218
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Incompatible Date Formats Error

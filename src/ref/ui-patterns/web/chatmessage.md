@@ -4,6 +4,8 @@ summary: Advanced use cases for the Chat Message UI Pattern.
 locale: en-us
 guid: 6a62f636-ac37-4f02-8dde-b125bbb18919
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A427&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Chat Message Reference

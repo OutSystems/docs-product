@@ -3,6 +3,8 @@ tags: support-Database
 locale: en-us
 guid: 686e3c25-4aaf-4507-9c51-aaf8f05954f7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1414:1769
 ---
 
 # Data Types
@@ -16,5 +18,5 @@ For more information about how OutSystems maps its data types to .NET at runtime
 
 A List is a sequence of elements of the same data type, which may contain duplicate values. Elements can be inserted, fetched and removed from a list. For more information, see [Lists](list.md).
 
-A Structure is a compound data type used to encapsulate groups of related attributes. For more information, see [Structures](../../lang/auto/Class.Structure.final.md) and [Structure attributes](../../lang/auto/Class.Structure%20Attribute.final.md).
+A Structure is a compound data type used to encapsulate groups of related attributes. For more information, see [Structures](../../lang/auto/class-structure.md) and [Structure attributes](../../lang/auto/class-structure-attribute.md).
 

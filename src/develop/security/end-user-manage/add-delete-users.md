@@ -4,6 +4,7 @@ tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 8b17c8d9-939a-486c-bec9-fe1309df7aed
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Add and Delete End Users
@@ -31,7 +32,7 @@ To create a new end user for your applications do the following:
 
 1. Assign groups and roles to the user.
 
-![Demo of creating a user in the Users app](images/add-delete-users-gif1.gif?width=550)
+<iframe src="https://player.vimeo.com/video/823688722" width="750" height="538" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating creating a user</iframe>
 
 ## Activate and deactivate an existing end user { #activate-deactivate }
 
@@ -41,8 +42,10 @@ A deactivated end user can't log in to any application and has all permissions s
 
 1. To view the list of deactivated users, from the **Users** tab, click **Inactive Users**. To re-activate an end user, enter the user details and click **Set as Active**.
 
+<iframe src="https://player.vimeo.com/video/823688669" width="750" height="538" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating deactivating a user</iframe>
+
 ## Delete an existing end user { #delete }
 
 To permanently delete an end user, from the user detail screen, click **Edit this User** and select **Delete this User**.
 
-![Demo of deleting an end user in the Users app](images/add-delete-users-gif2.gif?width=550)
+<iframe src="https://player.vimeo.com/video/823688619" width="750" height="538" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating deleting a user</iframe>

@@ -4,6 +4,8 @@ tags: support-application_development; support-Integrations_Extensions
 locale: en-us
 guid: 08e6c830-5f88-4645-b86f-412e1c399a1f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:100
 ---
 
 # Expose REST APIs
@@ -23,7 +25,7 @@ When a request to your REST API Method is received, OutSystems executes the foll
 
 ![](images/rest-expose-method-flow-diag.png)
 
-1. **Security Validations:** After receiving the REST API Method request, OutSystems executes the security validations according to the settings in [REST API properties](../../../ref/lang/auto/ServiceStudio.Plugin.RESTService.RestService.final.md) **HTTP Security** and **Internal Access Only**. 
+1. **Security Validations:** After receiving the REST API Method request, OutSystems executes the security validations according to the settings in [REST API properties](../../../ref/lang/auto/servicestudio-plugin-restservice-restservice.md) **HTTP Security** and **Internal Access Only**. 
 1. **OnRequest():** OnRequest callback allows you to [run logic over the requests](<preprocess-rest-api-requests.md>) after receiving them. 
 1. **OnAuthentication():** OnAuthentication callback allows you to add [basic authentication](<add-basic-authentication-to-an-exposed-rest-api.md>) or [custom authentication](<add-custom-authentication-to-an-exposed-rest-api.md>) to requests. 
 1. **Parameters Deserialization and Validation:** Deserialization of the input parameters and validation of the data types, mandatory values, etc. 

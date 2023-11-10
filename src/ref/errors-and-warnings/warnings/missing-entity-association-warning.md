@@ -2,6 +2,8 @@
 locale: en-us
 guid: 590a02ff-3c8a-442a-a6af-a18205dbe1d8
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Missing Entity Association Warning

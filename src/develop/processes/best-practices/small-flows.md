@@ -2,6 +2,7 @@
 locale: en-us
 guid: ea9128f4-23b8-4eb6-9e6e-c9970f610634
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Design Processes with Small Flows
@@ -18,7 +19,7 @@ In this case, we recommend that you do the following:
 
 1. Analyze the process flow, identify subprocesses within it, and move them to new processes.
 
-2. Use the [Execute Process](<../../../ref/lang/auto/Class.Execute Process.final.md>) tool to execute the newly created processes as subprocesses in the main process flow.
+2. Use the [Execute Process](<../../../ref/lang/auto/class-execute-process.md>) tool to execute the newly created processes as subprocesses in the main process flow.
 
 This way, the deployment runs faster because the process is executed through smaller subprocesses, which are executed one at a time. This way, the impact analysis has to go over much less information and the upgrade is easier.
 
@@ -39,6 +40,6 @@ The main process flow becomes shorter and simpler and two new small processes ar
 
 ![](images/small-flows-2.png)
 
-The [NotifyPhysician](<../../../ref/lang/auto/Class.Send Email.final.md>) send email was also included in the new process as an optional branch that is executed or not depending on the type of document. This way we can further simplify the process flow by merging the two conditional starts into a single one, with the type of document as parameter.
+The [NotifyPhysician](<../../../ref/lang/auto/class-send-email.md>) send email was also included in the new process as an optional branch that is executed or not depending on the type of document. This way we can further simplify the process flow by merging the two conditional starts into a single one, with the type of document as parameter.
 
 ![](images/small-flows-3.png)

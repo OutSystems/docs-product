@@ -4,6 +4,8 @@ summary: Advanced use cases for the Rating UI Pattern
 locale: en-us
 guid: cde868f5-0402-49de-8c91-0754724634cc
 app_type: mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=1324%3A1568&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Rating

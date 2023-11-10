@@ -16,7 +16,7 @@ figma:
 
 * Service Studio 11.53.40 
 
-Multipart/form-data allows you to submit binary data and multiple data types in a single request. For example, you can use these requests for file uploads and transferring a file with a JSON object. 
+Multipart/form-data allows you to submit binary data and multiple data types in a single request. For example, you can use these requests for file uploads and transferring a file with a JSON object.
 
 **Note**: To upload large files to your applications (not just when using REST APIs), you may need to increase the maximum request length allowed by the application server.
 For more information, see [Altering file upload limits in OutSystems apps](https://success.outsystems.com/support/troubleshooting/application_runtime/altering_file_upload_limits_in_outsystems_apps/).
@@ -97,3 +97,4 @@ When consuming a REST API with callbacks, you can add logic to customize the inf
 Service Center log redaction is not supported when the request text property is changed inside the **OnBeforeRequest** callback.
 
 </div>
+

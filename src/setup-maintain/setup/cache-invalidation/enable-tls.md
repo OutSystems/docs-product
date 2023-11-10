@@ -47,6 +47,8 @@ To apply these settings do the following:
 
 1. Set the Port parameter to the same port as in the configuration file (in the example above, the Port value would be `5671`).
 
+1. Activate the option "Enable TLS".
+
 1. Click "Create/Upgrade Service".
 
 Alternatively, check [Install and configure RabbitMQ using the command-line](<installation.md>) for more information on how to apply the settings using the command-line.

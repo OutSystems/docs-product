@@ -5,6 +5,7 @@ guid: e745cd81-f50a-483d-a08d-4279288fceae
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Ensuring resolution times with SLAs

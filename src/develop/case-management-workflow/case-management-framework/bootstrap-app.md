@@ -5,6 +5,7 @@ guid: 5f7f8979-4c04-41d2-9737-15210d38d660
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4376%3A1843&mode=design&t=gIH8xI33HVMD8pPX-1
 ---
 
 # Create a case management app

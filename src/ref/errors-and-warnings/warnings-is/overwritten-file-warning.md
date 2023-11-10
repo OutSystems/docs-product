@@ -2,6 +2,8 @@
 locale: en-us
 guid: 5858cdc4-1a20-4f23-9e81-8c710cf06ab6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Overwritten File Warning

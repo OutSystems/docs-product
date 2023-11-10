@@ -4,6 +4,7 @@ summary: Button Group displays available choices to the user.
 locale: en-us
 guid: a42977e0-825d-49b5-bc9b-49025bac70cb
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Button Group
@@ -40,7 +41,7 @@ You can use the Button Group UI Pattern to display radio button choices to the u
 
     By default, the pattern contains 3 Button Group Items. You can add or delete as many Button Group Items as required.
 
-1. From the Widget Tree, select the **radio-button** element, and on the **Properties** tab, set the **Variable** and **Value** properties.
+1. From the Widget Tree, select the **radio-button** element, and on the **Properties** tab, set the **Variable** and **Value** properties. 
 
     ![](<images/buttongroup-image-3.png>)
 
@@ -48,9 +49,10 @@ You can use the Button Group UI Pattern to display radio button choices to the u
 
 1. Change the **Label** text for each of the Button Group Items.
 
+See [Variables](../../../../../ref/data/handling-data/variables/intro.md) for more infomation on variables.
+
 ## Properties
 
-| **Property**                    | **Description**                                                                                                                                        |
-|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Property** | **Description** |
+|---|---|
 | IsJustified (Boolean): Optional | If True, the Button Group items are evenly distributed in the space available. If False, the Button Group items are left aligned. This is the default. |
-

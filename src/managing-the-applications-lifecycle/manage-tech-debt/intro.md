@@ -5,6 +5,8 @@ en_title: Manage technical debt
 locale: en-us
 guid: 7aa53270-fb01-4543-90e4-57907dcc68fe
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Manage technical debt
@@ -23,7 +25,7 @@ With AI Mentor Studio, technical debt can be effectively managed at every stage 
 
 For architects and development team leaders, it provides an integrated, bird’s eye view of their organization’s technical debt to identify problem areas and prioritize accordingly. Developers can view detailed reports on what best practices are being violated, their impact, and how to fix them.
 
-To integrate AI Mentor Studio's data with third-party tools, use the [AI Mentor Studio API](../../ref/apis/auto/architecture-dashboard-api.final.md). 
+To integrate AI Mentor Studio's data with third-party tools, use the [AI Mentor Studio API](../../ref/apis/auto/ai-mentor-studio-api.final.md). 
 
 ## What AI Mentor Studio analyzes
 

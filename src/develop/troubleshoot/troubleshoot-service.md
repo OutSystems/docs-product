@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: e37fa5b3-0517-4c62-a0f6-ab2262e44a09
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Troubleshoot Service Actions Using Logs

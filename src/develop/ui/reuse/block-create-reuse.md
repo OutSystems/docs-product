@@ -4,6 +4,7 @@ tags: support-application_development; support-Front_end_Development; support-Mo
 locale: en-us
 guid: 6cd79d30-4d78-4fd5-8707-b4af2cbd5078
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create and Reuse Screen Blocks
@@ -15,6 +16,7 @@ Here are notes about reusing Block across **different apps**:
 * Blocks must be public.
 * You can reuse Reactive Web Blocks in Reactive Web Apps and Mobile Apps. 
 * You can reuse Traditional Web Blocks in Traditional Web Apps.
+* To reuse it, go to **Manage Dependencies** and search producers for our app or library.
 
 ## Using Blocks
 
@@ -22,6 +24,10 @@ Here are notes about reusing Block across **different apps**:
 1. Implement the user interface and logic in the new Block.
 1. Set the Block as public if you want to reuse it across apps.
 1. Drag it the Block to the Screen where you want to use it. If you want to use the Block in another App, you first need to reference the Block.
+
+### Advanced use cases to pass data between blocks
+
+For more advanced use cases to pass data between blocks and using block events, please get more info on [Pass Data Between Blocks](block-communicate.md). This article explains how to create a block that communicate between them and pass data. For example, a block containing a date picker that, when changed, requires updating a chart plotted by another block.
 
 ## Example
 
@@ -53,4 +59,6 @@ Here is an example, with two sample apps, of how you can reuse a Block from Reac
     ![The source Block in the preview](<images/block-reuse-target-app.png?width=600>)
 
 1. Publish the app.
+
+
 

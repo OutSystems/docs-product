@@ -4,6 +4,7 @@ tags: support-application_development; support-Database; runtime-mobileandreacti
 locale: en-us
 guid: dddc4580-fe09-42b7-8795-9fc35f3fd803
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Implement asynchronous data fetching using Aggregates

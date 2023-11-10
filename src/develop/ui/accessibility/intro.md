@@ -4,6 +4,7 @@ tags: article-page; runtime-mobileandreactiveweb
 locale: en-us
 guid: 845ea0d1-6110-4a9f-a4ca-19e53b178825
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Accessibility
@@ -40,9 +41,9 @@ Before you proceed with developing accessible apps according to the instructions
 
 
 <div class="info" markdown="1">
- 
+
 OutSystems UI is often updated to support more accessibility features. For more information, refer to the OutSystems UI release notes in Forge.
- 
+
 </div>
 
 ## Enabling the built-in accessibility features
@@ -80,9 +81,9 @@ Screen readers use page titles to tell the users the name of the page they're on
 
 
 <div class="info" markdown="1">
- 
+
 The default page title of the log-in page is blank. Navigate to **UI Flows** > **Common** > **Login** and enter the title.
- 
+
 </div>
 
 ### Page language settings for screen readers
@@ -209,9 +210,9 @@ To change the default main container, perform the following steps:
 ![Setting the Skip To Content target id](images/skip-to-content-target-id-ss.png)
 
 <div class="info" markdown="1">
- 
+
 You must enter the name in the widget properties before you can use that widget in the **SkipToContent** action. For example, if you name your element **MainContent**, the identifier is **MainContent.Id**.
- 
+
 </div>
 
 The default content Container is the **MainContentWrapper**. To find it, go to **UI Flows** > **Layouts**, and click on the layout you use in your app.
@@ -231,3 +232,5 @@ Use the [Popup widget](../../ui/inputs/popup.md) to create accessible modal dial
 
 * `role="dialog"`
 * `aria-modal="true"`
+
+Additionally, the class `"has-accessible-features"` needs to be added manually in the Style Classes of the Popup Widget to enable the accessibility features.

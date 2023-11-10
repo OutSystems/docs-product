@@ -3,6 +3,8 @@ summary: Check how you can define application settings while deploying an applic
 locale: en-us
 guid: a02c9d92-7a07-4ba2-a12a-656d90b5df8f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A39&mode=design&t=98kL4vRdGIKpuwQm-1
 ---
 
 # Configure Application Settings After Deployment

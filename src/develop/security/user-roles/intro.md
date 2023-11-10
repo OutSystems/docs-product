@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: d3fe610b-9bf9-4695-b516-01820a33abba
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # User Roles

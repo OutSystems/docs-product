@@ -1,0 +1,73 @@
+name: Validate Visual Assets
+
+on:
+  workflow_call:
+    inputs:
+      files:
+        description: "List of files to validate"
+        type: string
+        required: true
+      pull-request:
+        description: "The Pull Request number"
+        type: string
+        required: true
+
+concurrency: 
+  group: visual-assets-pr-${{ github.ref }}
+  cancel-in-progress: true
+
+run-name: "Validate visual assets in ${{ github.ref_name }}"
+
+
+jobs:
+  remove-visual-assets-comment:
+    name: Hide Comment
+
+    if: inputs.pull-request != ''
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Hide previous comments'
+      uses: marocchino/sticky-pull-request-comment@v2
+      with:
+        number: ${{ inputs.pull-request }}
+        header: VISUAL ASSETS VALIDATION
+        hide: true
+        hide_classify: "OUTDATED"
+
+  visual-assets:
+    name: Validate
+
+    needs: [remove-visual-assets-comment]
+
+    if: github.ref_name != github.event.repository.default_branch && inputs.pull-request != ''
+
+    uses: ./.github/workflows/visual-assets-validate.yml
+    secrets: inherit
+    with:
+      files: ${{ inputs.files }}
+  
+  post-visual-assets-comment:
+    name: Add Comment
+
+    needs: [remove-visual-assets-comment, visual-assets]
+
+    if: always() && inputs.pull-request != '' && needs.visual-assets.outputs.report != ''
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Add report to Pull Request'
+      uses: marocchino/sticky-pull-request-comment@v2
+      with:
+        number: ${{ inputs.pull-request }}
+        header: VISUAL ASSETS VALIDATION
+        message: ${{ needs.visual-assets.outputs.report }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 'Visual assets validation failed'
+      uses: actions/github-script@v6
+      with:
+        script: |
+            core.error('Check Pull Request #${{ inputs.pull-request }} comments for detailed report on the issues related to visual assets.');

@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: f30b6d10-f57f-48ac-98e4-1425ae8c72d5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=2318:1866
 ---
 
 # Understanding how to create an app
@@ -28,7 +30,7 @@ For now, use-case specific tutorials and accelerators are available only for the
 
 </div>
 
-![Process overview for creating your use case app](images/tutorial-diag.png)
+![Process overview for creating your use case app](images/follow-tutorial-diag.png)
 
 This article explains concepts to help you understand the application use case tutorials and how you create your own app.
 
@@ -78,3 +80,4 @@ Following is a list of application use cases including a short description of th
 ## Next step
 
 After creating your app by following the tutorial, make the app your own, by using your own data from an Excel file, an external database, or an external system of record (SoR). Check [this article describes the main external data sources you can use in your app](use-own-data.md).
+

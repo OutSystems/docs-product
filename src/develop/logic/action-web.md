@@ -4,6 +4,7 @@ tags: runtime-traditionalweb; support-webapps; support-webapps-overview
 locale: en-us
 guid: 8536c396-e702-492a-8a07-ab8c8bc0334c
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Actions in Web Applications

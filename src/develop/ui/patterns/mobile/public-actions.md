@@ -4,6 +4,7 @@ summary:
 locale: en-us
 guid: e4899a53-ca9e-4c13-b021-06518a34fba2
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Public Actions

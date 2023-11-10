@@ -4,6 +4,7 @@ summary: Learn how to troubleshoot and fix common issues you may face while usin
 locale: en-us
 guid: 5fbcd20a-ae06-4818-a497-2ac6596506ce
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Troubleshooting Experience Builder

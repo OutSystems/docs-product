@@ -3,6 +3,8 @@ summary: Integration Studio is a desktop tool that allows you to create and mana
 locale: en-us
 guid: 0a549110-5a84-4c90-ae2a-adc8fd30b31d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2333:4131
 ---
 
 # Integration Studio
@@ -17,7 +19,7 @@ From version 11.14.17, Integration Studio is distributed independently from Serv
 
 The next screenshot presents the workspace for this tool:
 
-![](images/workspace.gif)
+![Integration Studio workspace](images/workspace-is.png)
 
 The workspace is divided into the following areas:
 

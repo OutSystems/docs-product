@@ -4,6 +4,7 @@ summary: Learn how to install or update Experience Builder dependencies.
 locale: en-us
 guid: 846ff90b-1883-40ce-adcf-ca9eb6004f90
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # How to install or update dependencies
 

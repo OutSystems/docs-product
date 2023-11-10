@@ -4,6 +4,8 @@ tags: support-Integrations_Extensions; support-Integrations_Extensions-overview
 locale: en-us
 guid: 12679c35-25ab-4d32-a6f2-11a3b94ee3d7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A4&mode=design&t=8a1ub9syb4QKHbuk-1
 ---
 
 # Consume a SOAP Web Service

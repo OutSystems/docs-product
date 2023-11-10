@@ -3,6 +3,7 @@ summary: You can create Timers at design time and set their running schedule at 
 locale: en-us
 guid: 133d8c46-b36b-47de-9ad3-ca8e6460bb20
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create and Run Timers
@@ -32,7 +33,7 @@ You can set the schedule of a Timer in one of the following ways:
 
 * **Setting the Timer schedule at runtime in Service Center**: In cases when you need to customize the Timer schedule when deploying an application to another environment, there is no need to change the application. The effective Timer schedule is set in Service Center, which uses the default settings in every environment unless specifically modified.
 
-* **Implement logic that changes the Timer schedule at runtime**: Assign the `Schedule` runtime property of the Timer with a specific schedule within your logic. Make sure to use the [correct time format](../../ref/lang/auto/Class.Timer.final.md#runtime-properties).  
+* **Implement logic that changes the Timer schedule at runtime**: Assign the `Schedule` runtime property of the Timer with a specific schedule within your logic. Make sure to use the [correct time format](../../ref/lang/auto/class-timer.md#runtime-properties).  
 
     ![Implement logic that changes Timer schedule](images/timer-implement-logic-ss.png)
 

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: cad64443-6400-41a9-98e4-154162e790fa
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Server-to-client data transfer optimization

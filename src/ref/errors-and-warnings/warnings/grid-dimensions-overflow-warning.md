@@ -2,6 +2,8 @@
 locale: en-us
 guid: 8faa36bf-6acf-423b-9fc7-9e365c55697e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Grid Dimensions Overflow Warning

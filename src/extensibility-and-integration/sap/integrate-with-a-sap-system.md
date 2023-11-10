@@ -1,19 +1,23 @@
 ---
 tags: support-Integrations_Extensions; support-Integrations_Extensions-overview
 locale: en-us
+helpids: 30084
 guid: d74dc607-6024-4733-8a3e-4ce55e37f1cb
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:49
 ---
 
 # Integrate with a SAP System
 
-<div class="info" markdown="1">
-
-Only customers with an enterprise platform version can create SAP connections.
-
-</div>
 
 OutSystems allows you to fetch or update data in a SAP system and use it in your applications.
+
+## Prerequisites
+
+* Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition. 
+* For self-managed infrastructures, SAP Connector Libraries must be installed. See the installation checklist of your [Platform Server version](https://www.outsystems.com/Downloads/search/Platform+Server/11/) for further instructions.
+
 
 ## Create a connection to an SAP system from your application
 
@@ -69,7 +73,7 @@ On the **Logic** tab, go to **Integrations** > **SAP**. You can now use the newl
 
 When a SAP Remote Function is called from your OutSystems application, the following flow is executed:
 
-![SAP remote function flow](images/SAP_Remote_Function_Flow.png)
+![SAP remote function flow](images/sap-remote-function-flow-diag.png)
 
 1. **OnBeforeConnection():** This callback allows you to implement different SAP authentication methods using the [SAP Extensibility API](<../../ref/apis/sap-extensibility-api.md>), such as Logon Tickets or certificates. 
 1. **Connect to SAP & Begin Context:** The connection to SAP is established using the default credentials (if no different authentication is defined), and a context for calling the SAP remote function is started in SAP. 

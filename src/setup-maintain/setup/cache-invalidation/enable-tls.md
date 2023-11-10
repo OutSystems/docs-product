@@ -5,6 +5,8 @@ helpids: 30177
 locale: en-us
 guid: 2027cfb9-111f-43f5-a3fb-cf1581beece6
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Enable TLS communication in RabbitMQ

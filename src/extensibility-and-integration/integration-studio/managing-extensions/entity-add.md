@@ -2,6 +2,8 @@
 locale: en-us
 guid: 16186793-9357-420f-a833-2c5e0d3c47b5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Add an Entity

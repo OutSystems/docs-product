@@ -4,6 +4,7 @@ summary: Learn how to create an app from scratch in Workflow Builder.
 guid: 23eb1fab-8030-4857-ab70-2e96e1735bc6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Creating a Workflow Builder app from scratch

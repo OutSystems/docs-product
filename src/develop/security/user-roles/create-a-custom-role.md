@@ -4,6 +4,7 @@ tags: support-Security;
 locale: en-us
 guid: 53e7e31f-233a-4495-8d3c-5f931cb35ccd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create and Use Roles
@@ -35,7 +36,7 @@ For each Role in your module, OutSystems provides the following Actions:
     Note: This function is only applicable to **active users**. When you use it for an inactive user, the result is always "False", even if the user has been granted the role.
 
 `Grant<role_name>Role`
-:   Provides access for a specific end user to a specific role. You can use it both for active and inactive users.  
+:   Provides access for a specific end user to a specific role. You can use it both for active and inactive users. The role granted to the end user persists until it's revoked.
     This action is not available for the System Roles **Anonymous** and **Registered**.
 
 `Revoke<role_name>Role`
@@ -52,7 +53,7 @@ To check end user Roles in your expressions, OutSystems provides the following b
 
 This function is available in the Scope Tree of the Expression Editor, under the **Roles** folder. It's only applicable to **active users**.
 
-Besides this function for each role, there are other built-in functions related to Roles. Check the [Roles built-in functions](../../../ref/lang/auto/builtinfunction.Roles.final.md).
+Besides this function for each role, there are other built-in functions related to Roles. Check the [Roles built-in functions](../../../ref/lang/auto/builtinfunction-roles.md).
 
 ### Role Exceptions
 

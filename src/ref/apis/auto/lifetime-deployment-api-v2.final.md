@@ -1,9 +1,11 @@
 ---
 summary: Allows you to manage applications, modules, environments and deployments of your OutSystems infrastructure. Version 2 of the API adds support for deployment zones, users, teams, and roles.
-tags: article-page; support-application_development; support-Application_Lifecycle; support-devOps; support-Integrations_Extensions
+tags: 
 locale: en-us
 guid: 8ebd5215-2960-4071-8a9c-83fe39674ee0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:507
 ---
 
 # LifeTime API v2
@@ -570,16 +572,21 @@ Follow the guidelines presented in [REST API Authentication](<../lifetime-deploy
 
 Check [LifeTime API Examples](<../lifetime-deployment/api-use-cases.md>) to learn how to perform common tasks using the LifeTime API.
 
-</div>
+</div> 
 
 You can download the Swagger file for the LifeTime API v2 in the download page of LifeTime Management Console binaries (available from LifeTime Management Console 11.5.0). Go to the [Downloads area](https://www.outsystems.com/Downloads/search/LifeTime/11/), and select your LifeTime Management Console version:
 
 ![download LifeTime](images/lifetime-api-downloads.png)
 
+
 ## Summary {#swagger--summary-tags}
 
+The LifeTime API is available through your LifeTime environment, with the API base URL determined by your LifeTime environment's domain. For instance, if your LifeTime address is `example-lt.outsystemsenteprise.com/lifetime`, then the LifeTime API base URL is `example-lt.outsystemsenteprise.com/lifetimeapi/rest/v2`.
+
+You can also find and test [LifeTime API v2 in Postman](https://www.postman.com/outsystems-official). 
+
 Base URL
-:    `/lifetimeapi/rest/v2`
+:    `<lifetime-domain>/lifetimeapi/rest/v2`
 
 Version
 :    v2
@@ -3796,7 +3803,7 @@ Go to
 </div>
 <div class="panel-body">
 <section class="sw-operation-description">
-<p>Returns a link where the binary file for a given application can be downloaded. The link will expire in 60 minutes.</p>
+<p>Returns a link where the binary file for a given application can be downloaded. The content of the download can be the Application Package for all kinds of application or the mobile application package for mobile applications that are generated correctly. The link will expire in 60 minutes.</p>
 </section>
 <section class="sw-request-params">
 <table class="table">
@@ -3909,7 +3916,7 @@ Expires</td>
 <dd class="sw-response-204">
 <div class="rowr">
 <div class="col-md-12">
-<p>No binary available for given type and keys.</p>
+<p>No binary available for given type and keys. When using type "apk" or "ipa", the error means the application is not a mobile application or the mobile application is not generated.</p>
 </div>
 </div>
 <div class="rowr">
@@ -10159,6 +10166,7 @@ Go to
 <div  class="panel panel-definition">
 <div class="panel-body">
 <a class="json-schema-ref" href="#/definitions/Password">Password</a>
+<p>Passwords must meet the password complexity rules. This means that the password must have at least 12 characters, including at least one number, one lowercase letter, and one uppercase letter.</p>
 </div>
 </div></div>
 </div>
@@ -10216,7 +10224,7 @@ UserKey
 <dd class="sw-response-400">
 <div class="rowr">
 <div class="col-md-12">
-<p>Failed to change password because password is invalid.</p>
+<p> Failed to change password because the password is invalid.</p>
 </div>
 </div>
 <div class="rowr">

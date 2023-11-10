@@ -4,6 +4,8 @@ summary:  Access the Setup Logs of an OutSystems installation on Microsoft Azure
 locale: en-us
 guid: 1e5925fb-8700-4998-a2b4-7a149caeb17d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=352:1278
 ---
 
 # How to Get the Setup Logs of OutSystems on Microsoft Azure

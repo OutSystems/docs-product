@@ -3,13 +3,14 @@ summary: Drag and drop patterns to use the most common UI components, like calen
 locale: en-us
 guid: 8ba8f042-b63e-4dbf-b2b4-b05d61b7160c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Patterns
 
 <div class="info" markdown="1">
 
-Check <a href="https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternOverview" title="Demos and previews of the patterns">UI Patterns</a> on the OutSystems UI website for the list of patterns and their previews.
+Check <a href="https://outsystemsui.outsystems.com/OutsystemsUiWebsite/PatternsOverview" title="Demos and previews of the patterns">UI Patterns</a> on the OutSystems UI website for the list of patterns and their previews.
 
 </div>
 

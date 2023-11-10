@@ -4,6 +4,7 @@ tags: runtime-mobile; support-application_development; support-Mobile_Apps
 locale: en-us
 guid: dc4e00b1-34e4-4bf0-9fa6-b63c6d4f6719
 app_type: mobile apps
+platform-version: o11
 ---
 
 # Troubleshoot Debugger Connection Issues

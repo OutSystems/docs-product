@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: 21574391-c5b3-4831-a7b2-8aaf94df2230
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:85
 ---
 
 # Simple Customizations
@@ -34,19 +36,35 @@ To customize the request before it is sent:
 
 1. Set the **On Before Request** property of the REST API to `New OnBeforeRequest`.
   
-    ![](images/ss-rest-new-onbeforerequest.png)    
+    ![Select New OneBeforeRequest](images/rest-new-onbeforerequest-ss.png)
 
-    An "OnBeforeRequest" action is made available under the REST API.   
+    An "OnBeforeRequest" action is made available under the REST API.
 
-1. Double-click the newly created action to edit it. 
+1. Double-click the newly created action to edit it.
 
-1. Add your own logic to customize the request. 
+1. Add your own logic to customize the request.
+
+### Customize the parts of a multipart/form-data request { #multipart}
+
+To customize specific parts of a [multipart/form-data request](consume-multipart-form-data.md) inside the **OnBeforeRequest** callback, such as adding, removing, or editing parts, you can use the **RequestParts** attribute that represents a **RequestPart** list.
+
+![List of HTTPRequest attributes](images/requestparts-ss.png)
+
+The following example shows the logic flow of an **OnBeforeRequest** callback that appends, removes, and edits a part from the request. In this example, the **Request.RequestParts** list is edited. 
+
+![Action flow of the OnBeforeRequest callback](images/requestparts-action-ss.png)
 
 ### Example use case: Adding a header for token-based authentication
 
+<div class="info" markdown="1">
+
+Consider using [OAuth client credentials flow](rest-oauth2-authorization.md) as a straightforward method to access remote resources in your app.
+
+</div>
+
 Consider a REST API that uses token-based HTTP authentication, requiring consumers to include an authorization token in an HTTP header. After importing this REST API to your OutSystems application, use the "OnBeforeRequest" callback to add a new header with the token.
 
-To build this example implementation we added the following steps in the callback logic flow:
+You can add the following steps to the callback logic flow, as an example:
 
 1. Add a local variable with "HTTPHeader" data type to the OnBeforeRequest callback action.
 
@@ -61,7 +79,7 @@ To build this example implementation we added the following steps in the callbac
 
 1. Set the "CustomizedRequest" output parameter to our changed "Request" using an Assign element.
 
-![](images/ss-rest-example-onbeforerequest.png)
+![Set output parameter](images/rest-example-onbeforerequest-ss.png)
 
 ## Customize the response
 
@@ -69,7 +87,7 @@ To customize the response after it has arrived:
 
 1. Set the **On After Response** property of the REST API to `New OnAfterResponse` action.
 
-    ![](images/ss-rest-new-onafterresponse.png)
+    ![Select NewAfterResponse](images/rest-new-onafterresponse-ss.png)
 
     An "OnAfterResponse" action is made available under the REST API.
 

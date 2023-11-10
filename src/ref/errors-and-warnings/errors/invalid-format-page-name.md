@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: 6f21e13b-c858-496b-bd91-942d787e8457
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Invalid Format

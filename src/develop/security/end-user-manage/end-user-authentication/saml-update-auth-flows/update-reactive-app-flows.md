@@ -4,6 +4,7 @@ tags: runtime-reactiveweb
 locale: en-us
 guid: 11596936-2e31-4503-a83c-02513439f95d
 app_type: reactive web apps
+platform-version: o11
 ---
 
 # Updating the login and logout flows of your Reactive Web App to support SAML 2.0

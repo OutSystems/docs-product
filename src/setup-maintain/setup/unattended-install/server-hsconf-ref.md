@@ -4,6 +4,8 @@ tags: support-Installation_Configuration; support-Installation_Configuration-ove
 locale: en-us
 guid: dcc55c5d-8cd5-4850-9e88-fa385badc663
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # server.hsconf Configuration File Reference
@@ -12,7 +14,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 This article applies to: **OutSystems 11**&#8195;&#8195;Other versions available: [10](https://success.outsystems.com/Documentation/10/Setting_Up_OutSystems/Unattended_Installation_and_Upgrade/server.hsconf_Configuration_File_Reference)
 
-</div>
+</div> 
 
 The `server.hsconf` is an XML file with all necessary configurations for the OutSystems platform. The settings in the `server.hsconf` configuration file correspond to the settings that are available on the [user interface of the Configuration Tool](../../../ref/configuration-tool/intro.md).
 

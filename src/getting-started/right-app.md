@@ -4,6 +4,8 @@ tags: support-application_development; support-Mobile_Apps-overview; support-web
 locale: en-us
 guid: 1945689d-cfc3-497f-b313-a8cf051a18d9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=1:89
 ---
 
 # Choose the right app for your project
@@ -28,7 +30,7 @@ When you develop a Reactive Web App:
 * You can build apps using the client-side runtime and create responsive UX.
 * Your apps run on a modern stack.
 
-If you haven't developed OutSystems apps that focus on the client-side development paradigm, you can check the explanation about [Screen and Block lifecycle Events](<../develop/logic/screen-block-lifecycle-events.md>) and these notes about [best practices](<https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices>).
+If you haven't developed OutSystems apps that focus on the client-side development paradigm, you can check the explanation about [Screen and Block lifecycle Events](<../develop/logic/screen-block-lifecycle-events.md>) and these notes about [best practices](https://success.outsystems.com/documentation/best_practices/development/outsystems_mobile_best_practices/).
 
 ![Reactive Web App](images/reactive-web-app-diag.png)
 

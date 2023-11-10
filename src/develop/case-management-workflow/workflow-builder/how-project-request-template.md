@@ -4,6 +4,7 @@ summary: Learn how to create a New Initiative Request app using a Workflow Build
 guid: 3571926d-eafe-4ced-a42f-9be2230a0639
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Using the Project Request template

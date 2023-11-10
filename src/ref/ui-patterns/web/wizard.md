@@ -4,6 +4,8 @@ summary: Advanced use cases for the Wizard UI Pattern.
 locale: en-us
 guid: 40d6949b-644d-4bc3-8ed9-83bdbe79fba2
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:633
 ---
 
 # Wizard Reference

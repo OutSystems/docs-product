@@ -4,6 +4,8 @@ summary: Advanced use cases for the Alert UI Pattern.
 locale: en-us
 guid: 252cc44d-c1de-4848-869b-55f9c33c3430
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:355
 ---
 
 # Alert Reference

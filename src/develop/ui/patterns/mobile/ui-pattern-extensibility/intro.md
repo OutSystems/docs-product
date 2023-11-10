@@ -4,6 +4,7 @@ summary:
 locale: en-us
 guid: E9183915-DC47-4192-ACE3-AE04472EFCB2
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems UI Pattern extensibility
@@ -23,7 +24,7 @@ However, you can access all of the extensibility options offered by the provider
 
 The following table shows the list of OutSystems UI Patterns that use external providers:
 
-UI Pattern |  Provider | Library version  
+UI Pattern | Provider | Library version  
 ---|---|---
 Carousel | [Splide](https://splidejs.com/) | 4.1.3  
 Date Picker | [Flatpickr](https://flatpickr.js.org/)| 4.6.13

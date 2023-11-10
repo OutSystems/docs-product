@@ -3,6 +3,7 @@ tags: support-application_development; support-webapps
 locale: en-us
 guid: 628316ec-b24f-422b-bafa-93bc8dd3bc07
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Upgrade Processes

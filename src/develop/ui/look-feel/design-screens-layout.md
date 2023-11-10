@@ -4,6 +4,7 @@ tags: support-application_development; support-Front_end_Development; support-Fr
 locale: en-us
 guid: 1ac298ad-4931-46ba-bc63-5e27536c0603
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Design the Layout of Screens Using Placeholders

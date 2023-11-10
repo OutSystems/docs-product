@@ -1,23 +1,24 @@
 ---
 summary: Learn how to set application Site Properties in the target environment while performing a deployment in LifeTime.
-tags: support-Application_Lifecycle-featured
+tags: 
 locale: en-us
 guid: 4acf3283-61b0-4409-a357-cb2ef63f1a5e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=257%3A33&mode=design&t=98kL4vRdGIKpuwQm-1
 ---
 
 # Configure Site Properties During Deployment
 
 You can configure your applications' Site Properties in the target environment during the deployment plan.
 
+## Prerequisites
+
+* To configure Site Properties during deployment, LifeTime must be on version 11.14.0 or higher.
+* The user executing the deployment must have the "Change & Deploy Applications" permission for all applications in the deployment plan.
+* This feature doesn't apply to multi-tenant Site Properties.
+
 <iframe src="https://player.vimeo.com/video/734417155?h=793863e41d" width="650" height="325" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
-
-
-<div class="info" markdown="1">
-
-Make sure the user executing the deployment has the "Change & Deploy Applications" permission for all applications in the deployment plan.
-
-</div>
 
 The deployment plan wizard enables you to configure the Site Properties of the applications being deployed during the step **Configure application settings**.
 
@@ -35,7 +36,7 @@ Select an application from the applications list to the left to see the settings
 
 There are some situations when this step is **skipped** or **disabled**:
 
-* The step is **skipped** when there are no new settings to configure. However, if you need to change any existing setting, you can manually go back to **Configure application settings** by clicking the step in the wizard.
+* The step is **skipped** when there are no new settings to configure. However, if you need to change any existing settings, you can manually go back to **Configure application settings** by clicking the step in the wizard.
 
     ![Configure applications settings step skipped](images/configure-settings-during-deploy-4.png)
 
@@ -45,9 +46,4 @@ The Site Properties of the applications to deploy are set in the target environm
 
 To update the Site Properties' value in the target environment after the deployment, [use the Service Center console](configure-application-settings-after-deployment.md).
 
-<div class="info" markdown="1">
-
-This feature doesn't apply to multi-tenant Site Properties.
-
-</div>
 

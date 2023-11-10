@@ -4,6 +4,7 @@ summary: Tabs separate content into flat structure sections.
 locale: en-us
 guid: 61ddaa14-5f08-44b8-95a5-9527a7649449
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Tabs

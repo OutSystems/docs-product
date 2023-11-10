@@ -2,6 +2,7 @@
 locale: en-us
 guid: 0fa73852-d845-4c80-8b71-0b9c177a4f81
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Impact of Deleting Activities from Process Flows
@@ -21,7 +22,7 @@ In this case, you **avoid having a process instance suspended** if you change th
 
 ![](images/process-upgrade-resolve-remove.png)
 
-1. Use the [Decision](<../../../ref/lang/auto/Class.Decision.final.md>) tool to branch the flow in two: **Deprecated** and **New**.
+1. Use the [Decision](<../../../ref/lang/auto/class-decision.md>) tool to branch the flow in two: **Deprecated** and **New**.
 
 1. Put the activities to be deleted in the **Deprecated** branch.
 

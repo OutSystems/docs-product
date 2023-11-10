@@ -2,6 +2,7 @@
 locale: en-us
 guid: 8d848bc2-1057-4692-8e94-9ba8c4212806
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # ExBuilder_MPat

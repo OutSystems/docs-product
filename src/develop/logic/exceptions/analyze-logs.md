@@ -4,6 +4,7 @@ tags: support-Application_Troubleshooting
 locale: en-us
 guid: 72005a6b-1250-49cd-83cc-24b6528b7a12
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Analyze the Logs of Exceptions

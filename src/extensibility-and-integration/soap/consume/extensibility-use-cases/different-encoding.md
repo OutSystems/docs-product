@@ -3,6 +3,8 @@ summary: How to add support for a different character encoding using the SOAP Ex
 locale: en-us
 guid: 14fef923-0b13-45f6-b7f3-d5a676ba5565
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A30&mode=design&t=8a1ub9syb4QKHbuk-1
 ---
 
 # Use a different character encoding

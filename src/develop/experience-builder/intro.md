@@ -4,6 +4,7 @@ summary: OutSystems Experience Builder lets Leaders, Developers, and UX/UI Desig
 locale: en-us
 guid: 7a93c178-6791-40ea-85a5-3c9f2a0c5d46
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Create mobile apps with Experience Builder

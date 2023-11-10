@@ -2,6 +2,8 @@
 locale: en-us
 guid: ccb19e76-042b-4861-8822-dcaedc912d5b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Invalid Entity Error

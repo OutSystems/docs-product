@@ -2,6 +2,8 @@
 locale: en-us
 guid: eacad4d3-ae36-4f26-bb60-02ba575bf448
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Modified or Missing Reference Warning

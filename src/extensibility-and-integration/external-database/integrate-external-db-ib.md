@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: fcc67384-67da-41a3-b52b-e2491db85b0c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1208:5983
 ---
 
 # Integrate with an external database using Integration Builder
@@ -53,8 +55,6 @@ Once you establish a database connection, you can develop apps in Service Studio
 * It's not possible to define the following fields at attribute level: data types, length, mandatory, autonumber, delete rule, and description.
 
 * It's not possible to manually define identifiers.
-
-* It's not possible to rename entities or attributes.
 
 ## Process overview
 
@@ -298,6 +298,13 @@ To help you decide which default behavior is best for your new integration with 
 |Email|"" (empty string)|`"<ib>NULL</ib>"`|
 |Phone Number|"" (empty string)|`"<ib>NULL</ib>"`|
 |Text|"" (empty string)|`"<ib>NULL</ib>"`|
+
+### Structure of generated integrations
+
+For integrations with external databases, Integration Builder generates and publishes integrations, which are OutSystems applications composed of two modules:
+
+* An extension that exposes Entities with Entity actions to interact with external databases. By default, the extension name has a "_DRV" suffix, meaning "Driver".
+* One service module that's used to register the integration in Integration Manager. It's an internal module that is required for Integration Builder to work. It's protected to prevent changes. By default, the module name has a "_IS" suffix, meaning "Integration Service".
 
 ### Use the integration in your application { #use }
 

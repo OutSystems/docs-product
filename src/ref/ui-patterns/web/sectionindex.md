@@ -4,6 +4,8 @@ summary: Advanced use cases for the Section Index UI Pattern.
 locale: en-us
 guid: fd1fc012-8659-4cd2-861e-220cfa3090ec
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:568
 ---
 
 # Section Index Reference

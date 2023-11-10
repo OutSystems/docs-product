@@ -1,9 +1,11 @@
 ---
 summary: For OutSystems cloud, when you need to consume webservices that require authentication using client-side certificates, request OutSystems Support to install the certificates on the front-end servers.
-tags: support-Cloud_Platform
+tags: 
 locale: en-us
 guid: 7c93c0ac-8de4-412f-8c80-37179170f1d8
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: 
 ---
 
 # Requesting to install client-side certificates on OutSystems cloud
@@ -24,8 +26,8 @@ This option is available depending on your subscription, check here for more det
 You’ll need to [open a support case](https://success.outsystems.com/Support/OutSystems_community/Opening_a_support_case_with_OutSystems) and:
 
 * Provide the client-side certificate:
-    * in .PFX format, with password
-    * any other required root certificates, in .CER format, if not yet included in the .PFX
+    * In .PFX format, with password and TripleDES-SHA1 encryption type (AES256-SHA256 encryption is not currently supported).
+    * Any other required root certificates, in .CER format, if not yet included in the .PFX.
 
 * Make sure to be clear about what environments should the certificate be installed in.
 

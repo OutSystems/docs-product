@@ -4,6 +4,7 @@ summary:  Swipe Events UI Pattern enables swiping on a specific widget.
 locale: en-us
 guid: 388d64de-604e-47a8-b533-8f2900ed21d9
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Swipe Events
@@ -75,5 +76,5 @@ After following these steps and publishing the module, you can test the pattern 
 ## Properties
 
 | **Property** | **Description** |
-|---|---| 
-| WidgetId (Text): Mandatory |  Element that's swipeable.  |
+|---|---|
+| WidgetId (Text): Mandatory | Element that's swipeable. |

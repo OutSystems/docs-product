@@ -4,6 +4,7 @@ summary: Learn how to set up Experience Builder.
 locale: en-us
 guid: 0d73e561-eeae-4755-af4c-eb4a6a92f6df
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # How to set up Experience Builder
 
@@ -48,11 +49,11 @@ You can access Experience Builder with the **latest versions** of the following 
 
 When you log in to [Experience Builder](https://experiencebuilder.outsystems.com/) for the first time you enter the following welcome screen:
 
-![](images/login-page-eb.png)
+![](images/login-eb.png)
 
 To log in to Experience Builder, perform the following steps.
 
-1. Enter the address of your OutSystems **development environment** in the **Environment** field.
+1. Enter the address of your OutSystems **development environment** in the **Environment** field. Then, click **Next**.
 
     <div class="warning" markdown="1">
 

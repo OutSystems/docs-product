@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: b7b3693d-5efc-4f7e-bef5-472a07175945
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=407:148
 ---
 
 # The chatbot architecture

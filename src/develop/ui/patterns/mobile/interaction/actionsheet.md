@@ -4,6 +4,7 @@ summary: Option menu, which slides from the bottom of the screen, triggered by a
 locale: en-us
 guid: 54f296bf-249a-425b-b54c-6d446248c228
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Action Sheet

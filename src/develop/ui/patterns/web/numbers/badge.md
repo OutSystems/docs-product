@@ -4,6 +4,7 @@ summary: Badge display numerical information as notification.
 locale: en-us
 guid: 4e5ea285-0422-4cb1-9f36-1e49d7422fb7
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Badge
@@ -54,7 +55,7 @@ The following example demonstrates how you can display the number of registered 
 
     ![](<images/badge-13-ss.png>)
 
-    This creates an [aggregate](../../../../../ref/lang/auto/Class.Aggregate.final.md) that retrieves all of the users on your platform.
+    This creates an [aggregate](../../../../../ref/lang/auto/class-aggregate.md) that retrieves all of the users on your platform.
 
 1. To reopen your screen, select the **Interface** tab, and double-click on your screen.
 

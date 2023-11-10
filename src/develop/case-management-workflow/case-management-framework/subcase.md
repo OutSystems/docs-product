@@ -4,6 +4,7 @@ summary: Learn about subcases and how to associate them with a parent case.
 guid: 6f4a1519-2b35-46d4-979a-5578b33d4dc5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Creating a case management app with subcases 

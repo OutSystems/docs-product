@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: 2dc203a7-a140-4fbc-9ab8-97cdaf1c55f5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # BPT API

@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: a76f6a1e-6bab-459d-8d59-cec919610591
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Unregister an Environment using the LifeTime API

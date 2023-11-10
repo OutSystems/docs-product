@@ -4,6 +4,7 @@ summary: The list of mobile patterns for fast mobile UI development.
 locale: en-us
 guid: c186083b-0936-47cb-804d-3e5fcad431a0
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Using Mobile and Reactive Patterns
@@ -18,4 +19,3 @@ The following components and UI patterns are specially designed to address commo
 
 ![](images/UI_Mobile_Patterns_1.png)
 
-OutSystems UI Mobile Framework offers you different patterns that you can drag and drop to the screen for a great mobile experience.

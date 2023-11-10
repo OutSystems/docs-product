@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 7cfdce45-42ed-4217-9e4b-fdd3bd671f6b
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Integrated Authentication

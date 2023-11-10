@@ -4,6 +4,8 @@ tags: support-Application_Lifecycle; support-Cloud_Platform; support-devOps
 locale: en-us
 guid: 373a27f2-990b-4257-bc8d-4d6d33c41ff0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=656%3A500&mode=design&t=rzWSTBJIapfhmERp-1
 ---
 
 # Environment in maintenance mode

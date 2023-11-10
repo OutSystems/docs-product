@@ -4,6 +4,8 @@ summary: Learn how to create a simple Line or Area chart in OutSystems.
 locale: en-us
 guid: 2b5fe8d2-2a3d-4957-bd07-951d20a824d7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:491
 ---
 # Create Line and Area Charts
 

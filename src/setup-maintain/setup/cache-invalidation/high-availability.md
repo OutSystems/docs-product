@@ -4,6 +4,8 @@ tags: version-11; support-Installation_Configuration
 locale: en-us
 guid: a86cf4a3-e053-46a4-b873-373624fda83d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2569%3A875&mode=design&t=kfTANqFRrMacskax-1
 ---
 
 # OutSystems cache invalidation with high-availability
@@ -69,8 +71,10 @@ _Note:_ There are alternatives to the `autoheal` strategy and you have the abili
 
 RabbitMQ nodes and CLI Tools use a cookie to determine whether they are allowed to communicate with each other. 
 For a CLI tool and a node to be able to communicate they must have the same shared secret called the Erlang cookie. Therefore before you aggregate the nodes into a single cluster it is necessary to have the same secret across all the nodes in the cluster. 
-For more information on the Erlang cookie and file location check RabbitMQ [official documentation](<https://www.rabbitmq.com/cli.html#erlang-cookie>).
-Make sure all machines can communicate with each other. If not, please add entries in the respective host files which are located at `<C:\Windows\System32\drivers\etc>`.
+See [Command Line Tools](https://www.rabbitmq.com/cli.html#erlang-cookie) from the official RabbitMQ documentation for more information on the Erlang cookie and file location.
+Make sure all machines can communicate with each other by confirming:
+1. The DNS of the hostnames used resolve correctly.
+1. The TCP ports required for RabbitMQ clustering are open in each node. See [Networking and RabbitMQ](https://www.rabbitmq.com/networking.html#epmd-port) from the official RabbitMQ documentation for more information about the port requirements.
 
 <div class="info" markdown="1">
 

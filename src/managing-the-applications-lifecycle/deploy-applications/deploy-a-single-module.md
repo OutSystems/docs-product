@@ -4,6 +4,8 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: ee8de340-e9d3-4392-8c8e-a2f3d2c02340
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:54
 ---
 
 # Deploy a Single Module

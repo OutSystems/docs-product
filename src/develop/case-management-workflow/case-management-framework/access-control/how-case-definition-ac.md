@@ -4,6 +4,7 @@ summary: After enabling access control for a case definition, you can grant acce
 guid: 32f3c433-fd1e-4bd3-861b-32e13f5d157d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to grant or revoke access to a case definition

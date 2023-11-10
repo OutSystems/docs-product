@@ -4,6 +4,7 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 74EB0BCA-31AD-4EA8-8892-6FA2A2011664
 app_type: traditional web apps, reactive web apps
+platform-version: o11
 ---
 
 # SEO for OutSystems Reactive Web apps vs Traditional Web apps

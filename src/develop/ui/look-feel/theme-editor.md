@@ -4,6 +4,7 @@ tags: support-application_development; support-Front_end_Development
 locale: en-us
 guid: 5ee100a0-6f04-4289-8f48-5ceff38331e7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Customize the look of your app with Theme Editor

@@ -4,6 +4,8 @@ tags: support-application_development; support-Application_Lifecycle; support-de
 locale: en-us
 guid: 12a00b35-9fbb-497f-a3f1-4e0017f401bd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # LifeTime API v1

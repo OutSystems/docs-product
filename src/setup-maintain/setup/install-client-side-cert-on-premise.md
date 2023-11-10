@@ -4,6 +4,8 @@ Tags:
 locale: en-us
 guid: 1fd17ee2-6c15-4f5b-8b37-94113a71eafc
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2635%3A730&mode=design&t=PPL7U8XyNSIpuC5w-1
 ---
 
 # Installing client side certificates on self-managed environments

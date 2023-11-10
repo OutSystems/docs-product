@@ -4,6 +4,7 @@ summary: Learn how to create an Issue Report app using a Workflow Builder templa
 guid: 2eb55ee1-3508-4c49-9303-3d968ef6b3a2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Using the Issue Report template

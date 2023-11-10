@@ -4,6 +4,7 @@ tags: runtime-traditionalwebandreactiveweb
 locale: en-us
 guid: 47803c16-1495-4db3-b9e5-10dbd77538a9
 app_type: traditional web apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure SAML 2.0 Authentication
@@ -31,6 +32,8 @@ The current SAML 2.0 implementation in OutSystems has some limitations outlined 
 * To implement single logout you may need to change the authentication flows of your OutSystems application. Check below for details.
 
 * Though the Users application is multi-tenant, multi-tenancy isn't supported when using SAML 2.0, Azure AD or Okta authentication methods.
+  
+* Supports only flows initiated by the Service Provider.
 
 If you have some logic that must run at each login, or if your IdP has some particular configuration not supported by the Users application, consider cloning the Users module of the Users application and extend it to fulfill your specific requirements.
 

@@ -2,6 +2,8 @@
 locale: en-us
 guid: 509dbbc9-652c-44a5-b276-4df9cf8992fd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Unexpected Link Warning

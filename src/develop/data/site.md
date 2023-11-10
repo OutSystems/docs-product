@@ -4,6 +4,7 @@ tags: support-Mobile_Apps; support-webapps
 locale: en-us
 guid: cab950c5-aaec-4e83-a318-9d74a7e789b4
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use Site Properties to Configure Behaviors at Runtime

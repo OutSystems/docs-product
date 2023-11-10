@@ -4,11 +4,12 @@ summary: Learn about the expanded functionality for human activities that the Ca
 guid: 3dd527f3-1678-47ac-bf40-c86b8116b5b3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Activities
 
-When you need the end user to make a decision or to act before a case advances, you use [Human Activities](../../../ref/lang/auto/Class.Human_Activity.final.md) . In the context of the Case Management framework,  Human Activities are referred to as **activities**.
+When you need the end user to make a decision or to act before a case advances, you use [Human Activities](../../../ref/lang/auto/class-human_activity.md) . In the context of the Case Management framework,  Human Activities are referred to as **activities**.
 
 The Case Management framework includes a set of API actions in the [Case Services API](./ref/auto/CaseServices_API.final.md) module that expand the functionality of activities.
 

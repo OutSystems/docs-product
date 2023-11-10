@@ -4,6 +4,8 @@ summary: Advanced use cases for the Range Slider UI Pattern.
 locale: en-us
 guid: 6b1ad133-79fa-4894-8d51-26e0c33f8f39
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A547&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Range Slider Reference

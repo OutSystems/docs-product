@@ -11,6 +11,8 @@ figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applic
 
 In OutSystems, the policies that grant or revoke permissions to IT users are managed using a role-based permission model. This means that **permissions** to perform operations are configured in **roles** that are then assigned to users.
 
+**Warning:** Since a developer can use OutSystems.RuntimePublic.Db in an extension, he can bypass the security concept and have write access to system tables as well as to **all applications**, regardless of the rights assigned.
+
 ![permission level](images/lt-about-permission-levels-1.png?width=500)
 
 ## Roles

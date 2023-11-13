@@ -5,6 +5,7 @@ locale: en-us
 guid: 8536c396-e702-492a-8a07-ab8c8bc0334c
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:0
 ---
 
 # Actions in Web Applications

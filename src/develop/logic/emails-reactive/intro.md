@@ -5,6 +5,7 @@ locale: en-us
 guid: e08ac080-d0c3-469c-baad-39526af24ded
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Emails in Mobile and Reactive Web Apps

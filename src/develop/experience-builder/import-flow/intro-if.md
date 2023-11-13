@@ -4,6 +4,7 @@ locale: en-us
 guid: a25a16b3-c58f-48cb-9d5f-f2bbeb337eb3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Import Flow Templates

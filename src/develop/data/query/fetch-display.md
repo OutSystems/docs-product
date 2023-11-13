@@ -5,6 +5,7 @@ locale: en-us
 guid: c1c2a735-0768-4e33-8e42-73329e7944ae
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:24
 ---
 
 # Fetch and display data from the database in OutSystems

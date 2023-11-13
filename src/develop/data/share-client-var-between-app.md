@@ -5,6 +5,7 @@ locale: en-us
 guid: e45b6e4c-0b32-4934-ad0b-c74a014df878
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:24
 ---
 
 # Share a Client Variable between apps

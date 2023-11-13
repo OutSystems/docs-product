@@ -5,6 +5,7 @@ locale: en-us
 guid: 5b81d4aa-2da0-4e88-9d14-c17a753a79fa
 app_type: mobile apps
 platform-version: o11
+figma:
 ---
 
 # Secure the Data of your Mobile Apps

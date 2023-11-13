@@ -5,6 +5,7 @@ locale: en-us
 guid: 108f5fa9-feae-4eb4-805e-7c49be5b1e98
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:3
 ---
 
 # Entity relationships

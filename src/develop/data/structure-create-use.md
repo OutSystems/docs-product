@@ -5,6 +5,7 @@ locale: en-us
 guid: eb3ff661-0b92-4f55-9bf3-cceb8dd2c0b9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=174:18
 ---
 
 # Use Structures and Records to Create Compound Data Types

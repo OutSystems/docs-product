@@ -5,6 +5,7 @@ locale: en-us
 guid: 82544d15-d937-4d47-9587-ce5a9c96d45b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Query Data

@@ -3,6 +3,7 @@ locale: en-us
 guid: 6af5d9c9-a99e-4940-bc69-c847ef743f6b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=269:13
 ---
 
 # Designing Waiting Activities

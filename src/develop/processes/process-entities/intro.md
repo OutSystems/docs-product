@@ -4,6 +4,7 @@ locale: en-us
 guid: 8a78e373-ba94-47e7-94e2-0b7dad3296c2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Use Process Entities

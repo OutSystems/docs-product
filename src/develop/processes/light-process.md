@@ -5,6 +5,7 @@ locale: en-us
 guid: 99aedeaf-deb9-440c-b1e7-258b60875e00
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:45
 ---
 
 # Design Scalable Database Queueing Using Light Processes

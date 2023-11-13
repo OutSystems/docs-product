@@ -5,6 +5,7 @@ locale: en-us
 guid: ce023611-1cbc-4c61-a778-2a66167bc7ba
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:24
 ---
 
 # Use Processes - BPT

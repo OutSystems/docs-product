@@ -29,8 +29,6 @@ Take into consideration the following guidelines:
 
 4. See [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md) for special notes about patterns you may be using on a page.
 
- 
-
 ## Prerequisites
 
 Before you proceed with developing accessible apps according to the instructions and recommendations in this document, ensure you have installed:
@@ -38,7 +36,6 @@ Before you proceed with developing accessible apps according to the instructions
 * OutSystems UI version 2.5.0 or later
 
 * Service Studio, the latest version
-
 
 <div class="info" markdown="1">
  
@@ -78,7 +75,6 @@ Screen readers use page titles to tell the users the name of the page they're on
 1. Select the screen to add the title from the list of screens
 1. On the **Properties**, enter the screen title (for example, "Main page") in the **Title** field.
 1. The procedure is complete.
-
 
 <div class="info" markdown="1">
  
@@ -146,7 +142,6 @@ Improve the text readability by letting the users increase the text spacing in y
     ![Setting the accessibility](images/set-accessibility-role-ss.png)
 
 1. The procedure is complete.
-
 
 ### Form labels
 
@@ -220,7 +215,6 @@ The default content Container is the **MainContentWrapper**. To find it, go to *
 To find the  **SkipToContent** action, go to **Logic** > **OutSystemsUI** > **Accessibility**.
 
 ## Modal dialogs
-
 
 <div class="info" markdown="1">
 

@@ -37,7 +37,6 @@ The accessibility analysis shows page structural elements and ARIA annotation. T
  
 </div>
 
-
 ## Fix the accessibility issues
 
 To fix all the issues from this example, follow the instructions in the [Basic accessibility settings](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Basic_accessibility_settings) section. After some quick edits, the page now has a title, the language definition, and the image has an alt text. If you check the page again, the report shows zero errors.

@@ -9,7 +9,7 @@ platform-version: o11
 
 # Accessible Rich Internet Applications roles and attributes
 
-Accessible Rich Internet Applications (ARIA) is a set of accessibility standards. ARIA defines elements to use on top of HTML and OutSystems UI to provide additional information to assistive technology tools. ARIA doesn't change how the page looks. There are ARIA roles, states, and properties. ARIA states and properties are also known as ARIA attributes.
+Accessible Rich Internet Applications (ARIA) is a set of accessibility standards that defines elements to use on top of HTML and OutSystems UI to provide additional information to assistive technology tools. ARIA is a valuable tool for addressing accessibility challenges that go beyond what native HTML handles. There are ARIA roles, states, and properties. ARIA roles define the type of element and its purpose, states indicate the current condition or status of an element, and properties provide additional information about an element. ARIA states and properties are also known as ARIA attributes.
 
 Use ARIA when you need to handle dynamic content or complex page structures. For example, you may have several sections on a page, and setting a **role=main** tells the screen readers where the main content is. If you have a block that takes some time to load, inform the screen readers by setting **aria-busy=true**. A button that opens a popup window can warn users by **aria-haspopup=true**.
 

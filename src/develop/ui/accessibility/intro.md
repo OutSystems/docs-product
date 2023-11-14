@@ -22,19 +22,15 @@ A general recommendation is to start thinking about accessibility **early in the
 Take into consideration the following guidelines:
 
 1. Ensure that your app meets the basic accessibility requirements. See the section [Enabling the built-in accessibility features](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Enabling_the_built-in_accessibility_features).
-
-2. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. See the section [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
-
-3. Keep an eye on complex interactions and dynamic content. Fix the critical issues immediately. You may need to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. See the section [ARIA roles and attributes](aria-roles-and-attributes.md).
-
-4. See [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md) for special notes about patterns you may be using on a page.
+1. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. See the section [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
+1. Keep an eye on complex interactions and dynamic content. Fix the critical issues immediately. You may need to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. See the section [ARIA roles and attributes](aria-roles-and-attributes.md).
+1. See [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md) for special notes about patterns you may be using on a page.
 
 ## Prerequisites
 
 Before you proceed with developing accessible apps according to the instructions and recommendations in this document, ensure you have installed:
 
 * OutSystems UI version 2.5.0 or later
-
 * Service Studio, the latest version
 
 <div class="info" markdown="1">
@@ -59,11 +55,8 @@ To enable the built-in accessibility features in Service Studio, perform the fol
     By setting the **EnableAccessibilityFeatures** set to true, you activate the following features for all screens using the layout:
 
     * **Focus states** - allows you to set and highlight the focus on the current element.
-
     * **Skip to content** - allow the user to skip the navigation elements on the screen, and tab directly to the content.
-
     * **Accessible links** - gives links a higher color contrast.
-
     * **Enhanced contrast** - allows displaying the content on the screen using a contrast ratio perceivable to people with visual impairments.
 1. The procedure is complete.
 
@@ -127,15 +120,13 @@ By default, OutSystems UI provides the correct text contrast ratio to comply wit
 Improve the text readability by letting the users increase the text spacing in your application. To enable this, create an action that runs the accessibility **ToggleTextSpacing** action, by performing the following steps:
 
 1. In your app screen, select the page element that triggers the increased text spacing. For example, a button.
-
 1. To create a new client action, in the **Events** section of the **Properties**, go to the **OnClick** event and select **(new client action)**.
 ![Creating a new client action](images/new-client-action-ss.png)
-
 1. Set the action name as **TextSpacing**, for example.
 
     ![Setting the text spacing client action](images/text-spacing-client-action-ss.png)
 
-   1. On the **Logic** tab, click on **OutSystemsUI**
+1. On the **Logic** tab, click on **OutSystemsUI**
 1. Click on the **Accessibility** Client Actions folder.
 1. Drag the **ToggleTextSpacing** action into the flow.
 

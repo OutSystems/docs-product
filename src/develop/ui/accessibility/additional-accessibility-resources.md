@@ -17,7 +17,6 @@ A section with links to additional information.
 * [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/)
 * [How to Meet WCAG (Quickref Reference)](https://www.w3.org/WAI/WCAG21/quickref/)
 * [Getting started with ARIA](https://a11yproject.com/posts/getting-started-aria/) 
-
  
 ## Evaluation tools
 
@@ -29,7 +28,6 @@ To evaluate the accessibility of your content, you can use the following tools:
 * [Accessibility Developer Tools](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en)
 * [Web Accessibility](https://www.webaccessibility.com/)
 
- 
 ## Screen readers
 
 To test if your application is completely readable, you can use the following test screen readers:

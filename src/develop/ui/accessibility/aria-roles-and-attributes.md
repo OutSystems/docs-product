@@ -68,14 +68,10 @@ Status messages are pieces of text that assistive tools can read and inform the 
 To enable the status message, proceed with the following steps:
 
 1. Select the UI Pattern.
-
-2. On the **Properties** tab, go to the **Attributes** section.
-
-3. Create a **role** attribute.
-
-4. In the value field of the new **role** attribute, enter the status message.
-
-5. The procedure is complete.
+1. On the **Properties** tab, go to the **Attributes** section.
+1. Create a **role** attribute.
+1. In the value field of the new **role** attribute, enter the status message.
+1. The procedure is complete.
 
 The following figure shows an example of a status message:
 
@@ -88,18 +84,12 @@ This section describes how to create readable labels on UI Patterns, such as a b
 To create a label, proceed with the following steps:
 
 1. Select the UI element on the screen.
-
-2. On the **Properties** tab, go to the **Attributes** section.
-
-3. Create a new **aria-label** attribute.
-
-4. In the value field of the new **aria-label** attribute, enter the descriptive label.
-
-5. Select the button label text, for example, **Cancel**.
-
-6. On the **Properties** tab, create a new **aria-label** attribute.
-
-7. Provide the descriptive text you want screen readers to say.
+1. On the **Properties** tab, go to the **Attributes** section.
+1. Create a new **aria-label** attribute.
+1. In the value field of the new **aria-label** attribute, enter the descriptive label.
+1. Select the button label text, for example, **Cancel**.
+1. On the **Properties** tab, create a new **aria-label** attribute.
+1. Provide the descriptive text you want screen readers to say.
 
 The following figure shows an example of a readable label on a **Delete** button. In this example, when the user selects this button, the screen reader says "Delete product".
 
@@ -112,14 +102,12 @@ This section describes how to hide text from the screen readers. If you have a l
 The following steps describe how to hide text in links:
 
 1. In your application screen, select the Link you want to edit.
-
-2. Select the portion of the link text you want to hide, for example, "product" in “View product in store”
-
-3. [Add a CSS class](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS)) that makes that part of the link invisible.
+1. Select the portion of the link text you want to hide, for example, "product" in “View product in store”.
+1. [Add a CSS class](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS)) that makes that part of the link invisible.
 
     ![Hiding text in buttons or links](images/hiding-text-in-buttons-or-links-ss.png?width=350)
 
-4. The procedure is complete.
+1. The procedure is complete.
 
 ### Adding detailed descriptions for short labels
 
@@ -128,12 +116,10 @@ You can define what you want screen readers to say when you have short labels in
 The following steps describe how to add an **aria-label** to describe the purpose of your button or link. By doing this, you are enabling screen readers to say full descriptions.
 
 1. Select the button label text, for example, **Cancel**.
-
-2. On the **Properties** tab, create a new **aria-label**attribute.
-
-3. Enter the descriptive text you want screen readers to say.
+1. On the **Properties** tab, create a new **aria-label**attribute.
+1. Enter the descriptive text you want screen readers to say.
 
     ![Adding detailed descriptions to short labels](images/adding-detailed-descriptions-short-labels-ss.png)
 
-4. The procedure is complete.
+1. The procedure is complete.
 

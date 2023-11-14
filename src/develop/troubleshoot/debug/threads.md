@@ -4,6 +4,7 @@ locale: en-us
 guid: 6ed6cc03-b8a8-4bc7-b3b6-e5a7e7fc2e01
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4520%3A3272&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # Threads

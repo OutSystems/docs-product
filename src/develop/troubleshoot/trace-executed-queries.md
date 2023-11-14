@@ -4,6 +4,7 @@ locale: en-us
 guid: 179d378b-8fcb-4446-b8c6-b67abeb1e608
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:136
 ---
 
 # Trace executed queries back to your OutSystems applications

@@ -19,7 +19,7 @@ When developing OutSystems apps, add ARIA roles, states, and properties by editi
 
 ## Set ARIA as a static property
 
-This ARIA property doesn't change when the app runs. To add the ARIA roles or attributes, select the widget, go to the **Properties** tab, and add the role or attribute in the **Attributes** section.
+The ARIA property doesn't change when the app runs. To add the ARIA roles or attributes, select the widget, go to the **Properties** tab, and add the role or attribute in the **Attributes** section.
 
 ![Setting aria as a static property](images/set-aria-as-a-static-property-ss.png)
 
@@ -35,7 +35,7 @@ If the form is invalid, because one of the required fields is missing or a value
 
 ![Setting the aria property dynamically](images/set-aria-dynamically-ss.png)
 
-## The built-in ARIA actions
+## Built-in ARIA actions
 
 These are the built-in actions that support setting ARIA attributes. Use them to set the ARIA properties in your logic flows.
 
@@ -49,7 +49,7 @@ To find the **SetAriaHidden** action, go to the **Logic** tab > **OutSystemsUI**
 
 To change the ARIA role of the Alert pattern, use the **SetAccessibilityRole** action. 
 To find the **SetAccessibilityRole** action, go to the **Logic** tab > **OutSystemsUI** > **Accessibility** 
-For more information, see the [Alert pattern](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Alert_pattern) section in this document.
+For more information, refer to [Alert pattern](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Alert_pattern) section in this document.
 
 <div class="info" markdown="1">
  
@@ -65,7 +65,7 @@ This section shows some examples of how you can use ARIA to extend the functiona
 
 Status messages are pieces of text that assistive tools can read and inform the users about the state of each action. Enabling these messages lets screen readers tell the users about the status of the current action.
 
-To enable the status message, proceed with the following steps:
+To enable the status message, do the following steps:
 
 1. Select the UI Pattern.
 1. On the **Properties** tab, go to the **Attributes** section.
@@ -81,7 +81,7 @@ The following figure shows an example of a status message:
 
 This section describes how to create readable labels on UI Patterns, such as a button or a link.
 
-To create a label, proceed with the following steps:
+To create a label, do the following steps:
 
 1. Select the UI element on the screen.
 1. On the **Properties** tab, go to the **Attributes** section.
@@ -95,11 +95,11 @@ The following figure shows an example of a readable label on a **Delete** button
 
 ![Creating readable labels](images/creating-readable-labels-ss.png)
 
-### Hiding text in buttons or links
+### Hide text in buttons or links
 
 This section describes how to hide text from the screen readers. If you have a link with a readable text description, for example, "View product in store", you can hide a portion of the text. All text set as hidden is invisible on the screen, but screen readers are able to read the full description.
 
-The following steps describe how to hide text in links:
+ To hide text in links, do the following:
 
 1. In your application screen, select the Link you want to edit.
 1. Select the portion of the link text you want to hide, for example, "product" in “View product in store”.
@@ -111,9 +111,10 @@ The following steps describe how to hide text in links:
 
 ### Adding detailed descriptions for short labels
 
-You can define what you want screen readers to say when you have short labels in buttons or links. For example, a **Cancel** button.
 
-The following steps describe how to add an **aria-label** to describe the purpose of your button or link. By doing this, you are enabling screen readers to say full descriptions.
+You can define what you want screen readers to say when you have short labels on buttons or links. For example, a **Cancel** button. The **aria-label** describes the purpose of the button or link. This enables screen readers to say full descriptions.
+
+To add an **aria-label**, do the following:
 
 1. Select the button label text, for example, **Cancel**.
 1. On the **Properties** tab, create a new **aria-label**attribute.

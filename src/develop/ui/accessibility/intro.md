@@ -15,23 +15,16 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
-Having accessible apps, apps that all people can use, is important for ethical, practical, and often legal reasons. You can build apps conformant with the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21) (WCAG) thanks to the user interface (UI) features OutSystems created with accessibility in mind. You can also customize the UI and the app logic to accommodate the criteria you want to achieve.
+Ensuring the availability of accessible apps that everyone can use is crucial for ethical, practical, and often legal reasons. OutSystems has developed user interface (UI) features with accessibility in mind, allowing you to create apps that comply with the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21) (WCAG). Additionally, you have the flexibility to tailor both the UI and app logic to meet your specific accessibility goals.
 
-A general recommendation is to start thinking about accessibility **early in the development phase**, test often, identify the issues, and fix the issues or provide workarounds. In this document, you can find some techniques for meeting your accessibility level.
+A general recommendation is to start thinking about accessibility **early in the development phase**, test often, identify the issues, and fix the issues or provide workarounds. In this document, you can find some techniques for meeting your accessibility needs.
 
-Take into consideration the following guidelines:
+Here are some guidelines to consider for meeting your accessibility needs:
 
-1. Ensure that your app meets the basic accessibility requirements. See the section [Enabling the built-in accessibility features](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Enabling_the_built-in_accessibility_features).
-1. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. See the section [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
-1. Keep an eye on complex interactions and dynamic content. Fix the critical issues immediately. You may need to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. See the section [ARIA roles and attributes](aria-roles-and-attributes.md).
-1. See [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md) for special notes about patterns you may be using on a page.
-
-## Prerequisites
-
-Before you proceed with developing accessible apps according to the instructions and recommendations in this document, ensure you have installed:
-
-* OutSystems UI version 2.5.0 or later
-* Service Studio, the latest version
+1. Ensure that your app meets the basic accessibility requirements. For more information, refer to [Enabling the built-in accessibility features](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Enabling_the_built-in_accessibility_features).
+1. Early in development, test your app against the accessibility success criteria for the level you are targeting and fix the issues. For more information, refer to [Testing and fixing accessibility issues](testing-fixing-accessibility-issues.md).
+1. Pay close attention to complex interactions and dynamic content. Fix the critical issues immediately. Use ARIA to provide more information to the assistive technology tools and improve the structure of your pages. You can do that with ARIA. Refer to [ARIA roles and attributes](aria-roles-and-attributes.md).
+1. Refer to [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md) for special notes about patterns you may be using on a page.
 
 <div class="info" markdown="1">
  
@@ -41,9 +34,9 @@ OutSystems UI is often updated to support more accessibility features. For more 
 
 ## Enabling the built-in accessibility features
 
-OutSystems has a lot of built-in accessibility features, such as creating applications with the right contrast ratio, focus, and skip to content settings. To start developing accessible apps, you need to activate the accessibility feature in Service Studio. If your app uses complex interactions or design, you may need specific customization and development, covered in [ARIA roles and attributes](aria-roles-and-attributes.md) and [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md).
+OutSystems has many built-in accessibility features, such as creating applications with the right contrast ratio, focus, and skip-to-content settings. To develop accessible apps, you must activate the accessibility feature in Service Studio. In that case, you may need specific customization and development, covered in [ARIA roles and attributes](aria-roles-and-attributes.md) and [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md).
 
-To enable the built-in accessibility features in Service Studio, perform the following steps:
+To enable the built-in accessibility features in Service Studio, do the following steps:
 
 1. Go to **UI Flows** and click on **Layouts**
 1. Expand the layout you're using.
@@ -56,13 +49,13 @@ To enable the built-in accessibility features in Service Studio, perform the fol
 
     * **Focus states** - allows you to set and highlight the focus on the current element.
     * **Skip to content** - allow the user to skip the navigation elements on the screen, and tab directly to the content.
-    * **Accessible links** - gives links a higher color contrast.
+    * **Accessible links** - generates links with high color contrast
     * **Enhanced contrast** - allows displaying the content on the screen using a contrast ratio perceivable to people with visual impairments.
 1. The procedure is complete.
 
 ### Page title
 
-Screen readers use page titles to tell the users the name of the page they're on. To define the page titles for accessibility, perform the following steps:
+Screen readers use page titles inform users of the name of the page they're on. To define the page titles for accessibility, perform the following steps:
 
 1. On the **Interface** tab, go to **UI Flows**
 1. Select the screen to add the title from the list of screens
@@ -77,13 +70,13 @@ The default page title of the log-in page is blank. Navigate to **UI Flows** > *
 
 ### Page language settings for screen readers
 
-The locale of the app defines the language of the page. For more information see [Multilingual Reactive Web and Mobile Apps](../multilingual-tp/intro.md).
+The locale of the app defines the language of the page. For more information refer to[Multilingual Reactive Web and Mobile Apps](https://success.outsystems.com/documentation/11/developing_an_application/design_ui/multilingual_reactive_web_and_mobile_apps/).
 
 ### Image text alternatives
 
 Image text alternatives, also known as alt text or alternative text, is a string of text that describes what's in the image. Adding image text alternatives allows screen readers to read the description of the images.
 
-To set an alternative text to an image, execute the following steps:
+To set an alternative text to an image, do the following steps:
 
 1. Select your image, and go to the  **Properties**.
 1. In the **Attributes** section, create an **alt**.
@@ -91,15 +84,15 @@ To set an alternative text to an image, execute the following steps:
 
     ![Adding text alternative to images](images/image-text-alternatives-ss.png)
 
-After following these steps, for each of the used images, and published the module, you can test the image text alternatives by using a screen reader.
+After adding alt-text to an image, for each of the used images, and published the module, you can test the image text alternatives by using a screen reader.
 
 ### Text headings
 
-Text headings are useful for users to understand the structure of a page visually. Having different text sizes, larger than normal text, helps the visual guidance on the page, and is quite helpful for users with cognitive disabilities. Also, text readers use headings to help users to navigate a trough a page.
+Text headings are a valuable visual aid for users to understand the page structure. Incorporating varying text sizes, especially larger ones, enhances visual guidance on the page and benefits users with cognitive disabilities. Moreover, text-to-speech readers rely on headings to assist users in navigating through a page.
 
-To ensure you have a proper content organization in your app, set up the heading structure. Add [a heading element](https://www.w3.org/WAI/tutorials/page-structure/headings/), for example, **h1**, by enclosing the text in the HTML widget and specifying **h1** as the tag.
+To ensure proper content organization within your app, establish a clear heading structure. Add [a heading element](https://www.w3.org/WAI/tutorials/page-structure/headings/), for example, **h1**, by enclosing the text in the HTML widget and specifying **h1** as the tag.
 
-To set the text headings, perform the following steps:
+To set the text headings, do the following steps:
 
 1. On the toolbox, search for the **HTML Element** widget (1)
 1. Drag it to the screen (2).
@@ -109,7 +102,7 @@ To set the text headings, perform the following steps:
 
     ![Setting text headings](images/text-headings-ss.png)
 
-After following these steps, for each of the headings, and published the module, you can test them using a screen reader.
+On setting the headings, you can test them using a screen reader.
 
 ### Text color contrast
 

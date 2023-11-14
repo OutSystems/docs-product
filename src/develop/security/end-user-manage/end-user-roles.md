@@ -5,6 +5,7 @@ locale: en-us
 guid: 0aa8f19f-5429-4b1d-bd3e-48575eb4ffc7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Grant and Revoke End User Roles

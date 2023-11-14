@@ -5,6 +5,7 @@ locale: en-us
 guid: C07BCA11-7DB2-49FD-B01B-97EBFBDCF36F
 app_type: traditional web apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Search engine optimization for your OutSystems apps 

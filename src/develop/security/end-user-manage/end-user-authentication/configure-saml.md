@@ -5,6 +5,7 @@ locale: en-us
 guid: 47803c16-1495-4db3-b9e5-10dbd77538a9
 app_type: traditional web apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:72
 ---
 
 # Configure SAML 2.0 Authentication

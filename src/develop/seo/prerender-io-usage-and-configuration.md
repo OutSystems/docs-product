@@ -5,6 +5,7 @@ locale: en-us
 guid: 4E680AB9-9BF6-41B2-9537-C3325FF673F5
 app_type: mobile apps, reactive web apps
 platform-version: o11, ODC
+figma:
 ---
 
 # Best practices - Prerender.io usage and configuration

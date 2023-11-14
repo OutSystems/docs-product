@@ -5,6 +5,7 @@ locale: en-us
 guid: 7D2154CF-186A-4671-89FA-88C7C25FBBC8
 app_type: traditional web apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3329%3A27076&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # Improved crawlability for Reactive Web apps  

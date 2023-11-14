@@ -5,6 +5,7 @@ locale: en-us
 guid: 825d2aff-000b-4b0e-89ab-de54c816beb6
 app_type: traditional web apps
 platform-version: o11
+figma:
 ---
 
 # Secure HTTP Requests

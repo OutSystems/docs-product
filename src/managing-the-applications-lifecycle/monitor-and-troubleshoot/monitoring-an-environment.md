@@ -48,9 +48,7 @@ Screen Requests
 
     It allows you to understand which Mobile and Reactive Web screens are taking too long to be delivered to end users.
 
-<a id="service-actions-logs"></a>
-
-Service Actions
+<a id="service-actions-logs">Service Actions</a>
 :   This screen displays the time the server took to execute a Service Action.
 
     The amount of information in each Service Actions log depends on the [Logging Level set for the Module where that Service Action lives](../../develop/troubleshoot/troubleshoot-service.md#how-to-change-the-logging-detail-level-for-service-action). The following image shows the details of an error log entry, available at `Troubleshoot` and `Full` Logging Levels.

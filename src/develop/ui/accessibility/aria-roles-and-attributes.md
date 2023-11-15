@@ -71,7 +71,6 @@ To enable the status message, do the following steps:
 1. On the **Properties** tab, go to the **Attributes** section.
 1. Create a **role** attribute.
 1. In the value field of the new **role** attribute, enter the status message.
-1. The procedure is complete.
 
 The following figure shows an example of a status message:
 
@@ -107,10 +106,7 @@ This section describes how to hide text from the screen readers. If you have a l
 
     ![Hiding text in buttons or links](images/hiding-text-in-buttons-or-links-ss.png?width=350)
 
-1. The procedure is complete.
-
 ### Adding detailed descriptions for short labels
-
 
 You can define what you want screen readers to say when you have short labels on buttons or links. For example, a **Cancel** button. The **aria-label** describes the purpose of the button or link. This enables screen readers to say full descriptions.
 
@@ -121,6 +117,4 @@ To add an **aria-label**, do the following:
 1. Enter the descriptive text you want screen readers to say.
 
     ![Adding detailed descriptions to short labels](images/adding-detailed-descriptions-short-labels-ss.png)
-
-1. The procedure is complete.
 

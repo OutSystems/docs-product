@@ -69,8 +69,6 @@ To configure the Mater Detail pattern for accessibility, proceed with the follow
 
     ![Setting the Master detail set content focus action](images/master-detail-setcontentfocus-ss.png)
 
-1. The procedure is complete.
-
 ### Demo
 
 OutSystems recommends that you create a sample screen from the **Master Detail** Screen Template and check the accessibility settings in a working example.

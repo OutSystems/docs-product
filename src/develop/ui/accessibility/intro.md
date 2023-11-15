@@ -51,7 +51,6 @@ To enable the built-in accessibility features in Service Studio, do the followin
     * **Skip to content** - allow the user to skip the navigation elements on the screen, and tab directly to the content.
     * **Accessible links** - generates links with high color contrast
     * **Enhanced contrast** - allows displaying the content on the screen using a contrast ratio perceivable to people with visual impairments.
-1. The procedure is complete.
 
 ### Page title
 
@@ -60,7 +59,6 @@ Screen readers use page titles inform users of the name of the page they're on. 
 1. On the **Interface** tab, go to **UI Flows**
 1. Select the screen to add the title from the list of screens
 1. On the **Properties**, enter the screen title (for example, "Main page") in the **Title** field.
-1. The procedure is complete.
 
 <div class="info" markdown="1">
  
@@ -110,7 +108,7 @@ By default, OutSystems UI provides the correct text contrast ratio to comply wit
 
 ### Text spacing
 
-Improve the text readability by letting the users increase the text spacing in your application. To enable this, create an action that runs the accessibility **ToggleTextSpacing** action, by performing the following steps:
+Improve the text readability by letting the users increase the text spacing in your application. To increase the text spacing, create an action that runs the accessibility **ToggleTextSpacing** actions.
 
 1. In your app screen, select the page element that triggers the increased text spacing. For example, a button.
 1. To create a new client action, in the **Events** section of the **Properties**, go to the **OnClick** event and select **(new client action)**.
@@ -124,8 +122,6 @@ Improve the text readability by letting the users increase the text spacing in y
 1. Drag the **ToggleTextSpacing** action into the flow.
 
     ![Setting the accessibility](images/set-accessibility-role-ss.png)
-
-1. The procedure is complete.
 
 ### Form labels
 
@@ -143,7 +139,7 @@ After following these steps for each input field and published the module, you c
 
 <div class="info" markdown="1">
 
-Use the `aria-labelledby` attribute for more control when setting up relationships between objects and their text labels. For more information, see [Examples of ARIA](aria-roles-and-attributes.md#examples-of-aria). 
+Use the `aria-labelledby` attribute for more control when setting up relationships between objects and their text labels. For more information, refer to [Examples of ARIA](aria-roles-and-attributes.md#examples-of-aria). 
 
 </div>
 

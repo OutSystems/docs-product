@@ -5,6 +5,7 @@ locale: en-us
 guid: bc593b2b-0d5d-45ea-9f3d-4fb99df6dedb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:36
 ---
 
 # Choose One Value from a List

@@ -5,6 +5,7 @@ locale: en-us
 guid: 18044d09-890f-470b-bf4a-d28b992b4f87
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:35
 ---
 
 # Inputs

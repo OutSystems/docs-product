@@ -70,7 +70,7 @@ The following is a description of the logic of the `ServerDataSync` server actio
 1. Obtains the list of changed or added Company records since the last synchronization. The aggregate uses the following filter:
 
         Company.IsActive = True and
-        (Company.ModifiedOn = NullDate() or Company.ModifiedOn >= LastSync)
+        (Company.ModifiedOn = NullDate() or Company.ModifiedOn > LastSync)
 
 1. Obtains the list of all deleted (inactive) Company records since the last synchronization. The aggregate uses the following filter:
 

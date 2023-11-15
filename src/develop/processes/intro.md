@@ -51,9 +51,9 @@ Use Sample Reactive Taskbox component from Forge to implement the Taskbox in Rea
 
 In Traditional Web Apps, the UI of the Taskbox is available by default.
 
-![](images/process-taskbox-highlighted.jpg)
+![](images/process-taskbox-highlighted.png)
 
-![](images/process-taskbox-opened.jpg)
+![](images/process-taskbox-opened.png)
 
 When the end user clicks on a listed task, it is opened and the task instructions are displayed in the Taskbox. Simultaneously, the application navigates automatically to the appropriate Web Screen and displays the appropriate data needed for the end user to accomplish the task.
 

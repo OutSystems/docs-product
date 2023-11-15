@@ -15,7 +15,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 </div>
 
-Ensuring the availability of accessible apps that everyone can use is crucial for ethical, practical, and often legal reasons. OutSystems has developed user interface (UI) features with accessibility in mind, allowing you to create apps that comply with the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21) (WCAG). Additionally, you have the flexibility to tailor both the UI and app logic to meet your specific accessibility goals.
+To ensure the availability of accessible apps that everyone can use is crucial for ethical, practical, and often legal reasons. OutSystems has developed user interface (UI) features with accessibility in mind, allowing you to create apps that comply with the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21) (WCAG). Additionally, you have the flexibility to tailor both the UI and app logic to meet your specific accessibility goals.
 
 A general recommendation is to start thinking about accessibility **early in the development phase**, test often, identify the issues, and fix the issues or provide workarounds. In this document, you can find some techniques for meeting your accessibility needs.
 
@@ -54,7 +54,7 @@ To enable the built-in accessibility features in Service Studio, do the followin
 
 ### Page title
 
-Screen readers use page titles inform users of the name of the page they're on. To define the page titles for accessibility, perform the following steps:
+Screen readers use page titles inform users of the name of the page they're on. To define the page titles for accessibility, do the following steps:
 
 1. On the **Interface** tab, go to **UI Flows**
 1. Select the screen to add the title from the list of screens
@@ -127,7 +127,7 @@ Improve the text readability by letting the users increase the text spacing in y
 
 Labels provide captions to the input fields, describing the information requested from the user. You have to bound the Label widget to inputs in forms to allow screen readers to read each input field caption.
 
-To bind labels with the Forms fields they refer to, perform the following steps:
+To bind labels with the Forms fields they refer to, do the following steps:
 
 1. Select the **Label** widget in the preview (1)
 1. On the **Properties**, go to the **Input Widget** drop-down, and select the widget to associate the label (2).
@@ -135,7 +135,7 @@ To bind labels with the Forms fields they refer to, perform the following steps:
 
 ![Associating labels to forms fields](images/form-labels-ss.png)
 
-After following these steps for each input field and published the module, you can test reading the inputs captions using a screen reader.
+On setting these steps for each input field and publishing the module, you can test reading the inputs captions using a screen reader.
 
 <div class="info" markdown="1">
 
@@ -159,7 +159,7 @@ You can explicitly select an element by using the **SetFocus** action. For examp
 
 ![Setting the focus to an element](images/element-in-focus-ss.png)
 
-To explicitly select an element on a screen, perform the following steps:
+To explicitly select an element on a screen, do the following steps:
 
 1. On the **Interface** tab, select the screen that contains the widget you want to highlight and open it.
 1. On the screen **Properties**, go to **Events**, and select the **OnReady** action from the drop-down menu. The **OnReady** action logic opens.
@@ -173,9 +173,9 @@ After following these steps and published the module, you can test the highlight
 
 ### Skipping to specific content on a page
 
-By default, text readers skip repetitive elements, such as headers and menus, and jump to the main content of a page for reading it. You might want text readers to skip to a specific section of the page, other than the main content. To do this, perform the following steps:
+By default, text readers skip repetitive elements, such as headers and menus, and jump to the main content of a page for reading it. You might want text readers to skip to a specific section of the page, other than the main content. To do this, do the following steps:
 
-To change the default main container, perform the following steps:
+To change the default main container, do the following steps:
 
 1. On the **Interface** tab, go to **UI Flows** and expand the **Layouts**.
 1. Select and expand the layout you're using.

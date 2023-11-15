@@ -31,7 +31,7 @@ Similarly, you can set an ARIA role.
 
 This ARIA property changes when the app runs, depending on a condition. To set an ARIA role or attribute dynamically, use the **If** keyword in the expression of the **Attribute** field. For example, the value of **aria-invalid** in the expression **aria-invalid=If(Form1.Valid, "false", "true")** changes depending on whether the **Form1.Valid** is true or false.
 
-If the form is invalid, because one of the required fields is missing or a value isn't correct for a field, the form is marked with **aria-invalid="true"**. This is a signal to the screen readers to alert the users.
+If the form is invalid, because one of the required fields is missing or a value isn't correct for a field, the form appears as marked with **aria-invalid="true"**. This is a signal to the screen readers to alert the users.
 
 ![Setting the aria property dynamically](images/set-aria-dynamically-ss.png)
 
@@ -53,7 +53,7 @@ For more information, refer to [Alert pattern](https://success.outsystems.com/Do
 
 <div class="info" markdown="1">
  
-The **SetAccessibilityRole** actions is designed to work with the Alert pattern. Alternatively, you can test using SetAccessibilityRole for a child element of widgets.
+The **SetAccessibilityRole** actions work with the Alert pattern. Alternatively, you can test using SetAccessibilityRole for a child element of widgets.
  
 </div>
 

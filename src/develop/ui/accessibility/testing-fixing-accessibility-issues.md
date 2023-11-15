@@ -19,7 +19,7 @@ In Service Studio create a screen, publish the app, and open it in your browser.
 
 ## Test for accessibility
 
-To test your page for accessibility, perform the following steps:
+To test your page for accessibility, do the following steps:
 
 1. Load the page.
 1. Click on the WAVE extension (1) to start testing.

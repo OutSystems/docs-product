@@ -107,3 +107,4 @@ Create actions (e.g. "ShowToast") within the wrapper module and add a JavaScript
 Insert the code that connects the wrapper to the Cordova plugin into a JavaScript element:
 
 ![](<images/plugin-exensibility-js.png>)
+

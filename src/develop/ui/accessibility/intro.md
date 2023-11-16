@@ -32,7 +32,7 @@ OutSystems UI is often updated to support more accessibility features. For more 
 
 </div>
 
-## Enabling the built-in accessibility features
+## Enable the built-in accessibility features
 
 OutSystems has many built-in accessibility features, such as creating applications with the right contrast ratio, focus, and skip-to-content settings. To develop accessible apps, you must activate the accessibility feature in Service Studio. In that case, you may need specific customization and development, covered in [ARIA roles and attributes](aria-roles-and-attributes.md) and [UI Patterns accessibility reference](ui-patterns-accessibility-reference.md).
 
@@ -45,16 +45,16 @@ To enable the built-in accessibility features in Service Studio, do the followin
 
     ![Set the Enable Accessibility Features parameter value to true](images/enabling-accessibility-features-ss.png)
 
-    By setting the **EnableAccessibilityFeatures** set to true, you activate the following features for all screens using the layout:
+By setting the **EnableAccessibilityFeatures** set to true, you activate the following features for all screens using the layout:
 
-    * **Focus states** - allows you to set and highlight the focus on the current element.
-    * **Skip to content** - allow the user to skip the navigation elements on the screen, and tab directly to the content.
-    * **Accessible links** - generates links with high color contrast
-    * **Enhanced contrast** - allows displaying the content on the screen using a contrast ratio perceivable to people with visual impairments.
+* **Focus states** - allows you to set and highlight the focus on the current element.
+* **Skip to content** - allows the user to skip the navigation elements on the screen, and tab directly to the content.
+* **Accessible links** - generates links with high color contrast
+* **Enhanced contrast** - allows displaying the content on the screen using a contrast ratio perceivable to people with visual impairments.
 
 ### Page title
 
-Screen readers use page titles inform users of the name of the page they're on. To define the page titles for accessibility, do the following steps:
+Screen readers use page titles to inform users of the name of the page they're on. To define the page titles for accessibility, do the following steps:
 
 1. On the **Interface** tab, go to **UI Flows**
 1. Select the screen to add the title from the list of screens

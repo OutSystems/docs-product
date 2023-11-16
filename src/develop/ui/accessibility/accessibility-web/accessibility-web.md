@@ -15,36 +15,34 @@ Applies only to Traditional Web Apps
 
 </div>
 
-OutSystems is committed to allowing the development of enterprise-grade applications that meet the highest accessibility standards and guidelines. You also have full freedom to extend the language and create the custom rich, accessible patterns and interfaces you need, by editing HTML markup and ARIA Roles using pure low code or traditional HTML and CSS.
+OutSystems commits to allowing the development of enterprise-grade applications that meet the highest accessibility standards and guidelines. You have full freedom to extend the language and create custom-rich, accessible patterns and interfaces. You can do this by editing HTML markup and ARIA Roles. You can use either pure low code or traditional HTML and CSS for this purpose.
 
-While the accessibility of any application built with OutSystems ultimately depends on the developers and how they implement images, links, forms, headings and all other instances of content, this article shows you some best practices and guidelines you can follow as well as how you can leverage the accessible development accelerators OutSystems provides.
+The accessibility of any application built with OutSystems ultimately depends on the developers and how they implement various elements such as images, links, forms, headings, and all other instances of content. This article aims to provide you with some best practices and guidelines to follow. It also demonstrates how you can leverage the accessible development accelerators that OutSystems provides.
 
 To learn more about accessibility, see [Web Accessibility Perspectives Video (YouTube)](https://www.youtube.com/watch?v=3f31oufqFSM) or read [Accessibility Fundamentals](https://www.w3.org/WAI/fundamentals/accessibility-intro/). This document helps you implement accessibility in your OutSystems applications by adhering to the rules in [WCAG 2.0](https://www.w3.org/TR/WCAG20) to reach the different [levels of accessibility](http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html%23uc-levels-head).
 
 ## Guidelines for implementing accessibility
 
-The following set of guidelines along with the [standards and best practices guide](http://accessibility.arl.org/standards-best-practices/) by Web Accessibility Toolkit will help you in developing more accessible applications.
+The following set of guidelines along, with the [standards and best practices guide](http://accessibility.arl.org/standards-best-practices/) by Web Accessibility Toolkit, helps you in developing more accessible applications.
 
 ### Have readable text with the correct contrast
 
-Font-size, text-color and background-color have huge impact on applications if they do not follow the [WCAG guidelines for contrast accessibility](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html). When [starting a style guide](https://www.outsystems.com/learn/courses/71/style-guide-architectures/) or building stylesheet rules for a pattern, make sure that:
+Font size, text color and background color have a huge impact on applications if they don't follow the [WCAG guidelines for contrast accessibility](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html). When [starting a style guide](https://www.outsystems.com/learn/courses/71/style-guide-architectures/) or building stylesheet rules for a pattern, make sure that:
 
   * Text under 24px should have a **minimum** color contrast ratio of 4.5:1
   * Text 24px or higher should have a **minimum** color contrast ratio of 3:1
 
-To have WCAG compliant color contrast ratio of text in your OutSystems application:
+To have WCAG-compliant color contrast ratio of text in your OutSystems application:
 
 1. Select the element and go to its Styles Editor.
 
     ![](images/accessibility-color-contrast.png?width=550)
 
 1. In the Font section, set the Size and Color.
-
 1. In the Layout section, set the Color to change the color of that element's background. 
-
 1. Use a [color contrast checker tool](https://contrast-ratio.com/) to check if the contrast ratio is acceptable.
 
-Learn more about [accessible colors](http://accessible-colors.com/) or generate a color palette based only on background color and level of accessibility in [Color Safe Website](http://colorsafe.co/).
+Learn more about [accessible colors](http://accessible-colors.com/) or how to generate a color palette based only on background color and level of accessibility on the [Color Safe Website](http://colorsafe.co/).
 
 **WCAG rules achieved:** 
 
@@ -118,9 +116,7 @@ To group and organize widgets in forms, use the Fieldset pattern from OutSystems
     ![](images/accessibility-form-2.png)
 
 1. Add the required Input widgets in the Fieldset patterns and name them.
-
 1. Add Label widgets next to the Input widgets.
-
 1. To associate an input with a label, select the required input in the Input Widget property.
 
     ![](images/accessibility-form-3.png)
@@ -148,9 +144,7 @@ Removing the outline using `:focus { outline: none; }` violates accessibility ru
 To style the outline of a link in focus:
 
 1. Click the CSS button in the Main Editor toolbar.
-
 1. Select the tab with the application name.
-
 1. Add the required style. The following CSS snippet has several options that you can use to provide alternative styling. 
 
 ```css
@@ -171,7 +165,7 @@ Learn more about [outline: none](http://www.outlinenone.com/).
 
 ### Have accessible layouts
 
-The two types of default application templates in OutSystems—the TopMenu and the SideMenu—have layouts that are accessible, making sure they are interpretable by the browser and the screen reader.
+The two types of default application templates in OutSystems—the TopMenu and the SideMenu—have layouts that are accessible, making sure they're interpretable by the browser and the screen reader.
 
 ![](images/accessibilityui-image1.jpg?width=550)
 
@@ -183,7 +177,7 @@ ARIA Roles used:
 
 ### Have accessible keyboard interaction
 
-One important aspect of accessibility is keyboard accessibility. It is essential for people with disabilities and useful for all. 
+One important aspect of accessibility is keyboard accessibility. It's essential for people with disabilities and useful for all. 
 
 OutSystems UI implements accessible keyboard interaction in the UI Web Patterns. The keycodes used in the OutSystems UI Web Patterns are Space(32), Enter(13), ArrowLeft(37), ArrowTop(38), ArrowRight(39), ArrowDown(40) and Escape(27).
 
@@ -223,7 +217,7 @@ For custom interactive elements, you can implement accessible keyboard interacti
 
 ### Have accessible expandable and collapsible elements
 
-Patterns with hidden and collapsible elements must be handled using a custom script so that the change of view states are accessible.
+Patterns with hidden and collapsible elements must use a custom script so that the change of view states are accessible.
 
 OutSystems UI Web Patterns implement accessible expandable and collapsible elements.
 
@@ -246,13 +240,13 @@ setAriaState(elementWrapper, 'aria-expanded', 'true');
 setAriaState(elementItem, 'aria-hidden', false);
 ```
 
-### Set the tabindex for accessible navigation
+### Set the `tabindex` for accessible navigation
 
-You can use the **Tab** key to navigate across elements in a web page. The tabindex attribute specifies the tab order or the navigation order of the elements.
+You can use the **Tab** key to navigate across elements in a web page. The `tabindex` attribute specifies the tab order or the navigation order of the elements.
 
-You should fix the navigation order in the HTML code instead of using positive tabindex values. But there may be instances when the default tab order is misleading. If reordering elements and/or changing the stylesheet cannot alter it, you can set specific tabindex values. Note that using tabindex to compensate for poorly organized source code is considered to be bad practice. 
+You should fix the navigation order in the HTML code instead of using positive `tabindex` values. But there may be instances when the default tab order is misleading. If reordering elements and/or changing the stylesheet can't alter it, you can set specific `tabindex` values. Note that using `tabindex` to compensate for poorly organized source code is bad practice. 
 
-If you have to set the navigation order using the tabindex, set the tabindex in the Extended Properties of the required element.
+If you have to set the navigation order using the `tabindex`, set the `tabindex` in the Extended Properties of the required element.
 
 ![](images/accessibilityui-image2.png)
 
@@ -270,7 +264,7 @@ These widgets are powerful elements for developers to implement accessibility in
 
 ![](images/accessibility-image6.jpg?width=600)
 
-You can also extend these elements to receive ARIA roles, ARIA states, ARIA properties, tabindex or change things based on variables on your screen.
+You can also extend these elements to receive ARIA roles, ARIA states, ARIA properties, `tabindex`, or change things based on variables on your screen.
 
 ![](images/accessibility-image7.png?width=600)
 
@@ -290,7 +284,7 @@ WCAG 2.0 and WCAG 2.1 are sets of stable guidelines that developers need to foll
 
 ### HTML and ARIA extensions
 
-The use of non-semantic elements such as `<div>` and `<span>` with a class attribute are not understandable by accessibility tools. Using HTML semantics clearly describes the meaning to browsers, developers and screen readers, and guarantees the accessibility of the content.
+The use of non-semantic elements such as `<div>` and `<span>` with a class attribute isn't understandable by accessibility tools. Using HTML semantics clearly describes the meaning to browsers, developers and screen readers, and guarantees the accessibility of the content.
 
 ![](images/accessibility-image9.jpg?width=600)
 
@@ -300,7 +294,7 @@ These are a few examples of HTML semantics:
 
 See the [HTML Semantics cheat sheet](https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/) to learn more.
 
-To have a readable structure that is accessibility compliant, implement HTML semantics whenever possible. When not possible, use [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) as an extension of HTML so that it is fully accessible.
+To have a readable structure that's accessibility compliant, implement HTML semantics whenever possible. When impossible, use [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) as an extension of HTML so that it's fully accessible.
 
 WAI-ARIA (Web Accessibility Initiative's Accessible Rich Internet Applications) has roles, states, and properties to help developers describe the meaning of content and works as an extension of HTML. It allows developers to add specific attributes to HTML tags (such as alert or slider).
 
@@ -316,7 +310,7 @@ The following links act as a 'quick-start' guide for embedding accessibility and
 * [Content Design](https://accessibility.digital.gov/content-design/getting-started/)
 * [UX Design](https://accessibility.digital.gov/ux/getting-started/)
 * [Visual Design](https://accessibility.digital.gov/visual-design/getting-started/)
-* [Front-End Developement](https://accessibility.digital.gov/front-end/getting-started/)
+* [Front-End Development](https://accessibility.digital.gov/front-end/getting-started/)
 
 ### Evaluation tools
 

@@ -15,13 +15,13 @@ Applies only to Traditional Web Apps
 
 </div>
 
-The purpose of the Voluntary Product Accessibility Template, or VPAT™, is to assist Federal contracting officials and other buyers in making preliminary assessments regarding the support given by OutSystems to delivery of accessibility standards compliant applications.
+The purpose of the Voluntary Product Accessibility Template, or VPAT™, is to assist Federal contracting officials and other buyers. It helps them make preliminary assessments regarding the support given by OutSystems. This support relates to the delivery of accessibility standards-compliant applications.
 
 ## Summary Table - Supporting Features
 
-The scope of this VPAT includes the ability to create applications that are Section 508 compliant using OutSystems technology. This applies to the custom applications delivered by OutSystems customers and developers, not to the development toolset (e.g. the visual integrated development environment).
+The scope of this VPAT includes the ability to create applications that are Section 508 compliant using OutSystems technology. This applies to the custom applications delivered by OutSystems customers and developers, not to the development toolset (for example, the visual integrated development environment).
 
-Considering that ultimately every application will be designed, developed and delivered by a specific OutSystems customer, all applicable standards in this VPAT are noted as Supports – meaning OutSystems, as a development platform, fully meets the letter and intent of criteria. Responsibility is left to the developer to use the required constructs, configurations, and design patterns of their choice, while abiding to the accessibility compliance requirements. 
+Since a specific OutSystems customer will ultimately design, develop, and deliver every application, this VPAT notes all applicable standards as "Supports." This means that as a development platform, OutSystems fully meets the letter and intent of criteria. The developer is responsible for using the required constructs, configurations, and design patterns of their choice while adhering to accessibility compliance requirements.
 
 | Criteria                                                        | Supporting Features | Remarks and explanations                                                                 |
 |-----------------------------------------------------------------|---------------------|------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ The VPAT Board interprets paragraphs (a) through (k) of this section as consiste
 
 OutSystems publishes a set of facilitators and guidelines that, even though not exhaustive or prescriptive, help OutSystems developers to understand how they can use OutSystems’s capabilities to deliver WCAG compliant applications.
 
-The guidelines are published at [https://www.outsystems.com/goto/AccessibilityComplianceGuidelines](https://www.outsystems.com/goto/AccessibilityComplianceGuidelines)
+Find the guidelines at [https://www.outsystems.com/goto/AccessibilityComplianceGuidelines](https://www.outsystems.com/goto/AccessibilityComplianceGuidelines)
 
 | Criteria | Supporting Features | Remarks and explanations |
 |----------|---------------------|--------------------------|

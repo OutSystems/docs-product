@@ -9,7 +9,7 @@ platform-version: o11
 
 # UI Patterns accessibility reference
 
-The OutSystems UI is designed with the WCAG 2.1 in mind. However, the UI patterns can introduce complex UI interactions in the app. These interactions may not be obvious to the users of assistive technologies. Refer to this section for more information about accessibility related to the UI patterns you may be using.
+The OutSystems UI follows the WCAG 2.1. However, the UI patterns can introduce complex UI interactions in the app. These interactions may not be intuitive to the users of assistive technologies. Refer to this section for more information about accessibility related to the UI patterns you may be using.
 
 ## Alert pattern
 

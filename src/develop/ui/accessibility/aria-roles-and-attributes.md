@@ -52,9 +52,9 @@ To find the **SetAccessibilityRole** action, go to the **Logic** tab > **OutSyst
 For more information, refer to [Alert pattern](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Accessibility#Alert_pattern) section in this document.
 
 <div class="info" markdown="1">
- 
+
 The **SetAccessibilityRole** actions work with the Alert pattern. Alternatively, you can test using SetAccessibilityRole for a child element of widgets.
- 
+
 </div>
 
 ## Examples of ARIA

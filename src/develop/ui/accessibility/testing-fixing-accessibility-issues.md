@@ -32,9 +32,9 @@ To test your page for accessibility, do the following steps:
 There are other issues with this page. There is no heading, and the image is missing the alternative text.
 
 <div class="info" markdown="1">
- 
+
 The accessibility analysis shows page structural elements and ARIA annotation. These elements and annotations come from the OutSystems UI by default.
- 
+
 </div>
 
 ## Fix the accessibility issues

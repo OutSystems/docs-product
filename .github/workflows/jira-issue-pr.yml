@@ -51,7 +51,7 @@ jobs:
         echo "::notice title=JIRA issue ${{ steps.jira.outputs.first_match }}::${{ vars.JIRA_URL }}${{ steps.jira.outputs.first_match }}" 
 
     - name: 'Missing JIRA issue'
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       if: inputs.ignore == false && steps.jira.outputs.first_match == ''
       with:
         script: |

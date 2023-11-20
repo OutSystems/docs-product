@@ -163,12 +163,15 @@ ea43e0f05f6ef9e5d16283d90504749d4e03630de7ea792c70f72b9be6c02e5e
 
 One way to get the apk is by downloading it directly from an Android phone.
 - On an Android phone, download the software that you want.
-- Use the ```adb shell pm list packages -f -3``` command to find the software path (To filter the list, you can use ```| grep <package>```, replacing ```<package>``` with the package you are looking for).
+* Use the `adb shell pm list packages -f -3` command to find the software path (To filter the list, you can use `| grep <package>`, replacing `<package>` with the package you are looking for).
+
 ```sh
 > adb shell pm list packages -f -3 | grep swiftkey
 package:/data/app/~~wY5boYcbiuH6YBc4e8RL9A==/com.touchtype.swiftkey-CSxEcewNZB_BuMgQV55l8A==/base.apk=com.touchtype.swiftkey
 ```
-- Select the full package path out of the list, which is ```package:/data/app/~~wY5boYcbiuH6YBc4e8RL9A==/com.touchtype.swiftkey-CSxEcewNZB_BuMgQV55l8A==/base.apk``` in this example and use the following command to download the apk to your computer.
+
+- Select the full package path out of the list, which is `package:/data/app/~~wY5boYcbiuH6YBc4e8RL9A==/com.touchtype.swiftkey-CSxEcewNZB_BuMgQV55l8A==/base.apk` in this example and use the following command to download the apk to your computer.
+
 ```sh
 > adb pull /data/app/~~wY5boYcbiuH6YBc4e8RL9A==/com.touchtype.swiftkey-CSxEcewNZB_BuMgQV55l8A==/base.apk output.apk
 ```

@@ -116,7 +116,7 @@ To connect your device to the desktop Chrome browser:
 
 1. Open the desktop Chrome browser and type the following URL:
 
-    ```chrome://inspect/#devices```
+    `chrome://inspect/#devices`
   
     _Note:_ If there are no devices listed, you are probably missing the USB drivers on your computer.  
 

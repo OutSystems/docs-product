@@ -5,6 +5,7 @@ locale: en-us
 guid: e4cd9450-4fe2-4145-8f1b-0852ab8c081d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=186:27
 ---
 
 # Accessible Rich Internet Applications roles and attributes

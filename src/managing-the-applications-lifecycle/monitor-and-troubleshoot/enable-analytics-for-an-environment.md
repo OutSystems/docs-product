@@ -5,6 +5,7 @@ locale: en-us
 guid: 7257acb7-f5f1-46a9-a047-ff5a439ae49c
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:124
 ---
 
 # Enable Analytics for an Environment

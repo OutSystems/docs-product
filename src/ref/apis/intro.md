@@ -5,6 +5,7 @@ locale: en-us
 guid: f2cb6eb8-b4dc-437a-9838-0fca9cad116b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # OutSystems APIs

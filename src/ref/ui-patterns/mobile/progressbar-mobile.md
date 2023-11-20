@@ -5,6 +5,7 @@ locale: en-us
 guid: fdef91ac-b3e1-4e49-a652-7921c46c9b35
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=1317%3A1554&mode=design&t=xOFe93sVU3cU3chE-1
 ---
 
 # Progress Bar Reference

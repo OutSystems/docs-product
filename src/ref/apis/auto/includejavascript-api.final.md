@@ -5,6 +5,7 @@ locale: en-us
 guid: 46cbaa3a-33a2-4504-b4c2-bb07e9b00940
 app_type: traditional web apps
 platform-version: o11
+figma:
 ---
 
 # IncludeJavascript API

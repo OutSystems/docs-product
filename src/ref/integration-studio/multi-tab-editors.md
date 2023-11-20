@@ -3,6 +3,7 @@ locale: en-us
 guid: 6fed3c9c-981a-4bb0-9dcb-0960352c4027
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Multi-tab Editors

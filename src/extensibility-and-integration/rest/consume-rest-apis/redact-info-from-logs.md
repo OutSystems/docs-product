@@ -3,6 +3,7 @@ locale: en-us
 guid: 966c33e2-bdc0-4847-91b3-9fbda9b29d9f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=410%3A99&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
 # Redacting information from REST API logs

@@ -3,6 +3,7 @@ locale: en-us
 guid: bdac6bb2-8fa2-4c3b-b006-d30a08fa4566
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Invalid Data Dependency
@@ -15,7 +16,7 @@ The Invalid Data Dependency error is issued in the following situations:
 
 * `'{0}' can depend on single data source only. Remove the references to other data sources.`
   
-    You can create direct data dependencies between two data sources. Using more than two data sources causes this error. 
+    A data source can only depend on another data source. One data source cannot depend on two, or more, data sources. 
 
 * `Loop detected in '{0}'. Edit the data source references to remove circular dependency.`
   

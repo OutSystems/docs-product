@@ -5,6 +5,7 @@ locale: en-us
 guid: C623895D-2A0A-4259-9B65-88C68142E2C9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2534:4614
 ---
 
 # Radar Chart

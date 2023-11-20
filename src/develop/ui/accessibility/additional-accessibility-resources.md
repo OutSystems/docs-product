@@ -5,6 +5,7 @@ locale: en-us
 guid: ee0ffa43-b179-4214-bcd2-3b692817c51c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Links to additional accessibility resources

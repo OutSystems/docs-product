@@ -4,6 +4,7 @@ locale: en-us
 guid: b9d9a9ce-0a4b-4ee4-a574-96d022f3324a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Metadata reference

@@ -7,6 +7,7 @@ locale: en-us
 guid: 8d4c86cd-8f7b-4c79-8dcd-6d4152036b1e
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:341
 ---
 
 # Table Records Widget

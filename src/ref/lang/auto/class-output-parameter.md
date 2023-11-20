@@ -6,6 +6,7 @@ locale: en-us
 guid: e96ab33b-39af-4c68-9283-71881290eb84
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=843:1487
 ---
 
 # Output Parameter

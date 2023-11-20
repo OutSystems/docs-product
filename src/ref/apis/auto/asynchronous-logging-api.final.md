@@ -5,6 +5,7 @@ locale: en-us
 guid: 3f292aa4-1be7-4699-8231-0d465c90297d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Asynchronous Logging API

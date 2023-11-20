@@ -3,6 +3,7 @@ locale: en-us
 guid: b51a153e-2fe4-4721-ac98-8de123fdf804
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:29
 ---
 
 # Impact of Adding Activities to Process Flows

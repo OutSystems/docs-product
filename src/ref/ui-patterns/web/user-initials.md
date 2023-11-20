@@ -5,6 +5,7 @@ locale: en-us
 guid: 02ba4227-0341-4645-8202-58dcb3119d8d
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:618
 ---
 
 # User Initials Reference

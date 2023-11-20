@@ -5,6 +5,7 @@ locale: en-us
 guid: b0e2b293-97b8-47b4-abfe-d5b99df4bc3c
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:359
 ---
 
 # Lightbox Image Reference

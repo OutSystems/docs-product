@@ -5,6 +5,7 @@ locale: en-us
 guid: 73bcc3f2-fbce-4e53-b0c3-a3501d2dc2ff
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:371
 ---
 
 # Master Detail Reference

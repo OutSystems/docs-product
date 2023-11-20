@@ -5,6 +5,7 @@ locale: en-us
 guid: dc811245-bcef-4579-bcee-3530a997eecd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1526:2630
 ---
 
 # Site Property

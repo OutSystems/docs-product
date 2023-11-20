@@ -5,6 +5,7 @@ locale: en-us
 guid: 53e7e31f-233a-4495-8d3c-5f931cb35ccd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:117
 ---
 
 # Create and Use Roles

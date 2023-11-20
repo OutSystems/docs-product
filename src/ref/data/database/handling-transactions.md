@@ -4,6 +4,7 @@ locale: en-us
 guid: cb6c0a9e-1714-484f-90ed-74f2afa98f67
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Handling Transactions

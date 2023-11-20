@@ -5,6 +5,7 @@ locale: en-us
 guid: 3bd954b8-a2db-4065-bac1-a7068aa6f538
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=609:335
 ---
 
 # REST API Structures

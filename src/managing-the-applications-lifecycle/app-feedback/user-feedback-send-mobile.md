@@ -5,6 +5,7 @@ locale: en-us
 guid: 9fd4d828-cf50-4d20-9531-e8514aa8a5a3
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:4
 ---
 
 # Send feedback in mobile apps

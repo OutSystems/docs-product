@@ -3,6 +3,7 @@ locale: en-us
 guid: a69b71e6-0e42-4f5c-9452-a60e5432cd93
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Invalid Aggregate Error

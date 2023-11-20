@@ -5,6 +5,7 @@ guid: 7748225f-8e88-43ea-bed6-29d510530176
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Permissions and Case Management framework actions

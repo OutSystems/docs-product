@@ -5,6 +5,7 @@ locale: en-uscolumnline
 guid: 0A9D1277-D008-4B96-8BCF-F559BEE3374C
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2421:4216
 ---
 
 # Line Chart

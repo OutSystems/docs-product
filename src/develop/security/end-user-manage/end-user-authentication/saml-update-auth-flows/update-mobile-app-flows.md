@@ -1,11 +1,11 @@
 ---
 summary: How to configure SAML 2.0 end user authentication for your mobile applications.
 tags:
-figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3428%3A27876&mode=design&t=hwVzHIFEnTBS3sgv-1
 locale: en-us
 guid: 8b7802cb-bd7b-47e4-a3d1-bc8124ca4856
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3684:28525
 ---
 
 # Updating the login and logout flows of your Mobile App to support SAML 2.0

@@ -5,6 +5,7 @@ locale: en-us
 guid: 2ebf3be6-b46a-4276-94f6-af76e4b07ff0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Log Information in Action Flows

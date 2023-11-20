@@ -5,6 +5,7 @@ locale: en-us
 guid: fc130f38-3ed2-46f5-a1d1-4319f3e37dfb
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=568%3A366&mode=design&t=VUTD7oZE9xvPWlG0-1
 ---
 
 # Accelerators to compose a screen

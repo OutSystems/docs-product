@@ -5,6 +5,7 @@ locale: en-us
 guid: c9bafed1-f783-47d9-9f02-fa30a53c9ae6
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=267%3A131&mode=design&t=rzWSTBJIapfhmERp-1
 ---
 
 # How Application Performance Is Measured
@@ -23,7 +24,7 @@ When end users are using an application, their actions send requests to a server
 
 The following picture shows the request-response cycle and the points where the Platform collects metrics.
 
-![](images/how-application-performance-is-measured.jpg)
+![](images/how-application-performance-is-measured-diag.png)
 
 1. The client sends a request to the server, a request triggered by an end user action in the application.
 1. The request arrives to the server.

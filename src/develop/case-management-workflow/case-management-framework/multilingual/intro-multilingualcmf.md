@@ -5,6 +5,7 @@ guid: 2e31ca9c-b4b9-4e3a-9ed3-81172a775fd4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1907
 ---
 
 # Introduction to multilingual Case Management framework

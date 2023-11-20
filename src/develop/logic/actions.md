@@ -6,6 +6,7 @@ guid: ce518c93-363b-485e-91b3-b4a402ec4579
 helpids: 30110
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=258:28
 ---
 
 # Actions in Reactive Web and Mobile Apps

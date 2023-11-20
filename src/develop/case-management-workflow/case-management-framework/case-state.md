@@ -5,6 +5,7 @@ guid: fc30b404-7533-4e75-9e88-392cf3f454b6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Case status

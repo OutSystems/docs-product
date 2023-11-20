@@ -3,6 +3,7 @@ locale: en-us
 guid: 0fa73852-d845-4c80-8b71-0b9c177a4f81
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:33
 ---
 
 # Impact of Deleting Activities from Process Flows

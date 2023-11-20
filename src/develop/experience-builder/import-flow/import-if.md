@@ -4,6 +4,7 @@ locale: en-us
 guid: c306701e-60ed-4267-9514-2d9834a9523f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4452:2747
 ---
 
 # Creating and Importing Flow Templates

@@ -68,3 +68,4 @@ After following these steps and publishing the module, you can test the pattern 
 |Event| Description  | 
 |---|---|
 |OnSelect: Optional  | Event that returns the current rating value. | 
+

@@ -5,6 +5,7 @@ locale: en-us
 guid: A1458CB9-862F-4F78-B823-E1D0A3453FDE
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2415:4179
 ---
 
 # Column Chart

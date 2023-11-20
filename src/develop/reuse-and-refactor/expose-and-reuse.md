@@ -5,6 +5,7 @@ locale: en-us
 guid: 4b07ffa2-b09c-4ce8-a7b0-7b18aef4ca47
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:11
 ---
 
 # Expose and reuse functionality between modules

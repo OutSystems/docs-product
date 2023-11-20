@@ -5,6 +5,7 @@ locale: en-us
 guid: 831bea2d-593d-47b1-a5f0-00862c4232ea
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Input Parameter - SAP Username

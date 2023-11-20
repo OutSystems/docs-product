@@ -5,28 +5,41 @@ locale: en-us
 guid: a941e1f8-94f8-400c-8e44-fa969cce59d8
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2218:14983
 ---
 
 # Firebase Cloud Messaging Plugin
 
-The [Firebase Cloud Messaging plugin](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) lets you set a notification experience that resorts to Firebase cross-platform messaging solution. Using this plugin you can send normal (with customizable actions and sounds) and silent notifications to your mobile app end-users.
+The [Firebase Cloud Messaging plugin](https://www.outsystems.com/forge/component-overview/12174/cloud-messaging-plugin-firebase) lets you set a notification experience that starts the Firebase cross-platform messaging solution. This plugin lets you send normal and silent notifications to your mobile app users. Normal notifications can include customizable actions and sounds.
 
-While normal notifications have an associated UI with visual and auditory cues and are displayed in the notifications center or in the scope of your app, silent notifications are notifications that have no UI representation. Despite being silent, these notifications can deliver a data package to the app (called extra data), in the form of a list of key-value pairs.
+Normal notifications have a UI that displays visual and auditory cues. The cues either display in the notifications area of the app or in the scope of the app. Silent notifications don't display any visual cues. Notifications can deliver a data package to the app (called extra data) in the form of a key-value pairs list.
 
-To implement and manage the notification experience of our OutSystems apps, you use the [Cloud Messaging Configurator](https://www.outsystems.com/forge/component-overview/13300) app to consume REST API methods that allow you to set up a notification back-end service. After this use the Firebase Cloud Messaging plugin actions to implement basic notifications functionalities on your app.
+OutSystems also has notification features you can use to create custom actions and custom sounds.
 
-As a good practice, verify the plugin is available during runtime in your app to prevent the app from crashing. Use the **Logic** > **Client Actions** > **CloudMessagingPlugin** > **CheckCloudMessagingPlugin** action to check for the plugin availability. If the plugin isn't available to the app, display an error to your users.
+Following is a high-level process describing how to implement and manage the notifications of your OutSystems app.
+
+1. Use the **Cloud Messaging Configurator** app to consume REST API methods that let you set up a back-end notification service.
+
+1. Use the **Firebase Cloud Messaging** plugin actions to implement basic notifications functions on your app.
+
+    <div class="info" markdown="1">
+
+    You can download the [Cloud Messaging Configurator](https://www.outsystems.com/forge/component-overview/13300) app compatible with O11 from [Forge](https://www.outsystems.com/forge/).
+
+    </div>
+
+1. To prevent the app from crashing, verify the plugin is available during runtime in your app. To check the availability of your plugin, from ODC Studio use the **Logic** > **Client Actions** > **CloudMessagingPlugin** > **CheckCloudMessagingPlugin** action. If the plugin isn't available to your app, display an error to your end-users.
 
 <div class="info" markdown="1">
 
 To learn how to install and reference a plugin in your OutSystems apps, and how to install a sample app, see [Adding plugins](../intro.md#adding-plugins).
-Please note that to use this plugin you must comply with the [Firebase prerequisites](https://success.outsystems.com/documentation/11/extensibility_and_integration/mobile_plugins/firebase_plugins/#prerequisites).
+To use this plugin, verify your app meets all the [Firebase prerequisites](https://success.outsystems.com/documentation/11/extensibility_and_integration/mobile_plugins/firebase_plugins/#prerequisites).
 
 </div>
 
 ## Sample app
 
-OutSystems provides a sample app that contains logic for common use cases. Install the Firebase sample app from Forge and then open it in Service Studio.
+OutSystems provides a sample app that contains logic for common use cases. Install the Firebase sample app from [Forge](https://www.outsystems.com/forge/) and then open it in Service Studio.
 
 This sample app shows you how to do the following:
 
@@ -46,11 +59,11 @@ This sample app shows you how to do the following:
 
 ## Compose and Manage push notifications
 
-The following steps show how to create a notification back-end service and how to prepare a mobile app to deal with push notifications:
+The following steps show how to create a back-end notification service and how to prepare a mobile app to deal with push notifications:
 
-1. [Set up a notification back-end service using the send Notifications REST API methods](#set-back-end).
+1. [Set up a back-end notification service using the send Notifications REST API methods](#set-back-end).
 
-1. [Enable basic notification functionalities in your app using the plugin's actions](#enable-notifications).
+1. [Enable basic notification functions in your app using the plugin's actions](#enable-notifications).
 
 1. [Enable notifications with custom actions](#custom-actions).
 
@@ -60,51 +73,57 @@ The following steps show how to create a notification back-end service and how t
 
 1. [Manage the experience of custom actions using the Notifications block](#custom-actions-ux).
 
-## Set up a notification back-end service { #set-back-end }
+## Set up a back-end notification service { #set-back-end }
 
-To set up a notification back-end service, do the following:
+To set up a back-end notification service, do the following:
 
-1. Install the [Cloud Messaging Configurator](https://www.outsystems.com/forge/component-overview/13300) forge component in your environment. This component includes the REST API Methods necessary to send notifications to a list of users or topics.
+1. Install the [Cloud Messaging Configurator](https://www.outsystems.com/forge/component-overview/13300) forge component in your environment. This component includes the REST API methods necessary to send notifications to a list of users or topics.
 
-1. Open the Cloud Messaging Configurator module.
+1. Open **Cloud Messaging Configurator**.
 
-1. In the **APIKey** entity, set **AppId** and **Key** using encrypted values. These values are used to authenticate your REST API, so make sure you keep this secret secure.
+1. In the **APIKey** entity, set **AppId** and **Key** using encrypted values. These values are used to authenticate your REST API, so make sure you keep the encrypted values secure.
 
-    ![Set the Base URL](images/firebase-messaging-base-url-ss.png)
+    ![Screenshot of using the encrypted App ID and Key](images/firebase-messaging-apikey-ss.png)
 
-1. Create a new app to serve as your notification back-end. This app can be Reactive Web or Mobile.
+1. Create a new app to serve as your back-end notification. This app can be a Reactive Web or Mobile.
 
 1. In the new back-end app, create a module.
 
-1. In the newly created module, consume the **Cloud Messaging Configurator** REST API methods. For more details on how to consume a REST API follow this [documentation](../../rest/consume-rest-apis/consume-a-rest-api.md).
+1. In the newly created module, consume the **Cloud Messaging Configurator** REST API methods. For more details on how to consume a REST API, see [Consume one or more REST API methods](../../rest/consume-rest-apis/consume-a-rest-api.md).
 
-1. After importing the REST API methods you get an invalid URL error. In the consumed REST API properties, change the **Base URL** to include your environment address, setting it as `https://<your-environment>/CloudMessagingConfigurator/rest/v1`. Replace `<your-environment>` with your environment address and `<rest-api-version>` with the version you want to use.
+    After importing the REST API methods you may get an invalid URL error. If you get an error, then in the consumed REST API properties, change the **Base URL** to include your stage address, setting it as `https://<your-environment>/CloudMessagingConfigurator/rest/v1`. Replace `<your-environment>` with your environment address and `<rest-api-version>` with the version you want to use.
 
-    ![](images/firebase-messaging-apikey-ss.png)
+    ![Screenshot of the Base URL](images/firebase-messaging-base-url-ss.png)
+
+    <div class="info" markdown="1">
+
+    OutSystems offers two versions for Cloud Messaging Configurator REST APIs based on the features you want to use. See the [reference page](../../../ref/apis/firebase-cloud-api-v1-v2.md) to learn more about the versions.
+
+    </div>
 
 1. Then use the AppId and Key you defined in step 3 to authenticate your REST calls. In the consumed REST API properties, add the following **HTTP headers**:
 
     * `X-Send-AppId` = `<your-appid>`, replacing `<your-appid>` with the **AppId** defined in step 3.
 
-    * `X-Send-Key` = `<your-key>`,, replacing `<your-key>` with the **Key** defined in step 3.
+    * `X-Send-Key` = `<your-key>`, replacing `<your-key>` with the **Key** defined in step 3.
 
-At this point, you can start to create the UI for your notification back-end service. For example, associate a **SendNotifcationToUsers** method to a button to send a notification to all users on the associated Firebase project (using an app with the Cloud Messaging plugin).
+Now you can start to create the UI for your back-end notification service. For example, to send a notification to all users on the associated Firebase project (using an app with the Cloud Messaging plugin), associate a **SendNotifcationToUsers** method to a button.
 
-![Create the UI for your notification](images/fcm-key-sender-config-ss.png)
+![Screenshot of creating the UI for your notification](images/fcm-key-sender-config-ss.png)
 
-You can get the values for the **FCMServerKey** and **SenderID** parameters from the Firebase Console in the **Cloud Messaging** tab of the **Project Settings** page.
+To access values for the parameters **FCMServerKey** and **SenderID**, in the ODC Studio, navigate to **Project Settings** > **Cloud Messaging** > Firebase Console.
 
-![Get parameter values](images/fcm-rest-call.png)
+![Screenshot of getting the parameter values](images/fcm-rest-call.png)
 
-Other methods available are **SendNotificationToTopics**, **SendSilentNotificationToUsers**, and **SendSilentNotificationToTopics**.
+Other available methods include **SendNotificationToTopics**, **SendSilentNotificationToUsers**, and **SendSilentNotificationToTopics**.
 
-## Enable basic notification functionalities in your app { #enable-notifications }
+## Enable basic notification functions in your app { #enable-notifications }
 
-In this section we present you some of the actions that allow you to leverage basic notifications functionalities on your mobile app.
+This section describes some of the actions that you can use to leverage notification functions on your mobile app.
 
-On first use you might want to request permission to receive notifications to your app user. For that you can use the **RegisterDevice** action on initialization of your app. On first use, this action will display a native request permission dialog and upon acceptance of the user, the device will be registered on the Firebase Cloud Messaging service and will be ready to receive notifications. On future verifications you can always use the **CheckPermission** action to verify if the app has permission to receive notifications.
+On first use you might want to send to receive notifications to your app user. For that you can use the **RegisterDevice** action on initialization of your app. On first use, this action displays a native request permission dialog and upon user acceptance, the device is registered on the Firebase Cloud Messaging service and is ready to receive notifications. On future verifications you can always use the **CheckPermission** action to verify if the app has permission to receive notifications.
 
-Alternatively you can also provide an explicit way to register and unregister the device from the Firebase cloud Messaging service. For that you can use the **RegisterDevice / UnregisterDevice** actions and associate them to a UI element such as a toggle.
+Alternatively you can provide an explicit way to register and unregister the device from the Firebase cloud Messaging service using the **RegisterDevice** / **UnregisterDevice** actions. Then associate the actions to a UI element such as a toggle.
 
 ![Logic flow to allow device to enable and disable your app notifications](images/firebase-messaging-logic-register-device-ss.png)
 
@@ -138,6 +157,12 @@ Finally, you might want to give the opportunity to your user to clear all app's 
 
 To enhance your notification with custom actions you must use the **v2 REST API**, using the **ActionList** parameter inside the Notification parameter on the **SendNotificationToTopics** or **SendNotificationToUsers** REST API methods.
 
+<div class="info" markdown="1">
+
+OutSystems offers two versions for Cloud Messaging Configurator REST APIs based on the features you want to use. See the [reference page](../../../ref/apis/firebase-cloud-api-v1-v2.md) to learn more about the versions.
+
+</div>
+
 We have 3 types of custom actions:
 
 1. **Internal route** - Sends an event to be handled by the app, similar to a basic notification click.
@@ -163,7 +188,9 @@ It is important to note the following requirements for custom sounds:
 
 <div class="info" markdown="1">
 
-Check [our documentation](https://success.outsystems.com/documentation/11/developing_an_application/use_data/use_resources/) to learn more about how to use resources.
+* Check [our documentation](https://success.outsystems.com/documentation/11/developing_an_application/use_data/use_resources/) to learn more about how to use resources.
+
+* OutSystems offers two versions for Cloud Messaging Configurator REST APIs based on the features you want to use. See the [reference page](../../../ref/apis/firebase-cloud-api-v1-v2.md) to learn more about the versions.
 
 </div>
 

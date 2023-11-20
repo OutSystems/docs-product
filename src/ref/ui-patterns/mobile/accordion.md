@@ -5,6 +5,7 @@ locale: en-us
 guid: e1c30cdd-a7f1-4ce5-aae5-2dddb7a845b9
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=1413%3A1728&mode=design&t=xOFe93sVU3cU3chE-1
 ---
 
 # Accordion Reference

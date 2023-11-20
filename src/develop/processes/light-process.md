@@ -5,6 +5,7 @@ locale: en-us
 guid: 99aedeaf-deb9-440c-b1e7-258b60875e00
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=273:45
 ---
 
 # Design Scalable Database Queueing Using Light Processes
@@ -20,7 +21,7 @@ To enable light process execution, a process must meet all the following conditi
 * The process flow includes only one **Automatic Activity**, having a simple **Start** > **Automatic Activity** > **End** flow.
 
 * The **Launch On** property of the process is set with a database event.
-    * Only entities with the **Expose Process Events** enabled are allowed to be chosen in the process:
+    * Only entities with the **Expose Process Events** property enabled are allowed to be chosen in the process:
 
         ![](images/expose-process-events-checkbox-ss.png)
 

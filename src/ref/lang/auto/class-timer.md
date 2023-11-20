@@ -5,6 +5,7 @@ locale: en-us
 guid: 92beb602-6c17-4991-a42d-c9860a32326f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=2836%3A4492&mode=design&t=Ix2yojgoXorQvo4C-1
 ---
 
 # Timer

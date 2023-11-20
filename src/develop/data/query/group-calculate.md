@@ -5,6 +5,7 @@ locale: en-us
 guid: d2578f60-c7a2-40fe-8e74-382aecad9b2f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:5
 ---
 
 # Calculate Values from Grouped Data

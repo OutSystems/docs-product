@@ -3,6 +3,7 @@ locale: en-us
 guid: 5a27b7c6-3710-4a8b-807b-6b71e26670d1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=269:3
 ---
 
 # Designing Conditional Paths

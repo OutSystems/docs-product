@@ -4,6 +4,7 @@ locale: en-us
 guid: 2bac9add-33d1-4240-8cc7-d23a897f0415
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:84
 ---
 
 # Allow Integrations With External Databases

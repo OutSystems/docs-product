@@ -5,6 +5,7 @@ locale: en-us
 guid: c9fd26ba-85ea-406d-834a-df6c0399d11a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=928:604
 ---
 
 # How to set up AI Mentor Studio
@@ -75,26 +76,19 @@ Before registering and setting up your infrastructure in AI Mentor Studio, make 
 
 * **LifeTime** is deployed in a **dedicated environment**.
 
-* Your infrastructure uses **OutSystems 11**.
+* Your code analisys environment uses **Platform Server 11.18.1** or later.
 
-* Your development environment uses **Platform Server 11.7.2** or later.
-
-* Your LifeTime environment uses **LifeTime Management Console Release Jul.2019** or later.
+* Your LifeTime environment uses **LifeTime Management Console 11.16.1** or later.
 
 * You have the **Administrator** role in your infrastructure.
 
-* Communication requirements:
+* AI Mentor Studio will use the environment's public DNS hostname to communicate. Check [AI Mentor Studio network requirements](../../setup-maintain/setup/network-requirements.md#ai-mentor-studio) for detailed information.
 
-    * When using **OutSystems account** authentication:
+<div class="info" markdown="1">
 
-        Allow outbound HTTPS communication (port 443) with `https://aimentorstudio.outsystems.com`.
+AI Mentor Studio probes prior to 5.0 require as minimum versions: Platform Server 11.7.2 and LifeTime Management Console Release Jul.2019.
 
-    * When using **IT User account** authentication:
-    
-        Allow inbound and outbound HTTPS communication (port 443) with `https://aimentorstudio.outsystems.com`.
-
-    AI Mentor Studio will use the environment's public DNS hostname to communicate. Check [AI Mentor Studio network requirements](../../setup-maintain/setup/network-requirements.md#ai-mentor-studio) for detailed information.
-
+</div>
 
 ### Register and set up your infrastructure
 

@@ -5,6 +5,7 @@ locale: en-us
 guid: 762585b4-510c-4749-b5d9-646e1c46f2e0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # HTTPRequestHandler API

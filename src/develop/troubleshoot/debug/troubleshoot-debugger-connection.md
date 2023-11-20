@@ -5,6 +5,7 @@ locale: en-us
 guid: dc4e00b1-34e4-4bf0-9fa6-b63c6d4f6719
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4520%3A3279&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # Troubleshoot Debugger Connection Issues

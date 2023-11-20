@@ -6,6 +6,7 @@ locale: en-us
 guid: bec0793d-a9f6-429b-b6dc-a86e4fdb60d3
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:324
 ---
 
 # On Application Resume

@@ -5,6 +5,7 @@ locale: en-us
 guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=255%3A60&mode=design&t=PPL7U8XyNSIpuC5w-1
 ---
 
 # Setting Up OutSystems

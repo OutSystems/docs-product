@@ -5,7 +5,7 @@ locale: en-us
 guid: acab4979-21b8-47ef-8618-48af0944b3a6
 app_type: traditional web apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=280%3A92&mode=design&t=uqSYxgNx69rQxp19-1
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:92
 ---
 
 # Configure Okta Authentication
@@ -32,7 +32,7 @@ The [limitations of the current SAML 2.0 implementation](configure-saml.md#curre
 
 ## Configuring Okta
 
-To configure Okta authentication you must take these general steps:
+To configure Okta authentication you must complete these general steps:
 
 1. Configure general Okta authentication settings in Users app
 1. Create application in the Okta portal
@@ -65,45 +65,39 @@ The following sections describe these steps in detail.
 
     ![Download KeyStore Certificate link](images/okta-config-4-usr.png)
 
-### Create application in the Okta portal
+### Create an application in the Okta portal
 
-1. Sign in to the Okta portal and click **Admin** to go to the Developer Console.
+1. Sign into the Okta portal and click **Admin**.
 
-    ![Go to Developer Console in Okta](images/okta-dashboard.png)
+    This brings you to the Developer Console.
 
-1. Switch to the Classic UI view. Place your mouse cursor over **Developer Console** at the top of the page and select **Classic UI**.
+    ![Go to Admin dashboard Okta](images/okta-admin.png)
 
-    ![Switch to Classic UI in Okta](images/okta-classic-ui.png)
+1. Go to **Applications** > **Applications**.
 
-1. Select **Applications** > **Applications** to open the **Applications** screen.
+    ![Go to Applications dashboard](images/okta-applications.png)
 
-    ![Select Applications in the Applications menu](images/okta-applications-menu.png)
+1. Click **Create App Integration**.
 
-1. Click **Add Application**.
+    ![Click Create App Integration](images/okta-appintegration.png)
 
-    ![Click Add Application in Applications screen](images/okta-add-application.png)
+1. Select the **SAML 2.0** sign-in method and click **Next**.
 
-1. Click **Create New App**.
-
-    ![Create New App button](images/okta-create-new-app.png)
-
-1. Select the platform `Web` and the sign-on method `SAML 2.0`. Click **Create**.
-
-    ![Basic Okta app settings - platform and sign-on method](images/okta-config-1-okta.png)
+    ![Select SAML 2.0 sign-in method](images/okta-saml.png)
 
 1. Enter a name for your application and (optionally) select an app logo.
 
-    ![Basic Okta app settings - name and logo](images/okta-config-2-okta.png)
+    ![Enter basic Okta app settings - name and logo](images/okta-logo.png)
 
 1. Click **Next**.
 
 ### Configure SAML settings of Okta application
 
-1. Configure the fields in **General** > **SAML Settings**.
+1. Configure the fields in **SAML Settings** > **General**.
 
     Enter the values for the **Single sign on URL** and **Audience URI (SP Entity ID)** fields according to what's configured in the Users application.
 
-    ![Okta SAML Settings](images/okta-config-5-okta.png)
+    ![Enter SAML Settings](images/okta-samlsettings.png)
 
 1. Click **Show Advanced Settings** to show some more fields that you must configure.
 
@@ -111,7 +105,7 @@ The following sections describe these steps in detail.
 
     Two particular configuration settings in Okta depend on the value of a setting in the Users app.
 
-    Get back to the Users app, scroll to the **1. Service Provider Connector Settings** section, and click **Show Advanced Options**.
+    Go back to the Users app, scroll to the **Service Provider Connector Settings** section, and click **Show Advanced Options**.
 
     ![Accept Only Signed Login Responses option in the Users app](images/okta-signed-login-responses-usr.png)
 
@@ -123,20 +117,20 @@ The following sections describe these steps in detail.
 
     </div>
 
+1. In the **Signature Certificate** field, click **Browse files** and select the certificate PEM file downloaded from the Users application.
+    ![Browse files and select PEM certificate](images/okta-browse-certificate.png)
+
 1. Select the **Allow application to initiate Single Logout** checkbox.
 
-    ![Single Logout option in Okta](images/okta-config-6-okta.png)
+    ![Single Logout option in Okta](images/okta-single-logout.png)
 
 1. Fill in the **Single Logout URL** and **SP Issuer** fields with the corresponding values from the Users application.  
-    Fill in the **SP Issuer** field with the same value you entered for the **Audience URI (SP Entity ID)** field.
 
-1. In the **Signature Certificate** field, click **Browse...** and select the certificate PEM file downloaded from the Users application.
+    Ensure the **SP Issuer** field is the same as the value you entered for the **Audience URI (SP Entity ID)** field.
 
-    ![Select signature certificate in Okta](images/okta-config-7-okta.png)
+    ![Fill in SP Issuer field](images/okta-sp-issuer.png)
 
-1. Click **Upload Certificate**.
-
-1. In the "Attribute Statements" section, add an attribute for each claim configured in the Users application by clicking **Add Another**.
+1. In the **Attribute Statements** section, add an attribute for each claim configured in the Users application by clicking **Add Another**.
 
     Fill in the **Name** and **Value** fields according to the following suggested values:
 
@@ -145,9 +139,9 @@ The following sections describe these steps in detail.
     Name = `email` /  Value = `user.email`  
     Name = `username` /  Value = `user.login`
 
-    _Note:_ Names and values are **case sensitive**. Consider selecting values from the drop-down instead of typing them.
+    **Note:** Names and values are **case sensitive**. Consider selecting values from the drop-down instead of typing them.
 
-    ![Configuring attribute statements](images/okta-config-8-okta.png)
+    ![Configuring attribute statements](images/okta-add-attribute.png)
 
 1. After creating and filling in the fields, click **Next**.
 
@@ -155,9 +149,9 @@ The following sections describe these steps in detail.
 
     ![Customer or partner question](images/okta-config-9-okta.png)
 
-1. Right-click the **Identity Provider metadata** link and select **Save Link As** to download the Identity Provider (IdP) metadata XML file.
+1. Copy the **Metadata URL** and open it on a browser. Right-click and select **Save As** to download the Identity Provider (IdP) metadata XML file.
 
-    ![Download Identity Provider metadata XML file](images/okta-download-file-okta.png)
+    ![Download Identity Provider metadata XML file](images/okta-metadata-xml.png)
 
 ### Finish configuration in the Users app
 

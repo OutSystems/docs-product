@@ -5,6 +5,7 @@ locale: en-us
 guid: 1aad8f7f-9da7-417a-9cfd-3c159905fc99
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:372
 ---
 
 # Animate Reference

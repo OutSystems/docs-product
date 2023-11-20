@@ -6,6 +6,7 @@ locale: en-us
 guid: d4e8f882-7eb3-4476-a056-c0f4017ea78f
 app_type: traditional web apps
 platform-version: o11
+figma:
 ---
 
 # Upload Widget

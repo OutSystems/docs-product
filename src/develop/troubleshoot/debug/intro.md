@@ -5,6 +5,7 @@ locale: en-us
 guid: 78def0b5-863d-4d58-8ea0-bb9f28bf1ef8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:129
 ---
 
 # Debugging Applications

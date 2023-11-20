@@ -5,6 +5,7 @@ locale: en-us
 guid: abc236ca-9b9d-41ea-9694-7a0148c216b1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:20
 ---
 
 # Pass Data Between Screens With Input Parameters

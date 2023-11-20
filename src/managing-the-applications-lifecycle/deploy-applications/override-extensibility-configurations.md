@@ -5,6 +5,7 @@ locale: en-us
 guid: 09207082-720b-48a1-980b-e8937925e461
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:766
 ---
 
 # Override the Default Mobile Extensibility Configurations

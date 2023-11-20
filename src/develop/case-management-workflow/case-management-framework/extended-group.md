@@ -5,6 +5,7 @@ guid: d8d7450e-afb2-4019-95a2-92ffc7a31acf
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Groups for case management apps

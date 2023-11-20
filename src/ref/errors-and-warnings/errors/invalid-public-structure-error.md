@@ -3,6 +3,7 @@ locale: en-us
 guid: 6c059ca7-c68d-44de-9352-267cde943cff
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Invalid Public Structure Error

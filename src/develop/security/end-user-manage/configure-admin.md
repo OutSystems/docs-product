@@ -5,6 +5,7 @@ locale: en-us
 guid: 319FF915-A2E9-4A0B-AC8A-93E0A511E997
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3727:28564
 ---
 
 # Configure the Administrator user of the Users app

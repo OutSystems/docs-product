@@ -4,6 +4,7 @@ locale: en-us
 guid: 4b9ff75f-4e89-4a94-85bc-f6c7c3cc3f9c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A524&mode=design&t=GF97AOUqsRf9tsAh-1
 ---
 
 # Encrypting data for HIPAA compliance

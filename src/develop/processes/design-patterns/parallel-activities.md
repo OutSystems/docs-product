@@ -3,6 +3,7 @@ locale: en-us
 guid: 9ecd6d17-54b0-4f53-9fcc-b6c9cee561e5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=269:7
 ---
 
 # Designing Parallel Activities

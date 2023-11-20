@@ -4,6 +4,7 @@ locale: en-us
 guid: 310843b2-84da-4461-99e8-c2dc6be41778
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Mapping External DB Data Types to OutSystems Data Types

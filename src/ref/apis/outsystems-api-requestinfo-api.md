@@ -5,6 +5,7 @@ locale: en-us
 guid: fd316f0d-9003-4b26-a137-96c4b65afd08
 app_type: traditional web apps
 platform-version: o11
+figma:
 ---
 
 # outsystems.api.requestInfo API

@@ -5,6 +5,7 @@ locale: en-us
 guid: 9fe6a555-54b5-4521-a880-36846463903d
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A399&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Bullets Reference

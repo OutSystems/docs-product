@@ -5,6 +5,7 @@ locale: en-us
 guid: FDBC3311-C94C-4C9C-8CC1-E7F26FC76F02
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1607:3223
 ---
 
 # AI Mentor Studio API authentication

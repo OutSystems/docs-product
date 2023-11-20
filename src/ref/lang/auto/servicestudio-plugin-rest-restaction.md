@@ -5,6 +5,7 @@ locale: en-us
 guid: 936d4e2d-d929-4586-bdf0-ba3cb5fd6cd7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # REST API Method

@@ -5,6 +5,7 @@ locale: en-us
 guid: 3eb6105e-2157-472f-972f-f3cc133043a5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:40
 ---
 
 # Pick Only One Option in a Group of Choices

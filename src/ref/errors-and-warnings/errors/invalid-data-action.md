@@ -3,6 +3,7 @@ locale: en-us
 guid: b3d0a226-12a9-4e71-8d5e-059cf703bf99
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Invalid Data Action

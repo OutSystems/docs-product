@@ -5,6 +5,7 @@ locale: en-us
 guid: 7505a6aa-329a-4f60-a1a6-e7d3bd727943
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1443:2027
 ---
 
 # Notification Reference

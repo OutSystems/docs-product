@@ -4,6 +4,7 @@ locale: en-us
 guid: f5ba93ec-ca75-43eb-a9ab-e0e83596927d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:73
 ---
 
 # Control Who Creates Applications

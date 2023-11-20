@@ -67,7 +67,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: 'Visual assets validation failed'
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: |
             core.error('Check Pull Request #${{ inputs.pull-request }} comments for detailed report on the issues related to visual assets.');

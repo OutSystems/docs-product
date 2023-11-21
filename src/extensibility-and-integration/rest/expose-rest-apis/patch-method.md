@@ -86,7 +86,7 @@ Booleans are a particular case, since there are only two possible values, making
 
 1. To ensure that the code isn’t case-sensitive, use the [ToLower](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#ToLower) function in a condition like the following example:
 
-    ```ToLower(Contact.isActive) = "true" or ToLower(Contact.isActive) = "false"```
+    `ToLower(Contact.isActive) = "true" or ToLower(Contact.isActive) = "false"`
 
 ### PATCH method implementation
 

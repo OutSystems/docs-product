@@ -5,6 +5,7 @@ locale: en-us
 guid: f7a12f2e-55b0-4a1a-8a50-a7b2e7fff65e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=1043%3A13342&mode=design&t=VUTD7oZE9xvPWlG0-1
 ---
 
 # Right-to-Left

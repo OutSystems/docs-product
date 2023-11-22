@@ -83,7 +83,7 @@ A PEM certificate is commonly presented as a set of .PEM files (namely a certifi
 
 * **Certificate Chain:** The intermediate certificate trust chain. This field is optional, however, if the Certificate Authorities isn't already trusted on all browsers by default, this is mandatory.
 
-* **PEM Password:** If the private key is protected with a header such as ```----- BEGIN ENCRYPTED PRIVATE KEY -----```, the password must be entered.
+* **PEM Password:** If the private key is protected with a header such as `----- BEGIN ENCRYPTED PRIVATE KEY -----`, the password must be entered.
 
 ![](images/ssl-domain-cloud-lt-2.png)
 

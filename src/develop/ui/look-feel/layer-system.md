@@ -5,6 +5,7 @@ locale: en-us
 guid: c3a6352a-f92a-4d3a-9bfd-8bdd93f411ae
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # OutSystems UI Layer System

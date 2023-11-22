@@ -4,6 +4,8 @@ tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: b6ccd0f3-6d0c-4628-bb6a-b9c9e40bc3a0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:9
 ---
 
 # Create a One-to-Many Relationship

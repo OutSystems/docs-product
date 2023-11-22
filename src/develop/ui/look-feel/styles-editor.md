@@ -3,6 +3,8 @@ summary: Styles Editor is a panel for editing look and feel of widgets, such as 
 locale: en-us
 guid: 17ffefde-81fc-4aff-af1e-b99a12347194
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:104
 ---
 
 # Change the look of widgets with Styles Editor

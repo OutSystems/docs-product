@@ -4,6 +4,8 @@ tags: support-Application_Lifecycle-featured
 locale: en-us
 guid: 2a095f90-2b09-4d7c-9013-71a5ac4d9653
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:10
 ---
 
 # Deploy an Application

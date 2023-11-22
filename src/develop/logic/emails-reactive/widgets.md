@@ -4,6 +4,8 @@ tags: support-application_development,
 locale: en-us
 guid: 3e6b3c93-dee6-4e15-860b-fa9a627825ba
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1132:15164
 ---
 
 # Widgets in emails
@@ -36,4 +38,4 @@ You can use the following widgets in Emails.
 | Link        | Adds a navigational element.                        |                                                                |
 | List        | Shows records as items in a list.                   | To quickly create a list in a Mobile App, drag an Entity to Email.                                                                |
 | Table       | Shows records in columns and rows.                  | To quickly create a table in a Reactive Web App, drag an Entity to Email. See also: [Creating and editing tables](../../ui/table/intro.md).                                                               |
-| Text        | Adds plain text.                                    |                                                                |
+| Text        | Adds text/plain.                                    |                                                                |

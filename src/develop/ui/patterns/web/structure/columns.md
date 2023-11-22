@@ -4,6 +4,7 @@ summary: Columns split content into multiple columns with responsive capabilitie
 locale: en-us
 guid: 0488b53b-190d-4467-83a4-76bae70bf4c2
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Columns

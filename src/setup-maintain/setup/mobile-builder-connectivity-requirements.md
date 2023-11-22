@@ -3,6 +3,8 @@ summary: Meeting Mobile Apps Build Service (MABS) requires access to Amazon Clou
 locale: en-us
 guid: 9b32edb6-a14d-46d5-b180-10b6bc0eff3f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Meeting Mobile Apps Build Service connectivity requirements

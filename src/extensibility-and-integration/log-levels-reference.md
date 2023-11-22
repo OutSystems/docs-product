@@ -2,6 +2,8 @@
 locale: en-us
 guid: b87b0a9b-ac31-4705-ae8e-87ae97505fb1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: 
 ---
 
 # Logging levels reference for integrations

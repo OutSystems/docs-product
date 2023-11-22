@@ -4,6 +4,8 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: c61481b5-bfd8-4d06-9024-e3185659b455
 app_type: traditional web apps
+platform-version: o11
+figma:
 ---
 
 # VPAT - Voluntary Product Accessibility Template
@@ -14,15 +16,15 @@ Applies only to Traditional Web Apps
 
 </div>
 
-The purpose of the Voluntary Product Accessibility Template, or VPAT™, is to assist Federal contracting officials and other buyers in making preliminary assessments regarding the support given by OutSystems to delivery of accessibility standards compliant applications.
+The purpose of the Voluntary Product Accessibility Template, or VPAT™, is to assist Federal contracting officials and other buyers. It helps them make preliminary assessments regarding the support given by OutSystems. This support relates to the delivery of accessibility standards-compliant applications.
 
 ## Summary Table - Supporting Features
 
-The scope of this VPAT includes the ability to create applications that are Section 508 compliant using OutSystems technology. This applies to the custom applications delivered by OutSystems customers and developers, not to the development toolset (e.g. the visual integrated development environment).
+The scope of this VPAT includes the ability to create applications that are Section 508 compliant using OutSystems technology. This applies to the custom applications delivered by OutSystems customers and developers, not to the development toolset (for example, the visual integrated development environment).
 
-Considering that ultimately every application will be designed, developed and delivered by a specific OutSystems customer, all applicable standards in this VPAT are noted as Supports – meaning OutSystems, as a development platform, fully meets the letter and intent of criteria. Responsibility is left to the developer to use the required constructs, configurations, and design patterns of their choice, while abiding to the accessibility compliance requirements. 
+Since a specific OutSystems customer ultimately designs, develops, and delivers every application, this VPAT notes all applicable standards as Supports. This means that as a development platform, OutSystems fully meets the letter and intent of criteria. The developer is responsible for using the required constructs, configurations, and design patterns of their choice while adhering to accessibility compliance requirements.
 
-| Criteria                                                        | Supporting Features | Remarks and explanations                                                                 |
+| Criteria                                                        | Supporting Features | Remarks and Explanations                                                                 |
 |-----------------------------------------------------------------|---------------------|------------------------------------------------------------------------------------------|
 | Section 1194.21 Software Applications and Operating Systems     | Supports            | OutSystems supports the development of accessible applications that follow this standard |
 | Section 1194.22 Web-based Internet Information and Applications | Supports            | OutSystems supports the development of accessible applications that follow this standard |
@@ -35,7 +37,7 @@ Considering that ultimately every application will be designed, developed and de
 
 ## Section 1194.21 Software Applications and Operating Systems
 
-| Criteria | Supporting Features | Remarks and explanations|
+| Criteria | Supporting Features | Remarks and Explanations|
 |----------|---------------------|-------------------------|
 | ( a ) When software is designed to run on a system that has a keyboard, product functions shall be executable from a keyboard where the function itself or the result of performing a function can be discerned textually.| Supports| See summary table for remarks |
 | ( b ) Applications shall not disrupt or disable activated features of other products that are identified as accessibility features, where those features are developed and documented according to industry standards. Applications also shall not disrupt or disable activated features of any operating system that are identified as accessibility features where the application programming interface for those accessibility features has been documented by the manufacturer of the operating system and is available to the product developer. | Supports | See summary table for remarks |
@@ -50,15 +52,15 @@ Considering that ultimately every application will be designed, developed and de
 | ( k ) Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2 Hz and lower than 55 Hz.| Supports| See summary table for remarks |
 | ( l ) When electronic forms are used, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.| Supports| See summary table for remarks |
 
-## Section 1194.22 Web-based Internet information and applications 
+## Section 1194.22 Web-based Internet Information and Applications 
 
 The VPAT Board interprets paragraphs (a) through (k) of this section as consistent with the following priority 1 Checkpoints of the Web Content Accessibility Guidelines 1.0 (WCAG 1.0) published by the Web Accessibility Initiative of the World Wide Web Consortium.
 
 OutSystems publishes a set of facilitators and guidelines that, even though not exhaustive or prescriptive, help OutSystems developers to understand how they can use OutSystems’s capabilities to deliver WCAG compliant applications.
 
-The guidelines are published at [https://www.outsystems.com/goto/AccessibilityComplianceGuidelines](https://www.outsystems.com/goto/AccessibilityComplianceGuidelines)
+Find the guidelines at [https://www.outsystems.com/goto/AccessibilityComplianceGuidelines](https://www.outsystems.com/goto/AccessibilityComplianceGuidelines)
 
-| Criteria | Supporting Features | Remarks and explanations |
+| Criteria | Supporting Features | Remarks and Explanations |
 |----------|---------------------|--------------------------|
 | ( a ) A text equivalent for every non-text element shall be provided (e.g., via "alt", "longdesc", or in element content).| Supports | See remarks in summary table and this section notes |
 | ( b ) Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation. | Supports | See remarks in summary table and this section notes |
@@ -79,7 +81,7 @@ The guidelines are published at [https://www.outsystems.com/goto/AccessibilityCo
 
 ## Section 1194.31 Functional Performance Criteria
 
-| Criteria | Supporting Features | Remarks and explanations |
+| Criteria | Supporting Features | Remarks and Explanations |
 |----------|---------------------|--------------------------|
 | ( a ) At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for Assistive Technology used by people who are blind or visually impaired shall be provided.| Supports | See summary table for remarks |
 | ( b ) At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for Assistive Technology used by people who are visually impaired shall be provided. | Supports | See summary table for remarks |
@@ -90,7 +92,7 @@ The guidelines are published at [https://www.outsystems.com/goto/AccessibilityCo
 
 ## Section 1194.41 Information, Documentation and Support 
 
-| Criteria| Supporting Features | Remarks and explanations|
+| Criteria| Supporting Features | Remarks and Explanations|
 |---------|---------------------|-------------------------|
 | ( a ) Product support documentation provided to endusers shall be made available in alternate formats upon request, at no additional charge.| Supports | End-users with disabilities can request alternative Platform documentation by opening a case through the standard Support channels. Documentation of the delivered apps is responsibility of the Platform customer.|
 | ( b ) End-users shall have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request, at no additional charge. | Supports| Available in the online product documentation. End-users with disabilities can request alternative documentation by opening a case through the standard Support channels. Documentation of the delivered apps is responsibility of the Platform customer. |

@@ -4,6 +4,7 @@ summary: A marker is added to the Map component when the user clicks the map.
 locale: en-us
 guid: 64103ccc-9190-4483-8145-3f063dd1b823
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to add a marker on map click 
@@ -32,7 +33,7 @@ This example demonstrates how to get the coordinates of a location when the user
 
     1. In **Search in other Modules**, remove any spaces between words in your search text.
     
-    1. Select the widget you want to add from the **OutSystemsUI** module, and click **Add Dependency**. 
+    1. Select the widget you want to add from the **OutSystemsMaps** module, and click **Add Dependency**. 
     
     1. In the Toolbox, search for the widget again.
 

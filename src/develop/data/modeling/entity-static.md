@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: a0ab595d-66a9-4bee-988a-d12ba224b0e5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1275:18338
 ---
 
 # Static Entities

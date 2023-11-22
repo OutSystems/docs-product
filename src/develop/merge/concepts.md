@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: f48625c7-2bc5-42d9-b6aa-435630cf9b22
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1827:20283
 ---
 
 # The merge feature and team collaboration
@@ -27,7 +29,7 @@ This merge is automatic if there are no conflicts, and applies to both visual el
 1. The other developers publish their changes.
 1. You publish your changes. OutSystems detects there are changes to be merged, based on the version from where both started developing (V4). The **Modified Version Detected** window is displayed and you choose **Merge and Publish**. OutSystems automatically merges and publishes the module for you. 
 
-![](images/automatic-merge-module-versions-diag.png)
+![The diagram shows the flow of merge automatically if there are no conflicts.](images/automatic-merge-module-versions-diag.png)
 
 ## Resolve merge conflicts
 
@@ -39,11 +41,11 @@ elements, OutSystems cannot automatically merge the work. It's not possible to a
 1. The other developers publish their changes. 
 1. You publish your changes. OutSystems determines that there are changes to be merged based on the version from where both parties started developing (V4). The  **Modified Version Detected**  window is displayed, and you choose **Merge and Publish**. There are conflicts because you have changed some elements that the other developers also changed. Service Studio displays the **Compare and Merge** window. The non-conflicting changes are selected for you, but you have to decide which conflicting changes you want to keep.
 
-![](images/resolve-merge-conflicts-diag.png)
+![The diagram shows the flow of merge after solving the conflicts manually.](images/resolve-merge-conflicts-diag.png)
 
 ## Compare and merge versions
 
 You don't have to wait for a conflict to happen to compare the versions. In Service Studio you can compare changes of your local module with a previously published version of the module on the server. In the **File** menu there are the entries:
 
 * **Compare and Merge with Published Version** – enables you to compare the published version of the module with the module that is currently open.
-* **Compare and Merge with another Version of File** – fetches the list of the module's available versions from the server, enabling you to load one and compare with the currently opened module. You can load a module from the file systems as well.
+* **Compare and Merge with another Version or File** – fetches the list of the module's available versions from the server, enabling you to load one and compare with the currently opened module. You can load a module from the file systems as well.

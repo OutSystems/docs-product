@@ -4,6 +4,8 @@ tags: runtime-mobile; support-application_development; support-Application_Troub
 locale: en-us
 guid: 682f52f0-969b-4524-b291-2f73f2f029ce
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4520%3A3225&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # Advanced Mobile App Troubleshooting Using Chrome
@@ -114,7 +116,7 @@ To connect your device to the desktop Chrome browser:
 
 1. Open the desktop Chrome browser and type the following URL:
 
-    ```chrome://inspect/#devices```
+    `chrome://inspect/#devices`
   
     _Note:_ If there are no devices listed, you are probably missing the USB drivers on your computer.  
 

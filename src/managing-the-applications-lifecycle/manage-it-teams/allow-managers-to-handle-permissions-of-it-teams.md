@@ -3,6 +3,8 @@ summary: Keep the control of the users and teams that are created, but delegate 
 locale: en-us
 guid: e666aa10-a5dd-41c4-856d-52a7b2ff5474
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:79
 ---
 
 # Allow Managers to Handle Permissions of IT Teams

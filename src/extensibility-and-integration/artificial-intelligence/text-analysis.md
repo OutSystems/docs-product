@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: 5e2273f8-4fa3-43a4-b0bf-7a177534bca2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=407:132
 ---
 
 # Use the AI Language Analysis component in your OutSystems apps

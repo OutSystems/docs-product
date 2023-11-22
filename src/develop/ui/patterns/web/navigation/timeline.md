@@ -4,6 +4,7 @@ summary: Timeline indicates related events in chronological order.
 locale: en-us
 guid: 045e94bb-45ae-4672-8c58-c9f2bd07a485
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Timeline

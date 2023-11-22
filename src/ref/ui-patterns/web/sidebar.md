@@ -4,6 +4,8 @@ summary: Advanced Use Cases for the Sidebar UI Pattern.
 locale: en-us
 guid: 084bb303-c011-405d-adec-710e9227c8ae
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:573
 ---
 
 # Sidebar Reference

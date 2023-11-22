@@ -4,6 +4,8 @@ summary: Learn how to define a case state machine to control what case status tr
 guid: 9afd417a-9688-49f3-a968-06dd8c96bfd9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1853
 ---
 
 # Defining allowed case status transitions with a case state machine

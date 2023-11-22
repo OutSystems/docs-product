@@ -3,6 +3,8 @@ summary: Learn how to implement encryption in your apps to ensure HIPAA complian
 locale: en-us
 guid: b5a18548-1f7c-48a0-87f5-43936645d8cd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A522&mode=design&t=GF97AOUqsRf9tsAh-1
 ---
 
 # Decrypting HIPAA compliant data

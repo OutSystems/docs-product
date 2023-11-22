@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: 8876a767-5845-47e4-9c93-bdec76114e0e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Debugging Producer Modules

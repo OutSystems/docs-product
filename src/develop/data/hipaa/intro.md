@@ -4,6 +4,8 @@ tags: article-page
 locale: en-us
 guid: 259aca31-dc2a-4eb1-8d5c-e322cefe5e66
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4397%3A521&mode=design&t=GF97AOUqsRf9tsAh-1
 ---
 
 
@@ -11,7 +13,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 When you subscribe to the OutSystems Cloud HIPAA offering your environments will include an app that you can reference to encrypt and decrypt PHI - **Cryptography Services**.
 
-In it's core, AWS Key Management Service provides a secure and resilient service to create and manage cryptographic keys.
+In its core, AWS Key Management Service provides a secure and resilient service to create and manage cryptographic keys.
 
 The Cryptography Services app interfaces with the Key Management Service (KMS) abstracting from the complexity of having and managing a KMS. 
 
@@ -48,7 +50,7 @@ EncryptEntityText
 :   Encrypts the text of unsearchable attributes using a KeyId and a salt (EntityId).
 
 DecryptEntityText
-:   Decrypts into plain text the cyphered text of unsearchable attributes using a KeyId and a salt (EntityId).
+:   Decrypts into text/plain the cyphered text of unsearchable attributes using a KeyId and a salt (EntityId).
 
 
 Check the following articles for detailed guides of the implementation of:

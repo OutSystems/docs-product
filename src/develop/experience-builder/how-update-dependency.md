@@ -4,6 +4,8 @@ summary: Learn how to install or update Experience Builder dependencies.
 locale: en-us
 guid: 846ff90b-1883-40ce-adcf-ca9eb6004f90
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4454:3207
 ---
 # How to install or update dependencies
 

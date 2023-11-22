@@ -3,6 +3,8 @@ summary: How to add support for authenticating SOAP requests with a client certi
 locale: en-us
 guid: c3df3d40-fd98-48f6-8c63-0ec22f08f516
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A28&mode=design&t=8a1ub9syb4QKHbuk-1
 ---
 
 # Authenticate using a client certificate

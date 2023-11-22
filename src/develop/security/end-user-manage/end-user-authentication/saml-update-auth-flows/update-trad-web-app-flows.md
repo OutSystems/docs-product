@@ -4,6 +4,8 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 6ebc3a3e-4916-46b3-829c-a5143a5991da
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4502%3A1555&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # Updating the logout flow of your Traditional Web App to support SAML 2.0
@@ -44,7 +46,7 @@ Do the following:
 
     `If(GetExceptionURL()="", GetOwnerURLPath(), GetExceptionURL())`
 
-1. if the logout URL is empty, redirect the user to that URL. Otherwise, log out the user, terminating the session, by calling the **User_Logout** server action.
+1. If the logout URL isn't empty, redirect the user to that URL. Otherwise, log out the user, terminating the session, by calling the **User_Logout** server action.
 
 1. After the Server Action call, redirect the user to the IdP's login URL. Get this URL by calling the **User_GetUnifiedLoginUrl** Server Action, using the following value in the **OriginalUrl** input parameter of this action:
 

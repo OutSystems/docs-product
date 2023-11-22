@@ -4,6 +4,8 @@ summary: In the Case Management framework, you can use calendars to calculate se
 guid: 75fd28ce-c038-42e4-bbd0-1f5abe2e6c79
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1901
 ---
 
 # Defining working schedules with calendars

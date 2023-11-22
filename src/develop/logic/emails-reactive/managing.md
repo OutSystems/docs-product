@@ -4,6 +4,8 @@ tags: support-application_development,
 locale: en-us
 guid: 455d5651-9b51-4de7-8f8a-5888ab78d78e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=855:1293
 ---
 
 # Managing emails

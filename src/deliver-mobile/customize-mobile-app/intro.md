@@ -4,6 +4,8 @@ tags: runtime-mobile
 locale: en-us
 guid: 8e510d45-a9d0-44c9-b2c1-5f676be38a25
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=1:89
 ---
 
 # Customize Your Mobile App

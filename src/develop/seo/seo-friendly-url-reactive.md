@@ -4,6 +4,8 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 294F6709-2351-4992-832F-4DAE431D3E5F
 app_type: traditional web apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3329%3A27075&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # SEO-friendly URLs for Reactive Web apps  
@@ -12,11 +14,15 @@ app_type: traditional web apps, reactive web apps
 
 SEO-friendly URLs for Reactive Web apps require the following: 
 
-* Platform Server 11.14.0 or later.  
+* Your environments must use Platform Server 11.14.0 or later.  
 
 * Service Studio 11.13.0 or later.  
 
-* OutSystems enterprise cloud offer or a self-managed installation with [ISAPI filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) activated. 
+* Your infrastructure is associated with an [OutSystems Edition](https://www.outsystems.com/pricing-and-editions/) that isn't the Free Edition. **You can't use a Personal Environment with SEO-friendly URLs for Reactive Web apps**.
+
+* For self-managed infrastructures, [ISAPI filters](seo-friendly-url-traditional.md#installing-isapi-filters-and-logging) must be enabled.
+
+* The domains used in the SEO rules should correspond to domains are effective in the environment. For more information about assigning domains check [Use your SSL domain in OutSystems Cloud](../../setup-maintain/setup/ssl-domain-cloud/ssl-domain-cloud.md) or [Install an SSL Certificate in self-managed environments](../../setup-maintain/setup/install-ssl-platform.md).
 
 <div class="info" markdown="1">
 
@@ -90,10 +96,10 @@ To create a site rule, follow these steps:
     As a result, you've enabled a new site rule.  
     You also have the option to select a site rule and edit, delete, or disable the **Base URL**.  
 
-<div class="warning" markdown="1">
+<div class="info" markdown="1">
 
-Consider the following when working with site rules:  
-* You can have only one site rule per root application for domains with sub-paths.  
+Remember the following when working with site rules:  
+* You can only have only one site rule per root application for domains with sub-paths.  
 * Creating or editing a site rule can temporarily slow down the app because the platform needs to reload its configuration.  
 
 </div>  
@@ -123,13 +129,12 @@ The following table includes more examples of custom screen URLs:
 | `/Order?Id=1`             | `/Buy/1`      | `/Buy?Id=1`             |
 | `/Order?Id=1&Quantity=10` | `/Buy/1/10`   | `/Buy?Id=1&Quantity=10` |
 
-<div class="warning" markdown="1">
+<div class="info" markdown="1">
 
-Consider the following when working with custom screen URLs:  
+Remember the following when working with custom screen URLs:  
 * You can add custom URLs to all screens except for the Default Screen.  
 * When copying screens with custom URLs from a Reactive Web app module to a Mobile app module, **Service Studio** removes the custom URL configurations in the Mobile app module because SEO works differently for mobile apps.  
  
-
 </div>  
 
 ### Managing custom screen URLs  
@@ -180,7 +185,7 @@ The following strings aren't supported because of the / symbol:
 Set this property to **Path** to pass the parameters separated by / in the URL (for example, `/Product/1`). Set it to **Query string** to pass the parameters as a string (for example, `Products?Id=1`).  
 
 **URL Pattern**  
-Set this property to **Path** to pass the parameters separated by / in the URL (for example, `/Product/1`). Set it to **Query string** to pass the parameters as a string (for example, `Products?Id=1`).   
+This is a preview of the transformed URL (for example, the Product screen has the ProductId input parameter and its URL Structure set as **Query string**. So the URL Pattern value will be `Product?ProductId={ProductId}`). 
 
 ## Redirect rules  
 
@@ -208,12 +213,45 @@ To use a redirect rule, you should consider the following redirect rules used by
 ### Managing redirect rules  
 
 To manage redirect rules you need to know the following:  
-* **Base URL**, which is the string to match the rule (for example, `old.example.com`).
-* **Replace With**, which is the replacement string for the URL (for example, `new.example.com`).
+* **Old URL**, which is the string to match the rule (for example, `old.example.com`).
+* **New URL**, which is the replacement string for the URL (for example, `new.example.com`).
 
 To create, edit, delete, or disable redirect rules go to **Service Center** > **Administration** > **SEO URLs** > **Redirect Rules List**.  
 
 ![Managing redirect rules](images/manage-redirect-rules-sc.png)  
+
+You can import or export redirect rules using Excel files. To import redirect rules using an Excel file, select **Import from Excel**.
+
+![Import from excel](images/import-excel-sc.png)
+
+The file used to import the redirect rules must comply with the following:
+
+* The file extension must be `.XLS` or `.XLSX`
+
+* One SEO redirect rule per line
+
+* Each line must have the following attributes in each column:
+
+    Column 1: `Old URL`
+    : The URL that will be matched with this rule
+    : Mandatory: Yes
+
+    Column 2: `New URL`
+    : The URL that will result in the redirection using this rule
+    : Mandatory: Yes
+
+    Column 3: `HTTP Status Code`
+    : This defines if the redirect is permanent (301) or temporary (302). If the value is numeric but different from 301 or 302, or if it is not defined, it is set as 301 by default.
+    : Mandatory: No
+    : Expected values: 301 or 302
+
+    Column 4: `IsActive`
+    : This defines if the rule is active after the import or not. If the value is not defined, it is set as False by default.
+    : Mandatory: No
+    : Expected values: True or False
+
+If an import succeeds, all previous existent redirect rules in Service Center are replaced with the new ones imported.
+If the import fails, no redirect rules are deleted or added. In this scenario, Service Center shows a custom error message, pointing to the cause of the error.
 
 ## URL prioritization  
 

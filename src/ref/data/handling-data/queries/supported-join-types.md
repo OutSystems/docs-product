@@ -3,6 +3,8 @@ tags:
 locale: en-us
 guid: d2ac8884-a37b-423d-9655-b235291485cd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=843:1507
 ---
 
 # Supported Join Types
@@ -18,13 +20,13 @@ To do this, just drag the entities into your aggregate. They are automatically j
 
 In the examples below we will combine the following two entities:
 
-![Engineer and Issue entities](images/original-tables.png)
+![Engineer and Issue entities](images/original-tables-ss.png)
 
 ## Only fetch records with a match
 
 To only retrieve Issues that have an Engineer assigned, use **Only With**.
 
-![Fetch records with a match](images/onlywith-example.png)
+![Fetch records with a match](images/onlywith-example-ss.png)
 
 Notice how Issues that have no Engineer assigned yet are not returned.
 
@@ -34,7 +36,7 @@ To retrieve all Issues regardless of whether they have an Engineer assigned to t
 
 In this join type the order of the Entities in the join condition makes a difference in the returned rows. The idea is to retrieve all records from the first entity, and combine the rows of the second entity to them. So if you swap the order of the Entities, you will get a different result.
 
-![Fetch all records from an entity](images/withorwithout-difference.png)
+![Fetch all records from an entity](images/withorwithout-difference-ss.png)
 
 Notice that for the Issues that have no Engineer assigned, the columns with the Engineer information contain the default values.
 
@@ -42,7 +44,7 @@ Notice that for the Issues that have no Engineer assigned, the columns with the 
 
 To fetch all Issues and all Engineers, even if there is no match between them, use **With**.
 
-![Fetch rows from both entities](images/with-example.png)
+![Fetch rows from both entities](images/with-example-ss.png)
 
 Notice that for Issues without an engineer assigned, the columns with the engineer information contain the default values.
 
@@ -56,6 +58,6 @@ To combine each record from an entity with all records of a second entity (for e
 
 To pair each team with their adversaries, add the Team entity twice to your aggregate.
 
-![Combine all records](images/crossjoin-example.png)
+![Combine all records](images/crossjoin-example-ss.png)
 
 Then filter the aggregate to ensure that a team is not paired up with itself.

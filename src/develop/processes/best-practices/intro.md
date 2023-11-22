@@ -3,6 +3,8 @@ tags: support-application_development; support-webapps
 locale: en-us
 guid: 98721b97-6825-472f-9fa8-f9199b7a261d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Best Practices for Designing Processes

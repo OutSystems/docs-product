@@ -4,6 +4,8 @@ tags: runtime-reactiveweb
 locale: en-us
 guid: 4d847458-cdd8-40ec-848a-aa9af7e1d2ea
 app_type: reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=186:22
 ---
 
 # Testing and fixing accessibility issues
@@ -18,7 +20,7 @@ In Service Studio create a screen, publish the app, and open it in your browser.
 
 ## Test for accessibility
 
-To test your page for accessibility, perform the following steps:
+To test your page for accessibility, do the following steps:
 
 1. Load the page.
 1. Click on the WAVE extension (1) to start testing.
@@ -31,11 +33,10 @@ To test your page for accessibility, perform the following steps:
 There are other issues with this page. There is no heading, and the image is missing the alternative text.
 
 <div class="info" markdown="1">
- 
-The accessibility analysis shows page structural elements and ARIA annotation. These elements and annotations come from the OutSystems UI by default.
- 
-</div>
 
+The accessibility analysis shows page structural elements and ARIA annotation. These elements and annotations come from the OutSystems UI by default.
+
+</div>
 
 ## Fix the accessibility issues
 

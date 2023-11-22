@@ -3,6 +3,8 @@ summary: Edit previously imported Flows in Experience Builder.
 locale: en-us
 guid: bfe493f7-3801-4266-a435-e2d7b64e395f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4454:2894
 ---
 
 # Editing Flow Templates

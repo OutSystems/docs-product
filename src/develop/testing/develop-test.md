@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: a04eb23a-d3fe-4967-875b-02d15033b8cd
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=286%3A18&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # Develop for Testability
@@ -163,7 +165,9 @@ Due to the nature of the functionalities implemented in modules at each layer, i
 ### Orchestration layer
 
 <div class="warning" markdown="1">
+
 The Orchestration layer is applicable only to versions prior to OutSystems 11.
+
 </div>
 
 #### Functionalities

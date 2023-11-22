@@ -4,6 +4,8 @@ tags: runtime-mobile
 locale: en-us
 guid: 053acd13-6c13-4849-b496-35631a4ad7f3
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=743:3
 ---
 
 # Read/Write Data Last Write Wins

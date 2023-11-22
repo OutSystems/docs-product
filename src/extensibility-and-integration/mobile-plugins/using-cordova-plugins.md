@@ -4,6 +4,8 @@ tags: runtime-mobile; support-Integrations_Extensions; support-Mobile_Apps
 locale: en-us
 guid: 2d86818a-afda-4680-9090-8966faa38be9
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:32
 ---
 
 # Using Cordova Plugins
@@ -14,7 +16,7 @@ Applies only to Mobile Apps.
 
 </div>
 
-Use Apache Cordova plugins by wrapping them into modules which you can then reference in your mobile apps. To get started, you can clone the [Template Plugin from Forge](<https://www.outsystems.com/forge/component-overview/1676/template-plugin/>) which has the groundwork for all custom Cordova plugins. You must wrap each plugin in its own dedicated module and application, meaning that if you want to use several plugins you must create an application for each plugin, each containing a single wrapper module. The relevant actions and entities of the wrapper module must be public. The wrapper module should have a meaningful name (for example, "SamplePlugin"). A module that wraps a Cordova plugin should not reference another module that also wraps a Cordova plugin.
+Use Apache Cordova plugins by wrapping them into modules which you can then reference in your mobile apps. To get started, you can clone the [Template Plugin from Forge](<https://www.outsystems.com/forge/component-overview/1676/template-plugin/>) which has the groundwork for all custom Cordova plugins. You must wrap each plugin in its own dedicated module and application, meaning that if you want to use several plugins you must create an application for each plugin, each containing a single wrapper module. The relevant actions and entities of the wrapper module must be public. The wrapper module should have a meaningful name (for example, "SamplePlugin").
 
 The functionality of Cordova plugins can be tested in native mobile applications only.
 
@@ -34,7 +36,7 @@ Unless it’s a [plugin supported by OutSystems](intro.md) and you are using a p
 
 The JSON can be used for additional settings needed by the plugin. For the full description of the JSON check the article [Extensibility Configurations JSON Schema](<../../deliver-mobile/customize-mobile-app/extensibility-configurations-json-schema.md>).
 
-![](<images/plugin-exensibility-window.png>)
+![](<images/plugin-exensibility-window-ss.png>)
 
 ### JSON Examples
 
@@ -100,8 +102,8 @@ Each plugin should have a `Check<Capability>Plugin` action (e.g. "CheckToastyPlu
 
 Create actions (e.g. "ShowToast") within the wrapper module and add a JavaScript flow element with the variables. Make the actions public so that they are available in the application. Write the descriptions for all the public actions, inputs and outputs. This helps when using the module in the target application.
 
-![](<images/plugin-exensibility-actions.png>)
+![](<images/plugin-exensibility-actions-ss.png>)
 
 Insert the code that connects the wrapper to the Cordova plugin into a JavaScript element:
 
-![](<images/plugin-exensibility-js.png>)
+![](<images/plugin-exensibility-js-ss.png>)

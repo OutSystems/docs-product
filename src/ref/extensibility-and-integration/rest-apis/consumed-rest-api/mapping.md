@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: afc8d9b0-863d-4592-be88-c376d083f49a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Mapping REST Data Types to OutSystems Data Types

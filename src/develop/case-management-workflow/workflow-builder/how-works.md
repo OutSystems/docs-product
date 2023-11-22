@@ -4,6 +4,8 @@ summary: Learn how Workflow Builder works.
 guid: 03a05097-7984-4e88-86f2-c87418286674
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:904
 ---
 
 # How Workflow Builder works

@@ -2,6 +2,8 @@
 locale: en-us
 guid: 781daf7e-11c4-4792-b928-e8d9a993f5fe
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Deprecated jQuery Version Warning

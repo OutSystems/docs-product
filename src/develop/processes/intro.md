@@ -4,9 +4,11 @@ tags: support-webapps-featured
 locale: en-us
 guid: ce023611-1cbc-4c61-a778-2a66167bc7ba
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:24
 ---
 
-# Use Processes (BPT)
+# Use Processes - BPT
 
 OutSystems allows you to design and manage your business processes and integrate them into your applications. A business process is simply called a **Process** in OutSystems and is understood as the way that a particular task is carried out in your organization, such as handling invoices, processing orders, or handling complaints. Processes are also known as BPT (Business Process Technology).
 
@@ -49,9 +51,9 @@ Use Sample Reactive Taskbox component from Forge to implement the Taskbox in Rea
 
 In Traditional Web Apps, the UI of the Taskbox is available by default.
 
-![](images/process-taskbox-highlighted.jpg)
+![](images/process-taskbox-highlighted.png)
 
-![](images/process-taskbox-opened.jpg)
+![](images/process-taskbox-opened.png)
 
 When the end user clicks on a listed task, it is opened and the task instructions are displayed in the Taskbox. Simultaneously, the application navigates automatically to the appropriate Web Screen and displays the appropriate data needed for the end user to accomplish the task.
 

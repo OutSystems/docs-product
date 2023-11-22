@@ -4,6 +4,7 @@ summary: The Touch Events UI Pattern enables touch events on a specific widget.
 locale: en-us
 guid: 543a0aea-546e-48ce-92e6-dcc08e9fd2be
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Touch Events
@@ -47,7 +48,7 @@ You can use the Touch Events UI pattern to hide a header during a scroll action.
 After following these steps and publishing the module, you can test the pattern in your app.
 
 | Element | Code |
-|---|---| 
+|---|---|
 |![](images/JS_hide.png) |  var header = document.querySelector(".header");<br/>header.classList.add("hide");<br/>header.classList.add("header-on-scroll"); |
 |![](images/JS_show.png) |  var header = document.querySelector(".header");<br/>header.classList.remove("hide");<br/>header.classList.remove("header-on-scroll"); | 
   
@@ -57,9 +58,9 @@ After following these steps and publishing the module, you can test the pattern 
 
 ## Properties
 
-|**Property** |  **Description** |
+|**Property** | **Description** |
 |---|---| 
-| WidgetId  |  This is the element that responds to the touch you configure.| 
+| WidgetId | This is the element that responds to the touch you configure.| 
 
 ## Compatibility with other patterns
 

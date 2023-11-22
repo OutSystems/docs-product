@@ -3,6 +3,8 @@ summary: PATCH method allows a new HTTP method when exposing REST APIs that appl
 locale: en-us
 guid: f3ab51bb-7226-49f9-a529-a5e485a6952b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1083:5160
 ---
 
 # PATCH method on exposed REST services
@@ -84,7 +86,7 @@ Booleans are a particular case, since there are only two possible values, making
 
 1. To ensure that the code isn’t case-sensitive, use the [ToLower](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#ToLower) function in a condition like the following example:
 
-    ```ToLower(Contact.isActive) = "true" or ToLower(Contact.isActive) = "false"```
+    `ToLower(Contact.isActive) = "true" or ToLower(Contact.isActive) = "false"`
 
 ### PATCH method implementation
 

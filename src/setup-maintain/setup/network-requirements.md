@@ -4,6 +4,8 @@ tags: support-installation
 locale: en-us
 guid: 6238ecb9-6eaf-4406-a421-f4b01322052d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # OutSystems network requirements
@@ -40,7 +42,7 @@ The table below details the ports that need to be accessible in each server of a
 
 <div class="info" markdown="1">
 
-Security Tip: TCP Ports 12000,12001 and 12002 shouldn't be open to the internet.
+**Security best practice:** TCP ports 12000, 12001, and 12002 shouldn't be open to the internet.
 
 </div>
 
@@ -71,11 +73,16 @@ In case you are using a hybrid infrastructure where some part is in OutSystems C
 
 ### Development tools
 
+<div class="info" markdown="1">
+
+Check [here](configure-http-proxy.md) the necessary configurations if you're working on a network where communications to the Internet need to go through an HTTP proxy.
+
+</div>
+
 The following table lists the necessary connectivity between the developers workstations and the several endpoints that support the full experience of Service Studio and Integration Studio.
 
 |Source|Destination|Port|Protocol|Notes|
 |------|-----------|----|--------|-----|
-|Service Studio and Integration Studio|Front-End|80|TCP|<ul>Deploy applications to the environment</ul>|
 |Service Studio and Integration Studio|Front-End|443|TCP|<ul>Deploy applications to the environment</ul>|
 |Service Studio|\*.outsystems.com<br/>outsystems.com|443|TCP| Service Studio connects to `outsystems.com` and several sub-domains to achieve the following: <ul><li>[AI-Assisted Development](../../develop/logic/ai-assisted-dev.md) </li><li> What's New! - The What's New dialog shows you the latest features added.</li> <li>Update Service Studio automatically</li><li>Telemetry</li><li>Submit feedback and errors via Service Studio</li> <li>Forge - The Forge bell icon lets you know if there are updates for installed components. </li><li>Application creation when creating from an existing sample app</li><li>Shows related documentation links when using help.</li></ul>|
 |Service Studio|s3.amazonaws.com |443|TCP|<ul><li>Forge components - To install Forge components from the Forge tab or from the Forge website.</li><li>Access app templates while creating apps from scratch.</li></ul>|
@@ -153,13 +160,28 @@ You need to have bidirectional secure communication between the front-end of the
 
 ### AI Mentor Studio
 
-To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](https://success.outsystems.com/Documentation/Architecture_Dashboard/How_does_Architecture_Dashboard_work). 
+To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md). 
 
-Depending on the version of the AI Mentor Studio probe, ensure that one of the following destination endpoints is reachable:
+The network requirements depend on the authentication method and Probe version you use to access AI Mentor Studio.
+
+**OutSystems account authentication**
+
+If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable, depending on the Probe version:
+
+Probe version|Source|Destination|Port|Protocol
+---|---|---|---|---
+Probes 4.2 and above | LifeTime Front-End | aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP|
+Probes 4.0 and 4.1 | LifeTime Front-End | architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard |443 | TCP|
+
+**IT User authentication**  
+
+If you access AI Mentor Studio using IT User authentication, AI Mentor Studio must be able to connect to the environment where you want to perform code analysis. Hence, besides ensuring the destination endpoint (LifeTime Front-End) is reachable, you also need to ensure that the front ends of the environment where you want to perform code analysis accept inbound connections from `aimentorstudio.outsystems.com`.  
+
+Alternatively, ensure that the front ends of the environment used with AI Mentor Studio accept connections from the IP addresses in the **Notes**. These IP addresses are subject to change.
 
 Source|Destination|Port|Protocol|Notes
 ---|---|---|---|---
-LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP| **Version 4.2 or higher** of the AI Mentor Studio LifeTime probes.
-LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP| **Version 4.0 or 4.1** of the AI Mentor Studio LifeTime probes.
-LifeTime Front-End|architecture.outsystems.com/Broker_API/ArchitectureDashboard.asmx|443|TCP| **Version 3.0 or lower** of the AI Mentor Studio LifeTime probes.
+LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP| **Outbound communication** 
+aimentorstudio.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
+aimentorstudio.outsystems.com|LifeTime Front-End|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
 

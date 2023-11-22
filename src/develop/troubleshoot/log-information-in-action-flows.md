@@ -4,6 +4,8 @@ tags: support-application_development; support-Application_Troubleshooting
 locale: en-us
 guid: 2ebf3be6-b46a-4276-94f6-af76e4b07ff0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Log Information in Action Flows
@@ -27,7 +29,7 @@ You can have multiple LogMessage actions in your action flow. However, the loggi
 To access the information you have logged in your action flow, do the
 following:
 
-1. Go to the management console of your OutSystems environment. 
+1. Go to the Service Center management console of your OutSystems environment. 
 2. Go to the Monitoring section and select General. 
 3. Select your application. You can also add to the filter the ModuleName that you used in the LogMessage property. 
 4. Click Filter. 
@@ -38,7 +40,7 @@ You can view only the logged information of the modules for which you have permi
 
 The logging performed in the LogMessage System Action may be switched off when debugging is no longer a priority. To switch off the logging, do the following:
 
-1. Go to the management console of your OutSystems environment. 
+1. Go to the Service Center management console of your OutSystems environment. 
 2. Go to the Factory section and open your application. 
 3. Open the module where you added the logging. 
 4. Select the Operations tab and uncheck the Auditing option. 

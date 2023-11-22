@@ -4,6 +4,8 @@ tags: support-application_architecture
 locale: en-us
 guid: a82f9d7f-70bf-43b2-a291-dd56905f35b2
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Convert to Services

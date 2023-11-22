@@ -4,6 +4,8 @@ tags: runtime-traditionalweb
 locale: en-us
 guid: 7D2154CF-186A-4671-89FA-88C7C25FBBC8
 app_type: traditional web apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3329%3A27076&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # Improved crawlability for Reactive Web apps  
@@ -140,7 +142,7 @@ A robots.txt file consists of one or more rules. Each rule blocks or allows a cr
 
 The robots.txt is stored in the root directory of a domain. Thus it is the first document that crawlers should open when visiting your website.  
 
-For search engine crawlers to find a robots.txt for your app, you need to make sure your app is available from the root of your website. This is possible through [site rules](seo-friendly-url-reactive.md#site-rules). When you set your app to live at the root of your website, whenever someone accesses your main endpoint, it will show the app right away. This means that the entry module for your app, ```<environment>/MyApp```, will now be the root of your site, ```example.com```. Since the robots.txt file is under ```<environment>/MyApp/robots.txt```, after setting a site rule for MyApp, the file will be accessible under ```example.com/robots.txt```, which is the first place the crawlers look for it.  
+For search engine crawlers to find a robots.txt for your app, you need to make sure your app is available from the root of your website. This is possible through [site rules](seo-friendly-url-reactive.md#site-rules). When you set your app to live at the root of your website, whenever someone accesses your main endpoint, it will show the app right away. This means that the entry module for your app, `<environment>/MyApp`, will now be the root of your site, `example.com`. Since the robots.txt file is under `<environment>/MyApp/robots.txt`, after setting a site rule for MyApp, the file will be accessible under `example.com/robots.txt`, which is the first place the crawlers look for it.  
 
 Robots.txt files follow the [Robots Exclusion Protocol](https://datatracker.ietf.org/doc/html/draft-koster-rep) and this is an example of how they look like: 
 
@@ -189,15 +191,15 @@ If you haven't already, [create a site rule](seo-friendly-url-reactive.md#creati
 
 1. In the **Resources** folder, click the added robots.txt file to open its properties.  
 
-1. Set the **Deploy Action** to ```Deploy to Target Directory```.
+1. Set the **Deploy Action** to `Deploy to Target Directory`.
 
     ![Robots.txt resource properties](images/resource-properties-ss.png)
 
-    This action makes the file available under ```MyApp/robots.txt```.  
+    This action makes the file available under `MyApp/robots.txt`.  
 
 1. Publish your module.  
 
-    If the site rule for your environment is already set up, you should find the robots.txt file under the root of the website, ```example.com/robots.txt```.
+    If the site rule for your environment is already set up, you should find the robots.txt file under the root of the website, `example.com/robots.txt`.
 
 ### Generating a sitemap
 

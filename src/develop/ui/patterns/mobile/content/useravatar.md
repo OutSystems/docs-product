@@ -4,6 +4,7 @@ summary: User Avatar displays user information in a circular badge.
 locale: en-us
 guid: ca179aae-31fe-4032-b523-167c3ba531e5
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # User Avatar

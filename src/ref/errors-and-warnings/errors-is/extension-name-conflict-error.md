@@ -2,6 +2,8 @@
 locale: en-us
 guid: b888bd38-658f-4d8d-b3c7-df225c1330b0
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Extension Name Conflict Error

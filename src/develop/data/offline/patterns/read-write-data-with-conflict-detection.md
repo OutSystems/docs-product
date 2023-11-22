@@ -4,6 +4,8 @@ tags: runtime-mobile
 locale: en-us
 guid: 9440e4f9-b77c-44ab-9b9a-f5cc985fbfbb
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=743:4
 ---
 
 # Read/Write Data with Conflict Detection

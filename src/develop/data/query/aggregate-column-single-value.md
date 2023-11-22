@@ -4,6 +4,8 @@ tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 65fc5101-2962-4239-a14a-f1a4f9d19fab
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:7
 ---
 
 # Aggregate a Column into a Single Value

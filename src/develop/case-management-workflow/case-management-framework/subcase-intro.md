@@ -4,6 +4,8 @@ summary: Learn about subcases.
 guid: 7a4bf141-060b-4cd8-bf99-a381f4e37d73
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Subcases introduction

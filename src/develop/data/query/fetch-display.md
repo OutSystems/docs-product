@@ -1,9 +1,11 @@
 ---
 summary: Fetching data from the database using Aggregates.
-tags: support-application_development; support-Database;
+tags:
 locale: en-us
 guid: c1c2a735-0768-4e33-8e42-73329e7944ae
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:24
 ---
 
 # Fetch and display data from the database in OutSystems
@@ -22,7 +24,7 @@ Here is how you can fetch data in your app by using an Aggregate. Aggregates are
 
 <div class="info" markdown="1">
 
-This is an example of getting data with an Aggregate to a Screen. Both Aggregate and Screen run in the **client**. For more information about creating Aggregates in the **server** logic, see [Server-side Aggregates](../../../ref/lang/auto/Class.Aggregate.final.md#server-side-aggregates).
+This is an example of getting data with an Aggregate to a Screen. Both Aggregate and Screen run in the **client**. For more information about creating Aggregates in the **server** logic, see [Server-side Aggregates](../../../ref/lang/auto/class-aggregate.md#server-side-aggregates).
 
 </div>
 
@@ -38,7 +40,7 @@ This is an example of getting data with an Aggregate to a Screen. Both Aggregate
 
     <div class="info" markdown="1">
 
-    Instead of referencing existing Entities, you can [importing data from Excel](../excel-bootstrap.md) and create new Entities.
+    Instead of referencing existing Entities, you can [import data from Excel](../excel-bootstrap.md) and create new Entities.
 
     </div>
 
@@ -87,10 +89,7 @@ Once you fetch data from the database, use one of many OutSystems widgets to sho
 
     ![Drag an Entity Attribute to the widget](images/fetch-data-drag-attribute-ss.png)
 
-1. Publish your ap and load it in the browser. There's a list widget listing the last names of the employees.
+1. Publish your app and load it in the browser. There's a list widget listing the last names of the employees.
 
     ![App running in the browser](images/fetch-data-browser.png)
 
-## Traditional Web App
-
-For more information on how to add an Aggregate in Traditional Web App, see [Aggregates in Traditional Web Apps](../../../ref/lang/auto/Class.Aggregate.final.md#traditional-web-apps).

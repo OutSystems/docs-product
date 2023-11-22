@@ -4,6 +4,8 @@ summary: Advanced use cases for the Light Box Image UI Pattern.
 locale: en-us
 guid: 6b8b6bad-949d-4561-9cd9-a062b11fc20b
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A515&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Light Box Image Reference

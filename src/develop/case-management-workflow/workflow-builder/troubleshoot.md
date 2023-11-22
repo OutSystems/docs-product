@@ -4,6 +4,8 @@ summary: Troubleshoot Workflow Builder.
 guid: 33571f0b-996f-47e8-ac9d-e43cbc98c2e4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:910
 ---
 
 # Troubleshooting Workflow Builder

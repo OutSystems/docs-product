@@ -4,6 +4,8 @@ summary: Advanced use cases for the Toggle Button UI Pattern.
 locale: en-us
 guid: 0a3ed4d0-92d8-42d3-8cb5-076de9b5752a
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:610
 ---
 
 # Toggle Button Reference

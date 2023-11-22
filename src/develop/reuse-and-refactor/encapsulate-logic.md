@@ -4,6 +4,8 @@ tags: support-application_development; support-webapps-featured
 locale: en-us
 guid: cd22e454-c0cf-4a69-809f-6d6463f67e4c
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:6
 ---
 
 # Use Actions to Encapsulate Logic

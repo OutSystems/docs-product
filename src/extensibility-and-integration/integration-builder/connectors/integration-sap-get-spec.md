@@ -2,6 +2,8 @@
 locale: en-us
 guid: dc751f41-faba-4421-be15-a595e5bd4a55
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6342
 ---
 
 # Obtaining the SAP service specification

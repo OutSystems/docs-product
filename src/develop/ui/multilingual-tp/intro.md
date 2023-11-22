@@ -4,6 +4,8 @@ tags: support-application_development;
 locale: en-us
 guid: d92eca43-e46e-4db0-8445-4dfb51e0b73d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Multilingual Reactive Web and Mobile Apps

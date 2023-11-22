@@ -4,6 +4,8 @@ tags: support-Integrations_Extensions; support-monitoring;  support-monitoring-f
 locale: en-us
 guid: 4322a32a-812e-4357-be20-ce1693dd2968
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:133
 ---
 
 # The APDEX Performance Score

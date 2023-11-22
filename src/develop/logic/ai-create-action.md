@@ -3,6 +3,8 @@ summary: Follow a guided example of creating a Client Action with Code Mentor.
 locale: en-us
 guid: 7565e532-4bff-488b-acf2-ab11ab8f8b58
 app_type: mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=2755%3A24246&mode=design&t=GF97AOUqsRf9tsAh-1
 ---
 
 # Create a Client Action with Code Mentor

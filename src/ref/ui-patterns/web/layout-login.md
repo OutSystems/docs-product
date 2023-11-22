@@ -4,6 +4,8 @@ summary: Advanced use cases for the Layout Login web block.
 locale: en-us
 guid: 61a76744-2261-4ea2-9b6a-a4de711177a7
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:490
 ---
 
 # Layout Login Reference

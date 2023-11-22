@@ -4,6 +4,8 @@ tags: runtime-mobileandreactiveweb
 locale: en-us
 guid: cc983a8d-46d2-4fad-b6f3-eaf1148dba44
 app_type: mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:40
 ---
 
 # Libraries

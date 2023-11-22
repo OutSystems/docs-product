@@ -4,6 +4,8 @@ summary: Follow this guide to set up and enable multilingual Case Management fra
 guid: c882b8c5-8154-4465-ac69-968f5194050d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:1909
 ---
 
 # Enable multilingual Case Management framework

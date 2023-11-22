@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: f204ca02-f2d1-4783-bc88-90934bc968b9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:76
 ---
 
 # Use a Form to Group Input Widgets

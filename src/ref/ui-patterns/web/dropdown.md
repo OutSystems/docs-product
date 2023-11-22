@@ -4,6 +4,8 @@ summary: Advanced use cases for the Dropdown UI Pattern.
 locale: en-us
 guid: 53de8e92-e178-4967-a3cc-e36407f71669
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:452
 ---
 
 # Dropdown Reference

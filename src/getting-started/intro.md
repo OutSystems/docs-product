@@ -4,6 +4,8 @@ tags: support-application_development; support-Mobile_Apps; support-webapps
 locale: en-us
 guid: 036994b9-0656-4dc8-8b94-b0c4e9d71a1f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting-Started?type=design&node-id=1%3A2&mode=design&t=tf47BvyjuOfXlcZP-1
 ---
 
 # Getting started
@@ -24,6 +26,7 @@ To create your first app in Service Studio you can:
 
 ![Creating a new app in OutSystems](images/getting-started-new-app-ss.png)
 
+
 ## Creating apps
 
 You build, edit, and debug your apps in Service Studio, using OutSystems visual language. Once you're happy with how your app looks and works, publish it as a web app, progressive web app, or native mobile app. For an overview, see [Choose the right app for your project](right-app.md).
@@ -38,8 +41,8 @@ There are several prebuilt elements that you can use to build your apps faster. 
 
 You can also use OutSystems builder to prototype the front end of mobile apps or create workflows, if your product license includes these tools. With the builders you can start creating your apps without Service Studio.
 
-* [Workflow Builder](https://success.outsystems.com/Documentation/Workflow_Builder) lets you create fully functional web apps to automate and manage simple workflows.
-* [Experience Builder](https://success.outsystems.com/Documentation/Experience_Builder) lets you create the front end of mobile apps, that you can test right away, and then continue developing in Service Studio.
+* [Workflow Builder](../develop/case-management-workflow/workflow-builder/intro.md) lets you create fully functional web apps to automate and manage simple workflows.
+* [Experience Builder](../develop/experience-builder/intro.md) lets you create the front end of mobile apps, that you can test right away, and then continue developing in Service Studio.
 
 ## Extensions
 

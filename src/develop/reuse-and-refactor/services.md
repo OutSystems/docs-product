@@ -4,6 +4,8 @@ tags: support-application_architecture-featured
 locale: en-us
 guid: 9fe307cf-1687-41f6-9a5b-b8f1484f57ee
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:32
 ---
 
 # Use Services to Expose Functionality

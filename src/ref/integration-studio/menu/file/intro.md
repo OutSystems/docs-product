@@ -2,6 +2,8 @@
 locale: en-us
 guid: f5eb9f11-455a-4bfe-bd0d-2ee4968044bb
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # File Menu

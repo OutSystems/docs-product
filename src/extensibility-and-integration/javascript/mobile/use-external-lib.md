@@ -4,6 +4,8 @@ tags: runtime-mobileandreactiveweb
 locale: en-us
 guid: 8a9bb94e-0720-4c91-ae99-8ed14c8ed6cc
 app_type: mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:45
 ---
 
 # Use JavaScript Code from an External Library

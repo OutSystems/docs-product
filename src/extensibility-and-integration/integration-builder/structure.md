@@ -2,6 +2,8 @@
 locale: en-us
 guid: 597ab495-4b31-4d7f-8c36-a8998c5d4070
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6407
 ---
 
 # Structure of generated integrations

@@ -2,6 +2,8 @@
 locale: en-us
 guid: 51019bcc-2daf-4dfe-9df7-856a656a7de5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1815%3A9268&mode=design&t=8a1ub9syb4QKHbuk-1
 ---
 
 # Export definition files in a SOAP web service

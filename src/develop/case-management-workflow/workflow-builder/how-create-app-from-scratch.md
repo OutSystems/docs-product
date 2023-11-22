@@ -4,6 +4,8 @@ summary: Learn how to create an app from scratch in Workflow Builder.
 guid: 23eb1fab-8030-4857-ab70-2e96e1735bc6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:917
 ---
 
 # Creating a Workflow Builder app from scratch

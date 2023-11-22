@@ -4,6 +4,8 @@ tags: support-application_development; support-webapps
 locale: en-us
 guid: 1a92a987-8550-4f9c-9772-177373a40e2f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:2
 ---
 
 # Sort Results in an Aggregate
@@ -29,7 +31,7 @@ While defining expressions as values for your variable, you can specify:
 
 ## Example
 
-In the following Sorting Example, a reactive application displays a list of employees, with details about each employee. Users should be able sort by the name of the employee in either ascending or descending order.
+In the following Sorting Example, a reactive application displays a list of employees, with details about each employee. Users should be able to sort by the name of the employee in either ascending or descending order.
 
 1. Open Service Studio, create a new Reactive Web App named SortingExample.
 

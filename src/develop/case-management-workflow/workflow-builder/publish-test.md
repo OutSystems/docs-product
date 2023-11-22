@@ -4,6 +4,8 @@ summary: Learn how generate and test apps in Workflow Builder.
 guid: 326f1e4a-f451-480e-9e40-e068521784eb
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:915
 ---
 
 # Publishing and testing your app

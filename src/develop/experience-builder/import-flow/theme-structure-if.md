@@ -3,6 +3,8 @@ summary:  Create Themes according to this Theme structure to attain proper CSS o
 locale: en-us
 guid: f13dda82-0e9d-4622-80fd-ba087153904b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4454:2892
 ---
 
 # Theme structure guidelines

@@ -4,6 +4,8 @@ summary: Advanced uses cases for the Align Center UI Pattern.
 locale: en-us
 guid: b4a62bda-9298-473c-bc03-c0acc4de20f3
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:357
 ---
 
 # Align Center Reference

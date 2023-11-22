@@ -4,6 +4,8 @@ tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: fcef1ee7-5f7d-4c00-a92c-14f0a0039ac0
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:16
 ---
 
 # Send an Email From a Web Application
@@ -68,7 +70,7 @@ To send an email within the logic of your action or process, do the following:
 
 <div class="info" markdown="1">
 
-Use [email built-in functions](<../../ref/lang/auto/builtinfunction.Email.final.md>) to help you handle email addresses.
+Use [email built-in functions](<../../ref/lang/auto/builtinfunction-email.md>) to help you handle email addresses.
 
 </div>
 

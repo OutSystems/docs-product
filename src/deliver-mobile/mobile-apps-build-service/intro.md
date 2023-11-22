@@ -4,6 +4,8 @@ tags: runtime-mobile; support-mobile
 locale: en-us
 guid: a5d92b93-40f7-418b-a2b3-40e81e820760
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:0
 ---
 
 # Mobile Apps Build Service
@@ -66,7 +68,7 @@ Consider an infrastructure with 3 environments: DEV, PP and PROD. In the DEV env
 
 There were two application versions tagged in DEV. Each tagged version was deployed to other environments. Between the two version tag operations, OutSystems released a new version of the MABS cloud service: version 4.0.
 
-![](images/mabs-use-latest-new-release.png)
+![](images/mabs-use-latest-new-release-diag.png)
 
  When your mobile app version 0.5 was tagged in DEV, the latest MABS version available was 3.3. The mobile app package was generated using MABS 3.3 and this MABS version information was saved along with the version tag.
 
@@ -84,7 +86,7 @@ Consider an infrastructure with 3 environments: DEV, PP and PROD. In the DEV env
 
 There were two application versions tagged in DEV, and the application was subsequently deployed to other environments. Between the two version tag operations, OutSystems released a new version of the MABS cloud service.
 
-![](images/mabs-use-specific-new-release.png)
+![](images/mabs-use-specific-new-release-diag.png)
 
  When your mobile app version 0.5 was tagged in DEV, the latest MABS version available was 3.3. The mobile app package was generated using MABS version 3.3 version and this MABS version information was saved along with the version tag.
 

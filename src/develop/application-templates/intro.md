@@ -4,6 +4,8 @@ tags: support-application_development; support-Front_end_Development; support-Fr
 locale: en-us
 guid: 5a669286-c41f-49c6-afe6-00a911f5f162
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=157:17
 ---
 
 # Application Templates

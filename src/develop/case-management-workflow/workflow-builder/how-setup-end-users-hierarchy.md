@@ -4,6 +4,8 @@ summary: Learn how to set up the end users hierarchy in Workflow Builder.
 guid: 75bc63f9-8584-481e-8497-6775aa11b23e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4376:913
 ---
 
 # How to set up the end users hierarchy

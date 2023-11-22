@@ -4,6 +4,8 @@ summary: Learn how to create a simple Pie or Donut chart in OutSystems.
 locale: en-us
 guid: a5d2d3bd-c18c-4828-b099-a0ce4980fe1e
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:467
 ---
 # Create Pie and Donut Charts
 

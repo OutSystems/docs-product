@@ -4,6 +4,8 @@ summary: Learn how to grant access to a case instance to a user or a group of us
 guid: 7409d714-7beb-4222-acc6-9310bba1477a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # How to grant access to a case instance to a user

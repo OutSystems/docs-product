@@ -4,6 +4,7 @@ summary: Layout Login is a custom page layout for the login screen.
 locale: en-us
 guid: 77b92b70-0fe1-4f35-a776-22f98fd1365e
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Layout Login

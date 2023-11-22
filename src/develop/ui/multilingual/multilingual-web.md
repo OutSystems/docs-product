@@ -4,6 +4,8 @@ tags: runtime-traditionalweb; support-application_development
 locale: en-us
 guid: e4525653-9e57-4bb3-8426-a74a898addd0
 app_type: traditional web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:35
 ---
 
 # Multilingual Web Applications
@@ -36,6 +38,12 @@ You can translate the following elements of your Module:
 * Static Entities (make sure the `Use Translations` advanced property is enabled)
 
 From the translation process view, these elements will be considered **translatable resources**. You can select how each translatable resource in your Module is handled - whether it should effectively be translated (text or images that should be different in different languages) or not (for instance, a brand name that is the same across different languages) - using the [Translations Behavior Editor](./translations-editor.md). 
+
+<div class="info" markdown="1">
+
+Starting from Platform Server 11.21.0, default values in consumed REST, SOAP and SAP methods cannot be translated. Check [here](https://success.outsystems.com/support/release_notes/11/outsystems_11_side_effects_and_breaking_changes/#bc-11210-1) for more details.
+
+</div>
 
 ## Add Other Languages
 
@@ -174,7 +182,7 @@ Each flag has a link that, when pressed, invokes a screen action that changes th
 
 ## Display the Current Language to End User
 
-You can obtain your application current language locale using the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction.Environment.final.md#GetCurrentLocale>).
+You can obtain your application current language locale using the [GetCurrentLocale built-in function](<../../../ref/lang/auto/builtinfunction-environment.md#GetCurrentLocale>).
 
 As an example, you may display to the end user a flag and the locale code (in [RFC 1766](<https://tools.ietf.org/html/rfc1766>) format) of the language which the application is operating:
 

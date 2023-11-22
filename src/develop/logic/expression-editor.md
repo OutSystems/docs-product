@@ -4,6 +4,8 @@ tags: support-application_development
 locale: en-us
 guid: b42ff2da-f3fb-4900-9643-60c293c26f55
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=258:18
 ---
 
 # Edit expressions
@@ -49,5 +51,5 @@ An expression is what you edit in the expression editor. An expression consists 
 
 To quickly display the result of an expression, use the expression widget. To see how to use the expression widget, with examples, see:
 
-* [Expression widget](../../ref/lang/auto/ServiceStudio.Plugin.NRWidgets.Expression.final.md)
+* [Expression widget](../../ref/lang/auto/servicestudio-plugin-nrwidgets-expression.md)
 

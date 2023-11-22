@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: 0a003300-3e48-41de-8b77-f08d464a9eb4
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=69:4
 ---
 # Service Studio Tips and Tricks
 
@@ -57,21 +59,27 @@ Start by selecting the elements for which you want to change the Properties and 
 
 Then, you'll be able to see where their Properties differ and where they share common values. All you have to do now is adjust them according to your needs. Any change made within your current selection will be applied to all selected elements.
 
-### Closing and moving Modules
+### Closing Modules
 
 Do you have way too many Modules open? Quickly close any number of them by right-clicking a Module tab and selecting **Close**, **Close other modules**, **Close modules to the right**, or **Close all modules**.
 
 ![Close multiple modules](images/tt-close-modules-ss.gif)
 
-If closing modules is not an option, you can rearrange them by clicking and dragging the module left or right in your list of open modules. Additionally, you can drag a module off the current Service Studio window which opens a new Service Studio window.
+### Moving Modules
+
+You can rearrange Modules by clicking and dragging the module left or right in your list of open modules. Additionally, you can drag a module off the current Service Studio window which opens a new Service Studio window.
 
 ![Reorder modules](images/tt-reordertabs-ss.gif)
+
+You can also drag a module off the current Service Studio and attach it to an existing Service Studio window. 
+
+![Move modules](images/tt-movetabs-ss.gif)
 
 ### Open a Screen in browser
 
 To open a Screen in a browser open the **Interface** tab, right-click that Screen and choose **Open in Browser**. There is no need to create additional Entry Points.
 
-![](images/tt-open-in-browser-00.png)
+![](images/tt-open-in-browser-ss.png)
 
 ### Expanding and collapsing trees
 
@@ -81,7 +89,7 @@ In any tree, collapse or expand all items and subitems:
 * In Windows, click <span class="keyboard"> Ctrl </span>+<span class="lclick">Left-Click</span> in the arrow next to the item you want to expand or collapse.
 * In macOS, click <span class="keyboard"> Cmd </span>+<span class="lclick">Left-Click</span> in the arrow next to the item you want to expand or collapse.
 
-![](images/tt-tree-02.png)
+![](images/tt-tree-02-ss.png)
 
 ### Use the Widget Tree when designing UI
 
@@ -103,7 +111,7 @@ No more CSS stress! Use **Styles Editor** to edit basic visual properties of wid
 
 * Use it directly in the **Style Sheet Editor**
 
-    ![](images/tt-styles-editor-01.png)
+    ![](images/tt-styles-editor-01-ss.png)
 
 ## Boost Performance
 
@@ -189,13 +197,13 @@ Drag an Entity to an Action Flow to create an aggregate.
 
 If you set the `Is Active Attribute` of the Entity - choose **More...** in the Entity properties, then expand **More options** - the new Aggregate is created with the filter `<Entity>.<Is Active Attribute> = True`. Otherwise, the new aggregate is created without filters.
 
-![](images/tt-drag-agg-unf-05.png?width=500)
+![](images/tt-drag-agg-unf-05-ss.png)
 
 ### Create a Button from an Action
 
 Drag an Action and drop it to the Screen. This creates a Button and a binding to the Action.
 
-![Demo of creating a Button from an Action](images/tt-create-button-from-action.gif?width=500)
+![Demo of creating a Button from an Action](images/tt-create-button-from-action.gif)
 
 ### Create a filtered Aggregate from an Identifier
 
@@ -231,7 +239,7 @@ A new action will be created with the selected logic and with all the necessary 
 
 You can easily change the type of a Variable. Right-click the target Variable and select **Convert to Local Variable/Input Parameter/Output Parameter**.
 
-![](images/tt-conv-var-00.png)
+![](images/tt-conv-var-00-ss.png)
 
 Keep in mind that not all Actions may use Output Parameters.
 
@@ -239,7 +247,7 @@ Keep in mind that not all Actions may use Output Parameters.
 
 Right-click the target Text Widget and select **Convert to Expression**.
 
-![](images/tt-conv-text-exp-03.png)
+![](images/tt-conv-text-exp-03-ss.png)
 
 The original text from the Text widget will be automatically included as the example of the new Expression widget.
 
@@ -247,7 +255,7 @@ The original text from the Text widget will be automatically included as the exa
 
 Just right-click the target Entity/Static Entity and under **Advanced** select **Convert to Static Entity/Entity**.
 
-![](images/tt-conv-ent-staent-00.png)
+![](images/tt-conv-ent-staent-00-ss.png)
 
 ### Convert an Entity to a Structure
 
@@ -259,4 +267,4 @@ Converting an Entity to a Structure is as easy as opening  the Data tab and drag
 
 When you need to change a True branch to a False branch or a False branch to a True branch, right-click the target If and select **Swap Connectors** to swap the True/False condition branches.
 
-![](images/tt-conv-if-02.png?width=600)
+![](images/tt-conv-if-02-ss.png)

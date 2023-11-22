@@ -4,6 +4,8 @@ tags: support-application_development; support-Database; support-webapps
 locale: en-us
 guid: 7fb8e153-c008-47ea-a7c2-419d85d33c1b
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:0
 ---
 
 # Create and Use an Enumerate

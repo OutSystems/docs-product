@@ -4,6 +4,8 @@ tags: support-Application_Lifecycle; support-application_development; support-In
 locale: en-us
 guid: bbd958b1-b38f-4ac1-9ea7-7a48be8d65ac
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=257:58
 ---
 
 # Gather user feedback

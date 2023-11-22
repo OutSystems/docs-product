@@ -4,6 +4,8 @@ tags:
 locale: en-us
 guid: f83e9afb-de9b-4b5e-9564-24490bc762e5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=668:425
 ---
 
 # How to edit the data of an entity in Service Studio

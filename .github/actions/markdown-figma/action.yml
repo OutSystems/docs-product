@@ -1,0 +1,50 @@
+name: 'markdown-figma'
+
+inputs:
+  max-updates:
+    description: 'Maximum number of files to update'
+    required: true
+    default: 10
+  figma-token:
+    description: 'Figma API Token'
+    required: true
+    default: ''
+  input-path:
+    description: 'Input Path'
+    required: true
+    default: 'src/'
+  file-pattern:
+    description: 'File Pattern'
+    required: true
+    default: '*.md'
+  export-path:
+    description: 'Export Path'
+    required: true
+    default: 'images'
+  similarity:
+    description: 'Similarity Threshold'
+    required: true
+    default: 0.95
+  report-file:
+    description: 'Report File'
+    required: true
+    default: "report.md"
+
+runs:
+  using: "composite"
+  steps:
+  - name: Run markdown-figma
+    run: |
+      ./markdown-figma \
+      --max-updates "${{ inputs.max-updates }}" \
+      --input "${{ inputs.input-path }}" \
+      --api-token "${{ inputs.figma-token }}" \
+      --pattern "${{ inputs.file-pattern }}" \
+      --export "${{ inputs.export-path }}" \
+      --similarity "${{ inputs.similarity }}" \
+      --empty-export-folder \
+      --svg-visual-check-only \
+      --parse-html \
+      --report "${{ inputs.report-file }}" \
+      --no-delete
+    shell: bash

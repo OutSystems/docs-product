@@ -4,6 +4,7 @@ summary: Organizes content and enables the user to navigate their way around you
 locale: en-us
 guid: 107b5610-cfdd-4186-b3ae-f513af891651
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # Navigation Bar

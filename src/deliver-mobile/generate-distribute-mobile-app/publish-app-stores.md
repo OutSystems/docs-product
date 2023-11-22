@@ -4,6 +4,8 @@ tags: runtime-mobile; support-mobile
 locale: en-us
 guid: f33d65af-6f6e-4425-9db3-7c8a206a71c3
 app_type: mobile apps
+platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=310:13
 ---
 
 # Generate and Publish Your Mobile App to the Mobile App Stores

@@ -4,41 +4,44 @@ tags: support-Application_Troubleshooting; support-Cloud_Platform; support-Cloud
 locale: en-us
 guid: 75f71e55-19e7-4a6a-bd44-f730385acf52
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=2580%3A4785&mode=design&t=uPq3qCZl7kqIKVy0-1
 ---
 
 # Use your SSL domain in OutSystems Cloud
 
-Your OutSystems cloud environments include a valid SSL certificates with the `outsystemsenterprise.com domain`. It's also possible to use your own domain by assigning your SSL certificate to the environments.
+Your OutSystems cloud environment includes a valid SSL certificate with the `outsystemsenterprise.com` domain. You can also use your own domain by assigning your SSL certificate to the environment. To use your own domain, you must upload your SSL certificate that replaces the `outsystemsenterprise.com` default certificate.
 
-The steps of setting up your environments with your company domain include:
+To set up your environment with your company domain, follow these steps:
 
 ![](images/ssl-domain-cloud-steps.png)
 
 <div class="info" markdown="1">
 
-Setting up a different SSL domain changes the endpoint URL of the web services exposed by the environment, that will include the new domain instead. This change requires consumer applications to start using the new endpoint URLs.
+Setting up a different SSL domain changes the endpoint URL of the web services exposed by the environment to include the new domain. This change means that consumer apps must use the new endpoint URLs. OutSystems applications consuming your [REST APIs](../../../extensibility-and-integration/rest/consume-rest-apis/configure-a-consumed-rest-api-at-runtime.md) or [SOAP Web Services](../../../extensibility-and-integration/soap/consume/configure-runtime.md) can configure the new endpoint URLs at runtime in Service Center.
 
-OutSystems applications consuming your [REST APIs](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/REST/Consume_REST_APIs/Configure_a_Consumed_REST_API_at_Runtime) or [SOAP Web Services](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services/Configure_a_SOAP_Web_Service_at_Runtime) can configure the new endpoint URLs at runtime in Service Center.
+To update the new SSL domain name in a mobile application, you must regenerate the app and then distribute the updated version to end users, allowing them to download and install the new version. For more information, refer to [Customizing the mobile app domain name](../../../deliver-mobile/generate-distribute-mobile-app/intro.md#customizing-the-mobile-app-domain-name--customizing-the-mobile-app-domain-name).
 
 </div>
 
 ## SSL domain requirements
+To configure SSL for your domain, do the following:
 
-You'll first need a valid SSL certificate for your chosen domain, this allows your end users to access apps using HTTPS. To acquire a valid certificate, you must own the desired domain address (for example, www.example.com) and:
+1. You must own the desired domain address (for example, www.example.com)
 
-1. Obtain an SSL certificate from a trusted Certificate Authority with the desired domain. The supported formats are either **PEM** or **PFX** with a maximum private key size of 4096 bits. Contact your Certificate Authority if none of these formats are supplied.
+1. Obtain an SSL certificate from a trusted Certificate Authority for the desired domain so the end users can access the apps using HTTPS. For more information, refer to [How to generate a CSR](https://success.outsystems.com/Support/Enterprise_Customers/Installation/How_to_generate_a_CSR). The supported formats are either **PEM** or **PFX** with a maximum private key size of 4096 bits. Contact your Certificate Authority if none of these formats are supplied.
 
 1. Create a CNAME Record for the domain address that points directly to the OutSystems Enterprise address your environment uses. An example is acme.outsystemsenterprise.com.
 
 <div class="info" markdown="1">
 
-**Multi-domain (SAN) certificates:** While you can only have one certificate at a time applied to your environment, it's possible to use multiple domains. If this is the case, you can opt for a multi-domain (SAN) certificate.
+**Multi-domain (SAN) certificates:** While you can only have one certificate at a time applied to your environment, it's possible to use multiple domains. To use multiple domains,you can opt for a multi-domain (SAN) certificate.
 
 </div>
 
 ## Upload the certificate in LifeTime { #upload-certificate }
 
-To use your domain on OutSystems Cloud, you'll need to upload the SSL certificate before assigning it to the environments:
+To use your domain on OutSystems Cloud, you must upload the SSL certificate before assigning it to the environments:
 
 1. Navigate to the infrastructure management console at *`https://<yourlifetimeenvironment>/lifetime`* and go to the **Environments** tab.
 
@@ -60,15 +63,15 @@ You'll have 3 possible options on the next screen:
 
 <div class="info" markdown="1">
 
-Prefer **PEM** and **PFX** certificates, these file types ensure a correct and complete certificate format.
+OutSystems recommends **PEM** and **PFX** certificates. These file types ensure a correct and complete certificate format.
 
 </div>
 
-A wizard will guide you on the next steps, depending on the certificate file format.
+Depending on the certificate file format, the wizard guides you through the next steps.
 
-### My domain certificate is in PEM format { #PEM-certificate }
+### Domain certificate in PEM format { #PEM-certificate }
 
-A PEM certificate is commonly presented as a set of .PEM files (namely a certificate, a private key and a chain), that contain text. The following information is required for submitting a new PEM certificate:
+A PEM certificate is commonly presented as a set of .PEM files (namely a certificate, a private key, and a chain), that contain text. To submit a new PEM certificate, you require the following information:
 
 * **Domain:** The domain the certificate was signed for. Add `*.` for wildcard certificates, for instance: *.example.com. If you are submitting a multi-domain certificate (SAN) you must fill the Domain field with one of the DNS Names that your certificate is signing.
 
@@ -80,16 +83,16 @@ A PEM certificate is commonly presented as a set of .PEM files (namely a certifi
 
 * **Certificate Chain:** The intermediate certificate trust chain. This field is optional, however, if the Certificate Authorities isn't already trusted on all browsers by default, this is mandatory.
 
-* **PEM Password:** If the private key is protected with a header such as ```----- BEGIN ENCRYPTED PRIVATE KEY -----```, the password must be entered.
+* **PEM Password:** If the private key is protected with a header such as `----- BEGIN ENCRYPTED PRIVATE KEY -----`, the password must be entered.
 
 ![](images/ssl-domain-cloud-lt-2.png)
 
 
-### My domain certificate is in PFX format { #PFX-certificate }
+### Domain certificate in PFX format { #PFX-certificate }
 
-The PFX certificate format is commonly used and it's identified by a single '.PFX' file with all the certificate information, including the private key, public certificate and chain.
+The PFX certificate is the most commonly used format and is identified by a single '.PFX' file with all the certificate information, including the private key, public certificate, and chain.
 
-When submitting a PFX certificate you'll need to fill in the following fields:
+To submit a new PFX certificate, you require the following information:
 
 * **Domain:** The domain the certificate was signed for. Add `*.` for wildcard certificates, for instance: *.example.com. If you are submitting a multi-domain certificate (SAN), fill the **Domain** field with one of the DNS Names that your certificate is signing.
 
@@ -101,19 +104,19 @@ When submitting a PFX certificate you'll need to fill in the following fields:
 
 ![](images/ssl-domain-cloud-lt-3.png)
 
-### I don't really know in what format my Domain certificate is { #ZIP-bundle }
+### Unknown domain certificate format { #ZIP-bundle }
 
 <div class="warning" markdown="1">
 
-This option should only be used only when it's impossible to use the two previous options. 
+Choose the **I don't really know in what format my Domain certificate is** option only when it's impossible to use the PEM and PFX certificate options. 
 
-If you have a ZIP file, try unpacking it first and check if inside there is a .PFX or .PEM file. If there is, choose the corresponding option on the wizard and use the .PFX or .PEM files instead.
+If you have a ZIP file, unzip the zip file and check for .PFX or .PEM file. Then, choose the corresponding option on the wizard to use the .PFX or .PEM files.
 
 </div>
 
 It's possible to submit a ZIP file (must be .zip extension) containing the files you currently have for validation.
 
-The following information is required when submitting a bundle:
+To submit a bundle, you require the following information:
 
 * **Domain:** The domain the certificate was signed for. Add `*.` for wildcard certificates, for instance: *.example.com. If you are submitting a multi-domain certificate (SAN) you must fill the Domain field with one of the DNS Names that your certificate is signing.
 
@@ -135,25 +138,25 @@ Once successful, click **Submit**.
 
 ![](images/ssl-domain-cloud-lt-7.png)
 
-If the certificate isn't considered valid you'll see this warning:
+If the certificate is not valid, the following warning message is displayed:
 
 ![](images/ssl-domain-cloud-lt-8.png)
 
-It's advised to double check your certificate and submit for a new validation. Check [these guidelines](https://success.outsystems.com/Support/Troubleshooting/Infrastructure_management/Possible_errors_when_validating_your_SSL_domain_certificate) to know how you should proceed for a specific validation error.
+OutSystems recommends to double check your certificate and submit it for a new validation.  For more information about handling errors, refer to [Possible errors when validating your SSL domain certificate](https://success.outsystems.com/Support/Troubleshooting/Infrastructure_management/Possible_errors_when_validating_your_SSL_domain_certificate)
 
-You may instead choose to submit anyway but note that in this case, OutSystems will do the validation manually. This can take several days to complete, according to our [target delivery](https://www.outsystems.com/legal/success/cloud-services-catalog/).
+You can submit an invalid certificate. In this case, OutSystems validates the certificate manually.This can take several days to complete, according to our [target delivery](https://www.outsystems.com/legal/success/cloud-services-catalog/).
 
 In the meanwhile, you can check the status of the certificate validation at **Environments** > **Options** > **Manage Domain certificates**.
 
 ![](images/ssl-domain-cloud-lt-5.jpg)
 
-While the certificate isn't validated you'll see the **Status** as loading:
+If the certificate isn't validated you'll see the **Status** as loading:
 
 ![](images/ssl-domain-cloud-lt-6.png)
 
-When this happens, it won't be possible to apply the certificate to the environments.
-OutSystems Support will only contact you if the certificate is missing any information. You'll only be able to apply assign the certificate to an environment once this process is completed.
-
+ You can only assign the certificate to an environment once the validation process is complete.
+ 
+OutSystems Support will only contact you if the certificate is missing any information. You can assign the certificate to an environment only once this process is complete.
 
 ## Assigning the certificate to an environment
 
@@ -176,7 +179,7 @@ You can now assign the certificate to an environment, directly from the **Enviro
 
 ## Assigning a domain certificate to LifeTime { #lifetime-certificate }
 
-Customizing the domain of the LifeTime environment is possible. However, it's only available with a support ticket because it has a direct impact on the user session.
+You can customize the domain of the LifeTime environment. However, it's only available with a support ticket because it has a direct impact on the user session.
 
 Follow these steps:
 
@@ -225,4 +228,3 @@ When a certificate is about to expire, a warning appears for the environment:
 ### LifeTime certificate renewal
 
 Just like the [initial configuration of a LifeTime certificate](#lifetime-certificate), the renewal requires the same process by creating a support ticket.
-

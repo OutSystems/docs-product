@@ -4,6 +4,8 @@ tags: support-application_development; runtime-traditionalweb;
 locale: en-us
 guid: 63d6ab36-1403-4f8f-9ba8-ee4450833e39
 app_type: traditional web apps
+platform-version: o11
+figma:
 ---
 
 # Translating the app UI

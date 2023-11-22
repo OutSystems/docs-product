@@ -2,6 +2,8 @@
 locale: en-us
 guid: 6d427a2f-1395-4386-abde-fe9f074f7e38
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Imported Actions Properties

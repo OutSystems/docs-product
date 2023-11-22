@@ -3,6 +3,8 @@ summary: UI Flow groups screens into logical units with common settings.
 locale: en-us
 guid: be5be9b1-2021-4aef-919c-4b36b930255d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:27
 ---
 
 # UI Flows

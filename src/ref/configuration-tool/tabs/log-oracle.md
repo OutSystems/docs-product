@@ -3,6 +3,8 @@ summary: Log tab showing specific settings for the 'Oracle' database provider.
 locale: en-us
 guid: 4730ef3b-0979-41fb-95dc-b177a430f9e7
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
+figma:
 ---
 
 # Log Tab in Oracle

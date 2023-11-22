@@ -4,6 +4,7 @@ summary: Use the Section Group UI Pattern to keep the context of the header whil
 locale: en-us
 guid: 7a764bd9-b48b-4961-a2b0-594723d02997
 app_type: mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Section Group

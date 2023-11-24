@@ -22,7 +22,7 @@ OutSystems Cloud uses a layer of [AWS Security Groups](https://docs.aws.amazon.c
 
 Additionally, OutSystems shields each environment using a **Web Application Firewall (WAF)**, which blocks malicious traffic from reaching the running web applications. To ensure that OutSystems keeps full flexibility on the reaction to evolving security threats, maximum availability, and compatibility with OutSystems product evolution, the same WAF's policies apply to all customers.
 
-The diagram below shows the **network architecture** of the base setup for an OutSystems Cloud Standard Edition, including the set of **servers** and the **inbound/outbound communications** between the customer’s infrastructure and the internet:
+The diagram below shows the **network architecture** of a common setup for an OutSystems Cloud Standard Edition, including the set of **servers** and the **inbound/outbound communications** between the customer’s infrastructure and the internet:
 
 ![OutSystems cloud diagram](images/cloud-architecture-standard-diag.png)
 
@@ -77,7 +77,7 @@ Additionally, customers who need extra layers of compliance have the option to u
 
 * Enforced HTTPS communications.
 
-The diagram below shows the architecture of the base setup for a Standard Edition with high-availability option in a high-compliance OutSystems Cloud:
+The diagram below shows the architecture of the typical setup for a Standard Edition with high-availability option in a high-compliance OutSystems Cloud:
 
 ![OutSystems cloud high availability and compliance](images/cloud-architecture-high-availability-diag.png)
 

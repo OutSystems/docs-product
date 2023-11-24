@@ -5,6 +5,7 @@ locale: en-us
 guid: da3a1367-e123-420b-8978-da142720ef57
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=230%3A27&mode=design&t=KpVEJMvnBwiukqql-1
 ---
 
 # Dropdown Select

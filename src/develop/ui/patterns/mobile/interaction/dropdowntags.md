@@ -5,6 +5,7 @@ locale: en-us
 guid: 6b79cc3c-d89b-40df-ba5f-c04038639d4b
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:0
 ---
 
 # Dropdown Tags

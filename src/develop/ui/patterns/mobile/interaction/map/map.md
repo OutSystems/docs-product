@@ -5,6 +5,7 @@ locale: en-us
 guid: 3193c9d8-9711-4d4c-bf24-839f22a8052f
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1155:16774
 ---
 
 # How to use the Map component

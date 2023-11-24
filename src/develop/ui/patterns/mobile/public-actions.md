@@ -5,6 +5,7 @@ locale: en-us
 guid: e4899a53-ca9e-4c13-b021-06518a34fba2
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=222:18
 ---
 
 # Public Actions

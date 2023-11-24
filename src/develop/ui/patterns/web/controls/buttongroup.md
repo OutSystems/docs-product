@@ -5,6 +5,7 @@ locale: en-us
 guid: a42977e0-825d-49b5-bc9b-49025bac70cb
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=226%3A22&mode=design&t=KpVEJMvnBwiukqql-1
 ---
 
 # Button Group

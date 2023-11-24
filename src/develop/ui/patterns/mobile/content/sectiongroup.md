@@ -5,6 +5,7 @@ locale: en-us
 guid: 7a764bd9-b48b-4961-a2b0-594723d02997
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:59
 ---
 
 # Section Group

@@ -5,6 +5,7 @@ locale: en-us
 guid: F51B0186-5CEB-4D5F-880D-A85C6E0AB6DF
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3248:26280
 ---
 
 # Time Picker

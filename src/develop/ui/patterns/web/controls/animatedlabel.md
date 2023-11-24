@@ -5,6 +5,7 @@ locale: en-us
 guid: cada799f-c2fe-4d0a-98aa-309bf3a4fd16
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=226:14
 ---
 
 # Animated Label

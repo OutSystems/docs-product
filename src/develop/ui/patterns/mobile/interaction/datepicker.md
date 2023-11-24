@@ -5,6 +5,7 @@ locale: en-us
 guid: 1037b7a1-61e2-4f92-a78c-c132cee67995
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=205%3A107&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Date Picker

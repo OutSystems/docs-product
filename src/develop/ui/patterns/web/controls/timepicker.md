@@ -5,6 +5,7 @@ locale: en-us
 guid: 113a390f-c3f6-4ba3-b493-184f75c36227
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=237%3A0&mode=design&t=KpVEJMvnBwiukqql-1
 ---
 
 # Time Picker 

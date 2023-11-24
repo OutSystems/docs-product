@@ -5,6 +5,7 @@ locale: en-us
 guid: ec5ca995-0a63-4bc9-b5d9-9c22a0f34a5b
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:20
 ---
 
 # Input with Icon

@@ -5,6 +5,7 @@ locale: en-us
 guid: 77270b71-d3f8-4ae7-93a2-92dd501e7d21
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=237:7
 ---
 
 # Toggle Button

@@ -5,6 +5,7 @@ locale: en-us
 guid: b448e71a-760c-46b3-9fed-b3b97229d351
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=226%3A0&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Tag

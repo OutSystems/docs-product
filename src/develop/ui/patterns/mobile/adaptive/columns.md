@@ -5,6 +5,7 @@ locale: en-us
 guid: 1c4edd42-f577-4475-ad7c-72fbe2a849a8
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:22
 ---
 
 # Columns

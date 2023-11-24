@@ -5,6 +5,7 @@ locale: en-us
 guid: 61ddaa14-5f08-44b8-95a5-9527a7649449
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A55&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Tabs

@@ -5,6 +5,7 @@ locale: en-us
 guid: f3a3a460-60ea-4f88-9eb2-0fda7bce73b3
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A38&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Section Index

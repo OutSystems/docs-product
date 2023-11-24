@@ -4,8 +4,8 @@ summary: Card Sectioned groups short pieces of information in sections and highl
 locale: en-us
 guid: db5e39c5-f5ee-4e18-9754-14fef2f95533
 app_type: mobile apps, reactive web apps
-figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=205%3A31&mode=design&t=VAUZFR5OF93DHr2U-1
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:31
 ---
 
 # Card Sectioned

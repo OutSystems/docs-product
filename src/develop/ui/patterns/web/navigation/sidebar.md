@@ -5,6 +5,7 @@ locale: en-us
 guid: e04f67a0-6c80-4d32-b519-55fb5ff7a04b
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A46&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Sidebar

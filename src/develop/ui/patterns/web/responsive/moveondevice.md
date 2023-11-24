@@ -5,6 +5,7 @@ locale: en-us
 guid: 504329ab-7245-4b5b-ac7a-17b7fb026663
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=245:44
 ---
 
 # Move on Device

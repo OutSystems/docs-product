@@ -5,6 +5,7 @@ locale: en-us
 guid: 434a7ae9-243a-47b8-ae7c-e2f424a5411b
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:26
 ---
 
 # Card Item

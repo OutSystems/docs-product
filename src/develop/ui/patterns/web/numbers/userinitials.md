@@ -5,6 +5,7 @@ locale: en-us
 guid: 079fe985-0d1e-435c-984a-cbd125908f13
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=245:23
 ---
 
 # User Initials

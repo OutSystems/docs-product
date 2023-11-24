@@ -5,6 +5,7 @@ locale: en-us
 guid: 6e0a8f5c-f734-4478-913e-21c6e81e8f1e
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=238:15
 ---
 
 # Layout Popup

@@ -5,6 +5,7 @@ locale: en-us
 guid: 0eaaa700-8f98-4d1e-b478-5df2d45101ff
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=230%3A0&mode=design&t=KpVEJMvnBwiukqql-1
 ---
 
 # Date Picker

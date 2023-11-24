@@ -5,6 +5,7 @@ locale: en-us
 guid: 1f0827a1-891f-4fe7-a37e-34a66224f7dc
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:54
 ---
 
 # Progress Circle

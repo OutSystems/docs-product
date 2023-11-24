@@ -5,6 +5,7 @@ locale: en-us
 guid: d948b2a9-574a-43a1-bf6a-9465bdc22dfe
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:73
 ---
 
 # Sidebar

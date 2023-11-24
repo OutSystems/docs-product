@@ -5,6 +5,7 @@ locale: en-us
 guid: c2f627d5-7dbf-4c75-a18e-43635917c6e6
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=249%3A5&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Separator

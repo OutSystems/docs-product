@@ -5,6 +5,7 @@ locale: en-us
 guid: 81E3194C-9817-4A14-81C5-5E3F3CDDE4E3
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3248:26842
 ---
 
 # Month Picker

@@ -5,6 +5,7 @@ locale: en-us
 guid: 88f0dd67-0dcf-44c3-ad3e-41977550015c
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A59&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Align Center

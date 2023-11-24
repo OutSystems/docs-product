@@ -8,7 +8,7 @@ platform-version: o11
 figma: 
 ---
 
-# Managing the Applications Lifecycle
+# Managing the applications lifecycle
 
 Application Lifecycle Management (ALM) is the continuous process of managing applications throughout their entire lifecycle: from development to maintenance.
 

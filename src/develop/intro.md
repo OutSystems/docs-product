@@ -7,7 +7,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# Developing an Application
+# Developing an application
 
 You develop apps in Service Studio, the main IDE in OutSystems. A new app usually contains one module with a user interface, and you can use that module to start building your app.
 

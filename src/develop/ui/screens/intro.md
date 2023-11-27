@@ -4,6 +4,7 @@ locale: en-us
 guid: a864addf-9175-49f9-905e-e90013c7d238
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=184:0
 ---
 
 # Screen

@@ -5,6 +5,7 @@ locale: en-us
 guid: ca291da3-9cc0-496c-bc37-018488602df9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=186:42
 ---
 
 # Screen Templates

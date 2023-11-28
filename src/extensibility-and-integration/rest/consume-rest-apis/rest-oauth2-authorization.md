@@ -64,3 +64,35 @@ You can test the REST API with OAuth client credentials flow authentication by:
     ![Testing REST API with OAuth 2.0 client flow](images/oauth-method-test-ss.png)
 
 If you manually add the authorization header in the model or the OnBeforeRequest callback, you override the header if authentication is either **Basic authentication** or **OAuth 2.0: client credentials**.
+
+## Example for consuming a REST API with OAuth 2.0 client credentials
+
+OutSystems Developers can use REST APIs with OAuth 2.0 for the client credentials flow without using high-code or unsupported Forge assets.
+
+The following example explains how a single REST API can be consumed with OAuth 2.0 credentials.
+
+1. From the **Logic** tab, open the **Integrations** folder. Then right-click on the **REST** element and select **Consume REST API**.
+
+1. In the **Consume REST API** dialog, select **Add Single Method** and then select **Continue**.
+
+1. In the **Consume Single API** dialog, enter the URL information in the **Method URL** field.
+
+    ![Screenshot of filling the Method URL for the Single Method REST API with OAuth 2.0](images/oauth-add-method-url-ss.png)
+
+1. To set the OAuth 2.0 authentication for the REST API you are consuming, open the **Headers and Authentication** tab and then from the **Authentication** list, select **OAuth 2.0: client credentials**.
+
+    * To authenticate the app, enter the client credentials in the **Client ID** and **Client secret** fields.
+
+    * In the **Access token URL** and **Scopes** fields, respectively, enter the URL and permission scopes based on the OpenAPI specification file.
+
+    * To obtain a token and send it as an authorization header to the authorization server, from the **Client authentication** list, select **Send as a Basic Auth header**.
+
+        ![Screenshot of adding OAuth 2.0 client credentials details](images/oauth-fill-authentication-details-ss.png)
+
+1. Open the **Test** tab and select **Test**. If the test is successful, you see the method's response in the Response area of **Test** tab. Then select **Finish**.
+
+    ![Screenshot of testing the REST API with OAuth 2.0 client credentials](images/oauth-test-api-ss.png)
+
+The following shows how the OAuth2.0 client credentials display in the logic tab.
+
+![Screenshot of OAuth 2.0 client credentials in the Logic tab](images/oauth-details-in-logic-tab-ss.png)

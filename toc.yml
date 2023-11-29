@@ -978,6 +978,19 @@
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/views-and-tables.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/query-log-data.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md
+    # Log streaming
+        - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/intro.md
+        - topics:
+            - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/process.md
+            - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/detailed-log-map.md
+            - topics:
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/lifetime-streaming.md
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/datadog.md 
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/dynatrace.md 
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/elastic.md                            
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/new-relic.md
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/splunk.md
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/configure-collector.md
     # AI Mentor Studio
     - href: managing-the-applications-lifecycle/manage-tech-debt/intro.md
     - topics:
@@ -1056,7 +1069,8 @@
         - href: setup-maintain/setup/logging-db/intro.md
         - topics:
             - href: setup-maintain/setup/logging-db/configure-separate-db.md
-            - href: setup-maintain/setup/logging-db/update-applications.md
+            - href: setup-maintain/setup/logging-db/update-applications.md                       
+
         - href: setup-maintain/setup/unattended-install/intro.md
         - topics:
             - href: setup-maintain/setup/unattended-install/config-tool-ref.md

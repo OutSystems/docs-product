@@ -5,6 +5,10 @@
     - href: getting-started/service-studio.md
     - href: getting-started/create-reactive-web.md
     - href: getting-started/create-mobile.md
+    - href: getting-started/transitioning/intro.md
+    - topics:
+        - href: getting-started/transitioning/dev-cheat-sheet.md
+        - href: getting-started/transitioning/os-language-concepts.md
     - href: getting-started/create-use-case/intro.md
     - topics:
         - href: getting-started/create-use-case/understand-create-app.md

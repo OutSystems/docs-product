@@ -977,6 +977,7 @@
         - topics:
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/views-and-tables.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/query-log-data.md
+            - href: setup-maintain/setup/logging-db/logs-separation-cloud/centralized-platform-logs-extension.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md
     # Log streaming
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/intro.md
@@ -1069,6 +1070,8 @@
         - href: setup-maintain/setup/logging-db/intro.md
         - topics:
             - href: setup-maintain/setup/logging-db/configure-separate-db.md
+            - href: setup-maintain/setup/logging-db/update-applications.md
+            - href: setup-maintain/setup/logging-db/logs-separation-cloud/intro.md
             - href: setup-maintain/setup/logging-db/update-applications.md                       
 
         - href: setup-maintain/setup/unattended-install/intro.md

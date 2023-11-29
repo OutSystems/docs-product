@@ -12,7 +12,7 @@ platform-version: o11
 
 Apps can produce a high volume of logs. Storing such a large volume along with the application data in the Database Server can place a high strain on an environment, as both the apps and logs share the same resources (such as database storage and CPU, for example). The high logging volume can even cause outages.
 
-From Platform Server 11.23.0, OutSystems Cloud customers can store the log data in a different location, as was already possible for [self-managed infrastructures](../configure-separate-db.md). This way, the platform app logs don't share the same resources as the application data. When storing the log data in a different location, the types of logs and their information remain the same. 
+From Platform Server 11.23.1, OutSystems Cloud customers can store the log data in a different location, as was already possible for [self-managed infrastructures](../configure-separate-db.md). This way, the platform app logs don't share the same resources as the application data. When storing the log data in a different location, the types of logs and their information remain the same. 
 
 By using the separated logs feature, you can: 
 
@@ -40,9 +40,9 @@ To use the logs separation feature, make sure you meet the following requirement
 
 * Your infrastructure is on the OutSystems Cloud. 
 
-* You use Platform Server version 11.23.0 or higher.
+* You use Platform Server version 11.23.1 or higher.
 
-* You use LifeTime version 11.17.2 or higher.
+* You use LifeTime version 11.19.0 or higher.
 
 Once logs are separated, you'll be able to see the log storage location at [Customer Portal](https://www.outsystems.com/csportal/).
 

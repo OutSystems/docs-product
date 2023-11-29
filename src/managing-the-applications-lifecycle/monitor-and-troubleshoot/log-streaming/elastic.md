@@ -15,7 +15,7 @@ To set up the log streaming to Elastic, you need the **Elastic URL** and **Secre
 
 ## Prerequisites
 
-* Enabled [Log separation](../../../setup-maintain/setup/logging-db/intro.md).
+* Enabled [Log separation](../../../setup-maintain/setup/logging-db/logs-separation-cloud/intro.md).
 
 * Native Elastic APM OpenTelemetry log ingestion is only available in version 8.0 onwards.
 
@@ -23,7 +23,7 @@ To set up the log streaming to Elastic, you need the **Elastic URL** and **Secre
 
 * Installed Platform Server version 11.23.1 or higher.
 
-* Installed LifeTime version 11.18.1 or higher.
+* Installed LifeTime version 11.19.0 or higher.
 
 ## Additional resources
 

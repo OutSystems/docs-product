@@ -984,8 +984,8 @@
         - topics:
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/process.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/detailed-log-map.md
-            - topics:
-                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/lifetime-streaming.md
+            - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/lifetime-streaming.md
+            - topics: 
                 - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/datadog.md 
                 - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/dynatrace.md 
                 - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/elastic.md                            

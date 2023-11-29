@@ -6,7 +6,7 @@ guid: 55b2e20c-fcbb-41d0-b01b-af9f007132b8
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Splunk
+# Stream logs to Splunk
 
 This article explains how you can set up log streaming from OutSystems applications to the **Splunk** APM tool.
 

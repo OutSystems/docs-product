@@ -7,7 +7,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3139%3A322&mode=design&t=IIMVc2WTi7UxHv00-1
 ---
 
-# Dynatrace
+# Stream logs to Dynatrace
 
 This article explains how you can set up log streaming from OutSystems applications to the **Dynatrace** APM tool.
 

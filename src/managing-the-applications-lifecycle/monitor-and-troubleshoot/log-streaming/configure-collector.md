@@ -10,7 +10,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 This article explains how to set up the OpenTelemetry collector for Application Performance Monitoring (APM) tools that don't support native ingestion of OpenTelemetry data.
 
-To receive logs in Datadog, Dynatrace, or Splunk, you must set up an OpenTelemetry Collector:
+To receive logs in Datadog or Splunk, you must set up an OpenTelemetry Collector:
 
 1. Download the latest release of the OpenTelemetry Collector Contrib distribution, from [OpenTelemetry’s GitHub repository](https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.87.0).
 

@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# Transitioning to the OutSystems language
+# Adding OutSystems to your portfolio
 
 <div class="info" markdown="1">
 
@@ -34,5 +34,6 @@ To help with the initial learning curve that many traditional developers encount
 * [OutSystems for Front-end Developers](https://learn.outsystems.com/training/journeys/outsystems-for-front-end-developers-455)
 * [OutSystems for Java Developers](https://learn.outsystems.com/training/journeys/outsystems-for-java-developers-456)
 * [Getting Started with OutSystems for PHP Developers](https://learn.outsystems.com/training/journeys/outsystems-for-php-developers-457)
+* [Hello World (on Steroids)](https://learn.outsystems.com/training/journeys/hello-world-699)
 
 

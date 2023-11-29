@@ -191,6 +191,8 @@ The use of double-byte characters with DB2 databases is not supported.
 * MongoDB Atlas and on-premises
 * MongoDB 4.X
 * MongoDB 5.X
+* MongoDB 6.X
+* MongoDB 7.0
 
 ### SAP
 

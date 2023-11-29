@@ -22,14 +22,11 @@ This article explains how you can set up log streaming from OutSystems applicati
 
 To configure the OutSystems log streaming service, using **Splunk** as the destination tool, follow these steps:
 
-To configure the OutSystems log streaming service, using Splunk as the destination tool, follow these steps:
-
 1. [Configure Splunk to receive logs](#configure-splunk-to-receive-logs).
 
-2. Set up the [OpenTelemetry Collector](configure-collector.md).
+1. Set up the [OpenTelemetry Collector](configure-collector.md).
 
-3. Get the OpenTelemetry Collector endpoint and authentication credentials.
-Once you've completed these steps, go to LifeTime and configure the log streaming service. 
+1. Get the OpenTelemetry Collector endpoint and authentication credentials.
 
 Once you've completed these steps, go to LifeTime and [configure the log streaming service](lifetime-streaming.md). 
 

@@ -1071,8 +1071,7 @@
         - topics:
             - href: setup-maintain/setup/logging-db/configure-separate-db.md
             - href: setup-maintain/setup/logging-db/update-applications.md
-            - href: setup-maintain/setup/logging-db/logs-separation-cloud/intro.md
-            - href: setup-maintain/setup/logging-db/update-applications.md                       
+            - href: setup-maintain/setup/logging-db/logs-separation-cloud/intro.md                    
 
         - href: setup-maintain/setup/unattended-install/intro.md
         - topics:

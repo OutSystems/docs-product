@@ -233,7 +233,7 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 #### Required software
 
-* Google Chrome version 54 or later
+* Google Chrome version 54 or later, or Microsoft Edge
 :   To perform client-side debugging in Service Studio using a  desktop browser 
 * Android device drivers
 :   To perform client-side debugging on an Android mobile device if the device is not recognized automatically

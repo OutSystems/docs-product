@@ -23,7 +23,6 @@ For detailed information on the prerequisites for log streaming, refer to the in
 
 </div>
 
-
 1. Retrieve the APM tool's server URL and the authentication credentials
 To establish a secured connection between your app and the APM tool, you require the APM tool's server URL and the authentication credentials. The steps to retrieve the server URL and the authentication information vary for each tool. For detailed information, refer to the corresponding APM tool documentation.
 
@@ -35,7 +34,6 @@ To enable log streaming from the OutSystems app to the corresponding APM tool, y
 
 4. Test and validate the connection
 In LifeTime, test if your app has established a connection with the APM tool and validate if the test data is sent to the destination tool.  If the connection fails, then refer to the [troubleshooting guide](https://success.outsystems.com/support/errors/log_streaming/) to understand why and how you can resolve the errors and retest the connection.
-
 
 ## What's next
 

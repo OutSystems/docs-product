@@ -5,6 +5,7 @@ locale: en-us
 guid: 68463867-fb0c-4e54-9fe5-d0e117dbf9bb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:120
 ---
 
 # Validate End User Permissions in the Application

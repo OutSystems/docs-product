@@ -5,6 +5,7 @@ locale: en-us
 guid: 54d15c8a-e72c-4732-a54e-9f4e0be1fe0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:17
 ---
 
 # Create a Custom Application Template

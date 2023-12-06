@@ -4,6 +4,7 @@ locale: en-us
 guid: e3ffd1e2-d1d0-42de-a67f-35796538eacc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Queries
@@ -16,5 +17,4 @@ For more information about handling data using queries, see:
 * [Query Parameter](../../../lang/auto/class-query-parameter.md)
 * [SQL](../../../lang/auto/class-sql.md)
 * [Supported Join Types](supported-join-types.md)
-
-
+* [Handle complicated search pages](handle-complicated-search-pages.md)

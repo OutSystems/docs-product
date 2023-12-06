@@ -5,6 +5,7 @@ locale: en-us
 guid: 2d7ca3ba-dd47-4cbb-9400-2399d1b07d7a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Automatic Activity

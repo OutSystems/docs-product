@@ -5,6 +5,7 @@ locale: en-us
 guid: 3ecfdec5-b135-4faa-8c1f-110595075a02
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=653:417
 ---
 
 # Scrollable Area

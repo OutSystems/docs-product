@@ -6,6 +6,7 @@ locale: en-us
 guid: 4246f32d-ed38-4f0f-9585-653d7247cf8c
 app_type: traditional web apps
 platform-version: o11
+figma:
 ---
 
 # Image Widget

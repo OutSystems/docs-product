@@ -3,6 +3,7 @@ locale: en-us
 guid: 8b8cb064-12a6-44aa-b765-3b44f070b8ea
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # ExBuilder_Sync

@@ -5,6 +5,7 @@ locale: en-us
 guid: dee8f358-e76a-4277-af9f-c18bd1a05616
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Solution Pack Tool Command Line Reference - OSPTool

@@ -5,6 +5,7 @@ locale: en-us
 guid: 85879015-1e65-424a-85cb-3405be3dafe9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=418%3A80&mode=design&t=8a1ub9syb4QKHbuk-1
 ---
 
 # Configure OutSystems to Send Emails

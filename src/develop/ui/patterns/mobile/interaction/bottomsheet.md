@@ -5,6 +5,7 @@ locale: en-us
 guid: 4CCAE716-CF2A-4601-9F03-D6ACF603F01A
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=2885:24642
 ---
 
 # Bottom Sheet

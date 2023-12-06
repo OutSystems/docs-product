@@ -6,6 +6,7 @@ locale: en-us
 guid: 9d318909-8caa-4f44-85fd-ef3ada5d566c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1482
 ---
 
 # Exception Handler

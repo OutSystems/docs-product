@@ -5,6 +5,7 @@ locale: en-us
 guid: 5ee100a0-6f04-4289-8f48-5ceff38331e7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:119
 ---
 
 # Customize the look of your app with Theme Editor

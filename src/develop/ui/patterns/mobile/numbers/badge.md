@@ -5,6 +5,7 @@ locale: en-us
 guid: 4e759186-e8a8-416a-a1fc-505d2cdc8de8
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:21
 ---
 
 # Badge

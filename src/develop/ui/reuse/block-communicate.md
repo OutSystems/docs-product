@@ -5,11 +5,12 @@ locale: en-us
 guid: 77d2313f-f484-4581-825e-c198e4756a11
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:12
 ---
 
 # Pass Data Between Blocks
 
-In a screen or block with child blocks, it can happen that an event in a child block requires updating another block. For example, a block containing a date picker that, when changed, requires updating a chart plotted by another block. 
+In a screen or block with child blocks, it can happen that an event in a child block requires updating another block. For example, a block containing a date picker that, when changed, requires updating a chart plotted by another block. To learn more about creating reusable blocks, check [Create and Reuse Screen Blocks](block-create-reuse.md). There you can learn how can you create a reusable block. It's useful before creating an use case that will use events to pass data or communicate between blocks.
 
 For example, suppose there is a screen that is the parent of two blocks:
 

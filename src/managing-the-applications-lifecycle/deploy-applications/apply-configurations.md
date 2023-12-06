@@ -5,6 +5,7 @@ locale: en-us
 guid: fd03d085-fcb8-4b45-939e-1931252ade2c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=3164%3A321&mode=design&t=98kL4vRdGIKpuwQm-1
 ---
 
 # Applying Configurations in Service Center

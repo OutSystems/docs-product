@@ -5,6 +5,7 @@ locale: en-us
 guid: b7dce067-3d75-4c88-8a92-9de144f97896
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # How to get draggable marker coordinates  

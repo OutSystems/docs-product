@@ -5,6 +5,7 @@ locale: en-us
 guid: a4be094e-5543-4200-8b86-4a6b834f7cc6
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=238:19
 ---
 
 # Layout Top Menu

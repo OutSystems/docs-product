@@ -5,6 +5,7 @@ locale: en-us
 guid: 2ee63ee6-02cf-4a5a-a348-92e5b46b3946
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A77&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Chat Message

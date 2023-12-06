@@ -7,6 +7,7 @@ locale: en-us
 guid: 5d499b46-63fa-4200-9a63-19c5bc007744
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Image

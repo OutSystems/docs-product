@@ -5,6 +5,7 @@ locale: en-us
 guid: 4fbaf92c-a4a3-4acd-9453-c8502ee36d8f
 app_type: reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:23
 ---
 
 # Creating and editing tables

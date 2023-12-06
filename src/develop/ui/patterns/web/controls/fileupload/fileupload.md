@@ -5,6 +5,7 @@ locale: en-us
 guid: 0a5c3fb1-4677-4fe5-bafd-a63eb787adb1
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=232%3A0&mode=design&t=KpVEJMvnBwiukqql-1
 ---
 
 # File Upload

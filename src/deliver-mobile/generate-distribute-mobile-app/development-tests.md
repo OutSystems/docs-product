@@ -5,6 +5,7 @@ locale: en-us
 guid: 8d9cef20-3f8a-440f-b229-bc8b3ced3e51
 app_type: mobile apps
 platform-version: o11
+figma:
 ---
 
 # Generate and Distribute Your Mobile App for Development Tests

@@ -4,6 +4,7 @@ locale: en-us
 guid: 09712708-bd45-4271-9005-9b19e43d29dc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Log tab in SQL Server and Azure SQL Database

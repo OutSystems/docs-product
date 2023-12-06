@@ -5,6 +5,7 @@ locale: en-us
 guid: 4d07edaa-0b7b-41b8-bd1f-59c4b1bfd103
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:207
 ---
 
 # Modify the App Icon
@@ -26,24 +27,24 @@ To change the default icon and use your own icon image, providing multiple versi
 
 1. Open the main application module and import the new or the updated ZIP file to the resources folder.
 
-    ![](images/image01.png)
+    ![](images/resources-folder-ss.png)
 
 1. Select the application module, go to its properties and open the Extensibility Configurations property.
 
-    ![](images/image06_2.png)
+    ![](images/extensibility-configurations-ss.png)
 
 1. In the Extensibility Configurations value window, you must create a JSON object (if not created) where you can specify all the information about the icons to use. If not yet specified, start by indicating the resource file that contains the icons.
 
-    ![](images/image3.png)
+    ![](images/extensibility-resource-ss.png)
 
 1. Add the “icons” tag to the JSON to indicate that you want to use your own icons for your application.
 For each mobile platform, specify the size (iOS) and density (Android) and the correspondent icon location in the ZIP folders. Ensure that you define icons for all size and densities available, otherwise, you'll get an error (the example below is just for reference). Check the [JSON template for the icons](<#icons-json-template>) to avoid mistakes.
 
-    ![](images/image5.png)
+    ![](images/extensibility-resource-icons-ss.png)
 
 1. To make this change available for the users, [publish and generate a new mobile application](<../generate-distribute-mobile-app/intro.md>) and distribute it.
 
-    ![](images/image02.png)
+    ![Generate mobile app to publish](images/generate-mobile-app-ss.png)
 
 ## Icon Sizes and Densities { #icon-sizes-and-densities }
 
@@ -51,30 +52,24 @@ For each mobile platform, specify the size (iOS) and density (Android) and the c
 
 Width | Height | Displayed on
 :----:|:------:|-------------
-20    | 20     | iPad Notifications (iOS 7–11)
-29    | 29     | iPhone Spotlight (iOS 5, 6) <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
-40    | 40     | iPhone Notifications (iOS 7–11) <br/> iPad Notifications (iOS 7–11) <br/> iPad Spotlight (iOS 7–11)
 48    | 48     | Apple Watch Notification Center
-50    | 50     | iPad Spotlight (iOS 5, 6)
 55    | 55     | Apple Watch Notification Center
-57    | 57     | iPhone App (iOS 5, 6)
-58    | 58     | iPhone Spotlight (iOS 5, 6) <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
-60    | 60     | iPhone Notifications (iOS 7–11)
-72    | 72     | iPad App (iOS 5, 6)
-76    | 76     | iPad App (iOS 7–11)
+58    | 58     | iPhone Spotlight <br/> iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
+76    | 76     | iPhone Settings (iOS 5–11) <br/> iPad Settings (iOS 5–11)
 80    | 80     | iPhone Spotlight (iOS 7–11) <br/> iPad Spotlight (iOS 7–11)
-87    | 87     | iPhone Spotlight (iOS 5, 6) <br/> iPhone Settings (iOS 5–11)
+87    | 87     | iPhone Spotlight <br/> iPhone Settings (iOS 5–11)
 88    | 88     | Apple Watch Long Look
-100   | 100    | iPad Spotlight (iOS 5, 6)
-114   | 114    | iPhone App (iOS 5, 6)
+100   | 100    | iPad Spotlight 
+114   | 114    | iPhone App 
 120   | 120    | iPhone Spotlight (iOS 7–11) <br/> iPhone App (iOS 7–11)
-144   | 144    | iPad App (iOS 5, 6)
 152   | 152    | iPad App (iOS 7–11)
 167   | 167    | iPad Pro App (iOS 9–11)
 172   | 172    | Apple Watch Short Look
 180   | 180    | iPhone App (iOS 7–11)
 196   | 196    | Apple Watch Short Look
 1024  | 1024   | App Store iOS
+
+To know more about icon sizes and densities for iOS, refer to [App icon sizes](https://developer.apple.com/design/human-interface-guidelines/app-icons#App-icon-sizes).
 
 ### For Android
 

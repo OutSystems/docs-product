@@ -5,6 +5,7 @@ locale: en-us
 guid: 361243bd-b558-4b00-80b4-5f6bc67aaa79
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=238:13
 ---
 
 # Layout Login Split

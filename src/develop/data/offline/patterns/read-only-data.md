@@ -5,6 +5,7 @@ locale: en-us
 guid: b671dd23-9977-4a68-97f4-82cd56bc6b4d
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=743:1
 ---
 
 # Read-Only Data

@@ -5,9 +5,10 @@ locale: en-us
 guid: e9f6f711-2df2-42a0-90c1-3b9bc8b3926b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: 
 ---
 
-# Managing the Applications Lifecycle
+# Managing the applications lifecycle
 
 Application Lifecycle Management (ALM) is the continuous process of managing applications throughout their entire lifecycle: from development to maintenance.
 

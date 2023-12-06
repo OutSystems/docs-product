@@ -6,6 +6,7 @@ locale: en-us
 guid: 58915a48-1778-4182-b55f-77b91d6abb05
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility-and-Integration?type=design&node-id=1265%3A86185&mode=design&t=187UAgmZTPxcY0ZG-1
 ---
 
 # Health and Fitness Plugin
@@ -139,7 +140,7 @@ Verify that access and storage of health or fitness workout data on the device w
 
 To write health and fitness data you can use the **WriteData** action. Set the parameters for the type of health or fitness variable you want and the new value you want to store.
 
-To check that writing the health or fitness data on the device is working, verify the value of **WriteData.Success** is **True**.
+To check that writing the health or fitness data on the device is working, verify that the value of **WriteData.Success** is **True**.
 
 ### Create logic to define a background job
 
@@ -163,7 +164,19 @@ Consider the following parameterization for a background job that notifies you i
 
 After you have created your background job you can update or delete it using the **UpdateBackgroundJob** action and the **DeleteBackgroundJob** action, respectively.
 
-To check that the background job was successfully created, verify the value of **SetBackgroundJob.Success** is **True**.
+To check that the background job was successfully created, verify that the value of **SetBackgroundJob.Success** is **True**.
+
+### Create logic to disconnect your Android app from Google Fit
+
+To disconnect your Android app from Google Fit, and consequently revoke all permissions, recording subscriptions, and sensor registrations, you can use the **DisconnectFromGoogleFit** action. To check that your app is no longer connected to Google Fit, verify that the value of **DisconnectFromGoogleFit.Success** is **True**.
+
+After calling this action, you can also verify that the app no longer has access to any data by calling **AdvancedQuery**, **GetFitnessData**, **GetHealthData**, or **GetProfileData**.
+
+<div class="info" markdown="1">
+
+Your app should be implemented so that when a user chooses to disconnect it from Google Fit, it does not try to fetch any data or request any permissions until the user changes their decision.
+
+</div>
 
 ### Handling errors
 
@@ -179,5 +192,6 @@ Following is a list of actions you can use to make sure there are no errors:
 | **Success**     | GetFitnessData (*)       | True if there aren't errors while accessing and storing data.  |
 | **Success**     | WriteData                | True if there aren't errors while writing data.                |
 | **Success**     | SetBackgroundJob         | True if there aren't errors while creating a background job.   |
+| **Success**     | DisconnectFromGoogleFit  | True if there aren't errors while disconnecting from Google Fit.|
 
 (*) There are several actions in the Health & Fitness plugin that begin with **Get** and have a **Success** variable.

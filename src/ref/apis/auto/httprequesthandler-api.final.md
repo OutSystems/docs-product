@@ -5,6 +5,7 @@ locale: en-us
 guid: 762585b4-510c-4749-b5d9-646e1c46f2e0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # HTTPRequestHandler API
@@ -14,56 +15,57 @@ Provides actions to manipulate HTTP Requests and Responses.
 
 ## Summary
 
-Action | Description
----|---
-[AddAttributeToHtmlTag](<#AddAttributeToHtmlTag>) | Adds an attribute to the outermost HTML tag of the document (e.g. xmlns, manifest...).<br/>This method has no effect in Ajax Requests.
-[AddFaviconTag](<#AddFaviconTag>) | Allows setting the favicon for the current page. You can use &quot;omlresources&quot; to add an icon file to your oml.<br/>This method has no effect in Ajax Requests.
-[AddHeader](<#AddHeader>) | Adds a header to the current HTTP response.<br/>This method has no effect in Ajax Requests.
-[AddJavaScriptTag](<#AddJavaScriptTag>) | Adds a &lt;script&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
-[AddLinkTag](<#AddLinkTag>) | Adds a &lt;link&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
-[AddMetaHttpEquivTag](<#AddMetaHttpEquivTag>) | Adds a &lt;meta&gt; tag with the http-equiv attribute to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
-[AddMetaTag](<#AddMetaTag>) | Adds a &lt;meta&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
-[AddPostProcessingFilter](<#AddPostProcessingFilter>) | This method has no effect in Ajax Requests.<br/>Not implemented in Java.
-[AddSessionToURL](<#AddSessionToURL>) | Adds the current session identifier to a specified URL.
-[AddStyleSheetTag](<#AddStyleSheetTag>) | Adds a &lt;link rel=&quot;stylesheet&quot;&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
-[GetCookie](<#GetCookie>) | Gets a cookie value.
-[GetEntryURL](<#GetEntryURL>) | Returns the URL of an Entry. Includes the Personal Area and the session identifier if applicable.
-[GetFormValue](<#GetFormValue>) | Gets the value of a form field of the current HTTP request.<br/>If the field does not exist in the request an empty String will be returned. The same applies when the field exists but has an empty string as a value.
-[GetIP](<#GetIP>) | Gets the IP host address of the remote client (IP of the user machine performing the HTTP request).
-[GetPageExtension](<#GetPageExtension>) | Returns the extension of the physical page that corresponds to the current screen, including the dot. Examples: &quot;.aspx&quot; or &quot;.jsf&quot;.
-[GetPageName](<#GetPageName>) | Returns the name of the physical page that corresponds to the current screen. It is usually the same as the screen name, except when name clashes occur.
-[GetRawURL](<#GetRawURL>) | Returns the current relative requested URL, without the http://[server] part and without the session identifier.<br/>If SEO rules are being applied, the URL displayed in the user's browser is returned, and not the final URL after the rule is applied.
-[GetReferrerURL](<#GetReferrerURL>) | 
-[GetRequest_AddArgument](<#GetRequest_AddArgument>) | Builds the arguments string for an HTTP request with method GET, adding a new parameter to the arguments string.
-[GetRequest_Submit](<#GetRequest_Submit>) | Submit an HTTP GET request given the GET arguments and the URL. Returns the response content as a string and as binary data.
-[GetRequestContent](<#GetRequestContent>) | Gets the content of the current HTTP request.
-[GetRequestDomain](<#GetRequestDomain>) | Returns the host part of the current HTTP request as seen by the browser.<br/>Example: when the browser uses the address &quot;http://support.domain.com/site/welcome.aspx?id=12345&quot;, GetRequestDomain() returns &quot;support.domain.com&quot;.
-[GetRequestFiles](<#GetRequestFiles>) | Returns the list of files submitted in the current HTTP request.
-[GetRequestHeader](<#GetRequestHeader>) | Gets the value of a specific header in the current HTTP request. Returns an empty string if the header is not present or has no value.
-[GetRunningESpaceJQueryVersion](<#GetRunningESpaceJQueryVersion>) | Returns the jQueryVersion of the Running ESpace
-[GetSessionId](<#GetSessionId>) | Gets the session identifier of the current HTTP request.
-[GetURL](<#GetURL>) | Returns the current absolute requested URL, without the session identifier.<br/>If SEO rules are being applied, the final URL after the rule is applied is returned, and not the URL displayed in the user's browser.
-[GetURLMethod](<#GetURLMethod>) | Gets the request method (GET or POST) of the current requested URL.
-[GetURLWithSession](<#GetURLWithSession>) | Gets the current requested URL (with the session identifier).
-[GetUserAgent](<#GetUserAgent>) | Gets the user agent of the current HTTP request.
-[GetUserLanguages](<#GetUserLanguages>) | Gets a sorted record list of client language preferences.
-[GetValueFromInputId](<#GetValueFromInputId>) | 
-[GetValueFromInputIdDecoded](<#GetValueFromInputIdDecoded>) | 
-[IsAjaxRequest](<#IsAjaxRequest>) | Returns true if this is running in an AJAX request.<br/>Not Implemented in Java.
-[IsSecureConnection](<#IsSecureConnection>) | Tells if the current request is being made via HTTPS.
-[MakeAbsoluteURL](<#MakeAbsoluteURL>) | Makes an absolute URL based on the URL provided.
-[PostRequest_AddArgument](<#PostRequest_AddArgument>) | Builds arguments list for a POST HTTP request, adding a new text parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example).
-[PostRequest_AddBinaryArgument](<#PostRequest_AddBinaryArgument>) | Builds arguments list for an HTTP request, adding a new binary parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example).
-[PostRequest_Submit](<#PostRequest_Submit>) | Submit an HTTP POST request given the POST arguments and the URL. Returns the response content as a string and as binary data.
-[ReplaceURLDomain](<#ReplaceURLDomain>) | Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.<br/>If the URL starts with the protocol (`http:` or `https:`), the host is removed from the URL and the remaining part is concatenated with the domain of the current request. Otherwise, the URL is considered as relative and it's concatenated with the one from the current request.
-[RunJavaScript](<#RunJavaScript>) | Runs the provided JavaScript code in the browser.
-[SetBaseTag](<#SetBaseTag>) | Sets the base tag of the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
-[SetCookie](<#SetCookie>) | Sets a cookie.
-[SetLastModified](<#SetLastModified>) | Sets the Last Modified Date HTTP header of the current response.
-[SetPageTitle](<#SetPageTitle>) | Sets the page title of the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.
-[SetRequestTimeout](<#SetRequestTimeout>) | Sets the timeout of the current HTTP request.
-[SetStatusCode](<#SetStatusCode>) | Sets the status code of the current HTTP response.
-[URLEncode](<#URLEncode>) | Encodes a URL string for reliable HTTP transmission from the Web server to a client
+Action | Description | App type
+---|---|---
+[AddAttributeToHtmlTag](<#AddAttributeToHtmlTag>) | Adds an attribute to the outermost HTML tag of the document (e.g. xmlns, manifest...).<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only. 
+[AddFaviconTag](<#AddFaviconTag>) | Allows setting the favicon for the current page. You can use &quot;omlresources&quot; to add an icon file to your oml.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.  
+[AddHeader](<#AddHeader>) | Adds a header to the current HTTP response.<br/>This method has no effect in Ajax Requests. |Applies to all app types.
+[AddJavaScriptTag](<#AddJavaScriptTag>) | Adds a &lt;script&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.   
+[AddLinkTag](<#AddLinkTag>) | Adds a &lt;link&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.| Applies to Traditional Web apps only.  
+[AddMetaHttpEquivTag](<#AddMetaHttpEquivTag>) | Adds a &lt;meta&gt; tag with the http-equiv attribute to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.  
+[AddMetaTag](<#AddMetaTag>) | Adds a &lt;meta&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests.| Applies to Traditional Web apps only.
+[AddPostProcessingFilter](<#AddPostProcessingFilter>) | This method has no effect in Ajax Requests.<br/>Not implemented in Java. | Applies to Traditional Web apps only.  
+[AddSessionToURL](<#AddSessionToURL>) | Adds the current session identifier to a specified URL. | Applies to Traditional Web apps only.  
+[AddStyleSheetTag](<#AddStyleSheetTag>) | Adds a &lt;link rel=&quot;stylesheet&quot;&gt; tag to the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.  
+[GetCookie](<#GetCookie>) | Gets a cookie value. | Applies to all app types.
+[GetEntryURL](<#GetEntryURL>) | Returns the URL of an Entry. Includes the Personal Area and the session identifier if applicable. | Applies to Traditional Web apps only.  
+[GetFormValue](<#GetFormValue>) | Gets the value of a form field of the current HTTP request.<br/>If the field does not exist in the request an empty String will be returned. The same applies when the field exists but has an empty string as a value. | Applies to Traditional Web apps only.  
+[GetIP](<#GetIP>) | Gets the IP host address of the remote client (IP of the user machine performing the HTTP request). | Applies to all app types.
+[GetPageExtension](<#GetPageExtension>) | Returns the extension of the physical page that corresponds to the current screen, including the dot. Examples: &quot;.aspx&quot; or &quot;.jsf&quot;. | Applies to Traditional Web apps only.  
+[GetPageName](<#GetPageName>) | Returns the name of the physical page that corresponds to the current screen. It is usually the same as the screen name, except when name clashes occur. | Applies to Traditional Web apps only.
+[GetRawURL](<#GetRawURL>) | Returns the current relative requested URL, without the http://[server] part and without the session identifier.<br/>If SEO rules are being applied, the URL displayed in the user's browser is returned, and not the final URL after the rule is applied. | Applies to all app types.
+[GetReferrerURL](<#GetReferrerURL>) | |Applies to all app types.
+[GetRequest_AddArgument](<#GetRequest_AddArgument>) | Builds the arguments string for an HTTP request with method GET, adding a new parameter to the arguments string. | Applies to all app types.
+[GetRequest_Submit](<#GetRequest_Submit>) | Submit an HTTP GET request given the GET arguments and the URL. Returns the response content as a string and as binary data. | Applies to all app types.
+[GetRequestContent](<#GetRequestContent>) | Gets the content of the current HTTP request. | Applies to all app types.
+[GetRequestDomain](<#GetRequestDomain>) | Returns the host part of the current HTTP request as seen by the browser.<br/>Example: when the browser uses the address &quot;http://support.domain.com/site/welcome.aspx?id=12345&quot;, GetRequestDomain() returns &quot;support.domain.com&quot;. | Applies to all app types.
+[GetRequestFiles](<#GetRequestFiles>) | Returns the list of files submitted in the current HTTP request. | Applies to all app types
+[GetRequestHeader](<#GetRequestHeader>) | Gets the value of a specific header in the current HTTP request. Returns an empty string if the header is not present or has no value. | Applies to all app types.
+[GetRunningESpaceJQueryVersion](<#GetRunningESpaceJQueryVersion>) | Returns the jQueryVersion of the Running ESpace. | Applies to Traditional Web apps only.  
+[GetSessionId](<#GetSessionId>) | Gets the session identifier of the current HTTP request. | Applies to Traditional Web apps only. 
+[GetURL](<#GetURL>) | Returns the current absolute requested URL, without the session identifier.<br/>If SEO rules are being applied, the final URL after the rule is applied is returned, and not the URL displayed in the user's browser. | Applies to all app types.
+[GetURLMethod](<#GetURLMethod>) | Gets the request method (GET or POST) of the current requested URL. |Applies to all app types.
+[GetURLWithSession](<#GetURLWithSession>) | Gets the current requested URL (with the session identifier). | Applies to Traditional Web apps only. 
+[GetUserAgent](<#GetUserAgent>) | Gets the user agent of the current HTTP request. | Applies to all app types.
+[GetUserLanguages](<#GetUserLanguages>) | Gets a sorted record list of client language preferences. | Applies to all app types.
+[GetValueFromInputId](<#GetValueFromInputId>) | Gets the URL encoded value from an input form. | Applies to Traditional Web apps only. 
+[GetValueFromInputIdDecoded](<#GetValueFromInputIdDecoded>) | Gets the decoded value from an input form.  | Applies to Traditional Web apps only.
+[IsAjaxRequest](<#IsAjaxRequest>) | Returns true if this is running in an AJAX request.<br/>Not Implemented in Java. | Applies to Traditional Web apps only.
+[IsSecureConnection](<#IsSecureConnection>) | Tells if the current request is being made via HTTPS. | Applies to all app types.
+[MakeAbsoluteURL](<#MakeAbsoluteURL>) | Makes an absolute URL based on the URL provided. | Applies to all app types.
+[PostRequest_AddArgument](<#PostRequest_AddArgument>) | Builds arguments list for a POST HTTP request, adding a new text parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example). | Applies to all app types.
+[PostRequest_AddBinaryArgument](<#PostRequest_AddBinaryArgument>) | Builds arguments list for an HTTP request, adding a new binary parameter to the arguments list. If argument name is not supplied, the post will only submit the supplied value (this can be used for xml posts for example). | Applies to all app types.
+[PostRequest_Submit](<#PostRequest_Submit>) | Submit an HTTP POST request given the POST arguments and the URL. Returns the response content as a string and as binary data. | Applies to all app types.
+[ReplaceURLDomain](<#ReplaceURLDomain>) | Replaces the domain in the URL by the new domain. This function doesn't accept JavaScript as an URL. If the new domain is not provided, the domain of the current request is used.<br/>If the URL starts with the protocol (`http:` or `https:`), the host is removed from the URL and the remaining part is concatenated with the domain of the current request. Otherwise, the URL is considered as relative and it's concatenated with the one from the current request. | Applies to all app types.
+[RunJavaScript](<#RunJavaScript>) | Runs the provided JavaScript code in the browser.| Applies to Traditional Web apps only.
+[SetBaseTag](<#SetBaseTag>) | Sets the base tag of the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.
+[SetCookie](<#SetCookie>) | Sets a cookie. | Applies to all app types.
+[SetLastModified](<#SetLastModified>) | Sets the Last Modified Date HTTP header of the current response. | Applies to all app types.
+[SetPageTitle](<#SetPageTitle>) | Sets the page title of the HTML of the current HTTP response.<br/>This method has no effect in Ajax Requests. | Applies to Traditional Web apps only.
+[SetRequestTimeout](<#SetRequestTimeout>) | Sets the timeout of the current HTTP request. | Applies to all app types.
+[SetStatusCode](<#SetStatusCode>) | Sets the status code of the current HTTP response. | Applies to Traditional Web apps only.
+[URLEncode](<#URLEncode>) | Encodes a URL string for reliable HTTP transmission from the Web server to a client. | Applies to all app types.
+[ValidateRequestSource](<#ValidateRequestSource>) | Validates if the income request is coming from the local machine and/or from the list of TrustedAddresses, ignoring<br/>Trusted Proxies configurations, so that by default it only allows real local requests that are not being handled by a proxy/loadbalancer. | Applies to all app types.
 
 Structure | Description
 ---|---
@@ -75,7 +77,7 @@ Structure | Description
 ### AddAttributeToHtmlTag { #AddAttributeToHtmlTag }
 
 Adds an attribute to the outermost HTML tag of the document (e.g. xmlns, manifest...).  
-This method has no effect in Ajax Requests.
+This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -90,7 +92,7 @@ Value
 ### AddFaviconTag { #AddFaviconTag }
 
 Allows setting the favicon for the current page. You can use &quot;omlresources&quot; to add an icon file to your oml.  
-This method has no effect in Ajax Requests.
+This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -120,7 +122,7 @@ Value
 ### AddJavaScriptTag { #AddJavaScriptTag }
 
 Adds a &lt;script&gt; tag to the HTML of the current HTTP response.  
-This method has no effect in Ajax Requests.
+This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -139,7 +141,7 @@ Charset
 ### AddLinkTag { #AddLinkTag }
 
 Adds a &lt;link&gt; tag to the HTML of the current HTTP response.  
-This method has no effect in Ajax Requests.
+This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -158,7 +160,7 @@ Type
 ### AddMetaHttpEquivTag { #AddMetaHttpEquivTag }
 
 Adds a &lt;meta&gt; tag with the http-equiv attribute to the HTML of the current HTTP response.  
-This method has no effect in Ajax Requests.
+This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -173,7 +175,7 @@ Content
 ### AddMetaTag { #AddMetaTag }
 
 Adds a &lt;meta&gt; tag to the HTML of the current HTTP response.  
-This method has no effect in Ajax Requests.
+This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -188,7 +190,7 @@ Content
 ### AddPostProcessingFilter { #AddPostProcessingFilter }
 
 This method has no effect in Ajax Requests.  
-Not implemented in Java.
+Not implemented in Java. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -202,7 +204,7 @@ replacement
 
 ### AddSessionToURL { #AddSessionToURL }
 
-Adds the current session identifier to a specified URL.
+Adds the current session identifier to a specified URL. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -219,7 +221,7 @@ URLWithSession
 ### AddStyleSheetTag { #AddStyleSheetTag }
 
 Adds a &lt;link rel=&quot;stylesheet&quot;&gt; tag to the HTML of the current HTTP response.  
-This method has no effect in Ajax Requests.
+This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -249,7 +251,7 @@ CookieValue
 
 ### GetEntryURL { #GetEntryURL }
 
-Returns the URL of an Entry. Includes the Personal Area and the session identifier if applicable.
+Returns the URL of an Entry. Includes the Personal Area and the session identifier if applicable. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -310,7 +312,7 @@ URL
 ### GetFormValue { #GetFormValue }
 
 Gets the value of a form field of the current HTTP request.  
-If the field does not exist in the request an empty String will be returned. The same applies when the field exists but has an empty string as a value.
+If the field does not exist in the request an empty String will be returned. The same applies when the field exists but has an empty string as a value. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -336,7 +338,7 @@ UserIP
 
 ### GetPageExtension { #GetPageExtension }
 
-Returns the extension of the physical page that corresponds to the current screen, including the dot. Examples: &quot;.aspx&quot; or &quot;.jsf&quot;.
+Returns the extension of the physical page that corresponds to the current screen, including the dot. Examples: &quot;.aspx&quot; or &quot;.jsf&quot;. Not compatible with reactive web and mobile apps.
 
 *Outputs*
 
@@ -346,8 +348,7 @@ PageExtension
 
 ### GetPageName { #GetPageName }
 
-Returns the name of the physical page that corresponds to the current screen. It is usually the same as the screen name, except when name clashes occur.
-
+Returns the name of the physical page that corresponds to the current screen. It is usually the same as the screen name, except when name clashes occur. Not compatible with reactive web and mobile apps.
 *Outputs*
 
 PageName
@@ -492,7 +493,7 @@ Value
 
 ### GetRunningESpaceJQueryVersion { #GetRunningESpaceJQueryVersion }
 
-Returns the jQueryVersion of the Running ESpace
+Returns the jQueryVersion of the Running ESpace. Not compatible with reactive web and mobile apps.
 
 *Outputs*
 
@@ -502,7 +503,7 @@ JQueryVersion
 
 ### GetSessionId { #GetSessionId }
 
-Gets the session identifier of the current HTTP request.
+Gets the session identifier of the current HTTP request. Not compatible with reactive web and mobile apps.
 
 *Outputs*
 
@@ -533,7 +534,7 @@ Method
 
 ### GetURLWithSession { #GetURLWithSession }
 
-Gets the current requested URL (with the session identifier).
+Gets the current requested URL (with the session identifier). Not compatible with reactive web and mobile apps.
 
 *Outputs*
 
@@ -563,7 +564,7 @@ Languages
 
 ### GetValueFromInputId { #GetValueFromInputId }
 
-
+Gets the URL encoded value from an input form. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -579,7 +580,7 @@ Value
 
 ### GetValueFromInputIdDecoded { #GetValueFromInputIdDecoded }
 
-
+Gets the decoded value from an input form. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -596,7 +597,7 @@ Value
 ### IsAjaxRequest { #IsAjaxRequest }
 
 Returns true if this is running in an AJAX request.  
-Not Implemented in Java.
+Not Implemented in Java. Not compatible with reactive web and mobile apps.
 
 *Outputs*
 
@@ -737,7 +738,7 @@ SafeURL
 
 ### RunJavaScript { #RunJavaScript }
 
-Runs the provided JavaScript code in the browser.
+Runs the provided JavaScript code in the browser. Not compatible with reactive web and mobile apps.
 
 <div class="info" markdown="1">
 
@@ -754,7 +755,7 @@ Script
 ### SetBaseTag { #SetBaseTag }
 
 Sets the base tag of the HTML of the current HTTP response.  
-This method has no effect in Ajax Requests.
+This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -818,7 +819,7 @@ LastModifiedDate
 ### SetPageTitle { #SetPageTitle }
 
 Sets the page title of the HTML of the current HTTP response.  
-This method has no effect in Ajax Requests.
+This method has no effect in Ajax Requests. Not compatible with reactive web and mobile apps.
 
 *Inputs*
 
@@ -838,7 +839,7 @@ Timeout
 
 ### SetStatusCode { #SetStatusCode }
 
-Sets the status code of the current HTTP response.  
+Sets the status code of the current HTTP response. Not compatible with reactive web and mobile apps.
 Note: Setting custom HTTP status codes is an advanced extensibility scenario, so be sure to test if it works as intended in your specific infrastructure (for example, HTTP status code 204 is known to cause issues). Check the list of standard HTTP status codes used in OutSystems.
 
 *Inputs*
@@ -866,6 +867,31 @@ Encoding
 StrOut
 :   Type: Text.  
     Encoded string URL
+
+### ValidateRequestSource { #ValidateRequestSource }
+
+Validates if the income request is coming from the local machine and/or from the list of TrustedAddresses, ignoring  
+Trusted Proxies configurations, so that by default it only allows real local requests that are not being handled by a proxy/loadbalancer.
+
+*Inputs*
+
+TrustedAddresses
+:   Type: Text. Default: "".  
+    A comma separeted list with IP addresses or Fully Quallified Domain Names. E.g: 127.0.0.1,mydomain.com.
+
+UseOnlyTrustedAddresses
+:   Type: Boolean. Default: False.  
+    By default (False), will verify if the request is coming from the local machine or from one the addresses in TrustedAddresses. Otherwise, If enabled (True)  the request source will only be validated against the list of TrustedAddresses.
+
+*Outputs*
+
+Result
+:   Type: Boolean.  
+    Returns true if the request is coming from a trusted source. This can be from local machine and/or the list of Trusted Addresses.
+
+RequestOrigin
+:   Type: Text.  
+    The request source IP or Hostname.
 
 
 ## Structures

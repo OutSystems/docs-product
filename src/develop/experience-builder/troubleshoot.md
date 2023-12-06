@@ -5,6 +5,7 @@ locale: en-us
 guid: 5fbcd20a-ae06-4818-a497-2ac6596506ce
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4454:3212
 ---
 
 # Troubleshooting Experience Builder

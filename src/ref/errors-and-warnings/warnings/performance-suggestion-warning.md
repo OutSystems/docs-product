@@ -3,6 +3,7 @@ locale: en-us
 guid: a63209c4-0f36-4c07-9a7a-e5c217b2b4d0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Performance Suggestion Warning
@@ -16,7 +17,7 @@ Cause
 :   Fetching data from the server is typically a slow operation because it requires a request to a remote machine. Executing a slow operation in a splash screen will increase the time that the users must wait to use the app.
 
 Recommendation
-:   Fetch data from the server only when needed. If you really need to fetch data from the server in the app initialization stage, add your server Aggregates or Data Actions to the default screen instead. [Keeping the splash screen simple](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Keep_the_Splash_Screen_Simple_and_Fast) allows your users to navigate faster to the default screen. Data will then be fetched from the server concurrently while the default screen is loading.
+:   Fetch data from the server only when needed. If you really need to fetch data from the server in the app initialization stage, add your server Aggregates or Data Actions to the default screen instead. [Keeping the splash screen simple](https://success.outsystems.com/documentation/best_practices/development/outsystems_mobile_best_practices/#keep-the-splash-screen-simple-and-fast) allows your users to navigate faster to the default screen. Data will then be fetched from the server concurrently while the default screen is loading.
 
 ---
 
@@ -70,7 +71,7 @@ Cause
 :   You seem to be including an external JavaScript library in a JavaScript flow element, which is not recommended. External JavaScript libraries can be too complex to run on mobile devices.
 
 Recommendation
-:   If you really need to use a JavaScript library, [add it as a Script element](<../../../extensibility-and-integration/javascript/mobile/use-external-lib.md>) instead of a JavaScript flow element. However, you should [avoid using external JavaScript libraries](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Avoid_Using_External_JavaScript_Libraries). 
+:   If you really need to use a JavaScript library, [add it as a Script element](<../../../extensibility-and-integration/javascript/mobile/use-external-lib.md>) instead of a JavaScript flow element. However, you should [avoid using external JavaScript libraries](https://success.outsystems.com/documentation/best_practices/development/outsystems_mobile_best_practices/#avoid-using-external-javascript-libraries). 
 
 ---
 
@@ -83,4 +84,4 @@ Cause
 :   Using big image files in your mobile app can increase the download time, or even block the download, and lead to poor performance.
 
 Recommendation
-:   Reduce the image size (in bytes) and adapt its dimensions (height/width) considering your target user's experience. Check the [best practices for optimizing images in mobile apps](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Optimize_the_File_Size_of_Images).
+:   Reduce the image size (in bytes) and adapt its dimensions (height/width) considering your target user's experience. Check the [best practices for optimizing images in mobile apps](https://success.outsystems.com/documentation/best_practices/development/outsystems_mobile_best_practices/#optimize-the-file-size-of-images).

@@ -5,6 +5,7 @@ locale: en-us
 guid: 46d68360-ea42-4078-8bc7-b8f9286e09e6
 app_type: traditional web apps
 platform-version: o11
+figma:
 ---
 
 # outsystems.api.preloader API

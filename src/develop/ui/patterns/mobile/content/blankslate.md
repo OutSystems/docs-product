@@ -5,6 +5,7 @@ locale: en-us
 guid: a8fd8afa-cb19-444b-a050-c83a4dc5d13a
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:11
 ---
 
 # Blank Slate

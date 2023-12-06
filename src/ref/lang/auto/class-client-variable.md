@@ -5,6 +5,7 @@ locale: en-us
 guid: 06f35415-71b9-4dae-9f3a-eba708d514bf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=1379:1794
 ---
 
 # Client Variable

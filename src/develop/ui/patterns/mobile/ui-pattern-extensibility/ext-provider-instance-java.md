@@ -5,6 +5,7 @@ locale: en-us
 guid: CD21A754-068E-4DA7-9B74-A5122B1AEC7D
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4647%3A10005&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Provider instance and JavaScript
@@ -78,3 +79,4 @@ The API method receives the configuration and passes them to the provider which 
 This is a direct communication between the developer and the provider, so from this step on, OutSystems does not support any issues or features and the developer should be conscious of the code it produces.
 
 </div>
+

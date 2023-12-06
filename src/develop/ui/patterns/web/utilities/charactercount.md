@@ -5,6 +5,7 @@ locale: en-us
 guid: 35ae7f29-b021-4f09-a081-66c668b816e4
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=245:91
 ---
 
 # Character Count

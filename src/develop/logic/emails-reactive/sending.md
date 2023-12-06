@@ -5,6 +5,7 @@ locale: en-us
 guid: c24bedc2-2f7b-4275-b3af-58b08b4a5b2e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=857:0
 ---
 
 # Sending emails

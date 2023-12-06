@@ -5,6 +5,7 @@ locale: en-us
 guid: 297aaf40-3584-4ed5-b1d4-7bfbbe3bbfaa
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A84&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Animate

@@ -5,6 +5,7 @@ locale: en-us
 guid: 3193c9d8-9711-4d4c-bf24-839f22a8052f
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1155:16774
 ---
 
 # How to use the Map component
@@ -23,7 +24,7 @@ You can use the Map component to provide an interactive satellite map to your us
 
 <div class="info" markdown="1" >
 
-Currently, only Google Maps is supported. Google Maps isn’t free. You must always buy an API key. For more info on getting an API Key, see [Using API Keys](https://developers.google.com/maps/documentation/javascript/get-api-key).
+Currently, Google Maps and Leaflet are supported. Google Maps isn’t free. You must always buy an API key. For more info on getting an API Key, see [Using API Keys](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
 </div>
 

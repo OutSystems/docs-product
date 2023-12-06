@@ -5,6 +5,7 @@ locale: en-us
 guid: 2d4d86ce-b835-4fb6-9af8-ecee723d94a7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:5
 ---
 
 # Create the chatbot resources in Azure

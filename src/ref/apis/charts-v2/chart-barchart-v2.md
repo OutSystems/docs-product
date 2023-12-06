@@ -5,6 +5,7 @@ locale: en-us
 guid: 63FB9BE0-A9BA-4173-8BF2-8049B69DCC6B
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2453:4384
 ---
 
 # Bar Chart

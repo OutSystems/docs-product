@@ -5,6 +5,7 @@ locale: en-us
 guid: 90d5caaf-3d6a-4ddc-b2de-012bbec4c2f3
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # ApplicationLifecycle

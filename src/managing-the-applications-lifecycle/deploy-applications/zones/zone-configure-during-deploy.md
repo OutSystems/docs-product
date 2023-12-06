@@ -5,6 +5,7 @@ locale: en-us
 guid: 69803bfd-3ebf-465a-b0cb-ee83e61cc233
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1272:613
 ---
 
 # Configure the Deployment Zone during the deployment

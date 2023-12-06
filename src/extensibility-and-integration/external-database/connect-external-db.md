@@ -5,6 +5,7 @@ locale: en-us
 guid: d5fdba1a-e46c-4c92-9d6b-81be94eed163
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:69
 ---
 
 # Integrate with an external database using Integration Studio
@@ -68,6 +69,10 @@ To use tables and views from external databases, create a database connection:
     </div>
 
 1. Click **Create** to create the database connection.
+
+If your extension to an external database includes the fully qualified table name, such as database.schema.table, changing the database connection in Service Center does not impact your extension. 
+
+If the extension entities display `Northwind.dbo.customers` using the logical database Integration1, and you change the logical database to `Northwind_test`, your extension still points to `Northwind` unless you change every entity in the Effective Physical Table name field. 
 
 ## Map tables or views to Entities in an extension module
 

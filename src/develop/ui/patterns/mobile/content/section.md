@@ -5,6 +5,7 @@ locale: en-us
 guid: f8eb7c31-9003-4675-85a1-8c09a8aeafd8
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:54
 ---
 
 # Section

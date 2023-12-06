@@ -5,6 +5,7 @@ locale: en-us
 guid: 8876a767-5845-47e4-9c93-bdec76114e0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Debugging Producer Modules
@@ -34,7 +35,7 @@ Your consumer Module must fulfill the following conditions:
 
 To debug the functionality being exposed in a public Action by the producer Module, follow these steps:
 
-1. Start a debug session in the consumer Module, if it includes breakpoints, so that they will not be ignored when you debug the producer Module.
+1. Start a debug session in the consumer Module if it includes breakpoints, so that they will not be ignored when you debug the producer Module.
 1. Open the **producer Module** and set the entry Module for debugging to be the consumer Module. You can set the entry Module in the Debugger pane or in the Debugger menu, by choosing the "Select Entry Module..." option.
     
     <div class="info" markdown="1">

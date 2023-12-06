@@ -5,6 +5,7 @@ locale: en-us
 guid: ce70e86c-de5e-413e-988e-d0dca05b30f0
 app_type: mobile apps
 platform-version: o11
+figma:
 ---
 
 # Camera plugin - reference page

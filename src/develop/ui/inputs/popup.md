@@ -5,6 +5,7 @@ locale: en-us
 guid: f43cd1e1-13d3-4960-b025-4f75f9383ee8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:49
 ---
 
 # Create and use a Popup

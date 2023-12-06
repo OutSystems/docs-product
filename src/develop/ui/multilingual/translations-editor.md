@@ -5,6 +5,7 @@ locale: en-us
 guid: 5b9787c8-9b67-4d45-8f6b-7d5a1c964beb
 app_type: traditional web apps
 platform-version: o11
+figma:
 ---
 
 # Translations Behavior Editor

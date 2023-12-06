@@ -4,6 +4,7 @@ locale: en-us
 guid: 6bb2ff5a-25b3-4d09-8863-08fc0896b4c8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Patterns for Designing Processes

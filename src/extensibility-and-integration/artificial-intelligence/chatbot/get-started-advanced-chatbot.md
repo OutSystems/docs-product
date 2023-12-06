@@ -5,6 +5,7 @@ locale: en-us
 guid: ff14d9bc-d70c-453d-a510-e6ee2e0874d9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=409:6
 ---
 
 # Create advanced logic for more AI functionalities

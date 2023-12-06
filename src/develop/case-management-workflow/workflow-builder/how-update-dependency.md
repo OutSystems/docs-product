@@ -5,6 +5,7 @@ guid: 456764c4-6370-4363-b576-8d399be303e3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 # How to install or update dependencies
 

@@ -4,6 +4,7 @@ locale: en-us
 guid: 23c2945f-211b-438d-b8c1-0aae40cd316d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=609:462
 ---
 
 # Service Studio command line
@@ -24,7 +25,7 @@ To use the commands, on the CLI first navigate to your Service Studio installati
 
 ![Command line interface](images/ss-command_1.png)
 
-And precede any command by ```servicestudio.exe``` and a space, for example: ```servicestudio.exe -merge```.
+And precede any command by `servicestudio.exe` and a space, for example: `servicestudio.exe -merge`.
 
 The syntax is composed of a **command** and it’s **arguments**. The command defines the functionality such as merging two modules. The arguments represent inputs necessary to each switch such as the version of the modules to be merged.
 
@@ -44,18 +45,18 @@ Command| Description
 ## Commands
 
 ### espace { #espace }
-Opens a locally saved module, the file must have an ```.oml``` file type.
+Opens a locally saved module, the file must have an `.oml` file type.
 As a result, Service Studio opens and the module provided is loaded.
 
 Syntax
-:   ```servicestudio.exe <"module_path.oml">``` 
-:   Example: ```servicestudio.exe "C:\Program Files\OutSystems\ComponentsCore.oml"```
+:   `servicestudio.exe <"module_path.oml">`
+:   Example: `servicestudio.exe "C:\Program Files\OutSystems\ComponentsCore.oml"`
 
 Argument | Type | Description | Example
----|---|---|---   
+---|---|---|---
 `Module_path.oml` | Mandatory | The path to a locally saved module | C:\Program Files\OutSystems\ComponentsCore.oml
 
-### -create { #create } 
+### -create { #create }
 
 Opens the Service Studio dialog to create a new application.
 
@@ -63,10 +64,9 @@ Opens the Service Studio dialog to create a new application.
 
 If the login information is not provided the login screen will show up before proceeding to the dialog to create an app.
 
-
 Syntax
-:	```-create NewApplication [-url <hostName>] [-userName <user>] [-password <password>]```
-	Example: ```servicestudio.exe -create NewApplication -url dev.example.com -userName DevDave --password mypassword```
+: `-create NewApplication [-url <hostName>] [-userName <user>] [-password <password>]`
+ Example: `servicestudio.exe -create NewApplication -url dev.example.com -userName DevDave --password mypassword`
 
 Argument | Type | Description | Example
 ---|---|---|---
@@ -79,8 +79,8 @@ Argument | Type | Description | Example
 Opens two locally saved modules at the [**Compare and Merge**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Merge_the_Work/Compare_and_merge_example_with_conflicts) window. This command will not attempt to merge the modules and you'll have to select each element to merge . To attempt to merge the modules automatically, use [-merge](#merge) instead.
 
 Syntax
-:   ```-diff <"localESpace.oml"> <"foreignESpace.oml">```
-:   Example: ```servicestudio.exe -diff "C:\Program Files\OutSystems\ComponentsCore.oml" "C:\Program Files\OutSystems\ComponentsCore2.oml"```
+:   `-diff <"localESpace.oml"> <"foreignESpace.oml">`
+:   Example: `servicestudio.exe -diff "C:\Program Files\OutSystems\ComponentsCore.oml" "C:\Program Files\OutSystems\ComponentsCore2.oml"`
 
 
 Argument | Type | Description | Example
@@ -94,8 +94,8 @@ Argument | Type | Description | Example
 Attempts to merge two locally saved modules. The  [**Compare and Merge**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Merge_the_Work/Compare_and_merge_example_with_conflicts) window will open and the elements that can be merged will be selected.
 
 Syntax
-:   ```-merge <localESpace.oml> <foreignESpace.oml>```
-:   Example: ```servicestudio.exe -merge "C:\Program Files\OutSystems\ComponentsCore.oml" "C:\Program Files\OutSystems\ComponentsCore2.oml"```
+:   `-merge <localESpace.oml> <foreignESpace.oml>`
+:   Example: `servicestudio.exe -merge "C:\Program Files\OutSystems\ComponentsCore.oml" "C:\Program Files\OutSystems\ComponentsCore2.oml"`
 
 Argument | Type | Description | Example
 ---|---|---|---
@@ -107,8 +107,8 @@ Argument | Type | Description | Example
 Opens a module stored in a remote location accessible via an url. Service Studio launches, downloads the module from the url provided, and opens it locally.
 
 Syntax
-:   ```-openModuleFromUrl (<url.oml>)```
-:   Example: ```servicestudio.exe -openModuleFromUrl (https://www.example.com/MyModule.oml)```
+:   `-openModuleFromUrl (<url.oml>)`
+:   Example: `servicestudio.exe -openModuleFromUrl (https://www.example.com/MyModule.oml)`
 
 Argument | Type | Description | Example
 ---|---|---|---
@@ -119,8 +119,8 @@ Argument | Type | Description | Example
 Refreshes the references of a locally saved module against a given environment and generates a log file with any errors of the process.
 
 Syntax
-:   ```-refresh <eSpace.oml> <verify.xml> <hostName> <userName> <password>```
-:   Example: ```servicestudio.exe -refresh "C:\Program Files\MyModule.oml" "C:\Program Files\verify.xml" dev.example.com admin AdminPassword```
+:   `-refresh <eSpace.oml> <verify.xml> <hostName> <userName> <password>`
+:   Example: `servicestudio.exe -refresh "C:\Program Files\MyModule.oml" "C:\Program Files\verify.xml" dev.example.com admin AdminPassword`
 
 Argument | Type | Description | Example
 ---|---|---|---
@@ -135,8 +135,8 @@ Argument | Type | Description | Example
 Exports a settings file that contains all the preferences and saved connection details of Service Studio. This file can then be used on the -importSettings command to import the settings to another Service Studio installation.
 
 Syntax
-:   ```-exportSettings <settings.xml>```
-:   Example: ```servicestudio.exe -exportSettings "C:\Program Files\Mysettings.xml"```
+:   `-exportSettings <settings.xml>`
+:   Example: `servicestudio.exe -exportSettings "C:\Program Files\Mysettings.xml"`
 
 Argument | Type | Description | Example
 ---|---|---|---
@@ -147,8 +147,8 @@ Argument | Type | Description | Example
 Imports an .xml file with all the all the preferences and saved connection details of Service Studio. This file was exported by the -exportSettings command.
 
 Syntax
-:   ```-importSettings <settings.xml>```
-:   Example: ```servicestudio.exe -importSettings "C:\Program Files\Mysettings.xml"```
+:   `-importSettings <settings.xml>`
+:   Example: `servicestudio.exe -importSettings "C:\Program Files\Mysettings.xml"`
 
 Argument | Type | Description | Example
 ---|---|---|---

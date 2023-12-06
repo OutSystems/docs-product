@@ -5,6 +5,7 @@ locale: en-us
 guid: 07a471e4-c784-44ba-b868-8c90605481c0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=418:36
 ---
 
 # Document an Exposed SOAP Web Service

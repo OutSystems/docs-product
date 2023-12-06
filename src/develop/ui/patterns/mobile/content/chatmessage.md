@@ -5,6 +5,7 @@ locale: en-us
 guid: 6d975212-eb39-4891-83ba-9306ba78b2cd
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1295:18292
 ---
 
 # Chat Message

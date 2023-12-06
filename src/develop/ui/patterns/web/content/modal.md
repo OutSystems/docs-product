@@ -5,6 +5,7 @@ locale: en-us
 guid: 64cf2199-6b69-480b-a63e-49b91965e777
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=222:101
 ---
 
 # Modal

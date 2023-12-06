@@ -5,6 +5,7 @@ locale: en-us
 guid: 1aacc771-f914-4f95-889a-31f1dde06a38
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=307:232
 ---
 
 # Generate and distribute your mobile app
@@ -58,11 +59,11 @@ To configure or generate your mobile app package (iOS or Android) in Service Cen
 
 1. Click the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The native mobile settings are in the **Native Platforms** section.
 
-    ![Native app settings in Service Center](images/sc-native-platforms-tab.png)
+    ![Native app settings in Service Center](images/native-platform-section-sc.png)
 
 1. To configure your mobile app package for the first time or to change the current configuration for a given platform (iOS or Android), click the **Configure** link for the iOS or Android entry. Follow the configuration steps for your desired scenario, described in the [topics listed at the end of this page](#Articles_in_this_Section).
 
-    ![Android settings in Service Center](images/sc-configure-android-settings.png)
+    ![Android settings in Service Center](images/configure-android-settings-sc.png)
 
 1. After defining or changing your mobile app iOS or Android settings, click **Save**.
 
@@ -90,7 +91,7 @@ To define a different domain name for your mobile app, do the following:
 
 1. In the **Distribute** tab, under the section **Native Platforms**, click the **Change** link in the **Domain Name** column.
 
-    ![Hostname settings for mobile apps](images/sc-change-hostname.png)
+    ![Hostname settings for mobile apps](images/change-hostname-sc.png)
 
 1. Enter the new domain name for the mobile app and click **Apply**. 
 
@@ -108,7 +109,7 @@ To set a different version code for your mobile app, do the following:
 
 1. In the **Distribute** tab, under the section **Native Platforms**, click the **Change** link in the **Code** column for the iOS or Android entry.
 
-    ![App code version settings for mobile apps](images/sc-change-versioncode.png)
+    ![App code version settings for mobile apps](images/change-versioncode-sc.png)
 
 1. Enter the new code for the mobile app and click **Apply**.
 
@@ -128,11 +129,11 @@ To choose a MABS version do the following:
 
 1. In the **Settings** column, click the **Configure** link for the iOS or Android entry.
 
-    ![Mobile app settings screen](images/sc-open-mabs-version-selection.png)
+    ![Mobile app settings screen](images/open-mabs-version-selection-sc.png)
 
 1. At the end of the configuration settings page, select the MABS version you wish to use for generating the mobile app package for the mobile platform you're configuring (iOS or Android) in the current environment, either the latest available version or a specific version (see below for details).
 
-    ![Mobile Apps Build Service (MABS) version selection)](images/sc-select-mabs-version.png)
+    ![Mobile Apps Build Service (MABS) version selection)](images/select-mabs-version-sc.png)
 
     **Note:** The MABS version selection is only available for apps whose native platform settings are already configured.
 
@@ -159,7 +160,7 @@ To obtain a mobile app build log:
 1. Click your mobile app name to navigate to the mobile app detail page.
 1. In the **Distribute** tab, under the **Native Platforms** section, click the log icon for the desired platform to download the build log.
 
-![](<images/sc-download-build-logs.png>)
+![Download build log](<images/download-build-logs-sc.png>)
 
 ## Updating your mobile app package
 
@@ -179,6 +180,6 @@ To set an app for the PWA distribution in Service Center, do the following:
 
 1. Click the **Applications** tab, open your mobile app from the app list, then select the **Distribute** tab. The PWA settings are in the **Progressive Web Application (PWA)** section.
 
-    ![PWA settings in Service Center](images/sc-pwa-settings.png)
+    ![PWA settings in Service Center](images/pwa-settings-sc.png)
 
 1. Select the checkbox **Distribute as PWA**, then click **Apply**.

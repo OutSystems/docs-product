@@ -4,6 +4,7 @@ locale: en-us
 guid: 67304326-4018-4f4c-88c7-8e5034fe9ce5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:42
 ---
 
 # Create an IT User

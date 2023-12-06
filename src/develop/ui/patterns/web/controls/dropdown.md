@@ -5,6 +5,7 @@ locale: en-us
 guid: b4792689-6d10-4819-9a92-609ddbbd0365
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=230%3A7&mode=design&t=KpVEJMvnBwiukqql-1~~~~
 ---
 
 # Dropdown
@@ -35,7 +36,7 @@ In this example, we create a dropdown containing a list of employee names from a
 
     ![](<images/dropdown-2-ss.png?width=800>)
 
-1. On the **Properties** tab, in the enter a name for the Dropdown widget.
+1. On the **Properties** tab, enter a name for the Dropdown widget.
 
     In this example, we enter `EmployeeDropdown`.
 

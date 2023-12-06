@@ -1,4 +1,4 @@
-# How to contribute # How to Collaborate with our Documentation
+# How to Collaborate with our Documentation
  
 ## Overview
 The OutSystems community is the reason we keep developing an amazing platform. We want you to be successful, so with that in mind, we want to give back even more.

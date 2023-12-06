@@ -6,6 +6,7 @@ locale: en-us
 guid: bd15fc86-95cb-4875-a4e6-dd2e4e0e0faf
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:339
 ---
 
 # List Records Widget

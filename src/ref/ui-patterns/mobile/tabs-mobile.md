@@ -5,6 +5,7 @@ locale: en-us
 guid: 8b2184cf-f3d0-4bbc-a6f8-b78509902cf0
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:392
 ---
 
 # Tabs Reference

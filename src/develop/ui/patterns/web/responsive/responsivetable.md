@@ -5,6 +5,7 @@ locale: en-us
 guid: 4d49cb72-9e20-4d2c-9bc4-d2db032317aa
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=245:53
 ---
 
 # Responsive Table

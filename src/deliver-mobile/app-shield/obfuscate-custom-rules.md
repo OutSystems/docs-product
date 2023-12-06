@@ -5,6 +5,7 @@ locale: en-us
 guid: 8fe53ff7-6928-4fa2-b80d-cef17d9da254
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=1809:280
 ---
 
 # Creating custom obfuscation rules
@@ -162,7 +163,7 @@ To enable custom code obfuscation, follow these steps to add a property to the E
 
 1. From Service Studio, select **your module name**, go to the properties, and double-click **Extensibility Configuration**.
 
-    ![extend-configuration-field.png](images/extensibility-configurations-ss.png)
+    ![extend-configuration-field.png](images/extensibility-configurations-option-ss.png)
 
 1. In the **Extensibility Configuration** field, enter the obfuscation property as a new global preference. Call the new property in the Extensibility Configuration JSON **AppShieldObfuscationRules**, and its value is a base64 encoding of your custom obfuscation rules. The following code snippet is an example of the JSON implementation.
 

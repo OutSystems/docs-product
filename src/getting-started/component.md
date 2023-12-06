@@ -5,6 +5,7 @@ locale: en-us
 guid: 8dd13cd7-723f-456c-ac0d-e8981a266e2e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=69:2
 ---
 
 # Use a Forge Component Made by the Community

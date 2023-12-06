@@ -5,6 +5,7 @@ locale: en-us
 guid: c4e2edb1-3142-4f82-b34d-dab8d2356155
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:82
 ---
 
 # Stacked Cards
@@ -41,7 +42,7 @@ You can use Stacked Cards UI Pattern to add swipeable cards that can be dragged 
 
     ![](images/stackedcards-3-ss.png)
 
-    By default, the Stacked Cards widget contains a List, Overlay Top, Overlay Right, and Overlay Right placeholders.
+    By default, the Stacked Cards widget contains a List, Overlay Top, Overlay Right, and Overlay Left placeholders.
 
 1. Add content to the List placeholder. In this example, from the **Data** tab, we drag a list of Employees into the List placeholder.
 

@@ -5,6 +5,7 @@ locale: en-us
 guid: 8f00b7c4-754a-4afd-86ac-740c255458b1
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1075:5150
 ---
 
 # File Viewer plugin

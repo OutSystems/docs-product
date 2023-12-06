@@ -5,6 +5,7 @@ locale: en-us
 guid: 4430e635-ef3e-45e4-a2f6-39c74300518d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/mDMvfanpcaW6fqmEKxjvMQ/Getting%20Started?node-id=2318:1868
 ---
 
 # Get external data in your app
@@ -19,7 +20,7 @@ OutSystems provides a number of ways to access external data and use it in your 
 
 Connecting to an external database or System of Record (SoR) allows you to leverage your investment in existing systems and to avoid data migration.
 
-![Process overview and options for getting your own external data in your app](images/get-data-diag.png)
+![Process overview and options for getting your own external data in your app](images/get-your-data-diag.png)
 
 ## Connect to an external database
 
@@ -46,3 +47,4 @@ You can also build custom integrations using REST or SOAP webservices, or use co
 ## Next step
 
 Now that you have your data available in your app, use your data in the screens of the app. Check [this article to learn how to use your data in the UI of your app](replace-data-sauce.md)
+

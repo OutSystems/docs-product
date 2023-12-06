@@ -5,6 +5,7 @@ locale: en-us
 guid: ae0d2c36-c50f-4084-b986-d19572b31cc5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:99
 ---
 
 # Use Icons

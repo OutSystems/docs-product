@@ -3,6 +3,7 @@ locale: en-us
 guid: a718f5ab-fe6d-4f5f-b176-172ed90c9a0c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Unexpected Resource Warning

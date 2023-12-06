@@ -5,6 +5,7 @@ locale: en-us
 guid: 045e94bb-45ae-4672-8c58-c9f2bd07a485
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=238:61
 ---
 
 # Timeline

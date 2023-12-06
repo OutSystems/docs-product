@@ -4,6 +4,7 @@ locale: en-us
 guid: 8c89ad30-ff41-497f-81c9-2ec418fde122
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Validations

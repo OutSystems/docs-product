@@ -5,14 +5,15 @@ locale: en-us
 guid: 0e09d502-6d81-4bdb-a2fa-1194ce483098
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # PerformanceMonitoring API
 
-To allow you to analyze the user experience of your applications, OutSystems logs [request events](#requestevent) with valuable data for your analytics. To give you access to request events, the PerformanceMonitoring API provides REST API methods to:
+To allow you to analyze the user experience of your apps, OutSystems logs [request events](#requestevent) with valuable data for your analytics. To give you access to request events, the **PerformanceMonitoring API** provides REST API methods to:
 
 * Retrieve a list of request events that occurred in your application
-* Register your own request related events
+* Register your own request-related events
 
 The server only stores data for the last two days. Learn [how application performance is measured](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/how-application-performance-is-measured.md).
 
@@ -31,11 +32,11 @@ Resources | Description
 
 ### GET RequestEvents
 
-Returns a list of request events, filtered by event names and time interval you specify in the parameters.
+Returns a list of request events, filtered by event names and the time interval you specify in the parameters.
 
-Authentication can be basic authentication that provides the credentials of a LifeTime user or it can be authentication that uses service account tokens as [described in LifeTime API documentation](lifetime-deployment/rest-api-authentication.md). 
+Authentication can be basic authentication that provides the credentials of a LifeTime user, or it can be authentication that uses service account tokens as [described in LifeTime API documentation](lifetime-deployment/rest-api-authentication.md). 
 
-The API only returns request events for the applications for which the user has *Reuse & Monitor* permissions in the environment. Learn more about how to [configure security for an infrastructure](../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
+The API only returns request events for the applications for which the user has *Open and Debug Applications* permissions in the environment. Learn more about how to [configure security for an infrastructure](../../managing-the-applications-lifecycle/manage-it-teams/intro.md).
 
 To use it in an application, make sure that [monitoring is turned on](../../managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md) for the environment and also for the application module. Otherwise, the API responds with a status code of '200 - OK' but doesn't retrieve any events.
 
@@ -74,7 +75,7 @@ RequestEventList
 ResultsTruncated
 :   Type: boolean.  
     Indicates if not all the results were returned, due to the limit of objects in the list.  
-    This can occur due to the limit set either in the 'NumberOfResults' parameter, or in the 'MaxResponseSize' site property of the PerformanceProbe module of your environment. Default limit: 15000.  
+    This can occur due to the limit set either in the 'NumberOfResults' parameter or in the 'MaxResponseSize' site property of the PerformanceProbe module of your environment. Default limit: 15000.  
     To retrieve the next set of results, you can send a new GET request. Set its StartInstant parameter to the Instant of the most recent RequestEvent you got on the previous request.
 
 #### Example request
@@ -189,12 +190,16 @@ http://outsystemscloud.com/PerformanceProbe/rest/PerformanceMonitoringAPI/Reques
 |--- |--- |
 |Instant|Date and time when the event occurred.|
 |Request Key|The GUID that identifies the request.|
-|Request Event Name|The name of the event.|
+|Request Event Name|The name of the event. This name can be whatever you want, but is limited to 50 characters. For more information, see the [More about Request Event Name](#more-about-request-event-name) section.
 |Module Key|Unique identifier of the module where the event occurred.|
 |Module Name|Name of the module where the event occurred.|
 |Application Key|Unique identifier of the application where the event occurred.|
 |Application Name|Name of the application where the event occurred.|
 |Request Event Details|A JSON object with the details about the event. Each built-in request event has its own details:<br/>• [WebScreenClientExecuted](#webscreenclientexecuted-details)<br/>• [WebScreenServerExecuted](#webscreenserverexecuted-details)<br/>• [QueryExecuted](#queryexecuted-details)<br/>• [ConsumedIntegrationExecuted](#consumedintegrationexecuted-details)<br/>• [ExtensionExecuted](#extensionexecuted-details)<br/>• [ScreenServer](#screenserver-details)<br/>• [TimerExecuted](#timerexecuted-details)|
+
+#### More about Request Event Name
+
+Any events with a Request Event Name different from the built-in events, created by the POST request, are custom events that are not automatically consumed by the current monitoring mechanism (that is, LifeTime Analytics). This means you decide the event name (limited to 50 characters).
 
 #### Request event details for WebScreenClientExecuted event { #webscreenclientexecuted-details }
 
@@ -340,6 +345,8 @@ Applies to Mobile Apps and Reactive Web Apps only.
 
 </div>
 
+This event is disabled by default. This means that the event is not generated. Even when the event is enabled, it isn't processed by LifeTime Analytics because Mobile and Reactive Web Apps are not supported in LifeTime Analytics.
+
 This event occurs whenever the server finishes handling a request. This is identical to WebScreenServerExecuted without its client counterpart. The event's properties are the following:
 
 | Property | Meaning                               | Description                                                  |
@@ -367,6 +374,8 @@ This event occurs whenever the server finishes handling a request. This is ident
 | EC       | Number of errors                      | The number of errors that occurred during the request.        |
 
 #### Request event details for TimerExecuted event { #timerexecuted-details }
+
+This event is disabled by default. This means that the event is not generated. Even when the event is enabled, it isn't processed by LifeTime Analytics because this event is not supported by LifeTime Analytics.
 
 This event occurs whenever the server finishes handling a timer. The event's properties are the following:
 

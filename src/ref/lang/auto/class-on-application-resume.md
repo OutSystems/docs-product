@@ -6,6 +6,7 @@ locale: en-us
 guid: bec0793d-a9f6-429b-b6dc-a86e4fdb60d3
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=612:324
 ---
 
 # On Application Resume
@@ -18,7 +19,7 @@ Applies only to Mobile Apps.
 
 Action to be executed when the application is returning from background to foreground (in the home module only). Can be used for validating application state when resuming (e.g. checking for network availability).  
 
-To add this action to a Mobile or Reactive Web App do the following:
+To add this action to a Mobile app do the following:
 
 1. In the home module of your app, open the **Logic** tab.
 

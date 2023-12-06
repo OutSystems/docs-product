@@ -5,6 +5,7 @@ locale: en-us
 guid: 6265028A-3331-417B-80BC-3E91A1E7B12C
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4647%3A10996&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Provider client actions

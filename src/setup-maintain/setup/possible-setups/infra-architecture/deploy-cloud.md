@@ -4,6 +4,7 @@ locale: en-us
 guid: de7c085b-1c0b-4a1f-9d36-4a7e3f1c3ebc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Deploy an infrastructure on OutSystems Cloud

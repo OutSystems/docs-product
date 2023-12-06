@@ -5,6 +5,7 @@ locale: en-us
 guid: 9A82CE12-91D7-45F3-9C28-0F2D00A486B4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=2186%3A6469&mode=design&t=rzWSTBJIapfhmERp-1
 ---
 # LifeTime environment filters
 

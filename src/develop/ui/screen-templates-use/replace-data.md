@@ -4,6 +4,7 @@ locale: en-us
 guid: 434dc1fc-9589-4251-a23b-11c52ace8f69
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Replace data in screens

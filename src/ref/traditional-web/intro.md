@@ -5,6 +5,7 @@ locale: en-us
 guid: b26525c6-b5d0-47c6-bd58-179ce4c8434a
 app_type: traditional web apps
 platform-version: o11
+figma:
 ---
 
 # Traditional Web

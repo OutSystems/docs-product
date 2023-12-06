@@ -5,6 +5,7 @@ locale: en-us
 guid: 85bf3d51-36e8-4b3f-bebb-3ee59614230f
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:43
 ---
 
 # Floating Content

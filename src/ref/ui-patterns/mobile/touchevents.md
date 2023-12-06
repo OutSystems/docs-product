@@ -5,6 +5,7 @@ locale: en-us
 guid: b6452069-3868-4dde-8e33-9a2392e8d548
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Touch Events Reference

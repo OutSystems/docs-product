@@ -5,6 +5,7 @@ locale: en-us
 guid: 3a9b8612-fe81-4c45-94be-804398a3c28a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # SAP Extensibility API

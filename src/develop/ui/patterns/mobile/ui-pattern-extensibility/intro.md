@@ -5,6 +5,7 @@ locale: en-us
 guid: E9183915-DC47-4192-ACE3-AE04472EFCB2
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4647%3A10004&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # OutSystems UI Pattern extensibility

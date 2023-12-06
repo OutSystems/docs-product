@@ -6,6 +6,7 @@ locale: en-us
 guid: 6b4c779a-b8ce-482d-a842-1b2eedc84785
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=842:1116
 ---
 
 # Input Parameter

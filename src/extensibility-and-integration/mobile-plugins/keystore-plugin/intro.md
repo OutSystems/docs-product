@@ -5,6 +5,7 @@ locale: en-us
 guid: d66f03f6-4f9a-4923-9f55-75adabf5ed64
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=2925:15309
 ---
 
 # Key Store plugin

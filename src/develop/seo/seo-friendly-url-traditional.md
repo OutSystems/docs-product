@@ -6,6 +6,7 @@ locale: en-us
 guid: 641c106a-d688-42a3-9b73-8fd9791a673b
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3329:27077
 ---
 
 # SEO-Friendly URLs for Traditional Web apps

@@ -5,6 +5,7 @@ locale: en-us
 guid: fb849376-d199-4131-af7d-fb890d688676
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:575
 ---
 
 # Stacked Icon UI Pattern Reference

@@ -5,6 +5,7 @@ locale: en-us
 guid: 8cbeefba-ff0a-4f0f-a9ef-eccd63af568b
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A113&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Panel

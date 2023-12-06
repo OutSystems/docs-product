@@ -5,6 +5,7 @@ locale: en-us
 guid: e2eb38b8-b3b6-42dd-9389-232ef2ba6226
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:753
 ---
 
 # Troubleshooting

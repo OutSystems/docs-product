@@ -5,6 +5,7 @@ locale: en-us
 guid: 8b6d4c19-e002-4a96-b043-766b1b7e4024
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:126
 ---
 
 # Troubleshoot the Performance of an Application

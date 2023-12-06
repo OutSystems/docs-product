@@ -5,6 +5,7 @@ locale: en-us
 guid: e59d9233-7c2d-43ae-b8a2-f55d75263c68
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:95
 ---
 
 # Apply Content Security Policy
@@ -18,7 +19,11 @@ It's advisable that you configure the CSP in every environment. Start with the a
 
 The CSP configuration works for both web and mobile applications developed with OutSystems.
 
+<div class="info" markdown="1">
 
+From LifeTime 11.13.0 and Platform Server 11.15.0 versions and onwards, the Service Center and LifeTime management consoles have CSP enabled. Their directives can't be changed and they don't depend on the directives you define.
+
+</div>
 
 ## Configure CSP in LifeTime
 

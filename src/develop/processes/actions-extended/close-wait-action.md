@@ -3,6 +3,7 @@ locale: en-us
 guid: 9b85a078-cdb8-467d-8fca-001f5f88b4a0
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Close Wait Action
@@ -19,7 +20,7 @@ Closing [Wait](<../../../ref/lang/auto/class-wait.md>) activities demands advanc
 
 * **ActivityId**: id of the activity instance. (Type: Activity Identifier; Mandatory)
 
-* **Wait Input Parameters**: one parameter for each input parameter in the Wait activity definition.
+* **Wait Output Parameters**: one input parameter for each output parameter in the Wait activity definition, if any.
 
 <div class="warning" markdown="1">
 

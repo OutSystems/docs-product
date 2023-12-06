@@ -5,6 +5,7 @@ locale: en-us
 guid: 728922B7-1DEF-4E55-AB59-7641DAA85C21
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2538:4910
 ---
 
 # Donut Chart

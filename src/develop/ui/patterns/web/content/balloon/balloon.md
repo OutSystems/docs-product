@@ -5,6 +5,7 @@ locale: en-us
 guid: 872dd221-b71e-4780-b7f0-141d2ab55db5
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A38&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Balloon

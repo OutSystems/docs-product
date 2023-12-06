@@ -5,6 +5,7 @@ locale: en-us
 guid: ca179aae-31fe-4032-b523-167c3ba531e5
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:77
 ---
 
 # User Avatar

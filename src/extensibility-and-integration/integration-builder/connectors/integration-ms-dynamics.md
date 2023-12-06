@@ -4,6 +4,7 @@ locale: en-us
 guid: 5c9afbf6-6035-4da8-8d08-77c1503c0dcf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=1019:6371
 ---
 
 # Microsoft Dynamics 365 integration
@@ -21,18 +22,16 @@ Tables created as part of Dynamics 365 customer engagement apps, like Product or
 Verify the following:
 
 * You meet the general [Integration Builder prerequisites](../set-up.md#prerequisites).
+
 * The Microsoft Dynamics 365 integration deployed in your OutSystems development environment can make HTTPS outbound requests (port 443) to your Microsoft Dynamics 365 service.
-* You have a Microsoft account with Microsoft Dynamics 365 and Azure Administrator privileges. These admin privileges are required to access your Azure AD tenant and to create security roles and application users.
 
 ## Authorizing Integration Builder in your Microsoft account
 
 Follow the instructions provided in [Creating and using an integration](../use.md#create-use). You must authorize Integration Builder to access your data in Microsoft Dynamics 365 through your Microsoft account.
 
-![Authorizing Integration Builder to access your Microsoft account data](images/ms-authorization-1.png)
+![Authorizing Integration Builder to access your Microsoft account data](images/dataverse-ib-authorization.png)
 
-Integration Builder uses this authorization to obtain the available objects for building a Microsoft Dynamics 365 integration.
-
-Additionally, when you're creating a connection, Integration Manager connects to Integration Builder, requesting the creation of an Azure app and other related objects. This operation uses the same authorization, since only Integration Builder has the access tokens for this authorization.
+Integration Builder uses this authorization to retrieve the metadata from Microsoft Dataverse (environments, tables, and respective columns) and enable you to test a newly created integration in the development environment.
 
 ### About environment instances
 
@@ -48,9 +47,14 @@ Request authentication is handled transparently when you call Server Actions exp
 
 ### If you have administrator permissions in Azure Active Directory
 
-Integration Builder registers an app with Azure AD at the request of Integration Manager. When you create a connection, Integration Manager requests Integration Builder to create and associate a certificate with this app, saving the certificate details in an encrypted way as part of the connection information.
+You can select the `Create automatically` option to have the Integration Manager create the connection on your behalf.
+Integration Manager generates a certificate and connects to Integration Builder, which requests the creation of an Azure AD app that uses the certificate for authentication and authorization.
+
+![Authorizing Integration Manager to access your Microsoft account data](images/dataverse-im-authorization.png)
 
 ### If you don't have administrator permissions in Azure Active Directory
+
+If you don't have administrator permission in Azure AD or prefer not to grant Integration Builder permission to create apps in Azure AD, then you should select the `Create manually` option.
 
 Creating a connection without administrator credentials requires parameters from the Azure AD platform. The Azure AD account administrator needs to create a new Azure app to obtain these parameters.
 

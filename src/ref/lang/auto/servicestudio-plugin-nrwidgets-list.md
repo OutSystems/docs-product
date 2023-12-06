@@ -7,6 +7,7 @@ locale: en-us
 guid: 836cb2ad-86f5-4d9a-96ac-b7e34b4e82f7
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=1718%3A3506&mode=design&t=R3Sasu7dM1Rm42Nj-1
 ---
 
 # List

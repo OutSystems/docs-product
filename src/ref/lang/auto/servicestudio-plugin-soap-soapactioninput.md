@@ -5,6 +5,7 @@ locale: en-us
 guid: 249fbacb-2b93-4dd1-8675-e48bcccbd609
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Input Parameter - Consumed SOAP Method

@@ -5,6 +5,7 @@ locale: en-us
 guid: 107b5610-cfdd-4186-b3ae-f513af891651
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=238:31
 ---
 
 # Navigation Bar

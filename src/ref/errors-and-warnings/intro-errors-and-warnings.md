@@ -4,6 +4,7 @@ locale: en-us
 guid: 1193ec37-21ef-45e2-b1a2-cd4cf1d8b3a7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: 
 ---
 
 # Errors and Warnings

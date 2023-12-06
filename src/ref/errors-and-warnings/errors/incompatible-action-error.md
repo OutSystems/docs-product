@@ -4,6 +4,7 @@ locale: en-us
 guid: 45f3d12c-cd89-4141-be22-c0005c1a6530
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Incompatible Action Error

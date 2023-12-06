@@ -1,10 +1,11 @@
 ---
 summary: Fetching data from the database using Aggregates.
-tags: support-application_development; support-Database;
+tags:
 locale: en-us
 guid: c1c2a735-0768-4e33-8e42-73329e7944ae
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=159:24
 ---
 
 # Fetch and display data from the database in OutSystems
@@ -92,6 +93,3 @@ Once you fetch data from the database, use one of many OutSystems widgets to sho
 
     ![App running in the browser](images/fetch-data-browser.png)
 
-## Traditional Web App
-
-For more information on how to add an Aggregate in Traditional Web App, see [Aggregates in Traditional Web Apps](../../../ref/lang/auto/class-aggregate.md#traditional-web-apps).

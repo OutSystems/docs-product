@@ -5,6 +5,7 @@ locale: en-us
 guid: eb80a9ee-c99a-4136-85b4-ec06d6b8e8d4
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:379
 ---
 
 # Animated Label Reference

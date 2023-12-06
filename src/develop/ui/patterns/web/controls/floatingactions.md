@@ -5,6 +5,7 @@ locale: en-us
 guid: 2d4b31df-c2f5-46c6-945b-8fd711f22542
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=232%3A4&mode=design&t=KpVEJMvnBwiukqql-1
 ---
 
 # Floating Actions

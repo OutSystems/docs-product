@@ -5,9 +5,10 @@ locale: en-us
 guid: efc039d9-67e7-4824-a8fb-5e65418db58c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing-the-Applications-Lifecycle?type=design&node-id=928%3A595&mode=design&t=rzWSTBJIapfhmERp-1
 ---
 
-# Getting started as a team lead 
+# Getting started as a team lead
 
 <div class="info" markdown="1">
 

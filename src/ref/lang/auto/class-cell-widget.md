@@ -5,6 +5,7 @@ locale: en-us
 guid: c6a8d1ee-69f8-4864-b318-45e927008881
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Cell Widget

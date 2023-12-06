@@ -5,6 +5,7 @@ locale: en-us
 guid: 64103ccc-9190-4483-8145-3f063dd1b823
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # How to add a marker on map click 

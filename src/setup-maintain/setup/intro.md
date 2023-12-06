@@ -5,6 +5,7 @@ locale: en-us
 guid: 079418c8-7a3d-4b5e-9c13-c1ae7a1f122e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup-and-maintain-your-OutSystems-Infrastructure?type=design&node-id=255%3A60&mode=design&t=PPL7U8XyNSIpuC5w-1
 ---
 
 # Setting Up OutSystems
@@ -135,7 +136,7 @@ To perform an offline installation of the LifeTime Management Console you might 
 
 Install LifeTime management console in a **dedicated** environment. **Installing LifeTime in an existing environment isn't a supported scenario**.
 
-For this, follow the LifeTime installation checklist launched when you run the LifeTime installation binary. As LifeTime **doesn't support farm configuration**, you must select the combination "Deployment Controller + Server" in the checklist to install a single server with both roles.
+For this, follow the LifeTime installation checklist launched when you run the LifeTime installation binary. You must select the combination "Deployment Controller + Server" in the checklist to install a single server with both roles.
 
 The OutSystems Scheduler service must be running in the LifeTime environment.
 

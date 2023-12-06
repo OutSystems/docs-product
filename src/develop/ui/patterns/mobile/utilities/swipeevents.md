@@ -5,6 +5,7 @@ locale: en-us
 guid: 388d64de-604e-47a8-b533-8f2900ed21d9
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=222:0
 ---
 
 # Swipe Events

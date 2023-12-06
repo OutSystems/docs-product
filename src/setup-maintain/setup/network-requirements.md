@@ -5,6 +5,7 @@ locale: en-us
 guid: 6238ecb9-6eaf-4406-a421-f4b01322052d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # OutSystems network requirements
@@ -41,7 +42,7 @@ The table below details the ports that need to be accessible in each server of a
 
 <div class="info" markdown="1">
 
-Security Tip: TCP Ports 12000, 12001, 12002, and 12102 shouldn't be open to the internet.
+**Security best practice:** TCP ports 12000, 12001, and 12002 shouldn't be open to the internet.
 
 </div>
 
@@ -63,16 +64,20 @@ The following table lists the ports that should be open to correctly **monitor**
 |Front-End|Controller|12000|TCP|OutSystems Deployment Controller Service Monitoring|
 |Front-End|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
 |Front-End|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
-|Front-End|Front-End|12102|TCP|OutSystems Scheduler Service Monitoring. Applies to Platform Server 11.21.0 and higher.|
 |Controller|Front-End|80|TCP|IIS Monitoring|
 |Controller|Front-End|12001|TCP|OutSystems Deployment Service Monitoring|
 |Controller|Front-End|12002|TCP|OutSystems Scheduler Service Monitoring|
-|Controller|Front-End|12102|TCP|OutSystems Scheduler Service Monitoring. Applies to Platform Server 11.21.0 and higher.|
 |Front-End and Controller|\*.outsystems.com<br/>outsystems.com|443|TCP|Telemetry|
 
 In case you are using a hybrid infrastructure where some part is in OutSystems Cloud and another is managed by yourself, it's possible to create a VPN connection between the environments (hybrid configuration is only supported in OutSystems licenses purchased before January 2020). Learn more in the [Amazon documentation](http://aws.amazon.com/vpc/faqs/#C1).
 
 ### Development tools
+
+<div class="info" markdown="1">
+
+Check [here](configure-http-proxy.md) the necessary configurations if you're working on a network where communications to the Internet need to go through an HTTP proxy.
+
+</div>
 
 The following table lists the necessary connectivity between the developers workstations and the several endpoints that support the full experience of Service Studio and Integration Studio.
 
@@ -157,17 +162,16 @@ You need to have bidirectional secure communication between the front-end of the
 
 To use [AI Mentor Studio](https://aimentorstudio.outsystems.com/), the AI Mentor Studio LifeTime plugin must be able to communicate with the AI Mentor Studio SaaS. Check out [how AI Mentor Studio works](../../managing-the-applications-lifecycle/manage-tech-debt/how-works.md). 
 
-#### Version 4.3 of the AI Mentor Studio LifeTime probes
-
-If your AI Mentor Studio LifeTime probes version is 4.3, the network requirements depend on the authentication method you use to access AI Mentor Studio.
+The network requirements depend on the authentication method and Probe version you use to access AI Mentor Studio.
 
 **OutSystems account authentication**
 
-If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable:
+If you access AI Mentor Studio using OutSystems account authentication, ensure the following destination endpoint is reachable, depending on the Probe version:
 
-Source|Destination|Port|Protocol|Notes
+Probe version|Source|Destination|Port|Protocol
 ---|---|---|---|---
-LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP|
+Probes 4.2 and above | LifeTime Front-End | aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/ | 443 | TCP|
+Probes 4.0 and 4.1 | LifeTime Front-End | architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard |443 | TCP|
 
 **IT User authentication**  
 
@@ -180,20 +184,4 @@ Source|Destination|Port|Protocol|Notes
 LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP| **Outbound communication** 
 aimentorstudio.outsystems.com|Environment Front-End (public DNS hostname)|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
 aimentorstudio.outsystems.com|LifeTime Front-End|443|TCP|**Inbound communication**<br/>IP addresses:<br/>52.17.222.124<br/>52.212.170.142<br/>52.17.218.236<br/>18.200.157.187<br/>34.255.149.145
-
-#### Version 4.2 of the AI Mentor Studio LifeTime probes
-
-Ensure the following destination endpoint is reachable:  
-
-Source|Destination|Port|Protocol|Notes
----|---|---|---|---
-LifeTime Front-End|aimentorstudio.outsystems.com/Probe_API/rest/Synchronization/|443|TCP|
-
-#### Versions 4.0 and 4.1 of the AI Mentor Studio LifeTime probes
-
-Ensure the following destination endpoint is reachable:
-
-Source|Destination|Port|Protocol|Notes
----|---|---|---|---
-LifeTime Front-End|architecture.outsystems.com/Broker_API/rest/ArchitectureDashboard|443|TCP|
 

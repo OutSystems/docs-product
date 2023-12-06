@@ -4,6 +4,7 @@ locale: en-us
 guid: ac774bf3-82fc-480e-a633-7652e559d52a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Mapping XML Data Types to OutSystems Data Types

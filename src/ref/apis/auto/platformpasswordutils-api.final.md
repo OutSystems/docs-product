@@ -5,6 +5,7 @@ locale: en-us
 guid: 0c8970c5-42b4-4ab0-8e87-7d88223f2789
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # PlatformPasswordUtils API

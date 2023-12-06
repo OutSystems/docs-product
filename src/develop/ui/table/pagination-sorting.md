@@ -5,6 +5,7 @@ locale: en-us
 guid: c85c1a3d-327a-49e1-af6d-bd99a67b4ebc
 app_type: reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=199:30
 ---
 
 # Table pagination and sorting

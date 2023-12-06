@@ -5,6 +5,7 @@ locale: en-us
 guid: 03fe77b6-1b3d-4114-84da-0bb10e3ead6c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # LifeTime SDK

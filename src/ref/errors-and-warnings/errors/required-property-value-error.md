@@ -5,6 +5,7 @@ locale: en-us
 guid: 104aade7-8bf2-4e15-9871-f05e91e008f6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=857:1425
 ---
 
 # Required Property Value Error

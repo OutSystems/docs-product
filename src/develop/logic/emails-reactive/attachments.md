@@ -5,6 +5,7 @@ locale: en-us
 guid: 33f25da2-2cd8-4016-a12d-3b6ebfd12fc2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=1062%3A13342&mode=design&t=GF97AOUqsRf9tsAh-1
 ---
 
 # Adding email attachments

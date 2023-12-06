@@ -5,6 +5,7 @@ locale: en-us
 guid: f677e159-79fd-4270-adad-fc16e1c49bf4
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:383
 ---
 
 # Badge Reference

@@ -5,6 +5,7 @@ locale: en-us
 guid: 1ad36b43-1e0e-4efb-a701-651bf0b97e06
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=310:34
 ---
 
 # Native Platforms Configuration

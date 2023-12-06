@@ -5,6 +5,7 @@ locale: en-us
 guid: d0b2bc8d-6a37-424d-8399-56e586304c93
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A420&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Carousel Reference

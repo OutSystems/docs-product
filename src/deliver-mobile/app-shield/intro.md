@@ -5,6 +5,7 @@ locale: en-us
 guid: bacbf600-bd10-4caf-820a-205c16a58691
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/RizSdkiVSDYFb97Vqvc7oj/Delivering%20Mobile%20Apps?node-id=313:21
 ---
 
 # Harden the protection of mobile apps with AppShield
@@ -209,15 +210,17 @@ These are the values available in the **AppShield** configuration JSON.
 
 | Value                           | Type         | OS           | Description                                                                                       |
 | ------------------------------- | ------------ | ------------ | ------------------------------------------------------------------------------------------------- |
-| AllowJailbrokenRootedDevices    | boolean      | iOS, Android | If set to true, allows users to run the app on the jailbroken devices.                            |
-| AllowScreenshot                 | boolean      | iOS, Android | If set to true, allows users to take screenshots of the app.                                      |
-| AppShieldObfuscationRules       | Text(base46) | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
-| BlockUntrustedKeyboards         | boolean      | Android      | If set to true, detects and blocks untrusted keyboards.                                           |
-| BlockUntrustedScreenreaders     | boolean      | Android      | If set to true, detects and blocks untrusted screen readers.                                      |
-| DisableAppShielding             | boolean      | iOS, Android | Activates or deactivates App Shield.
+| AddTrustedKeyboardSigner        | Text         | Android      | If BlockUntrustedKeyboards is set to True, this option can whitelist a third party keyboard. This option must be added for each keyboard software that you want to add to the whitelist. |
+| AddTrustedScreenReaderSigner    | Text         | Android      | If BlockUntrustedScreenreaders is set to True, this option can whitelist a third party screen reader. This option must be added for each screen reader software that you want to add to the whitelist. |
+| AllowJailbrokenRootedDevices    | Boolean      | iOS, Android | If set to True, users can run the app on the jailbroken devices.                            |
+| AllowScreenshot                 | Boolean      | iOS, Android | If set to True, users can take screenshots of the app.                                      |
+| AppShieldObfuscationRules       | Text(base64) | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
+| BlockUntrustedKeyboards         | Boolean      | Android      | If set to True, untrusted keyboards are detected and blocked.                                           |
+| BlockUntrustedScreenreaders     | Boolean      | Android      | If set to True, untrusted screen readers are detected and blocked.                                      |
+| DisableAppShielding             | Boolean      | iOS, Android | Activates or deactivates App Shield.
  | ExitOnURL | URL value | iOS, Android|If an app feature is blocked due to a configured policy of the **AppShield** plugin, the default browser will open the URL which may explain the problem to the user. See ExitOnURL for additional information.                                                           |
 | GooglePlayAppSigningCertificate | Text(Base64) | Android | Google Play App Signing certificate.                                                              |
-| RemoveQueryAllPackagesPermission | boolean | Android | If set to true, it removes the app ability to check other installed applications. See more information [here](query-all-packages.md).                                                              |
+| RemoveQueryAllPackagesPermission | Boolean | Android | If set to True, it removes the app ability to check other installed applications. For more information, see [here](query-all-packages.md).                                                              |
 | android                         | JSON value   | Android      | The key denoting values that apply to the Android devices.                                        |
 | global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.                                    |
 | ios                             | JSON value   | iOS          | The key denoting values that apply to the iOS devices.                                            |

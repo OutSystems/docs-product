@@ -5,6 +5,7 @@ locale: en-us
 guid: 4f39d91e-bc2f-4eac-a4ca-b8c660d97d0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Unattended Installation and Upgrade
@@ -83,7 +84,7 @@ The automatic prerequisites installation has a timeout of 15 minutes. This ensur
 
     * Run the OutSystems Service Studio installation executable as follows: ``ServiceStudio-<version>.exe /S [/D=<Service_Studio_path>]``
 
-    * Run the OutSystems Integration Studio installation executable as follows: ``IntegrationStudio-<version>.exe/S[/D=<Integration_Studio_path>]``
+    * Run the OutSystems Integration Studio installation executable as follows: ``IntegrationStudio-<version>.exe /S [/D=<Integration_Studio_path>]``
 
 * If you are installing or upgrading to OutSystems Platform Server 11.17.0 or earlier, run the OutSystems Development Environment installation package as follows:
 

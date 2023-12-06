@@ -5,6 +5,7 @@ locale: en-us
 guid: e664c563-cb0f-491c-bd05-8f1684d4a5a3
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:45
 ---
 
 # Translate your app

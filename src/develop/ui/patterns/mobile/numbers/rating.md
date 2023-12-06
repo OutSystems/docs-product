@@ -5,6 +5,7 @@ locale: en-us
 guid: f0a35dfd-ff8e-4e04-8a4b-2407efaca4f6
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=644:9
 ---
 
 # Rating
@@ -68,3 +69,4 @@ After following these steps and publishing the module, you can test the pattern 
 |Event| Description  | 
 |---|---|
 |OnSelect: Optional  | Event that returns the current rating value. | 
+

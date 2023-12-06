@@ -5,6 +5,7 @@ locale: en-us
 guid: 6ce39ef3-220e-4cc8-ac81-a96b73b8d259
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=615%3A435&mode=design&t=Cx8ecjAITJrQMvRn-1
 ---
 
 # Columns Reference

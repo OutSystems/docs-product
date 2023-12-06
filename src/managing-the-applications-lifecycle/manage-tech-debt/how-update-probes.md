@@ -5,6 +5,7 @@ locale: en-us
 guid: d11dd771-148b-49fd-8bfd-dfe0800620c5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=929:738
 ---
 
 # How to update the AI Mentor Studio probes

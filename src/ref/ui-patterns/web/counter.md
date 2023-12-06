@@ -5,6 +5,7 @@ locale: en-us
 guid: c41f4255-ed4b-4aae-a934-9eebbcfcc129
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=615:437
 ---
 
 # Counter Reference

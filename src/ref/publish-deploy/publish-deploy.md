@@ -5,6 +5,7 @@ locale: en-us
 guid: 0C021138-FA51-4A62-97E2-EC6C030FFDA4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?node-id=2322:3941
 ---
 
 # Publishing and deploying an OutSystems app

@@ -5,6 +5,7 @@ locale: en-us
 guid: e4c1bddc-985a-4895-b74e-9fb7e406c8a9
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/eFWRZ0nZhm5J5ibmKMak49/Reference?type=design&node-id=612%3A373&mode=design&t=xOFe93sVU3cU3chE-1
 ---
 
 # Range Slider Reference

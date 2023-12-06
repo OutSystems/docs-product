@@ -5,6 +5,7 @@ locale: en-us
 guid: ed7fd28f-d0a7-4b18-bddc-6ee0521677bf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=173:0
 ---
 
 # Filter Query Results

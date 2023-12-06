@@ -5,6 +5,7 @@ locale: en-us
 guid: fa99306b-0261-47c1-821f-80262d8dd45b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jSgZ0l0unYdVymLxKZasno/Extensibility%20and%20Integration?node-id=410:102
 ---
 
 # Add Basic Authentication to an Exposed REST API
@@ -37,14 +38,14 @@ For that, do the following:
 
 1. Select the exposed REST API you want to change and set its "Authentication" property to `Basic`.
 
-![](images/ss-rest-authentication-options.png)
+    ![Select authentication property to basic](images/rest-authentication-options-ss.png)
 
 As a result, OutSystems creates the "OnAuthentication" action in your REST API to handle basic authentication with:
 
 * The "Username" and "Password" input parameters holding the credentials passed in the request (they're automatically decoded from the "Authorization" HTTP header)
 * The "User_Login" action to validate the credentials and identify the user
 
-![](images/ss-rest-onauthentication-basic-flow.png)
+![OnAuthentication action](images/ss-rest-onauthentication-basic-flow.png)
 
 All methods in the REST API now require Basic Authentication. Manage user credentials in your end user management application (by default, the [Users application](../../../develop/security/end-user-manage/accessing-users.md)).
 

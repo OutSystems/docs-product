@@ -5,6 +5,7 @@ locale: en-us
 guid: 294F6709-2351-4992-832F-4DAE431D3E5F
 app_type: traditional web apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3329%3A27075&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # SEO-friendly URLs for Reactive Web apps  
@@ -184,7 +185,7 @@ The following strings aren't supported because of the / symbol:
 Set this property to **Path** to pass the parameters separated by / in the URL (for example, `/Product/1`). Set it to **Query string** to pass the parameters as a string (for example, `Products?Id=1`).  
 
 **URL Pattern**  
-Set this property to **Path** to pass the parameters separated by / in the URL (for example, `/Product/1`). Set it to **Query string** to pass the parameters as a string (for example, `Products?Id=1`).   
+This is a preview of the transformed URL (for example, the Product screen has the ProductId input parameter and its URL Structure set as **Query string**. So the URL Pattern value will be `Product?ProductId={ProductId}`). 
 
 ## Redirect rules  
 

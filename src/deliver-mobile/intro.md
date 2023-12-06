@@ -5,9 +5,10 @@ locale: en-us
 guid: b6da547f-4ef6-4bd3-bffc-365d5630da64
 app_type: mobile apps
 platform-version: o11
+figma:
 ---
 
-# Delivering Mobile Apps
+# Delivering mobile apps
 
 <div class="info" markdown="1">
 

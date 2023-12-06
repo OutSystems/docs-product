@@ -5,6 +5,7 @@ locale: en-us
 guid: 1dd579f8-20ca-4af9-89fa-40697272f8bc
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZDYZVg9kmMXl758XX7ytXc/Setup%20and%20maintain%20your%20OutSystems%20Infrastructure?node-id=1561:1291
 ---
 # Upgrade LifeTime management console
 

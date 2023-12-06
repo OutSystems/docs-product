@@ -3,6 +3,7 @@ locale: en-us
 guid: 227269b0-1de7-4179-8b42-40fe86ac8129
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Structure Attribute Properties

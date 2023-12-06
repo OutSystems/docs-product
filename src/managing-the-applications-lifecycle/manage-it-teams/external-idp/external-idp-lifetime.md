@@ -5,6 +5,7 @@ locale: en-us
 guid: 1730AE44-3570-4CA9-81BE-032CCF2D12B5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=1914:7765
 ---
 
 # Configuring LifeTime authentication
@@ -33,10 +34,21 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
         You can validate the URL using the **Test configuration** link.
        
-    1. **Scopes**: Once the well-known configuration URL is entered, all the scopes supported and enabled in the identity provider are fetched and listed for selection. Any required scope for the user authentication process can then be selected and saved for the configuration.
+    1. **Scopes**: Clicking the **Test** button after you enter the well-known configuration URL fetches all the scopes supported and enabled in the identity provider. The scopes are displayed on the **Configuration details** section. Any required scope for the user authentication process can be added and saved for the configuration.
+  
+          
+       **Note:** Please follow these guidelines when selecting values for scopes:
        
-          **Default Selected Scopes**:
-           By default, the following scopes are pre-selected for all identity providers:
+       * Select your value from the provided list of acceptable values in Configuration details section, ensuring that it matches exactly.
+       
+       * Avoid entering values that are not included in the provided list.
+       
+       * Pay attention to letter case (uppercase/lowercase) and formatting requirements if specified.
+       
+       Selecting values outside the provided list may result in errors or data inconsistencies.
+       
+        **Default Selected Scopes**:
+          By default, the following scopes are added for all identity providers and cannot be removed:
        
         * openid
        
@@ -44,19 +56,24 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
        
         * profile
        
-         These scopes provide basic user information that is necessary for authentication and initial authorization.
+         **Note**: If **offline_access** is supported and enabled in the Identity provider, this is also added by default. However, this scope can be removed if not needed.
+
+       These scopes provide basic user information that is necessary for authentication and initial authorization.
 
        **Additional Scope Selection**:
-                    In addition to the default selected scopes, users can choose any other required scopes based on the settings of their identity provider. The additional scopes serve various purposes, such as obtaining a refresh token or accessing specific claim values used to uniquely identify users.
+                    In addition to the default selected scopes, users can add any other required scopes based on the settings of their identity provider. The additional scopes serve various purposes, such as obtaining a refresh token or accessing specific claim values used to uniquely identify users.
 
         **Recommended Additional Scopes**:
                     The following are some recommendations for additional scope selection based on commonly used identity providers:
 
          *  **Azure AD**:
-                    For Azure AD, it is recommended to select the **offline_access** scope. This scope allows the application to request a refresh token, allowing it to obtain new access tokens without requiring user interaction.
+                    For Azure AD, it is recommended to add the **offline_access** scope. This scope allows the application to request a refresh token, allowing it to obtain new access tokens without requiring user interaction.
 
          *  **Okta**:
-                    For Okta, it is recommended to select the **offline_access** scope. This scope grants the application the ability to acquire a refresh token, ensuring seamless access token renewal without user involvement.
+                    For Okta, it is recommended to add the **offline_access** scope. This scope grants the application the ability to acquire a refresh token, ensuring seamless access token renewal without user involvement.
+                        
+         *   **AD FS**:
+                    For AD FS, it is recommended to add the **allatclaims** scope. This scope requests the access token claims in the identity token.
 
           **Note**: The recommended additional scopes mentioned above are not exhaustive, and users should consult their identity provider's documentation for specific scope requirements.
 
@@ -78,7 +95,7 @@ To configure the external provider (OIDC) in LifeTime, follow these steps:
 
         **Note**: For Azure and OKTA use ``preferred_username`` as the **Username Claim** value.
 
-    ![Enter authentication settings](images/authentication-settings-scope-lt.png)
+    ![Enter authentication settings](images/auth-settings-scope-lt.png)
 
 1. Click **Save Changes**.
 
@@ -161,3 +178,6 @@ Once the OpenID Connect provider is activated, the fallback of using the built-i
     If you don't clear the passwords when activating the OIDC provider, a warning message displays on the **Authentication Settings** screen. Click **Clear passwords now**.
 
     ![Clear passwords](images/clear-pass-lt.png)
+  
+
+

@@ -5,6 +5,7 @@ locale: en-us
 guid: 516d476b-42fc-4ed1-a26c-22b941906121
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A60&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Card Background

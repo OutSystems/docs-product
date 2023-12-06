@@ -4,6 +4,7 @@ locale: en-us
 guid: 32131311-38a7-41ec-84ca-8bfaf82ec229
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 # How to integrate with Salesforce
 
@@ -16,7 +17,7 @@ Enable your OutSystems application to consume or share data with a Salesforce ap
 
 ## Create a connected app in Salesforce
 
-1. Locate the email request with the title ```[user_name] requests your help to create a Salesforce Connected App```. A unique authorization certificate is attached to this email. Alternatively, use a private certificate.
+1. Locate the email request with the title `[user_name] requests your help to create a Salesforce Connected App`. A unique authorization certificate is attached to this email. Alternatively, use a private certificate.
 
 1. Go to Salesforce > **Service Setup Home**, and open **App Manager** (**User Interface** > **User Interface** > **App Manager**).
 

@@ -5,6 +5,7 @@ locale: en-us
 guid: 543a0aea-546e-48ce-92e6-dcc08e9fd2be
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=222:10
 ---
 
 # Touch Events

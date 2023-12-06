@@ -971,6 +971,7 @@
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md
+        - href: setup-maintain/setup/disable-registered-role-error.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-env-activity.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-usage-with-audit-logs.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md
@@ -1060,7 +1061,6 @@
         - href: setup-maintain/setup/change-db-authentication.md
         - href: setup-maintain/setup/load-balancing-apps/recommended-configs-load-balancing.md
         - href: setup-maintain/setup/cdn-setup.md
-        - href: setup-maintain/setup/disable-registered-role-user-error.md
 
         # Cache Invalidation Service
         - href: setup-maintain/setup/cache-invalidation/intro.md

@@ -60,7 +60,7 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
     ![Set redirect URI](images/redirect-az.png)
 
-1. Set the **Front-channel logout URL** to the Lifetime logout page from the LifeTime environment:
+1. Set the **Front-channel logout URL** to the LifeTime logout page from the LifeTime environment:
 
     * ``https://<LT_ENV>/LifeTimeSDK/CentralizedLogoutPage.aspx``
 
@@ -162,15 +162,15 @@ To configure Microsoft Azure AD authentication, follow these steps:
 
 ## Configure Azure AD as OutSystems' Identity Provider
 
-To finalize and activate the Azure AD configuration for both Consoles and Development Tools, follow these steps:
+To finalize and activate the Azure AD configuration for IT users, follow these steps:
 
-1. Access the Lifetime console.
+1. Access the LifeTime console.
 
 1. Go to **User Management** > **Authentication Settings**, and click **Add OpenId Connect Provider**.
 
 1. Enter the following Azure AD details in the form:
 
-    1. **Name**: ID Provider (e.g., Azure AD OIDC)
+    1. **Name**: ID Provider (for example, Azure AD OIDC)
 
     1. **Well-known Configuration URL**: OpenID Connect metadata document URI.
 

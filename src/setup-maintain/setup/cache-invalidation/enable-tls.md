@@ -17,29 +17,29 @@ To enable TLS you must manually configure the port used by the TLS listener as w
 
 To enable TLS communication do the following:
 
-1. Open the `%ALLUSERSPROFILE%\RabbitMQ\advanced.config` configuration file.  
-_Note:_ If they do not exist, create the `RabbitMQ` folder and the `advanced.config` file.
+1. Open the `%ALLUSERSPROFILE%\RabbitMQ\rabbitmq.conf` configuration file.  
+_Note:_ If they do not exist, create the `RabbitMQ` folder and the `rabbitmq.conf` file.
  
 1. Add the following lines:
 
-        [
-        {rabbit, [
-            {tcp_listeners, []},
-            {ssl_listeners, [5671]},
-            {ssl_options, [{certfile,"C:\\path\\to\\server\\cert.pem"},
-                            {keyfile,"C:\\path\\to\\server\\key.pem"}]}
-        ]}
-        ].
+        ## Disable non-TLS listeners for AMQP connections
+        listeners.tcp = none
+        
+        ## Enable TLS for AMQP connections
+        listeners.ssl.default = 5671
+        ssl_options.cacertfile = C:\\path\\to\\server\\cacert.pem
+        ssl_options.certfile = C:\\path\\to\\server\\cert.pem
+        ssl_options.keyfile = C:\\path\\to\\server\\key.pem
 
 This configuration does the following: 
 
-1. Disables all non-TLS listeners (`tcp_listeners`)
+1. Disables all non-TLS listeners (`listeners.tcp`)
 
     Note: You must also ensure that the `RABBITMQ_NODE_PORT` environment variable is **not set** for this configuration to be effective.
 
-2. Creates an TLS listener on port 5671 (`ssl_listeners`)
+2. Creates an TLS listener on port 5671 (`listeners.ssl.default`)
 
-3. Configures the certificate and its key to be used by the TLS listener (`ssl_options`)
+3. Configures the certificate and its key, as well as a bundle of their root and intermediate certificates, to be used by the TLS listener (`ssl_options`)
 
 To apply these settings do the following:
 

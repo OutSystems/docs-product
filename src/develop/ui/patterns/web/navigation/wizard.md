@@ -5,6 +5,7 @@ locale: en-us
 guid: b535721f-289a-4ad1-825b-ce7271cc0191
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=238%3A66&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Wizard 

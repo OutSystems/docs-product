@@ -5,6 +5,7 @@ locale: en-us
 guid: 4cdf1677-f152-4afc-ac90-75901d2e9055
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:0
 ---
 
 # Accordion

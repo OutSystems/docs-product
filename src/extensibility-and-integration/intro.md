@@ -8,4 +8,4 @@ platform-version: o11
 figma: 
 ---
 
-# Extensibility and Integration
+# Extensibility and integration

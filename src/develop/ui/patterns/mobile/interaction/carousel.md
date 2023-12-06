@@ -5,6 +5,7 @@ locale: en-us
 guid: a2167543-6fcc-4c6e-9ff5-ba4426722ed5
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=205:100
 ---
 
 # Carousel

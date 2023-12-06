@@ -5,6 +5,7 @@ locale: en-us
 guid: dd03208e-8d07-4720-bc69-3ebf9b541290
 app_type: traditional web apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:75
 ---
 
 # Configure Azure AD Authentication

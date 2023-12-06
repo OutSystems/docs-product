@@ -5,6 +5,7 @@ locale: en-us
 guid: 8680eeb4-f6ec-4c12-ae1d-1b228ed5de5b
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=174%3A37&mode=design&t=GF97AOUqsRf9tsAh-1
 ---
 
 # Implementing Offline Sync

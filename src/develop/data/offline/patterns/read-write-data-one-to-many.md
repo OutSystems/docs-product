@@ -5,6 +5,7 @@ locale: en-us
 guid: 26530521-14df-4bb6-82d4-e087f6566a05
 app_type: mobile apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=743:5
 ---
 
 # Read/Write Data One-to-Many

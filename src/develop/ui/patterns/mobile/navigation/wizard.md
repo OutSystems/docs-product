@@ -5,6 +5,7 @@ locale: en-us
 guid: 133fb7c1-4365-4a44-85d0-a81abe22458e
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:5
 ---
 
 # Wizard

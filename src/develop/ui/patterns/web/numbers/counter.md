@@ -5,6 +5,7 @@ locale: en-us
 guid: 91058e55-ccbb-494d-bc74-9bdeab106742
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=243%3A10&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Counter

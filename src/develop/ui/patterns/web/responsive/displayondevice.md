@@ -5,6 +5,7 @@ locale: en-us
 guid: cb68aaf9-4836-4eeb-b3f2-0a9fcc5164a4
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A34&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Display on Device

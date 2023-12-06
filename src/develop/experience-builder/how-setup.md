@@ -5,6 +5,7 @@ locale: en-us
 guid: 0d73e561-eeae-4755-af4c-eb4a6a92f6df
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4452:2745
 ---
 # How to set up Experience Builder
 

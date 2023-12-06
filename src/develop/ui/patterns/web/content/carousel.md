@@ -5,6 +5,7 @@ locale: en-us
 guid: a8810d33-7e06-48db-a6a9-f44b601d5e0a
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A71&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Carousel

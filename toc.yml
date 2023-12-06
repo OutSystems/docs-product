@@ -5,6 +5,10 @@
     - href: getting-started/service-studio.md
     - href: getting-started/create-reactive-web.md
     - href: getting-started/create-mobile.md
+    - href: getting-started/transitioning/intro.md
+    - topics:
+        - href: getting-started/transitioning/dev-cheat-sheet.md
+        - href: getting-started/transitioning/os-language-concepts.md
     - href: getting-started/create-use-case/intro.md
     - topics:
         - href: getting-started/create-use-case/understand-create-app.md
@@ -967,6 +971,7 @@
     - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/intro.md
     - topics:
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitoring-an-environment.md
+        - href: setup-maintain/setup/disable-registered-role-error.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-env-activity.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/monitor-usage-with-audit-logs.md
         - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/enable-analytics-for-an-environment.md
@@ -977,7 +982,21 @@
         - topics:
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/views-and-tables.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/query-log-data.md
+            - href: setup-maintain/setup/logging-db/logs-separation-cloud/centralized-platform-logs-extension.md
             - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/logging/reference.md
+    # Log streaming
+        - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/intro.md
+        - topics:
+            - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/process.md
+            - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/detailed-log-map.md
+            - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/lifetime-streaming.md
+            - topics: 
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/datadog.md 
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/dynatrace.md 
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/elastic.md                            
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/new-relic.md
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/splunk.md
+                - href: managing-the-applications-lifecycle/monitor-and-troubleshoot/log-streaming/configure-collector.md
     # AI Mentor Studio
     - href: managing-the-applications-lifecycle/manage-tech-debt/intro.md
     - topics:
@@ -1042,7 +1061,6 @@
         - href: setup-maintain/setup/change-db-authentication.md
         - href: setup-maintain/setup/load-balancing-apps/recommended-configs-load-balancing.md
         - href: setup-maintain/setup/cdn-setup.md
-        - href: setup-maintain/setup/disable-registered-role-user-error.md
 
         # Cache Invalidation Service
         - href: setup-maintain/setup/cache-invalidation/intro.md
@@ -1057,6 +1075,8 @@
         - topics:
             - href: setup-maintain/setup/logging-db/configure-separate-db.md
             - href: setup-maintain/setup/logging-db/update-applications.md
+            - href: setup-maintain/setup/logging-db/logs-separation-cloud/intro.md                    
+
         - href: setup-maintain/setup/unattended-install/intro.md
         - topics:
             - href: setup-maintain/setup/unattended-install/config-tool-ref.md

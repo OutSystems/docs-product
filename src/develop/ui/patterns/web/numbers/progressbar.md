@@ -5,6 +5,7 @@ locale: en-us
 guid: 2a589d5e-0cd8-4dab-b9fa-bc7d12cacf23
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=243%3A28&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Progress Bar

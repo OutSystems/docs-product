@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# Delivering Mobile Apps
+# Delivering mobile apps
 
 <div class="info" markdown="1">
 

@@ -5,6 +5,7 @@ locale: en-us
 guid: 768c98ad-bb82-496b-a311-1f577e2e221f
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=245%3A40&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Load on Visible 

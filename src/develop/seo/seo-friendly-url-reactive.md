@@ -5,6 +5,7 @@ locale: en-us
 guid: 294F6709-2351-4992-832F-4DAE431D3E5F
 app_type: traditional web apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3329%3A27075&mode=design&t=vStGeN187wwjAjiU-1
 ---
 
 # SEO-friendly URLs for Reactive Web apps  

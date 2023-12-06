@@ -5,6 +5,7 @@ locale: en-us
 guid: e334605f-9e05-484e-b50e-5450497c2412
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:0
 ---
 
 # Iframe

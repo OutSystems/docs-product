@@ -5,6 +5,7 @@ locale: en-us
 guid: 1ba59808-a9ca-45c3-8f9c-3b68edccaef4
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=222%3A65&mode=design&t=ANpsYvOCthr9AWot-1
 ---
 
 # Card Sectioned

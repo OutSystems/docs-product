@@ -5,7 +5,7 @@ locale: en-us
 guid: acab4979-21b8-47ef-8618-48af0944b3a6
 app_type: traditional web apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=280%3A92&mode=design&t=uqSYxgNx69rQxp19-1
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=280:92
 ---
 
 # Configure Okta Authentication

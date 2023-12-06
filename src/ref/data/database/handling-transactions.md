@@ -27,14 +27,22 @@ You can manage transactions explicitly through the CommitTransaction and AbortTr
 
 The following table shows the isolation level OutSystems uses in the different databases:
 
-DB2  |  MySQL  |  Oracle  |  SQL Server  | PostgreSQL
----|---|---|---|---  
-Read Committed  |  Read Uncommitted  |  Read Committed  | Read Uncommitted  |  Read Commited
-  
-When using a MySQL or SQL Server database, you are working at **Read Uncommitted** isolation level. You have multiple transactions per web request: one for writes, one for each read.
 
-When using a DB2, PostgreSQL or Oracle database, you are working at **Read Committed** isolation level. All queries, inserts, updates, etc. happen in the same database transaction. The data is stored to the database only when the transaction is committed.  
-This means that you are not able to read data that was not yet committed in a transaction. Because of this, before you call a Process instance or a method of a consumed Web Service, you need to commit the database transaction, to see up-to-date data in the process or method.
+| | Read Uncommitted | Read Committed |
+|---|:---:|:---:|
+| SQL Server | X | |
+| Azure SQL | X | |
+| MySQL | X | |
+| DB2 | | X |
+| Oracle | | X |
+| PostgreSQL | | X |
+| Aurora PostgreSQL | | X |
+
+  
+When using SQL Server, Azure SQL, and MySQL databases you're working at **Read Uncommitted** isolation level. You have multiple transactions per web request: one for writes, one for each read.
+
+When using a DB2, Oracle, PostgreSQL, and Aurora PostgreSQL database, you're working at **Read Committed** isolation level. All queries, inserts, updates, etc. happen in the same database transaction. The data is stored to the database only when the transaction is committed.  
+This means that you're not able to read data that wasn't yet committed in a transaction. Because of this, before calling a Process instance or a method of a consumed Web Service, you need to commit the database transaction, to see up-to-date data in the process or method.
 
 ## Important Remarks
 

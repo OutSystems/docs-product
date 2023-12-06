@@ -8,7 +8,7 @@ figma:
 
 # Log data reference
 
-This document lists the fields and descriptions of the database views associated with the platform log records. The views are built on top of the database tables. 
+This document lists the fields and descriptions of the database views associated with the platform log records. The views are built on top of the database tables. If you are using the Log streaming service, see [Logged data fields](../log-streaming/detailed-log-map.md)
 
 <div class="info" markdown="1">
 

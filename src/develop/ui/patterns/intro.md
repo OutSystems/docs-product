@@ -4,6 +4,7 @@ locale: en-us
 guid: 8ba8f042-b63e-4dbf-b2b4-b05d61b7160c
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=4832%3A1884&mode=design&t=u4ANW5BJS7Flsdmg-1
 ---
 
 # Patterns
@@ -16,7 +17,7 @@ Check <a href="https://outsystemsui.outsystems.com/OutsystemsUiWebsite/PatternsO
 
 In OutSystems you can use the pre-built patterns, which implement common UI patterns and components. Patterns cover the most used UI patterns and interactions in mobile and web apps, to distance developers as much a possible from the need to program CSS.
 
-## Customization 
+## Customization
 
 You can customize the patterns by writing additional CSS that changes their look and feel. Additionally, you can change the structure to be able to display something else or remove unwanted elements. You can even change the code and the pattern behavior like adding swipe gestures or adding new events. Keep in mind that code customizations can make patterns behave unpredictably and are not officially supported.
 

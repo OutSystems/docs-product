@@ -5,6 +5,7 @@ locale: en-us
 guid: 6140a263-aa35-45e6-92a7-dc4453dae1c6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=201:6
 ---
 
 # Use Events to Propagate Changes From a Block to the Parent

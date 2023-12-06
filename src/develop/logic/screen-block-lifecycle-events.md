@@ -5,6 +5,7 @@ locale: en-us
 guid: 9205fe77-5e90-402b-ba73-45cdc745515a
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=266:4
 ---
 
 # Screen and Block Lifecycle Events

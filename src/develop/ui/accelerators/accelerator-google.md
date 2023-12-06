@@ -5,6 +5,7 @@ locale: en-us
 guid: 18f3d63b-831f-429c-aac1-7bf9ca65e58a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=1933:21027
 ---
 
 # Login with Google Accelerator

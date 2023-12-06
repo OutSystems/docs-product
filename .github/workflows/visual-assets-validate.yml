@@ -128,7 +128,7 @@ jobs:
       
     - name: 'Visual assets validation failed'
       if: steps.check_files.outcome == 'success' && steps.check_files.outputs.files_exists == 'true' && steps.get-report.outputs.content != ''
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: |
             core.setFailed('Validation of visual assets failed.');

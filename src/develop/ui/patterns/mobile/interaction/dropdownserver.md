@@ -5,7 +5,7 @@ locale: en-us
 guid: 8B9A073C-74E8-4019-84DE-C686AAFAC59A
 app_type: mobile apps, reactive web apps
 platform-version: o11
-figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing-an-Application?type=design&node-id=3562%3A27976&mode=design&t=bjGuZjSEF5sQNURT-1
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=3562:27976
 ---
 
 # Dropdown Server Side

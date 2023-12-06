@@ -5,6 +5,7 @@ locale: en-us
 guid: a5e72a7a-870d-46e7-b2be-a15ac6948b97
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=215:13
 ---
 
 # Tabs

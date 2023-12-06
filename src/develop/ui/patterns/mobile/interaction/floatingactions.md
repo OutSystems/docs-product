@@ -5,6 +5,7 @@ locale: en-us
 guid: ebdedf83-2dba-46f4-9415-c0679e4ced71
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:10
 ---
 
 # Floating Actions

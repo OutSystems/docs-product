@@ -5,6 +5,7 @@ locale: en-us
 guid: 024aef71-32e0-490d-8bb9-3e2a45845b91
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=218:47
 ---
 
 # Progress Bar

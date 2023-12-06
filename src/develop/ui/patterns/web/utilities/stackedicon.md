@@ -5,6 +5,7 @@ locale: en-us
 guid: 163fef6d-6b13-4479-baaa-25c27569832d
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=249:10
 ---
 
 # Stacked Icon

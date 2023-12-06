@@ -5,6 +5,7 @@ locale: en-us
 guid: 528FED29-0646-431E-98D1-9BDF5471068A
 app_type: mobile apps, reactive web apps
 platform-version: o11, ODC
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=4239:737
 ---
 
 # Improve SEO of OutSystems reactive apps with prerendering

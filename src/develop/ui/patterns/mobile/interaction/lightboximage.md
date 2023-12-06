@@ -5,6 +5,7 @@ locale: en-us
 guid: 971050ab-ea28-4490-8698-433ce02974de
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/iBD5yo23NiW53L1zdPqGGM/Developing%20an%20Application?node-id=213:29
 ---
 
 # Lightbox Image

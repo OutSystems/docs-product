@@ -1,6 +1,6 @@
 ---
 summary: Check the hardware and software requirements to install OutSystems on-premises.
-tags: support-Application_Troubleshooting; support-installation; support-Installation_Configuration; support-Installation_Configuration-overview
+tags: 
 locale: en-us
 guid: 244db17a-7a98-4cb0-93c0-db91f1c91fd8
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -131,7 +131,7 @@ The following systems are certified to integrate with OutSystems.
 
 ### SQL Server Database
 
-* Microsoft SQL Server 2019 and compatibility level 150, since Platform Server 11.12.0
+* Microsoft SQL Server 2019 or higher, with compatibility level 150, since Platform Server 11.12.0
 * Microsoft SQL Server 2017
 * Microsoft SQL Server 2016
 * Microsoft SQL Server 2014
@@ -191,6 +191,8 @@ The use of double-byte characters with DB2 databases is not supported.
 * MongoDB Atlas and on-premises
 * MongoDB 4.X
 * MongoDB 5.X
+* MongoDB 6.X
+* MongoDB 7.0
 
 ### SAP
 
@@ -231,7 +233,7 @@ Before setting up Service Studio make sure that your computer meets the followin
 
 #### Required software
 
-* Google Chrome version 54 or later
+* Google Chrome version 54 or later, or Microsoft Edge
 :   To perform client-side debugging in Service Studio using a  desktop browser 
 * Android device drivers
 :   To perform client-side debugging on an Android mobile device if the device is not recognized automatically

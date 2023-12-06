@@ -8,7 +8,7 @@ platform-version: o11
 figma:
 ---
 
-# Adding OutSystems to your portfolio
+# Transitioning to the OutSystems language
 
 <div class="info" markdown="1">
 

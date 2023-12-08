@@ -40,12 +40,34 @@ At a high-level, you:
 
 1. [Generate your app and try it out](#generate-your-app-and-try-it-out)
 
+## Other plugin integrations
+
+If you are using a plugin that needs specific rules on distinct Shielded apps, you can create rules at application level or at plugin level. The following rules apply:
+1. Rules in the app extensibility configuration completely replace the default OutSystems rules
+1. Rules defined in the plugin/library extensibility configuration are appended
+1. Rules from the app (default or replaced) always come first in the final rules file
+
+If you want to configure specific rules for a custom plugin, you can also add the `AppShieldObfuscationRules` preference on your plugin:
+```
+{
+    "plugin: <your plugin object>,
+    "preferences":{
+        "android": [
+            {
+                "name":"AppShieldObfuscationRules",
+                "value": [Rules in Base 64]
+            }
+        ]
+    }
+}
+```
+
 ## Create your own obfuscation rules
 
-To begin, use your favorite editor to create your rules. Or try our editor which has a validation feature for custom obfuscation rules. For more information, see the [Obfuscation Helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/).
+To begin, use your favorite editor to create your rules. Or try our editor, which has a validation feature for custom obfuscation rules. For more information, see the [Obfuscation Helper](https://enmobile11.outsystemsenterprise.com/ObfuscationHelper/).
 
 Be sure to include [OutSystems obfuscation base rules](
-resources/default-obfuscation-rules.txt). Base rules are a set of mandatory obfuscation rules that guarantee that the obfuscation process correctly obfuscates native code from the shell and OS-Supported plugins. When you're defining custom rules for non-supported plugins, you must include OutSystems Obfuscation rules.
+resources/default-obfuscation-rules.txt). Base rules are a set of mandatory obfuscation rules that guarantee that the obfuscation process correctly obfuscates native code from the shell and OS-supported plugins. When you're defining custom rules for non-supported plugins, you must include OutSystems Obfuscation rules.
 
 ### OutSystems syntax for custom obfuscation rules
 

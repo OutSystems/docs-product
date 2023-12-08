@@ -210,20 +210,21 @@ These are the values available in the **AppShield** configuration JSON.
 
 | Value                           | Type         | OS           | Description                                                                                       |
 | ------------------------------- | ------------ | ------------ | ------------------------------------------------------------------------------------------------- |
-| AddTrustedKeyboardSigner        | Text         | Android      | If BlockUntrustedKeyboards is set to True, this option can whitelist a third party keyboard. This option must be added for each keyboard software that you want to add to the whitelist. |
-| AddTrustedScreenReaderSigner    | Text         | Android      | If BlockUntrustedScreenreaders is set to True, this option can whitelist a third party screen reader. This option must be added for each screen reader software that you want to add to the whitelist. |
+| AddTrustedKeyboardSigner        | Text         | Android      | If BlockUntrustedKeyboards is set to True, this option can whitelist a third-party keyboard. This option must be added for each keyboard software that you want to add to the whitelist. |
+| AddTrustedScreenReaderSigner    | Text         | Android      | If BlockUntrustedScreenreaders is set to True, this option can whitelist a third-party screen reader. This option must be added for each screen reader software that you want to add to the whitelist. |
 | AllowJailbrokenRootedDevices    | Boolean      | iOS, Android | If set to True, users can run the app on the jailbroken devices.                            |
 | AllowScreenshot                 | Boolean      | iOS, Android | If set to True, users can take screenshots of the app.                                      |
 | AppShieldObfuscationRules       | Text(base64) | iOS, Android | Custom rules for obfuscation. See [Creating custom obfuscation rules](obfuscate-custom-rules.md). |
+| BlockDeveloperMode              | Boolean      | iOS, Android | If set to True, the application is blocked from running on iOS devices that have Developer Mode enabled and Android devices with Developer Options unlocked.                                           |
 | BlockUntrustedKeyboards         | Boolean      | Android      | If set to True, untrusted keyboards are detected and blocked.                                           |
 | BlockUntrustedScreenreaders     | Boolean      | Android      | If set to True, untrusted screen readers are detected and blocked.                                      |
 | DisableAppShielding             | Boolean      | iOS, Android | Activates or deactivates App Shield.
- | ExitOnURL | URL value | iOS, Android|If an app feature is blocked due to a configured policy of the **AppShield** plugin, the default browser will open the URL which may explain the problem to the user. See ExitOnURL for additional information.                                                           |
-| GooglePlayAppSigningCertificate | Text(Base64) | Android | Google Play App Signing certificate.                                                              |
-| RemoveQueryAllPackagesPermission | Boolean | Android | If set to True, it removes the app ability to check other installed applications. For more information, see [here](query-all-packages.md).                                                              |
-| android                         | JSON value   | Android      | The key denoting values that apply to the Android devices.                                        |
-| global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.                                    |
-| ios                             | JSON value   | iOS          | The key denoting values that apply to the iOS devices.                                            |
+ | ExitOnURL | URL value | iOS, Android| If an app feature is blocked due to a configured policy of the **AppShield** plugin, the default browser opens the URL where the problem may be explained. For more information, refer to ExitOnURL.                                                           |
+| GooglePlayAppSigningCertificate | Text(Base64) | Android | Google Play App Signing certificate.  |
+| RemoveQueryAllPackagesPermission | Boolean | Android | If set to True, it removes the app's ability to check other installed applications. For more information, see [here](query-all-packages.md). |
+| android                         | JSON value   | Android      | The key denoting values that apply to Android devices. |
+| global                          | JSON value   | iOS, Android | Settings in this section apply to both Android and iOS builds.|
+| ios                             | JSON value   | iOS          | The key denoting values that apply to iOS devices.|
 
 ## Check if app with AppShield builds successfully
 
@@ -263,7 +264,7 @@ This applies to apps for Google Play Store that have the app signing feature ena
 
 </div>
 
-One of the security features of **AppShield** is repackaging detection. This protection prevents re-signing of the app package but also causes incompatibility with the Google Play App Signing. You can fix this by providing information about the certificate in the **AppShield** settings.
+One of the security features of **AppShield** is repackaging detection. This protection prevents the re-signing of the app package but also causes incompatibility with the Google Play App Signing. You can fix this by providing information about the certificate in the **AppShield** settings.
 
 In the **Android section** of the Extensibility Configurations JSON, add the **name** with `GooglePlayAppSigningCertificate` and the **value** with the public key. Here is an example:
 

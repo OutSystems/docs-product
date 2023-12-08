@@ -50,7 +50,11 @@ To enable the `ExitOnURL` feature, first copy the JSON code snippet below and co
 }
 ```
 
-1. From **Service Studio** go to the **Interface** tab, select the app name, and click **…** on the right side of the **Extensibility Configuration** field to open the **Extensibility Configuration** window. Then paste the JSON code snippet in the window to define the `ExitOnURL` property as a new global preference.
+1. From **Service Studio** go to the **Interface** tab, select the app name, and click **…** on the right side of the **Extensibility Configuration** field.
+
+   This opens the **Extensibility Configuration** window.
+
+1. To define the `ExitOnURL` property as a new global preference, paste the JSON code snippet into the window.
 
     ![Define Exit URL](images/extensibility-configuration-appshield-ss.png)
 
@@ -86,12 +90,12 @@ For example, attempting to attach a debugger to the application causes AppShield
 There are, however, several ways that the attacker can prevent this page from opening in the main browser, such as putting the device in flight mode. If this happens, the users may not be aware of what's happening.
 So you can't assume that such hacking attempts are reported and seen on the server.
 
-The **Exit URL** event doesn't provide precise metrics of security issue events, since a single user can trigger multiple **Exit URL** events.
-This feature is primarily designed to provide useful feedback to the end user about why the application stopped working, rather than a reliable reporting mechanism for the app owner.
+The **Exit URL** event doesn't provide precise metrics of security issue events since a single user can trigger multiple **Exit URL** events.
+This feature is primarily designed to provide useful feedback to the end user about why the application stopped working rather than a reliable reporting mechanism for the app owner.
 
 The app loads **Exit URL** in the default browser and may remain in an open tab or window until the user closes it. This may cause a number of effects, including the following:
 
-* The **Exit URL** page may cause the browser to trigger additional page loads of the configured URL when the user launches the browser at a later time.
+* The **Exit URL** page may cause the browser to trigger additional page loads of the configured URL when the user launches the browser later.
 * The **Exit URL** page, when it appears as the user clicks the back button or flips through the various browser tabs or windows, may lead to misleading statistics if you are tracking page views on your server.
 
 ## Reference
@@ -116,13 +120,15 @@ A list of reasons for app shutdown in iOS devices.
 
 | Decimal | Explanation                                       |
 | ------- | ------------------------------------------------- |
-| 0       | Device is jailbroken/rooted                       |
-| 1       | Application is being debugged                     |
-| 2       | Application is modified or repackaged             |
-| 3       | A screenshot of the application was taken         |
-| 4       | An injected library was found in the process      |
-| 5       | A hooking framework was found in the process      |
-| 6       | A screen recording of the application was started |
+| 00      | Device is jailbroken/rooted                       |
+| 01      | Application is being debugged                     |
+| 02      | Application is modified or repackaged             |
+| 03      | A screenshot of the application was taken         |
+| 04      | An injected library was found in the process      |
+| 05      | A hooking framework was found in the process      |
+| 06      | A screen recording of the application was started |
+| 08      | Running on emulator                               |
+| 09      | Running with Developer Mode enabled               |
 
 ### Shutdown reasons for Android
 
@@ -130,16 +136,18 @@ A list of reasons for app shutdown in Android devices.
 
 | Decimal | Explanation                                                               |
 | ------- | ------------------------------------------------------------------------- |
-| 0       | Device is rooted                                                          |
-| 1       | Application is modified or repackaged<br />Note: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered.                                                                            |
-| 2       | Application is being run in an emulator<br />Note: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered.                                                                            |
-| 3       | Java debugger attached to app                                             |
-| 4       | Untrusted keyboard detected                                                  |
-| 5       | Untrusted screen reader detected                                             |
-| 6       | Native code hooks, possibly inserted by malicious app                     |
-| 8       | Shield could not read configuration file                                    |
-| 9       | Problem with Native Debugger Protection                                   |
+| 00      | Device is rooted                                                          |
+| 01      | Application is modified or repackaged<br />**Note**: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered.|
+| 02      | Application is being run in an emulator<br />**Note**: Removed from AppShield version 1.4.0 because it was not guaranteed to be triggered.|
+| 03      | Java debugger attached to app                                             |
+| 04      | Untrusted keyboard detected                                               |
+| 05      | Untrusted screen reader detected                                          |
+| 06      | Native code hooks, possibly inserted by malicious app                     |
+| 08      | Shield could not read configuration file                                  |
+| 09      | Problem with Native Debugger Protection                                   |
 | 19      | Problem initializing Shield                                               |
+| 1a      | Developer Options enabled on device                                       |
+| 1b      | Untrusted Installer found on device                                       |
 | 20      | App received termination signal                                           |
 | 21      | Application crashed outside of Java-code, either native library or Shield |
 | 22      | Hooking frameworks detected                                               |

@@ -38,8 +38,6 @@ Please follow these steps to disable the **Registered Role Required** error logs
 
     ![](images/disable-registered-role-error.png)
 
-1. Restart the Deployment Controller Service. For OutSystems Cloud environments, you can [restart services in LifeTime](https://www.outsystems.com/tk/redirect?g=814d4a99-9c7c-4418-9788-34b5dcdf6f88). This will also restart IIS, which can be more disruptive. Alternatively, you can submit a support case.
-
 1. Create a solution in Service Center, including all reactive and mobile apps with corresponding dependencies. Check the option **Publish with full compilations** and publish the solution. 
 
 This toggle will disable the creation of these error logs when requests reach the server. It also disables the logging of these errors by exception handlers. 

@@ -50,7 +50,6 @@ To configure or generate your mobile app package (iOS or Android) in Service Stu
 
     ![Native app settings in Service Studio](images/native-platforms-tab-ss.png)
 
-
 ## Configure and generate a mobile app package in Service Center { #config-generate-service-center }
 
 To configure or generate your mobile app package (iOS or Android) in Service Center, do the following:
@@ -61,7 +60,7 @@ To configure or generate your mobile app package (iOS or Android) in Service Cen
 
     ![Native app settings in Service Center](images/native-platform-section-sc.png)
 
-1. To configure your mobile app package for the first time or to change the current configuration for a given platform (iOS or Android), click the **Configure** link for the iOS or Android entry. Follow the configuration steps for your desired scenario, described in the [topics listed at the end of this page](#Articles_in_this_Section).
+1. To configure your mobile app package for the first time or to change the current configuration for a given platform (iOS or Android), click the **Configure** link for the iOS or Android entry.
 
     ![Android settings in Service Center](images/configure-android-settings-sc.png)
 

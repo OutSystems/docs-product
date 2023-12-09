@@ -1,0 +1,22 @@
+name: TK AI Tools
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    paths:
+      - '**.md'
+  issue_comment:
+    types:
+      - created
+
+jobs:
+  call_shared_workflow:
+    uses: OutSystems/tk-cicd/.github/workflows/tkaitools.yml@main
+    with:
+        GITHUB_REPOSITORY: ${{ github.repository }}
+        PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number }}
+        COMMENT_BODY: ${{ github.event.comment.body }}
+        COMMENT_ID: ${{ github.event.comment.id }}
+    secrets: inherit

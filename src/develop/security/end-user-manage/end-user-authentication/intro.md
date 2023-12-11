@@ -52,13 +52,21 @@ Okta
 
 To configure how the platform authenticates end users do the following:
 
-1. In the [Users application](../accessing-users.md), click "Configure Authentication" in the sidebar.
+1. In the [Users application](../accessing-users.md), click **Configure Authentication**.
 
-1. Select one of the authentication methods in the **Authentication** drop-down list: `Internal Only`, `Active Directory`, `LDAP`, `Azure AD`, `SAML 2.0`, or `Okta`.
+1. Select one of the authentication methods from the **Authentication** drop-down list: `Internal Only`, `Active Directory`, `LDAP`, `Azure AD`, `SAML 2.0`, or `Okta`.
 
-    ![](images/ldap-2.png)
+    ![Screenshot of LDAP authentication configuration options in OutSystems Users application](images/ldap-2.png "LDAP Authentication Configuration")
 
-1. If you chose **Active Directory**, **LDAP**, **SAML 2.0**, **Azure AD** or **Okta** in the previous step, you need to fill in other configuration fields specific to the authentication method you selected in step 2. Check the other topics in this section for more information on configuring these authentication methods.
+1. If you choose **Active Directory**, **LDAP**, **SAML 2.0**, **Azure AD** or **Okta**, you must fill in other configuration fields specific to the authentication method. 
+
+For more information about configuring the authentication methos, refer to the other topics in this section.
+
+<div class="info" markdown="1">
+
+You cannot setup two different authentication methods for users. This means that the end-users authentication in OutSystems apps must have the same IdP configured. However, you can implement your own user provider to have a second authentication mechanism in your apps.
+
+</div>
 
 ## Authentication flow
 

@@ -95,4 +95,4 @@ Here's the final ODC architecture blueprint where the bounded contexts are mappe
 ## Additional resources
 
 * [ODC architecture Design process training](https://learn.outsystems.com/training/journeys/architecture-fundamentals-559/architecture-design-process/odc/9)
-*  [Building well-architected app in ODC](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/app_architecture/building_a_well_architected_app/)
+* [Building well-architected app in ODC](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/app_architecture/building_a_well_architected_app/)

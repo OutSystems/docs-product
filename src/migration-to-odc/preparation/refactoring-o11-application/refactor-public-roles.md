@@ -12,7 +12,7 @@ In O11, you can have public roles shared across domains. However, in ODC, public
 
 ![Diagram showing public roles shared across domains in O11](images/sharing-roles-across-domains-diag.png "Public Roles Across Domains")
 
-This can cause issues when converting the horizontal domain with the foundation app to an ODC library since public roles are not allowed. To configure a public role in ODC, do the following:
+This can cause issues when converting the horizontal domain with the foundation app to an ODC library since public roles are not allowed. To configure a public role in ODC, follow these steps:
 
 1. Create a role in each vertical domain and ensure it's only consumed inside the domain.
 

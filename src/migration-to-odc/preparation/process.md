@@ -36,7 +36,7 @@ For detailed information on types of domains and domain architecture rules,  ref
 
 Step 3: Validate your application architecture
 
-While the Assessment tool is still under development, you can use the Discovery Tool in the  OutSystems[Forge](https://www.outsystems.com/forge/component-overview/409/discovery) to validate your [Architecture Canvas and Domain-driven design rules](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/validating_your_application_architecture/).
+While the Assessment tool is still under development, you can use the Discovery Tool in the  OutSystems [Forge](https://www.outsystems.com/forge/component-overview/409/discovery) to validate your [Architecture Canvas and Domain-driven design rules](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/validating_your_application_architecture/).
 
 Step 4: Map O11 domains to ODC apps and libraries 
 

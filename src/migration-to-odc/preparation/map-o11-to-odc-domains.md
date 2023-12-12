@@ -32,3 +32,4 @@ O11 domains have similar characteristics to ODC apps since they are both loosely
 *  Migrate horizontal domains with foundation apps consumed across multiple verticals to one or more ODC libraries.
 
     ![Diagram representing the migration of horizontal domains with foundation apps to ODC libraries](images/horizontal-to-library-diag.png "Mapping Horizontal Domains to ODC Libraries")
+

@@ -7,7 +7,7 @@ platform-version: o11
 figma: 
 ---
 
-# Refactor Site properties to be ODC-compatible
+# Refactor site properties to be ODC-compatible
 
 [Site properties](../../../develop/data/site.md) are global variables with configurable values. They are used to implement configuration values for an application that can be set at runtime. Site properties can also store configurable variables such as API Key, Client ID, and Client Secret values. 
 

@@ -18,4 +18,4 @@ This can cause issues when converting the horizontal domain with the foundation 
 
     ![Diagram illustrating the creation of a role in each vertical domain for ODC](images/create-roles-in-domains-diag.png "Create Role in Each Domain")
 
-1. Map your end users to both roles in the domain. For detailed information, refer to [End User Management](https://success.outsystems.com/documentation/outsystems_developer_cloud/user_management/roles/).
+1. Map your end users to both roles in the domain. For more information, refer to [End User Management](https://success.outsystems.com/documentation/outsystems_developer_cloud/user_management/roles/).

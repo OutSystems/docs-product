@@ -1,5 +1,6 @@
 ---
 summary: This article describes how to refactor from public roles in O11 to domain-specific roles in ODC.
+locale: en-us
 guid: b81449f8-885f-4493-aaa9-289e8e56694a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11

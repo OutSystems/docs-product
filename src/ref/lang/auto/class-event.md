@@ -10,6 +10,25 @@ figma:
 
 # Event
 
+An event is an element that allows a block to interact with its parent element by notifying it that a particular event has occurred. Essentially, the block triggers an event and then the parent element handles it.
+
+Events can only be defined inside blocks.
+
+![Define an event inside a block](images/add-event-block-ss.png)
+
+Input parameters can be added to events. This allows data to pass from the scope of a block to the outer scope of the parent element. This is necessary since the block and parent element have different scopes.
+
+If the **Is Mandatory** property of an event is set to **Yes**, you must define an event handler in the parent element where the block with the event is used. 
+
+![If the IsMandatory property is set to True, you must define an event handler](images/mandatory-event-ss.png)
+
+
+## Trigger event
+
+A trigger event defines what action in a block can trigger an event. To learn more about how trigger events work, refer to the [Demo: How To Trigger Block Events](https://learn.outsystems.com/training/journeys/blocks-and-events-635/demo-how-to-trigger-block-events/o11/90). 
+
+## Related information
+[Block events](https://learn.outsystems.com/training/journeys/blocks-and-events-635/block-events/o11/78)
 
 ## Properties
 

@@ -19,11 +19,11 @@ The OutSystems Migration Toolkit will provide automation in the future to suppor
 
 Here's some guidelines to refactor your O11 app:
 
-* [Refactor anonymous and registered roles](./refactor-anonymous-registered-roles.md)
-* [Refactor BPT](./refactor-bpt.md)
-* [Refactor SOAP](./refactor-soap.md)
-* [Refactor public roles](./refactor-public-roles.md)
-* [Refactor public structures](./refactor-public-structures.md)
-* [Refactor system entities](./refactor-systementities.md)
-* [Refactor site properties](./refactor-siteproperties.md)
-* [Refactor extensions](./refactor-extensions.md)
+* [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
+* [Refactor BPT](refactor-bpt.md)
+* [Refactor SOAP](refactor-soap.md)
+* [Refactor public roles](refactor-public-roles.md)
+* [Refactor public structures](refactor-public-structures.md)
+* [Refactor system entities](refactor-systementities.md)
+* [Refactor site properties](refactor-siteproperties.md)
+* [Refactor extensions](refactor-extensions.md)

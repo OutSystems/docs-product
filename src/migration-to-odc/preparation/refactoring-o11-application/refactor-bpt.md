@@ -16,4 +16,3 @@ If you are only preparing your code for the migration, at present, OutSystems re
 </div>
 
 Business Process Technology (BPT) enables you to define and execute business processes within the applications. [BPT processes](https://success.outsystems.com/documentation/11/developing_an_application/use_processes_bpt/) are sequences of activities that build the workflow of a process, which is executed in the background. BPT is useful for implementing workflows that involve system-to-system or human-to-system interactions, and it allows for activities to run in parallel, providing flexibility in how business processes are managed and executed.
-

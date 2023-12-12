@@ -75,8 +75,8 @@ Some features in O11 aren't supported in ODC. For example, ODC does not support 
 
 Here are some code patterns that you must transform in O11 before migrating to ODC or modify the ODC code after the migration is complete:
 
-* [Refactor SOAP](./refactoring-o11-application/refactor-soap.md)
-* [Refactor BPT](./refactoring-o11-application/refactor-bpt.md)
+* [Refactor SOAP](refactoring-o11-application/refactor-soap.md)
+* [Refactor BPT](refactoring-o11-application/refactor-bpt.md)
 
 ## Additional resources
 

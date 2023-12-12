@@ -9,7 +9,7 @@ figma:
 
 # About refactoring O11 apps to be ODC compatible
 
-As you plan and prepare your existing O11 app architecture to smoothly migrate to ODC at a later point, you must refactor and adjust your O11 implementation to ease the migration process. 
+As you plan and prepare your existing O11 app architecture to smoothly migrate to ODC at a later point, you must refactor and adjust your O11 implementation to ease the migration process.
 
 <div class="info" markdown="1">
 

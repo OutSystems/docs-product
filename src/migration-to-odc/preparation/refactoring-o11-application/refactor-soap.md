@@ -13,4 +13,4 @@ SOAP is an integration technology that has seen a significant reduction in its u
 
 * Use an integration platform such as Enterprise Service Bus (ESB) or an API Gateway Management that can translate between different systems. Use REST on the OutSystems side to connect to the integration platform and continue to use SOAP between the integration platform and the external system.
 
-* For SOAP consumption,use [ODC Custom Code](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/extend_your_apps_with_external_logic_using_custom_code/supporting_soap_in_odc/) and replace SOAP Expose with REST Expose.
+* For SOAP consumption,use [ODC custom code](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/extend_your_apps_with_external_logic_using_custom_code/supporting_soap_in_odc/) and replace SOAP Expose with REST Expose.

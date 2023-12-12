@@ -71,7 +71,7 @@ Here are some procedures and guidelines for refactoring your O11 app:
 
 Step 7: Refactor code patterns
 
-There are some features in O11 that are not supported in ODC. For example, ODC does not support SOAP and the O11 SOAP code cannot be automatically converted to ODC. 
+Some features in O11 aren't supported in ODC. For example, ODC does not support SOAP and the O11 SOAP code cannot be automatically converted to ODC. 
 
 Here are some code patterns that you must transform in O11 before migrating to ODC or modify the ODC code after the migration is complete:
 

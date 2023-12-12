@@ -11,7 +11,7 @@ figma: https://www.figma.com/file/daglmSUESdKw9J3HdT87a8/O11-to-ODC-migration?ty
 
 For over 20 years, OutSystems has been committed to ensuring that you, our customers, have access to the latest and greatest capabilities for software delivery. When we built our product, it was because we wanted to make innovation easier so that you can always be at the forefront of it. It is for this same reason that we released OutSystems Developer Cloud (ODC).
 
-In keeping with this commitment, OutSystems also wants to ensure that you can take your existing O11 app portfolio and modernize it for native ODC apps. This means that even older apps can take advantage of all existing and future ODC capabilities, for example, cloud-native architecture, sc
+In keeping with this commitment, OutSystems also wants to ensure that you can take your existing O11 app portfolio and modernize it for native ODC apps. This means that even older apps can take advantage of all existing and future ODC capabilities, for example, cloud-native architecture, scaling without limits, and new AI capabilities for businesses and developers.
 
 ![Diagram illustrating the conversion process from OutSystems 11 apps to OutSystems Developer Cloud apps](images/app-conversion-diag.png "O11 to ODC App Conversion Diagram")
 

@@ -1104,6 +1104,28 @@
     # Mantain your OutSystems infraestructure
 
 
+# Migration to ODC
+- href: migration-to-odc/intro.md
+- topics:
+    # Preparation
+    - href: migration-to-odc/preparation/process.md
+    - href: migration-to-odc/preparation/o11architecture-to-odc-architecture.md
+    - href: migration-to-odc/preparation/map-o11-to-odc-domains.md
+    - href: migration-to-odc/preparation/refactoring-o11-application/intro.md
+    - topics:
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-anonymous-registered-roles.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-bpt.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-extensions.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-structures.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-public-roles.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-serveraction-to-serviceaction.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-soap.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-systementities.md
+        - href: migration-to-odc/preparation/refactoring-o11-application/refactor-siteproperties.md
+    - href: migration-to-odc/reference.md
+
+    
+
 # Reference
 - href: ref/intro.md
 - topics:

@@ -18,7 +18,7 @@ Architecture Dashboard is now AI Mentor Studio.
 
 <div class="info" markdown="1">
 
-Ensure that you are using the latest version of the probes and that they are correctly installed. For more information, refer to [How to update the AI Mentor Studio probes](how-update-probes.md).
+Ensure that you are using the latest version of the AI Mentor Studio probes and that they are correctly installed. For more information, refer to [How to update the AI Mentor Studio probes](how-update-probes.md).
 
 </div>
 

@@ -83,5 +83,5 @@ Here are some code patterns that you must transform in O11 before migrating to O
 Here's some additional resources and training materials that can help you understand ODC architecture better:
 
 * [O11 to ODC](https://learn.outsystems.com/training/journeys/from-o11-to-odc-569)
-* [Architecture Fundamentals on ODC](https://learn.outsystems.com/training/journeys/architecture-fundamentals-559/apps/odc/1)
-* [Architecture patterns in ODC training](https://learn.outsystems.com/training/journeys/architecture-patterns-581//odc/)
+* [Architecture Fundamentals on ODC](https://learn.outsystems.com/training/journeys/architecture-fundamentals-559/)
+* [Architecture patterns in ODC training](https://learn.outsystems.com/training/journeys/architecture-patterns-581/)

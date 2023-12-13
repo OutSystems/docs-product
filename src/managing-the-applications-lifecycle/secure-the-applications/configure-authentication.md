@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/rEgQrcpdEWiKIORddoVydX/Managing%20the%20Applications%20Lifecycle?node-id=267:109
 ---
 
-# Configure App Authentication
+# Configure app authentication
 
 <div class="info" markdown="1">
 
@@ -18,7 +18,7 @@ Applies to Mobile Apps and Reactive Web Apps only
 
 The document is about configuring app authentication in the environment. There's also information about the authentication mechanism, including the explanation about cookies.
 
-## Configure App Authentication Settings
+## Configure app authentication Settings
 
 <div class="info" markdown="1">
 
@@ -34,7 +34,7 @@ The following setting applies to both persistent and session authentication:
 
 * **Cache Time In Minutes** – Number of minutes the authentication information sent by the device is considered valid by the server without the need to fetch it from the database. After this time, the server validates the authentication tokens against the information stored in the database and supplies new authentication tokens. If set to 0, the authentication cache mechanism is disabled.
 
-* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web Apps, and Mobile Apps distributed as Progressive Web Apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
+* **Single Sign-On Between App Types** – When activated, this option lets users navigate between Traditional, Reactive Web apps, and Mobile Aaps distributed as Progressive Web apps without having to sign in again. For example, if users sign in into a Traditional Web App, and then navigate to a Reactive Web App, they’re signed in automatically in the Reactive Web App. To activate the **Single Sign-On Between App Types** setting, you must enable HTTPS in the environment.
 
 **Note**: For Traditional Web Apps, you must log in again once the session times out. For more information, see [Troubleshoot SSO sessions for Traditional Web Apps](https://success.outsystems.com/support/troubleshooting/application_development/troubleshoot_sso_sessions_for_traditional_web_apps/). 
 
@@ -116,7 +116,27 @@ Within a defined period of time the server uses the information stored in the co
 
 ### Logging out of the application
 
-When the end user logs out of an application, all sessions are terminated. This prevents any invalid persistent authenticated session from staying alive.
+When an end user logs out of an app, all sessions are terminated. This prevents any invalid persistent authenticated session from staying alive.
+
+When the single sign-on between app types (SSO) is configured, if the end user logs out of a Reactive or Mobile app, all Traditional web apps in the same browser scope, regardless of the user provider, are also be logged out.
+
+The following are some example scenarios that have the same browser scope:
+
+* Reactive, Mobile, and Traditional apps using the same user provider.
+    
+    * A logout in one of the apps will log out all of the apps
+
+* Reactive or Mobile apps using the same user provider (for example, Users), and Traditional apps using a different user provider (for example, ServiceCenter).
+    
+    * A logout in an app with the user provider Users will cause the session in apps with the user provider ServiceCenter to become invalid.
+
+    * A logout in an app with the user provider ServiceCenter will not cause the session in apps with the user provider Users to become invalid.
+
+To avoid these scenarios, you can use the following different browser scopes:
+    
+* Use a different browser.
+* Use a new instance of the same browser in incognito mode.
+* Use multiple profiles in the same browser (if your browser supports it).
 
 <div class="info" markdown="1">
 

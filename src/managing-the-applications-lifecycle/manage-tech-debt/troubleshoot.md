@@ -16,13 +16,19 @@ Architecture Dashboard is now AI Mentor Studio.
 
 </div>
 
+<div class="info" markdown="1">
+
+Ensure that you are using the latest version of the probes and that they are correctly installed. For more information, refer to [How to update the AI Mentor Studio probes](how-update-probes.md).
+
+</div>
+
 ## Synchronization issues
 
 Synchronization (data sent from AI Mentor Studio Probe to SaaS) occurs every 12 hours.
 
 In AI Mentor Studio, go to the **Apps** tab and check when was the **Last sync**.
 
-![Sync date and time in the AI Mentor Studio canvas](images/latest-sync-ams.png)
+![Screenshot showing the last synchronization date and time in the AI Mentor Studio canvas](images/latest-sync-ams.png "AI Mentor Studio Last Sync Check")
 
 If the last sync occurred more than 24 hours ago, go to the **Monitoring** tab of the Service Center of the LifeTime environment (`https://<lifetime_environment>/ServiceCenter`), and check for errors in the AI Mentor StudioLifeTime Probe module named **ArPr_Communitcation**.
 

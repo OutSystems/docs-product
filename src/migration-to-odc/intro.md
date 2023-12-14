@@ -57,7 +57,7 @@ Migration capabilities will be delivered incrementally, addressing the most comm
 
 ODC was designed to bring your apps into the cloud-native future. This means that ODC apps must be architected in a way that allows you to reap the benefits of cloud-native architecture and microservices design, fostering application-independent lifecycle and ownership. In summary, ODC enables businesses to be agile and helps them meet the [DevOps Research and Assessment (DORA) metrics standards](https://dora.dev/).
 
-Once O11 apps are ported over to ODC, for them to truly benefit from all ODC capabilities, it's important to adjust the O11 app portfolio-architecture to align with ODC architecture best practices.  Also, some code patterns are not fully compatible with ODC and must be adjusted accordingly on the O11 side before migration. Also, some code patterns are not fully compatible with ODC and must be adjusted accordingly on the O11 side before migration.
+Once O11 apps are ported over to ODC, for them to truly benefit from all ODC capabilities, it's important to adjust the O11 app portfolio-architecture to align with ODC architecture best practices.  Also, some code patterns are not fully compatible with ODC and must be adjusted accordingly on the O11 side before migration.
 
 To help with the O11 app portfolio assessment, OutSystems is releasing a [set of documents](../migration-to-odc/preparation/process.md). An automatic assessment tool will also be available to help you automate the O11 app portfolio assessment in a way that can be worked seamlessly into your development activities.
 

@@ -2,7 +2,7 @@
 summary: This article provides guidelines for refactoring O11 apps to ensure compatibility with OutSystems Developer Cloud (ODC), highlighting various specific areas for manual refactoring in preparation for future automated migration support.
 locale: en-us
 guid: 469bbfc7-8121-4cd8-8e4f-22b882f8e821
-app_type: traditional web apps, mobile apps, reactive web appsc
+app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: 
 ---
@@ -21,9 +21,10 @@ Here's some guidelines to refactor your O11 app:
 
 * [Refactor anonymous and registered roles](refactor-anonymous-registered-roles.md)
 * [Refactor BPT](refactor-bpt.md)
-* [Refactor SOAP](refactor-soap.md)
-* [Refactor public roles](refactor-public-roles.md)
+* [Refactor extensions](refactor-extensions.md)
 * [Refactor public structures](refactor-public-structures.md)
+* [Refactor public roles](refactor-public-roles.md)
+* [Refactor server actions to service actions](refactor-serveraction-to-serviceaction.md)
+* [Refactor SOAP](refactor-soap.md)
 * [Refactor system entities](refactor-systementities.md)
 * [Refactor site properties](refactor-siteproperties.md)
-* [Refactor extensions](refactor-extensions.md)

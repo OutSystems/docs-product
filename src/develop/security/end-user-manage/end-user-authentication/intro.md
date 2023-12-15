@@ -88,11 +88,11 @@ When the end user uses the application for the first time and the accessed scree
 
         B) If the platform is configured to authenticate using LDAP, the credentials are validated against the configured LDAP server.
 
-1. If after this process the end user could not be authenticated, then an "Invalid Login" message is displayed to the end user.
+1. If, after this process, the end user can't be authenticated, an **Invalid Login** message is displayed.
 
 ## User data synchronization
 
-When authenticating end users using Active Directory, LDAP, SAML 2.0, Azure AD or Okta, the user data in the OutSystems database is updated, in one or more occasions, with the most recent data from the external authentication system. The updated attributes for each user are the following:
+When authenticating end users using Active Directory, LDAP, SAML 2.0, Azure AD, or Okta, the user data in the OutSystems database is updated, on one or more occasions, with the most recent data from the external authentication system. The updated attributes for each user are the following:
 
 * Name
 * Email
@@ -107,3 +107,10 @@ On a daily timer
 :   The data for **all existing users from external authentication sources** in the OutSystems database is updated. These users are the ones whose username contains a `\` (slash) character.  
 The timer is named `SynchronizeDomainUsers` and is configured in the Users module. This timer-based synchronization only occurs when using Active Directory.  
 Note that this process does not create any new users in the OutSystems database.
+
+### Known Issues
+
+If a user is deactivated in the active directory, the user's status is synchronized by the `SynchronizeDomainUsers` timer. However, when the user is reactivated in the active directory, the user's status is **not updated to active**. This prevents the user from logging in.
+
+**Workaorund:** Log into the Users module using Administrator credentials and update the user's status to active.
+

@@ -72,7 +72,7 @@ Next, you map the bounded contexts to ODC apps and libraries.
 
 In this use case, the B2C domain must be mapped to two ODC apps due to the presence of a mobile app. Hence, further decoupling of the architecture is required.
 
-![Diagram depicting the separation of a B2C domain into mobile and web apps for ODC](images/split-into-mobile-web-app-diag.png "Split into Mobile and Web App Diagram")
+![Diagram depicting the separation of a B2C domain into mobile and web apps for ODC](images/split-into-web-app-mobile-diag.png "Split into Mobile and Web App Diagram")
 
 For mapping the core services to libraries, you must decouple the architecture further as different bounded contexts have different business owners and sponsors, and the domains are strongly coupled together.
 

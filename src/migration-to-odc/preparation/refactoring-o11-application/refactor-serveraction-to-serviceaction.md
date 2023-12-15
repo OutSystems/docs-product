@@ -1,5 +1,5 @@
 ---
-summary: This article outlines how to refactor server actions in your O11 apps to service actions for compatibility with OutSystems Developer Cloud (ODC).
+summary: This article outlines how to refactor public server actions in your O11 apps to service actions for compatibility with OutSystems Developer Cloud (ODC).
 locale: en-us
 guid: bf0d4524-95c4-477b-9254-1e369a3f1f80
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -7,7 +7,7 @@ platform-version: o11
 figma: 
 ---
 
-# Refactor server actions to service actions
+# Refactor public server actions to service actions
 
 In ODC, server actions can be public in libraries but not in apps. Hence, you must refactor public server actions on O11 apps to [service actions](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/app_architecture/service_actions/#) to avoid encountering broken references on migration. For example, in your O11 app, if there is a producer module exposing a server action and a consumer module consuming that server action then, on migrating these modules to ODC apps, you will encounter broken references because the server actions are not public in ODC apps.
 

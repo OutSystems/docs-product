@@ -24,7 +24,7 @@ Here's some guidelines to refactor your O11 app:
 * [Refactor extensions](refactor-extensions.md)
 * [Refactor public structures](refactor-public-structures.md)
 * [Refactor public roles](refactor-public-roles.md)
-* [Refactor server actions to service actions](refactor-serveraction-to-serviceaction.md)
+* [Refactor public server actions to service actions](refactor-serveraction-to-serviceaction.md)
 * [Refactor SOAP](refactor-soap.md)
 * [Refactor system entities](refactor-systementities.md)
 * [Refactor site properties](refactor-siteproperties.md)

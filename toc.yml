@@ -1109,8 +1109,8 @@
 - topics:
     # Preparation
     - href: migration-to-odc/preparation/process.md
-    - href: migration-to-odc/preparation/o11architecture-to-odc-architecture.md
     - href: migration-to-odc/preparation/map-o11-to-odc-domains.md
+    - href: migration-to-odc/preparation/o11architecture-to-odc-architecture.md
     - href: migration-to-odc/preparation/refactoring-o11-application/intro.md
     - topics:
         - href: migration-to-odc/preparation/refactoring-o11-application/refactor-anonymous-registered-roles.md
